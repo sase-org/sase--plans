@@ -3,6 +3,7 @@ create_time: 2026-07-12 19:19:53
 status: wip
 prompt: 202607/prompts/basher_extraction.md
 tier: epic
+bead_id: sase-5v
 ---
 # Factor pyvendor + bugyi.sh into basher and migrate sase + chezmoi
 
