@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 16:24:34
-status: wip
+status: done
 prompt: 202607/prompts/prompt_input_xprompt_highlighting.md
 tier: tale
 ---
