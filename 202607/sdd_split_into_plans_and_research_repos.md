@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-11 19:07:12
-status: wip
+status: done
 prompt: 202607/prompts/sdd_split_into_plans_and_research_repos.md
 bead_id: sase-5q
 tier: epic
