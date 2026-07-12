@@ -3,6 +3,7 @@ create_time: 2026-07-12 17:43:01
 status: wip
 prompt: 202607/prompts/symvision_extraction_1.md
 tier: epic
+bead_id: sase-5t
 ---
 # Factor pyvision into symvision and migrate sase + chezmoi
 
