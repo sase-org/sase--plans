@@ -1,7 +1,7 @@
 ---
 create_time: 2026-07-11 17:20:54
 status: done
-prompt: .sase/sdd/prompts/202607/prompt_stash_pin_fixes.md
+prompt: 202607/prompts/prompt_stash_pin_fixes.md
 tier: tale
 ---
 # Fix Prompt-Stash Panel Pin & Selection Bugs
