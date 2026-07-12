@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 14:45:29
-status: wip
+status: done
 prompt: 202607/prompts/fast_bead_mutations.md
 tier: tale
 ---
