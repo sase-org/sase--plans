@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 11:47:51
-status: wip
+status: done
 prompt: 202607/prompts/linked_repos_clone_dir_migration.md
 tier: tale
 ---
