@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 16:29:55
-status: wip
+status: done
 prompt: 202607/prompts/plan_list_status_and_limit.md
 tier: tale
 ---
