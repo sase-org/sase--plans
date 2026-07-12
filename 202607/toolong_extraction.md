@@ -1,4 +1,5 @@
 ---
+bead_id: sase-5r
 create_time: 2026-07-11 19:59:31
 status: wip
 prompt: 202607/prompts/toolong_extraction.md

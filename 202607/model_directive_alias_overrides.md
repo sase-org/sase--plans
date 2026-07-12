@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-11 19:50:29
-status: wip
+status: done
 prompt: 202607/prompts/model_directive_alias_overrides.md
 tier: tale
 ---
