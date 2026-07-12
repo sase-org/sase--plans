@@ -1,8 +1,8 @@
 ---
-create_time: 2026-07-12 10:42:34
-status: wip
-prompt: 202607/prompts/sase_5q_record_repair_and_closeout.md
+create_time: 2026-07-12 11:08:07
+status: done
 tier: tale
+prompt: 202607/prompts/sase_5q_record_repair_and_closeout.md
 ---
 # Plan: Repair the split-SDD store record clobber, harden record handling, and close out sase-5q
 
