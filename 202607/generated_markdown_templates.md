@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 16:07:59
-status: wip
+status: done
 prompt: 202607/prompts/generated_markdown_templates.md
 tier: tale
 ---
