@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 17:11:42
-status: wip
+status: done
 prompt: 202607/prompts/rename_toolong_to_toobig.md
 tier: tale
 ---
