@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 12:43:38
-status: wip
+status: done
 prompt: 202607/prompts/remove_file_panel_trim.md
 tier: tale
 ---
