@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 16:11:56
-status: wip
+status: done
 prompt: 202607/prompts/sdd_prompt_attachment_dedup.md
 tier: tale
 ---
