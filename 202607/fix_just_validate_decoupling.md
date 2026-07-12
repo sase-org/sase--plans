@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 09:11:15
-status: wip
+status: done
 prompt: 202607/prompts/fix_just_validate_decoupling.md
 tier: tale
 ---
