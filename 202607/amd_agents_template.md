@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 15:41:34
-status: wip
+status: done
 prompt: 202607/prompts/amd_agents_template.md
 tier: tale
 ---
