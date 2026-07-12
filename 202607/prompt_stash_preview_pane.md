@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 09:02:51
-status: wip
+status: done
 prompt: 202607/prompts/prompt_stash_preview_pane.md
 tier: tale
 ---
