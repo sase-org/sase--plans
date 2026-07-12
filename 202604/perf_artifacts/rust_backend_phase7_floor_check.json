@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "tool": "phase7_check_regression",
+    "surface": "phase7_floor_check",
+    "workload": "anchor_subset",
+    "backend": "summary",
+    "runs": 0,
+    "warmup": 0,
+    "timestamp": "2026-07-11T20:27:49Z",
+    "git_sha": "4fa00b52f11c",
+    "git_dirty": true,
+    "python": "3.14.3",
+    "system": "Linux",
+    "machine": "x86_64",
+    "processor": "unknown",
+    "rust_available": true,
+    "rust_module_path": "/home/bryan/.local/state/sase/workspaces/sase-org/sase/sase_10/.venv/lib/python3.14/site-packages/sase_core_rs/__init__.py",
+    "rust_module_version": null,
+    "extra": {
+      "rust_slowdown_factor": 1.4,
+      "smoke": false,
+      "anchor_count": 11
+    },
+    "phase": "7"
+  },
+  "baseline": {
+    "path": "/home/bryan/.local/state/sase/workspaces/sase-org/sase/sase_10/tests/perf/baselines/phase7_regression_floor.json",
+    "captured_at_phase": "7B + query_corpus_phase6",
+    "git_sha_at_capture": "e0f3b4a9f0f4",
+    "rust_slowdown_factor": 1.4
+  },
+  "ok": true,
+  "results": [
+    {
+      "anchor_id": "parse_project_bytes.golden_myproj.facade",
+      "surface": "parse_project_bytes",
+      "workload": "golden_myproj",
+      "scenario": "facade",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 0.00012434751261025667,
+      "phase7b_python_median_s": 0.0002959399716928601,
+      "current_rust_median_s": 5.7860990636982024e-05,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 0.00017408651765435932,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'facade' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "parse_project_bytes.synthetic_200_specs.facade",
+      "surface": "parse_project_bytes",
+      "workload": "synthetic_200_specs",
+      "scenario": "facade",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 0.019116180017590523,
+      "phase7b_python_median_s": 0.02667380598722957,
+      "current_rust_median_s": 0.0052549520041793585,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 0.02676265202462673,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'facade' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "parse_query.parse_only.direct",
+      "surface": "parse_query",
+      "workload": "parse_only",
+      "scenario": "direct",
+      "must_beat_python": true,
+      "phase7b_rust_median_s": 5.770998541265726e-06,
+      "phase7b_python_median_s": 1.2307980796322227e-05,
+      "current_rust_median_s": 4.112996975891292e-06,
+      "current_python_median_s": 8.716495358385146e-06,
+      "rust_ceiling_s": 8.079397957772017e-06,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": []
+    },
+    {
+      "anchor_id": "evaluate_query_many.synthetic_1000_specs.persistent_query_keystroke",
+      "surface": "evaluate_query_many",
+      "workload": "synthetic_1000_specs",
+      "scenario": "persistent_query_keystroke",
+      "must_beat_python": true,
+      "phase7b_rust_median_s": 6.670202128589153e-05,
+      "phase7b_python_median_s": 0.003998827422037721,
+      "current_rust_median_s": 7.222800195449963e-05,
+      "current_python_median_s": 0.003982677997555584,
+      "rust_ceiling_s": 9.338282980024814e-05,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": []
+    },
+    {
+      "anchor_id": "scan_agent_artifacts.synthetic_6p_200pp.scan_facade",
+      "surface": "scan_agent_artifacts",
+      "workload": "synthetic_6p_200pp",
+      "scenario": "scan_facade",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 0.11998871198738925,
+      "phase7b_python_median_s": 0.14513437598361634,
+      "current_rust_median_s": 0.1704769479983952,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 0.21597968157730066,
+      "rust_slowdown_factor_used": 1.8,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'scan_facade' missing from baseline (python) summaries",
+        "absolute floor uses per-anchor rust_slowdown_factor 1.80x instead of global 1.40x: The Phase 7B baseline (~120 ms) predates several intentional agent-scan wire-shape expansions: pending_question.json marker scanning, workspace_dir / agent-meta tag / PDF activity / image paths / workflow-relationship / epic-start fields on agent_meta and done markers. On the 6-project x 200-per-project synthetic each addition increases both serde parsing on the Rust side and per-record Python dataclass hydration; the dict-to-wire pass alone adds ~40 ms over the captured baseline. Local median sits around 150-160 ms; GitHub-hosted runner medians have reached 196.55 ms (2026-07-01 CI run 28521789237). Use a 1.80x absolute floor to keep this high-variance facade anchor under an anchor-local ceiling without weakening the global 1.4x gate for stable anchors; revisit when the Python hydration is pushed across the PyO3 boundary."
+      ]
+    },
+    {
+      "anchor_id": "apply_status_update.golden_myproj_pure.apply_status_update",
+      "surface": "apply_status_update",
+      "workload": "golden_myproj_pure",
+      "scenario": "apply_status_update",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 5.801033694297075e-06,
+      "phase7b_python_median_s": 5.565496394410729e-06,
+      "current_rust_median_s": 3.367007593624294e-06,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 8.121447172015905e-06,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'apply_status_update' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "notification_store.synthetic_5k.notification_store_5k_load_snapshot",
+      "surface": "notification_store",
+      "workload": "synthetic_5k",
+      "scenario": "notification_store_5k_load_snapshot",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 0.01319,
+      "phase7b_python_median_s": 0.0127,
+      "current_rust_median_s": 0.013973686000099406,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 0.018466,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'notification_store_5k_load_snapshot' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "notification_store.synthetic_5k.notification_store_5k_mark_dismissed_burst",
+      "surface": "notification_store",
+      "workload": "synthetic_5k",
+      "scenario": "notification_store_5k_mark_dismissed_burst",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 4.86504,
+      "phase7b_python_median_s": 5.857335,
+      "current_rust_median_s": 0.03555162299016956,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 6.811055999999999,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'notification_store_5k_mark_dismissed_burst' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "notification_store.synthetic_5k.notification_store_5k_mark_all_read",
+      "surface": "notification_store",
+      "workload": "synthetic_5k",
+      "scenario": "notification_store_5k_mark_all_read",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 0.071685,
+      "phase7b_python_median_s": 0.079459,
+      "current_rust_median_s": 0.03572359000099823,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 0.10035899999999999,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'notification_store_5k_mark_all_read' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "notification_store.synthetic_5k.notification_store_append_plus_rewrite_concurrency",
+      "surface": "notification_store",
+      "workload": "synthetic_5k",
+      "scenario": "notification_store_append_plus_rewrite_concurrency",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 1.940894,
+      "phase7b_python_median_s": 0.16046,
+      "current_rust_median_s": 0.35202473899698816,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 2.7172515999999995,
+      "rust_slowdown_factor_used": 1.4,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'notification_store_append_plus_rewrite_concurrency' missing from baseline (python) summaries"
+      ]
+    },
+    {
+      "anchor_id": "notification_store.synthetic_5k.notification_modal_dismiss_burst",
+      "surface": "notification_store",
+      "workload": "synthetic_5k",
+      "scenario": "notification_modal_dismiss_burst",
+      "must_beat_python": false,
+      "phase7b_rust_median_s": 3.186558,
+      "phase7b_python_median_s": 3.186558,
+      "current_rust_median_s": 0.12353031300881412,
+      "current_python_median_s": null,
+      "rust_ceiling_s": 5.0984928,
+      "rust_slowdown_factor_used": 1.6,
+      "passed": true,
+      "failures": [],
+      "notes": [
+        "scenario 'notification_modal_dismiss_burst' missing from baseline (python) summaries",
+        "absolute floor uses per-anchor rust_slowdown_factor 1.60x instead of global 1.40x: This modal path performs 25 production one-at-a-time persisted dismissals from a loaded 5k inbox and has shown multi-second GitHub-hosted runner IO variance; keep the extra slack local to this anchor while preserving the global 1.4x gate for stable floors."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "baseline": {
+    "include_sleeps": true,
+    "runs": 1,
+    "scenarios": {
+      "model_fanout": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 2000.0,
+        "max_ms": 2001.187292044051,
+        "median_ms": 2001.187292044051,
+        "min_ms": 2001.187292044051,
+        "p95_ms": 2001.187292044051,
+        "prepared_count": 3,
+        "requires_sequential_naming_wait": false
+      },
+      "multi_prompt": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.554839032702148,
+        "median_ms": 0.554839032702148,
+        "min_ms": 0.554839032702148,
+        "p95_ms": 0.554839032702148,
+        "prepared_count": 2,
+        "requires_sequential_naming_wait": true
+      },
+      "plain_prompt": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.23424706887453794,
+        "median_ms": 0.23424706887453794,
+        "min_ms": 0.23424706887453794,
+        "p95_ms": 0.23424706887453794,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      },
+      "repeat_fanout": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 2000.0,
+        "max_ms": 2001.1504330905154,
+        "median_ms": 2001.1504330905154,
+        "min_ms": 2001.1504330905154,
+        "p95_ms": 2001.1504330905154,
+        "prepared_count": 3,
+        "requires_sequential_naming_wait": false
+      },
+      "vcs_prompt": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.20414905156940222,
+        "median_ms": 0.20414905156940222,
+        "min_ms": 0.20414905156940222,
+        "p95_ms": 0.20414905156940222,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      },
+      "wait_deferred": {
+        "count": 1.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.2566189505159855,
+        "median_ms": 0.2566189505159855,
+        "min_ms": 0.2566189505159855,
+        "p95_ms": 0.2566189505159855,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      }
+    },
+    "schema_version": 1
+  },
+  "baseline_path": "/home/bryan/.local/state/sase/workspaces/sase-org/sase/sase_11/tests/perf/agent_launch_phase1_baseline.json",
+  "current": {
+    "include_sleeps": false,
+    "runs": 3,
+    "scenarios": {
+      "model_fanout": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 2000.0,
+        "max_ms": 0.9444319875910878,
+        "median_ms": 0.9239740029443055,
+        "min_ms": 0.8008590084500611,
+        "p95_ms": 0.9444319875910878,
+        "prepared_count": 3,
+        "requires_sequential_naming_wait": false
+      },
+      "multi_prompt": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.7745689945295453,
+        "median_ms": 0.6497399881482124,
+        "min_ms": 0.6470750086009502,
+        "p95_ms": 0.7745689945295453,
+        "prepared_count": 2,
+        "requires_sequential_naming_wait": true
+      },
+      "plain_prompt": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 1.7694569833111018,
+        "median_ms": 0.3192000149283558,
+        "min_ms": 0.28413301333785057,
+        "p95_ms": 1.7694569833111018,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      },
+      "repeat_fanout": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 2000.0,
+        "max_ms": 0.8939969993662089,
+        "median_ms": 0.8745399827603251,
+        "min_ms": 0.7918319897726178,
+        "p95_ms": 0.8939969993662089,
+        "prepared_count": 3,
+        "requires_sequential_naming_wait": false
+      },
+      "vcs_prompt": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.40424198959954083,
+        "median_ms": 0.30720600625500083,
+        "min_ms": 0.2880999818444252,
+        "p95_ms": 0.40424198959954083,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      },
+      "wait_deferred": {
+        "count": 3.0,
+        "expected_parent_sleep_ms": 0.0,
+        "max_ms": 0.374845985788852,
+        "median_ms": 0.30760798836126924,
+        "min_ms": 0.28220898821018636,
+        "p95_ms": 0.374845985788852,
+        "prepared_count": 1,
+        "requires_sequential_naming_wait": false
+      }
+    },
+    "schema_version": 1
+  },
+  "passed": true,
+  "results": [
+    {
+      "baseline_median_ms": 2001.187292044051,
+      "current_median_ms": 0.9239740029443055,
+      "failures": [],
+      "max_baseline_ratio": 0.25,
+      "max_median_ms": null,
+      "passed": true,
+      "rationale": "model fan-out must stay far below the Phase 1 sleep baseline",
+      "scenario": "model_fanout"
+    },
+    {
+      "baseline_median_ms": 2001.1504330905154,
+      "current_median_ms": 0.8745399827603251,
+      "failures": [],
+      "max_baseline_ratio": 0.25,
+      "max_median_ms": null,
+      "passed": true,
+      "rationale": "repeat fan-out must stay far below the Phase 1 sleep baseline",
+      "scenario": "repeat_fanout"
+    },
+    {
+      "baseline_median_ms": 0.23424706887453794,
+      "current_median_ms": 0.3192000149283558,
+      "failures": [],
+      "max_baseline_ratio": null,
+      "max_median_ms": 100.0,
+      "passed": true,
+      "rationale": "single-prompt fake launch should stay comfortably CI-cheap",
+      "scenario": "plain_prompt"
+    },
+    {
+      "baseline_median_ms": 0.20414905156940222,
+      "current_median_ms": 0.30720600625500083,
+      "failures": [],
+      "max_baseline_ratio": null,
+      "max_median_ms": 100.0,
+      "passed": true,
+      "rationale": "VCS preallocated fake launch should stay comfortably CI-cheap",
+      "scenario": "vcs_prompt"
+    },
+    {
+      "baseline_median_ms": 0.2566189505159855,
+      "current_median_ms": 0.30760798836126924,
+      "failures": [],
+      "max_baseline_ratio": null,
+      "max_median_ms": 100.0,
+      "passed": true,
+      "rationale": "deferred-workspace fake launch should stay comfortably CI-cheap",
+      "scenario": "wait_deferred"
+    }
+  ],
+  "runs": 3,
+  "schema_version": 1
+}
