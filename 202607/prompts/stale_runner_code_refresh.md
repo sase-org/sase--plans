@@ -1,0 +1,4 @@
+---
+plan: 202607/stale_runner_code_refresh.md
+---
+ Is this agent's validation error (see #sshot for context) justified? This seems to be happening often. I've had to upgrade two times now and this will be my third. Hi, I need to relaunch this agent at which point I'm assuming it will work. Can you dig into this and confirm or deny my suspicions (i.e. this is happening frequently / is going to happen frequently and it is not necessary or we can work around this issue in a better way that doesn't cause sase agents to fail)? If you think you've come up with a good solution I'll be happy with. Use your /sase_plan skill to plan out the necessary changes. 
