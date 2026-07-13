@@ -1,9 +1,10 @@
 ---
 create_time: 2026-07-13 09:07:58
-status: wip
+status: done
 prompt: 202607/prompts/research_swarm_lead_month_dir.md
 tier: tale
 ---
+
 # Plan: Research Swarm Lead Segment — Month Directory, Lead-Researcher Role, and Concision
 
 ## Goal
