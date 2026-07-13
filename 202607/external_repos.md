@@ -2,6 +2,7 @@
 create_time: 2026-07-13 16:54:57
 status: wip
 prompt: 202607/prompts/external_repos.md
+bead_id: sase-5y
 tier: epic
 ---
 # Plan: External Repos — `sase repo open` for Any Repo, Plus `/sase_repo` + `/sase_project` Skills
