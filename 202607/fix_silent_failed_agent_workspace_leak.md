@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 07:03:06
-status: wip
+status: done
 prompt: 202607/prompts/fix_silent_failed_agent_workspace_leak.md
 tier: tale
 ---
