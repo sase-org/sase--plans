@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 07:01:21
-status: wip
+status: done
 prompt: 202607/prompts/remove_memory_keywords.md
 tier: tale
 ---
