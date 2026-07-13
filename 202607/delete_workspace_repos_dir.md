@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 08:42:53
-status: wip
+status: done
 prompt: 202607/prompts/delete_workspace_repos_dir.md
 tier: tale
 ---
