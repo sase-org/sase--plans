@@ -1,24 +1,37 @@
-# SASE Plans
+# Structured Development Docs
 
-This public sidecar repository stores the durable planning state for its SASE-managed source repository. SASE
-automatically clones it into each workspace and keeps plan files, their original prompt snapshots, and bead state
-available to humans and agents.
+This SDD root keeps durable planning context close to the code it describes. It stores prompts, approved plans, roadmap
+material, and bead state in predictable paths so humans and agents can reference the same artifacts over time. The root
+may be the checkout's `sdd/` directory or a separate `.sase/sdd/` store; run `sase sdd path` or read `SASE_SDD_DIR` from
+agent environments to locate it.
 
-![Plans directory map](assets/plans-directory-map.png)
+![SDD directory map](assets/sdd-directory-map.png)
 
 ## Directory Layout
 
-- `<YYYYMM>/*.md` stores plan files. Every plan declares `tier: tale` or `tier: epic` in YAML frontmatter.
-- `<YYYYMM>/prompts/*.md` stores the original prompts or expanded snapshots that produced that month's plans.
-- `beads/` stores SASE bead events and compatibility projections. SQLite `beads.db*` files are local-only.
-- `assets/` stores generated explanatory media used by this README.
+- `plans/` stores implementation plans. Each `plans/<YYYYMM>/prompts/` subdirectory stores the original user prompts or
+  expanded prompt snapshots that led to that month's plans. Plan files require `tier: tale` for focused task plans or
+  `tier: epic` for larger multi-phase plans.
+- `research/` stores exploratory findings, prior art, options, critiques, and recommendations that inform later work.
+- `beads/` stores bead issue data for SDD-backed work tracking.
 
-Plan and prompt links are relative to this repository root. For example, `202607/example.md` links back to
-`202607/prompts/example.md`.
+Prompt, plan, and research files are normally organized under a `YYYYMM/` month directory relative to this root. For
+example, a prompt at `plans/202605/prompts/example.md` pairs with `plans/202605/example.md`, while research lives at
+`research/202605/example.md`. Prompt files should link to their generated plan-like artifact with frontmatter such as
+`plan: plans/202605/example.md`; the plan-like artifact should link back with
+`prompt: plans/202605/prompts/example.md`.
 
 ## Commands
 
-- `sase plan list` and `sase plan search` inspect plans.
-- `sase sdd path plans` prints this clone's root.
-- `sase sdd validate` checks prompt and plan frontmatter links.
-- `sase bead` manages bead work stored under `beads/`.
+- `sase sdd list` lists SDD markdown artifacts.
+- `sase sdd path` prints the effective SDD root; pass a kind such as `research` to print that child directory.
+- `sase sdd validate` checks frontmatter links between prompts and plan-like artifacts.
+- `sase sdd repair-links` infers and repairs missing bidirectional links.
+- `sase plan search` searches these `sdd/` plans and the machine-local `~/.sase/plans/` archive by content.
+- `sase bead` manages SDD bead issues and epic work.
+
+## Compatibility
+
+The canonical top-level directories are `plans/`, `research/`, and `beads/`. Prompt snapshots live under
+`plans/<YYYYMM>/prompts/`. Historical top-level `prompts/` and `specs/` aliases remain readable during migration, but
+new snapshots are written only to the nested layout.
