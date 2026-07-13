@@ -4,6 +4,7 @@ status: done
 prompt: 202607/prompts/chop_agent_drain_barriers.md
 tier: tale
 ---
+
 # Plan: Add `%w(runners=0)` Drain Barriers to Chop-Launched Agents
 
 ## Goal
