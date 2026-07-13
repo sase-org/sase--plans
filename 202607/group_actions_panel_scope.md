@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 12:35:22
-status: wip
+status: done
 prompt: 202607/prompts/group_actions_panel_scope.md
 tier: tale
 ---
