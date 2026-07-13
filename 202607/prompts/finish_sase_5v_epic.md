@@ -23,3 +23,15 @@ Finally, find the plan file associated with this work (which should be in the sd
 `tier: epic`, in a YYYYMM
 subdirectory). If found, a `status` field should be added (or updated if it already exists) to the frontmatter of
 the plan file with a value of `done`.
+
+%xprompts_enabled:false
+### Questions and Answers
+
+#### Q1: Permission
+
+> May I make the plan’s narrowly scoped protected-file edits to tools/AGENTS.md, tools/CLAUDE.md, tools/GEMINI.md, tools/OPENCODE.md, tools/QWEN.md, and memory/pyvision.md?
+
+- [x] **Approve edits** — Make only the pyvendor-to-basher documentation updates specified by the approved plan.
+- [ ] **Deny edits** — Leave protected files unchanged and keep the sase-5v bead open with a recorded follow-up.
+
+%xprompts_enabled:true
