@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 18:12:53
-status: wip
+status: done
 prompt: 202607/prompts/max_running_agents.md
 bead_id: sase-5u
 tier: epic
