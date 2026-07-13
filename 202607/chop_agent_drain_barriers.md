@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 07:42:13
-status: wip
+status: done
 prompt: 202607/prompts/chop_agent_drain_barriers.md
 tier: tale
 ---
