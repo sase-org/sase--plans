@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 14:11:07
-status: wip
+status: done
 prompt: 202607/prompts/repo_command_family.md
 bead_id: sase-5x
 tier: epic
