@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 06:52:07
-status: wip
+status: done
 prompt: 202607/prompts/symvision_migration_recovery.md
 tier: tale
 ---
