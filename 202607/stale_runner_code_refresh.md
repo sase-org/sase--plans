@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 12:21:30
-status: wip
+status: done
 prompt: 202607/prompts/stale_runner_code_refresh.md
 tier: tale
 ---
