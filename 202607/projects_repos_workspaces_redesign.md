@@ -2,6 +2,7 @@
 create_time: 2026-07-13 09:57:15
 status: wip
 prompt: 202607/prompts/projects_repos_workspaces_redesign.md
+bead_id: sase-5w
 tier: epic
 ---
 # Plan: Redesign SASE Projects / Repos / Workspaces + Admin Center Projects Tab
