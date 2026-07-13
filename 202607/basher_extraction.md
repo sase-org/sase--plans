@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-12 19:19:53
-status: wip
+status: done
 prompt: 202607/prompts/basher_extraction.md
 tier: epic
 bead_id: sase-5v
