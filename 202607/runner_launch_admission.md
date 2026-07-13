@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 10:30:38
-status: wip
+status: done
 prompt: 202607/prompts/runner_launch_admission.md
 tier: tale
 ---
