@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 09:28:41
-status: wip
+status: done
 prompt: 202607/prompts/wait_runners_deferred_workspace.md
 tier: tale
 ---
