@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 07:44:14
-status: wip
+status: done
 prompt: 202607/prompts/auto_commit_qa_prompt_snapshot.md
 tier: tale
 ---
