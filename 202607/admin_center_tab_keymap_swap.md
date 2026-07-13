@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 09:07:19
-status: wip
+status: done
 prompt: 202607/prompts/admin_center_tab_keymap_swap.md
 tier: tale
 ---
