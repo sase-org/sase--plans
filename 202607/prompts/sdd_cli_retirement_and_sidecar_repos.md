@@ -1,0 +1,21 @@
+---
+plan: 202607/sdd_cli_retirement_and_sidecar_repos.md
+---
+ We've done a lot of work recently to generalize sase repos and add support for multiple types like Sidecar repos, Linked repos, and External repos. In the case of Sidecar repos however we still seem to treat them conceptually differently somehow I think. I think this has something to do with the legacy sdd foundations of this particular repo type. One of the goals of this work has been to migrate away from the legacy `sase sdd` command completely and start treating sidecar repos as first-class sase repos. Another goal was to give the user the ability to define their own custom sidecar repos in config, which was actually what I always planned for the `sase--research` repo to be (a custom repo that I use from all of my currently enabled sase projects). Can you help me complete this work? Namely:
+
+- I don't think we need the `sase sdd` command anymore but we definitely still need some of its functionality so that will need to be migrated elsewhere. In particular:
+  - The `#research_swarm` xprompt (defined in my chezmoi repo) uses the `sase sdd path` command, but I'm pretty sure this functionality can be migrated to the `sase repo open` command (or maybe a new `sase repo path` command is needed--either way, we should migrate this functionality to the `sase repo` command somehow), right?
+  - Some of the other `sase sdd` commands seem like they probably belong on the `sase plan` command instead.
+  - The `sase sdd init` command seems like a good fit for a new `sase plan init` command, but should probably be migrated to the new `sase repo init` command instead (see the related bullet below for more context).
+  - Some of the `sase sdd` subcommands, particularly the ones related to migrations that have already been completed, can be removed entirely. Use your best judgment here.
+- The `sase--research` sidecar should become a custom sidecar repo (that is not auto-cloned by default) that you should configure for all of my enabled sase projects.
+- Let's migrate the existing `linked_repo` configuration field to a new `repos.linked` field. This will allow us to support a new `repos.sidecar` configuration field. When sase detects that a project is sase managed (by checking for the `is_sase_managed` project-local configuration field), it currently implicitly includes the `sase--plans` sidecar repo in that project's configuration. Can we start making this explicit by having the `sase init` command automatically add the appropriate entry to the new `repos.sidecar` field when the `is_sase_managed` field is already set (or when the `sase init` command's `-M` option is used)? The user should be able to explicitly disable this repo by adding the `disabled: true` sub-field to that repo entry in the project's sase.yml file.
+- ALL configured sidecar GitHub repos should be created (public by default, but this should be configurable per-repo) automatically (after the user confirms) by the `sase init` command, which should delegate this part of the initialization process to a new `sase repo init` command, which should be a wrapper for the new `sase repo init` command (see how we handle this for other `sase init` subcommands for inspiration). I think the `sase init workspace` command's functionality should also probably be migrated to this new `sase repo init` command, but you can make the final call on that one.
+- Use your `/sase_var` skill to express decisions that you have made (if any) that you think I should be aware of by setting one sase variable for each important decision (these should be _your_ decisions, not mine--i.e. don't just repeat the decisions that I've expressed in this prompt). Make sure to set these variables before submitting your plan with the `sase plan propose` command.
+
+This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but
+keep in mind that each phase will be completed by a distinct agent instance (i.e. a distinct `claude` / `agy` /
+`codex` / `qwen` / `opencode` command). Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
+`sase plan propose` command (as the skill instructs) before making any file changes.
+
+ 
