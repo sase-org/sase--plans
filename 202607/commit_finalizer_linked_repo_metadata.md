@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 05:57:10
-status: wip
+status: done
 prompt: 202607/prompts/commit_finalizer_linked_repo_metadata.md
 tier: tale
 ---
