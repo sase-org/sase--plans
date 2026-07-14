@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 11:23:59
-status: wip
+status: done
 prompt: 202607/prompts/bulk_kill_edit_waiting_name_reuse.md
 tier: tale
 ---
