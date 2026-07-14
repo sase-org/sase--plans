@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 10:49:44
-status: wip
+status: done
 prompt: 202607/prompts/codeblock_card_highlight.md
 tier: tale
 ---
