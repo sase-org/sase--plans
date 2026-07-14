@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 08:55:43
-status: wip
+status: done
 prompt: 202607/prompts/fix_project_agent_revert_checkout.md
 tier: tale
 ---
