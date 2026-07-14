@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 06:50:24
-status: wip
+status: done
 prompt: 202607/prompts/question_notification_summary.md
 tier: tale
 ---
