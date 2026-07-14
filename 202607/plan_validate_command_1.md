@@ -2,6 +2,7 @@
 create_time: 2026-07-14 12:43:46
 status: wip
 prompt: 202607/prompts/plan_validate_command_1.md
+bead_id: sase-61
 tier: epic
 ---
 # Plan: Agent-Facing `sase plan validate` + Structured Epic Frontmatter
