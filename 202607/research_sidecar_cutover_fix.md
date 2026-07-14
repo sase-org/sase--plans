@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 13:02:09
-status: wip
+status: done
 prompt: 202607/prompts/research_sidecar_cutover_fix.md
 tier: tale
 ---
