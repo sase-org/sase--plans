@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-13 16:54:57
-status: wip
+status: done
 prompt: 202607/prompts/external_repos.md
 bead_id: sase-5y
 tier: epic
