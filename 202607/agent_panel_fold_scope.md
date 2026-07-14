@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 09:41:54
-status: wip
+status: done
 prompt: 202607/prompts/agent_panel_fold_scope.md
 tier: tale
 ---
