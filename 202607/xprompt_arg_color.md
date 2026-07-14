@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 07:35:43
-status: wip
+status: done
 prompt: 202607/prompts/xprompt_arg_color.md
 tier: tale
 ---
