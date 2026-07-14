@@ -1,6 +1,6 @@
 ---
 create_time: 2026-07-14 07:38:56
-status: wip
+status: done
 prompt: 202607/prompts/repo_skill_web_fetch_loophole.md
 tier: tale
 ---
