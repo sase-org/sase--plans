@@ -1,7 +1,7 @@
 ---
 create_time: 2026-07-14 09:29:13
 bead_id: sase-60
-status: wip
+status: done
 prompt: 202607/prompts/sdd_cli_retirement_and_sidecar_repos.md
 tier: epic
 ---
