@@ -3,7 +3,7 @@ tier: tale
 goal: Make the xprompt syntax-highlighting test deterministic in a core-only development
   environment while preserving coverage of project-scoped slash-skill highlighting.
 create_time: 2026-07-15 09:17:28
-status: wip
+status: done
 prompt: 202607/prompts/stabilize_xprompt_skill_highlight_test.md
 ---
 
