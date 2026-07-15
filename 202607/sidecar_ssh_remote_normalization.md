@@ -6,7 +6,7 @@ goal: 'GitHub sidecar repositories resolve, initialize, and converge on canonica
 
   '
 create_time: 2026-07-15 10:06:59
-status: wip
+status: done
 prompt: 202607/prompts/sidecar_ssh_remote_normalization.md
 ---
 
