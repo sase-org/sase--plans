@@ -1,20 +1,25 @@
 ---
 tier: epic
 title: Serialize SDD store git writers and retry index.lock contention
-goal: >
-  Epic launches and bead-store commits no longer fail on transient git index.lock contention in shared SDD sidecar store
-  repos: SASE-managed git writers are serialized against each other, transient lock collisions are retried instead of
-  aborting the launch, and any residual git failure surfaces git's stderr so it is diagnosable from the task output.
+goal: 'Epic launches and bead-store commits no longer fail on transient git index.lock
+  contention in shared SDD sidecar store repos: SASE-managed git writers are serialized
+  against each other, transient lock collisions are retried instead of aborting the
+  launch, and any residual git failure surfaces git''s stderr so it is diagnosable
+  from the task output.
+
+  '
 phases:
-  - id: retry
-    title: Index.lock-aware retry and stderr surfacing in store commit helpers
-    depends_on: []
-  - id: serialize
-    title: Inter-process write lock shared by sync workers and foreground committers
-    depends_on: [retry]
-  - id: sequence
-    title: Consolidate epic-launch commits to one deferred store push
-    depends_on: []
+- id: retry
+  title: Index.lock-aware retry and stderr surfacing in store commit helpers
+  depends_on: []
+- id: serialize
+  title: Inter-process write lock shared by sync workers and foreground committers
+  depends_on:
+  - retry
+- id: sequence
+  title: Consolidate epic-launch commits to one deferred store push
+  depends_on: []
+bead_id: sase-67
 ---
 
 # Plan: Serialize SDD store git writers and retry index.lock contention
