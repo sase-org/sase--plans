@@ -21,7 +21,7 @@ phases:
   - memory-render
   - per-project-research
 create_time: 2026-07-15 08:28:04
-status: wip
+status: done
 prompt: 202607/prompts/per_project_research_sidecars.md
 bead_id: sase-62
 ---
