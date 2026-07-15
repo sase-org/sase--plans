@@ -20,6 +20,7 @@ phases:
   - runner-error-coverage
 create_time: 2026-07-15 18:36:16
 status: wip
+bead_id: sase-68
 ---
 
 # Plan: Eliminate silent runner deaths; always surface failure output in the TUI
