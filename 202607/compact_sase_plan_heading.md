@@ -5,7 +5,7 @@ goal: 'Render the Goal field directly beneath the SASE PLAN heading while preser
 
   '
 create_time: 2026-07-15 18:03:45
-status: wip
+status: done
 prompt: 202607/prompts/compact_sase_plan_heading.md
 ---
 
