@@ -3,7 +3,7 @@ tier: tale
 goal: Restore Jinja input substitution inside inline-code formatting for xprompt and
   prompt-input templates without weakening launch-time literal-zone escaping.
 create_time: 2026-07-15 15:46:11
-status: wip
+status: done
 prompt: 202607/prompts/inline_jinja_template_literals.md
 ---
 
