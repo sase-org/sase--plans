@@ -5,7 +5,7 @@ goal: Restore reliable SASE CI by eliminating environment-dependent test failure
   floor sensitive to sustained regressions without failing on isolated hosted-runner
   outliers.
 create_time: 2026-07-15 13:47:29
-status: wip
+status: done
 prompt: 202607/prompts/ci_reliability.md
 ---
 
