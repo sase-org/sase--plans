@@ -4,7 +4,7 @@ goal: Make every section in the ACE agent metadata panel start its content direc
   beneath its heading, while giving the SASE PLAN Goal value a clearly distinct neutral
   color.
 create_time: 2026-07-15 18:29:38
-status: wip
+status: done
 prompt: 202607/prompts/compact_agent_metadata_sections.md
 ---
 
