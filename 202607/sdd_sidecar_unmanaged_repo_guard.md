@@ -24,7 +24,7 @@ phases:
   - creation-gate
   - provider-guard
 create_time: 2026-07-15 14:33:49
-status: wip
+status: done
 prompt: 202607/prompts/sdd_sidecar_unmanaged_repo_guard.md
 ---
 
