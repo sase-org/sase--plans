@@ -1,23 +1,29 @@
 ---
 tier: epic
 title: Visual snapshot determinism
-goal: >
-  Master CI is green again and the ACE PNG visual snapshot suite is deterministic across machines: when the suite passes
-  on any properly-installed machine, it passes in CI, because every environment renders byte-identical PNGs from a
-  pinned render stack and every capture waits for the expected UI state instead of racing it.
+goal: 'Master CI is green again and the ACE PNG visual snapshot suite is deterministic
+  across machines: when the suite passes on any properly-installed machine, it passes
+  in CI, because every environment renders byte-identical PNGs from a pinned render
+  stack and every capture waits for the expected UI state instead of racing it.
+
+  '
 phases:
-  - id: pin-render-stack
-    title: Pin the render stack and gate on a renderer-environment fingerprint
-    depends_on: []
-  - id: deterministic-capture
-    title: Replace timing-based captures with expected-state waits
-    depends_on: [pin-render-stack]
-  - id: exact-goldens
-    title: Cut over to byte-exact comparison and regenerate all goldens
-    depends_on: [deterministic-capture]
-  - id: guardrails-and-docs
-    title: CI lane hardening, regen tooling polish, and contributor docs
-    depends_on: [exact-goldens]
+- id: pin-render-stack
+  title: Pin the render stack and gate on a renderer-environment fingerprint
+  depends_on: []
+- id: deterministic-capture
+  title: Replace timing-based captures with expected-state waits
+  depends_on:
+  - pin-render-stack
+- id: exact-goldens
+  title: Cut over to byte-exact comparison and regenerate all goldens
+  depends_on:
+  - deterministic-capture
+- id: guardrails-and-docs
+  title: CI lane hardening, regen tooling polish, and contributor docs
+  depends_on:
+  - exact-goldens
+bead_id: sase-65
 ---
 
 # Plan: Visual snapshot determinism
