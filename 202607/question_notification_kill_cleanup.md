@@ -18,6 +18,7 @@ phases:
 create_time: 2026-07-15 09:47:37
 status: wip
 prompt: 202607/prompts/question_notification_kill_cleanup.md
+bead_id: sase-63
 ---
 
 # Plan: Dismiss open question notifications when agents are killed
