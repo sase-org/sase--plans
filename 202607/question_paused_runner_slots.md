@@ -3,7 +3,7 @@ tier: tale
 goal: Root agents paused for user answers stop blocking runner-slot drain barriers,
   then reacquire capacity safely before resuming.
 create_time: 2026-07-15 13:04:05
-status: wip
+status: done
 prompt: 202607/prompts/question_paused_runner_slots.md
 ---
 
