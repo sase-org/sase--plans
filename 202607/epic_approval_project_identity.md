@@ -5,7 +5,7 @@ goal: Epic approval launches from the TUI and other host transports resolve the 
   metadata uses a relative project directory or the repository display name differs
   from the canonical project key.
 create_time: 2026-07-15 17:04:12
-status: wip
+status: done
 prompt: 202607/prompts/epic_approval_project_identity.md
 ---
 
