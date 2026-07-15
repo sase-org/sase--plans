@@ -23,6 +23,7 @@ phases:
 create_time: 2026-07-15 08:28:04
 status: wip
 prompt: 202607/prompts/per_project_research_sidecars.md
+bead_id: sase-62
 ---
 
 # Plan: Per-project research sidecar repos
