@@ -3,7 +3,7 @@ tier: tale
 goal: Prevent the toobig_split chop from scanning or launching while an existing split_file-hood
   agent is starting, running, or waiting.
 create_time: 2026-07-15 16:04:37
-status: wip
+status: done
 prompt: 202607/prompts/toobig_split_active_hood_guard.md
 ---
 
