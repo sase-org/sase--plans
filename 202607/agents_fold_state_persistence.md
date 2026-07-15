@@ -3,7 +3,7 @@ tier: tale
 goal: Persist Agents-tab group and whole-panel fold state across sase ace restarts
   without adding work to the TUI startup critical path or degrading navigation responsiveness.
 create_time: 2026-07-15 19:12:12
-status: wip
+status: done
 prompt: 202607/prompts/agents_fold_state_persistence.md
 ---
 
