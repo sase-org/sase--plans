@@ -7,7 +7,7 @@ goal: 'Scheduler-launched fix-hook and CRS agent runs succeed end-to-end (the co
 
   '
 create_time: 2026-07-15 13:21:48
-status: wip
+status: done
 prompt: 202607/prompts/fix_hook_finalizer_env.md
 ---
 
