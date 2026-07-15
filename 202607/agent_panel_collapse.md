@@ -8,7 +8,7 @@ goal: 'Repurpose the Agents-tab `H` / `L` keymaps so they collapse and expand an
 
   '
 create_time: 2026-07-15 11:32:59
-status: wip
+status: done
 prompt: 202607/prompts/agent_panel_collapse.md
 ---
 
