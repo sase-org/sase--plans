@@ -6,7 +6,7 @@ goal: 'Agents associated with epic plans see every declared epic phase as a poli
 
   '
 create_time: 2026-07-15 14:42:53
-status: wip
+status: done
 prompt: 202607/prompts/epic_phase_metadata.md
 ---
 
