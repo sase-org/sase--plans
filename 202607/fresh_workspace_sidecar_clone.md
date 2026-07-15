@@ -6,7 +6,7 @@ goal: 'Every numbered workspace launch removes its launch-scoped sase/repos tree
 
   '
 create_time: 2026-07-15 11:04:29
-status: wip
+status: done
 prompt: 202607/prompts/fresh_workspace_sidecar_clone.md
 ---
 
