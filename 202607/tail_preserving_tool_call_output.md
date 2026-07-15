@@ -4,7 +4,7 @@ goal: Slow-tool call reports truncate oversized command output from the beginnin
   clearly mark the omission, and preserve at least the final 50 lines across transcript-backed
   and preview-only runtimes.
 create_time: 2026-07-15 13:48:14
-status: wip
+status: done
 prompt: 202607/prompts/tail_preserving_tool_call_output.md
 ---
 
