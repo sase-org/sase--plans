@@ -4,7 +4,7 @@ goal: Agents with an associated proposed plan see a polished SASE PLAN metadata 
   with the plan's goal, effective tier, and canonical path, without a top-level Goal
   field or any regression to Agents-tab responsiveness.
 create_time: 2026-07-15 13:52:53
-status: wip
+status: done
 prompt: 202607/prompts/agents_sase_plan_metadata.md
 ---
 
