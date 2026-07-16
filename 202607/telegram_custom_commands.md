@@ -25,6 +25,7 @@ phases:
   model: haiku
 create_time: 2026-07-16 15:29:35
 status: wip
+bead_id: sase-6f
 ---
 
 # Plan: User-defined Telegram slash commands (+ first use case: /tasks)
