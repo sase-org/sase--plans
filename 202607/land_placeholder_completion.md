@@ -7,7 +7,7 @@ goal: 'SASE consumes the released sase-core placeholder APIs, the feature is ver
 
   '
 create_time: 2026-07-16 09:51:29
-status: wip
+status: done
 prompt: 202607/prompts/land_placeholder_completion.md
 ---
 
