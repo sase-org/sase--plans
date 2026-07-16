@@ -24,7 +24,7 @@ phases:
   - tasks-command
   model: haiku
 create_time: 2026-07-16 15:29:35
-status: wip
+status: done
 bead_id: sase-6f
 ---
 
