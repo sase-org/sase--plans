@@ -45,6 +45,7 @@ phases:
   - epic_usecase
 create_time: 2026-07-16 18:55:59
 status: wip
+bead_id: sase-6g
 ---
 
 # Plan: xprompt agent families via a `%family` directive
