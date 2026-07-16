@@ -9,7 +9,7 @@ goal: 'Every GitHub Actions CI job on sase master passes again: the phase7-perf-
 
   '
 create_time: 2026-07-16 13:20:59
-status: wip
+status: done
 prompt: 202607/prompts/fix_master_ci_failures.md
 ---
 
