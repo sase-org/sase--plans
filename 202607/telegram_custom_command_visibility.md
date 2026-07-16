@@ -6,7 +6,7 @@ goal: 'Newly configured Telegram slash commands appear near the top of the bot m
 
   '
 create_time: 2026-07-16 16:53:08
-status: wip
+status: done
 prompt: 202607/prompts/telegram_custom_command_visibility.md
 ---
 
