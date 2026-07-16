@@ -8,7 +8,7 @@ goal: 'The AGENT XPROMPT section of the agent metadata panel on the Agents tab r
 
   '
 create_time: 2026-07-16 16:38:37
-status: wip
+status: done
 prompt: 202607/prompts/agent_xprompt_panel_highlighting.md
 ---
 
