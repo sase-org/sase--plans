@@ -22,6 +22,7 @@ phases:
   - core
 create_time: 2026-07-16 08:49:16
 status: wip
+bead_id: sase-6b
 ---
 
 # Plan: Placeholder completion for `<placeholder text>` in prompts
