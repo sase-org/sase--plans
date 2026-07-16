@@ -7,7 +7,7 @@ goal: 'ACE shows the full SASE PLAN section only for the agent that authored an 
 
   '
 create_time: 2026-07-16 06:40:23
-status: wip
+status: done
 prompt: 202607/prompts/phase_agent_metadata.md
 ---
 
