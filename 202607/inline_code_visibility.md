@@ -6,7 +6,7 @@ goal: 'Inline code in the ACE prompt editor reads as a clear, polished literal c
 
   '
 create_time: 2026-07-16 16:17:13
-status: wip
+status: done
 prompt: 202607/prompts/inline_code_visibility.md
 ---
 
