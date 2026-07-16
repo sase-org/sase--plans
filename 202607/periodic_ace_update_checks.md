@@ -5,7 +5,7 @@ goal: Keep long-running ACE sessions aware of newly available SASE updates by ch
   every ten minutes until the updates indicator is set, without blocking or overlapping
   work on the TUI event loop.
 create_time: 2026-07-16 09:29:15
-status: wip
+status: done
 prompt: 202607/prompts/periodic_ace_update_checks.md
 ---
 
