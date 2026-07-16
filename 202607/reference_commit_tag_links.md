@@ -6,7 +6,7 @@ goal: 'SASE commit metadata can carry Markdown reference links safely, and GitHu
 
   '
 create_time: 2026-07-16 13:29:48
-status: wip
+status: done
 prompt: 202607/prompts/reference_commit_tag_links.md
 ---
 
