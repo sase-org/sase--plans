@@ -6,7 +6,7 @@ goal: 'memory/glossary.md accurately documents that ProjectSpec/ChangeSpec paths
 
   '
 create_time: 2026-07-16 07:50:41
-status: wip
+status: done
 prompt: 202607/prompts/glossary_project_key.md
 ---
 
