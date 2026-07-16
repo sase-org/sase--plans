@@ -25,6 +25,7 @@ phases:
   - detail-redesign
 create_time: 2026-07-16 08:43:21
 status: wip
+bead_id: sase-6a
 ---
 
 # Plan: Plans artifacts pane — all-projects scope, recency sort, and readable details
