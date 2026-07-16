@@ -11,7 +11,7 @@ goal: 'The agent metadata panel presents the selected agent''s outputs as one AR
 
   '
 create_time: 2026-07-16 18:27:01
-status: wip
+status: done
 prompt: 202607/prompts/artifacts_lane_in_sase_context.md
 ---
 
