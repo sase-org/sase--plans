@@ -7,7 +7,7 @@ goal: 'Ctrl+J and Ctrl+K cycle through the selected agent''s rendered metadata s
 
   '
 create_time: 2026-07-16 17:44:30
-status: wip
+status: done
 prompt: 202607/prompts/agents_metadata_section_keymaps.md
 ---
 
