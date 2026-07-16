@@ -36,6 +36,7 @@ phases:
   - plan_gates
 create_time: 2026-07-16 15:05:00
 status: wip
+bead_id: sase-6e
 ---
 
 # Plan: Unified command-backed notification gates
