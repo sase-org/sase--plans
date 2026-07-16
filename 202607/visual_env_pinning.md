@@ -8,7 +8,7 @@ goal: 'The ACE PNG visual snapshot suite renders byte-identical PNGs regardless 
 
   '
 create_time: 2026-07-15 21:29:55
-status: wip
+status: done
 prompt: 202607/prompts/visual_env_pinning.md
 ---
 
