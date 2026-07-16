@@ -30,6 +30,7 @@ phases:
   model: haiku
 create_time: 2026-07-16 11:13:13
 status: wip
+bead_id: sase-6c
 ---
 
 # Plan: Eliminate ACE TUI multi-second freezes and startup regressions
