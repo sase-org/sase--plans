@@ -7,7 +7,7 @@ goal: 'Pressing `v` on the Agents tab renders selectable hints next to SASE CONT
 
   '
 create_time: 2026-07-16 17:40:40
-status: wip
+status: done
 prompt: 202607/prompts/agents_view_hints_context_and_latency.md
 ---
 
