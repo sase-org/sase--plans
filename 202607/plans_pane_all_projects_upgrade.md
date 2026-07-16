@@ -24,7 +24,7 @@ phases:
   depends_on:
   - detail-redesign
 create_time: 2026-07-16 08:43:21
-status: wip
+status: done
 bead_id: sase-6a
 ---
 
