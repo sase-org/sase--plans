@@ -29,7 +29,7 @@ phases:
   - updates
   model: haiku
 create_time: 2026-07-16 11:13:13
-status: wip
+status: done
 bead_id: sase-6c
 ---
 
