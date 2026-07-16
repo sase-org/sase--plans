@@ -1,4 +1,5 @@
 ---
+status: done
 tier: epic
 title: Serialize SDD store git writers and retry index.lock contention
 goal: 'Epic launches and bead-store commits no longer fail on transient git index.lock
