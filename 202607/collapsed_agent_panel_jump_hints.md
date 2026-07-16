@@ -7,7 +7,7 @@ goal: 'Apostrophe jump mode renders and dispatches one-key hints for collapsed A
 
   '
 create_time: 2026-07-16 16:06:57
-status: wip
+status: done
 prompt: 202607/prompts/collapsed_agent_panel_jump_hints.md
 ---
 
