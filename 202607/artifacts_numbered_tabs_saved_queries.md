@@ -7,7 +7,7 @@ goal: 'Artifacts sub-tabs are visibly numbered and directly reachable by digit, 
 
   '
 create_time: 2026-07-16 13:05:15
-status: wip
+status: done
 prompt: 202607/prompts/artifacts_numbered_tabs_saved_queries.md
 ---
 
