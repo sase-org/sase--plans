@@ -49,7 +49,7 @@ phases:
   depends_on:
   - gpt-image-refresh
 create_time: 2026-07-16 12:37:10
-status: wip
+status: done
 bead_id: sase-6d
 ---
 
