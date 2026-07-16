@@ -7,7 +7,7 @@ goal: 'Make every plan pipeline row easy to recognize by surfacing its canonical
 
   '
 create_time: 2026-07-16 08:07:36
-status: wip
+status: done
 prompt: 202607/prompts/plan_list_titles.md
 ---
 
