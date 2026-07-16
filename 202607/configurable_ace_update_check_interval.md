@@ -5,7 +5,7 @@ goal: Make the ten-minute ACE periodic update-check cadence a safe user-overrida
   SASE configuration default while preserving non-blocking timer behavior and independent
   cache TTL semantics.
 create_time: 2026-07-16 09:47:17
-status: wip
+status: done
 prompt: 202607/prompts/configurable_ace_update_check_interval.md
 ---
 
