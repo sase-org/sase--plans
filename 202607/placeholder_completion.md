@@ -21,7 +21,7 @@ phases:
   depends_on:
   - core
 create_time: 2026-07-16 08:49:16
-status: wip
+status: done
 bead_id: sase-6b
 ---
 
