@@ -8,7 +8,7 @@ goal: 'memory/tui_perf.md accurately reflects the message-pump freeze class fixe
 
   '
 create_time: 2026-07-16 13:21:57
-status: wip
+status: done
 prompt: 202607/prompts/tui_perf_memory_refresh.md
 ---
 
