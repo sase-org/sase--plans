@@ -8,7 +8,7 @@ goal: 'Agents-tab users can press ,H, select one or more numbered panel hints wi
 
   '
 create_time: 2026-07-16 16:56:06
-status: wip
+status: done
 prompt: 202607/prompts/hint_selected_agent_panel_folding.md
 ---
 
