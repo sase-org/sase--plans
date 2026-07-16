@@ -50,6 +50,7 @@ phases:
   - gpt-image-refresh
 create_time: 2026-07-16 12:37:10
 status: wip
+bead_id: sase-6d
 ---
 
 # Plan: Canonical SASE directories for project and home content
