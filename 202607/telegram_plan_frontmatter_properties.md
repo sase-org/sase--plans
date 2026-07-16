@@ -4,7 +4,7 @@ title: Beautiful Telegram plan properties
 goal: Telegram plan approval messages present every frontmatter property clearly and
   remain safe, compact, and actionable for every valid plan.
 create_time: 2026-07-16 12:35:22
-status: wip
+status: done
 prompt: 202607/prompts/telegram_plan_frontmatter_properties.md
 ---
 
