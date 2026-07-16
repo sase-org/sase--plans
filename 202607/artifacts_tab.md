@@ -86,6 +86,7 @@ phases:
     '
 create_time: 2026-07-15 20:26:51
 status: wip
+bead_id: sase-69
 ---
 
 # Plan: Artifacts tab with PRs, Commits, Bugs, and Plans sub-tabs
