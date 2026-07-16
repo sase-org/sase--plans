@@ -7,7 +7,7 @@ goal: 'Remove the two remaining pump-bound slow callbacks, restore a green merge
 
   '
 create_time: 2026-07-16 12:10:52
-status: wip
+status: done
 prompt: 202607/prompts/sase_6c_landing_gaps.md
 ---
 
