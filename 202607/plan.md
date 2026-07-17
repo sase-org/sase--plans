@@ -1,85 +1,71 @@
 ---
 tier: tale
-title: Finish unified notification-gate integration and land sase-6e
-goal: 'The adapter-owned %auto contract is represented consistently in runtime-facing
-  completion and documentation, all notification-gate repositories pass their integrated
-  checks, and epic sase-6e is closed with post-close symbol cleanup and its original
-  plan marked done.
+title: Finish and land xprompt agent families
+goal: 'Close the remaining editor and documentation parity gaps for the %family directive,
+  lock down its execution-neutral launch contract, validate the integrated SASE and
+  sase-core implementations, and finish the sase-6g landing sequence without leaving
+  stale symvision exemptions or plan state.
 
   '
-create_time: 2026-07-16 19:53:57
-status: done
+create_time: 2026-07-16 21:11:20
+status: wip
 prompt: 202607/prompts/plan.md
 ---
 
-# Plan: Finish unified notification-gate integration and land sase-6e
+# Plan: Finish and land xprompt agent families
 
 ## Context
 
-Epic `sase-6e` landed its seven implementation phases across SASE, `sase-core`, and `sase-telegram`. The current source
-has the intended shared gate constructor, neutral request bundles, typed `EpicApproval`, hash-verified command
-execution, mechanical producer waits, automatic resolution, and neutral-first legacy readers. The landed parser also
-deliberately retains an arbitrary optional `%auto` argument so the gate adapter that eventually receives the request can
-validate it.
+Epic `sase-6g` has eight closed phase beads. The implementation is present in the current SASE, sase-core, and chezmoi
+checkouts: directive parsing, runner-slot accounting, launch-time membership metadata, generation-pinned wait/fork
+resolution, cleanup cascades, TUI aggregation and member details, epic bead-work adoption, and the research swarm
+migration. The current feature commits are `702ab603a`, `e24fd654f`, `8c73c22c5`, `c3040b945`, `a0a81e445`, `d39577633`,
+and `560177340` in SASE; `c8ea7de` and `a90acdc` in sase-core; and `b802fe45` in chezmoi. Focused validation currently
+passes 152 Python tests, including the ACE PNG snapshot. Rust formatting and clippy pass; the complete Rust suite passed
+every feature-related test, and its sole host-bridge harness failure passed on an isolated rerun.
 
-The landing audit found one unfinished integration seam. Runtime and tests accept an opaque argument such as
-`%auto:foo`, but ACE completion, the Rust editor directive registry, and `docs/xprompt.md` still describe `%auto` as a
-globally closed, plan-only `plan|tale|epic` enum; the documentation even promises parser-time rejection. The three plan
-spellings should remain useful compatibility suggestions, but they must not be presented as the global validation
-boundary. Bare `%auto` must also remain capable of first-option question resolution, while launch approval continues to
-reject automatic resolution and plan adapters continue to reject unknown or tier-changing arguments.
+The land audit found two concrete parity gaps. First, the Rust editor catalog in sase-core does not advertise
+`%family`/`%f`, so xprompt LSP completion and hover lag the Python parser and ACE completion. This intersects the later
+`f6e09fe` editor-catalog change that landed while the epic was in progress. Second, the later general directive
+documentation in `docs/xprompt.md` omits `%family` from the supported-directive table and syntax examples even though
+`docs/agent_families.md` documents the feature. The epic plan also calls for an explicit execution-neutrality regression
+test; the behavior is covered in pieces today, but the promised comparison is not encoded as one durable gate.
 
-## Phase 1: Align `%auto` editor and documentation contracts
+## Phase 1: Restore editor and documentation parity
 
-- In SASE, replace closed-enum naming such as `AUTO_MODES_ORDERED`/`AUTO_MODES` with a clearly named compatibility
-  suggestion vocabulary. Remove the now-unused closed set, keep `plan`, `tale`, and `epic` as completion candidates, and
-  update ACE directive metadata so it explains adapter-owned automatic gate resolution instead of claiming global
-  plan-only validation.
-- In `sase-core`, update the editor directive registry and its focused tests to expose the same contract. Keep the three
-  plan aliases as suggestions, but make hover/documentation clear that an optional raw argument is interpreted by the
-  gate kind rather than by a universal parser enum. Do not add a second gate-policy implementation to the editor core.
-- Correct the authoritative `%auto` section and directive table in `docs/xprompt.md`: document raw-argument retention,
-  adapter-time validation, bare question first-option behavior, plan/tale/epic compatibility aliases, authored-tier
-  conflict rejection, and launch auto rejection. Update other exact user-facing summaries only where they make the same
-  false closed-enum or plan-only claim; do not churn examples that validly demonstrate the plan aliases.
-- Update focused Python and Rust tests so they distinguish "suggested compatibility arguments" from "accepted parser
-  arguments" and preserve regression coverage for `%auto:foo` reaching adapter validation.
+Open the linked sase-core checkout with the repository skill before editing it. Add `family` to
+`crates/sase_core/src/editor/directive.rs` with alias `f`, a single required argument, and wording consistent with the
+Python/ACE catalog: membership joins a parallel family rooted at another launch segment. Extend the catalog tests to
+cover canonical alias resolution, completion metadata, and the fact that `%family` is single-valued. Add or extend an
+xprompt LSP completion test so the public editor surface, not only the catalog helper, is protected. Do not add fixed
+argument candidates: root names and roles are open-ended.
 
-## Phase 2: Revalidate the integrated epic
+Update the Supported Directives table and syntax examples in `docs/xprompt.md` with `%family`/`%f`, both colon and
+`(root, role=token)` forms, its execution-neutral semantics, and a link to `docs/agent_families.md`. Preserve the
+gate-owned `%auto` wording from the post-epic-start integration commits.
 
-- Re-run focused tests for directive parsing/completion, plan gate auto arguments, question automatic resolution, and
-  the Rust editor registry before the full suites.
-- In SASE, run `just install` and `just check`, including visual snapshots and the still-open epic Symvision allowances.
-  In `sase-core`, run the workspace tests and parity fixtures. In `sase-telegram`, run its complete check against the
-  local SASE/core build rather than the older released SASE package, so the neutral plan/question/launch callback paths
-  are tested against the APIs they landed with.
-- Recheck the post-epic-start integration points from `sase-6g`: parallel-family scan fields must remain present in both
-  Rust and Python wire projections, the family directive must compose with the opaque `%auto` parser changes, and the
-  later launch-time family-resolution path must preserve `auto_approve_argument` metadata while adding its family
-  membership metadata. Keep all linked working trees clean apart from the intentional changes in this plan.
+## Phase 2: Lock down launch neutrality and validate the integrated feature
 
-## Phase 3: Close and finalize epic `sase-6e`
+Extend `tests/test_parallel_agent_family_launch.py` with a direct comparison of the same multi-prompt launch with and
+without `%family`. Assert that planned names, rewritten waits, models, VCS/project contexts, workspace/deferred-work
+properties, and spawn ordering are unchanged; only the family payload and the directive text/metadata may differ.
+Include a member fan-out case if needed to make the plan's documented rule—member fan-out is legal and every variant
+joins the same generation—explicitly testable without weakening the root fan-out rejection test.
 
-- Confirm all seven child beads are still closed and the checks above are green, then run `sase bead close sase-6e`.
-- After the close, follow the repository's Symvision memory guidance and run `just symvision`. Remove every expired
-  `sase-6e(...)` epic-symbol entry from the `Justfile`, including the current allowances for the launch, plan, and
-  question gate command entry points and `notify_plan_approval`; delete genuinely unused code it exposes, and use only
-  the repository-approved permanent dynamic-entrypoint mechanism for symbols proven live through generated hashed
-  command scripts or other string-based dispatch. Re-run Symvision until it passes without an epic allowance for
-  `sase-6e`.
-- Open the plans sidecar through `sase repo open` and change only the original epic plan
-  `sase/repos/plans/202607/unified_notification_gates.md` frontmatter from `status: wip` to `status: done`.
-- Because the landing cleanup changes SASE files, run `just install` and `just check` once more. Re-run any affected
-  `sase-core` or `sase-telegram` checks if the post-close cleanup crosses those repositories. Finish by verifying the
-  epic is closed, its linked plan is done, all child beads remain closed, and each participating repository contains
-  only the intended landing changes.
+Run the focused Python tests for directives, launch planning/metadata, runner-slot admission, cleanup, status
+aggregation, member details, launch preview, bead-work rendering, and the ACE family PNG snapshot. Run `just rust-check`
+for sase-core parity, allowing a single isolated rerun only for the already-observed host-bridge availability flake.
+Then run `just check` from SASE, as required for repository changes. Treat any failure related to the feature or the
+edited surfaces as remaining epic work and fix it before landing.
 
-## Acceptance criteria
+## Phase 3: Land the epic (final phase)
 
-- `%auto` parsing remains open to opaque arguments, while each gate adapter owns its valid arguments and defaults.
-- ACE and Rust editor completion may suggest `plan`, `tale`, and `epic`, but no user-facing contract calls them the only
-  parser-valid values; exact documentation covers question and launch behavior as well as plan behavior.
-- The durable gate, typed transport, automatic/manual execution, and legacy-fallback regressions pass across SASE,
-  `sase-core`, and `sase-telegram` against mutually compatible local sources.
-- `sase-6e` is closed, post-close Symvision passes with no `sase-6e` whitelist entries, and the original epic plan has
-  `status: done`.
+Only after both repositories validate, close the epic with `sase bead close sase-6g` and confirm all eight children and
+the parent are closed. After closing, run `just symvision`; the close expires any `sase-6g` symbol whitelist entries. If
+symvision reports stale whitelist entries or newly unused code, read the required symvision memory through the audited
+memory skill, remove only the reported stale entries/code, and rerun symvision plus `just check` after those edits.
+
+Open the plans sidecar through the repository skill and change only the epic plan `202607/xprompt_agent_families.md`
+frontmatter from `status: wip` to `status: done`. Re-run plan validation if the sidecar workflow provides it, then
+verify clean/expected status in SASE, sase-core, chezmoi, and the plans sidecar. Do not edit SASE memory files or
+generated provider instruction files.
