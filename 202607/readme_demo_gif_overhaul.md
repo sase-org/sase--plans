@@ -51,6 +51,7 @@ phases:
     '
 create_time: 2026-07-17 11:28:33
 status: wip
+bead_id: sase-6l
 ---
 
 # Plan: README demo GIF overhaul
