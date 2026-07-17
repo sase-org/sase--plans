@@ -74,6 +74,7 @@ phases:
     attach, and the TUI tree end-to-end; refresh PNG snapshots and check j/k latency.'
 create_time: 2026-07-17 17:34:42
 status: wip
+bead_id: sase-6n
 ---
 
 # Plan: Split agent clans, sequential families, and tribes
