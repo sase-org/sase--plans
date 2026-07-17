@@ -8,7 +8,7 @@ goal: 'Every agent that the runner-slot admission layer counts as occupying a sl
 
   '
 create_time: 2026-07-17 18:47:44
-status: wip
+status: done
 prompt: 202607/prompts/runner_slot_visibility.md
 ---
 
