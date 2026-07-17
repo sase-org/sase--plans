@@ -7,7 +7,7 @@ goal: 'Long incoming-commit previews stay fully contained and accessible in upda
 
   '
 create_time: 2026-07-17 11:36:40
-status: wip
+status: done
 prompt: 202607/prompts/update_confirm_commit_scrolling.md
 ---
 
