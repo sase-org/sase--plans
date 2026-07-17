@@ -7,7 +7,7 @@ goal: 'Ctrl+T completes plain prose from words already present in the active pro
 
   '
 create_time: 2026-07-17 16:38:16
-status: wip
+status: done
 prompt: 202607/prompts/prompt_word_completion.md
 ---
 
