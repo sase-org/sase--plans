@@ -7,7 +7,7 @@ goal: 'The Agents-tab headline total counts loaded parallel-family members in pl
 
   '
 create_time: 2026-07-17 12:25:39
-status: wip
+status: done
 prompt: 202607/prompts/agent_family_headline_total.md
 ---
 
