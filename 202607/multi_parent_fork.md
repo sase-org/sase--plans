@@ -27,7 +27,7 @@ phases:
     finish ACE and LSP agent completion, pin cross-surface behavior, and run both
     repositories'' checks.'
 create_time: 2026-07-17 15:09:34
-status: wip
+status: done
 bead_id: sase-6m
 ---
 
