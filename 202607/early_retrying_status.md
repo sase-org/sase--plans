@@ -7,7 +7,7 @@ goal: 'ACE shows a live agent family as RETRYING during provider backoff as soon
 
   '
 create_time: 2026-07-17 12:15:10
-status: wip
+status: done
 prompt: 202607/prompts/early_retrying_status.md
 ---
 
