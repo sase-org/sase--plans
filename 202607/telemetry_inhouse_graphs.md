@@ -62,6 +62,7 @@ phases:
     latency, and startup timing are unaffected.'
 create_time: 2026-07-17 11:24:59
 status: wip
+bead_id: sase-6k
 ---
 
 # Plan: In-house telemetry graphs for CLI and TUI
