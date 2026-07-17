@@ -8,7 +8,7 @@ goal: 'The residual-freeze integration soak reliably detects regressions in the 
 
   '
 create_time: 2026-07-17 09:33:38
-status: wip
+status: done
 prompt: 202607/prompts/stabilize_residual_freeze_soak_landing.md
 ---
 
