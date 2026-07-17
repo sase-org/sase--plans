@@ -51,6 +51,7 @@ phases:
     paths, including a pre-change legacy bundle replay.'
 create_time: 2026-07-17 19:01:58
 status: wip
+bead_id: sase-6o
 ---
 
 # Plan: One-tap gate choices — collapse redundant plan-approval buttons
