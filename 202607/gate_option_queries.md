@@ -73,6 +73,7 @@ phases:
   model: haiku
 create_time: 2026-07-17 19:39:53
 status: wip
+bead_id: sase-6p
 ---
 
 # Plan: Query-driven sase gates with configurable options
