@@ -8,7 +8,7 @@ goal: 'The top-level README states the project''s status and platform facts, rou
 
   '
 create_time: 2026-07-17 10:13:28
-status: wip
+status: done
 prompt: 202607/prompts/readme_best_practices.md
 ---
 
