@@ -29,7 +29,7 @@ phases:
   - loader-decouple
   - handler-hygiene
 create_time: 2026-07-17 07:49:20
-status: wip
+status: done
 bead_id: sase-6j
 ---
 
