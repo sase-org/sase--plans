@@ -7,7 +7,7 @@ goal: 'Commits, Bugs, and Plans support consistent first/last, fixed-distance, a
 
   '
 create_time: 2026-07-17 08:46:59
-status: wip
+status: done
 prompt: 202607/prompts/artifacts_list_navigation.md
 ---
 
