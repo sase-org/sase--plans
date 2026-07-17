@@ -28,6 +28,7 @@ phases:
     repositories'' checks.'
 create_time: 2026-07-17 15:09:34
 status: wip
+bead_id: sase-6m
 ---
 
 # Plan: Multi-parent fork conversations
