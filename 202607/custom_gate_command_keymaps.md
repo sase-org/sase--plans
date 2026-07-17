@@ -7,7 +7,7 @@ goal: 'Custom notification gate command lists respond immediately to j, k, and S
 
   '
 create_time: 2026-07-17 10:21:14
-status: wip
+status: done
 prompt: 202607/prompts/custom_gate_command_keymaps.md
 ---
 
