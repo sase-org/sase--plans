@@ -9,7 +9,7 @@ goal: 'Close the remaining editor and documentation parity gaps for the %family 
   '
 create_time: 2026-07-16 21:11:20
 status: done
-prompt: 202607/prompts/plan.md
+prompt: 202607/prompts/finish_xprompt_agent_families.md
 ---
 
 # Plan: Finish and land xprompt agent families
