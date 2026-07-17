@@ -9,7 +9,7 @@ goal: 'Every notification gate surface in ACE (custom gate, plan/epic approval, 
 
   '
 create_time: 2026-07-17 09:14:36
-status: wip
+status: done
 prompt: 202607/prompts/gate_debug_view.md
 ---
 
