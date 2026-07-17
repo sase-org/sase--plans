@@ -4,7 +4,7 @@ title: Remove implicit name-based agent panel assignment
 goal: Agent names no longer influence Agents-tab panel membership; ordinary launches
   join a tag panel only through an explicit `%group` assignment.
 create_time: 2026-07-17 14:37:29
-status: wip
+status: done
 prompt: 202607/prompts/explicit_group_panel_membership.md
 ---
 
