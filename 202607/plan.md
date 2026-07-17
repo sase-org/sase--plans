@@ -8,7 +8,7 @@ goal: 'The adapter-owned %auto contract is represented consistently in runtime-f
 
   '
 create_time: 2026-07-16 19:53:57
-status: wip
+status: done
 prompt: 202607/prompts/plan.md
 ---
 
