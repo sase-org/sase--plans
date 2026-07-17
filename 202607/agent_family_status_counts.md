@@ -7,7 +7,7 @@ goal: 'Agents-tab panel and global status summaries replace each parallel family
 
   '
 create_time: 2026-07-17 11:45:34
-status: wip
+status: done
 prompt: 202607/prompts/agent_family_status_counts.md
 ---
 
