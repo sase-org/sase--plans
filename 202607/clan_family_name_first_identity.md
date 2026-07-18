@@ -8,7 +8,7 @@ goal: 'Agent clan and real multi-member family rows present a name-first identit
 
   '
 create_time: 2026-07-18 10:42:04
-status: wip
+status: done
 prompt: 202607/prompts/clan_family_name_first_identity.md
 ---
 
