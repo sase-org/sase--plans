@@ -72,7 +72,7 @@ phases:
     surface.'
   model: haiku
 create_time: 2026-07-17 19:39:53
-status: wip
+status: done
 bead_id: sase-6p
 ---
 
