@@ -5,3 +5,15 @@ plan: 202607/agent_house_glossary.md
 tier, validate and revalidate until it passes, then submit it with `sase plan propose` (as the skill instructs)
 before making any file changes.
  
+
+%xprompts_enabled:false
+### Questions and Answers
+
+#### Q1: README scope
+
+> May I update the four generated line/token totals in sase/memory/README.md so sase init can regenerate the five instruction shims and just check can pass?
+
+- [x] **Authorize README update** — Recommended: apply only the generator-produced +4/-4 metadata update, regenerate the five shims, validate, and commit.
+- [ ] **Keep glossary only** — Leave the committed glossary change as-is; generated shims remain stale and just check remains failing.
+
+%xprompts_enabled:true
