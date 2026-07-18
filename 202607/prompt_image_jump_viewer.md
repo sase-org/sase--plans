@@ -6,7 +6,7 @@ goal: 'Ctrl+] on an image path in the ACE prompt input displays the image with t
 
   '
 create_time: 2026-07-18 06:52:06
-status: wip
+status: done
 prompt: 202607/prompts/prompt_image_jump_viewer.md
 ---
 
