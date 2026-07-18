@@ -28,7 +28,7 @@ phases:
     exercises proving cold and stale-mirror bead reads are fast and repeated clone
     syncs within the TTL do not refetch.'
 create_time: 2026-07-18 07:25:38
-status: wip
+status: done
 bead_id: sase-6r
 ---
 
