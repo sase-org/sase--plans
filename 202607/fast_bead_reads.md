@@ -29,6 +29,7 @@ phases:
     syncs within the TTL do not refetch.'
 create_time: 2026-07-18 07:25:38
 status: wip
+bead_id: sase-6r
 ---
 
 # Plan: Fast bead reads
