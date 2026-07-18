@@ -73,7 +73,7 @@ phases:
   description: '''Phase smoke'' section: exercise an epic clan, a swarm clan, family
     attach, and the TUI tree end-to-end; refresh PNG snapshots and check j/k latency.'
 create_time: 2026-07-17 17:34:42
-status: wip
+status: done
 bead_id: sase-6n
 ---
 
