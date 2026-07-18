@@ -4,7 +4,7 @@ title: Preserve agent-tree membership across grouping and tag panels
 goal: Keep every clan and agent-family subtree together under its owning root when
   workflow steps are revealed, regardless of project, status, date, or tag-panel grouping.
 create_time: 2026-07-18 07:55:29
-status: wip
+status: done
 prompt: 202607/prompts/agent_tree_grouping_precedence.md
 ---
 
