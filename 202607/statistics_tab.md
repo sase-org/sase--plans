@@ -52,6 +52,7 @@ phases:
     and docs.'
 create_time: 2026-07-18 18:31:59
 status: wip
+bead_id: sase-6y
 ---
 
 # Plan: Replace the Admin Center Telemetry tab with a Statistics tab
