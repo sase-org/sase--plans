@@ -36,6 +36,7 @@ phases:
     with the perf tooling.'
 create_time: 2026-07-18 08:18:53
 status: wip
+bead_id: sase-6s
 ---
 
 # Plan: Commits filter bar with live preview and completion
