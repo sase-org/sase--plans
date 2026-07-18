@@ -46,6 +46,7 @@ phases:
     '
 create_time: 2026-07-18 17:47:19
 status: wip
+bead_id: sase-6w
 ---
 
 # Plan: Numbered member rosters for clan and family detail panels
