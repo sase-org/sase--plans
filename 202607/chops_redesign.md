@@ -85,6 +85,7 @@ phases:
     end to end with doctor, manual runs, and dry runs.'
 create_time: 2026-07-18 15:41:26
 status: wip
+bead_id: sase-6v
 ---
 
 # Plan: Script-only chops with structured launch proposals
