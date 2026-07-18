@@ -7,7 +7,7 @@ goal: 'When the user explicitly asks an agent to update a SASE memory file, the 
 
   '
 create_time: 2026-07-18 19:14:01
-status: wip
+status: done
 prompt: 202607/prompts/memory_init_no_reask.md
 ---
 
