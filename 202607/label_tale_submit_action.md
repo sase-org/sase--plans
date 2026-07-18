@@ -7,7 +7,7 @@ goal: 'Tale plan review gates label the grouped approval submit control as "Tale
 
   '
 create_time: 2026-07-18 08:23:17
-status: wip
+status: done
 prompt: 202607/prompts/label_tale_submit_action.md
 ---
 
