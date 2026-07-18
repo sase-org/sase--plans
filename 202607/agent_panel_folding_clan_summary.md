@@ -1,37 +1,43 @@
 ---
 tier: epic
 title: Agent metadata panel folding with a rich clan summary
-goal: >
-  The agent metadata panel supports three-level section folding driven by a `z` fold keymap group (zoom migrates to
-  `Z`), and the clan summary page becomes its first use-case: a beautiful, fold-aware aggregate of every section
-  represented across the clan's members.
+goal: 'The agent metadata panel supports three-level section folding driven by a `z`
+  fold keymap group (zoom migrates to `Z`), and the clan summary page becomes its
+  first use-case: a beautiful, fold-aware aggregate of every section represented across
+  the clan''s members.
+
+  '
 phases:
-  - id: fold-keymaps
-    title: Fold keymaps and panel fold state
-    depends_on: []
-    description: >-
-      'Fold keymaps and panel fold state' section: migrate zoom from `z` to `Z`, enable fold mode on the Agents tab with
-      an `agents` sub-map (`zz`, `zZ`, `za`, `zA`), and add the panel fold state model, dispatch, footer hints, palette
-      commands, and help-modal updates.
-  - id: clan-aggregation
-    title: Clan section aggregation layer
-    depends_on: []
-    description: >-
-      'Clan section aggregation layer' section: build the data layer that aggregates member sections into clan section
-      snapshots — pure in-memory aggregates plus cached, off-thread loading for disk-backed member content.
-  - id: clan-render
-    title: Fold-aware clan summary rendering
-    depends_on: [fold-keymaps, clan-aggregation]
-    description: >-
-      'Fold-aware clan summary rendering' section: render the clan summary's aggregate sections honoring per-section
-      three-level fold contracts, with headings, counts, fold indicator, section-navigation anchors, loading
-      placeholders, and PNG snapshots at every level.
-  - id: polish-exercise
-    title: Docs, help sync, and end-to-end fold exercises
-    depends_on: [clan-render]
-    description: >-
-      'Docs, help sync, and end-to-end fold exercises' section: update user docs and the help popup, run end-to-end clan
-      fold exercises against a real launched clan, and verify performance targets and visual goldens.
+- id: fold-keymaps
+  title: Fold keymaps and panel fold state
+  depends_on: []
+  description: '''Fold keymaps and panel fold state'' section: migrate zoom from `z`
+    to `Z`, enable fold mode on the Agents tab with an `agents` sub-map (`zz`, `zZ`,
+    `za`, `zA`), and add the panel fold state model, dispatch, footer hints, palette
+    commands, and help-modal updates.'
+- id: clan-aggregation
+  title: Clan section aggregation layer
+  depends_on: []
+  description: '''Clan section aggregation layer'' section: build the data layer that
+    aggregates member sections into clan section snapshots — pure in-memory aggregates
+    plus cached, off-thread loading for disk-backed member content.'
+- id: clan-render
+  title: Fold-aware clan summary rendering
+  depends_on:
+  - fold-keymaps
+  - clan-aggregation
+  description: '''Fold-aware clan summary rendering'' section: render the clan summary''s
+    aggregate sections honoring per-section three-level fold contracts, with headings,
+    counts, fold indicator, section-navigation anchors, loading placeholders, and
+    PNG snapshots at every level.'
+- id: polish-exercise
+  title: Docs, help sync, and end-to-end fold exercises
+  depends_on:
+  - clan-render
+  description: '''Docs, help sync, and end-to-end fold exercises'' section: update
+    user docs and the help popup, run end-to-end clan fold exercises against a real
+    launched clan, and verify performance targets and visual goldens.'
+bead_id: sase-6u
 ---
 
 # Plan: Agent metadata panel folding with a rich clan summary
