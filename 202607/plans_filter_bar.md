@@ -48,6 +48,7 @@ phases:
     with the perf tooling.'
 create_time: 2026-07-18 10:09:08
 status: wip
+bead_id: sase-6t
 ---
 
 # Plan: Plans filter bar with live filtering and completion
