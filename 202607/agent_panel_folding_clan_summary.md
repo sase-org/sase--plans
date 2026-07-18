@@ -1,5 +1,6 @@
 ---
 tier: epic
+status: done
 title: Agent metadata panel folding with a rich clan summary
 goal: 'The agent metadata panel supports three-level section folding driven by a `z`
   fold keymap group (zoom migrates to `Z`), and the clan summary page becomes its
