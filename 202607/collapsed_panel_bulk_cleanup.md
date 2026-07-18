@@ -7,7 +7,7 @@ goal: 'Pressing the existing kill/dismiss action while a collapsed Agents-tab tr
 
   '
 create_time: 2026-07-18 06:24:23
-status: wip
+status: done
 prompt: 202607/prompts/collapsed_panel_bulk_cleanup.md
 ---
 
