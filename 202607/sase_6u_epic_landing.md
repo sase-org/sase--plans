@@ -8,7 +8,7 @@ goal: 'The clan-summary folding feature is reconciled with changes that landed d
 
   '
 create_time: 2026-07-18 16:59:30
-status: wip
+status: done
 prompt: 202607/prompts/sase_6u_epic_landing.md
 ---
 
