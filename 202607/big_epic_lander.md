@@ -28,7 +28,7 @@ phases:
     route implicit epic landers from stable phase counts, preserve explicit-model
     precedence, align previews and docs, and verify the end-to-end contract.'
 create_time: 2026-07-18 06:08:27
-status: wip
+status: done
 bead_id: sase-6q
 ---
 
