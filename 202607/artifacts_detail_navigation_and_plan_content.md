@@ -7,7 +7,7 @@ goal: 'Artifacts list navigation uses Ctrl+F/B for ten-entry jumps, Ctrl+D/U scr
 
   '
 create_time: 2026-07-18 16:26:18
-status: wip
+status: done
 prompt: 202607/prompts/artifacts_detail_navigation_and_plan_content.md
 ---
 
