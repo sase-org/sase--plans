@@ -8,7 +8,7 @@ goal: 'Branch-driven gate modals become a near-fullscreen review workbench: deci
 
   '
 create_time: 2026-07-18 10:40:52
-status: wip
+status: done
 prompt: 202607/prompts/gate_review_workbench.md
 ---
 
