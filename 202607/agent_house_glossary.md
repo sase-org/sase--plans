@@ -7,7 +7,7 @@ goal: 'The SASE glossary memory defines "Agent House" as the generic term coveri
 
   '
 create_time: 2026-07-18 18:49:08
-status: wip
+status: done
 prompt: 202607/prompts/agent_house_glossary.md
 ---
 
