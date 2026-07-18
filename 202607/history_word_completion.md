@@ -8,7 +8,7 @@ goal: 'When manual Ctrl+T word completion finds no matches inside the current pr
 
   '
 create_time: 2026-07-18 14:38:05
-status: wip
+status: done
 prompt: 202607/prompts/history_word_completion.md
 ---
 
