@@ -7,7 +7,7 @@ goal: 'Clan launches express optional tribe membership through %clan(..., tribe=
 
   '
 create_time: 2026-07-18 14:48:46
-status: wip
+status: done
 prompt: 202607/prompts/clan_tribe_directive_contract.md
 ---
 
