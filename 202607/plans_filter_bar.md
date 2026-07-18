@@ -47,7 +47,7 @@ phases:
     for the bar states, finalize chips, hints, and help copy, and verify TUI responsiveness
     with the perf tooling.'
 create_time: 2026-07-18 10:09:08
-status: wip
+status: done
 bead_id: sase-6t
 ---
 
