@@ -7,7 +7,7 @@ goal: 'A confirmed / or ? search can be repeated with n or N from any pane in th
 
   '
 create_time: 2026-07-18 17:03:57
-status: wip
+status: done
 prompt: 202607/prompts/shared_prompt_search_register.md
 ---
 
