@@ -45,6 +45,7 @@ phases:
     '
 create_time: 2026-07-18 18:08:26
 status: wip
+bead_id: sase-6x
 ---
 
 # Plan: Tribe next-entity targeting for %wait and #fork, plus clan forking
