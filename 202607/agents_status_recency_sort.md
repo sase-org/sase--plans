@@ -7,7 +7,7 @@ goal: 'The Agents tab''s by-status view prioritizes running, completed, and wait
 
   '
 create_time: 2026-07-18 14:09:24
-status: wip
+status: done
 prompt: 202607/prompts/agents_status_recency_sort.md
 ---
 
