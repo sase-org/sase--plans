@@ -8,7 +8,7 @@ goal: 'A snippet saved from the ACE prompt panel is immediately expandable from 
 
   '
 create_time: 2026-07-18 08:56:30
-status: wip
+status: done
 prompt: 202607/prompts/live_saved_snippets.md
 ---
 
