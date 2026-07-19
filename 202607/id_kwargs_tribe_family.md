@@ -56,7 +56,7 @@ phases:
     the #tribe xprompt, and bead epic launches through the real launch machinery,
     plus the visual snapshot suite.'
 create_time: 2026-07-19 15:40:37
-status: wip
+status: done
 bead_id: sase-7o
 ---
 
