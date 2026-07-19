@@ -38,7 +38,7 @@ phases:
     regression sweep.'
   model: haiku
 create_time: 2026-07-19 09:20:28
-status: wip
+status: done
 bead_id: sase-77
 ---
 
