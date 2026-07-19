@@ -5,7 +5,7 @@ goal: Prompt NORMAL-mode n/N repeats follow the shared search register across th
   entire prompt stack, focusing the pane that owns the next match and preserving Vim-style
   direction, count, wrap, and feedback behavior.
 create_time: 2026-07-19 17:26:52
-status: wip
+status: done
 prompt: 202607/prompts/prompt_search_cross_pane_navigation.md
 ---
 
