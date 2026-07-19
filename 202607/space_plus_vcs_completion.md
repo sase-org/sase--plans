@@ -21,7 +21,7 @@ phases:
     Python helper and prompt widget with the Rust contract, replace regression vectors,
     update user guidance, and run integrated checks.'
 create_time: 2026-07-19 08:38:34
-status: wip
+status: done
 bead_id: sase-75
 ---
 
