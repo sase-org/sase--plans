@@ -7,7 +7,7 @@ goal: 'The xprompt language server recognizes, completes, documents, and snippet
 
   '
 create_time: 2026-07-19 11:39:49
-status: wip
+status: done
 prompt: 202607/prompts/xprompt_lsp_clan_tribe.md
 ---
 
