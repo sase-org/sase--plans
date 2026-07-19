@@ -6,7 +6,7 @@ goal: 'Pressing H while an Agents-tab tribe panel is selected leaves that panel 
 
   '
 create_time: 2026-07-19 08:21:12
-status: wip
+status: done
 prompt: 202607/prompts/agent_tribe_panel_h_solo.md
 ---
 
