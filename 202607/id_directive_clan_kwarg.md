@@ -40,6 +40,7 @@ phases:
     through the real launch machinery.'
 create_time: 2026-07-19 12:04:56
 status: wip
+bead_id: sase-7g
 ---
 
 # Plan: Rename %name to %id and add clan-scoped agent ids
