@@ -22,6 +22,7 @@ phases:
     %wait arguments and agent-typed xprompt arguments.'
 create_time: 2026-07-19 12:50:46
 status: wip
+bead_id: sase-7h
 ---
 
 # Plan: Group-aware agent completion for %wait and #fork
