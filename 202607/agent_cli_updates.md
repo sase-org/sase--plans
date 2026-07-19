@@ -42,6 +42,7 @@ phases:
   model: haiku
 create_time: 2026-07-19 19:42:44
 status: wip
+bead_id: sase-7s
 ---
 
 # Plan: Agent CLI updates across the SASE CLI and TUI
