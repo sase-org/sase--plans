@@ -6,7 +6,7 @@ goal: 'Pressing f on an agent clan or tribe opens a correct #fork prompt, inheri
 
   '
 create_time: 2026-07-19 10:55:50
-status: wip
+status: done
 prompt: 202607/prompts/agents_tab_group_fork.md
 ---
 
