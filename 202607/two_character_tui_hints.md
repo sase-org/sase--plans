@@ -7,7 +7,7 @@ goal: 'TUI entry-jump surfaces retain compact zero-based one-character hints for
 
   '
 create_time: 2026-07-19 10:19:40
-status: wip
+status: done
 prompt: 202607/prompts/two_character_tui_hints.md
 ---
 
