@@ -24,6 +24,7 @@ phases:
     plan done.'
 create_time: 2026-07-19 11:50:36
 status: wip
+bead_id: sase-7f
 ---
 
 # Plan: Integrate and land smart summary folding
