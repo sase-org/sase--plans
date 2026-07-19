@@ -21,7 +21,7 @@ phases:
     candidates with distinct, aligned completion rows to the ACE prompt input for
     %wait arguments and agent-typed xprompt arguments.'
 create_time: 2026-07-19 12:50:46
-status: wip
+status: done
 bead_id: sase-7h
 ---
 
