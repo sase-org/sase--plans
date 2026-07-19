@@ -27,3 +27,16 @@ that landed since it started, then close it out.
 If steps 1-2 uncover remaining work, use your /sase_plan skill to plan it and complete the skill's tier-aware
 validate/revalidate/propose loop. Make step 3 the plan's final phase (close, run symvision, mark the plan file done)
 so the agent that executes the plan finishes the landing. Otherwise do step 3 now.
+
+%xprompts_enabled:false
+### Questions and Answers
+
+#### Q1: Visual gate
+
+> How should I handle the unrelated ACE visual snapshot failures that prevent the approved plan’s just-check gate from passing?
+
+- [x] **Keep epic open (Recommended)** — Preserve the strict gate and resume finalization only after the separate snapshot/rendering defects are fixed.
+- [ ] **Waive visual gate** — Authorize closing sase-6x based on the passing lint, validation, generated-skill checks, and relevant feature evidence while documenting the pre-existing failures.
+- [ ] **Update goldens here** — Expand this task to regenerate and review the unrelated clan/family panel and renderer-edge snapshot changes before finalizing.
+
+%xprompts_enabled:true
