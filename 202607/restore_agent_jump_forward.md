@@ -7,7 +7,7 @@ goal: 'Ctrl+Shift+O walks forward through the current tab''s entry-jump stack on
 
   '
 create_time: 2026-07-19 08:06:39
-status: wip
+status: done
 prompt: 202607/prompts/restore_agent_jump_forward.md
 ---
 
