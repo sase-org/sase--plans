@@ -34,6 +34,7 @@ phases:
     sync the help modal copy.'
 create_time: 2026-07-19 08:02:43
 status: wip
+bead_id: sase-73
 ---
 
 # Plan: Smart folding for agent clan/family/tribe summaries
