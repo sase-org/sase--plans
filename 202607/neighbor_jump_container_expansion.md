@@ -7,7 +7,7 @@ goal: 'Jumping to an Agents-tab neighbor with ~ always reveals and focuses the e
 
   '
 create_time: 2026-07-18 21:09:20
-status: wip
+status: done
 prompt: 202607/prompts/neighbor_jump_container_expansion.md
 ---
 
