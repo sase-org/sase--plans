@@ -7,7 +7,7 @@ goal: 'Admin Center digit shortcuts are handled by the foreground modal even whe
 
   '
 create_time: 2026-07-19 07:25:19
-status: wip
+status: done
 prompt: 202607/prompts/restore_admin_center_digit_keymaps.md
 ---
 
