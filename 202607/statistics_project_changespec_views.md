@@ -41,7 +41,7 @@ phases:
     status glyphs, the Top Projects overview table, runtime group-by extension, the
     p project-filter key, keymap config, styles, behavior tests, and PNG visual snapshots.'
 create_time: 2026-07-18 22:19:28
-status: wip
+status: done
 bead_id: sase-70
 ---
 
