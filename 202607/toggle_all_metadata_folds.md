@@ -7,7 +7,7 @@ goal: 'The Agents-tab zZ fold chord opens every metadata fold to the active scal
 
   '
 create_time: 2026-07-19 10:29:44
-status: wip
+status: done
 prompt: 202607/prompts/toggle_all_metadata_folds.md
 ---
 
