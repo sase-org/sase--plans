@@ -31,6 +31,7 @@ phases:
     footer labels, and hint lines for the new action.'
 create_time: 2026-07-19 08:16:32
 status: wip
+bead_id: sase-74
 ---
 
 # Plan: Clan-scoped Agent Cleanup
