@@ -62,6 +62,7 @@ phases:
   model: haiku
 create_time: 2026-07-19 19:10:17
 status: wip
+bead_id: sase-7r
 ---
 
 # Plan: Rich-text clan summaries via %clan
