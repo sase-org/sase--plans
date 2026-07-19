@@ -1,33 +1,38 @@
 ---
 tier: epic
 title: Vim-style text search for the Agents-tab metadata panel
-goal: >
-  The Agents-tab metadata panel supports beautiful, reliable, vim-faithful incremental text search (`/`, `?`, `n`, `N`,
-  `<esc>`/`q`) across every panel variant (single agent, clan, family, tribe, workflow, step), with easy free-form text
-  copying from a jumped-to match. The previous `/` (edit query) and `?` (help) bindings move to `,/` and `,?` on all
-  tabs.
+goal: 'The Agents-tab metadata panel supports beautiful, reliable, vim-faithful incremental
+  text search (`/`, `?`, `n`, `N`, `<esc>`/`q`) across every panel variant (single
+  agent, clan, family, tribe, workflow, step), with easy free-form text copying from
+  a jumped-to match. The previous `/` (edit query) and `?` (help) bindings move to
+  `,/` and `,?` on all tabs.
+
+  '
 phases:
-  - id: engine
-    title: Shared vim-search engine extracted from the zoom modal
-    depends_on: []
-    description: >-
-      'Shared vim-search engine extracted from the zoom modal' section: factor the ZoomSearchMixin state machine
-      (typing/committed modes, incremental preview, n/N wrap, command-line rendering, scroll-to-match math) into a
-      host-agnostic controller and re-host the zoom modal on it with zero behavior change.
-  - id: remap
-    title: Remap edit-query and help to leader chords `,/` and `,?`
-    depends_on: []
-    description: >-
-      'Remap edit-query and help to leader chords' section: retire the app-level `slash`/`question_mark` bindings for
-      edit_query and show_help, re-home both as leader-mode keys on all tabs, and update every hint surface (help modal,
-      footer, onboarding, command palette, quickstart) that displays those keys.
-  - id: panel-search
-    title: Inline search-mode on the agent metadata panel
-    depends_on: [engine, remap]
-    description: >-
-      'Inline search-mode on the agent metadata panel' section: bind `/` and `?` on the Agents tab to a new search-mode
-      hosted on the AgentDetail prompt panel using the shared engine, covering all panel variants, with yank/selection
-      support, help and footer documentation, and unit plus PNG visual snapshot coverage.
+- id: engine
+  title: Shared vim-search engine extracted from the zoom modal
+  depends_on: []
+  description: '''Shared vim-search engine extracted from the zoom modal'' section:
+    factor the ZoomSearchMixin state machine (typing/committed modes, incremental
+    preview, n/N wrap, command-line rendering, scroll-to-match math) into a host-agnostic
+    controller and re-host the zoom modal on it with zero behavior change.'
+- id: remap
+  title: Remap edit-query and help to leader chords `,/` and `,?`
+  depends_on: []
+  description: '''Remap edit-query and help to leader chords'' section: retire the
+    app-level `slash`/`question_mark` bindings for edit_query and show_help, re-home
+    both as leader-mode keys on all tabs, and update every hint surface (help modal,
+    footer, onboarding, command palette, quickstart) that displays those keys.'
+- id: panel-search
+  title: Inline search-mode on the agent metadata panel
+  depends_on:
+  - engine
+  - remap
+  description: '''Inline search-mode on the agent metadata panel'' section: bind `/`
+    and `?` on the Agents tab to a new search-mode hosted on the AgentDetail prompt
+    panel using the shared engine, covering all panel variants, with yank/selection
+    support, help and footer documentation, and unit plus PNG visual snapshot coverage.'
+bead_id: sase-76
 ---
 
 # Plan: Vim-style text search for the Agents-tab metadata panel
