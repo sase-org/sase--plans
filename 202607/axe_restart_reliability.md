@@ -46,6 +46,7 @@ phases:
   model: haiku
 create_time: 2026-07-19 17:23:09
 status: wip
+bead_id: sase-7p
 ---
 
 # Plan: Axe restart reliability and lumberjack outage self-healing
