@@ -45,6 +45,7 @@ phases:
     '
 create_time: 2026-07-19 18:34:59
 status: wip
+bead_id: sase-7q
 ---
 
 # Plan: Clan-scoped toobig chop launches
