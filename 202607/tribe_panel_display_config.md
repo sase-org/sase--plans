@@ -10,7 +10,7 @@ goal: 'ACE users can configure, per agent tribe, an icon rendered before the tri
 
   '
 create_time: 2026-07-19 18:43:04
-status: wip
+status: done
 prompt: 202607/prompts/tribe_panel_display_config.md
 ---
 
