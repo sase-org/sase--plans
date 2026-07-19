@@ -1,5 +1,6 @@
 ---
 tier: epic
+status: done
 title: Vim-style text search for the Agents-tab metadata panel
 goal: 'The Agents-tab metadata panel supports beautiful, reliable, vim-faithful incremental
   text search (`/`, `?`, `n`, `N`, `<esc>`/`q`) across every panel variant (single
