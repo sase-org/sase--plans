@@ -35,6 +35,7 @@ phases:
     both repositories'' full checks.'
 create_time: 2026-07-19 13:59:12
 status: wip
+bead_id: sase-7j
 ---
 
 # Plan: Complete the agent tribe terminology migration
