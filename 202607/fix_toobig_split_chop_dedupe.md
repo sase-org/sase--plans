@@ -49,7 +49,7 @@ phases:
     and confirm agents launch for currently oversized files while inhibit_if and dedupe
     still behave correctly.'
 create_time: 2026-07-19 13:19:55
-status: wip
+status: done
 bead_id: sase-7i
 ---
 
