@@ -33,7 +33,7 @@ phases:
     goldens with updated snapshot titles, exercise member-jump flows end to end, and
     sync the help modal copy.'
 create_time: 2026-07-19 08:02:43
-status: wip
+status: done
 bead_id: sase-73
 ---
 
