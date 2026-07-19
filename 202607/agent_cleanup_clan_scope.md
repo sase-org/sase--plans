@@ -30,7 +30,7 @@ phases:
     flow tests, a PNG visual snapshot for the clan chooser, and an audit of help modal,
     footer labels, and hint lines for the new action.'
 create_time: 2026-07-19 08:16:32
-status: wip
+status: done
 bead_id: sase-74
 ---
 
