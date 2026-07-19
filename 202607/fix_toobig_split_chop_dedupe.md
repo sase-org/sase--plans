@@ -50,6 +50,7 @@ phases:
     still behave correctly.'
 create_time: 2026-07-19 13:19:55
 status: wip
+bead_id: sase-7i
 ---
 
 # Plan: Restore toobig_split chop relaunches after the script-only chop migration
