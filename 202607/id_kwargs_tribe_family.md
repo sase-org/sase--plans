@@ -57,6 +57,7 @@ phases:
     plus the visual snapshot suite.'
 create_time: 2026-07-19 15:40:37
 status: wip
+bead_id: sase-7o
 ---
 
 # Plan: Fold %tribe and the family form into %id kwargs
