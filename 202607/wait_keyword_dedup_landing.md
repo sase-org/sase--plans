@@ -7,7 +7,7 @@ goal: 'ACE and the xprompt LSP both suppress already-selected wait targets and k
 
   '
 create_time: 2026-07-19 13:34:40
-status: wip
+status: done
 prompt: 202607/prompts/wait_keyword_dedup_landing.md
 ---
 
