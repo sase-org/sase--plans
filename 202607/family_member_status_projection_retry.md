@@ -7,7 +7,7 @@ goal: 'The FAMILY MEMBERS roster in the ACE Agents-tab metadata panel reports ea
 
   '
 create_time: 2026-07-19 09:18:59
-status: wip
+status: done
 prompt: 202607/prompts/family_member_status_projection_retry.md
 ---
 
