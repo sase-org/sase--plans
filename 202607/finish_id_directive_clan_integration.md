@@ -30,6 +30,7 @@ phases:
     plan done.'
 create_time: 2026-07-19 15:04:52
 status: wip
+bead_id: sase-7n
 ---
 
 # Plan: Finish the agent-ID and clan grammar integration
