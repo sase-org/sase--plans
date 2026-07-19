@@ -7,7 +7,7 @@ goal: 'Agents whose effective tribe cannot be resolved appear consistently in on
 
   '
 create_time: 2026-07-19 18:32:03
-status: wip
+status: done
 prompt: 202607/prompts/default_agent_tribe.md
 ---
 
