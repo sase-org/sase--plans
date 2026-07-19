@@ -7,7 +7,7 @@ goal: 'The ,j and ,J leader keymaps select the correct unread-completed or stopp
 
   '
 create_time: 2026-07-19 08:24:22
-status: wip
+status: done
 prompt: 202607/prompts/agent_tribe_jump_keymaps.md
 ---
 
