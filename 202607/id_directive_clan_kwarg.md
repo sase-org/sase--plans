@@ -39,7 +39,7 @@ phases:
     launches, every new validation error, clan-member retries, and bead epic launch/re-work
     through the real launch machinery.'
 create_time: 2026-07-19 12:04:56
-status: wip
+status: done
 bead_id: sase-7g
 ---
 
