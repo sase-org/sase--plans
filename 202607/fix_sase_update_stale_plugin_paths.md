@@ -7,7 +7,7 @@ goal: 'sase update succeeds again on the dev machine, and sase never silently re
 
   '
 create_time: 2026-07-18 22:41:48
-status: wip
+status: done
 prompt: 202607/prompts/fix_sase_update_stale_plugin_paths.md
 ---
 
