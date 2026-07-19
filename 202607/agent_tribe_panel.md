@@ -54,6 +54,7 @@ phases:
     and hint overlays, plus perf checks and help/footer audits.'
 create_time: 2026-07-18 21:55:52
 status: wip
+bead_id: sase-6z
 ---
 
 # Plan: Agent Tribe panel summaries and whole-panel selection
