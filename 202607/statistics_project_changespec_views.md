@@ -42,6 +42,7 @@ phases:
     p project-filter key, keymap config, styles, behavior tests, and PNG visual snapshots.'
 create_time: 2026-07-18 22:19:28
 status: wip
+bead_id: sase-70
 ---
 
 # Plan: Track and display agent work by project and ChangeSpec in Statistics
