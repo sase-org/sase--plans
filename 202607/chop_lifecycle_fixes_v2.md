@@ -54,6 +54,7 @@ phases:
     the chezmoi axe config, verifying with doctor and dry runs.'
 create_time: 2026-07-19 19:46:59
 status: wip
+bead_id: sase-7t
 ---
 
 # Plan: Fix chop lifecycle poisoning, collision failures, kill-callback crashes, and config deadlock
