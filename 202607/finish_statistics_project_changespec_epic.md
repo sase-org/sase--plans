@@ -28,6 +28,7 @@ phases:
     mark the original epic plan done.'
 create_time: 2026-07-19 00:08:17
 status: wip
+bead_id: sase-72
 ---
 
 # Plan: Finish and land project and ChangeSpec statistics
