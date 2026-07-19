@@ -9,7 +9,7 @@ goal: 'Chop-proposed agent launches get per-run-unique names so repeat runs neve
 
   '
 create_time: 2026-07-19 07:25:06
-status: wip
+status: done
 prompt: 202607/prompts/chop_launch_name_collision_storm.md
 ---
 
