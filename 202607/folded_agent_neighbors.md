@@ -7,7 +7,7 @@ goal: 'The Agents-tab neighbor command discovers every currently relevant agent 
 
   '
 create_time: 2026-07-19 17:26:45
-status: wip
+status: done
 prompt: 202607/prompts/folded_agent_neighbors.md
 ---
 
