@@ -51,7 +51,7 @@ phases:
     align the bare `sase telemetry` default with the list convention, and update tests
     and docs.'
 create_time: 2026-07-18 18:31:59
-status: wip
+status: done
 bead_id: sase-6y
 ---
 
