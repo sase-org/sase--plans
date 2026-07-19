@@ -84,7 +84,7 @@ phases:
     chop executables and their bash tests from chezmoi, and verify the full system
     end to end with doctor, manual runs, and dry runs.'
 create_time: 2026-07-18 15:41:26
-status: wip
+status: done
 bead_id: sase-6v
 ---
 
