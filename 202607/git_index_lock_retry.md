@@ -39,6 +39,7 @@ phases:
   model: haiku
 create_time: 2026-07-19 09:20:28
 status: wip
+bead_id: sase-77
 ---
 
 # Plan: Codebase-wide git index.lock retry and stale-lock recovery
