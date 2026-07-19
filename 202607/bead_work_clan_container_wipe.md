@@ -8,7 +8,7 @@ goal: 'Retrying a partially-completed epic with `sase bead work` succeeds instea
 
   '
 create_time: 2026-07-18 20:37:22
-status: wip
+status: done
 prompt: 202607/prompts/bead_work_clan_container_wipe.md
 ---
 
