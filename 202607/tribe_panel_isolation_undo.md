@@ -7,7 +7,7 @@ goal: 'Pressing H a second time restores the tribe-panel expansion layout that e
 
   '
 create_time: 2026-07-19 16:20:17
-status: wip
+status: done
 prompt: 202607/prompts/tribe_panel_isolation_undo.md
 ---
 
