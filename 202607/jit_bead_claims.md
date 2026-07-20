@@ -31,7 +31,7 @@ phases:
     phase and land bead associations, remove eager preclaiming, and cover lifecycle
     and failure behavior end to end.'
 create_time: 2026-07-20 15:48:27
-status: wip
+status: done
 bead_id: sase-8f
 ---
 
