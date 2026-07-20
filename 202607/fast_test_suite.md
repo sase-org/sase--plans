@@ -62,7 +62,7 @@ phases:
     against a tiny token pool, confirm the coverage gate is unchanged, and update
     the docs with real numbers.'
 create_time: 2026-07-20 10:59:51
-status: wip
+status: done
 bead_id: sase-86
 ---
 
