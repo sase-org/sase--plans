@@ -49,6 +49,7 @@ phases:
     and fallback resolution each hold.'
 create_time: 2026-07-19 21:56:50
 status: wip
+bead_id: sase-80
 ---
 
 # Plan: Fix pytest leakage that bricks the real axe daemon and strands WAITING agents
