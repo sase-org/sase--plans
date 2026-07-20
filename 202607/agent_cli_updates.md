@@ -12,6 +12,7 @@ phases:
 - id: core
   title: Agent CLI update service layer and provider metadata
   depends_on: []
+  size: small
   description: '''Agent CLI update service layer and provider metadata'' section:
     enrich the sase_llm install-metadata hook with update/docs fields, add the src/sase/agent_clis/
     package (detection, latest-version oracle, plan/execute operations, typed runner),
@@ -20,6 +21,7 @@ phases:
   title: sase agent-cli command group
   depends_on:
   - core
+  size: small
   description: '''sase agent-cli command group'' section: add the `sase agent-cli`
     group with `list` and `update` subcommands (Rich tables, JSON envelopes, dry-run
     previews, docs-URL-bearing error output) wired through the shared service layer.'
@@ -27,6 +29,7 @@ phases:
   title: Updates tab split and Agent CLIs sub-tab
   depends_on:
   - core
+  size: small
   description: '''Updates tab split and Agent CLIs sub-tab'' section: split the Admin
     Center Updates tab into Core / Plugins / Agent CLIs sub-tabs, add the new Agent
     CLIs master/detail browser with granular update marks, bind the pane-wide `A`
@@ -36,12 +39,13 @@ phases:
   depends_on:
   - cli
   - tui
+  size: small
   description: '''End-to-end agent CLI update exercises'' section: exercise the new
     CLI surface (list, JSON, dry-run, error paths) and the TUI sub-tabs read-only
     against the real environment; no real update executions.'
   model: haiku
 create_time: 2026-07-19 19:42:44
-status: wip
+status: done
 bead_id: sase-7s
 ---
 
