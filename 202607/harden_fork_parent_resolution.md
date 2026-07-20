@@ -4,7 +4,7 @@ title: Harden fork parent resolution
 goal: Make fork launches coalesce shared transcript sources and wait for incomplete
   named parents before resolving fork history or claiming a real workspace.
 create_time: 2026-07-20 16:48:01
-status: wip
+status: done
 prompt: 202607/prompts/harden_fork_parent_resolution.md
 ---
 
