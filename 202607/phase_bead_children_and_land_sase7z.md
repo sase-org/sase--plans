@@ -7,7 +7,7 @@ goal: 'sase bead show on a phase bead lists its child epics in a CHILDREN sectio
 
   '
 create_time: 2026-07-20 10:27:49
-status: wip
+status: done
 prompt: 202607/prompts/phase_bead_children_and_land_sase7z.md
 ---
 
