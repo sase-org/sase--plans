@@ -7,7 +7,7 @@ goal: 'Long absolute plan references preserve a contiguous filename in bounded c
 
   '
 create_time: 2026-07-20 17:12:22
-status: wip
+status: done
 prompt: 202607/prompts/land_sase_8d.md
 ---
 
