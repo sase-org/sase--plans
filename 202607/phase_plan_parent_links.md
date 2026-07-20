@@ -24,6 +24,7 @@ phases:
     surface the new fields through the Python validation adapter.'
 create_time: 2026-07-20 11:40:47
 status: wip
+bead_id: sase-88
 ---
 
 # Plan: Stamp phase plans with their bead and parent epic plan
