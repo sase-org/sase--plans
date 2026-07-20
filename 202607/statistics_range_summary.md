@@ -7,7 +7,7 @@ goal: 'The SASE Admin Center Statistics tab shows an immediately understandable 
 
   '
 create_time: 2026-07-20 12:46:20
-status: wip
+status: done
 prompt: 202607/prompts/statistics_range_summary.md
 ---
 
