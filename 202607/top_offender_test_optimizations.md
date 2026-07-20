@@ -7,7 +7,7 @@ goal: 'Reduce the post-harness wall time of the slowest audit, zoom-panel, keyma
 
   '
 create_time: 2026-07-20 11:56:07
-status: wip
+status: done
 prompt: 202607/prompts/top_offender_test_optimizations.md
 ---
 
