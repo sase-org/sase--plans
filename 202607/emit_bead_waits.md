@@ -5,7 +5,7 @@ goal: Ensure every generated epic phase and land prompt waits for both agent com
   and the corresponding phase bead closures, including retries and previews, while
   requiring the Rust core payload version that supplies the bead IDs.
 create_time: 2026-07-20 12:07:15
-status: wip
+status: done
 prompt: 202607/prompts/emit_bead_waits.md
 ---
 
