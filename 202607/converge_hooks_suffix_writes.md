@@ -4,7 +4,7 @@ title: Converge hooks suffix-transform writes
 goal: Stop terminal ChangeSpec suffix cleanup from restoring markers removed earlier
   in the same scheduler cycle, while making repeated cleanup a true no-op.
 create_time: 2026-07-20 16:36:50
-status: wip
+status: done
 prompt: 202607/prompts/converge_hooks_suffix_writes.md
 ---
 
