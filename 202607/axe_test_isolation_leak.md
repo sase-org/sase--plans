@@ -48,7 +48,7 @@ phases:
     simulate the leaked-orchestrator incident and prove isolation, guard, recovery,
     and fallback resolution each hold.'
 create_time: 2026-07-19 21:56:50
-status: wip
+status: done
 bead_id: sase-80
 ---
 
