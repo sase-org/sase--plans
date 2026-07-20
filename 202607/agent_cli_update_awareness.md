@@ -34,6 +34,7 @@ phases:
     assertions, and end-to-end validation.'
 create_time: 2026-07-20 10:22:41
 status: wip
+bead_id: sase-83
 ---
 
 # Plan: Provider-aware comprehensive update experience
