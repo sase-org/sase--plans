@@ -5,7 +5,7 @@ goal: Make every human-facing Statistics project and ChangeSpec label use config
   display names while canonical keys continue to drive queries, joins, filters, selection,
   and stable colors.
 create_time: 2026-07-20 13:12:16
-status: wip
+status: done
 prompt: 202607/prompts/statistics_project_labels.md
 ---
 
