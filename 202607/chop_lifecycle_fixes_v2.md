@@ -53,7 +53,7 @@ phases:
     permanently dead-locks fix_just and add agent-hood guards to the audit chops in
     the chezmoi axe config, verifying with doctor and dry runs.'
 create_time: 2026-07-19 19:46:59
-status: wip
+status: done
 bead_id: sase-7t
 ---
 
