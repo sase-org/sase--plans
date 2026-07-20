@@ -52,6 +52,7 @@ phases:
     '
 create_time: 2026-07-20 14:07:37
 status: wip
+bead_id: sase-8b
 ---
 
 # Plan: Beautiful epic phase sizes across SASE surfaces
