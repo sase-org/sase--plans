@@ -8,7 +8,7 @@ goal: 'refresh_docs chop agents never modify source code or tests: the builtin u
 
   '
 create_time: 2026-07-19 21:14:04
-status: wip
+status: done
 prompt: 202607/prompts/refresh_docs_scope.md
 ---
 
