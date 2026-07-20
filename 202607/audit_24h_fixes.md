@@ -88,6 +88,7 @@ phases:
     the real metrics DB and axe logs.'
 create_time: 2026-07-20 16:31:12
 status: wip
+bead_id: sase-8g
 ---
 
 # Plan: 24h log-audit bug sweep
