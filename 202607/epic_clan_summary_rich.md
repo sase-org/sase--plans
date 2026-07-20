@@ -36,7 +36,7 @@ phases:
     (never the bare fallback), including recovery from a stale sidecar clone.'
   model: haiku
 create_time: 2026-07-20 10:48:51
-status: wip
+status: done
 bead_id: sase-85
 ---
 
