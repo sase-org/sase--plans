@@ -6,7 +6,7 @@ goal: 'Every phase and land agent launched by sase bead work remains in the @epi
 
   '
 create_time: 2026-07-20 10:00:55
-status: wip
+status: done
 prompt: 202607/prompts/restore_epic_tribe_on_resume.md
 ---
 
