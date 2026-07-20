@@ -35,6 +35,7 @@ phases:
     fixtures.'
 create_time: 2026-07-20 14:39:47
 status: wip
+bead_id: sase-8d
 ---
 
 # Plan: Plan-lane-style rich clan summaries
