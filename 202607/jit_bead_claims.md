@@ -32,6 +32,7 @@ phases:
     and failure behavior end to end.'
 create_time: 2026-07-20 15:48:27
 status: wip
+bead_id: sase-8f
 ---
 
 # Plan: Just-in-time bead claims for launched agents
