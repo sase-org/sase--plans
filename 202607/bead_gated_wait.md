@@ -71,7 +71,7 @@ phases:
     land agent stay parked until the child epic lands, the parent phase auto-closes,
     retries skip delegated phases, and waiting displays name the beads.'
 create_time: 2026-07-20 11:01:43
-status: wip
+status: done
 bead_id: sase-87
 ---
 
