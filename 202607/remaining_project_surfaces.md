@@ -5,7 +5,7 @@ goal: Eliminate canonical project-key leaks from the remaining human-facing CLI 
   TUI surfaces while preserving canonical identity in persistence, lookup, paths,
   commands, replay, and structured output.
 create_time: 2026-07-20 13:14:55
-status: wip
+status: done
 prompt: 202607/prompts/remaining_project_surfaces.md
 ---
 
