@@ -7,7 +7,7 @@ goal: 'Epic clan summaries render a launch-stable, markdown-aware overview of th
 
   '
 create_time: 2026-07-20 11:33:09
-status: wip
+status: done
 prompt: 202607/prompts/rich_epic_summary.md
 ---
 
