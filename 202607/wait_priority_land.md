@@ -23,6 +23,7 @@ phases:
     findings, verify the repository, and mark the original epic plan done.'
 create_time: 2026-07-20 15:01:35
 status: wip
+bead_id: sase-8e
 ---
 
 # Plan: Integrate and land priority-aware runner-slot queues
