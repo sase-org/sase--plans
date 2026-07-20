@@ -13,14 +13,13 @@ phases:
   size: medium
   depends_on:
   - small-phase
-  description: Medium phase - should get
+  description: Medium phase - should get #plan appended and route to @phase_worker
 - id: large-phase
   title: Large phase test
   size: large
   depends_on:
   - medium-phase
-  description: Large phase - should get
-bead_id: sase-81
+  description: Large phase - should get #plan appended and route to @smartest
 ---
 
 # Smoke Test Epic for Phase Sizes
