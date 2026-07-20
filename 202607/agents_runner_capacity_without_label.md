@@ -7,7 +7,7 @@ goal: 'Make the Agents header more compact by removing the redundant "runners" l
 
   '
 create_time: 2026-07-20 10:27:06
-status: wip
+status: done
 prompt: 202607/prompts/agents_runner_capacity_without_label.md
 ---
 
