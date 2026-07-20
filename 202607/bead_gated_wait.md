@@ -72,6 +72,7 @@ phases:
     retries skip delegated phases, and waiting displays name the beads.'
 create_time: 2026-07-20 11:01:43
 status: wip
+bead_id: sase-87
 ---
 
 # Plan: Bead-gated %wait for delegated epic phases
