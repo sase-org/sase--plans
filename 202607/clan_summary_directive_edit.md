@@ -7,7 +7,7 @@ goal: 'Tribe assignment and clan-declaration rewrites preserve the %clan summary
 
   '
 create_time: 2026-07-19 21:24:32
-status: wip
+status: done
 prompt: 202607/prompts/clan_summary_directive_edit.md
 ---
 
