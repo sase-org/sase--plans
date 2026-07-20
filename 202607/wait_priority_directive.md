@@ -34,6 +34,7 @@ phases:
     and update its tests.'
 create_time: 2026-07-20 14:00:01
 status: wip
+bead_id: sase-8c
 ---
 
 # Plan: Priority-aware runner-slot queue via `%wait(priority=...)`
