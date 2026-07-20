@@ -7,7 +7,7 @@ goal: 'Repeated #research_swarm and other template-clan declarations resolve the
 
   '
 create_time: 2026-07-20 17:28:20
-status: wip
+status: done
 prompt: 202607/prompts/fix_template_clan_declarations.md
 ---
 
