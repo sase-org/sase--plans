@@ -5,7 +5,7 @@ goal: Make delegated epic phases close when their child work lands, prevent retr
   from relaunching delegated phases, and expose the bead identifiers needed for bead-gated
   waits.
 create_time: 2026-07-20 11:25:09
-status: wip
+status: done
 prompt: 202607/prompts/sase_87_1_core_delegation.md
 ---
 
