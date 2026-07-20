@@ -37,6 +37,7 @@ phases:
   model: haiku
 create_time: 2026-07-20 10:48:51
 status: wip
+bead_id: sase-85
 ---
 
 # Plan: Rich, reliable epic clan summaries
