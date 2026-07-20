@@ -5,7 +5,7 @@ goal: Provide an immutable, refreshable project-display snapshot and typed ident
   projections that downstream human-facing renderers can consume without filesystem
   I/O or loss of canonical identity.
 create_time: 2026-07-20 12:50:54
-status: wip
+status: done
 prompt: 202607/prompts/project_display_contract.md
 ---
 
