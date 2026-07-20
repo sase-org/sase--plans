@@ -4,7 +4,7 @@ title: Add bead keyword support to wait directives
 goal: Parse, validate, expose, and safely rewrite repeatable bead conditions on %wait
   without changing existing agent, time, runner, bare-wait, or template semantics.
 create_time: 2026-07-20 11:24:45
-status: wip
+status: done
 prompt: 202607/prompts/wait_bead_kwarg.md
 ---
 
