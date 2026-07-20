@@ -7,7 +7,7 @@ goal: 'The Artifacts Commits sub-tab omits every sidecar repository by default a
 
   '
 create_time: 2026-07-20 13:12:28
-status: wip
+status: done
 prompt: 202607/prompts/hide_sidecar_commits_by_default.md
 ---
 
