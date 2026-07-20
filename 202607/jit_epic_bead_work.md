@@ -5,7 +5,7 @@ goal: Epic work launches associate each phase and land agent with its bead, leav
   waiting work unclaimed, and preserve recoverable state across launch failures while
   runner-side claims remain the sole transition to in_progress.
 create_time: 2026-07-20 17:09:28
-status: wip
+status: done
 prompt: 202607/prompts/jit_epic_bead_work.md
 ---
 
