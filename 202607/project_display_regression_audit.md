@@ -5,7 +5,7 @@ goal: Add reusable mismatch-key coverage and a documented presentation-boundary 
   then prove every repaired surface preserves canonical identity while rendering configured
   labels.
 create_time: 2026-07-20 14:11:18
-status: wip
+status: done
 prompt: 202607/prompts/project_display_regression_audit.md
 ---
 
