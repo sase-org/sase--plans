@@ -8,7 +8,7 @@ goal: 'A single /show Telegram command resolves an agent, clan, family, or tribe
 
   '
 create_time: 2026-07-20 16:40:59
-status: wip
+status: done
 prompt: 202607/prompts/telegram_show_command.md
 ---
 
