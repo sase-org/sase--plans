@@ -34,7 +34,7 @@ phases:
     resolution and bead-store fallback, then refresh script tests and clan-panel visual
     fixtures.'
 create_time: 2026-07-20 14:39:47
-status: wip
+status: done
 bead_id: sase-8d
 ---
 
