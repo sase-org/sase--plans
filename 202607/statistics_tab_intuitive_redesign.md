@@ -41,6 +41,7 @@ phases:
     verify compact-width degradation, and run a final consistency and beauty pass.'
 create_time: 2026-07-20 13:46:08
 status: wip
+bead_id: sase-8a
 ---
 
 # Plan: Intuitive Statistics tab redesign for the SASE Admin Center
