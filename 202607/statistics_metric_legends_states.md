@@ -7,7 +7,7 @@ goal: 'Every Statistics view explains its displayed metrics, empty and failed lo
 
   '
 create_time: 2026-07-20 14:22:29
-status: wip
+status: done
 prompt: 202607/prompts/statistics_metric_legends_states.md
 ---
 
