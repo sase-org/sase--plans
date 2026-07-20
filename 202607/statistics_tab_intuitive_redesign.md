@@ -40,7 +40,7 @@ phases:
     extend the PNG snapshot suite (including the help overlay and a narrow-width capture),
     verify compact-width degradation, and run a final consistency and beauty pass.'
 create_time: 2026-07-20 13:46:08
-status: wip
+status: done
 bead_id: sase-8a
 ---
 
