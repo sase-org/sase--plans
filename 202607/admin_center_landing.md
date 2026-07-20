@@ -7,7 +7,7 @@ goal: 'Opening the SASE Admin Center shows an immediate, polished landing page t
 
   '
 create_time: 2026-07-20 11:49:33
-status: wip
+status: done
 prompt: 202607/prompts/admin_center_landing.md
 ---
 
