@@ -7,7 +7,7 @@ goal: 'Epic sase-85 has launch-level stale-store recovery coverage against the c
 
   '
 create_time: 2026-07-20 12:23:05
-status: wip
+status: done
 prompt: 202607/prompts/complete_sase_85_landing.md
 ---
 
