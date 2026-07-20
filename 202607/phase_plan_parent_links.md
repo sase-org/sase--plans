@@ -23,7 +23,7 @@ phases:
     frontmatter from the epic bead-work environment in the plan propose handler and
     surface the new fields through the Python validation adapter.'
 create_time: 2026-07-20 11:40:47
-status: wip
+status: done
 bead_id: sase-88
 ---
 
