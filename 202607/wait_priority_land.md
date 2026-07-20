@@ -22,7 +22,7 @@ phases:
   description: '''Epic landing'' section: close sase-8c, remove post-close Symvision
     findings, verify the repository, and mark the original epic plan done.'
 create_time: 2026-07-20 15:01:35
-status: wip
+status: done
 bead_id: sase-8e
 ---
 
