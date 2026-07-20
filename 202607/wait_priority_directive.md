@@ -33,7 +33,7 @@ phases:
     %wait(priority=20) to every toobig_split proposal prompt in the bugyi-chops repo
     and update its tests.'
 create_time: 2026-07-20 14:00:01
-status: wip
+status: done
 bead_id: sase-8c
 ---
 
