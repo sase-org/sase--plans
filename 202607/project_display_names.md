@@ -36,6 +36,7 @@ phases:
     the codebase with targeted, visual, performance-sensitive, and full checks.'
 create_time: 2026-07-20 12:45:58
 status: wip
+bead_id: sase-89
 ---
 
 # Problem and evidence
