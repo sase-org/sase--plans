@@ -7,7 +7,7 @@ goal: 'SASE accepts %wait(priority=<non-negative integer>), persists the resolve
 
   '
 create_time: 2026-07-20 14:23:53
-status: wip
+status: done
 prompt: 202607/prompts/wait_priority_directive_1.md
 ---
 
