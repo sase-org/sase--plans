@@ -4,7 +4,7 @@ title: Safe retries for family-phase agents
 goal: Family-phase retries relaunch from the family base identity, while invalid forced-reuse
   launches fail before any prior agent state or artifacts are removed.
 create_time: 2026-07-20 16:37:03
-status: wip
+status: done
 prompt: 202607/prompts/retry_family_phase_agents.md
 ---
 
