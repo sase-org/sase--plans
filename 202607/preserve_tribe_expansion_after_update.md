@@ -5,7 +5,7 @@ goal: Keep each agent tribe panel's explicit expanded or collapsed preference ac
   update-driven TUI restarts and transiently incomplete agent projections, without
   regressing deliberate clears or nested fold reconciliation.
 create_time: 2026-07-20 10:17:24
-status: wip
+status: done
 prompt: 202607/prompts/preserve_tribe_expansion_after_update.md
 ---
 
