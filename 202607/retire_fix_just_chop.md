@@ -5,7 +5,7 @@ goal: Remove the fix_just chop from its package, scheduled configuration, instal
   runtime surface, and current documentation without disturbing the remaining bugyi-chops
   jobs.
 create_time: 2026-07-20 07:43:40
-status: wip
+status: done
 prompt: 202607/prompts/retire_fix_just_chop.md
 ---
 
