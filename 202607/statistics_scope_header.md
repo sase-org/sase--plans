@@ -5,7 +5,7 @@ goal: Make the Statistics tab explain the selected view and its active range, gr
   and project scope through a stable, compact header without changing data loading
   behavior.
 create_time: 2026-07-20 13:50:09
-status: wip
+status: done
 prompt: 202607/prompts/statistics_scope_header.md
 ---
 
