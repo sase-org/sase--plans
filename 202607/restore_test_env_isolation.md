@@ -5,7 +5,7 @@ goal: Prevent review-runner tests from leaking commit-dispatch environment varia
   into later workers so the work-stealing full suite is deterministic and the sase-83
   landing remains fully validated.
 create_time: 2026-07-20 13:25:56
-status: wip
+status: done
 prompt: 202607/prompts/restore_test_env_isolation.md
 ---
 
