@@ -8,7 +8,7 @@ goal: 'ACE''s existing automatic update worker durably discovers supported agent
 
   '
 create_time: 2026-07-20 10:26:48
-status: wip
+status: done
 prompt: 202607/prompts/provider_update_snapshot.md
 ---
 
