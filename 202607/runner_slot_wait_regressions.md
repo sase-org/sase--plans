@@ -7,7 +7,7 @@ goal: 'Parked runner-slot agents respond correctly to Run Now, preserve authored
 
   '
 create_time: 2026-07-20 16:37:32
-status: wip
+status: done
 prompt: 202607/prompts/runner_slot_wait_regressions.md
 ---
 
