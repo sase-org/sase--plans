@@ -5,7 +5,7 @@ goal: Concurrent bead writers converge through deterministic append-only event-s
   union, derived store metadata is repaired before it can block work, and rollback
   syncs recover without leaving an unsafe repository.
 create_time: 2026-07-20 16:44:50
-status: wip
+status: done
 prompt: 202607/prompts/reduce_bead_sync_conflicts.md
 ---
 
