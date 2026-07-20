@@ -63,6 +63,7 @@ phases:
     the docs with real numbers.'
 create_time: 2026-07-20 10:59:51
 status: wip
+bead_id: sase-86
 ---
 
 # Plan: Fast test suite under multi-agent load
