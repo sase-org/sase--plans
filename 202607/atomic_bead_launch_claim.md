@@ -4,7 +4,7 @@ title: Atomic bead launch claim
 goal: Add a concurrency-safe single-bead launch claim in the Rust core and expose
   it consistently through the Python binding and bead APIs.
 create_time: 2026-07-20 15:53:26
-status: wip
+status: done
 prompt: 202607/prompts/atomic_bead_launch_claim.md
 ---
 
