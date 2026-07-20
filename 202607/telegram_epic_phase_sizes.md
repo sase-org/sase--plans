@@ -7,7 +7,7 @@ goal: 'Telegram epic approval messages show a compact, trustworthy phase-size br
 
   '
 create_time: 2026-07-20 14:47:00
-status: wip
+status: done
 prompt: 202607/prompts/telegram_epic_phase_sizes.md
 ---
 
