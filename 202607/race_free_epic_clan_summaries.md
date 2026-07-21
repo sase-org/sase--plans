@@ -39,6 +39,7 @@ phases:
     race-shaped launch test.'
 create_time: 2026-07-21 10:39:27
 status: wip
+bead_id: sase-8i
 ---
 
 # Plan: Race-free plan-lane epic clan summaries
