@@ -7,7 +7,7 @@ goal: 'The Models panel lets users inspect, persistently edit, temporarily overr
 
   '
 create_time: 2026-07-21 11:46:35
-status: wip
+status: done
 prompt: '[202607/prompts/models_panel_default_effort_controls.md](prompts/models_panel_default_effort_controls.md)'
 ---
 
