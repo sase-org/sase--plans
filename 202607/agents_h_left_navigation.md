@@ -7,7 +7,7 @@ goal: 'Lowercase h navigates outward through the Agents-tab hierarchy while uppe
 
   '
 create_time: 2026-07-21 14:03:49
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_h_left_navigation.md](prompts/agents_h_left_navigation.md)
