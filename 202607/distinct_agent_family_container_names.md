@@ -6,7 +6,7 @@ goal: 'ACE consistently presents a sequential agent family by its bare container
 
   '
 create_time: 2026-07-21 16:14:18
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/distinct_agent_family_container_names.md](prompts/distinct_agent_family_container_names.md)
