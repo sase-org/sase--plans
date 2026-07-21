@@ -7,7 +7,7 @@ goal: 'The Agents-tab H key ascends from an agent to its containing family and f
 
   '
 create_time: 2026-07-21 13:22:39
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_h_parent_jump.md](prompts/agents_h_parent_jump.md)
