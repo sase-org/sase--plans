@@ -6,7 +6,7 @@ goal: 'Agent metadata continues to show every xprompt authored at launch even wh
 
   '
 create_time: 2026-07-21 11:52:43
-status: wip
+status: done
 prompt: '[202607/prompts/preserve_launch_xprompt_metadata.md](prompts/preserve_launch_xprompt_metadata.md)'
 ---
 
