@@ -7,7 +7,7 @@ goal: The Artifacts Commits pane reports capped result sets honestly, exposes th
 bead: sase-8h.3
 parent: sase/repos/plans/202607/commits_filter_correctness.md
 create_time: 2026-07-21 11:23:10
-status: wip
+status: done
 prompt: '[202607/prompts/truthful_commits_status.md](prompts/truthful_commits_status.md)'
 ---
 
