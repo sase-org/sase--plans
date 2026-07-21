@@ -7,7 +7,7 @@ goal: The Admin Center Statistics pane gains a responsive Runners view that make
 bead: sase-8j.3
 parent: sase/repos/plans/202607/runners_statistics.md
 create_time: 2026-07-21 17:38:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/runners_statistics_experience.md](prompts/runners_statistics_experience.md)
