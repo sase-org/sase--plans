@@ -5,7 +5,7 @@ goal: Keep the 24-hour Artifacts Commits default query free of an implicit 40-ro
   cap while retaining explicit limits, truthful coverage reporting, and responsive
   navigation.
 create_time: 2026-07-21 13:06:51
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/uncap_default_commits_query.md](prompts/uncap_default_commits_query.md)
