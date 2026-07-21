@@ -7,7 +7,7 @@ goal: 'Plan and question handoffs continue into their follow-up phase without em
 
   '
 create_time: 2026-07-21 16:23:54
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/suppress_intermediate_handoff_bell.md](prompts/suppress_intermediate_handoff_bell.md)
