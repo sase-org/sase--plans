@@ -7,7 +7,7 @@ goal: 'Prompt input users can press S in characterwise or linewise Visual mode a
 
   '
 create_time: 2026-07-21 16:07:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/visual_surround_keymap.md](prompts/visual_surround_keymap.md)
