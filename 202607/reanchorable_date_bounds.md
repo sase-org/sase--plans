@@ -6,6 +6,8 @@ goal: Date filters retain stable semantic specifications, relative windows resol
   named day across commits and plans.
 create_time: 2026-07-21 10:21:23
 status: done
+bead: sase-8h.1
+parent: sase/repos/plans/202607/commits_filter_correctness.md
 prompt: '[202607/prompts/reanchorable_date_bounds.md](prompts/reanchorable_date_bounds.md)'
 ---
 

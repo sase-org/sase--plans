@@ -6,6 +6,8 @@ goal: Commit-log collection re-anchors semantic date bounds per operation, prese
   provider or aggregate caps may have hidden matches.
 create_time: 2026-07-21 10:43:02
 status: wip
+bead: sase-8h.2
+parent: sase/repos/plans/202607/commits_filter_correctness.md
 prompt: '[202607/prompts/truncation_aware_vcs_collection.md](prompts/truncation_aware_vcs_collection.md)'
 ---
 
