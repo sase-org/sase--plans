@@ -7,7 +7,7 @@ goal: 'Phase agents use simpler size defaults, cheaper and cheapest expose disti
 
   '
 create_time: 2026-07-21 10:06:09
-status: wip
+status: done
 prompt: '[202607/prompts/simplify_phase_model_aliases.md](prompts/simplify_phase_model_aliases.md)'
 ---
 
