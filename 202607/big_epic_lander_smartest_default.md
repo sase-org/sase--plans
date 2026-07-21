@@ -7,7 +7,7 @@ goal: 'Threshold-selected epic land agents inherit SASE''s provider-aware @smart
 
   '
 create_time: 2026-07-21 11:35:08
-status: wip
+status: done
 prompt: '[202607/prompts/big_epic_lander_smartest_default.md](prompts/big_epic_lander_smartest_default.md)'
 ---
 
