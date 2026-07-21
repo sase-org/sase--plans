@@ -38,7 +38,7 @@ phases:
     document the multi-run script contract, and pin the end state with an end-to-end
     race-shaped launch test.'
 create_time: 2026-07-21 10:39:27
-status: wip
+status: done
 bead_id: sase-8i
 ---
 
