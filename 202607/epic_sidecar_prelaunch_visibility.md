@@ -7,7 +7,7 @@ goal: 'Approved epic plans publish a complete, claimable bead DAG before any pha
 
   '
 create_time: 2026-07-21 16:47:55
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_sidecar_prelaunch_visibility.md](prompts/epic_sidecar_prelaunch_visibility.md)
