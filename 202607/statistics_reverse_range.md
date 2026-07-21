@@ -7,7 +7,7 @@ goal: 'The SASE Admin Center Statistics tab supports a configurable uppercase T 
 
   '
 create_time: 2026-07-21 07:44:12
-status: wip
+status: done
 prompt: 202607/prompts/statistics_reverse_range.md
 ---
 
