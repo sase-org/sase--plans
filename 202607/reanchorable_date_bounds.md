@@ -5,7 +5,7 @@ goal: Date filters retain stable semantic specifications, relative windows resol
   against the current operation time, and day-granular until bounds include the full
   named day across commits and plans.
 create_time: 2026-07-21 10:21:23
-status: wip
+status: done
 prompt: '[202607/prompts/reanchorable_date_bounds.md](prompts/reanchorable_date_bounds.md)'
 ---
 
