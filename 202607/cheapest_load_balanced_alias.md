@@ -5,7 +5,7 @@ goal: Alias values can name a pipe-separated model pool that round-robins across
   and skips uninstalled providers, a new builtin @cheapest alias uses that mechanism,
   and small/large phase workers route through @cheapest/@smartest.
 create_time: 2026-07-21 09:11:51
-status: wip
+status: done
 prompt: 202607/prompts/cheapest_load_balanced_alias.md
 ---
 
