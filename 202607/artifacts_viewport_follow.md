@@ -5,7 +5,7 @@ goal: Fast and programmatic navigation in every non-PR Artifacts sub-tab keeps t
   selected row visible without reintroducing selection-event echoes or eager detail
   rendering.
 create_time: 2026-07-21 15:10:05
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_viewport_follow.md](prompts/artifacts_viewport_follow.md)
