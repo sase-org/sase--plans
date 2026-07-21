@@ -7,7 +7,7 @@ goal: The shared Rust statistics API reports exact, overlap-aware runner occupan
 bead: sase-8j.1
 parent: sase/repos/plans/202607/runners_statistics.md
 create_time: 2026-07-21 16:36:45
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/runner_occupancy_analytics.md](prompts/runner_occupancy_analytics.md)
