@@ -5,7 +5,7 @@ goal: Make the selected commit position and truthful matched-entry total immedia
   visible beside the repository legend while removing the duplicate count from the
   filter bar.
 create_time: 2026-07-21 15:16:18
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/commit_timeline_position_badge.md](prompts/commit_timeline_position_badge.md)
