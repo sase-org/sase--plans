@@ -87,7 +87,7 @@ phases:
     notification writers against unisolated pytest runs so test fixtures stop polluting
     the real metrics DB and axe logs.'
 create_time: 2026-07-20 16:31:12
-status: wip
+status: done
 bead_id: sase-8g
 ---
 
