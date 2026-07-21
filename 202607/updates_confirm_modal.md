@@ -8,7 +8,7 @@ goal: 'The y/n confirm popup opened by `u` on the SASE Admin Center Updates tab 
 
   '
 create_time: 2026-07-21 07:41:24
-status: wip
+status: done
 prompt: 202607/prompts/updates_confirm_modal.md
 ---
 
