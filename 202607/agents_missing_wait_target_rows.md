@@ -7,7 +7,7 @@ goal: 'WAITING agent rows reveal at a glance when at least one agent dependency 
 
   '
 create_time: 2026-07-21 11:38:04
-status: wip
+status: done
 prompt: '[202607/prompts/agents_missing_wait_target_rows.md](prompts/agents_missing_wait_target_rows.md)'
 ---
 
