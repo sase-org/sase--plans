@@ -8,7 +8,7 @@ goal: 'Pressing lowercase u on a freshly loaded Admin Center Updates tab opens t
 
   '
 create_time: 2026-07-21 09:19:49
-status: wip
+status: done
 prompt: 202607/prompts/fast_updates_u_keymap.md
 ---
 
