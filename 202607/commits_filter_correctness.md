@@ -48,6 +48,7 @@ phases:
     '
 create_time: 2026-07-21 10:14:38
 status: wip
+bead_id: sase-8h
 ---
 
 # Plan: Commits sub-tab query filter correctness
