@@ -7,7 +7,7 @@ goal: 'A selected collapsed agent tribe panel uses the established yellow select
 
   '
 create_time: 2026-07-21 07:57:35
-status: wip
+status: done
 prompt: 202607/prompts/selected_collapsed_tribe_title_highlight.md
 ---
 
