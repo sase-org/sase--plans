@@ -9,7 +9,7 @@ goal: 'The ace Models panel makes load-balanced alias pools and reasoning-effort
 
   '
 create_time: 2026-07-21 10:42:14
-status: wip
+status: done
 prompt: '[202607/prompts/models_panel_pool_effort_display.md](prompts/models_panel_pool_effort_display.md)'
 ---
 
