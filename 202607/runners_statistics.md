@@ -38,6 +38,7 @@ phases:
     and both repositories'' required checks.'
 create_time: 2026-07-21 16:28:12
 status: wip
+bead_id: sase-8j
 ---
 
 # Plan: Runner concurrency statistics
