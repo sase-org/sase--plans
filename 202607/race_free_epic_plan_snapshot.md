@@ -8,7 +8,7 @@ goal: 'Every epic work launch makes the approved plan available through a durabl
 
   '
 create_time: 2026-07-21 11:06:10
-status: wip
+status: done
 prompt: '[202607/prompts/race_free_epic_plan_snapshot.md](prompts/race_free_epic_plan_snapshot.md)'
 ---
 
