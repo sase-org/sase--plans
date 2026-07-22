@@ -8,7 +8,7 @@ goal: 'The Models panel clearly shows the effective maximum-running-agents limit
 
   '
 create_time: 2026-07-22 07:12:30
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_runner_limit_controls.md](prompts/models_panel_runner_limit_controls.md)
