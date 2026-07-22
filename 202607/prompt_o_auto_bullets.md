@@ -4,7 +4,7 @@ title: Auto-continue prompt bullets with normal-mode o
 goal: Make prompt NORMAL-mode o open a correctly indented hyphen bullet when the cursor
   is anywhere in an existing Prettier-wrapped bullet item.
 create_time: 2026-07-22 10:36:43
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_o_auto_bullets.md](prompts/prompt_o_auto_bullets.md)
