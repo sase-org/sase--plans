@@ -4,7 +4,7 @@ title: Restore epic clan summaries on every bead-work launch
 goal: Ensure fresh and retried sase bead work launches persist an epic clan summary
   without weakening single-declaration clan semantics
 create_time: 2026-07-22 12:21:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_epic_clan_summaries.md](prompts/restore_epic_clan_summaries.md)
