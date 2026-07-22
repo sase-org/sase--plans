@@ -7,7 +7,7 @@ goal: 'Every agent house that is not a member of a visible name subgroup renders
 
   '
 create_time: 2026-07-22 07:20:40
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ungrouped_agent_houses_first.md](prompts/ungrouped_agent_houses_first.md)
