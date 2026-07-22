@@ -7,7 +7,7 @@ goal: 'After a ,U update restarts ACE, the post-restart "update complete" toast 
 
   '
 create_time: 2026-07-22 09:18:15
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/post_update_toast_commits.md](prompts/post_update_toast_commits.md)
