@@ -7,7 +7,7 @@ goal: 'The /sase_plan skill no longer front-loads the plan-frontmatter schema; a
 
   '
 create_time: 2026-07-22 09:44:21
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/validate_explain_option.md](prompts/validate_explain_option.md)
