@@ -4,7 +4,7 @@ title: Use a terminal-safe deep navy foreground for TODO markers
 goal: Keep TODO headers and count capsules readable on running gold without relying
   on the terminal's ANSI black palette entry.
 create_time: 2026-07-22 11:01:30
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_deep_navy_foreground.md](prompts/todo_deep_navy_foreground.md)
