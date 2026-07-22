@@ -8,7 +8,7 @@ goal: 'Tale and epic review handoffs remain prominent and actionable across ACE 
 
   '
 create_time: 2026-07-22 06:50:48
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/silence_plan_handoff_terminal_bells.md](prompts/silence_plan_handoff_terminal_bells.md)
