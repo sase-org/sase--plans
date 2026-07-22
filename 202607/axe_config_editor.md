@@ -39,6 +39,7 @@ phases:
     exercises.'
 create_time: 2026-07-22 11:37:43
 status: wip
+bead_id: sase-8m
 ---
 
 # Plan: AXE lumberjack and chop editor
