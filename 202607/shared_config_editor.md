@@ -6,7 +6,7 @@ goal: Config Center and AXE entry editing share responsive, typed, scope-aware t
 bead: sase-8m.2
 parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-07-22 12:04:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/shared_config_editor.md](prompts/shared_config_editor.md)
