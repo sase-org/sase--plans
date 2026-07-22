@@ -7,7 +7,7 @@ goal: 'TODO headers and their prompt count capsule use the exact gold shown by t
 
   '
 create_time: 2026-07-22 09:18:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_running_gold.md](prompts/todo_running_gold.md)
