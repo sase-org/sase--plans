@@ -7,7 +7,7 @@ goal: Every SASE-managed project has a configurable hidden agents sidecar that i
 bead: sase-8k.4
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 10:58:48
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/hidden_agents_sidecar_foundation.md](prompts/hidden_agents_sidecar_foundation.md)
