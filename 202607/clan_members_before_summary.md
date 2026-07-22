@@ -4,7 +4,7 @@ title: Show clan members before the clan summary
 goal: Selected clan metadata prioritizes the member roster above the optional authored
   summary without changing folds, navigation, or summary rendering.
 create_time: 2026-07-22 11:08:29
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_members_before_summary.md](prompts/clan_members_before_summary.md)
