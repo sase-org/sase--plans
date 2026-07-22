@@ -6,7 +6,7 @@ goal: The toobig split chop authors one compact summary that survives dedupe and
 bead: sase-8l.2
 parent: sase/repos/plans/202607/toobig_clan_summary.md
 create_time: 2026-07-22 12:57:14
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/toobig_clan_summary_1.md](prompts/toobig_clan_summary_1.md)
