@@ -7,7 +7,7 @@ goal: Managed projects can explicitly consent to and initialize a privacy-aware 
 bead: sase-8k.5
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 11:58:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sidecar_repo_init.md](prompts/agents_sidecar_repo_init.md)
