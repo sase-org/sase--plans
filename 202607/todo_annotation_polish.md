@@ -9,7 +9,7 @@ goal: 'Redesign the ACE prompt bar''s TODO highlighting so draft markers read as
 
   '
 create_time: 2026-07-22 08:33:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_annotation_polish.md](prompts/todo_annotation_polish.md)
