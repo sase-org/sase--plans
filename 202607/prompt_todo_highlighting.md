@@ -7,7 +7,7 @@ goal: 'Uppercase TODO annotations in ACE prompt inputs are unmistakable on scree
 
   '
 create_time: 2026-07-22 07:20:49
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_todo_highlighting.md](prompts/prompt_todo_highlighting.md)
