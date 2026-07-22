@@ -8,7 +8,7 @@ goal: 'The Admin Center Runners view reports runner-slot occupancy from valid bo
 
   '
 create_time: 2026-07-22 06:26:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_runners_statistics_integrity_and_scrolling.md](prompts/fix_runners_statistics_integrity_and_scrolling.md)
