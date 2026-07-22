@@ -6,7 +6,7 @@ goal: 'TODO markers render as unmistakably dark text on running gold, while only
 
   '
 create_time: 2026-07-22 09:42:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_colon_highlight_legibility.md](prompts/todo_colon_highlight_legibility.md)
