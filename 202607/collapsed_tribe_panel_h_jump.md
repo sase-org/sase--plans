@@ -7,7 +7,7 @@ goal: 'Pressing h on a collapsed Agents-tab tribe panel selects the bottom-most 
 
   '
 create_time: 2026-07-22 08:36:20
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_tribe_panel_h_jump.md](prompts/collapsed_tribe_panel_h_jump.md)
