@@ -7,7 +7,7 @@ goal: ACE shows actionable agents-sidecar sync state without TUI performance reg
 bead: sase-8k.7
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 16:05:58
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tui_agents_sync.md](prompts/tui_agents_sync.md)
