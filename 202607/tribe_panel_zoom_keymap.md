@@ -7,7 +7,7 @@ goal: 'Make the Agents-tab zoom action isolate or restore a selected tribe panel
 
   '
 create_time: 2026-07-22 06:57:41
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_zoom_keymap.md](prompts/tribe_panel_zoom_keymap.md)
