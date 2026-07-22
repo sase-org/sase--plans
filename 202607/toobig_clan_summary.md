@@ -21,6 +21,7 @@ phases:
   size: medium
 create_time: 2026-07-22 11:17:03
 status: wip
+bead_id: sase-8l
 ---
 
 # Beautiful `toobig_split` Clan Summaries
