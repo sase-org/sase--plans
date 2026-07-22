@@ -6,7 +6,7 @@ goal: Users can add and safely edit AXE lumberjacks and chops from ACE with non-
 bead: sase-8m.3
 parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-07-22 14:00:19
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_add_edit_workflows.md](prompts/axe_add_edit_workflows.md)
