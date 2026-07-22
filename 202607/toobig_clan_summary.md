@@ -20,7 +20,7 @@ phases:
     path.
   size: medium
 create_time: 2026-07-22 11:17:03
-status: wip
+status: done
 bead_id: sase-8l
 ---
 
