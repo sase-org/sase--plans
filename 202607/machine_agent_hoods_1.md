@@ -7,7 +7,7 @@ goal: Qualify every new durable local agent identity with the configured machine
 bead: sase-8k.3
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 14:04:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_agent_hoods_1.md](prompts/machine_agent_hoods_1.md)
