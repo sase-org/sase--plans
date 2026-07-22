@@ -6,7 +6,7 @@ goal: SASE has an explicit, machine-local identity with selector-safe overlays a
 bead: sase-8k.1
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 10:59:24
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_config_init.md](prompts/machine_config_init.md)
