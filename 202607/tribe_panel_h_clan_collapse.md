@@ -7,7 +7,7 @@ goal: 'Whole-panel H collapses every expanded agent clan in the selected tribe p
 
   '
 create_time: 2026-07-22 09:03:47
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_h_clan_collapse.md](prompts/tribe_panel_h_clan_collapse.md)
