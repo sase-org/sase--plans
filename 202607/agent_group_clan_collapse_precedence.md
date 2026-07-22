@@ -5,7 +5,7 @@ goal: Uppercase H fully collapses every expanded canonical agent clan in the nex
   Agents-panel grouping scope after houses are closed and before a later press collapses
   that grouping banner.
 create_time: 2026-07-22 12:27:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_group_clan_collapse_precedence.md](prompts/agent_group_clan_collapse_precedence.md)
