@@ -6,7 +6,7 @@ goal: Epic sase-8k is fully integrated with intervening work, verified end to en
 bead: sase-8k
 parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 17:12:26
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_agents_sidecar_epic.md](prompts/finish_agents_sidecar_epic.md)
