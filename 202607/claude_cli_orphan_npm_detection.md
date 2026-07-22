@@ -8,7 +8,7 @@ goal: 'SASE detects a native Claude Code install correctly even when an orphaned
 
   '
 create_time: 2026-07-22 08:36:45
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/claude_cli_orphan_npm_detection.md](prompts/claude_cli_orphan_npm_detection.md)
