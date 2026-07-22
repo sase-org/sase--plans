@@ -6,7 +6,7 @@ goal: 'Uppercase H fully collapses every open agent house in the next Agents-pan
 
   '
 create_time: 2026-07-22 07:27:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_group_house_collapse_precedence.md](prompts/agents_group_house_collapse_precedence.md)
