@@ -5,7 +5,7 @@ goal: Deterministic epic retries self-clean interrupted family handoffs, derived
   state is reconciled safely, and toobig_split relaunches with working repository
   authentication.
 create_time: 2026-07-22 14:37:32
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/shutdown_recovery_and_toobig_relaunch.md](prompts/shutdown_recovery_and_toobig_relaunch.md)
