@@ -7,7 +7,7 @@ goal: 'ACE promptly replaces pending tale and epic review labels with their cano
 
   '
 create_time: 2026-07-22 06:41:33
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_cross_surface_plan_approval_status.md](prompts/prompt_cross_surface_plan_approval_status.md)
