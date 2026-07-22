@@ -5,7 +5,7 @@ goal: The Agents-tab headline reports agent holes, including direct clan members
   hidden starting agents, while concrete status and navigation counts retain their
   existing semantics.
 create_time: 2026-07-22 10:51:04
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_hole_headline_count.md](prompts/agent_hole_headline_count.md)
