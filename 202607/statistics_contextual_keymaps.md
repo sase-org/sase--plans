@@ -7,7 +7,7 @@ goal: 'The Admin Center Statistics tab advertises grouping only on views that ca
 
   '
 create_time: 2026-07-22 07:44:53
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_contextual_keymaps.md](prompts/statistics_contextual_keymaps.md)
