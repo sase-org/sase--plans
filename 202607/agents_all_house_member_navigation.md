@@ -8,7 +8,7 @@ goal: 'Every rendered member of an agent house, including agent, Bash, Python, p
 
   '
 create_time: 2026-07-22 06:31:03
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_all_house_member_navigation.md](prompts/agents_all_house_member_navigation.md)
