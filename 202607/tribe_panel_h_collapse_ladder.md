@@ -7,7 +7,7 @@ goal: 'Uppercase H on a selected Agents-tab tribe panel collapses all open house
 
   '
 create_time: 2026-07-22 08:11:46
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_h_collapse_ladder.md](prompts/tribe_panel_h_collapse_ladder.md)
