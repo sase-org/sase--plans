@@ -94,6 +94,7 @@ phases:
     '
 create_time: 2026-07-22 10:53:31
 status: wip
+bead_id: sase-8k
 ---
 
 # Plan: Hidden agents sidecar repo with machine agent hoods
