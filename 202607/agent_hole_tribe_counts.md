@@ -4,7 +4,7 @@ title: Use agent-hole totals on clan rows and tribe panels
 goal: Tribe-panel totals match agent-hole semantics while clan-row hole counts and
   concrete status metrics remain correct.
 create_time: 2026-07-22 11:23:46
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_hole_tribe_counts.md](prompts/agent_hole_tribe_counts.md)
