@@ -7,7 +7,7 @@ goal: 'The SASE Admin Center Config tab wraps j navigation from the last visible
 
   '
 create_time: 2026-07-22 07:51:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/config_tab_jk_wraparound.md](prompts/config_tab_jk_wraparound.md)
