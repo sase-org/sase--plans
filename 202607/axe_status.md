@@ -38,6 +38,7 @@ phases:
     '
 create_time: 2026-07-23 07:31:15
 status: wip
+bead_id: sase-8t
 ---
 
 # Add an intuitive, reliable, and beautiful `sase axe status`
