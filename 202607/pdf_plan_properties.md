@@ -8,7 +8,7 @@ goal: 'Plan PDFs attached to Telegram approval messages (and every other Markdow
 
   '
 create_time: 2026-07-23 12:40:15
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/pdf_plan_properties.md](prompts/pdf_plan_properties.md)
