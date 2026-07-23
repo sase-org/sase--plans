@@ -7,7 +7,7 @@ goal: SASE core and Python expose validated owner-aware name, family, hood, link
 bead: sase-8v.1
 parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 13:05:35
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_owner_relationship_domain.md](prompts/agent_owner_relationship_domain.md)
