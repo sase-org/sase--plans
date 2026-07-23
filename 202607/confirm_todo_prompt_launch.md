@@ -5,7 +5,7 @@ goal: ACE asks for an explicit y/n confirmation before launching a prompt with v
   TODO draft markers, while cancellation preserves the exact prompt stack and confirmation
   preserves the existing launch behavior.
 create_time: 2026-07-23 11:24:59
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/confirm_todo_prompt_launch.md](prompts/confirm_todo_prompt_launch.md)
