@@ -33,6 +33,7 @@ parent_bead: sase-8u
 parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 09:53:04
 status: wip
+bead_id: sase-8u.4
 ---
 
 # Plan: Finish and land capitalized snippet aliases
