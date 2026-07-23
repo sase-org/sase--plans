@@ -5,7 +5,7 @@ goal: The toobig_split clan summary lists each oversized file's path and current
   count, severity-ranked and beautifully rendered within the existing clan-summary
   frame.
 create_time: 2026-07-23 11:24:47
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/toobig_split_clan_summary.md](prompts/toobig_split_clan_summary.md)
