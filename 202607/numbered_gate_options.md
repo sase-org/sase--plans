@@ -5,7 +5,7 @@ goal: Every top-level OR branch in an ACE gate review is visibly numbered and di
   triggered by its matching digit, while AND-member toggles and Cancel keep their
   existing controls.
 create_time: 2026-07-23 13:01:46
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/numbered_gate_options.md](prompts/numbered_gate_options.md)
