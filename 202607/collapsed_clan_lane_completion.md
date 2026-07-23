@@ -5,7 +5,7 @@ goal: Prompt agent-target completion includes every otherwise-visible agent lane
   only by a collapsed outer clan, while preserving existing ordering, filtering, grouping,
   and prompt responsiveness.
 create_time: 2026-07-23 14:34:59
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_clan_lane_completion.md](prompts/collapsed_clan_lane_completion.md)
