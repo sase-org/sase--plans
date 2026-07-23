@@ -7,7 +7,7 @@ goal: New locally owned agent state is stored with bare semantic names, imported
 bead: sase-8v.3
 parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 15:02:52
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/identity_relative_local_persistence.md](prompts/identity_relative_local_persistence.md)
