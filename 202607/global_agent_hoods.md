@@ -95,6 +95,7 @@ phases:
     cases, visual behavior, and final user documentation.
 create_time: 2026-07-23 12:58:55
 status: wip
+bead_id: sase-8v
 ---
 
 # Plan: Global agent hoods, reconstructable sidecars, and cached remote sync
