@@ -6,7 +6,7 @@ goal: Operators can inspect one read-only AXE whole-system snapshot in a polishe
 bead: sase-8t.3
 parent: sase/repos/plans/202607/axe_status.md
 create_time: 2026-07-23 08:43:10
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_status_cli.md](prompts/axe_status_cli.md)
