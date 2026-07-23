@@ -4,7 +4,7 @@ title: Complete the agent hole-to-lane rename
 goal: All meaningful agent-hole terminology is replaced by agent-lane terminology
   without changing counting or TUI behavior.
 create_time: 2026-07-23 13:16:19
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_lane_rename.md](prompts/agent_lane_rename.md)
