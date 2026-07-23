@@ -9,7 +9,7 @@ goal: '`sase bead work` proactively cleans up old agents named the same as (or r
   "forced reuse cleanup could not resolve any concrete members" failure no longer
   occurs.'
 create_time: 2026-07-23 12:03:01
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_work_cleanup_confirm.md](prompts/bead_work_cleanup_confirm.md)
