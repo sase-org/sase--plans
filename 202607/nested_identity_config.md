@@ -7,7 +7,7 @@ goal: Make the selected machine overlay the sole source of a validated per-user 
 bead: sase-8v.2
 parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 14:13:21
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/nested_identity_config.md](prompts/nested_identity_config.md)
