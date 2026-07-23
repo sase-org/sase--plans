@@ -4,7 +4,7 @@ title: Restart individual agent-family members with `,x`
 goal: The Agents tab can kill or dismiss one selected family member and relaunch that
   exact member from a correct forced-reuse prompt.
 create_time: 2026-07-23 10:37:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/restart_individual_family_members.md](prompts/restart_individual_family_members.md)
