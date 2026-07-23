@@ -4,7 +4,7 @@ title: Fix slow agent launches caused by repeated machine-identity discovery
 goal: Restore prompt, stable agent naming and launch latency by resolving machine
   identity once per registry rebuild.
 create_time: 2026-07-23 07:31:29
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_slow_agent_launch_naming.md](prompts/fix_slow_agent_launch_naming.md)
