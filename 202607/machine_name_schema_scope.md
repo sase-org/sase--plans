@@ -4,7 +4,7 @@ title: Scope machine_name to the machine identity overlay
 goal: Valid SASE config fragments no longer receive false missing-machine-name schema
   diagnostics while declared machine identities remain constrained and initialization-owned.
 create_time: 2026-07-23 09:56:08
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_name_schema_scope.md](prompts/machine_name_schema_scope.md)
