@@ -7,7 +7,7 @@ goal: 'Make prompt NORMAL-mode O open a correctly indented sibling hyphen bullet
 
   '
 create_time: 2026-07-23 10:46:12
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_upper_o_auto_bullets.md](prompts/prompt_upper_o_auto_bullets.md)
