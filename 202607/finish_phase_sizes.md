@@ -38,6 +38,7 @@ parent_bead: sase-8w
 parent: sase/repos/plans/202607/phase_sizes.md
 create_time: 2026-07-23 19:12:58
 status: wip
+bead_id: sase-8w.7
 ---
 
 # Plan: Finish and land five-size epic phase support
