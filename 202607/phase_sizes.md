@@ -67,6 +67,7 @@ phases:
     gating, per-size model routing, and rendered chips all behave.'
 create_time: 2026-07-23 17:38:11
 status: wip
+bead_id: sase-8w
 ---
 
 # Plan: Add `xsmall` and `xlarge` epic phase sizes
