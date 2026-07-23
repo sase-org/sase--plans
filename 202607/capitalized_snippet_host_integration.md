@@ -6,7 +6,7 @@ goal: ACE, live saves, and the editor helper consume the shared Rust composer wh
 bead: sase-8u.2
 parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 08:33:38
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_host_integration.md](prompts/capitalized_snippet_host_integration.md)
