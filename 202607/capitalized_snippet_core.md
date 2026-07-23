@@ -6,7 +6,7 @@ goal: Provide one shared, metadata-aware capitalized snippet composition contrac
 bead: sase-8u.1
 parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 08:15:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_core.md](prompts/capitalized_snippet_core.md)
