@@ -27,6 +27,7 @@ phases:
     suites after the core release boundary is satisfied.
 create_time: 2026-07-23 08:10:52
 status: wip
+bead_id: sase-8u
 ---
 
 # Plan: Capitalized aliases for every SASE snippet
