@@ -5,7 +5,7 @@ goal: Highlight every source line belonging to a dash-list item that begins with
   while keeping inline and fenced code examples visually inert and out of the TODO
   count.
 create_time: 2026-07-23 10:19:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_bullet_literal_highlighting.md](prompts/todo_bullet_literal_highlighting.md)
