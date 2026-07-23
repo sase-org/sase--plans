@@ -7,7 +7,7 @@ goal: Fix the gateway Clippy blocker without changing wire or snippet behavior, 
 bead: sase-8u.4.1
 parent: sase/repos/plans/202607/finish_capitalized_snippet_aliases.md
 create_time: 2026-07-23 09:58:05
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/core_release_readiness.md](prompts/core_release_readiness.md)
