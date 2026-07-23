@@ -4,7 +4,7 @@ title: Auto-continue prompt bullets with insert-mode Ctrl+J
 goal: Make prompt INSERT-mode Ctrl+J split a supported bullet into a correctly indented
   sibling while preserving existing non-bullet and editor behavior.
 create_time: 2026-07-23 10:26:21
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_ctrl_j_auto_bullets.md](prompts/prompt_ctrl_j_auto_bullets.md)
