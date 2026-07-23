@@ -4,7 +4,7 @@ title: Fix receipt-owned plugin detection
 goal: Receipt-injected SASE plugins appear installed consistently in the Admin Center
   and plugin catalog.
 create_time: 2026-07-23 11:49:54
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_receipt_owned_plugin_detection.md](prompts/fix_receipt_owned_plugin_detection.md)
