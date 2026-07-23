@@ -5,7 +5,7 @@ goal: On the hood-owning machine, a clan containing an agent family renders as o
   container with the local machine prefix stripped, instead of splitting into a qualified
   and an unqualified row.
 create_time: 2026-07-23 08:11:09
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_hood_clan_prefix.md](prompts/machine_hood_clan_prefix.md)
