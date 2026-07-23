@@ -5,7 +5,7 @@ goal: The Help panel's Guide (2nd) tab reads as an accurate, well-scoped orienta
   for each ACE tab — the Artifacts guide covers all four sub-tabs instead of only
   PRs, and the Agents and Axe guides are tightened for accuracy and scannability.
 create_time: 2026-07-23 13:28:14
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/help_guide_tab_content.md](prompts/help_guide_tab_content.md)
