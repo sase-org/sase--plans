@@ -98,6 +98,7 @@ phases:
     '
 create_time: 2026-07-24 19:29:31
 status: wip
+bead_id: sase-90
 ---
 
 # Plan: Artifacts → Chats sub-tab
