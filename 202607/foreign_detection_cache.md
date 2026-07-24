@@ -7,7 +7,7 @@ goal: Validated foreign agent hoods are captured during explicit periodic fetche
 bead: sase-8v.7
 parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-24 16:01:35
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/foreign_detection_cache.md](prompts/foreign_detection_cache.md)
