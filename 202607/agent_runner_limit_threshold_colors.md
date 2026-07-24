@@ -4,7 +4,7 @@ title: Make the Agents-header runner limit reflect capacity pressure
 goal: The runner-limit denominator uses rounded capacity thresholds to progress from
   neutral grey through yellow and orange to red.
 create_time: 2026-07-24 19:11:48
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_runner_limit_threshold_colors.md](prompts/agent_runner_limit_threshold_colors.md)
