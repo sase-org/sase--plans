@@ -68,6 +68,7 @@ phases:
     the bead xprompt wording.'
 create_time: 2026-07-24 16:21:11
 status: wip
+bead_id: sase-8y
 ---
 
 # Plan: Claimed bead status for pre-launch agent reservations
