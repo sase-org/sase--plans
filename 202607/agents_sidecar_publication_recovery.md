@@ -63,6 +63,7 @@ phases:
     recovery.'
 create_time: 2026-07-24 19:41:49
 status: wip
+bead_id: sase-91
 ---
 
 # Plan: Repair agents-sidecar publication blocked by legacy agent names
