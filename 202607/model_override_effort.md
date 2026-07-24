@@ -39,6 +39,7 @@ phases:
     '
 create_time: 2026-07-24 16:42:30
 status: wip
+bead_id: sase-8z
 ---
 
 # Model Override/Edit Picker: Alias Ordering and Effort-Aware Selections
