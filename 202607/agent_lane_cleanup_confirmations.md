@@ -5,7 +5,7 @@ goal: Every TUI confirmation for killing or dismissing agents identifies the aff
   work by agent lane, while a running sequential-family member kill also identifies
   the exact member, without changing cleanup scope or execution behavior.
 create_time: 2026-07-24 17:59:16
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_lane_cleanup_confirmations.md](prompts/agent_lane_cleanup_confirmations.md)
