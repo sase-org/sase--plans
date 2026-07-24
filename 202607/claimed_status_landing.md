@@ -6,7 +6,7 @@ goal: Close the remaining schema and presentation gaps, validate the integrated 
 bead: sase-8y
 parent: sase/repos/plans/202607/claimed_bead_status.md
 create_time: 2026-07-24 18:13:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/claimed_status_landing.md](prompts/claimed_status_landing.md)
