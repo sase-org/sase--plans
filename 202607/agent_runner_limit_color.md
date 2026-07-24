@@ -7,7 +7,7 @@ goal: 'The configured maximum in the Agents-tab N/M running count uses the estab
 
   '
 create_time: 2026-07-24 18:31:14
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_runner_limit_color.md](prompts/agent_runner_limit_color.md)
