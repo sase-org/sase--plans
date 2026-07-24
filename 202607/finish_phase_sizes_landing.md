@@ -24,7 +24,7 @@ phases:
 parent_bead: sase-8w.7
 parent: sase/repos/plans/202607/finish_phase_sizes.md
 create_time: 2026-07-23 20:33:35
-status: wip
+status: done
 bead_id: sase-8w.7.4
 ---
 

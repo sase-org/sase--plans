@@ -66,7 +66,7 @@ phases:
     check, and exercise a scratch five-size epic plan to confirm validation, #plan
     gating, per-size model routing, and rendered chips all behave.'
 create_time: 2026-07-23 17:38:11
-status: wip
+status: done
 bead_id: sase-8w
 ---
 
