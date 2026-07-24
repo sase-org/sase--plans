@@ -7,7 +7,7 @@ goal: Correct the final public routing inconsistency, revalidate the integrated 
 bead: sase-8w.7.4
 parent: sase/repos/plans/202607/finish_phase_sizes_landing.md
 create_time: 2026-07-23 21:20:06
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/complete_phase_sizes_landing.md](prompts/complete_phase_sizes_landing.md)
