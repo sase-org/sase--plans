@@ -7,7 +7,7 @@ goal: Import validated v2 hoods as recoverable local history, preserve conservat
 bead: sase-8v.5
 parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-24 14:30:06
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/transactional_agent_import.md](prompts/transactional_agent_import.md)
