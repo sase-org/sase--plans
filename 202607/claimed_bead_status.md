@@ -67,7 +67,7 @@ phases:
     section: document the claimed status in the bead docs, the sase_beads skill, and
     the bead xprompt wording.'
 create_time: 2026-07-24 16:21:11
-status: wip
+status: done
 bead_id: sase-8y
 ---
 
