@@ -94,7 +94,7 @@ phases:
     direct family revival, cached and explicit sync, legacy migration, collision/recovery
     cases, visual behavior, and final user documentation.
 create_time: 2026-07-23 12:58:55
-status: wip
+status: done
 bead_id: sase-8v
 ---
 
