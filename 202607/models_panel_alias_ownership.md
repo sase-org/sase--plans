@@ -6,7 +6,7 @@ goal: The ACE Models panel makes alias ownership unmistakable at a glance by spl
   alias, bucket, and bucket member with a persistent ownership gutter, without reordering
   rows, changing alias resolution, or adding any keybinding.
 create_time: 2026-07-24 14:39:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_alias_ownership.md](prompts/models_panel_alias_ownership.md)
