@@ -7,7 +7,7 @@ goal: 'Editing an AXE lumberjack or chop from the AXE tab happens on one page th
 
   '
 create_time: 2026-07-24 17:15:14
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_entry_sheet.md](prompts/axe_entry_sheet.md)
