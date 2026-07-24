@@ -25,6 +25,7 @@ parent_bead: sase-8w.7
 parent: sase/repos/plans/202607/finish_phase_sizes.md
 create_time: 2026-07-23 20:33:35
 status: wip
+bead_id: sase-8w.7.4
 ---
 
 # Plan: Finish and land the five-size phase-size epics
