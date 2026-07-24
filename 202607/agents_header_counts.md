@@ -4,7 +4,7 @@ title: Consolidate Agents-tab running capacity and status counts
 goal: The Agents header reports running capacity and optional queue depth in one accurate,
   compact status strip.
 create_time: 2026-07-24 18:06:28
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_header_counts.md](prompts/agents_header_counts.md)
