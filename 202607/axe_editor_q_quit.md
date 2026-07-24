@@ -4,7 +4,7 @@ title: Add q quit to the AXE entry editor
 goal: The AXE lumberjack/chop editor owns a safe, discoverable q shortcut that closes
   only the panel without breaking text entry or Esc navigation.
 create_time: 2026-07-24 18:34:45
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_editor_q_quit.md](prompts/axe_editor_q_quit.md)
