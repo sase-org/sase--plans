@@ -4,7 +4,7 @@ title: Exit prompt bullet lists with a second Ctrl+J
 goal: Let users end an auto-continued prompt bullet with Ctrl+J Ctrl+J while preserving
   existing continuation, selection, and undo behavior.
 create_time: 2026-07-24 15:58:18
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_j_exit_bullet_list.md](prompts/ctrl_j_exit_bullet_list.md)
