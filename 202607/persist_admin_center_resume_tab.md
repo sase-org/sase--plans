@@ -4,7 +4,7 @@ title: Persist the SASE Admin Center resume tab
 goal: The Admin Center resumes the last successfully chosen tab across TUI and machine
   restarts without blocking navigation on disk I/O.
 create_time: 2026-07-24 18:20:01
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/persist_admin_center_resume_tab.md](prompts/persist_admin_center_resume_tab.md)
