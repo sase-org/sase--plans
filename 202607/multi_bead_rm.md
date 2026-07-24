@@ -23,7 +23,7 @@ phases:
     expose one-or-more IDs in argparse, route the slow path through the batch API,
     align commit/output/docs contracts, and run the full integrated checks.'
 create_time: 2026-07-24 14:32:58
-status: wip
+status: done
 bead_id: sase-8x
 ---
 
