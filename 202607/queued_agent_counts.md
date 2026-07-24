@@ -4,7 +4,7 @@ title: Distinguish and scope queued-agent counts in the Agents tab
 goal: Queued agents use a distinct color and appear as scoped Q counts in every tribe-panel
   and clan aggregate.
 create_time: 2026-07-24 18:57:39
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_agent_counts.md](prompts/queued_agent_counts.md)
