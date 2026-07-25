@@ -55,6 +55,7 @@ phases:
     '
 create_time: 2026-07-25 12:44:16
 status: wip
+bead_id: sase-9m
 ---
 
 # Plan: Saved common placeholder tags in prompt completion
