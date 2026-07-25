@@ -62,6 +62,7 @@ phases:
     '
 create_time: 2026-07-25 08:39:30
 status: wip
+bead_id: sase-99
 ---
 
 # Plan: NEIGHBORS section for agent lane metadata panels
