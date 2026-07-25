@@ -7,7 +7,7 @@ goal: 'In the prompt input widget, INSERT-mode Tab indents the hyphen bullet und
 
   '
 create_time: 2026-07-25 08:25:09
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_bullet_tab_indent.md](prompts/prompt_bullet_tab_indent.md)
