@@ -17,6 +17,7 @@ phases:
   - cli
 create_time: 2026-07-19 20:10:42
 status: wip
+bead_id: sase-98
 ---
 # Plan
 
