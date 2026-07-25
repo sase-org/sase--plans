@@ -7,7 +7,7 @@ goal: Artifacts Chats integrates publication quarantine correctly, renders every
 bead: sase-90
 parent: sase/repos/plans/202607/artifacts_chats_subtab.md
 create_time: 2026-07-24 21:52:38
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_sase_90.md](prompts/finish_sase_90.md)
