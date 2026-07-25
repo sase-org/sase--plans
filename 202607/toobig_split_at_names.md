@@ -45,6 +45,7 @@ phases:
     '
 create_time: 2026-07-25 12:59:11
 status: wip
+bead_id: sase-9n
 ---
 
 # Plan: Name `toobig_split` agents with the `@` template suffix
