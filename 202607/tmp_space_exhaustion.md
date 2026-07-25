@@ -86,6 +86,7 @@ phases:
     '
 create_time: 2026-07-25 08:14:59
 status: wip
+bead_id: sase-96
 ---
 
 # Plan: Stop sase test and tooling scratch from exhausting the /tmp tmpfs
