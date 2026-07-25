@@ -4,7 +4,7 @@ title: Stop `sase ace` from hanging after quit
 goal: Pressing `q` in `sase ace` returns the shell prompt within about two seconds,
   even while blocking git work is in flight.
 create_time: 2026-07-25 11:17:20
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ace_quit_hang.md](prompts/ace_quit_hang.md)
