@@ -5,7 +5,7 @@ goal: Epic land agents run on the @default model because the builtin epic_lander
   tracks "@default", and the dead epic_creator builtin alias is gone from both the
   user's global config and SASE's compatibility scaffolding.
 create_time: 2026-07-25 13:18:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_lander_default_and_epic_creator_removal.md](prompts/epic_lander_default_and_epic_creator_removal.md)
