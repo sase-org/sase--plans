@@ -4,7 +4,7 @@ title: Finish Chats and agents-publication integration
 goal: Chats reports committed sidecar provenance and queued, quarantined, or mixed
   publication state correctly.
 create_time: 2026-07-24 23:42:28
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/chat_publication_post_epic_integration.md](prompts/chat_publication_post_epic_integration.md)
