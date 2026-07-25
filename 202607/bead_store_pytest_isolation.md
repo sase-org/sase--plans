@@ -52,6 +52,7 @@ phases:
     '
 create_time: 2026-07-25 10:56:23
 status: wip
+bead_id: sase-9l
 ---
 
 # Plan: Stop pytest writing to the production bead store, and purge the leaked beads
