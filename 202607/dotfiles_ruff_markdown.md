@@ -4,7 +4,7 @@ title: Restore dotfiles CI after Ruff 0.16 Markdown discovery
 goal: Keep Ruff scoped to Python sources, preserve Prettier as the Markdown formatter,
   and return the dotfiles CI checks to green.
 create_time: 2026-07-25 06:46:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/dotfiles_ruff_markdown.md](prompts/dotfiles_ruff_markdown.md)
