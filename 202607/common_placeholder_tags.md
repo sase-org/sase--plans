@@ -54,7 +54,7 @@ phases:
 
     '
 create_time: 2026-07-25 12:44:16
-status: wip
+status: done
 bead_id: sase-9m
 ---
 
