@@ -5,7 +5,7 @@ goal: The running-agent count in the Agents-tab capacity chip always renders in 
   same green style, leaving the runner-limit number as the sole capacity-pressure
   color signal.
 create_time: 2026-07-25 07:43:08
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/static_running_count_color.md](prompts/static_running_count_color.md)
