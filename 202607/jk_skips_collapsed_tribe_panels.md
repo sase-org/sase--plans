@@ -4,7 +4,7 @@ title: Agents-tab J/K skip collapsed tribe panels
 goal: Uppercase J/K on the Agents tab land only on expanded tribe panels, skipping
   collapsed ones entirely and doing nothing when no other panel is expanded.
 create_time: 2026-07-25 11:05:32
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/jk_skips_collapsed_tribe_panels.md](prompts/jk_skips_collapsed_tribe_panels.md)
