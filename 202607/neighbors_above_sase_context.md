@@ -7,7 +7,7 @@ goal: 'On an Agents-tab lane panel the numbered NEIGHBORS roster renders directl
 
   '
 create_time: 2026-07-25 13:44:00
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/neighbors_above_sase_context.md](prompts/neighbors_above_sase_context.md)
