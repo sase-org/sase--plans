@@ -5,7 +5,7 @@ goal: 'Committing a bead-carrying change no longer overwrites the bead''s `notes
   field with a stale `COMMIT: <sha>` value, while the post-commit bead-store amend
   safety net keeps working.'
 create_time: 2026-07-25 09:53:27
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/drop_bead_commit_note.md](prompts/drop_bead_commit_note.md)
