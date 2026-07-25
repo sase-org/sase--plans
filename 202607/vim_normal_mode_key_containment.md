@@ -5,7 +5,7 @@ goal: Printable keys the vim layer does not consume never reach app-level bindin
   so NORMAL-mode <space> in the prompt input bar moves the cursor right instead of
   discarding the prompt as cancelled.
 create_time: 2026-07-24 22:19:12
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/vim_normal_mode_key_containment.md](prompts/vim_normal_mode_key_containment.md)
