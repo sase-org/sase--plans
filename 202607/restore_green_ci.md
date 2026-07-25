@@ -61,6 +61,7 @@ phases:
     that published version and stop the speculative minor ratchet.'
 create_time: 2026-07-25 07:27:05
 status: wip
+bead_id: sase-93
 ---
 
 # Plan: Restore green GitHub Actions CI for sase
