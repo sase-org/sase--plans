@@ -6,7 +6,7 @@ goal: In the ACE prompt input widget, INSERT-mode Ctrl+J on an empty `- ` marker
   on a lone empty marker it instead opens a second sibling `- ` line below, so the
   exit still happens on the next press.
 create_time: 2026-07-25 14:20:51
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/lone_bullet_ctrl_j.md](prompts/lone_bullet_ctrl_j.md)
