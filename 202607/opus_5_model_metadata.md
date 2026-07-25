@@ -5,7 +5,7 @@ goal: Explicit Claude 5 model ids (claude-opus-5, claude-sonnet-5, claude-haiku-
   resolve to the claude provider, user-facing Opus version text is accurate, and the
   Antigravity catalog keeps working unchanged.
 create_time: 2026-07-25 06:52:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/opus_5_model_metadata.md](prompts/opus_5_model_metadata.md)
