@@ -5,7 +5,7 @@ goal: Every Agents-tab agent count treats queued agents as a disjoint subset of 
   agents, so a six-member clan with two global-cap waiters renders `[Q2 W4]` instead
   of `[Q2 W6]`, while every displayed WAITING status stays exactly as it is today.
 create_time: 2026-07-25 09:43:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_waiting_double_count.md](prompts/queued_waiting_double_count.md)
