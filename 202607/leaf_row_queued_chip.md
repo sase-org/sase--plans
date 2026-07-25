@@ -4,7 +4,7 @@ title: Stop leaf agent rows from rendering the queued count chip
 goal: Short-hand agent-count chips render only on aggregate rows (tribes and clans);
   an individual globally queued agent row no longer shows a stray `[Q1]`.
 create_time: 2026-07-25 08:27:26
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/leaf_row_queued_chip.md](prompts/leaf_row_queued_chip.md)
