@@ -8,7 +8,7 @@ goal: The two ACE top-bar override indicators drop the redundant "Override" word
   affordance - so the pills are far narrower while a user can still recover exactly
   the same information (and more).
 create_time: 2026-07-25 07:26:27
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/top_bar_override_pill_concision.md](prompts/top_bar_override_pill_concision.md)
