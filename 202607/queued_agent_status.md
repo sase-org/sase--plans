@@ -7,7 +7,7 @@ goal: 'Agents holding only for a free runner slot under the global cap display a
 
   '
 create_time: 2026-07-25 11:45:03
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_agent_status.md](prompts/queued_agent_status.md)
