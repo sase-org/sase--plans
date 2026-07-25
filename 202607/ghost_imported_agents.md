@@ -61,6 +61,7 @@ phases:
     '
 create_time: 2026-07-25 15:10:47
 status: wip
+bead_id: sase-9o
 ---
 
 # Plan: Stop ghost imported agents from flooding the Agents tab
