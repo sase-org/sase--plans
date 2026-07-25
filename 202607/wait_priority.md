@@ -50,6 +50,7 @@ phases:
     '
 create_time: 2026-07-25 10:38:22
 status: wip
+bead_id: sase-9k
 ---
 
 # Plan: Make `%wait(priority=N)` effective, observable, and editable
