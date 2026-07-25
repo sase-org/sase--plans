@@ -62,7 +62,7 @@ phases:
     previously dead SASE_AGENT links resolve, and document outbox diagnostics and
     recovery.'
 create_time: 2026-07-24 19:41:49
-status: wip
+status: done
 bead_id: sase-91
 ---
 
