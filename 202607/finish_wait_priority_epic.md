@@ -7,7 +7,7 @@ goal: A published Rust scan binding carries explicit wait priority into ACE, the
 bead: sase-9k
 parent: sase/repos/plans/202607/wait_priority.md
 create_time: 2026-07-25 12:33:24
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_wait_priority_epic.md](prompts/finish_wait_priority_epic.md)
