@@ -4,7 +4,7 @@ title: Make plan-gate clipboard shortcuts copy the durable plan path and full co
 goal: Swap the plan review clipboard shortcuts so y copies the durable archived plan
   path and Y clearly copies every byte of the reviewed plan text.
 create_time: 2026-07-24 21:01:26
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_clipboard_keymaps.md](prompts/gate_clipboard_keymaps.md)
