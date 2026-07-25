@@ -5,7 +5,7 @@ goal: Answering or cancelling a SASE gate from any surface always dismisses that
   notification row, and rows whose bundle already reached a terminal state self-heal
   on the next notification-modal open.
 create_time: 2026-07-25 10:13:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_notification_dismissal.md](prompts/gate_notification_dismissal.md)
