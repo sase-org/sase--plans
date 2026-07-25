@@ -5,7 +5,7 @@ goal: Selecting a slot-waiting agent shows its admission rank, how many waiters 
   genuinely be admitted before it, and a compact ladder of the queue around it, all
   derived from the same ordered queue that assigns the rank.
 create_time: 2026-07-25 12:55:55
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queue_position_panel.md](prompts/queue_position_panel.md)
