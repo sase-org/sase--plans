@@ -43,7 +43,7 @@ phases:
     unclaimed live pre-launch agents, and document that claims are acquired best-effort
     and reconciled.'
 create_time: 2026-07-25 07:36:44
-status: wip
+status: done
 bead_id: sase-94
 ---
 
