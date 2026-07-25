@@ -44,6 +44,7 @@ phases:
     and reconciled.'
 create_time: 2026-07-25 07:36:44
 status: wip
+bead_id: sase-94
 ---
 
 # Plan: Claimed status survives the epic-graph publication lag
