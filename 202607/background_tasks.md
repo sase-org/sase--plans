@@ -76,6 +76,7 @@ phases:
     surfaces.'
 create_time: 2026-07-25 08:04:55
 status: wip
+bead_id: sase-95
 ---
 
 # Plan: `sase task` — durable, session-aware background tasks
