@@ -4,7 +4,7 @@ title: Move the Artifacts Chats sub-tab to third position
 goal: ACE shows Chats third in the Artifacts strip and maps every numeric navigation
   surface to the new order.
 create_time: 2026-07-25 06:35:16
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_chat_third.md](prompts/artifacts_chat_third.md)
