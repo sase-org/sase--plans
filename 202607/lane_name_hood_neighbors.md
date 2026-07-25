@@ -6,7 +6,7 @@ goal: An agent lane whose name equals another agent's hood is matched as a neigh
   keymap relate agent-family lanes to their dotted hood-mates exactly the way single-agent
   lanes already are.
 create_time: 2026-07-25 13:43:02
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/lane_name_hood_neighbors.md](prompts/lane_name_hood_neighbors.md)
