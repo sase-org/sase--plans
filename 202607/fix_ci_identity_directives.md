@@ -4,7 +4,7 @@ title: Restore sase-telegram CI after the SASE identity-directive migration
 goal: Telegram emits current SASE identity directives and its full lint and test suite
   passes.
 create_time: 2026-07-25 06:46:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_identity_directives.md](prompts/fix_ci_identity_directives.md)
