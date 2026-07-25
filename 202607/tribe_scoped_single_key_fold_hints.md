@@ -7,7 +7,7 @@ goal: 'On the Agents tab, `L` hints only the expandable/collapsable fold owners 
 
   '
 create_time: 2026-07-25 10:37:32
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_scoped_single_key_fold_hints.md](prompts/tribe_scoped_single_key_fold_hints.md)
