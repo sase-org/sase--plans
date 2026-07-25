@@ -115,6 +115,7 @@ parent_bead: sase-96
 parent: sase/repos/plans/202607/tmp_space_exhaustion.md
 create_time: 2026-07-25 14:15:04
 status: wip
+bead_id: sase-96.8
 ---
 
 # Plan: Close the remaining temp-scratch leaks sase-96 relocated but did not stop
