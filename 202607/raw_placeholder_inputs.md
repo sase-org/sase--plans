@@ -63,7 +63,7 @@ phases:
   description: '''Phase docs'' section: document the feature in ace.md/xprompt.md/configuration.md,
     update the ? help popup, and run the end-to-end verification checklist.'
 create_time: 2026-07-26 06:06:46
-status: wip
+status: done
 bead_id: sase-9q
 ---
 
