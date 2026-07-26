@@ -64,6 +64,7 @@ phases:
     update the ? help popup, and run the end-to-end verification checklist.'
 create_time: 2026-07-26 06:06:46
 status: wip
+bead_id: sase-9q
 ---
 
 # Plan: Raw `<placeholder>` tags become prompt input arguments
