@@ -98,6 +98,7 @@ phases:
     '
 create_time: 2026-07-26 06:48:19
 status: wip
+bead_id: sase-9r
 ---
 
 # Plan: Serialize bead-store writes with SDD sidecar integration
