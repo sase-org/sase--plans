@@ -129,6 +129,7 @@ phases:
     '
 create_time: 2026-07-26 11:32:00
 status: wip
+bead_id: sase-9v
 ---
 
 # Harden the bead subsystem against the verified gaps from the post-sase-9r/9s review
