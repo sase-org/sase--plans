@@ -1,0 +1,3 @@
+- **PLAN:** [../202607/bead_review_hardening.md](../bead_review_hardening.md)
+
+ Can you help me review all recent work (see recent related git commits and sase epic beads) we have done on sase beads and look for any objective improvements/simplifications you can make or bugs you can fix? If you find any, use your /sase_plan skill to plan out the necessary changes. Make sure you take the time to really understand how we use beads currently and what practical requirements we have of them.  
