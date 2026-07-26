@@ -4,7 +4,7 @@ title: Deprioritize epic-associated built-in xprompts
 goal: Agents launched through bd/land_epic and bd/next yield runner-slot admission
   to agents using the default priority.
 create_time: 2026-07-26 07:55:35
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/deprioritize_epic_agents.md](prompts/deprioritize_epic_agents.md)
