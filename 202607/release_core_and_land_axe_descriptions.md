@@ -9,7 +9,7 @@ goal: 'The published sase-core-rs release and the sase dependency window both co
 bead: sase-9t
 parent: sase/repos/plans/202607/axe_required_descriptions.md
 create_time: 2026-07-26 11:38:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/release_core_and_land_axe_descriptions.md](prompts/release_core_and_land_axe_descriptions.md)
