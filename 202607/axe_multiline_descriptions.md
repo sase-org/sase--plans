@@ -89,6 +89,7 @@ phases:
     '
 create_time: 2026-07-26 13:59:52
 status: wip
+bead_id: sase-9w
 ---
 
 # Plan: Multiline AXE descriptions with a collapsible description panel
