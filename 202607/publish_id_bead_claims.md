@@ -4,7 +4,7 @@ title: Publish `%id(bead=...)` claim transitions
 goal: Runner-owned bead claims and releases are promptly published to their Git remote
   without sacrificing local lifecycle state on push failure.
 create_time: 2026-07-26 10:24:27
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/publish_id_bead_claims.md](prompts/publish_id_bead_claims.md)
