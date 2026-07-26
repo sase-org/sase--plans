@@ -11,7 +11,7 @@ goal: 'Detached epic-launch task rows record which surface approved them (ace, t
 bead: sase-9s
 parent: sase/repos/plans/202607/detached_epic_launch.md
 create_time: 2026-07-26 10:43:48
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_launch_origin_and_land_sase9s.md](prompts/epic_launch_origin_and_land_sase9s.md)
