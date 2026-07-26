@@ -79,6 +79,7 @@ phases:
     one detached task per approval across every surface.'
 create_time: 2026-07-26 07:20:14
 status: wip
+bead_id: sase-9s
 ---
 
 # Plan: Detached background tasks and a single epic-launch path
