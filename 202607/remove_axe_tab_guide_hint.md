@@ -4,7 +4,7 @@ title: Remove the persistent AXE tab-guide hint
 goal: Remove the `,?  ]  tab guide` hint from the AXE tab header without changing
   AXE status information or Help/Guide access.
 create_time: 2026-07-26 11:01:51
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/remove_axe_tab_guide_hint.md](prompts/remove_axe_tab_guide_hint.md)
