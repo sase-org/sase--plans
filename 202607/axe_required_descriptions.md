@@ -78,6 +78,7 @@ phases:
     '
 create_time: 2026-07-26 08:53:13
 status: wip
+bead_id: sase-9t
 ---
 
 # Plan: Require descriptions for every AXE lumberjack and chop
