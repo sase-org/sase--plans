@@ -10,7 +10,7 @@ goal: 'The published sase-core-rs release and the sase dependency window both co
 bead: sase-9v
 parent: sase/repos/plans/202607/bead_review_hardening.md
 create_time: 2026-07-26 13:37:34
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/release_core_v0_11_and_land_sase_9v.md](prompts/release_core_v0_11_and_land_sase_9v.md)
