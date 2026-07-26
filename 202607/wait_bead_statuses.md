@@ -5,7 +5,7 @@ goal: The agent metadata panel's `Wait:` field renders a status badge beside eve
   bead id an agent is waiting for (a checkmark for closed beads), resolved off the
   event loop through a bounded TTL cache so the TUI stays responsive.
 create_time: 2026-07-26 09:04:50
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_bead_statuses.md](prompts/wait_bead_statuses.md)
