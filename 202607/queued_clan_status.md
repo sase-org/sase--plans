@@ -4,7 +4,7 @@ title: Show QUEUED for queued-and-waiting agent clans
 goal: Agent clans with queued work and no higher-priority member state display QUEUED
   while retaining distinct queued and waiting counts.
 create_time: 2026-07-26 07:52:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_clan_status.md](prompts/queued_clan_status.md)
