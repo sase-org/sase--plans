@@ -78,7 +78,7 @@ phases:
     approve a real epic plan with no TUI running and again from the TUI, and confirm
     one detached task per approval across every surface.'
 create_time: 2026-07-26 07:20:14
-status: wip
+status: done
 bead_id: sase-9s
 ---
 
