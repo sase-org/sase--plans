@@ -6,7 +6,7 @@ goal: NORMAL-mode K on a plain word in the prompt input opens a definition panel
   ones, powered by the optional dict and aspell CLI tools, with gated installation,
   sase doctor --deep reporting, and documentation.
 create_time: 2026-07-26 12:16:11
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_word_definitions_spellcheck.md](prompts/prompt_word_definitions_spellcheck.md)
