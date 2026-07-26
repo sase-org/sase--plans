@@ -10,7 +10,7 @@ goal: 'Make `ace.prompt_inputs.xprompt_placeholder_args: false` actually disable
 bead: sase-9q
 parent: sase/repos/plans/202607/raw_placeholder_inputs.md
 create_time: 2026-07-26 11:29:42
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_placeholder_args_toggle.md](prompts/xprompt_placeholder_args_toggle.md)
