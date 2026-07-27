@@ -4,7 +4,7 @@ title: Finish and land bead merge replay stability
 goal: Published SASE installs use the replay-stable bead merge implementation, and
   epic sase-9x is fully validated and landed.
 create_time: 2026-07-27 09:20:58
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_bead_merge_replay_stability.md](prompts/finish_bead_merge_replay_stability.md)
