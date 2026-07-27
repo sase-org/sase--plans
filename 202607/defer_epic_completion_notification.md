@@ -6,7 +6,7 @@ goal: A planner agent whose epic plan was approved sends its completion notifica
   moved from EPIC APPROVED to EPIC CREATED, and no completion notification is ever
   lost when nothing settles the launch.
 create_time: 2026-07-27 06:50:33
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/defer_epic_completion_notification.md](prompts/defer_epic_completion_notification.md)
