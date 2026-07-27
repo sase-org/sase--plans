@@ -38,6 +38,7 @@ parent_bead: sase-a4
 parent: plans:202607/ci_watch_liveness.md
 create_time: 2026-07-27 14:58:14
 status: wip
+bead_id: sase-a4.4
 ---
 
 # Finish and land the ci_watch liveness epic
