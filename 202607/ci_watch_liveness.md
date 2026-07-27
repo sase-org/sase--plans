@@ -32,6 +32,7 @@ phases:
     and errors drop to zero.'
 create_time: 2026-07-27 14:00:30
 status: wip
+bead_id: sase-a4
 ---
 
 # Plan: make ci_watch observable on high-cadence repositories
