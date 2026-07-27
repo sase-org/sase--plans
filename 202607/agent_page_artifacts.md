@@ -60,6 +60,7 @@ phases:
     '
 create_time: 2026-07-27 16:35:19
 status: wip
+bead_id: sase-a9
 ---
 
 # Plan: Agent sidecar pages link commits, neighbors, and output variables
