@@ -50,6 +50,7 @@ phases:
     '
 create_time: 2026-07-27 13:45:29
 status: wip
+bead_id: sase-a3
 ---
 
 # Plan: Make the bead dependency graph readable and editable
