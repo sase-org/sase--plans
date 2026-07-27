@@ -5,7 +5,7 @@ goal: sase bead list accepts -f/--format with compact (unchanged default), full 
   show detail per bead), and json (a stable machine-readable envelope), reusing one
   shared detail renderer with sase bead show and sase bead search.
 create_time: 2026-07-27 08:40:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_list_format_option.md](prompts/bead_list_format_option.md)
