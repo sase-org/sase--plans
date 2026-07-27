@@ -64,6 +64,7 @@ phases:
     '
 create_time: 2026-07-27 08:39:03
 status: wip
+bead_id: sase-9z
 ---
 
 # Plan: Make bead plan linkage durable with logical plans: references
