@@ -95,6 +95,7 @@ phases:
     the new sidecar.'
 create_time: 2026-07-27 14:42:01
 status: wip
+bead_id: sase-a8
 ---
 
 # Plan: Split bead state into a dedicated `beads` sidecar repository
