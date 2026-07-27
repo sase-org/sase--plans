@@ -5,7 +5,7 @@ goal: The sase_beads skill matches the current CLI contract, teaches the command
   agents actually use in practice (including close/open), and spends fewer tokens
   doing it; contract tests and deployed skill files stay in sync.
 create_time: 2026-07-27 09:39:12
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/beads_skill_accuracy_refresh.md](prompts/beads_skill_accuracy_refresh.md)
