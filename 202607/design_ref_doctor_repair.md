@@ -7,7 +7,7 @@ goal: Bead doctor reports broken, ambiguous, and mismatched plan links, an expli
 bead: sase-9z.5
 parent: sase/repos/plans/202607/durable_plan_refs.md
 create_time: 2026-07-27 10:02:51
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/design_ref_doctor_repair.md](prompts/design_ref_doctor_repair.md)
