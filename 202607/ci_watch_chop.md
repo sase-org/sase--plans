@@ -30,7 +30,7 @@ phases:
     lane in chezmoi, apply with chezmoi, refresh the installed bugyi-chops, and dry-run
     smoke test the chop.'
 create_time: 2026-07-27 12:51:08
-status: wip
+status: done
 bead_id: sase-a2
 ---
 
