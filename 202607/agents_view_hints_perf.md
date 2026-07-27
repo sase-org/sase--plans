@@ -69,6 +69,7 @@ phases:
     '
 create_time: 2026-07-27 14:21:10
 status: wip
+bead_id: sase-a5
 ---
 
 # Plan: Make Agents-tab `v` view hints load fast
