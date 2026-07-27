@@ -6,7 +6,7 @@ goal: Concurrent bead writers converge through multi-commit rebase replay withou
 bead: sase-9x.1
 parent: sase/repos/plans/202607/bead_merge_replay_stability.md
 create_time: 2026-07-27 06:42:12
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/replay_stable_bead_event_merge.md](prompts/replay_stable_bead_event_merge.md)
