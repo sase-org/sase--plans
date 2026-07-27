@@ -4,7 +4,7 @@ title: Fix the approved-epic plan-link race and launch the epic
 goal: Approved epic plan links are committed atomically, survive concurrent SDD recovery,
   and the beads-sidecar epic launches successfully.
 create_time: 2026-07-27 15:26:52
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_epic_plan_link_race.md](prompts/fix_epic_plan_link_race.md)
