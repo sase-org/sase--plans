@@ -6,7 +6,7 @@ goal: Pressing `q` (or `esc` / `g=`) in the ACE xprompt property panel always ha
   focus back to a visible prompt input pane from every panel mode, and `gj` / `gk`
   jump straight from the panel to the top / bottom prompt input pane.
 create_time: 2026-07-27 06:56:39
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/frontmatter_panel_exit.md](prompts/frontmatter_panel_exit.md)
