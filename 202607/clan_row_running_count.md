@@ -6,7 +6,7 @@ goal: A clan row's status chip buckets each member by the effective bucket its p
   coder counts as Done. The sase-9x clan row reads [R2 W2 D3], and clan chips reconcile
   with their enclosing tribe panel title.
 create_time: 2026-07-27 07:38:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_row_running_count.md](prompts/clan_row_running_count.md)
