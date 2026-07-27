@@ -6,7 +6,7 @@ goal: sase bead show accepts -f/--format with full (unchanged default), compact 
   resolved parent, children, dependency, blocker, and plan graph), with text and JSON
   rendered from one shared detail model so they cannot drift.
 create_time: 2026-07-27 10:42:29
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_show_format_option.md](prompts/bead_show_format_option.md)
