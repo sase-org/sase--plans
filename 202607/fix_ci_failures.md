@@ -50,6 +50,7 @@ phases:
     '
 create_time: 2026-07-27 12:01:22
 status: wip
+bead_id: sase-a0
 ---
 
 # Plan: Repair the three failing CI jobs on master
