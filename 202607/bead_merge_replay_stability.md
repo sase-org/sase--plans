@@ -57,6 +57,7 @@ phases:
     before it reaches a human as a merge conflict.'
 create_time: 2026-07-27 06:37:04
 status: wip
+bead_id: sase-9x
 ---
 
 # Plan: Make bead event-stream merges stable under rebase replay
