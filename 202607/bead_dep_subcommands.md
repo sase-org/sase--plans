@@ -49,7 +49,7 @@ phases:
 
     '
 create_time: 2026-07-27 13:45:29
-status: wip
+status: done
 bead_id: sase-a3
 ---
 
