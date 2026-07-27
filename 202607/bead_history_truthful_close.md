@@ -76,6 +76,7 @@ phases:
     '
 create_time: 2026-07-27 12:34:17
 status: wip
+bead_id: sase-a1
 ---
 
 # Plan: Expose bead history and make bead completion truthful
