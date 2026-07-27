@@ -31,6 +31,7 @@ phases:
     smoke test the chop.'
 create_time: 2026-07-27 12:51:08
 status: wip
+bead_id: sase-a2
 ---
 
 # Plan: ci_watch — an actstat-driven CI watch / release-merge lumberjack chop
