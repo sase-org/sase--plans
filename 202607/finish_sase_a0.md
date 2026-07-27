@@ -29,6 +29,7 @@ parent_bead: sase-a0
 parent: plans:202607/fix_ci_failures.md
 create_time: 2026-07-27 13:13:35
 status: wip
+bead_id: sase-a0.5
 ---
 
 # Finish and land `sase-a0` after the typed-resolution integration
