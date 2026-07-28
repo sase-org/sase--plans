@@ -59,7 +59,7 @@ phases:
     the CLI help/output about the header block so the new bullets read well everywhere
     they are shown.'
 create_time: 2026-07-28 09:48:54
-status: wip
+status: done
 bead_id: sase-ag
 ---
 
