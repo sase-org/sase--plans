@@ -12,8 +12,8 @@ status: done
 - **AGENTS:**
   - bbugyi200.athena.nn--code
 - **COMMITS:**
-  - [156a2d9](https://github.com/bbugyi200/bugyi-chops/commit/156a2d9fc1be8846854f95b7bd1e3f5251627183) — fix(ci-watch):
-    scope repair gate to ci_fix hood
+  - [b161e1c](https://github.com/bbugyi200/dotfiles/commit/b161e1c12798e4e1580460b148b2cdd119c918ea) — fix(sase):
+    idle-gate ci_watch fix launches
 
 # Fix ci_watch Fix-Proposal Starvation (Hood-Scoped Gate + Lane wait_runners)
 
