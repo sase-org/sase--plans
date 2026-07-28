@@ -44,6 +44,8 @@ status: wip
 bead_id: sase-ah
 ---
 
+- **PROMPT:** [202607/prompts/agent_publication_reliability.md](prompts/agent_publication_reliability.md)
+
 # Plan: Make post-commit agent publication survive sidecar commits and unpublishable hoods
 
 ## Goal

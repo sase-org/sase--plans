@@ -114,6 +114,8 @@ status: wip
 bead_id: sase-ai
 ---
 
+- **PROMPT:** [202607/prompts/bead_pages.md](prompts/bead_pages.md)
+
 # Plan: Published bead pages and the `SASE_BEAD` commit tag
 
 ## Goal
