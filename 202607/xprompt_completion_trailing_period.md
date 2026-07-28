@@ -7,6 +7,13 @@ goal:
   the reference — leaving the trailing punctuation intact.
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.n3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n3.md#member-code)
+  - [bbugyi200.athena.n3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n3.md#member-plan)
+- **COMMITS:**
+  - [ad3c751](https://github.com/sase-org/sase/commit/ad3c75151077382cc7f77fe67556b77bb875aadb) — — fix(xprompt):
+    preserve trailing punctuation in completion
+
 # Plan: Trigger xprompt completion when a `#` reference is followed by a period
 
 ## Problem
