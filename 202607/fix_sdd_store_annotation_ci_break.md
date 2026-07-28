@@ -6,7 +6,7 @@ goal:
   TYPE_CHECKING-only-name-in-a-runtime-annotation failure class impossible to reintroduce on any supported Python
   version.
 create_time: 2026-07-28 13:00:26
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_sdd_store_annotation_ci_break.md](prompts/fix_sdd_store_annotation_ci_break.md)
