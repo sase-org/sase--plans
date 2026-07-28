@@ -77,6 +77,7 @@ status: wip
 bead_id: sase-aj
 ---
 
+- **PROMPT:** [202607/prompts/beads_commit_consolidation.md](prompts/beads_commit_consolidation.md)
 - **BEAD:** [sase-aj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aj/README.md)
 
 # Plan: Consolidate beads sidecar commits
