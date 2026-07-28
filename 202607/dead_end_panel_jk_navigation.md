@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/dead_end_panel_jk_navigation.md](prompts/dead_end_panel_jk_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nc.md#member-code)
+  - [bbugyi200.athena.nc--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nc.md#member-plan)
+- **COMMITS:**
+  - [9cdfb37](https://github.com/sase-org/sase/commit/9cdfb378a43753436abac5a9c673f4efa8c60e51) — fix(ace): escape
+    dead-end panel row focus
 
 # Plan: j/k escapes a dead-end tribe panel
 
