@@ -10,6 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sidecar_infographic.md](prompts/agents_sidecar_infographic.md)
+- **AGENTS:**
+  - [bbugyi200.athena.n6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n6.md#member-code)
+  - [bbugyi200.athena.n6--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n6.md#member-plan)
+- **COMMITS:**
+  - [d4198f1](https://github.com/sase-org/sase/commit/d4198f1cc9b1e87b361fd80b6e0f99c94c5cec27) — feat: illustrate
+    agents sidecar lifecycle
 
 # Plan: Add the agents sidecar infographic
 
