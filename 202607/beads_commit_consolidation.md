@@ -74,7 +74,10 @@ phases:
     '
 create_time: 2026-07-28 16:21:28
 status: wip
+bead_id: sase-aj
 ---
+
+- **BEAD:** [sase-aj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aj/README.md)
 
 # Plan: Consolidate beads sidecar commits
 
