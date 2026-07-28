@@ -5,7 +5,7 @@ goal: The SLOW TOOL CALLS section keeps a compact one-line digest per call at fo
   level 1 and reveals the full, indented, line-wrapped command plus richer call facts
   from level 2 up, on both ordinary agent lanes and agent family containers.
 create_time: 2026-07-28 08:01:53
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fold_slow_tool_commands.md](prompts/fold_slow_tool_commands.md)
