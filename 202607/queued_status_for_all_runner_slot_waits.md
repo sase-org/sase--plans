@@ -11,6 +11,12 @@ status: done
 
 - **PROMPT:**
   [202607/prompts/queued_status_for_all_runner_slot_waits.md](prompts/queued_status_for_all_runner_slot_waits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nk--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nk.md#member-code)
+  - [bbugyi200.athena.nk--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nk.md#member-plan)
+- **COMMITS:**
+  - [d8c2f50](https://github.com/sase-org/sase/commit/d8c2f5019f58e957b34e124f735899dcadc3a307) — feat(agents): classify
+    all runner-slot waiters as queued
 
 # Plan: Use QUEUED for every runner-slot admission wait
 
