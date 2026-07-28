@@ -59,6 +59,7 @@ phases:
     '
 create_time: 2026-07-28 07:43:27
 status: wip
+bead_id: sase-ad
 ---
 
 # Plan: Repair agent-hood publication for family members and un-wedge the agents sidecar
