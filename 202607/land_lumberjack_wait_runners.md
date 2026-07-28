@@ -1,18 +1,22 @@
 ---
 tier: tale
 title: Integrate and land the lumberjack runner gate epic
-goal: The published core dependency is truthful, the lane-level runner gate remains
-  verified, and sase-af is closed with its durable plan marked done.
+goal:
+  The published core dependency is truthful, the lane-level runner gate remains verified, and sase-af is closed with its
+  durable plan marked done.
 bead: sase-af
 create_time: 2026-07-28 11:04:28
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_lumberjack_wait_runners.md](prompts/land_lumberjack_wait_runners.md)
-- **PARENT:** [202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--plans/blob/main/202607/lumberjack_wait_runners.md)
+- **PARENT:**
+  [202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--plans/blob/main/202607/lumberjack_wait_runners.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-af.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-code)
-  - [bbugyi200.athena.sase-af.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-plan)
+  - bbugyi200.athena.sase-af.land--code
+- **COMMITS:**
+  - [c4490ad](https://github.com/sase-org/sase--plans/commit/c4490ad955b194c70f9accc0ca659e1b1c64f003) — — docs(plan):
+    mark lumberjack wait-runners epic done (sase-af)
 
 # Plan: Integrate and land the lumberjack runner gate epic
 
