@@ -43,7 +43,10 @@ phases:
     sase/sase.yml, with unit tests locking the store shape.'
 create_time: 2026-07-28 18:05:46
 status: wip
+bead_id: sase-am
 ---
+
+- **BEAD:** [sase-am](https://github.com/sase-org/sase--beads/blob/main/pages/sase-am/README.md)
 
 # Redesign GitHub Actions CI to Eliminate Unnecessary Flakiness
 
