@@ -3,7 +3,7 @@ tier: tale
 title: Show queued-agent counts in the Telegram list summary
 goal: Telegram list overviews account for queued agents in both their status rollup and canonical section order.
 create_time: 2026-07-28 18:43:09
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_list_queued_count.md](prompts/telegram_list_queued_count.md)
