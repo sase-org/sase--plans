@@ -7,6 +7,13 @@ goal:
   every other optional field, and never leaks a peer phase."
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.n1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n1.md#member-code)
+  - [bbugyi200.athena.n1--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n1.md#member-plan)
+- **COMMITS:**
+  - [4dcb779](https://github.com/sase-org/sase/commit/4dcb77960eb8484913c531cd53e64914f3231f42) — — feat(ace): show
+    phase titles in BEAD context
+
 # Plan: Phase title in the SASE CONTEXT / BEAD lane
 
 ## Problem
