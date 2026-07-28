@@ -12,6 +12,9 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.n4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n4.md#member-code)
   - [bbugyi200.athena.n4--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n4.md#member-plan)
+- **COMMITS:**
+  - [18d0d92](https://github.com/sase-org/sase/commit/18d0d924179e250a32cd14f048fbce01f4acbe6f) — — fix(tui): preserve
+    active prompts on Ctrl+Space
 
 # Plan: Make Ctrl+Space inert while a prompt input bar is open
 
