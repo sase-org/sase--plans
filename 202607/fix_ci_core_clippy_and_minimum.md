@@ -25,7 +25,10 @@ phases:
     land the bump so master CI goes green.'
 create_time: 2026-07-28 17:36:55
 status: wip
+bead_id: sase-al
 ---
+
+- **BEAD:** [sase-al](https://github.com/sase-org/sase--beads/blob/main/pages/sase-al/README.md)
 
 # Fix GitHub Actions failures: sase-core clippy lints + published-core minimum smoke
 
