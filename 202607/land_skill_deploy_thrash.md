@@ -7,7 +7,7 @@ goal: The ABA revert that epic sase-ae was created to stop is blocked by an auto
 bead: sase-ae
 parent: plans:202607/skill_deploy_thrash.md
 create_time: 2026-07-28 10:04:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_skill_deploy_thrash.md](prompts/land_skill_deploy_thrash.md)
