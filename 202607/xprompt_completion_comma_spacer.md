@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_completion_comma_spacer.md](prompts/xprompt_completion_comma_spacer.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nh.md#member-code)
+  - [bbugyi200.athena.nh--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nh.md#member-plan)
+- **COMMITS:**
+  - [5568411](https://github.com/sase-org/sase/commit/5568411c9545b2c34bd112fb30f0d39afd4aacc2) — fix(tui): tighten
+    commas after xprompt completions
 
 # Plan
 
