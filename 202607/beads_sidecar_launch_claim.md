@@ -5,7 +5,7 @@ goal: Agents launched with a bead claim succeed on projects whose bead state liv
   in a dedicated beads sidecar repo, because the runner materializes the workspace's
   beads clone before opening the bead store.
 create_time: 2026-07-28 06:56:01
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/beads_sidecar_launch_claim.md](prompts/beads_sidecar_launch_claim.md)
