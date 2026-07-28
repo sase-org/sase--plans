@@ -43,6 +43,7 @@ phases:
     '
 create_time: 2026-07-28 08:54:03
 status: wip
+bead_id: sase-af
 ---
 
 # Plan: Lane-level runner-slot gating for AXE lumberjacks
