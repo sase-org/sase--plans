@@ -10,6 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_sdd_store_annotation_ci_break.md](prompts/fix_sdd_store_annotation_ci_break.md)
+- **AGENTS:**
+  - [bbugyi200.athena.n7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n7.md#member-code)
+  - [bbugyi200.athena.n7--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n7.md#member-plan)
+- **COMMITS:**
+  - [ee087a3](https://github.com/sase-org/sase/commit/ee087a3df01a59617c8a8650ee333b127c5393b3) — fix(sdd): defer
+    type-only annotations at runtime
 
 # Plan: Unbreak CI by making SDD store annotations lazy on Python 3.12
 
