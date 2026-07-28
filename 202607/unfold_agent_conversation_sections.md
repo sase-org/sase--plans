@@ -4,7 +4,7 @@ title: Keep Agent Conversation Sections Unfolded
 goal: Agent and agent-family xprompt, prompt, and reply sections always show full
   content and never participate in metadata folding.
 create_time: 2026-07-28 07:02:35
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/unfold_agent_conversation_sections.md](prompts/unfold_agent_conversation_sections.md)
