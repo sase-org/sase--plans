@@ -5,7 +5,7 @@ goal:
   Pressing Ctrl+Space while a prompt input bar is mounted no longer tears down the bar and wipes the in-progress prompt;
   the binding keeps working everywhere else.
 create_time: 2026-07-28 11:56:35
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_space_prompt_guard.md](prompts/ctrl_space_prompt_guard.md)
