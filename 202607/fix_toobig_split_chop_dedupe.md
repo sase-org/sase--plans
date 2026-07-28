@@ -54,6 +54,13 @@ bead_id: sase-7i
 ---
 
 - **PROMPT:** [202607/prompts/fix_toobig_split_chop_dedupe.md](prompts/fix_toobig_split_chop_dedupe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7d.1--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7d.1.md#member-1)
+  - [bbugyi200.athena.sase-7d.1--2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7d.1.md#member-2)
+  - [bbugyi200.athena.sase-7d.1--3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7d.1.md#member-3)
+  - [bbugyi200.athena.sase-7d.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7d.3/README.md)
+  - [bbugyi200.athena.sase-7d.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7d.5/README.md)
+  - [bbugyi200.athena.sase-7d.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7d.land/README.md)
 
 # Plan: Restore toobig_split chop relaunches after the script-only chop migration
 

@@ -4,12 +4,17 @@ title: Integrate capitalized snippet aliases into SASE catalogs and live saves
 goal: ACE, live saves, and the editor helper consume the shared Rust composer while
   preserving authored-source state, metadata, precedence, and event-loop responsiveness.
 bead: sase-8u.2
-parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 08:33:38
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_host_integration.md](prompts/capitalized_snippet_host_integration.md)
+- **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8u.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8u.2/README.md)
+  - [bbugyi200.athena.sase-8u.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.2.md#member-code)
+- **COMMITS:**
+  - [6e6b8d8](https://github.com/sase-org/sase/commit/6e6b8d85c3c4314d84ba5167c22a955bacf623fe) — feat: integrate core capitalized snippet aliases (sase-8u.2)
 
 # Plan: Integrate capitalized snippet aliases into SASE catalogs and live saves
 

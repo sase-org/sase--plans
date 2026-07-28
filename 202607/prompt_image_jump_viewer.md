@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_image_jump_viewer.md](prompts/prompt_image_jump_viewer.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cz/README.md)
+  - [bbugyi200.athena.cz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cz.md#member-code)
+- **COMMITS:**
+  - [64f5608](https://github.com/sase-org/sase/commit/64f560802da4f19a7acf916d3107f1cdc08e89c6) — feat(ace): view prompt jump images in terminal
 
 # Plan: Display prompt jump image targets in the terminal viewer
 

@@ -3,6 +3,10 @@ create_time: 2026-07-08 02:47:05
 status: done
 tier: tale
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.1s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1s.md#member-code)
+
 # Plan: Relaunch failed/waiting Fable epic-lander agents on Opus
 
 ## Problem

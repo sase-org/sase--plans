@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [eb94f95](https://github.com/sase-org/sase/commit/eb94f95420c077ff2aa4defbd506ad4ae7640f87) — feat: Add markdown output format to sase search
+
 # Plan: Add `markdown` format to `sase search -f|--format`
 
 ## Goal

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/linked_repo_finalizer_blindness.md](prompts/linked_repo_finalizer_blindness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.r--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.r.md#member-code)
 
 # Fix Linked-Repo Commit Finalizer Blindness + Recover q/p's Stashed sase-telegram Work
 

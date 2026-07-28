@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_search_cross_pane_navigation.md](prompts/prompt_search_cross_pane_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fg/README.md)
+  - [bbugyi200.athena.fg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fg.md#member-code)
+- **COMMITS:**
+  - [99e062e](https://github.com/sase-org/sase/commit/99e062ed21f26a61d682534cf6f44917d73bbc96) — feat(ace): navigate prompt searches across panes
 
 # Plan: Traverse Prompt Panes When Repeating Searches
 

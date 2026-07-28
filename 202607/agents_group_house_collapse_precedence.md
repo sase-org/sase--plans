@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_group_house_collapse_precedence.md](prompts/agents_group_house_collapse_precedence.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hk.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hk.f0.f0/README.md)
+  - [bbugyi200.athena.hk.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hk.f0.f0.md#member-code)
+- **COMMITS:**
+  - [1da3817](https://github.com/sase-org/sase/commit/1da3817eb72f994709f2d4147277134e3c36c73b) — fix(ace): collapse houses before agent groups
 
 # Plan: Prefer group-wide agent-house collapse before grouping collapse
 

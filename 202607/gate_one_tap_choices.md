@@ -55,6 +55,11 @@ bead_id: sase-6o
 ---
 
 - **PROMPT:** [202607/prompts/gate_one_tap_choices.md](prompts/gate_one_tap_choices.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6o](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6o/README.md)
+  - [bbugyi200.athena.sase-6o.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6o.2/README.md)
+  - [bbugyi200.athena.sase-6o.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6o.4/README.md)
+  - [bbugyi200.athena.sase-6o.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6o.5/README.md)
 
 # Plan: One-tap gate choices — collapse redundant plan-approval buttons
 

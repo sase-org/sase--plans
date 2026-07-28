@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_cross_surface_plan_approval_status.md](prompts/prompt_cross_surface_plan_approval_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ho](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ho/README.md)
+  - [bbugyi200.athena.ho--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ho.md#member-code)
+- **COMMITS:**
+  - [9f11060](https://github.com/sase-org/sase/commit/9f1106068caa951039966938424ade137a01e5a0) — fix(ace): reconcile cross-surface plan approval status
 
 # Plan: Prompt cross-surface plan approval status reconciliation
 

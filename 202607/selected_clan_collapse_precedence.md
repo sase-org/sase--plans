@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/selected_clan_collapse_precedence.md](prompts/selected_clan_collapse_precedence.md)
+- **AGENTS:**
+  - [bbugyi200.athena.my--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.my.md#member-code)
+  - [bbugyi200.athena.my--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.my.md#member-plan)
+- **COMMITS:**
+  - [a016706](https://github.com/sase-org/sase/commit/a016706a6118a9d5ce89e0ad817790a79d6d8fb1) — fix(ace): prioritize selected clan collapse
 
 # Plan: Collapse the selected agent clan before the rest of its grouping scope
 

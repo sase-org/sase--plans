@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_isolation_undo.md](prompts/tribe_panel_isolation_undo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fc/README.md)
+  - [bbugyi200.athena.fc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fc.md#member-code)
+- **COMMITS:**
+  - [c8d39dc](https://github.com/sase-org/sase/commit/c8d39dcd9be6197c9868e4b56191d6bb7b558efd) — feat(ace): restore panel layout after isolation
 
 # Plan: Tribe panel isolation undo (`H` solo toggle with revert)
 

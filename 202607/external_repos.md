@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/external_repos.md](prompts/external_repos.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5x.w0--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5x.w0.md#member-epic)
 
 # Plan: External Repos — `sase repo open` for Any Repo, Plus `/sase_repo` + `/sase_project` Skills
 

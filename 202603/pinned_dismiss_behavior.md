@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/pinned_dismiss_behavior.md](prompts/pinned_dismiss_behavior.md)
+- **COMMITS:**
+  - [70d6a31](https://github.com/sase-org/sase/commit/70d6a312cc26d02f785b4874c579c72d4cb16f5a) — feat: Make x unpin instead of dismiss for pinned agents
 
 # Plan: Pinned Agent Dismiss Behavior
 

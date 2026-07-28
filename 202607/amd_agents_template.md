@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/amd_agents_template.md](prompts/amd_agents_template.md)
+- **AGENTS:**
+  - [bbugyi200.athena.74](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.74/README.md)
+  - [bbugyi200.athena.74--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.74.md#member-code)
+- **COMMITS:**
+  - [ab0a559](https://github.com/sase-org/sase/commit/ab0a55920427b845eb14fa674239278dcf04843b) — feat(amd): support customizable agent templates
 
 # Plan: Extract the `sase memory init` AGENTS.md Skeleton into a Human-Editable Markdown Template
 

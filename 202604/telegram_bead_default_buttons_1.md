@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/telegram_bead_default_buttons_1.md](prompts/telegram_bead_default_buttons_1.md)
+- **COMMITS:**
+  - [56e3700](https://github.com/sase-org/sase/commit/56e3700499aff4b069834a38def9b2bb8e4b8a31) — chore(plans): mark telegram_bead_default_buttons_1 plan as done
 
 # Plan: Default `/bead` (no args) → Inline-Keyboard Picker of Open Beads
 

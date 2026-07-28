@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_epic_plan_link_race.md](prompts/fix_epic_plan_link_race.md)
+- **AGENTS:**
+  - [bbugyi200.athena.mj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mj/README.md)
+  - [bbugyi200.athena.mj--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mj.md#member-code)
+- **COMMITS:**
+  - [cfbac39](https://github.com/sase-org/sase/commit/cfbac3928a5039a06090e7e4cdf5ce2ef47ee862) — fix: make approved plan linking atomic
 
 # Fix the approved-epic plan-link race and launch the epic
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/coder_model_directive_override.md](prompts/coder_model_directive_override.md)
+- **COMMITS:**
+  - [b121123](https://github.com/sase-org/sase/commit/b1211236563e90afea81c1eb7328379eb8181175) — feat: Allow %m: in coder custom prompt to override inherited model
 
 # Plan: Allow `%m:` in Coder Custom Prompt Without Conflicting with Inherited Model
 

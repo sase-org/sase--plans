@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/companion_clone_dir_prefix_strip.md](prompts/companion_clone_dir_prefix_strip.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6s.f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6s.f-0/README.md)
+  - [bbugyi200.athena.6s.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6s.f-0.md#member-code)
+- **COMMITS:**
+  - [e1c2fd0](https://github.com/sase-org/sase/commit/e1c2fd0c40b97f836799698a496776bc43b40e9d) — feat\!: use fixed companion clone directory names
 
 # Strip the `<project>--` Prefix from Companion Repo Clone Directory Names
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/update_confirm_incoming_commits.md](prompts/update_confirm_incoming_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j.md#member-code)
 
 # Plan: Show All Incoming Commits in the Updates-Tab Update Confirm Modal
 

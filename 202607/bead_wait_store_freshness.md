@@ -6,6 +6,12 @@ goal: An agent parked on `%wait(bead=<id>)` starts within roughly a minute of th
   pull` in the primary workspace's plans clone.
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.la](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.la/README.md)
+  - [bbugyi200.athena.la--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.la.md#member-code)
+- **COMMITS:**
+  - [f429d11](https://github.com/sase-org/sase/commit/f429d118c2433f99522be4e6a7138aa071f5ea6e) — fix: refresh bead stores for active waiters
+
 # Plan: Refresh the canonical bead store so closed-bead waits release on their own
 
 ## Problem

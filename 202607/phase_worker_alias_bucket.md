@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/phase_worker_alias_bucket.md](prompts/phase_worker_alias_bucket.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy/README.md)
+  - [bbugyi200.athena.gy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.md#member-code)
+- **COMMITS:**
+  - [eb93169](https://github.com/sase-org/sase/commit/eb93169eb8874e70e01d17daf2709521627072fc) — feat\!: route phase workers through size aliases
 
 # Plan: Size-specific phase-worker model aliases
 

@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/editable_core_wheel_update.md](prompts/editable_core_wheel_update.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9h](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9h/README.md)
+  - [bbugyi200.athena.9h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9h.md#member-code)
+- **COMMITS:**
+  - [add1577](https://github.com/sase-org/sase/commit/add1577de51e02459bdb3ba67a72ca69207210da) — fix(update): upgrade core wheel with editable sources
 
 # Plan: Update managed SASE core inside editable installs
 

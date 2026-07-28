@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/repo_skill_web_fetch_loophole.md](prompts/repo_skill_web_fetch_loophole.md)
+- **AGENTS:**
+  - [bbugyi200.athena.research.b.cld.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.b.cld.f0/README.md)
+  - [bbugyi200.athena.research.b.cld.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.b.cld.f0.md#member-code)
+- **COMMITS:**
+  - [d6771fe](https://github.com/sase-org/sase/commit/d6771fe404545914ee60bef9026294b83d3276ec) — fix: require repo skill for repository web fetches
 
 # Close the web-fetch loophole in the `/sase_repo` repo-access rule
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_all_projects.md](prompts/vcs_log_all_projects.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4f.md#member-code)
 
 # Plan: Add all-project scope to `sase vcs log`
 

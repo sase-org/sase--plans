@@ -12,6 +12,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/fix_clan_wait_queued_members.md](prompts/fix_clan_wait_queued_members.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fy.md#member-code)
 
 # Plan: Count queued clan members in whole-clan wait resolution
 

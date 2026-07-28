@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_placeholder_completion.md](prompts/land_placeholder_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6b](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6b/README.md)
+  - [bbugyi200.athena.sase-6b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6b.md#member-code)
+- **COMMITS:**
+  - [9292e5b](https://github.com/sase-org/sase/commit/9292e5bf38eb93e9b7d2ae80316400d04bf52bae) — build(deps): require sase-core-rs 0.5.0 (sase-6b)
 
 # Plan: Land placeholder completion after the sase-core release
 

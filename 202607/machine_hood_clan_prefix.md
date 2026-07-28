@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_hood_clan_prefix.md](prompts/machine_hood_clan_prefix.md)
+- **AGENTS:**
+  - [bbugyi200.athena.iy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.iy/README.md)
+  - [bbugyi200.athena.iy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.iy.md#member-code)
+- **COMMITS:**
+  - [0d3955e](https://github.com/sase-org/sase/commit/0d3955e6c2e5e6493cd1c42c12da5f4ed92f4673) — fix(tui): normalize clan references across machine hoods
 
 # Hide the local machine hood on clan rows that contain a family
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/auto_commit_sdd_store.md](prompts/auto_commit_sdd_store.md)
+- **AGENTS:**
+  - [bbugyi200.athena.22--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.22.md#member-code)
 
 # Plan: Auto-commit & push the separate-repo SDD store (with finalizer fallback)
 

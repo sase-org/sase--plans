@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/confirm_todo_prompt_launch.md](prompts/confirm_todo_prompt_launch.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j4/README.md)
+  - [bbugyi200.athena.j4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j4.md#member-code)
+- **COMMITS:**
+  - [dc6ef5f](https://github.com/sase-org/sase/commit/dc6ef5fade7cf1410513b96c4011d1fc97fba3c0) — feat(ace): confirm launches containing TODO markers
 
 # Plan: Confirm prompt launches that still contain TODOs
 

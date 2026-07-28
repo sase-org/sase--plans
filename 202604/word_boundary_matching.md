@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/word_boundary_matching.md](prompts/word_boundary_matching.md)
+- **COMMITS:**
+  - [e3c3fa9](https://github.com/sase-org/sase/commit/e3c3fa93c5176e980956a1dc1cccfa3c5929eedb) — fix: Use word-boundary regex for dynamic memory keyword matching
 
 # Plan: Word-boundary matching for dynamic memory keywords
 

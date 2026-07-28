@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_silent_failed_agent_workspace_leak.md](prompts/fix_silent_failed_agent_workspace_leak.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7g](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7g/README.md)
+  - [bbugyi200.athena.7g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7g.md#member-code)
+- **COMMITS:**
+  - [836d738](https://github.com/sase-org/sase/commit/836d73818b0218403744da2ff32d3133679bf2fc) — fix: release failed workspaces without visible notifications
 
 # Fix: Silent Failed-Agent Workspace Holds Leak Claims Forever
 

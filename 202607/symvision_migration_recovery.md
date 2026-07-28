@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/symvision_migration_recovery.md](prompts/symvision_migration_recovery.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7e](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7e/README.md)
+  - [bbugyi200.athena.7e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7e.md#member-code)
+- **COMMITS:**
+  - [3d5fe9c](https://github.com/sase-org/sase/commit/3d5fe9c50a8e3d68f04bf1a5a033247e65f79c0a) — fix: complete Symvision migration recovery (sase-5t.5)
 
 # Recover and land the SASE pyvision → symvision migration
 

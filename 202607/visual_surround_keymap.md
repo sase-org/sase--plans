@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/visual_surround_keymap.md](prompts/visual_surround_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hg/README.md)
+  - [bbugyi200.athena.hg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hg.md#member-code)
+- **COMMITS:**
+  - [99d29be](https://github.com/sase-org/sase/commit/99d29be7594c410d8f9c8025c52b3da2ff4f69ef) — feat(vim): support visual surround selections
 
 # Plan: Add visual-mode `S` surround support
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/updates_subtab_keymaps.md](prompts/updates_subtab_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ft](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ft/README.md)
+  - [bbugyi200.athena.ft--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ft.md#member-code)
+- **COMMITS:**
+  - [6e0ad18](https://github.com/sase-org/sase/commit/6e0ad1830f66247437962c50a3fe5a583188c084) — fix(tui): preserve Updates sub-tab key dispatch
 
 # Plan: Restore Updates sub-tab bracket navigation
 

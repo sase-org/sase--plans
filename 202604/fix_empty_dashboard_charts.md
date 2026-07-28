@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_empty_dashboard_charts.md](prompts/fix_empty_dashboard_charts.md)
+- **COMMITS:**
+  - [661dcf7](https://github.com/sase-org/sase/commit/661dcf799d80d3c3cf1dc77917628e3ecd36b8ed) — fix: prevent empty dashboard charts from NaN values and narrow rate windows
 
 # Fix Empty Telemetry Dashboard Charts
 

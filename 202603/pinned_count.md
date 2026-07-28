@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/pinned_count.md](prompts/pinned_count.md)
+- **COMMITS:**
+  - [c99a448](https://github.com/sase-org/sase/commit/c99a448eb729237386b3be96cdb8c52028590fd3) — fix: Exclude workflow children from pinned panel and agents header counts
 
 # Plan: Exclude Workflow Steps from Agent/Pinned Panel Counts
 

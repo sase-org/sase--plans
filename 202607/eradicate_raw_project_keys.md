@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/eradicate_raw_project_keys.md](prompts/eradicate_raw_project_keys.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a.f1.md#member-code)
 
 # Plan: Eradicate Raw Project Directory Keys From Every User-Facing Surface
 

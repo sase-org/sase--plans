@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/repo_command_family.md](prompts/repo_command_family.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5w.f3--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5w.f3.md#member-epic)
 
 # Plan: The `sase repo` Command Family — list · log · open
 

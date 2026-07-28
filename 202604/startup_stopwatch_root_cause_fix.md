@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/startup_stopwatch_root_cause_fix.md](prompts/startup_stopwatch_root_cause_fix.md)
+- **COMMITS:**
+  - [b44f123](https://github.com/sase-org/sase/commit/b44f123c7a05d6257663d8f7e06554551e06c0d7) — fix: run startup axe init concurrently with agents refresh
 
 # Plan: Diagnose and Fix Startup Stopwatch Freezing at 0.2s
 

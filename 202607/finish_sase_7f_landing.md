@@ -11,6 +11,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_sase_7f_landing.md](prompts/finish_sase_7f_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7f.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7f.land.md#member-code)
 
 # Plan: Finish sase-7f traceability and landing
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_primary_footer.md](prompts/gate_primary_footer.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dd/README.md)
+  - [bbugyi200.athena.dd--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dd.md#member-code)
+- **COMMITS:**
+  - [6fd595d](https://github.com/sase-org/sase/commit/6fd595daac75ab88e60d84a041a3c8c52fb43f43) — feat(ace): label primary gate footer action
 
 # Plan: Gate primary action footer
 

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/race_free_epic_plan_snapshot.md](prompts/race_free_epic_plan_snapshot.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8i.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8i.2/README.md)
+  - [bbugyi200.athena.sase-8i.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.2.md#member-code)
+- **COMMITS:**
+  - [b825a0d](https://github.com/sase-org/sase/commit/b825a0db49967ac243be2721eef722b5612c10a9) — fix: snapshot epic plans before clan launch (sase-8i.2)
 
 # Plan: Race-free epic plan snapshot at launch creation
 

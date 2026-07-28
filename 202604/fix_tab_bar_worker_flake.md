@@ -3,6 +3,10 @@ create_time: 2026-04-24 15:52:36
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [73a0d57](https://github.com/sase-org/sase/commit/73a0d57b48d3c3b649fb31c550c0b6373e191e51) — fix(ace): guard \`\#tab-bar\` lookup in \`_finalize_agent_list\`
+
 # Fix `#tab-bar` WorkerFailed flake in `test_expect_state_passes`
 
 ## Problem

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/chat_install_restart.md](prompts/chat_install_restart.md)
+- **COMMITS:**
+  - [5760e2f](https://github.com/sase-org/sase/commit/5760e2f97d63a247a9a3c321f6805d72e3d4e8e7) — feat: add chat install worker
 
 # Chat Install / Restart Command Plan
 

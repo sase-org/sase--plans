@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/max_running_agents.md](prompts/max_running_agents.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7b--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7b.md#member-epic)
 
 # Plan: Global Cap on Concurrently Running Agents (`max_running_agents` + `%wait(runners=N)`)
 

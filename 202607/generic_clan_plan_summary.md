@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/generic_clan_plan_summary.md](prompts/generic_clan_plan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8d.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.2/README.md)
+  - [bbugyi200.athena.sase-8d.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.2.md#member-code)
+- **COMMITS:**
+  - [cc8f7a5](https://github.com/sase-org/sase/commit/cc8f7a50c26945cf0c3046b39098bc2e209d1ced) — feat: add generic clan plan summaries (sase-8d.2)
 
 # Plan: Generic clan plan summaries and script arguments
 

@@ -6,6 +6,9 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/projects_repos_workspaces_redesign.md](prompts/projects_repos_workspaces_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7q.w1--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.w1.md#member-epic)
+  - [bbugyi200.athena.7q.w1--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.w1.md#member-plan)
 
 # Plan: Redesign SASE Projects / Repos / Workspaces + Admin Center Projects Tab
 

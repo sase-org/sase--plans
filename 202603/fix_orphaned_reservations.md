@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_orphaned_reservations.md](prompts/fix_orphaned_reservations.md)
+- **COMMITS:**
+  - [813c97a](https://github.com/sase-org/sase/commit/813c97ad1c6d0d70bb481dd15e0ab3fa16471cc6) — fix: Clean up orphaned reservations when ChangeSpec creation fails
 
 # Fix Orphaned "Reserved" ChangeSpec Entries
 

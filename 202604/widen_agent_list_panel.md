@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/widen_agent_list_panel.md](prompts/widen_agent_list_panel.md)
+- **COMMITS:**
+  - [9f822ec](https://github.com/sase-org/sase/commit/9f822ec3c9fbcbb478961d4a158f1910ea1aa9ac) — feat: widen agent list panel max width to 110
 
 # Plan: Widen the `sase ace` Agents-tab Agent List Panel
 

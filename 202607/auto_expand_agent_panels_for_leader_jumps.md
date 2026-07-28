@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/auto_expand_agent_panels_for_leader_jumps.md](prompts/auto_expand_agent_panels_for_leader_jumps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.as.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.as.f0/README.md)
+  - [bbugyi200.athena.as.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.as.f0.md#member-code)
+- **COMMITS:**
+  - [9624746](https://github.com/sase-org/sase/commit/9624746a4948f0935eebe8778c89cb33ea6a660f) — feat(ace): auto-expand panels for agent jumps
 
 # Plan: Auto-expand collapsed agent panels for `,j` and `,J`
 

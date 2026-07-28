@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/markdown_pdf_attachment_limit.md](prompts/markdown_pdf_attachment_limit.md)
+- **COMMITS:**
+  - [4bc6419](https://github.com/sase-org/sase/commit/4bc6419f01bee3ab309dbf2f6ac2d9c81f3d8bf3) — fix: limit markdown PDF attachments
 
 # Plan: Limit Markdown PDF Attachments for Large Agent Edits
 

@@ -3,6 +3,10 @@ create_time: 2026-04-25 15:26:09
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [918aa51](https://github.com/sase-org/sase/commit/918aa51efe7e906f61808fc0786198e6a0c746a8) — feat: bind \`i\` to notifications and move \`mark_inactive\` to \`,I\`
+
 # Keymap swap: free `i` for inbox, move `mark_inactive` under leader mode
 
 ## Goal

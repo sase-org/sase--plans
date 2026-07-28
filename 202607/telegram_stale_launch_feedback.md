@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_stale_launch_feedback.md](prompts/telegram_stale_launch_feedback.md)
+- **AGENTS:**
+  - [bbugyi200.athena.n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n.md#member-code)
 
 # Plan: Fix Telegram Slash Commands Consumed by Stale Launch Feedback
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/provider_coder_alias_fallback.md](prompts/provider_coder_alias_fallback.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9.md#member-code)
 
 # Plan: Fix provider coder aliases so they inherit @coder
 

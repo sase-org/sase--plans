@@ -35,13 +35,15 @@ phases:
     stale child commit notes, close sase-8w, perform required post-close Symvision
     cleanup, and mark the original epic plan done.'
 parent_bead: sase-8w
-parent: sase/repos/plans/202607/phase_sizes.md
 create_time: 2026-07-23 19:12:58
 status: done
 bead_id: sase-8w.7
 ---
 
 - **PROMPT:** [202607/prompts/finish_phase_sizes.md](prompts/finish_phase_sizes.md)
+- **PARENT:** [202607/phase_sizes.md](https://github.com/sase-org/sase--plans/blob/main/202607/phase_sizes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 
 # Plan: Finish and land five-size epic phase support
 

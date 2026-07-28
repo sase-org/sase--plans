@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_family_row_icon.md](prompts/agent_family_row_icon.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d7.w1.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1.f1/README.md)
+  - [bbugyi200.athena.d7.w1.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.f1.md#member-code)
+- **COMMITS:**
+  - [4c20b1b](https://github.com/sase-org/sase/commit/4c20b1bdb1d62ceea0c52532cff6691e9c198b23) — feat(ace): distinguish agent family rows
 
 # Plan: Agent family row icon and a better clan icon
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_coder_model_inheritance.md](prompts/fix_coder_model_inheritance.md)
+- **COMMITS:**
+  - [1c3ef2f](https://github.com/sase-org/sase/commit/1c3ef2fe27b65f584dfa79716df910895feebc9f) — fix: Inherit model directive in coder/epic followup prompts
 
 # Fix: Coder agents not inheriting model from planner agents
 

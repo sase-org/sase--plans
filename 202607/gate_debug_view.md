@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_debug_view.md](prompts/gate_debug_view.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bu/README.md)
+  - [bbugyi200.athena.bu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bu.md#member-code)
+- **COMMITS:**
+  - [2cab7b0](https://github.com/sase-org/sase/commit/2cab7b07973b70291a6c923992968ec45243586e) — feat(ace): add gate debug view
 
 # Plan: Gate Debug view (`d`) for notification gate panels
 

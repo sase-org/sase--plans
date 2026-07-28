@@ -8,6 +8,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/agent_hole_status_counts.md](prompts/agent_hole_status_counts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ia.f1.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ia.f1.f0/README.md)
+  - [bbugyi200.athena.ia.f1.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ia.f1.f0.md#member-code)
+- **COMMITS:**
+  - [85aa33e](https://github.com/sase-org/sase/commit/85aa33e908bb7286d09ace4befb6c2f42666c382) — fix(ace): align status summaries with agent holes
 
 # Plan: Count agent holes in Agents-tab status summaries
 

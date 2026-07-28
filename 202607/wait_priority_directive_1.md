@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_priority_directive_1.md](prompts/wait_priority_directive_1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8c.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8c.2/README.md)
+  - [bbugyi200.athena.sase-8c.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8c.2.md#member-code)
+- **COMMITS:**
+  - [46c2f06](https://github.com/sase-org/sase/commit/46c2f0622a4998cf01e997a147df5c600ee1bae7) — feat: prioritize runner-slot wait admission (sase-8c.2)
 
 # Plan: Priority-aware `%wait` directive admission
 

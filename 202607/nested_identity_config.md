@@ -5,12 +5,17 @@ goal: Make the selected machine overlay the sole source of a validated per-user 
   identity, migrate legacy overlays safely, and require complete identity for new
   provenance.
 bead: sase-8v.2
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 14:13:21
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/nested_identity_config.md](prompts/nested_identity_config.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.2/README.md)
+  - [bbugyi200.athena.sase-8v.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.2.md#member-code)
+- **COMMITS:**
+  - [97230f1](https://github.com/sase-org/sase/commit/97230f1a2901308ea2c28d1079d561ab00670847) — feat(identity)\!: require nested owner configuration (sase-8v.2)
 
 # Nested identity config and initializer migration
 

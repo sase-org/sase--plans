@@ -6,6 +6,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/pyvision_markdown_pragmas.md](prompts/pyvision_markdown_pragmas.md)
+- **AGENTS:**
+  - [bbugyi200.athena.37--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.37.md#member-epic)
 
 # Plan: Replace Markdown pyvision Pragmas With Real Visibility Boundaries
 

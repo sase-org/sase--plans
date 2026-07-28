@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/commit_hooks.md](prompts/commit_hooks.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5c.md#member-code)
 
 # Plan: Before/After Commit Hooks
 

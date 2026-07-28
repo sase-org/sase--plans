@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/preserve_tribe_expansion_after_update.md](prompts/preserve_tribe_expansion_after_update.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g5/README.md)
+  - [bbugyi200.athena.g5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g5.md#member-code)
+- **COMMITS:**
+  - [ce12818](https://github.com/sase-org/sase/commit/ce128180aab455b120fe453155aa287fb4429834) — fix(tui): preserve tribe fold intent across updates
 
 # Preserve Agent Tribe Expansion Across TUI Updates
 

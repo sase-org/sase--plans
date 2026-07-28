@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_visual_e2e_prettier_hermeticity.md](prompts/fix_visual_e2e_prettier_hermeticity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5t.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5t.f-0.md#member-code)
 
 # Fix CI PNG snapshot failures: prettier-dependent prompt rendering + empty visual-artifact uploads
 

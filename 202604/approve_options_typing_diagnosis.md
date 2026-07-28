@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/approve_options_typing_diagnosis.md](prompts/approve_options_typing_diagnosis.md)
+- **COMMITS:**
+  - [bc8059d](https://github.com/sase-org/sase/commit/bc8059dcd4695f45b9b832a0015634422c0d2aee) — fix: Harden ApproveOptionsModal key event isolation
 
 # Fix: Cannot Type in ApproveOptionsModal TextArea (Root Cause Diagnosis)
 
@@ -43,7 +45,7 @@ I traced the complete key event pipeline in Textual 8.0.0:
 
 ### Theoretical conclusion
 
-With the TextArea focused, typing SHOULD work — TextArea.\_on_key inserts the character, stops the event, and no
+With the TextArea focused, typing SHOULD work — TextArea._on_key inserts the character, stops the event, and no
 app-level binding interferes thanks to modal truncation + check_consume_key filtering.
 
 **Yet the user reports typing doesn't work.** This means the failure is in an assumption, not the pipeline.
@@ -85,7 +87,7 @@ If any printable character is a custom mode prefix, it would be consumed at the 
 
 ### H4: The `_on_key` async override has a subtle runtime issue
 
-The `# type: ignore[override]` on `_PromptTextArea._on_key` suppresses a mypy error. While both TextArea.\_on_key and
+The `# type: ignore[override]` on `_PromptTextArea._on_key` suppresses a mypy error. While both TextArea._on_key and
 the override are async, there might be a subtle dispatch issue in how Textual's `_get_dispatch_methods` resolves the
 override chain.
 

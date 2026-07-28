@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/index_lock_retry_on_auto_commit.md](prompts/index_lock_retry_on_auto_commit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.23--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.23.md#member-code)
 
 # Plan: Recover from a locked git index during TUI auto-commits
 

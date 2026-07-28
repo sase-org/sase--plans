@@ -4,6 +4,9 @@ status: active
 tier: tale
 ---
 
+- **COMMITS:**
+  - [f552bdd](https://github.com/sase-org/sase/commit/f552bdd1b0fd41a3d9b19251b548961cd4000f20) — feat: extract file completion module, add rich UI, dotfile filtering, and drill-down
+
 # Improve File Completion: Extract Module, Rich UI, Dotfile Filtering, Drill-down
 
 ## Problem

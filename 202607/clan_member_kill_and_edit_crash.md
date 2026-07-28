@@ -8,6 +8,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/clan_member_kill_and_edit_crash.md](prompts/clan_member_kill_and_edit_crash.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ii](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ii/README.md)
+  - [bbugyi200.athena.ii--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ii.md#member-code)
+- **COMMITS:**
+  - [c05db01](https://github.com/sase-org/sase/commit/c05db016318c53f7394ad4a3f54fcd66221189e3) — fix(ace): preserve clan member name during kill and edit
 
 # Fix `sase ace` crash when killing-and-editing a clan member
 

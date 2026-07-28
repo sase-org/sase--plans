@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/ace_by_date_drop_name_root.md](prompts/ace_by_date_drop_name_root.md)
+- **COMMITS:**
+  - [aea91a5](https://github.com/sase-org/sase/commit/aea91a511a6e2a39adafa0a5ce176a95174c25f0) — feat(ace): flatten BY_DATE buckets and sort newest-first
 
 # Plan: `sase ace` "by date" grouping should not sub-group by base name
 

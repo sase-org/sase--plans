@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/enter_accepts_file_completion.md](prompts/enter_accepts_file_completion.md)
+- **COMMITS:**
+  - [feae4e3](https://github.com/sase-org/sase/commit/feae4e34b40931c0fcfa884ee6b919f4bf631440) — fix: Enter key accepts file completion instead of launching agent
 
 # Fix Enter Key to Accept File Completion Instead of Launching Agent
 

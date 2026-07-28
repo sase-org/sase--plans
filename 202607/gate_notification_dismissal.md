@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_notification_dismissal.md](prompts/gate_notification_dismissal.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ko](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ko/README.md)
+  - [bbugyi200.athena.ko--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ko.md#member-code)
+- **COMMITS:**
+  - [7f688d0](https://github.com/sase-org/sase/commit/7f688d070d0240af65bd82379d47bb4c69f356c6) — fix(notifications): dismiss settled gate notifications
 
 # Plan: Dismiss the gate notification whenever any client answers a gate
 

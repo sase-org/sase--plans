@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/help_guide_tab_content.md](prompts/help_guide_tab_content.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jg/README.md)
+  - [bbugyi200.athena.jg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jg.md#member-code)
+- **COMMITS:**
+  - [06338fc](https://github.com/sase-org/sase/commit/06338fc148dbad0297cf94fa90651680a72817a1) — feat(ace): clarify Help Guide tab content
 
 # Plan: Improve the Help panel Guide-tab content
 

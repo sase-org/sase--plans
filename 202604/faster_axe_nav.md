@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/faster_axe_nav.md](prompts/faster_axe_nav.md)
+- **COMMITS:**
+  - [8f72cc9](https://github.com/sase-org/sase/commit/8f72cc999bf24443ea1259d346036b14e87d8d07) — fix: Make \`sase ace\` Axe tab navigation responsive under j/k
 
 # Plan: Make Axe tab navigation in `sase ace` WAY faster
 

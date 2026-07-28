@@ -5,12 +5,17 @@ goal: A published Rust scan binding carries explicit wait priority into ACE, the
   documentation is integrated, and sase-9k closes only after release-backed verification
   and post-close cleanup.
 bead: sase-9k
-parent: sase/repos/plans/202607/wait_priority.md
 create_time: 2026-07-25 12:33:24
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_wait_priority_epic.md](prompts/finish_wait_priority_epic.md)
+- **PARENT:** [202607/wait_priority.md](https://github.com/sase-org/sase--plans/blob/main/202607/wait_priority.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9k.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9k.land/README.md)
+  - [bbugyi200.athena.sase-9k.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9k.land.md#member-code)
+- **COMMITS:**
+  - [4b9281d](https://github.com/sase-org/sase/commit/4b9281d3d7d92f0de8a03c8bdea802d28eea6901) — docs: document bounded runner-slot deference (sase-9k)
 
 # Plan: Finish integration and land wait-priority epic sase-9k
 

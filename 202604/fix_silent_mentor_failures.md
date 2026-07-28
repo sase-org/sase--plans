@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [ce941e2](https://github.com/sase-org/sase/commit/ce941e2bc169e6389fbcd534c7d2427185ea1305) — fix: add logging to silent mentor matching failure paths
+
 # Plan: Fix Silent Mentor Profile Matching Failures
 
 ## Problem

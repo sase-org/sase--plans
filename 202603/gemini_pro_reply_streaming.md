@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/gemini_pro_reply_streaming.md](prompts/gemini_pro_reply_streaming.md)
+- **COMMITS:**
+  - [eb593f1](https://github.com/sase-org/sase/commit/eb593f12ac0dffecaecfe99d013957de86e3f534) — fix: Show Gemini pro reply content via chat_path fallback and thinking placeholder
 
 # Fix Gemini gemini-3.1-pro-preview Agent Reply Streaming
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/neighbor_jump_container_expansion.md](prompts/neighbor_jump_container_expansion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e6.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e6.f1/README.md)
+  - [bbugyi200.athena.e6.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e6.f1.md#member-code)
+- **COMMITS:**
+  - [2267919](https://github.com/sase-org/sase/commit/2267919394eb8751bc9b7abd80a74326a5ce701e) — fix: reveal collapsed containers during agent jumps
 
 # Plan: Reveal neighbor jump target containers
 

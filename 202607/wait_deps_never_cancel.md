@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/wait_deps_never_cancel.md](prompts/wait_deps_never_cancel.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4o.md#member-code)
 
 # Waiting Agents Must Never Fail Because a Dependency Failed
 

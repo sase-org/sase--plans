@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/plan_review_g_G_scroll.md](prompts/plan_review_g_G_scroll.md)
+- **COMMITS:**
+  - [f9cfbdf](https://github.com/sase-org/sase/commit/f9cfbdfa4073f861d9cc766cc029dbfc4ab7d541) — feat: add g/G scroll-to-top/bottom bindings to plan review modal
 
 # Plan: `g` / `G` Scroll-to-Top / Scroll-to-Bottom in the Plan Review Panel
 

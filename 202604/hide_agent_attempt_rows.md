@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/hide_agent_attempt_rows.md](prompts/hide_agent_attempt_rows.md)
+- **COMMITS:**
+  - [e26841a](https://github.com/sase-org/sase/commit/e26841a212d9628fbb0e1d9ea5259de5cbfdf8a1) — fix: hide retry attempt rows in agent list
 
 # Hide Attempt Rows In Agents List
 

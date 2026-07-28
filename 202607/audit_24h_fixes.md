@@ -92,6 +92,16 @@ bead_id: sase-8g
 ---
 
 - **PROMPT:** [202607/prompts/audit_24h_fixes.md](prompts/audit_24h_fixes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.1.md#member-code)
+  - [bbugyi200.athena.sase-8g.10--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.10.md#member-code)
+  - [bbugyi200.athena.sase-8g.11--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.11.md#member-code)
+  - [bbugyi200.athena.sase-8g.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.2.md#member-code)
+  - [bbugyi200.athena.sase-8g.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.3.md#member-code)
+  - [bbugyi200.athena.sase-8g.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.5.md#member-code)
+  - [bbugyi200.athena.sase-8g.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.6.md#member-code)
+  - [bbugyi200.athena.sase-8g.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.7.md#member-code)
+  - [bbugyi200.athena.sase-8g.8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.8.md#member-code)
 
 # Plan: 24h log-audit bug sweep
 

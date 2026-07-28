@@ -5,12 +5,12 @@ goal: Persist every newly allocated local agent under the configured machine hoo
   while preserving legacy compatibility, bare local references and presentation, foreign-machine
   visibility, and machine-aware commit provenance.
 bead: sase-8k.3
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 12:24:52
 status: wip
 ---
 
 - **PROMPT:** [202607/prompts/machine_agent_hoods.md](prompts/machine_agent_hoods.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
 
 # Plan: Machine agent hoods end to end
 

@@ -11,6 +11,9 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/commits_single_line_timeline.md](prompts/commits_single_line_timeline.md)
+- **AGENTS:**
+  - [bbugyi200.athena.c4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c4/README.md)
+  - [bbugyi200.athena.c4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c4.md#member-code)
 
 # Plan: Concise single-line commit timeline
 

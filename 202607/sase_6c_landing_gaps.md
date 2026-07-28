@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_6c_landing_gaps.md](prompts/sase_6c_landing_gaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6c/README.md)
+  - [bbugyi200.athena.sase-6c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6c.md#member-code)
+- **COMMITS:**
+  - [b8b7d65](https://github.com/sase-org/sase/commit/b8b7d65e1a0bb39a59ec2385416b9c8cbf5400f6) — perf(tui): keep remaining maintenance off the message pump (sase-6c)
 
 # Plan: Finish and land the ACE TUI responsiveness epic
 

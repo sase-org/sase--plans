@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/tui_activity_tmp_race.md](prompts/tui_activity_tmp_race.md)
+- **COMMITS:**
+  - [252043b](https://github.com/sase-org/sase/commit/252043b183e8cf0f01cf9c834b8813d4ad32a12d) — fix: Prevent tmp-filename collisions in \`tui_activity\` atomic writers
 
 # Plan: Fix cross-process race in `tui_activity` atomic writes + isolate TUI tests from `~/.sase/`
 

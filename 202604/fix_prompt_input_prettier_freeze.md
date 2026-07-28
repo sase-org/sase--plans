@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [721fb23](https://github.com/sase-org/sase/commit/721fb23849ddcd31fde7735edee69e3d9f4a6938) — fix: avoid prompt input freeze during prettier auto-wrap
+
 # Fix: Prompt input freeze caused by synchronous prettier auto-wrap in INSERT mode
 
 ## Problem

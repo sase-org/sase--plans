@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/unified_plans_dir_tier.md](prompts/unified_plans_dir_tier.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5v.md#member-code)
 
 # Plan: Unify SDD `tales/` and `epics/` into a single `plans/` directory keyed by `tier` frontmatter
 

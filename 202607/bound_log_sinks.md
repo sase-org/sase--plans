@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bound_log_sinks.md](prompts/bound_log_sinks.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.10](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.10/README.md)
+  - [bbugyi200.athena.sase-8g.10--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.10.md#member-code)
+- **COMMITS:**
+  - [350af96](https://github.com/sase-org/sase/commit/350af961bfc203e823cf75ecd33b3ba6a9e0c742) — fix(logs): bound and harden persistent sinks (sase-8g.10)
 
 # Plan: Bound and harden SASE log sinks
 

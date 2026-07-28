@@ -4,12 +4,12 @@ title: Integrate the published core floor into SASE
 goal: Declare and validate the first published core wheel that fully satisfies SASE,
   synchronize dependency metadata, and close only sase-8u.4.2.
 bead: sase-8u.4.2
-parent: sase/repos/plans/202607/finish_capitalized_snippet_aliases.md
 create_time: 2026-07-23 10:16:33
 status: wip
 ---
 
 - **PROMPT:** [202607/prompts/published_core_integration.md](prompts/published_core_integration.md)
+- **PARENT:** [202607/finish_capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_capitalized_snippet_aliases.md)
 
 # Plan: Integrate the published core floor into SASE
 

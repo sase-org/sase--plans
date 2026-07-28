@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_wait_resolution.md](prompts/bead_wait_resolution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-87.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-87.3/README.md)
+  - [bbugyi200.athena.sase-87.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.3.md#member-code)
+- **COMMITS:**
+  - [a874efc](https://github.com/sase-org/sase/commit/a874efce376f5886da4795610aed55e24d769c8c) — feat: resolve waits gated by closed beads (sase-87.3)
 
 # Plan: Bead conditions in wait resolution (sase-87.3)
 

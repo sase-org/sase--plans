@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/dashboard_charts.md](prompts/dashboard_charts.md)
+- **COMMITS:**
+  - [212b73b](https://github.com/sase-org/sase/commit/212b73bcbeea615af42ad563eebab9d65d225bd3) — feat: Add historical charts mode to \`sase telemetry dashboard\`
 
 # Plan: Improve `sase telemetry dashboard` with Historical Charts
 

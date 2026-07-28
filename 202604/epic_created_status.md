@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/epic_created_status.md](prompts/epic_created_status.md)
+- **COMMITS:**
+  - [5b6d5bf](https://github.com/sase-org/sase/commit/5b6d5bf4161e491299120f42c3e5e643ac403cf8) — feat: add "EPIC CREATED" agent status for completed \`.epic\` follow-ups
 
 # Plan: Add "EPIC CREATED" Agent Status for Completed Epic-Creation Follow-ups
 

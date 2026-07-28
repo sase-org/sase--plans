@@ -33,6 +33,12 @@ status: done
 bead_id: sase-6j
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6j.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.1/README.md)
+  - [bbugyi200.athena.sase-6j.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.2/README.md)
+  - [bbugyi200.athena.sase-6j.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.3/README.md)
+  - [bbugyi200.athena.sase-6j.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.4/README.md)
+
 # Plan: Residual ACE TUI freeze elimination and sub-threshold stall observability
 
 ## Context and evidence

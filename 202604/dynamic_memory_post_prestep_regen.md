@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/dynamic_memory_post_prestep_regen.md](prompts/dynamic_memory_post_prestep_regen.md)
+- **COMMITS:**
+  - [0ccd67d](https://github.com/sase-org/sase/commit/0ccd67d8a1adce07783227a76d44cfd9416ef172) — fix: regenerate dynamic memory files after embedded-workflow pre-steps
 
 # Plan: Regenerate dynamic memory after embedded-workflow pre-steps
 

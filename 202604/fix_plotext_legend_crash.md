@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_plotext_legend_crash.md](prompts/fix_plotext_legend_crash.md)
+- **COMMITS:**
+  - [18551c6](https://github.com/sase-org/sase/commit/18551c6692516b29aed7612d24823f93f213ca50) — fix: Guard against plotext IndexError in telemetry dashboard charts mode
 
 # Fix: plotext IndexError in telemetry dashboard charts mode
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agent_panel_fold_scope.md](prompts/agent_panel_fold_scope.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8m/README.md)
+  - [bbugyi200.athena.8m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8m.md#member-code)
+- **COMMITS:**
+  - [81eca4e](https://github.com/sase-org/sase/commit/81eca4e6663478ea9d7cec34594d2ad43cc057c1) — fix(ace): scope group folds to agent panels
 
 # Fix Agents-Tab Group Folds Leaking Across Panels
 

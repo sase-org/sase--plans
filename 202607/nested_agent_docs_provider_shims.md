@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/nested_agent_docs_provider_shims.md](prompts/nested_agent_docs_provider_shims.md)
+- **AGENTS:**
+  - [bbugyi200.athena.v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.v.md#member-code)
 
 # Plan: Nested Agent Document Provider Shims
 

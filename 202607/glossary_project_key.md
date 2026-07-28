@@ -10,6 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/glossary_project_key.md](prompts/glossary_project_key.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a6/README.md)
+  - [bbugyi200.athena.a6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a6.md#member-code)
+- **COMMITS:**
+  - [7432331](https://github.com/sase-org/sase/commit/743233177c26e56948bc59ddab43550a1d615dbd) — docs: correct project glossary storage terminology
+  - [bc68696](https://github.com/sase-org/sase/commit/bc68696715826bdfef1817e22dc2c379f671362b) — chore: run sase init memory
 
 # Plan: Clarify project directory key vs project name in the glossary memory
 

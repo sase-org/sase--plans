@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [44868e4](https://github.com/sase-org/sase/commit/44868e4f17b4f7d360183dabca4f4ed30b60aeff) — ref: Optimize Agents tab refresh with caching and O(1) lookups
+
 # Make `sase ace` Agents Tab Much Faster (Pure Optimization)
 
 ## Problem Statement

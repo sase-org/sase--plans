@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_panel_bulk_cleanup.md](prompts/collapsed_panel_bulk_cleanup.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cv/README.md)
+  - [bbugyi200.athena.cv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cv.md#member-code)
+- **COMMITS:**
+  - [cd31c08](https://github.com/sase-org/sase/commit/cd31c083075dd2787525dc85c4872f928805a8cf) — feat(ace): clean up collapsed agent panels
 
 # Plan: Collapsed agent panel bulk cleanup
 

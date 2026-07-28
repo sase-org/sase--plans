@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/notification_panel_polish.md](prompts/notification_panel_polish.md)
+- **COMMITS:**
+  - [eb2ac51](https://github.com/sase-org/sase/commit/eb2ac51984bba3990abc2271cb35e2d0809f28e5) — feat: polish notification panel and indicator
 
 # Notification Panel Polish
 

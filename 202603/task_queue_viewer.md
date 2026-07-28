@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [ede301a](https://github.com/sase-org/sase/commit/ede301ad616b8e87400dc704c6caff7a3deba7c2) — feat: Add task queue viewer modal (,t)
+
 # Task Queue Viewer
 
 ## Problem

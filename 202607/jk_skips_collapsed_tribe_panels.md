@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/jk_skips_collapsed_tribe_panels.md](prompts/jk_skips_collapsed_tribe_panels.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ks](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ks/README.md)
+  - [bbugyi200.athena.ks--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ks.md#member-code)
+- **COMMITS:**
+  - [178f5d5](https://github.com/sase-org/sase/commit/178f5d53fd7228e8363cfd1ce7adf594bb6127ac) — fix(ace): skip collapsed tribe panels during jumps
 
 # `J` / `K` Skip Collapsed Tribe Panels on the Agents Tab
 

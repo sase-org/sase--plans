@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_agent_panel_summary.md](prompts/collapsed_agent_panel_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ce](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ce/README.md)
+  - [bbugyi200.athena.ce--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ce.md#member-code)
+- **COMMITS:**
+  - [328b3b5](https://github.com/sase-org/sase/commit/328b3b5208c5a005b1db105669769e29f27f7338) — feat(ace): summarize collapsed agent panels
 
 # Plan: Collapsed agent panel summary pane
 

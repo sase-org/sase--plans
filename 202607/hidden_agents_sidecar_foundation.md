@@ -5,12 +5,17 @@ goal: Every SASE-managed project has a configurable hidden agents sidecar that i
   explicitly accessible at one stable machine-level path without entering agent memory
   or workspace clones.
 bead: sase-8k.4
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 10:58:48
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/hidden_agents_sidecar_foundation.md](prompts/hidden_agents_sidecar_foundation.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.4/README.md)
+  - [bbugyi200.athena.sase-8k.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.4.md#member-code)
+- **COMMITS:**
+  - [ba0a3cd](https://github.com/sase-org/sase/commit/ba0a3cd92f02754effe0db0f647ff21c82b8b32f) — feat: add hidden agents sidecar foundation (sase-8k.4)
 
 # Plan: Hidden agents sidecar foundation
 

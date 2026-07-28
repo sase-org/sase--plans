@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_stale_dynamic_memory.md](prompts/fix_stale_dynamic_memory.md)
+- **COMMITS:**
+  - [ef56792](https://github.com/sase-org/sase/commit/ef5679287cff73b7e6c6d98fb29be2117a9b50d3) — fix: Clean up stale dynamic memory files and strip baked-in sections
 
 # Fix Stale Dynamic Memory Files
 

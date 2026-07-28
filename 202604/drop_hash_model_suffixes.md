@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/drop_hash_model_suffixes.md](prompts/drop_hash_model_suffixes.md)
+- **COMMITS:**
+  - [692a93f](https://github.com/sase-org/sase/commit/692a93fc7bc65b8bed0e6d3f9d9066f6580fd83f) — fix: resolve model shorthand for agent name suffixes
 
 # Drop `#` From Model Shorthand Agent Suffixes
 

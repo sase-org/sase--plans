@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/artifact_attachment_repo_attribution.md](prompts/artifact_attachment_repo_attribution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8c/README.md)
+  - [bbugyi200.athena.8c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8c.md#member-code)
+- **COMMITS:**
+  - [5bd4014](https://github.com/sase-org/sase/commit/5bd40142d85b2071e157343a15bf7f401503085e) — fix(artifacts): attribute attachments to commit repositories
 
 # Fix artifact attachment misattribution for commits made outside the primary workspace repo
 

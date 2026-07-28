@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/deltas_current_pr.md](prompts/deltas_current_pr.md)
+- **COMMITS:**
+  - [1412e7b](https://github.com/sase-org/sase/commit/1412e7b35e866a42b7a59a2104c05b393b4df8ec) — fix: compute DELTAS from current PR state
 
 # Plan: Make DELTAS Reflect Current PR State
 

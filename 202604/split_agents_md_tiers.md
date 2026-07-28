@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/split_agents_md_tiers.md](prompts/split_agents_md_tiers.md)
+- **COMMITS:**
+  - [22af05d](https://github.com/sase-org/sase/commit/22af05decfd3e87fef54339cb719e2e54d8a3ac6) — ref: Split AGENTS.md into always-loaded and on-demand tiers
 
 # Split AGENTS.md into Always-Loaded and On-Demand Tiers
 

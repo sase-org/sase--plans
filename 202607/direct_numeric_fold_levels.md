@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/direct_numeric_fold_levels.md](prompts/direct_numeric_fold_levels.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ed](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ed/README.md)
+  - [bbugyi200.athena.ed--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ed.md#member-code)
+- **COMMITS:**
+  - [9f6c8f1](https://github.com/sase-org/sase/commit/9f6c8f19fd1e428f24e1974647ccd4a37272a873) — feat(ace): add direct numeric fold levels
 
 # Plan: Direct numeric fold-level keymaps
 

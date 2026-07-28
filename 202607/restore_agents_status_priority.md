@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_agents_status_priority.md](prompts/restore_agents_status_priority.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dv/README.md)
+  - [bbugyi200.athena.dv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dv.md#member-code)
+- **COMMITS:**
+  - [ec9bdd0](https://github.com/sase-org/sase/commit/ec9bdd0471ae1dfe3c4eb0d12350be962ffb909e) — fix(ace): restore agent status bucket priority
 
 # Plan: Restore Agents status bucket priority
 

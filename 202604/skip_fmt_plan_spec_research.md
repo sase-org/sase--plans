@@ -8,6 +8,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/skip_fmt_plan_spec_research.md](prompts/skip_fmt_plan_spec_research.md)
+- **COMMITS:**
+  - [ccc893f](https://github.com/sase-org/sase/commit/ccc893f5456ece7dc50d374d73655a37377ca68c) — chore: Skip planning artifacts in prettier runs
 
 # Skip formatting plan/spec/research files in `just fmt`
 

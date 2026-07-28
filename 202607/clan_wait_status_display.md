@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_wait_status_display.md](prompts/clan_wait_status_display.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f8/README.md)
+  - [bbugyi200.athena.f8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f8.md#member-code)
+- **COMMITS:**
+  - [918e3b9](https://github.com/sase-org/sase/commit/918e3b9dda0a1b0c01fed86c27597358ac18a280) — feat(tui): show clan member status in wait metadata
 
 # Plan: Clan-aware `Wait:` field in the Agents-tab metadata panel
 

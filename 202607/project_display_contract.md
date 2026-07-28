@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/project_display_contract.md](prompts/project_display_contract.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-89.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.1/README.md)
+  - [bbugyi200.athena.sase-89.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.1.md#member-code)
+- **COMMITS:**
+  - [2efe42a](https://github.com/sase-org/sase/commit/2efe42a1583d70bd3f8c9ca56efd6c048fbb8957) — feat(projects): add immutable display snapshots (sase-89.1)
 
 # Plan: Establish the project identity and display projection contract
 

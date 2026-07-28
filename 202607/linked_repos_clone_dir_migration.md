@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/linked_repos_clone_dir_migration.md](prompts/linked_repos_clone_dir_migration.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6s/README.md)
+  - [bbugyi200.athena.6s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6s.md#member-code)
+- **COMMITS:**
+  - [df60999](https://github.com/sase-org/sase/commit/df60999b5b38ef1c94dcb247b66a52e744d6e4ad) — feat\!: isolate linked repository clones from companions
 
 # Migrate Normal Linked Repo Clones to `sase/repos/linked/` (with Launch-Time Clearing + Fast Restore Cache)
 

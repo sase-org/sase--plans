@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_duplicate_planner_round_chats.md](prompts/fix_duplicate_planner_round_chats.md)
+- **COMMITS:**
+  - [d00d753](https://github.com/sase-org/sase/commit/d00d7534c39dc7c3bb8f341360f3c1b9b54f8e87) — fix: Use round-specific suffix in planner/questions chat agent name
 
 # Plan: Fix Duplicate PLANNER (round 2+) Agent Reply in `sase ace` TUI
 

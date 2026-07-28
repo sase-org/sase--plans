@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/axe_status_badge.md](prompts/axe_status_badge.md)
+- **AGENTS:**
+  - [bbugyi200.athena.46--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.46.md#member-code)
 
 # Plan: Label the AXE Status Pill in the TUI Footer
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rust_backend_unimplemented_fallbacks.md](prompts/rust_backend_unimplemented_fallbacks.md)
+- **COMMITS:**
+  - [ab7a622](https://github.com/sase-org/sase/commit/ab7a622c12639d1dea4cf109d40f715b52c900cb) — fix: fall back to Python for unported Rust facades
 
 # Plan: make unported Rust backend facade methods fall back to Python
 

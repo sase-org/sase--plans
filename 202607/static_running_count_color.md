@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/static_running_count_color.md](prompts/static_running_count_color.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kc/README.md)
+  - [bbugyi200.athena.kc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kc.md#member-code)
+- **COMMITS:**
+  - [1892887](https://github.com/sase-org/sase/commit/18928870295811986d816146b9af5f4679ed91ca) — fix(ace): keep running count color stable
 
 # Plan
 

@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/preserve_launch_xprompt_metadata.md](prompts/preserve_launch_xprompt_metadata.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h9/README.md)
+  - [bbugyi200.athena.h9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h9.md#member-code)
+- **COMMITS:**
+  - [4df8b4e](https://github.com/sase-org/sase/commit/4df8b4e7c27fbda2ad5dbd9b146342627cf2206c) — fix: preserve launch xprompt metadata during deferred expansion
 
 # Plan: Preserve launch xprompt metadata across deferred expansion
 

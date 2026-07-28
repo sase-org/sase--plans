@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/underline_plan_title.md](prompts/underline_plan_title.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a4.w0.w0.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a4.w0.w0.f1/README.md)
+  - [bbugyi200.athena.a4.w0.w0.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a4.w0.w0.f1.md#member-code)
+- **COMMITS:**
+  - [42cadf4](https://github.com/sase-org/sase/commit/42cadf45175e65694650cbd03f010fa5bd20eae1) — feat(tui): underline available plan titles
 
 # Plan: Underline plan titles in agent metadata
 

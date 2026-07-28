@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/readme_best_practices.md](prompts/readme_best_practices.md)
+- **AGENTS:**
+  - [bbugyi200.athena.research.g.final.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.g.final.f0/README.md)
+  - [bbugyi200.athena.research.g.final.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.g.final.f0.md#member-code)
+- **COMMITS:**
+  - [094ee4a](https://github.com/sase-org/sase/commit/094ee4ab617c54e6308f212594d3cfec741ca69f) — docs: overhaul README and PyPI rendering
 
 # Plan: README best-practices overhaul
 

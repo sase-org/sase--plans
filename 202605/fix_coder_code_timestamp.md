@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/fix_coder_code_timestamp.md](prompts/fix_coder_code_timestamp.md)
+- **COMMITS:**
+  - [a7391fb](https://github.com/sase-org/sase/commit/a7391fbb760f1a97a9efb9a62a69583f9125f267) — fix: recognize coder follow-up suffixes
 
 # Fix Coder Suffix Timestamp Regression
 

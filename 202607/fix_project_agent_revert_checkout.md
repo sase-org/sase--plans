@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_project_agent_revert_checkout.md](prompts/fix_project_agent_revert_checkout.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8f/README.md)
+  - [bbugyi200.athena.8f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8f.md#member-code)
+- **COMMITS:**
+  - [fef304c](https://github.com/sase-org/sase/commit/fef304cfaa2c810b82e1acb842ca6c554a1562a9) — fix(ace): prepare project reverts on default branches
 
 # Fix: Agents-tab revert fails for project-scoped agents ("Could not check out branch '<project-name>'")
 

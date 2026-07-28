@@ -72,6 +72,11 @@ bead_id: sase-8y
 ---
 
 - **PROMPT:** [202607/prompts/claimed_bead_status.md](prompts/claimed_bead_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8y.land/README.md)
+  - [bbugyi200.athena.sase-8y.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8y.land.md#member-code)
+- **COMMITS:**
+  - [d0495f1](https://github.com/sase-org/sase/commit/d0495f1cba07b4706cc7696a1561d9fa0a0c3343) — fix: finish claimed status landing cleanup (sase-8y)
 
 # Plan: Claimed bead status for pre-launch agent reservations
 

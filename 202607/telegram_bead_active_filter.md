@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_bead_active_filter.md](prompts/telegram_bead_active_filter.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4n.md#member-code)
 
 # Keep Telegram `/bead` Results Active-Only
 

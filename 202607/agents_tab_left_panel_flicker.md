@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agents_tab_left_panel_flicker.md](prompts/agents_tab_left_panel_flicker.md)
+- **AGENTS:**
+  - [bbugyi200.athena.38.cld--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.38.cld.md#member-code)
 
 # Fix the Agents-tab left-panel flicker
 

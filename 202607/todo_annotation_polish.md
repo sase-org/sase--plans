@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_annotation_polish.md](prompts/todo_annotation_polish.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hz/README.md)
+  - [bbugyi200.athena.hz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hz.md#member-code)
+- **COMMITS:**
+  - [ac9fb40](https://github.com/sase-org/sase/commit/ac9fb4081c92e903639142c6d03c52a303c20375) — fix(tui): soften TODO annotation styling
 
 # Plan: Refine prompt-bar TODO draft-annotation styling
 

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_review_workbench.md](prompts/gate_review_workbench.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dd.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dd.f1/README.md)
+  - [bbugyi200.athena.dd.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dd.f1.md#member-code)
+- **COMMITS:**
+  - [0fa8b64](https://github.com/sase-org/sase/commit/0fa8b643ef3bc0367091c5d56c6be301f8a75564) — feat(tui): add responsive gate review workbench
 
 # Plan: Two-pane gate review workbench
 

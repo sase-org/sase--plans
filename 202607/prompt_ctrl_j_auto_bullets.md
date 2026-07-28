@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_ctrl_j_auto_bullets.md](prompts/prompt_ctrl_j_auto_bullets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j1/README.md)
+  - [bbugyi200.athena.j1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j1.md#member-code)
+- **COMMITS:**
+  - [2695bf7](https://github.com/sase-org/sase/commit/2695bf72af57c11f71b2110430c4468b8ac192c4) — feat(ace): continue prompt bullets on Ctrl+J
 
 # Auto-continue prompt bullets with insert-mode `Ctrl+J`
 

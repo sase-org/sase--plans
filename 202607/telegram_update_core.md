@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_update_core.md](prompts/telegram_update_core.md)
+- **AGENTS:**
+  - [bbugyi200.athena.16--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.16.md#member-code)
 
 # Fix Telegram `/update` Missing `sase-core` Dev Checkout Updates
 

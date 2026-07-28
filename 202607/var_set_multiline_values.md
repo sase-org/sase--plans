@@ -9,6 +9,9 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/var_set_multiline_values.md](prompts/var_set_multiline_values.md)
+- **AGENTS:**
+  - [bbugyi200.athena.n0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n0.md#member-code)
+  - [bbugyi200.athena.n0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n0.md#member-plan)
 
 # Plan: Accept Multi-Word and Multi-Line Values in `sase var set`
 

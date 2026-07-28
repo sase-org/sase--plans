@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [afee42c](https://github.com/sase-org/sase/commit/afee42c1b1309580055ca8b061c5b7a2d30258e1) — fix: Surface commit metadata in TUI when \#commit xprompt is not embedded
+
 # Plan: Fix missing "Commit Message:" in TUI when #commit xprompt is not embedded
 
 ## Problem

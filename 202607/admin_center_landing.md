@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/admin_center_landing.md](prompts/admin_center_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gc/README.md)
+  - [bbugyi200.athena.gc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gc.md#member-code)
+- **COMMITS:**
+  - [605fbeb](https://github.com/sase-org/sase/commit/605fbebd1064af07a5f92320393fa5efddfd687f) — feat(ace): add lazy Admin Center landing page
 
 # Plan: Fast SASE Admin Center landing page
 

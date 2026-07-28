@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rewind_bang_skip_diff_validation.md](prompts/rewind_bang_skip_diff_validation.md)
+- **COMMITS:**
+  - [25409da](https://github.com/sase-org/sase/commit/25409dacc990957ce8b8da645a57357c53ba05ee) — fix: Skip DIFF path validation for rewind \`\!\` (bookkeeping-only) mode
 
 # Plan: Skip DIFF path validation when rewind `!` suffix is used
 

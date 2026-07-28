@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/workspace_local_core_fallback.md](prompts/workspace_local_core_fallback.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8v/README.md)
+  - [bbugyi200.athena.8v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8v.md#member-code)
+- **COMMITS:**
+  - [1114961](https://github.com/sase-org/sase/commit/1114961b46c4374c6d9c291cce0a1b8aab79b638) — build: prefer workspace-local sase-core checkout
 
 # Plan: Prefer the Workspace-Local Rust Core Checkout
 

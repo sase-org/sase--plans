@@ -98,6 +98,29 @@ bead_id: sase-8k
 ---
 
 - **PROMPT:** [202607/prompts/agents_sidecar_repo.md](prompts/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.1/README.md)
+  - [bbugyi200.athena.sase-8k.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.1.md#member-code)
+  - [bbugyi200.athena.sase-8k.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.3/README.md)
+  - [bbugyi200.athena.sase-8k.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.3.md#member-code)
+  - [bbugyi200.athena.sase-8k.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.4/README.md)
+  - [bbugyi200.athena.sase-8k.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.4.md#member-code)
+  - [bbugyi200.athena.sase-8k.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.5/README.md)
+  - [bbugyi200.athena.sase-8k.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.5.md#member-code)
+  - [bbugyi200.athena.sase-8k.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.6/README.md)
+  - [bbugyi200.athena.sase-8k.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.6.md#member-code)
+  - [bbugyi200.athena.sase-8k.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.7/README.md)
+  - [bbugyi200.athena.sase-8k.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.7.md#member-code)
+  - [bbugyi200.athena.sase-8k.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.land/README.md)
+  - [bbugyi200.athena.sase-8k.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.land.md#member-code)
+- **COMMITS:**
+  - [770ad01](https://github.com/sase-org/sase/commit/770ad01ab111e5454d375ec786a1e60cb64c775d) — feat(config)\!: add machine identity initialization (sase-8k.1)
+  - [ba0a3cd](https://github.com/sase-org/sase/commit/ba0a3cd92f02754effe0db0f647ff21c82b8b32f) — feat: add hidden agents sidecar foundation (sase-8k.4)
+  - [44ccbe8](https://github.com/sase-org/sase/commit/44ccbe84c7c23d1ad21433b428235dc37493072e) — feat(repo-init): initialize agents sidecars with explicit consent (sase-8k.5)
+  - [e828aa9](https://github.com/sase-org/sase/commit/e828aa927e3dff3c3c4f1f4539a3c8c5201ea83e) — feat: add machine-qualified agent hoods (sase-8k.3)
+  - [58d1ca2](https://github.com/sase-org/sase/commit/58d1ca2da51df1bcd9bdc2464503985de59a416c) — feat(agents): add completed agent sync engine (sase-8k.6)
+  - [a075c01](https://github.com/sase-org/sase/commit/a075c014fd5faed7f6c7556fca7d4db51286b891) — feat(ace): surface agents repository sync status (sase-8k.7)
+  - [61395b8](https://github.com/sase-org/sase/commit/61395b8ab1fa2f2de8158f677abd2ae9017d4b6d) — fix(agents): normalize machine-hood presentation (sase-8k)
 
 # Plan: Hidden agents sidecar repo with machine agent hoods
 

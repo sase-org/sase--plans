@@ -3,6 +3,10 @@ create_time: 2026-04-25 21:51:39
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [2304ca4](https://github.com/sase-org/sase/commit/2304ca4f77ddd3e9118910031baa2d418c87c613) — feat: default agent-tag modal to \`pinned\` for untagged agents
+
 # Plan: Default `N`-keymap tag-input value to `pinned`
 
 ## Problem

@@ -4,12 +4,17 @@ title: Side-effect-free AXE host status snapshot
 goal: Python collects one deterministic read-only AXE host snapshot, classifies it
   through the shared Rust contract, and keeps deep doctor in health parity.
 bead: sase-8t.2
-parent: sase/repos/plans/202607/axe_status.md
 create_time: 2026-07-23 08:09:06
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_status_snapshot.md](prompts/axe_status_snapshot.md)
+- **PARENT:** [202607/axe_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8t.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.2/README.md)
+  - [bbugyi200.athena.sase-8t.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.2.md#member-code)
+- **COMMITS:**
+  - [0689333](https://github.com/sase-org/sase/commit/0689333f778ad10c96e2fe82a03076b3c3f7e752) — feat(axe): add side-effect-free status snapshots (sase-8t.2)
 
 # Implement the side-effect-free AXE host status snapshot
 

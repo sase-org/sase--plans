@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/pylimit_split_for_loop_resilience.md](prompts/pylimit_split_for_loop_resilience.md)
+- **COMMITS:**
+  - [9e77b6c](https://github.com/sase-org/sase/commit/9e77b6c41e38bb34369fd4cd400a75b100ff2b00) — fix: make \`for:\` loops resilient to per-iteration failure
 
 # Fix `sase_pylimit_split` chop spawning fewer agents than expected per run
 

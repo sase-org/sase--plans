@@ -11,6 +11,13 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_house_glossary.md](prompts/agent_house_glossary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e2/README.md)
+  - [bbugyi200.athena.e2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e2.md#member-code)
+  - [bbugyi200.athena.e2--code-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e2.md#member-code-0)
+- **COMMITS:**
+  - [97c0bf6](https://github.com/sase-org/sase/commit/97c0bf6ad22fa5eec06705bfc9d533525d299cc8) — docs: define agent house in glossary
+  - [8970fba](https://github.com/sase-org/sase/commit/8970fbaab7987f1ad1330844f4fb1fa39496fa88) — revert: undo stale memory initialization output
 
 # Plan: Add "Agent House" term to the SASE glossary
 

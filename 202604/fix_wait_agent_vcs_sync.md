@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_wait_agent_vcs_sync.md](prompts/fix_wait_agent_vcs_sync.md)
+- **COMMITS:**
+  - [4348698](https://github.com/sase-org/sase/commit/43486981473bd562b39e86544e4e07c4c2e2dc72) — fix: prepare deferred wait workspaces after claim
 
 # Plan: Prepare Deferred Workspaces After `%wait`
 

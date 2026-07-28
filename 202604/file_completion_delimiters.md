@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/file_completion_delimiters.md](prompts/file_completion_delimiters.md)
+- **COMMITS:**
+  - [a68e5a1](https://github.com/sase-org/sase/commit/a68e5a1051fd275781501f8b25e52d80dc275175) — fix: Expand file completion token delimiters to include punctuation
 
 # Plan: Fix file completion token extraction near special characters
 

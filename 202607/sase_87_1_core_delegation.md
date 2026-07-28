@@ -9,6 +9,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_87_1_core_delegation.md](prompts/sase_87_1_core_delegation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-87.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.1.md#member-code)
 
 # Plan: Core delegated-phase closure and scheduling
 

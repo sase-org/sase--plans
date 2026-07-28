@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_prometheus_metrics.md](prompts/fix_prometheus_metrics.md)
+- **COMMITS:**
+  - [fa43e95](https://github.com/sase-org/sase/commit/fa43e95db73a137350ef5a09feefed6e0794b59f) — fix: Resolve pushgateway group key collisions causing metrics loss
 
 # Fix Prometheus Metrics Tracking and Display for Agent Invocations
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/linked_repo_pencil_badge.md](prompts/linked_repo_pencil_badge.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0q.md#member-code)
 
 # Linked Repo Pencil Badge Plan
 

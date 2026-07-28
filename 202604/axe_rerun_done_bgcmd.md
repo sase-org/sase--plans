@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/axe_rerun_done_bgcmd.md](prompts/axe_rerun_done_bgcmd.md)
+- **COMMITS:**
+  - [4672cda](https://github.com/sase-org/sase/commit/4672cdad1ae0e5503b90bf8591e2bd3844b0d1ee) — feat: Add \`r\` re-run affordance for done bgcmds on the AXE tab
 
 # Plan: `r` Re-run Keymap for Done Commands on AXE Tab
 

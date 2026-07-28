@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/sort_subcommands.md](prompts/sort_subcommands.md)
+- **COMMITS:**
+  - [7043437](https://github.com/sase-org/sase/commit/704343730fcf513218ebe9e022117e26b768edef) — ref: Sort subcommands alphabetically in --help output
 
 # Plan: Sort Subcommands in --help Output
 

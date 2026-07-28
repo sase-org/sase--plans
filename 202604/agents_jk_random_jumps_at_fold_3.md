@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_jk_random_jumps_at_fold_3.md](prompts/agents_jk_random_jumps_at_fold_3.md)
+- **COMMITS:**
+  - [8a7f34b](https://github.com/sase-org/sase/commit/8a7f34be6ea9f949f2eb5905173a9175fbe5170d) — fix: walk visible grouping order for j/k at fold level 3
 
 # `sase ace` Agents tab: `j`/`k` jumps to random rows at fold level 3 once nested groups exist
 

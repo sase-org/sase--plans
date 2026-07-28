@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_just_workflow_1.md](prompts/fix_just_workflow_1.md)
+- **COMMITS:**
+  - [5c1ad1a](https://github.com/sase-org/sase/commit/5c1ad1a6370215e578830253eb55b92026991498) — fix: Improve bash step error reporting and fix_fmt robustness
 
 # Plan: Fix `#sase/fix_just` Workflow `fix_fmt` Step Failure
 

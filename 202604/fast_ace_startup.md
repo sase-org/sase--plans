@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fast_ace_startup.md](prompts/fast_ace_startup.md)
+- **COMMITS:**
+  - [0084f22](https://github.com/sase-org/sase/commit/0084f228a30f66912e3e1a0580aa7e95b9b20495) — perf: Speed up \`sase ace\` startup with async agent/axe loads
 
 # Fast `sase ace` TUI Startup
 
@@ -172,7 +174,7 @@ under 1s. The 3.5s of actual disk work still happens but is invisible — the TU
 
 ### Rollback
 
-Phase 2 changes are larger but still localized to the startup path. Each of (i) deferring \_load_agents, (ii) deferring
+Phase 2 changes are larger but still localized to the startup path. Each of (i) deferring _load_agents, (ii) deferring
 axe status, (iii) loading-indicator UI is a separate commit and revertable independently.
 
 ## Phase 3 — Reduce Redundant Disk Work Inside a Single Load

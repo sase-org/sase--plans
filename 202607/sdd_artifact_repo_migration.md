@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sdd_artifact_repo_migration.md](prompts/sdd_artifact_repo_migration.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3e.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3e.f1.md#member-code)
 
 # Plan: Move bob-cli and actstat SDD Artifacts to Companion Repos
 

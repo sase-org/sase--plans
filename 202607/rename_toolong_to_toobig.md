@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/rename_toolong_to_toobig.md](prompts/rename_toolong_to_toobig.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7a](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7a/README.md)
+  - [bbugyi200.athena.7a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7a.md#member-code)
+- **COMMITS:**
+  - [a66dc39](https://github.com/sase-org/sase/commit/a66dc398a401c0726b8309a9b3d235fb6a6661d3) — fix: migrate lint integration to toobig
 
 # Rename toolong → toobig (PyPI, GitHub repo, project dir, sase integration)
 

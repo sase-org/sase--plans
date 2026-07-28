@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/edit_directive.md](prompts/edit_directive.md)
+- **COMMITS:**
+  - [442380f](https://github.com/sase-org/sase/commit/442380f83ee949de90f6e5fce0f96e4a7f363e37) — feat: Add %edit (%e) directive to return editor text to prompt bar
 
 # Plan: `%edit` (`%e`) Directive
 

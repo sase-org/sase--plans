@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/changespec_suffix_match.md](prompts/changespec_suffix_match.md)
+- **COMMITS:**
+  - [c2910d3](https://github.com/sase-org/sase/commit/c2910d39bf43610ec06d5bbe8650ac1e1f58a811) — fix(tui): use fuzzy matching for ChangeSpec name lookups after suffix rename
 
 # Plan: Fix ChangeSpec suffix mismatch in TUI keymaps
 

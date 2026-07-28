@@ -4,6 +4,10 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [bae9429](https://github.com/sase-org/sase/commit/bae9429627c52814f3e0a8dda7c4feb328d3a229) — commit_message.md
+  - [1145bf6](https://github.com/sase-org/sase/commit/1145bf649c2ad13a1ceed7f418272c7333189d84) — commit_message.md
+
 # Fix: TIMESTAMPS field not showing in sase ace TUI (hybrid format gap)
 
 ## Problem

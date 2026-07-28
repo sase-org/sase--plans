@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_agent_counts.md](prompts/queued_agent_counts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jq.f0.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq.f0.f1/README.md)
+  - [bbugyi200.athena.jq.f0.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.f0.f1.md#member-code)
+- **COMMITS:**
+  - [ca348d7](https://github.com/sase-org/sase/commit/ca348d7034c1887b600464b913d8b29cba304ef9) — feat(ace): show globally queued agent counts
 
 # Distinguish and scope queued-agent counts in the Agents tab
 

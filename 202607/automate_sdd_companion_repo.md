@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/automate_sdd_companion_repo.md](prompts/automate_sdd_companion_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.33--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.33.md#member-code)
 
 # Plan: Automate creation of the `<project>--sdd` GitHub companion repository
 

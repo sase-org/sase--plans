@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rust_install_venv_path.md](prompts/rust_install_venv_path.md)
+- **COMMITS:**
+  - [5d2fc11](https://github.com/sase-org/sase/commit/5d2fc117df3db15694ef6329db1be75f3656d7ec) — fix: use repo venv for rust install
 
 # Plan: Fix `just rust-install` venv path handling
 

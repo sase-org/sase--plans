@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_agent_panels_last.md](prompts/collapsed_agent_panels_last.md)
+- **AGENTS:**
+  - [bbugyi200.athena.af](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.af/README.md)
+  - [bbugyi200.athena.af--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.af.md#member-code)
+- **COMMITS:**
+  - [c08a434](https://github.com/sase-org/sase/commit/c08a43458d712f78f2008113044ffef2df6b47b3) — fix(ace): keep collapsed agent panels last
 
 # Plan: Sort Collapsed Agents-Tab Panels Last
 

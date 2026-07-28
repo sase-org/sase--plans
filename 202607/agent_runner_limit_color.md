@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_runner_limit_color.md](prompts/agent_runner_limit_color.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jq.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq.f0/README.md)
+  - [bbugyi200.athena.jq.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.f0.md#member-code)
+- **COMMITS:**
+  - [f943218](https://github.com/sase-org/sase/commit/f943218ef38a0eb9a42f7630ddec8ff3f4624394) — fix(tui): highlight agent runner limit
 
 # Plan: Give the Agents-header runner limit a distinct semantic color
 

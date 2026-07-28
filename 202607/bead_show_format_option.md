@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_show_format_option.md](prompts/bead_show_format_option.md)
+- **AGENTS:**
+  - [bbugyi200.athena.m9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m9/README.md)
+  - [bbugyi200.athena.m9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m9.md#member-code)
+- **COMMITS:**
+  - [d51475b](https://github.com/sase-org/sase/commit/d51475b249f77dbd8760df96cc268e24a9f7d2e1) — feat(bead): add show output formats
 
 # Plan: `sase bead show` — `-f | --format <compact|full|json>`
 

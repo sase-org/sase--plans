@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/family_member_status_projection_retry.md](prompts/family_member_status_projection_retry.md)
+- **AGENTS:**
+  - [bbugyi200.athena.eu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eu/README.md)
+  - [bbugyi200.athena.eu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eu.md#member-code)
+- **COMMITS:**
+  - [28321d8](https://github.com/sase-org/sase/commit/28321d8dfc18fcca4da201a9d3a6a3eeaae102fc) — fix(ace): project concrete family member state
 
 # Plan: Correct ACE family-member status projection
 

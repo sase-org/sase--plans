@@ -4,12 +4,14 @@ title: Make bead event identities and stream merges replay-stable
 goal: Concurrent bead writers converge through multi-commit rebase replay without
   renumbering recorded events or rejecting prior semantic merge results.
 bead: sase-9x.1
-parent: sase/repos/plans/202607/bead_merge_replay_stability.md
 create_time: 2026-07-27 06:42:12
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/replay_stable_bead_event_merge.md](prompts/replay_stable_bead_event_merge.md)
+- **PARENT:** [202607/bead_merge_replay_stability.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_merge_replay_stability.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9x.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9x.1.md#member-code)
 
 # Plan: Make bead event identities and stream merges replay-stable
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/refresh_docs_notification.md](prompts/refresh_docs_notification.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3l.md#member-code)
 
 # Plan: Stop the redundant `refresh_docs` chop completion notification
 

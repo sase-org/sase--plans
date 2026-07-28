@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/runner_slot_wait_regressions.md](prompts/runner_slot_wait_regressions.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.3/README.md)
+  - [bbugyi200.athena.sase-8g.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.3.md#member-code)
+- **COMMITS:**
+  - [9aed7d7](https://github.com/sase-org/sase/commit/9aed7d72366ab5bbf243320fb3c621be21d6eea3) — fix(runner-slots): preserve waiter state across admission (sase-8g.3)
 
 # Plan: Fix runner-slot wait regressions
 

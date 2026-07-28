@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_j_exit_bullet_list.md](prompts/ctrl_j_exit_bullet_list.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jl/README.md)
+  - [bbugyi200.athena.jl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jl.md#member-code)
+- **COMMITS:**
+  - [4f783d4](https://github.com/sase-org/sase/commit/4f783d4b6efcae81eae4014d53154993b6083693) — feat(ace): exit prompt bullets with ctrl+j
 
 # Exit Prompt Bullet Lists with a Second Ctrl+J
 

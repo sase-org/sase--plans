@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/repeat_vars.md](prompts/repeat_vars.md)
+- **COMMITS:**
+  - [9e3c023](https://github.com/sase-org/sase/commit/9e3c02324a034cdaf0d7c31953f937288991848f) — feat: Split repeat directive vars into \`n\` (iteration) and \`N\` (total)
 
 # Plan: Split repeat directive Jinja2 variables into `n` (iteration) and `N` (total)
 

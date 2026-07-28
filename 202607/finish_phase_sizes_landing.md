@@ -22,13 +22,15 @@ phases:
     work, rerun end-to-end checks, close sase-8w.7 and sase-8w in order, perform post-close
     Symvision cleanup, and mark both linked plans done.'
 parent_bead: sase-8w.7
-parent: sase/repos/plans/202607/finish_phase_sizes.md
 create_time: 2026-07-23 20:33:35
 status: done
 bead_id: sase-8w.7.4
 ---
 
 - **PROMPT:** [202607/prompts/finish_phase_sizes_landing.md](prompts/finish_phase_sizes_landing.md)
+- **PARENT:** [202607/finish_phase_sizes.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_phase_sizes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 
 # Plan: Finish and land the five-size phase-size epics
 

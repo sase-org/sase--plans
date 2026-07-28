@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_word_definitions_spellcheck.md](prompts/prompt_word_definitions_spellcheck.md)
+- **AGENTS:**
+  - [bbugyi200.athena.lr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lr/README.md)
+  - [bbugyi200.athena.lr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lr.md#member-code)
+- **COMMITS:**
+  - [08f163b](https://github.com/sase-org/sase/commit/08f163b59e47983fff74a67ec59d519946d60bc5) — feat(ace): add prompt word definitions and spellcheck
 
 # Plan: `K` Word Definitions & Spellcheck in the Prompt Input (dict + aspell)
 

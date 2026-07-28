@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/epic_phase_vcs_prompts.md](prompts/epic_phase_vcs_prompts.md)
+- **COMMITS:**
+  - [7609a3c](https://github.com/sase-org/sase/commit/7609a3c41faf0bdef27187938b11a6c23407ba23) — fix: preserve VCS context for epic work prompts
 
 # Plan: Preserve VCS Workspace For Epic Phase Agents
 

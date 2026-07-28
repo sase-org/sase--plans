@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/popup_panel_tab_switch_keymaps.md](prompts/popup_panel_tab_switch_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e.md#member-code)
 
 # Popup Panel Tab-Switch Keymaps
 

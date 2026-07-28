@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_range_summary.md](prompts/statistics_range_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ge](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ge/README.md)
+  - [bbugyi200.athena.ge--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ge.md#member-code)
+- **COMMITS:**
+  - [4b083e8](https://github.com/sase-org/sase/commit/4b083e8332f2f2c82439b441294c76cd14c3243d) — feat(stats): show concise range summary
 
 # Plan: Clarify the Statistics selected time range
 

@@ -6,6 +6,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/vcs_ref_colon_completion.md](prompts/vcs_ref_colon_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5h.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5h.w1.md#member-code)
 
 # Plan: VCS-Agnostic Ref Completion for `#gh:` / `#git:` (the `:` trigger)
 

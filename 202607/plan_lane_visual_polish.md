@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/plan_lane_visual_polish.md](prompts/plan_lane_visual_polish.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b1.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b1.f2/README.md)
+  - [bbugyi200.athena.b1.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b1.f2.md#member-code)
+- **COMMITS:**
+  - [38760e2](https://github.com/sase-org/sase/commit/38760e2f2eb9ef47bebbb1c89d4ec97624e8e598) — feat(ace): polish plan lane visuals
 
 # Plan: Restyle the PLAN lane to the SASE CONTEXT lane grammar
 

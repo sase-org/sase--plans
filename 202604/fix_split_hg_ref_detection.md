@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [515b6bd](https://github.com/sase-org/sase/commit/515b6bdd9a87db440afebcc48293810f65dcb32c) — fix: preserve cl_name from unregistered vcs refs
+
 # Plan: Fix `sase run "#hg:... #split"` cl_name regression when `hg` workflow is not locally registered
 
 ## Problem Summary

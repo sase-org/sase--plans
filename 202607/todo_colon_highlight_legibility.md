@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_colon_highlight_legibility.md](prompts/todo_colon_highlight_legibility.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i3.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i3.f0/README.md)
+  - [bbugyi200.athena.i3.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i3.f0.md#member-code)
+- **COMMITS:**
+  - [627b0b3](https://github.com/sase-org/sase/commit/627b0b377c15b3c7ad322333fc38303b840defe7) — fix(tui): keep TODO markers legible
 
 # Plan: Make TODO markers legible and colon-gate note highlighting
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_h_collapse_ladder.md](prompts/tribe_panel_h_collapse_ladder.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hq.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hq.f2/README.md)
+  - [bbugyi200.athena.hq.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hq.f2.md#member-code)
+- **COMMITS:**
+  - [d3da2f1](https://github.com/sase-org/sase/commit/d3da2f1a502918e0b91c3d17f812747d02fbfe86) — feat(ace): add selected-panel collapse ladder
 
 # Plan: Add the selected tribe-panel `H` collapse ladder
 

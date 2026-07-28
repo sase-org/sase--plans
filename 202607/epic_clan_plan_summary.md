@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_clan_plan_summary.md](prompts/epic_clan_plan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8d.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.3/README.md)
+  - [bbugyi200.athena.sase-8d.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.3.md#member-code)
+- **COMMITS:**
+  - [7ab260d](https://github.com/sase-org/sase/commit/7ab260ddba51c780c195d4180576fae508f0e87c) — fix: render epic clan summaries from authored plans (sase-8d.3)
 
 # Plan: Plan-first epic clan summary rendering
 

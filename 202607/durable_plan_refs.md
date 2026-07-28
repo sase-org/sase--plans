@@ -68,6 +68,12 @@ bead_id: sase-9z
 ---
 
 - **PROMPT:** [202607/prompts/durable_plan_refs.md](prompts/durable_plan_refs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9z.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9z.4/README.md)
+  - [bbugyi200.athena.sase-9z.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9z.5/README.md)
+  - [bbugyi200.athena.sase-9z.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9z.5.md#member-code)
+- **COMMITS:**
+  - [7ac5b91](https://github.com/sase-org/sase/commit/7ac5b917c08ebe10f847caacdcabf2a2fcc401a6) — feat(beads): repair legacy design references (sase-9z.5)
 
 # Plan: Make bead plan linkage durable with logical plans: references
 

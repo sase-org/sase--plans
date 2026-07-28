@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/retry_family_phase_agents.md](prompts/retry_family_phase_agents.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.2/README.md)
+  - [bbugyi200.athena.sase-8g.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.2.md#member-code)
+- **COMMITS:**
+  - [48abe26](https://github.com/sase-org/sase/commit/48abe26ea0fed666630122073b303f4c8f67d0f2) — fix(agent): retry family phases from base names (sase-8g.2)
 
 # Plan: Safe retries for family-phase agents
 

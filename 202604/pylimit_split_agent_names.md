@@ -6,6 +6,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/pylimit_split_agent_names.md](prompts/pylimit_split_agent_names.md)
+- **COMMITS:**
+  - [21ef5ca](https://github.com/sase-org/sase/commit/21ef5ca3249be7f8ce28eef1398db3760b916804) — feat(xprompts): name pylimit_split chop agents \`pysplit.\<basename\>\`
 
 # Name `pylimit_split` chop agents `pysplit.<basename>`
 

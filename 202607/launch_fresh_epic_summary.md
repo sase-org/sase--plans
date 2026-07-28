@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/launch_fresh_epic_summary.md](prompts/launch_fresh_epic_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-85.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-85.1/README.md)
+  - [bbugyi200.athena.sase-85.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-85.1.md#member-code)
+- **COMMITS:**
+  - [0a1fd5f](https://github.com/sase-org/sase/commit/0a1fd5f83e0d0bf3ed86b8638bdf266ea80c5557) — fix: refresh missing epic summaries before fallback (sase-85.1)
 
 # Plan: Launch-fresh epic summary lookup
 

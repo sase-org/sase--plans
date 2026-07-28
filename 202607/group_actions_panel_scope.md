@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/group_actions_panel_scope.md](prompts/group_actions_panel_scope.md)
+- **AGENTS:**
+  - [bbugyi200.athena.83](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.83/README.md)
+  - [bbugyi200.athena.83--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.83.md#member-code)
+- **COMMITS:**
+  - [a450a34](https://github.com/sase-org/sase/commit/a450a34034d417021f83a8c8b27e415010615bbc) — fix(tui): scope group actions to focused panel
 
 # Fix Agents-tab focused-group mark/kill over-targeting agents in other panels
 

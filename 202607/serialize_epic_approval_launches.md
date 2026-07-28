@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/serialize_epic_approval_launches.md](prompts/serialize_epic_approval_launches.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ga](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ga/README.md)
+  - [bbugyi200.athena.ga--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ga.md#member-code)
+- **COMMITS:**
+  - [0bbf415](https://github.com/sase-org/sase/commit/0bbf41585be894812dcb2bec927bcd7f0558ff45) — fix: serialize approved epic plan launches
 
 # Plan: Serialize approved epic launches per bead store
 

@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [6d40fcf](https://github.com/sase-org/sase/commit/6d40fcfd85bac0a29a0ea7c72f0fa205571d07d5) — feat: Show \`\[folded: \<N\>\]\` indicator for collapsed TIMESTAMPS section
+
 # Plan: TIMESTAMPS `[folded: <N>]` indicator when collapsed
 
 ## Problem

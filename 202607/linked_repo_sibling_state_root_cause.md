@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/linked_repo_sibling_state_root_cause.md](prompts/linked_repo_sibling_state_root_cause.md)
+- **AGENTS:**
+  - [bbugyi200.athena.r.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.r.f1.md#member-code)
 
 # Root Cause + Fix: Linked-Repo ProjectSpecs Created Without `PROJECT_STATE: sibling`
 

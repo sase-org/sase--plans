@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agent_derived_at_suffixes.md](prompts/agent_derived_at_suffixes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3s.md#member-code)
 
 # Plan: Use `@` Templates for Derived Agent Names
 

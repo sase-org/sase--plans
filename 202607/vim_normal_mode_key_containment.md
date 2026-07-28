@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/vim_normal_mode_key_containment.md](prompts/vim_normal_mode_key_containment.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k2/README.md)
+  - [bbugyi200.athena.k2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k2.md#member-code)
+- **COMMITS:**
+  - [e40bce9](https://github.com/sase-org/sase/commit/e40bce924375f7bf7d8690caf9f92c0b1f693e1c) — fix(tui): contain unhandled vim mode keys
 
 # Plan: Contain unhandled printable keys inside vim NORMAL/VISUAL mode
 

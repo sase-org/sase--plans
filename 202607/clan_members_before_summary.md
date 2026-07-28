@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_members_before_summary.md](prompts/clan_members_before_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ic](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ic/README.md)
+  - [bbugyi200.athena.ic--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ic.md#member-code)
+- **COMMITS:**
+  - [7917c0f](https://github.com/sase-org/sase/commit/7917c0f79fece6d823e200233d1cc8220ab66027) — fix(tui): show clan members before summary
 
 # Show clan members before the clan summary
 

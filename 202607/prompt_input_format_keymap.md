@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_input_format_keymap.md](prompts/prompt_input_format_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a8/README.md)
+  - [bbugyi200.athena.a8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a8.md#member-code)
+- **COMMITS:**
+  - [fac33c7](https://github.com/sase-org/sase/commit/fac33c7a2f920b86d70ef05774ce4b699c9df7d3) — feat(tui): add on-demand prompt formatting
 
 # Plan: Explicit Prompt Formatting Keymap
 

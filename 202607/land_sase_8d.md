@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_sase_8d.md](prompts/land_sase_8d.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8d.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.land/README.md)
+  - [bbugyi200.athena.sase-8d.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.land.md#member-code)
+- **COMMITS:**
+  - [fc1c918](https://github.com/sase-org/sase/commit/fc1c91844a8e4b1c0ad311c98d29f9c3beb61ecc) — fix(sdd): preserve plan path basenames when wrapping (sase-8d)
 
 # Plan: Finish and land plan-lane clan summaries
 

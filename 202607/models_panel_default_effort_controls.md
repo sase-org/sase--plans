@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_default_effort_controls.md](prompts/models_panel_default_effort_controls.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1.f6.f0.w0.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f6.f0.w0.f2/README.md)
+  - [bbugyi200.athena.gy.f1.f6.f0.w0.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f6.f0.w0.f2.md#member-code)
+- **COMMITS:**
+  - [a2c33ea](https://github.com/sase-org/sase/commit/a2c33ea03d1936d0f953ed9448ade95c2c5dd3c5) — feat(ace): add default effort controls to Models panel
 
 # Plan: Models panel default-effort controls
 

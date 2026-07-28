@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/lone_bullet_ctrl_j.md](prompts/lone_bullet_ctrl_j.md)
+- **AGENTS:**
+  - [bbugyi200.athena.l0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.l0/README.md)
+  - [bbugyi200.athena.l0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.l0.md#member-code)
+- **COMMITS:**
+  - [6c4b65f](https://github.com/sase-org/sase/commit/6c4b65f7bd0a1339d62af6b63c47f42febe1bfef) — fix(ace): keep prompt Ctrl+J from clearing a lone empty bullet
 
 # Plan: Keep Ctrl+J from clearing a lone empty prompt bullet
 

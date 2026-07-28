@@ -55,6 +55,13 @@ bead_id: sase-ab
 ---
 
 - **PROMPT:** [202607/prompts/land_beads_sidecar_epic.md](prompts/land_beads_sidecar_epic.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-a8.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.land/README.md)
+  - [bbugyi200.athena.sase-ab.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ab.1/README.md)
+  - [bbugyi200.athena.sase-ab.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ab.2/README.md)
+  - [bbugyi200.athena.sase-ab.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ab.3/README.md)
+  - [bbugyi200.athena.sase-ab.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ab.5/README.md)
+  - [bbugyi200.athena.sase-ab.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ab.land/README.md)
 
 # Plan: Finish and land the dedicated beads sidecar (sase-a8)
 

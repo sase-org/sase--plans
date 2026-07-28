@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_chat_third.md](prompts/artifacts_chat_third.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k1/README.md)
+  - [bbugyi200.athena.k1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k1.md#member-code)
+- **COMMITS:**
+  - [93c58bd](https://github.com/sase-org/sase/commit/93c58bd88c547aadad4a04e77409777b1edc92a1) — feat(tui): reorder Artifacts tabs by usage
 
 # Move the Artifacts Chats sub-tab to third position
 

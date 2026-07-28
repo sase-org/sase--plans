@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/apostrophe_jump_uppercase_hints.md](prompts/apostrophe_jump_uppercase_hints.md)
+- **COMMITS:**
+  - [9f61364](https://github.com/sase-org/sase/commit/9f6136403665d8acbf8260d234bbbb26bd0f0563) — fix: preserve uppercase jump hint keys
 
 # Support A-Z Hints for Apostrophe Jump Mode
 

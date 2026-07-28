@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/axe_chop_agents_survive_restart.md](prompts/axe_chop_agents_survive_restart.md)
+- **COMMITS:**
+  - [8783bce](https://github.com/sase-org/sase/commit/8783bceb206461386ed6bdb505619a9531782ab7) — fix: persist chop-launched agent ownership
 
 # Plan: Make lumberjack-launched agents survive axe restarts
 

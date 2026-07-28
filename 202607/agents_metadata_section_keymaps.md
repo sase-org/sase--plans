@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_metadata_section_keymaps.md](prompts/agents_metadata_section_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b3/README.md)
+  - [bbugyi200.athena.b3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b3.md#member-code)
+- **COMMITS:**
+  - [a434e09](https://github.com/sase-org/sase/commit/a434e09e675c08adb8567cb342add9add087e120) — feat(ace): navigate agent metadata sections
 
 # Plan: Add Agents Metadata Section Navigation
 

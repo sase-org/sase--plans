@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/uppercase_jump_hints.md](prompts/uppercase_jump_hints.md)
+- **COMMITS:**
+  - [94129e1](https://github.com/sase-org/sase/commit/94129e16f2152784ba28e8a0c834e265f25ebeb1) — feat: extend jump-to-entry hint alphabet with uppercase A–Z
 
 # Plan: Extend Jump-to-Entry Hint Alphabet with A–Z
 

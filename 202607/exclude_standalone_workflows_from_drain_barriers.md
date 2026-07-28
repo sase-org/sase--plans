@@ -5,6 +5,12 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/exclude_standalone_workflows_from_drain_barriers.md](prompts/exclude_standalone_workflows_from_drain_barriers.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7j.f-0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7j.f-0.f0/README.md)
+  - [bbugyi200.athena.7j.f-0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7j.f-0.f0.md#member-code)
+  - [bbugyi200.athena.7j.f-0.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7j.f-0.f0.md#member-plan)
+- **COMMITS:**
+  - [8b804aa](https://github.com/sase-org/sase/commit/8b804aa544b9ab63461645b32b4c04fd13183150) — test: distinguish workflow wrappers from leaf agents
 
 # Plan: Exclude Standalone Xprompt Workflows from Drain Barriers
 

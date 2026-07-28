@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_all_house_member_navigation.md](prompts/agents_all_house_member_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hk.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hk.f0/README.md)
+  - [bbugyi200.athena.hk.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hk.f0.md#member-code)
+- **COMMITS:**
+  - [fe8c2e0](https://github.com/sase-org/sase/commit/fe8c2e0277e5cd77cce6d591f135407924c0385b) — fix(ace): navigate to all agent house parents
 
 # Plan: Complete Agents parent navigation for every house member
 

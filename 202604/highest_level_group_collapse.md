@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/highest_level_group_collapse.md](prompts/highest_level_group_collapse.md)
+- **COMMITS:**
+  - [5f647a1](https://github.com/sase-org/sase/commit/5f647a1c78600520f2f5465860b3e68fb87b4d5a) — fix: collapse deepest visible group level on H
 
 # Plan: `H` Collapses Only One Group Heading Level
 

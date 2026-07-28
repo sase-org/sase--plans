@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_bullet_literal_highlighting.md](prompts/todo_bullet_literal_highlighting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j0/README.md)
+  - [bbugyi200.athena.j0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j0.md#member-code)
+- **COMMITS:**
+  - [da207ba](https://github.com/sase-org/sase/commit/da207ba769eba6a058c408c04162adda0d3556dd) — fix(ace): respect Markdown structure in TODO highlighting
 
 # Plan: Extend TODO bullet highlighting and ignore code literals
 

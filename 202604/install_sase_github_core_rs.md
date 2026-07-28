@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/install_sase_github_core_rs.md](prompts/install_sase_github_core_rs.md)
+- **COMMITS:**
+  - [ce540c5](https://github.com/sase-org/sase/commit/ce540c593ee9750f79b9966764a8cda8cad4cccd) — chore: mark installer plan complete
 
 # Fix `install_sase_github` Resolution Of Local `sase-core-rs`
 

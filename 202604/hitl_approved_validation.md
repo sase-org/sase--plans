@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/hitl_approved_validation.md](prompts/hitl_approved_validation.md)
+- **COMMITS:**
+  - [be842c3](https://github.com/sase-org/sase/commit/be842c303d1dc0f177a4a9a2a46760c514b12d08) — fix: Validator accepts 'approved' field on HITL bash/python steps
 
 # Fix: Validator rejects `approved` field on HITL bash/python steps
 

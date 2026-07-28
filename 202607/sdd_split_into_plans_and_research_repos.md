@@ -6,6 +6,9 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/sdd_split_into_plans_and_research_repos.md](prompts/sdd_split_into_plans_and_research_repos.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6a.f-1--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6a.f-1.md#member-epic)
+  - [bbugyi200.athena.6a.f-1--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6a.f-1.md#member-plan-0)
 
 # Plan: Split the SDD companion repo into `--plans` and `--research` linked repos
 

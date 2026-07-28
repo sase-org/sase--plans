@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [4120e4b](https://github.com/sase-org/sase/commit/4120e4b1575597c049e4f04f6948aa9e1e39da85) — chore: Add SDD spec and plan for fix_ci_luacov
+
 # Plan: Fix CI — missing LuaCov dependency
 
 ## Problem

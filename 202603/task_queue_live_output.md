@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/task_queue_live_output.md](prompts/task_queue_live_output.md)
+- **COMMITS:**
+  - [9d509bd](https://github.com/sase-org/sase/commit/9d509bd024245794a056b4f9893875f3d1ed0eba) — feat: Show live output for running tasks in task queue modal
 
 # Plan: Live Output for Running Tasks in Task Queue Modal
 

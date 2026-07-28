@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/prettier_debounce.md](prompts/prettier_debounce.md)
+- **COMMITS:**
+  - [b8c79cc](https://github.com/sase-org/sase/commit/b8c79cca0d541367cc5aa055f3664743974d33ab) — feat: Debounce prettier and wrap on space in prompt input
 
 # Plan: Fix Prompt Input Prettier Integration (Performance + Reliability)
 

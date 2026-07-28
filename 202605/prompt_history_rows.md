@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/prompt_history_rows.md](prompts/prompt_history_rows.md)
+- **COMMITS:**
+  - [c1cd0c2](https://github.com/sase-org/sase/commit/c1cd0c2645b91c71adff22b8a895cc79cf45f459) — feat: compact prompt history rows
 
 # Prompt History One-Line Rows
 

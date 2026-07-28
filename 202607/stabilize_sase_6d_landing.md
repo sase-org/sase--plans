@@ -11,6 +11,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/stabilize_sase_6d_landing.md](prompts/stabilize_sase_6d_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6d/README.md)
+  - [bbugyi200.athena.sase-6d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6d.md#member-code)
+- **COMMITS:**
+  - [aa38ebf](https://github.com/sase-org/sase/commit/aa38ebf34fc2be9484d5b06f2c79c05a4e062725) — refactor\!: remove unused content layout entry points (sase-6d)
+  - [50809bd](https://github.com/sase-org/sase/commit/50809bdb85382fe20e9e502e2f14b15c37490728) — test: stabilize xprompt save visual snapshots (sase-6d)
 
 # Plan: Stabilize canonical-path visual coverage and land sase-6d
 

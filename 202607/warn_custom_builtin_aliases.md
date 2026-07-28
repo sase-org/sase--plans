@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/warn_custom_builtin_aliases.md](prompts/warn_custom_builtin_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h1/README.md)
+  - [bbugyi200.athena.h1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h1.md#member-code)
+- **COMMITS:**
+  - [ff8af79](https://github.com/sase-org/sase/commit/ff8af79b91e305d55e89f2f98d6c70d64e75f048) — feat(ace): warn on custom builtin alias shadows
 
 # Plan: Warn when custom model aliases shadow builtin aliases
 

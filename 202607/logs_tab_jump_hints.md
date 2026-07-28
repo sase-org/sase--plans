@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/logs_tab_jump_hints.md](prompts/logs_tab_jump_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1v.md#member-code)
 
 # Plan: Logs Tab Apostrophe Jump Hints
 

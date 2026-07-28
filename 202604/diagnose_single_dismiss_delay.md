@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/diagnose_single_dismiss_delay.md](prompts/diagnose_single_dismiss_delay.md)
+- **COMMITS:**
+  - [c9fe225](https://github.com/sase-org/sase/commit/c9fe2255687df17768dae453fe03f72385d09606) — perf(ace): skip redundant post-dismiss reload and offload notification refresh
 
 # Diagnose & Fix the Lingering TUI Delay After Single-Agent Dismiss
 

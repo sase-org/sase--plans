@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_hg_amend_diff.md](prompts/fix_hg_amend_diff.md)
+- **COMMITS:**
+  - [fd64c2f](https://github.com/sase-org/sase/commit/fd64c2f58c14f37db099148ac023546b45aa3f0a) — chore: Mark fix_hg_amend_diff plan as done
 
 # Fix: hg.yml Diff Step Shows Entire CL Instead of Incremental Changes on Amend
 

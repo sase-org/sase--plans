@@ -5,6 +5,12 @@ goal: Every structured tribe identity in the ACE TUI uses its configured color c
   without changing semantic chrome or regressing render-cache performance.
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.lg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lg/README.md)
+  - [bbugyi200.athena.lg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lg.md#member-code)
+- **COMMITS:**
+  - [0bff029](https://github.com/sase-org/sase/commit/0bff029f30a56c04b8cf0488e68051355e25c49b) — feat(tui): color tribe identities consistently
+
 # Apply configured agent-tribe colors throughout the ACE TUI
 
 ## Summary

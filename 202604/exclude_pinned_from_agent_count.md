@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/exclude_pinned_from_agent_count.md](prompts/exclude_pinned_from_agent_count.md)
+- **COMMITS:**
+  - [57b25ac](https://github.com/sase-org/sase/commit/57b25acdfab97886509834449fd0e2bc9a7a6172) — fix: Exclude pinned agents from side-panel agent count
 
 # Plan: Exclude Pinned Entries from Agent Count
 

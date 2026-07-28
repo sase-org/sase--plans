@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/toolong_extraction.md](prompts/toolong_extraction.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6f--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6f.md#member-epic)
 
 # Plan: Factor `pylimit` into `bbugyi200/toolong` and Migrate sase to It
 

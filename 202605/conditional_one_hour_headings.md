@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/conditional_one_hour_headings.md](prompts/conditional_one_hour_headings.md)
+- **COMMITS:**
+  - [bfa38ac](https://github.com/sase-org/sase/commit/bfa38ac39357d15c3c6af25cb12a768b863c82d9) — feat: suppress singleton one-hour headings
 
 # Conditional one-hour heading visibility
 

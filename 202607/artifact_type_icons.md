@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/artifact_type_icons.md](prompts/artifact_type_icons.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5q.md#member-code)
 
 # Plan: Artifact‑type icons in the Agents‑tab "Artifacts:" panel
 

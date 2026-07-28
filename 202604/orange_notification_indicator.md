@@ -3,6 +3,10 @@ create_time: 2026-04-27 16:20:21
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [11cfc31](https://github.com/sase-org/sase/commit/11cfc31a0e3859ef995024c9f3731d45dc80b6d4) — fix: render priority notification indicator in orange
+
 # Orange Priority Notification Indicator
 
 ## Problem

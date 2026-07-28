@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prepare_workspace_sdd_link.md](prompts/prepare_workspace_sdd_link.md)
+- **AGENTS:**
+  - [bbugyi200.athena.27--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.27.md#member-code)
 
 # Plan: Fix plan-chain SDD reference crash by linking + refreshing the workspace SDD store during prep
 

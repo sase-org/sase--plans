@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/remove_memory_keywords.md](prompts/remove_memory_keywords.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7h](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7h/README.md)
+  - [bbugyi200.athena.7h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7h.md#member-code)
+- **COMMITS:**
+  - [21e1640](https://github.com/sase-org/sase/commit/21e1640ee7373759701865b7917a7828b2d233bb) — feat(memory)\!: remove keyword metadata
 
 # Remove the Memory `keywords` Property
 

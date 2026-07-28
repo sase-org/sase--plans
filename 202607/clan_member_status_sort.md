@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_member_status_sort.md](prompts/clan_member_status_sort.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dv.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dv.f1/README.md)
+  - [bbugyi200.athena.dv.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dv.f1.md#member-code)
+- **COMMITS:**
+  - [ff19c80](https://github.com/sase-org/sase/commit/ff19c80f9b24ff9ca1b08cc91acdc233efbf5a94) — feat(ace): sort clan members by status
 
 # Plan: Sort clan members by status priority
 

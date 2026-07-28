@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_jk_nav_race.md](prompts/fix_jk_nav_race.md)
+- **COMMITS:**
+  - [8b72529](https://github.com/sase-org/sase/commit/8b7252998b414aa77d46f08563127f113076206c) — fix: Resolve race condition in TUI j/k navigation during async agent refresh
 
 # Plan: Fix race condition in TUI j/k navigation where async agent refresh restores stale selection
 

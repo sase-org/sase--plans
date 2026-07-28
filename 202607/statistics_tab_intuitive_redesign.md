@@ -45,6 +45,11 @@ bead_id: sase-8a
 ---
 
 - **PROMPT:** [202607/prompts/statistics_tab_intuitive_redesign.md](prompts/statistics_tab_intuitive_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8a.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.1.md#member-code)
+  - [bbugyi200.athena.sase-8a.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.2.md#member-code)
+  - [bbugyi200.athena.sase-8a.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.3.md#member-code)
+  - [bbugyi200.athena.sase-8a.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.land.md#member-code)
 
 # Plan: Intuitive Statistics tab redesign for the SASE Admin Center
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/updates_all_current_banner.md](prompts/updates_all_current_banner.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1d.md#member-code)
 
 # Plan: "All up to date" banner + gate the `u` key on the Updates tab
 

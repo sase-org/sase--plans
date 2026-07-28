@@ -58,6 +58,8 @@ bead_id: sase-7t
 ---
 
 - **PROMPT:** [202607/prompts/chop_lifecycle_fixes_v2.md](prompts/chop_lifecycle_fixes_v2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fh--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fh.md#member-plan-0)
 
 # Plan: Fix chop lifecycle poisoning, collision failures, kill-callback crashes, and config deadlock
 

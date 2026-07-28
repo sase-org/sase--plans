@@ -8,12 +8,17 @@ goal: 'Make `ace.prompt_inputs.xprompt_placeholder_args: false` actually disable
 
   '
 bead: sase-9q
-parent: sase/repos/plans/202607/raw_placeholder_inputs.md
 create_time: 2026-07-26 11:29:42
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_placeholder_args_toggle.md](prompts/xprompt_placeholder_args_toggle.md)
+- **PARENT:** [202607/raw_placeholder_inputs.md](https://github.com/sase-org/sase--plans/blob/main/202607/raw_placeholder_inputs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9q.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9q.land/README.md)
+  - [bbugyi200.athena.sase-9q.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9q.land.md#member-code)
+- **COMMITS:**
+  - [f5f30f9](https://github.com/sase-org/sase/commit/f5f30f91e6f5c76b02d58b371d64761910448e39) — feat(ace): honor xprompt placeholder argument toggle (sase-9q)
 
 # Plan: Wire the `xprompt_placeholder_args` toggle and land epic sase-9q
 

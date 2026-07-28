@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sase_github_mit_license.md](prompts/sase_github_mit_license.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3.md#member-code)
 
 # Plan: MIT License for the sase-github Repo
 

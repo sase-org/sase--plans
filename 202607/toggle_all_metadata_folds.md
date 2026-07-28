@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/toggle_all_metadata_folds.md](prompts/toggle_all_metadata_folds.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ez](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ez/README.md)
+  - [bbugyi200.athena.ez--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ez.md#member-code)
+- **COMMITS:**
+  - [ee3242b](https://github.com/sase-org/sase/commit/ee3242bce534d1c12e141691bf37e9a398e9862e) — feat(ace): toggle metadata folds at scale extremes
 
 # Plan: Toggle every Agents metadata fold between scale extremes
 

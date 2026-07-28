@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/hourly_date_subgroups.md](prompts/hourly_date_subgroups.md)
+- **COMMITS:**
+  - [6caafd5](https://github.com/sase-org/sase/commit/6caafd5edee3cf9df63b51dd7ab8f40797b1dc73) — feat: add hourly date subgroups in TUI
 
 # Add 1-Hour Date Subgroups Under 4-Hour BY_DATE Headings
 

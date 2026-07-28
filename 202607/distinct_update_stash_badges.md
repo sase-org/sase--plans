@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/distinct_update_stash_badges.md](prompts/distinct_update_stash_badges.md)
+- **AGENTS:**
+  - [bbugyi200.athena.35--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.35.md#member-code)
 
 # Plan: Distinguish update and prompt-stash top-bar badges
 

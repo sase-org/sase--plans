@@ -5,12 +5,14 @@ goal: The shared Rust statistics API reports exact, overlap-aware runner occupan
   summaries, distributions, and bounded trends for any selected time and project scope
   while preserving compatibility and query performance.
 bead: sase-8j.1
-parent: sase/repos/plans/202607/runners_statistics.md
 create_time: 2026-07-21 16:36:45
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/runner_occupancy_analytics.md](prompts/runner_occupancy_analytics.md)
+- **PARENT:** [202607/runners_statistics.md](https://github.com/sase-org/sase--plans/blob/main/202607/runners_statistics.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8j.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8j.1.md#member-code)
 
 # Plan: Core runner-occupancy analytics
 

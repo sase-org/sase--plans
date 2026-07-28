@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [be4983d](https://github.com/sase-org/sase/commit/be4983d735a978d3599d4e3c72482c2830f8767b) — feat: Make TUI fold navigation instant by skipping redundant disk reloads
+
 # Plan: Make TUI fold navigation instant by skipping redundant disk reloads
 
 ## Problem

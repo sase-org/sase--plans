@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_restart_damper.md](prompts/axe_restart_damper.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.6/README.md)
+  - [bbugyi200.athena.sase-8g.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.6.md#member-code)
+- **COMMITS:**
+  - [4103e91](https://github.com/sase-org/sase/commit/4103e9154d3f239a7652da06a30764a957aefe10) — fix(axe): damp restart storms (sase-8g.6)
 
 # Plan: Journal and damp axe fleet restarts
 

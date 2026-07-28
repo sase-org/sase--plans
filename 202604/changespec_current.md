@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/changespec_current.md](prompts/changespec_current.md)
+- **COMMITS:**
+  - [2542d24](https://github.com/sase-org/sase/commit/2542d24725ac6374be5a4454f15740ad0721ed25) — feat: add current ChangeSpec CLI lookup
 
 # Plan: `sase changespec current` and `/sase_changespecs` guidance
 

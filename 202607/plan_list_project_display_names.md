@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/plan_list_project_display_names.md](prompts/plan_list_project_display_names.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8z](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8z/README.md)
+  - [bbugyi200.athena.8z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8z.md#member-code)
+- **COMMITS:**
+  - [ea38782](https://github.com/sase-org/sase/commit/ea387821a77118ac2450a746950f1e6cbb8ac36c) — fix: display configured project names in plan inventory
 
 # Plan: Show SASE project names in the plan dashboard
 

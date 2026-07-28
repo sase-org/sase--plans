@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sase_5q_record_repair_and_closeout.md](prompts/sase_5q_record_repair_and_closeout.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6p](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6p/README.md)
+  - [bbugyi200.athena.6p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6p.md#member-code)
+- **COMMITS:**
+  - [6df95bb](https://github.com/sase-org/sase/commit/6df95bbecc640071a22a768af6c5718242227d1d) — fix(sdd): preserve unknown store records
 
 # Plan: Repair the split-SDD store record clobber, harden record handling, and close out sase-5q
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/post_launch_jk_lag.md](prompts/post_launch_jk_lag.md)
+- **COMMITS:**
+  - [66cbb47](https://github.com/sase-org/sase/commit/66cbb4792eaafafdb12f1fcd8aa6f9a1e2ea1c67) — fix(ace): eliminate post-launch j/k lag in Agents tab
 
 # Plan — Eliminate the Post-Launch `j`/`k` Lag
 

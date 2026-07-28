@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/changespec_deltas_commit.md](prompts/changespec_deltas_commit.md)
+- **COMMITS:**
+  - [a346010](https://github.com/sase-org/sase/commit/a346010bb7cfe3fb97469012e5136ce01d9de846) — fix: refresh deltas for new changespecs
 
 # Plan: Populate DELTAS for ChangeSpecs Created by `sase commit`
 

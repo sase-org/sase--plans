@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_strip_pr_tags_blank_lines.md](prompts/fix_strip_pr_tags_blank_lines.md)
+- **COMMITS:**
+  - [359b7bc](https://github.com/sase-org/sase/commit/359b7bc133aca6de3cd0f9eae54cb45f3881193b) — fix: strip_pr_tags() now removes tags separated by blank lines
 
 # Fix: `strip_pr_tags()` fails to strip tags separated by blank lines
 

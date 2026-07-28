@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/ci_pyvision_stale_telegram_pragma.md](prompts/ci_pyvision_stale_telegram_pragma.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3g.md#member-code)
 
 # CI Pyvision Stale Telegram Pragma Plan
 

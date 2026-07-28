@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_hole_tribe_counts.md](prompts/agent_hole_tribe_counts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ia.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ia.f1/README.md)
+  - [bbugyi200.athena.ia.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ia.f1.md#member-code)
+- **COMMITS:**
+  - [bdde10d](https://github.com/sase-org/sase/commit/bdde10dceb45dc86cadb85be5d8400207b387b7c) — feat(ace): report agent holes in tribe panels
 
 # Plan: Use agent-hole totals on clan rows and tribe panels
 

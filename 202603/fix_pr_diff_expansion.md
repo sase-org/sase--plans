@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_pr_diff_expansion.md](prompts/fix_pr_diff_expansion.md)
+- **COMMITS:**
+  - [5156606](https://github.com/sase-org/sase/commit/51566061310e81dab8f08ff4e606e84ddcab5623) — chore: Mark fix_pr_diff_expansion plan as done
 
 # Fix `#pr_diff` xprompt not expanding in agent prompts
 

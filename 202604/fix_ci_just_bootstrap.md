@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_ci_just_bootstrap.md](prompts/fix_ci_just_bootstrap.md)
+- **COMMITS:**
+  - [9c73cc1](https://github.com/sase-org/sase/commit/9c73cc1fa134f09d03ce3b467e7a3b5c9bb0ce8b) — chore: install just directly in CI
 
 # Fix CI just Bootstrap Failure
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_agent_plan_timestamp_metadata.md](prompts/fix_agent_plan_timestamp_metadata.md)
+- **COMMITS:**
+  - [50006b7](https://github.com/sase-org/sase/commit/50006b7045c62daeed7ff71f2f2643f54f14a27d) — fix: preserve scalar plan timestamp metadata
 
 # Plan: Preserve PLAN timestamps in Agents metadata
 

@@ -102,6 +102,11 @@ bead_id: sase-90
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_chats_subtab.md](prompts/artifacts_chats_subtab.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-90.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-90.land/README.md)
+  - [bbugyi200.athena.sase-90.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-90.land.md#member-code)
+- **COMMITS:**
+  - [e5d953e](https://github.com/sase-org/sase/commit/e5d953eadd0b66ce4c9d8806d045048943107825) — feat(chats): expose publication quarantine provenance (sase-90)
 
 # Plan: Artifacts → Chats sub-tab
 

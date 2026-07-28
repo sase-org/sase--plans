@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/inline_code_visibility.md](prompts/inline_code_visibility.md)
+- **AGENTS:**
+  - [bbugyi200.athena.av](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.av/README.md)
+  - [bbugyi200.athena.av--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.av.md#member-code)
+- **COMMITS:**
+  - [4d2fb87](https://github.com/sase-org/sase/commit/4d2fb87e5c444c5a82cf7370a95bdc158c5f7293) — fix(tui): improve inline code visibility
 
 # Plan: Make prompt inline code beautifully legible
 

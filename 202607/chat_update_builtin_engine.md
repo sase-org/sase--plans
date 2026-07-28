@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/chat_update_builtin_engine.md](prompts/chat_update_builtin_engine.md)
+- **AGENTS:**
+  - [bbugyi200.athena.00--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00.md#member-code)
 
 # Plan: Consolidate chat `/update` with the built-in SASE update engine
 

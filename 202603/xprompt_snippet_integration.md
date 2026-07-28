@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [702f51d](https://github.com/sase-org/sase/commit/702f51de320e0297c415a16c274da8965d3e4a72) — feat: Add snippet field to xprompts for inline snippet expansion
+
 # Plan: XPrompt Snippet Integration (Option D)
 
 ## Goal

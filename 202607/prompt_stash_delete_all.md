@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_stash_delete_all.md](prompts/prompt_stash_delete_all.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e9/README.md)
+  - [bbugyi200.athena.e9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e9.md#member-code)
+- **COMMITS:**
+  - [be0c9b5](https://github.com/sase-org/sase/commit/be0c9b5c4b3be9e518245ec22b70684058f6fd71) — feat(ace): add prompt stash delete-all action
 
 # Plan: Prompt stash delete-all keymap
 

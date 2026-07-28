@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_empty_filter_landing.md](prompts/statistics_empty_filter_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8a.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8a.land/README.md)
+  - [bbugyi200.athena.sase-8a.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.land.md#member-code)
+- **COMMITS:**
+  - [c7a4ef4](https://github.com/sase-org/sase/commit/c7a4ef42d8b624d79c8392c3a43f58af6a691106) — fix: clear empty Statistics project filters (sase-8a)
 
 # Plan: Repair Statistics empty-filter recovery and land sase-8a
 

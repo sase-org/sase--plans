@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/g_keymap_restore.md](prompts/g_keymap_restore.md)
+- **COMMITS:**
+  - [31c10fc](https://github.com/sase-org/sase/commit/31c10fc38f19cf1c9ffefe9170786230ac5833f5) — fix(ace): restore \`g\` to scroll-to-top; rebind grouping cycle to \`o\`
 
 # Restore `g` to "scroll to top" on the Agents tab; move grouping-mode cycle to a new key
 

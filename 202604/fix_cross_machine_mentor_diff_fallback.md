@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [2a51189](https://github.com/sase-org/sase/commit/2a51189d164b09f6ac0bb759cfe9c16dfd64422a) — fix: fallback mentor matching when commit DIFF artifacts are missing
+
 # Plan: Fix Missing MENTORS Entries When Commit DIFF Files Are Missing Cross-Machine
 
 ## Problem Summary

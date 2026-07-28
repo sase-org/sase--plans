@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_agent_jump_forward.md](prompts/restore_agent_jump_forward.md)
+- **AGENTS:**
+  - [bbugyi200.athena.eh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eh/README.md)
+  - [bbugyi200.athena.eh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eh.md#member-code)
+- **COMMITS:**
+  - [92bdd6f](https://github.com/sase-org/sase/commit/92bdd6f0c01c2b47e1a0209d71cd00b19e60b33b) — fix(ace): restore forward jump across tabs
 
 # Plan: Restore jump-forward navigation on every ACE tab
 

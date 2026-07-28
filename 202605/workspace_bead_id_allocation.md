@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/workspace_bead_id_allocation.md](prompts/workspace_bead_id_allocation.md)
+- **COMMITS:**
+  - [fb17009](https://github.com/sase-org/sase/commit/fb17009483bf1cf0c66bb49b98af9731ffbb1de9) — fix: allocate bead IDs across workspaces
 
 # Workspace-Aware Bead ID Allocation
 

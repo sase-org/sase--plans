@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/repeat_wait_chain.md](prompts/repeat_wait_chain.md)
+- **COMMITS:**
+  - [c8320ca](https://github.com/sase-org/sase/commit/c8320caadff6efd11e7029d779ae24ebebe0f19e) — fix: chain %repeat iterations via injected %wait directives
 
 # Sequential `%repeat` via `%wait` Chain
 

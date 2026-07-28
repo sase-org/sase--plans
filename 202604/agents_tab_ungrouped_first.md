@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_tab_ungrouped_first.md](prompts/agents_tab_ungrouped_first.md)
+- **COMMITS:**
+  - [c29517b](https://github.com/sase-org/sase/commit/c29517b6d2806b2d536914e5301d4418b614ee93) — fix: sort ungrouped agents above level-2 groups on Agents tab
 
 # Sort ungrouped agents above all level-2 groups on the Agents tab
 

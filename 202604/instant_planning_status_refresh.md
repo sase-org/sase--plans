@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/instant_planning_status_refresh.md](prompts/instant_planning_status_refresh.md)
+- **COMMITS:**
+  - [9afebe4](https://github.com/sase-org/sase/commit/9afebe47e84ba0bac655bf1b83801f1a7501a281) — feat(ace): pulse \`.ace_refresh_pulse\` from \`sase plan\` for instant \`PLANNING\` status
 
 # Instant `PLANNING` status refresh after `sase plan`
 

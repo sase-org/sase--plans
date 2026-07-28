@@ -11,6 +11,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/clan_unread_navigation.md](prompts/clan_unread_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cx.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.w1.md#member-code)
 
 # Plan: Unread-aware agent clans
 

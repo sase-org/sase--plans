@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/deprioritize_epic_agents.md](prompts/deprioritize_epic_agents.md)
+- **AGENTS:**
+  - [bbugyi200.athena.le](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.le/README.md)
+  - [bbugyi200.athena.le--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.le.md#member-code)
+- **COMMITS:**
+  - [5c7f258](https://github.com/sase-org/sase/commit/5c7f25834f1d4ae04bed2289cee9202f794dd7c1) — fix(xprompts): deprioritize epic agents
 
 # Plan: Deprioritize Epic-Associated Built-in XPrompts
 

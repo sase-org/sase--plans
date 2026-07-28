@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_hook_finalizer_env.md](prompts/fix_hook_finalizer_env.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9d/README.md)
+  - [bbugyi200.athena.9d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9d.md#member-code)
+- **COMMITS:**
+  - [39122ff](https://github.com/sase-org/sase/commit/39122ff058279b2f7f840a3315258e6d5e5be67a) — fix: publish review runner environment before invocation
 
 # Plan: Make scheduler-launched fix-hook/CRS runs commit their work and report real failure reasons
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_project_name.md](prompts/vcs_log_project_name.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2t.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2t.f1.md#member-code)
 
 # Plan: `sase vcs log` — show the project name, not the spec-file slug
 

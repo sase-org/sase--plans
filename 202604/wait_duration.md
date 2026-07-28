@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/wait_duration.md](prompts/wait_duration.md)
+- **COMMITS:**
+  - [f8918b3](https://github.com/sase-org/sase/commit/f8918b36a2992382edef958837a4fb392ca3e728) — feat(xprompt): support duration arguments in %wait directive
 
 # Plan: Duration-based `%wait` support
 
@@ -69,7 +71,7 @@ Add `wait_duration: float | None` to `PromptDirectives` dataclass.
 Update the `_DIRECTIVE_PATTERN` regex if needed — currently the colon-arg character class is
 `[a-zA-Z0-9_#/.()-]*[a-zA-Z0-9_#/()-]` which already allows digits, so `%wait:5m` should parse correctly.
 
-### Phase 3: Propagate duration through \_AgentInfo and agent_meta
+### Phase 3: Propagate duration through _AgentInfo and agent_meta
 
 In `src/sase/axe/run_agent_phases.py`:
 

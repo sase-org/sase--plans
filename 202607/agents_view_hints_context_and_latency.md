@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_view_hints_context_and_latency.md](prompts/agents_view_hints_context_and_latency.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b2/README.md)
+  - [bbugyi200.athena.b2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b2.md#member-code)
+- **COMMITS:**
+  - [5346d2e](https://github.com/sase-org/sase/commit/5346d2edf32ddae932d19009650dce2448401365) — feat(ace): enrich agent view hints asynchronously
 
 # Plan: SASE CONTEXT memory-file view hints + fast, non-blocking hint rendering
 

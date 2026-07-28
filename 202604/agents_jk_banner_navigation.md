@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_jk_banner_navigation.md](prompts/agents_jk_banner_navigation.md)
+- **COMMITS:**
+  - [a945826](https://github.com/sase-org/sase/commit/a94582637bb8d1700450a6e129575bd8666dd18b) — fix: walk banner rows when stepping \`j\`/\`k\` on collapsed Agents tab
 
 # Plan: Fix `j`/`k` Navigation Across Banner Rows on the Agents Tab
 

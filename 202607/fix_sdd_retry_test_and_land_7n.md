@@ -12,6 +12,10 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_sdd_retry_test_and_land_7n.md](prompts/fix_sdd_retry_test_and_land_7n.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7n.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7n.land/README.md)
+- **COMMITS:**
+  - [f452c6b](https://github.com/sase-org/sase/commit/f452c6ba36870f87f8b74f9c218b3c6450c57e94) — test: isolate non-lock retry assertion (sase-7n)
 
 # Plan: Repair the SDD retry regression and land sase-7n
 

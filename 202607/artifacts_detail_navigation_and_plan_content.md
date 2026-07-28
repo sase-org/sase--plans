@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_detail_navigation_and_plan_content.md](prompts/artifacts_detail_navigation_and_plan_content.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6t.land.w2.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6t.land.w2.w1/README.md)
+  - [bbugyi200.athena.sase-6t.land.w2.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6t.land.w2.w1.md#member-code)
+- **COMMITS:**
+  - [c8abfe2](https://github.com/sase-org/sase/commit/c8abfe29f6653fa5615051157e470c4e5dd8ddba) — feat(ace): load linked plans in artifact details
 
 # Plan: Artifacts detail scrolling and linked plan content
 

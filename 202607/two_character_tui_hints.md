@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/two_character_tui_hints.md](prompts/two_character_tui_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ey](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ey/README.md)
+  - [bbugyi200.athena.ey--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ey.md#member-code)
+- **COMMITS:**
+  - [e62eefb](https://github.com/sase-org/sase/commit/e62eefba2787ff9d26a21008afdd83d9dce00e2e) — feat(ace): support two-character jump hints
 
 # Plan: Adaptive two-character TUI jump hints
 

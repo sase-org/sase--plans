@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/tui_backend_indicator.md](prompts/tui_backend_indicator.md)
+- **COMMITS:**
+  - [f0e1ff7](https://github.com/sase-org/sase/commit/f0e1ff773e69b219f8843ba5b445d8a79471c0c6) — feat: show core backend mode in ace TUI
 
 # TUI Backend Indicator Plan
 

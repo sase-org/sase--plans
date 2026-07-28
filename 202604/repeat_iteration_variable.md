@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/repeat_iteration_variable.md](prompts/repeat_iteration_variable.md)
+- **COMMITS:**
+  - [4d5f8ca](https://github.com/sase-org/sase/commit/4d5f8ca32d08f5f6cb5100439dc8635fff3a592a) — feat: Expose N jinja variable for %repeat directive iterations
 
 # Plan: Expose `N` Jinja variable for `%N` / `%repeat` directive
 

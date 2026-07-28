@@ -24,6 +24,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase61_landing_gaps.md](prompts/sase61_landing_gaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-61](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-61/README.md)
+  - [bbugyi200.athena.sase-61--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-61.md#member-code)
+- **COMMITS:**
+  - [beeefa6](https://github.com/sase-org/sase/commit/beeefa6c2b358bf36a79f172d2274e13275d9afe) — fix: require plan validation core bindings (sase-61)
 
 # Plan: Finish landing sase-61 (core release pin, wheel probe, skill deployment)
 

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/family_plan_root_rename.md](prompts/family_plan_root_rename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d7.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1/README.md)
+  - [bbugyi200.athena.d7.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.md#member-code)
+- **COMMITS:**
+  - [fbe165b](https://github.com/sase-org/sase/commit/fbe165baf8bd7b6492c06cf35da5d9ca1610c16e) — feat(agent): rename plan family roots
 
 # Plan: Bare `--plan` family roots and family-name references
 

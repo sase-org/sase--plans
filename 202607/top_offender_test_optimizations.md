@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/top_offender_test_optimizations.md](prompts/top_offender_test_optimizations.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-86.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.3/README.md)
+  - [bbugyi200.athena.sase-86.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.3.md#member-code)
+- **COMMITS:**
+  - [a0a09b2](https://github.com/sase-org/sase/commit/a0a09b22a176d4449acbead9b7b6051efc9c8f81) — perf(test): reduce top-offender suite runtime (sase-86.3)
 
 # Plan: Top-offender test optimizations
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/codex_at_capacity_retry.md](prompts/codex_at_capacity_retry.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4t--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4t.md#member-code)
 
 # Plan: Retry Codex "Selected model is at capacity" Failures by Default
 

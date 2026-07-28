@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/kitty_image_panel_fix.md](prompts/kitty_image_panel_fix.md)
+- **COMMITS:**
+  - [b346275](https://github.com/sase-org/sase/commit/b346275791a81599e73729340518e049fdb6ed57) — fix: size Kitty image previews to panel viewport
 
 # Fix Kitty Image Rendering In File And Notification Panels
 

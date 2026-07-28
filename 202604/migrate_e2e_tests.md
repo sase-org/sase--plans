@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/migrate_e2e_tests.md](prompts/migrate_e2e_tests.md)
+- **COMMITS:**
+  - [c1e174a](https://github.com/sase-org/sase/commit/c1e174aad24fe8ea8674321799a03d4e364a621c) — feat: Add PromptPage testing DSL and migrate normal-mode tests
 
 # Plan: Migrate E2E Tests to AcePage Testing DSL
 

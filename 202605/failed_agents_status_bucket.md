@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/failed_agents_status_bucket.md](prompts/failed_agents_status_bucket.md)
+- **COMMITS:**
+  - [8164a37](https://github.com/sase-org/sase/commit/8164a3787e513895253b636f1cb3f2e07abd85ad) — fix: bucket failed agents separately
 
 # Plan: Separate Failed Agents From Needs Attention
 

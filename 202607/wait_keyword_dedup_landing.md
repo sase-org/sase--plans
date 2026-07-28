@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_keyword_dedup_landing.md](prompts/wait_keyword_dedup_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7h.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7h.land/README.md)
+  - [bbugyi200.athena.sase-7h.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7h.land.md#member-code)
+- **COMMITS:**
+  - [9292056](https://github.com/sase-org/sase/commit/9292056356591c4c58558300dafe03dfb0082fa7) — fix(ace): deduplicate selected wait clauses
 
 # Plan: Finish wait-target completion and land sase-7h
 

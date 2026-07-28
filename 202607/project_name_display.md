@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/project_name_display.md](prompts/project_name_display.md)
+- **AGENTS:**
+  - [bbugyi200.athena.mp.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.f0.md#member-code)
+  - [bbugyi200.athena.mp.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.f0.md#member-plan)
+- **COMMITS:**
+  - [4fb5980](https://github.com/sase-org/sase/commit/4fb5980600a819238d77e4add6bc3487378d5d94) — fix(ace): show configured project names in commits UI
 
 # Show configured project names, never ProjectSpec keys
 

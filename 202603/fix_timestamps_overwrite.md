@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [1c83469](https://github.com/sase-org/sase/commit/1c83469969198ecca0b893fe7f9e72ea8146b70d) — fix: Add TIMESTAMPS to field header tuples to prevent silent data loss
+
 # Fix: TIMESTAMPS field overwritten when hooks are updated
 
 ## Problem

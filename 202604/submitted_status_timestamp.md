@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/submitted_status_timestamp.md](prompts/submitted_status_timestamp.md)
+- **COMMITS:**
+  - [95bfee1](https://github.com/sase-org/sase/commit/95bfee1f81723ec3982ff1f0816cbf064efdd709) — fix: record submitted status timestamps after archive moves
 
 # Submitted STATUS Timestamp Plan
 

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fast_updates_u_keymap.md](prompts/fast_updates_u_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h0/README.md)
+  - [bbugyi200.athena.h0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h0.md#member-code)
+- **COMMITS:**
+  - [e2ba793](https://github.com/sase-org/sase/commit/e2ba79309adfa14722851c93c13c29c8c468be83) — perf: reuse fresh roots for update previews
 
 # Plan: Make the Admin Center update key responsive
 

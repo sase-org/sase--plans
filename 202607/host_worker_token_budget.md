@@ -11,6 +11,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/host_worker_token_budget.md](prompts/host_worker_token_budget.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-86.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.1/README.md)
+  - [bbugyi200.athena.sase-86.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.1.md#member-code)
+- **COMMITS:**
+  - [8599baa](https://github.com/sase-org/sase/commit/8599baa3a93e6c1c4a8c1f05b6f0c014b64aa322) — feat(test): add host-global pytest worker budget (sase-86.1)
 
 # Plan: Host-global pytest worker-token budget
 

@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_bead_statuses.md](prompts/wait_bead_statuses.md)
+- **AGENTS:**
+  - [bbugyi200.athena.li](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.li/README.md)
+  - [bbugyi200.athena.li--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.li.md#member-code)
+- **COMMITS:**
+  - [28c4097](https://github.com/sase-org/sase/commit/28c40972a2c41abec5a165560da188ba732caac8) — feat(ace): show statuses for waited-on beads
 
 # Plan: Per-bead status badges in the agent detail `Wait:` field
 

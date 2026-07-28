@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_command.md](prompts/vcs_log_command.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2g.md#member-code)
 
 # Plan: `sase vcs` — a linked-repo-aware, provider-agnostic `git log`
 

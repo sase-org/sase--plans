@@ -3,6 +3,10 @@ create_time: 2026-04-25 21:08:23
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [4afd82b](https://github.com/sase-org/sase/commit/4afd82b56aa9dbce6f40cf99d4b967125ab52aa9) — feat: improve visibility of runtime suffix on Agents tab
+
 # Plan: Improve visibility of the runtime suffix on the Agents tab
 
 ## Goal

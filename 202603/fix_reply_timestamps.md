@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_reply_timestamps.md](prompts/fix_reply_timestamps.md)
+- **COMMITS:**
+  - [269fb05](https://github.com/sase-org/sase/commit/269fb05abd8ed034817b722ca60549e31f55a678) — fix: Record per-chunk timestamps for Gemini and Claude agent replies
 
 # Fix AGENT REPLY Per-Chunk Timestamps for All Model Runtimes
 

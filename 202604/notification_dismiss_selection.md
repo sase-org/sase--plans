@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/notification_dismiss_selection.md](prompts/notification_dismiss_selection.md)
+- **COMMITS:**
+  - [cc1d270](https://github.com/sase-org/sase/commit/cc1d270a309976e6917b049d301498c74344e3ad) — fix: preserve notification dismiss visual selection
 
 # Plan: Deterministic notification selection after dismiss
 

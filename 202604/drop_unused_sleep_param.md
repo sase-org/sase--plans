@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/drop_unused_sleep_param.md](prompts/drop_unused_sleep_param.md)
+- **COMMITS:**
+  - [2767466](https://github.com/sase-org/sase/commit/2767466b8f132baacf2d6faef83b156119126ae4) — ref: drop unused \`sleep\` param from \`_BatchTimestampAllocator\`
 
 # Plan: Drop Unused `sleep` Parameter From `_BatchTimestampAllocator`
 

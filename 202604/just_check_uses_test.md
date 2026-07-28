@@ -3,6 +3,10 @@ create_time: 2026-04-24 10:30:48
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [43fb68d](https://github.com/sase-org/sase/commit/43fb68dc25fe423de4ce1234ca6c27399d9648d7) — chore: run \`just test\` (not \`just test-cov\`) in \`just check\`
+
 # Plan: `just check` runs `just test` (coverage reserved for CI)
 
 ## Goal

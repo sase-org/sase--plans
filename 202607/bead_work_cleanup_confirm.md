@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_work_cleanup_confirm.md](prompts/bead_work_cleanup_confirm.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j7/README.md)
+  - [bbugyi200.athena.j7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j7.md#member-code)
+- **COMMITS:**
+  - [485e562](https://github.com/sase-org/sase/commit/485e5624ef9630119bd3e4fa2a11c0d1f51d743e) — fix(bead)\!: confirm destructive forced-reuse cleanup
 
 # Make `sase bead work` resilient: previewed, confirmed agent cleanup + `-Y/--yes-to-all`
 

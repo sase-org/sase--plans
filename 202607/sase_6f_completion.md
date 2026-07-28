@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_6f_completion.md](prompts/sase_6f_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6f/README.md)
+  - [bbugyi200.athena.sase-6f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6f.md#member-code)
+- **COMMITS:**
+  - [73de857](https://github.com/sase-org/sase/commit/73de8575bc63180822daf1a41cbf70855a8bb6fe) — test: cover deleted cwd through xprompt sources
 
 # Plan: Complete and land user-defined Telegram slash commands
 

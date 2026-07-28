@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/remove_custom_revival_scope_picker.md](prompts/remove_custom_revival_scope_picker.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5u--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5u.md#member-code)
 
 # Plan: Open Custom Revival Search Directly on Recent Dismissed Agents
 

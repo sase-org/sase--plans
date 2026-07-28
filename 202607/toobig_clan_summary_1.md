@@ -4,12 +4,14 @@ title: Complete the toobig split clan summary
 goal: The toobig split chop authors one compact summary that survives dedupe and appears
   exactly once on the concrete clan declaration.
 bead: sase-8l.2
-parent: sase/repos/plans/202607/toobig_clan_summary.md
 create_time: 2026-07-22 12:57:14
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/toobig_clan_summary_1.md](prompts/toobig_clan_summary_1.md)
+- **PARENT:** [202607/toobig_clan_summary.md](https://github.com/sase-org/sase--plans/blob/main/202607/toobig_clan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8l.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.2.md#member-code)
 
 # Complete the `toobig_split` Clan Summary
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/ace_duplicate_attempt_option_crash.md](prompts/ace_duplicate_attempt_option_crash.md)
+- **COMMITS:**
+  - [28f06d3](https://github.com/sase-org/sase/commit/28f06d3882becf1b5d231fa5ab1310d78146b76a) — fix: Skip attempt rows for workflow child steps in ace Agents tab
 
 # Plan: Fix `sase ace` `DuplicateID` crash when expanding workflows with attempt history
 

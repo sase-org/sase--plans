@@ -5,12 +5,17 @@ goal: Declaring clan members refresh script-backed summaries after their workspa
   and sidecars are ready, preserving the newest successful result across runner re-execs
   while keeping failures non-fatal and diagnosable.
 bead: sase-8i.3
-parent: sase/repos/plans/202607/race_free_epic_clan_summaries.md
 create_time: 2026-07-21 11:42:01
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/post_preparation_clan_summary_reresolution.md](prompts/post_preparation_clan_summary_reresolution.md)
+- **PARENT:** [202607/race_free_epic_clan_summaries.md](https://github.com/sase-org/sase--plans/blob/main/202607/race_free_epic_clan_summaries.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8i.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8i.3/README.md)
+  - [bbugyi200.athena.sase-8i.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.3.md#member-code)
+- **COMMITS:**
+  - [865d5c1](https://github.com/sase-org/sase/commit/865d5c191e7fcecf6f7f96c9f1ba2732d6436d6b) — fix: refresh clan summaries after workspace preparation (sase-8i.3)
 
 # Plan: Post-preparation clan summary re-resolution
 

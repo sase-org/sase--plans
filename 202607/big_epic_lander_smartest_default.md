@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/big_epic_lander_smartest_default.md](prompts/big_epic_lander_smartest_default.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1.f8.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f8.f0/README.md)
+  - [bbugyi200.athena.gy.f1.f8.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f8.f0.md#member-code)
+- **COMMITS:**
+  - [96fe7e7](https://github.com/sase-org/sase/commit/96fe7e78af7e3cb687d2cef83c91713229fc6663) — feat: route large epic landers through smartest alias
 
 # Plan: Default big epic landers to the smartest model
 

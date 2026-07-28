@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_scoped_single_key_fold_hints.md](prompts/tribe_scoped_single_key_fold_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kq/README.md)
+  - [bbugyi200.athena.kq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kq.md#member-code)
+- **COMMITS:**
+  - [266eac0](https://github.com/sase-org/sase/commit/266eac076ab2986a6153fd5f2818761d4b11d109) — feat(ace): add tribe-scoped fold hints
 
 # Plan
 

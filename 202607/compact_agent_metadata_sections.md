@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/compact_agent_metadata_sections.md](prompts/compact_agent_metadata_sections.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9w](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9w/README.md)
+  - [bbugyi200.athena.9w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9w.md#member-code)
+- **COMMITS:**
+  - [728595e](https://github.com/sase-org/sase/commit/728595e54ae517b2befb140dca7d5b29e8be2934) — fix(tui): compact agent metadata sections
 
 # Plan: Compact agent metadata sections
 

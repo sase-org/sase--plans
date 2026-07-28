@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prompt_history_load_inline.md](prompts/prompt_history_load_inline.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4s.md#member-code)
 
 # Fix Prompt-History `<ctrl+i>` Load to Preserve the Existing Prompt Stack
 

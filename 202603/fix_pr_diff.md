@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_pr_diff.md](prompts/fix_pr_diff.md)
+- **COMMITS:**
+  - [60640e0](https://github.com/sase-org/sase/commit/60640e00c693d0039f68be95d2efd6254ba96ef2) — fix: use merge-base diff for full PR diff in vcs_diff_revision
 
 # Fix `d` Keymap to Show Full PR Diff (Git/GitHub)
 

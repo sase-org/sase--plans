@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/telegram_launch_retry_button.md](prompts/telegram_launch_retry_button.md)
+- **COMMITS:**
+  - [40193af](https://github.com/sase-org/sase/commit/40193afa296c252f0b86f61f2f6df6d4297e59c1) — chore: mark telegram_launch_retry_button plan as done
 
 # Add Retry Copy Button to Telegram Agent Launch Message
 

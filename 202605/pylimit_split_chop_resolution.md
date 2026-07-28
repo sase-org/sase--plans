@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/pylimit_split_chop_resolution.md](prompts/pylimit_split_chop_resolution.md)
+- **COMMITS:**
+  - [10e0f97](https://github.com/sase-org/sase/commit/10e0f97609895937289380d6cf97c4f4722a3022) — chore: mark pylimit split chop plan done
 
 # Plan: Make the `sase_pylimit_split` chop resolve the real workflow reliably
 

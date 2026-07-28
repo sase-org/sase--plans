@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/drop_coder_resume_prefix.md](prompts/drop_coder_resume_prefix.md)
+- **COMMITS:**
+  - [d38b9a0](https://github.com/sase-org/sase/commit/d38b9a01587ab2e8459cd692ee646e7479bec801) — fix: drop \`\#resume:\<planner\>\` from coder prompts by default
 
 # Plan: Drop `#resume:<planner>` from Coder Agent Prompts to Fix "Prompt is too long"
 

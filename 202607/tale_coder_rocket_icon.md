@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tale_coder_rocket_icon.md](prompts/tale_coder_rocket_icon.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dn](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dn/README.md)
+  - [bbugyi200.athena.dn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dn.md#member-code)
+- **COMMITS:**
+  - [9c2f000](https://github.com/sase-org/sase/commit/9c2f00092ee7adf636d499db24d58e034846ec69) — fix(plan-gate): distinguish tale launch icon
 
 # Plan: Distinguish tale coder launch with a rocket icon
 

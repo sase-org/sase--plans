@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/label_epic_gate_action.md](prompts/label_epic_gate_action.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d6.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d6.f0/README.md)
+  - [bbugyi200.athena.d6.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d6.f0.md#member-code)
+- **COMMITS:**
+  - [60d2960](https://github.com/sase-org/sase/commit/60d29600174e9dbe5e7c101efd7800bf1f7bca0a) — fix(plan-gate): label epic approval action as Epic
 
 # Plan: Label the epic plan gate action as Epic
 

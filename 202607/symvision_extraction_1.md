@@ -6,6 +6,8 @@ bead_id: sase-5t
 ---
 
 - **PROMPT:** [202607/prompts/symvision_extraction_1.md](prompts/symvision_extraction_1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7a.w-0--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7a.w-0.md#member-epic)
 
 # Factor pyvision into symvision and migrate sase + chezmoi
 

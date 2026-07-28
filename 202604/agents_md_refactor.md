@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_md_refactor.md](prompts/agents_md_refactor.md)
+- **COMMITS:**
+  - [160b6e4](https://github.com/sase-org/sase/commit/160b6e4fd4d1c621c995f3ff6fe64cb0a0aaf68b) — ref: Extract AGENTS.md sections into memory/ directory
 
 # Plan: Extract AGENTS.md Sections into memory/ Directory
 

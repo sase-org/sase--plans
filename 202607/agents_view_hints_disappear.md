@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agents_view_hints_disappear.md](prompts/agents_view_hints_disappear.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3o.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3o.w2.md#member-code)
 
 # Fix: Agents-tab `v` (view) hints disappear before the user submits input
 

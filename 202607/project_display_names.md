@@ -40,6 +40,11 @@ bead_id: sase-89
 ---
 
 - **PROMPT:** [202607/prompts/project_display_names.md](prompts/project_display_names.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-89.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.1.md#member-code)
+  - [bbugyi200.athena.sase-89.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.2.md#member-code)
+  - [bbugyi200.athena.sase-89.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.3.md#member-code)
+  - [bbugyi200.athena.sase-89.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.4.md#member-code)
 
 # Problem and evidence
 

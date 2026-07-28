@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/live_saved_snippets.md](prompts/live_saved_snippets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.da.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.da.f1/README.md)
+  - [bbugyi200.athena.da.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.da.f1.md#member-code)
+- **COMMITS:**
+  - [d68b0a4](https://github.com/sase-org/sase/commit/d68b0a461f8dd963b5506136e10700c7cb7b3994) — fix(ace): keep saved snippets live in prompt catalog
 
 # Plan: Make newly saved snippets live in open ACE prompts
 

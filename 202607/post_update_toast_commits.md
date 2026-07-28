@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/post_update_toast_commits.md](prompts/post_update_toast_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i2/README.md)
+  - [bbugyi200.athena.i2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i2.md#member-code)
+- **COMMITS:**
+  - [7c71edf](https://github.com/sase-org/sase/commit/7c71edf08ff7e6581a56af3cc9072272fae3a5cc) — feat(ace): show applied commits in post-update toast
 
 # Plan: Post-restart update toast — commits grouped by repo
 

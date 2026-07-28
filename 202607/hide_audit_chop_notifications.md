@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/hide_audit_chop_notifications.md](prompts/hide_audit_chop_notifications.md)
+- **AGENTS:**
+  - [bbugyi200.athena.60](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.60/README.md)
+  - [bbugyi200.athena.60--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.60.md#member-code)
+- **COMMITS:**
+  - [73b7db3](https://github.com/sase-org/sase/commit/73b7db3afbd1c9951be5703247624ee58427728f) — fix: hide audit launcher marker notifications
 
 # Hide audit chop completion notifications
 

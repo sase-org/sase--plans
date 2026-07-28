@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/commit_timeline_position_badge.md](prompts/commit_timeline_position_badge.md)
+- **AGENTS:**
+  - [bbugyi200.athena.he](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.he/README.md)
+  - [bbugyi200.athena.he--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.he.md#member-code)
+- **COMMITS:**
+  - [1fe0afe](https://github.com/sase-org/sase/commit/1fe0afee6009fa5af8eccd3ddf278bdecae8b582) — feat(ace): show commit timeline position badge
 
 # Plan: Commit timeline position badge
 

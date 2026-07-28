@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_failing_ci_jobs.md](prompts/fix_failing_ci_jobs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2w.md#member-code)
 
 # Fix Failing GitHub Actions Jobs (sase repo)
 

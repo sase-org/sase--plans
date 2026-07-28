@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_primary_enter.md](prompts/gate_primary_enter.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d6.f1.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d6.f1.w1/README.md)
+  - [bbugyi200.athena.d6.f1.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d6.f1.w1.md#member-code)
+- **COMMITS:**
+  - [005f431](https://github.com/sase-org/sase/commit/005f431eb8e50c8ea187145d6c9eeb612ba32b88) — feat(gates)\!: add canonical primary branch submission
 
 # Plan: Make Enter submit every notification gate's primary action
 

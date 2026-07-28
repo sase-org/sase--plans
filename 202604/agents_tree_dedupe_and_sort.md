@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_tree_dedupe_and_sort.md](prompts/agents_tree_dedupe_and_sort.md)
+- **COMMITS:**
+  - [17e1c81](https://github.com/sase-org/sase/commit/17e1c817644f658423a2bb7eea8863c07802b368) — fix: dedupe and deterministically order group banners in Agents tree
 
 # Plan: Stop splitting `(untagged)` (and other groups) on the Agents tab + sort groups deterministically
 

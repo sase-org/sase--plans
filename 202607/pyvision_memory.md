@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/pyvision_memory.md](prompts/pyvision_memory.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3j.md#member-code)
 
 # Plan: Add a `memory/pyvision.md` long-term memory for fixing pyvision errors
 

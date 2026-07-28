@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/prettier_underscore_emphasis.md](prompts/prettier_underscore_emphasis.md)
+- **COMMITS:**
+  - [7ed079d](https://github.com/sase-org/sase/commit/7ed079d803a3f08f174aa3ff3df5ea0eca05cca2) — fix: Protect XPROMPT MEMORY lines from Prettier underscore mangling
 
 # Fix Prettier Converting Underscores to Asterisks in File Paths
 

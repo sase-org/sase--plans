@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/skip_bare_word_at_refs.md](prompts/skip_bare_word_at_refs.md)
+- **COMMITS:**
+  - [d901c57](https://github.com/sase-org/sase/commit/d901c57d778e3b660e402ef59288e5d7d0125830) — fix: skip bare-word \`@\<word\>\` tokens in file-reference validation
 
 # Plan: Skip validation of bare-word `@<word>` references
 

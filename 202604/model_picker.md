@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [f793902](https://github.com/sase-org/sase/commit/f7939021a706c099a0361f36d18be5b98376f75f) — feat: Add LLM model picker to Approve with Options modal
+
 # Plan: LLM Model Picker for Approve with Options Modal
 
 ## Goal

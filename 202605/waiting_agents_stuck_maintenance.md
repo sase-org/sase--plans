@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/waiting_agents_stuck_maintenance.md](prompts/waiting_agents_stuck_maintenance.md)
+- **COMMITS:**
+  - [172f3df](https://github.com/sase-org/sase/commit/172f3df6fd68f563d4a28e4a74949950cf0a45e1) — fix: clear stale axe maintenance for dead owner pids
 
 # Plan: Fix WAITING Agents Stuck Behind Stale Axe Maintenance
 

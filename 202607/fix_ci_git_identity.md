@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_git_identity.md](prompts/fix_ci_git_identity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.45--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.45.md#member-code)
 
 # Fix CI Git Identity Failures
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_header_counts.md](prompts/agents_header_counts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq/README.md)
+  - [bbugyi200.athena.jq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.md#member-code)
+- **COMMITS:**
+  - [86dc5a0](https://github.com/sase-org/sase/commit/86dc5a04895671ef29fe61ba695eff1bf6ec7eaa) — feat(ace): consolidate Agents header status counts
 
 # Consolidate Agents-tab running capacity and status counts
 

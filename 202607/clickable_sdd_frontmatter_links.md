@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clickable_sdd_frontmatter_links.md](prompts/clickable_sdd_frontmatter_links.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gz/README.md)
+  - [bbugyi200.athena.gz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gz.md#member-code)
+- **COMMITS:**
+  - [8e7851e](https://github.com/sase-org/sase/commit/8e7851edeb78730fceabd9adfe2ee0b9d1f56ee3) — feat: add clickable SDD frontmatter links
 
 # Plan: Make SDD prompt and plan frontmatter links clickable
 

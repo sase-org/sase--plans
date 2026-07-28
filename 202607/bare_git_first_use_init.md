@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/bare_git_first_use_init.md](prompts/bare_git_first_use_init.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6.md#member-code)
 
 # Fix: bare-git project first-use initialization fails on leftover on-disk state
 

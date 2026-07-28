@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/snapshot_gated_comprehensive_update.md](prompts/snapshot_gated_comprehensive_update.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-83.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-83.2/README.md)
+  - [bbugyi200.athena.sase-83.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-83.2.md#member-code)
+- **COMMITS:**
+  - [c82006b](https://github.com/sase-org/sase/commit/c82006bdca22a7c010d933923a1fcddbd4ac288a) — feat(ace): add snapshot-gated comprehensive updates (sase-83.2)
 
 # Plan: Snapshot-gated comprehensive update flow
 

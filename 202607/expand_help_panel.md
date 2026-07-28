@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/expand_help_panel.md](prompts/expand_help_panel.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0e.w1.w1.w1.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e.w1.w1.w1.f1.md#member-code)
 
 # Expand the Help Panel to Use Nearly the Full TUI
 

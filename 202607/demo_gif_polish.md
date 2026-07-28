@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/demo_gif_polish.md](prompts/demo_gif_polish.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a.md#member-code)
 
 # Demo GIF Polish: Fix Visible Defects and Dead Air in the ACE Demo Tapes
 

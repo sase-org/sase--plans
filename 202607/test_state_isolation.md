@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/test_state_isolation.md](prompts/test_state_isolation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.11](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.11/README.md)
+  - [bbugyi200.athena.sase-8g.11--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.11.md#member-code)
+- **COMMITS:**
+  - [866aea6](https://github.com/sase-org/sase/commit/866aea65a3fc91224db3382125e71fd3494bcd70) — feat(telemetry): isolate test state and add cleanup command (sase-8g.11)
 
 # Plan: Isolate pytest state writes and clean polluted telemetry
 

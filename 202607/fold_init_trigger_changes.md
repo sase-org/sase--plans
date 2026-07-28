@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fold_init_trigger_changes.md](prompts/fold_init_trigger_changes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5j.md#member-code)
 
 # Fold `sase init` trigger changes into generated commits
 

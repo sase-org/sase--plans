@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/telegram_bead_command.md](prompts/telegram_bead_command.md)
+- **COMMITS:**
+  - [113a936](https://github.com/sase-org/sase/commit/113a936cc23878cd7ef2262e84c1786c019ba62b) — chore(plans): mark telegram_bead_command plan as done
 
 # Plan: `/bead` Telegram Slash Command
 

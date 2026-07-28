@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/neighbors_above_sase_context.md](prompts/neighbors_above_sase_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-99.land.f3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-99.land.f3/README.md)
+  - [bbugyi200.athena.sase-99.land.f3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-99.land.f3.md#member-code)
+- **COMMITS:**
+  - [c917bc0](https://github.com/sase-org/sase/commit/c917bc04d341885ec11fdf4285288cc846fa4469) — feat(ace): move the lane NEIGHBORS section above SASE CONTEXT
 
 # Move the lane `NEIGHBORS` section above `SASE CONTEXT`
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prompt_codeblock_highlight.md](prompts/prompt_codeblock_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8b.f0.w1.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b.f0.w1.w1/README.md)
+  - [bbugyi200.athena.8b.f0.w1.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.f0.w1.w1.md#member-code)
+- **COMMITS:**
+  - [a9813bf](https://github.com/sase-org/sase/commit/a9813bf2c4014b6ac467476c2dcd7870436917e7) — feat: highlight literal code in prompts
 
 # Code-Block Syntax Highlighting for the Prompt Input Widget
 

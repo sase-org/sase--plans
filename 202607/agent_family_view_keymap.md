@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_family_view_keymap.md](prompts/agent_family_view_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gv/README.md)
+  - [bbugyi200.athena.gv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gv.md#member-code)
+- **COMMITS:**
+  - [6cbb38f](https://github.com/sase-org/sase/commit/6cbb38faf62635b8e070ec66347ff118c2d6bd3d) — fix(ace): enable view hints for agent families
 
 # Plan: Restore view hints for agent-family details
 

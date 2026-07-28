@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_planning_status_after_feedback.md](prompts/fix_planning_status_after_feedback.md)
+- **COMMITS:**
+  - [95dd186](https://github.com/sase-org/sase/commit/95dd1864270ccfcbed1cf03f785b4e8802e1aad2) — fix: Show RUNNING instead of PLANNING when feedback round is active
 
 # Fix: Agent shows PLANNING instead of RUNNING after user gives feedback
 

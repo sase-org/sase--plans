@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_plan_proposal_bell.md](prompts/restore_plan_proposal_bell.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i4/README.md)
+  - [bbugyi200.athena.i4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i4.md#member-code)
+- **COMMITS:**
+  - [679a41b](https://github.com/sase-org/sase/commit/679a41b42eaed4821cfa699139d3088f804cbd77) — fix(ace): restore arrival bell for plan reviews
 
 # Plan: Restore the tale/epic plan-proposal terminal bell
 

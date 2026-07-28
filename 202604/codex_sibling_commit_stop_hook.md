@@ -3,6 +3,10 @@ create_time: 2026-04-25 12:07:11
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [442a68c](https://github.com/sase-org/sase/commit/442a68c55ef66fe88215992860cb2b29a1d16120) — fix: check sibling repos from Codex stop hooks
+
 # Plan: Fix Codex Sibling Repo Commit Stop Hook Coverage
 
 ## Problem

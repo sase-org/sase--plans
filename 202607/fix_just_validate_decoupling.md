@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_just_validate_decoupling.md](prompts/fix_just_validate_decoupling.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6l.md#member-code)
 
 # Fix `fix_just` Lumberjack Churn Without Dropping `sase validate` From CI
 

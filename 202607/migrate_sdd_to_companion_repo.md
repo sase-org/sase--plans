@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/migrate_sdd_to_companion_repo.md](prompts/migrate_sdd_to_companion_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1u--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1u.md#member-1)
+  - [bbugyi200.athena.1u--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1u.md#member-code)
 
 # Plan: Migrate sase-org/sase SDD Files to the `sase-org/sdd` Companion Repo
 

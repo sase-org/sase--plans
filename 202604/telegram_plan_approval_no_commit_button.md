@@ -8,6 +8,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/telegram_plan_approval_no_commit_button.md](prompts/telegram_plan_approval_no_commit_button.md)
+- **COMMITS:**
+  - [a4cd3e7](https://github.com/sase-org/sase/commit/a4cd3e7fd1c66b5ddde6485e4cba84eaa85111da) — chore: Mark telegram_plan_approval_no_commit_button plan as done
 
 # Replace Telegram "📦 Commit" with "🚀 Run" (approve, no plan commit)
 

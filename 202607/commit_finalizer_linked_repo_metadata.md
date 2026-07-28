@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/commit_finalizer_linked_repo_metadata.md](prompts/commit_finalizer_linked_repo_metadata.md)
+- **AGENTS:**
+  - [bbugyi200.athena.84](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.84/README.md)
+  - [bbugyi200.athena.84--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.84.md#member-code)
+- **COMMITS:**
+  - [36b962a](https://github.com/sase-org/sase/commit/36b962ad9f664186dfa52b372469a9318b2c0fa7) — fix(workspaces): isolate generated SASE repo metadata
 
 # Fix: Commit finalizer fails on SASE-generated metadata inside linked repo checkouts (sase-5y.3 failure)
 

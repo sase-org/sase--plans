@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/per_workspace_sdd_clone.md](prompts/per_workspace_sdd_clone.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2o.cld--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2o.cld.md#member-code)
 
 # Plan: Per-workspace SDD clones so coder hand-offs resolve `@.sase/sdd/...`
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/prompt_too_long_checkpoint_restart.md](prompts/prompt_too_long_checkpoint_restart.md)
+- **COMMITS:**
+  - [cbb98af](https://github.com/sase-org/sase/commit/cbb98af745b499259eaa2aa62fbcc395a908e886) — feat: auto-recover claude agents from "Prompt is too long" via built-in retry
 
 # Plan: Auto-Recover Coder Agents from "Prompt is too long" via Checkpoint-Restart
 

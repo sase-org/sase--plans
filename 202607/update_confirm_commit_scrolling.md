@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/update_confirm_commit_scrolling.md](prompts/update_confirm_commit_scrolling.md)
+- **AGENTS:**
+  - [bbugyi200.athena.c1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c1/README.md)
+  - [bbugyi200.athena.c1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c1.md#member-code)
+- **COMMITS:**
+  - [05dc1db](https://github.com/sase-org/sase/commit/05dc1db089965775e5f20be4dcacda66a60411a4) — fix: contain scrollable update commit previews
 
 # Plan: Reliable update-confirmation commit scrolling
 

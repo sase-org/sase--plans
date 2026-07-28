@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_project_labels.md](prompts/statistics_project_labels.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-89.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.2/README.md)
+  - [bbugyi200.athena.sase-89.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.2.md#member-code)
+- **COMMITS:**
+  - [e584c89](https://github.com/sase-org/sase/commit/e584c89df570717429bdc477fdec0f76377d9f64) — feat(stats): render configured project labels (sase-89.2)
 
 # Plan: Repair every Statistics project label
 

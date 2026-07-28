@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/async_single_agent_dismissals.md](prompts/async_single_agent_dismissals.md)
+- **COMMITS:**
+  - [cbffc48](https://github.com/sase-org/sase/commit/cbffc488d6f22a4f4d06b74691ad780b9d9d4e1f) — feat: make single-agent dismissals async
 
 # Make Single-Agent Dismissals Asynchronous
 

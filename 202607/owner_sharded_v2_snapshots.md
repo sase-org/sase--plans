@@ -4,12 +4,17 @@ title: Owner-sharded v2 hood snapshots and beautiful overviews
 goal: Publish complete project-scoped agent hoods through strict owner-sharded snapshots
   and deterministic browsable Markdown without rewriting legacy v1 data.
 bead: sase-8v.4
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 16:02:00
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/owner_sharded_v2_snapshots.md](prompts/owner_sharded_v2_snapshots.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.4/README.md)
+  - [bbugyi200.athena.sase-8v.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.4.md#member-code)
+- **COMMITS:**
+  - [2464be5](https://github.com/sase-org/sase/commit/2464be5462bd99580d0a91b2802abea3560e9064) — feat(agents): publish owner-sharded v2 hood snapshots (sase-8v.4)
 
 # Plan: Owner-sharded v2 hood snapshots and beautiful overviews
 

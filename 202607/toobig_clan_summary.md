@@ -25,6 +25,12 @@ bead_id: sase-8l
 ---
 
 - **PROMPT:** [202607/prompts/toobig_clan_summary.md](prompts/toobig_clan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8l.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8l.1/README.md)
+  - [bbugyi200.athena.sase-8l.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.1.md#member-code)
+  - [bbugyi200.athena.sase-8l.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.2.md#member-code)
+- **COMMITS:**
+  - [eaef2d7](https://github.com/sase-org/sase/commit/eaef2d78b1faf15a0764e08b066383ee4d6a48e3) — feat(axe): carry clan summaries through chop launches (sase-8l.1)
 
 # Beautiful `toobig_split` Clan Summaries
 

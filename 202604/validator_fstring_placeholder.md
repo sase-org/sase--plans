@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/validator_fstring_placeholder.md](prompts/validator_fstring_placeholder.md)
+- **COMMITS:**
+  - [6cb0a98](https://github.com/sase-org/sase/commit/6cb0a98de9245b794f4817bef39a48baf8d71da4) — fix(xprompt): accept f-string \`\{path\}\` placeholders in colon-arg validation
 
 # Plan: Teach the workflow validator to recognize Python f-string `{path}` placeholders
 

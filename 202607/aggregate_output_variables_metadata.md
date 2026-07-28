@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/aggregate_output_variables_metadata.md](prompts/aggregate_output_variables_metadata.md)
+- **AGENTS:**
+  - [bbugyi200.athena.34--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.34.md#member-code)
 
 # Plan: Aggregate agent-child SASE variables in the agent metadata panel
 

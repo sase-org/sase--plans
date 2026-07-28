@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_agents_revive_suffix_alias.md](prompts/fix_agents_revive_suffix_alias.md)
+- **COMMITS:**
+  - [cab57a6](https://github.com/sase-org/sase/commit/cab57a6b5399f99b7b5447529e977976edcf8186) — fix: clear dismissed suffix aliases on agent revive
 
 # Fix Agents Tab Revive Not Reappearing In Panel
 

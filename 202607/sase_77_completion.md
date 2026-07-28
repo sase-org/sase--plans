@@ -11,6 +11,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_77_completion.md](prompts/sase_77_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-77.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-77.land/README.md)
+  - [bbugyi200.athena.sase-77.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-77.land.md#member-code)
+- **COMMITS:**
+  - [50f0718](https://github.com/sase-org/sase/commit/50f0718b77722959fd7eb34d6337a853d8f74ae2) — fix(sdd): recover remaining Git index lock contention (sase-77)
+  - [bd7f969](https://github.com/sase-org/sase/commit/bd7f969711101f08a5867fa6821933f29f4f5f2b) — fix(sdd): expose the shared lock retry schedule (sase-77)
 
 # Plan: Complete and land the git index-lock recovery epic
 

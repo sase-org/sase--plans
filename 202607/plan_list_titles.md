@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/plan_list_titles.md](prompts/plan_list_titles.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a4.w0.w0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a4.w0.w0.f0/README.md)
+  - [bbugyi200.athena.a4.w0.w0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a4.w0.w0.f0.md#member-code)
+- **COMMITS:**
+  - [d284ed1](https://github.com/sase-org/sase/commit/d284ed1e593db3f1f2fae7d3163289b1d9b8df41) — feat(cli): show titles in plan inventory
 
 # Plan: Readable titles in `sase plan list`
 

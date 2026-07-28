@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/medium_phase_worker_default_alias.md](prompts/medium_phase_worker_default_alias.md)
+- **AGENTS:**
+  - [bbugyi200.athena.km](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.km/README.md)
+  - [bbugyi200.athena.km--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.km.md#member-code)
+- **COMMITS:**
+  - [e0f310d](https://github.com/sase-org/sase/commit/e0f310d8da7a01c7e67aac9e030582ab746b9b22) — feat(models): make medium phase worker follow default
 
 # Plan: Default `@medium_phase_worker` to `@default@high`
 

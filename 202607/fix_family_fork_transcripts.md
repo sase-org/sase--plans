@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_family_fork_transcripts.md](prompts/fix_family_fork_transcripts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fr/README.md)
+  - [bbugyi200.athena.fr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fr.md#member-code)
+- **COMMITS:**
+  - [1c2e197](https://github.com/sase-org/sase/commit/1c2e197d34e8bf6f0e1462026e9611cfeade3c0c) — fix: resolve family forks from member transcripts
 
 # Plan: Fix agent-family fork transcript resolution
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_deep_navy_foreground.md](prompts/todo_deep_navy_foreground.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i7.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i7.f0/README.md)
+  - [bbugyi200.athena.i7.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i7.f0.md#member-code)
+- **COMMITS:**
+  - [6d6cf8e](https://github.com/sase-org/sase/commit/6d6cf8e773f6bf192af569829262d67c3b1dc96d) — fix(ace): use deep navy for TODO markers
 
 # Use a terminal-safe deep navy foreground for TODO markers
 

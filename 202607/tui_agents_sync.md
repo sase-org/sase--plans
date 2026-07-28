@@ -5,12 +5,17 @@ goal: ACE shows actionable agents-sidecar sync state without TUI performance reg
   and synchronizes every enabled agents repo through tracked manual and comprehensive
   update paths.
 bead: sase-8k.7
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 16:05:58
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/tui_agents_sync.md](prompts/tui_agents_sync.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.7/README.md)
+  - [bbugyi200.athena.sase-8k.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.7.md#member-code)
+- **COMMITS:**
+  - [a075c01](https://github.com/sase-org/sase/commit/a075c014fd5faed7f6c7556fca7d4db51286b891) — feat(ace): surface agents repository sync status (sase-8k.7)
 
 # TUI agents-sidecar sync status, indicator, and comprehensive update leg
 

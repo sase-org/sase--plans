@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/frontmatter_panel_exit.md](prompts/frontmatter_panel_exit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ly](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ly/README.md)
+  - [bbugyi200.athena.ly--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ly.md#member-code)
+- **COMMITS:**
+  - [d6688f1](https://github.com/sase-org/sase/commit/d6688f133b0320d413d2bb4a2c857a15ddaa9782) — fix(ace): preserve prompt space below frontmatter panel
 
 # Plan: Make the xprompt property panel reliably exitable
 

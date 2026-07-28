@@ -7,10 +7,15 @@ goal: Commit-log collection re-anchors semantic date bounds per operation, prese
 create_time: 2026-07-21 10:43:02
 status: done
 bead: sase-8h.2
-parent: sase/repos/plans/202607/commits_filter_correctness.md
 ---
 
 - **PROMPT:** [202607/prompts/truncation_aware_vcs_collection.md](prompts/truncation_aware_vcs_collection.md)
+- **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.2/README.md)
+  - [bbugyi200.athena.sase-8h.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.2.md#member-code)
+- **COMMITS:**
+  - [f9345e7](https://github.com/sase-org/sase/commit/f9345e7c11bedb3b947dc2e17ae65d7b2e6d6d72) — fix(vcs): make commit collection truncation-aware (sase-8h.2)
 
 # Plan: Truncation-aware VCS collection and consistent git date windows
 

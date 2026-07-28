@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/remaining_project_surfaces.md](prompts/remaining_project_surfaces.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-89.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.3/README.md)
+  - [bbugyi200.athena.sase-89.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.3.md#member-code)
+- **COMMITS:**
+  - [148bbb1](https://github.com/sase-org/sase/commit/148bbb1cc982f47100bdeb4ba9acd4e78744d08d) — fix(projects): humanize remaining display surfaces (sase-89.3)
+  - [e3af45c](https://github.com/sase-org/sase/commit/e3af45c7060abb9481e85c2a14c3c99cce74b20a) — fix(stats): retain project display projection helper (sase-89.3)
 
 # Plan: Repair remaining project and ChangeSpec presentation surfaces
 

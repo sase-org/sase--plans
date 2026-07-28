@@ -102,6 +102,8 @@ bead_id: sase-9r
 ---
 
 - **PROMPT:** [202607/prompts/sdd_clone_integration_race.md](prompts/sdd_clone_integration_race.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9r.7--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9r.7.md#member-1)
 
 # Plan: Serialize bead-store writes with SDD sidecar integration
 

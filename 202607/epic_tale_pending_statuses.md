@@ -12,6 +12,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/epic_tale_pending_statuses.md](prompts/epic_tale_pending_statuses.md)
+- **AGENTS:**
+  - [bbugyi200.athena.el--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.el.md#member-code)
 
 # Plan: Tier-aware pending plan review statuses (EPIC / TALE)
 

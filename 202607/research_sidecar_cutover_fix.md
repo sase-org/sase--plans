@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/research_sidecar_cutover_fix.md](prompts/research_sidecar_cutover_fix.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-60](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-60/README.md)
+  - [bbugyi200.athena.sase-60--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-60.md#member-code)
+- **COMMITS:**
+  - [1e3ab66](https://github.com/sase-org/sase/commit/1e3ab66b5a04aa87350801f993fc98c6fe422eed) — fix: preserve sidecar identity during repository cutover
 
 # Fix Research Sidecar Remote Cutover, Remediate Project State, and Land Epic sase-60
 

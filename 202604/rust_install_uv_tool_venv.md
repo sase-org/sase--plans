@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rust_install_uv_tool_venv.md](prompts/rust_install_uv_tool_venv.md)
+- **COMMITS:**
+  - [a40c5e1](https://github.com/sase-org/sase/commit/a40c5e1e08479c860d7763ee01882b0201381a2b) — feat: support installing rust backend into uv-tool venv
 
 # Plan: Install `sase_core_rs` into the user's installed sase venv
 

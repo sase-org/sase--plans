@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_list_redesign.md](prompts/telegram_list_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3f.md#member-code)
 
 # Redesign the `/list` Telegram command
 

@@ -6,6 +6,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/first_blog_post.md](prompts/first_blog_post.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1n--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1n.md#member-epic)
 
 # Plan: First SASE Blog Post — "SASE: Structured Agentic Software Engineering"
 

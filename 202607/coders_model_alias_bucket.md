@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/coders_model_alias_bucket.md](prompts/coders_model_alias_bucket.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5i.w-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5i.w-0.md#member-code)
 
 # Consolidate coder model aliases into the `coders` bucket
 

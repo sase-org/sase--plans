@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/sibling_repo_commit_push.md](prompts/sibling_repo_commit_push.md)
+- **COMMITS:**
+  - [5576507](https://github.com/sase-org/sase/commit/5576507439572a35133cdfb1ecf946eb63f6d2ff) — fix: clarify sibling repo commit guidance
 
 # Plan: Fix sibling repo commit/push guidance
 

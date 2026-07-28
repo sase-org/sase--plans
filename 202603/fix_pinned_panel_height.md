@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_pinned_panel_height.md](prompts/fix_pinned_panel_height.md)
+- **COMMITS:**
+  - [b8b8fd0](https://github.com/sase-org/sase/commit/b8b8fd010c014b4b07626c15c0fb5fb30aa80672) — fix: Correct pinned panel height so content is visible
 
 # Plan: Fix Pinned Panel Height — Content Not Visible
 

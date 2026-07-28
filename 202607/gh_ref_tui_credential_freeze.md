@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/gh_ref_tui_credential_freeze.md](prompts/gh_ref_tui_credential_freeze.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0w.md#member-code)
 
 # Fix ace TUI freeze from interactive git credential prompts (`Username for 'https://github.com':`)
 

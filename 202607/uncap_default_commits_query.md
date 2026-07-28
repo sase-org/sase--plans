@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/uncap_default_commits_query.md](prompts/uncap_default_commits_query.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hb/README.md)
+  - [bbugyi200.athena.hb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hb.md#member-code)
+- **COMMITS:**
+  - [4d98fe0](https://github.com/sase-org/sase/commit/4d98fe0d262fe159a759cf0b412f75c2bba956ae) — feat(ace): uncap default commit queries
 
 # Plan: Uncap the default Artifacts Commits query
 

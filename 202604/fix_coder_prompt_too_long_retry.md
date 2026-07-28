@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_coder_prompt_too_long_retry.md](prompts/fix_coder_prompt_too_long_retry.md)
+- **COMMITS:**
+  - [56f50fd](https://github.com/sase-org/sase/commit/56f50fdd6de18cf6ee5c37eb1fd05e4fe0c6731c) — fix: let retries fire across phase transitions in the agent exec loop
+  - [08845c6](https://github.com/sase-org/sase/commit/08845c64460b9a7b815850164f8c302e76f6da75) — fix: preserve workspace on built-in Claude context-overflow retries
 
 # Plan: Fix "Prompt is too long" Retry Failing for Coder Agents
 

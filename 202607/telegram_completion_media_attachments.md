@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_completion_media_attachments.md](prompts/telegram_completion_media_attachments.md)
+- **AGENTS:**
+  - [bbugyi200.athena.l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.l.md#member-code)
 
 # Plan: Telegram Completion Media Attachments
 

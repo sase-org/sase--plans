@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_split_cl_name.md](prompts/fix_split_cl_name.md)
+- **COMMITS:**
+  - [7e1428e](https://github.com/sase-org/sase/commit/7e1428e70631c0f52a13c62c735aacda10b5d53c) — fix: Inject cl_name, project_file, and workspace_num into workflow context for \`sase run\`
 
 # Plan: Fix `cl_name` undefined in `#split` xprompt workflow via `sase run`
 

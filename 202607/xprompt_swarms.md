@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_swarms.md](prompts/xprompt_swarms.md)
+- **AGENTS:**
+  - [bbugyi200.athena.32--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.32.md#member-code)
+  - [bbugyi200.athena.32--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.32.md#member-plan-0)
 
 # Rename multi-agent xprompts to xprompt swarms
 

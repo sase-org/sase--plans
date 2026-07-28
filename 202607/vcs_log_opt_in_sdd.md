@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_opt_in_sdd.md](prompts/vcs_log_opt_in_sdd.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4h.md#member-code)
 
 # Make SDD Commits Opt-In for `sase vcs log`
 

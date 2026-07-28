@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_summary_directive_edit.md](prompts/clan_summary_directive_edit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7r.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7r.land/README.md)
+  - [bbugyi200.athena.sase-7r.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7r.land.md#member-code)
+- **COMMITS:**
+  - [974c014](https://github.com/sase-org/sase/commit/974c0149526d16b233fb72679f07041a3a8a609e) — fix(xprompt): preserve clan summaries during directive edits (sase-7r)
 
 # Plan: Preserve clan summaries in prompt edits, then land sase-7r
 

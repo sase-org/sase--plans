@@ -8,6 +8,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/unfold_agent_conversation_sections.md](prompts/unfold_agent_conversation_sections.md)
+- **AGENTS:**
+  - [bbugyi200.athena.mr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mr/README.md)
+  - [bbugyi200.athena.mr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.md#member-code)
+  - [bbugyi200.athena.mr--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.md#member-plan)
+- **COMMITS:**
+  - [71942fe](https://github.com/sase-org/sase/commit/71942fe16dacc0fd1ea1819ef53b09bdd000144a) — feat(ace): keep family conversations fully visible
 
 # Keep Agent Conversation Sections Unfolded
 

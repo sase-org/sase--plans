@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/suppress_handled_plan_bell.md](prompts/suppress_handled_plan_bell.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h5/README.md)
+  - [bbugyi200.athena.h5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h5.md#member-code)
+- **COMMITS:**
+  - [e8134fd](https://github.com/sase-org/sase/commit/e8134fdbdca1a527bfafe593955c719a0919b036) — fix(ace): suppress alerts for handled plans
 
 # Plan: Suppress bells for already-handled plan approvals
 

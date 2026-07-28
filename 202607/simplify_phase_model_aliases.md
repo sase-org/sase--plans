@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/simplify_phase_model_aliases.md](prompts/simplify_phase_model_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1.f8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f8/README.md)
+  - [bbugyi200.athena.gy.f1.f8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f8.md#member-code)
+- **COMMITS:**
+  - [58bacaf](https://github.com/sase-org/sase/commit/58bacaf668db5541554a49922203b828df9de916) — feat\!: simplify phase model aliases
 
 # Plan: Simplify phase model aliases and split cheap model pools
 

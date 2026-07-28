@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_kill_focus_visible_order.md](prompts/agents_kill_focus_visible_order.md)
+- **COMMITS:**
+  - [4990648](https://github.com/sase-org/sase/commit/49906485472cb6731eb772520cd6cce99734239a) — fix: re-anchor Agents-tab focus after kill/dismiss to the visually-next row
 
 # `sase ace` Agents tab: `x` (kill / dismiss) jumps focus to a "random" agent instead of the row below the killed one
 

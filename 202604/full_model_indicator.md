@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/full_model_indicator.md](prompts/full_model_indicator.md)
+- **COMMITS:**
+  - [e986669](https://github.com/sase-org/sase/commit/e9866699a80161977d001a6bc335c1cc54258ff4) — fix: show full ace model indicator
 
 # Stop Truncating the Ace Model Indicator
 

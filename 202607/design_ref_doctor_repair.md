@@ -5,12 +5,17 @@ goal: Bead doctor reports broken, ambiguous, and mismatched plan links, an expli
   confirmed repair canonicalizes every safely recoverable legacy reference, and the
   live sase bead store is migrated and revalidated.
 bead: sase-9z.5
-parent: sase/repos/plans/202607/durable_plan_refs.md
 create_time: 2026-07-27 10:02:51
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/design_ref_doctor_repair.md](prompts/design_ref_doctor_repair.md)
+- **PARENT:** [202607/durable_plan_refs.md](https://github.com/sase-org/sase--plans/blob/main/202607/durable_plan_refs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9z.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9z.5/README.md)
+  - [bbugyi200.athena.sase-9z.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9z.5.md#member-code)
+- **COMMITS:**
+  - [7ac5b91](https://github.com/sase-org/sase/commit/7ac5b917c08ebe10f847caacdcabf2a2fcc401a6) — feat(beads): repair legacy design references (sase-9z.5)
 
 # Plan: Validate and repair stored bead plan links
 

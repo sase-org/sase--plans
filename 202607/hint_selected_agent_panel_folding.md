@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/hint_selected_agent_panel_folding.md](prompts/hint_selected_agent_panel_folding.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b0/README.md)
+  - [bbugyi200.athena.b0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b0.md#member-code)
+- **COMMITS:**
+  - [b02ae14](https://github.com/sase-org/sase/commit/b02ae14fb4625e3940ae5e5d25835fd48ec6ba9e) — feat(ace): add selected panel folding mode
 
 # Plan: Hint-selected agent panel folding
 

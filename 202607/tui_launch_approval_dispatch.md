@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/tui_launch_approval_dispatch.md](prompts/tui_launch_approval_dispatch.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f.md#member-code)
 
 # Fix: ACE TUI launch approval never dispatches the approved agent
 

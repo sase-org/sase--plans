@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_6u_epic_landing.md](prompts/sase_6u_epic_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6u.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6u.land/README.md)
+  - [bbugyi200.athena.sase-6u.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6u.land.md#member-code)
+- **COMMITS:**
+  - [d28d297](https://github.com/sase-org/sase/commit/d28d2976bb5cb312ea2ddc92d3b7d01c309dfe1d) — feat(ace): enrich folded clan summaries
 
 # Plan: Complete and land the sase-6u clan-summary folding epic
 

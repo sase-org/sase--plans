@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/github_actions_publish_fix.md](prompts/github_actions_publish_fix.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3h.md#member-code)
 
 # Fix sase-github Publish Workflow Failures
 

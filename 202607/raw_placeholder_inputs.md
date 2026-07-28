@@ -67,6 +67,12 @@ status: done
 bead_id: sase-9q
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9q.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9q.land/README.md)
+  - [bbugyi200.athena.sase-9q.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9q.land.md#member-code)
+- **COMMITS:**
+  - [f5f30f9](https://github.com/sase-org/sase/commit/f5f30f91e6f5c76b02d58b371d64761910448e39) — feat(ace): honor xprompt placeholder argument toggle (sase-9q)
+
 # Plan: Raw `<placeholder>` tags become prompt input arguments
 
 ## Goal

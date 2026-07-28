@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_tab_group_fork.md](prompts/agents_tab_group_fork.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f1/README.md)
+  - [bbugyi200.athena.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f1.md#member-code)
+- **COMMITS:**
+  - [674dd7c](https://github.com/sase-org/sase/commit/674dd7c68f42f3234c22053495f9e5464bf34963) — feat(ace): fork agent clans and tribes
 
 # Plan: Agents-tab fork support for clans and tribes
 

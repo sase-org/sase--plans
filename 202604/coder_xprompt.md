@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/coder_xprompt.md](prompts/coder_xprompt.md)
+- **COMMITS:**
+  - [3ffdf10](https://github.com/sase-org/sase/commit/3ffdf102fd0bf5073d13586eaadf941ed564cf79) — feat: add \`\#coder\` builtin xprompt
 
 # Plan: Add `#coder` builtin xprompt
 

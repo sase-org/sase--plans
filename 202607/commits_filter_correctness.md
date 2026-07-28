@@ -52,6 +52,17 @@ bead_id: sase-8h
 ---
 
 - **PROMPT:** [202607/prompts/commits_filter_correctness.md](prompts/commits_filter_correctness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8h.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1/README.md)
+  - [bbugyi200.athena.sase-8h.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.md#member-code)
+  - [bbugyi200.athena.sase-8h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.2/README.md)
+  - [bbugyi200.athena.sase-8h.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.2.md#member-code)
+  - [bbugyi200.athena.sase-8h.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.3/README.md)
+  - [bbugyi200.athena.sase-8h.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.3.md#member-code)
+- **COMMITS:**
+  - [08f91b4](https://github.com/sase-org/sase/commit/08f91b43df3ccac5f40b2d7a334973ed7ddd8e85) — fix(vcs): re-anchor date filter bounds (sase-8h.1)
+  - [f9345e7](https://github.com/sase-org/sase/commit/f9345e7c11bedb3b947dc2e17ae65d7b2e6d6d72) — fix(vcs): make commit collection truncation-aware (sase-8h.2)
+  - [54e8736](https://github.com/sase-org/sase/commit/54e8736ea7ed487b3f600ad71939316764957b43) — fix(ace): report capped commit results truthfully (sase-8h.3)
 
 # Plan: Commits sub-tab query filter correctness
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rebase_timestamps.md](prompts/rebase_timestamps.md)
+- **COMMITS:**
+  - [2eee5fd](https://github.com/sase-org/sase/commit/2eee5fd062ef2d3db575a8dd6c9c2cf2f29cfa6a) — feat: record rebase timestamps
 
 # Plan: Add REBASE ChangeSpec TIMESTAMPS Entries
 

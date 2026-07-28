@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_entry_sheet.md](prompts/axe_entry_sheet.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jo](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jo/README.md)
+  - [bbugyi200.athena.jo--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jo.md#member-code)
+- **COMMITS:**
+  - [5a9a01f](https://github.com/sase-org/sase/commit/5a9a01fe64ff0936cb1b20a368876ff6897aced4) — feat(ace): redesign AXE entry editor as property sheet
 
 # Plan: AXE Entry Sheet — One Page, Every Property
 

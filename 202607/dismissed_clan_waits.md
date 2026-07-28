@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/dismissed_clan_waits.md](prompts/dismissed_clan_waits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g9/README.md)
+  - [bbugyi200.athena.g9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g9.md#member-code)
+- **COMMITS:**
+  - [b4d689f](https://github.com/sase-org/sase/commit/b4d689f53d6e397f8ef6e3a0b733321e4d9934da) — fix: resolve waits for dismissed clan members
 
 # Plan: Preserve dismissed clan completion for waits and forks
 

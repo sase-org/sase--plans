@@ -4,12 +4,17 @@ title: Ship the polished AXE status CLI
 goal: Operators can inspect one read-only AXE whole-system snapshot in a polished
   terminal view or stable JSON form.
 bead: sase-8t.3
-parent: sase/repos/plans/202607/axe_status.md
 create_time: 2026-07-23 08:43:10
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_status_cli.md](prompts/axe_status_cli.md)
+- **PARENT:** [202607/axe_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8t.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.3/README.md)
+  - [bbugyi200.athena.sase-8t.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.3.md#member-code)
+- **COMMITS:**
+  - [d0cf97a](https://github.com/sase-org/sase/commit/d0cf97a12930b4c28e0f86097518cf05965ca306) — feat(axe): add whole-system status command (sase-8t.3)
 
 # Ship the polished `sase axe status` CLI
 

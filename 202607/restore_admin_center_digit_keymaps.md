@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_admin_center_digit_keymaps.md](prompts/restore_admin_center_digit_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ec](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ec/README.md)
+  - [bbugyi200.athena.ec--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ec.md#member-code)
+- **COMMITS:**
+  - [a1b6b0a](https://github.com/sase-org/sase/commit/a1b6b0a3e1587c82b6836ec458326a4b6ece7d37) — fix(tui): restore admin center digit keymaps
 
 # Plan: Restore SASE Admin Center numbered keymaps
 

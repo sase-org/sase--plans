@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_neighbor_hood_closure.md](prompts/agent_neighbor_hood_closure.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e6/README.md)
+  - [bbugyi200.athena.e6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e6.md#member-code)
+- **COMMITS:**
+  - [a705f79](https://github.com/sase-org/sase/commit/a705f7975a4eae27d350c2d0c1ac3254ec784a2e) — feat(tui): expand agent neighbor hood closure
 
 # Plan: Agents-tab neighbor closure with kinship-grouped chooser
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/memory_long_keywords.md](prompts/memory_long_keywords.md)
+- **COMMITS:**
+  - [fa4bf82](https://github.com/sase-org/sase/commit/fa4bf824d86de737ac8233f610d2bcb74441e4c3) — feat: Auto-discover memory/long/ files with keywords frontmatter
 
 # Plan: Auto-discover memory/long/ files with `keywords` frontmatter
 

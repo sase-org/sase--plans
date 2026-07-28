@@ -9,6 +9,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/retire_fix_just_chop.md](prompts/retire_fix_just_chop.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fp.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fp.f1.md#member-code)
 
 # Plan: Retire the `fix_just` Axe chop
 

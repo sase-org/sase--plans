@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/resume_plan_done.md](prompts/resume_plan_done.md)
+- **COMMITS:**
+  - [52b8039](https://github.com/sase-org/sase/commit/52b80393972c759e50ee0a722674fb99e2085fe4) — fix: Handle resume keymap ('r') for PLAN DONE agents
 
 # Plan: Fix resume keymap ('r') for PLAN DONE agents
 

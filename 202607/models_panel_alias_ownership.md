@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_alias_ownership.md](prompts/models_panel_alias_ownership.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jk](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jk/README.md)
+  - [bbugyi200.athena.jk--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jk.md#member-code)
+- **COMMITS:**
+  - [abf8dd3](https://github.com/sase-org/sase/commit/abf8dd3c48d446a3148d860af34cd7dbb6fe4e95) — feat(models): clarify alias ownership in Models panel
 
 # Plan: Separate user-defined and built-in aliases in the ACE Models panel
 

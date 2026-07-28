@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/default_artifacts_commits.md](prompts/default_artifacts_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h2/README.md)
+  - [bbugyi200.athena.h2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h2.md#member-code)
+- **COMMITS:**
+  - [1026740](https://github.com/sase-org/sase/commit/1026740c50ef4383bb739267fdb2b7e9e9cde57c) — feat(ace): default Artifacts to Commits
 
 # Plan: Default the Artifacts tab to Commits
 

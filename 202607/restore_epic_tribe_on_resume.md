@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_epic_tribe_on_resume.md](prompts/restore_epic_tribe_on_resume.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g2/README.md)
+  - [bbugyi200.athena.g2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g2.md#member-code)
+- **COMMITS:**
+  - [59678a2](https://github.com/sase-org/sase/commit/59678a281813e7b9e90525dfb824140de1dd99ed) — fix: restore epic tribe when resuming bead work
 
 # Plan: Restore the epic tribe on resumed bead work
 

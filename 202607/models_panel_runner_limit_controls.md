@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_runner_limit_controls.md](prompts/models_panel_runner_limit_controls.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hs](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hs/README.md)
+  - [bbugyi200.athena.hs--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hs.md#member-code)
+- **COMMITS:**
+  - [1aa37dc](https://github.com/sase-org/sase/commit/1aa37dc35d9ad2bd5c165c118363b45db0b0a21c) — feat: add runner limit controls
 
 # Plan: Models panel running-agent limit controls
 

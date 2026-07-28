@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/epic_agent_timestamp_collision.md](prompts/epic_agent_timestamp_collision.md)
+- **COMMITS:**
+  - [bd5a8f5](https://github.com/sase-org/sase/commit/bd5a8f5abb00d55a3e03bd494556c749a625f5b9) — fix: prevent multi-prompt timestamp collisions
 
 # Plan: Fix Epic Phase Agent Timestamp Collisions
 

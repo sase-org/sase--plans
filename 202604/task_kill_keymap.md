@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/task_kill_keymap.md](prompts/task_kill_keymap.md)
+- **COMMITS:**
+  - [5396e10](https://github.com/sase-org/sase/commit/5396e109aa702c852ae7450661752a3456e2a946) — feat: Add K keymap to kill running tasks in task queue modal
 
 # Plan: Add `k` keymap to kill tasks in the Task Queue Modal
 

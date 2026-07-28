@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/rewind_background_task.md](prompts/rewind_background_task.md)
+- **COMMITS:**
+  - [aa97df4](https://github.com/sase-org/sase/commit/aa97df434e344966ea367600c59ac7083d404d04) — ref: Run rewind TUI action as non-blocking background task
 
 # Plan: Run Rewind as a Background Task
 

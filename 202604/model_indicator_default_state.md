@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/model_indicator_default_state.md](prompts/model_indicator_default_state.md)
+- **COMMITS:**
+  - [80a8911](https://github.com/sase-org/sase/commit/80a8911e1eb892c70808953d241f441fb51db2fa) — feat: show default model in ACE indicator
 
 # Plan: Always-Visible TUI Model Indicator
 

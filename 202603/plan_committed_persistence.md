@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/plan_committed_persistence.md](prompts/plan_committed_persistence.md)
+- **COMMITS:**
+  - [c772fd9](https://github.com/sase-org/sase/commit/c772fd9c402518e57b704189c5003c53e7e3f273) — fix: Persist plan_action to agent_meta.json so PLAN COMMITTED / EPIC CREATED survive TUI restarts
 
 # Plan: Persist "PLAN COMMITTED" (and "EPIC CREATED") agent status across TUI restarts
 

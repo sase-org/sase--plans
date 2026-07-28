@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/hg_completed_agent_diffs.md](prompts/hg_completed_agent_diffs.md)
+- **COMMITS:**
+  - [cfdf3af](https://github.com/sase-org/sase/commit/cfdf3affa3e3ce8a6b23d03ef81bdf8ed6069e07) — fix: Extract diff_path from commit_result.json for completed agent diffs
 
 # Fix: Completed Agent Diffs Not Showing on Mercurial (retired Mercurial plugin)
 

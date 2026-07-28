@@ -52,6 +52,11 @@ bead_id: sase-9y
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_bead_isolation_and_visual_flakes.md](prompts/fix_ci_bead_isolation_and_visual_flakes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9y.land/README.md)
+  - [bbugyi200.athena.sase-9y.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9y.land.md#member-code)
+- **COMMITS:**
+  - [a947469](https://github.com/sase-org/sase/commit/a947469eece2988bdfff48bd6ee40b5a9701172f) — docs: record final visual contention baseline (sase-9y)
 
 # Plan: Fix red CI - bead-store test isolation and visual snapshot convergence flakes
 

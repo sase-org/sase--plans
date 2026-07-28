@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/distribution_scheduling.md](prompts/distribution_scheduling.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-86.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.4/README.md)
+  - [bbugyi200.athena.sase-86.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.4.md#member-code)
+- **COMMITS:**
+  - [8e544a3](https://github.com/sase-org/sase/commit/8e544a398f7f733dfe92245b1941aee7813e499e) — perf(tests): distribute parallel tests with work stealing (sase-86.4)
 
 # Plan: Eliminate the pytest distribution tail
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_tab_pinned_indicator_1.md](prompts/agents_tab_pinned_indicator_1.md)
+- **COMMITS:**
+  - [6bf856e](https://github.com/sase-org/sase/commit/6bf856e69d34fe3891d7b8887afbd4ea4328c2b6) — feat: show +N pinned indicator in Agents tab title
 
 # Plan: Agents Tab Pinned (`+N`) Indicator
 

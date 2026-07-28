@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_hg_commit_message.md](prompts/fix_hg_commit_message.md)
+- **COMMITS:**
+  - [373ed40](https://github.com/sase-org/sase/commit/373ed402319440e115b8618a4fa45fbd68cd6541) — chore: Add SDD spec and plan for fix_hg_commit_message
 
 # Fix wrong Commit Message in agent details panel for hg-based agents
 

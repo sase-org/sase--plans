@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_runner_limit_threshold_colors.md](prompts/agent_runner_limit_threshold_colors.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jq.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq.f0.f0/README.md)
+  - [bbugyi200.athena.jq.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.f0.f0.md#member-code)
+- **COMMITS:**
+  - [63ad0ab](https://github.com/sase-org/sase/commit/63ad0ab6b188392f9a7348b545f733d991d74f42) — feat(tui): color runner limits by capacity
 
 # Make the Agents-header runner limit reflect capacity pressure
 

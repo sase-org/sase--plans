@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/type_specific_toasts.md](prompts/type_specific_toasts.md)
+- **COMMITS:**
+  - [e48da81](https://github.com/sase-org/sase/commit/e48da819da894e7c6c4c9dc65ccb3d4ba31e2398) — feat: type-specific toast notifications in \`sase ace\` TUI
 
 # Plan: Type-Specific Toast Notifications in `sase ace` TUI
 

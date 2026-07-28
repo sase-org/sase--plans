@@ -99,6 +99,26 @@ bead_id: sase-8v
 ---
 
 - **PROMPT:** [202607/prompts/global_agent_hoods.md](prompts/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.1/README.md)
+  - [bbugyi200.athena.sase-8v.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.1.md#member-code)
+  - [bbugyi200.athena.sase-8v.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.2/README.md)
+  - [bbugyi200.athena.sase-8v.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.2.md#member-code)
+  - [bbugyi200.athena.sase-8v.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.3/README.md)
+  - [bbugyi200.athena.sase-8v.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.3.md#member-code)
+  - [bbugyi200.athena.sase-8v.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.4/README.md)
+  - [bbugyi200.athena.sase-8v.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.4.md#member-code)
+  - [bbugyi200.athena.sase-8v.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.5/README.md)
+  - [bbugyi200.athena.sase-8v.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.5.md#member-code)
+  - [bbugyi200.athena.sase-8v.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.7/README.md)
+  - [bbugyi200.athena.sase-8v.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.7.md#member-code)
+- **COMMITS:**
+  - [de816e0](https://github.com/sase-org/sase/commit/de816e064b19a40f4490f4aa1407e0e8093de614) — feat(identity): expose owner-aware agent facade (sase-8v.1)
+  - [97230f1](https://github.com/sase-org/sase/commit/97230f1a2901308ea2c28d1079d561ab00670847) — feat(identity)\!: require nested owner configuration (sase-8v.2)
+  - [5bf430b](https://github.com/sase-org/sase/commit/5bf430b67eb42f61e5472f689e0cba4a0d276669) — feat(agent): persist local names relative to owner (sase-8v.3)
+  - [2464be5](https://github.com/sase-org/sase/commit/2464be5462bd99580d0a91b2802abea3560e9064) — feat(agents): publish owner-sharded v2 hood snapshots (sase-8v.4)
+  - [2409ed2](https://github.com/sase-org/sase/commit/2409ed2e37e454f712f44651534516d04517ef4f) — feat: import agent packages transactionally (sase-8v.5)
+  - [f76a9ed](https://github.com/sase-org/sase/commit/f76a9ede7738308fc89ca7cfe6f476e0a6598727) — feat: cache foreign agent state for offline integration (sase-8v.7)
 
 # Plan: Global agent hoods, reconstructable sidecars, and cached remote sync
 

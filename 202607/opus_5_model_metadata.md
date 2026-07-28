@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/opus_5_model_metadata.md](prompts/opus_5_model_metadata.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k6/README.md)
+  - [bbugyi200.athena.k6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k6.md#member-code)
+- **COMMITS:**
+  - [7dd9a0f](https://github.com/sase-org/sase/commit/7dd9a0fdb0ce23440501965d111a18104e4e8990) — feat(claude): register Claude 5 model metadata
 
 # Register the Claude 5 model family and correct stale Opus version text
 

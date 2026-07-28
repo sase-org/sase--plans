@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/codeblock_card_highlight.md](prompts/codeblock_card_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8b.f0.w1.w1.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b.f0.w1.w1.f2/README.md)
+  - [bbugyi200.athena.8b.f0.w1.w1.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.f0.w1.w1.f2.md#member-code)
+- **COMMITS:**
+  - [df67fec](https://github.com/sase-org/sase/commit/df67fecb82eac898295074432b934d76a82d33b9) — feat(tui): render fenced code blocks as full-width cards
 
 # Beautiful Code-Block Rendering in the Prompt Input Widget
 

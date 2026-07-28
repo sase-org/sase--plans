@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_pinned_panel_fold_keymaps.md](prompts/fix_pinned_panel_fold_keymaps.md)
+- **COMMITS:**
+  - [cd6bfd6](https://github.com/sase-org/sase/commit/cd6bfd64c81addbdd0bb6ff58831721083fa80aa) — fix: Scope pinned panel fold keymaps to the correct panel
 
 # Fix Pinned Panel Fold Keymaps (`l`, `L`, `h`, `H`)
 

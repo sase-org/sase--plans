@@ -5,6 +5,19 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/migrate_actstat_sdd_prompts.md](prompts/migrate_actstat_sdd_prompts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5q.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.1/README.md)
+  - [bbugyi200.athena.sase-5q.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.2/README.md)
+  - [bbugyi200.athena.sase-5q.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.3/README.md)
+  - [bbugyi200.athena.sase-5q.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.4/README.md)
+  - [bbugyi200.athena.sase-5q.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.5/README.md)
+- **COMMITS:**
+  - [c13664d](https://github.com/sase-org/sase/commit/c13664dc6b1ce83bd6f4ea9f4755d71dad78cf61) — feat\!: make linked repository materialization opt-in (sase-5q.1)
+  - [5df88d7](https://github.com/sase-org/sase/commit/5df88d7ca00e1cae07fd7033be28ed0a17f2fdb4) — fix(memory): finalize linked repository initialization (sase-5q.1)
+  - [4c40d5a](https://github.com/sase-org/sase/commit/4c40d5af8f3f6ecdb367891483a720b68b6cd3a0) — feat(sdd): support split companion repositories (sase-5q.2)
+  - [0bbd3cb](https://github.com/sase-org/sase/commit/0bbd3cb502d7be5e6f6bef9448d964c899ede46e) — feat(sdd): route split companion operations by repository (sase-5q.3)
+  - [4976cdb](https://github.com/sase-org/sase/commit/4976cdbd8972db717e65e01448d035a1de9d5db0) — feat(sdd): add split companion initialization and migration (sase-5q.4)
+  - [75ee0fb](https://github.com/sase-org/sase/commit/75ee0fb6a8ec7cc1dfa00214c05d704e8383507e) — docs(sdd): add companion repository infographics (sase-5q.5)
 
 # Migrate actstat SDD Companion Prompt Snapshots into `plans/<YYYYMM>/prompts/`
 

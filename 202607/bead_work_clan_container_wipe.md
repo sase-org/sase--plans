@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_work_clan_container_wipe.md](prompts/bead_work_clan_container_wipe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e5/README.md)
+  - [bbugyi200.athena.e5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e5.md#member-code)
+- **COMMITS:**
+  - [e26ed99](https://github.com/sase-org/sase/commit/e26ed9985d49dc9b9b1dff843a9f1fb5db72abef) — fix(agent-names): preserve containers during forced reuse
 
 # Plan: Container-safe forced-reuse cleanup for epic bead-work retries
 

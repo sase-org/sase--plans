@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tui_perf_memory_refresh.md](prompts/tui_perf_memory_refresh.md)
+- **AGENTS:**
+  - [bbugyi200.athena.al](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.al/README.md)
+  - [bbugyi200.athena.al--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.al.md#member-code)
+- **COMMITS:**
+  - [6a4a47f](https://github.com/sase-org/sase/commit/6a4a47f94322474395c3d7b80f42fe6c9e0136de) — docs: refresh TUI performance guidance
 
 # Plan: Refresh memory/tui_perf.md with the July 2026 pump-stall learnings
 

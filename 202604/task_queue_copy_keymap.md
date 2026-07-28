@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/task_queue_copy_keymap.md](prompts/task_queue_copy_keymap.md)
+- **COMMITS:**
+  - [ebb9b03](https://github.com/sase-org/sase/commit/ebb9b03b3d0ccfbbf24ab3687d05f37b441daa05) — feat: Add \`y\` (copy) keymap to Task Queue Modal
 
 # Plan: Add `y` (copy) keymap to Task Queue Modal
 

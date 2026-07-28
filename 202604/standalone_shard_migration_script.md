@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/standalone_shard_migration_script.md](prompts/standalone_shard_migration_script.md)
+- **COMMITS:**
+  - [39eb279](https://github.com/sase-org/sase/commit/39eb2791854bfd6884f5202bbbf33fbf770ed431) — feat: Add standalone script for sharding \`~/.sase/\` on another machine
 
 # Standalone migration script for sharding `~/.sase/` dirs on another machine
 

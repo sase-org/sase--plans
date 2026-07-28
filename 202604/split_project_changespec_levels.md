@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/split_project_changespec_levels.md](prompts/split_project_changespec_levels.md)
+- **COMMITS:**
+  - [ebe86ff](https://github.com/sase-org/sase/commit/ebe86ff646ab4f0750d134194565cb649820d42a) — feat: split project (L0) and ChangeSpec (L1) into distinct banner levels on the agents tab
 
 # Split Project (L1) from ChangeSpec (L2) in agents-tab grouping
 

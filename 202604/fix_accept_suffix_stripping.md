@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_accept_suffix_stripping.md](prompts/fix_accept_suffix_stripping.md)
+- **COMMITS:**
+  - [f462078](https://github.com/sase-org/sase/commit/f462078e5131875520465c931c22c18ebf33d330) — fix: Strip (~\!: ...) proposal suffix when accepting rejected/broken proposals
 
 # Fix: Strip NEW/BROKEN PROPOSAL suffix when accepting proposals
 

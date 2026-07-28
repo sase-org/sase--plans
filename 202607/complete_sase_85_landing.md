@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/complete_sase_85_landing.md](prompts/complete_sase_85_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-85.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-85.land/README.md)
+  - [bbugyi200.athena.sase-85.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-85.land.md#member-code)
+- **COMMITS:**
+  - [f87a09c](https://github.com/sase-org/sase/commit/f87a09c423fef75701b816dbfaa67370d7a8832b) — test: cover stale epic summary clone recovery (sase-85)
 
 # Plan: Complete and land rich epic clan summaries
 

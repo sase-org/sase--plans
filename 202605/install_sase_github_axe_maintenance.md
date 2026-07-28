@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/install_sase_github_axe_maintenance.md](prompts/install_sase_github_axe_maintenance.md)
+- **COMMITS:**
+  - [270b2ef](https://github.com/sase-org/sase/commit/270b2efed9a9a749c0a4ad809d292a9ef4cd9b34) — fix: add axe maintenance mode
 
 # Plan: Make `install_sase_github` Safe While Axe Is Running
 

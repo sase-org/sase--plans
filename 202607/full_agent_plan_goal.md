@@ -10,6 +10,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/full_agent_plan_goal.md](prompts/full_agent_plan_goal.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8s.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8s.f0/README.md)
+  - [bbugyi200.athena.8s.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8s.f0.md#member-code)
+- **COMMITS:**
+  - [2394f83](https://github.com/sase-org/sase/commit/2394f83054581ff1babff2b03fd97f3618c1f1cd) — feat(ace): render complete responsive plan goals
 
 # Plan: Show complete plan goals in ACE agent metadata
 

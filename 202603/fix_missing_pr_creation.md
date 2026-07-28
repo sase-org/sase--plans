@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_missing_pr_creation.md](prompts/fix_missing_pr_creation.md)
+- **COMMITS:**
+  - [548474c](https://github.com/sase-org/sase/commit/548474c2c4423fb0a077eee0a5247310c3be06a8) — fix: Fail create_pull_request when VCS is bare_git or no PR URL returned
 
 # Fix: `create_pull_request` silently succeeds without creating a PR
 

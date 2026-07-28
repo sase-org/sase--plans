@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/project_display_regression_audit.md](prompts/project_display_regression_audit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-89.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.4/README.md)
+  - [bbugyi200.athena.sase-89.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.4.md#member-code)
+- **COMMITS:**
+  - [e917679](https://github.com/sase-org/sase/commit/e917679d1d690aa19241fce1d755ac7dba0bce4f) — fix: prevent canonical project keys leaking into displays (sase-89.4)
 
 # Plan: Lock project display names across human-facing surfaces
 

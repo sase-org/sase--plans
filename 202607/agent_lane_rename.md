@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_lane_rename.md](prompts/agent_lane_rename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jf/README.md)
+  - [bbugyi200.athena.jf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jf.md#member-code)
+- **COMMITS:**
+  - [f3965dd](https://github.com/sase-org/sase/commit/f3965dd19e48a7be84658da43e92ef891d9d2583) — refactor(ace): rename agent holes to lanes
 
 # Complete the agent “hole” to “lane” rename
 

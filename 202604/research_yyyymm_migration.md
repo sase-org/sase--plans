@@ -8,6 +8,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/research_yyyymm_migration.md](prompts/research_yyyymm_migration.md)
+- **COMMITS:**
+  - [7a1bae3](https://github.com/sase-org/sase/commit/7a1bae318808ac2407fdd86eb5638d533e850471) — chore: organize research/ into YYYYMM subdirs
 
 # Migrate `sdd/research/` to date-stamped `sdd/research/YYYYMM/` subdirs
 

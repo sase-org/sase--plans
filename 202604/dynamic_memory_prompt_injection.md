@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/dynamic_memory_prompt_injection.md](prompts/dynamic_memory_prompt_injection.md)
+- **COMMITS:**
+  - [621d173](https://github.com/sase-org/sase/commit/621d1734710313edb570eb60e18a3142dc4bfdd8) — feat: switch dynamic memory from workspace file to prompt injection
 
 # Plan: Dynamic Memory via Prompt Injection
 

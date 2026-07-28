@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/confirm_github_sdd_creation.md](prompts/confirm_github_sdd_creation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5b.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5b.f-0.md#member-code)
 
 # Confirm GitHub SDD Companion Repository Creation
 

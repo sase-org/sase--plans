@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/semicolon_command_palette.md](prompts/semicolon_command_palette.md)
+- **COMMITS:**
+  - [3f0683a](https://github.com/sase-org/sase/commit/3f0683aba75dab6e602063262fb086e663e76f2e) — feat: bind semicolon to command palette
 
 # Plan: Make `;` Also Open the Ace Command Palette
 

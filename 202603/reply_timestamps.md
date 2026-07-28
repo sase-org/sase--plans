@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/reply_timestamps.md](prompts/reply_timestamps.md)
+- **COMMITS:**
+  - [5d9d2ef](https://github.com/sase-org/sase/commit/5d9d2ef359b9300b578347055419842dc6412194) — feat: Add per-turn reply timestamps to agent metadata panel
 
 # Plan: Reply Timestamps in Agent Metadata Panel
 

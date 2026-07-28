@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_tribe_jump_keymaps.md](prompts/agent_tribe_jump_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ek](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ek/README.md)
+  - [bbugyi200.athena.ek--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ek.md#member-code)
+- **COMMITS:**
+  - [5868154](https://github.com/sase-org/sase/commit/5868154f1c267fdeb05635c656394b40f12389a6) — fix(ace): descend from tribe focus on agent jumps
 
 # Plan: Make agent jumps descend from selected tribe panels
 

@@ -6,6 +6,8 @@ bead_id: sase-5v
 ---
 
 - **PROMPT:** [202607/prompts/basher_extraction.md](prompts/basher_extraction.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7c--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7c.md#member-epic)
 
 # Factor pyvendor + bugyi.sh into basher and migrate sase + chezmoi
 

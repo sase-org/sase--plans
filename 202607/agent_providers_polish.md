@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agent_providers_polish.md](prompts/agent_providers_polish.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2f.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2f.f1.md#member-code)
 
 # Plan: Tighten `docs/agent_providers.md` for concision & consistency
 

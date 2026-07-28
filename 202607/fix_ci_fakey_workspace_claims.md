@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_fakey_workspace_claims.md](prompts/fix_ci_fakey_workspace_claims.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5l.md#member-code)
 
 # Plan: Restore CI retry and agent-loader coverage
 

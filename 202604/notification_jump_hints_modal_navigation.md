@@ -3,6 +3,10 @@ create_time: 2026-04-30 18:34:28
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [97eb131](https://github.com/sase-org/sase/commit/97eb1316b1e4098e51f386bf3acf295d8d4ff014) — fix: keep notification jump hints navigational
+
 # Fix notification panel jump hints so they navigate instead of closing
 
 ## Goal

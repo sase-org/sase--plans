@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_revive_index_shards.md](prompts/fix_revive_index_shards.md)
+- **COMMITS:**
+  - [840a694](https://github.com/sase-org/sase/commit/840a69420e58ab32a61a41acc7386061fbe1efde) — fix: restore revive candidates from sharded dismissed bundles
 
 # Plan: Fix Agents-tab revive visibility after dismissed bundle sharding
 

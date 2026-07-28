@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_ci_tools.md](prompts/fix_ci_tools.md)
+- **COMMITS:**
+  - [0baa0af](https://github.com/sase-org/sase/commit/0baa0af8c035fedd274dc1d54bc048b72b57f45d) — chore: Mark fix_ci_tools plan as done
 
 # Plan: Fix chezmoi CI workflow missing tool installations
 

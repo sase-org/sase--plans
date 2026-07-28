@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_normal_mode_freeze.md](prompts/fix_normal_mode_freeze.md)
+- **COMMITS:**
+  - [1b03c44](https://github.com/sase-org/sase/commit/1b03c447f0b93e33333aafc2547100f7e155cf9b) — fix: Remove prettier formatting from NORMAL mode keypresses
 
 # Fix: TUI freeze when using vim motions on large prompts in NORMAL mode
 

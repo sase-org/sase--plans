@@ -90,6 +90,8 @@ bead_id: sase-96
 ---
 
 - **PROMPT:** [202607/prompts/tmp_space_exhaustion.md](prompts/tmp_space_exhaustion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-96.8.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-96.8.land/README.md)
 
 # Plan: Stop sase test and tooling scratch from exhausting the /tmp tmpfs
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/wait_checks_latency.md](prompts/wait_checks_latency.md)
+- **COMMITS:**
+  - [043296b](https://github.com/sase-org/sase/commit/043296b8793338cf133708f18ebf688e7adfafcd) — fix: Move wait_checks to dedicated lumberjack to reduce latency
 
 # Plan: Fix wait_checks latency by moving it to a dedicated lumberjack
 

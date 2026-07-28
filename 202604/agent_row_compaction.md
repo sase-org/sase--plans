@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_row_compaction.md](prompts/agent_row_compaction.md)
+- **COMMITS:**
+  - [34295bb](https://github.com/sase-org/sase/commit/34295bb2d813461c801846ebc918f20b263bc3b0) — feat: compact Agents-tab row rendering
 
 # Compact Agent-Row Rendering for the Agents Tab
 

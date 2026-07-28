@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_editor_q_quit.md](prompts/axe_editor_q_quit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jt](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jt/README.md)
+  - [bbugyi200.athena.jt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jt.md#member-code)
+- **COMMITS:**
+  - [c1fc89c](https://github.com/sase-org/sase/commit/c1fc89c571ff2607365caef4bcfe527073eb7d9e) — feat(ace): let q close the AXE entry editor
 
 # Add a screen-local `q` quit keymap to the AXE entry editor
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/done_agents_release_auto_name.md](prompts/done_agents_release_auto_name.md)
+- **COMMITS:**
+  - [c6ea743](https://github.com/sase-org/sase/commit/c6ea74333d4dc31917e3da8ba33d001fc0a21416) — fix(agent): release auto-name slot for done agents
 
 # Plan: Done Agents Should Not Block Alphabetic Auto-Names
 

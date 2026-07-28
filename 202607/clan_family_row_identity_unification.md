@@ -13,6 +13,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/clan_family_row_identity_unification.md](prompts/clan_family_row_identity_unification.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d7.w1.f1.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1.f1.f0/README.md)
+  - [bbugyi200.athena.d7.w1.f1.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.f1.f0.md#member-code)
+- **COMMITS:**
+  - [a1152a8](https://github.com/sase-org/sase/commit/a1152a88c72f1362d8f9c1fd802387c7288f8117) — feat(tui): unify clan and family row identities
 
 # Plan: Unified clan/family row identity with distinct icon colors
 

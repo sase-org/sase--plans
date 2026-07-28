@@ -71,6 +71,8 @@ bead_id: sase-8w
 ---
 
 - **PROMPT:** [202607/prompts/phase_sizes.md](prompts/phase_sizes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 
 # Plan: Add `xsmall` and `xlarge` epic phase sizes
 

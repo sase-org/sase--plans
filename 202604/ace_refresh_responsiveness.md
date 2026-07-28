@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [ea03d27](https://github.com/sase-org/sase/commit/ea03d27012eb8f445bfe71db5cb70d2ebee0f984) — feat: Make \`sase ace\` TUI refresh feel instant
+
 # Plan: Make `sase ace` TUI refresh feel instant
 
 ## Problem

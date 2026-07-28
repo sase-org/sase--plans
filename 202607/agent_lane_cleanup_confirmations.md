@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_lane_cleanup_confirmations.md](prompts/agent_lane_cleanup_confirmations.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jp/README.md)
+  - [bbugyi200.athena.jp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jp.md#member-code)
+- **COMMITS:**
+  - [339e06f](https://github.com/sase-org/sase/commit/339e06f651ca5268f340a4910646dc19ff491006) — fix(ace): summarize cleanup confirmations by agent lane
 
 # Plan: Agent-lane labels in cleanup confirmations
 

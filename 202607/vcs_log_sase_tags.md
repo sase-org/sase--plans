@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_sase_tags.md](prompts/vcs_log_sase_tags.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3t--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3t.md#member-code)
 
 # Plan: Opt-in SASE Commit Tags in `sase vcs log`
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_epic_created_workflow_status.md](prompts/fix_epic_created_workflow_status.md)
+- **COMMITS:**
+  - [8d9535b](https://github.com/sase-org/sase/commit/8d9535b26281120702ee728f8099ab686dfec7b6) — fix: derive workflow status override from follow-up child role_suffix
 
 # Fix Workflow Status: Show "EPIC CREATED" Instead of "PLAN APPROVED" After Epic Button
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_o_auto_bullets.md](prompts/prompt_o_auto_bullets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i8/README.md)
+  - [bbugyi200.athena.i8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i8.md#member-code)
+- **COMMITS:**
+  - [f7e974d](https://github.com/sase-org/sase/commit/f7e974d66aa20b3b6d6746ec8ba73334c8c0cd27) — feat(ace): continue prompt bullets with normal-mode o
 
 # Auto-continue prompt bullets with normal-mode `o`
 

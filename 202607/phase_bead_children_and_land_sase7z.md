@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/phase_bead_children_and_land_sase7z.md](prompts/phase_bead_children_and_land_sase7z.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7z.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7z.land/README.md)
+  - [bbugyi200.athena.sase-7z.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7z.land.md#member-code)
+- **COMMITS:**
+  - [6cc67b9](https://github.com/sase-org/sase/commit/6cc67b90fcc881469f7cf00f926a8a45a1c29084) — fix(beads): show child epics owned by phases (sase-7z)
 
 # Plan: Show phase bead children in bead show, then land epic sase-7z
 

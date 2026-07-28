@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/changespec_project_name_query.md](prompts/changespec_project_name_query.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4q.md#member-code)
 
 # Make ChangeSpec project queries respect `PROJECT_NAME`
 

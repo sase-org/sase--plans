@@ -63,6 +63,19 @@ bead_id: sase-ac
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_project_identity.md](prompts/xprompt_project_identity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ac.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.1/README.md)
+  - [bbugyi200.athena.sase-ac.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.2/README.md)
+  - [bbugyi200.athena.sase-ac.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.3/README.md)
+  - [bbugyi200.athena.sase-ac.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.4/README.md)
+  - [bbugyi200.athena.sase-ac.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.5/README.md)
+  - [bbugyi200.athena.sase-ac.6.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.1/README.md)
+  - [bbugyi200.athena.sase-ac.6.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.2/README.md)
+  - [bbugyi200.athena.sase-ac.6.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.3/README.md)
+  - [bbugyi200.athena.sase-ac.6.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.4/README.md)
+  - [bbugyi200.athena.sase-ac.6.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.5/README.md)
+  - [bbugyi200.athena.sase-ac.6.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.land/README.md)
+  - [bbugyi200.athena.sase-ac.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.land/README.md)
 
 # Plan: Fix project-local xprompt completion by canonicalizing project identity
 

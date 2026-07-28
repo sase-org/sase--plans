@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/beads_skill_accuracy_refresh.md](prompts/beads_skill_accuracy_refresh.md)
+- **AGENTS:**
+  - [bbugyi200.athena.m8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m8/README.md)
+  - [bbugyi200.athena.m8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m8.md#member-code)
+- **COMMITS:**
+  - [39aa7cf](https://github.com/sase-org/sase/commit/39aa7cf172a8b34d9c5300940193cef451945249) — docs(beads): refresh command skill accuracy
 
 # Plan: Refresh the sase_beads skill for accuracy, practice fit, and conciseness
 

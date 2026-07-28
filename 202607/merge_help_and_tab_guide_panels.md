@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/merge_help_and_tab_guide_panels.md](prompts/merge_help_and_tab_guide_panels.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0e.w1.w1.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e.w1.w1.w1.md#member-code)
 
 # Merge the `?` Help panel and `,?` Tab Guide into one two-tab Help panel
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/mode_switch_sync_dev_checkouts.md](prompts/mode_switch_sync_dev_checkouts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1.md#member-code)
 
 # Sync Existing Dev Checkouts With Upstream During PyPI → Dev Mode Switch
 

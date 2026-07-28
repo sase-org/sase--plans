@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_status_recency_sort.md](prompts/agents_status_recency_sort.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dm](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dm/README.md)
+  - [bbugyi200.athena.dm--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dm.md#member-code)
+- **COMMITS:**
+  - [b9d0e53](https://github.com/sase-org/sase/commit/b9d0e53716252adfe9f46cc74bf5ce4eb67c85f1) — feat(ace): sort status groups by launch recency
 
 # Plan: Agents status and launch-recency ordering
 

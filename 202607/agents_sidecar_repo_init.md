@@ -5,12 +5,17 @@ goal: Managed projects can explicitly consent to and initialize a privacy-aware 
   agents sidecar at its stable machine-level path without disrupting other sidecars
   or the plans/research compatibility store.
 bead: sase-8k.5
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 11:58:25
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sidecar_repo_init.md](prompts/agents_sidecar_repo_init.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.5/README.md)
+  - [bbugyi200.athena.sase-8k.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.5.md#member-code)
+- **COMMITS:**
+  - [44ccbe8](https://github.com/sase-org/sase/commit/44ccbe84c7c23d1ad21433b428235dc37493072e) — feat(repo-init): initialize agents sidecars with explicit consent (sase-8k.5)
 
 # Complete agents-sidecar integration in `sase repo init`
 

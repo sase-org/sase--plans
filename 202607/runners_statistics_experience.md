@@ -5,12 +5,17 @@ goal: The Admin Center Statistics pane gains a responsive Runners view that make
   runner occupancy, concurrency trends, current-limit context, and busiest slices
   accurate, discoverable, and legible at both wide and narrow sizes.
 bead: sase-8j.3
-parent: sase/repos/plans/202607/runners_statistics.md
 create_time: 2026-07-21 17:38:23
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/runners_statistics_experience.md](prompts/runners_statistics_experience.md)
+- **PARENT:** [202607/runners_statistics.md](https://github.com/sase-org/sase--plans/blob/main/202607/runners_statistics.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8j.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8j.3/README.md)
+  - [bbugyi200.athena.sase-8j.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8j.3.md#member-code)
+- **COMMITS:**
+  - [6c052e8](https://github.com/sase-org/sase/commit/6c052e8169789a0b4ffa1fd536cf642c9a9bd88f) — feat(tui): add runner statistics experience (sase-8j.3)
 
 # Plan: Runners Statistics experience
 

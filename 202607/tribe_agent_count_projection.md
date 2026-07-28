@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_agent_count_projection.md](prompts/tribe_agent_count_projection.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f0/README.md)
+  - [bbugyi200.athena.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f0.md#member-code)
+- **COMMITS:**
+  - [03f68ff](https://github.com/sase-org/sase/commit/03f68ff127795cd997f34d47d8e6212a163f07c7) — fix(ace): project concrete tribe agent counts
 
 # Plan: Concrete-agent counting and settled family-member status projection
 

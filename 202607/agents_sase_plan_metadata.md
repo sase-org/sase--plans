@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sase_plan_metadata.md](prompts/agents_sase_plan_metadata.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9i](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9i/README.md)
+  - [bbugyi200.athena.9i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9i.md#member-code)
+- **COMMITS:**
+  - [75bf5c7](https://github.com/sase-org/sase/commit/75bf5c791c302823415a4efa4b277740fc7e79ff) — feat(ace): show associated plan metadata
 
 # Plan: Add a SASE PLAN section to agent metadata
 

@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/shutdown_recovery_and_toobig_relaunch.md](prompts/shutdown_recovery_and_toobig_relaunch.md)
+- **AGENTS:**
+  - [bbugyi200.athena.im.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.im.f0/README.md)
+  - [bbugyi200.athena.im.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.im.f0.md#member-code)
+- **COMMITS:**
+  - [5fb55a5](https://github.com/sase-org/sase/commit/5fb55a5a98e91fbc807d3e008f3af55d3d3863a1) — fix: recover interrupted agent families during forced reuse
 
 # Plan: Recover interrupted agent families and relaunch `toobig_split`
 

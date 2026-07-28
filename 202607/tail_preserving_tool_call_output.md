@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tail_preserving_tool_call_output.md](prompts/tail_preserving_tool_call_output.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9g](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9g/README.md)
+  - [bbugyi200.athena.9g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9g.md#member-code)
+- **COMMITS:**
+  - [73c2dc6](https://github.com/sase-org/sase/commit/73c2dc6db11abcad2cc0402e85b9774a7c523101) — fix: preserve command output tails in tool reports
 
 # Plan: Preserve command-output tails in slow-tool reports
 

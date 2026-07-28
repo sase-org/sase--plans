@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/stale_runner_code_refresh.md](prompts/stale_runner_code_refresh.md)
+- **AGENTS:**
+  - [bbugyi200.athena.82](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.82/README.md)
+  - [bbugyi200.athena.82--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.82.md#member-code)
+- **COMMITS:**
+  - [f7cbca6](https://github.com/sase-org/sase/commit/f7cbca6fd4b19430d2c833d50c4ab9e5142f8b39) — fix(runner): refresh stale code after dependency waits
 
 # Plan: Prevent stale-code `SddMaterializationError` launch failures after dependency waits
 

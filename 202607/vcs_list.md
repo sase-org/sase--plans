@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_list.md](prompts/vcs_list.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2u--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2u.md#member-code)
 
 # Plan: `sase vcs list` — the cross-repo constellation at a glance
 

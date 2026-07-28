@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_lsp_update_reconcile.md](prompts/xprompt_lsp_update_reconcile.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0p.md#member-code)
 
 # Rebuild and Reinstall the xprompt LSP Server During `sase update`
 

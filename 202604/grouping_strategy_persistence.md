@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/grouping_strategy_persistence.md](prompts/grouping_strategy_persistence.md)
+- **COMMITS:**
+  - [58fac1c](https://github.com/sase-org/sase/commit/58fac1c2cda07225b254e0499625585073bf487f) — feat: persist ACE grouping strategies
 
 # Persist ACE Grouping Strategy
 

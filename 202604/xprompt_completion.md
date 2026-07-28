@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/xprompt_completion.md](prompts/xprompt_completion.md)
+- **COMMITS:**
+  - [2353968](https://github.com/sase-org/sase/commit/23539685f877721c1204dd0f88bb1ccd19135cdf) — feat: Add xprompt name completion to ctrl+t in prompt input
 
 # Plan: xprompt Completion via ctrl+t
 

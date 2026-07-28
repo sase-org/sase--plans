@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/negative_keyword_masking.md](prompts/negative_keyword_masking.md)
+- **COMMITS:**
+  - [42244eb](https://github.com/sase-org/sase/commit/42244eb2d8af158899584152ea024443cb2dc143) — feat: refine negative memory keyword semantics to span-masking
 
 # Plan: Refine Negative Memory Keyword Semantics (Masking)
 

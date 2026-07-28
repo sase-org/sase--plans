@@ -3,6 +3,10 @@ create_time: 2026-04-24 10:22:56
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [c3fd7b5](https://github.com/sase-org/sase/commit/c3fd7b548f401ba362d44b84fc57e174a6dcf0bf) — fix(tests): stabilize ace tui navigation key assertion
+
 # SASE Plan: Stabilize Ace TUI navigation key test under parallel load
 
 ## Context

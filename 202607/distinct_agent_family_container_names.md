@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/distinct_agent_family_container_names.md](prompts/distinct_agent_family_container_names.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hh/README.md)
+  - [bbugyi200.athena.hh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hh.md#member-code)
+- **COMMITS:**
+  - [4d09e81](https://github.com/sase-org/sase/commit/4d09e81b9c6669c4ca04594e8fc26dbaf057e080) — fix(ace): show bare container names for family roots
 
 # Plan: Give every agent family its distinct container name
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/inline_code_adjacency.md](prompts/inline_code_adjacency.md)
+- **AGENTS:**
+  - [bbugyi200.athena.em](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.em/README.md)
+  - [bbugyi200.athena.em--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.em.md#member-code)
+- **COMMITS:**
+  - [34d533f](https://github.com/sase-org/sase/commit/34d533f54e765b947aae9dac78fd4511448e1630) — fix: recognize adjacent inline code in xprompt overlays
 
 # Plan: Make adjacent inline code recognition robust
 

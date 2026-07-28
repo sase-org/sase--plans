@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/bgcmd_jump_entry_command_label.md](prompts/bgcmd_jump_entry_command_label.md)
+- **COMMITS:**
+  - [b568b26](https://github.com/sase-org/sase/commit/b568b265a6a24bfe64d80eee015104e018890c10) — feat: show command in bgcmd entries in Jump to Entry modal
 
 # Plan: Show command in bgcmd entries in the "Jump to Entry" panel
 

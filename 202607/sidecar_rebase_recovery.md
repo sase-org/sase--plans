@@ -6,6 +6,12 @@ goal: SDD sidecar refreshes never leave a checkout mid-Git operation, writers re
   concurrent bead-store updates without corrupting its event streams.
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.cg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cg/README.md)
+  - [bbugyi200.athena.cg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cg.md#member-code)
+- **COMMITS:**
+  - [f678228](https://github.com/sase-org/sase/commit/f6782286e42727c2cdda919f27e6a3c2dbc813d5) — fix(sdd): make sidecar integration transactional
+
 # Plan: Transactional SDD sidecar recovery for approved epic launches
 
 ## Incident and product contract

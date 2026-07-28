@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_default_branch_detection.md](prompts/fix_default_branch_detection.md)
+- **COMMITS:**
+  - [57f8fff](https://github.com/sase-org/sase/commit/57f8fff34fa5d33354399d6892bc999f19cd9102) — fix: probe for default branch instead of blindly falling back to "main"
 
 # Plan: Fix default branch detection fallback
 

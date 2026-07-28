@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_ctrl_u_scroll_agents_tab.md](prompts/fix_ctrl_u_scroll_agents_tab.md)
+- **COMMITS:**
+  - [dec8fa0](https://github.com/sase-org/sase/commit/dec8fa03fac05d9eae6881a881abdf9ce70ac493) — fix: scroll agent detail panel with \`ctrl+u\` in hint input bar
 
 # Plan: Fix `ctrl+u` / `ctrl+d` scroll in Agents tab after `v`
 

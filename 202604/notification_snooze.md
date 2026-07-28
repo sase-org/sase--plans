@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/notification_snooze.md](prompts/notification_snooze.md)
+- **COMMITS:**
+  - [2f92b36](https://github.com/sase-org/sase/commit/2f92b366e62c0962118ec8e922e20ca8ef62214d) — feat: snooze notifications from the notification panel
 
 # Plan: Snooze Notifications from the Notification Panel
 

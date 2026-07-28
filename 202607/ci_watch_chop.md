@@ -35,6 +35,8 @@ bead_id: sase-a2
 ---
 
 - **PROMPT:** [202607/prompts/ci_watch_chop.md](prompts/ci_watch_chop.md)
+- **AGENTS:**
+  - [bbugyi200.athena.research.l.final.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.l.final.f0/README.md)
 
 # Plan: ci_watch — an actstat-driven CI watch / release-merge lumberjack chop
 

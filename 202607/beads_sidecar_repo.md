@@ -99,6 +99,14 @@ bead_id: sase-a8
 ---
 
 - **PROMPT:** [202607/prompts/beads_sidecar_repo.md](prompts/beads_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-a8.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.1/README.md)
+  - [bbugyi200.athena.sase-a8.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.2/README.md)
+  - [bbugyi200.athena.sase-a8.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.3/README.md)
+  - [bbugyi200.athena.sase-a8.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.4/README.md)
+  - [bbugyi200.athena.sase-a8.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.5/README.md)
+  - [bbugyi200.athena.sase-a8.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.6/README.md)
+  - [bbugyi200.athena.sase-a8.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a8.7/README.md)
 
 # Plan: Split bead state into a dedicated `beads` sidecar repository
 

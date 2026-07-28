@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_wait_time_countdown_and_family_queue_deadlock.md](prompts/fix_wait_time_countdown_and_family_queue_deadlock.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e.md#member-code)
 
 # Fix `%wait` time countdown + queued family child launch deadlock
 

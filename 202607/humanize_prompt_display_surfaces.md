@@ -3,6 +3,10 @@ create_time: 2026-07-06 13:31:50
 status: done
 tier: tale
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a.md#member-code)
+
 # Plan: Show Configured PROJECT_NAME in All User-Facing Prompt Displays
 
 ## Problem

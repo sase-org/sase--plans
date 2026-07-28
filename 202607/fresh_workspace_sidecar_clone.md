@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fresh_workspace_sidecar_clone.md](prompts/fresh_workspace_sidecar_clone.md)
+- **AGENTS:**
+  - [bbugyi200.athena.95](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.95/README.md)
+  - [bbugyi200.athena.95--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.95.md#member-code)
+- **COMMITS:**
+  - [e68ff17](https://github.com/sase-org/sase/commit/e68ff172ddd53906806432e3f886ece2a203c7e3) — fix: clone launch sidecars from authoritative remotes
 
 # Plan: Fresh workspace sidecar clones
 

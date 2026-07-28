@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/land_bead_description.md](prompts/land_bead_description.md)
+- **COMMITS:**
+  - [4ef4610](https://github.com/sase-org/sase/commit/4ef46107b5b2d2781d7e4ae2a849aa403ad6b6e8) — fix: show land epic titles in agent bead metadata
 
 # Plan: Land Agent Bead Description
 

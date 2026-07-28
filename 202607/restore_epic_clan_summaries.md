@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_epic_clan_summaries.md](prompts/restore_epic_clan_summaries.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ih](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ih/README.md)
+  - [bbugyi200.athena.ih--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ih.md#member-code)
+- **COMMITS:**
+  - [a20e82d](https://github.com/sase-org/sase/commit/a20e82dca2d2867920ad7534447c806845258fe5) — fix: restore epic clan summaries
 
 # Plan
 

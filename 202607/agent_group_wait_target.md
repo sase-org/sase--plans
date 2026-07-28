@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_group_wait_target.md](prompts/agent_group_wait_target.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f9/README.md)
+  - [bbugyi200.athena.f9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f9.md#member-code)
+- **COMMITS:**
+  - [e9228cd](https://github.com/sase-org/sase/commit/e9228cdcb9330dc3362d3c2e9bd022a5bd96adf9) — feat(tui): support group targets for wait prompts
 
 # Plan: Agent clan and tribe wait targets
 

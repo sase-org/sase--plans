@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/vcs_mru_100_entries.md](prompts/vcs_mru_100_entries.md)
+- **COMMITS:**
+  - [3f24e99](https://github.com/sase-org/sase/commit/3f24e9917d712ed832a021f6e18452cdf8d61427) — feat: Expand VCS xprompt MRU to 100 entries and fix cycling direction
 
 # Plan: Expand VCS Xprompt MRU to 100 Entries & Fix Cycling Direction
 

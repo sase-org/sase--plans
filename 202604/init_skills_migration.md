@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/init_skills_migration.md](prompts/init_skills_migration.md)
+- **COMMITS:**
+  - [31d4200](https://github.com/sase-org/sase/commit/31d420065d6a726ab8503535cc0df5de141409f3) — docs: Document generated skill files workflow in AGENTS.md (sase-h.3)
 
 # Plan: Bead sase-h.3 — Migration & Cleanup
 

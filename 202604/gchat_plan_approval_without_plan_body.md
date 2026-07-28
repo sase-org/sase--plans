@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/gchat_plan_approval_without_plan_body.md](prompts/gchat_plan_approval_without_plan_body.md)
+- **COMMITS:**
+  - [b1da72c](https://github.com/sase-org/sase/commit/b1da72c665872355bfda14ac7c1982a84b6b1df5) — chore: mark gchat plan body plan done
 
 # Plan: Stop Inlining Google Chat Plan Bodies
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/label_tale_submit_action.md](prompts/label_tale_submit_action.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d6.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d6.f1/README.md)
+  - [bbugyi200.athena.d6.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d6.f1.md#member-code)
+- **COMMITS:**
+  - [dc09732](https://github.com/sase-org/sase/commit/dc09732399aa651f54579f753c9234b08c6d66d9) — fix: label tale plan submit action
 
 # Plan: Label tale plan submission action as Tale
 

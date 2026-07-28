@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [0435230](https://github.com/sase-org/sase/commit/04352306159afd936d605ccd7d1cecdc1c06c587) — fix(ace): restore dismissed agent state exactly on revive
+
 # Plan: Make revived Agents entries round-trip exactly to pre-dismiss state
 
 ## Goal

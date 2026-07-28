@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/admin_center_tab_keymap_swap.md](prompts/admin_center_tab_keymap_swap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7r](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7r/README.md)
+  - [bbugyi200.athena.7r--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7r.md#member-code)
+- **COMMITS:**
+  - [8a1a4f4](https://github.com/sase-org/sase/commit/8a1a4f46772e3eb0fbab6eb39fd20dedc1f3cfb9) — feat(tui)\!: swap Admin Center tab keymaps
 
 # Swap SASE Admin Center main-tab and sub-tab keymaps
 

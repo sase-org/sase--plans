@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_revive_bundle_collision.md](prompts/fix_revive_bundle_collision.md)
+- **COMMITS:**
+  - [02dd0f7](https://github.com/sase-org/sase/commit/02dd0f78e553b587afdaca3acf033f9f44d65336) — fix: Resolve dismissed agent bundle filename collision breaking revive
 
 # Fix: Dismissed Agent Bundle Filename Collision Breaks Revive
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ace_pilot_harness_cost.md](prompts/ace_pilot_harness_cost.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-86.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.2/README.md)
+  - [bbugyi200.athena.sase-86.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.2.md#member-code)
+- **COMMITS:**
+  - [6903e78](https://github.com/sase-org/sase/commit/6903e78ec41cea2b98ce28c12d1db85fa5214647) — perf(test): reduce ACE pilot harness startup cost (sase-86.2)
 
 # Plan: ACE pilot harness cost reduction
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_vcs_ref_alias_prefix_mangle.md](prompts/fix_vcs_ref_alias_prefix_mangle.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6c/README.md)
+  - [bbugyi200.athena.6c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6c.md#member-code)
+- **COMMITS:**
+  - [08b2f73](https://github.com/sase-org/sase/commit/08b2f73ed69df95437787a046ab9465af7a88455) — fix: preserve display-prefixed ChangeSpec refs
 
 # Fix `#gh:` VCS Ref Canonicalization Mangling Display-Prefixed ChangeSpec Names
 

@@ -5,12 +5,17 @@ goal: Qualify every new durable local agent identity with the configured machine
   while preserving bare local display and lookup behavior, legacy-name equivalence,
   foreign-machine visibility, and machine-aware commit provenance.
 bead: sase-8k.3
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 14:04:37
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_agent_hoods_1.md](prompts/machine_agent_hoods_1.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.3/README.md)
+  - [bbugyi200.athena.sase-8k.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.3.md#member-code)
+- **COMMITS:**
+  - [e828aa9](https://github.com/sase-org/sase/commit/e828aa927e3dff3c3c4f1f4539a3c8c5201ea83e) — feat: add machine-qualified agent hoods (sase-8k.3)
 
 # Machine agent hoods end to end (`sase-8k.3`)
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/kill_child_agent_entries.md](prompts/kill_child_agent_entries.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g.md#member-code)
 
 # Plan: Kill Individual Agent Child Entries from the Agents Tab
 

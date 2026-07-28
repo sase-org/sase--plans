@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_h_parent_jump.md](prompts/agents_h_parent_jump.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hc/README.md)
+  - [bbugyi200.athena.hc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hc.md#member-code)
+- **COMMITS:**
+  - [7900eeb](https://github.com/sase-org/sase/commit/7900eeb50a3542af97a6ed0404ff2bb3e45d23f0) — feat(ace): jump to parent agent containers
 
 # Plan: Make Agents-tab H jump to structural parent containers
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/save_xprompt_panel_redesign.md](prompts/save_xprompt_panel_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.63](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.63/README.md)
+  - [bbugyi200.athena.63--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.63.md#member-code)
+- **COMMITS:**
+  - [dcafd64](https://github.com/sase-org/sase/commit/dcafd64e74d695d194f6ab2b0893a098e38b3c40) — feat(tui): redesign xprompt save panel
 
 # Redesign the "Save draft as xprompt" Panel
 

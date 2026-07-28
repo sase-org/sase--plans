@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/ci_workflow_failure_fix.md](prompts/ci_workflow_failure_fix.md)
+- **COMMITS:**
+  - [2278485](https://github.com/sase-org/sase/commit/2278485cb6e0fd24d6762d300305928243cd4f1d) — fix: use sdd paths for launch perf artifacts
 
 # CI Workflow Failure Fix Plan
 

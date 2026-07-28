@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/fix_ci_python_sleep_mock.md](prompts/fix_ci_python_sleep_mock.md)
+- **COMMITS:**
+  - [bcbcfb8](https://github.com/sase-org/sase/commit/bcbcfb8b3db4515e75f29ff2529d3a6ad0fca8d3) — chore: avoid shared sleep mock in multi-prompt tests
 
 # Plan: Fix CI Python Sleep Mock Flake
 

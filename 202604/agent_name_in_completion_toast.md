@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_name_in_completion_toast.md](prompts/agent_name_in_completion_toast.md)
+- **COMMITS:**
+  - [8aac6ef](https://github.com/sase-org/sase/commit/8aac6ef1b4aa73fef4844f56fcc550fbac6eb351) — feat: include agent name in completion toast
 
 # Plan: Include the agent's name in agent completion toasts
 

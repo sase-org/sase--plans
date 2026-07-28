@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_approval_project_identity.md](prompts/epic_approval_project_identity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9s/README.md)
+  - [bbugyi200.athena.9s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9s.md#member-code)
+- **COMMITS:**
+  - [3362655](https://github.com/sase-org/sase/commit/33626551f485a0dd65ecf0c37626eab7f9ea2259) — fix: resolve epic launches from canonical project identity
 
 # Plan: Preserve canonical project identity during epic approval launches
 

@@ -4,6 +4,9 @@ tier: tale
 create_time: '2026-07-08 16:10:06'
 ---
 
+- **COMMITS:**
+  - [72dce82](https://github.com/sase-org/sase/commit/72dce821eb69005c38650d0e561094eaeaebcb3c) — fix: handle rejected plan agents as terminal decisions
+
 # Plan: Stop Treating Plan Rejection as Agent Failure
 
 ## Problem

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/history_word_completion.md](prompts/history_word_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dq/README.md)
+  - [bbugyi200.athena.dq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dq.md#member-code)
+- **COMMITS:**
+  - [25c87d4](https://github.com/sase-org/sase/commit/25c87d40fbad0d5783c19ec901b624dbf5584cad) — feat(ace): add prompt history word completion
 
 # Plan: History-word fallback completion menu
 

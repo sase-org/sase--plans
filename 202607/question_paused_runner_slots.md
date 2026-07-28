@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/question_paused_runner_slots.md](prompts/question_paused_runner_slots.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9c/README.md)
+  - [bbugyi200.athena.9c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9c.md#member-code)
+- **COMMITS:**
+  - [0a124f7](https://github.com/sase-org/sase/commit/0a124f74492e310a7abea7a8828f2d4e0d01864e) — fix: release runner slots while awaiting answers
 
 # Plan: Yield runner slots while agents await answers
 

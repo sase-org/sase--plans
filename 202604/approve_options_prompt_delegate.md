@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/approve_options_prompt_delegate.md](prompts/approve_options_prompt_delegate.md)
+- **COMMITS:**
+  - [b0b119d](https://github.com/sase-org/sase/commit/b0b119d3f1e8237b01183fdee5dc6954176220c4) — feat: Delegate ApproveOptionsModal prompt editing to PromptInputBar
 
 # Plan: Delegate ApproveOptionsModal prompt editing to PromptInputBar
 

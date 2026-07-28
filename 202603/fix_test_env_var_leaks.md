@@ -4,6 +4,10 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [40532ac](https://github.com/sase-org/sase/commit/40532ac95bfa73f753c01a8de3d0029abb16bd4d) — fix: prevent agent env var leaks from writing bogus COMMITS entries
+  - [71857bc](https://github.com/sase-org/sase/commit/71857bc9334ea04c2e230257d516133614098e4f) — fix: prevent agent env var leaks from writing bogus COMMITS entries
+
 # Fix: Test env var leaks cause bogus COMMITS entries in real ChangeSpec files
 
 ## Problem

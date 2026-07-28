@@ -5,12 +5,17 @@ goal: SASE core and Python expose validated owner-aware name, family, hood, link
   and whole-batch relationship operations that later global-hood phases can consume
   without dotted-string ownership inference.
 bead: sase-8v.1
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 13:05:35
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_owner_relationship_domain.md](prompts/agent_owner_relationship_domain.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.1/README.md)
+  - [bbugyi200.athena.sase-8v.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.1.md#member-code)
+- **COMMITS:**
+  - [de816e0](https://github.com/sase-org/sase/commit/de816e064b19a40f4490f4aa1407e0e8093de614) — feat(identity): expose owner-aware agent facade (sase-8v.1)
 
 # Plan: Explicit agent ownership and portable relationship domain
 

@@ -30,13 +30,15 @@ phases:
   description: '''Close and clean up the epic'' section: close sase-8u, run post-close
     symvision cleanup, and mark the canonical epic plan done.'
 parent_bead: sase-8u
-parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 09:53:04
 status: wip
 bead_id: sase-8u.4
 ---
 
 - **PROMPT:** [202607/prompts/finish_capitalized_snippet_aliases.md](prompts/finish_capitalized_snippet_aliases.md)
+- **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8u.4.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.4.1.md#member-code)
 
 # Plan: Finish and land capitalized snippet aliases
 

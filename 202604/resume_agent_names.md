@@ -3,6 +3,10 @@ create_time: 2026-04-30 18:45:06
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [bd84cc8](https://github.com/sase-org/sase/commit/bd84cc81c1e532d14dcabc887c1880ddbb98af50) — feat: name resumed agents after their source
+
 # Plan: Resume-Based Agent Names
 
 ## Goal

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/top_level_sdd_link_bullets.md](prompts/top_level_sdd_link_bullets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gz.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gz.f0/README.md)
+  - [bbugyi200.athena.gz.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gz.f0.md#member-code)
+- **COMMITS:**
+  - [f9837f7](https://github.com/sase-org/sase/commit/f9837f70f955c891b50849de35f18f2543b96bac) — feat(sdd): render artifact links as Markdown bullets
 
 # Plan: Move SDD cross-links into Markdown bullets
 

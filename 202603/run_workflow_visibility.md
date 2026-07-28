@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [1de5933](https://github.com/sase-org/sase/commit/1de593304b3149fffdd421ca1cd439e4d97244c7) — fix: Make \`sase run\` workflow visible in TUI during execution
+
 # Fix `sase run` workflow visibility and step rendering in TUI
 
 ## Problem Summary

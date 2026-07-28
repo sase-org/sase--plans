@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_rust_backend_test_suite.md](prompts/fix_rust_backend_test_suite.md)
+- **COMMITS:**
+  - [0a66606](https://github.com/sase-org/sase/commit/0a6660606ae23c0aa19a59a20992a40b94288793) — chore: pin Python backend for pure core tests
 
 # Plan: Fix Rust backend test-suite hermeticity
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_clan_status.md](prompts/queued_clan_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ld/README.md)
+  - [bbugyi200.athena.ld--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ld.md#member-code)
+- **COMMITS:**
+  - [30f3a22](https://github.com/sase-org/sase/commit/30f3a22c86d445f7be5560bc7e9a966286c1bd60) — fix(ace): prioritize queued clan status
 
 # Plan: Show QUEUED for queued-and-waiting agent clans
 

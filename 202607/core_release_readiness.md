@@ -5,12 +5,14 @@ goal: Fix the gateway Clippy blocker without changing wire or snippet behavior, 
   a release-plz wheel containing the shared snippet binding, and close only phase
   bead sase-8u.4.1.
 bead: sase-8u.4.1
-parent: sase/repos/plans/202607/finish_capitalized_snippet_aliases.md
 create_time: 2026-07-23 09:58:05
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/core_release_readiness.md](prompts/core_release_readiness.md)
+- **PARENT:** [202607/finish_capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_capitalized_snippet_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8u.4.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.4.1.md#member-code)
 
 # Restore core release readiness for `sase-8u.4.1`
 

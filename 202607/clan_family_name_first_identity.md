@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_family_name_first_identity.md](prompts/clan_family_name_first_identity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d7.w1.f1.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1.f1.f0.f0/README.md)
+  - [bbugyi200.athena.d7.w1.f1.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.f1.f0.f0.md#member-code)
+- **COMMITS:**
+  - [91959c1](https://github.com/sase-org/sase/commit/91959c10cdd6241b649439b6f92912d323c35d27) — feat(ace): render clan and family identities name first
 
 # Plan: Color-matched clan and family name-first identities
 

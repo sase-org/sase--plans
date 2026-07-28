@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/companion_sdd_finalizer_prompting.md](prompts/companion_sdd_finalizer_prompting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.73](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.73/README.md)
+  - [bbugyi200.athena.73--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.73.md#member-code)
+- **COMMITS:**
+  - [3169f35](https://github.com/sase-org/sase/commit/3169f351b9f9698720f62881a2763262748d86a3) — feat(sdd): finalize companion repository changes
 
 # Prompt Agents to Commit Companion SDD Repo Changes (Stop Generic Finalizer Sweeps)
 

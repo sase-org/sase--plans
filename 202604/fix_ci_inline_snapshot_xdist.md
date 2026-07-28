@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_ci_inline_snapshot_xdist.md](prompts/fix_ci_inline_snapshot_xdist.md)
+- **COMMITS:**
+  - [f2f5850](https://github.com/sase-org/sase/commit/f2f58502a00876219759c1db42efc5de4d9ef1e8) — chore: Drop --inline-snapshot=short-report from CI test job
 
 # Fix CI failure: `--inline-snapshot=short-report cannot be combined with xdist`
 

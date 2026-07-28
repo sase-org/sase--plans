@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/selected_tribe_panel_title_highlight.md](prompts/selected_tribe_panel_title_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fd/README.md)
+  - [bbugyi200.athena.fd--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fd.md#member-code)
+- **COMMITS:**
+  - [efed1d5](https://github.com/sase-org/sase/commit/efed1d59eea5f7071fa2f87ed323c8dfd8ea6f53) — feat(tui): highlight selected tribe panel title
 
 # Plan: Highlight selected tribe panel summary chrome
 

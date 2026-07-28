@@ -4,6 +4,9 @@ create_time: 2026-04-03
 tier: tale
 ---
 
+- **COMMITS:**
+  - [6304de3](https://github.com/sase-org/sase/commit/6304de3ac053966473741e7e74e52b401aad038d) — fix: enforce project prefix on ChangeSpec names
+
 # Fix: Enforce project prefix on ChangeSpec names
 
 ## Problem

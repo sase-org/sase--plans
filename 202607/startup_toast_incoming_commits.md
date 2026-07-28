@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/startup_toast_incoming_commits.md](prompts/startup_toast_incoming_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.11--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.11.md#member-code)
 
 # Plan: Show grouped incoming commits in the startup "Updates available" toast
 

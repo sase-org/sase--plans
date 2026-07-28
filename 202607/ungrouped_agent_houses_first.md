@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ungrouped_agent_houses_first.md](prompts/ungrouped_agent_houses_first.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hu/README.md)
+  - [bbugyi200.athena.hu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hu.md#member-code)
+- **COMMITS:**
+  - [cba6525](https://github.com/sase-org/sase/commit/cba65253b1f0bd5414755120f5f0a2f198d2d7e4) — fix(ace): keep ungrouped agent houses first
 
 # Plan: Keep standalone agent houses above panel subgroups
 

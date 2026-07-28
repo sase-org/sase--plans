@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/lane_name_hood_neighbors.md](prompts/lane_name_hood_neighbors.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-99.land.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-99.land.f2/README.md)
+  - [bbugyi200.athena.sase-99.land.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-99.land.f2.md#member-code)
+- **COMMITS:**
+  - [9ea6edc](https://github.com/sase-org/sase/commit/9ea6edc3ec5de0c221223ec61b7f508ec73ea146) — fix(ace): key agent lanes by the name they present
 
 # Plan: Match agent lanes against hoods that share their name
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/retain_focus_after_name_change.md](prompts/retain_focus_after_name_change.md)
+- **COMMITS:**
+  - [b3d13cd](https://github.com/sase-org/sase/commit/b3d13cd1fd11775e434e66612ddb20652ce33537) — fix: Retain ChangeSpec focus after status-induced name changes
 
 # Plan: Retain ChangeSpec Focus After Status-Induced Name Changes
 

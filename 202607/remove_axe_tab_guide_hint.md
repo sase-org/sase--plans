@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/remove_axe_tab_guide_hint.md](prompts/remove_axe_tab_guide_hint.md)
+- **AGENTS:**
+  - [bbugyi200.athena.lo](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lo/README.md)
+  - [bbugyi200.athena.lo--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lo.md#member-code)
+- **COMMITS:**
+  - [8fc6a2a](https://github.com/sase-org/sase/commit/8fc6a2a901730ba20bf9b1339ae07d9a43f584e4) — fix(axe): remove persistent tab guide hint
 
 # Remove the persistent AXE tab-guide hint
 

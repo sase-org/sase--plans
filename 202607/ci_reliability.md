@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ci_reliability.md](prompts/ci_reliability.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9f/README.md)
+  - [bbugyi200.athena.9f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9f.md#member-code)
+- **COMMITS:**
+  - [805de8f](https://github.com/sase-org/sase/commit/805de8fe66844508303575aa6c4975c1b2a0588e) — test: harden CI reliability harnesses
 
 # Plan: Restore reliable SASE CI
 

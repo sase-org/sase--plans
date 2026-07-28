@@ -28,6 +28,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sdd_sidecar_unmanaged_repo_guard.md](prompts/sdd_sidecar_unmanaged_repo_guard.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9m/README.md)
+  - [bbugyi200.athena.9m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9m.md#member-code)
+- **COMMITS:**
+  - [cb9deb0](https://github.com/sase-org/sase/commit/cb9deb06929189178ba2953c13364360f7111991) — fix: guard remote SDD creation and plan routing
 
 # Plan: SDD sidecar guard for unmanaged repos
 

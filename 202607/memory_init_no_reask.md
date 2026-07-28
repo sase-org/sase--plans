@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/memory_init_no_reask.md](prompts/memory_init_no_reask.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e3/README.md)
+  - [bbugyi200.athena.e3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e3.md#member-code)
+- **COMMITS:**
+  - [ad45962](https://github.com/sase-org/sase/commit/ad4596285d9bf394df688c2e0cd1cb41293dbebb) — fix(memory): avoid redundant init approval requests
 
 # Plan: Make explicit memory-update requests mandate `sase memory init` without re-asking
 

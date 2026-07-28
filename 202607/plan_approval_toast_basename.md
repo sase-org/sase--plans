@@ -8,6 +8,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/plan_approval_toast_basename.md](prompts/plan_approval_toast_basename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ik--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ik.md#member-code)
 
 # Plan: Show durable plan basenames in approval toasts
 

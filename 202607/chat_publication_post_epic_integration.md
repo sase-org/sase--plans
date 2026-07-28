@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/chat_publication_post_epic_integration.md](prompts/chat_publication_post_epic_integration.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k3/README.md)
+  - [bbugyi200.athena.k3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k3.md#member-code)
+- **COMMITS:**
+  - [80cc705](https://github.com/sase-org/sase/commit/80cc705f4bd78b9c691d1c220c0d0a466e00944f) — feat(chats): integrate publication state with provenance
 
 # Plan: Finish Chats and agents-publication integration
 

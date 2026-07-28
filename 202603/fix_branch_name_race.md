@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [8f1ff78](https://github.com/sase-org/sase/commit/8f1ff789926dc57a6d1e105e959f1af015256770) — fix: Prevent branch name race in concurrent PR agents
+
 # Fix: Branch name race condition in concurrent PR agents
 
 ## Problem

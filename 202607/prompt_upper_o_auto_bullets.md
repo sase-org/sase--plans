@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_upper_o_auto_bullets.md](prompts/prompt_upper_o_auto_bullets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j1.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j1.f0/README.md)
+  - [bbugyi200.athena.j1.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j1.f0.md#member-code)
+- **COMMITS:**
+  - [30503fc](https://github.com/sase-org/sase/commit/30503fca89e08e303ef58874edcf683e1f617251) — feat(ace): continue prompt bullets with open-above
 
 # Plan: Continue prompt bullets with NORMAL-mode uppercase `O`
 

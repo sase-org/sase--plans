@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_property_panel_v2.md](prompts/xprompt_property_panel_v2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.54--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.54.md#member-code)
 
 # XPrompt Property Panel v2 — In-Place XPrompt Authoring
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_y_keymap_blocks_tui.md](prompts/fix_y_keymap_blocks_tui.md)
+- **COMMITS:**
+  - [b2915f4](https://github.com/sase-org/sase/commit/b2915f4c69366881ee7311958229b59ad7d4e332) — fix: Keep ace TUI responsive during \`y\` refresh on CLs and Axe tabs
 
 # Plan: Fix `y` keymap blocks TUI navigation during refresh
 

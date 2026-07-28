@@ -5,12 +5,17 @@ goal: The Artifacts Commits pane reports capped result sets honestly, exposes th
   active row limit when it affects the display, and preserves stable filter caching
   while relative date windows continue to move with refresh time.
 bead: sase-8h.3
-parent: sase/repos/plans/202607/commits_filter_correctness.md
 create_time: 2026-07-21 11:23:10
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/truthful_commits_status.md](prompts/truthful_commits_status.md)
+- **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8h.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.3/README.md)
+  - [bbugyi200.athena.sase-8h.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.3.md#member-code)
+- **COMMITS:**
+  - [54e8736](https://github.com/sase-org/sase/commit/54e8736ea7ed487b3f600ad71939316764957b43) — fix(ace): report capped commit results truthfully (sase-8h.3)
 
 # Plan: Truthful commits-pane status and cache behavior
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/validate_explain_option.md](prompts/validate_explain_option.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i5/README.md)
+  - [bbugyi200.athena.i5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i5.md#member-code)
+- **COMMITS:**
+  - [6b3457b](https://github.com/sase-org/sase/commit/6b3457b0bc765201ca33a8a80fddf544ae3a67cb) — feat(cli)\!: infer plan validation tier
 
 # Plan: `--explain` for `sase plan validate` + tier auto-detection
 

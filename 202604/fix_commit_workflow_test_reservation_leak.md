@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_commit_workflow_test_reservation_leak.md](prompts/fix_commit_workflow_test_reservation_leak.md)
+- **COMMITS:**
+  - [d8c1e2a](https://github.com/sase-org/sase/commit/d8c1e2a6a5f4eea62c164850c18ad5eb9bf1e5fd) — fix: stop test_commit_workflow leaking ChangeSpec reservations into real user state
 
 # Fix Test-Caused `sase_child_cl_N` Reservation Leak Into Real User Project File
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/remove_file_panel_trim.md](prompts/remove_file_panel_trim.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6w.md#member-code)
 
 # Plan: Stop Buffering File Panel Lines (Remove Trim System)
 

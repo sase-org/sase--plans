@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_panel_collapse.md](prompts/agent_panel_collapse.md)
+- **AGENTS:**
+  - [bbugyi200.athena.96](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.96/README.md)
+  - [bbugyi200.athena.96--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.96.md#member-code)
+- **COMMITS:**
+  - [5e9bfa1](https://github.com/sase-org/sase/commit/5e9bfa1987f0b9ba998173e4e3e5e23793b10f85) — feat(ace)\!: collapse focused agent panels
 
 # Plan: Collapse / expand whole agent panels on the Agents tab
 

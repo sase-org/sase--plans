@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/explicit_group_panel_membership.md](prompts/explicit_group_panel_membership.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cf/README.md)
+  - [bbugyi200.athena.cf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cf.md#member-code)
+- **COMMITS:**
+  - [16c6bcd](https://github.com/sase-org/sase/commit/16c6bcd996919bd5a401a4ced3adde92e3c2be88) — fix(ace): require explicit agent panel groups
 
 # Plan: Remove Implicit Name-Based Agent Panel Assignment
 

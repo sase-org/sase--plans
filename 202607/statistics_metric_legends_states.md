@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_metric_legends_states.md](prompts/statistics_metric_legends_states.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8a.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8a.2/README.md)
+  - [bbugyi200.athena.sase-8a.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.2.md#member-code)
+- **COMMITS:**
+  - [75e2c64](https://github.com/sase-org/sase/commit/75e2c647dfc2bbc58dc1ae54893f6a73ad3ff054) — feat(statistics): add metric legends and recovery states (sase-8a.2)
 
 # Plan: Statistics metric legends and actionable states
 

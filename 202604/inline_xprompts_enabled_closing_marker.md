@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/inline_xprompts_enabled_closing_marker.md](prompts/inline_xprompts_enabled_closing_marker.md)
+- **COMMITS:**
+  - [2edb4c8](https://github.com/sase-org/sase/commit/2edb4c8738a285c3936e39928ac62e89321e98cd) — fix: Support inline closing marker for xprompts_enabled disabled regions
 
 # Fix: `@` file ref validation fails on content inside disabled regions with inline closing marker
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_project_display_names_1.md](prompts/telegram_project_display_names_1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d.md#member-code)
 
 # Fix Telegram surfaces showing canonical project directory keys instead of display names
 

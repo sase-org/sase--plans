@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/phase_agent_approve_directive.md](prompts/phase_agent_approve_directive.md)
+- **COMMITS:**
+  - [f4cdc27](https://github.com/sase-org/sase/commit/f4cdc27cc5f91ba67dc04b7cf61e2b431379c52e) — feat: emit %approve on phase and land agents in \`sase bead work\`
 
 # Plan: Auto-Approve Directive on Phase Agent Prompts
 

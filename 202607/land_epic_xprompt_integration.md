@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/land_epic_xprompt_integration.md](prompts/land_epic_xprompt_integration.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7z](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7z/README.md)
+  - [bbugyi200.athena.7z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7z.md#member-code)
+- **COMMITS:**
+  - [0ed6b32](https://github.com/sase-org/sase/commit/0ed6b32e49b9d31e84f26a869d41a523609256fe) — feat(xprompt): integrate epic changes before landing
 
 # Improve the `#bd/land_epic` xprompt: integration duty + tighter prompt
 

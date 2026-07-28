@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_zoom_keymap.md](prompts/tribe_panel_zoom_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hq/README.md)
+  - [bbugyi200.athena.hq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hq.md#member-code)
+- **COMMITS:**
+  - [d8e30b5](https://github.com/sase-org/sase/commit/d8e30b51d3eea3817693b9b9b68cf5775dadbcdb) — feat(ace)\!: move tribe panel isolation to zoom action
 
 # Plan: Move tribe-panel isolation from H to Z
 

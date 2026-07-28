@@ -4,12 +4,17 @@ title: Shared config transaction and AXE schema-form components
 goal: Config Center and AXE entry editing share responsive, typed, scope-aware transaction
   and schema-form primitives.
 bead: sase-8m.2
-parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-07-22 12:04:07
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/shared_config_editor.md](prompts/shared_config_editor.md)
+- **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8m.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.2/README.md)
+  - [bbugyi200.athena.sase-8m.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.2.md#member-code)
+- **COMMITS:**
+  - [331932b](https://github.com/sase-org/sase/commit/331932b2c8c82517dd5920b5129822e50466079d) — feat(ace): add shared config editor components (sase-8m.2)
 
 # Shared config transaction and AXE schema-form components
 

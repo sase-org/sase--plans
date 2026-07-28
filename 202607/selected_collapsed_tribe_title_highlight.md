@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/selected_collapsed_tribe_title_highlight.md](prompts/selected_collapsed_tribe_title_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gt](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gt/README.md)
+  - [bbugyi200.athena.gt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gt.md#member-code)
+- **COMMITS:**
+  - [7630f7f](https://github.com/sase-org/sase/commit/7630f7f26273eb6c02ee97c56ea833e8258d5ffd) — fix(tui): highlight selected collapsed tribe titles
 
 # Plan: Highlight selected collapsed tribe title chrome
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_family_status_counts.md](prompts/agent_family_status_counts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.c2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c2/README.md)
+  - [bbugyi200.athena.c2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c2.md#member-code)
+- **COMMITS:**
+  - [4dc5ca6](https://github.com/sase-org/sase/commit/4dc5ca609890eee56a780793e997709de57de52b) — fix(ace): project parallel family status counts
 
 # Plan: Aggregate agent-family status counts in Agents tab summaries
 

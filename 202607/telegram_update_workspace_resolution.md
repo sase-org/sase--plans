@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_update_workspace_resolution.md](prompts/telegram_update_workspace_resolution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k.md#member-code)
 
 # Fix Telegram `/update` Workspace Resolution
 

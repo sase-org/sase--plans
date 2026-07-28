@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_group_clan_collapse_precedence.md](prompts/agent_group_clan_collapse_precedence.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ij](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ij/README.md)
+  - [bbugyi200.athena.ij--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ij.md#member-code)
+- **COMMITS:**
+  - [010c061](https://github.com/sase-org/sase/commit/010c061757c693cc271e49043a049627eb2f4793) — fix(ace): collapse group clans before grouping banners
 
 # Plan: Prefer group-wide agent-clan collapse before grouping collapse
 

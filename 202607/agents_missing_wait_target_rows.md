@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_missing_wait_target_rows.md](prompts/agents_missing_wait_target_rows.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h8/README.md)
+  - [bbugyi200.athena.h8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h8.md#member-code)
+- **COMMITS:**
+  - [d27422f](https://github.com/sase-org/sase/commit/d27422fd7e8007c5b3073f4ce9bc0d083d17b571) — fix(tui): flag missing agent wait targets
 
 # Plan: Surface missing wait targets on Agents-tab rows
 

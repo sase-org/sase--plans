@@ -8,6 +8,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_plan_frontmatter_properties.md](prompts/telegram_plan_frontmatter_properties.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ai--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ai.md#member-code)
 
 # Plan: Beautiful Telegram plan properties
 

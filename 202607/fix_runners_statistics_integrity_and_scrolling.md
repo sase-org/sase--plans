@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_runners_statistics_integrity_and_scrolling.md](prompts/fix_runners_statistics_integrity_and_scrolling.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hn](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hn/README.md)
+  - [bbugyi200.athena.hn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hn.md#member-code)
+- **COMMITS:**
+  - [2b875db](https://github.com/sase-org/sase/commit/2b875dbcc6a5ad959f9da4a1fdd010ca328a2e9d) — feat(statistics): add configurable half-page scrolling
 
 # Plan: Correct Runners statistics and scrolling
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_family_headline_total.md](prompts/agent_family_headline_total.md)
+- **AGENTS:**
+  - [bbugyi200.athena.c2.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c2.f0/README.md)
+  - [bbugyi200.athena.c2.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c2.f0.md#member-code)
+- **COMMITS:**
+  - [de9d360](https://github.com/sase-org/sase/commit/de9d36014a20c6795a557dae1435b4b25fa22471) — fix(tui): count effective agents in headline
 
 # Plan: Project parallel family members into the Agents headline total
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/phase_plan_and_bead_context.md](prompts/phase_plan_and_bead_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g7/README.md)
+  - [bbugyi200.athena.g7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g7.md#member-code)
+- **COMMITS:**
+  - [286a809](https://github.com/sase-org/sase/commit/286a8090666bc2587736e1f143d0ba631741bde6) — feat(ace): show phase bead and authored plan context
 
 # Plan: Restore phase PLAN and BEAD context lanes
 

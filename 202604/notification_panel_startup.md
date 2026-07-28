@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/notification_panel_startup.md](prompts/notification_panel_startup.md)
+- **COMMITS:**
+  - [92a46e0](https://github.com/sase-org/sase/commit/92a46e094a41b39825e0c1336e6feb24b7a26d6f) — fix: flush terminal probe replies before TUI startup
 
 # Plan: Stop Notification Panel From Opening On Startup
 

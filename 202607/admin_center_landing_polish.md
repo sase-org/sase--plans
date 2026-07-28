@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/admin_center_landing_polish.md](prompts/admin_center_landing_polish.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gc.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gc.f0/README.md)
+  - [bbugyi200.athena.gc.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gc.f0.md#member-code)
+- **COMMITS:**
+  - [46c3a9f](https://github.com/sase-org/sase/commit/46c3a9fdd308314f9450bcc31a550144fbffcdf4) — feat(ace): polish Admin Center landing
 
 # Plan: Beautiful SASE Admin Center landing page
 

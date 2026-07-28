@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sase_commit_first_try_reliability.md](prompts/sase_commit_first_try_reliability.md)
+- **AGENTS:**
+  - [bbugyi200.athena.13--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.13.md#member-code)
 
 # Make `sase commit` succeed on the first try
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/commit_type_aliases.md](prompts/commit_type_aliases.md)
+- **COMMITS:**
+  - [5e4aa24](https://github.com/sase-org/sase/commit/5e4aa247198c1d0a9b06e867fa0798992b9db04b) — feat: add short aliases for \`sase commit --type\` values
 
 # Plan: Short Aliases for `sase commit --type` Values
 

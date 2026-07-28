@@ -10,6 +10,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_custom_command_visibility.md](prompts/telegram_custom_command_visibility.md)
+- **AGENTS:**
+  - [bbugyi200.athena.az--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.az.md#member-code)
 
 # Plan: Keep configured Telegram commands visible
 

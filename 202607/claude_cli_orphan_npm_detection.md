@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/claude_cli_orphan_npm_detection.md](prompts/claude_cli_orphan_npm_detection.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hy/README.md)
+  - [bbugyi200.athena.hy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hy.md#member-code)
+- **COMMITS:**
+  - [dda37da](https://github.com/sase-org/sase/commit/dda37dae347caea88a124df0667d5fcbfe2e60c7) — fix(agent-clis): ignore orphaned npm package listings
 
 # Plan: Fix Claude Code agent-CLI update failing with exit 217
 

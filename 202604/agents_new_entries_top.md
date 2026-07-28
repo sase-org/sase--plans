@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_new_entries_top.md](prompts/agents_new_entries_top.md)
+- **COMMITS:**
+  - [a6fbb45](https://github.com/sase-org/sase/commit/a6fbb45e584000dc298fe402c537a81354a66bda) — fix: keep fresh agents above saved ordering
 
 # Plan: Keep New Agents at the Top After Manual Reordering
 

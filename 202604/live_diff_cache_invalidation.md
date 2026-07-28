@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/live_diff_cache_invalidation.md](prompts/live_diff_cache_invalidation.md)
+- **COMMITS:**
+  - [36a827e](https://github.com/sase-org/sase/commit/36a827ef3344583e567ec892073b07e1956d6acd) — fix(ace): invalidate live-diff cache on working-tree edits
 
 # Plan: Fix Live-Diff Regression in `sase ace` Agents-Tab File Panel
 

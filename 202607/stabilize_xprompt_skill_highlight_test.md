@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/stabilize_xprompt_skill_highlight_test.md](prompts/stabilize_xprompt_skill_highlight_test.md)
+- **AGENTS:**
+  - [bbugyi200.athena.90](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.90/README.md)
+  - [bbugyi200.athena.90--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.90.md#member-code)
+- **COMMITS:**
+  - [bd8fe53](https://github.com/sase-org/sase/commit/bd8fe533476acf747a7203a03fc265943e73fe8a) — test: stabilize xprompt skill highlight coverage
 
 # Plan: Stabilize project-scoped xprompt skill highlighting coverage
 

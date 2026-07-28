@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_space_all_artifacts_subtabs.md](prompts/ctrl_space_all_artifacts_subtabs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.br.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.br.w0/README.md)
+  - [bbugyi200.athena.br.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.br.w0.md#member-code)
+- **COMMITS:**
+  - [d98b284](https://github.com/sase-org/sase/commit/d98b2846247b9d5edcba07e779feaaddfc5991f7) — fix(tui): allow repeat agent across artifact subtabs
 
 # Plan: Restore Ctrl+Space across Artifacts sub-tabs
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_agent_deltas_commit_provenance.md](prompts/fix_agent_deltas_commit_provenance.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6m/README.md)
+  - [bbugyi200.athena.6m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6m.md#member-code)
+- **COMMITS:**
+  - [e2274e5](https://github.com/sase-org/sase/commit/e2274e52b3b8cb6897eb0c8fe22eb32ae5c97064) — fix: preserve primary commit diff provenance
 
 # Fix Agents-Tab Deltas Commit Provenance
 

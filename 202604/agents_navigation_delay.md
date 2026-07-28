@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_navigation_delay.md](prompts/agents_navigation_delay.md)
+- **COMMITS:**
+  - [70870fc](https://github.com/sase-org/sase/commit/70870fc4d7987db00b161fe5ae1e32798e2c36a6) — fix: avoid redundant agent reload after kill cleanup
 
 # Plan: Fix Agents Tab Navigation Delay After Killing Agents
 

@@ -4,12 +4,17 @@ title: AXE add and edit workflows
 goal: Users can add and safely edit AXE lumberjacks and chops from ACE with non-blocking
   persistence, selection restoration, and runtime reconciliation.
 bead: sase-8m.3
-parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-07-22 14:00:19
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_add_edit_workflows.md](prompts/axe_add_edit_workflows.md)
+- **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8m.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.3/README.md)
+  - [bbugyi200.athena.sase-8m.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.3.md#member-code)
+- **COMMITS:**
+  - [058cd64](https://github.com/sase-org/sase/commit/058cd646fb1d3113fe28186473f252dc4f488d13) — feat(axe): add config management workflows (sase-8m.3)
 
 # AXE add and edit workflows
 

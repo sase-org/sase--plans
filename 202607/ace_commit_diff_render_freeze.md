@@ -14,6 +14,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ace_commit_diff_render_freeze.md](prompts/ace_commit_diff_render_freeze.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cy/README.md)
+  - [bbugyi200.athena.cy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cy.md#member-code)
+- **COMMITS:**
+  - [4dff939](https://github.com/sase-org/sase/commit/4dff93912801d7f4a6e310edd07990e630cc8438) — perf(ace): bound plain diff rendering
 
 # Plan: Bound the plain-text render fallback so huge commit diffs cannot freeze the TUI
 

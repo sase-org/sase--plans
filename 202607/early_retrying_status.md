@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/early_retrying_status.md](prompts/early_retrying_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.c3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c3/README.md)
+  - [bbugyi200.athena.c3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c3.md#member-code)
+- **COMMITS:**
+  - [786cdb7](https://github.com/sase-org/sase/commit/786cdb7f7bfa71d9bef874be15c27062611676ac) — fix(ace): show retrying status before the next attempt
 
 # Plan: Surface retry backoff immediately for agent families
 

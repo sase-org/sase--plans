@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prompt_stash_preview_pane.md](prompts/prompt_stash_preview_pane.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6k.md#member-code)
 
 # Plan: Prompt Stash Preview Pane with XPrompt + Markdown Syntax Highlighting
 

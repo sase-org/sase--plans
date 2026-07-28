@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_github_remote_sourcing.md](prompts/vcs_log_github_remote_sourcing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2x--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2x.md#member-code)
 
 # Plan: Source `sase vcs log` from the GitHub remote, marking local presence
 

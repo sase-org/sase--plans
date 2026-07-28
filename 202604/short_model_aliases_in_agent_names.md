@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/short_model_aliases_in_agent_names.md](prompts/short_model_aliases_in_agent_names.md)
+- **COMMITS:**
+  - [d937da9](https://github.com/sase-org/sase/commit/d937da987025b92b27a7a88b929c19fdb23f6bff) — feat: short aliases for long model names in multi-model agent suffixes
 
 # Plan: Short model aliases in multi-model agent name suffixes
 

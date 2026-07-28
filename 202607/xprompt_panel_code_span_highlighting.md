@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_panel_code_span_highlighting.md](prompts/xprompt_panel_code_span_highlighting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.aw.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aw.f0/README.md)
+  - [bbugyi200.athena.aw.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aw.f0.md#member-code)
+- **COMMITS:**
+  - [77b92ac](https://github.com/sase-org/sase/commit/77b92ac8deb01f84d49b6b68ba78a99afaeb0f53) — fix(ace): highlight code in xprompt-led lines
 
 # Plan: Inline code highlighting in the agent XPROMPT panel
 

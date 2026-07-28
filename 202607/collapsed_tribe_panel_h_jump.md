@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_tribe_panel_h_jump.md](prompts/collapsed_tribe_panel_h_jump.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i0/README.md)
+  - [bbugyi200.athena.i0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i0.md#member-code)
+- **COMMITS:**
+  - [678414a](https://github.com/sase-org/sase/commit/678414a6ce10e728fe4d9a32cae741752a87094f) — feat(ace): jump from collapsed panels to expanded panel
 
 # Plan: Jump from collapsed tribe panels with h
 

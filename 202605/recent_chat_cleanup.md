@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/recent_chat_cleanup.md](prompts/recent_chat_cleanup.md)
+- **COMMITS:**
+  - [76f63f7](https://github.com/sase-org/sase/commit/76f63f7f488b4c558a5a704c1797231e93ef21e0) — chore: document reverted agent loader migration
 
 # Recent SASE Chat Cleanup Plan
 

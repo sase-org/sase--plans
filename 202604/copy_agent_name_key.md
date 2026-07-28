@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/copy_agent_name_key.md](prompts/copy_agent_name_key.md)
+- **COMMITS:**
+  - [8506be9](https://github.com/sase-org/sase/commit/8506be97ea7712e425cf1344c69d9da7a6dd6a25) — feat(ace): copy selected agent's name via \`%n\` on Agents tab
 
 # Plan: Copy Agent Name to Clipboard from Agents Tab Copy Mode
 

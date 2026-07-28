@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_agent_status.md](prompts/queued_agent_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ku](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ku/README.md)
+  - [bbugyi200.athena.ku--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ku.md#member-code)
+- **COMMITS:**
+  - [899a257](https://github.com/sase-org/sase/commit/899a257f22b0a36225485f8c81faaf72cef4fdf9) — feat: surface runner-cap queued agent status
 
 # Plan: A dedicated QUEUED agent status for runner-slot waiters
 

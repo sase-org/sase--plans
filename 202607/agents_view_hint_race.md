@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agents_view_hint_race.md](prompts/agents_view_hint_race.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5p.md#member-code)
 
 # Stabilize Agents-tab view hints against deferred detail repaints
 

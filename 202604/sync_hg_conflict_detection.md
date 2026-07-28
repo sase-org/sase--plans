@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/sync_hg_conflict_detection.md](prompts/sync_hg_conflict_detection.md)
+- **COMMITS:**
+  - [114eb46](https://github.com/sase-org/sase/commit/114eb46758a54f68e18d5c41fe1ab834831337c5) — fix: Add hg rebase --continue to sync resolve instructions
 
 # Plan: Fix #sync xprompt merge conflict detection for hg VCS provider
 

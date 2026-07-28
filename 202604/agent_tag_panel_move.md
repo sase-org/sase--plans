@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_tag_panel_move.md](prompts/agent_tag_panel_move.md)
+- **COMMITS:**
+  - [6586825](https://github.com/sase-org/sase/commit/658682544a87588064e76dc081d6ce2becbf98dd) — fix: refresh agent panels after tag changes
 
 # Plan: Immediate Agent Panel Move After Tagging
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_fold_selector_l_keymap.md](prompts/agents_fold_selector_l_keymap.md)
+- **AGENTS:**
+  - [bbugyi200.athena.eg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eg/README.md)
+  - [bbugyi200.athena.eg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eg.md#member-code)
+- **COMMITS:**
+  - [415704d](https://github.com/sase-org/sase/commit/415704d977268315d286f368640f58fd0af0e127) — feat(ace)\!: move fold selector to direct L shortcut
 
 # Plan: Move the Agents visible-fold selector to L
 

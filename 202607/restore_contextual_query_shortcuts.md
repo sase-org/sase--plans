@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_contextual_query_shortcuts.md](prompts/restore_contextual_query_shortcuts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-76.land.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-76.land.f1/README.md)
+  - [bbugyi200.athena.sase-76.land.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-76.land.f1.md#member-code)
+- **COMMITS:**
+  - [24a5fb6](https://github.com/sase-org/sase/commit/24a5fb69cba6a31215ea88ef1a59c3af6d97357c) — fix(ace): restore contextual query shortcuts
 
 # Plan: Restore contextual ACE query shortcuts
 

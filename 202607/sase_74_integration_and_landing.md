@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sase_74_integration_and_landing.md](prompts/sase_74_integration_and_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-74.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-74.land/README.md)
+  - [bbugyi200.athena.sase-74.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-74.land.md#member-code)
+- **COMMITS:**
+  - [a9065c2](https://github.com/sase-org/sase/commit/a9065c25eaaf49de3ad5f5b45bc46237e9db11d7) — docs: document clan-scoped agent cleanup (sase-74)
 
 # Plan: Complete sase-74 integration and landing
 

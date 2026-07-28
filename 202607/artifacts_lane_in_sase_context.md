@@ -15,6 +15,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_lane_in_sase_context.md](prompts/artifacts_lane_in_sase_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b1.f2.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b1.f2.f1/README.md)
+  - [bbugyi200.athena.b1.f2.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b1.f2.f1.md#member-code)
+- **COMMITS:**
+  - [6b84f2a](https://github.com/sase-org/sase/commit/6b84f2add16e3e28af29837d2c6189ab9b76c1ed) — feat(ace): add ranked artifacts context lane
+  - [b296828](https://github.com/sase-org/sase/commit/b29682808132418e06eb4601f7c6a7b6d2e2a715) — fix(ace): keep artifact fields under context navigation
 
 # Plan: Fold Commits, Deltas, and Artifacts into a ranked ARTIFACTS lane in SASE CONTEXT
 

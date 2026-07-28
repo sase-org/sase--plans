@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/custom_gate_command_keymaps.md](prompts/custom_gate_command_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bu.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bu.w1/README.md)
+  - [bbugyi200.athena.bu.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bu.w1.md#member-code)
+- **COMMITS:**
+  - [d5cf13b](https://github.com/sase-org/sase/commit/d5cf13b23278165b87b3ed48ff8f9ba1eca27635) — feat(tui): add custom gate command keymaps
 
 # Plan: Focus-Independent Custom Gate Command Keymaps
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_output_variables.md](prompts/telegram_output_variables.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1k.md#member-code)
 
 # Plan: Show `/sase_var` Output Variables in the Telegram Agent-Completion Message
 

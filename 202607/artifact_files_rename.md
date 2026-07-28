@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifact_files_rename.md](prompts/artifact_files_rename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bx/README.md)
+  - [bbugyi200.athena.bx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bx.md#member-code)
+- **COMMITS:**
+  - [2443fc8](https://github.com/sase-org/sase/commit/2443fc80e26aeb126c77ef2f7ee400aa631560a1) — feat\!: rename explicit artifacts to artifact files
 
 # Plan: Rename the agent artifact-file concept to "artifact files"
 

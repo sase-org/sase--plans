@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_hole_headline_count.md](prompts/agent_hole_headline_count.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ia](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ia/README.md)
+  - [bbugyi200.athena.ia--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ia.md#member-code)
+- **COMMITS:**
+  - [1232a8c](https://github.com/sase-org/sase/commit/1232a8c1c91b6dcabb6fb5d0959d631b7135d6a1) — fix(ace): count agent holes in headline
 
 # Plan: Show agent-hole count in the Agents-tab headline
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_agents_tab_project_banners.md](prompts/fix_agents_tab_project_banners.md)
+- **COMMITS:**
+  - [f162fe8](https://github.com/sase-org/sase/commit/f162fe8356f51f8c990ac5609c49cf7cb6d2581c) — fix: avoid duplicate project agent banners
 
 # Fix Agents Tab Project-Scoped Banner Duplication
 

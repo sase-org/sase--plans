@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/reduce_agents_md_tokens.md](prompts/reduce_agents_md_tokens.md)
+- **COMMITS:**
+  - [4b607fe](https://github.com/sase-org/sase/commit/4b607fe21a96ac79740cc38d72490a7675ef5177) — chore: Reduce AGENTS.md token usage by ~730+ tokens
 
 # Plan: Reduce AGENTS.md Token Usage
 

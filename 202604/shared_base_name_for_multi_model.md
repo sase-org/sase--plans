@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/shared_base_name_for_multi_model.md](prompts/shared_base_name_for_multi_model.md)
+- **COMMITS:**
+  - [cc237f7](https://github.com/sase-org/sase/commit/cc237f77b881e2fa5aa539e213444ca506c3828b) — feat: shared base name + \`\<base\>.\<llm\>\` suffix for multi-model agent spawns
 
 # Plan: Shared base name + `<base>.<llm>` suffix for multi-model agent spawns
 

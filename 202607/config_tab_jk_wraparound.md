@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/config_tab_jk_wraparound.md](prompts/config_tab_jk_wraparound.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hw/README.md)
+  - [bbugyi200.athena.hw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hw.md#member-code)
+- **COMMITS:**
+  - [ea575c7](https://github.com/sase-org/sase/commit/ea575c7c1f366d3a2b8d0885c987bcb5c710935b) — fix(config): wrap j and k tree navigation
 
 # Plan: Cycle Config tab selection with j and k
 

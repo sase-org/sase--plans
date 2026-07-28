@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/remove_cls_flat_grouping.md](prompts/remove_cls_flat_grouping.md)
+- **COMMITS:**
+  - [d7b9660](https://github.com/sase-org/sase/commit/d7b9660624e78b6952c76fcaa8713e11c4dc8040) — feat(ace): remove FLAT grouping from the CLs tab
 
 # Remove FLAT Grouping from the CLs Tab
 

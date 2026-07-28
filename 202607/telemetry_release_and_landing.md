@@ -12,6 +12,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/telemetry_release_and_landing.md](prompts/telemetry_release_and_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6k.md#member-code)
 
 # Plan: Finish the in-house telemetry release and landing
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/vcs_xprompt_mru_cycling.md](prompts/vcs_xprompt_mru_cycling.md)
+- **COMMITS:**
+  - [ac07daa](https://github.com/sase-org/sase/commit/ac07daa26c810a1c71be6d603804a9173dc1d18d) — feat: Add VCS xprompt MRU cycling in prompt input
 
 # Plan: VCS Xprompt MRU Cycling in Prompt Input
 

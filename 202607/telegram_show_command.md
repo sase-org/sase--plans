@@ -12,6 +12,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_show_command.md](prompts/telegram_show_command.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gn.md#member-code)
 
 # Plan: Telegram `/show` command for agents, clans, families, and tribes
 

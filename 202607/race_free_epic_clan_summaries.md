@@ -43,6 +43,12 @@ bead_id: sase-8i
 ---
 
 - **PROMPT:** [202607/prompts/race_free_epic_clan_summaries.md](prompts/race_free_epic_clan_summaries.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8i.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.2.md#member-code)
+  - [bbugyi200.athena.sase-8i.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8i.3/README.md)
+  - [bbugyi200.athena.sase-8i.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.3.md#member-code)
+- **COMMITS:**
+  - [865d5c1](https://github.com/sase-org/sase/commit/865d5c191e7fcecf6f7f96c9f1ba2732d6436d6b) — fix: refresh clan summaries after workspace preparation (sase-8i.3)
 
 # Plan: Race-free plan-lane epic clan summaries
 

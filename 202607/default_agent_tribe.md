@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/default_agent_tribe.md](prompts/default_agent_tribe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-7o.4.w3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7o.4.w3/README.md)
+  - [bbugyi200.athena.sase-7o.4.w3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7o.4.w3.md#member-code)
+- **COMMITS:**
+  - [6de6ee3](https://github.com/sase-org/sase/commit/6de6ee32b03b4c5151df146f97302ce3a03f712c) — feat(ace): reserve the default agent tribe panel
 
 # Plan: Reserved `@default` tribe for Agents-tab grouping
 

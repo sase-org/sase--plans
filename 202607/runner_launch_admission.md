@@ -5,6 +5,12 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/runner_launch_admission.md](prompts/runner_launch_admission.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7v/README.md)
+  - [bbugyi200.athena.7v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7v.md#member-code)
+  - [bbugyi200.athena.7v--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7v.md#member-plan)
+- **COMMITS:**
+  - [d546a81](https://github.com/sase-org/sase/commit/d546a813cb18d41484f7c8969156b5bed4aff941) — fix: correct runner launch admission ordering
 
 # Plan: Make runner admission account for newly launched immediate agents
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/commit_view_plan_toggle.md](prompts/commit_view_plan_toggle.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h6/README.md)
+  - [bbugyi200.athena.h6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h6.md#member-code)
+- **COMMITS:**
+  - [e4cdefd](https://github.com/sase-org/sase/commit/e4cdefd621267341005fcbed6ac6cceb51bf5c49) — feat(tui): show linked plans in commit view
 
 # Plan: View associated plans from the commit panel
 

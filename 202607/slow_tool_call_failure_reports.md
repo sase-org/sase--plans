@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/slow_tool_call_failure_reports.md](prompts/slow_tool_call_failure_reports.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0z.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0z.w1/README.md)
+  - [bbugyi200.athena.0z.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0z.w1.md#member-code)
 
 # Plan: `v` Hints for Failed SLOW TOOL CALLS (On-the-fly Failure Reports)
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/sdd_mythic_directory_image.md](prompts/sdd_mythic_directory_image.md)
+- **COMMITS:**
+  - [bfadf55](https://github.com/sase-org/sase/commit/bfadf5570ac815f42205af1a8ee4b8cfc5c62b8d) — feat: add SDD directory map image
 
 # Plan: Add Mythic SDD Directory Image
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/hide_sidecar_commits_by_default.md](prompts/hide_sidecar_commits_by_default.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gf/README.md)
+  - [bbugyi200.athena.gf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gf.md#member-code)
+- **COMMITS:**
+  - [c7d1e39](https://github.com/sase-org/sase/commit/c7d1e393fdc40238619af433cb1939623be90e8e) — feat(vcs): hide sidecar commits by default
 
 # Plan: Hide sidecar commits by default
 

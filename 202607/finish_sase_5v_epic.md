@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/finish_sase_5v_epic.md](prompts/finish_sase_5v_epic.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5v/README.md)
+  - [bbugyi200.athena.sase-5v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5v.md#member-code)
+- **COMMITS:**
+  - [d6b6ab7](https://github.com/sase-org/sase/commit/d6b6ab73f53bb19b6f4f46b4bf275a1abacab753) — docs: document basher vendoring workflow (sase-5v)
 
 # Finish the sase-5v epic: pyvendor doc references + bead closure
 

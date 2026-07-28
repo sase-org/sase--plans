@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/chat_update_workspace_resolution.md](prompts/chat_update_workspace_resolution.md)
+- **COMMITS:**
+  - [a12dc12](https://github.com/sase-org/sase/commit/a12dc12b5d8b686f7e19cad7e4a4f4e5e992de08) — fix: resolve chat updates from registered sase workspace
 
 # Fix Chat Update Workspace Resolution
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/jump_all_entries.md](prompts/jump_all_entries.md)
+- **COMMITS:**
+  - [e2bb001](https://github.com/sase-org/sase/commit/e2bb00183e8e091cb323e10e07dfd44e3c8e5e9c) — feat: Add cross-tab jump-to-entry modal (backtick)
 
 # Plan: Cross-Tab Jump-to-Entry Modal (backtick)
 
@@ -88,7 +90,7 @@ hints (display-only, not selectable).
 
 - `src/sase/default_config.yml` — Add `jump_to_all_entries: "grave_accent"` under `ace.keymaps.app`
 - `src/sase/ace/tui/keymaps/types.py`:
-  - Add `"grave_accent": "\`"`to`\_KEY_DISPLAY`
+  - Add `"grave_accent": "\`"`to`_KEY_DISPLAY`
   - Add `("jump_to_all_entries", "Jump All", False)` to `_BINDING_META`
   - Add `jump_to_all_entries: str` field to `AppKeymaps` (under CL actions, next to `jump_to_entry`)
 - `src/sase/ace/tui/bindings.py` — Add `Binding("grave_accent", "jump_to_all_entries", "Jump All", show=False)`

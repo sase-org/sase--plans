@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/model_alias_picker_options.md](prompts/model_alias_picker_options.md)
+- **AGENTS:**
+  - [bbugyi200.athena.d8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d8/README.md)
+  - [bbugyi200.athena.d8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d8.md#member-code)
+- **COMMITS:**
+  - [a27479e](https://github.com/sase-org/sase/commit/a27479e795300e33aff8d1d5cd94ffe437e36334) — feat(ace): add alias options to model picker
 
 # Plan: Model-alias targets in the Models-panel picker
 

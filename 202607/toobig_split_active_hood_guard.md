@@ -7,6 +7,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/toobig_split_active_hood_guard.md](prompts/toobig_split_active_hood_guard.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9p.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9p.f0.md#member-code)
 
 # Plan: Guard toobig split launches by active agent hood
 

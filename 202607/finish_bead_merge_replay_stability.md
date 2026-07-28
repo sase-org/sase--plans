@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_bead_merge_replay_stability.md](prompts/finish_bead_merge_replay_stability.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9x.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9x.land/README.md)
+  - [bbugyi200.athena.sase-9x.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9x.land.md#member-code)
+- **COMMITS:**
+  - [fa07151](https://github.com/sase-org/sase/commit/fa07151cf1414f652b836ac1511f302e8dafac2d) — test: track sase-core-rs 0.11.2 minimum (sase-9x)
 
 # Finish and land bead merge replay stability
 

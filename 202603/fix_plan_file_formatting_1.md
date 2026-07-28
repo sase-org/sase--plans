@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [c495e09](https://github.com/sase-org/sase/commit/c495e09d33e3e08e410dfb57999a287bd93b8b76) — fix: Format plan files with prettier before archiving
+
 # Fix: Plan files not formatted with prettier before being committed
 
 ## Problem

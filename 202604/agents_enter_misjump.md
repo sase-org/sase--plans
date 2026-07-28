@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_enter_misjump.md](prompts/agents_enter_misjump.md)
+- **COMMITS:**
+  - [bada6bb](https://github.com/sase-org/sase/commit/bada6bb1a82f65db44f69b15b217a8b5019dc694) — fix: prefer exact changespec matches in agent jumps
 
 # Diagnose and Fix Agents-tab Enter Misjump
 

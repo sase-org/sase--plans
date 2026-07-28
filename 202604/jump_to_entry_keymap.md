@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [d3bb115](https://github.com/sase-org/sase/commit/d3bb115e85b1fdf73934ee8f045c53439ce3a229) — feat: add global V jump-to-entry keymap for ace side panels
+
 # Implement `V` Jump-To-Entry Keymap Across Ace TUI Tabs
 
 ## Objective

@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_scope_header.md](prompts/statistics_scope_header.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8a.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8a.1/README.md)
+  - [bbugyi200.athena.sase-8a.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.1.md#member-code)
+- **COMMITS:**
+  - [26ebac8](https://github.com/sase-org/sase/commit/26ebac8584d0e0778ffa271deb4fd3b36a4b022d) — feat(ace): clarify statistics scope controls (sase-8a.1)
 
 # Plan: Statistics scope bar and view descriptions
 

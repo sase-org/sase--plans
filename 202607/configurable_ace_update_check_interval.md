@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/configurable_ace_update_check_interval.md](prompts/configurable_ace_update_check_interval.md)
+- **AGENTS:**
+  - [bbugyi200.athena.aa.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aa.f1/README.md)
+  - [bbugyi200.athena.aa.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aa.f1.md#member-code)
+- **COMMITS:**
+  - [147090d](https://github.com/sase-org/sase/commit/147090de1a6cbac42d11c2efa30dbd321c85fa81) — feat(ace): make update check interval configurable
 
 # Plan: Configurable ACE Update-Check Interval
 

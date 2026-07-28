@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/uppercase_active_subtabs.md](prompts/uppercase_active_subtabs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a3/README.md)
+  - [bbugyi200.athena.a3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a3.md#member-code)
+- **COMMITS:**
+  - [70d1fb5](https://github.com/sase-org/sase/commit/70d1fb5668f0940bec221004e209e45a175bd0f6) — feat(tui): uppercase active nested tab labels
 
 # Plan: Uppercase active Projects and Artifacts sub-tabs
 

@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/preserve_chop_clan_tribe.md](prompts/preserve_chop_clan_tribe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fp/README.md)
+  - [bbugyi200.athena.fp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fp.md#member-code)
+- **COMMITS:**
+  - [8256e25](https://github.com/sase-org/sase/commit/8256e2584648cf54e62f0cf8cf04ae73ee322d7d) — fix(agents): preserve clan tribe across filtered snapshots
 
 # Plan: Preserve chop clan tribes across bounded agent views
 

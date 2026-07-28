@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/periodic_ace_update_checks.md](prompts/periodic_ace_update_checks.md)
+- **AGENTS:**
+  - [bbugyi200.athena.aa](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aa/README.md)
+  - [bbugyi200.athena.aa--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aa.md#member-code)
+- **COMMITS:**
+  - [138a600](https://github.com/sase-org/sase/commit/138a600ac36a68141a8719c9c45fc9786f5945a2) — feat(ace): add periodic update checks
 
 # Plan: Periodic Non-Blocking ACE Update Checks
 

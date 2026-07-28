@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [f4a9b40](https://github.com/sase-org/sase/commit/f4a9b40c525f8e928ef926d1100770d1700d86a5) — fix: prevent chop-spawned agents from stealing user agent names
+
 # Fix: Chop-spawned agents steal user agent names
 
 ## Problem

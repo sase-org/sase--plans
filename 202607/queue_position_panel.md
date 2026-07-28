@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queue_position_panel.md](prompts/queue_position_panel.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ku.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ku.f1/README.md)
+  - [bbugyi200.athena.ku.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ku.f1.md#member-code)
+- **COMMITS:**
+  - [0218ce8](https://github.com/sase-org/sase/commit/0218ce832fe25ebf5452d8dcc8210a163d12a142) — feat(ace): show runner queue position context
 
 # Plan: Show a queued agent's spot in the line
 

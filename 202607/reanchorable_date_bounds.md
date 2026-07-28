@@ -7,10 +7,15 @@ goal: Date filters retain stable semantic specifications, relative windows resol
 create_time: 2026-07-21 10:21:23
 status: done
 bead: sase-8h.1
-parent: sase/repos/plans/202607/commits_filter_correctness.md
 ---
 
 - **PROMPT:** [202607/prompts/reanchorable_date_bounds.md](prompts/reanchorable_date_bounds.md)
+- **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8h.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1/README.md)
+  - [bbugyi200.athena.sase-8h.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.md#member-code)
+- **COMMITS:**
+  - [08f91b4](https://github.com/sase-org/sase/commit/08f91b43df3ccac5f40b2d7a334973ed7ddd8e85) — fix(vcs): re-anchor date filter bounds (sase-8h.1)
 
 # Plan: Re-anchorable date bounds and inclusive until days
 

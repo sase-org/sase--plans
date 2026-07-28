@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [e0c2578](https://github.com/sase-org/sase/commit/e0c25782506096a40f4a3d2c14ce20d5bce48022) — feat: add prompt file path completion in ACE input bar
+
 # Prompt Input File Completion (Rich, Intuitive, Reliable)
 
 ## Objective

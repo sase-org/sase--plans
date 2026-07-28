@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/persist_admin_center_resume_tab.md](prompts/persist_admin_center_resume_tab.md)
+- **AGENTS:**
+  - [bbugyi200.athena.js](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.js/README.md)
+  - [bbugyi200.athena.js--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.js.md#member-code)
+- **COMMITS:**
+  - [f16a123](https://github.com/sase-org/sase/commit/f16a123612db28ba4ac57720921b6bf1c0161ac9) — feat(ace): persist Admin Center resume tab
 
 # Persist the SASE Admin Center resume tab
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_histogram_quantile_queries.md](prompts/fix_histogram_quantile_queries.md)
+- **COMMITS:**
+  - [6e7fdbb](https://github.com/sase-org/sase/commit/6e7fdbbfc13bc52ff9caaa8bee87320fc604a9fb) — fix(telemetry): Add sum by (le) aggregation to histogram_quantile dashboard queries
 
 # Plan: Fix histogram_quantile PromQL Queries for Duration Charts
 

@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/plan_lane_in_sase_context.md](prompts/plan_lane_in_sase_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.b1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b1/README.md)
+  - [bbugyi200.athena.b1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b1.md#member-code)
+- **COMMITS:**
+  - [125f342](https://github.com/sase-org/sase/commit/125f342cb18e2a5bee33370948a204733c25e948) — feat(ace): merge plan into SASE context
 
 # Plan: Merge SASE PLAN into SASE CONTEXT as a PLAN lane
 

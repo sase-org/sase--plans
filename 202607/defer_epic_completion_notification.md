@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/defer_epic_completion_notification.md](prompts/defer_epic_completion_notification.md)
+- **AGENTS:**
+  - [bbugyi200.athena.lw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lw/README.md)
+  - [bbugyi200.athena.lw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lw.md#member-code)
+- **COMMITS:**
+  - [c9f2450](https://github.com/sase-org/sase/commit/c9f2450ae0d1c0a183fa31f680670b281d2ae04b) — fix: defer epic completion notifications until launch settles
 
 # Defer the planner completion notification until the epic launch task settles
 

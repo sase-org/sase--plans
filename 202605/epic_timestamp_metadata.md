@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/epic_timestamp_metadata.md](prompts/epic_timestamp_metadata.md)
+- **COMMITS:**
+  - [592cc80](https://github.com/sase-org/sase/commit/592cc80d949320304c696837f0d2fa895443d87d) — feat: show epic approval launch timestamps
 
 # Epic timestamp metadata plan
 

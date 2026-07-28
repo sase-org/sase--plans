@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/repeat_fanout_name_collision_from_telegram.md](prompts/repeat_fanout_name_collision_from_telegram.md)
+- **COMMITS:**
+  - [68045c4](https://github.com/sase-org/sase/commit/68045c47cfd785c8ce06545ebdae2bd676566bd4) — fix: Reserve auto-name base letters when child-named agents remain
 
 # Plan: Fix `%r:N` Name Collision When Launched via Telegram
 

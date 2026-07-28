@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prompt_stash_pin_fixes.md](prompts/prompt_stash_pin_fixes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.65](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.65/README.md)
+  - [bbugyi200.athena.65--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.65.md#member-code)
+- **COMMITS:**
+  - [711120b](https://github.com/sase-org/sase/commit/711120b638d3362f4b9c0b1211c49a4af9ab5b69) — fix: handle pinned prompt stash bundles consistently
 
 # Fix Prompt-Stash Panel Pin & Selection Bugs
 

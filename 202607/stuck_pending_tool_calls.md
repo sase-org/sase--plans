@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/stuck_pending_tool_calls.md](prompts/stuck_pending_tool_calls.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0z.md#member-code)
 
 # Fix never-completing tool calls in the SLOW TOOL CALLS panel
 

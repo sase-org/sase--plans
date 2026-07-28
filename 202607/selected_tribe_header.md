@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/selected_tribe_header.md](prompts/selected_tribe_header.md)
+- **AGENTS:**
+  - [bbugyi200.athena.eb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eb/README.md)
+  - [bbugyi200.athena.eb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eb.md#member-code)
+- **COMMITS:**
+  - [5a5d07d](https://github.com/sase-org/sase/commit/5a5d07d62eeb2abe60159a01bffec71c8fc4462e) — fix(tui): preserve selected tribe header marker
 
 # Plan: Restore the selected Agent Tribe panel header
 

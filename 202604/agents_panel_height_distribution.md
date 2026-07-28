@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_panel_height_distribution.md](prompts/agents_panel_height_distribution.md)
+- **COMMITS:**
+  - [144c5c9](https://github.com/sase-org/sase/commit/144c5c94062fb3b6f8c92e36b648a66261720228) — fix: keep untagged agents panel flexible
 
 # Fix Agents-tab panel height distribution
 

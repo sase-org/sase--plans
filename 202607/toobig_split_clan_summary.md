@@ -9,6 +9,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/toobig_split_clan_summary.md](prompts/toobig_split_clan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j3.md#member-code)
 
 # Enrich the `toobig_split` clan summary with per-file names and line counts
 

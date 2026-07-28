@@ -5,12 +5,17 @@ goal: AXE runtime loading and editor previews share one exact-key, provenance-aw
   Rust composition and mutation contract, while source-preserving writes reject stale
   plans and replace targets atomically.
 bead: sase-8m.1
-parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-07-22 12:04:55
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/exact_axe_config_foundation.md](prompts/exact_axe_config_foundation.md)
+- **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8m.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.1/README.md)
+  - [bbugyi200.athena.sase-8m.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.1.md#member-code)
+- **COMMITS:**
+  - [5a9cef8](https://github.com/sase-org/sase/commit/5a9cef88329bc5f3323603300bc86040509530a0) — feat(axe): apply exact conflict-safe config edits (sase-8m.1)
 
 # Plan: Exact AXE config composition and mutation planning
 

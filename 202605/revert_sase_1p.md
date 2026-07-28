@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/revert_sase_1p.md](prompts/revert_sase_1p.md)
+- **COMMITS:**
+  - [4c073a0](https://github.com/sase-org/sase/commit/4c073a061fdc2e04dc2a272a4b6d648fe1cf7ccd) — ref: revert agent compose rust migration
 
 # Revert sase-1p Agent Compose Rust Migration
 

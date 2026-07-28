@@ -82,6 +82,11 @@ bead_id: sase-9t
 ---
 
 - **PROMPT:** [202607/prompts/axe_required_descriptions.md](prompts/axe_required_descriptions.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9t.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9t.land/README.md)
+  - [bbugyi200.athena.sase-9t.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9t.land.md#member-code)
+- **COMMITS:**
+  - [20c131b](https://github.com/sase-org/sase/commit/20c131b55788ae5d07ea32fcae66328c48e748ab) — build(deps): require sase-core-rs 0.10 (sase-9t)
 
 # Plan: Require descriptions for every AXE lumberjack and chop
 

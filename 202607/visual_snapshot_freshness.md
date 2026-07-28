@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/visual_snapshot_freshness.md](prompts/visual_snapshot_freshness.md)
+- **AGENTS:**
+  - [bbugyi200.athena.96.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.96.f1/README.md)
+  - [bbugyi200.athena.96.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.96.f1.md#member-code)
+- **COMMITS:**
+  - [03df1f8](https://github.com/sase-org/sase/commit/03df1f88dabcdb8895abf5025f566c389da3b7a3) — test: tighten visual snapshot drift tolerance
 
 # Plan: Restore ACE visual snapshot freshness
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/land_agent_epic_id_names.md](prompts/land_agent_epic_id_names.md)
+- **COMMITS:**
+  - [78185f4](https://github.com/sase-org/sase/commit/78185f4527306a89e5e2e4c2d9fc2535a55b47cc) — feat: name epic land agents by bead id
 
 # Land epic agents named by epic bead ID
 

@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/stabilize_residual_freeze_soak_landing.md](prompts/stabilize_residual_freeze_soak_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6j](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j/README.md)
+  - [bbugyi200.athena.sase-6j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6j.md#member-code)
+- **COMMITS:**
+  - [be5967a](https://github.com/sase-org/sase/commit/be5967a70a49b63bef291b03b8ea2927c76dc265) — test(tui): stabilize residual freeze soak (sase-6j.5) (sase-6j)
 
 # Plan: Stabilize residual-freeze soak verification and re-land sase-6j
 

@@ -80,6 +80,8 @@ bead_id: sase-a1
 ---
 
 - **PROMPT:** [202607/prompts/bead_history_truthful_close.md](prompts/bead_history_truthful_close.md)
+- **AGENTS:**
+  - [bbugyi200.athena.mb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mb/README.md)
 
 # Plan: Expose bead history and make bead completion truthful
 

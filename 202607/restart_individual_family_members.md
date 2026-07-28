@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restart_individual_family_members.md](prompts/restart_individual_family_members.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j2/README.md)
+  - [bbugyi200.athena.j2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j2.md#member-code)
+- **COMMITS:**
+  - [330c258](https://github.com/sase-org/sase/commit/330c25856f83465adfefe190495f6ddbc3369867) — fix: restart exact agent family members
 
 # Restart individual agent-family members with `,x`
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fast_bead_mutations.md](prompts/fast_bead_mutations.md)
+- **AGENTS:**
+  - [bbugyi200.athena.70](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.70/README.md)
+  - [bbugyi200.athena.70--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.70.md#member-code)
+- **COMMITS:**
+  - [438d3c7](https://github.com/sase-org/sase/commit/438d3c7e05e92e537376c03d217e38837137931b) — feat(beads): accelerate companion mutations
 
 # Make `sase bead` Mutating Commands Fast
 

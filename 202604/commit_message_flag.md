@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/commit_message_flag.md](prompts/commit_message_flag.md)
+- **COMMITS:**
+  - [f3080c7](https://github.com/sase-org/sase/commit/f3080c7ce7fd06247515c82db40c19020120a753) — feat: reassign \`-m\` to \`--message\` (inline string) and \`-M\` to \`--message-file\` for \`sase commit\`
 
 # Plan: Reassign `-m` to `--message` and `-M` to `--message-file` for `sase commit`
 

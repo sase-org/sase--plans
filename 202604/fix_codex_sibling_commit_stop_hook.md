@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_codex_sibling_commit_stop_hook.md](prompts/fix_codex_sibling_commit_stop_hook.md)
+- **COMMITS:**
+  - [cf6f605](https://github.com/sase-org/sase/commit/cf6f6050c4455e75ee25b95c7270af5c2c4cebe8) — fix: set Codex project dir for sibling hook
 
 # Plan: Fix Codex Sibling Commit Stop Hook
 

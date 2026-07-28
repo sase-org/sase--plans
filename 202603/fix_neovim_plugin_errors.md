@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_neovim_plugin_errors.md](prompts/fix_neovim_plugin_errors.md)
+- **COMMITS:**
+  - [882ab2c](https://github.com/sase-org/sase/commit/882ab2c4de98029db0df740a1f6847cad02c9bdc) — chore: Mark fix_neovim_plugin_errors plan as done
 
 # Plan: Fix Neovim Plugin Errors
 

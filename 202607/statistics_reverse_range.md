@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_reverse_range.md](prompts/statistics_reverse_range.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gq/README.md)
+  - [bbugyi200.athena.gq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gq.md#member-code)
+- **COMMITS:**
+  - [fdbdf2d](https://github.com/sase-org/sase/commit/fdbdf2d968e45be0047b1a443d7c60f26f249688) — feat(statistics): add reverse time range cycling
 
 # Plan: Reverse Statistics time-range keymap
 

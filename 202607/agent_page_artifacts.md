@@ -64,6 +64,11 @@ bead_id: sase-a9
 ---
 
 - **PROMPT:** [202607/prompts/agent_page_artifacts.md](prompts/agent_page_artifacts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-a9.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a9.1/README.md)
+  - [bbugyi200.athena.sase-a9.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a9.2/README.md)
+  - [bbugyi200.athena.sase-a9.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a9.3/README.md)
+  - [bbugyi200.athena.sase-a9.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-a9.4/README.md)
 
 # Plan: Agent sidecar pages link commits, neighbors, and output variables
 

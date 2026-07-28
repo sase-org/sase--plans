@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_contextual_keymaps.md](prompts/statistics_contextual_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hv/README.md)
+  - [bbugyi200.athena.hv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hv.md#member-code)
+- **COMMITS:**
+  - [12166f1](https://github.com/sase-org/sase/commit/12166f196a7affd4f36cd3cf863e2295f3f90a76) — feat(statistics): add contextual project keymaps
 
 # Plan: Context-aware Statistics controls and reverse project filtering
 

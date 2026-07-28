@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_pool_effort_display.md](prompts/models_panel_pool_effort_display.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1.f6.f0.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f6.f0.w0/README.md)
+  - [bbugyi200.athena.gy.f1.f6.f0.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f6.f0.w0.md#member-code)
+- **COMMITS:**
+  - [d57e220](https://github.com/sase-org/sase/commit/d57e2207c097dd7fc097f7267e700db5727c3bde) — feat(ace): show model pool effort details
 
 # Plan: Models panel pool and effort display
 

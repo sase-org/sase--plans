@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/migrate_root_sdd_artifacts.md](prompts/migrate_root_sdd_artifacts.md)
+- **COMMITS:**
+  - [bc3a523](https://github.com/sase-org/sase/commit/bc3a5238a366e59a5d5bcb222d4860109eeba176) — chore: migrate root SDD artifacts
 
 # Plan: Migrate Remaining Root Specs And Plans Into SDD
 

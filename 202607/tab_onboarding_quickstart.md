@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/tab_onboarding_quickstart.md](prompts/tab_onboarding_quickstart.md)
+- **AGENTS:**
+  - [bbugyi200.athena.u--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.u.md#member-code)
 
 # Plan: Tab Quick-Start Onboarding Redesign (Agents + PRs tabs)
 

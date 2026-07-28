@@ -42,6 +42,14 @@ bead_id: sase-8t
 ---
 
 - **PROMPT:** [202607/prompts/axe_status.md](prompts/axe_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8t.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.2/README.md)
+  - [bbugyi200.athena.sase-8t.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.2.md#member-code)
+  - [bbugyi200.athena.sase-8t.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.3/README.md)
+  - [bbugyi200.athena.sase-8t.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.3.md#member-code)
+- **COMMITS:**
+  - [0689333](https://github.com/sase-org/sase/commit/0689333f778ad10c96e2fe82a03076b3c3f7e752) — feat(axe): add side-effect-free status snapshots (sase-8t.2)
+  - [d0cf97a](https://github.com/sase-org/sase/commit/d0cf97a12930b4c28e0f86097518cf05965ca306) — feat(axe): add whole-system status command (sase-8t.3)
 
 # Add an intuitive, reliable, and beautiful `sase axe status`
 

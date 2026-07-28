@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/drop_bead_commit_note.md](prompts/drop_bead_commit_note.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kn](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kn/README.md)
+  - [bbugyi200.athena.kn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kn.md#member-code)
+- **COMMITS:**
+  - [396e272](https://github.com/sase-org/sase/commit/396e27268fe1ba4e4411e851375e1451ee80c296) — fix: preserve bead notes during commit workflows
 
 # Plan
 

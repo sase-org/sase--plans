@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_slow_agent_launch_naming.md](prompts/fix_slow_agent_launch_naming.md)
+- **AGENTS:**
+  - [bbugyi200.athena.is.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.is.cdx/README.md)
+  - [bbugyi200.athena.is.cdx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.is.cdx.md#member-code)
+- **COMMITS:**
+  - [9e35517](https://github.com/sase-org/sase/commit/9e355175c9af4fe649101a1990d3c1ef9955ace4) — perf: reuse machine identity during registry rebuild
 
 # Fix slow agent launches caused by repeated machine-identity discovery
 

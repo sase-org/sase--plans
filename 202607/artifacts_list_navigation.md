@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_list_navigation.md](prompts/artifacts_list_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.br](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.br/README.md)
+  - [bbugyi200.athena.br--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.br.md#member-code)
+- **COMMITS:**
+  - [abf5cdc](https://github.com/sase-org/sase/commit/abf5cdcd51a2d3d40f2f446d4019bedb336aafbc) — feat(ace): add fast navigation to artifact lists
 
 # Plan: Fast navigation for non-PR Artifacts lists
 

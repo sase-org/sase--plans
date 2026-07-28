@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/migrate.md](prompts/migrate.md)
+- **COMMITS:**
+  - [d5ccfb1](https://github.com/sase-org/sase/commit/d5ccfb1f7ab6f17574aedfccecd7cee175017f3f) — chore: mark migrate.md plan as done
 
 # Plan: Migrate Tier 2 Xprompts to Long-Term Memory
 

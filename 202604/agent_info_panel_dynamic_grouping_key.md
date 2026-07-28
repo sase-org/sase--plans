@@ -3,6 +3,10 @@ create_time: 2026-04-27 09:48:31
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [f6fc33c](https://github.com/sase-org/sase/commit/f6fc33c1df0fa4dc660714caea4bff3eded0be06) — fix(ace): render Agents-tab grouping badge key dynamically
+
 # Render the Agents-tab grouping badge's key hint dynamically (kill the hardcoded "(g)")
 
 ## Problem

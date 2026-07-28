@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/numbered_gate_options.md](prompts/numbered_gate_options.md)
+- **AGENTS:**
+  - [bbugyi200.athena.je](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.je/README.md)
+  - [bbugyi200.athena.je--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.je.md#member-code)
+- **COMMITS:**
+  - [ec03529](https://github.com/sase-org/sase/commit/ec0352909ef3d51fdf6e5f70e537aeffd29d1481) — feat(ace): add numbered gate branch shortcuts
 
 # Number top-level gate branches and bind their digit shortcuts
 

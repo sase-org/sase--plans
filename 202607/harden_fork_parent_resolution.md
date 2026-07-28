@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/harden_fork_parent_resolution.md](prompts/harden_fork_parent_resolution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.8/README.md)
+  - [bbugyi200.athena.sase-8g.8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.8.md#member-code)
+- **COMMITS:**
+  - [0b9ef92](https://github.com/sase-org/sase/commit/0b9ef92f46c33eb09c1e98fccdba1c4f78d204bf) — fix: harden fork parent resolution (sase-8g.8)
 
 # Plan: Harden fork parent resolution
 

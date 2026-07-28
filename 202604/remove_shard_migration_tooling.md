@@ -3,6 +3,10 @@ create_time: 2026-04-24 21:12:36
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [ca112f1](https://github.com/sase-org/sase/commit/ca112f1a15631717a08c381754598beebe72e897) — chore: remove one-shot shard migration tooling
+
 # Remove shard migration tooling
 
 ## Goal

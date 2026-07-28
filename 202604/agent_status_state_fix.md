@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_status_state_fix.md](prompts/agent_status_state_fix.md)
+- **COMMITS:**
+  - [14a041d](https://github.com/sase-org/sase/commit/14a041d87f77e32dd75a31e7c67b4b66d6fce90e) — fix: clear answered question status drift
 
 # Plan: Fix ACE Plan/Question Status Drift
 

@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/beads_sidecar_launch_claim.md](prompts/beads_sidecar_launch_claim.md)
+- **AGENTS:**
+  - [bbugyi200.athena.mq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mq/README.md)
+  - [bbugyi200.athena.mq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mq.md#member-code)
+  - [bbugyi200.athena.mq--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mq.md#member-plan)
+- **COMMITS:**
+  - [86dd439](https://github.com/sase-org/sase/commit/86dd439409b08005fe24758419e7d669d4c808c7) — fix: materialize beads sidecar before launch claim
 
 # Plan: Materialize the beads sidecar before the launch-time bead claim
 

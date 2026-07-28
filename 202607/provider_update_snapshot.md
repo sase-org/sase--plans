@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/provider_update_snapshot.md](prompts/provider_update_snapshot.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-83.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-83.1/README.md)
+  - [bbugyi200.athena.sase-83.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-83.1.md#member-code)
+- **COMMITS:**
+  - [c0d68a4](https://github.com/sase-org/sase/commit/c0d68a4f21a7fdac281094d8823eef4b1e08294e) — feat(updates): track provider CLI update candidates (sase-83.1)
 
 # Plan: Provider-aware background update snapshot
 

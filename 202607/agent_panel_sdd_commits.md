@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agent_panel_sdd_commits.md](prompts/agent_panel_sdd_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2v.md#member-code)
 
 # Show SDD-repo commits in the Agents-tab COMMITS panel
 

@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/xprompt_slash_in_name.md](prompts/xprompt_slash_in_name.md)
+- **COMMITS:**
+  - [5af5297](https://github.com/sase-org/sase/commit/5af52975b72e58be5b74dbd3cf894be15f16753d) — fix: Sanitize slashes in temp file prefixes to prevent FileNotFoundError
+  - [d7d19ca](https://github.com/sase-org/sase/commit/d7d19ca4f988eef9a881a143de306f1ebcf5bab1) — fix: Sanitize slashes in temp file prefixes to prevent FileNotFoundError
 
 # Fix: FileNotFoundError when xprompt name contains slashes
 

@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_clan_lane_completion.md](prompts/collapsed_clan_lane_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jh/README.md)
+  - [bbugyi200.athena.jh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jh.md#member-code)
+- **COMMITS:**
+  - [467fc76](https://github.com/sase-org/sase/commit/467fc76b82222a7d44fd64cafdc5d86478746632) — fix(tui): include collapsed clan lanes in completions
 
 # Plan: Complete lanes nested under collapsed agent clans
 

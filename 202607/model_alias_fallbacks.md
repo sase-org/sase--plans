@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/model_alias_fallbacks.md](prompts/model_alias_fallbacks.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1.f7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f7/README.md)
+  - [bbugyi200.athena.gy.f1.f7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f7.md#member-code)
+- **COMMITS:**
+  - [31e9697](https://github.com/sase-org/sase/commit/31e9697ac65d69917929f8348810857ee8e2cdb2) — feat(llm): add ordered model alias fallbacks
 
 # Plan: Ordered model alias fallbacks
 

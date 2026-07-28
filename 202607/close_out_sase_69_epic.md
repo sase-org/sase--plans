@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/close_out_sase_69_epic.md](prompts/close_out_sase_69_epic.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-69](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-69/README.md)
+  - [bbugyi200.athena.sase-69--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-69.md#member-code)
+- **COMMITS:**
+  - [54f75ab](https://github.com/sase-org/sase/commit/54f75ab41f768e8223b80d778169e1aea8513c88) — feat(ace): make commits actions configurable (sase-69)
 
 # Plan: Close out epic sase-69 (Artifacts tab)
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/demo_video_stamp_and_commit.md](prompts/demo_video_stamp_and_commit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.s.md#member-code)
 
 # Plan: `just demo-video` — date stamp, no PNG, and an opt-in commit prompt
 

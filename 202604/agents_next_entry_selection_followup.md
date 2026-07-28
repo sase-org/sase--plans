@@ -3,6 +3,10 @@ create_time: 2026-04-27 14:15:01
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [0bea85a](https://github.com/sase-org/sase/commit/0bea85a4cf5af371291ea16297bb53d20f8b8bb8) — ref: compute navigation stops once in _restore_focus_after_removal
+
 # Agents Next-Entry Selection Follow-Up Cleanup
 
 ## Context

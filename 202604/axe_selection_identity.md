@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/axe_selection_identity.md](prompts/axe_selection_identity.md)
+- **COMMITS:**
+  - [36c9a1d](https://github.com/sase-org/sase/commit/36c9a1d84a93051e84f4618209450c57abe7c302) — fix: preserve AXE selection by item identity
 
 # Plan: Stabilize AXE Tab Selection By Item Identity
 

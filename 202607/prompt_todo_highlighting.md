@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_todo_highlighting.md](prompts/prompt_todo_highlighting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ht](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ht/README.md)
+  - [bbugyi200.athena.ht--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ht.md#member-code)
+- **COMMITS:**
+  - [5839250](https://github.com/sase-org/sase/commit/58392509657b46b69db09190290438e8b50bdab0) — feat(ace): highlight TODO annotations in prompts
 
 # Plan: Beautiful TODO highlighting for prompt drafts
 

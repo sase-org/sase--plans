@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/phase_bead_epic_plan.md](prompts/phase_bead_epic_plan.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1p.md#member-code)
 
 # Show Epic Plan Context for Phase Beads
 

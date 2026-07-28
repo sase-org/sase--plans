@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_h_left_navigation.md](prompts/agents_h_left_navigation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hc.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hc.f0/README.md)
+  - [bbugyi200.athena.hc.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hc.f0.md#member-code)
+- **COMMITS:**
+  - [fbcfb1e](https://github.com/sase-org/sase/commit/fbcfb1eb193c14aaeafc527c41224c03470c1d02) — feat(ace)\!: separate left navigation from collapsing
 
 # Plan: Make Agents-tab h navigate left and H collapse
 

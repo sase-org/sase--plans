@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/collapsed_agent_panel_jump_hints.md](prompts/collapsed_agent_panel_jump_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.as](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.as/README.md)
+  - [bbugyi200.athena.as--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.as.md#member-code)
+- **COMMITS:**
+  - [494d5c5](https://github.com/sase-org/sase/commit/494d5c5632822b3efd5b3c913907915949d59a59) — feat(ace): add jump hints for collapsed agent panels
 
 # Plan: Add apostrophe jump hints to collapsed agent panels
 

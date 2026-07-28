@@ -5,12 +5,17 @@ goal: The ABA revert that epic sase-ae was created to stop is blocked by an auto
   test that drives the real `sase skill init` handler, and epic sase-ae is closed
   with its plan file marked done.
 bead: sase-ae
-parent: plans:202607/skill_deploy_thrash.md
 create_time: 2026-07-28 10:04:44
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_skill_deploy_thrash.md](prompts/land_skill_deploy_thrash.md)
+- **PARENT:** [202607/skill_deploy_thrash.md](https://github.com/sase-org/sase--plans/blob/main/202607/skill_deploy_thrash.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ae.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.land.md#member-code)
+  - [bbugyi200.athena.sase-ae.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.land.md#member-plan)
+- **COMMITS:**
+  - [7d85188](https://github.com/sase-org/sase/commit/7d85188c18080e4e986e8fd65394144c8ae9ce2f) — test(skills): cover backwards manifest ABA refusal (sase-ae)
 
 # Plan: Land epic sase-ae with its missing ABA regression test
 

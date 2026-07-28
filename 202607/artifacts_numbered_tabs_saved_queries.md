@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_numbered_tabs_saved_queries.md](prompts/artifacts_numbered_tabs_saved_queries.md)
+- **AGENTS:**
+  - [bbugyi200.athena.aj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aj/README.md)
+  - [bbugyi200.athena.aj--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aj.md#member-code)
+- **COMMITS:**
+  - [8359294](https://github.com/sase-org/sase/commit/835929471ffe7618503a3d3b5fa193206136a5ca) — feat(ace): add numbered artifacts and saved query picker
 
 # Plan: Numbered Artifacts tabs and star-prefixed saved PR queries
 

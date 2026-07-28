@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_arg_color.md](prompts/xprompt_arg_color.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8b](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b/README.md)
+  - [bbugyi200.athena.8b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.md#member-code)
+- **COMMITS:**
+  - [36b0286](https://github.com/sase-org/sase/commit/36b0286934e3ff86e1886fa50b6fb22076491453) — fix(tui): distinguish xprompt argument colors
 
 # Plan: Distinct color for xprompt arguments in the prompt input
 

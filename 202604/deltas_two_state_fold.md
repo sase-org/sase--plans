@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/deltas_two_state_fold.md](prompts/deltas_two_state_fold.md)
+- **COMMITS:**
+  - [4133041](https://github.com/sase-org/sase/commit/4133041371feecfb5b392f0f06e51d9685468b37) — fix: make DELTAS folding two-state
 
 # Plan: Make DELTAS a Two-State Fold
 

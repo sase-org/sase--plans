@@ -5,8 +5,10 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_kill_agent_index_error.md](prompts/fix_kill_agent_index_error.md)
+- **COMMITS:**
+  - [66de6a1](https://github.com/sase-org/sase/commit/66de6a199cba6ac44c998db488949bb318a4ff81) — fix: Rebuild panel indices after agent removal in _do_kill_agent
 
-# Fix IndexError in \_do_kill_agent Panel Index Refresh
+# Fix IndexError in _do_kill_agent Panel Index Refresh
 
 ## Problem
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/apostrophe_jump_fallback.md](prompts/apostrophe_jump_fallback.md)
+- **COMMITS:**
+  - [37931d0](https://github.com/sase-org/sase/commit/37931d017f2fe72e912c8411a366743ab0dfd3c2) — fix: make apostrophe jump to first entry without history
 
 # Apostrophe Jump Fallback Plan
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_sidecar_prelaunch_visibility.md](prompts/epic_sidecar_prelaunch_visibility.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hl/README.md)
+  - [bbugyi200.athena.hl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hl.md#member-code)
+- **COMMITS:**
+  - [fd9db05](https://github.com/sase-org/sase/commit/fd9db0526eaf20827ab198ddbfc726707bbc43b4) — fix(beads): publish epic graph before worker launch
 
 # Plan: Make approved epic bead state visible before runner launch
 

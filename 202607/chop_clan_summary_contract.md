@@ -4,12 +4,17 @@ title: Add group-safe clan summaries to structured chop proposals
 goal: A validated literal Rich summary survives dedupe and appears exactly once on
   the surviving chop clan declarer.
 bead: sase-8l.1
-parent: sase/repos/plans/202607/toobig_clan_summary.md
 create_time: 2026-07-22 12:04:36
 status: wip
 ---
 
 - **PROMPT:** [202607/prompts/chop_clan_summary_contract.md](prompts/chop_clan_summary_contract.md)
+- **PARENT:** [202607/toobig_clan_summary.md](https://github.com/sase-org/sase--plans/blob/main/202607/toobig_clan_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8l.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8l.1/README.md)
+  - [bbugyi200.athena.sase-8l.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.1.md#member-code)
+- **COMMITS:**
+  - [eaef2d7](https://github.com/sase-org/sase/commit/eaef2d78b1faf15a0764e08b066383ee4d6a48e3) — feat(axe): carry clan summaries through chop launches (sase-8l.1)
 
 # Add Group-Safe Clan Summaries to Structured Chop Proposals
 

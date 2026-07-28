@@ -6,6 +6,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/vcs_repo_slash_completion.md](prompts/vcs_repo_slash_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0m--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0m.md#member-epic)
 
 # Plan: VCS-Agnostic Repo Completion for `#gh` Refs (the `/` trigger)
 

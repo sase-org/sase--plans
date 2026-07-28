@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [a28c654](https://github.com/sase-org/sase/commit/a28c654ef8cdabc284970401d6366ad6d2c18fcd) — fix: Propagate PLAN drawer in workflow-created ChangeSpec initial commits
+
 # Fix missing PLAN drawer for workflow-created ChangeSpecs
 
 ## Context

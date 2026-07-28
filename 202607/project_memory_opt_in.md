@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/project_memory_opt_in.md](prompts/project_memory_opt_in.md)
+- **AGENTS:**
+  - [bbugyi200.athena.53--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.53.md#member-code)
 
 # Project-local opt-in for SASE-managed memory and agent instructions
 

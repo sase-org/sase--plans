@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_member_fold_isolation.md](prompts/clan_member_fold_isolation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cx/README.md)
+  - [bbugyi200.athena.cx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.md#member-code)
+- **COMMITS:**
+  - [fb37a09](https://github.com/sase-org/sase/commit/fb37a09eef03292a849359feca9cadb7c5510f03) — fix(ace): isolate clan member fold state
 
 # Plan: Isolate clan-member fold state in the Agents tab
 

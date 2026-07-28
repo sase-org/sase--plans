@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/linked_repo_clones_to_sase_repos.md](prompts/linked_repo_clones_to_sase_repos.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6a](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6a/README.md)
+  - [bbugyi200.athena.6a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6a.md#member-code)
+- **COMMITS:**
+  - [953f070](https://github.com/sase-org/sase/commit/953f0704710b7c51e8dbf4f0a17cd95e648fdff7) — feat(workspace): relocate linked repository clones
 
 # Plan: Clone linked repos into `sase/repos/` instead of `.sase/workspaces/`
 

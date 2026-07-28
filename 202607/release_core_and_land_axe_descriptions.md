@@ -7,12 +7,17 @@ goal: 'The published sase-core-rs release and the sase dependency window both co
 
   '
 bead: sase-9t
-parent: sase/repos/plans/202607/axe_required_descriptions.md
 create_time: 2026-07-26 11:38:44
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/release_core_and_land_axe_descriptions.md](prompts/release_core_and_land_axe_descriptions.md)
+- **PARENT:** [202607/axe_required_descriptions.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_required_descriptions.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9t.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9t.land/README.md)
+  - [bbugyi200.athena.sase-9t.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9t.land.md#member-code)
+- **COMMITS:**
+  - [20c131b](https://github.com/sase-org/sase/commit/20c131b55788ae5d07ea32fcae66328c48e748ab) — build(deps): require sase-core-rs 0.10 (sase-9t)
 
 # Plan: Release sase-core v0.10.0, bump the sase pin, and land epic sase-9t
 

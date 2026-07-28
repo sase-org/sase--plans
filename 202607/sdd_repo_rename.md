@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sdd_repo_rename.md](prompts/sdd_repo_rename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3e.md#member-code)
 
 # Rename SDD Companion Repo to `sase--sdd`
 

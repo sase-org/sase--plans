@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/profile_show_all.md](prompts/profile_show_all.md)
+- **COMMITS:**
+  - [38ebdff](https://github.com/sase-org/sase/commit/38ebdffe13d25420d83c88f2608f9748843c5e19) — fix: Show all frames in \`sase ace --profile\` output
 
 # Plan: Fix `sase ace --profile` output hiding all frames
 

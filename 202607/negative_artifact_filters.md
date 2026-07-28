@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/negative_artifact_filters.md](prompts/negative_artifact_filters.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6t.land.w2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6t.land.w2/README.md)
+  - [bbugyi200.athena.sase-6t.land.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6t.land.w2.md#member-code)
+- **COMMITS:**
+  - [9de151e](https://github.com/sase-org/sase/commit/9de151eb32c233e610776ae86eb40a579518d9bf) — feat(ace): support negative artifact filters
 
 # Plan: Negative filters for Artifacts commits and plans
 

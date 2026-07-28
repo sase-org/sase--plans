@@ -4,12 +4,17 @@ title: Finish and land epic sase-9y
 goal: Correct the stale contention evidence, validate the integrated CI fixes, and
   close out epic sase-9y in the required order.
 bead: sase-9y
-parent: sase/repos/plans/202607/fix_ci_bead_isolation_and_visual_flakes.md
 create_time: 2026-07-27 11:55:48
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_sase_9y.md](prompts/land_sase_9y.md)
+- **PARENT:** [202607/fix_ci_bead_isolation_and_visual_flakes.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_bead_isolation_and_visual_flakes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9y.land/README.md)
+  - [bbugyi200.athena.sase-9y.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9y.land.md#member-code)
+- **COMMITS:**
+  - [a947469](https://github.com/sase-org/sase/commit/a947469eece2988bdfff48bd6ee40b5a9701172f) — docs: record final visual contention baseline (sase-9y)
 
 # Finish and land epic `sase-9y`
 

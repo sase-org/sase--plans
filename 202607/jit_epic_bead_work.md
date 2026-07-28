@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/jit_epic_bead_work.md](prompts/jit_epic_bead_work.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8f.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8f.3/README.md)
+  - [bbugyi200.athena.sase-8f.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.3.md#member-code)
+- **COMMITS:**
+  - [9d8b7e2](https://github.com/sase-org/sase/commit/9d8b7e28054ef02f3bece5813fd337627144b0b2) — feat(beads): claim epic work just in time (sase-8f.3)
 
 # Plan: Migrate epic bead work to just-in-time claims
 

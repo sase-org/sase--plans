@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_created_status.md](prompts/epic_created_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a2/README.md)
+  - [bbugyi200.athena.a2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a2.md#member-code)
+- **COMMITS:**
+  - [50ce11d](https://github.com/sase-org/sase/commit/50ce11d988b443ccaf107f412bcb4e79d236a4d1) — fix(ace): show created status after epic launch
 
 # Plan: Mark host-launched epics as created
 

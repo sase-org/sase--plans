@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/rename_chat_install_to_update.md](prompts/rename_chat_install_to_update.md)
+- **COMMITS:**
+  - [058b649](https://github.com/sase-org/sase/commit/058b6496c06d0ee375184942ea90669874654f48) — feat: present chat install worker as update workflow
 
 # Rename Chat Install Commands to Update
 

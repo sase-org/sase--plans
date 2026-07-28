@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/commits_persistent_default_filter.md](prompts/commits_persistent_default_filter.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gr.w2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gr.w2/README.md)
+  - [bbugyi200.athena.gr.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gr.w2.md#member-code)
+- **COMMITS:**
+  - [4f86191](https://github.com/sase-org/sase/commit/4f86191c2866975f8ca40173345a3adf01617035) — feat(ace): persist the commits default filter
 
 # Plan: Persistent configurable filter for Artifacts commits
 

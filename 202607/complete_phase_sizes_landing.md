@@ -5,12 +5,14 @@ goal: Correct the final public routing inconsistency, revalidate the integrated 
   feature, and close sase-8w.7.4 plus its parent epics with post-close Symvision cleanup
   and all linked plans marked done.
 bead: sase-8w.7.4
-parent: sase/repos/plans/202607/finish_phase_sizes_landing.md
 create_time: 2026-07-23 21:20:06
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/complete_phase_sizes_landing.md](prompts/complete_phase_sizes_landing.md)
+- **PARENT:** [202607/finish_phase_sizes_landing.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_phase_sizes_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 
 # Plan: Complete and land the five-size phase-size epic chain
 

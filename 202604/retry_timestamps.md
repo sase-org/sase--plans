@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/retry_timestamps.md](prompts/retry_timestamps.md)
+- **COMMITS:**
+  - [dcf355e](https://github.com/sase-org/sase/commit/dcf355e5a6dc072b8b566d5cf771453e414ffc60) — feat(tui): add RETRY timestamps to agent metadata panel
 
 # Plan: Add RETRY Timestamps to Agents Tab Metadata Panel
 

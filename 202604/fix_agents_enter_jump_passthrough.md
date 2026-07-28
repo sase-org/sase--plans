@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [7954135](https://github.com/sase-org/sase/commit/795413548a5f620b16fefa9418bab2f9a8b7e90b) — fix: preserve enter passthrough in agents list
+
 # Implementation Plan: Fix Enter key passthrough from Agents tab to jump-to-ChangeSpec action
 
 ## Problem Summary

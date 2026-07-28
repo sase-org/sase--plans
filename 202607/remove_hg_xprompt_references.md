@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/remove_hg_xprompt_references.md](prompts/remove_hg_xprompt_references.md)
+- **AGENTS:**
+  - [bbugyi200.athena.49--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.49.md#member-code)
 
 # Remove obsolete `#hg` xprompt references
 

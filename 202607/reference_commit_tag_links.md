@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/reference_commit_tag_links.md](prompts/reference_commit_tag_links.md)
+- **AGENTS:**
+  - [bbugyi200.athena.an](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.an/README.md)
+  - [bbugyi200.athena.an--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.an.md#member-code)
+- **COMMITS:**
+  - [69d7142](https://github.com/sase-org/sase/commit/69d7142b45cecdf43ded7aef7e976df2d816d900) — feat: link plan tags in commit footers
 
 # Plan: Reference-style Links in SASE Commit Tags
 

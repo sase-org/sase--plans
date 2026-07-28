@@ -5,12 +5,17 @@ goal: New locally owned agent state is stored with bare semantic names, imported
   remains explicit and collision-safe, and legacy qualified history continues to resolve
   without mass renaming.
 bead: sase-8v.3
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-23 15:02:52
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/identity_relative_local_persistence.md](prompts/identity_relative_local_persistence.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.3/README.md)
+  - [bbugyi200.athena.sase-8v.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.3.md#member-code)
+- **COMMITS:**
+  - [5bf430b](https://github.com/sase-org/sase/commit/5bf430b67eb42f61e5472f689e0cba4a0d276669) — feat(agent): persist local names relative to owner (sase-8v.3)
 
 # Plan: Identity-relative local persistence and registry compatibility
 

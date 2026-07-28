@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/question_notification_summary.md](prompts/question_notification_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.85](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.85/README.md)
+  - [bbugyi200.athena.85--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.85.md#member-code)
+- **COMMITS:**
+  - [b5198f7](https://github.com/sase-org/sase/commit/b5198f7e18032c025c2a609a5fd9fbac9bbf900c) — feat(notifications): summarize agent questions in notification modal
 
 # Plan: Question Notification Summary in the Notifications Right Pane
 

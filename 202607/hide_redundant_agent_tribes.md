@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/hide_redundant_agent_tribes.md](prompts/hide_redundant_agent_tribes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cu/README.md)
+  - [bbugyi200.athena.cu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cu.md#member-code)
+- **COMMITS:**
+  - [c203382](https://github.com/sase-org/sase/commit/c203382e31e0177310601b56c298bbee6a843e1c) — fix(ace): hide redundant clan tags in split panels
 
 # Plan: Hide redundant tribe badges in split agent panels
 

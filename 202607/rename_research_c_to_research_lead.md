@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/rename_research_c_to_research_lead.md](prompts/rename_research_c_to_research_lead.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5g.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5g.f-0.md#member-code)
 
 # Plan: Rename the Research-C Model Alias to Research-Lead
 

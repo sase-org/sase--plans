@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/retry_as_new_agent.md](prompts/retry_as_new_agent.md)
+- **COMMITS:**
+  - [81c0996](https://github.com/sase-org/sase/commit/81c0996482d240d804be2436d467707972285330) — feat: spawn fresh detached agent on retryable LLM errors
 
 # Retry as a Brand-New Agent
 

@@ -42,6 +42,22 @@ status: done
 bead_id: sase-8m
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.plans-7.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.plans-7.1.md#member-code)
+  - [bbugyi200.athena.plans-7.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.plans-7.2.md#member-code)
+  - [bbugyi200.athena.plans-7.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.plans-7.3/README.md)
+  - [bbugyi200.athena.plans-7.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.plans-7.land/README.md)
+  - [bbugyi200.athena.sase-8m.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.1/README.md)
+  - [bbugyi200.athena.sase-8m.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.1.md#member-code)
+  - [bbugyi200.athena.sase-8m.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.2/README.md)
+  - [bbugyi200.athena.sase-8m.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.2.md#member-code)
+  - [bbugyi200.athena.sase-8m.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.3/README.md)
+  - [bbugyi200.athena.sase-8m.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.3.md#member-code)
+- **COMMITS:**
+  - [331932b](https://github.com/sase-org/sase/commit/331932b2c8c82517dd5920b5129822e50466079d) — feat(ace): add shared config editor components (sase-8m.2)
+  - [5a9cef8](https://github.com/sase-org/sase/commit/5a9cef88329bc5f3323603300bc86040509530a0) — feat(axe): apply exact conflict-safe config edits (sase-8m.1)
+  - [058cd64](https://github.com/sase-org/sase/commit/058cd646fb1d3113fe28186473f252dc4f488d13) — feat(axe): add config management workflows (sase-8m.3)
+
 # Plan: AXE lumberjack and chop editor
 
 ## Outcome and tier decision

@@ -11,6 +11,87 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_sase_update_stale_plugin_paths.md](prompts/fix_sase_update_stale_plugin_paths.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e8/README.md)
+  - [bbugyi200.athena.e8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e8.md#member-code)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._display_detail.9cceb35a-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._display_detail.9cceb35a-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._marking.2877bedf-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._marking.2877bedf-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._notification_mo.418eb0a2-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._notification_mo.418eb0a2-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._unread.2e7e99ec-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.actions.agents._unread.2e7e99ec-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.modals.model_picker_modal.49f651de-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.modals.model_picker_modal.49f651de-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.modals.statistics_pane.6fe343e1-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.modals.statistics_pane.6fe343e1-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.util.stall_watchdog.c1d8ffc6-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.util.stall_watchdog.c1d8ffc6-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets._file_completion_open.3b43b67f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets._file_completion_open.3b43b67f-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.commits_pane.3abf0379-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.commits_pane.3abf0379-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.plans_data.282e52fa-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.plans_data.282e52fa-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.plans_pane.cc493c74-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.artifacts.plans_pane.cc493c74-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.directive_completion.16db5c71-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.directive_completion.16db5c71-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_cla.e0b4df69-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_cla.e0b4df69-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_dis.e3a4d712-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_dis.e3a4d712-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_dis.f038031a-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.ace.tui.widgets.prompt_panel._agent_dis.f038031a-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.agent.launch_request.81c67a28-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.agent.launch_request.81c67a28-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.agent.multi_prompt_launcher.8e655e93-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.agent.multi_prompt_launcher.8e655e93-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.agent.names._lookup.c2144d73-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.agent.names._lookup.c2144d73-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.axe.chop_runner_script.620a4ae7-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.axe.chop_runner_script.620a4ae7-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.axe.config.8f537af3-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.axe.config.8f537af3-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.bead.cli_work_from_plan.85ac2829-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.bead.cli_work_from_plan.85ac2829-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.config.core.42c0c9ed-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.config.core.42c0c9ed-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.core.agent_artifact_index_lifecycle.ce47e900-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.core.agent_artifact_index_lifecycle.ce47e900-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.core.agent_cleanup_facade.6a506bfa-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.core.agent_cleanup_facade.6a506bfa-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.core.wait_dependency_resolution._index.5fb08746-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.core.wait_dependency_resolution._index.5fb08746-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.history.chat.635e50ab-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.history.chat.635e50ab-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.integrations.agent_list_entries.2a6546d6-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.integrations.agent_list_entries.2a6546d6-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.memory.inventory.9b600620-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.memory.inventory.9b600620-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.notification_gates.debug.48460b6d-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.notification_gates.debug.48460b6d-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.notification_gates.models.366491c2-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.notification_gates.models.366491c2-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.notification_gates.registry.d4699587-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.notification_gates.registry.d4699587-0/README.md)
+  - [bbugyi200.athena.split_file.src.sase.plan_approval_actions.46e9c10a-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.src.sase.plan_approval_actions.46e9c10a-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.models.test_agent_associated_plan.a5e26426-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.models.test_agent_associated_plan.a5e26426-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.models.test_agent_groups_grouping_.d6ab407a-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.models.test_agent_groups_grouping_.d6ab407a-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.test_agent_neighbor_navigation.8b2a5c29-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.test_agent_neighbor_navigation.8b2a5c29-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.test_agent_unread_done_navigation.a6f7c380-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.test_agent_unread_done_navigation.a6f7c380-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.test_artifacts_plans.1a8be42b-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.test_artifacts_plans.1a8be42b-0/README.md)
+  - [bbugyi200.athena.split_file.tests.ace.tui.test_jump_hints_for_folded_banners.61434913-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.split_file.tests.ace.tui.test_jump_hints_for_folded_banners.61434913-0/README.md)
+- **COMMITS:**
+  - [4e2a948](https://github.com/sase-org/sase/commit/4e2a9488a052ef061e555f6ae387138bf31d5429) — refactor(ace): split agent detail display helpers
+  - [185469e](https://github.com/sase-org/sase/commit/185469e09dc7c42908e9b0ecd2bc4674eb0eaa65) — fix(plugins): preflight stale local install sources
+  - [08d1c79](https://github.com/sase-org/sase/commit/08d1c79850994aba686be83647fb835590a313fd) — refactor(ace): split agent marking actions
+  - [98579a0](https://github.com/sase-org/sase/commit/98579a05f72436211127e0c16764b295e0553327) — refactor: split notification plan modal helpers
+  - [efd19c9](https://github.com/sase-org/sase/commit/efd19c925cc6614c9bbc54ebe3ae098bb3cb3185) — refactor(ace): split unread agent actions
+  - [33d3e6f](https://github.com/sase-org/sase/commit/33d3e6f21943f50b16e16af6fe6e73f0b652bdd9) — refactor(tui): split model picker modal
+  - [453a84a](https://github.com/sase-org/sase/commit/453a84af8aa14cc449ee160f58e9634c7c55d73c) — refactor: split statistics pane rendering
+  - [360b691](https://github.com/sase-org/sase/commit/360b6918247f45d51697f09534929bd02b7594de) — refactor(tui): split stall watchdog internals
+  - [57b57f3](https://github.com/sase-org/sase/commit/57b57f30fb4cd401cb80f46023ba15b3cb0809dc) — refactor(ace): split manual file completion handlers
+  - [3a570cb](https://github.com/sase-org/sase/commit/3a570cb6cba177997f9c78ae2b44351ccd6f7bf6) — refactor(ace): split commits pane responsibilities
+  - [63dc8c6](https://github.com/sase-org/sase/commit/63dc8c6d24788356a7cad223b7d812ead3cb2685) — refactor(ace): split plans data module
+  - [c537447](https://github.com/sase-org/sase/commit/c5374479cf9beacd99b319bf736627ec3c63af78) — refactor(ace): split plans pane responsibilities
+  - [30e1577](https://github.com/sase-org/sase/commit/30e15776174a32f74e93e4d71d98c441b58d4ad9) — refactor(ace): split directive completion token parsing
+  - [fcafb33](https://github.com/sase-org/sase/commit/fcafb33b1645cd3e813a4dcb7e07f4f5f6a5a4ea) — refactor(tui): split agent clan aggregation helpers
+  - [df4777e](https://github.com/sase-org/sase/commit/df4777eaa8943267bcf75c54f3282783ed8d3344) — refactor(tui): split clan display implementation
+  - [d9ea0c3](https://github.com/sase-org/sase/commit/d9ea0c3552e3860ce95e3c34a76b265e598b6ce4) — refactor(tui): split agent display header rendering
+  - [6ae0dd2](https://github.com/sase-org/sase/commit/6ae0dd2b73f07602463bbb5eb745db3e75193d26) — refactor(agent): split launch request responsibilities
+  - [689f39b](https://github.com/sase-org/sase/commit/689f39b2ad91b3353f253a4de930719cd7ae5eca) — refactor(agent): split multi-prompt launcher
+  - [2b4526f](https://github.com/sase-org/sase/commit/2b4526f959b4e5a05b8d47e198f49b74f3fcd5ad) — refactor(agent-names): split lookup implementation
+  - [b78b34b](https://github.com/sase-org/sase/commit/b78b34b3643933289e22364eec49009879c2198a) — refactor(axe): split chop runner script responsibilities
+  - [dd7fc1a](https://github.com/sase-org/sase/commit/dd7fc1ace88c8ddc7fbac0d4b18316a227728310) — refactor(axe): split configuration module
+  - [b2d8cef](https://github.com/sase-org/sase/commit/b2d8cefd2eecae5ec52aa29696d034b835b0a966) — refactor(bead): split plan-file work CLI module
+  - [552e24c](https://github.com/sase-org/sase/commit/552e24c3116f93d40f09a284b2fffd3bb2f1b11c) — refactor(config): split core config responsibilities
+  - [3cfd6d6](https://github.com/sase-org/sase/commit/3cfd6d632d65dc615d8dd7a40ca641a942e99a61) — refactor(core): split agent artifact index lifecycle
+  - [ae6ff5d](https://github.com/sase-org/sase/commit/ae6ff5d22acb9edf43eb73132c292f9c09bef11d) — refactor: split agent cleanup facade
+  - [da17707](https://github.com/sase-org/sase/commit/da1770780936971499bd2421a2b2181a85086eaa) — refactor: split wait dependency index queries
+  - [c659638](https://github.com/sase-org/sase/commit/c6596383a14fd9171a97d595056ae9f35eb4141c) — refactor(history): split chat history module
+  - [7ae8298](https://github.com/sase-org/sase/commit/7ae829839047fe2c0c603358e818268656ca1240) — refactor(integrations): split agent list entry module
+  - [0a36657](https://github.com/sase-org/sase/commit/0a36657fca6544acb16041f1f75029f79fe83257) — refactor(memory): split inventory into focused modules
+  - [1b9659f](https://github.com/sase-org/sase/commit/1b9659f362e90eb5ef5dc3b617d7a8193a017d16) — refactor: split notification gate debug module
+  - [81c5553](https://github.com/sase-org/sase/commit/81c5553093b770851199c0213fdef19739f15983) — refactor(notification-gates): split model definitions
+  - [a07f029](https://github.com/sase-org/sase/commit/a07f029125a9b5b5c663e1d6d798611e5474b817) — refactor(notification-gates): split registry modules
+  - [6bc0292](https://github.com/sase-org/sase/commit/6bc02923d46585db29dd8dc4d51de338cd9c6441) — refactor: split plan approval actions by responsibility
+  - [98abf03](https://github.com/sase-org/sase/commit/98abf033fc78b7f39e8beae2acc8bde0bd1651f1) — test: split associated plan model tests
+  - [7b7caa7](https://github.com/sase-org/sase/commit/7b7caa77e8f95e0161ec3eef580c499244b4a509) — test: split agent grouping mode tree tests
+  - [83d3143](https://github.com/sase-org/sase/commit/83d3143a41a7b2d80c0d1364e4b4c830345834fa) — test: split agent neighbor navigation tests
+  - [41ef643](https://github.com/sase-org/sase/commit/41ef64379fede7505a6e6d926e473234aedcb142) — test(ace): split unread done navigation tests
+  - [cdd9073](https://github.com/sase-org/sase/commit/cdd907377a7ae0e111418eccfa0a5f12f87508a6) — test(ace): split artifacts plans test module
+  - [4824443](https://github.com/sase-org/sase/commit/4824443e599f04c7bef532399d09f94b3fefd183) — test: split folded banner jump hint coverage
 
 # Plan: Fix `sase update` failure from stale ephemeral plugin paths
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/telegram_launch_buttons_sharded_artifacts.md](prompts/telegram_launch_buttons_sharded_artifacts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.06--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.06.md#member-code)
 
 # Fix Missing Fork/Wait/Kill/Retry Buttons on Telegram Launch Messages
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/tui_wait_duration.md](prompts/tui_wait_duration.md)
+- **COMMITS:**
+  - [68e6551](https://github.com/sase-org/sase/commit/68e6551ee7ca1689c9e08a837be7cb83ce824027) — feat(tui): add visual support for duration-based %wait in Agents tab
 
 # Plan: TUI Duration Wait Visual Support
 

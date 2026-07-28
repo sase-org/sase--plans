@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_xprompt_panel_highlighting.md](prompts/agent_xprompt_panel_highlighting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.aw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aw/README.md)
+  - [bbugyi200.athena.aw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aw.md#member-code)
+- **COMMITS:**
+  - [2fd3c84](https://github.com/sase-org/sase/commit/2fd3c84a703fd55c6883105f802ecfc2343c19dd) — feat(ace): highlight xprompts in agent panels
 
 # Plan: XPrompt syntax highlighting in the agent metadata panel
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/todo_running_gold.md](prompts/todo_running_gold.md)
+- **AGENTS:**
+  - [bbugyi200.athena.i3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i3/README.md)
+  - [bbugyi200.athena.i3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i3.md#member-code)
+- **COMMITS:**
+  - [3543cd2](https://github.com/sase-org/sase/commit/3543cd2a43ef0da449b2ff5591844a9c034d7802) — fix(tui): align TODO annotations with running gold
 
 # Plan: Align TODO highlighting with agent running gold
 

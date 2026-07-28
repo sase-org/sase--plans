@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/init_all_active_projects.md](prompts/init_all_active_projects.md)
+- **AGENTS:**
+  - [bbugyi200.athena.58--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.58.md#member-code)
 
 # Plan: Add `sase init --all` for Every Active Main Project
 

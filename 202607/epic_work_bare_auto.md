@@ -11,6 +11,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/epic_work_bare_auto.md](prompts/epic_work_bare_auto.md)
+- **AGENTS:**
+  - [bbugyi200.athena.de--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.de.md#member-code)
 
 # Plan: Make epic work auto-approval tier-neutral
 

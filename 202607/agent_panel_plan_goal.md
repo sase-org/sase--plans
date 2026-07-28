@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_panel_plan_goal.md](prompts/agent_panel_plan_goal.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8s/README.md)
+  - [bbugyi200.athena.8s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8s.md#member-code)
+- **COMMITS:**
+  - [5ac12cc](https://github.com/sase-org/sase/commit/5ac12ccff8c0a8aa145b373703975aef37952c28) — feat(ace): show associated plan goals in agent details
 
 # Plan: Show the plan `goal` in the Agents-tab metadata panel
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_h_clan_collapse.md](prompts/tribe_panel_h_clan_collapse.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hq.f2.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hq.f2.f1/README.md)
+  - [bbugyi200.athena.hq.f2.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hq.f2.f1.md#member-code)
+- **COMMITS:**
+  - [d32b2d4](https://github.com/sase-org/sase/commit/d32b2d4a0ed321c310943e2de5347f1cab021f38) — feat(ace): collapse clans from selected agent panel
 
 # Plan: Add clan collapse to the selected tribe-panel `H` ladder
 

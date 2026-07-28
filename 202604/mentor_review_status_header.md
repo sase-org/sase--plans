@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/mentor_review_status_header.md](prompts/mentor_review_status_header.md)
+- **COMMITS:**
+  - [d9359ed](https://github.com/sase-org/sase/commit/d9359ed82fd6278a045443a7c4936aa26361cd28) — feat: Add rich status header and visual progress to Mentor Review modal
 
 # Mentor Review Panel: Status Header & Acceptance Progress
 

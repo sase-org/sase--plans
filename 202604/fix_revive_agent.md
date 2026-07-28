@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_revive_agent.md](prompts/fix_revive_agent.md)
+- **COMMITS:**
+  - [e0e13ce](https://github.com/sase-org/sase/commit/e0e13ce68f9dae37f3e90d721af5e6299622ed19) — fix: Remove hidden key from agent_meta.json on revive
 
 # Fix: Revived agents not appearing in side panel
 

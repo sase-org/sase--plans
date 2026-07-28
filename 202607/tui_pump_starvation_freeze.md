@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/tui_pump_starvation_freeze.md](prompts/tui_pump_starvation_freeze.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6n](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6n/README.md)
+  - [bbugyi200.athena.6n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6n.md#member-code)
+- **COMMITS:**
+  - [b788ca5](https://github.com/sase-org/sase/commit/b788ca52264df2652e7b29063c5d3a67448ee75f) — fix(tui): prevent message pump starvation
 
 # Fix multi-minute ace TUI freeze: message-pump starvation invisible to the stall watchdog
 

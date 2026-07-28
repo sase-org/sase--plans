@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_g_ctrl_c_prompt_chord_fix.md](prompts/ctrl_g_ctrl_c_prompt_chord_fix.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3n.md#member-code)
 
 # Fix: `<ctrl+g><ctrl+c>` does nothing in the prompt input widget
 

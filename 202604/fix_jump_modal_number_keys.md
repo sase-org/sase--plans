@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_jump_modal_number_keys.md](prompts/fix_jump_modal_number_keys.md)
+- **COMMITS:**
+  - [e64bf87](https://github.com/sase-org/sase/commit/e64bf8709319d9fbb0b969289e6cab6661c46220) — fix: Stop key event bubbling in JumpAllModal to prevent saved query conflicts
 
 # Fix: Jump-to-entry modal numeric hints intercepted by saved query bindings
 

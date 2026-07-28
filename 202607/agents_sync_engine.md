@@ -4,12 +4,17 @@ title: Agents sync engine and CLI
 goal: Completed commit-associated agents synchronize safely through each project's
   hidden agents sidecar and are available through a robust CLI and cached status API.
 bead: sase-8k.6
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 15:14:56
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sync_engine.md](prompts/agents_sync_engine.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.6/README.md)
+  - [bbugyi200.athena.sase-8k.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.6.md#member-code)
+- **COMMITS:**
+  - [58d1ca2](https://github.com/sase-org/sase/commit/58d1ca2da51df1bcd9bdc2464503985de59a416c) — feat(agents): add completed agent sync engine (sase-8k.6)
 
 # Plan: Agents sync engine and CLI
 

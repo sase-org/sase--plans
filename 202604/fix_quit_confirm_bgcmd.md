@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_quit_confirm_bgcmd.md](prompts/fix_quit_confirm_bgcmd.md)
+- **COMMITS:**
+  - [3f1100b](https://github.com/sase-org/sase/commit/3f1100b1d0b4edfcccdd6ce6cae2ec8dee7d8677) — fix: Only show quit confirmation for background tasks, not bgcmds
 
 # Plan: Fix TUI quit confirmation to only trigger for background tasks
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ace_quit_hang.md](prompts/ace_quit_hang.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kt](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kt/README.md)
+  - [bbugyi200.athena.kt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kt.md#member-code)
+- **COMMITS:**
+  - [c0f1c6e](https://github.com/sase-org/sase/commit/c0f1c6e5a3c775ee314a6ca14c16ca5913b83d05) — fix(ace): prevent quit hangs on in-flight workers
 
 # Fix `sase ace` hanging after quit
 

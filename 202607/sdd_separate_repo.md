@@ -6,6 +6,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sdd_separate_repo.md](prompts/sdd_separate_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1l--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1l.md#member-epic)
 
 # Plan: Separate SDD Repository — Provider-Level Opt-In for VCS Workflows
 

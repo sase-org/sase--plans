@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/fix_spec_feedback.md](prompts/fix_spec_feedback.md)
+- **COMMITS:**
+  - [32159f6](https://github.com/sase-org/sase/commit/32159f688d8af4999203e99f43f45ac6f02e7a0b) — fix: Use current_prompt for spec files to include feedback
 
 # Fix: Spec File Missing Feedback (Additional Requirements)
 

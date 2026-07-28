@@ -11,6 +11,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_lsp_clan_tribe.md](prompts/xprompt_lsp_clan_tribe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.f3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f3.md#member-code)
 
 # Plan: Align xprompt LSP clan and tribe directives
 

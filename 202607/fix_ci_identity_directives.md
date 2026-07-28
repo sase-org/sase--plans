@@ -8,6 +8,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_identity_directives.md](prompts/fix_ci_identity_directives.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k5.md#member-code)
 
 # Restore CI after the SASE identity-directive migration
 

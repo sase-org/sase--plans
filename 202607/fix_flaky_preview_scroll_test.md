@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_flaky_preview_scroll_test.md](prompts/fix_flaky_preview_scroll_test.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8.md#member-code)
 
 # Fix flaky `test_preview_scroll_keys_move_preview_region` CI failure
 

@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [2520bfd](https://github.com/sase-org/sase/commit/2520bfd65a06a65496b3ba8e4e2b322ab1be7cb3) — fix: broaden hg diff revision parsing for mentor matching
+
 # Plan: Fix Missing MENTORS on hg/retired Mercurial plugin Due to Diff Header Parsing
 
 ## Problem Summary

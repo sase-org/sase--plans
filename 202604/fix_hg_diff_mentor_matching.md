@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_hg_diff_mentor_matching.md](prompts/fix_hg_diff_mentor_matching.md)
+- **COMMITS:**
+  - [06fcff7](https://github.com/sase-org/sase/commit/06fcff70fd85cc5a8852257f3d9c5226f032bc66) — fix: handle double-\`-r\` hg diff format in mentor profile matching
 
 # Fix: MENTORS not added for Mercurial ChangeSpecs
 

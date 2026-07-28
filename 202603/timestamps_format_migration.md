@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/timestamps_format_migration.md](prompts/timestamps_format_migration.md)
+- **COMMITS:**
+  - [3744528](https://github.com/sase-org/sase/commit/3744528ab5fb3abd52970e12f9763c99245f074d) — feat: Migrate TIMESTAMPS field from \[YYYY-MM-DD HH:MM:SS\] to YYMMDD_HHMMSS format
 
 # Migrate TIMESTAMPS Field to YYMMDD_HHMMSS Format
 

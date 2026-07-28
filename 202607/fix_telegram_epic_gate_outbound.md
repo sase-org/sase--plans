@@ -11,6 +11,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_telegram_epic_gate_outbound.md](prompts/fix_telegram_epic_gate_outbound.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bq.md#member-code)
 
 # Plan: Restore Telegram outbound delivery for epic approval gates
 

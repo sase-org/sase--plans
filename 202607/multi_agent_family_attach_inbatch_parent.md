@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/multi_agent_family_attach_inbatch_parent.md](prompts/multi_agent_family_attach_inbatch_parent.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2k.md#member-code)
 
 # Plan: Attach `%n(parent, suffix)` to an in-batch sibling named earlier in the same multi-agent prompt
 

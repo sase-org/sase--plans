@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/machine_name_schema_scope.md](prompts/machine_name_schema_scope.md)
+- **AGENTS:**
+  - [bbugyi200.athena.iz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.iz/README.md)
+  - [bbugyi200.athena.iz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.iz.md#member-code)
+- **COMMITS:**
+  - [cf8832b](https://github.com/sase-org/sase/commit/cf8832b7e8bf6a99183e9de9535945ceb3ce3c5d) — fix(config): make machine identity optional per document
 
 # Scope `machine_name` to the machine identity overlay
 

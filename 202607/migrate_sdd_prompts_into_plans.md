@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/migrate_sdd_prompts_into_plans.md](prompts/migrate_sdd_prompts_into_plans.md)
+- **AGENTS:**
+  - [bbugyi200.athena.66](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.66/README.md)
+  - [bbugyi200.athena.66--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.66.md#member-code)
+- **COMMITS:**
+  - [71effb3](https://github.com/sase-org/sase/commit/71effb3204c815deb34f1bab3a4d3ac6eb3d69e2) — feat(sdd): nest prompt snapshots with monthly plans
 
 # Plan: Migrate SDD `prompts/` into `plans/<YYYYMM>/prompts/`
 

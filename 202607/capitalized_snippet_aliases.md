@@ -31,6 +31,13 @@ bead_id: sase-8u
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_aliases.md](prompts/capitalized_snippet_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8u.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.1.md#member-code)
+  - [bbugyi200.athena.sase-8u.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8u.2/README.md)
+  - [bbugyi200.athena.sase-8u.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.2.md#member-code)
+  - [bbugyi200.athena.sase-8u.4.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.4.1.md#member-code)
+- **COMMITS:**
+  - [6e6b8d8](https://github.com/sase-org/sase/commit/6e6b8d85c3c4314d84ba5167c22a955bacf623fe) — feat: integrate core capitalized snippet aliases (sase-8u.2)
 
 # Plan: Capitalized aliases for every SASE snippet
 

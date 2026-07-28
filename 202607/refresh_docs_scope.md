@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/refresh_docs_scope.md](prompts/refresh_docs_scope.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fo](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fo/README.md)
+  - [bbugyi200.athena.fo--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fo.md#member-code)
+- **COMMITS:**
+  - [5b49b20](https://github.com/sase-org/sase/commit/5b49b204f84e7933984a283373ec837aaa4bff71) — fix(axe): constrain refresh docs agents to documentation
 
 # Plan: Enforce docs-only scope in the builtin refresh_docs chop prompts
 

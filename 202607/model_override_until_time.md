@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/model_override_until_time.md](prompts/model_override_until_time.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4z.md#member-code)
 
 # Models Panel: Override Until a Specific Time
 

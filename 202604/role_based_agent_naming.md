@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/role_based_agent_naming.md](prompts/role_based_agent_naming.md)
+- **COMMITS:**
+  - [51fcb66](https://github.com/sase-org/sase/commit/51fcb660f88a537e6aed776cecc30b1a33a2af01) — feat: Use role-based naming for planner/coder/epic agents
 
 # Plan: Role-Based Agent Naming (`<name>.plan` / `<name>.code`)
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/sdd_directory_map_redesign.md](prompts/sdd_directory_map_redesign.md)
+- **COMMITS:**
+  - [35109c3](https://github.com/sase-org/sase/commit/35109c3d0e636dd9bc4684d63c27e46d2e6b79b6) — chore: replace SDD directory map asset
 
 # Plan: Replace SDD Directory Map With a Practical Diagram
 

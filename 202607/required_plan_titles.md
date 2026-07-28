@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/required_plan_titles.md](prompts/required_plan_titles.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a4.w0.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a4.w0.w0/README.md)
+  - [bbugyi200.athena.a4.w0.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a4.w0.w0.md#member-code)
+- **COMMITS:**
+  - [f8b44c4](https://github.com/sase-org/sase/commit/f8b44c49fbc8db391bb41cd30e4f8e7907cd8909) — feat\!: require and display plan titles
 
 # Plan: Require plan titles and show them in agent metadata
 

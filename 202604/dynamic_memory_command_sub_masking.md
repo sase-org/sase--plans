@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/dynamic_memory_command_sub_masking.md](prompts/dynamic_memory_command_sub_masking.md)
+- **COMMITS:**
+  - [2d52d9c](https://github.com/sase-org/sase/commit/2d52d9c76f8bee1357c3aec861db8eca0061b3c5) — fix: mask \`$(...)\` payloads from dynamic-memory keyword matching
 
 # Dynamic memory matches keywords inside `$(...)` command-substitution payloads
 

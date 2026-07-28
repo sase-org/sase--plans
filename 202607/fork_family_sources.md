@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fork_family_sources.md](prompts/fork_family_sources.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fb/README.md)
+  - [bbugyi200.athena.fb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fb.md#member-code)
+- **COMMITS:**
+  - [d8b67d6](https://github.com/sase-org/sase/commit/d8b67d602c0df6f4c2c7d26f845ec85dad3bc10e) — feat: support agent families as fork sources (sase-7i.5)
 
 # Plan: Family-aware `#fork` sources with full per-member transcripts
 

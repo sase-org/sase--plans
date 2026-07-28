@@ -26,13 +26,15 @@ phases:
   description: 'verify-and-land: require a settled green CI run, close sase-a0, perform
     post-close symvision cleanup, and mark the linked canonical plan done.'
 parent_bead: sase-a0
-parent: plans:202607/fix_ci_failures.md
 create_time: 2026-07-27 13:13:35
 status: wip
 bead_id: sase-a0.5
 ---
 
 - **PROMPT:** [202607/prompts/finish_sase_a0.md](prompts/finish_sase_a0.md)
+- **PARENT:** [202607/fix_ci_failures.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_failures.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-a0.5.2--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-a0.5.2.md#member-1)
 
 # Finish and land `sase-a0` after the typed-resolution integration
 

@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/plan_list_status_and_limit.md](prompts/plan_list_status_and_limit.md)
+- **AGENTS:**
+  - [bbugyi200.athena.78](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.78/README.md)
+  - [bbugyi200.athena.78--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.78.md#member-code)
+- **COMMITS:**
+  - [5e4ae55](https://github.com/sase-org/sase/commit/5e4ae55d3a066b7c178ee0a754a9b5f9acfcc15d) — feat(cli): add plan list status and limit filters
 
 # `sase plan list`: Status Filtering and Per-Status Limits
 

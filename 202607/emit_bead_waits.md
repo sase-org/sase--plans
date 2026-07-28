@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/emit_bead_waits.md](prompts/emit_bead_waits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-87.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-87.4/README.md)
+  - [bbugyi200.athena.sase-87.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.4.md#member-code)
+- **COMMITS:**
+  - [0ee641f](https://github.com/sase-org/sase/commit/0ee641f6c047f73870a345f682e484e152321409) — feat(bead): emit bead-gated waits for epic work (sase-87.4)
 
 # Plan: Emit bead-gated waits from epic work plans
 

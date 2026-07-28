@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/instant_update_confirmation.md](prompts/instant_update_confirmation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5m.md#member-code)
 
 # Make `,U` Open Update Confirmation Immediately After Refresh
 

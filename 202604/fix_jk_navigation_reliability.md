@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_jk_navigation_reliability.md](prompts/fix_jk_navigation_reliability.md)
+- **COMMITS:**
+  - [0e69a53](https://github.com/sase-org/sase/commit/0e69a53103ef6149bf712df772ae0d351e46627a) — fix: suppress stale ChangeSpec highlight events
 
 # Plan: Fix unreliable `j`/`k` navigation
 

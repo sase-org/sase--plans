@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/restore_agent_status_words.md](prompts/restore_agent_status_words.md)
+- **COMMITS:**
+  - [81929ef](https://github.com/sase-org/sase/commit/81929ef73dde3f905595bf585078739a6b3aa963) — feat: restore readable status words on agent rows
 
 # Restore Readable Status Words on Agent Rows
 

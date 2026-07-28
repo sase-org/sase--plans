@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/comprehensive_update_commits.md](prompts/comprehensive_update_commits.md)
+- **AGENTS:**
+  - [bbugyi200.athena.h7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h7/README.md)
+  - [bbugyi200.athena.h7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h7.md#member-code)
+- **COMMITS:**
+  - [26c9b5b](https://github.com/sase-org/sase/commit/26c9b5bd6ea096906addd24439befa745be21047) — feat: preview commits for comprehensive updates
 
 # Plan: Commit-first comprehensive update confirmation
 

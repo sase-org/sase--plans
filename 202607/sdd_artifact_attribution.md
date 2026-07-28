@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sdd_artifact_attribution.md](prompts/sdd_artifact_attribution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.56--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.56.md#member-code)
 
 # Fix SDD Companion-Repo Artifact Attribution on Agent Completion
 

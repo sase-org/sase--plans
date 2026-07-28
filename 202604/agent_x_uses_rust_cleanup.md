@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_x_uses_rust_cleanup.md](prompts/agent_x_uses_rust_cleanup.md)
+- **COMMITS:**
+  - [8e9cc53](https://github.com/sase-org/sase/commit/8e9cc53027c5fcca9d05d48e11a167717f59b9f3) — feat: route single-agent cleanup through planner
 
 # Plan: Route single-agent `x` cleanup through Rust planner
 

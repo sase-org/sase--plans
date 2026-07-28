@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/agent_reply_subsection_id.md](prompts/agent_reply_subsection_id.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2e.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2e.f1.md#member-code)
 
 # Plan: Show the family `<id>` in generic "AGENT" sub-sections of the AGENT REPLY panel
 

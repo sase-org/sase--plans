@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/tui_bead_warmup_pump_stall.md](prompts/tui_bead_warmup_pump_stall.md)
+- **AGENTS:**
+  - [bbugyi200.athena.79](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.79/README.md)
+  - [bbugyi200.athena.79--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.79.md#member-code)
+- **COMMITS:**
+  - [38f64ca](https://github.com/sase-org/sase/commit/38f64ca8e8c48c56e0a719e62e9b3f478aec67eb) — fix(tui): prevent bead warmup pump stalls
 
 # Fix ACE TUI Freezes: Bead-Confirmation Warmup Blocks the App Message Pump
 

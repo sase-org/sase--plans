@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/approve_options_constraints.md](prompts/approve_options_constraints.md)
+- **COMMITS:**
+  - [45a3bda](https://github.com/sase-org/sase/commit/45a3bda07f298ec0898eb94d00985a2a8df2036f) — feat: Enforce at-least-one-ON constraint in ApproveOptionsModal
 
 # Plan: ApproveOptionsModal — Enforce Valid Option Combinations
 

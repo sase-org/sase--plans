@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_below_plan.md](prompts/artifacts_below_plan.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bs](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bs/README.md)
+  - [bbugyi200.athena.bs--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bs.md#member-code)
+- **COMMITS:**
+  - [b7b64b7](https://github.com/sase-org/sase/commit/b7b64b7199510be56c5638d0302bc2d002e31a7c) — feat(ace): place artifacts directly below plan
 
 # Plan: Render ARTIFACTS Directly Below PLAN
 

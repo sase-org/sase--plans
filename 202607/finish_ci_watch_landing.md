@@ -35,13 +35,13 @@ phases:
   description: 'land-sase-a4: close sase-a4 normally, clean post-close Symvision findings,
     and mark the original plan done.'
 parent_bead: sase-a4
-parent: plans:202607/ci_watch_liveness.md
 create_time: 2026-07-27 14:58:14
 status: wip
 bead_id: sase-a4.4
 ---
 
 - **PROMPT:** [202607/prompts/finish_ci_watch_landing.md](prompts/finish_ci_watch_landing.md)
+- **PARENT:** [202607/ci_watch_liveness.md](https://github.com/sase-org/sase--plans/blob/main/202607/ci_watch_liveness.md)
 
 # Finish and land the ci_watch liveness epic
 

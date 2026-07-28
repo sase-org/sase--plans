@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [9c7dcb3](https://github.com/sase-org/sase/commit/9c7dcb3e19a99a67ee5fb2fec208de3d2215ee74) — fix: Prevent PID reuse from merging distinct RUNNING agents in dedup
+
 # Fix Agent Merge Bug in Ace TUI Agents Tab
 
 ## Problem

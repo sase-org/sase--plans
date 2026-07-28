@@ -133,6 +133,13 @@ bead_id: sase-9v
 ---
 
 - **PROMPT:** [202607/prompts/bead_review_hardening.md](prompts/bead_review_hardening.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9v.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9v.land/README.md)
+  - [bbugyi200.athena.sase-9v.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9v.land.md#member-code)
+- **COMMITS:**
+  - [bb04762](https://github.com/sase-org/sase/commit/bb0476224f547a751f81643dbe607089531d5609) — test(bead): fix work-launch push-hint call (sase-9v)
+  - [41d02f6](https://github.com/sase-org/sase/commit/41d02f653a516602ecd01983e23390f9b730387e) — build(deps): require sase-core-rs 0.11 (sase-9v)
+  - [9e63c5e](https://github.com/sase-org/sase/commit/9e63c5eb785c8ed009e74841cf4cc301a5bbcc9d) — fix(agents-sync): skip tribe wait relationships (sase-9v)
 
 # Harden the bead subsystem against the verified gaps from the post-sase-9r/9s review
 

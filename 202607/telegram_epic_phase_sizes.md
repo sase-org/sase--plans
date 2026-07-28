@@ -11,6 +11,8 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_epic_phase_sizes.md](prompts/telegram_epic_phase_sizes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8b.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.3.md#member-code)
 
 # Plan: Glanceable Telegram epic phase sizes
 

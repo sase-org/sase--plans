@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/bulk_agent_kill_responsiveness.md](prompts/bulk_agent_kill_responsiveness.md)
+- **COMMITS:**
+  - [60da6d9](https://github.com/sase-org/sase/commit/60da6d9db212c3f17b2078b51ba7c321d05d0bb3) — fix: batch marked agent kills
 
 # Plan: Make Bulk Agent Kill Immediate in the Agents Tab
 

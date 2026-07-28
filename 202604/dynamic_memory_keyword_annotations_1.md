@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/dynamic_memory_keyword_annotations_1.md](prompts/dynamic_memory_keyword_annotations_1.md)
+- **COMMITS:**
+  - [3ae955e](https://github.com/sase-org/sase/commit/3ae955e3a66001aa825a480e33b7aae56e8674a7) — feat: annotate dynamic memory lines with matched keywords
 
 # Plan: Keyword Annotations for DYNAMIC MEMORY Lines
 

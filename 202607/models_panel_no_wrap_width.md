@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/models_panel_no_wrap_width.md](prompts/models_panel_no_wrap_width.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5i.md#member-code)
 
 # Plan: Widen the Models Panel for Single-Line Content
 

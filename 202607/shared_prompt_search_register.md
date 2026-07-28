@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/shared_prompt_search_register.md](prompts/shared_prompt_search_register.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dw/README.md)
+  - [bbugyi200.athena.dw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dw.md#member-code)
+- **COMMITS:**
+  - [97583b6](https://github.com/sase-org/sase/commit/97583b66cabb67f41722ab779fc79223d9727373) — feat(ace): share prompt search register across panes
 
 # Plan: Share Vim Search History Across Prompt Panes
 

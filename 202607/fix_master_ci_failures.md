@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_master_ci_failures.md](prompts/fix_master_ci_failures.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ak](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ak/README.md)
+  - [bbugyi200.athena.ak--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ak.md#member-code)
+- **COMMITS:**
+  - [592c252](https://github.com/sase-org/sase/commit/592c252a3e45ff626cc98505e3b4d42dfa49f98b) — test: stabilize cross-version CI checks
 
 # Plan: Fix all failing CI jobs on sase master
 

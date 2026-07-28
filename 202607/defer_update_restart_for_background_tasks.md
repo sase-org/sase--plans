@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/defer_update_restart_for_background_tasks.md](prompts/defer_update_restart_for_background_tasks.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3k.md#member-code)
 
 # Plan: Defer Update Restart Until Background Tasks Finish
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/revert_coder_suffix_1.md](prompts/revert_coder_suffix_1.md)
+- **COMMITS:**
+  - [eb7ef43](https://github.com/sase-org/sase/commit/eb7ef43d80eedd9e2b03b16f4475aa37da5a8912) — fix: restore plan-chain coder suffix to .code
 
 # Revert Plan-Chain Coder Suffix To .code
 

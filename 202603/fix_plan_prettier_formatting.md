@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [c061655](https://github.com/sase-org/sase/commit/c06165513608f7b65253a23e71025a57014ac6d7) — fix: Run bead/plan handlers before precommit so prettier formats plan files
+
 # Fix: Plan files not formatted by prettier before commit
 
 ## Problem

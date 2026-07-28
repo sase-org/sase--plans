@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/axe_editor_redesign.md](prompts/axe_editor_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.it](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.it/README.md)
+  - [bbugyi200.athena.it--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.it.md#member-code)
+- **COMMITS:**
+  - [104a31c](https://github.com/sase-org/sase/commit/104a31c715ac950d6a73de08d12b0266beda2fe7) — feat(ace): redesign AXE entry editor
 
 # AXE lumberjack/chop config editor — reliability fix + visual/UX redesign
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/at_prefix_file_completion.md](prompts/at_prefix_file_completion.md)
+- **COMMITS:**
+  - [c243f0c](https://github.com/sase-org/sase/commit/c243f0cd7b4ced8ba3583c20f6bb1963c7808dc8) — feat: Support @-prefixed file paths in tab completion
 
 # Plan: Fix file completion for @-prefixed file paths
 

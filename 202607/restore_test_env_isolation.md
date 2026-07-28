@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/restore_test_env_isolation.md](prompts/restore_test_env_isolation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-83.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-83.land/README.md)
+  - [bbugyi200.athena.sase-83.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-83.land.md#member-code)
+- **COMMITS:**
+  - [1227d91](https://github.com/sase-org/sase/commit/1227d918817639a90a291c953cc6da21e3ea3f72) — test: restore review-runner environment isolation (sase-83)
 
 # Plan: Restore pytest environment isolation under work stealing
 

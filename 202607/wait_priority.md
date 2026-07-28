@@ -54,6 +54,11 @@ bead_id: sase-9k
 ---
 
 - **PROMPT:** [202607/prompts/wait_priority.md](prompts/wait_priority.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9k.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9k.land/README.md)
+  - [bbugyi200.athena.sase-9k.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9k.land.md#member-code)
+- **COMMITS:**
+  - [4b9281d](https://github.com/sase-org/sase/commit/4b9281d3d7d92f0de8a03c8bdea802d28eea6901) — docs: document bounded runner-slot deference (sase-9k)
 
 # Plan: Make `%wait(priority=N)` effective, observable, and editable
 

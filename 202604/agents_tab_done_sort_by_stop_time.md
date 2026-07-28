@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_tab_done_sort_by_stop_time.md](prompts/agents_tab_done_sort_by_stop_time.md)
+- **COMMITS:**
+  - [b8e977b](https://github.com/sase-org/sase/commit/b8e977b61f8148a3bfd6d6de9d6463b8c809c4a7) — fix(ace/tui): sort done agents by stop_time under BY_DATE
 
 # Plan: Sort done agents by completion time in `sase ace` Agents tab
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/member_roster_epic_landing.md](prompts/member_roster_epic_landing.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-6w.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6w.land/README.md)
+  - [bbugyi200.athena.sase-6w.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6w.land.md#member-code)
+- **COMMITS:**
+  - [8ebf710](https://github.com/sase-org/sase/commit/8ebf710f4a1a0c13dd23585212c77506eb7881ce) — test: align statistics fixtures and agent snapshots (sase-6w)
 
 # Plan: Complete and land the numbered member-roster epic
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/skip_absolute_paths_in_file_history.md](prompts/skip_absolute_paths_in_file_history.md)
+- **COMMITS:**
+  - [6548728](https://github.com/sase-org/sase/commit/6548728d689534e57e1687a6121da07b6b7fdeab) — feat: skip /-prefixed paths in Ctrl+T file-history recording
 
 # Plan: Skip Recording `/`-Prefixed Paths in the Ctrl+T File-History Store
 

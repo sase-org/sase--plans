@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/fakey_provider.md](prompts/fakey_provider.md)
+- **AGENTS:**
+  - [bbugyi200.athena.4x--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4x.md#member-epic)
 
 # Plan: `fakey` — a first-class fake agent CLI provider for testing launches, failures, and retries
 

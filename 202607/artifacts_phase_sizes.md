@@ -11,6 +11,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_phase_sizes.md](prompts/artifacts_phase_sizes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8b.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.2.md#member-code)
 
 # Plan: Size-aware Artifacts Plans surface
 

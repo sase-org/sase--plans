@@ -54,6 +54,9 @@ bead_id: sase-a0
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_failures.md](prompts/fix_ci_failures.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ma](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ma/README.md)
+  - [bbugyi200.athena.sase-a0.5.2--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-a0.5.2.md#member-1)
 
 # Plan: Repair the three failing CI jobs on master
 

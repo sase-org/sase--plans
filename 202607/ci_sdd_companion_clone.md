@@ -5,6 +5,9 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/ci_sdd_companion_clone.md](prompts/ci_sdd_companion_clone.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3b.md#member-code)
+  - [bbugyi200.athena.3b--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3b.md#member-plan-0)
 
 # Fix CI `lint` failure: clone the SDD companion repo in the CI environment
 

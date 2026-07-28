@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_chop_linked_repo_skew.md](prompts/fix_chop_linked_repo_skew.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j.md#member-code)
 
 # Fix Chop-Launched Agent Failures from Stale Linked Repos
 

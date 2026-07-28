@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/id_bead_runner_lifecycle.md](prompts/id_bead_runner_lifecycle.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8f.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8f.2/README.md)
+  - [bbugyi200.athena.sase-8f.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.2.md#member-code)
+- **COMMITS:**
+  - [b935b74](https://github.com/sase-org/sase/commit/b935b7495d3b297b376370a5ef7bf9f9db9cdc92) — feat(agent): claim beads at launch execution (sase-8f.2)
 
 # Plan: Percent-id bead runner lifecycle
 

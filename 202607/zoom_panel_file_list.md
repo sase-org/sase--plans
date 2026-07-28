@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/zoom_panel_file_list.md](prompts/zoom_panel_file_list.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1f.md#member-code)
 
 # Plan: Zoom Panel File List — Freeze, Clarify, and Beautify
 

@@ -5,12 +5,17 @@ goal: Validated foreign agent hoods are captured during explicit periodic fetche
   integrated later with zero network or sidecar checkout mutation, and suppressed
   thereafter by durable per-hood receipts.
 bead: sase-8v.7
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-24 16:01:35
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/foreign_detection_cache.md](prompts/foreign_detection_cache.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.7/README.md)
+  - [bbugyi200.athena.sase-8v.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.7.md#member-code)
+- **COMMITS:**
+  - [f76a9ed](https://github.com/sase-org/sase/commit/f76a9ede7738308fc89ca7cfe6f476e0a6598727) — feat: cache foreign agent state for offline integration (sase-8v.7)
 
 # Foreign-only detection cache and no-network integration
 

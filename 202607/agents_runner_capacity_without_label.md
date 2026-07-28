@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_runner_capacity_without_label.md](prompts/agents_runner_capacity_without_label.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g3.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g3.f0/README.md)
+  - [bbugyi200.athena.g3.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g3.f0.md#member-code)
+- **COMMITS:**
+  - [0b44bc6](https://github.com/sase-org/sase/commit/0b44bc602ff94934efa0494ca2f7735aac49f6e1) — fix(tui): simplify runner capacity header
 
 # Plan: Label-free Agents runner-capacity chip
 

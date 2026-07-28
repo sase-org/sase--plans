@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/converge_hooks_suffix_writes.md](prompts/converge_hooks_suffix_writes.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.1/README.md)
+  - [bbugyi200.athena.sase-8g.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.1.md#member-code)
+- **COMMITS:**
+  - [84da472](https://github.com/sase-org/sase/commit/84da4721c2f13a922590d1b30aea64b658b48aab) — fix: make suffix transforms merge current ChangeSpec state (sase-8g.1)
 
 # Plan: Converge hooks suffix-transform writes
 

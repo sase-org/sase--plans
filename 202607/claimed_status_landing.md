@@ -4,12 +4,17 @@ title: Finish and land the claimed bead status epic
 goal: Close the remaining schema and presentation gaps, validate the integrated claimed-status
   lifecycle, and land epic sase-8y cleanly.
 bead: sase-8y
-parent: sase/repos/plans/202607/claimed_bead_status.md
 create_time: 2026-07-24 18:13:07
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/claimed_status_landing.md](prompts/claimed_status_landing.md)
+- **PARENT:** [202607/claimed_bead_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/claimed_bead_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8y.land/README.md)
+  - [bbugyi200.athena.sase-8y.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8y.land.md#member-code)
+- **COMMITS:**
+  - [d0495f1](https://github.com/sase-org/sase/commit/d0495f1cba07b4706cc7696a1561d9fa0a0c3343) — fix: finish claimed status landing cleanup (sase-8y)
 
 # Finish and land the claimed bead status epic
 

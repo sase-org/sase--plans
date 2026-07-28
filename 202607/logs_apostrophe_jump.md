@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/logs_apostrophe_jump.md](prompts/logs_apostrophe_jump.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1j.md#member-code)
 
 # Add apostrophe entry-jump support to Admin Center Logs
 

@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [64ca326](https://github.com/sase-org/sase/commit/64ca326d1e0ccff306fafd0fd1b6b5d20536d3b4) — fix: Preserve caller-injected context vars through anonymous workflow flattening
+
 # Plan: Fix `cl_name` undefined in `#split` workflow via `sase run` (v2)
 
 ## Problem

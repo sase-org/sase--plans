@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/auto_commit_qa_prompt_snapshot.md](prompts/auto_commit_qa_prompt_snapshot.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7n](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7n/README.md)
+  - [bbugyi200.athena.7n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7n.md#member-code)
+- **COMMITS:**
+  - [bfb468c](https://github.com/sase-org/sase/commit/bfb468ca853939662e7ed9fc2fd5ce1c558ebc1b) — fix: auto-commit Q&A prompt snapshots
 
 # Auto-commit SDD Q&A prompt-snapshot writes to the external plans repo
 

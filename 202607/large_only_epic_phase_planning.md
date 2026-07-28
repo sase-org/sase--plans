@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/large_only_epic_phase_planning.md](prompts/large_only_epic_phase_planning.md)
+- **AGENTS:**
+  - [bbugyi200.athena.jb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jb/README.md)
+  - [bbugyi200.athena.jb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jb.md#member-code)
+- **COMMITS:**
+  - [50e5693](https://github.com/sase-org/sase/commit/50e5693e88ce5723c45d1dac3fbcec7ce0095fb5) — fix(bead): limit epic phase planning to large work
 
 # Plan: Reserve epic phase planning handoffs for large phases
 

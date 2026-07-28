@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [a988041](https://github.com/sase-org/sase/commit/a988041b835208e2c1a058d87d695c2f494aa738) — fix: Persist branch alias during manual rename for immutable providers
+
 # Fix Manual ChangeSpec Rename Branch-Alias Persistence
 
 ## Context

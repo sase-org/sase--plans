@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/search_md_improvements.md](prompts/search_md_improvements.md)
+- **COMMITS:**
+  - [14ca016](https://github.com/sase-org/sase/commit/14ca016f8562bac6a804578b084b5664c6c17718) — feat: Enhance search markdown output with project context, query, drawers, workspaces, kickstart, and anchor links
 
 # Plan: Integrate rejected PR improvements into `sase search --format markdown`
 
@@ -27,7 +29,7 @@ ChangeSpec). This gives cross-project search results meaningful context.
 ### 2. Include query string in header (from PR #73)
 
 Add
-`**Query:** \`status:Ready\``below the summary count line. Requires passing`args.query`through to`\_display_markdown()`.
+`**Query:** \`status:Ready\``below the summary count line. Requires passing`args.query`through to`_display_markdown()`.
 Valuable when output is piped or shared.
 
 **Before:**

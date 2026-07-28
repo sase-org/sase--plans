@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/clipboard_on_plan_commit.md](prompts/clipboard_on_plan_commit.md)
+- **COMMITS:**
+  - [0f5f0b9](https://github.com/sase-org/sase/commit/0f5f0b97f83a40555fd54cedc7fa24c4aae39836) — feat: Auto-copy plan path to clipboard on "Plan Committed"
 
 # Plan: Copy Plan File Path to Clipboard on "Plan Committed"
 

@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_tree_grouping_precedence.md](prompts/agent_tree_grouping_precedence.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cx.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cx.f0/README.md)
+  - [bbugyi200.athena.cx.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.f0.md#member-code)
+- **COMMITS:**
+  - [d849d62](https://github.com/sase-org/sase/commit/d849d628bf0ac28c000e489fcd6e5074c860fbc0) — fix(ace): keep agent subtrees in outer grouping
 
 # Plan: Preserve agent-tree membership across grouping and tag panels
 

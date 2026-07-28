@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/ace_default_by_project.md](prompts/ace_default_by_project.md)
+- **COMMITS:**
+  - [abaf287](https://github.com/sase-org/sase/commit/abaf2876737a5c9daa192ff678138f201473dc79) — fix: default ACE grouping to project on startup
 
 # Plan: Default ACE Grouping to By Project on Startup
 

@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/suppress_intermediate_handoff_bell.md](prompts/suppress_intermediate_handoff_bell.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hi](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hi/README.md)
+  - [bbugyi200.athena.hi--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hi.md#member-code)
+- **COMMITS:**
+  - [6307a3f](https://github.com/sase-org/sase/commit/6307a3fc3bc4b4b832ce8152e44fa70d2e382e25) — fix: suppress completion bell during handoffs
 
 # Plan: Suppress intermediate agent handoff bells
 

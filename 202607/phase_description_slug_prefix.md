@@ -6,6 +6,12 @@ goal: '`sase plan validate --explain` and the `/sase_beads` skill teach agents t
   full section title, and the repo''s own fixtures follow the new convention.'
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.lf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lf/README.md)
+  - [bbugyi200.athena.lf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lf.md#member-code)
+- **COMMITS:**
+  - [4b6c2c3](https://github.com/sase-org/sase/commit/4b6c2c3cadf2ea71e9ff1d9f99df0f8ca5cb0a53) — docs: standardize epic phase description prefixes
+
 # Plan: Prefix epic phase descriptions with the phase slug ID
 
 ## Problem

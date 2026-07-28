@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_x_xprompt_snippet_chord.md](prompts/ctrl_x_xprompt_snippet_chord.md)
+- **AGENTS:**
+  - [bbugyi200.athena.da](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.da/README.md)
+  - [bbugyi200.athena.da--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.da.md#member-code)
+- **COMMITS:**
+  - [2ac99da](https://github.com/sase-org/sase/commit/2ac99dab516508ae27d12fe22ebd1f292b5ce1be) — feat(ace)\!: add Ctrl+X xprompt snippet chord
 
 # Plan: Rebind the xprompt save panel snippet chord to Ctrl+X
 

@@ -3,6 +3,10 @@ create_time: 2026-04-24 10:10:26
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [09a207d](https://github.com/sase-org/sase/commit/09a207d4c395c1830cedc39a0bb58738541e44d2) — fix: Keep TUI event loop responsive during agent launch
+
 # Fix: `j`/`k` Navigation Unresponsive On Agents Tab After Agent Launch
 
 ## Problem

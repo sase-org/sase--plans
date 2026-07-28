@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/commits_panel_linked_repo_attribution.md](prompts/commits_panel_linked_repo_attribution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5d.md#member-code)
 
 # Fix Agents-tab COMMITS panel misattributing linked-repo commits to the primary repo
 

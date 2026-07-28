@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_template_clan_declarations.md](prompts/fix_template_clan_declarations.md)
+- **AGENTS:**
+  - [bbugyi200.athena.go](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.go/README.md)
+  - [bbugyi200.athena.go--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.go.md#member-code)
+- **COMMITS:**
+  - [982e51e](https://github.com/sase-org/sase/commit/982e51e6b78ff1bf8698ce94b37bd33c6554a2e4) — fix(agent): derive template clan declarations from members
 
 # Plan: Fix repeated template clan declarations
 

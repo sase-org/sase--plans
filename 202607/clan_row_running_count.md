@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_row_running_count.md](prompts/clan_row_running_count.md)
+- **AGENTS:**
+  - [bbugyi200.athena.m1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m1/README.md)
+  - [bbugyi200.athena.m1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m1.md#member-code)
+- **COMMITS:**
+  - [b3f400c](https://github.com/sase-org/sase/commit/b3f400c8ea1e621da88f1c892a594e39438de0ee) — fix: honor projected buckets in clan counts
 
 # Fix clan-row agent counts miscounting a handed-off family planner as Running
 

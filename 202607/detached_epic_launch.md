@@ -83,6 +83,12 @@ bead_id: sase-9s
 ---
 
 - **PROMPT:** [202607/prompts/detached_epic_launch.md](prompts/detached_epic_launch.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-9s.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9s.land/README.md)
+  - [bbugyi200.athena.sase-9s.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9s.land.md#member-code)
+- **COMMITS:**
+  - [f499ca1](https://github.com/sase-org/sase/commit/f499ca1db61a7f2ccef55e6d8d59f57048617d49) — feat(tasks): record detached epic launch origins (sase-9s)
+  - [1cb134f](https://github.com/sase-org/sase/commit/1cb134fd1cd8e76f8427aad797844a8c681060b8) — test: stabilize post-rebase suite checks (sase-9s)
 
 # Plan: Detached background tasks and a single epic-launch path
 

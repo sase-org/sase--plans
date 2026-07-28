@@ -112,13 +112,15 @@ phases:
     close sase-96, run just symvision afterwards and remove anything it reports, then
     set status done in both the sase-96 plan file and this one.'
 parent_bead: sase-96
-parent: sase/repos/plans/202607/tmp_space_exhaustion.md
 create_time: 2026-07-25 14:15:04
 status: done
 bead_id: sase-96.8
 ---
 
 - **PROMPT:** [202607/prompts/managed_tmp_reaping.md](prompts/managed_tmp_reaping.md)
+- **PARENT:** [202607/tmp_space_exhaustion.md](https://github.com/sase-org/sase--plans/blob/main/202607/tmp_space_exhaustion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-96.8.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-96.8.land/README.md)
 
 # Plan: Close the remaining temp-scratch leaks sase-96 relocated but did not stop
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/ctrl_g_open_editor.md](prompts/ctrl_g_open_editor.md)
+- **COMMITS:**
+  - [7bd20dd](https://github.com/sase-org/sase/commit/7bd20dd624392f50715ef262a968877e5abc6949) — feat: Add ctrl+g keybinding to open config files in editor from XPromptLocationModal
 
 # Plan: Add `<ctrl+g>` keymap to XPromptLocationModal to open file in editor
 

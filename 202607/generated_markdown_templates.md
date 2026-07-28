@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/generated_markdown_templates.md](prompts/generated_markdown_templates.md)
+- **AGENTS:**
+  - [bbugyi200.athena.74.f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.74.f-0/README.md)
+  - [bbugyi200.athena.74.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.74.f-0.md#member-code)
+- **COMMITS:**
+  - [19bcf39](https://github.com/sase-org/sase/commit/19bcf3944fee8d6c934f8db980310b9fa08138a7) — feat: render generated markdown from packaged templates
 
 # Plan: Single-Source Templates for Every SASE-Generated Markdown File
 

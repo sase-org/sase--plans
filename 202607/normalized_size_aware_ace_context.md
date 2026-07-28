@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/normalized_size_aware_ace_context.md](prompts/normalized_size_aware_ace_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8b.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8b.1/README.md)
+  - [bbugyi200.athena.sase-8b.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.1.md#member-code)
+- **COMMITS:**
+  - [00dd055](https://github.com/sase-org/sase/commit/00dd055778bb153d2abbe622118413547f0e8969) — feat(ace): show normalized epic phase sizes (sase-8b.1)
 
 # Plan: Normalized size-aware ACE agent context
 

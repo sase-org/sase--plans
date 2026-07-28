@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_coder_model_picker.md](prompts/fix_coder_model_picker.md)
+- **COMMITS:**
+  - [8b416cc](https://github.com/sase-org/sase/commit/8b416cc6540d995e54d959e5577f1aa4c24ad61f) — fix: Respect model picker selection for coder agents
 
 # Fix: Model picker selection ignored for coder agents
 

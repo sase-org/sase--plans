@@ -3,6 +3,11 @@ create_time: 2026-04-29 01:54:46
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [42bb654](https://github.com/sase-org/sase/commit/42bb65458df03c3e0725d7dfe33da6450d088b1d) — chore: document sase chats command surface (sase-15.4)
+  - [2a68e67](https://github.com/sase-org/sase/commit/2a68e6767c0ed1462ff856ced11525ff7c0a9273) — chore: satisfy ruff on core backend helpers
+
 # Plan: Unblock `sase-15.4`
 
 ## Current state

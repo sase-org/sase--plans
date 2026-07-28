@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/pyvision_memory_concise.md](prompts/pyvision_memory_concise.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3j.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3j.f1.md#member-code)
 
 # Plan: Make `memory/pyvision.md` more concise and instance-free
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/faster_agents_nav.md](prompts/faster_agents_nav.md)
+- **COMMITS:**
+  - [6ec0b49](https://github.com/sase-org/sase/commit/6ec0b491bb8413341e9fb0da52d0af5a6ca7b6ca) — feat: Make TUI Agents tab j/k navigation dramatically faster
 
 # Plan: Make Agents Tab j/k Navigation WAY Faster
 

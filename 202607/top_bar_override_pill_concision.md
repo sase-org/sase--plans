@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/top_bar_override_pill_concision.md](prompts/top_bar_override_pill_concision.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ka](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ka/README.md)
+  - [bbugyi200.athena.ka--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ka.md#member-code)
+- **COMMITS:**
+  - [41e44d1](https://github.com/sase-org/sase/commit/41e44d1c4205f7049723e109c53350460cc36913) — feat(ace): refine top-bar override pills
 
 # Plan: Make the ACE top-bar override pills terse, typographic, and self-explaining
 

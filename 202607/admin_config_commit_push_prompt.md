@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/admin_config_commit_push_prompt.md](prompts/admin_config_commit_push_prompt.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g4/README.md)
+  - [bbugyi200.athena.g4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g4.md#member-code)
+- **COMMITS:**
+  - [58d6222](https://github.com/sase-org/sase/commit/58d622217ce85359cfaa93d5504517e32b360eaa) — feat(config): offer commit and push after config edits
 
 # Plan: Prompt to commit Admin Center config edits
 

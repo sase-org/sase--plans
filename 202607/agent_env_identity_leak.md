@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_env_identity_leak.md](prompts/agent_env_identity_leak.md)
+- **AGENTS:**
+  - [bbugyi200.athena.e7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e7/README.md)
+  - [bbugyi200.athena.e7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e7.md#member-code)
+- **COMMITS:**
+  - [292e9db](https://github.com/sase-org/sase/commit/292e9db152c06ebc5b90ab88e051ddb0b1df7c93) — fix(agent): prevent ambient identity leaking across processes
 
 # Plan: Stop stale SASE*AGENT*\* env leaking into new agent launches
 

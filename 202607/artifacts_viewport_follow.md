@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_viewport_follow.md](prompts/artifacts_viewport_follow.md)
+- **AGENTS:**
+  - [bbugyi200.athena.hd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hd/README.md)
+  - [bbugyi200.athena.hd--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hd.md#member-code)
+- **COMMITS:**
+  - [01b06e3](https://github.com/sase-org/sase/commit/01b06e3d6507c68b3ae9a1ccebc6859a13e40c66) — fix(tui): keep artifact selection in viewport
 
 # Plan: Keep Artifacts selections inside their list viewports
 

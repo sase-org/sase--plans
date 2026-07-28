@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/wait_absolute_time.md](prompts/wait_absolute_time.md)
+- **COMMITS:**
+  - [5e2cc5e](https://github.com/sase-org/sase/commit/5e2cc5e93559bce260cc9aeb8c1053bf25e93b32) — feat(wait): add absolute time formats (HHMM, yymmdd/HHMM) to %wait directive
 
 # Plan: Absolute Time Formats for `%wait` Directive
 

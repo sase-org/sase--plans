@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/clan_tribe_directive_contract.md](prompts/clan_tribe_directive_contract.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dr/README.md)
+  - [bbugyi200.athena.dr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dr.md#member-code)
+- **COMMITS:**
+  - [bfdf0e8](https://github.com/sase-org/sase/commit/bfdf0e87be08d27ad8e5ea5a9258328be4634756) — feat\!: support clan-level tribe directives
 
 # Plan: Make tribe membership a clan directive property
 

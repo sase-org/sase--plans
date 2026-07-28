@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_skill_highlight.md](prompts/xprompt_skill_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8b.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b.f0/README.md)
+  - [bbugyi200.athena.8b.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.f0.md#member-code)
+- **COMMITS:**
+  - [c5ded4a](https://github.com/sase-org/sase/commit/c5ded4a86e5ad590b3f421615052b7284daf8a83) — feat(tui): highlight known slash skills in prompts
 
 # Plan: Syntax highlighting for known xprompt skills (`/sase_plan`) in the prompt input
 

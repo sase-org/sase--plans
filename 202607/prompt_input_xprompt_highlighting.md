@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/prompt_input_xprompt_highlighting.md](prompts/prompt_input_xprompt_highlighting.md)
+- **AGENTS:**
+  - [bbugyi200.athena.77](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.77/README.md)
+  - [bbugyi200.athena.77--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.77.md#member-code)
+- **COMMITS:**
+  - [db9ad5d](https://github.com/sase-org/sase/commit/db9ad5d513e1e6b80a5776193ad4058ad46106e6) — feat: highlight xprompt syntax in prompt input
 
 # Plan: Live xprompt Syntax Highlighting in the Prompt Input Widget
 

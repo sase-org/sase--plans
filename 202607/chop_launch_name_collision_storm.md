@@ -13,6 +13,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/chop_launch_name_collision_storm.md](prompts/chop_launch_name_collision_storm.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ea](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ea/README.md)
+  - [bbugyi200.athena.ea--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ea.md#member-code)
+- **COMMITS:**
+  - [e2a294d](https://github.com/sase-org/sase/commit/e2a294dc09ae2f25f4a18f3172037b4d68899529) — fix(axe): prevent recurring chop collision storms
 
 # Plan: Stop the refresh_docs chop failed-launch prompt-stash storm
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/jump_back_backtick.md](prompts/jump_back_backtick.md)
+- **COMMITS:**
+  - [5f810a9](https://github.com/sase-org/sase/commit/5f810a9d009a6d452facc80435bb6fe251252d57) — feat: Add backtick "jump back" hint to cross-tab jump modal
 
 # Plan: Backtick "Jump Back" Hint in Jump to All Entries Modal
 

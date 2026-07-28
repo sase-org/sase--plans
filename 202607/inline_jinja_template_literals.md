@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/inline_jinja_template_literals.md](prompts/inline_jinja_template_literals.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9p](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9p/README.md)
+  - [bbugyi200.athena.9p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9p.md#member-code)
+- **COMMITS:**
+  - [f5d7184](https://github.com/sase-org/sase/commit/f5d718444ae0a67ef92791014a33e419994210ed) — fix(xprompt): render declared inputs inside inline code
 
 # Plan: Restore inline-formatted xprompt input rendering
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/gh_first_use_project_display.md](prompts/gh_first_use_project_display.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i.md#member-code)
 
 # Plan: First-use `#gh:org/repo` launches should display the repo name as the project, not `org/repo`
 

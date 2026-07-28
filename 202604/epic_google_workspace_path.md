@@ -6,6 +6,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/epic_google_workspace_path.md](prompts/epic_google_workspace_path.md)
+- **COMMITS:**
+  - [c432c30](https://github.com/sase-org/sase/commit/c432c30cca79a0029d5ea7222781d0d1a5cd2255) — fix: Handle shared SDD plan refs for epic creation
 
 # Problem
 

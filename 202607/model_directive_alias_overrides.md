@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/model_directive_alias_overrides.md](prompts/model_directive_alias_overrides.md)
+- **AGENTS:**
+  - [bbugyi200.athena.6d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6d/README.md)
+  - [bbugyi200.athena.6d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6d.md#member-code)
+- **COMMITS:**
+  - [ddd0b63](https://github.com/sase-org/sase/commit/ddd0b63f22dce1e5e5d2c8d35af96b9fd2967a3f) — feat: support launch-scoped model alias overrides
 
 # Plan: Keyword-Argument Alias Overrides on the `%model` Directive
 

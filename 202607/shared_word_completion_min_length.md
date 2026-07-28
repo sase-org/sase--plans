@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/shared_word_completion_min_length.md](prompts/shared_word_completion_min_length.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gx/README.md)
+  - [bbugyi200.athena.gx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gx.md#member-code)
+- **COMMITS:**
+  - [99fcb50](https://github.com/sase-org/sase/commit/99fcb506b2daeac9f8314931b5f36247188d8678) — feat\!: share word completion minimum length
 
 # Plan: Share the minimum word length across prompt completions
 

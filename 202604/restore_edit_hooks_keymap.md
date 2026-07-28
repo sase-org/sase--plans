@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/restore_edit_hooks_keymap.md](prompts/restore_edit_hooks_keymap.md)
+- **COMMITS:**
+  - [95893e8](https://github.com/sase-org/sase/commit/95893e8d21a2d5605241e83b409ca53f055ecdf0) — feat(ace): restore \`edit_hooks\` keymap under \`f\`
 
 # Restore the "edit hooks" CL-tab keymap (lost when CLs-tab grouping became always-on)
 

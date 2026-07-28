@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/readme_redesign.md](prompts/readme_redesign.md)
+- **AGENTS:**
+  - [bbugyi200.athena.bp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bp/README.md)
+  - [bbugyi200.athena.bp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bp.md#member-code)
+- **COMMITS:**
+  - [ac92d6a](https://github.com/sase-org/sase/commit/ac92d6adeae089f629f7ec748bbb821730093723) — docs: redesign README landing page
 
 # Plan: README redesign with new GPT-image hero and demo GIFs
 

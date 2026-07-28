@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/dev_update_editable_overrides.md](prompts/dev_update_editable_overrides.md)
+- **AGENTS:**
+  - [bbugyi200.athena.0o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0o.md#member-code)
 
 # Fix dev update failure: editable reinstall breaks when a plugin's sase floor exceeds the checkout's static version
 

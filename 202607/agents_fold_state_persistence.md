@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_fold_state_persistence.md](prompts/agents_fold_state_persistence.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a0/README.md)
+  - [bbugyi200.athena.a0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a0.md#member-code)
+- **COMMITS:**
+  - [d1a3bda](https://github.com/sase-org/sase/commit/d1a3bdaf1d32b1a6b01e5605c1d603f09eef63da) — feat(ace): persist Agents fold state across sessions
 
 # Plan: Persist Agents-tab fold state without slowing startup
 

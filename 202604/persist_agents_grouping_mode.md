@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/persist_agents_grouping_mode.md](prompts/persist_agents_grouping_mode.md)
+- **COMMITS:**
+  - [a0374e9](https://github.com/sase-org/sase/commit/a0374e967c649b9dfeaa74788068be138ee19984) — feat(ace): persist Agents-tab grouping mode across TUI restarts
 
 # Persist the Agents-tab grouping mode across TUI restarts
 

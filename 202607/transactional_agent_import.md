@@ -5,12 +5,17 @@ goal: Import validated v2 hoods as recoverable local history, preserve conservat
   v1 compatibility, and expose complete synced families through the existing R revival
   flow.
 bead: sase-8v.5
-parent: sase/repos/plans/202607/global_agent_hoods.md
 create_time: 2026-07-24 14:30:06
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/transactional_agent_import.md](prompts/transactional_agent_import.md)
+- **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8v.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.5/README.md)
+  - [bbugyi200.athena.sase-8v.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.5.md#member-code)
+- **COMMITS:**
+  - [2409ed2](https://github.com/sase-org/sase/commit/2409ed2e37e454f712f44651534516d04517ef4f) — feat: import agent packages transactionally (sase-8v.5)
 
 # Transactional agents-sidecar import and family revival
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/revive_modal_datetime.md](prompts/revive_modal_datetime.md)
+- **COMMITS:**
+  - [816713c](https://github.com/sase-org/sase/commit/816713c9c2d5d70f453f196e3ab69207d80f2674) — feat: Show full date+time in revive modal and add datetime sorting
 
 # Plan: Full Date+Time in Revive Modal Sidebar + Datetime Sorting
 

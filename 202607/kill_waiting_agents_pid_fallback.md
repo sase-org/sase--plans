@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/kill_waiting_agents_pid_fallback.md](prompts/kill_waiting_agents_pid_fallback.md)
+- **AGENTS:**
+  - [bbugyi200.athena.09--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.09.md#member-code)
 
 # Fix Telegram `/kill` Failing With "Could not find PID" for Waiting/Queued (Fork) Agents
 

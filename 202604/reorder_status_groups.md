@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/reorder_status_groups.md](prompts/reorder_status_groups.md)
+- **COMMITS:**
+  - [c319f3f](https://github.com/sase-org/sase/commit/c319f3f7da2e24a16adbe6cdc87a5b6b37972d39) — feat(ace): reorder BY_STATUS groups to surface actionable buckets first
 
 # Plan — Reorder Status Groups in the ACE CLs Tab
 

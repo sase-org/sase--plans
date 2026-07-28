@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/retire_legacy_plan_layout.md](prompts/retire_legacy_plan_layout.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5v.f-1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.5v.f-1/README.md)
+  - [bbugyi200.athena.5v.f-1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5v.f-1.md#member-code)
+- **COMMITS:**
+  - [546a115](https://github.com/sase-org/sase/commit/546a1155f210569ae093e3dc0ffa3bd05f36e47f) — feat(sdd)\!: retire legacy plan layout
 
 # Plan: Retire legacy SDD plan directories and migration compatibility
 

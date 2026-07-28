@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/updates_confirm_modal.md](prompts/updates_confirm_modal.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gp/README.md)
+  - [bbugyi200.athena.gp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gp.md#member-code)
+- **COMMITS:**
+  - [a5f4dd2](https://github.com/sase-org/sase/commit/a5f4dd23ec4ba669862b3f1fa67c22325c6a684e) — feat(tui): redesign plugin action confirmation previews
 
 # Plan: Readable, scrollable Updates-tab confirm modal
 

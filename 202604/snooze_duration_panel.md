@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/snooze_duration_panel.md](prompts/snooze_duration_panel.md)
+- **COMMITS:**
+  - [12cd9c9](https://github.com/sase-org/sase/commit/12cd9c9cdc895eb03f1b26fe2825693ad150c449) — feat: share Ace duration choice modals
 
 # Snooze Duration Panel UX Plan
 

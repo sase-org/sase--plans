@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/unreadable_artifact_scan.md](prompts/unreadable_artifact_scan.md)
+- **COMMITS:**
+  - [203c355](https://github.com/sase-org/sase/commit/203c355697eb13b89cc918d33980d1b4f3153bf6) — fix: handle inaccessible done marker checks
 
 # Plan: Harden Artifact Scan Against Unreadable Timestamp Directories
 

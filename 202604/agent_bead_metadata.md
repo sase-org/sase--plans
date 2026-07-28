@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agent_bead_metadata.md](prompts/agent_bead_metadata.md)
+- **COMMITS:**
+  - [ee33272](https://github.com/sase-org/sase/commit/ee33272f4edc156c49fd0d91a78e53a7d0a51a46) — feat: show bead metadata in agent details
 
 # Agent Bead Metadata Panel Plan
 

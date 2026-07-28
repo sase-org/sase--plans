@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_receipt_owned_plugin_detection.md](prompts/fix_receipt_owned_plugin_detection.md)
+- **AGENTS:**
+  - [bbugyi200.athena.j6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j6/README.md)
+  - [bbugyi200.athena.j6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j6.md#member-code)
+- **COMMITS:**
+  - [ef2cc16](https://github.com/sase-org/sase/commit/ef2cc164e8ed6269775605c0ce2269b3c7120c91) — fix(plugins): detect receipt-owned installations
 
 # Fix receipt-owned plugin detection in the Admin Center
 

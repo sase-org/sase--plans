@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/cheapest_load_balanced_alias.md](prompts/cheapest_load_balanced_alias.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gy.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1/README.md)
+  - [bbugyi200.athena.gy.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.md#member-code)
+- **COMMITS:**
+  - [5a23c29](https://github.com/sase-org/sase/commit/5a23c297f8a43ffc3a537da23ebb4aa319a68a22) — feat\!: add load-balanced model alias pools
 
 # Plan: Load-balanced model aliases and the builtin `@cheapest` alias
 

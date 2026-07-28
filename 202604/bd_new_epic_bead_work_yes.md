@@ -3,6 +3,10 @@ create_time: 2026-04-29 12:56:14
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [a9c93e2](https://github.com/sase-org/sase/commit/a9c93e29d9ad27ad28a84e0ac376b9519eb3d5cf) — fix: skip epic work confirmation in new epic prompt
+
 # Instruct `bd/new_epic` to Run `sase bead work --yes`
 
 ## Context

@@ -3,6 +3,10 @@ create_time: 2026-04-27 16:30:50
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [5ca8493](https://github.com/sase-org/sase/commit/5ca849369c75452ee3ce14e78c34a6b9c7a11afd) — fix(ace/tui): defer refresh work during prompt input
+
 # Plan: Diagnose and Fix Prompt Input Lag
 
 ## Context

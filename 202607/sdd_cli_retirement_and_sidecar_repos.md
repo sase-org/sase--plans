@@ -6,6 +6,8 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/sdd_cli_retirement_and_sidecar_repos.md](prompts/sdd_cli_retirement_and_sidecar_repos.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8k--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8k.md#member-epic)
 
 # Retire `sase sdd`, Make Sidecar Repos First-Class, and Generalize Repo Config
 

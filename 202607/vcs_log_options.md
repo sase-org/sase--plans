@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/vcs_log_options.md](prompts/vcs_log_options.md)
+- **AGENTS:**
+  - [bbugyi200.athena.2j.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2j.f1.md#member-code)
 
 # Plan: `sase vcs log` — filter, format & ordering options
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/subagent_tool_output.md](prompts/subagent_tool_output.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1h.md#member-code)
 
 # Plan: Capture & Surface Subagent (`Agent`/`Task`) Tool Output
 

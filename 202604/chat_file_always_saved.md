@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [75429b2](https://github.com/sase-org/sase/commit/75429b22c0c990ffca2439a6a2d0ebd7e64a140e) — fix: always save chat file so SASE_AGENT_CHAT_PATH resolves
+
 # Plan: Always save chat file so SASE_AGENT_CHAT_PATH resolves
 
 ## Problem

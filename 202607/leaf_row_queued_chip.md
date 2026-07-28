@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/leaf_row_queued_chip.md](prompts/leaf_row_queued_chip.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kh/README.md)
+  - [bbugyi200.athena.kh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kh.md#member-code)
+- **COMMITS:**
+  - [53d36a2](https://github.com/sase-org/sase/commit/53d36a2980bd3930de103ccc65f94c4117f59f39) — fix(ace): omit queued chip from leaf agent rows
 
 # Stop leaf agent rows from rendering the `[Q1]` count chip
 

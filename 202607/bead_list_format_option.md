@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_list_format_option.md](prompts/bead_list_format_option.md)
+- **AGENTS:**
+  - [bbugyi200.athena.m5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m5/README.md)
+  - [bbugyi200.athena.m5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m5.md#member-code)
+- **COMMITS:**
+  - [672ecbb](https://github.com/sase-org/sase/commit/672ecbb4c835507817b78af6c573c399145c3b08) — feat(bead): add list output formats
 
 # Plan: `sase bead list` — `-f | --format <compact|full|json>`
 

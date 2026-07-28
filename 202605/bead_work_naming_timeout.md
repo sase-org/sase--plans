@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/bead_work_naming_timeout.md](prompts/bead_work_naming_timeout.md)
+- **COMMITS:**
+  - [96aedeb](https://github.com/sase-org/sase/commit/96aedebfa021d9dc4a0d86c7b8654938f0124256) — fix: poll multi-prompt names in segment project (sase-1r.6)
 
 # Fix `sase bead work` Multi-Prompt Naming Timeouts
 

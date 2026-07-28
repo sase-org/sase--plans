@@ -3,6 +3,10 @@ create_time: 2026-05-01 14:20:20
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [38e1760](https://github.com/sase-org/sase/commit/38e1760fb89138e3a10dece93b86302189735893) — feat: remove independent plan-chain agents
+
 # Revert Independent Plan-Chain Agents
 
 ## Goal

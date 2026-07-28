@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/agents_tab_status_grouping_fix.md](prompts/agents_tab_status_grouping_fix.md)
+- **COMMITS:**
+  - [650859c](https://github.com/sase-org/sase/commit/650859cc9be59d5d57177671ded320d407a529b6) — fix(ace): tighten BY_STATUS bucketing in Agents tab
 
 # Agents Tab BY_STATUS Grouping Fix
 

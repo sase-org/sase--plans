@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/wire_format_instructions.md](prompts/wire_format_instructions.md)
+- **COMMITS:**
+  - [a77b6fd](https://github.com/sase-org/sase/commit/a77b6fda7ab48845cb5ae36aba2998f3aa04e83e) — fix: Wire up generate_format_instructions for agent steps with output specs
 
 # Wire up `generate_format_instructions` for agent steps with output specs
 

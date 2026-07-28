@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/auto_agent_name_reuse.md](prompts/auto_agent_name_reuse.md)
+- **COMMITS:**
+  - [bae2fe0](https://github.com/sase-org/sase/commit/bae2fe080fa55fe1cd7c726773d0d414265593b6) — fix: release completed parent-tracked auto names
 
 # Fix Auto Agent Name Reuse
 

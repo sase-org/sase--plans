@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/model_alias_buckets.md](prompts/model_alias_buckets.md)
+- **AGENTS:**
+  - [bbugyi200.athena.5g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5g.md#member-code)
 
 # Plan: Model Alias Buckets in the TUI Models Panel (`,m`)
 

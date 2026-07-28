@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_word_completion.md](prompts/prompt_word_completion.md)
+- **AGENTS:**
+  - [bbugyi200.athena.cj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cj/README.md)
+  - [bbugyi200.athena.cj--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cj.md#member-code)
+- **COMMITS:**
+  - [c21db1e](https://github.com/sase-org/sase/commit/c21db1e560bcd623763eb2af150ae3c8e2f96ecf) — feat(ace): add prompt-local word completion
 
 # Plan: Prompt-local word completion fallback
 

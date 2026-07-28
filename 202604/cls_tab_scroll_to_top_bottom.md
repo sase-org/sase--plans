@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/cls_tab_scroll_to_top_bottom.md](prompts/cls_tab_scroll_to_top_bottom.md)
+- **COMMITS:**
+  - [073ac7c](https://github.com/sase-org/sase/commit/073ac7ccbb24707b211a11aba3d1ddcaec66b4ef) — feat: Support g/G scroll-to-top/bottom on CLs tab
 
 # Plan: Add `g`/`G` scroll-to-top/bottom on CLs tab
 

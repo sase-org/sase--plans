@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/configurable_slow_tool_threshold.md](prompts/configurable_slow_tool_threshold.md)
+- **AGENTS:**
+  - [bbugyi200.athena.1i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1i.md#member-code)
 
 # Configurable ACE Slow Tool-Call Threshold
 

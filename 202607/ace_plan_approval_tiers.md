@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ace_plan_approval_tiers.md](prompts/ace_plan_approval_tiers.md)
+- **AGENTS:**
+  - [bbugyi200.athena.a4.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a4.w0/README.md)
+  - [bbugyi200.athena.a4.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a4.w0.md#member-code)
+- **COMMITS:**
+  - [8ab0936](https://github.com/sase-org/sase/commit/8ab0936f13cfa11e96e70385aeb587f12dbe12bf) — fix(ace): preserve explicit plan approval tiers
 
 # Plan: Correct ACE SASE PLAN approval tiers
 

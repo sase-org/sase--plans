@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_panel_vertical_space.md](prompts/agent_panel_vertical_space.md)
+- **AGENTS:**
+  - [bbugyi200.athena.dl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dl/README.md)
+  - [bbugyi200.athena.dl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dl.md#member-code)
+- **COMMITS:**
+  - [d477a09](https://github.com/sase-org/sase/commit/d477a090f74fee4435ad1c7af565b0b3645a10fd) — fix(ace): use full height for overflowing agent panels
 
 # Plan: Use All Vertical Space for Overflowing Agent Panels
 

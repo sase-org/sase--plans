@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/host_test_suite_gate.md](prompts/host_test_suite_gate.md)
+- **AGENTS:**
+  - [bbugyi200.athena.g0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g0/README.md)
+  - [bbugyi200.athena.g0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g0.md#member-code)
+- **COMMITS:**
+  - [88c1a7b](https://github.com/sase-org/sase/commit/88c1a7b9eced3c45ab36a5673257714b6fe2c4ba) — feat(test): gate parallel suites by host capacity
 
 # Plan: Host-global test-suite concurrency gate
 

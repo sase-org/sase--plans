@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/phase_description_hints.md](prompts/phase_description_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.by](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.by/README.md)
+  - [bbugyi200.athena.by--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.by.md#member-code)
+- **COMMITS:**
+  - [c9c8131](https://github.com/sase-org/sase/commit/c9c81317859bd220dc6839167d0dfd62b71e7dfe) — feat(plan): guide phase description authoring
 
 # Plan: Phase-description authoring hints in `sase plan validate`
 

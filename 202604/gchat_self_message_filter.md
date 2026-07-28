@@ -11,6 +11,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/gchat_self_message_filter.md](prompts/gchat_self_message_filter.md)
+- **COMMITS:**
+  - [9b46994](https://github.com/sase-org/sase/commit/9b4699446de74346f5b3eb1618c5763303362586) — chore: mark gchat_self_message_filter plan as done
 
 # retired chat plugin — Stop Self-Triggering Agent Launches
 

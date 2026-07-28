@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/single_axe_instance.md](prompts/single_axe_instance.md)
+- **COMMITS:**
+  - [6c46c71](https://github.com/sase-org/sase/commit/6c46c71e4ce38ea81f8e7c1c6277590019f3a559) — fix: make axe orchestrator single-instance
 
 # Make `sase axe` Effectively Single-Instance
 

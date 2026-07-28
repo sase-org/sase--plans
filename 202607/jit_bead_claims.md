@@ -36,6 +36,10 @@ bead_id: sase-8f
 ---
 
 - **PROMPT:** [202607/prompts/jit_bead_claims.md](prompts/jit_bead_claims.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8f.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.1.md#member-code)
+  - [bbugyi200.athena.sase-8f.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.2.md#member-code)
+  - [bbugyi200.athena.sase-8f.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.3.md#member-code)
 
 # Plan: Just-in-time bead claims for launched agents
 

@@ -10,6 +10,11 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/default_override_alias_propagation.md](prompts/default_override_alias_propagation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.km.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.km.f0/README.md)
+  - [bbugyi200.athena.km.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.km.f0.md#member-code)
+- **COMMITS:**
+  - [a0b40ef](https://github.com/sase-org/sase/commit/a0b40ef37c1ec7afd8581fb31dd38ff0ca372937) — fix: propagate default overrides through alias resolution
 
 # Plan: Propagate a `default` temporary override through alias resolution
 

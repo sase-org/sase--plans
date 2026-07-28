@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/rich_epic_summary.md](prompts/rich_epic_summary.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-85.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-85.2/README.md)
+  - [bbugyi200.athena.sase-85.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-85.2.md#member-code)
+- **COMMITS:**
+  - [01c5b80](https://github.com/sase-org/sase/commit/01c5b8022662bba689d147a70fd7d2cd6c8d6c48) — feat: enrich epic clan summaries (sase-85.2)
 
 # Plan: Information-dense Rich epic clan summaries
 

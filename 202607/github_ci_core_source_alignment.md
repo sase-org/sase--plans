@@ -10,6 +10,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/github_ci_core_source_alignment.md](prompts/github_ci_core_source_alignment.md)
+- **AGENTS:**
+  - [bbugyi200.athena.9e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9e.md#member-code)
 
 # Plan: Align sase-github CI with the SASE Rust core
 

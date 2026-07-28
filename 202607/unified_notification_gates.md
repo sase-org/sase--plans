@@ -40,6 +40,8 @@ bead_id: sase-6e
 ---
 
 - **PROMPT:** [202607/prompts/unified_notification_gates.md](prompts/unified_notification_gates.md)
+- **AGENTS:**
+  - [bbugyi200.athena.research.e.final.f0--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.e.final.f0.md#member-1)
 
 # Plan: Unified command-backed notification gates
 

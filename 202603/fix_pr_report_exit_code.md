@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [ce9f001](https://github.com/sase-org/sase/commit/ce9f001abaf97eabc7eb10fcaba37c04e0caef6f) — fix: ensure pr.yml report bash step always exits zero
+
 # Fix: pr.yml report bash step exits non-zero when optional metadata is empty
 
 ## Problem

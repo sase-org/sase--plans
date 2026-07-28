@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/fix_stale_rust_extension_setup.md](prompts/fix_stale_rust_extension_setup.md)
+- **COMMITS:**
+  - [ee0336c](https://github.com/sase-org/sase/commit/ee0336cd1d7aa70cbd4d162f4938afcc44e1cef5) — fix: rebuild stale Rust extension during setup
 
 # Fix stale `sase_core_rs` setup checks
 

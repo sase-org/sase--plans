@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_bead_kwarg.md](prompts/wait_bead_kwarg.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-87.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-87.2/README.md)
+  - [bbugyi200.athena.sase-87.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.2.md#member-code)
+- **COMMITS:**
+  - [e6c865e](https://github.com/sase-org/sase/commit/e6c865e9ab838696545d21e6509a7eb5b7d612bd) — feat(xprompt): support bead waits (sase-87.2)
 
 # Plan: Add bead keyword support to wait directives
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/xprompts_memory.md](prompts/xprompts_memory.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3w.md#member-code)
 
 # Plan: Add `memory/xprompts.md` long-term memory note
 

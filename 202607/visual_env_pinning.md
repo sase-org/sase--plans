@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/visual_env_pinning.md](prompts/visual_env_pinning.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-65](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-65/README.md)
+  - [bbugyi200.athena.sase-65--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-65.md#member-code)
+- **COMMITS:**
+  - [26682ba](https://github.com/sase-org/sase/commit/26682ba376d8eaaf426e532ef6a895815da25824) — test: pin visual snapshot rendering environment (sase-65)
 
 # Plan: Pin terminal-color env and timezone for visual snapshots, then land epic sase-65
 

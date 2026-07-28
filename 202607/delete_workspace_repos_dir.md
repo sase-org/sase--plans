@@ -5,6 +5,12 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/delete_workspace_repos_dir.md](prompts/delete_workspace_repos_dir.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7q](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7q/README.md)
+  - [bbugyi200.athena.7q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.md#member-code)
+  - [bbugyi200.athena.7q--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.md#member-plan)
+- **COMMITS:**
+  - [33c02ed](https://github.com/sase-org/sase/commit/33c02ed90a44096ffbf8559ad648d3ca3e9e7de1) — fix(workspace): reset repository clones before launch
 
 # Delete the entire `sase/repos/` directory during workspace prep
 

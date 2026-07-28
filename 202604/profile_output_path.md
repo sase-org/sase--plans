@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/profile_output_path.md](prompts/profile_output_path.md)
+- **COMMITS:**
+  - [1387ac0](https://github.com/sase-org/sase/commit/1387ac00a4a9670955db7ad28eb3cc724f1b7ea4) — feat: Accept optional file path for \`sase ace --profile\`
 
 # Plan: Accept optional file path for `sase ace --profile`
 

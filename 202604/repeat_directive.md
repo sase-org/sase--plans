@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/repeat_directive.md](prompts/repeat_directive.md)
+- **COMMITS:**
+  - [bccd587](https://github.com/sase-org/sase/commit/bccd5878f7375381dc349935f4f6a6b576e9fa2b) — feat(directives): add %repeat/%N directive for running prompts multiple times
 
 # Plan: `%repeat` Directive (alias `%N`)
 

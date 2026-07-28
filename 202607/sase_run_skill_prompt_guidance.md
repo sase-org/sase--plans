@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/sase_run_skill_prompt_guidance.md](prompts/sase_run_skill_prompt_guidance.md)
+- **AGENTS:**
+  - [bbugyi200.athena.y--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.y.md#member-code)
 
 # Plan: Teach the /sase_run skill to compose better launch prompts
 

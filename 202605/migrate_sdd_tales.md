@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/migrate_sdd_tales.md](prompts/migrate_sdd_tales.md)
+- **COMMITS:**
+  - [9ea4853](https://github.com/sase-org/sase/commit/9ea4853ca5c8a396524a2bb7b164459ddcc02923) — feat: Migrate SDD plans to tales
 
 # Plan: Migrate SDD Plans To Tales
 

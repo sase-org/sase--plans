@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/reorder_artifacts_subtabs.md](prompts/reorder_artifacts_subtabs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.gr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gr/README.md)
+  - [bbugyi200.athena.gr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gr.md#member-code)
+- **COMMITS:**
+  - [0e38edf](https://github.com/sase-org/sase/commit/0e38edf56bf8fb7266362e95504b5477d7b1864f) — feat(ace): reorder Artifacts subtabs
 
 # Plan: Reorder Artifacts sub-tabs and numeric shortcuts
 

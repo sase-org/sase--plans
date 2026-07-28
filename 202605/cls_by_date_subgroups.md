@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/cls_by_date_subgroups.md](prompts/cls_by_date_subgroups.md)
+- **COMMITS:**
+  - [d4130ce](https://github.com/sase-org/sase/commit/d4130ce10977875e7b1701a23b73a62898bf7c55) — feat: add CL date subgroups
 
 # CLs BY_DATE Second-Level Grouping
 

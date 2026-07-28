@@ -56,6 +56,10 @@ bead_id: sase-8b
 ---
 
 - **PROMPT:** [202607/prompts/epic_phase_size_surfaces.md](prompts/epic_phase_size_surfaces.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8b.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.1.md#member-code)
+  - [bbugyi200.athena.sase-8b.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.2.md#member-code)
+  - [bbugyi200.athena.sase-8b.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.3.md#member-code)
 
 # Plan: Beautiful epic phase sizes across SASE surfaces
 

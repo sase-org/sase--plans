@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/folded_agent_neighbors.md](prompts/folded_agent_neighbors.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ff](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ff/README.md)
+  - [bbugyi200.athena.ff--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ff.md#member-code)
+- **COMMITS:**
+  - [b938e94](https://github.com/sase-org/sase/commit/b938e94ad0d744b3fa691b031dc5d682109ce756) — feat(tui): navigate to neighbors in folded clans
 
 # Plan: Reveal neighbors across folded clans and tribes
 

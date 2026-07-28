@@ -5,12 +5,17 @@ goal: Artifacts Chats integrates publication quarantine correctly, renders every
   state distinctly, and lands with the epic closed, Symvision clean, and its durable
   plan marked done.
 bead: sase-90
-parent: sase/repos/plans/202607/artifacts_chats_subtab.md
 create_time: 2026-07-24 21:52:38
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_sase_90.md](prompts/finish_sase_90.md)
+- **PARENT:** [202607/artifacts_chats_subtab.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifacts_chats_subtab.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-90.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-90.land/README.md)
+  - [bbugyi200.athena.sase-90.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-90.land.md#member-code)
+- **COMMITS:**
+  - [e5d953e](https://github.com/sase-org/sase/commit/e5d953eadd0b66ce4c9d8806d045048943107825) — feat(chats): expose publication quarantine provenance (sase-90)
 
 # Plan: Finish and land epic sase-90
 

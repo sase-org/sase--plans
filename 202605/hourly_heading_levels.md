@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/hourly_heading_levels.md](prompts/hourly_heading_levels.md)
+- **COMMITS:**
+  - [98fb004](https://github.com/sase-org/sase/commit/98fb0047fd55e444ce2c0dd5eaaea61d20016852) — fix: promote BY_DATE subgroup heading styles
 
 # Plan: Promote 4-hour BY_DATE windows to level-2 visual headings
 

@@ -13,6 +13,8 @@ status: wip
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_colors.md](prompts/tribe_panel_colors.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fi--code.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fi--code.f0.md#member-code)
 
 # Plan: Configurable Agents-tab tribe panel colors
 

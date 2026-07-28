@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/negative_memory_keywords.md](prompts/negative_memory_keywords.md)
+- **COMMITS:**
+  - [a883319](https://github.com/sase-org/sase/commit/a88331983706505bc9ee14c7083ebf8b33c13f47) — feat: support negative (\`\!\`-prefixed) keywords in memory xprompts
 
 # Plan: Negative Keyword Matches for Memory XPrompts
 

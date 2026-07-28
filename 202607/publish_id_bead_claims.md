@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/publish_id_bead_claims.md](prompts/publish_id_bead_claims.md)
+- **AGENTS:**
+  - [bbugyi200.athena.lm](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lm/README.md)
+  - [bbugyi200.athena.lm--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lm.md#member-code)
+- **COMMITS:**
+  - [7ba445a](https://github.com/sase-org/sase/commit/7ba445a4514e0562bd2535c7d8482c1fc7b34cf6) — fix(beads): publish runner claim transitions synchronously
 
 # Publish `%id(bead=...)` claim transitions
 

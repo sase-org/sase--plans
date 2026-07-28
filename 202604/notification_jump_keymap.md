@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/notification_jump_keymap.md](prompts/notification_jump_keymap.md)
+- **COMMITS:**
+  - [83b89e9](https://github.com/sase-org/sase/commit/83b89e9dc7594ea3e0037b12d10208b0c5c34ec9) — feat: add notification jump hints
 
 # Add apostrophe jump hints to the notification panel
 

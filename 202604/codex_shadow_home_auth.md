@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/codex_shadow_home_auth.md](prompts/codex_shadow_home_auth.md)
+- **COMMITS:**
+  - [f907b4c](https://github.com/sase-org/sase/commit/f907b4c5183e4192f0a74e749c44be775cc936da) — fix: preserve auth across nested shadow homes
 
 # Plan: Fix Codex Auth Loss From Nested Shadow Homes
 

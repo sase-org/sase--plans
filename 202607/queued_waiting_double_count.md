@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_waiting_double_count.md](prompts/queued_waiting_double_count.md)
+- **AGENTS:**
+  - [bbugyi200.athena.kh.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kh.f2/README.md)
+  - [bbugyi200.athena.kh.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kh.f2.md#member-code)
+- **COMMITS:**
+  - [b1b5db1](https://github.com/sase-org/sase/commit/b1b5db1fd7392a731ffdf7ec3c0fb848a7489498) — fix(ace): exclude queued agents from waiting counts
 
 # Stop double counting globally queued agents as waiting agents
 

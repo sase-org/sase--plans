@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fakey_marker_collision_test_and_close_epic.md](prompts/fakey_marker_collision_test_and_close_epic.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-5o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5o.md#member-code)
 
 # Plan: Add the missing fakey marker-collision regression test and close the sase-5o epic
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/prompt_history_project_fix.md](prompts/prompt_history_project_fix.md)
+- **COMMITS:**
+  - [f142759](https://github.com/sase-org/sase/commit/f1427599e79dd830142e962c02fcfefe967db8fd) — fix: Save prompt history after VCS resolution so project/branch are correct
 
 # Fix: Prompt history saves wrong project for VCS-tagged home-mode prompts
 

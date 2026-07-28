@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/ace_config_cache.md](prompts/ace_config_cache.md)
+- **COMMITS:**
+  - [59bdafd](https://github.com/sase-org/sase/commit/59bdafdc21736771bd48b693bb3f6027a0333a8e) — perf(ace): cache merged-config and mentor profiles
 
 # Cache merged-config / mentor-profile loads to speed up `sase ace` TUI tab switching
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/llm_override_indicator.md](prompts/llm_override_indicator.md)
+- **COMMITS:**
+  - [9a518cc](https://github.com/sase-org/sase/commit/9a518cc8a38281be9a9b04d05678ef31890c6d5a) — feat: show active LLM override in ACE top bar
 
 # Plan: Active LLM Override Indicator
 

@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202603/prompts/resolve_agent_ref_display.md](prompts/resolve_agent_ref_display.md)
+- **COMMITS:**
+  - [f041430](https://github.com/sase-org/sase/commit/f041430d45ef08059e9a2f9b7767267863057468) — fix: Resolve @name agent refs before VCS pattern matching in TUI
 
 # Plan: Fix ChangeSpec display for `#gh:@d` agent references
 

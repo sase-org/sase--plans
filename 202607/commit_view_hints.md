@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/commit_view_hints.md](prompts/commit_view_hints.md)
+- **AGENTS:**
+  - [bbugyi200.athena.3o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3o.md#member-code)
 
 # Plan: View a Commit's Message + Pretty Diff via the `v` Keymap (Agents tab)
 

@@ -3,6 +3,10 @@ create_time: 2026-04-27 12:25:18
 status: done
 tier: tale
 ---
+
+- **COMMITS:**
+  - [7a177fa](https://github.com/sase-org/sase/commit/7a177fa17b122dfed0caf9a6a0023cbbd76702aa) — chore: pin just setup in CI
+
 # Fix GitHub Actions just Setup Failure
 
 ## Problem

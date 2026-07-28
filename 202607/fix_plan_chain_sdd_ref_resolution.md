@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/fix_plan_chain_sdd_ref_resolution.md](prompts/fix_plan_chain_sdd_ref_resolution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.24--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.24.md#member-code)
 
 # Plan: Fix plan-chain crash when the SDD store lives under the primary repo
 

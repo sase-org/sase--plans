@@ -14,6 +14,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_panel_display_config.md](prompts/tribe_panel_display_config.md)
+- **AGENTS:**
+  - [bbugyi200.athena.fi](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fi/README.md)
+  - [bbugyi200.athena.fi--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fi.md#member-code)
+- **COMMITS:**
+  - [aefb7a7](https://github.com/sase-org/sase/commit/aefb7a7a3b3ae6cfb28d22025d39cccd5f4e38ca) — feat(ace): configure tribe panel displays
 
 # Plan: Per-tribe Agents-tab panel icons and initial-expansion config
 

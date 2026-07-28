@@ -5,6 +5,12 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/bulk_kill_edit_waiting_name_reuse.md](prompts/bulk_kill_edit_waiting_name_reuse.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8n](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8n/README.md)
+  - [bbugyi200.athena.8n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8n.md#member-code)
+  - [bbugyi200.athena.8n--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8n.md#member-plan-0)
+- **COMMITS:**
+  - [05ef506](https://github.com/sase-org/sase/commit/05ef5069984b6a42023bb565411e58cb677c4934) — fix(tui): preserve agent names in bulk kill-and-edit
 
 # Ensure marked-agent kill-and-edit preserves explicit names
 

@@ -4,12 +4,14 @@ title: Define capitalized snippet composition in sase-core
 goal: Provide one shared, metadata-aware capitalized snippet composition contract
   to Rust, Python, and the native LSP fallback.
 bead: sase-8u.1
-parent: sase/repos/plans/202607/capitalized_snippet_aliases.md
 create_time: 2026-07-23 08:15:37
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_core.md](prompts/capitalized_snippet_core.md)
+- **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8u.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.1.md#member-code)
 
 # Define capitalized snippet composition in sase-core
 

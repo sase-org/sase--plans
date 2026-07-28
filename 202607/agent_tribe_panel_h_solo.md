@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/agent_tribe_panel_h_solo.md](prompts/agent_tribe_panel_h_solo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ej](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ej/README.md)
+  - [bbugyi200.athena.ej--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ej.md#member-code)
+- **COMMITS:**
+  - [04a7254](https://github.com/sase-org/sase/commit/04a725461b302838c641abfe759083c4a0b9d468) — feat(ace): isolate selected tribe panel with capital H
 
 # Plan: Make H isolate the selected agent tribe panel
 

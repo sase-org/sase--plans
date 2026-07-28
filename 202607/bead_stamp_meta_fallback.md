@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_stamp_meta_fallback.md](prompts/bead_stamp_meta_fallback.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8h.1.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1.w1/README.md)
+  - [bbugyi200.athena.sase-8h.1.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.w1.md#member-code)
+- **COMMITS:**
+  - [3e06256](https://github.com/sase-org/sase/commit/3e06256aa6f65243bb424b91b8ed18ab865c5e11) — fix: preserve proposal associations from agent metadata
 
 # Plan: Stamp proposed plans from agent metadata, not popped env
 

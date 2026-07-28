@@ -4,12 +4,17 @@ title: Finish and land the hidden agents sidecar epic
 goal: Epic sase-8k is fully integrated with intervening work, verified end to end,
   closed, Symvision-clean, and marked done.
 bead: sase-8k
-parent: sase/repos/plans/202607/agents_sidecar_repo.md
 create_time: 2026-07-22 17:12:26
 status: done
 ---
 
 - **PROMPT:** [202607/prompts/finish_agents_sidecar_epic.md](prompts/finish_agents_sidecar_epic.md)
+- **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8k.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.land/README.md)
+  - [bbugyi200.athena.sase-8k.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.land.md#member-code)
+- **COMMITS:**
+  - [61395b8](https://github.com/sase-org/sase/commit/61395b8ab1fa2f2de8158f677abd2ae9017d4b6d) — fix(agents): normalize machine-hood presentation (sase-8k)
 
 # Finish and land the hidden agents sidecar epic
 

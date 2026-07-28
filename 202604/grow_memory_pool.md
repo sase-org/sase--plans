@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/grow_memory_pool.md](prompts/grow_memory_pool.md)
+- **COMMITS:**
+  - [2576376](https://github.com/sase-org/sase/commit/2576376c24c5de06e43c140b3bf1b3e499602a3e) — feat: Add 5 new long-term dynamic memory files
 
 # Plan: Grow Dynamic Memory Pool
 

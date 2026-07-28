@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [30bee2b](https://github.com/sase-org/sase/commit/30bee2b882ecb903f0d03db4773b228885222f80) — feat: Add approve-with-options modal for plan approval
+
 # Plan: Approve with Options Modal
 
 ## Problem

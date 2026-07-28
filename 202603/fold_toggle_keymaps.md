@@ -4,6 +4,9 @@ status: done
 tier: tale
 ---
 
+- **COMMITS:**
+  - [523361a](https://github.com/sase-org/sase/commit/523361a1cb805948d50054b61f75e44f677997de) — feat: Add zC/zH/zM/zT per-section toggle keymaps to fold mode
+
 # Plan: Add `zC`, `zH`, `zM`, `zT` per-section toggle keymaps
 
 ## Context

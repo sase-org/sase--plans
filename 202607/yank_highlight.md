@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/yank_highlight.md](prompts/yank_highlight.md)
+- **AGENTS:**
+  - [bbugyi200.athena.8b.f0.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b.f0.w1/README.md)
+  - [bbugyi200.athena.8b.f0.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.f0.w1.md#member-code)
+- **COMMITS:**
+  - [7bc4ff3](https://github.com/sase-org/sase/commit/7bc4ff38f5e4943c52e755ec069cc48aeb1bd4b3) — feat(tui): flash yanked prompt text
 
 # Plan: Flash-highlight yanked text in the prompt input widget
 

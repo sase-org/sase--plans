@@ -5,6 +5,11 @@ tier: tale
 ---
 
 - **PROMPT:** [202607/prompts/auto_id_separator.md](prompts/auto_id_separator.md)
+- **AGENTS:**
+  - [bbugyi200.athena.7o](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7o/README.md)
+  - [bbugyi200.athena.7o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7o.md#member-code)
+- **COMMITS:**
+  - [b5a5cfb](https://github.com/sase-org/sase/commit/b5a5cfb659b7f08ceefc7b37a858caa2f20133fe) — feat\!: adopt conditional separators for derived agent IDs
 
 # Generalized `@` Auto-ID Separators
 

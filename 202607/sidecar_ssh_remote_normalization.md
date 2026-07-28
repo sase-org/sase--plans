@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sidecar_ssh_remote_normalization.md](prompts/sidecar_ssh_remote_normalization.md)
+- **AGENTS:**
+  - [bbugyi200.athena.92](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.92/README.md)
+  - [bbugyi200.athena.92--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.92.md#member-code)
+- **COMMITS:**
+  - [fc3fc55](https://github.com/sase-org/sase/commit/fc3fc552c09b3b78c30fdb0765eaf02ea70af32d) — fix: normalize GitHub sidecar origins to SSH
 
 # Plan: Normalize GitHub Sidecar Remotes to SSH
 

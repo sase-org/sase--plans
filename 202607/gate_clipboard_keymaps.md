@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/gate_clipboard_keymaps.md](prompts/gate_clipboard_keymaps.md)
+- **AGENTS:**
+  - [bbugyi200.athena.k0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k0/README.md)
+  - [bbugyi200.athena.k0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k0.md#member-code)
+- **COMMITS:**
+  - [9c40093](https://github.com/sase-org/sase/commit/9c400939a9202481f53238ea9410d2442d3632b4) — fix(tui): align plan gate clipboard shortcuts
 
 # Plan
 

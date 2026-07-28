@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sdd_sidecar_selfheal.md](prompts/sdd_sidecar_selfheal.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.5/README.md)
+  - [bbugyi200.athena.sase-8g.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.5.md#member-code)
+- **COMMITS:**
+  - [e7c7680](https://github.com/sase-org/sase/commit/e7c76807064bd53ea6fa97661c37d388d82fa1f8) — fix(sdd): self-heal wedged sidecar clones (sase-8g.5)
 
 # Plan: Self-heal wedged SDD sidecar clones
 

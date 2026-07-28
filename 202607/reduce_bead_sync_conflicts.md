@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/reduce_bead_sync_conflicts.md](prompts/reduce_bead_sync_conflicts.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-8g.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.7/README.md)
+  - [bbugyi200.athena.sase-8g.7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.7.md#member-code)
+- **COMMITS:**
+  - [24d42d3](https://github.com/sase-org/sase/commit/24d42d3813a12dd834e2766cffbd107136fa6513) — fix(beads): repair concurrent sync integrations (sase-8g.7)
 
 # Plan: Reduce bead stream sync conflicts
 

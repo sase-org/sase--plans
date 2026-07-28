@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/jump_hints_for_folded_banners.md](prompts/jump_hints_for_folded_banners.md)
+- **COMMITS:**
+  - [2ec92fa](https://github.com/sase-org/sase/commit/2ec92fa17485ac908bcfb1fa52e7470d0f904558) — feat(ace): paint jump hints on folded group banners
 
 # Jump hints for folded headings on the Agents tab
 

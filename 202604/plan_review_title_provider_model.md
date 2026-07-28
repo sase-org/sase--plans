@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202604/prompts/plan_review_title_provider_model.md](prompts/plan_review_title_provider_model.md)
+- **COMMITS:**
+  - [f4a6c65](https://github.com/sase-org/sase/commit/f4a6c65f6af25e92059f079293318f5c1701a5b7) — feat: Show LLM provider/model in Plan Review modal title
 
 # Plan: Show LLM Provider / Model in Plan Review Panel Title
 

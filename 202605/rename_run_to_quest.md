@@ -5,6 +5,8 @@ tier: tale
 ---
 
 - **PROMPT:** [202605/prompts/rename_run_to_quest.md](prompts/rename_run_to_quest.md)
+- **COMMITS:**
+  - [ace8690](https://github.com/sase-org/sase/commit/ace8690747ccac3f4910e2ba9c4595fe943fd3a3) — chore: mark run-to-quest plan done
 
 # Rename Plan Approval Run Option To Quest
 
