@@ -6,7 +6,7 @@ goal:
   crashing `sase ace`, the duplicated `build_wait_lanes` call site that caused the regression is collapsed into one, and
   a regression test covers the path.
 create_time: 2026-07-28 18:20:17
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_wait_lane_crash.md](prompts/queued_wait_lane_crash.md)
