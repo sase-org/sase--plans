@@ -5,7 +5,7 @@ goal:
   The ci_watch chop proposes debounced CI-fix agents whenever a mature red repo has no live ci_fix hood agent, and
   launched fix agents defer to interactive work via wait_runners instead of a never-satisfiable zero-agents gate.
 create_time: 2026-07-28 18:03:46
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ci_watch_fix_gate.md](prompts/ci_watch_fix_gate.md)
