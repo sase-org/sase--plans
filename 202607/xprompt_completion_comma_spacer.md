@@ -5,7 +5,7 @@ goal:
   Completing a no-input or optional-only xprompt and immediately typing a comma produces a punctuation-tight reference
   such as `#foo,` without regressing optional-argument colon completion or ordinary user-authored spacing.
 create_time: 2026-07-28 17:36:50
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_completion_comma_spacer.md](prompts/xprompt_completion_comma_spacer.md)
