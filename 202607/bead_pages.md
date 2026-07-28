@@ -110,7 +110,7 @@ phases:
 
     '
 create_time: 2026-07-28 14:20:20
-status: wip
+status: done
 bead_id: sase-ai
 ---
 
