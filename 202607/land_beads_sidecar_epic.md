@@ -51,6 +51,7 @@ phases:
     plan files done.'
 create_time: 2026-07-28 07:35:58
 status: wip
+bead_id: sase-ab
 ---
 
 # Plan: Finish and land the dedicated beads sidecar (sase-a8)
