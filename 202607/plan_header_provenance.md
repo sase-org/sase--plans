@@ -63,6 +63,8 @@ status: wip
 bead_id: sase-ag
 ---
 
+- **PROMPT:** [202607/prompts/plan_header_provenance.md](prompts/plan_header_provenance.md)
+
 # Plan: Plan-file provenance header block
 
 ## Goal
@@ -96,7 +98,7 @@ create_time: 2026-07-22 15:14:56
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_sync_engine.md](prompts/agents_sync_engine.md)
+* **PROMPT:** [202607/prompts/agents_sync_engine.md](prompts/agents_sync_engine.md)
 - **PARENT:**
   [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
 - **AGENTS:**
