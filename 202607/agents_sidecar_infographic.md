@@ -6,7 +6,7 @@ goal: "Every agents sidecar initialized or refreshed by sase repo init includes 
 
   "
 create_time: 2026-07-28 12:52:40
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/agents_sidecar_infographic.md](prompts/agents_sidecar_infographic.md)
