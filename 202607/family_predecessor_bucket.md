@@ -7,7 +7,7 @@ goal: A sequential family's non-final member stops claiming an in-flight bucket 
   sase-ae.6 FAMILY MEMBERS roster renders member 0 with the Done glyph, and the rule
   closes the whole class instead of one more status.
 create_time: 2026-07-28 10:49:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/family_predecessor_bucket.md](prompts/family_predecessor_bucket.md)
