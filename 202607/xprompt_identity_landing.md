@@ -60,6 +60,8 @@ status: wip
 bead_id: sase-ac.6
 ---
 
+- **PROMPT:** [202607/prompts/xprompt_identity_landing.md](prompts/xprompt_identity_landing.md)
+
 # Plan: Finish canonical xprompt project identity and land sase-ac
 
 ## Context
