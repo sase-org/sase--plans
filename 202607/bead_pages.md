@@ -111,6 +111,7 @@ phases:
     '
 create_time: 2026-07-28 14:20:20
 status: wip
+bead_id: sase-ai
 ---
 
 # Plan: Published bead pages and the `SASE_BEAD` commit tag
