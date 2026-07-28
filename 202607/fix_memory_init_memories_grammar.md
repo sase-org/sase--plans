@@ -4,7 +4,7 @@ title: Fix the grammar in generated memory instructions
 goal: Default managed agent documents use correct plural subject-verb agreement and
   remain synchronized and drift-free.
 create_time: 2026-07-28 06:55:36
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_memory_init_memories_grammar.md](prompts/fix_memory_init_memories_grammar.md)
