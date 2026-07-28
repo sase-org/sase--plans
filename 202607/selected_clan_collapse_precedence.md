@@ -5,7 +5,7 @@ goal: Uppercase H first fully collapses only the agent clan that encloses the Ag
   selection, and a later press fully collapses every remaining open clan in that same
   grouping scope before the grouping banner.
 create_time: 2026-07-28 09:52:21
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/selected_clan_collapse_precedence.md](prompts/selected_clan_collapse_precedence.md)
