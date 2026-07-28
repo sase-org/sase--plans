@@ -5,7 +5,7 @@ goal:
   The ACE ARTIFACTS section names sidecar commit and delta groups by their sidecar role (plans, research, beads),
   matching every other repo surface, and the `sdd` literal no longer appears as a repository label.
 create_time: 2026-07-28 13:18:38
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/sidecar_repo_labels.md](prompts/sidecar_repo_labels.md)
