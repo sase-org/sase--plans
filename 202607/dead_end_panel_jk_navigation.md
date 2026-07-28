@@ -5,7 +5,7 @@ goal:
   On the Agents tab, pressing `j` / `k` while a row-focused tribe panel has no other selectable row selects the next /
   previous whole tribe panel instead of doing nothing.
 create_time: 2026-07-28 15:52:11
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/dead_end_panel_jk_navigation.md](prompts/dead_end_panel_jk_navigation.md)
