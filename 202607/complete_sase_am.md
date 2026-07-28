@@ -6,7 +6,7 @@ goal:
   cleanly with its original plan marked done.
 bead: sase-am
 create_time: 2026-07-28 19:37:30
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/complete_sase_am.md](prompts/complete_sase_am.md)
