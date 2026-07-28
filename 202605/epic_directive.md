@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 13:12:52
 status: done
-prompt: 202605/prompts/epic_directive.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_directive.md](prompts/epic_directive.md)
+
 # Plan: `%epic` Directive and Epic Auto-Approval
 
 ## Goal

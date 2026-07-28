@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 00:57:01
 status: wip
-prompt: 202605/prompts/refresh_docs_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/refresh_docs_validation.md](prompts/refresh_docs_validation.md)
+
 # Plan: Fix `refresh_docs` Workflow Validation
 
 ## Problem

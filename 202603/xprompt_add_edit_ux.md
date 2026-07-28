@@ -1,10 +1,11 @@
 ---
 bead_id: sase-5
 status: done
-prompt: 202603/prompts/xprompt_add_edit_ux.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/xprompt_add_edit_ux.md](prompts/xprompt_add_edit_ux.md)
 
 # Plan: Improve XPrompt Add/Edit UX in `sase ace` TUI
 

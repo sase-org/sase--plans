@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 03:54:11
 status: wip
-prompt: 202604/prompts/fix_agent_image_file_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_agent_image_file_panel.md](prompts/fix_agent_image_file_panel.md)
+
 # Fix Agent Image File Panel Cycling
 
 ## Problem

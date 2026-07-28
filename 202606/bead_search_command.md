@@ -3,8 +3,10 @@ create_time: 2026-06-18 08:10:58
 bead_id: sase-4w
 tier: epic
 status: done
-prompt: 202606/prompts/bead_search_command.md
 ---
+
+- **PROMPT:** [202606/prompts/bead_search_command.md](prompts/bead_search_command.md)
+
 # Plan: `sase bead search` — full-text search over beads
 
 ## Purpose

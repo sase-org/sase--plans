@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 15:46:07
 status: done
-prompt: 202605/prompts/agents_failed_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_failed_count.md](prompts/agents_failed_count.md)
+
 # Plan: Agents Failed Count And Zero-Count Noise
 
 ## Goal

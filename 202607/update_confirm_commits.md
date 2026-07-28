@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 14:24:14
 status: done
-prompt: 202607/prompts/update_confirm_commits.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/update_confirm_commits.md](prompts/update_confirm_commits.md)
+
 # Plan: Show All Repo Commit Groups in Update Confirmation
 
 ## Problem

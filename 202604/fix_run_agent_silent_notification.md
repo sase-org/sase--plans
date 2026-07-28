@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:54:11
 status: done
-prompt: 202604/prompts/fix_run_agent_silent_notification.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_run_agent_silent_notification.md](prompts/fix_run_agent_silent_notification.md)
+
 # Fix: Run-agent notifications fire for hidden / auto-dismissed agents
 
 ## Problem

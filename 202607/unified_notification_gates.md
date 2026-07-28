@@ -39,6 +39,8 @@ status: done
 bead_id: sase-6e
 ---
 
+- **PROMPT:** [202607/prompts/unified_notification_gates.md](prompts/unified_notification_gates.md)
+
 # Plan: Unified command-backed notification gates
 
 ## Goal and product boundary

@@ -1,10 +1,4 @@
----
-plan: 202605/complete_bead_model_routing.md
----
-
-
-
-
+- **PLAN:** [../202605/complete_bead_model_routing.md](../complete_bead_model_routing.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-2o is complete?
 

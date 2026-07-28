@@ -1,6 +1,5 @@
----
-plan: 202605/agent_families_2.md
----
+- **PLAN:** [../202605/agent_families_2.md](../agent_families_2.md)
+
  I want to improve and formalize the way that we handle creating new and renaming old agents when plans are
 approved, feedback is made on a plan, or a question is answered. Can you help me implement this new concept of "agent
 families" that I have described in the sections below?  

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 11:29:59
 status: done
-prompt: 202606/prompts/fix_wait_completion_comma.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_wait_completion_comma.md](prompts/fix_wait_completion_comma.md)
+
 # Fix Wait-Agent Completion After Prose Commas
 
 ## Root Cause

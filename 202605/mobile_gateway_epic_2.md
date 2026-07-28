@@ -1,11 +1,12 @@
 ---
 create_time: 2026-05-06 11:21:20
 status: done
-prompt: 202605/prompts/mobile_gateway_epic_2.md
 bead_id: sase-26.2
 legend_bead_id: sase-26
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/mobile_gateway_epic_2.md](prompts/mobile_gateway_epic_2.md)
 
 # Plan: Mobile MVP Epic 2 - Notification Inbox, Pending Actions, And Attachments
 

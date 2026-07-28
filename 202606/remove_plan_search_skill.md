@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 10:43:56
 status: done
-prompt: 202606/prompts/remove_plan_search_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_plan_search_skill.md](prompts/remove_plan_search_skill.md)
+
 # Remove unintended plan-search skill
 
 ## Goal

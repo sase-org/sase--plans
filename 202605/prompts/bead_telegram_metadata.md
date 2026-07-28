@@ -1,6 +1,5 @@
----
-plan: 202605/bead_telegram_metadata.md
----
+- **PLAN:** [../202605/bead_telegram_metadata.md](../bead_telegram_metadata.md)
+
  The user sent an image via Telegram with the following caption:
 
  It looks like the /beads telegram slash command is broken (I know the beads are open right now). Also, I haven't been seeing bead descriptions in agent completion messages from telegram or in the agent metadata panel in the TUI. Can you help me dig into the root calls of these issues and solve the problem? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 16:49:33
 status: wip
-prompt: 202607/prompts/finish_toolong_epic.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/finish_toolong_epic.md](prompts/finish_toolong_epic.md)
+
 # Plan: Finish Epic sase-5r — Publish `bbugyi-toolong` v0.1.0 and Close Out
 
 ## Context

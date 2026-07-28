@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 15:54:01
 status: done
-prompt: 202605/prompts/always_show_artifact_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/always_show_artifact_panel.md](prompts/always_show_artifact_panel.md)
+
 # Always Show Agent Artifact Panel
 
 ## Context

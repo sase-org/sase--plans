@@ -1,6 +1,5 @@
----
-plan: 202605/agent_artifacts_metadata_field.md
----
+- **PLAN:** [../202605/agent_artifacts_metadata_field.md](../agent_artifacts_metadata_field.md)
+
  When we implemented the artifact panel epic (see recent, related git commits), we messed up the user
 requirements for the "ARTIFACTS" field in the agent metadata panel on the "Agents" tab of the `sase ace` TUI. Namely:
 

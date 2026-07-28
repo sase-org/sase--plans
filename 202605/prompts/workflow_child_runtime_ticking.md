@@ -1,6 +1,5 @@
----
-plan: 202605/workflow_child_runtime_ticking.md
----
+- **PLAN:** [../202605/workflow_child_runtime_ticking.md](../workflow_child_runtime_ticking.md)
+
  This agent's runtime is not updating every second like it should. Also, the "1/1-code" agent child step entry should also have a runtime since "TALE APPROVED" means the coder agent is running (implementing the approved tale). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
   
 

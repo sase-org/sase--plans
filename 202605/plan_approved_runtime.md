@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 10:30:42
 status: done
-prompt: 202605/prompts/plan_approved_runtime.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_approved_runtime.md](prompts/plan_approved_runtime.md)
+
 # Plan: Show Runtime for PLAN APPROVED Plan-Chain Agents
 
 ## Problem

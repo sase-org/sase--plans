@@ -1,6 +1,5 @@
----
-plan: 202607/sdd_prompt_attachment_dedup.md
----
+- **PLAN:** [../202607/sdd_prompt_attachment_dedup.md](../sdd_prompt_attachment_dedup.md)
+
 The user sent an image via Telegram with the following caption:
 
  It looks like some markdown files are being attached twice to agent completion messages in Telegram. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the

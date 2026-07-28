@@ -8,8 +8,9 @@ goal: 'Parked runner-slot agents respond correctly to Run Now, preserve authored
   '
 create_time: 2026-07-20 16:37:32
 status: done
-prompt: 202607/prompts/runner_slot_wait_regressions.md
 ---
+
+- **PROMPT:** [202607/prompts/runner_slot_wait_regressions.md](prompts/runner_slot_wait_regressions.md)
 
 # Plan: Fix runner-slot wait regressions
 

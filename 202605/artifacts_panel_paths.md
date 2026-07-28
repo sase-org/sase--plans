@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 12:01:04
 status: done
-prompt: 202605/prompts/artifacts_panel_paths.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifacts_panel_paths.md](prompts/artifacts_panel_paths.md)
+
 # Artifacts Panel Path Display Improvements
 
 ## Goal

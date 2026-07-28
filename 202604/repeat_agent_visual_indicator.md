@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-20 19:10:00
 status: new
-prompt: 202604/prompts/repeat_agent_visual_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_agent_visual_indicator.md](prompts/repeat_agent_visual_indicator.md)
 
 # Plan: Visual Indicator for Repeat Agents in the Agents Tab
 

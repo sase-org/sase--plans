@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 16:22:16
 status: done
-prompt: 202607/prompts/hold_failed_agent_workspaces.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/hold_failed_agent_workspaces.md](prompts/hold_failed_agent_workspaces.md)
+
 # Hold Failed-Agent Workspaces Until Dismissal
 
 ## Problem

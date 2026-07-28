@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-07 08:55:25
 status: done
-prompt: 202606/prompts/wait_plan_chain_premature_ready.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/wait_plan_chain_premature_ready.md](prompts/wait_plan_chain_premature_ready.md)
+
 # Plan: Stop wait-dependencies from resolving on an unfinished plan chain
 
 ## Problem / Product Context

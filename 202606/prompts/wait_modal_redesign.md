@@ -1,6 +1,5 @@
----
-plan: 202606/wait_modal_redesign.md
----
+- **PLAN:** [../202606/wait_modal_redesign.md](../wait_modal_redesign.md)
+
  #fork:05n.w1 Can you now help me migrate the panel that is triggered by the `w` keymap on the Agents tab currently to something much nicer?
 
 - This new panel should be a pop-up instead of taking over the entire screen and it should have support for the new time keyword input.

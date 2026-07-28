@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 19:55:33
 status: done
-prompt: 202605/prompts/sibling_jump_previous_points.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sibling_jump_previous_points.md](prompts/sibling_jump_previous_points.md)
+
 # Treat sibling agent jumps as entry-jump previous points
 
 ## Context

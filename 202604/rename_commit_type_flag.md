@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-09 15:22:54
 status: done
-prompt: 202604/prompts/rename_commit_type_flag.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rename_commit_type_flag.md](prompts/rename_commit_type_flag.md)
 
 # Plan: Rename `sase commit -M|--method` to `-t|--type`
 

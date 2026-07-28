@@ -2,9 +2,11 @@
 create_time: 2026-04-28 20:29:35
 status: done
 bead_id: sase-13
-prompt: 202604/prompts/deltas_field.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/deltas_field.md](prompts/deltas_field.md)
+
 # Plan: DELTAS ChangeSpec Field
 
 ## Overview

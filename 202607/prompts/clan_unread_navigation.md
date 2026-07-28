@@ -1,6 +1,5 @@
----
-plan: 202607/clan_unread_navigation.md
----
+- **PLAN:** [../202607/clan_unread_navigation.md](../clan_unread_navigation.md)
+
  Can you help me add support for the unread indicator to agent clans (see the sase-6n epic bead for context)?
 
 - Agents/agent families that live under clans show their unread notification when the clan is expanded but when the clan is collapsed the clan has no unread indicator.

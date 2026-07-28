@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 16:02:40
 status: done
-prompt: 202605/prompts/artifact_modal_open_all.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_modal_open_all.md](prompts/artifact_modal_open_all.md)
+
 # Plan: Add Artifact Modal Open-All Key
 
 ## Goal

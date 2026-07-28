@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 16:33:18
 status: done
-prompt: 202607/prompts/generated_media_default_artifacts.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/generated_media_default_artifacts.md](prompts/generated_media_default_artifacts.md)
+
 # Plan: Generated Media Default Artifacts
 
 ## Goal

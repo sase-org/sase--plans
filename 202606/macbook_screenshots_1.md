@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 19:23:26
 status: done
-prompt: 202606/prompts/macbook_screenshots_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/macbook_screenshots_1.md](prompts/macbook_screenshots_1.md)
+
 # Plan: MacBook Screenshot Bridge for SASE Prompts
 
 ## Objective

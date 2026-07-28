@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 12:38:30
 status: done
-prompt: 202605/prompts/multi_artifact_viewing.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/multi_artifact_viewing.md](prompts/multi_artifact_viewing.md)
+
 # Multi-Artifact Viewing Plan
 
 ## Goal

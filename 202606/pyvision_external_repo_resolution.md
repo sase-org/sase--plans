@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-08 10:56:54
 status: done
-prompt: 202606/prompts/pyvision_external_repo_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/pyvision_external_repo_resolution.md](prompts/pyvision_external_repo_resolution.md)
+
 # Plan: Fix pyvision External Repo Resolution
 
 ## Context

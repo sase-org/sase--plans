@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 13:36:47
 status: done
-prompt: 202603/prompts/snippet_tab_priority.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/snippet_tab_priority.md](prompts/snippet_tab_priority.md)
 
 # Fix: Snippet Expansion Takes Priority Over Tabstop Advance
 

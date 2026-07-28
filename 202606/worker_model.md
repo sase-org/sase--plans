@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-09 20:36:35
 status: done
-prompt: 202606/prompts/worker_model.md
 bead_id: sase-4k
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/worker_model.md](prompts/worker_model.md)
+
 # Worker Model: A Secondary Default LLM Model for Delegated Work
 
 ## Problem

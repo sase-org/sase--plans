@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 12:55:27
 status: done
-prompt: 202607/prompts/models_panel_alias_references.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/models_panel_alias_references.md](prompts/models_panel_alias_references.md)
+
 # Models Panel: Surface Alias-to-Alias References
 
 ## Problem

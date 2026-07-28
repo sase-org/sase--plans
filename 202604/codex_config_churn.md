@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 18:36:55
 status: done
-prompt: 202604/prompts/codex_config_churn.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/codex_config_churn.md](prompts/codex_config_churn.md)
+
 # Plan: Stop Codex from Dirtying Managed Config
 
 ## Problem

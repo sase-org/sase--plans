@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 09:10:26
 status: done
-prompt: 202604/prompts/tui_activity_tmp_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/tui_activity_tmp_race.md](prompts/tui_activity_tmp_race.md)
+
 # Plan: Fix cross-process race in `tui_activity` atomic writes + isolate TUI tests from `~/.sase/`
 
 ## Goal

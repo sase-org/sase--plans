@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:07:50
 status: done
-prompt: 202606/prompts/plan_list_recent_approvals.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plan_list_recent_approvals.md](prompts/plan_list_recent_approvals.md)
+
 # Fix `sase plan list` Recent Approvals
 
 ## Problem

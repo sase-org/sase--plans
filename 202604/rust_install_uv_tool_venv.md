@@ -1,9 +1,10 @@
 ---
 status: draft
 create_time: 2026-04-29 11:42:50
-prompt: 202604/prompts/rust_install_uv_tool_venv.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rust_install_uv_tool_venv.md](prompts/rust_install_uv_tool_venv.md)
 
 # Plan: Install `sase_core_rs` into the user's installed sase venv
 

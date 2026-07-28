@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 14:03:13
 status: done
-prompt: 202605/prompts/sase_3a_remaining_pyvision_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_3a_remaining_pyvision_cleanup.md](prompts/sase_3a_remaining_pyvision_cleanup.md)
+
 # Plan: Finish sase-3a Pyvision Cleanup Verification
 
 ## Context

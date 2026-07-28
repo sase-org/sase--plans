@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 11:31:07
 status: done
-prompt: 202603/prompts/fix_reply_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_reply_timestamps.md](prompts/fix_reply_timestamps.md)
 
 # Fix AGENT REPLY Per-Chunk Timestamps for All Model Runtimes
 

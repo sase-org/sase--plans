@@ -8,8 +8,9 @@ goal: 'ACE users can press the configured fold prefix followed by a valid one-ba
   '
 create_time: 2026-07-19 07:31:24
 status: done
-prompt: 202607/prompts/direct_numeric_fold_levels.md
 ---
+
+- **PROMPT:** [202607/prompts/direct_numeric_fold_levels.md](prompts/direct_numeric_fold_levels.md)
 
 # Plan: Direct numeric fold-level keymaps
 

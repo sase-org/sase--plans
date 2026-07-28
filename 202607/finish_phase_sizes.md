@@ -41,6 +41,8 @@ status: done
 bead_id: sase-8w.7
 ---
 
+- **PROMPT:** [202607/prompts/finish_phase_sizes.md](prompts/finish_phase_sizes.md)
+
 # Plan: Finish and land five-size epic phase support
 
 ## Audit context and invariants

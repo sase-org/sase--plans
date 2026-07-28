@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 16:16:08
 status: done
-prompt: 202603/prompts/chezmoi_commit_skills.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/chezmoi_commit_skills.md](prompts/chezmoi_commit_skills.md)
 
 # Plan: Add commit skills to Gemini/Codex and remove hg_commit from Claude
 

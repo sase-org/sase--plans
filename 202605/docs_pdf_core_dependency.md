@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 13:19:26
 status: done
-prompt: 202605/prompts/docs_pdf_core_dependency.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/docs_pdf_core_dependency.md](prompts/docs_pdf_core_dependency.md)
+
 # Fix `docs-pdf-check` dependency resolution
 
 ## Context

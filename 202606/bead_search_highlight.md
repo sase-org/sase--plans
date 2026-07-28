@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 10:05:52
 status: done
-prompt: 202606/prompts/bead_search_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bead_search_highlight.md](prompts/bead_search_highlight.md)
+
 # Plan: Make `sase bead search` match highlighting readable
 
 ## Problem

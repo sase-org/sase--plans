@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 15:52:58
 status: done
-prompt: 202605/prompts/kill_edit_force_name_reuse.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/kill_edit_force_name_reuse.md](prompts/kill_edit_force_name_reuse.md)
+
 # Plan: Force Name Reuse When Killing And Editing Agents
 
 ## Context

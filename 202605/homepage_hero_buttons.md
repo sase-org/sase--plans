@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 11:20:26
 status: done
-prompt: 202605/prompts/homepage_hero_buttons.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/homepage_hero_buttons.md](prompts/homepage_hero_buttons.md)
+
 # Plan: Reduce Homepage Hero Buttons
 
 ## Context

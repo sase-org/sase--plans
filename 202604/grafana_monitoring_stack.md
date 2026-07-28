@@ -2,9 +2,10 @@
 create_time: 2026-04-08 01:05:07
 status: done
 bead_id: sase-f
-prompt: 202604/prompts/grafana_monitoring_stack.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/grafana_monitoring_stack.md](prompts/grafana_monitoring_stack.md)
 
 # Plan: Prometheus Alerting Rules + Grafana Dashboard Provisioning
 

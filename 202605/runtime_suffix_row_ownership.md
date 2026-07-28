@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 12:48:21
 status: done
-prompt: 202605/prompts/runtime_suffix_row_ownership.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/runtime_suffix_row_ownership.md](prompts/runtime_suffix_row_ownership.md)
+
 # Plan: Runtime Suffix Row Ownership Correction
 
 ## Context

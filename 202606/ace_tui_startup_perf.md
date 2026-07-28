@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 21:02:19
 status: done
-prompt: 202606/prompts/ace_tui_startup_perf.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_tui_startup_perf.md](prompts/ace_tui_startup_perf.md)
+
 # Plan: Make `sase ace` Startup Much Faster
 
 ## Problem Summary

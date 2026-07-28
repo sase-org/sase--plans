@@ -1,6 +1,5 @@
----
-plan: 202604/telegram_launch_retry_button.md
----
+- **PLAN:** [../202604/telegram_launch_retry_button.md](../telegram_launch_retry_button.md)
+
 Your previous attempt hit the model's context window limit. Any file edits, new tests, and other on-disk changes you made are preserved. Before making additional changes, run `git status` and `git diff` to see what is already in place, then continue implementing the plan from wherever you left off. Do not re-apply edits that are already present.
 
  The user sent an image via Telegram with the following caption:

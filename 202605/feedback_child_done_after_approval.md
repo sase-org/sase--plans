@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 08:28:28
 status: done
-prompt: 202605/prompts/feedback_child_done_after_approval.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/feedback_child_done_after_approval.md](prompts/feedback_child_done_after_approval.md)
+
 # Feedback Child Status After Plan Approval
 
 ## Context

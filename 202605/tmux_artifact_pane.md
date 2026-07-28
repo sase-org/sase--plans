@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 00:03:01
 status: done
-prompt: 202605/prompts/tmux_artifact_pane.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tmux_artifact_pane.md](prompts/tmux_artifact_pane.md)
+
 # Plan: Open Agent Artifacts In A Tmux Side Pane
 
 ## Context

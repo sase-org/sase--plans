@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 21:10:01
 status: done
-prompt: 202604/prompts/agents_tab_group_separators.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_group_separators.md](prompts/agents_tab_group_separators.md)
+
 # Agents Tab — Group Separator Redesign
 
 ## Goal

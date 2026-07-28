@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 11:37:10
 status: done
-prompt: 202605/prompts/artifact_tmux_focus_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_tmux_focus_indicator.md](prompts/artifact_tmux_focus_indicator.md)
+
 # Plan: Artifact Viewer Tmux Focus Indicator
 
 ## Problem

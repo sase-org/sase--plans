@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 14:33:09
 status: done
-prompt: 202603/prompts/fix_just_workflow.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_just_workflow.md](prompts/fix_just_workflow.md)
 
 # Plan: Fix broken `#sase/fix_just` workflow's `fix_fmt` step
 

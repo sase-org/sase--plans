@@ -1,6 +1,5 @@
----
-plan: 202605/qwen_global_commit_stop_hook.md
----
+- **PLAN:** [../202605/qwen_global_commit_stop_hook.md](../qwen_global_commit_stop_hook.md)
+
  Why didn't the sase_stop_commit_hook seem to trigger for the "ru" sase agent even though it made changes? Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

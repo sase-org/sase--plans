@@ -3,8 +3,10 @@ create_time: 2026-07-05 21:16:53
 bead_id: sase-5f
 tier: epic
 status: done
-prompt: 202607/prompts/dynamic_agent_families_v1.md
 ---
+
+- **PROMPT:** [202607/prompts/dynamic_agent_families_v1.md](prompts/dynamic_agent_families_v1.md)
+
 # Implementation Plan: Dynamic Agent Families v1
 
 ## Product Context

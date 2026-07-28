@@ -8,8 +8,9 @@ goal: 'The Agents prompt and metadata views present the ARTIFACTS lane immediate
   '
 create_time: 2026-07-17 09:02:15
 status: done
-prompt: 202607/prompts/artifacts_below_plan.md
 ---
+
+- **PROMPT:** [202607/prompts/artifacts_below_plan.md](prompts/artifacts_below_plan.md)
 
 # Plan: Render ARTIFACTS Directly Below PLAN
 

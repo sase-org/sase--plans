@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 15:09:29
 status: done
-prompt: 202605/prompts/unread_angel_devil_markers.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/unread_angel_devil_markers.md](prompts/unread_angel_devil_markers.md)
+
 # Plan: Angel / devil markers for unread agent rows
 
 ## Context

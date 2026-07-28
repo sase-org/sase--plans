@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 07:17:36
 status: done
-prompt: 202606/prompts/close_admin_center_on_sase_update_confirm.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/close_admin_center_on_sase_update_confirm.md](prompts/close_admin_center_on_sase_update_confirm.md)
+
 # Close Admin Center After Full SASE Update Confirmation
 
 ## Goal

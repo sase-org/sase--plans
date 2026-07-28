@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 13:36:36
 status: done
-prompt: 202607/prompts/agents_view_hints_disappear.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agents_view_hints_disappear.md](prompts/agents_view_hints_disappear.md)
+
 # Fix: Agents-tab `v` (view) hints disappear before the user submits input
 
 ## Problem / Symptom

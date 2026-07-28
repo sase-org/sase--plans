@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-10 16:51:54
 status: done
-prompt: 202604/prompts/retry_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/retry_timestamps.md](prompts/retry_timestamps.md)
 
 # Plan: Add RETRY Timestamps to Agents Tab Metadata Panel
 

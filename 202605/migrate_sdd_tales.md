@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 23:34:34
 status: wip
-prompt: 202605/prompts/migrate_sdd_tales.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/migrate_sdd_tales.md](prompts/migrate_sdd_tales.md)
+
 # Plan: Migrate SDD Plans To Tales
 
 ## Goal

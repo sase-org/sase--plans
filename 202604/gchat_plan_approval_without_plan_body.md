@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 12:34:49
 status: done
-prompt: 202604/prompts/gchat_plan_approval_without_plan_body.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gchat_plan_approval_without_plan_body.md](prompts/gchat_plan_approval_without_plan_body.md)
+
 # Plan: Stop Inlining Google Chat Plan Bodies
 
 ## Goal

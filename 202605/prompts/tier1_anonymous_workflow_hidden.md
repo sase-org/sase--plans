@@ -1,6 +1,5 @@
----
-plan: 202605/tier1_anonymous_workflow_hidden.md
----
+- **PLAN:** [../202605/tier1_anonymous_workflow_hidden.md](../tier1_anonymous_workflow_hidden.md)
+
  When I start up `sase ace` after the changes made recently to tier 1 agent loading (see the sase-3t epic bead
 for context), only a few of the expected agents are shown (see the BAD `sase ace` snapshot below). When I use the `,y`
 keymap to do a full refresh, all of the correct agent entries are then shown (see the GOOD `sase ace` snapshot below). I

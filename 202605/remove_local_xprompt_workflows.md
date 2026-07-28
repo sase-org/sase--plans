@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-12 12:00:27
 status: done
-prompt: 202605/prompts/remove_local_xprompt_workflows.md
 bead_id: sase-34
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/remove_local_xprompt_workflows.md](prompts/remove_local_xprompt_workflows.md)
+
 # Remove config-local xprompt workflow support
 
 ## Goal

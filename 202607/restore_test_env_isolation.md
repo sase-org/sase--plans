@@ -6,8 +6,9 @@ goal: Prevent review-runner tests from leaking commit-dispatch environment varia
   landing remains fully validated.
 create_time: 2026-07-20 13:25:56
 status: done
-prompt: 202607/prompts/restore_test_env_isolation.md
 ---
+
+- **PROMPT:** [202607/prompts/restore_test_env_isolation.md](prompts/restore_test_env_isolation.md)
 
 # Plan: Restore pytest environment isolation under work stealing
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:48:59
 status: wip
-prompt: 202607/prompts/add_smartest_model_alias.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/add_smartest_model_alias.md](prompts/add_smartest_model_alias.md)
+
 # Add the `smartest` Model Alias
 
 ## Context

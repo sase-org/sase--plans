@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 00:31:47
 status: done
-prompt: 202607/prompts/kill_waiting_agents_pid_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/kill_waiting_agents_pid_fallback.md](prompts/kill_waiting_agents_pid_fallback.md)
+
 # Fix Telegram `/kill` Failing With "Could not find PID" for Waiting/Queued (Fork) Agents
 
 ## Problem

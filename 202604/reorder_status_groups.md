@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 10:20:09
 status: done
-prompt: 202604/prompts/reorder_status_groups.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/reorder_status_groups.md](prompts/reorder_status_groups.md)
+
 # Plan — Reorder Status Groups in the ACE CLs Tab
 
 ## Goal

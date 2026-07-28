@@ -1,6 +1,5 @@
----
-plan: 202606/sase_var_output_variables.md
----
+- **PLAN:** [../202606/sase_var_output_variables.md](../sase_var_output_variables.md)
+
  Can you help me create a new `/sase_var` xprompt slash command?
 
 - This slash command should instruct agents how to use the new `sase var` command that you should create.

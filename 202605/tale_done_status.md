@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 14:54:40
 status: done
-prompt: 202605/prompts/tale_done_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tale_done_status.md](prompts/tale_done_status.md)
+
 # Plan: Add `TALE DONE` agent status
 
 ## Goal

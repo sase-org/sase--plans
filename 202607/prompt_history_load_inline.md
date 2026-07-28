@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 16:19:26
 status: wip
-prompt: 202607/prompts/prompt_history_load_inline.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prompt_history_load_inline.md](prompts/prompt_history_load_inline.md)
+
 # Fix Prompt-History `<ctrl+i>` Load to Preserve the Existing Prompt Stack
 
 ## Problem

@@ -2,9 +2,11 @@
 create_time: 2026-04-29 23:28:54
 status: done
 bead_id: sase-1g
-prompt: 202604/prompts/standalone_xprompt_bang_prefix.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/standalone_xprompt_bang_prefix.md](prompts/standalone_xprompt_bang_prefix.md)
+
 # Plan: Require `#!` for standalone xprompt workflows
 
 ## Goal

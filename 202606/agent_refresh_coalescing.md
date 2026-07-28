@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:59:25
 status: done
-prompt: 202606/prompts/agent_refresh_coalescing.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_refresh_coalescing.md](prompts/agent_refresh_coalescing.md)
+
 # Agent Refresh Coalescing Plan
 
 ## Context

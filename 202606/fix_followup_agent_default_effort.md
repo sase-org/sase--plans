@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 07:15:07
 status: done
-prompt: 202606/prompts/fix_followup_agent_default_effort.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_followup_agent_default_effort.md](prompts/fix_followup_agent_default_effort.md)
+
 # Plan: Record `default_effort` on Follow-up (Coder/Epic/Legend) Agents
 
 ## Problem

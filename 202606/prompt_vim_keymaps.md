@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-12 12:48:38
 status: wip
-prompt: 202606/prompts/prompt_vim_keymaps.md
 bead_id: sase-4l
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/prompt_vim_keymaps.md](prompts/prompt_vim_keymaps.md)
+
 # Plan: Fill in Missing Vim Keymaps in the Prompt Input Widget
 
 ## Product Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 08:39:07
 status: done
-prompt: 202605/prompts/bead_create_relative_plan_paths.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_create_relative_plan_paths.md](prompts/bead_create_relative_plan_paths.md)
+
 # Bead Create Relative Plan Paths
 
 ## Context

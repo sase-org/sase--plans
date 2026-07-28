@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 11:50:07
 status: done
-prompt: 202604/prompts/fix_split_cl_name.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_split_cl_name.md](prompts/fix_split_cl_name.md)
 
 # Plan: Fix `cl_name` undefined in `#split` xprompt workflow via `sase run`
 

@@ -1,6 +1,5 @@
----
-plan: 202607/wait_priority_directive.md
----
+- **PLAN:** [../202607/wait_priority_directive.md](../wait_priority_directive.md)
+
  Can you help me add a new priority keyword argument to the wait xprompt directive?
 
 - This argument should have an integer value that defaults to 10.

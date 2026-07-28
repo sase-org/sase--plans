@@ -1,6 +1,5 @@
----
-plan: 202607/tribe_panel_display_config.md
----
+- **PLAN:** [../202607/tribe_panel_display_config.md](../tribe_panel_display_config.md)
+
  Can you help me add some new sase configuration fields that allow me to control what icon, if any, is shown before an agent tribe's name on the agents tab when that panel is visible?
 
 - We should also add a configuration field that allows us to control whether an agent tribe panel of a particular name is rendered as initially expanded or not. This should default to true.

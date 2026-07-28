@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 14:20:34
 status: done
-prompt: 202603/prompts/fix_wait_dead_root.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_wait_dead_root.md](prompts/fix_wait_dead_root.md)
 
 # Plan: Fix `%wait` Resolution When Root Agent Is Dead Without `done.json`
 

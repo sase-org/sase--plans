@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 09:49:15
 status: done
-prompt: 202605/prompts/remove_starting_panel_shorthand.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_starting_panel_shorthand.md](prompts/remove_starting_panel_shorthand.md)
+
 # Remove STARTING Shorthand From Agent Panel Titles
 
 ## Goal

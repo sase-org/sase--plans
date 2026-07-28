@@ -1,6 +1,5 @@
----
-plan: 202607/external_repos.md
----
+- **PLAN:** [../202607/external_repos.md](../external_repos.md)
+
   Can you help me start allowing agents to use the `sase repo open` command for any sase repo, regardless of
 whether it even exists yet?
 

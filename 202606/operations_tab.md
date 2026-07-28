@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 08:51:12
 status: done
-prompt: 202606/prompts/operations_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/operations_tab.md](prompts/operations_tab.md)
+
 # Plan: Merge Admin Center "Tasks" + "Logs" into a single "Operations" tab
 
 ## Goal

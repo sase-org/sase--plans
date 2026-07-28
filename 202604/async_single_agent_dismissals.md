@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 16:49:36
 status: done
-prompt: 202604/prompts/async_single_agent_dismissals.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/async_single_agent_dismissals.md](prompts/async_single_agent_dismissals.md)
+
 # Make Single-Agent Dismissals Asynchronous
 
 ## Goal

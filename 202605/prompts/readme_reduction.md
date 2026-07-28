@@ -1,6 +1,5 @@
----
-plan: 202605/readme_reduction.md
----
+- **PLAN:** [../202605/readme_reduction.md](../readme_reduction.md)
+
  Can you help me significantly reduce the size of this repo's README?
 
 - We should point to sase.sh for more extensive documentation. 

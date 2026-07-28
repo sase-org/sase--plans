@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-12 13:49:40
 status: done
-prompt: 202605/prompts/chop_output_coverage.md
 bead_id: sase-36
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/chop_output_coverage.md](prompts/chop_output_coverage.md)
+
 # Plan: Make every Athena AXE chop produce useful output
 
 ## Context

@@ -72,6 +72,8 @@ status: wip
 bead_id: sase-a5
 ---
 
+- **PROMPT:** [202607/prompts/agents_view_hints_perf.md](prompts/agents_view_hints_perf.md)
+
 # Plan: Make Agents-tab `v` view hints load fast
 
 ## Problem

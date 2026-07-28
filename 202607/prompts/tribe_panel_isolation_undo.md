@@ -1,6 +1,5 @@
----
-plan: 202607/tribe_panel_isolation_undo.md
----
+- **PLAN:** [../202607/tribe_panel_isolation_undo.md](../tribe_panel_isolation_undo.md)
+
  The `H` keymap currently expands the currently selected agent tribe
 panel and collapses every other tribe panel. Can you help me start remembering
 whether the expansion state of all agent tribe panels (including the current

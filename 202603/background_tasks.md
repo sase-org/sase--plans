@@ -1,10 +1,11 @@
 ---
 bead_id: sase-3
 status: done
-prompt: 202603/prompts/background_tasks.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/background_tasks.md](prompts/background_tasks.md)
 
 # Plan: Migrate Sync, Mail, and Accept to Background Tasks
 

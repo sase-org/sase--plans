@@ -1,6 +1,5 @@
----
-plan: 202606/memory_init_header_basename.md
----
+- **PLAN:** [../202606/memory_init_header_basename.md](../memory_init_header_basename.md)
+
  Can you help me have the `sase memory init` command start including the memory file basename only (for users, who would like transparency about how the file was generated) in the H3 headers that it generates for AGENTS.md files (and other agent provider files like CLAUDE.md)?
 
 - We should include this name in parenthesis after the title parsed from the memory file (which should no longer be in parentheses).

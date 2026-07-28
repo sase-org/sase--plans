@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 20:04:51
 status: done
-prompt: 202605/prompts/landing_agents_manual_approval.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/landing_agents_manual_approval.md](prompts/landing_agents_manual_approval.md)
+
 # Landing Agents Manual Plan Approval
 
 ## Context

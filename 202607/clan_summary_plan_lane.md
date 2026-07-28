@@ -38,6 +38,8 @@ status: done
 bead_id: sase-8d
 ---
 
+- **PROMPT:** [202607/prompts/clan_summary_plan_lane.md](prompts/clan_summary_plan_lane.md)
+
 # Plan: Plan-lane-style rich clan summaries
 
 ## Context

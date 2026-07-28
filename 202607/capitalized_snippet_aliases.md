@@ -30,6 +30,8 @@ status: wip
 bead_id: sase-8u
 ---
 
+- **PROMPT:** [202607/prompts/capitalized_snippet_aliases.md](prompts/capitalized_snippet_aliases.md)
+
 # Plan: Capitalized aliases for every SASE snippet
 
 ## Context

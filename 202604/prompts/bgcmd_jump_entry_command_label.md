@@ -1,6 +1,5 @@
----
-plan: 202604/bgcmd_jump_entry_command_label.md
----
+- **PLAN:** [../202604/bgcmd_jump_entry_command_label.md](../bgcmd_jump_entry_command_label.md)
+
  Can you help me start showing the command that was run from the "Jump to Entry" panel (see the `sase ace` snapshot below)? In other words, let's start using entries of the form `bgcmd #<N>: <command>` instead of just
 `bgcmd #<N>`. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

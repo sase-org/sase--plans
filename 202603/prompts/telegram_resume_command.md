@@ -1,6 +1,5 @@
----
-plan: 202603/telegram_resume_command.md
----
+- **PLAN:** [../202603/telegram_resume_command.md](../telegram_resume_command.md)
+
 The user sent an image via Telegram with the following caption:
 
 Can you help me add a new Telegram /resume slash command that lists a copy button for each running or not dismissed

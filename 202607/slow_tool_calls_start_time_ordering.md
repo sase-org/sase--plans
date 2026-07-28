@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-05 22:46:26
 status: wip
-prompt: 202607/prompts/slow_tool_calls_start_time_ordering.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/slow_tool_calls_start_time_ordering.md](prompts/slow_tool_calls_start_time_ordering.md)
+
 # Plan: Order SLOW TOOL CALLS rows by command start time
 
 ## Problem

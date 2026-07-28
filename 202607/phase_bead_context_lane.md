@@ -8,8 +8,9 @@ goal: 'Phase agents present their bead identity, selected-phase description, and
   '
 create_time: 2026-07-17 14:14:04
 status: wip
-prompt: 202607/prompts/phase_bead_context_lane.md
 ---
+
+- **PROMPT:** [202607/prompts/phase_bead_context_lane.md](prompts/phase_bead_context_lane.md)
 
 # Plan: Phase bead SASE context lane
 

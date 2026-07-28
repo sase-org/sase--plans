@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 19:16:09
 status: done
-prompt: 202607/prompts/fix_vcs_ref_alias_prefix_mangle.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_vcs_ref_alias_prefix_mangle.md](prompts/fix_vcs_ref_alias_prefix_mangle.md)
+
 # Fix `#gh:` VCS Ref Canonicalization Mangling Display-Prefixed ChangeSpec Names
 
 ## Problem

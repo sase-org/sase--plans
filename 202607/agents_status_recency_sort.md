@@ -8,8 +8,9 @@ goal: 'The Agents tab''s by-status view prioritizes running, completed, and wait
   '
 create_time: 2026-07-18 14:09:24
 status: done
-prompt: 202607/prompts/agents_status_recency_sort.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_status_recency_sort.md](prompts/agents_status_recency_sort.md)
 
 # Plan: Agents status and launch-recency ordering
 

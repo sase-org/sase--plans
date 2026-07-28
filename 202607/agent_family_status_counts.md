@@ -8,8 +8,9 @@ goal: 'Agents-tab panel and global status summaries replace each parallel family
   '
 create_time: 2026-07-17 11:45:34
 status: done
-prompt: 202607/prompts/agent_family_status_counts.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_family_status_counts.md](prompts/agent_family_status_counts.md)
 
 # Plan: Aggregate agent-family status counts in Agents tab summaries
 

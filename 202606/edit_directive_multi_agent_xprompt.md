@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:30:28
 status: done
-prompt: 202606/prompts/edit_directive_multi_agent_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/edit_directive_multi_agent_xprompt.md](prompts/edit_directive_multi_agent_xprompt.md)
+
 # Plan: `%edit` Returns Multi-Agent XPrompt Markdown To The Prompt Stack
 
 ## Summary

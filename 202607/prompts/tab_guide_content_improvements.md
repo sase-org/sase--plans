@@ -1,6 +1,5 @@
----
-plan: 202607/tab_guide_content_improvements.md
----
+- **PLAN:** [../202607/tab_guide_content_improvements.md](../tab_guide_content_improvements.md)
+
   Can you help me improve the contents of the popup panel that is triggered by the `,?` keymap?
 
 - This panel currently shows unique contents for each tab.

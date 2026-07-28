@@ -64,6 +64,8 @@ status: done
 bead_id: sase-9o
 ---
 
+- **PROMPT:** [202607/prompts/ghost_imported_agents.md](prompts/ghost_imported_agents.md)
+
 # Plan: Stop ghost imported agents from flooding the Agents tab
 
 ## Problem

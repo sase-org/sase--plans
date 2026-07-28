@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 23:02:43
 status: done
-prompt: 202607/prompts/bead_writes_workspace_local_sdd.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/bead_writes_workspace_local_sdd.md](prompts/bead_writes_workspace_local_sdd.md)
+
 # Fix: `sase bead` writes dirty the primary workspace's `.sase/sdd` instead of the current workspace's local clone
 
 ## Problem

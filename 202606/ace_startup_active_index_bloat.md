@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 21:44:59
 status: done
-prompt: 202606/prompts/ace_startup_active_index_bloat.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_startup_active_index_bloat.md](prompts/ace_startup_active_index_bloat.md)
+
 # Plan: Fix the Residual `sase ace` Startup Slowdown (Artifact-Index Active-Tier Bloat)
 
 ## Context: Verifying the Prior Fix

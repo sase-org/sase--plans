@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 19:19:41
 status: done
-prompt: 202604/prompts/fix_mentor_checks_timeout.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_mentor_checks_timeout.md](prompts/fix_mentor_checks_timeout.md)
 
 # Plan: Fix mentor_checks chop timeout (repeated VCS diff loading)
 

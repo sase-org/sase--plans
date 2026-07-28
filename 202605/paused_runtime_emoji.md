@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 16:29:17
 status: done
-prompt: 202605/prompts/paused_runtime_emoji.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/paused_runtime_emoji.md](prompts/paused_runtime_emoji.md)
+
 # Plan: Paused Runtime Emoji In Agent Rows
 
 ## Goal

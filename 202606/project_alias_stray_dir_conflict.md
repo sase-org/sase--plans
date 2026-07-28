@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 22:13:40
 status: done
-prompt: 202606/prompts/project_alias_stray_dir_conflict.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_alias_stray_dir_conflict.md](prompts/project_alias_stray_dir_conflict.md)
+
 # Plan: Stop stray project directories from breaking project-alias launches
 
 ## Symptom (the recurring failure)

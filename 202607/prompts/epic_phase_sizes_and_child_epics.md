@@ -1,6 +1,5 @@
----
-plan: 202607/epic_phase_sizes_and_child_epics.md
----
+- **PLAN:** [../202607/epic_phase_sizes_and_child_epics.md](../epic_phase_sizes_and_child_epics.md)
+
  I want to start requiring sase agents that create plans with an epic
 tier (via the /sase_plan skill) to start having to (enforced by the
 `sase plan validate` command) specify a `size` property for each phase in the

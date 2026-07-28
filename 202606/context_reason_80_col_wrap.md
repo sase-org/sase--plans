@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 08:36:34
 status: done
-prompt: 202606/prompts/context_reason_80_col_wrap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/context_reason_80_col_wrap.md](prompts/context_reason_80_col_wrap.md)
+
 # Plan: SASE CONTEXT Reason Wrapping at 80 Columns
 
 ## Goal

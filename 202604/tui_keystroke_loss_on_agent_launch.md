@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 14:50:14
 status: done
-prompt: 202604/prompts/tui_keystroke_loss_on_agent_launch.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/tui_keystroke_loss_on_agent_launch.md](prompts/tui_keystroke_loss_on_agent_launch.md)
 
 # TUI Keystroke Loss on Agent Launch
 

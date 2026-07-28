@@ -8,8 +8,9 @@ goal: 'Agents waiting on or forking from a completed clan continue automatically
   '
 create_time: 2026-07-20 10:53:56
 status: done
-prompt: 202607/prompts/dismissed_clan_waits.md
 ---
+
+- **PROMPT:** [202607/prompts/dismissed_clan_waits.md](prompts/dismissed_clan_waits.md)
 
 # Plan: Preserve dismissed clan completion for waits and forks
 

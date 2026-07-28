@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 01:01:05
 status: wip
-prompt: 202605/prompts/complete_bead_model_routing.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/complete_bead_model_routing.md](prompts/complete_bead_model_routing.md)
+
 # Plan: Complete Bead Model Routing Verification
 
 ## Context

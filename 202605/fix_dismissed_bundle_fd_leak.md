@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 09:02:23
 status: done
-prompt: 202605/prompts/fix_dismissed_bundle_fd_leak.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_dismissed_bundle_fd_leak.md](prompts/fix_dismissed_bundle_fd_leak.md)
+
 # Plan: Fix dismissed bundle SQLite file descriptor leak
 
 ## Problem

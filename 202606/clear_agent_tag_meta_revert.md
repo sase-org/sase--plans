@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 08:25:59
 status: done
-prompt: 202606/prompts/clear_agent_tag_meta_revert.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/clear_agent_tag_meta_revert.md](prompts/clear_agent_tag_meta_revert.md)
+
 # Fix: Clearing an agent's group/tag reverts when the agent name contains `<group>.`
 
 ## Problem statement

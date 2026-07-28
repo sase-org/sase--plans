@@ -1,14 +1,4 @@
----
-plan: 202607/statistics_empty_filter_landing.md
----
-
-
-
-
-
-
-
-
+- **PLAN:** [../202607/statistics_empty_filter_landing.md](../statistics_empty_filter_landing.md)
 
 You are the land agent for epic bead sase-8a: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

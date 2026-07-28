@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 20:20:36
 status: done
-prompt: 202605/prompts/starting_status_bucket_bottom.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/starting_status_bucket_bottom.md](prompts/starting_status_bucket_bottom.md)
+
 # Plan: Move Agents BY_STATUS Starting Bucket To Bottom
 
 ## Goal

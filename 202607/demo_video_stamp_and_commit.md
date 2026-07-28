@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 19:14:36
 status: done
-prompt: 202607/prompts/demo_video_stamp_and_commit.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/demo_video_stamp_and_commit.md](prompts/demo_video_stamp_and_commit.md)
+
 # Plan: `just demo-video` — date stamp, no PNG, and an opt-in commit prompt
 
 ## Problem / Goals

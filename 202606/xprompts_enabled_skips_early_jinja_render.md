@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 08:37:05
 status: done
-prompt: 202606/prompts/xprompts_enabled_skips_early_jinja_render.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompts_enabled_skips_early_jinja_render.md](prompts/xprompts_enabled_skips_early_jinja_render.md)
+
 # Plan: `%xprompts_enabled:false` must exempt its block from early-phase Jinja2 rendering
 
 ## Problem

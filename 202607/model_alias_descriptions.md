@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 06:37:21
 status: wip
-prompt: 202607/prompts/model_alias_descriptions.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/model_alias_descriptions.md](prompts/model_alias_descriptions.md)
+
 # Model Alias Descriptions on the Models Panel
 
 ## Summary

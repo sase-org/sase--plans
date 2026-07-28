@@ -1,6 +1,5 @@
----
-plan: 202607/research_sidecar_cutover_fix.md
----
+- **PLAN:** [../202607/research_sidecar_cutover_fix.md](../research_sidecar_cutover_fix.md)
+
  
 
 

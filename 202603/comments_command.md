@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-23 16:00:01
 status: done
-prompt: 202603/prompts/comments_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/comments_command.md](prompts/comments_command.md)
 
 # Plan: `sase comments` CLI Command
 

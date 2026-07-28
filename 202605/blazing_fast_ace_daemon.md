@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-14 15:59:17
 status: wip
-prompt: 202605/prompts/blazing_fast_ace_daemon.md
 bead_id: sase-3i
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/blazing_fast_ace_daemon.md](prompts/blazing_fast_ace_daemon.md)
+
 # Blazing Fast ACE Daemon Read Plan
 
 ## Context

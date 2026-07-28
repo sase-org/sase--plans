@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 16:53:04
 status: done
-prompt: 202603/prompts/propose_stop_hook_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/propose_stop_hook_race.md](prompts/propose_stop_hook_race.md)
 
 # Plan: Fix `#propose` workflow failure when commit_stop_hook pre-commits
 

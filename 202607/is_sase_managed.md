@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 08:10:42
 status: done
-prompt: 202607/prompts/is_sase_managed.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/is_sase_managed.md](prompts/is_sase_managed.md)
+
 # Generalize Project Initialization Ownership with `is_sase_managed`
 
 ## Goal

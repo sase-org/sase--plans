@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 19:23:11
 status: done
-prompt: 202604/prompts/skip_bare_word_at_refs.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/skip_bare_word_at_refs.md](prompts/skip_bare_word_at_refs.md)
+
 # Plan: Skip validation of bare-word `@<word>` references
 
 ## Problem

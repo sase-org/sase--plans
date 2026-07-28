@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 19:04:59
 status: done
-prompt: 202606/prompts/fix_x11_clipboard_test_leak.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_x11_clipboard_test_leak.md](prompts/fix_x11_clipboard_test_leak.md)
+
 # Fix X11 authentication errors triggered by the test suite
 
 ## Problem

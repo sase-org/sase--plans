@@ -2,9 +2,10 @@
 bead_id: sase-4d
 create_time: 2026-06-06 10:20:31
 status: done
-prompt: 202606/prompts/sase_4d_pyvision_cleanup_2.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_4d_pyvision_cleanup_2.md](prompts/sase_4d_pyvision_cleanup_2.md)
 
 # sase-4d Pyvision Cleanup Plan
 

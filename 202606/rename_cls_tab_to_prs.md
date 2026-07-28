@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-07 06:06:16
 status: done
-prompt: 202606/prompts/rename_cls_tab_to_prs.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/rename_cls_tab_to_prs.md](prompts/rename_cls_tab_to_prs.md)
+
 # Rename ACE "CLs" Tab to "PRs"
 
 ## Goal

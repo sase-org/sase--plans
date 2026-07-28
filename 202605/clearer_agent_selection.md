@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-20 18:31:32
 status: done
-prompt: 202605/prompts/clearer_agent_selection.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/clearer_agent_selection.md](prompts/clearer_agent_selection.md)
+
 # Plan: Clearer Selected Agent Entry on the `sase ace` Agents Tab
 
 ## Problem

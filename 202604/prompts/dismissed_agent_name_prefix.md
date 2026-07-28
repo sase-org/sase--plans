@@ -1,6 +1,5 @@
----
-plan: 202604/dismissed_agent_name_prefix.md
----
+- **PLAN:** [../202604/dismissed_agent_name_prefix.md](../dismissed_agent_name_prefix.md)
+
  Can you help me start enforcing a constraint that all agents even dismissed ones that don't show in the TUI need to have an agent name?
 
 - We will accomplish this by prepending "YYmmdd." to the agent name on dismissal, where "YYmmdd" is the date that the agent completed.

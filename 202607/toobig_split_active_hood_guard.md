@@ -4,8 +4,9 @@ goal: Prevent the toobig_split chop from scanning or launching while an existing
   agent is starting, running, or waiting.
 create_time: 2026-07-15 16:04:37
 status: done
-prompt: 202607/prompts/toobig_split_active_hood_guard.md
 ---
+
+- **PROMPT:** [202607/prompts/toobig_split_active_hood_guard.md](prompts/toobig_split_active_hood_guard.md)
 
 # Plan: Guard toobig split launches by active agent hood
 

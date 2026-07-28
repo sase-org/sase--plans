@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-31 12:56:33
-prompt: 202603/prompts/bare_git_create_pull_request.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/bare_git_create_pull_request.md](prompts/bare_git_create_pull_request.md)
 
 # Fix: Allow `create_pull_request` with bare_git VCS provider
 

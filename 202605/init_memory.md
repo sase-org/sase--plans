@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-22 17:54:48
 status: done
-prompt: 202605/prompts/init_memory.md
 bead_id: sase-3x
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/init_memory.md](prompts/init_memory.md)
+
 # Plan: `sase init memory`
 
 ## Goal

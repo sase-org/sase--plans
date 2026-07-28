@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 16:47:43
 status: done
-prompt: 202605/prompts/update_completion_message.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/update_completion_message.md](prompts/update_completion_message.md)
+
 # Plan: Send Chat Update Completion Messages
 
 ## Goal

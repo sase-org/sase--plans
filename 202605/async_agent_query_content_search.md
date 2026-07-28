@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 22:21:47
 status: done
-prompt: 202605/prompts/async_agent_query_content_search.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/async_agent_query_content_search.md](prompts/async_agent_query_content_search.md)
+
 # Async Agent-Query Content Search Plan
 
 ## Problem

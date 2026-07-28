@@ -1,6 +1,5 @@
----
-plan: 202606/fix_axe_chop_edit.md
----
+- **PLAN:** [../202606/fix_axe_chop_edit.md](../fix_axe_chop_edit.md)
+
  Can you help me fix the below `sase ace` stacktrace (the TUI crashed when I pressed `e` to open a chop's output
 in my editor from the AXE tab)? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.

@@ -1,6 +1,5 @@
----
-plan: 202607/canonical_sase_directories.md
----
+- **PLAN:** [../202607/canonical_sase_directories.md](../canonical_sase_directories.md)
+
  We already store sase repos in a sase/repos/ directory.
 
 - I would like to start storing other sase directories like the xprompts/ directory and the memory/ directory in the sase/ directory as well.

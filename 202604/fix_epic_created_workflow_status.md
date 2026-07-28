@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 14:09:13
 status: done
-prompt: 202604/prompts/fix_epic_created_workflow_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_epic_created_workflow_status.md](prompts/fix_epic_created_workflow_status.md)
+
 # Fix Workflow Status: Show "EPIC CREATED" Instead of "PLAN APPROVED" After Epic Button
 
 ## Problem

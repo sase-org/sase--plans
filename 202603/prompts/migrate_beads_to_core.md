@@ -1,6 +1,5 @@
----
-plan: 202603/migrate_beads_to_core.md
----
+- **PLAN:** [../202603/migrate_beads_to_core.md](../migrate_beads_to_core.md)
+
 #gh:sase Can you help me migrate the new ../sase-beads repo's functionality into sase's core and make some improvements
 to it?
 

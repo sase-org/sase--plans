@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 10:52:42
 status: done
-prompt: 202606/prompts/publish_sase_core_rs_0_1_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/publish_sase_core_rs_0_1_1.md](prompts/publish_sase_core_rs_0_1_1.md)
+
 # Plan: Publish `sase-core-rs` 0.1.1 to PyPI
 
 ## Context

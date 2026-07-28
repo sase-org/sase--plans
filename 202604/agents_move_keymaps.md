@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-07 23:03:10
 status: done
-prompt: 202604/prompts/agents_move_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_move_keymaps.md](prompts/agents_move_keymaps.md)
 
 # Plan: `J`/`K` Move Agent Entries on the Agents Tab
 

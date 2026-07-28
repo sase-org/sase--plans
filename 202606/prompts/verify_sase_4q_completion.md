@@ -1,10 +1,4 @@
----
-plan: 202606/verify_sase_4q_completion.md
----
-
-
-
-
+- **PLAN:** [../202606/verify_sase_4q_completion.md](../verify_sase_4q_completion.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4q is complete?
 

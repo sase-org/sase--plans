@@ -1,6 +1,5 @@
----
-plan: 202606/agent_restore_panel_polish.md
----
+- **PLAN:** [../202606/agent_restore_panel_polish.md](../agent_restore_panel_polish.md)
+
  Can you help me make the "Agent Restore" panel's list of selectable entries (in the left pane) look much better? Fulfill all of the requirements below, but feel free to go a step further to make this pane look really great!
 
 - The "Saved groups" group should be listed at the top, then the "Recent dismissals".

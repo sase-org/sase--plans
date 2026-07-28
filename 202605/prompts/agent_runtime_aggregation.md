@@ -1,6 +1,5 @@
----
-plan: 202605/agent_runtime_aggregation.md
----
+- **PLAN:** [../202605/agent_runtime_aggregation.md](../agent_runtime_aggregation.md)
+
  The main agent/workflow entries runtime should be the sum of the runtimes of all of the child agent steps. It doesn't look like that is currently the case (see the `sase ace` snapshot below). It
 looks like we continue to increment that runtime when waiting for user feedback (e.g. HITL or when a plan is proposed and the agent entry has a PLANNING status) when the correct thing to do would be to
 pause that runtime until the user approves the plan. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

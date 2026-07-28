@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 17:58:21
 status: done
-prompt: 202604/prompts/fix_stale_dynamic_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_stale_dynamic_memory.md](prompts/fix_stale_dynamic_memory.md)
 
 # Fix Stale Dynamic Memory Files
 

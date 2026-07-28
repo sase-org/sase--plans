@@ -1,6 +1,5 @@
----
-plan: 202606/hint_bar_duplicate_id_crash.md
----
+- **PLAN:** [../202606/hint_bar_duplicate_id_crash.md](../hint_bar_duplicate_id_crash.md)
+
  Sometimes when I use the `v` (view) keymap the hints input bar loses focus for some reason. When this happens, if I press `v` again, `sase ace` crashes with an error like the (partial) one shown below. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

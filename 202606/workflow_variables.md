@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 23:12:59
 status: done
-prompt: 202606/prompts/workflow_variables.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/workflow_variables.md](prompts/workflow_variables.md)
+
 # Rename Step Metadata to Workflow Variables
 
 ## Context

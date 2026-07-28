@@ -75,6 +75,8 @@ status: done
 bead_id: sase-87
 ---
 
+- **PROMPT:** [202607/prompts/bead_gated_wait.md](prompts/bead_gated_wait.md)
+
 # Plan: Bead-gated %wait for delegated epic phases
 
 ## Context

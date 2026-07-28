@@ -8,8 +8,9 @@ goal: 'The Artifacts Plans pane shows persisted phase sizes clearly in compact r
   '
 create_time: 2026-07-20 14:48:12
 status: wip
-prompt: 202607/prompts/artifacts_phase_sizes.md
 ---
+
+- **PROMPT:** [202607/prompts/artifacts_phase_sizes.md](prompts/artifacts_phase_sizes.md)
 
 # Plan: Size-aware Artifacts Plans surface
 

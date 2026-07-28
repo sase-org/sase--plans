@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 23:08:24
 status: done
-prompt: 202604/prompts/agent_bead_list_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_bead_list_indicator.md](prompts/agent_bead_list_indicator.md)
+
 # Agent Bead List Indicator Plan
 
 ## Goal

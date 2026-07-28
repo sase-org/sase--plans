@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 02:17:41
 status: done
-prompt: 202603/prompts/sase_9_3.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/sase_9_3.md](prompts/sase_9_3.md)
 
 # Plan: sase-9.3 — `sase commit` rewrite + new hookspecs + remove `sase amend`
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-30 15:44:14
 status: done
-prompt: 202605/prompts/obsidian_sibling_repo.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/obsidian_sibling_repo.md](prompts/obsidian_sibling_repo.md)
+
 # Plan: Add Obsidian Vault as a Static SASE Sibling Repo
 
 ## Context

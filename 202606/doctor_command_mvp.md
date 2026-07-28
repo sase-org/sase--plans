@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-09 11:52:44
 status: done
-prompt: 202606/prompts/doctor_command_mvp.md
 bead_id: sase-4i
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/doctor_command_mvp.md](prompts/doctor_command_mvp.md)
+
 # Plan: Ambitious MVP for `sase doctor`
 
 ## Objective

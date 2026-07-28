@@ -1,6 +1,5 @@
----
-plan: 202603/fix_just_workflow_1.md
----
+- **PLAN:** [../202603/fix_just_workflow_1.md](../fix_just_workflow_1.md)
+
 Can you help me fix this `#sase/fix_just` xprompt workflow failure? Think this through thoroughly and create a plan
 using your `/sase_plan` skill before making any file changes.
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-27 12:26:21
 status: done
-prompt: 202604/prompts/epic_agent_timestamp_collision.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/epic_agent_timestamp_collision.md](prompts/epic_agent_timestamp_collision.md)
 
 # Plan: Fix Epic Phase Agent Timestamp Collisions
 

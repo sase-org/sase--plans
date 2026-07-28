@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 14:56:18
 status: done
-prompt: 202604/prompts/startup_stopwatch_live_update.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/startup_stopwatch_live_update.md](prompts/startup_stopwatch_live_update.md)
+
 # Plan: Make the `sase ace` Startup Stopwatch Actually Tick
 
 ## Problem

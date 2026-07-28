@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 19:49:02
 status: done
-prompt: 202605/prompts/agents_group_ungroup_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_group_ungroup_keymap.md](prompts/agents_group_ungroup_keymap.md)
+
 # Plan: Agents Tab `,g` Group/Ungroup Toggle
 
 ## Goal

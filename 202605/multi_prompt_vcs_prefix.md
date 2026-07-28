@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 16:29:59
 status: done
-prompt: 202605/prompts/multi_prompt_vcs_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/multi_prompt_vcs_prefix.md](prompts/multi_prompt_vcs_prefix.md)
+
 # Plan: Preserve VCS Prefixes For Multi-Agent Markdown XPrompts
 
 ## Problem

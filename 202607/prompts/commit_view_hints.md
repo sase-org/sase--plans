@@ -1,6 +1,5 @@
----
-plan: 202607/commit_view_hints.md
----
+- **PLAN:** [../202607/commit_view_hints.md](../commit_view_hints.md)
+
  Can you help me add support to the `v` (view) keymap on the "Agents" tab of the `sase ace` TUI for "COMMITS:" field (in the agent metadata panel) commit entries?
 
 - When the corresponding hints are selected, the user should be shown the full commit message and a pretty diff of the changes made by the selected commit.

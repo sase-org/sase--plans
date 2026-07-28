@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 19:41:39
 status: done
-prompt: 202606/prompts/remove_memory_episodes.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_memory_episodes.md](prompts/remove_memory_episodes.md)
+
 # Remove Memory Episodes Command
 
 ## Objective

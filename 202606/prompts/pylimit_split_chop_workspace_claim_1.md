@@ -1,6 +1,5 @@
----
-plan: 202606/pylimit_split_chop_workspace_claim_1.md
----
+- **PLAN:** [../202606/pylimit_split_chop_workspace_claim_1.md](../pylimit_split_chop_workspace_claim_1.md)
+
  Can you help me fix the `sase_pylimit_split` chop (see the `sase ace` snapshot below)? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

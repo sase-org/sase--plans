@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 08:23:51
 status: done
-prompt: 202606/prompts/preserve_workspace_claim_during_plan_handoff.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/preserve_workspace_claim_during_plan_handoff.md](prompts/preserve_workspace_claim_during_plan_handoff.md)
+
 # Plan: Keep the workspace claimed during plan/question handoff
 
 ## Problem statement

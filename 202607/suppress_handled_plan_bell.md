@@ -8,8 +8,9 @@ goal: 'ACE does not toast or ring the terminal bell for a plan-approval notifica
   '
 create_time: 2026-07-21 10:50:31
 status: done
-prompt: '[202607/prompts/suppress_handled_plan_bell.md](prompts/suppress_handled_plan_bell.md)'
 ---
+
+- **PROMPT:** [202607/prompts/suppress_handled_plan_bell.md](prompts/suppress_handled_plan_bell.md)
 
 # Plan: Suppress bells for already-handled plan approvals
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 16:32:32
 status: done
-prompt: 202606/prompts/bare_plus_project_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bare_plus_project_completion.md](prompts/bare_plus_project_completion.md)
+
 # Plan: Bare Plus Project Completion
 
 ## Context

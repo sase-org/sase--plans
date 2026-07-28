@@ -1,13 +1,4 @@
----
-plan: 202607/land_sase_8d.md
----
-
-
-
-
-
-
-
+- **PLAN:** [../202607/land_sase_8d.md](../land_sase_8d.md)
 
 You are the land agent for epic bead sase-8d: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

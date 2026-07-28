@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 10:13:03
 status: done
-prompt: 202606/prompts/project_display_name_everywhere.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_display_name_everywhere.md](prompts/project_display_name_everywhere.md)
+
 # Show `PROJECT_NAME` (not the directory key) in **all** remaining user-facing surfaces
 
 ## Problem

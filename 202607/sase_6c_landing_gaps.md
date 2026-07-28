@@ -8,8 +8,9 @@ goal: 'Remove the two remaining pump-bound slow callbacks, restore a green merge
   '
 create_time: 2026-07-16 12:10:52
 status: done
-prompt: 202607/prompts/sase_6c_landing_gaps.md
 ---
+
+- **PROMPT:** [202607/prompts/sase_6c_landing_gaps.md](prompts/sase_6c_landing_gaps.md)
 
 # Plan: Finish and land the ACE TUI responsiveness epic
 

@@ -62,6 +62,8 @@ status: wip
 bead_id: sase-ad
 ---
 
+- **PROMPT:** [202607/prompts/fix_family_agent_publication.md](prompts/fix_family_agent_publication.md)
+
 # Plan: Repair agent-hood publication for family members and un-wedge the agents sidecar
 
 ## Symptom

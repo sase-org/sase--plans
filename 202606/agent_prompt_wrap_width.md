@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 15:01:58
 status: done
-prompt: 202606/prompts/agent_prompt_wrap_width.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_prompt_wrap_width.md](prompts/agent_prompt_wrap_width.md)
+
 # Plan: Agent prompt wrap width 80
 
 ## Context

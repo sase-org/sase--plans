@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-23 20:09:25
 status: done
-prompt: 202605/prompts/notification_tags.md
 bead_id: sase-43
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/notification_tags.md](prompts/notification_tags.md)
+
 # Plan: Notification Tags + TUI Tag Tabs
 
 ## Goal

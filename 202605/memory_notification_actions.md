@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 21:28:34
 status: done
-prompt: 202605/prompts/memory_notification_actions.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_notification_actions.md](prompts/memory_notification_actions.md)
+
 # Plan: Memory Proposal Notification Actions
 
 ## Problem

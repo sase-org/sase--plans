@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 19:00:20
 status: done
-prompt: 202605/prompts/remove_blog_archive_categories.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_blog_archive_categories.md](prompts/remove_blog_archive_categories.md)
+
 # Remove "Archive" and "Categories" from sase.sh Blog Sidebar
 
 ## Goal

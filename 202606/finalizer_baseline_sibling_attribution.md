@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 14:48:01
 status: wip
-prompt: 202606/prompts/finalizer_baseline_sibling_attribution.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/finalizer_baseline_sibling_attribution.md](prompts/finalizer_baseline_sibling_attribution.md)
+
 # Plan: Attribute sibling commits by run-start baseline, not just the "opened" marker
 
 ## Summary

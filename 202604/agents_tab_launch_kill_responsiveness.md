@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-24 16:06:11
 status: proposed
-prompt: 202604/prompts/agents_tab_launch_kill_responsiveness.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_launch_kill_responsiveness.md](prompts/agents_tab_launch_kill_responsiveness.md)
 
 # Plan: Make Agents Tab Respond Immediately After Launch/Kill
 

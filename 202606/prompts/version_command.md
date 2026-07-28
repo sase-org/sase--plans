@@ -1,6 +1,5 @@
----
-plan: 202606/version_command.md
----
+- **PLAN:** [../202606/version_command.md](../version_command.md)
+
  Can you help me create a new `sase version` command that shows the version of sase, sase-core, and any other
 installed sase plugins (ex: sase-github, sase-telegram)?
 

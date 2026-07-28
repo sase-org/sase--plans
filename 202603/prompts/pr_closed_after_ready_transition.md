@@ -1,6 +1,5 @@
----
-plan: 202603/pr_closed_after_ready_transition.md
----
+- **PLAN:** [../202603/pr_closed_after_ready_transition.md](../pr_closed_after_ready_transition.md)
+
 I just tried to submit this pull request and got this error (see the `sase ace` snapshot below). It looks like the pull
 request WAS created, but is now closed. How did that happen? I'm thinking it maybe has something to do with the fact
 that I changed the status of this ChangeSpec from "Draft" to "Ready"? Can you help me diagnose the root cause of this

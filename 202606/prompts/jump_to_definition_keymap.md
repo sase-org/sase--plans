@@ -1,6 +1,5 @@
----
-plan: 202606/jump_to_definition_keymap.md
----
+- **PLAN:** [../202606/jump_to_definition_keymap.md](../jump_to_definition_keymap.md)
+
   Can you help me add support for a new `<ctrl+]>` normal-mode keymap to the prompt input widget?
 
 - This keymap should act as a "jump-to-definition" for xprompts, xprompt skills, and file paths.

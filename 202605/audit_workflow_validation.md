@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 15:46:31
 status: done
-prompt: 202605/prompts/audit_workflow_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/audit_workflow_validation.md](prompts/audit_workflow_validation.md)
+
 # Fix audit workflow validation failures
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 16:23:26
 status: done
-prompt: 202606/prompts/memory_init_header_basename.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/memory_init_header_basename.md](prompts/memory_init_header_basename.md)
+
 # Plan: Include memory file basename in generated H3 headers
 
 ## Goal

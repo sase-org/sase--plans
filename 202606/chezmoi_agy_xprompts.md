@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 22:37:25
 status: done
-prompt: 202606/prompts/chezmoi_agy_xprompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/chezmoi_agy_xprompts.md](prompts/chezmoi_agy_xprompts.md)
+
 # Chezmoi Antigravity Xprompt Cleanup Plan
 
 ## Context

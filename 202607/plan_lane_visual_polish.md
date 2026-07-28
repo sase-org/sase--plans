@@ -10,8 +10,9 @@ goal: 'The PLAN lane inside SASE CONTEXT reads as a native sibling of the MEMORY
   '
 create_time: 2026-07-16 17:53:21
 status: done
-prompt: 202607/prompts/plan_lane_visual_polish.md
 ---
+
+- **PROMPT:** [202607/prompts/plan_lane_visual_polish.md](prompts/plan_lane_visual_polish.md)
 
 # Plan: Restyle the PLAN lane to the SASE CONTEXT lane grammar
 

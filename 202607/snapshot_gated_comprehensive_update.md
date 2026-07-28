@@ -9,8 +9,9 @@ goal: 'ACE''s global ,U action captures the provider candidates from the latest 
   '
 create_time: 2026-07-20 11:01:27
 status: done
-prompt: 202607/prompts/snapshot_gated_comprehensive_update.md
 ---
+
+- **PROMPT:** [202607/prompts/snapshot_gated_comprehensive_update.md](prompts/snapshot_gated_comprehensive_update.md)
 
 # Plan: Snapshot-gated comprehensive update flow
 

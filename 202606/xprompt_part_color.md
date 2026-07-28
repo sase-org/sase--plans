@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 10:23:32
 status: done
-prompt: 202606/prompts/xprompt_part_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_part_color.md](prompts/xprompt_part_color.md)
+
 # Plan: Distinct Xprompt Part Color In Agent Metadata
 
 ## Context

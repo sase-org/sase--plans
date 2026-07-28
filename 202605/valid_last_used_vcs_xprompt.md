@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 16:53:16
 status: done
-prompt: 202605/prompts/valid_last_used_vcs_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/valid_last_used_vcs_xprompt.md](prompts/valid_last_used_vcs_xprompt.md)
+
 # Plan: Filter Stale Last-Used VCS XPrompt Selections
 
 ## Problem

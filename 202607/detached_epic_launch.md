@@ -82,6 +82,8 @@ status: done
 bead_id: sase-9s
 ---
 
+- **PROMPT:** [202607/prompts/detached_epic_launch.md](prompts/detached_epic_launch.md)
+
 # Plan: Detached background tasks and a single epic-launch path
 
 ## Why: what actually broke

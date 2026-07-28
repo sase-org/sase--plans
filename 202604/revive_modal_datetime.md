@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 16:40:10
 status: done
-prompt: 202604/prompts/revive_modal_datetime.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/revive_modal_datetime.md](prompts/revive_modal_datetime.md)
 
 # Plan: Full Date+Time in Revive Modal Sidebar + Datetime Sorting
 

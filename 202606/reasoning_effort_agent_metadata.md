@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 14:38:57
 status: done
-prompt: 202606/prompts/reasoning_effort_agent_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/reasoning_effort_agent_metadata.md](prompts/reasoning_effort_agent_metadata.md)
+
 # Plan: Restore Reasoning-Effort Metadata in Agent Panels
 
 ## Problem Summary

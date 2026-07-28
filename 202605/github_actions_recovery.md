@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-11 22:00:29
 status: done
-prompt: 202605/prompts/github_actions_recovery.md
 bead_id: sase-31
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/github_actions_recovery.md](prompts/github_actions_recovery.md)
+
 # GitHub Actions Recovery Plan
 
 ## Goal

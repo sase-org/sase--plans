@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 10:55:29
 status: done
-prompt: 202604/prompts/fix_xprompt_space.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_xprompt_space.md](prompts/fix_xprompt_space.md)
 
 # Fix: Missing space before xprompt insertion via #@ trigger
 

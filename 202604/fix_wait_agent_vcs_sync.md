@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 13:21:29
 status: done
-prompt: 202604/prompts/fix_wait_agent_vcs_sync.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_wait_agent_vcs_sync.md](prompts/fix_wait_agent_vcs_sync.md)
+
 # Plan: Prepare Deferred Workspaces After `%wait`
 
 ## Problem

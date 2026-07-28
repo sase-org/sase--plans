@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-09 15:35:50
 status: done
-prompt: 202604/prompts/commit_message_flag.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/commit_message_flag.md](prompts/commit_message_flag.md)
 
 # Plan: Reassign `-m` to `--message` and `-M` to `--message-file` for `sase commit`
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 19:50:54
 status: done
-prompt: 202604/prompts/status_background_task.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/status_background_task.md](prompts/status_background_task.md)
 
 # Plan: Run Status Change TUI Actions as Background Tasks
 

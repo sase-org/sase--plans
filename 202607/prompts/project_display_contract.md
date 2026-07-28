@@ -1,10 +1,4 @@
----
-plan: 202607/project_display_contract.md
----
-
-
-
-
+- **PLAN:** [../202607/project_display_contract.md](../project_display_contract.md)
 
 Can you complete the work for bead sase-89.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

@@ -2,9 +2,10 @@
 create_time: 2026-03-24 00:26:19
 status: wip
 bead_id: sase-9
-prompt: 202603/prompts/unified_vcs_commit.md
 tier: epic
 ---
+
+- **PROMPT:** [202603/prompts/unified_vcs_commit.md](prompts/unified_vcs_commit.md)
 
 # Plan: Unified VCS Commit Prompts
 

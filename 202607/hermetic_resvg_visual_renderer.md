@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 14:39:00
 status: wip
-prompt: 202607/prompts/hermetic_resvg_visual_renderer.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/hermetic_resvg_visual_renderer.md](prompts/hermetic_resvg_visual_renderer.md)
+
 # Unify Visual Snapshot Rendering Across CI and Local Machines (Hermetic resvg Renderer)
 
 ## Problem

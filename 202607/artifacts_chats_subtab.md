@@ -101,6 +101,8 @@ status: done
 bead_id: sase-90
 ---
 
+- **PROMPT:** [202607/prompts/artifacts_chats_subtab.md](prompts/artifacts_chats_subtab.md)
+
 # Plan: Artifacts → Chats sub-tab
 
 ## Why

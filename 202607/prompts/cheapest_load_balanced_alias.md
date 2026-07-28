@@ -1,6 +1,5 @@
----
-plan: 202607/cheapest_load_balanced_alias.md
----
+- **PLAN:** [../202607/cheapest_load_balanced_alias.md](../cheapest_load_balanced_alias.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

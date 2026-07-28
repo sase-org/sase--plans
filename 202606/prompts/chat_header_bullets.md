@@ -1,6 +1,5 @@
----
-plan: 202606/chat_header_bullets.md
----
+- **PLAN:** [../202606/chat_header_bullets.md](../chat_header_bullets.md)
+
  We currently use the following syntax at the start of every sase agent chat:
 
 ```

@@ -1,6 +1,5 @@
----
-plan: 202605/fix_subprocess_utf8_decode_crash.md
----
+- **PLAN:** [../202605/fix_subprocess_utf8_decode_crash.md](../fix_subprocess_utf8_decode_crash.md)
+
  This agent failed for some reason (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

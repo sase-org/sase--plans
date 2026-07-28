@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 11:49:41
 status: done
-prompt: 202605/prompts/fenced_file_refs.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fenced_file_refs.md](prompts/fenced_file_refs.md)
+
 # Plan: Ignore @ File References Inside Fenced Blocks
 
 ## Context

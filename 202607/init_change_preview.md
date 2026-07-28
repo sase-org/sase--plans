@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:02:30
 status: done
-prompt: 202607/prompts/init_change_preview.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/init_change_preview.md](prompts/init_change_preview.md)
+
 # `sase init` Change Preview: See Exactly What Will Change Before Saying Yes
 
 ## Problem

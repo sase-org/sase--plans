@@ -1,6 +1,5 @@
----
-plan: 202606/amd_init_git_commit.md
----
+- **PLAN:** [../202606/amd_init_git_commit.md](../amd_init_git_commit.md)
+
  #fork:018 Can you now help me fix the below error from the `sase init` command? I think the problem here was that the `sase amd init` command should be git committing its changes before the `sase memory init` command is run. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

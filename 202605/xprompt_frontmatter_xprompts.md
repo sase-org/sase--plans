@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 08:54:23
 status: done
-prompt: 202605/prompts/xprompt_frontmatter_xprompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_frontmatter_xprompts.md](prompts/xprompt_frontmatter_xprompts.md)
+
 # XPrompt Frontmatter `xprompts` LSP Plan
 
 ## Goal

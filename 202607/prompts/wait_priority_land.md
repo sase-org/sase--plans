@@ -1,13 +1,4 @@
----
-plan: 202607/wait_priority_land.md
----
-
-
-
-
-
-
-
+- **PLAN:** [../202607/wait_priority_land.md](../wait_priority_land.md)
 
 You are the land agent for epic bead sase-8c: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

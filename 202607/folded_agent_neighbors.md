@@ -8,8 +8,9 @@ goal: 'The Agents-tab neighbor command discovers every currently relevant agent 
   '
 create_time: 2026-07-19 17:26:45
 status: done
-prompt: 202607/prompts/folded_agent_neighbors.md
 ---
+
+- **PROMPT:** [202607/prompts/folded_agent_neighbors.md](prompts/folded_agent_neighbors.md)
 
 # Plan: Reveal neighbors across folded clans and tribes
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:13:20
 status: wip
-prompt: 202604/prompts/ace_tab_switch_latency.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_tab_switch_latency.md](prompts/ace_tab_switch_latency.md)
+
 # Plan: Make `sase ace` Tab Switching Fast
 
 ## Problem Summary

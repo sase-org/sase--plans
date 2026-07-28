@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 23:21:02
 status: done
-prompt: 202605/prompts/tui_agent_list_stability_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tui_agent_list_stability_fix.md](prompts/tui_agent_list_stability_fix.md)
+
 # TUI Agent List Stability Fix
 
 ## Goal

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-07 22:02:29
 status: wip
-prompt: 202604/prompts/prometheus_telemetry.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prometheus_telemetry.md](prompts/prometheus_telemetry.md)
 
 # Plan: Prometheus Telemetry Integration
 

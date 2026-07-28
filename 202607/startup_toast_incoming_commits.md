@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 16:31:14
 status: done
-prompt: 202607/prompts/startup_toast_incoming_commits.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/startup_toast_incoming_commits.md](prompts/startup_toast_incoming_commits.md)
+
 # Plan: Show grouped incoming commits in the startup "Updates available" toast
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 04:03:44
 status: done
-prompt: 202605/prompts/landing_hero_text.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/landing_hero_text.md](prompts/landing_hero_text.md)
+
 # Landing Hero Text Polish Plan
 
 ## Goal

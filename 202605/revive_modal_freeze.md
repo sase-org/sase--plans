@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 19:23:45
 status: done
-prompt: 202605/prompts/revive_modal_freeze.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revive_modal_freeze.md](prompts/revive_modal_freeze.md)
+
 # Plan: Fix TUI Freeze When Typing in Revive Modal
 
 ## Problem

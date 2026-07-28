@@ -8,8 +8,9 @@ goal: 'Pressing `v` on the Agents tab renders selectable hints next to SASE CONT
   '
 create_time: 2026-07-16 17:40:40
 status: done
-prompt: 202607/prompts/agents_view_hints_context_and_latency.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_view_hints_context_and_latency.md](prompts/agents_view_hints_context_and_latency.md)
 
 # Plan: SASE CONTEXT memory-file view hints + fast, non-blocking hint rendering
 

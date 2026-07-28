@@ -1,6 +1,5 @@
----
-plan: 202606/agy_provider_final_gap.md
----
+- **PLAN:** [../202606/agy_provider_final_gap.md](../agy_provider_final_gap.md)
+
 #gh:sase
 %name:sase-50
 %group:sase-50

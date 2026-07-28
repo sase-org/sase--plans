@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 11:39:07
 status: done
-prompt: 202604/prompts/agent_list_single_line.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_list_single_line.md](prompts/agent_list_single_line.md)
+
 # Agent List Single-Line Rendering Plan
 
 ## Problem

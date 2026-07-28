@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 20:07:00
 status: done
-prompt: 202606/prompts/sase_56_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_56_completion.md](prompts/sase_56_completion.md)
+
 # Remaining Verification Fixes for `sase-56`
 
 ## Objective

@@ -1,6 +1,5 @@
----
-plan: 202607/atomic_rust_dev_update.md
----
+- **PLAN:** [../202607/atomic_rust_dev_update.md](../atomic_rust_dev_update.md)
+
  I just updated sase and sase-core-rs from the "Updates" tab of the "SASE Admin Center" panel and then immediately started reporting the following error. I've since uninstalled the dev/editable version and re-installed the version that is published to PyPI.  Can you help me diagnose the root cause of this issue and prevent it from happening again? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

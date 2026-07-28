@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 16:18:16
 status: done
-prompt: 202605/prompts/preserve_agent_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/preserve_agent_xprompt.md](prompts/preserve_agent_xprompt.md)
+
 # Preserve AGENT XPROMPT After Agent Completion
 
 ## Context

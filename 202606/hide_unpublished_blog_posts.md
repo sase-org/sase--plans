@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-06 16:24:02
 status: done
-prompt: 202606/prompts/hide_unpublished_blog_posts.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/hide_unpublished_blog_posts.md](prompts/hide_unpublished_blog_posts.md)
+
 # Hide Unpublished Blog Posts From the Public Site
 
 ## Goal

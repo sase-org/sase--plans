@@ -1,6 +1,5 @@
----
-plan: 202607/gate_one_tap_choices.md
----
+- **PLAN:** [../202607/gate_one_tap_choices.md](../gate_one_tap_choices.md)
+
 The user sent an image via Telegram with the following caption:
 
  it looks like we use too many plan approval telegram buttons for plans with a tale tier. I think that the tale button, approve button, reject button, and feedback buttons cover all use cases, right? If so, can you create a sase plan to remove some of these buttons? This might be a more general  problem with sase gates. If you can apply this improvement to the general case as well, do so.

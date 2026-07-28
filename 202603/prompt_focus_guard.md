@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 18:29:36
 status: done
-prompt: 202603/prompts/prompt_focus_guard.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/prompt_focus_guard.md](prompts/prompt_focus_guard.md)
 
 # Fix: Prompt Input Widget Focus Guard
 

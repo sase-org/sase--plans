@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-18 00:26:03
 status: done
-prompt: 202604/prompts/g_auto_expand_file.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/g_auto_expand_file.md](prompts/g_auto_expand_file.md)
 
 # Plan: Auto-expand trimmed file panel before `G` scroll-to-bottom
 

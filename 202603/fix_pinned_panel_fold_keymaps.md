@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 09:20:18
 status: done
-prompt: 202603/prompts/fix_pinned_panel_fold_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_pinned_panel_fold_keymaps.md](prompts/fix_pinned_panel_fold_keymaps.md)
 
 # Fix Pinned Panel Fold Keymaps (`l`, `L`, `h`, `H`)
 

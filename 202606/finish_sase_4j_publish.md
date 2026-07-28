@@ -3,9 +3,10 @@ title: Finish sase-4j Public Publish Verification
 bead_id: sase-4j
 create_time: 2026-06-09 20:47:25
 status: wip
-prompt: 202606/prompts/finish_sase_4j_publish.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/finish_sase_4j_publish.md](prompts/finish_sase_4j_publish.md)
 
 # Finish `sase-4j` Public Publish Verification
 

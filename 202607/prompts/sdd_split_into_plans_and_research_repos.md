@@ -1,6 +1,5 @@
----
-plan: 202607/sdd_split_into_plans_and_research_repos.md
----
+- **PLAN:** [../202607/sdd_split_into_plans_and_research_repos.md](../sdd_split_into_plans_and_research_repos.md)
+
  #fork:6a Can you now help me migrate the sdd repo to two different linked repos (sase--plans and sase--research)? This will require us to improve and generalize the concept of a linked repo a little bit.
 
 - We should add a new linked_repos.<repo>.auto_clone config field that specifies whether or not we should automatically clone a linked repo while preparing the workspace directory before launching the agent. This field should default to false but we should set it to true for the new sase--plans linked repo.

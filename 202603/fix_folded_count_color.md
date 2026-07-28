@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 13:55:40
 status: done
-prompt: 202603/prompts/fix_folded_count_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_folded_count_color.md](prompts/fix_folded_count_color.md)
 
 # Plan: Fix TIMESTAMPS Folded Count Color
 

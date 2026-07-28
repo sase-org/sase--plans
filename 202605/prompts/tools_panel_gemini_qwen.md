@@ -1,6 +1,5 @@
----
-plan: 202605/tools_panel_gemini_qwen.md
----
+- **PLAN:** [../202605/tools_panel_gemini_qwen.md](../tools_panel_gemini_qwen.md)
+
  We recently added a new Tools panel to the "Agents" tab of the `sase ace` TUI. It is currently only supported
 by the Claude and Codex LLM providers. Can you help me add support for the Tools panel to Gemini and Qwen too? Make sure
 we use asynchronous calls so we do not block the UI thread (I know Claude does this already--if Codex doesn't you should

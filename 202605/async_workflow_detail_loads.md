@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 22:20:52
 status: done
-prompt: 202605/prompts/async_workflow_detail_loads.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/async_workflow_detail_loads.md](prompts/async_workflow_detail_loads.md)
+
 # Async Workflow Detail Loads Plan
 
 ## Problem

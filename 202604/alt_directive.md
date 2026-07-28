@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 19:55:43
 status: done
-prompt: 202604/prompts/alt_directive.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/alt_directive.md](prompts/alt_directive.md)
 
 # Plan: `%alt` Directive for Prompt Splitting
 

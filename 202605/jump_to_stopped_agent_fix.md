@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 15:12:02
 status: done
-prompt: 202605/prompts/jump_to_stopped_agent_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/jump_to_stopped_agent_fix.md](prompts/jump_to_stopped_agent_fix.md)
+
 # Plan: Fix `,J` Stopped-Agent Navigation
 
 ## Problem

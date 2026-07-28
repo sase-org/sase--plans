@@ -8,8 +8,9 @@ goal: 'Every remaining SDD Git mutation uses the shared bounded retry and safe s
   '
 create_time: 2026-07-19 10:56:55
 status: done
-prompt: 202607/prompts/sase_77_completion.md
 ---
+
+- **PROMPT:** [202607/prompts/sase_77_completion.md](prompts/sase_77_completion.md)
 
 # Plan: Complete and land the git index-lock recovery epic
 

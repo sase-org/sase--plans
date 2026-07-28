@@ -1,6 +1,5 @@
----
-plan: 202605/agent_cleanup_tag_picker.md
----
+- **PLAN:** [../202605/agent_cleanup_tag_picker.md](../agent_cleanup_tag_picker.md)
+
  When we use the `X` keymap on the "Agents" tab of the `sase ace` TUI and press `t` to select an agent tag group to target for killing/dismissing, it looks like we show a lot of tags that are not currently represented on the tab (i.e. no agents are tagged using that tag). See the `sase ace` snapshot below for an example. Can you help me fix this so we only show tags that are used by >=1 agent on the agents tab? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 00:31:41
 status: done
-prompt: 202604/prompts/wait_absolute_time.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/wait_absolute_time.md](prompts/wait_absolute_time.md)
 
 # Plan: Absolute Time Formats for `%wait` Directive
 

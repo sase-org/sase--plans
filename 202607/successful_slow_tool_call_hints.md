@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 20:40:01
 status: done
-prompt: 202607/prompts/successful_slow_tool_call_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/successful_slow_tool_call_hints.md](prompts/successful_slow_tool_call_hints.md)
+
 # Plan: `v` Hints for Successful SLOW TOOL CALLS
 
 ## Goal

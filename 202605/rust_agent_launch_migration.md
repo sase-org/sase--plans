@@ -2,9 +2,11 @@
 create_time: 2026-05-01 12:13:46
 bead_id: sase-1r
 status: done
-prompt: 202605/prompts/rust_agent_launch_migration.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/rust_agent_launch_migration.md](prompts/rust_agent_launch_migration.md)
+
 # Rust-backed agent launch migration
 
 ## Question answered

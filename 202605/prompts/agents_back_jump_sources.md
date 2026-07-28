@@ -1,6 +1,5 @@
----
-plan: 202605/agents_back_jump_sources.md
----
+- **PLAN:** [../202605/agents_back_jump_sources.md](../agents_back_jump_sources.md)
+
  When we use the double apostrophe key map to jump to the previous jump point (or the first row if there is no
 previous jump point), we only currently look at whether the user used an apostrophe key map before. Can we also start
 tracking the `,j` / `,J` keymaps and the `J` / `K` keymaps as well when we consider a previous jump point for the double

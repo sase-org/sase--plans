@@ -1,6 +1,5 @@
----
-plan: 202607/gate_review_workbench.md
----
+- **PLAN:** [../202607/gate_review_workbench.md](../gate_review_workbench.md)
+
  #fork:dd Also, can we make these panels look much better?
 
 - For starters, let's start putting the buttons in a pane on the left so we have more room to show the attached file (e.g. the plan file) in a pane on the right.

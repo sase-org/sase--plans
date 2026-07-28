@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 14:29:52
 status: done
-prompt: 202605/prompts/git_home_auto_init.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/git_home_auto_init.md](prompts/git_home_auto_init.md)
+
 # Plan: Auto-Initialize `#git:home` Bare Git Metadata
 
 ## Goal

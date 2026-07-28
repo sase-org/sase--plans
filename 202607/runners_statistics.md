@@ -41,6 +41,8 @@ status: done
 bead_id: sase-8j
 ---
 
+- **PROMPT:** [202607/prompts/runners_statistics.md](prompts/runners_statistics.md)
+
 # Plan: Runner concurrency statistics
 
 ## Product decision

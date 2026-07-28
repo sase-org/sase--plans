@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 11:23:13
 status: done
-prompt: 202606/prompts/tui_freeze_artifact_scan.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_freeze_artifact_scan.md](prompts/tui_freeze_artifact_scan.md)
+
 # Plan: Fix `sase ace` TUI Freeze Caused by O(N) Artifact-Directory Re-Scans
 
 ## Summary

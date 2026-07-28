@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 13:46:29
 status: done
-prompt: 202607/prompts/expand_help_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/expand_help_panel.md](prompts/expand_help_panel.md)
+
 # Expand the Help Panel to Use Nearly the Full TUI
 
 ## Context

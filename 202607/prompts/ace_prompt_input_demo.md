@@ -1,6 +1,5 @@
----
-plan: 202607/ace_prompt_input_demo.md
----
+- **PLAN:** [../202607/ace_prompt_input_demo.md](../ace_prompt_input_demo.md)
+
   Can you help me improve the demos/tapes/sase_ace_prompt_input.tape vhs tape?
 
 - Add more files to the seed data so we can see file completion.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 08:14:40
 status: done
-prompt: 202607/prompts/commit_hooks.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/commit_hooks.md](prompts/commit_hooks.md)
+
 # Plan: Before/After Commit Hooks
 
 ## Goal

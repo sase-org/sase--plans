@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 11:44:00
 status: done
-prompt: 202605/prompts/agent_header_number_colors.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_header_number_colors.md](prompts/agent_header_number_colors.md)
+
 # Plan: Agents Header Number Colors
 
 ## Goal

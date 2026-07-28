@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 18:15:49
 status: done
-prompt: 202603/prompts/code_agent_telegram_diagnostics.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/code_agent_telegram_diagnostics.md](prompts/code_agent_telegram_diagnostics.md)
 
 # Plan: .code Agent Telegram Completion Diagnostics
 

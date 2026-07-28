@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 10:30:38
 status: done
-prompt: 202607/prompts/runner_launch_admission.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/runner_launch_admission.md](prompts/runner_launch_admission.md)
+
 # Plan: Make runner admission account for newly launched immediate agents
 
 ## Problem and confirmed timeline

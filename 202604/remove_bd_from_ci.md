@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 09:14:06
 status: done
-prompt: 202604/prompts/remove_bd_from_ci.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/remove_bd_from_ci.md](prompts/remove_bd_from_ci.md)
+
 # Remove steveyegge/beads (`bd`) install from GitHub Actions CI
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 07:44:38
 status: done
-prompt: 202607/prompts/auto_id_separator.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/auto_id_separator.md](prompts/auto_id_separator.md)
+
 # Generalized `@` Auto-ID Separators
 
 ## Goal

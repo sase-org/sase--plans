@@ -1,6 +1,5 @@
----
-plan: 202607/linked_repo_local_workspaces.md
----
+- **PLAN:** [../202607/linked_repo_local_workspaces.md](../linked_repo_local_workspaces.md)
+
  We currently support a `worspace.strategy` config field for `linked_repos` that accepts a value of `none` to indicate that the linked repo's primary workspace directory should always be used. Can you help me get rid of this field completely and start having all linked repos use the same workspace strategy?
 
 - The ability to set `none` as a linked repo's workspace strategy is only used for the chezmoi repo (configured in the ~/.local/share/chezmoi/home/dot_config/sase/sase.yml file).

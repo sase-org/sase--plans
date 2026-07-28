@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 16:04:15
 status: done
-prompt: 202607/prompts/vcs_log_project_name.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_project_name.md](prompts/vcs_log_project_name.md)
+
 # Plan: `sase vcs log` — show the project name, not the spec-file slug
 
 ## 1. The bug (what the user sees vs. what they should see)

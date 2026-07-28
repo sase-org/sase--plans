@@ -3,8 +3,10 @@ create_time: 2026-05-16 20:17:22
 bead_id: sase-3r
 tier: epic
 status: done
-prompt: 202605/prompts/agent_families_2.md
 ---
+
+- **PROMPT:** [202605/prompts/agent_families_2.md](prompts/agent_families_2.md)
+
 # Agent Families Implementation Plan
 
 ## Summary

@@ -1,6 +1,5 @@
----
-plan: 202605/deferred_workspace_env_leak.md
----
+- **PLAN:** [../202605/deferred_workspace_env_leak.md](../deferred_workspace_env_leak.md)
+
  Agents keep failing with the following error:
 ```
 RuntimeError: SASE_AGENT_DEFERRED_WORKSPACE=1 but 

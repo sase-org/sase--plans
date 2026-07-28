@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 20:18:56
 status: done
-prompt: 202605/prompts/init_memory_workspace_section.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/init_memory_workspace_section.md](prompts/init_memory_workspace_section.md)
+
 # Plan: Project Workspace Section in `sase init memory`
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 17:27:30
 status: done
-prompt: 202607/prompts/migrate_sdd_prompts_into_plans.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/migrate_sdd_prompts_into_plans.md](prompts/migrate_sdd_prompts_into_plans.md)
+
 # Plan: Migrate SDD `prompts/` into `plans/<YYYYMM>/prompts/`
 
 ## Context

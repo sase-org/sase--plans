@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 01:43:46
 status: done
-prompt: 202603/prompts/fix_resume_self_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_resume_self_resolution.md](prompts/fix_resume_self_resolution.md)
 
 # Plan: Fix `#resume:name` resolving to the current agent instead of the previous one
 

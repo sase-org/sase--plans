@@ -1,6 +1,5 @@
----
-plan: 202603/background_tasks.md
----
+- **PLAN:** [../202603/background_tasks.md](../background_tasks.md)
+
 #gh:sase #resume:o I like Option C (hybrid) from the sdd/research/202603/send_cmds_to_axe.md file. Let's just migrate the `Y`
 (sync), `M` (mail), and `a` (accept) commands for now. NOTE: We should only run the actual mail command (after the user
 selects 'y' to mail) for the `M` (mail) keymap. Can you help me write an implementation plan for this?

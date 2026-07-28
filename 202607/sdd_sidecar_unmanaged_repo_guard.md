@@ -25,8 +25,9 @@ phases:
   - provider-guard
 create_time: 2026-07-15 14:33:49
 status: done
-prompt: 202607/prompts/sdd_sidecar_unmanaged_repo_guard.md
 ---
+
+- **PROMPT:** [202607/prompts/sdd_sidecar_unmanaged_repo_guard.md](prompts/sdd_sidecar_unmanaged_repo_guard.md)
 
 # Plan: SDD sidecar guard for unmanaged repos
 

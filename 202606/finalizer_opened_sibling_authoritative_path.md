@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 14:07:18
 status: done
-prompt: 202606/prompts/finalizer_opened_sibling_authoritative_path.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/finalizer_opened_sibling_authoritative_path.md](prompts/finalizer_opened_sibling_authoritative_path.md)
+
 # Plan: Make the commit finalizer use the recorded opened-sibling workspace path
 
 ## Summary

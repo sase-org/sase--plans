@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-14 14:20:41
 status: done
-prompt: 202605/prompts/gmail_gog_skill_1.md
 bead_id: sase-3h
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/gmail_gog_skill_1.md](prompts/gmail_gog_skill_1.md)
+
 # Plan: SASE Gmail Read Skill via `gog`
 
 ## Goal

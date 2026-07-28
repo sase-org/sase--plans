@@ -1,6 +1,5 @@
----
-plan: 202607/github_enterprise_setup_docs.md
----
+- **PLAN:** [../202607/github_enterprise_setup_docs.md](../github_enterprise_setup_docs.md)
+
  #fork:0b2.cld Okay, so what does a user who works for a company that uses an enterprise version of GitHub need to do to configure SASE to work within their company? Is this process sufficiently documented? If not, use your /sase_plan skill to plan the appropriate changes.
  
 

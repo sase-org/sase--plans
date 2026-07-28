@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 23:08:18
 status: done
-prompt: 202604/prompts/prettier_underscore_emphasis.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prettier_underscore_emphasis.md](prompts/prettier_underscore_emphasis.md)
 
 # Fix Prettier Converting Underscores to Asterisks in File Paths
 

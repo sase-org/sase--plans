@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 19:32:49
 status: done
-prompt: 202607/prompts/init_all_active_projects.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/init_all_active_projects.md](prompts/init_all_active_projects.md)
+
 # Plan: Add `sase init --all` for Every Active Main Project
 
 ## Goal

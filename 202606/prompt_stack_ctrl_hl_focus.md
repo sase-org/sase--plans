@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 10:46:38
 status: done
-prompt: 202606/prompts/prompt_stack_ctrl_hl_focus.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_ctrl_hl_focus.md](prompts/prompt_stack_ctrl_hl_focus.md)
+
 # Prompt Stack Ctrl+H/L Focus Keymap Plan
 
 ## Goal

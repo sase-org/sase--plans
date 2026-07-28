@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 17:57:11
 status: done
-prompt: 202605/prompts/view_image_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/view_image_keymap.md](prompts/view_image_keymap.md)
+
 # Add `V` View Image Keymap
 
 ## Goal

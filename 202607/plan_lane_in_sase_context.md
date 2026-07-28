@@ -10,8 +10,9 @@ goal: 'The Agents-tab detail panel presents an agent''s plan as the leading PLAN
   '
 create_time: 2026-07-16 17:09:11
 status: done
-prompt: 202607/prompts/plan_lane_in_sase_context.md
 ---
+
+- **PROMPT:** [202607/prompts/plan_lane_in_sase_context.md](prompts/plan_lane_in_sase_context.md)
 
 # Plan: Merge SASE PLAN into SASE CONTEXT as a PLAN lane
 

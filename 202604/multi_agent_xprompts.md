@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 23:12:34
 status: done
-prompt: 202604/prompts/multi_agent_xprompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/multi_agent_xprompts.md](prompts/multi_agent_xprompts.md)
+
 # Multi-Agent XPrompts: Implementation Plan
 
 ## Overview

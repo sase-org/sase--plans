@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 10:22:08
 status: done
-prompt: 202605/prompts/bead_closed_list_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_closed_list_fix.md](prompts/bead_closed_list_fix.md)
+
 # Fix `sase bead list -s closed` Reading Empty Legacy Store
 
 ## Problem

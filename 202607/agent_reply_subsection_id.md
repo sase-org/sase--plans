@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 14:44:44
 status: wip
-prompt: 202607/prompts/agent_reply_subsection_id.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agent_reply_subsection_id.md](prompts/agent_reply_subsection_id.md)
+
 # Plan: Show the family `<id>` in generic "AGENT" sub-sections of the AGENT REPLY panel
 
 ## Problem

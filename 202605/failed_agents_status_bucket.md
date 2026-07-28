@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:49:37
 status: done
-prompt: 202605/prompts/failed_agents_status_bucket.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/failed_agents_status_bucket.md](prompts/failed_agents_status_bucket.md)
+
 # Plan: Separate Failed Agents From Needs Attention
 
 ## Goal

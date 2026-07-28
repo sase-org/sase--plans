@@ -8,8 +8,9 @@ goal: 'Make the Artifacts Commits sub-tab continuously explain and control its c
   '
 create_time: 2026-07-21 08:35:14
 status: done
-prompt: 202607/prompts/commits_persistent_default_filter.md
 ---
+
+- **PROMPT:** [202607/prompts/commits_persistent_default_filter.md](prompts/commits_persistent_default_filter.md)
 
 # Plan: Persistent configurable filter for Artifacts commits
 

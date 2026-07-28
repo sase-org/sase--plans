@@ -1,6 +1,5 @@
----
-plan: 202605/phase7_agent_scan_perf_failure.md
----
+- **PLAN:** [../202605/phase7_agent_scan_perf_failure.md](../phase7_agent_scan_perf_failure.md)
+
  GitHub Actions is failing with the below error. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
   
 ```

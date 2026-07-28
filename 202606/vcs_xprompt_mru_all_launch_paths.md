@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 10:39:23
 status: done
-prompt: 202606/prompts/vcs_xprompt_mru_all_launch_paths.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/vcs_xprompt_mru_all_launch_paths.md](prompts/vcs_xprompt_mru_all_launch_paths.md)
+
 # Plan: Record the submitted VCS xprompt workflow to the MRU on every launch path
 
 ## Problem

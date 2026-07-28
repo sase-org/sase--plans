@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 13:19:38
 status: done
-prompt: 202606/prompts/prompt_editor_spacing.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_editor_spacing.md](prompts/prompt_editor_spacing.md)
+
 # Plan: Prompt Editor Markdown Spacing
 
 ## Context

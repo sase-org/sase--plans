@@ -3,8 +3,10 @@ create_time: 2026-05-15 09:56:45
 bead_id: sase-3m
 tier: epic
 status: done
-prompt: 202605/prompts/tools_panel_gemini_qwen.md
 ---
+
+- **PROMPT:** [202605/prompts/tools_panel_gemini_qwen.md](prompts/tools_panel_gemini_qwen.md)
+
 # Tools Panel Support for Gemini and Qwen
 
 ## Context

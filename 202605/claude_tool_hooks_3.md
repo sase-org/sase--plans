@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-14 21:01:44
 status: done
-prompt: 202605/prompts/claude_tool_hooks_3.md
 bead_id: sase-3j
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/claude_tool_hooks_3.md](prompts/claude_tool_hooks_3.md)
+
 # Plan: Claude Tool Call Capture via Hooks
 
 ## Context

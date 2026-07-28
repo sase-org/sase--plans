@@ -5,8 +5,9 @@ goal: Make every section in the ACE agent metadata panel start its content direc
   color.
 create_time: 2026-07-15 18:29:38
 status: done
-prompt: 202607/prompts/compact_agent_metadata_sections.md
 ---
+
+- **PROMPT:** [202607/prompts/compact_agent_metadata_sections.md](prompts/compact_agent_metadata_sections.md)
 
 # Plan: Compact agent metadata sections
 

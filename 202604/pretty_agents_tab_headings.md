@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:03:28
 status: done
-prompt: 202604/prompts/pretty_agents_tab_headings.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pretty_agents_tab_headings.md](prompts/pretty_agents_tab_headings.md)
+
 # Pretty Agents-Tab Headings — Design & Plan
 
 ## Problem

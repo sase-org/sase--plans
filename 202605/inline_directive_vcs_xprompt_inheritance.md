@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 20:03:57
 status: done
-prompt: 202605/prompts/inline_directive_vcs_xprompt_inheritance.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/inline_directive_vcs_xprompt_inheritance.md](prompts/inline_directive_vcs_xprompt_inheritance.md)
+
 # Fix inline-directive VCS inheritance for multi-agent xprompts
 
 ## Context

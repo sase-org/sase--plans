@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:25:00
 status: done
-prompt: 202606/prompts/at_project_picker_home.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/at_project_picker_home.md](prompts/at_project_picker_home.md)
+
 # Plan: Show Real Projects In The @ Picker
 
 ## Goal

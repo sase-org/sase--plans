@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 13:54:48
 status: done
-prompt: 202605/prompts/answered_question_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/answered_question_status.md](prompts/answered_question_status.md)
+
 # Fix Answered Planner Question Status
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 14:36:11
 status: done
-prompt: 202606/prompts/tui_freeze_telemetry_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_freeze_telemetry_1.md](prompts/tui_freeze_telemetry_1.md)
+
 # Plan: Always-On Telemetry to Diagnose `sase ace` TUI Freezes
 
 ## Motivation / Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 22:40:55
 status: done
-prompt: 202607/prompts/sase_run_skill_prompt_guidance.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sase_run_skill_prompt_guidance.md](prompts/sase_run_skill_prompt_guidance.md)
+
 # Plan: Teach the /sase_run skill to compose better launch prompts
 
 ## Context

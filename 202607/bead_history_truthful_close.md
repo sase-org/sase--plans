@@ -79,6 +79,8 @@ status: wip
 bead_id: sase-a1
 ---
 
+- **PROMPT:** [202607/prompts/bead_history_truthful_close.md](prompts/bead_history_truthful_close.md)
+
 # Plan: Expose bead history and make bead completion truthful
 
 ## Context

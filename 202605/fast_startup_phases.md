@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 18:28:03
 status: wip
-prompt: 202605/prompts/fast_startup_phases.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fast_startup_phases.md](prompts/fast_startup_phases.md)
+
 # Plan: Make Sase Startup Much Faster
 
 ## Context

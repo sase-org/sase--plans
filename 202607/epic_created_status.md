@@ -6,8 +6,9 @@ goal: 'Successful host-owned epic launches transition the completed planner fami
   '
 create_time: 2026-07-15 20:39:12
 status: done
-prompt: 202607/prompts/epic_created_status.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_created_status.md](prompts/epic_created_status.md)
 
 # Plan: Mark host-launched epics as created
 

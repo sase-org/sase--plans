@@ -1,6 +1,5 @@
----
-plan: 202606/project_aliases.md
----
+- **PLAN:** [../202606/project_aliases.md](../project_aliases.md)
+
  Can you help me add support for sase project aliases?
 
 - This should be configured in project spec files.

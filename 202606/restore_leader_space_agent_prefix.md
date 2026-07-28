@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 15:06:05
 status: done
-prompt: 202606/prompts/restore_leader_space_agent_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/restore_leader_space_agent_prefix.md](prompts/restore_leader_space_agent_prefix.md)
+
 # Plan: Restore `, Space` Agent Prefix Launch
 
 ## Goal

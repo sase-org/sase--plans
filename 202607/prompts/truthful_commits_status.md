@@ -1,12 +1,4 @@
----
-plan: '[../202607/truthful_commits_status.md](../truthful_commits_status.md)'
----
-
-
-
-
-
-
+- **PLAN:** [../202607/truthful_commits_status.md](../truthful_commits_status.md)
 
 Can you complete the work for bead sase-8h.3? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

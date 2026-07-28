@@ -6,8 +6,9 @@ goal: Keep each agent tribe panel's explicit expanded or collapsed preference ac
   regressing deliberate clears or nested fold reconciliation.
 create_time: 2026-07-20 10:17:24
 status: done
-prompt: 202607/prompts/preserve_tribe_expansion_after_update.md
 ---
+
+- **PROMPT:** [202607/prompts/preserve_tribe_expansion_after_update.md](prompts/preserve_tribe_expansion_after_update.md)
 
 # Preserve Agent Tribe Expansion Across TUI Updates
 

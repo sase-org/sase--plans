@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-19 16:46:54
 status: done
-prompt: 202604/prompts/coder_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/coder_xprompt.md](prompts/coder_xprompt.md)
 
 # Plan: Add `#coder` builtin xprompt
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 07:23:30
 status: wip
-prompt: 202606/prompts/zorg_live_artifact_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/zorg_live_artifact_cleanup.md](prompts/zorg_live_artifact_cleanup.md)
+
 # Plan: clean stale live artifact markers blocking `zorg` deletion
 
 ## Context

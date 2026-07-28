@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 18:59:21
 status: done
-prompt: 202605/prompts/bead_telegram_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_telegram_metadata.md](prompts/bead_telegram_metadata.md)
+
 # Fix Telegram Bead Commands and Bead Metadata Display
 
 ## Context

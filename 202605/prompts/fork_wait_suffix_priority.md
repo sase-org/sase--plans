@@ -1,6 +1,5 @@
----
-plan: 202605/fork_wait_suffix_priority.md
----
+- **PLAN:** [../202605/fork_wait_suffix_priority.md](../fork_wait_suffix_priority.md)
+
  I think the root cause of this agent failure (see the `sase ace` snapshot below) is probably that we recently added support for the `.w<N>` suffix for agent's that use the `%wait` directive in their prompts, but we should always give priority to the `.f<N>` suffix when the `#fork` xprompt workflow is also found in the same agent prompt. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

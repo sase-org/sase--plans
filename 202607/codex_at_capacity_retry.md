@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 16:19:55
 status: done
-prompt: 202607/prompts/codex_at_capacity_retry.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/codex_at_capacity_retry.md](prompts/codex_at_capacity_retry.md)
+
 # Plan: Retry Codex "Selected model is at capacity" Failures by Default
 
 ## Problem

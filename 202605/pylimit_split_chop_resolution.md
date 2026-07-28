@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:55:43
 status: done
-prompt: 202605/prompts/pylimit_split_chop_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pylimit_split_chop_resolution.md](prompts/pylimit_split_chop_resolution.md)
+
 # Plan: Make the `sase_pylimit_split` chop resolve the real workflow reliably
 
 ## Problem

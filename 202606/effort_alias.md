@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 07:49:00
 status: done
-prompt: 202606/prompts/effort_alias.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/effort_alias.md](prompts/effort_alias.md)
+
 # Plan: make `%e` an alias for `%effort`
 
 ## Goal

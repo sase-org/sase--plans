@@ -41,6 +41,8 @@ status: wip
 bead_id: sase-a4.4
 ---
 
+- **PROMPT:** [202607/prompts/finish_ci_watch_landing.md](prompts/finish_ci_watch_landing.md)
+
 # Finish and land the ci_watch liveness epic
 
 ## Goal

@@ -8,8 +8,9 @@ goal: 'Clan launches express optional tribe membership through %clan(..., tribe=
   '
 create_time: 2026-07-18 14:48:46
 status: done
-prompt: 202607/prompts/clan_tribe_directive_contract.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_tribe_directive_contract.md](prompts/clan_tribe_directive_contract.md)
 
 # Plan: Make tribe membership a clan directive property
 

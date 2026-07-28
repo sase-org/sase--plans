@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:24:56
 status: done
-prompt: 202604/prompts/agent_tag_empty_enter_delete.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_tag_empty_enter_delete.md](prompts/agent_tag_empty_enter_delete.md)
+
 # Plan: Empty-Enter Deletes Agent Tag (mirror `w` keymap behavior)
 
 ## Problem

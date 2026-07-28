@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 10:15:51
 status: done
-prompt: 202606/prompts/ctrl_g_prompt_normal_mode.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ctrl_g_prompt_normal_mode.md](prompts/ctrl_g_prompt_normal_mode.md)
+
 # Plan: Enable Ctrl+G Prompt Prefix in Normal Mode
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 09:28:41
 status: done
-prompt: 202607/prompts/wait_runners_deferred_workspace.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/wait_runners_deferred_workspace.md](prompts/wait_runners_deferred_workspace.md)
+
 # Plan: Complete `%wait(runners=)` support for deferred-workspace launches
 
 ## Problem

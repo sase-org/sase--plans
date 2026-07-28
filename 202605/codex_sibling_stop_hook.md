@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 22:34:58
 status: done
-prompt: 202605/prompts/codex_sibling_stop_hook.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_sibling_stop_hook.md](prompts/codex_sibling_stop_hook.md)
+
 # Plan: Fix Codex Sibling Stop Hook Execution
 
 ## Problem

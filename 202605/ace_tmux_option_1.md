@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-16 15:13:54
 status: done
-prompt: 202605/prompts/ace_tmux_option_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ace_tmux_option_1.md](prompts/ace_tmux_option_1.md)
+
 # Plan: `sase ace --tmux` Option
 
 ## Goal

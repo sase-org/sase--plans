@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:14:12
 status: done
-prompt: 202605/prompts/cls_by_date_subgroups.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cls_by_date_subgroups.md](prompts/cls_by_date_subgroups.md)
+
 # CLs BY_DATE Second-Level Grouping
 
 ## Goal

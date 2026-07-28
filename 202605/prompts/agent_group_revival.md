@@ -1,6 +1,5 @@
----
-plan: 202605/agent_group_revival.md
----
+- **PLAN:** [../202605/agent_group_revival.md](../agent_group_revival.md)
+
  I want to add a new `S` keymap to the TUI's agents tab that dismisses (never kills) all marked agents) and saves them for easy revival later.
 
 - These agents should be revivable as a group from the new revival panel that we should start using for the `R` keymap.

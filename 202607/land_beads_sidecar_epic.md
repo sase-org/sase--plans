@@ -50,9 +50,11 @@ phases:
     clear whatever symvision reports once the epic whitelist expires, and mark both
     plan files done.'
 create_time: 2026-07-28 07:35:58
-status: wip
+status: done
 bead_id: sase-ab
 ---
+
+- **PROMPT:** [202607/prompts/land_beads_sidecar_epic.md](prompts/land_beads_sidecar_epic.md)
 
 # Plan: Finish and land the dedicated beads sidecar (sase-a8)
 

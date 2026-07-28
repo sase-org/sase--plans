@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 19:34:48
 status: done
-prompt: 202605/prompts/sidebar_section_emphasis.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sidebar_section_emphasis.md](prompts/sidebar_section_emphasis.md)
+
 # Sidebar Section Emphasis on sase.sh (Desktop Web)
 
 ## Problem

@@ -5,9 +5,10 @@ description: Add agent-launch Google Chat notifications and prefix every outboun
 type: plan
 create_time: 2026-04-25 10:23:02
 status: wip
-prompt: 202604/prompts/gchat_launch_and_emoji.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gchat_launch_and_emoji.md](prompts/gchat_launch_and_emoji.md)
 
 # Google Chat: Launch Notifications + Sase Identifier Emoji
 

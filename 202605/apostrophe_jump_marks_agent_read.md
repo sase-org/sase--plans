@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-26 20:18:07
 status: done
-prompt: 202605/prompts/apostrophe_jump_marks_agent_read.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/apostrophe_jump_marks_agent_read.md](prompts/apostrophe_jump_marks_agent_read.md)
+
 # Fix Apostrophe Agent Jump Read Acknowledgement
 
 ## Context

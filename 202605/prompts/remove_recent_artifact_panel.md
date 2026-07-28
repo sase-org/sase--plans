@@ -1,6 +1,5 @@
----
-plan: 202605/remove_recent_artifact_panel.md
----
+- **PLAN:** [../202605/remove_recent_artifact_panel.md](../remove_recent_artifact_panel.md)
+
    Can you help me remove all trace of the recent artifact panel? Review related sase beads and legend plan files. Make sure you remove all associated changes from all repos (ex: this one, my chezmoi repo, sase-core, etc...). Make sure you do not revert any of the unrelated changes that were made in the same time frame.
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

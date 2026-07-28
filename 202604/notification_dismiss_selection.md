@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 03:28:51
 status: done
-prompt: 202604/prompts/notification_dismiss_selection.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_dismiss_selection.md](prompts/notification_dismiss_selection.md)
+
 # Plan: Deterministic notification selection after dismiss
 
 ## Problem

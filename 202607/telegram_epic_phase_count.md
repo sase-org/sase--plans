@@ -8,8 +8,9 @@ goal: 'Telegram epic approval messages show an accurate, polished phase count at
   '
 create_time: 2026-07-18 10:53:54
 status: done
-prompt: 202607/prompts/telegram_epic_phase_count.md
 ---
+
+- **PROMPT:** [202607/prompts/telegram_epic_phase_count.md](prompts/telegram_epic_phase_count.md)
 
 # Plan: Glanceable Telegram epic phase counts
 

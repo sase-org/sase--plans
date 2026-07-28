@@ -10,8 +10,9 @@ goal: 'Markdown documents reviewed in ace TUI gate modals (plan approval, custom
   '
 create_time: 2026-07-19 08:46:05
 status: wip
-prompt: 202607/prompts/gate_frontmatter_highlighting.md
 ---
+
+- **PROMPT:** [202607/prompts/gate_frontmatter_highlighting.md](prompts/gate_frontmatter_highlighting.md)
 
 # Plan: Frontmatter syntax highlighting in gate review documents
 

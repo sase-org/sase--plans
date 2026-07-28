@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 15:35:54
 status: done
-prompt: 202605/prompts/jump_to_stopped_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/jump_to_stopped_cleanup.md](prompts/jump_to_stopped_cleanup.md)
+
 # Plan: Clean Up Stopped-Agent Jump Implementation
 
 ## Goal

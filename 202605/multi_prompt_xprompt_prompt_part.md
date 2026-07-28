@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 17:13:47
 status: done
-prompt: 202605/prompts/multi_prompt_xprompt_prompt_part.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/multi_prompt_xprompt_prompt_part.md](prompts/multi_prompt_xprompt_prompt_part.md)
+
 # Plan: Treat Multi-Prompt XPrompts As Embeddable Prompt Parts
 
 ## Context

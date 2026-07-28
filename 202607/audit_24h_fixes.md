@@ -91,6 +91,8 @@ status: done
 bead_id: sase-8g
 ---
 
+- **PROMPT:** [202607/prompts/audit_24h_fixes.md](prompts/audit_24h_fixes.md)
+
 # Plan: 24h log-audit bug sweep
 
 ## Context

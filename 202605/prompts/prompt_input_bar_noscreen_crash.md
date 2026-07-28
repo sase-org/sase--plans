@@ -1,6 +1,5 @@
----
-plan: 202605/prompt_input_bar_noscreen_crash.md
----
+- **PLAN:** [../202605/prompt_input_bar_noscreen_crash.md](../prompt_input_bar_noscreen_crash.md)
+
  The `sase ace` TUI just crashed on me again with the below error. This happened right after I attempted to launch a new agent using the prompt input widget. Can you help me diagnose the root cause of this issue and (finally) fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
   
 ```

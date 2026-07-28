@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 10:53:30
 status: done
-prompt: 202607/prompts/ci_pyvision_stale_telegram_pragma.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/ci_pyvision_stale_telegram_pragma.md](prompts/ci_pyvision_stale_telegram_pragma.md)
+
 # CI Pyvision Stale Telegram Pragma Plan
 
 ## Diagnosis

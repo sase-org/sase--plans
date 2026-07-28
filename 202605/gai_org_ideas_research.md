@@ -3,8 +3,10 @@ create_time: 2026-05-09 04:30:12
 bead_id: sase-2h
 tier: epic
 status: done
-prompt: 202605/prompts/gai_org_ideas_research.md
 ---
+
+- **PROMPT:** [202605/prompts/gai_org_ideas_research.md](prompts/gai_org_ideas_research.md)
+
 # Plan: Mine `~/org` GAI Notes for SASE Product Ideas
 
 ## Goal

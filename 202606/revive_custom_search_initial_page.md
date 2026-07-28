@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 10:28:20
 status: done
-prompt: 202606/prompts/revive_custom_search_initial_page.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/revive_custom_search_initial_page.md](prompts/revive_custom_search_initial_page.md)
+
 # Plan: Show Custom Revival Search First Page Automatically
 
 ## Summary

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-06-19 09:14:48
 status: done
-prompt: 202606/prompts/failed_launch_prompt_stash.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/failed_launch_prompt_stash.md](prompts/failed_launch_prompt_stash.md)
 
 # Failed Launch Prompt Stash Plan
 

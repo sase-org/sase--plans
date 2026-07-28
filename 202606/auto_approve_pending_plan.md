@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 14:42:04
 status: done
-prompt: 202606/prompts/auto_approve_pending_plan.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/auto_approve_pending_plan.md](prompts/auto_approve_pending_plan.md)
+
 # Fix: `%auto` set via the `A` keymap does not auto-approve an already-pending plan
 
 ## Problem statement

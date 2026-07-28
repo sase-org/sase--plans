@@ -9,8 +9,9 @@ goal: 'The non-lock Git failure regression measures SASE retry behavior without 
   '
 create_time: 2026-07-19 16:10:52
 status: done
-prompt: 202607/prompts/fix_sdd_retry_test_and_land_7n.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_sdd_retry_test_and_land_7n.md](prompts/fix_sdd_retry_test_and_land_7n.md)
 
 # Plan: Repair the SDD retry regression and land sase-7n
 

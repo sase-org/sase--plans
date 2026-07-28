@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 08:31:33
 status: done
-prompt: 202606/prompts/artifact_file_fallback_viewer.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/artifact_file_fallback_viewer.md](prompts/artifact_file_fallback_viewer.md)
+
 # Plan: Artifact File Fallback Viewer
 
 ## Goal

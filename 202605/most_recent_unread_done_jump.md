@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 14:29:55
 status: done
-prompt: 202605/prompts/most_recent_unread_done_jump.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/most_recent_unread_done_jump.md](prompts/most_recent_unread_done_jump.md)
+
 # Plan: Jump unread completed agents by completion recency
 
 ## Objective

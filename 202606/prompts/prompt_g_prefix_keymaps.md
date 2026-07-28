@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_g_prefix_keymaps.md
----
+- **PLAN:** [../202606/prompt_g_prefix_keymaps.md](../prompt_g_prefix_keymaps.md)
+
  We've been changing the keymaps for the prompt input widget a lot this morning (see recent, related git commits), but I think I've finally thought this through and understand what I want the UX to look like. Can you help me implement these new requirements?
 
 - I want to migrate a lot of the recently added keymaps to use new keymaps that use the "g" prefix. As a part of this migration, we will migrate all of the "," preficed prompt input widget keymaps to new "g" preficed keymaps. We should thus remove the recently added "," hints widget that is shown above the prompt input widget. Instead let's implement the same thing for the "g" prefix (hints that the user sees)!

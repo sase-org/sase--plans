@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 10:54:16
 status: done
-prompt: 202605/prompts/clipboard_wayland_stderr.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/clipboard_wayland_stderr.md](prompts/clipboard_wayland_stderr.md)
+
 # Fix Noisy wl-copy stderr in Copy-Mode Keymaps
 
 ## Problem

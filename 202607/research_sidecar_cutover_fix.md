@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 13:02:09
 status: done
-prompt: 202607/prompts/research_sidecar_cutover_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/research_sidecar_cutover_fix.md](prompts/research_sidecar_cutover_fix.md)
+
 # Fix Research Sidecar Remote Cutover, Remediate Project State, and Land Epic sase-60
 
 ## Context

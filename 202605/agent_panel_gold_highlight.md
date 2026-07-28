@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 12:56:17
 status: done
-prompt: 202605/prompts/agent_panel_gold_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_gold_highlight.md](prompts/agent_panel_gold_highlight.md)
+
 # Agents Panel Gold Border Highlight Plan
 
 ## Context

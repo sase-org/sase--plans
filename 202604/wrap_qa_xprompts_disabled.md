@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 14:18:48
 status: done
-prompt: 202604/prompts/wrap_qa_xprompts_disabled.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/wrap_qa_xprompts_disabled.md](prompts/wrap_qa_xprompts_disabled.md)
+
 # Wrap Q&A Section with `%xprompts_enabled` Directive
 
 ## Problem

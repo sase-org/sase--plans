@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 11:56:01
 status: done
-prompt: 202603/prompts/gemini_afteragent_stop_hooks.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/gemini_afteragent_stop_hooks.md](prompts/gemini_afteragent_stop_hooks.md)
 
 # Fix sase_commit_stop_hook for Gemini Agents (AfterAgent Hooks)
 

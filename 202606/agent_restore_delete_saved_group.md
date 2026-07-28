@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 07:14:03
 status: done
-prompt: 202606/prompts/agent_restore_delete_saved_group.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_restore_delete_saved_group.md](prompts/agent_restore_delete_saved_group.md)
+
 # Plan: `ctrl+d` to delete a saved agent group from the Agent Restore panel
 
 ## Goal

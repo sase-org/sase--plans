@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 11:21:09
 status: done
-prompt: 202607/prompts/remove_wait_time_shape_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/remove_wait_time_shape_validation.md](prompts/remove_wait_time_shape_validation.md)
+
 # Plan: Treat Every Positional `%wait` Value as an Agent Dependency
 
 ## Goal

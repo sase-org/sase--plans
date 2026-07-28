@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 00:32:10
 status: wip
-prompt: 202607/prompts/fix_bead_display_flicker.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_bead_display_flicker.md](prompts/fix_bead_display_flicker.md)
+
 # Fix flickering `Bead:` field in the ace TUI agent metadata panel
 
 ## Problem

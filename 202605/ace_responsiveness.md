@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-15 01:06:54
 status: done
-prompt: 202605/prompts/ace_responsiveness.md
 bead_id: sase-3l
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/ace_responsiveness.md](prompts/ace_responsiveness.md)
+
 # `sase ace` Responsiveness Implementation Plan
 
 ## Context

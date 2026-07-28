@@ -2,9 +2,10 @@
 title: Replace CL History Keymaps With Jump-Stack Forward Navigation
 create_time: 2026-05-24 10:27:27
 status: done
-prompt: 202605/prompts/jump_stack_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/jump_stack_keymaps.md](prompts/jump_stack_keymaps.md)
 
 # Plan: Replace CL History Keymaps With Jump-Stack Forward Navigation
 

@@ -11,8 +11,9 @@ goal: 'Rendering any commit diff (or other over-cap content) in sase ace never b
   '
 create_time: 2026-07-18 06:49:02
 status: done
-prompt: 202607/prompts/ace_commit_diff_render_freeze.md
 ---
+
+- **PROMPT:** [202607/prompts/ace_commit_diff_render_freeze.md](prompts/ace_commit_diff_render_freeze.md)
 
 # Plan: Bound the plain-text render fallback so huge commit diffs cannot freeze the TUI
 

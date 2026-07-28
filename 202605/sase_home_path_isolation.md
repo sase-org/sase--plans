@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 13:54:28
 status: done
-prompt: 202605/prompts/sase_home_path_isolation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_home_path_isolation.md](prompts/sase_home_path_isolation.md)
+
 # Fix SASE Home Path Isolation
 
 ## Context

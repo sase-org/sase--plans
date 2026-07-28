@@ -25,6 +25,8 @@ status: done
 bead_id: sase-6b
 ---
 
+- **PROMPT:** [202607/prompts/placeholder_completion.md](prompts/placeholder_completion.md)
+
 # Plan: Placeholder completion for `<placeholder text>` in prompts
 
 ## Product context

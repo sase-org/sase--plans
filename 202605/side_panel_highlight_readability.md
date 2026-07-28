@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 10:09:13
 status: done
-prompt: 202605/prompts/side_panel_highlight_readability.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/side_panel_highlight_readability.md](prompts/side_panel_highlight_readability.md)
+
 # Improve readability of the highlighted entry in ACE TUI side-panels
 
 ## Problem

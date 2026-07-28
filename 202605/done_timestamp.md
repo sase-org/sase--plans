@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 19:09:09
 status: done
-prompt: 202605/prompts/done_timestamp.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/done_timestamp.md](prompts/done_timestamp.md)
+
 # Rename Agent END Timestamp To DONE
 
 ## Context

@@ -1,6 +1,5 @@
----
-plan: 202607/agent_cli_update_awareness.md
----
+- **PLAN:** [../202607/agent_cli_update_awareness.md](../agent_cli_update_awareness.md)
+
  Can you help me make sure that when we check for updates (every 10m or at startup) that we also check for any agent CLI providers that need updates?
 
 - The `,U` keymap should update these agent CLI providers as well, if and only if, a previous background update check has determined that one or more agent CLIs need to be updated.

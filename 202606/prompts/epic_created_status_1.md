@@ -1,6 +1,5 @@
----
-plan: 202606/epic_created_status_1.md
----
+- **PLAN:** [../202606/epic_created_status_1.md](../epic_created_status_1.md)
+
  The "bqu-epic" agent child entry and (as a result) the "bqu" root agent entry should have statuses of "EPIC CREATED", not "DONE" (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

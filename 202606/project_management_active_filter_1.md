@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 11:51:16
 status: done
-prompt: 202606/prompts/project_management_active_filter_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_management_active_filter_1.md](prompts/project_management_active_filter_1.md)
+
 # Default Project Management Panel To Active Projects
 
 ## Objective

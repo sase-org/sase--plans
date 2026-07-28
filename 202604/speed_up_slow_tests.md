@@ -2,9 +2,11 @@
 create_time: 2026-04-24 10:30:17
 status: done
 bead_id: sase-m
-prompt: 202604/prompts/speed_up_slow_tests.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/speed_up_slow_tests.md](prompts/speed_up_slow_tests.md)
+
 # Plan: Speed Up the 20 Slowest Tests
 
 ## Context

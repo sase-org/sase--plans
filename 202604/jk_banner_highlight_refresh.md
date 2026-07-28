@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 08:50:16
 status: done
-prompt: 202604/prompts/jk_banner_highlight_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/jk_banner_highlight_refresh.md](prompts/jk_banner_highlight_refresh.md)
+
 # Plan: Refresh Agent-List Highlight on j/k Navigation Across Folded-Group Banners
 
 ## Background and Bug Statement

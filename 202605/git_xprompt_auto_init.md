@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 19:04:51
 status: done
-prompt: 202605/prompts/git_xprompt_auto_init.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/git_xprompt_auto_init.md](prompts/git_xprompt_auto_init.md)
+
 # Plan: Auto-Initialize Bare Git Projects From `#git:<project>`
 
 ## Goal

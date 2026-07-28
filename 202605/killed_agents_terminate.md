@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 12:09:34
 status: done
-prompt: 202605/prompts/killed_agents_terminate.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/killed_agents_terminate.md](prompts/killed_agents_terminate.md)
+
 # Plan: Make Killed SASE Agents Actually Terminate
 
 ## Context

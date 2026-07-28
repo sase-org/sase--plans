@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 12:29:34
 status: done
-prompt: 202604/prompts/inherit_parent_pr_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/inherit_parent_pr_tags.md](prompts/inherit_parent_pr_tags.md)
 
 # Plan: Inherit PR Tags from Parent PR
 

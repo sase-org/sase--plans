@@ -4,8 +4,9 @@ goal: Root agents paused for user answers stop blocking runner-slot drain barrie
   then reacquire capacity safely before resuming.
 create_time: 2026-07-15 13:04:05
 status: done
-prompt: 202607/prompts/question_paused_runner_slots.md
 ---
+
+- **PROMPT:** [202607/prompts/question_paused_runner_slots.md](prompts/question_paused_runner_slots.md)
 
 # Plan: Yield runner slots while agents await answers
 

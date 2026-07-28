@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 10:10:15
 status: done
-prompt: 202605/prompts/rename_blog_series.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/rename_blog_series.md](prompts/rename_blog_series.md)
+
 # Plan: Rename the sase.sh blog series hub
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 16:03:05
 status: done
-prompt: 202605/prompts/agent_panel_highlight_reset.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_highlight_reset.md](prompts/agent_panel_highlight_reset.md)
+
 # Stop stale row highlight after dynamic agent panel switches
 
 ## Problem

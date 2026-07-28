@@ -5,8 +5,9 @@ goal: Machine-managed SDD sidecar clones recover from dirty-index and stale-reba
   wedges without losing local state or flooding logs and axe error digests.
 create_time: 2026-07-20 16:37:36
 status: done
-prompt: 202607/prompts/sdd_sidecar_selfheal.md
 ---
+
+- **PROMPT:** [202607/prompts/sdd_sidecar_selfheal.md](prompts/sdd_sidecar_selfheal.md)
 
 # Plan: Self-heal wedged SDD sidecar clones
 

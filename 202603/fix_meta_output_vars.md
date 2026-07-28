@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 19:52:32
 status: done
-prompt: 202603/prompts/fix_meta_output_vars.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_meta_output_vars.md](prompts/fix_meta_output_vars.md)
 
 # Fix: `meta_` xprompt output variables broken in `pr.yml` and `commit.yml`
 

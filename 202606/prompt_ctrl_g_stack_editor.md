@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 11:46:11
 status: done
-prompt: 202606/prompts/prompt_ctrl_g_stack_editor.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_ctrl_g_stack_editor.md](prompts/prompt_ctrl_g_stack_editor.md)
+
 # Plan: Make Ctrl+G the Stacked Prompt Editor Key
 
 ## Goal

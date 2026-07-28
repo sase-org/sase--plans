@@ -1,6 +1,5 @@
----
-plan: 202605/bead_env_commit_contract.md
----
+- **PLAN:** [../202605/bead_env_commit_contract.md](../bead_env_commit_contract.md)
+
   Currently, we leave it up to the agent whether it's going to associate a bead with a commit or not (using the `sase commit` command). Can we start using an environment variable that has the bead ID as its value and make it impossible for an agent to ever commit without having the bead associated (i.e. included in the commit message)?
 
 - This means we can remove the --bead option.

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 23:10:38
 status: done
-prompt: 202603/prompts/approve_options_improvements.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/approve_options_improvements.md](prompts/approve_options_improvements.md)
 
 # Plan: Integrate PR #69 Improvements into PR #70
 

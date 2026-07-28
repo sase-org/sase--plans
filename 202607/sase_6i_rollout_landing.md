@@ -6,7 +6,6 @@ goal: Restore the rollout coverage that phase 8 reported but did not land, reval
   and plan state persisted.
 create_time: 2026-07-17 02:40:49
 status: done
-prompt: sdd/plans/202607/prompts/sase_6i_rollout_landing.md
 ---
 
 # Plan: Finish and land the custom notification gates epic

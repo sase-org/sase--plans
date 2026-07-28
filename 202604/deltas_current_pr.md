@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 12:38:13
 status: done
-prompt: 202604/prompts/deltas_current_pr.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/deltas_current_pr.md](prompts/deltas_current_pr.md)
+
 # Plan: Make DELTAS Reflect Current PR State
 
 ## Problem

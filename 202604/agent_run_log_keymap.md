@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 13:51:14
 status: done
-prompt: 202604/prompts/agent_run_log_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_run_log_keymap.md](prompts/agent_run_log_keymap.md)
+
 # Restore "Agent Run Log" keymap on the CLs tab
 
 ## Problem

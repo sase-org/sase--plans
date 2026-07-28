@@ -2,9 +2,10 @@
 create_time: 2026-04-12 16:37:07
 status: done
 bead_id: sase-i
-prompt: 202604/prompts/ace_testing_dsl.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/ace_testing_dsl.md](prompts/ace_testing_dsl.md)
 
 # Plan: Implement `sase.ace.testing` — Playwright-Inspired TUI Testing DSL
 

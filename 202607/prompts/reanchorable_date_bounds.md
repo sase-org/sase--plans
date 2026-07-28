@@ -1,10 +1,4 @@
----
-plan: '[../202607/reanchorable_date_bounds.md](../reanchorable_date_bounds.md)'
----
-
-
-
-
+- **PLAN:** [../202607/reanchorable_date_bounds.md](../reanchorable_date_bounds.md)
 
 Can you complete the work for bead sase-8h.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

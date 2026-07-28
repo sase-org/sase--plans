@@ -1,6 +1,5 @@
----
-plan: 202607/reference_commit_tag_links.md
----
+- **PLAN:** [../202607/reference_commit_tag_links.md](../reference_commit_tag_links.md)
+
  Can you help me add support for using reference-style markdown links as
 values for sase commit tags (the references will go after the sase commit tags,
 after a blank line) and, as our first use-case, start using a link to the plan

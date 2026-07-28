@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 17:22:32
 status: wip
-prompt: 202604/prompts/pyenv_shim_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pyenv_shim_cleanup.md](prompts/pyenv_shim_cleanup.md)
 
 # Plan: Remove Stale pyenv sase Shim
 

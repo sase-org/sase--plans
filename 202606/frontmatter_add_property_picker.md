@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 09:18:21
 status: done
-prompt: 202606/prompts/frontmatter_add_property_picker.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/frontmatter_add_property_picker.md](prompts/frontmatter_add_property_picker.md)
+
 # Redesign the Add-Property Picker for the Frontmatter Panel
 
 ## Context

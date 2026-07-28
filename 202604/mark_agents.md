@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-22 14:37:23
 status: wip
-prompt: 202604/prompts/mark_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/mark_agents.md](prompts/mark_agents.md)
 
 # Mark Agents on the `sase ace` "Agents" Tab
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 14:12:22
 status: done
-prompt: 202604/prompts/at_prefix_file_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/at_prefix_file_completion.md](prompts/at_prefix_file_completion.md)
 
 # Plan: Fix file completion for @-prefixed file paths
 

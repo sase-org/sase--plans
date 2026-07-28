@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 11:13:29
 status: done
-prompt: 202605/prompts/chats_status_skill_runtime_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/chats_status_skill_runtime_fallback.md](prompts/chats_status_skill_runtime_fallback.md)
+
 # Plan: Teach `sase_chats` / `sase_agents_status` skills to fall through to live agents and mid-run artifacts
 
 ## 1. Motivation

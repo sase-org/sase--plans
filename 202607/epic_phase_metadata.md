@@ -7,8 +7,9 @@ goal: 'Agents associated with epic plans see every declared epic phase as a poli
   '
 create_time: 2026-07-15 14:42:53
 status: done
-prompt: 202607/prompts/epic_phase_metadata.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_phase_metadata.md](prompts/epic_phase_metadata.md)
 
 # Plan: Render epic phases in SASE PLAN metadata
 

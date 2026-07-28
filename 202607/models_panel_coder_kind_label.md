@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-01 07:46:01
 status: done
-prompt: 202607/prompts/models_panel_coder_kind_label.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/models_panel_coder_kind_label.md](prompts/models_panel_coder_kind_label.md)
+
 # Plan: Show `coder` instead of `<provider> coder` in the Models panel kind column
 
 ## Goal

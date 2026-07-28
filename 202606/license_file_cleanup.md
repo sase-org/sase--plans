@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 13:34:19
 status: done
-prompt: 202606/prompts/license_file_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/license_file_cleanup.md](prompts/license_file_cleanup.md)
+
 # Plan: Add Official MIT License File and Packaging Metadata
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 16:26:03
 status: done
-prompt: 202606/prompts/sase_telegram_pypi_010.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_telegram_pypi_010.md](prompts/sase_telegram_pypi_010.md)
+
 # Plan: release sase-telegram 0.1.0 to PyPI
 
 ## Context

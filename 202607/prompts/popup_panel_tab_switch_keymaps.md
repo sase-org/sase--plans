@@ -1,6 +1,5 @@
----
-plan: 202607/popup_panel_tab_switch_keymaps.md
----
+- **PLAN:** [../202607/popup_panel_tab_switch_keymaps.md](../popup_panel_tab_switch_keymaps.md)
+
  Can you help me make sure that the `<tab>` and `<shift-tab>` keymaps work when the popup panels that are triggered by the `?` and `,?` keymaps is focused?
 
 - These keymaps should change the TUI tab just like they do when these panels are not active.

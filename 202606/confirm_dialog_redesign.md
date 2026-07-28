@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 09:01:27
 status: done
-prompt: 202606/prompts/confirm_dialog_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/confirm_dialog_redesign.md](prompts/confirm_dialog_redesign.md)
+
 # Plan: Unified, Beautiful Confirmation Dialogs for the `sase ace` TUI
 
 ## Problem & Motivation

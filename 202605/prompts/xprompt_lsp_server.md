@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_lsp_server.md
----
+- **PLAN:** [../202605/xprompt_lsp_server.md](../xprompt_lsp_server.md)
+
     I want to minimize the logic in the sase-nvim plugin, give it even better functionality (e.g. add directive completion and jump-to-def), and make it easier for other editors to add support for xprompts by factoring out as much of the logic as possible to a new LSP server that we define in sase-core. Can you help me implement this? Review the recently created research markdown file that's related to this for context.
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

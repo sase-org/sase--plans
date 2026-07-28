@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 23:47:44
 status: done
-prompt: 202606/prompts/pyscripts_skip_nested_repos.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/pyscripts_skip_nested_repos.md](prompts/pyscripts_skip_nested_repos.md)
+
 # Plan: Stop `pyscripts` linter from descending into nested sibling-repo checkouts
 
 ## Problem / CI symptom

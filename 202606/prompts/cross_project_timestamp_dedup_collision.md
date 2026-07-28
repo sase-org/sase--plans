@@ -1,6 +1,5 @@
----
-plan: 202606/cross_project_timestamp_dedup_collision.md
----
+- **PLAN:** [../202606/cross_project_timestamp_dedup_collision.md](../cross_project_timestamp_dedup_collision.md)
+
  The sase agent named "3p.f1.f1" has a child agent step named "3p.f1.f1--code" (see the `sase ace` snapshot below) that should have a status of "TALE APPROVED" instead of "TALE DONE". As a consequence the "3p.f1.f1" root entry should also have that status. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
   

@@ -1,6 +1,5 @@
----
-plan: 202605/parent_prefix_group_membership.md
----
+- **PLAN:** [../202605/parent_prefix_group_membership.md](../parent_prefix_group_membership.md)
+
  #resume:ade.code Agent's that are named `<foo>.<bar>` should also be included in the `<foo>.<bar>.` group. For example, in the below `sase ace` snapshot, `sase-42.3` should be in the `@sase-42.3`
 group. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

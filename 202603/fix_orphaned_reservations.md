@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-30 18:52:52
-prompt: 202603/prompts/fix_orphaned_reservations.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_orphaned_reservations.md](prompts/fix_orphaned_reservations.md)
 
 # Fix Orphaned "Reserved" ChangeSpec Entries
 

@@ -6,8 +6,9 @@ goal: Make the ten-minute ACE periodic update-check cadence a safe user-overrida
   cache TTL semantics.
 create_time: 2026-07-16 09:47:17
 status: done
-prompt: 202607/prompts/configurable_ace_update_check_interval.md
 ---
+
+- **PROMPT:** [202607/prompts/configurable_ace_update_check_interval.md](prompts/configurable_ace_update_check_interval.md)
 
 # Plan: Configurable ACE Update-Check Interval
 

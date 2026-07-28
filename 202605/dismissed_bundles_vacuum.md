@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 19:58:22
 status: wip
-prompt: 202605/prompts/dismissed_bundles_vacuum.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/dismissed_bundles_vacuum.md](prompts/dismissed_bundles_vacuum.md)
+
 # Plan: Reclaim ~131M from the dismissed-bundle index and refresh the artifact index
 
 ## Context

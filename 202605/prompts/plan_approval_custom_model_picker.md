@@ -1,6 +1,5 @@
----
-plan: 202605/plan_approval_custom_model_picker.md
----
+- **PLAN:** [../202605/plan_approval_custom_model_picker.md](../plan_approval_custom_model_picker.md)
+
  Can you help me migrate the `A` (options) keymap on the plan approval TUI modal to `c` (custom) and make some
 improvements to it?
 

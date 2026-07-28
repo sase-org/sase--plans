@@ -3,8 +3,10 @@ create_time: 2026-07-07 15:35:46
 bead_id: sase-5i
 tier: epic
 status: done
-prompt: 202607/prompts/vcs_ref_colon_completion.md
 ---
+
+- **PROMPT:** [202607/prompts/vcs_ref_colon_completion.md](prompts/vcs_ref_colon_completion.md)
+
 # Plan: VCS-Agnostic Ref Completion for `#gh:` / `#git:` (the `:` trigger)
 
 ## Problem & Product Context

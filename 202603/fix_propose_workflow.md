@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 15:26:15
 status: done
-prompt: 202603/prompts/fix_propose_workflow.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_propose_workflow.md](prompts/fix_propose_workflow.md)
 
 # Plan: Fix fix-hook proposal creation
 

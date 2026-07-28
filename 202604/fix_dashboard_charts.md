@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 20:59:16
 status: done
-prompt: 202604/prompts/fix_dashboard_charts.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_dashboard_charts.md](prompts/fix_dashboard_charts.md)
 
 # Plan: Fix Telemetry Dashboard Charts
 

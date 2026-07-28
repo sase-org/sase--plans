@@ -65,6 +65,8 @@ status: done
 bead_id: sase-99
 ---
 
+- **PROMPT:** [202607/prompts/lane_neighbors_section.md](prompts/lane_neighbors_section.md)
+
 # Plan: NEIGHBORS section for agent lane metadata panels
 
 ## 1. What we are building

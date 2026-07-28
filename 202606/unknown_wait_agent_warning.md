@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 17:40:45
 status: done
-prompt: 202606/prompts/unknown_wait_agent_warning.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/unknown_wait_agent_warning.md](prompts/unknown_wait_agent_warning.md)
+
 # Plan: Warning marker for unknown agents in the "Waiting for:" field
 
 ## Product context

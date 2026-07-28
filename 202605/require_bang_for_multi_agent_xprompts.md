@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 15:24:50
 status: done
-prompt: 202605/prompts/require_bang_for_multi_agent_xprompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/require_bang_for_multi_agent_xprompts.md](prompts/require_bang_for_multi_agent_xprompts.md)
+
 # Require `#!` for multi-agent Markdown xprompts
 
 ## Problem

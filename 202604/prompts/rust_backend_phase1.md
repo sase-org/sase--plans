@@ -1,6 +1,5 @@
----
-plan: 202604/rust_backend_phase1.md
----
+- **PLAN:** [../202604/rust_backend_phase1.md](../rust_backend_phase1.md)
+
   Can you help me continue the rust migration described in the @sdd/research/202604/rust_backend_migration.md file by completing phase 1 (phase 0 is already complete)? I've already defined the ../sase-core repo.
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but
 keep in mind that each phase will be completed by a distinct agent instance (i.e. a distinct `claude` / `gemini` /

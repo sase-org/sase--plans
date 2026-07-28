@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 10:10:03
 status: done
-prompt: 202604/prompts/ctrl_np_approve_options.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ctrl_np_approve_options.md](prompts/ctrl_np_approve_options.md)
 
 # Plan: Add ctrl+n / ctrl+p Navigation to ApproveOptionsModal
 

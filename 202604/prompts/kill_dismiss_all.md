@@ -1,6 +1,5 @@
----
-plan: 202604/kill_dismiss_all.md
----
+- **PLAN:** [../202604/kill_dismiss_all.md](../kill_dismiss_all.md)
+
 Can you help me add a new `,X` (kill/dismiss all) keymap on the "Agents" tab of the `sase ace` TUI?
 
 - This keymap shoould work like the `X` keymap on that tab, but it should also kill all running agents (whereas `X` just

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 17:00:43
 status: done
-prompt: 202607/prompts/tui_bead_warmup_pump_stall.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tui_bead_warmup_pump_stall.md](prompts/tui_bead_warmup_pump_stall.md)
+
 # Fix ACE TUI Freezes: Bead-Confirmation Warmup Blocks the App Message Pump
 
 ## Problem

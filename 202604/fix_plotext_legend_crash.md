@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 19:08:58
 status: done
-prompt: 202604/prompts/fix_plotext_legend_crash.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_plotext_legend_crash.md](prompts/fix_plotext_legend_crash.md)
 
 # Fix: plotext IndexError in telemetry dashboard charts mode
 

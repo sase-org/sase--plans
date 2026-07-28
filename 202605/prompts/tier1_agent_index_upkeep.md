@@ -1,6 +1,5 @@
----
-plan: 202605/tier1_agent_index_upkeep.md
----
+- **PLAN:** [../202605/tier1_agent_index_upkeep.md](../tier1_agent_index_upkeep.md)
+
  Can you help me find any instances where we should be updating the tier 1 agent index but are not currently
 doing so? Update the code accordingly so the tier 1 agent index is kept up-to-date. We keep dealing with bugs related to
 this, so dig deep / look hard! Make sure to review the ~/.sase/plans/202605/tier1_agent_index_lifecycle.md and

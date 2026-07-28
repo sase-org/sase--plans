@@ -1,6 +1,5 @@
----
-plan: 202605/jump_to_stopped_agent_fix.md
----
+- **PLAN:** [../202605/jump_to_stopped_agent_fix.md](../jump_to_stopped_agent_fix.md)
+
  When I use the new `,J` keymap, it is supposed to take me to the next stopped agent row, but that doesn't seem
 to be working. For example, the below `sase ace` snapshot was taken after I used the `,J` keymap, which should have
 focused the "PLAN" agent row at the top. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

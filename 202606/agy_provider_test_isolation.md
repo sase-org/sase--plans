@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 06:51:21
 status: done
-prompt: 202606/prompts/agy_provider_test_isolation.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agy_provider_test_isolation.md](prompts/agy_provider_test_isolation.md)
+
 # Plan: Fix flaky agy provider command-construction test
 
 ## Diagnosis

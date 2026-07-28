@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-23 19:20:33
 status: done
-prompt: 202604/prompts/axe_rerun_done_bgcmd.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/axe_rerun_done_bgcmd.md](prompts/axe_rerun_done_bgcmd.md)
+
 # Plan: `r` Re-run Keymap for Done Commands on AXE Tab
 
 ## Goal

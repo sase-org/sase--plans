@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-20 13:32:36
 status: done
-prompt: 202604/prompts/fix_critique_comments_stderr_merge.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_critique_comments_stderr_merge.md](prompts/fix_critique_comments_stderr_merge.md)
 
 # Plan: Fix `critique_comments` stderr-merge bug breaking `sase axe` comment polling
 

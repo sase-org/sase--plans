@@ -1,6 +1,5 @@
----
-plan: 202607/tab_guide_modal.md
----
+- **PLAN:** [../202607/tab_guide_modal.md](../tab_guide_modal.md)
+
   The PRs tab and the agents tab already have dedicated onboarding pages that take over the tab when there are no PRs/agents. We do not, however, have an onboarding page for the AXE tab, which will always have contents (e.g. lumberjacks and chops) to look at. Can you help me add a new popup panel on this tab that serves this purpose?
 
 - This popup panel should be triggered via a new `,?` keymap.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:04:35
 status: done
-prompt: 202605/prompts/agents_date_4_hour_windows.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_date_4_hour_windows.md](prompts/agents_date_4_hour_windows.md)
+
 # Plan: Agents by-date 4-hour windows
 
 ## Context

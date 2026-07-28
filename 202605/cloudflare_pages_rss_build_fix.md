@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 11:20:47
 status: done
-prompt: 202605/prompts/cloudflare_pages_rss_build_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cloudflare_pages_rss_build_fix.md](prompts/cloudflare_pages_rss_build_fix.md)
+
 # Plan: Fix Cloudflare Pages RSS Build Failure
 
 ## Problem Summary

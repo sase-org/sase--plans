@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 23:32:46
 status: wip
-prompt: 202604/prompts/ace_profile_flag.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_profile_flag.md](prompts/ace_profile_flag.md)
 
 # Plan: Add `--profile` flag to `sase ace`
 

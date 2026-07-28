@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:10:18
 status: done
-prompt: 202606/prompts/project_keymap_lowercase_p.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_keymap_lowercase_p.md](prompts/project_keymap_lowercase_p.md)
+
 # Plan: move project management leader key from ,P to ,p
 
 ## Context

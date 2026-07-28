@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 18:12:34
 status: done
-prompt: 202603/prompts/pr_closed_after_ready_transition.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/pr_closed_after_ready_transition.md](prompts/pr_closed_after_ready_transition.md)
 
 # Plan: Diagnose and Fix PR Closing After Draft→Ready Transition
 

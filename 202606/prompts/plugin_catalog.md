@@ -1,6 +1,5 @@
----
-plan: 202606/plugin_catalog.md
----
+- **PLAN:** [../202606/plugin_catalog.md](../plugin_catalog.md)
+
  Can you help me add a new `sase plugin list` command and a new `sase plugin show <plugin_name>` command?
 
 - The list command should show a listing of all of the sase plugins that exist, using the GitHub `sase-plugin` repo topic to figure that out (all sase plugin repos, internal and external, are expected to have this GitHub topic).

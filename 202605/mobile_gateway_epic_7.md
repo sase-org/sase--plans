@@ -4,8 +4,9 @@ legend_bead_id: sase-26
 tier: epic
 create_time: 2026-05-06 19:59:08
 status: done
-prompt: 202605/prompts/mobile_gateway_epic_7.md
 ---
+
+- **PROMPT:** [202605/prompts/mobile_gateway_epic_7.md](prompts/mobile_gateway_epic_7.md)
 
 # Plan: Mobile MVP Epic 7 - Background Delivery, Packaging, And End-To-End Hardening
 

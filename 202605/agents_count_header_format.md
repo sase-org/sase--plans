@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 13:23:52
 status: done
-prompt: 202605/prompts/agents_count_header_format.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_count_header_format.md](prompts/agents_count_header_format.md)
+
 # Plan: Agents Tab Count Header Format
 
 ## Goal

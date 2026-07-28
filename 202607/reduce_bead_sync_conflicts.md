@@ -6,8 +6,9 @@ goal: Concurrent bead writers converge through deterministic append-only event-s
   syncs recover without leaving an unsafe repository.
 create_time: 2026-07-20 16:44:50
 status: done
-prompt: 202607/prompts/reduce_bead_sync_conflicts.md
 ---
+
+- **PROMPT:** [202607/prompts/reduce_bead_sync_conflicts.md](prompts/reduce_bead_sync_conflicts.md)
 
 # Plan: Reduce bead stream sync conflicts
 

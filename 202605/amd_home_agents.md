@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 16:36:51
 status: done
-prompt: 202605/prompts/amd_home_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/amd_home_agents.md](prompts/amd_home_agents.md)
+
 # Manage Home AGENTS.md With AMD
 
 ## Context

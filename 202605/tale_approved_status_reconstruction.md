@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 14:04:52
 status: done
-prompt: 202605/prompts/tale_approved_status_reconstruction.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tale_approved_status_reconstruction.md](prompts/tale_approved_status_reconstruction.md)
+
 # Plan: Preserve Tale Approval Status During Code Handoff
 
 ## Problem

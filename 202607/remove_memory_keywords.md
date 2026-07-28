@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 07:01:21
 status: done
-prompt: 202607/prompts/remove_memory_keywords.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/remove_memory_keywords.md](prompts/remove_memory_keywords.md)
+
 # Remove the Memory `keywords` Property
 
 ## Goal

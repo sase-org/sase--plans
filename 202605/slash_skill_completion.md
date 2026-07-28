@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 11:15:14
 status: done
-prompt: 202605/prompts/slash_skill_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/slash_skill_completion.md](prompts/slash_skill_completion.md)
+
 # Plan: restore slash-skill completion in the prompt widget
 
 ## Problem

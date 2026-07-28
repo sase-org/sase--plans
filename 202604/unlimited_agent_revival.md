@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-05 11:41:10
 status: done
-prompt: 202604/prompts/unlimited_agent_revival.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/unlimited_agent_revival.md](prompts/unlimited_agent_revival.md)
 
 # Plan: Unlimited Agent Revival
 

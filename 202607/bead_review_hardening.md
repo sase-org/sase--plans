@@ -132,6 +132,8 @@ status: done
 bead_id: sase-9v
 ---
 
+- **PROMPT:** [202607/prompts/bead_review_hardening.md](prompts/bead_review_hardening.md)
+
 # Harden the bead subsystem against the verified gaps from the post-sase-9r/9s review
 
 ## Context

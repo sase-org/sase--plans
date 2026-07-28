@@ -1,6 +1,5 @@
----
-plan: 202605/tmux_agent_workspace_dir.md
----
+- **PLAN:** [../202605/tmux_agent_workspace_dir.md](../tmux_agent_workspace_dir.md)
+
  When I use the `t` keymap to attempt to open a new tmux window that `cd`s into this agent's workspace directory, which should be #10 (see the `sase ace` snapshot below), the primary workspace directory (~/projects/github/sase-org/sase/) is `cd`ed into instead. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

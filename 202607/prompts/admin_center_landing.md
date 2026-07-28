@@ -1,6 +1,5 @@
----
-plan: 202607/admin_center_landing.md
----
+- **PLAN:** [../202607/admin_center_landing.md](../admin_center_landing.md)
+
  Can you help me add a landing page to the "SASE Admin Center" panel
 that we start showing to the user whenever they trigger this panel (e.g. via the
 `#` keymap)?

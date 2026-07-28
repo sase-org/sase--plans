@@ -2,9 +2,10 @@
 name: link_to_sase_sh
 status: draft
 create_time: 2026-05-10 13:15:22
-prompt: 202605/prompts/link_to_sase_sh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/link_to_sase_sh.md](prompts/link_to_sase_sh.md)
 
 # Plan: Make repo documentation point to sase.sh in appropriate places
 

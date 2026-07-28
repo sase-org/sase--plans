@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-22 20:22:57
 status: done
-prompt: 202603/prompts/prompt_snippet_expansion.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/prompt_snippet_expansion.md](prompts/prompt_snippet_expansion.md)
 
 # Plan: Prompt Input Snippet Expansion
 

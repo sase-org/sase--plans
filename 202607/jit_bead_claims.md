@@ -35,6 +35,8 @@ status: done
 bead_id: sase-8f
 ---
 
+- **PROMPT:** [202607/prompts/jit_bead_claims.md](prompts/jit_bead_claims.md)
+
 # Plan: Just-in-time bead claims for launched agents
 
 ## Context and target behavior

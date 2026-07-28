@@ -32,6 +32,8 @@ status: done
 bead_id: sase-6q
 ---
 
+- **PROMPT:** [202607/prompts/big_epic_lander.md](prompts/big_epic_lander.md)
+
 # Plan: Threshold-aware big epic lander routing
 
 ## Context and design decisions

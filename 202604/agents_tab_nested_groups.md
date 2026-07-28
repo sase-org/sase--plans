@@ -2,9 +2,11 @@
 create_time: 2026-04-25 16:14:26
 status: done
 bead_id: sase-q
-prompt: 202604/prompts/agents_tab_nested_groups.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_nested_groups.md](prompts/agents_tab_nested_groups.md)
+
 # Plan: Nested Agent Groups on the Agents Tab
 
 ## Goal

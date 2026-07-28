@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 13:08:12
 status: done
-prompt: 202604/prompts/fix_cls_auto_refresh_visibility.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_cls_auto_refresh_visibility.md](prompts/fix_cls_auto_refresh_visibility.md)
+
 # Plan: Restore CLs Tab Auto-Refresh Visibility
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 17:35:53
 status: done
-prompt: 202605/prompts/notification_mark_all_read_perf.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/notification_mark_all_read_perf.md](prompts/notification_mark_all_read_perf.md)
+
 # Plan: Fix Phase 7 notification mark-all-read perf floor
 
 ## Problem

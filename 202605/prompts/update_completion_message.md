@@ -1,6 +1,5 @@
----
-plan: 202605/update_completion_message.md
----
+- **PLAN:** [../202605/update_completion_message.md](../update_completion_message.md)
+
  The user sent an image via Telegram with the following caption:
 
  Can you help me start sending a success or failure message when the operations associated with the /update slash command are complete? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

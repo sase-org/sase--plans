@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 11:58:25
 status: done
-prompt: 202604/prompts/rust_backend_unimplemented_fallbacks.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_unimplemented_fallbacks.md](prompts/rust_backend_unimplemented_fallbacks.md)
+
 # Plan: make unported Rust backend facade methods fall back to Python
 
 ## Problem

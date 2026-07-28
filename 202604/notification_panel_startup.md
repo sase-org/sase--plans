@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 12:57:47
 status: done
-prompt: 202604/prompts/notification_panel_startup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_panel_startup.md](prompts/notification_panel_startup.md)
+
 # Plan: Stop Notification Panel From Opening On Startup
 
 ## Context

@@ -9,8 +9,9 @@ goal: 'Tribe, clan, family, panel-title, and group-banner summaries in `sase ace
   '
 create_time: 2026-07-19 10:53:33
 status: done
-prompt: 202607/prompts/tribe_agent_count_projection.md
 ---
+
+- **PROMPT:** [202607/prompts/tribe_agent_count_projection.md](prompts/tribe_agent_count_projection.md)
 
 # Plan: Concrete-agent counting and settled family-member status projection
 

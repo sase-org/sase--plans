@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-11 10:36:57
 status: draft
-prompt: 202605/prompts/side_panel_selection_visibility.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/side_panel_selection_visibility.md](prompts/side_panel_selection_visibility.md)
 
 # Make the highlighted side-panel row clearly selected (without sacrificing readability)
 

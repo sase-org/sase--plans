@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 12:35:22
 status: done
-prompt: 202607/prompts/group_actions_panel_scope.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/group_actions_panel_scope.md](prompts/group_actions_panel_scope.md)
+
 # Fix Agents-tab focused-group mark/kill over-targeting agents in other panels
 
 ## Problem (user report)

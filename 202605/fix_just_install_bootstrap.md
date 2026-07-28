@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 17:53:32
 status: done
-prompt: 202605/prompts/fix_just_install_bootstrap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_just_install_bootstrap.md](prompts/fix_just_install_bootstrap.md)
+
 # Plan: Bootstrap `fix_just` with `just install`
 
 ## Goal

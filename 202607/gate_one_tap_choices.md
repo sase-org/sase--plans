@@ -54,6 +54,8 @@ status: wip
 bead_id: sase-6o
 ---
 
+- **PROMPT:** [202607/prompts/gate_one_tap_choices.md](prompts/gate_one_tap_choices.md)
+
 # Plan: One-tap gate choices — collapse redundant plan-approval buttons
 
 ## Problem and root cause

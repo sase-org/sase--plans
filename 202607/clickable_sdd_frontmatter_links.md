@@ -8,8 +8,9 @@ goal: 'Prompt and plan artifacts link to each other from GitHub while SASE conti
   '
 create_time: 2026-07-21 08:53:32
 status: done
-prompt: 202607/prompts/clickable_sdd_frontmatter_links.md
 ---
+
+- **PROMPT:** [202607/prompts/clickable_sdd_frontmatter_links.md](prompts/clickable_sdd_frontmatter_links.md)
 
 # Plan: Make SDD prompt and plan frontmatter links clickable
 

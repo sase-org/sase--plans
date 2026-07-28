@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:44:17
 status: wip
-prompt: 202606/prompts/project_management_edit_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_management_edit_keymap.md](prompts/project_management_edit_keymap.md)
+
 # Plan: Project Management `e` Edit Keymap
 
 ## Goal

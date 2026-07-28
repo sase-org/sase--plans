@@ -9,8 +9,9 @@ goal: 'Agent clan and real multi-member family rows present a name-first identit
   '
 create_time: 2026-07-18 10:42:04
 status: done
-prompt: 202607/prompts/clan_family_name_first_identity.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_family_name_first_identity.md](prompts/clan_family_name_first_identity.md)
 
 # Plan: Color-matched clan and family name-first identities
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 20:28:23
 status: completed
-prompt: 202605/prompts/persist_default_artifacts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/persist_default_artifacts.md](prompts/persist_default_artifacts.md)
+
 # Plan: Persist auto-discovered agent artifacts to `~/.sase/artifacts/`
 
 ## Problem

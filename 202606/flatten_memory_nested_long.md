@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-17 17:51:32
 status: done
-prompt: 202606/prompts/flatten_memory_nested_long.md
 bead_id: sase-4u
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/flatten_memory_nested_long.md](prompts/flatten_memory_nested_long.md)
+
 # Plan: Flatten `memory/` + Nested Long-Term Memory (hub notes)
 
 ## Summary

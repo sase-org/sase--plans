@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 08:37:46
 status: done
-prompt: 202606/prompts/prompt_autopairs.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_autopairs.md](prompts/prompt_autopairs.md)
+
 # Prompt Autopairs Plan
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 16:36:55
 status: done
-prompt: 202606/prompts/updates_tab_incoming_commits.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/updates_tab_incoming_commits.md](prompts/updates_tab_incoming_commits.md)
+
 # Plan: Incoming Commits on the Admin Center "Updates" Tab
 
 ## Goal

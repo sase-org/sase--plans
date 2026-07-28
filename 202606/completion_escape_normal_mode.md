@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 14:45:55
 status: done
-prompt: 202606/prompts/completion_escape_normal_mode.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/completion_escape_normal_mode.md](prompts/completion_escape_normal_mode.md)
+
 # Plan: Leave Prompt Completion Escape In Normal Mode
 
 ## Context

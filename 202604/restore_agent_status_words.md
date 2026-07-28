@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-04-26 03:24:00
-prompt: 202604/prompts/restore_agent_status_words.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/restore_agent_status_words.md](prompts/restore_agent_status_words.md)
 
 # Restore Readable Status Words on Agent Rows
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 16:50:10
 status: done
-prompt: 202604/prompts/lumberjack_timeout_test_flake.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/lumberjack_timeout_test_flake.md](prompts/lumberjack_timeout_test_flake.md)
+
 # Plan: Fix flaky test `test_per_chop_timeout_overrides_lumberjack_default`
 
 ## Problem

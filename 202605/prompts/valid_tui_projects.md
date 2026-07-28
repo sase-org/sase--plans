@@ -1,6 +1,5 @@
----
-plan: 202605/valid_tui_projects.md
----
+- **PLAN:** [../202605/valid_tui_projects.md](../valid_tui_projects.md)
+
  A lot of the projects that I see when I use the `@` keymap are not valid (see the `sase ace` snapshot below). Can you help me fix this so we only show valid project names in the TUI? Make sure you fix this everywhere we display projects (not just the `@` keymap--though that might be the only place). Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

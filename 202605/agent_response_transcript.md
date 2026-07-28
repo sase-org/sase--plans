@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 01:11:32
 status: done
-prompt: 202605/prompts/agent_response_transcript.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_response_transcript.md](prompts/agent_response_transcript.md)
+
 # Plan: Preserve Agent Responses in Completion Transcript PDFs
 
 ## Problem

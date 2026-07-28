@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 15:49:19
 status: done
-prompt: 202606/prompts/wait_time_keyword.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/wait_time_keyword.md](prompts/wait_time_keyword.md)
+
 # Plan: Migrate `%time` to a `time=` keyword on `%wait` (+ new `#t` xprompt)
 
 ## Goal & product context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 15:41:42
 status: done
-prompt: 202606/prompts/agent_neighbors_hoods.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_neighbors_hoods.md](prompts/agent_neighbors_hoods.md)
+
 # Agent Neighbors and Hoods Terminology Plan
 
 ## Objective

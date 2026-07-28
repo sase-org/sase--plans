@@ -48,6 +48,8 @@ status: done
 bead_id: sase-6g
 ---
 
+- **PROMPT:** [202607/prompts/xprompt_agent_families.md](prompts/xprompt_agent_families.md)
+
 # Plan: xprompt agent families via a `%family` directive
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 13:15:41
 status: done
-prompt: 202605/prompts/config_schema_coverage.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/config_schema_coverage.md](prompts/config_schema_coverage.md)
+
 # Config Schema Coverage Plan
 
 ## Context

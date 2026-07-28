@@ -1,10 +1,4 @@
----
-plan: 202606/prompt_search_completion.md
----
-
-
-
-
+- **PLAN:** [../202606/prompt_search_completion.md](../prompt_search_completion.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4y is complete?
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:25:08
 status: done
-prompt: 202607/prompts/fix_sase_plan_tag_separate_repo.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_sase_plan_tag_separate_repo.md](prompts/fix_sase_plan_tag_separate_repo.md)
+
 # Fix Missing `SASE_PLAN` Commit Tag for Separate-Repo (Companion) SDD Stores
 
 ## Problem

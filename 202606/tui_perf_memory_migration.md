@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 09:04:08
 status: done
-prompt: 202606/prompts/tui_perf_memory_migration.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_perf_memory_migration.md](prompts/tui_perf_memory_migration.md)
+
 # Migrate `memory/long/tui_jk_baseline.md` → `memory/long/tui_perf.md`
 
 ## Context

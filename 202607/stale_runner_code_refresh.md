@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 12:21:30
 status: done
-prompt: 202607/prompts/stale_runner_code_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/stale_runner_code_refresh.md](prompts/stale_runner_code_refresh.md)
+
 # Plan: Prevent stale-code `SddMaterializationError` launch failures after dependency waits
 
 ## Incident summary (2026-07-13, agent `sase-5w.4`)

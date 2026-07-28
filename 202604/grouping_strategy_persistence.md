@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 21:43:44
 status: done
-prompt: 202604/prompts/grouping_strategy_persistence.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/grouping_strategy_persistence.md](prompts/grouping_strategy_persistence.md)
+
 # Persist ACE Grouping Strategy
 
 ## Context

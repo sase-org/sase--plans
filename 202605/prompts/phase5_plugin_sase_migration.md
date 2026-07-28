@@ -1,10 +1,4 @@
----
-plan: 202605/phase5_plugin_sase_migration.md
----
-
-
-
-
+- **PLAN:** [../202605/phase5_plugin_sase_migration.md](../phase5_plugin_sase_migration.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-33 is complete?
 

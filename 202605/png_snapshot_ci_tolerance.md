@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 00:36:14
 status: done
-prompt: 202605/prompts/png_snapshot_ci_tolerance.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/png_snapshot_ci_tolerance.md](prompts/png_snapshot_ci_tolerance.md)
+
 # Allow Small PNG Snapshot Diffs In GitHub Actions
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202605/agents_tab_non_agent_step_runtimes.md
----
+- **PLAN:** [../202605/agents_tab_non_agent_step_runtimes.md](../agents_tab_non_agent_step_runtimes.md)
+
  We seem to show runtimes for non-agent steps on the "Agents" tab of the `sase ace` TUI. We should only show
 runtimes for agent/workflow entries and agent steps (see the "setup", "prepare", and "checkout" steps in the `sase ace`
 snapshot below--we shouldn't show runtimes for any of those). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

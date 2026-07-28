@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 15:42:04
 status: done
-prompt: 202604/prompts/startup_stopwatch_full_startup_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/startup_stopwatch_full_startup_completion.md](prompts/startup_stopwatch_full_startup_completion.md)
+
 # Plan: Keep Startup Stopwatch Visible Until Full Startup Completes
 
 ## Problem

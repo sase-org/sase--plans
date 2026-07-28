@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 07:47:52
 status: done
-prompt: 202605/prompts/xprompt_lsp_activation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_activation.md](prompts/xprompt_lsp_activation.md)
+
 # Plan: Restrict XPrompt LSP Activation
 
 ## Context

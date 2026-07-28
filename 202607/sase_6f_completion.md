@@ -8,8 +8,9 @@ goal: 'The missing live Telegram delivery acceptance test is completed with dura
   '
 create_time: 2026-07-16 16:52:17
 status: done
-prompt: 202607/prompts/sase_6f_completion.md
 ---
+
+- **PROMPT:** [202607/prompts/sase_6f_completion.md](prompts/sase_6f_completion.md)
 
 # Plan: Complete and land user-defined Telegram slash commands
 

@@ -51,6 +51,8 @@ status: done
 bead_id: sase-8h
 ---
 
+- **PROMPT:** [202607/prompts/commits_filter_correctness.md](prompts/commits_filter_correctness.md)
+
 # Plan: Commits sub-tab query filter correctness
 
 ## Context and diagnosis

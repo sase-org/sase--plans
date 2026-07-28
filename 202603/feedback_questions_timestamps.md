@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 08:22:24
 status: done
-prompt: 202603/prompts/feedback_questions_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/feedback_questions_timestamps.md](prompts/feedback_questions_timestamps.md)
 
 # Plan: Add FEEDBACK and QUESTIONS Timestamps to Agent Metadata Panel
 

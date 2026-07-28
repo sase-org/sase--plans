@@ -1,10 +1,4 @@
----
-plan: 202607/host_worker_token_budget.md
----
-
-
-
-
+- **PLAN:** [../202607/host_worker_token_budget.md](../host_worker_token_budget.md)
 
 Can you complete the work for bead sase-86.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

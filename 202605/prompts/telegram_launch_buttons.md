@@ -1,6 +1,5 @@
----
-plan: 202605/telegram_launch_buttons.md
----
+- **PLAN:** [../202605/telegram_launch_buttons.md](../telegram_launch_buttons.md)
+
 The user sent an image via Telegram with the following caption:
 
  For some reason it doesn't seem like the Telegram buttons that normally show with agent-launch Telegram messages (ex: Kill) are showing any more. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

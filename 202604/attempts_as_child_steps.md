@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:44:38
 status: done
-prompt: 202604/prompts/attempts_as_child_steps.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/attempts_as_child_steps.md](prompts/attempts_as_child_steps.md)
 
 # Plan: Retry Attempts as Child Entries in the `sase ace` Agents Tab
 

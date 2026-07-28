@@ -1,6 +1,5 @@
----
-plan: 202606/updates_tab.md
----
+- **PLAN:** [../202606/updates_tab.md](../updates_tab.md)
+
  #fork:077.w1.w2 Can you now help me rename the "Plugins" tab to "Updates" (so it should be moved to right before the "XPrompts" tab and the numeric keymap should be updated) and add support for a new keymap that runs `sase update` in a way that is plesant in a TUI environment? Also, we should show the installed and latest versions of sase (this repo) and sase-core (sase's Rust core). I want you to lead the design on this one. Make sure you design this feature so it is intuitive, reliable, and (last but not least) beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

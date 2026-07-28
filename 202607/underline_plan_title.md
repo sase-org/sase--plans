@@ -8,8 +8,9 @@ goal: 'The Agents-tab SASE PLAN section underlines each available plan title so 
   '
 create_time: 2026-07-16 08:07:38
 status: done
-prompt: 202607/prompts/underline_plan_title.md
 ---
+
+- **PROMPT:** [202607/prompts/underline_plan_title.md](prompts/underline_plan_title.md)
 
 # Plan: Underline plan titles in agent metadata
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 20:21:25
 status: done
-prompt: 202604/prompts/apostrophe_jump_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/apostrophe_jump_fallback.md](prompts/apostrophe_jump_fallback.md)
+
 # Apostrophe Jump Fallback Plan
 
 ## Goal

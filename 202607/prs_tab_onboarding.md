@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 13:36:48
 status: done
-prompt: 202607/prompts/prs_tab_onboarding.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prs_tab_onboarding.md](prompts/prs_tab_onboarding.md)
+
 # PRs Tab Onboarding Page
 
 ## Product Context

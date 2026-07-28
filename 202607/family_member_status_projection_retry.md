@@ -8,8 +8,9 @@ goal: 'The FAMILY MEMBERS roster in the ACE Agents-tab metadata panel reports ea
   '
 create_time: 2026-07-19 09:18:59
 status: done
-prompt: 202607/prompts/family_member_status_projection_retry.md
 ---
+
+- **PROMPT:** [202607/prompts/family_member_status_projection_retry.md](prompts/family_member_status_projection_retry.md)
 
 # Plan: Correct ACE family-member status projection
 

@@ -4,8 +4,9 @@ bead_id: sase-2p
 tier: epic
 create_time: 2026-05-10 01:05:51
 status: done
-prompt: 202605/prompts/png_only_visual_snapshots.md
 ---
+
+- **PROMPT:** [202605/prompts/png_only_visual_snapshots.md](prompts/png_only_visual_snapshots.md)
 
 # PNG-only ACE visual snapshots
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 16:34:51
 status: done
-prompt: 202606/prompts/logs_admin_center_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/logs_admin_center_tab.md](prompts/logs_admin_center_tab.md)
+
 # Plan: Migrate the `,L` Logs panel into the SASE Admin Center as a "Logs" tab
 
 ## 1. Goal

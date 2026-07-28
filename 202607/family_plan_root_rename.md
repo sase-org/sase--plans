@@ -9,8 +9,9 @@ goal: 'Creating an agent family renames the first agent into its unnumbered role
   '
 create_time: 2026-07-18 08:24:31
 status: done
-prompt: 202607/prompts/family_plan_root_rename.md
 ---
+
+- **PROMPT:** [202607/prompts/family_plan_root_rename.md](prompts/family_plan_root_rename.md)
 
 # Plan: Bare `--plan` family roots and family-name references
 

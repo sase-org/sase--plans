@@ -41,6 +41,8 @@ status: done
 bead_id: sase-8t
 ---
 
+- **PROMPT:** [202607/prompts/axe_status.md](prompts/axe_status.md)
+
 # Add an intuitive, reliable, and beautiful `sase axe status`
 
 ## Objective

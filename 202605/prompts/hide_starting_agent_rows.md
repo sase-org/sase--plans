@@ -1,6 +1,5 @@
----
-plan: 202605/hide_starting_agent_rows.md
----
+- **PLAN:** [../202605/hide_starting_agent_rows.md](../hide_starting_agent_rows.md)
+
  Can you help me start stop showing STARTING agent rows at all? I'm hoping this will reduce how often we need to
 refresh the agent rows in the TUI. Instead, we should just show the starting count (always in the untagged agent panel).
 As apart of this change we should start styling the starting agent count using a visible background and highlight the

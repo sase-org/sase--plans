@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 18:17:09
 status: done
-prompt: 202606/prompts/correlated_alt_keys_fanout.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/correlated_alt_keys_fanout.md](prompts/correlated_alt_keys_fanout.md)
+
 # Plan: Correlate repeated alternation keys across `%{...}` directives
 
 ## Problem / product context

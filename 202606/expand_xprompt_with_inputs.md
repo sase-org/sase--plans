@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 07:56:26
 status: done
-prompt: 202606/prompts/expand_xprompt_with_inputs.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/expand_xprompt_with_inputs.md](prompts/expand_xprompt_with_inputs.md)
+
 # Plan: Expand XPrompts With Inputs via `Ctrl+I` (Stage Inputs in the Property Panel)
 
 ## Problem

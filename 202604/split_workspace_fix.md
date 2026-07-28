@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 13:23:59
 status: wip
-prompt: 202604/prompts/split_workspace_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/split_workspace_fix.md](prompts/split_workspace_fix.md)
 
 # Plan: Fix `#split` xprompt workflow workspace setup
 

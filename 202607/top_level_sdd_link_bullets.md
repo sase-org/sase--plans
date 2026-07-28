@@ -8,8 +8,9 @@ goal: 'New SDD plans and prompt snapshots expose their counterpart as a clickabl
   '
 create_time: 2026-07-21 10:54:39
 status: done
-prompt: '[202607/prompts/top_level_sdd_link_bullets.md](prompts/top_level_sdd_link_bullets.md)'
 ---
+
+- **PROMPT:** [202607/prompts/top_level_sdd_link_bullets.md](prompts/top_level_sdd_link_bullets.md)
 
 # Plan: Move SDD cross-links into Markdown bullets
 
@@ -32,7 +33,7 @@ title: Example
 goal: Demonstrate the plan-side layout.
 ---
 
-- **PROMPT:** [202607/prompts/example.md](prompts/example.md)
+\- **PROMPT:** [202607/prompts/example.md](prompts/example.md)
 
 # Plan: Example
 ```
@@ -42,7 +43,7 @@ goal: Demonstrate the plan-side layout.
 create_time: 2026-07-21 12:00:00
 ---
 
-- **PLAN:** [../202607/example.md](../example.md)
+\- **PLAN:** [../202607/example.md](../example.md)
 
 Original prompt text.
 ```

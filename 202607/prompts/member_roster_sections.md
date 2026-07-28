@@ -1,6 +1,5 @@
----
-plan: 202607/member_roster_sections.md
----
+- **PLAN:** [../202607/member_roster_sections.md](../member_roster_sections.md)
+
  I want to start adding a new section to the very top of the agent metadata section list for agent families and for agent clans. 
 
 - This section should be named either FAMILY MEMBERS or CLAN MEMBERS (the presence of this section will also serve as an extra indication to the user that they are looking at an agent family/clan, so make sure you make these sections stand out and make sure they are visually distinct).

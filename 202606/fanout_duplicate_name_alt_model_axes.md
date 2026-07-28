@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 10:21:01
 status: done
-prompt: 202606/prompts/fanout_duplicate_name_alt_model_axes.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fanout_duplicate_name_alt_model_axes.md](prompts/fanout_duplicate_name_alt_model_axes.md)
+
 # Plan: Fix duplicate agent names when a model alt-axis is combined with another alt-axis
 
 ## Symptom

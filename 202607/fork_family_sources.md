@@ -9,8 +9,9 @@ goal: '#fork resolves agent family names to a dedicated family source and inject
   '
 create_time: 2026-07-19 15:13:31
 status: done
-prompt: 202607/prompts/fork_family_sources.md
 ---
+
+- **PROMPT:** [202607/prompts/fork_family_sources.md](prompts/fork_family_sources.md)
 
 # Plan: Family-aware `#fork` sources with full per-member transcripts
 

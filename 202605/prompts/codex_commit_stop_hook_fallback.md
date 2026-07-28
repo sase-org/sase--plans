@@ -1,6 +1,5 @@
----
-plan: 202605/codex_commit_stop_hook_fallback.md
----
+- **PLAN:** [../202605/codex_commit_stop_hook_fallback.md](../codex_commit_stop_hook_fallback.md)
+
  Why didn't this agent (see the `sase ace` snapshot below) create a commit? The sase_commit_stop_hook should
 have asked Codex to commit its changes if it was the one who made them. Can you help me diagnose the root cause of this
 issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 12:56:59
 status: done
-prompt: 202607/prompts/commit_view_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/commit_view_hints.md](prompts/commit_view_hints.md)
+
 # Plan: View a Commit's Message + Pretty Diff via the `v` Keymap (Agents tab)
 
 ## 1. Problem & Product Goal

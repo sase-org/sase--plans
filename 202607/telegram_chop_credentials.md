@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-04 13:57:46
 status: wip
-prompt: 202607/prompts/telegram_chop_credentials.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_chop_credentials.md](prompts/telegram_chop_credentials.md)
+
 # Fix tg_inbound / tg_outbound Telegram Chop Errors (Credentials, Not Executables)
 
 ## Problem

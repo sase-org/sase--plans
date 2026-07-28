@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 18:00:25
 status: done
-prompt: 202603/prompts/changespec_mercurial_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/changespec_mercurial_fix.md](prompts/changespec_mercurial_fix.md)
 
 # Plan: Fix ChangeSpec Creation for Mercurial VCS (`#pr` workflow)
 

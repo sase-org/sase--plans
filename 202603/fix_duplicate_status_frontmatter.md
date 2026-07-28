@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 19:45:27
 status: done
-prompt: 202603/prompts/fix_duplicate_status_frontmatter.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_duplicate_status_frontmatter.md](prompts/fix_duplicate_status_frontmatter.md)
 
 # Fix Duplicate `status` Field in Plan File Frontmatter
 

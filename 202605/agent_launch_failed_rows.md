@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-12 18:26:51
 status: wip
-prompt: 202605/prompts/agent_launch_failed_rows.md
 bead_id: sase-39
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agent_launch_failed_rows.md](prompts/agent_launch_failed_rows.md)
+
 # Plan: Agent Launch Failures Always Produce Agent Rows
 
 ## Goal

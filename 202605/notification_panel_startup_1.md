@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 10:25:04
 status: done
-prompt: 202605/prompts/notification_panel_startup_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/notification_panel_startup_1.md](prompts/notification_panel_startup_1.md)
+
 # Diagnose and Fix Startup Notification Panel
 
 ## Problem

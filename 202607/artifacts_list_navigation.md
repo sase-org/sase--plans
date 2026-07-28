@@ -8,8 +8,9 @@ goal: 'Commits, Bugs, and Plans support consistent first/last, fixed-distance, a
   '
 create_time: 2026-07-17 08:46:59
 status: done
-prompt: 202607/prompts/artifacts_list_navigation.md
 ---
+
+- **PROMPT:** [202607/prompts/artifacts_list_navigation.md](prompts/artifacts_list_navigation.md)
 
 # Plan: Fast navigation for non-PR Artifacts lists
 

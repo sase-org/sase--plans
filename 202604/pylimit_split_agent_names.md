@@ -2,9 +2,10 @@
 name: pylimit_split_agent_names
 status: done
 create_time: 2026-04-28 11:31:04
-prompt: 202604/prompts/pylimit_split_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pylimit_split_agent_names.md](prompts/pylimit_split_agent_names.md)
 
 # Name `pylimit_split` chop agents `pysplit.<basename>`
 

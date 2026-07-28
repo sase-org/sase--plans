@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:38:17
 status: done
-prompt: 202605/prompts/agent_bead_description.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_bead_description.md](prompts/agent_bead_description.md)
+
 # Plan: Enrich Agents Bead Metadata
 
 ## Goal

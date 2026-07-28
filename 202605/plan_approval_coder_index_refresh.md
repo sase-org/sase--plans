@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 16:06:59
 status: wip
-prompt: 202605/prompts/plan_approval_coder_index_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_approval_coder_index_refresh.md](prompts/plan_approval_coder_index_refresh.md)
+
 # Plan: Make Approved-Plan Coder Agents Visible From Tier 1
 
 ## Context

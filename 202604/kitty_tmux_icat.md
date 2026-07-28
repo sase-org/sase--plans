@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 01:53:30
 status: done
-prompt: 202604/prompts/kitty_tmux_icat.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/kitty_tmux_icat.md](prompts/kitty_tmux_icat.md)
+
 # Plan: Make Kitty `icat` Work Reliably In `tm` Sessions
 
 ## Context

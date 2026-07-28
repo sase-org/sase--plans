@@ -26,6 +26,8 @@ phases:
 bead_id: sase-65
 ---
 
+- **PROMPT:** [202607/prompts/visual_snapshot_determinism.md](prompts/visual_snapshot_determinism.md)
+
 # Plan: Visual snapshot determinism
 
 ## Problem

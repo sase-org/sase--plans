@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 22:30:36
 status: done
-prompt: 202605/prompts/other_model_alias.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/other_model_alias.md](prompts/other_model_alias.md)
+
 # Plan: Configured `other` Model Alias
 
 ## Goal

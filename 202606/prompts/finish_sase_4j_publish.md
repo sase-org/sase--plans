@@ -1,10 +1,4 @@
----
-plan: 202606/finish_sase_4j_publish.md
----
-
-
-
-
+- **PLAN:** [../202606/finish_sase_4j_publish.md](../finish_sase_4j_publish.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4j is complete?
 

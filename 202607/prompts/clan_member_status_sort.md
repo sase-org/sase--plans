@@ -1,6 +1,5 @@
----
-plan: 202607/clan_member_status_sort.md
----
+- **PLAN:** [../202607/clan_member_status_sort.md](../clan_member_status_sort.md)
+
  #fork:dv This fixed the bug, but now that I look at it, it doesn't look
 like the agent that caused this bug even completed the feature I assigned it,
 right (see #sshot)? Agents/agent families within an agent clan should always be

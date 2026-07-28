@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 12:23:30
 status: done
-prompt: 202604/prompts/sibling_repo_commit_push.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/sibling_repo_commit_push.md](prompts/sibling_repo_commit_push.md)
+
 # Plan: Fix sibling repo commit/push guidance
 
 ## Problem

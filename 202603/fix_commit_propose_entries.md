@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 11:31:10
 status: done
-prompt: 202603/prompts/fix_commit_propose_entries.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_commit_propose_entries.md](prompts/fix_commit_propose_entries.md)
 
 # Plan: Fix #commit/#propose ChangeSpec COMMITS entry creation and meta ID outputs
 

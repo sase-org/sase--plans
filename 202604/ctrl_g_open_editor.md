@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 14:21:56
 status: done
-prompt: 202604/prompts/ctrl_g_open_editor.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ctrl_g_open_editor.md](prompts/ctrl_g_open_editor.md)
 
 # Plan: Add `<ctrl+g>` keymap to XPromptLocationModal to open file in editor
 

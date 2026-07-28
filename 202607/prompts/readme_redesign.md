@@ -1,6 +1,5 @@
----
-plan: 202607/readme_redesign.md
----
+- **PLAN:** [../202607/readme_redesign.md](../readme_redesign.md)
+
  Can you help me drastically improve this project's README.md file? 
 
 - The goal of this file should be to draw people in and get them using sase as quickly as possible. We should quickly give them an idea of how sase can be useful to them, show them how to install and initialize sase, and then point them to the sase.sh documentation site (with links to a few different useful pages on that site).

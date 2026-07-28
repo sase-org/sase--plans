@@ -1,6 +1,5 @@
----
-plan: 202607/tui_toasts_log_source.md
----
+- **PLAN:** [../202607/tui_toasts_log_source.md](../tui_toasts_log_source.md)
+
  Can you help me add a new source to the "Logs" tab of the "SASE Admin Center" panel named "TUI Toasts" that contains the last `<N>` toasts sent to the user in the TUI?
 
 - Pick a good number for `<N>` (maybe 100?).

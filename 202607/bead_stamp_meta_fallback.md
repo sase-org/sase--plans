@@ -8,8 +8,9 @@ goal: 'Plans proposed during epic bead work actually receive their managed `bead
   '
 create_time: 2026-07-21 10:53:53
 status: done
-prompt: '[202607/prompts/bead_stamp_meta_fallback.md](prompts/bead_stamp_meta_fallback.md)'
 ---
+
+- **PROMPT:** [202607/prompts/bead_stamp_meta_fallback.md](prompts/bead_stamp_meta_fallback.md)
 
 # Plan: Stamp proposed plans from agent metadata, not popped env
 

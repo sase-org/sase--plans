@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 20:59:44
 status: done
-prompt: 202605/prompts/codex_commit_fallback_reply_preservation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_commit_fallback_reply_preservation.md](prompts/codex_commit_fallback_reply_preservation.md)
+
 # Plan: Preserve Codex Agent Replies Across Commit Fallback Turns
 
 ## Problem

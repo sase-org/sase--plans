@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-10 11:23:49
 status: done
-prompt: 202605/prompts/finish_sase_2n.md
 bead_id: sase-2q
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/finish_sase_2n.md](prompts/finish_sase_2n.md)
+
 # Plan: Finish sase-2n Epic — Validate, E2E Test, and Apply Lumberjack Audit Chops
 
 ## Goal

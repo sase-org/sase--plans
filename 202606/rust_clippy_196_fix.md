@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 07:19:33
 status: done
-prompt: 202606/prompts/rust_clippy_196_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/rust_clippy_196_fix.md](prompts/rust_clippy_196_fix.md)
+
 # Rust Clippy 1.96 CI Failure Fix
 
 ## Context

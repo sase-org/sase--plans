@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 01:03:04
 status: wip
-prompt: 202605/prompts/agents_stopped_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_stopped_status.md](prompts/agents_stopped_status.md)
+
 # Plan: Rename Agents Status Presentation to Stopped
 
 ## Goal

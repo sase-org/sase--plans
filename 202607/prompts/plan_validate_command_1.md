@@ -1,6 +1,5 @@
----
-plan: 202607/plan_validate_command_1.md
----
+- **PLAN:** [../202607/plan_validate_command_1.md](../plan_validate_command_1.md)
+
  
 
 Investigate the current SASE plan formats, proposal flow, epic approval flow, bead creation, hooks, and CI validation, then write and propose a concrete implementation plan for an agent-facing `sase plan validate` command. Do not implement the feature yet.

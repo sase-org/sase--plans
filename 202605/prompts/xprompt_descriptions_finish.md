@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_descriptions_finish.md
----
+- **PLAN:** [../202605/xprompt_descriptions_finish.md](../xprompt_descriptions_finish.md)
+
     Can you help me verify that all the work associated with the bead with ID sase-3w is complete?
 
 Actually read through the source code and the git commits that are associated with that bead's work (they should have

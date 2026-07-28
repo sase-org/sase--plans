@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 15:53:45
 status: wip
-prompt: 202603/prompts/telegram_confirmation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/telegram_confirmation.md](prompts/telegram_confirmation.md)
 
 # Plan: Telegram Confirmation Messages for Feedback & Custom Answers
 

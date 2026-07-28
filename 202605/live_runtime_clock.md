@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 12:58:30
 status: done
-prompt: 202605/prompts/live_runtime_clock.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/live_runtime_clock.md](prompts/live_runtime_clock.md)
+
 # Live Runtime Clock Marker Plan
 
 ## Context

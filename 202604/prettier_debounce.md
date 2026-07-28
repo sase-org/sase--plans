@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 17:04:52
 status: wip
-prompt: 202604/prompts/prettier_debounce.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prettier_debounce.md](prompts/prettier_debounce.md)
 
 # Plan: Fix Prompt Input Prettier Integration (Performance + Reliability)
 

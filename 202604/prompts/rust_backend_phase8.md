@@ -1,6 +1,5 @@
----
-plan: 202604/rust_backend_phase8.md
----
+- **PLAN:** [../202604/rust_backend_phase8.md](../rust_backend_phase8.md)
+
   Can you help me continue the rust migration described in the
 @sdd/research/202604/rust_backend_migration.md file by completing phase 8 (phases 0, 1, 2, 3, 4, 5, 6, and 7 are already
 complete)? This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

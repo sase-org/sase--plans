@@ -57,6 +57,8 @@ status: done
 bead_id: sase-7t
 ---
 
+- **PROMPT:** [202607/prompts/chop_lifecycle_fixes_v2.md](prompts/chop_lifecycle_fixes_v2.md)
+
 # Plan: Fix chop lifecycle poisoning, collision failures, kill-callback crashes, and config deadlock
 
 ## Context

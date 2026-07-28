@@ -97,6 +97,8 @@ status: done
 bead_id: sase-8k
 ---
 
+- **PROMPT:** [202607/prompts/agents_sidecar_repo.md](prompts/agents_sidecar_repo.md)
+
 # Plan: Hidden agents sidecar repo with machine agent hoods
 
 ## Overview and design principles

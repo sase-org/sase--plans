@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 17:08:56
 status: done
-prompt: 202603/prompts/reply_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/reply_timestamps.md](prompts/reply_timestamps.md)
 
 # Plan: Reply Timestamps in Agent Metadata Panel
 

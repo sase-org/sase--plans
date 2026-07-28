@@ -1,6 +1,5 @@
----
-plan: 202606/alt_brace_syntax.md
----
+- **PLAN:** [../202606/alt_brace_syntax.md](../alt_brace_syntax.md)
+
  Can you help me migrate the existing `%(A, B, ...)` short-hand syntax for `%alt(A, B, ...)` to `%{A | B | ...}`?
 
 - Make sure that we add good syntax highlighting for this new syntax to both the prompt input widget and nvim (via treesitter or LSP or however we do it).

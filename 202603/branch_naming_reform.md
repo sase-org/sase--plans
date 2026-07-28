@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 15:02:19
 status: done
-prompt: 202603/prompts/branch_naming_reform.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/branch_naming_reform.md](prompts/branch_naming_reform.md)
 
 # Branch Naming Reform and Immutable Branch Alias Support
 

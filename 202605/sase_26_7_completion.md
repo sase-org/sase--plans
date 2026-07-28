@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 21:21:46
 status: done
-prompt: 202605/prompts/sase_26_7_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_26_7_completion.md](prompts/sase_26_7_completion.md)
+
 # Plan: Finish sase-26.7 Background Delivery Verification
 
 ## Context

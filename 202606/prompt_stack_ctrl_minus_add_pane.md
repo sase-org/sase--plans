@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 10:15:22
 status: done
-prompt: 202606/prompts/prompt_stack_ctrl_minus_add_pane.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_ctrl_minus_add_pane.md](prompts/prompt_stack_ctrl_minus_add_pane.md)
+
 # Plan: Migrate Prompt Stack Add-Pane From `-` to `Ctrl+-`
 
 ## Context

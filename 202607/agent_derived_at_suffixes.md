@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 13:16:45
 status: done
-prompt: 202607/prompts/agent_derived_at_suffixes.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agent_derived_at_suffixes.md](prompts/agent_derived_at_suffixes.md)
+
 # Plan: Use `@` Templates for Derived Agent Names
 
 ## Goal

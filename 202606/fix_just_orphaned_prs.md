@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 16:37:31
 status: done
-prompt: 202606/prompts/fix_just_orphaned_prs.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_just_orphaned_prs.md](prompts/fix_just_orphaned_prs.md)
+
 # Fix: `sase_fix_just` chop creates PRs not associated with any ChangeSpec
 
 ## Summary

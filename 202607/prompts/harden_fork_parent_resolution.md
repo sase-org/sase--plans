@@ -1,9 +1,4 @@
----
-plan: 202607/harden_fork_parent_resolution.md
----
-
-
-
+- **PLAN:** [../202607/harden_fork_parent_resolution.md](../harden_fork_parent_resolution.md)
 
 Can you complete the work for bead sase-8g.8? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

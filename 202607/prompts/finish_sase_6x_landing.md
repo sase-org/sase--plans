@@ -1,11 +1,4 @@
----
-plan: 202607/finish_sase_6x_landing.md
----
-
-
-
-
-
+- **PLAN:** [../202607/finish_sase_6x_landing.md](../finish_sase_6x_landing.md)
 
 You are the land agent for epic bead sase-6x: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

@@ -64,6 +64,8 @@ status: wip
 bead_id: sase-93
 ---
 
+- **PROMPT:** [202607/prompts/restore_green_ci.md](prompts/restore_green_ci.md)
+
 # Plan: Restore green GitHub Actions CI for sase
 
 ## Context

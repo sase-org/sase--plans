@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 09:57:41
 status: done
-prompt: 202604/prompts/agent_status_state_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_status_state_fix.md](prompts/agent_status_state_fix.md)
+
 # Plan: Fix ACE Plan/Question Status Drift
 
 ## Context

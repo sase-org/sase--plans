@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 08:55:42
 status: done
-prompt: 202604/prompts/agents_tab_status_grouping_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_status_grouping_fix.md](prompts/agents_tab_status_grouping_fix.md)
+
 # Agents Tab BY_STATUS Grouping Fix
 
 ## Problem

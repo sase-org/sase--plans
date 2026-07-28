@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 17:23:26
 status: done
-prompt: 202606/prompts/agent_commit_messages_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_commit_messages_panel.md](prompts/agent_commit_messages_panel.md)
+
 # Plan: Show all of an agent's commit messages (primary + linked repos) in the Agents-tab metadata panel
 
 ## Product context

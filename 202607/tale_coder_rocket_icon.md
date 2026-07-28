@@ -7,8 +7,9 @@ goal: 'Tale approval gates show a rocket for the Launch coder agent option while
   '
 create_time: 2026-07-18 14:04:50
 status: done
-prompt: 202607/prompts/tale_coder_rocket_icon.md
 ---
+
+- **PROMPT:** [202607/prompts/tale_coder_rocket_icon.md](prompts/tale_coder_rocket_icon.md)
 
 # Plan: Distinguish tale coder launch with a rocket icon
 

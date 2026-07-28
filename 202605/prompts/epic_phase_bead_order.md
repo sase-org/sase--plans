@@ -1,6 +1,5 @@
----
-plan: 202605/epic_phase_bead_order.md
----
+- **PLAN:** [../202605/epic_phase_bead_order.md](../epic_phase_bead_order.md)
+
  Our epic integration keeps creating phase beads with IDs that don't match their phase ID (see the command
 output below for an example). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

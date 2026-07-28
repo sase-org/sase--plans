@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-05 13:27:47
 status: done
-prompt: 202606/prompts/prompt_ctrl_r_recursive_finder.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_ctrl_r_recursive_finder.md](prompts/prompt_ctrl_r_recursive_finder.md)
+
 # Plan: `<ctrl+r>` Recursive Fuzzy File Finder for the Prompt Input
 
 ## Goal

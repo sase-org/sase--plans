@@ -27,6 +27,8 @@ status: done
 bead_id: sase-88
 ---
 
+- **PROMPT:** [202607/prompts/phase_plan_parent_links.md](prompts/phase_plan_parent_links.md)
+
 # Plan: Stamp phase plans with their bead and parent epic plan
 
 ## Context

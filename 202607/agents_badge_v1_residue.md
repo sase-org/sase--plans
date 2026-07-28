@@ -84,6 +84,8 @@ status: done
 bead_id: sase-92
 ---
 
+- **PROMPT:** [202607/prompts/agents_badge_v1_residue.md](prompts/agents_badge_v1_residue.md)
+
 # Plan: Truthful agents-repo update badge and ignore-proof hood publication
 
 ## Problem

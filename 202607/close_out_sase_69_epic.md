@@ -8,8 +8,9 @@ goal: 'Epic sase-69 (Artifacts tab) is fully landed: the Commits pane''s keys ar
   '
 create_time: 2026-07-15 23:14:25
 status: done
-prompt: 202607/prompts/close_out_sase_69_epic.md
 ---
+
+- **PROMPT:** [202607/prompts/close_out_sase_69_epic.md](prompts/close_out_sase_69_epic.md)
 
 # Plan: Close out epic sase-69 (Artifacts tab)
 

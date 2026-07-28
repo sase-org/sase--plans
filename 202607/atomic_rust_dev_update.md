@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 00:04:06
 status: wip
-prompt: 202607/prompts/atomic_rust_dev_update.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/atomic_rust_dev_update.md](prompts/atomic_rust_dev_update.md)
+
 # Plan: Make the dev-update Rust reconcile atomic and self-healing
 
 ## Incident summary (what happened)

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 13:24:58
 status: done
-prompt: 202605/prompts/mark_all_unread_agents_read.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/mark_all_unread_agents_read.md](prompts/mark_all_unread_agents_read.md)
+
 # Plan: Agents `,J` Mark All Unread As Read
 
 ## Goal

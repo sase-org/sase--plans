@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 11:05:40
 status: done
-prompt: 202605/prompts/plan_step_runtime_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_step_runtime_1.md](prompts/plan_step_runtime_1.md)
+
 # Fix Plan-Step Runtime Display
 
 ## Problem

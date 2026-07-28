@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-23 20:58:46
 status: done
-prompt: 202604/prompts/repeat_fanout_name_collision_from_telegram.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_fanout_name_collision_from_telegram.md](prompts/repeat_fanout_name_collision_from_telegram.md)
+
 # Plan: Fix `%r:N` Name Collision When Launched via Telegram
 
 ## Problem

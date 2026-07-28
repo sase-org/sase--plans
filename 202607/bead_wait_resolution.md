@@ -10,8 +10,9 @@ goal: '%wait(bead=...) conditions actually gate agent launches: the agent runner
   '
 create_time: 2026-07-20 12:09:12
 status: done
-prompt: 202607/prompts/bead_wait_resolution.md
 ---
+
+- **PROMPT:** [202607/prompts/bead_wait_resolution.md](prompts/bead_wait_resolution.md)
 
 # Plan: Bead conditions in wait resolution (sase-87.3)
 

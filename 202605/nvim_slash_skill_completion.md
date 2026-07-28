@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 01:23:39
 status: done
-prompt: 202605/prompts/nvim_slash_skill_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/nvim_slash_skill_completion.md](prompts/nvim_slash_skill_completion.md)
+
 # Add Slash Skill Completion to sase-nvim
 
 ## Context

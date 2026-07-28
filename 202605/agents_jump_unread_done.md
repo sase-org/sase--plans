@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 14:10:09
 status: done
-prompt: 202605/prompts/agents_jump_unread_done.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_jump_unread_done.md](prompts/agents_jump_unread_done.md)
+
 # Plan: Add `,j` jump to next unread done agent
 
 ## Goal

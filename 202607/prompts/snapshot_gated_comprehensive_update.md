@@ -1,10 +1,4 @@
----
-plan: 202607/snapshot_gated_comprehensive_update.md
----
-
-
-
-
+- **PLAN:** [../202607/snapshot_gated_comprehensive_update.md](../snapshot_gated_comprehensive_update.md)
 
 Can you complete the work for bead sase-83.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

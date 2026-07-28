@@ -9,8 +9,9 @@ goal: 'memory/tui_perf.md accurately reflects the message-pump freeze class fixe
   '
 create_time: 2026-07-16 13:21:57
 status: done
-prompt: 202607/prompts/tui_perf_memory_refresh.md
 ---
+
+- **PROMPT:** [202607/prompts/tui_perf_memory_refresh.md](prompts/tui_perf_memory_refresh.md)
 
 # Plan: Refresh memory/tui_perf.md with the July 2026 pump-stall learnings
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 14:27:54
 status: wip
-prompt: 202607/prompts/agent_providers_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agent_providers_polish.md](prompts/agent_providers_polish.md)
+
 # Plan: Tighten `docs/agent_providers.md` for concision & consistency
 
 ## Problem / product context

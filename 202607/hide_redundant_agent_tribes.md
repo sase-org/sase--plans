@@ -7,8 +7,9 @@ goal: 'Agent rows omit tribe badges already communicated by their enclosing spli
   '
 create_time: 2026-07-18 06:25:21
 status: done
-prompt: 202607/prompts/hide_redundant_agent_tribes.md
 ---
+
+- **PROMPT:** [202607/prompts/hide_redundant_agent_tribes.md](prompts/hide_redundant_agent_tribes.md)
 
 # Plan: Hide redundant tribe badges in split agent panels
 

@@ -7,8 +7,9 @@ goal: 'Every associated plan goal is visible in full in the ACE Agents metadata 
   '
 create_time: 2026-07-15 09:11:16
 status: wip
-prompt: 202607/prompts/full_agent_plan_goal.md
 ---
+
+- **PROMPT:** [202607/prompts/full_agent_plan_goal.md](prompts/full_agent_plan_goal.md)
 
 # Plan: Show complete plan goals in ACE agent metadata
 

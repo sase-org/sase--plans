@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 19:36:23
 status: done
-prompt: 202605/prompts/agent_starting_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_starting_refresh.md](prompts/agent_starting_refresh.md)
+
 ## Problem
 
 Agents can remain in `STARTING` on the Agents tab until the user presses `y`. The launch path and loader intentionally

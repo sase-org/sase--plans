@@ -1,6 +1,5 @@
----
-plan: 202604/fix_pushgateway.md
----
+- **PLAN:** [../202604/fix_pushgateway.md](../fix_pushgateway.md)
+
 The Prometheus push gateway is not running on this machine for some reason. Can you help me diagnose the root cause of
 this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any
 file changes.

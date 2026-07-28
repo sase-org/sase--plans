@@ -3,8 +3,10 @@ create_time: 2026-06-25 18:35:15
 bead_id: sase-57
 tier: epic
 status: done
-prompt: 202606/prompts/plugin_catalog.md
 ---
+
+- **PROMPT:** [202606/prompts/plugin_catalog.md](prompts/plugin_catalog.md)
+
 # Plan: `sase plugin list` & `sase plugin show`
 
 ## Goal

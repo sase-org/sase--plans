@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 08:09:41
 status: done
-prompt: 202606/prompts/fix_stale_pdf_blog_sentinels.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_stale_pdf_blog_sentinels.md](prompts/fix_stale_pdf_blog_sentinels.md)
+
 # Fix stale blog-post sentinels in the docs PDF validator
 
 ## Problem

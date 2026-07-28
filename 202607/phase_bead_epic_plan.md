@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 00:09:37
 status: done
-prompt: 202607/prompts/phase_bead_epic_plan.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/phase_bead_epic_plan.md](prompts/phase_bead_epic_plan.md)
+
 # Show Epic Plan Context for Phase Beads
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 23:37:11
 status: done
-prompt: 202606/prompts/agent_name_collision_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_name_collision_race.md](prompts/agent_name_collision_race.md)
+
 # Fix Explicit Agent Name Collision Race
 
 ## Context

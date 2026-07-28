@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 11:46:16
 status: done
-prompt: 202606/prompts/bulk_agent_revert.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bulk_agent_revert.md](prompts/bulk_agent_revert.md)
+
 # Bulk Agent Revert Plan
 
 ## Goal

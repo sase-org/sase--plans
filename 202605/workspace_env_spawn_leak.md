@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 19:15:38
 status: done
-prompt: 202605/prompts/workspace_env_spawn_leak.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/workspace_env_spawn_leak.md](prompts/workspace_env_spawn_leak.md)
+
 # Fix workspace-env leak across agent spawns
 
 Fix the `SASE_ACTIVE_PROJECT_DIR` / `CODEX_PROJECT_DIR` env-leak bug that caused the `sase-39.1` Codex commit fallback

@@ -3,8 +3,9 @@ bead_id: sase-2r
 tier: epic
 status: done
 create_time: 2026-05-10 11:29:15
-prompt: 202605/prompts/complete_bead_model_routing_1.md
 ---
+
+- **PROMPT:** [202605/prompts/complete_bead_model_routing_1.md](prompts/complete_bead_model_routing_1.md)
 
 # Complete Bead Model Routing (sase-2o)
 

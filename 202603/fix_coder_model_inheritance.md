@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 08:34:25
 status: done
-prompt: 202603/prompts/fix_coder_model_inheritance.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_coder_model_inheritance.md](prompts/fix_coder_model_inheritance.md)
 
 # Fix: Coder agents not inheriting model from planner agents
 

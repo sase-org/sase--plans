@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 11:49:46
 status: done
-prompt: 202604/prompts/pylimit_split_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pylimit_split_validation.md](prompts/pylimit_split_validation.md)
+
 # Plan: Fix pylimit_split Generated pysplit Validation
 
 ## Context

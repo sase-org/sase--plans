@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 06:58:00
 status: done
-prompt: 202606/prompts/autostash_prompts_on_restart.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/autostash_prompts_on_restart.md](prompts/autostash_prompts_on_restart.md)
+
 # Plan: Auto-stash prompt drafts before a TUI restart
 
 ## Problem / product context

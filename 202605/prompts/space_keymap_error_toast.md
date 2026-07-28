@@ -1,6 +1,5 @@
----
-plan: 202605/space_keymap_error_toast.md
----
+- **PLAN:** [../202605/space_keymap_error_toast.md](../space_keymap_error_toast.md)
+
  The following crash occurred when I used the `<space>` keymap in the TUI. Can you help me make it so this doesn't cause a crash, but instead just shows an error toast in the TUI? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

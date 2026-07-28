@@ -8,8 +8,9 @@ goal: 'Make selected, expanded agent tribe panels easier to identify by carrying
   '
 create_time: 2026-07-19 16:20:02
 status: done
-prompt: 202607/prompts/selected_tribe_panel_title_highlight.md
 ---
+
+- **PROMPT:** [202607/prompts/selected_tribe_panel_title_highlight.md](prompts/selected_tribe_panel_title_highlight.md)
 
 # Plan: Highlight selected tribe panel summary chrome
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 16:10:49
 status: wip
-prompt: 202604/prompts/dynamic_memory_keyword_annotations.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_keyword_annotations.md](prompts/dynamic_memory_keyword_annotations.md)
 
 # Plan: Add Matched-Keyword Annotations to DYNAMIC MEMORY Section
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 18:01:12
 status: done
-prompt: 202604/prompts/fast_single_agent_launch.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fast_single_agent_launch.md](prompts/fast_single_agent_launch.md)
+
 # Make Single-Agent Launch Feel Immediate
 
 ## Goal

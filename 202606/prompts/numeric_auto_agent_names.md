@@ -1,6 +1,5 @@
----
-plan: 202606/numeric_auto_agent_names.md
----
+- **PLAN:** [../202606/numeric_auto_agent_names.md](../numeric_auto_agent_names.md)
+
  We currently do not allow auto-generated agent names to use a number for their first character. I would like to
 remove this constraint. Can you help me do that and make sure that the next agents that we launch use the smallest
 available agent name possible For example, the next agent should be named "1" (or "0"--I forget if we start with "0" or

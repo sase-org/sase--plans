@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 11:10:15
 status: done
-prompt: 202605/prompts/directive_presence_alignment.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/directive_presence_alignment.md](prompts/directive_presence_alignment.md)
+
 # Align Directive Presence Checks With Full Directive Parsing
 
 ## Review Conclusion

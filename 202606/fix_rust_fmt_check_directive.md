@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 06:40:42
 status: done
-prompt: 202606/prompts/fix_rust_fmt_check_directive.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_rust_fmt_check_directive.md](prompts/fix_rust_fmt_check_directive.md)
+
 # Fix `rust-fmt-check` CI failure in `directive.rs`
 
 ## Problem

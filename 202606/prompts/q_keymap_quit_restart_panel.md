@@ -1,6 +1,5 @@
----
-plan: 202606/q_keymap_quit_restart_panel.md
----
+- **PLAN:** [../202606/q_keymap_quit_restart_panel.md](../q_keymap_quit_restart_panel.md)
+
   The `Q` currently keymap stops axe (i.e. the `sase axe` command) and quits the TUI. Can you help me add the option to restart the TUI using this keymap?
 
 - We should start triggering a new panel when `Q` is pressed instead of quitting the TUI. This panel should present the user with three options that they can select with a single key press:

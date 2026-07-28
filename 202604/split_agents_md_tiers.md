@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 18:37:16
 status: done
-prompt: 202604/prompts/split_agents_md_tiers.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/split_agents_md_tiers.md](prompts/split_agents_md_tiers.md)
 
 # Split AGENTS.md into Always-Loaded and On-Demand Tiers
 

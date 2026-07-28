@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:26:29
 status: done
-prompt: 202606/prompts/epic_created_status_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/epic_created_status_1.md](prompts/epic_created_status_1.md)
+
 # Fix Epic Follow-Up Terminal Statuses
 
 ## Context

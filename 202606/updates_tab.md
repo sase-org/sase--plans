@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 19:01:28
 status: done
-prompt: 202606/prompts/updates_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/updates_tab.md](prompts/updates_tab.md)
+
 # Plan: SASE Admin Center — rename Plugins → Updates, add a SASE Core update surface
 
 ## Context

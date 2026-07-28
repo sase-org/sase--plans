@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 17:46:41
 status: done
-prompt: 202604/prompts/agents_jk_banner_navigation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_jk_banner_navigation.md](prompts/agents_jk_banner_navigation.md)
+
 # Plan: Fix `j`/`k` Navigation Across Banner Rows on the Agents Tab
 
 ## Problem

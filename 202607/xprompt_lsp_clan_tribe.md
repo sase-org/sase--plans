@@ -8,8 +8,9 @@ goal: 'The xprompt language server recognizes, completes, documents, and snippet
   '
 create_time: 2026-07-19 11:39:49
 status: done
-prompt: 202607/prompts/xprompt_lsp_clan_tribe.md
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_lsp_clan_tribe.md](prompts/xprompt_lsp_clan_tribe.md)
 
 # Plan: Align xprompt LSP clan and tribe directives
 

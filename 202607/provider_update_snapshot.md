@@ -9,8 +9,9 @@ goal: 'ACE''s existing automatic update worker durably discovers supported agent
   '
 create_time: 2026-07-20 10:26:48
 status: done
-prompt: 202607/prompts/provider_update_snapshot.md
 ---
+
+- **PROMPT:** [202607/prompts/provider_update_snapshot.md](prompts/provider_update_snapshot.md)
 
 # Plan: Provider-aware background update snapshot
 

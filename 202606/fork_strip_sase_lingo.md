@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 02:41:46
 status: done
-prompt: 202606/prompts/fork_strip_sase_lingo.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fork_strip_sase_lingo.md](prompts/fork_strip_sase_lingo.md)
+
 # Plan: Strip sase-specific lingo from `#fork` previous-conversation history
 
 ## Problem

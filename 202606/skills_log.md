@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 16:39:55
 status: done
-prompt: 202606/prompts/skills_log.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/skills_log.md](prompts/skills_log.md)
+
 # Plan: Add the `sase skills log` Inspection Command
 
 ## Goal

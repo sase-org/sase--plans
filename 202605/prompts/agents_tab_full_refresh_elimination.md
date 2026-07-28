@@ -1,6 +1,5 @@
----
-plan: 202605/agents_tab_full_refresh_elimination.md
----
+- **PLAN:** [../202605/agents_tab_full_refresh_elimination.md](../agents_tab_full_refresh_elimination.md)
+
  We recently added a tier 1 (fast way) path for refreshing the agents tab on the TUI (see the sase-3s epic bead
 for context), but we still seem to need to do a full refresh often. I would like to make full refreshes, which are VERY
 slow, almost NEVER needed for the agent entries that we show on the agents tab. Can you help me implement a solution for

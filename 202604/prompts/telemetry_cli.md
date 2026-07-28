@@ -1,6 +1,5 @@
----
-plan: 202604/telemetry_cli.md
----
+- **PLAN:** [../202604/telemetry_cli.md](../telemetry_cli.md)
+
 #resume:i Can you help me implement the `sase telemetry` command? I want you to lead the design on this one. Make sure
 you design this feature so it is intuitive, reliable, and (last but not least) beautiful!
 

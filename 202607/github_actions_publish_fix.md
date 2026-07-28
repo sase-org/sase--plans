@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 10:53:56
 status: done
-prompt: 202607/prompts/github_actions_publish_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/github_actions_publish_fix.md](prompts/github_actions_publish_fix.md)
+
 # Fix sase-github Publish Workflow Failures
 
 ## Context

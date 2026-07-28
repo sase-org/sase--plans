@@ -8,8 +8,9 @@ goal: 'Bare slash opens query or filter editing everywhere it did before the Age
   '
 create_time: 2026-07-19 13:02:35
 status: done
-prompt: 202607/prompts/restore_contextual_query_shortcuts.md
 ---
+
+- **PROMPT:** [202607/prompts/restore_contextual_query_shortcuts.md](prompts/restore_contextual_query_shortcuts.md)
 
 # Plan: Restore contextual ACE query shortcuts
 

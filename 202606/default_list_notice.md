@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 20:03:33
 status: done
-prompt: 202606/prompts/default_list_notice.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/default_list_notice.md](prompts/default_list_notice.md)
+
 # Default List Delegation Notice Plan
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: '[../202607/big_epic_lander_smartest_default.md](../big_epic_lander_smartest_default.md)'
----
+- **PLAN:** [../202607/big_epic_lander_smartest_default.md](../big_epic_lander_smartest_default.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

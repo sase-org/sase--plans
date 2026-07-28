@@ -1,11 +1,4 @@
----
-plan: '[../202607/truncation_aware_vcs_collection.md](../truncation_aware_vcs_collection.md)'
----
-
-
-
-
-
+- **PLAN:** [../202607/truncation_aware_vcs_collection.md](../truncation_aware_vcs_collection.md)
 
 Can you complete the work for bead sase-8h.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 18:40:53
 status: done
-prompt: 202604/prompts/agents_jk_random_jumps_at_fold_3.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_jk_random_jumps_at_fold_3.md](prompts/agents_jk_random_jumps_at_fold_3.md)
+
 # `sase ace` Agents tab: `j`/`k` jumps to random rows at fold level 3 once nested groups exist
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202607/gate_option_queries.md
----
+- **PLAN:** [../202607/gate_option_queries.md](../gate_option_queries.md)
+
 The user sent an image via Telegram with the following caption:
 
  it looks like we use too many plan approval telegram buttons for plans

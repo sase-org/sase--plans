@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 09:03:55
 status: done
-prompt: 202606/prompts/single_count_notification_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/single_count_notification_indicator.md](prompts/single_count_notification_indicator.md)
+
 # Single-Count Notification Indicator
 
 ## Problem

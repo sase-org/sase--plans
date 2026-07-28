@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 12:22:40
 status: done
-prompt: 202604/prompts/multi_alt.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/multi_alt.md](prompts/multi_alt.md)
 
 # Plan: Multiple `%alt` / `%(...)` Directives via Cartesian Product
 

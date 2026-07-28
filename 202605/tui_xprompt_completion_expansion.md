@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 14:54:58
 status: done
-prompt: 202605/prompts/tui_xprompt_completion_expansion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tui_xprompt_completion_expansion.md](prompts/tui_xprompt_completion_expansion.md)
+
 # TUI XPrompt Completion Expansion Plan
 
 ## Goal

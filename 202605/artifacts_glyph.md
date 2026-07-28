@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:15:02
 status: done
-prompt: 202605/prompts/artifacts_glyph.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifacts_glyph.md](prompts/artifacts_glyph.md)
+
 # Plan: ARTIFACTS Entry Prefix Glyph
 
 ## Goal

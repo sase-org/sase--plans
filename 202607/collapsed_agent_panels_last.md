@@ -8,8 +8,9 @@ goal: 'Whole agent panels that are collapsed are rendered after every expanded p
   '
 create_time: 2026-07-16 10:57:46
 status: done
-prompt: 202607/prompts/collapsed_agent_panels_last.md
 ---
+
+- **PROMPT:** [202607/prompts/collapsed_agent_panels_last.md](prompts/collapsed_agent_panels_last.md)
 
 # Plan: Sort Collapsed Agents-Tab Panels Last
 

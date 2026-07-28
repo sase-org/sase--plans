@@ -2,9 +2,10 @@
 create_time: 2026-04-07 23:40:55
 status: done
 bead_id: sase-e
-prompt: 202604/prompts/telemetry_cli.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/telemetry_cli.md](prompts/telemetry_cli.md)
 
 # Plan: `sase telemetry` CLI Subcommand
 

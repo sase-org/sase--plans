@@ -1,6 +1,5 @@
----
-plan: 202605/agents_starting_status.md
----
+- **PLAN:** [../202605/agents_starting_status.md](../agents_starting_status.md)
+
  Can you help me add a new STARTING agent row status on the "Agents" tab of the `sase ace` TUI? The goal of this status
 is to distinguish between agents that are actually running and agent prompts that are still being processed, where we
 don't know if we should be waiting on another agent, or waiting for a certain time, or if we should even run at all

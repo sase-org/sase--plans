@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 21:42:08
 status: done
-prompt: 202605/prompts/sase_2z_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_2z_completion.md](prompts/sase_2z_completion.md)
+
 # Plan: Complete sase-2z Verification and Hardening
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 14:45:29
 status: done
-prompt: 202607/prompts/fast_bead_mutations.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fast_bead_mutations.md](prompts/fast_bead_mutations.md)
+
 # Make `sase bead` Mutating Commands Fast
 
 ## Problem

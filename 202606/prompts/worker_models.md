@@ -1,6 +1,5 @@
----
-plan: 202606/worker_models.md
----
+- **PLAN:** [../202606/worker_models.md](../worker_models.md)
+
  We recently migrated the `worker_model` config field to a `worker_models` field that maps primary models/providers to the worker models that should be used when those primary models/providers are used. Can you help me improve this feature?
 
 - If a provider/model that is configured via this field is used in a user prompt (e.g. by including the `%model` directive explicitly in their prompt) and that agent creates a sase plan, then the coder agent that implements that plan (assuming the user approves it) should have its model chosen based on this config field (i.e. use whatever is configured).

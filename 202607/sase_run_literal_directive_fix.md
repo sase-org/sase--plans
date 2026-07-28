@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 23:59:48
 status: done
-prompt: 202607/prompts/sase_run_literal_directive_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sase_run_literal_directive_fix.md](prompts/sase_run_literal_directive_fix.md)
+
 # Plan: Fix /sase_run literal-directive guidance and relaunch the failed demo #5 agent
 
 ## Context: what actually failed

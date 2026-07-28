@@ -1,10 +1,4 @@
----
-plan: 202606/sase_4d_pyvision_cleanup_2.md
----
-
-
-
-
+- **PLAN:** [../202606/sase_4d_pyvision_cleanup_2.md](../sase_4d_pyvision_cleanup_2.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4d is complete?
 

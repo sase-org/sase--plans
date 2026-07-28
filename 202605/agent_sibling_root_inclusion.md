@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 15:40:22
 status: done
-prompt: 202605/prompts/agent_sibling_root_inclusion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_sibling_root_inclusion.md](prompts/agent_sibling_root_inclusion.md)
+
 # Plan: Include Bare Root Agents In Agent Sibling Families
 
 ## Context

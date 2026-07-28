@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-05 06:57:49
 status: wip
-prompt: 202607/prompts/slow_tool_calls_root_child_scoping.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/slow_tool_calls_root_child_scoping.md](prompts/slow_tool_calls_root_child_scoping.md)
+
 # Plan: Scope SLOW TOOL CALLS per selected agent row (child = own calls; root = all children, attributed)
 
 ## Problem

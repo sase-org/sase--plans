@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 15:25:56
 status: done
-prompt: 202605/prompts/episode_id_portability.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/episode_id_portability.md](prompts/episode_id_portability.md)
+
 # Episode ID Portability Fix Plan
 
 ## Problem

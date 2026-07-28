@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 11:53:02
 status: done
-prompt: 202606/prompts/agy_print_no_progress_recovery.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agy_print_no_progress_recovery.md](prompts/agy_print_no_progress_recovery.md)
+
 # Plan: Fix the Antigravity (`agy`) "planning-only / waiting-for-approval" false-success
 
 ## Symptom (what the user is seeing)

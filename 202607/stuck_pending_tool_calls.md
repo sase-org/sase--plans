@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 16:27:38
 status: done
-prompt: 202607/prompts/stuck_pending_tool_calls.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/stuck_pending_tool_calls.md](prompts/stuck_pending_tool_calls.md)
+
 # Fix never-completing tool calls in the SLOW TOOL CALLS panel
 
 ## Problem

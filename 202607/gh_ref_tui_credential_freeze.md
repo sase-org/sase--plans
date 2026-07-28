@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 16:04:12
 status: done
-prompt: 202607/prompts/gh_ref_tui_credential_freeze.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/gh_ref_tui_credential_freeze.md](prompts/gh_ref_tui_credential_freeze.md)
+
 # Fix ace TUI freeze from interactive git credential prompts (`Username for 'https://github.com':`)
 
 ## Symptom

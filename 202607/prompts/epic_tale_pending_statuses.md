@@ -1,6 +1,5 @@
----
-plan: 202607/epic_tale_pending_statuses.md
----
+- **PLAN:** [../202607/epic_tale_pending_statuses.md](../epic_tale_pending_statuses.md)
+
  Can you help me start using a new `EPIC` agent status that should be
 shown for agents on the agents tab that proposed an epic plan file instead of
 `PLAN`?

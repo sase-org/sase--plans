@@ -1,6 +1,5 @@
----
-plan: 202606/macbook_screenshots_1.md
----
+- **PLAN:** [../202606/macbook_screenshots_1.md](../macbook_screenshots_1.md)
+
  I want to add support to sase for taking screenshots from my macbook that I can then reference in prompts on
 this machine. Can you help me implement this? See the requirements below for further context.
 

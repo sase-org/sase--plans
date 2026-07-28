@@ -1,6 +1,5 @@
----
-plan: 202605/persist_default_artifacts.md
----
+- **PLAN:** [../202605/persist_default_artifacts.md](../persist_default_artifacts.md)
+
  The sdd/research/202605/last_workflow_set_status_script_infographic.png image artifact file doesn't exist because the workspace #100 was cleared by the next agent to run I think (see the `sase ace` snapshot below for context--figure out what the real issue is if this isn't t). We should be storing these artifacts somewhere globally (e.g. in ~/.sase/) and the artifacts panel should point to those file paths when the user tries to open them. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

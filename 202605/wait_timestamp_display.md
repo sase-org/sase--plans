@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 19:44:49
 status: done
-prompt: 202605/prompts/wait_timestamp_display.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/wait_timestamp_display.md](prompts/wait_timestamp_display.md)
+
 # WAIT Timestamp Display Plan
 
 ## Problem

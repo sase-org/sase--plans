@@ -1,6 +1,5 @@
----
-plan: 202603/fix_duplicate_status_frontmatter.md
----
+- **PLAN:** [../202603/fix_duplicate_status_frontmatter.md](../fix_duplicate_status_frontmatter.md)
+
 I keep seeing frontmatter like the followig in plan files:
 
 ```

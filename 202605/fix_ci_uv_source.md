@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 18:19:43
 status: done
-prompt: 202605/prompts/fix_ci_uv_source.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_ci_uv_source.md](prompts/fix_ci_uv_source.md)
+
 # Fix CI break from local uv source
 
 ## Diagnosis

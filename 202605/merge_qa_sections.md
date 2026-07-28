@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 11:12:55
 status: done
-prompt: 202605/prompts/merge_qa_sections.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/merge_qa_sections.md](prompts/merge_qa_sections.md)
+
 # Plan: Merge Multiple `### Questions and Answers` Sections in Agent Prompts
 
 ## Problem

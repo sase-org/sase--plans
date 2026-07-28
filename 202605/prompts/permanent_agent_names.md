@@ -1,6 +1,5 @@
----
-plan: 202605/permanent_agent_names.md
----
+- **PLAN:** [../202605/permanent_agent_names.md](../permanent_agent_names.md)
+
   We currently do some bad, hacky stuff with agent names. These are meant to be permanent IDs, but we change them
 when the agent is dismissed or when de-duplicating. Can you help me change this so we NEVER change previous agent names
 or allow the re-use of a previously used agent name without requiring that the previous agent be deleted?

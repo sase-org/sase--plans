@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 08:59:13
 status: done
-prompt: 202604/prompts/agents_tab_pretty_finish_timestamp.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_pretty_finish_timestamp.md](prompts/agents_tab_pretty_finish_timestamp.md)
+
 # Plan — Agents-tab finish-timestamp redesign
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 10:24:20
 status: done
-prompt: 202606/prompts/agent_name_brackets.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_name_brackets.md](prompts/agent_name_brackets.md)
+
 # Plan: Agent Name Brackets in ACE Agents Tab
 
 ## Context

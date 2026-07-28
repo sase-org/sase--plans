@@ -9,8 +9,9 @@ goal: 'Agents awaiting plan review on the Agents tab show TALE for tale plans an
   '
 create_time: 2026-07-19 08:33:50
 status: wip
-prompt: 202607/prompts/epic_tale_pending_statuses.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_tale_pending_statuses.md](prompts/epic_tale_pending_statuses.md)
 
 # Plan: Tier-aware pending plan review statuses (EPIC / TALE)
 

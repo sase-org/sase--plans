@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 22:22:56
 status: wip
-prompt: 202605/prompts/sase_30_completion_unread_contract.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_30_completion_unread_contract.md](prompts/sase_30_completion_unread_contract.md)
+
 # Remaining Work Plan: sase-30 Completion Notification Unread Contract
 
 ## Findings

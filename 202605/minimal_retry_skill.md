@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 19:35:50
 status: done
-prompt: 202605/prompts/minimal_retry_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/minimal_retry_skill.md](prompts/minimal_retry_skill.md)
+
 # Minimal Retry Skill Wording Plan
 
 ## Goal

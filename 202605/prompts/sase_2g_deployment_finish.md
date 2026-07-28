@@ -1,10 +1,4 @@
----
-plan: 202605/sase_2g_deployment_finish.md
----
-
-
-
-
+- **PLAN:** [../202605/sase_2g_deployment_finish.md](../sase_2g_deployment_finish.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-2g is complete?
 

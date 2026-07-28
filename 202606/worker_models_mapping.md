@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 12:49:32
 status: done
-prompt: 202606/prompts/worker_models_mapping.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/worker_models_mapping.md](prompts/worker_models_mapping.md)
+
 # Worker Models Mapping
 
 ## Context

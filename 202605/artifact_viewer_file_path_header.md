@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 15:44:33
 status: done
-prompt: 202605/prompts/artifact_viewer_file_path_header.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_viewer_file_path_header.md](prompts/artifact_viewer_file_path_header.md)
+
 # Artifact Viewer File Path Header Plan
 
 ## Goal

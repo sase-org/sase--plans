@@ -1,6 +1,5 @@
----
-plan: 202606/create_prompt_snippet_option.md
----
+- **PLAN:** [../202606/create_prompt_snippet_option.md](../create_prompt_snippet_option.md)
+
  Can you help me add a new `Create a new snippet...` option to the menu that pops up when the `gx` / `<ctrl+g>x` keymaps are used from the prompt input widget?
 
 - When this option is chosen, the user should be prompted to select a valid sase YAML configuration file path.

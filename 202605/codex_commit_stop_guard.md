@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 22:57:22
 status: done
-prompt: 202605/prompts/codex_commit_stop_guard.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_commit_stop_guard.md](prompts/codex_commit_stop_guard.md)
+
 # Codex Commit Stop Guard Plan
 
 ## Problem

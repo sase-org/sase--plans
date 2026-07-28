@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:19:41
 status: done
-prompt: 202605/prompts/epic_timestamp_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_timestamp_metadata.md](prompts/epic_timestamp_metadata.md)
+
 # Epic timestamp metadata plan
 
 ## Goal

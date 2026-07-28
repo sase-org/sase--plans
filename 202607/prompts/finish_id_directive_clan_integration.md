@@ -1,11 +1,4 @@
----
-plan: 202607/finish_id_directive_clan_integration.md
----
-
-
-
-
-
+- **PLAN:** [../202607/finish_id_directive_clan_integration.md](../finish_id_directive_clan_integration.md)
 
 You are the land agent for epic bead sase-7g: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

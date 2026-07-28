@@ -1,6 +1,5 @@
----
-plan: 202607/agent_panel_collapse.md
----
+- **PLAN:** [../202607/agent_panel_collapse.md](../agent_panel_collapse.md)
+
  The agents tab in the TUI currently defines the `H` / `L` keymaps which are supposed to expand/collapse all agent entries. In practice these keymaps have never really worked right and I've never really used them. Can you help me repurpose them to expand/collapse entire agent panels instead?
 
 - The `H` keymap should collapse the entire agent panel that contains the currently selected agent.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 14:29:40
 status: done
-prompt: 202606/prompts/prompt_history_five_word_minimum.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_five_word_minimum.md](prompts/prompt_history_five_word_minimum.md)
+
 # Plan: Raise prompt-history minimum from 3 to 5 words
 
 ## Problem

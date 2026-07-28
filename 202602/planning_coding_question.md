@@ -11,9 +11,9 @@ create_time: '2026-07-08 16:10:05'
 The Agents tab side-panel currently shows statuses RUNNING, WAITING INPUT, DONE, and FAILED. We need three new statuses
 that reflect intermediate agent states:
 
-- **PLANNING** — agent sent a plan notification awaiting user review
-- **CODING** — plan was approved, agent is now implementing
-- **QUESTION** — agent asked a question awaiting user answer
+- `PLANNING` — agent sent a plan notification awaiting user review
+- `CODING` — plan was approved, agent is now implementing
+- `QUESTION` — agent asked a question awaiting user answer
 
 These must be treated exactly like RUNNING in ALL scenarios: visibility, sorting, PID-checking, kill behavior,
 auto-refresh, keybindings, etc.

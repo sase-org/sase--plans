@@ -6,8 +6,9 @@ goal: Provide an immutable, refreshable project-display snapshot and typed ident
   I/O or loss of canonical identity.
 create_time: 2026-07-20 12:50:54
 status: done
-prompt: 202607/prompts/project_display_contract.md
 ---
+
+- **PROMPT:** [202607/prompts/project_display_contract.md](prompts/project_display_contract.md)
 
 # Plan: Establish the project identity and display projection contract
 

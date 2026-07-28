@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 16:46:02
 status: done
-prompt: 202604/prompts/standalone_shard_migration_script.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/standalone_shard_migration_script.md](prompts/standalone_shard_migration_script.md)
 
 # Standalone migration script for sharding `~/.sase/` dirs on another machine
 

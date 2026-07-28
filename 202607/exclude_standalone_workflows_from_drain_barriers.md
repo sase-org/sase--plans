@@ -1,9 +1,10 @@
 ---
 create_time: 2026-07-13 08:59:06
 status: done
-prompt: 202607/prompts/exclude_standalone_workflows_from_drain_barriers.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/exclude_standalone_workflows_from_drain_barriers.md](prompts/exclude_standalone_workflows_from_drain_barriers.md)
 
 # Plan: Exclude Standalone Xprompt Workflows from Drain Barriers
 

@@ -8,8 +8,9 @@ bead: sase-8i.3
 parent: sase/repos/plans/202607/race_free_epic_clan_summaries.md
 create_time: 2026-07-21 11:42:01
 status: done
-prompt: '[202607/prompts/post_preparation_clan_summary_reresolution.md](prompts/post_preparation_clan_summary_reresolution.md)'
 ---
+
+- **PROMPT:** [202607/prompts/post_preparation_clan_summary_reresolution.md](prompts/post_preparation_clan_summary_reresolution.md)
 
 # Plan: Post-preparation clan summary re-resolution
 

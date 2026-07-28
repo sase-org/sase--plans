@@ -1,11 +1,4 @@
----
-plan: 202607/close_out_sase_69_epic.md
----
-
-
-
-
-
+- **PLAN:** [../202607/close_out_sase_69_epic.md](../close_out_sase_69_epic.md)
 
 You are the land agent for epic bead sase-69: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

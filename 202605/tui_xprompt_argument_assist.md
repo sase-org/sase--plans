@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-07 00:12:22
 status: done
-prompt: 202605/prompts/tui_xprompt_argument_assist.md
 bead_id: sase-28
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/tui_xprompt_argument_assist.md](prompts/tui_xprompt_argument_assist.md)
+
 # Plan: TUI XPrompt Argument Completion And Hints
 
 ## Goal

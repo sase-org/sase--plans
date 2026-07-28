@@ -6,8 +6,9 @@ goal: Make every human-facing Statistics project and ChangeSpec label use config
   and stable colors.
 create_time: 2026-07-20 13:12:16
 status: done
-prompt: 202607/prompts/statistics_project_labels.md
 ---
+
+- **PROMPT:** [202607/prompts/statistics_project_labels.md](prompts/statistics_project_labels.md)
 
 # Plan: Repair every Statistics project label
 

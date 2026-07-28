@@ -1,6 +1,5 @@
----
-plan: 202607/agent_metadata_vim_search.md
----
+- **PLAN:** [../202607/agent_metadata_vim_search.md](../agent_metadata_vim_search.md)
+
  Can you help me add excellent, vim-inspired text search to the agent
 metadata panel on the "Agents" tab of the `sase ace` TUI?
 

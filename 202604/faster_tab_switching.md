@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 18:18:18
 status: done
-prompt: 202604/prompts/faster_tab_switching.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/faster_tab_switching.md](prompts/faster_tab_switching.md)
 
 # Plan: Faster TUI Tab Switching
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 14:07:29
 status: done
-prompt: 202605/prompts/pdf_worker_deploy_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pdf_worker_deploy_fix.md](prompts/pdf_worker_deploy_fix.md)
+
 # Plan: Fix SASE Handbook Deployment To Cloudflare Worker
 
 ## Problem

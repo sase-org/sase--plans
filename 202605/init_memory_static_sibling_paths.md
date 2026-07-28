@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 10:23:29
 status: done
-prompt: 202605/prompts/init_memory_static_sibling_paths.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/init_memory_static_sibling_paths.md](prompts/init_memory_static_sibling_paths.md)
+
 # Plan: Conditional Sibling Workspace Instructions in `sase init memory`
 
 ## Goal

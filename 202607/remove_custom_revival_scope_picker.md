@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 13:02:09
 status: done
-prompt: 202607/prompts/remove_custom_revival_scope_picker.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/remove_custom_revival_scope_picker.md](prompts/remove_custom_revival_scope_picker.md)
+
 # Plan: Open Custom Revival Search Directly on Recent Dismissed Agents
 
 ## Summary

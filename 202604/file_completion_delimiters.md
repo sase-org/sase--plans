@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 18:34:55
 status: done
-prompt: 202604/prompts/file_completion_delimiters.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/file_completion_delimiters.md](prompts/file_completion_delimiters.md)
 
 # Plan: Fix file completion token extraction near special characters
 

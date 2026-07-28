@@ -8,8 +8,9 @@ goal: 'The Agents tab keeps compact tag panels readable while allowing an oversi
   '
 create_time: 2026-07-18 14:00:50
 status: done
-prompt: 202607/prompts/agent_panel_vertical_space.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_panel_vertical_space.md](prompts/agent_panel_vertical_space.md)
 
 # Plan: Use All Vertical Space for Overflowing Agent Panels
 

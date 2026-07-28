@@ -9,8 +9,9 @@ goal: 'Published SASE installs receive the Rust telemetry bindings, the Telemetr
   '
 create_time: 2026-07-17 15:36:48
 status: wip
-prompt: 202607/prompts/telemetry_release_and_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/telemetry_release_and_landing.md](prompts/telemetry_release_and_landing.md)
 
 # Plan: Finish the in-house telemetry release and landing
 

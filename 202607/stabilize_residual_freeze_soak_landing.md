@@ -9,8 +9,9 @@ goal: 'The residual-freeze integration soak reliably detects regressions in the 
   '
 create_time: 2026-07-17 09:33:38
 status: done
-prompt: 202607/prompts/stabilize_residual_freeze_soak_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/stabilize_residual_freeze_soak_landing.md](prompts/stabilize_residual_freeze_soak_landing.md)
 
 # Plan: Stabilize residual-freeze soak verification and re-land sase-6j
 

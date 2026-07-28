@@ -8,8 +8,9 @@ goal: 'Make the Agents tab header clearly and accurately show global user-agent 
   '
 create_time: 2026-07-20 08:30:12
 status: wip
-prompt: 202607/prompts/agents_runner_capacity_header.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_runner_capacity_header.md](prompts/agents_runner_capacity_header.md)
 
 # Plan: Agents tab runner capacity header
 

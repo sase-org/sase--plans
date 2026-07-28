@@ -1,10 +1,4 @@
----
-plan: 202607/provider_update_snapshot.md
----
-
-
-
-
+- **PLAN:** [../202607/provider_update_snapshot.md](../provider_update_snapshot.md)
 
 Can you complete the work for bead sase-83.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

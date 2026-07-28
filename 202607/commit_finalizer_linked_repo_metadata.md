@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 05:57:10
 status: done
-prompt: 202607/prompts/commit_finalizer_linked_repo_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/commit_finalizer_linked_repo_metadata.md](prompts/commit_finalizer_linked_repo_metadata.md)
+
 # Fix: Commit finalizer fails on SASE-generated metadata inside linked repo checkouts (sase-5y.3 failure)
 
 ## Background: what happened

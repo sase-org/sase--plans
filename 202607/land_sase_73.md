@@ -27,6 +27,8 @@ status: done
 bead_id: sase-7f
 ---
 
+- **PROMPT:** [202607/prompts/land_sase_73.md](prompts/land_sase_73.md)
+
 # Plan: Integrate and land smart summary folding
 
 ## Context and verified baseline

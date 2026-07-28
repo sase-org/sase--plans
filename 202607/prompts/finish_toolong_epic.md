@@ -1,11 +1,4 @@
----
-plan: 202607/finish_toolong_epic.md
----
-
-
-
-
-
+- **PLAN:** [../202607/finish_toolong_epic.md](../finish_toolong_epic.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5r is complete?
 

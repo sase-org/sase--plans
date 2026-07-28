@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 20:39:14
 status: done
-prompt: 202604/prompts/dynamic_memory_3.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_3.md](prompts/dynamic_memory_3.md)
 
 # Plan: Dynamic Memory Generation with TUI Visibility
 

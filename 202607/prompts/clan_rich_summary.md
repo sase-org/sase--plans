@@ -1,6 +1,5 @@
----
-plan: 202607/clan_rich_summary.md
----
+- **PLAN:** [../202607/clan_rich_summary.md](../clan_rich_summary.md)
+
  I want to start supporting the ability to initialize an agent clan with a set of rich enabled text (figure out some way to serialize Rich's/Textual's syntax so users can effectively format text however they want) that gets displayed for that clan's summary in the agent metadata panel. Can you help me implement this as an argument to the `%clan` xprompt directive?
 
 - We should support either a multiline string argument, which xprompt directive's should support a double colon syntax shorthand for, or the path to an executable script that outputs the rich text.

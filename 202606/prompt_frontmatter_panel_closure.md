@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 16:18:12
 status: done
-prompt: 202606/prompts/prompt_frontmatter_panel_closure.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_frontmatter_panel_closure.md](prompts/prompt_frontmatter_panel_closure.md)
+
 # Plan: Close prompt frontmatter panel epic
 
 ## Context

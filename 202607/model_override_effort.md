@@ -42,6 +42,8 @@ status: done
 bead_id: sase-8z
 ---
 
+- **PROMPT:** [202607/prompts/model_override_effort.md](prompts/model_override_effort.md)
+
 # Model Override/Edit Picker: Alias Ordering and Effort-Aware Selections
 
 ## Goal

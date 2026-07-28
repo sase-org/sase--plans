@@ -8,8 +8,9 @@ goal: 'Successful Admin Center Config-tab edits offer the established y/n commit
   '
 create_time: 2026-07-20 10:04:55
 status: done
-prompt: 202607/prompts/admin_config_commit_push_prompt.md
 ---
+
+- **PROMPT:** [202607/prompts/admin_config_commit_push_prompt.md](prompts/admin_config_commit_push_prompt.md)
 
 # Plan: Prompt to commit Admin Center config edits
 

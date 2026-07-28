@@ -1,6 +1,5 @@
----
-plan: 202603/prompt_widget_improvements.md
----
+- **PLAN:** [../202603/prompt_widget_improvements.md](../prompt_widget_improvements.md)
+
 #gh:sase We recently (see 9febfa43ed7b git commit) replaced the prompt bar with a TextArea widget. Can you help me make
 some more improvements?
 

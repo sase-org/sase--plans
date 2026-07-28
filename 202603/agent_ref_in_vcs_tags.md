@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 11:09:01
 status: done
-prompt: 202603/prompts/agent_ref_in_vcs_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/agent_ref_in_vcs_tags.md](prompts/agent_ref_in_vcs_tags.md)
 
 # Plan: `#<vcs>:@<name>` Agent Reference in VCS Tags
 

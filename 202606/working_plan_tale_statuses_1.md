@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 11:38:34
 status: done
-prompt: 202606/prompts/working_plan_tale_statuses_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/working_plan_tale_statuses_1.md](prompts/working_plan_tale_statuses_1.md)
+
 # Plan: `WORKING PLAN` / `WORKING TALE` statuses for code agents
 
 ## Goal

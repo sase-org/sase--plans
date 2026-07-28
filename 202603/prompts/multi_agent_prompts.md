@@ -1,6 +1,5 @@
----
-plan: 202603/multi_agent_prompts.md
----
+- **PLAN:** [../202603/multi_agent_prompts.md](../multi_agent_prompts.md)
+
 #gh:sase Can you create a plan using your /sase_plan skill for the following prompt:
 
 ### THE PROMPT YOU NEED TO CREATE A PLAN FOR

@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-05-01 23:21:01
-prompt: 202605/prompts/migrate_root_sdd_artifacts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/migrate_root_sdd_artifacts.md](prompts/migrate_root_sdd_artifacts.md)
 
 # Plan: Migrate Remaining Root Specs And Plans Into SDD
 

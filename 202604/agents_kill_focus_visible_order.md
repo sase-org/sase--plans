@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 19:34:01
 status: done
-prompt: 202604/prompts/agents_kill_focus_visible_order.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_kill_focus_visible_order.md](prompts/agents_kill_focus_visible_order.md)
+
 # `sase ace` Agents tab: `x` (kill / dismiss) jumps focus to a "random" agent instead of the row below the killed one
 
 ## Problem

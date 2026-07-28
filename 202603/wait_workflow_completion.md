@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 15:36:19
 status: done
-prompt: 202603/prompts/wait_workflow_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/wait_workflow_completion.md](prompts/wait_workflow_completion.md)
 
 # Plan: Make `%wait:a` Work With Multi-Agent Workflows
 

@@ -9,8 +9,9 @@ goal: 'Agents and agent families inside every agent clan render failed members f
   '
 create_time: 2026-07-18 16:26:41
 status: done
-prompt: 202607/prompts/clan_member_status_sort.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_member_status_sort.md](prompts/clan_member_status_sort.md)
 
 # Plan: Sort clan members by status priority
 

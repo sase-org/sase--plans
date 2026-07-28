@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 12:59:10
 status: done
-prompt: 202606/prompts/neighbor_keymap_includes_ancestors.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/neighbor_keymap_includes_ancestors.md](prompts/neighbor_keymap_includes_ancestors.md)
+
 # Plan: Make the `~` (neighbors) keymap include ancestors of the selected agent
 
 ## Goal / product context

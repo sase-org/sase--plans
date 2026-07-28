@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 16:40:35
 status: done
-prompt: 202606/prompts/builtin_split_file.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/builtin_split_file.md](prompts/builtin_split_file.md)
+
 # Plan: Make `split_file` a Built-In XPrompt
 
 ## Goal

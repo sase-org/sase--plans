@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 14:54:22
 status: done
-prompt: 202606/prompts/vcs_project_completion_hash_plus_trigger.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/vcs_project_completion_hash_plus_trigger.md](prompts/vcs_project_completion_hash_plus_trigger.md)
+
 # Plan: Change VCS project completion trigger from `+` to `#+`
 
 ## Goal

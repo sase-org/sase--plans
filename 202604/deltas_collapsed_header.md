@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 12:32:25
 status: done
-prompt: 202604/prompts/deltas_collapsed_header.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/deltas_collapsed_header.md](prompts/deltas_collapsed_header.md)
+
 # Plan: Preserve the DELTAS Header When Collapsed
 
 ## Problem

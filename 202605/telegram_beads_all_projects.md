@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 21:40:06
 status: wip
-prompt: 202605/prompts/telegram_beads_all_projects.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_beads_all_projects.md](prompts/telegram_beads_all_projects.md)
+
 # Fix Telegram `/beads` All-Project Listing
 
 ## Context Reviewed

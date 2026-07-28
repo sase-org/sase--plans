@@ -24,6 +24,8 @@ status: done
 bead_id: sase-8l
 ---
 
+- **PROMPT:** [202607/prompts/toobig_clan_summary.md](prompts/toobig_clan_summary.md)
+
 # Beautiful `toobig_split` Clan Summaries
 
 ## Outcome

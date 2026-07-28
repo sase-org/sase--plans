@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 11:37:12
 status: done
-prompt: 202606/prompts/prompt_stack_keymap_rebinds.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_keymap_rebinds.md](prompts/prompt_stack_keymap_rebinds.md)
+
 # Prompt Stack Keymap Rebinds Plan
 
 ## Context

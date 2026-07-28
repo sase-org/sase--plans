@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 16:25:28
 status: wip
-prompt: 202605/prompts/deltas_line_counts_hg.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/deltas_line_counts_hg.md](prompts/deltas_line_counts_hg.md)
+
 # Plan: Show DELTAS Line Counts for Mercurial ChangeSpecs
 
 ## Context

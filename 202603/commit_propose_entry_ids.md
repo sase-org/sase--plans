@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 20:12:16
 status: done
-prompt: 202603/prompts/commit_propose_entry_ids.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_propose_entry_ids.md](prompts/commit_propose_entry_ids.md)
 
 # Plan: Fix #propose/#commit COMMITS entry creation and Proposal Id display
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 10:45:56
 status: done
-prompt: 202607/prompts/move_consumed_plan.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/move_consumed_plan.md](prompts/move_consumed_plan.md)
+
 # Move consumed `sase plan propose` files
 
 ## Context

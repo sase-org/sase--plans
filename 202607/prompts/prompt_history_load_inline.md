@@ -1,6 +1,5 @@
----
-plan: 202607/prompt_history_load_inline.md
----
+- **PLAN:** [../202607/prompt_history_load_inline.md](../prompt_history_load_inline.md)
+
  When I trigger prompt history from one of multiple prompt input widgets, find the prompt I want, and then press `<ctrl+i>` to load the prompt in the prompt input widget, it seems that the prompts in the other prompt input widgets are completely lost (their prompt input widgets disappear and I am only left with the new prompt that I just loaded from history). This is not correct.
 
 - We should just load the prompt inline into the current prompt input widget, if the selected prompt is not a multi-agent prompt.

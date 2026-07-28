@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 12:03:29
 status: done
-prompt: 202605/prompts/validate_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/validate_command.md](prompts/validate_command.md)
+
 # Plan: Add `sase validate`
 
 ## Goal

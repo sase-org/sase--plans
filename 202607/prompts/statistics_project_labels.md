@@ -1,10 +1,4 @@
----
-plan: 202607/statistics_project_labels.md
----
-
-
-
-
+- **PLAN:** [../202607/statistics_project_labels.md](../statistics_project_labels.md)
 
 Can you complete the work for bead sase-89.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

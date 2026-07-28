@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-07 16:59:02
 status: wip
-prompt: 202604/prompts/fix_revive_agent.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_revive_agent.md](prompts/fix_revive_agent.md)
 
 # Fix: Revived agents not appearing in side panel
 

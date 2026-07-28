@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 15:06:07
 status: done
-prompt: 202605/prompts/bulk_dismiss_speedup_and_toast.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bulk_dismiss_speedup_and_toast.md](prompts/bulk_dismiss_speedup_and_toast.md)
+
 # Bulk-Dismiss Speedup + Toast Reliability
 
 ## Problem

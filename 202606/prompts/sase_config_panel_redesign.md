@@ -1,6 +1,5 @@
----
-plan: 202606/sase_config_panel_redesign.md
----
+- **PLAN:** [../202606/sase_config_panel_redesign.md](../sase_config_panel_redesign.md)
+
  Can you help me improve the way the "Config Center" panel looks currently?
 
 - The title should be "SASE Config" instead of "Config Center" and it should be located in the center of the panel.

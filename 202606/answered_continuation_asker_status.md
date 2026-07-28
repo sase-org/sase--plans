@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-30 08:50:55
 status: done
-prompt: 202606/prompts/answered_continuation_asker_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/answered_continuation_asker_status.md](prompts/answered_continuation_asker_status.md)
+
 # Plan: Question-continuation askers should show ANSWERED, not DONE
 
 ## Problem

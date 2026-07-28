@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 20:57:19
 status: done
-prompt: 202604/prompts/telegram_bead_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/telegram_bead_command.md](prompts/telegram_bead_command.md)
+
 # Plan: `/bead` Telegram Slash Command
 
 ## Goal

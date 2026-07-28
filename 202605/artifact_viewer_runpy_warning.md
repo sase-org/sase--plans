@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 18:06:27
 status: done
-prompt: 202605/prompts/artifact_viewer_runpy_warning.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_viewer_runpy_warning.md](prompts/artifact_viewer_runpy_warning.md)
+
 # Artifact Viewer `runpy` Warning Plan
 
 ## Problem

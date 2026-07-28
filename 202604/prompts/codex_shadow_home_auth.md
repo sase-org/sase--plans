@@ -1,6 +1,5 @@
----
-plan: 202604/codex_shadow_home_auth.md
----
+- **PLAN:** [../202604/codex_shadow_home_auth.md](../codex_shadow_home_auth.md)
+
  Can you help me figure out what is causing these codex errors that I've been seeing recently (see the `sase ace` snapshot below) and fix the issue? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

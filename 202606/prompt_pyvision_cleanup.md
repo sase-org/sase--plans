@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 16:34:03
 status: done
-prompt: 202606/prompts/prompt_pyvision_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_pyvision_cleanup.md](prompts/prompt_pyvision_cleanup.md)
+
 # Prompt History Pyvision Cleanup Plan
 
 ## Context

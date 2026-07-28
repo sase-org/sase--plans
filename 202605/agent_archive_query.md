@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-12 16:07:47
 status: done
-prompt: 202605/prompts/agent_archive_query.md
 bead_id: sase-37
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agent_archive_query.md](prompts/agent_archive_query.md)
+
 # Agent Archive and Query Language Implementation Plan
 
 ## Goal

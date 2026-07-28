@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 15:47:48
 status: done
-prompt: 202605/prompts/chat_install_restart.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/chat_install_restart.md](prompts/chat_install_restart.md)
+
 # Chat Install / Restart Command Plan
 
 ## Goal

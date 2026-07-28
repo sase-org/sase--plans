@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 10:42:11
 status: done
-prompt: 202605/prompts/init_check_memory_false_positives.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/init_check_memory_false_positives.md](prompts/init_check_memory_false_positives.md)
+
 # Plan: Fix `sase init --check` Memory False Positives
 
 ## Problem

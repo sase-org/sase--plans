@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 10:31:40
 status: done
-prompt: 202605/prompts/move_pencil_provider_badge.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/move_pencil_provider_badge.md](prompts/move_pencil_provider_badge.md)
+
 # Move Agent Row Pencil Next To Provider Badge
 
 ## Context

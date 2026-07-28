@@ -1,6 +1,5 @@
----
-plan: 202605/commit_finalizer_no_stop_hooks.md
----
+- **PLAN:** [../202605/commit_finalizer_no_stop_hooks.md](../commit_finalizer_no_stop_hooks.md)
+
  Can you help me change the way that sase commits work by removing the need for the sase_commit_stop_hook and
 sase_sibling_commit_stop_hook agent stop hook scripts? See the
 sdd/research/202605/agent_commit_skill_enforcement_rewrite.md and

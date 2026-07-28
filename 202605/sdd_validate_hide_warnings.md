@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 18:36:13
 status: done
-prompt: 202605/prompts/sdd_validate_hide_warnings.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sdd_validate_hide_warnings.md](prompts/sdd_validate_hide_warnings.md)
+
 # Plan: Hide `sase sdd validate` warning lines by default
 
 ## Problem

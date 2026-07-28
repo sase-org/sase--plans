@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 21:10:49
 status: wip
-prompt: 202605/prompts/post_9_sidebar.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/post_9_sidebar.md](prompts/post_9_sidebar.md)
+
 # Plan: Restore Post 9 In The sase.sh Sidebar
 
 ## Problem

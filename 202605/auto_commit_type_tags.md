@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 13:41:33
 status: done
-prompt: 202605/prompts/auto_commit_type_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/auto_commit_type_tags.md](prompts/auto_commit_type_tags.md)
+
 # Plan: Auto-Commit TYPE Tags
 
 ## Goal

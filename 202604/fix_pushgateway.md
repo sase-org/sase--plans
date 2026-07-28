@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 21:11:30
 status: wip
-prompt: 202604/prompts/fix_pushgateway.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_pushgateway.md](prompts/fix_pushgateway.md)
 
 # Plan: Diagnose and Fix Prometheus Push Gateway
 

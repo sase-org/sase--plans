@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 17:16:54
 status: wip
-prompt: 202603/prompts/gemini_commit_dispatch.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/gemini_commit_dispatch.md](prompts/gemini_commit_dispatch.md)
 
 # Fix: Re-add commit dispatch steps to unified xprompts for Gemini agents
 

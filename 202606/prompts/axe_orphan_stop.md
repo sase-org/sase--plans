@@ -1,6 +1,5 @@
----
-plan: 202606/axe_orphan_stop.md
----
+- **PLAN:** [../202606/axe_orphan_stop.md](../axe_orphan_stop.md)
+
  It seems sometimes tests or agents maybe start `sase axe` in their own workspace directories and then it is impossible to stop those `sase axe` processes or start a new one from `sase ace`. See the below command output for context on this problem. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

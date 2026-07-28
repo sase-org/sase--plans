@@ -8,8 +8,9 @@ goal: 'Make the Agents header more compact by removing the redundant "runners" l
   '
 create_time: 2026-07-20 10:27:06
 status: done
-prompt: 202607/prompts/agents_runner_capacity_without_label.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_runner_capacity_without_label.md](prompts/agents_runner_capacity_without_label.md)
 
 # Plan: Label-free Agents runner-capacity chip
 

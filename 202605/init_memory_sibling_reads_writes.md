@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 10:11:34
 status: done
-prompt: 202605/prompts/init_memory_sibling_reads_writes.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/init_memory_sibling_reads_writes.md](prompts/init_memory_sibling_reads_writes.md)
+
 # Plan: Clarify Sibling Repository Memory Wording
 
 ## Goal

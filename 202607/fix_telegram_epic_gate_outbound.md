@@ -8,8 +8,9 @@ goal: 'Telegram safely formats command-backed tale and epic plan gates, so an Ep
   '
 create_time: 2026-07-17 08:40:16
 status: done
-prompt: 202607/prompts/fix_telegram_epic_gate_outbound.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_telegram_epic_gate_outbound.md](prompts/fix_telegram_epic_gate_outbound.md)
 
 # Plan: Restore Telegram outbound delivery for epic approval gates
 

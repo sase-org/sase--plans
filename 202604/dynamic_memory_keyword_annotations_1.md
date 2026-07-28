@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 16:15:42
 status: done
-prompt: 202604/prompts/dynamic_memory_keyword_annotations_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_keyword_annotations_1.md](prompts/dynamic_memory_keyword_annotations_1.md)
 
 # Plan: Keyword Annotations for DYNAMIC MEMORY Lines
 

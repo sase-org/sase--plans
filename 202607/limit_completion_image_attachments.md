@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 10:33:25
 status: done
-prompt: 202607/prompts/limit_completion_image_attachments.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/limit_completion_image_attachments.md](prompts/limit_completion_image_attachments.md)
+
 # Plan: Limit Agent Completion Image Attachments
 
 ## Problem and root cause

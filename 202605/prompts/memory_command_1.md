@@ -1,6 +1,5 @@
----
-plan: 202605/memory_command_1.md
----
+- **PLAN:** [../202605/memory_command_1.md](../memory_command_1.md)
+
 #gh:sase Can you help me add a new `sase memory` command with two subcommands, `list` and `init`?
 
 - The `init` command should be the new main implementation of the `sase init memory` command's behavior and that command

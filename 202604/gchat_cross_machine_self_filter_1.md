@@ -9,9 +9,10 @@ description: Make retired chat plugin's self-message filtering survive multiple 
   space.
 create_time: 2026-04-25 11:39:38
 status: wip
-prompt: 202604/prompts/gchat_cross_machine_self_filter_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gchat_cross_machine_self_filter_1.md](prompts/gchat_cross_machine_self_filter_1.md)
 
 # retired chat plugin - Cross-Machine Self-Message Filter
 

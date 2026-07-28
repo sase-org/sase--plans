@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 15:24:58
 status: done
-prompt: 202605/prompts/xprompt_lsp_definition_e2e_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_definition_e2e_fix.md](prompts/xprompt_lsp_definition_e2e_fix.md)
+
 # Plan: Fix XPrompt LSP Jump To Definition End To End
 
 ## Context

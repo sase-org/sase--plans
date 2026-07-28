@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 10:39:55
 status: done
-prompt: 202606/prompts/jump_to_definition_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/jump_to_definition_keymap.md](prompts/jump_to_definition_keymap.md)
+
 # Plan: `Ctrl+]` Jump-to-Definition Keymap for the Prompt Input Widget
 
 ## 1. Goal & Product Context

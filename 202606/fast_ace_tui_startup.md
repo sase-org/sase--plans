@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 20:14:04
 status: done
-prompt: 202606/prompts/fast_ace_tui_startup.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fast_ace_tui_startup.md](prompts/fast_ace_tui_startup.md)
+
 # Plan: Make `sase ace` Startup Fast (Eliminate Pre-Paint Dismissed-Index Sync)
 
 ## Problem

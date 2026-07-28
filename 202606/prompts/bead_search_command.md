@@ -1,6 +1,5 @@
----
-plan: 202606/bead_search_command.md
----
+- **PLAN:** [../202606/bead_search_command.md](../bead_search_command.md)
+
  Can you help me create a new `sase bead search` command?
 
 - This command should take a text query as an argument.

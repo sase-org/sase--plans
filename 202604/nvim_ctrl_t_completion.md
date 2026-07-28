@@ -2,9 +2,11 @@
 create_time: 2026-04-24 21:27:39
 status: done
 bead_id: sase-o
-prompt: 202604/prompts/nvim_ctrl_t_completion.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/nvim_ctrl_t_completion.md](prompts/nvim_ctrl_t_completion.md)
+
 # Plan: `<ctrl+t>` Completion Keymap for sase-nvim
 
 ## Problem

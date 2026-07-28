@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 12:46:36
 status: done
-prompt: 202604/prompts/bead_work_detach.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bead_work_detach.md](prompts/bead_work_detach.md)
+
 # Plan: make `sase bead work` return after launching epic agents
 
 ## Problem

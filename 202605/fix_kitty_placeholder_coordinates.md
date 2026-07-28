@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 11:30:49
 status: done
-prompt: 202605/prompts/fix_kitty_placeholder_coordinates.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_kitty_placeholder_coordinates.md](prompts/fix_kitty_placeholder_coordinates.md)
+
 # Fix Kitty Placeholder Image Rendering
 
 ## Problem

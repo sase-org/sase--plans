@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 13:14:28
 status: done
-prompt: 202605/prompts/revived_agent_visibility_resume.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revived_agent_visibility_resume.md](prompts/revived_agent_visibility_resume.md)
+
 # Plan: Stabilize Revived Agent Visibility and Resume Lookup
 
 ## Problem

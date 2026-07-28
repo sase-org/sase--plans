@@ -1,6 +1,5 @@
----
-plan: 202605/legend_bead_integration.md
----
+- **PLAN:** [../202605/legend_bead_integration.md](../legend_bead_integration.md)
+
  Can you help me improve sase's legend bead integration? 
 
 - I want the integration to launch an agent with a name of the form `<prj>-<M>.<N>.0`, which use a prompt like the

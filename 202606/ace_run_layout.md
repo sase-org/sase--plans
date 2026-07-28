@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 12:28:33
 status: done
-prompt: 202606/prompts/ace_run_layout.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_run_layout.md](prompts/ace_run_layout.md)
+
 # Plan: Restructure `ace-run/` Artifact Storage and Search
 
 ## Summary

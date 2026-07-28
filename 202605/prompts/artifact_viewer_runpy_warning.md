@@ -1,6 +1,5 @@
----
-plan: 202605/artifact_viewer_runpy_warning.md
----
+- **PLAN:** [../202605/artifact_viewer_runpy_warning.md](../artifact_viewer_runpy_warning.md)
+
  Every time I launch the artifact viewer, the below warning message appears before the first image is displayed. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

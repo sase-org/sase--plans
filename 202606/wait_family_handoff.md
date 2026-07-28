@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-06 10:49:47
 status: done
-prompt: 202606/prompts/wait_family_handoff.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/wait_family_handoff.md](prompts/wait_family_handoff.md)
+
 # Fix Wait-Check Resolution for Plan-Chain Handoff Artifacts
 
 ## Problem

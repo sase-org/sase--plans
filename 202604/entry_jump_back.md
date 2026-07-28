@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-06 15:20:01
 status: done
-prompt: 202604/prompts/entry_jump_back.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/entry_jump_back.md](prompts/entry_jump_back.md)
 
 # Plan: Hidden Apostrophe "Jump Back" Hint for Entry Jump Mode
 

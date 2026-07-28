@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 08:51:16
 status: draft
-prompt: 202603/prompts/full_pr_description_in_changespec.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/full_pr_description_in_changespec.md](prompts/full_pr_description_in_changespec.md)
 
 # Full PR Description in ChangeSpec DESCRIPTION Field
 

@@ -1,6 +1,5 @@
----
-plan: 202605/changespec_deltas_v_keymap.md
----
+- **PLAN:** [../202605/changespec_deltas_v_keymap.md](../changespec_deltas_v_keymap.md)
+
  Can you help me add support for the file entries in the ChangeSpec DELTAS field for the `v` keymap (see the `sase ace` snapshot below)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
  ⭘                                                                                                     sase ace

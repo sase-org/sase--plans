@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 21:51:41
 status: done
-prompt: 202604/prompts/fix_stale_rust_extension_setup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_stale_rust_extension_setup.md](prompts/fix_stale_rust_extension_setup.md)
+
 # Fix stale `sase_core_rs` setup checks
 
 ## Context

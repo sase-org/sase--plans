@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-05 21:37:01
 status: wip
-prompt: 202607/prompts/agents_tab_auto_approve_prefix_and_child_alignment.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agents_tab_auto_approve_prefix_and_child_alignment.md](prompts/agents_tab_auto_approve_prefix_and_child_alignment.md)
+
 # Plan: Fix over-applied ⚡ (auto-approve) prefix on Agents-tab child rows + child row alignment
 
 ## Problem

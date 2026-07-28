@@ -1,6 +1,5 @@
----
-plan: 202605/plan_followup_commit_failure_1.md
----
+- **PLAN:** [../202605/plan_followup_commit_failure_1.md](../plan_followup_commit_failure_1.md)
+
  I already approved the plans proposed by the "a2l" and "a2m" sase agents, but it doesn't look likey any `#coder` agents have been launched to implement these plans. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

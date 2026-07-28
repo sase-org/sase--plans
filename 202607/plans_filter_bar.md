@@ -51,6 +51,8 @@ status: done
 bead_id: sase-6t
 ---
 
+- **PROMPT:** [202607/prompts/plans_filter_bar.md](prompts/plans_filter_bar.md)
+
 # Plan: Plans filter bar with live filtering and completion
 
 ## Context

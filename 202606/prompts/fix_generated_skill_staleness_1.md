@@ -1,10 +1,4 @@
----
-plan: 202606/fix_generated_skill_staleness_1.md
----
-
-
-
-
+- **PLAN:** [../202606/fix_generated_skill_staleness_1.md](../fix_generated_skill_staleness_1.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4g is complete?
 

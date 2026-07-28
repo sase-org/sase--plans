@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 23:06:01
 status: done
-prompt: 202605/prompts/tui_slowdown.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tui_slowdown.md](prompts/tui_slowdown.md)
+
 # Plan: Diagnose and Fix Current ACE TUI Slowdown
 
 ## Context

@@ -1,6 +1,5 @@
----
-plan: 202606/async_force_reuse_agent_launch.md
----
+- **PLAN:** [../202606/async_force_reuse_agent_launch.md](../async_force_reuse_agent_launch.md)
+
  We currently already run all of the work that could potentially block the TUI when launching agents in a
 background task. However when we use the `%name:!<name>` syntax to overwrite an existing agent `<name>`, that takes a
 while and is run on the main thread. Can you help me start running it in the same background task instead so we don't

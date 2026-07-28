@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 22:32:22
 status: done
-prompt: 202605/prompts/agent_name_prefix_grouping.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_name_prefix_grouping.md](prompts/agent_name_prefix_grouping.md)
+
 # Plan: Agent Name Prefix Subgroups
 
 ## Goal

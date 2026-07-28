@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:39:41
 status: done
-prompt: 202604/prompts/notification_panel_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_panel_polish.md](prompts/notification_panel_polish.md)
+
 # Notification Panel Polish
 
 ## Context

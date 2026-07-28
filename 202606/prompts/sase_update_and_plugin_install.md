@@ -1,6 +1,5 @@
----
-plan: 202606/sase_update_and_plugin_install.md
----
+- **PLAN:** [../202606/sase_update_and_plugin_install.md](../sase_update_and_plugin_install.md)
+
  Can you help me add a new `sase update` command?
 
 - This command will assume that sase was installed via the `uv tool install sase` command or some variant of it. We should check for this and crash with a good error message if it doesn't seem to be the case.

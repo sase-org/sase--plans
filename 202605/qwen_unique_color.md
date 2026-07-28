@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 18:23:59
 status: done
-prompt: 202605/prompts/qwen_unique_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/qwen_unique_color.md](prompts/qwen_unique_color.md)
+
 # Plan: Give QWEN a Unique, Brand-Aligned Color
 
 ## Problem

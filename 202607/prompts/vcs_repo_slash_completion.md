@@ -1,6 +1,5 @@
----
-plan: 202607/vcs_repo_slash_completion.md
----
+- **PLAN:** [../202607/vcs_repo_slash_completion.md](../vcs_repo_slash_completion.md)
+
  Can you help me add good completion for GitHub repos when the user presses the `/` key an the argument provided to the `#gh` xprompt workflow?
 
 - For example, typing `#gh:bbugyi200/` should trigger a completion menu for all valid, public GitHub repos in the `bbugyi200` GitHub organization.

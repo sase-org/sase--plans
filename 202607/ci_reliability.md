@@ -6,8 +6,9 @@ goal: Restore reliable SASE CI by eliminating environment-dependent test failure
   outliers.
 create_time: 2026-07-15 13:47:29
 status: done
-prompt: 202607/prompts/ci_reliability.md
 ---
+
+- **PROMPT:** [202607/prompts/ci_reliability.md](prompts/ci_reliability.md)
 
 # Plan: Restore reliable SASE CI
 

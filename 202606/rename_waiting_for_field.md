@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 08:43:37
 status: done
-prompt: 202606/prompts/rename_waiting_for_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/rename_waiting_for_field.md](prompts/rename_waiting_for_field.md)
+
 # Rename Agents Metadata Wait Label
 
 ## Context

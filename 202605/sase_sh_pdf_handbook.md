@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 12:45:32
 status: done
-prompt: 202605/prompts/sase_sh_pdf_handbook.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_sh_pdf_handbook.md](prompts/sase_sh_pdf_handbook.md)
+
 # SASE.sh PDF Handbook Implementation Plan
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 09:24:21
 status: done
-prompt: 202606/prompts/multi_agent_xprompt_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/multi_agent_xprompt_marker.md](prompts/multi_agent_xprompt_marker.md)
+
 # Plan: Make `#` the canonical marker for multi-agent xprompts + allow multiple fan-outs per prompt
 
 ## Problem & motivation

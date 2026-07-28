@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 11:37:47
 status: done
-prompt: 202604/prompts/ace_axe_nav_freeze.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_axe_nav_freeze.md](prompts/ace_axe_nav_freeze.md)
 
 # Fix: sase ace TUI freeze when pressing `k` on AXE tab
 

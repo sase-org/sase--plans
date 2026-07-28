@@ -3,8 +3,10 @@ create_time: 2026-06-08 12:29:08
 status: done
 bead_id: sase-4e
 tier: epic
-prompt: 202606/prompts/automated_semver_releases.md
 ---
+
+- **PROMPT:** [202606/prompts/automated_semver_releases.md](prompts/automated_semver_releases.md)
+
 # Automated SemVer Release Rollout Plan
 
 ## Objective

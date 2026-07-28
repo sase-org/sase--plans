@@ -1,6 +1,5 @@
----
-plan: 202604/ctrlt_history_whitespace_trigger.md
----
+- **PLAN:** [../202604/ctrlt_history_whitespace_trigger.md](../ctrlt_history_whitespace_trigger.md)
+
 Can you help me fix the `<ctrl+t>` saved file reference completion (see the
 plans/202604/ctrlt_file_history_completion.md file for context)? It seems to work fine when the cursor is at the
 beginning of a line, but not when at the end of the line or when in the middle of a sentence with spaces to the left and

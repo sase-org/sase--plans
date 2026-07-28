@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 09:37:50
 status: done
-prompt: 202605/prompts/static_sibling_finalizer_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/static_sibling_finalizer_1.md](prompts/static_sibling_finalizer_1.md)
+
 # Plan: Advisory Finalizer Checks for Static Sibling Repositories
 
 ## Goal

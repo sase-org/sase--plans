@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-26 18:34:22
 status: wip
-prompt: 202605/prompts/chop_open_changespec_guard.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/chop_open_changespec_guard.md](prompts/chop_open_changespec_guard.md)
+
 # Plan: Guard SASE Repair Chops Against Existing Open ChangeSpecs
 
 ## Goal

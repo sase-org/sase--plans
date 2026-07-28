@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-30 20:40:47
-prompt: 202603/prompts/fix_missing_pr_creation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_missing_pr_creation.md](prompts/fix_missing_pr_creation.md)
 
 # Fix: `create_pull_request` silently succeeds without creating a PR
 

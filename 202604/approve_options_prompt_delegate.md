@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 15:07:25
 status: done
-prompt: 202604/prompts/approve_options_prompt_delegate.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/approve_options_prompt_delegate.md](prompts/approve_options_prompt_delegate.md)
 
 # Plan: Delegate ApproveOptionsModal prompt editing to PromptInputBar
 

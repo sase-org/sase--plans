@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 14:30:51
 status: done
-prompt: 202605/prompts/selective_artifact_dirty_routing.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/selective_artifact_dirty_routing.md](prompts/selective_artifact_dirty_routing.md)
+
 # Selective Artifact Dirty Routing Plan
 
 ## Goal

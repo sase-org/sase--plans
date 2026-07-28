@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 12:37:58
 status: done
-prompt: 202606/prompts/tui_suspend_watchdog.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_suspend_watchdog.md](prompts/tui_suspend_watchdog.md)
+
 # Plan: make ACE suspend handoffs watchdog-aware
 
 ## Goal

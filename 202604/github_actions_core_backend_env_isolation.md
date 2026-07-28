@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 12:36:17
 status: done
-prompt: 202604/prompts/github_actions_core_backend_env_isolation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/github_actions_core_backend_env_isolation.md](prompts/github_actions_core_backend_env_isolation.md)
+
 # Diagnose and Fix GitHub Actions Core Backend Test Failure
 
 ## Problem

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-15 22:06:36
 status: done
-prompt: 202606/prompts/prompt_stash.md
 bead_id: sase-4q
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stash.md](prompts/prompt_stash.md)
+
 # Plan: Prompt Stash — stash & restore prompt-input drafts
 
 ## 1. Product context & goal

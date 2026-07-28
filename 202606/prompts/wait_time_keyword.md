@@ -1,6 +1,5 @@
----
-plan: 202606/wait_time_keyword.md
----
+- **PLAN:** [../202606/wait_time_keyword.md](../wait_time_keyword.md)
+
   Can you help me migrate the `%time` directive's functionality to a new `time` keyword input for the `%wait` functionality?
 
 - For example, `%time:5m` would become `%wait(time=5m)`.

@@ -1,6 +1,5 @@
----
-plan: 202603/auto_parent_changespec.md
----
+- **PLAN:** [../202603/auto_parent_changespec.md](../auto_parent_changespec.md)
+
 This ChangeSpec (see the `sase ace` snapshot below) was created by running `sase commit` from a branch that is
 associated with a ChangeSpec. This should ALWAYS result in the created ChangeSpec being associated with the the other
 ChangeSpec by adding "PARENT: <name>", where `<name>` is the existing ChangeSpec's name. I don't think this is happening

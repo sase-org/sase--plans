@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 14:00:23
 status: done
-prompt: 202605/prompts/telegram_kill_dismisses_agent.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_kill_dismisses_agent.md](prompts/telegram_kill_dismisses_agent.md)
+
 # Telegram "Kill" button: dismiss the killed agent so it doesn't reappear as FAILED
 
 ## Problem

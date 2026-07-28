@@ -1,6 +1,5 @@
----
-plan: 202606/update_availability_ux.md
----
+- **PLAN:** [../202606/update_availability_ux.md](../update_availability_ux.md)
+
  We currently periodically check for updates (every 10m) and display a toast to the user if there are updates available. Can you help me make sure that this works for dev/editable installs as well as normal published releases?
 
 - Also even though we should only do the slow work every 10 minutes, once we know that an update is available, we should display that toast to the user every time they start up until they update.

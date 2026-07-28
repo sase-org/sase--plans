@@ -11,8 +11,9 @@ goal: 'ACE users can configure, per agent tribe, an icon rendered before the tri
   '
 create_time: 2026-07-19 18:43:04
 status: done
-prompt: 202607/prompts/tribe_panel_display_config.md
 ---
+
+- **PROMPT:** [202607/prompts/tribe_panel_display_config.md](prompts/tribe_panel_display_config.md)
 
 # Plan: Per-tribe Agents-tab panel icons and initial-expansion config
 

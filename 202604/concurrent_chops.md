@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 18:54:24
 status: wip
-prompt: 202604/prompts/concurrent_chops.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/concurrent_chops.md](prompts/concurrent_chops.md)
 
 # Plan: Run Lumberjack Chops Concurrently
 

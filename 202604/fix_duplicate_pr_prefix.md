@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 12:36:34
 status: done
-prompt: 202604/prompts/fix_duplicate_pr_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_duplicate_pr_prefix.md](prompts/fix_duplicate_pr_prefix.md)
 
 # Fix Duplicate `[project]` PR Title Prefix
 

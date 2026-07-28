@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 19:28:17
 status: done
-prompt: 202605/prompts/feedback_plan_path_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/feedback_plan_path_timestamps.md](prompts/feedback_plan_path_timestamps.md)
+
 # Append Rejected Plan Paths to FBACK Timestamps
 
 ## Goal

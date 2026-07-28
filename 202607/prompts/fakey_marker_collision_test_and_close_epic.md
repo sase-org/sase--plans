@@ -1,11 +1,4 @@
----
-plan: 202607/fakey_marker_collision_test_and_close_epic.md
----
-
-
-
-
-
+- **PLAN:** [../202607/fakey_marker_collision_test_and_close_epic.md](../fakey_marker_collision_test_and_close_epic.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5o is complete?
 

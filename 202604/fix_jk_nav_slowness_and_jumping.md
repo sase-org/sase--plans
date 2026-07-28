@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:40:04
 status: wip
-prompt: 202604/prompts/fix_jk_nav_slowness_and_jumping.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_jk_nav_slowness_and_jumping.md](prompts/fix_jk_nav_slowness_and_jumping.md)
+
 # Fix slow / jumping `j`/`k` navigation on the CLs tab
 
 ## Symptom

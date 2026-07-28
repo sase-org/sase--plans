@@ -1,6 +1,5 @@
----
-plan: 202607/kill_waiting_agents_pid_fallback.md
----
+- **PLAN:** [../202607/kill_waiting_agents_pid_fallback.md](../kill_waiting_agents_pid_fallback.md)
+
 The user sent an image via Telegram with the following caption:
 
  killing some agents in Telegram doesn't seem to be working. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the

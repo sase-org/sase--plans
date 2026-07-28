@@ -1,6 +1,5 @@
----
-plan: 202605/reads_xprompt_12.md
----
+- **PLAN:** [../202605/reads_xprompt_12.md](../reads_xprompt_12.md)
+
  Can you help me implement our first use-case for the recently implemented `foobar-@` syntax (see recent,
 related git commits) by implementing a new xprompts/reads.md multi-agent xprompt that runs 3 agents, one gemini, one
 claude, and one codex?

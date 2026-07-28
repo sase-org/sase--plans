@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 22:33:58
 status: done
-prompt: 202605/prompts/claude_thinking_panel_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/claude_thinking_panel_fix.md](prompts/claude_thinking_panel_fix.md)
+
 # Plan: Restore Claude thinking panel content
 
 ## Problem

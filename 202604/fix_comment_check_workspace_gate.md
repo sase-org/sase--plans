@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-20 13:23:51
 status: wip
-prompt: 202604/prompts/fix_comment_check_workspace_gate.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_comment_check_workspace_gate.md](prompts/fix_comment_check_workspace_gate.md)
 
 # Plan: Fix Silent Skip of Reviewer-Comments Check When Workspace Lookup Fails
 

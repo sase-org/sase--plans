@@ -1,6 +1,5 @@
----
-plan: 202606/release_plz_internal_dependency_versions.md
----
+- **PLAN:** [../202606/release_plz_internal_dependency_versions.md](../release_plz_internal_dependency_versions.md)
+
  #fork:43.f1 GitHub Actions is failing with the below error. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

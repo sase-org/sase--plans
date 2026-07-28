@@ -1,6 +1,5 @@
----
-plan: 202605/artifact_viewer_height_footer_color.md
----
+- **PLAN:** [../202605/artifact_viewer_height_footer_color.md](../artifact_viewer_height_footer_color.md)
+
  #resume:260508.anx.code.r1.code We should be able to make it quite a bit taller still (see the terminal snapshot below). Also, the footer seems to use a random color on every refresh. Can you increase the height as much as you can without overflowing the pane and choose a good color to always use for the footer? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

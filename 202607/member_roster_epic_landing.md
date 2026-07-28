@@ -8,8 +8,9 @@ goal: 'Repair the post-start Statistics fixture regression that prevents the ful
   '
 create_time: 2026-07-18 20:58:12
 status: done
-prompt: 202607/prompts/member_roster_epic_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/member_roster_epic_landing.md](prompts/member_roster_epic_landing.md)
 
 # Plan: Complete and land the numbered member-roster epic
 

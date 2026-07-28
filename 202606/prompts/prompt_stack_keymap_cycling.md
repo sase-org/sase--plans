@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_stack_keymap_cycling.md
----
+- **PLAN:** [../202606/prompt_stack_keymap_cycling.md](../prompt_stack_keymap_cycling.md)
+
  #fork:9e.f1.f2  Can you now help me make sure that all four of these keymaps support cycling? Some
 examples:
 

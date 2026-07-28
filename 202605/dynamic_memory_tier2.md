@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 20:26:28
 status: done
-prompt: 202605/prompts/dynamic_memory_tier2.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/dynamic_memory_tier2.md](prompts/dynamic_memory_tier2.md)
+
 # Plan: Conditional Tier 2 Dynamic Memory Section
 
 ## Goal

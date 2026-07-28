@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-07 12:52:11
 status: done
-prompt: 202605/prompts/xprompt_lsp_jump_definition.md
 bead_id: sase-2b
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_jump_definition.md](prompts/xprompt_lsp_jump_definition.md)
+
 # Plan: XPrompt LSP Jump To Definition
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 12:57:48
 status: wip
-prompt: 202607/prompts/fix_plan_chain_sdd_ref_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_plan_chain_sdd_ref_resolution.md](prompts/fix_plan_chain_sdd_ref_resolution.md)
+
 # Plan: Fix plan-chain crash when the SDD store lives under the primary repo
 
 ## Problem

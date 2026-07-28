@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 01:40:34
 status: done
-prompt: 202606/prompts/codex_transient_retry.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/codex_transient_retry.md](prompts/codex_transient_retry.md)
+
 # Plan: Give the Codex Provider Built-In Transient-Failure Retry Coverage
 
 ## Diagnosis of Agent `0s`

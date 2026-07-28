@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 17:49:36
 status: done
-prompt: 202607/prompts/model_override_until_time.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/model_override_until_time.md](prompts/model_override_until_time.md)
+
 # Models Panel: Override Until a Specific Time
 
 ## Product Direction

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 15:55:40
 status: done
-prompt: 202604/prompts/fix_jump_modal_number_keys.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_jump_modal_number_keys.md](prompts/fix_jump_modal_number_keys.md)
 
 # Fix: Jump-to-entry modal numeric hints intercepted by saved query bindings
 

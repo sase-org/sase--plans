@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 17:25:14
 status: done
-prompt: 202606/prompts/project_delete_missing_spec.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_delete_missing_spec.md](prompts/project_delete_missing_spec.md)
+
 # Plan: Fix Project Management Delete for Missing Active ProjectSpec
 
 ## Root Cause

@@ -1,6 +1,5 @@
----
-plan: 202607/tools_panel_detail_levels.md
----
+- **PLAN:** [../202607/tools_panel_detail_levels.md](../tools_panel_detail_levels.md)
+
  Can you help me make it possible to collapse and expand the level of detail shown in the tools panel using the new `h`/`l` keymaps, respectively?
 
 - This should work when the Tools panel is focused on the Agents tab or in the Zoom panel on the Agents tab.

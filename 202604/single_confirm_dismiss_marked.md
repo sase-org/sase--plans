@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 16:30:05
 status: done
-prompt: 202604/prompts/single_confirm_dismiss_marked.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/single_confirm_dismiss_marked.md](prompts/single_confirm_dismiss_marked.md)
 
 # Plan: Single-Confirmation Dismiss for Marked Agents When None Are Running
 

@@ -32,6 +32,8 @@ status: done
 bead_id: sase-6r
 ---
 
+- **PROMPT:** [202607/prompts/fast_bead_reads.md](prompts/fast_bead_reads.md)
+
 # Plan: Fast bead reads
 
 ## Context and evidence

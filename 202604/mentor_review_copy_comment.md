@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-19 17:00:10
 status: done
-prompt: 202604/prompts/mentor_review_copy_comment.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/mentor_review_copy_comment.md](prompts/mentor_review_copy_comment.md)
 
 # Plan: Add `y` Copy-Comment Keymap to Mentor Review Modal
 

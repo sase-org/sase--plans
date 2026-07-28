@@ -1,6 +1,5 @@
----
-plan: 202606/generalized_agent_name_at_templates.md
----
+- **PLAN:** [../202606/generalized_agent_name_at_templates.md](../generalized_agent_name_at_templates.md)
+
  Can you help me generalize, improve, and increase the scope of the `-@` suffix that we support for sase agent
 names?
 

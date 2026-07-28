@@ -1,10 +1,4 @@
----
-plan: 202607/telemetry_release_and_landing.md
----
-
-
-
-
+- **PLAN:** [../202607/telemetry_release_and_landing.md](../telemetry_release_and_landing.md)
 
 You are the land agent for epic bead sase-6k: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

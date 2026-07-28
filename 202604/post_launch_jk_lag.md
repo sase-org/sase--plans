@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:02:02
 status: done
-prompt: 202604/prompts/post_launch_jk_lag.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/post_launch_jk_lag.md](prompts/post_launch_jk_lag.md)
+
 # Plan — Eliminate the Post-Launch `j`/`k` Lag
 
 ## Symptom (user report)

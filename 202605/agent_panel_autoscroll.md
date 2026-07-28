@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 15:55:04
 status: done
-prompt: 202605/prompts/agent_panel_autoscroll.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_autoscroll.md](prompts/agent_panel_autoscroll.md)
+
 # Plan: Agent Panel Auto-Scroll
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202605/prompt_image_artifacts.md
----
+- **PLAN:** [../202605/prompt_image_artifacts.md](../prompt_image_artifacts.md)
+
  Can you help me include any image file path reference as an ARTIFACTS field entry in the agent metadata panel on the "Agents" tab of the `sase ace` TUI? This image file should also be viewable from the artifacts panel (triggered via the `A` keymap). For example, in the below `sase ace` snapshot, the ~/.sase/telegram/images/20260509_080052_AgACAgEAAxkB.jpg file path should have been added as an ARTIFACTS field entry. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

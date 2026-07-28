@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 09:56:13
 status: done
-prompt: 202604/prompts/agents_navigation_delay.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_navigation_delay.md](prompts/agents_navigation_delay.md)
+
 # Plan: Fix Agents Tab Navigation Delay After Killing Agents
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202606/linked_repo_diff_file_panels.md
----
+- **PLAN:** [../202606/linked_repo_diff_file_panels.md](../linked_repo_diff_file_panels.md)
+
  #fork:04j That worked! Can you now help me add support to linked repos for diffs in the file panel by loading one diff per linked repo with an open workspace that has modified files in it to one dedicated file panel?
 
 - In other words, we should start creating one new file panel (that the user can navigate to with the `<ctrl+n/p>` keymaps) per linked repo with a modified, open workspace associated with this agent.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 22:19:43
 status: done
-prompt: 202606/prompts/agent_tag_enter_clears.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_tag_enter_clears.md](prompts/agent_tag_enter_clears.md)
+
 # Plan: Pressing `N` then Enter on a tagged agent should move it to `(untagged)`
 
 ## Problem

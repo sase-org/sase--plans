@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 10:55:11
 status: done
-prompt: 202604/prompts/full_model_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/full_model_indicator.md](prompts/full_model_indicator.md)
+
 # Stop Truncating the Ace Model Indicator
 
 ## Context

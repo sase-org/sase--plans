@@ -1,6 +1,5 @@
----
-plan: 202607/tribe_wait_fork_targets.md
----
+- **PLAN:** [../202607/tribe_wait_fork_targets.md](../tribe_wait_fork_targets.md)
+
  Can you help me add support to the wait/fork directive/xprompt for targeting the very next agent/agent clan that is launched in a given tribe?
 
 - You will likely need to add support for waiting for / forking agent clans, which I don't think is supported yet.

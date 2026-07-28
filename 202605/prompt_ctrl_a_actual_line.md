@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 13:05:53
 status: done
-prompt: 202605/prompts/prompt_ctrl_a_actual_line.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_ctrl_a_actual_line.md](prompts/prompt_ctrl_a_actual_line.md)
+
 # Plan: Prompt Ctrl+A Uses Actual Lines
 
 ## Context

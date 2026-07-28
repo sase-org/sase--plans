@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 09:23:43
 status: done
-prompt: 202606/prompts/updates_tab_plugin_detail_space_and_scroll.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/updates_tab_plugin_detail_space_and_scroll.md](prompts/updates_tab_plugin_detail_space_and_scroll.md)
+
 # Plan: Updates tab — reclaim plugin-detail space and add `ctrl+d/u` scrolling
 
 ## Problem

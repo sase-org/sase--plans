@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 16:42:46
 status: done
-prompt: 202605/prompts/deltas_three_fold_levels.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/deltas_three_fold_levels.md](prompts/deltas_three_fold_levels.md)
+
 # Plan: DELTAS Three-Level Folding
 
 ## Goal

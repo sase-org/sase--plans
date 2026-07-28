@@ -37,6 +37,8 @@ status: done
 bead_id: sase-8c
 ---
 
+- **PROMPT:** [202607/prompts/wait_priority_directive.md](prompts/wait_priority_directive.md)
+
 # Plan: Priority-aware runner-slot queue via `%wait(priority=...)`
 
 ## Context

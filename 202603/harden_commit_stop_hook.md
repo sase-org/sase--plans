@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 21:49:26
 status: not started
-prompt: 202603/prompts/harden_commit_stop_hook.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/harden_commit_stop_hook.md](prompts/harden_commit_stop_hook.md)
 
 # Plan: Harden sase_commit_stop_hook against repeated blocking and forced commits
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 09:33:41
 status: done
-prompt: 202607/prompts/prompt_codeblock_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prompt_codeblock_highlight.md](prompts/prompt_codeblock_highlight.md)
+
 # Code-Block Syntax Highlighting for the Prompt Input Widget
 
 ## Problem

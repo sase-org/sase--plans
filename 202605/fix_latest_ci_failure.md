@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 18:19:55
 status: done
-prompt: 202605/prompts/fix_latest_ci_failure.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_latest_ci_failure.md](prompts/fix_latest_ci_failure.md)
+
 # Fix Latest CI Failure
 
 ## Context

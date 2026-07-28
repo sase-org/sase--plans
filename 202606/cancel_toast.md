@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 12:18:16
 status: done
-prompt: 202606/prompts/cancel_toast.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/cancel_toast.md](prompts/cancel_toast.md)
+
 # Plan: Make the prompt-cancel toast meaningful
 
 ## Problem & product context

@@ -1,6 +1,5 @@
----
-plan: 202607/model_alias_descriptions.md
----
+- **PLAN:** [../202607/model_alias_descriptions.md](../model_alias_descriptions.md)
+
  Can you help me start showing a good description for the currently highlighted model alias that describes what that model alias is used for somewhere on the "Models" panel?
 
 - Custom model aliases (defined by users in sase's config but not used internally by sase) should be expected to have a new `description` field (that doesn't need to be configured for builtin model aliases).

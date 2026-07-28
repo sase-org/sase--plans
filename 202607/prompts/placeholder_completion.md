@@ -1,6 +1,5 @@
----
-plan: 202607/placeholder_completion.md
----
+- **PLAN:** [../202607/placeholder_completion.md](../placeholder_completion.md)
+
   Can you help me add support for placeholder completion to the prompt input widget and to editors (via LSP support--e.g. make sure that users that have the sase-nvim Neovim plugin installed have access to this functionality within Neovim)?
 
 - A placeholder is some string of the form `<placeholder text>`.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 21:52:53
 status: done
-prompt: 202605/prompts/running_agent_runtime_tick.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/running_agent_runtime_tick.md](prompts/running_agent_runtime_tick.md)
+
 # Plan: Increment RUNNING Agent Runtimes Each Second
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 11:10:29
 status: done
-prompt: 202604/prompts/agent_x_uses_rust_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_x_uses_rust_cleanup.md](prompts/agent_x_uses_rust_cleanup.md)
+
 # Plan: Route single-agent `x` cleanup through Rust planner
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-04 08:38:15
 status: wip
-prompt: 202607/prompts/fix_flaky_neighbor_modal_visual_test.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_flaky_neighbor_modal_visual_test.md](prompts/fix_flaky_neighbor_modal_visual_test.md)
+
 # Fix Flaky CI Visual Test: `test_agent_neighbor_modal_dismissed_descendant_png_snapshot`
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 15:25:37
 status: done
-prompt: 202605/prompts/highlight_unread_agent_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/highlight_unread_agent_count.md](prompts/highlight_unread_agent_count.md)
+
 # Highlight the Agents-tab Unread Count with a Yellow Background
 
 ## Goal

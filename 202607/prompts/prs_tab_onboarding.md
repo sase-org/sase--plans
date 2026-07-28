@@ -1,6 +1,5 @@
----
-plan: 202607/prs_tab_onboarding.md
----
+- **PLAN:** [../202607/prs_tab_onboarding.md](../prs_tab_onboarding.md)
+
  We currently show a good onboarding page on the "Agents" tab when there are no agents to display. Can you help me start showing a good onboarding page on the PRs tab when the default query has no results?
 
 - This onboarding page should replace the search query bar and the query results panel. Make sure we only show this onboarding page if the user has no saved queries for ChangeSpec.

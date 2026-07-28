@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 21:43:10
 status: done
-prompt: 202604/prompts/diagnose_single_dismiss_delay.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/diagnose_single_dismiss_delay.md](prompts/diagnose_single_dismiss_delay.md)
+
 # Diagnose & Fix the Lingering TUI Delay After Single-Agent Dismiss
 
 ## Problem

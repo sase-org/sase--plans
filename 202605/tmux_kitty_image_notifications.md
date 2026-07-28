@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 10:40:04
 status: done
-prompt: 202605/prompts/tmux_kitty_image_notifications.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tmux_kitty_image_notifications.md](prompts/tmux_kitty_image_notifications.md)
+
 # Fix Blurry Notification Image Previews in tmux
 
 ## Problem

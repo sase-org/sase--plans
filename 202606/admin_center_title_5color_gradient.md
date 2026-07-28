@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 10:20:37
 status: done
-prompt: 202606/prompts/admin_center_title_5color_gradient.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/admin_center_title_5color_gradient.md](prompts/admin_center_title_5color_gradient.md)
+
 # Plan: 5-Color Aurora Gradient for the "SASE Admin Center" Title
 
 ## Goal

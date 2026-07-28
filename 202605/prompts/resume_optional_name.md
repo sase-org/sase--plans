@@ -1,6 +1,5 @@
----
-plan: 202605/resume_optional_name.md
----
+- **PLAN:** [../202605/resume_optional_name.md](../resume_optional_name.md)
+
  Can you help me make it so the `#resume` xprompt workflow's (see the src/sase/xprompts/resume.yml file) `name`
 input optional?
 

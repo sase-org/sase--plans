@@ -2,9 +2,10 @@
 title: Finalizer auto-commit for SDD plan done status
 create_time: 2026-05-28 09:05:44
 status: done
-prompt: 202605/prompts/finalizer_done_status_autocommit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/finalizer_done_status_autocommit.md](prompts/finalizer_done_status_autocommit.md)
 
 # Plan: Finalizer auto-commit for automatic SDD plan done status
 

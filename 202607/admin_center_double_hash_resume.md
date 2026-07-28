@@ -8,8 +8,9 @@ goal: 'Preserve the Admin Center''s lightweight home-first opening while letting
   '
 create_time: 2026-07-20 13:36:27
 status: done
-prompt: 202607/prompts/admin_center_double_hash_resume.md
 ---
+
+- **PROMPT:** [202607/prompts/admin_center_double_hash_resume.md](prompts/admin_center_double_hash_resume.md)
 
 # Plan: Resume the last Admin Center section with `##`
 

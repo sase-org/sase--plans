@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 03:08:51
 status: done
-prompt: 202605/prompts/pdf_loading_indicators.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pdf_loading_indicators.md](prompts/pdf_loading_indicators.md)
+
 # Better Loading Indicators For Markdown PDF Construction
 
 ## Problem

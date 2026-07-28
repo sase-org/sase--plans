@@ -1,10 +1,4 @@
----
-plan: 202607/shared_plan_display.md
----
-
-
-
-
+- **PLAN:** [../202607/shared_plan_display.md](../shared_plan_display.md)
 
 Can you complete the work for bead sase-8d.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

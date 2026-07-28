@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 18:52:02
 status: done
-prompt: 202604/prompts/submitted_status_timestamp.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/submitted_status_timestamp.md](prompts/submitted_status_timestamp.md)
+
 # Submitted STATUS Timestamp Plan
 
 ## Problem

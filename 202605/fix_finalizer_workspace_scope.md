@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 13:03:21
 status: done
-prompt: 202605/prompts/fix_finalizer_workspace_scope.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_finalizer_workspace_scope.md](prompts/fix_finalizer_workspace_scope.md)
+
 # Plan: Scope Commit Finalizer Sibling Checks to Assigned Workspaces
 
 ## Problem

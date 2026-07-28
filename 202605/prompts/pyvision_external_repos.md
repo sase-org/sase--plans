@@ -1,6 +1,5 @@
----
-plan: 202605/pyvision_external_repos.md
----
+- **PLAN:** [../202605/pyvision_external_repos.md](../pyvision_external_repos.md)
+
  Can you help me add support to pyvision (defined in my chezmoi repo) for checking for references in external
 repos? Once pyvision has the necessary functionality you should completely obsolete and remove the
 legacy public API whitelist file and remove all old whitelist pyvision pragmas in this repo in favor of pragmas

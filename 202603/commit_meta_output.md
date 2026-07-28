@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 09:55:49
 status: wip
-prompt: 202603/prompts/commit_meta_output.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_meta_output.md](prompts/commit_meta_output.md)
 
 # Plan: Propagate meta\_\* output variables from unified CommitWorkflow to TUI
 

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-17 13:19:17
 status: done
-prompt: 202606/prompts/prompt_g_prefix_keymaps.md
 bead_id: sase-4s
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/prompt_g_prefix_keymaps.md](prompts/prompt_g_prefix_keymaps.md)
+
 # Prompt Input `g` Prefix Keymap Migration Plan
 
 ## Goal

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 17:10:01
 status: PROPOSED
-prompt: 202603/prompts/fix_strip_pr_tags_blank_lines.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_strip_pr_tags_blank_lines.md](prompts/fix_strip_pr_tags_blank_lines.md)
 
 # Fix: `strip_pr_tags()` fails to strip tags separated by blank lines
 

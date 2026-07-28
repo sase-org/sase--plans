@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 14:43:12
 status: wip
-prompt: 202607/prompts/tui_title_version.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tui_title_version.md](prompts/tui_title_version.md)
+
 # Show sase Version Instead of PID in the ace TUI Title
 
 ## Goal

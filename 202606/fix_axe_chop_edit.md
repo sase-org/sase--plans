@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:42:11
 status: done
-prompt: 202606/prompts/fix_axe_chop_edit.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_axe_chop_edit.md](prompts/fix_axe_chop_edit.md)
+
 # Plan: Fix `sase ace` crash when pressing `e` on AXE chop output
 
 ## Problem

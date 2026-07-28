@@ -88,6 +88,8 @@ status: done
 bead_id: sase-6v
 ---
 
+- **PROMPT:** [202607/prompts/chops_redesign.md](prompts/chops_redesign.md)
+
 # Plan: Script-only chops with structured launch proposals
 
 ## Context

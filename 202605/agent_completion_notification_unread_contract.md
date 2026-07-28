@@ -3,8 +3,10 @@ create_time: 2026-05-11 21:19:15
 status: done
 bead_id: sase-30
 tier: epic
-prompt: 202605/prompts/agent_completion_notification_unread_contract.md
 ---
+
+- **PROMPT:** [202605/prompts/agent_completion_notification_unread_contract.md](prompts/agent_completion_notification_unread_contract.md)
+
 # Plan: Restore One-to-One Agent Completion Notifications and Agents-Tab Unread State
 
 ## Goal

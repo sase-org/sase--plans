@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 10:40:10
 status: done
-prompt: 202605/prompts/untagged_starting_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/untagged_starting_panel.md](prompts/untagged_starting_panel.md)
+
 # Fix Untagged Panel Visibility for Starting Agents
 
 ## Problem

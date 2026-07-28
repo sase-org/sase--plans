@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 17:15:28
 status: done
-prompt: 202604/prompts/fix_chat_filename_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_chat_filename_prefix.md](prompts/fix_chat_filename_prefix.md)
 
 # Plan: Fix chat filename using wrong prefix (branch name instead of CL name)
 

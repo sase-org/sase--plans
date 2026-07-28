@@ -1,11 +1,4 @@
----
-plan: 202607/member_roster_epic_landing.md
----
-
-
-
-
-
+- **PLAN:** [../202607/member_roster_epic_landing.md](../member_roster_epic_landing.md)
 
 You are the land agent for epic bead sase-6w: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

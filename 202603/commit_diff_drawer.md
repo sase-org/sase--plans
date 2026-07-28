@@ -1,9 +1,10 @@
 ---
 status: wip
 create_time: 2026-03-26 19:18:31
-prompt: 202603/prompts/commit_diff_drawer.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_diff_drawer.md](prompts/commit_diff_drawer.md)
 
 # Plan: Fix missing DIFF drawer for commits created via `#commit` workflow
 

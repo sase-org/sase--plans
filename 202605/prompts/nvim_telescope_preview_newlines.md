@@ -1,6 +1,5 @@
----
-plan: 202605/nvim_telescope_preview_newlines.md
----
+- **PLAN:** [../202605/nvim_telescope_preview_newlines.md](../nvim_telescope_preview_newlines.md)
+
  Can you help me fix this error I am seeing in nvim? I think it likely has something to do with the recent
 commit we made to the sase-nvim repo. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 00:27:54
 status: done
-prompt: 202605/prompts/dedup_feedback_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/dedup_feedback_timestamps.md](prompts/dedup_feedback_timestamps.md)
+
 # Deduplicate Plan-Chain Timestamp Aggregation
 
 ## Context

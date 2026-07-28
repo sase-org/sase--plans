@@ -54,6 +54,8 @@ status: done
 bead_id: sase-6l
 ---
 
+- **PROMPT:** [202607/prompts/readme_demo_gif_overhaul.md](prompts/readme_demo_gif_overhaul.md)
+
 # Plan: README demo GIF overhaul
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 09:45:58
 status: done
-prompt: 202605/prompts/entry_jump_stack.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/entry_jump_stack.md](prompts/entry_jump_stack.md)
+
 # Make double-apostrophe entry jumps stack-based
 
 ## Context

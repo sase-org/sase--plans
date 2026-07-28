@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 17:05:39
 status: done
-prompt: 202607/prompts/slow_tool_call_failure_reports.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/slow_tool_call_failure_reports.md](prompts/slow_tool_call_failure_reports.md)
+
 # Plan: `v` Hints for Failed SLOW TOOL CALLS (On-the-fly Failure Reports)
 
 ## Goal

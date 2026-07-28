@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 08:38:45
 status: done
-prompt: 202605/prompts/fix_legend_bead_work_directives.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_legend_bead_work_directives.md](prompts/fix_legend_bead_work_directives.md)
+
 # Fix Legend Bead Work Directives
 
 ## Context

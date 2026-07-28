@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 08:16:32
 status: done
-prompt: 202605/prompts/codex_home_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_home_agents.md](prompts/codex_home_agents.md)
+
 # Plan: Make SASE-launched Codex see home AGENTS.md
 
 ## Problem

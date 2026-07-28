@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 15:34:55
 status: done
-prompt: 202604/prompts/bulk_wait_marked_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bulk_wait_marked_agents.md](prompts/bulk_wait_marked_agents.md)
+
 # Bulk-wait support for `W` on the Agents tab
 
 ## Goal

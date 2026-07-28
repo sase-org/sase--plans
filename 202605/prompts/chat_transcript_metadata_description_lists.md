@@ -1,6 +1,5 @@
----
-plan: 202605/chat_transcript_metadata_description_lists.md
----
+- **PLAN:** [../202605/chat_transcript_metadata_description_lists.md](../chat_transcript_metadata_description_lists.md)
+
  We currently render the timestamp, model, and agent name in the following form in sase agent chat transcript
 files (i.e. in markdown files in the ~/.sase/chats/ directory):
 

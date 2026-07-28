@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-02 05:55:40
 status: done
-prompt: 202607/prompts/fix_config_schema_wheel_packaging.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_config_schema_wheel_packaging.md](prompts/fix_config_schema_wheel_packaging.md)
+
 # Fix Config Center schema-load error on wheel installs (uv tool install)
 
 ## Problem

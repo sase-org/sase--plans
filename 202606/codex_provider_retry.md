@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 01:32:24
 status: wip
-prompt: 202606/prompts/codex_provider_retry.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/codex_provider_retry.md](prompts/codex_provider_retry.md)
+
 # Plan: Add Built-In Codex Retry Handling
 
 ## Problem

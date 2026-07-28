@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:24:32
 status: done
-prompt: 202604/prompts/notification_panel_sections.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_panel_sections.md](prompts/notification_panel_sections.md)
+
 # Sectioned Notification Panel
 
 ## Problem

@@ -7,8 +7,9 @@ goal: 'Ctrl+T completes prompt-local and history words only when candidates meet
   '
 create_time: 2026-07-21 08:22:31
 status: done
-prompt: 202607/prompts/shared_word_completion_min_length.md
 ---
+
+- **PROMPT:** [202607/prompts/shared_word_completion_min_length.md](prompts/shared_word_completion_min_length.md)
 
 # Plan: Share the minimum word length across prompt completions
 

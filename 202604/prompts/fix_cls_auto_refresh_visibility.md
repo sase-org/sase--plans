@@ -1,6 +1,5 @@
----
-plan: 202604/fix_cls_auto_refresh_visibility.md
----
+- **PLAN:** [../202604/fix_cls_auto_refresh_visibility.md](../fix_cls_auto_refresh_visibility.md)
+
  I can't see the "auto-refresh" line in the TUI on the CLs tab anymore (see the `sase ace` snapshot below). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

@@ -5,8 +5,9 @@ goal: Telegram plan approval messages present every frontmatter property clearly
   remain safe, compact, and actionable for every valid plan.
 create_time: 2026-07-16 12:35:22
 status: done
-prompt: 202607/prompts/telegram_plan_frontmatter_properties.md
 ---
+
+- **PROMPT:** [202607/prompts/telegram_plan_frontmatter_properties.md](prompts/telegram_plan_frontmatter_properties.md)
 
 # Plan: Beautiful Telegram plan properties
 

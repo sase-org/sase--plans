@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 18:59:53
 status: wip
-prompt: 202604/prompts/gemini_memory_files.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gemini_memory_files.md](prompts/gemini_memory_files.md)
 
 # Plan: Create Gemini Long-Term Memory Files
 

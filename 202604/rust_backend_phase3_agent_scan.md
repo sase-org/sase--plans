@@ -2,9 +2,11 @@
 create_time: 2026-04-29 09:18:29
 status: done
 bead_id: sase-18
-prompt: 202604/prompts/rust_backend_phase3_agent_scan.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase3_agent_scan.md](prompts/rust_backend_phase3_agent_scan.md)
+
 # Rust Backend Migration Phase 3: Agent / Artifact Filesystem Scan
 
 ## Context

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 00:09:28
 status: done
-prompt: 202604/prompts/fix_hg_commit_message.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_hg_commit_message.md](prompts/fix_hg_commit_message.md)
 
 # Fix wrong Commit Message in agent details panel for hg-based agents
 

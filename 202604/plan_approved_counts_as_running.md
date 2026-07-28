@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:27:25
 status: done
-prompt: 202604/prompts/plan_approved_counts_as_running.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/plan_approved_counts_as_running.md](prompts/plan_approved_counts_as_running.md)
+
 # Plan: count `PLAN APPROVED` agents as running in banner summary
 
 ## Problem

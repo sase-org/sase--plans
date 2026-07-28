@@ -4,8 +4,9 @@ goal: Restore the ACE visual snapshot corpus to the current intentional UI and p
   the cross-host PNG tolerance from hiding small, material product changes.
 create_time: 2026-07-15 12:24:12
 status: done
-prompt: 202607/prompts/visual_snapshot_freshness.md
 ---
+
+- **PROMPT:** [202607/prompts/visual_snapshot_freshness.md](prompts/visual_snapshot_freshness.md)
 
 # Plan: Restore ACE visual snapshot freshness
 

@@ -1,6 +1,5 @@
----
-plan: 202603/fix_crs_changespec_entry.md
----
+- **PLAN:** [../202603/fix_crs_changespec_entry.md](../fix_crs_changespec_entry.md)
+
 A
 'crs'`agent recently ran on this ChangeSpec. It worked (as far as the code changes and commit go), but the ChangeSpec does not look right (see the`sase
 ace` snapshot below):

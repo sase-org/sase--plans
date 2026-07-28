@@ -4,8 +4,9 @@ goal: Make local SASE installation reliably select the compatible workspace-loca
   sase-core checkout when linked-repository environment variables are unavailable.
 create_time: 2026-07-15 08:22:27
 status: done
-prompt: 202607/prompts/workspace_local_core_fallback.md
 ---
+
+- **PROMPT:** [202607/prompts/workspace_local_core_fallback.md](prompts/workspace_local_core_fallback.md)
 
 # Plan: Prefer the Workspace-Local Rust Core Checkout
 

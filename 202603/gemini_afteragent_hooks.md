@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 21:37:12
 status: wip
-prompt: 202603/prompts/gemini_afteragent_hooks.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/gemini_afteragent_hooks.md](prompts/gemini_afteragent_hooks.md)
 
 # Implement Gemini CLI AfterAgent Stop Hooks
 

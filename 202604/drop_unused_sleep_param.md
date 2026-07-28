@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 12:35:22
 status: done
-prompt: 202604/prompts/drop_unused_sleep_param.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/drop_unused_sleep_param.md](prompts/drop_unused_sleep_param.md)
+
 # Plan: Drop Unused `sleep` Parameter From `_BatchTimestampAllocator`
 
 ## Context

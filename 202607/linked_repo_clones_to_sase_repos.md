@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 17:49:42
 status: done
-prompt: 202607/prompts/linked_repo_clones_to_sase_repos.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/linked_repo_clones_to_sase_repos.md](prompts/linked_repo_clones_to_sase_repos.md)
+
 # Plan: Clone linked repos into `sase/repos/` instead of `.sase/workspaces/`
 
 ## Problem & Context

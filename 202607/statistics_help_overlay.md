@@ -8,8 +8,9 @@ goal: 'Complete bead sase-8a.3 by making every Statistics view, control, metric,
   '
 create_time: 2026-07-20 14:53:36
 status: wip
-prompt: 202607/prompts/statistics_help_overlay.md
 ---
+
+- **PROMPT:** [202607/prompts/statistics_help_overlay.md](prompts/statistics_help_overlay.md)
 
 # Plan: Statistics contextual help and keymap integration
 

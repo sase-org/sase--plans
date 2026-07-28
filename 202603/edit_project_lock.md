@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-23 19:13:52
 status: done
-prompt: 202603/prompts/edit_project_lock.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/edit_project_lock.md](prompts/edit_project_lock.md)
 
 # Plan: Project File Edit Locking
 

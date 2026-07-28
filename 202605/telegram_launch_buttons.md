@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 10:46:09
 status: done
-prompt: 202605/prompts/telegram_launch_buttons.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_launch_buttons.md](prompts/telegram_launch_buttons.md)
+
 # Plan: Restore Telegram Launch Buttons
 
 ## Problem

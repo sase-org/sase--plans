@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 12:23:09
 status: done
-prompt: 202605/prompts/bead_work_force_reuse_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_work_force_reuse_names.md](prompts/bead_work_force_reuse_names.md)
+
 # Plan: `sase bead work` agent prompts use `%name:!` (forced-reuse) directives
 
 ## Problem

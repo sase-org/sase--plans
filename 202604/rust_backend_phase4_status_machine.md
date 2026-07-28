@@ -2,9 +2,11 @@
 create_time: 2026-04-29 12:39:59
 bead_id: sase-19
 status: done
-prompt: 202604/prompts/rust_backend_phase4_status_machine.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase4_status_machine.md](prompts/rust_backend_phase4_status_machine.md)
+
 # Rust Backend Phase 4: Status State Machine
 
 ## Context

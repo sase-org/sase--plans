@@ -1,6 +1,5 @@
----
-plan: 202606/model_alias_configuration_migration.md
----
+- **PLAN:** [../202606/model_alias_configuration_migration.md](../model_alias_configuration_migration.md)
+
  #fork:0am Can you now help me remove our existing `default_model` and `worker_models` configuration fields in favor of defining special model aliases that are used by default / by the agents that are launched with the `#coder` xprompt, respectively?
 
 - We should remove any special support we currently have for the `other` or `worker` model aliases. These are no longer relevant.

@@ -1,6 +1,5 @@
----
-plan: 202605/fix_just_test_deflake.md
----
+- **PLAN:** [../202605/fix_just_test_deflake.md](../fix_just_test_deflake.md)
+
  This xprompt workflow agent (see the `sase ace` snapshot below) is frequently asked to fix the `just test` command (i.e. sase's test suite) for flakey test failures. Can you help me start running the `just test` command a second time to confirm / de-flake the failure before launching a sase agent? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-13 17:55:38
 status: done
-prompt: 202605/prompts/repeat_last_leader_keymap.md
 bead_id: sase-3f
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/repeat_last_leader_keymap.md](prompts/repeat_last_leader_keymap.md)
+
 # Repeat Last Leader Keymap Plan
 
 ## Goal

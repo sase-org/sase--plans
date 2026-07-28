@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-11 20:59:30
 status: done
-prompt: 202605/prompts/last_workflow_set_status_tool.md
 bead_id: sase-2z
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/last_workflow_set_status_tool.md](prompts/last_workflow_set_status_tool.md)
+
 # Plan: Last GitHub Workflow Set Status Tool
 
 ## Goal

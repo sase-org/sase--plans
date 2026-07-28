@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 10:24:46
 status: done
-prompt: 202607/prompts/remove_hg_xprompt_references.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/remove_hg_xprompt_references.md](prompts/remove_hg_xprompt_references.md)
+
 # Remove obsolete `#hg` xprompt references
 
 ## Goal

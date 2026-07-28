@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 19:20:01
 status: done
-prompt: 202605/prompts/revert_sase_3e_legend.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revert_sase_3e_legend.md](prompts/revert_sase_3e_legend.md)
+
 # Revert sase-3e Legend Work
 
 ## Goal

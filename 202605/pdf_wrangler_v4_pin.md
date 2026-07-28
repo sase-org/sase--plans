@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 14:50:52
 status: done
-prompt: 202605/prompts/pdf_wrangler_v4_pin.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pdf_wrangler_v4_pin.md](prompts/pdf_wrangler_v4_pin.md)
+
 # Plan: Pin Wrangler v4 So The Worker Deploy Actually Ships The Handbook PDF
 
 ## Problem

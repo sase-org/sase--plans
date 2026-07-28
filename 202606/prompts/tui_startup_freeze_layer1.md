@@ -1,6 +1,5 @@
----
-plan: 202606/tui_startup_freeze_layer1.md
----
+- **PLAN:** [../202606/tui_startup_freeze_layer1.md](../tui_startup_freeze_layer1.md)
+
  #fork:research.0a.final Can you help me implement the work described by Layer 1 in the research markdown file
 created by the previous agent? When you're done, verify your work by running the `sase ace --tmux` command, that opens
 up the TUI in a new tmux pane, then capture that pane's contents to make sure that all of the agents that are shown in

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 20:40:05
 status: done
-prompt: 202607/prompts/updates_all_current_banner.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/updates_all_current_banner.md](prompts/updates_all_current_banner.md)
+
 # Plan: "All up to date" banner + gate the `u` key on the Updates tab
 
 ## Goal

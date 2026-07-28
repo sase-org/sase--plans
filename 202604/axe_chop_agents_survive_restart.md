@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 11:10:22
 status: done
-prompt: 202604/prompts/axe_chop_agents_survive_restart.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/axe_chop_agents_survive_restart.md](prompts/axe_chop_agents_survive_restart.md)
+
 # Plan: Make lumberjack-launched agents survive axe restarts
 
 ## Problem

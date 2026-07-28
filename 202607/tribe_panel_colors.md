@@ -10,8 +10,9 @@ goal: 'ACE users can assign a safe, per-tribe color to the icon and @tribe ident
   '
 create_time: 2026-07-19 21:53:58
 status: wip
-prompt: 202607/prompts/tribe_panel_colors.md
 ---
+
+- **PROMPT:** [202607/prompts/tribe_panel_colors.md](prompts/tribe_panel_colors.md)
 
 # Plan: Configurable Agents-tab tribe panel colors
 

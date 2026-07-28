@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-20 18:27:53
 status: done
-prompt: 202605/prompts/tmux_agent_workspace_dir.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tmux_agent_workspace_dir.md](prompts/tmux_agent_workspace_dir.md)
+
 # Fix ACE agent tmux workspace resolution
 
 ## Problem

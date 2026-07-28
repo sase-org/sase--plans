@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 19:26:14
 status: done
-prompt: 202604/prompts/highest_level_group_collapse.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/highest_level_group_collapse.md](prompts/highest_level_group_collapse.md)
+
 # Plan: `H` Collapses Only One Group Heading Level
 
 ## Problem

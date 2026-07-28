@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 10:49:57
 status: done
-prompt: 202606/prompts/async_force_reuse_agent_launch.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/async_force_reuse_agent_launch.md](prompts/async_force_reuse_agent_launch.md)
+
 # Plan: Move forced agent-name reuse cleanup into the tracked launch task
 
 ## Goal

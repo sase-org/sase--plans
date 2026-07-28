@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 02:06:17
 status: done
-prompt: 202607/prompts/telegram_project_display_names_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_project_display_names_1.md](prompts/telegram_project_display_names_1.md)
+
 # Fix Telegram surfaces showing canonical project directory keys instead of display names
 
 ## Problem

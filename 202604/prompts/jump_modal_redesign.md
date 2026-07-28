@@ -1,6 +1,5 @@
----
-plan: 202604/jump_modal_redesign.md
----
+- **PLAN:** [../202604/jump_modal_redesign.md](../jump_modal_redesign.md)
+
 Can you help me make the new "Jump to entry" panel (shown in the below `sase ace` snapshot) larger (it should take up
 most of the screen) and make it look a lot nicer? I want you to lead the design on this one. Just make sure it looks
 beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

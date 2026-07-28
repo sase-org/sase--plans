@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 10:10:49
 status: done
-prompt: 202606/prompts/confirmed_bead_display.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/confirmed_bead_display.md](prompts/confirmed_bead_display.md)
+
 # Confirmed Bead Display in `sase ace` Agents Tab
 
 ## Problem

@@ -8,8 +8,9 @@ goal: 'The Agents-tab headline total counts loaded parallel-family members in pl
   '
 create_time: 2026-07-17 12:25:39
 status: done
-prompt: 202607/prompts/agent_family_headline_total.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_family_headline_total.md](prompts/agent_family_headline_total.md)
 
 # Plan: Project parallel family members into the Agents headline total
 

@@ -1,6 +1,5 @@
----
-plan: 202607/nested_agent_docs_provider_shims.md
----
+- **PLAN:** [../202607/nested_agent_docs_provider_shims.md](../nested_agent_docs_provider_shims.md)
+
  Can you help me fix the `sase init` command? If we detect an agent.md file in any directory, we should copy the contents of that file and create an equivalent for every LLM provider that is configured with sase, just like we do with the root directory. This is not happening today. See the below command output for evidence. Make sure we git commit these new files. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 22:41:48
 status: done
-prompt: 202604/prompts/role_based_agent_naming.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/role_based_agent_naming.md](prompts/role_based_agent_naming.md)
 
 # Plan: Role-Based Agent Naming (`<name>.plan` / `<name>.code`)
 

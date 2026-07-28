@@ -2,9 +2,10 @@
 create_time: 2026-03-21 00:26:43
 bead_id: sase-6
 status: done
-prompt: 202603/prompts/directory_restructure.md
 tier: epic
 ---
+
+- **PROMPT:** [202603/prompts/directory_restructure.md](prompts/directory_restructure.md)
 
 # Plan: Directory Structure Restructure
 

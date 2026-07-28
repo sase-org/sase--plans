@@ -9,8 +9,9 @@ goal: 'A bead association declared by %id(bead=...) survives every launch rewrit
   '
 create_time: 2026-07-20 16:27:54
 status: done
-prompt: 202607/prompts/id_bead_runner_lifecycle.md
 ---
+
+- **PROMPT:** [202607/prompts/id_bead_runner_lifecycle.md](prompts/id_bead_runner_lifecycle.md)
 
 # Plan: Percent-id bead runner lifecycle
 

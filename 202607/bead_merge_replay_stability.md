@@ -60,6 +60,8 @@ status: done
 bead_id: sase-9x
 ---
 
+- **PROMPT:** [202607/prompts/bead_merge_replay_stability.md](prompts/bead_merge_replay_stability.md)
+
 # Plan: Make bead event-stream merges stable under rebase replay
 
 ## Context

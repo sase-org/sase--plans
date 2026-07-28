@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 13:07:37
 status: done
-prompt: 202604/prompts/word_boundary_matching.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/word_boundary_matching.md](prompts/word_boundary_matching.md)
 
 # Plan: Word-boundary matching for dynamic memory keywords
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 22:46:45
 status: done
-prompt: 202605/prompts/codex_phase_commit_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_phase_commit_fallback.md](prompts/codex_phase_commit_fallback.md)
+
 # Codex Phase-Agent Commit Stop-Hook Fallback
 
 ## Symptom

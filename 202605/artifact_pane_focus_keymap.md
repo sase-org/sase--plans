@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 03:44:45
 status: done
-prompt: 202605/prompts/artifact_pane_focus_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_pane_focus_keymap.md](prompts/artifact_pane_focus_keymap.md)
+
 # Artifact Pane Focus Keymap Plan
 
 ## Goal

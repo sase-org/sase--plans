@@ -8,8 +8,9 @@ bead: sase-8h.3
 parent: sase/repos/plans/202607/commits_filter_correctness.md
 create_time: 2026-07-21 11:23:10
 status: done
-prompt: '[202607/prompts/truthful_commits_status.md](prompts/truthful_commits_status.md)'
 ---
+
+- **PROMPT:** [202607/prompts/truthful_commits_status.md](prompts/truthful_commits_status.md)
 
 # Plan: Truthful commits-pane status and cache behavior
 

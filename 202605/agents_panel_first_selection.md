@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 17:23:09
 status: done
-prompt: 202605/prompts/agents_panel_first_selection.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_panel_first_selection.md](prompts/agents_panel_first_selection.md)
+
 # Plan: Agents Panel J/K First Selection
 
 ## Context

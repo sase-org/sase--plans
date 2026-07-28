@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 18:22:03
 status: done
-prompt: 202603/prompts/recursive_resume_expansion.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/recursive_resume_expansion.md](prompts/recursive_resume_expansion.md)
 
 # Plan: Recursive `#resume` Expansion in Chat History
 

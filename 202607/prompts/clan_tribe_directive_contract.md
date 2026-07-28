@@ -1,6 +1,5 @@
----
-plan: 202607/clan_tribe_directive_contract.md
----
+- **PLAN:** [../202607/clan_tribe_directive_contract.md](../clan_tribe_directive_contract.md)
+
  Can you help me change the way that the `%clan` and `%tribe` directives
 interact?
 

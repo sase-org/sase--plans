@@ -7,8 +7,9 @@ goal: 'Comprehensive SASE updates upgrade a stale managed sase-core-rs wheel eve
   '
 create_time: 2026-07-15 13:46:50
 status: done
-prompt: 202607/prompts/editable_core_wheel_update.md
 ---
+
+- **PROMPT:** [202607/prompts/editable_core_wheel_update.md](prompts/editable_core_wheel_update.md)
 
 # Plan: Update managed SASE core inside editable installs
 

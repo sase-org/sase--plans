@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 14:11:08
 status: wip
-prompt: 202607/prompts/family_root_auto_zero_suffix.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/family_root_auto_zero_suffix.md](prompts/family_root_auto_zero_suffix.md)
+
 # Plan: Auto-assign `--0` suffix to the bare family-root member
 
 ## Problem

@@ -52,6 +52,8 @@ status: done
 bead_id: sase-80
 ---
 
+- **PROMPT:** [202607/prompts/axe_test_isolation_leak.md](prompts/axe_test_isolation_leak.md)
+
 # Plan: Fix pytest leakage that bricks the real axe daemon and strands WAITING agents
 
 ## Context and root-cause diagnosis

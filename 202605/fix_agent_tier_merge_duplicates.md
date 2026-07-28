@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 10:04:14
 status: done
-prompt: 202605/prompts/fix_agent_tier_merge_duplicates.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_agent_tier_merge_duplicates.md](prompts/fix_agent_tier_merge_duplicates.md)
+
 # Fix Agent Tier-Merge Duplicate Rows
 
 ## Problem

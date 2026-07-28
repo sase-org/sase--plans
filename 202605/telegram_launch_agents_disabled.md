@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 17:49:34
 status: done
-prompt: 202605/prompts/telegram_launch_agents_disabled.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_launch_agents_disabled.md](prompts/telegram_launch_agents_disabled.md)
+
 # Telegram Launch Disable Environment Variable
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 08:58:02
 status: done
-prompt: 202606/prompts/project_creation_logging.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_creation_logging.md](prompts/project_creation_logging.md)
+
 # Plan: Diagnostic logging for SASE project-file creation
 
 ## Problem & motivation

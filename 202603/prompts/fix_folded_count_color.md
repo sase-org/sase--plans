@@ -1,6 +1,5 @@
----
-plan: 202603/fix_folded_count_color.md
----
+- **PLAN:** [../202603/fix_folded_count_color.md](../fix_folded_count_color.md)
+
 #resume:g.2 Looks good, but the `[folded: 2]` text next to TIMESTAMPS (see the `sase ace` snapshot below) should NOT be
 highlighted purple. Only the timestamps (and the surrounding `[]` characters) should be highlighted. Can you help me fix
 this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

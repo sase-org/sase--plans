@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 22:13:41
 status: wip
-prompt: 202605/prompts/sdd_prompt_management.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sdd_prompt_management.md](prompts/sdd_prompt_management.md)
+
 # Plan: SDD Prompt File Management
 
 ## Goal

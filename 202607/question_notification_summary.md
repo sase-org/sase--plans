@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 06:50:24
 status: done
-prompt: 202607/prompts/question_notification_summary.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/question_notification_summary.md](prompts/question_notification_summary.md)
+
 # Plan: Question Notification Summary in the Notifications Right Pane
 
 ## 1. Problem & Product Goal

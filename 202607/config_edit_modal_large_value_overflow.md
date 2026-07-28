@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-05 06:36:06
 status: wip
-prompt: 202607/prompts/config_edit_modal_large_value_overflow.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/config_edit_modal_large_value_overflow.md](prompts/config_edit_modal_large_value_overflow.md)
+
 # Plan: Fix Config Edit Modal Overflow for Large Object Values
 
 ## Problem

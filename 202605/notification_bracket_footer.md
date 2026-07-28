@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 08:52:15
 status: done
-prompt: 202605/prompts/notification_bracket_footer.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/notification_bracket_footer.md](prompts/notification_bracket_footer.md)
+
 # Plan: Show Notification Tag Bracket Keymaps In Footer
 
 ## Context

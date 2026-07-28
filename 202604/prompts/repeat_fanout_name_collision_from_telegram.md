@@ -1,6 +1,5 @@
----
-plan: 202604/repeat_fanout_name_collision_from_telegram.md
----
+- **PLAN:** [../202604/repeat_fanout_name_collision_from_telegram.md](../repeat_fanout_name_collision_from_telegram.md)
+
  The user sent an image via Telegram with the following caption:
 
  Can you help me diagnose the root cause of and fix this failure? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

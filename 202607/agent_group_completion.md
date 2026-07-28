@@ -25,6 +25,8 @@ status: done
 bead_id: sase-7h
 ---
 
+- **PROMPT:** [202607/prompts/agent_group_completion.md](prompts/agent_group_completion.md)
+
 # Plan: Group-aware agent completion for %wait and #fork
 
 ## Context and outcome

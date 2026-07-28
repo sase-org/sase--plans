@@ -7,8 +7,9 @@ goal: Prevent unisolated pytest processes from writing telemetry, axe logs, or a
   the local metrics store.
 create_time: 2026-07-20 17:07:53
 status: done
-prompt: 202607/prompts/test_state_isolation.md
 ---
+
+- **PROMPT:** [202607/prompts/test_state_isolation.md](prompts/test_state_isolation.md)
 
 # Plan: Isolate pytest state writes and clean polluted telemetry
 

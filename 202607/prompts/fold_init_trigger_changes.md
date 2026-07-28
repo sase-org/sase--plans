@@ -1,6 +1,5 @@
----
-plan: 202607/fold_init_trigger_changes.md
----
+- **PLAN:** [../202607/fold_init_trigger_changes.md](../fold_init_trigger_changes.md)
+
  When the only working changes in the current directory are the changes that triggered the `sase init` command to make changes, then we should prompt the user for a commit message (we should add the appropriate conventional git commit tag and `SASE_*` commit tags automatically) and commit those changes in the same commit as the changes they triggered. We do not currently do this (see the command output below for what we currently do). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 14:52:43
 status: pending
-prompt: 202603/prompts/fix_insert_mode_prettier_freeze.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_insert_mode_prettier_freeze.md](prompts/fix_insert_mode_prettier_freeze.md)
 
 # Fix: TUI freeze when typing in INSERT mode with large prompts
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 14:52:23
 status: done
-prompt: 202606/prompts/tui_startup_freeze_layer1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_startup_freeze_layer1.md](prompts/tui_startup_freeze_layer1.md)
+
 # Plan: TUI startup agents-tab freeze — Layer 1 fix
 
 ## Context

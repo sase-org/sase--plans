@@ -1,9 +1,10 @@
 ---
 status: draft
 create_time: 2026-04-30 18:55:08
-prompt: 202604/prompts/notification_recent_first.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_recent_first.md](prompts/notification_recent_first.md)
 
 # Notification Panel Recent-First Bucket Ordering
 

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-03 15:55:36
 status: done
-prompt: 202606/prompts/bob_dataview_reads.md
 bead_id: sase-4b
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/bob_dataview_reads.md](prompts/bob_dataview_reads.md)
+
 # Plan: Dataview-Backed `#!sase/reads`
 
 ## Goal

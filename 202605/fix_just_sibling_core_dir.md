@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 17:25:59
 status: done
-prompt: 202605/prompts/fix_just_sibling_core_dir.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_just_sibling_core_dir.md](prompts/fix_just_sibling_core_dir.md)
+
 # Plan: Fix `fix_just` install in numbered SASE workspaces
 
 ## Diagnosis

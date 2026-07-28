@@ -1,6 +1,5 @@
----
-plan: 202605/axe_lumberjack_chop_sidebar.md
----
+- **PLAN:** [../202605/axe_lumberjack_chop_sidebar.md](../axe_lumberjack_chop_sidebar.md)
+
   I want to remove the axe sidebar entry on the AXE tab and instead start having lumberjacks as main entries that have chops as child entries.
 
 - When a chop is selected, we should display the output from that chop's last run.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:22:48
 status: done
-prompt: 202604/prompts/g_keymap_restore.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/g_keymap_restore.md](prompts/g_keymap_restore.md)
+
 # Restore `g` to "scroll to top" on the Agents tab; move grouping-mode cycle to a new key
 
 ## Problem

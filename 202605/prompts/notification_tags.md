@@ -1,6 +1,5 @@
----
-plan: 202605/notification_tags.md
----
+- **PLAN:** [../202605/notification_tags.md](../notification_tags.md)
+
  Can you help me add support for sase notification tags?
 
 - Senders should be able to specify custom tags (ex: 'foobar').

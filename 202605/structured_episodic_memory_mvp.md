@@ -3,8 +3,10 @@ create_time: 2026-05-26 18:32:23
 status: done
 bead_id: sase-45
 tier: epic
-prompt: 202605/prompts/structured_episodic_memory_mvp.md
 ---
+
+- **PROMPT:** [202605/prompts/structured_episodic_memory_mvp.md](prompts/structured_episodic_memory_mvp.md)
+
 # Structured Deterministic Episodic Memory MVP
 
 ## Problem

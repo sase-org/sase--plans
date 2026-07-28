@@ -6,8 +6,9 @@ goal: Ensure simultaneous epic approvals against one project cannot allocate con
   push before the next launch mutates that store.
 create_time: 2026-07-20 11:03:31
 status: done
-prompt: 202607/prompts/serialize_epic_approval_launches.md
 ---
+
+- **PROMPT:** [202607/prompts/serialize_epic_approval_launches.md](prompts/serialize_epic_approval_launches.md)
 
 # Plan: Serialize approved epic launches per bead store
 

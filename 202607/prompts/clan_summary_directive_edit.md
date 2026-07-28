@@ -1,10 +1,4 @@
----
-plan: 202607/clan_summary_directive_edit.md
----
-
-
-
-
+- **PLAN:** [../202607/clan_summary_directive_edit.md](../clan_summary_directive_edit.md)
 
 You are the land agent for epic bead sase-7r: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

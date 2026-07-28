@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 10:23:52
 status: done
-prompt: 202604/prompts/deltas_line_counts.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/deltas_line_counts.md](prompts/deltas_line_counts.md)
+
 # Plan: DELTAS Line Counts
 
 ## Goal

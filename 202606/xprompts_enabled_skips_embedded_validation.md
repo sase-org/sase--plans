@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 14:39:11
 status: done
-prompt: 202606/prompts/xprompts_enabled_skips_embedded_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompts_enabled_skips_embedded_validation.md](prompts/xprompts_enabled_skips_embedded_validation.md)
+
 # Plan: `%xprompts_enabled:false` must exempt its block from embedded-workflow expansion & VCS validation
 
 ## Problem

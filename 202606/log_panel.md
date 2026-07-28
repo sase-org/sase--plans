@@ -3,8 +3,10 @@ create_time: 2026-06-17 14:18:05
 bead_id: sase-4t
 tier: epic
 status: wip
-prompt: 202606/prompts/log_panel.md
 ---
+
+- **PROMPT:** [202606/prompts/log_panel.md](prompts/log_panel.md)
+
 # Plan: `,L` Log Panel + Reliable Launch-Failure Logging
 
 ## Problem & Product Context

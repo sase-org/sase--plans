@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 17:24:38
 status: done
-prompt: 202605/prompts/image_file_panel_slots.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/image_file_panel_slots.md](prompts/image_file_panel_slots.md)
+
 # Plan: Completed-Agent Image File Panel Slots
 
 ## Goal

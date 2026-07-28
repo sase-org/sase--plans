@@ -5,8 +5,9 @@ goal: Slow-tool call reports truncate oversized command output from the beginnin
   and preview-only runtimes.
 create_time: 2026-07-15 13:48:14
 status: done
-prompt: 202607/prompts/tail_preserving_tool_call_output.md
 ---
+
+- **PROMPT:** [202607/prompts/tail_preserving_tool_call_output.md](prompts/tail_preserving_tool_call_output.md)
 
 # Plan: Preserve command-output tails in slow-tool reports
 

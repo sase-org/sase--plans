@@ -1,6 +1,5 @@
----
-plan: 202605/new_blog_posts.md
----
+- **PLAN:** [../202605/new_blog_posts.md](../new_blog_posts.md)
+
   Can you help me add new blog posts (the title should be numbered to be consistent with the existing posts), which should be mostly empty except for a skeleton (with predicted sections) that you flesh out, using the following topics (ideas on content are in parentheses) as the post topics (one per bullet)?:
 
 - xprompts (intro + workflows + don't use workflows)

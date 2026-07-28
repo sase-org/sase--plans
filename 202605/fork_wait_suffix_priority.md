@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 19:39:29
 status: done
-prompt: 202605/prompts/fork_wait_suffix_priority.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fork_wait_suffix_priority.md](prompts/fork_wait_suffix_priority.md)
+
 # Fork/Wait Suffix Priority Plan
 
 ## Problem

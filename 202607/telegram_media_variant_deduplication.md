@@ -7,8 +7,9 @@ goal: 'Telegram agent-completion messages attach one representative for each log
   '
 create_time: 2026-07-17 13:56:44
 status: done
-prompt: 202607/prompts/telegram_media_variant_deduplication.md
 ---
+
+- **PROMPT:** [202607/prompts/telegram_media_variant_deduplication.md](prompts/telegram_media_variant_deduplication.md)
 
 # Plan: Deduplicate Telegram Completion Media Variants
 

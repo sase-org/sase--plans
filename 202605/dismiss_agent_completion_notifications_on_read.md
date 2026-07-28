@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 23:57:52
 status: done
-prompt: 202605/prompts/dismiss_agent_completion_notifications_on_read.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/dismiss_agent_completion_notifications_on_read.md](prompts/dismiss_agent_completion_notifications_on_read.md)
+
 # Plan: Dismiss Agent Completion Notifications When Agents Become Read
 
 ## Problem

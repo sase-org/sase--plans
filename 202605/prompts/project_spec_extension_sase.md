@@ -1,6 +1,5 @@
----
-plan: 202605/project_spec_extension_sase.md
----
+- **PLAN:** [../202605/project_spec_extension_sase.md](../project_spec_extension_sase.md)
+
  I want to change the `.gp` filename extension, which is likely referenced quite a bit in sase's codebase (including plugin repos and the sase-core repo), used for project specs to `.sase`. Can you help me make this change?
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

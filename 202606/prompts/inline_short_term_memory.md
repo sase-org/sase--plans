@@ -1,6 +1,5 @@
----
-plan: 202606/inline_short_term_memory.md
----
+- **PLAN:** [../202606/inline_short_term_memory.md](../inline_short_term_memory.md)
+
  Not all LLM providers support using the @ symbol as a prefix for file paths to include the contents of those files. Can you help me start inlining the contents of short-term memory files instead of using the `@` symbol?
 
 - Memory Markdown files will be expected to have an H1 section and zero or more H2 sections. Each H2 section may have zero or more H3 sections. No sections of level H4, H5, or above should be allowed. 

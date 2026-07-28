@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 16:51:59
 status: done
-prompt: 202604/prompts/pr_status_input.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pr_status_input.md](prompts/pr_status_input.md)
 
 # Plan: Add `status` input to `#pr` xprompt workflow
 

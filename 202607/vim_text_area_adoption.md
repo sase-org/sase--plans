@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-05 19:48:44
 status: wip
-prompt: 202607/prompts/vim_text_area_adoption.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vim_text_area_adoption.md](prompts/vim_text_area_adoption.md)
+
 # Plan: Adopt vim + readline editing across TUI input boxes
 
 ## Context

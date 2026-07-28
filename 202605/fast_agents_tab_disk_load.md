@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-16 09:47:13
 status: wip
-prompt: 202605/prompts/fast_agents_tab_disk_load.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/fast_agents_tab_disk_load.md](prompts/fast_agents_tab_disk_load.md)
+
 # Fast Agents Tab Disk Loading Plan
 
 ## Goal

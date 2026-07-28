@@ -1,6 +1,5 @@
----
-plan: 202607/agents_sase_plan_metadata.md
----
+- **PLAN:** [../202607/agents_sase_plan_metadata.md](../agents_sase_plan_metadata.md)
+
  We recently added the new goal field to the metadata panel on the agents tab, which is shown when the agent has proposed a plan, which always has the goal property in their frontmatter now. The top-level fields in the agent metadata panel do not feel like the right place for this though. Can you help me add a new `SASE PLAN` section to the metadata panel that is shown when an agent has proposed a plan? 
 
 - We should stop showing the "Goal:" section in the metadata panel. Instead the `goal` will be listed under this section.

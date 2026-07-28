@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 21:17:11
 status: done
-prompt: 202605/prompts/agent_row_emojis.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_row_emojis.md](prompts/agent_row_emojis.md)
+
 # Plan: Choose better emojis for stopped and unread agent rows
 
 ## Context

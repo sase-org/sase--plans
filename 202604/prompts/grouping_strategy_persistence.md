@@ -1,6 +1,5 @@
----
-plan: 202604/grouping_strategy_persistence.md
----
+- **PLAN:** [../202604/grouping_strategy_persistence.md](../grouping_strategy_persistence.md)
+
  Can you help me start saving the new grouping strategy to disk every time the `o`/`O` keymaps are used?
 
 - When the `sase ace` command is run, we should read the last grouping strategy from disk and use that.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 15:16:08
 status: wip
-prompt: 202604/prompts/agent_name_dedup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_name_dedup.md](prompts/agent_name_dedup.md)
+
 # Agent Name De-duplication Plan
 
 ## Context

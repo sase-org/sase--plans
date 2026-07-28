@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 17:21:04
 status: done
-prompt: 202603/prompts/resume_coder_vcs_tag.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/resume_coder_vcs_tag.md](prompts/resume_coder_vcs_tag.md)
 
 # Plan: Fix resume VCS tag for coder agents
 

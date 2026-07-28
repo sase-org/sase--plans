@@ -1,6 +1,5 @@
----
-plan: 202606/project_delete_missing_spec.md
----
+- **PLAN:** [../202606/project_delete_missing_spec.md](../project_delete_missing_spec.md)
+
  The new "Project Management" panel throws an error when deleting a project with the `<ctrl+d>` keymap (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

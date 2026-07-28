@@ -1,6 +1,5 @@
----
-plan: 202606/agent_tag_enter_clears.md
----
+- **PLAN:** [../202606/agent_tag_enter_clears.md](../agent_tag_enter_clears.md)
+
  When I use the `N` keymap on the agents tab to delete an agent's group (i.e. move it to the `(untagged)` group), it doesn't seem to work (nothing happens). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

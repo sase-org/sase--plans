@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 09:49:19
 status: done
-prompt: 202606/prompts/fork_implies_wait.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fork_implies_wait.md](prompts/fork_implies_wait.md)
+
 # Plan: Make `#fork:<name>` Imply `%w:<name>`
 
 ## Context

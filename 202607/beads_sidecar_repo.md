@@ -94,9 +94,11 @@ phases:
     bob-cli projects, then confirm bead reads, writes, and workspace clones against
     the new sidecar.'
 create_time: 2026-07-27 14:42:01
-status: wip
+status: done
 bead_id: sase-a8
 ---
+
+- **PROMPT:** [202607/prompts/beads_sidecar_repo.md](prompts/beads_sidecar_repo.md)
 
 # Plan: Split bead state into a dedicated `beads` sidecar repository
 

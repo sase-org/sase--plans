@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 16:04:11
 status: done
-prompt: 202606/prompts/repeat_stop_variable.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/repeat_stop_variable.md](prompts/repeat_stop_variable.md)
+
 # Plan: STOP Output Variable for `%repeat`
 
 ## Goal

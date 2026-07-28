@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-30 07:21:02
 status: done
-prompt: 202606/prompts/dismiss_unread_agent_dismisses_notification.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/dismiss_unread_agent_dismisses_notification.md](prompts/dismiss_unread_agent_dismisses_notification.md)
+
 # Dismiss the completion notification when an unread agent is dismissed
 
 ## Problem / Motivation

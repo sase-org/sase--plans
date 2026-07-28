@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 17:40:52
 status: done
-prompt: 202604/prompts/agent_name_in_completion_toast.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_name_in_completion_toast.md](prompts/agent_name_in_completion_toast.md)
+
 # Plan: Include the agent's name in agent completion toasts
 
 ## Problem

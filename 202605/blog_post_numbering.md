@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 01:21:47
 status: done
-prompt: 202605/prompts/blog_post_numbering.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/blog_post_numbering.md](prompts/blog_post_numbering.md)
+
 # Blog Post Numbering Plan
 
 ## Context

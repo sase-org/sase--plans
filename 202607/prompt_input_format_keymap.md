@@ -8,8 +8,9 @@ goal: 'The active ACE prompt input pane can be formatted on demand with gf in NO
   '
 create_time: 2026-07-16 08:09:48
 status: done
-prompt: 202607/prompts/prompt_input_format_keymap.md
 ---
+
+- **PROMPT:** [202607/prompts/prompt_input_format_keymap.md](prompts/prompt_input_format_keymap.md)
 
 # Plan: Explicit Prompt Formatting Keymap
 

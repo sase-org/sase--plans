@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:22:52
 status: done
-prompt: 202606/prompts/numeric_auto_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/numeric_auto_agent_names.md](prompts/numeric_auto_agent_names.md)
+
 # Numeric-leading auto agent names
 
 ## Goal

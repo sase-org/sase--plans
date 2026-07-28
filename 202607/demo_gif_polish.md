@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 00:49:18
 status: done
-prompt: 202607/prompts/demo_gif_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/demo_gif_polish.md](prompts/demo_gif_polish.md)
+
 # Demo GIF Polish: Fix Visible Defects and Dead Air in the ACE Demo Tapes
 
 ## Background

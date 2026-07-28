@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 02:08:34
 status: done
-prompt: 202603/prompts/agent_plan_code_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/agent_plan_code_timestamps.md](prompts/agent_plan_code_timestamps.md)
 
 # Plan: Add PLAN and CODE Timestamps to Agent Metadata Panel
 
@@ -12,8 +13,8 @@ tier: tale
 The agent metadata panel in the Agents tab of `sase ace` currently shows WAIT, BEGIN, and END timestamps. For agents
 that created plans (`.plan` suffix), we need to add two new timestamp entries:
 
-- **PLAN**: The time the planner agent submitted its plan for review (when the plan notification is created)
-- **CODE**: The time the coder agent (`.code` follow-up) was launched after plan approval
+- `PLAN`: The time the planner agent submitted its plan for review (when the plan notification is created)
+- `CODE`: The time the coder agent (`.code` follow-up) was launched after plan approval
 
 These should appear on the **parent** `.plan` agent's metadata panel, between BEGIN and END.
 

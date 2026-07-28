@@ -1,10 +1,4 @@
----
-plan: 202607/emit_bead_waits.md
----
-
-
-
-
+- **PLAN:** [../202607/emit_bead_waits.md](../emit_bead_waits.md)
 
 Can you complete the work for bead sase-87.4? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

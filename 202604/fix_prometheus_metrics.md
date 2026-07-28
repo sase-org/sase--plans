@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 22:59:47
 status: done
-prompt: 202604/prompts/fix_prometheus_metrics.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_prometheus_metrics.md](prompts/fix_prometheus_metrics.md)
 
 # Fix Prometheus Metrics Tracking and Display for Agent Invocations
 

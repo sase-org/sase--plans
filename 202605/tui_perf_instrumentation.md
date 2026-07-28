@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-16 18:15:24
 status: done
-prompt: 202605/prompts/tui_perf_instrumentation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tui_perf_instrumentation.md](prompts/tui_perf_instrumentation.md)
+
 # TUI Perf Diagnosis — Instrumentation Improvements (#1, #2)
 
 Implement the first two recommendations from `sdd/research/202605/tui_tmux_perf_diagnosis_20260516.md`. Both are pure

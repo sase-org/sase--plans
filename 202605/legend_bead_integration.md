@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-04 13:43:10
 status: done
-prompt: 202605/prompts/legend_bead_integration.md
 bead_id: sase-21
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/legend_bead_integration.md](prompts/legend_bead_integration.md)
+
 # Improve Legend Bead Integration
 
 ## Goal

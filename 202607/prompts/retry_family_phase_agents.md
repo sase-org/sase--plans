@@ -1,9 +1,4 @@
----
-plan: 202607/retry_family_phase_agents.md
----
-
-
-
+- **PLAN:** [../202607/retry_family_phase_agents.md](../retry_family_phase_agents.md)
 
 Can you complete the work for bead sase-8g.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

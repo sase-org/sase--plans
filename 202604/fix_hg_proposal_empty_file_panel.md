@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 17:57:44
 status: done
-prompt: 202604/prompts/fix_hg_proposal_empty_file_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_hg_proposal_empty_file_panel.md](prompts/fix_hg_proposal_empty_file_panel.md)
+
 # Fix empty file panel in `sase ace` after Mercurial proposal
 
 ## Problem Statement

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:56:06
 status: done
-prompt: 202605/prompts/epic_phase_vcs_prompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_phase_vcs_prompts.md](prompts/epic_phase_vcs_prompts.md)
+
 # Plan: Preserve VCS Workspace For Epic Phase Agents
 
 ## Problem

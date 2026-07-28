@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 16:36:55
 status: done
-prompt: 202604/prompts/prompt_input_lag_followup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prompt_input_lag_followup.md](prompts/prompt_input_lag_followup.md)
+
 # Plan: Follow-up Fixes for Prompt Input Lag Implementation
 
 ## Context

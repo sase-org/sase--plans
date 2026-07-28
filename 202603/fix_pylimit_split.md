@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 19:13:39
 status: done
-prompt: 202603/prompts/fix_pylimit_split.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_pylimit_split.md](prompts/fix_pylimit_split.md)
 
 # Fix `#sase/pylimit_split` workflow: eliminate inter-step dependency
 

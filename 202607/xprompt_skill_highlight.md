@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 07:59:20
 status: done
-prompt: 202607/prompts/xprompt_skill_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_skill_highlight.md](prompts/xprompt_skill_highlight.md)
+
 # Plan: Syntax highlighting for known xprompt skills (`/sase_plan`) in the prompt input
 
 ## Goal

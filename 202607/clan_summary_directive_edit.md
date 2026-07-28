@@ -8,8 +8,9 @@ goal: 'Tribe assignment and clan-declaration rewrites preserve the %clan summary
   '
 create_time: 2026-07-19 21:24:32
 status: done
-prompt: 202607/prompts/clan_summary_directive_edit.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_summary_directive_edit.md](prompts/clan_summary_directive_edit.md)
 
 # Plan: Preserve clan summaries in prompt edits, then land sase-7r
 

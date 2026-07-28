@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 11:46:22
 status: done
-prompt: 202604/prompts/hide_agent_attempt_rows.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/hide_agent_attempt_rows.md](prompts/hide_agent_attempt_rows.md)
+
 # Hide Attempt Rows In Agents List
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 08:55:43
 status: done
-prompt: 202607/prompts/fix_project_agent_revert_checkout.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_project_agent_revert_checkout.md](prompts/fix_project_agent_revert_checkout.md)
+
 # Fix: Agents-tab revert fails for project-scoped agents ("Could not check out branch '<project-name>'")
 
 ## Problem

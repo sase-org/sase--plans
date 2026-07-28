@@ -1,6 +1,5 @@
----
-plan: 202605/memory_list_home_context.md
----
+- **PLAN:** [../202605/memory_list_home_context.md](../memory_list_home_context.md)
+
  Can you help me improve the `sase memory list` command (current output is shown below)?
 
 - We should be counting lines in the AGENTS.md file too!

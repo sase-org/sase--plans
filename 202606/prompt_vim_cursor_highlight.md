@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 06:49:11
 status: done
-prompt: 202606/prompts/prompt_vim_cursor_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_vim_cursor_highlight.md](prompts/prompt_vim_cursor_highlight.md)
+
 # Plan: Readable, mode-distinct vim cursor in the Prompt Input Widget
 
 ## Problem & product context

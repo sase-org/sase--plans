@@ -8,8 +8,9 @@ goal: 'Epic plan review gates present their singleton approval option as "Epic" 
   '
 create_time: 2026-07-18 07:44:01
 status: done
-prompt: 202607/prompts/label_epic_gate_action.md
 ---
+
+- **PROMPT:** [202607/prompts/label_epic_gate_action.md](prompts/label_epic_gate_action.md)
 
 # Plan: Label the epic plan gate action as Epic
 

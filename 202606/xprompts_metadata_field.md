@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 14:07:59
 status: done
-prompt: 202606/prompts/xprompts_metadata_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompts_metadata_field.md](prompts/xprompts_metadata_field.md)
+
 # Plan: Replace "Embedded Workflows" with a redesigned "Xprompts" field
 
 ## Goal

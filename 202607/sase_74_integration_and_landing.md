@@ -9,8 +9,9 @@ goal: 'The clan-scoped Agent Cleanup feature is reflected in documentation that 
   '
 create_time: 2026-07-19 10:06:27
 status: done
-prompt: 202607/prompts/sase_74_integration_and_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/sase_74_integration_and_landing.md](prompts/sase_74_integration_and_landing.md)
 
 # Plan: Complete sase-74 integration and landing
 

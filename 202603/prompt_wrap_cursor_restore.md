@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 14:27:33
 status: done
-prompt: 202603/prompts/prompt_wrap_cursor_restore.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/prompt_wrap_cursor_restore.md](prompts/prompt_wrap_cursor_restore.md)
 
 # Fix prompt auto-wrap cursor drift after prettier reflow
 

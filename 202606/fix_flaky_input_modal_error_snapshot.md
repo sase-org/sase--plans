@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 12:26:06
 status: done
-prompt: 202606/prompts/fix_flaky_input_modal_error_snapshot.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_flaky_input_modal_error_snapshot.md](prompts/fix_flaky_input_modal_error_snapshot.md)
+
 # Fix flaky `test_input_collection_modal_error_png_snapshot`
 
 ## Problem

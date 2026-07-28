@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-19 14:55:56
 status: wip
-prompt: 202604/prompts/parent_p4head_leak.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/parent_p4head_leak.md](prompts/parent_p4head_leak.md)
 
 # Plan: Stop `sase commit` from writing `PARENT: p4head` into ChangeSpecs
 

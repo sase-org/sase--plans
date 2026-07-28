@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 00:22:52
 status: done
-prompt: 202605/prompts/sase_31_close_ace_png_drift.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_31_close_ace_png_drift.md](prompts/sase_31_close_ace_png_drift.md)
+
 # sase-31 Closure: Resolve ACE PNG Snapshot CI-vs-Local Render Drift
 
 ## Goal

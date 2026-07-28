@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:25:54
 status: done
-prompt: 202604/prompts/fix_changespec_norow_norefresh_flake.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_changespec_norow_norefresh_flake.md](prompts/fix_changespec_norow_norefresh_flake.md)
+
 # SASE Plan: Fix `test_navigation_next_key` `NoMatches` flake on `#list-panel`
 
 ## Context

@@ -2,9 +2,11 @@
 create_time: 2026-04-29 00:45:21
 status: done
 bead_id: sase-15
-prompt: 202604/prompts/sase_chats_skill_1.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/sase_chats_skill_1.md](prompts/sase_chats_skill_1.md)
+
 # Plan: `/sase_chats` Skill for Agent Chat Transcript Access
 
 ## Problem

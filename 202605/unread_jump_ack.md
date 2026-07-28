@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:17:57
 status: done
-prompt: 202605/prompts/unread_jump_ack.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/unread_jump_ack.md](prompts/unread_jump_ack.md)
+
 # Plan: Acknowledge unread agent on leader jump
 
 ## Context

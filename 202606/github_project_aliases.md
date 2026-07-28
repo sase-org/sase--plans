@@ -3,8 +3,10 @@ create_time: 2026-06-06 09:04:01
 bead_id: sase-4d
 tier: epic
 status: done
-prompt: 202606/prompts/github_project_aliases.md
 ---
+
+- **PROMPT:** [202606/prompts/github_project_aliases.md](prompts/github_project_aliases.md)
+
 # GitHub Project Alias Allocation Plan
 
 ## Context

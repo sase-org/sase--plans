@@ -1,10 +1,4 @@
----
-plan: 202606/plugin_catalog_verification.md
----
-
-
-
-
+- **PLAN:** [../202606/plugin_catalog_verification.md](../plugin_catalog_verification.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-57 is complete?
 

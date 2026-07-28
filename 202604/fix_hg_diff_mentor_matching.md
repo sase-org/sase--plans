@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 20:11:22
 status: done
-prompt: 202604/prompts/fix_hg_diff_mentor_matching.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_hg_diff_mentor_matching.md](prompts/fix_hg_diff_mentor_matching.md)
 
 # Fix: MENTORS not added for Mercurial ChangeSpecs
 

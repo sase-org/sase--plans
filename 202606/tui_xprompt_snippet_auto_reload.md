@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 15:37:20
 status: done
-prompt: 202606/prompts/tui_xprompt_snippet_auto_reload.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_xprompt_snippet_auto_reload.md](prompts/tui_xprompt_snippet_auto_reload.md)
+
 # ACE TUI: Auto-Reload Snippets & XPrompts Without Restart
 
 ## Problem & Product Context

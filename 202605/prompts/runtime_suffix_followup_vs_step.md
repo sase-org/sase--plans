@@ -1,6 +1,5 @@
----
-plan: 202605/runtime_suffix_followup_vs_step.md
----
+- **PLAN:** [../202605/runtime_suffix_followup_vs_step.md](../runtime_suffix_followup_vs_step.md)
+
  It looks like we made a mistake when implementing git commit 1e2faf4e40d9 (see the `sase ace` snapshot below for context). The `1/1.legend` step should have a live runtime, whereas the `main`
 step should not. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 14:24:05
 status: done
-prompt: 202604/prompts/bug_id_cli_option.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bug_id_cli_option.md](prompts/bug_id_cli_option.md)
 
 # Plan: Add `-B|--bug-id` CLI Option to `sase commit`
 

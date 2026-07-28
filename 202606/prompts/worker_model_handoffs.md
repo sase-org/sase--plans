@@ -1,6 +1,5 @@
----
-plan: 202606/worker_model_handoffs.md
----
+- **PLAN:** [../202606/worker_model_handoffs.md](../worker_model_handoffs.md)
+
  Can you help me improve the recently added worker_model functionality?
 
 - The worker model should be used to implement sase plans (i.e. as the modl for "coder" agents). Make sure to update both the provider and model (see the recently implemented, but obsolete, ~/.sase/plans/202606/plan_handoff_provider_drop.md plan file for context).

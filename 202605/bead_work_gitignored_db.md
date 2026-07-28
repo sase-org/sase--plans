@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 13:01:52
 status: done
-prompt: 202605/prompts/bead_work_gitignored_db.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_work_gitignored_db.md](prompts/bead_work_gitignored_db.md)
+
 # Fix `sase bead work` failing because `git add` warns on the gitignored `beads.db`
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 14:22:36
 status: done
-prompt: 202605/prompts/nvim_telescope_preview_newlines.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/nvim_telescope_preview_newlines.md](prompts/nvim_telescope_preview_newlines.md)
+
 # Fix Neovim Telescope xprompt preview newline crash
 
 ## Context

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-07 02:01:59
 status: done
-prompt: 202605/prompts/qwen_opencode.md
 bead_id: sase-29
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/qwen_opencode.md](prompts/qwen_opencode.md)
+
 # Add Qwen CLI and OpenCode LLM Providers
 
 ## Context

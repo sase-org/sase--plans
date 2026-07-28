@@ -1,6 +1,5 @@
----
-plan: 202604/codex_config_churn.md
----
+- **PLAN:** [../202604/codex_config_churn.md](../codex_config_churn.md)
+
  Can you help me figure out why codex keeps leaving these lines (see the command output below for context) and stop it from doing so in the future? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 ```

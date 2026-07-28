@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-04 07:42:25
 status: wip
-prompt: 202607/prompts/install_mode_switch.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/install_mode_switch.md](prompts/install_mode_switch.md)
+
 # Plan: First-class switching between PyPI (managed) and Dev (editable) installs
 
 ## Problem

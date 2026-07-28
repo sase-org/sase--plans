@@ -1,6 +1,5 @@
----
-plan: 202607/agents_runner_capacity_header.md
----
+- **PLAN:** [../202607/agents_runner_capacity_header.md](../agents_runner_capacity_header.md)
+
  Can you help me start showing the currently configured max runner limit
 on the "Agents" tab of the `sase ace` TUI?
 

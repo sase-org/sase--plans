@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 09:24:16
 status: done
-prompt: 202606/prompts/fix_agent_context_plan_feedback_label.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_agent_context_plan_feedback_label.md](prompts/fix_agent_context_plan_feedback_label.md)
+
 # Fix AGENT CONTEXT Labels for Plan Feedback Family Members
 
 ## Problem

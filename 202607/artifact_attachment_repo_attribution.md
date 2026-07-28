@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 07:51:36
 status: done
-prompt: 202607/prompts/artifact_attachment_repo_attribution.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/artifact_attachment_repo_attribution.md](prompts/artifact_attachment_repo_attribution.md)
+
 # Fix artifact attachment misattribution for commits made outside the primary workspace repo
 
 ## Problem

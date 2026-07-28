@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 11:42:41
 status: done
-prompt: 202606/prompts/jinja_diagnostics_known_vars.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/jinja_diagnostics_known_vars.md](prompts/jinja_diagnostics_known_vars.md)
+
 # Fix: Jinja2 prompt diagnostics falsely flag built-ins and frontmatter inputs
 
 ## Problem

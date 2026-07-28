@@ -1,6 +1,5 @@
----
-plan: 202603/llm_retry_support.md
----
+- **PLAN:** [../202603/llm_retry_support.md](../llm_retry_support.md)
+
 Can you help me add retry support for specific LLM providers, that the user should be able to configure?
 
 #phase

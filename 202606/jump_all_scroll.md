@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 21:18:27
 status: done
-prompt: 202606/prompts/jump_all_scroll.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/jump_all_scroll.md](prompts/jump_all_scroll.md)
+
 # Plan: Fix Jump to Entry Ctrl+D/U Scrolling
 
 ## Context

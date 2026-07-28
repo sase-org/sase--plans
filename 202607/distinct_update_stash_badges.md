@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 21:53:40
 status: done
-prompt: 202607/prompts/distinct_update_stash_badges.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/distinct_update_stash_badges.md](prompts/distinct_update_stash_badges.md)
+
 # Plan: Distinguish update and prompt-stash top-bar badges
 
 ## Product context

@@ -1,6 +1,5 @@
----
-plan: 202606/invalid_sase_project.md
----
+- **PLAN:** [../202606/invalid_sase_project.md](../invalid_sase_project.md)
+
  Can you help me figure out how the invalid ".sase" project keeps getting added to our project list and stop it from happening in the future (see the below command output for context)? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

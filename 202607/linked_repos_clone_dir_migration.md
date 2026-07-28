@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 11:47:51
 status: done
-prompt: 202607/prompts/linked_repos_clone_dir_migration.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/linked_repos_clone_dir_migration.md](prompts/linked_repos_clone_dir_migration.md)
+
 # Migrate Normal Linked Repo Clones to `sase/repos/linked/` (with Launch-Time Clearing + Fast Restore Cache)
 
 ## Problem & Goals

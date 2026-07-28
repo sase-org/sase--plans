@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 18:38:49
 status: done
-prompt: 202605/prompts/ace_by_date_subgroups.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ace_by_date_subgroups.md](prompts/ace_by_date_subgroups.md)
+
 # Plan: Replace 4-Hour Window Subgroups in `sase ace` "By Date" Grouping
 
 ## Problem

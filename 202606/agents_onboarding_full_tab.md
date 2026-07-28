@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 15:52:35
 status: done
-prompt: 202606/prompts/agents_onboarding_full_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agents_onboarding_full_tab.md](prompts/agents_onboarding_full_tab.md)
+
 # Plan: Agents-tab Onboarding Takes Over the Full Tab
 
 ## Summary

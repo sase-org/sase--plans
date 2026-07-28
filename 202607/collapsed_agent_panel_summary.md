@@ -8,8 +8,9 @@ goal: 'Selecting a collapsed Agents-tab panel shows a fast, accurate, and polish
   '
 create_time: 2026-07-17 14:35:14
 status: done
-prompt: 202607/prompts/collapsed_agent_panel_summary.md
 ---
+
+- **PROMPT:** [202607/prompts/collapsed_agent_panel_summary.md](prompts/collapsed_agent_panel_summary.md)
 
 # Plan: Collapsed agent panel summary pane
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 10:08:37
 status: done
-prompt: 202606/prompts/xprompt_panel_add_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_panel_add_keymaps.md](prompts/xprompt_panel_add_keymaps.md)
+
 # Plan: Split Frontmatter Panel Add Property vs Add Entry Keymaps
 
 ## Context

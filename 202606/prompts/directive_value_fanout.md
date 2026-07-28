@@ -1,6 +1,5 @@
----
-plan: 202606/directive_value_fanout.md
----
+- **PLAN:** [../202606/directive_value_fanout.md](../directive_value_fanout.md)
+
  The prompt in the ~/tmp/bad_prompt.txt file should have created a fanout prompt that launched 3 different Claude agents using the Opus model with different levels of effort, but it failed with the
 
 ```

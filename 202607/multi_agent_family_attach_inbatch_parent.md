@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 14:45:57
 status: wip
-prompt: 202607/prompts/multi_agent_family_attach_inbatch_parent.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/multi_agent_family_attach_inbatch_parent.md](prompts/multi_agent_family_attach_inbatch_parent.md)
+
 # Plan: Attach `%n(parent, suffix)` to an in-batch sibling named earlier in the same multi-agent prompt
 
 ## Problem

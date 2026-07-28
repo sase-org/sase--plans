@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 11:16:03
 status: done
-prompt: 202605/prompts/full_memory_read_reasons.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/full_memory_read_reasons.md](prompts/full_memory_read_reasons.md)
+
 # Show Full Memory Read Reasons in ACE Agent Metadata
 
 ## Goal

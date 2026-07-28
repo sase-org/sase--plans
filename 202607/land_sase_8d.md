@@ -8,8 +8,9 @@ goal: 'Long absolute plan references preserve a contiguous filename in bounded c
   '
 create_time: 2026-07-20 17:12:22
 status: done
-prompt: 202607/prompts/land_sase_8d.md
 ---
+
+- **PROMPT:** [202607/prompts/land_sase_8d.md](prompts/land_sase_8d.md)
 
 # Plan: Finish and land plan-lane clan summaries
 

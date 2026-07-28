@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 18:22:25
 status: done
-prompt: 202604/prompts/agents_tree_dedupe_and_sort.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tree_dedupe_and_sort.md](prompts/agents_tree_dedupe_and_sort.md)
+
 # Plan: Stop splitting `(untagged)` (and other groups) on the Agents tab + sort groups deterministically
 
 ## Goal

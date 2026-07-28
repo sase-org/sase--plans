@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 12:46:03
 status: done
-prompt: 202605/prompts/hourly_date_subgroups.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/hourly_date_subgroups.md](prompts/hourly_date_subgroups.md)
+
 # Add 1-Hour Date Subgroups Under 4-Hour BY_DATE Headings
 
 ## Goal

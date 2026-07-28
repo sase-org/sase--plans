@@ -1,6 +1,5 @@
----
-plan: 202605/agent_timestamps_refresh.md
----
+- **PLAN:** [../202605/agent_timestamps_refresh.md](../agent_timestamps_refresh.md)
+
  The PLAN and CODE timestamps keep disappearing from this agent's (see the `sase ace` snapshot below) metadata panel on the "Agents" tab of the `sase ace` TUI (it seems like this happens on every auto-refresh maybe). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

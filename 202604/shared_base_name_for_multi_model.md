@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 15:45:39
 status: done
-prompt: 202604/prompts/shared_base_name_for_multi_model.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/shared_base_name_for_multi_model.md](prompts/shared_base_name_for_multi_model.md)
+
 # Plan: Shared base name + `<base>.<llm>` suffix for multi-model agent spawns
 
 ## Problem

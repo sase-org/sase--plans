@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 12:55:33
 status: done
-prompt: 202606/prompts/ctrl_space_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ctrl_space_keymap.md](prompts/ctrl_space_keymap.md)
+
 # Plan: Migrate Ace TUI Space Keymap to Ctrl+Space
 
 ## Goal

@@ -1,10 +1,11 @@
 ---
 status: done
 bead_id: sase-511j
-prompt: 202603/prompts/codex.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/codex.md](prompts/codex.md)
 
 # Plan: Add Codex (OpenAI CLI Agent) Provider to sase
 

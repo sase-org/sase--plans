@@ -1,9 +1,10 @@
 ---
 create_time: 2026-07-11 18:00:31
 status: done
-prompt: 202607/prompts/migrate_actstat_sdd_prompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/migrate_actstat_sdd_prompts.md](prompts/migrate_actstat_sdd_prompts.md)
 
 # Migrate actstat SDD Companion Prompt Snapshots into `plans/<YYYYMM>/prompts/`
 

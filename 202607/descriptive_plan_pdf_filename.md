@@ -8,8 +8,9 @@ goal: 'Telegram plan-review attachments use the durable proposal''s filename ste
   '
 create_time: 2026-07-18 07:43:48
 status: done
-prompt: 202607/prompts/descriptive_plan_pdf_filename.md
 ---
+
+- **PROMPT:** [202607/prompts/descriptive_plan_pdf_filename.md](prompts/descriptive_plan_pdf_filename.md)
 
 # Plan: Name plan approval PDFs after their proposals
 

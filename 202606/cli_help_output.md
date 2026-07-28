@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 18:15:06
 status: done
-prompt: 202606/prompts/cli_help_output.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/cli_help_output.md](prompts/cli_help_output.md)
+
 # Improve `sase` Command Line Help Output
 
 ## Goal

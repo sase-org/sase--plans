@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-04 19:35:04
 status: done
-prompt: 202606/prompts/concurrent_research_swarm_launch_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/concurrent_research_swarm_launch_race.md](prompts/concurrent_research_swarm_launch_race.md)
+
 # Plan: Fix Concurrent Research Swarm Launch Races
 
 ## Context

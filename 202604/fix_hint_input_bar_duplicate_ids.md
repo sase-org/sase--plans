@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 12:54:02
 status: wip
-prompt: 202604/prompts/fix_hint_input_bar_duplicate_ids.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_hint_input_bar_duplicate_ids.md](prompts/fix_hint_input_bar_duplicate_ids.md)
 
 # Fix HintInputBar DuplicateIds TUI Crash
 

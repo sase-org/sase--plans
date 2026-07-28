@@ -9,8 +9,9 @@ goal: 'A %wait on a clan name (and on a tribe that resolves to a clan generation
   '
 create_time: 2026-07-20 08:46:34
 status: wip
-prompt: 202607/prompts/fix_clan_wait_queued_members.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_clan_wait_queued_members.md](prompts/fix_clan_wait_queued_members.md)
 
 # Plan: Count queued clan members in whole-clan wait resolution
 

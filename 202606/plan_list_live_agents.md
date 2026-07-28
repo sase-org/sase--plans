@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 12:12:54
 status: done
-prompt: 202606/prompts/plan_list_live_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plan_list_live_agents.md](prompts/plan_list_live_agents.md)
+
 # Plan: Filter plan proposals to live Agents-tab rows
 
 ## Context

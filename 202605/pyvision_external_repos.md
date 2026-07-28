@@ -3,8 +3,10 @@ create_time: 2026-05-09 18:17:02
 status: done
 bead_id: sase-2j
 tier: epic
-prompt: 202605/prompts/pyvision_external_repos.md
 ---
+
+- **PROMPT:** [202605/prompts/pyvision_external_repos.md](prompts/pyvision_external_repos.md)
+
 # Pyvision External Repository References
 
 ## Goal

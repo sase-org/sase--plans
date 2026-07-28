@@ -1,6 +1,5 @@
----
-plan: 202607/first_blog_post.md
----
+- **PLAN:** [../202607/first_blog_post.md](../first_blog_post.md)
+
  I'm attempting to write my first blog post for sase. I already have a draft out but most of that is irrelevant. A lot of my more recent ideas of what I want in the blog post can be found in the ~/bob/sase_blog_0.md file. I've decided that I want this blog post to be narrowly focused on the parts that users need to know about:
 - how sase integrates with agent CLIs instead of models directly
 - how xprompts work

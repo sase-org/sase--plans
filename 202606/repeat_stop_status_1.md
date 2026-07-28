@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 18:04:04
 status: done
-prompt: 202606/prompts/repeat_stop_status_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/repeat_stop_status_1.md](prompts/repeat_stop_status_1.md)
+
 # Plan: Display Repeat STOP Slots As STOPPED
 
 ## Problem

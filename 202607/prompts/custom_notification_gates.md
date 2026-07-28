@@ -1,6 +1,5 @@
----
-plan: 202607/custom_notification_gates.md
----
+- **PLAN:** [../202607/custom_notification_gates.md](../custom_notification_gates.md)
+
  #fork:sase-6e Can you help me make some improvements related to this
 functionality?
 

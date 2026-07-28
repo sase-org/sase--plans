@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 09:26:22
 status: done
-prompt: 202604/prompts/copy_agent_name_key.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/copy_agent_name_key.md](prompts/copy_agent_name_key.md)
+
 # Plan: Copy Agent Name to Clipboard from Agents Tab Copy Mode
 
 ## Goal

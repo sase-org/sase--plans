@@ -1,6 +1,5 @@
----
-plan: 202606/vcs_xprompt_ctrlp_stale_context.md
----
+- **PLAN:** [../202606/vcs_xprompt_ctrlp_stale_context.md](../vcs_xprompt_ctrlp_stale_context.md)
+
  The prompt input widget supports the `<ctrl+n/p>` keymaps to pre-fill the prompt input bar with the next/previous VCS xprompt workflow invocation that was made (by looking at what VCS xprompt workflow were invoked in previous prompts). This works, but has some problems. Namely:
 
 - When I use `<ctrl+p>` to select the previous VCS xprompt workflow, type out my prompt, and then press `<enter>` (to launch the agent), the TUI receives a toast informing the user that an agent was launched but in the wrong workspace (the toast shows the project that corresponded with the VCS xprompt workflow that was shown in the initial prompt---e.g. `sase` if the user used the `<ctrl+space>` keymap, `#gh:sase ` was shown in the prompt input, and they pressed `<ctrl+p>` to pre-fill the previously used VCS xprompt workflow).

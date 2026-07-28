@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 15:34:55
 status: done
-prompt: 202605/prompts/agents_asking_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_asking_count.md](prompts/agents_asking_count.md)
+
 # Add Agents Tab Asking Count
 
 ## Goal

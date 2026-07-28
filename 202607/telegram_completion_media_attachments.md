@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 15:49:51
 status: done
-prompt: 202607/prompts/telegram_completion_media_attachments.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_completion_media_attachments.md](prompts/telegram_completion_media_attachments.md)
+
 # Plan: Telegram Completion Media Attachments
 
 ## Goal

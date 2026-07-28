@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 00:24:56
 status: wip
-prompt: 202605/prompts/feedback_timestamp_dedup.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/feedback_timestamp_dedup.md](prompts/feedback_timestamp_dedup.md)
+
 # Plan: Deduplicate Plan Feedback Timestamps in ACE
 
 ## Context

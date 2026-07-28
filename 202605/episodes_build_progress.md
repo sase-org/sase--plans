@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-26 21:51:15
 status: done
-prompt: 202605/prompts/episodes_build_progress.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/episodes_build_progress.md](prompts/episodes_build_progress.md)
+
 # Plan: Rich progress output for `sase memory episodes build`
 
 ## Problem

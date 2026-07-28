@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 09:36:10
 status: done
-prompt: 202607/prompts/fix_agent_deltas_commit_provenance.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_agent_deltas_commit_provenance.md](prompts/fix_agent_deltas_commit_provenance.md)
+
 # Fix Agents-Tab Deltas Commit Provenance
 
 ## Problem and root cause

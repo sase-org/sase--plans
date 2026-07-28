@@ -37,6 +37,8 @@ status: done
 bead_id: sase-73
 ---
 
+- **PROMPT:** [202607/prompts/smart_summary_folding.md](prompts/smart_summary_folding.md)
+
 # Plan: Smart folding for agent clan/family/tribe summaries
 
 ## Context

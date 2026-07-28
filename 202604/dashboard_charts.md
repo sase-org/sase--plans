@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 02:06:26
 status: done
-prompt: 202604/prompts/dashboard_charts.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dashboard_charts.md](prompts/dashboard_charts.md)
 
 # Plan: Improve `sase telemetry dashboard` with Historical Charts
 

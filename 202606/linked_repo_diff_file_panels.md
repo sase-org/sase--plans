@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 15:17:23
 status: done
-prompt: 202606/prompts/linked_repo_diff_file_panels.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/linked_repo_diff_file_panels.md](prompts/linked_repo_diff_file_panels.md)
+
 # Plan: Per-linked-repo diff pages in the Agents-tab file panel
 
 ## Product context

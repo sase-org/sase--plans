@@ -7,8 +7,9 @@ goal: 'Active toobig-@ clan generations remain members of the @chop tribe even w
   '
 create_time: 2026-07-19 21:32:43
 status: done
-prompt: 202607/prompts/preserve_chop_clan_tribe.md
 ---
+
+- **PROMPT:** [202607/prompts/preserve_chop_clan_tribe.md](prompts/preserve_chop_clan_tribe.md)
 
 # Plan: Preserve chop clan tribes across bounded agent views
 

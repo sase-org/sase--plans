@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 10:49:44
 status: done
-prompt: 202607/prompts/codeblock_card_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/codeblock_card_highlight.md](prompts/codeblock_card_highlight.md)
+
 # Beautiful Code-Block Rendering in the Prompt Input Widget
 
 ## Problem

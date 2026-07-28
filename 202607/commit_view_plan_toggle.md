@@ -8,8 +8,9 @@ goal: 'Every commit opened in the shared Commit panel can temporarily display it
   '
 create_time: 2026-07-21 11:10:57
 status: done
-prompt: '[202607/prompts/commit_view_plan_toggle.md](prompts/commit_view_plan_toggle.md)'
 ---
+
+- **PROMPT:** [202607/prompts/commit_view_plan_toggle.md](prompts/commit_view_plan_toggle.md)
 
 # Plan: View associated plans from the commit panel
 

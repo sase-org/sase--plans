@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 13:57:27
 status: wip
-prompt: 202606/prompts/fix_vcs_project_lsp_enter.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_vcs_project_lsp_enter.md](prompts/fix_vcs_project_lsp_enter.md)
+
 # Plan: Fix `+` Project Completion Blank Line On Enter
 
 ## Current Diagnosis

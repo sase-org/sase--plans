@@ -89,6 +89,8 @@ status: done
 bead_id: sase-69
 ---
 
+- **PROMPT:** [202607/prompts/artifacts_tab.md](prompts/artifacts_tab.md)
+
 # Plan: Artifacts tab with PRs, Commits, Bugs, and Plans sub-tabs
 
 ## Product context

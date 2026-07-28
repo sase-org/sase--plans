@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 22:22:51
 status: done
-prompt: 202605/prompts/ci_workflow_failure_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ci_workflow_failure_fix.md](prompts/ci_workflow_failure_fix.md)
+
 # CI Workflow Failure Fix Plan
 
 ## Context

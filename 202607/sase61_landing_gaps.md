@@ -21,8 +21,9 @@ phases:
   - skill-deploy
 create_time: 2026-07-14 14:53:11
 status: done
-prompt: 202607/prompts/sase61_landing_gaps.md
 ---
+
+- **PROMPT:** [202607/prompts/sase61_landing_gaps.md](prompts/sase61_landing_gaps.md)
 
 # Plan: Finish landing sase-61 (core release pin, wheel probe, skill deployment)
 

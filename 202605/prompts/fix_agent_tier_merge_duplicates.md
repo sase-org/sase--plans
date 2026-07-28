@@ -1,6 +1,5 @@
----
-plan: 202605/fix_agent_tier_merge_duplicates.md
----
+- **PLAN:** [../202605/fix_agent_tier_merge_duplicates.md](../fix_agent_tier_merge_duplicates.md)
+
  The TUI is still messed up. I'm still seeing agent entries appear and disappear. For example, see the below `sase ace` snapshot. Why does the "t6.cld" agent have two root agent row entries showing? Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
   
 

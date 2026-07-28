@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 14:13:29
 status: done
-prompt: 202605/prompts/telegram_multi_model_workspace_claim.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_multi_model_workspace_claim.md](prompts/telegram_multi_model_workspace_claim.md)
+
 # Plan: Fix Telegram multi-model workspace-claim failures by delegating to the canonical fan-out path
 
 ## Problem

@@ -1,10 +1,11 @@
 ---
 status: done
 bead_id: sase-w0d2
-prompt: 202603/prompts/epic_approval.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/epic_approval.md](prompts/epic_approval.md)
 
 # Epic Plan Approval Support
 

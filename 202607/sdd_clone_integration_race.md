@@ -101,6 +101,8 @@ status: done
 bead_id: sase-9r
 ---
 
+- **PROMPT:** [202607/prompts/sdd_clone_integration_race.md](prompts/sdd_clone_integration_race.md)
+
 # Plan: Serialize bead-store writes with SDD sidecar integration
 
 ## Problem

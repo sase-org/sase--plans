@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-21 18:36:14
 status: wip
-prompt: 202604/prompts/fast_dismiss.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fast_dismiss.md](prompts/fast_dismiss.md)
 
 # Plan: Make `sase ace` Agent Dismissal WAY Faster
 

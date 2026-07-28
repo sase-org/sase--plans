@@ -1,6 +1,5 @@
----
-plan: 202607/artifacts_tab.md
----
+- **PLAN:** [../202607/artifacts_tab.md](../artifacts_tab.md)
+
  I want to rename the "PRs" tab to "Artifacts" and make "PRs" a sub-tab (one of four) on that tab.
 
 - The "PRs" sub-tab should function in the same way that it does today.

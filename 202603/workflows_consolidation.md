@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-21 00:48:36
 status: wip
-prompt: 202603/prompts/workflows_consolidation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/workflows_consolidation.md](prompts/workflows_consolidation.md)
 
 # Plan: sase-6.3 — Consolidate workflows under workflows/
 

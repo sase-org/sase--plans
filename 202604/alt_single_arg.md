@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 20:17:41
 status: done
-prompt: 202604/prompts/alt_single_arg.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/alt_single_arg.md](prompts/alt_single_arg.md)
 
 # Plan: `%alt` single-arg as implicit split with empty variant
 

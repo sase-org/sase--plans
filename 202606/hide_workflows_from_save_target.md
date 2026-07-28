@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 09:40:47
 status: done
-prompt: 202606/prompts/hide_workflows_from_save_target.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/hide_workflows_from_save_target.md](prompts/hide_workflows_from_save_target.md)
+
 # Plan: Hide YAML workflows from the "Save draft as xprompt" target list
 
 ## 1. Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 17:22:53
 status: done
-prompt: 202605/prompts/hitl_agent_count_text.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/hitl_agent_count_text.md](prompts/hitl_agent_count_text.md)
+
 # Plan: Rename Asking Agent Count Text To HITL
 
 ## Goal

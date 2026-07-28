@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 02:39:14
 status: done
-prompt: 202607/prompts/sdd_repo_rename.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sdd_repo_rename.md](prompts/sdd_repo_rename.md)
+
 # Rename SDD Companion Repo to `sase--sdd`
 
 ## Goal

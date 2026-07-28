@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 17:37:19
 status: done
-prompt: 202606/prompts/frontmatter_panel_add_property_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/frontmatter_panel_add_property_fix.md](prompts/frontmatter_panel_add_property_fix.md)
+
 # Fix: adding an xprompt property disappears a prompt pane and traps focus
 
 ## Problem

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-23 22:25:50
 status: done
-prompt: 202603/prompts/vcs_aware_tag_disambiguation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/vcs_aware_tag_disambiguation.md](prompts/vcs_aware_tag_disambiguation.md)
 
 # Plan: VCS-Aware Tag Disambiguation for `diff_file`
 

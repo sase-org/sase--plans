@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 14:06:54
 status: wip
-prompt: 202607/prompts/fix_models_panel_visual_goldens.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_models_panel_visual_goldens.md](prompts/fix_models_panel_visual_goldens.md)
+
 # Fix the 3 Models-Panel PNG Snapshot Failures in CI (Corrupted macOS-Rendered Goldens)
 
 ## Problem

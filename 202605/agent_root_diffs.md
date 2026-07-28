@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 09:18:48
 status: done
-prompt: 202605/prompts/agent_root_diffs.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_root_diffs.md](prompts/agent_root_diffs.md)
+
 # Plan: Root Plan-Agent Rows Should Show Active Coder Diffs
 
 ## Problem

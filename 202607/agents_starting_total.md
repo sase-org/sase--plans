@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-02 05:53:43
 status: done
-prompt: 202607/prompts/agents_starting_total.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agents_starting_total.md](prompts/agents_starting_total.md)
+
 # Plan: Include STARTING Agents in the Agents Tab Total
 
 ## Problem

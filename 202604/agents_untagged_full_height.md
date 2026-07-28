@@ -4,9 +4,10 @@ description: Fix Agents-tab untagged panel not filling available height when no 
   panels exist
 create_time: 2026-04-26 03:08:50
 status: done
-prompt: 202604/prompts/agents_untagged_full_height.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_untagged_full_height.md](prompts/agents_untagged_full_height.md)
 
 # Fix: Agents-tab untagged panel must fill available height
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:48:30
 status: done
-prompt: 202606/prompts/pylimit_split_chop_workspace_claim_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/pylimit_split_chop_workspace_claim_1.md](prompts/pylimit_split_chop_workspace_claim_1.md)
+
 # Plan: Fix `sase_pylimit_split` Workspace Claim Races
 
 ## Problem

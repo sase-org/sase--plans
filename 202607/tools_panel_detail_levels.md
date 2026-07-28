@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 16:11:52
 status: done
-prompt: 202607/prompts/tools_panel_detail_levels.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tools_panel_detail_levels.md](prompts/tools_panel_detail_levels.md)
+
 # Plan: Collapse/Expand Tools-Panel Detail Levels with `h`/`l`
 
 ## Product Context

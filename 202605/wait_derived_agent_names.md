@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 17:38:37
 status: done
-prompt: 202605/prompts/wait_derived_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/wait_derived_agent_names.md](prompts/wait_derived_agent_names.md)
+
 # Wait-Derived Agent Names Plan
 
 ## Goal

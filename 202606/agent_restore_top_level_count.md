@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 10:59:42
 status: done
-prompt: 202606/prompts/agent_restore_top_level_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_restore_top_level_count.md](prompts/agent_restore_top_level_count.md)
+
 # Plan: Show top-level agent count in the Agent Restore panel's left pane
 
 ## Problem

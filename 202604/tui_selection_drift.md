@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 15:45:15
 status: done
-prompt: 202604/prompts/tui_selection_drift.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/tui_selection_drift.md](prompts/tui_selection_drift.md)
+
 # Plan: Fix Random Selection Drift Across All TUI Tabs
 
 ## 1. Problem Statement

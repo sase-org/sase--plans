@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 12:33:38
 status: done
-prompt: 202605/prompts/jump_to_stopped_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/jump_to_stopped_agents.md](prompts/jump_to_stopped_agents.md)
+
 # Add `,J` Jump To Most Recently Stopped Agent
 
 ## Goal

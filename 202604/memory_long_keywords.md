@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 23:04:20
 status: done
-prompt: 202604/prompts/memory_long_keywords.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/memory_long_keywords.md](prompts/memory_long_keywords.md)
 
 # Plan: Auto-discover memory/long/ files with `keywords` frontmatter
 

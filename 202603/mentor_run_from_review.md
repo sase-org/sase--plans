@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-22 19:22:16
 status: done
-prompt: 202603/prompts/mentor_run_from_review.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/mentor_run_from_review.md](prompts/mentor_run_from_review.md)
 
 # Plan: Run Mentor Profile from Mentor Review Panel
 

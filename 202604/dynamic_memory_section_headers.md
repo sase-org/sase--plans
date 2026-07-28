@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 22:21:15
 status: done
-prompt: 202604/prompts/dynamic_memory_section_headers.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_section_headers.md](prompts/dynamic_memory_section_headers.md)
 
 # Plan: Add Section Headers to Dynamic Memory Temp Files
 

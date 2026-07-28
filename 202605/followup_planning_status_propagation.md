@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 10:11:59
 status: done
-prompt: 202605/prompts/followup_planning_status_propagation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/followup_planning_status_propagation.md](prompts/followup_planning_status_propagation.md)
+
 # Followup Plan -> Parent Workflow PLANNING Status Propagation
 
 ## Symptom

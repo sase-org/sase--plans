@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-05 11:28:34
 status: done
-prompt: 202604/prompts/jump_back_backtick.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/jump_back_backtick.md](prompts/jump_back_backtick.md)
 
 # Plan: Backtick "Jump Back" Hint in Jump to All Entries Modal
 

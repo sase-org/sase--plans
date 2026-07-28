@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 13:16:26
 status: done
-prompt: 202605/prompts/skills_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/skills_command.md](prompts/skills_command.md)
+
 # Add `sase skills`
 
 ## Goal

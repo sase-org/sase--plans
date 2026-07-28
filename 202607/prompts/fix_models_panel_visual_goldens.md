@@ -1,6 +1,5 @@
----
-plan: 202607/fix_models_panel_visual_goldens.md
----
+- **PLAN:** [../202607/fix_models_panel_visual_goldens.md](../fix_models_panel_visual_goldens.md)
+
  #fork:s.w1 Can you help me fix the pre-existing screenshot test failures that the previous agent ran into? Here is what I am seeing in GitHub Actions:
 ```
 =========================== short test summary info ============================

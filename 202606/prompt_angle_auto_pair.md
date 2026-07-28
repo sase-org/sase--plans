@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 09:32:16
 status: done
-prompt: 202606/prompts/prompt_angle_auto_pair.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_angle_auto_pair.md](prompts/prompt_angle_auto_pair.md)
+
 # Plan: Add Prompt Auto-Pair Support for Angle Brackets
 
 ## Context

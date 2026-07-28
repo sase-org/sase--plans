@@ -1,6 +1,5 @@
----
-plan: 202607/vcs_log_phantom_projects.md
----
+- **PLAN:** [../202607/vcs_log_phantom_projects.md](../vcs_log_phantom_projects.md)
+
  #fork:4f There are some projects that we seem to think exist, but don't. This could just be a bug with the `sase vcs log` command but I suspect it may be a larger architectural issue where we are including projects in the list of known sase projects from some source that we shouldn't be (I'm not sure about this though). Can you dig deep into this, diagnose the root cause, whatever it is, and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

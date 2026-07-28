@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 06:49:58
 status: done
-prompt: 202606/prompts/fix_commits_panel_snapshot.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_commits_panel_snapshot.md](prompts/fix_commits_panel_snapshot.md)
+
 # Fix the failing `test_agents_commit_messages_panel_png_snapshot` visual test
 
 ## Summary

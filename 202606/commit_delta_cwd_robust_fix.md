@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 13:24:48
 status: done
-prompt: 202606/prompts/commit_delta_cwd_robust_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/commit_delta_cwd_robust_fix.md](prompts/commit_delta_cwd_robust_fix.md)
+
 # Make the commit-delta visual test robustly CWD-independent and harden the suite against CWD leaks
 
 ## TL;DR

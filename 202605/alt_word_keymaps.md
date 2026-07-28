@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:40:21
 status: done
-prompt: 202605/prompts/alt_word_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/alt_word_keymaps.md](prompts/alt_word_keymaps.md)
+
 # Add Alt-B / Alt-F Readline Word Navigation
 
 ## Context

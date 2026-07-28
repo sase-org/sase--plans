@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 20:42:15
 status: wip
-prompt: 202605/prompts/review_telegram_blog_post.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/review_telegram_blog_post.md](prompts/review_telegram_blog_post.md)
+
 # Plan: Review and polish the Telegram mobile blog insertion
 
 ## Context

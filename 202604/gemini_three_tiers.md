@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 22:05:13
 status: wip
-prompt: 202604/prompts/gemini_three_tiers.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gemini_three_tiers.md](prompts/gemini_three_tiers.md)
 
 # Plan: Refactor ~/.gemini/GEMINI.md into a 3-tier Architecture
 

@@ -1,10 +1,11 @@
 ---
 bead_id: sase-1
 status: done
-prompt: 202603/prompts/prompt_widget_improvements.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/prompt_widget_improvements.md](prompts/prompt_widget_improvements.md)
 
 # Plan: Prompt Widget Improvements (TextArea)
 

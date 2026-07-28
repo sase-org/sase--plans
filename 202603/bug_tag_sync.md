@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 17:13:56
 status: done
-prompt: 202603/prompts/bug_tag_sync.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/bug_tag_sync.md](prompts/bug_tag_sync.md)
 
 # Plan: Sync BUG tag to ChangeSpec BUG field
 

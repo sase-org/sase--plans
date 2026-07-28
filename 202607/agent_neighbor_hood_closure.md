@@ -9,8 +9,9 @@ goal: 'The ~ keymap on the Agents tab surfaces every related agent — prefix re
   '
 create_time: 2026-07-18 20:40:47
 status: done
-prompt: 202607/prompts/agent_neighbor_hood_closure.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_neighbor_hood_closure.md](prompts/agent_neighbor_hood_closure.md)
 
 # Plan: Agents-tab neighbor closure with kinship-grouped chooser
 

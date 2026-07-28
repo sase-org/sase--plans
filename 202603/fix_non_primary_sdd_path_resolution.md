@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 17:23:51
 status: done
-prompt: 202603/prompts/fix_non_primary_sdd_path_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_non_primary_sdd_path_resolution.md](prompts/fix_non_primary_sdd_path_resolution.md)
 
 # Fix non-primary SDD writes for workspace-suffixed parent dirs
 

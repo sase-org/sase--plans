@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 10:45:25
 status: done
-prompt: 202606/prompts/split_operations_back.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/split_operations_back.md](prompts/split_operations_back.md)
+
 # Plan: Split Admin Center Operations Back Into Tasks and Logs Tabs
 
 ## Goal

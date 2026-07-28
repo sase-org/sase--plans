@@ -8,8 +8,9 @@ create_time: 2026-07-21 10:43:02
 status: done
 bead: sase-8h.2
 parent: sase/repos/plans/202607/commits_filter_correctness.md
-prompt: '[202607/prompts/truncation_aware_vcs_collection.md](prompts/truncation_aware_vcs_collection.md)'
 ---
+
+- **PROMPT:** [202607/prompts/truncation_aware_vcs_collection.md](prompts/truncation_aware_vcs_collection.md)
 
 # Plan: Truncation-aware VCS collection and consistent git date windows
 

@@ -70,6 +70,8 @@ status: done
 bead_id: sase-8w
 ---
 
+- **PROMPT:** [202607/prompts/phase_sizes.md](prompts/phase_sizes.md)
+
 # Plan: Add `xsmall` and `xlarge` epic phase sizes
 
 ## Overview

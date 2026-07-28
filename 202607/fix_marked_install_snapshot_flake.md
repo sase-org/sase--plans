@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 11:13:06
 status: done
-prompt: 202607/prompts/fix_marked_install_snapshot_flake.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_marked_install_snapshot_flake.md](prompts/fix_marked_install_snapshot_flake.md)
+
 # Fix flaky visual snapshot: `test_config_center_plugins_marked_install_png_snapshot`
 
 ## Problem

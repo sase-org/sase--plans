@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 11:52:40
 status: done
-prompt: 202605/prompts/axe_chop_when_full_time.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/axe_chop_when_full_time.md](prompts/axe_chop_when_full_time.md)
+
 # Plan: Show Full Time In AXE Chop Header
 
 ## Goal

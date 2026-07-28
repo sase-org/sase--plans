@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:18:48
 status: done
-prompt: 202606/prompts/xprompt_metadata_capture.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_metadata_capture.md](prompts/xprompt_metadata_capture.md)
+
 # Plan: Complete Xprompt Metadata Capture
 
 ## Problem

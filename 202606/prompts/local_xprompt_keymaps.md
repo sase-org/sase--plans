@@ -1,6 +1,5 @@
----
-plan: 202606/local_xprompt_keymaps.md
----
+- **PLAN:** [../202606/local_xprompt_keymaps.md](../local_xprompt_keymaps.md)
+
  Can you help me add new `gX` (normal mode) and `<ctrl+g>X` (insert mode) keymaps to the prompt input widget?
 
 - These keymaps should save the prompt in the current prompt input widget as a local xprompt (i.e. will migrate this prompt to the `xprompts` property in the TUI's xprompt property panel--shown above the top prompt input widget).

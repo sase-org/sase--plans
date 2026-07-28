@@ -2,9 +2,10 @@
 title: Tmux Artifact PDF Width Fix
 create_time: 2026-05-08 19:41:54
 status: done
-prompt: 202605/prompts/tmux_pdf_width.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tmux_pdf_width.md](prompts/tmux_pdf_width.md)
 
 # Plan: Make Markdown Artifact PDFs Fit The Tmux Pane
 

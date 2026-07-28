@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 12:27:01
 status: done
-prompt: 202606/prompts/axe_restart_stuck_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/axe_restart_stuck_indicator.md](prompts/axe_restart_stuck_indicator.md)
+
 # Fix: `sase ace --restart-axe` leaves the axe status indicator stuck at "RESTARTING"
 
 ## Problem / product context

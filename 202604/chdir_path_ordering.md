@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-10 20:58:52
 status: done
-prompt: 202604/prompts/chdir_path_ordering.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/chdir_path_ordering.md](prompts/chdir_path_ordering.md)
 
 # Fix `_chdir` / path resolution ordering bug
 

@@ -1,6 +1,5 @@
----
-plan: 202607/phase_bead_context_lane.md
----
+- **PLAN:** [../202607/phase_bead_context_lane.md](../phase_bead_context_lane.md)
+
  We currently show a phase agent's phase bead using the `Bead:` field
 which is rendered at the top of the agent metadata panel on the "Agents" tab of
 the `sase ace` TUI. Can you help me start rendering this information in a new

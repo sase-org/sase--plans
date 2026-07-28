@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 18:07:41
 status: done
-prompt: 202604/prompts/agents_new_entries_top.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_new_entries_top.md](prompts/agents_new_entries_top.md)
+
 # Plan: Keep New Agents at the Top After Manual Reordering
 
 ## Problem

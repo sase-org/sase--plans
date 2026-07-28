@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 09:48:15
 status: done
-prompt: 202606/prompts/xprompt_filter_digit_reservation.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_filter_digit_reservation.md](prompts/xprompt_filter_digit_reservation.md)
+
 # Plan: Reserve Numeric Tab Keys in the XPrompts Filter
 
 ## Context

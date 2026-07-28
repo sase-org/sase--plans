@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 08:09:02
 status: done
-prompt: 202606/prompts/question_continuation_planner_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/question_continuation_planner_status.md](prompts/question_continuation_planner_status.md)
+
 # Plan: Fix status + runtime for a `%approve` question-continuation planner family
 
 ## Problem

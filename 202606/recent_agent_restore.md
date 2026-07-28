@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-06 08:56:33
 status: done
-prompt: 202606/prompts/recent_agent_restore.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/recent_agent_restore.md](prompts/recent_agent_restore.md)
+
 # Plan: Recent Agent Dismissals in Agent Restore
 
 ## Goal

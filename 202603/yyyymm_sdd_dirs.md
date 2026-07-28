@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 17:29:01
 status: done
-prompt: 202603/prompts/yyyymm_sdd_dirs.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/yyyymm_sdd_dirs.md](prompts/yyyymm_sdd_dirs.md)
 
 # Plan: Organize Plans and Specs into YYYYMM Subdirectories
 

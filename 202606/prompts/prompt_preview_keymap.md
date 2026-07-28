@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_preview_keymap.md
----
+- **PLAN:** [../202606/prompt_preview_keymap.md](../prompt_preview_keymap.md)
+
  Can you help me add support for a new `K` (preview) normal-mode keymap to the prompt input widget?
 
 - This keymap should only do something when an xprompt, xprompt skill, or file path is selected. It should show a useful error in a toast otherwise. We should also provide a distinct error message if the xprompt/skill/vile path does not exist.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:04:33
 status: done
-prompt: 202607/prompts/slow_tool_calls_propose_stuck_running.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/slow_tool_calls_propose_stuck_running.md](prompts/slow_tool_calls_propose_stuck_running.md)
+
 # Fix eternally-"running" `sase plan propose` entry in ACE SLOW TOOL CALLS
 
 ## Problem

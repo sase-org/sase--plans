@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-01 08:00:19
 status: done
-prompt: 202607/prompts/models_panel_state_column_alignment.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/models_panel_state_column_alignment.md](prompts/models_panel_state_column_alignment.md)
+
 # Plan: Align the Models panel state column
 
 ## Goal

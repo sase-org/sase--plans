@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-19 09:06:01
 status: done
-prompt: 202605/prompts/agent_family_workflow_step_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_family_workflow_step_status.md](prompts/agent_family_workflow_step_status.md)
+
 # Plan: Agent Family Workflow Step Status Fix
 
 ## Goal

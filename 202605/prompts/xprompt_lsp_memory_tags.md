@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_lsp_memory_tags.md
----
+- **PLAN:** [../202605/xprompt_lsp_memory_tags.md](../xprompt_lsp_memory_tags.md)
+
  I'm receiving the following LSP warning in nvim when opening the memory/long/generated_skills.md file:
 
 ```

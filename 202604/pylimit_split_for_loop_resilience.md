@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 18:36:56
 status: done
-prompt: 202604/prompts/pylimit_split_for_loop_resilience.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pylimit_split_for_loop_resilience.md](prompts/pylimit_split_for_loop_resilience.md)
+
 # Fix `sase_pylimit_split` chop spawning fewer agents than expected per run
 
 ## Problem

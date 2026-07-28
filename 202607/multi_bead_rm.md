@@ -27,6 +27,8 @@ status: done
 bead_id: sase-8x
 ---
 
+- **PROMPT:** [202607/prompts/multi_bead_rm.md](prompts/multi_bead_rm.md)
+
 # Plan: Remove multiple beads atomically
 
 ## Context and intended behavior

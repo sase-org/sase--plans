@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 01:04:55
 status: wip
-prompt: 202605/prompts/remove_ace_tab_counts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_ace_tab_counts.md](prompts/remove_ace_tab_counts.md)
+
 # Remove ACE TUI Tab Title Counts
 
 ## Goal

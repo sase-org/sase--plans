@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 20:52:12
 status: done
-prompt: 202606/prompts/prompt_stack_visual_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_visual_polish.md](prompts/prompt_stack_visual_polish.md)
+
 # Plan: Make the Stacked Prompt Input Widgets Beautiful
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 13:39:53
 status: done
-prompt: 202606/prompts/project_select_filter_popup.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_select_filter_popup.md](prompts/project_select_filter_popup.md)
+
 # Plan: Beautiful filterable pop-up for the `@` project picker
 
 ## Context & motivating discovery

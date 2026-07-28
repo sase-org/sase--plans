@@ -1,6 +1,5 @@
----
-plan: 202606/agent_descendants_neighborhood.md
----
+- **PLAN:** [../202606/agent_descendants_neighborhood.md](../agent_descendants_neighborhood.md)
+
  #fork:09b Can you now help me improve the `~` (siblings) keymap?
 
 - We should start showing agents that are decendents of the current agent's hood in a separate section / group, which should be listed at the top.

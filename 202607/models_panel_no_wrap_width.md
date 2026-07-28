@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:59:59
 status: done
-prompt: 202607/prompts/models_panel_no_wrap_width.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/models_panel_no_wrap_width.md](prompts/models_panel_no_wrap_width.md)
+
 # Plan: Widen the Models Panel for Single-Line Content
 
 ## Goal

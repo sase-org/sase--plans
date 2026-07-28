@@ -1,6 +1,5 @@
----
-plan: 202607/telemetry_inhouse_graphs.md
----
+- **PLAN:** [../202607/telemetry_inhouse_graphs.md](../telemetry_inhouse_graphs.md)
+
  This project is supposed to have great telemetry with good support for Grafana, for example, but it has never worked right. Can you help me migrate the telemetry graphs, in particular around sase agents, to an in-house solution?
 
 - We can use a low-level framework but should remove all Grafana support and references.

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-07-13 07:17:52
 status: done
-prompt: 202607/prompts/rename_pylimit_split_to_toobig.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/rename_pylimit_split_to_toobig.md](prompts/rename_pylimit_split_to_toobig.md)
 
 # Plan: Rename the pylimit split workflow and chop to toobig
 

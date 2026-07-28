@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-09 16:00:03
 status: draft
-prompt: 202604/prompts/commit_type_aliases.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/commit_type_aliases.md](prompts/commit_type_aliases.md)
 
 # Plan: Short Aliases for `sase commit --type` Values
 

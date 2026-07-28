@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-27 22:43:00
 status: ready
-prompt: 202604/prompts/live_diff_cache_invalidation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/live_diff_cache_invalidation.md](prompts/live_diff_cache_invalidation.md)
 
 # Plan: Fix Live-Diff Regression in `sase ace` Agents-Tab File Panel
 

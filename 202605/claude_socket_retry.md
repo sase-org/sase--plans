@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-20 15:19:31
 status: done
-prompt: 202605/prompts/claude_socket_retry.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/claude_socket_retry.md](prompts/claude_socket_retry.md)
+
 # Plan: Retry Claude Socket Closure Failures
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202604/fix_agent_cleanup_rs_validation.md
----
+- **PLAN:** [../202604/fix_agent_cleanup_rs_validation.md](../fix_agent_cleanup_rs_validation.md)
+
  Can you help me fix the below test failure (output from the `just test` command)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

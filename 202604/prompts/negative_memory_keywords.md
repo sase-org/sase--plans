@@ -1,6 +1,5 @@
----
-plan: 202604/negative_memory_keywords.md
----
+- **PLAN:** [../202604/negative_memory_keywords.md](../negative_memory_keywords.md)
+
  Can you help me add support for negative matches to memory xprompts and long-term memory files (by extension)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

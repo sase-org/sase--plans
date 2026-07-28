@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 08:47:46
 status: done
-prompt: 202605/prompts/fix_running_agents_tests.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_running_agents_tests.md](prompts/fix_running_agents_tests.md)
+
 # Fix `just test` Running Agent Snapshot Failures
 
 ## Context

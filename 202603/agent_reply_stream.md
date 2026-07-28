@@ -1,10 +1,11 @@
 ---
 status: done
 bead_id: sase-0oou
-prompt: 202603/prompts/agent_reply_stream.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/agent_reply_stream.md](prompts/agent_reply_stream.md)
 
 # Plan: Live AGENT REPLY Section in Agents Tab
 

@@ -1,6 +1,5 @@
----
-plan: 202606/revive_bundle_reprojection.md
----
+- **PLAN:** [../202606/revive_bundle_reprojection.md](../revive_bundle_reprojection.md)
+
  When I revive agents using the `R` keymap, the agent index / database should be updated accordingly. I'm
 concerned that this is not working right since I keep needing to do a full agent refresh to get the sase agents that
 have names which start with "43.f1.f1.f1.cld.f1.f1." to show up on the agents tab (both of those agents were dismissed

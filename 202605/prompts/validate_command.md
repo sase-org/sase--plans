@@ -1,6 +1,5 @@
----
-plan: 202605/validate_command.md
----
+- **PLAN:** [../202605/validate_command.md](../validate_command.md)
+
   Can you help me add a new `sase validate` command that runs the `sase init --check` and
 `sase sdd validate` commands and reports any errors with either of them?
 

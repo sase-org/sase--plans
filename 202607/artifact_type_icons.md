@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 12:45:13
 status: done
-prompt: 202607/prompts/artifact_type_icons.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/artifact_type_icons.md](prompts/artifact_type_icons.md)
+
 # Plan: Artifact‑type icons in the Agents‑tab "Artifacts:" panel
 
 ## Goal

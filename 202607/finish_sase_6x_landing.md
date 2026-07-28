@@ -8,8 +8,9 @@ goal: 'The committed tribe wait/fork documentation is deployed to every managed 
   '
 create_time: 2026-07-18 19:47:34
 status: done
-prompt: 202607/prompts/finish_sase_6x_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/finish_sase_6x_landing.md](prompts/finish_sase_6x_landing.md)
 
 # Plan: Finish generated skill deployment and land sase-6x
 

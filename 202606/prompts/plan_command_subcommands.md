@@ -1,6 +1,5 @@
----
-plan: 202606/plan_command_subcommands.md
----
+- **PLAN:** [../202606/plan_command_subcommands.md](../plan_command_subcommands.md)
+
  Can you help me improve the `sase plan` command?
 
 - I want this command to start using subcommands.

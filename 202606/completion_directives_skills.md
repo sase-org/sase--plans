@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 00:00:28
 status: done
-prompt: 202606/prompts/completion_directives_skills.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/completion_directives_skills.md](prompts/completion_directives_skills.md)
+
 # Auto Completion for Directives and XPrompt Skills
 
 ## Goal

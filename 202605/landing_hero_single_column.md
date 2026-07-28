@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 10:42:38
 status: done
-prompt: 202605/prompts/landing_hero_single_column.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/landing_hero_single_column.md](prompts/landing_hero_single_column.md)
+
 # Landing Hero Single Column Plan
 
 ## Goal

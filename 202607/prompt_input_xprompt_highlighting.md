@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 16:24:34
 status: done
-prompt: 202607/prompts/prompt_input_xprompt_highlighting.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prompt_input_xprompt_highlighting.md](prompts/prompt_input_xprompt_highlighting.md)
+
 # Plan: Live xprompt Syntax Highlighting in the Prompt Input Widget
 
 ## Problem & Motivation

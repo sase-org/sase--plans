@@ -1,6 +1,5 @@
----
-plan: 202607/clan_family_row_identity_unification.md
----
+- **PLAN:** [../202607/clan_family_row_identity_unification.md](../clan_family_row_identity_unification.md)
+
  #fork:d7.w1.f1 Can you now help me improve these icons a bit and unify
 the way agent clan names look when compared to agent / agent family names?
 

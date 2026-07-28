@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 13:27:02
 status: done
-prompt: 202607/prompts/hide_commit_message_delta.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/hide_commit_message_delta.md](prompts/hide_commit_message_delta.md)
+
 # Hide `commit_message.md` from Agent Deltas
 
 ## Problem

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 17:26:23
 status: done
-prompt: 202603/prompts/complete_mentor.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/complete_mentor.md](prompts/complete_mentor.md)
 
 # Plan: Replace 'testing' mentor profile with 'complete' mentor profile
 

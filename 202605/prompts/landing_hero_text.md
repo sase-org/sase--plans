@@ -1,6 +1,5 @@
----
-plan: 202605/landing_hero_text.md
----
+- **PLAN:** [../202605/landing_hero_text.md](../landing_hero_text.md)
+
  The user sent an image via Telegram with the following caption:
 
  The new sase.sh landing page text doesn't look good. Can you help me make this look better? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

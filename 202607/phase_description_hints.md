@@ -9,8 +9,9 @@ goal: 'sase plan validate instructs plan-authoring agents to give every epic pha
   '
 create_time: 2026-07-17 10:48:35
 status: done
-prompt: 202607/prompts/phase_description_hints.md
 ---
+
+- **PROMPT:** [202607/prompts/phase_description_hints.md](prompts/phase_description_hints.md)
 
 # Plan: Phase-description authoring hints in `sase plan validate`
 

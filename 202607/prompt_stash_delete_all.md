@@ -5,8 +5,9 @@ goal: Add a modal-scoped D shortcut that stages every stashed prompt for deletio
   while preserving the prompt stash panel's existing confirmation and selection semantics.
 create_time: 2026-07-19 07:12:45
 status: done
-prompt: 202607/prompts/prompt_stash_delete_all.md
 ---
+
+- **PROMPT:** [202607/prompts/prompt_stash_delete_all.md](prompts/prompt_stash_delete_all.md)
 
 # Plan: Prompt stash delete-all keymap
 

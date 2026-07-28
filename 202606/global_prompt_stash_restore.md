@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 09:38:37
 status: done
-prompt: 202606/prompts/global_prompt_stash_restore.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/global_prompt_stash_restore.md](prompts/global_prompt_stash_restore.md)
+
 # Global Prompt Stash Restore Keymap
 
 ## Context

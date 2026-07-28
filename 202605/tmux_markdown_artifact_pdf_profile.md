@@ -2,9 +2,10 @@
 title: Tmux Markdown Artifact PDF Profile
 create_time: 2026-05-08 18:44:13
 status: done
-prompt: 202605/prompts/tmux_markdown_artifact_pdf_profile.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tmux_markdown_artifact_pdf_profile.md](prompts/tmux_markdown_artifact_pdf_profile.md)
 
 # Plan: Tmux-Friendly Markdown Artifact Rendering
 

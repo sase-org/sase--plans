@@ -1,6 +1,5 @@
----
-plan: 202604/agents_tree_dedupe_and_sort.md
----
+- **PLAN:** [../202604/agents_tree_dedupe_and_sort.md](../agents_tree_dedupe_and_sort.md)
+
    Something is wrong with the way nested agent groups are displayed (see the `sase ace` snapshot below). For one, they should never be split like the "(untagged)" group seems to be. Also, we should sort the groups
 deterministically. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

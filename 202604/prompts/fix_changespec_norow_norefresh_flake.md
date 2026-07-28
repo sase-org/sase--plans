@@ -1,6 +1,5 @@
----
-plan: 202604/fix_changespec_norow_norefresh_flake.md
----
+- **PLAN:** [../202604/fix_changespec_norow_norefresh_flake.md](../fix_changespec_norow_norefresh_flake.md)
+
  GitHub Actions is failing with the below error. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

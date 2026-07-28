@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 11:35:47
 status: done
-prompt: 202604/prompts/fix_agent_plan_timestamp_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_agent_plan_timestamp_metadata.md](prompts/fix_agent_plan_timestamp_metadata.md)
+
 # Plan: Preserve PLAN timestamps in Agents metadata
 
 ## Context

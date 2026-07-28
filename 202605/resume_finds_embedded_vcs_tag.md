@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 19:09:41
 status: done
-prompt: 202605/prompts/resume_finds_embedded_vcs_tag.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/resume_finds_embedded_vcs_tag.md](prompts/resume_finds_embedded_vcs_tag.md)
+
 # Plan — Resume xprompt picks up VCS workflow tag embedded anywhere in agent prompt
 
 ## Bug report

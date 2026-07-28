@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 11:45:29
 status: done
-prompt: 202605/prompts/bulk_agent_chat_edit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bulk_agent_chat_edit.md](prompts/bulk_agent_chat_edit.md)
+
 # Bulk Edit Marked Agent Chats
 
 ## Goal

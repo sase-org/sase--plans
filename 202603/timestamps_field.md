@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 13:40:13
 status: done
-prompt: 202603/prompts/timestamps_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/timestamps_field.md](prompts/timestamps_field.md)
 
 # Plan: TIMESTAMPS ChangeSpec Field
 

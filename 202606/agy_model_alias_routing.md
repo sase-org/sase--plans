@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 12:52:00
 status: done
-prompt: 202606/prompts/agy_model_alias_routing.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agy_model_alias_routing.md](prompts/agy_model_alias_routing.md)
+
 # Plan: Restore Antigravity model xprompt routing
 
 ## Problem

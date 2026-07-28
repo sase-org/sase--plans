@@ -53,6 +53,8 @@ status: wip
 bead_id: sase-a0
 ---
 
+- **PROMPT:** [202607/prompts/fix_ci_failures.md](prompts/fix_ci_failures.md)
+
 # Plan: Repair the three failing CI jobs on master
 
 CI on `sase-org/sase` master is red. `actstat` and the job logs show three independent failures, plus one unconfirmed

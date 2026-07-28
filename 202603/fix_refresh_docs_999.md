@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 17:30:03
 status: done
-prompt: 202603/prompts/fix_refresh_docs_999.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_refresh_docs_999.md](prompts/fix_refresh_docs_999.md)
 
 # Fix: refresh_docs workflow showing 999 for commit count
 

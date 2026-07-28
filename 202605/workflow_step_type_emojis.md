@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 17:43:18
 status: done
-prompt: 202605/prompts/workflow_step_type_emojis.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/workflow_step_type_emojis.md](prompts/workflow_step_type_emojis.md)
+
 # Workflow Step Type Emojis in Agent Rows
 
 ## Problem

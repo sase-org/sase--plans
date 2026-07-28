@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 00:10:05
 status: done
-prompt: 202605/prompts/cross_panel_agent_jump.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cross_panel_agent_jump.md](prompts/cross_panel_agent_jump.md)
+
 # Cross-panel agent jump hint fix
 
 ## Problem

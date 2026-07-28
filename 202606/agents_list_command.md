@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:11:06
 status: done
-prompt: 202606/prompts/agents_list_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agents_list_command.md](prompts/agents_list_command.md)
+
 # Plan: Rename `sase agents status` to `sase agents list`
 
 ## Goal

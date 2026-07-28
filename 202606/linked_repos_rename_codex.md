@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-20 13:49:11
 status: done
-prompt: 202606/prompts/linked_repos_rename_codex.md
 bead_id: sase-51
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/linked_repos_rename_codex.md](prompts/linked_repos_rename_codex.md)
+
 # Rename Configured Sibling Repos To `linked_repos`
 
 ## Objective

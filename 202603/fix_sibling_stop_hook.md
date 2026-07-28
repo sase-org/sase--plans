@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 21:17:09
 status: done
-prompt: 202603/prompts/fix_sibling_stop_hook.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_sibling_stop_hook.md](prompts/fix_sibling_stop_hook.md)
 
 # Plan: Fix sase_sibling_commit_stop_hook
 

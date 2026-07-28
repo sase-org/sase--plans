@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-21 10:43:06
 status: done
-prompt: 202606/prompts/xprompt_expand_keymap.md
 bead_id: sase-53
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_expand_keymap.md](prompts/xprompt_expand_keymap.md)
+
 # Plan: Ctrl+I XPrompt Expansion From Select XPrompt
 
 ## Goal

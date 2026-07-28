@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 12:46:34
 status: done
-prompt: 202607/prompts/ctrl_g_ctrl_c_prompt_chord_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/ctrl_g_ctrl_c_prompt_chord_fix.md](prompts/ctrl_g_ctrl_c_prompt_chord_fix.md)
+
 # Fix: `<ctrl+g><ctrl+c>` does nothing in the prompt input widget
 
 ## Problem

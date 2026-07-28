@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 16:08:15
 status: wip
-prompt: 202605/prompts/coder_visible_after_plan_approval.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/coder_visible_after_plan_approval.md](prompts/coder_visible_after_plan_approval.md)
+
 # Plan: Show plan‑chain coder agent without requiring tier‑2 refresh
 
 ## Problem

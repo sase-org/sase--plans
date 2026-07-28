@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 12:52:11
 status: done
-prompt: 202606/prompts/single_inactive_project_state_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/single_inactive_project_state_1.md](prompts/single_inactive_project_state_1.md)
+
 # Plan: Single Inactive Project State
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 21:24:19
 status: done
-prompt: 202604/prompts/agents_tab_per_group_fold.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_per_group_fold.md](prompts/agents_tab_per_group_fold.md)
+
 # Plan: Per-group expand/collapse on the Agents tab
 
 ## Background

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-21 19:09:06
 status: done
-prompt: 202604/prompts/prompt_too_long_checkpoint_restart.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prompt_too_long_checkpoint_restart.md](prompts/prompt_too_long_checkpoint_restart.md)
 
 # Plan: Auto-Recover Coder Agents from "Prompt is too long" via Checkpoint-Restart
 

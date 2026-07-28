@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 11:54:25
 status: done
-prompt: 202605/prompts/time_directive_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/time_directive_1.md](prompts/time_directive_1.md)
+
 # Plan: Add `%t` / `%time` Directive For Time-Based Waits
 
 ## Goal

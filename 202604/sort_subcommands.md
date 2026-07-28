@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 22:39:17
 status: done
-prompt: 202604/prompts/sort_subcommands.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/sort_subcommands.md](prompts/sort_subcommands.md)
 
 # Plan: Sort Subcommands in --help Output
 

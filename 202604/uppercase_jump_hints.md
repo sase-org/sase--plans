@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 13:09:34
 status: done
-prompt: 202604/prompts/uppercase_jump_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/uppercase_jump_hints.md](prompts/uppercase_jump_hints.md)
+
 # Plan: Extend Jump-to-Entry Hint Alphabet with A–Z
 
 ## Problem

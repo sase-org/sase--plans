@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 19:02:59
 status: done
-prompt: 202606/prompts/live_agent_pencil.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/live_agent_pencil.md](prompts/live_agent_pencil.md)
+
 # Plan: Live Agent Pencil Badge
 
 ## Problem

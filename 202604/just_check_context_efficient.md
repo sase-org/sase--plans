@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-17 23:58:05
 status: done
-prompt: 202604/prompts/just_check_context_efficient.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/just_check_context_efficient.md](prompts/just_check_context_efficient.md)
 
 # Context-Efficient `just check` for Agents
 

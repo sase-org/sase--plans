@@ -8,8 +8,9 @@ goal: 'When the user explicitly asks an agent to update a SASE memory file, the 
   '
 create_time: 2026-07-18 19:14:01
 status: done
-prompt: 202607/prompts/memory_init_no_reask.md
 ---
+
+- **PROMPT:** [202607/prompts/memory_init_no_reask.md](prompts/memory_init_no_reask.md)
 
 # Plan: Make explicit memory-update requests mandate `sase memory init` without re-asking
 

@@ -3,8 +3,10 @@ create_time: 2026-05-06 02:52:22
 status: done
 bead_id: sase-25
 tier: epic
-prompt: 202605/prompts/remove_recent_artifact_panel.md
 ---
+
+- **PROMPT:** [202605/prompts/remove_recent_artifact_panel.md](prompts/remove_recent_artifact_panel.md)
+
 # Remove Recent Artifact Panel And Unified Artifact Graph
 
 ## Goal

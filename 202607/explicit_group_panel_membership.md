@@ -5,8 +5,9 @@ goal: Agent names no longer influence Agents-tab panel membership; ordinary laun
   join a tag panel only through an explicit `%group` assignment.
 create_time: 2026-07-17 14:37:29
 status: done
-prompt: 202607/prompts/explicit_group_panel_membership.md
 ---
+
+- **PROMPT:** [202607/prompts/explicit_group_panel_membership.md](prompts/explicit_group_panel_membership.md)
 
 # Plan: Remove Implicit Name-Based Agent Panel Assignment
 

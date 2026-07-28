@@ -1,6 +1,5 @@
----
-plan: 202605/agent_panel_separation.md
----
+- **PLAN:** [../202605/agent_panel_separation.md](../agent_panel_separation.md)
+
  It is not easy to visually identify that the two bottom agent panels (see the `sase ace` snapshot below) are separate. Can you help me do something to make this clearer (ex: add a horizontal
 line in-between these panels)? I want you to lead the design on this one. Just make sure it looks beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

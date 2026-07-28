@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 14:59:06
 status: done
-prompt: 202604/prompts/skip_short_prompts_in_history.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/skip_short_prompts_in_history.md](prompts/skip_short_prompts_in_history.md)
 
 # Skip Short Prompts in Prompt History
 

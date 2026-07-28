@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-22 15:27:52
 status: done
-prompt: 202603/prompts/config_debuggability.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/config_debuggability.md](prompts/config_debuggability.md)
 
 # Plan: Config & Mentor Profile Debuggability
 

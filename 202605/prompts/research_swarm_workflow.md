@@ -1,6 +1,5 @@
----
-plan: 202605/research_swarm_workflow.md
----
+- **PLAN:** [../202605/research_swarm_workflow.md](../research_swarm_workflow.md)
+
  Can you help me create an improved `research_swarm` xprompt workflow?
 
 - Rename the current `research_swarm` xprompt workflow to `old_research_swarm`.

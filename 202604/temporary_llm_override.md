@@ -2,9 +2,11 @@
 create_time: 2026-04-29 17:30:09
 status: done
 bead_id: sase-1c
-prompt: 202604/prompts/temporary_llm_override.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/temporary_llm_override.md](prompts/temporary_llm_override.md)
+
 # Plan: Temporary Default LLM Provider/Model Override
 
 ## Goal

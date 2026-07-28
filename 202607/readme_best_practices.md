@@ -9,8 +9,9 @@ goal: 'The top-level README states the project''s status and platform facts, rou
   '
 create_time: 2026-07-17 10:13:28
 status: done
-prompt: 202607/prompts/readme_best_practices.md
 ---
+
+- **PROMPT:** [202607/prompts/readme_best_practices.md](prompts/readme_best_practices.md)
 
 # Plan: README best-practices overhaul
 

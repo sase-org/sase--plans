@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 11:00:02
 status: done
-prompt: 202606/prompts/agent_mark_auto_reads_unread.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_mark_auto_reads_unread.md](prompts/agent_mark_auto_reads_unread.md)
+
 # Plan: Agents `m` Auto-Advance Acknowledges Unread Target
 
 ## Problem

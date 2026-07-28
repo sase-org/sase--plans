@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-16 15:29:20
 status: done
-prompt: 202605/prompts/ace_tmux_output_refinements.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ace_tmux_output_refinements.md](prompts/ace_tmux_output_refinements.md)
+
 # Plan: Refine `sase ace --tmux` Output Contract
 
 ## Goal

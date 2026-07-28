@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 21:43:03
 status: wip
-prompt: 202605/prompts/sidebar_blog_reorder_labels.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sidebar_blog_reorder_labels.md](prompts/sidebar_blog_reorder_labels.md)
+
 # Plan: Move Blog Sidebar Section And Rename Docs Groups
 
 ## Problem

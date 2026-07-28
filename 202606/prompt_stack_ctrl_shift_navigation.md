@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 09:41:50
 status: done
-prompt: 202606/prompts/prompt_stack_ctrl_shift_navigation.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_ctrl_shift_navigation.md](prompts/prompt_stack_ctrl_shift_navigation.md)
+
 # Migrate Prompt Stack Pane Navigation to Ctrl+Shift+J/K
 
 ## Goal

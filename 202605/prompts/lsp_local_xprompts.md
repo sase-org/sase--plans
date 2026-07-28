@@ -1,6 +1,5 @@
----
-plan: 202605/lsp_local_xprompts.md
----
+- **PLAN:** [../202605/lsp_local_xprompts.md](../lsp_local_xprompts.md)
+
  It doesn't look like our LSP server detects local xprompts properly. For example, I'm getting the following
 nvim LSP error in the xprompts/reads.md file:
 

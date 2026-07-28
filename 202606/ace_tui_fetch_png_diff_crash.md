@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 08:11:43
 status: done
-prompt: 202606/prompts/ace_tui_fetch_png_diff_crash.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_tui_fetch_png_diff_crash.md](prompts/ace_tui_fetch_png_diff_crash.md)
+
 # Plan: Fix ACE TUI Crash on `#sshot` Fetch Step
 
 ## Problem

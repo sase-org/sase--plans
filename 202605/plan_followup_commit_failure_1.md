@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 17:24:43
 status: done
-prompt: 202605/prompts/plan_followup_commit_failure_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_followup_commit_failure_1.md](prompts/plan_followup_commit_failure_1.md)
+
 # Fix Approved-Plan Coder Launch Failures
 
 ## Problem

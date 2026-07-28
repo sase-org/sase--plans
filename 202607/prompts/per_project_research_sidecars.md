@@ -1,6 +1,5 @@
----
-plan: 202607/per_project_research_sidecars.md
----
+- **PLAN:** [../202607/per_project_research_sidecars.md](../per_project_research_sidecars.md)
+
  It looks like when we migrated the `sase--research` sidecar repos to custom sidecar repos (see the sase-60 epic bead for context), the entry for that sidecar repo stopped being added to agent instruction files.
 
 - As a result agents do not know about this repo and thus do not know that they should use the `sase repo open` command to open it.

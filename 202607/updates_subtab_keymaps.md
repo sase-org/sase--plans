@@ -8,8 +8,9 @@ goal: 'The SASE Admin Center Updates tab reliably handles [ and ] from every Upd
   '
 create_time: 2026-07-20 07:56:03
 status: done
-prompt: 202607/prompts/updates_subtab_keymaps.md
 ---
+
+- **PROMPT:** [202607/prompts/updates_subtab_keymaps.md](prompts/updates_subtab_keymaps.md)
 
 # Plan: Restore Updates sub-tab bracket navigation
 

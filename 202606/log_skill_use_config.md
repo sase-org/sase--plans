@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 12:48:26
 status: done
-prompt: 202606/prompts/log_skill_use_config.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/log_skill_use_config.md](prompts/log_skill_use_config.md)
+
 # Plan: Configurable Generated Skill-Use Audit Directive
 
 ## Objective

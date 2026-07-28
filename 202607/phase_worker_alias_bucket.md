@@ -6,8 +6,9 @@ goal: Route every implicit phase-agent launch through a size-specific alias whil
   a built-in Models-panel bucket.
 create_time: 2026-07-21 08:33:26
 status: done
-prompt: 202607/prompts/phase_worker_alias_bucket.md
 ---
+
+- **PROMPT:** [202607/prompts/phase_worker_alias_bucket.md](prompts/phase_worker_alias_bucket.md)
 
 # Plan: Size-specific phase-worker model aliases
 

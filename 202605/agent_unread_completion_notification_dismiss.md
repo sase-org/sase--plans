@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 18:29:49
 status: wip
-prompt: 202605/prompts/agent_unread_completion_notification_dismiss.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_unread_completion_notification_dismiss.md](prompts/agent_unread_completion_notification_dismiss.md)
+
 # Plan: Dismiss completion notifications when unread agents are acknowledged
 
 ## Goal

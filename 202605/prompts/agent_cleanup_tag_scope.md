@@ -1,6 +1,5 @@
----
-plan: 202605/agent_cleanup_tag_scope.md
----
+- **PLAN:** [../202605/agent_cleanup_tag_scope.md](../agent_cleanup_tag_scope.md)
+
  Something is wrong with the "Choose tag" option of the "Agent Cleanup" panel (triggered with the `X` keymap). We should only show tags that are present on the "Agents" tab currently and the same goes for agents that have those tags (we should only show ones that exist on the agents tab). Can you help me diagnose the root cause of this issue and fix it? See the `sase ace` snapshot below for an example of the issue I'm seeing. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

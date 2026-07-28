@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 15:40:06
 status: done
-prompt: 202604/prompts/agents_tab_single_level_capital_hl.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_single_level_capital_hl.md](prompts/agents_tab_single_level_capital_hl.md)
+
 # Single-level `H` / `L` on the Agents tab
 
 ## Problem

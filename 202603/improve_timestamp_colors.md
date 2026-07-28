@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 13:44:38
 status: done
-prompt: 202603/prompts/improve_timestamp_colors.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/improve_timestamp_colors.md](prompts/improve_timestamp_colors.md)
 
 # Plan: Improve Timestamp Colors in TUI and Neovim
 

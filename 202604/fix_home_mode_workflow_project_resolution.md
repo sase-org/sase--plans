@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 21:07:18
 status: done
-prompt: 202604/prompts/fix_home_mode_workflow_project_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_home_mode_workflow_project_resolution.md](prompts/fix_home_mode_workflow_project_resolution.md)
 
 # Fix home-mode workflow resolution for namespaced workflows
 

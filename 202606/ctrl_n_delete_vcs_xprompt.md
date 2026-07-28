@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 09:53:20
 status: done
-prompt: 202606/prompts/ctrl_n_delete_vcs_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ctrl_n_delete_vcs_xprompt.md](prompts/ctrl_n_delete_vcs_xprompt.md)
+
 # Prompt `Ctrl+N` Deletes VCS XPrompt; `Ctrl+P` Cycles Through an Empty State
 
 ## Goal

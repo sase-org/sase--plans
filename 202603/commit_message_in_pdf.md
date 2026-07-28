@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 17:36:58
 status: done
-prompt: 202603/prompts/commit_message_in_pdf.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_message_in_pdf.md](prompts/commit_message_in_pdf.md)
 
 # Plan: Include Commit Message in Telegram PDF
 

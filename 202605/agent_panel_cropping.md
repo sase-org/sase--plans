@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 09:58:30
 status: done
-prompt: 202605/prompts/agent_panel_cropping.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_cropping.md](prompts/agent_panel_cropping.md)
+
 # Plan: Agent Panel Cropping Priority
 
 ## Problem

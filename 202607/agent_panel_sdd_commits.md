@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 18:21:34
 status: done
-prompt: 202607/prompts/agent_panel_sdd_commits.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agent_panel_sdd_commits.md](prompts/agent_panel_sdd_commits.md)
+
 # Show SDD-repo commits in the Agents-tab COMMITS panel
 
 ## Problem / product context

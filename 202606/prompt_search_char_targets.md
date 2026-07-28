@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 09:45:13
 status: done
-prompt: 202606/prompts/prompt_search_char_targets.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_search_char_targets.md](prompts/prompt_search_char_targets.md)
+
 # Fix prompt Vim char-target search key regression
 
 ## Problem

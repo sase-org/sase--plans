@@ -1,6 +1,5 @@
----
-plan: 202605/feedback_child_done_after_approval.md
----
+- **PLAN:** [../202605/feedback_child_done_after_approval.md](../feedback_child_done_after_approval.md)
+
  This agent child step (see the `sase ace` snapshot below) should be marked as "DONE" since I already approved the plan. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

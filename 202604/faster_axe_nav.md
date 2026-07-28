@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:57:47
 status: done
-prompt: 202604/prompts/faster_axe_nav.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/faster_axe_nav.md](prompts/faster_axe_nav.md)
 
 # Plan: Make Axe tab navigation in `sase ace` WAY faster
 

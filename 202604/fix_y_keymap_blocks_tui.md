@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:36:34
 status: done
-prompt: 202604/prompts/fix_y_keymap_blocks_tui.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_y_keymap_blocks_tui.md](prompts/fix_y_keymap_blocks_tui.md)
 
 # Plan: Fix `y` keymap blocks TUI navigation during refresh
 

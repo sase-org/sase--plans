@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 16:54:09
 status: done
-prompt: 202605/prompts/high_quality_notification_images.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/high_quality_notification_images.md](prompts/high_quality_notification_images.md)
+
 # High-Quality Notification Image Previews
 
 ## Goal

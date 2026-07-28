@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 11:31:26
 status: done
-prompt: 202605/prompts/plan_approved_runtime_parent_child.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_approved_runtime_parent_child.md](prompts/plan_approved_runtime_parent_child.md)
+
 # Fix PLAN APPROVED Parent and Planner Child Runtime Interaction
 
 ## Context

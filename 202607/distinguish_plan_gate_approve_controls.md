@@ -9,8 +9,9 @@ goal: 'Tale plan review gates label the coder-launch option as "Launch coder age
   '
 create_time: 2026-07-18 07:26:29
 status: wip
-prompt: 202607/prompts/distinguish_plan_gate_approve_controls.md
 ---
+
+- **PROMPT:** [202607/prompts/distinguish_plan_gate_approve_controls.md](prompts/distinguish_plan_gate_approve_controls.md)
 
 # Plan: Distinguish tale plan gate approval controls
 

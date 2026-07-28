@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 16:26:48
 status: done
-prompt: 202606/prompts/wait_modal_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/wait_modal_redesign.md](prompts/wait_modal_redesign.md)
+
 # Plan: Redesign the `w` "Wait" panel as a pop-up with agent completion + time keyword
 
 ## Goal & product context

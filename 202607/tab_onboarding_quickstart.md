@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 19:33:03
 status: done
-prompt: 202607/prompts/tab_onboarding_quickstart.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tab_onboarding_quickstart.md](prompts/tab_onboarding_quickstart.md)
+
 # Plan: Tab Quick-Start Onboarding Redesign (Agents + PRs tabs)
 
 ## Problem & Goals

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 21:52:29
 status: done
-prompt: 202605/prompts/agent_counts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_counts.md](prompts/agent_counts.md)
+
 # Agent Counts In The Agents Header
 
 ## Goal

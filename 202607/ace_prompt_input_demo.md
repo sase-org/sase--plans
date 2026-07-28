@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 19:35:55
 status: done
-prompt: 202607/prompts/ace_prompt_input_demo.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/ace_prompt_input_demo.md](prompts/ace_prompt_input_demo.md)
+
 # ACE Prompt Input Demo Tape Plan
 
 ## Goal

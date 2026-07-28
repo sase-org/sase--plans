@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 14:10:35
 status: wip
-prompt: 202605/prompts/telegram_image_multi_model_workspace_claim.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_image_multi_model_workspace_claim.md](prompts/telegram_image_multi_model_workspace_claim.md)
+
 # Plan: Fix Telegram Image Multi-Model Workspace Claim Failures
 
 ## Problem

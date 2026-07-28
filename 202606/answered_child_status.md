@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 18:04:06
 status: done
-prompt: 202606/prompts/answered_child_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/answered_child_status.md](prompts/answered_child_status.md)
+
 # Fix ANSWERED Status For Question-Asking Child Rows
 
 ## Problem

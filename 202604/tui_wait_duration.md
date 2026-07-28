@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-10 22:47:38
 status: done
-prompt: 202604/prompts/tui_wait_duration.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/tui_wait_duration.md](prompts/tui_wait_duration.md)
 
 # Plan: TUI Duration Wait Visual Support
 

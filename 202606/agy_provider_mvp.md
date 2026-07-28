@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-19 18:55:35
 status: done
-prompt: 202606/prompts/agy_provider_mvp.md
 bead_id: sase-50
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/agy_provider_mvp.md](prompts/agy_provider_mvp.md)
+
 # Plan: Add an Antigravity (`agy`) LLM Provider MVP
 
 ## Problem

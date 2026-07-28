@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 17:48:53
 status: done
-prompt: 202606/prompts/telegram_plan_reject_kill.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/telegram_plan_reject_kill.md](prompts/telegram_plan_reject_kill.md)
+
 # Telegram Plan Reject Kill Fix
 
 ## Context

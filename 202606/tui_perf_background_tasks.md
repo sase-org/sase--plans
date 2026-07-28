@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 10:01:29
 status: done
-prompt: 202606/prompts/tui_perf_background_tasks.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/tui_perf_background_tasks.md](prompts/tui_perf_background_tasks.md)
+
 # Mention tracked background tasks in `memory/long/tui_perf.md`
 
 ## Context

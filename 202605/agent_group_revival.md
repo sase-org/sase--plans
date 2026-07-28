@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-27 11:52:09
 status: done
-prompt: 202605/prompts/agent_group_revival.md
 bead_id: sase-47
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agent_group_revival.md](prompts/agent_group_revival.md)
+
 # Agent Group Save And Revival Plan
 
 ## Goal

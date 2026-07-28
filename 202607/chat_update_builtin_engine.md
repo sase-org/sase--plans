@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 22:55:05
 status: done
-prompt: 202607/prompts/chat_update_builtin_engine.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/chat_update_builtin_engine.md](prompts/chat_update_builtin_engine.md)
+
 # Plan: Consolidate chat `/update` with the built-in SASE update engine
 
 ## Problem

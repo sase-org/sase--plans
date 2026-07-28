@@ -3,9 +3,10 @@ name: telegram_resume_running_only
 description: Trim /resume to running agents with copy buttons, matching /kill's scope
 create_time: 2026-05-11 16:44:48
 status: done
-prompt: 202605/prompts/telegram_resume_running_only.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_resume_running_only.md](prompts/telegram_resume_running_only.md)
 
 # /resume — running agents only
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-19 15:29:09
 status: done
-prompt: 202604/prompts/drop_coder_resume_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/drop_coder_resume_prefix.md](prompts/drop_coder_resume_prefix.md)
 
 # Plan: Drop `#resume:<planner>` from Coder Agent Prompts to Fix "Prompt is too long"
 

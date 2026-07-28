@@ -1,6 +1,5 @@
----
-plan: 202604/fix_dashboard_charts.md
----
+- **PLAN:** [../202604/fix_dashboard_charts.md](../fix_dashboard_charts.md)
+
 Most of the prometheus charts shown when I run `sase telemetry dashboard -c` are still not working (see below). Can you
 help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your
 `/sase_plan` skill before making any file changes.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 15:24:22
 status: done
-prompt: 202607/prompts/wait_deps_never_cancel.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/wait_deps_never_cancel.md](prompts/wait_deps_never_cancel.md)
+
 # Waiting Agents Must Never Fail Because a Dependency Failed
 
 ## Problem

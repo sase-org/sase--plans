@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 08:35:48
 status: done
-prompt: 202606/prompts/fix_working_status_invariants.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_working_status_invariants.md](prompts/fix_working_status_invariants.md)
+
 # Plan: Restore plan-child / root status invariants after `WORKING PLAN` / `WORKING TALE`
 
 ## Problem

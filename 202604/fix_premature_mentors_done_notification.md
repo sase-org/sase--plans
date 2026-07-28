@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 20:08:04
 status: done
-prompt: 202604/prompts/fix_premature_mentors_done_notification.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_premature_mentors_done_notification.md](prompts/fix_premature_mentors_done_notification.md)
+
 # Fix: Premature "Mentors done" Notification on Draft→Ready Transition
 
 ## Goal

@@ -2,9 +2,10 @@
 create_time: 2026-04-17 21:21:28
 status: done
 bead_id: sase-j
-prompt: 202604/prompts/commit_resume_1.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/commit_resume_1.md](prompts/commit_resume_1.md)
 
 # Plan: Resumable `sase commit` After Agent-Resolved Merge Conflicts (Phased)
 

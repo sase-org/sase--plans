@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 11:21:59
 status: done
-prompt: 202604/prompts/changespec_deltas_commit.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/changespec_deltas_commit.md](prompts/changespec_deltas_commit.md)
+
 # Plan: Populate DELTAS for ChangeSpecs Created by `sase commit`
 
 ## Problem

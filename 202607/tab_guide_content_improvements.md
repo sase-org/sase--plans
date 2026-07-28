@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 11:36:06
 status: done
-prompt: 202607/prompts/tab_guide_content_improvements.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tab_guide_content_improvements.md](prompts/tab_guide_content_improvements.md)
+
 # Improve the `,?` Tab Guide Popup Contents
 
 ## Background

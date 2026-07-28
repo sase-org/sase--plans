@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_space_encoding.md
----
+- **PLAN:** [../202605/xprompt_space_encoding.md](../xprompt_space_encoding.md)
+
  Can you help me fix this agent launch failure which happened on a different machine (see the `sase ace` snapshot below)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

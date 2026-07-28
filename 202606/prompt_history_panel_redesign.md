@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 13:36:04
 status: done
-prompt: 202606/prompts/prompt_history_panel_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_panel_redesign.md](prompts/prompt_history_panel_redesign.md)
+
 # Plan: Make the prompt-history modal near-fullscreen and beautify the list pane
 
 ## Goal / product context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 11:13:25
 status: done
-prompt: 202604/prompts/agents_tab_done_sort_by_stop_time.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_done_sort_by_stop_time.md](prompts/agents_tab_done_sort_by_stop_time.md)
+
 # Plan: Sort done agents by completion time in `sase ace` Agents tab
 
 ## Problem

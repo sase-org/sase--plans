@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 17:37:43
 status: done
-prompt: 202606/prompts/question_code_prompt_model.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/question_code_prompt_model.md](prompts/question_code_prompt_model.md)
+
 # Fix Question Continuations for Code-Agent Prompts
 
 ## Problem

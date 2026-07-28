@@ -1,6 +1,5 @@
----
-plan: 202606/updates_tab_keymap_rework.md
----
+- **PLAN:** [../202606/updates_tab_keymap_rework.md](../updates_tab_keymap_rework.md)
+
  We currently use 3 different keymaps on the "Updates" tab of the "SASE Admin Center" panel to update sase, sase-core, or sase plugins: `S`, `u`, and `U`. Can you help me get rid of the `S` keymap, repurpose the `u` keymap, and make the `U` keymap update the selected plugin? 
 
 - The `S` keymap is currently supposed to update anything that needs updating (sase, sase-core, or sase plugins).

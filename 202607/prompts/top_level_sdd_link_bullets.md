@@ -1,6 +1,5 @@
----
-plan: '[../202607/top_level_sdd_link_bullets.md](../top_level_sdd_link_bullets.md)'
----
+- **PLAN:** [../202607/top_level_sdd_link_bullets.md](../top_level_sdd_link_bullets.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

@@ -85,6 +85,8 @@ status: done
 bead_id: sase-7z
 ---
 
+- **PROMPT:** [202607/prompts/epic_phase_sizes_and_child_epics.md](prompts/epic_phase_sizes_and_child_epics.md)
+
 # Plan: Epic phase sizes and parented child epics
 
 ## Context

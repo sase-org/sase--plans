@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 17:07:53
 status: done
-prompt: 202605/prompts/fix_recent_ci_failures.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_recent_ci_failures.md](prompts/fix_recent_ci_failures.md)
+
 # Plan: Fix Recent GitHub Actions Failures on master
 
 ## Context

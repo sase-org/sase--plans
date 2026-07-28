@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 15:05:30
 status: done
-prompt: 202605/prompts/workspace_allocation_retry.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/workspace_allocation_retry.md](prompts/workspace_allocation_retry.md)
+
 # Workspace Allocation Retry Plan
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202605/epic_status.md
----
+- **PLAN:** [../202605/epic_status.md](../epic_status.md)
+
  This agent (see the `sase ace` snapshot below) should be marked as "RUNNING" instead of "PLANNING" (which is
 used when a plan has been proposed that the user needs to approve---agents that use `%epic` get their plans
 auto-approved as epics). Can you help me diagnose the root cause of this issue and fix it? I'm pretty sure this is a bug

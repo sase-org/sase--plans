@@ -7,9 +7,10 @@ description: Stop retired chat plugin from launching agents in response to its o
   filter with a sent-message-id allowlist recorded centrally inside ``gchat_client``.
 create_time: 2026-04-25 11:00:50
 status: done
-prompt: 202604/prompts/gchat_self_message_filter.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gchat_self_message_filter.md](prompts/gchat_self_message_filter.md)
 
 # retired chat plugin — Stop Self-Triggering Agent Launches
 

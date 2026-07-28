@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 11:44:15
 status: done
-prompt: 202606/prompts/prompt_history_ctrl_k_rebind.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_ctrl_k_rebind.md](prompts/prompt_history_ctrl_k_rebind.md)
+
 # Plan: Fix the broken prompt-history trigger (rebind `Ctrl+.` → `Ctrl+K`)
 
 ## Problem

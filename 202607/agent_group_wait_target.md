@@ -8,8 +8,9 @@ goal: 'The Agents tab can start a new prompt waiting on a selected clan or named
   '
 create_time: 2026-07-19 14:09:50
 status: done
-prompt: 202607/prompts/agent_group_wait_target.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_group_wait_target.md](prompts/agent_group_wait_target.md)
 
 # Plan: Agent clan and tribe wait targets
 

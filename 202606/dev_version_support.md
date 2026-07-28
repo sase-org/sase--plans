@@ -3,8 +3,10 @@ create_time: 2026-06-27 14:37:56
 bead_id: sase-5c
 tier: epic
 status: done
-prompt: 202606/prompts/dev_version_support.md
 ---
+
+- **PROMPT:** [202606/prompts/dev_version_support.md](prompts/dev_version_support.md)
+
 # Dev-Version Support for `plugin list`, `update`, and the Admin Center "Updates" Tab
 
 ## Summary

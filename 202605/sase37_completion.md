@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 18:55:53
 status: done
-prompt: 202605/prompts/sase37_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase37_completion.md](prompts/sase37_completion.md)
+
 # Complete sase-37 Archive Verification
 
 ## Context

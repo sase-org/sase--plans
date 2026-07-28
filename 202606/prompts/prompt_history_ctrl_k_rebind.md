@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_history_ctrl_k_rebind.md
----
+- **PLAN:** [../202606/prompt_history_ctrl_k_rebind.md](../prompt_history_ctrl_k_rebind.md)
+
  The `<ctrl+.>` keymap that we recently added to the prompt input widget (see recent, related git commits) isn't working. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
  

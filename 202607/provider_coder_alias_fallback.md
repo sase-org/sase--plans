@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 12:52:30
 status: done
-prompt: 202607/prompts/provider_coder_alias_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/provider_coder_alias_fallback.md](prompts/provider_coder_alias_fallback.md)
+
 # Plan: Fix provider coder aliases so they inherit @coder
 
 ## Problem

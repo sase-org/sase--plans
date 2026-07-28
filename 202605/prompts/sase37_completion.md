@@ -1,6 +1,5 @@
----
-plan: 202605/sase37_completion.md
----
+- **PLAN:** [../202605/sase37_completion.md](../sase37_completion.md)
+
  Can you help me verify that all the work associated with the bead with ID sase-37 is complete?
 
 Actually read through the source code and the git commits that are associated with that bead's work (they should have

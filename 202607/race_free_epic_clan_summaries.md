@@ -42,6 +42,8 @@ status: done
 bead_id: sase-8i
 ---
 
+- **PROMPT:** [202607/prompts/race_free_epic_clan_summaries.md](prompts/race_free_epic_clan_summaries.md)
+
 # Plan: Race-free plan-lane epic clan summaries
 
 ## Context

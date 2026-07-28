@@ -1,6 +1,5 @@
----
-plan: 202607/folded_agent_neighbors.md
----
+- **PLAN:** [../202607/folded_agent_neighbors.md](../folded_agent_neighbors.md)
+
  Can you help me fix the `~` (neighbors) keymap on the "Agents" tab of
 the `sase ace` TUI so all neighbors that live in clans are shown, regardless of
 whether their clan is expanded or not? If a clan member neighbor is selected and

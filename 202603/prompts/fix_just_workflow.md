@@ -1,6 +1,5 @@
----
-plan: 202603/fix_just_workflow.md
----
+- **PLAN:** [../202603/fix_just_workflow.md](../fix_just_workflow.md)
+
 The `#sase/fix_just` workflow is broken (see below). Can you help me diagnose the root cause of this issue and fix it?
 Think this through thoroughly and create a plan using your `/sase_plan` skill.
 

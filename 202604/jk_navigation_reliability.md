@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:40:56
 status: done
-prompt: 202604/prompts/jk_navigation_reliability.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/jk_navigation_reliability.md](prompts/jk_navigation_reliability.md)
+
 # Plan — Make `j`/`k` Navigation on the Agents Tab Reliable
 
 ## Symptom (user report)

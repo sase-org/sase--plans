@@ -67,6 +67,8 @@ status: done
 bead_id: sase-9z
 ---
 
+- **PROMPT:** [202607/prompts/durable_plan_refs.md](prompts/durable_plan_refs.md)
+
 # Plan: Make bead plan linkage durable with logical plans: references
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 12:16:32
 status: done
-prompt: 202607/prompts/update_confirm_incoming_commits.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/update_confirm_incoming_commits.md](prompts/update_confirm_incoming_commits.md)
+
 # Plan: Show All Incoming Commits in the Updates-Tab Update Confirm Modal
 
 ## Goal

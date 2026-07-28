@@ -1,10 +1,4 @@
----
-plan: 202606/prompt_frontmatter_panel_closure.md
----
-
-
-
-
+- **PLAN:** [../202606/prompt_frontmatter_panel_closure.md](../prompt_frontmatter_panel_closure.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-4r is complete?
 

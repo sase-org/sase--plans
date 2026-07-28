@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-22 10:17:40
 status: done
-prompt: 202604/prompts/fix_interrupt_monitor_test_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_interrupt_monitor_test_race.md](prompts/fix_interrupt_monitor_test_race.md)
 
 # Fix flaky Python 3.14 CI failure in `test_start_interrupt_monitor_missing_message_field`
 

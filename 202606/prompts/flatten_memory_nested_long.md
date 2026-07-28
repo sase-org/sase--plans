@@ -1,6 +1,5 @@
----
-plan: 202606/flatten_memory_nested_long.md
----
+- **PLAN:** [../202606/flatten_memory_nested_long.md](../flatten_memory_nested_long.md)
+
  Can you help me flatten sase's memory/ directory while also adding support for nested long-term memory files (e.g. hub
 memory note files that link to other memory note files)?
 

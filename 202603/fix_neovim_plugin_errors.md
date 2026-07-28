@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 12:06:04
 status: done
-prompt: 202603/prompts/fix_neovim_plugin_errors.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_neovim_plugin_errors.md](prompts/fix_neovim_plugin_errors.md)
 
 # Plan: Fix Neovim Plugin Errors
 

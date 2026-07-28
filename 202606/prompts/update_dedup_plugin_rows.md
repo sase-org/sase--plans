@@ -1,6 +1,5 @@
----
-plan: 202606/update_dedup_plugin_rows.md
----
+- **PLAN:** [../202606/update_dedup_plugin_rows.md](../update_dedup_plugin_rows.md)
+
   We seem to show the same plugin repos multiple times in the `sase update` command's output (see below). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

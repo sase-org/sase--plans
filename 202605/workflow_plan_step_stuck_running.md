@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 14:34:43
 status: done
-prompt: 202605/prompts/workflow_plan_step_stuck_running.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/workflow_plan_step_stuck_running.md](prompts/workflow_plan_step_stuck_running.md)
+
 # Fix Plan-Step Stuck at RUNNING After EPIC/TALE/LEGEND Approval
 
 ## Symptom

@@ -9,8 +9,9 @@ goal: 'The ARTIFACTS lane of the Agents-tab metadata panel labels its explicit-a
   '
 create_time: 2026-07-17 10:44:38
 status: done
-prompt: 202607/prompts/artifact_files_rename.md
 ---
+
+- **PROMPT:** [202607/prompts/artifact_files_rename.md](prompts/artifact_files_rename.md)
 
 # Plan: Rename the agent artifact-file concept to "artifact files"
 

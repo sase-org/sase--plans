@@ -1,9 +1,10 @@
 ---
 status: wip
 create_time: 2026-04-10 13:58:43
-prompt: 202604/prompts/pr_silent_failure.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/pr_silent_failure.md](prompts/pr_silent_failure.md)
 
 # Fix: PR Creation Silently Skipped When Push Fails
 

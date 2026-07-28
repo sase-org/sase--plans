@@ -1,11 +1,4 @@
----
-plan: 202607/sase61_landing_gaps.md
----
-
-
-
-
-
+- **PLAN:** [../202607/sase61_landing_gaps.md](../sase61_landing_gaps.md)
 
 You are the land agent for epic bead sase-61: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

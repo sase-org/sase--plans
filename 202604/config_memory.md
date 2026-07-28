@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 14:10:31
 status: done
-prompt: 202604/prompts/config_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/config_memory.md](prompts/config_memory.md)
 
 # Plan: Create `memory/long/config.md` Long-Term Memory File
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-06 09:33:06
 status: done
-prompt: 202606/prompts/recent_restore_perf_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/recent_restore_perf_fix.md](prompts/recent_restore_perf_fix.md)
+
 # Plan: Fix TUI dismiss-path performance regression from recent agent restore
 
 ## Context

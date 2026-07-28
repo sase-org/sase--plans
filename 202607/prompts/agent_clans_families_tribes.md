@@ -1,6 +1,5 @@
----
-plan: 202607/agent_clans_families_tribes.md
----
+- **PLAN:** [../202607/agent_clans_families_tribes.md](../agent_clans_families_tribes.md)
+
  We recently added support for parallel agent families and migrated epic
 phase agents and the epic lander agent over to use a single parallel agent
 family. We did the same for a `research_swarm` xprompt that's defined in my

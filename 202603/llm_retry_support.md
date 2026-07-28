@@ -1,10 +1,11 @@
 ---
 status: pending
 bead_id: sase-8h82
-prompt: 202603/prompts/llm_retry_support.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/llm_retry_support.md](prompts/llm_retry_support.md)
 
 # Add Configurable LLM Provider Retry & Fallback Support
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 13:40:57
 status: done
-prompt: 202604/prompts/tui_backend_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/tui_backend_indicator.md](prompts/tui_backend_indicator.md)
+
 # TUI Backend Indicator Plan
 
 ## Goal

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 14:18:39
 status: done
-prompt: 202603/prompts/telegram_button_dismiss.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/telegram_button_dismiss.md](prompts/telegram_button_dismiss.md)
 
 # Plan: Fix Telegram plan buttons not dismissed on TUI rejection
 

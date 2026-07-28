@@ -34,6 +34,8 @@ status: done
 bead_id: sase-a2
 ---
 
+- **PROMPT:** [202607/prompts/ci_watch_chop.md](prompts/ci_watch_chop.md)
+
 # Plan: ci_watch — an actstat-driven CI watch / release-merge lumberjack chop
 
 ## Context

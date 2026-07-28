@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 18:36:53
 status: wip
-prompt: 202605/prompts/lsp_xprompt_frontmatter_lint.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/lsp_xprompt_frontmatter_lint.md](prompts/lsp_xprompt_frontmatter_lint.md)
+
 # LSP XPrompt Frontmatter Lint Plan
 
 ## Goal

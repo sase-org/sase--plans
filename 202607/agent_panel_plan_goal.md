@@ -8,8 +8,9 @@ goal: 'The agent metadata panel on the `sase ace` Agents tab shows the plan''s `
   '
 create_time: 2026-07-15 08:13:15
 status: done
-prompt: 202607/prompts/agent_panel_plan_goal.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_panel_plan_goal.md](prompts/agent_panel_plan_goal.md)
 
 # Plan: Show the plan `goal` in the Agents-tab metadata panel
 

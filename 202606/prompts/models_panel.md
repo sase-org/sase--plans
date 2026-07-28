@@ -1,6 +1,5 @@
----
-plan: 202606/models_panel.md
----
+- **PLAN:** [../202606/models_panel.md](../models_panel.md)
+
  Can you help me migrate the "Model Override" panel (triggered by the `,m` keymap) to a new more general-purpose "Models" panel?
 
 - This panel should allow the user to view and modify all currently configured model aliases.

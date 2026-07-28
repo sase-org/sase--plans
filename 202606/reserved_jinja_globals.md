@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 09:59:52
 status: done
-prompt: 202606/prompts/reserved_jinja_globals.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/reserved_jinja_globals.md](prompts/reserved_jinja_globals.md)
+
 # Plan: Make reserved Jinja globals (`root`) statically known for lint/inference
 
 ## Problem

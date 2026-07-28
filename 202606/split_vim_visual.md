@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 20:13:15
 status: done
-prompt: 202606/prompts/split_vim_visual.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/split_vim_visual.md](prompts/split_vim_visual.md)
+
 # Split Vim Visual-Mode Widget Module
 
 ## Context

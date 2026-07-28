@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 14:52:23
 status: done
-prompt: 202607/prompts/xprompts_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/xprompts_memory.md](prompts/xprompts_memory.md)
+
 # Plan: Add `memory/xprompts.md` long-term memory note
 
 ## Goal

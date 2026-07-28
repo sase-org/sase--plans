@@ -2,9 +2,10 @@
 status: done
 create_time: 2026-04-07 22:23:20
 bead_id: sase-d
-prompt: 202604/prompts/prometheus_telemetry_1.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/prometheus_telemetry_1.md](prompts/prometheus_telemetry_1.md)
 
 # Prometheus Telemetry Integration
 

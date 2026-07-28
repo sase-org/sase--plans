@@ -1,10 +1,4 @@
----
-plan: 202607/generic_clan_plan_summary.md
----
-
-
-
-
+- **PLAN:** [../202607/generic_clan_plan_summary.md](../generic_clan_plan_summary.md)
 
 Can you complete the work for bead sase-8d.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

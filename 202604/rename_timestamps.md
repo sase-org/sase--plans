@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 19:46:50
 status: done
-prompt: 202604/prompts/rename_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rename_timestamps.md](prompts/rename_timestamps.md)
 
 # Plan: Add RENAME Timestamps to ChangeSpec
 

@@ -3,8 +3,10 @@ create_time: 2026-06-13 09:01:57
 bead_id: sase-4m
 status: done
 tier: epic
-prompt: 202606/prompts/prompt_history_tui.md
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_tui.md](prompts/prompt_history_tui.md)
+
 # Prompt History TUI Improvements
 
 ## Context

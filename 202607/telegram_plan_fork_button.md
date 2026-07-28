@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 01:08:32
 status: done
-prompt: 202607/prompts/telegram_plan_fork_button.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_plan_fork_button.md](prompts/telegram_plan_fork_button.md)
+
 # Telegram Plan Approval Fork Button
 
 ## Problem

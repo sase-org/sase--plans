@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 23:45:33
 status: done
-prompt: 202605/prompts/sdd_init_readme.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sdd_init_readme.md](prompts/sdd_init_readme.md)
+
 # Plan: Add `sase sdd init`
 
 ## Goal

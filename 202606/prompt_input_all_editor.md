@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:10:57
 status: done
-prompt: 202606/prompts/prompt_input_all_editor.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_input_all_editor.md](prompts/prompt_input_all_editor.md)
+
 # Plan: Prompt Input All-Panes Editor Keymap
 
 ## Context

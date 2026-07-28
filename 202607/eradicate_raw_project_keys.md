@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 14:44:02
 status: done
-prompt: 202607/prompts/eradicate_raw_project_keys.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/eradicate_raw_project_keys.md](prompts/eradicate_raw_project_keys.md)
+
 # Plan: Eradicate Raw Project Directory Keys From Every User-Facing Surface
 
 ## Problem

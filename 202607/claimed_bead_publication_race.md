@@ -47,6 +47,8 @@ status: done
 bead_id: sase-94
 ---
 
+- **PROMPT:** [202607/prompts/claimed_bead_publication_race.md](prompts/claimed_bead_publication_race.md)
+
 # Plan: Claimed status survives the epic-graph publication lag
 
 ## Goal

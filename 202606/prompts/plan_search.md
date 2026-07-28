@@ -1,6 +1,5 @@
----
-plan: 202606/plan_search.md
----
+- **PLAN:** [../202606/plan_search.md](../plan_search.md)
+
  Can you help me create a new `sase plan search` command that works a lot like the `sase bead search` command but for sase plans (both repo-specific sdd/ plans, which should be prioritized and plans that are local to this machine, which are stored in the ~/.sase/plans/ directory)?
 
 - Make sure that we support all of the same formats types as the `sase bead search` command, with just as high (or ideally, higher) quality output.

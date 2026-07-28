@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 22:56:24
 status: done
-prompt: 202604/prompts/priority_notification_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/priority_notification_indicator.md](prompts/priority_notification_indicator.md)
+
 # Priority-Aware Notification Indicator
 
 ## Problem

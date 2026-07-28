@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 17:26:32
 status: done
-prompt: 202605/prompts/overwrite_agent_wait_conditions.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/overwrite_agent_wait_conditions.md](prompts/overwrite_agent_wait_conditions.md)
+
 # Plan: make Agents-tab `w` fully overwrite wait conditions
 
 ## Problem

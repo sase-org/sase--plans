@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 09:53:29
 status: done
-prompt: 202606/prompts/run_cwd_project_creation.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/run_cwd_project_creation.md](prompts/run_cwd_project_creation.md)
+
 # Fix `sase run` CWD Project Creation
 
 ## Diagnosis

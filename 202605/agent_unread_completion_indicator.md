@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 14:00:17
 status: done
-prompt: 202605/prompts/agent_unread_completion_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_unread_completion_indicator.md](prompts/agent_unread_completion_indicator.md)
+
 # Plan: Move completed-unread agent indicator into the runtime suffix
 
 ## Goal

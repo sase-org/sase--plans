@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 08:20:08
 status: done
-prompt: 202606/prompts/memory_init_wording.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/memory_init_wording.md](prompts/memory_init_wording.md)
+
 # Plan: Update `sase memory init` Short-Term Memory Wording
 
 ## Goal

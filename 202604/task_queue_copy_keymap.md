@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 12:29:11
 status: done
-prompt: 202604/prompts/task_queue_copy_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/task_queue_copy_keymap.md](prompts/task_queue_copy_keymap.md)
 
 # Plan: Add `y` (copy) keymap to Task Queue Modal
 

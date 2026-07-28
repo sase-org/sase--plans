@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 22:08:23
 status: done
-prompt: 202605/prompts/async_artifact_discovery.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/async_artifact_discovery.md](prompts/async_artifact_discovery.md)
+
 # Plan: Move agent-detail artifact discovery off the UI thread
 
 ## Problem statement

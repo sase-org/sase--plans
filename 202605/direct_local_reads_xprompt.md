@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 09:01:41
 status: done
-prompt: 202605/prompts/direct_local_reads_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/direct_local_reads_xprompt.md](prompts/direct_local_reads_xprompt.md)
+
 # Plan: Direct Local Helper Calls in `xprompts/reads.md`
 
 ## Goal

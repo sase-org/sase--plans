@@ -1,6 +1,5 @@
----
-plan: 202607/land_epic_xprompt_integration.md
----
+- **PLAN:** [../202607/land_epic_xprompt_integration.md](../land_epic_xprompt_integration.md)
+
  Can you help me improve the `#bd/land_epic` xprompt?
 
 - Instruct the agent that they are responsible for integrating this change into any other changes that were committed since the epic started. It's possible that previous agents didn't integrate with this new feature that this epic added properly because the feature wasn't complete yet.

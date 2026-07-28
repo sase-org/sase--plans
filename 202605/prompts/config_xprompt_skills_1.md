@@ -1,6 +1,5 @@
----
-plan: 202605/config_xprompt_skills_1.md
----
+- **PLAN:** [../202605/config_xprompt_skills_1.md](../config_xprompt_skills_1.md)
+
  I just tried to initialize the `#sase_gmail` xprompt skill that we recently added to the sase_athena.yml file
 in my chezmoi repo, but it doesn't look like it was recognized as an xprompt skill (see output below). Can you help me
 diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

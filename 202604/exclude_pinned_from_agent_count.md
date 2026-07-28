@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 13:25:05
 status: done
-prompt: 202604/prompts/exclude_pinned_from_agent_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/exclude_pinned_from_agent_count.md](prompts/exclude_pinned_from_agent_count.md)
 
 # Plan: Exclude Pinned Entries from Agent Count
 

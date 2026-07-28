@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 13:27:25
 status: done
-prompt: 202606/prompts/sibling_project_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sibling_project_status.md](prompts/sibling_project_status.md)
+
 # Plan: Sibling Project Lifecycle State
 
 ## Context

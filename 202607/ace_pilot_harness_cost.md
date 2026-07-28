@@ -8,8 +8,9 @@ goal: 'ACE pilot tests retain their existing assertions and production-startup c
   '
 create_time: 2026-07-20 11:06:08
 status: done
-prompt: 202607/prompts/ace_pilot_harness_cost.md
 ---
+
+- **PROMPT:** [202607/prompts/ace_pilot_harness_cost.md](prompts/ace_pilot_harness_cost.md)
 
 # Plan: ACE pilot harness cost reduction
 

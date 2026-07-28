@@ -1,6 +1,5 @@
----
-plan: 202606/xprompt_effort_levels.md
----
+- **PLAN:** [../202606/xprompt_effort_levels.md](../xprompt_effort_levels.md)
+
  I want to be able to specify an effort level (ex: "xhigh") when I specify a model / LLM provider in xprompts. Can you help me implement this? See the below bullets for extra requirements. See the the sdd/research/202606/xprompt_thinking_level_consolidated.md file, which contains related research performed by another agent, for context and inspiration.
 
 - Make sure that the effort level is displayed in a uniform way across all proiders in the agent metadata panel on the "Agents" tab of the `sase ace` TUI (e.g. as a suffix on the "Model:" field?).

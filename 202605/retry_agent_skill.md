@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 19:28:08
 status: done
-prompt: 202605/prompts/retry_agent_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/retry_agent_skill.md](prompts/retry_agent_skill.md)
+
 # Plan: Teach `/sase_agents_status` How to Retry Agents
 
 ## Goal

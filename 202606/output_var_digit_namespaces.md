@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 23:12:36
 status: done
-prompt: 202606/prompts/output_var_digit_namespaces.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/output_var_digit_namespaces.md](prompts/output_var_digit_namespaces.md)
+
 # Output Variable Digit Namespace Plan
 
 ## Context

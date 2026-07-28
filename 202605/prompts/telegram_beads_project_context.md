@@ -1,6 +1,5 @@
----
-plan: 202605/telegram_beads_project_context.md
----
+- **PLAN:** [../202605/telegram_beads_project_context.md](../telegram_beads_project_context.md)
+
  The user sent an image via Telegram with the following caption:
 
  The /beads Telegram slash command is still broken. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 20:25:23
 status: done
-prompt: 202604/prompts/alt_shorthand.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/alt_shorthand.md](prompts/alt_shorthand.md)
 
 # Plan: `%(...)` shorthand for `%alt(...)`
 

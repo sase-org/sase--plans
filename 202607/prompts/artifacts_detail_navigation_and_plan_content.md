@@ -1,6 +1,4 @@
----
-plan: 202607/artifacts_detail_navigation_and_plan_content.md
----
+- **PLAN:** [../202607/artifacts_detail_navigation_and_plan_content.md](../artifacts_detail_navigation_and_plan_content.md)
 
  We recently added the `<ctrl+d>`, `<ctrl+u>`, `<ctrl+f>`, and `<ctrl+b>` keymaps to allow the user to jump a certain number of entries up and down the left pane entries on sub-tabs of the "Artifacts" tab. `<ctrl+d/u>` jump down/up 10 entries, whereas `<ctrl+f/b>` jump down/up 5 entries. The problem is that the `<ctrl+d/u>` keymaps need to be used to scroll the right pane down/up instead. Can you help me fix this?
 

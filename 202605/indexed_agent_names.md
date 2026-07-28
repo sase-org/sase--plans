@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-27 10:53:50
 status: done
-prompt: 202605/prompts/indexed_agent_names.md
 bead_id: sase-46
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/indexed_agent_names.md](prompts/indexed_agent_names.md)
+
 # Indexed Agent Name Aliases
 
 ## Goal

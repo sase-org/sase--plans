@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 09:27:29
 status: done
-prompt: 202606/prompts/fix_agents_project_grouping.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_agents_project_grouping.md](prompts/fix_agents_project_grouping.md)
+
 # Fix Agents Tab Project Grouping
 
 ## Problem

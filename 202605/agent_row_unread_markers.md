@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 01:02:45
 status: done
-prompt: 202605/prompts/agent_row_unread_markers.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_row_unread_markers.md](prompts/agent_row_unread_markers.md)
+
 # Replace Agents Tab Unread Terminal Markers
 
 ## Goal

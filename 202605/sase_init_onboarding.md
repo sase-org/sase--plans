@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-22 21:58:04
 status: done
-prompt: 202605/prompts/sase_init_onboarding.md
 bead_id: sase-3y
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/sase_init_onboarding.md](prompts/sase_init_onboarding.md)
+
 # `sase init` Onboarding Implementation Plan
 
 ## Objective

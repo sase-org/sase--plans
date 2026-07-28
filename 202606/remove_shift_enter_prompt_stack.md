@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:24:07
 status: done
-prompt: 202606/prompts/remove_shift_enter_prompt_stack.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_shift_enter_prompt_stack.md](prompts/remove_shift_enter_prompt_stack.md)
+
 # Plan: Remove Shift+Enter Prompt-Stack Submit Support
 
 ## Goal

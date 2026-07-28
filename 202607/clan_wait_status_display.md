@@ -9,8 +9,9 @@ goal: 'When an agent waits on an agent clan, the Agents-tab metadata panel''s Wa
   '
 create_time: 2026-07-19 14:02:06
 status: done
-prompt: 202607/prompts/clan_wait_status_display.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_wait_status_display.md](prompts/clan_wait_status_display.md)
 
 # Plan: Clan-aware `Wait:` field in the Agents-tab metadata panel
 

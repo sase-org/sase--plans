@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-25 17:47:33
 status: wip
-prompt: 202604/prompts/suppress_singleton_name_root_banner.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/suppress_singleton_name_root_banner.md](prompts/suppress_singleton_name_root_banner.md)
 
 # Plan: Suppress name-root banner for single-entry groups
 

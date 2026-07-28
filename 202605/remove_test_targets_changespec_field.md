@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 15:44:00
 status: done
-prompt: 202605/prompts/remove_test_targets_changespec_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_test_targets_changespec_field.md](prompts/remove_test_targets_changespec_field.md)
+
 # Remove Obsolete ChangeSpec TEST TARGETS Field
 
 ## Goal

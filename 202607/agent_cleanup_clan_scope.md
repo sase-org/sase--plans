@@ -34,6 +34,8 @@ status: done
 bead_id: sase-74
 ---
 
+- **PROMPT:** [202607/prompts/agent_cleanup_clan_scope.md](prompts/agent_cleanup_clan_scope.md)
+
 # Plan: Clan-scoped Agent Cleanup
 
 ## Context

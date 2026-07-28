@@ -1,6 +1,5 @@
----
-plan: 202607/agents_metadata_section_keymaps.md
----
+- **PLAN:** [../202607/agents_metadata_section_keymaps.md](../agents_metadata_section_keymaps.md)
+
  Can you help me add new `<ctrl+j>` and `<ctrl+k>` keymaps to the "Agents" tab of the `sase ace` TUI?
 
 - The `<ctrl+j>` keymap should jump to the first (if this is the first time the user pressed `<ctrl+j>`) or next (otherwise) section in the agent metadata panel and scroll the viewport such that the section title is the top line shown in the right pane of the TUI.

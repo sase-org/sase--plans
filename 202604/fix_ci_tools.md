@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 11:33:35
 status: done
-prompt: 202604/prompts/fix_ci_tools.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_ci_tools.md](prompts/fix_ci_tools.md)
 
 # Plan: Fix chezmoi CI workflow missing tool installations
 

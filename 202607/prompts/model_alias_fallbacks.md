@@ -1,6 +1,5 @@
----
-plan: '[../202607/model_alias_fallbacks.md](../model_alias_fallbacks.md)'
----
+- **PLAN:** [../202607/model_alias_fallbacks.md](../model_alias_fallbacks.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

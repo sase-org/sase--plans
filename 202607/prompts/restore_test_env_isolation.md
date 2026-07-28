@@ -1,10 +1,4 @@
----
-plan: 202607/restore_test_env_isolation.md
----
-
-
-
-
+- **PLAN:** [../202607/restore_test_env_isolation.md](../restore_test_env_isolation.md)
 
 You are the land agent for epic bead sase-83: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

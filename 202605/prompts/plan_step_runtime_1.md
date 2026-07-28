@@ -1,6 +1,5 @@
----
-plan: 202605/plan_step_runtime_1.md
----
+- **PLAN:** [../202605/plan_step_runtime_1.md](../plan_step_runtime_1.md)
+
  We recently fixed the runtime for "PLAN APPROVED" agent/workflow entries, but there is a problem (see the `sase ace` snapshot below). Namely, the child agent step (the child named `afk.code.r1.plan` in the `sase ace` snapshot below) should only show the runtime for that agent step (which is calculated as PLAN - BEGIN in this case). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

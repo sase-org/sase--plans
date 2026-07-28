@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 11:16:39
 status: done
-prompt: 202606/prompts/always_show_create_snippet.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/always_show_create_snippet.md](prompts/always_show_create_snippet.md)
+
 # Always Offer Prompt Snippet Creation from `gx`
 
 ## Context

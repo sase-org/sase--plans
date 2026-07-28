@@ -8,8 +8,9 @@ goal: 'Durable SASE logs remain bounded and parseable under concurrent writers, 
   '
 create_time: 2026-07-20 16:58:40
 status: done
-prompt: 202607/prompts/bound_log_sinks.md
 ---
+
+- **PROMPT:** [202607/prompts/bound_log_sinks.md](prompts/bound_log_sinks.md)
 
 # Plan: Bound and harden SASE log sinks
 

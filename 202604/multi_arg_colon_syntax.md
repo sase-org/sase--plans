@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 16:02:09
 status: done
-prompt: 202604/prompts/multi_arg_colon_syntax.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/multi_arg_colon_syntax.md](prompts/multi_arg_colon_syntax.md)
 
 # Plan: Multi-arg colon syntax for xprompts
 

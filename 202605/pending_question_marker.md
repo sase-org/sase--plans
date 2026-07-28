@@ -5,9 +5,10 @@ description: Show QUESTION status for agents currently blocked on an unanswered 
 type: ace_tui
 create_time: 2026-05-11 11:30:27
 status: done
-prompt: 202605/prompts/pending_question_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pending_question_marker.md](prompts/pending_question_marker.md)
 
 # Pending Question Marker → QUESTION Status (Decouple From Notifications)
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 23:52:21
 status: done
-prompt: 202603/prompts/fix_enter_keymap_approve_options.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_enter_keymap_approve_options.md](prompts/fix_enter_keymap_approve_options.md)
 
 # Fix broken `<enter>` keymap in ApproveOptionsModal
 

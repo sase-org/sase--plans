@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-01 14:20:27
 status: proposed
-prompt: 202605/prompts/prompt_history_restore.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_history_restore.md](prompts/prompt_history_restore.md)
 
 # Plan: Restore prompt history and verify data-loss fix
 

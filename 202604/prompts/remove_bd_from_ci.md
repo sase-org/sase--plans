@@ -1,6 +1,5 @@
----
-plan: 202604/remove_bd_from_ci.md
----
+- **PLAN:** [../202604/remove_bd_from_ci.md](../remove_bd_from_ci.md)
+
  GitHub Actions is failing (see error below). We don't even use steveyegge's beads anymore, so we should be able to just stop installing beads in GitHub Actions. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

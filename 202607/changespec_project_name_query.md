@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 15:47:03
 status: done
-prompt: 202607/prompts/changespec_project_name_query.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/changespec_project_name_query.md](prompts/changespec_project_name_query.md)
+
 # Make ChangeSpec project queries respect `PROJECT_NAME`
 
 ## Problem and root cause

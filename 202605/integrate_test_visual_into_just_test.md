@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 12:08:50
 status: done
-prompt: 202605/prompts/integrate_test_visual_into_just_test.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/integrate_test_visual_into_just_test.md](prompts/integrate_test_visual_into_just_test.md)
+
 # Plan: Integrate `test-visual` into `just test`
 
 ## Goal

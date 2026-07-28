@@ -1,6 +1,5 @@
----
-plan: 202606/agent_name_namespace_templates.md
----
+- **PLAN:** [../202606/agent_name_namespace_templates.md](../agent_name_namespace_templates.md)
+
  We recently generalized the concept of using `@` with the `%name` directive (see the sase-4g epic bead for
 details). When `%n:foo.@.bar` is used, for example, the agent's name will be `foo.<X>.bar`, where `<X>` is the first
 alphanumeric sequence such that `foo.<X>.bar` is a unique agent name. Can you help me make some changes to this logic?

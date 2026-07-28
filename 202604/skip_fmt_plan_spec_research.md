@@ -4,9 +4,10 @@ description: Stop `just fmt` (and `just fmt-md-check`) from running prettier ove
   plan, spec, and research files.
 create_time: 2026-04-23 16:52:38
 status: done
-prompt: 202604/prompts/skip_fmt_plan_spec_research.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/skip_fmt_plan_spec_research.md](prompts/skip_fmt_plan_spec_research.md)
 
 # Skip formatting plan/spec/research files in `just fmt`
 

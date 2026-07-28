@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 19:57:59
 status: done
-prompt: 202605/prompts/agent_runtime_aggregation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_runtime_aggregation.md](prompts/agent_runtime_aggregation.md)
+
 # Plan: Aggregate Parent Agent Runtime From Child Agent Work
 
 ## Problem

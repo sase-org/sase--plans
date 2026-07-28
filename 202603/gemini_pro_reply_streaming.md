@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 12:31:48
 status: done
-prompt: 202603/prompts/gemini_pro_reply_streaming.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/gemini_pro_reply_streaming.md](prompts/gemini_pro_reply_streaming.md)
 
 # Fix Gemini gemini-3.1-pro-preview Agent Reply Streaming
 

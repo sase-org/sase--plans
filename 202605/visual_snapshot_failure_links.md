@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-11 22:08:30
 status: done
-prompt: 202605/prompts/visual_snapshot_failure_links.md
 bead_id: sase-32
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/visual_snapshot_failure_links.md](prompts/visual_snapshot_failure_links.md)
+
 # Plan: PNG Snapshot Failure Links In GitHub Actions
 
 ## Goal

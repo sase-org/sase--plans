@@ -9,8 +9,9 @@ goal: 'Branch-driven gate modals become a near-fullscreen review workbench: deci
   '
 create_time: 2026-07-18 10:40:52
 status: done
-prompt: 202607/prompts/gate_review_workbench.md
 ---
+
+- **PROMPT:** [202607/prompts/gate_review_workbench.md](prompts/gate_review_workbench.md)
 
 # Plan: Two-pane gate review workbench
 

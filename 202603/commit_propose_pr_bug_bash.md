@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-24 20:33:48
-prompt: 202603/prompts/commit_propose_pr_bug_bash.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_propose_pr_bug_bash.md](prompts/commit_propose_pr_bug_bash.md)
 
 # Bug Bash: commit / propose / PR xprompt workflows
 

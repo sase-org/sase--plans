@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-12 12:11:48
 status: done
-prompt: 202606/prompts/commit_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/commit_tags.md](prompts/commit_tags.md)
+
 # Plan: Expand Conventional Commit Tag Guidance in `sase_git_commit` Skill
 
 ## Goal

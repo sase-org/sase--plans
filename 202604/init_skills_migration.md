@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 21:20:44
 status: done
-prompt: 202604/prompts/init_skills_migration.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/init_skills_migration.md](prompts/init_skills_migration.md)
 
 # Plan: Bead sase-h.3 — Migration & Cleanup
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 15:28:42
 status: done
-prompt: 202604/prompts/agents_md_refactor.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_md_refactor.md](prompts/agents_md_refactor.md)
 
 # Plan: Extract AGENTS.md Sections into memory/ Directory
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 13:19:52
 status: done
-prompt: 202607/prompts/sort_custom_revival_by_date.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sort_custom_revival_by_date.md](prompts/sort_custom_revival_by_date.md)
+
 # Plan: Sort Custom Revival Results Newest First
 
 ## Summary

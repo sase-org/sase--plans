@@ -36,6 +36,8 @@ phases:
 bead_id: sase-76
 ---
 
+- **PROMPT:** [202607/prompts/agent_metadata_vim_search.md](prompts/agent_metadata_vim_search.md)
+
 # Plan: Vim-style text search for the Agents-tab metadata panel
 
 ## Product context

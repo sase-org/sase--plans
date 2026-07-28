@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_history_three_word_minimum.md
----
+- **PLAN:** [../202606/prompt_history_three_word_minimum.md](../prompt_history_three_word_minimum.md)
+
  When the user cancels the current prompt in the prompt input widget, we currently only seem to save the prompt to prompt history when the prompt is at least two words long. Can we make it so we don't store the prompt unless it's at least three words long? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

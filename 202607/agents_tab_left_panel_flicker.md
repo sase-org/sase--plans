@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 22:43:03
 status: done
-prompt: 202607/prompts/agents_tab_left_panel_flicker.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agents_tab_left_panel_flicker.md](prompts/agents_tab_left_panel_flicker.md)
+
 # Fix the Agents-tab left-panel flicker
 
 ## Problem / product context

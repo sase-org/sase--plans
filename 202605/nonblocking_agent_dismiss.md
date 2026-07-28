@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 19:26:37
 status: wip
-prompt: 202605/prompts/nonblocking_agent_dismiss.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/nonblocking_agent_dismiss.md](prompts/nonblocking_agent_dismiss.md)
+
 # Plan: Non-Blocking TUI Agent Dismissal
 
 ## Problem

@@ -8,8 +8,9 @@ goal: 'The Artifacts tab presents Commits, Plans, Bugs, and PRs in that order, w
   '
 create_time: 2026-07-21 07:51:31
 status: done
-prompt: 202607/prompts/reorder_artifacts_subtabs.md
 ---
+
+- **PROMPT:** [202607/prompts/reorder_artifacts_subtabs.md](prompts/reorder_artifacts_subtabs.md)
 
 # Plan: Reorder Artifacts sub-tabs and numeric shortcuts
 

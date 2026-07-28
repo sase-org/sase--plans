@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 16:03:02
 status: done
-prompt: 202605/prompts/notification_rewrite_merge.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/notification_rewrite_merge.md](prompts/notification_rewrite_merge.md)
+
 # Fix flaky `notification_append_plus_rewrite_counts_concurrency_preserves_valid_rows`
 
 ## Problem

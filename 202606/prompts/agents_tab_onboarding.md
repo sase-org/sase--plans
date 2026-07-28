@@ -1,6 +1,5 @@
----
-plan: 202606/agents_tab_onboarding.md
----
+- **PLAN:** [../202606/agents_tab_onboarding.md](../agents_tab_onboarding.md)
+
  Can you help me add a new onboarding view that shows?:
 
 - instructions for how the user can launch a sase agent

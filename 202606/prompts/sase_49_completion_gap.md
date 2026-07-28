@@ -1,10 +1,4 @@
----
-plan: 202606/sase_49_completion_gap.md
----
-
-
-
-
+- **PLAN:** [../202606/sase_49_completion_gap.md](../sase_49_completion_gap.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-49 is complete?
 

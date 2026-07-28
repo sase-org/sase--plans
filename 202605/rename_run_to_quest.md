@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 00:58:36
 status: done
-prompt: 202605/prompts/rename_run_to_quest.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/rename_run_to_quest.md](prompts/rename_run_to_quest.md)
+
 # Rename Plan Approval Run Option To Quest
 
 ## Goal

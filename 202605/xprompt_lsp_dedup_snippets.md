@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 14:46:41
 status: wip
-prompt: 202605/prompts/xprompt_lsp_dedup_snippets.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_dedup_snippets.md](prompts/xprompt_lsp_dedup_snippets.md)
+
 # Plan: Deduplicate xprompt LSP completion rows
 
 ## Context

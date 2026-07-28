@@ -1,6 +1,5 @@
----
-plan: 202605/vcs_replayable_selection.md
----
+- **PLAN:** [../202605/vcs_replayable_selection.md](../vcs_replayable_selection.md)
+
  Can you help me figure out why the project named "project" was every thought to be the last project name that was used with a VCS xprompt workflow (see the `sase ace` snapshot below) and make the necessary changes to make sure this never happens again? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

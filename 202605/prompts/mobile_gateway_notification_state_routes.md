@@ -1,10 +1,4 @@
----
-plan: 202605/mobile_gateway_notification_state_routes.md
----
-
-
-
-
+- **PLAN:** [../202605/mobile_gateway_notification_state_routes.md](../mobile_gateway_notification_state_routes.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-26.2 is complete?
 

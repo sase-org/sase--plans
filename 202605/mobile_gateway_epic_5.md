@@ -4,8 +4,10 @@ bead_id: sase-26.5
 tier: epic
 legend_bead_id: sase-26
 status: wip
-prompt: 202605/prompts/mobile_gateway_epic_5.md
 ---
+
+- **PROMPT:** [202605/prompts/mobile_gateway_epic_5.md](prompts/mobile_gateway_epic_5.md)
+
 # Plan: Mobile MVP Epic 5 - Android App Foundation
 
 ## Context

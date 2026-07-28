@@ -1,6 +1,5 @@
----
-plan: 202605/legend_agent_tag_persistence.md
----
+- **PLAN:** [../202605/legend_agent_tag_persistence.md](../legend_agent_tag_persistence.md)
+
  This agent (see the `sase ace` snapshot below) was not tagged with the `%tag:sase-26` directive for some reason even though it was created via our legend integration. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

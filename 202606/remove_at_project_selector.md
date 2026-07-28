@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 20:55:12
 status: wip
-prompt: 202606/prompts/remove_at_project_selector.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_at_project_selector.md](prompts/remove_at_project_selector.md)
+
 # Remove Legacy `@` Project/ChangeSpec Agent Selector
 
 ## Goal

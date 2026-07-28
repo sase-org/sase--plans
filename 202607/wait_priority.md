@@ -53,6 +53,8 @@ status: wip
 bead_id: sase-9k
 ---
 
+- **PROMPT:** [202607/prompts/wait_priority.md](prompts/wait_priority.md)
+
 # Plan: Make `%wait(priority=N)` effective, observable, and editable
 
 ## Background: what is already correct

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-07-12 17:43:01
 status: done
-prompt: 202607/prompts/symvision_extraction_1.md
 tier: epic
 bead_id: sase-5t
 ---
+
+- **PROMPT:** [202607/prompts/symvision_extraction_1.md](prompts/symvision_extraction_1.md)
+
 # Factor pyvision into symvision and migrate sase + chezmoi
 
 ## Summary

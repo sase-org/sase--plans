@@ -1,6 +1,5 @@
----
-plan: 202606/cli_help_output.md
----
+- **PLAN:** [../202606/cli_help_output.md](../cli_help_output.md)
+
  Can you help me make some improvements to sase's command line help output?
 
 - Let's migrate the current --help option to a new -H|--full-help option.

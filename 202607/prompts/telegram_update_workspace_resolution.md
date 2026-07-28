@@ -1,6 +1,5 @@
----
-plan: 202607/telegram_update_workspace_resolution.md
----
+- **PLAN:** [../202607/telegram_update_workspace_resolution.md](../telegram_update_workspace_resolution.md)
+
 The user sent an image via Telegram with the following caption:
 
  I don't think the /update command is working from Telegram anymore. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the

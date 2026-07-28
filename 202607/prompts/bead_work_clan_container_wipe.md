@@ -1,6 +1,5 @@
----
-plan: 202607/bead_work_clan_container_wipe.md
----
+- **PLAN:** [../202607/bead_work_clan_container_wipe.md](../bead_work_clan_container_wipe.md)
+
  I'm trying to restart the sase-6v epic but it is not working (see the output below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate
 tier, validate and revalidate until it passes, then submit it with `sase plan propose` (as the skill instructs)
 before making any file changes.

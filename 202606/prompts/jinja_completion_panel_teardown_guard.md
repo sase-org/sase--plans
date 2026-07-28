@@ -1,6 +1,5 @@
----
-plan: 202606/jinja_completion_panel_teardown_guard.md
----
+- **PLAN:** [../202606/jinja_completion_panel_teardown_guard.md](../jinja_completion_panel_teardown_guard.md)
+
  GitHub Actions is failing with the below error. Can you help me diagnose the root cause of this issue and fix it? If this is just a flaky screen shot test, can you fix the flakiness? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

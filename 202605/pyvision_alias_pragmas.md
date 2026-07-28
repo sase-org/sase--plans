@@ -2,9 +2,11 @@
 create_time: 2026-05-01 02:12:31
 bead_id: sase-1q
 status: done
-prompt: 202605/prompts/pyvision_alias_pragmas.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/pyvision_alias_pragmas.md](prompts/pyvision_alias_pragmas.md)
+
 # Pyvision Alias Usage and Test-Pragma Ban Plan
 
 ## Goal

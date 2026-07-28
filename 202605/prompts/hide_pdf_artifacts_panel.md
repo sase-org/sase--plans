@@ -1,6 +1,5 @@
----
-plan: 202605/hide_pdf_artifacts_panel.md
----
+- **PLAN:** [../202605/hide_pdf_artifacts_panel.md](../hide_pdf_artifacts_panel.md)
+
  We shouldn't be showing PDF files in the artifacts panel (see the `sase ace` snapshot below). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

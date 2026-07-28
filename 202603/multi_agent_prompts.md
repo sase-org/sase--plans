@@ -1,10 +1,11 @@
 ---
 bead_id: sase-2
 status: done
-prompt: 202603/prompts/multi_agent_prompts.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/multi_agent_prompts.md](prompts/multi_agent_prompts.md)
 
 # Multi-Agent Prompts: Implementation Plan
 

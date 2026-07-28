@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 13:18:21
 status: done
-prompt: 202605/prompts/plan_step_runtime.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_step_runtime.md](prompts/plan_step_runtime.md)
+
 # Plan: Fix completed plan-step runtime suffixes
 
 ## Problem

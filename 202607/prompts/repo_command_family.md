@@ -1,6 +1,4 @@
----
-plan: 202607/repo_command_family.md
----
+- **PLAN:** [../202607/repo_command_family.md](../repo_command_family.md)
 
 #fork:sase-5w Can you now help me add a new sase repo command?
 

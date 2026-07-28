@@ -81,6 +81,8 @@ status: done
 bead_id: sase-9t
 ---
 
+- **PROMPT:** [202607/prompts/axe_required_descriptions.md](prompts/axe_required_descriptions.md)
+
 # Plan: Require descriptions for every AXE lumberjack and chop
 
 ## Goal

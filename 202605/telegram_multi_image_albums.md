@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 21:31:52
 status: wip
-prompt: 202605/prompts/telegram_multi_image_albums.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_multi_image_albums.md](prompts/telegram_multi_image_albums.md)
+
 # Implementation Plan - Telegram Multi-Image Launches
 
 ## Context

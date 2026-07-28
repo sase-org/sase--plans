@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 14:59:20
 status: done
-prompt: 202603/prompts/timestamps_format_migration.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/timestamps_format_migration.md](prompts/timestamps_format_migration.md)
 
 # Migrate TIMESTAMPS Field to YYMMDD_HHMMSS Format
 

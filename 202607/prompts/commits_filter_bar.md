@@ -1,6 +1,5 @@
----
-plan: 202607/commits_filter_bar.md
----
+- **PLAN:** [../202607/commits_filter_bar.md](../commits_filter_bar.md)
+
  The `f` (filter) keymap on the "Commits" sub-tab of the "Artifacts" tab
 doesn't work (pressing `<enter>` after inputting a filter does nothing). Can you
 help me fix this and also improve the filtering functionality on this tab?

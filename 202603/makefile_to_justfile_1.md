@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 10:03:33
 status: wip
-prompt: 202603/prompts/makefile_to_justfile_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/makefile_to_justfile_1.md](prompts/makefile_to_justfile_1.md)
 
 # Plan: Migrate chezmoi repo from Makefile to Justfile
 

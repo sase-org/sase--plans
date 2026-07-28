@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 12:13:10
 status: done
-prompt: 202606/prompts/project_management_fullscreen.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_management_fullscreen.md](prompts/project_management_fullscreen.md)
+
 # Plan: Beautiful Near-Full-Screen Project Management Panel
 
 ## Goal

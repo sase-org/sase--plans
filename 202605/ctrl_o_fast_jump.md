@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 16:11:33
 status: done
-prompt: 202605/prompts/ctrl_o_fast_jump.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ctrl_o_fast_jump.md](prompts/ctrl_o_fast_jump.md)
+
 # Ctrl+O Fast Jump Plan
 
 ## Context

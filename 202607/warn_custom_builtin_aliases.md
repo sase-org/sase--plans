@@ -9,8 +9,9 @@ goal: 'The ACE Models panel immediately and persistently identifies builtin alia
   '
 create_time: 2026-07-21 09:23:31
 status: done
-prompt: 202607/prompts/warn_custom_builtin_aliases.md
 ---
+
+- **PROMPT:** [202607/prompts/warn_custom_builtin_aliases.md](prompts/warn_custom_builtin_aliases.md)
 
 # Plan: Warn when custom model aliases shadow builtin aliases
 

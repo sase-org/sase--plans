@@ -3,8 +3,10 @@ create_time: 2026-05-08 20:04:47
 bead_id: sase-2e
 tier: epic
 status: done
-prompt: 202605/prompts/permanent_agent_names.md
 ---
+
+- **PROMPT:** [202605/prompts/permanent_agent_names.md](prompts/permanent_agent_names.md)
+
 # Permanent Agent Names
 
 ## Goal

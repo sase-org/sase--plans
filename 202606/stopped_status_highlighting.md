@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 18:36:18
 status: done
-prompt: 202606/prompts/stopped_status_highlighting.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/stopped_status_highlighting.md](prompts/stopped_status_highlighting.md)
+
 # Plan: Distinct, Beautiful Syntax Highlighting for the `STOPPED` Agent Status
 
 ## Problem

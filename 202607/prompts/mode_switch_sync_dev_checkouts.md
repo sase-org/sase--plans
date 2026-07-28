@@ -1,6 +1,5 @@
----
-plan: 202607/mode_switch_sync_dev_checkouts.md
----
+- **PLAN:** [../202607/mode_switch_sync_dev_checkouts.md](../mode_switch_sync_dev_checkouts.md)
+
  When the `m` (switch) keymap is used on the "Updates" tab of the "SASE Admin Center" panel to switch from the
 PyPI versions of installed sase packages to the corresponding dev/editable versions of those packages, we should be
 making sure to sync every one of those sase repos with the corresponding master branch (e.g. by running the `git pull`

@@ -1,6 +1,5 @@
----
-plan: 202606/agent_context_memory_skills_panel.md
----
+- **PLAN:** [../202606/agent_context_memory_skills_panel.md](../agent_context_memory_skills_panel.md)
+
  We already show what memory files an agent has read in the metadata panel in the TUI. Can you help me support
 also showing all of the xprompt skills that were used by that agent?
 

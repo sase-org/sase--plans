@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 03:02:17
 status: wip
-prompt: 202607/prompts/migrate_sdd_to_companion_repo.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/migrate_sdd_to_companion_repo.md](prompts/migrate_sdd_to_companion_repo.md)
+
 # Plan: Migrate sase-org/sase SDD Files to the `sase-org/sdd` Companion Repo
 
 ## Product Context

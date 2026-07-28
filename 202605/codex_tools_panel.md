@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 19:30:49
 status: done
-prompt: 202605/prompts/codex_tools_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_tools_panel.md](prompts/codex_tools_panel.md)
+
 # Plan: Add Codex Support To The Agents Tools Panel
 
 ## Context

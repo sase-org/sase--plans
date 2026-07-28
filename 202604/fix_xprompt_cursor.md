@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 01:40:43
 status: done
-prompt: 202604/prompts/fix_xprompt_cursor.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_xprompt_cursor.md](prompts/fix_xprompt_cursor.md)
 
 # Fix off-by-one cursor placement in sase-nvim xprompt completion
 

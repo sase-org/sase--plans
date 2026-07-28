@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 22:22:51
 status: done
-prompt: 202604/prompts/repeat_iteration_variable.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_iteration_variable.md](prompts/repeat_iteration_variable.md)
 
 # Plan: Expose `N` Jinja variable for `%N` / `%repeat` directive
 

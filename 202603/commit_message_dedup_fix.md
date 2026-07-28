@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 21:30:40
 status: done
-prompt: 202603/prompts/commit_message_dedup_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_message_dedup_fix.md](prompts/commit_message_dedup_fix.md)
 
 # Fix: Missing "Commit message:" output variable in agent metadata panel
 

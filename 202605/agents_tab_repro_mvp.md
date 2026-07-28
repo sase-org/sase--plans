@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-13 11:40:55
 status: done
-prompt: 202605/prompts/agents_tab_repro_mvp.md
 bead_id: sase-3d
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agents_tab_repro_mvp.md](prompts/agents_tab_repro_mvp.md)
+
 # Plan: Agents Tab Reproduction Testing Framework MVP
 
 ## Goal

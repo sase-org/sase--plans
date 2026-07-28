@@ -1,6 +1,5 @@
----
-plan: 202606/multi_agent_xprompt_marker.md
----
+- **PLAN:** [../202606/multi_agent_xprompt_marker.md](../multi_agent_xprompt_marker.md)
+
  #fork:9d.cld The line "and multi-agent xprompts" seems off since multi-agent xprompts (see the pick_plan.md file in my chezmoi repo for an example) can be expanded inline, right? When additional user text is added to a prompt that invokes a multi-agent xprompt, we just add the text to the appropriate part of the first agent prompt in the multi-agent prompt. If multiple multi-agent prompts are invoked in the same prompt, the latter multi-agent prompt should have its agent prompts appended to the previous multi-agent prompts (i.e. each multi-agent prompt's agents will be launched in sequence).
 
 Can you help me ensure that what I've said above is accurate and make it so if not? Also, make sure the error messages / user guidance around when to use `#` vs `#!` is clear and accurate. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the

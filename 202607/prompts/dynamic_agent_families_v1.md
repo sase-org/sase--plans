@@ -1,6 +1,5 @@
----
-plan: 202607/dynamic_agent_families_v1.md
----
+- **PLAN:** [../202607/dynamic_agent_families_v1.md](../dynamic_agent_families_v1.md)
+
  #fork:0b.f1 Ok. I like your v1 design. Can you now help me implement this (v1) feature? Go with your recommended options for the "v1 decisions still needed".
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 11:35:35
 status: done
-prompt: 202605/prompts/live_agent_file_panel_diffs.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/live_agent_file_panel_diffs.md](prompts/live_agent_file_panel_diffs.md)
+
 # Live Agent File Panel Diffs
 
 ## Problem

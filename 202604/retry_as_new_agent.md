@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 21:40:25
 status: done
-prompt: 202604/prompts/retry_as_new_agent.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/retry_as_new_agent.md](prompts/retry_as_new_agent.md)
+
 # Retry as a Brand-New Agent
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 11:38:21
 status: wip
-prompt: 202605/prompts/sync_dollar_hooks.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sync_dollar_hooks.md](prompts/sync_dollar_hooks.md)
+
 # Plan: Reset `$` Hook Results After `Y` Sync
 
 ## Goal

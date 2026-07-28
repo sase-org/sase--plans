@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 15:34:39
 status: done
-prompt: 202607/prompts/companion_sdd_finalizer_prompting.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/companion_sdd_finalizer_prompting.md](prompts/companion_sdd_finalizer_prompting.md)
+
 # Prompt Agents to Commit Companion SDD Repo Changes (Stop Generic Finalizer Sweeps)
 
 ## Problem

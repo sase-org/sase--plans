@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-20 19:22:29
 status: done
-prompt: 202604/prompts/repeat_wait_chain.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_wait_chain.md](prompts/repeat_wait_chain.md)
 
 # Sequential `%repeat` via `%wait` Chain
 

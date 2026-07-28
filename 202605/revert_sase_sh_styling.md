@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 20:08:01
 status: done
-prompt: 202605/prompts/revert_sase_sh_styling.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revert_sase_sh_styling.md](prompts/revert_sase_sh_styling.md)
+
 # Revert recent sase.sh styling while preserving desktop sidebar section emphasis
 
 ## Context

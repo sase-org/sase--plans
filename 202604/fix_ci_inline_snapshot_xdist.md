@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 09:15:48
 status: done
-prompt: 202604/prompts/fix_ci_inline_snapshot_xdist.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_ci_inline_snapshot_xdist.md](prompts/fix_ci_inline_snapshot_xdist.md)
+
 # Fix CI failure: `--inline-snapshot=short-report cannot be combined with xdist`
 
 ## Problem

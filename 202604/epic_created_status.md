@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 14:20:46
 status: done
-prompt: 202604/prompts/epic_created_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/epic_created_status.md](prompts/epic_created_status.md)
+
 # Plan: Add "EPIC CREATED" Agent Status for Completed Epic-Creation Follow-ups
 
 ## Problem

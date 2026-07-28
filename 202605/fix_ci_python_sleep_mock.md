@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 18:01:22
 status: done
-prompt: 202605/prompts/fix_ci_python_sleep_mock.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_ci_python_sleep_mock.md](prompts/fix_ci_python_sleep_mock.md)
+
 # Plan: Fix CI Python Sleep Mock Flake
 
 ## Context

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 13:17:08
 status: done
-prompt: 202604/prompts/rewind_bang_suffix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rewind_bang_suffix.md](prompts/rewind_bang_suffix.md)
 
 # Plan: Support `!` suffix for rewind (`R`) keymap on CLs tab
 

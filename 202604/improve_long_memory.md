@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 13:26:51
 status: done
-prompt: 202604/prompts/improve_long_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/improve_long_memory.md](prompts/improve_long_memory.md)
 
 # Plan: Improve Long-Term Memory Files Based on AGENTS.md Best Practices
 

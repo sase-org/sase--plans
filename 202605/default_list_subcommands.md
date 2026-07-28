@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 21:49:34
 status: done
-prompt: 202605/prompts/default_list_subcommands.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/default_list_subcommands.md](prompts/default_list_subcommands.md)
+
 # Default list Subcommands
 
 ## Goal

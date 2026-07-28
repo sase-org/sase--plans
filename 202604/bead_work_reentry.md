@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 23:54:50
 status: done
-prompt: 202604/prompts/bead_work_reentry.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bead_work_reentry.md](prompts/bead_work_reentry.md)
+
 # Plan: make `sase bead work <epic>` re-runnable
 
 ## Summary

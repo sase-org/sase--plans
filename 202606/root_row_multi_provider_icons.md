@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 10:23:49
 status: done
-prompt: 202606/prompts/root_row_multi_provider_icons.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/root_row_multi_provider_icons.md](prompts/root_row_multi_provider_icons.md)
+
 # Show All Child LLM Provider Icons on Root Agent Rows
 
 ## Problem

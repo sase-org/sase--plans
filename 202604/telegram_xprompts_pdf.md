@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-23 20:51:33
 status: done
-prompt: 202604/prompts/telegram_xprompts_pdf.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/telegram_xprompts_pdf.md](prompts/telegram_xprompts_pdf.md)
+
 # Telegram `/xprompts` Catalog: Beautiful PDF + Stats
 
 ## 1. Goal

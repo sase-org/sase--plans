@@ -4,8 +4,9 @@ goal: Make the xprompt syntax-highlighting test deterministic in a core-only dev
   environment while preserving coverage of project-scoped slash-skill highlighting.
 create_time: 2026-07-15 09:17:28
 status: done
-prompt: 202607/prompts/stabilize_xprompt_skill_highlight_test.md
 ---
+
+- **PROMPT:** [202607/prompts/stabilize_xprompt_skill_highlight_test.md](prompts/stabilize_xprompt_skill_highlight_test.md)
 
 # Plan: Stabilize project-scoped xprompt skill highlighting coverage
 

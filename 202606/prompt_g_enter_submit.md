@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 16:11:30
 status: done
-prompt: 202606/prompts/prompt_g_enter_submit.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_g_enter_submit.md](prompts/prompt_g_enter_submit.md)
+
 # Plan: Move Current Prompt Submit From Ctrl+Shift+S To g<enter>
 
 ## Context

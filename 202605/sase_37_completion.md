@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 18:26:18
 status: wip
-prompt: 202605/prompts/sase_37_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_37_completion.md](prompts/sase_37_completion.md)
+
 # sase-37 Completion Plan
 
 ## Context

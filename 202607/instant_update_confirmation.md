@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 12:32:25
 status: done
-prompt: 202607/prompts/instant_update_confirmation.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/instant_update_confirmation.md](prompts/instant_update_confirmation.md)
+
 # Make `,U` Open Update Confirmation Immediately After Refresh
 
 ## Context

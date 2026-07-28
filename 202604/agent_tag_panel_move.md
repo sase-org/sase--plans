@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 13:51:32
 status: done
-prompt: 202604/prompts/agent_tag_panel_move.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_tag_panel_move.md](prompts/agent_tag_panel_move.md)
+
 # Plan: Immediate Agent Panel Move After Tagging
 
 ## Context

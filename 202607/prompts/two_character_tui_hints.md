@@ -1,6 +1,5 @@
----
-plan: 202607/two_character_tui_hints.md
----
+- **PLAN:** [../202607/two_character_tui_hints.md](../two_character_tui_hints.md)
+
  Can you help me add support for two-character hint values in the TUI?
 
 - We should use `00` to start, then `01`, up to `09` and then `0a`, all the way up to `ZZ`.

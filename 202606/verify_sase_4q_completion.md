@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 12:05:54
 status: done
-prompt: 202606/prompts/verify_sase_4q_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/verify_sase_4q_completion.md](prompts/verify_sase_4q_completion.md)
+
 # Verify and Complete Prompt Stash Epic `sase-4q`
 
 ## Context

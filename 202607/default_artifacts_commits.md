@@ -8,8 +8,9 @@ goal: 'A fresh ACE session opens the Commits sub-tab the first time the user ent
   '
 create_time: 2026-07-21 10:01:33
 status: done
-prompt: '[202607/prompts/default_artifacts_commits.md](prompts/default_artifacts_commits.md)'
 ---
+
+- **PROMPT:** [202607/prompts/default_artifacts_commits.md](prompts/default_artifacts_commits.md)
 
 # Plan: Default the Artifacts tab to Commits
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 13:22:53
 status: done
-prompt: 202604/prompts/apostrophe_jump_uppercase_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/apostrophe_jump_uppercase_hints.md](prompts/apostrophe_jump_uppercase_hints.md)
+
 # Support A-Z Hints for Apostrophe Jump Mode
 
 ## Goal

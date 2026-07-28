@@ -1,6 +1,5 @@
----
-plan: 202606/persist_prompt_stash_pin.md
----
+- **PLAN:** [../202606/persist_prompt_stash_pin.md](../persist_prompt_stash_pin.md)
+
  #fork:05m Can you now help me make the `<space>` functionality persist across restarts (of `sase ace` or even this machine)?
 
 - This keymap currently adds a "+" character to the prompt stash entry. Let's start adding a pin emoji / icon instead.

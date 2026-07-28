@@ -1,6 +1,5 @@
----
-plan: 202603/custom_keymaps.md
----
+- **PLAN:** [../202603/custom_keymaps.md](../custom_keymaps.md)
+
 Can you help me make ALL keymaps in the `sase ace` TUI configurable via sase's deep-merge configuration system?
 
 - All keymaps defaults (the ones that are hard-coded currently) should be defined in the src/sase/default_config.yml

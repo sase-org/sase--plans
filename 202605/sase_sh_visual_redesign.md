@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 19:03:47
 status: done
-prompt: 202605/prompts/sase_sh_visual_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_sh_visual_redesign.md](prompts/sase_sh_visual_redesign.md)
+
 # SASE Plan: sase.sh Cosmetic Redesign
 
 ## Goal

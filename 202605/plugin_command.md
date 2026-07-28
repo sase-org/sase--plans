@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 16:54:48
 status: done
-prompt: 202605/prompts/plugin_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plugin_command.md](prompts/plugin_command.md)
+
 # Plan: `sase plugin`
 
 ## Goal

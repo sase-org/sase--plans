@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:29:00
 status: done
-prompt: 202604/prompts/ace_loading_indicators.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_loading_indicators.md](prompts/ace_loading_indicators.md)
 
 # Beautiful Startup Loading Indicators for `sase ace` TUI
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 13:08:50
 status: done
-prompt: 202604/prompts/grow_memory_pool.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/grow_memory_pool.md](prompts/grow_memory_pool.md)
 
 # Plan: Grow Dynamic Memory Pool
 

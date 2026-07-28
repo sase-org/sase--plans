@@ -1,6 +1,5 @@
----
-plan: 202605/pylimit_split_registry_collision.md
----
+- **PLAN:** [../202605/pylimit_split_registry_collision.md](../pylimit_split_registry_collision.md)
+
   Something is wrong with the sase_pylimit_split chop (defined in the sase_athena.yml file in my
 chezmoi repo). I can see (by running the `just pylimit` command) that some files need to be split, but I just ran the
 chop (from the AXE tab using the `r` keymap) and it didn't launch any agents to split these files. Can you help me

@@ -5,9 +5,10 @@ description: Send a "🚀 Launched" message to Google Chat when retired chat plu
   is posted directly via gchat_client.send_message — it is NOT a sase notification.
 create_time: 2026-04-25 10:50:54
 status: done
-prompt: 202604/prompts/gchat_agent_launch_message.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/gchat_agent_launch_message.md](prompts/gchat_agent_launch_message.md)
 
 # Google Chat — Agent Launch Message
 

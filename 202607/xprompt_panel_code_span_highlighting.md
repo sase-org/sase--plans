@@ -10,8 +10,9 @@ goal: 'Inline code spans in the AGENT XPROMPT section of the agent metadata pane
   '
 create_time: 2026-07-16 17:13:02
 status: done
-prompt: 202607/prompts/xprompt_panel_code_span_highlighting.md
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_panel_code_span_highlighting.md](prompts/xprompt_panel_code_span_highlighting.md)
 
 # Plan: Inline code highlighting in the agent XPROMPT panel
 

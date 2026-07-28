@@ -1,6 +1,5 @@
----
-plan: 202607/clickable_sdd_frontmatter_links.md
----
+- **PLAN:** [../202607/clickable_sdd_frontmatter_links.md](../clickable_sdd_frontmatter_links.md)
+
  I would like to start using a markdown link for the `prompt` (used in
 the frontmatter of plan files) and `plan` (used in the frontmatter of prompt
 files) properties. Can you help me implement this?

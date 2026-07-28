@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:52:40
 status: wip
-prompt: 202605/prompts/agents_tab_agent_explosion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_tab_agent_explosion.md](prompts/agents_tab_agent_explosion.md)
+
 # Diagnose and Fix Agents Tab Agent Explosion
 
 ## Problem

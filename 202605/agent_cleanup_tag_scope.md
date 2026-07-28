@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 22:04:50
 status: done
-prompt: 202605/prompts/agent_cleanup_tag_scope.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_cleanup_tag_scope.md](prompts/agent_cleanup_tag_scope.md)
+
 # Agent Cleanup Tag Scope Plan
 
 ## Problem

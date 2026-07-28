@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 20:39:51
 status: done
-prompt: 202605/prompts/init_memory_auto_commit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/init_memory_auto_commit.md](prompts/init_memory_auto_commit.md)
+
 # Plan: `sase init memory` Workspace Hint and Auto-Commit
 
 ## Goal

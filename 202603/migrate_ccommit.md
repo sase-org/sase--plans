@@ -2,9 +2,10 @@
 status: done
 create_time: 2026-03-24 12:30:08
 bead_id: sase-b
-prompt: 202603/prompts/migrate_ccommit.md
 tier: epic
 ---
+
+- **PROMPT:** [202603/prompts/migrate_ccommit.md](prompts/migrate_ccommit.md)
 
 # Plan: Integrate ccommit into Unified Commit Workflows
 

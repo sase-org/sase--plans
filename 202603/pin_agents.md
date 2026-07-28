@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 16:51:54
 status: done
-prompt: 202603/prompts/pin_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/pin_agents.md](prompts/pin_agents.md)
 
 # Plan: Pin Agents on the Agents Tab
 

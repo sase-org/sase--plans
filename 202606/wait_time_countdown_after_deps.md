@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 09:23:12
 status: done
-prompt: 202606/prompts/wait_time_countdown_after_deps.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/wait_time_countdown_after_deps.md](prompts/wait_time_countdown_after_deps.md)
+
 # Plan: `%wait` relative-time countdown must start only after agent dependencies complete
 
 ## Problem / product context

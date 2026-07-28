@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 12:14:57
 status: done
-prompt: 202604/prompts/uninstall_claude_code_nvim.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/uninstall_claude_code_nvim.md](prompts/uninstall_claude_code_nvim.md)
 
 # Plan: Uninstall claude-code.nvim from Neovim config
 

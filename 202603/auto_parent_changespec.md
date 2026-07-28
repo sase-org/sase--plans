@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 11:05:45
 status: done
-prompt: 202603/prompts/auto_parent_changespec.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/auto_parent_changespec.md](prompts/auto_parent_changespec.md)
 
 # Plan: Auto-set PARENT on new ChangeSpec during `sase commit`
 

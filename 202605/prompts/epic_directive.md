@@ -1,6 +1,5 @@
----
-plan: 202605/epic_directive.md
----
+- **PLAN:** [../202605/epic_directive.md](../epic_directive.md)
+
  Can you help me add a new %epic directive?
 
 - When this directive is used and the agent creates a plan using the /sase_plan skill, we should auto-approve it as an epic.

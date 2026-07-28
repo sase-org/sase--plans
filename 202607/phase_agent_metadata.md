@@ -8,8 +8,9 @@ goal: 'ACE shows the full SASE PLAN section only for the agent that authored an 
   '
 create_time: 2026-07-16 06:40:23
 status: done
-prompt: 202607/prompts/phase_agent_metadata.md
 ---
+
+- **PROMPT:** [202607/prompts/phase_agent_metadata.md](prompts/phase_agent_metadata.md)
 
 # Plan: Make epic phase-agent metadata role-aware
 

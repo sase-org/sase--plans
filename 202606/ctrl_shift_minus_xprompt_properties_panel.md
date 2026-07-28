@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 10:27:48
 status: done
-prompt: 202606/prompts/ctrl_shift_minus_xprompt_properties_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ctrl_shift_minus_xprompt_properties_panel.md](prompts/ctrl_shift_minus_xprompt_properties_panel.md)
+
 # Ctrl+Shift+- XPrompt Properties Panel Toggle Plan
 
 ## Context

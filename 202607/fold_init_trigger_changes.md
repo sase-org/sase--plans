@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:59:39
 status: done
-prompt: 202607/prompts/fold_init_trigger_changes.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fold_init_trigger_changes.md](prompts/fold_init_trigger_changes.md)
+
 # Fold `sase init` trigger changes into generated commits
 
 ## Context

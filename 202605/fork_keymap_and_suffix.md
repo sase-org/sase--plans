@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 15:49:41
 status: done
-prompt: 202605/prompts/fork_keymap_and_suffix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fork_keymap_and_suffix.md](prompts/fork_keymap_and_suffix.md)
+
 # Plan: Move Agent Forking to `f` and `.f<N>` Names
 
 ## Goal

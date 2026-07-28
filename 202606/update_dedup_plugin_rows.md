@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 07:45:04
 status: done
-prompt: 202606/prompts/update_dedup_plugin_rows.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/update_dedup_plugin_rows.md](prompts/update_dedup_plugin_rows.md)
+
 # Plan: Deduplicate Plugin Rows in `sase update`
 
 ## Problem

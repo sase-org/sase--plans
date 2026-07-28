@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:50:35
 status: done
-prompt: 202605/prompts/waiting_agents_stuck_maintenance.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/waiting_agents_stuck_maintenance.md](prompts/waiting_agents_stuck_maintenance.md)
+
 # Plan: Fix WAITING Agents Stuck Behind Stale Axe Maintenance
 
 ## Problem

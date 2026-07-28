@@ -9,8 +9,9 @@ goal: 'The Admin Center landing page becomes a visually polished, optically bala
   '
 create_time: 2026-07-20 13:02:37
 status: done
-prompt: 202607/prompts/admin_center_landing_polish.md
 ---
+
+- **PROMPT:** [202607/prompts/admin_center_landing_polish.md](prompts/admin_center_landing_polish.md)
 
 # Plan: Beautiful SASE Admin Center landing page
 

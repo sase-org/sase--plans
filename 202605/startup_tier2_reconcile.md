@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-16 19:07:50
 status: done
-prompt: 202605/prompts/startup_tier2_reconcile.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/startup_tier2_reconcile.md](prompts/startup_tier2_reconcile.md)
+
 # One-shot Startup Tier 2 Full-History Reconcile
 
 ## Motivation

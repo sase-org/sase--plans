@@ -7,8 +7,9 @@ goal: 'memory/glossary.md accurately documents that ProjectSpec/ChangeSpec paths
   '
 create_time: 2026-07-16 07:50:41
 status: done
-prompt: 202607/prompts/glossary_project_key.md
 ---
+
+- **PROMPT:** [202607/prompts/glossary_project_key.md](prompts/glossary_project_key.md)
 
 # Plan: Clarify project directory key vs project name in the glossary memory
 

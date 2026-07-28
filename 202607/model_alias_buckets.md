@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 09:11:12
 status: done
-prompt: 202607/prompts/model_alias_buckets.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/model_alias_buckets.md](prompts/model_alias_buckets.md)
+
 # Plan: Model Alias Buckets in the TUI Models Panel (`,m`)
 
 ## Goal

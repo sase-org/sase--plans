@@ -8,8 +8,9 @@ goal: 'Epic clan-summary generation recovers from a warm but stale sidecar bead 
   '
 create_time: 2026-07-20 11:03:15
 status: done
-prompt: 202607/prompts/launch_fresh_epic_summary.md
 ---
+
+- **PROMPT:** [202607/prompts/launch_fresh_epic_summary.md](prompts/launch_fresh_epic_summary.md)
 
 # Plan: Launch-fresh epic summary lookup
 

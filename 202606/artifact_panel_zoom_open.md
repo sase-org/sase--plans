@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 09:43:15
 status: done
-prompt: 202606/prompts/artifact_panel_zoom_open.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/artifact_panel_zoom_open.md](prompts/artifact_panel_zoom_open.md)
+
 # Plan: Artifact Panel Zoomed Tmux Open
 
 ## Goal

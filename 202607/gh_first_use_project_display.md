@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 11:57:05
 status: done
-prompt: 202607/prompts/gh_first_use_project_display.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/gh_first_use_project_display.md](prompts/gh_first_use_project_display.md)
+
 # Plan: First-use `#gh:org/repo` launches should display the repo name as the project, not `org/repo`
 
 ## Problem

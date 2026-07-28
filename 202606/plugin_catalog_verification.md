@@ -2,9 +2,10 @@
 title: Plugin catalog verification cleanup
 create_time: 2026-06-25 19:59:05
 status: done
-prompt: 202606/prompts/plugin_catalog_verification.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plugin_catalog_verification.md](prompts/plugin_catalog_verification.md)
 
 # Plan: Plugin catalog verification cleanup
 

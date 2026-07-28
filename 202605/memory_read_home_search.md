@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 08:54:33
 status: done
-prompt: 202605/prompts/memory_read_home_search.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_read_home_search.md](prompts/memory_read_home_search.md)
+
 # Plan: Search Project and Home Memory for `sase memory read`
 
 ## Goal

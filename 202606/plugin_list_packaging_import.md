@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 08:46:56
 status: done
-prompt: 202606/prompts/plugin_list_packaging_import.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plugin_list_packaging_import.md](prompts/plugin_list_packaging_import.md)
+
 # Plan: Fix `sase plugin list` crash when `packaging` is absent
 
 ## Problem

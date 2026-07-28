@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 21:08:05
 status: done
-prompt: 202604/prompts/mentor_checks_digest_20260408_210034.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/mentor_checks_digest_20260408_210034.md](prompts/mentor_checks_digest_20260408_210034.md)
 
 # Plan: Fix `sase axe` hook timeouts in digest_20260408_210034
 

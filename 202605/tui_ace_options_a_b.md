@@ -3,8 +3,10 @@ create_time: 2026-05-15 11:26:38
 status: done
 bead_id: sase-3o
 tier: epic
-prompt: 202605/prompts/tui_ace_options_a_b.md
 ---
+
+- **PROMPT:** [202605/prompts/tui_ace_options_a_b.md](prompts/tui_ace_options_a_b.md)
+
 # TUI ACE Options A/B Optimization Plan
 
 ## Goal

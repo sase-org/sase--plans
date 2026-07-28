@@ -2,9 +2,10 @@
 title: Commit Stop Hook Bead Closure Ordering
 create_time: 2026-05-07 23:42:10
 status: done
-prompt: 202605/prompts/commit_stop_hook_bead_closure.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/commit_stop_hook_bead_closure.md](prompts/commit_stop_hook_bead_closure.md)
 
 # Commit Stop Hook Bead Closure Ordering
 

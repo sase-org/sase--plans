@@ -9,8 +9,9 @@ goal: 'The Agents tab marks a real multi-member agent family with its own contai
   '
 create_time: 2026-07-18 09:04:10
 status: done
-prompt: 202607/prompts/agent_family_row_icon.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_family_row_icon.md](prompts/agent_family_row_icon.md)
 
 # Plan: Agent family row icon and a better clan icon
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 22:50:15
 status: wip
-prompt: 202604/prompts/fix_pyenv_sase_shim.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_pyenv_sase_shim.md](prompts/fix_pyenv_sase_shim.md)
 
 # Fix pyenv shim for `sase` being repeatedly recreated
 

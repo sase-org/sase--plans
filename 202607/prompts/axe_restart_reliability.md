@@ -1,6 +1,5 @@
----
-plan: 202607/axe_restart_reliability.md
----
+- **PLAN:** [../202607/axe_restart_reliability.md](../axe_restart_reliability.md)
+
  Something seems wrong with lumberjack chops or maybe with `sase axe`
 itself. I've been noticing, for example, that I often just stop receiving
 Telegram messages from sase (and it stops replying to my Telegram messages).

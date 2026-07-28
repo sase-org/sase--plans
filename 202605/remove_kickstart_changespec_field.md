@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 01:53:06
 status: done
-prompt: 202605/prompts/remove_kickstart_changespec_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_kickstart_changespec_field.md](prompts/remove_kickstart_changespec_field.md)
+
 # Remove the KICKSTART ChangeSpec field
 
 ## Goal

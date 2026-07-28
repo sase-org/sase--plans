@@ -1,6 +1,5 @@
----
-plan: 202605/feedback_timestamp_dedup.md
----
+- **PLAN:** [../202605/feedback_timestamp_dedup.md](../feedback_timestamp_dedup.md)
+
  It looks like the "FBACK" timestamps are duplicated (see the `sase ace` snapshot below). I did give feedback twice (for 2 different plans), but there is no way that happened in the same second.
 Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

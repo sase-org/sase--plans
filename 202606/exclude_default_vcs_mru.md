@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 09:00:16
 status: done
-prompt: 202606/prompts/exclude_default_vcs_mru.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/exclude_default_vcs_mru.md](prompts/exclude_default_vcs_mru.md)
+
 # Exclude Default VCS XPrompt From Prompt Cycling
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 13:52:52
 status: done
-prompt: 202607/prompts/multi_commit_view_navigation.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/multi_commit_view_navigation.md](prompts/multi_commit_view_navigation.md)
+
 # Plan: Multi-Commit Navigation in the Commit View Modal
 
 ## 1. Problem and Goal

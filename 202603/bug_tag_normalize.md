@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 21:12:29
 status: done
-prompt: 202603/prompts/bug_tag_normalize.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/bug_tag_normalize.md](prompts/bug_tag_normalize.md)
 
 # Plan: VCS-Agnostic BUG Tag Normalization
 

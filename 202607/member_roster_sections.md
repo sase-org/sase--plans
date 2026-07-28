@@ -49,6 +49,8 @@ status: done
 bead_id: sase-6w
 ---
 
+- **PROMPT:** [202607/prompts/member_roster_sections.md](prompts/member_roster_sections.md)
+
 # Plan: Numbered member rosters for clan and family detail panels
 
 ## Context and product goals

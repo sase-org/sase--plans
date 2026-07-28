@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 12:14:06
 status: done
-prompt: 202604/prompts/rust_mentor_timestamp_wire.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rust_mentor_timestamp_wire.md](prompts/rust_mentor_timestamp_wire.md)
+
 # Fix Rust Backend Query Crash On Mentor Status Lines
 
 ## Problem

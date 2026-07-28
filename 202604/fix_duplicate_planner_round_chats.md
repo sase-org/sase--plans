@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-17 17:10:01
 status: done
-prompt: 202604/prompts/fix_duplicate_planner_round_chats.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_duplicate_planner_round_chats.md](prompts/fix_duplicate_planner_round_chats.md)
 
 # Plan: Fix Duplicate PLANNER (round 2+) Agent Reply in `sase ace` TUI
 

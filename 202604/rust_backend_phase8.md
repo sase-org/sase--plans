@@ -2,9 +2,11 @@
 create_time: 2026-04-29 19:14:21
 status: done
 bead_id: sase-1f
-prompt: 202604/prompts/rust_backend_phase8.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase8.md](prompts/rust_backend_phase8.md)
+
 # Rust Backend Migration Phase 8: Remove Backend Selection And Python Fallbacks
 
 ## Context

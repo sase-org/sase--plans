@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 14:05:11
 status: done
-prompt: 202606/prompts/persist_prompt_stash_pin.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/persist_prompt_stash_pin.md](prompts/persist_prompt_stash_pin.md)
+
 # Plan: Persistent "pin" for prompt-stash entries (`<space>` toggles a pin that survives restarts)
 
 ## Goal

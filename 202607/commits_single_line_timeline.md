@@ -8,8 +8,9 @@ goal: 'Every commit entry in Artifacts > Commits is a beautiful, stable one-line
   '
 create_time: 2026-07-17 12:17:31
 status: wip
-prompt: 202607/prompts/commits_single_line_timeline.md
 ---
+
+- **PROMPT:** [202607/prompts/commits_single_line_timeline.md](prompts/commits_single_line_timeline.md)
 
 # Plan: Concise single-line commit timeline
 

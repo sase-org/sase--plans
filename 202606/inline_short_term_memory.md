@@ -3,8 +3,10 @@ create_time: 2026-06-26 15:48:19
 status: done
 bead_id: sase-5b
 tier: epic
-prompt: 202606/prompts/inline_short_term_memory.md
 ---
+
+- **PROMPT:** [202606/prompts/inline_short_term_memory.md](prompts/inline_short_term_memory.md)
+
 # Plan: Inline Short-Term Memory Into `AGENTS.md` (Drop `@` References)
 
 ## Goal

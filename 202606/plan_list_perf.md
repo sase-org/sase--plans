@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 14:06:06
 status: done
-prompt: 202606/prompts/plan_list_perf.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plan_list_perf.md](prompts/plan_list_perf.md)
+
 # Plan: Make `sase plan list` Fast
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202606/tui_agent_refresh_optimizations.md
----
+- **PLAN:** [../202606/tui_agent_refresh_optimizations.md](../tui_agent_refresh_optimizations.md)
+
  #fork:research.final-19 Can you now help me perform all of the more consequential (use your best judgement here and validate all findings that you use from prior research) changes / optimizations recommended in the research markdown file created by the previous agent?
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

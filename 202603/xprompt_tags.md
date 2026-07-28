@@ -1,10 +1,11 @@
 ---
 bead_id: sase-4
 status: done
-prompt: 202603/prompts/xprompt_tags.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/xprompt_tags.md](prompts/xprompt_tags.md)
 
 # Plan: XPrompt Tags
 

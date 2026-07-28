@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 09:34:47
 status: done
-prompt: 202603/prompts/commit_workflow_fixes.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/commit_workflow_fixes.md](prompts/commit_workflow_fixes.md)
 
 # Plan: VCS Commit Workflow Fixes & Improvements
 

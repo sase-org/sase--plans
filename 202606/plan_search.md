@@ -3,8 +3,10 @@ create_time: 2026-06-18 21:29:20
 bead_id: sase-4x
 tier: epic
 status: done
-prompt: 202606/prompts/plan_search.md
 ---
+
+- **PROMPT:** [202606/prompts/plan_search.md](prompts/plan_search.md)
+
 # Plan: `sase plan search` — Search SDD & Local Plans
 
 ## Goal

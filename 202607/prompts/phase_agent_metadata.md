@@ -1,6 +1,5 @@
----
-plan: 202607/phase_agent_metadata.md
----
+- **PLAN:** [../202607/phase_agent_metadata.md](../phase_agent_metadata.md)
+
  When phase agents run (that work phases of an epic plan), we seem to show the same "SASE PLAN" section when those agents are selected that we show for the agent that created the plan. This is not correct. Can you help me fix this?
 
 - Only the agent that created the epic and the agent that lands the epic should show the "SASE PLAN" section.

@@ -8,8 +8,9 @@ goal: 'The fast suite uses a measured, repeatedly validated xdist scheduling mod
   '
 create_time: 2026-07-20 12:10:54
 status: done
-prompt: 202607/prompts/distribution_scheduling.md
 ---
+
+- **PROMPT:** [202607/prompts/distribution_scheduling.md](prompts/distribution_scheduling.md)
 
 # Plan: Eliminate the pytest distribution tail
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 12:35:31
 status: done
-prompt: 202605/prompts/fix_agent_resume_terminal_statuses.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_agent_resume_terminal_statuses.md](prompts/fix_agent_resume_terminal_statuses.md)
+
 # Plan: Fix ACE Agent Resume for Terminal Plan-Chain Statuses
 
 ## Problem

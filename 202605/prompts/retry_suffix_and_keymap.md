@@ -1,6 +1,5 @@
----
-plan: 202605/retry_suffix_and_keymap.md
----
+- **PLAN:** [../202605/retry_suffix_and_keymap.md](../retry_suffix_and_keymap.md)
+
  Can you help me improve sase's agent "retry" concept?
 
 - We currently append a `.<N>` to an auto-generated agent-name. Let's start appending `.r<N>` instead.

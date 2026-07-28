@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 17:07:10
 status: wip
-prompt: 202606/prompts/complete_sase_52_alt_directive_predicate.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/complete_sase_52_alt_directive_predicate.md](prompts/complete_sase_52_alt_directive_predicate.md)
+
 # Complete sase-52 Alt Brace Predicate Verification
 
 ## Context

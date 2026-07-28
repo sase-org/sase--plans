@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 19:46:02
 status: done
-prompt: 202605/prompts/agent_header_file_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_header_file_hints.md](prompts/agent_header_file_hints.md)
+
 # Plan: Agent Header File Hints
 
 ## Problem

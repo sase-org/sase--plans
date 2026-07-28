@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 23:12:20
 status: done
-prompt: 202605/prompts/plan_tag_relative_paths.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_tag_relative_paths.md](prompts/plan_tag_relative_paths.md)
+
 # Plan: Keep Plan References Repo-Relative
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202605/inline_directive_vcs_xprompt_inheritance.md
----
+- **PLAN:** [../202605/inline_directive_vcs_xprompt_inheritance.md](../inline_directive_vcs_xprompt_inheritance.md)
+
  The user sent an image via Telegram with the following caption:
 
  VCS xprompt workflow inheritance still isn't working (see recent sase chats). Can you help me diagnose the root cause and finally fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

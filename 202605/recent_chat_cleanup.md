@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 11:12:32
 status: done
-prompt: 202605/prompts/recent_chat_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/recent_chat_cleanup.md](prompts/recent_chat_cleanup.md)
+
 # Recent SASE Chat Cleanup Plan
 
 ## Context

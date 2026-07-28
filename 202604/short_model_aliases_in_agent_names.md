@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 16:15:41
 status: done
-prompt: 202604/prompts/short_model_aliases_in_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/short_model_aliases_in_agent_names.md](prompts/short_model_aliases_in_agent_names.md)
+
 # Plan: Short model aliases in multi-model agent name suffixes
 
 ## Problem

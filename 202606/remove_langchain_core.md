@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 21:31:34
 status: done
-prompt: 202606/prompts/remove_langchain_core.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_langchain_core.md](prompts/remove_langchain_core.md)
+
 # Remove `langchain-core` Dependency
 
 ## Goal

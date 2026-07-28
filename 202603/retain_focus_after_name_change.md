@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 10:39:59
 status: done
-prompt: 202603/prompts/retain_focus_after_name_change.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/retain_focus_after_name_change.md](prompts/retain_focus_after_name_change.md)
 
 # Plan: Retain ChangeSpec Focus After Status-Induced Name Changes
 

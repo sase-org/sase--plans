@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 13:31:03
 status: done
-prompt: 202605/prompts/sase_34_closeout_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_34_closeout_1.md](prompts/sase_34_closeout_1.md)
+
 # sase-34 Closeout Verification Plan
 
 ## Context

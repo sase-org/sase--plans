@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 08:51:51
 status: done
-prompt: 202605/prompts/agents_refresh_on_notifications.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agents_refresh_on_notifications.md](prompts/agents_refresh_on_notifications.md)
+
 # Plan: Refresh Agents Tab On New Auto-Refresh Notifications
 
 ## Goal

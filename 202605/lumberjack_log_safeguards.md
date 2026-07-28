@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 10:08:47
 status: done
-prompt: 202605/prompts/lumberjack_log_safeguards.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/lumberjack_log_safeguards.md](prompts/lumberjack_log_safeguards.md)
+
 # Plan: Remove Runaway Logs and Cap Lumberjack Logging
 
 ## Context

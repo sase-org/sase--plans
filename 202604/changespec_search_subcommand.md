@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 16:05:21
 status: done
-prompt: 202604/prompts/changespec_search_subcommand.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/changespec_search_subcommand.md](prompts/changespec_search_subcommand.md)
+
 # Plan: Move `sase search` under `sase changespec search`
 
 ## Goal

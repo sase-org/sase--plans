@@ -1,6 +1,5 @@
----
-plan: 202606/unify_prompt_stash_panel.md
----
+- **PLAN:** [../202606/unify_prompt_stash_panel.md](../unify_prompt_stash_panel.md)
+
  #fork:03o.w1 Can you now help me unify the `gp` / `gP` keymaps (and corresponding `<ctrl+g>p` and `<ctrl+g>P` keymaps) by improving the prompt stash panel?
 
 - We should get rid of the `gP` and `<ctrl+g>P` keymaps in the prompt input widget. The `@` keymap should use the same prompt stash panel as the prompt input widget (i.e. it should no longer default to popping restored prompts from the stash).

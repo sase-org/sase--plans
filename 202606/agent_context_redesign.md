@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 12:20:02
 status: done
-prompt: 202606/prompts/agent_context_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_context_redesign.md](prompts/agent_context_redesign.md)
+
 # Plan: Make the "AGENT CONTEXT" panel section beautiful
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202605/wait_timestamp_display.md
----
+- **PLAN:** [../202605/wait_timestamp_display.md](../wait_timestamp_display.md)
+
  When an agent had to wait to run because of the `%wait` directive, can we start using only the WAIT
 "Timestamp:" field entry (in the agent metadata panel on the "Agents" tab of the `sase ace` TUI)? Currently we seem to
 show both START and WAIT when waiting and then just START once the agent starts running (START continues to be visible

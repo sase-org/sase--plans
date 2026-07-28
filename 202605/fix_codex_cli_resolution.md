@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 08:43:36
 status: done
-prompt: 202605/prompts/fix_codex_cli_resolution.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_codex_cli_resolution.md](prompts/fix_codex_cli_resolution.md)
+
 # Fix Codex CLI Resolution for SASE Agents
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 13:13:42
 status: done
-prompt: 202605/prompts/agent_machine_commit_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_machine_commit_tags.md](prompts/agent_machine_commit_tags.md)
+
 # Plan: Add Agent and Machine Commit Tags
 
 ## Goal

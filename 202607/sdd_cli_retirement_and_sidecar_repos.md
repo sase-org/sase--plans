@@ -2,9 +2,11 @@
 create_time: 2026-07-14 09:29:13
 bead_id: sase-60
 status: done
-prompt: 202607/prompts/sdd_cli_retirement_and_sidecar_repos.md
 tier: epic
 ---
+
+- **PROMPT:** [202607/prompts/sdd_cli_retirement_and_sidecar_repos.md](prompts/sdd_cli_retirement_and_sidecar_repos.md)
+
 # Retire `sase sdd`, Make Sidecar Repos First-Class, and Generalize Repo Config
 
 ## Context & Goals

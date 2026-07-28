@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 12:45:41
 status: wip
-prompt: 202605/prompts/auto_prompt_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/auto_prompt_completion.md](prompts/auto_prompt_completion.md)
+
 # Auto-Start Prompt Completion Plan
 
 ## Context

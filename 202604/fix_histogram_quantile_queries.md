@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 22:20:49
 status: done
-prompt: 202604/prompts/fix_histogram_quantile_queries.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_histogram_quantile_queries.md](prompts/fix_histogram_quantile_queries.md)
 
 # Plan: Fix histogram_quantile PromQL Queries for Duration Charts
 

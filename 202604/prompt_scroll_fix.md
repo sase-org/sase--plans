@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 13:04:22
 status: done
-prompt: 202604/prompts/prompt_scroll_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/prompt_scroll_fix.md](prompts/prompt_scroll_fix.md)
 
 # Fix: Prompt Input Widget Not Scrolling With Cursor
 

@@ -1,6 +1,5 @@
----
-plan: 202606/sase_pypi_015_trusted_publishing.md
----
+- **PLAN:** [../202606/sase_pypi_015_trusted_publishing.md](../sase_pypi_015_trusted_publishing.md)
+
  Submitting PR #164 should have released version 0.1.5 of sase to PyPI, but it failed (see the error message below). sase is already configured in PyPI (see the configuration used below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

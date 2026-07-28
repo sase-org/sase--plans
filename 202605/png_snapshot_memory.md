@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 09:48:31
 status: done
-prompt: 202605/prompts/png_snapshot_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/png_snapshot_memory.md](prompts/png_snapshot_memory.md)
+
 # Plan: Document PNG Snapshot Tests In Build Memory
 
 ## Context

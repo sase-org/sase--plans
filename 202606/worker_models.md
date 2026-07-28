@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 14:41:19
 status: done
-prompt: 202606/prompts/worker_models.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/worker_models.md](prompts/worker_models.md)
+
 # Worker Models Plan
 
 ## Goal

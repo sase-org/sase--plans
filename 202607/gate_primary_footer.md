@@ -8,8 +8,9 @@ goal: 'Gate review footers name and visually emphasize the action triggered by t
   '
 create_time: 2026-07-18 10:01:24
 status: done
-prompt: 202607/prompts/gate_primary_footer.md
 ---
+
+- **PROMPT:** [202607/prompts/gate_primary_footer.md](prompts/gate_primary_footer.md)
 
 # Plan: Gate primary action footer
 

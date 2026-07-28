@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 07:11:19
 status: done
-prompt: 202606/prompts/rename_chats_to_chat.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/rename_chats_to_chat.md](prompts/rename_chats_to_chat.md)
+
 # Rename `sase chats` to `sase chat`
 
 ## Goal

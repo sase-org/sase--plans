@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 18:39:06
 status: done
-prompt: 202603/prompts/cancelled_prompt_preservation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/cancelled_prompt_preservation.md](prompts/cancelled_prompt_preservation.md)
 
 # Plan: Make Cancelled Prompt Preservation Bulletproof
 

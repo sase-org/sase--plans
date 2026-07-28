@@ -1,6 +1,5 @@
----
-plan: 202605/artifacts_panel_paths.md
----
+- **PLAN:** [../202605/artifacts_panel_paths.md](../artifacts_panel_paths.md)
+
  Can you help me make some improvements to the recently added artifacts panel? Namely:
 
 - Let's start showing `~` instead of `/home/bryan/`.

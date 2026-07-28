@@ -65,6 +65,8 @@ status: done
 bead_id: sase-7r
 ---
 
+- **PROMPT:** [202607/prompts/clan_rich_summary.md](prompts/clan_rich_summary.md)
+
 # Plan: Rich-text clan summaries via %clan
 
 ## Context

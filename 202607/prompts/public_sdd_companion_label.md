@@ -1,6 +1,5 @@
----
-plan: 202607/public_sdd_companion_label.md
----
+- **PLAN:** [../202607/public_sdd_companion_label.md](../public_sdd_companion_label.md)
+
  #fork:33 Can you now help me make a few related improvements?
 
 - Make sure this repo is created as a public GitHub repo (not private).

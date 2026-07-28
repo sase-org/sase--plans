@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 18:42:27
 status: done
-prompt: 202604/prompts/vcs_xprompt_mru_cycling.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/vcs_xprompt_mru_cycling.md](prompts/vcs_xprompt_mru_cycling.md)
 
 # Plan: VCS Xprompt MRU Cycling in Prompt Input
 

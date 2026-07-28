@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 20:34:51
 status: done
-prompt: 202603/prompts/fix_plugin_lint_test.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_plugin_lint_test.md](prompts/fix_plugin_lint_test.md)
 
 # Plan: Fix `just lint` / `just test` in all plugin repos
 

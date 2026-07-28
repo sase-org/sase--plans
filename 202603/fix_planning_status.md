@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 15:07:29
 status: done
-prompt: 202603/prompts/fix_planning_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_planning_status.md](prompts/fix_planning_status.md)
 
 # Plan: Fix parent workflow showing PLANNING when child step is RUNNING
 

@@ -1,6 +1,5 @@
----
-plan: 202606/root_row_multi_provider_icons.md
----
+- **PLAN:** [../202606/root_row_multi_provider_icons.md](../root_row_multi_provider_icons.md)
+
  When a root entry is associated with child agent entries that use different LLM providers, we should show all of the associated LLM provider icons on the root agent row instead of just the icon associated with the first agent's provider. For example, in the `sase ace` snapshot below, the "51.f1" agent row should have the Claude icon and the Codex icon (in that order, since the claude model ran first). Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

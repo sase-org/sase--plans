@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 09:41:54
 status: done
-prompt: 202607/prompts/agent_panel_fold_scope.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/agent_panel_fold_scope.md](prompts/agent_panel_fold_scope.md)
+
 # Fix Agents-Tab Group Folds Leaking Across Panels
 
 ## Goal

@@ -8,8 +8,9 @@ goal: 'ACE shows a phase agent''s own submitted or approved plan in the PLAN lan
   '
 create_time: 2026-07-20 10:40:27
 status: done
-prompt: 202607/prompts/phase_plan_and_bead_context.md
 ---
+
+- **PROMPT:** [202607/prompts/phase_plan_and_bead_context.md](prompts/phase_plan_and_bead_context.md)
 
 # Plan: Restore phase PLAN and BEAD context lanes
 

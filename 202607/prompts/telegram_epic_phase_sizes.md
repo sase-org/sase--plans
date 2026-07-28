@@ -1,11 +1,4 @@
----
-plan: 202607/telegram_epic_phase_sizes.md
----
-
-
-
-
-
+- **PLAN:** [../202607/telegram_epic_phase_sizes.md](../telegram_epic_phase_sizes.md)
 
 Can you complete the work for bead sase-8b.3? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

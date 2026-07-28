@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 19:04:02
 status: done
-prompt: 202606/prompts/completion_panel_excess_height.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/completion_panel_excess_height.md](prompts/completion_panel_excess_height.md)
+
 # Fix: xprompt completion menu inflates prompt input height
 
 ## Problem

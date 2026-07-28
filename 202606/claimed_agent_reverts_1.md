@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 16:57:11
 status: done
-prompt: 202606/prompts/claimed_agent_reverts_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/claimed_agent_reverts_1.md](prompts/claimed_agent_reverts_1.md)
+
 # Claimed Workspaces for Agent Reverts
 
 ## Goal

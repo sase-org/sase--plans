@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 15:16:46
 status: done
-prompt: 202603/prompts/axe_error_notification_action.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/axe_error_notification_action.md](prompts/axe_error_notification_action.md)
 
 # Plan: Axe Error Digest Notification Action
 

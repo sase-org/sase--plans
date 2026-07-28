@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-26 09:35:15
 status: done
-prompt: 202606/prompts/plugins_tab.md
 bead_id: sase-59
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/plugins_tab.md](prompts/plugins_tab.md)
+
 # Plan: Add a "Plugins" tab to SASE Config (manage plugins from the TUI)
 
 ## Goal

@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-26 19:21:26
-prompt: 202603/prompts/remove_commit_fallbacks.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/remove_commit_fallbacks.md](prompts/remove_commit_fallbacks.md)
 
 # Plan: Remove Commit Fallbacks & Proper Proposal Support
 

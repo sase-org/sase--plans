@@ -8,8 +8,9 @@ goal: 'Expanding a clan reveals only its direct agents and agent families, while
   '
 create_time: 2026-07-18 06:31:51
 status: done
-prompt: 202607/prompts/clan_member_fold_isolation.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_member_fold_isolation.md](prompts/clan_member_fold_isolation.md)
 
 # Plan: Isolate clan-member fold state in the Agents tab
 

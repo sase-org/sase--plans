@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-12 12:38:57
 status: done
-prompt: 202606/prompts/agents_zoom_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agents_zoom_keymap.md](prompts/agents_zoom_keymap.md)
+
 # Plan: `z` (Zoom) Keymap for the Agents Tab
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202607/id_kwargs_tribe_family.md
----
+- **PLAN:** [../202607/id_kwargs_tribe_family.md](../id_kwargs_tribe_family.md)
+
  Can you now help me (see the sase-7g epic bead for context) get rid of
 the `%tribe` directive all together in favor of adding a new `tribe` kwarg to
 `%id`?

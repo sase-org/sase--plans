@@ -1,6 +1,5 @@
----
-plan: 202605/notification_panel_sort_within_groups.md
----
+- **PLAN:** [../202605/notification_panel_sort_within_groups.md](../notification_panel_sort_within_groups.md)
+
  Notifications in the notification panel are currently grouped by severity. Can you help me start sort those groups by the time they were received, with the most recently received notification showing up at the top? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

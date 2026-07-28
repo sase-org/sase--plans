@@ -2,9 +2,11 @@
 create_time: 2026-04-26 01:12:12
 status: done
 bead_id: sase-t
-prompt: 202604/prompts/agents_tab_grouping_modes.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_grouping_modes.md](prompts/agents_tab_grouping_modes.md)
+
 # Agents Tab — Cyclable Grouping/Sorting Modes
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 21:09:18
 status: done
-prompt: 202607/prompts/subagent_tool_output.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/subagent_tool_output.md](prompts/subagent_tool_output.md)
+
 # Plan: Capture & Surface Subagent (`Agent`/`Task`) Tool Output
 
 ## Problem

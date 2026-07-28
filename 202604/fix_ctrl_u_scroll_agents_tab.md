@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-22 14:46:33
 status: done
-prompt: 202604/prompts/fix_ctrl_u_scroll_agents_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_ctrl_u_scroll_agents_tab.md](prompts/fix_ctrl_u_scroll_agents_tab.md)
 
 # Plan: Fix `ctrl+u` / `ctrl+d` scroll in Agents tab after `v`
 

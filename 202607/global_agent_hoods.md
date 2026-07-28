@@ -98,6 +98,8 @@ status: done
 bead_id: sase-8v
 ---
 
+- **PROMPT:** [202607/prompts/global_agent_hoods.md](prompts/global_agent_hoods.md)
+
 # Plan: Global agent hoods, reconstructable sidecars, and cached remote sync
 
 ## Goal

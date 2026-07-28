@@ -1,6 +1,5 @@
----
-plan: 202607/telegram_custom_command_visibility.md
----
+- **PLAN:** [../202607/telegram_custom_command_visibility.md](../telegram_custom_command_visibility.md)
+
 The user sent an image via Telegram with the following caption:
 
  Why am I not seeing the new /tasks Telegram command? Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate

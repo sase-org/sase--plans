@@ -1,6 +1,5 @@
----
-plan: 202605/artifacts_keymap.md
----
+- **PLAN:** [../202605/artifacts_keymap.md](../artifacts_keymap.md)
+
  Can you help me generalize the `V` (view image) keymap on the "Agents" tab of the `sase ace` TUI?
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

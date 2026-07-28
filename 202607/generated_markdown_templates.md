@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 16:07:59
 status: done
-prompt: 202607/prompts/generated_markdown_templates.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/generated_markdown_templates.md](prompts/generated_markdown_templates.md)
+
 # Plan: Single-Source Templates for Every SASE-Generated Markdown File
 
 ## Problem / Product Context

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 12:09:54
 status: wip
-prompt: 202604/prompts/claude_code_nvim_termclose_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/claude_code_nvim_termclose_fix.md](prompts/claude_code_nvim_termclose_fix.md)
 
 # Plan: Fix claude-code.nvim TermClose crash with NnnPicker
 

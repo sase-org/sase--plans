@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 13:10:41
 status: done
-prompt: 202606/prompts/agent_family_context_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_family_context_1.md](prompts/agent_family_context_1.md)
+
 # Plan: Agent-family context in the ACE metadata panel
 
 ## Problem

@@ -6,8 +6,9 @@ goal: Keep long-running ACE sessions aware of newly available SASE updates by ch
   work on the TUI event loop.
 create_time: 2026-07-16 09:29:15
 status: done
-prompt: 202607/prompts/periodic_ace_update_checks.md
 ---
+
+- **PROMPT:** [202607/prompts/periodic_ace_update_checks.md](prompts/periodic_ace_update_checks.md)
 
 # Plan: Periodic Non-Blocking ACE Update Checks
 

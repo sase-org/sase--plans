@@ -1,6 +1,5 @@
----
-plan: 202605/all_directives_visible.md
----
+- **PLAN:** [../202605/all_directives_visible.md](../all_directives_visible.md)
+
  Can you help me make sure that all directives are visible when the user presses `<ctrl+t>` and their cursor is to the right of a "%" character? It looks like we are not showing some of them (I think they are just getting cut off). Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

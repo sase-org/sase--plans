@@ -28,6 +28,8 @@ status: done
 bead_id: sase-6f
 ---
 
+- **PROMPT:** [202607/prompts/telegram_custom_commands.md](prompts/telegram_custom_commands.md)
+
 # Plan: User-defined Telegram slash commands (+ first use case: /tasks)
 
 ## Product context

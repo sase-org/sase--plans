@@ -118,6 +118,8 @@ status: done
 bead_id: sase-96.8
 ---
 
+- **PROMPT:** [202607/prompts/managed_tmp_reaping.md](prompts/managed_tmp_reaping.md)
+
 # Plan: Close the remaining temp-scratch leaks sase-96 relocated but did not stop
 
 ## Problem

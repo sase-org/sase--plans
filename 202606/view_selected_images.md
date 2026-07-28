@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 19:03:13
 status: done
-prompt: 202606/prompts/view_selected_images.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/view_selected_images.md](prompts/view_selected_images.md)
+
 # Display `v`-Selected Images With The Artifact Viewer
 
 ## Goal

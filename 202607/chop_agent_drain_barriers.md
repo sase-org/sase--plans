@@ -1,9 +1,10 @@
 ---
 create_time: 2026-07-13 07:42:13
 status: done
-prompt: 202607/prompts/chop_agent_drain_barriers.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/chop_agent_drain_barriers.md](prompts/chop_agent_drain_barriers.md)
 
 # Plan: Add `%w(runners=0)` Drain Barriers to Chop-Launched Agents
 

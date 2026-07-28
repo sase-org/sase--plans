@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 01:02:29
 status: done
-prompt: 202605/prompts/png_snapshot_idle_state.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/png_snapshot_idle_state.md](prompts/png_snapshot_idle_state.md)
+
 # Plan: Fix PNG Snapshot Idle-State Drift
 
 ## Problem

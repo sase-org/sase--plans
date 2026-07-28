@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 15:14:33
 status: done
-prompt: 202607/prompts/per_workspace_sdd_clone.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/per_workspace_sdd_clone.md](prompts/per_workspace_sdd_clone.md)
+
 # Plan: Per-workspace SDD clones so coder hand-offs resolve `@.sase/sdd/...`
 
 ## Problem

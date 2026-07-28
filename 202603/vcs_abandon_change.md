@@ -2,9 +2,10 @@
 create_time: 2026-03-25 19:08:39
 status: wip
 bead_id: sase-c
-prompt: 202603/prompts/vcs_abandon_change.md
 tier: epic
 ---
+
+- **PROMPT:** [202603/prompts/vcs_abandon_change.md](prompts/vcs_abandon_change.md)
 
 # Plan: VCS-agnostic `abandon_change` hook for closing remote changes during revert
 

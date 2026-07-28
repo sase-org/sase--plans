@@ -3,8 +3,10 @@ create_time: 2026-05-12 12:17:34
 status: done
 bead_id: sase-35
 tier: epic
-prompt: 202605/prompts/phase7_notification_perf.md
 ---
+
+- **PROMPT:** [202605/prompts/phase7_notification_perf.md](prompts/phase7_notification_perf.md)
+
 # Phase 7 Notification Store Performance Floor Plan
 
 ## Context

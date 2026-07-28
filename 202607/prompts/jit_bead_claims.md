@@ -1,6 +1,5 @@
----
-plan: 202607/jit_bead_claims.md
----
+- **PLAN:** [../202607/jit_bead_claims.md](../jit_bead_claims.md)
+
  Can you help me start marking beads as in-progress right before the
 agent responsible for working that bead (phase worker agent for phase beads or
 epic lander agents for epic beads) is launched?

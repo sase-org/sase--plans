@@ -1,6 +1,5 @@
----
-plan: 202607/fakey_provider.md
----
+- **PLAN:** [../202607/fakey_provider.md](../fakey_provider.md)
+
  Can you help me design and implement a new fake agent CLI provider, named `fakey`?
 
 - The CLI agent should have first-class support within sase and will be used to test sase agent launches and to test various expected agent CLI behavior, like failures (and sase agent retries), for example.

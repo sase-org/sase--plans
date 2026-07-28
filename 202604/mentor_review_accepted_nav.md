@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 13:29:12
 status: done
-prompt: 202604/prompts/mentor_review_accepted_nav.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/mentor_review_accepted_nav.md](prompts/mentor_review_accepted_nav.md)
 
 # Plan: Add `N` / `P` Accepted-Comment Navigation to Mentor Review Modal
 

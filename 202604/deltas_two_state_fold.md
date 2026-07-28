@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-30 12:48:37
 status: done
-prompt: 202604/prompts/deltas_two_state_fold.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/deltas_two_state_fold.md](prompts/deltas_two_state_fold.md)
 
 # Plan: Make DELTAS a Two-State Fold
 

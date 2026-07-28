@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 11:19:20
 status: done
-prompt: 202605/prompts/live_agent_chat_skill_followups.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/live_agent_chat_skill_followups.md](prompts/live_agent_chat_skill_followups.md)
+
 # Live Agent Chat Skill Followups
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 00:19:52
 status: done
-prompt: 202605/prompts/active_runtime_parent_rows.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/active_runtime_parent_rows.md](prompts/active_runtime_parent_rows.md)
+
 # Plan: Tick Runtime Suffixes For Active Parent Agent Rows
 
 ## Context

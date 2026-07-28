@@ -1,6 +1,5 @@
----
-plan: 202605/multi_artifact_viewing.md
----
+- **PLAN:** [../202605/multi_artifact_viewing.md](../multi_artifact_viewing.md)
+
  Can you help me add support to the artifact panel for selecting multiple documents to view?
 
 - The user should be able to use a new `m` keymap to mark the artifacts he wants to open.

@@ -1,6 +1,5 @@
----
-plan: 202607/max_running_agents.md
----
+- **PLAN:** [../202607/max_running_agents.md](../max_running_agents.md)
+
  I want to add the ability to configure a maximum number of sase agents that are allowed to be running at any given time. Can you help me implement this?
 
 - I want the user to be able to override this both in their personal config but also on a prompt-by-prompt basis using an xprompt directive.

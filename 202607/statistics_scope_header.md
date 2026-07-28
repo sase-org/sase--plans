@@ -6,8 +6,9 @@ goal: Make the Statistics tab explain the selected view and its active range, gr
   behavior.
 create_time: 2026-07-20 13:50:09
 status: done
-prompt: 202607/prompts/statistics_scope_header.md
 ---
+
+- **PROMPT:** [202607/prompts/statistics_scope_header.md](prompts/statistics_scope_header.md)
 
 # Plan: Statistics scope bar and view descriptions
 

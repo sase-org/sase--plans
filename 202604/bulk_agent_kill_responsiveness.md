@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 16:31:09
 status: done
-prompt: 202604/prompts/bulk_agent_kill_responsiveness.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bulk_agent_kill_responsiveness.md](prompts/bulk_agent_kill_responsiveness.md)
+
 # Plan: Make Bulk Agent Kill Immediate in the Agents Tab
 
 ## Problem

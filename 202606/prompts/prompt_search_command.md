@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_search_command.md
----
+- **PLAN:** [../202606/prompt_search_command.md](../prompt_search_command.md)
+
  Can you help me create a new `sase prompt search` command that works a lot like the `sase bead search` command but for sase prompts (both repo-specific sdd/ prompts, which should be prioritized and prompts that are local to this machine, which are stored elsewhere)?
 
 - Make sure that we support all of the same formats types as the `sase bead search` command, with just as high (or ideally, higher) quality output.

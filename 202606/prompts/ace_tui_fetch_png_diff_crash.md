@@ -1,6 +1,5 @@
----
-plan: 202606/ace_tui_fetch_png_diff_crash.md
----
+- **PLAN:** [../202606/ace_tui_fetch_png_diff_crash.md](../ace_tui_fetch_png_diff_crash.md)
+
  The `sase ace` TUI crashes when I try to view the `fetch` bash step of the `#sshot` xprompt workflow (defined in my chezmoi repo). See the partial stacktrace below for context. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-25 18:00:00
 status: draft
-prompt: 202604/prompts/name_root_banner_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/name_root_banner_color.md](prompts/name_root_banner_color.md)
 
 # Plan: Distinct Color for the Name-Root in Level-2 Group Banners
 

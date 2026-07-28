@@ -3,8 +3,10 @@ create_time: 2026-06-23 18:31:14
 bead_id: sase-56
 tier: epic
 status: done
-prompt: 202606/prompts/auto_approve_menu_and_tale_directive.md
 ---
+
+- **PROMPT:** [202606/prompts/auto_approve_menu_and_tale_directive.md](prompts/auto_approve_menu_and_tale_directive.md)
+
 # Plan: `%tale` Auto-Approval Directive + Auto-Approve Quick-Action Menu
 
 ## Summary

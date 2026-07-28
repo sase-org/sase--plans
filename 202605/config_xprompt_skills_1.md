@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 15:10:24
 status: done
-prompt: 202605/prompts/config_xprompt_skills_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/config_xprompt_skills_1.md](prompts/config_xprompt_skills_1.md)
+
 # Plan: Generate Config-Defined XPrompt Skills
 
 ## Context

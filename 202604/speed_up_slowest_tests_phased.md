@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 10:27:36
 status: wip
-prompt: 202604/prompts/speed_up_slowest_tests_phased.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/speed_up_slowest_tests_phased.md](prompts/speed_up_slowest_tests_phased.md)
+
 # Speed Up Slowest Tests (Phased Multi-Agent Plan)
 
 ## Objective

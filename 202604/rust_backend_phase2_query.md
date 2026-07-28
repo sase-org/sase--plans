@@ -2,9 +2,11 @@
 create_time: 2026-04-29 02:51:00
 status: done
 bead_id: sase-17
-prompt: 202604/prompts/rust_backend_phase2_query.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase2_query.md](prompts/rust_backend_phase2_query.md)
+
 # Rust Backend Migration Phase 2 Query Plan
 
 ## Context

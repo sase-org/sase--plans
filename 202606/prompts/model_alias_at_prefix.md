@@ -1,6 +1,5 @@
----
-plan: 202606/model_alias_at_prefix.md
----
+- **PLAN:** [../202606/model_alias_at_prefix.md](../model_alias_at_prefix.md)
+
  Can you help me start requiring that `@` be used in front of model aliases when they are used? For example, `%m:@other` should be used instead of `%m:other`. Make sure to update all references in my chezmoi repo accordingly. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

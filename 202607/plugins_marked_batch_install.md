@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 00:04:28
 status: done
-prompt: 202607/prompts/plugins_marked_batch_install.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/plugins_marked_batch_install.md](prompts/plugins_marked_batch_install.md)
+
 # Plan: Mark-and-Batch-Install Plugins in the Admin Center Updates Tab
 
 ## Context

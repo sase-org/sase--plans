@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 18:15:04
 status: done
-prompt: 202604/prompts/vcs_mru_100_entries.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/vcs_mru_100_entries.md](prompts/vcs_mru_100_entries.md)
 
 # Plan: Expand VCS Xprompt MRU to 100 Entries & Fix Cycling Direction
 

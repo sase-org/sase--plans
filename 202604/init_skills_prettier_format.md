@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 21:13:25
 status: done
-prompt: 202604/prompts/init_skills_prettier_format.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/init_skills_prettier_format.md](prompts/init_skills_prettier_format.md)
+
 # Plan: Format `sase init-skills` Output With Prettier
 
 ## Problem

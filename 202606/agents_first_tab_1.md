@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-30 08:55:46
 status: done
-prompt: 202606/prompts/agents_first_tab_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agents_first_tab_1.md](prompts/agents_first_tab_1.md)
+
 # Agents First Tab Plan
 
 ## Goal

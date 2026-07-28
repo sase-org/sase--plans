@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 16:08:51
 status: wip
-prompt: 202605/prompts/xprompt_lsp_definition_lines.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_definition_lines.md](prompts/xprompt_lsp_definition_lines.md)
+
 # Plan: Precise LSP Definition Lines for Config-Backed Xprompts
 
 ## Goal

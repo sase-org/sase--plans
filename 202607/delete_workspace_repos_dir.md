@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 08:42:53
 status: done
-prompt: 202607/prompts/delete_workspace_repos_dir.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/delete_workspace_repos_dir.md](prompts/delete_workspace_repos_dir.md)
+
 # Delete the entire `sase/repos/` directory during workspace prep
 
 ## Problem & Context

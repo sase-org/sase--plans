@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 16:29:13
 status: done
-prompt: 202607/prompts/save_xprompt_panel_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/save_xprompt_panel_redesign.md](prompts/save_xprompt_panel_redesign.md)
+
 # Redesign the "Save draft as xprompt" Panel
 
 ## Goal

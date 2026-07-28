@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 13:01:29
 status: done
-prompt: 202603/prompts/plan_drawer.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/plan_drawer.md](prompts/plan_drawer.md)
 
 # Plan: Add PLAN Drawer to COMMITS Entries
 

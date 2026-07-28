@@ -92,6 +92,8 @@ status: done
 bead_id: sase-9w
 ---
 
+- **PROMPT:** [202607/prompts/axe_multiline_descriptions.md](prompts/axe_multiline_descriptions.md)
+
 # Plan: Multiline AXE descriptions with a collapsible description panel
 
 ## Goal

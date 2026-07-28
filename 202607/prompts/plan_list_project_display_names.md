@@ -1,6 +1,5 @@
----
-plan: 202607/plan_list_project_display_names.md
----
+- **PLAN:** [../202607/plan_list_project_display_names.md](../plan_list_project_display_names.md)
+
  The `sase plan list` command (see output below) is not outputing the correct sase project names. For example, it shows `gh_sase-org__sase` instead of `sase` and `gh_bobs-org__bob-cli` instead of `bob-cli`. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate
 tier, validate and revalidate until it passes, then submit it with `sase plan propose` (as the skill instructs)
 before making any file changes.

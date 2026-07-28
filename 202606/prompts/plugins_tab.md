@@ -1,6 +1,5 @@
----
-plan: 202606/plugins_tab.md
----
+- **PLAN:** [../202606/plugins_tab.md](../plugins_tab.md)
+
  #fork:070 Can you now help me add a new "Plugins" tab in-between the "Settings" and "XPrompts" tabs?
 
 - The user should be able to manage sase plugins from this tab in all the same ways that they can with the `sase plugin` command.

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 18:00:03
 status: done
-prompt: 202603/prompts/move_pinned_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/move_pinned_panel.md](prompts/move_pinned_panel.md)
 
 # Plan: Move Pinned Panel to Left Side & Focus-Only Highlighting
 

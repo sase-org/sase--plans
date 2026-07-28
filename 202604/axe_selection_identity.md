@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 14:37:56
 status: done
-prompt: 202604/prompts/axe_selection_identity.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/axe_selection_identity.md](prompts/axe_selection_identity.md)
+
 # Plan: Stabilize AXE Tab Selection By Item Identity
 
 ## Problem

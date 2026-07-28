@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 03:19:41
 status: done
-prompt: 202605/prompts/revert_sase_1p.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revert_sase_1p.md](prompts/revert_sase_1p.md)
+
 # Revert sase-1p Agent Compose Rust Migration
 
 ## Goal

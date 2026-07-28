@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 12:53:53
 status: done
-prompt: 202607/prompts/fix_flaky_preview_scroll_test.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_flaky_preview_scroll_test.md](prompts/fix_flaky_preview_scroll_test.md)
+
 # Fix flaky `test_preview_scroll_keys_move_preview_region` CI failure
 
 ## Problem

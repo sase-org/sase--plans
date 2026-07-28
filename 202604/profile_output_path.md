@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 16:42:30
 status: done
-prompt: 202604/prompts/profile_output_path.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/profile_output_path.md](prompts/profile_output_path.md)
 
 # Plan: Accept optional file path for `sase ace --profile`
 

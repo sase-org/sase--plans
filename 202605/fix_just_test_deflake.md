@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 15:05:50
 status: done
-prompt: 202605/prompts/fix_just_test_deflake.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_just_test_deflake.md](prompts/fix_just_test_deflake.md)
+
 # Plan: De-flake `fix_just` Test Failures Before Launching Agents
 
 ## Goal

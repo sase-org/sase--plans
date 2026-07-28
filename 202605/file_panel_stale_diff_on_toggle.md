@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 13:01:32
 status: done
-prompt: 202605/prompts/file_panel_stale_diff_on_toggle.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/file_panel_stale_diff_on_toggle.md](prompts/file_panel_stale_diff_on_toggle.md)
+
 # Plan: Fix Stale File Panel Diff on `]` Visibility Toggle
 
 ## Problem

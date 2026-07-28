@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-15 13:46:58
 status: done
-prompt: 202605/prompts/ace_tab_cli_option.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ace_tab_cli_option.md](prompts/ace_tab_cli_option.md)
 
 # Plan: Replace auto-tab-focus logic with explicit `--tab` option on `sase ace`
 

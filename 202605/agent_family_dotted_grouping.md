@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 11:25:57
 status: done
-prompt: 202605/prompts/agent_family_dotted_grouping.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_family_dotted_grouping.md](prompts/agent_family_dotted_grouping.md)
+
 # Plan: Fix Dotted Agent-Family Grouping In Agents Tab
 
 ## Problem

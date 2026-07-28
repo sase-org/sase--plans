@@ -1,10 +1,12 @@
 ---
 create_time: 2026-07-12 19:19:53
 status: done
-prompt: 202607/prompts/basher_extraction.md
 tier: epic
 bead_id: sase-5v
 ---
+
+- **PROMPT:** [202607/prompts/basher_extraction.md](prompts/basher_extraction.md)
+
 # Factor pyvendor + bugyi.sh into basher and migrate sase + chezmoi
 
 ## Summary

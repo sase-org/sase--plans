@@ -1,6 +1,5 @@
----
-plan: 202607/demo_video_stamp_and_commit.md
----
+- **PLAN:** [../202607/demo_video_stamp_and_commit.md](../demo_video_stamp_and_commit.md)
+
  Can you help me improve the `just demo-video` command?
 
 - Once all artifacts have been generated, we create a demos/out/last_generated_date.txt file with a date using the `%Y-%m-%dT%H:%M:%S` format (as was done manually last time).

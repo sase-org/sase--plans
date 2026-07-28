@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 11:39:20
 status: done
-prompt: 202607/prompts/land_epic_xprompt_integration.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/land_epic_xprompt_integration.md](prompts/land_epic_xprompt_integration.md)
+
 # Improve the `#bd/land_epic` xprompt: integration duty + tighter prompt
 
 ## Context

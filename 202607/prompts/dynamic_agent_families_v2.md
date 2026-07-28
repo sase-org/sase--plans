@@ -1,6 +1,5 @@
----
-plan: 202607/dynamic_agent_families_v2.md
----
+- **PLAN:** [../202607/dynamic_agent_families_v2.md](../dynamic_agent_families_v2.md)
+
   Can you help me implement v2 of dynamic agent families?
 
 - See the "Recommended v2 shape (staged)" section of the sdd/research/202607/dynamic_agent_families_v1_v2_design.md file for context.

@@ -1,10 +1,4 @@
----
-plan: 202607/launch_fresh_epic_summary.md
----
-
-
-
-
+- **PLAN:** [../202607/launch_fresh_epic_summary.md](../launch_fresh_epic_summary.md)
 
 Can you complete the work for bead sase-85.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

@@ -1,6 +1,5 @@
----
-plan: 202606/agent_name_completion.md
----
+- **PLAN:** [../202606/agent_name_completion.md](../agent_name_completion.md)
+
  #fork:05n.w1.w1.f1 Can you now help me add this same type of completion for the `%wait` directive and the `#fork` xprompt?
 
 - Both of these inputs take agent name's as arguments.

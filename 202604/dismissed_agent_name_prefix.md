@@ -2,9 +2,11 @@
 create_time: 2026-04-27 21:32:28
 status: done
 bead_id: sase-10
-prompt: 202604/prompts/dismissed_agent_name_prefix.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/dismissed_agent_name_prefix.md](prompts/dismissed_agent_name_prefix.md)
+
 # Enforce Names for Dismissed Agents
 
 ## Goal

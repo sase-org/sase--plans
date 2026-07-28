@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 05:42:28
 status: wip
-prompt: 202606/prompts/prompt_stack_xprompt_editor.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_stack_xprompt_editor.md](prompts/prompt_stack_xprompt_editor.md)
+
 # Plan: Prompt Stack Xprompt Editor Keymap
 
 ## Summary

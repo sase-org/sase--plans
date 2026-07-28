@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 19:59:40
 status: done
-prompt: 202604/prompts/restore_t_tmux_agents_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/restore_t_tmux_agents_tab.md](prompts/restore_t_tmux_agents_tab.md)
+
 # Restore `t` tmux keymap on Agents tab; move tag/untag to `N`
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-02 15:57:04
 status: done
-prompt: 202607/prompts/xprompt_silent_failure_diagnostics.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_silent_failure_diagnostics.md](prompts/xprompt_silent_failure_diagnostics.md)
+
 # Plan: Make xprompt silent failures loud — unresolved-reference warnings + definition load-error surfacing
 
 ## Background

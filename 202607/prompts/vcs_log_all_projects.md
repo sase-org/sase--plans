@@ -1,6 +1,5 @@
----
-plan: 202607/vcs_log_all_projects.md
----
+- **PLAN:** [../202607/vcs_log_all_projects.md](../vcs_log_all_projects.md)
+
  Can you help me add a new `-a|--all` option to the `sase vcs log` command (switch to using `-A` as the short option for `--author`)?
 
 - This option should include git commits from all known sase projects.

@@ -1,6 +1,5 @@
----
-plan: 202605/plan_approved_runtime_parent_child.md
----
+- **PLAN:** [../202605/plan_approved_runtime_parent_child.md](../plan_approved_runtime_parent_child.md)
+
  We recently have tried to fix the runtime for PLAN APPROVED agents, but we can't seem to get the main agent/workflow entry to keep incrementing while fixing the runtime of the child step of the same name (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue and fix it? Review recent, related sase agent chats before deciding on your solution. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

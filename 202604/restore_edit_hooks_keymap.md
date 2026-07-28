@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 15:27:58
 status: done
-prompt: 202604/prompts/restore_edit_hooks_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/restore_edit_hooks_keymap.md](prompts/restore_edit_hooks_keymap.md)
+
 # Restore the "edit hooks" CL-tab keymap (lost when CLs-tab grouping became always-on)
 
 ## Problem

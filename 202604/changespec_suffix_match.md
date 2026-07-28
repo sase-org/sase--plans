@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-10 17:01:11
 status: done
-prompt: 202604/prompts/changespec_suffix_match.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/changespec_suffix_match.md](prompts/changespec_suffix_match.md)
 
 # Plan: Fix ChangeSpec suffix mismatch in TUI keymaps
 

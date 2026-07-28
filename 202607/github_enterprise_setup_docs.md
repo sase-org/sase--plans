@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-01 08:31:56
 status: done
-prompt: 202607/prompts/github_enterprise_setup_docs.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/github_enterprise_setup_docs.md](prompts/github_enterprise_setup_docs.md)
+
 # Plan: GitHub Enterprise Setup Documentation (install routes + end-to-end walkthrough)
 
 ## Problem & Product Context

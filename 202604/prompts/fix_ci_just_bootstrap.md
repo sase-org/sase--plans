@@ -1,6 +1,5 @@
----
-plan: 202604/fix_ci_just_bootstrap.md
----
+- **PLAN:** [../202604/fix_ci_just_bootstrap.md](../fix_ci_just_bootstrap.md)
+
  #resume:a.codex.code It is still failing (see the below error). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 ```

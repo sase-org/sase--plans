@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 12:44:45
 status: wip
-prompt: 202607/prompts/auto_commit_sdd_store.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/auto_commit_sdd_store.md](prompts/auto_commit_sdd_store.md)
+
 # Plan: Auto-commit & push the separate-repo SDD store (with finalizer fallback)
 
 ## Problem

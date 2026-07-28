@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 07:47:03
 status: done
-prompt: 202606/prompts/remove_admin_center_title_icon.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_admin_center_title_icon.md](prompts/remove_admin_center_title_icon.md)
+
 # Plan: Remove the SASE Admin Center title icon
 
 ## Goal

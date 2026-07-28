@@ -8,8 +8,9 @@ goal: 'Pressing `v` on an agent-family container opens the normal numbered view-
   '
 create_time: 2026-07-21 08:10:23
 status: done
-prompt: 202607/prompts/agent_family_view_keymap.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_family_view_keymap.md](prompts/agent_family_view_keymap.md)
 
 # Plan: Restore view hints for agent-family details
 

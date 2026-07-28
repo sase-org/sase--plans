@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:09:49
 status: done
-prompt: 202604/prompts/notification_snooze.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/notification_snooze.md](prompts/notification_snooze.md)
+
 # Plan: Snooze Notifications from the Notification Panel
 
 ## Problem

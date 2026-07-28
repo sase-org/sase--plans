@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-12 17:18:40
 status: done
-prompt: 202605/prompts/agents_starting_status.md
 bead_id: sase-38
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agents_starting_status.md](prompts/agents_starting_status.md)
+
 # Agents STARTING Status Plan
 
 ## Context

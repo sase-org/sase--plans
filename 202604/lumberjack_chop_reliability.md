@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 18:41:40
 status: done
-prompt: 202604/prompts/lumberjack_chop_reliability.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/lumberjack_chop_reliability.md](prompts/lumberjack_chop_reliability.md)
 
 # Plan: Lumberjack Chop Execution Reliability
 

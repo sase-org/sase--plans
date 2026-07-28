@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 22:06:02
 status: done
-prompt: 202604/prompts/shell_sub_dynamic_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/shell_sub_dynamic_memory.md](prompts/shell_sub_dynamic_memory.md)
 
 # Plan: Use Shell Substitution for Dynamic Memory Content
 

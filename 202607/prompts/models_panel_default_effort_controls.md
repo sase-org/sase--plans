@@ -1,6 +1,5 @@
----
-plan: '[../202607/models_panel_default_effort_controls.md](../models_panel_default_effort_controls.md)'
----
+- **PLAN:** [../202607/models_panel_default_effort_controls.md](../models_panel_default_effort_controls.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

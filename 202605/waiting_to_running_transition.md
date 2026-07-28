@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 12:51:48
 status: done
-prompt: 202605/prompts/waiting_to_running_transition.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/waiting_to_running_transition.md](prompts/waiting_to_running_transition.md)
+
 # Fix WAITING -> STARTING Agent State Regression
 
 ## Problem

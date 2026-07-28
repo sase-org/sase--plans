@@ -1,10 +1,4 @@
----
-plan: 202607/fix_sdd_retry_test_and_land_7n.md
----
-
-
-
-
+- **PLAN:** [../202607/fix_sdd_retry_test_and_land_7n.md](../fix_sdd_retry_test_and_land_7n.md)
 
 You are the land agent for epic bead sase-7n: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

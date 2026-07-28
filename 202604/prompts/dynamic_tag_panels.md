@@ -1,6 +1,5 @@
----
-plan: 202604/dynamic_tag_panels.md
----
+- **PLAN:** [../202604/dynamic_tag_panels.md](../dynamic_tag_panels.md)
+
   Can you help me generalize the concept of the pinned panel on the agents tab by using agent tags to dynamically determine how many panels on the left there should be?
 
 - This means we should only use two levels of nested agent groups now (since each agent tag will be given its own panel).

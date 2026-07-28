@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 12:40:11
 status: done
-prompt: 202605/prompts/escape_prompt_cancel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/escape_prompt_cancel.md](prompts/escape_prompt_cancel.md)
+
 # Plan: Make Prompt Escape Non-Cancelling
 
 ## Context

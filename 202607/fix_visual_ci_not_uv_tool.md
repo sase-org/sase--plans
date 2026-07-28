@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-04 07:11:11
 status: wip
-prompt: 202607/prompts/fix_visual_ci_not_uv_tool.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_visual_ci_not_uv_tool.md](prompts/fix_visual_ci_not_uv_tool.md)
+
 # Fix master CI: deterministic `not_uv_tool` visual snapshot (unmocked `gh api` + stale golden)
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 20:45:50
 status: done
-prompt: 202607/prompts/xprompt_swarms.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_swarms.md](prompts/xprompt_swarms.md)
+
 # Rename multi-agent xprompts to xprompt swarms
 
 ## Goal

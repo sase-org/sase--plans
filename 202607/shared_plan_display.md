@@ -8,8 +8,9 @@ goal: 'PLAN-file metadata and logical Rich rendering are reusable outside the AC
   '
 create_time: 2026-07-20 14:43:43
 status: wip
-prompt: 202607/prompts/shared_plan_display.md
 ---
+
+- **PROMPT:** [202607/prompts/shared_plan_display.md](prompts/shared_plan_display.md)
 
 # Plan: Extract the shared PLAN-lane display module
 

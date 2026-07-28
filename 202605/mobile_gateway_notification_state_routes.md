@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-06 12:59:31
 status: done
-prompt: 202605/prompts/mobile_gateway_notification_state_routes.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/mobile_gateway_notification_state_routes.md](prompts/mobile_gateway_notification_state_routes.md)
 
 # Plan: Complete Mobile Gateway Notification State Routes
 

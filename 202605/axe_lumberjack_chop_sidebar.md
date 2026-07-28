@@ -3,8 +3,10 @@ create_time: 2026-05-11 16:33:33
 bead_id: sase-2w
 tier: epic
 status: done
-prompt: 202605/prompts/axe_lumberjack_chop_sidebar.md
 ---
+
+- **PROMPT:** [202605/prompts/axe_lumberjack_chop_sidebar.md](prompts/axe_lumberjack_chop_sidebar.md)
+
 # AXE Lumberjack/Chop Sidebar Plan
 
 ## Goal

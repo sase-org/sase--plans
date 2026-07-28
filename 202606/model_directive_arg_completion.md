@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 16:56:54
 status: done
-prompt: 202606/prompts/model_directive_arg_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/model_directive_arg_completion.md](prompts/model_directive_arg_completion.md)
+
 # Plan: Auto-completion for the `%model` / `%m` directive's argument values
 
 ## Goal

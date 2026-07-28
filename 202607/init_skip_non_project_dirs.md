@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-01 07:03:07
 status: done
-prompt: 202607/prompts/init_skip_non_project_dirs.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/init_skip_non_project_dirs.md](prompts/init_skip_non_project_dirs.md)
+
 # Plan: `sase init` should not scaffold project files in non-project directories
 
 ## Problem

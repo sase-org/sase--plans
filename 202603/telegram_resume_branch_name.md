@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 09:58:37
 status: done
-prompt: 202603/prompts/telegram_resume_branch_name.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/telegram_resume_branch_name.md](prompts/telegram_resume_branch_name.md)
 
 # Plan: Fix Telegram Resume Button to Use Branch Name Instead of Project Name
 

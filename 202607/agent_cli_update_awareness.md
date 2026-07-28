@@ -37,6 +37,8 @@ status: done
 bead_id: sase-83
 ---
 
+- **PROMPT:** [202607/prompts/agent_cli_update_awareness.md](prompts/agent_cli_update_awareness.md)
+
 # Plan: Provider-aware comprehensive update experience
 
 ## Context and product contract

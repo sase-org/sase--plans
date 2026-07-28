@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-29 10:38:27
-prompt: 202603/prompts/fix_hg_newline_in_note.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_hg_newline_in_note.md](prompts/fix_hg_newline_in_note.md)
 
 # Fix: hg amend newline failure in retired Mercurial plugin vcs_create_commit
 

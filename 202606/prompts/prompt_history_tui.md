@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_history_tui.md
----
+- **PLAN:** [../202606/prompt_history_tui.md](../prompt_history_tui.md)
+
  Can you help me improve the prompt history functionality provided by the TUI's prompt input widget?
 
 - We should stop sorting the prompt history based on what project / VCS xprompt workflow was used. Make sure to remove all references to this functionality and all logic that is only used to support this.

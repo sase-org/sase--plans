@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 01:06:50
 status: done
-prompt: 202607/prompts/launch_preview_pdf.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/launch_preview_pdf.md](prompts/launch_preview_pdf.md)
+
 # Plan: Beautiful, full-prompt launch-preview PDFs
 
 ## Problem & product context

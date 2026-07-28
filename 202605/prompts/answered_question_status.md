@@ -1,6 +1,5 @@
----
-plan: 202605/answered_question_status.md
----
+- **PLAN:** [../202605/answered_question_status.md](../answered_question_status.md)
+
  This agent (see the `sase ace` snapshot below--this agent ran on my macbook) should show show a status of "DONE" where it now shows "QUESTION" (since I've already answered that agent's question). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 18:25:47
 status: done
-prompt: 202605/prompts/agent_total_count_emphasis.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_total_count_emphasis.md](prompts/agent_total_count_emphasis.md)
+
 # Plan: Make the total agent count in the Agents tab stand out
 
 ## Goal

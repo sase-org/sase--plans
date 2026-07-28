@@ -1,6 +1,5 @@
----
-plan: 202606/snippet_reference_syntax.md
----
+- **PLAN:** [../202606/snippet_reference_syntax.md](../snippet_reference_syntax.md)
+
  Can you help me add support for a new `#[<snippet>]` syntax that can be used in sase snippet definitions to re-use another existing sase snippet named `<snippet>`? `<snippet>` should be able to accept xprompt-style arguments (if the snippet has placeholders like `$1`). Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

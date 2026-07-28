@@ -3,8 +3,10 @@ create_time: 2026-05-10 00:07:15
 bead_id: sase-2o
 tier: epic
 status: done
-prompt: 202605/prompts/bead_model_routing.md
 ---
+
+- **PROMPT:** [202605/prompts/bead_model_routing.md](prompts/bead_model_routing.md)
+
 # Bead Model Routing Plan
 
 ## Goal

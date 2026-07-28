@@ -36,6 +36,8 @@ status: wip
 bead_id: sase-8u.4
 ---
 
+- **PROMPT:** [202607/prompts/finish_capitalized_snippet_aliases.md](prompts/finish_capitalized_snippet_aliases.md)
+
 # Plan: Finish and land capitalized snippet aliases
 
 ## Context

@@ -53,6 +53,8 @@ status: done
 bead_id: sase-a3
 ---
 
+- **PROMPT:** [202607/prompts/bead_dep_subcommands.md](prompts/bead_dep_subcommands.md)
+
 # Plan: Make the bead dependency graph readable and editable
 
 ## Context

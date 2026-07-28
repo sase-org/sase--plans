@@ -55,6 +55,8 @@ status: done
 bead_id: sase-8b
 ---
 
+- **PROMPT:** [202607/prompts/epic_phase_size_surfaces.md](prompts/epic_phase_size_surfaces.md)
+
 # Plan: Beautiful epic phase sizes across SASE surfaces
 
 ## Outcome and verified surface inventory

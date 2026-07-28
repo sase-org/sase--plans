@@ -2,9 +2,11 @@
 create_time: 2026-04-29 16:02:50
 status: done
 bead_id: sase-1b
-prompt: 202604/prompts/rust_backend_phase6_default_rust.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase6_default_rust.md](prompts/rust_backend_phase6_default_rust.md)
+
 # Rust Backend Phase 6: Default Rust Backend Rollout
 
 ## Context

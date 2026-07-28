@@ -1,6 +1,5 @@
----
-plan: 202607/telegram_list_redesign.md
----
+- **PLAN:** [../202607/telegram_list_redesign.md](../telegram_list_redesign.md)
+
 The user sent an image via Telegram with the following caption:
 
  Can you help me make the /list telegram command output much nicer? At the very least we should aim to provide all of the information that the Agents tab, agent row entries, and top-level agent metadata panel fields do. Feel free to aim higher as long as the output is not unnecessarily verbose.

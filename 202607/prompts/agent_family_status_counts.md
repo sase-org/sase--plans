@@ -1,6 +1,5 @@
----
-plan: 202607/agent_family_status_counts.md
----
+- **PLAN:** [../202607/agent_family_status_counts.md](../agent_family_status_counts.md)
+
 Your previous attempt hit a model context limit or transient provider failure. Any file edits, new tests, and other on-disk changes you made are preserved. Before making additional changes, run `git status` and `git diff` to see what is already in place, then continue implementing the plan from wherever you left off. Do not re-apply edits that are already present.
 
  Can you help me fix the agent status counts shown on the left pane of the agents tab?

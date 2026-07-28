@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 08:06:38
 status: done
-prompt: 202606/prompts/zoom_file_panel_blank_until_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/zoom_file_panel_blank_until_refresh.md](prompts/zoom_file_panel_blank_until_refresh.md)
+
 # Fix: ACE Agents-tab zoom file panel renders nothing until manual refresh
 
 ## Problem

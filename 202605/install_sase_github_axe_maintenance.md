@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 01:54:59
 status: done
-prompt: 202605/prompts/install_sase_github_axe_maintenance.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/install_sase_github_axe_maintenance.md](prompts/install_sase_github_axe_maintenance.md)
+
 # Plan: Make `install_sase_github` Safe While Axe Is Running
 
 ## Problem

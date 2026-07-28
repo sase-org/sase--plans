@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 14:29:12
 status: done
-prompt: 202603/prompts/prompt_history_cancelled_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/prompt_history_cancelled_keymap.md](prompts/prompt_history_cancelled_keymap.md)
 
 # Plan: Add `,>` keymap for prompt history with cancelled prompts visible
 

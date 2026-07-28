@@ -2,9 +2,10 @@
 create_time: 2026-04-30 18:17:40
 status: done
 bead_id: sase-1m
-prompt: 202604/prompts/cd_builtin_vcs_workflow.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/cd_builtin_vcs_workflow.md](prompts/cd_builtin_vcs_workflow.md)
 
 # Plan: Built-In `#cd` XPrompt Workflow and Home-Mode Migration
 

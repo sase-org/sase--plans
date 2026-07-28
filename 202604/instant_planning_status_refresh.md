@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-28 14:14:48
 status: done
-prompt: 202604/prompts/instant_planning_status_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/instant_planning_status_refresh.md](prompts/instant_planning_status_refresh.md)
 
 # Instant `PLANNING` status refresh after `sase plan`
 

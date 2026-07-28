@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 15:12:00
 status: done
-prompt: 202605/prompts/prompt_ctrl_e_actual_line.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_ctrl_e_actual_line.md](prompts/prompt_ctrl_e_actual_line.md)
+
 # Fix Prompt Ctrl+E Actual Line End
 
 ## Context

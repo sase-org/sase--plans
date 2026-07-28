@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 14:18:07
 status: done
-prompt: 202604/prompts/ctrlt_file_history_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ctrlt_file_history_completion.md](prompts/ctrlt_file_history_completion.md)
 
 # Plan: Ctrl+T File-History Completion at Empty Cursor Context
 

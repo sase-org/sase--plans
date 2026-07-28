@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 19:02:37
 status: done
-prompt: 202604/prompts/bead_work_orphan_name_collision.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bead_work_orphan_name_collision.md](prompts/bead_work_orphan_name_collision.md)
+
 # Plan: `sase bead work` collides with orphaned phase agents
 
 ## Summary

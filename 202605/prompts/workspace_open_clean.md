@@ -1,6 +1,5 @@
----
-plan: 202605/workspace_open_clean.md
----
+- **PLAN:** [../202605/workspace_open_clean.md](../workspace_open_clean.md)
+
  Can you help me change the behavior of the `sase workspace open` command? Namely:
 
 - Let's add a new `-c|--clean` option that prepares the workspace for use.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 17:06:34
 status: done
-prompt: 202606/prompts/remove_plan_directive_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_plan_directive_1.md](prompts/remove_plan_directive_1.md)
+
 # Remove the Legacy Manual Planning Directive
 
 ## Context

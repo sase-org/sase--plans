@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 03:03:28
 status: done
-prompt: 202607/prompts/telegram_list_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_list_redesign.md](prompts/telegram_list_redesign.md)
+
 # Redesign the `/list` Telegram command
 
 ## 1. Problem & goal

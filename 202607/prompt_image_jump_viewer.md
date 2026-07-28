@@ -7,8 +7,9 @@ goal: 'Ctrl+] on an image path in the ACE prompt input displays the image with t
   '
 create_time: 2026-07-18 06:52:06
 status: done
-prompt: 202607/prompts/prompt_image_jump_viewer.md
 ---
+
+- **PROMPT:** [202607/prompts/prompt_image_jump_viewer.md](prompts/prompt_image_jump_viewer.md)
 
 # Plan: Display prompt jump image targets in the terminal viewer
 

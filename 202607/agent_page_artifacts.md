@@ -63,6 +63,8 @@ status: wip
 bead_id: sase-a9
 ---
 
+- **PROMPT:** [202607/prompts/agent_page_artifacts.md](prompts/agent_page_artifacts.md)
+
 # Plan: Agent sidecar pages link commits, neighbors, and output variables
 
 ## Context

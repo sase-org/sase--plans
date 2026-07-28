@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-26 03:06:15
 status: done
-prompt: 202604/prompts/fix_agents_tab_project_banners.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_agents_tab_project_banners.md](prompts/fix_agents_tab_project_banners.md)
+
 # Fix Agents Tab Project-Scoped Banner Duplication
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 08:32:44
 status: done
-prompt: 202607/prompts/commits_panel_linked_repo_attribution.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/commits_panel_linked_repo_attribution.md](prompts/commits_panel_linked_repo_attribution.md)
+
 # Fix Agents-tab COMMITS panel misattributing linked-repo commits to the primary repo
 
 ## Problem

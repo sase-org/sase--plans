@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 11:32:22
 status: done
-prompt: 202604/prompts/unreadable_artifact_scan.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/unreadable_artifact_scan.md](prompts/unreadable_artifact_scan.md)
+
 # Plan: Harden Artifact Scan Against Unreadable Timestamp Directories
 
 ## Problem

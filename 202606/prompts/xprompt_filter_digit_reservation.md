@@ -1,6 +1,5 @@
----
-plan: 202606/xprompt_filter_digit_reservation.md
----
+- **PLAN:** [../202606/xprompt_filter_digit_reservation.md](../xprompt_filter_digit_reservation.md)
+
  When the "XPrompts" tab is opened using the `5` keymap on the "SASE Admin Center" panel in the TUI, the filter bar on that tab is automatically focused. This means if the user presses 1, for example, it goes to the filter bar instead of triggering the `1` keymap and focusing the first tab of the panel. Can you help me fix this by making it so the 0-9 keys are reserved (i.e. 1-5 are used to change tabs and 6-9 and 0 are reserved for future tabs) when the filter bar is empty after navigating to the "XPrompts" tab in order to focus the filter bar?
 
 - The user should be able to type 0-9 digits into the filter bar, just not as the first character.

@@ -10,8 +10,9 @@ goal: 'Agent clan and agent family rows present one shared identity grammar on t
   '
 create_time: 2026-07-18 09:54:48
 status: wip
-prompt: 202607/prompts/clan_family_row_identity_unification.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_family_row_identity_unification.md](prompts/clan_family_row_identity_unification.md)
 
 # Plan: Unified clan/family row identity with distinct icon colors
 

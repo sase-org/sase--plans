@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 20:17:41
 status: done
-prompt: 202604/prompts/fix_coder_model_picker.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_coder_model_picker.md](prompts/fix_coder_model_picker.md)
 
 # Fix: Model picker selection ignored for coder agents
 

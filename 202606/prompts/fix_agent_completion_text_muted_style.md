@@ -1,6 +1,5 @@
----
-plan: 202606/fix_agent_completion_text_muted_style.md
----
+- **PLAN:** [../202606/fix_agent_completion_text_muted_style.md](../fix_agent_completion_text_muted_style.md)
+
  `sase ace` just failed with the following (partial) error when I went to type `%w:` in the prompt input widget, which should trigger agent name completion. Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

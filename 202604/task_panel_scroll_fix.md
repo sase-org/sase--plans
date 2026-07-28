@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 13:10:51
 status: done
-prompt: 202604/prompts/task_panel_scroll_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/task_panel_scroll_fix.md](prompts/task_panel_scroll_fix.md)
 
 # Plan: Fix task panel scroll jumping back to bottom
 

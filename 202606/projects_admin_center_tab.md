@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-26 12:51:36
 status: done
-prompt: 202606/prompts/projects_admin_center_tab.md
 bead_id: sase-5a
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/projects_admin_center_tab.md](prompts/projects_admin_center_tab.md)
+
 # Plan: Move Project Management into a "Projects" tab of the SASE Admin Center
 
 ## Goal

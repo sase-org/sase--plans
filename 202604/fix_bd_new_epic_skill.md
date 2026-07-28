@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-17 22:27:29
 status: done
-prompt: 202604/prompts/fix_bd_new_epic_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_bd_new_epic_skill.md](prompts/fix_bd_new_epic_skill.md)
 
 # Plan: Fix Stale `bd:new_epic` Slash-Command Skill That Confuses Agents
 

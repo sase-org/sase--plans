@@ -1,6 +1,5 @@
----
-plan: 202603/fix_propose_workflow.md
----
+- **PLAN:** [../202603/fix_propose_workflow.md](../fix_propose_workflow.md)
+
 The fix-hook agent that created the (6d) proposal entry for this ChangeSpec (see the `sase ace` snapshot below) failed.
 For one, `(http://cl/878602590 | deal_check_line_chart_test failed remotely (exit code 3).)` should have been (on
 success) `(6d)`. Also, the CHAT and DIFF drawers are missing below the (6d) COMMITS entry. This issue is occurring on

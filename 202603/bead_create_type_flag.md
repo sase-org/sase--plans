@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 17:07:24
 status: done
-prompt: 202603/prompts/bead_create_type_flag.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/bead_create_type_flag.md](prompts/bead_create_type_flag.md)
 
 # Plan: Migrate `sase bead create` to `--type` flag
 

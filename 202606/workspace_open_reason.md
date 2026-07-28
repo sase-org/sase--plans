@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 15:31:06
 status: done
-prompt: 202606/prompts/workspace_open_reason.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/workspace_open_reason.md](prompts/workspace_open_reason.md)
+
 # Require a Reason for `sase workspace open`
 
 ## Goal

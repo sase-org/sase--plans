@@ -6,8 +6,9 @@ goal: Epic clan declarations render their committed authored plan with the share
   summaries.
 create_time: 2026-07-20 16:18:43
 status: done
-prompt: 202607/prompts/epic_clan_plan_summary.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_clan_plan_summary.md](prompts/epic_clan_plan_summary.md)
 
 # Plan: Plan-first epic clan summary rendering
 

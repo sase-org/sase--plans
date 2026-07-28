@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 13:24:14
 status: done
-prompt: 202604/prompts/wire_format_instructions.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/wire_format_instructions.md](prompts/wire_format_instructions.md)
 
 # Wire up `generate_format_instructions` for agent steps with output specs
 

@@ -28,6 +28,8 @@ status: done
 bead_id: sase-8w.7.4
 ---
 
+- **PROMPT:** [202607/prompts/finish_phase_sizes_landing.md](prompts/finish_phase_sizes_landing.md)
+
 # Plan: Finish and land the five-size phase-size epics
 
 ## Goal

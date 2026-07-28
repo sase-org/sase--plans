@@ -1,6 +1,5 @@
----
-plan: 202605/agents_header_counts.md
----
+- **PLAN:** [../202605/agents_header_counts.md](../agents_header_counts.md)
+
  Can you help me change the format of the agent count header shown at the top of the "Agents" tab of the
 `sase ace` TUI? Namely, let's put the total in parentheses after "Agents" and let's add two new counts: `<N> waiting`
 (these are currently counted as running, which is not correct) and `<M> read`. Also, we should change the order that the

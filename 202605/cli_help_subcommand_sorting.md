@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 08:45:05
 status: done
-prompt: 202605/prompts/cli_help_subcommand_sorting.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cli_help_subcommand_sorting.md](prompts/cli_help_subcommand_sorting.md)
+
 # Plan: Alphabetize CLI Subcommands In All Help Output
 
 ## Goal

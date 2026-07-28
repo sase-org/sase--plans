@@ -43,6 +43,8 @@ status: done
 bead_id: sase-7g
 ---
 
+- **PROMPT:** [202607/prompts/id_directive_clan_kwarg.md](prompts/id_directive_clan_kwarg.md)
+
 # Plan: Rename %name to %id and add clan-scoped agent ids
 
 ## Context

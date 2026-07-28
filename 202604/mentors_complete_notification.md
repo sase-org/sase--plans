@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 17:22:52
 status: done
-prompt: 202604/prompts/mentors_complete_notification.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/mentors_complete_notification.md](prompts/mentors_complete_notification.md)
+
 # Plan: Notification When All Mentors Finish For A ChangeSpec COMMITS Entry
 
 ## Goal

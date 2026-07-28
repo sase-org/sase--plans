@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 16:44:01
 status: done
-prompt: 202603/prompts/agent_error_debugging.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/agent_error_debugging.md](prompts/agent_error_debugging.md)
 
 # Agent Error Debugging: Make Failures WAY Easier to Debug
 

@@ -1,6 +1,5 @@
----
-plan: 202607/vcs_log_command.md
----
+- **PLAN:** [../202607/vcs_log_command.md](../vcs_log_command.md)
+
  Can you help me add new `sase vcs` command?
 
 - This command will be used as a linked-repo aware version of the `git log` command, but MUST work with any supported sase VCS provider.

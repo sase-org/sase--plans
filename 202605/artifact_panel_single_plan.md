@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:17:34
 status: done
-prompt: 202605/prompts/artifact_panel_single_plan.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_panel_single_plan.md](prompts/artifact_panel_single_plan.md)
+
 # Plan: Single Canonical Plan Artifact in Agent Artifact Panel
 
 ## Problem

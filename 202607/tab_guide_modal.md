@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-04 12:48:07
 status: wip
-prompt: 202607/prompts/tab_guide_modal.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tab_guide_modal.md](prompts/tab_guide_modal.md)
+
 # Plan: Per-Tab Onboarding "Tab Guide" Modal (`,?`)
 
 ## Problem & Product Context

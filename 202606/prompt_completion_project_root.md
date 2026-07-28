@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-06 14:17:10
 status: done
-prompt: 202606/prompts/prompt_completion_project_root.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_completion_project_root.md](prompts/prompt_completion_project_root.md)
+
 # Plan: Project-Rooted Prompt File Completion
 
 ## Problem

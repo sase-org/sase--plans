@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 08:09:59
 status: done
-prompt: 202606/prompts/create_prompt_snippet_option.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/create_prompt_snippet_option.md](prompts/create_prompt_snippet_option.md)
+
 # Plan: Add Prompt Save-As Snippet Option
 
 ## Goal

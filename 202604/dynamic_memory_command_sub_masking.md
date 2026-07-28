@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 10:23:33
 status: done
-prompt: 202604/prompts/dynamic_memory_command_sub_masking.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_command_sub_masking.md](prompts/dynamic_memory_command_sub_masking.md)
+
 # Dynamic memory matches keywords inside `$(...)` command-substitution payloads
 
 ## Problem

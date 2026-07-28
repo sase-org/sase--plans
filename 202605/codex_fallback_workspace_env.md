@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 15:12:30
 status: done
-prompt: 202605/prompts/codex_fallback_workspace_env.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_fallback_workspace_env.md](prompts/codex_fallback_workspace_env.md)
+
 # Codex fallback: add workspace-env precedence and richer skip diagnostics
 
 ## Background

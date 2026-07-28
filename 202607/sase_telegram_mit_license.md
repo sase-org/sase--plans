@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 07:04:25
 status: done
-prompt: 202607/prompts/sase_telegram_mit_license.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sase_telegram_mit_license.md](prompts/sase_telegram_mit_license.md)
+
 # Plan: MIT License for the sase-telegram Repo
 
 ## Request

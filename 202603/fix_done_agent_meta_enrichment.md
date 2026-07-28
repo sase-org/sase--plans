@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 18:52:48
 status: done
-prompt: 202603/prompts/fix_done_agent_meta_enrichment.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_done_agent_meta_enrichment.md](prompts/fix_done_agent_meta_enrichment.md)
 
 # Fix: Missing CL URL and CL Name in Agent Metadata Panel for Done Agents
 

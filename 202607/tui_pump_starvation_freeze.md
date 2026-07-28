@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 09:54:25
 status: done
-prompt: 202607/prompts/tui_pump_starvation_freeze.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tui_pump_starvation_freeze.md](prompts/tui_pump_starvation_freeze.md)
+
 # Fix multi-minute ace TUI freeze: message-pump starvation invisible to the stall watchdog
 
 ## Problem

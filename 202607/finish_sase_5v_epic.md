@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 07:05:19
 status: done
-prompt: 202607/prompts/finish_sase_5v_epic.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/finish_sase_5v_epic.md](prompts/finish_sase_5v_epic.md)
+
 # Finish the sase-5v epic: pyvendor doc references + bead closure
 
 ## Context

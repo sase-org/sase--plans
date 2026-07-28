@@ -1,9 +1,4 @@
----
-plan: 202607/ace_pilot_harness_cost.md
----
-
-
-
+- **PLAN:** [../202607/ace_pilot_harness_cost.md](../ace_pilot_harness_cost.md)
 
 Can you complete the work for bead sase-86.2? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

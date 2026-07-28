@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 11:54:58
 status: done
-prompt: 202605/prompts/agent_provider_badge.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_provider_badge.md](prompts/agent_provider_badge.md)
+
 # Agent Provider Badge Metadata Plan
 
 ## Context

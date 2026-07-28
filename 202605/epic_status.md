@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 14:50:13
 status: done
-prompt: 202605/prompts/epic_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_status.md](prompts/epic_status.md)
+
 # Plan: Keep `%epic` Plan Writers Running Until a Plan Is Submitted
 
 ## Problem

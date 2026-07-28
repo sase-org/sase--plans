@@ -1,10 +1,4 @@
----
-plan: 202605/commit_finalizer_closeout.md
----
-
-
-
-
+- **PLAN:** [../202605/commit_finalizer_closeout.md](../commit_finalizer_closeout.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-3v is complete?
 

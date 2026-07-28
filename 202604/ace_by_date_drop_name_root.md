@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:18:33
 status: done
-prompt: 202604/prompts/ace_by_date_drop_name_root.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_by_date_drop_name_root.md](prompts/ace_by_date_drop_name_root.md)
+
 # Plan: `sase ace` "by date" grouping should not sub-group by base name
 
 ## Problem

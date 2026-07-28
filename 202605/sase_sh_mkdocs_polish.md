@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-09 02:56:07
 status: wip
-prompt: 202605/prompts/sase_sh_mkdocs_polish.md
 bead_id: sase-2g
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/sase_sh_mkdocs_polish.md](prompts/sase_sh_mkdocs_polish.md)
+
 # SASE.sh MkDocs Polish Plan
 
 ## Goal

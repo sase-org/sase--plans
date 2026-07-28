@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 21:18:04
 status: done
-prompt: 202607/prompts/aggregate_output_variables_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/aggregate_output_variables_metadata.md](prompts/aggregate_output_variables_metadata.md)
+
 # Plan: Aggregate agent-child SASE variables in the agent metadata panel
 
 ## Problem

@@ -9,8 +9,9 @@ goal: 'A snippet saved from the ACE prompt panel is immediately expandable from 
   '
 create_time: 2026-07-18 08:56:30
 status: done
-prompt: 202607/prompts/live_saved_snippets.md
 ---
+
+- **PROMPT:** [202607/prompts/live_saved_snippets.md](prompts/live_saved_snippets.md)
 
 # Plan: Make newly saved snippets live in open ACE prompts
 

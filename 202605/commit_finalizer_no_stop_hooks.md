@@ -3,8 +3,10 @@ create_time: 2026-05-21 19:11:00
 status: done
 bead_id: sase-3v
 tier: epic
-prompt: 202605/prompts/commit_finalizer_no_stop_hooks.md
 ---
+
+- **PROMPT:** [202605/prompts/commit_finalizer_no_stop_hooks.md](prompts/commit_finalizer_no_stop_hooks.md)
+
 # Plan: Commit Finalizer Without Stop Hooks
 
 ## Goal

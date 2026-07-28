@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-13 14:24:39
 status: wip
-prompt: 202606/prompts/prompt_command.md
 bead_id: sase-4o
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/prompt_command.md](prompts/prompt_command.md)
+
 # `sase prompt` Command Plan
 
 ## Context

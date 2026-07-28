@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 20:52:33
 status: done
-prompt: 202607/prompts/zoom_panel_file_list.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/zoom_panel_file_list.md](prompts/zoom_panel_file_list.md)
+
 # Plan: Zoom Panel File List — Freeze, Clarify, and Beautify
 
 ## Problem / Context

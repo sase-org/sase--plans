@@ -6,8 +6,9 @@ goal: Epic approval launches from the TUI and other host transports resolve the 
   from the canonical project key.
 create_time: 2026-07-15 17:04:12
 status: done
-prompt: 202607/prompts/epic_approval_project_identity.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_approval_project_identity.md](prompts/epic_approval_project_identity.md)
 
 # Plan: Preserve canonical project identity during epic approval launches
 

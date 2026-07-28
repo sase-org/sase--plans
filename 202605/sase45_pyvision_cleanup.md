@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-26 21:26:24
 status: done
-prompt: 202605/prompts/sase45_pyvision_cleanup.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase45_pyvision_cleanup.md](prompts/sase45_pyvision_cleanup.md)
+
 # SASE-45 Pyvision Cleanup Plan
 
 ## Goal

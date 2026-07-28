@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 18:35:39
 status: done
-prompt: 202604/prompts/install_sase_github_core_rs.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/install_sase_github_core_rs.md](prompts/install_sase_github_core_rs.md)
+
 # Fix `install_sase_github` Resolution Of Local `sase-core-rs`
 
 ## Problem

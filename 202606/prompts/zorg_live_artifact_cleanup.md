@@ -1,6 +1,5 @@
----
-plan: 202606/zorg_live_artifact_cleanup.md
----
+- **PLAN:** [../202606/zorg_live_artifact_cleanup.md](../zorg_live_artifact_cleanup.md)
+
  I'm unable to delete the "zorg" project. Can you help me track down and delete these 5 live artifacts (see the `sase ace` snapshot below)? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

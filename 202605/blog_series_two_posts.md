@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 16:10:36
 status: done
-prompt: 202605/prompts/blog_series_two_posts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/blog_series_two_posts.md](prompts/blog_series_two_posts.md)
+
 # Plan: Reframe sase.sh around a single blog series with two posts
 
 ## Context

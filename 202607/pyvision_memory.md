@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 11:40:08
 status: done
-prompt: 202607/prompts/pyvision_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/pyvision_memory.md](prompts/pyvision_memory.md)
+
 # Plan: Add a `memory/pyvision.md` long-term memory for fixing pyvision errors
 
 ## Goal

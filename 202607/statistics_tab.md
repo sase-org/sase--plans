@@ -55,6 +55,8 @@ status: done
 bead_id: sase-6y
 ---
 
+- **PROMPT:** [202607/prompts/statistics_tab.md](prompts/statistics_tab.md)
+
 # Plan: Replace the Admin Center Telemetry tab with a Statistics tab
 
 ## Context

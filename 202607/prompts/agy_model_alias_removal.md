@@ -1,6 +1,5 @@
----
-plan: 202607/agy_model_alias_removal.md
----
+- **PLAN:** [../202607/agy_model_alias_removal.md](../agy_model_alias_removal.md)
+
  Can you help me get rid of the hacky `agy` and `agy_pro` model aliases that are currently configured in the sase.yml file in my chezmoi repo?
 
 - I'm pretty sure we did this because the model names have spaces and parentheses in them but we should be able to support both of these by quoting the argument used with the `%model` directive.

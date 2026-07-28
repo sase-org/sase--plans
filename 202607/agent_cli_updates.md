@@ -49,6 +49,8 @@ status: done
 bead_id: sase-7s
 ---
 
+- **PROMPT:** [202607/prompts/agent_cli_updates.md](prompts/agent_cli_updates.md)
+
 # Plan: Agent CLI updates across the SASE CLI and TUI
 
 ## Context and product goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 07:31:20
 status: done
-prompt: 202605/prompts/artifact_panel_relative_path.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_panel_relative_path.md](prompts/artifact_panel_relative_path.md)
+
 # Plan: Artifact Panel `Y` Copies Repo-Relative Paths
 
 ## Goal

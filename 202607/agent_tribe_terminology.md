@@ -38,6 +38,8 @@ status: done
 bead_id: sase-7j
 ---
 
+- **PROMPT:** [202607/prompts/agent_tribe_terminology.md](prompts/agent_tribe_terminology.md)
+
 # Plan: Complete the agent tribe terminology migration
 
 ## Context and intended result

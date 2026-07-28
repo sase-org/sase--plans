@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 13:06:04
 status: done
-prompt: 202605/prompts/pdf_download_404_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pdf_download_404_fix.md](prompts/pdf_download_404_fix.md)
+
 # Plan: Fix Deployed PDF Download 404
 
 ## Problem Summary

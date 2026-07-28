@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 10:14:49
 status: done
-prompt: 202606/prompts/question_continuation_planner_runtime.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/question_continuation_planner_runtime.md](prompts/question_continuation_planner_runtime.md)
+
 # Plan: Pin the runtime for the `ANSWERED` asker and `*APPROVED` approver rows of a `%approve` question-continuation family
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 11:08:47
 status: done
-prompt: 202605/prompts/hash_at_smart_args.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/hash_at_smart_args.md](prompts/hash_at_smart_args.md)
+
 # Plan: Smart xprompt arguments for #@
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 07:12:39
 status: done
-prompt: 202606/prompts/admin_center_xprompt_ctrl_i.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/admin_center_xprompt_ctrl_i.md](prompts/admin_center_xprompt_ctrl_i.md)
+
 # Admin Center XPrompts Ctrl-I Load Plan
 
 ## Objective

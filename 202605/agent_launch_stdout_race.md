@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 13:38:12
 status: done
-prompt: 202605/prompts/agent_launch_stdout_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_launch_stdout_race.md](prompts/agent_launch_stdout_race.md)
+
 # Plan: Fix Agent Launch Output Test Race
 
 ## Context

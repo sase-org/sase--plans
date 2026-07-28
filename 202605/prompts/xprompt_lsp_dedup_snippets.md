@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_lsp_dedup_snippets.md
----
+- **PLAN:** [../202605/xprompt_lsp_dedup_snippets.md](../xprompt_lsp_dedup_snippets.md)
+
  Can you help me stop returning duplicate xprompts from our new LSP server (see the nvim snapshot below for context)? Let's only show one row in the completion menu for each xprompt. The row should be a snippet and should either expand to `#foo ` (if it has no required args), `#foo:` if it has one required (non-text type) arg, `#foo(<cursor_goes_here>)` (if there are multiple required args), or `#foo::` if there is one required argument of type `text`. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

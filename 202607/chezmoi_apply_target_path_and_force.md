@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-01 09:13:40
 status: done
-prompt: 202607/prompts/chezmoi_apply_target_path_and_force.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/chezmoi_apply_target_path_and_force.md](prompts/chezmoi_apply_target_path_and_force.md)
+
 # Plan: Fix `chezmoi apply` "not in source state" on config/model-alias edits, and always use `--force`
 
 ## Summary

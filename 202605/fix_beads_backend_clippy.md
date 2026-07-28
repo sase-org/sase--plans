@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 13:03:32
 status: done
-prompt: 202605/prompts/fix_beads_backend_clippy.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_beads_backend_clippy.md](prompts/fix_beads_backend_clippy.md)
+
 # Fix `beads-backend` Clippy Failures in `sase-core`
 
 ## Context

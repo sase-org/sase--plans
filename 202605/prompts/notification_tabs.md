@@ -1,6 +1,5 @@
----
-plan: 202605/notification_tabs.md
----
+- **PLAN:** [../202605/notification_tabs.md](../notification_tabs.md)
+
  We currently support multiple tabs on the notification panel in the TUI but we also split each tab's notifications up by status. Can you help me stop splitting up each tab by status and instead organize notifications only by tabs?
 
 - Plans and question notifications should go in a new "HITL" tab.

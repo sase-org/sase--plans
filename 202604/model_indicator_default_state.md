@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 22:14:44
 status: done
-prompt: 202604/prompts/model_indicator_default_state.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/model_indicator_default_state.md](prompts/model_indicator_default_state.md)
+
 # Plan: Always-Visible TUI Model Indicator
 
 ## Goal

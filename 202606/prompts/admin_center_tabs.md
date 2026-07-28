@@ -1,6 +1,5 @@
----
-plan: 202606/admin_center_tabs.md
----
+- **PLAN:** [../202606/admin_center_tabs.md](../admin_center_tabs.md)
+
   Can you help me make some improvements to the "SASE Admin Center"?
 
 - Let's sort the tabs alphabetically from left-to-right.

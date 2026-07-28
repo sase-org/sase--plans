@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 14:34:26
 status: done
-prompt: 202605/prompts/sase36_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase36_completion.md](prompts/sase36_completion.md)
+
 # SASE-36 Completion Plan
 
 ## Context

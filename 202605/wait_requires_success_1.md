@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 19:25:13
 status: done
-prompt: 202605/prompts/wait_requires_success_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/wait_requires_success_1.md](prompts/wait_requires_success_1.md)
+
 # Plan: Make `%wait` Dependencies Require Successful Completion
 
 ## Problem

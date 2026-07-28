@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 13:21:55
 status: done
-prompt: 202604/prompts/approve_options_typing_diagnosis.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/approve_options_typing_diagnosis.md](prompts/approve_options_typing_diagnosis.md)
 
 # Fix: Cannot Type in ApproveOptionsModal TextArea (Root Cause Diagnosis)
 

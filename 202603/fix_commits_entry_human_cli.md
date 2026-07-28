@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-27 14:46:43
-prompt: 202603/prompts/fix_commits_entry_human_cli.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_commits_entry_human_cli.md](prompts/fix_commits_entry_human_cli.md)
 
 # Plan: Fix COMMITS entry creation for human `sase commit` invocations
 

@@ -8,8 +8,9 @@ goal: 'Swarm launches submitted through the ACE TUI with per-segment %name:! dir
   '
 create_time: 2026-07-18 17:04:58
 status: wip
-prompt: 202607/prompts/fix_multi_segment_force_reuse.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_multi_segment_force_reuse.md](prompts/fix_multi_segment_force_reuse.md)
 
 # Plan: Wipe every `%name:!` owner in multi-segment TUI launches
 

@@ -2,9 +2,11 @@
 create_time: 2026-04-23 20:32:20
 status: done
 bead_id: sase-l
-prompt: 202604/prompts/test_suite_speedup.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/test_suite_speedup.md](prompts/test_suite_speedup.md)
+
 # Speed up `just test` — Implementation Plan
 
 Research source: `sdd/research/202604/test_suite_speedup.md` (commit `43741c5e`).

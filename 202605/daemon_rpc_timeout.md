@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 14:44:15
 status: done
-prompt: 202605/prompts/daemon_rpc_timeout.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/daemon_rpc_timeout.md](prompts/daemon_rpc_timeout.md)
+
 # Plan: Diagnose and Fix Daemon RPC Health Timeouts
 
 ## Context

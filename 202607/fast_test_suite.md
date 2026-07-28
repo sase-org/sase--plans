@@ -66,6 +66,8 @@ status: done
 bead_id: sase-86
 ---
 
+- **PROMPT:** [202607/prompts/fast_test_suite.md](prompts/fast_test_suite.md)
+
 # Plan: Fast test suite under multi-agent load
 
 ## Context and baseline measurements

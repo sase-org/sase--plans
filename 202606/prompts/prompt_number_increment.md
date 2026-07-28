@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_number_increment.md
----
+- **PLAN:** [../202606/prompt_number_increment.md](../prompt_number_increment.md)
+
  Can you help me implement the `<ctrl+a>` and `<ctrl+x>` keymaps (inspired by vim) in the prompt input widget to increment/decrement numbers?
 
 - The `<ctrl+a>` keymap already jumps to the beginning of the line. This should be preserved in insert mode but not in normal mode.

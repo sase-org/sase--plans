@@ -76,6 +76,8 @@ status: done
 bead_id: sase-6p
 ---
 
+- **PROMPT:** [202607/prompts/gate_option_queries.md](prompts/gate_option_queries.md)
+
 # Plan: Query-driven sase gates with configurable options
 
 ## Problem and product context

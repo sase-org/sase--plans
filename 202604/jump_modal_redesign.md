@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 15:38:07
 status: done
-prompt: 202604/prompts/jump_modal_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/jump_modal_redesign.md](prompts/jump_modal_redesign.md)
 
 # Redesign Jump-to-Entry Modal
 

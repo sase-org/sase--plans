@@ -39,6 +39,8 @@ status: done
 bead_id: sase-6s
 ---
 
+- **PROMPT:** [202607/prompts/commits_filter_bar.md](prompts/commits_filter_bar.md)
+
 # Plan: Commits filter bar with live preview and completion
 
 ## Context

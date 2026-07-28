@@ -2,9 +2,11 @@
 create_time: 2026-05-01 20:17:10
 bead_id: sase-1x
 status: done
-prompt: 202605/prompts/sdd_legends_migration_4.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/sdd_legends_migration_4.md](prompts/sdd_legends_migration_4.md)
+
 # SDD Directory Migration and Legend Support Plan
 
 ## Context

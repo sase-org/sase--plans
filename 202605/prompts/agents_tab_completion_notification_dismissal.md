@@ -1,6 +1,5 @@
----
-plan: 202605/agents_tab_completion_notification_dismissal.md
----
+- **PLAN:** [../202605/agents_tab_completion_notification_dismissal.md](../agents_tab_completion_notification_dismissal.md)
+
  We currently dismiss agent completion notifications from the TUI when the corresponding agent is either marked
 as unread or dismissed from the agents tab. Can you help me start dismissing ALL agent completion notifications as soon
 as the user navigates to the agents tab or, if the user is already on the agents tab, the next time there is some kind

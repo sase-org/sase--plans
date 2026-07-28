@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 17:45:55
 status: done
-prompt: 202603/prompts/plan_telegram_agent_name_and_pdf.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/plan_telegram_agent_name_and_pdf.md](prompts/plan_telegram_agent_name_and_pdf.md)
 
 # Plan: Agent Name in Plan Telegram Messages + Always Attach Plan PDF
 

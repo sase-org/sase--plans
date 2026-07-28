@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 19:24:01
 status: done
-prompt: 202604/prompts/remove_auto_thinking.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/remove_auto_thinking.md](prompts/remove_auto_thinking.md)
 
 # Plan: Stop Auto-Showing Thinking Panel in File View
 

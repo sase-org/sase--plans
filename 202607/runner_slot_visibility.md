@@ -9,8 +9,9 @@ goal: 'Every agent that the runner-slot admission layer counts as occupying a sl
   '
 create_time: 2026-07-17 18:47:44
 status: done
-prompt: 202607/prompts/runner_slot_visibility.md
 ---
+
+- **PROMPT:** [202607/prompts/runner_slot_visibility.md](prompts/runner_slot_visibility.md)
 
 # Plan: Surface runner-slot-holding family children in agent listings
 

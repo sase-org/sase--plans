@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 20:23:52
 status: done
-prompt: 202604/prompts/agents_tab_runtime_timestamp.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_runtime_timestamp.md](prompts/agents_tab_runtime_timestamp.md)
+
 # Plan: Right-aligned runtime + finish-timestamp on the Agents tab
 
 ## Goal

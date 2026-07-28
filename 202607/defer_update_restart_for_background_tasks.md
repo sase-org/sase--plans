@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 12:31:58
 status: done
-prompt: 202607/prompts/defer_update_restart_for_background_tasks.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/defer_update_restart_for_background_tasks.md](prompts/defer_update_restart_for_background_tasks.md)
+
 # Plan: Defer Update Restart Until Background Tasks Finish
 
 ## Problem

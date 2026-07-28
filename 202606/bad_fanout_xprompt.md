@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 14:22:44
 status: done
-prompt: 202606/prompts/bad_fanout_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bad_fanout_xprompt.md](prompts/bad_fanout_xprompt.md)
+
 # Fix xprompt-injected model fanout shape
 
 ## Problem

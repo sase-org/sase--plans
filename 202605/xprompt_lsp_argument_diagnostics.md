@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 11:06:00
 status: done
-prompt: 202605/prompts/xprompt_lsp_argument_diagnostics.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_argument_diagnostics.md](prompts/xprompt_lsp_argument_diagnostics.md)
+
 # Plan: XPrompt LSP Argument Diagnostics
 
 ## Context

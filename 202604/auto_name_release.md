@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 13:23:47
 status: done
-prompt: 202604/prompts/auto_name_release.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/auto_name_release.md](prompts/auto_name_release.md)
+
 # Fix Auto-Assignable Agent Name Release
 
 ## Problem

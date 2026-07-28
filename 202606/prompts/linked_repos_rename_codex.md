@@ -1,6 +1,5 @@
----
-plan: 202606/linked_repos_rename_codex.md
----
+- **PLAN:** [../202606/linked_repos_rename_codex.md](../linked_repos_rename_codex.md)
+
  #fork:research.z.final Ok. Let's do the rename that you recommended. Let's name the new configuration field `linked_repos`, not `linked_repositories` though.
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

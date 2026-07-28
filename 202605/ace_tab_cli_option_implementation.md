@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 15:58:22
 status: done
-prompt: 202605/prompts/ace_tab_cli_option_implementation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ace_tab_cli_option_implementation.md](prompts/ace_tab_cli_option_implementation.md)
+
 # Plan: Implement the `--tab` CLI option on `sase ace`
 
 ## Background — investigation finding

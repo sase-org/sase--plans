@@ -1,6 +1,5 @@
----
-plan: 202605/agent_counts.md
----
+- **PLAN:** [../202605/agent_counts.md](../agent_counts.md)
+
  Can you help me start showing (at the top near the auto-refresh and group strategy) agent counts?
 
 - This should only be visible when the "Agents" tab of the `sase ace` TUI is focused.

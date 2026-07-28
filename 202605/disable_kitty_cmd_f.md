@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:52:36
 status: done
-prompt: 202605/prompts/disable_kitty_cmd_f.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/disable_kitty_cmd_f.md](prompts/disable_kitty_cmd_f.md)
+
 # Plan: Disable Kitty cmd+f Interception for SASE Prompt Word Navigation
 
 ## Context

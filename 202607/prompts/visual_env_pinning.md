@@ -1,11 +1,4 @@
----
-plan: 202607/visual_env_pinning.md
----
-
-
-
-
-
+- **PLAN:** [../202607/visual_env_pinning.md](../visual_env_pinning.md)
 
 You are the land agent for epic bead sase-65: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

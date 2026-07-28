@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 14:11:50
 status: done
-prompt: 202605/prompts/agent_index_gc_corruption.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_index_gc_corruption.md](prompts/agent_index_gc_corruption.md)
+
 # Plan: Repair `sase agents index gc` on corrupt artifact index
 
 ## Problem

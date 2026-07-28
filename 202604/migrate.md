@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 11:09:39
 status: done
-prompt: 202604/prompts/migrate.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/migrate.md](prompts/migrate.md)
 
 # Plan: Migrate Tier 2 Xprompts to Long-Term Memory
 

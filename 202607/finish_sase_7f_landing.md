@@ -8,8 +8,9 @@ goal: 'Epic sase-7f is fully reconciled with current master, its child records p
   '
 create_time: 2026-07-19 14:21:51
 status: done
-prompt: 202607/prompts/finish_sase_7f_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/finish_sase_7f_landing.md](prompts/finish_sase_7f_landing.md)
 
 # Plan: Finish sase-7f traceability and landing
 

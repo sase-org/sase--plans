@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 21:54:20
 status: done
-prompt: 202605/prompts/finish_sase_2y.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/finish_sase_2y.md](prompts/finish_sase_2y.md)
+
 # Finish sase-2y Verification Closeout
 
 ## Context

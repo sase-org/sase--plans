@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 10:11:45
 status: done
-prompt: 202605/prompts/agent_row_file_change_pencil.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_row_file_change_pencil.md](prompts/agent_row_file_change_pencil.md)
+
 # Agent Row File-Change Pencil Plan
 
 ## Goal

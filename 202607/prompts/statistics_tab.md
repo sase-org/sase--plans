@@ -1,6 +1,5 @@
----
-plan: 202607/statistics_tab.md
----
+- **PLAN:** [../202607/statistics_tab.md](../statistics_tab.md)
+
  The new telemetry tab on the SASE admin center panel is a mess. None of those graphs mean anything to me or anyone. Can you help me rename this tab to Statistics?
 
 - Rip out any bits of the telemetry infrastructure that aren't useful for debugging issues later.

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:00:42
 status: done
-prompt: 202605/prompts/bead_open_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_open_command.md](prompts/bead_open_command.md)
+
 # Plan: Add `sase bead open <id>`
 
 ## Problem

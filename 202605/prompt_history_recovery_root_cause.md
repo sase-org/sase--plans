@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-01 14:48:17
 status: proposed
-prompt: 202605/prompts/prompt_history_recovery_root_cause.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_history_recovery_root_cause.md](prompts/prompt_history_recovery_root_cause.md)
 
 # Plan: Prompt History Root Cause Verification and Full Recovery
 

@@ -3,8 +3,9 @@ create_time: 2026-05-11 18:46:32
 bead_id: sase-2x
 tier: epic
 status: done
-prompt: 202605/prompts/manual_chop_runs_live_output.md
 ---
+
+- **PROMPT:** [202605/prompts/manual_chop_runs_live_output.md](prompts/manual_chop_runs_live_output.md)
 
 # Manual Chop Runs and Live Chop Output Plan
 

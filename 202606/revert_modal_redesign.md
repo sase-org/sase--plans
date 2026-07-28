@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 17:27:47
 status: done
-prompt: 202606/prompts/revert_modal_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/revert_modal_redesign.md](prompts/revert_modal_redesign.md)
+
 # Redesign the Revert Agent Commits Confirmation Modal
 
 ## Goal

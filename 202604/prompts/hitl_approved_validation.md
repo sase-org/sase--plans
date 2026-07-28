@@ -1,6 +1,5 @@
----
-plan: 202604/hitl_approved_validation.md
----
+- **PLAN:** [../202604/hitl_approved_validation.md](../hitl_approved_validation.md)
+
 Can you help me fix the following error I'm getting from the `#split` xprompt workflow (defined in the ../retired Mercurial plugin
 repo)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

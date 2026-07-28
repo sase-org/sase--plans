@@ -8,8 +8,9 @@ goal: 'The prompt bar accepts Ctrl+G Ctrl+X as an alias for Ctrl+G x, and the re
   '
 create_time: 2026-07-18 08:19:21
 status: done
-prompt: 202607/prompts/ctrl_x_xprompt_snippet_chord.md
 ---
+
+- **PROMPT:** [202607/prompts/ctrl_x_xprompt_snippet_chord.md](prompts/ctrl_x_xprompt_snippet_chord.md)
 
 # Plan: Rebind the xprompt save panel snippet chord to Ctrl+X
 

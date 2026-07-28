@@ -1,11 +1,4 @@
----
-plan: 202607/finish_statistics_project_changespec_epic.md
----
-
-
-
-
-
+- **PLAN:** [../202607/finish_statistics_project_changespec_epic.md](../finish_statistics_project_changespec_epic.md)
 
 You are the land agent for epic bead sase-70: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

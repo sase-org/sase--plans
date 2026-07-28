@@ -1,6 +1,5 @@
----
-plan: 202607/chop_lifecycle_fixes_v2.md
----
+- **PLAN:** [../202607/chop_lifecycle_fixes_v2.md](../chop_lifecycle_fixes_v2.md)
+
  we recently performed a major upgrade on sase's lumberjack chops and what functionality we support via config (see the sase-6v epic bead for context). I suspect that at least some of this functionality is not working correctly right now with the chops that are currently configured in my chezmoi repo. Can you do some research on this new functionality and then review some recent logs from MyConfiguredChops with the goal of flushing out any issues in our design or implementation? If you find any bugs or objective improvements you're confident in, use your /sase_plan skill to design and implement them. 
 
 ### Additional Requirements

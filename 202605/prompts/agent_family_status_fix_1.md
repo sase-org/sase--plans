@@ -1,6 +1,5 @@
----
-plan: 202605/agent_family_status_fix_1.md
----
+- **PLAN:** [../202605/agent_family_status_fix_1.md](../agent_family_status_fix_1.md)
+
  Our implementation of "agent families" (see the sase-3r epic bead) seems wrong. This agent (see the `sase ace` snapshot below) asked two questions, created a plan that I approved, and then finished successfully. The root agent entry should be marked as "PLAN DONE" instead of "PLAN APPROVED", which should match the last agent step (which should also show "PLAN DONE" instead of "QUESTION"). I have a feeling this may be related to some incorrect logic we have regarding the "QUESTION" status. Can you help me review the original requirements from the sase-3r prompt (see the sdd/prompts/202605/agent_families_2.md file) and fix these issues? Use `sase ace --tmux` to verify your fix (e.g. emulate key presses on the new `sase ace` instance and take tmux pane captures) is correct by ensuring that the "aj5" agent now looks as it should. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

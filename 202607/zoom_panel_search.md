@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 18:05:56
 status: done
-prompt: 202607/prompts/zoom_panel_search.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/zoom_panel_search.md](prompts/zoom_panel_search.md)
+
 # Plan: Vim-style `/` and `?` Search in the Agents-tab Zoom Panel
 
 ## Product Context

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 14:44:42
 status: done
-prompt: 202604/prompts/json_null_default_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/json_null_default_validation.md](prompts/json_null_default_validation.md)
 
 # Plan: Allow null values for JSON schema fields with defaults
 

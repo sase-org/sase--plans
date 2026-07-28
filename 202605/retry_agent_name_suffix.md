@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 22:06:21
 status: done
-prompt: 202605/prompts/retry_agent_name_suffix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/retry_agent_name_suffix.md](prompts/retry_agent_name_suffix.md)
+
 # Plan: Retry Agent Names
 
 ## Goal

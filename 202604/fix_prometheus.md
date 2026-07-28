@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 21:22:45
 status: wip
-prompt: 202604/prompts/fix_prometheus.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_prometheus.md](prompts/fix_prometheus.md)
 
 # Plan: Diagnose and Fix Prometheus
 

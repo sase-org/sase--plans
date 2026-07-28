@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:38:32
 status: done
-prompt: 202605/prompts/artifact_viewer_page_wrap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_viewer_page_wrap.md](prompts/artifact_viewer_page_wrap.md)
+
 # Artifact Viewer Page Wrap Plan
 
 ## Context

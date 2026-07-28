@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 23:57:37
 status: done
-prompt: 202604/prompts/axe_memory.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/axe_memory.md](prompts/axe_memory.md)
 
 # Plan: Improve Axe Agent Runner Long-Term Memory
 

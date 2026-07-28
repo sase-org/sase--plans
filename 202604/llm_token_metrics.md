@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 00:28:32
 status: done
-prompt: 202604/prompts/llm_token_metrics.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/llm_token_metrics.md](prompts/llm_token_metrics.md)
 
 # Plan: LLM Token & Cost Metrics (Claude Code)
 

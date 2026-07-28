@@ -1,10 +1,4 @@
----
-plan: 202606/sase_5a_remaining.md
----
-
-
-
-
+- **PLAN:** [../202606/sase_5a_remaining.md](../sase_5a_remaining.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5a is complete?
 

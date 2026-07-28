@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 12:46:20
 status: done
-prompt: 202607/prompts/refresh_docs_notification.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/refresh_docs_notification.md](prompts/refresh_docs_notification.md)
+
 # Plan: Stop the redundant `refresh_docs` chop completion notification
 
 ## Problem

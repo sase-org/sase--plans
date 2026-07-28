@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-14 23:03:22
 status: done
-prompt: 202605/prompts/codex_tools_panel_2.md
 bead_id: sase-3k
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/codex_tools_panel_2.md](prompts/codex_tools_panel_2.md)
+
 # Plan: Codex Support For The Agents Tab Tools Panel
 
 ## Problem

@@ -6,8 +6,9 @@ goal: Alias values can name a pipe-separated model pool that round-robins across
   and small/large phase workers route through @cheapest/@smartest.
 create_time: 2026-07-21 09:11:51
 status: done
-prompt: 202607/prompts/cheapest_load_balanced_alias.md
 ---
+
+- **PROMPT:** [202607/prompts/cheapest_load_balanced_alias.md](prompts/cheapest_load_balanced_alias.md)
 
 # Plan: Load-balanced model aliases and the builtin `@cheapest` alias
 

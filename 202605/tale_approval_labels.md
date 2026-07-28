@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 23:54:47
 status: done
-prompt: 202605/prompts/tale_approval_labels.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tale_approval_labels.md](prompts/tale_approval_labels.md)
+
 # Plan: Rename Normal Approval CTA to Tale
 
 ## Goal

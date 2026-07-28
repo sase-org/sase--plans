@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 07:35:43
 status: done
-prompt: 202607/prompts/xprompt_arg_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/xprompt_arg_color.md](prompts/xprompt_arg_color.md)
+
 # Plan: Distinct color for xprompt arguments in the prompt input
 
 ## Goal

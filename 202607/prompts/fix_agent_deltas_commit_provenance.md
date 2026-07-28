@@ -1,6 +1,5 @@
----
-plan: 202607/fix_agent_deltas_commit_provenance.md
----
+- **PLAN:** [../202607/fix_agent_deltas_commit_provenance.md](../fix_agent_deltas_commit_provenance.md)
+
  The "Deltas:" field entries (which indicate files that the agent changed) in the agent metadata panel on the "Agents" tab of the `sase ace` TUI for the sase agent named "6l" do not look right (compare #sshot with the command output below--the command was run from the agent's workspace directory). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

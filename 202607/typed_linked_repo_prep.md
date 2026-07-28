@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 14:51:14
 status: done
-prompt: 202607/prompts/typed_linked_repo_prep.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/typed_linked_repo_prep.md](prompts/typed_linked_repo_prep.md)
+
 # Thread Typed Linked-Repo Resolution into Launch-Time Workspace Prep
 
 ## Assessment of the Existing Fix

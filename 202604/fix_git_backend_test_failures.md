@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 19:21:46
 status: done
-prompt: 202604/prompts/fix_git_backend_test_failures.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_git_backend_test_failures.md](prompts/fix_git_backend_test_failures.md)
+
 # Fix Git VCS Integration Test Backend Failures
 
 ## Context

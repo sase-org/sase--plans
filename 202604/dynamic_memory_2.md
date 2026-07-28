@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 20:00:43
 status: wip
-prompt: 202604/prompts/dynamic_memory_2.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_memory_2.md](prompts/dynamic_memory_2.md)
 
 # Plan: Implement Dynamic Memory (`memory/dynamic.md`)
 

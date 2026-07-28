@@ -79,6 +79,8 @@ status: wip
 bead_id: sase-95
 ---
 
+- **PROMPT:** [202607/prompts/background_tasks.md](prompts/background_tasks.md)
+
 # Plan: `sase task` — durable, session-aware background tasks
 
 ## Why

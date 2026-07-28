@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 09:02:39
 status: wip
-prompt: 202606/prompts/atomic_starting_count_and_row.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/atomic_starting_count_and_row.md](prompts/atomic_starting_count_and_row.md)
+
 # Make the "starting" count decrement and the new agent row appear atomically
 
 ## Product context

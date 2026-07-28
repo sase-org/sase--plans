@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 13:57:47
 status: done
-prompt: 202605/prompts/full_commit_message_telegram_pdf.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/full_commit_message_telegram_pdf.md](prompts/full_commit_message_telegram_pdf.md)
+
 # Plan: Full Commit Messages in Telegram Completion PDFs
 
 ## Goal

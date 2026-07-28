@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 17:05:45
 status: wip
-prompt: 202606/prompts/ref_type_frontmatter.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ref_type_frontmatter.md](prompts/ref_type_frontmatter.md)
+
 # Add Ref Type Frontmatter To Migrated AI Reference Notes
 
 ## Context

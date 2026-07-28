@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 08:11:28
 status: done
-prompt: 202606/prompts/agent_question_answered_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_question_answered_status.md](prompts/agent_question_answered_status.md)
+
 # Plan: Fix Answered Question Agent Status
 
 ## Problem

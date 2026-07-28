@@ -1,6 +1,5 @@
----
-plan: 202607/onboarding_install_plugins_step.md
----
+- **PLAN:** [../202607/onboarding_install_plugins_step.md](../onboarding_install_plugins_step.md)
+
  Can you help me add a new step to the onboarding page that is shown on the agents tab when there are no agents?
 
 - This step should tell the user how to use the "Updates" panel on the "SASE Admin Center" panel to install plugins (sase-github should be explicitly recommended) and keep sase up-to-date.

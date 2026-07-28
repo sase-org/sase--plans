@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 18:54:55
 status: wip
-prompt: 202605/prompts/finish_sase_38.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/finish_sase_38.md](prompts/finish_sase_38.md)
+
 # Finish sase-38 Verification And Closure
 
 ## Goal

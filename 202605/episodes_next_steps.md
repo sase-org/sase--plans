@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 09:20:37
 status: done
-prompt: 202605/prompts/episodes_next_steps.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/episodes_next_steps.md](prompts/episodes_next_steps.md)
+
 # Episode Visualization Next Steps Plan
 
 ## Objective

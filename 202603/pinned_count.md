@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 09:45:27
 status: done
-prompt: 202603/prompts/pinned_count.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/pinned_count.md](prompts/pinned_count.md)
 
 # Plan: Exclude Workflow Steps from Agent/Pinned Panel Counts
 

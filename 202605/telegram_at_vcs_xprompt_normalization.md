@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 20:44:05
 status: done
-prompt: 202605/prompts/telegram_at_vcs_xprompt_normalization.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_at_vcs_xprompt_normalization.md](prompts/telegram_at_vcs_xprompt_normalization.md)
+
 # Plan: Normalize Telegram `#workflow@ref` VCS Prompts
 
 ## Problem

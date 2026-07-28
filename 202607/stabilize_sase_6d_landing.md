@@ -8,8 +8,9 @@ goal: 'The canonical xprompt-save PNG coverage is deterministic under the full p
   '
 create_time: 2026-07-16 16:51:34
 status: done
-prompt: 202607/prompts/stabilize_sase_6d_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/stabilize_sase_6d_landing.md](prompts/stabilize_sase_6d_landing.md)
 
 # Plan: Stabilize canonical-path visual coverage and land sase-6d
 

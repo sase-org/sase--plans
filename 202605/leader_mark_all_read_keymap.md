@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 17:02:49
 status: done
-prompt: 202605/prompts/leader_mark_all_read_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/leader_mark_all_read_keymap.md](prompts/leader_mark_all_read_keymap.md)
+
 # Plan: Move Mark-All-Read Leader Command to `,u`
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 18:52:19
 status: done
-prompt: 202607/prompts/sase_5t_closeout.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sase_5t_closeout.md](prompts/sase_5t_closeout.md)
+
 # Close out epic sase-5t (pyvision → symvision)
 
 ## Context

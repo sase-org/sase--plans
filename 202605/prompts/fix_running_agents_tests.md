@@ -1,6 +1,5 @@
----
-plan: 202605/fix_running_agents_tests.md
----
+- **PLAN:** [../202605/fix_running_agents_tests.md](../fix_running_agents_tests.md)
+
  Can you help me fix our test suite (i.e. the `just test` command)? See the failure output below for context. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

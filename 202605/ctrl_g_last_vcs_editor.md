@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-15 00:52:08
 status: done
-prompt: 202605/prompts/ctrl_g_last_vcs_editor.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/ctrl_g_last_vcs_editor.md](prompts/ctrl_g_last_vcs_editor.md)
+
 # Plan: Global Ctrl+G Editor Launch for Last VCS XPrompt
 
 ## Goal

@@ -5,8 +5,9 @@ goal: Make fork launches coalesce shared transcript sources and wait for incompl
   named parents before resolving fork history or claiming a real workspace.
 create_time: 2026-07-20 16:48:01
 status: done
-prompt: 202607/prompts/harden_fork_parent_resolution.md
 ---
+
+- **PROMPT:** [202607/prompts/harden_fork_parent_resolution.md](prompts/harden_fork_parent_resolution.md)
 
 # Plan: Harden fork parent resolution
 

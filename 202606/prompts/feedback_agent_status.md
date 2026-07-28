@@ -1,6 +1,5 @@
----
-plan: 202606/feedback_agent_status.md
----
+- **PLAN:** [../202606/feedback_agent_status.md](../feedback_agent_status.md)
+
  Can you help me add support for a new `FEEDBACK` agent status that is used for agent child rows (and the root agent entry if that is the most recent agent child row to run) that proposed a plan tht the user left feedback on?
 
 - Make sure to give this new agent status a distinct color.

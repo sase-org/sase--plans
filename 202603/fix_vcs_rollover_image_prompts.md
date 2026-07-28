@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 18:38:09
 status: done
-prompt: 202603/prompts/fix_vcs_rollover_image_prompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_vcs_rollover_image_prompts.md](prompts/fix_vcs_rollover_image_prompts.md)
 
 # Fix VCS workflow rollover for image-based Telegram prompts
 

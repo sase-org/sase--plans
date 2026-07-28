@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 08:53:04
 status: done
-prompt: 202606/prompts/agent_restore_panel_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_restore_panel_polish.md](prompts/agent_restore_panel_polish.md)
+
 # Polish the Agent Restore panel's left-pane group list
 
 ## Context

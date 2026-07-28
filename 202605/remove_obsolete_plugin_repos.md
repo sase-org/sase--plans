@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-09 19:12:29
 status: done
-prompt: 202605/prompts/remove_obsolete_plugin_repos.md
 bead_id: sase-2k
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/remove_obsolete_plugin_repos.md](prompts/remove_obsolete_plugin_repos.md)
+
 # Remove Obsolete Plugin Repository References
 
 ## Goal

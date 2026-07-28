@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 21:06:57
 status: done
-prompt: 202605/prompts/vcs_xprompt_mru_test_history.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/vcs_xprompt_mru_test_history.md](prompts/vcs_xprompt_mru_test_history.md)
+
 # Stop VCS XPrompt MRU Test Writes From Polluting User History
 
 ## Problem

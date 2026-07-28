@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 17:00:35
 status: done
-prompt: 202605/prompts/fix_just_pr_xprompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_just_pr_xprompt.md](prompts/fix_just_pr_xprompt.md)
+
 # Plan: Embed `#pr` in `fix_just` Fixer Agent Prompts
 
 ## Goal

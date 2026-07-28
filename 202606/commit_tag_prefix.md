@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 08:55:20
 status: done
-prompt: 202606/prompts/commit_tag_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/commit_tag_prefix.md](prompts/commit_tag_prefix.md)
+
 # Plan: Prefix SASE Commit Footer Tags
 
 ## Goal

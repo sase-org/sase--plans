@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 17:30:12
 status: done
-prompt: 202604/prompts/agents_enter_misjump.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_enter_misjump.md](prompts/agents_enter_misjump.md)
+
 # Diagnose and Fix Agents-tab Enter Misjump
 
 ## Problem

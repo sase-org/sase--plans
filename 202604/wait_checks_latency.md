@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-07 22:56:27
 status: done
-prompt: 202604/prompts/wait_checks_latency.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/wait_checks_latency.md](prompts/wait_checks_latency.md)
 
 # Plan: Fix wait_checks latency by moving it to a dedicated lumberjack
 

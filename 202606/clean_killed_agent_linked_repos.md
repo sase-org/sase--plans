@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 09:53:20
 status: wip
-prompt: 202606/prompts/clean_killed_agent_linked_repos.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/clean_killed_agent_linked_repos.md](prompts/clean_killed_agent_linked_repos.md)
+
 # Clean Linked Repo Workspaces After Agent Kill
 
 ## Root Cause

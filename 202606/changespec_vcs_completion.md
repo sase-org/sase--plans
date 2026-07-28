@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 17:40:38
 status: done
-prompt: 202606/prompts/changespec_vcs_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/changespec_vcs_completion.md](prompts/changespec_vcs_completion.md)
+
 # Plan: Add active ChangeSpecs to `#+` VCS completion (TUI prompt + xprompt LSP)
 
 ## Goal

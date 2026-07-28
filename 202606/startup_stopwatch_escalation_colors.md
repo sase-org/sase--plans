@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 08:13:25
 status: done
-prompt: 202606/prompts/startup_stopwatch_escalation_colors.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/startup_stopwatch_escalation_colors.md](prompts/startup_stopwatch_escalation_colors.md)
+
 # Plan: Escalating Color Ramp for the `sase ace` Startup Stopwatch
 
 ## Problem / Context

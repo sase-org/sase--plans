@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 14:54:21
 status: done
-prompt: 202606/prompts/update_check_startup_toast.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/update_check_startup_toast.md](prompts/update_check_startup_toast.md)
+
 # Plan: "Updates available" startup toast + lightweight periodic version check
 
 ## 1. Summary

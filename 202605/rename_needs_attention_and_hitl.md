@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 11:05:34
 status: done
-prompt: 202605/prompts/rename_needs_attention_and_hitl.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/rename_needs_attention_and_hitl.md](prompts/rename_needs_attention_and_hitl.md)
+
 # Plan: Rename "Needs Attention" → "Stopped" and "hitl" → "stopped"
 
 ## Goal

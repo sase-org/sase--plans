@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-26 21:38:56
 status: done
-prompt: 202605/prompts/memory_episodes_build_hang.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_episodes_build_hang.md](prompts/memory_episodes_build_hang.md)
+
 # Plan: Fix `sase memory episodes build` project-scan fan-out
 
 ## Problem

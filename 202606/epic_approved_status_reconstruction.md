@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 16:01:17
 status: done
-prompt: 202606/prompts/epic_approved_status_reconstruction.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/epic_approved_status_reconstruction.md](prompts/epic_approved_status_reconstruction.md)
+
 # Plan: Reconstruct EPIC/LEGEND/COMMIT Approved-Handoff Statuses After TUI Restart
 
 ## Problem

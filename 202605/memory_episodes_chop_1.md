@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 09:36:57
 status: done
-prompt: 202605/prompts/memory_episodes_chop_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_episodes_chop_1.md](prompts/memory_episodes_chop_1.md)
+
 # Plan: Configure Athena memory_episodes chop
 
 ## Context

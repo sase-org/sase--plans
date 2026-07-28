@@ -1,6 +1,5 @@
----
-plan: 202607/agent_tribe_panel.md
----
+- **PLAN:** [../202607/agent_tribe_panel.md](../agent_tribe_panel.md)
+
   Can you now take inspiration from the agent family
 and agent clan summaries on the agent metadata panel to create a similar summary
 that should be shown in the agent metadata panel when an Agent tribe is

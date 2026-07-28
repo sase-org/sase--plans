@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 00:19:11
 status: done
-prompt: 202604/prompts/quit_confirm_background_tasks.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/quit_confirm_background_tasks.md](prompts/quit_confirm_background_tasks.md)
 
 # Plan: Quit Confirmation When Background Tasks Are Running
 

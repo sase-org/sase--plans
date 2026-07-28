@@ -1,6 +1,5 @@
----
-plan: 202605/plan_step_runtime.md
----
+- **PLAN:** [../202605/plan_step_runtime.md](../plan_step_runtime.md)
+
  The runtime of the selected done agent step (see the `sase ace` snapshot below) is wrong. This runtime should
 have been calculated as the difference between the "BEGIN" timestamp and the "PLAN" timestamp. Can you help me fix this?
 Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

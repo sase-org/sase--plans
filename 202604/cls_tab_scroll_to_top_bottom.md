@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 12:35:04
 status: done
-prompt: 202604/prompts/cls_tab_scroll_to_top_bottom.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/cls_tab_scroll_to_top_bottom.md](prompts/cls_tab_scroll_to_top_bottom.md)
 
 # Plan: Add `g`/`G` scroll-to-top/bottom on CLs tab
 

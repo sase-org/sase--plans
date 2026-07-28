@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 22:06:28
 status: done
-prompt: 202605/prompts/markdown_pdf_attachment_limit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/markdown_pdf_attachment_limit.md](prompts/markdown_pdf_attachment_limit.md)
+
 # Plan: Limit Markdown PDF Attachments for Large Agent Edits
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202605/agents_count_header_format.md
----
+- **PLAN:** [../202605/agents_count_header_format.md](../agents_count_header_format.md)
+
  Can you help me change the form of the agent counts shown at the top of the the "Agents" tab of the `sase ace`
 TUI? For example, in the below `sase ace` snapshot, we should change
 `Agents(9): 1 running · 1 waiting · 0 unread · 7 read` to `9 Agents [1 running · 1 waiting · 0 unread · 7 read]`. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

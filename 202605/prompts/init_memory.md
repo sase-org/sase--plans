@@ -1,6 +1,5 @@
----
-plan: 202605/init_memory.md
----
+- **PLAN:** [../202605/init_memory.md](../init_memory.md)
+
  The way that we inform sase about which sibling workspace directories it should use currently is to include the paths of
 all of them in every agent prompt. This is not great since every prompt is polluted with this information and the
 provided sibling workspace directories are not prepared properly (e.g. by stashing any uncommitted file changes,

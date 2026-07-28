@@ -1,6 +1,5 @@
----
-plan: 202605/fix_just_sibling_core_dir.md
----
+- **PLAN:** [../202605/fix_just_sibling_core_dir.md](../fix_just_sibling_core_dir.md)
+
  The sase_fix_just chop (defined in my chezmoi repo) chop agent just failed (see the @~/.sase/projects/sase/artifacts/ace-run/20260522165618/error_report.md file for context). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

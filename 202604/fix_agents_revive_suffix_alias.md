@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-07 17:04:13
 status: done
-prompt: 202604/prompts/fix_agents_revive_suffix_alias.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_agents_revive_suffix_alias.md](prompts/fix_agents_revive_suffix_alias.md)
 
 # Fix Agents Tab Revive Not Reappearing In Panel
 

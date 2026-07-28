@@ -2,9 +2,11 @@
 create_time: 2026-04-30 17:25:02
 status: done
 bead_id: sase-1l
-prompt: 202604/prompts/epic_changespec_beads.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/epic_changespec_beads.md](prompts/epic_changespec_beads.md)
+
 # Plan: ChangeSpec-Aware Epic Beads
 
 ## Goal

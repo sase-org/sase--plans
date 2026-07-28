@@ -3,8 +3,10 @@ create_time: 2026-06-08 15:01:44
 bead_id: sase-4g
 tier: epic
 status: done
-prompt: 202606/prompts/generalized_agent_name_at_templates.md
 ---
+
+- **PROMPT:** [202606/prompts/generalized_agent_name_at_templates.md](prompts/generalized_agent_name_at_templates.md)
+
 # Generalized Agent Name `@` Templates
 
 ## Goal

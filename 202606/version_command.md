@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-08 15:26:21
 status: done
-prompt: 202606/prompts/version_command.md
 bead_id: sase-4h
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/version_command.md](prompts/version_command.md)
+
 # `sase version` Runtime Inventory Plan
 
 ## Objective

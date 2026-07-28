@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-26 01:29:27
 status: done
-prompt: 202604/prompts/phase_agent_approve_directive.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/phase_agent_approve_directive.md](prompts/phase_agent_approve_directive.md)
+
 # Plan: Auto-Approve Directive on Phase Agent Prompts
 
 ## Motivation

@@ -2,9 +2,10 @@
 title: Fix Epic Creation For Google Sibling Workspaces
 create_time: 2026-04-30 13:13:39
 status: done
-prompt: 202604/prompts/epic_google_workspace_path.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/epic_google_workspace_path.md](prompts/epic_google_workspace_path.md)
 
 # Problem
 

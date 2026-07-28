@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 20:41:13
 status: done
-prompt: 202604/prompts/repeat_vars.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_vars.md](prompts/repeat_vars.md)
 
 # Plan: Split repeat directive Jinja2 variables into `n` (iteration) and `N` (total)
 

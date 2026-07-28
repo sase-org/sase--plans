@@ -1,6 +1,5 @@
----
-plan: 202607/projects_repos_workspaces_redesign.md
----
+- **PLAN:** [../202607/projects_repos_workspaces_redesign.md](../projects_repos_workspaces_redesign.md)
+
   Can you help me reinvent / redesign some concepts in sase around projects/repos/workspace directories?
 
 - sase "projects" are created only when the user specifies a new argument to a VCS xprompt workflow that resolves to a

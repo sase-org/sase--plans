@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 16:29:55
 status: done
-prompt: 202607/prompts/plan_list_status_and_limit.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/plan_list_status_and_limit.md](prompts/plan_list_status_and_limit.md)
+
 # `sase plan list`: Status Filtering and Per-Status Limits
 
 ## Problem

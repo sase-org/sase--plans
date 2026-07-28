@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 18:59:52
 status: done
-prompt: 202604/prompts/llm_override_indicator.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/llm_override_indicator.md](prompts/llm_override_indicator.md)
+
 # Plan: Active LLM Override Indicator
 
 ## Goal

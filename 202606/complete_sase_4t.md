@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 16:28:59
 status: done
-prompt: 202606/prompts/complete_sase_4t.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/complete_sase_4t.md](prompts/complete_sase_4t.md)
+
 # Plan: Complete verification fixes for sase-4t
 
 ## Context

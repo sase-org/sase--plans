@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 15:05:58
 status: done
-prompt: 202605/prompts/fix_coder_code_timestamp.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_coder_code_timestamp.md](prompts/fix_coder_code_timestamp.md)
+
 # Fix Coder Suffix Timestamp Regression
 
 ## Problem

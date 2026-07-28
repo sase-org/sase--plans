@@ -60,6 +60,8 @@ status: done
 bead_id: sase-7o
 ---
 
+- **PROMPT:** [202607/prompts/id_kwargs_tribe_family.md](prompts/id_kwargs_tribe_family.md)
+
 # Plan: Fold %tribe and the family form into %id kwargs
 
 ## Context

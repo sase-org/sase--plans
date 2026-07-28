@@ -1,6 +1,5 @@
----
-plan: 202605/agents_panel_width_runtime.md
----
+- **PLAN:** [../202605/agents_panel_width_runtime.md](../agents_panel_width_runtime.md)
+
  Can you help me make sure that the left side-panel on the "Agents" tab is ALWAYS wide enough to show the full
 completion time / runtime (see snapshow #1 below for what this should look like--snapshot #2 shows what it sometime
 incorrectly looks like)? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

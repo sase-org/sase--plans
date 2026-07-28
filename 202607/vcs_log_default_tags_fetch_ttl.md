@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 14:23:54
 status: done
-prompt: 202607/prompts/vcs_log_default_tags_fetch_ttl.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_default_tags_fetch_ttl.md](prompts/vcs_log_default_tags_fetch_ttl.md)
+
 # Plan: default VCS log tags and throttle remote fetches
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 11:31:07
 status: done
-prompt: 202605/prompts/minimize_live_artifact_guidance.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/minimize_live_artifact_guidance.md](prompts/minimize_live_artifact_guidance.md)
+
 # Minimize Live Artifact Guidance Changes
 
 ## Context

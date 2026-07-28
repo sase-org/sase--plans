@@ -1,6 +1,5 @@
----
-plan: 202605/remove_obsolete_plugin_repos.md
----
+- **PLAN:** [../202605/remove_obsolete_plugin_repos.md](../remove_obsolete_plugin_repos.md)
+
  The sase-2j epic bead has caused GitHub actions to fail because the retired chat plugin and retired Mercurial plugin repos cannot be accessed. That's fine because both of those repos are actually completely obsolete. Can you help me remove all references of those repos from this repo and all other non-obsolete plugin repos (and the sase-core repo)?
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

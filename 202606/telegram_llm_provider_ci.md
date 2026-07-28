@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 08:57:54
 status: wip
-prompt: 202606/prompts/telegram_llm_provider_ci.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/telegram_llm_provider_ci.md](prompts/telegram_llm_provider_ci.md)
+
 # Fix Telegram Launch Tests Without an Installed LLM Provider
 
 ## Context

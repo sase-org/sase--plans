@@ -1,6 +1,5 @@
----
-plan: 202607/agent_provider_setup_doc.md
----
+- **PLAN:** [../202607/agent_provider_setup_doc.md](../agent_provider_setup_doc.md)
+
  Can you help me add a new docs/ markdown file that describes how to install and authenticate each of the agent CLI providers that sase currently supports?
 
 - Make sure that we point back to the canonical documentation for installing the given agent CLI.

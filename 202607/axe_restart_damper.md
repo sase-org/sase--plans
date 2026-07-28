@@ -9,8 +9,9 @@ goal: 'Axe lifecycle activity is attributable through a bounded journal, stale m
   '
 create_time: 2026-07-20 16:43:17
 status: done
-prompt: 202607/prompts/axe_restart_damper.md
 ---
+
+- **PROMPT:** [202607/prompts/axe_restart_damper.md](prompts/axe_restart_damper.md)
 
 # Plan: Journal and damp axe fleet restarts
 

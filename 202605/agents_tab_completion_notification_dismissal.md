@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-11 14:27:35
 status: done
-prompt: 202605/prompts/agents_tab_completion_notification_dismissal.md
 bead_id: sase-2v
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agents_tab_completion_notification_dismissal.md](prompts/agents_tab_completion_notification_dismissal.md)
+
 # Dismiss Agent Completion Notifications On Agents Tab Activity
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202605/tier1_index_meta_staleness.md
----
+- **PLAN:** [../202605/tier1_index_meta_staleness.md](../tier1_index_meta_staleness.md)
+
  The tier 1 (fast) agent reload strategy doesn't seem to track the "Timestamps:" entries in the agent metadata
 panel on the "Agents" tab of the `sase ace` TUI. The BAD `sase ace` snapshot below shows what I saw before using the
 `,y` keymap to do a full refresh. The GOOD `sase ace` snapshot below (notice the PLAN timestamp entry) shows what I see

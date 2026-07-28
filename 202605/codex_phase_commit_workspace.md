@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 14:54:42
 status: done
-prompt: 202605/prompts/codex_phase_commit_workspace.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_phase_commit_workspace.md](prompts/codex_phase_commit_workspace.md)
+
 # Codex phase-agent commit fallback workspace plan
 
 ## Problem

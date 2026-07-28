@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 08:57:50
 status: done
-prompt: 202603/prompts/pin_running_agents_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/pin_running_agents_1.md](prompts/pin_running_agents_1.md)
 
 # Plan: Allow Pinning Running Agents
 

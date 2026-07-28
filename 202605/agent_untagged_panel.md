@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-05 21:38:50
 status: done
-prompt: 202605/prompts/agent_untagged_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_untagged_panel.md](prompts/agent_untagged_panel.md)
+
 # Plan: Hide Empty Untagged Agents Panel
 
 ## Goal

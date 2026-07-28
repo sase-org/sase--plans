@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 06:52:07
 status: done
-prompt: 202607/prompts/symvision_migration_recovery.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/symvision_migration_recovery.md](prompts/symvision_migration_recovery.md)
+
 # Recover and land the SASE pyvision → symvision migration
 
 ## Context and root cause

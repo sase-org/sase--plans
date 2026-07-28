@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 09:41:05
 status: done
-prompt: 202607/prompts/prompt_stash_panel_leader_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prompt_stash_panel_leader_keymap.md](prompts/prompt_stash_panel_leader_keymap.md)
+
 # Prompt Stash Panel Leader Keymap Plan
 
 ## Goal

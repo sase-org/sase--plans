@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 18:47:39
 status: wip
-prompt: 202605/prompts/sase_sh_sidebar_polish.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_sh_sidebar_polish.md](prompts/sase_sh_sidebar_polish.md)
+
 # SASE Plan: Polish the sase.sh Sidebar
 
 ## Goal

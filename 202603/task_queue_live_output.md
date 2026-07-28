@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 19:26:12
 status: done
-prompt: 202603/prompts/task_queue_live_output.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/task_queue_live_output.md](prompts/task_queue_live_output.md)
 
 # Plan: Live Output for Running Tasks in Task Queue Modal
 

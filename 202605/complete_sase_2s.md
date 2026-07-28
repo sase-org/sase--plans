@@ -2,8 +2,9 @@
 create_time: 2026-05-10 14:40:47
 status: open
 tier: epic
-prompt: 202605/prompts/complete_sase_2s.md
 ---
+
+- **PROMPT:** [202605/prompts/complete_sase_2s.md](prompts/complete_sase_2s.md)
 
 # Plan: Complete the sase-2s diagram-review epic
 

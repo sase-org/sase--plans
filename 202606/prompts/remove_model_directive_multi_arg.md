@@ -1,6 +1,5 @@
----
-plan: 202606/remove_model_directive_multi_arg.md
----
+- **PLAN:** [../202606/remove_model_directive_multi_arg.md](../remove_model_directive_multi_arg.md)
+
  Can you help me completely remove support for using multiple arguments with the `%m`/`%model` directive?
 
 - This functionality should be handled by our `%alt` directive, which makes supporting multiple arguments with

@@ -1,6 +1,5 @@
----
-plan: 202605/finalizer_done_status_autocommit.md
----
+- **PLAN:** [../202605/finalizer_done_status_autocommit.md](../finalizer_done_status_autocommit.md)
+
  This agent failed (see the `sase ace` snapshot below) because it left the automatic s/wip/done/ replacement in the plan file uncommitted. Can you help me start having our finalizer auto-commit this file when the only change is the status updating from "wip" to "done"? Make sure this is fast and make sure that we add an appropriate `TYPE=<type>` commit tag to this commit message. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

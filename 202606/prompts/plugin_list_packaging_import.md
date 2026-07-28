@@ -1,6 +1,5 @@
----
-plan: 202606/plugin_list_packaging_import.md
----
+- **PLAN:** [../202606/plugin_list_packaging_import.md](../plugin_list_packaging_import.md)
+
   When I run `sase plugin list` now, it crashes (see the error below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 12:43:38
 status: done
-prompt: 202607/prompts/remove_file_panel_trim.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/remove_file_panel_trim.md](prompts/remove_file_panel_trim.md)
+
 # Plan: Stop Buffering File Panel Lines (Remove Trim System)
 
 ## Goal

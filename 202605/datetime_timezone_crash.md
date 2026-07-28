@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 02:46:16
 status: done
-prompt: 202605/prompts/datetime_timezone_crash.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/datetime_timezone_crash.md](prompts/datetime_timezone_crash.md)
+
 # Datetime Timezone Crash Plan
 
 ## Problem Statement

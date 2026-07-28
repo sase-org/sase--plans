@@ -1,6 +1,5 @@
----
-plan: 202605/claude_socket_retry.md
----
+- **PLAN:** [../202605/claude_socket_retry.md](../claude_socket_retry.md)
+
  can you help me diagnose the root cause of this issue and fix it? See the following error report for context:  
 /home/bryan/.sase/projects/sase/artifacts/ace- 
 run/20260520141624

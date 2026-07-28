@@ -1,6 +1,5 @@
----
-plan: 202605/amd_home_agents.md
----
+- **PLAN:** [../202605/amd_home_agents.md](../amd_home_agents.md)
+
  I want to start managing my ~/AGENTS.md file (the source of truth for this file lives in my chezmoi repo) with
 the `sase amd init` command.
 

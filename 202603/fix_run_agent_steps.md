@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 17:08:04
 status: done
-prompt: 202603/prompts/fix_run_agent_steps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_run_agent_steps.md](prompts/fix_run_agent_steps.md)
 
 # Fix: `sase run` agents show no workflow steps in TUI
 

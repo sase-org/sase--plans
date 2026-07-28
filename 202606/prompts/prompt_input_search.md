@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_input_search.md
----
+- **PLAN:** [../202606/prompt_input_search.md](../prompt_input_search.md)
+
  Can you help me add support for forward and reverse search in the prompt input widget using the `/` and `?` keymaps that are inspired by Vim? I want you to lead the design on this one. Make sure you design this feature so it is intuitive, reliable, and (last but not least) beautiful! 
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

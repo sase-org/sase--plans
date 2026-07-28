@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 08:28:26
 status: done
-prompt: 202606/prompts/undo_xprompt_staged_inputs.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/undo_xprompt_staged_inputs.md](prompts/undo_xprompt_staged_inputs.md)
+
 # Plan: Make XPrompt-Staged Inputs Follow Prompt Undo
 
 ## Problem

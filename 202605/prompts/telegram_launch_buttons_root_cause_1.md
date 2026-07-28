@@ -1,6 +1,5 @@
----
-plan: 202605/telegram_launch_buttons_root_cause_1.md
----
+- **PLAN:** [../202605/telegram_launch_buttons_root_cause_1.md](../telegram_launch_buttons_root_cause_1.md)
+
  #fork:a0q I don't think that worked. The Telegram agent launch message that I received for sase agent "a0v" (which I launched by sending sase a Telegram message) did not have any buttons associated with it. Can you help me diagnose the root cause of this issue and (finally) fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

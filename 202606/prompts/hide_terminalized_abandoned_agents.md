@@ -1,6 +1,5 @@
----
-plan: 202606/hide_terminalized_abandoned_agents.md
----
+- **PLAN:** [../202606/hide_terminalized_abandoned_agents.md](../hide_terminalized_abandoned_agents.md)
+
  We made a change yesterday that seemed to break how we populate agents on the agents tab in the TUI. Namely
 there are 197 agents in the chop agent group (i.e. are rendered in the `#chop` dynamic agent panel on the left) that I
 know have been dismissed before that are showing on the agents tab. I've tried dismissing these all from the TUI but

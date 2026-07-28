@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 13:00:25
 status: done
-prompt: 202605/prompts/running_agent_file_change_pencil.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/running_agent_file_change_pencil.md](prompts/running_agent_file_change_pencil.md)
+
 # Running Agent File-Change Pencil Plan
 
 ## Context

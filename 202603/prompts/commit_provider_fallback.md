@@ -1,6 +1,5 @@
----
-plan: 202603/commit_provider_fallback.md
----
+- **PLAN:** [../202603/commit_provider_fallback.md](../commit_provider_fallback.md)
+
 Can you investigate what went wrong with `sase commit` for this agent, diagnose the root cause, and fix the issue (see
 the `sase ace` snapshot below)? Think this through thoroughly and create a plan using your `/sase_plan` skill before
 making any file changes.

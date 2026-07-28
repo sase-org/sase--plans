@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 09:08:02
 status: done
-prompt: 202606/prompts/ace_macbook_sqlite_sigbus.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_macbook_sqlite_sigbus.md](prompts/ace_macbook_sqlite_sigbus.md)
+
 # Plan: Diagnose and Fix `sase ace` macOS SIGBUS Crash
 
 ## Context

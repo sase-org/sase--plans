@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 15:16:45
 status: done
-prompt: 202604/prompts/jump_all_entries.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/jump_all_entries.md](prompts/jump_all_entries.md)
 
 # Plan: Cross-Tab Jump-to-Entry Modal (backtick)
 

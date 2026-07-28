@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 15:30:00
 status: done
-prompt: 202605/prompts/agent_panel_jk_unread.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_jk_unread.md](prompts/agent_panel_jk_unread.md)
+
 # Plan: Acknowledge unread agents on Agents-tab `J`/`K` panel switches
 
 ## Context

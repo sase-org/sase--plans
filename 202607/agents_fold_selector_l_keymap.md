@@ -8,8 +8,9 @@ goal: 'Pressing L on the Agents tab opens the numeric visible-fold selector dire
   '
 create_time: 2026-07-19 08:07:05
 status: done
-prompt: 202607/prompts/agents_fold_selector_l_keymap.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_fold_selector_l_keymap.md](prompts/agents_fold_selector_l_keymap.md)
 
 # Plan: Move the Agents visible-fold selector to L
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 08:28:22
 status: done
-prompt: 202606/prompts/memory_episodes_chop_project_root_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/memory_episodes_chop_project_root_1.md](prompts/memory_episodes_chop_project_root_1.md)
+
 # Fix memory_episodes Chop Project Targeting
 
 ## Context

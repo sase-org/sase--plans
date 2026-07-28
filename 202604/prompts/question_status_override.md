@@ -1,6 +1,5 @@
----
-plan: 202604/question_status_override.md
----
+- **PLAN:** [../202604/question_status_override.md](../question_status_override.md)
+
 The selected agent (see the `sase ace` snapshot below) has asked a question, so it should not be shown as "DONE" (I
 think we use "QUESTION" for this). Can you help me diagnose the root cause of this issue and fix it? Think this through
 thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

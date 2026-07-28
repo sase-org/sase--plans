@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 13:32:42
 status: done
-prompt: 202606/prompts/q_keymap_stop_axe_and_quit.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/q_keymap_stop_axe_and_quit.md](prompts/q_keymap_stop_axe_and_quit.md)
+
 # Plan: Make the `Q` keymap reliably stop axe **and** quit the TUI
 
 ## Problem

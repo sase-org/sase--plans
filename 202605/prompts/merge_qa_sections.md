@@ -1,6 +1,5 @@
----
-plan: 202605/merge_qa_sections.md
----
+- **PLAN:** [../202605/merge_qa_sections.md](../merge_qa_sections.md)
+
  We don't seem to even attempt to merge the "Questions and Answers" sections when an agent has multiple
 question-answer rounds. See the `sase ace` snapshot in the ~/tmp/sase_snapshot.txt file for context. Can you help me
 start merging these together so there is only one "Questions and Answers" section and all of the questions are numbered

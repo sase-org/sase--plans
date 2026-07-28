@@ -1,6 +1,5 @@
----
-plan: 202605/sdd_prompt_management.md
----
+- **PLAN:** [../202605/sdd_prompt_management.md](../sdd_prompt_management.md)
+
    Can you help me improve the way we manage SDD prompt files?
 
 - Move sdd/specs/ to sdd/prompts/.

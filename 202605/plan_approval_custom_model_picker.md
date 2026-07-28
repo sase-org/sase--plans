@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-09 19:34:27
 status: done
-prompt: 202605/prompts/plan_approval_custom_model_picker.md
 bead_id: sase-2l
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/plan_approval_custom_model_picker.md](prompts/plan_approval_custom_model_picker.md)
+
 # Plan: Plan Approval Custom Actions And Model Picker Upgrade
 
 ## Goal

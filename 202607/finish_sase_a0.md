@@ -32,6 +32,8 @@ status: wip
 bead_id: sase-a0.5
 ---
 
+- **PROMPT:** [202607/prompts/finish_sase_a0.md](prompts/finish_sase_a0.md)
+
 # Finish and land `sase-a0` after the typed-resolution integration
 
 ## Goal

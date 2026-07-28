@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 16:07:35
 status: done
-prompt: 202607/prompts/retire_legacy_plan_layout.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/retire_legacy_plan_layout.md](prompts/retire_legacy_plan_layout.md)
+
 # Plan: Retire legacy SDD plan directories and migration compatibility
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 22:22:30
 status: done
-prompt: 202606/prompts/plan_agent_pencil_consistency.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/plan_agent_pencil_consistency.md](prompts/plan_agent_pencil_consistency.md)
+
 # Plan Agent Pencil Consistency Plan
 
 ## Problem

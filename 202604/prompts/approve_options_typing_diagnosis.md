@@ -1,6 +1,5 @@
----
-plan: 202604/approve_options_typing_diagnosis.md
----
+- **PLAN:** [../202604/approve_options_typing_diagnosis.md](../approve_options_typing_diagnosis.md)
+
 #resume:h.2 That didn't work (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue
 and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file
 changes.

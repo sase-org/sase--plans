@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-28 15:29:42
 status: done
-prompt: 202604/prompts/dedup_agent_names_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dedup_agent_names_1.md](prompts/dedup_agent_names_1.md)
 
 # Plan: Dedup agent names on revive and on explicit `%name:` claim
 

@@ -1,10 +1,4 @@
----
-plan: 202607/atomic_bead_launch_claim.md
----
-
-
-
-
+- **PLAN:** [../202607/atomic_bead_launch_claim.md](../atomic_bead_launch_claim.md)
 
 Can you complete the work for bead sase-8f.1? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

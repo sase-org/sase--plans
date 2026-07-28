@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 09:13:15
 status: done
-prompt: 202605/prompts/agent_timestamps_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_timestamps_refresh.md](prompts/agent_timestamps_refresh.md)
+
 # Fix Agents Tab Timestamp Loss on Refresh
 
 ## Context

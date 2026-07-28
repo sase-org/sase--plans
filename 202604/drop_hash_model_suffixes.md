@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 18:04:35
 status: done
-prompt: 202604/prompts/drop_hash_model_suffixes.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/drop_hash_model_suffixes.md](prompts/drop_hash_model_suffixes.md)
+
 # Drop `#` From Model Shorthand Agent Suffixes
 
 ## Goal

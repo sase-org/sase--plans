@@ -1,6 +1,5 @@
----
-plan: 202607/unified_plans_dir_tier.md
----
+- **PLAN:** [../202607/unified_plans_dir_tier.md](../unified_plans_dir_tier.md)
+
  We currently store epic plan files in the sdd repo's epics/ directory and plan files in its tales/ directory. Can you help me start only using a new plans/ directory instead and storing all tales and epics in that directory?
 
 - We should be able to use the `tier` frontmatter field to determine which plan files are tales and which are epics.

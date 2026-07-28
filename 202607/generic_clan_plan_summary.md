@@ -8,8 +8,9 @@ goal: 'Clan declarations can pass quoted arguments to launch-time summary script
   '
 create_time: 2026-07-20 15:34:15
 status: done
-prompt: 202607/prompts/generic_clan_plan_summary.md
 ---
+
+- **PROMPT:** [202607/prompts/generic_clan_plan_summary.md](prompts/generic_clan_plan_summary.md)
 
 # Plan: Generic clan plan summaries and script arguments
 

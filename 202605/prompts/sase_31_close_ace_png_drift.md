@@ -1,10 +1,4 @@
----
-plan: 202605/sase_31_close_ace_png_drift.md
----
-
-
-
-
+- **PLAN:** [../202605/sase_31_close_ace_png_drift.md](../sase_31_close_ace_png_drift.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-31 is complete?
 

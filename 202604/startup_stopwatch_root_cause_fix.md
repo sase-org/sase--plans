@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 15:31:36
 status: done
-prompt: 202604/prompts/startup_stopwatch_root_cause_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/startup_stopwatch_root_cause_fix.md](prompts/startup_stopwatch_root_cause_fix.md)
+
 # Plan: Diagnose and Fix Startup Stopwatch Freezing at 0.2s
 
 ## Problem Statement

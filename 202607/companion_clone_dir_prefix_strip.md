@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 12:23:40
 status: wip
-prompt: 202607/prompts/companion_clone_dir_prefix_strip.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/companion_clone_dir_prefix_strip.md](prompts/companion_clone_dir_prefix_strip.md)
+
 # Strip the `<project>--` Prefix from Companion Repo Clone Directory Names
 
 ## Problem & Goals

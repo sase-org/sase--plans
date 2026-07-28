@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 13:06:29
 status: done
-prompt: 202605/prompts/permanent_agent_name_prefix_regression.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/permanent_agent_name_prefix_regression.md](prompts/permanent_agent_name_prefix_regression.md)
+
 # Plan: Fix Permanent Agent Name Prefix Regression
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 09:15:24
 status: wip
-prompt: 202605/prompts/chop_indexed_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/chop_indexed_agent_names.md](prompts/chop_indexed_agent_names.md)
+
 # Plan: Move Chezmoi-Defined Chops to Indexed Agent Names
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:41:50
 status: done
-prompt: 202606/prompts/remove_pyvision_epic_symbols.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_pyvision_epic_symbols.md](prompts/remove_pyvision_epic_symbols.md)
+
 # Plan: Remove Closed Pyvision Epic Symbol Overrides
 
 ## Context

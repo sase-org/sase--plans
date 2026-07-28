@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_stash_bundles_1.md
----
+- **PLAN:** [../202606/prompt_stash_bundles_1.md](../prompt_stash_bundles_1.md)
+
  When we currently use the `gS` or `<ctrl+g>S` keymaps in the prompt input widget, all stashes from all visible prompt input widgets are stashed individually. This results in the lose of the connection that those xprompts had with one another and risks losing important xprompt property data (that may have been loaded in the xprompt property panel at the time the user decided to stash all of the prompts). Can you help me fix this so these keymaps stash all of these prompts and their corresponding xprompt properties in a single bundle?
 
 - These keymaps should now only ever increment the stash count by 1.

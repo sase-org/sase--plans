@@ -2,9 +2,10 @@
 bead_id: sase-3a
 create_time: 2026-05-13 14:14:10
 status: done
-prompt: 202605/prompts/finish_sase_3a.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/finish_sase_3a.md](prompts/finish_sase_3a.md)
 
 # Finish sase-3a Verification Cleanup
 

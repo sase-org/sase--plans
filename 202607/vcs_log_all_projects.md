@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 10:51:49
 status: done
-prompt: 202607/prompts/vcs_log_all_projects.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_all_projects.md](prompts/vcs_log_all_projects.md)
+
 # Plan: Add all-project scope to `sase vcs log`
 
 ## Goal

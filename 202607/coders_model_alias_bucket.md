@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 10:06:35
 status: done
-prompt: 202607/prompts/coders_model_alias_bucket.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/coders_model_alias_bucket.md](prompts/coders_model_alias_bucket.md)
+
 # Consolidate coder model aliases into the `coders` bucket
 
 ## Context

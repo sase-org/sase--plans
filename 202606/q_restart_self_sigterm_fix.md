@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 15:59:52
 status: done
-prompt: 202606/prompts/q_restart_self_sigterm_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/q_restart_self_sigterm_fix.md](prompts/q_restart_self_sigterm_fix.md)
+
 # Fix: `Q` Restart Self-Kills the TUI on the Second Use (Axe Lock-Holder Mis-Attribution)
 
 ## Summary

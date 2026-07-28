@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 19:25:17
 status: done
-prompt: 202606/prompts/help_output_sort_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/help_output_sort_color.md](prompts/help_output_sort_color.md)
+
 # Plan: Colored, Sorted Root Help
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 09:47:57
 status: done
-prompt: 202606/prompts/prompt_preview_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_preview_keymap.md](prompts/prompt_preview_keymap.md)
+
 # Plan: `K` Preview Keymap for the Prompt Input Widget
 
 ## 1. Goal & Product Context

@@ -1,6 +1,5 @@
----
-plan: 202607/fix_template_clan_declarations.md
----
+- **PLAN:** [../202607/fix_template_clan_declarations.md](../fix_template_clan_declarations.md)
+
 The user sent an image via Telegram with the following caption:
 
  Can you help me figure out why this sase agent, which I attempted to launch from Telegram, failed to launch? Diagnose the root cause of this issue and fix it. Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate

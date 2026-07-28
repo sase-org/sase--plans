@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 15:23:58
 status: done
-prompt: 202604/prompts/bgcmd_jump_entry_command_label.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/bgcmd_jump_entry_command_label.md](prompts/bgcmd_jump_entry_command_label.md)
+
 # Plan: Show command in bgcmd entries in the "Jump to Entry" panel
 
 ## Goal

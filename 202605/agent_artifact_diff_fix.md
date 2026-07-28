@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 12:23:06
 status: done
-prompt: 202605/prompts/agent_artifact_diff_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_artifact_diff_fix.md](prompts/agent_artifact_diff_fix.md)
+
 # Plan: Fix missing agent diff and stale artifact picker entries
 
 ## Problem Summary

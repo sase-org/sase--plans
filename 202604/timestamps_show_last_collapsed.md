@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 19:59:28
 status: done
-prompt: 202604/prompts/timestamps_show_last_collapsed.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/timestamps_show_last_collapsed.md](prompts/timestamps_show_last_collapsed.md)
 
 # Plan: Always Show Last TIMESTAMPS Entry When Collapsed
 

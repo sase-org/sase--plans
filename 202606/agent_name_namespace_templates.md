@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 11:20:07
 status: done
-prompt: 202606/prompts/agent_name_namespace_templates.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_name_namespace_templates.md](prompts/agent_name_namespace_templates.md)
+
 # Namespace-Aware Agent Name Template Allocation
 
 ## Goal

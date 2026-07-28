@@ -3,8 +3,10 @@ create_time: 2026-05-23 18:00:32
 status: done
 bead_id: sase-42
 tier: epic
-prompt: 202605/prompts/memory_write_review.md
 ---
+
+- **PROMPT:** [202605/prompts/memory_write_review.md](prompts/memory_write_review.md)
+
 # Plan: `sase memory write` and `sase memory review`
 
 ## Goal

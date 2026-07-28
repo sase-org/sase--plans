@@ -25,6 +25,8 @@ status: done
 bead_id: sase-75
 ---
 
+- **PROMPT:** [202607/prompts/space_plus_vcs_completion.md](prompts/space_plus_vcs_completion.md)
+
 # Plan: Space-triggered VCS project completion
 
 ## Context and behavior contract

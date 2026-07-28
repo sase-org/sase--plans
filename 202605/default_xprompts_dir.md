@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-04 17:16:49
 status: done
-prompt: 202605/prompts/default_xprompts_dir.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/default_xprompts_dir.md](prompts/default_xprompts_dir.md)
+
 # Default XPrompts Directory
 
 ## Context

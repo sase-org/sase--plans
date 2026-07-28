@@ -3,8 +3,10 @@ create_time: 2026-06-09 18:41:43
 bead_id: sase-4j
 tier: epic
 status: wip
-prompt: 202606/prompts/p0_onboarding.md
 ---
+
+- **PROMPT:** [202606/prompts/p0_onboarding.md](prompts/p0_onboarding.md)
+
 # Plan: Implement P0 New-User Onboarding Recommendations
 
 ## Objective

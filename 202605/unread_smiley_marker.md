@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 13:27:27
 status: done
-prompt: 202605/prompts/unread_smiley_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/unread_smiley_marker.md](prompts/unread_smiley_marker.md)
+
 # Plan: Replace the unread-agent mailbox marker with a yellow smiley face
 
 ## Context

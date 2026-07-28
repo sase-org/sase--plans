@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-21 01:17:04
 status: done
-prompt: 202603/prompts/config_grouping.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/config_grouping.md](prompts/config_grouping.md)
 
 # Plan: sase-6.5 — Config grouping + final loose file cleanup
 

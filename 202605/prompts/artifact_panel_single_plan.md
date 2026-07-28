@@ -1,6 +1,5 @@
----
-plan: 202605/artifact_panel_single_plan.md
----
+- **PLAN:** [../202605/artifact_panel_single_plan.md](../artifact_panel_single_plan.md)
+
  Can you help me fix the artifact panel so we never show multiple plan entries? In the below `sase ace` snapshot, for example, we should only show one instead of two and its path should be relative (i.e. sdd/tales/202605/unread_plan_done_jump.md). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

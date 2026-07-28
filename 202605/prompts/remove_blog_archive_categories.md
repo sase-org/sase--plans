@@ -1,6 +1,5 @@
----
-plan: 202605/remove_blog_archive_categories.md
----
+- **PLAN:** [../202605/remove_blog_archive_categories.md](../remove_blog_archive_categories.md)
+
 The user sent an image via Telegram with the following caption:
 
  Can you help me remove the archive and categories subsections of the blog section in the sidebar of sase.sh? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

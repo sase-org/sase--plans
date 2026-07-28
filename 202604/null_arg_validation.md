@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 14:07:17
 status: done
-prompt: 202604/prompts/null_arg_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/null_arg_validation.md](prompts/null_arg_validation.md)
 
 # Plan: Fix xprompt null argument validation
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 00:15:46
 status: done
-prompt: 202605/prompts/epic_phase_bead_order.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_phase_bead_order.md](prompts/epic_phase_bead_order.md)
+
 # Plan: Epic Phase Bead Ordering
 
 ## Problem

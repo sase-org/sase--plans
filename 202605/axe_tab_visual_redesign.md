@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-11 20:28:03
 status: done
-prompt: 202605/prompts/axe_tab_visual_redesign.md
 bead_id: sase-2y
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/axe_tab_visual_redesign.md](prompts/axe_tab_visual_redesign.md)
+
 # AXE Tab Visual Redesign Plan
 
 ## Goal

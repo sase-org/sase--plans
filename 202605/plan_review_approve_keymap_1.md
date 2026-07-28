@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 11:43:43
 status: done
-prompt: 202605/prompts/plan_review_approve_keymap_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/plan_review_approve_keymap_1.md](prompts/plan_review_approve_keymap_1.md)
+
 # Plan: Plan Review `a`/`t` Keymap Swap and New Approve Action
 
 ## Context

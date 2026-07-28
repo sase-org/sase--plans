@@ -1,6 +1,5 @@
----
-plan: 202605/nvim_xprompt_null_default.md
----
+- **PLAN:** [../202605/nvim_xprompt_null_default.md](../nvim_xprompt_null_default.md)
+
  #fork:a1y This worked, but I'm seeing a different error now (see below). Can you help me diagnose the root
 cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 23:55:12
 status: done
-prompt: 202605/prompts/sdd_mythic_directory_image.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sdd_mythic_directory_image.md](prompts/sdd_mythic_directory_image.md)
+
 # Plan: Add Mythic SDD Directory Image
 
 ## Goal

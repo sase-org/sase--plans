@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 14:44:16
 status: done
-prompt: 202604/prompts/ctrld_delete_file_history.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ctrld_delete_file_history.md](prompts/ctrld_delete_file_history.md)
 
 # Plan: Ctrl+D to Delete Entries from File-History Completion Menu
 

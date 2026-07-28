@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:13:34
 status: done
-prompt: 202604/prompts/fast_ace_startup.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fast_ace_startup.md](prompts/fast_ace_startup.md)
 
 # Fast `sase ace` TUI Startup
 

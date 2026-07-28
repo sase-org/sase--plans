@@ -2,9 +2,11 @@
 bead_id: sase-5r
 create_time: 2026-07-11 19:59:31
 status: wip
-prompt: 202607/prompts/toolong_extraction.md
 tier: epic
 ---
+
+- **PROMPT:** [202607/prompts/toolong_extraction.md](prompts/toolong_extraction.md)
+
 # Plan: Factor `pylimit` into `bbugyi200/toolong` and Migrate sase to It
 
 ## Context

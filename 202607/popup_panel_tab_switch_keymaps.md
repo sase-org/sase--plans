@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 11:13:24
 status: done
-prompt: 202607/prompts/popup_panel_tab_switch_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/popup_panel_tab_switch_keymaps.md](prompts/popup_panel_tab_switch_keymaps.md)
+
 # Popup Panel Tab-Switch Keymaps
 
 ## Problem

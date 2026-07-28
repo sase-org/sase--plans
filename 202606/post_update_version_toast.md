@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 10:53:50
 status: done
-prompt: 202606/prompts/post_update_version_toast.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/post_update_version_toast.md](prompts/post_update_version_toast.md)
+
 # Plan: "You just updated" version toast after a SASE self-update + TUI restart
 
 ## 1. Product context & goal

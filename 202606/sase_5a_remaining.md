@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 15:09:14
 status: done
-prompt: 202606/prompts/sase_5a_remaining.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_5a_remaining.md](prompts/sase_5a_remaining.md)
+
 # Finish sase-5a Verification And Closure
 
 ## Context

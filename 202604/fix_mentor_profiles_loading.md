@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 16:13:52
 status: done
-prompt: 202604/prompts/fix_mentor_profiles_loading.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_mentor_profiles_loading.md](prompts/fix_mentor_profiles_loading.md)
 
 # Fix MENTORS ChangeSpec field not being populated by sase axe
 

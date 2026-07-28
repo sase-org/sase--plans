@@ -1,6 +1,5 @@
----
-plan: 202607/plans_pane_all_projects_upgrade.md
----
+- **PLAN:** [../202607/plans_pane_all_projects_upgrade.md](../plans_pane_all_projects_upgrade.md)
+
  Can you help me make the "Plans" sub-tab of the "Artifacts" tab in the TUI way more useful and upgrade the user interface?
 
 - The syntax highlighting is difficult to read for some text in the right pane (see #sshot for context).

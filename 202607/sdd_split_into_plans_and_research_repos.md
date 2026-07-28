@@ -1,10 +1,12 @@
 ---
 create_time: 2026-07-11 19:07:12
 status: done
-prompt: 202607/prompts/sdd_split_into_plans_and_research_repos.md
 bead_id: sase-5q
 tier: epic
 ---
+
+- **PROMPT:** [202607/prompts/sdd_split_into_plans_and_research_repos.md](prompts/sdd_split_into_plans_and_research_repos.md)
+
 # Plan: Split the SDD companion repo into `--plans` and `--research` linked repos
 
 ## Product context / goal

@@ -4,8 +4,9 @@ goal: Persist Agents-tab group and whole-panel fold state across sase ace restar
   without adding work to the TUI startup critical path or degrading navigation responsiveness.
 create_time: 2026-07-15 19:12:12
 status: done
-prompt: 202607/prompts/agents_fold_state_persistence.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_fold_state_persistence.md](prompts/agents_fold_state_persistence.md)
 
 # Plan: Persist Agents-tab fold state without slowing startup
 

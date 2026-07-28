@@ -8,8 +8,9 @@ goal: 'The Agents-tab `,j` and `,J` commands find eligible rows inside collapsed
   '
 create_time: 2026-07-16 16:39:14
 status: done
-prompt: 202607/prompts/auto_expand_agent_panels_for_leader_jumps.md
 ---
+
+- **PROMPT:** [202607/prompts/auto_expand_agent_panels_for_leader_jumps.md](prompts/auto_expand_agent_panels_for_leader_jumps.md)
 
 # Plan: Auto-expand collapsed agent panels for `,j` and `,J`
 

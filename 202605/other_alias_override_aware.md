@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 16:05:42
 status: done
-prompt: 202605/prompts/other_alias_override_aware.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/other_alias_override_aware.md](prompts/other_alias_override_aware.md)
+
 # Plan: Make the `other` Model Alias Override-Aware
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202607/install_mode_switch.md
----
+- **PLAN:** [../202607/install_mode_switch.md](../install_mode_switch.md)
+
  Can you help me make it easy for users to switch to/from the published PyPI versions (of sase, sase-core, and sase's plugins) and the dev/editable versions? 
 
 - This functionality should be made available from the CLI (maybe via the `sase update` command somehow?) and the TUI via the "Updates" tab on the "SASE Admin Center" panel.

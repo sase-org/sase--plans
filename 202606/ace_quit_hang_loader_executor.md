@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 10:56:03
 status: done
-prompt: 202606/prompts/ace_quit_hang_loader_executor.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_quit_hang_loader_executor.md](prompts/ace_quit_hang_loader_executor.md)
+
 # Fix `sase ace` hanging for a long time after quitting with `q`
 
 ## Problem

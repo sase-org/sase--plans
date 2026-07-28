@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 13:33:17
 status: done
-prompt: 202605/prompts/dynamic_agent_panel_tag_color.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/dynamic_agent_panel_tag_color.md](prompts/dynamic_agent_panel_tag_color.md)
+
 # Dynamic Agent Panel Tag Header Color Plan
 
 ## Goal

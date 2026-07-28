@@ -23,6 +23,8 @@ status: wip
 bead_id: sase-68
 ---
 
+- **PROMPT:** [202607/prompts/runner_silent_failure_visibility.md](prompts/runner_silent_failure_visibility.md)
+
 # Plan: Eliminate silent runner deaths; always surface failure output in the TUI
 
 ## Incident and root cause (diagnosed, evidence on disk)

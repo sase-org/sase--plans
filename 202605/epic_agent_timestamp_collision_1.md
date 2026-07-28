@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 16:33:55
 status: done
-prompt: 202605/prompts/epic_agent_timestamp_collision_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/epic_agent_timestamp_collision_1.md](prompts/epic_agent_timestamp_collision_1.md)
+
 # Diagnose and Fix Epic Agent Timestamp Collision
 
 ## Problem

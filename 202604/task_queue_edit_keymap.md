@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-01 12:23:37
 status: done
-prompt: 202604/prompts/task_queue_edit_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/task_queue_edit_keymap.md](prompts/task_queue_edit_keymap.md)
 
 # Plan: Add `e` (edit) keymap to Task Queue Modal
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 08:01:04
 status: done
-prompt: 202606/prompts/sase_core_rs_pypi_release_recovery.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_core_rs_pypi_release_recovery.md](prompts/sase_core_rs_pypi_release_recovery.md)
+
 # sase-core-rs PyPI Release Recovery Plan
 
 ## Current Findings

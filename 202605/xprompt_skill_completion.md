@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 01:13:36
 status: done
-prompt: 202605/prompts/xprompt_skill_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_skill_completion.md](prompts/xprompt_skill_completion.md)
+
 # Add Prompt Input Ctrl+T Completion for XPrompt Skills
 
 ## Context

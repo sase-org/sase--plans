@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 17:34:02
 status: wip
-prompt: 202606/prompts/revert_status_badge.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/revert_status_badge.md](prompts/revert_status_badge.md)
+
 # Make the Agent-Row Revert Indicator Visible (and Partial-Aware)
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 11:24:36
 status: done
-prompt: 202605/prompts/fix_bulk_revive_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fix_bulk_revive_refresh.md](prompts/fix_bulk_revive_refresh.md)
+
 # Fix bulk revive: revived agents must appear on the agents tab
 
 ## Background

@@ -6,8 +6,9 @@ goal: Epic work launches associate each phase and land agent with its bead, leav
   runner-side claims remain the sole transition to in_progress.
 create_time: 2026-07-20 17:09:28
 status: done
-prompt: 202607/prompts/jit_epic_bead_work.md
 ---
+
+- **PROMPT:** [202607/prompts/jit_epic_bead_work.md](prompts/jit_epic_bead_work.md)
 
 # Plan: Migrate epic bead work to just-in-time claims
 

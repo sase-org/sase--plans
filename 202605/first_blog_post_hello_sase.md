@@ -2,9 +2,10 @@
 name: first_blog_post_hello_sase
 status: draft
 create_time: 2026-05-10 19:41:03
-prompt: 202605/prompts/first_blog_post_hello_sase.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/first_blog_post_hello_sase.md](prompts/first_blog_post_hello_sase.md)
 
 # Plan: First Blog Post — A Hands-On "Hello, SASE" Tour
 

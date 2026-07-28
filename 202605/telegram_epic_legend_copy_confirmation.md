@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 21:53:51
 status: wip
-prompt: 202605/prompts/telegram_epic_legend_copy_confirmation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_epic_legend_copy_confirmation.md](prompts/telegram_epic_legend_copy_confirmation.md)
+
 # Telegram Epic And Legend Copy Confirmations
 
 ## Context

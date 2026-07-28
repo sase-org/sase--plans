@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-07 17:00:17
 status: done
-prompt: 202607/prompts/sase_commit_first_try_reliability.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sase_commit_first_try_reliability.md](prompts/sase_commit_first_try_reliability.md)
+
 # Make `sase commit` succeed on the first try
 
 ## Problem

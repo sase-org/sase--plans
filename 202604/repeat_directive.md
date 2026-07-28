@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-11 02:53:05
 status: done
-prompt: 202604/prompts/repeat_directive.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_directive.md](prompts/repeat_directive.md)
 
 # Plan: `%repeat` Directive (alias `%N`)
 

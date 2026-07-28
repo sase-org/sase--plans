@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 12:46:32
 status: done
-prompt: 202606/prompts/linked_repo_deltas_rust_scan_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/linked_repo_deltas_rust_scan_fix.md](prompts/linked_repo_deltas_rust_scan_fix.md)
+
 # Plan: Fix missing linked-repo file entries in the Agents-tab "Deltas:" panel
 
 ## Problem / Product context

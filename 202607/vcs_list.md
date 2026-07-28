@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 16:04:39
 status: done
-prompt: 202607/prompts/vcs_list.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_list.md](prompts/vcs_list.md)
+
 # Plan: `sase vcs list` — the cross-repo constellation at a glance
 
 ## 1. Product summary

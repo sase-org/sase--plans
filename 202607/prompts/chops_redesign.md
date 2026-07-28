@@ -1,6 +1,5 @@
----
-plan: 202607/chops_redesign.md
----
+- **PLAN:** [../202607/chops_redesign.md](../chops_redesign.md)
+
  Can you help me drastically change the way that chops are expected to
 be configured by users with the goal of making chops more powerful, structured,
 and configurable?

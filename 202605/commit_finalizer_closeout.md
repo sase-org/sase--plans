@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 21:12:47
 status: done
-prompt: 202605/prompts/commit_finalizer_closeout.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/commit_finalizer_closeout.md](prompts/commit_finalizer_closeout.md)
+
 # Plan: Commit Finalizer Closeout Verification
 
 ## Context

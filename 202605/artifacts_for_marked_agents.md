@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 10:50:40
 status: done
-prompt: 202605/prompts/artifacts_for_marked_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifacts_for_marked_agents.md](prompts/artifacts_for_marked_agents.md)
+
 # Plan: `A` keymap aggregates artifacts from all marked agents
 
 ## Goal

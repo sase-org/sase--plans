@@ -1,6 +1,5 @@
----
-plan: 202606/question_continuation_planner_status.md
----
+- **PLAN:** [../202606/question_continuation_planner_status.md](../question_continuation_planner_status.md)
+
  #fork:03m.cld.f1 Great! It looks like you mostly fixed this but there are some edge cases that are still broken. For example, the agent in the screenshot contained in the #sshot file was run with the `%approve` directive and asked a question using its `/sase_questions` skill, which led to a broken state. The correct state is described below:
 
 - The "03w--0" agent was the one that asked the question, so it should have been marked with the QUESTION status until the question was auto-answered (since `%approve` was used), at which point the status of that agent child row should have changed to ANSWERED.

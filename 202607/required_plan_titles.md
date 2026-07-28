@@ -6,8 +6,9 @@ goal: Tale and epic plans require a non-empty frontmatter title at every strict 
   the existing responsive cached metadata path.
 create_time: 2026-07-16 07:42:00
 status: done
-prompt: 202607/prompts/required_plan_titles.md
 ---
+
+- **PROMPT:** [202607/prompts/required_plan_titles.md](prompts/required_plan_titles.md)
 
 # Plan: Require plan titles and show them in agent metadata
 

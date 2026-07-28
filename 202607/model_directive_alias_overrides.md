@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 19:50:29
 status: done
-prompt: 202607/prompts/model_directive_alias_overrides.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/model_directive_alias_overrides.md](prompts/model_directive_alias_overrides.md)
+
 # Plan: Keyword-Argument Alias Overrides on the `%model` Directive
 
 ## Problem

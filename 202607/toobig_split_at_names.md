@@ -48,6 +48,8 @@ status: done
 bead_id: sase-9n
 ---
 
+- **PROMPT:** [202607/prompts/toobig_split_at_names.md](prompts/toobig_split_at_names.md)
+
 # Plan: Name `toobig_split` agents with the `@` template suffix
 
 ## Goal

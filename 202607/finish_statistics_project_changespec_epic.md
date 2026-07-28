@@ -31,6 +31,8 @@ status: done
 bead_id: sase-72
 ---
 
+- **PROMPT:** [202607/prompts/finish_statistics_project_changespec_epic.md](prompts/finish_statistics_project_changespec_epic.md)
+
 # Plan: Finish and land project and ChangeSpec statistics
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:46:38
 status: done
-prompt: 202605/prompts/cloudflare_pages_blog_launch_steps_1_3.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cloudflare_pages_blog_launch_steps_1_3.md](prompts/cloudflare_pages_blog_launch_steps_1_3.md)
+
 # Cloudflare Pages Blog Launch Steps 1-3 Plan
 
 ## Context

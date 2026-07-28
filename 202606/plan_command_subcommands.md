@@ -3,8 +3,10 @@ create_time: 2026-06-13 09:55:30
 bead_id: sase-4n
 tier: epic
 status: done
-prompt: 202606/prompts/plan_command_subcommands.md
 ---
+
+- **PROMPT:** [202606/prompts/plan_command_subcommands.md](prompts/plan_command_subcommands.md)
+
 # Improve `sase plan` Command
 
 ## Goal

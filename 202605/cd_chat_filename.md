@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 22:56:28
 status: done
-prompt: 202605/prompts/cd_chat_filename.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/cd_chat_filename.md](prompts/cd_chat_filename.md)
+
 # Plan: Fix `#cd` Chat Filename Paths
 
 ## Problem

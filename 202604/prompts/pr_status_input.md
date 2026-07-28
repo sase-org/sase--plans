@@ -1,6 +1,5 @@
----
-plan: 202604/pr_status_input.md
----
+- **PLAN:** [../202604/pr_status_input.md](../pr_status_input.md)
+
 Can you help me add a new 'status' input argument to the `#pr` xprompt workflow (see the src/sase/xprompts/pr.yml file)?
 Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

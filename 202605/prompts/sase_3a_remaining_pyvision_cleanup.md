@@ -1,6 +1,5 @@
----
-plan: 202605/sase_3a_remaining_pyvision_cleanup.md
----
+- **PLAN:** [../202605/sase_3a_remaining_pyvision_cleanup.md](../sase_3a_remaining_pyvision_cleanup.md)
+
   Can you help me verify that all the work associated with the bead with ID sase-3a is complete?
 
 Actually read through the source code and the git commits that are associated with that bead's work (they should have

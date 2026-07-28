@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 22:03:43
 status: done
-prompt: 202604/prompts/repeat_iteration_nesting.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/repeat_iteration_nesting.md](prompts/repeat_iteration_nesting.md)
 
 # Show All Repeat Iterations as Nested Entries on Agents Tab
 

@@ -3,9 +3,10 @@ title: Close agy provider MVP verification gap
 bead_id: sase-50
 create_time: 2026-06-19 21:48:43
 status: done
-prompt: 202606/prompts/agy_provider_final_gap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agy_provider_final_gap.md](prompts/agy_provider_final_gap.md)
 
 # Close agy provider MVP verification gap
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:15:56
 status: done
-prompt: 202604/prompts/ace_config_cache.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_config_cache.md](prompts/ace_config_cache.md)
+
 # Cache merged-config / mentor-profile loads to speed up `sase ace` TUI tab switching
 
 ## Problem

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-30 09:22:59
 status: done
-prompt: 202606/prompts/model_alias_configuration_migration.md
 bead_id: sase-5d
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/model_alias_configuration_migration.md](prompts/model_alias_configuration_migration.md)
+
 # Model Alias Configuration Migration Plan
 
 ## Goal

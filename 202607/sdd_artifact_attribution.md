@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 19:26:14
 status: done
-prompt: 202607/prompts/sdd_artifact_attribution.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/sdd_artifact_attribution.md](prompts/sdd_artifact_attribution.md)
+
 # Fix SDD Companion-Repo Artifact Attribution on Agent Completion
 
 ## Problem

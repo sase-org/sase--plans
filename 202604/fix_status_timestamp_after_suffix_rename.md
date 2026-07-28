@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-03 11:40:42
 status: done
-prompt: 202604/prompts/fix_status_timestamp_after_suffix_rename.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_status_timestamp_after_suffix_rename.md](prompts/fix_status_timestamp_after_suffix_rename.md)
 
 # Fix: TIMESTAMPS entry not recorded on STATUS transitions with suffix rename
 

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 15:20:10
 status: done
-prompt: 202603/prompts/fix_spec_feedback.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_spec_feedback.md](prompts/fix_spec_feedback.md)
 
 # Fix: Spec File Missing Feedback (Additional Requirements)
 

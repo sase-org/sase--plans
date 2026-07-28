@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 16:24:18
 status: done
-prompt: 202603/prompts/tui_commit_keybinding.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/tui_commit_keybinding.md](prompts/tui_commit_keybinding.md)
 
 # Plan: Add `c` (commit) keybinding to TUI plan approval modal
 

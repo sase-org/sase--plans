@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-12 12:52:07
 status: done
-prompt: 202606/prompts/pypi_smoke_env.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/pypi_smoke_env.md](prompts/pypi_smoke_env.md)
+
 # PyPI Release Smoke-Test Environment
 
 ## Problem

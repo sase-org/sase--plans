@@ -89,6 +89,8 @@ status: done
 bead_id: sase-96
 ---
 
+- **PROMPT:** [202607/prompts/tmp_space_exhaustion.md](prompts/tmp_space_exhaustion.md)
+
 # Plan: Stop sase test and tooling scratch from exhausting the /tmp tmpfs
 
 ## Problem

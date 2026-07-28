@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 07:24:25
 status: done
-prompt: 202606/prompts/project_name_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_name_field.md](prompts/project_name_field.md)
+
 # Configurable `PROJECT_NAME` Field for Project Specs
 
 ## Context

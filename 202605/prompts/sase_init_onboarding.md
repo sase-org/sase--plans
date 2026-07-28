@@ -1,6 +1,5 @@
----
-plan: 202605/sase_init_onboarding.md
----
+- **PLAN:** [../202605/sase_init_onboarding.md](../sase_init_onboarding.md)
+
  #resume:a3g.f1  Can you help me implement this command using this research as inspiration? I want you to lead the design on this one. Just make sure it looks beautiful!
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

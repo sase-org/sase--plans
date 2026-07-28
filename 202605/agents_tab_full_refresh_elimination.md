@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-21 09:57:52
 status: done
-prompt: 202605/prompts/agents_tab_full_refresh_elimination.md
 bead_id: sase-3t
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/agents_tab_full_refresh_elimination.md](prompts/agents_tab_full_refresh_elimination.md)
+
 # Plan: Eliminate Routine Full Refreshes For ACE Agents Tab
 
 ## Goal

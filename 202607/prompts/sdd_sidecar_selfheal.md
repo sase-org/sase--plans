@@ -1,9 +1,4 @@
----
-plan: 202607/sdd_sidecar_selfheal.md
----
-
-
-
+- **PLAN:** [../202607/sdd_sidecar_selfheal.md](../sdd_sidecar_selfheal.md)
 
 Can you complete the work for bead sase-8g.5? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

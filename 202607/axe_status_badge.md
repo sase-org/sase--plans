@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 09:56:38
 status: done
-prompt: 202607/prompts/axe_status_badge.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/axe_status_badge.md](prompts/axe_status_badge.md)
+
 # Plan: Label the AXE Status Pill in the TUI Footer
 
 ## Problem / product context

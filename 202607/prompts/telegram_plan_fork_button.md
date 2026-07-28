@@ -1,6 +1,5 @@
----
-plan: 202607/telegram_plan_fork_button.md
----
+- **PLAN:** [../202607/telegram_plan_fork_button.md](../telegram_plan_fork_button.md)
+
 The user sent an image via Telegram with the following caption:
 
  instead of this plan file copy button in Telegram that we send after a plan is approved, can we start sending a "Fork" copy button? We already have fork Telegram buttons in use elsewhere so see that implementation for inspiration. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the

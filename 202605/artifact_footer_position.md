@@ -2,9 +2,10 @@
 title: Artifact Footer Position And Taller Markdown PDFs
 create_time: 2026-05-08 21:58:20
 status: done
-prompt: 202605/prompts/artifact_footer_position.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_footer_position.md](prompts/artifact_footer_position.md)
 
 # Plan: Keep Artifact Viewer Footer Below The Rendered Page
 

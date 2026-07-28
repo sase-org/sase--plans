@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 07:30:17
 status: done
-prompt: 202606/prompts/prompt_history_load_more_ctrl_d.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_load_more_ctrl_d.md](prompts/prompt_history_load_more_ctrl_d.md)
+
 # Plan: Rebind prompt-history "load more" from PageDown to `Ctrl+D`
 
 ## Goal

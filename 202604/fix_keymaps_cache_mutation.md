@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 10:30:55
 status: done
-prompt: 202604/prompts/fix_keymaps_cache_mutation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_keymaps_cache_mutation.md](prompts/fix_keymaps_cache_mutation.md)
+
 # Plan: Fix `load_builtin_app_defaults` cache-mutation flake
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-05 10:37:27
 status: done
-prompt: 202606/prompts/prompt_ctrl_l_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_ctrl_l_completion.md](prompts/prompt_ctrl_l_completion.md)
+
 # Prompt Ctrl+L Completion Plan
 
 ## Diagnosis

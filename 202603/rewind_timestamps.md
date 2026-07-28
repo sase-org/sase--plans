@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 14:51:01
 status: done
-prompt: 202603/prompts/rewind_timestamps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/rewind_timestamps.md](prompts/rewind_timestamps.md)
 
 # Plan: Track Rewinds in TIMESTAMPS Field
 

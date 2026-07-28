@@ -1,6 +1,5 @@
----
-plan: 202605/agent_family_workflow_step_status.md
----
+- **PLAN:** [../202605/agent_family_workflow_step_status.md](../agent_family_workflow_step_status.md)
+
  #resume:ap5  This is much better, but there are still some problems. This agent (see the `sase ace`
 snapshot below) looks incorrect in the following ways:
 

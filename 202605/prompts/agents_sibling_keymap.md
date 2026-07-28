@@ -1,6 +1,5 @@
----
-plan: 202605/agents_sibling_keymap.md
----
+- **PLAN:** [../202605/agents_sibling_keymap.md](../agents_sibling_keymap.md)
+
  Can you help me add a new `~` keymap to the "Agents" tab of the `sase ace` TUI?
 
 - This keymap is similar to the `~` keymap on the "CLs" tab, but should jump to sibling agents (instead of sibling

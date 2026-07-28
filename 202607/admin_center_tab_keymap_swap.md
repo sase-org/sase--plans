@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 09:07:19
 status: done
-prompt: 202607/prompts/admin_center_tab_keymap_swap.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/admin_center_tab_keymap_swap.md](prompts/admin_center_tab_keymap_swap.md)
+
 # Swap SASE Admin Center main-tab and sub-tab keymaps
 
 ## Objective

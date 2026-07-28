@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 13:08:22
 status: done
-prompt: 202605/prompts/running_man_runtime_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/running_man_runtime_marker.md](prompts/running_man_runtime_marker.md)
+
 # Running Man Runtime Marker Plan
 
 ## Goal

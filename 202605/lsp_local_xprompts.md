@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 09:22:07
 status: done
-prompt: 202605/prompts/lsp_local_xprompts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/lsp_local_xprompts.md](prompts/lsp_local_xprompts.md)
+
 # Plan: LSP Support for Markdown-Local XPrompts
 
 ## Goal

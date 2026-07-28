@@ -2,9 +2,11 @@
 create_time: 2026-05-01 17:51:30
 status: done
 bead_id: sase-1w
-prompt: 202605/prompts/alt_named_ids.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/alt_named_ids.md](prompts/alt_named_ids.md)
+
 # Plan: Generalize Alternation Agent Naming IDs
 
 ## Goal

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 08:21:12
 status: done
-prompt: 202606/prompts/sase_core_rs_011_release_pr.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_core_rs_011_release_pr.md](prompts/sase_core_rs_011_release_pr.md)
+
 # sase-core-rs 0.1.1 release PR plan
 
 ## Goal

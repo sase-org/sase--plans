@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 09:46:10
 status: done
-prompt: 202605/prompts/notification_tag_tab_isolation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/notification_tag_tab_isolation.md](prompts/notification_tag_tab_isolation.md)
+
 # Notification Tag Tab Isolation Plan
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 11:49:00
 status: done
-prompt: 202605/prompts/docs_check_core_dependency.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/docs_check_core_dependency.md](prompts/docs_check_core_dependency.md)
+
 # Fix GitHub Actions `docs-check` dependency resolution
 
 ## Context

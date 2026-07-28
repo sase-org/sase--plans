@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 11:20:05
 status: done
-prompt: 202605/prompts/footer_overflow.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/footer_overflow.md](prompts/footer_overflow.md)
+
 # TUI Footer Overflow Redesign
 
 ## Problem

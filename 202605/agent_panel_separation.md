@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 17:22:18
 status: done
-prompt: 202605/prompts/agent_panel_separation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_separation.md](prompts/agent_panel_separation.md)
+
 # Agent Panel Separation Plan
 
 ## Goal

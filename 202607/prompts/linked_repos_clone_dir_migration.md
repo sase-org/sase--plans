@@ -1,6 +1,5 @@
----
-plan: 202607/linked_repos_clone_dir_migration.md
----
+- **PLAN:** [../202607/linked_repos_clone_dir_migration.md](../linked_repos_clone_dir_migration.md)
+
  Can you help me migrate normal linked repos (i.e. not companion repos like `sase--plans`) to use the sase/repos/linked/ directory instead of the sase/repos/ directory?
 
 - We should also start clearing the sase/repos/linked/ directory when preparing the workspace directory for sase agents (so we should delete exactly one workspace directory's linked repo clones before every sase agent launch).

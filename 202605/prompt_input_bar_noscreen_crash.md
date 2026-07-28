@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 14:51:49
 status: done
-prompt: 202605/prompts/prompt_input_bar_noscreen_crash.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_input_bar_noscreen_crash.md](prompts/prompt_input_bar_noscreen_crash.md)
+
 # Fix `NoScreen` crash in `PromptInputBar._update_height`
 
 ## Problem

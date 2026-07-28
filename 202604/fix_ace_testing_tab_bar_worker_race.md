@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 15:53:52
 status: wip
-prompt: 202604/prompts/fix_ace_testing_tab_bar_worker_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_ace_testing_tab_bar_worker_race.md](prompts/fix_ace_testing_tab_bar_worker_race.md)
+
 # Fix Flaky `test_expect_state_passes` Worker Failure (`#tab-bar` NoMatches)
 
 ## Problem Statement

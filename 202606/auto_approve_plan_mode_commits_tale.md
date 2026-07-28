@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 08:55:55
 status: done
-prompt: 202606/prompts/auto_approve_plan_mode_commits_tale.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/auto_approve_plan_mode_commits_tale.md](prompts/auto_approve_plan_mode_commits_tale.md)
+
 # Fix: `%a` (auto plan mode) wrongly approves a tale instead of a plain plan
 
 ## Problem statement

@@ -6,8 +6,9 @@ goal: Eliminate canonical project-key leaks from the remaining human-facing CLI 
   commands, replay, and structured output.
 create_time: 2026-07-20 13:14:55
 status: done
-prompt: 202607/prompts/remaining_project_surfaces.md
 ---
+
+- **PROMPT:** [202607/prompts/remaining_project_surfaces.md](prompts/remaining_project_surfaces.md)
 
 # Plan: Repair remaining project and ChangeSpec presentation surfaces
 

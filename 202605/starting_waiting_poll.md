@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 07:45:15
 status: done
-prompt: 202605/prompts/starting_waiting_poll.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/starting_waiting_poll.md](prompts/starting_waiting_poll.md)
+
 # Plan: Refresh Hidden STARTING Agents When WAITING Markers Land
 
 ## Problem

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 11:42:28
 status: done
-prompt: 202605/prompts/prompt_bar_wrap_height_sync.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_bar_wrap_height_sync.md](prompts/prompt_bar_wrap_height_sync.md)
+
 # Plan: Prompt Bar Wrapped Height Synchronization
 
 ## Problem

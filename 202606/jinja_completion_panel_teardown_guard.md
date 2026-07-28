@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 08:18:23
 status: done
-prompt: 202606/prompts/jinja_completion_panel_teardown_guard.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/jinja_completion_panel_teardown_guard.md](prompts/jinja_completion_panel_teardown_guard.md)
+
 # Fix flaky `#prompt-completion` teardown race in live Jinja diagnostics
 
 ## Problem

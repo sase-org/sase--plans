@@ -9,8 +9,9 @@ goal: 'Newly launched agents, chop script runs, and the axe daemon never inherit
   '
 create_time: 2026-07-18 22:26:20
 status: done
-prompt: 202607/prompts/agent_env_identity_leak.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_env_identity_leak.md](prompts/agent_env_identity_leak.md)
 
 # Plan: Stop stale SASE*AGENT*\* env leaking into new agent launches
 

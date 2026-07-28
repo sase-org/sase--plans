@@ -2,9 +2,11 @@
 create_time: 2026-04-30 02:35:23
 status: done
 bead_id: sase-1i
-prompt: 202604/prompts/agent_image_notifications.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/agent_image_notifications.md](prompts/agent_image_notifications.md)
+
 # Plan: Agent Image Attachments and Kitty TUI Previews
 
 ## Goal

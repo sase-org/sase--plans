@@ -1,6 +1,5 @@
----
-plan: 202607/smart_summary_folding.md
----
+- **PLAN:** [../202607/smart_summary_folding.md](../smart_summary_folding.md)
+
  Can you help me add much smarter, much more useful folding to agent
 clan/family/tribe summaries shown in the agent metadata panel on the "Agents"
 tab of the `sase ace` TUI?

@@ -1,6 +1,4 @@
----
-plan: 202606/projects_admin_center_tab.md
----
+- **PLAN:** [../202606/projects_admin_center_tab.md](../projects_admin_center_tab.md)
 
  Can you help me get rid of the `,p` keymap and move the "Project Management" panel's functionality to the "SASE Admin Center" panel, which is triggered via the `#` keymap?
 

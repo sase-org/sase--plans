@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 15:25:11
 status: done
-prompt: 202603/prompts/gemini_commit_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/gemini_commit_skill.md](prompts/gemini_commit_skill.md)
 
 # Plan: Fix Gemini commit stop hook to use skills instead of CLI command
 

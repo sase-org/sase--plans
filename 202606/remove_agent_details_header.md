@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 18:42:17
 status: done
-prompt: 202606/prompts/remove_agent_details_header.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/remove_agent_details_header.md](prompts/remove_agent_details_header.md)
+
 # Remove Agents Metadata Panel Header
 
 ## Problem

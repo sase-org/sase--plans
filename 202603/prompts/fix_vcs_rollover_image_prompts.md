@@ -1,6 +1,5 @@
----
-plan: 202603/fix_vcs_rollover_image_prompts.md
----
+- **PLAN:** [../202603/fix_vcs_rollover_image_prompts.md](../fix_vcs_rollover_image_prompts.md)
+
 The user sent an image via Telegram with the following caption:
 
 This agent made file changes but they were not attached to the PDF that was sent along with this agent completion

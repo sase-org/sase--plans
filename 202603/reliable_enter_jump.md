@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 13:31:24
 status: done
-prompt: 202603/prompts/reliable_enter_jump.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/reliable_enter_jump.md](prompts/reliable_enter_jump.md)
 
 # Plan: Make `<enter>` on Agents Tab Reliably Jump to ChangeSpec
 

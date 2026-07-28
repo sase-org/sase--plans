@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-31 11:30:32
 status: done
-prompt: 202605/prompts/remove_amd_marker_comments.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/remove_amd_marker_comments.md](prompts/remove_amd_marker_comments.md)
+
 # Remove AMD Marker Comments From AGENTS.md
 
 ## Goal

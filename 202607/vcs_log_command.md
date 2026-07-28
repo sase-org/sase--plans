@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 14:29:32
 status: wip
-prompt: 202607/prompts/vcs_log_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_command.md](prompts/vcs_log_command.md)
+
 # Plan: `sase vcs` — a linked-repo-aware, provider-agnostic `git log`
 
 ## 1. Goal & product context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:04:16
 status: done
-prompt: 202606/prompts/sdd_init_config.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sdd_init_config.md](prompts/sdd_init_config.md)
+
 # Plan: `sase sdd init` Enables Version-Controlled SDD
 
 ## Context

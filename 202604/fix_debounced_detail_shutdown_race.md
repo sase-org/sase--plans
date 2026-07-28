@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 22:48:36
 status: done
-prompt: 202604/prompts/fix_debounced_detail_shutdown_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_debounced_detail_shutdown_race.md](prompts/fix_debounced_detail_shutdown_race.md)
+
 # Fix `test_query_edit_modal_invalid_query` Shutdown Race (Deferred Timer Path)
 
 ## Problem

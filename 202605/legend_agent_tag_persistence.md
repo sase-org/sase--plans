@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 10:04:30
 status: done
-prompt: 202605/prompts/legend_agent_tag_persistence.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/legend_agent_tag_persistence.md](prompts/legend_agent_tag_persistence.md)
+
 # Plan: Fix Legend Agent Tag Persistence
 
 ## Problem

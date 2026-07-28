@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-30 06:01:59
 status: done
-prompt: 202606/prompts/agents_onboarding_visible_gate.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agents_onboarding_visible_gate.md](prompts/agents_onboarding_visible_gate.md)
+
 # Fix: Agents-tab onboarding not shown when the visible list is empty
 
 ## Problem

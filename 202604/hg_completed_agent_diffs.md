@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 18:46:49
 status: done
-prompt: 202604/prompts/hg_completed_agent_diffs.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/hg_completed_agent_diffs.md](prompts/hg_completed_agent_diffs.md)
 
 # Fix: Completed Agent Diffs Not Showing on Mercurial (retired Mercurial plugin)
 

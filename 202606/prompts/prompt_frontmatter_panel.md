@@ -1,6 +1,5 @@
----
-plan: 202606/prompt_frontmatter_panel.md
----
+- **PLAN:** [../202606/prompt_frontmatter_panel.md](../prompt_frontmatter_panel.md)
+
   I am trying to bring the prompt input widget up to parity with xprompt markdown files.
 We recently added support for multi-agent prompts to the prompt input widget with this goal in mind. Can you now help me
 add support for the same frontmatter properties that xprompt markdown files support to the prompt input widget?

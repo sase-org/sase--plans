@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-19 11:39:53
 status: done
-prompt: 202605/prompts/agent_reply_phase_headers.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_reply_phase_headers.md](prompts/agent_reply_phase_headers.md)
+
 # Fix Agent Reply Phase Headers After Agent Families
 
 ## Context

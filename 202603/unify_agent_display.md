@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 15:00:32
 status: done
-prompt: 202603/prompts/unify_agent_display.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/unify_agent_display.md](prompts/unify_agent_display.md)
 
 # Plan: Unify Agent Display Across Run Modes
 

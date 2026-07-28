@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 16:19:14
 status: wip
-prompt: 202607/prompts/telegram_stale_launch_feedback.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/telegram_stale_launch_feedback.md](prompts/telegram_stale_launch_feedback.md)
+
 # Plan: Fix Telegram Slash Commands Consumed by Stale Launch Feedback
 
 ## Problem

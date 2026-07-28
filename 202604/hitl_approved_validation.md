@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 20:12:49
 status: done
-prompt: 202604/prompts/hitl_approved_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/hitl_approved_validation.md](prompts/hitl_approved_validation.md)
 
 # Fix: Validator rejects `approved` field on HITL bash/python steps
 

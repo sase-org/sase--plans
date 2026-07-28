@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 13:32:05
 status: done
-prompt: 202607/prompts/tui_launch_approval_dispatch.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/tui_launch_approval_dispatch.md](prompts/tui_launch_approval_dispatch.md)
+
 # Fix: ACE TUI launch approval never dispatches the approved agent
 
 ## Problem

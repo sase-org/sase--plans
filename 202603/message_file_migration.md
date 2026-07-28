@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-27 16:56:59
-prompt: 202603/prompts/message_file_migration.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/message_file_migration.md](prompts/message_file_migration.md)
 
 # Plan: Migrate `--message` to `--message-file`
 

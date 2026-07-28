@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 17:59:27
 status: done
-prompt: 202606/prompts/planner_runtime_telegram.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/planner_runtime_telegram.md](prompts/planner_runtime_telegram.md)
+
 # Add planner runtime to Telegram plan approval messages
 
 ## Objective

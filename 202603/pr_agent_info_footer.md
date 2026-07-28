@@ -1,9 +1,10 @@
 ---
 status: done
 create_time: 2026-03-26 11:09:34
-prompt: 202603/prompts/pr_agent_info_footer.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/pr_agent_info_footer.md](prompts/pr_agent_info_footer.md)
 
 # Add Agent Info Footer to PR Descriptions
 

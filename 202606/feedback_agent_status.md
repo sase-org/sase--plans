@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 10:13:37
 status: done
-prompt: 202606/prompts/feedback_agent_status.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/feedback_agent_status.md](prompts/feedback_agent_status.md)
+
 # Plan: Add a `FEEDBACK` agent status for planner rounds that received user feedback
 
 ## Product context

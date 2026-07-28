@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 12:40:39
 status: done
-prompt: 202604/prompts/fix_quit_confirm_bgcmd.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_quit_confirm_bgcmd.md](prompts/fix_quit_confirm_bgcmd.md)
 
 # Plan: Fix TUI quit confirmation to only trigger for background tasks
 

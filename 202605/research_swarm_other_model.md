@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 19:09:15
 status: done
-prompt: 202605/prompts/research_swarm_other_model.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/research_swarm_other_model.md](prompts/research_swarm_other_model.md)
+
 # Plan: Make `research_swarm` xprompt portable across models
 
 ## Context

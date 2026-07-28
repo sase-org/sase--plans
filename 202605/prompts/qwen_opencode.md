@@ -1,6 +1,5 @@
----
-plan: 202605/qwen_opencode.md
----
+- **PLAN:** [../202605/qwen_opencode.md](../qwen_opencode.md)
+
   Can you help me add support to sase for Qwen CLI and OpenCode? See the recently committed research markdown file related to this for context.
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

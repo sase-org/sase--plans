@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-23 17:30:12
 status: done
-prompt: 202604/prompts/agents_tab_content_search.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_content_search.md](prompts/agents_tab_content_search.md)
+
 # Plan: Content-Aware `/` Search on `sase ace` Agents Tab
 
 ## Problem / Motivation

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 02:07:41
 status: done
-prompt: 202603/prompts/fix_just_workflow_invocation.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_just_workflow_invocation.md](prompts/fix_just_workflow_invocation.md)
 
 # Plan: Fix `sase/fix_just` xprompt workflow not being invoked from chop
 

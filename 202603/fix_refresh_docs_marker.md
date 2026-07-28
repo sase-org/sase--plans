@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 10:28:03
 status: done
-prompt: 202603/prompts/fix_refresh_docs_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_refresh_docs_marker.md](prompts/fix_refresh_docs_marker.md)
 
 # Fix refresh_docs marker to account for agent-created commits
 

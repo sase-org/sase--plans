@@ -1,11 +1,4 @@
----
-plan: 202607/sase_5t_closeout.md
----
-
-
-
-
-
+- **PLAN:** [../202607/sase_5t_closeout.md](../sase_5t_closeout.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5t is complete?
 

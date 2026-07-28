@@ -12,8 +12,9 @@ goal: 'The agent metadata panel presents the selected agent''s outputs as one AR
   '
 create_time: 2026-07-16 18:27:01
 status: done
-prompt: 202607/prompts/artifacts_lane_in_sase_context.md
 ---
+
+- **PROMPT:** [202607/prompts/artifacts_lane_in_sase_context.md](prompts/artifacts_lane_in_sase_context.md)
 
 # Plan: Fold Commits, Deltas, and Artifacts into a ranked ARTIFACTS lane in SASE CONTEXT
 

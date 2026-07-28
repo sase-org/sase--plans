@@ -1,6 +1,5 @@
----
-plan: 202605/lumberjack_quality_chops.md
----
+- **PLAN:** [../202605/lumberjack_quality_chops.md](../lumberjack_quality_chops.md)
+
   Can you help me add two new lumberjack chops?
 
 - They should both be like the chop that refreshes docs in that they abort early if there haven't been at least 50 commits that have been made since the last time their agents ran.

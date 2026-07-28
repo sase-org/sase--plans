@@ -8,8 +8,9 @@ goal: 'Epic phase and land agents launch with bare %auto so their authored plan 
   '
 create_time: 2026-07-18 10:23:24
 status: wip
-prompt: 202607/prompts/epic_work_bare_auto.md
 ---
+
+- **PROMPT:** [202607/prompts/epic_work_bare_auto.md](prompts/epic_work_bare_auto.md)
 
 # Plan: Make epic work auto-approval tier-neutral
 

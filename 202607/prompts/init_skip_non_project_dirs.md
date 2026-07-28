@@ -1,6 +1,5 @@
----
-plan: 202607/init_skip_non_project_dirs.md
----
+- **PLAN:** [../202607/init_skip_non_project_dirs.md](../init_skip_non_project_dirs.md)
+
  Can you help me make it so the `sase init` command does not attempt to initialize non-project directories (look for VCS indicators)? When run outside of a project directory, we should just initialize the user's home directory. See the below command output for an example of what I am trying to avoid here. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
   

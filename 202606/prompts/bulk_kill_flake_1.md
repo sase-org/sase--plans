@@ -1,6 +1,5 @@
----
-plan: 202606/bulk_kill_flake_1.md
----
+- **PLAN:** [../202606/bulk_kill_flake_1.md](../bulk_kill_flake_1.md)
+
  I think we have a flakey test (see the `just test` command's output below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the `sase plan`
 command (as the skill instructs) before making any file changes.
 

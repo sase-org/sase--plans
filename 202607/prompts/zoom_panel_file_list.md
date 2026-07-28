@@ -1,6 +1,5 @@
----
-plan: 202607/zoom_panel_file_list.md
----
+- **PLAN:** [../202607/zoom_panel_file_list.md](../zoom_panel_file_list.md)
+
  The zoom panel file/panel list, which is navigated via the `<ctrl+n/p>` keymaps, has some problems.
 
 - For one, it should be much clearer which files/panels are in the list and which one is currently active.

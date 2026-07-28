@@ -1,6 +1,5 @@
----
-plan: 202605/sase_sh_mkdocs_polish.md
----
+- **PLAN:** [../202605/sase_sh_mkdocs_polish.md](../sase_sh_mkdocs_polish.md)
+
   #resume:ad Can you do your best to implement all of the highest value recommendations made by the previous agent? Let's stay on mkdocs for now. Make sure to verify the build and deployment to cloudflare works.
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but

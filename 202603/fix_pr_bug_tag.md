@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 14:50:42
 status: done
-prompt: 202603/prompts/fix_pr_bug_tag.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_pr_bug_tag.md](prompts/fix_pr_bug_tag.md)
 
 # Fix Missing BUG=<bug_id> PR Tag in #pr Xprompt Workflow
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 10:29:41
 status: done
-prompt: 202606/prompts/freeze_approved_plan_runtime.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/freeze_approved_plan_runtime.md](prompts/freeze_approved_plan_runtime.md)
+
 # Plan: Freeze runtime for `PLAN APPROVED` / `TALE APPROVED` rows
 
 ## Problem

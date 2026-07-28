@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 11:46:16
 status: done
-prompt: 202605/prompts/scoped_init_check.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/scoped_init_check.md](prompts/scoped_init_check.md)
+
 # Scoped Init Check Plan
 
 ## Goal

@@ -1,6 +1,5 @@
----
-plan: 202605/revived_agent_visibility_resume.md
----
+- **PLAN:** [../202605/revived_agent_visibility_resume.md](../revived_agent_visibility_resume.md)
+
  After revival, this agent (see the `sase ace` snapshot below) kept disappearing and then reappearing (I've
 since re-dismissed it) from the agents tab. Also, when I tried to launch another agent using `resume:abb_3`, that agent
 failed because it said that no agent of that name could be found. Can you help me diagnose the root cause of this issue

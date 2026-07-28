@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 09:22:59
 status: done
-prompt: 202606/prompts/at_keymap_to_plus.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/at_keymap_to_plus.md](prompts/at_keymap_to_plus.md)
+
 # Change ACE `@` Agent Launcher Keymap To `+`
 
 ## Context

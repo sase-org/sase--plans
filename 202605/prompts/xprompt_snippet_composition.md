@@ -1,6 +1,5 @@
----
-plan: 202605/xprompt_snippet_composition.md
----
+- **PLAN:** [../202605/xprompt_snippet_composition.md](../xprompt_snippet_composition.md)
+
  Can you help me add support for composing sase xprompt snippets? For example, consider the following snippets:
 
 ```

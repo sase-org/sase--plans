@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 14:38:38
 status: done
-prompt: 202603/prompts/strip_pr_tags_from_description.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/strip_pr_tags_from_description.md](prompts/strip_pr_tags_from_description.md)
 
 # Plan: Strip PR Tags from ChangeSpec DESCRIPTION
 

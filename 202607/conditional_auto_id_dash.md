@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 07:36:05
 status: wip
-prompt: 202607/prompts/conditional_auto_id_dash.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/conditional_auto_id_dash.md](prompts/conditional_auto_id_dash.md)
+
 # Conditional Auto-ID Dash for Agent Names
 
 ## Goal

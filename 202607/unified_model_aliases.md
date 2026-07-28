@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 11:46:31
 status: wip
-prompt: 202607/prompts/unified_model_aliases.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/unified_model_aliases.md](prompts/unified_model_aliases.md)
+
 # Plan: Unified `model_aliases` Config Field + Always-Visible Alias Descriptions
 
 ## Problem

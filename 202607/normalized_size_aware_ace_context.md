@@ -9,8 +9,9 @@ goal: 'ACE presents the authoritative small, medium, or large scope of every epi
   '
 create_time: 2026-07-20 14:11:41
 status: done
-prompt: 202607/prompts/normalized_size_aware_ace_context.md
 ---
+
+- **PROMPT:** [202607/prompts/normalized_size_aware_ace_context.md](prompts/normalized_size_aware_ace_context.md)
 
 # Plan: Normalized size-aware ACE agent context
 

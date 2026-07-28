@@ -3,8 +3,10 @@ create_time: 2026-06-30 13:59:25
 bead_id: sase-5e
 tier: epic
 status: done
-prompt: 202606/prompts/models_panel.md
 ---
+
+- **PROMPT:** [202606/prompts/models_panel.md](prompts/models_panel.md)
+
 # Plan: "Models" Panel — unified model-alias viewing, editing & temporary overrides
 
 ## Summary

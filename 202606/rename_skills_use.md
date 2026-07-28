@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-15 16:21:06
 status: done
-prompt: 202606/prompts/rename_skills_use.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/rename_skills_use.md](prompts/rename_skills_use.md)
+
 # Plan: Rename Skill-Use Audit Command
 
 ## Goal

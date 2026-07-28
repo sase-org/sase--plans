@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 12:36:54
 status: done
-prompt: 202605/prompts/coder_no_commit_plan_ref.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/coder_no_commit_plan_ref.md](prompts/coder_no_commit_plan_ref.md)
+
 # Fix coder plan references for no-commit approvals
 
 ## Problem

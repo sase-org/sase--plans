@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 06:03:40
 status: done
-prompt: 202606/prompts/mark_collapsed_agent_groups.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/mark_collapsed_agent_groups.md](prompts/mark_collapsed_agent_groups.md)
+
 # Plan: Mark Collapsed Agent Groups on the Agents Tab
 
 ## Problem

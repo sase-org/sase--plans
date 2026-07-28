@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 22:01:42
 status: done
-prompt: 202603/prompts/telegram_resume_command.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/telegram_resume_command.md](prompts/telegram_resume_command.md)
 
 # Plan: Add `/resume` Telegram Slash Command
 

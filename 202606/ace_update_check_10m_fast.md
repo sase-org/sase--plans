@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 15:58:56
 status: done
-prompt: 202606/prompts/ace_update_check_10m_fast.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_update_check_10m_fast.md](prompts/ace_update_check_10m_fast.md)
+
 # ACE Update Check Cadence and Speed Plan
 
 ## Context

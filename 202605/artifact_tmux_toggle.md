@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 17:50:18
 status: done
-prompt: 202605/prompts/artifact_tmux_toggle.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_tmux_toggle.md](prompts/artifact_tmux_toggle.md)
+
 # Artifact Tmux Pane Toggle Plan
 
 ## Goal

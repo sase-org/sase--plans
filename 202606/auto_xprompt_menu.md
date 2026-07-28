@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 15:48:29
 status: done
-prompt: 202606/prompts/auto_xprompt_menu.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/auto_xprompt_menu.md](prompts/auto_xprompt_menu.md)
+
 # Plan: Auto-trigger xprompt completion on `#<X>` (like `#+` project completion)
 
 ## Goal

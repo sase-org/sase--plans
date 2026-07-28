@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 14:36:23
 status: done
-prompt: 202604/prompts/agent_loader_bundle_cache.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_loader_bundle_cache.md](prompts/agent_loader_bundle_cache.md)
+
 # Plan: Fix Flaky Agent Loader Bundle Test
 
 ## Context

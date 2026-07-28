@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 15:51:43
 status: done
-prompt: 202605/prompts/saved_group_revival_tmux.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/saved_group_revival_tmux.md](prompts/saved_group_revival_tmux.md)
+
 # Saved Group Revival Tmux E2E Fix Plan
 
 ## Context

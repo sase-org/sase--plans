@@ -1,6 +1,5 @@
----
-plan: 202607/fix_toobig_split_chop_dedupe.md
----
+- **PLAN:** [../202607/fix_toobig_split_chop_dedupe.md](../fix_toobig_split_chop_dedupe.md)
+
  Why does the toobig_split sase chop not launch agents for these files
 (see the output below)? We recently performed a major sase chop upgrade /
 migration (see the sase-6v epic bead for details) and this hasn't worked quite

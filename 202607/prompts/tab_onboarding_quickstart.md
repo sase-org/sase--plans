@@ -1,6 +1,5 @@
----
-plan: 202607/tab_onboarding_quickstart.md
----
+- **PLAN:** [../202607/tab_onboarding_quickstart.md](../tab_onboarding_quickstart.md)
+
  On the Agents tab and the PRs tab in the TUI, we currently show onboarding pages specific to those tabs when there's nothing else interesting to show. Can you help me make several big improvements to those pages?
 
 - The content that we show there now should be preserved via the `,?` keymap that already exists and shows the contents for these pages in a pop-up panel.

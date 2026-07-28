@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 21:29:52
 status: done
-prompt: 202606/prompts/editor_at_review_marker.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/editor_at_review_marker.md](prompts/editor_at_review_marker.md)
+
 # Plan: Replace `%edit` with editor ` @` review marker
 
 ## Goal

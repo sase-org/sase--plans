@@ -1,11 +1,4 @@
----
-plan: 202607/sase_77_completion.md
----
-
-
-
-
-
+- **PLAN:** [../202607/sase_77_completion.md](../sase_77_completion.md)
 
 You are the land agent for epic bead sase-77: verify the epic is truly complete, integrate it with changes
 that landed since it started, then close it out.

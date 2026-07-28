@@ -1,9 +1,10 @@
 ---
 status: proposed
 create_time: 2026-05-11 15:46:25
-prompt: 202605/prompts/unread_label_highlight.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/unread_label_highlight.md](prompts/unread_label_highlight.md)
 
 # Extend Unread Highlight Across the Label Word
 

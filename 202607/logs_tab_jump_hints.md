@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 03:01:21
 status: wip
-prompt: 202607/prompts/logs_tab_jump_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/logs_tab_jump_hints.md](prompts/logs_tab_jump_hints.md)
+
 # Plan: Logs Tab Apostrophe Jump Hints
 
 ## Goal

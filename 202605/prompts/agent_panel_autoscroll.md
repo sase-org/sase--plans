@@ -1,6 +1,5 @@
----
-plan: 202605/agent_panel_autoscroll.md
----
+- **PLAN:** [../202605/agent_panel_autoscroll.md](../agent_panel_autoscroll.md)
+
  Can you help me enable auto-scroll for the dynamic agent panels shown on the left in the the "Agents" tab of the `sase ace` TUI? For example, in the below `sase ace` snapshot, the selected agent row is currently not visible. I would like to make that impossible by automatically scrolling that panel down when the user hits `j` to view a (at the time of keypress) hidden agent row. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

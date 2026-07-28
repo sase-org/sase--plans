@@ -1,6 +1,5 @@
----
-plan: '[../202607/simplify_phase_model_aliases.md](../simplify_phase_model_aliases.md)'
----
+- **PLAN:** [../202607/simplify_phase_model_aliases.md](../simplify_phase_model_aliases.md)
+
  %xprompts_enabled:false
 # Previous Conversations
 

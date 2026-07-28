@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 08:48:06
 status: done
-prompt: 202606/prompts/blank_line_keymaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/blank_line_keymaps.md](prompts/blank_line_keymaps.md)
+
 # Plan: `[<space>` / `]<space>` blank-line keymaps for the prompt input
 
 ## Goal & product context

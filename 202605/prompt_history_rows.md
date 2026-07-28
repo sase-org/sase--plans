@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 15:01:51
 status: done
-prompt: 202605/prompts/prompt_history_rows.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_history_rows.md](prompts/prompt_history_rows.md)
+
 # Prompt History One-Line Rows
 
 ## Context

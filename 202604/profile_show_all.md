@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 16:29:06
 status: done
-prompt: 202604/prompts/profile_show_all.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/profile_show_all.md](prompts/profile_show_all.md)
 
 # Plan: Fix `sase ace --profile` output hiding all frames
 

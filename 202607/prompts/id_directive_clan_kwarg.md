@@ -1,6 +1,5 @@
----
-plan: 202607/id_directive_clan_kwarg.md
----
+- **PLAN:** [../202607/id_directive_clan_kwarg.md](../id_directive_clan_kwarg.md)
+
  It should be impossible for an agent to join a clan unless the agent is
 in the same hood as the one defined by the clan name. Therefore, it is redundant
 to have to put `<foo>` in the input argument of `%name` if `%clan(<foo>)` is in

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-17 18:21:33
 status: done
-prompt: 202606/prompts/prompt_input_search.md
 bead_id: sase-4v
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/prompt_input_search.md](prompts/prompt_input_search.md)
+
 # Plan: Vim-style Forward/Reverse Search in the Prompt Input Widget
 
 ## Summary

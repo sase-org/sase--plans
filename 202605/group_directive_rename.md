@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 22:45:52
 status: wip
-prompt: 202605/prompts/group_directive_rename.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/group_directive_rename.md](prompts/group_directive_rename.md)
+
 # Rename `%tag` / `%t` Directive To `%group` / `%g`
 
 ## Context

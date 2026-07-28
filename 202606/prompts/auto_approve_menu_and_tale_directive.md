@@ -1,6 +1,5 @@
----
-plan: 202606/auto_approve_menu_and_tale_directive.md
----
+- **PLAN:** [../202606/auto_approve_menu_and_tale_directive.md](../auto_approve_menu_and_tale_directive.md)
+
  The `a` keymap on the agents tab currently toggles whether or not the currently selected agent has its plan auto-approved as a normal plan or as an epic. We do not currently support auto-approval of tales. Can you help me add a new `%t`/`%tale` directive for this and migrate the `%a`/`%approve` directive to `%p`/`%plan`?
 
 As a part of this change we should also add a new model to the TUI for when the user presses the `a` key. Instead of toggling through the options, the `a` keymap should give the user options via this model, which should be selectable via a single key press. I want you to lead the design on this one. Make sure you design this feature so it is intuitive, reliable, and (last but not least) beautiful!

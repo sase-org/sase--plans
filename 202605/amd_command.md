@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-24 17:51:26
 status: done
-prompt: 202605/prompts/amd_command.md
 bead_id: sase-44
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/amd_command.md](prompts/amd_command.md)
+
 # Plan: `sase amd` and Project-Managed AGENTS.md
 
 ## Goal

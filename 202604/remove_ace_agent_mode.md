@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 17:36:32
 status: done
-prompt: 202604/prompts/remove_ace_agent_mode.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/remove_ace_agent_mode.md](prompts/remove_ace_agent_mode.md)
 
 # Plan: Remove `sase ace --agent` CLI Option
 

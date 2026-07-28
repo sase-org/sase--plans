@@ -55,6 +55,8 @@ status: done
 bead_id: sase-9l
 ---
 
+- **PROMPT:** [202607/prompts/bead_store_pytest_isolation.md](prompts/bead_store_pytest_isolation.md)
+
 # Plan: Stop pytest writing to the production bead store, and purge the leaked beads
 
 Implements recommendation 1 of the 2026-07-25 beads leverage research report ("Stop the test suite writing to the

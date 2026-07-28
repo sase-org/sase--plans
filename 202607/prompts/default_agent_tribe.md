@@ -1,6 +1,5 @@
----
-plan: 202607/default_agent_tribe.md
----
+- **PLAN:** [../202607/default_agent_tribe.md](../default_agent_tribe.md)
+
  The number of agent panels we show on the agents tab depends on how
 many different tribes are in use by the different agents on the Agents tab. All
 agents that do not have a tribe get added to a section that is called "untagged"

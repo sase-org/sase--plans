@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 12:03:39
 status: done
-prompt: 202606/prompts/xprompt_stash_properties.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_stash_properties.md](prompts/xprompt_stash_properties.md)
+
 # Preserve xprompt properties through prompt stash bundles
 
 ## Goal

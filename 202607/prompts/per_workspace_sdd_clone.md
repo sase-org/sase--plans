@@ -1,6 +1,5 @@
----
-plan: 202607/per_workspace_sdd_clone.md
----
+- **PLAN:** [../202607/per_workspace_sdd_clone.md](../per_workspace_sdd_clone.md)
+
  sase coder agent (that implement approved plans) launches are still failing (see #sshot and recent related git commits for context). Can you help me diagnose the root cause of this issue and fix it? Keep in mind that we should continue to use a relative .sase/sdd/ file path for the plan file reference.
 
 - This should be easy... We just need to clone a fresh copy of (if it doesn't already exist) or sync that workspace's .sase/sdd/ repo (e.g. by running the `git pull` command in that directory) during workspace preperation, right?

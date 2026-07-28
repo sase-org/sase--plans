@@ -1,6 +1,5 @@
----
-plan: 202607/agent_cli_updates.md
----
+- **PLAN:** [../202607/agent_cli_updates.md](../agent_cli_updates.md)
+
  I want to add the ability to SASE to update all currently installed supported agent CLIs like Claude and Codex, for example. Can you help me implement this?
 
 - We should be realistic but ambitious about our ability to do this reliably and make sure to point to the provider's canonical install/update documentation in error messages and on the new updates subtab that we add.

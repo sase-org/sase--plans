@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-09 15:28:57
 status: done
-prompt: 202604/prompts/fix_default_branch_detection.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_default_branch_detection.md](prompts/fix_default_branch_detection.md)
 
 # Plan: Fix default branch detection fallback
 

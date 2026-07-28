@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 08:27:19
 status: done
-prompt: 202606/prompts/per_commit_diffs_and_deltas.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/per_commit_diffs_and_deltas.md](prompts/per_commit_diffs_and_deltas.md)
+
 # Plan: Per-commit diffs in the file panel + all-commit Deltas
 
 ## Problem

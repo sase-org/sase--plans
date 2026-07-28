@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 14:02:06
 status: done
-prompt: 202605/prompts/artifact_marking_modal.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_marking_modal.md](prompts/artifact_marking_modal.md)
+
 # Plan: Artifact Modal Marking Flow Polish
 
 ## Goal

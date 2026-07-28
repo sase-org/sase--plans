@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-13 11:10:52
 status: wip
-prompt: 202604/prompts/split_google3_rules.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/split_google3_rules.md](prompts/split_google3_rules.md)
 
 # Plan to Split `google3_rules.md`
 

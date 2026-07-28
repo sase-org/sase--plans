@@ -1,10 +1,4 @@
----
-plan: 202606/complete_sase_52_alt_directive_predicate.md
----
-
-
-
-
+- **PLAN:** [../202606/complete_sase_52_alt_directive_predicate.md](../complete_sase_52_alt_directive_predicate.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-52 is complete?
 

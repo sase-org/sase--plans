@@ -9,8 +9,9 @@ goal: 'A filtered empty Statistics result offers a truthful one-key escape back 
   '
 create_time: 2026-07-20 16:00:39
 status: done
-prompt: 202607/prompts/statistics_empty_filter_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/statistics_empty_filter_landing.md](prompts/statistics_empty_filter_landing.md)
 
 # Plan: Repair Statistics empty-filter recovery and land sase-8a
 

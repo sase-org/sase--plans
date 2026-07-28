@@ -44,6 +44,8 @@ status: done
 bead_id: sase-8a
 ---
 
+- **PROMPT:** [202607/prompts/statistics_tab_intuitive_redesign.md](prompts/statistics_tab_intuitive_redesign.md)
+
 # Plan: Intuitive Statistics tab redesign for the SASE Admin Center
 
 ## Context and problem

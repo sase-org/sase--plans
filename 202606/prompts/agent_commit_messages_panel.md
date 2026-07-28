@@ -1,6 +1,5 @@
----
-plan: 202606/agent_commit_messages_panel.md
----
+- **PLAN:** [../202606/agent_commit_messages_panel.md](../agent_commit_messages_panel.md)
+
  #fork:04j.f1 Great! Can you now help me add support for showing all of the commit messages associated with a given agent in the agent metadata panel on the "Agents" tab of the `sase ace` TUI? Currently, we only show the commit message from the main repo (not from linked repos). I want you to lead the design on this one. Make sure you design this feature so it is intuitive, reliable, and (last but not least) beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

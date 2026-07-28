@@ -1,6 +1,5 @@
----
-plan: 202606/agents_zoom_keymap.md
----
+- **PLAN:** [../202606/agents_zoom_keymap.md](../agents_zoom_keymap.md)
+
  Can you help me add a new `z` (zoom) keymap to the agents tab of the TUI?
 
 - This keymap should zoom either the agent metadata panel or the file/tools panel (whichever is the largest--see the `p` (Toggle Layout) keymap on that tab for context).

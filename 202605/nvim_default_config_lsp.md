@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-14 12:56:31
 status: wip
-prompt: 202605/prompts/nvim_default_config_lsp.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/nvim_default_config_lsp.md](prompts/nvim_default_config_lsp.md)
+
 # Diagnose and fix Neovim LSP support for `src/sase/default_config.yml`
 
 ## Context

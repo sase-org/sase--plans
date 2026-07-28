@@ -1,6 +1,5 @@
----
-plan: 202606/working_plan_tale_statuses_1.md
----
+- **PLAN:** [../202606/working_plan_tale_statuses_1.md](../working_plan_tale_statuses_1.md)
+
  Can you help me start using new `WORKING TALE/PLAN` statuses for "code" agents?
 
 - This way we can give "plan" agents the `PLAN APPROVED` status when the plan is approved, which is the status it should keep from that point forward (similar to what we do with the `ANSWERED` status for agents that asked questions that were answered by the user).

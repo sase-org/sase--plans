@@ -58,6 +58,8 @@ status: done
 bead_id: sase-9m
 ---
 
+- **PROMPT:** [202607/prompts/common_placeholder_tags.md](prompts/common_placeholder_tags.md)
+
 # Plan: Saved common placeholder tags in prompt completion
 
 ## Background

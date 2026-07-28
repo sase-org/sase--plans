@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 16:51:31
 status: done
-prompt: 202607/prompts/video_artifact_preview.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/video_artifact_preview.md](prompts/video_artifact_preview.md)
+
 # Plan: Terminal Video Preview for Agent Artifacts (mpv)
 
 ## Goal

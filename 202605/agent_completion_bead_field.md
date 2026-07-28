@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 16:18:24
 status: done
-prompt: 202605/prompts/agent_completion_bead_field.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_completion_bead_field.md](prompts/agent_completion_bead_field.md)
+
 # Plan: Add `Bead:` to Telegram and Google Chat agent completion messages
 
 ## Goal

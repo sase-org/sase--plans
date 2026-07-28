@@ -2,9 +2,10 @@
 status: done
 create_time: 2026-04-25 17:20:05
 bead_id: sase-r
-prompt: 202604/prompts/epic_work_automation.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/epic_work_automation.md](prompts/epic_work_automation.md)
 
 # Epic Work Automation: `sase bead work <epic>` → auto-launch phase + land agents
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 12:36:34
 status: done
-prompt: 202604/prompts/fix_ci_just_bootstrap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_ci_just_bootstrap.md](prompts/fix_ci_just_bootstrap.md)
+
 # Fix CI just Bootstrap Failure
 
 ## Problem

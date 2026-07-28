@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 22:10:17
 status: done
-prompt: 202603/prompts/fix_noop_notifications.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_noop_notifications.md](prompts/fix_noop_notifications.md)
 
 # Fix: Suppress notifications for noop workflow runs
 

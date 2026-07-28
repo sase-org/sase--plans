@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 12:14:03
 status: done
-prompt: 202604/prompts/auto_agent_name_reuse.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/auto_agent_name_reuse.md](prompts/auto_agent_name_reuse.md)
+
 # Fix Auto Agent Name Reuse
 
 ## Problem

@@ -1,6 +1,5 @@
----
-plan: 202607/phase_worker_alias_bucket.md
----
+- **PLAN:** [../202607/phase_worker_alias_bucket.md](../phase_worker_alias_bucket.md)
+
  Can you help me split the `@phase_worker` model alias up into a new `phase_worker` model alias bucket?
 
 - Let's continue to define the `@phase_worker` model alias as is, but define it in the new `phase_worker` bucket.

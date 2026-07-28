@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-26 19:12:41
 status: done
-prompt: 202606/prompts/telegram_sequential_questions.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/telegram_sequential_questions.md](prompts/telegram_sequential_questions.md)
+
 # Plan: Sequential, Numbered Multi-Question Delivery over Telegram
 
 ## Summary

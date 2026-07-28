@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 12:33:27
 status: done
-prompt: 202606/prompts/sase_4z_pyvision_cleanup_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_4z_pyvision_cleanup_1.md](prompts/sase_4z_pyvision_cleanup_1.md)
+
 # Plan: Finish sase-4z Pyvision Cleanup
 
 ## Context

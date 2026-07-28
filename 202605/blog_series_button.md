@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 13:04:00
 status: done
-prompt: 202605/prompts/blog_series_button.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/blog_series_button.md](prompts/blog_series_button.md)
+
 # Add Homepage Blog Series Button
 
 ## Goal

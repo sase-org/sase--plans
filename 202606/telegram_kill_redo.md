@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-03 03:14:11
 status: done
-prompt: 202606/prompts/telegram_kill_redo.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/telegram_kill_redo.md](prompts/telegram_kill_redo.md)
+
 # Telegram Kill Redo Button Plan
 
 ## Context

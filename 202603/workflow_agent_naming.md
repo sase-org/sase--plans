@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-26 14:28:45
 status: done
-prompt: 202603/prompts/workflow_agent_naming.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/workflow_agent_naming.md](prompts/workflow_agent_naming.md)
 
 # Plan: Workflow Agent Naming (`<name>.<N>`)
 

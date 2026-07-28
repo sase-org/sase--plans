@@ -8,8 +8,9 @@ goal: 'Epic sase-85 has launch-level stale-store recovery coverage against the c
   '
 create_time: 2026-07-20 12:23:05
 status: done
-prompt: 202607/prompts/complete_sase_85_landing.md
 ---
+
+- **PROMPT:** [202607/prompts/complete_sase_85_landing.md](prompts/complete_sase_85_landing.md)
 
 # Plan: Complete and land rich epic clan summaries
 

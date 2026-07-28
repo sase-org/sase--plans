@@ -9,8 +9,9 @@ goal: 'The Agents tab''s by-status view once again puts actionable stopped and f
   '
 create_time: 2026-07-18 15:41:15
 status: done
-prompt: 202607/prompts/restore_agents_status_priority.md
 ---
+
+- **PROMPT:** [202607/prompts/restore_agents_status_priority.md](prompts/restore_agents_status_priority.md)
 
 # Plan: Restore Agents status bucket priority
 

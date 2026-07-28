@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 19:57:14
 status: done
-prompt: 202604/prompts/wait_chats_jinja_variable.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/wait_chats_jinja_variable.md](prompts/wait_chats_jinja_variable.md)
 
 # Plan: Expose `wait_chats` Jinja variable for `%w` / `%wait` directives
 

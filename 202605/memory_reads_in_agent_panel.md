@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 13:13:02
 status: done
-prompt: 202605/prompts/memory_reads_in_agent_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_reads_in_agent_panel.md](prompts/memory_reads_in_agent_panel.md)
+
 # Surface Audited Memory Reads in the Agents Tab Metadata Panel
 
 ## Goal

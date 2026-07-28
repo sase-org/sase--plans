@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-19 08:00:23
 status: done
-prompt: 202605/prompts/agent_family_status_fix_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_family_status_fix_1.md](prompts/agent_family_status_fix_1.md)
+
 # Plan: Agent Family Question and Done Status Fix
 
 ## Goal

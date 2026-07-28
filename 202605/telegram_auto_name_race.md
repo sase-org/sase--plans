@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 15:12:38
 status: wip
-prompt: 202605/prompts/telegram_auto_name_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/telegram_auto_name_race.md](prompts/telegram_auto_name_race.md)
+
 # Telegram Auto Name Race Plan
 
 ## Problem

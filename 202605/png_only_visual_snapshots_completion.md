@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-10 01:37:47
 status: wip
-prompt: 202605/prompts/png_only_visual_snapshots_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/png_only_visual_snapshots_completion.md](prompts/png_only_visual_snapshots_completion.md)
+
 # Complete PNG-only ACE visual snapshots
 
 ## Context

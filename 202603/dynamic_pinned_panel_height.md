@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 09:09:48
 status: pending
-prompt: 202603/prompts/dynamic_pinned_panel_height.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/dynamic_pinned_panel_height.md](prompts/dynamic_pinned_panel_height.md)
 
 # Plan: Dynamic Pinned Panel Height
 

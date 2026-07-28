@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 12:23:39
 status: done
-prompt: 202606/prompts/save_marked_agents_background_task.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/save_marked_agents_background_task.md](prompts/save_marked_agents_background_task.md)
+
 # Plan: Route the `s` (save marked agents) persistence through the tracked-task background queue
 
 ## Problem / product context

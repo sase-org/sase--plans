@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 03:19:28
 status: done
-prompt: 202605/prompts/collapse_agents_side_panel_for_artifact_viewer.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/collapse_agents_side_panel_for_artifact_viewer.md](prompts/collapse_agents_side_panel_for_artifact_viewer.md)
+
 # Collapse Agents Side Panel While Artifact Viewer Is Visible
 
 ## Goal

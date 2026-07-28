@@ -1,10 +1,4 @@
----
-plan: 202605/mobile_gateway_request_id_completion.md
----
-
-
-
-
+- **PLAN:** [../202605/mobile_gateway_request_id_completion.md](../mobile_gateway_request_id_completion.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-26.3 is complete?
 

@@ -8,8 +8,9 @@ goal: 'Agent clan rows continuously show a counted unread indicator, unread navi
   '
 create_time: 2026-07-18 07:24:36
 status: wip
-prompt: 202607/prompts/clan_unread_navigation.md
 ---
+
+- **PROMPT:** [202607/prompts/clan_unread_navigation.md](prompts/clan_unread_navigation.md)
 
 # Plan: Unread-aware agent clans
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 18:49:37
 status: done
-prompt: 202606/prompts/alt_empty_whitespace.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/alt_empty_whitespace.md](prompts/alt_empty_whitespace.md)
+
 # Plan: Smarter whitespace handling for empty alternation renders
 
 ## Problem / product context

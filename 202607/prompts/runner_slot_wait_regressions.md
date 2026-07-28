@@ -1,9 +1,4 @@
----
-plan: 202607/runner_slot_wait_regressions.md
----
-
-
-
+- **PLAN:** [../202607/runner_slot_wait_regressions.md](../runner_slot_wait_regressions.md)
 
 Can you complete the work for bead sase-8g.3? The bead has already been claimed for you (status=in_progress,
 assignee set). Read its description and design file, do the work, and close the bead. Do NOT close the parent

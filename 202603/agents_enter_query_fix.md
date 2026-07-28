@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 20:10:34
 status: done
-prompt: 202603/prompts/agents_enter_query_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/agents_enter_query_fix.md](prompts/agents_enter_query_fix.md)
 
 # Plan: Fix Enter key on Agents tab to change CLs query when ChangeSpec not matched
 

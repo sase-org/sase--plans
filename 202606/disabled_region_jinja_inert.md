@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 11:06:11
 status: done
-prompt: 202606/prompts/disabled_region_jinja_inert.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/disabled_region_jinja_inert.md](prompts/disabled_region_jinja_inert.md)
+
 # Plan: Make disabled (`%xprompts_enabled:false`) regions inert for all Jinja2 expansion and validation
 
 ## Problem

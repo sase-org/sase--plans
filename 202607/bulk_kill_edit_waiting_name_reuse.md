@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-14 11:23:59
 status: done
-prompt: 202607/prompts/bulk_kill_edit_waiting_name_reuse.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/bulk_kill_edit_waiting_name_reuse.md](prompts/bulk_kill_edit_waiting_name_reuse.md)
+
 # Ensure marked-agent kill-and-edit preserves explicit names
 
 ## Context and current finding

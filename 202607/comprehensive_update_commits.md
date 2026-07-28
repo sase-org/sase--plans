@@ -8,8 +8,9 @@ goal: 'The Updates-tab comprehensive-update confirmation leads with a responsive
   '
 create_time: 2026-07-21 11:11:17
 status: done
-prompt: '[202607/prompts/comprehensive_update_commits.md](prompts/comprehensive_update_commits.md)'
 ---
+
+- **PROMPT:** [202607/prompts/comprehensive_update_commits.md](prompts/comprehensive_update_commits.md)
 
 # Plan: Commit-first comprehensive update confirmation
 

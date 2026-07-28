@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 15:53:21
 status: wip
-prompt: 202604/prompts/ace_loading_banner.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_loading_banner.md](prompts/ace_loading_banner.md)
 
 # Bold, Beautiful Startup Loading Banner for `sase ace` TUI
 

@@ -1,6 +1,5 @@
----
-plan: 202606/operations_tab.md
----
+- **PLAN:** [../202606/operations_tab.md](../operations_tab.md)
+
  Can you help me merge the "Tasks" and "Logs" tabs of the "SASE Admin Center" panel into a single, new "Operations" panel?
 
 - This panel should have two tabs: one for tasks, another for logs. See how the projects tab handles this for inspiration.

@@ -1,6 +1,5 @@
----
-plan: 202605/deltas_line_counts_hg.md
----
+- **PLAN:** [../202605/deltas_line_counts_hg.md](../deltas_line_counts_hg.md)
+
  Can you help me start showing the number of lines that were changed in each file entry in the ChangeSpec DELTAS
 field (see the `sase ace` snapshot below)? Make sure this is updated when new COMMITS entries are added. Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

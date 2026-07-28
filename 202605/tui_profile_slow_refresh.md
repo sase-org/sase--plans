@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 20:31:53
 status: done
-prompt: 202605/prompts/tui_profile_slow_refresh.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tui_profile_slow_refresh.md](prompts/tui_profile_slow_refresh.md)
+
 # Plan: Fix ACE TUI Slow Refresh From Dismissed-Agent Reloads
 
 ## Problem

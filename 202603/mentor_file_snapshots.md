@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-22 00:00:00
 status: draft
-prompt: 202603/prompts/mentor_file_snapshots.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/mentor_file_snapshots.md](prompts/mentor_file_snapshots.md)
 
 # Plan: Snapshot File Contents at Mentor Save Time for Instant Review
 

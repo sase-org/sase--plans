@@ -1,6 +1,5 @@
----
-plan: 202603/epic_approval.md
----
+- **PLAN:** [../202603/epic_approval.md](../epic_approval.md)
+
 Can you help me add support for a new `E` (epic) option on the TUI plan approval popup and a corresponding Telegram
 "Epic" inline keyboard button?
 

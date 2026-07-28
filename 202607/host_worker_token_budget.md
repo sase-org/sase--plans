@@ -8,8 +8,9 @@ goal: 'Parallel pytest runs share a crash-safe host-wide xdist worker budget, al
   '
 create_time: 2026-07-20 11:05:16
 status: wip
-prompt: 202607/prompts/host_worker_token_budget.md
 ---
+
+- **PROMPT:** [202607/prompts/host_worker_token_budget.md](prompts/host_worker_token_budget.md)
 
 # Plan: Host-global pytest worker-token budget
 

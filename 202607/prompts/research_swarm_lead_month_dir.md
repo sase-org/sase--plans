@@ -1,6 +1,5 @@
----
-plan: 202607/research_swarm_lead_month_dir.md
----
+- **PLAN:** [../202607/research_swarm_lead_month_dir.md](../research_swarm_lead_month_dir.md)
+
   Can you help me fix the `#research_swarm` xprompt to make some things clear to the final / consolidator research agent?
 
 - This agent should create the new directory inside a directory of the form `<YYmmdd>` (represents the current month). We should give this directory to the agent explicitly using xprompt shell expansion with the `date +%y%%m` command.

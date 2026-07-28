@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 23:27:26
 status: wip
-prompt: 202605/prompts/refresh_docs_polish_daemon_agents.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/refresh_docs_polish_daemon_agents.md](prompts/refresh_docs_polish_daemon_agents.md)
+
 # Plan: Refresh Docs Polish Daemon Agent
 
 ## Goal

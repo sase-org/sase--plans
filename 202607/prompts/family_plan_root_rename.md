@@ -1,6 +1,5 @@
----
-plan: 202607/family_plan_root_rename.md
----
+- **PLAN:** [../202607/family_plan_root_rename.md](../family_plan_root_rename.md)
+
  We recently added the distinction between agent clans and agent
 families but The main goal was essentially to leave agent families the way they
 were and add support for this new concept of agent clans (see the sase-6n epic

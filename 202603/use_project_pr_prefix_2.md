@@ -1,9 +1,10 @@
 ---
 status: wip
 create_time: 2026-03-29 10:54:46
-prompt: 202603/prompts/use_project_pr_prefix_2.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/use_project_pr_prefix_2.md](prompts/use_project_pr_prefix_2.md)
 
 # Plan: `use_project_pr_prefix` Config Field
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 19:40:29
 status: done
-prompt: 202605/prompts/agent_metadata_deltas.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_metadata_deltas.md](prompts/agent_metadata_deltas.md)
+
 # Plan: Agent Metadata DELTAS Field
 
 ## Goal

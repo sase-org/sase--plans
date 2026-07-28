@@ -8,8 +8,9 @@ goal: 'The Artifacts Commits and Plans filter bars accept exclusion terms such a
   '
 create_time: 2026-07-18 15:33:58
 status: done
-prompt: 202607/prompts/negative_artifact_filters.md
 ---
+
+- **PROMPT:** [202607/prompts/negative_artifact_filters.md](prompts/negative_artifact_filters.md)
 
 # Plan: Negative filters for Artifacts commits and plans
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-10 08:37:32
 status: wip
-prompt: 202606/prompts/claude_fable_5_model.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/claude_fable_5_model.md](prompts/claude_fable_5_model.md)
+
 # Plan: Recognize `claude-fable-5` as a Claude Model + Surface It in TUI Model Pickers
 
 ## Background

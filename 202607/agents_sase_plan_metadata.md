@@ -5,8 +5,9 @@ goal: Agents with an associated proposed plan see a polished SASE PLAN metadata 
   field or any regression to Agents-tab responsiveness.
 create_time: 2026-07-15 13:52:53
 status: done
-prompt: 202607/prompts/agents_sase_plan_metadata.md
 ---
+
+- **PROMPT:** [202607/prompts/agents_sase_plan_metadata.md](prompts/agents_sase_plan_metadata.md)
 
 # Plan: Add a SASE PLAN section to agent metadata
 

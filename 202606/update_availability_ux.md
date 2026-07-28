@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 06:53:51
 status: done
-prompt: 202606/prompts/update_availability_ux.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/update_availability_ux.md](prompts/update_availability_ux.md)
+
 # Plan: Reliable, Beautiful "Updates Available" UX (dev + published)
 
 ## Goal

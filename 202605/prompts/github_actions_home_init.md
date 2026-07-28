@@ -1,6 +1,5 @@
----
-plan: 202605/github_actions_home_init.md
----
+- **PLAN:** [../202605/github_actions_home_init.md](../github_actions_home_init.md)
+
  Can you help me fix this GitHub Actions failure? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ```

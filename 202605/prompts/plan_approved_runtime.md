@@ -1,6 +1,5 @@
----
-plan: 202605/plan_approved_runtime.md
----
+- **PLAN:** [../202605/plan_approved_runtime.md](../plan_approved_runtime.md)
+
  We aren't showing a runtime for some agent statuses that represent running agents (ex: see the "PLAN APPROVED" agent in the `sase ace` snapshot below). This agent entry should show a (incremented every 1s) runtime that is equal to the sum of two durationss: The difference between the BEGIN and PLAN timestamps + The difference between the current time and the CODE timestamp. Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 

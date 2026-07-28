@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-22 14:29:23
 status: done
-prompt: 202605/prompts/tier1_audit_hardening.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tier1_audit_hardening.md](prompts/tier1_audit_hardening.md)
+
 # Tighten the Tier 1 Agent Artifact Index Upkeep Audit
 
 ## Goal

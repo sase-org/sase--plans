@@ -1,6 +1,5 @@
----
-plan: 202607/commits_persistent_default_filter.md
----
+- **PLAN:** [../202607/commits_persistent_default_filter.md](../commits_persistent_default_filter.md)
+
  Can you help me make it much clearer what commits we are filtering for
 on the the "Commits" sub-tab of the "Artifacts" tab by always showing a filter
 at the top?

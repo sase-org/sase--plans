@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 21:49:01
 status: done
-prompt: 202604/prompts/snooze_duration_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/snooze_duration_panel.md](prompts/snooze_duration_panel.md)
+
 # Snooze Duration Panel UX Plan
 
 ## Product Direction

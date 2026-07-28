@@ -1,6 +1,5 @@
----
-plan: 202607/readme_demo_gif_overhaul.md
----
+- **PLAN:** [../202607/readme_demo_gif_overhaul.md](../readme_demo_gif_overhaul.md)
+
  Can you help me improve the single demo GIF file that is shown in this project's readme?
 - It is not colored and neither are any of the GIFs. Don't get me wrong, it seems like it has some color but there's definitely something very grayed out about it.
 - It's not a very realistic use case. The bare git VCS xprompt workflow, for example, is unlikely to be used too much. Show a demo using the GitHub VCS xprompt workflow.

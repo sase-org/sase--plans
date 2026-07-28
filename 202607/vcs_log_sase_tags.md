@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-09 13:20:16
 status: done
-prompt: 202607/prompts/vcs_log_sase_tags.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_sase_tags.md](prompts/vcs_log_sase_tags.md)
+
 # Plan: Opt-in SASE Commit Tags in `sase vcs log`
 
 ## Goal

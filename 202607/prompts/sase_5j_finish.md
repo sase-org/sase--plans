@@ -1,11 +1,4 @@
----
-plan: 202607/sase_5j_finish.md
----
-
-
-
-
-
+- **PLAN:** [../202607/sase_5j_finish.md](../sase_5j_finish.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5j is complete?
 

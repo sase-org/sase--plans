@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 03:49:53
 status: wip
-prompt: 202605/prompts/artifact_tmux_pane_side_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_tmux_pane_side_panel.md](prompts/artifact_tmux_pane_side_panel.md)
+
 # Plan: Restore Agents Side Panel When Artifact Tmux Pane Closes
 
 ## Context

@@ -8,8 +8,9 @@ goal: 'Inline code is recognized consistently in the ACE prompt editor even when
   '
 create_time: 2026-07-19 08:37:24
 status: done
-prompt: 202607/prompts/inline_code_adjacency.md
 ---
+
+- **PROMPT:** [202607/prompts/inline_code_adjacency.md](prompts/inline_code_adjacency.md)
 
 # Plan: Make adjacent inline code recognition robust
 

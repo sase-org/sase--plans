@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-12 17:54:52
 status: done
-prompt: 202604/prompts/migrate_e2e_tests.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/migrate_e2e_tests.md](prompts/migrate_e2e_tests.md)
 
 # Plan: Migrate E2E Tests to AcePage Testing DSL
 

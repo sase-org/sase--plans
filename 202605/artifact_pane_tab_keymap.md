@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 10:51:56
 status: done
-prompt: 202605/prompts/artifact_pane_tab_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_pane_tab_keymap.md](prompts/artifact_pane_tab_keymap.md)
+
 # Artifact Pane Tab Keymap Plan
 
 ## Goal

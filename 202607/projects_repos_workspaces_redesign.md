@@ -1,10 +1,12 @@
 ---
 create_time: 2026-07-13 09:57:15
 status: done
-prompt: 202607/prompts/projects_repos_workspaces_redesign.md
 bead_id: sase-5w
 tier: epic
 ---
+
+- **PROMPT:** [202607/prompts/projects_repos_workspaces_redesign.md](prompts/projects_repos_workspaces_redesign.md)
+
 # Plan: Redesign SASE Projects / Repos / Workspaces + Admin Center Projects Tab
 
 ## Product context

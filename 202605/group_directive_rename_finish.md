@@ -1,9 +1,10 @@
 ---
-prompt: 202605/prompts/group_directive_rename_finish.md
 create_time: 2026-05-10 11:34:25
 status: done
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/group_directive_rename_finish.md](prompts/group_directive_rename_finish.md)
 
 # Finish `%tag` → `%group` Directive Rename (Python Side)
 

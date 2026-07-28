@@ -1,6 +1,5 @@
----
-plan: 202606/worker_models_mapping.md
----
+- **PLAN:** [../202606/worker_models_mapping.md](../worker_models_mapping.md)
+
  Can you help me change the way the `worker_model` config works?
 
 - We should rename this field to `worker_models`.

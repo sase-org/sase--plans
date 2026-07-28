@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-12 21:58:39
 status: done
-prompt: 202605/prompts/bead_work_commit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_work_commit.md](prompts/bead_work_commit.md)
+
 # Plan: Commit bead launch state after `sase bead work`
 
 ## Goal

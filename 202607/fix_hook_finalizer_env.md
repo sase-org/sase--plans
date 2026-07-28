@@ -8,8 +8,9 @@ goal: 'Scheduler-launched fix-hook and CRS agent runs succeed end-to-end (the co
   '
 create_time: 2026-07-15 13:21:48
 status: done
-prompt: 202607/prompts/fix_hook_finalizer_env.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_hook_finalizer_env.md](prompts/fix_hook_finalizer_env.md)
 
 # Plan: Make scheduler-launched fix-hook/CRS runs commit their work and report real failure reasons
 

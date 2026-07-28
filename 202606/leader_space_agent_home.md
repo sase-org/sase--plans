@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 13:17:02
 status: done
-prompt: 202606/prompts/leader_space_agent_home.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/leader_space_agent_home.md](prompts/leader_space_agent_home.md)
+
 # Plan: Move `,h` Agent-Home Leader Key To `,<space>`
 
 ## Goal

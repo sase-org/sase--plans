@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 00:24:58
 status: done
-prompt: 202605/prompts/image_rendering.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/image_rendering.md](prompts/image_rendering.md)
+
 # Improve SASE Image Rendering
 
 ## Goal

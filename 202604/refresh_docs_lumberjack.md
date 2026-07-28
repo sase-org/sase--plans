@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 23:38:35
 status: done
-prompt: 202604/prompts/refresh_docs_lumberjack.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/refresh_docs_lumberjack.md](prompts/refresh_docs_lumberjack.md)
+
 # Plan: Dedicated `refresh_docs` Lumberjack for SASE Repos
 
 ## Goal

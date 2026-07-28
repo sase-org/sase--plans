@@ -1,6 +1,5 @@
----
-plan: 202607/model_alias_buckets.md
----
+- **PLAN:** [../202607/model_alias_buckets.md](../model_alias_buckets.md)
+
  Can you help me add support for model "alias buckets" in the "Models" panel of the TUI (triggered via the `,m` keymap)?
 
 - We should be able to use these buckets to configure a set of aliases that are all grouped together on that panel and shown in the same row using the bucket name (show other useful information on this line, but keep it concise so it all fits on one line).

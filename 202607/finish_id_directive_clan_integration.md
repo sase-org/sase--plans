@@ -33,6 +33,8 @@ status: done
 bead_id: sase-7n
 ---
 
+- **PROMPT:** [202607/prompts/finish_id_directive_clan_integration.md](prompts/finish_id_directive_clan_integration.md)
+
 # Plan: Finish the agent-ID and clan grammar integration
 
 ## Context

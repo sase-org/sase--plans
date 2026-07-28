@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 18:06:26
 status: done
-prompt: 202604/prompts/plan_review_g_G_scroll.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/plan_review_g_G_scroll.md](prompts/plan_review_g_G_scroll.md)
+
 # Plan: `g` / `G` Scroll-to-Top / Scroll-to-Bottom in the Plan Review Panel
 
 ## Product context

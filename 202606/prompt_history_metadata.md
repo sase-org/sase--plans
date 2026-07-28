@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 13:00:46
 status: done
-prompt: 202606/prompts/prompt_history_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_metadata.md](prompts/prompt_history_metadata.md)
+
 # Plan: Show project + directives/xprompts in the prompt history panel
 
 ## Goal / product context

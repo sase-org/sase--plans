@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-04 10:31:44
 status: done
-prompt: 202606/prompts/project_aliases.md
 bead_id: sase-4c
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/project_aliases.md](prompts/project_aliases.md)
+
 # Plan: SASE Project Aliases
 
 ## Goal

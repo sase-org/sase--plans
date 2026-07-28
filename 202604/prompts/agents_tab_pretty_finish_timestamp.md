@@ -1,6 +1,5 @@
----
-plan: 202604/agents_tab_pretty_finish_timestamp.md
----
+- **PLAN:** [../202604/agents_tab_pretty_finish_timestamp.md](../agents_tab_pretty_finish_timestamp.md)
+
  Can you help me make the datetimes that are shown in the side-panels of the "Agents" tab of the `sase ace` TUI
 look much better without making them take up more space on the line? The `sase ace` snapshot below shows what they look
 like now. I want you to lead the design on this one. Just make sure it looks beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

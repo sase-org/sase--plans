@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-25 21:08:46
 status: done
-prompt: 202603/prompts/hg_changespec_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/hg_changespec_metadata.md](prompts/hg_changespec_metadata.md)
 
 # Plan: Fix missing ChangeSpec metadata for hg provider in Agents panel
 

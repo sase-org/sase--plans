@@ -1,6 +1,5 @@
----
-plan: 202606/multi_agent_prompt_stack.md
----
+- **PLAN:** [../202606/multi_agent_prompt_stack.md](../multi_agent_prompt_stack.md)
+
  Can you help me add robust, beautiful support to the prompt input widget for multi-agent xprompts?
 
 - These are defined only in markdown files currently and separate the different agent prompts using a line containing

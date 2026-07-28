@@ -1,6 +1,5 @@
----
-plan: 202604/deltas_field.md
----
+- **PLAN:** [../202604/deltas_field.md](../deltas_field.md)
+
  I want to add a new DELTAS ChangeSpec field that contains a list of all of the files that the ChangeSpec added, modified, or deleted.
 
 - These entries will need to be updated anytime the real file changes for the CL associated with this ChangeSpec change (ex: after rewinds, new commits, etc...).

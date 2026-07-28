@@ -1,6 +1,5 @@
----
-plan: 202606/github_project_aliases.md
----
+- **PLAN:** [../202606/github_project_aliases.md](../github_project_aliases.md)
+
  I've been thinking about how to support GitHub projects that have the same project name but live in different
 organizations for a while now. Currently this is not possible because we treat `#gh:foo` as `#gh:foo-org/foo` after the
 first time `#gh:foo-org/foo` is used in a sase agent prompt. We recently added support for project aliases though, and

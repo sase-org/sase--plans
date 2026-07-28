@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-28 10:21:45
 status: done
-prompt: 202605/prompts/nvim_xprompt_frontmatter_hover.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/nvim_xprompt_frontmatter_hover.md](prompts/nvim_xprompt_frontmatter_hover.md)
+
 # Plan: xprompt Markdown frontmatter hover
 
 ## Goal

@@ -77,6 +77,8 @@ status: wip
 bead_id: sase-ae
 ---
 
+- **PROMPT:** [202607/prompts/skill_deploy_thrash.md](prompts/skill_deploy_thrash.md)
+
 # Stop `sase skill init` Skill-Deployment Thrashing
 
 ## Problem

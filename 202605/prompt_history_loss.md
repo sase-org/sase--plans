@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 13:45:59
 status: done
-prompt: 202605/prompts/prompt_history_loss.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_history_loss.md](prompts/prompt_history_loss.md)
+
 # Plan: Fix prompt history data loss
 
 ## Diagnosis

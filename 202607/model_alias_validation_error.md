@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-11 12:37:55
 status: wip
-prompt: 202607/prompts/model_alias_validation_error.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/model_alias_validation_error.md](prompts/model_alias_validation_error.md)
+
 # Repair the Models-panel alias edit validation failure
 
 ## Problem and root cause

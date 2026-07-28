@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-02 15:38:11
 status: done
-prompt: 202607/prompts/blog_quickstart_git_workspace.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/blog_quickstart_git_workspace.md](prompts/blog_quickstart_git_workspace.md)
+
 # Plan: Fix the quickstart blog's workspace-isolation narrative by switching to `#git`
 
 ## Problem / Context

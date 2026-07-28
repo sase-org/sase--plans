@@ -1,6 +1,5 @@
----
-plan: 202604/split_workspace_fix.md
----
+- **PLAN:** [../202604/split_workspace_fix.md](../split_workspace_fix.md)
+
 Can you help me fix this `#split` xprompt workflow (defined in the ../retired Mercurial plugin repo) shown below (see recent, related
 git commits)? I think maybe we are not claiming a workspace properly and `cd`ing into that workspace directory before
 running the `retired_mercurial_plugin_update` command? Can you help me fix this? Think this through thoroughly and create a plan

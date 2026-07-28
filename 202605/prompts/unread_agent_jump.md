@@ -1,6 +1,5 @@
----
-plan: 202605/unread_agent_jump.md
----
+- **PLAN:** [../202605/unread_agent_jump.md](../unread_agent_jump.md)
+
  When I use the `,j` keymap, I'm getting a "No unread completed agents" error message (see the `sase ace` snapshot below) even though there is clearly one unread agent row (the agent named "anj.plan"). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 
 ### `sase ace` snapshot

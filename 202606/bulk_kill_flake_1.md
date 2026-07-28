@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 09:06:31
 status: done
-prompt: 202606/prompts/bulk_kill_flake_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bulk_kill_flake_1.md](prompts/bulk_kill_flake_1.md)
+
 # Plan: Fix Bulk Kill Flake
 
 ## Problem

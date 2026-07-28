@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-16 09:40:53
 status: done
-prompt: 202606/prompts/bead_work_force_reuse_relaunch_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/bead_work_force_reuse_relaunch_1.md](prompts/bead_work_force_reuse_relaunch_1.md)
+
 # Bead Work Force-Reuse Relaunch Plan
 
 ## Context

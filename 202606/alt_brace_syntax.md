@@ -1,10 +1,12 @@
 ---
 create_time: 2026-06-20 14:25:04
 status: done
-prompt: 202606/prompts/alt_brace_syntax.md
 bead_id: sase-52
 tier: epic
 ---
+
+- **PROMPT:** [202606/prompts/alt_brace_syntax.md](prompts/alt_brace_syntax.md)
+
 # Plan: migrate alt shorthand from `%(...)` to `%{...}`
 
 ## Goal

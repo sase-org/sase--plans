@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 17:20:48
 status: done
-prompt: 202605/prompts/terminal_markdown_pdf_profile.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/terminal_markdown_pdf_profile.md](prompts/terminal_markdown_pdf_profile.md)
+
 # Plan: Terminal Markdown PDF Source Rendering
 
 ## Goal

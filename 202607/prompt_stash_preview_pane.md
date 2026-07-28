@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 09:02:51
 status: done
-prompt: 202607/prompts/prompt_stash_preview_pane.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prompt_stash_preview_pane.md](prompts/prompt_stash_preview_pane.md)
+
 # Plan: Prompt Stash Preview Pane with XPrompt + Markdown Syntax Highlighting
 
 ## Product Context

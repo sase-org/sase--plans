@@ -1,6 +1,5 @@
----
-plan: 202605/tale_approved_status_reconstruction.md
----
+- **PLAN:** [../202605/tale_approved_status_reconstruction.md](../tale_approved_status_reconstruction.md)
+
  I just approved a "tale" plan for this agent (see the `sase ace` snapshot below), so both the root entry and the "1/1-code" child agent step entry should have a status of "TALE APPROVED" instead of "RUNNING". Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
   
 

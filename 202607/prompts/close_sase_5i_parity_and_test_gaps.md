@@ -1,11 +1,4 @@
----
-plan: 202607/close_sase_5i_parity_and_test_gaps.md
----
-
-
-
-
-
+- **PLAN:** [../202607/close_sase_5i_parity_and_test_gaps.md](../close_sase_5i_parity_and_test_gaps.md)
 
 Can you help me verify that all the work associated with the bead with ID sase-5i is complete?
 

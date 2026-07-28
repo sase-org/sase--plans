@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-04 10:33:03
 status: done
-prompt: 202604/prompts/agents_tab_pinned_indicator_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_tab_pinned_indicator_1.md](prompts/agents_tab_pinned_indicator_1.md)
 
 # Plan: Agents Tab Pinned (`+N`) Indicator
 

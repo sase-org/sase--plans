@@ -1,6 +1,5 @@
----
-plan: 202607/move_research_xprompts_to_chezmoi.md
----
+- **PLAN:** [../202607/move_research_xprompts_to_chezmoi.md](../move_research_xprompts_to_chezmoi.md)
+
  Can you help me move the `#research_swarm` xprompt definition and the definitions of all other related (e.g. `#research`) xprompt definitions from the default xprompts provided by sase to  my chezmoi repo? Also, let's define two new custom model aliases: `@research` and `@research_assist`.
 
 - `@research` should be configured to use "codex/gpt-5.5" and `@research_assist` should be configured to use "claude/opus".

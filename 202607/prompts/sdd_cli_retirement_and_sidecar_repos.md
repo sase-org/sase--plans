@@ -1,6 +1,5 @@
----
-plan: 202607/sdd_cli_retirement_and_sidecar_repos.md
----
+- **PLAN:** [../202607/sdd_cli_retirement_and_sidecar_repos.md](../sdd_cli_retirement_and_sidecar_repos.md)
+
  We've done a lot of work recently to generalize sase repos and add support for multiple types like Sidecar repos, Linked repos, and External repos. In the case of Sidecar repos however we still seem to treat them conceptually differently somehow I think. I think this has something to do with the legacy sdd foundations of this particular repo type. One of the goals of this work has been to migrate away from the legacy `sase sdd` command completely and start treating sidecar repos as first-class sase repos. Another goal was to give the user the ability to define their own custom sidecar repos in config, which was actually what I always planned for the `sase--research` repo to be (a custom repo that I use from all of my currently enabled sase projects). Can you help me complete this work? Namely:
 
 - I don't think we need the `sase sdd` command anymore but we definitely still need some of its functionality so that will need to be migrated elsewhere. In particular:

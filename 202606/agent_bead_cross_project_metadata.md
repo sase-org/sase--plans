@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-01 10:53:09
 status: done
-prompt: 202606/prompts/agent_bead_cross_project_metadata.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_bead_cross_project_metadata.md](prompts/agent_bead_cross_project_metadata.md)
+
 # Fix Cross-Project Bead Metadata in Agents Tab
 
 ## Problem

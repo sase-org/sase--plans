@@ -7,8 +7,9 @@ goal: 'sase-github CI and release validation use a mutually compatible SASE Pyth
   '
 create_time: 2026-07-15 13:37:36
 status: wip
-prompt: 202607/prompts/github_ci_core_source_alignment.md
 ---
+
+- **PROMPT:** [202607/prompts/github_ci_core_source_alignment.md](prompts/github_ci_core_source_alignment.md)
 
 # Plan: Align sase-github CI with the SASE Rust core
 

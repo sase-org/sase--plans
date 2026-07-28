@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-07 21:43:39
 status: done
-prompt: 202605/prompts/artifacts_keymap.md
 bead_id: sase-2c
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/artifacts_keymap.md](prompts/artifacts_keymap.md)
+
 # Generalize Agents Tab Artifact Viewing
 
 ## Context

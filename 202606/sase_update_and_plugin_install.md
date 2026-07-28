@@ -3,8 +3,10 @@ create_time: 2026-06-25 21:15:25
 status: done
 bead_id: sase-58
 tier: epic
-prompt: 202606/prompts/sase_update_and_plugin_install.md
 ---
+
+- **PROMPT:** [202606/prompts/sase_update_and_plugin_install.md](prompts/sase_update_and_plugin_install.md)
+
 # Plan: `sase update` + `sase plugin install` / `sase plugin update`
 
 ## Goal

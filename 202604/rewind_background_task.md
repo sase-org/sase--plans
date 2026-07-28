@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-14 17:28:42
 status: done
-prompt: 202604/prompts/rewind_background_task.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/rewind_background_task.md](prompts/rewind_background_task.md)
 
 # Plan: Run Rewind as a Background Task
 

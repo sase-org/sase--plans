@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-30 11:08:29
 status: done
-prompt: 202604/prompts/kitty_image_panel_fix.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/kitty_image_panel_fix.md](prompts/kitty_image_panel_fix.md)
+
 # Fix Kitty Image Rendering In File And Notification Panels
 
 ## Context

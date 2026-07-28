@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 16:51:00
 status: wip
-prompt: 202604/prompts/fast_plan_approval.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fast_plan_approval.md](prompts/fast_plan_approval.md)
+
 # Fast Plan Approval From The TUI
 
 ## Problem

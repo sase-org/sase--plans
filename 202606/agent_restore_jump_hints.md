@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-21 09:14:10
 status: done
-prompt: 202606/prompts/agent_restore_jump_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/agent_restore_jump_hints.md](prompts/agent_restore_jump_hints.md)
+
 # Agent Restore Jump Hints Plan
 
 ## Context

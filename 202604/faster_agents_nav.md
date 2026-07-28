@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-15 17:09:00
 status: done
-prompt: 202604/prompts/faster_agents_nav.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/faster_agents_nav.md](prompts/faster_agents_nav.md)
 
 # Plan: Make Agents Tab j/k Navigation WAY Faster
 

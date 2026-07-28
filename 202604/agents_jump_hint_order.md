@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 21:57:23
 status: done
-prompt: 202604/prompts/agents_jump_hint_order.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agents_jump_hint_order.md](prompts/agents_jump_hint_order.md)
+
 # Fix unsorted jump-hint characters on the Agents tab
 
 ## Problem

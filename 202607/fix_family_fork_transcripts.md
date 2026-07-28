@@ -8,8 +8,9 @@ goal: 'Forking a completed agent family injects every available family-member co
   '
 create_time: 2026-07-19 21:53:44
 status: done
-prompt: 202607/prompts/fix_family_fork_transcripts.md
 ---
+
+- **PROMPT:** [202607/prompts/fix_family_fork_transcripts.md](prompts/fix_family_fork_transcripts.md)
 
 # Plan: Fix agent-family fork transcript resolution
 

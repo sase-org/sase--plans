@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 21:27:30
 status: done
-prompt: 202604/prompts/fix_empty_dashboard_charts.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_empty_dashboard_charts.md](prompts/fix_empty_dashboard_charts.md)
 
 # Fix Empty Telemetry Dashboard Charts
 

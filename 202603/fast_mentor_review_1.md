@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-22 21:17:22
 status: done
-prompt: 202603/prompts/fast_mentor_review_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fast_mentor_review_1.md](prompts/fast_mentor_review_1.md)
 
 # Plan: Fast Mentor Review Panel (VCS-agnostic, No Workspace Checkout)
 

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 03:09:28
 status: done
-prompt: 202605/prompts/agent_cleanup_tag_navigation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_cleanup_tag_navigation.md](prompts/agent_cleanup_tag_navigation.md)
+
 # Plan: Agent Cleanup Tag Navigation
 
 ## Problem

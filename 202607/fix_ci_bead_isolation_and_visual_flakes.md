@@ -51,6 +51,8 @@ status: done
 bead_id: sase-9y
 ---
 
+- **PROMPT:** [202607/prompts/fix_ci_bead_isolation_and_visual_flakes.md](prompts/fix_ci_bead_isolation_and_visual_flakes.md)
+
 # Plan: Fix red CI - bead-store test isolation and visual snapshot convergence flakes
 
 ## Context

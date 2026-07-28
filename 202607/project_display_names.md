@@ -39,6 +39,8 @@ status: done
 bead_id: sase-89
 ---
 
+- **PROMPT:** [202607/prompts/project_display_names.md](prompts/project_display_names.md)
+
 # Problem and evidence
 
 The project directory key and the user-facing project name are different concepts:

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-23 17:38:36
 status: done
-prompt: 202604/prompts/ace_duplicate_attempt_option_crash.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_duplicate_attempt_option_crash.md](prompts/ace_duplicate_attempt_option_crash.md)
+
 # Plan: Fix `sase ace` `DuplicateID` crash when expanding workflows with attempt history
 
 ## Goal

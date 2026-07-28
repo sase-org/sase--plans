@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-26 00:46:31
 status: done
-prompt: 202604/prompts/split_project_changespec_levels.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/split_project_changespec_levels.md](prompts/split_project_changespec_levels.md)
+
 # Split Project (L1) from ChangeSpec (L2) in agents-tab grouping
 
 ## Background

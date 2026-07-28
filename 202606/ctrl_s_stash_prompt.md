@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-24 07:52:57
 status: done
-prompt: 202606/prompts/ctrl_s_stash_prompt.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ctrl_s_stash_prompt.md](prompts/ctrl_s_stash_prompt.md)
+
 # Plan: Rebind `<Ctrl+S>` in the prompt input widget to stash
 
 ## Goal

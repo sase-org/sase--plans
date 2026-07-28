@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-31 09:31:54
 status: done
-prompt: 202603/prompts/fix_pinned_panel_height.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_pinned_panel_height.md](prompts/fix_pinned_panel_height.md)
 
 # Plan: Fix Pinned Panel Height — Content Not Visible
 

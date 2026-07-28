@@ -8,8 +8,9 @@ goal: 'Every Statistics view explains its displayed metrics, empty and failed lo
   '
 create_time: 2026-07-20 14:22:29
 status: done
-prompt: 202607/prompts/statistics_metric_legends_states.md
 ---
+
+- **PROMPT:** [202607/prompts/statistics_metric_legends_states.md](prompts/statistics_metric_legends_states.md)
 
 # Plan: Statistics metric legends and actionable states
 

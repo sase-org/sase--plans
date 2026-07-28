@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-06 20:31:27
 status: done
-prompt: 202604/prompts/fix_revive_bundle_collision.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_revive_bundle_collision.md](prompts/fix_revive_bundle_collision.md)
 
 # Fix: Dismissed Agent Bundle Filename Collision Breaks Revive
 

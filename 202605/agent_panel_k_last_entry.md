@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-06 17:34:33
 status: done
-prompt: 202605/prompts/agent_panel_k_last_entry.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_panel_k_last_entry.md](prompts/agent_panel_k_last_entry.md)
+
 # Plan: Make K Land On The Last Agent-Panel Entry
 
 ## Context

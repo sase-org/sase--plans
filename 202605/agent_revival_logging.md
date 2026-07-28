@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 14:41:31
 status: done
-prompt: 202605/prompts/agent_revival_logging.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_revival_logging.md](prompts/agent_revival_logging.md)
+
 # Agent Revival Logging and Query Tooling
 
 ## Context

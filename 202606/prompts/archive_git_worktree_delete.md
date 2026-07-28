@@ -1,6 +1,5 @@
----
-plan: 202606/archive_git_worktree_delete.md
----
+- **PLAN:** [../202606/archive_git_worktree_delete.md](../archive_git_worktree_delete.md)
+
  I can't archive this agent from the "PRs" tab for some reason (see the `sase ace` snapshot below). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
 

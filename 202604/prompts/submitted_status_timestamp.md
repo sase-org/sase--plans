@@ -1,6 +1,5 @@
----
-plan: 202604/submitted_status_timestamp.md
----
+- **PLAN:** [../202604/submitted_status_timestamp.md](../submitted_status_timestamp.md)
+
  It doesn't look like we add a new TIMESTAMPS ChangeSpec entry when the STATUS field value is changed to "Submitted" (see the `sase ace` snapshot below). Can you help me fix this? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

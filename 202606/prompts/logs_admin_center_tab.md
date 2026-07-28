@@ -1,6 +1,5 @@
----
-plan: 202606/logs_admin_center_tab.md
----
+- **PLAN:** [../202606/logs_admin_center_tab.md](../logs_admin_center_tab.md)
+
  Can you help me migrate the "Logs" panel, triggered via the `,L` keymap, to the new "SASE Admin Center" by
 adding a new "Logs" tab after the "Config" tab? Make sure to remove the `,L` keymap. Make sure that no functionality is
 left out. This new logs tab should be able to do everything that the old logs panel was able to do.

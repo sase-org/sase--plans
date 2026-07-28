@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 22:43:16
 status: wip
-prompt: 202605/prompts/all_directives_visible.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/all_directives_visible.md](prompts/all_directives_visible.md)
+
 # Make directive completion show every directive
 
 ## Problem

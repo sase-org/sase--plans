@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 08:34:09
 status: done
-prompt: 202606/prompts/all_panel_agent_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/all_panel_agent_completion.md](prompts/all_panel_agent_completion.md)
+
 # Plan: Source `#fork` / `%wait` agent-name completion from ALL visible Agents-tab panels
 
 ## Problem / Product Context

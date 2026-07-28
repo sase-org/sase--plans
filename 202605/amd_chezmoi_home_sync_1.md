@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-29 17:55:47
 status: done
-prompt: 202605/prompts/amd_chezmoi_home_sync_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/amd_chezmoi_home_sync_1.md](prompts/amd_chezmoi_home_sync_1.md)
+
 # Plan: Sync Chezmoi Home AGENTS From `sase amd init`
 
 ## Problem

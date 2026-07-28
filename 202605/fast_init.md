@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 13:44:21
 status: done
-prompt: 202605/prompts/fast_init.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/fast_init.md](prompts/fast_init.md)
+
 # Make `sase init` Faster Without Behavior Changes
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 14:47:39
 status: done
-prompt: 202604/prompts/changespec_current.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/changespec_current.md](prompts/changespec_current.md)
+
 # Plan: `sase changespec current` and `/sase_changespecs` guidance
 
 ## Goal

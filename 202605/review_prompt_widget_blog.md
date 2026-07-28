@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 20:58:47
 status: wip
-prompt: 202605/prompts/review_prompt_widget_blog.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/review_prompt_widget_blog.md](prompts/review_prompt_widget_blog.md)
+
 # Plan: Review Prompt Widget Blog Post Follow-up
 
 ## Context

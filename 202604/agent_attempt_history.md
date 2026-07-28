@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-22 15:53:20
 status: wip
-prompt: 202604/prompts/agent_attempt_history.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/agent_attempt_history.md](prompts/agent_attempt_history.md)
 
 # Plan: Preserve and Display Prior Agent Attempts Across Retries
 

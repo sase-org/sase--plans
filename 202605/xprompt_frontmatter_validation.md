@@ -1,9 +1,10 @@
 ---
 create_time: 2026-05-21 19:06:19
 status: wip
-prompt: 202605/prompts/xprompt_frontmatter_validation.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_frontmatter_validation.md](prompts/xprompt_frontmatter_validation.md)
 
 # XPrompt Frontmatter Validation Plan
 

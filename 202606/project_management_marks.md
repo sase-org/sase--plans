@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-02 06:18:39
 status: done
-prompt: 202606/prompts/project_management_marks.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/project_management_marks.md](prompts/project_management_marks.md)
+
 # Project Management Marks Plan
 
 ## Context

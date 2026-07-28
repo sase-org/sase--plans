@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 20:52:36
 status: done
-prompt: 202605/prompts/agent_selected_unread.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_selected_unread.md](prompts/agent_selected_unread.md)
+
 # Plan: Selected Agent Rows Become Unread Immediately
 
 ## Context

@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-08 13:11:52
 status: wip
-prompt: 202607/prompts/prepare_workspace_sdd_link.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/prepare_workspace_sdd_link.md](prompts/prepare_workspace_sdd_link.md)
+
 # Plan: Fix plan-chain SDD reference crash by linking + refreshing the workspace SDD store during prep
 
 ## Problem

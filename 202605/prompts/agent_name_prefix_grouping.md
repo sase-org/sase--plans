@@ -1,6 +1,5 @@
----
-plan: 202605/agent_name_prefix_grouping.md
----
+- **PLAN:** [../202605/agent_name_prefix_grouping.md](../agent_name_prefix_grouping.md)
+
  Can you help me add a level 2 group/heading (using the a distinct heading---see how other grouping strategies
 handle 3 grouping levels) for agent name prefices? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

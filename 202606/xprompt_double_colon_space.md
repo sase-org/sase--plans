@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 07:38:05
 status: done
-prompt: 202606/prompts/xprompt_double_colon_space.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/xprompt_double_colon_space.md](prompts/xprompt_double_colon_space.md)
+
 # Plan: Append Space After End-of-Line Xprompt Double-Colon Skeletons
 
 ## Problem

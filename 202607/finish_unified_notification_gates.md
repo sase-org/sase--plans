@@ -9,8 +9,9 @@ goal: 'The adapter-owned %auto contract is represented consistently in runtime-f
   '
 create_time: 2026-07-16 19:53:57
 status: done
-prompt: 202607/prompts/finish_unified_notification_gates.md
 ---
+
+- **PROMPT:** [202607/prompts/finish_unified_notification_gates.md](prompts/finish_unified_notification_gates.md)
 
 # Plan: Finish unified notification-gate integration and land sase-6e
 

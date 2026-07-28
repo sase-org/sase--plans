@@ -1,6 +1,5 @@
----
-plan: 202607/distinguish_plan_gate_approve_controls.md
----
+- **PLAN:** [../202607/distinguish_plan_gate_approve_controls.md](../distinguish_plan_gate_approve_controls.md)
+
 The user sent an image via Telegram with the following caption:
 
  Can you help me improve the sase gate by distinguishing the two different approve buttons/options?  Let's start using the text "Launch coder agent" for the top button / option. Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate

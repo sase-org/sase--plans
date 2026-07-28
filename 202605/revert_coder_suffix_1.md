@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 15:25:06
 status: done
-prompt: 202605/prompts/revert_coder_suffix_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/revert_coder_suffix_1.md](prompts/revert_coder_suffix_1.md)
+
 # Revert Plan-Chain Coder Suffix To .code
 
 ## Goal

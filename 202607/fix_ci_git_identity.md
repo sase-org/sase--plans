@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 09:34:35
 status: done
-prompt: 202607/prompts/fix_ci_git_identity.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/fix_ci_git_identity.md](prompts/fix_ci_git_identity.md)
+
 # Fix CI Git Identity Failures
 
 ## Context

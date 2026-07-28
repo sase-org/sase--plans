@@ -9,8 +9,9 @@ goal: 'The repo-root README.md becomes a concise, visually striking landing page
   '
 create_time: 2026-07-17 08:39:29
 status: done
-prompt: 202607/prompts/readme_redesign.md
 ---
+
+- **PROMPT:** [202607/prompts/readme_redesign.md](prompts/readme_redesign.md)
 
 # Plan: README redesign with new GPT-image hero and demo GIFs
 

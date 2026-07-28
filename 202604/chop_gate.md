@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-08 20:06:20
 status: done
-prompt: 202604/prompts/chop_gate.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/chop_gate.md](prompts/chop_gate.md)
 
 # Plan: Add `gate` field to chop config to prevent unnecessary agent spawns
 

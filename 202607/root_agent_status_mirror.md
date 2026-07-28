@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-06 14:08:31
 status: done
-prompt: 202607/prompts/root_agent_status_mirror.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/root_agent_status_mirror.md](prompts/root_agent_status_mirror.md)
+
 # Root agent entry status must mirror active/waiting child agent rows
 
 ## Problem

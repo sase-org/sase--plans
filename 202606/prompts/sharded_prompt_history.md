@@ -1,6 +1,5 @@
----
-plan: 202606/sharded_prompt_history.md
----
+- **PLAN:** [../202606/sharded_prompt_history.md](../sharded_prompt_history.md)
+
  Every time we load the prompt history from the prompt history widget and every time that we launch an agent, we have to deal with this very large prompt history file. I think we did some related research (regarding some performance issue maybe) recently that is stored in a research markdown file in this repo that you should check out.
 
 One constraint is that I don't want to lose any user prompt, regardless of how old it is, ever. With that said we don't need to load older prompts when the user invokes the prompt history (make sure the user is aware of how many prompts are loaded and has a keymap available to them to load more). Also we should shard the prompt history JSON files by date so when we launch agents and those agent prompts get written to the prompt history, it doesn't cause us to have to write to such a large file.

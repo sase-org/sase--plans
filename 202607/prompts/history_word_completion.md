@@ -1,6 +1,5 @@
----
-plan: 202607/history_word_completion.md
----
+- **PLAN:** [../202607/history_word_completion.md](../history_word_completion.md)
+
  We recently added support to the prompt input widget keymap for
 completing words that already exist in the prompt input widget when there are no
 other available completions. Can you help me start triggering a different

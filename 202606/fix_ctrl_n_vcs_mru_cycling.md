@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-22 08:11:57
 status: done
-prompt: 202606/prompts/fix_ctrl_n_vcs_mru_cycling.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_ctrl_n_vcs_mru_cycling.md](prompts/fix_ctrl_n_vcs_mru_cycling.md)
+
 # Fix Ctrl+N VCS MRU Cycling
 
 ## Context

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-28 18:22:12
 status: done
-prompt: 202603/prompts/remove_agents_m_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/remove_agents_m_keymap.md](prompts/remove_agents_m_keymap.md)
 
 # Plan: Remove `m` (message) keymap from Agents tab
 

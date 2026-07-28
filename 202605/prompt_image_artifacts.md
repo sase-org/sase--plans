@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-09 04:05:45
 status: done
-prompt: 202605/prompts/prompt_image_artifacts.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/prompt_image_artifacts.md](prompts/prompt_image_artifacts.md)
+
 # Plan: Prompt Image References as Agent Artifacts
 
 ## Goal

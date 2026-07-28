@@ -1,6 +1,5 @@
----
-plan: 202604/dynamic_memory_section.md
----
+- **PLAN:** [../202604/dynamic_memory_section.md](../dynamic_memory_section.md)
+
 Can you help me replace the "DYNAMIC MEMORY" line with a "### DYNAMIC MEMORY" section that contains a list of
 .sase/memory/ markdown file paths, each associated with a single memory xprompt? Make sure these files are named such
 that the agent can identify that they are long-term memory files (when that's the case) and update the AGENTS.md file to

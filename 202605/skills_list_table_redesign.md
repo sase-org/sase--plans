@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-23 14:10:03
 status: done
-prompt: 202605/prompts/skills_list_table_redesign.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/skills_list_table_redesign.md](prompts/skills_list_table_redesign.md)
+
 # Plan: Render `sase skills list` as a beautiful table with rich provider chips
 
 ## Problem

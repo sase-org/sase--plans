@@ -1,6 +1,5 @@
----
-plan: 202606/unify_auto_directive.md
----
+- **PLAN:** [../202606/unify_auto_directive.md](../unify_auto_directive.md)
+
  Can you help me migrate the `%plan`, `%tale`, and `%epic` directives to a single `%auto` directive?
 
 - The new `%auto` directive should take an enum / string value with the following valid options: "plan", "tale", and "epic" (it should default to "plan" if no argument is provided).

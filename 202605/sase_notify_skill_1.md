@@ -2,9 +2,11 @@
 create_time: 2026-05-01 17:48:58
 status: done
 bead_id: sase-1v
-prompt: 202605/prompts/sase_notify_skill_1.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/sase_notify_skill_1.md](prompts/sase_notify_skill_1.md)
+
 # Plan: `/sase_notify` Skill for Agent Notification Access
 
 ## Problem

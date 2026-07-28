@@ -1,6 +1,5 @@
----
-plan: 202603/mentor_redesign.md
----
+- **PLAN:** [../202603/mentor_redesign.md](../mentor_redesign.md)
+
 Can you help me plan a major re-design of sase mentors?
 
 This is a large piece of work that should be split into phases. I'll let you decide how many phases to create, but keep

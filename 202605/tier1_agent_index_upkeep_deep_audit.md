@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 18:08:47
 status: done
-prompt: 202605/prompts/tier1_agent_index_upkeep_deep_audit.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/tier1_agent_index_upkeep_deep_audit.md](prompts/tier1_agent_index_upkeep_deep_audit.md)
+
 # Tier 1 Agent Index Upkeep Deep Audit Plan
 
 ## Goal

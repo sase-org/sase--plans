@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-25 11:04:34
 status: done
-prompt: 202606/prompts/prompt_history_ctrl_k_load_more.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_history_ctrl_k_load_more.md](prompts/prompt_history_ctrl_k_load_more.md)
+
 # Plan: Rebind Prompt-History Load More from Ctrl+D to Ctrl+K
 
 ## Goal

@@ -1,10 +1,11 @@
 ---
 status: done
 bead_id: sase-owpf
-prompt: 202603/prompts/sase_plan.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/sase_plan.md](prompts/sase_plan.md)
 
 # Plan: `/sase_plan` and `/sase_questions` Skills
 

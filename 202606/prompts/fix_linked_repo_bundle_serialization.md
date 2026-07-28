@@ -1,6 +1,5 @@
----
-plan: 202606/fix_linked_repo_bundle_serialization.md
----
+- **PLAN:** [../202606/fix_linked_repo_bundle_serialization.md](../fix_linked_repo_bundle_serialization.md)
+
  I keep getting errors like the following when I try to kill agents in sase:
 ```
 Error: Kill cleanup failed for sase: Object of type LinkedRepoMetadata is not JSON serializable

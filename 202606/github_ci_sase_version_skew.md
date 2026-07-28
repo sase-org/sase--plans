@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-09 15:53:32
 status: done
-prompt: 202606/prompts/github_ci_sase_version_skew.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/github_ci_sase_version_skew.md](prompts/github_ci_sase_version_skew.md)
+
 # Plan: Fix sase-github CI SASE Version Skew
 
 ## Problem Summary

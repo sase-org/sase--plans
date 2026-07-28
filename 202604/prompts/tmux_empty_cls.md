@@ -1,6 +1,5 @@
----
-plan: 202604/tmux_empty_cls.md
----
+- **PLAN:** [../202604/tmux_empty_cls.md](../tmux_empty_cls.md)
+
 Can you help me start supporting the `t` (tmux) keymap on the "CLs" tab of the `sase ace` TUI even when no ChangeSpec
 match the current query?
 

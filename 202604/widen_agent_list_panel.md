@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 20:19:19
 status: done
-prompt: 202604/prompts/widen_agent_list_panel.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/widen_agent_list_panel.md](prompts/widen_agent_list_panel.md)
+
 # Plan: Widen the `sase ace` Agents-tab Agent List Panel
 
 ## Problem

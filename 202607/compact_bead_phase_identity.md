@@ -5,8 +5,9 @@ goal: Show a phase bead's ID beside the phase label in the BEAD lane header and 
   the redundant ID field row without weakening responsive rendering or coverage.
 create_time: 2026-07-17 17:43:30
 status: done
-prompt: 202607/prompts/compact_bead_phase_identity.md
 ---
+
+- **PROMPT:** [202607/prompts/compact_bead_phase_identity.md](prompts/compact_bead_phase_identity.md)
 
 # Plan: Compact phase bead identity in the ACE context lane
 

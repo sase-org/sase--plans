@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-17 17:07:00
 status: done
-prompt: 202604/prompts/fix_planning_status_after_feedback.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/fix_planning_status_after_feedback.md](prompts/fix_planning_status_after_feedback.md)
 
 # Fix: Agent shows PLANNING instead of RUNNING after user gives feedback
 

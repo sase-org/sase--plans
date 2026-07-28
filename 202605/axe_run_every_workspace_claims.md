@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-02 22:13:49
 status: done
-prompt: 202605/prompts/axe_run_every_workspace_claims.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/axe_run_every_workspace_claims.md](prompts/axe_run_every_workspace_claims.md)
+
 # Plan: Stop recurring `run_every` axe workspace-claim errors
 
 ## Problem

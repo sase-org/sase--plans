@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 11:47:17
 status: done
-prompt: 202605/prompts/pillow_only_image_rendering.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/pillow_only_image_rendering.md](prompts/pillow_only_image_rendering.md)
+
 # Remove Native Terminal Image Rendering
 
 ## Goal

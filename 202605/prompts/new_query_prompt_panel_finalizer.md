@@ -1,6 +1,5 @@
----
-plan: 202605/new_query_prompt_panel_finalizer.md
----
+- **PLAN:** [../202605/new_query_prompt_panel_finalizer.md](../new_query_prompt_panel_finalizer.md)
+
  Whey does the "New Query" (see src/sase/xprompts/fork.yml xprompt workflow for context) not show at the bottom
 of the agent prompt for this agent (see the `sase ace` snapshot below)? Can you help me diagnose the root cause of this
 issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

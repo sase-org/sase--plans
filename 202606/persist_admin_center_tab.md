@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-28 15:26:32
 status: done
-prompt: 202606/prompts/persist_admin_center_tab.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/persist_admin_center_tab.md](prompts/persist_admin_center_tab.md)
+
 # Persist Admin Center Tab Selection
 
 ## Goal

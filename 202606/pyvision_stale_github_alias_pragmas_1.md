@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 10:02:52
 status: done
-prompt: 202606/prompts/pyvision_stale_github_alias_pragmas_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/pyvision_stale_github_alias_pragmas_1.md](prompts/pyvision_stale_github_alias_pragmas_1.md)
+
 # Plan: Fix cross-repo CI failures from the project display-name migration
 
 ## Problem

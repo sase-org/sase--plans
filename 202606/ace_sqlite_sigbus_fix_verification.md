@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-13 09:45:53
 status: done
-prompt: 202606/prompts/ace_sqlite_sigbus_fix_verification.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/ace_sqlite_sigbus_fix_verification.md](prompts/ace_sqlite_sigbus_fix_verification.md)
+
 # Plan: Verify and Complete the `sase ace` SQLite SIGBUS Fix
 
 ## Purpose

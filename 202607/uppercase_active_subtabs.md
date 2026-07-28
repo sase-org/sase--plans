@@ -7,8 +7,9 @@ goal: 'Projects and Artifacts sub-tab strips render the selected label in all ca
   '
 create_time: 2026-07-16 06:33:26
 status: done
-prompt: 202607/prompts/uppercase_active_subtabs.md
 ---
+
+- **PROMPT:** [202607/prompts/uppercase_active_subtabs.md](prompts/uppercase_active_subtabs.md)
 
 # Plan: Uppercase active Projects and Artifacts sub-tabs
 

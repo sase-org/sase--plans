@@ -1,10 +1,12 @@
 ---
 create_time: 2026-07-13 16:54:57
 status: done
-prompt: 202607/prompts/external_repos.md
 bead_id: sase-5y
 tier: epic
 ---
+
+- **PROMPT:** [202607/prompts/external_repos.md](prompts/external_repos.md)
+
 # Plan: External Repos — `sase repo open` for Any Repo, Plus `/sase_repo` + `/sase_project` Skills
 
 ## Product context

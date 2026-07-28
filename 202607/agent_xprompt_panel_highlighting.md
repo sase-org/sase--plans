@@ -9,8 +9,9 @@ goal: 'The AGENT XPROMPT section of the agent metadata panel on the Agents tab r
   '
 create_time: 2026-07-16 16:38:37
 status: done
-prompt: 202607/prompts/agent_xprompt_panel_highlighting.md
 ---
+
+- **PROMPT:** [202607/prompts/agent_xprompt_panel_highlighting.md](prompts/agent_xprompt_panel_highlighting.md)
 
 # Plan: XPrompt syntax highlighting in the agent metadata panel
 

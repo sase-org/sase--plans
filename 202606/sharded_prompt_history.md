@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-23 18:09:15
 status: done
-prompt: 202606/prompts/sharded_prompt_history.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sharded_prompt_history.md](prompts/sharded_prompt_history.md)
+
 # Sharded, Lazy-Loaded Prompt History
 
 ## Problem

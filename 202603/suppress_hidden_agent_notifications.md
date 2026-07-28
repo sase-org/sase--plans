@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-30 12:05:00
 status: done
-prompt: 202603/prompts/suppress_hidden_agent_notifications.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/suppress_hidden_agent_notifications.md](prompts/suppress_hidden_agent_notifications.md)
 
 # Plan: Suppress Notifications from Hidden Agents
 

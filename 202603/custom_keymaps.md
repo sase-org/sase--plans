@@ -1,10 +1,11 @@
 ---
 status: done
 bead_id: sase-gjad
-prompt: 202603/prompts/custom_keymaps.md
 tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **PROMPT:** [202603/prompts/custom_keymaps.md](prompts/custom_keymaps.md)
 
 # Plan: Configurable Keymaps for sase ace TUI
 

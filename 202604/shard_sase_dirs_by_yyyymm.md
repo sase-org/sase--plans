@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-23 16:01:42
 status: done
-prompt: 202604/prompts/shard_sase_dirs_by_yyyymm.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/shard_sase_dirs_by_yyyymm.md](prompts/shard_sase_dirs_by_yyyymm.md)
 
 # Shard high-volume `~/.sase/` directories into `YYYYMM/` subdirectories
 

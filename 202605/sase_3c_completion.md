@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 00:29:15
 status: done
-prompt: 202605/prompts/sase_3c_completion.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/sase_3c_completion.md](prompts/sase_3c_completion.md)
+
 Plan: Complete sase-3c verification and closure
 
 Context: The sase-3c epic removed cross-workspace bead reads. Verification found one remaining slow-path resolver gap:

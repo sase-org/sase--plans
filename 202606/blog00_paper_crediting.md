@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-14 15:27:11
 status: done
-prompt: 202606/prompts/blog00_paper_crediting.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/blog00_paper_crediting.md](prompts/blog00_paper_crediting.md)
+
 # Plan: Strengthen the SASE-paper crediting in blog post `[00]`
 
 ## Context

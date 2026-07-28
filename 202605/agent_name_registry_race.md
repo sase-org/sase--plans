@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-08 22:02:25
 status: done
-prompt: 202605/prompts/agent_name_registry_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/agent_name_registry_race.md](prompts/agent_name_registry_race.md)
+
 # Plan: Fix concurrent agent-name registry writes
 
 ## Problem

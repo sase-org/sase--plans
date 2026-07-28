@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-21 17:04:48
 status: done
-prompt: 202605/prompts/artifact_tmux_zoom.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/artifact_tmux_zoom.md](prompts/artifact_tmux_zoom.md)
+
 # Plan: Artifact tmux pane zoom key
 
 ## Goal

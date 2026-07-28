@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-18 10:42:24
 status: done
-prompt: 202606/prompts/sase_core_release_version_suppression.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_core_release_version_suppression.md](prompts/sase_core_release_version_suppression.md)
+
 # Plan: Fix sase-core release `0.1.3`-instead-of-`0.2.0` versioning defect
 
 ## TL;DR

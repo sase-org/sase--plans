@@ -1,6 +1,5 @@
----
-plan: 202606/bob_dataview_reads.md
----
+- **PLAN:** [../202606/bob_dataview_reads.md](../bob_dataview_reads.md)
+
  I want to be able to give the `#!sase/reads` (see the xprompts/reads.md file for context) xprompt markdown file
 an Obsidian dataview query instead of a list of note files. The agent should then be able to use its (not yet created)
 `/bob_dataview` skill to run the `bob dataview` command. This query would be a TABLE query that produces just the titles

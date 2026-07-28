@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-27 13:19:23
 status: done
-prompt: 202606/prompts/yaml_literal_chomping.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/yaml_literal_chomping.md](prompts/yaml_literal_chomping.md)
+
 # Plan: Use `|-` For Config-Saved Snippets And XPrompts
 
 ## Problem

@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 13:19:41
 status: done
-prompt: 202604/prompts/task_kill_keymap.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/task_kill_keymap.md](prompts/task_kill_keymap.md)
 
 # Plan: Add `k` keymap to kill tasks in the Task Queue Modal
 

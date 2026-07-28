@@ -71,6 +71,8 @@ status: done
 bead_id: sase-8y
 ---
 
+- **PROMPT:** [202607/prompts/claimed_bead_status.md](prompts/claimed_bead_status.md)
+
 # Plan: Claimed bead status for pre-launch agent reservations
 
 ## Goal

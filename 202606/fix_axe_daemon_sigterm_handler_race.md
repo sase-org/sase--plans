@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 12:46:09
 status: done
-prompt: 202606/prompts/fix_axe_daemon_sigterm_handler_race.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/fix_axe_daemon_sigterm_handler_race.md](prompts/fix_axe_daemon_sigterm_handler_race.md)
+
 # Fix CI red: `test_stop_axe_daemon_targets_inherited_lock_daemon` SIGTERM-handler race
 
 ## TL;DR

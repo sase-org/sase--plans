@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-13 10:30:47
 status: done
-prompt: 202605/prompts/bead_fast_path_config_gate.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/bead_fast_path_config_gate.md](prompts/bead_fast_path_config_gate.md)
+
 # Plan: Align bead fast-path store resolution with SDD VC mode
 
 ## Context

@@ -3,9 +3,10 @@ title: Complete sase-49 lifecycle launch enforcement gap
 bead_id: sase-49
 create_time: 2026-06-01 14:47:49
 status: done
-prompt: 202606/prompts/sase_49_completion_gap.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_49_completion_gap.md](prompts/sase_49_completion_gap.md)
 
 # Complete sase-49 lifecycle launch enforcement gap
 

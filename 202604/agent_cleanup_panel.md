@@ -2,9 +2,11 @@
 create_time: 2026-04-30 01:16:59
 status: done
 bead_id: sase-1h
-prompt: 202604/prompts/agent_cleanup_panel.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/agent_cleanup_panel.md](prompts/agent_cleanup_panel.md)
+
 # Agent Cleanup Panel and Rust Backend Migration Plan
 
 ## Goal

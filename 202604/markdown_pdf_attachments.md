@@ -2,9 +2,10 @@
 create_time: 2026-04-30 04:23:24
 bead_id: sase-1j
 status: done
-prompt: 202604/prompts/markdown_pdf_attachments.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/markdown_pdf_attachments.md](prompts/markdown_pdf_attachments.md)
 
 # Plan: Markdown PDF Attachments for Agent Outputs
 

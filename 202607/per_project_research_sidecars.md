@@ -22,9 +22,10 @@ phases:
   - per-project-research
 create_time: 2026-07-15 08:28:04
 status: done
-prompt: 202607/prompts/per_project_research_sidecars.md
 bead_id: sase-62
 ---
+
+- **PROMPT:** [202607/prompts/per_project_research_sidecars.md](prompts/per_project_research_sidecars.md)
 
 # Plan: Per-project research sidecar repos
 

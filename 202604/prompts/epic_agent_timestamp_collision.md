@@ -1,6 +1,5 @@
----
-plan: 202604/epic_agent_timestamp_collision.md
----
+- **PLAN:** [../202604/epic_agent_timestamp_collision.md](../epic_agent_timestamp_collision.md)
+
  It looks like our epic bead integration only started 3 of the 7 phase agents that it should have for epic sase-w (run `sase bead show sase-w`). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 

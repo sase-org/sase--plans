@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-20 16:18:28
 status: done
-prompt: 202606/prompts/sase_context_workspaces_lane.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/sase_context_workspaces_lane.md](prompts/sase_context_workspaces_lane.md)
+
 # Show Opened Sibling Workspaces in the "SASE CONTEXT" Panel
 
 ## Goal

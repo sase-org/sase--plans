@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-27 16:49:42
 status: wip
-prompt: 202604/prompts/lumberjack_timeout_flake.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/lumberjack_timeout_flake.md](prompts/lumberjack_timeout_flake.md)
+
 # Plan: Diagnose and Fix Lumberjack Per-Chop Timeout Test Failure
 
 ## Problem

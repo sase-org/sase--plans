@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-27 16:44:03
 status: done
-prompt: 202605/prompts/reads_xprompt_12.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/reads_xprompt_12.md](prompts/reads_xprompt_12.md)
+
 # Plan: `reads` Multi-Agent XPrompt
 
 ## Goal

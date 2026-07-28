@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-10 12:59:31
 status: done
-prompt: 202607/prompts/vcs_log_phantom_projects.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/vcs_log_phantom_projects.md](prompts/vcs_log_phantom_projects.md)
+
 # Plan: Stop `sase vcs log` from reporting phantom projects and SDD repos
 
 ## Problem

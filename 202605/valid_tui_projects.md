@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-07 15:52:37
 status: done
-prompt: 202605/prompts/valid_tui_projects.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/valid_tui_projects.md](prompts/valid_tui_projects.md)
+
 # Plan: Show Only Valid Projects in TUI Project Pickers
 
 ## Problem

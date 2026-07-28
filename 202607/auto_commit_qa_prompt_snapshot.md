@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-13 07:44:14
 status: done
-prompt: 202607/prompts/auto_commit_qa_prompt_snapshot.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/auto_commit_qa_prompt_snapshot.md](prompts/auto_commit_qa_prompt_snapshot.md)
+
 # Auto-commit SDD Q&A prompt-snapshot writes to the external plans repo
 
 ## Problem

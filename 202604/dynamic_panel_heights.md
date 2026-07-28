@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 23:54:24
 status: wip
-prompt: 202604/prompts/dynamic_panel_heights.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/dynamic_panel_heights.md](prompts/dynamic_panel_heights.md)
+
 # Plan: Dynamic Heights for Agents-Tab Tag Panels
 
 ## Problem

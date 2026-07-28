@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-29 11:44:59
 status: done
-prompt: 202604/prompts/ace_default_by_project.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/ace_default_by_project.md](prompts/ace_default_by_project.md)
+
 # Plan: Default ACE Grouping to By Project on Startup
 
 ## Goal

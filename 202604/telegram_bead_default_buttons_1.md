@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-28 21:34:03
 status: done
-prompt: 202604/prompts/telegram_bead_default_buttons_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/telegram_bead_default_buttons_1.md](prompts/telegram_bead_default_buttons_1.md)
+
 # Plan: Default `/bead` (no args) → Inline-Keyboard Picker of Open Beads
 
 ## Goal

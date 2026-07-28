@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-24 05:54:47
 status: wip
-prompt: 202603/prompts/sase_9_gaps.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/sase_9_gaps.md](prompts/sase_9_gaps.md)
 
 # Plan: sase-9 Implementation Gaps
 

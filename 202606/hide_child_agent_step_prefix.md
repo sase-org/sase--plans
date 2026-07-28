@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-29 09:43:41
 status: done
-prompt: 202606/prompts/hide_child_agent_step_prefix.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/hide_child_agent_step_prefix.md](prompts/hide_child_agent_step_prefix.md)
+
 # Plan: Hide the step-number prefix on child agent rows
 
 ## Problem / product context

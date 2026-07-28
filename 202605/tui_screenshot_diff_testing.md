@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-09 21:10:25
 status: done
-prompt: 202605/prompts/tui_screenshot_diff_testing.md
 bead_id: sase-2m
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/tui_screenshot_diff_testing.md](prompts/tui_screenshot_diff_testing.md)
+
 # TUI Screenshot Diff Testing Plan
 
 ## Goal

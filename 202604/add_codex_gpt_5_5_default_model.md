@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-24 16:11:59
 status: done
-prompt: 202604/prompts/add_codex_gpt_5_5_default_model.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/add_codex_gpt_5_5_default_model.md](prompts/add_codex_gpt_5_5_default_model.md)
+
 # Plan: Add Codex `gpt-5.5` Support and Make It the Default
 
 ## Problem Statement

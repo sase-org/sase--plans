@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-29 19:20:45
 status: done
-prompt: 202603/prompts/fix_pr_diff_expansion.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/fix_pr_diff_expansion.md](prompts/fix_pr_diff_expansion.md)
 
 # Fix `#pr_diff` xprompt not expanding in agent prompts
 

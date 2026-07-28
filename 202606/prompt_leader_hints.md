@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-17 11:48:16
 status: done
-prompt: 202606/prompts/prompt_leader_hints.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/prompt_leader_hints.md](prompts/prompt_leader_hints.md)
+
 # Plan: Leader-key hints for the prompt input widget
 
 ## Summary

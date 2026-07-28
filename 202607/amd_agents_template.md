@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-12 15:41:34
 status: done
-prompt: 202607/prompts/amd_agents_template.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/amd_agents_template.md](prompts/amd_agents_template.md)
+
 # Plan: Extract the `sase memory init` AGENTS.md Skeleton into a Human-Editable Markdown Template
 
 ## Problem / Product Context

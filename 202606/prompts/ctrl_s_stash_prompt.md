@@ -1,6 +1,5 @@
----
-plan: 202606/ctrl_s_stash_prompt.md
----
+- **PLAN:** [../202606/ctrl_s_stash_prompt.md](../ctrl_s_stash_prompt.md)
+
  Can you help me remove the functionality of the current `<ctrl+s>` keymap in the prompt input widget? Instead, I want the current `gs` / `<ctrl+g>` keymaps to start using this trigger (`<ctrl+s>`) instead. This will make it easier to stash prompts, which I'm doing more and more frequently lately. Think this through thoroughly and create a plan using your `/sase_plan` skill. Submit your plan with the
 `sase plan propose` command (as the skill instructs) before making any file changes.
  

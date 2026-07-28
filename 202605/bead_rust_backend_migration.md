@@ -2,9 +2,11 @@
 create_time: 2026-05-01 16:17:09
 bead_id: sase-1u
 status: done
-prompt: 202605/prompts/bead_rust_backend_migration.md
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/bead_rust_backend_migration.md](prompts/bead_rust_backend_migration.md)
+
 # Plan: Make `sase bead` Fast With `sase-core`
 
 ## Goal

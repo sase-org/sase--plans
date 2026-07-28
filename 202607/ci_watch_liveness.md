@@ -35,6 +35,8 @@ status: wip
 bead_id: sase-a4
 ---
 
+- **PROMPT:** [202607/prompts/ci_watch_liveness.md](prompts/ci_watch_liveness.md)
+
 # Plan: make ci_watch observable on high-cadence repositories
 
 ## Context

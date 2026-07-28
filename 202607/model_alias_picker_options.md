@@ -8,8 +8,9 @@ goal: 'Models-panel Edit and Override flows offer safe, searchable @alias target
   '
 create_time: 2026-07-18 07:43:07
 status: done
-prompt: 202607/prompts/model_alias_picker_options.md
 ---
+
+- **PROMPT:** [202607/prompts/model_alias_picker_options.md](prompts/model_alias_picker_options.md)
 
 # Plan: Model-alias targets in the Models-panel picker
 

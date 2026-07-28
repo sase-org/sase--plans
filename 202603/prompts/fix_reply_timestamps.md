@@ -1,6 +1,5 @@
----
-plan: 202603/fix_reply_timestamps.md
----
+- **PLAN:** [../202603/fix_reply_timestamps.md](../fix_reply_timestamps.md)
+
 Can you help me make sure that our AGENT REPLY timestamps (per chunk of agent reply text) is working for all models and
 fix it if not? I'm skeptical that all of these chunks arived at the same exact time (see the `sase ace` snapshot below).
 Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.

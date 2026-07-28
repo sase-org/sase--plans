@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-11 13:03:47
 status: wip
-prompt: 202605/prompts/codex_commit_stop_hook_fallback.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/codex_commit_stop_hook_fallback.md](prompts/codex_commit_stop_hook_fallback.md)
+
 # Codex Commit Stop Hook Fallback Plan
 
 ## Root Cause

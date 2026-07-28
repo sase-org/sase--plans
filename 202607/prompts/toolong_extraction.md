@@ -1,6 +1,5 @@
----
-plan: 202607/toolong_extraction.md
----
+- **PLAN:** [../202607/toolong_extraction.md](../toolong_extraction.md)
+
  Can you help me factor the pylimit script out of my chezmoi repo (leave the old copy behind) into a new, dedicated bbugyi200/toolong Python repo (you will need to create this repo with the gh command before proposing your plan file)?
 
 - Make sure the script has perfect parity with the existing pylimit script, but this script should be language-agnostic (I should be able to run it on a rust project for example).

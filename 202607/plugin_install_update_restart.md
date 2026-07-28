@@ -1,9 +1,11 @@
 ---
 create_time: 2026-07-03 16:52:05
 status: done
-prompt: 202607/prompts/plugin_install_update_restart.md
 tier: tale
 ---
+
+- **PROMPT:** [202607/prompts/plugin_install_update_restart.md](prompts/plugin_install_update_restart.md)
+
 # Plan: Restart TUI + AXE when installing/updating individual plugins
 
 ## Problem

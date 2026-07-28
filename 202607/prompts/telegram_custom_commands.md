@@ -1,6 +1,5 @@
----
-plan: 202607/telegram_custom_commands.md
----
+- **PLAN:** [../202607/telegram_custom_commands.md](../telegram_custom_commands.md)
+
   Can you help me add support for custom, user-defined telegram slash commands that can be defined in sase's config?
 
 - As a first use case define a  /tasks command that sends a PDF (with a nice telegram message that describes the contents of the PDF) of the tasks query results from the tasks queries in the ~/bob/dash.md file. See the /bob_query skill for inspiration on how this might work. 

@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-07 03:37:14
 status: done
-prompt: 202605/prompts/xprompt_lsp_server.md
 bead_id: sase-2a
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/xprompt_lsp_server.md](prompts/xprompt_lsp_server.md)
+
 # Plan: XPrompt LSP Server And Thin `sase-nvim`
 
 ## Context

@@ -1,6 +1,5 @@
----
-plan: 202605/init_check_memory_false_positives.md
----
+- **PLAN:** [../202605/init_check_memory_false_positives.md](../init_check_memory_false_positives.md)
+
  It looks like the `sase init --check` command omits false positives for sase's memory files (see output below). Can you help me diagnose the root cause of this issue and fix it? Also, can you add a `-c` short option for the `--check` option? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
  
 ```

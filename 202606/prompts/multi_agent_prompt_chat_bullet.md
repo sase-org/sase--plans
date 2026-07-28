@@ -1,6 +1,5 @@
----
-plan: 202606/multi_agent_prompt_chat_bullet.md
----
+- **PLAN:** [../202606/multi_agent_prompt_chat_bullet.md](../multi_agent_prompt_chat_bullet.md)
+
  We currently include bullets that look like the following at the top of sase agent chat markdown files:
 
 ```

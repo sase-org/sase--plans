@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-01 01:10:11
 status: done
-prompt: 202605/prompts/refresh_docs_config_workflow.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/refresh_docs_config_workflow.md](prompts/refresh_docs_config_workflow.md)
+
 # Plan: Factor `refresh_docs` Into Athena Config
 
 ## Goal

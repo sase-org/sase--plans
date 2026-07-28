@@ -6,8 +6,9 @@ goal: Add reusable mismatch-key coverage and a documented presentation-boundary 
   labels.
 create_time: 2026-07-20 14:11:18
 status: done
-prompt: 202607/prompts/project_display_regression_audit.md
 ---
+
+- **PROMPT:** [202607/prompts/project_display_regression_audit.md](prompts/project_display_regression_audit.md)
 
 # Plan: Lock project display names across human-facing surfaces
 

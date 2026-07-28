@@ -1,9 +1,11 @@
 ---
 create_time: 2026-05-24 13:14:49
 status: done
-prompt: 202605/prompts/memory_read_skill.md
 tier: tale
 ---
+
+- **PROMPT:** [202605/prompts/memory_read_skill.md](prompts/memory_read_skill.md)
+
 # Plan: SASE Memory Read Skill
 
 ## Goal

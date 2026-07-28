@@ -2,9 +2,11 @@
 create_time: 2026-04-29 14:19:17
 bead_id: sase-1a
 status: done
-prompt: 202604/prompts/rust_backend_phase5_git_query_ops.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase5_git_query_ops.md](prompts/rust_backend_phase5_git_query_ops.md)
+
 # Rust Backend Phase 5: Git Query Ops
 
 ## Context

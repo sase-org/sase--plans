@@ -1,6 +1,5 @@
----
-plan: 202605/cross_panel_agent_jump.md
----
+- **PLAN:** [../202605/cross_panel_agent_jump.md](../cross_panel_agent_jump.md)
+
  The appostrophe ("'") keymap doesn't jump to the selected hint when it is not in the same agent panel. In the below `sase ace` snapshot, for example, when I press "3", nothing happens (I should
 jump to the agent entry next to he "[3]" hint). Can you help me diagnose the root cause of this issue and fix it? Think this through thoroughly and create a plan using your `/sase_plan` skill before making any file changes.
 

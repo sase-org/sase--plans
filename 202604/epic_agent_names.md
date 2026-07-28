@@ -1,9 +1,11 @@
 ---
 create_time: 2026-04-25 19:06:59
 status: done
-prompt: 202604/prompts/epic_agent_names.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/epic_agent_names.md](prompts/epic_agent_names.md)
+
 # Rename epic-launched agents to `<epic_id>.<N>` / `<epic_id>.land`
 
 ## Problem

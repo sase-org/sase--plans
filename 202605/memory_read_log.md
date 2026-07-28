@@ -1,10 +1,12 @@
 ---
 create_time: 2026-05-23 15:13:10
 status: done
-prompt: 202605/prompts/memory_read_log.md
 bead_id: sase-41
 tier: epic
 ---
+
+- **PROMPT:** [202605/prompts/memory_read_log.md](prompts/memory_read_log.md)
+
 # Plan: `sase memory read` and `sase memory log`
 
 ## Background

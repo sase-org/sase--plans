@@ -1,6 +1,5 @@
----
-plan: 202603/gemini_commit_skill.md
----
+- **PLAN:** [../202603/gemini_commit_skill.md](../gemini_commit_skill.md)
+
 It looks like we finally got the `sase_commit_stop_hook` to trigger, but the Gemini agent (see the `sase ace` snapshot
 below) failed when tried to use the `sase commit` command (I think). This issue is occurring on another machine that
 uses the ../retired Mercurial plugin plugin. I've saved a `sase logs` logpack to the ~/tmp/260325_145753/ directory to help you

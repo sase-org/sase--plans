@@ -2,9 +2,11 @@
 create_time: 2026-04-28 23:51:28
 status: done
 bead_id: sase-14
-prompt: 202604/prompts/rust_backend_phase0.md
 tier: epic
 ---
+
+- **PROMPT:** [202604/prompts/rust_backend_phase0.md](prompts/rust_backend_phase0.md)
+
 # Rust Backend Migration Phase 0 Plan
 
 ## Context

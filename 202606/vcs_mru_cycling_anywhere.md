@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-12 12:45:29
 status: done
-prompt: 202606/prompts/vcs_mru_cycling_anywhere.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/vcs_mru_cycling_anywhere.md](prompts/vcs_mru_cycling_anywhere.md)
+
 # Plan: Make `<ctrl+p>`/`<ctrl+n>` VCS MRU cycling work in (almost) any prompt
 
 ## Problem

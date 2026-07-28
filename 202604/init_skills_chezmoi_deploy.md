@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-17 23:21:56
 status: done
-prompt: 202604/prompts/init_skills_chezmoi_deploy.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/init_skills_chezmoi_deploy.md](prompts/init_skills_chezmoi_deploy.md)
 
 # Plan: Auto-deploy chezmoi skill changes from `sase init-skills`
 

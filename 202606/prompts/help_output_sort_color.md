@@ -1,6 +1,5 @@
----
-plan: 202606/help_output_sort_color.md
----
+- **PLAN:** [../202606/help_output_sort_color.md](../help_output_sort_color.md)
+
  Can you help me improve the `sase -h|--help` output?
 
 - The subcommands should be sorted.

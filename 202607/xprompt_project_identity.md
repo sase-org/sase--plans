@@ -62,6 +62,8 @@ status: wip
 bead_id: sase-ac
 ---
 
+- **PROMPT:** [202607/prompts/xprompt_project_identity.md](prompts/xprompt_project_identity.md)
+
 # Plan: Fix project-local xprompt completion by canonicalizing project identity
 
 ## Problem

@@ -5,8 +5,9 @@ goal: Parse, validate, expose, and safely rewrite repeatable bead conditions on 
   without changing existing agent, time, runner, bare-wait, or template semantics.
 create_time: 2026-07-20 11:24:45
 status: done
-prompt: 202607/prompts/wait_bead_kwarg.md
 ---
+
+- **PROMPT:** [202607/prompts/wait_bead_kwarg.md](prompts/wait_bead_kwarg.md)
 
 # Plan: Add bead keyword support to wait directives
 

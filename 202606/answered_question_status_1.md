@@ -1,9 +1,11 @@
 ---
 create_time: 2026-06-19 13:14:42
 status: done
-prompt: 202606/prompts/answered_question_status_1.md
 tier: tale
 ---
+
+- **PROMPT:** [202606/prompts/answered_question_status_1.md](prompts/answered_question_status_1.md)
+
 # Plan: Fix `sase-4z.5` family showing `QUESTION` after its question was answered
 
 ## Symptom

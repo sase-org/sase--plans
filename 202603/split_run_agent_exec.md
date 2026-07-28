@@ -1,9 +1,10 @@
 ---
 create_time: 2026-03-27 08:58:56
 status: done
-prompt: 202603/prompts/split_run_agent_exec.md
 tier: tale
 ---
+
+- **PROMPT:** [202603/prompts/split_run_agent_exec.md](prompts/split_run_agent_exec.md)
 
 # Plan: Split `run_agent_exec.py` into multiple files
 

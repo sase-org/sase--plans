@@ -1,9 +1,10 @@
 ---
 create_time: 2026-04-02 14:03:52
 status: done
-prompt: 202604/prompts/resume_plan_done.md
 tier: tale
 ---
+
+- **PROMPT:** [202604/prompts/resume_plan_done.md](prompts/resume_plan_done.md)
 
 # Plan: Fix resume keymap ('r') for PLAN DONE agents
 
