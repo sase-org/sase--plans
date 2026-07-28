@@ -5,7 +5,7 @@ goal: The Agents-tab metadata panel shows each wait dimension on its own line, l
   by a bracketed category tag in a padded gutter, with values aligned in one column
   and long lists wrapping with a hanging indent instead of reflowing to column 0.
 create_time: 2026-07-28 09:26:10
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/wait_field_lanes.md](prompts/wait_field_lanes.md)
