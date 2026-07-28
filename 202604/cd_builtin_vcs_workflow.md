@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/cd_builtin_vcs_workflow.md](prompts/cd_builtin_vcs_workflow.md)
+- **BEAD:** [sase-1m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1m/README.md)
 
 # Plan: Built-In `#cd` XPrompt Workflow and Home-Mode Migration
 

@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/axe_add_edit_workflows.md](prompts/axe_add_edit_workflows.md)
 - **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
+- **BEAD:** [sase-8m.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8m/sase-8m.3.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8m.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.3/README.md)
   - [bbugyi200.athena.sase-8m.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.3.md#member-code)

@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/hidden_agents_sidecar_foundation.md](prompts/hidden_agents_sidecar_foundation.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **BEAD:** [sase-8k.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/sase-8k.4.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8k.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.4/README.md)
   - [bbugyi200.athena.sase-8k.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.4.md#member-code)

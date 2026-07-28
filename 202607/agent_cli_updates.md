@@ -50,6 +50,7 @@ bead_id: sase-7s
 ---
 
 - **PROMPT:** [202607/prompts/agent_cli_updates.md](prompts/agent_cli_updates.md)
+- **BEAD:** [sase-7s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7s/README.md)
 
 # Plan: Agent CLI updates across the SASE CLI and TUI
 

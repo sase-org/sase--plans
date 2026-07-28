@@ -23,6 +23,8 @@ phases:
 bead_id: sase-67
 ---
 
+- **BEAD:** [sase-67](https://github.com/sase-org/sase--beads/blob/main/pages/sase-67/README.md)
+
 # Plan: Serialize SDD store git writers and retry index.lock contention
 
 ## Incident

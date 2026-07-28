@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/agents_sync_engine.md](prompts/agents_sync_engine.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **BEAD:** [sase-8k.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/sase-8k.6.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8k.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.6/README.md)
   - [bbugyi200.athena.sase-8k.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8k.6.md#member-code)

@@ -4,6 +4,9 @@ tier: epic
 status: done
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **BEAD:** [sase-3w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3w/README.md)
+
 # Plan: Optional descriptions for xprompts and xprompt inputs
 
 ## Goal

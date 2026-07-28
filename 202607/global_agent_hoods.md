@@ -99,6 +99,7 @@ bead_id: sase-8v
 ---
 
 - **PROMPT:** [202607/prompts/global_agent_hoods.md](prompts/global_agent_hoods.md)
+- **BEAD:** [sase-8v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8v.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.1/README.md)
   - [bbugyi200.athena.sase-8v.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.1.md#member-code)

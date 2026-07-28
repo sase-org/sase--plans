@@ -57,6 +57,13 @@ bead_id: sase-ak
 
 - **PROMPT:** [202607/prompts/tribe_wait_reference_validation_and_display.md](prompts/tribe_wait_reference_validation_and_display.md)
 - **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ng](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ng/README.md)
+  - [bbugyi200.athena.sase-ak.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ak.1/README.md)
+  - [bbugyi200.athena.sase-ak.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ak.2/README.md)
+  - [bbugyi200.athena.sase-ak.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ak.3/README.md)
+  - [bbugyi200.athena.sase-ak.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ak.4/README.md)
+  - [bbugyi200.athena.sase-ak.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ak.land/README.md)
 
 # Plan: Validate and display `%wait` agent-tribe references correctly
 

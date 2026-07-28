@@ -61,6 +61,7 @@ bead_id: sase-9x
 ---
 
 - **PROMPT:** [202607/prompts/bead_merge_replay_stability.md](prompts/bead_merge_replay_stability.md)
+- **BEAD:** [sase-9x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9x/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9x.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9x.1.md#member-code)
 

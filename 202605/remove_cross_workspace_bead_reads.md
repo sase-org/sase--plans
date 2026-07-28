@@ -7,6 +7,7 @@ status: wip
 ---
 
 - **PROMPT:** [202605/prompts/remove_cross_workspace_bead_reads.md](prompts/remove_cross_workspace_bead_reads.md)
+- **BEAD:** [sase-3c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3c/README.md)
 
 # Goal
 

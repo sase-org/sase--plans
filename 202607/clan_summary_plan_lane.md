@@ -39,6 +39,7 @@ bead_id: sase-8d
 ---
 
 - **PROMPT:** [202607/prompts/clan_summary_plan_lane.md](prompts/clan_summary_plan_lane.md)
+- **BEAD:** [sase-8d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8d/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8d.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.1.md#member-code)
   - [bbugyi200.athena.sase-8d.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.2.md#member-code)

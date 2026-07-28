@@ -5,6 +5,8 @@ bead_id: sase-18.7
 tier: epic
 ---
 
+- **BEAD:** [sase-18.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18/sase-18.7.md)
+
 # Rust Backend Phase 3G — Cache, Streaming Decision, and First-Frame Experiment
 
 Closes the Phase 3G subphase of

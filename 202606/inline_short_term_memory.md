@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/inline_short_term_memory.md](prompts/inline_short_term_memory.md)
+- **BEAD:** [sase-5b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5b/README.md)
 
 # Plan: Inline Short-Term Memory Into `AGENTS.md` (Drop `@` References)
 

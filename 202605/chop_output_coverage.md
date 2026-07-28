@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/chop_output_coverage.md](prompts/chop_output_coverage.md)
+- **BEAD:** [sase-36](https://github.com/sase-org/sase--beads/blob/main/pages/sase-36/README.md)
 
 # Plan: Make every Athena AXE chop produce useful output
 

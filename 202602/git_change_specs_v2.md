@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-py2
+
 > **Superseded**: This plan has been superseded by [Git Change Specs v3](git_change_specs_v3.md).
 
 # ChangeSpec + Git/GitHub Improvements Plan

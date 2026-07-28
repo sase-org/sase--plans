@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/prompt_frontmatter_panel.md](prompts/prompt_frontmatter_panel.md)
+- **BEAD:** [sase-4r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4r/README.md)
 
 # Plan: Frontmatter Panel for the Prompt Input Widget
 

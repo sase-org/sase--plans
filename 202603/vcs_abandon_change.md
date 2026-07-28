@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202603/prompts/vcs_abandon_change.md](prompts/vcs_abandon_change.md)
+- **BEAD:** [sase-c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-c/README.md)
 
 # Plan: VCS-agnostic `abandon_change` hook for closing remote changes during revert
 

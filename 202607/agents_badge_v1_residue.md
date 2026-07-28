@@ -85,6 +85,7 @@ bead_id: sase-92
 ---
 
 - **PROMPT:** [202607/prompts/agents_badge_v1_residue.md](prompts/agents_badge_v1_residue.md)
+- **BEAD:** [sase-92](https://github.com/sase-org/sase--beads/blob/main/pages/sase-92/README.md)
 
 # Plan: Truthful agents-repo update badge and ignore-proof hood publication
 

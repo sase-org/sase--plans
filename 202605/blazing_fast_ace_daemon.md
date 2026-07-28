@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/blazing_fast_ace_daemon.md](prompts/blazing_fast_ace_daemon.md)
+- **BEAD:** [sase-3i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3i/README.md)
 
 # Blazing Fast ACE Daemon Read Plan
 

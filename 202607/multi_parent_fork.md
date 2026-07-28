@@ -31,6 +31,8 @@ status: done
 bead_id: sase-6m
 ---
 
+- **BEAD:** [sase-6m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6m/README.md)
+
 # Plan: Multi-parent fork conversations
 
 ## Context and product contract

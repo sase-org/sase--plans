@@ -7,6 +7,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/mobile_gateway_epic_2.md](prompts/mobile_gateway_epic_2.md)
+- **BEAD:** [sase-26.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.2.md)
 
 # Plan: Mobile MVP Epic 2 - Notification Inbox, Pending Actions, And Attachments
 

@@ -39,6 +39,7 @@ bead_id: sase-7j
 ---
 
 - **PROMPT:** [202607/prompts/agent_tribe_terminology.md](prompts/agent_tribe_terminology.md)
+- **BEAD:** [sase-7j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7j/README.md)
 
 # Plan: Complete the agent tribe terminology migration
 

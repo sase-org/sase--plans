@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/rust_backend_phase2_query.md](prompts/rust_backend_phase2_query.md)
+- **BEAD:** [sase-17](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17/README.md)
 
 # Rust Backend Migration Phase 2 Query Plan
 

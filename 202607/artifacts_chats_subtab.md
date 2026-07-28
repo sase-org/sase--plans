@@ -102,6 +102,7 @@ bead_id: sase-90
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_chats_subtab.md](prompts/artifacts_chats_subtab.md)
+- **BEAD:** [sase-90](https://github.com/sase-org/sase--beads/blob/main/pages/sase-90/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-90.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-90.land/README.md)
   - [bbugyi200.athena.sase-90.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-90.land.md#member-code)

@@ -4,6 +4,9 @@ bead_id: sase-1a.2
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1a.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1a/sase-1a.2.md)
+
 # Rust Backend Phase 5B Handoff: Python Facade, Wire Contract, and Golden Tests
 
 ## Summary

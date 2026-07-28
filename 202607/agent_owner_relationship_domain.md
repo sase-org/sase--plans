@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/agent_owner_relationship_domain.md](prompts/agent_owner_relationship_domain.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **BEAD:** [sase-8v.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8v.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.1/README.md)
   - [bbugyi200.athena.sase-8v.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.1.md#member-code)

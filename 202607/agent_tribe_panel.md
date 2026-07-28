@@ -58,6 +58,7 @@ bead_id: sase-6z
 ---
 
 - **PROMPT:** [202607/prompts/agent_tribe_panel.md](prompts/agent_tribe_panel.md)
+- **BEAD:** [sase-6z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6z/README.md)
 
 # Plan: Agent Tribe panel summaries and whole-panel selection
 

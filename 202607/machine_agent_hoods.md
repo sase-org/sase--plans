@@ -11,6 +11,7 @@ status: wip
 
 - **PROMPT:** [202607/prompts/machine_agent_hoods.md](prompts/machine_agent_hoods.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
+- **BEAD:** [sase-8k.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/sase-8k.3.md)
 
 # Plan: Machine agent hoods end to end
 

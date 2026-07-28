@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/automated_semver_releases.md](prompts/automated_semver_releases.md)
+- **BEAD:** [sase-4e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4e/README.md)
 
 # Automated SemVer Release Rollout Plan
 

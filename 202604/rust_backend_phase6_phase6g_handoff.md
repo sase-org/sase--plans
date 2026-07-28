@@ -4,6 +4,9 @@ status: done
 bead_id: sase-1b.7
 tier: epic
 ---
+
+- **BEAD:** [sase-1b.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b/sase-1b.7.md)
+
 # Rust Backend Phase 6G Handoff — CI Matrix, Parity Gate, And Release Smoke
 
 ## Scope landed in this phase

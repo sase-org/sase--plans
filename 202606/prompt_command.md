@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/prompt_command.md](prompts/prompt_command.md)
+- **BEAD:** [sase-4o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4o/README.md)
 
 # `sase prompt` Command Plan
 

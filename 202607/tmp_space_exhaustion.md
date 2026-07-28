@@ -90,6 +90,7 @@ bead_id: sase-96
 ---
 
 - **PROMPT:** [202607/prompts/tmp_space_exhaustion.md](prompts/tmp_space_exhaustion.md)
+- **BEAD:** [sase-96](https://github.com/sase-org/sase--beads/blob/main/pages/sase-96/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-96.8.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-96.8.land/README.md)
 

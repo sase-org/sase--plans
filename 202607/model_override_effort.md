@@ -43,6 +43,7 @@ bead_id: sase-8z
 ---
 
 - **PROMPT:** [202607/prompts/model_override_effort.md](prompts/model_override_effort.md)
+- **BEAD:** [sase-8z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8z/README.md)
 
 # Model Override/Edit Picker: Alias Ordering and Effort-Aware Selections
 

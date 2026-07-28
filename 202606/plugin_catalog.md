@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/plugin_catalog.md](prompts/plugin_catalog.md)
+- **BEAD:** [sase-57](https://github.com/sase-org/sase--beads/blob/main/pages/sase-57/README.md)
 
 # Plan: `sase plugin list` & `sase plugin show`
 

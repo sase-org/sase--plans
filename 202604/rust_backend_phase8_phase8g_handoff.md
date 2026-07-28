@@ -4,6 +4,9 @@ status: handoff
 bead_id: sase-1f.7
 tier: epic
 ---
+
+- **BEAD:** [sase-1f.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1f/sase-1f.7.md)
+
 # Rust Backend Migration Phase 8G Handoff: Golden Contract, Documentation, And Close-Out
 
 ## Scope

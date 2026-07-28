@@ -4,6 +4,9 @@ bead_id: sase-19.5
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-19.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.5.md)
+
 # Rust Backend Phase 4E Handoff: Transition Decision Plan Integration
 
 ## Scope

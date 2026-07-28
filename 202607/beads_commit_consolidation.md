@@ -79,6 +79,16 @@ bead_id: sase-aj
 
 - **PROMPT:** [202607/prompts/beads_commit_consolidation.md](prompts/beads_commit_consolidation.md)
 - **BEAD:** [sase-aj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aj/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nd/README.md)
+  - [bbugyi200.athena.sase-aj.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.1/README.md)
+  - [bbugyi200.athena.sase-aj.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.2/README.md)
+  - [bbugyi200.athena.sase-aj.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-aj.3.md#member-code)
+  - [bbugyi200.athena.sase-aj.3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-aj.3.md#member-plan)
+  - [bbugyi200.athena.sase-aj.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.4/README.md)
+  - [bbugyi200.athena.sase-aj.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.5/README.md)
+  - [bbugyi200.athena.sase-aj.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.6/README.md)
+  - [bbugyi200.athena.sase-aj.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aj.land/README.md)
 
 # Plan: Consolidate beads sidecar commits
 

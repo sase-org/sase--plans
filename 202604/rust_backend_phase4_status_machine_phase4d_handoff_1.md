@@ -4,6 +4,9 @@ bead_id: sase-19.4
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-19.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.4.md)
+
 # Rust Backend Phase 4D Handoff: Facade Registration, Dual-Run, and Pure Helper Routing
 
 ## Scope

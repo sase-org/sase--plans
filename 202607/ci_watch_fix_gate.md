@@ -10,10 +10,8 @@ status: done
 
 - **PROMPT:** [202607/prompts/ci_watch_fix_gate.md](prompts/ci_watch_fix_gate.md)
 - **AGENTS:**
-  - bbugyi200.athena.nn--code
-- **COMMITS:**
-  - [b161e1c](https://github.com/bbugyi200/dotfiles/commit/b161e1c12798e4e1580460b148b2cdd119c918ea) — fix(sase):
-    idle-gate ci_watch fix launches
+  - [bbugyi200.athena.nn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nn.md#member-code)
+  - [bbugyi200.athena.nn--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nn.md#member-plan)
 
 # Fix ci_watch Fix-Proposal Starvation (Hood-Scoped Gate + Lane wait_runners)
 

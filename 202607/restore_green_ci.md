@@ -65,6 +65,7 @@ bead_id: sase-93
 ---
 
 - **PROMPT:** [202607/prompts/restore_green_ci.md](prompts/restore_green_ci.md)
+- **BEAD:** [sase-93](https://github.com/sase-org/sase--beads/blob/main/pages/sase-93/README.md)
 
 # Plan: Restore green GitHub Actions CI for sase
 

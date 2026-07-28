@@ -7,6 +7,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/mobile_gateway_epic_6.md](prompts/mobile_gateway_epic_6.md)
+- **BEAD:** [sase-26.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.6.md)
 
 # Plan: Mobile MVP Epic 6 - Android Action, Agent, And Helper UX
 

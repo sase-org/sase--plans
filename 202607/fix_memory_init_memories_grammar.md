@@ -11,7 +11,6 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.ms](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ms/README.md)
   - [bbugyi200.athena.ms--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ms.md#member-code)
-  - [bbugyi200.athena.ms--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ms.md#member-plan)
 - **COMMITS:**
   - [3bd59cd](https://github.com/sase-org/sase/commit/3bd59cdda2a0317ee4b6e60a6ed72b9f1bcec83b) — fix(memory): correct generated instruction grammar
 

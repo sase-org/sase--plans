@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/agents_sibling_keymap.md](prompts/agents_sibling_keymap.md)
+- **BEAD:** [sase-40](https://github.com/sase-org/sase--beads/blob/main/pages/sase-40/README.md)
 
 # Agents Tab `~` Sibling Navigation Plan
 

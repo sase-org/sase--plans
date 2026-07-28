@@ -14,6 +14,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/release_core_v0_11_and_land_sase_9v.md](prompts/release_core_v0_11_and_land_sase_9v.md)
 - **PARENT:** [202607/bead_review_hardening.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_review_hardening.md)
+- **BEAD:** [sase-9v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9v/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9v.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9v.land/README.md)
   - [bbugyi200.athena.sase-9v.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9v.land.md#member-code)

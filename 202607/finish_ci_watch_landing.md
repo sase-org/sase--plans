@@ -42,6 +42,7 @@ bead_id: sase-a4.4
 
 - **PROMPT:** [202607/prompts/finish_ci_watch_landing.md](prompts/finish_ci_watch_landing.md)
 - **PARENT:** [202607/ci_watch_liveness.md](https://github.com/sase-org/sase--plans/blob/main/202607/ci_watch_liveness.md)
+- **BEAD:** [sase-a4.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-a4/sase-a4.4.md)
 
 # Finish and land the ci_watch liveness epic
 

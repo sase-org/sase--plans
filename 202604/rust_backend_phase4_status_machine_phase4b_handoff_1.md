@@ -4,6 +4,9 @@ bead_id: sase-19.2
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-19.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.2.md)
+
 # Rust Backend Phase 4B Handoff: Wire Contract and Golden Parity Corpus
 
 ## Scope

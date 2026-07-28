@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/generalized_agent_name_at_templates.md](prompts/generalized_agent_name_at_templates.md)
+- **BEAD:** [sase-4g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4g/README.md)
 
 # Generalized Agent Name `@` Templates
 

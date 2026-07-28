@@ -11,6 +11,7 @@ bead: sase-8h.1
 
 - **PROMPT:** [202607/prompts/reanchorable_date_bounds.md](prompts/reanchorable_date_bounds.md)
 - **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
+- **BEAD:** [sase-8h.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8h/sase-8h.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8h.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1/README.md)
   - [bbugyi200.athena.sase-8h.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.md#member-code)

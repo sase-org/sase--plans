@@ -41,6 +41,8 @@ phases:
 bead_id: sase-6u
 ---
 
+- **BEAD:** [sase-6u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6u/README.md)
+
 # Plan: Agent metadata panel folding with a rich clan summary
 
 ## Product context

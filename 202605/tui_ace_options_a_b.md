@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/tui_ace_options_a_b.md](prompts/tui_ace_options_a_b.md)
+- **BEAD:** [sase-3o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3o/README.md)
 
 # TUI ACE Options A/B Optimization Plan
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/changespec_group_headings.md](prompts/changespec_group_headings.md)
+- **BEAD:** [sase-z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z/README.md)
 
 # CLs Tab — ChangeSpec Group Headings
 

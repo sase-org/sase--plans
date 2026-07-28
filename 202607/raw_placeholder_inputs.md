@@ -67,6 +67,7 @@ status: done
 bead_id: sase-9q
 ---
 
+- **BEAD:** [sase-9q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9q/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9q.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9q.land/README.md)
   - [bbugyi200.athena.sase-9q.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9q.land.md#member-code)

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/plugins_tab.md](prompts/plugins_tab.md)
+- **BEAD:** [sase-59](https://github.com/sase-org/sase--beads/blob/main/pages/sase-59/README.md)
 
 # Plan: Add a "Plugins" tab to SASE Config (manage plugins from the TUI)
 

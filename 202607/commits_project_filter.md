@@ -11,7 +11,6 @@ status: wip
 - **AGENTS:**
   - [bbugyi200.athena.mp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mp/README.md)
   - [bbugyi200.athena.mp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.md#member-code)
-  - [bbugyi200.athena.mp--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.md#member-plan)
 - **COMMITS:**
   - [fc72269](https://github.com/sase-org/sase/commit/fc72269b639c93cc29cd617d5b3dd3da4d91cd3d) — feat(ace): add project facet to commits filters
 

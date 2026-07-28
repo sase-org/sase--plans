@@ -61,6 +61,7 @@ bead_id: sase-7o
 ---
 
 - **PROMPT:** [202607/prompts/id_kwargs_tribe_family.md](prompts/id_kwargs_tribe_family.md)
+- **BEAD:** [sase-7o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7o/README.md)
 
 # Plan: Fold %tribe and the family form into %id kwargs
 

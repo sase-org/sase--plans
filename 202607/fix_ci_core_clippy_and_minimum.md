@@ -29,6 +29,11 @@ bead_id: sase-al
 ---
 
 - **BEAD:** [sase-al](https://github.com/sase-org/sase--beads/blob/main/pages/sase-al/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nj/README.md)
+  - [bbugyi200.athena.sase-al.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-al.1/README.md)
+  - [bbugyi200.athena.sase-al.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-al.2/README.md)
+  - [bbugyi200.athena.sase-al.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-al.land/README.md)
 
 # Fix GitHub Actions failures: sase-core clippy lints + published-core minimum smoke
 

@@ -92,6 +92,7 @@ bead_id: sase-8g
 ---
 
 - **PROMPT:** [202607/prompts/audit_24h_fixes.md](prompts/audit_24h_fixes.md)
+- **BEAD:** [sase-8g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8g/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8g.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.1.md#member-code)
   - [bbugyi200.athena.sase-8g.10--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.10.md#member-code)

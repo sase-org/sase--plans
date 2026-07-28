@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/auto_approve_menu_and_tale_directive.md](prompts/auto_approve_menu_and_tale_directive.md)
+- **BEAD:** [sase-56](https://github.com/sase-org/sase--beads/blob/main/pages/sase-56/README.md)
 
 # Plan: `%tale` Auto-Approval Directive + Auto-Approve Quick-Action Menu
 

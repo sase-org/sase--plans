@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/sase_init_onboarding.md](prompts/sase_init_onboarding.md)
+- **BEAD:** [sase-3y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3y/README.md)
 
 # `sase init` Onboarding Implementation Plan
 

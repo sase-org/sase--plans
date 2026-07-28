@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/axe_status_domain.md](prompts/axe_status_domain.md)
 - **PARENT:** [202607/axe_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_status.md)
+- **BEAD:** [sase-8t.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8t/sase-8t.1.md)
 
 # Portable AXE runtime status contract
 

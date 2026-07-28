@@ -4,6 +4,9 @@ bead_id: sase-1o.2
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1o.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o/sase-1o.2.md)
+
 # Query Corpus Phase 2 PyO3 Handoff
 
 ## Changed

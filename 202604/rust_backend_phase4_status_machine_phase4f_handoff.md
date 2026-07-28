@@ -4,6 +4,9 @@ bead_id: sase-19.6
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-19.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.6.md)
+
 # Rust Backend Phase 4F Handoff: Verification, Performance Decision, and Roadmap Update
 
 ## Scope

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/agent_archive_query.md](prompts/agent_archive_query.md)
+- **BEAD:** [sase-37](https://github.com/sase-org/sase--beads/blob/main/pages/sase-37/README.md)
 
 # Agent Archive and Query Language Implementation Plan
 

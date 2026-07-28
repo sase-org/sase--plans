@@ -26,6 +26,7 @@ bead_id: sase-62
 ---
 
 - **PROMPT:** [202607/prompts/per_project_research_sidecars.md](prompts/per_project_research_sidecars.md)
+- **BEAD:** [sase-62](https://github.com/sase-org/sase--beads/blob/main/pages/sase-62/README.md)
 
 # Plan: Per-project research sidecar repos
 

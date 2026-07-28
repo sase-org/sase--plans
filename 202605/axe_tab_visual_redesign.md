@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/axe_tab_visual_redesign.md](prompts/axe_tab_visual_redesign.md)
+- **BEAD:** [sase-2y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2y/README.md)
 
 # AXE Tab Visual Redesign Plan
 

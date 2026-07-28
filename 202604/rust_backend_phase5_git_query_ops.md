@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/rust_backend_phase5_git_query_ops.md](prompts/rust_backend_phase5_git_query_ops.md)
+- **BEAD:** [sase-1a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1a/README.md)
 
 # Rust Backend Phase 5: Git Query Ops
 

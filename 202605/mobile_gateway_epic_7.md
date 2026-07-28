@@ -7,6 +7,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/mobile_gateway_epic_7.md](prompts/mobile_gateway_epic_7.md)
+- **BEAD:** [sase-26.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.7.md)
 
 # Plan: Mobile MVP Epic 7 - Background Delivery, Packaging, And End-To-End Hardening
 

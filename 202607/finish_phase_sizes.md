@@ -42,6 +42,7 @@ bead_id: sase-8w.7
 
 - **PROMPT:** [202607/prompts/finish_phase_sizes.md](prompts/finish_phase_sizes.md)
 - **PARENT:** [202607/phase_sizes.md](https://github.com/sase-org/sase--plans/blob/main/202607/phase_sizes.md)
+- **BEAD:** [sase-8w.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8w/sase-8w.7.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 

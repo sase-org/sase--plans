@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/xprompt_tags.md](prompts/xprompt_tags.md)
+- **BEAD:** [sase-4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4/README.md)
 
 # Plan: XPrompt Tags
 

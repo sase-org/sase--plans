@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/finish_sase_90.md](prompts/finish_sase_90.md)
 - **PARENT:** [202607/artifacts_chats_subtab.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifacts_chats_subtab.md)
+- **BEAD:** [sase-90](https://github.com/sase-org/sase--beads/blob/main/pages/sase-90/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-90.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-90.land/README.md)
   - [bbugyi200.athena.sase-90.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-90.land.md#member-code)

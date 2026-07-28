@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/commit_finalizer_no_stop_hooks.md](prompts/commit_finalizer_no_stop_hooks.md)
+- **BEAD:** [sase-3v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3v/README.md)
 
 # Plan: Commit Finalizer Without Stop Hooks
 

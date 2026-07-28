@@ -6,6 +6,7 @@ status: wip
 ---
 
 - **PROMPT:** [202606/prompts/log_panel.md](prompts/log_panel.md)
+- **BEAD:** [sase-4t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4t/README.md)
 
 # Plan: `,L` Log Panel + Reliable Launch-Failure Logging
 

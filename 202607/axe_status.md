@@ -42,6 +42,7 @@ bead_id: sase-8t
 ---
 
 - **PROMPT:** [202607/prompts/axe_status.md](prompts/axe_status.md)
+- **BEAD:** [sase-8t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8t/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8t.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.2/README.md)
   - [bbugyi200.athena.sase-8t.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.2.md#member-code)

@@ -7,6 +7,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/png_only_visual_snapshots.md](prompts/png_only_visual_snapshots.md)
+- **BEAD:** [sase-2p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2p/README.md)
 
 # PNG-only ACE visual snapshots
 

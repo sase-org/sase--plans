@@ -5,6 +5,8 @@ bead_id: sase-1a.1
 tier: epic
 ---
 
+- **BEAD:** [sase-1a.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1a/sase-1a.1.md)
+
 # Rust Backend Phase 5A — Audit, Profiling, and Scope Lock
 
 Closes Phase 5A of `plans/202604/rust_backend_phase5_git_query_ops.md`.

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/tui_perf_overhaul_1.md](prompts/tui_perf_overhaul_1.md)
+- **BEAD:** [sase-w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w/README.md)
 
 # Plan: TUI (`sase ace`) Performance Overhaul
 

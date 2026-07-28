@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/external_repos.md](prompts/external_repos.md)
+- **BEAD:** [sase-5y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5y/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5x.w0--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5x.w0.md#member-epic)
 

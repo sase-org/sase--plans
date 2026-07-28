@@ -4,6 +4,9 @@ bead_id: sase-1o.4
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1o.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o/sase-1o.4.md)
+
 # Query Corpus Phase 4 Performance Handoff
 
 ## Changed

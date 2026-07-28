@@ -7,6 +7,7 @@ tier: tale
 ---
 
 - **PROMPT:** [202606/prompts/finish_sase_4j_publish.md](prompts/finish_sase_4j_publish.md)
+- **BEAD:** [sase-4j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4j/README.md)
 
 # Finish `sase-4j` Public Publish Verification
 

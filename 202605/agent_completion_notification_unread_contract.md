@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/agent_completion_notification_unread_contract.md](prompts/agent_completion_notification_unread_contract.md)
+- **BEAD:** [sase-30](https://github.com/sase-org/sase--beads/blob/main/pages/sase-30/README.md)
 
 # Plan: Restore One-to-One Agent Completion Notifications and Agents-Tab Unread State
 

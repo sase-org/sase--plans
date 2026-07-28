@@ -83,6 +83,7 @@ bead_id: sase-9s
 ---
 
 - **PROMPT:** [202607/prompts/detached_epic_launch.md](prompts/detached_epic_launch.md)
+- **BEAD:** [sase-9s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9s/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9s.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9s.land/README.md)
   - [bbugyi200.athena.sase-9s.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9s.land.md#member-code)

@@ -42,6 +42,7 @@ status: done
 bead_id: sase-8m
 ---
 
+- **BEAD:** [sase-8m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8m/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.plans-7.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.plans-7.1.md#member-code)
   - [bbugyi200.athena.plans-7.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.plans-7.2.md#member-code)

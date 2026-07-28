@@ -5,6 +5,8 @@ bead_id: sase-19.1
 tier: epic
 ---
 
+- **BEAD:** [sase-19.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.1.md)
+
 # Rust Backend Phase 4A — Profiling and Scope Decision
 
 Closes Phase 4A of `plans/202604/rust_backend_phase4_status_machine.md`.

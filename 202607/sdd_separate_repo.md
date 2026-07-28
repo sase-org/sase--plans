@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/sdd_separate_repo.md](prompts/sdd_separate_repo.md)
+- **BEAD:** [sase-5j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5j/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.1l--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1l.md#member-epic)
 

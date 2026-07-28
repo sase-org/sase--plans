@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/repeat_agents_as_entries.md](prompts/repeat_agents_as_entries.md)
+- **BEAD:** [sase-k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k/README.md)
 
 # Plan: Spawn Each `%r:N` Iteration as Its Own Top-Level Agent Entry
 

@@ -10,13 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_lumberjack_wait_runners.md](prompts/land_lumberjack_wait_runners.md)
-- **PARENT:**
-  [202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--plans/blob/main/202607/lumberjack_wait_runners.md)
+- **PARENT:** [202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--plans/blob/main/202607/lumberjack_wait_runners.md)
+- **BEAD:** [sase-af](https://github.com/sase-org/sase--beads/blob/main/pages/sase-af/README.md)
 - **AGENTS:**
-  - bbugyi200.athena.sase-af.land--code
+  - [bbugyi200.athena.sase-af.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-code)
 - **COMMITS:**
-  - [c4490ad](https://github.com/sase-org/sase--plans/commit/c4490ad955b194c70f9accc0ca659e1b1c64f003) — — docs(plan):
-    mark lumberjack wait-runners epic done (sase-af)
+  - [a643a86](https://github.com/sase-org/sase/commit/a643a864c33b1eb864f570c9e009ff89d313a69f) — fix(sdd): keep published core integration commit-safe (sase-af)
 
 # Plan: Integrate and land the lumberjack runner gate epic
 

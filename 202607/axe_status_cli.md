@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/axe_status_cli.md](prompts/axe_status_cli.md)
 - **PARENT:** [202607/axe_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_status.md)
+- **BEAD:** [sase-8t.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8t/sase-8t.3.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8t.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8t.3/README.md)
   - [bbugyi200.athena.sase-8t.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8t.3.md#member-code)

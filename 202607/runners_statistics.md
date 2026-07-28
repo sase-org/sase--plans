@@ -42,6 +42,7 @@ bead_id: sase-8j
 ---
 
 - **PROMPT:** [202607/prompts/runners_statistics.md](prompts/runners_statistics.md)
+- **BEAD:** [sase-8j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8j/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8j.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8j.1.md#member-code)
   - [bbugyi200.athena.sase-8j.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8j.3/README.md)

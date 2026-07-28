@@ -6,6 +6,7 @@ create_time: 2026-05-10 11:29:15
 ---
 
 - **PROMPT:** [202605/prompts/complete_bead_model_routing_1.md](prompts/complete_bead_model_routing_1.md)
+- **BEAD:** [sase-2r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2r/README.md)
 
 # Complete Bead Model Routing (sase-2o)
 

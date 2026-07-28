@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/agents_tab_repro_mvp.md](prompts/agents_tab_repro_mvp.md)
+- **BEAD:** [sase-3d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3d/README.md)
 
 # Plan: Agents Tab Reproduction Testing Framework MVP
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/repeat_last_leader_keymap.md](prompts/repeat_last_leader_keymap.md)
+- **BEAD:** [sase-3f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3f/README.md)
 
 # Repeat Last Leader Keymap Plan
 

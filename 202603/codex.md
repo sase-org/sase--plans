@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/codex.md](prompts/codex.md)
+- **BEAD:** sase-511j
 
 # Plan: Add Codex (OpenAI CLI Agent) Provider to sase
 
@@ -209,7 +210,7 @@ Shared plan utilities tests (if not already covered by existing tests):
 - Codex-specific environment variables table:
   - `SASE_CODEX_LARGE_ARGS` — extra CLI args for large tier (Codex-specific fallback)
   - `SASE_CODEX_SMALL_ARGS` — extra CLI args for small tier (Codex-specific fallback)
-- Update Source Layout table: add codex.py and \_plan_utils.py rows
+- Update Source Layout table: add codex.py and _plan_utils.py rows
 - Update Selection Logic section: claude > codex > gemini
 - Update registry code example to show 3 providers
 - Update Subprocess Streaming section to mention Codex NDJSON streaming

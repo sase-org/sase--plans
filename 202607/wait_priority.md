@@ -54,6 +54,7 @@ bead_id: sase-9k
 ---
 
 - **PROMPT:** [202607/prompts/wait_priority.md](prompts/wait_priority.md)
+- **BEAD:** [sase-9k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9k/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9k.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9k.land/README.md)
   - [bbugyi200.athena.sase-9k.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9k.land.md#member-code)

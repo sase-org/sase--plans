@@ -27,6 +27,7 @@ bead_id: sase-65
 ---
 
 - **PROMPT:** [202607/prompts/visual_snapshot_determinism.md](prompts/visual_snapshot_determinism.md)
+- **BEAD:** [sase-65](https://github.com/sase-org/sase--beads/blob/main/pages/sase-65/README.md)
 
 # Plan: Visual snapshot determinism
 

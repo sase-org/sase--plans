@@ -5,6 +5,8 @@ bead_id: sase-16.6
 tier: epic
 ---
 
+- **BEAD:** [sase-16.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16/sase-16.6.md)
+
 # Rust Backend Phase 1F — Cross-Repo Parity Gate and Handoff
 
 This doc closes Phase 1 of `plans/202604/rust_backend_phase1.md`. It records

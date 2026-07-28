@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/projects_admin_center_tab.md](prompts/projects_admin_center_tab.md)
+- **BEAD:** [sase-5a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5a/README.md)
 
 # Plan: Move Project Management into a "Projects" tab of the SASE Admin Center
 

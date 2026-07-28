@@ -5,6 +5,8 @@ bead_id: sase-1b.1
 tier: epic
 ---
 
+- **BEAD:** [sase-1b.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b/sase-1b.1.md)
+
 # Rust Backend Phase 6A — Wheel Packaging And Release Matrix
 
 Closes Phase 6A of `plans/202604/rust_backend_phase6_default_rust.md`.

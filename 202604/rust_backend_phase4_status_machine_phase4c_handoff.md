@@ -4,6 +4,9 @@ bead_id: sase-19.3
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-19.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/sase-19.3.md)
+
 # Rust Backend Phase 4C Handoff: Pure Rust Status Module and PyO3 Bindings
 
 ## Scope

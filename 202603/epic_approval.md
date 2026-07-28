@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/epic_approval.md](prompts/epic_approval.md)
+- **BEAD:** sase-w0d2
 
 # Epic Plan Approval Support
 

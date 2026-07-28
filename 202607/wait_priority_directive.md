@@ -38,6 +38,7 @@ bead_id: sase-8c
 ---
 
 - **PROMPT:** [202607/prompts/wait_priority_directive.md](prompts/wait_priority_directive.md)
+- **BEAD:** [sase-8c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8c/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8c.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8c.2.md#member-code)
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/tui_screenshot_diff_testing.md](prompts/tui_screenshot_diff_testing.md)
+- **BEAD:** [sase-2m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2m/README.md)
 
 # TUI Screenshot Diff Testing Plan
 

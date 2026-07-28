@@ -4,6 +4,9 @@ status: handoff
 bead_id: sase-1f.6
 tier: epic
 ---
+
+- **BEAD:** [sase-1f.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1f/sase-1f.6.md)
+
 # Rust Backend Migration Phase 8F Handoff: Delete Dual-Run, Backend Dispatcher, CI Matrix, And Historical Tests
 
 ## Scope

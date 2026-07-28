@@ -61,14 +61,7 @@ bead_id: sase-ac.6
 
 - **PROMPT:** [202607/prompts/xprompt_identity_landing.md](prompts/xprompt_identity_landing.md)
 - **PARENT:** [202607/xprompt_project_identity.md](https://github.com/sase-org/sase--plans/blob/main/202607/xprompt_project_identity.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-ac.6.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.1/README.md)
-  - [bbugyi200.athena.sase-ac.6.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.2/README.md)
-  - [bbugyi200.athena.sase-ac.6.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.3/README.md)
-  - [bbugyi200.athena.sase-ac.6.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.4/README.md)
-  - [bbugyi200.athena.sase-ac.6.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.5/README.md)
-  - [bbugyi200.athena.sase-ac.6.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.6.land/README.md)
-  - [bbugyi200.athena.sase-ac.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ac.land/README.md)
+- **BEAD:** [sase-ac.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ac/sase-ac.6.md)
 
 # Plan: Finish canonical xprompt project identity and land sase-ac
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/agent_group_revival.md](prompts/agent_group_revival.md)
+- **BEAD:** [sase-47](https://github.com/sase-org/sase--beads/blob/main/pages/sase-47/README.md)
 
 # Agent Group Save And Revival Plan
 

@@ -77,6 +77,7 @@ bead_id: sase-6p
 ---
 
 - **PROMPT:** [202607/prompts/gate_option_queries.md](prompts/gate_option_queries.md)
+- **BEAD:** [sase-6p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6p/README.md)
 
 # Plan: Query-driven sase gates with configurable options
 

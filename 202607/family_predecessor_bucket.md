@@ -13,7 +13,6 @@ status: done
 - **PROMPT:** [202607/prompts/family_predecessor_bucket.md](prompts/family_predecessor_bucket.md)
 - **AGENTS:**
   - [bbugyi200.athena.mz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mz.md#member-code)
-  - [bbugyi200.athena.mz--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mz.md#member-plan)
 - **COMMITS:**
   - [13e3b1d](https://github.com/sase-org/sase/commit/13e3b1ddc93a77b1fdc1aece5c26aecad554eae1) — fix: settle stopped family predecessors
 

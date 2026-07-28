@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/bead_model_routing.md](prompts/bead_model_routing.md)
+- **BEAD:** [sase-2o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2o/README.md)
 
 # Bead Model Routing Plan
 

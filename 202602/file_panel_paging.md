@@ -5,6 +5,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-614
+
 # File Content Trimming for Agents Tab File Panel
 
 ## Context

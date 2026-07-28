@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/phase7_notification_perf.md](prompts/phase7_notification_perf.md)
+- **BEAD:** [sase-35](https://github.com/sase-org/sase--beads/blob/main/pages/sase-35/README.md)
 
 # Phase 7 Notification Store Performance Floor Plan
 

@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-11 13:52:25'
 ---
 
+- **BEAD:** sase-cvb
+
 # Git Change Specs v3: Clones Replace Worktrees, Direct Master Commits
 
 ## Context

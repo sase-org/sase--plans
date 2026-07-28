@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-xu6
+
 # Plan: Claude Thinking Panel on Agents Tab
 
 ## Context

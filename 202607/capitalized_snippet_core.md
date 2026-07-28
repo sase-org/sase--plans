@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_core.md](prompts/capitalized_snippet_core.md)
 - **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
+- **BEAD:** [sase-8u.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8u/sase-8u.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8u.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.1.md#member-code)
 

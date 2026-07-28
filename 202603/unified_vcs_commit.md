@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202603/prompts/unified_vcs_commit.md](prompts/unified_vcs_commit.md)
+- **BEAD:** [sase-9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9/README.md)
 
 # Plan: Unified VCS Commit Prompts
 

@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/truthful_commits_status.md](prompts/truthful_commits_status.md)
 - **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
+- **BEAD:** [sase-8h.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8h/sase-8h.3.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8h.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.3/README.md)
   - [bbugyi200.athena.sase-8h.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.3.md#member-code)

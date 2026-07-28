@@ -5,6 +5,8 @@ bead_id: sase-18.2
 tier: epic
 ---
 
+- **BEAD:** [sase-18.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18/sase-18.2.md)
+
 # Rust Backend Phase 3B — Pure-Rust Snapshot Scanner
 
 Closes the Phase 3B subphase of

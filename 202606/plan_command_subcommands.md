@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/plan_command_subcommands.md](prompts/plan_command_subcommands.md)
+- **BEAD:** [sase-4n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4n/README.md)
 
 # Improve `sase plan` Command
 

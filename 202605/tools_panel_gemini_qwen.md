@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/tools_panel_gemini_qwen.md](prompts/tools_panel_gemini_qwen.md)
+- **BEAD:** [sase-3m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3m/README.md)
 
 # Tools Panel Support for Gemini and Qwen
 

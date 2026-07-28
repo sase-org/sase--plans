@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-g61
+
 # Fix: ChangeSpec name ≠ git branch name across all VCS call sites
 
 ## Context

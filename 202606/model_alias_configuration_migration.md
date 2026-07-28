@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/model_alias_configuration_migration.md](prompts/model_alias_configuration_migration.md)
+- **BEAD:** [sase-5d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5d/README.md)
 
 # Model Alias Configuration Migration Plan
 

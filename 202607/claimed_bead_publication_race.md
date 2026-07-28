@@ -48,6 +48,7 @@ bead_id: sase-94
 ---
 
 - **PROMPT:** [202607/prompts/claimed_bead_publication_race.md](prompts/claimed_bead_publication_race.md)
+- **BEAD:** [sase-94](https://github.com/sase-org/sase--beads/blob/main/pages/sase-94/README.md)
 
 # Plan: Claimed status survives the epic-graph publication lag
 

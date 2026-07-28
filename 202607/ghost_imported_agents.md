@@ -65,6 +65,7 @@ bead_id: sase-9o
 ---
 
 - **PROMPT:** [202607/prompts/ghost_imported_agents.md](prompts/ghost_imported_agents.md)
+- **BEAD:** [sase-9o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9o/README.md)
 
 # Plan: Stop ghost imported agents from flooding the Agents tab
 

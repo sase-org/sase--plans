@@ -5,6 +5,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/migrate_beads_to_core.md](prompts/migrate_beads_to_core.md)
+- **BEAD:** sase-cu8
 
 # Plan: Migrate sase-beads into sase core
 

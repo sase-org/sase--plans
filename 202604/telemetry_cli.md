@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/telemetry_cli.md](prompts/telemetry_cli.md)
+- **BEAD:** [sase-e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e/README.md)
 
 # Plan: `sase telemetry` CLI Subcommand
 

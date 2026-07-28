@@ -54,6 +54,7 @@ bead_id: sase-6d
 ---
 
 - **PROMPT:** [202607/prompts/canonical_sase_directories.md](prompts/canonical_sase_directories.md)
+- **BEAD:** [sase-6d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6d/README.md)
 
 # Plan: Canonical SASE directories for project and home content
 

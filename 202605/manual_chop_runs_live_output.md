@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/manual_chop_runs_live_output.md](prompts/manual_chop_runs_live_output.md)
+- **BEAD:** [sase-2x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2x/README.md)
 
 # Manual Chop Runs and Live Chop Output Plan
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/epic_work_automation.md](prompts/epic_work_automation.md)
+- **BEAD:** [sase-r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-r/README.md)
 
 # Epic Work Automation: `sase bead work <epic>` → auto-launch phase + land agents
 

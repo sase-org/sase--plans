@@ -31,6 +31,7 @@ bead_id: sase-8u
 ---
 
 - **PROMPT:** [202607/prompts/capitalized_snippet_aliases.md](prompts/capitalized_snippet_aliases.md)
+- **BEAD:** [sase-8u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8u/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8u.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8u.1.md#member-code)
   - [bbugyi200.athena.sase-8u.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8u.2/README.md)

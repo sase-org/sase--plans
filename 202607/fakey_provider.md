@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/fakey_provider.md](prompts/fakey_provider.md)
+- **BEAD:** [sase-5o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5o/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.4x--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4x.md#member-epic)
 

@@ -41,6 +41,7 @@ bead_id: sase-85
 ---
 
 - **PROMPT:** [202607/prompts/epic_clan_summary_rich.md](prompts/epic_clan_summary_rich.md)
+- **BEAD:** [sase-85](https://github.com/sase-org/sase--beads/blob/main/pages/sase-85/README.md)
 
 # Plan: Rich, reliable epic clan summaries
 

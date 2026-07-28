@@ -5,6 +5,8 @@ bead_id: sase-18.3
 tier: epic
 ---
 
+- **BEAD:** [sase-18.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18/sase-18.3.md)
+
 # Rust Backend Phase 3C — PyO3 Binding and Facade Dual-Run
 
 Closes the Phase 3C subphase of `plans/202604/rust_backend_phase3_agent_scan.md`. This document records the PyO3

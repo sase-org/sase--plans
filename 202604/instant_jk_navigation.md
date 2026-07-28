@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/instant_jk_navigation.md](prompts/instant_jk_navigation.md)
+- **BEAD:** [sase-u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-u/README.md)
 
 # Plan — Instant `j`/`k` Navigation in the TUI
 

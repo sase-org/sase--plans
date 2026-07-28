@@ -90,6 +90,7 @@ bead_id: sase-69
 ---
 
 - **PROMPT:** [202607/prompts/artifacts_tab.md](prompts/artifacts_tab.md)
+- **BEAD:** [sase-69](https://github.com/sase-org/sase--beads/blob/main/pages/sase-69/README.md)
 
 # Plan: Artifacts tab with PRs, Commits, Bugs, and Plans sub-tabs
 

@@ -4,6 +4,9 @@ status: handoff
 bead_id: sase-1f.5
 tier: epic
 ---
+
+- **BEAD:** [sase-1f.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1f/sase-1f.5.md)
+
 # Rust Backend Migration Phase 8E Handoff: Direct-Rust Status And Git Helpers
 
 ## Scope

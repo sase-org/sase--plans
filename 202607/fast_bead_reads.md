@@ -33,6 +33,7 @@ bead_id: sase-6r
 ---
 
 - **PROMPT:** [202607/prompts/fast_bead_reads.md](prompts/fast_bead_reads.md)
+- **BEAD:** [sase-6r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6r/README.md)
 
 # Plan: Fast bead reads
 

@@ -6,6 +6,7 @@ tier: tale
 ---
 
 - **PROMPT:** [202606/prompts/sase_4d_pyvision_cleanup_2.md](prompts/sase_4d_pyvision_cleanup_2.md)
+- **BEAD:** [sase-4d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4d/README.md)
 
 # sase-4d Pyvision Cleanup Plan
 

@@ -14,6 +14,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/xprompt_placeholder_args_toggle.md](prompts/xprompt_placeholder_args_toggle.md)
 - **PARENT:** [202607/raw_placeholder_inputs.md](https://github.com/sase-org/sase--plans/blob/main/202607/raw_placeholder_inputs.md)
+- **BEAD:** [sase-9q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9q/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9q.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9q.land/README.md)
   - [bbugyi200.athena.sase-9q.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9q.land.md#member-code)

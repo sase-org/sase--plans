@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/plan_approval_custom_model_picker.md](prompts/plan_approval_custom_model_picker.md)
+- **BEAD:** [sase-2l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2l/README.md)
 
 # Plan: Plan Approval Custom Actions And Model Picker Upgrade
 

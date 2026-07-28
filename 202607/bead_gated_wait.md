@@ -76,6 +76,7 @@ bead_id: sase-87
 ---
 
 - **PROMPT:** [202607/prompts/bead_gated_wait.md](prompts/bead_gated_wait.md)
+- **BEAD:** [sase-87](https://github.com/sase-org/sase--beads/blob/main/pages/sase-87/README.md)
 
 # Plan: Bead-gated %wait for delegated epic phases
 

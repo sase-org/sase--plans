@@ -64,15 +64,11 @@ bead_id: sase-ag
 ---
 
 - **PROMPT:** [202607/prompts/plan_header_provenance.md](prompts/plan_header_provenance.md)
+- **BEAD:** [sase-ag](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ag/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.mx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mx/README.md)
-  - [bbugyi200.athena.sase-ag.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.1/README.md)
-  - [bbugyi200.athena.sase-ag.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.2/README.md)
-  - [bbugyi200.athena.sase-ag.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.3/README.md)
-  - [bbugyi200.athena.sase-ag.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.4/README.md)
-  - [bbugyi200.athena.sase-ag.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.5/README.md)
-  - [bbugyi200.athena.sase-ag.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.6/README.md)
-  - [bbugyi200.athena.sase-ag.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.land/README.md)
+  - [bbugyi200.athena.sase-ag.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ag.land.md#member-code)
+- **COMMITS:**
+  - [702f1ae](https://github.com/sase-org/sase/commit/702f1aece2375113427d437497924e960d5ca735) — build(deps): require sase-core-rs 0.12.4 (sase-ag)
 
 # Plan: Plan-file provenance header block
 

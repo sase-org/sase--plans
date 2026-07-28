@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/notification_rust_migration.md](prompts/notification_rust_migration.md)
+- **BEAD:** [sase-1n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n/README.md)
 
 # Notification Store Rust Migration Plan
 

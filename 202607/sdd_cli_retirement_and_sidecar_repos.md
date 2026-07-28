@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202607/prompts/sdd_cli_retirement_and_sidecar_repos.md](prompts/sdd_cli_retirement_and_sidecar_repos.md)
+- **BEAD:** [sase-60](https://github.com/sase-org/sase--beads/blob/main/pages/sase-60/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.8k--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8k.md#member-epic)
 

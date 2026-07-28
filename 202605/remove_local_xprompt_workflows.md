@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/remove_local_xprompt_workflows.md](prompts/remove_local_xprompt_workflows.md)
+- **BEAD:** [sase-34](https://github.com/sase-org/sase--beads/blob/main/pages/sase-34/README.md)
 
 # Remove config-local xprompt workflow support
 

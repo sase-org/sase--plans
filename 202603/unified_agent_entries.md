@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/unified_agent_entries.md](prompts/unified_agent_entries.md)
+- **BEAD:** sase-our6
 
 # Plan: Unified Agent Entries for Axe-Spawned Agents
 
@@ -26,15 +27,15 @@ type-based checks. Pure additive change.
 - **src/sase/ace/tui/models/agent.py**: Add `hidden: bool = False` field to Agent dataclass.
 - **src/sase/xprompt/directives.py**: Add `"hide"` to `_KNOWN_DIRECTIVES`, `"h": "hide"` alias, `hide: bool = False` to
   `PromptDirectives`, wire up in `extract_prompt_directives()`.
-- **src/sase/ace/tui/actions/agents/\_core.py**: Rewrite `_is_always_visible()` to use `agent.hidden` instead of
+- **src/sase/ace/tui/actions/agents/_core.py**: Rewrite `_is_always_visible()` to use `agent.hidden` instead of
   `_is_axe_spawned_agent()`. Keep `_is_axe_spawned_agent()` for notification suppression.
-- **src/sase/ace/tui/models/\_loaders/\_artifact_loaders.py**: In `enrich_agent_from_meta()`, read `hide` from
+- **src/sase/ace/tui/models/_loaders/_artifact_loaders.py**: In `enrich_agent_from_meta()`, read `hide` from
   `agent_meta.json` and set `agent.hidden = True`.
-- **src/sase/ace/tui/models/\_loaders/\_changespec_loaders.py**: Set `hidden=True` on all agents created by
+- **src/sase/ace/tui/models/_loaders/_changespec_loaders.py**: Set `hidden=True` on all agents created by
   hook/mentor/comment loaders.
 - **src/sase/axe_run_agent_runner.py** (or agent_meta writer): Write `hide` field to `agent_meta.json` when `%hide`
   directive is set.
-- **src/sase/ace/tui/actions/agents/\_core.py**: In `_load_agents()`, after loading and filtering, auto-dismiss hidden
+- **src/sase/ace/tui/actions/agents/_core.py**: In `_load_agents()`, after loading and filtering, auto-dismiss hidden
   agents that have reached DONE or FAILED status. For each agent where
   `agent.hidden and agent.status in DISMISSABLE_STATUSES`, call `self._persist_dismissed_agent(agent.identity)` and
   filter it out of the agent list. This ensures hidden agents disappear automatically when complete rather than sitting
@@ -65,7 +66,7 @@ Have axe runner scripts write `done.json` markers on completion, matching the fo
 - **src/sase/axe_crs_runner.py**: Same treatment.
 - **src/sase/axe_summarize_hook_runner.py**: Same treatment.
 - **src/sase/ace/scheduler/mentor_runner.py**: Same treatment for mentor subprocess.
-- **src/sase/ace/tui/models/\_loaders/\_artifact_loaders.py**: Extend `load_done_agents()` to scan `fix-hook/`, `crs/`,
+- **src/sase/ace/tui/models/_loaders/_artifact_loaders.py**: Extend `load_done_agents()` to scan `fix-hook/`, `crs/`,
   `summarize-hook/`, `mentor-*/` artifact directories. Read `hidden` from done.json.
 
 ### Acceptance Criteria
@@ -89,7 +90,7 @@ RUNNING/done.json representation and merge ChangeSpec metadata into it.
   mentor_profile, reviewer) from ChangeSpec entry.
 - **src/sase/ace/tui/models/agent.py**: Update `get_artifacts_dir()` to handle `axe(...)` workflow prefixes for
   RUNNING-typed agents.
-- **src/sase/ace/tui/models/\_loaders/\_artifact_loaders.py**: Set `hidden=True` on agents with `axe(...)` workflow
+- **src/sase/ace/tui/models/_loaders/_artifact_loaders.py**: Set `hidden=True` on agents with `axe(...)` workflow
   prefixes in `load_agents_from_running_field()`.
 
 ### Acceptance Criteria
@@ -111,10 +112,10 @@ Remove redundant `AgentType` enum values and simplify type-dispatching code.
 
 - **src/sase/ace/tui/models/agent.py**: Remove FIX_HOOK, SUMMARIZE, MENTOR, CRS from AgentType. Remove type-specific
   branches in `get_artifacts_dir()`. Simplify `is_agent_entry`.
-- **src/sase/ace/tui/models/\_loaders/\_changespec_loaders.py**: Create agents with `AgentType.RUNNING` + `hidden=True`
+- **src/sase/ace/tui/models/_loaders/_changespec_loaders.py**: Create agents with `AgentType.RUNNING` + `hidden=True`
   (keep loaders for running agents without done.json yet).
-- **src/sase/ace/tui/actions/agents/\_core.py**: Simplify `_is_axe_spawned_agent()` to just check `agent.hidden`.
-- **src/sase/ace/tui/actions/agents/\_killing.py**: Remove type-dispatch for removed types.
+- **src/sase/ace/tui/actions/agents/_core.py**: Simplify `_is_axe_spawned_agent()` to just check `agent.hidden`.
+- **src/sase/ace/tui/actions/agents/_killing.py**: Remove type-dispatch for removed types.
 - **src/sase/ace/tui/widgets/agent_list.py**: Remove color entries for removed types.
 - **src/sase/ace/tui/modals/revive_agent_modal.py**: Remove color entries for removed types.
 - **tests/**: Update all tests referencing removed enum values.

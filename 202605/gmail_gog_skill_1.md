@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/gmail_gog_skill_1.md](prompts/gmail_gog_skill_1.md)
+- **BEAD:** [sase-3h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3h/README.md)
 
 # Plan: SASE Gmail Read Skill via `gog`
 

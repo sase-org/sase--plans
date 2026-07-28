@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/tui_command_palette.md](prompts/tui_command_palette.md)
+- **BEAD:** [sase-1d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d/README.md)
 
 # Plan: Add a Context-Aware Command Palette to the Ace TUI
 

@@ -4,6 +4,9 @@ bead_id: sase-1a.6
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1a.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1a/sase-1a.6.md)
+
 # Rust Backend Phase 5F Handoff: Close-Out, Documentation, and Rollout Decision
 
 ## Scope

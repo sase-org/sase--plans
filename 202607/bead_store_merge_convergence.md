@@ -90,6 +90,7 @@ bead_id: sase-9u
 ---
 
 - **PROMPT:** [202607/prompts/bead_store_merge_convergence.md](prompts/bead_store_merge_convergence.md)
+- **BEAD:** sase-9u
 
 # Converge diverged bead stores with one-shot semantic merge integration
 

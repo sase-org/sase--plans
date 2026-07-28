@@ -56,6 +56,7 @@ bead_id: sase-9l
 ---
 
 - **PROMPT:** [202607/prompts/bead_store_pytest_isolation.md](prompts/bead_store_pytest_isolation.md)
+- **BEAD:** [sase-9l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9l/README.md)
 
 # Plan: Stop pytest writing to the production bead store, and purge the leaked beads
 

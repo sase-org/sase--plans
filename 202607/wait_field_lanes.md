@@ -11,7 +11,6 @@ status: done
 - **PROMPT:** [202607/prompts/wait_field_lanes.md](prompts/wait_field_lanes.md)
 - **AGENTS:**
   - [bbugyi200.athena.mw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mw.md#member-code)
-  - [bbugyi200.athena.mw--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mw.md#member-plan)
 - **COMMITS:**
   - [61013b2](https://github.com/sase-org/sase/commit/61013b22957ca7c8c35c0bd93be4c2a10fc59c15) — feat(ace): render wait fields as responsive lanes
 

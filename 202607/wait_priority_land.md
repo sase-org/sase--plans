@@ -27,6 +27,7 @@ bead_id: sase-8e
 ---
 
 - **PROMPT:** [202607/prompts/wait_priority_land.md](prompts/wait_priority_land.md)
+- **BEAD:** [sase-8e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8e/README.md)
 
 # Plan: Integrate and land priority-aware runner-slot queues
 

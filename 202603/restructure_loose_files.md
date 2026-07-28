@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202603/prompts/restructure_loose_files.md](prompts/restructure_loose_files.md)
+- **BEAD:** [sase-8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8/README.md)
 
 # Plan: Restructure Loose Files in `src/sase/` (Option A)
 
@@ -86,15 +87,15 @@ The shims remain until the final cleanup phase, protecting any external consumer
 
 **Importers to update** (~30 import sites):
 
-- `agent_launcher`: 4 external importers (axe/lumberjack, axe/cli, main/query_handler/\_daemon,
-  ace/tui/actions/agent_workflow/\_agent_launch)
+- `agent_launcher`: 4 external importers (axe/lumberjack, axe/cli, main/query_handler/_daemon,
+  ace/tui/actions/agent_workflow/_agent_launch)
 - `agent_names`: 5 external importers (xprompts/resume.yml, axe/run_agent_phases, ace/tui/actions/rename,
   xprompt/directives, scripts/sase_chop_wait_checks)
 - `multi_prompt`: 8 external importers (agent_launcher, axe/run_agent_phases, main/xprompt_handler,
-  main/query_handler/special_cases×2, main/query_handler/\_resume, main/query_handler/\_query,
-  ace/tui/actions/agent_workflow/\_agent_launch×3)
+  main/query_handler/special_cases×2, main/query_handler/_resume, main/query_handler/_query,
+  ace/tui/actions/agent_workflow/_agent_launch×3)
 - `multi_prompt_launcher`: 4 external importers (agent_launcher, axe/run_agent_phases,
-  ace/tui/actions/agent_workflow/\_agent_launch, tests×3)
+  ace/tui/actions/agent_workflow/_agent_launch, tests×3)
 - Tests: test_agent_names.py, test_multi_prompt.py, test_multi_prompt_e2e.py, test_user_frontmatter.py,
   test_multi_prompt_launcher.py, test_xprompt_tags.py
 

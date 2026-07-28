@@ -6,6 +6,7 @@ status: wip
 ---
 
 - **PROMPT:** [202606/prompts/p0_onboarding.md](prompts/p0_onboarding.md)
+- **BEAD:** [sase-4j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4j/README.md)
 
 # Plan: Implement P0 New-User Onboarding Recommendations
 

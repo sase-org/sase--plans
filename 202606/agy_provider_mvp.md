@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/agy_provider_mvp.md](prompts/agy_provider_mvp.md)
+- **BEAD:** [sase-50](https://github.com/sase-org/sase--beads/blob/main/pages/sase-50/README.md)
 
 # Plan: Add an Antigravity (`agy`) LLM Provider MVP
 

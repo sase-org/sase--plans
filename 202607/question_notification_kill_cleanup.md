@@ -21,6 +21,7 @@ bead_id: sase-63
 ---
 
 - **PROMPT:** [202607/prompts/question_notification_kill_cleanup.md](prompts/question_notification_kill_cleanup.md)
+- **BEAD:** [sase-63](https://github.com/sase-org/sase--beads/blob/main/pages/sase-63/README.md)
 
 # Plan: Dismiss open question notifications when agents are killed
 

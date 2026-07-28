@@ -5,6 +5,8 @@ status: done
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** [sase-3p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3p/README.md)
+
 # Workspace Directory Layout Implementation Plan
 
 ## Goal

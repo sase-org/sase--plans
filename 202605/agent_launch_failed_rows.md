@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/agent_launch_failed_rows.md](prompts/agent_launch_failed_rows.md)
+- **BEAD:** sase-39
 
 # Plan: Agent Launch Failures Always Produce Agent Rows
 

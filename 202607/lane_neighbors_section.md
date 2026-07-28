@@ -66,6 +66,7 @@ bead_id: sase-99
 ---
 
 - **PROMPT:** [202607/prompts/lane_neighbors_section.md](prompts/lane_neighbors_section.md)
+- **BEAD:** [sase-99](https://github.com/sase-org/sase--beads/blob/main/pages/sase-99/README.md)
 
 # Plan: NEIGHBORS section for agent lane metadata panels
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202603/prompts/directory_restructure.md](prompts/directory_restructure.md)
+- **BEAD:** [sase-6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6/README.md)
 
 # Plan: Directory Structure Restructure
 
@@ -54,7 +55,7 @@ lowest-risk/simplest to highest-risk/most-complex. Each phase must:
 ## Phase 1: Move `axe_*` files into `axe/` package
 
 **Rationale**: The 10 `axe_*` files are axe code that was never packaged. They form a tight cluster — most imports are
-within the group (via `axe_runner_utils`), and the non-axe\_\* importers are few. The `axe/` package already exists.
+within the group (via `axe_runner_utils`), and the non-axe_\* importers are few. The `axe/` package already exists.
 This is the single highest-value, lowest-risk change.
 
 **Files to move** (drop the `axe_` prefix): | From | To | |---|---| | `axe_run_agent_runner.py` |
@@ -66,9 +67,9 @@ This is the single highest-value, lowest-risk change.
 
 **Import updates required**:
 
-- ~9 cross-imports within the axe\_\* group itself (e.g., `from sase.axe_runner_utils` → `from sase.axe.runner_utils`)
+- ~9 cross-imports within the axe_\* group itself (e.g., `from sase.axe_runner_utils` → `from sase.axe.runner_utils`)
 - External importers: mostly in `ace/`, `main/`, `xprompt/`, other root files
-- The `axe_runner_utils` module is imported by all 9 other axe\_\* files — but since they all move together, these
+- The `axe_runner_utils` module is imported by all 9 other axe_\* files — but since they all move together, these
   updates are straightforward
 
 **Also check**: The `axe/` package's `__init__.py` — may need to export new symbols or update `__all__`.

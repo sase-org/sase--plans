@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/project_spec_extension_sase.md](prompts/project_spec_extension_sase.md)
+- **BEAD:** [sase-33](https://github.com/sase-org/sase--beads/blob/main/pages/sase-33/README.md)
 
 # Change Project Spec Extension From `.gp` To `.sase`
 

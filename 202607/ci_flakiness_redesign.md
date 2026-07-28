@@ -47,6 +47,13 @@ bead_id: sase-am
 ---
 
 - **BEAD:** [sase-am](https://github.com/sase-org/sase--beads/blob/main/pages/sase-am/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nm](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nm/README.md)
+  - [bbugyi200.athena.sase-am.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.1/README.md)
+  - [bbugyi200.athena.sase-am.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.2/README.md)
+  - [bbugyi200.athena.sase-am.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.3/README.md)
+  - [bbugyi200.athena.sase-am.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.4/README.md)
+  - [bbugyi200.athena.sase-am.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.land/README.md)
 
 # Redesign GitHub Actions CI to Eliminate Unnecessary Flakiness
 

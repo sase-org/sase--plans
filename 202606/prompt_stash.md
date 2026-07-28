@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/prompt_stash.md](prompts/prompt_stash.md)
+- **BEAD:** [sase-4q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4q/README.md)
 
 # Plan: Prompt Stash — stash & restore prompt-input drafts
 

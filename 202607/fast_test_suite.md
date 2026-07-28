@@ -67,6 +67,7 @@ bead_id: sase-86
 ---
 
 - **PROMPT:** [202607/prompts/fast_test_suite.md](prompts/fast_test_suite.md)
+- **BEAD:** [sase-86](https://github.com/sase-org/sase--beads/blob/main/pages/sase-86/README.md)
 
 # Plan: Fast test suite under multi-agent load
 

@@ -4,6 +4,9 @@ status: done
 bead_id: sase-1b.8
 tier: epic
 ---
+
+- **BEAD:** [sase-1b.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b/sase-1b.8.md)
+
 # Rust Backend Phase 6H Handoff — Documentation, Rollback Plan, And Close-Out
 
 ## Scope landed in this phase

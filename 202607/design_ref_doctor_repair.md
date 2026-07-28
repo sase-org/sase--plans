@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/design_ref_doctor_repair.md](prompts/design_ref_doctor_repair.md)
 - **PARENT:** [202607/durable_plan_refs.md](https://github.com/sase-org/sase--plans/blob/main/202607/durable_plan_refs.md)
+- **BEAD:** [sase-9z.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9z/sase-9z.5.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9z.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9z.5/README.md)
   - [bbugyi200.athena.sase-9z.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9z.5.md#member-code)

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/pyvision_external_repos.md](prompts/pyvision_external_repos.md)
+- **BEAD:** [sase-2j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2j/README.md)
 
 # Pyvision External Repository References
 

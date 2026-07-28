@@ -11,7 +11,8 @@ status: done
 - **PROMPT:** [202607/prompts/var_set_multiline_values.md](prompts/var_set_multiline_values.md)
 - **AGENTS:**
   - [bbugyi200.athena.n0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n0.md#member-code)
-  - [bbugyi200.athena.n0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n0.md#member-plan)
+- **COMMITS:**
+  - [d5e1017](https://github.com/sase-org/sase/commit/d5e10175dfcc58a1d1df0e9b1800f5dcc1b87fa2) — feat(cli): support multiline output variable values
 
 # Plan: Accept Multi-Word and Multi-Line Values in `sase var set`
 

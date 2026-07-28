@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/resume_optional_name.md](prompts/resume_optional_name.md)
+- **BEAD:** [sase-22](https://github.com/sase-org/sase--beads/blob/main/pages/sase-22/README.md)
 
 # Plan: Optional `#resume` Name Input
 

@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/sase_plan.md](prompts/sase_plan.md)
+- **BEAD:** sase-owpf
 
 # Plan: `/sase_plan` and `/sase_questions` Skills
 

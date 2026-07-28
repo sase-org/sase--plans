@@ -7,6 +7,7 @@ tier: tale
 ---
 
 - **PROMPT:** [202606/prompts/agy_provider_final_gap.md](prompts/agy_provider_final_gap.md)
+- **BEAD:** [sase-50](https://github.com/sase-org/sase--beads/blob/main/pages/sase-50/README.md)
 
 # Close agy provider MVP verification gap
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/rust_backend_phase1.md](prompts/rust_backend_phase1.md)
+- **BEAD:** [sase-16](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16/README.md)
 
 # Rust Backend Migration Phase 1 Plan
 

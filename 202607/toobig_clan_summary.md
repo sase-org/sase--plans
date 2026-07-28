@@ -25,6 +25,7 @@ bead_id: sase-8l
 ---
 
 - **PROMPT:** [202607/prompts/toobig_clan_summary.md](prompts/toobig_clan_summary.md)
+- **BEAD:** [sase-8l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8l/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8l.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8l.1/README.md)
   - [bbugyi200.athena.sase-8l.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.1.md#member-code)

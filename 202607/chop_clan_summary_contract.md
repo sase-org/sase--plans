@@ -10,6 +10,7 @@ status: wip
 
 - **PROMPT:** [202607/prompts/chop_clan_summary_contract.md](prompts/chop_clan_summary_contract.md)
 - **PARENT:** [202607/toobig_clan_summary.md](https://github.com/sase-org/sase--plans/blob/main/202607/toobig_clan_summary.md)
+- **BEAD:** [sase-8l.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8l/sase-8l.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8l.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8l.1/README.md)
   - [bbugyi200.athena.sase-8l.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8l.1.md#member-code)

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/sase_chats_skill_1.md](prompts/sase_chats_skill_1.md)
+- **BEAD:** [sase-15](https://github.com/sase-org/sase--beads/blob/main/pages/sase-15/README.md)
 
 # Plan: `/sase_chats` Skill for Agent Chat Transcript Access
 

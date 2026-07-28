@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/agent_families_2.md](prompts/agent_families_2.md)
+- **BEAD:** [sase-3r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3r/README.md)
 
 # Agent Families Implementation Plan
 

@@ -52,6 +52,7 @@ bead_id: sase-9y
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_bead_isolation_and_visual_flakes.md](prompts/fix_ci_bead_isolation_and_visual_flakes.md)
+- **BEAD:** [sase-9y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9y/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9y.land/README.md)
   - [bbugyi200.athena.sase-9y.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9y.land.md#member-code)

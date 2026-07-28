@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/alt_named_ids.md](prompts/alt_named_ids.md)
+- **BEAD:** [sase-1w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1w/README.md)
 
 # Plan: Generalize Alternation Agent Naming IDs
 

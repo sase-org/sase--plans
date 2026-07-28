@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/alt_brace_syntax.md](prompts/alt_brace_syntax.md)
+- **BEAD:** [sase-52](https://github.com/sase-org/sase--beads/blob/main/pages/sase-52/README.md)
 
 # Plan: migrate alt shorthand from `%(...)` to `%{...}`
 

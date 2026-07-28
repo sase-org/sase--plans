@@ -4,6 +4,9 @@ bead_id: sase-1a.3
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1a.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1a/sase-1a.3.md)
+
 # Rust Backend Phase 5C Handoff: Rust Pure Git Parser Module and PyO3 Bindings
 
 ## Scope

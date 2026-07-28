@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-2tm
+
 # Multi-File Panel Support for Agent Entries
 
 ## Context

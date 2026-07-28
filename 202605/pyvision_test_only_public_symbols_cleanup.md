@@ -4,6 +4,9 @@ status: done
 bead_id: sase-3a
 tier: epic
 ---
+
+- **BEAD:** [sase-3a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3a/README.md)
+
 # Pyvision: Clean Up Public Symbols Newly-Unused After Test-Reference Exclusion
 
 ## Goal

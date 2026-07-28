@@ -71,6 +71,7 @@ bead_id: sase-8w
 ---
 
 - **PROMPT:** [202607/prompts/phase_sizes.md](prompts/phase_sizes.md)
+- **BEAD:** [sase-8w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8w/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8w.7.4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8w.7.4.land.md#member-code)
 

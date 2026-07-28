@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/runner_occupancy_analytics.md](prompts/runner_occupancy_analytics.md)
 - **PARENT:** [202607/runners_statistics.md](https://github.com/sase-org/sase--plans/blob/main/202607/runners_statistics.md)
+- **BEAD:** [sase-8j.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8j/sase-8j.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8j.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8j.1.md#member-code)
 

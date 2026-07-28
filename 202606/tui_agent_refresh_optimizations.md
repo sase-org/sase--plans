@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/tui_agent_refresh_optimizations.md](prompts/tui_agent_refresh_optimizations.md)
+- **BEAD:** [sase-4f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4f/README.md)
 
 # Plan: Remove Avoidable Full Agents-Tab Refreshes
 

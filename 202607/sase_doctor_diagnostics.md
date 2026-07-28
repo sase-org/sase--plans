@@ -5,6 +5,9 @@ tier: epic
 status: done
 research: sdd/research/202607/sase_doctor_diagnostics_consolidated_20260708.md
 ---
+
+- **BEAD:** [sase-5l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5l/README.md)
+
 # Plan: Expand `sase doctor` Diagnostic Coverage
 
 ## Problem & Product Context

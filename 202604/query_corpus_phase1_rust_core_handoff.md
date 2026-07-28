@@ -4,6 +4,9 @@ bead_id: sase-1o.1
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1o.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o/sase-1o.1.md)
+
 # Query Corpus Phase 1 Rust Core Handoff
 
 ## Changed

@@ -7,18 +7,14 @@ goal:
 bead: sase-ah
 ---
 
-- **PARENT:**
-  [202607/agent_publication_reliability.md](https://github.com/sase-org/sase--plans/blob/main/202607/agent_publication_reliability.md)
+- **PARENT:** [202607/agent_publication_reliability.md](https://github.com/sase-org/sase--plans/blob/main/202607/agent_publication_reliability.md)
 - **BEAD:** [sase-ah](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ah/README.md)
 - **AGENTS:**
-  - bbugyi200.athena.sase-ah.land--code
+  - [bbugyi200.athena.sase-ah.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ah.land.md#member-code)
+  - [bbugyi200.athena.sase-ah.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ah.land.md#member-plan)
 - **COMMITS:**
-  - [70c1bad](https://github.com/sase-org/sase--plans/commit/70c1bad837ffe3793f1ac982d6d0a678b022a0a3) — docs(plans):
-    restore prompt provenance links
-  - [c6ed839](https://github.com/sase-org/sase--plans/commit/c6ed839e38e6e5fb17de05434d55b6c9d17da2f7) — docs(plans):
-    finish agent publication reliability epic
-  - [8b355b2](https://github.com/sase-org/sase--plans/commit/8b355b2d855897701b4dfa7fa1919306126ba777) — docs(plans):
-    restore tribe wait prompt provenance
+  - [8d34bc9](https://github.com/sase-org/sase/commit/8d34bc9ae0f093f4170229cf78a7dafe8007a26f) — test: keep suite gate socket paths below Linux limits
+  - [7ba8b1c](https://github.com/sase-org/sase/commit/7ba8b1ceab7d6652e011ac4461c1745e69f91997) — test: preserve suite-gate holder status at timeout
 
 # Finish and land the agent-publication reliability epic
 

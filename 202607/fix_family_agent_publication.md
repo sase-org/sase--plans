@@ -63,13 +63,7 @@ bead_id: sase-ad
 ---
 
 - **PROMPT:** [202607/prompts/fix_family_agent_publication.md](prompts/fix_family_agent_publication.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-ad.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.1/README.md)
-  - [bbugyi200.athena.sase-ad.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.2/README.md)
-  - [bbugyi200.athena.sase-ad.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.3/README.md)
-  - [bbugyi200.athena.sase-ad.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.4/README.md)
-  - [bbugyi200.athena.sase-ad.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.5/README.md)
-  - [bbugyi200.athena.sase-ad.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ad.land/README.md)
+- **BEAD:** [sase-ad](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ad/README.md)
 
 # Plan: Repair agent-hood publication for family members and un-wedge the agents sidecar
 

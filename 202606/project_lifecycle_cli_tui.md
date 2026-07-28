@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/project_lifecycle_cli_tui.md](prompts/project_lifecycle_cli_tui.md)
+- **BEAD:** [sase-49](https://github.com/sase-org/sase--beads/blob/main/pages/sase-49/README.md)
 
 # Project Lifecycle CLI and TUI Implementation Plan
 

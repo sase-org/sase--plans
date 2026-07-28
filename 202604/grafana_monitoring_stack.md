@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/grafana_monitoring_stack.md](prompts/grafana_monitoring_stack.md)
+- **BEAD:** [sase-f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-f/README.md)
 
 # Plan: Prometheus Alerting Rules + Grafana Dashboard Provisioning
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/init_skills_1.md](prompts/init_skills_1.md)
+- **BEAD:** [sase-h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h/README.md)
 
 # Plan: `sase init-skills` Command
 

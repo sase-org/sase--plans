@@ -4,6 +4,9 @@ bead_id: sase-1o.5
 status: complete
 tier: epic
 ---
+
+- **BEAD:** [sase-1o.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o/sase-1o.5.md)
+
 # Query Corpus Phase 5 TUI Routing Handoff
 
 ## Changed

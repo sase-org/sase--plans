@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/custom_keymaps.md](prompts/custom_keymaps.md)
+- **BEAD:** sase-gjad
 
 # Plan: Configurable Keymaps for sase ace TUI
 

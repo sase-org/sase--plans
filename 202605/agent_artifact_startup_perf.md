@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/agent_artifact_startup_perf.md](prompts/agent_artifact_startup_perf.md)
+- **BEAD:** [sase-20](https://github.com/sase-org/sase--beads/blob/main/pages/sase-20/README.md)
 
 # `sase ace` Agent Artifact Startup Performance Plan
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/bead_event_log_migration.md](prompts/bead_event_log_migration.md)
+- **BEAD:** [sase-3n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3n/README.md)
 
 # Plan: Canonical Bead Event Log Migration
 

@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/dev_version_support.md](prompts/dev_version_support.md)
+- **BEAD:** [sase-5c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5c/README.md)
 
 # Dev-Version Support for `plugin list`, `update`, and the Admin Center "Updates" Tab
 

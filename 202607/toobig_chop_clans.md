@@ -49,6 +49,7 @@ bead_id: sase-7q
 ---
 
 - **PROMPT:** [202607/prompts/toobig_chop_clans.md](prompts/toobig_chop_clans.md)
+- **BEAD:** [sase-7q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7q/README.md)
 
 # Plan: Clan-scoped toobig chop launches
 

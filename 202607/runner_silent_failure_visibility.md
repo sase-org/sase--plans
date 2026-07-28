@@ -24,6 +24,7 @@ bead_id: sase-68
 ---
 
 - **PROMPT:** [202607/prompts/runner_silent_failure_visibility.md](prompts/runner_silent_failure_visibility.md)
+- **BEAD:** [sase-68](https://github.com/sase-org/sase--beads/blob/main/pages/sase-68/README.md)
 
 # Plan: Eliminate silent runner deaths; always surface failure output in the TUI
 

@@ -5,6 +5,9 @@ bead_id: sase-3b.1
 parent_bead_id: sase-3b
 tier: epic
 ---
+
+- **BEAD:** [sase-3b.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3b/sase-3b.1.md)
+
 # Rollback Manifest for `sase-37` Archive and Query Work
 
 Phase 1 is audit-only. This manifest is the handoff for later implementation

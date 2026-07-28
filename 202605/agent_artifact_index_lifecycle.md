@@ -4,6 +4,9 @@ tier: epic
 status: done
 create_time: '2026-07-08 16:10:05'
 ---
+
+- **BEAD:** [sase-3s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3s/README.md)
+
 # Plan: Agent Artifact Index Lifecycle For ACE Agents Tab
 
 ## Goal

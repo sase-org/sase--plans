@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/sase_var_output_variables.md](prompts/sase_var_output_variables.md)
+- **BEAD:** [sase-4a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4a/README.md)
 
 # Plan: `sase var` Output Variables and `/sase_var`
 

@@ -49,6 +49,7 @@ bead_id: sase-6g
 ---
 
 - **PROMPT:** [202607/prompts/xprompt_agent_families.md](prompts/xprompt_agent_families.md)
+- **BEAD:** [sase-6g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6g/README.md)
 
 # Plan: xprompt agent families via a `%family` directive
 

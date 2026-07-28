@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/sase_update_and_plugin_install.md](prompts/sase_update_and_plugin_install.md)
+- **BEAD:** [sase-58](https://github.com/sase-org/sase--beads/blob/main/pages/sase-58/README.md)
 
 # Plan: `sase update` + `sase plugin install` / `sase plugin update`
 

@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202606/prompts/models_panel.md](prompts/models_panel.md)
+- **BEAD:** [sase-5e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5e/README.md)
 
 # Plan: "Models" Panel — unified model-alias viewing, editing & temporary overrides
 

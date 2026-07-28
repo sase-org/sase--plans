@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-11 13:52:25'
 ---
 
+- **BEAD:** sase-0dw
+
 # Plan: Add PLANNING, CODING, and QUESTION agent statuses
 
 ## Context
@@ -233,7 +235,7 @@ override system doesn't try to re-apply a stale override.
 | `src/sase/ace/tui/widgets/prompt_panel/_workflow_display.py` | 1     | Status colors in detail metadata                                |
 | `src/sase/ace/tui/widgets/agent_detail.py`                   | 1     | Treat new statuses as active (auto-refresh file panels)         |
 | `src/sase/ace/tui/models/_loaders/_workflow_loaders.py`      | 1     | Include new statuses in PID liveness check                      |
-| `src/sase/ace/tui/actions/agents/_core.py`                   | 2     | Add override dicts, apply in \_load_agents, clean stale entries |
+| `src/sase/ace/tui/actions/agents/_core.py`                   | 2     | Add override dicts, apply in _load_agents, clean stale entries |
 | `src/sase/ace/tui/app.py`                                    | 2     | Initialize override dicts                                       |
 | `src/sase/ace/tui/actions/agents/_notifications.py`          | 2     | Detect plan/question notifications in polling                   |
 | `src/sase/ace/tui/actions/agents/_notification_actions.py`   | 3     | Agent matching + status updates on approve/reject/answer        |

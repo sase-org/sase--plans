@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-3ec
+
 # Plan: Add `#git` Workflow for Bare Git Repositories
 
 ## Context

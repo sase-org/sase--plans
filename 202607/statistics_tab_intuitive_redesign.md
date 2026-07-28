@@ -45,6 +45,7 @@ bead_id: sase-8a
 ---
 
 - **PROMPT:** [202607/prompts/statistics_tab_intuitive_redesign.md](prompts/statistics_tab_intuitive_redesign.md)
+- **BEAD:** [sase-8a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8a/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8a.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.1.md#member-code)
   - [bbugyi200.athena.sase-8a.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.2.md#member-code)

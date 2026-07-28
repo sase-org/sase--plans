@@ -115,6 +115,19 @@ bead_id: sase-ai
 ---
 
 - **PROMPT:** [202607/prompts/bead_pages.md](prompts/bead_pages.md)
+- **BEAD:** [sase-ai](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ai/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ai.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.1/README.md)
+  - [bbugyi200.athena.sase-ai.10](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.10/README.md)
+  - [bbugyi200.athena.sase-ai.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.2/README.md)
+  - [bbugyi200.athena.sase-ai.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.3/README.md)
+  - [bbugyi200.athena.sase-ai.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.4/README.md)
+  - [bbugyi200.athena.sase-ai.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.5/README.md)
+  - [bbugyi200.athena.sase-ai.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.6/README.md)
+  - [bbugyi200.athena.sase-ai.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.7/README.md)
+  - [bbugyi200.athena.sase-ai.8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.8/README.md)
+  - [bbugyi200.athena.sase-ai.9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.9/README.md)
+  - [bbugyi200.athena.sase-ai.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.land/README.md)
 
 # Plan: Published bead pages and the `SASE_BEAD` commit tag
 

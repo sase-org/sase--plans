@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/llm_retry_support.md](prompts/llm_retry_support.md)
+- **BEAD:** sase-8h82
 
 # Add Configurable LLM Provider Retry & Fallback Support
 

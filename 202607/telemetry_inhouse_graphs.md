@@ -66,6 +66,7 @@ bead_id: sase-6k
 ---
 
 - **PROMPT:** [202607/prompts/telemetry_inhouse_graphs.md](prompts/telemetry_inhouse_graphs.md)
+- **BEAD:** [sase-6k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6k/README.md)
 
 # Plan: In-house telemetry graphs for CLI and TUI
 

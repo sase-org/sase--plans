@@ -33,6 +33,7 @@ status: done
 bead_id: sase-6j
 ---
 
+- **BEAD:** [sase-6j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6j/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6j.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.1/README.md)
   - [bbugyi200.athena.sase-6j.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j.2/README.md)

@@ -15,6 +15,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/epic_launch_origin_and_land_sase9s.md](prompts/epic_launch_origin_and_land_sase9s.md)
 - **PARENT:** [202607/detached_epic_launch.md](https://github.com/sase-org/sase--plans/blob/main/202607/detached_epic_launch.md)
+- **BEAD:** [sase-9s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9s/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9s.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9s.land/README.md)
   - [bbugyi200.athena.sase-9s.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9s.land.md#member-code)

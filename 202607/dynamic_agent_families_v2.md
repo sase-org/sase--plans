@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/dynamic_agent_families_v2.md](prompts/dynamic_agent_families_v2.md)
+- **BEAD:** [sase-5g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5g/README.md)
 
 # Implementation Plan: Dynamic Agent Families v2
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/nvim_ctrl_t_completion.md](prompts/nvim_ctrl_t_completion.md)
+- **BEAD:** [sase-o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-o/README.md)
 
 # Plan: `<ctrl+t>` Completion Keymap for sase-nvim
 

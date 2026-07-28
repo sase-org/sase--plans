@@ -37,6 +37,7 @@ bead_id: sase-76
 ---
 
 - **PROMPT:** [202607/prompts/agent_metadata_vim_search.md](prompts/agent_metadata_vim_search.md)
+- **BEAD:** [sase-76](https://github.com/sase-org/sase--beads/blob/main/pages/sase-76/README.md)
 
 # Plan: Vim-style text search for the Agents-tab metadata panel
 

@@ -11,10 +11,8 @@ status: done
 - **PROMPT:** [202607/prompts/sidecar_repo_labels.md](prompts/sidecar_repo_labels.md)
 - **AGENTS:**
   - [bbugyi200.athena.n8.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n8.f0.f0.md#member-code)
-  - [bbugyi200.athena.n8.f0.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n8.f0.f0.md#member-plan)
 - **COMMITS:**
-  - [8049b46](https://github.com/sase-org/sase/commit/8049b46ccb83fa3f88ecb8aba4d70545111f19aa) — fix: label sidecar
-    commits by repository role
+  - [8049b46](https://github.com/sase-org/sase/commit/8049b46ccb83fa3f88ecb8aba4d70545111f19aa) — fix: label sidecar commits by repository role
 
 # Label sidecar commits/deltas by sidecar role, not `sdd`
 

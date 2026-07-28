@@ -11,7 +11,6 @@ status: done
 - **PROMPT:** [202607/prompts/fold_slow_tool_commands.md](prompts/fold_slow_tool_commands.md)
 - **AGENTS:**
   - [bbugyi200.athena.mr.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.f1.md#member-code)
-  - [bbugyi200.athena.mr.f1--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.f1.md#member-plan)
 - **COMMITS:**
   - [e73040a](https://github.com/sase-org/sase/commit/e73040accf00f09ec3d7a0dbc6657114aa159805) — feat(ace): add foldable slow tool call details
 

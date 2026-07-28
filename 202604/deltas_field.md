@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/deltas_field.md](prompts/deltas_field.md)
+- **BEAD:** [sase-13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-13/README.md)
 
 # Plan: DELTAS ChangeSpec Field
 

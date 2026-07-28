@@ -5,6 +5,8 @@ tier: epic
 create_time: '2026-07-11 13:52:25'
 ---
 
+- **BEAD:** sase-cjj
+
 # Plan: Migrate VCS Provider to Pluggy Plugin Architecture
 
 ## Context

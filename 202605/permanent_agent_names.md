@@ -6,6 +6,7 @@ status: done
 ---
 
 - **PROMPT:** [202605/prompts/permanent_agent_names.md](prompts/permanent_agent_names.md)
+- **BEAD:** [sase-2e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2e/README.md)
 
 # Permanent Agent Names
 

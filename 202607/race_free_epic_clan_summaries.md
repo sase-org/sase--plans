@@ -43,6 +43,7 @@ bead_id: sase-8i
 ---
 
 - **PROMPT:** [202607/prompts/race_free_epic_clan_summaries.md](prompts/race_free_epic_clan_summaries.md)
+- **BEAD:** [sase-8i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8i/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8i.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.2.md#member-code)
   - [bbugyi200.athena.sase-8i.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8i.3/README.md)

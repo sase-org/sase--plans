@@ -78,16 +78,10 @@ bead_id: sase-ae
 ---
 
 - **PROMPT:** [202607/prompts/skill_deploy_thrash.md](prompts/skill_deploy_thrash.md)
+- **BEAD:** [sase-ae](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ae/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-ae.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ae.1/README.md)
-  - [bbugyi200.athena.sase-ae.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ae.2/README.md)
-  - [bbugyi200.athena.sase-ae.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ae.3/README.md)
-  - [bbugyi200.athena.sase-ae.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ae.4/README.md)
-  - [bbugyi200.athena.sase-ae.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ae.5/README.md)
   - [bbugyi200.athena.sase-ae.6--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.6.md#member-1)
-  - [bbugyi200.athena.sase-ae.6--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.6.md#member-plan)
   - [bbugyi200.athena.sase-ae.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.land.md#member-code)
-  - [bbugyi200.athena.sase-ae.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.land.md#member-plan)
 - **COMMITS:**
   - [7d85188](https://github.com/sase-org/sase/commit/7d85188c18080e4e986e8fd65394144c8ae9ce2f) — test(skills): cover backwards manifest ABA refusal (sase-ae)
 

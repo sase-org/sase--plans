@@ -47,13 +47,11 @@ bead_id: sase-af
 ---
 
 - **PROMPT:** [202607/prompts/lumberjack_wait_runners.md](prompts/lumberjack_wait_runners.md)
+- **BEAD:** [sase-af](https://github.com/sase-org/sase--beads/blob/main/pages/sase-af/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.mv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mv/README.md)
-  - [bbugyi200.athena.sase-af.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-af.1/README.md)
-  - [bbugyi200.athena.sase-af.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-af.2/README.md)
-  - [bbugyi200.athena.sase-af.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-af.3/README.md)
   - [bbugyi200.athena.sase-af.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-code)
-  - [bbugyi200.athena.sase-af.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-plan)
+- **COMMITS:**
+  - [a643a86](https://github.com/sase-org/sase/commit/a643a864c33b1eb864f570c9e009ff89d313a69f) — fix(sdd): keep published core integration commit-safe (sase-af)
 
 # Plan: Lane-level runner-slot gating for AXE lumberjacks
 

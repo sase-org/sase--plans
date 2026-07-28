@@ -33,6 +33,7 @@ bead_id: sase-6q
 ---
 
 - **PROMPT:** [202607/prompts/big_epic_lander.md](prompts/big_epic_lander.md)
+- **BEAD:** [sase-6q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6q/README.md)
 
 # Plan: Threshold-aware big epic lander routing
 

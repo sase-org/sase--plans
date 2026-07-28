@@ -53,6 +53,7 @@ bead_id: sase-80
 ---
 
 - **PROMPT:** [202607/prompts/axe_test_isolation_leak.md](prompts/axe_test_isolation_leak.md)
+- **BEAD:** [sase-80](https://github.com/sase-org/sase--beads/blob/main/pages/sase-80/README.md)
 
 # Plan: Fix pytest leakage that bricks the real axe daemon and strands WAITING agents
 

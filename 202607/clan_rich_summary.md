@@ -66,6 +66,7 @@ bead_id: sase-7r
 ---
 
 - **PROMPT:** [202607/prompts/clan_rich_summary.md](prompts/clan_rich_summary.md)
+- **BEAD:** [sase-7r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7r/README.md)
 
 # Plan: Rich-text clan summaries via %clan
 

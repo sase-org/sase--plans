@@ -5,6 +5,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** sase-70gx
+
 # Telegram Integration Plan
 
 ## Context

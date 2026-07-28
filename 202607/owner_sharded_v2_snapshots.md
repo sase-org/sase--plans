@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/owner_sharded_v2_snapshots.md](prompts/owner_sharded_v2_snapshots.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
+- **BEAD:** [sase-8v.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.4.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8v.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8v.4/README.md)
   - [bbugyi200.athena.sase-8v.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8v.4.md#member-code)

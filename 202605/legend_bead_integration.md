@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/legend_bead_integration.md](prompts/legend_bead_integration.md)
+- **BEAD:** [sase-21](https://github.com/sase-org/sase--beads/blob/main/pages/sase-21/README.md)
 
 # Improve Legend Bead Integration
 

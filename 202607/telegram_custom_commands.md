@@ -29,6 +29,7 @@ bead_id: sase-6f
 ---
 
 - **PROMPT:** [202607/prompts/telegram_custom_commands.md](prompts/telegram_custom_commands.md)
+- **BEAD:** [sase-6f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6f/README.md)
 
 # Plan: User-defined Telegram slash commands (+ first use case: /tasks)
 

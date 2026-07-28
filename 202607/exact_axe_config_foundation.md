@@ -11,6 +11,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/exact_axe_config_foundation.md](prompts/exact_axe_config_foundation.md)
 - **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
+- **BEAD:** [sase-8m.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8m/sase-8m.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8m.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8m.1/README.md)
   - [bbugyi200.athena.sase-8m.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8m.1.md#member-code)

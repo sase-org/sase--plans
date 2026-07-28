@@ -6,6 +6,7 @@ create_time: '2026-07-08 16:10:05'
 ---
 
 - **PROMPT:** [202603/prompts/prompt_widget_improvements.md](prompts/prompt_widget_improvements.md)
+- **BEAD:** sase-1
 
 # Plan: Prompt Widget Improvements (TextArea)
 

@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/lsp_sase_snippets.md](prompts/lsp_sase_snippets.md)
+- **BEAD:** [sase-2f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2f/README.md)
 
 # Plan: Expose SASE Snippets Through The XPrompt LSP
 

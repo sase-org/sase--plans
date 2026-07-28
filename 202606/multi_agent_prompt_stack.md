@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/multi_agent_prompt_stack.md](prompts/multi_agent_prompt_stack.md)
+- **BEAD:** [sase-4p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4p/README.md)
 
 # Multi-Agent Prompt Stack Plan
 

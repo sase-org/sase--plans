@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202604/prompts/dynamic_tag_panels.md](prompts/dynamic_tag_panels.md)
+- **BEAD:** [sase-s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-s/README.md)
 
 # Plan: Dynamic Tag Panels on the Agents Tab
 

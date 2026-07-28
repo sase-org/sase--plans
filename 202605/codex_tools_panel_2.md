@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/codex_tools_panel_2.md](prompts/codex_tools_panel_2.md)
+- **BEAD:** [sase-3k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3k/README.md)
 
 # Plan: Codex Support For The Agents Tab Tools Panel
 

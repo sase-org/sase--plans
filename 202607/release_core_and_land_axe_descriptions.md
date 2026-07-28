@@ -13,6 +13,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/release_core_and_land_axe_descriptions.md](prompts/release_core_and_land_axe_descriptions.md)
 - **PARENT:** [202607/axe_required_descriptions.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_required_descriptions.md)
+- **BEAD:** [sase-9t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9t/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9t.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9t.land/README.md)
   - [bbugyi200.athena.sase-9t.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9t.land.md#member-code)

@@ -4,6 +4,9 @@ status: done
 bead_id: sase-1b.3
 tier: epic
 ---
+
+- **BEAD:** [sase-1b.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b/sase-1b.3.md)
+
 # Rust Backend Phase 6C Handoff — Backend Contract Audit And Fallback Tests
 
 ## Scope landed in this phase

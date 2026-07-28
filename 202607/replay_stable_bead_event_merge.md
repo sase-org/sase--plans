@@ -10,6 +10,7 @@ status: done
 
 - **PROMPT:** [202607/prompts/replay_stable_bead_event_merge.md](prompts/replay_stable_bead_event_merge.md)
 - **PARENT:** [202607/bead_merge_replay_stability.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_merge_replay_stability.md)
+- **BEAD:** [sase-9x.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9x/sase-9x.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9x.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9x.1.md#member-code)
 

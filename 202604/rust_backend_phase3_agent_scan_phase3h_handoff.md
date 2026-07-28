@@ -5,6 +5,8 @@ bead_id: sase-18.8
 tier: epic
 ---
 
+- **BEAD:** [sase-18.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18/sase-18.8.md)
+
 # Rust Backend Phase 3H — Verification, Rollout Decision, and Handoff
 
 Closes Phase 3 of `plans/202604/rust_backend_phase3_agent_scan.md`. Records

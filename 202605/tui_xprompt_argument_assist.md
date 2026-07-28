@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202605/prompts/tui_xprompt_argument_assist.md](prompts/tui_xprompt_argument_assist.md)
+- **BEAD:** [sase-28](https://github.com/sase-org/sase--beads/blob/main/pages/sase-28/README.md)
 
 # Plan: TUI XPrompt Argument Completion And Hints
 

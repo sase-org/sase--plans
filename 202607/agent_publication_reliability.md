@@ -45,6 +45,17 @@ bead_id: sase-ah
 ---
 
 - **PROMPT:** [202607/prompts/agent_publication_reliability.md](prompts/agent_publication_reliability.md)
+- **BEAD:** [sase-ah](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ah/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ag.land.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.land.f0/README.md)
+  - [bbugyi200.athena.sase-ah.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ah.1/README.md)
+  - [bbugyi200.athena.sase-ah.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ah.2/README.md)
+  - [bbugyi200.athena.sase-ah.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ah.3/README.md)
+  - [bbugyi200.athena.sase-ah.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ah.land.md#member-code)
+  - [bbugyi200.athena.sase-ah.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ah.land.md#member-plan)
+- **COMMITS:**
+  - [8d34bc9](https://github.com/sase-org/sase/commit/8d34bc9ae0f093f4170229cf78a7dafe8007a26f) — test: keep suite gate socket paths below Linux limits
+  - [7ba8b1c](https://github.com/sase-org/sase/commit/7ba8b1ceab7d6652e011ac4461c1745e69f91997) — test: preserve suite-gate holder status at timeout
 
 # Plan: Make post-commit agent publication survive sidecar commits and unpublishable hoods
 

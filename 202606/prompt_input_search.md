@@ -6,6 +6,7 @@ tier: epic
 ---
 
 - **PROMPT:** [202606/prompts/prompt_input_search.md](prompts/prompt_input_search.md)
+- **BEAD:** [sase-4v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4v/README.md)
 
 # Plan: Vim-style Forward/Reverse Search in the Prompt Input Widget
 

@@ -52,6 +52,7 @@ bead_id: sase-8h
 ---
 
 - **PROMPT:** [202607/prompts/commits_filter_correctness.md](prompts/commits_filter_correctness.md)
+- **BEAD:** [sase-8h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8h/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8h.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1/README.md)
   - [bbugyi200.athena.sase-8h.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.md#member-code)
