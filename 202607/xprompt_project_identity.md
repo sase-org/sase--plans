@@ -59,6 +59,7 @@ phases:
     '
 create_time: 2026-07-28 07:41:09
 status: wip
+bead_id: sase-ac
 ---
 
 # Plan: Fix project-local xprompt completion by canonicalizing project identity
