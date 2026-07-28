@@ -12,6 +12,12 @@ status: done
 - **PROMPT:** [202607/prompts/land_plan_header_provenance.md](prompts/land_plan_header_provenance.md)
 - **PARENT:**
   [202607/plan_header_provenance.md](https://github.com/sase-org/sase--plans/blob/main/202607/plan_header_provenance.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ag.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ag.land.md#member-code)
+  - [bbugyi200.athena.sase-ag.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ag.land.md#member-plan)
+- **COMMITS:**
+  - [702f1ae](https://github.com/sase-org/sase/commit/702f1aece2375113427d437497924e960d5ca735) — build(deps): require
+    sase-core-rs 0.12.4 (sase-ag)
 
 # Plan: Land the plan-header provenance epic on a published core floor
 
