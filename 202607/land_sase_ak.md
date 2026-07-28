@@ -14,11 +14,10 @@ status: done
   [202607/tribe_wait_reference_validation_and_display.md](https://github.com/sase-org/sase--plans/blob/main/202607/tribe_wait_reference_validation_and_display.md)
 - **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-ak.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ak.land.md#member-code)
-  - [bbugyi200.athena.sase-ak.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ak.land.md#member-plan)
+  - bbugyi200.athena.sase-ak.land--code
 - **COMMITS:**
-  - [0b3d16c](https://github.com/sase-org/sase/commit/0b3d16ce40b7b0d20aa504d748c4147d3dfc9967) — fix(ace): finish tribe
-    wait integration
+  - [a9cbf16](https://github.com/sase-org/sase--plans/commit/a9cbf16b70acc759c1ec2fd3b2a031ee64d3171b) — docs: mark
+    tribe wait epic complete
 
 # Land `sase-ak` after integrating post-epic changes
 
