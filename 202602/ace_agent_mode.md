@@ -4,6 +4,8 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
+- **BEAD:** [sase-oqr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-oqr/README.md)
+
 # Plan: Native Agent Mode for `sase ace`
 
 ## Context
