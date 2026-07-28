@@ -5,7 +5,7 @@ goal: The published core dependency is truthful, the lane-level runner gate rema
   verified, and sase-af is closed with its durable plan marked done.
 bead: sase-af
 create_time: 2026-07-28 11:04:28
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_lumberjack_wait_runners.md](prompts/land_lumberjack_wait_runners.md)
