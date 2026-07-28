@@ -6,7 +6,7 @@ goal:
   it does not, and sase-ag is closed.
 bead: sase-ag
 create_time: 2026-07-28 13:12:58
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_plan_header_provenance.md](prompts/land_plan_header_provenance.md)
