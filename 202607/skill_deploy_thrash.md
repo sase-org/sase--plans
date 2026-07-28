@@ -74,6 +74,7 @@ phases:
     '
 create_time: 2026-07-27 15:38:50
 status: wip
+bead_id: sase-aa
 ---
 
 # Stop `sase skill init` Skill-Deployment Thrashing
