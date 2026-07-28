@@ -42,7 +42,7 @@ phases:
     and sdd-store heredoc with a tools/ci_bootstrap_sidecars script generated from
     sase/sase.yml, with unit tests locking the store shape.'
 create_time: 2026-07-28 18:05:46
-status: wip
+status: done
 bead_id: sase-am
 ---
 
