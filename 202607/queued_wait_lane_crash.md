@@ -10,6 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/queued_wait_lane_crash.md](prompts/queued_wait_lane_crash.md)
+- **AGENTS:**
+  - [bbugyi200.athena.no--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.no.md#member-code)
+  - [bbugyi200.athena.no--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.no.md#member-plan)
+- **COMMITS:**
+  - [212472e](https://github.com/sase-org/sase/commit/212472e3acc6c84d639c269c8110000bf1cfa49a) — fix(ace): render
+    explicit waits for queued agents
 
 # Plan: Fix ace TUI crash on queued agents with explicit runner/priority waits
 
