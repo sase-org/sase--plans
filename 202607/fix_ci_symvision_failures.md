@@ -5,7 +5,7 @@ goal:
   Restore deterministic SASE CI by correcting two invalid public APIs while preserving publication behavior and test
   coverage.
 create_time: 2026-07-28 15:03:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_symvision_failures.md](prompts/fix_ci_symvision_failures.md)
