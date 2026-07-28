@@ -7,6 +7,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/telegram_list_queued_count.md](prompts/telegram_list_queued_count.md)
+- **AGENTS:**
+  - bbugyi200.athena.np--code
+- **COMMITS:**
+  - [fa52259](https://github.com/sase-org/sase-telegram/commit/fa522590d7999a1c595ad2d26cc713b2db29387a) — fix: include
+    queued agents in Telegram list status
 
 # Plan: Show queued-agent counts in the Telegram `/list` summary
 
