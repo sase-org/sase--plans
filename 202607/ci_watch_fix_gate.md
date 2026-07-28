@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ci_watch_fix_gate.md](prompts/ci_watch_fix_gate.md)
+- **AGENTS:**
+  - bbugyi200.athena.nn--code
+- **COMMITS:**
+  - [156a2d9](https://github.com/bbugyi200/bugyi-chops/commit/156a2d9fc1be8846854f95b7bd1e3f5251627183) — fix(ci-watch):
+    scope repair gate to ci_fix hood
 
 # Fix ci_watch Fix-Proposal Starvation (Hood-Scoped Gate + Lane wait_runners)
 
