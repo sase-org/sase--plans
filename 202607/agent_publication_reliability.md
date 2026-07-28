@@ -41,6 +41,7 @@ phases:
     '
 create_time: 2026-07-28 14:19:09
 status: wip
+bead_id: sase-ah
 ---
 
 # Plan: Make post-commit agent publication survive sidecar commits and unpublishable hoods
