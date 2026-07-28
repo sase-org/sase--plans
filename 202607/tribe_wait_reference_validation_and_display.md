@@ -55,6 +55,7 @@ status: wip
 bead_id: sase-ak
 ---
 
+- **PROMPT:** [202607/prompts/tribe_wait_reference_validation_and_display.md](prompts/tribe_wait_reference_validation_and_display.md)
 - **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
 
 # Plan: Validate and display `%wait` agent-tribe references correctly
