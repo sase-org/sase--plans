@@ -60,6 +60,7 @@ phases:
     they are shown.'
 create_time: 2026-07-28 09:48:54
 status: wip
+bead_id: sase-ag
 ---
 
 # Plan: Plan-file provenance header block
