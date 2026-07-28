@@ -4,7 +4,7 @@ title: Show configured project names, never ProjectSpec keys
 goal: Every user-facing project reference in the Artifacts Commits filter surface
   renders the configured PROJECT_NAME, and a memory gotcha keeps the rule from regressing.
 create_time: 2026-07-28 08:46:38
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/project_name_display.md](prompts/project_name_display.md)
