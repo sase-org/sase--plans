@@ -46,6 +46,8 @@ status: wip
 bead_id: sase-af
 ---
 
+- **PROMPT:** [202607/prompts/lumberjack_wait_runners.md](prompts/lumberjack_wait_runners.md)
+
 # Plan: Lane-level runner-slot gating for AXE lumberjacks
 
 ## Goal
