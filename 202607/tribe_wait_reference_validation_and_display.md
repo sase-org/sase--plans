@@ -52,7 +52,10 @@ phases:
     '
 create_time: 2026-07-28 17:04:51
 status: wip
+bead_id: sase-ak
 ---
+
+- **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
 
 # Plan: Validate and display `%wait` agent-tribe references correctly
 
