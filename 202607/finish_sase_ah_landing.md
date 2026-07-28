@@ -10,6 +10,15 @@ bead: sase-ah
 - **PARENT:**
   [202607/agent_publication_reliability.md](https://github.com/sase-org/sase--plans/blob/main/202607/agent_publication_reliability.md)
 - **BEAD:** [sase-ah](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ah/README.md)
+- **AGENTS:**
+  - bbugyi200.athena.sase-ah.land--code
+- **COMMITS:**
+  - [70c1bad](https://github.com/sase-org/sase--plans/commit/70c1bad837ffe3793f1ac982d6d0a678b022a0a3) — docs(plans):
+    restore prompt provenance links
+  - [c6ed839](https://github.com/sase-org/sase--plans/commit/c6ed839e38e6e5fb17de05434d55b6c9d17da2f7) — docs(plans):
+    finish agent publication reliability epic
+  - [8b355b2](https://github.com/sase-org/sase--plans/commit/8b355b2d855897701b4dfa7fa1919306126ba777) — docs(plans):
+    restore tribe wait prompt provenance
 
 # Finish and land the agent-publication reliability epic
 
