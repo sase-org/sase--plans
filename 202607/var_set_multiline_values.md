@@ -5,7 +5,7 @@ goal: An agent can publish an output-variable value containing spaces and newlin
   through an unambiguous CLI input path, values are normalized and size-checked at
   write time, and the documented contract matches the implementation.
 create_time: 2026-07-28 11:30:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/var_set_multiline_values.md](prompts/var_set_multiline_values.md)
