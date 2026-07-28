@@ -6,7 +6,7 @@ goal:
   max_running_agents cap or an authored %wait(runners=N) directive, and WAITING is reserved for agents still blocked on
   an authored dependency.
 create_time: 2026-07-28 17:46:09
-status: wip
+status: done
 ---
 
 - **PROMPT:**
