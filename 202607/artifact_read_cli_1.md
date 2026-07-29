@@ -6,7 +6,7 @@ goal:
   compatible CLI group.
 bead: sase-ax.3
 create_time: 2026-07-29 17:41:40
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifact_read_cli_1.md](prompts/artifact_read_cli_1.md)
