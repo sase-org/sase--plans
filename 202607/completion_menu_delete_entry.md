@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/completion_menu_delete_entry.md](prompts/completion_menu_delete_entry.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ny.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ny.f0.md#member-code)
+  - [bbugyi200.athena.ny.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ny.f0.md#member-plan)
+- **COMMITS:**
+  - [1054f3b](https://github.com/sase-org/sase/commit/1054f3b79dc1f8b71e8f5b2913f18f3b0a90a699) — feat(ace): delete
+    persistent completion entries
 
 # Plan: Delete common completion entries with `Ctrl+D`
 
