@@ -5,7 +5,7 @@ goal:
   Pressing J in a prompt pane joins the next line onto the current one with its leading `- ` bullet marker removed, so
   folding a bullet into the line above no longer leaves a stray dash mid-sentence.
 create_time: 2026-07-29 08:15:27
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_join_strips_bullet_marker.md](prompts/prompt_join_strips_bullet_marker.md)
