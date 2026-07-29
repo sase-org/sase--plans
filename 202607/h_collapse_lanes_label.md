@@ -6,7 +6,7 @@ goal:
   step of the uppercase-H collapse ladder "lanes" — the actual glossary term — instead of the metaphor-only word
   "houses", with H's behavior unchanged.
 create_time: 2026-07-29 06:35:39
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/h_collapse_lanes_label.md](prompts/h_collapse_lanes_label.md)
