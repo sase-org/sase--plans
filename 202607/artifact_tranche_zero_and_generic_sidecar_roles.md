@@ -103,10 +103,12 @@ phases:
 
     '
 create_time: 2026-07-29 10:30:48
-status: wip
+status: done
 bead_id: sase-as
 ---
 
+- **PROMPT:**
+  [202607/prompts/artifact_tranche_zero_and_generic_sidecar_roles.md](prompts/artifact_tranche_zero_and_generic_sidecar_roles.md)
 - **BEAD:** [sase-as](https://github.com/sase-org/sase--beads/blob/main/pages/sase-as/README.md)
 
 # Plan: Artifact tranche-zero defects and generic document-sidecar roles
