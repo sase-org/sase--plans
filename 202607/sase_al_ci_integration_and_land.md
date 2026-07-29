@@ -21,6 +21,8 @@ status: done
     SDD store record
   - [887999f](https://github.com/sase-org/sase/commit/887999fb5d0c7acd0ca0a232e9a98f33d1fcc182) — fix(ci): stabilize
     full matrix isolation
+  - [14b30c4](https://github.com/sase-org/sase/commit/14b30c411fe4ab371048b9b38d28dfad9bca3c06) — test: make task help
+    aliases version-neutral
 
 # Finish sase-al CI integration and land the epic
 
