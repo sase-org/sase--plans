@@ -8,6 +8,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/raise_history_word_count_default.md](prompts/raise_history_word_count_default.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ny--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ny.md#member-code)
+  - [bbugyi200.athena.ny--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ny.md#member-plan)
+- **COMMITS:**
+  - [4ee5cd0](https://github.com/sase-org/sase/commit/4ee5cd092b45fe813c6e359f04f9248f8ff71c6a) — feat(ace): raise
+    history word completion default
 
 # Plan: Raise the ACE history-word completion default to 10,000
 
