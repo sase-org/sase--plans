@@ -48,6 +48,14 @@ bead_id: sase-ax
 ---
 
 - **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ov](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ov/README.md)
+  - [bbugyi200.athena.sase-ax.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ax.1/README.md)
+  - [bbugyi200.athena.sase-ax.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ax.2/README.md)
+  - [bbugyi200.athena.sase-ax.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.3.md#member-code)
+  - [bbugyi200.athena.sase-ax.3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.3.md#member-plan)
+  - [bbugyi200.athena.sase-ax.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ax.4/README.md)
+  - [bbugyi200.athena.sase-ax.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ax.land/README.md)
 
 # Ship `sase artifact` as a read CLI, and add three record fields
 
