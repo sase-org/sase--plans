@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_close_phases.md](prompts/bead_close_phases.md)
+- **AGENTS:**
+  - [bbugyi200.athena.oe--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.oe.md#member-code)
+  - [bbugyi200.athena.oe--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.oe.md#member-plan)
+- **COMMITS:**
+  - [1f0296a](https://github.com/sase-org/sase/commit/1f0296ade1a22ac55dbd93d410f0247e6befba3a) — feat(bead): close
+    selected epic phases
 
 # Add `-p|--phases` to `sase bead close`
 
