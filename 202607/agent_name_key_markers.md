@@ -68,7 +68,10 @@ phases:
     '
 create_time: 2026-07-29 09:07:16
 status: wip
+bead_id: sase-aq
 ---
+
+- **BEAD:** [sase-aq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aq/README.md)
 
 # Plan: Keyed `{@<id>}` agent-name markers for xprompt swarms
 
