@@ -38,7 +38,7 @@ phases:
     extension, centered n/N jumps with wraparound, an escape ladder, rendered-to-source
     auto-switch, perf guards, and unit/pilot/PNG tests plus docs.'
 create_time: 2026-07-29 16:59:00
-status: wip
+status: done
 bead_id: sase-aw
 ---
 
