@@ -5,7 +5,7 @@ goal:
   Every Admin Center Statistics sub-tab is labeled with its 1-based number, and pressing the configurable prefix key `0`
   followed by that digit activates the corresponding view without disturbing the Admin Center's own numbered tab keys.
 create_time: 2026-07-29 14:06:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/statistics_numbered_subtabs.md](prompts/statistics_numbered_subtabs.md)
