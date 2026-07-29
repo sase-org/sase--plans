@@ -5,7 +5,7 @@ goal:
   CHANGELOG.md contains only release-please-generated sections, the three entries release-please never generated are
   backfilled into v0.12.0, and a lint guard fails any future hand-written changelog section.
 create_time: 2026-07-29 12:10:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/changelog_unreleased_cleanup.md](prompts/changelog_unreleased_cleanup.md)
