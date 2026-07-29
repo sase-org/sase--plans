@@ -19,6 +19,8 @@ status: done
 - **COMMITS:**
   - [41a01b3](https://github.com/sase-org/sase/commit/41a01b397c79303acad241f2a44822193b3aeb32) — ci: emit valid split
     SDD store record
+  - [887999f](https://github.com/sase-org/sase/commit/887999fb5d0c7acd0ca0a232e9a98f33d1fcc182) — fix(ci): stabilize
+    full matrix isolation
 
 # Finish sase-al CI integration and land the epic
 
