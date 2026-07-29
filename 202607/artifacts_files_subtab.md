@@ -74,7 +74,10 @@ phases:
     the stale path-copy doc line.'
 create_time: 2026-07-29 19:13:43
 status: wip
+bead_id: sase-b0
 ---
+
+- **BEAD:** [sase-b0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b0/README.md)
 
 # Plan: Artifacts → Files sub-tab
 
