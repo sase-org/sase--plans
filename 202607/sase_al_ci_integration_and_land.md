@@ -14,17 +14,12 @@ status: done
   [202607/fix_ci_core_clippy_and_minimum.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_core_clippy_and_minimum.md)
 - **BEAD:** [sase-al](https://github.com/sase-org/sase--beads/blob/main/pages/sase-al/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-al.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-al.land.md#member-code)
-  - [bbugyi200.athena.sase-al.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-al.land.md#member-plan)
+  - bbugyi200.athena.sase-al.land--code
 - **COMMITS:**
-  - [41a01b3](https://github.com/sase-org/sase/commit/41a01b397c79303acad241f2a44822193b3aeb32) — ci: emit valid split
-    SDD store record
-  - [887999f](https://github.com/sase-org/sase/commit/887999fb5d0c7acd0ca0a232e9a98f33d1fcc182) — fix(ci): stabilize
-    full matrix isolation
-  - [14b30c4](https://github.com/sase-org/sase/commit/14b30c411fe4ab371048b9b38d28dfad9bca3c06) — test: make task help
-    aliases version-neutral
-  - [07aaac0](https://github.com/sase-org/sase/commit/07aaac0d726f94390c8ad0d0c4c1a5a129c610d1) — test: identify final
-    deep archive request
+  - [0266e43](https://github.com/sase-org/sase--plans/commit/0266e43f8fd9a126b294ced1576c27f4eeb0f379) — docs: restore
+    CI epic prompt links
+  - [a535a33](https://github.com/sase-org/sase--plans/commit/a535a335e0aab861d6fabe4c6cdbe50459d88db0) — docs: mark
+    sase-al epic plan complete
 
 # Finish sase-al CI integration and land the epic
 
