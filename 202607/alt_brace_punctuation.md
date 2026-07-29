@@ -10,10 +10,11 @@ status: done
 
 - **PROMPT:** [202607/prompts/alt_brace_punctuation.md](prompts/alt_brace_punctuation.md)
 - **AGENTS:**
-  - bbugyi200.athena.ox--code
+  - [bbugyi200.athena.ox--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ox.md#member-code)
+  - [bbugyi200.athena.ox--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ox.md#member-plan)
 - **COMMITS:**
-  - [4b3c4a8](https://github.com/sase-org/sase-nvim/commit/4b3c4a85748c28e69058f16d0210ea3b4c8d6c4a) — feat: allow alt
-    brace padding before punctuation
+  - [a79dad1](https://github.com/sase-org/sase/commit/a79dad1639a7a54406a4c185fdc15be00d8e8628) — feat(ace): allow alt
+    braces before punctuation
 
 # Plan: Expand `%{` before trailing punctuation
 
