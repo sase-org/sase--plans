@@ -5,7 +5,7 @@ goal:
   "`sase config init` always materializes the machine overlay in the chezmoi source tree, adds a hostname-guarded
   `.chezmoiignore` stanza for it, and stages both files so the commit/push/apply deployment carries them."
 create_time: 2026-07-29 10:39:15
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/config_init_chezmoi_ignore.md](prompts/config_init_chezmoi_ignore.md)
