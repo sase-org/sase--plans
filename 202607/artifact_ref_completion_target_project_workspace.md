@@ -6,7 +6,7 @@ goal:
   project targeted by the prompt's VCS tag, including custom roles, regardless of which session context owns the prompt
   bar.
 create_time: 2026-07-29 16:44:35
-status: wip
+status: done
 ---
 
 - **PROMPT:**
