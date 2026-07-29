@@ -13,6 +13,12 @@ status: done
 - **PARENT:**
   [202607/artifact_read_cli.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_read_cli.md)
 - **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ax.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.land.md#member-code)
+  - [bbugyi200.athena.sase-ax.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.land.md#member-plan)
+- **COMMITS:**
+  - [af42951](https://github.com/sase-org/sase/commit/af42951798753ef28a2c73e75bcbef1780dbfb83) — perf: warm artifact
+    completion through Rust query
 
 # Integrate and land `sase-ax`
 
