@@ -6,7 +6,7 @@ goal:
   `audit_improvements.<project>.@` so SASE allocates a short alphanumeric token (`audit_bugs.sase.0`, `.1`, ... `.z`,
   `.00`) instead of embedding a 12-character git revision in the agent name.
 create_time: 2026-07-29 06:40:33
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/audit_chop_template_names.md](prompts/audit_chop_template_names.md)
