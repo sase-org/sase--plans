@@ -5,7 +5,7 @@ goal:
   Pressing `l` (or `escape`) to descend from a selected Agents-tab tribe panel into an agent lane clears that lane's
   unread marker and dismisses its completion notification, exactly as `j`/`k` already do.
 create_time: 2026-07-29 15:36:41
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/panel_entry_marks_lane_read.md](prompts/panel_entry_marks_lane_read.md)
