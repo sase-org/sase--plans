@@ -5,7 +5,7 @@ goal:
   Every epic agent-clan summary shows the `<project>--beads` GitHub URL for its epic bead, styled and wrapped like the
   plan `Path:` row, and silently omits the row when no hosted page can be resolved.
 create_time: 2026-07-29 08:13:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_clan_summary_bead_page_link.md](prompts/epic_clan_summary_bead_page_link.md)
