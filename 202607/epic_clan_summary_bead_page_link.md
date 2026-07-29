@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_clan_summary_bead_page_link.md](prompts/epic_clan_summary_bead_page_link.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.md#member-code)
+  - [bbugyi200.athena.nx--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.md#member-plan)
+- **COMMITS:**
+  - [f36f37d](https://github.com/sase-org/sase/commit/f36f37d3ceb5154e1b23602f5ce50ed44eebb52d) — feat(ace): link epic
+    summaries to hosted bead pages
 
 # Plan
 
