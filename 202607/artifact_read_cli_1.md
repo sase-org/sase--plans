@@ -13,6 +13,12 @@ status: done
 - **PARENT:**
   [202607/artifact_read_cli.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_read_cli.md)
 - **BEAD:** [sase-ax.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/sase-ax.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ax.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.3.md#member-code)
+  - [bbugyi200.athena.sase-ax.3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ax.3.md#member-plan)
+- **COMMITS:**
+  - [30e2ed3](https://github.com/sase-org/sase/commit/30e2ed37ed28cc2dab894e69419d206fec79ce05) — feat(cli): add
+    artifact read commands
 
 # Implement the `sase artifact` read CLI for bead `sase-ax.3`
 
