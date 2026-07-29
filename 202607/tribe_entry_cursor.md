@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_entry_cursor.md](prompts/tribe_entry_cursor.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nu.md#member-code)
+  - [bbugyi200.athena.nu--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nu.md#member-plan)
+- **COMMITS:**
+  - [2110954](https://github.com/sase-org/sase/commit/2110954eb1d6833a03228298d5716681d484980a) — feat(tui): show tribe
+    panel entry target
 
 # Plan: Panel-entry cursor for the TRIBE MEMBERS roster
 
