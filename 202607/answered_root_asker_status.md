@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/answered_root_asker_status.md](prompts/answered_root_asker_status.md)
+- **AGENTS:**
+  - [bbugyi200.athena.nt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nt.md#member-code)
+  - [bbugyi200.athena.nt--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nt.md#member-plan)
+- **COMMITS:**
+  - [e7e4121](https://github.com/sase-org/sase/commit/e7e41216496356c24fa1268ca4fd4e4d67c02216) — fix(ace): mark
+    handed-off root questions answered
 
 # Plan: Show ANSWERED on a rename-on-attach family root's own asker row
 
