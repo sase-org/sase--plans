@@ -60,7 +60,10 @@ phases:
     the new PNG visual snapshots, and document the sub-tab and its keys.'
 create_time: 2026-07-29 12:25:59
 status: wip
+bead_id: sase-au
 ---
+
+- **BEAD:** [sase-au](https://github.com/sase-org/sase--beads/blob/main/pages/sase-au/README.md)
 
 # Plan: XPrompts sub-tab for the Admin Center Statistics panel
 
