@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/prompt_join_strips_bullet_marker.md](prompts/prompt_join_strips_bullet_marker.md)
+- **AGENTS:**
+  - [bbugyi200.athena.o0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o0.md#member-code)
+  - [bbugyi200.athena.o0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o0.md#member-plan)
+- **COMMITS:**
+  - [a813226](https://github.com/sase-org/sase/commit/a8132265be0d7e27f93695c6ad3da8d3191ec217) — fix(ace): strip prompt
+    bullet markers on join
 
 # Plan: Prompt NORMAL-mode `J` strips a pulled-up hyphen bullet marker
 
