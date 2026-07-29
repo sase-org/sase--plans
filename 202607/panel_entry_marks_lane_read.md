@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/panel_entry_marks_lane_read.md](prompts/panel_entry_marks_lane_read.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ok--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ok.md#member-code)
+  - [bbugyi200.athena.ok--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ok.md#member-plan)
+- **COMMITS:**
+  - [64ffecf](https://github.com/sase-org/sase/commit/64ffecf887426a28d64bb635c6b93ddae709a614) — fix(ace): acknowledge
+    unread agents on panel entry
 
 # Entering a Selected Tribe Panel Must Mark the Landed Lane Read
 
