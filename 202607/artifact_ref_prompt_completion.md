@@ -13,6 +13,12 @@ status: done
 - **PARENT:**
   [202607/artifact_refs_and_prompt_bar.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_refs_and_prompt_bar.md)
 - **BEAD:** [sase-av.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-av/sase-av.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-av.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-av.6.md#member-code)
+  - [bbugyi200.athena.sase-av.6--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-av.6.md#member-plan)
+- **COMMITS:**
+  - [e55aab9](https://github.com/sase-org/sase/commit/e55aab9c92f73f5f902fa58ee39641da6a78686a) — feat(ace): add
+    artifact reference prompt completion
 
 # Plan: Complete kind-tagged artifact references in the ACE prompt bar
 
