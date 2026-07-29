@@ -44,7 +44,10 @@ phases:
     ace, and axe docs to the new command group and record fields.'
 create_time: 2026-07-29 17:06:30
 status: wip
+bead_id: sase-ax
 ---
+
+- **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
 
 # Ship `sase artifact` as a read CLI, and add three record fields
 
