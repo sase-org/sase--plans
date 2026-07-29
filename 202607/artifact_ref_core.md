@@ -6,7 +6,7 @@ goal:
   pure-Rust APIs and PyO3 bindings without changing existing plan-reference behavior.
 bead: sase-av.1
 create_time: 2026-07-29 12:54:11
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifact_ref_core.md](prompts/artifact_ref_core.md)
