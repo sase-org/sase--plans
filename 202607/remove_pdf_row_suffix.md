@@ -5,7 +5,7 @@ goal:
   ACE Agents-tab rows no longer render the transient "PDF <n>/<m> <path>" finalization suffix; live PDF progress stays
   visible only in the labeled Activity field of the prompt/detail header.
 create_time: 2026-07-29 07:23:15
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/remove_pdf_row_suffix.md](prompts/remove_pdf_row_suffix.md)
