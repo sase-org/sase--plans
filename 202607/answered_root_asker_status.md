@@ -5,7 +5,7 @@ goal:
   The Agents-tab row for a non-plan family root's own main step shows ANSWERED (frozen at the answer time) once its
   question was answered and the work handed off to a later family member, instead of DONE.
 create_time: 2026-07-29 06:47:38
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/answered_root_asker_status.md](prompts/answered_root_asker_status.md)
