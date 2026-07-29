@@ -5,7 +5,7 @@ goal:
   The tribe summary in the agent metadata panel marks, with an exact and always-correct cursor, the TRIBE MEMBERS row
   that pressing the panel-entry key (`l` / `Esc`) will select.
 create_time: 2026-07-29 06:55:52
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_entry_cursor.md](prompts/tribe_entry_cursor.md)
