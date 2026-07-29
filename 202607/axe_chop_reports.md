@@ -68,10 +68,11 @@ phases:
 
     '
 create_time: 2026-07-29 09:49:51
-status: wip
+status: done
 bead_id: sase-ar
 ---
 
+- **PROMPT:** [202607/prompts/axe_chop_reports.md](prompts/axe_chop_reports.md)
 - **BEAD:** [sase-ar](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ar/README.md)
 
 # Plan: AXE Chop Reports
