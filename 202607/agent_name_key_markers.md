@@ -71,6 +71,7 @@ status: wip
 bead_id: sase-aq
 ---
 
+- **PROMPT:** [202607/prompts/agent_name_key_markers.md](prompts/agent_name_key_markers.md)
 - **BEAD:** [sase-aq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aq/README.md)
 
 # Plan: Keyed `{@<id>}` agent-name markers for xprompt swarms

@@ -51,10 +51,11 @@ phases:
     and update the xprompt/LLM docs plus the ACE help popup to describe the `@` alias
     gate.'
 create_time: 2026-07-29 07:46:18
-status: wip
+status: done
 bead_id: sase-ao
 ---
 
+- **PROMPT:** [202607/prompts/model_alias_completion.md](prompts/model_alias_completion.md)
 - **BEAD:** [sase-ao](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ao/README.md)
 
 # Plan: Model aliases in the `%model` completion menu
