@@ -104,7 +104,10 @@ phases:
     '
 create_time: 2026-07-29 10:30:48
 status: wip
+bead_id: sase-as
 ---
+
+- **BEAD:** [sase-as](https://github.com/sase-org/sase--beads/blob/main/pages/sase-as/README.md)
 
 # Plan: Artifact tranche-zero defects and generic document-sidecar roles
 
