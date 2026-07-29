@@ -24,7 +24,7 @@ phases:
     to 0.12.5, regenerate uv.lock, rerun the published-core smoke gates locally, and
     land the bump so master CI goes green.'
 create_time: 2026-07-28 17:36:55
-status: wip
+status: done
 bead_id: sase-al
 ---
 
