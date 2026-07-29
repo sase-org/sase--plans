@@ -11,6 +11,11 @@ status: done
 - **PARENT:**
   [202607/artifact_refs_and_prompt_bar.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_refs_and_prompt_bar.md)
 - **BEAD:** [sase-av.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-av/sase-av.7.md)
+- **AGENTS:**
+  - bbugyi200.athena.sase-av.7--code
+- **COMMITS:**
+  - [334b987](https://github.com/sase-org/sase-core/commit/334b987ae09afc5960ae9f4728c9803088839f60) — feat(editor):
+    complete artifact references in xprompt LSP
 
 # Artifact-reference completion and diagnostics in the xprompt LSP
 
