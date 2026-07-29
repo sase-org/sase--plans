@@ -55,6 +55,7 @@ status: wip
 bead_id: sase-at
 ---
 
+- **PROMPT:** [202607/prompts/notification_release_report.md](prompts/notification_release_report.md)
 - **BEAD:** [sase-at](https://github.com/sase-org/sase--beads/blob/main/pages/sase-at/README.md)
 
 # Plan: ViewReport notification action and the ci_watch release report
