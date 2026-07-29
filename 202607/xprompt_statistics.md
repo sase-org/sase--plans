@@ -59,7 +59,7 @@ phases:
     schema constant, verify the feature end to end against real recorded data, add
     the new PNG visual snapshots, and document the sub-tab and its keys.'
 create_time: 2026-07-29 12:25:59
-status: wip
+status: done
 bead_id: sase-au
 ---
 
