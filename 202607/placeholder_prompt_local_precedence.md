@@ -8,7 +8,7 @@ goal: "Manual `Ctrl+T` on a `<` context inserts a lone current-prompt placeholde
 
   "
 create_time: 2026-07-29 08:35:44
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/placeholder_prompt_local_precedence.md](prompts/placeholder_prompt_local_precedence.md)
