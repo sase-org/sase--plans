@@ -5,7 +5,7 @@ goal:
   Ctrl+J exits an existing prompt bullet list when the cursor is immediately after a supported hyphen marker, while
   preserving any text after the cursor and all existing continuation safeguards.
 create_time: 2026-07-29 10:17:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ctrl_j_exit_populated_bullet.md](prompts/ctrl_j_exit_populated_bullet.md)
