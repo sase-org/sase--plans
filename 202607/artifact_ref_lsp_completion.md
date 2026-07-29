@@ -4,7 +4,7 @@ title: Artifact-reference completion and diagnostics in the xprompt LSP
 goal: Editors complete and diagnose the same known kind-tagged artifact references as the SASE prompt surfaces.
 bead: sase-av.7
 create_time: 2026-07-29 13:58:03
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifact_ref_lsp_completion.md](prompts/artifact_ref_lsp_completion.md)
