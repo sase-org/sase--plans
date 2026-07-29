@@ -13,6 +13,11 @@ status: done
 - **PARENT:**
   [202607/artifact_refs_and_prompt_bar.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_refs_and_prompt_bar.md)
 - **BEAD:** [sase-av.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-av/sase-av.1.md)
+- **AGENTS:**
+  - bbugyi200.athena.sase-av.1--code
+- **COMMITS:**
+  - [6c2adc4](https://github.com/sase-org/sase-core/commit/6c2adc420a5ee24aecfe5fae305e2c869ab7b627) — feat: add core
+    artifact reference APIs
 
 # Plan: Add kind-tagged artifact references to the Rust core
 
