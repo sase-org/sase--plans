@@ -39,7 +39,10 @@ phases:
     auto-switch, perf guards, and unit/pilot/PNG tests plus docs.'
 create_time: 2026-07-29 16:59:00
 status: wip
+bead_id: sase-aw
 ---
+
+- **BEAD:** [sase-aw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aw/README.md)
 
 # Make PreviewPanelModal a Real Reader
 
