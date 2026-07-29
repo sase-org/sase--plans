@@ -43,7 +43,7 @@ phases:
     from create-only to create-and-read and update the CLI, configuration, agent-images,
     ace, and axe docs to the new command group and record fields.'
 create_time: 2026-07-29 17:06:30
-status: wip
+status: done
 bead_id: sase-ax
 ---
 
