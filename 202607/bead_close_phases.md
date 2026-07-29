@@ -5,7 +5,7 @@ goal:
   "`sase bead close <epic> -p 1,2,3` and `-p 1-3` close those phase beads of an epic, and using `-p` on a non-epic
   target fails with a clear error and no writes."
 create_time: 2026-07-29 12:10:52
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_close_phases.md](prompts/bead_close_phases.md)
