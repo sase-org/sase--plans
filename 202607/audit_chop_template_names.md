@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/audit_chop_template_names.md](prompts/audit_chop_template_names.md)
+- **AGENTS:**
+  - bbugyi200.athena.ns--code
+- **COMMITS:**
+  - [eff60e6](https://github.com/bbugyi200/bugyi-chops/commit/eff60e64bcef9d9e3eb042f318ab605e5fc4714e) — fix: use
+    templates for audit agent names
 
 # Plan: Use `@` template agent names for the recent-audit chops
 
