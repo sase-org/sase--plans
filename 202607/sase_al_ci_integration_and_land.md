@@ -23,6 +23,8 @@ status: done
     full matrix isolation
   - [14b30c4](https://github.com/sase-org/sase/commit/14b30c411fe4ab371048b9b38d28dfad9bca3c06) — test: make task help
     aliases version-neutral
+  - [07aaac0](https://github.com/sase-org/sase/commit/07aaac0d726f94390c8ad0d0c4c1a5a129c610d1) — test: identify final
+    deep archive request
 
 # Finish sase-al CI integration and land the epic
 
