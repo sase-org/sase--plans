@@ -5,7 +5,7 @@ goal:
   Epic clan summaries preserve each hosted bead page URL as one exact, flush-left logical line so terminal URL matchers
   can identify and open the complete target.
 create_time: 2026-07-29 08:49:19
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/unwrapped_epic_bead_page_url.md](prompts/unwrapped_epic_bead_page_url.md)
