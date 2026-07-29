@@ -101,7 +101,10 @@ phases:
     '
 create_time: 2026-07-29 12:44:53
 status: wip
+bead_id: sase-av
 ---
+
+- **BEAD:** [sase-av](https://github.com/sase-org/sase--beads/blob/main/pages/sase-av/README.md)
 
 # Plan: Kind-tagged artifact references and prompt-bar integration
 
