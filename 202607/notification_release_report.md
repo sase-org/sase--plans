@@ -52,7 +52,10 @@ phases:
     '
 create_time: 2026-07-29 10:54:50
 status: wip
+bead_id: sase-at
 ---
+
+- **BEAD:** [sase-at](https://github.com/sase-org/sase--beads/blob/main/pages/sase-at/README.md)
 
 # Plan: ViewReport notification action and the ci_watch release report
 
