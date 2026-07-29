@@ -5,7 +5,7 @@ goal:
   Epic clan summaries render `Page:` and the complete hosted bead page URL as one logical line, so a wide detail pane
   shows the whole row aligned with its neighbours and a narrow one reflows the URL without SASE ever breaking it.
 create_time: 2026-07-29 10:02:52
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/inline_epic_bead_page_label.md](prompts/inline_epic_bead_page_label.md)
