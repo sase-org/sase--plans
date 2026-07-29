@@ -48,6 +48,7 @@ bead_id: sase-ax
 ---
 
 - **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
+- **PROMPT:** [prompts/artifact_read_cli.md](prompts/artifact_read_cli.md)
 - **AGENTS:**
   - [bbugyi200.athena.ov](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ov/README.md)
   - [bbugyi200.athena.sase-ax.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ax.1/README.md)
