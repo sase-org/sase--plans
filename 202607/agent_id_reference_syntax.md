@@ -88,7 +88,10 @@ phases:
     '
 create_time: 2026-07-29 08:25:31
 status: wip
+bead_id: sase-ap
 ---
+
+- **BEAD:** [sase-ap](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ap/README.md)
 
 # Plan: Explicit `{@<id>}` agent-name reference syntax
 
