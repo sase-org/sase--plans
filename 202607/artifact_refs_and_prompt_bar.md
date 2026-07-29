@@ -104,6 +104,7 @@ status: wip
 bead_id: sase-av
 ---
 
+- **PROMPT:** [202607/prompts/artifact_refs_and_prompt_bar.md](prompts/artifact_refs_and_prompt_bar.md)
 - **BEAD:** [sase-av](https://github.com/sase-org/sase--beads/blob/main/pages/sase-av/README.md)
 
 # Plan: Kind-tagged artifact references and prompt-bar integration

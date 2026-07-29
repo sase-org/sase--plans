@@ -63,6 +63,7 @@ status: wip
 bead_id: sase-au
 ---
 
+- **PROMPT:** [202607/prompts/xprompt_statistics.md](prompts/xprompt_statistics.md)
 - **BEAD:** [sase-au](https://github.com/sase-org/sase--beads/blob/main/pages/sase-au/README.md)
 
 # Plan: XPrompts sub-tab for the Admin Center Statistics panel
