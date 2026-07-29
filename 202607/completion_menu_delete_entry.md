@@ -5,7 +5,7 @@ goal:
   Ctrl+D in the ACE prompt completion menu durably deletes the highlighted history word or saved common placeholder,
   toasts the user, and updates the menu in place instead of closing it.
 create_time: 2026-07-29 08:35:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/completion_menu_delete_entry.md](prompts/completion_menu_delete_entry.md)
