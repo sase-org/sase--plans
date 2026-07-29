@@ -9,6 +9,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/lane_counts_in_cleanup_confirmations.md](prompts/lane_counts_in_cleanup_confirmations.md)
+- **AGENTS:**
+  - [bbugyi200.athena.o4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o4.md#member-code)
+  - [bbugyi200.athena.o4--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o4.md#member-plan)
+- **COMMITS:**
+  - [65732cb](https://github.com/sase-org/sase/commit/65732cb3b621319e012b44905d7bf50722f20e53) — fix: report lane
+    counts in cleanup confirmations
 
 # Plan: Report agent-lane counts in kill/dismiss confirmations
 
