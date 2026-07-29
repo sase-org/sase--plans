@@ -12,6 +12,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/placeholder_prompt_local_precedence.md](prompts/placeholder_prompt_local_precedence.md)
+- **AGENTS:**
+  - bbugyi200.athena.nz.f0--code
+- **COMMITS:**
+  - [641ca36](https://github.com/sase-org/sase-core/commit/641ca366106a1994715f2d73dcc4892308bfa05d) — fix(editor):
+    restore literal placeholder completions
 
 # Plan: Restore prompt-local precedence in placeholder completion
 
