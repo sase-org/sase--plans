@@ -88,7 +88,10 @@ phases:
     '
 create_time: 2026-07-29 18:22:57
 status: wip
+bead_id: sase-ay
 ---
+
+- **BEAD:** [sase-ay](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ay/README.md)
 
 # Plan: Bare `@` opens one reference menu for artifact kinds and local files
 
