@@ -61,7 +61,10 @@ phases:
     '
 create_time: 2026-07-29 19:12:27
 status: wip
+bead_id: sase-az
 ---
+
+- **BEAD:** [sase-az](https://github.com/sase-org/sase--beads/blob/main/pages/sase-az/README.md)
 
 # Plan: Unified "Copy as…" palette
 
