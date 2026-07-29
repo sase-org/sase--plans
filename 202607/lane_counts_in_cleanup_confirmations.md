@@ -5,7 +5,7 @@ goal:
   Every kill/dismiss confirmation's headline count equals the number of agent lanes listed beneath it, with the concrete
   cleanup-row total shown as a secondary detail only when it differs, without changing cleanup scope or execution.
 create_time: 2026-07-29 09:07:34
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/lane_counts_in_cleanup_confirmations.md](prompts/lane_counts_in_cleanup_confirmations.md)
