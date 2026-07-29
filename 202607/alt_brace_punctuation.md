@@ -5,7 +5,7 @@ goal:
   Typing { after a directive-valid % expands to the padded %{  } alt shorthand even when the cursor sits directly before
   trailing punctuation such as ?, in both the ACE prompt input and the sase-nvim mirror.
 create_time: 2026-07-29 18:40:29
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/alt_brace_punctuation.md](prompts/alt_brace_punctuation.md)
