@@ -69,7 +69,10 @@ phases:
     '
 create_time: 2026-07-29 09:49:51
 status: wip
+bead_id: sase-ar
 ---
+
+- **BEAD:** [sase-ar](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ar/README.md)
 
 # Plan: AXE Chop Reports
 
