@@ -4,7 +4,7 @@ title: Raise the ACE history-word completion default to 10,000
 goal:
   ACE retains up to 10,000 prompt-history words by default, with runtime, schema, documentation, and tests kept in sync.
 create_time: 2026-07-29 08:09:58
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/raise_history_word_count_default.md](prompts/raise_history_word_count_default.md)
