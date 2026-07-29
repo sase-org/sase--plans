@@ -52,7 +52,10 @@ phases:
     gate.'
 create_time: 2026-07-29 07:46:18
 status: wip
+bead_id: sase-ao
 ---
+
+- **BEAD:** [sase-ao](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ao/README.md)
 
 # Plan: Model aliases in the `%model` completion menu
 
