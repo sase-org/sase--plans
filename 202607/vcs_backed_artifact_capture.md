@@ -62,7 +62,10 @@ phases:
     '
 create_time: 2026-07-30 08:52:41
 status: wip
+bead_id: sase-b7
 ---
+
+- **BEAD:** [sase-b7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b7/README.md)
 
 # Plan: Make artifact capture mean authorship and stop copying what version control stores
 
