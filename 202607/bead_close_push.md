@@ -5,7 +5,7 @@ goal:
   sase bead close publishes its bead-store commit again by pushing the sidecar repository that actually received it, and
   a new -P/--no-push flag lets a caller keep the commit local when batching mutations.
 create_time: 2026-07-30 16:06:07
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_close_push.md](prompts/bead_close_push.md)
