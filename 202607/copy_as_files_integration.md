@@ -6,7 +6,7 @@ goal:
   verified, cleaned up after closure, and fully landed.
 bead: sase-az
 create_time: 2026-07-29 22:05:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/copy_as_files_integration.md](prompts/copy_as_files_integration.md)
