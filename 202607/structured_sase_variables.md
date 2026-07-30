@@ -1,64 +1,68 @@
 ---
 tier: epic
 title: Structured sase variables (nested lists and maps) across every display surface
-goal: "A sase variable holds any JSON value — string, number, boolean, null, list, or map — nested arbitrarily, with one
-  canonical validation model and one canonical renderer so ACE, the agents sidecar, Telegram, notifications, and the CLI
-  all display structured values identically and beautifully.
+goal: 'A sase variable holds any JSON value — string, number, boolean, null, list,
+  or map — nested arbitrarily, with one canonical validation model and one canonical
+  renderer so ACE, the agents sidecar, Telegram, notifications, and the CLI all display
+  structured values identically and beautifully.
 
-  "
+  '
 phases:
-  - id: var-value-model
-    title: Canonical structured value model, storage, and renderers
-    depends_on: []
-    size: medium
-    description:
-      "var-value-model: introduce the JSON value model (validation, normalization, caps) and the single canonical
-      inline/block renderer in sase.core, widen agent_meta.json storage and readers to structured values, and keep every
-      existing consumer compiling and behaving unchanged."
-  - id: core-wire-json
-    title: Full JSON output-variable values in the sase-core scan wire
-    depends_on: []
-    size: medium
-    description:
-      "core-wire-json: generalize OutputVariableValue in the sase-core agent-scan wire from text-or-string-list to a
-      bounded JSON value, release sase-core, bump the sase-core-rs pin here, and widen the Python wire marker type."
-  - id: var-cli-jinja
-    title: Authoring and consuming structured variables (CLI, Jinja, STOP, skill, docs)
-    depends_on:
-      - var-value-model
-    size: medium
-    description:
-      "var-cli-jinja: add the `--json` value modifier and a `sase var list` display subcommand, pass containers into the
-      Jinja `agents` namespace with JSON-shaped stringification, generalize STOP truthiness, and update the sase_var
-      skill source and reference docs."
-  - id: ace-var-display
-    title: ACE renders structured variables in agent, clan, and tribe panels
-    depends_on:
-      - var-value-model
-      - core-wire-json
-    size: medium
-    description:
-      "ace-var-display: widen the ACE agent/clan/tribe variable models and loaders to structured values and render them
-      with the canonical line renderer and per-kind styling at every fold level."
-  - id: sidecar-var-publication
-    title: Agents sidecar publishes and renders structured variables
-    depends_on:
-      - var-value-model
-    size: medium
-    description:
-      "sidecar-var-publication: accept structured values in v2 publication validation and the portable-metadata
-      sanitizer, and render them in agent and family sidecar pages with inline table previews plus fenced blocks."
-  - id: notify-var-display
-    title: Completion notifications and Telegram render structured variables
-    depends_on:
-      - var-value-model
-    size: medium
-    description:
-      "notify-var-display: widen the completion-notification variable snapshot and render structured values in the
-      sase-telegram plugin's completion message and agent detail rows using the canonical renderer."
+- id: var-value-model
+  title: Canonical structured value model, storage, and renderers
+  depends_on: []
+  size: medium
+  description: 'var-value-model: introduce the JSON value model (validation, normalization,
+    caps) and the single canonical inline/block renderer in sase.core, widen agent_meta.json
+    storage and readers to structured values, and keep every existing consumer compiling
+    and behaving unchanged.'
+- id: core-wire-json
+  title: Full JSON output-variable values in the sase-core scan wire
+  depends_on: []
+  size: medium
+  description: 'core-wire-json: generalize OutputVariableValue in the sase-core agent-scan
+    wire from text-or-string-list to a bounded JSON value, release sase-core, bump
+    the sase-core-rs pin here, and widen the Python wire marker type.'
+- id: var-cli-jinja
+  title: Authoring and consuming structured variables (CLI, Jinja, STOP, skill, docs)
+  depends_on:
+  - var-value-model
+  size: medium
+  description: 'var-cli-jinja: add the `--json` value modifier and a `sase var list`
+    display subcommand, pass containers into the Jinja `agents` namespace with JSON-shaped
+    stringification, generalize STOP truthiness, and update the sase_var skill source
+    and reference docs.'
+- id: ace-var-display
+  title: ACE renders structured variables in agent, clan, and tribe panels
+  depends_on:
+  - var-value-model
+  - core-wire-json
+  size: medium
+  description: 'ace-var-display: widen the ACE agent/clan/tribe variable models and
+    loaders to structured values and render them with the canonical line renderer
+    and per-kind styling at every fold level.'
+- id: sidecar-var-publication
+  title: Agents sidecar publishes and renders structured variables
+  depends_on:
+  - var-value-model
+  size: medium
+  description: 'sidecar-var-publication: accept structured values in v2 publication
+    validation and the portable-metadata sanitizer, and render them in agent and family
+    sidecar pages with inline table previews plus fenced blocks.'
+- id: notify-var-display
+  title: Completion notifications and Telegram render structured variables
+  depends_on:
+  - var-value-model
+  size: medium
+  description: 'notify-var-display: widen the completion-notification variable snapshot
+    and render structured values in the sase-telegram plugin''s completion message
+    and agent detail rows using the canonical renderer.'
 create_time: 2026-07-30 17:00:13
 status: wip
+bead_id: sase-bf
 ---
+
+- **BEAD:** [sase-bf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bf/README.md)
 
 # Plan: Structured sase variables (nested lists and maps)
 
