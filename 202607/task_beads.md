@@ -1,102 +1,108 @@
 ---
 tier: epic
 title: Task beads — capture, triage, and work discovered follow-ups
-goal: "Discovered follow-up work has a first-class destination: phase agents record PROPOSED FOLLOW-UP notes, land
-  agents file them as task beads and mark them ready, a builtin chop raises a per-bead triage gate whose default action
-  launches a detached #bd/work_task agent, and the task type and ready status render beautifully on every bead surface.
+goal: 'Discovered follow-up work has a first-class destination: phase agents record
+  PROPOSED FOLLOW-UP notes, land agents file them as task beads and mark them ready,
+  a builtin chop raises a per-bead triage gate whose default action launches a detached
+  #bd/work_task agent, and the task type and ready status render beautifully on every
+  bead surface.
 
-  "
+  '
 phases:
-  - id: core-model
-    title: Rust core task type, ready status, and ready-query redefinition
-    depends_on: []
-    size: medium
-    description:
-      "core-model: add IssueTypeWire::Task and StatusWire::Ready with validation, schema CHECKs and migrations, redefine
-      the ready query to unblocked ready task beads, extend CLI parse/render/stats tables, and cover with parity and
-      mutation tests in the sase-core linked repo."
-  - id: py-model
-    title: Python model mirror, parsers, and CLI text
-    depends_on:
-      - core-model
-    size: medium
-    description:
-      "py-model: mirror the task type and ready status through model.py, db.py migrations, jsonl/wire, parse_type_arg,
-      argparse choices, the ready/stats/detail handlers, doctor branches, and the sase-core-rs pin."
-  - id: presentation
-    title: Shared bead type and ready status presentation
-    depends_on:
-      - py-model
-    size: small
-    description:
-      "presentation: create bead_type_presentation.py as the single type glyph/accent/chip authority, add the ready row
-      to BEAD_STATUS_PRESENTATIONS, and extend the exhaustive presentation contract tests."
-  - id: tui
-    title: ACE TUI task surfaces and PNG goldens
-    depends_on:
-      - presentation
-    size: large
-    description:
-      "tui: add a Tasks section and task row kind to the Plans pane with filters and detail chips, make the agents-pane
-      bead lane and plan-association role type-aware, extend the bead autocomplete and edit modal, and regenerate PNG
-      snapshot goldens with open and ready task fixtures."
-  - id: pages-mobile
-    title: Bead pages, mobile wire, and remaining text surfaces
-    depends_on:
-      - presentation
-    size: small
-    description:
-      "pages-mobile: render the task type and ready status on published bead pages, admit task in the mobile bead type
-      filters, and sweep remaining issue_type branches for task-awareness."
-  - id: xprompts
-    title: Remove bd/next, rewire capture, add bd/work_task
-    depends_on: []
-    size: medium
-    description:
-      "xprompts: delete the bd/next xprompt and its doc/test references, redirect bd/work_phase_bead to PROPOSED
-      FOLLOW-UP notes, teach bd/land_epic to file ready task beads, and add the bd/work_task xprompt with its tag,
-      resolver, and tests."
-  - id: task-launch
-    title: sase bead work for task beads and detached submitter
-    depends_on:
-      - py-model
-      - xprompts
-    size: large
-    description:
-      "task-launch: route task bead targets through sase bead work with single-commit in-progress marking, rollback,
-      dry-run, model routing including a task_worker alias, single-segment prompt composition ending in bd/work_task,
-      and a task_launch.py detached submitter mirroring epic_launch.py."
-  - id: triage-gate
-    title: TaskTriage gate kind end to end
-    depends_on:
-      - task-launch
-    size: large
-    description:
-      "triage-gate: register a task_triage gate kind with launch-default and close-with-reason branches, build the spec
-      and command shims in task_gate.py, implement apply_side_effects to submit the detached launch or close with the
-      feedback reason, and wire ACE and mobile surfaces."
-  - id: triage-chop
-    title: bead_task_triage builtin chop
-    depends_on:
-      - triage-gate
-    size: medium
-    description:
-      "triage-chop: add the bead_task_triage chop to the checks lumberjack lane with per-bead gate creation, stale-gate
-      cancellation, state-file dedupe, counters, tests, and axe docs."
-  - id: docs-memory-skill
-    title: Memory template, sase_beads skill, and documentation
-    depends_on:
-      - tui
-      - pages-mobile
-      - triage-chop
-    size: medium
-    description:
-      "docs-memory-skill: append the user-authorized task-bead recommendation to the builtin memory template and
-      regenerate via sase memory init, update the sase_beads generated-skill source, and document the type, status,
-      gate, and chop in docs/beads.md and docs/notifications.md."
+- id: core-model
+  title: Rust core task type, ready status, and ready-query redefinition
+  depends_on: []
+  size: medium
+  description: 'core-model: add IssueTypeWire::Task and StatusWire::Ready with validation,
+    schema CHECKs and migrations, redefine the ready query to unblocked ready task
+    beads, extend CLI parse/render/stats tables, and cover with parity and mutation
+    tests in the sase-core linked repo.'
+- id: py-model
+  title: Python model mirror, parsers, and CLI text
+  depends_on:
+  - core-model
+  size: medium
+  description: 'py-model: mirror the task type and ready status through model.py,
+    db.py migrations, jsonl/wire, parse_type_arg, argparse choices, the ready/stats/detail
+    handlers, doctor branches, and the sase-core-rs pin.'
+- id: presentation
+  title: Shared bead type and ready status presentation
+  depends_on:
+  - py-model
+  size: small
+  description: 'presentation: create bead_type_presentation.py as the single type
+    glyph/accent/chip authority, add the ready row to BEAD_STATUS_PRESENTATIONS, and
+    extend the exhaustive presentation contract tests.'
+- id: tui
+  title: ACE TUI task surfaces and PNG goldens
+  depends_on:
+  - presentation
+  size: large
+  description: 'tui: add a Tasks section and task row kind to the Plans pane with
+    filters and detail chips, make the agents-pane bead lane and plan-association
+    role type-aware, extend the bead autocomplete and edit modal, and regenerate PNG
+    snapshot goldens with open and ready task fixtures.'
+- id: pages-mobile
+  title: Bead pages, mobile wire, and remaining text surfaces
+  depends_on:
+  - presentation
+  size: small
+  description: 'pages-mobile: render the task type and ready status on published bead
+    pages, admit task in the mobile bead type filters, and sweep remaining issue_type
+    branches for task-awareness.'
+- id: xprompts
+  title: Remove bd/next, rewire capture, add bd/work_task
+  depends_on: []
+  size: medium
+  description: 'xprompts: delete the bd/next xprompt and its doc/test references,
+    redirect bd/work_phase_bead to PROPOSED FOLLOW-UP notes, teach bd/land_epic to
+    file ready task beads, and add the bd/work_task xprompt with its tag, resolver,
+    and tests.'
+- id: task-launch
+  title: sase bead work for task beads and detached submitter
+  depends_on:
+  - py-model
+  - xprompts
+  size: large
+  description: 'task-launch: route task bead targets through sase bead work with single-commit
+    in-progress marking, rollback, dry-run, model routing including a task_worker
+    alias, single-segment prompt composition ending in bd/work_task, and a task_launch.py
+    detached submitter mirroring epic_launch.py.'
+- id: triage-gate
+  title: TaskTriage gate kind end to end
+  depends_on:
+  - task-launch
+  size: large
+  description: 'triage-gate: register a task_triage gate kind with launch-default
+    and close-with-reason branches, build the spec and command shims in task_gate.py,
+    implement apply_side_effects to submit the detached launch or close with the feedback
+    reason, and wire ACE and mobile surfaces.'
+- id: triage-chop
+  title: bead_task_triage builtin chop
+  depends_on:
+  - triage-gate
+  size: medium
+  description: 'triage-chop: add the bead_task_triage chop to the checks lumberjack
+    lane with per-bead gate creation, stale-gate cancellation, state-file dedupe,
+    counters, tests, and axe docs.'
+- id: docs-memory-skill
+  title: Memory template, sase_beads skill, and documentation
+  depends_on:
+  - tui
+  - pages-mobile
+  - triage-chop
+  size: medium
+  description: 'docs-memory-skill: append the user-authorized task-bead recommendation
+    to the builtin memory template and regenerate via sase memory init, update the
+    sase_beads generated-skill source, and document the type, status, gate, and chop
+    in docs/beads.md and docs/notifications.md.'
 create_time: 2026-07-30 18:55:14
 status: wip
+bead_id: sase-bg
 ---
+
+- **PROMPT:** [202607/prompts/task_beads.md](prompts/task_beads.md)
+- **BEAD:** [sase-bg](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bg/README.md)
 
 # Task Beads: Capture, Triage, and Work Discovered Follow-Ups
 
