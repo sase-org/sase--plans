@@ -6,7 +6,7 @@ goal:
   API, and sase-b3.10 closes only after that integration is verified.
 bead: sase-b3.10
 create_time: 2026-07-30 08:10:11
-status: wip
+status: done
 ---
 
 - **PROMPT:**
