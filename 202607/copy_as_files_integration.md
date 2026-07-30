@@ -12,6 +12,12 @@ status: done
 - **PROMPT:** [202607/prompts/copy_as_files_integration.md](prompts/copy_as_files_integration.md)
 - **PARENT:** [202607/copy_as_palette.md](https://github.com/sase-org/sase--plans/blob/main/202607/copy_as_palette.md)
 - **BEAD:** [sase-az](https://github.com/sase-org/sase--beads/blob/main/pages/sase-az/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-az.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-az.land.md#member-code)
+  - [bbugyi200.athena.sase-az.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-az.land.md#member-plan)
+- **COMMITS:**
+  - [86fb630](https://github.com/sase-org/sase/commit/86fb630bb8315f86895a48ac4a9be1a9243e8612) — feat(ace): complete
+    Files copy-as palette
 
 # Plan: Finish Files integration for the unified Copy as palette and land `sase-az`
 
