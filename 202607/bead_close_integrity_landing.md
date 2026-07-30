@@ -53,7 +53,7 @@ phases:
     file done.'
 parent_bead: sase-bd
 create_time: 2026-07-30 16:13:33
-status: wip
+status: done
 bead_id: sase-bd.9
 ---
 
