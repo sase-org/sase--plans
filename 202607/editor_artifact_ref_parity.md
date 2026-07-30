@@ -47,10 +47,11 @@ phases:
     run just symvision, and mark both plan files done.'
 parent_bead: sase-b3
 create_time: 2026-07-30 06:56:58
-status: wip
+status: done
 bead_id: sase-b3.10
 ---
 
+- **PROMPT:** [202607/prompts/editor_artifact_ref_parity.md](prompts/editor_artifact_ref_parity.md)
 - **PARENT:** [202607/fuzzy_artifact_ref_completion.md](202607/fuzzy_artifact_ref_completion.md)
 - **BEAD:** [sase-b3.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/sase-b3.10.md)
 
