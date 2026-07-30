@@ -6,7 +6,7 @@ goal:
   package, and `tests/ace/tui/test_gate_debug_modal.py::test_tabs_and_copy_actions_use_prebuilt_snapshot` asserts
   deterministically instead of racing on thread-pool completion order."
 create_time: 2026-07-30 07:16:22
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_lint_and_clipboard_flake.md](prompts/fix_ci_lint_and_clipboard_flake.md)
