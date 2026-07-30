@@ -79,6 +79,7 @@ status: wip
 bead_id: sase-ba
 ---
 
+- **PROMPT:** [202607/prompts/artifact_store_lifecycle.md](prompts/artifact_store_lifecycle.md)
 - **BEAD:** [sase-ba](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ba/README.md)
 
 # Plan: Give the artifact store a lifecycle - report, dry-run pruning, and opt-in retention
