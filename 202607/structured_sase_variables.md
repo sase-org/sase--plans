@@ -58,10 +58,11 @@ phases:
     and render structured values in the sase-telegram plugin''s completion message
     and agent detail rows using the canonical renderer.'
 create_time: 2026-07-30 17:00:13
-status: wip
+status: done
 bead_id: sase-bf
 ---
 
+- **PROMPT:** [202607/prompts/structured_sase_variables.md](prompts/structured_sase_variables.md)
 - **BEAD:** [sase-bf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bf/README.md)
 
 # Plan: Structured sase variables (nested lists and maps)
