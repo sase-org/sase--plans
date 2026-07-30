@@ -6,7 +6,7 @@ goal:
   accelerators, dispatch behavior, and snapshot correctness.
 bead: sase-az.3
 create_time: 2026-07-29 20:34:42
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/copy_as_palette_phase.md](prompts/copy_as_palette_phase.md)
