@@ -5,7 +5,7 @@ goal:
   Every commits table SASE publishes into a sidecar repo carries a Repo column naming the repository each commit belongs
   to — on bead pages, agent pages, and family pages alike — so a reader never has to infer a commit's repo from context.
 create_time: 2026-07-30 09:29:22
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/commit_table_repo_column.md](prompts/commit_table_repo_column.md)
