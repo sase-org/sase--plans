@@ -10,6 +10,12 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/fix_ci_lint_and_clipboard_flake.md](prompts/fix_ci_lint_and_clipboard_flake.md)
+- **AGENTS:**
+  - [bbugyi200.athena.p9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.p9.md#member-code)
+  - [bbugyi200.athena.p9--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.p9.md#member-plan)
+- **COMMITS:**
+  - [01ac81a](https://github.com/sase-org/sase/commit/01ac81a0bd90b28cf38496bbe58bd1e55d7da64e) — fix: resolve clipboard
+    lint and test flake
 
 # Plan: Fix master CI - symvision private-import lint and the racy gate-debug clipboard test
 
