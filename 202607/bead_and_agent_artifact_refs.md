@@ -101,7 +101,10 @@ phases:
     '
 create_time: 2026-07-29 21:33:06
 status: wip
+bead_id: sase-b2
 ---
+
+- **BEAD:** [sase-b2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b2/README.md)
 
 # Plan: `@bead:` and `@agent:` artifact reference kinds
 
