@@ -1,57 +1,62 @@
 ---
 tier: epic
 title: Vars-driven commit finalization with exclusion-based staging
-goal: "Agents record commit intent (message, exclusions) as sase variables via `sase commit --vars`, the finalizer
-  executes the commit deterministically before agent completion is recorded, and file staging becomes exclusion-based so
-  changes the agent did not make surface as anomalies.
+goal: 'Agents record commit intent (message, exclusions) as sase variables via `sase
+  commit --vars`, the finalizer executes the commit deterministically before agent
+  completion is recorded, and file staging becomes exclusion-based so changes the
+  agent did not make surface as anomalies.
 
-  "
+  '
 phases:
-  - id: list-vars-rust
-    title: List-valued output variables in the sase-core scan wire
-    depends_on: []
-    size: medium
-    description:
-      "list-vars-rust: extend the Rust agent-scan wire and scanner coercion in the sase-core repo so output variables
-      carry string-or-list-of-string values, with parity tests and a released version bump."
-  - id: list-vars-python
-    title: List-valued sase variables in Python storage, CLI, and consumers
-    depends_on:
-      - list-vars-rust
-    size: medium
-    description:
-      "list-vars-python: teach agent_output_variables storage, sase var set, publication validation, wire loaders,
-      TUI/sidecar rendering, and the Jinja context to accept list values, and bump the sase-core-rs pin."
-  - id: commit-exclusions
-    title: Exclusion-based file selection for sase commit
-    depends_on: []
-    size: medium
-    description:
-      "commit-exclusions: replace the public -f include flags with -x exclusion flags, stage via git pathspec excludes,
-      keep a hidden internal include flag for tooling, surface exclusion warnings, and update wrapper, skills, prompts,
-      callers, docs, and tests."
-  - id: commit-vars-option
-    title: sase commit --vars intent recording
-    depends_on:
-      - list-vars-python
-      - commit-exclusions
-    size: medium
-    description:
-      "commit-vars-option: add a --vars flag that records commit intent as reserved commit_* sase variables (multiline
-      message, exclusion list) instead of committing, deleting the -M message file on success, with wrapper, skill, and
-      test updates."
-  - id: finalizer-vars-commit
-    title: Finalizer executes recorded commit intent before completion
-    depends_on:
-      - commit-vars-option
-    size: medium
-    description:
-      "finalizer-vars-commit: have the commit finalizer prompt for --vars, execute recorded intent deterministically via
-      a sase commit subprocess, tolerate exclusion-only residual dirt with warnings, clear consumed intent vars, and add
-      ordering regression tests."
+- id: list-vars-rust
+  title: List-valued output variables in the sase-core scan wire
+  depends_on: []
+  size: medium
+  description: 'list-vars-rust: extend the Rust agent-scan wire and scanner coercion
+    in the sase-core repo so output variables carry string-or-list-of-string values,
+    with parity tests and a released version bump.'
+- id: list-vars-python
+  title: List-valued sase variables in Python storage, CLI, and consumers
+  depends_on:
+  - list-vars-rust
+  size: medium
+  description: 'list-vars-python: teach agent_output_variables storage, sase var set,
+    publication validation, wire loaders, TUI/sidecar rendering, and the Jinja context
+    to accept list values, and bump the sase-core-rs pin.'
+- id: commit-exclusions
+  title: Exclusion-based file selection for sase commit
+  depends_on: []
+  size: medium
+  description: 'commit-exclusions: replace the public -f include flags with -x exclusion
+    flags, stage via git pathspec excludes, keep a hidden internal include flag for
+    tooling, surface exclusion warnings, and update wrapper, skills, prompts, callers,
+    docs, and tests.'
+- id: commit-vars-option
+  title: sase commit --vars intent recording
+  depends_on:
+  - list-vars-python
+  - commit-exclusions
+  size: medium
+  description: 'commit-vars-option: add a --vars flag that records commit intent as
+    reserved commit_* sase variables (multiline message, exclusion list) instead of
+    committing, deleting the -M message file on success, with wrapper, skill, and
+    test updates.'
+- id: finalizer-vars-commit
+  title: Finalizer executes recorded commit intent before completion
+  depends_on:
+  - commit-vars-option
+  size: medium
+  description: 'finalizer-vars-commit: have the commit finalizer prompt for --vars,
+    execute recorded intent deterministically via a sase commit subprocess, tolerate
+    exclusion-only residual dirt with warnings, clear consumed intent vars, and add
+    ordering regression tests.'
 create_time: 2026-07-30 16:05:54
 status: wip
+bead_id: sase-be
 ---
+
+- **PROMPT:** [202607/prompts/commit_vars_finalizer.md](prompts/commit_vars_finalizer.md)
+- **BEAD:** [sase-be](https://github.com/sase-org/sase--beads/blob/main/pages/sase-be/README.md)
 
 # Plan: Vars-driven commit finalization with exclusion-based staging
 
