@@ -14,11 +14,10 @@ status: done
   [202607/at_reference_file_row_gate.md](https://github.com/sase-org/sase--plans/blob/main/202607/at_reference_file_row_gate.md)
 - **BEAD:** [sase-b4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b4/README.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-b4.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b4.land.md#member-code)
-  - [bbugyi200.athena.sase-b4.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b4.land.md#member-plan)
+  - bbugyi200.athena.sase-b4.land--code
 - **COMMITS:**
-  - [11cdd78](https://github.com/sase-org/sase/commit/11cdd7807bc30b10cbb073f1af7bb17060c0bfab) — build(deps): require
-    sase-core-rs 0.12.19
+  - [7bf2f17](https://github.com/sase-org/sase--plans/commit/7bf2f173f906774f85b303f3791ba77c8c6b7c7e) — docs(plans):
+    land the b4 release-floor plan
 
 # Finish the `sase-b4` published-core floor and land the epic
 
