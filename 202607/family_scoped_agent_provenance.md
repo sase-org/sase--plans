@@ -77,7 +77,7 @@ phases:
     describe lane-scoped provenance and the family page as the durable home of a family''s
     commits.'
 create_time: 2026-07-30 10:32:31
-status: wip
+status: done
 bead_id: sase-b8
 ---
 
