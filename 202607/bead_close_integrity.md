@@ -1,97 +1,109 @@
 ---
 tier: epic
 title: Idempotent bead close-and-publish, then repair the projection
-goal: "Closing an already-closed bead is a verified no-op that writes no event, no commit and no changed byte; a second
-  close that arrives anyway cannot move a close timestamp or erase a close reason; concurrent note appends converge
-  instead of overwriting each other; and the 313 bead rows already damaged by past duplicate closes are repaired by
-  re-deriving `issues.jsonl` from the canonical event log rather than by rewriting history.
+goal: 'Closing an already-closed bead is a verified no-op that writes no event, no
+  commit and no changed byte; a second close that arrives anyway cannot move a close
+  timestamp or erase a close reason; concurrent note appends converge instead of overwriting
+  each other; and the 313 bead rows already damaged by past duplicate closes are repaired
+  by re-deriving `issues.jsonl` from the canonical event log rather than by rewriting
+  history.
 
-  "
+  '
 phases:
-  - id: core-close-interval
-    title: Closed-interval semantics in the event reducer
-    depends_on: []
-    size: medium
-    description: "core-close-interval: make `apply_event` treat a close of an already-closed bead as an exact no-op and
-      clear `closed_at`/`close_reason` on every transition out of closed, so duplicate close events cannot move a close
-      timestamp and the projection converges regardless of merge order.
+- id: core-close-interval
+  title: Closed-interval semantics in the event reducer
+  depends_on: []
+  size: medium
+  description: 'core-close-interval: make `apply_event` treat a close of an already-closed
+    bead as an exact no-op and clear `closed_at`/`close_reason` on every transition
+    out of closed, so duplicate close events cannot move a close timestamp and the
+    projection converges regardless of merge order.
 
-      "
-  - id: core-close-verified
-    title: Verified idempotent close in the mutation layer
-    depends_on:
-      - core-close-interval
-    size: medium
-    description: "core-close-verified: preflight every requested ID into closed / already-closed / conflicting, abort
-      the whole batch before any write when an explicit resolution or reason disagrees with the recorded close, and
-      report the classification through new outcome-wire fields.
+    '
+- id: core-close-verified
+  title: Verified idempotent close in the mutation layer
+  depends_on:
+  - core-close-interval
+  size: medium
+  description: 'core-close-verified: preflight every requested ID into closed / already-closed
+    / conflicting, abort the whole batch before any write when an explicit resolution
+    or reason disagrees with the recorded close, and report the classification through
+    new outcome-wire fields.
 
-      "
-  - id: core-note-append
-    title: A convergent note_appended event
-    depends_on:
-      - core-close-verified
-    size: medium
-    description: "core-note-append: add a `note_appended` event whose payload carries only the entry text, move note
-      rendering into the reducer so appends compose instead of replacing, keep legacy whole-string note events working
-      unchanged, and turn an unknown event kind into an actionable error.
+    '
+- id: core-note-append
+  title: A convergent note_appended event
+  depends_on:
+  - core-close-verified
+  size: medium
+  description: 'core-note-append: add a `note_appended` event whose payload carries
+    only the entry text, move note rendering into the reducer so appends compose instead
+    of replacing, keep legacy whole-string note events working unchanged, and turn
+    an unknown event kind into an actionable error.
 
-      "
-  - id: cli-close
-    title: An honest sase bead close command
-    depends_on:
-      - core-close-verified
-    size: medium
-    description: 'cli-close: stop printing "Closed" for beads that were already closed, distinguish cascade closes from
-      requested ones, make the auto-commit message name what actually happened, and stop the default resolution from
-      manufacturing a conflict on every commit-hook close.
+    '
+- id: cli-close
+  title: An honest sase bead close command
+  depends_on:
+  - core-close-verified
+  size: medium
+  description: 'cli-close: stop printing "Closed" for beads that were already closed,
+    distinguish cascade closes from requested ones, make the auto-commit message name
+    what actually happened, and stop the default resolution from manufacturing a conflict
+    on every commit-hook close.
 
-      '
-  - id: doctor-projection
-    title: Projection drift detection and repair
-    depends_on:
-      - core-close-interval
-    size: medium
-    description: "doctor-projection: teach doctor to compare `issues.jsonl` against the reduction of the canonical
-      streams, census redundant close events with a recent-window rate, and add a guarded `--fix-projection` repair that
-      refuses any diff outside the expected shape.
+    '
+- id: doctor-projection
+  title: Projection drift detection and repair
+  depends_on:
+  - core-close-interval
+  size: medium
+  description: 'doctor-projection: teach doctor to compare `issues.jsonl` against
+    the reduction of the canonical streams, census redundant close events with a recent-window
+    rate, and add a guarded `--fix-projection` repair that refuses any diff outside
+    the expected shape.
 
-      "
-  - id: history-notes
-    title: Redundant closes and restores in history
-    depends_on:
-      - core-close-interval
-    size: small
-    description: "history-notes: label close events the reducer treated as redundant so a timeline reads honestly, and
-      add a non-interactive confirmation flag so lost-note restoration can be run under an approval gate.
+    '
+- id: history-notes
+  title: Redundant closes and restores in history
+  depends_on:
+  - core-close-interval
+  size: small
+  description: 'history-notes: label close events the reducer treated as redundant
+    so a timeline reads honestly, and add a non-interactive confirmation flag so lost-note
+    restoration can be run under an approval gate.
 
-      "
-  - id: floor-docs
-    title: Core floor bump, docs, and full check
-    depends_on:
-      - core-note-append
-      - cli-close
-      - doctor-projection
-      - history-notes
-    size: small
-    description: "floor-docs: raise the published sase-core-rs window to the release containing the reducer and event
-      changes, document the close idempotency contract and the projection repair, refresh the beads skill source, and
-      run the full check.
+    '
+- id: floor-docs
+  title: Core floor bump, docs, and full check
+  depends_on:
+  - core-note-append
+  - cli-close
+  - doctor-projection
+  - history-notes
+  size: small
+  description: 'floor-docs: raise the published sase-core-rs window to the release
+    containing the reducer and event changes, document the close idempotency contract
+    and the projection repair, refresh the beads skill source, and run the full check.
 
-      "
-  - id: repair
-    title: Repair the live store under an approval gate
-    depends_on:
-      - floor-docs
-    size: small
-    description: "repair: run the guarded projection repair against the live beads sidecar, verify the diff shape
-      mechanically before committing, then restore the lost note revisions the research report deferred until the write
-      path was safe.
+    '
+- id: repair
+  title: Repair the live store under an approval gate
+  depends_on:
+  - floor-docs
+  size: small
+  description: 'repair: run the guarded projection repair against the live beads sidecar,
+    verify the diff shape mechanically before committing, then restore the lost note
+    revisions the research report deferred until the write path was safe.
 
-      "
+    '
 create_time: 2026-07-30 13:43:32
 status: wip
+bead_id: sase-bd
 ---
+
+- **PROMPT:** [202607/prompts/bead_close_integrity.md](prompts/bead_close_integrity.md)
+- **BEAD:** [sase-bd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bd/README.md)
 
 # Idempotent bead close-and-publish, then repair the projection
 
