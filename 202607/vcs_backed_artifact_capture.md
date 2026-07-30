@@ -65,6 +65,7 @@ status: wip
 bead_id: sase-b7
 ---
 
+- **PROMPT:** [202607/prompts/vcs_backed_artifact_capture.md](prompts/vcs_backed_artifact_capture.md)
 - **BEAD:** [sase-b7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b7/README.md)
 
 # Plan: Make artifact capture mean authorship and stop copying what version control stores

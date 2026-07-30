@@ -42,8 +42,8 @@ status: done
 bead_id: sase-aw
 ---
 
+- **PROMPT:** [202607/prompts/preview_panel_reader.md](prompts/preview_panel_reader.md)
 - **BEAD:** [sase-aw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aw/README.md)
-- **PROMPT:** [prompts/preview_panel_reader.md](prompts/preview_panel_reader.md)
 - **AGENTS:**
   - [bbugyi200.athena.ot](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ot/README.md)
   - [bbugyi200.athena.sase-aw.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-aw.1/README.md)
