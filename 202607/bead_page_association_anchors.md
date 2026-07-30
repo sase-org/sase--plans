@@ -66,7 +66,10 @@ phases:
     '
 create_time: 2026-07-30 07:19:49
 status: wip
+bead_id: sase-b5
 ---
+
+- **BEAD:** [sase-b5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b5/README.md)
 
 # Plan: Bead pages associate every repo's commits and always link their agents
 
