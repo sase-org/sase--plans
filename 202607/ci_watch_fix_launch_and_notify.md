@@ -11,6 +11,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/ci_watch_fix_launch_and_notify.md](prompts/ci_watch_fix_launch_and_notify.md)
+- **AGENTS:**
+  - bbugyi200.athena.p6--code
+- **COMMITS:**
+  - [788410a](https://github.com/bbugyi200/bugyi-chops/commit/788410a7461d7565b24cb44a6c1f18ab9e76e4ff) — fix(ci-watch):
+    isolate repair launches and notifications
 
 # Plan: Make `ci_watch` CI-repair proposals actually launch and notify once
 
