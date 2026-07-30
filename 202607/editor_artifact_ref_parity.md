@@ -48,9 +48,11 @@ phases:
 parent_bead: sase-b3
 create_time: 2026-07-30 06:56:58
 status: wip
+bead_id: sase-b3.10
 ---
 
 - **PARENT:** [202607/fuzzy_artifact_ref_completion.md](202607/fuzzy_artifact_ref_completion.md)
+- **BEAD:** [sase-b3.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/sase-b3.10.md)
 
 # Plan: Editor Parity for Fuzzy Artifact-Reference Completion
 
