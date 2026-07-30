@@ -50,7 +50,10 @@ phases:
     '
 create_time: 2026-07-30 10:36:33
 status: wip
+bead_id: sase-b9
 ---
+
+- **BEAD:** [sase-b9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b9/README.md)
 
 # Plan: Record artifact consumption at `@`-ref expansion
 
