@@ -54,7 +54,6 @@ bead_id: sase-b3.10
 - **PROMPT:** [202607/prompts/editor_artifact_ref_parity.md](prompts/editor_artifact_ref_parity.md)
 - **PARENT:** [202607/fuzzy_artifact_ref_completion.md](202607/fuzzy_artifact_ref_completion.md)
 - **BEAD:** [sase-b3.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/sase-b3.10.md)
-- **PROMPT:** [202607/prompts/editor_artifact_ref_parity.md](prompts/editor_artifact_ref_parity.md)
 
 # Plan: Editor Parity for Fuzzy Artifact-Reference Completion
 
