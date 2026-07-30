@@ -6,7 +6,7 @@ goal:
   the rebased `PARENT` link, and the `BEAD` link — no matter which writer put it there, so `sase validate` stops failing
   on approved epic plans.
 create_time: 2026-07-30 09:40:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/archive_plan_header_projection.md](prompts/archive_plan_header_projection.md)
