@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/archive_plan_header_projection.md](prompts/archive_plan_header_projection.md)
+- **AGENTS:**
+  - bbugyi200.athena.pc--code
+- **COMMITS:**
+  - [fb5fd2f](https://github.com/sase-org/sase--plans/commit/fb5fd2fbc85b0765a50d56da9fcdb6dd0297f2a3) — fix(sdd):
+    repair canonical plan prompt links
 
 # Project the canonical plan header when a plan enters the SDD archive
 
