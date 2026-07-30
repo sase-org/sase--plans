@@ -1,61 +1,65 @@
 ---
 tier: epic
 title: Land bead close integrity — unblock the core release and finish the repair
-goal: "The declared `sase-core-rs` floor names a published release that actually contains `note_appended` and
-  `bead_doctor_report`, so an ordinary install can read the live bead store and the `published-core-minimum-smoke` CI
-  lane is green; the beads still carrying dropped note revisions are either restored or explicitly declined by the user,
-  with the decision recorded; and epic `sase-bd` is closed with its plan file marked done.
+goal: 'The declared `sase-core-rs` floor names a published release that actually contains
+  `note_appended` and `bead_doctor_report`, so an ordinary install can read the live
+  bead store and the `published-core-minimum-smoke` CI lane is green; the beads still
+  carrying dropped note revisions are either restored or explicitly declined by the
+  user, with the decision recorded; and epic `sase-bd` is closed with its plan file
+  marked done.
 
-  "
+  '
 phases:
-  - id: core-clippy
-    title: Unblock sase-core master
-    depends_on: []
-    size: small
-    description:
-      "core-clippy: fix the `clippy::question_mark` denial in the doctor reader that has kept sase-core master red since
-      the projection-drift commit, sweep the neighbouring commits for the same class of denial, and confirm master CI
-      goes green so release-plz can cut a release."
-  - id: core-release
-    title: Publish the release containing all four core commits
-    depends_on:
-      - core-clippy
-    size: small
-    description:
-      "core-release: merge the refreshed release PR once master is green, then confirm the published wheel is actually
-      installable from the package index and carry the real published version forward."
-  - id: floor-bump
-    title: Make the declared core floor honest
-    depends_on:
-      - core-release
-    size: small
-    description:
-      "floor-bump: raise the `sase-core-rs` window to the newly published release, refresh the lockfile and the
-      declared-minimum test, and prove in a clean venv that the minimum satisfies every required binding and can read a
-      store containing note-append events."
-  - id: lost-notes
-    title: Put the lost-note restore to the user
-    depends_on: []
-    size: small
-    description:
-      "lost-notes: re-measure the beads carrying dropped note revisions, present the restore to the user through an
-      approval gate, run or decline it accordingly, and record the decision durably so it stops being absent."
-  - id: land
-    title: Close the epic
-    depends_on:
-      - floor-bump
-      - lost-notes
-    size: small
-    description:
-      "land: close the epic bead with a note covering what was verified, run symvision and clear anything stale it
-      reports, and mark the original plan file done."
+- id: core-clippy
+  title: Unblock sase-core master
+  depends_on: []
+  size: small
+  description: 'core-clippy: fix the `clippy::question_mark` denial in the doctor
+    reader that has kept sase-core master red since the projection-drift commit, sweep
+    the neighbouring commits for the same class of denial, and confirm master CI goes
+    green so release-plz can cut a release.'
+- id: core-release
+  title: Publish the release containing all four core commits
+  depends_on:
+  - core-clippy
+  size: small
+  description: 'core-release: merge the refreshed release PR once master is green,
+    then confirm the published wheel is actually installable from the package index
+    and carry the real published version forward.'
+- id: floor-bump
+  title: Make the declared core floor honest
+  depends_on:
+  - core-release
+  size: small
+  description: 'floor-bump: raise the `sase-core-rs` window to the newly published
+    release, refresh the lockfile and the declared-minimum test, and prove in a clean
+    venv that the minimum satisfies every required binding and can read a store containing
+    note-append events.'
+- id: lost-notes
+  title: Put the lost-note restore to the user
+  depends_on: []
+  size: small
+  description: 'lost-notes: re-measure the beads carrying dropped note revisions,
+    present the restore to the user through an approval gate, run or decline it accordingly,
+    and record the decision durably so it stops being absent.'
+- id: land
+  title: Close the epic
+  depends_on:
+  - floor-bump
+  - lost-notes
+  size: small
+  description: 'land: close the epic bead with a note covering what was verified,
+    run symvision and clear anything stale it reports, and mark the original plan
+    file done.'
 parent_bead: sase-bd
 create_time: 2026-07-30 16:13:33
 status: wip
+bead_id: sase-bd.9
 ---
 
-- **PARENT:**
-  [202607/bead_close_integrity.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_close_integrity.md)
+- **PROMPT:** [202607/prompts/bead_close_integrity_landing.md](prompts/bead_close_integrity_landing.md)
+- **PARENT:** [202607/bead_close_integrity.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_close_integrity.md)
+- **BEAD:** [sase-bd.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bd/sase-bd.9.md)
 
 # Land bead close integrity: unblock the core release and finish the repair
 
