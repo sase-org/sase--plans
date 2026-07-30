@@ -7,7 +7,7 @@ goal:
   projects — after which epic sase-b2 is closed, its symvision whitelist retired, and its plan file marked done.
 bead: sase-b2
 create_time: 2026-07-29 23:55:36
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/artifact_ref_project_ref.md](prompts/artifact_ref_project_ref.md)
