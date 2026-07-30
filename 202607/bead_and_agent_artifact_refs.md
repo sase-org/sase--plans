@@ -104,6 +104,7 @@ status: wip
 bead_id: sase-b2
 ---
 
+- **PROMPT:** [202607/prompts/bead_and_agent_artifact_refs.md](prompts/bead_and_agent_artifact_refs.md)
 - **BEAD:** [sase-b2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b2/README.md)
 
 # Plan: `@bead:` and `@agent:` artifact reference kinds
