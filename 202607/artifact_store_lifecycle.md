@@ -76,7 +76,10 @@ phases:
     '
 create_time: 2026-07-30 10:39:40
 status: wip
+bead_id: sase-ba
 ---
+
+- **BEAD:** [sase-ba](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ba/README.md)
 
 # Plan: Give the artifact store a lifecycle - report, dry-run pruning, and opt-in retention
 
