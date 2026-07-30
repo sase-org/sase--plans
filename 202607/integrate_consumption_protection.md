@@ -14,8 +14,10 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-b9.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b9.land.md)
 - **COMMITS:**
-  - [6edbb71](https://github.com/sase-org/sase--plans/commit/6edbb71ef268d7569b8570ab64aac2f68ba41732) — chore(plans):
-    mark artifact consumption epic done
+  - [d6eb412](https://github.com/sase-org/sase/commit/d6eb4127138b071e02e179b4cd8bf0c1da7c9948) — fix(artifact): protect
+    consumed files from retention
+  - [be94f09](https://github.com/sase-org/sase/commit/be94f098a761cee54e5e4b855374b504b92f6eb8) — fix(artifact): extend
+    consumption protection coverage
 
 # Integrate artifact consumption with lifecycle protection and land `sase-b9`
 
