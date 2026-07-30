@@ -73,10 +73,11 @@ phases:
     help, onboarding, and quickstart sweeps including six-way sub-tab numbering and
     the stale path-copy doc line.'
 create_time: 2026-07-29 19:13:43
-status: wip
+status: done
 bead_id: sase-b0
 ---
 
+- **PROMPT:** [202607/prompts/artifacts_files_subtab.md](prompts/artifacts_files_subtab.md)
 - **BEAD:** [sase-b0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b0/README.md)
 
 # Plan: Artifacts → Files sub-tab
