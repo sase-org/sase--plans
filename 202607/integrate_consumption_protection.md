@@ -4,7 +4,7 @@ title: Protect consumed artifacts and land sase-b9
 goal: Recorded artifact consumption protects lifecycle operations, and the verified sase-b9 epic is cleanly closed.
 bead: sase-b9
 create_time: 2026-07-30 13:01:42
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/integrate_consumption_protection.md](prompts/integrate_consumption_protection.md)
