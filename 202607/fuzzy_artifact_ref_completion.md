@@ -101,7 +101,10 @@ phases:
     '
 create_time: 2026-07-30 04:18:13
 status: wip
+bead_id: sase-b3
 ---
+
+- **BEAD:** [sase-b3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/README.md)
 
 # Plan: Fuzzy Artifact-Reference Completion With Matched-Run Highlighting
 
