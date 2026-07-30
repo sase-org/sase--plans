@@ -1,53 +1,58 @@
 ---
 tier: epic
 title: Commit-time file hooks + bob highlights PDF pipeline
-goal: "Files that sase agents add/modify/remove — via VCS commits or `sase artifact create` — automatically trigger
-  user-configured per-file hook commands with rich success/failure notifications, and the first configured hook turns
-  new consolidated research reports into Highlights-ready PDFs in the Obsidian vault.
+goal: 'Files that sase agents add/modify/remove — via VCS commits or `sase artifact
+  create` — automatically trigger user-configured per-file hook commands with rich
+  success/failure notifications, and the first configured hook turns new consolidated
+  research reports into Highlights-ready PDFs in the Obsidian vault.
 
-  "
+  '
 phases:
-  - id: highlights-create
-    title: Add `bob highlights create <md_file>` to bob-cli
-    depends_on: []
-    size: medium
-    description:
-      "highlights-create: add a Rust clap subcommand to the bob-cli highlights group that converts a markdown file into
-      a beautiful, TOC-indexed PDF under ~/bob/lib/chat/ via a pandoc shell-out, embeds the page-1 /Text Highlights
-      marker annotation with lopdf so `bob highlights scan` later creates the Obsidian ref note, and ships polished
-      colored success/failure output, docs, and tests."
-  - id: hooks-config
-    title: file_hooks config section, matcher, and list CLI
-    depends_on: []
-    size: medium
-    description:
-      "hooks-config: add the `file_hooks` section to the sase config schema and default config, a fail-soft typed loader
-      mirroring mentor_profiles, a wcmatch-based path matcher with negative-glob support, the `sase file-hook list`
-      command, docs, and unit tests. No commit-flow integration yet."
-  - id: hooks-engine
-    title: Commit/artifact event capture, detached runner, notifications
-    depends_on:
-      - hooks-config
-    size: medium
-    description:
-      "hooks-engine: capture per-file ADD/MODIFY/REMOVE events at both commit seams (CommitWorkflow and
-      commit_sdd_files) and at `sase artifact create`, match them against configured file_hooks, execute matched
-      commands once per file in a detached batch runner (`sase file-hook exec-batch`), and send a sase notification per
-      run with attached output; never gate or slow the commit."
-  - id: deploy-verify
-    title: Configure the research-highlights hook and verify end to end
-    depends_on:
-      - highlights-create
-      - hooks-engine
-    size: small
-    description:
-      "deploy-verify: add the research-highlights file_hooks entry to the chezmoi-managed global sase.yml, apply it,
-      install the new bob binary, run `bob highlights create` against the real 202607 beads research report, verify the
-      PDF and then the ref note produced by `bob highlights scan`, and exercise the sase hook engine end to end
-      including its notification."
+- id: highlights-create
+  title: Add `bob highlights create <md_file>` to bob-cli
+  depends_on: []
+  size: medium
+  description: 'highlights-create: add a Rust clap subcommand to the bob-cli highlights
+    group that converts a markdown file into a beautiful, TOC-indexed PDF under ~/bob/lib/chat/
+    via a pandoc shell-out, embeds the page-1 /Text Highlights marker annotation with
+    lopdf so `bob highlights scan` later creates the Obsidian ref note, and ships
+    polished colored success/failure output, docs, and tests.'
+- id: hooks-config
+  title: file_hooks config section, matcher, and list CLI
+  depends_on: []
+  size: medium
+  description: 'hooks-config: add the `file_hooks` section to the sase config schema
+    and default config, a fail-soft typed loader mirroring mentor_profiles, a wcmatch-based
+    path matcher with negative-glob support, the `sase file-hook list` command, docs,
+    and unit tests. No commit-flow integration yet.'
+- id: hooks-engine
+  title: Commit/artifact event capture, detached runner, notifications
+  depends_on:
+  - hooks-config
+  size: medium
+  description: 'hooks-engine: capture per-file ADD/MODIFY/REMOVE events at both commit
+    seams (CommitWorkflow and commit_sdd_files) and at `sase artifact create`, match
+    them against configured file_hooks, execute matched commands once per file in
+    a detached batch runner (`sase file-hook exec-batch`), and send a sase notification
+    per run with attached output; never gate or slow the commit.'
+- id: deploy-verify
+  title: Configure the research-highlights hook and verify end to end
+  depends_on:
+  - highlights-create
+  - hooks-engine
+  size: small
+  description: 'deploy-verify: add the research-highlights file_hooks entry to the
+    chezmoi-managed global sase.yml, apply it, install the new bob binary, run `bob
+    highlights create` against the real 202607 beads research report, verify the PDF
+    and then the ref note produced by `bob highlights scan`, and exercise the sase
+    hook engine end to end including its notification.'
 create_time: 2026-07-30 13:32:26
 status: wip
+bead_id: sase-bc
 ---
+
+- **PROMPT:** [202607/prompts/commit_file_hooks.md](prompts/commit_file_hooks.md)
+- **BEAD:** [sase-bc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bc/README.md)
 
 # Plan: Commit-time file hooks + `bob highlights create`
 
