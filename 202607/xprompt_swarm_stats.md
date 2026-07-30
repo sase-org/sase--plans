@@ -74,7 +74,10 @@ phases:
     '
 create_time: 2026-07-29 21:09:40
 status: wip
+bead_id: sase-b1
 ---
+
+- **BEAD:** [sase-b1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b1/README.md)
 
 # Record xprompt-swarm origin so swarms appear in Statistics → XPrompts
 
