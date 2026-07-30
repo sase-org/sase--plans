@@ -87,10 +87,11 @@ phases:
 
     '
 create_time: 2026-07-29 18:22:57
-status: wip
+status: done
 bead_id: sase-ay
 ---
 
+- **PROMPT:** [202607/prompts/at_reference_completion_menu.md](prompts/at_reference_completion_menu.md)
 - **BEAD:** [sase-ay](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ay/README.md)
 
 # Plan: Bare `@` opens one reference menu for artifact kinds and local files
