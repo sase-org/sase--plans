@@ -7,7 +7,7 @@ goal:
   of once every two lumberjack ticks forever, and scopes its dedupe key to the current red episode so a failing-job set
   that recurs after the repo goes green can be fixed again.
 create_time: 2026-07-30 06:55:06
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/ci_watch_fix_launch_and_notify.md](prompts/ci_watch_fix_launch_and_notify.md)
