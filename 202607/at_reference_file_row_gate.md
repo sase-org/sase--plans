@@ -47,6 +47,7 @@ bead_id: sase-b4
 ---
 
 - **BEAD:** [sase-b4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b4/README.md)
+- **PROMPT:** [202607/prompts/at_reference_file_row_gate.md](prompts/at_reference_file_row_gate.md)
 
 # Gate `@` reference file rows behind kind misses and explicit Ctrl+T
 
