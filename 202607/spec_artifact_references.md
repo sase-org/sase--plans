@@ -1,75 +1,85 @@
 ---
 tier: epic
 title: Persist artifact references on beads and ChangeSpecs
-goal: "A bead and a ChangeSpec each carry a durable, ordered list of canonical artifact references that survives
-  machines, workspaces, and store rebuilds: one shared Rust codec parses, normalizes, and batch-resolves reference lists
-  for every caller; `sase bead ref` and `sase changespec ref` attach and detach them; `sase bead show`, the ACE
-  surfaces, bead pages, and the mobile bridge render the stable reference and where it currently resolves; and `sase
-  bead doctor` and `sase doctor` report references that resolve nowhere instead of silently passing.
+goal: 'A bead and a ChangeSpec each carry a durable, ordered list of canonical artifact
+  references that survives machines, workspaces, and store rebuilds: one shared Rust
+  codec parses, normalizes, and batch-resolves reference lists for every caller; `sase
+  bead ref` and `sase changespec ref` attach and detach them; `sase bead show`, the
+  ACE surfaces, bead pages, and the mobile bridge render the stable reference and
+  where it currently resolves; and `sase bead doctor` and `sase doctor` report references
+  that resolve nowhere instead of silently passing.
 
-  "
+  '
 phases:
-  - id: core-refs
-    title: Shared reference-list codec and the ChangeSpec REFS section
-    depends_on: []
-    size: medium
-    description: "core-refs: add the Rust parse/normalize/render/batch-resolve API for stored artifact-reference lists,
-      expose it through the PyO3 binding, and teach the Rust ChangeSpec parser the new REFS section behind a wire-schema
-      bump.
+- id: core-refs
+  title: Shared reference-list codec and the ChangeSpec REFS section
+  depends_on: []
+  size: medium
+  description: 'core-refs: add the Rust parse/normalize/render/batch-resolve API for
+    stored artifact-reference lists, expose it through the PyO3 binding, and teach
+    the Rust ChangeSpec parser the new REFS section behind a wire-schema bump.
 
-      "
-  - id: core-beads
-    title: The bead refs field in the Rust core
-    depends_on:
-      - core-refs
-    size: medium
-    description: "core-beads: give beads a `refs` list with its own add and remove events, SQLite column and migration,
-      JSONL codec, `sase bead ref` and `sase bead create --ref` handling, show rendering, search coverage, and doctor
-      diagnostics.
+    '
+- id: core-beads
+  title: The bead refs field in the Rust core
+  depends_on:
+  - core-refs
+  size: medium
+  description: 'core-beads: give beads a `refs` list with its own add and remove events,
+    SQLite column and migration, JSONL codec, `sase bead ref` and `sase bead create
+    --ref` handling, show rendering, search coverage, and doctor diagnostics.
 
-      "
-  - id: beads
-    title: Python bead refs, show, and doctor
-    depends_on:
-      - core-beads
-    size: medium
-    description: "beads: raise the core floor, add the Python reference-list facade, mirror the new bead field across
-      the model, codecs, and JSON wire, render a resolved REFS section in `sase bead show`, and thread the reference
-      context into `sase bead doctor`.
+    '
+- id: beads
+  title: Python bead refs, show, and doctor
+  depends_on:
+  - core-beads
+  size: medium
+  description: 'beads: raise the core floor, add the Python reference-list facade,
+    mirror the new bead field across the model, codecs, and JSON wire, render a resolved
+    REFS section in `sase bead show`, and thread the reference context into `sase
+    bead doctor`.
 
-      "
-  - id: changespecs
-    title: The ChangeSpec REFS section in Python, CLI, and ACE
-    depends_on:
-      - beads
-    size: medium
-    description: "changespecs: parse, format, and atomically persist the REFS section in Python, consolidate the
-      duplicated section-boundary tables onto one constant, add `sase changespec ref`, render REFS in the ACE CLI and
-      TUI, and add the `sase doctor` validation check.
+    '
+- id: changespecs
+  title: The ChangeSpec REFS section in Python, CLI, and ACE
+  depends_on:
+  - beads
+  size: medium
+  description: 'changespecs: parse, format, and atomically persist the REFS section
+    in Python, consolidate the duplicated section-boundary tables onto one constant,
+    add `sase changespec ref`, render REFS in the ACE CLI and TUI, and add the `sase
+    doctor` validation check.
 
-      "
-  - id: surfaces
-    title: Published pages, ACE Plans tab, mobile bridge, and declaration
-    depends_on:
-      - beads
-    size: small
-    description: "surfaces: render bead references on published pages and in the ACE Plans detail panel, return them
-      through the mobile bridge, and let `sase artifact create` attach the reference it just minted to a bead.
+    '
+- id: surfaces
+  title: Published pages, ACE Plans tab, mobile bridge, and declaration
+  depends_on:
+  - beads
+  size: small
+  description: 'surfaces: render bead references on published pages and in the ACE
+    Plans detail panel, return them through the mobile bridge, and let `sase artifact
+    create` attach the reference it just minted to a bead.
 
-      "
-  - id: docs
-    title: Documentation, skills, and the live-store audit
-    depends_on:
-      - changespecs
-      - surfaces
-    size: small
-    description: "docs: document the bead field and the ChangeSpec section, update the affected skill sources,
-      regenerate the deployed skills, and audit both live stores with the new validators.
+    '
+- id: docs
+  title: Documentation, skills, and the live-store audit
+  depends_on:
+  - changespecs
+  - surfaces
+  size: small
+  description: 'docs: document the bead field and the ChangeSpec section, update the
+    affected skill sources, regenerate the deployed skills, and audit both live stores
+    with the new validators.
 
-      "
+    '
 create_time: 2026-07-30 10:53:32
 status: wip
+bead_id: sase-bb
 ---
+
+- **PROMPT:** [202607/prompts/spec_artifact_references.md](prompts/spec_artifact_references.md)
+- **BEAD:** [sase-bb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bb/README.md)
 
 # Plan: Persist artifact references on beads and ChangeSpecs
 
