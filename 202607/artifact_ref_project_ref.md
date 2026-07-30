@@ -14,6 +14,12 @@ status: done
 - **PARENT:**
   [202607/bead_and_agent_artifact_refs.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_and_agent_artifact_refs.md)
 - **BEAD:** [sase-b2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b2/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-b2.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b2.land.md#member-code)
+  - [bbugyi200.athena.sase-b2.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b2.land.md#member-plan)
+- **COMMITS:**
+  - [a78894e](https://github.com/sase-org/sase/commit/a78894e7c409ce576b873af1526570b71d367cce) — fix: resolve artifact
+    entities for workspace projects
 
 # Repair workspace project-ref resolution so `@bead:`/`@agent:` actually resolve, then land epic sase-b2
 
