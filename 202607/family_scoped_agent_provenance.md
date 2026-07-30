@@ -78,7 +78,10 @@ phases:
     commits.'
 create_time: 2026-07-30 10:32:31
 status: wip
+bead_id: sase-b8
 ---
+
+- **BEAD:** [sase-b8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b8/README.md)
 
 # Plan: Anchor agent commit provenance on the agent lane instead of the family member
 
