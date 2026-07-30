@@ -43,7 +43,10 @@ phases:
     '
 create_time: 2026-07-30 07:14:59
 status: wip
+bead_id: sase-b4
 ---
+
+- **BEAD:** [sase-b4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b4/README.md)
 
 # Gate `@` reference file rows behind kind misses and explicit Ctrl+T
 
