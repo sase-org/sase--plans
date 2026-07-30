@@ -14,6 +14,12 @@ status: done
 - **PARENT:**
   [202607/editor_artifact_ref_parity.md](https://github.com/sase-org/sase--plans/blob/main/202607/editor_artifact_ref_parity.md)
 - **BEAD:** [sase-b3.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/sase-b3.10.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-b3.10.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b3.10.land.md#member-code)
+  - [bbugyi200.athena.sase-b3.10.land--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b3.10.land.md#member-plan)
+- **COMMITS:**
+  - [02de1fd](https://github.com/sase-org/sase/commit/02de1fd2aceb105419a188fa9cd1d46c53782d7c) — build(deps): require
+    sase-core-rs 0.12.19
 
 # Plan: Land the editor artifact-reference parity epic with the correct Rust dependency floor
 
