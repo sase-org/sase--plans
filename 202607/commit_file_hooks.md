@@ -47,7 +47,7 @@ phases:
     and then the ref note produced by `bob highlights scan`, and exercise the sase
     hook engine end to end including its notification.'
 create_time: 2026-07-30 13:32:26
-status: wip
+status: done
 bead_id: sase-bc
 ---
 
