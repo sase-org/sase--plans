@@ -1,56 +1,57 @@
 ---
 tier: epic
 title: Attribute beads to the agent that created them
-goal:
-  Every newly created bead records the SASE agent responsible for it — epic and phase beads carry the agent that
-  proposed the epic plan file, task beads carry the agent (or the human) that created them — and `sase bead show` plus
-  the published bead page render that creator as a link to its `agents` sidecar page.
+goal: Every newly created bead records the SASE agent responsible for it — epic and
+  phase beads carry the agent that proposed the epic plan file, task beads carry the
+  agent (or the human) that created them — and `sase bead show` plus the published
+  bead page render that creator as a link to its `agents` sidecar page.
 phases:
-  - id: core
-    title: Record an explicit creator in sase-core bead creation and plan validation
-    depends_on: []
-    size: medium
-    description:
-      "core: add an optional `created_by` to the Rust bead-create request with an explicit
-      request/phase-parent/store-owner resolution order, and add the optional system-managed `proposed_by` plan
-      frontmatter field to the plan validator, schema, and validated wire."
-  - id: attribution
-    title: Add the Python attribution resolver and creator plumbing
-    depends_on:
-      - core
-    size: small
-    description:
-      "attribution: add the `sase.bead.attribution` module that resolves the acting agent's durable global name and a
-      plan's recorded proposer, thread `created_by` through the bead mutation facade and `BeadProject.create`, and
-      surface `proposed_by` on the Python validated-plan dataclass."
-  - id: wiring
-    title: Record the creator on every bead creation path
-    depends_on:
-      - attribution
-    size: medium
-    description:
-      "wiring: stamp `proposed_by` into plan frontmatter at `sase plan propose`, and pass a resolved creator from `sase
-      bead create` and from deterministic epic-from-plan creation so epics, phases, and tasks are attributed correctly."
-  - id: show
-    title: Render the creator and its agent link in bead detail output
-    depends_on: []
-    size: medium
-    description:
-      "show: add the `CREATED BY` block to the shared bead detail renderer, resolve the hosted agents sidecar URL for
-      `sase bead show`, add `created_by_url` to the detail JSON envelope, and refresh the affected golden fixtures and
-      docs."
-  - id: page
-    title: Render the creator on published bead pages
-    depends_on: []
-    size: small
-    description:
-      "page: add a linked `Created by` fact to the hosted bead page identity block using the page renderer's existing
-      agent-link resolver, and refresh the bead page goldens."
+- id: core
+  title: Record an explicit creator in sase-core bead creation and plan validation
+  depends_on: []
+  size: medium
+  description: 'core: add an optional `created_by` to the Rust bead-create request
+    with an explicit request/phase-parent/store-owner resolution order, and add the
+    optional system-managed `proposed_by` plan frontmatter field to the plan validator,
+    schema, and validated wire.'
+- id: attribution
+  title: Add the Python attribution resolver and creator plumbing
+  depends_on:
+  - core
+  size: small
+  description: 'attribution: add the `sase.bead.attribution` module that resolves
+    the acting agent''s durable global name and a plan''s recorded proposer, thread
+    `created_by` through the bead mutation facade and `BeadProject.create`, and surface
+    `proposed_by` on the Python validated-plan dataclass.'
+- id: wiring
+  title: Record the creator on every bead creation path
+  depends_on:
+  - attribution
+  size: medium
+  description: 'wiring: stamp `proposed_by` into plan frontmatter at `sase plan propose`,
+    and pass a resolved creator from `sase bead create` and from deterministic epic-from-plan
+    creation so epics, phases, and tasks are attributed correctly.'
+- id: show
+  title: Render the creator and its agent link in bead detail output
+  depends_on: []
+  size: medium
+  description: 'show: add the `CREATED BY` block to the shared bead detail renderer,
+    resolve the hosted agents sidecar URL for `sase bead show`, add `created_by_url`
+    to the detail JSON envelope, and refresh the affected golden fixtures and docs.'
+- id: page
+  title: Render the creator on published bead pages
+  depends_on: []
+  size: small
+  description: 'page: add a linked `Created by` fact to the hosted bead page identity
+    block using the page renderer''s existing agent-link resolver, and refresh the
+    bead page goldens.'
 create_time: 2026-07-31 09:12:26
 status: wip
+bead_id: sase-bv
 ---
 
 - **PROMPT:** [202607/prompts/bead_created_by_attribution.md](prompts/bead_created_by_attribution.md)
+- **BEAD:** [sase-bv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bv/README.md)
 
 # Plan: Attribute beads to the agent that created them
 
