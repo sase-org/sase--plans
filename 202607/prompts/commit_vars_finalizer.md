@@ -1,5 +1,3 @@
-- **PLAN:** [../202607/commit_vars_finalizer.md](../commit_vars_finalizer.md)
-
  Can you help me make some improvements to the `sase commit` command and
 the corresponding /sase_git_commit xprompt skill?
 
@@ -29,4 +27,3 @@ the corresponding /sase_git_commit xprompt skill?
 Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate
 tier, validate and revalidate until it passes, then submit it with `sase plan propose` (as the skill instructs)
 before making any file changes.
- 
