@@ -1,43 +1,49 @@
 ---
 tier: epic
 title: Registry-driven Telegram support for every SASE gate kind
-goal: "Telegram renders and resolves every registered notification-gate kind — including TaskTriage and any kind added
-  later — from the shared gate adapter registry, with the full option keyboard, command execution, and feedback contract
-  that ACE already provides.
+goal: 'Telegram renders and resolves every registered notification-gate kind — including
+  TaskTriage and any kind added later — from the shared gate adapter registry, with
+  the full option keyboard, command execution, and feedback contract that ACE already
+  provides.
 
-  "
+  '
 phases:
-  - id: core-registry
-    title: Adapter-owned gate capabilities and in-repo adoption
-    depends_on: []
-    size: medium
-    description: 'core-registry: add default_feedback, generic_form, and branch_actionable to GateAdapter, collapse the
-      duplicated `kind == "custom"` feedback derivations onto the adapter, and replace ACE''s hardcoded gate-action and
-      gate-kind literals with registry lookups.
+- id: core-registry
+  title: Adapter-owned gate capabilities and in-repo adoption
+  depends_on: []
+  size: medium
+  description: 'core-registry: add default_feedback, generic_form, and branch_actionable
+    to GateAdapter, collapse the duplicated `kind == "custom"` feedback derivations
+    onto the adapter, and replace ACE''s hardcoded gate-action and gate-kind literals
+    with registry lookups.
 
-      '
-  - id: telegram-gates
-    title: Registry-driven gate rendering and resolution in sase-telegram
-    depends_on:
-      - core-registry
-    size: medium
-    description: "telegram-gates: replace the six hardcoded action/kind allowlists in the sase-telegram plugin with
-      registry lookups and rename the custom-gate formatter into an adapter-driven generic gate formatter, so TaskTriage
-      and every future kind render with buttons, attachments, and a working callback path.
+    '
+- id: telegram-gates
+  title: Registry-driven gate rendering and resolution in sase-telegram
+  depends_on:
+  - core-registry
+  size: medium
+  description: 'telegram-gates: replace the six hardcoded action/kind allowlists in
+    the sase-telegram plugin with registry lookups and rename the custom-gate formatter
+    into an adapter-driven generic gate formatter, so TaskTriage and every future
+    kind render with buttons, attachments, and a working callback path.
 
-      "
-  - id: telegram-optional-feedback
-    title: Optional-feedback affordance for Telegram gate branches
-    depends_on:
-      - telegram-gates
-    size: small
-    description:
-      "telegram-optional-feedback: add an `f<branch>` callback and per-branch feedback button so Telegram can attach
-      optional feedback to a gate selection, matching the ACE gate form."
+    '
+- id: telegram-optional-feedback
+  title: Optional-feedback affordance for Telegram gate branches
+  depends_on:
+  - telegram-gates
+  size: small
+  description: 'telegram-optional-feedback: add an `f<branch>` callback and per-branch
+    feedback button so Telegram can attach optional feedback to a gate selection,
+    matching the ACE gate form.'
 proposed_by: bbugyi200.athena.qh
 create_time: 2026-07-31 12:13:10
 status: wip
+bead_id: sase-ci
 ---
+
+- **BEAD:** [sase-ci](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ci/README.md)
 
 # Plan: Registry-driven Telegram support for every SASE gate kind
 
