@@ -5,7 +5,7 @@ goal:
   The epic clan summary shows a single-line `Counts:` field above `Path:` that reports the authored plan's phase count
   and dependency-wave count, backed by one shared wave-layering helper that `sase bead work` and the renderer both use.
 create_time: 2026-07-31 09:17:30
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_clan_summary_counts.md](prompts/epic_clan_summary_counts.md)
