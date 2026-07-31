@@ -5,7 +5,7 @@ goal:
   Every configured agent tribe carries a required one-line description that ACE renders in the Agents-tab metadata panel
   when that tribe's panel is selected.
 create_time: 2026-07-31 07:34:33
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_description.md](prompts/tribe_description.md)
