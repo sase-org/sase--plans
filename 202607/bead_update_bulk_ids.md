@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_update_bulk_ids.md](prompts/bead_update_bulk_ids.md)
+- **AGENTS:**
+  - [bbugyi200.athena.qm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qm.md)
+- **COMMITS:**
+  - [50988fe](https://github.com/sase-org/sase/commit/50988fe7f0b77c0f54fbd71fd9de89ae3788662b) — feat(beads): accept
+    multiple bead IDs in \`sase bead update\`
 
 # Plan: Accept multiple bead IDs in `sase bead update`
 
