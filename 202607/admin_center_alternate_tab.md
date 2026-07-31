@@ -5,7 +5,7 @@ goal:
   Inside a SASE Admin Center working tab, the opener key (`#` by default) jumps to the previously used section and
   toggles between exactly those two sections, advertised by a color-coded panel footer.
 create_time: 2026-07-31 07:34:11
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/admin_center_alternate_tab.md](prompts/admin_center_alternate_tab.md)
