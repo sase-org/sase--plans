@@ -3,7 +3,7 @@ tier: tale
 title: Refresh the builtin model catalog
 goal: Builtin pickers omit redundant Claude 5 point versions, retain floating Claude defaults, and offer Codex Spark.
 create_time: 2026-07-31 06:59:40
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/refresh_builtin_model_catalog.md](prompts/refresh_builtin_model_catalog.md)
