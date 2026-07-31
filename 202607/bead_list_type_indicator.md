@@ -6,7 +6,7 @@ goal:
   cross-surface bead-type vocabulary the TUI and bead pages already use.
 proposed_by: bbugyi200.athena.qg
 create_time: 2026-07-31 10:54:09
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_list_type_indicator.md](prompts/bead_list_type_indicator.md)
