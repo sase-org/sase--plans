@@ -5,7 +5,7 @@ goal:
   Approved epic plans always enter the SDD archive carrying their reciprocal PROMPT bullet, so `sase validate` stops
   reporting spurious missing-link/reverse-link errors that turn `just check` red in every workspace.
 create_time: 2026-07-31 08:59:54
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_prompt_link_race.md](prompts/epic_prompt_link_race.md)
