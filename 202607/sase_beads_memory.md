@@ -1,39 +1,41 @@
 ---
 tier: epic
 title: Migrate the sase_beads skill into generated Tier 2 memory
-goal: "`sase bead` guidance lives in a concise, auto-generated `sase/memory/sase_beads.md` long-term memory note that
-  every sase-managed project and the home root receive automatically, and no copy of the `/sase_beads` skill remains in
-  the sase repo, the chezmoi repo, or the home directory.
+goal: '`sase bead` guidance lives in a concise, auto-generated `sase/memory/sase_beads.md`
+  long-term memory note that every sase-managed project and the home root receive
+  automatically, and no copy of the `/sase_beads` skill remains in the sase repo,
+  the chezmoi repo, or the home directory.
 
-  "
+  '
 phases:
-  - id: generate
-    title: Generated Tier 2 bead memory note
-    depends_on: []
-    size: medium
-    description:
-      "generate: add the packaged bead-note asset plus the generated-long-note plumbing that writes
-      `sase/memory/sase_beads.md` into every memory root and lists it in Tier 2 of every AGENTS.md."
-  - id: retire
-    title: Retire the sase_beads skill source
-    depends_on:
-      - generate
-    size: small
-    description:
-      "retire: delete the skill source and every in-repo reference to it, including the three bead CLI-contract tests
-      that parsed the skill file."
-  - id: cleanup
-    title: Remove deployed skill copies and verify rollout
-    depends_on:
-      - retire
-    size: small
-    description:
-      "cleanup: git rm the six chezmoi skill copies, delete the seven home skill directories, and verify the new note
-      reached home memory."
+- id: generate
+  title: Generated Tier 2 bead memory note
+  depends_on: []
+  size: medium
+  description: 'generate: add the packaged bead-note asset plus the generated-long-note
+    plumbing that writes `sase/memory/sase_beads.md` into every memory root and lists
+    it in Tier 2 of every AGENTS.md.'
+- id: retire
+  title: Retire the sase_beads skill source
+  depends_on:
+  - generate
+  size: small
+  description: 'retire: delete the skill source and every in-repo reference to it,
+    including the three bead CLI-contract tests that parsed the skill file.'
+- id: cleanup
+  title: Remove deployed skill copies and verify rollout
+  depends_on:
+  - retire
+  size: small
+  description: 'cleanup: git rm the six chezmoi skill copies, delete the seven home
+    skill directories, and verify the new note reached home memory.'
 proposed_by: bbugyi200.athena.qn
 create_time: 2026-07-31 15:00:50
 status: wip
+bead_id: sase-cp
 ---
+
+- **BEAD:** [sase-cp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cp/README.md)
 
 # Plan: Migrate the sase_beads skill into generated Tier 2 memory
 
