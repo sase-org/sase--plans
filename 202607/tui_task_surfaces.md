@@ -10,6 +10,11 @@ status: done
 - **PROMPT:** [202607/prompts/tui_task_surfaces.md](prompts/tui_task_surfaces.md)
 - **PARENT:** [202607/task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202607/task_beads.md)
 - **BEAD:** [sase-bg.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bg/sase-bg.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-bg.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-bg.4.md)
+- **COMMITS:**
+  - [f592b43](https://github.com/sase-org/sase/commit/f592b43dfe5d0c6e1e68ab1e71c2124f6d013d2a) — feat(tui): surface
+    task beads in ACE
 
 # ACE TUI task bead surfaces and PNG goldens
 
