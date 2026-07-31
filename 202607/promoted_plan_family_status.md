@@ -5,7 +5,7 @@ goal:
   A lane whose plan chain started in a family continuation shows the plan-family status (TALE / TALE APPROVED / WORKING
   TALE / TALE DONE) on its root row instead of a stale DONE.
 create_time: 2026-07-31 07:23:59
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/promoted_plan_family_status.md](prompts/promoted_plan_family_status.md)
