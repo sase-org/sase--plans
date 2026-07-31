@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-cp.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-cp.land.md)
 - **COMMITS:**
-  - [33c6311](https://github.com/sase-org/sase/commit/33c63112c911958e5a3c6111eb4f01caeb945794) — docs(memory): document
-    bulk bead update semantics
+  - [6d40abb](https://github.com/sase-org/sase--plans/commit/6d40abb49235501243e564e15e4f16d90fb8172b) — chore(plans):
+    mark bead memory epic done
 
 # Plan: Finish and land epic `sase-cp`
 
