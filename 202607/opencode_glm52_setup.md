@@ -6,7 +6,7 @@ goal:
   chezmoi-managed config files (OpenCode global config plus explicit GLM model aliases) exist and resolve correctly.
 proposed_by: bbugyi200.athena.qt
 create_time: 2026-07-31 18:05:03
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/opencode_glm52_setup.md](prompts/opencode_glm52_setup.md)
