@@ -4,7 +4,7 @@ title: Finish and land the Conventional Commit subject gate
 goal: Epic sase-bj is fully integrated with concurrent changes, verified, closed normally, and recorded as done.
 bead: sase-bj
 create_time: 2026-07-31 09:43:56
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/land_conventional_commit_gate.md](prompts/land_conventional_commit_gate.md)
