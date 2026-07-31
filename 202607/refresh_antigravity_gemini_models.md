@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/refresh_antigravity_gemini_models.md](prompts/refresh_antigravity_gemini_models.md)
+- **AGENTS:**
+  - [bbugyi200.athena.qk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qk.md)
+- **COMMITS:**
+  - [88f57b1](https://github.com/bbugyi200/dotfiles/commit/88f57b1504550fd0158dc5cb8498c2af4c511f62) — fix(sase): update
+    Antigravity model presets
 
 # Refresh Antigravity's Gemini model catalog and coding presets
 
