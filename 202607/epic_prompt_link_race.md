@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_prompt_link_race.md](prompts/epic_prompt_link_race.md)
+- **AGENTS:**
+  - [bbugyi200.athena.q9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.q9.md)
+- **COMMITS:**
+  - [ab650a2](https://github.com/sase-org/sase--plans/commit/ab650a28d6e0f945969677c97c02b85f2a09214a) — fix: restore
+    missing PROMPT link on conventional_commit_subject_gate plan
 
 # Plan: Stop approved epic plans from losing their `PROMPT` link
 
