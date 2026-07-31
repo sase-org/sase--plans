@@ -13,8 +13,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.qm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qm.md)
 - **COMMITS:**
-  - [50988fe](https://github.com/sase-org/sase/commit/50988fe7f0b77c0f54fbd71fd9de89ae3788662b) — feat(beads): accept
-    multiple bead IDs in \`sase bead update\`
+  - [8449e01](https://github.com/sase-org/sase-core/commit/8449e01f06f136c456c12418e58c91ed5325d9c1) — feat(bead):
+    support atomic multi-ID \`update_issues\` mutation
 
 # Plan: Accept multiple bead IDs in `sase bead update`
 
