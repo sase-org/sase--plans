@@ -5,7 +5,7 @@ goal:
   The bundled ace.tribes defaults configure only tribes that SASE source itself assigns, and the user-owned research
   tribe is configured in the chezmoi sase.yml overlay with its current icon, color, and a description.
 create_time: 2026-07-31 08:37:51
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/research_tribe_to_chezmoi.md](prompts/research_tribe_to_chezmoi.md)
