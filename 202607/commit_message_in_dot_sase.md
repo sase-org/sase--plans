@@ -6,7 +6,7 @@ goal:
   .sase/commit_message.md path, so a leftover message file can no longer fail the post-completion commit finalizer or be
   swept into a whole-repository commit.
 create_time: 2026-07-31 08:30:27
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/commit_message_in_dot_sase.md](prompts/commit_message_in_dot_sase.md)
