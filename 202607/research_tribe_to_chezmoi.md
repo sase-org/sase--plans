@@ -9,6 +9,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/research_tribe_to_chezmoi.md](prompts/research_tribe_to_chezmoi.md)
+- **AGENTS:**
+  - [bbugyi200.athena.q1.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.q1.f0.md)
+- **COMMITS:**
+  - [f7239d4](https://github.com/bbugyi200/dotfiles/commit/f7239d409c3a4fc2819765ddbeb64a3ab3c441ab) — feat(sase):
+    configure the research agent tribe display
 
 # Plan: Relocate `ace.tribes.research` To The Chezmoi User Config
 
