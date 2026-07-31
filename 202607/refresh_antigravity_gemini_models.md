@@ -4,7 +4,7 @@ title: Refresh Antigravity's Gemini model catalog and coding presets
 goal: SASE exposes the current Antigravity model catalog, and Bryan's Gemini presets select the top two coding models.
 proposed_by: bbugyi200.athena.qk
 create_time: 2026-07-31 13:19:18
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/refresh_antigravity_gemini_models.md](prompts/refresh_antigravity_gemini_models.md)
