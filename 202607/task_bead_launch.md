@@ -5,7 +5,7 @@ goal:
   Task beads launch one deterministic, recoverable worker through sase bead work and an idempotent detached submitter.
 bead: sase-bg.7
 create_time: 2026-07-30 20:08:37
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/task_bead_launch.md](prompts/task_bead_launch.md)
