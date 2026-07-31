@@ -4,7 +4,7 @@ title: ACE TUI task bead surfaces and PNG goldens
 goal: Task beads render and behave as first-class Plans and Agents pane entities, with deterministic visual coverage.
 bead: sase-bg.4
 create_time: 2026-07-30 20:34:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tui_task_surfaces.md](prompts/tui_task_surfaces.md)
