@@ -54,6 +54,7 @@ status: wip
 bead_id: sase-bj
 ---
 
+- **PROMPT:** [202607/prompts/conventional_commit_subject_gate.md](prompts/conventional_commit_subject_gate.md)
 - **BEAD:** [sase-bj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bj/README.md)
 
 # Plan: Reject non-conventional commit subjects in `sase commit`
