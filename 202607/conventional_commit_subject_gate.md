@@ -1,54 +1,60 @@
 ---
 tier: epic
 title: Reject non-conventional commit subjects in sase commit
-goal: "`sase commit` refuses to create a commit, proposal, or pull request whose subject line is not a Conventional
-  Commit, printing an actionable error that tells the agent exactly how to rewrite it, while staying lenient enough that
-  legitimate subjects, merge/revert/fixup subjects, and projects that opt out are never blocked.
+goal: '`sase commit` refuses to create a commit, proposal, or pull request whose subject
+  line is not a Conventional Commit, printing an actionable error that tells the agent
+  exactly how to rewrite it, while staying lenient enough that legitimate subjects,
+  merge/revert/fixup subjects, and projects that opt out are never blocked.
 
-  "
+  '
 phases:
-  - id: core_grammar
-    title: Conventional-subject grammar in the Rust core
-    depends_on: []
-    size: medium
-    description: "core_grammar: add a pure `commit_subject` domain module to sase-core that parses a commit subject into
-      type/scope/breaking/description, classifies exemptions, and reports a stable violation code; expose it through the
-      `sase_core_py` binding.
+- id: core_grammar
+  title: Conventional-subject grammar in the Rust core
+  depends_on: []
+  size: medium
+  description: 'core_grammar: add a pure `commit_subject` domain module to sase-core
+    that parses a commit subject into type/scope/breaking/description, classifies
+    exemptions, and reports a stable violation code; expose it through the `sase_core_py`
+    binding.
 
-      "
-  - id: python_surface
-    title: Python facade, policy config, and shared header helper
-    depends_on:
-      - core_grammar
-    size: small
-    description: "python_surface: add the typed Python facade over the new binding, the `commit.message` configuration
-      block with its schema and defaults, and retarget the existing init-memory conventional-header check at the shared
-      helper.
+    '
+- id: python_surface
+  title: Python facade, policy config, and shared header helper
+  depends_on:
+  - core_grammar
+  size: small
+  description: 'python_surface: add the typed Python facade over the new binding,
+    the `commit.message` configuration block with its schema and defaults, and retarget
+    the existing init-memory conventional-header check at the shared helper.
 
-      "
-  - id: commit_enforcement
-    title: Reject invalid subjects in CommitWorkflow
-    depends_on:
-      - python_surface
-    size: medium
-    description: "commit_enforcement: gate `CommitWorkflow.run()` on the subject policy before any side effect runs,
-      render the actionable rejection message, record the telemetry reason, and update the existing tests that commit
-      with non-conventional messages.
+    '
+- id: commit_enforcement
+  title: Reject invalid subjects in CommitWorkflow
+  depends_on:
+  - python_surface
+  size: medium
+  description: 'commit_enforcement: gate `CommitWorkflow.run()` on the subject policy
+    before any side effect runs, render the actionable rejection message, record the
+    telemetry reason, and update the existing tests that commit with non-conventional
+    messages.
 
-      "
-  - id: docs_and_guidance
-    title: Document the gate and guard against type-list drift
-    depends_on:
-      - commit_enforcement
-    size: small
-    description: "docs_and_guidance: document the new configuration and the rejection behavior, mention the gate in the
-      git commit skill, and add a regression test that keeps the repo's PR-title CI type list compatible with the
-      validator defaults.
+    '
+- id: docs_and_guidance
+  title: Document the gate and guard against type-list drift
+  depends_on:
+  - commit_enforcement
+  size: small
+  description: 'docs_and_guidance: document the new configuration and the rejection
+    behavior, mention the gate in the git commit skill, and add a regression test
+    that keeps the repo''s PR-title CI type list compatible with the validator defaults.
 
-      "
+    '
 create_time: 2026-07-31 07:14:04
 status: wip
+bead_id: sase-bj
 ---
+
+- **BEAD:** [sase-bj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bj/README.md)
 
 # Plan: Reject non-conventional commit subjects in `sase commit`
 
