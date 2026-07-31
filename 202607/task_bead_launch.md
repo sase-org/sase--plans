@@ -11,6 +11,11 @@ status: done
 - **PROMPT:** [202607/prompts/task_bead_launch.md](prompts/task_bead_launch.md)
 - **PARENT:** [202607/task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202607/task_beads.md)
 - **BEAD:** [sase-bg.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bg/sase-bg.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-bg.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-bg.7.md)
+- **COMMITS:**
+  - [879af9b](https://github.com/sase-org/sase/commit/879af9b0831fa59a0bccaf580d11f6afd26ffb2c) — feat(bead): launch
+    standalone task workers
 
 # Add task-bead work launches and a detached submitter
 
