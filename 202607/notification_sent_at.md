@@ -6,7 +6,7 @@ goal:
   tiered for readability and paired with its relative age.
 proposed_by: bbugyi200.athena.ql
 create_time: 2026-07-31 13:26:20
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/notification_sent_at.md](prompts/notification_sent_at.md)
