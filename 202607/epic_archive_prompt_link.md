@@ -8,7 +8,7 @@ goal:
   probe behavior and never gain a dangling link.
 proposed_by: bbugyi200.athena.qp
 create_time: 2026-07-31 15:48:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/epic_archive_prompt_link.md](prompts/epic_archive_prompt_link.md)
