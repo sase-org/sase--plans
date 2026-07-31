@@ -20,6 +20,8 @@ status: done
 - **COMMITS:**
   - [4fd54a9](https://github.com/sase-org/sase/commit/4fd54a96707a0931b3c86a8c3551a2e0fbed0ea5) — fix(bead): route sase
     bead create through the attributing handler
+  - [3a98c68](https://github.com/sase-org/sase/commit/3a98c68df821b90d4445fbb5bff8c132fb42757c) — refactor(bead): remove
+    superseded SASE_AGENT guard from attribution
 
 # Plan: Land bead creator attribution (epic sase-bv)
 
