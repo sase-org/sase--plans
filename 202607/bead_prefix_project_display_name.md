@@ -6,7 +6,7 @@ goal:
   ProjectSpec directory key (`gh_bobs-org__bob-cli`), and `sase bead doctor` detects and can repair stores that already
   leaked a key-shaped prefix.
 create_time: 2026-07-31 08:25:10
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_prefix_project_display_name.md](prompts/bead_prefix_project_display_name.md)
