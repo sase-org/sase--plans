@@ -14,6 +14,11 @@ status: done
 - **PARENT:**
   [202607/sase_beads_memory.md](https://github.com/sase-org/sase--plans/blob/main/202607/sase_beads_memory.md)
 - **BEAD:** [sase-cp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cp/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-cp.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-cp.land.md)
+- **COMMITS:**
+  - [33c6311](https://github.com/sase-org/sase/commit/33c63112c911958e5a3c6111eb4f01caeb945794) — docs(memory): document
+    bulk bead update semantics
 
 # Plan: Finish and land epic `sase-cp`
 
