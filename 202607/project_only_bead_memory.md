@@ -7,7 +7,7 @@ goal:
   shims no longer reference it.
 proposed_by: bbugyi200.athena.qr
 create_time: 2026-07-31 17:47:48
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/project_only_bead_memory.md](prompts/project_only_bead_memory.md)
