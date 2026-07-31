@@ -7,7 +7,7 @@ goal:
   exit code.
 proposed_by: bbugyi200.athena.qs
 create_time: 2026-07-31 16:36:29
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/handoff_sigterm_normalization.md](prompts/handoff_sigterm_normalization.md)
