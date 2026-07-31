@@ -31,7 +31,7 @@ phases:
     skill directories, and verify the new note reached home memory.'
 proposed_by: bbugyi200.athena.qn
 create_time: 2026-07-31 15:00:50
-status: wip
+status: done
 bead_id: sase-cp
 ---
 
