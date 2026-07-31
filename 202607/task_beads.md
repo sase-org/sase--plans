@@ -97,7 +97,7 @@ phases:
     sase_beads generated-skill source, and document the type, status, gate, and chop
     in docs/beads.md and docs/notifications.md.'
 create_time: 2026-07-30 18:55:14
-status: wip
+status: done
 bead_id: sase-bg
 ---
 
