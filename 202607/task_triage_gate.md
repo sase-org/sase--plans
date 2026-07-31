@@ -4,7 +4,7 @@ title: TaskTriage gate kind end to end
 goal: Ready task beads can be launched or canceled through one trusted human triage gate on ACE and mobile surfaces.
 bead: sase-bg.8
 create_time: 2026-07-30 21:09:02
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/task_triage_gate.md](prompts/task_triage_gate.md)
