@@ -6,7 +6,7 @@ goal:
   single bundled YAML file, so changing them requires no Python edit and drift from that file fails a test.
 proposed_by: bbugyi200.athena.qq
 create_time: 2026-07-31 16:08:02
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/yaml_model_alias_defaults.md](prompts/yaml_model_alias_defaults.md)
