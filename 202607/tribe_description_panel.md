@@ -6,7 +6,7 @@ goal:
   beneath the header's field stack, wrapped with a hanging indent at a fixed 80-cell measure, and present on every tribe
   panel — showing the actionable `ace.tribes.<name>.description` key when no description is set.
 create_time: 2026-07-31 08:47:34
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/tribe_description_panel.md](prompts/tribe_description_panel.md)
