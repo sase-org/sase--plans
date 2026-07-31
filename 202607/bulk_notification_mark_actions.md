@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/bulk_notification_mark_actions.md](prompts/bulk_notification_mark_actions.md)
+- **AGENTS:**
+  - [bbugyi200.athena.qj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qj.md)
+- **COMMITS:**
+  - [93a69c5](https://github.com/sase-org/sase-core/commit/93a69c5007b06a860c3eb903235ea19a68ba94b1) —
+    feat(notifications): support bulk mute and snooze updates
 
 # Plan: Complete marked-set notification actions
 
