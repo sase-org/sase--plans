@@ -3,7 +3,7 @@ tier: tale
 title: Unlabel the agent tribe description summary
 goal: Render tribe descriptions as full-width prose without a field prefix or hanging indentation.
 create_time: 2026-07-31 10:38:19
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/unlabel_tribe_description.md](prompts/unlabel_tribe_description.md)
