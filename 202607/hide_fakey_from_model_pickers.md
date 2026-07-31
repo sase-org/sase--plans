@@ -5,7 +5,7 @@ goal:
   Model pickers and %model completion never offer the internal fakey provider, while fakey routing and resolution keep
   working.
 create_time: 2026-07-31 07:09:13
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/hide_fakey_from_model_pickers.md](prompts/hide_fakey_from_model_pickers.md)
