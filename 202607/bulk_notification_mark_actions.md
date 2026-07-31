@@ -6,7 +6,7 @@ goal:
   TUI.
 proposed_by: bbugyi200.athena.qj
 create_time: 2026-07-31 13:15:31
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bulk_notification_mark_actions.md](prompts/bulk_notification_mark_actions.md)
