@@ -6,7 +6,7 @@ goal:
   all-or-nothing store mutation that produces exactly one bead-store commit and one push."
 proposed_by: bbugyi200.athena.qm
 create_time: 2026-07-31 14:43:58
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_update_bulk_ids.md](prompts/bead_update_bulk_ids.md)
