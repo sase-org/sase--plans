@@ -13,8 +13,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.qi](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qi.md)
 - **COMMITS:**
-  - [7765a07](https://github.com/sase-org/sase/commit/7765a07c915d1bae5469ad2f43072136f4620ae6) — feat(beads): support
-    shorthand bead ids
+  - [791e751](https://github.com/sase-org/sase-core/commit/791e751fe58f99f4b632ebb4d00d125f5bb4946f) — feat(beads):
+    resolve shorthand bead ids in core
 
 # Plan: Accept dash-free shorthand in `sase bead` ID arguments
 
