@@ -46,7 +46,7 @@ phases:
     block using the page renderer''s existing agent-link resolver, and refresh the
     bead page goldens.'
 create_time: 2026-07-31 09:12:26
-status: wip
+status: done
 bead_id: sase-bv
 ---
 
