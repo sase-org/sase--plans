@@ -6,7 +6,7 @@ goal:
   preserving canonical full IDs in storage, output, and automation.
 proposed_by: bbugyi200.athena.qi
 create_time: 2026-07-31 13:13:53
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202607/prompts/bead_id_shorthand.md](prompts/bead_id_shorthand.md)
