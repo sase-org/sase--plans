@@ -15,6 +15,11 @@ status: done
 - **PARENT:**
   [202607/bead_created_by_attribution.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_created_by_attribution.md)
 - **BEAD:** [sase-bv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bv/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-bv.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-bv.land.md)
+- **COMMITS:**
+  - [4fd54a9](https://github.com/sase-org/sase/commit/4fd54a96707a0931b3c86a8c3551a2e0fbed0ea5) — fix(bead): route sase
+    bead create through the attributing handler
 
 # Plan: Land bead creator attribution (epic sase-bv)
 
