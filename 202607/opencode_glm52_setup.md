@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202607/prompts/opencode_glm52_setup.md](prompts/opencode_glm52_setup.md)
+- **AGENTS:**
+  - [bbugyi200.athena.qt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qt.md)
+- **COMMITS:**
+  - [087e43f](https://github.com/bbugyi200/dotfiles/commit/087e43f2f7512b6e1dc419dd8658b2892857ddc6) — feat(opencode):
+    add OpenCode global config, GLM-5.2 aliases, and setup gate
 
 # Plan: Install OpenCode and wire up GLM-5.2 behind a custom SASE gate
 
