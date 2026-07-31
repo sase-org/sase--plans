@@ -10,6 +10,11 @@ status: done
 - **PROMPT:** [202607/prompts/task_triage_gate.md](prompts/task_triage_gate.md)
 - **PARENT:** [202607/task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202607/task_beads.md)
 - **BEAD:** [sase-bg.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bg/sase-bg.8.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-bg.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-bg.8.md)
+- **COMMITS:**
+  - [010fe0f](https://github.com/sase-org/sase/commit/010fe0fc067fd818302a8967197297ef5d7c1b34) — feat(gates): add
+    TaskTriage decision workflow
 
 # TaskTriage gate kind end to end
 
