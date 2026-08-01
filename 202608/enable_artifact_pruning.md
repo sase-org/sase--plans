@@ -6,7 +6,7 @@ goal:
   retention thresholds and verifying the deployed effective policy.
 proposed_by: bbugyi200.athena.r8
 create_time: 2026-08-01 09:50:41
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/enable_artifact_pruning.md](prompts/enable_artifact_pruning.md)
