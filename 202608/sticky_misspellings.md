@@ -9,7 +9,7 @@ create_time: 2026-08-01 07:04:20
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/sticky_misspellings.md](prompts/sticky_misspellings.md)
+- **PROMPT:** [prompts/202608/sticky_misspellings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sticky_misspellings.md)
 
 # Plan: Sticky misspelling highlighting in the prompt input widget
 

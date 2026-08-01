@@ -44,7 +44,7 @@ status: done
 bead_id: sase-cy
 ---
 
-- **PROMPT:** [202608/prompts/reliable_notification_snoozing.md](prompts/reliable_notification_snoozing.md)
+- **PROMPT:** [prompts/202608/reliable_notification_snoozing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/reliable_notification_snoozing.md)
 - **BEAD:** [sase-cy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cy/README.md)
 
 # Plan: Reliable Notification Snoozing and Resurfacing

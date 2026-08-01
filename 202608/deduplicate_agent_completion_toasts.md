@@ -9,12 +9,11 @@ create_time: 2026-08-01 10:01:47
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/deduplicate_agent_completion_toasts.md](prompts/deduplicate_agent_completion_toasts.md)
+- **PROMPT:** [prompts/202608/deduplicate_agent_completion_toasts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/deduplicate_agent_completion_toasts.md)
 - **AGENTS:**
   - [bbugyi200.athena.ra](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ra.md)
 - **COMMITS:**
-  - [d2d8151](https://github.com/sase-org/sase/commit/d2d8151165ac64ca67e1a4c44fe9feb1cf648ecf) — fix: dedupe
-    notification toasts by activity cursor
+  - [d2d8151](https://github.com/sase-org/sase/commit/d2d8151165ac64ca67e1a4c44fe9feb1cf648ecf) — fix: dedupe notification toasts by activity cursor
 
 # Deduplicate ACE agent-completion toasts by activity generation
 

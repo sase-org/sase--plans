@@ -71,7 +71,7 @@ status: wip
 bead_id: sase-dh
 ---
 
-- **PROMPT:** [202608/prompts/artifact_persistence_sidecars.md](prompts/artifact_persistence_sidecars.md)
+- **PROMPT:** [prompts/202608/artifact_persistence_sidecars.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifact_persistence_sidecars.md)
 - **BEAD:** [sase-dh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dh/README.md)
 
 # Plan: Durable artifact persistence and canonical prompt archive in sidecar repos

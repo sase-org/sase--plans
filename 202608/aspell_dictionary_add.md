@@ -10,7 +10,7 @@ create_time: 2026-08-01 07:57:07
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/aspell_dictionary_add.md](prompts/aspell_dictionary_add.md)
+- **PROMPT:** [prompts/202608/aspell_dictionary_add.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/aspell_dictionary_add.md)
 
 # Plan: Add to the aspell personal dictionary from the spellcheck panel
 

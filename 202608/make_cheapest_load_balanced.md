@@ -9,7 +9,7 @@ create_time: 2026-08-01 10:39:24
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/make_cheapest_load_balanced.md](prompts/make_cheapest_load_balanced.md)
+- **PROMPT:** [prompts/202608/make_cheapest_load_balanced.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/make_cheapest_load_balanced.md)
 
 # Plan: Make `@cheapest` a load-balanced pool
 

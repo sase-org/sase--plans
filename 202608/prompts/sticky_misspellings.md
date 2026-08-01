@@ -1,8 +1,0 @@
-- **PLAN:** [../202608/sticky_misspellings.md](../sticky_misspellings.md)
-
- The prompt input widget does not currently support spell check syntax highlighting because it would be expensive and difficult to make reliable. With that said it would be nice to support little red squiggly lines under words that we know are misspelled. Can you help me add support for this by remembering any word that the user targeted with the `K` keymap in the prompt input widget that resulted in our spellcheck tool being used (because the word couldn't be found using our dictionary tool) and highlighting that mispelling appropriately in the future if it is ever found in the prompt input widget again? This highlighting should apply immediately (i.e. if the user declines to choose a spelling correction recommendation, the prompt input widget they return to should show that word with a red underline--if you can't make a red underline work, use your best judgement on what this syntax highlighting should look like).
-
-I want you to lead the design on this one. Make sure you design this feature so it is intuitive, reliable, and (last but not least) beautiful! Think this through thoroughly and create a plan using your `/sase_plan` skill. Choose and author the appropriate
-tier, validate and revalidate until it passes, then submit it with `sase plan propose` (as the skill instructs)
-before making any file changes.
- 

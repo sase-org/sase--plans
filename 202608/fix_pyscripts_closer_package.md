@@ -7,12 +7,11 @@ create_time: 2026-08-01 10:25:02
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/fix_pyscripts_closer_package.md](prompts/fix_pyscripts_closer_package.md)
+- **PROMPT:** [prompts/202608/fix_pyscripts_closer_package.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fix_pyscripts_closer_package.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-de](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-de.md)
 - **COMMITS:**
-  - [5ff34df](https://github.com/bbugyi200/dotfiles/commit/5ff34dfbe68f694b3dbb02c27842f38da73d0199) — fix: ignore
-    package script dirs in pyscripts
+  - [5ff34df](https://github.com/bbugyi200/dotfiles/commit/5ff34dfbe68f694b3dbb02c27842f38da73d0199) — fix: ignore package script dirs in pyscripts
 
 # Fix pyscripts closer-directory package false positives
 

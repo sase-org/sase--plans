@@ -62,7 +62,7 @@ status: done
 bead_id: sase-da
 ---
 
-- **PROMPT:** [202608/prompts/bead_store_lock_contention.md](prompts/bead_store_lock_contention.md)
+- **PROMPT:** [prompts/202608/bead_store_lock_contention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_store_lock_contention.md)
 - **BEAD:** [sase-da](https://github.com/sase-org/sase--beads/blob/main/pages/sase-da/README.md)
 
 # Plan: Survivable bead-store locking for concurrent bead work launches

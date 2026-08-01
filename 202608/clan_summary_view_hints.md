@@ -94,7 +94,7 @@ status: done
 bead_id: sase-d9
 ---
 
-- **PROMPT:** [202608/prompts/clan_summary_view_hints.md](prompts/clan_summary_view_hints.md)
+- **PROMPT:** [prompts/202608/clan_summary_view_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/clan_summary_view_hints.md)
 - **BEAD:** [sase-d9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-d9/README.md)
 
 # Plan: View hints for agent clan metadata panels

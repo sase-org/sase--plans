@@ -9,7 +9,7 @@ create_time: 2026-08-01 10:30:05
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/agent_bead_notes.md](prompts/agent_bead_notes.md)
+- **PROMPT:** [prompts/202608/agent_bead_notes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_bead_notes.md)
 
 # Display Bead Notes in the Agent Metadata BEAD Lane
 

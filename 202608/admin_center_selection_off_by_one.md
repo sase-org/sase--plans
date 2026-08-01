@@ -9,7 +9,7 @@ create_time: 2026-08-01 09:10:10
 status: wip
 ---
 
-- **PROMPT:** [202608/prompts/admin_center_selection_off_by_one.md](prompts/admin_center_selection_off_by_one.md)
+- **PROMPT:** [prompts/202608/admin_center_selection_off_by_one.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/admin_center_selection_off_by_one.md)
 
 # Plan: Fix the Admin Center resumed-selection drift ("entry below" bug)
 

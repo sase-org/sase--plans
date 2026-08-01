@@ -9,7 +9,7 @@ create_time: 2026-08-01 10:02:10
 status: wip
 ---
 
-- **PROMPT:** [202608/prompts/retune_cheap_aliases.md](prompts/retune_cheap_aliases.md)
+- **PROMPT:** [prompts/202608/retune_cheap_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/retune_cheap_aliases.md)
 
 # Plan: Retune the cheap model alias pools
 

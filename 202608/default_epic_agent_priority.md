@@ -9,7 +9,7 @@ create_time: 2026-08-01 08:05:23
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/default_epic_agent_priority.md](prompts/default_epic_agent_priority.md)
+- **PROMPT:** [prompts/202608/default_epic_agent_priority.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/default_epic_agent_priority.md)
 
 # Plan: Use Default Runner Priority for Epic Agents
 

@@ -10,7 +10,7 @@ create_time: 2026-08-01 09:04:08
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/bead_show_styling.md](prompts/bead_show_styling.md)
+- **PROMPT:** [prompts/202608/bead_show_styling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_show_styling.md)
 
 # Plan: Colorize and syntax-highlight `sase bead show`
 

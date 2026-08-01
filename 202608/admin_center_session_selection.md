@@ -9,12 +9,11 @@ create_time: 2026-08-01 07:18:06
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/admin_center_session_selection.md](prompts/admin_center_session_selection.md)
+- **PROMPT:** [prompts/202608/admin_center_session_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/admin_center_session_selection.md)
 - **AGENTS:**
   - [bbugyi200.athena.qy](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qy.md)
 - **COMMITS:**
-  - [460b8ff](https://github.com/sase-org/sase/commit/460b8ff2356cc7f35357d2207b14f23182eef3c9) — feat(ace): remember
-    admin center entry selections
+  - [460b8ff](https://github.com/sase-org/sase/commit/460b8ff2356cc7f35357d2207b14f23182eef3c9) — feat(ace): remember admin center entry selections
 
 # Plan: Restore each Admin Center pane's selected entry within the ACE session
 

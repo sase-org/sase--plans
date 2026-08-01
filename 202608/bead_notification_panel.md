@@ -65,7 +65,7 @@ status: done
 bead_id: sase-cz
 ---
 
-- **PROMPT:** [202608/prompts/bead_notification_panel.md](prompts/bead_notification_panel.md)
+- **PROMPT:** [prompts/202608/bead_notification_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_notification_panel.md)
 - **BEAD:** [sase-cz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cz/README.md)
 
 # Plan: Beads notification panel and gate origin attribution

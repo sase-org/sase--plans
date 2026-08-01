@@ -10,15 +10,13 @@ create_time: 2026-08-01 09:07:05
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/land_reliable_notification_snoozing.md](prompts/land_reliable_notification_snoozing.md)
-- **PARENT:**
-  [202608/reliable_notification_snoozing.md](https://github.com/sase-org/sase--plans/blob/main/202608/reliable_notification_snoozing.md)
+- **PROMPT:** [prompts/202608/land_reliable_notification_snoozing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/land_reliable_notification_snoozing.md)
+- **PARENT:** [202608/reliable_notification_snoozing.md](https://github.com/sase-org/sase--plans/blob/main/202608/reliable_notification_snoozing.md)
 - **BEAD:** [sase-cy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cy/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-cy.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-cy.land.md)
 - **COMMITS:**
-  - [8282e77](https://github.com/sase-org/sase--plans/commit/8282e77005db62dff42886e1e3c3a5b7a5cc17b7) — docs: mark
-    notification snoozing plan done
+  - [8282e77](https://github.com/sase-org/sase--plans/commit/8282e77005db62dff42886e1e3c3a5b7a5cc17b7) — docs: mark notification snoozing plan done
 
 # Plan: Land Reliable Notification Snoozing and Resurfacing
 

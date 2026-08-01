@@ -9,7 +9,7 @@ create_time: 2026-08-01 06:57:44
 status: wip
 ---
 
-- **PROMPT:** [202608/prompts/open_task_bead_audit.md](prompts/open_task_bead_audit.md)
+- **PROMPT:** [prompts/202608/open_task_bead_audit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/open_task_bead_audit.md)
 
 # Audit and prune the open task-bead backlog
 
