@@ -45,11 +45,12 @@ phases:
     and snapshots, and prove legacy compatibility and removal of task_worker routing.'
 proposed_by: bbugyi200.athena.rl
 create_time: 2026-08-01 13:10:27
-status: wip
+status: done
 bead_id: sase-dr
 ---
 
-- **PROMPT:** [202608/prompts/task_bead_plus_one.md](prompts/task_bead_plus_one.md)
+- **PROMPT:**
+  [prompts/202608/task_bead_plus_one.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/task_bead_plus_one.md)
 - **BEAD:** [sase-dr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dr/README.md)
 
 # Plan: Corroborated SASE task beads and disciplined task creation
