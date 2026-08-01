@@ -11,8 +11,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-de](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-de.md)
 - **COMMITS:**
-  - [93dfb63](https://github.com/sase-org/sase/commit/93dfb63587ece702ffde02b752cfd293da7eb2d8) — fix: update vendored
-    pyscripts validator
+  - [5ff34df](https://github.com/bbugyi200/dotfiles/commit/5ff34dfbe68f694b3dbb02c27842f38da73d0199) — fix: ignore
+    package script dirs in pyscripts
 
 # Fix pyscripts closer-directory package false positives
 
