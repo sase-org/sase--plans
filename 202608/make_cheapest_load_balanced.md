@@ -6,7 +6,7 @@ goal:
   independent cursor state and consistent tests, Models-panel presentation, examples, and documentation.
 proposed_by: bbugyi200.athena.rc.f1
 create_time: 2026-08-01 10:39:24
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/make_cheapest_load_balanced.md](prompts/make_cheapest_load_balanced.md)
