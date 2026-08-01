@@ -6,7 +6,7 @@ goal:
   input from that moment on, with a first-class way to accept a word and stop flagging it.
 proposed_by: bbugyi200.athena.qx
 create_time: 2026-08-01 07:04:20
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/sticky_misspellings.md](prompts/sticky_misspellings.md)
