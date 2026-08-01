@@ -1,92 +1,101 @@
 ---
 tier: epic
 title: View hints for agent clan metadata panels
-goal: 'Pressing `v` on a selected agent clan container annotates the clan metadata document in place — clan summary
-  paths, member-attributed bodies, SASE CONTEXT entries, slow tool calls, and member commits all receive `[N]` hints
-  that resolve to correct targets — instead of destroying the clan document and reporting "No files or commits found".
+goal: 'Pressing `v` on a selected agent clan container annotates the clan metadata
+  document in place — clan summary paths, member-attributed bodies, SASE CONTEXT entries,
+  slow tool calls, and member commits all receive `[N]` hints that resolve to correct
+  targets — instead of destroying the clan document and reporting "No files or commits
+  found".
 
   '
 phases:
-  - id: plumbing
-    title: Clan-aware hint render path and clan summary hints
-    depends_on: []
-    size: medium
-    description: "plumbing: thread HeaderHintState, the cached clan section snapshot, and panel fold state through the
-      clan branch of build_header_text into build_clan_detail_text; stop the hint render from appending an agent prompt
-      tail or starting agent-header enrichment for synthetic clan rows; give clans a bounded hint-render cache key; let
-      hint-preserving repaints and clan enrichment results reach clan containers; annotate the clan summary block with
-      span-preserving file hints.
+- id: plumbing
+  title: Clan-aware hint render path and clan summary hints
+  depends_on: []
+  size: medium
+  description: 'plumbing: thread HeaderHintState, the cached clan section snapshot,
+    and panel fold state through the clan branch of build_header_text into build_clan_detail_text;
+    stop the hint render from appending an agent prompt tail or starting agent-header
+    enrichment for synthetic clan rows; give clans a bounded hint-render cache key;
+    let hint-preserving repaints and clan enrichment results reach clan containers;
+    annotate the clan summary block with span-preserving file hints.
 
-      "
-  - id: sections
-    title: Member-attributed clan body hints
-    depends_on:
-      - plumbing
-    size: medium
-    description: "sections: annotate the visible bodies of the clan ERRORS, REPLIES, PROMPTS, and variable sections with
-      file hints, resolving each fragment against its own member's workspace and sharing one HintContentBudget across
-      the whole document, so hints exist exactly where text is visible at the active fold level.
+    '
+- id: sections
+  title: Member-attributed clan body hints
+  depends_on:
+  - plumbing
+  size: medium
+  description: 'sections: annotate the visible bodies of the clan ERRORS, REPLIES,
+    PROMPTS, and variable sections with file hints, resolving each fragment against
+    its own member''s workspace and sharing one HintContentBudget across the whole
+    document, so hints exist exactly where text is visible at the active fold level.
 
-      "
-  - id: context
-    title: Structured SASE CONTEXT lane hints
-    depends_on:
-      - plumbing
-    size: medium
-    description: "context: register exact-path hints for individually rendered SASE CONTEXT entries by reading the typed
-      objects already carried on ClanContextEntry.values, so PLAN, ARTIFACTS, and MEMORY entries hint their real
-      absolute paths instead of guessing from label text.
+    '
+- id: context
+  title: Structured SASE CONTEXT lane hints
+  depends_on:
+  - plumbing
+  size: medium
+  description: 'context: register exact-path hints for individually rendered SASE
+    CONTEXT entries by reading the typed objects already carried on ClanContextEntry.values,
+    so PLAN, ARTIFACTS, and MEMORY entries hint their real absolute paths instead
+    of guessing from label text.
 
-      "
-  - id: tools
-    title: Clan slow tool call report hints
-    depends_on:
-      - plumbing
-    size: small
-    description: "tools: register tool-call report hints for the clan SLOW TOOL CALLS section the same way the per-agent
-      section does, so a hinted clan tool call materializes a report file through the existing writer.
+    '
+- id: tools
+  title: Clan slow tool call report hints
+  depends_on:
+  - plumbing
+  size: small
+  description: 'tools: register tool-call report hints for the clan SLOW TOOL CALLS
+    section the same way the per-agent section does, so a hinted clan tool call materializes
+    a report file through the existing writer.
 
-      "
-  - id: commits
-    title: Clan commits lane and commit view hints
-    depends_on:
-      - context
-    size: medium
-    description: "commits: aggregate member commits from already-loaded step output into a new COMMITS context lane and
-      register each rendered commit as a commit-view hint so the clan document supports the commit viewer, raw diff
-      opening, and SHA copying.
+    '
+- id: commits
+  title: Clan commits lane and commit view hints
+  depends_on:
+  - context
+  size: medium
+  description: 'commits: aggregate member commits from already-loaded step output
+    into a new COMMITS context lane and register each rendered commit as a commit-view
+    hint so the clan document supports the commit viewer, raw diff opening, and SHA
+    copying.
 
-      "
-  - id: resolve
-    title: Worker-resolved clan hint path index
-    depends_on:
-      - context
-      - sections
-    size: medium
-    description: "resolve: compute a token-to-absolute-path index off-thread during clan enrichment and consult it
-      before workspace-relative fallback, so logical plan references and other paths printed by clan summary scripts
-      resolve to the files they name.
+    '
+- id: resolve
+  title: Worker-resolved clan hint path index
+  depends_on:
+  - context
+  - sections
+  size: medium
+  description: 'resolve: compute a token-to-absolute-path index off-thread during
+    clan enrichment and consult it before workspace-relative fallback, so logical
+    plan references and other paths printed by clan summary scripts resolve to the
+    files they name.
 
-      "
-  - id: polish
-    title: Documentation, footer, and end-to-end coverage
-    depends_on:
-      - sections
-      - context
-      - tools
-      - commits
-      - resolve
-    size: small
-    description:
-      "polish: update the ace docs and help popup for clan view hints, audit hint numbering against the member jump
-      gutter, add the clan keypath to the view-hints perf harness, and cover the whole `v` flow on a clan with an
-      app-level test."
+    '
+- id: polish
+  title: Documentation, footer, and end-to-end coverage
+  depends_on:
+  - sections
+  - context
+  - tools
+  - commits
+  - resolve
+  size: small
+  description: 'polish: update the ace docs and help popup for clan view hints, audit
+    hint numbering against the member jump gutter, add the clan keypath to the view-hints
+    perf harness, and cover the whole `v` flow on a clan with an app-level test.'
 proposed_by: bbugyi200.athena.r3
 create_time: 2026-08-01 08:34:53
 status: wip
+bead_id: sase-d9
 ---
 
 - **PROMPT:** [202608/prompts/clan_summary_view_hints.md](prompts/clan_summary_view_hints.md)
+- **BEAD:** [sase-d9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-d9/README.md)
 
 # Plan: View hints for agent clan metadata panels
 
