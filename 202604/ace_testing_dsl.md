@@ -5,7 +5,7 @@ bead_id: sase-i
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/ace_testing_dsl.md](prompts/ace_testing_dsl.md)
+- **PROMPT:** [prompts/202604/ace_testing_dsl.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_testing_dsl.md)
 - **BEAD:** [sase-i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i/README.md)
 
 # Plan: Implement `sase.ace.testing` — Playwright-Inspired TUI Testing DSL

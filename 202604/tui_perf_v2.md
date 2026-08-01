@@ -5,7 +5,7 @@ bead_id: sase-12
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/tui_perf_v2.md](prompts/tui_perf_v2.md)
+- **PROMPT:** [prompts/202604/tui_perf_v2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tui_perf_v2.md)
 - **BEAD:** [sase-12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12/README.md)
 
 # TUI Performance v2 — Phased Implementation Plan

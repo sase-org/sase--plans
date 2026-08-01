@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_vertical_panels.md](prompts/agents_tab_vertical_panels.md)
+- **PROMPT:** [prompts/202604/agents_tab_vertical_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_vertical_panels.md)
 - **COMMITS:**
   - [dc6a0c5](https://github.com/sase-org/sase/commit/dc6a0c50c10a2a69b92d43646f5079dd1259d785) — feat: stack Agents-tab tag panels vertically with per-panel titles
 

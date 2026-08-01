@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/attempts_as_child_steps.md](prompts/attempts_as_child_steps.md)
+- **PROMPT:** [prompts/202604/attempts_as_child_steps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/attempts_as_child_steps.md)
 - **COMMITS:**
   - [8fafa07](https://github.com/sase-org/sase/commit/8fafa0778bcd7576d126a7656cc385a42ea68772) — feat: Render retry attempts as selectable child rows in the Agents tab
 

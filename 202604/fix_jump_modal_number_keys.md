@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_jump_modal_number_keys.md](prompts/fix_jump_modal_number_keys.md)
+- **PROMPT:** [prompts/202604/fix_jump_modal_number_keys.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_jump_modal_number_keys.md)
 - **COMMITS:**
   - [e64bf87](https://github.com/sase-org/sase/commit/e64bf8709319d9fbb0b969289e6cab6661c46220) — fix: Stop key event bubbling in JumpAllModal to prevent saved query conflicts
 

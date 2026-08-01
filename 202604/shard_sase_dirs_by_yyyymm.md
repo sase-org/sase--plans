@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/shard_sase_dirs_by_yyyymm.md](prompts/shard_sase_dirs_by_yyyymm.md)
+- **PROMPT:** [prompts/202604/shard_sase_dirs_by_yyyymm.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/shard_sase_dirs_by_yyyymm.md)
 - **COMMITS:**
   - [852f8fd](https://github.com/sase-org/sase/commit/852f8fd0ab3e955a92e929a242657fbecbf5f19a) — feat: Shard high-volume \`~/.sase/\` dirs into \`YYYYMM/\` subdirectories
 

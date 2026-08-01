@@ -5,7 +5,7 @@ bead_id: sase-10
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/dismissed_agent_name_prefix.md](prompts/dismissed_agent_name_prefix.md)
+- **PROMPT:** [prompts/202604/dismissed_agent_name_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dismissed_agent_name_prefix.md)
 - **BEAD:** [sase-10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10/README.md)
 
 # Enforce Names for Dismissed Agents

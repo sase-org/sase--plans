@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/status_sibling_subgroups.md](prompts/status_sibling_subgroups.md)
+- **PROMPT:** [prompts/202604/status_sibling_subgroups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/status_sibling_subgroups.md)
 - **COMMITS:**
-  - [2a4ac24](https://github.com/sase-org/sase/commit/2a4ac243692fc9d3d229af666e20b3f3177a94bb) — feat(ace): add sibling-root sub-banner under BY_STATUS on the CLs tab
+  - [2a4ac24](https://github.com/sase-org/sase/commit/2a4ac243692fc9d3d229af666e20b3f3177a94bb) — feat(ace): add sibling-root sub-banner under BY\_STATUS on the CLs tab
 
 # Plan — Sibling-Root Sub-Banners under `BY_STATUS` on the CLs Tab
 

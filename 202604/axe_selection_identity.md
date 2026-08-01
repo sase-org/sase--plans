@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/axe_selection_identity.md](prompts/axe_selection_identity.md)
+- **PROMPT:** [prompts/202604/axe_selection_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/axe_selection_identity.md)
 - **COMMITS:**
   - [36c9a1d](https://github.com/sase-org/sase/commit/36c9a1d84a93051e84f4618209450c57abe7c302) — fix: preserve AXE selection by item identity
 

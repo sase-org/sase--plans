@@ -7,7 +7,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/reverse_grouping_keymap.md](prompts/reverse_grouping_keymap.md)
+- **PROMPT:** [prompts/202604/reverse_grouping_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/reverse_grouping_keymap.md)
 - **COMMITS:**
   - [8c28f1d](https://github.com/sase-org/sase/commit/8c28f1d0aeca5209db94c1f34833e39e735c05d7) — feat(ace/tui): add \`O\` keymap to reverse-cycle grouping mode
 

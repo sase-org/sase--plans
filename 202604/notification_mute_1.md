@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_mute_1.md](prompts/notification_mute_1.md)
+- **PROMPT:** [prompts/202604/notification_mute_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_mute_1.md)
 - **COMMITS:**
   - [63679da](https://github.com/sase-org/sase/commit/63679dad67fe790fc9a582be7dc9f4b6f230c302) — feat: per-notification mute toggle in the notification panel
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/alt_shorthand.md](prompts/alt_shorthand.md)
+- **PROMPT:** [prompts/202604/alt_shorthand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/alt_shorthand.md)
 - **COMMITS:**
   - [b847b29](https://github.com/sase-org/sase/commit/b847b29dd7369466d5a6d59fb0161a9e261d7bfd) — feat: add %(...) shorthand syntax for %alt(...)
 

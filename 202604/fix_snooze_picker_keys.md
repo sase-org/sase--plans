@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_snooze_picker_keys.md](prompts/fix_snooze_picker_keys.md)
+- **PROMPT:** [prompts/202604/fix_snooze_picker_keys.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_snooze_picker_keys.md)
 - **COMMITS:**
   - [45f2be3](https://github.com/sase-org/sase/commit/45f2be37a7e3077665d314c4e6ff94b0a0ebbb54) — fix: keep hidden snooze input from swallowing picker keys
 

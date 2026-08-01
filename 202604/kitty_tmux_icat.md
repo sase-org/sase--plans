@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/kitty_tmux_icat.md](prompts/kitty_tmux_icat.md)
+- **PROMPT:** [prompts/202604/kitty_tmux_icat.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/kitty_tmux_icat.md)
 - **COMMITS:**
   - [c536083](https://github.com/sase-org/sase/commit/c536083e504340a132d2caa0522b05c95811b561) — chore: mark kitty tmux icat plan done
 

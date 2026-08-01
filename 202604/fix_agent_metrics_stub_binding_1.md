@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_agent_metrics_stub_binding_1.md](prompts/fix_agent_metrics_stub_binding_1.md)
+- **PROMPT:** [prompts/202604/fix_agent_metrics_stub_binding_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_agent_metrics_stub_binding_1.md)
 - **COMMITS:**
-  - [897324f](https://github.com/sase-org/sase/commit/897324f2dfae0de801397b434d0b0dd902594a9a) — fix: Forward telemetry stubs to real metrics after init_telemetry()
+  - [897324f](https://github.com/sase-org/sase/commit/897324f2dfae0de801397b434d0b0dd902594a9a) — fix: Forward telemetry stubs to real metrics after init\_telemetry()
 
 # Fix: Agent Lifecycle Metrics Never Reach Pushgateway
 

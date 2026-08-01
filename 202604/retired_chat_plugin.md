@@ -5,7 +5,7 @@ bead_id: sase-p
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/retired_chat_plugin.md](prompts/retired_chat_plugin.md)
+- **PROMPT:** [prompts/202604/retired_chat_plugin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/retired_chat_plugin.md)
 - **BEAD:** [sase-p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-p/README.md)
 
 # Plan: `retired chat plugin` — Google Chat integration plugin

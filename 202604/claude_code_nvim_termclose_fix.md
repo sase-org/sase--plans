@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/claude_code_nvim_termclose_fix.md](prompts/claude_code_nvim_termclose_fix.md)
+- **PROMPT:** [prompts/202604/claude_code_nvim_termclose_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/claude_code_nvim_termclose_fix.md)
 
 # Plan: Fix claude-code.nvim TermClose crash with NnnPicker
 

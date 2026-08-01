@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/speed_up_slowest_tests_phased.md](prompts/speed_up_slowest_tests_phased.md)
+- **PROMPT:** [prompts/202604/speed_up_slowest_tests_phased.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/speed_up_slowest_tests_phased.md)
 
 # Speed Up Slowest Tests (Phased Multi-Agent Plan)
 

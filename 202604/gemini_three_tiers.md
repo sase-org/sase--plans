@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gemini_three_tiers.md](prompts/gemini_three_tiers.md)
+- **PROMPT:** [prompts/202604/gemini_three_tiers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gemini_three_tiers.md)
 
 # Plan: Refactor ~/.gemini/GEMINI.md into a 3-tier Architecture
 

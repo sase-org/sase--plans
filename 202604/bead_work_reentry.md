@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bead_work_reentry.md](prompts/bead_work_reentry.md)
+- **PROMPT:** [prompts/202604/bead_work_reentry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bead_work_reentry.md)
 - **COMMITS:**
   - [7bd8f47](https://github.com/sase-org/sase/commit/7bd8f47c93c79f1f437712ee2dabd9f6e6d3f7f5) — fix: allow retrying bead work phases
 

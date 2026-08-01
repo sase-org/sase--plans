@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_mentor_profiles_loading.md](prompts/fix_mentor_profiles_loading.md)
+- **PROMPT:** [prompts/202604/fix_mentor_profiles_loading.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_mentor_profiles_loading.md)
 - **COMMITS:**
   - [eaf9879](https://github.com/sase-org/sase/commit/eaf9879cd9695db4b8f6cfa20ea9d1001bf494ef) — fix: Make mentor profile loading resilient to per-profile errors
 

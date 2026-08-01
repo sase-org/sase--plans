@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_memory_2.md](prompts/dynamic_memory_2.md)
+- **PROMPT:** [prompts/202604/dynamic_memory_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_memory_2.md)
 
 # Plan: Implement Dynamic Memory (`memory/dynamic.md`)
 

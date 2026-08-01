@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/remove_bd_from_ci.md](prompts/remove_bd_from_ci.md)
+- **PROMPT:** [prompts/202604/remove_bd_from_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/remove_bd_from_ci.md)
 - **COMMITS:**
   - [7a523c6](https://github.com/sase-org/sase/commit/7a523c67dd72187824a1b2470a99b2cefa156993) — chore: Remove steveyegge/beads (\`bd\`) install from CI lint job
 

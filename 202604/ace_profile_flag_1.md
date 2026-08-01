@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_profile_flag_1.md](prompts/ace_profile_flag_1.md)
+- **PROMPT:** [prompts/202604/ace_profile_flag_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_profile_flag_1.md)
 - **COMMITS:**
   - [6407ecb](https://github.com/sase-org/sase/commit/6407ecb88485e51bb012d074037b76b5471f4172) — feat: Add \`--profile\` flag to \`sase ace\` for pyinstrument profiling
 

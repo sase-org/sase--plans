@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_list_single_line.md](prompts/agent_list_single_line.md)
+- **PROMPT:** [prompts/202604/agent_list_single_line.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_list_single_line.md)
 - **COMMITS:**
   - [5c30082](https://github.com/sase-org/sase/commit/5c30082f515013ca8a48bc72a15c0d785fd195ce) — fix: keep agent list rows single-line
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/suppress_singleton_name_root_banner.md](prompts/suppress_singleton_name_root_banner.md)
+- **PROMPT:** [prompts/202604/suppress_singleton_name_root_banner.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/suppress_singleton_name_root_banner.md)
 
 # Plan: Suppress name-root banner for single-entry groups
 

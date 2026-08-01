@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_memory_keyword_annotations.md](prompts/dynamic_memory_keyword_annotations.md)
+- **PROMPT:** [prompts/202604/dynamic_memory_keyword_annotations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_memory_keyword_annotations.md)
 
 # Plan: Add Matched-Keyword Annotations to DYNAMIC MEMORY Section
 

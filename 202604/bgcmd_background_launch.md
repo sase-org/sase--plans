@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bgcmd_background_launch.md](prompts/bgcmd_background_launch.md)
+- **PROMPT:** [prompts/202604/bgcmd_background_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bgcmd_background_launch.md)
 - **COMMITS:**
   - [3a3330b](https://github.com/sase-org/sase/commit/3a3330b097de051bb9ff991f88b81d38fa082a25) — feat: run AXE bgcmd launch work on a worker thread
 

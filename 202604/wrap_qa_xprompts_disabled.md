@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/wrap_qa_xprompts_disabled.md](prompts/wrap_qa_xprompts_disabled.md)
+- **PROMPT:** [prompts/202604/wrap_qa_xprompts_disabled.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/wrap_qa_xprompts_disabled.md)
 - **COMMITS:**
-  - [29338c2](https://github.com/sase-org/sase/commit/29338c27e9688ed895bdfd20e85c0183a7d2be57) — fix(axe): wrap Q&A markdown in \`%xprompts_enabled:false\` markers
+  - [29338c2](https://github.com/sase-org/sase/commit/29338c27e9688ed895bdfd20e85c0183a7d2be57) — fix(axe): wrap Q&A markdown in \`%xprompts\_enabled:false\` markers
 
 # Wrap Q&A Section with `%xprompts_enabled` Directive
 

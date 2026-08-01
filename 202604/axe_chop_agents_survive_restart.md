@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/axe_chop_agents_survive_restart.md](prompts/axe_chop_agents_survive_restart.md)
+- **PROMPT:** [prompts/202604/axe_chop_agents_survive_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/axe_chop_agents_survive_restart.md)
 - **COMMITS:**
   - [8783bce](https://github.com/sase-org/sase/commit/8783bceb206461386ed6bdb505619a9531782ab7) — fix: persist chop-launched agent ownership
 

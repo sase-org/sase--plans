@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_jk_navigation_reliability.md](prompts/fix_jk_navigation_reliability.md)
+- **PROMPT:** [prompts/202604/fix_jk_navigation_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_jk_navigation_reliability.md)
 - **COMMITS:**
   - [0e69a53](https://github.com/sase-org/sase/commit/0e69a53103ef6149bf712df772ae0d351e46627a) — fix: suppress stale ChangeSpec highlight events
 

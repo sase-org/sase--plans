@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/deltas_line_counts.md](prompts/deltas_line_counts.md)
+- **PROMPT:** [prompts/202604/deltas_line_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/deltas_line_counts.md)
 - **COMMITS:**
   - [50a1d33](https://github.com/sase-org/sase/commit/50a1d335d1cde4358f10380e438f7c48f2cd221d) — feat: show line counts in DELTAS
 

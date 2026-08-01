@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/init_skills_prettier_format.md](prompts/init_skills_prettier_format.md)
+- **PROMPT:** [prompts/202604/init_skills_prettier_format.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/init_skills_prettier_format.md)
 - **COMMITS:**
   - [fdb28c6](https://github.com/sase-org/sase/commit/fdb28c63a8d7df5f7e52410769cac2f058b0c886) — fix: format \`sase init-skills\` output with prettier
 

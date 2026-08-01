@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_cls_auto_refresh_visibility.md](prompts/fix_cls_auto_refresh_visibility.md)
+- **PROMPT:** [prompts/202604/fix_cls_auto_refresh_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_cls_auto_refresh_visibility.md)
 - **COMMITS:**
   - [ef9f352](https://github.com/sase-org/sase/commit/ef9f35214faf128fb642b03fada03cc357eb2e3c) — fix: show CL auto-refresh countdown
 

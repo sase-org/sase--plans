@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_agent_cleanup_rs_validation.md](prompts/fix_agent_cleanup_rs_validation.md)
+- **PROMPT:** [prompts/202604/fix_agent_cleanup_rs_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_agent_cleanup_rs_validation.md)
 - **COMMITS:**
   - [1b05143](https://github.com/sase-org/sase/commit/1b051435b93aaec01d66c871181ca91790b225a1) — fix: validate agent cleanup Rust bindings
 

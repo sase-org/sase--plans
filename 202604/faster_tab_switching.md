@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/faster_tab_switching.md](prompts/faster_tab_switching.md)
+- **PROMPT:** [prompts/202604/faster_tab_switching.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/faster_tab_switching.md)
 - **COMMITS:**
   - [9de3c3c](https://github.com/sase-org/sase/commit/9de3c3cc5d11254a4b81c04151f7ee53128f62f4) — feat: Make TUI tab switching instant by showing cached data + async refresh
 

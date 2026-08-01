@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_dismiss_selection.md](prompts/notification_dismiss_selection.md)
+- **PROMPT:** [prompts/202604/notification_dismiss_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_dismiss_selection.md)
 - **COMMITS:**
   - [cc1d270](https://github.com/sase-org/sase/commit/cc1d270a309976e6917b049d301498c74344e3ad) — fix: preserve notification dismiss visual selection
 

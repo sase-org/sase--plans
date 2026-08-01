@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fast_ace_startup.md](prompts/fast_ace_startup.md)
+- **PROMPT:** [prompts/202604/fast_ace_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fast_ace_startup.md)
 - **COMMITS:**
   - [0084f22](https://github.com/sase-org/sase/commit/0084f228a30f66912e3e1a0580aa7e95b9b20495) — perf: Speed up \`sase ace\` startup with async agent/axe loads
 

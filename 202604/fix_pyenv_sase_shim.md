@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_pyenv_sase_shim.md](prompts/fix_pyenv_sase_shim.md)
+- **PROMPT:** [prompts/202604/fix_pyenv_sase_shim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_pyenv_sase_shim.md)
 
 # Fix pyenv shim for `sase` being repeatedly recreated
 

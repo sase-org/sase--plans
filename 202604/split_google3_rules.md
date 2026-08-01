@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/split_google3_rules.md](prompts/split_google3_rules.md)
+- **PROMPT:** [prompts/202604/split_google3_rules.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/split_google3_rules.md)
 
 # Plan to Split `google3_rules.md`
 

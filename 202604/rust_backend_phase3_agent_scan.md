@@ -5,7 +5,7 @@ bead_id: sase-18
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase3_agent_scan.md](prompts/rust_backend_phase3_agent_scan.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase3_agent_scan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase3_agent_scan.md)
 - **BEAD:** [sase-18](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18/README.md)
 
 # Rust Backend Migration Phase 3: Agent / Artifact Filesystem Scan

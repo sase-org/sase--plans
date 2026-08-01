@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_run_agent_silent_notification.md](prompts/fix_run_agent_silent_notification.md)
+- **PROMPT:** [prompts/202604/fix_run_agent_silent_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_run_agent_silent_notification.md)
 - **COMMITS:**
   - [1eef22a](https://github.com/sase-org/sase/commit/1eef22a96e494243ef340044619b1e7d7a849b54) — fix: silence completion notifications for hidden agents
 

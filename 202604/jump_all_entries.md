@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/jump_all_entries.md](prompts/jump_all_entries.md)
+- **PROMPT:** [prompts/202604/jump_all_entries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/jump_all_entries.md)
 - **COMMITS:**
   - [e2bb001](https://github.com/sase-org/sase/commit/e2bb00183e8e091cb323e10e07dfd44e3c8e5e9c) — feat: Add cross-tab jump-to-entry modal (backtick)
 

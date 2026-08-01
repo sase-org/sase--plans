@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/copy_agent_name_key.md](prompts/copy_agent_name_key.md)
+- **PROMPT:** [prompts/202604/copy_agent_name_key.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/copy_agent_name_key.md)
 - **COMMITS:**
   - [8506be9](https://github.com/sase-org/sase/commit/8506be97ea7712e425cf1344c69d9da7a6dd6a25) — feat(ace): copy selected agent's name via \`%n\` on Agents tab
 

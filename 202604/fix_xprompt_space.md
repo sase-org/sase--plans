@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_xprompt_space.md](prompts/fix_xprompt_space.md)
+- **PROMPT:** [prompts/202604/fix_xprompt_space.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_xprompt_space.md)
 - **COMMITS:**
-  - [518bd57](https://github.com/sase-org/sase/commit/518bd57029dd1f57d6a3509d9f1bda7b64d58314) — chore: Mark fix_xprompt_space plan as done
+  - [518bd57](https://github.com/sase-org/sase/commit/518bd57029dd1f57d6a3509d9f1bda7b64d58314) — chore: Mark fix\_xprompt\_space plan as done
 
 # Fix: Missing space before xprompt insertion via #@ trigger
 

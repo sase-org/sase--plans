@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rename_commit_type_flag.md](prompts/rename_commit_type_flag.md)
+- **PROMPT:** [prompts/202604/rename_commit_type_flag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rename_commit_type_flag.md)
 - **COMMITS:**
   - [099ab55](https://github.com/sase-org/sase/commit/099ab5535159ac569b696f041d0b12a77ed0cbf8) — feat: rename \`sase commit -M\|--method\` flag to \`-t\|--type\`
 

@@ -5,7 +5,7 @@ bead_id: sase-s
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_tag_panels.md](prompts/dynamic_tag_panels.md)
+- **PROMPT:** [prompts/202604/dynamic_tag_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_tag_panels.md)
 - **BEAD:** [sase-s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-s/README.md)
 
 # Plan: Dynamic Tag Panels on the Agents Tab

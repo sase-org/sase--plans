@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_premature_mentors_done_notification.md](prompts/fix_premature_mentors_done_notification.md)
+- **PROMPT:** [prompts/202604/fix_premature_mentors_done_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_premature_mentors_done_notification.md)
 - **COMMITS:**
   - [035a0e3](https://github.com/sase-org/sase/commit/035a0e38bfaf3f9ca53aa003ecda5c92fa50baeb) — fix: suppress premature "mentors done" notification on Draft→Ready
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/priority_notification_indicator.md](prompts/priority_notification_indicator.md)
+- **PROMPT:** [prompts/202604/priority_notification_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/priority_notification_indicator.md)
 - **COMMITS:**
   - [3a813e8](https://github.com/sase-org/sase/commit/3a813e8d503ea91abd8add173d548a4fae368a22) — feat: priority-aware notification indicator
 

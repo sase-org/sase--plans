@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/widen_agents_tab_side_panel.md](prompts/widen_agents_tab_side_panel.md)
+- **PROMPT:** [prompts/202604/widen_agents_tab_side_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/widen_agents_tab_side_panel.md)
 - **COMMITS:**
   - [b004fef](https://github.com/sase-org/sase/commit/b004fef25f6192778a85d45ce634152f03d94259) — feat: widen Agents-tab side panel cap from 70 to 80
 

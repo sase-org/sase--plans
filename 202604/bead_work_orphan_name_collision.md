@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bead_work_orphan_name_collision.md](prompts/bead_work_orphan_name_collision.md)
+- **PROMPT:** [prompts/202604/bead_work_orphan_name_collision.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bead_work_orphan_name_collision.md)
 - **COMMITS:**
   - [aa89290](https://github.com/sase-org/sase/commit/aa89290aae931798f57d780af2d349ada5489e42) — feat(bead): refuse \`sase bead work\` on agent-name collision
 

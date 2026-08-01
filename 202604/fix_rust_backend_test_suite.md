@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_rust_backend_test_suite.md](prompts/fix_rust_backend_test_suite.md)
+- **PROMPT:** [prompts/202604/fix_rust_backend_test_suite.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_rust_backend_test_suite.md)
 - **COMMITS:**
   - [0a66606](https://github.com/sase-org/sase/commit/0a6660606ae23c0aa19a59a20992a40b94288793) — chore: pin Python backend for pure core tests
 

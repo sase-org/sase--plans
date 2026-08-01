@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rebase_timestamps.md](prompts/rebase_timestamps.md)
+- **PROMPT:** [prompts/202604/rebase_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rebase_timestamps.md)
 - **COMMITS:**
   - [2eee5fd](https://github.com/sase-org/sase/commit/2eee5fd062ef2d3db575a8dd6c9c2cf2f29cfa6a) — feat: record rebase timestamps
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/nonblocking_agent_launch.md](prompts/nonblocking_agent_launch.md)
+- **PROMPT:** [prompts/202604/nonblocking_agent_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/nonblocking_agent_launch.md)
 - **COMMITS:**
   - [5e5dea0](https://github.com/sase-org/sase/commit/5e5dea02e2ca2b4eba769770f1896dbfa1962435) — feat(tui): make agent launches non-blocking using background threads
 

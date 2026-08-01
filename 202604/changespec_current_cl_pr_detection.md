@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/changespec_current_cl_pr_detection.md](prompts/changespec_current_cl_pr_detection.md)
+- **PROMPT:** [prompts/202604/changespec_current_cl_pr_detection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/changespec_current_cl_pr_detection.md)
 
 # Improve `/sase_changespecs` Current CL/PR Detection
 

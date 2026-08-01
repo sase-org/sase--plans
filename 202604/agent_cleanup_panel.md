@@ -5,7 +5,7 @@ bead_id: sase-1h
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/agent_cleanup_panel.md](prompts/agent_cleanup_panel.md)
+- **PROMPT:** [prompts/202604/agent_cleanup_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_cleanup_panel.md)
 - **BEAD:** [sase-1h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h/README.md)
 
 # Agent Cleanup Panel and Rust Backend Migration Plan

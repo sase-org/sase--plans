@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/xprompts_enabled_markers_stripped_in_early_phase.md](prompts/xprompts_enabled_markers_stripped_in_early_phase.md)
+- **PROMPT:** [prompts/202604/xprompts_enabled_markers_stripped_in_early_phase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/xprompts_enabled_markers_stripped_in_early_phase.md)
 
 # Plan: Preserve `%xprompts_enabled` markers through `preprocess_prompt_early`
 

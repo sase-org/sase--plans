@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_panel_heights.md](prompts/dynamic_panel_heights.md)
+- **PROMPT:** [prompts/202604/dynamic_panel_heights.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_panel_heights.md)
 
 # Plan: Dynamic Heights for Agents-Tab Tag Panels
 

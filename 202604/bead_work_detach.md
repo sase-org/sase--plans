@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bead_work_detach.md](prompts/bead_work_detach.md)
+- **PROMPT:** [prompts/202604/bead_work_detach.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bead_work_detach.md)
 - **COMMITS:**
   - [9d6358c](https://github.com/sase-org/sase/commit/9d6358ca68f9b84076e1bb3aeff77e08f8f80af5) — fix: detach agent subprocess stdin
 

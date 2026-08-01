@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/config_memory.md](prompts/config_memory.md)
+- **PROMPT:** [prompts/202604/config_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/config_memory.md)
 - **COMMITS:**
   - [30732d6](https://github.com/sase-org/sase/commit/30732d6b83808d6647692452b964e8891e63f8b7) — chore: Add long-term memory file for configuration system
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_per_group_fold.md](prompts/agents_tab_per_group_fold.md)
+- **PROMPT:** [prompts/202604/agents_tab_per_group_fold.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_per_group_fold.md)
 - **COMMITS:**
   - [f6ffc00](https://github.com/sase-org/sase/commit/f6ffc0017328c37bbf04e8e5218486e0298131be) — feat: per-group expand/collapse on the Agents tab
 

@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/telegram_xprompts_command.md](prompts/telegram_xprompts_command.md)
+- **PROMPT:** [prompts/202604/telegram_xprompts_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/telegram_xprompts_command.md)
 - **COMMITS:**
-  - [e10078d](https://github.com/sase-org/sase/commit/e10078d46d281c0b2ada73becb368efe245e6b6c) — chore: Mark telegram_xprompts_command plan as done
+  - [e10078d](https://github.com/sase-org/sase/commit/e10078d46d281c0b2ada73becb368efe245e6b6c) — chore: Mark telegram\_xprompts\_command plan as done
 
 # Telegram `/xprompts` Command — sase-telegram Wiring
 

@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase4_status_machine.md](prompts/rust_backend_phase4_status_machine.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase4_status_machine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase4_status_machine.md)
 - **BEAD:** [sase-19](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19/README.md)
 
 # Rust Backend Phase 4: Status State Machine

@@ -4,7 +4,7 @@ create_time: 2026-04-29 01:07:46
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/telegram_bead_project_context.md](prompts/telegram_bead_project_context.md)
+- **PROMPT:** [prompts/202604/telegram_bead_project_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/telegram_bead_project_context.md)
 
 # Plan: Fix `/bead` Telegram Project Context
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/add_codex_gpt_5_5_default_model.md](prompts/add_codex_gpt_5_5_default_model.md)
+- **PROMPT:** [prompts/202604/add_codex_gpt_5_5_default_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/add_codex_gpt_5_5_default_model.md)
 - **COMMITS:**
   - [d633521](https://github.com/sase-org/sase/commit/d633521e06c299995d126976ed572ac0683cf4e3) — feat: switch Codex large tier default to gpt-5.5
 

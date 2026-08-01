@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/nvim_treesitter_root_cause_fix.md](prompts/nvim_treesitter_root_cause_fix.md)
+- **PROMPT:** [prompts/202604/nvim_treesitter_root_cause_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/nvim_treesitter_root_cause_fix.md)
 
 # Plan: Diagnose and Fix Cross-Machine Neovim Tree-sitter `node:range()` Crash
 

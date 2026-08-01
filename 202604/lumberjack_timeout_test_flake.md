@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/lumberjack_timeout_test_flake.md](prompts/lumberjack_timeout_test_flake.md)
+- **PROMPT:** [prompts/202604/lumberjack_timeout_test_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/lumberjack_timeout_test_flake.md)
 - **COMMITS:**
   - [0cd43c6](https://github.com/sase-org/sase/commit/0cd43c6ec3a70ee6bc64c3568ba16908d5ea8d83) — fix(test): make per-chop timeout assertions order-independent
 

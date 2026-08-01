@@ -5,7 +5,7 @@ bead_id: sase-l
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/test_suite_speedup.md](prompts/test_suite_speedup.md)
+- **PROMPT:** [prompts/202604/test_suite_speedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/test_suite_speedup.md)
 - **BEAD:** [sase-l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-l/README.md)
 
 # Speed up `just test` — Implementation Plan

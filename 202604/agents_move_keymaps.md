@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_move_keymaps.md](prompts/agents_move_keymaps.md)
+- **PROMPT:** [prompts/202604/agents_move_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_move_keymaps.md)
 - **COMMITS:**
   - [0146eb9](https://github.com/sase-org/sase/commit/0146eb9219e01d05eb828cc592b1669a7254aa58) — feat: Add J/K keymaps to move agent entries up/down on the Agents tab
 

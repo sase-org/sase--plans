@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pr_status_input.md](prompts/pr_status_input.md)
+- **PROMPT:** [prompts/202604/pr_status_input.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pr_status_input.md)
 - **COMMITS:**
   - [3a011d7](https://github.com/sase-org/sase/commit/3a011d745ea1002737b04017f324326bcac6f743) — feat(pr): add \`status\` input to \#pr xprompt workflow
 

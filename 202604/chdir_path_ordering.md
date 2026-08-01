@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/chdir_path_ordering.md](prompts/chdir_path_ordering.md)
+- **PROMPT:** [prompts/202604/chdir_path_ordering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/chdir_path_ordering.md)
 - **COMMITS:**
-  - [80fa224](https://github.com/sase-org/sase/commit/80fa224e03ab5ca0666440d3e8bd1ae2c56e0498) — fix(xprompt): process _chdir before path resolution in script steps
+  - [80fa224](https://github.com/sase-org/sase/commit/80fa224e03ab5ca0666440d3e8bd1ae2c56e0498) — fix(xprompt): process \_chdir before path resolution in script steps
 
 # Fix `_chdir` / path resolution ordering bug
 

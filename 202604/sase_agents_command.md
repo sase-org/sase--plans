@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/sase_agents_command.md](prompts/sase_agents_command.md)
+- **PROMPT:** [prompts/202604/sase_agents_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/sase_agents_command.md)
 - **COMMITS:**
   - [3d2e811](https://github.com/sase-org/sase/commit/3d2e811e56be2813db736158df8d66f1833ec7d4) — feat: Add \`sase agents\` CLI for running-agent visibility
 

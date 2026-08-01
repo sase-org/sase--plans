@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_jk_random_jumps_at_fold_3.md](prompts/agents_jk_random_jumps_at_fold_3.md)
+- **PROMPT:** [prompts/202604/agents_jk_random_jumps_at_fold_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_jk_random_jumps_at_fold_3.md)
 - **COMMITS:**
   - [8a7f34b](https://github.com/sase-org/sase/commit/8a7f34be6ea9f949f2eb5905173a9175fbe5170d) — fix: walk visible grouping order for j/k at fold level 3
 

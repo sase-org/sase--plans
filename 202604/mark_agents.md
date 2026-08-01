@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/mark_agents.md](prompts/mark_agents.md)
+- **PROMPT:** [prompts/202604/mark_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/mark_agents.md)
 
 # Mark Agents on the `sase ace` "Agents" Tab
 

@@ -5,7 +5,7 @@ bead_id: sase-1n
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/notification_rust_migration.md](prompts/notification_rust_migration.md)
+- **PROMPT:** [prompts/202604/notification_rust_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_rust_migration.md)
 - **BEAD:** [sase-1n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n/README.md)
 
 # Notification Store Rust Migration Plan

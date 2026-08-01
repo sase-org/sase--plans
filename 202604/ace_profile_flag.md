@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_profile_flag.md](prompts/ace_profile_flag.md)
+- **PROMPT:** [prompts/202604/ace_profile_flag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_profile_flag.md)
 
 # Plan: Add `--profile` flag to `sase ace`
 

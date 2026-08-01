@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_debounced_detail_shutdown_race.md](prompts/fix_debounced_detail_shutdown_race.md)
+- **PROMPT:** [prompts/202604/fix_debounced_detail_shutdown_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_debounced_detail_shutdown_race.md)
 - **COMMITS:**
   - [21793f1](https://github.com/sase-org/sase/commit/21793f120613469394c0917d40df13b9369213aa) — fix: guard debounced detail update against shutdown race
 

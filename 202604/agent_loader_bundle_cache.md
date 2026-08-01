@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_loader_bundle_cache.md](prompts/agent_loader_bundle_cache.md)
+- **PROMPT:** [prompts/202604/agent_loader_bundle_cache.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_loader_bundle_cache.md)
 - **COMMITS:**
   - [d4537b5](https://github.com/sase-org/sase/commit/d4537b58b1675087e764b5fc3f43e20d1d7dcb71) — chore: fix agent loader bundle cache test
 

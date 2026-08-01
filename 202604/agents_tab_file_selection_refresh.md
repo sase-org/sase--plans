@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_file_selection_refresh.md](prompts/agents_tab_file_selection_refresh.md)
+- **PROMPT:** [prompts/202604/agents_tab_file_selection_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_file_selection_refresh.md)
 - **COMMITS:**
   - [7b2c3ba](https://github.com/sase-org/sase/commit/7b2c3bacc6881e02b73cd3c4803a8cf5cc2b4925) — fix: Preserve Agents-tab file selection across auto-refresh
 

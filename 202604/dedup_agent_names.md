@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dedup_agent_names.md](prompts/dedup_agent_names.md)
+- **PROMPT:** [prompts/202604/dedup_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dedup_agent_names.md)
 
 # Plan: Dedup agent names on revive and on `%name:` claim
 

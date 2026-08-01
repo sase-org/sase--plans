@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_critique_comments_stderr_merge.md](prompts/fix_critique_comments_stderr_merge.md)
+- **PROMPT:** [prompts/202604/fix_critique_comments_stderr_merge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_critique_comments_stderr_merge.md)
 - **COMMITS:**
-  - [690ea6b](https://github.com/sase-org/sase/commit/690ea6b55e9e0848c956267c81bd65db45b3ccbd) — chore: mark fix_critique_comments_stderr_merge plan as done
+  - [690ea6b](https://github.com/sase-org/sase/commit/690ea6b55e9e0848c956267c81bd65db45b3ccbd) — chore: mark fix\_critique\_comments\_stderr\_merge plan as done
 
 # Plan: Fix `critique_comments` stderr-merge bug breaking `sase axe` comment polling
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fast_single_agent_launch.md](prompts/fast_single_agent_launch.md)
+- **PROMPT:** [prompts/202604/fast_single_agent_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fast_single_agent_launch.md)
 - **COMMITS:**
   - [33d3e66](https://github.com/sase-org/sase/commit/33d3e669944d418d6d43150460c429c7457dc1e4) — fix: speed up single-agent TUI launch
 

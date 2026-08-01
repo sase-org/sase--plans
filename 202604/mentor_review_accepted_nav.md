@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/mentor_review_accepted_nav.md](prompts/mentor_review_accepted_nav.md)
+- **PROMPT:** [prompts/202604/mentor_review_accepted_nav.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/mentor_review_accepted_nav.md)
 - **COMMITS:**
   - [930b8f5](https://github.com/sase-org/sase/commit/930b8f53ae32228fc4940d1c7ca13be3b54506fd) — feat: Add N/P keymaps for accepted-comment navigation in Mentor Review
 

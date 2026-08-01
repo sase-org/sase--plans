@@ -5,7 +5,7 @@ bead_id: sase-1g
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/standalone_xprompt_bang_prefix.md](prompts/standalone_xprompt_bang_prefix.md)
+- **PROMPT:** [prompts/202604/standalone_xprompt_bang_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/standalone_xprompt_bang_prefix.md)
 - **BEAD:** [sase-1g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g/README.md)
 
 # Plan: Require `#!` for standalone xprompt workflows

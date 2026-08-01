@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/approve_options_textarea_typing.md](prompts/approve_options_textarea_typing.md)
+- **PROMPT:** [prompts/202604/approve_options_textarea_typing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/approve_options_textarea_typing.md)
 - **COMMITS:**
   - [4c83ca2](https://github.com/sase-org/sase/commit/4c83ca263aa8d1c2f66340c854b02fcb0c4808a4) — fix: Remove \`q\` cancel binding from ApproveOptionsModal to allow TextArea typing
 

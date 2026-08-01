@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/directive_comma_args.md](prompts/directive_comma_args.md)
+- **PROMPT:** [prompts/202604/directive_comma_args.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/directive_comma_args.md)
 - **COMMITS:**
   - [40c3290](https://github.com/sase-org/sase/commit/40c32900b4a96c4a76181a64613d62283b9a3892) — feat: comma-separated colon args for multi-value directives
 

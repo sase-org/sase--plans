@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/uninstall_claude_code_nvim.md](prompts/uninstall_claude_code_nvim.md)
+- **PROMPT:** [prompts/202604/uninstall_claude_code_nvim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/uninstall_claude_code_nvim.md)
 - **COMMITS:**
-  - [1085178](https://github.com/sase-org/sase/commit/108517839ff36b73f1ad90aafc8708549f4bbe7b) — chore: Mark uninstall_claude_code_nvim plan as done
+  - [1085178](https://github.com/sase-org/sase/commit/108517839ff36b73f1ad90aafc8708549f4bbe7b) — chore: Mark uninstall\_claude\_code\_nvim plan as done
 
 # Plan: Uninstall claude-code.nvim from Neovim config
 

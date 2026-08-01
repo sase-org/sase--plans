@@ -5,7 +5,7 @@ bead_id: sase-1e
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase7.md](prompts/rust_backend_phase7.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase7.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase7.md)
 - **BEAD:** [sase-1e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1e/README.md)
 
 # Rust Backend Migration Phase 7: Measurement, Documentation, And Regression Floor

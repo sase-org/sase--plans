@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/remove_ace_agent_mode.md](prompts/remove_ace_agent_mode.md)
+- **PROMPT:** [prompts/202604/remove_ace_agent_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/remove_ace_agent_mode.md)
 - **COMMITS:**
   - [b253a59](https://github.com/sase-org/sase/commit/b253a59e64eb920b9ffcc422fd33e8c616f73d6a) — feat: Remove sase ace --agent headless mode CLI surface
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_keymaps_cache_mutation.md](prompts/fix_keymaps_cache_mutation.md)
+- **PROMPT:** [prompts/202604/fix_keymaps_cache_mutation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_keymaps_cache_mutation.md)
 - **COMMITS:**
   - [36765e1](https://github.com/sase-org/sase/commit/36765e135d6291ad76371b4b4a4b134fe7d1fe15) — fix(keymaps): prevent cached defaults from being mutated across tests
 

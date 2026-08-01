@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/name_root_banner_color.md](prompts/name_root_banner_color.md)
+- **PROMPT:** [prompts/202604/name_root_banner_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/name_root_banner_color.md)
 - **COMMITS:**
   - [f11623c](https://github.com/sase-org/sase/commit/f11623c06772c0c3d93ba36bdeb10dac1534bc06) — feat: distinct accent color for L2 name-root banner label
 

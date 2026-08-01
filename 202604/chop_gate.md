@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/chop_gate.md](prompts/chop_gate.md)
+- **PROMPT:** [prompts/202604/chop_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/chop_gate.md)
 - **COMMITS:**
   - [5667b7a](https://github.com/sase-org/sase/commit/5667b7ab779ca31c5b63ff2eb706294701342a5f) — feat: Add \`gate\` field to chop config to prevent unnecessary agent spawns
 

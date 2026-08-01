@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pylimit_split_chop_fanout.md](prompts/pylimit_split_chop_fanout.md)
+- **PROMPT:** [prompts/202604/pylimit_split_chop_fanout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pylimit_split_chop_fanout.md)
 
 # Fix `sase_pylimit_split` chop fan-out
 

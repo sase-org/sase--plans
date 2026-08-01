@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_ci_file_not_found_sase.md](prompts/fix_ci_file_not_found_sase.md)
+- **PROMPT:** [prompts/202604/fix_ci_file_not_found_sase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_ci_file_not_found_sase.md)
 - **COMMITS:**
   - [134e437](https://github.com/sase-org/sase/commit/134e43795c7723a3afcd61345caf7db178e73c1d) — fix: avoid bead hook crash when sase CLI is missing
 

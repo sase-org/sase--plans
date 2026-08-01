@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/migrate.md](prompts/migrate.md)
+- **PROMPT:** [prompts/202604/migrate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/migrate.md)
 - **COMMITS:**
   - [d5ccfb1](https://github.com/sase-org/sase/commit/d5ccfb1f7ab6f17574aedfccecd7cee175017f3f) — chore: mark migrate.md plan as done
 

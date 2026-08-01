@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pylimit_split_validation.md](prompts/pylimit_split_validation.md)
+- **PROMPT:** [prompts/202604/pylimit_split_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pylimit_split_validation.md)
 - **COMMITS:**
   - [83494e1](https://github.com/sase-org/sase/commit/83494e170f6dfff32545dc551b8cb4cc5a8e8061) — fix: validate pylimit split pysplit args
 

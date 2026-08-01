@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_ace_testing_tab_bar_worker_race.md](prompts/fix_ace_testing_tab_bar_worker_race.md)
+- **PROMPT:** [prompts/202604/fix_ace_testing_tab_bar_worker_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_ace_testing_tab_bar_worker_race.md)
 
 # Fix Flaky `test_expect_state_passes` Worker Failure (`#tab-bar` NoMatches)
 

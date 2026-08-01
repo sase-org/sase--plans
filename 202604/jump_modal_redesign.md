@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/jump_modal_redesign.md](prompts/jump_modal_redesign.md)
+- **PROMPT:** [prompts/202604/jump_modal_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/jump_modal_redesign.md)
 - **COMMITS:**
   - [ca9bdf7](https://github.com/sase-org/sase/commit/ca9bdf7e833edaac1f17507621c650dd8312ceb5) — feat: Redesign jump-to-entry modal with larger size and polished visuals
 

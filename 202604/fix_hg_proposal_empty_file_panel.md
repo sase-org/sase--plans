@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_hg_proposal_empty_file_panel.md](prompts/fix_hg_proposal_empty_file_panel.md)
+- **PROMPT:** [prompts/202604/fix_hg_proposal_empty_file_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_hg_proposal_empty_file_panel.md)
 - **COMMITS:**
-  - [e89b67f](https://github.com/sase-org/sase/commit/e89b67f9e9acb578b46e565de34c7a6780e6a785) — fix: surface diff_path from commit_result.json in propose/commit/pr report steps
+  - [e89b67f](https://github.com/sase-org/sase/commit/e89b67f9e9acb578b46e565de34c7a6780e6a785) — fix: surface diff\_path from commit\_result.json in propose/commit/pr report steps
 
 # Fix empty file panel in `sase ace` after Mercurial proposal
 

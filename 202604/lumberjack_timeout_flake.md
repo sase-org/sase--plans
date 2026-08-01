@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/lumberjack_timeout_flake.md](prompts/lumberjack_timeout_flake.md)
+- **PROMPT:** [prompts/202604/lumberjack_timeout_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/lumberjack_timeout_flake.md)
 
 # Plan: Diagnose and Fix Lumberjack Per-Chop Timeout Test Failure
 

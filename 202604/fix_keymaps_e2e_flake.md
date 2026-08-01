@@ -4,7 +4,7 @@ status: planned
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_keymaps_e2e_flake.md](prompts/fix_keymaps_e2e_flake.md)
+- **PROMPT:** [prompts/202604/fix_keymaps_e2e_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_keymaps_e2e_flake.md)
 - **COMMITS:**
   - [707e954](https://github.com/sase-org/sase/commit/707e9549a37bb13c968b6e3279a332357bded5dc) — fix(ace): raise AcePage poll-timeout default to 5s
 

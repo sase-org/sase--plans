@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_memory_section.md](prompts/dynamic_memory_section.md)
+- **PROMPT:** [prompts/202604/dynamic_memory_section.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_memory_section.md)
 - **COMMITS:**
   - [b6b8637](https://github.com/sase-org/sase/commit/b6b8637a5692e3984c75497de18f3ca501b62cee) — ref: Replace DYNAMIC MEMORY line with markdown section of individual file paths
 

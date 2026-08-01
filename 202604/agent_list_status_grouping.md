@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_list_status_grouping.md](prompts/agent_list_status_grouping.md)
+- **PROMPT:** [prompts/202604/agent_list_status_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_list_status_grouping.md)
 - **COMMITS:**
   - [4c4eae1](https://github.com/sase-org/sase/commit/4c4eae16c43d953c7656262ac24f2952aae65d25) — feat: share agent status grouping helpers
 

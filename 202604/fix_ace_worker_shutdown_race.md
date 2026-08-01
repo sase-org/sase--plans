@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_ace_worker_shutdown_race.md](prompts/fix_ace_worker_shutdown_race.md)
+- **PROMPT:** [prompts/202604/fix_ace_worker_shutdown_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_ace_worker_shutdown_race.md)
 - **COMMITS:**
   - [006c960](https://github.com/sase-org/sase/commit/006c960d6c41faec098feee7a28c74d2d9649d67) — fix: Guard agents display refresh against torn-down widget tree
 

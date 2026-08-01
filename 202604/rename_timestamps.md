@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rename_timestamps.md](prompts/rename_timestamps.md)
+- **PROMPT:** [prompts/202604/rename_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rename_timestamps.md)
 - **COMMITS:**
   - [0d8ae7f](https://github.com/sase-org/sase/commit/0d8ae7f168437edafdfd4495de3af03686287211) — feat: Record RENAME timestamps when renaming a ChangeSpec
 

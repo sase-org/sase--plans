@@ -4,7 +4,7 @@ create_time: 2026-04-30 18:55:08
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_recent_first.md](prompts/notification_recent_first.md)
+- **PROMPT:** [prompts/202604/notification_recent_first.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_recent_first.md)
 
 # Notification Panel Recent-First Bucket Ordering
 

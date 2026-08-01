@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_runtime_timestamp.md](prompts/agents_tab_runtime_timestamp.md)
+- **PROMPT:** [prompts/202604/agents_tab_runtime_timestamp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_runtime_timestamp.md)
 - **COMMITS:**
   - [636190f](https://github.com/sase-org/sase/commit/636190fdf0ef58e82672d31a57565d67402bdda6) — feat: right-align runtime + finish-timestamp suffix on Agents tab
 

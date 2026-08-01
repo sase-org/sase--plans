@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/always_show_by_date_hour_headers.md](prompts/always_show_by_date_hour_headers.md)
+- **PROMPT:** [prompts/202604/always_show_by_date_hour_headers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/always_show_by_date_hour_headers.md)
 - **COMMITS:**
   - [56d69ae](https://github.com/sase-org/sase/commit/56d69ae1d75aa3679c684016575dcdc1a3513af0) — fix: always show by-date hour headers
 

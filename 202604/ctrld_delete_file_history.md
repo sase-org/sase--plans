@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ctrld_delete_file_history.md](prompts/ctrld_delete_file_history.md)
+- **PROMPT:** [prompts/202604/ctrld_delete_file_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ctrld_delete_file_history.md)
 - **COMMITS:**
   - [36fc3e9](https://github.com/sase-org/sase/commit/36fc3e95b06266c05d5315b1cf5b5b0b70e41fe8) — feat: Delete file-history entries with Ctrl+D in completion panel
 

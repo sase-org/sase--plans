@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/startup_stopwatch_root_cause_fix.md](prompts/startup_stopwatch_root_cause_fix.md)
+- **PROMPT:** [prompts/202604/startup_stopwatch_root_cause_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/startup_stopwatch_root_cause_fix.md)
 - **COMMITS:**
   - [b44f123](https://github.com/sase-org/sase/commit/b44f123c7a05d6257663d8f7e06554551e06c0d7) — fix: run startup axe init concurrently with agents refresh
 

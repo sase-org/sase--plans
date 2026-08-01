@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_bd_new_epic_skill.md](prompts/fix_bd_new_epic_skill.md)
+- **PROMPT:** [prompts/202604/fix_bd_new_epic_skill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_bd_new_epic_skill.md)
 - **COMMITS:**
-  - [a1e0238](https://github.com/sase-org/sase/commit/a1e02387be7124bc3c04ca780d958270b704ecda) — chore: mark fix_bd_new_epic_skill plan as done
+  - [a1e0238](https://github.com/sase-org/sase/commit/a1e02387be7124bc3c04ca780d958270b704ecda) — chore: mark fix\_bd\_new\_epic\_skill plan as done
 
 # Plan: Fix Stale `bd:new_epic` Slash-Command Skill That Confuses Agents
 

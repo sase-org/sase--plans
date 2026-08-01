@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_panel_heights_1.md](prompts/dynamic_panel_heights_1.md)
+- **PROMPT:** [prompts/202604/dynamic_panel_heights_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_panel_heights_1.md)
 - **COMMITS:**
   - [3c59b7f](https://github.com/sase-org/sase/commit/3c59b7f21d6e8876ef302c9aa776290ec9fe3f8c) — feat: size Agents-tab tag panels by content
 

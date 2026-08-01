@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_loading_banner.md](prompts/ace_loading_banner.md)
+- **PROMPT:** [prompts/202604/ace_loading_banner.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_loading_banner.md)
 - **COMMITS:**
   - [4546fd2](https://github.com/sase-org/sase/commit/4546fd27b0a496ddc4f8cd95d924d42045ccc319) — feat: Add bold centered startup loading banner to \`sase ace\` TUI
 

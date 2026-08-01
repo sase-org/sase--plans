@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/jk_banner_highlight_refresh.md](prompts/jk_banner_highlight_refresh.md)
+- **PROMPT:** [prompts/202604/jk_banner_highlight_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/jk_banner_highlight_refresh.md)
 - **COMMITS:**
   - [1a1360e](https://github.com/sase-org/sase/commit/1a1360ea30e5647e3e5bc90e5725ca9e3621e7fb) — fix(ace): refresh agent-list highlight on j/k across folded banners
 

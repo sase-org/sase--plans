@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_comment_check_workspace_gate.md](prompts/fix_comment_check_workspace_gate.md)
+- **PROMPT:** [prompts/202604/fix_comment_check_workspace_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_comment_check_workspace_gate.md)
 
 # Plan: Fix Silent Skip of Reviewer-Comments Check When Workspace Lookup Fails
 

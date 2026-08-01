@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/parent_p4head_leak.md](prompts/parent_p4head_leak.md)
+- **PROMPT:** [prompts/202604/parent_p4head_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/parent_p4head_leak.md)
 
 # Plan: Stop `sase commit` from writing `PARENT: p4head` into ChangeSpecs
 

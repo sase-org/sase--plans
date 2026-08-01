@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/alt_directive.md](prompts/alt_directive.md)
+- **PROMPT:** [prompts/202604/alt_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/alt_directive.md)
 - **COMMITS:**
   - [5623183](https://github.com/sase-org/sase/commit/5623183997586da90cace1084d5053e367fa0872) — feat: add %alt directive for prompt splitting with arbitrary text variations
 

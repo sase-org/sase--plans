@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_agent_image_file_panel.md](prompts/fix_agent_image_file_panel.md)
+- **PROMPT:** [prompts/202604/fix_agent_image_file_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_agent_image_file_panel.md)
 - **COMMITS:**
   - [4d91b34](https://github.com/sase-org/sase/commit/4d91b346222d916e9860d502c002ac39963d6b82) — fix: preserve agent image file attachments
 

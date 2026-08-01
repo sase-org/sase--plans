@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/kill_dismiss_all.md](prompts/kill_dismiss_all.md)
+- **PROMPT:** [prompts/202604/kill_dismiss_all.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/kill_dismiss_all.md)
 - **COMMITS:**
   - [4719812](https://github.com/sase-org/sase/commit/4719812075166a10c1bbd902ea3c9bfaf7d90d06) — feat: Add \`,X\` leader mode keymap to kill & dismiss all agents
 

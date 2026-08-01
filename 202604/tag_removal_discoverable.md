@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/tag_removal_discoverable.md](prompts/tag_removal_discoverable.md)
+- **PROMPT:** [prompts/202604/tag_removal_discoverable.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tag_removal_discoverable.md)
 - **COMMITS:**
   - [763232a](https://github.com/sase-org/sase/commit/763232a6f8ab121c8f3f3a9a80ce2c93c0b455ff) — feat: make agent-tag removal discoverable in \`sase ace\`
 

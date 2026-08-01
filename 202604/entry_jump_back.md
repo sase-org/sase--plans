@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/entry_jump_back.md](prompts/entry_jump_back.md)
+- **PROMPT:** [prompts/202604/entry_jump_back.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/entry_jump_back.md)
 - **COMMITS:**
   - [25bb058](https://github.com/sase-org/sase/commit/25bb05828e3b664318dfd2a8bf206002b0388d12) — feat: Add hidden apostrophe jump-back hint to entry jump mode
 

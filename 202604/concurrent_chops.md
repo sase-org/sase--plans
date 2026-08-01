@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/concurrent_chops.md](prompts/concurrent_chops.md)
+- **PROMPT:** [prompts/202604/concurrent_chops.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/concurrent_chops.md)
 
 # Plan: Run Lumberjack Chops Concurrently
 

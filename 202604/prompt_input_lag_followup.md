@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/prompt_input_lag_followup.md](prompts/prompt_input_lag_followup.md)
+- **PROMPT:** [prompts/202604/prompt_input_lag_followup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/prompt_input_lag_followup.md)
 - **COMMITS:**
   - [dea0728](https://github.com/sase-org/sase/commit/dea07282acb888805e31192890adc69431434109) — fix(ace/tui): dedupe artifact-change defer timers during prompt input
 

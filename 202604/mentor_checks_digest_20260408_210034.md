@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/mentor_checks_digest_20260408_210034.md](prompts/mentor_checks_digest_20260408_210034.md)
+- **PROMPT:** [prompts/202604/mentor_checks_digest_20260408_210034.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/mentor_checks_digest_20260408_210034.md)
 - **COMMITS:**
   - [11ca4fd](https://github.com/sase-org/sase/commit/11ca4fd07762e2dc44d0d889e08586c9ac14fef3) — fix: reduce mentor check hot-path work
 

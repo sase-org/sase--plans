@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_bead_list_indicator.md](prompts/agent_bead_list_indicator.md)
+- **PROMPT:** [prompts/202604/agent_bead_list_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_bead_list_indicator.md)
 - **COMMITS:**
   - [2c48ec4](https://github.com/sase-org/sase/commit/2c48ec470dfa64544c904f21f3087c10b30a7e06) — feat: show bead badges in agent rows
 

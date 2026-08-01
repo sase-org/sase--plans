@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/repeat_iteration_nesting.md](prompts/repeat_iteration_nesting.md)
+- **PROMPT:** [prompts/202604/repeat_iteration_nesting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/repeat_iteration_nesting.md)
 - **COMMITS:**
   - [62de6c9](https://github.com/sase-org/sase/commit/62de6c9ddf2f53df7105dd4cd5563cbc7ab5f455) — feat: Show repeat iterations as nested child entries on Agents tab
 

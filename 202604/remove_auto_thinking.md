@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/remove_auto_thinking.md](prompts/remove_auto_thinking.md)
+- **PROMPT:** [prompts/202604/remove_auto_thinking.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/remove_auto_thinking.md)
 - **COMMITS:**
   - [ac259a7](https://github.com/sase-org/sase/commit/ac259a71f48441ac52d431f7255201adbc1e4caa) — feat(ace): stop auto-showing thinking panel in file view
 

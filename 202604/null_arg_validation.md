@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/null_arg_validation.md](prompts/null_arg_validation.md)
+- **PROMPT:** [prompts/202604/null_arg_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/null_arg_validation.md)
 - **COMMITS:**
   - [7f9a691](https://github.com/sase-org/sase/commit/7f9a6910898a1e2223801fad136b789db700114c) — fix: render YAML null as "null" string in xprompt workflow templates
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/codex_config_churn.md](prompts/codex_config_churn.md)
+- **PROMPT:** [prompts/202604/codex_config_churn.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/codex_config_churn.md)
 - **COMMITS:**
   - [cde86fa](https://github.com/sase-org/sase/commit/cde86faa144e5e3c898060490ed28ef65648b453) — fix: isolate CLI config writes
 

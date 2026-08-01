@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_prometheus.md](prompts/fix_prometheus.md)
+- **PROMPT:** [prompts/202604/fix_prometheus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_prometheus.md)
 
 # Plan: Diagnose and Fix Prometheus
 

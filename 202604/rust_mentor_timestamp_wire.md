@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rust_mentor_timestamp_wire.md](prompts/rust_mentor_timestamp_wire.md)
+- **PROMPT:** [prompts/202604/rust_mentor_timestamp_wire.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_mentor_timestamp_wire.md)
 - **COMMITS:**
   - [02f2f84](https://github.com/sase-org/sase/commit/02f2f8427d3dbef46c9ccde507031f7b0d1637f5) — fix: allow null mentor timestamps in Rust query wire
 

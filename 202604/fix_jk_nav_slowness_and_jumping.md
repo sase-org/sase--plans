@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_jk_nav_slowness_and_jumping.md](prompts/fix_jk_nav_slowness_and_jumping.md)
+- **PROMPT:** [prompts/202604/fix_jk_nav_slowness_and_jumping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_jk_nav_slowness_and_jumping.md)
 
 # Fix slow / jumping `j`/`k` navigation on the CLs tab
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_duplicate_pr_prefix.md](prompts/fix_duplicate_pr_prefix.md)
+- **PROMPT:** [prompts/202604/fix_duplicate_pr_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_duplicate_pr_prefix.md)
 - **COMMITS:**
   - [074b239](https://github.com/sase-org/sase/commit/074b239a6365d0d8c882e35b40533726186a9c67) — fix: Strip duplicate \[project\] prefix from PR titles
 

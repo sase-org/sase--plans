@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/changespec_search_subcommand.md](prompts/changespec_search_subcommand.md)
+- **PROMPT:** [prompts/202604/changespec_search_subcommand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/changespec_search_subcommand.md)
 - **COMMITS:**
   - [c8d612f](https://github.com/sase-org/sase/commit/c8d612f831eb1982e5884aa8ae819e19beca39c1) — feat: move ChangeSpec search under changespec
 

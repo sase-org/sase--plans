@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_pretty_finish_timestamp.md](prompts/agents_tab_pretty_finish_timestamp.md)
+- **PROMPT:** [prompts/202604/agents_tab_pretty_finish_timestamp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_pretty_finish_timestamp.md)
 - **COMMITS:**
   - [ef738fd](https://github.com/sase-org/sase/commit/ef738fde3fdd517779907394e5e62e9f1e64dde0) — feat(ace): humanize Agents-tab finish-timestamp
 

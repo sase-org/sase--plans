@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dedup_agent_names_1.md](prompts/dedup_agent_names_1.md)
+- **PROMPT:** [prompts/202604/dedup_agent_names_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dedup_agent_names_1.md)
 - **COMMITS:**
   - [18b576c](https://github.com/sase-org/sase/commit/18b576ca3768e4599af443e7151ac792cc53ba00) — feat(names): dedup agent names on revive and explicit \`%name:\` claim
 

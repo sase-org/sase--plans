@@ -4,7 +4,7 @@ status: active
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/search_md_improvements.md](prompts/search_md_improvements.md)
+- **PROMPT:** [prompts/202604/search_md_improvements.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/search_md_improvements.md)
 - **COMMITS:**
   - [14ca016](https://github.com/sase-org/sase/commit/14ca016f8562bac6a804578b084b5664c6c17718) — feat: Enhance search markdown output with project context, query, drawers, workspaces, kickstart, and anchor links
 

@@ -12,7 +12,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gchat_cross_machine_self_filter_1.md](prompts/gchat_cross_machine_self_filter_1.md)
+- **PROMPT:** [prompts/202604/gchat_cross_machine_self_filter_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gchat_cross_machine_self_filter_1.md)
 
 # retired chat plugin - Cross-Machine Self-Message Filter
 

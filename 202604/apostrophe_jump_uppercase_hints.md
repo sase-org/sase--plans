@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/apostrophe_jump_uppercase_hints.md](prompts/apostrophe_jump_uppercase_hints.md)
+- **PROMPT:** [prompts/202604/apostrophe_jump_uppercase_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/apostrophe_jump_uppercase_hints.md)
 - **COMMITS:**
   - [9f61364](https://github.com/sase-org/sase/commit/9f6136403665d8acbf8260d234bbbb26bd0f0563) — fix: preserve uppercase jump hint keys
 

@@ -7,7 +7,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_untagged_full_height.md](prompts/agents_untagged_full_height.md)
+- **PROMPT:** [prompts/202604/agents_untagged_full_height.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_untagged_full_height.md)
 - **COMMITS:**
   - [bc43e9f](https://github.com/sase-org/sase/commit/bc43e9fcc262e8b77e56caed2b79a8fcfd3918e7) — fix: make Agents-tab last panel fill leftover column height
 

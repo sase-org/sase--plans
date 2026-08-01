@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_hint_input_bar_duplicate_ids.md](prompts/fix_hint_input_bar_duplicate_ids.md)
+- **PROMPT:** [prompts/202604/fix_hint_input_bar_duplicate_ids.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_hint_input_bar_duplicate_ids.md)
 - **COMMITS:**
   - [aaf447e](https://github.com/sase-org/sase/commit/aaf447e2d947de3ff4320cf73050ff38f0ded365) — fix: Prevent HintInputBar DuplicateIds TUI crash
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_ci_sase_core_rs_install.md](prompts/fix_ci_sase_core_rs_install.md)
+- **PROMPT:** [prompts/202604/fix_ci_sase_core_rs_install.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_ci_sase_core_rs_install.md)
 - **COMMITS:**
   - [d5f7d9a](https://github.com/sase-org/sase/commit/d5f7d9a183e421ba4bb6b275a22805f2ec6726de) — fix: install local Rust core before resolving sase deps
 

@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/epic_agent_names.md](prompts/epic_agent_names.md)
+- **PROMPT:** [prompts/202604/epic_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/epic_agent_names.md)
 - **COMMITS:**
-  - [8640fd7](https://github.com/sase-org/sase/commit/8640fd7b8e90545872e137e7ee3c9bf688e4c49f) — ref: rename epic-launched agents to \`\<epic_id\>.\<N\>\` / \`\<epic_id\>.land\`
+  - [8640fd7](https://github.com/sase-org/sase/commit/8640fd7b8e90545872e137e7ee3c9bf688e4c49f) — ref: rename epic-launched agents to \`\<epic\_id\>.\<N\>\` / \`\<epic\_id\>.land\`
 
 # Rename epic-launched agents to `<epic_id>.<N>` / `<epic_id>.land`
 

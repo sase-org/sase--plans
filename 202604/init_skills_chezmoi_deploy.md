@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/init_skills_chezmoi_deploy.md](prompts/init_skills_chezmoi_deploy.md)
+- **PROMPT:** [prompts/202604/init_skills_chezmoi_deploy.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/init_skills_chezmoi_deploy.md)
 - **COMMITS:**
   - [fc27034](https://github.com/sase-org/sase/commit/fc27034a253d3e044e00de071f29e6514742c360) — feat: auto-deploy chezmoi skill changes from \`sase init-skills\`
 

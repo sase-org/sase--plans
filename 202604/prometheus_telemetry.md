@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/prometheus_telemetry.md](prompts/prometheus_telemetry.md)
+- **PROMPT:** [prompts/202604/prometheus_telemetry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/prometheus_telemetry.md)
 
 # Plan: Prometheus Telemetry Integration
 

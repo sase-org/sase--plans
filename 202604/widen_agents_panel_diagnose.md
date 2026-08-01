@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/widen_agents_panel_diagnose.md](prompts/widen_agents_panel_diagnose.md)
+- **PROMPT:** [prompts/202604/widen_agents_panel_diagnose.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/widen_agents_panel_diagnose.md)
 - **COMMITS:**
   - [ad706f1](https://github.com/sase-org/sase/commit/ad706f12ee831cb2266b9cf23e19e2cfaf15bea5) — feat: widen Agents-tab side panel floor from 40 to 60
 

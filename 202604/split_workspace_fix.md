@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/split_workspace_fix.md](prompts/split_workspace_fix.md)
+- **PROMPT:** [prompts/202604/split_workspace_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/split_workspace_fix.md)
 
 # Plan: Fix `#split` xprompt workflow workspace setup
 

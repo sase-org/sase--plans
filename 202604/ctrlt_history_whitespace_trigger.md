@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ctrlt_history_whitespace_trigger.md](prompts/ctrlt_history_whitespace_trigger.md)
+- **PROMPT:** [prompts/202604/ctrlt_history_whitespace_trigger.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ctrlt_history_whitespace_trigger.md)
 - **COMMITS:**
   - [1536253](https://github.com/sase-org/sase/commit/15362537af1fa029d0c2f5cc66a0d0c874962bbb) — feat: Trigger Ctrl+T file-history whenever cursor is in whitespace
 

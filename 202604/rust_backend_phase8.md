@@ -5,7 +5,7 @@ bead_id: sase-1f
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase8.md](prompts/rust_backend_phase8.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase8.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase8.md)
 - **BEAD:** [sase-1f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1f/README.md)
 
 # Rust Backend Migration Phase 8: Remove Backend Selection And Python Fallbacks

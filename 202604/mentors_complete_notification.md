@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/mentors_complete_notification.md](prompts/mentors_complete_notification.md)
+- **PROMPT:** [prompts/202604/mentors_complete_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/mentors_complete_notification.md)
 - **COMMITS:**
   - [0685bcb](https://github.com/sase-org/sase/commit/0685bcbc0344478fee228ade651ef0c2bb7e3ca6) — feat: notify when all mentors finish for a ChangeSpec entry
 

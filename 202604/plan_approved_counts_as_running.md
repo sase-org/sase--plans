@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/plan_approved_counts_as_running.md](prompts/plan_approved_counts_as_running.md)
+- **PROMPT:** [prompts/202604/plan_approved_counts_as_running.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/plan_approved_counts_as_running.md)
 - **COMMITS:**
   - [5da7ccf](https://github.com/sase-org/sase/commit/5da7ccf36b8dcd7f5de59305959f61cd03725025) — fix(ace): count \`PLAN APPROVED\` agents as running in banner summary
 

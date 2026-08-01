@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/axe_cwd_deleted_fix.md](prompts/axe_cwd_deleted_fix.md)
+- **PROMPT:** [prompts/202604/axe_cwd_deleted_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/axe_cwd_deleted_fix.md)
 - **COMMITS:**
   - [ea7c655](https://github.com/sase-org/sase/commit/ea7c6558b6cc434e136ab7f4efe4fd08c1a6f733) — fix: Harden \`sase axe\` against a deleted daemon CWD
 

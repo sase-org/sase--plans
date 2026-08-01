@@ -5,7 +5,7 @@ bead_id: sase-v
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_query_filters.md](prompts/agents_tab_query_filters.md)
+- **PROMPT:** [prompts/202604/agents_tab_query_filters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_query_filters.md)
 - **BEAD:** [sase-v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-v/README.md)
 
 # Agents Tab — Structured Query Filters

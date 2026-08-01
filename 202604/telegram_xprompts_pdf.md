@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/telegram_xprompts_pdf.md](prompts/telegram_xprompts_pdf.md)
+- **PROMPT:** [prompts/202604/telegram_xprompts_pdf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/telegram_xprompts_pdf.md)
 - **COMMITS:**
   - [32e746a](https://github.com/sase-org/sase/commit/32e746abc374851a27d4623efdfbc743b64a5e85) — feat: Add \`sase xprompt catalog\` command that renders every visible xprompt to a PDF
 

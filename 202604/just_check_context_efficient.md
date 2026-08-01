@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/just_check_context_efficient.md](prompts/just_check_context_efficient.md)
+- **PROMPT:** [prompts/202604/just_check_context_efficient.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/just_check_context_efficient.md)
 - **COMMITS:**
   - [6a00e05](https://github.com/sase-org/sase/commit/6a00e050f859a2cdec4269fb581e39596db180c5) — chore: context-efficient \`just check\` output for agents
 

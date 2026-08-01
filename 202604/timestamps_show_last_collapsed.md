@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/timestamps_show_last_collapsed.md](prompts/timestamps_show_last_collapsed.md)
+- **PROMPT:** [prompts/202604/timestamps_show_last_collapsed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/timestamps_show_last_collapsed.md)
 - **COMMITS:**
   - [ef88cf8](https://github.com/sase-org/sase/commit/ef88cf8c37e47a7d43a01c8d027551fbdeaa34e2) — feat: Show last TIMESTAMPS entry when collapsed
 

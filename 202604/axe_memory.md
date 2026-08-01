@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/axe_memory.md](prompts/axe_memory.md)
+- **PROMPT:** [prompts/202604/axe_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/axe_memory.md)
 - **COMMITS:**
   - [04f32f7](https://github.com/sase-org/sase/commit/04f32f708f673c7d1bd14bef31302a331f70cc73) — chore: Rewrite axe agent runner long-term memory for depth and coverage
 

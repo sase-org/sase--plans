@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/full_qa_in_prompt.md](prompts/full_qa_in_prompt.md)
+- **PROMPT:** [prompts/202604/full_qa_in_prompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/full_qa_in_prompt.md)
 - **COMMITS:**
   - [a71acf2](https://github.com/sase-org/sase/commit/a71acf2281463e4132925f8ca3d594a49cf363da) — fix: render full Q&A ballot in follow-up agent prompt
 

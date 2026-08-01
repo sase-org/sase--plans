@@ -5,7 +5,7 @@ bead_id: sase-y
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/changespec_skill_1.md](prompts/changespec_skill_1.md)
+- **PROMPT:** [prompts/202604/changespec_skill_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/changespec_skill_1.md)
 - **BEAD:** [sase-y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-y/README.md)
 
 # Plan: ChangeSpec Agent Skill

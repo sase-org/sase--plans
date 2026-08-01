@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/kitty_tmux_preview_probe_fix.md](prompts/kitty_tmux_preview_probe_fix.md)
+- **PROMPT:** [prompts/202604/kitty_tmux_preview_probe_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/kitty_tmux_preview_probe_fix.md)
 - **COMMITS:**
   - [79502ca](https://github.com/sase-org/sase/commit/79502ca883d69ecbdafb3fb299a7617c95a54195) — fix: probe Kitty graphics through tmux
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/github_actions_core_backend_env_isolation.md](prompts/github_actions_core_backend_env_isolation.md)
+- **PROMPT:** [prompts/202604/github_actions_core_backend_env_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/github_actions_core_backend_env_isolation.md)
 - **COMMITS:**
   - [28830cd](https://github.com/sase-org/sase/commit/28830cd5b208f2211d7340fd18186239c3cc2409) — fix: isolate core backend env in tests
 

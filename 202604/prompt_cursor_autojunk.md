@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/prompt_cursor_autojunk.md](prompts/prompt_cursor_autojunk.md)
+- **PROMPT:** [prompts/202604/prompt_cursor_autojunk.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/prompt_cursor_autojunk.md)
 - **COMMITS:**
   - [d65a5ab](https://github.com/sase-org/sase/commit/d65a5ab1fd2deeaf81cc00cdbcb7aa7c0b49b274) — fix: prevent cursor misplacement after prettier auto-wrap on long prompts
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_content_search.md](prompts/agents_tab_content_search.md)
+- **PROMPT:** [prompts/202604/agents_tab_content_search.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_content_search.md)
 - **COMMITS:**
   - [bf2d683](https://github.com/sase-org/sase/commit/bf2d683cfd4a779ef9c77154b011c523fc52cf2d) — feat: Search agent prompt and reply content in \`/\` filter
 

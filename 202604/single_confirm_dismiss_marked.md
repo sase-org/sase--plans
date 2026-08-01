@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/single_confirm_dismiss_marked.md](prompts/single_confirm_dismiss_marked.md)
+- **PROMPT:** [prompts/202604/single_confirm_dismiss_marked.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/single_confirm_dismiss_marked.md)
 - **COMMITS:**
   - [7433366](https://github.com/sase-org/sase/commit/7433366155ed2b9860763be14f0b337e9bb918d4) — feat: Use single-confirm dismiss modal when no marked agents are running
 

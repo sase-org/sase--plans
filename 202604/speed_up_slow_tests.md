@@ -5,7 +5,7 @@ bead_id: sase-m
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/speed_up_slow_tests.md](prompts/speed_up_slow_tests.md)
+- **PROMPT:** [prompts/202604/speed_up_slow_tests.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/speed_up_slow_tests.md)
 - **BEAD:** [sase-m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m/README.md)
 
 # Plan: Speed Up the 20 Slowest Tests

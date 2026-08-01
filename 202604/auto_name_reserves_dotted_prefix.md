@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/auto_name_reserves_dotted_prefix.md](prompts/auto_name_reserves_dotted_prefix.md)
+- **PROMPT:** [prompts/202604/auto_name_reserves_dotted_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/auto_name_reserves_dotted_prefix.md)
 - **COMMITS:**
   - [b672bee](https://github.com/sase-org/sase/commit/b672beed6a8fc2dedc12536b5430cc8fbe6156be) — fix(names): reserve auto-name prefix for any \`\<base\>.\*\` agent
 

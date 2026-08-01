@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/revert_sase_u_epic.md](prompts/revert_sase_u_epic.md)
+- **PROMPT:** [prompts/202604/revert_sase_u_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/revert_sase_u_epic.md)
 
 # Plan: Revert the `sase-u` epic ("Instant j/k Navigation in the TUI")
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/deltas_collapsed_header.md](prompts/deltas_collapsed_header.md)
+- **PROMPT:** [prompts/202604/deltas_collapsed_header.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/deltas_collapsed_header.md)
 - **COMMITS:**
   - [6a6e7ad](https://github.com/sase-org/sase/commit/6a6e7ad4c1a9ebd438c94388c6730a896ae56f49) — fix: Preserve collapsed DELTAS header
 

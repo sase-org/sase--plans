@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/wait_duration.md](prompts/wait_duration.md)
+- **PROMPT:** [prompts/202604/wait_duration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/wait_duration.md)
 - **COMMITS:**
   - [f8918b3](https://github.com/sase-org/sase/commit/f8918b36a2992382edef958837a4fb392ca3e728) — feat(xprompt): support duration arguments in %wait directive
 

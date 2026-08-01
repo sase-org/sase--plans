@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_startup_perf.md](prompts/ace_startup_perf.md)
+- **PROMPT:** [prompts/202604/ace_startup_perf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_startup_perf.md)
 - **COMMITS:**
   - [001ddc1](https://github.com/sase-org/sase/commit/001ddc1f8ade44897d62ec67fa4f1ca7c8f434ea) — perf(ace): cut ~230ms off \`sase ace\` TUI startup
 

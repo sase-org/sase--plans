@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_home_mode_workflow_project_resolution.md](prompts/fix_home_mode_workflow_project_resolution.md)
+- **PROMPT:** [prompts/202604/fix_home_mode_workflow_project_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_home_mode_workflow_project_resolution.md)
 - **COMMITS:**
   - [e34e9bc](https://github.com/sase-org/sase/commit/e34e9bc42b5f6632e8eab811209a69e40bb9cac0) — fix: resolve home-mode workflow project scope for xprompt execution
 

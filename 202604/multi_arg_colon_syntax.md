@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/multi_arg_colon_syntax.md](prompts/multi_arg_colon_syntax.md)
+- **PROMPT:** [prompts/202604/multi_arg_colon_syntax.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/multi_arg_colon_syntax.md)
 - **COMMITS:**
   - [250ee03](https://github.com/sase-org/sase/commit/250ee03656945f7016292d1c4e3c08d98280a722) — feat: support multi-arg colon syntax for xprompts (\#foo:a,b,c)
 

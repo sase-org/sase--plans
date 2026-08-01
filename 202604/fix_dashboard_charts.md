@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_dashboard_charts.md](prompts/fix_dashboard_charts.md)
+- **PROMPT:** [prompts/202604/fix_dashboard_charts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_dashboard_charts.md)
 - **COMMITS:**
   - [591ab49](https://github.com/sase-org/sase/commit/591ab492f81501d7b9d9d745f1a4465801c8dd58) — fix(telemetry): Fix broken dashboard charts
 

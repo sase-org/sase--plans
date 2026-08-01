@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/tui_simple_xprompt_colon_args.md](prompts/tui_simple_xprompt_colon_args.md)
+- **PROMPT:** [prompts/202604/tui_simple_xprompt_colon_args.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tui_simple_xprompt_colon_args.md)
 - **COMMITS:**
   - [c86ecb7](https://github.com/sase-org/sase/commit/c86ecb79ddceae893ca954b2198570230cabea25) — fix: skip eager simple-xprompt render when TUI launch has a VCS ref
 

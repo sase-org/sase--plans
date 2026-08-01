@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/prompt_scroll_fix.md](prompts/prompt_scroll_fix.md)
+- **PROMPT:** [prompts/202604/prompt_scroll_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/prompt_scroll_fix.md)
 - **COMMITS:**
   - [e859ca2](https://github.com/sase-org/sase/commit/e859ca2ba711f7539863c15d43ef7d4161e260e9) — fix: prompt input scrolls with cursor on long prompts
 

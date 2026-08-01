@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/multi_agent_xprompts.md](prompts/multi_agent_xprompts.md)
+- **PROMPT:** [prompts/202604/multi_agent_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/multi_agent_xprompts.md)
 - **COMMITS:**
   - [11490c0](https://github.com/sase-org/sase/commit/11490c0e52c6f7dffc46e561129a9055fa3ae825) — feat: add multi-agent xprompt expansion
 

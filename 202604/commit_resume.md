@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/commit_resume.md](prompts/commit_resume.md)
+- **PROMPT:** [prompts/202604/commit_resume.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/commit_resume.md)
 
 # Plan: Resumable `sase commit` After Agent-Resolved Merge Conflicts
 

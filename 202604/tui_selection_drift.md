@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/tui_selection_drift.md](prompts/tui_selection_drift.md)
+- **PROMPT:** [prompts/202604/tui_selection_drift.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tui_selection_drift.md)
 - **COMMITS:**
   - [b3ecd07](https://github.com/sase-org/sase/commit/b3ecd07728cf6adefc07a743f30dde5fe5668dc3) — fix(ace/tui): unify selection-identity preservation across all tabs
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gemini_memory_files.md](prompts/gemini_memory_files.md)
+- **PROMPT:** [prompts/202604/gemini_memory_files.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gemini_memory_files.md)
 
 # Plan: Create Gemini Long-Term Memory Files
 

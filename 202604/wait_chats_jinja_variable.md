@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/wait_chats_jinja_variable.md](prompts/wait_chats_jinja_variable.md)
+- **PROMPT:** [prompts/202604/wait_chats_jinja_variable.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/wait_chats_jinja_variable.md)
 - **COMMITS:**
-  - [65b6eae](https://github.com/sase-org/sase/commit/65b6eae1f538ed748e97e27c8da572723ef7c4c7) — feat: Expose \`wait_chats\` Jinja variable for \`%wait\` directives
+  - [65b6eae](https://github.com/sase-org/sase/commit/65b6eae1f538ed748e97e27c8da572723ef7c4c7) — feat: Expose \`wait\_chats\` Jinja variable for \`%wait\` directives
 
 # Plan: Expose `wait_chats` Jinja variable for `%w` / `%wait` directives
 

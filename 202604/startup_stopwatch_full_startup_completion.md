@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/startup_stopwatch_full_startup_completion.md](prompts/startup_stopwatch_full_startup_completion.md)
+- **PROMPT:** [prompts/202604/startup_stopwatch_full_startup_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/startup_stopwatch_full_startup_completion.md)
 - **COMMITS:**
   - [9580575](https://github.com/sase-org/sase/commit/95805755cc7f76744715a3ee05dcb64c1f0762dd) — fix(ace): end startup stopwatch after both startup loads
 

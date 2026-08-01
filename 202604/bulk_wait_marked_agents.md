@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bulk_wait_marked_agents.md](prompts/bulk_wait_marked_agents.md)
+- **PROMPT:** [prompts/202604/bulk_wait_marked_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bulk_wait_marked_agents.md)
 - **COMMITS:**
   - [cb8d7a4](https://github.com/sase-org/sase/commit/cb8d7a45079c4e4a8d4a3a58c411ad7a423ca34d) — feat: bulk-wait support for \`W\` on the Agents tab
 

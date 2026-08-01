@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/g_keymap_restore.md](prompts/g_keymap_restore.md)
+- **PROMPT:** [prompts/202604/g_keymap_restore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/g_keymap_restore.md)
 - **COMMITS:**
   - [31c10fc](https://github.com/sase-org/sase/commit/31c10fc38f19cf1c9ffefe9170786230ac5833f5) — fix(ace): restore \`g\` to scroll-to-top; rebind grouping cycle to \`o\`
 

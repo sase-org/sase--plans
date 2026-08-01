@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_panel_sections.md](prompts/notification_panel_sections.md)
+- **PROMPT:** [prompts/202604/notification_panel_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_panel_sections.md)
 - **COMMITS:**
   - [e449f63](https://github.com/sase-org/sase/commit/e449f633f930646c5c27d8d5399e8806a2a38ef7) — feat: section the notification panel by priority/inbox/muted
 

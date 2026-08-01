@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_single_level_capital_hl.md](prompts/agents_tab_single_level_capital_hl.md)
+- **PROMPT:** [prompts/202604/agents_tab_single_level_capital_hl.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_single_level_capital_hl.md)
 - **COMMITS:**
   - [bca11cc](https://github.com/sase-org/sase/commit/bca11cc8d8e710e3fe0fbd1c71e52f785cc585fa) — feat(ace): make capital H/L on agents tab single-level
 

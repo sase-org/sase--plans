@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_parse_project_file_fallback.md](prompts/rust_backend_parse_project_file_fallback.md)
+- **PROMPT:** [prompts/202604/rust_backend_parse_project_file_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_parse_project_file_fallback.md)
 - **COMMITS:**
   - [baabc97](https://github.com/sase-org/sase/commit/baabc97f3fe9e1feaaf5b70f4760934dc8d678be) — fix: keep project file parsing usable with rust backend
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_loading_indicators.md](prompts/ace_loading_indicators.md)
+- **PROMPT:** [prompts/202604/ace_loading_indicators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_loading_indicators.md)
 - **COMMITS:**
   - [8e9dbc1](https://github.com/sase-org/sase/commit/8e9dbc10f29ebe4ed6c4f6318795d64a4a909035) — feat: Show loading indicators during \`sase ace\` TUI startup
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/task_panel_scroll_fix.md](prompts/task_panel_scroll_fix.md)
+- **PROMPT:** [prompts/202604/task_panel_scroll_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/task_panel_scroll_fix.md)
 - **COMMITS:**
   - [19c483b](https://github.com/sase-org/sase/commit/19c483befdbdcd1caa65d6dde8cfde5455ff9252) — fix: Prevent task panel scroll from jumping back to bottom
 

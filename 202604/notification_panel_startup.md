@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_panel_startup.md](prompts/notification_panel_startup.md)
+- **PROMPT:** [prompts/202604/notification_panel_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_panel_startup.md)
 - **COMMITS:**
   - [92a46e0](https://github.com/sase-org/sase/commit/92a46e094a41b39825e0c1336e6feb24b7a26d6f) — fix: flush terminal probe replies before TUI startup
 

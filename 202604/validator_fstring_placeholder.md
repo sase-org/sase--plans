@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/validator_fstring_placeholder.md](prompts/validator_fstring_placeholder.md)
+- **PROMPT:** [prompts/202604/validator_fstring_placeholder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/validator_fstring_placeholder.md)
 - **COMMITS:**
   - [6cb0a98](https://github.com/sase-org/sase/commit/6cb0a98de9245b794f4817bef39a48baf8d71da4) — fix(xprompt): accept f-string \`\{path\}\` placeholders in colon-arg validation
 

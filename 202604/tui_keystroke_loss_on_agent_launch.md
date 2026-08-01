@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/tui_keystroke_loss_on_agent_launch.md](prompts/tui_keystroke_loss_on_agent_launch.md)
+- **PROMPT:** [prompts/202604/tui_keystroke_loss_on_agent_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tui_keystroke_loss_on_agent_launch.md)
 - **COMMITS:**
   - [4485898](https://github.com/sase-org/sase/commit/448589828b7403a4ed4aed85efe2f4454bd9b8e0) — fix: Stop dropping keystrokes pressed right after agent launch
 

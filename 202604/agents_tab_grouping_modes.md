@@ -5,7 +5,7 @@ bead_id: sase-t
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_grouping_modes.md](prompts/agents_tab_grouping_modes.md)
+- **PROMPT:** [prompts/202604/agents_tab_grouping_modes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_grouping_modes.md)
 - **BEAD:** [sase-t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-t/README.md)
 
 # Agents Tab — Cyclable Grouping/Sorting Modes

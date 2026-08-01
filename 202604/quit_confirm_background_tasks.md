@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/quit_confirm_background_tasks.md](prompts/quit_confirm_background_tasks.md)
+- **PROMPT:** [prompts/202604/quit_confirm_background_tasks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/quit_confirm_background_tasks.md)
 - **COMMITS:**
   - [16dbe5b](https://github.com/sase-org/sase/commit/16dbe5b1ee2ad2de4f4682551b2b6915e2252999) — feat: Prompt for confirmation when quitting with background tasks running
 

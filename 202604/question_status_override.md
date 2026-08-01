@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/question_status_override.md](prompts/question_status_override.md)
+- **PROMPT:** [prompts/202604/question_status_override.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/question_status_override.md)
 - **COMMITS:**
   - [f34f46f](https://github.com/sase-org/sase/commit/f34f46faa8822d89ab3346c6e86813dd0d92cebd) — fix: show QUESTION status for agents with unanswered questions
 

@@ -4,7 +4,7 @@ status: proposed
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_launch_kill_responsiveness.md](prompts/agents_tab_launch_kill_responsiveness.md)
+- **PROMPT:** [prompts/202604/agents_tab_launch_kill_responsiveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_launch_kill_responsiveness.md)
 - **COMMITS:**
   - [f710dd2](https://github.com/sase-org/sase/commit/f710dd20f7af003b0ba095f925aac701a20b6d08) — fix(ace-agents): make launch/kill refresh paths responsive
 

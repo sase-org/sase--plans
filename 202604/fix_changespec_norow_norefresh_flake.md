@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_changespec_norow_norefresh_flake.md](prompts/fix_changespec_norow_norefresh_flake.md)
+- **PROMPT:** [prompts/202604/fix_changespec_norow_norefresh_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_changespec_norow_norefresh_flake.md)
 - **COMMITS:**
   - [a34fd6e](https://github.com/sase-org/sase/commit/a34fd6e482cb857a96bd8f2451eb324a13263f0f) — fix(ace): guard \`\#list-panel\` queries on changespec refresh paths
 

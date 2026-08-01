@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_ci_just_bootstrap.md](prompts/fix_ci_just_bootstrap.md)
+- **PROMPT:** [prompts/202604/fix_ci_just_bootstrap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_ci_just_bootstrap.md)
 - **COMMITS:**
   - [9c73cc1](https://github.com/sase-org/sase/commit/9c73cc1fa134f09d03ce3b467e7a3b5c9bb0ce8b) — chore: install just directly in CI
 

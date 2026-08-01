@@ -8,7 +8,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gchat_launch_and_emoji.md](prompts/gchat_launch_and_emoji.md)
+- **PROMPT:** [prompts/202604/gchat_launch_and_emoji.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gchat_launch_and_emoji.md)
 - **COMMITS:**
   - [6f83b56](https://github.com/sase-org/sase/commit/6f83b560f0e4d225c4a9500ac3b1ecbca363b544) — feat: notify on agent launch
 

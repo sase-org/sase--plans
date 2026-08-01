@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/markdown_pdf_attachments.md](prompts/markdown_pdf_attachments.md)
+- **PROMPT:** [prompts/202604/markdown_pdf_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/markdown_pdf_attachments.md)
 - **BEAD:** [sase-1j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1j/README.md)
 
 # Plan: Markdown PDF Attachments for Agent Outputs

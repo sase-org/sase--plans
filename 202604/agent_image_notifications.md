@@ -5,7 +5,7 @@ bead_id: sase-1i
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/agent_image_notifications.md](prompts/agent_image_notifications.md)
+- **PROMPT:** [prompts/202604/agent_image_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_image_notifications.md)
 - **BEAD:** [sase-1i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1i/README.md)
 
 # Plan: Agent Image Attachments and Kitty TUI Previews

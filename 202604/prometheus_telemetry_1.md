@@ -5,7 +5,7 @@ bead_id: sase-d
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/prometheus_telemetry_1.md](prompts/prometheus_telemetry_1.md)
+- **PROMPT:** [prompts/202604/prometheus_telemetry_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/prometheus_telemetry_1.md)
 - **BEAD:** [sase-d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-d/README.md)
 
 # Prometheus Telemetry Integration

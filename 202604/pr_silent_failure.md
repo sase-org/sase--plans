@@ -4,7 +4,7 @@ create_time: 2026-04-10 13:58:43
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pr_silent_failure.md](prompts/pr_silent_failure.md)
+- **PROMPT:** [prompts/202604/pr_silent_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pr_silent_failure.md)
 
 # Fix: PR Creation Silently Skipped When Push Fails
 

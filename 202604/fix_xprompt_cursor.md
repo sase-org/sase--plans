@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_xprompt_cursor.md](prompts/fix_xprompt_cursor.md)
+- **PROMPT:** [prompts/202604/fix_xprompt_cursor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_xprompt_cursor.md)
 - **COMMITS:**
-  - [683964c](https://github.com/sase-org/sase/commit/683964ce9d62464432fc4140368b2cd8ef9dd587) — chore: Mark fix_xprompt_cursor plan as done
+  - [683964c](https://github.com/sase-org/sase/commit/683964ce9d62464432fc4140368b2cd8ef9dd587) — chore: Mark fix\_xprompt\_cursor plan as done
 
 # Fix off-by-one cursor placement in sase-nvim xprompt completion
 

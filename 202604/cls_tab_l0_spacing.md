@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/cls_tab_l0_spacing.md](prompts/cls_tab_l0_spacing.md)
+- **PROMPT:** [prompts/202604/cls_tab_l0_spacing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/cls_tab_l0_spacing.md)
 - **COMMITS:**
   - [09bfe54](https://github.com/sase-org/sase/commit/09bfe549ac5c6f77e266443090bf7a4a81a270b7) — feat(ace): add vertical spacer between L0 banners on the CLs tab
 

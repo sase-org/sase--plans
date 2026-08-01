@@ -5,7 +5,7 @@ bead_id: sase-14
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase0.md](prompts/rust_backend_phase0.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase0.md)
 - **BEAD:** [sase-14](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14/README.md)
 
 # Rust Backend Migration Phase 0 Plan

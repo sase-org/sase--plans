@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/skip_short_prompts_in_history.md](prompts/skip_short_prompts_in_history.md)
+- **PROMPT:** [prompts/202604/skip_short_prompts_in_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/skip_short_prompts_in_history.md)
 - **COMMITS:**
   - [ce4e193](https://github.com/sase-org/sase/commit/ce4e19399ed3343fbd1ecf66f5cf94e3d12534ec) — feat: Skip prompts shorter than 2 words in prompt history
 

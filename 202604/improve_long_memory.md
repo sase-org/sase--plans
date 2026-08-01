@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/improve_long_memory.md](prompts/improve_long_memory.md)
+- **PROMPT:** [prompts/202604/improve_long_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/improve_long_memory.md)
 - **COMMITS:**
   - [e59dfa1](https://github.com/sase-org/sase/commit/e59dfa18f6672ac0b3614d7970978274a1243a6e) — chore: Trim long-term memory files to remove code-derivable content
 

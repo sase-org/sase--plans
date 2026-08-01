@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/tm_kitty_terminal_fix.md](prompts/tm_kitty_terminal_fix.md)
+- **PROMPT:** [prompts/202604/tm_kitty_terminal_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/tm_kitty_terminal_fix.md)
 - **COMMITS:**
   - [6ea1a25](https://github.com/sase-org/sase/commit/6ea1a25a1fead699bb4444a4f0c8235e6c036493) — chore: mark Kitty tm plan done
 

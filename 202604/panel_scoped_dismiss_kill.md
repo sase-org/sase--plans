@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/panel_scoped_dismiss_kill.md](prompts/panel_scoped_dismiss_kill.md)
+- **PROMPT:** [prompts/202604/panel_scoped_dismiss_kill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/panel_scoped_dismiss_kill.md)
 - **COMMITS:**
   - [922038a](https://github.com/sase-org/sase/commit/922038abc05b60de0f2f143322cf9d6ef5407c9f) — feat(ace): scope \`X\` and \`,X\` bulk actions to the focused agent panel
 

@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_by_date_hour_subgroup.md](prompts/ace_by_date_hour_subgroup.md)
+- **PROMPT:** [prompts/202604/ace_by_date_hour_subgroup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_by_date_hour_subgroup.md)
 - **COMMITS:**
-  - [34c23ba](https://github.com/sase-org/sase/commit/34c23ba6f3bdd4968d201c38d7ad4b11fcdd8c7a) — feat(ace): hour-of-day sub-grouping under BY_DATE in Agents tab
+  - [34c23ba](https://github.com/sase-org/sase/commit/34c23ba6f3bdd4968d201c38d7ad4b11fcdd8c7a) — feat(ace): hour-of-day sub-grouping under BY\_DATE in Agents tab
 
 # Plan: Hour-of-day sub-grouping under BY_DATE in the `sase ace` Agents tab
 

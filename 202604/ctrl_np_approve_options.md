@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ctrl_np_approve_options.md](prompts/ctrl_np_approve_options.md)
+- **PROMPT:** [prompts/202604/ctrl_np_approve_options.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ctrl_np_approve_options.md)
 - **COMMITS:**
   - [bc466e0](https://github.com/sase-org/sase/commit/bc466e05e7cd5fb6aa73066cfc5b49edaf34d434) — feat: Add ctrl+n/ctrl+p navigation to ApproveOptionsModal
 

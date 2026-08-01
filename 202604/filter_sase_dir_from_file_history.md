@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/filter_sase_dir_from_file_history.md](prompts/filter_sase_dir_from_file_history.md)
+- **PROMPT:** [prompts/202604/filter_sase_dir_from_file_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/filter_sase_dir_from_file_history.md)
 - **COMMITS:**
   - [6a3e887](https://github.com/sase-org/sase/commit/6a3e887073fe6629aadbe1e5ff70c789a6ac27a5) — feat: Filter project-local \`.sase/\` paths out of Ctrl+T file history
 

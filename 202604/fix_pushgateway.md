@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_pushgateway.md](prompts/fix_pushgateway.md)
+- **PROMPT:** [prompts/202604/fix_pushgateway.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_pushgateway.md)
 
 # Plan: Diagnose and Fix Prometheus Push Gateway
 

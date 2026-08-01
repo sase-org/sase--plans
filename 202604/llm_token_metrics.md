@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/llm_token_metrics.md](prompts/llm_token_metrics.md)
+- **PROMPT:** [prompts/202604/llm_token_metrics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/llm_token_metrics.md)
 - **COMMITS:**
   - [70d0452](https://github.com/sase-org/sase/commit/70d045257d7140d53e9c324d463c62f8b4c90de2) — feat: Add LLM token usage tracking for Claude Code agent runs
 

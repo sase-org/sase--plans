@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_attempt_history.md](prompts/agent_attempt_history.md)
+- **PROMPT:** [prompts/202604/agent_attempt_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_attempt_history.md)
 
 # Plan: Preserve and Display Prior Agent Attempts Across Retries
 

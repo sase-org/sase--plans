@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/shell_sub_dynamic_memory.md](prompts/shell_sub_dynamic_memory.md)
+- **PROMPT:** [prompts/202604/shell_sub_dynamic_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/shell_sub_dynamic_memory.md)
 - **COMMITS:**
   - [02cb769](https://github.com/sase-org/sase/commit/02cb769181a791e93280f187d70f1f78003c76c6) — feat: switch dynamic memory from @ file references to $(cat) shell substitution
 

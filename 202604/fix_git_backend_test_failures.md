@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_git_backend_test_failures.md](prompts/fix_git_backend_test_failures.md)
+- **PROMPT:** [prompts/202604/fix_git_backend_test_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_git_backend_test_failures.md)
 - **COMMITS:**
   - [95494cf](https://github.com/sase-org/sase/commit/95494cf8197f1db60803a9228215c38fb81a51dd) — fix: pin git integration tests to Python backend
 

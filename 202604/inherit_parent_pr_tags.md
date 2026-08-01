@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/inherit_parent_pr_tags.md](prompts/inherit_parent_pr_tags.md)
+- **PROMPT:** [prompts/202604/inherit_parent_pr_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/inherit_parent_pr_tags.md)
 - **COMMITS:**
   - [1db1d47](https://github.com/sase-org/sase/commit/1db1d47fde2dba2dd2a5e350e8676b9c222b3a28) — feat: Inherit PR tags from parent PR when creating child PRs
 

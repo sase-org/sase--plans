@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/bug_id_cli_option.md](prompts/bug_id_cli_option.md)
+- **PROMPT:** [prompts/202604/bug_id_cli_option.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/bug_id_cli_option.md)
 - **COMMITS:**
   - [514e0a8](https://github.com/sase-org/sase/commit/514e0a808327839ed5944529ed38604630451764) — feat: Add -B\|--bug-id CLI option to sase commit
 

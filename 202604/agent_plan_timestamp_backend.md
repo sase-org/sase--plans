@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_plan_timestamp_backend.md](prompts/agent_plan_timestamp_backend.md)
+- **PROMPT:** [prompts/202604/agent_plan_timestamp_backend.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_plan_timestamp_backend.md)
 
 # Plan: Restore PLAN Timestamp Display in `sase ace`
 

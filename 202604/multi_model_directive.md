@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/multi_model_directive.md](prompts/multi_model_directive.md)
+- **PROMPT:** [prompts/202604/multi_model_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/multi_model_directive.md)
 - **COMMITS:**
   - [d9b2115](https://github.com/sase-org/sase/commit/d9b2115e0f9dc9d56d09e68f506a2882bb8efb31) — feat: Allow multiple \`%model\` directives in a single prompt
 

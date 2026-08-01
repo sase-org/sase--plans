@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_run_log_keymap.md](prompts/agent_run_log_keymap.md)
+- **PROMPT:** [prompts/202604/agent_run_log_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_run_log_keymap.md)
 - **COMMITS:**
   - [b9c47de](https://github.com/sase-org/sase/commit/b9c47de1b91796ea175fde7a2b15346043e9746a) — feat(ace): restore Agent Run Log modal under \`A\` keymap
 

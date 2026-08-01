@@ -4,7 +4,7 @@ create_time: 2026-04-29 11:42:50
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rust_install_uv_tool_venv.md](prompts/rust_install_uv_tool_venv.md)
+- **PROMPT:** [prompts/202604/rust_install_uv_tool_venv.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_install_uv_tool_venv.md)
 - **COMMITS:**
   - [a40c5e1](https://github.com/sase-org/sase/commit/a40c5e1e08479c860d7763ee01882b0201381a2b) — feat: support installing rust backend into uv-tool venv
 

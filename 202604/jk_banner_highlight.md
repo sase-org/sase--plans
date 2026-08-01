@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/jk_banner_highlight.md](prompts/jk_banner_highlight.md)
+- **PROMPT:** [prompts/202604/jk_banner_highlight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/jk_banner_highlight.md)
 
 # `sase ace` Agents tab: `j`/`k` doesn't visually move the highlight off an L2 banner at fold < 3
 

@@ -5,7 +5,7 @@ bead_id: sase-q
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_nested_groups.md](prompts/agents_tab_nested_groups.md)
+- **PROMPT:** [prompts/202604/agents_tab_nested_groups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_nested_groups.md)
 - **BEAD:** [sase-q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-q/README.md)
 
 # Plan: Nested Agent Groups on the Agents Tab

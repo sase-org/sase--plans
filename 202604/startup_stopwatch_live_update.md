@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/startup_stopwatch_live_update.md](prompts/startup_stopwatch_live_update.md)
+- **PROMPT:** [prompts/202604/startup_stopwatch_live_update.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/startup_stopwatch_live_update.md)
 - **COMMITS:**
   - [369ed0c](https://github.com/sase-org/sase/commit/369ed0c026e18bff2b8e6018e30703f6641ac8d8) — fix: keep \`sase ace\` startup stopwatch ticking during mount
 

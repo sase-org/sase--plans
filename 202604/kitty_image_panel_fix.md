@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/kitty_image_panel_fix.md](prompts/kitty_image_panel_fix.md)
+- **PROMPT:** [prompts/202604/kitty_image_panel_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/kitty_image_panel_fix.md)
 - **COMMITS:**
   - [b346275](https://github.com/sase-org/sase/commit/b346275791a81599e73729340518e049fdb6ed57) — fix: size Kitty image previews to panel viewport
 

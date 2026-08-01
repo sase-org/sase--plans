@@ -5,7 +5,7 @@ bead_id: sase-1b
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/rust_backend_phase6_default_rust.md](prompts/rust_backend_phase6_default_rust.md)
+- **PROMPT:** [prompts/202604/rust_backend_phase6_default_rust.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rust_backend_phase6_default_rust.md)
 - **BEAD:** [sase-1b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b/README.md)
 
 # Rust Backend Phase 6: Default Rust Backend Rollout

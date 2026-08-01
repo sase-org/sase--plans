@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/refresh_docs_lumberjack.md](prompts/refresh_docs_lumberjack.md)
+- **PROMPT:** [prompts/202604/refresh_docs_lumberjack.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/refresh_docs_lumberjack.md)
 - **COMMITS:**
   - [5cba5d4](https://github.com/sase-org/sase/commit/5cba5d431d93cd07bdc5e3879335057f8631d85a) — feat: parameterize refresh docs workflow
 

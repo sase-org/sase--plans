@@ -4,7 +4,7 @@ status: new
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/repeat_agent_visual_indicator.md](prompts/repeat_agent_visual_indicator.md)
+- **PROMPT:** [prompts/202604/repeat_agent_visual_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/repeat_agent_visual_indicator.md)
 
 # Plan: Visual Indicator for Repeat Agents in the Agents Tab
 

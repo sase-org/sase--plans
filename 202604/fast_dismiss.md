@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fast_dismiss.md](prompts/fast_dismiss.md)
+- **PROMPT:** [prompts/202604/fast_dismiss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fast_dismiss.md)
 
 # Plan: Make `sase ace` Agent Dismissal WAY Faster
 

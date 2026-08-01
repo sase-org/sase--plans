@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/commit_parent_flag.md](prompts/commit_parent_flag.md)
+- **PROMPT:** [prompts/202604/commit_parent_flag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/commit_parent_flag.md)
 - **COMMITS:**
   - [8513274](https://github.com/sase-org/sase/commit/8513274457215d07344a5d1fa831dc0f02b63bff) — feat(commit): add -p/--parent flag to override parent ChangeSpec auto-detection
 

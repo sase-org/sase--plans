@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/json_null_default_validation.md](prompts/json_null_default_validation.md)
+- **PROMPT:** [prompts/202604/json_null_default_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/json_null_default_validation.md)
 - **COMMITS:**
   - [551b298](https://github.com/sase-org/sase/commit/551b2982145a270cb10d76d8285709032d7b2efa) — fix: accept null for JSON schema fields with defaults
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_chat_filename_prefix.md](prompts/fix_chat_filename_prefix.md)
+- **PROMPT:** [prompts/202604/fix_chat_filename_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_chat_filename_prefix.md)
 - **COMMITS:**
   - [82a2e79](https://github.com/sase-org/sase/commit/82a2e79ec7418ad6db2970a4adb28cb92b6431b4) — fix(chat): use CL name instead of branch name for chat filename prefix
 

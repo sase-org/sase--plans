@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/unlimited_agent_revival.md](prompts/unlimited_agent_revival.md)
+- **PROMPT:** [prompts/202604/unlimited_agent_revival.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/unlimited_agent_revival.md)
 - **COMMITS:**
   - [ac17e11](https://github.com/sase-org/sase/commit/ac17e11fa472e8057be5f3c9ca93ea1bb52704af) — feat: Remove 500-agent limit and split bundles into per-agent files
 

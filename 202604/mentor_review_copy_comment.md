@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/mentor_review_copy_comment.md](prompts/mentor_review_copy_comment.md)
+- **PROMPT:** [prompts/202604/mentor_review_copy_comment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/mentor_review_copy_comment.md)
 - **COMMITS:**
   - [33437e4](https://github.com/sase-org/sase/commit/33437e4fde038c771be65cbdd30f7e3b552e644a) — feat: add \`y\` keymap to copy mentor comment in review modal
 

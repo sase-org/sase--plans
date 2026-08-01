@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_group_separators.md](prompts/agents_tab_group_separators.md)
+- **PROMPT:** [prompts/202604/agents_tab_group_separators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_group_separators.md)
 - **COMMITS:**
   - [e88ea91](https://github.com/sase-org/sase/commit/e88ea91216f71bfc97c195c7daea478267e8b2b7) — feat: redesign Agents tab group separators
 

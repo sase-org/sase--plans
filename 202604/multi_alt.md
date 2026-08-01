@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/multi_alt.md](prompts/multi_alt.md)
+- **PROMPT:** [prompts/202604/multi_alt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/multi_alt.md)
 - **COMMITS:**
   - [70e5453](https://github.com/sase-org/sase/commit/70e5453f4b745911f824570df2e4bb4bfec708a3) — feat: Support multiple %alt / %(...) directives via Cartesian product
 

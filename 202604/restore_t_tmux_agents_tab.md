@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/restore_t_tmux_agents_tab.md](prompts/restore_t_tmux_agents_tab.md)
+- **PROMPT:** [prompts/202604/restore_t_tmux_agents_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/restore_t_tmux_agents_tab.md)
 - **COMMITS:**
   - [65fa3a6](https://github.com/sase-org/sase/commit/65fa3a653b785ba87be4b19db62e79db61b793af) — feat: restore \`t\` tmux keymap on Agents tab; move tag/untag to \`N\`
 

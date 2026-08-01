@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/g_auto_expand_file.md](prompts/g_auto_expand_file.md)
+- **PROMPT:** [prompts/202604/g_auto_expand_file.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/g_auto_expand_file.md)
 - **COMMITS:**
   - [e8d3036](https://github.com/sase-org/sase/commit/e8d3036a18b8b2ace07579161374193692cdf46a) — feat: auto-expand trimmed file panel before \`G\` on Agents tab
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/lumberjack_chop_reliability.md](prompts/lumberjack_chop_reliability.md)
+- **PROMPT:** [prompts/202604/lumberjack_chop_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/lumberjack_chop_reliability.md)
 - **COMMITS:**
   - [0f6891f](https://github.com/sase-org/sase/commit/0f6891f2f7ea8334e7a12554c22cff0411e917e8) — feat: Add per-chop timeout and tick overrun warning to lumberjack
 

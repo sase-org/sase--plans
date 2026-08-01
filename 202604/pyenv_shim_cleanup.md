@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pyenv_shim_cleanup.md](prompts/pyenv_shim_cleanup.md)
+- **PROMPT:** [prompts/202604/pyenv_shim_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pyenv_shim_cleanup.md)
 
 # Plan: Remove Stale pyenv sase Shim
 

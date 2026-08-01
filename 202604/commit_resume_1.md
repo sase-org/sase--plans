@@ -5,7 +5,7 @@ bead_id: sase-j
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/commit_resume_1.md](prompts/commit_resume_1.md)
+- **PROMPT:** [prompts/202604/commit_resume_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/commit_resume_1.md)
 - **BEAD:** [sase-j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j/README.md)
 
 # Plan: Resumable `sase commit` After Agent-Resolved Merge Conflicts (Phased)

@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/query_batch_persistent_corpus.md](prompts/query_batch_persistent_corpus.md)
+- **PROMPT:** [prompts/202604/query_batch_persistent_corpus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/query_batch_persistent_corpus.md)
 - **BEAD:** [sase-1o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o/README.md)
 
 # Query Batch Persistent Corpus Migration Plan

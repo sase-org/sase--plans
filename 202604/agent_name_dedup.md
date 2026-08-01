@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_name_dedup.md](prompts/agent_name_dedup.md)
+- **PROMPT:** [prompts/202604/agent_name_dedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_name_dedup.md)
 
 # Agent Name De-duplication Plan
 

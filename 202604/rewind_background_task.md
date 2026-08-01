@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rewind_background_task.md](prompts/rewind_background_task.md)
+- **PROMPT:** [prompts/202604/rewind_background_task.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rewind_background_task.md)
 - **COMMITS:**
   - [aa97df4](https://github.com/sase-org/sase/commit/aa97df434e344966ea367600c59ac7083d404d04) — ref: Run rewind TUI action as non-blocking background task
 

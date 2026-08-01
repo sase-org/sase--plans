@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_axe_nav_freeze.md](prompts/ace_axe_nav_freeze.md)
+- **PROMPT:** [prompts/202604/ace_axe_nav_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_axe_nav_freeze.md)
 - **COMMITS:**
   - [b859d15](https://github.com/sase-org/sase/commit/b859d156a4e96b21ee1e611afbc602cfc1427976) — fix: Resolve ace TUI freeze on AXE tab wrap-navigation
 

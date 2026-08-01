@@ -5,7 +5,7 @@ bead_id: sase-1k
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/changes_commands.md](prompts/changes_commands.md)
+- **PROMPT:** [prompts/202604/changes_commands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/changes_commands.md)
 - **BEAD:** [sase-1k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1k/README.md)
 
 # ChangeSpec Copy Commands Plan

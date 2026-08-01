@@ -8,9 +8,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gchat_agent_launch_message.md](prompts/gchat_agent_launch_message.md)
+- **PROMPT:** [prompts/202604/gchat_agent_launch_message.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gchat_agent_launch_message.md)
 - **COMMITS:**
-  - [f158d00](https://github.com/sase-org/sase/commit/f158d0035f2560ccb824916593fec682cc40f473) — chore: mark gchat_agent_launch_message plan as done
+  - [f158d00](https://github.com/sase-org/sase/commit/f158d0035f2560ccb824916593fec682cc40f473) — chore: mark gchat\_agent\_launch\_message plan as done
 
 # Google Chat — Agent Launch Message
 

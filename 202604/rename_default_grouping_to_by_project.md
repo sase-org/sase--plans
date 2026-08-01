@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rename_default_grouping_to_by_project.md](prompts/rename_default_grouping_to_by_project.md)
+- **PROMPT:** [prompts/202604/rename_default_grouping_to_by_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rename_default_grouping_to_by_project.md)
 - **COMMITS:**
   - [d837886](https://github.com/sase-org/sase/commit/d8378863f70dcd2afd715cc5affae46e14a1eedb) — feat(ace): rename \`default\` grouping label to \`by project\`
 

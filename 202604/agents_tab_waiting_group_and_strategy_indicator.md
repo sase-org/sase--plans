@@ -7,7 +7,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_tab_waiting_group_and_strategy_indicator.md](prompts/agents_tab_waiting_group_and_strategy_indicator.md)
+- **PROMPT:** [prompts/202604/agents_tab_waiting_group_and_strategy_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_tab_waiting_group_and_strategy_indicator.md)
 - **COMMITS:**
   - [6eceff9](https://github.com/sase-org/sase/commit/6eceff929069650547ca53d1c84c7bbbbf286a1d) — feat(ace): add Waiting status bucket and grouping-mode header badge
 

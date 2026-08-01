@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/dynamic_memory_3.md](prompts/dynamic_memory_3.md)
+- **PROMPT:** [prompts/202604/dynamic_memory_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/dynamic_memory_3.md)
 - **COMMITS:**
   - [c421c12](https://github.com/sase-org/sase/commit/c421c12c4db212e4c9725c9507724c1998dc9166) — feat: implement dynamic memory generation for agent sessions
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/auto_name_release.md](prompts/auto_name_release.md)
+- **PROMPT:** [prompts/202604/auto_name_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/auto_name_release.md)
 - **COMMITS:**
   - [a2148e4](https://github.com/sase-org/sase/commit/a2148e45e49e31cd68fcca4384db799d00d1bf82) — fix: keep completed agent names reserved
 

@@ -5,7 +5,7 @@ bead_id: sase-1l
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/epic_changespec_beads.md](prompts/epic_changespec_beads.md)
+- **PROMPT:** [prompts/202604/epic_changespec_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/epic_changespec_beads.md)
 - **BEAD:** [sase-1l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1l/README.md)
 
 # Plan: ChangeSpec-Aware Epic Beads

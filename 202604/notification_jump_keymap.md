@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/notification_jump_keymap.md](prompts/notification_jump_keymap.md)
+- **PROMPT:** [prompts/202604/notification_jump_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/notification_jump_keymap.md)
 - **COMMITS:**
   - [83b89e9](https://github.com/sase-org/sase/commit/83b89e9dc7594ea3e0037b12d10208b0c5c34ec9) — feat: add notification jump hints
 

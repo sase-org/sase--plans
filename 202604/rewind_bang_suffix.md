@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/rewind_bang_suffix.md](prompts/rewind_bang_suffix.md)
+- **PROMPT:** [prompts/202604/rewind_bang_suffix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/rewind_bang_suffix.md)
 - **COMMITS:**
   - [b165900](https://github.com/sase-org/sase/commit/b16590098fbd4489c23e5f22891390222819d7c0) — feat: Support \`\!\` suffix for rewind (\`R\`) keymap on CLs tab
 

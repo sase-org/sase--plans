@@ -5,7 +5,7 @@ bead_id: sase-1c
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/temporary_llm_override.md](prompts/temporary_llm_override.md)
+- **PROMPT:** [prompts/202604/temporary_llm_override.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/temporary_llm_override.md)
 - **BEAD:** [sase-1c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1c/README.md)
 
 # Plan: Temporary Default LLM Provider/Model Override

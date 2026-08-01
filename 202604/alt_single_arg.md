@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/alt_single_arg.md](prompts/alt_single_arg.md)
+- **PROMPT:** [prompts/202604/alt_single_arg.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/alt_single_arg.md)
 - **COMMITS:**
   - [fb29d05](https://github.com/sase-org/sase/commit/fb29d05514c4f4e2924ab47b8edcc9fa3b32ea5b) — feat: treat %alt with single arg as implicit split with empty variant
 

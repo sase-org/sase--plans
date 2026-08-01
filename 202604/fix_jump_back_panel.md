@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_jump_back_panel.md](prompts/fix_jump_back_panel.md)
+- **PROMPT:** [prompts/202604/fix_jump_back_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_jump_back_panel.md)
 - **COMMITS:**
   - [f93b34f](https://github.com/sase-org/sase/commit/f93b34f103cfb913833a96532c1b159bd403c673) — fix: Snapshot saved panel before overwriting in jump-back handler
 

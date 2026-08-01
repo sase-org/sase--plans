@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_interrupt_monitor_test_race.md](prompts/fix_interrupt_monitor_test_race.md)
+- **PROMPT:** [prompts/202604/fix_interrupt_monitor_test_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_interrupt_monitor_test_race.md)
 - **COMMITS:**
   - [d1de1ea](https://github.com/sase-org/sase/commit/d1de1eab1b31a10fb401a12c3f5da95d761162b5) — fix: close race in interrupt-monitor tests by waiting for terminate
 

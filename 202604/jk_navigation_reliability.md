@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/jk_navigation_reliability.md](prompts/jk_navigation_reliability.md)
+- **PROMPT:** [prompts/202604/jk_navigation_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/jk_navigation_reliability.md)
 - **COMMITS:**
   - [6d863ee](https://github.com/sase-org/sase/commit/6d863eed260dee3752f6e014992a997b7c6e010f) — fix(ace/tui): make Agents-tab j/k navigation reliable
 

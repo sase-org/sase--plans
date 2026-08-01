@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_pending_checks_poll_timeout.md](prompts/fix_pending_checks_poll_timeout.md)
+- **PROMPT:** [prompts/202604/fix_pending_checks_poll_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_pending_checks_poll_timeout.md)
 - **COMMITS:**
   - [d705604](https://github.com/sase-org/sase/commit/d70560431d571ca9a8de0fb3fee624f583a298d0) — fix: Scan checks directory once per poll tick and reap orphan files
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/approve_options_typing_diagnosis.md](prompts/approve_options_typing_diagnosis.md)
+- **PROMPT:** [prompts/202604/approve_options_typing_diagnosis.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/approve_options_typing_diagnosis.md)
 - **COMMITS:**
   - [bc8059d](https://github.com/sase-org/sase/commit/bc8059dcd4695f45b9b832a0015634422c0d2aee) — fix: Harden ApproveOptionsModal key event isolation
 

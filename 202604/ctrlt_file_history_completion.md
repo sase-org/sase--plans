@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ctrlt_file_history_completion.md](prompts/ctrlt_file_history_completion.md)
+- **PROMPT:** [prompts/202604/ctrlt_file_history_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ctrlt_file_history_completion.md)
 - **COMMITS:**
   - [7223147](https://github.com/sase-org/sase/commit/72231478693bfbb43d996a13f604e9f6f40c037c) — feat: Add file-history completion on Ctrl+T at empty prompt prefix
 

@@ -5,7 +5,7 @@ bead_id: sase-x
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/gchat_telegram_integration_improvements.md](prompts/gchat_telegram_integration_improvements.md)
+- **PROMPT:** [prompts/202604/gchat_telegram_integration_improvements.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gchat_telegram_integration_improvements.md)
 - **BEAD:** [sase-x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-x/README.md)
 
 # retired chat plugin and sase-telegram Integration Improvement Plan

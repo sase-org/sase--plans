@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/pretty_agents_tab_headings.md](prompts/pretty_agents_tab_headings.md)
+- **PROMPT:** [prompts/202604/pretty_agents_tab_headings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/pretty_agents_tab_headings.md)
 - **COMMITS:**
   - [91c01dd](https://github.com/sase-org/sase/commit/91c01dd0016d01afcb1b70c4d5467148151dc6f0) — feat(ace): pretty Agents-tab headings with tier-guide gutter
 

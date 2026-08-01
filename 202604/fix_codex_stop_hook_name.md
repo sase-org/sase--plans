@@ -4,7 +4,7 @@ create_time: 2026-04-04 18:24:48
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_codex_stop_hook_name.md](prompts/fix_codex_stop_hook_name.md)
+- **PROMPT:** [prompts/202604/fix_codex_stop_hook_name.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_codex_stop_hook_name.md)
 - **COMMITS:**
   - [9cee21f](https://github.com/sase-org/sase/commit/9cee21f5d5dc0667954ef6bcdfe29498b6395057) — fix: Include details in Codex stop hook JSON reason
 

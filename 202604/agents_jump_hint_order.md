@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_jump_hint_order.md](prompts/agents_jump_hint_order.md)
+- **PROMPT:** [prompts/202604/agents_jump_hint_order.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_jump_hint_order.md)
 - **COMMITS:**
   - [820106b](https://github.com/sase-org/sase/commit/820106b48afee9215e2d678bd5f15a6cc5130f58) — fix: order Agents-tab jump hints by tree-walk render order
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/task_queue_edit_keymap.md](prompts/task_queue_edit_keymap.md)
+- **PROMPT:** [prompts/202604/task_queue_edit_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/task_queue_edit_keymap.md)
 - **COMMITS:**
   - [f99cd46](https://github.com/sase-org/sase/commit/f99cd46c3c77c34187bddadb1cd813598243a6f3) — feat: Add \`e\` (edit) keymap to Task Queue Modal
 

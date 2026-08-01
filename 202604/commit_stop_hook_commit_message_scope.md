@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/commit_stop_hook_commit_message_scope.md](prompts/commit_stop_hook_commit_message_scope.md)
+- **PROMPT:** [prompts/202604/commit_stop_hook_commit_message_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/commit_stop_hook_commit_message_scope.md)
 - **COMMITS:**
   - [9a6c09d](https://github.com/sase-org/sase/commit/9a6c09dc3eafeaec96f946f8221b3b038b6825d2) — fix(commit-stop-hook): scope non-PR commit message guidance
 

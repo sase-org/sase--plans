@@ -7,9 +7,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/gchat_plan_pdf_attachment.md](prompts/gchat_plan_pdf_attachment.md)
+- **PROMPT:** [prompts/202604/gchat_plan_pdf_attachment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/gchat_plan_pdf_attachment.md)
 - **COMMITS:**
-  - [8d6883e](https://github.com/sase-org/sase/commit/8d6883e34c3616d2d3379e967c433045297b7780) — chore: mark gchat_plan_pdf_attachment plan as done
+  - [8d6883e](https://github.com/sase-org/sase/commit/8d6883e34c3616d2d3379e967c433045297b7780) — chore: mark gchat\_plan\_pdf\_attachment plan as done
 
 # Google Chat: PDF-convert plan attachments (with markdown fallback)
 

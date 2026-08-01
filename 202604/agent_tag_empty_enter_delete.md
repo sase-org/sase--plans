@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agent_tag_empty_enter_delete.md](prompts/agent_tag_empty_enter_delete.md)
+- **PROMPT:** [prompts/202604/agent_tag_empty_enter_delete.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agent_tag_empty_enter_delete.md)
 - **COMMITS:**
   - [255db37](https://github.com/sase-org/sase/commit/255db37d64cbac9626bfb6d4ec93714f5789c4f8) — feat: empty-Enter clears agent tag in AgentTagModal
 

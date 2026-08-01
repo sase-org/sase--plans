@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/resume_planner_for_coder.md](prompts/resume_planner_for_coder.md)
+- **PROMPT:** [prompts/202604/resume_planner_for_coder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/resume_planner_for_coder.md)
 - **COMMITS:**
-  - [758176d](https://github.com/sase-org/sase/commit/758176d62b262d5343e89039c8dc3a0d8e6a979f) — feat: Prepend \#resume:\<planner_name\> to coder agent prompts
+  - [758176d](https://github.com/sase-org/sase/commit/758176d62b262d5343e89039c8dc3a0d8e6a979f) — feat: Prepend \#resume:\<planner\_name\> to coder agent prompts
 
 # Prepend `#resume:<planner_name>` to Coder Agent Prompts
 

@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_mentor_checks_timeout.md](prompts/fix_mentor_checks_timeout.md)
+- **PROMPT:** [prompts/202604/fix_mentor_checks_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_mentor_checks_timeout.md)
 - **COMMITS:**
-  - [96e1af9](https://github.com/sase-org/sase/commit/96e1af92dc426ff99b1dabe23742738746c13d77) — fix: Preload VCS fallback diff once per changespec to prevent mentor_checks timeout
+  - [96e1af9](https://github.com/sase-org/sase/commit/96e1af92dc426ff99b1dabe23742738746c13d77) — fix: Preload VCS fallback diff once per changespec to prevent mentor\_checks timeout
 
 # Plan: Fix mentor_checks chop timeout (repeated VCS diff loading)
 

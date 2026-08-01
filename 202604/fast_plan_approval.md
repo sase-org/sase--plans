@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fast_plan_approval.md](prompts/fast_plan_approval.md)
+- **PROMPT:** [prompts/202604/fast_plan_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fast_plan_approval.md)
 
 # Fast Plan Approval From The TUI
 

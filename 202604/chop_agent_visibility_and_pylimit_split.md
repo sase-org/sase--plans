@@ -5,7 +5,7 @@ bead_id: sase-11
 tier: epic
 ---
 
-- **PROMPT:** [202604/prompts/chop_agent_visibility_and_pylimit_split.md](prompts/chop_agent_visibility_and_pylimit_split.md)
+- **PROMPT:** [prompts/202604/chop_agent_visibility_and_pylimit_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/chop_agent_visibility_and_pylimit_split.md)
 - **BEAD:** [sase-11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11/README.md)
 
 # Plan: Make chop-launched agents visible and align them with `sase run -d`

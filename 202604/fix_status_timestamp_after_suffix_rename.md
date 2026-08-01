@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/fix_status_timestamp_after_suffix_rename.md](prompts/fix_status_timestamp_after_suffix_rename.md)
+- **PROMPT:** [prompts/202604/fix_status_timestamp_after_suffix_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/fix_status_timestamp_after_suffix_rename.md)
 - **COMMITS:**
   - [bf85e6f](https://github.com/sase-org/sase/commit/bf85e6f4c21336e71942268d8e9e0f97b263ebad) — fix: Use post-rename name for STATUS timestamp recording after suffix operations
 

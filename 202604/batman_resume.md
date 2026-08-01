@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/batman_resume.md](prompts/batman_resume.md)
+- **PROMPT:** [prompts/202604/batman_resume.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/batman_resume.md)
 
 # Batman-Themed Resume for Bryan Bugyi
 

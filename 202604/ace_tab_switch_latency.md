@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/ace_tab_switch_latency.md](prompts/ace_tab_switch_latency.md)
+- **PROMPT:** [prompts/202604/ace_tab_switch_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/ace_tab_switch_latency.md)
 
 # Plan: Make `sase ace` Tab Switching Fast
 

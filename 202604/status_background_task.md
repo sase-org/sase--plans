@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/status_background_task.md](prompts/status_background_task.md)
+- **PROMPT:** [prompts/202604/status_background_task.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/status_background_task.md)
 - **COMMITS:**
   - [869fc1e](https://github.com/sase-org/sase/commit/869fc1e4900cc0bd57bd94b4f739d2fc42cee894) — feat: Migrate status change TUI actions to non-blocking background tasks
 

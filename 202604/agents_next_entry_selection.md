@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/agents_next_entry_selection.md](prompts/agents_next_entry_selection.md)
+- **PROMPT:** [prompts/202604/agents_next_entry_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/agents_next_entry_selection.md)
 - **COMMITS:**
   - [d07da87](https://github.com/sase-org/sase/commit/d07da873815af0db976a8016323e7aef6b1ad916) — fix: align agent action focus with rendered order
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202604/prompts/github_actions_llm_override_ci.md](prompts/github_actions_llm_override_ci.md)
+- **PROMPT:** [prompts/202604/github_actions_llm_override_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202604/github_actions_llm_override_ci.md)
 
 # Diagnose and Fix Temporary LLM Override CI Drift
 
