@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202608/prompts/fix_pyscripts_closer_package.md](prompts/fix_pyscripts_closer_package.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-de](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-de.md)
+- **COMMITS:**
+  - [93dfb63](https://github.com/sase-org/sase/commit/93dfb63587ece702ffde02b752cfd293da7eb2d8) — fix: update vendored
+    pyscripts validator
 
 # Fix pyscripts closer-directory package false positives
 
