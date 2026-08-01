@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/cli_help_output.md](prompts/cli_help_output.md)
+- **PROMPT:** [prompts/202606/cli_help_output.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/cli_help_output.md)
 
 # Improve `sase` Command Line Help Output
 

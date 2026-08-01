@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_prompt_wrap_width.md](prompts/agent_prompt_wrap_width.md)
+- **PROMPT:** [prompts/202606/agent_prompt_wrap_width.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_prompt_wrap_width.md)
 
 # Plan: Agent prompt wrap width 80
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_axe_chop_edit.md](prompts/fix_axe_chop_edit.md)
+- **PROMPT:** [prompts/202606/fix_axe_chop_edit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_axe_chop_edit.md)
 
 # Plan: Fix `sase ace` crash when pressing `e` on AXE chop output
 

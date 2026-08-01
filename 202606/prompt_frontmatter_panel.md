@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202606/prompts/prompt_frontmatter_panel.md](prompts/prompt_frontmatter_panel.md)
+- **PROMPT:** [prompts/202606/prompt_frontmatter_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_frontmatter_panel.md)
 - **BEAD:** [sase-4r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4r/README.md)
 
 # Plan: Frontmatter Panel for the Prompt Input Widget

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompts_enabled_skips_early_jinja_render.md](prompts/xprompts_enabled_skips_early_jinja_render.md)
+- **PROMPT:** [prompts/202606/xprompts_enabled_skips_early_jinja_render.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompts_enabled_skips_early_jinja_render.md)
 
 # Plan: `%xprompts_enabled:false` must exempt its block from early-phase Jinja2 rendering
 

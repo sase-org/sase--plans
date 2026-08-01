@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/complete_sase_4t.md](prompts/complete_sase_4t.md)
+- **PROMPT:** [prompts/202606/complete_sase_4t.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/complete_sase_4t.md)
 
 # Plan: Complete verification fixes for sase-4t
 

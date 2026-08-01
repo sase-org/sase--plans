@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_g_prompt_normal_mode.md](prompts/ctrl_g_prompt_normal_mode.md)
+- **PROMPT:** [prompts/202606/ctrl_g_prompt_normal_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_g_prompt_normal_mode.md)
 
 # Plan: Enable Ctrl+G Prompt Prefix in Normal Mode
 

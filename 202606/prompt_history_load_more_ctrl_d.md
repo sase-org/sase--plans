@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_load_more_ctrl_d.md](prompts/prompt_history_load_more_ctrl_d.md)
+- **PROMPT:** [prompts/202606/prompt_history_load_more_ctrl_d.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_load_more_ctrl_d.md)
 
 # Plan: Rebind prompt-history "load more" from PageDown to `Ctrl+D`
 

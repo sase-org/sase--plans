@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/answered_agent_status.md](prompts/answered_agent_status.md)
+- **PROMPT:** [prompts/202606/answered_agent_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/answered_agent_status.md)
 
 # Plan: ANSWERED agent status for answered questions
 

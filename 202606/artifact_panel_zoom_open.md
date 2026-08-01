@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/artifact_panel_zoom_open.md](prompts/artifact_panel_zoom_open.md)
+- **PROMPT:** [prompts/202606/artifact_panel_zoom_open.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/artifact_panel_zoom_open.md)
 
 # Plan: Artifact Panel Zoomed Tmux Open
 

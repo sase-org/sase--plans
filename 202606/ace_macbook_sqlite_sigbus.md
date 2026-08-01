@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_macbook_sqlite_sigbus.md](prompts/ace_macbook_sqlite_sigbus.md)
+- **PROMPT:** [prompts/202606/ace_macbook_sqlite_sigbus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_macbook_sqlite_sigbus.md)
 
 # Plan: Diagnose and Fix `sase ace` macOS SIGBUS Crash
 

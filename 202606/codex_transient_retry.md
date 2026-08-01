@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/codex_transient_retry.md](prompts/codex_transient_retry.md)
+- **PROMPT:** [prompts/202606/codex_transient_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/codex_transient_retry.md)
 
 # Plan: Give the Codex Provider Built-In Transient-Failure Retry Coverage
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/live_agent_pencil.md](prompts/live_agent_pencil.md)
+- **PROMPT:** [prompts/202606/live_agent_pencil.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/live_agent_pencil.md)
 
 # Plan: Live Agent Pencil Badge
 

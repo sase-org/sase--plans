@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_56_completion.md](prompts/sase_56_completion.md)
+- **PROMPT:** [prompts/202606/sase_56_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_56_completion.md)
 
 # Remaining Verification Fixes for `sase-56`
 

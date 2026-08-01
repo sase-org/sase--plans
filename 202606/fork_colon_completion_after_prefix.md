@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fork_colon_completion_after_prefix.md](prompts/fork_colon_completion_after_prefix.md)
+- **PROMPT:** [prompts/202606/fork_colon_completion_after_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fork_colon_completion_after_prefix.md)
 
 # Fix `#fork:` Agent Completion After Earlier XPrompt References
 

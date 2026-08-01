@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/dot_repeat_completeness.md](prompts/dot_repeat_completeness.md)
+- **PROMPT:** [prompts/202606/dot_repeat_completeness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/dot_repeat_completeness.md)
 
 # Plan: Make the prompt-input vim dot-repeat (`.`) complete and correct
 

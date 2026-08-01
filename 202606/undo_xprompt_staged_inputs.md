@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/undo_xprompt_staged_inputs.md](prompts/undo_xprompt_staged_inputs.md)
+- **PROMPT:** [prompts/202606/undo_xprompt_staged_inputs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/undo_xprompt_staged_inputs.md)
 
 # Plan: Make XPrompt-Staged Inputs Follow Prompt Undo
 

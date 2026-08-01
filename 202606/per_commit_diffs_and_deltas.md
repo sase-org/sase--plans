@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/per_commit_diffs_and_deltas.md](prompts/per_commit_diffs_and_deltas.md)
+- **PROMPT:** [prompts/202606/per_commit_diffs_and_deltas.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/per_commit_diffs_and_deltas.md)
 
 # Plan: Per-commit diffs in the file panel + all-commit Deltas
 

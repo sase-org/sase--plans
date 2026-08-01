@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jump_all_scroll.md](prompts/jump_all_scroll.md)
+- **PROMPT:** [prompts/202606/jump_all_scroll.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jump_all_scroll.md)
 
 # Plan: Fix Jump to Entry Ctrl+D/U Scrolling
 

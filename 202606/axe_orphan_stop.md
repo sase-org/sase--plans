@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/axe_orphan_stop.md](prompts/axe_orphan_stop.md)
+- **PROMPT:** [prompts/202606/axe_orphan_stop.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/axe_orphan_stop.md)
 
 # Plan: Fix unstoppable orphaned `sase axe` processes
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/editor_at_review_marker.md](prompts/editor_at_review_marker.md)
+- **PROMPT:** [prompts/202606/editor_at_review_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/editor_at_review_marker.md)
 
 # Plan: Replace `%edit` with editor ` @` review marker
 

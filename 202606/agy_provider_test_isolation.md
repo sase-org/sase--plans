@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agy_provider_test_isolation.md](prompts/agy_provider_test_isolation.md)
+- **PROMPT:** [prompts/202606/agy_provider_test_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agy_provider_test_isolation.md)
 
 # Plan: Fix flaky agy provider command-construction test
 

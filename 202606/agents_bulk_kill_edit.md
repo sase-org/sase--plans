@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_bulk_kill_edit.md](prompts/agents_bulk_kill_edit.md)
+- **PROMPT:** [prompts/202606/agents_bulk_kill_edit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_bulk_kill_edit.md)
 
 # Agents Tab Bulk Kill And Edit With Prompt Stack
 

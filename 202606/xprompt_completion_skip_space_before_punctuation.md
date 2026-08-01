@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_completion_skip_space_before_punctuation.md](prompts/xprompt_completion_skip_space_before_punctuation.md)
+- **PROMPT:** [prompts/202606/xprompt_completion_skip_space_before_punctuation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_completion_skip_space_before_punctuation.md)
 
 # Plan: Skip the auto-inserted space after a no-arg xprompt when followed by punctuation
 

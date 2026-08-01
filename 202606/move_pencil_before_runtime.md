@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/move_pencil_before_runtime.md](prompts/move_pencil_before_runtime.md)
+- **PROMPT:** [prompts/202606/move_pencil_before_runtime.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/move_pencil_before_runtime.md)
 
 # Plan: Move the file-change pencil to just before the agent runtime
 

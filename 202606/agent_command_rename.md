@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_command_rename.md](prompts/agent_command_rename.md)
+- **PROMPT:** [prompts/202606/agent_command_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_command_rename.md)
 
 # Plan: Rename `sase agents` to `sase agent`
 

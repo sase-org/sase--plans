@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_detail_header_offthread_diff.md](prompts/agent_detail_header_offthread_diff.md)
+- **PROMPT:** [prompts/202606/agent_detail_header_offthread_diff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_detail_header_offthread_diff.md)
 
 # Plan: Move agent detail-header live diff off the Textual event loop
 

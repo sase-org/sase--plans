@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/zoom_panel_ctrlp_metadata_1.md](prompts/zoom_panel_ctrlp_metadata_1.md)
+- **PROMPT:** [prompts/202606/zoom_panel_ctrlp_metadata_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/zoom_panel_ctrlp_metadata_1.md)
 
 # Fix Zoom Panel Ctrl-P Return From Metadata-Revealed File Panel
 

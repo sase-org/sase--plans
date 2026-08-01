@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_manual_pypi_publish_from_tag.md](prompts/fix_manual_pypi_publish_from_tag.md)
+- **PROMPT:** [prompts/202606/fix_manual_pypi_publish_from_tag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_manual_pypi_publish_from_tag.md)
 
 # Plan: Fix the failing manual PyPI publish for `sase-core-rs` 0.1.1
 

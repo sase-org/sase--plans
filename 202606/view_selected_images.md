@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/view_selected_images.md](prompts/view_selected_images.md)
+- **PROMPT:** [prompts/202606/view_selected_images.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/view_selected_images.md)
 
 # Display `v`-Selected Images With The Artifact Viewer
 

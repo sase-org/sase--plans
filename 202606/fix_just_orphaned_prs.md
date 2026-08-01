@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_just_orphaned_prs.md](prompts/fix_just_orphaned_prs.md)
+- **PROMPT:** [prompts/202606/fix_just_orphaned_prs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_just_orphaned_prs.md)
 
 # Fix: `sase_fix_just` chop creates PRs not associated with any ChangeSpec
 

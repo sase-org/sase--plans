@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompts_filter_focus.md](prompts/xprompts_filter_focus.md)
+- **PROMPT:** [prompts/202606/xprompts_filter_focus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompts_filter_focus.md)
 
 # Plan: XPrompts Filter Focus Behavior
 

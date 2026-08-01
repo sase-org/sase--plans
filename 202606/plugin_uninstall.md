@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plugin_uninstall.md](prompts/plugin_uninstall.md)
+- **PROMPT:** [prompts/202606/plugin_uninstall.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plugin_uninstall.md)
 
 # Plan: `sase plugin uninstall <plugin>`
 

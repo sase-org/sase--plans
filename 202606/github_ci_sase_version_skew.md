@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/github_ci_sase_version_skew.md](prompts/github_ci_sase_version_skew.md)
+- **PROMPT:** [prompts/202606/github_ci_sase_version_skew.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/github_ci_sase_version_skew.md)
 
 # Plan: Fix sase-github CI SASE Version Skew
 

@@ -5,7 +5,7 @@ bead_id: sase-4i
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/doctor_command_mvp.md](prompts/doctor_command_mvp.md)
+- **PROMPT:** [prompts/202606/doctor_command_mvp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/doctor_command_mvp.md)
 - **BEAD:** [sase-4i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4i/README.md)
 
 # Plan: Ambitious MVP for `sase doctor`

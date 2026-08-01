@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/telegram_kill_redo.md](prompts/telegram_kill_redo.md)
+- **PROMPT:** [prompts/202606/telegram_kill_redo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/telegram_kill_redo.md)
 
 # Telegram Kill Redo Button Plan
 

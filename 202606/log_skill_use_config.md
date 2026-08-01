@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/log_skill_use_config.md](prompts/log_skill_use_config.md)
+- **PROMPT:** [prompts/202606/log_skill_use_config.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/log_skill_use_config.md)
 
 # Plan: Configurable Generated Skill-Use Audit Directive
 

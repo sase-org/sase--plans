@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_g_ctrl_c_cancel_all.md](prompts/ctrl_g_ctrl_c_cancel_all.md)
+- **PROMPT:** [prompts/202606/ctrl_g_ctrl_c_cancel_all.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_g_ctrl_c_cancel_all.md)
 
 # Plan: Ctrl+G Ctrl+C Cancel All Prompt Panes
 

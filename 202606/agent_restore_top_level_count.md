@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_restore_top_level_count.md](prompts/agent_restore_top_level_count.md)
+- **PROMPT:** [prompts/202606/agent_restore_top_level_count.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_restore_top_level_count.md)
 
 # Plan: Show top-level agent count in the Agent Restore panel's left pane
 

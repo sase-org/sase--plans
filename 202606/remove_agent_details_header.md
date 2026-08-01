@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_agent_details_header.md](prompts/remove_agent_details_header.md)
+- **PROMPT:** [prompts/202606/remove_agent_details_header.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_agent_details_header.md)
 
 # Remove Agents Metadata Panel Header
 

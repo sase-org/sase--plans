@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/claude_fable_5_model.md](prompts/claude_fable_5_model.md)
+- **PROMPT:** [prompts/202606/claude_fable_5_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/claude_fable_5_model.md)
 
 # Plan: Recognize `claude-fable-5` as a Claude Model + Surface It in TUI Model Pickers
 

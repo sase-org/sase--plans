@@ -6,7 +6,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_command_completion.md](prompts/prompt_command_completion.md)
+- **PROMPT:** [prompts/202606/prompt_command_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_command_completion.md)
 - **BEAD:** [sase-4o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4o/README.md)
 
 # Complete `sase prompt` Epic Verification

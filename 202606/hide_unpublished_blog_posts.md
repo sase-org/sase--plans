@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_unpublished_blog_posts.md](prompts/hide_unpublished_blog_posts.md)
+- **PROMPT:** [prompts/202606/hide_unpublished_blog_posts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_unpublished_blog_posts.md)
 
 # Hide Unpublished Blog Posts From the Public Site
 

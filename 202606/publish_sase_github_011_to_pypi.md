@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/publish_sase_github_011_to_pypi.md](prompts/publish_sase_github_011_to_pypi.md)
+- **PROMPT:** [prompts/202606/publish_sase_github_011_to_pypi.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/publish_sase_github_011_to_pypi.md)
 
 # Plan: Fix sase-github Trusted Publisher Mismatch and Publish 0.1.1 to PyPI
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/create_prompt_snippet_option.md](prompts/create_prompt_snippet_option.md)
+- **PROMPT:** [prompts/202606/create_prompt_snippet_option.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/create_prompt_snippet_option.md)
 
 # Plan: Add Prompt Save-As Snippet Option
 

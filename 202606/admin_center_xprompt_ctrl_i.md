@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/admin_center_xprompt_ctrl_i.md](prompts/admin_center_xprompt_ctrl_i.md)
+- **PROMPT:** [prompts/202606/admin_center_xprompt_ctrl_i.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/admin_center_xprompt_ctrl_i.md)
 
 # Admin Center XPrompts Ctrl-I Load Plan
 

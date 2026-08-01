@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_effort_levels.md](prompts/xprompt_effort_levels.md)
+- **PROMPT:** [prompts/202606/xprompt_effort_levels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_effort_levels.md)
 - **BEAD:** [sase-55](https://github.com/sase-org/sase--beads/blob/main/pages/sase-55/README.md)
 
 # Plan: Reasoning-Effort Levels for XPrompt Model/Provider Selection

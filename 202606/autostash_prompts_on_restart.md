@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/autostash_prompts_on_restart.md](prompts/autostash_prompts_on_restart.md)
+- **PROMPT:** [prompts/202606/autostash_prompts_on_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/autostash_prompts_on_restart.md)
 
 # Plan: Auto-stash prompt drafts before a TUI restart
 

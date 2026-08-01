@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/model_directive_arg_completion.md](prompts/model_directive_arg_completion.md)
+- **PROMPT:** [prompts/202606/model_directive_arg_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/model_directive_arg_completion.md)
 
 # Plan: Auto-completion for the `%model` / `%m` directive's argument values
 

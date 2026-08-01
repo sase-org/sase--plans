@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/finalizer_baseline_sibling_attribution.md](prompts/finalizer_baseline_sibling_attribution.md)
+- **PROMPT:** [prompts/202606/finalizer_baseline_sibling_attribution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/finalizer_baseline_sibling_attribution.md)
 
 # Plan: Attribute sibling commits by run-start baseline, not just the "opened" marker
 

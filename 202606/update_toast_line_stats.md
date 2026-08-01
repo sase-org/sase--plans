@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/update_toast_line_stats.md](prompts/update_toast_line_stats.md)
+- **PROMPT:** [prompts/202606/update_toast_line_stats.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/update_toast_line_stats.md)
 
 # Plan: Per-Repo Line-Change Stats in the Post-Update Toast
 

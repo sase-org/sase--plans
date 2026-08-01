@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/question_code_prompt_model.md](prompts/question_code_prompt_model.md)
+- **PROMPT:** [prompts/202606/question_code_prompt_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/question_code_prompt_model.md)
 
 # Fix Question Continuations for Code-Agent Prompts
 

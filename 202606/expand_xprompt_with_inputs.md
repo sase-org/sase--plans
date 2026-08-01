@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/expand_xprompt_with_inputs.md](prompts/expand_xprompt_with_inputs.md)
+- **PROMPT:** [prompts/202606/expand_xprompt_with_inputs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/expand_xprompt_with_inputs.md)
 
 # Plan: Expand XPrompts With Inputs via `Ctrl+I` (Stage Inputs in the Property Panel)
 

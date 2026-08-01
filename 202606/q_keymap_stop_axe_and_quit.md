@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/q_keymap_stop_axe_and_quit.md](prompts/q_keymap_stop_axe_and_quit.md)
+- **PROMPT:** [prompts/202606/q_keymap_stop_axe_and_quit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/q_keymap_stop_axe_and_quit.md)
 
 # Plan: Make the `Q` keymap reliably stop axe **and** quit the TUI
 

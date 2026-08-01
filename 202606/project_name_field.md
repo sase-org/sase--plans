@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_name_field.md](prompts/project_name_field.md)
+- **PROMPT:** [prompts/202606/project_name_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_name_field.md)
 
 # Configurable `PROJECT_NAME` Field for Project Specs
 

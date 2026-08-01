@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/logs_admin_center_tab.md](prompts/logs_admin_center_tab.md)
+- **PROMPT:** [prompts/202606/logs_admin_center_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/logs_admin_center_tab.md)
 
 # Plan: Migrate the `,L` Logs panel into the SASE Admin Center as a "Logs" tab
 

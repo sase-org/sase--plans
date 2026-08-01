@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_origin_story_reindex_blog.md](prompts/remove_origin_story_reindex_blog.md)
+- **PROMPT:** [prompts/202606/remove_origin_story_reindex_blog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_origin_story_reindex_blog.md)
 
 # Remove Origin Story Blog Post And Reindex Series
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_context_redesign.md](prompts/agent_context_redesign.md)
+- **PROMPT:** [prompts/202606/agent_context_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_context_redesign.md)
 
 # Plan: Make the "AGENT CONTEXT" panel section beautiful
 

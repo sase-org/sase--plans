@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/default_list_notice.md](prompts/default_list_notice.md)
+- **PROMPT:** [prompts/202606/default_list_notice.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/default_list_notice.md)
 
 # Default List Delegation Notice Plan
 

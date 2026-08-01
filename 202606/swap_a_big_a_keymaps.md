@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/swap_a_big_a_keymaps.md](prompts/swap_a_big_a_keymaps.md)
+- **PROMPT:** [prompts/202606/swap_a_big_a_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/swap_a_big_a_keymaps.md)
 
 # Swap a/A ACE Keymaps Plan
 

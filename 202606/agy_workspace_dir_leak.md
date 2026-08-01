@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agy_workspace_dir_leak.md](prompts/agy_workspace_dir_leak.md)
+- **PROMPT:** [prompts/202606/agy_workspace_dir_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agy_workspace_dir_leak.md)
 
 # Fix flaky CI failure in `test_agy_trajectory.py` (leaked `SASE_ACTIVE_PROJECT_DIR`)
 

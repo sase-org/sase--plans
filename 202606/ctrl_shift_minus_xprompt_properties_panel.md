@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_shift_minus_xprompt_properties_panel.md](prompts/ctrl_shift_minus_xprompt_properties_panel.md)
+- **PROMPT:** [prompts/202606/ctrl_shift_minus_xprompt_properties_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_shift_minus_xprompt_properties_panel.md)
 
 # Ctrl+Shift+- XPrompt Properties Panel Toggle Plan
 

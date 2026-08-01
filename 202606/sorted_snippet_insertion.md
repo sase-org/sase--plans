@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sorted_snippet_insertion.md](prompts/sorted_snippet_insertion.md)
+- **PROMPT:** [prompts/202606/sorted_snippet_insertion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sorted_snippet_insertion.md)
 
 # Preserve Sorted Snippet Insertions
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/worker_model_handoffs.md](prompts/worker_model_handoffs.md)
+- **PROMPT:** [prompts/202606/worker_model_handoffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/worker_model_handoffs.md)
 
 # Plan: Route Plan-Implementation Handoffs Through the Worker Model Lane
 

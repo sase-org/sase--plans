@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/stopped_status_highlighting.md](prompts/stopped_status_highlighting.md)
+- **PROMPT:** [prompts/202606/stopped_status_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/stopped_status_highlighting.md)
 
 # Plan: Distinct, Beautiful Syntax Highlighting for the `STOPPED` Agent Status
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_perf_background_tasks.md](prompts/tui_perf_background_tasks.md)
+- **PROMPT:** [prompts/202606/tui_perf_background_tasks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_perf_background_tasks.md)
 
 # Mention tracked background tasks in `memory/long/tui_perf.md`
 

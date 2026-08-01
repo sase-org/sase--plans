@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/update_availability_ux.md](prompts/update_availability_ux.md)
+- **PROMPT:** [prompts/202606/update_availability_ux.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/update_availability_ux.md)
 
 # Plan: Reliable, Beautiful "Updates Available" UX (dev + published)
 

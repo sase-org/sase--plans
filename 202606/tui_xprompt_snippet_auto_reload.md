@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_xprompt_snippet_auto_reload.md](prompts/tui_xprompt_snippet_auto_reload.md)
+- **PROMPT:** [prompts/202606/tui_xprompt_snippet_auto_reload.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_xprompt_snippet_auto_reload.md)
 
 # ACE TUI: Auto-Reload Snippets & XPrompts Without Restart
 

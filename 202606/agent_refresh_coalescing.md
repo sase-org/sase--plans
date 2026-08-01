@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_refresh_coalescing.md](prompts/agent_refresh_coalescing.md)
+- **PROMPT:** [prompts/202606/agent_refresh_coalescing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_refresh_coalescing.md)
 
 # Agent Refresh Coalescing Plan
 

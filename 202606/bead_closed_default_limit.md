@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_closed_default_limit.md](prompts/bead_closed_default_limit.md)
+- **PROMPT:** [prompts/202606/bead_closed_default_limit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_closed_default_limit.md)
 
 # Plan: Default Closed Bead Listings to 20 Results
 

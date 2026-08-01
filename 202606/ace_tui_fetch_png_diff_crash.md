@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_tui_fetch_png_diff_crash.md](prompts/ace_tui_fetch_png_diff_crash.md)
+- **PROMPT:** [prompts/202606/ace_tui_fetch_png_diff_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_tui_fetch_png_diff_crash.md)
 
 # Plan: Fix ACE TUI Crash on `#sshot` Fetch Step
 

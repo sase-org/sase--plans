@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/changespec_vcs_completion.md](prompts/changespec_vcs_completion.md)
+- **PROMPT:** [prompts/202606/changespec_vcs_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/changespec_vcs_completion.md)
 
 # Plan: Add active ChangeSpecs to `#+` VCS completion (TUI prompt + xprompt LSP)
 

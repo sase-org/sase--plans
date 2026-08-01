@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_suspend_watchdog.md](prompts/tui_suspend_watchdog.md)
+- **PROMPT:** [prompts/202606/tui_suspend_watchdog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_suspend_watchdog.md)
 
 # Plan: make ACE suspend handoffs watchdog-aware
 

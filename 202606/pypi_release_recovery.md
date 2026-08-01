@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pypi_release_recovery.md](prompts/pypi_release_recovery.md)
+- **PROMPT:** [prompts/202606/pypi_release_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pypi_release_recovery.md)
 
 # PyPI Release Recovery Plan
 

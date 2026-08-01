@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_vcs_project_lsp_enter.md](prompts/fix_vcs_project_lsp_enter.md)
+- **PROMPT:** [prompts/202606/fix_vcs_project_lsp_enter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_vcs_project_lsp_enter.md)
 
 # Plan: Fix `+` Project Completion Blank Line On Enter
 

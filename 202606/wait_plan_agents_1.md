@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/wait_plan_agents_1.md](prompts/wait_plan_agents_1.md)
+- **PROMPT:** [prompts/202606/wait_plan_agents_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/wait_plan_agents_1.md)
 
 # Plan: `%wait` Support for Submitted Plan Agents
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/alt_empty_whitespace.md](prompts/alt_empty_whitespace.md)
+- **PROMPT:** [prompts/202606/alt_empty_whitespace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/alt_empty_whitespace.md)
 
 # Plan: Smarter whitespace handling for empty alternation renders
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/publish_sase_015_to_pypi.md](prompts/publish_sase_015_to_pypi.md)
+- **PROMPT:** [prompts/202606/publish_sase_015_to_pypi.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/publish_sase_015_to_pypi.md)
 
 # Plan: Dispatch publish.yml to Release sase 0.1.5 to PyPI and Verify
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_descendants_neighborhood.md](prompts/agent_descendants_neighborhood.md)
+- **PROMPT:** [prompts/202606/agent_descendants_neighborhood.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_descendants_neighborhood.md)
 
 # Agent Descendants Neighborhood — Pinned Descendant Group with Inline Revive
 

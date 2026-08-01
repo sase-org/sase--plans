@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/wait_plan_chain_premature_ready.md](prompts/wait_plan_chain_premature_ready.md)
+- **PROMPT:** [prompts/202606/wait_plan_chain_premature_ready.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/wait_plan_chain_premature_ready.md)
 
 # Plan: Stop wait-dependencies from resolving on an unfinished plan chain
 

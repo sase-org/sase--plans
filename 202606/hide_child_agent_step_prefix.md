@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_child_agent_step_prefix.md](prompts/hide_child_agent_step_prefix.md)
+- **PROMPT:** [prompts/202606/hide_child_agent_step_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_child_agent_step_prefix.md)
 
 # Plan: Hide the step-number prefix on child agent rows
 

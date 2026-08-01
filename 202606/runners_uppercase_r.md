@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/runners_uppercase_r.md](prompts/runners_uppercase_r.md)
+- **PROMPT:** [prompts/202606/runners_uppercase_r.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/runners_uppercase_r.md)
 
 # Plan: Move Runners Panel to `,R`
 

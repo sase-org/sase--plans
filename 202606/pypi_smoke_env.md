@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pypi_smoke_env.md](prompts/pypi_smoke_env.md)
+- **PROMPT:** [prompts/202606/pypi_smoke_env.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pypi_smoke_env.md)
 
 # PyPI Release Smoke-Test Environment
 

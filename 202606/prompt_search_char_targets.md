@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_search_char_targets.md](prompts/prompt_search_char_targets.md)
+- **PROMPT:** [prompts/202606/prompt_search_char_targets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_search_char_targets.md)
 
 # Fix prompt Vim char-target search key regression
 

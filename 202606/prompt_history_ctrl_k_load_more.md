@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_ctrl_k_load_more.md](prompts/prompt_history_ctrl_k_load_more.md)
+- **PROMPT:** [prompts/202606/prompt_history_ctrl_k_load_more.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_ctrl_k_load_more.md)
 
 # Plan: Rebind Prompt-History Load More from Ctrl+D to Ctrl+K
 

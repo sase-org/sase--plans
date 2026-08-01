@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_commit_messages_panel.md](prompts/agent_commit_messages_panel.md)
+- **PROMPT:** [prompts/202606/agent_commit_messages_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_commit_messages_panel.md)
 
 # Plan: Show all of an agent's commit messages (primary + linked repos) in the Agents-tab metadata panel
 

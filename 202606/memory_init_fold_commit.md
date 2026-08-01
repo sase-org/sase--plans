@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/memory_init_fold_commit.md](prompts/memory_init_fold_commit.md)
+- **PROMPT:** [prompts/202606/memory_init_fold_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/memory_init_fold_commit.md)
 
 # Plan: Fold uncommitted `memory/` edits into the `sase memory init` commit
 

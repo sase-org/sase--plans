@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/working_plan_tale_statuses_1.md](prompts/working_plan_tale_statuses_1.md)
+- **PROMPT:** [prompts/202606/working_plan_tale_statuses_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/working_plan_tale_statuses_1.md)
 
 # Plan: `WORKING PLAN` / `WORKING TALE` statuses for code agents
 

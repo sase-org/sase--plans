@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/reasoning_effort_pyvision_cleanup_2.md](prompts/reasoning_effort_pyvision_cleanup_2.md)
+- **PROMPT:** [prompts/202606/reasoning_effort_pyvision_cleanup_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/reasoning_effort_pyvision_cleanup_2.md)
 
 # Reasoning Effort Pyvision Cleanup Plan
 

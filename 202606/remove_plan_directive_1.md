@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_plan_directive_1.md](prompts/remove_plan_directive_1.md)
+- **PROMPT:** [prompts/202606/remove_plan_directive_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_plan_directive_1.md)
 
 # Remove the Legacy Manual Planning Directive
 

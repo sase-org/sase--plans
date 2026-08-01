@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rename_waiting_for_field.md](prompts/rename_waiting_for_field.md)
+- **PROMPT:** [prompts/202606/rename_waiting_for_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rename_waiting_for_field.md)
 
 # Rename Agents Metadata Wait Label
 

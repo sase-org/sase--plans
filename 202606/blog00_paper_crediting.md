@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/blog00_paper_crediting.md](prompts/blog00_paper_crediting.md)
+- **PROMPT:** [prompts/202606/blog00_paper_crediting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/blog00_paper_crediting.md)
 
 # Plan: Strengthen the SASE-paper crediting in blog post `[00]`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_angle_auto_pair.md](prompts/prompt_angle_auto_pair.md)
+- **PROMPT:** [prompts/202606/prompt_angle_auto_pair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_angle_auto_pair.md)
 
 # Plan: Add Prompt Auto-Pair Support for Angle Brackets
 

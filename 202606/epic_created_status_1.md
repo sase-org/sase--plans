@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/epic_created_status_1.md](prompts/epic_created_status_1.md)
+- **PROMPT:** [prompts/202606/epic_created_status_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/epic_created_status_1.md)
 
 # Fix Epic Follow-Up Terminal Statuses
 

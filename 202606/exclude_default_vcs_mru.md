@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/exclude_default_vcs_mru.md](prompts/exclude_default_vcs_mru.md)
+- **PROMPT:** [prompts/202606/exclude_default_vcs_mru.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/exclude_default_vcs_mru.md)
 
 # Exclude Default VCS XPrompt From Prompt Cycling
 

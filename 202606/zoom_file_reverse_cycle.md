@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/zoom_file_reverse_cycle.md](prompts/zoom_file_reverse_cycle.md)
+- **PROMPT:** [prompts/202606/zoom_file_reverse_cycle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/zoom_file_reverse_cycle.md)
 
 # Plan: Fix ACE zoom modal previous-file cycling
 

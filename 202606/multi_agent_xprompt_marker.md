@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/multi_agent_xprompt_marker.md](prompts/multi_agent_xprompt_marker.md)
+- **PROMPT:** [prompts/202606/multi_agent_xprompt_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/multi_agent_xprompt_marker.md)
 
 # Plan: Make `#` the canonical marker for multi-agent xprompts + allow multiple fan-outs per prompt
 

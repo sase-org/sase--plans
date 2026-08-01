@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_plan_search_skill.md](prompts/remove_plan_search_skill.md)
+- **PROMPT:** [prompts/202606/remove_plan_search_skill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_plan_search_skill.md)
 
 # Remove unintended plan-search skill
 

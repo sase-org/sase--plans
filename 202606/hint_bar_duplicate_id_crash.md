@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hint_bar_duplicate_id_crash.md](prompts/hint_bar_duplicate_id_crash.md)
+- **PROMPT:** [prompts/202606/hint_bar_duplicate_id_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hint_bar_duplicate_id_crash.md)
 
 # Plan: Fix `sase ace` crash when re-triggering the view (`v`) hint bar after it loses focus
 

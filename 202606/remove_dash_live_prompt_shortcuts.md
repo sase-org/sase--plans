@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_dash_live_prompt_shortcuts.md](prompts/remove_dash_live_prompt_shortcuts.md)
+- **PROMPT:** [prompts/202606/remove_dash_live_prompt_shortcuts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_dash_live_prompt_shortcuts.md)
 
 # Remove `---` Live Prompt Shortcuts Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/revert_modal_redesign.md](prompts/revert_modal_redesign.md)
+- **PROMPT:** [prompts/202606/revert_modal_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/revert_modal_redesign.md)
 
 # Redesign the Revert Agent Commits Confirmation Modal
 

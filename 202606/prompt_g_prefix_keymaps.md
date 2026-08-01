@@ -5,7 +5,7 @@ bead_id: sase-4s
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/prompt_g_prefix_keymaps.md](prompts/prompt_g_prefix_keymaps.md)
+- **PROMPT:** [prompts/202606/prompt_g_prefix_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_g_prefix_keymaps.md)
 - **BEAD:** [sase-4s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4s/README.md)
 
 # Prompt Input `g` Prefix Keymap Migration Plan

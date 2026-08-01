@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/disabled_region_jinja_inert.md](prompts/disabled_region_jinja_inert.md)
+- **PROMPT:** [prompts/202606/disabled_region_jinja_inert.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/disabled_region_jinja_inert.md)
 
 # Plan: Make disabled (`%xprompts_enabled:false`) regions inert for all Jinja2 expansion and validation
 

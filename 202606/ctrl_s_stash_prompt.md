@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_s_stash_prompt.md](prompts/ctrl_s_stash_prompt.md)
+- **PROMPT:** [prompts/202606/ctrl_s_stash_prompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_s_stash_prompt.md)
 
 # Plan: Rebind `<Ctrl+S>` in the prompt input widget to stash
 

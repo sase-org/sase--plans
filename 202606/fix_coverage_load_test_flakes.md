@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_coverage_load_test_flakes.md](prompts/fix_coverage_load_test_flakes.md)
+- **PROMPT:** [prompts/202606/fix_coverage_load_test_flakes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_coverage_load_test_flakes.md)
 
 # Fix two CI test failures caused by load-sensitive flakes
 

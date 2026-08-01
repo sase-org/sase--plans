@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/q_keymap_quit_restart_panel.md](prompts/q_keymap_quit_restart_panel.md)
+- **PROMPT:** [prompts/202606/q_keymap_quit_restart_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/q_keymap_quit_restart_panel.md)
 
 # `Q` Keymap → Quit / Restart Options Panel
 

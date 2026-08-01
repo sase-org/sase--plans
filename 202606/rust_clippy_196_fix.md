@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rust_clippy_196_fix.md](prompts/rust_clippy_196_fix.md)
+- **PROMPT:** [prompts/202606/rust_clippy_196_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rust_clippy_196_fix.md)
 
 # Rust Clippy 1.96 CI Failure Fix
 

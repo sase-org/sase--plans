@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_restore_delete_saved_group.md](prompts/agent_restore_delete_saved_group.md)
+- **PROMPT:** [prompts/202606/agent_restore_delete_saved_group.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_restore_delete_saved_group.md)
 
 # Plan: `ctrl+d` to delete a saved agent group from the Agent Restore panel
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/multi_agent_prompt_chat_bullet.md](prompts/multi_agent_prompt_chat_bullet.md)
+- **PROMPT:** [prompts/202606/multi_agent_prompt_chat_bullet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/multi_agent_prompt_chat_bullet.md)
 
 # Plan: Add a "multi-agent prompt file" bullet to agent chat transcripts
 

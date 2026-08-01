@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/single_count_notification_indicator.md](prompts/single_count_notification_indicator.md)
+- **PROMPT:** [prompts/202606/single_count_notification_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/single_count_notification_indicator.md)
 
 # Single-Count Notification Indicator
 

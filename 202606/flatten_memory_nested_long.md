@@ -5,7 +5,7 @@ bead_id: sase-4u
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/flatten_memory_nested_long.md](prompts/flatten_memory_nested_long.md)
+- **PROMPT:** [prompts/202606/flatten_memory_nested_long.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/flatten_memory_nested_long.md)
 - **BEAD:** [sase-4u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4u/README.md)
 
 # Plan: Flatten `memory/` + Nested Long-Term Memory (hub notes)

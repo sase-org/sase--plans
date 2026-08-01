@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/update_pinned_prompt_stash.md](prompts/update_pinned_prompt_stash.md)
+- **PROMPT:** [prompts/202606/update_pinned_prompt_stash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/update_pinned_prompt_stash.md)
 
 # Plan: `gS` / `<Ctrl+G>S` — update a pinned prompt stash with the current prompt
 

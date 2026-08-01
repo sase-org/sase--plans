@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_pypi_015_trusted_publishing.md](prompts/sase_pypi_015_trusted_publishing.md)
+- **PROMPT:** [prompts/202606/sase_pypi_015_trusted_publishing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_pypi_015_trusted_publishing.md)
 
 # Plan: Fix PyPI Trusted Publishing for sase and Release 0.1.5
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/amd_absolute_home_shims.md](prompts/amd_absolute_home_shims.md)
+- **PROMPT:** [prompts/202606/amd_absolute_home_shims.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/amd_absolute_home_shims.md)
 
 # Plan: Make `sase amd init` generate absolute home-provider shims
 

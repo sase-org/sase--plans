@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/linked_repo_diff_file_panels.md](prompts/linked_repo_diff_file_panels.md)
+- **PROMPT:** [prompts/202606/linked_repo_diff_file_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/linked_repo_diff_file_panels.md)
 
 # Plan: Per-linked-repo diff pages in the Agents-tab file panel
 

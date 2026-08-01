@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_telegram_pypi_release.md](prompts/sase_telegram_pypi_release.md)
+- **PROMPT:** [prompts/202606/sase_telegram_pypi_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_telegram_pypi_release.md)
 
 # Plan: Publish sase-telegram 0.1.0 to PyPI
 

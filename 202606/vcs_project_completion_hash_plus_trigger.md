@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_project_completion_hash_plus_trigger.md](prompts/vcs_project_completion_hash_plus_trigger.md)
+- **PROMPT:** [prompts/202606/vcs_project_completion_hash_plus_trigger.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_project_completion_hash_plus_trigger.md)
 
 # Plan: Change VCS project completion trigger from `+` to `#+`
 

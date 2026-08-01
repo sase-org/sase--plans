@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plugin_catalog_verification.md](prompts/plugin_catalog_verification.md)
+- **PROMPT:** [prompts/202606/plugin_catalog_verification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plugin_catalog_verification.md)
 
 # Plan: Plugin catalog verification cleanup
 

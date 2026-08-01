@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/revive_bundle_reprojection.md](prompts/revive_bundle_reprojection.md)
+- **PROMPT:** [prompts/202606/revive_bundle_reprojection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/revive_bundle_reprojection.md)
 
 # Plan: Revived agents get re-hidden by stale dismissed bundles
 

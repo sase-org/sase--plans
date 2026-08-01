@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_name_collision_race.md](prompts/agent_name_collision_race.md)
+- **PROMPT:** [prompts/202606/agent_name_collision_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_name_collision_race.md)
 
 # Fix Explicit Agent Name Collision Race
 

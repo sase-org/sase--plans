@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/persist_admin_center_tab.md](prompts/persist_admin_center_tab.md)
+- **PROMPT:** [prompts/202606/persist_admin_center_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/persist_admin_center_tab.md)
 
 # Persist Admin Center Tab Selection
 

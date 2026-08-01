@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/double_dash_agent_family_separator.md](prompts/double_dash_agent_family_separator.md)
+- **PROMPT:** [prompts/202606/double_dash_agent_family_separator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/double_dash_agent_family_separator.md)
 
 # Plan: Double-Dash Agent Family Separator
 

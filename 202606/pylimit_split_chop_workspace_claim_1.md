@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pylimit_split_chop_workspace_claim_1.md](prompts/pylimit_split_chop_workspace_claim_1.md)
+- **PROMPT:** [prompts/202606/pylimit_split_chop_workspace_claim_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pylimit_split_chop_workspace_claim_1.md)
 
 # Plan: Fix `sase_pylimit_split` Workspace Claim Races
 

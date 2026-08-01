@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/completion_directives_skills.md](prompts/completion_directives_skills.md)
+- **PROMPT:** [prompts/202606/completion_directives_skills.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/completion_directives_skills.md)
 
 # Auto Completion for Directives and XPrompt Skills
 

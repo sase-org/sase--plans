@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/unify_prompt_stash_panel.md](prompts/unify_prompt_stash_panel.md)
+- **PROMPT:** [prompts/202606/unify_prompt_stash_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/unify_prompt_stash_panel.md)
 
 # Unify Prompt-Stash Keymaps via a Per-Entry Restore Panel
 

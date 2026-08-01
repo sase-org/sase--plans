@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_first_tab_1.md](prompts/agents_first_tab_1.md)
+- **PROMPT:** [prompts/202606/agents_first_tab_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_first_tab_1.md)
 
 # Agents First Tab Plan
 

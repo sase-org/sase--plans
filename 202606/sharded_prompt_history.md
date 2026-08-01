@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sharded_prompt_history.md](prompts/sharded_prompt_history.md)
+- **PROMPT:** [prompts/202606/sharded_prompt_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sharded_prompt_history.md)
 
 # Sharded, Lazy-Loaded Prompt History
 

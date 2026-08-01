@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_xprompt_mru_all_launch_paths.md](prompts/vcs_xprompt_mru_all_launch_paths.md)
+- **PROMPT:** [prompts/202606/vcs_xprompt_mru_all_launch_paths.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_xprompt_mru_all_launch_paths.md)
 
 # Plan: Record the submitted VCS xprompt workflow to the MRU on every launch path
 

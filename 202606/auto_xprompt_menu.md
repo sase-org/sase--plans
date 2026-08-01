@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/auto_xprompt_menu.md](prompts/auto_xprompt_menu.md)
+- **PROMPT:** [prompts/202606/auto_xprompt_menu.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/auto_xprompt_menu.md)
 
 # Plan: Auto-trigger xprompt completion on `#<X>` (like `#+` project completion)
 

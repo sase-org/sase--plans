@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_e_xprompt_select_1.md](prompts/ctrl_e_xprompt_select_1.md)
+- **PROMPT:** [prompts/202606/ctrl_e_xprompt_select_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_e_xprompt_select_1.md)
 
 # Plan: Ctrl+E Editor Action in Select XPrompt
 

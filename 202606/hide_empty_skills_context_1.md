@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_empty_skills_context_1.md](prompts/hide_empty_skills_context_1.md)
+- **PROMPT:** [prompts/202606/hide_empty_skills_context_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_empty_skills_context_1.md)
 
 # Plan: Hide Empty SKILLS Lane in AGENT CONTEXT
 

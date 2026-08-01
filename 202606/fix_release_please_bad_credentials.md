@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_release_please_bad_credentials.md](prompts/fix_release_please_bad_credentials.md)
+- **PROMPT:** [prompts/202606/fix_release_please_bad_credentials.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_release_please_bad_credentials.md)
 
 # Plan: Stop the `Publish` workflow's intermittent `release-please: Bad credentials` failures
 

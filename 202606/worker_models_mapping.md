@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/worker_models_mapping.md](prompts/worker_models_mapping.md)
+- **PROMPT:** [prompts/202606/worker_models_mapping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/worker_models_mapping.md)
 
 # Worker Models Mapping
 

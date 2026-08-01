@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_onboarding_full_tab.md](prompts/agents_onboarding_full_tab.md)
+- **PROMPT:** [prompts/202606/agents_onboarding_full_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_onboarding_full_tab.md)
 
 # Plan: Agents-tab Onboarding Takes Over the Full Tab
 

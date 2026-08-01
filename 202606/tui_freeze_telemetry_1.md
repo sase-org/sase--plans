@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_freeze_telemetry_1.md](prompts/tui_freeze_telemetry_1.md)
+- **PROMPT:** [prompts/202606/tui_freeze_telemetry_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_freeze_telemetry_1.md)
 
 # Plan: Always-On Telemetry to Diagnose `sase ace` TUI Freezes
 

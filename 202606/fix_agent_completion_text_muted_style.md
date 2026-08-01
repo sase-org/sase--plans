@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_agent_completion_text_muted_style.md](prompts/fix_agent_completion_text_muted_style.md)
+- **PROMPT:** [prompts/202606/fix_agent_completion_text_muted_style.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_agent_completion_text_muted_style.md)
 
 # Fix `MissingStyle` crash on `%w:` agent-name completion (`$text-muted` leak)
 

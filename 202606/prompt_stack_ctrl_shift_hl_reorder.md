@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_ctrl_shift_hl_reorder.md](prompts/prompt_stack_ctrl_shift_hl_reorder.md)
+- **PROMPT:** [prompts/202606/prompt_stack_ctrl_shift_hl_reorder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_ctrl_shift_hl_reorder.md)
 
 # Migrate Prompt Stack Reorder to Ctrl+Shift+H/L
 

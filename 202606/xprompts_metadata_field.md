@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompts_metadata_field.md](prompts/xprompts_metadata_field.md)
+- **PROMPT:** [prompts/202606/xprompts_metadata_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompts_metadata_field.md)
 
 # Plan: Replace "Embedded Workflows" with a redesigned "Xprompts" field
 

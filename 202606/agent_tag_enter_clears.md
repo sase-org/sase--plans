@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_tag_enter_clears.md](prompts/agent_tag_enter_clears.md)
+- **PROMPT:** [prompts/202606/agent_tag_enter_clears.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_tag_enter_clears.md)
 
 # Plan: Pressing `N` then Enter on a tagged agent should move it to `(untagged)`
 

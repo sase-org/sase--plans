@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/workflow_variables.md](prompts/workflow_variables.md)
+- **PROMPT:** [prompts/202606/workflow_variables.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/workflow_variables.md)
 
 # Rename Step Metadata to Workflow Variables
 

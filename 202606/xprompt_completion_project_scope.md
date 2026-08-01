@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_completion_project_scope.md](prompts/xprompt_completion_project_scope.md)
+- **PROMPT:** [prompts/202606/xprompt_completion_project_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_completion_project_scope.md)
 
 # Fix: built-in `#plan` (and peers) only complete under `#gh:sase`, not other projects
 

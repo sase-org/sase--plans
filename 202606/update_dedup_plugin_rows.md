@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/update_dedup_plugin_rows.md](prompts/update_dedup_plugin_rows.md)
+- **PROMPT:** [prompts/202606/update_dedup_plugin_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/update_dedup_plugin_rows.md)
 
 # Plan: Deduplicate Plugin Rows in `sase update`
 

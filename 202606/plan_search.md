@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202606/prompts/plan_search.md](prompts/plan_search.md)
+- **PROMPT:** [prompts/202606/plan_search.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_search.md)
 - **BEAD:** [sase-4x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4x/README.md)
 
 # Plan: `sase plan search` — Search SDD & Local Plans

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_mru_cycling_anywhere.md](prompts/vcs_mru_cycling_anywhere.md)
+- **PROMPT:** [prompts/202606/vcs_mru_cycling_anywhere.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_mru_cycling_anywhere.md)
 
 # Plan: Make `<ctrl+p>`/`<ctrl+n>` VCS MRU cycling work in (almost) any prompt
 

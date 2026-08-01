@@ -5,7 +5,7 @@ bead_id: sase-4l
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/prompt_vim_keymaps.md](prompts/prompt_vim_keymaps.md)
+- **PROMPT:** [prompts/202606/prompt_vim_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_vim_keymaps.md)
 - **BEAD:** [sase-4l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4l/README.md)
 
 # Plan: Fill in Missing Vim Keymaps in the Prompt Input Widget

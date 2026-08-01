@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_ctrl_n_vcs_mru_cycling.md](prompts/fix_ctrl_n_vcs_mru_cycling.md)
+- **PROMPT:** [prompts/202606/fix_ctrl_n_vcs_mru_cycling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_ctrl_n_vcs_mru_cycling.md)
 
 # Fix Ctrl+N VCS MRU Cycling
 

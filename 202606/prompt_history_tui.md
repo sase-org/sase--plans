@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_tui.md](prompts/prompt_history_tui.md)
+- **PROMPT:** [prompts/202606/prompt_history_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_tui.md)
 - **BEAD:** [sase-4m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4m/README.md)
 
 # Prompt History TUI Improvements

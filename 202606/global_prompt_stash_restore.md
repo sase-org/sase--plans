@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/global_prompt_stash_restore.md](prompts/global_prompt_stash_restore.md)
+- **PROMPT:** [prompts/202606/global_prompt_stash_restore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/global_prompt_stash_restore.md)
 
 # Global Prompt Stash Restore Keymap
 

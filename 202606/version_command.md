@@ -5,7 +5,7 @@ bead_id: sase-4h
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/version_command.md](prompts/version_command.md)
+- **PROMPT:** [prompts/202606/version_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/version_command.md)
 - **BEAD:** [sase-4h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4h/README.md)
 
 # `sase version` Runtime Inventory Plan

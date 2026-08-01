@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/license_file_cleanup.md](prompts/license_file_cleanup.md)
+- **PROMPT:** [prompts/202606/license_file_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/license_file_cleanup.md)
 
 # Plan: Add Official MIT License File and Packaging Metadata
 

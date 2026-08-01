@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_commits_panel_snapshot.md](prompts/fix_commits_panel_snapshot.md)
+- **PROMPT:** [prompts/202606/fix_commits_panel_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_commits_panel_snapshot.md)
 
 # Fix the failing `test_agents_commit_messages_panel_png_snapshot` visual test
 

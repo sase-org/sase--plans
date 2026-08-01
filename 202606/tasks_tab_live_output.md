@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tasks_tab_live_output.md](prompts/tasks_tab_live_output.md)
+- **PROMPT:** [prompts/202606/tasks_tab_live_output.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tasks_tab_live_output.md)
 
 # Plan: Beautiful, Live Output for the Admin Center "Tasks" Tab
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/split_vim_visual.md](prompts/split_vim_visual.md)
+- **PROMPT:** [prompts/202606/split_vim_visual.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/split_vim_visual.md)
 
 # Split Vim Visual-Mode Widget Module
 

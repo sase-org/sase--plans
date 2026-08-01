@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/reasoning_effort_agent_metadata.md](prompts/reasoning_effort_agent_metadata.md)
+- **PROMPT:** [prompts/202606/reasoning_effort_agent_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/reasoning_effort_agent_metadata.md)
 
 # Plan: Restore Reasoning-Effort Metadata in Agent Panels
 

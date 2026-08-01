@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/confirmed_bead_display.md](prompts/confirmed_bead_display.md)
+- **PROMPT:** [prompts/202606/confirmed_bead_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/confirmed_bead_display.md)
 
 # Confirmed Bead Display in `sase ace` Agents Tab
 

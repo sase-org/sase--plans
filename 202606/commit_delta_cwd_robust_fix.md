@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/commit_delta_cwd_robust_fix.md](prompts/commit_delta_cwd_robust_fix.md)
+- **PROMPT:** [prompts/202606/commit_delta_cwd_robust_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/commit_delta_cwd_robust_fix.md)
 
 # Make the commit-delta visual test robustly CWD-independent and harden the suite against CWD leaks
 

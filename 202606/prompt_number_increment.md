@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_number_increment.md](prompts/prompt_number_increment.md)
+- **PROMPT:** [prompts/202606/prompt_number_increment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_number_increment.md)
 
 # Plan: Vim-style `<ctrl+a>` / `<ctrl+x>` number increment/decrement in the prompt input
 

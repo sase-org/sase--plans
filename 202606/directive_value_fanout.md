@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/directive_value_fanout.md](prompts/directive_value_fanout.md)
+- **PROMPT:** [prompts/202606/directive_value_fanout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/directive_value_fanout.md)
 
 # Plan: Directive-Value Fan-Out (`%directive:%{a | b | c}`)
 

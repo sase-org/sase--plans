@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_stash_properties.md](prompts/xprompt_stash_properties.md)
+- **PROMPT:** [prompts/202606/xprompt_stash_properties.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_stash_properties.md)
 
 # Preserve xprompt properties through prompt stash bundles
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_keymap_rebinds.md](prompts/prompt_stack_keymap_rebinds.md)
+- **PROMPT:** [prompts/202606/prompt_stack_keymap_rebinds.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_keymap_rebinds.md)
 
 # Prompt Stack Keymap Rebinds Plan
 

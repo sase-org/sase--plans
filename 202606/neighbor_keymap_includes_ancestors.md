@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/neighbor_keymap_includes_ancestors.md](prompts/neighbor_keymap_includes_ancestors.md)
+- **PROMPT:** [prompts/202606/neighbor_keymap_includes_ancestors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/neighbor_keymap_includes_ancestors.md)
 
 # Plan: Make the `~` (neighbors) keymap include ancestors of the selected agent
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/atomic_starting_count_and_row.md](prompts/atomic_starting_count_and_row.md)
+- **PROMPT:** [prompts/202606/atomic_starting_count_and_row.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/atomic_starting_count_and_row.md)
 
 # Make the "starting" count decrement and the new agent row appear atomically
 

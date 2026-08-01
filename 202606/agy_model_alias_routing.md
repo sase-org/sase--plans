@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agy_model_alias_routing.md](prompts/agy_model_alias_routing.md)
+- **PROMPT:** [prompts/202606/agy_model_alias_routing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agy_model_alias_routing.md)
 
 # Plan: Restore Antigravity model xprompt routing
 

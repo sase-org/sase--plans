@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_metadata_capture.md](prompts/xprompt_metadata_capture.md)
+- **PROMPT:** [prompts/202606/xprompt_metadata_capture.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_metadata_capture.md)
 
 # Plan: Complete Xprompt Metadata Capture
 

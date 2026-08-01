@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/stuck_starting_agents_orphaned_claims.md](prompts/stuck_starting_agents_orphaned_claims.md)
+- **PROMPT:** [prompts/202606/stuck_starting_agents_orphaned_claims.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/stuck_starting_agents_orphaned_claims.md)
 
 # Plan: Fix agents stuck in "starting" (orphaned RUNNING-field workspace claims)
 

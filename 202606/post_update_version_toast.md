@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/post_update_version_toast.md](prompts/post_update_version_toast.md)
+- **PROMPT:** [prompts/202606/post_update_version_toast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/post_update_version_toast.md)
 
 # Plan: "You just updated" version toast after a SASE self-update + TUI restart
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jinja2_prompt_input.md](prompts/jinja2_prompt_input.md)
+- **PROMPT:** [prompts/202606/jinja2_prompt_input.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jinja2_prompt_input.md)
 
 # Plan: Beautiful Jinja2 Support & Visual Aid in the Prompt Input Widget
 

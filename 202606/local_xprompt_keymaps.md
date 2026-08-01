@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/local_xprompt_keymaps.md](prompts/local_xprompt_keymaps.md)
+- **PROMPT:** [prompts/202606/local_xprompt_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/local_xprompt_keymaps.md)
 
 # Plan: Prompt Input `gX` / `Ctrl+G X` Local XPrompt Conversion
 

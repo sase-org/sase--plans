@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_shift_enter_prompt_stack.md](prompts/remove_shift_enter_prompt_stack.md)
+- **PROMPT:** [prompts/202606/remove_shift_enter_prompt_stack.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_shift_enter_prompt_stack.md)
 
 # Plan: Remove Shift+Enter Prompt-Stack Submit Support
 

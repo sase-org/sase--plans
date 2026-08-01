@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_part_color.md](prompts/xprompt_part_color.md)
+- **PROMPT:** [prompts/202606/xprompt_part_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_part_color.md)
 
 # Plan: Distinct Xprompt Part Color In Agent Metadata
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rename_cls_tab_to_prs.md](prompts/rename_cls_tab_to_prs.md)
+- **PROMPT:** [prompts/202606/rename_cls_tab_to_prs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rename_cls_tab_to_prs.md)
 
 # Rename ACE "CLs" Tab to "PRs"
 

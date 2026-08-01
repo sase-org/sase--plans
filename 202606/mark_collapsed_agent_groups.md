@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/mark_collapsed_agent_groups.md](prompts/mark_collapsed_agent_groups.md)
+- **PROMPT:** [prompts/202606/mark_collapsed_agent_groups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/mark_collapsed_agent_groups.md)
 
 # Plan: Mark Collapsed Agent Groups on the Agents Tab
 

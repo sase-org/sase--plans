@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pyvendor_strip_executable_prefix.md](prompts/pyvendor_strip_executable_prefix.md)
+- **PROMPT:** [prompts/202606/pyvendor_strip_executable_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pyvendor_strip_executable_prefix.md)
 
 # Plan: Strip Chezmoi `executable_` Prefix During Pyvendor
 

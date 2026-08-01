@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_insert_ctrl_g_prefix.md](prompts/prompt_insert_ctrl_g_prefix.md)
+- **PROMPT:** [prompts/202606/prompt_insert_ctrl_g_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_insert_ctrl_g_prefix.md)
 
 # Prompt Insert-Mode Ctrl+G Prefix Plan
 

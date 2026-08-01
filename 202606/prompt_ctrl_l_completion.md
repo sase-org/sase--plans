@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_ctrl_l_completion.md](prompts/prompt_ctrl_l_completion.md)
+- **PROMPT:** [prompts/202606/prompt_ctrl_l_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_ctrl_l_completion.md)
 
 # Prompt Ctrl+L Completion Plan
 

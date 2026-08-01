@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/epic_approved_status_reconstruction.md](prompts/epic_approved_status_reconstruction.md)
+- **PROMPT:** [prompts/202606/epic_approved_status_reconstruction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/epic_approved_status_reconstruction.md)
 
 # Plan: Reconstruct EPIC/LEGEND/COMMIT Approved-Handoff Statuses After TUI Restart
 

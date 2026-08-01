@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_neighbors_hoods.md](prompts/agent_neighbors_hoods.md)
+- **PROMPT:** [prompts/202606/agent_neighbors_hoods.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_neighbors_hoods.md)
 
 # Agent Neighbors and Hoods Terminology Plan
 

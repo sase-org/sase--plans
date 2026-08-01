@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_metadata.md](prompts/prompt_history_metadata.md)
+- **PROMPT:** [prompts/202606/prompt_history_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_metadata.md)
 
 # Plan: Show project + directives/xprompts in the prompt history panel
 

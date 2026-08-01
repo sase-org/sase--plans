@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/repeat_stop_status_1.md](prompts/repeat_stop_status_1.md)
+- **PROMPT:** [prompts/202606/repeat_stop_status_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/repeat_stop_status_1.md)
 
 # Plan: Display Repeat STOP Slots As STOPPED
 

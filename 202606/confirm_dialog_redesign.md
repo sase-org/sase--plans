@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/confirm_dialog_redesign.md](prompts/confirm_dialog_redesign.md)
+- **PROMPT:** [prompts/202606/confirm_dialog_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/confirm_dialog_redesign.md)
 
 # Plan: Unified, Beautiful Confirmation Dialogs for the `sase ace` TUI
 

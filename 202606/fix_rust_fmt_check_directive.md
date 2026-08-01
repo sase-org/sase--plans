@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_rust_fmt_check_directive.md](prompts/fix_rust_fmt_check_directive.md)
+- **PROMPT:** [prompts/202606/fix_rust_fmt_check_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_rust_fmt_check_directive.md)
 
 # Fix `rust-fmt-check` CI failure in `directive.rs`
 

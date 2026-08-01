@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/answered_question_status_1.md](prompts/answered_question_status_1.md)
+- **PROMPT:** [prompts/202606/answered_question_status_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/answered_question_status_1.md)
 
 # Plan: Fix `sase-4z.5` family showing `QUESTION` after its question was answered
 

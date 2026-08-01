@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/help_output_sort_color.md](prompts/help_output_sort_color.md)
+- **PROMPT:** [prompts/202606/help_output_sort_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/help_output_sort_color.md)
 
 # Plan: Colored, Sorted Root Help
 

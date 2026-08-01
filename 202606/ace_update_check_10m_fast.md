@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_update_check_10m_fast.md](prompts/ace_update_check_10m_fast.md)
+- **PROMPT:** [prompts/202606/ace_update_check_10m_fast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_update_check_10m_fast.md)
 
 # ACE Update Check Cadence and Speed Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jinja_variable_delete_pairs.md](prompts/jinja_variable_delete_pairs.md)
+- **PROMPT:** [prompts/202606/jinja_variable_delete_pairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jinja_variable_delete_pairs.md)
 
 # Plan: Jinja Variable Paired Deletion
 

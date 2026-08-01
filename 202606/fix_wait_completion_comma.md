@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_wait_completion_comma.md](prompts/fix_wait_completion_comma.md)
+- **PROMPT:** [prompts/202606/fix_wait_completion_comma.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_wait_completion_comma.md)
 
 # Fix Wait-Agent Completion After Prose Commas
 

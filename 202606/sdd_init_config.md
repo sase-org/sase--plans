@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sdd_init_config.md](prompts/sdd_init_config.md)
+- **PROMPT:** [prompts/202606/sdd_init_config.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sdd_init_config.md)
 
 # Plan: `sase sdd init` Enables Version-Controlled SDD
 

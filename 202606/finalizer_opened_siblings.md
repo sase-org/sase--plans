@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/finalizer_opened_siblings.md](prompts/finalizer_opened_siblings.md)
+- **PROMPT:** [prompts/202606/finalizer_opened_siblings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/finalizer_opened_siblings.md)
 
 # Plan: Commit finalizer only checks sibling repos the agent actually opened
 

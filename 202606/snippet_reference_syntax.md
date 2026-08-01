@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/snippet_reference_syntax.md](prompts/snippet_reference_syntax.md)
+- **PROMPT:** [prompts/202606/snippet_reference_syntax.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/snippet_reference_syntax.md)
 
 # Plan: `#[<snippet>]` snippet-reuse syntax
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/persist_prompt_stash_pin.md](prompts/persist_prompt_stash_pin.md)
+- **PROMPT:** [prompts/202606/persist_prompt_stash_pin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/persist_prompt_stash_pin.md)
 
 # Plan: Persistent "pin" for prompt-stash entries (`<space>` toggles a pin that survives restarts)
 

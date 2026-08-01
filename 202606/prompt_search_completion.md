@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_search_completion.md](prompts/prompt_search_completion.md)
+- **PROMPT:** [prompts/202606/prompt_search_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_search_completion.md)
 
 # Complete `sase-4y` Prompt Search Verification
 

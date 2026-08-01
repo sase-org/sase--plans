@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_ctrl_minus_add_pane.md](prompts/prompt_stack_ctrl_minus_add_pane.md)
+- **PROMPT:** [prompts/202606/prompt_stack_ctrl_minus_add_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_ctrl_minus_add_pane.md)
 
 # Plan: Migrate Prompt Stack Add-Pane From `-` to `Ctrl+-`
 

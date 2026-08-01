@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_delete_missing_spec.md](prompts/project_delete_missing_spec.md)
+- **PROMPT:** [prompts/202606/project_delete_missing_spec.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_delete_missing_spec.md)
 
 # Plan: Fix Project Management Delete for Missing Active ProjectSpec
 

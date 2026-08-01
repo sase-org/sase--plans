@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_terminalized_abandoned_agents.md](prompts/hide_terminalized_abandoned_agents.md)
+- **PROMPT:** [prompts/202606/hide_terminalized_abandoned_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_terminalized_abandoned_agents.md)
 
 # Plan: Stop terminalized "abandoned" agents from reappearing on the Agents tab
 

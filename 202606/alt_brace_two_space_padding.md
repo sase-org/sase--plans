@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/alt_brace_two_space_padding.md](prompts/alt_brace_two_space_padding.md)
+- **PROMPT:** [prompts/202606/alt_brace_two_space_padding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/alt_brace_two_space_padding.md)
 
 # Plan: Two-space padding inside `%{}` alternation braces on open
 

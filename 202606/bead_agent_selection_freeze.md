@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_agent_selection_freeze.md](prompts/bead_agent_selection_freeze.md)
+- **PROMPT:** [prompts/202606/bead_agent_selection_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_agent_selection_freeze.md)
 
 # Fix: TUI freeze when selecting a bead-associated agent
 

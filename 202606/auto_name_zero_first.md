@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/auto_name_zero_first.md](prompts/auto_name_zero_first.md)
+- **PROMPT:** [prompts/202606/auto_name_zero_first.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/auto_name_zero_first.md)
 
 # Auto Name Zero-First Plan
 

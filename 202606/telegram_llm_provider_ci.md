@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/telegram_llm_provider_ci.md](prompts/telegram_llm_provider_ci.md)
+- **PROMPT:** [prompts/202606/telegram_llm_provider_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/telegram_llm_provider_ci.md)
 
 # Fix Telegram Launch Tests Without an Installed LLM Provider
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/root_row_multi_provider_icons.md](prompts/root_row_multi_provider_icons.md)
+- **PROMPT:** [prompts/202606/root_row_multi_provider_icons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/root_row_multi_provider_icons.md)
 
 # Show All Child LLM Provider Icons on Root Agent Rows
 

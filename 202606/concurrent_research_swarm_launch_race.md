@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/concurrent_research_swarm_launch_race.md](prompts/concurrent_research_swarm_launch_race.md)
+- **PROMPT:** [prompts/202606/concurrent_research_swarm_launch_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/concurrent_research_swarm_launch_race.md)
 
 # Plan: Fix Concurrent Research Swarm Launch Races
 

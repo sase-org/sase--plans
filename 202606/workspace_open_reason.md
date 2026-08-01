@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/workspace_open_reason.md](prompts/workspace_open_reason.md)
+- **PROMPT:** [prompts/202606/workspace_open_reason.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/workspace_open_reason.md)
 
 # Require a Reason for `sase workspace open`
 

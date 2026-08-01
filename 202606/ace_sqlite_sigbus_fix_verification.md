@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_sqlite_sigbus_fix_verification.md](prompts/ace_sqlite_sigbus_fix_verification.md)
+- **PROMPT:** [prompts/202606/ace_sqlite_sigbus_fix_verification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_sqlite_sigbus_fix_verification.md)
 
 # Plan: Verify and Complete the `sase ace` SQLite SIGBUS Fix
 

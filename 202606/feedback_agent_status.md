@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/feedback_agent_status.md](prompts/feedback_agent_status.md)
+- **PROMPT:** [prompts/202606/feedback_agent_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/feedback_agent_status.md)
 
 # Plan: Add a `FEEDBACK` agent status for planner rounds that received user feedback
 

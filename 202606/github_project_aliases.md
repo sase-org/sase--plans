@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202606/prompts/github_project_aliases.md](prompts/github_project_aliases.md)
+- **PROMPT:** [prompts/202606/github_project_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/github_project_aliases.md)
 - **BEAD:** [sase-4d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4d/README.md)
 
 # GitHub Project Alias Allocation Plan

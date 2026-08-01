@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_commit_delta_summary_cwd_ci_failure.md](prompts/fix_commit_delta_summary_cwd_ci_failure.md)
+- **PROMPT:** [prompts/202606/fix_commit_delta_summary_cwd_ci_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_commit_delta_summary_cwd_ci_failure.md)
 
 # Fix CI failure: `test_agents_commit_messages_panel_png_snapshot` times out
 

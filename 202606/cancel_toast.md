@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/cancel_toast.md](prompts/cancel_toast.md)
+- **PROMPT:** [prompts/202606/cancel_toast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/cancel_toast.md)
 
 # Plan: Make the prompt-cancel toast meaningful
 

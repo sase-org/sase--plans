@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/close_admin_center_on_sase_update_confirm.md](prompts/close_admin_center_on_sase_update_confirm.md)
+- **PROMPT:** [prompts/202606/close_admin_center_on_sase_update_confirm.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/close_admin_center_on_sase_update_confirm.md)
 
 # Close Admin Center After Full SASE Update Confirmation
 

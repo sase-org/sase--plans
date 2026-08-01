@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jump_to_definition_keymap.md](prompts/jump_to_definition_keymap.md)
+- **PROMPT:** [prompts/202606/jump_to_definition_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jump_to_definition_keymap.md)
 
 # Plan: `Ctrl+]` Jump-to-Definition Keymap for the Prompt Input Widget
 

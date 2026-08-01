@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/single_inactive_project_state_1.md](prompts/single_inactive_project_state_1.md)
+- **PROMPT:** [prompts/202606/single_inactive_project_state_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/single_inactive_project_state_1.md)
 
 # Plan: Single Inactive Project State
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_config_repo_migration.md](prompts/remove_config_repo_migration.md)
+- **PROMPT:** [prompts/202606/remove_config_repo_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_config_repo_migration.md)
 
 # Remove the Config-tab `g` "Migrate repos" keymap and its migration logic
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_name_completion.md](prompts/agent_name_completion.md)
+- **PROMPT:** [prompts/202606/agent_name_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_name_completion.md)
 
 # Plan: Agent-name completion for the `%wait` directive and the `#fork` xprompt
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/auto_approve_pending_plan.md](prompts/auto_approve_pending_plan.md)
+- **PROMPT:** [prompts/202606/auto_approve_pending_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/auto_approve_pending_plan.md)
 
 # Fix: `%auto` set via the `A` keymap does not auto-approve an already-pending plan
 

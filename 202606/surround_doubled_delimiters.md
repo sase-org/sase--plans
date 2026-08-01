@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/surround_doubled_delimiters.md](prompts/surround_doubled_delimiters.md)
+- **PROMPT:** [prompts/202606/surround_doubled_delimiters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/surround_doubled_delimiters.md)
 
 # Fix doubled same-character surround delimiters
 

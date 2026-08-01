@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_home_replay_filter.md](prompts/vcs_home_replay_filter.md)
+- **PROMPT:** [prompts/202606/vcs_home_replay_filter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_home_replay_filter.md)
 
 # Plan: Exclude `#git:home` From VCS Replay History
 

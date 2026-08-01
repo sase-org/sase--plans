@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_core_rs_0_1_1_release_pr.md](prompts/sase_core_rs_0_1_1_release_pr.md)
+- **PROMPT:** [prompts/202606/sase_core_rs_0_1_1_release_pr.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_core_rs_0_1_1_release_pr.md)
 
 # Plan: release `sase-core-rs` 0.1.1 via the recovery PR
 

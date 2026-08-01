@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_management_fullscreen.md](prompts/project_management_fullscreen.md)
+- **PROMPT:** [prompts/202606/project_management_fullscreen.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_management_fullscreen.md)
 
 # Plan: Beautiful Near-Full-Screen Project Management Panel
 

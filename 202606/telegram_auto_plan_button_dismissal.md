@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/telegram_auto_plan_button_dismissal.md](prompts/telegram_auto_plan_button_dismissal.md)
+- **PROMPT:** [prompts/202606/telegram_auto_plan_button_dismissal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/telegram_auto_plan_button_dismissal.md)
 
 # Telegram Auto-Approved Plan Button Dismissal
 

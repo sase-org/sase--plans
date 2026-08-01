@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/answered_continuation_asker_status.md](prompts/answered_continuation_asker_status.md)
+- **PROMPT:** [prompts/202606/answered_continuation_asker_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/answered_continuation_asker_status.md)
 
 # Plan: Question-continuation askers should show ANSWERED, not DONE
 

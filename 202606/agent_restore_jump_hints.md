@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_restore_jump_hints.md](prompts/agent_restore_jump_hints.md)
+- **PROMPT:** [prompts/202606/agent_restore_jump_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_restore_jump_hints.md)
 
 # Agent Restore Jump Hints Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_onboarding_visible_gate.md](prompts/agents_onboarding_visible_gate.md)
+- **PROMPT:** [prompts/202606/agents_onboarding_visible_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_onboarding_visible_gate.md)
 
 # Fix: Agents-tab onboarding not shown when the visible list is empty
 

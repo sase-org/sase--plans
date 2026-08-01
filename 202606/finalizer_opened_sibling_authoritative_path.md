@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/finalizer_opened_sibling_authoritative_path.md](prompts/finalizer_opened_sibling_authoritative_path.md)
+- **PROMPT:** [prompts/202606/finalizer_opened_sibling_authoritative_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/finalizer_opened_sibling_authoritative_path.md)
 
 # Plan: Make the commit finalizer use the recorded opened-sibling workspace path
 

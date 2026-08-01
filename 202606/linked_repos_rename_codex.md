@@ -5,7 +5,7 @@ bead_id: sase-51
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/linked_repos_rename_codex.md](prompts/linked_repos_rename_codex.md)
+- **PROMPT:** [prompts/202606/linked_repos_rename_codex.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/linked_repos_rename_codex.md)
 - **BEAD:** [sase-51](https://github.com/sase-org/sase--beads/blob/main/pages/sase-51/README.md)
 
 # Rename Configured Sibling Repos To `linked_repos`

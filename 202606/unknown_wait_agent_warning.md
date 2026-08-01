@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/unknown_wait_agent_warning.md](prompts/unknown_wait_agent_warning.md)
+- **PROMPT:** [prompts/202606/unknown_wait_agent_warning.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/unknown_wait_agent_warning.md)
 
 # Plan: Warning marker for unknown agents in the "Waiting for:" field
 

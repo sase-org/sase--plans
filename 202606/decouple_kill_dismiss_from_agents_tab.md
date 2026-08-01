@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/decouple_kill_dismiss_from_agents_tab.md](prompts/decouple_kill_dismiss_from_agents_tab.md)
+- **PROMPT:** [prompts/202606/decouple_kill_dismiss_from_agents_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/decouple_kill_dismiss_from_agents_tab.md)
 
 # Plan: Stop kill/dismiss cleanup from blocking Agents-tab updates
 

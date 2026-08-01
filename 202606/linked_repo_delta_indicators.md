@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/linked_repo_delta_indicators.md](prompts/linked_repo_delta_indicators.md)
+- **PROMPT:** [prompts/202606/linked_repo_delta_indicators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/linked_repo_delta_indicators.md)
 
 # Linked-Repo Indicators for the Agents-Tab "Deltas:" Section
 

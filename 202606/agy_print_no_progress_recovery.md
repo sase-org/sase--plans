@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agy_print_no_progress_recovery.md](prompts/agy_print_no_progress_recovery.md)
+- **PROMPT:** [prompts/202606/agy_print_no_progress_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agy_print_no_progress_recovery.md)
 
 # Plan: Fix the Antigravity (`agy`) "planning-only / waiting-for-approval" false-success
 

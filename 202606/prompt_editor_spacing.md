@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_editor_spacing.md](prompts/prompt_editor_spacing.md)
+- **PROMPT:** [prompts/202606/prompt_editor_spacing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_editor_spacing.md)
 
 # Plan: Prompt Editor Markdown Spacing
 

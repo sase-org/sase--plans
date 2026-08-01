@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/wait_time_countdown_after_deps.md](prompts/wait_time_countdown_after_deps.md)
+- **PROMPT:** [prompts/202606/wait_time_countdown_after_deps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/wait_time_countdown_after_deps.md)
 
 # Plan: `%wait` relative-time countdown must start only after agent dependencies complete
 

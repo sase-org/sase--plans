@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_config_panel_redesign.md](prompts/sase_config_panel_redesign.md)
+- **PROMPT:** [prompts/202606/sase_config_panel_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_config_panel_redesign.md)
 
 # Plan: Beautify the "SASE Config" panel (Config Center modal)
 

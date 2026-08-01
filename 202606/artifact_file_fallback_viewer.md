@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/artifact_file_fallback_viewer.md](prompts/artifact_file_fallback_viewer.md)
+- **PROMPT:** [prompts/202606/artifact_file_fallback_viewer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/artifact_file_fallback_viewer.md)
 
 # Plan: Artifact File Fallback Viewer
 

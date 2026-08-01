@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/workspace_tmux_chooser.md](prompts/workspace_tmux_chooser.md)
+- **PROMPT:** [prompts/202606/workspace_tmux_chooser.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/workspace_tmux_chooser.md)
 
 # Tmux Workspace Chooser for Agents with Opened Workspaces
 

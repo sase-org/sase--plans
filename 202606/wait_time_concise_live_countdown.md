@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/wait_time_concise_live_countdown.md](prompts/wait_time_concise_live_countdown.md)
+- **PROMPT:** [prompts/202606/wait_time_concise_live_countdown.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/wait_time_concise_live_countdown.md)
 
 # Concise, live countdown for time-floored `%wait` agents
 

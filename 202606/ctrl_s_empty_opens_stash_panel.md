@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_s_empty_opens_stash_panel.md](prompts/ctrl_s_empty_opens_stash_panel.md)
+- **PROMPT:** [prompts/202606/ctrl_s_empty_opens_stash_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_s_empty_opens_stash_panel.md)
 
 # Plan: `<Ctrl+S>` on an empty prompt opens the prompt stash panel
 

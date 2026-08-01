@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_management_edit_keymap.md](prompts/project_management_edit_keymap.md)
+- **PROMPT:** [prompts/202606/project_management_edit_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_management_edit_keymap.md)
 
 # Plan: Project Management `e` Edit Keymap
 

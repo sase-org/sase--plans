@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_work_force_reuse_relaunch_1.md](prompts/bead_work_force_reuse_relaunch_1.md)
+- **PROMPT:** [prompts/202606/bead_work_force_reuse_relaunch_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_work_force_reuse_relaunch_1.md)
 
 # Bead Work Force-Reuse Relaunch Plan
 

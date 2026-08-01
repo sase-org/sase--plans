@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/repeat_stop_variable.md](prompts/repeat_stop_variable.md)
+- **PROMPT:** [prompts/202606/repeat_stop_variable.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/repeat_stop_variable.md)
 
 # Plan: STOP Output Variable for `%repeat`
 

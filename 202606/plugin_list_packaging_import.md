@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plugin_list_packaging_import.md](prompts/plugin_list_packaging_import.md)
+- **PROMPT:** [prompts/202606/plugin_list_packaging_import.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plugin_list_packaging_import.md)
 
 # Plan: Fix `sase plugin list` crash when `packaging` is absent
 

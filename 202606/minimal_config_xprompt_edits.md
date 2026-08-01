@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/minimal_config_xprompt_edits.md](prompts/minimal_config_xprompt_edits.md)
+- **PROMPT:** [prompts/202606/minimal_config_xprompt_edits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/minimal_config_xprompt_edits.md)
 
 # Plan: Minimal, comment-preserving xprompt edits in YAML config files
 

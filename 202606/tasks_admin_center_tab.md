@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tasks_admin_center_tab.md](prompts/tasks_admin_center_tab.md)
+- **PROMPT:** [prompts/202606/tasks_admin_center_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tasks_admin_center_tab.md)
 
 # Plan: Migrate the `,t` Tasks Queue panel into the SASE Admin Center as a "Tasks" tab
 

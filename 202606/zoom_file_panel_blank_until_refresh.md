@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/zoom_file_panel_blank_until_refresh.md](prompts/zoom_file_panel_blank_until_refresh.md)
+- **PROMPT:** [prompts/202606/zoom_file_panel_blank_until_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/zoom_file_panel_blank_until_refresh.md)
 
 # Fix: ACE Agents-tab zoom file panel renders nothing until manual refresh
 

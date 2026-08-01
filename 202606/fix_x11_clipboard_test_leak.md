@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_x11_clipboard_test_leak.md](prompts/fix_x11_clipboard_test_leak.md)
+- **PROMPT:** [prompts/202606/fix_x11_clipboard_test_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_x11_clipboard_test_leak.md)
 
 # Fix X11 authentication errors triggered by the test suite
 

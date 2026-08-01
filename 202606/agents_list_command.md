@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_list_command.md](prompts/agents_list_command.md)
+- **PROMPT:** [prompts/202606/agents_list_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_list_command.md)
 
 # Plan: Rename `sase agents status` to `sase agents list`
 

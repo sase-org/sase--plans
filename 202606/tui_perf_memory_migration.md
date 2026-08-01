@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_perf_memory_migration.md](prompts/tui_perf_memory_migration.md)
+- **PROMPT:** [prompts/202606/tui_perf_memory_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_perf_memory_migration.md)
 
 # Migrate `memory/long/tui_jk_baseline.md` → `memory/long/tui_perf.md`
 

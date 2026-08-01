@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plan_list_perf.md](prompts/plan_list_perf.md)
+- **PROMPT:** [prompts/202606/plan_list_perf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_list_perf.md)
 
 # Plan: Make `sase plan list` Fast
 

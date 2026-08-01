@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/planner_runtime_telegram.md](prompts/planner_runtime_telegram.md)
+- **PROMPT:** [prompts/202606/planner_runtime_telegram.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/planner_runtime_telegram.md)
 
 # Add planner runtime to Telegram plan approval messages
 

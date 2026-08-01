@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_vim_cursor_highlight.md](prompts/prompt_vim_cursor_highlight.md)
+- **PROMPT:** [prompts/202606/prompt_vim_cursor_highlight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_vim_cursor_highlight.md)
 
 # Plan: Readable, mode-distinct vim cursor in the Prompt Input Widget
 

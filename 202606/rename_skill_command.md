@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rename_skill_command.md](prompts/rename_skill_command.md)
+- **PROMPT:** [prompts/202606/rename_skill_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rename_skill_command.md)
 
 # Plan: Rename `sase skills` to `sase skill`
 

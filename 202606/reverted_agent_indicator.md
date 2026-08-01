@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/reverted_agent_indicator.md](prompts/reverted_agent_indicator.md)
+- **PROMPT:** [prompts/202606/reverted_agent_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/reverted_agent_indicator.md)
 
 # Plan: "Reverted" Indicator on Agent Rows (Agents Tab)
 

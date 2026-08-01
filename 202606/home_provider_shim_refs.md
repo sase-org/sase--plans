@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/home_provider_shim_refs.md](prompts/home_provider_shim_refs.md)
+- **PROMPT:** [prompts/202606/home_provider_shim_refs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/home_provider_shim_refs.md)
 
 # Plan: Make Home Provider Shims Load Home AGENTS.md
 

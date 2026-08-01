@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_vcs_project_completion_blank_line.md](prompts/fix_vcs_project_completion_blank_line.md)
+- **PROMPT:** [prompts/202606/fix_vcs_project_completion_blank_line.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_vcs_project_completion_blank_line.md)
 
 # Plan: Fix blank line above expanded VCS tag in `+` project completion (LSP)
 

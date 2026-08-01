@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_name_unbracket_list.md](prompts/agent_name_unbracket_list.md)
+- **PROMPT:** [prompts/202606/agent_name_unbracket_list.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_name_unbracket_list.md)
 
 # Plan: Remove Square Brackets Around Agent Names in the Agents List
 

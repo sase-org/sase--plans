@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/frontmatter_panel_add_property_fix.md](prompts/frontmatter_panel_add_property_fix.md)
+- **PROMPT:** [prompts/202606/frontmatter_panel_add_property_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/frontmatter_panel_add_property_fix.md)
 
 # Fix: adding an xprompt property disappears a prompt pane and traps focus
 

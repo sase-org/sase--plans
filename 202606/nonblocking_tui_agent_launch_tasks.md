@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/nonblocking_tui_agent_launch_tasks.md](prompts/nonblocking_tui_agent_launch_tasks.md)
+- **PROMPT:** [prompts/202606/nonblocking_tui_agent_launch_tasks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/nonblocking_tui_agent_launch_tasks.md)
 
 # Nonblocking TUI Agent Launch Tasks
 

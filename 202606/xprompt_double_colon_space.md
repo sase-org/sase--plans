@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_double_colon_space.md](prompts/xprompt_double_colon_space.md)
+- **PROMPT:** [prompts/202606/xprompt_double_colon_space.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_double_colon_space.md)
 
 # Plan: Append Space After End-of-Line Xprompt Double-Colon Skeletons
 

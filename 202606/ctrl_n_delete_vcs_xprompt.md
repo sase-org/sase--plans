@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_n_delete_vcs_xprompt.md](prompts/ctrl_n_delete_vcs_xprompt.md)
+- **PROMPT:** [prompts/202606/ctrl_n_delete_vcs_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_n_delete_vcs_xprompt.md)
 
 # Prompt `Ctrl+N` Deletes VCS XPrompt; `Ctrl+P` Cycles Through an Empty State
 

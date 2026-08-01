@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_agent_context_plan_feedback_label.md](prompts/fix_agent_context_plan_feedback_label.md)
+- **PROMPT:** [prompts/202606/fix_agent_context_plan_feedback_label.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_agent_context_plan_feedback_label.md)
 
 # Fix AGENT CONTEXT Labels for Plan Feedback Family Members
 

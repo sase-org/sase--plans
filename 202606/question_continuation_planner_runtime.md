@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/question_continuation_planner_runtime.md](prompts/question_continuation_planner_runtime.md)
+- **PROMPT:** [prompts/202606/question_continuation_planner_runtime.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/question_continuation_planner_runtime.md)
 
 # Plan: Pin the runtime for the `ANSWERED` asker and `*APPROVED` approver rows of a `%approve` question-continuation family
 

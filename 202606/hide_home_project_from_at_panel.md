@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_home_project_from_at_panel.md](prompts/hide_home_project_from_at_panel.md)
+- **PROMPT:** [prompts/202606/hide_home_project_from_at_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_home_project_from_at_panel.md)
 
 # Hide `home` Project From `@` Agent Selector
 

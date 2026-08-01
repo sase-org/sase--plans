@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_langchain_core.md](prompts/remove_langchain_core.md)
+- **PROMPT:** [prompts/202606/remove_langchain_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_langchain_core.md)
 
 # Remove `langchain-core` Dependency
 

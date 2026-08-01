@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rename_chats_to_chat.md](prompts/rename_chats_to_chat.md)
+- **PROMPT:** [prompts/202606/rename_chats_to_chat.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rename_chats_to_chat.md)
 
 # Rename `sase chats` to `sase chat`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_tab_revert_agent_commits.md](prompts/agents_tab_revert_agent_commits.md)
+- **PROMPT:** [prompts/202606/agents_tab_revert_agent_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_tab_revert_agent_commits.md)
 
 # Implement Agents-Tab `,r` Revert For Done Agents
 

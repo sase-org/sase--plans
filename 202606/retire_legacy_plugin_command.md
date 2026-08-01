@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/retire_legacy_plugin_command.md](prompts/retire_legacy_plugin_command.md)
+- **PROMPT:** [prompts/202606/retire_legacy_plugin_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/retire_legacy_plugin_command.md)
 
 # Retire the Legacy `sase plugin` Command
 

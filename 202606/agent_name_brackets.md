@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_name_brackets.md](prompts/agent_name_brackets.md)
+- **PROMPT:** [prompts/202606/agent_name_brackets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_name_brackets.md)
 
 # Plan: Agent Name Brackets in ACE Agents Tab
 

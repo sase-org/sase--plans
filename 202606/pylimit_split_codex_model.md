@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pylimit_split_codex_model.md](prompts/pylimit_split_codex_model.md)
+- **PROMPT:** [prompts/202606/pylimit_split_codex_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pylimit_split_codex_model.md)
 
 # Plan: Route pylimit split agents through #m_codex
 

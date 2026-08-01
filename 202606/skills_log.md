@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/skills_log.md](prompts/skills_log.md)
+- **PROMPT:** [prompts/202606/skills_log.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/skills_log.md)
 
 # Plan: Add the `sase skills log` Inspection Command
 

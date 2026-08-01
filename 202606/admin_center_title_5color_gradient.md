@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/admin_center_title_5color_gradient.md](prompts/admin_center_title_5color_gradient.md)
+- **PROMPT:** [prompts/202606/admin_center_title_5color_gradient.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/admin_center_title_5color_gradient.md)
 
 # Plan: 5-Color Aurora Gradient for the "SASE Admin Center" Title
 

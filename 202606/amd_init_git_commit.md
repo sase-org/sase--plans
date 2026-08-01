@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/amd_init_git_commit.md](prompts/amd_init_git_commit.md)
+- **PROMPT:** [prompts/202606/amd_init_git_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/amd_init_git_commit.md)
 
 # Plan: Make AMD Init Commit Its Own Changes
 

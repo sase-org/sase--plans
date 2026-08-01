@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/restore_leader_space_agent_prefix.md](prompts/restore_leader_space_agent_prefix.md)
+- **PROMPT:** [prompts/202606/restore_leader_space_agent_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/restore_leader_space_agent_prefix.md)
 
 # Plan: Restore `, Space` Agent Prefix Launch
 

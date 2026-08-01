@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/save_marked_agents_background_task.md](prompts/save_marked_agents_background_task.md)
+- **PROMPT:** [prompts/202606/save_marked_agents_background_task.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/save_marked_agents_background_task.md)
 
 # Plan: Route the `s` (save marked agents) persistence through the tracked-task background queue
 

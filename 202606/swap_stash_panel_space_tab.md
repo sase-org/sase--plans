@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/swap_stash_panel_space_tab.md](prompts/swap_stash_panel_space_tab.md)
+- **PROMPT:** [prompts/202606/swap_stash_panel_space_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/swap_stash_panel_space_tab.md)
 
 # Plan: Swap `<space>` and `<tab>` keymaps on the prompt stash panel
 

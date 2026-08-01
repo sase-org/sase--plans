@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/onboarding_pick_line_gate.md](prompts/onboarding_pick_line_gate.md)
+- **PROMPT:** [prompts/202606/onboarding_pick_line_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/onboarding_pick_line_gate.md)
 
 # Plan: Gate the onboarding "pick a project or CL first" line on having launch targets
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/completion_escape_normal_mode.md](prompts/completion_escape_normal_mode.md)
+- **PROMPT:** [prompts/202606/completion_escape_normal_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/completion_escape_normal_mode.md)
 
 # Plan: Leave Prompt Completion Escape In Normal Mode
 

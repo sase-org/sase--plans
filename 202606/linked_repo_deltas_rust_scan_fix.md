@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/linked_repo_deltas_rust_scan_fix.md](prompts/linked_repo_deltas_rust_scan_fix.md)
+- **PROMPT:** [prompts/202606/linked_repo_deltas_rust_scan_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/linked_repo_deltas_rust_scan_fix.md)
 
 # Plan: Fix missing linked-repo file entries in the Agents-tab "Deltas:" panel
 

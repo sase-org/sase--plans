@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_leader_hints.md](prompts/prompt_leader_hints.md)
+- **PROMPT:** [prompts/202606/prompt_leader_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_leader_hints.md)
 
 # Plan: Leader-key hints for the prompt input widget
 

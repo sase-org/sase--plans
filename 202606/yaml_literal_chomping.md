@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/yaml_literal_chomping.md](prompts/yaml_literal_chomping.md)
+- **PROMPT:** [prompts/202606/yaml_literal_chomping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/yaml_literal_chomping.md)
 
 # Plan: Use `|-` For Config-Saved Snippets And XPrompts
 

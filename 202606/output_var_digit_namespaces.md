@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/output_var_digit_namespaces.md](prompts/output_var_digit_namespaces.md)
+- **PROMPT:** [prompts/202606/output_var_digit_namespaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/output_var_digit_namespaces.md)
 
 # Output Variable Digit Namespace Plan
 

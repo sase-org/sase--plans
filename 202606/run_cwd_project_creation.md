@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/run_cwd_project_creation.md](prompts/run_cwd_project_creation.md)
+- **PROMPT:** [prompts/202606/run_cwd_project_creation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/run_cwd_project_creation.md)
 
 # Fix `sase run` CWD Project Creation
 

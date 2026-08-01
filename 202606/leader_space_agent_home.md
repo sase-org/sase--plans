@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/leader_space_agent_home.md](prompts/leader_space_agent_home.md)
+- **PROMPT:** [prompts/202606/leader_space_agent_home.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/leader_space_agent_home.md)
 
 # Plan: Move `,h` Agent-Home Leader Key To `,<space>`
 

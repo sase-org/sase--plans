@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fast_ace_tui_startup.md](prompts/fast_ace_tui_startup.md)
+- **PROMPT:** [prompts/202606/fast_ace_tui_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fast_ace_tui_startup.md)
 
 # Plan: Make `sase ace` Startup Fast (Eliminate Pre-Paint Dismissed-Index Sync)
 

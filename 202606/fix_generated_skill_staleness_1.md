@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_generated_skill_staleness_1.md](prompts/fix_generated_skill_staleness_1.md)
+- **PROMPT:** [prompts/202606/fix_generated_skill_staleness_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_generated_skill_staleness_1.md)
 
 # Fix Generated Skill Staleness For sase-4g
 

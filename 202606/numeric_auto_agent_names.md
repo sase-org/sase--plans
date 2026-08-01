@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/numeric_auto_agent_names.md](prompts/numeric_auto_agent_names.md)
+- **PROMPT:** [prompts/202606/numeric_auto_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/numeric_auto_agent_names.md)
 
 # Numeric-leading auto agent names
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/commit_tag_prefix.md](prompts/commit_tag_prefix.md)
+- **PROMPT:** [prompts/202606/commit_tag_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/commit_tag_prefix.md)
 
 # Plan: Prefix SASE Commit Footer Tags
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/model_above_xprompts.md](prompts/model_above_xprompts.md)
+- **PROMPT:** [prompts/202606/model_above_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/model_above_xprompts.md)
 
 # Plan: Render `Model:` Above `Xprompts:` In Agent Detail Metadata
 

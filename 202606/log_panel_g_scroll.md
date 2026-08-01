@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/log_panel_g_scroll.md](prompts/log_panel_g_scroll.md)
+- **PROMPT:** [prompts/202606/log_panel_g_scroll.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/log_panel_g_scroll.md)
 
 # Plan: Add `g` / `G` Top-Bottom Scrolling to the ACE Logs Panel
 

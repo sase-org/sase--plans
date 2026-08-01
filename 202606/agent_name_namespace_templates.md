@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_name_namespace_templates.md](prompts/agent_name_namespace_templates.md)
+- **PROMPT:** [prompts/202606/agent_name_namespace_templates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_name_namespace_templates.md)
 
 # Namespace-Aware Agent Name Template Allocation
 

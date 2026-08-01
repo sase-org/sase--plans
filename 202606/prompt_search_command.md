@@ -4,7 +4,7 @@ status: wip
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/prompt_search_command.md](prompts/prompt_search_command.md)
+- **PROMPT:** [prompts/202606/prompt_search_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_search_command.md)
 
 # Plan: `sase prompt search` — unified full-text search over SDD + local prompts
 

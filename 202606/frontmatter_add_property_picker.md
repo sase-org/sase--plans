@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/frontmatter_add_property_picker.md](prompts/frontmatter_add_property_picker.md)
+- **PROMPT:** [prompts/202606/frontmatter_add_property_picker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/frontmatter_add_property_picker.md)
 
 # Redesign the Add-Property Picker for the Frontmatter Panel
 

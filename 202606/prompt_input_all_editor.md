@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_input_all_editor.md](prompts/prompt_input_all_editor.md)
+- **PROMPT:** [prompts/202606/prompt_input_all_editor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_input_all_editor.md)
 
 # Plan: Prompt Input All-Panes Editor Keymap
 

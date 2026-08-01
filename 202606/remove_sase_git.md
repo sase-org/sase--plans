@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_sase_git.md](prompts/remove_sase_git.md)
+- **PROMPT:** [prompts/202606/remove_sase_git.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_sase_git.md)
 
 # Remove the `sase git` CLI Command
 

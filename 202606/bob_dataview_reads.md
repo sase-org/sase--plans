@@ -5,7 +5,7 @@ bead_id: sase-4b
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/bob_dataview_reads.md](prompts/bob_dataview_reads.md)
+- **PROMPT:** [prompts/202606/bob_dataview_reads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bob_dataview_reads.md)
 - **BEAD:** [sase-4b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4b/README.md)
 
 # Plan: Dataview-Backed `#!sase/reads`

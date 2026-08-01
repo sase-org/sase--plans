@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_leader_x_bulk_kill_edit.md](prompts/remove_leader_x_bulk_kill_edit.md)
+- **PROMPT:** [prompts/202606/remove_leader_x_bulk_kill_edit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_leader_x_bulk_kill_edit.md)
 
 # Plan: Move Marked Kill-And-Edit Back To `,x`
 

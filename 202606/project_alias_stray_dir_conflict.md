@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_alias_stray_dir_conflict.md](prompts/project_alias_stray_dir_conflict.md)
+- **PROMPT:** [prompts/202606/project_alias_stray_dir_conflict.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_alias_stray_dir_conflict.md)
 
 # Plan: Stop stray project directories from breaking project-alias launches
 

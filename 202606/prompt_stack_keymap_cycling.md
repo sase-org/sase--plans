@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_keymap_cycling.md](prompts/prompt_stack_keymap_cycling.md)
+- **PROMPT:** [prompts/202606/prompt_stack_keymap_cycling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_keymap_cycling.md)
 
 # Prompt Stack Keymap Cycling Plan
 

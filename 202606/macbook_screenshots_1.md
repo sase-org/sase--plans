@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/macbook_screenshots_1.md](prompts/macbook_screenshots_1.md)
+- **PROMPT:** [prompts/202606/macbook_screenshots_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/macbook_screenshots_1.md)
 
 # Plan: MacBook Screenshot Bridge for SASE Prompts
 

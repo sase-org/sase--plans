@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_axe_daemon_sigterm_handler_race.md](prompts/fix_axe_daemon_sigterm_handler_race.md)
+- **PROMPT:** [prompts/202606/fix_axe_daemon_sigterm_handler_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_axe_daemon_sigterm_handler_race.md)
 
 # Fix CI red: `test_stop_axe_daemon_targets_inherited_lock_daemon` SIGTERM-handler race
 

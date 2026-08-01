@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_project_completion_replace_existing_tag.md](prompts/vcs_project_completion_replace_existing_tag.md)
+- **PROMPT:** [prompts/202606/vcs_project_completion_replace_existing_tag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_project_completion_replace_existing_tag.md)
 
 # Fix `#+` Project Completion After Existing VCS Tag
 

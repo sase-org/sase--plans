@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_select_filter_popup.md](prompts/project_select_filter_popup.md)
+- **PROMPT:** [prompts/202606/project_select_filter_popup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_select_filter_popup.md)
 
 # Plan: Beautiful filterable pop-up for the `@` project picker
 

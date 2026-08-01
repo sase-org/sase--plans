@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_display_name_agent_rows.md](prompts/project_display_name_agent_rows.md)
+- **PROMPT:** [prompts/202606/project_display_name_agent_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_display_name_agent_rows.md)
 
 # Show `PROJECT_NAME` (not the directory key) on Agent Rows & the Agent Panel
 

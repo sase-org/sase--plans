@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/rename_skills_use.md](prompts/rename_skills_use.md)
+- **PROMPT:** [prompts/202606/rename_skills_use.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/rename_skills_use.md)
 
 # Plan: Rename Skill-Use Audit Command
 

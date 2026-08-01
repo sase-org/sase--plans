@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agy_tools_panel.md](prompts/agy_tools_panel.md)
+- **PROMPT:** [prompts/202606/agy_tools_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agy_tools_panel.md)
 
 # Plan: Tools Panel support for the Antigravity (`agy`) provider
 

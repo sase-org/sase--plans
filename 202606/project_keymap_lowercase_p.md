@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_keymap_lowercase_p.md](prompts/project_keymap_lowercase_p.md)
+- **PROMPT:** [prompts/202606/project_keymap_lowercase_p.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_keymap_lowercase_p.md)
 
 # Plan: move project management leader key from ,P to ,p
 

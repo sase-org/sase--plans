@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/refresh_skill_use_directives.md](prompts/refresh_skill_use_directives.md)
+- **PROMPT:** [prompts/202606/refresh_skill_use_directives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/refresh_skill_use_directives.md)
 
 # Plan: Refresh Generated Skill Use Directives
 

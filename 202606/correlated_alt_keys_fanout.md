@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/correlated_alt_keys_fanout.md](prompts/correlated_alt_keys_fanout.md)
+- **PROMPT:** [prompts/202606/correlated_alt_keys_fanout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/correlated_alt_keys_fanout.md)
 
 # Plan: Correlate repeated alternation keys across `%{...}` directives
 

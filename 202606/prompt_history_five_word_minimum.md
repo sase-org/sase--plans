@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_five_word_minimum.md](prompts/prompt_history_five_word_minimum.md)
+- **PROMPT:** [prompts/202606/prompt_history_five_word_minimum.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_five_word_minimum.md)
 
 # Plan: Raise prompt-history minimum from 3 to 5 words
 

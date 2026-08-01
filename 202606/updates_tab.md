@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/updates_tab.md](prompts/updates_tab.md)
+- **PROMPT:** [prompts/202606/updates_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/updates_tab.md)
 
 # Plan: SASE Admin Center — rename Plugins → Updates, add a SASE Core update surface
 

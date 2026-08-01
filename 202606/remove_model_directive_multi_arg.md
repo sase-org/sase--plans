@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_model_directive_multi_arg.md](prompts/remove_model_directive_multi_arg.md)
+- **PROMPT:** [prompts/202606/remove_model_directive_multi_arg.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_model_directive_multi_arg.md)
 
 # Plan: Remove Multi-Argument Support from the `%m` / `%model` Directive
 

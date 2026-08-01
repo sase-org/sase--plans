@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bad_fanout_xprompt.md](prompts/bad_fanout_xprompt.md)
+- **PROMPT:** [prompts/202606/bad_fanout_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bad_fanout_xprompt.md)
 
 # Fix xprompt-injected model fanout shape
 

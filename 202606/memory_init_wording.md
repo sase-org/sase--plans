@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/memory_init_wording.md](prompts/memory_init_wording.md)
+- **PROMPT:** [prompts/202606/memory_init_wording.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/memory_init_wording.md)
 
 # Plan: Update `sase memory init` Short-Term Memory Wording
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plugin_version_indicators.md](prompts/plugin_version_indicators.md)
+- **PROMPT:** [prompts/202606/plugin_version_indicators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plugin_version_indicators.md)
 
 # Plan: installed-vs-latest version indicators for `sase plugin list` / `sase plugin show`
 

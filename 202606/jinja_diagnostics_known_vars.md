@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jinja_diagnostics_known_vars.md](prompts/jinja_diagnostics_known_vars.md)
+- **PROMPT:** [prompts/202606/jinja_diagnostics_known_vars.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jinja_diagnostics_known_vars.md)
 
 # Fix: Jinja2 prompt diagnostics falsely flag built-ins and frontmatter inputs
 

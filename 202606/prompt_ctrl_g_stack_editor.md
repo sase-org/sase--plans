@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_ctrl_g_stack_editor.md](prompts/prompt_ctrl_g_stack_editor.md)
+- **PROMPT:** [prompts/202606/prompt_ctrl_g_stack_editor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_ctrl_g_stack_editor.md)
 
 # Plan: Make Ctrl+G the Stacked Prompt Editor Key
 

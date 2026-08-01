@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_linked_repo_bundle_serialization.md](prompts/fix_linked_repo_bundle_serialization.md)
+- **PROMPT:** [prompts/202606/fix_linked_repo_bundle_serialization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_linked_repo_bundle_serialization.md)
 
 # Fix: `LinkedRepoMetadata is not JSON serializable` on agent kill
 

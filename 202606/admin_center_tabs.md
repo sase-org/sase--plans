@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/admin_center_tabs.md](prompts/admin_center_tabs.md)
+- **PROMPT:** [prompts/202606/admin_center_tabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/admin_center_tabs.md)
 
 # Plan: SASE Admin Center — alphabetical numbered tabs, digit jumps, session memory
 

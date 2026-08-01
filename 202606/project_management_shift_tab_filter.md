@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_management_shift_tab_filter.md](prompts/project_management_shift_tab_filter.md)
+- **PROMPT:** [prompts/202606/project_management_shift_tab_filter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_management_shift_tab_filter.md)
 
 # Add Shift+Tab Reverse Filter Cycling To Project Management
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/jinja_completion_panel_teardown_guard.md](prompts/jinja_completion_panel_teardown_guard.md)
+- **PROMPT:** [prompts/202606/jinja_completion_panel_teardown_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/jinja_completion_panel_teardown_guard.md)
 
 # Fix flaky `#prompt-completion` teardown race in live Jinja diagnostics
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_submit_choice_popup.md](prompts/prompt_submit_choice_popup.md)
+- **PROMPT:** [prompts/202606/prompt_submit_choice_popup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_submit_choice_popup.md)
 
 # Plan: `<enter>` Submit-Choice Popup for Multi-Pane Prompt Stacks
 

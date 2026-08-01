@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_startup_active_index_bloat.md](prompts/ace_startup_active_index_bloat.md)
+- **PROMPT:** [prompts/202606/ace_startup_active_index_bloat.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_startup_active_index_bloat.md)
 
 # Plan: Fix the Residual `sase ace` Startup Slowdown (Artifact-Index Active-Tier Bloat)
 

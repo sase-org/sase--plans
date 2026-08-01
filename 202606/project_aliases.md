@@ -5,7 +5,7 @@ bead_id: sase-4c
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/project_aliases.md](prompts/project_aliases.md)
+- **PROMPT:** [prompts/202606/project_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_aliases.md)
 - **BEAD:** [sase-4c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4c/README.md)
 
 # Plan: SASE Project Aliases

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_completion_project_root.md](prompts/prompt_completion_project_root.md)
+- **PROMPT:** [prompts/202606/prompt_completion_project_root.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_completion_project_root.md)
 
 # Plan: Project-Rooted Prompt File Completion
 

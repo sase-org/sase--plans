@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_freeze_artifact_scan.md](prompts/tui_freeze_artifact_scan.md)
+- **PROMPT:** [prompts/202606/tui_freeze_artifact_scan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_freeze_artifact_scan.md)
 
 # Plan: Fix `sase ace` TUI Freeze Caused by O(N) Artifact-Directory Re-Scans
 

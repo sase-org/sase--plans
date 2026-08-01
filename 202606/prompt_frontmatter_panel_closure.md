@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_frontmatter_panel_closure.md](prompts/prompt_frontmatter_panel_closure.md)
+- **PROMPT:** [prompts/202606/prompt_frontmatter_panel_closure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_frontmatter_panel_closure.md)
 
 # Plan: Close prompt frontmatter panel epic
 

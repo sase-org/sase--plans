@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_run_layout.md](prompts/ace_run_layout.md)
+- **PROMPT:** [prompts/202606/ace_run_layout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_run_layout.md)
 
 # Plan: Restructure `ace-run/` Artifact Storage and Search
 

@@ -5,7 +5,7 @@ tier: epic
 status: wip
 ---
 
-- **PROMPT:** [202606/prompts/p0_onboarding.md](prompts/p0_onboarding.md)
+- **PROMPT:** [prompts/202606/p0_onboarding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/p0_onboarding.md)
 - **BEAD:** [sase-4j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4j/README.md)
 
 # Plan: Implement P0 New-User Onboarding Recommendations

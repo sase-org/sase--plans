@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/namespace_template_review.md](prompts/namespace_template_review.md)
+- **PROMPT:** [prompts/202606/namespace_template_review.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/namespace_template_review.md)
 
 # Review & Objective Improvements: Namespace-Aware Agent Name Templates
 

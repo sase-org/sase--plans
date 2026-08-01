@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_restore_panel_polish.md](prompts/agent_restore_panel_polish.md)
+- **PROMPT:** [prompts/202606/agent_restore_panel_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_restore_panel_polish.md)
 
 # Polish the Agent Restore panel's left-pane group list
 

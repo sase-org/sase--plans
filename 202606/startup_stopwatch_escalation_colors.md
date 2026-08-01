@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/startup_stopwatch_escalation_colors.md](prompts/startup_stopwatch_escalation_colors.md)
+- **PROMPT:** [prompts/202606/startup_stopwatch_escalation_colors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/startup_stopwatch_escalation_colors.md)
 
 # Plan: Escalating Color Ramp for the `sase ace` Startup Stopwatch
 

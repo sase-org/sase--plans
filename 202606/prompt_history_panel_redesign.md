@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_panel_redesign.md](prompts/prompt_history_panel_redesign.md)
+- **PROMPT:** [prompts/202606/prompt_history_panel_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_panel_redesign.md)
 
 # Plan: Make the prompt-history modal near-fullscreen and beautify the list pane
 

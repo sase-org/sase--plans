@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_mark_auto_reads_unread.md](prompts/agent_mark_auto_reads_unread.md)
+- **PROMPT:** [prompts/202606/agent_mark_auto_reads_unread.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_mark_auto_reads_unread.md)
 
 # Plan: Agents `m` Auto-Advance Acknowledges Unread Target
 

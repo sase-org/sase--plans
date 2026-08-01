@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/reverse_bead_search_order.md](prompts/reverse_bead_search_order.md)
+- **PROMPT:** [prompts/202606/reverse_bead_search_order.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/reverse_bead_search_order.md)
 
 # Plan: Reverse `sase bead search` Result Ordering
 

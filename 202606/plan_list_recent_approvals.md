@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plan_list_recent_approvals.md](prompts/plan_list_recent_approvals.md)
+- **PROMPT:** [prompts/202606/plan_list_recent_approvals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_list_recent_approvals.md)
 
 # Fix `sase plan list` Recent Approvals
 

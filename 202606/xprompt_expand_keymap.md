@@ -5,7 +5,7 @@ bead_id: sase-53
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_expand_keymap.md](prompts/xprompt_expand_keymap.md)
+- **PROMPT:** [prompts/202606/xprompt_expand_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_expand_keymap.md)
 - **BEAD:** [sase-53](https://github.com/sase-org/sase--beads/blob/main/pages/sase-53/README.md)
 
 # Plan: Ctrl+I XPrompt Expansion From Select XPrompt

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/memory_episodes_chop_project_root_1.md](prompts/memory_episodes_chop_project_root_1.md)
+- **PROMPT:** [prompts/202606/memory_episodes_chop_project_root_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/memory_episodes_chop_project_root_1.md)
 
 # Fix memory_episodes Chop Project Targeting
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_list_limit_and_implicit_closed.md](prompts/bead_list_limit_and_implicit_closed.md)
+- **PROMPT:** [prompts/202606/bead_list_limit_and_implicit_closed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_list_limit_and_implicit_closed.md)
 
 # Plan: `sase bead list` — `--limit` option and implicit `--status closed` fallback
 

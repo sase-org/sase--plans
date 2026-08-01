@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/cross_project_timestamp_dedup_collision.md](prompts/cross_project_timestamp_dedup_collision.md)
+- **PROMPT:** [prompts/202606/cross_project_timestamp_dedup_collision.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/cross_project_timestamp_dedup_collision.md)
 
 # Fix: running coder shows `TALE DONE` due to cross-project artifact-timestamp dedup collision
 

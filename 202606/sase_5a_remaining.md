@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_5a_remaining.md](prompts/sase_5a_remaining.md)
+- **PROMPT:** [prompts/202606/sase_5a_remaining.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_5a_remaining.md)
 
 # Finish sase-5a Verification And Closure
 

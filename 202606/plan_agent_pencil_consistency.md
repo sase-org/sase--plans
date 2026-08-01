@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plan_agent_pencil_consistency.md](prompts/plan_agent_pencil_consistency.md)
+- **PROMPT:** [prompts/202606/plan_agent_pencil_consistency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_agent_pencil_consistency.md)
 
 # Plan Agent Pencil Consistency Plan
 

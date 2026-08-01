@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_management_marks.md](prompts/project_management_marks.md)
+- **PROMPT:** [prompts/202606/project_management_marks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_management_marks.md)
 
 # Project Management Marks Plan
 

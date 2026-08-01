@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_space_agent_home.md](prompts/fix_space_agent_home.md)
+- **PROMPT:** [prompts/202606/fix_space_agent_home.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_space_agent_home.md)
 
 # Plan: Restore Bare Space Agent-Home Shortcut
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pyvision_external_repo_resolution.md](prompts/pyvision_external_repo_resolution.md)
+- **PROMPT:** [prompts/202606/pyvision_external_repo_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pyvision_external_repo_resolution.md)
 
 # Plan: Fix pyvision External Repo Resolution
 

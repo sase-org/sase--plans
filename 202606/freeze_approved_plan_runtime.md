@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/freeze_approved_plan_runtime.md](prompts/freeze_approved_plan_runtime.md)
+- **PROMPT:** [prompts/202606/freeze_approved_plan_runtime.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/freeze_approved_plan_runtime.md)
 
 # Plan: Freeze runtime for `PLAN APPROVED` / `TALE APPROVED` rows
 

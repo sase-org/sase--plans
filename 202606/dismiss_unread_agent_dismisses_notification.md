@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/dismiss_unread_agent_dismisses_notification.md](prompts/dismiss_unread_agent_dismisses_notification.md)
+- **PROMPT:** [prompts/202606/dismiss_unread_agent_dismisses_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/dismiss_unread_agent_dismisses_notification.md)
 
 # Dismiss the completion notification when an unread agent is dismissed
 

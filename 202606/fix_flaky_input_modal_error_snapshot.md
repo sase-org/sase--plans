@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_flaky_input_modal_error_snapshot.md](prompts/fix_flaky_input_modal_error_snapshot.md)
+- **PROMPT:** [prompts/202606/fix_flaky_input_modal_error_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_flaky_input_modal_error_snapshot.md)
 
 # Fix flaky `test_input_collection_modal_error_png_snapshot`
 

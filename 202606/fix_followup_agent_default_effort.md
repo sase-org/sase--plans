@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_followup_agent_default_effort.md](prompts/fix_followup_agent_default_effort.md)
+- **PROMPT:** [prompts/202606/fix_followup_agent_default_effort.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_followup_agent_default_effort.md)
 
 # Plan: Record `default_effort` on Follow-up (Coder/Epic/Legend) Agents
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/at_keymap_to_plus.md](prompts/at_keymap_to_plus.md)
+- **PROMPT:** [prompts/202606/at_keymap_to_plus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/at_keymap_to_plus.md)
 
 # Change ACE `@` Agent Launcher Keymap To `+`
 

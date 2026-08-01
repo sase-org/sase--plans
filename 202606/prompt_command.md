@@ -5,7 +5,7 @@ bead_id: sase-4o
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/prompt_command.md](prompts/prompt_command.md)
+- **PROMPT:** [prompts/202606/prompt_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_command.md)
 - **BEAD:** [sase-4o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4o/README.md)
 
 # `sase prompt` Command Plan

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bulk_agent_revert.md](prompts/bulk_agent_revert.md)
+- **PROMPT:** [prompts/202606/bulk_agent_revert.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bulk_agent_revert.md)
 
 # Bulk Agent Revert Plan
 

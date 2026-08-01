@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_restore_preview_roots_prompts.md](prompts/agent_restore_preview_roots_prompts.md)
+- **PROMPT:** [prompts/202606/agent_restore_preview_roots_prompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_restore_preview_roots_prompts.md)
 
 # Plan: Agent Restore Root-Only Preview With Prompt Snippets
 

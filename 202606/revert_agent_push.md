@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/revert_agent_push.md](prompts/revert_agent_push.md)
+- **PROMPT:** [prompts/202606/revert_agent_push.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/revert_agent_push.md)
 
 # Plan: Push Agents-Tab Revert Commits To GitHub
 

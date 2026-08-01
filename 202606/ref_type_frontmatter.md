@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ref_type_frontmatter.md](prompts/ref_type_frontmatter.md)
+- **PROMPT:** [prompts/202606/ref_type_frontmatter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ref_type_frontmatter.md)
 
 # Add Ref Type Frontmatter To Migrated AI Reference Notes
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/async_force_reuse_agent_launch.md](prompts/async_force_reuse_agent_launch.md)
+- **PROMPT:** [prompts/202606/async_force_reuse_agent_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/async_force_reuse_agent_launch.md)
 
 # Plan: Move forced agent-name reuse cleanup into the tracked launch task
 

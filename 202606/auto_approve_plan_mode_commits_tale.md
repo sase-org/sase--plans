@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/auto_approve_plan_mode_commits_tale.md](prompts/auto_approve_plan_mode_commits_tale.md)
+- **PROMPT:** [prompts/202606/auto_approve_plan_mode_commits_tale.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/auto_approve_plan_mode_commits_tale.md)
 
 # Fix: `%a` (auto plan mode) wrongly approves a tale instead of a plain plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/clear_agent_tag_meta_revert.md](prompts/clear_agent_tag_meta_revert.md)
+- **PROMPT:** [prompts/202606/clear_agent_tag_meta_revert.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/clear_agent_tag_meta_revert.md)
 
 # Fix: Clearing an agent's group/tag reverts when the agent name contains `<group>.`
 

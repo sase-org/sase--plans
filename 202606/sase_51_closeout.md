@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_51_closeout.md](prompts/sase_51_closeout.md)
+- **PROMPT:** [prompts/202606/sase_51_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_51_closeout.md)
 
 # SASE-51 Closeout Verification Plan
 

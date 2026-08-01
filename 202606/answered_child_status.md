@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/answered_child_status.md](prompts/answered_child_status.md)
+- **PROMPT:** [prompts/202606/answered_child_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/answered_child_status.md)
 
 # Fix ANSWERED Status For Question-Asking Child Rows
 

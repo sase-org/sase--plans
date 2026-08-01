@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_pyvision_epic_symbols.md](prompts/remove_pyvision_epic_symbols.md)
+- **PROMPT:** [prompts/202606/remove_pyvision_epic_symbols.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_pyvision_epic_symbols.md)
 
 # Plan: Remove Closed Pyvision Epic Symbol Overrides
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/disable_prompt_keymap_leak.md](prompts/disable_prompt_keymap_leak.md)
+- **PROMPT:** [prompts/202606/disable_prompt_keymap_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/disable_prompt_keymap_leak.md)
 
 # Disable App Keymaps While Prompt Normal Mode Owns Focus
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_at_project_selector.md](prompts/remove_at_project_selector.md)
+- **PROMPT:** [prompts/202606/remove_at_project_selector.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_at_project_selector.md)
 
 # Remove Legacy `@` Project/ChangeSpec Agent Selector
 

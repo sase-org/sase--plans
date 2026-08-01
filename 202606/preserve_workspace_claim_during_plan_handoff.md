@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/preserve_workspace_claim_during_plan_handoff.md](prompts/preserve_workspace_claim_during_plan_handoff.md)
+- **PROMPT:** [prompts/202606/preserve_workspace_claim_during_plan_handoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/preserve_workspace_claim_during_plan_handoff.md)
 
 # Plan: Keep the workspace claimed during plan/question handoff
 

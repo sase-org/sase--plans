@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pyscripts_skip_nested_repos.md](prompts/pyscripts_skip_nested_repos.md)
+- **PROMPT:** [prompts/202606/pyscripts_skip_nested_repos.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pyscripts_skip_nested_repos.md)
 
 # Plan: Stop `pyscripts` linter from descending into nested sibling-repo checkouts
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_tui_startup_speedup.md](prompts/ace_tui_startup_speedup.md)
+- **PROMPT:** [prompts/202606/ace_tui_startup_speedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_tui_startup_speedup.md)
 
 # Plan: Make `sase ace` TUI startup MUCH faster
 

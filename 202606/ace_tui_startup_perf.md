@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_tui_startup_perf.md](prompts/ace_tui_startup_perf.md)
+- **PROMPT:** [prompts/202606/ace_tui_startup_perf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_tui_startup_perf.md)
 
 # Plan: Make `sase ace` Startup Much Faster
 

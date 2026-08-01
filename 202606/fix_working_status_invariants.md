@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_working_status_invariants.md](prompts/fix_working_status_invariants.md)
+- **PROMPT:** [prompts/202606/fix_working_status_invariants.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_working_status_invariants.md)
 
 # Plan: Restore plan-child / root status invariants after `WORKING PLAN` / `WORKING TALE`
 

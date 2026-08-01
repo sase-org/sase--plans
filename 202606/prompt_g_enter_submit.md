@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_g_enter_submit.md](prompts/prompt_g_enter_submit.md)
+- **PROMPT:** [prompts/202606/prompt_g_enter_submit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_g_enter_submit.md)
 
 # Plan: Move Current Prompt Submit From Ctrl+Shift+S To g<enter>
 

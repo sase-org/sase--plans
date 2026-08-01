@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/effort_alias.md](prompts/effort_alias.md)
+- **PROMPT:** [prompts/202606/effort_alias.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/effort_alias.md)
 
 # Plan: make `%e` an alias for `%effort`
 

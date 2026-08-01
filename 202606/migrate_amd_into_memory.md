@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/migrate_amd_into_memory.md](prompts/migrate_amd_into_memory.md)
+- **PROMPT:** [prompts/202606/migrate_amd_into_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/migrate_amd_into_memory.md)
 
 # Plan: Migrate `sase amd` Into `sase memory`
 

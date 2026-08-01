@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_context_memory_skills_panel.md](prompts/agent_context_memory_skills_panel.md)
+- **PROMPT:** [prompts/202606/agent_context_memory_skills_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_context_memory_skills_panel.md)
 
 # Plan: "AGENT CONTEXT" metadata panel section (MEMORY + SKILLS)
 

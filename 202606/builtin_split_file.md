@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/builtin_split_file.md](prompts/builtin_split_file.md)
+- **PROMPT:** [prompts/202606/builtin_split_file.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/builtin_split_file.md)
 
 # Plan: Make `split_file` a Built-In XPrompt
 

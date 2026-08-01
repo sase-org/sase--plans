@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/invalid_sase_project.md](prompts/invalid_sase_project.md)
+- **PROMPT:** [prompts/202606/invalid_sase_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/invalid_sase_project.md)
 
 # Stop Hidden `.sase` Project Records
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/reject_plan_command.md](prompts/reject_plan_command.md)
+- **PROMPT:** [prompts/202606/reject_plan_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/reject_plan_command.md)
 
 # Add `sase plan reject`
 

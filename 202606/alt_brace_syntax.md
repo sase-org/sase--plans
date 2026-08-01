@@ -5,7 +5,7 @@ bead_id: sase-52
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/alt_brace_syntax.md](prompts/alt_brace_syntax.md)
+- **PROMPT:** [prompts/202606/alt_brace_syntax.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/alt_brace_syntax.md)
 - **BEAD:** [sase-52](https://github.com/sase-org/sase--beads/blob/main/pages/sase-52/README.md)
 
 # Plan: migrate alt shorthand from `%(...)` to `%{...}`

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_history_ctrl_k_rebind.md](prompts/prompt_history_ctrl_k_rebind.md)
+- **PROMPT:** [prompts/202606/prompt_history_ctrl_k_rebind.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_history_ctrl_k_rebind.md)
 
 # Plan: Fix the broken prompt-history trigger (rebind `Ctrl+.` → `Ctrl+K`)
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/completion_panel_excess_height.md](prompts/completion_panel_excess_height.md)
+- **PROMPT:** [prompts/202606/completion_panel_excess_height.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/completion_panel_excess_height.md)
 
 # Fix: xprompt completion menu inflates prompt input height
 

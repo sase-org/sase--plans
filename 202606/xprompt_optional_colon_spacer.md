@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_optional_colon_spacer.md](prompts/xprompt_optional_colon_spacer.md)
+- **PROMPT:** [prompts/202606/xprompt_optional_colon_spacer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_optional_colon_spacer.md)
 
 # Auto-delete Optional XPrompt Spacer Before Colon
 

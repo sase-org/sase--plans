@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pencil_icon_ignore_plan_prompt_edits.md](prompts/pencil_icon_ignore_plan_prompt_edits.md)
+- **PROMPT:** [prompts/202606/pencil_icon_ignore_plan_prompt_edits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pencil_icon_ignore_plan_prompt_edits.md)
 
 # Plan: Don't Count Plan/Prompt Files as Edits for the Agents-Tab Pencil Icon
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bare_plus_project_completion.md](prompts/bare_plus_project_completion.md)
+- **PROMPT:** [prompts/202606/bare_plus_project_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bare_plus_project_completion.md)
 
 # Plan: Bare Plus Project Completion
 

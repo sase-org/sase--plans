@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_bead_cross_project_metadata.md](prompts/agent_bead_cross_project_metadata.md)
+- **PROMPT:** [prompts/202606/agent_bead_cross_project_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_bead_cross_project_metadata.md)
 
 # Fix Cross-Project Bead Metadata in Agents Tab
 

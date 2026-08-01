@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/dismissed_archive_paging.md](prompts/dismissed_archive_paging.md)
+- **PROMPT:** [prompts/202606/dismissed_archive_paging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/dismissed_archive_paging.md)
 
 # Plan: Page the "Custom revival search" dismissed-agent archive (Ctrl+K loads 250 more)
 

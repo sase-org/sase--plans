@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_xprompt_editor.md](prompts/prompt_stack_xprompt_editor.md)
+- **PROMPT:** [prompts/202606/prompt_stack_xprompt_editor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_xprompt_editor.md)
 
 # Plan: Prompt Stack Xprompt Editor Keymap
 

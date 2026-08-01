@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/recent_agent_restore.md](prompts/recent_agent_restore.md)
+- **PROMPT:** [prompts/202606/recent_agent_restore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/recent_agent_restore.md)
 
 # Plan: Recent Agent Dismissals in Agent Restore
 

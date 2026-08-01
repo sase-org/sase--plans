@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/quit_confirm_panel.md](prompts/quit_confirm_panel.md)
+- **PROMPT:** [prompts/202606/quit_confirm_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/quit_confirm_panel.md)
 
 # Plan: Beautiful Quit Confirmation Panel with Background-Task Details
 

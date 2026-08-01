@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_minus_add_pane_tmux_fix.md](prompts/ctrl_minus_add_pane_tmux_fix.md)
+- **PROMPT:** [prompts/202606/ctrl_minus_add_pane_tmux_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_minus_add_pane_tmux_fix.md)
 
 # Plan: Fix `Ctrl+-` add-pane chord not firing (legacy/tmux terminals)
 

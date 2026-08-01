@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/tui_startup_freeze_layer1.md](prompts/tui_startup_freeze_layer1.md)
+- **PROMPT:** [prompts/202606/tui_startup_freeze_layer1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/tui_startup_freeze_layer1.md)
 
 # Plan: TUI startup agents-tab freeze — Layer 1 fix
 

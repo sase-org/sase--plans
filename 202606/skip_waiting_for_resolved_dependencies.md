@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/skip_waiting_for_resolved_dependencies.md](prompts/skip_waiting_for_resolved_dependencies.md)
+- **PROMPT:** [prompts/202606/skip_waiting_for_resolved_dependencies.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/skip_waiting_for_resolved_dependencies.md)
 
 # Plan: Skip WAITING when a `%wait:` dependency already finished
 

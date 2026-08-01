@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_ctrl_shift_navigation.md](prompts/prompt_stack_ctrl_shift_navigation.md)
+- **PROMPT:** [prompts/202606/prompt_stack_ctrl_shift_navigation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_ctrl_shift_navigation.md)
 
 # Migrate Prompt Stack Pane Navigation to Ctrl+Shift+J/K
 

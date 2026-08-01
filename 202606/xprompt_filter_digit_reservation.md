@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_filter_digit_reservation.md](prompts/xprompt_filter_digit_reservation.md)
+- **PROMPT:** [prompts/202606/xprompt_filter_digit_reservation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_filter_digit_reservation.md)
 
 # Plan: Reserve Numeric Tab Keys in the XPrompts Filter
 

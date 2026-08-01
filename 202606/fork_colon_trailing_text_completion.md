@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fork_colon_trailing_text_completion.md](prompts/fork_colon_trailing_text_completion.md)
+- **PROMPT:** [prompts/202606/fork_colon_trailing_text_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fork_colon_trailing_text_completion.md)
 
 # Plan: Open the `#fork:` agent-name menu even when text follows the colon
 

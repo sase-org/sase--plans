@@ -6,7 +6,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_49_completion_gap.md](prompts/sase_49_completion_gap.md)
+- **PROMPT:** [prompts/202606/sase_49_completion_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_49_completion_gap.md)
 - **BEAD:** [sase-49](https://github.com/sase-org/sase--beads/blob/main/pages/sase-49/README.md)
 
 # Complete sase-49 lifecycle launch enforcement gap

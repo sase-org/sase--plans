@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/codex_provider_retry.md](prompts/codex_provider_retry.md)
+- **PROMPT:** [prompts/202606/codex_provider_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/codex_provider_retry.md)
 
 # Plan: Add Built-In Codex Retry Handling
 

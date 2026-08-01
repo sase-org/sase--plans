@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/telegram_sequential_questions.md](prompts/telegram_sequential_questions.md)
+- **PROMPT:** [prompts/202606/telegram_sequential_questions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/telegram_sequential_questions.md)
 
 # Plan: Sequential, Numbered Multi-Question Delivery over Telegram
 

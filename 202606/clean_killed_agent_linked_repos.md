@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/clean_killed_agent_linked_repos.md](prompts/clean_killed_agent_linked_repos.md)
+- **PROMPT:** [prompts/202606/clean_killed_agent_linked_repos.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/clean_killed_agent_linked_repos.md)
 
 # Clean Linked Repo Workspaces After Agent Kill
 

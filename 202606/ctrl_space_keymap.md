@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ctrl_space_keymap.md](prompts/ctrl_space_keymap.md)
+- **PROMPT:** [prompts/202606/ctrl_space_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ctrl_space_keymap.md)
 
 # Plan: Migrate Ace TUI Space Keymap to Ctrl+Space
 

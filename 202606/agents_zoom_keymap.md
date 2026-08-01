@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_zoom_keymap.md](prompts/agents_zoom_keymap.md)
+- **PROMPT:** [prompts/202606/agents_zoom_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_zoom_keymap.md)
 
 # Plan: `z` (Zoom) Keymap for the Agents Tab
 

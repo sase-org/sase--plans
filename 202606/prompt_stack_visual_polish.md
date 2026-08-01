@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_stack_visual_polish.md](prompts/prompt_stack_visual_polish.md)
+- **PROMPT:** [prompts/202606/prompt_stack_visual_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_stack_visual_polish.md)
 
 # Plan: Make the Stacked Prompt Input Widgets Beautiful
 

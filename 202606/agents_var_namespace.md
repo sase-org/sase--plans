@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agents_var_namespace.md](prompts/agents_var_namespace.md)
+- **PROMPT:** [prompts/202606/agents_var_namespace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agents_var_namespace.md)
 
 # Plan: Move `sase var` Jinja Exposure Under `agents`
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/zorg_live_artifact_cleanup.md](prompts/zorg_live_artifact_cleanup.md)
+- **PROMPT:** [prompts/202606/zorg_live_artifact_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/zorg_live_artifact_cleanup.md)
 
 # Plan: clean stale live artifact markers blocking `zorg` deletion
 

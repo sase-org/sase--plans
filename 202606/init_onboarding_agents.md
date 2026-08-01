@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/init_onboarding_agents.md](prompts/init_onboarding_agents.md)
+- **PROMPT:** [prompts/202606/init_onboarding_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/init_onboarding_agents.md)
 
 # Fix `sase init` AGENTS onboarding
 

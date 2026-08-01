@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/failed_launch_prompt_stash.md](prompts/failed_launch_prompt_stash.md)
+- **PROMPT:** [prompts/202606/failed_launch_prompt_stash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/failed_launch_prompt_stash.md)
 
 # Failed Launch Prompt Stash Plan
 

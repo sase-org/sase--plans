@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/at_project_picker_home.md](prompts/at_project_picker_home.md)
+- **PROMPT:** [prompts/202606/at_project_picker_home.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/at_project_picker_home.md)
 
 # Plan: Show Real Projects In The @ Picker
 

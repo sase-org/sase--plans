@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/pyvision_stale_github_alias_pragmas_1.md](prompts/pyvision_stale_github_alias_pragmas_1.md)
+- **PROMPT:** [prompts/202606/pyvision_stale_github_alias_pragmas_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/pyvision_stale_github_alias_pragmas_1.md)
 
 # Plan: Fix cross-repo CI failures from the project display-name migration
 

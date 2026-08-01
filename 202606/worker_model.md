@@ -5,7 +5,7 @@ bead_id: sase-4k
 tier: epic
 ---
 
-- **PROMPT:** [202606/prompts/worker_model.md](prompts/worker_model.md)
+- **PROMPT:** [prompts/202606/worker_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/worker_model.md)
 - **BEAD:** [sase-4k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4k/README.md)
 
 # Worker Model: A Secondary Default LLM Model for Delegated Work

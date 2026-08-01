@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_search_highlight.md](prompts/bead_search_highlight.md)
+- **PROMPT:** [prompts/202606/bead_search_highlight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_search_highlight.md)
 
 # Plan: Make `sase bead search` match highlighting readable
 

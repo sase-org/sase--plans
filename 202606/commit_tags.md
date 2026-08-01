@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/commit_tags.md](prompts/commit_tags.md)
+- **PROMPT:** [prompts/202606/commit_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/commit_tags.md)
 
 # Plan: Expand Conventional Commit Tag Guidance in `sase_git_commit` Skill
 

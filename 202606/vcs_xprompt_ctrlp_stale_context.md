@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/vcs_xprompt_ctrlp_stale_context.md](prompts/vcs_xprompt_ctrlp_stale_context.md)
+- **PROMPT:** [prompts/202606/vcs_xprompt_ctrlp_stale_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/vcs_xprompt_ctrlp_stale_context.md)
 
 # Fix: `<ctrl+p>` VCS xprompt prefill launches in the wrong workspace / desyncs `<ctrl+space>`
 

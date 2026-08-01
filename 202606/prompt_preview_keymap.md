@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_preview_keymap.md](prompts/prompt_preview_keymap.md)
+- **PROMPT:** [prompts/202606/prompt_preview_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_preview_keymap.md)
 
 # Plan: `K` Preview Keymap for the Prompt Input Widget
 

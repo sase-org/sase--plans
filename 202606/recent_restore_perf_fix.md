@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/recent_restore_perf_fix.md](prompts/recent_restore_perf_fix.md)
+- **PROMPT:** [prompts/202606/recent_restore_perf_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/recent_restore_perf_fix.md)
 
 # Plan: Fix TUI dismiss-path performance regression from recent agent restore
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/context_reason_80_col_wrap.md](prompts/context_reason_80_col_wrap.md)
+- **PROMPT:** [prompts/202606/context_reason_80_col_wrap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/context_reason_80_col_wrap.md)
 
 # Plan: SASE CONTEXT Reason Wrapping at 80 Columns
 

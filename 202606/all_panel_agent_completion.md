@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/all_panel_agent_completion.md](prompts/all_panel_agent_completion.md)
+- **PROMPT:** [prompts/202606/all_panel_agent_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/all_panel_agent_completion.md)
 
 # Plan: Source `#fork` / `%wait` agent-name completion from ALL visible Agents-tab panels
 

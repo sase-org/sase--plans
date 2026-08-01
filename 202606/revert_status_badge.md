@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/revert_status_badge.md](prompts/revert_status_badge.md)
+- **PROMPT:** [prompts/202606/revert_status_badge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/revert_status_badge.md)
 
 # Make the Agent-Row Revert Indicator Visible (and Partial-Aware)
 

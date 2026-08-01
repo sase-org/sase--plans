@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/chat_header_bullets.md](prompts/chat_header_bullets.md)
+- **PROMPT:** [prompts/202606/chat_header_bullets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/chat_header_bullets.md)
 
 # Plan: Bullet-Style SASE Chat Transcript Metadata
 

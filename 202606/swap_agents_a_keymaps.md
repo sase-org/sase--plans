@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/swap_agents_a_keymaps.md](prompts/swap_agents_a_keymaps.md)
+- **PROMPT:** [prompts/202606/swap_agents_a_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/swap_agents_a_keymaps.md)
 
 # Swap Agents Tab a/A Keymaps
 

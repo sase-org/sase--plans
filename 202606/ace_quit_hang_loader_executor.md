@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_quit_hang_loader_executor.md](prompts/ace_quit_hang_loader_executor.md)
+- **PROMPT:** [prompts/202606/ace_quit_hang_loader_executor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_quit_hang_loader_executor.md)
 
 # Fix `sase ace` hanging for a long time after quitting with `q`
 

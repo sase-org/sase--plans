@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/plan_list_live_agents.md](prompts/plan_list_live_agents.md)
+- **PROMPT:** [prompts/202606/plan_list_live_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_list_live_agents.md)
 
 # Plan: Filter plan proposals to live Agents-tab rows
 

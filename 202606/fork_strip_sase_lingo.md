@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fork_strip_sase_lingo.md](prompts/fork_strip_sase_lingo.md)
+- **PROMPT:** [prompts/202606/fork_strip_sase_lingo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fork_strip_sase_lingo.md)
 
 # Plan: Strip sase-specific lingo from `#fork` previous-conversation history
 

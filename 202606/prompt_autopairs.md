@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/prompt_autopairs.md](prompts/prompt_autopairs.md)
+- **PROMPT:** [prompts/202606/prompt_autopairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/prompt_autopairs.md)
 
 # Prompt Autopairs Plan
 

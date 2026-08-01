@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/update_check_startup_toast.md](prompts/update_check_startup_toast.md)
+- **PROMPT:** [prompts/202606/update_check_startup_toast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/update_check_startup_toast.md)
 
 # Plan: "Updates available" startup toast + lightweight periodic version check
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/unify_auto_directive.md](prompts/unify_auto_directive.md)
+- **PROMPT:** [prompts/202606/unify_auto_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/unify_auto_directive.md)
 
 # Plan: Unify `%plan` / `%tale` / `%epic` into a single `%auto` directive
 

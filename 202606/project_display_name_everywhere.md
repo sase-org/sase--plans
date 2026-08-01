@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_display_name_everywhere.md](prompts/project_display_name_everywhere.md)
+- **PROMPT:** [prompts/202606/project_display_name_everywhere.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_display_name_everywhere.md)
 
 # Show `PROJECT_NAME` (not the directory key) in **all** remaining user-facing surfaces
 

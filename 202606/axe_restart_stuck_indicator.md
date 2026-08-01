@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/axe_restart_stuck_indicator.md](prompts/axe_restart_stuck_indicator.md)
+- **PROMPT:** [prompts/202606/axe_restart_stuck_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/axe_restart_stuck_indicator.md)
 
 # Fix: `sase ace --restart-axe` leaves the axe status indicator stuck at "RESTARTING"
 

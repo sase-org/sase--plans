@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/release_plz_internal_dependency_versions.md](prompts/release_plz_internal_dependency_versions.md)
+- **PROMPT:** [prompts/202606/release_plz_internal_dependency_versions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/release_plz_internal_dependency_versions.md)
 
 # Plan: Fix release-plz PR package verification
 

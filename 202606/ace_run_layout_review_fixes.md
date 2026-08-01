@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/ace_run_layout_review_fixes.md](prompts/ace_run_layout_review_fixes.md)
+- **PROMPT:** [prompts/202606/ace_run_layout_review_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/ace_run_layout_review_fixes.md)
 
 # Plan: Fix Gaps in the Sharded `ace-run` Artifact Layout Implementation
 

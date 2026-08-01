@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/model_alias_at_prefix.md](prompts/model_alias_at_prefix.md)
+- **PROMPT:** [prompts/202606/model_alias_at_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/model_alias_at_prefix.md)
 
 # Plan: Require `@` in front of model aliases (`%m:@other`, not `%m:other`)
 

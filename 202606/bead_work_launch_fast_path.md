@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/bead_work_launch_fast_path.md](prompts/bead_work_launch_fast_path.md)
+- **PROMPT:** [prompts/202606/bead_work_launch_fast_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/bead_work_launch_fast_path.md)
 
 # Plan: Make `sase bead work` Return Much Faster
 

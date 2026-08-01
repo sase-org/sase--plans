@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fork_wait_defers_workspace.md](prompts/fork_wait_defers_workspace.md)
+- **PROMPT:** [prompts/202606/fork_wait_defers_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fork_wait_defers_workspace.md)
 
 # Plan: Make the Implicit `#fork:<name>` Wait Also Defer Workspace Allocation
 

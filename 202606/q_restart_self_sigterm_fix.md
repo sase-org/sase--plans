@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/q_restart_self_sigterm_fix.md](prompts/q_restart_self_sigterm_fix.md)
+- **PROMPT:** [prompts/202606/q_restart_self_sigterm_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/q_restart_self_sigterm_fix.md)
 
 # Fix: `Q` Restart Self-Kills the TUI on the Second Use (Axe Lock-Holder Mis-Attribution)
 

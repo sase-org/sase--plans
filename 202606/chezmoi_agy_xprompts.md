@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/chezmoi_agy_xprompts.md](prompts/chezmoi_agy_xprompts.md)
+- **PROMPT:** [prompts/202606/chezmoi_agy_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/chezmoi_agy_xprompts.md)
 
 # Chezmoi Antigravity Xprompt Cleanup Plan
 

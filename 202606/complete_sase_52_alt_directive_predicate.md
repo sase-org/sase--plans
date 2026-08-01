@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/complete_sase_52_alt_directive_predicate.md](prompts/complete_sase_52_alt_directive_predicate.md)
+- **PROMPT:** [prompts/202606/complete_sase_52_alt_directive_predicate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/complete_sase_52_alt_directive_predicate.md)
 
 # Complete sase-52 Alt Brace Predicate Verification
 

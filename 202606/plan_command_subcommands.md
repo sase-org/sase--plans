@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202606/prompts/plan_command_subcommands.md](prompts/plan_command_subcommands.md)
+- **PROMPT:** [prompts/202606/plan_command_subcommands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/plan_command_subcommands.md)
 - **BEAD:** [sase-4n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-4n/README.md)
 
 # Improve `sase plan` Command

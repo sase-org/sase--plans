@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/sase_context_workspaces_lane.md](prompts/sase_context_workspaces_lane.md)
+- **PROMPT:** [prompts/202606/sase_context_workspaces_lane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/sase_context_workspaces_lane.md)
 
 # Show Opened Sibling Workspaces in the "SASE CONTEXT" Panel
 

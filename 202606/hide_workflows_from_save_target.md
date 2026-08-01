@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/hide_workflows_from_save_target.md](prompts/hide_workflows_from_save_target.md)
+- **PROMPT:** [prompts/202606/hide_workflows_from_save_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/hide_workflows_from_save_target.md)
 
 # Plan: Hide YAML workflows from the "Save draft as xprompt" target list
 

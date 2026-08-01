@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/auto_before_xprompts.md](prompts/auto_before_xprompts.md)
+- **PROMPT:** [prompts/202606/auto_before_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/auto_before_xprompts.md)
 
 # Move Auto Metadata Before XPrompts
 

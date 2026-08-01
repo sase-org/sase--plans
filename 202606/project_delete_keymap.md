@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_delete_keymap.md](prompts/project_delete_keymap.md)
+- **PROMPT:** [prompts/202606/project_delete_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_delete_keymap.md)
 
 # Add Ctrl+D Project Deletion to Project Management Panel
 

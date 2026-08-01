@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/xprompt_lsp_default_xprompts.md](prompts/xprompt_lsp_default_xprompts.md)
+- **PROMPT:** [prompts/202606/xprompt_lsp_default_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/xprompt_lsp_default_xprompts.md)
 
 # Fix: xprompt LSP not attaching for `src/sase/default_xprompts/*.md` in neovim
 

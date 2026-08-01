@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/agent_group_auto_add.md](prompts/agent_group_auto_add.md)
+- **PROMPT:** [prompts/202606/agent_group_auto_add.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/agent_group_auto_add.md)
 
 # Plan: Auto-Add Named Agents To Existing Groups
 

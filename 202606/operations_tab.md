@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/operations_tab.md](prompts/operations_tab.md)
+- **PROMPT:** [prompts/202606/operations_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/operations_tab.md)
 
 # Plan: Merge Admin Center "Tasks" + "Logs" into a single "Operations" tab
 

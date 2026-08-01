@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/zoom_file_panel_access_when_collapsed.md](prompts/zoom_file_panel_access_when_collapsed.md)
+- **PROMPT:** [prompts/202606/zoom_file_panel_access_when_collapsed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/zoom_file_panel_access_when_collapsed.md)
 
 # Fix: ACE Agents-tab zoom modal can't reach the file panel when it opens on metadata
 

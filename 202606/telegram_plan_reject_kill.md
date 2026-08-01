@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/telegram_plan_reject_kill.md](prompts/telegram_plan_reject_kill.md)
+- **PROMPT:** [prompts/202606/telegram_plan_reject_kill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/telegram_plan_reject_kill.md)
 
 # Telegram Plan Reject Kill Fix
 

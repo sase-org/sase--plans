@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/remove_admin_center_title_icon.md](prompts/remove_admin_center_title_icon.md)
+- **PROMPT:** [prompts/202606/remove_admin_center_title_icon.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/remove_admin_center_title_icon.md)
 
 # Plan: Remove the SASE Admin Center title icon
 

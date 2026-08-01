@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_creation_logging.md](prompts/project_creation_logging.md)
+- **PROMPT:** [prompts/202606/project_creation_logging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_creation_logging.md)
 
 # Plan: Diagnostic logging for SASE project-file creation
 

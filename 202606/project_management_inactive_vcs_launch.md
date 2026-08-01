@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/project_management_inactive_vcs_launch.md](prompts/project_management_inactive_vcs_launch.md)
+- **PROMPT:** [prompts/202606/project_management_inactive_vcs_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/project_management_inactive_vcs_launch.md)
 
 # Plan: Project Management Inactive Visibility and VCS Launch Reactivation
 

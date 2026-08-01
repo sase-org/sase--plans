@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_stale_pdf_blog_sentinels.md](prompts/fix_stale_pdf_blog_sentinels.md)
+- **PROMPT:** [prompts/202606/fix_stale_pdf_blog_sentinels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_stale_pdf_blog_sentinels.md)
 
 # Fix stale blog-post sentinels in the docs PDF validator
 

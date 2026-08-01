@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/always_show_create_snippet.md](prompts/always_show_create_snippet.md)
+- **PROMPT:** [prompts/202606/always_show_create_snippet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/always_show_create_snippet.md)
 
 # Always Offer Prompt Snippet Creation from `gx`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/wait_modal_redesign.md](prompts/wait_modal_redesign.md)
+- **PROMPT:** [prompts/202606/wait_modal_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/wait_modal_redesign.md)
 
 # Plan: Redesign the `w` "Wait" panel as a pop-up with agent completion + time keyword
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/archive_git_worktree_delete.md](prompts/archive_git_worktree_delete.md)
+- **PROMPT:** [prompts/202606/archive_git_worktree_delete.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/archive_git_worktree_delete.md)
 
 # Fix Git Archive Branch Deletion From Checked-Out Worktrees
 

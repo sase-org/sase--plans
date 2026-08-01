@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/fix_agents_project_grouping.md](prompts/fix_agents_project_grouping.md)
+- **PROMPT:** [prompts/202606/fix_agents_project_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/fix_agents_project_grouping.md)
 
 # Fix Agents Tab Project Grouping
 

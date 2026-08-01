@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/updates_tab_incoming_commits.md](prompts/updates_tab_incoming_commits.md)
+- **PROMPT:** [prompts/202606/updates_tab_incoming_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/updates_tab_incoming_commits.md)
 
 # Plan: Incoming Commits on the Admin Center "Updates" Tab
 

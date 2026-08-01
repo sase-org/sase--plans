@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202606/prompts/split_operations_back.md](prompts/split_operations_back.md)
+- **PROMPT:** [prompts/202606/split_operations_back.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202606/split_operations_back.md)
 
 # Plan: Split Admin Center Operations Back Into Tasks and Logs Tabs
 
