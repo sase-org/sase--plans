@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_sdd_frontmatter_and_spec.md](prompts/fix_sdd_frontmatter_and_spec.md)
+- **PROMPT:** [prompts/202603/fix_sdd_frontmatter_and_spec.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_sdd_frontmatter_and_spec.md)
 
 # Plan: Fix plan frontmatter and spec file not being committed when SDD block fails
 

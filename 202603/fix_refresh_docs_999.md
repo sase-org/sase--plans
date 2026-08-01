@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_refresh_docs_999.md](prompts/fix_refresh_docs_999.md)
+- **PROMPT:** [prompts/202603/fix_refresh_docs_999.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_refresh_docs_999.md)
 - **COMMITS:**
-  - [7121b74](https://github.com/sase-org/sase/commit/7121b74b0b066fe489841778280245beea302cc5) — fix: Use timestamp fallback in refresh_docs when marker SHA is missing
+  - [7121b74](https://github.com/sase-org/sase/commit/7121b74b0b066fe489841778280245beea302cc5) — fix: Use timestamp fallback in refresh\_docs when marker SHA is missing
 
 # Fix: refresh_docs workflow showing 999 for commit count
 

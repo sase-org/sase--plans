@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/codex.md](prompts/codex.md)
+- **PROMPT:** [prompts/202603/codex.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/codex.md)
 - **BEAD:** sase-511j
 
 # Plan: Add Codex (OpenAI CLI Agent) Provider to sase

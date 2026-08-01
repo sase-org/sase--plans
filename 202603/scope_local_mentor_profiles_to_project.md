@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/scope_local_mentor_profiles_to_project.md](prompts/scope_local_mentor_profiles_to_project.md)
+- **PROMPT:** [prompts/202603/scope_local_mentor_profiles_to_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/scope_local_mentor_profiles_to_project.md)
 - **COMMITS:**
   - [efe55cf](https://github.com/sase-org/sase/commit/efe55cfb616140c50a9b9ad936c7491457bbcbfe) — feat: Scope local mentor profiles to their project
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/debug_fix_just_flattening.md](prompts/debug_fix_just_flattening.md)
+- **PROMPT:** [prompts/202603/debug_fix_just_flattening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/debug_fix_just_flattening.md)
 
 # Plan: Debug and fix `sase/fix_just` workflow flattening failure
 

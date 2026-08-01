@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_workflow_input_defaults.md](prompts/fix_workflow_input_defaults.md)
+- **PROMPT:** [prompts/202603/fix_workflow_input_defaults.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_workflow_input_defaults.md)
 
 # Plan: Fix workflow input default type coercion
 

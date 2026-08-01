@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/epic_approval.md](prompts/epic_approval.md)
+- **PROMPT:** [prompts/202603/epic_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/epic_approval.md)
 - **BEAD:** sase-w0d2
 
 # Epic Plan Approval Support

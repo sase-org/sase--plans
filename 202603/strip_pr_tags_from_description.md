@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/strip_pr_tags_from_description.md](prompts/strip_pr_tags_from_description.md)
+- **PROMPT:** [prompts/202603/strip_pr_tags_from_description.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/strip_pr_tags_from_description.md)
 
 # Plan: Strip PR Tags from ChangeSpec DESCRIPTION
 

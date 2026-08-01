@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/rewind_timestamps.md](prompts/rewind_timestamps.md)
+- **PROMPT:** [prompts/202603/rewind_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/rewind_timestamps.md)
 - **COMMITS:**
   - [38e3ea0](https://github.com/sase-org/sase/commit/38e3ea0a32d15ae2bc8c8357ade0030e7aa21a4a) — feat: Track rewind events in TIMESTAMPS field
 

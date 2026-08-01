@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/recursive_resume_expansion.md](prompts/recursive_resume_expansion.md)
+- **PROMPT:** [prompts/202603/recursive_resume_expansion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/recursive_resume_expansion.md)
 - **COMMITS:**
   - [ba116a3](https://github.com/sase-org/sase/commit/ba116a31e1b26bdf88e1aea214191837d350763e) — feat: Recursively expand \#resume refs in chat history
 

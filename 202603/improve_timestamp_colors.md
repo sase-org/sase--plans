@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/improve_timestamp_colors.md](prompts/improve_timestamp_colors.md)
+- **PROMPT:** [prompts/202603/improve_timestamp_colors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/improve_timestamp_colors.md)
 - **COMMITS:**
   - [655cb9a](https://github.com/sase-org/sase/commit/655cb9a8a1885956f6e83d2f827615b1a7c46a98) — feat: Use purple (\#AF87D7) for TIMESTAMPS datetime colors
 

@@ -4,7 +4,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/migrate_beads_to_core.md](prompts/migrate_beads_to_core.md)
+- **PROMPT:** [prompts/202603/migrate_beads_to_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/migrate_beads_to_core.md)
 - **BEAD:** sase-cu8
 
 # Plan: Migrate sase-beads into sase core

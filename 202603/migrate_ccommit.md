@@ -5,7 +5,7 @@ bead_id: sase-b
 tier: epic
 ---
 
-- **PROMPT:** [202603/prompts/migrate_ccommit.md](prompts/migrate_ccommit.md)
+- **PROMPT:** [prompts/202603/migrate_ccommit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/migrate_ccommit.md)
 - **BEAD:** [sase-b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b/README.md)
 
 # Plan: Integrate ccommit into Unified Commit Workflows

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/workflows_consolidation.md](prompts/workflows_consolidation.md)
+- **PROMPT:** [prompts/202603/workflows_consolidation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/workflows_consolidation.md)
 
 # Plan: sase-6.3 — Consolidate workflows under workflows/
 

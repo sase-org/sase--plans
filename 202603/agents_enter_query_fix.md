@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/agents_enter_query_fix.md](prompts/agents_enter_query_fix.md)
+- **PROMPT:** [prompts/202603/agents_enter_query_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/agents_enter_query_fix.md)
 - **COMMITS:**
   - [164fb9f](https://github.com/sase-org/sase/commit/164fb9f963879b2288218961dc52c370255b0853) — fix: Allow Enter key on Agents tab to navigate to ChangeSpec's CLs query
 

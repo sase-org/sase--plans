@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_planning_status.md](prompts/fix_planning_status.md)
+- **PROMPT:** [prompts/202603/fix_planning_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_planning_status.md)
 - **COMMITS:**
   - [b0832b4](https://github.com/sase-org/sase/commit/b0832b4d5f86191d02bdeca3e8ab3a3ae2975f0f) — fix: Override PLANNING→RUNNING for parent workflows with active step children
 

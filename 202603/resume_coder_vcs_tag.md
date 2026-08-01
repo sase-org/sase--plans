@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/resume_coder_vcs_tag.md](prompts/resume_coder_vcs_tag.md)
+- **PROMPT:** [prompts/202603/resume_coder_vcs_tag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/resume_coder_vcs_tag.md)
 
 # Plan: Fix resume VCS tag for coder agents
 

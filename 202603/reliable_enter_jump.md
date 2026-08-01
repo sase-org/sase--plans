@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/reliable_enter_jump.md](prompts/reliable_enter_jump.md)
+- **PROMPT:** [prompts/202603/reliable_enter_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/reliable_enter_jump.md)
 - **COMMITS:**
   - [e0c2e03](https://github.com/sase-org/sase/commit/e0c2e03bbdef0f9cb8ec7655c9f83eb649a06e62) — fix: Make \<enter\> on Agents tab reliably jump to ChangeSpec
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_propose_workflow.md](prompts/fix_propose_workflow.md)
+- **PROMPT:** [prompts/202603/fix_propose_workflow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_propose_workflow.md)
 
 # Plan: Fix fix-hook proposal creation
 

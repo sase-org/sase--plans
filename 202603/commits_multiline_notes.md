@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/commits_multiline_notes.md](prompts/commits_multiline_notes.md)
+- **PROMPT:** [prompts/202603/commits_multiline_notes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/commits_multiline_notes.md)
 
 # Plan: Multi-line COMMITS Notes with Truncation and Folding
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_enter_keymap_approve_options.md](prompts/fix_enter_keymap_approve_options.md)
+- **PROMPT:** [prompts/202603/fix_enter_keymap_approve_options.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_enter_keymap_approve_options.md)
 - **COMMITS:**
   - [45588b1](https://github.com/sase-org/sase/commit/45588b138dbef4400eaa342aab4353eb8e91b0b1) — fix: Make enter key approve in ApproveOptionsModal regardless of focus
 

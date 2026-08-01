@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/commit_meta_id_and_commits_append.md](prompts/commit_meta_id_and_commits_append.md)
+- **PROMPT:** [prompts/202603/commit_meta_id_and_commits_append.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/commit_meta_id_and_commits_append.md)
 
 # Plan: Fix commit post-step entry append + meta_commit_id emission
 

@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/mentor_file_snapshots.md](prompts/mentor_file_snapshots.md)
+- **PROMPT:** [prompts/202603/mentor_file_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/mentor_file_snapshots.md)
 
 # Plan: Snapshot File Contents at Mentor Save Time for Instant Review
 

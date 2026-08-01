@@ -4,7 +4,7 @@ status: pending
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_insert_mode_prettier_freeze.md](prompts/fix_insert_mode_prettier_freeze.md)
+- **PROMPT:** [prompts/202603/fix_insert_mode_prettier_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_insert_mode_prettier_freeze.md)
 - **COMMITS:**
   - [d50ad90](https://github.com/sase-org/sase/commit/d50ad908c7c31b47336ac4ae4cce408251c3533e) — fix: Prevent TUI freeze when typing in INSERT mode with large prompts
 

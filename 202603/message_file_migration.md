@@ -4,7 +4,7 @@ create_time: 2026-03-27 16:56:59
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/message_file_migration.md](prompts/message_file_migration.md)
+- **PROMPT:** [prompts/202603/message_file_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/message_file_migration.md)
 
 # Plan: Migrate `--message` to `--message-file`
 

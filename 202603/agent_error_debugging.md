@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/agent_error_debugging.md](prompts/agent_error_debugging.md)
+- **PROMPT:** [prompts/202603/agent_error_debugging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/agent_error_debugging.md)
 
 # Agent Error Debugging: Make Failures WAY Easier to Debug
 

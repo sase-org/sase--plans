@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_neovim_plugin_errors.md](prompts/fix_neovim_plugin_errors.md)
+- **PROMPT:** [prompts/202603/fix_neovim_plugin_errors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_neovim_plugin_errors.md)
 - **COMMITS:**
-  - [882ab2c](https://github.com/sase-org/sase/commit/882ab2c4de98029db0df740a1f6847cad02c9bdc) — chore: Mark fix_neovim_plugin_errors plan as done
+  - [882ab2c](https://github.com/sase-org/sase/commit/882ab2c4de98029db0df740a1f6847cad02c9bdc) — chore: Mark fix\_neovim\_plugin\_errors plan as done
 
 # Plan: Fix Neovim Plugin Errors
 

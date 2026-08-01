@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_plan_file_commit.md](prompts/fix_plan_file_commit.md)
+- **PROMPT:** [prompts/202603/fix_plan_file_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_plan_file_commit.md)
 
 # Plan: Fix plan file not being committed to PR branch after approval
 

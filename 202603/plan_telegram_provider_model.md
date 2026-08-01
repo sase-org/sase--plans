@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/plan_telegram_provider_model.md](prompts/plan_telegram_provider_model.md)
+- **PROMPT:** [prompts/202603/plan_telegram_provider_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/plan_telegram_provider_model.md)
 - **COMMITS:**
   - [1d31ea4](https://github.com/sase-org/sase/commit/1d31ea4c94d482a3eeae2cf9c857ddfb9c9a7cd1) — feat: Thread LLM provider/model through plan approval notifications
 

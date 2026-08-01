@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_plugin_lint_test.md](prompts/fix_plugin_lint_test.md)
+- **PROMPT:** [prompts/202603/fix_plugin_lint_test.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_plugin_lint_test.md)
 
 # Plan: Fix `just lint` / `just test` in all plugin repos
 

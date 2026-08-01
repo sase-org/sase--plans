@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_meta_output_vars.md](prompts/fix_meta_output_vars.md)
+- **PROMPT:** [prompts/202603/fix_meta_output_vars.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_meta_output_vars.md)
 
 # Fix: `meta_` xprompt output variables broken in `pr.yml` and `commit.yml`
 

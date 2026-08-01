@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/multi_agent_prompts.md](prompts/multi_agent_prompts.md)
+- **PROMPT:** [prompts/202603/multi_agent_prompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/multi_agent_prompts.md)
 - **BEAD:** [sase-2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2/README.md)
 
 # Multi-Agent Prompts: Implementation Plan

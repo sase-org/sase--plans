@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/gemini_afteragent_stop_hooks.md](prompts/gemini_afteragent_stop_hooks.md)
+- **PROMPT:** [prompts/202603/gemini_afteragent_stop_hooks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/gemini_afteragent_stop_hooks.md)
 
 # Fix sase_commit_stop_hook for Gemini Agents (AfterAgent Hooks)
 

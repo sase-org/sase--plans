@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/agent_plan_code_timestamps.md](prompts/agent_plan_code_timestamps.md)
+- **PROMPT:** [prompts/202603/agent_plan_code_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/agent_plan_code_timestamps.md)
 
 # Plan: Add PLAN and CODE Timestamps to Agent Metadata Panel
 

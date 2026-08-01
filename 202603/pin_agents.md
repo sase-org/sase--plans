@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/pin_agents.md](prompts/pin_agents.md)
+- **PROMPT:** [prompts/202603/pin_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/pin_agents.md)
 - **COMMITS:**
   - [c800424](https://github.com/sase-org/sase/commit/c800424bf7cd75f390c9067de025768ef4e4383f) — feat: Add pin agent support on the Agents tab
 

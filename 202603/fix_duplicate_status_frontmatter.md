@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_duplicate_status_frontmatter.md](prompts/fix_duplicate_status_frontmatter.md)
+- **PROMPT:** [prompts/202603/fix_duplicate_status_frontmatter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_duplicate_status_frontmatter.md)
 
 # Fix Duplicate `status` Field in Plan File Frontmatter
 

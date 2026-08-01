@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/telegram_confirmation.md](prompts/telegram_confirmation.md)
+- **PROMPT:** [prompts/202603/telegram_confirmation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/telegram_confirmation.md)
 
 # Plan: Telegram Confirmation Messages for Feedback & Custom Answers
 

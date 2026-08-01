@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/plan_drawer.md](prompts/plan_drawer.md)
+- **PROMPT:** [prompts/202603/plan_drawer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/plan_drawer.md)
 
 # Plan: Add PLAN Drawer to COMMITS Entries
 

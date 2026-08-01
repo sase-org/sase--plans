@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/bug_tag_sync.md](prompts/bug_tag_sync.md)
+- **PROMPT:** [prompts/202603/bug_tag_sync.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/bug_tag_sync.md)
 - **COMMITS:**
   - [f4b7a77](https://github.com/sase-org/sase/commit/f4b7a7732dc2d46658335ffbfd2509b5621f185b) — fix: Sync BUG tag to ChangeSpec BUG field when added via W key
 

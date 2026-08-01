@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/suppress_hidden_agent_notifications.md](prompts/suppress_hidden_agent_notifications.md)
+- **PROMPT:** [prompts/202603/suppress_hidden_agent_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/suppress_hidden_agent_notifications.md)
 - **COMMITS:**
   - [d44540e](https://github.com/sase-org/sase/commit/d44540e9912d6e3a2a70e5676f5cd9533a43188a) — feat: Suppress notifications from hidden agents (summarize-hook, fix-hook, mentor)
 

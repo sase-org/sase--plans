@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202603/prompts/directory_restructure.md](prompts/directory_restructure.md)
+- **PROMPT:** [prompts/202603/directory_restructure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/directory_restructure.md)
 - **BEAD:** [sase-6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6/README.md)
 
 # Plan: Directory Structure Restructure

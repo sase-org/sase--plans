@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/propose_stop_hook_race.md](prompts/propose_stop_hook_race.md)
+- **PROMPT:** [prompts/202603/propose_stop_hook_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/propose_stop_hook_race.md)
 
 # Plan: Fix `#propose` workflow failure when commit_stop_hook pre-commits
 

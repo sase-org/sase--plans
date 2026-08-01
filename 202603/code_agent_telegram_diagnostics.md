@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/code_agent_telegram_diagnostics.md](prompts/code_agent_telegram_diagnostics.md)
+- **PROMPT:** [prompts/202603/code_agent_telegram_diagnostics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/code_agent_telegram_diagnostics.md)
 
 # Plan: .code Agent Telegram Completion Diagnostics
 

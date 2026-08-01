@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/unified_agent_entries.md](prompts/unified_agent_entries.md)
+- **PROMPT:** [prompts/202603/unified_agent_entries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/unified_agent_entries.md)
 - **BEAD:** sase-our6
 
 # Plan: Unified Agent Entries for Axe-Spawned Agents

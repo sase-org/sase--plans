@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_just_workflow.md](prompts/fix_just_workflow.md)
+- **PROMPT:** [prompts/202603/fix_just_workflow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_just_workflow.md)
 
 # Plan: Fix broken `#sase/fix_just` workflow's `fix_fmt` step
 

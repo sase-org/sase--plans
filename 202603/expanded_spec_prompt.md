@@ -3,7 +3,7 @@ tier: tale
 create_time: '2026-07-08 16:10:06'
 ---
 
-- **PROMPT:** [202603/prompts/expanded_spec_prompt.md](prompts/expanded_spec_prompt.md)
+- **PROMPT:** [prompts/202603/expanded_spec_prompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/expanded_spec_prompt.md)
 
 # Plan: Store Expanded Xprompt in Spec Files
 

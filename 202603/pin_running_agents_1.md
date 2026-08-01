@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/pin_running_agents_1.md](prompts/pin_running_agents_1.md)
+- **PROMPT:** [prompts/202603/pin_running_agents_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/pin_running_agents_1.md)
 - **COMMITS:**
   - [e7b8ba8](https://github.com/sase-org/sase/commit/e7b8ba8b13a01afee439a8d5eccf0272b54d0aae) — feat: Allow pinning running agents in the TUI
 

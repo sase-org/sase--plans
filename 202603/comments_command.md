@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/comments_command.md](prompts/comments_command.md)
+- **PROMPT:** [prompts/202603/comments_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/comments_command.md)
 
 # Plan: `sase comments` CLI Command
 

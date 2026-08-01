@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/direct_notification_action.md](prompts/direct_notification_action.md)
+- **PROMPT:** [prompts/202603/direct_notification_action.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/direct_notification_action.md)
 
 # Plan: Direct Notification Action on `,n`
 

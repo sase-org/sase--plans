@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/branch_naming_reform.md](prompts/branch_naming_reform.md)
+- **PROMPT:** [prompts/202603/branch_naming_reform.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/branch_naming_reform.md)
 - **COMMITS:**
   - [84e75c7](https://github.com/sase-org/sase/commit/84e75c7798420aa293ac48c584259291b490b4ae) — feat: Branch naming reform and immutable branch alias support
 

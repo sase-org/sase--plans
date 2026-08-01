@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/commit_provider_fallback.md](prompts/commit_provider_fallback.md)
+- **PROMPT:** [prompts/202603/commit_provider_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/commit_provider_fallback.md)
 - **COMMITS:**
-  - [a189150](https://github.com/sase-org/sase/commit/a189150316ca1f9b72925fa5e1bd4b5ab119c011) — fix: Fall back to bare_git for hosted remotes when no VCS plugin claims repo
+  - [a189150](https://github.com/sase-org/sase/commit/a189150316ca1f9b72925fa5e1bd4b5ab119c011) — fix: Fall back to bare\_git for hosted remotes when no VCS plugin claims repo
 
 # Fix `sase commit` failure when GitHub plugin is absent
 

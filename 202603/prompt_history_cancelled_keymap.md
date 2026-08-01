@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/prompt_history_cancelled_keymap.md](prompts/prompt_history_cancelled_keymap.md)
+- **PROMPT:** [prompts/202603/prompt_history_cancelled_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/prompt_history_cancelled_keymap.md)
 - **COMMITS:**
   - [4d758be](https://github.com/sase-org/sase/commit/4d758be7670dda6b842a4dc092b25abf63540951) — feat: Add \`,\>\` leader keymap for prompt history with cancelled prompts visible
 

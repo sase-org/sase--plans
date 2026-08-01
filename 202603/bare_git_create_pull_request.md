@@ -4,9 +4,9 @@ create_time: 2026-03-31 12:56:33
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/bare_git_create_pull_request.md](prompts/bare_git_create_pull_request.md)
+- **PROMPT:** [prompts/202603/bare_git_create_pull_request.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/bare_git_create_pull_request.md)
 - **COMMITS:**
-  - [46ab9f4](https://github.com/sase-org/sase/commit/46ab9f4ae2b13c9c2532356379ff503d5d720090) — fix: Allow create_pull_request with bare_git VCS provider
+  - [46ab9f4](https://github.com/sase-org/sase/commit/46ab9f4ae2b13c9c2532356379ff503d5d720090) — fix: Allow create\_pull\_request with bare\_git VCS provider
 
 # Fix: Allow `create_pull_request` with bare_git VCS provider
 

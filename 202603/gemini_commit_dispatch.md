@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/gemini_commit_dispatch.md](prompts/gemini_commit_dispatch.md)
+- **PROMPT:** [prompts/202603/gemini_commit_dispatch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/gemini_commit_dispatch.md)
 
 # Fix: Re-add commit dispatch steps to unified xprompts for Gemini agents
 

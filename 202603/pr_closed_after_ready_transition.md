@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/pr_closed_after_ready_transition.md](prompts/pr_closed_after_ready_transition.md)
+- **PROMPT:** [prompts/202603/pr_closed_after_ready_transition.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/pr_closed_after_ready_transition.md)
 
 # Plan: Diagnose and Fix PR Closing After Draft→Ready Transition
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/timestamps_field.md](prompts/timestamps_field.md)
+- **PROMPT:** [prompts/202603/timestamps_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/timestamps_field.md)
 - **COMMITS:**
   - [4012c63](https://github.com/sase-org/sase/commit/4012c638429790d7331495adadde6c9023d4b539) — feat: Add TIMESTAMPS section to ChangeSpecs for lifecycle audit trail
 

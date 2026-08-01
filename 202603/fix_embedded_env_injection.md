@@ -4,7 +4,7 @@ create_time: 2026-03-24 16:20:24
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_embedded_env_injection.md](prompts/fix_embedded_env_injection.md)
+- **PROMPT:** [prompts/202603/fix_embedded_env_injection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_embedded_env_injection.md)
 
 # Fix missing environment injection for embedded commit/propose/pr xprompt workflows
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/wait_workflow_completion.md](prompts/wait_workflow_completion.md)
+- **PROMPT:** [prompts/202603/wait_workflow_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/wait_workflow_completion.md)
 
 # Plan: Make `%wait:a` Work With Multi-Agent Workflows
 

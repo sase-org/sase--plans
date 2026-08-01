@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/custom_keymaps.md](prompts/custom_keymaps.md)
+- **PROMPT:** [prompts/202603/custom_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/custom_keymaps.md)
 - **BEAD:** sase-gjad
 
 # Plan: Configurable Keymaps for sase ace TUI

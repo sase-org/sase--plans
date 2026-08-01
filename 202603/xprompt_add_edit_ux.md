@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/xprompt_add_edit_ux.md](prompts/xprompt_add_edit_ux.md)
+- **PROMPT:** [prompts/202603/xprompt_add_edit_ux.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/xprompt_add_edit_ux.md)
 - **BEAD:** [sase-5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5/README.md)
 
 # Plan: Improve XPrompt Add/Edit UX in `sase ace` TUI

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/changespec_archive_file.md](prompts/changespec_archive_file.md)
+- **PROMPT:** [prompts/202603/changespec_archive_file.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/changespec_archive_file.md)
 
 # Plan: Move ChangeSpecs to Archive File on Terminal Status
 

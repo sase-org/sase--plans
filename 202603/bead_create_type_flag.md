@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/bead_create_type_flag.md](prompts/bead_create_type_flag.md)
+- **PROMPT:** [prompts/202603/bead_create_type_flag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/bead_create_type_flag.md)
 
 # Plan: Migrate `sase bead create` to `--type` flag
 

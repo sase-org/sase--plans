@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/complete_mentor.md](prompts/complete_mentor.md)
+- **PROMPT:** [prompts/202603/complete_mentor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/complete_mentor.md)
 - **COMMITS:**
   - [abab056](https://github.com/sase-org/sase/commit/abab05658ddd287bc4a52d54016edbccd46f844b) — feat: Replace 'testing' mentor profile with 'complete' profile
 

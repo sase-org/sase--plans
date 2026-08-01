@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/gemini_commit_skill.md](prompts/gemini_commit_skill.md)
+- **PROMPT:** [prompts/202603/gemini_commit_skill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/gemini_commit_skill.md)
 
 # Plan: Fix Gemini commit stop hook to use skills instead of CLI command
 

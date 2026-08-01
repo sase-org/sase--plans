@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/llm_retry_support.md](prompts/llm_retry_support.md)
+- **PROMPT:** [prompts/202603/llm_retry_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/llm_retry_support.md)
 - **BEAD:** sase-8h82
 
 # Add Configurable LLM Provider Retry & Fallback Support

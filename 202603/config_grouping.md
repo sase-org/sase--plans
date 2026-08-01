@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/config_grouping.md](prompts/config_grouping.md)
+- **PROMPT:** [prompts/202603/config_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/config_grouping.md)
 
 # Plan: sase-6.5 — Config grouping + final loose file cleanup
 

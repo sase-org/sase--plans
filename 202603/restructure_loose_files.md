@@ -5,7 +5,7 @@ bead_id: sase-8
 tier: epic
 ---
 
-- **PROMPT:** [202603/prompts/restructure_loose_files.md](prompts/restructure_loose_files.md)
+- **PROMPT:** [prompts/202603/restructure_loose_files.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/restructure_loose_files.md)
 - **BEAD:** [sase-8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8/README.md)
 
 # Plan: Restructure Loose Files in `src/sase/` (Option A)

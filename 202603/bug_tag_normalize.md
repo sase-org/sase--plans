@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/bug_tag_normalize.md](prompts/bug_tag_normalize.md)
+- **PROMPT:** [prompts/202603/bug_tag_normalize.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/bug_tag_normalize.md)
 - **COMMITS:**
   - [2ae8d05](https://github.com/sase-org/sase/commit/2ae8d05cba7dfcfd66696b7d61660dbebdf2440a) — ref: Make BUG tag normalization VCS-agnostic via provider hook
 

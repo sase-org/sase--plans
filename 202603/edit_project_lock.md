@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/edit_project_lock.md](prompts/edit_project_lock.md)
+- **PROMPT:** [prompts/202603/edit_project_lock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/edit_project_lock.md)
 
 # Plan: Project File Edit Locking
 

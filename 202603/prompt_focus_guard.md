@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/prompt_focus_guard.md](prompts/prompt_focus_guard.md)
+- **PROMPT:** [prompts/202603/prompt_focus_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/prompt_focus_guard.md)
 - **COMMITS:**
   - [a4d1337](https://github.com/sase-org/sase/commit/a4d133766cf3e422fbbffce99b4b5842f797e5a0) — fix: Add focus guard to PromptTextArea to prevent focus loss
 

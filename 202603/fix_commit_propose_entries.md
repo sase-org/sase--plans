@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_commit_propose_entries.md](prompts/fix_commit_propose_entries.md)
+- **PROMPT:** [prompts/202603/fix_commit_propose_entries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_commit_propose_entries.md)
 
 # Plan: Fix #commit/#propose ChangeSpec COMMITS entry creation and meta ID outputs
 

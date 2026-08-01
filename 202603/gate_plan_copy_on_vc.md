@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/gate_plan_copy_on_vc.md](prompts/gate_plan_copy_on_vc.md)
+- **PROMPT:** [prompts/202603/gate_plan_copy_on_vc.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/gate_plan_copy_on_vc.md)
 
 # Plan: Gate plan-file copy-into-repo on `sdd.version_controlled`
 

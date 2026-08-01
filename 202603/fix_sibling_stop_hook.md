@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_sibling_stop_hook.md](prompts/fix_sibling_stop_hook.md)
+- **PROMPT:** [prompts/202603/fix_sibling_stop_hook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_sibling_stop_hook.md)
 
 # Plan: Fix sase_sibling_commit_stop_hook
 

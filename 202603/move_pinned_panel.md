@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/move_pinned_panel.md](prompts/move_pinned_panel.md)
+- **PROMPT:** [prompts/202603/move_pinned_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/move_pinned_panel.md)
 - **COMMITS:**
   - [ea630b7](https://github.com/sase-org/sase/commit/ea630b7c7889abe3e72d97af3f9b1b4eb5e842dd) — feat: Move pinned panel to left side and add focus-only highlighting
 

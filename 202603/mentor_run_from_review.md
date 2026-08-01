@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/mentor_run_from_review.md](prompts/mentor_run_from_review.md)
+- **PROMPT:** [prompts/202603/mentor_run_from_review.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/mentor_run_from_review.md)
 
 # Plan: Run Mentor Profile from Mentor Review Panel
 

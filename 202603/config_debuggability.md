@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/config_debuggability.md](prompts/config_debuggability.md)
+- **PROMPT:** [prompts/202603/config_debuggability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/config_debuggability.md)
 
 # Plan: Config & Mentor Profile Debuggability
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/tui_commit_keybinding.md](prompts/tui_commit_keybinding.md)
+- **PROMPT:** [prompts/202603/tui_commit_keybinding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/tui_commit_keybinding.md)
 
 # Plan: Add `c` (commit) keybinding to TUI plan approval modal
 

@@ -4,7 +4,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/sase_beads_migration.md](prompts/sase_beads_migration.md)
+- **PROMPT:** [prompts/202603/sase_beads_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/sase_beads_migration.md)
 - **BEAD:** sase-5fkw
 
 # Plan: sase-beads Package + Migration from steveyegge/beads

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/split_run_agent_exec.md](prompts/split_run_agent_exec.md)
+- **PROMPT:** [prompts/202603/split_run_agent_exec.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/split_run_agent_exec.md)
 
 # Plan: Split `run_agent_exec.py` into multiple files
 

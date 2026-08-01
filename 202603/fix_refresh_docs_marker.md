@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_refresh_docs_marker.md](prompts/fix_refresh_docs_marker.md)
+- **PROMPT:** [prompts/202603/fix_refresh_docs_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_refresh_docs_marker.md)
 - **COMMITS:**
-  - [54ca314](https://github.com/sase-org/sase/commit/54ca3141a5be847c46c24148312ee32775219018) — fix: Use current HEAD in refresh_docs marker instead of stale pre-agent SHA
+  - [54ca314](https://github.com/sase-org/sase/commit/54ca3141a5be847c46c24148312ee32775219018) — fix: Use current HEAD in refresh\_docs marker instead of stale pre-agent SHA
 
 # Fix refresh_docs marker to account for agent-created commits
 

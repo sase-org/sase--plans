@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/tg_button_autodismiss.md](prompts/tg_button_autodismiss.md)
+- **PROMPT:** [prompts/202603/tg_button_autodismiss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/tg_button_autodismiss.md)
 
 # Plan: Auto-dismiss Telegram Buttons on TUI Response
 

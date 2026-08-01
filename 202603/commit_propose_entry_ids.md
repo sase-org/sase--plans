@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/commit_propose_entry_ids.md](prompts/commit_propose_entry_ids.md)
+- **PROMPT:** [prompts/202603/commit_propose_entry_ids.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/commit_propose_entry_ids.md)
 
 # Plan: Fix #propose/#commit COMMITS entry creation and Proposal Id display
 

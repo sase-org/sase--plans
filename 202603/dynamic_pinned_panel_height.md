@@ -4,7 +4,7 @@ status: pending
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/dynamic_pinned_panel_height.md](prompts/dynamic_pinned_panel_height.md)
+- **PROMPT:** [prompts/202603/dynamic_pinned_panel_height.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/dynamic_pinned_panel_height.md)
 - **COMMITS:**
   - [97b16da](https://github.com/sase-org/sase/commit/97b16da34ec2941c6219ca7e5fff208ef2dd4f5a) — feat: Dynamic pinned panel height that scales with content
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/remove_agents_m_keymap.md](prompts/remove_agents_m_keymap.md)
+- **PROMPT:** [prompts/202603/remove_agents_m_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/remove_agents_m_keymap.md)
 - **COMMITS:**
   - [1a46198](https://github.com/sase-org/sase/commit/1a46198f14778be8b75f48f34bdfd325c2e888b8) — feat: Remove \`m\` (message) keymap from Agents tab
 

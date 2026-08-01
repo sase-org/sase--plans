@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/telegram_button_dismiss.md](prompts/telegram_button_dismiss.md)
+- **PROMPT:** [prompts/202603/telegram_button_dismiss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/telegram_button_dismiss.md)
 - **COMMITS:**
-  - [1a67048](https://github.com/sase-org/sase/commit/1a67048fbac199943e9798dd65f8af8901b2986b) — fix: Write plan_response.json on TUI rejection without feedback
+  - [1a67048](https://github.com/sase-org/sase/commit/1a67048fbac199943e9798dd65f8af8901b2986b) — fix: Write plan\_response.json on TUI rejection without feedback
 
 # Plan: Fix Telegram plan buttons not dismissed on TUI rejection
 

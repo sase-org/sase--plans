@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/makefile_to_justfile_1.md](prompts/makefile_to_justfile_1.md)
+- **PROMPT:** [prompts/202603/makefile_to_justfile_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/makefile_to_justfile_1.md)
 
 # Plan: Migrate chezmoi repo from Makefile to Justfile
 

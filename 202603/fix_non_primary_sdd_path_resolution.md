@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_non_primary_sdd_path_resolution.md](prompts/fix_non_primary_sdd_path_resolution.md)
+- **PROMPT:** [prompts/202603/fix_non_primary_sdd_path_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_non_primary_sdd_path_resolution.md)
 
 # Fix non-primary SDD writes for workspace-suffixed parent dirs
 

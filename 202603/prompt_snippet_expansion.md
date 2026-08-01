@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/prompt_snippet_expansion.md](prompts/prompt_snippet_expansion.md)
+- **PROMPT:** [prompts/202603/prompt_snippet_expansion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/prompt_snippet_expansion.md)
 
 # Plan: Prompt Input Snippet Expansion
 

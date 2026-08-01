@@ -4,7 +4,7 @@ status: not started
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/harden_commit_stop_hook.md](prompts/harden_commit_stop_hook.md)
+- **PROMPT:** [prompts/202603/harden_commit_stop_hook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/harden_commit_stop_hook.md)
 
 # Plan: Harden sase_commit_stop_hook against repeated blocking and forced commits
 

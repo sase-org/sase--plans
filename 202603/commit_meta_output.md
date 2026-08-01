@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/commit_meta_output.md](prompts/commit_meta_output.md)
+- **PROMPT:** [prompts/202603/commit_meta_output.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/commit_meta_output.md)
 
 # Plan: Propagate meta\_\* output variables from unified CommitWorkflow to TUI
 

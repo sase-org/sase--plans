@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/project_local_xprompts_in_panels.md](prompts/project_local_xprompts_in_panels.md)
+- **PROMPT:** [prompts/202603/project_local_xprompts_in_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/project_local_xprompts_in_panels.md)
 
 # Plan: Show Project-Local sase.yml XPrompts in TUI Panels
 

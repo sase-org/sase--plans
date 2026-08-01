@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/changespec_mercurial_fix.md](prompts/changespec_mercurial_fix.md)
+- **PROMPT:** [prompts/202603/changespec_mercurial_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/changespec_mercurial_fix.md)
 
 # Plan: Fix ChangeSpec Creation for Mercurial VCS (`#pr` workflow)
 

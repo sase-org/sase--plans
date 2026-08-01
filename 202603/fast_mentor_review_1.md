@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fast_mentor_review_1.md](prompts/fast_mentor_review_1.md)
+- **PROMPT:** [prompts/202603/fast_mentor_review_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fast_mentor_review_1.md)
 
 # Plan: Fast Mentor Review Panel (VCS-agnostic, No Workspace Checkout)
 

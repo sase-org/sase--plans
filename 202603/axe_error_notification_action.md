@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/axe_error_notification_action.md](prompts/axe_error_notification_action.md)
+- **PROMPT:** [prompts/202603/axe_error_notification_action.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/axe_error_notification_action.md)
 
 # Plan: Axe Error Digest Notification Action
 

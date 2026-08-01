@@ -5,7 +5,7 @@ bead_id: sase-7
 tier: epic
 ---
 
-- **PROMPT:** [202603/prompts/mentor_redesign.md](prompts/mentor_redesign.md)
+- **PROMPT:** [prompts/202603/mentor_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/mentor_redesign.md)
 - **BEAD:** [sase-7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7/README.md)
 
 # Mentor Redesign - Implementation Plan

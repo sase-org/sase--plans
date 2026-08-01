@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_done_agent_meta_enrichment.md](prompts/fix_done_agent_meta_enrichment.md)
+- **PROMPT:** [prompts/202603/fix_done_agent_meta_enrichment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_done_agent_meta_enrichment.md)
 
 # Fix: Missing CL URL and CL Name in Agent Metadata Panel for Done Agents
 

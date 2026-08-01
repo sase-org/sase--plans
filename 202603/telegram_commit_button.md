@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/telegram_commit_button.md](prompts/telegram_commit_button.md)
+- **PROMPT:** [prompts/202603/telegram_commit_button.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/telegram_commit_button.md)
 
 # Plan: Add Commit Button to Telegram Plan Approval Messages
 

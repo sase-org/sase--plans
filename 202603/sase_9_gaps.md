@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/sase_9_gaps.md](prompts/sase_9_gaps.md)
+- **PROMPT:** [prompts/202603/sase_9_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/sase_9_gaps.md)
 
 # Plan: sase-9 Implementation Gaps
 

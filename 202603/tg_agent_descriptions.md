@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/tg_agent_descriptions.md](prompts/tg_agent_descriptions.md)
+- **PROMPT:** [prompts/202603/tg_agent_descriptions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/tg_agent_descriptions.md)
 - **COMMITS:**
-  - [9eaba05](https://github.com/sase-org/sase/commit/9eaba057f4306b1fd5b20ba5ab1a2db388b0090d) — chore: Mark tg_agent_descriptions plan as done
+  - [9eaba05](https://github.com/sase-org/sase/commit/9eaba057f4306b1fd5b20ba5ab1a2db388b0090d) — chore: Mark tg\_agent\_descriptions plan as done
 
 # Plan: Add Agent Descriptions to Telegram /kill and /resume Buttons
 

@@ -4,7 +4,7 @@ create_time: 2026-03-27 13:48:35
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/unify_commits_entry.md](prompts/unify_commits_entry.md)
+- **PROMPT:** [prompts/202603/unify_commits_entry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/unify_commits_entry.md)
 
 # Plan: Unify COMMITS entry creation in CommitWorkflow
 

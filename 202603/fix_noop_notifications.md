@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_noop_notifications.md](prompts/fix_noop_notifications.md)
+- **PROMPT:** [prompts/202603/fix_noop_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_noop_notifications.md)
 
 # Fix: Suppress notifications for noop workflow runs
 

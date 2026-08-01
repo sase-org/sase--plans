@@ -5,7 +5,7 @@ tier: epic
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202603/prompts/background_tasks.md](prompts/background_tasks.md)
+- **PROMPT:** [prompts/202603/background_tasks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/background_tasks.md)
 - **BEAD:** [sase-3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3/README.md)
 
 # Plan: Migrate Sync, Mail, and Accept to Background Tasks

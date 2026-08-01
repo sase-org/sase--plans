@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_pylimit_split.md](prompts/fix_pylimit_split.md)
+- **PROMPT:** [prompts/202603/fix_pylimit_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_pylimit_split.md)
 - **COMMITS:**
-  - [e6cfb5e](https://github.com/sase-org/sase/commit/e6cfb5e33051c0434fca4ea3b425a21beb0b92fa) — fix: Consolidate pylimit_split workflow to eliminate inter-step dependency
+  - [e6cfb5e](https://github.com/sase-org/sase/commit/e6cfb5e33051c0434fca4ea3b425a21beb0b92fa) — fix: Consolidate pylimit\_split workflow to eliminate inter-step dependency
 
 # Fix `#sase/pylimit_split` workflow: eliminate inter-step dependency
 

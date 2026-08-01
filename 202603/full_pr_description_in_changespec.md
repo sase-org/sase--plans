@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/full_pr_description_in_changespec.md](prompts/full_pr_description_in_changespec.md)
+- **PROMPT:** [prompts/202603/full_pr_description_in_changespec.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/full_pr_description_in_changespec.md)
 - **COMMITS:**
   - [c62af84](https://github.com/sase-org/sase/commit/c62af844cde6e8955da0c9f695c3e7c54865ba8f) — feat: Use full PR description in ChangeSpec DESCRIPTION field
 

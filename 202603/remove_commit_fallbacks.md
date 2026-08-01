@@ -4,7 +4,7 @@ create_time: 2026-03-26 19:21:26
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/remove_commit_fallbacks.md](prompts/remove_commit_fallbacks.md)
+- **PROMPT:** [prompts/202603/remove_commit_fallbacks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/remove_commit_fallbacks.md)
 
 # Plan: Remove Commit Fallbacks & Proper Proposal Support
 

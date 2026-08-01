@@ -4,9 +4,9 @@ create_time: 2026-03-29 10:38:27
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_hg_newline_in_note.md](prompts/fix_hg_newline_in_note.md)
+- **PROMPT:** [prompts/202603/fix_hg_newline_in_note.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_hg_newline_in_note.md)
 - **COMMITS:**
-  - [ff48fb2](https://github.com/sase-org/sase/commit/ff48fb271d0c8081b5ab605edf554c311ca7760e) — chore: Mark fix_hg_newline_in_note plan as done
+  - [ff48fb2](https://github.com/sase-org/sase/commit/ff48fb271d0c8081b5ab605edf554c311ca7760e) — chore: Mark fix\_hg\_newline\_in\_note plan as done
 
 # Fix: hg amend newline failure in retired Mercurial plugin vcs_create_commit
 

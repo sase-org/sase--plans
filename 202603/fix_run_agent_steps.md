@@ -4,9 +4,9 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/fix_run_agent_steps.md](prompts/fix_run_agent_steps.md)
+- **PROMPT:** [prompts/202603/fix_run_agent_steps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/fix_run_agent_steps.md)
 - **COMMITS:**
-  - [961d926](https://github.com/sase-org/sase/commit/961d926750c95a0ab15a15c4ef116160921e8b93) — fix: Write initial workflow_state.json for agents so TUI shows steps immediately
+  - [961d926](https://github.com/sase-org/sase/commit/961d926750c95a0ab15a15c4ef116160921e8b93) — fix: Write initial workflow\_state.json for agents so TUI shows steps immediately
 
 # Fix: `sase run` agents show no workflow steps in TUI
 

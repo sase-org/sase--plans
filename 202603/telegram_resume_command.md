@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/telegram_resume_command.md](prompts/telegram_resume_command.md)
+- **PROMPT:** [prompts/202603/telegram_resume_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/telegram_resume_command.md)
 
 # Plan: Add `/resume` Telegram Slash Command
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/hg_changespec_metadata.md](prompts/hg_changespec_metadata.md)
+- **PROMPT:** [prompts/202603/hg_changespec_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/hg_changespec_metadata.md)
 
 # Plan: Fix missing ChangeSpec metadata for hg provider in Agents panel
 

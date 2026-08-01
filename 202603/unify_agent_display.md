@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/unify_agent_display.md](prompts/unify_agent_display.md)
+- **PROMPT:** [prompts/202603/unify_agent_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/unify_agent_display.md)
 
 # Plan: Unify Agent Display Across Run Modes
 

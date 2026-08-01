@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202603/prompts/agent_ref_in_vcs_tags.md](prompts/agent_ref_in_vcs_tags.md)
+- **PROMPT:** [prompts/202603/agent_ref_in_vcs_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202603/agent_ref_in_vcs_tags.md)
 
 # Plan: `#<vcs>:@<name>` Agent Reference in VCS Tags
 
