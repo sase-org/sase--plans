@@ -7,7 +7,7 @@ goal:
   identical to today's output."
 proposed_by: bbugyi200.athena.r6
 create_time: 2026-08-01 09:04:08
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/bead_show_styling.md](prompts/bead_show_styling.md)
