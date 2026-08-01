@@ -1,53 +1,53 @@
 ---
 tier: epic
 title: Finish and land canonical prompt artifact persistence
-goal:
-  Complete the missing release, integration, migration-publication, and closeout work required for sase-dh so prompt
-  artifacts have one canonical archive, every supported command preserves that invariant, clean installs use the shipped
-  Rust contract, and the epic can be closed with verified remote state.
+goal: Complete the missing release, integration, migration-publication, and closeout
+  work required for sase-dh so prompt artifacts have one canonical archive, every
+  supported command preserves that invariant, clean installs use the shipped Rust
+  contract, and the epic can be closed with verified remote state.
 phases:
-  - id: rust-release
-    title: Finish the Rust contract integration and publish it
-    depends_on: []
-    size: medium
-    description:
-      "rust-release: Restrict artifact-header recognition to the leading plan header block, verify the existing
-      prompt-artifact wire contract, and publish the next sase-core release so a clean Python install contains the
-      feature."
-  - id: canonical-interfaces
-    title: Make every prompt interface use the canonical agents archive
-    depends_on:
-      - rust-release
-    size: medium
-    description:
-      "canonical-interfaces: Fix plans-sidecar selection and publication in the migration command, retire plans-sidecar
-      prompt export/search behavior, and update tests and documentation so no supported command can recreate prompt
-      snapshots in plans."
-  - id: publish-migration
-    title: Publish and validate the historical migration
-    depends_on:
-      - canonical-interfaces
-    size: medium
-    description:
-      "publish-migration: Recover and publish the six completed plans-sidecar migration commits on top of current remote
-      work, then prove that plans has no prompt snapshots and both sidecars validate from their remote tips."
-  - id: close-epic
-    title: Close sase-dh and complete post-close cleanup
-    depends_on:
-      - publish-migration
-    size: medium
-    description:
-      "close-epic: Re-audit all child notes, disposition every proposed follow-up, close the epic without an unjustified
-      force, run post-close Symvision cleanup, and mark the linked epic plan done."
+- id: rust-release
+  title: Finish the Rust contract integration and publish it
+  depends_on: []
+  size: medium
+  description: 'rust-release: Restrict artifact-header recognition to the leading
+    plan header block, verify the existing prompt-artifact wire contract, and publish
+    the next sase-core release so a clean Python install contains the feature.'
+- id: canonical-interfaces
+  title: Make every prompt interface use the canonical agents archive
+  depends_on:
+  - rust-release
+  size: medium
+  description: 'canonical-interfaces: Fix plans-sidecar selection and publication
+    in the migration command, retire plans-sidecar prompt export/search behavior,
+    and update tests and documentation so no supported command can recreate prompt
+    snapshots in plans.'
+- id: publish-migration
+  title: Publish and validate the historical migration
+  depends_on:
+  - canonical-interfaces
+  size: medium
+  description: 'publish-migration: Recover and publish the six completed plans-sidecar
+    migration commits on top of current remote work, then prove that plans has no
+    prompt snapshots and both sidecars validate from their remote tips.'
+- id: close-epic
+  title: Close sase-dh and complete post-close cleanup
+  depends_on:
+  - publish-migration
+  size: medium
+  description: 'close-epic: Re-audit all child notes, disposition every proposed follow-up,
+    close the epic without an unjustified force, run post-close Symvision cleanup,
+    and mark the linked epic plan done.'
 status: wip
 proposed_by: bbugyi200.athena.sase-dh.land
 parent_bead: sase-dh
 create_time: 2026-08-01 16:22:50
+bead_id: sase-dh.8
 ---
 
 - **PROMPT:** [202608/prompts/finish_dh.md](prompts/finish_dh.md)
-- **PARENT:**
-  [202608/artifact_persistence_sidecars.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_persistence_sidecars.md)
+- **PARENT:** [202608/artifact_persistence_sidecars.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_persistence_sidecars.md)
+- **BEAD:** [sase-dh.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dh/sase-dh.8.md)
 
 # Finish and Land `sase-dh`
 
