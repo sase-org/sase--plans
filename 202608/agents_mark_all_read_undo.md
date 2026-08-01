@@ -7,6 +7,12 @@ goal:
 proposed_by: bbugyi200.athena.ri
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.ri](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ri.md)
+- **COMMITS:**
+  - [d53f085](https://github.com/sase-org/sase/commit/d53f0856eed0f83076e2afe96ad5b1fb0bee5707) — feat(ace): add undo
+    for bulk agent read toggle
+
 # Plan: Make the Agents-tab mark-all-read action reversible
 
 ## Outcome and behavioral contract
