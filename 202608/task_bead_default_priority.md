@@ -8,6 +8,11 @@ status: done
 ---
 
 - **PROMPT:** [202608/prompts/task_bead_default_priority.md](prompts/task_bead_default_priority.md)
+- **AGENTS:**
+  - [bbugyi200.athena.r0.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.r0.f0.md)
+- **COMMITS:**
+  - [5022003](https://github.com/sase-org/sase/commit/502200368dd7d2f4762ee8bb5d8fd18b33e2ae88) — fix(beads): use
+    default priority for task workers
 
 # Plan: Use Default Runner Priority for Task-Bead Workers
 
