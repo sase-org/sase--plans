@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-cy.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-cy.land.md)
 - **COMMITS:**
-  - [9cf08e7](https://github.com/sase-org/sase/commit/9cf08e739663dcc62d91e5794bcaebfb6fe7d274) — build(deps): require
-    core 0.17.5 for snoozing
+  - [8282e77](https://github.com/sase-org/sase--plans/commit/8282e77005db62dff42886e1e3c3a5b7a5cc17b7) — docs: mark
+    notification snoozing plan done
 
 # Plan: Land Reliable Notification Snoozing and Resurfacing
 
