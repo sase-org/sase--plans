@@ -1,80 +1,82 @@
 ---
 tier: epic
 title: Split Artifacts into a dedicated Beads sub-tab and a nested Files sub-tab
-goal: "The Artifacts tab exposes a bead-only Beads sub-tab with full task-bead triage, and a Files sub-tab whose Plans,
-  Chats, and Other sub-sub-tabs cycle with ( and ), with Plans dedicated to plan documents and bidirectional jumps
-  between a plan file and the bead that links it.
+goal: 'The Artifacts tab exposes a bead-only Beads sub-tab with full task-bead triage,
+  and a Files sub-tab whose Plans, Chats, and Other sub-sub-tabs cycle with ( and
+  ), with Plans dedicated to plan documents and bidirectional jumps between a plan
+  file and the bead that links it.
 
-  "
+  '
 phases:
-  - id: shell
-    title: Sub-tab taxonomy, nested Files container, and keymap surface
-    depends_on: []
-    size: medium
-    description:
-      "shell: retype the Artifacts sub-tabs to commits/beads/bugs/prs/files, mount a nested tab strip inside Files that
-      hosts Plans, Chats, and Other, re-key every mark/jump/detail/copy/footer store off a pane key instead of a
-      sub-tab, and declare all new keymap fields, bindings, and action stubs up front."
-  - id: beads_view
-    title: Read-only Beads pane
-    depends_on:
-      - shell
-    size: medium
-    description:
-      "beads_view: load beads off-thread behind an mtime-keyed snapshot, render a Tasks section and an expandable Epics
-      tree in which every bead appears exactly once, build the detail panel from shared bead presentation metadata, and
-      wire navigation, marks, and jump hints."
-  - id: beads_filters
-    title: Bead filter query and inline filter bar
-    depends_on:
-      - beads_view
-    size: small
-    description:
-      "beads_filters: parse a bead filter query covering type, status, tier, size, project, people, has, and date terms,
-      prefold it into a reusable record index, and drive an inline completion bar whose hide-closed default stays
-      visible in the info line."
-  - id: beads_actions
-    title: Bead mutations, close-with-reason, and triage-gate settlement
-    depends_on:
-      - beads_view
-    size: medium
-    description:
-      "beads_actions: run every bead write as a tracked background task through the shared store-mutation facade, add
-      create, edit, note, status, launch, and close surfaces, and settle the matching pending triage gate when a task
-      bead is closed or launched from the pane."
-  - id: plans_focus
-    title: Plans sub-sub-tab dedicated to plan documents
-    depends_on:
-      - shell
-    size: medium
-    description:
-      "plans_focus: regroup the pane into pending proposals, plans linked from live beads, and the archive, delete the
-      bead rows and bead-only actions, and retune the filter vocabulary, detail panel, and copy targets to plan
-      documents."
-  - id: crosslinks
-    title: Bidirectional bead and plan jumps with conditional footer hints
-    depends_on:
-      - beads_filters
-      - beads_actions
-      - plans_focus
-    size: small
-    description:
-      "crosslinks: resolve each row's counterpart across the two panes, switch sub-tabs and apply a pending selection
-      that survives an unloaded target pane, and surface the jump keys as conditional footer entries."
-  - id: polish
-    title: Help, docs, onboarding, and visual snapshots
-    depends_on:
-      - crosslinks
-    size: medium
-    description:
-      "polish: document the new layout in the help modal and the ace guide, refresh onboarding and empty-state copy,
-      complete the copy-mode palette for the new group, and re-record the affected PNG goldens."
+- id: shell
+  title: Sub-tab taxonomy, nested Files container, and keymap surface
+  depends_on: []
+  size: medium
+  description: 'shell: retype the Artifacts sub-tabs to commits/beads/bugs/prs/files,
+    mount a nested tab strip inside Files that hosts Plans, Chats, and Other, re-key
+    every mark/jump/detail/copy/footer store off a pane key instead of a sub-tab,
+    and declare all new keymap fields, bindings, and action stubs up front.'
+- id: beads_view
+  title: Read-only Beads pane
+  depends_on:
+  - shell
+  size: medium
+  description: 'beads_view: load beads off-thread behind an mtime-keyed snapshot,
+    render a Tasks section and an expandable Epics tree in which every bead appears
+    exactly once, build the detail panel from shared bead presentation metadata, and
+    wire navigation, marks, and jump hints.'
+- id: beads_filters
+  title: Bead filter query and inline filter bar
+  depends_on:
+  - beads_view
+  size: small
+  description: 'beads_filters: parse a bead filter query covering type, status, tier,
+    size, project, people, has, and date terms, prefold it into a reusable record
+    index, and drive an inline completion bar whose hide-closed default stays visible
+    in the info line.'
+- id: beads_actions
+  title: Bead mutations, close-with-reason, and triage-gate settlement
+  depends_on:
+  - beads_view
+  size: medium
+  description: 'beads_actions: run every bead write as a tracked background task through
+    the shared store-mutation facade, add create, edit, note, status, launch, and
+    close surfaces, and settle the matching pending triage gate when a task bead is
+    closed or launched from the pane.'
+- id: plans_focus
+  title: Plans sub-sub-tab dedicated to plan documents
+  depends_on:
+  - shell
+  size: medium
+  description: 'plans_focus: regroup the pane into pending proposals, plans linked
+    from live beads, and the archive, delete the bead rows and bead-only actions,
+    and retune the filter vocabulary, detail panel, and copy targets to plan documents.'
+- id: crosslinks
+  title: Bidirectional bead and plan jumps with conditional footer hints
+  depends_on:
+  - beads_filters
+  - beads_actions
+  - plans_focus
+  size: small
+  description: 'crosslinks: resolve each row''s counterpart across the two panes,
+    switch sub-tabs and apply a pending selection that survives an unloaded target
+    pane, and surface the jump keys as conditional footer entries.'
+- id: polish
+  title: Help, docs, onboarding, and visual snapshots
+  depends_on:
+  - crosslinks
+  size: medium
+  description: 'polish: document the new layout in the help modal and the ace guide,
+    refresh onboarding and empty-state copy, complete the copy-mode palette for the
+    new group, and re-record the affected PNG goldens.'
 proposed_by: bbugyi200.athena.r7
 create_time: 2026-08-01 09:52:31
 status: wip
+bead_id: sase-dd
 ---
 
 - **PROMPT:** [202608/prompts/artifacts_beads_and_files_subtabs.md](prompts/artifacts_beads_and_files_subtabs.md)
+- **BEAD:** [sase-dd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dd/README.md)
 
 # Plan: Artifacts Beads sub-tab and nested Files sub-tab
 
