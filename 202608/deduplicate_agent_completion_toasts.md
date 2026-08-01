@@ -6,7 +6,7 @@ goal:
   alert once.
 proposed_by: bbugyi200.athena.ra
 create_time: 2026-08-01 10:01:47
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/deduplicate_agent_completion_toasts.md](prompts/deduplicate_agent_completion_toasts.md)
