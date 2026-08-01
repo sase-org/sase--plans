@@ -1,49 +1,51 @@
 ---
 tier: epic
 title: Reliable notification snoozing and resurfacing
-goal: "Snoozed notifications use one durable time contract, resurface as visible unread activity at the requested
-  deadline, and are delivered and ordered consistently across ACE, CLI, mobile gateway, and Telegram consumers.
+goal: 'Snoozed notifications use one durable time contract, resurface as visible unread
+  activity at the requested deadline, and are delivered and ordered consistently across
+  ACE, CLI, mobile gateway, and Telegram consumers.
 
-  "
+  '
 phases:
-  - id: core-expiry
-    title: Canonical snooze state and expiry contract
-    depends_on: []
-    size: medium
-    description:
-      "core-expiry: make the Rust notification store own validated deadlines, atomic active-row expiry, resurface
-      metadata, and next-deadline projection."
-  - id: ace-deadlines
-    title: Deadline-driven ACE reminders
-    depends_on:
-      - core-expiry
-    size: medium
-    description:
-      "ace-deadlines: add a pump-free nearest-deadline coordinator that remains reliable across refresh settings,
-      restarts, suspend, clock changes, and notification mutations."
-  - id: downstream-resurface
-    title: Cross-surface resurface ordering and delivery
-    depends_on:
-      - core-expiry
-    size: medium
-    description:
-      "downstream-resurface: adopt current-state reads and resurface activity cursors in CLI, mobile gateway, and
-      Telegram projections so old snoozed rows become new visible activity."
-  - id: regression-docs
-    title: End-to-end regression matrix and documentation
-    depends_on:
-      - ace-deadlines
-      - downstream-resurface
-    size: small
-    description:
-      "regression-docs: verify state, timing, ordering, concurrency, and downstream delivery together and document the
-      resulting guarantees and recovery behavior."
+- id: core-expiry
+  title: Canonical snooze state and expiry contract
+  depends_on: []
+  size: medium
+  description: 'core-expiry: make the Rust notification store own validated deadlines,
+    atomic active-row expiry, resurface metadata, and next-deadline projection.'
+- id: ace-deadlines
+  title: Deadline-driven ACE reminders
+  depends_on:
+  - core-expiry
+  size: medium
+  description: 'ace-deadlines: add a pump-free nearest-deadline coordinator that remains
+    reliable across refresh settings, restarts, suspend, clock changes, and notification
+    mutations.'
+- id: downstream-resurface
+  title: Cross-surface resurface ordering and delivery
+  depends_on:
+  - core-expiry
+  size: medium
+  description: 'downstream-resurface: adopt current-state reads and resurface activity
+    cursors in CLI, mobile gateway, and Telegram projections so old snoozed rows become
+    new visible activity.'
+- id: regression-docs
+  title: End-to-end regression matrix and documentation
+  depends_on:
+  - ace-deadlines
+  - downstream-resurface
+  size: small
+  description: 'regression-docs: verify state, timing, ordering, concurrency, and
+    downstream delivery together and document the resulting guarantees and recovery
+    behavior.'
 proposed_by: bbugyi200.athena.qu
 create_time: 2026-08-01 06:45:47
 status: wip
+bead_id: sase-cy
 ---
 
 - **PROMPT:** [202608/prompts/reliable_notification_snoozing.md](prompts/reliable_notification_snoozing.md)
+- **BEAD:** [sase-cy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cy/README.md)
 
 # Plan: Reliable Notification Snoozing and Resurfacing
 
