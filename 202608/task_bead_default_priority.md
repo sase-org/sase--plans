@@ -4,7 +4,7 @@ title: Use default runner priority for task-bead workers
 goal: Bundled task-bead workers use the same implicit runner priority as other bundled bead-worker agents.
 proposed_by: bbugyi200.athena.r0.f0
 create_time: 2026-08-01 08:26:54
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/task_bead_default_priority.md](prompts/task_bead_default_priority.md)
