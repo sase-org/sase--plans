@@ -10,10 +10,16 @@ create_time: 2026-08-01 16:17:41
 status: done
 ---
 
-- **PROMPT:** [202608/prompts/land_sase_dr.md](prompts/land_sase_dr.md)
+- **PROMPT:**
+  [prompts/202608/land_sase_dr.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/land_sase_dr.md)
 - **PARENT:**
   [202608/task_bead_plus_one.md](https://github.com/sase-org/sase--plans/blob/main/202608/task_bead_plus_one.md)
 - **BEAD:** [sase-dr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dr/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-dr.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-dr.land.md)
+- **COMMITS:**
+  - [6ff36de](https://github.com/sase-org/sase--plans/commit/6ff36defe9cef4c1a5617c88b15a87dd8d055507) — docs: mark task
+    bead plus one plan done
 
 # Finish integration and land epic `sase-dr`
 
