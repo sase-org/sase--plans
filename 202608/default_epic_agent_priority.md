@@ -6,7 +6,7 @@ goal:
   waits.
 proposed_by: bbugyi200.athena.r0
 create_time: 2026-08-01 08:05:23
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/default_epic_agent_priority.md](prompts/default_epic_agent_priority.md)
