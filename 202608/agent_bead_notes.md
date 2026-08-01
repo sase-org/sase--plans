@@ -6,7 +6,7 @@ goal:
   leaving note-free lanes visually unchanged.
 proposed_by: bbugyi200.athena.rf
 create_time: 2026-08-01 10:30:05
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/agent_bead_notes.md](prompts/agent_bead_notes.md)
