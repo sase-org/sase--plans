@@ -6,7 +6,7 @@ goal:
   continue to work.
 proposed_by: bbugyi200.athena.rg
 create_time: 2026-08-01 10:36:25
-status: wip
+status: done
 ---
 
 - **PROMPT:** [202608/prompts/hide_fakey_from_updates.md](prompts/hide_fakey_from_updates.md)
