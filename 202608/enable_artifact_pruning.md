@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202608/prompts/enable_artifact_pruning.md](prompts/enable_artifact_pruning.md)
+- **AGENTS:**
+  - [bbugyi200.athena.r8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.r8.md)
+- **COMMITS:**
+  - [b405daf](https://github.com/bbugyi200/dotfiles/commit/b405daf7dbc77813ab3b64ed613945ccfee9e633) — chore: enable
+    SASE artifact retention
 
 # Plan: Enable automatic SASE artifact pruning
 
