@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/feedback_plan_path_timestamps.md](prompts/feedback_plan_path_timestamps.md)
+- **PROMPT:** [prompts/202605/feedback_plan_path_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/feedback_plan_path_timestamps.md)
 
 # Append Rejected Plan Paths to FBACK Timestamps
 

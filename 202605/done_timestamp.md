@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/done_timestamp.md](prompts/done_timestamp.md)
+- **PROMPT:** [prompts/202605/done_timestamp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/done_timestamp.md)
 
 # Rename Agent END Timestamp To DONE
 

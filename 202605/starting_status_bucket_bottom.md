@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/starting_status_bucket_bottom.md](prompts/starting_status_bucket_bottom.md)
+- **PROMPT:** [prompts/202605/starting_status_bucket_bottom.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/starting_status_bucket_bottom.md)
 
 # Plan: Move Agents BY_STATUS Starting Bucket To Bottom
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_md_headings.md](prompts/agents_md_headings.md)
+- **PROMPT:** [prompts/202605/agents_md_headings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_md_headings.md)
 
 # Plan: Update AMD-Generated AGENTS.md Memory Section Headings
 

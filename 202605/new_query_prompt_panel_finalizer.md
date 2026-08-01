@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/new_query_prompt_panel_finalizer.md](prompts/new_query_prompt_panel_finalizer.md)
+- **PROMPT:** [prompts/202605/new_query_prompt_panel_finalizer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/new_query_prompt_panel_finalizer.md)
 
 # Plan: Keep the agent's submitted prompt (with `# New Query` at the bottom) in the ACE prompt panel
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/github_actions_home_init.md](prompts/github_actions_home_init.md)
+- **PROMPT:** [prompts/202605/github_actions_home_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/github_actions_home_init.md)
 
 # Plan: Initialize SASE Home Surfaces In CI Before Validation
 

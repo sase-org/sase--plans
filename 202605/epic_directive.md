@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/epic_directive.md](prompts/epic_directive.md)
+- **PROMPT:** [prompts/202605/epic_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/epic_directive.md)
 
 # Plan: `%epic` Directive and Epic Auto-Approval
 

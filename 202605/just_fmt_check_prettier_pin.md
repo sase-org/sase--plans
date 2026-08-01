@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/just_fmt_check_prettier_pin.md](prompts/just_fmt_check_prettier_pin.md)
+- **PROMPT:** [prompts/202605/just_fmt_check_prettier_pin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/just_fmt_check_prettier_pin.md)
 
 # Plan: Stabilize `_just_fmt_check`
 

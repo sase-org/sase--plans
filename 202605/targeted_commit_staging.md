@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/targeted_commit_staging.md](prompts/targeted_commit_staging.md)
+- **PROMPT:** [prompts/202605/targeted_commit_staging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/targeted_commit_staging.md)
 
 # Plan: Targeted Staging for Automatic Commits
 

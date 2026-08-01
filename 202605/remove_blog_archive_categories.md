@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_blog_archive_categories.md](prompts/remove_blog_archive_categories.md)
+- **PROMPT:** [prompts/202605/remove_blog_archive_categories.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_blog_archive_categories.md)
 
 # Remove "Archive" and "Categories" from sase.sh Blog Sidebar
 

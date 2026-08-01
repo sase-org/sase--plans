@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_failed_count.md](prompts/agents_failed_count.md)
+- **PROMPT:** [prompts/202605/agents_failed_count.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_failed_count.md)
 
 # Plan: Agents Failed Count And Zero-Count Noise
 

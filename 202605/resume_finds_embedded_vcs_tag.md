@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/resume_finds_embedded_vcs_tag.md](prompts/resume_finds_embedded_vcs_tag.md)
+- **PROMPT:** [prompts/202605/resume_finds_embedded_vcs_tag.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/resume_finds_embedded_vcs_tag.md)
 
 # Plan — Resume xprompt picks up VCS workflow tag embedded anywhere in agent prompt
 

@@ -6,7 +6,7 @@ legend_bead_id: sase-26
 status: wip
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_epic_5.md](prompts/mobile_gateway_epic_5.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_epic_5.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_epic_5.md)
 - **BEAD:** [sase-26.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.5.md)
 
 # Plan: Mobile MVP Epic 5 - Android App Foundation

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/inline_directive_vcs_xprompt_inheritance.md](prompts/inline_directive_vcs_xprompt_inheritance.md)
+- **PROMPT:** [prompts/202605/inline_directive_vcs_xprompt_inheritance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/inline_directive_vcs_xprompt_inheritance.md)
 
 # Fix inline-directive VCS inheritance for multi-agent xprompts
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bulk_dismiss_speedup_and_toast.md](prompts/bulk_dismiss_speedup_and_toast.md)
+- **PROMPT:** [prompts/202605/bulk_dismiss_speedup_and_toast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bulk_dismiss_speedup_and_toast.md)
 
 # Bulk-Dismiss Speedup + Toast Reliability
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pdf_wrangler_v4_pin.md](prompts/pdf_wrangler_v4_pin.md)
+- **PROMPT:** [prompts/202605/pdf_wrangler_v4_pin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pdf_wrangler_v4_pin.md)
 
 # Plan: Pin Wrangler v4 So The Worker Deploy Actually Ships The Handbook PDF
 

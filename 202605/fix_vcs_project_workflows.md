@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_vcs_project_workflows.md](prompts/fix_vcs_project_workflows.md)
+- **PROMPT:** [prompts/202605/fix_vcs_project_workflows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_vcs_project_workflows.md)
 - **COMMITS:**
   - [2b3c638](https://github.com/sase-org/sase/commit/2b3c63877df39020bd8c2f02d4390b198caffcad) — fix: resolve project-scoped VCS workflows
 

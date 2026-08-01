@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/qwen_wait_chain.md](prompts/qwen_wait_chain.md)
+- **PROMPT:** [prompts/202605/qwen_wait_chain.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen_wait_chain.md)
 
 # Plan: Fix stalled Qwen wait chain
 

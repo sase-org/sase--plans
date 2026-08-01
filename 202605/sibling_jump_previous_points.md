@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sibling_jump_previous_points.md](prompts/sibling_jump_previous_points.md)
+- **PROMPT:** [prompts/202605/sibling_jump_previous_points.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sibling_jump_previous_points.md)
 
 # Treat sibling agent jumps as entry-jump previous points
 

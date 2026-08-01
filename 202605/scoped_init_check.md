@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/scoped_init_check.md](prompts/scoped_init_check.md)
+- **PROMPT:** [prompts/202605/scoped_init_check.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/scoped_init_check.md)
 
 # Scoped Init Check Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_tier_merge_dedup_backstop.md](prompts/agent_tier_merge_dedup_backstop.md)
+- **PROMPT:** [prompts/202605/agent_tier_merge_dedup_backstop.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_tier_merge_dedup_backstop.md)
 
 # Plan: Preserve canonical dedup behavior during post-history agent merges
 

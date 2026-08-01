@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_date_4_hour_windows.md](prompts/agents_date_4_hour_windows.md)
+- **PROMPT:** [prompts/202605/agents_date_4_hour_windows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_date_4_hour_windows.md)
 - **COMMITS:**
   - [3862c65](https://github.com/sase-org/sase/commit/3862c65ef7d84f181e45c44069f6bada1c042064) — feat: group agents by 4-hour date windows
 

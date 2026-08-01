@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_dismiss_burst_perf.md](prompts/notification_dismiss_burst_perf.md)
+- **PROMPT:** [prompts/202605/notification_dismiss_burst_perf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_dismiss_burst_perf.md)
 
 # Plan: Fix notification dismiss burst perf floor
 

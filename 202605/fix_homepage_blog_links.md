@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_homepage_blog_links.md](prompts/fix_homepage_blog_links.md)
+- **PROMPT:** [prompts/202605/fix_homepage_blog_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_homepage_blog_links.md)
 
 # Fix sase.sh Homepage Blog Links
 

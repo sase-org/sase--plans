@@ -5,7 +5,7 @@ bead_id: sase-25
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/remove_recent_artifact_panel.md](prompts/remove_recent_artifact_panel.md)
+- **PROMPT:** [prompts/202605/remove_recent_artifact_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_recent_artifact_panel.md)
 - **BEAD:** [sase-25](https://github.com/sase-org/sase--beads/blob/main/pages/sase-25/README.md)
 
 # Remove Recent Artifact Panel And Unified Artifact Graph

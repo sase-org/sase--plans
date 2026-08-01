@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/jump_stack_keymaps.md](prompts/jump_stack_keymaps.md)
+- **PROMPT:** [prompts/202605/jump_stack_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/jump_stack_keymaps.md)
 
 # Plan: Replace CL History Keymaps With Jump-Stack Forward Navigation
 

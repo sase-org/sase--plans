@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_profile_slow_refresh.md](prompts/tui_profile_slow_refresh.md)
+- **PROMPT:** [prompts/202605/tui_profile_slow_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_profile_slow_refresh.md)
 
 # Plan: Fix ACE TUI Slow Refresh From Dismissed-Agent Reloads
 

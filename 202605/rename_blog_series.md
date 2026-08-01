@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/rename_blog_series.md](prompts/rename_blog_series.md)
+- **PROMPT:** [prompts/202605/rename_blog_series.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/rename_blog_series.md)
 
 # Plan: Rename the sase.sh blog series hub
 

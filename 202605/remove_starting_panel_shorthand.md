@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_starting_panel_shorthand.md](prompts/remove_starting_panel_shorthand.md)
+- **PROMPT:** [prompts/202605/remove_starting_panel_shorthand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_starting_panel_shorthand.md)
 
 # Remove STARTING Shorthand From Agent Panel Titles
 

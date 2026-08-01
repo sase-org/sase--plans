@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_metadata_section_dividers.md](prompts/agent_metadata_section_dividers.md)
+- **PROMPT:** [prompts/202605/agent_metadata_section_dividers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_metadata_section_dividers.md)
 
 # Plan: Agent Metadata Section Dividers
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ace_tab_cli_option.md](prompts/ace_tab_cli_option.md)
+- **PROMPT:** [prompts/202605/ace_tab_cli_option.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_tab_cli_option.md)
 
 # Plan: Replace auto-tab-focus logic with explicit `--tab` option on `sase ace`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_viewer_panel_restore.md](prompts/artifact_viewer_panel_restore.md)
+- **PROMPT:** [prompts/202605/artifact_viewer_panel_restore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_viewer_panel_restore.md)
 
 # Plan: Restore Agents Side Panel When Artifact Viewer Pane Closes
 

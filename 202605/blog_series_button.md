@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/blog_series_button.md](prompts/blog_series_button.md)
+- **PROMPT:** [prompts/202605/blog_series_button.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/blog_series_button.md)
 
 # Add Homepage Blog Series Button
 

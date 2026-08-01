@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_ci_uv_source.md](prompts/fix_ci_uv_source.md)
+- **PROMPT:** [prompts/202605/fix_ci_uv_source.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_ci_uv_source.md)
 
 # Fix CI break from local uv source
 

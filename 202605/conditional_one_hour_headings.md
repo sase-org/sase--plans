@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/conditional_one_hour_headings.md](prompts/conditional_one_hour_headings.md)
+- **PROMPT:** [prompts/202605/conditional_one_hour_headings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/conditional_one_hour_headings.md)
 - **COMMITS:**
   - [bfa38ac](https://github.com/sase-org/sase/commit/bfa38ac39357d15c3c6af25cb12a768b863c82d9) — feat: suppress singleton one-hour headings
 

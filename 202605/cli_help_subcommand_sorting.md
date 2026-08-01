@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/cli_help_subcommand_sorting.md](prompts/cli_help_subcommand_sorting.md)
+- **PROMPT:** [prompts/202605/cli_help_subcommand_sorting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/cli_help_subcommand_sorting.md)
 
 # Plan: Alphabetize CLI Subcommands In All Help Output
 

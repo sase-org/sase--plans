@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/obsidian_sibling_repo.md](prompts/obsidian_sibling_repo.md)
+- **PROMPT:** [prompts/202605/obsidian_sibling_repo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/obsidian_sibling_repo.md)
 
 # Plan: Add Obsidian Vault as a Static SASE Sibling Repo
 

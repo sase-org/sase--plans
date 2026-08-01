@@ -5,7 +5,7 @@ bead_id: sase-31
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/github_actions_recovery.md](prompts/github_actions_recovery.md)
+- **PROMPT:** [prompts/202605/github_actions_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/github_actions_recovery.md)
 - **BEAD:** [sase-31](https://github.com/sase-org/sase--beads/blob/main/pages/sase-31/README.md)
 
 # GitHub Actions Recovery Plan

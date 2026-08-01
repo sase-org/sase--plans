@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tier2_long_memory_heading.md](prompts/tier2_long_memory_heading.md)
+- **PROMPT:** [prompts/202605/tier2_long_memory_heading.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier2_long_memory_heading.md)
 
 # Rename AMD Long-Term Memory Heading To Tier 2
 

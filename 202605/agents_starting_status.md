@@ -5,7 +5,7 @@ bead_id: sase-38
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/agents_starting_status.md](prompts/agents_starting_status.md)
+- **PROMPT:** [prompts/202605/agents_starting_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_starting_status.md)
 - **BEAD:** [sase-38](https://github.com/sase-org/sase--beads/blob/main/pages/sase-38/README.md)
 
 # Agents STARTING Status Plan

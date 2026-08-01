@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_family_status_fix_1.md](prompts/agent_family_status_fix_1.md)
+- **PROMPT:** [prompts/202605/agent_family_status_fix_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_family_status_fix_1.md)
 
 # Plan: Agent Family Question and Done Status Fix
 

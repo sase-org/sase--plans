@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/rust_agent_launch_migration.md](prompts/rust_agent_launch_migration.md)
+- **PROMPT:** [prompts/202605/rust_agent_launch_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/rust_agent_launch_migration.md)
 - **BEAD:** [sase-1r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1r/README.md)
 
 # Rust-backed agent launch migration

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/github_xprompt_workspace_fallback.md](prompts/github_xprompt_workspace_fallback.md)
+- **PROMPT:** [prompts/202605/github_xprompt_workspace_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/github_xprompt_workspace_fallback.md)
 
 # Plan: Fix GitHub xprompt workspace fallback
 

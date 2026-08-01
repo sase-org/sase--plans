@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ace_tmux_profiling_env.md](prompts/ace_tmux_profiling_env.md)
+- **PROMPT:** [prompts/202605/ace_tmux_profiling_env.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_tmux_profiling_env.md)
 
 # Plan: Enable TUI Profiling Env Vars for `sase ace --tmux`
 

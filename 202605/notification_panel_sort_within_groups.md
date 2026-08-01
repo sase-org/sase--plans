@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_panel_sort_within_groups.md](prompts/notification_panel_sort_within_groups.md)
+- **PROMPT:** [prompts/202605/notification_panel_sort_within_groups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_panel_sort_within_groups.md)
 
 # Plan: Sort notifications within groups by timestamp (most recent first)
 

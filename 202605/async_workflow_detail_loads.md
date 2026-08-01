@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/async_workflow_detail_loads.md](prompts/async_workflow_detail_loads.md)
+- **PROMPT:** [prompts/202605/async_workflow_detail_loads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/async_workflow_detail_loads.md)
 
 # Async Workflow Detail Loads Plan
 

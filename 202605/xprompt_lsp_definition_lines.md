@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_definition_lines.md](prompts/xprompt_lsp_definition_lines.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_definition_lines.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_definition_lines.md)
 
 # Plan: Precise LSP Definition Lines for Config-Backed Xprompts
 

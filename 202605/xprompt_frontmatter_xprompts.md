@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_frontmatter_xprompts.md](prompts/xprompt_frontmatter_xprompts.md)
+- **PROMPT:** [prompts/202605/xprompt_frontmatter_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_frontmatter_xprompts.md)
 
 # XPrompt Frontmatter `xprompts` LSP Plan
 

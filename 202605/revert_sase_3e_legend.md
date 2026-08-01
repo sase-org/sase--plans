@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revert_sase_3e_legend.md](prompts/revert_sase_3e_legend.md)
+- **PROMPT:** [prompts/202605/revert_sase_3e_legend.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revert_sase_3e_legend.md)
 
 # Revert sase-3e Legend Work
 

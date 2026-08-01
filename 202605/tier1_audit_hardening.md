@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tier1_audit_hardening.md](prompts/tier1_audit_hardening.md)
+- **PROMPT:** [prompts/202605/tier1_audit_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier1_audit_hardening.md)
 
 # Tighten the Tier 1 Agent Artifact Index Upkeep Audit
 

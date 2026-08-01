@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/obsidian_datetime_snippets_1.md](prompts/obsidian_datetime_snippets_1.md)
+- **PROMPT:** [prompts/202605/obsidian_datetime_snippets_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/obsidian_datetime_snippets_1.md)
 
 # Add Obsidian Date/Time Snippets
 

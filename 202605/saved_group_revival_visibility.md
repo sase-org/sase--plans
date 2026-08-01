@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/saved_group_revival_visibility.md](prompts/saved_group_revival_visibility.md)
+- **PROMPT:** [prompts/202605/saved_group_revival_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/saved_group_revival_visibility.md)
 
 # Saved Group Revival Visibility Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/merge_qa_sections.md](prompts/merge_qa_sections.md)
+- **PROMPT:** [prompts/202605/merge_qa_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/merge_qa_sections.md)
 
 # Plan: Merge Multiple `### Questions and Answers` Sections in Agent Prompts
 

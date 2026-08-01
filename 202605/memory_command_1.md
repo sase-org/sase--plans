@@ -5,7 +5,7 @@ bead_id: sase-3z
 create_time: '2026-07-08 16:10:05'
 ---
 
-- **PROMPT:** [202605/prompts/memory_command_1.md](prompts/memory_command_1.md)
+- **PROMPT:** [prompts/202605/memory_command_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_command_1.md)
 - **BEAD:** [sase-3z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3z/README.md)
 
 # SASE Memory Command Plan

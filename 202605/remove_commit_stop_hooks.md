@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_commit_stop_hooks.md](prompts/remove_commit_stop_hooks.md)
+- **PROMPT:** [prompts/202605/remove_commit_stop_hooks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_commit_stop_hooks.md)
 
 # Remove Obsolete Commit Stop Hook Scripts
 

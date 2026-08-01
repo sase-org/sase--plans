@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_multi_image_albums.md](prompts/telegram_multi_image_albums.md)
+- **PROMPT:** [prompts/202605/telegram_multi_image_albums.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_multi_image_albums.md)
 
 # Implementation Plan - Telegram Multi-Image Launches
 

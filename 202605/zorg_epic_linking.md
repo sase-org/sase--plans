@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/zorg_epic_linking.md](prompts/zorg_epic_linking.md)
+- **PROMPT:** [prompts/202605/zorg_epic_linking.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/zorg_epic_linking.md)
 
 # Fix Epic Bead Legend Linking
 

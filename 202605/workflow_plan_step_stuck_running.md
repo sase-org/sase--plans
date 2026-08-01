@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/workflow_plan_step_stuck_running.md](prompts/workflow_plan_step_stuck_running.md)
+- **PROMPT:** [prompts/202605/workflow_plan_step_stuck_running.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/workflow_plan_step_stuck_running.md)
 
 # Fix Plan-Step Stuck at RUNNING After EPIC/TALE/LEGEND Approval
 

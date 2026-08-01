@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tmux_agent_workspace_dir.md](prompts/tmux_agent_workspace_dir.md)
+- **PROMPT:** [prompts/202605/tmux_agent_workspace_dir.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tmux_agent_workspace_dir.md)
 
 # Fix ACE agent tmux workspace resolution
 

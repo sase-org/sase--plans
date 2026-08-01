@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/legend_epic_agent_tags.md](prompts/legend_epic_agent_tags.md)
+- **PROMPT:** [prompts/202605/legend_epic_agent_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/legend_epic_agent_tags.md)
 
 # Plan: Legend-Aware Epic Work Agent Tags
 

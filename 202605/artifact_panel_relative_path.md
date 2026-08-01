@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_panel_relative_path.md](prompts/artifact_panel_relative_path.md)
+- **PROMPT:** [prompts/202605/artifact_panel_relative_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_panel_relative_path.md)
 
 # Plan: Artifact Panel `Y` Copies Repo-Relative Paths
 

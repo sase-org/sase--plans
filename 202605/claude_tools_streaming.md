@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/claude_tools_streaming.md](prompts/claude_tools_streaming.md)
+- **PROMPT:** [prompts/202605/claude_tools_streaming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/claude_tools_streaming.md)
 
 # Plan: Make Claude Tools Panel Data Stream-Backed
 

@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/pyvision_alias_pragmas.md](prompts/pyvision_alias_pragmas.md)
+- **PROMPT:** [prompts/202605/pyvision_alias_pragmas.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pyvision_alias_pragmas.md)
 - **BEAD:** [sase-1q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q/README.md)
 
 # Pyvision Alias Usage and Test-Pragma Ban Plan

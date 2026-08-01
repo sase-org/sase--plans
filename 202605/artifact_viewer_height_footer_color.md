@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_viewer_height_footer_color.md](prompts/artifact_viewer_height_footer_color.md)
+- **PROMPT:** [prompts/202605/artifact_viewer_height_footer_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_viewer_height_footer_color.md)
 
 # Plan: Fill The Artifact Viewer Pane More Completely
 

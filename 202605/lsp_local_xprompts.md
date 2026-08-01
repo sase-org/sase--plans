@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/lsp_local_xprompts.md](prompts/lsp_local_xprompts.md)
+- **PROMPT:** [prompts/202605/lsp_local_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/lsp_local_xprompts.md)
 
 # Plan: LSP Support for Markdown-Local XPrompts
 

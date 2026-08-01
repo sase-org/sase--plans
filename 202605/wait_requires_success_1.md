@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/wait_requires_success_1.md](prompts/wait_requires_success_1.md)
+- **PROMPT:** [prompts/202605/wait_requires_success_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/wait_requires_success_1.md)
 
 # Plan: Make `%wait` Dependencies Require Successful Completion
 

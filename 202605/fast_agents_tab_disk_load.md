@@ -4,7 +4,7 @@ status: wip
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/fast_agents_tab_disk_load.md](prompts/fast_agents_tab_disk_load.md)
+- **PROMPT:** [prompts/202605/fast_agents_tab_disk_load.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fast_agents_tab_disk_load.md)
 
 # Fast Agents Tab Disk Loading Plan
 

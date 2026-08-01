@@ -5,7 +5,7 @@ bead_id: sase-1v
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/sase_notify_skill_1.md](prompts/sase_notify_skill_1.md)
+- **PROMPT:** [prompts/202605/sase_notify_skill_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_notify_skill_1.md)
 - **BEAD:** [sase-1v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1v/README.md)
 
 # Plan: `/sase_notify` Skill for Agent Notification Access

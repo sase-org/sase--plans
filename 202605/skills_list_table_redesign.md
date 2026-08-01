@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/skills_list_table_redesign.md](prompts/skills_list_table_redesign.md)
+- **PROMPT:** [prompts/202605/skills_list_table_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/skills_list_table_redesign.md)
 
 # Plan: Render `sase skills list` as a beautiful table with rich provider chips
 

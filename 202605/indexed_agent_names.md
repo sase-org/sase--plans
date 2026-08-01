@@ -5,7 +5,7 @@ bead_id: sase-46
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/indexed_agent_names.md](prompts/indexed_agent_names.md)
+- **PROMPT:** [prompts/202605/indexed_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/indexed_agent_names.md)
 - **BEAD:** [sase-46](https://github.com/sase-org/sase--beads/blob/main/pages/sase-46/README.md)
 
 # Indexed Agent Name Aliases

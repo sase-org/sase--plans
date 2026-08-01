@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/leader_mark_all_read_keymap.md](prompts/leader_mark_all_read_keymap.md)
+- **PROMPT:** [prompts/202605/leader_mark_all_read_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/leader_mark_all_read_keymap.md)
 
 # Plan: Move Mark-All-Read Leader Command to `,u`
 

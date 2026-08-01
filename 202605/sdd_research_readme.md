@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_research_readme.md](prompts/sdd_research_readme.md)
+- **PROMPT:** [prompts/202605/sdd_research_readme.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_research_readme.md)
 
 # Initialize SDD Research README
 

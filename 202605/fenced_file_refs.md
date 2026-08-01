@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fenced_file_refs.md](prompts/fenced_file_refs.md)
+- **PROMPT:** [prompts/202605/fenced_file_refs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fenced_file_refs.md)
 
 # Plan: Ignore @ File References Inside Fenced Blocks
 

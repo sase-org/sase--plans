@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_tab_footer_flicker.md](prompts/agents_tab_footer_flicker.md)
+- **PROMPT:** [prompts/202605/agents_tab_footer_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_tab_footer_flicker.md)
 
 # Fix Agents-tab footer flicker + leaked "/ edit query" hint
 

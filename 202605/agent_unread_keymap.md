@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_unread_keymap.md](prompts/agent_unread_keymap.md)
+- **PROMPT:** [prompts/202605/agent_unread_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_unread_keymap.md)
 
 # Plan: Agents Tab Manual Unread Toggle
 

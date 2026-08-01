@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_approval_coder_index_refresh.md](prompts/plan_approval_coder_index_refresh.md)
+- **PROMPT:** [prompts/202605/plan_approval_coder_index_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_approval_coder_index_refresh.md)
 
 # Plan: Make Approved-Plan Coder Agents Visible From Tier 1
 

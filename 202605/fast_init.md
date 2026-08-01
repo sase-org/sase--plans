@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fast_init.md](prompts/fast_init.md)
+- **PROMPT:** [prompts/202605/fast_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fast_init.md)
 
 # Make `sase init` Faster Without Behavior Changes
 

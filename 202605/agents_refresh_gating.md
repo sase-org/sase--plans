@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_refresh_gating.md](prompts/agents_refresh_gating.md)
+- **PROMPT:** [prompts/202605/agents_refresh_gating.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_refresh_gating.md)
 
 # Plan: Gate Watcher-Triggered Agents Reloads
 

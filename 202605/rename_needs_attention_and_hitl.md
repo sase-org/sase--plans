@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/rename_needs_attention_and_hitl.md](prompts/rename_needs_attention_and_hitl.md)
+- **PROMPT:** [prompts/202605/rename_needs_attention_and_hitl.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/rename_needs_attention_and_hitl.md)
 
 # Plan: Rename "Needs Attention" → "Stopped" and "hitl" → "stopped"
 

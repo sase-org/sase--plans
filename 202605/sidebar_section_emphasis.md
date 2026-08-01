@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sidebar_section_emphasis.md](prompts/sidebar_section_emphasis.md)
+- **PROMPT:** [prompts/202605/sidebar_section_emphasis.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sidebar_section_emphasis.md)
 
 # Sidebar Section Emphasis on sase.sh (Desktop Web)
 

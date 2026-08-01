@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/minimize_live_artifact_guidance.md](prompts/minimize_live_artifact_guidance.md)
+- **PROMPT:** [prompts/202605/minimize_live_artifact_guidance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/minimize_live_artifact_guidance.md)
 
 # Minimize Live Artifact Guidance Changes
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bare_git_sdd_version_controlled.md](prompts/bare_git_sdd_version_controlled.md)
+- **PROMPT:** [prompts/202605/bare_git_sdd_version_controlled.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bare_git_sdd_version_controlled.md)
 
 # Plan: Bare Git Implies Version-Controlled SDD
 

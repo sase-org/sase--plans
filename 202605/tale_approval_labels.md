@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tale_approval_labels.md](prompts/tale_approval_labels.md)
+- **PROMPT:** [prompts/202605/tale_approval_labels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tale_approval_labels.md)
 - **COMMITS:**
   - [1bccc8d](https://github.com/sase-org/sase/commit/1bccc8d606c146288472094156a88f42e45f70eb) — feat: rename plan approval CTA to tale
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_multi_model_workspace_claim.md](prompts/telegram_multi_model_workspace_claim.md)
+- **PROMPT:** [prompts/202605/telegram_multi_model_workspace_claim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_multi_model_workspace_claim.md)
 
 # Plan: Fix Telegram multi-model workspace-claim failures by delegating to the canonical fan-out path
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_snippet_composition.md](prompts/xprompt_snippet_composition.md)
+- **PROMPT:** [prompts/202605/xprompt_snippet_composition.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_snippet_composition.md)
 
 # Plan: XPrompt Snippet Composition
 

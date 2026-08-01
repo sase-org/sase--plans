@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dynamic_agent_panel_tag_color.md](prompts/dynamic_agent_panel_tag_color.md)
+- **PROMPT:** [prompts/202605/dynamic_agent_panel_tag_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dynamic_agent_panel_tag_color.md)
 
 # Dynamic Agent Panel Tag Header Color Plan
 

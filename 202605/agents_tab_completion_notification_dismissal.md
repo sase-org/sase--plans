@@ -5,7 +5,7 @@ bead_id: sase-2v
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/agents_tab_completion_notification_dismissal.md](prompts/agents_tab_completion_notification_dismissal.md)
+- **PROMPT:** [prompts/202605/agents_tab_completion_notification_dismissal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_tab_completion_notification_dismissal.md)
 - **BEAD:** [sase-2v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2v/README.md)
 
 # Dismiss Agent Completion Notifications On Agents Tab Activity

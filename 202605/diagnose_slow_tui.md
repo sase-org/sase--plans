@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/diagnose_slow_tui.md](prompts/diagnose_slow_tui.md)
+- **PROMPT:** [prompts/202605/diagnose_slow_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/diagnose_slow_tui.md)
 
 # Diagnose and Fix Slow `sase ace` TUI
 

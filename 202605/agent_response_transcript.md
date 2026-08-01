@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_response_transcript.md](prompts/agent_response_transcript.md)
+- **PROMPT:** [prompts/202605/agent_response_transcript.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_response_transcript.md)
 
 # Plan: Preserve Agent Responses in Completion Transcript PDFs
 

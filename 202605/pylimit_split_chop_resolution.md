@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pylimit_split_chop_resolution.md](prompts/pylimit_split_chop_resolution.md)
+- **PROMPT:** [prompts/202605/pylimit_split_chop_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pylimit_split_chop_resolution.md)
 - **COMMITS:**
   - [10e0f97](https://github.com/sase-org/sase/commit/10e0f97609895937289380d6cf97c4f4722a3022) — chore: mark pylimit split chop plan done
 

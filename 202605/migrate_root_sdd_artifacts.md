@@ -4,7 +4,7 @@ create_time: 2026-05-01 23:21:01
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/migrate_root_sdd_artifacts.md](prompts/migrate_root_sdd_artifacts.md)
+- **PROMPT:** [prompts/202605/migrate_root_sdd_artifacts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/migrate_root_sdd_artifacts.md)
 - **COMMITS:**
   - [bc3a523](https://github.com/sase-org/sase/commit/bc3a5238a366e59a5d5bcb222d4860109eeba176) — chore: migrate root SDD artifacts
 

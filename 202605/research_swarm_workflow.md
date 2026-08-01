@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/research_swarm_workflow.md](prompts/research_swarm_workflow.md)
+- **PROMPT:** [prompts/202605/research_swarm_workflow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/research_swarm_workflow.md)
 
 # Plan: Improve the `research_swarm` xprompt workflow
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_space_encoding.md](prompts/xprompt_space_encoding.md)
+- **PROMPT:** [prompts/202605/xprompt_space_encoding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_space_encoding.md)
 
 # Plan: XPrompt Space Encoding for Path Values
 

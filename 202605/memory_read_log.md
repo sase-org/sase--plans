@@ -5,7 +5,7 @@ bead_id: sase-41
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/memory_read_log.md](prompts/memory_read_log.md)
+- **PROMPT:** [prompts/202605/memory_read_log.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_read_log.md)
 - **BEAD:** [sase-41](https://github.com/sase-org/sase--beads/blob/main/pages/sase-41/README.md)
 
 # Plan: `sase memory read` and `sase memory log`

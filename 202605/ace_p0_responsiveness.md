@@ -5,7 +5,7 @@ bead_id: sase-3q
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/ace_p0_responsiveness.md](prompts/ace_p0_responsiveness.md)
+- **PROMPT:** [prompts/202605/ace_p0_responsiveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_p0_responsiveness.md)
 - **BEAD:** [sase-3q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3q/README.md)
 
 # ACE P0 Responsiveness Fixes Plan

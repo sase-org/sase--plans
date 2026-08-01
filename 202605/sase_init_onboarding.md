@@ -5,7 +5,7 @@ bead_id: sase-3y
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/sase_init_onboarding.md](prompts/sase_init_onboarding.md)
+- **PROMPT:** [prompts/202605/sase_init_onboarding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_init_onboarding.md)
 - **BEAD:** [sase-3y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3y/README.md)
 
 # `sase init` Onboarding Implementation Plan

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/daemon_rpc_timeout.md](prompts/daemon_rpc_timeout.md)
+- **PROMPT:** [prompts/202605/daemon_rpc_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/daemon_rpc_timeout.md)
 
 # Plan: Diagnose and Fix Daemon RPC Health Timeouts
 

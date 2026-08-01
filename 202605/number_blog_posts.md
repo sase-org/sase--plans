@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/number_blog_posts.md](prompts/number_blog_posts.md)
+- **PROMPT:** [prompts/202605/number_blog_posts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/number_blog_posts.md)
 
 # Number Each Blog Post Across sase.sh
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pdf_docs_only_handbook.md](prompts/pdf_docs_only_handbook.md)
+- **PROMPT:** [prompts/202605/pdf_docs_only_handbook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pdf_docs_only_handbook.md)
 
 # Plan: Fix "Failed to load PDF document" and Shrink Handbook PDF to docs/ Only
 

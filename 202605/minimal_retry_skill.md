@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/minimal_retry_skill.md](prompts/minimal_retry_skill.md)
+- **PROMPT:** [prompts/202605/minimal_retry_skill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/minimal_retry_skill.md)
 
 # Minimal Retry Skill Wording Plan
 

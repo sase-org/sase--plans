@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_unread_completion_indicator.md](prompts/agent_unread_completion_indicator.md)
+- **PROMPT:** [prompts/202605/agent_unread_completion_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_unread_completion_indicator.md)
 
 # Plan: Move completed-unread agent indicator into the runtime suffix
 

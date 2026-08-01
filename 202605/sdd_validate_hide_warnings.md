@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_validate_hide_warnings.md](prompts/sdd_validate_hide_warnings.md)
+- **PROMPT:** [prompts/202605/sdd_validate_hide_warnings.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_validate_hide_warnings.md)
 
 # Plan: Hide `sase sdd validate` warning lines by default
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/qwen36_plus_model.md](prompts/qwen36_plus_model.md)
+- **PROMPT:** [prompts/202605/qwen36_plus_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen36_plus_model.md)
 
 # Plan: Add `qwen3.6-plus` Qwen Model Routing
 

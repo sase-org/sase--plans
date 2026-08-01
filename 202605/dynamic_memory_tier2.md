@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dynamic_memory_tier2.md](prompts/dynamic_memory_tier2.md)
+- **PROMPT:** [prompts/202605/dynamic_memory_tier2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dynamic_memory_tier2.md)
 
 # Plan: Conditional Tier 2 Dynamic Memory Section
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/paused_runtime_emoji.md](prompts/paused_runtime_emoji.md)
+- **PROMPT:** [prompts/202605/paused_runtime_emoji.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/paused_runtime_emoji.md)
 
 # Plan: Paused Runtime Emoji In Agent Rows
 

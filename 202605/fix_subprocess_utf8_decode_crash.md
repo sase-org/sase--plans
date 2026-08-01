@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_subprocess_utf8_decode_crash.md](prompts/fix_subprocess_utf8_decode_crash.md)
+- **PROMPT:** [prompts/202605/fix_subprocess_utf8_decode_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_subprocess_utf8_decode_crash.md)
 
 # Fix: LLM subprocess crash on partial multi-byte UTF-8 across non-blocking reads
 

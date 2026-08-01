@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/hide_starting_agent_rows.md](prompts/hide_starting_agent_rows.md)
+- **PROMPT:** [prompts/202605/hide_starting_agent_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/hide_starting_agent_rows.md)
 
 # Hide STARTING Agent Rows In The TUI
 

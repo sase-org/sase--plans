@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_family_workflow_step_status.md](prompts/agent_family_workflow_step_status.md)
+- **PROMPT:** [prompts/202605/agent_family_workflow_step_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_family_workflow_step_status.md)
 
 # Plan: Agent Family Workflow Step Status Fix
 

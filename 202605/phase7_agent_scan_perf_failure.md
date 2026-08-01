@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/phase7_agent_scan_perf_failure.md](prompts/phase7_agent_scan_perf_failure.md)
+- **PROMPT:** [prompts/202605/phase7_agent_scan_perf_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/phase7_agent_scan_perf_failure.md)
 
 # Phase 7 Agent Scan Perf Failure Plan
 

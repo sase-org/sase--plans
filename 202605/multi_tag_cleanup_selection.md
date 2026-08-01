@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/multi_tag_cleanup_selection.md](prompts/multi_tag_cleanup_selection.md)
+- **PROMPT:** [prompts/202605/multi_tag_cleanup_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/multi_tag_cleanup_selection.md)
 
 # Multi-Tag Agent Cleanup Selection Plan
 

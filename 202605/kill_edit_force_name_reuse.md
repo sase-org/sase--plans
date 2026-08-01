@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/kill_edit_force_name_reuse.md](prompts/kill_edit_force_name_reuse.md)
+- **PROMPT:** [prompts/202605/kill_edit_force_name_reuse.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/kill_edit_force_name_reuse.md)
 
 # Plan: Force Name Reuse When Killing And Editing Agents
 

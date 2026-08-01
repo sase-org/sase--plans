@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_modal_open_all.md](prompts/artifact_modal_open_all.md)
+- **PROMPT:** [prompts/202605/artifact_modal_open_all.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_modal_open_all.md)
 
 # Plan: Add Artifact Modal Open-All Key
 

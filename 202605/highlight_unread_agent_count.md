@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/highlight_unread_agent_count.md](prompts/highlight_unread_agent_count.md)
+- **PROMPT:** [prompts/202605/highlight_unread_agent_count.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/highlight_unread_agent_count.md)
 
 # Highlight the Agents-tab Unread Count with a Yellow Background
 

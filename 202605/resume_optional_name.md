@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/resume_optional_name.md](prompts/resume_optional_name.md)
+- **PROMPT:** [prompts/202605/resume_optional_name.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/resume_optional_name.md)
 - **BEAD:** [sase-22](https://github.com/sase-org/sase--beads/blob/main/pages/sase-22/README.md)
 
 # Plan: Optional `#resume` Name Input

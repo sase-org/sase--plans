@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tmux_kitty_image_notifications.md](prompts/tmux_kitty_image_notifications.md)
+- **PROMPT:** [prompts/202605/tmux_kitty_image_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tmux_kitty_image_notifications.md)
 
 # Fix Blurry Notification Image Previews in tmux
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/async_file_panel_reads.md](prompts/async_file_panel_reads.md)
+- **PROMPT:** [prompts/202605/async_file_panel_reads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/async_file_panel_reads.md)
 
 # Async File Panel Static Reads Plan
 

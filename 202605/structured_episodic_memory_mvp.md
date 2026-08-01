@@ -5,7 +5,7 @@ bead_id: sase-45
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/structured_episodic_memory_mvp.md](prompts/structured_episodic_memory_mvp.md)
+- **PROMPT:** [prompts/202605/structured_episodic_memory_mvp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/structured_episodic_memory_mvp.md)
 - **BEAD:** [sase-45](https://github.com/sase-org/sase--beads/blob/main/pages/sase-45/README.md)
 
 # Structured Deterministic Episodic Memory MVP

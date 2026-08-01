@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/episode_id_portability.md](prompts/episode_id_portability.md)
+- **PROMPT:** [prompts/202605/episode_id_portability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/episode_id_portability.md)
 
 # Episode ID Portability Fix Plan
 

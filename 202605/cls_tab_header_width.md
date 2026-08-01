@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/cls_tab_header_width.md](prompts/cls_tab_header_width.md)
+- **PROMPT:** [prompts/202605/cls_tab_header_width.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/cls_tab_header_width.md)
 
 # Plan: Bound CLs Tab Group Headers to the Left Side Panel
 

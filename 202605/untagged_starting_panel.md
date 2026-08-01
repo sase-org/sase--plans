@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/untagged_starting_panel.md](prompts/untagged_starting_panel.md)
+- **PROMPT:** [prompts/202605/untagged_starting_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/untagged_starting_panel.md)
 
 # Fix Untagged Panel Visibility for Starting Agents
 

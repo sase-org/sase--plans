@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/multi_artifact_viewing.md](prompts/multi_artifact_viewing.md)
+- **PROMPT:** [prompts/202605/multi_artifact_viewing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/multi_artifact_viewing.md)
 
 # Multi-Artifact Viewing Plan
 

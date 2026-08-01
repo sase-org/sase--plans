@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dismiss_toasts_keymap.md](prompts/dismiss_toasts_keymap.md)
+- **PROMPT:** [prompts/202605/dismiss_toasts_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dismiss_toasts_keymap.md)
 
 # Plan: Add `<ctrl+l>` Keymap to Dismiss Visible Toasts
 

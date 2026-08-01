@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tools_panel_missing_calls.md](prompts/tools_panel_missing_calls.md)
+- **PROMPT:** [prompts/202605/tools_panel_missing_calls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tools_panel_missing_calls.md)
 
 # Tools Panel Not Showing All Tool Calls — Root Cause + Fix Plan
 

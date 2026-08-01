@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/disable_kitty_cmd_f.md](prompts/disable_kitty_cmd_f.md)
+- **PROMPT:** [prompts/202605/disable_kitty_cmd_f.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/disable_kitty_cmd_f.md)
 
 # Plan: Disable Kitty cmd+f Interception for SASE Prompt Word Navigation
 

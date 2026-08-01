@@ -6,7 +6,7 @@ tier: epic
 legend_bead_id: sase-26
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_epic_3.md](prompts/mobile_gateway_epic_3.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_epic_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_epic_3.md)
 - **BEAD:** [sase-26.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.3.md)
 
 # Plan: Mobile MVP Epic 3 - Agent Lifecycle, Launch, Retry, And Image Input

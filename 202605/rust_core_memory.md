@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/rust_core_memory.md](prompts/rust_core_memory.md)
+- **PROMPT:** [prompts/202605/rust_core_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/rust_core_memory.md)
 - **COMMITS:**
   - [b83199d](https://github.com/sase-org/sase/commit/b83199d6e3dcb19f929b357cf5e19b87fb30812f) — chore: document Rust core backend boundary
 

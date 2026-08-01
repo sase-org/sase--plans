@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/jump_to_stopped_agents.md](prompts/jump_to_stopped_agents.md)
+- **PROMPT:** [prompts/202605/jump_to_stopped_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/jump_to_stopped_agents.md)
 
 # Add `,J` Jump To Most Recently Stopped Agent
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_viewer_runpy_warning.md](prompts/artifact_viewer_runpy_warning.md)
+- **PROMPT:** [prompts/202605/artifact_viewer_runpy_warning.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_viewer_runpy_warning.md)
 
 # Artifact Viewer `runpy` Warning Plan
 

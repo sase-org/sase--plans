@@ -4,7 +4,7 @@ create_time: 2026-05-11 15:46:25
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/unread_label_highlight.md](prompts/unread_label_highlight.md)
+- **PROMPT:** [prompts/202605/unread_label_highlight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/unread_label_highlight.md)
 
 # Extend Unread Highlight Across the Label Word
 

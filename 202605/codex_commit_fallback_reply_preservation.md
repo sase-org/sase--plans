@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_commit_fallback_reply_preservation.md](prompts/codex_commit_fallback_reply_preservation.md)
+- **PROMPT:** [prompts/202605/codex_commit_fallback_reply_preservation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_commit_fallback_reply_preservation.md)
 
 # Plan: Preserve Codex Agent Replies Across Commit Fallback Turns
 

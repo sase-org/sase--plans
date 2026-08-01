@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/init_memory_auto_commit.md](prompts/init_memory_auto_commit.md)
+- **PROMPT:** [prompts/202605/init_memory_auto_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/init_memory_auto_commit.md)
 
 # Plan: `sase init memory` Workspace Hint and Auto-Commit
 

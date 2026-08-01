@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_descriptions_finish.md](prompts/xprompt_descriptions_finish.md)
+- **PROMPT:** [prompts/202605/xprompt_descriptions_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_descriptions_finish.md)
 
 # Finish xprompt description support for sase-3w
 

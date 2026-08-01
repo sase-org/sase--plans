@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_agent_tier_merge_duplicates.md](prompts/fix_agent_tier_merge_duplicates.md)
+- **PROMPT:** [prompts/202605/fix_agent_tier_merge_duplicates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_agent_tier_merge_duplicates.md)
 
 # Fix Agent Tier-Merge Duplicate Rows
 

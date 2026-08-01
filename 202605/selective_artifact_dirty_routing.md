@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/selective_artifact_dirty_routing.md](prompts/selective_artifact_dirty_routing.md)
+- **PROMPT:** [prompts/202605/selective_artifact_dirty_routing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/selective_artifact_dirty_routing.md)
 
 # Selective Artifact Dirty Routing Plan
 

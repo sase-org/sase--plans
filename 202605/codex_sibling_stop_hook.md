@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_sibling_stop_hook.md](prompts/codex_sibling_stop_hook.md)
+- **PROMPT:** [prompts/202605/codex_sibling_stop_hook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_sibling_stop_hook.md)
 
 # Plan: Fix Codex Sibling Stop Hook Execution
 

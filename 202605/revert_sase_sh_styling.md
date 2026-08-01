@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revert_sase_sh_styling.md](prompts/revert_sase_sh_styling.md)
+- **PROMPT:** [prompts/202605/revert_sase_sh_styling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revert_sase_sh_styling.md)
 
 # Revert recent sase.sh styling while preserving desktop sidebar section emphasis
 

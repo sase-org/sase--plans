@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/jump_to_stopped_cleanup.md](prompts/jump_to_stopped_cleanup.md)
+- **PROMPT:** [prompts/202605/jump_to_stopped_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/jump_to_stopped_cleanup.md)
 
 # Plan: Clean Up Stopped-Agent Jump Implementation
 

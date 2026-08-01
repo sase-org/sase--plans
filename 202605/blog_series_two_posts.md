@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/blog_series_two_posts.md](prompts/blog_series_two_posts.md)
+- **PROMPT:** [prompts/202605/blog_series_two_posts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/blog_series_two_posts.md)
 
 # Plan: Reframe sase.sh around a single blog series with two posts
 

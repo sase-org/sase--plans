@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_request_id_completion.md](prompts/mobile_gateway_request_id_completion.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_request_id_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_request_id_completion.md)
 
 # Plan: Preserve Mobile Agent Request IDs
 

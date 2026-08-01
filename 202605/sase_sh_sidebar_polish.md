@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_sh_sidebar_polish.md](prompts/sase_sh_sidebar_polish.md)
+- **PROMPT:** [prompts/202605/sase_sh_sidebar_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_sh_sidebar_polish.md)
 
 # SASE Plan: Polish the sase.sh Sidebar
 

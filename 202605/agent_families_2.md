@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/agent_families_2.md](prompts/agent_families_2.md)
+- **PROMPT:** [prompts/202605/agent_families_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_families_2.md)
 - **BEAD:** [sase-3r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3r/README.md)
 
 # Agent Families Implementation Plan

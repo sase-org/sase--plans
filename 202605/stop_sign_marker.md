@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/stop_sign_marker.md](prompts/stop_sign_marker.md)
+- **PROMPT:** [prompts/202605/stop_sign_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/stop_sign_marker.md)
 
 # Plan: Swap 🙋 → 🛑 For User-Paused (Stopped) Agent Rows
 

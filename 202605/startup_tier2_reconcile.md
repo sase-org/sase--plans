@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/startup_tier2_reconcile.md](prompts/startup_tier2_reconcile.md)
+- **PROMPT:** [prompts/202605/startup_tier2_reconcile.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/startup_tier2_reconcile.md)
 
 # One-shot Startup Tier 2 Full-History Reconcile
 

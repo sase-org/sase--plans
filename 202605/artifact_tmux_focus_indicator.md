@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_tmux_focus_indicator.md](prompts/artifact_tmux_focus_indicator.md)
+- **PROMPT:** [prompts/202605/artifact_tmux_focus_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_tmux_focus_indicator.md)
 
 # Plan: Artifact Viewer Tmux Focus Indicator
 

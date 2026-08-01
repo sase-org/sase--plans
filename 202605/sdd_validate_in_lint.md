@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_validate_in_lint.md](prompts/sdd_validate_in_lint.md)
+- **PROMPT:** [prompts/202605/sdd_validate_in_lint.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_validate_in_lint.md)
 
 # Plan: Run SDD Validation From `just lint`
 

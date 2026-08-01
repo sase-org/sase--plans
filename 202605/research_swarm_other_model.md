@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/research_swarm_other_model.md](prompts/research_swarm_other_model.md)
+- **PROMPT:** [prompts/202605/research_swarm_other_model.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/research_swarm_other_model.md)
 
 # Plan: Make `research_swarm` xprompt portable across models
 

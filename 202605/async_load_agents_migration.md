@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/async_load_agents_migration.md](prompts/async_load_agents_migration.md)
+- **PROMPT:** [prompts/202605/async_load_agents_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/async_load_agents_migration.md)
 
 # Plan: Migrate synchronous `_load_agents()` call sites to async
 

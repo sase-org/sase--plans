@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/axe_png_snapshots.md](prompts/axe_png_snapshots.md)
+- **PROMPT:** [prompts/202605/axe_png_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/axe_png_snapshots.md)
 
 # Plan — Expand AXE Tab PNG Snapshot Coverage
 

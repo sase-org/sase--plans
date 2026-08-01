@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/episodes_build_progress.md](prompts/episodes_build_progress.md)
+- **PROMPT:** [prompts/202605/episodes_build_progress.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/episodes_build_progress.md)
 
 # Plan: Rich progress output for `sase memory episodes build`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/docs_sidebar_reorder.md](prompts/docs_sidebar_reorder.md)
+- **PROMPT:** [prompts/202605/docs_sidebar_reorder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/docs_sidebar_reorder.md)
 
 # Plan: Reorder and Rename SASE Docs Sidebar Sections
 

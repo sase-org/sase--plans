@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/gai_org_ideas_research.md](prompts/gai_org_ideas_research.md)
+- **PROMPT:** [prompts/202605/gai_org_ideas_research.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/gai_org_ideas_research.md)
 - **BEAD:** [sase-2h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2h/README.md)
 
 # Plan: Mine `~/org` GAI Notes for SASE Product Ideas

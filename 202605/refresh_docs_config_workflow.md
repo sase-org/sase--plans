@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/refresh_docs_config_workflow.md](prompts/refresh_docs_config_workflow.md)
+- **PROMPT:** [prompts/202605/refresh_docs_config_workflow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/refresh_docs_config_workflow.md)
 - **COMMITS:**
   - [a58285d](https://github.com/sase-org/sase/commit/a58285d6cd1fcb5d8d6e6949f79df78b87789249) — feat: load standalone workflows from config
 

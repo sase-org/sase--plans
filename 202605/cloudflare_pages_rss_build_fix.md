@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/cloudflare_pages_rss_build_fix.md](prompts/cloudflare_pages_rss_build_fix.md)
+- **PROMPT:** [prompts/202605/cloudflare_pages_rss_build_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/cloudflare_pages_rss_build_fix.md)
 
 # Plan: Fix Cloudflare Pages RSS Build Failure
 

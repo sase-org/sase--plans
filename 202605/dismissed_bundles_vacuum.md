@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dismissed_bundles_vacuum.md](prompts/dismissed_bundles_vacuum.md)
+- **PROMPT:** [prompts/202605/dismissed_bundles_vacuum.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dismissed_bundles_vacuum.md)
 
 # Plan: Reclaim ~131M from the dismissed-bundle index and refresh the artifact index
 

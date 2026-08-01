@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_long_memory_subheading.md](prompts/remove_long_memory_subheading.md)
+- **PROMPT:** [prompts/202605/remove_long_memory_subheading.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_long_memory_subheading.md)
 
 # Plan: Remove Generated Long-Memory Subheading
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/workflow_child_runtime_ticking.md](prompts/workflow_child_runtime_ticking.md)
+- **PROMPT:** [prompts/202605/workflow_child_runtime_ticking.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/workflow_child_runtime_ticking.md)
 
 # Fix Workflow Plan/Code Child Runtime Ticking on the Agents Tab
 

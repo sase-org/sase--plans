@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/qwen_global_commit_stop_hook.md](prompts/qwen_global_commit_stop_hook.md)
+- **PROMPT:** [prompts/202605/qwen_global_commit_stop_hook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen_global_commit_stop_hook.md)
 
 # Plan: Wire `sase_commit_stop_hook` into the Qwen Code runtime (global-first)
 

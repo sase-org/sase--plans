@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/blog_series_review.md](prompts/blog_series_review.md)
+- **PROMPT:** [prompts/202605/blog_series_review.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/blog_series_review.md)
 
 # Plan: Review and Polish the Agentic Software Engineering Blog Series
 

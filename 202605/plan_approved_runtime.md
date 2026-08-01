@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_approved_runtime.md](prompts/plan_approved_runtime.md)
+- **PROMPT:** [prompts/202605/plan_approved_runtime.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_approved_runtime.md)
 
 # Plan: Show Runtime for PLAN APPROVED Plan-Chain Agents
 

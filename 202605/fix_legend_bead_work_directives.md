@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_legend_bead_work_directives.md](prompts/fix_legend_bead_work_directives.md)
+- **PROMPT:** [prompts/202605/fix_legend_bead_work_directives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_legend_bead_work_directives.md)
 
 # Fix Legend Bead Work Directives
 

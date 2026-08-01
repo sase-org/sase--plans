@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/cd_chat_filename.md](prompts/cd_chat_filename.md)
+- **PROMPT:** [prompts/202605/cd_chat_filename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/cd_chat_filename.md)
 - **COMMITS:**
   - [ddf695e](https://github.com/sase-org/sase/commit/ddf695ebc6134f7483794f48de1c2785cce5131e) — fix: sanitize chat history filenames
 

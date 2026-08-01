@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/command_palette_key_hint.md](prompts/command_palette_key_hint.md)
+- **PROMPT:** [prompts/202605/command_palette_key_hint.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/command_palette_key_hint.md)
 
 # Command Palette Key Filter Hint Plan
 

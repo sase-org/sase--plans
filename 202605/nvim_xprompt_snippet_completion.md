@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_xprompt_snippet_completion.md](prompts/nvim_xprompt_snippet_completion.md)
+- **PROMPT:** [prompts/202605/nvim_xprompt_snippet_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_xprompt_snippet_completion.md)
 
 # Plan: Stabilize Neovim SASE XPrompt Snippet Completion
 

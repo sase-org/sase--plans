@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/finish_sase_2y.md](prompts/finish_sase_2y.md)
+- **PROMPT:** [prompts/202605/finish_sase_2y.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/finish_sase_2y.md)
 
 # Finish sase-2y Verification Closeout
 

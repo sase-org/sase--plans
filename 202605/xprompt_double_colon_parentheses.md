@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_double_colon_parentheses.md](prompts/xprompt_double_colon_parentheses.md)
+- **PROMPT:** [prompts/202605/xprompt_double_colon_parentheses.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_double_colon_parentheses.md)
 
 # Plan: Fix xprompt double-colon text containing parentheses
 

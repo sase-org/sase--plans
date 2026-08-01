@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/finish_sase_38.md](prompts/finish_sase_38.md)
+- **PROMPT:** [prompts/202605/finish_sase_38.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/finish_sase_38.md)
 
 # Finish sase-38 Verification And Closure
 

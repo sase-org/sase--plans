@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/attach_explicit_artifacts_to_completion.md](prompts/attach_explicit_artifacts_to_completion.md)
+- **PROMPT:** [prompts/202605/attach_explicit_artifacts_to_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/attach_explicit_artifacts_to_completion.md)
 
 # Attach explicit agent artifacts to completion notifications
 

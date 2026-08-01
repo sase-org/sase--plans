@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/rename_resume_xprompt_to_fork.md](prompts/rename_resume_xprompt_to_fork.md)
+- **PROMPT:** [prompts/202605/rename_resume_xprompt_to_fork.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/rename_resume_xprompt_to_fork.md)
 
 # Plan: Rename the `#resume` XPrompt Workflow to `#fork`
 

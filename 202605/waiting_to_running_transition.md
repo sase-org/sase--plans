@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/waiting_to_running_transition.md](prompts/waiting_to_running_transition.md)
+- **PROMPT:** [prompts/202605/waiting_to_running_transition.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/waiting_to_running_transition.md)
 
 # Fix WAITING -> STARTING Agent State Regression
 

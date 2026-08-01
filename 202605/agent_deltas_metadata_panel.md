@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_deltas_metadata_panel.md](prompts/agent_deltas_metadata_panel.md)
+- **PROMPT:** [prompts/202605/agent_deltas_metadata_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_deltas_metadata_panel.md)
 
 # Agent Deltas Metadata Panel Plan
 

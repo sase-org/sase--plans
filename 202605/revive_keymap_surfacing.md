@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revive_keymap_surfacing.md](prompts/revive_keymap_surfacing.md)
+- **PROMPT:** [prompts/202605/revive_keymap_surfacing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revive_keymap_surfacing.md)
 
 # Plan: Surface `R` (revive) keymap and clean up confusing `r` vs `R` wording
 

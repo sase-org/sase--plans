@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/mark_all_unread_agents_read.md](prompts/mark_all_unread_agents_read.md)
+- **PROMPT:** [prompts/202605/mark_all_unread_agents_read.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mark_all_unread_agents_read.md)
 
 # Plan: Agents `,J` Mark All Unread As Read
 

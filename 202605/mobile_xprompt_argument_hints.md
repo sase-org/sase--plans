@@ -5,7 +5,7 @@ bead_id: sase-27
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/mobile_xprompt_argument_hints.md](prompts/mobile_xprompt_argument_hints.md)
+- **PROMPT:** [prompts/202605/mobile_xprompt_argument_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_xprompt_argument_hints.md)
 - **BEAD:** [sase-27](https://github.com/sase-org/sase--beads/blob/main/pages/sase-27/README.md)
 
 # Mobile XPrompt Argument Name/Type Hints

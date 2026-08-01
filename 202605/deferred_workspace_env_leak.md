@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/deferred_workspace_env_leak.md](prompts/deferred_workspace_env_leak.md)
+- **PROMPT:** [prompts/202605/deferred_workspace_env_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/deferred_workspace_env_leak.md)
 
 # Fix Deferred Workspace Env Leak
 

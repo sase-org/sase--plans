@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_viewer_page_wrap.md](prompts/artifact_viewer_page_wrap.md)
+- **PROMPT:** [prompts/202605/artifact_viewer_page_wrap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_viewer_page_wrap.md)
 
 # Artifact Viewer Page Wrap Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/wait_derived_agent_names.md](prompts/wait_derived_agent_names.md)
+- **PROMPT:** [prompts/202605/wait_derived_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/wait_derived_agent_names.md)
 
 # Wait-Derived Agent Names Plan
 

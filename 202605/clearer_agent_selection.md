@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/clearer_agent_selection.md](prompts/clearer_agent_selection.md)
+- **PROMPT:** [prompts/202605/clearer_agent_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/clearer_agent_selection.md)
 
 # Plan: Clearer Selected Agent Entry on the `sase ace` Agents Tab
 

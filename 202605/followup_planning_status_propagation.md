@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/followup_planning_status_propagation.md](prompts/followup_planning_status_propagation.md)
+- **PROMPT:** [prompts/202605/followup_planning_status_propagation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/followup_planning_status_propagation.md)
 
 # Followup Plan -> Parent Workflow PLANNING Status Propagation
 

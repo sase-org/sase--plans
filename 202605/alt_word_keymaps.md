@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/alt_word_keymaps.md](prompts/alt_word_keymaps.md)
+- **PROMPT:** [prompts/202605/alt_word_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/alt_word_keymaps.md)
 
 # Add Alt-B / Alt-F Readline Word Navigation
 

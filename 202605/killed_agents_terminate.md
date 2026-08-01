@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/killed_agents_terminate.md](prompts/killed_agents_terminate.md)
+- **PROMPT:** [prompts/202605/killed_agents_terminate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/killed_agents_terminate.md)
 
 # Plan: Make Killed SASE Agents Actually Terminate
 

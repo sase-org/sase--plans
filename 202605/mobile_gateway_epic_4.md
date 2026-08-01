@@ -6,7 +6,7 @@ create_time: 2026-05-06 15:08:41
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_epic_4.md](prompts/mobile_gateway_epic_4.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_epic_4.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_epic_4.md)
 - **BEAD:** [sase-26.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.4.md)
 
 # Plan: Mobile MVP Epic 4 - Workflow Helper APIs

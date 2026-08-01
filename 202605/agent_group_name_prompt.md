@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_group_name_prompt.md](prompts/agent_group_name_prompt.md)
+- **PROMPT:** [prompts/202605/agent_group_name_prompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_group_name_prompt.md)
 
 # Prompt for Optional Saved Agent Group Names
 

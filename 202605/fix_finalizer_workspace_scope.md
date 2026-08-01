@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_finalizer_workspace_scope.md](prompts/fix_finalizer_workspace_scope.md)
+- **PROMPT:** [prompts/202605/fix_finalizer_workspace_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_finalizer_workspace_scope.md)
 
 # Plan: Scope Commit Finalizer Sibling Checks to Assigned Workspaces
 

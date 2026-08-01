@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/all_directives_visible.md](prompts/all_directives_visible.md)
+- **PROMPT:** [prompts/202605/all_directives_visible.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/all_directives_visible.md)
 
 # Make directive completion show every directive
 

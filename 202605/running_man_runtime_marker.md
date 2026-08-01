@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/running_man_runtime_marker.md](prompts/running_man_runtime_marker.md)
+- **PROMPT:** [prompts/202605/running_man_runtime_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/running_man_runtime_marker.md)
 
 # Running Man Runtime Marker Plan
 

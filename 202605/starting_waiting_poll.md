@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/starting_waiting_poll.md](prompts/starting_waiting_poll.md)
+- **PROMPT:** [prompts/202605/starting_waiting_poll.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/starting_waiting_poll.md)
 
 # Plan: Refresh Hidden STARTING Agents When WAITING Markers Land
 

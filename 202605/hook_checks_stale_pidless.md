@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/hook_checks_stale_pidless.md](prompts/hook_checks_stale_pidless.md)
+- **PROMPT:** [prompts/202605/hook_checks_stale_pidless.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/hook_checks_stale_pidless.md)
 
 # Diagnose And Fix Stale PID-less `hook_checks` Runs
 

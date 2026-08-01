@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_init_tier_readmes.md](prompts/sdd_init_tier_readmes.md)
+- **PROMPT:** [prompts/202605/sdd_init_tier_readmes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_init_tier_readmes.md)
 
 # Plan: Seed SDD Tier READMEs from `sase sdd init`
 

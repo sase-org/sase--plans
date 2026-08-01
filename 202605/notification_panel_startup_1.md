@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_panel_startup_1.md](prompts/notification_panel_startup_1.md)
+- **PROMPT:** [prompts/202605/notification_panel_startup_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_panel_startup_1.md)
 
 # Diagnose and Fix Startup Notification Panel
 

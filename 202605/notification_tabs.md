@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_tabs.md](prompts/notification_tabs.md)
+- **PROMPT:** [prompts/202605/notification_tabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_tabs.md)
 
 # Notification Modal Tabs Plan
 

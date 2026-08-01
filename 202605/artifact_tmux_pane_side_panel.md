@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_tmux_pane_side_panel.md](prompts/artifact_tmux_pane_side_panel.md)
+- **PROMPT:** [prompts/202605/artifact_tmux_pane_side_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_tmux_pane_side_panel.md)
 
 # Plan: Restore Agents Side Panel When Artifact Tmux Pane Closes
 

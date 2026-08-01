@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_codex_cli_resolution.md](prompts/fix_codex_cli_resolution.md)
+- **PROMPT:** [prompts/202605/fix_codex_cli_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_codex_cli_resolution.md)
 
 # Fix Codex CLI Resolution for SASE Agents
 

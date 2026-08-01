@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_amd_marker_comments.md](prompts/remove_amd_marker_comments.md)
+- **PROMPT:** [prompts/202605/remove_amd_marker_comments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_amd_marker_comments.md)
 
 # Remove AMD Marker Comments From AGENTS.md
 

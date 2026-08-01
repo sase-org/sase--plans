@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/axe_lumberjack_chop_sidebar.md](prompts/axe_lumberjack_chop_sidebar.md)
+- **PROMPT:** [prompts/202605/axe_lumberjack_chop_sidebar.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/axe_lumberjack_chop_sidebar.md)
 - **BEAD:** [sase-2w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2w/README.md)
 
 # AXE Lumberjack/Chop Sidebar Plan

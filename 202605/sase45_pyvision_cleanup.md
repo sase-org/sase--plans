@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase45_pyvision_cleanup.md](prompts/sase45_pyvision_cleanup.md)
+- **PROMPT:** [prompts/202605/sase45_pyvision_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase45_pyvision_cleanup.md)
 
 # SASE-45 Pyvision Cleanup Plan
 

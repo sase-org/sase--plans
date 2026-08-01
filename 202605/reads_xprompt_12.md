@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/reads_xprompt_12.md](prompts/reads_xprompt_12.md)
+- **PROMPT:** [prompts/202605/reads_xprompt_12.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/reads_xprompt_12.md)
 
 # Plan: `reads` Multi-Agent XPrompt
 

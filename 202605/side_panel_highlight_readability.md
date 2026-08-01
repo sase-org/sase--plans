@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/side_panel_highlight_readability.md](prompts/side_panel_highlight_readability.md)
+- **PROMPT:** [prompts/202605/side_panel_highlight_readability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/side_panel_highlight_readability.md)
 
 # Improve readability of the highlighted entry in ACE TUI side-panels
 

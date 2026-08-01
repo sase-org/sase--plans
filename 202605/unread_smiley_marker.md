@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/unread_smiley_marker.md](prompts/unread_smiley_marker.md)
+- **PROMPT:** [prompts/202605/unread_smiley_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/unread_smiley_marker.md)
 
 # Plan: Replace the unread-agent mailbox marker with a yellow smiley face
 

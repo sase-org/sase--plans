@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_agent_resume_terminal_statuses.md](prompts/fix_agent_resume_terminal_statuses.md)
+- **PROMPT:** [prompts/202605/fix_agent_resume_terminal_statuses.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_agent_resume_terminal_statuses.md)
 
 # Plan: Fix ACE Agent Resume for Terminal Plan-Chain Statuses
 

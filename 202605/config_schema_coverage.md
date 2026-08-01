@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/config_schema_coverage.md](prompts/config_schema_coverage.md)
+- **PROMPT:** [prompts/202605/config_schema_coverage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/config_schema_coverage.md)
 
 # Config Schema Coverage Plan
 

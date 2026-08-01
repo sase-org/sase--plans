@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revive_modal_freeze.md](prompts/revive_modal_freeze.md)
+- **PROMPT:** [prompts/202605/revive_modal_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revive_modal_freeze.md)
 
 # Plan: Fix TUI Freeze When Typing in Revive Modal
 

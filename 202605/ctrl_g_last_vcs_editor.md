@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ctrl_g_last_vcs_editor.md](prompts/ctrl_g_last_vcs_editor.md)
+- **PROMPT:** [prompts/202605/ctrl_g_last_vcs_editor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ctrl_g_last_vcs_editor.md)
 
 # Plan: Global Ctrl+G Editor Launch for Last VCS XPrompt
 

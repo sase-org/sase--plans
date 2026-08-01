@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/default_git_home_vcs.md](prompts/default_git_home_vcs.md)
+- **PROMPT:** [prompts/202605/default_git_home_vcs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/default_git_home_vcs.md)
 
 # Plan: Default Bare Prompts To `#git:home`
 

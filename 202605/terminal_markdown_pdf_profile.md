@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/terminal_markdown_pdf_profile.md](prompts/terminal_markdown_pdf_profile.md)
+- **PROMPT:** [prompts/202605/terminal_markdown_pdf_profile.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/terminal_markdown_pdf_profile.md)
 
 # Plan: Terminal Markdown PDF Source Rendering
 

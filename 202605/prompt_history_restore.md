@@ -4,7 +4,7 @@ status: proposed
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_history_restore.md](prompts/prompt_history_restore.md)
+- **PROMPT:** [prompts/202605/prompt_history_restore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_history_restore.md)
 
 # Plan: Restore prompt history and verify data-loss fix
 

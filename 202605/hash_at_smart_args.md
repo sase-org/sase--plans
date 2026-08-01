@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/hash_at_smart_args.md](prompts/hash_at_smart_args.md)
+- **PROMPT:** [prompts/202605/hash_at_smart_args.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/hash_at_smart_args.md)
 
 # Plan: Smart xprompt arguments for #@
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_tag_tab_isolation.md](prompts/notification_tag_tab_isolation.md)
+- **PROMPT:** [prompts/202605/notification_tag_tab_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_tag_tab_isolation.md)
 
 # Notification Tag Tab Isolation Plan
 

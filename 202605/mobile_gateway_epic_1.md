@@ -6,7 +6,7 @@ tier: epic
 legend_bead_id: sase-26
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_epic_1.md](prompts/mobile_gateway_epic_1.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_epic_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_epic_1.md)
 - **BEAD:** [sase-26.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.1.md)
 
 # Plan: Mobile MVP Epic 1 - Host Gateway Foundation And Pairing

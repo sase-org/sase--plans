@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/lumberjack_log_safeguards.md](prompts/lumberjack_log_safeguards.md)
+- **PROMPT:** [prompts/202605/lumberjack_log_safeguards.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/lumberjack_log_safeguards.md)
 
 # Plan: Remove Runaway Logs and Cap Lumberjack Logging
 

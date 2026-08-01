@@ -5,7 +5,7 @@ bead_id: sase-2a
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_server.md](prompts/xprompt_lsp_server.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_server.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_server.md)
 - **BEAD:** [sase-2a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2a/README.md)
 
 # Plan: XPrompt LSP Server And Thin `sase-nvim`

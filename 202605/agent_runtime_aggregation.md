@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_runtime_aggregation.md](prompts/agent_runtime_aggregation.md)
+- **PROMPT:** [prompts/202605/agent_runtime_aggregation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_runtime_aggregation.md)
 
 # Plan: Aggregate Parent Agent Runtime From Child Agent Work
 

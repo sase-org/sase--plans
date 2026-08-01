@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/permanent_agent_names.md](prompts/permanent_agent_names.md)
+- **PROMPT:** [prompts/202605/permanent_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/permanent_agent_names.md)
 - **BEAD:** [sase-2e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2e/README.md)
 
 # Permanent Agent Names

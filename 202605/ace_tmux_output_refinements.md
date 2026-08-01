@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ace_tmux_output_refinements.md](prompts/ace_tmux_output_refinements.md)
+- **PROMPT:** [prompts/202605/ace_tmux_output_refinements.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_tmux_output_refinements.md)
 
 # Plan: Refine `sase ace --tmux` Output Contract
 

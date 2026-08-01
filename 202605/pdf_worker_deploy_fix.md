@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pdf_worker_deploy_fix.md](prompts/pdf_worker_deploy_fix.md)
+- **PROMPT:** [prompts/202605/pdf_worker_deploy_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pdf_worker_deploy_fix.md)
 
 # Plan: Fix SASE Handbook Deployment To Cloudflare Worker
 

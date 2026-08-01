@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/runtime_suffix_followup_vs_step.md](prompts/runtime_suffix_followup_vs_step.md)
+- **PROMPT:** [prompts/202605/runtime_suffix_followup_vs_step.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/runtime_suffix_followup_vs_step.md)
 
 # Plan: Runtime Suffix Ownership For Follow-Up Workflows
 

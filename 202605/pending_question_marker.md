@@ -8,7 +8,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pending_question_marker.md](prompts/pending_question_marker.md)
+- **PROMPT:** [prompts/202605/pending_question_marker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pending_question_marker.md)
 
 # Pending Question Marker → QUESTION Status (Decouple From Notifications)
 

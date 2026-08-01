@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/memory_episodes_build_hang.md](prompts/memory_episodes_build_hang.md)
+- **PROMPT:** [prompts/202605/memory_episodes_build_hang.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_episodes_build_hang.md)
 
 # Plan: Fix `sase memory episodes build` project-scan fan-out
 

@@ -5,7 +5,7 @@ bead_id: sase-39
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/agent_launch_failed_rows.md](prompts/agent_launch_failed_rows.md)
+- **PROMPT:** [prompts/202605/agent_launch_failed_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_launch_failed_rows.md)
 - **BEAD:** sase-39
 
 # Plan: Agent Launch Failures Always Produce Agent Rows

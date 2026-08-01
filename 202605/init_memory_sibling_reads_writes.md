@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/init_memory_sibling_reads_writes.md](prompts/init_memory_sibling_reads_writes.md)
+- **PROMPT:** [prompts/202605/init_memory_sibling_reads_writes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/init_memory_sibling_reads_writes.md)
 
 # Plan: Clarify Sibling Repository Memory Wording
 

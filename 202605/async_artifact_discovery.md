@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/async_artifact_discovery.md](prompts/async_artifact_discovery.md)
+- **PROMPT:** [prompts/202605/async_artifact_discovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/async_artifact_discovery.md)
 
 # Plan: Move agent-detail artifact discovery off the UI thread
 

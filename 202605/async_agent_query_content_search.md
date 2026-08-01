@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/async_agent_query_content_search.md](prompts/async_agent_query_content_search.md)
+- **PROMPT:** [prompts/202605/async_agent_query_content_search.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/async_agent_query_content_search.md)
 
 # Async Agent-Query Content Search Plan
 

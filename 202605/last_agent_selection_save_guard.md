@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/last_agent_selection_save_guard.md](prompts/last_agent_selection_save_guard.md)
+- **PROMPT:** [prompts/202605/last_agent_selection_save_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/last_agent_selection_save_guard.md)
 
 # Plan: Validate `project_name` On All `save_last_agent_selection()` Call Sites
 

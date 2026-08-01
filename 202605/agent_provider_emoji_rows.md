@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_provider_emoji_rows.md](prompts/agent_provider_emoji_rows.md)
+- **PROMPT:** [prompts/202605/agent_provider_emoji_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_provider_emoji_rows.md)
 
 # Plan: Provider Emoji Badges in Agent Rows
 

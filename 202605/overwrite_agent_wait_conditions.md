@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/overwrite_agent_wait_conditions.md](prompts/overwrite_agent_wait_conditions.md)
+- **PROMPT:** [prompts/202605/overwrite_agent_wait_conditions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/overwrite_agent_wait_conditions.md)
 - **COMMITS:**
   - [a3d4cf0](https://github.com/sase-org/sase/commit/a3d4cf0203d858c35b698ff3f551053e154a6052) — fix: overwrite agent wait conditions from TUI
 

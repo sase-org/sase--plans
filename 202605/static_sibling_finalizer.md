@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/static_sibling_finalizer.md](prompts/static_sibling_finalizer.md)
+- **PROMPT:** [prompts/202605/static_sibling_finalizer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/static_sibling_finalizer.md)
 
 # Plan: Ignore Static Sibling Repos in Commit Finalizer Failures
 

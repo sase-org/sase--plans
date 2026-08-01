@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/collapse_agents_side_panel_for_artifact_viewer.md](prompts/collapse_agents_side_panel_for_artifact_viewer.md)
+- **PROMPT:** [prompts/202605/collapse_agents_side_panel_for_artifact_viewer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/collapse_agents_side_panel_for_artifact_viewer.md)
 
 # Collapse Agents Side Panel While Artifact Viewer Is Visible
 

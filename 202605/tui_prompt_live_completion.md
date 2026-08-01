@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_prompt_live_completion.md](prompts/tui_prompt_live_completion.md)
+- **PROMPT:** [prompts/202605/tui_prompt_live_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_prompt_live_completion.md)
 
 # TUI Prompt Live Completion Plan
 

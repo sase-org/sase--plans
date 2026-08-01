@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/directive_completion.md](prompts/directive_completion.md)
+- **PROMPT:** [prompts/202605/directive_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/directive_completion.md)
 
 # Plan: Prompt Directive Completion
 

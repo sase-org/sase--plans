@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_running_agents_tests.md](prompts/fix_running_agents_tests.md)
+- **PROMPT:** [prompts/202605/fix_running_agents_tests.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_running_agents_tests.md)
 
 # Fix `just test` Running Agent Snapshot Failures
 

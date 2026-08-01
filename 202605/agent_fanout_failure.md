@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_fanout_failure.md](prompts/agent_fanout_failure.md)
+- **PROMPT:** [prompts/202605/agent_fanout_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_fanout_failure.md)
 
 # Plan: Fix TUI Agent Fanout Launch Failures
 

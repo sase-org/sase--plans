@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/init_check_memory_false_positives.md](prompts/init_check_memory_false_positives.md)
+- **PROMPT:** [prompts/202605/init_check_memory_false_positives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/init_check_memory_false_positives.md)
 
 # Plan: Fix `sase init --check` Memory False Positives
 

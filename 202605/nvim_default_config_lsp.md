@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_default_config_lsp.md](prompts/nvim_default_config_lsp.md)
+- **PROMPT:** [prompts/202605/nvim_default_config_lsp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_default_config_lsp.md)
 
 # Diagnose and fix Neovim LSP support for `src/sase/default_config.yml`
 

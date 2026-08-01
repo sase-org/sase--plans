@@ -5,7 +5,7 @@ bead_id: sase-3l
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/ace_responsiveness.md](prompts/ace_responsiveness.md)
+- **PROMPT:** [prompts/202605/ace_responsiveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_responsiveness.md)
 - **BEAD:** [sase-3l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3l/README.md)
 
 # `sase ace` Responsiveness Implementation Plan

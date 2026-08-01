@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bead_open_command.md](prompts/bead_open_command.md)
+- **PROMPT:** [prompts/202605/bead_open_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_open_command.md)
 - **COMMITS:**
   - [e90b749](https://github.com/sase-org/sase/commit/e90b7498808940685373d55e191289efdedebe43) — feat: add bead open shortcut
 

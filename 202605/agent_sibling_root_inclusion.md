@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_sibling_root_inclusion.md](prompts/agent_sibling_root_inclusion.md)
+- **PROMPT:** [prompts/202605/agent_sibling_root_inclusion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_sibling_root_inclusion.md)
 
 # Plan: Include Bare Root Agents In Agent Sibling Families
 

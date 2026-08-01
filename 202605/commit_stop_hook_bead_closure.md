@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/commit_stop_hook_bead_closure.md](prompts/commit_stop_hook_bead_closure.md)
+- **PROMPT:** [prompts/202605/commit_stop_hook_bead_closure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/commit_stop_hook_bead_closure.md)
 
 # Commit Stop Hook Bead Closure Ordering
 

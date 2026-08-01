@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_input_bar_noscreen_crash.md](prompts/prompt_input_bar_noscreen_crash.md)
+- **PROMPT:** [prompts/202605/prompt_input_bar_noscreen_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_input_bar_noscreen_crash.md)
 
 # Fix `NoScreen` crash in `PromptInputBar._update_height`
 

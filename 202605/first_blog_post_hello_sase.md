@@ -5,7 +5,7 @@ create_time: 2026-05-10 19:41:03
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/first_blog_post_hello_sase.md](prompts/first_blog_post_hello_sase.md)
+- **PROMPT:** [prompts/202605/first_blog_post_hello_sase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/first_blog_post_hello_sase.md)
 
 # Plan: First Blog Post — A Hands-On "Hello, SASE" Tour
 

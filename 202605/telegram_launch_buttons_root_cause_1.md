@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_launch_buttons_root_cause_1.md](prompts/telegram_launch_buttons_root_cause_1.md)
+- **PROMPT:** [prompts/202605/telegram_launch_buttons_root_cause_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_launch_buttons_root_cause_1.md)
 
 # Plan: Eliminate the Telegram Launch Button Race by Returning the Agent Name From the Launcher
 

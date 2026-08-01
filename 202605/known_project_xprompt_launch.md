@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/known_project_xprompt_launch.md](prompts/known_project_xprompt_launch.md)
+- **PROMPT:** [prompts/202605/known_project_xprompt_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/known_project_xprompt_launch.md)
 - **COMMITS:**
   - [662f957](https://github.com/sase-org/sase/commit/662f957618a89c2e75ec6fff5c02cd6448682c3c) — fix: resolve known-project launch refs
 

@@ -5,7 +5,7 @@ bead_id: sase-3b
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/revert_sase_37_archive.md](prompts/revert_sase_37_archive.md)
+- **PROMPT:** [prompts/202605/revert_sase_37_archive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revert_sase_37_archive.md)
 - **BEAD:** [sase-3b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3b/README.md)
 
 # Revert `sase-37` Archive and Query Work

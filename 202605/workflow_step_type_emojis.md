@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/workflow_step_type_emojis.md](prompts/workflow_step_type_emojis.md)
+- **PROMPT:** [prompts/202605/workflow_step_type_emojis.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/workflow_step_type_emojis.md)
 
 # Workflow Step Type Emojis in Agent Rows
 

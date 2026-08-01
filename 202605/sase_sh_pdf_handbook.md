@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_sh_pdf_handbook.md](prompts/sase_sh_pdf_handbook.md)
+- **PROMPT:** [prompts/202605/sase_sh_pdf_handbook.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_sh_pdf_handbook.md)
 
 # SASE.sh PDF Handbook Implementation Plan
 

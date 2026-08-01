@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_phase_commit_workspace.md](prompts/codex_phase_commit_workspace.md)
+- **PROMPT:** [prompts/202605/codex_phase_commit_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_phase_commit_workspace.md)
 
 # Codex phase-agent commit fallback workspace plan
 

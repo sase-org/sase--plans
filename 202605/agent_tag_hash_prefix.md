@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_tag_hash_prefix.md](prompts/agent_tag_hash_prefix.md)
+- **PROMPT:** [prompts/202605/agent_tag_hash_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_tag_hash_prefix.md)
 
 # Plan: Use `#` For Agents-Tab Dynamic Agent Tag Prefixes
 

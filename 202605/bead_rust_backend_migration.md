@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/bead_rust_backend_migration.md](prompts/bead_rust_backend_migration.md)
+- **PROMPT:** [prompts/202605/bead_rust_backend_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_rust_backend_migration.md)
 - **BEAD:** [sase-1u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1u/README.md)
 
 # Plan: Make `sase bead` Fast With `sase-core`

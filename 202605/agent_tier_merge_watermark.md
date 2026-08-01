@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_tier_merge_watermark.md](prompts/agent_tier_merge_watermark.md)
+- **PROMPT:** [prompts/202605/agent_tier_merge_watermark.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_tier_merge_watermark.md)
 
 # Plan: Fix transient agent row disappearance across repeated Tier 1 refreshes
 

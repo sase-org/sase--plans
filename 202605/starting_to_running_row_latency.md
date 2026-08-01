@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/starting_to_running_row_latency.md](prompts/starting_to_running_row_latency.md)
+- **PROMPT:** [prompts/202605/starting_to_running_row_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/starting_to_running_row_latency.md)
 
 # Promote STARTING agents to row entries soon after run_started_at lands
 

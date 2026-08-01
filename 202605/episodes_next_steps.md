@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/episodes_next_steps.md](prompts/episodes_next_steps.md)
+- **PROMPT:** [prompts/202605/episodes_next_steps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/episodes_next_steps.md)
 
 # Episode Visualization Next Steps Plan
 

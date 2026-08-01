@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_beads_all_projects.md](prompts/telegram_beads_all_projects.md)
+- **PROMPT:** [prompts/202605/telegram_beads_all_projects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_beads_all_projects.md)
 
 # Fix Telegram `/beads` All-Project Listing
 

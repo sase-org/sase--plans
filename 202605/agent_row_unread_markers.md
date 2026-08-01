@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_row_unread_markers.md](prompts/agent_row_unread_markers.md)
+- **PROMPT:** [prompts/202605/agent_row_unread_markers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_row_unread_markers.md)
 
 # Replace Agents Tab Unread Terminal Markers
 

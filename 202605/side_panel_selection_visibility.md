@@ -4,7 +4,7 @@ status: draft
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/side_panel_selection_visibility.md](prompts/side_panel_selection_visibility.md)
+- **PROMPT:** [prompts/202605/side_panel_selection_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/side_panel_selection_visibility.md)
 
 # Make the highlighted side-panel row clearly selected (without sacrificing readability)
 

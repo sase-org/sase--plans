@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/retry_agent_name_suffix.md](prompts/retry_agent_name_suffix.md)
+- **PROMPT:** [prompts/202605/retry_agent_name_suffix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/retry_agent_name_suffix.md)
 - **COMMITS:**
   - [363979f](https://github.com/sase-org/sase/commit/363979f297b680771afab7a25b2dacc3e25a1385) — fix: name retry-edit agents with suffixes
 

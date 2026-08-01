@@ -5,7 +5,7 @@ bead_id: sase-42
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/memory_write_review.md](prompts/memory_write_review.md)
+- **PROMPT:** [prompts/202605/memory_write_review.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_write_review.md)
 - **BEAD:** [sase-42](https://github.com/sase-org/sase--beads/blob/main/pages/sase-42/README.md)
 
 # Plan: `sase memory write` and `sase memory review`

@@ -5,7 +5,7 @@ bead_id: sase-32
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/visual_snapshot_failure_links.md](prompts/visual_snapshot_failure_links.md)
+- **PROMPT:** [prompts/202605/visual_snapshot_failure_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/visual_snapshot_failure_links.md)
 - **BEAD:** [sase-32](https://github.com/sase-org/sase--beads/blob/main/pages/sase-32/README.md)
 
 # Plan: PNG Snapshot Failure Links In GitHub Actions

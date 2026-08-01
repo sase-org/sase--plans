@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/deltas_three_fold_levels.md](prompts/deltas_three_fold_levels.md)
+- **PROMPT:** [prompts/202605/deltas_three_fold_levels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/deltas_three_fold_levels.md)
 
 # Plan: DELTAS Three-Level Folding
 

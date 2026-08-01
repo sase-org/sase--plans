@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dynamic_memory_wipe_root_cause.md](prompts/dynamic_memory_wipe_root_cause.md)
+- **PROMPT:** [prompts/202605/dynamic_memory_wipe_root_cause.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dynamic_memory_wipe_root_cause.md)
 
 # Dynamic Memory Wipe Root-Cause Fix
 

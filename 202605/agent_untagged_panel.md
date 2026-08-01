@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_untagged_panel.md](prompts/agent_untagged_panel.md)
+- **PROMPT:** [prompts/202605/agent_untagged_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_untagged_panel.md)
 
 # Plan: Hide Empty Untagged Agents Panel
 

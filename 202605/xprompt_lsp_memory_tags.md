@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_memory_tags.md](prompts/xprompt_lsp_memory_tags.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_memory_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_memory_tags.md)
 
 # Plan: Make xprompt LSP diagnostics honor implicit memory/long tags
 

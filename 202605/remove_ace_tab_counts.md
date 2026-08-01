@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_ace_tab_counts.md](prompts/remove_ace_tab_counts.md)
+- **PROMPT:** [prompts/202605/remove_ace_tab_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_ace_tab_counts.md)
 
 # Remove ACE TUI Tab Title Counts
 

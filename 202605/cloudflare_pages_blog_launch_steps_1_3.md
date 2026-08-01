@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/cloudflare_pages_blog_launch_steps_1_3.md](prompts/cloudflare_pages_blog_launch_steps_1_3.md)
+- **PROMPT:** [prompts/202605/cloudflare_pages_blog_launch_steps_1_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/cloudflare_pages_blog_launch_steps_1_3.md)
 
 # Cloudflare Pages Blog Launch Steps 1-3 Plan
 

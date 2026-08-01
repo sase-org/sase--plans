@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/landing_hero_text.md](prompts/landing_hero_text.md)
+- **PROMPT:** [prompts/202605/landing_hero_text.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/landing_hero_text.md)
 
 # Landing Hero Text Polish Plan
 

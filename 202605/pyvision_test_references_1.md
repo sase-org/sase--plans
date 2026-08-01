@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pyvision_test_references_1.md](prompts/pyvision_test_references_1.md)
+- **PROMPT:** [prompts/202605/pyvision_test_references_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pyvision_test_references_1.md)
 
 # Pyvision: Exclude Test Files From Public Symbol Reference Detection
 

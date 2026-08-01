@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_tmux_toggle.md](prompts/artifact_tmux_toggle.md)
+- **PROMPT:** [prompts/202605/artifact_tmux_toggle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_tmux_toggle.md)
 
 # Artifact Tmux Pane Toggle Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_just_bool_rendering.md](prompts/fix_just_bool_rendering.md)
+- **PROMPT:** [prompts/202605/fix_just_bool_rendering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_just_bool_rendering.md)
 
 # Plan: Fix `fix_just` Python Boolean Rendering
 

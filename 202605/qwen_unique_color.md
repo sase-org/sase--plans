@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/qwen_unique_color.md](prompts/qwen_unique_color.md)
+- **PROMPT:** [prompts/202605/qwen_unique_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen_unique_color.md)
 
 # Plan: Give QWEN a Unique, Brand-Aligned Color
 

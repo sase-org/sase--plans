@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/feedback_child_done_after_approval.md](prompts/feedback_child_done_after_approval.md)
+- **PROMPT:** [prompts/202605/feedback_child_done_after_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/feedback_child_done_after_approval.md)
 
 # Feedback Child Status After Plan Approval
 

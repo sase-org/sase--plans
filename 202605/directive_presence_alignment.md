@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/directive_presence_alignment.md](prompts/directive_presence_alignment.md)
+- **PROMPT:** [prompts/202605/directive_presence_alignment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/directive_presence_alignment.md)
 
 # Align Directive Presence Checks With Full Directive Parsing
 

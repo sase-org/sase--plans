@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/file_panel_stale_diff_on_toggle.md](prompts/file_panel_stale_diff_on_toggle.md)
+- **PROMPT:** [prompts/202605/file_panel_stale_diff_on_toggle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/file_panel_stale_diff_on_toggle.md)
 
 # Plan: Fix Stale File Panel Diff on `]` Visibility Toggle
 

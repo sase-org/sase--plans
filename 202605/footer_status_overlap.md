@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/footer_status_overlap.md](prompts/footer_status_overlap.md)
+- **PROMPT:** [prompts/202605/footer_status_overlap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/footer_status_overlap.md)
 
 # Plan: Restore ACE Keybinding Footer Visibility
 

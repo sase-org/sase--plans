@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_xprompt_null_default.md](prompts/nvim_xprompt_null_default.md)
+- **PROMPT:** [prompts/202605/nvim_xprompt_null_default.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_xprompt_null_default.md)
 
 # Fix Neovim xprompt optional null defaults
 

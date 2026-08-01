@@ -5,7 +5,7 @@ bead_id: sase-1z
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/docs_gpt_image_infographics.md](prompts/docs_gpt_image_infographics.md)
+- **PROMPT:** [prompts/202605/docs_gpt_image_infographics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/docs_gpt_image_infographics.md)
 - **BEAD:** [sase-1z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1z/README.md)
 
 # Plan: GPT Image Infographics for High-Complexity Docs

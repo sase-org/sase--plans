@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_definition_e2e_fix.md](prompts/xprompt_lsp_definition_e2e_fix.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_definition_e2e_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_definition_e2e_fix.md)
 
 # Plan: Fix XPrompt LSP Jump To Definition End To End
 

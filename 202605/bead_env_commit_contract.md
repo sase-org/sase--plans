@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/bead_env_commit_contract.md](prompts/bead_env_commit_contract.md)
+- **PROMPT:** [prompts/202605/bead_env_commit_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_env_commit_contract.md)
 - **BEAD:** [sase-2d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2d/README.md)
 
 # Plan: Require Bead Association Through Environment for `sase commit`

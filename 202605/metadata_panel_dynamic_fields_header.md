@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/metadata_panel_dynamic_fields_header.md](prompts/metadata_panel_dynamic_fields_header.md)
+- **PROMPT:** [prompts/202605/metadata_panel_dynamic_fields_header.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/metadata_panel_dynamic_fields_header.md)
 
 # Plan: Add Header Above Dynamic Fields in Agent Metadata Panel
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_counts.md](prompts/agent_counts.md)
+- **PROMPT:** [prompts/202605/agent_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_counts.md)
 
 # Agent Counts In The Agents Header
 

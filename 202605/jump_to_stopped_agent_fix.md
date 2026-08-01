@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/jump_to_stopped_agent_fix.md](prompts/jump_to_stopped_agent_fix.md)
+- **PROMPT:** [prompts/202605/jump_to_stopped_agent_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/jump_to_stopped_agent_fix.md)
 
 # Plan: Fix `,J` Stopped-Agent Navigation
 

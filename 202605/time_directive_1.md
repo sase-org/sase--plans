@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/time_directive_1.md](prompts/time_directive_1.md)
+- **PROMPT:** [prompts/202605/time_directive_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/time_directive_1.md)
 
 # Plan: Add `%t` / `%time` Directive For Time-Based Waits
 

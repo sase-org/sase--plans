@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/multi_prompt_xprompt_prompt_part.md](prompts/multi_prompt_xprompt_prompt_part.md)
+- **PROMPT:** [prompts/202605/multi_prompt_xprompt_prompt_part.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/multi_prompt_xprompt_prompt_part.md)
 
 # Plan: Treat Multi-Prompt XPrompts As Embeddable Prompt Parts
 

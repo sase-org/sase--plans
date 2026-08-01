@@ -5,7 +5,7 @@ bead_id: sase-3j
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/claude_tool_hooks_3.md](prompts/claude_tool_hooks_3.md)
+- **PROMPT:** [prompts/202605/claude_tool_hooks_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/claude_tool_hooks_3.md)
 - **BEAD:** [sase-3j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3j/README.md)
 
 # Plan: Claude Tool Call Capture via Hooks

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_dismissed_bundle_fd_leak.md](prompts/fix_dismissed_bundle_fd_leak.md)
+- **PROMPT:** [prompts/202605/fix_dismissed_bundle_fd_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_dismissed_bundle_fd_leak.md)
 
 # Plan: Fix dismissed bundle SQLite file descriptor leak
 

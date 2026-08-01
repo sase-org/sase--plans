@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_followup_commit_failure_1.md](prompts/plan_followup_commit_failure_1.md)
+- **PROMPT:** [prompts/202605/plan_followup_commit_failure_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_followup_commit_failure_1.md)
 
 # Fix Approved-Plan Coder Launch Failures
 

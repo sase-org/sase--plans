@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/gh_actions_chop_review_fix.md](prompts/gh_actions_chop_review_fix.md)
+- **PROMPT:** [prompts/202605/gh_actions_chop_review_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/gh_actions_chop_review_fix.md)
 
 # Review Fix: GitHub Actions Failure Chop Duplicate `%tag` Bug
 

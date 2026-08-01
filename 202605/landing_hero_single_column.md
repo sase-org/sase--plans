@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/landing_hero_single_column.md](prompts/landing_hero_single_column.md)
+- **PROMPT:** [prompts/202605/landing_hero_single_column.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/landing_hero_single_column.md)
 
 # Landing Hero Single Column Plan
 

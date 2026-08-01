@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/chats_status_skill_runtime_fallback.md](prompts/chats_status_skill_runtime_fallback.md)
+- **PROMPT:** [prompts/202605/chats_status_skill_runtime_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/chats_status_skill_runtime_fallback.md)
 
 # Plan: Teach `sase_chats` / `sase_agents_status` skills to fall through to live agents and mid-run artifacts
 

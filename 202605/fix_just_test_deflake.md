@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_just_test_deflake.md](prompts/fix_just_test_deflake.md)
+- **PROMPT:** [prompts/202605/fix_just_test_deflake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_just_test_deflake.md)
 
 # Plan: De-flake `fix_just` Test Failures Before Launching Agents
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_status_plan.md](prompts/agent_status_plan.md)
+- **PROMPT:** [prompts/202605/agent_status_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_status_plan.md)
 
 # Plan: Rename Agents-tab PLANNING status to PLAN
 

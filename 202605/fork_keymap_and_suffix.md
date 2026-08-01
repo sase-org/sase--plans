@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fork_keymap_and_suffix.md](prompts/fork_keymap_and_suffix.md)
+- **PROMPT:** [prompts/202605/fork_keymap_and_suffix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fork_keymap_and_suffix.md)
 
 # Plan: Move Agent Forking to `f` and `.f<N>` Names
 

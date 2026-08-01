@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/non_agent_child_model_badges.md](prompts/non_agent_child_model_badges.md)
+- **PROMPT:** [prompts/202605/non_agent_child_model_badges.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/non_agent_child_model_badges.md)
 
 # Plan: Hide Model Metadata And Provider Badges For Non-Agent Workflow Children
 

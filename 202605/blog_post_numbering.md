@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/blog_post_numbering.md](prompts/blog_post_numbering.md)
+- **PROMPT:** [prompts/202605/blog_post_numbering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/blog_post_numbering.md)
 
 # Blog Post Numbering Plan
 

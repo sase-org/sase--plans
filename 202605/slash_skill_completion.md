@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/slash_skill_completion.md](prompts/slash_skill_completion.md)
+- **PROMPT:** [prompts/202605/slash_skill_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/slash_skill_completion.md)
 
 # Plan: restore slash-skill completion in the prompt widget
 

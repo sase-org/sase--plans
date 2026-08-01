@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_index_gc_corruption.md](prompts/agent_index_gc_corruption.md)
+- **PROMPT:** [prompts/202605/agent_index_gc_corruption.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_index_gc_corruption.md)
 
 # Plan: Repair `sase agents index gc` on corrupt artifact index
 

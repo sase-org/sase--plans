@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/default_list_subcommands.md](prompts/default_list_subcommands.md)
+- **PROMPT:** [prompts/202605/default_list_subcommands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/default_list_subcommands.md)
 
 # Default list Subcommands
 

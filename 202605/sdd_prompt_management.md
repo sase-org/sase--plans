@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_prompt_management.md](prompts/sdd_prompt_management.md)
+- **PROMPT:** [prompts/202605/sdd_prompt_management.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_prompt_management.md)
 
 # Plan: SDD Prompt File Management
 

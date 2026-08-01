@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/refresh_docs_validation.md](prompts/refresh_docs_validation.md)
+- **PROMPT:** [prompts/202605/refresh_docs_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/refresh_docs_validation.md)
 
 # Plan: Fix `refresh_docs` Workflow Validation
 

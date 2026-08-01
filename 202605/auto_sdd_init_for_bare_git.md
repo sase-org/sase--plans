@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/auto_sdd_init_for_bare_git.md](prompts/auto_sdd_init_for_bare_git.md)
+- **PROMPT:** [prompts/202605/auto_sdd_init_for_bare_git.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/auto_sdd_init_for_bare_git.md)
 
 # Plan: Auto-Run SDD Init For Bare-Git Repositories
 

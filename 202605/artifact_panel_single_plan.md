@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_panel_single_plan.md](prompts/artifact_panel_single_plan.md)
+- **PROMPT:** [prompts/202605/artifact_panel_single_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_panel_single_plan.md)
 
 # Plan: Single Canonical Plan Artifact in Agent Artifact Panel
 

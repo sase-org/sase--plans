@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_2z_completion.md](prompts/sase_2z_completion.md)
+- **PROMPT:** [prompts/202605/sase_2z_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_2z_completion.md)
 
 # Plan: Complete sase-2z Verification and Hardening
 

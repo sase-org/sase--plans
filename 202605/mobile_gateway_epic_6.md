@@ -6,7 +6,7 @@ create_time: 2026-05-06 18:04:55
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_epic_6.md](prompts/mobile_gateway_epic_6.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_epic_6.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_epic_6.md)
 - **BEAD:** [sase-26.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-26/sase-26.6.md)
 
 # Plan: Mobile MVP Epic 6 - Android Action, Agent, And Helper UX

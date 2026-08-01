@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_fallback_workspace_env.md](prompts/codex_fallback_workspace_env.md)
+- **PROMPT:** [prompts/202605/codex_fallback_workspace_env.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_fallback_workspace_env.md)
 
 # Codex fallback: add workspace-env precedence and richer skip diagnostics
 

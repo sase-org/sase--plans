@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/require_bang_for_multi_agent_xprompts.md](prompts/require_bang_for_multi_agent_xprompts.md)
+- **PROMPT:** [prompts/202605/require_bang_for_multi_agent_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/require_bang_for_multi_agent_xprompts.md)
 
 # Require `#!` for multi-agent Markdown xprompts
 

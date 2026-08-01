@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/retry_suffix_and_keymap.md](prompts/retry_suffix_and_keymap.md)
+- **PROMPT:** [prompts/202605/retry_suffix_and_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/retry_suffix_and_keymap.md)
 
 # Retry Suffix And Keymap Plan
 

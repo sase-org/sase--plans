@@ -4,7 +4,7 @@ status: completed
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/persist_default_artifacts.md](prompts/persist_default_artifacts.md)
+- **PROMPT:** [prompts/202605/persist_default_artifacts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/persist_default_artifacts.md)
 
 # Plan: Persist auto-discovered agent artifacts to `~/.sase/artifacts/`
 

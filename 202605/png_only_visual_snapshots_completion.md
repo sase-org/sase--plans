@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/png_only_visual_snapshots_completion.md](prompts/png_only_visual_snapshots_completion.md)
+- **PROMPT:** [prompts/202605/png_only_visual_snapshots_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/png_only_visual_snapshots_completion.md)
 
 # Complete PNG-only ACE visual snapshots
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_31_close_ace_png_drift.md](prompts/sase_31_close_ace_png_drift.md)
+- **PROMPT:** [prompts/202605/sase_31_close_ace_png_drift.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_31_close_ace_png_drift.md)
 
 # sase-31 Closure: Resolve ACE PNG Snapshot CI-vs-Local Render Drift
 

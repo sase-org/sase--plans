@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/space_keymap_error_toast.md](prompts/space_keymap_error_toast.md)
+- **PROMPT:** [prompts/202605/space_keymap_error_toast.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/space_keymap_error_toast.md)
 
 # Plan: Convert Space Keymap VCS Detection Crash Into TUI Error Toast
 

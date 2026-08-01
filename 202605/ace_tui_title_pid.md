@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ace_tui_title_pid.md](prompts/ace_tui_title_pid.md)
+- **PROMPT:** [prompts/202605/ace_tui_title_pid.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_tui_title_pid.md)
 
 # Plan: Append `(PID: <sase_ace_pid>)` to the `sase ace` TUI title
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/chop_indexed_agent_names.md](prompts/chop_indexed_agent_names.md)
+- **PROMPT:** [prompts/202605/chop_indexed_agent_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/chop_indexed_agent_names.md)
 
 # Plan: Move Chezmoi-Defined Chops to Indexed Agent Names
 

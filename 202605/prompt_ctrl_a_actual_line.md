@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_ctrl_a_actual_line.md](prompts/prompt_ctrl_a_actual_line.md)
+- **PROMPT:** [prompts/202605/prompt_ctrl_a_actual_line.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_ctrl_a_actual_line.md)
 
 # Plan: Prompt Ctrl+A Uses Actual Lines
 

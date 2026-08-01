@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_launch_buttons.md](prompts/telegram_launch_buttons.md)
+- **PROMPT:** [prompts/202605/telegram_launch_buttons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_launch_buttons.md)
 
 # Plan: Restore Telegram Launch Buttons
 

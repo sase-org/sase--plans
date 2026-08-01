@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/episode_v2_explorer.md](prompts/episode_v2_explorer.md)
+- **PROMPT:** [prompts/202605/episode_v2_explorer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/episode_v2_explorer.md)
 - **BEAD:** [sase-48](https://github.com/sase-org/sase--beads/blob/main/pages/sase-48/README.md)
 
 # Plan: Memory Episode V2, Connected Components, And Episode Explorer

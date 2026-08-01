@@ -5,7 +5,7 @@ bead_id: sase-44
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/amd_command.md](prompts/amd_command.md)
+- **PROMPT:** [prompts/202605/amd_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/amd_command.md)
 - **BEAD:** [sase-44](https://github.com/sase-org/sase--beads/blob/main/pages/sase-44/README.md)
 
 # Plan: `sase amd` and Project-Managed AGENTS.md

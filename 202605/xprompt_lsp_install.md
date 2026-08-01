@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_install.md](prompts/xprompt_lsp_install.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_install.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_install.md)
 
 # Plan: Install Fresh `sase-xprompt-lsp` During Local SASE Updates
 

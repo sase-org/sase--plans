@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/init_sdd_alias.md](prompts/init_sdd_alias.md)
+- **PROMPT:** [prompts/202605/init_sdd_alias.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/init_sdd_alias.md)
 
 # Plan: Add `sase init sdd` Alias
 

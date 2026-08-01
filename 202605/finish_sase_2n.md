@@ -5,7 +5,7 @@ bead_id: sase-2q
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/finish_sase_2n.md](prompts/finish_sase_2n.md)
+- **PROMPT:** [prompts/202605/finish_sase_2n.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/finish_sase_2n.md)
 - **BEAD:** [sase-2q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2q/README.md)
 
 # Plan: Finish sase-2n Epic — Validate, E2E Test, and Apply Lumberjack Audit Chops

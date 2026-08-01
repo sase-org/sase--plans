@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_artifacts_metadata_field.md](prompts/agent_artifacts_metadata_field.md)
+- **PROMPT:** [prompts/202605/agent_artifacts_metadata_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_artifacts_metadata_field.md)
 
 # Plan: Fix Agents-Tab ARTIFACTS Metadata Field
 

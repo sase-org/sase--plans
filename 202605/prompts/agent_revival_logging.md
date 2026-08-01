@@ -1,3 +1,0 @@
-- **PLAN:** [../202605/agent_revival_logging.md](../agent_revival_logging.md)
-
- #resume:ks By revive I meant by using the `R` keymap on the agents tab.

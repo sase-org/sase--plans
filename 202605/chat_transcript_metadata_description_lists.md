@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/chat_transcript_metadata_description_lists.md](prompts/chat_transcript_metadata_description_lists.md)
+- **PROMPT:** [prompts/202605/chat_transcript_metadata_description_lists.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/chat_transcript_metadata_description_lists.md)
 
 # Chat Transcript Metadata Description Lists Plan
 

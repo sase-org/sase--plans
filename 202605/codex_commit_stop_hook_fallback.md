@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_commit_stop_hook_fallback.md](prompts/codex_commit_stop_hook_fallback.md)
+- **PROMPT:** [prompts/202605/codex_commit_stop_hook_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_commit_stop_hook_fallback.md)
 
 # Codex Commit Stop Hook Fallback Plan
 

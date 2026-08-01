@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/group_directive_rename_finish.md](prompts/group_directive_rename_finish.md)
+- **PROMPT:** [prompts/202605/group_directive_rename_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/group_directive_rename_finish.md)
 
 # Finish `%tag` → `%group` Directive Rename (Python Side)
 

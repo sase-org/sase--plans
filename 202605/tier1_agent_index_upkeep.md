@@ -5,7 +5,7 @@ bead_id: sase-3u
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/tier1_agent_index_upkeep.md](prompts/tier1_agent_index_upkeep.md)
+- **PROMPT:** [prompts/202605/tier1_agent_index_upkeep.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier1_agent_index_upkeep.md)
 - **BEAD:** [sase-3u](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3u/README.md)
 
 # Keep the Tier 1 Agent Index Current Across Marker Lifecycles

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/memory_read_skill.md](prompts/memory_read_skill.md)
+- **PROMPT:** [prompts/202605/memory_read_skill.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_read_skill.md)
 
 # Plan: SASE Memory Read Skill
 

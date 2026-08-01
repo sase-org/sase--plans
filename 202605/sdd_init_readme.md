@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_init_readme.md](prompts/sdd_init_readme.md)
+- **PROMPT:** [prompts/202605/sdd_init_readme.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_init_readme.md)
 - **COMMITS:**
   - [d19a490](https://github.com/sase-org/sase/commit/d19a4906c258387d273834cdc52429ce7806b9b2) — feat: add sdd init command
 

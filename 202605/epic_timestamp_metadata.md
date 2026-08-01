@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/epic_timestamp_metadata.md](prompts/epic_timestamp_metadata.md)
+- **PROMPT:** [prompts/202605/epic_timestamp_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/epic_timestamp_metadata.md)
 - **COMMITS:**
   - [592cc80](https://github.com/sase-org/sase/commit/592cc80d949320304c696837f0d2fa895443d87d) — feat: show epic approval launch timestamps
 

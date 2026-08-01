@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/live_agent_file_panel_diffs.md](prompts/live_agent_file_panel_diffs.md)
+- **PROMPT:** [prompts/202605/live_agent_file_panel_diffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/live_agent_file_panel_diffs.md)
 
 # Live Agent File Panel Diffs
 

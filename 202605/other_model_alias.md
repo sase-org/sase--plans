@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/other_model_alias.md](prompts/other_model_alias.md)
+- **PROMPT:** [prompts/202605/other_model_alias.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/other_model_alias.md)
 
 # Plan: Configured `other` Model Alias
 

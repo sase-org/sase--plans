@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/datetime_timezone_crash.md](prompts/datetime_timezone_crash.md)
+- **PROMPT:** [prompts/202605/datetime_timezone_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/datetime_timezone_crash.md)
 - **COMMITS:**
   - [4615960](https://github.com/sase-org/sase/commit/4615960b578a556edd0aa4f04f7df809bc88c90a) — fix: handle aware wait timestamps in agents UI
 

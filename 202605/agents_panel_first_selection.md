@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_panel_first_selection.md](prompts/agents_panel_first_selection.md)
+- **PROMPT:** [prompts/202605/agents_panel_first_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_panel_first_selection.md)
 
 # Plan: Agents Panel J/K First Selection
 

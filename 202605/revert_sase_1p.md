@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revert_sase_1p.md](prompts/revert_sase_1p.md)
+- **PROMPT:** [prompts/202605/revert_sase_1p.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revert_sase_1p.md)
 - **COMMITS:**
   - [4c073a0](https://github.com/sase-org/sase/commit/4c073a061fdc2e04dc2a272a4b6d648fe1cf7ccd) — ref: revert agent compose rust migration
 

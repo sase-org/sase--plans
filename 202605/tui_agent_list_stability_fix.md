@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_agent_list_stability_fix.md](prompts/tui_agent_list_stability_fix.md)
+- **PROMPT:** [prompts/202605/tui_agent_list_stability_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_agent_list_stability_fix.md)
 
 # TUI Agent List Stability Fix
 

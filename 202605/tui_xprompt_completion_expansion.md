@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_xprompt_completion_expansion.md](prompts/tui_xprompt_completion_expansion.md)
+- **PROMPT:** [prompts/202605/tui_xprompt_completion_expansion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_xprompt_completion_expansion.md)
 
 # TUI XPrompt Completion Expansion Plan
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_diff_workspace_resolution.md](prompts/tui_diff_workspace_resolution.md)
+- **PROMPT:** [prompts/202605/tui_diff_workspace_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_diff_workspace_resolution.md)
 
 # Plan: Remove workspace materialization from TUI diff rendering
 

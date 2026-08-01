@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tale_done_status.md](prompts/tale_done_status.md)
+- **PROMPT:** [prompts/202605/tale_done_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tale_done_status.md)
 
 # Plan: Add `TALE DONE` agent status
 

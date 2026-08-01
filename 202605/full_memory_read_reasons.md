@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/full_memory_read_reasons.md](prompts/full_memory_read_reasons.md)
+- **PROMPT:** [prompts/202605/full_memory_read_reasons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/full_memory_read_reasons.md)
 
 # Show Full Memory Read Reasons in ACE Agent Metadata
 

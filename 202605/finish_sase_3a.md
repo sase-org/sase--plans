@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/finish_sase_3a.md](prompts/finish_sase_3a.md)
+- **PROMPT:** [prompts/202605/finish_sase_3a.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/finish_sase_3a.md)
 - **BEAD:** [sase-3a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3a/README.md)
 
 # Finish sase-3a Verification Cleanup

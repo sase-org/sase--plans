@@ -5,7 +5,7 @@ bead_id: sase-2n
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/lumberjack_quality_chops.md](prompts/lumberjack_quality_chops.md)
+- **PROMPT:** [prompts/202605/lumberjack_quality_chops.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/lumberjack_quality_chops.md)
 - **BEAD:** [sase-2n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2n/README.md)
 
 # Plan: Add Commit-Threshold Bug and Improvement Lumberjack Chops

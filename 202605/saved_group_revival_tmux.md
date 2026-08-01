@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/saved_group_revival_tmux.md](prompts/saved_group_revival_tmux.md)
+- **PROMPT:** [prompts/202605/saved_group_revival_tmux.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/saved_group_revival_tmux.md)
 
 # Saved Group Revival Tmux E2E Fix Plan
 

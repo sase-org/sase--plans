@@ -5,7 +5,7 @@ status: done
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/sdd_legends_migration_4.md](prompts/sdd_legends_migration_4.md)
+- **PROMPT:** [prompts/202605/sdd_legends_migration_4.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_legends_migration_4.md)
 - **BEAD:** [sase-1x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1x/README.md)
 
 # SDD Directory Migration and Legend Support Plan

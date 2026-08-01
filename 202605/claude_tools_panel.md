@@ -5,7 +5,7 @@ bead_id: sase-3g
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/claude_tools_panel.md](prompts/claude_tools_panel.md)
+- **PROMPT:** [prompts/202605/claude_tools_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/claude_tools_panel.md)
 - **BEAD:** [sase-3g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3g/README.md)
 
 # MVP Tools Panel For Claude

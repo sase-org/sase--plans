@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/new_blog_posts.md](prompts/new_blog_posts.md)
+- **PROMPT:** [prompts/202605/new_blog_posts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/new_blog_posts.md)
 
 # Plan: Add Posts 3–8 to the Agentic Software Engineering Blog Series
 

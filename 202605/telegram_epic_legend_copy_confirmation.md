@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_epic_legend_copy_confirmation.md](prompts/telegram_epic_legend_copy_confirmation.md)
+- **PROMPT:** [prompts/202605/telegram_epic_legend_copy_confirmation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_epic_legend_copy_confirmation.md)
 
 # Telegram Epic And Legend Copy Confirmations
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_root_running_status.md](prompts/agent_root_running_status.md)
+- **PROMPT:** [prompts/202605/agent_root_running_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_root_running_status.md)
 
 # Plan: Keep Root Agent Status Aligned With Active Child
 

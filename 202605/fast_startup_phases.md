@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fast_startup_phases.md](prompts/fast_startup_phases.md)
+- **PROMPT:** [prompts/202605/fast_startup_phases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fast_startup_phases.md)
 
 # Plan: Make Sase Startup Much Faster
 

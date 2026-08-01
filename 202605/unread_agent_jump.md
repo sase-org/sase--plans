@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/unread_agent_jump.md](prompts/unread_agent_jump.md)
+- **PROMPT:** [prompts/202605/unread_agent_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/unread_agent_jump.md)
 
 # Fix `,j` Unread Agent Jump Across Panels
 

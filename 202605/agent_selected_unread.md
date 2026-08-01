@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_selected_unread.md](prompts/agent_selected_unread.md)
+- **PROMPT:** [prompts/202605/agent_selected_unread.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_selected_unread.md)
 
 # Plan: Selected Agent Rows Become Unread Immediately
 

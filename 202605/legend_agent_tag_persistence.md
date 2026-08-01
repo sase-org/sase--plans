@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/legend_agent_tag_persistence.md](prompts/legend_agent_tag_persistence.md)
+- **PROMPT:** [prompts/202605/legend_agent_tag_persistence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/legend_agent_tag_persistence.md)
 
 # Plan: Fix Legend Agent Tag Persistence
 

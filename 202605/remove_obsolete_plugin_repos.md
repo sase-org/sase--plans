@@ -5,7 +5,7 @@ bead_id: sase-2k
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/remove_obsolete_plugin_repos.md](prompts/remove_obsolete_plugin_repos.md)
+- **PROMPT:** [prompts/202605/remove_obsolete_plugin_repos.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_obsolete_plugin_repos.md)
 - **BEAD:** [sase-2k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2k/README.md)
 
 # Remove Obsolete Plugin Repository References

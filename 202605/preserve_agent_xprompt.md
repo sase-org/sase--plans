@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/preserve_agent_xprompt.md](prompts/preserve_agent_xprompt.md)
+- **PROMPT:** [prompts/202605/preserve_agent_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/preserve_agent_xprompt.md)
 
 # Preserve AGENT XPROMPT After Agent Completion
 

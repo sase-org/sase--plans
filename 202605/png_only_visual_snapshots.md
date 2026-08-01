@@ -6,7 +6,7 @@ create_time: 2026-05-10 01:05:51
 status: done
 ---
 
-- **PROMPT:** [202605/prompts/png_only_visual_snapshots.md](prompts/png_only_visual_snapshots.md)
+- **PROMPT:** [prompts/202605/png_only_visual_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/png_only_visual_snapshots.md)
 - **BEAD:** [sase-2p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2p/README.md)
 
 # PNG-only ACE visual snapshots

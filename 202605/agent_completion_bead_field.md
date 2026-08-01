@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_completion_bead_field.md](prompts/agent_completion_bead_field.md)
+- **PROMPT:** [prompts/202605/agent_completion_bead_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_completion_bead_field.md)
 
 # Plan: Add `Bead:` to Telegram and Google Chat agent completion messages
 

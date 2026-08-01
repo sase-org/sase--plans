@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tier1_agent_index_upkeep_deep_audit.md](prompts/tier1_agent_index_upkeep_deep_audit.md)
+- **PROMPT:** [prompts/202605/tier1_agent_index_upkeep_deep_audit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier1_agent_index_upkeep_deep_audit.md)
 
 # Tier 1 Agent Index Upkeep Deep Audit Plan
 

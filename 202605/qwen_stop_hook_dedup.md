@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/qwen_stop_hook_dedup.md](prompts/qwen_stop_hook_dedup.md)
+- **PROMPT:** [prompts/202605/qwen_stop_hook_dedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen_stop_hook_dedup.md)
 
 # Plan: Fix Qwen commit stop-hook deduplication
 

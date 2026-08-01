@@ -4,7 +4,7 @@ status: completed
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dismiss_freeze.md](prompts/dismiss_freeze.md)
+- **PROMPT:** [prompts/202605/dismiss_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dismiss_freeze.md)
 
 # Plan: Fix TUI Freeze When Dismissing Agents
 

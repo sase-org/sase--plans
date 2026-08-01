@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/live_agent_chat_skill_followups.md](prompts/live_agent_chat_skill_followups.md)
+- **PROMPT:** [prompts/202605/live_agent_chat_skill_followups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/live_agent_chat_skill_followups.md)
 
 # Live Agent Chat Skill Followups
 

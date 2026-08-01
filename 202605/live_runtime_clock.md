@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/live_runtime_clock.md](prompts/live_runtime_clock.md)
+- **PROMPT:** [prompts/202605/live_runtime_clock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/live_runtime_clock.md)
 
 # Live Runtime Clock Marker Plan
 

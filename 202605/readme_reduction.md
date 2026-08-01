@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/readme_reduction.md](prompts/readme_reduction.md)
+- **PROMPT:** [prompts/202605/readme_reduction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/readme_reduction.md)
 
 # Plan: Reduce README to a concise project front door
 

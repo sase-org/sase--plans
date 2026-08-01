@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/commit_finalizer_cross_workspace.md](prompts/commit_finalizer_cross_workspace.md)
+- **PROMPT:** [prompts/202605/commit_finalizer_cross_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/commit_finalizer_cross_workspace.md)
 
 # Plan: Commit Finalizer Cross-Workspace Dirty State
 

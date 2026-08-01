@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_tag_relative_paths.md](prompts/plan_tag_relative_paths.md)
+- **PROMPT:** [prompts/202605/plan_tag_relative_paths.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_tag_relative_paths.md)
 
 # Plan: Keep Plan References Repo-Relative
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_2g_deployment_finish.md](prompts/sase_2g_deployment_finish.md)
+- **PROMPT:** [prompts/202605/sase_2g_deployment_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_2g_deployment_finish.md)
 
 # Finish sase-2g Deployment Verification
 

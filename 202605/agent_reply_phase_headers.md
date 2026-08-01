@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_reply_phase_headers.md](prompts/agent_reply_phase_headers.md)
+- **PROMPT:** [prompts/202605/agent_reply_phase_headers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_reply_phase_headers.md)
 
 # Fix Agent Reply Phase Headers After Agent Families
 

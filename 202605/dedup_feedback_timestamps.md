@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dedup_feedback_timestamps.md](prompts/dedup_feedback_timestamps.md)
+- **PROMPT:** [prompts/202605/dedup_feedback_timestamps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dedup_feedback_timestamps.md)
 
 # Deduplicate Plan-Chain Timestamp Aggregation
 

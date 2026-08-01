@@ -5,7 +5,7 @@ create_time: 2026-05-10 13:15:22
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/link_to_sase_sh.md](prompts/link_to_sase_sh.md)
+- **PROMPT:** [prompts/202605/link_to_sase_sh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/link_to_sase_sh.md)
 
 # Plan: Make repo documentation point to sase.sh in appropriate places
 

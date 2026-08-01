@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/refresh_docs_polish_daemon_agents.md](prompts/refresh_docs_polish_daemon_agents.md)
+- **PROMPT:** [prompts/202605/refresh_docs_polish_daemon_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/refresh_docs_polish_daemon_agents.md)
 
 # Plan: Refresh Docs Polish Daemon Agent
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tier1_index_meta_staleness.md](prompts/tier1_index_meta_staleness.md)
+- **PROMPT:** [prompts/202605/tier1_index_meta_staleness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier1_index_meta_staleness.md)
 
 # Fix: Tier 1 Fast Reload Doesn't Pick Up agent_meta.json Timestamp Updates
 

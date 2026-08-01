@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/vcs_replayable_selection.md](prompts/vcs_replayable_selection.md)
+- **PROMPT:** [prompts/202605/vcs_replayable_selection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/vcs_replayable_selection.md)
 
 # Plan: Prevent Non-Launchable VCS Refs From Becoming Replay State
 

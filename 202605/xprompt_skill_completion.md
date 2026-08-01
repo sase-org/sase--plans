@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_skill_completion.md](prompts/xprompt_skill_completion.md)
+- **PROMPT:** [prompts/202605/xprompt_skill_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_skill_completion.md)
 
 # Add Prompt Input Ctrl+T Completion for XPrompt Skills
 

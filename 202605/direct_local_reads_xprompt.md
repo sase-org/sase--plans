@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/direct_local_reads_xprompt.md](prompts/direct_local_reads_xprompt.md)
+- **PROMPT:** [prompts/202605/direct_local_reads_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/direct_local_reads_xprompt.md)
 
 # Plan: Direct Local Helper Calls in `xprompts/reads.md`
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_cleanup_tag_scope.md](prompts/agent_cleanup_tag_scope.md)
+- **PROMPT:** [prompts/202605/agent_cleanup_tag_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_cleanup_tag_scope.md)
 
 # Agent Cleanup Tag Scope Plan
 

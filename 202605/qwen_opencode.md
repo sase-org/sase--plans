@@ -5,7 +5,7 @@ bead_id: sase-29
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/qwen_opencode.md](prompts/qwen_opencode.md)
+- **PROMPT:** [prompts/202605/qwen_opencode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/qwen_opencode.md)
 - **BEAD:** [sase-29](https://github.com/sase-org/sase--beads/blob/main/pages/sase-29/README.md)
 
 # Add Qwen CLI and OpenCode LLM Providers

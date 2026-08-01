@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/wait_all_epic_phase_agents.md](prompts/wait_all_epic_phase_agents.md)
+- **PROMPT:** [prompts/202605/wait_all_epic_phase_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/wait_all_epic_phase_agents.md)
 
 # Wait for All Epic Phase Agents
 

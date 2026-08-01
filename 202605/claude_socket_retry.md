@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/claude_socket_retry.md](prompts/claude_socket_retry.md)
+- **PROMPT:** [prompts/202605/claude_socket_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/claude_socket_retry.md)
 
 # Plan: Retry Claude Socket Closure Failures
 

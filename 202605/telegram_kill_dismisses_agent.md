@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_kill_dismisses_agent.md](prompts/telegram_kill_dismisses_agent.md)
+- **PROMPT:** [prompts/202605/telegram_kill_dismisses_agent.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_kill_dismisses_agent.md)
 
 # Telegram "Kill" button: dismiss the killed agent so it doesn't reappear as FAILED
 

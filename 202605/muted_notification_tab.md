@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/muted_notification_tab.md](prompts/muted_notification_tab.md)
+- **PROMPT:** [prompts/202605/muted_notification_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/muted_notification_tab.md)
 
 # Plan: Add a Muted tab to the notification modal
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/default_xprompts_dir.md](prompts/default_xprompts_dir.md)
+- **PROMPT:** [prompts/202605/default_xprompts_dir.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/default_xprompts_dir.md)
 
 # Default XPrompts Directory
 

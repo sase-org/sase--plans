@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bead_closed_list_fix.md](prompts/bead_closed_list_fix.md)
+- **PROMPT:** [prompts/202605/bead_closed_list_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_closed_list_fix.md)
 
 # Fix `sase bead list -s closed` Reading Empty Legacy Store
 

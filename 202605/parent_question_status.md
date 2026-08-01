@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/parent_question_status.md](prompts/parent_question_status.md)
+- **PROMPT:** [prompts/202605/parent_question_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/parent_question_status.md)
 
 # Plan: Propagate `QUESTION` from follow-up child to parent workflow
 

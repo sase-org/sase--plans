@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/memory_read_home_search.md](prompts/memory_read_home_search.md)
+- **PROMPT:** [prompts/202605/memory_read_home_search.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_read_home_search.md)
 
 # Plan: Search Project and Home Memory for `sase memory read`
 

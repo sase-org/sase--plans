@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pillow_only_image_rendering.md](prompts/pillow_only_image_rendering.md)
+- **PROMPT:** [prompts/202605/pillow_only_image_rendering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pillow_only_image_rendering.md)
 
 # Remove Native Terminal Image Rendering
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_family_dotted_grouping.md](prompts/agent_family_dotted_grouping.md)
+- **PROMPT:** [prompts/202605/agent_family_dotted_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_family_dotted_grouping.md)
 
 # Plan: Fix Dotted Agent-Family Grouping In Agents Tab
 

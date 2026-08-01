@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_pane_focus_keymap.md](prompts/artifact_pane_focus_keymap.md)
+- **PROMPT:** [prompts/202605/artifact_pane_focus_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_pane_focus_keymap.md)
 
 # Artifact Pane Focus Keymap Plan
 

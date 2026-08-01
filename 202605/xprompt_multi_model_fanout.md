@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_multi_model_fanout.md](prompts/xprompt_multi_model_fanout.md)
+- **PROMPT:** [prompts/202605/xprompt_multi_model_fanout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_multi_model_fanout.md)
 
 # Multi-model fan-out broken for xprompt-wrapped `%model` directives
 

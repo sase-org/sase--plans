@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/migrate_sdd_specs_plans.md](prompts/migrate_sdd_specs_plans.md)
+- **PROMPT:** [prompts/202605/migrate_sdd_specs_plans.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/migrate_sdd_specs_plans.md)
 
 # Plan: Migrate Remaining SDD Specs And Plans
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/epic_status.md](prompts/epic_status.md)
+- **PROMPT:** [prompts/202605/epic_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/epic_status.md)
 
 # Plan: Keep `%epic` Plan Writers Running Until a Plan Is Submitted
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/unread_jump_ack.md](prompts/unread_jump_ack.md)
+- **PROMPT:** [prompts/202605/unread_jump_ack.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/unread_jump_ack.md)
 
 # Plan: Acknowledge unread agent on leader jump
 

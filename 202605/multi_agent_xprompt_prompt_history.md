@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/multi_agent_xprompt_prompt_history.md](prompts/multi_agent_xprompt_prompt_history.md)
+- **PROMPT:** [prompts/202605/multi_agent_xprompt_prompt_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/multi_agent_xprompt_prompt_history.md)
 
 # Multi-Agent XPrompt Prompt History Plan
 

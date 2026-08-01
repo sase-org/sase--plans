@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/move_sase_beads_to_sdd_beads.md](prompts/move_sase_beads_to_sdd_beads.md)
+- **PROMPT:** [prompts/202605/move_sase_beads_to_sdd_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/move_sase_beads_to_sdd_beads.md)
 - **COMMITS:**
   - [8444bb8](https://github.com/sase-org/sase/commit/8444bb8b7dcb3f615030e2b95f6b4b7b36c86a18) — ref: move versioned bead storage to sdd/beads
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_pane_tab_keymap.md](prompts/artifact_pane_tab_keymap.md)
+- **PROMPT:** [prompts/202605/artifact_pane_tab_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_pane_tab_keymap.md)
 
 # Artifact Pane Tab Keymap Plan
 

@@ -5,7 +5,7 @@ bead_id: sase-2g
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/sase_sh_mkdocs_polish.md](prompts/sase_sh_mkdocs_polish.md)
+- **PROMPT:** [prompts/202605/sase_sh_mkdocs_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_sh_mkdocs_polish.md)
 - **BEAD:** [sase-2g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2g/README.md)
 
 # SASE.sh MkDocs Polish Plan

@@ -5,7 +5,7 @@ bead_id: sase-43
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/notification_tags.md](prompts/notification_tags.md)
+- **PROMPT:** [prompts/202605/notification_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_tags.md)
 - **BEAD:** [sase-43](https://github.com/sase-org/sase--beads/blob/main/pages/sase-43/README.md)
 
 # Plan: Notification Tags + TUI Tag Tabs

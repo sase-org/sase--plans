@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sdd_validate_whitelist.md](prompts/sdd_validate_whitelist.md)
+- **PROMPT:** [prompts/202605/sdd_validate_whitelist.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sdd_validate_whitelist.md)
 
 # Plan: SDD Validate Legacy Error Whitelist
 

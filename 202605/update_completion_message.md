@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/update_completion_message.md](prompts/update_completion_message.md)
+- **PROMPT:** [prompts/202605/update_completion_message.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/update_completion_message.md)
 
 # Plan: Send Chat Update Completion Messages
 

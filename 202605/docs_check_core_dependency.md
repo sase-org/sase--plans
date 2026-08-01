@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/docs_check_core_dependency.md](prompts/docs_check_core_dependency.md)
+- **PROMPT:** [prompts/202605/docs_check_core_dependency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/docs_check_core_dependency.md)
 
 # Fix GitHub Actions `docs-check` dependency resolution
 

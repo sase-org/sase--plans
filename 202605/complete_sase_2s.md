@@ -4,7 +4,7 @@ status: open
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/complete_sase_2s.md](prompts/complete_sase_2s.md)
+- **PROMPT:** [prompts/202605/complete_sase_2s.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/complete_sase_2s.md)
 
 # Plan: Complete the sase-2s diagram-review epic
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_slash_skill_completion.md](prompts/nvim_slash_skill_completion.md)
+- **PROMPT:** [prompts/202605/nvim_slash_skill_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_slash_skill_completion.md)
 
 # Add Slash Skill Completion to sase-nvim
 

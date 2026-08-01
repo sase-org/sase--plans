@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_just_install_bootstrap.md](prompts/fix_just_install_bootstrap.md)
+- **PROMPT:** [prompts/202605/fix_just_install_bootstrap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_just_install_bootstrap.md)
 
 # Plan: Bootstrap `fix_just` with `just install`
 

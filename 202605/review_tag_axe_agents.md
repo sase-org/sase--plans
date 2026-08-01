@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/review_tag_axe_agents.md](prompts/review_tag_axe_agents.md)
+- **PROMPT:** [prompts/202605/review_tag_axe_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/review_tag_axe_agents.md)
 
 # Review-Tagged Axe Agents Plan
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sidebar_blog_reorder_labels.md](prompts/sidebar_blog_reorder_labels.md)
+- **PROMPT:** [prompts/202605/sidebar_blog_reorder_labels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sidebar_blog_reorder_labels.md)
 
 # Plan: Move Blog Sidebar Section And Rename Docs Groups
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_lsp_plugin_catalog.md](prompts/xprompt_lsp_plugin_catalog.md)
+- **PROMPT:** [prompts/202605/xprompt_lsp_plugin_catalog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_lsp_plugin_catalog.md)
 
 # Plan: Include Plugin XPrompts in the XPrompt LSP Catalog
 

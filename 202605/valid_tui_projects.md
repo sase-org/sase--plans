@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/valid_tui_projects.md](prompts/valid_tui_projects.md)
+- **PROMPT:** [prompts/202605/valid_tui_projects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/valid_tui_projects.md)
 
 # Plan: Show Only Valid Projects in TUI Project Pickers
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/hitl_agent_count_text.md](prompts/hitl_agent_count_text.md)
+- **PROMPT:** [prompts/202605/hitl_agent_count_text.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/hitl_agent_count_text.md)
 
 # Plan: Rename Asking Agent Count Text To HITL
 

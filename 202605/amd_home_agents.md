@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/amd_home_agents.md](prompts/amd_home_agents.md)
+- **PROMPT:** [prompts/202605/amd_home_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/amd_home_agents.md)
 
 # Manage Home AGENTS.md With AMD
 

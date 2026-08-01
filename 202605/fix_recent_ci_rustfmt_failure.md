@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_recent_ci_rustfmt_failure.md](prompts/fix_recent_ci_rustfmt_failure.md)
+- **PROMPT:** [prompts/202605/fix_recent_ci_rustfmt_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_recent_ci_rustfmt_failure.md)
 - **COMMITS:**
   - [7bb5848](https://github.com/sase-org/sase/commit/7bb5848fe7ef94497dd102324876352d64a216e7) — chore: mark rustfmt CI plan done
 

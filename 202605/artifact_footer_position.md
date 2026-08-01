@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_footer_position.md](prompts/artifact_footer_position.md)
+- **PROMPT:** [prompts/202605/artifact_footer_position.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_footer_position.md)
 
 # Plan: Keep Artifact Viewer Footer Below The Rendered Page
 

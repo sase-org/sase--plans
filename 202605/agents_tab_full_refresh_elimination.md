@@ -5,7 +5,7 @@ bead_id: sase-3t
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/agents_tab_full_refresh_elimination.md](prompts/agents_tab_full_refresh_elimination.md)
+- **PROMPT:** [prompts/202605/agents_tab_full_refresh_elimination.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_tab_full_refresh_elimination.md)
 - **BEAD:** [sase-3t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3t/README.md)
 
 # Plan: Eliminate Routine Full Refreshes For ACE Agents Tab

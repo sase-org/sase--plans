@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/png_snapshot_ci_tolerance.md](prompts/png_snapshot_ci_tolerance.md)
+- **PROMPT:** [prompts/202605/png_snapshot_ci_tolerance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/png_snapshot_ci_tolerance.md)
 
 # Allow Small PNG Snapshot Diffs In GitHub Actions
 

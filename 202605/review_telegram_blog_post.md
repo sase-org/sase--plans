@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/review_telegram_blog_post.md](prompts/review_telegram_blog_post.md)
+- **PROMPT:** [prompts/202605/review_telegram_blog_post.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/review_telegram_blog_post.md)
 
 # Plan: Review and polish the Telegram mobile blog insertion
 

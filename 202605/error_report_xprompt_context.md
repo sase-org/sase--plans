@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/error_report_xprompt_context.md](prompts/error_report_xprompt_context.md)
+- **PROMPT:** [prompts/202605/error_report_xprompt_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/error_report_xprompt_context.md)
 
 # Plan: Add Submitted XPrompt Context to Agent Error Reports
 

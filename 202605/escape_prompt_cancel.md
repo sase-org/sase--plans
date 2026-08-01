@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/escape_prompt_cancel.md](prompts/escape_prompt_cancel.md)
+- **PROMPT:** [prompts/202605/escape_prompt_cancel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/escape_prompt_cancel.md)
 
 # Plan: Make Prompt Escape Non-Cancelling
 

@@ -5,7 +5,7 @@ bead_id: sase-3x
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/init_memory.md](prompts/init_memory.md)
+- **PROMPT:** [prompts/202605/init_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/init_memory.md)
 - **BEAD:** [sase-3x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-3x/README.md)
 
 # Plan: `sase init memory`

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/auto_commit_type_tags.md](prompts/auto_commit_type_tags.md)
+- **PROMPT:** [prompts/202605/auto_commit_type_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/auto_commit_type_tags.md)
 
 # Plan: Auto-Commit TYPE Tags
 

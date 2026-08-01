@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bead_work_force_reuse_names.md](prompts/bead_work_force_reuse_names.md)
+- **PROMPT:** [prompts/202605/bead_work_force_reuse_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_work_force_reuse_names.md)
 
 # Plan: `sase bead work` agent prompts use `%name:!` (forced-reuse) directives
 

@@ -5,7 +5,7 @@ bead_id: sase-2z
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/last_workflow_set_status_tool.md](prompts/last_workflow_set_status_tool.md)
+- **PROMPT:** [prompts/202605/last_workflow_set_status_tool.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/last_workflow_set_status_tool.md)
 - **BEAD:** [sase-2z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2z/README.md)
 
 # Plan: Last GitHub Workflow Set Status Tool

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/review_prompt_widget_blog.md](prompts/review_prompt_widget_blog.md)
+- **PROMPT:** [prompts/202605/review_prompt_widget_blog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/review_prompt_widget_blog.md)
 
 # Plan: Review Prompt Widget Blog Post Follow-up
 

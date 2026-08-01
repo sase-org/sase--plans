@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/git_xprompt_auto_init.md](prompts/git_xprompt_auto_init.md)
+- **PROMPT:** [prompts/202605/git_xprompt_auto_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/git_xprompt_auto_init.md)
 
 # Plan: Auto-Initialize Bare Git Projects From `#git:<project>`
 

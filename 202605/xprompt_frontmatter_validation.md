@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/xprompt_frontmatter_validation.md](prompts/xprompt_frontmatter_validation.md)
+- **PROMPT:** [prompts/202605/xprompt_frontmatter_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/xprompt_frontmatter_validation.md)
 
 # XPrompt Frontmatter Validation Plan
 

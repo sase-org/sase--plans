@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/active_runtime_parent_rows.md](prompts/active_runtime_parent_rows.md)
+- **PROMPT:** [prompts/202605/active_runtime_parent_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/active_runtime_parent_rows.md)
 
 # Plan: Tick Runtime Suffixes For Active Parent Agent Rows
 

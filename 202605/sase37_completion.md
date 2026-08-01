@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase37_completion.md](prompts/sase37_completion.md)
+- **PROMPT:** [prompts/202605/sase37_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase37_completion.md)
 
 # Complete sase-37 Archive Verification
 

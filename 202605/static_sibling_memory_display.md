@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/static_sibling_memory_display.md](prompts/static_sibling_memory_display.md)
+- **PROMPT:** [prompts/202605/static_sibling_memory_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/static_sibling_memory_display.md)
 
 # Plan: Inline Static Sibling Paths in Generated Memory
 

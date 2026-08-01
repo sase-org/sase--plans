@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_retired_chat_plugin_sdd_links.md](prompts/fix_retired_chat_plugin_sdd_links.md)
+- **PROMPT:** [prompts/202605/fix_retired_chat_plugin_sdd_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_retired_chat_plugin_sdd_links.md)
 
 # Plan: Fix retired_chat_plugin SDD Link Validation
 

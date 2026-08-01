@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/image_rendering.md](prompts/image_rendering.md)
+- **PROMPT:** [prompts/202605/image_rendering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/image_rendering.md)
 
 # Improve SASE Image Rendering
 

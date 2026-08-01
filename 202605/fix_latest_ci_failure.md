@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_latest_ci_failure.md](prompts/fix_latest_ci_failure.md)
+- **PROMPT:** [prompts/202605/fix_latest_ci_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_latest_ci_failure.md)
 - **COMMITS:**
   - [570d5cf](https://github.com/sase-org/sase/commit/570d5cf13323c4a30d3cda696a4eafa60f923375) — fix: harden phase7 modal perf floor
 

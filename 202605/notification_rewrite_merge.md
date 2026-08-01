@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_rewrite_merge.md](prompts/notification_rewrite_merge.md)
+- **PROMPT:** [prompts/202605/notification_rewrite_merge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_rewrite_merge.md)
 
 # Fix flaky `notification_append_plus_rewrite_counts_concurrency_preserves_valid_rows`
 

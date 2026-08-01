@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_review_approve_keymap.md](prompts/plan_review_approve_keymap.md)
+- **PROMPT:** [prompts/202605/plan_review_approve_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_review_approve_keymap.md)
 
 # Plan: Plan Review Approve/Tale Keymaps
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_30_completion_unread_contract.md](prompts/sase_30_completion_unread_contract.md)
+- **PROMPT:** [prompts/202605/sase_30_completion_unread_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_30_completion_unread_contract.md)
 
 # Remaining Work Plan: sase-30 Completion Notification Unread Contract
 

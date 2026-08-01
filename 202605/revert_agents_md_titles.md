@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revert_agents_md_titles.md](prompts/revert_agents_md_titles.md)
+- **PROMPT:** [prompts/202605/revert_agents_md_titles.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revert_agents_md_titles.md)
 
 # Revert AMD-Generated AGENTS.md Memory Titles
 

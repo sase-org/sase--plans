@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tale_approved_status_reconstruction.md](prompts/tale_approved_status_reconstruction.md)
+- **PROMPT:** [prompts/202605/tale_approved_status_reconstruction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tale_approved_status_reconstruction.md)
 
 # Plan: Preserve Tale Approval Status During Code Handoff
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/codex_tools_panel.md](prompts/codex_tools_panel.md)
+- **PROMPT:** [prompts/202605/codex_tools_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/codex_tools_panel.md)
 
 # Plan: Add Codex Support To The Agents Tools Panel
 

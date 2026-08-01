@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tmux_artifact_pane.md](prompts/tmux_artifact_pane.md)
+- **PROMPT:** [prompts/202605/tmux_artifact_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tmux_artifact_pane.md)
 
 # Plan: Open Agent Artifacts In A Tmux Side Pane
 

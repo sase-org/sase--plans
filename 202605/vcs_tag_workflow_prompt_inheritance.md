@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/vcs_tag_workflow_prompt_inheritance.md](prompts/vcs_tag_workflow_prompt_inheritance.md)
+- **PROMPT:** [prompts/202605/vcs_tag_workflow_prompt_inheritance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/vcs_tag_workflow_prompt_inheritance.md)
 
 # Preserve VCS workflow tags through workflow prompt execution
 

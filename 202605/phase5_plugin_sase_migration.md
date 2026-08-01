@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/phase5_plugin_sase_migration.md](prompts/phase5_plugin_sase_migration.md)
+- **PROMPT:** [prompts/202605/phase5_plugin_sase_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/phase5_plugin_sase_migration.md)
 
 # Phase 5 Re-Do: Maintained Plugin `.gp` → `.sase` Migration
 

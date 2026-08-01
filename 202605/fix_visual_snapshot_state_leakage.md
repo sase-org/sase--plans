@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_visual_snapshot_state_leakage.md](prompts/fix_visual_snapshot_state_leakage.md)
+- **PROMPT:** [prompts/202605/fix_visual_snapshot_state_leakage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_visual_snapshot_state_leakage.md)
 
 # Plan: Fix ACE PNG visual snapshot state leakage in CI
 

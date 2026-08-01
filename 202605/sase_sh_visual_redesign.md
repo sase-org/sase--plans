@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_sh_visual_redesign.md](prompts/sase_sh_visual_redesign.md)
+- **PROMPT:** [prompts/202605/sase_sh_visual_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_sh_visual_redesign.md)
 
 # SASE Plan: sase.sh Cosmetic Redesign
 

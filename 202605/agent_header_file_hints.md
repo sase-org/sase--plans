@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_header_file_hints.md](prompts/agent_header_file_hints.md)
+- **PROMPT:** [prompts/202605/agent_header_file_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_header_file_hints.md)
 
 # Plan: Agent Header File Hints
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/runtime_suffix_row_ownership.md](prompts/runtime_suffix_row_ownership.md)
+- **PROMPT:** [prompts/202605/runtime_suffix_row_ownership.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/runtime_suffix_row_ownership.md)
 
 # Plan: Runtime Suffix Row Ownership Correction
 

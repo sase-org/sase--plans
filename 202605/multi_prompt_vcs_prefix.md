@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/multi_prompt_vcs_prefix.md](prompts/multi_prompt_vcs_prefix.md)
+- **PROMPT:** [prompts/202605/multi_prompt_vcs_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/multi_prompt_vcs_prefix.md)
 
 # Plan: Preserve VCS Prefixes For Multi-Agent Markdown XPrompts
 

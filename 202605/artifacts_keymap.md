@@ -5,7 +5,7 @@ bead_id: sase-2c
 tier: epic
 ---
 
-- **PROMPT:** [202605/prompts/artifacts_keymap.md](prompts/artifacts_keymap.md)
+- **PROMPT:** [prompts/202605/artifacts_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifacts_keymap.md)
 - **BEAD:** [sase-2c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-2c/README.md)
 
 # Generalize Agents Tab Artifact Viewing

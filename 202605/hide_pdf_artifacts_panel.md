@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/hide_pdf_artifacts_panel.md](prompts/hide_pdf_artifacts_panel.md)
+- **PROMPT:** [prompts/202605/hide_pdf_artifacts_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/hide_pdf_artifacts_panel.md)
 
 # Hide PDF Artifacts From ACE Artifacts Panel
 

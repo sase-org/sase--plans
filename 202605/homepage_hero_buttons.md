@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/homepage_hero_buttons.md](prompts/homepage_hero_buttons.md)
+- **PROMPT:** [prompts/202605/homepage_hero_buttons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/homepage_hero_buttons.md)
 
 # Plan: Reduce Homepage Hero Buttons
 

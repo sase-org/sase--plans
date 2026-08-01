@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_3c_completion.md](prompts/sase_3c_completion.md)
+- **PROMPT:** [prompts/202605/sase_3c_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_3c_completion.md)
 
 Plan: Complete sase-3c verification and closure
 

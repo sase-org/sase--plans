@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_total_count_emphasis.md](prompts/agent_total_count_emphasis.md)
+- **PROMPT:** [prompts/202605/agent_total_count_emphasis.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_total_count_emphasis.md)
 
 # Plan: Make the total agent count in the Agents tab stand out
 

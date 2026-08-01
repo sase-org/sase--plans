@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/commit_finalizer_closeout.md](prompts/commit_finalizer_closeout.md)
+- **PROMPT:** [prompts/202605/commit_finalizer_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/commit_finalizer_closeout.md)
 
 # Plan: Commit Finalizer Closeout Verification
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_panel_highlight_reset.md](prompts/agent_panel_highlight_reset.md)
+- **PROMPT:** [prompts/202605/agent_panel_highlight_reset.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_panel_highlight_reset.md)
 
 # Stop stale row highlight after dynamic agent panel switches
 

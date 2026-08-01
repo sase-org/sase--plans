@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/remove_test_targets_changespec_field.md](prompts/remove_test_targets_changespec_field.md)
+- **PROMPT:** [prompts/202605/remove_test_targets_changespec_field.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/remove_test_targets_changespec_field.md)
 
 # Remove Obsolete ChangeSpec TEST TARGETS Field
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_tab_agent_explosion.md](prompts/agents_tab_agent_explosion.md)
+- **PROMPT:** [prompts/202605/agents_tab_agent_explosion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_tab_agent_explosion.md)
 - **COMMITS:**
   - [df43475](https://github.com/sase-org/sase/commit/df4347527523ded6ce859401e1770b847e13a3b2) — fix: hide completed agents from active agents tab
 

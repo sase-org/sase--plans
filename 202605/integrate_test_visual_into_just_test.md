@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/integrate_test_visual_into_just_test.md](prompts/integrate_test_visual_into_just_test.md)
+- **PROMPT:** [prompts/202605/integrate_test_visual_into_just_test.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/integrate_test_visual_into_just_test.md)
 
 # Plan: Integrate `test-visual` into `just test`
 

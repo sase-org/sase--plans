@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_back_jump_sources.md](prompts/agents_back_jump_sources.md)
+- **PROMPT:** [prompts/202605/agents_back_jump_sources.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_back_jump_sources.md)
 
 # Agents Back-Jump Sources Plan
 

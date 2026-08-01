@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_timestamps_refresh.md](prompts/agent_timestamps_refresh.md)
+- **PROMPT:** [prompts/202605/agent_timestamps_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_timestamps_refresh.md)
 
 # Fix Agents Tab Timestamp Loss on Refresh
 

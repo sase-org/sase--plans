@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/view_image_keymap.md](prompts/view_image_keymap.md)
+- **PROMPT:** [prompts/202605/view_image_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/view_image_keymap.md)
 
 # Add `V` View Image Keymap
 

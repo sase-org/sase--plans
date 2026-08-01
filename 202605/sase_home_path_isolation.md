@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sase_home_path_isolation.md](prompts/sase_home_path_isolation.md)
+- **PROMPT:** [prompts/202605/sase_home_path_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sase_home_path_isolation.md)
 
 # Fix SASE Home Path Isolation
 

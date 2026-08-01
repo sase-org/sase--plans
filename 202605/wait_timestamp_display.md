@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/wait_timestamp_display.md](prompts/wait_timestamp_display.md)
+- **PROMPT:** [prompts/202605/wait_timestamp_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/wait_timestamp_display.md)
 
 # WAIT Timestamp Display Plan
 

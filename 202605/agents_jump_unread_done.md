@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_jump_unread_done.md](prompts/agents_jump_unread_done.md)
+- **PROMPT:** [prompts/202605/agents_jump_unread_done.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_jump_unread_done.md)
 
 # Plan: Add `,j` jump to next unread done agent
 

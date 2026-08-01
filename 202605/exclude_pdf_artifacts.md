@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/exclude_pdf_artifacts.md](prompts/exclude_pdf_artifacts.md)
+- **PROMPT:** [prompts/202605/exclude_pdf_artifacts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/exclude_pdf_artifacts.md)
 
 # Plan: Exclude PDFs from Agents-Tab ARTIFACTS Field
 

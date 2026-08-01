@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_telescope_preview_newlines.md](prompts/nvim_telescope_preview_newlines.md)
+- **PROMPT:** [prompts/202605/nvim_telescope_preview_newlines.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_telescope_preview_newlines.md)
 
 # Fix Neovim Telescope xprompt preview newline crash
 

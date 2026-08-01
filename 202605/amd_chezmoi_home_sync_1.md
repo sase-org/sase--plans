@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/amd_chezmoi_home_sync_1.md](prompts/amd_chezmoi_home_sync_1.md)
+- **PROMPT:** [prompts/202605/amd_chezmoi_home_sync_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/amd_chezmoi_home_sync_1.md)
 
 # Plan: Sync Chezmoi Home AGENTS From `sase amd init`
 

@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tmux_pdf_width.md](prompts/tmux_pdf_width.md)
+- **PROMPT:** [prompts/202605/tmux_pdf_width.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tmux_pdf_width.md)
 
 # Plan: Make Markdown Artifact PDFs Fit The Tmux Pane
 

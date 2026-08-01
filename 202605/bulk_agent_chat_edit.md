@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bulk_agent_chat_edit.md](prompts/bulk_agent_chat_edit.md)
+- **PROMPT:** [prompts/202605/bulk_agent_chat_edit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bulk_agent_chat_edit.md)
 
 # Bulk Edit Marked Agent Chats
 

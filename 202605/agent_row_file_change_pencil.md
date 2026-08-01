@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_row_file_change_pencil.md](prompts/agent_row_file_change_pencil.md)
+- **PROMPT:** [prompts/202605/agent_row_file_change_pencil.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_row_file_change_pencil.md)
 
 # Agent Row File-Change Pencil Plan
 

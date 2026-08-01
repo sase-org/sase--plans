@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/move_research_to_sdd.md](prompts/move_research_to_sdd.md)
+- **PROMPT:** [prompts/202605/move_research_to_sdd.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/move_research_to_sdd.md)
 
 # Move root-level research under sdd/
 

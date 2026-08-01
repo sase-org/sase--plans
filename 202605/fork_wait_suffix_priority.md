@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fork_wait_suffix_priority.md](prompts/fork_wait_suffix_priority.md)
+- **PROMPT:** [prompts/202605/fork_wait_suffix_priority.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fork_wait_suffix_priority.md)
 
 # Fork/Wait Suffix Priority Plan
 

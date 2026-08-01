@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/mobile_gateway_notification_state_routes.md](prompts/mobile_gateway_notification_state_routes.md)
+- **PROMPT:** [prompts/202605/mobile_gateway_notification_state_routes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_gateway_notification_state_routes.md)
 
 # Plan: Complete Mobile Gateway Notification State Routes
 

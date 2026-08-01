@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/changespec_deltas_v_keymap.md](prompts/changespec_deltas_v_keymap.md)
+- **PROMPT:** [prompts/202605/changespec_deltas_v_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/changespec_deltas_v_keymap.md)
 
 # Plan: Support DELTAS file entries in the `v` keymap
 

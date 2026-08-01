@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pylimit_split_chop_stale_pid.md](prompts/pylimit_split_chop_stale_pid.md)
+- **PROMPT:** [prompts/202605/pylimit_split_chop_stale_pid.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pylimit_split_chop_stale_pid.md)
 
 # Plan: Fix stale PID dedup for `sase_pylimit_split` agent chops
 

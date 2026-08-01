@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_fork_buttons.md](prompts/telegram_fork_buttons.md)
+- **PROMPT:** [prompts/202605/telegram_fork_buttons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_fork_buttons.md)
 
 # Plan: Migrate Telegram Follow-Up Prompts From Resume to Fork
 

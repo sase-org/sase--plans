@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/valid_last_used_vcs_xprompt.md](prompts/valid_last_used_vcs_xprompt.md)
+- **PROMPT:** [prompts/202605/valid_last_used_vcs_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/valid_last_used_vcs_xprompt.md)
 
 # Plan: Filter Stale Last-Used VCS XPrompt Selections
 

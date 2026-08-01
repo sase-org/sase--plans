@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_history_loss.md](prompts/prompt_history_loss.md)
+- **PROMPT:** [prompts/202605/prompt_history_loss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_history_loss.md)
 - **COMMITS:**
   - [c301913](https://github.com/sase-org/sase/commit/c301913e7521f02130fa4ac94bc829a9087e28af) — fix: harden prompt history writes
 

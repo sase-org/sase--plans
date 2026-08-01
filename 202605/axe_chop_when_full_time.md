@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/axe_chop_when_full_time.md](prompts/axe_chop_when_full_time.md)
+- **PROMPT:** [prompts/202605/axe_chop_when_full_time.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/axe_chop_when_full_time.md)
 
 # Plan: Show Full Time In AXE Chop Header
 

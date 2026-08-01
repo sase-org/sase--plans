@@ -6,7 +6,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_resume_running_only.md](prompts/telegram_resume_running_only.md)
+- **PROMPT:** [prompts/202605/telegram_resume_running_only.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_resume_running_only.md)
 
 # /resume — running agents only
 

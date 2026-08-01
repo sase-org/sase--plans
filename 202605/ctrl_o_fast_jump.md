@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ctrl_o_fast_jump.md](prompts/ctrl_o_fast_jump.md)
+- **PROMPT:** [prompts/202605/ctrl_o_fast_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ctrl_o_fast_jump.md)
 
 # Ctrl+O Fast Jump Plan
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/group_directive_rename.md](prompts/group_directive_rename.md)
+- **PROMPT:** [prompts/202605/group_directive_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/group_directive_rename.md)
 
 # Rename `%tag` / `%t` Directive To `%group` / `%g`
 

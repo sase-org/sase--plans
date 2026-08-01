@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dismiss_agent_completion_notifications_on_read.md](prompts/dismiss_agent_completion_notifications_on_read.md)
+- **PROMPT:** [prompts/202605/dismiss_agent_completion_notifications_on_read.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dismiss_agent_completion_notifications_on_read.md)
 
 # Plan: Dismiss Agent Completion Notifications When Agents Become Read
 

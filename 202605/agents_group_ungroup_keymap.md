@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agents_group_ungroup_keymap.md](prompts/agents_group_ungroup_keymap.md)
+- **PROMPT:** [prompts/202605/agents_group_ungroup_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agents_group_ungroup_keymap.md)
 
 # Plan: Agents Tab `,g` Group/Ungroup Toggle
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/epic_agent_timestamp_collision_1.md](prompts/epic_agent_timestamp_collision_1.md)
+- **PROMPT:** [prompts/202605/epic_agent_timestamp_collision_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/epic_agent_timestamp_collision_1.md)
 - **COMMITS:**
   - [1cd8298](https://github.com/sase-org/sase/commit/1cd8298a64775aa94a427cb9e7c1357acc317ae6) — fix: reserve agent launch timestamps globally
 

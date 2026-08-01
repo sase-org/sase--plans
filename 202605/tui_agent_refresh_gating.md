@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tui_agent_refresh_gating.md](prompts/tui_agent_refresh_gating.md)
+- **PROMPT:** [prompts/202605/tui_agent_refresh_gating.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tui_agent_refresh_gating.md)
 
 # Plan: Tab-gate and debounce the TUI agent loader
 

@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/finalizer_done_status_autocommit.md](prompts/finalizer_done_status_autocommit.md)
+- **PROMPT:** [prompts/202605/finalizer_done_status_autocommit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/finalizer_done_status_autocommit.md)
 
 # Plan: Finalizer auto-commit for automatic SDD plan done status
 

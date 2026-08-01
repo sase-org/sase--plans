@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifacts_for_marked_agents.md](prompts/artifacts_for_marked_agents.md)
+- **PROMPT:** [prompts/202605/artifacts_for_marked_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifacts_for_marked_agents.md)
 
 # Plan: `A` keymap aggregates artifacts from all marked agents
 

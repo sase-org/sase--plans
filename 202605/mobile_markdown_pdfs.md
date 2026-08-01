@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/mobile_markdown_pdfs.md](prompts/mobile_markdown_pdfs.md)
+- **PROMPT:** [prompts/202605/mobile_markdown_pdfs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/mobile_markdown_pdfs.md)
 
 # Plan: Small-Screen Markdown PDF Defaults
 

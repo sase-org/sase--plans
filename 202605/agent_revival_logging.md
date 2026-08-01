@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_revival_logging.md](prompts/agent_revival_logging.md)
+- **PROMPT:** [prompts/202605/agent_revival_logging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_revival_logging.md)
 
 # Agent Revival Logging and Query Tooling
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/notification_mark_all_read_perf.md](prompts/notification_mark_all_read_perf.md)
+- **PROMPT:** [prompts/202605/notification_mark_all_read_perf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/notification_mark_all_read_perf.md)
 
 # Plan: Fix Phase 7 notification mark-all-read perf floor
 

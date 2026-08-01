@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/fix_bulk_revive_refresh.md](prompts/fix_bulk_revive_refresh.md)
+- **PROMPT:** [prompts/202605/fix_bulk_revive_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/fix_bulk_revive_refresh.md)
 
 # Fix bulk revive: revived agents must appear on the agents tab
 

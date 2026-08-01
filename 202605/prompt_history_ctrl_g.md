@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_history_ctrl_g.md](prompts/prompt_history_ctrl_g.md)
+- **PROMPT:** [prompts/202605/prompt_history_ctrl_g.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_history_ctrl_g.md)
 
 # Plan: Add `,<ctrl+g>` Prompt History Edit Shortcut
 

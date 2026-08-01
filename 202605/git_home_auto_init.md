@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/git_home_auto_init.md](prompts/git_home_auto_init.md)
+- **PROMPT:** [prompts/202605/git_home_auto_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/git_home_auto_init.md)
 
 # Plan: Auto-Initialize `#git:home` Bare Git Metadata
 

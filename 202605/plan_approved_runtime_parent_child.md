@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plan_approved_runtime_parent_child.md](prompts/plan_approved_runtime_parent_child.md)
+- **PROMPT:** [prompts/202605/plan_approved_runtime_parent_child.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plan_approved_runtime_parent_child.md)
 
 # Fix PLAN APPROVED Parent and Planner Child Runtime Interaction
 

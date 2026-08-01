@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/axe_run_every_workspace_claims.md](prompts/axe_run_every_workspace_claims.md)
+- **PROMPT:** [prompts/202605/axe_run_every_workspace_claims.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/axe_run_every_workspace_claims.md)
 
 # Plan: Stop recurring `run_every` axe workspace-claim errors
 

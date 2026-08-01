@@ -5,7 +5,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tmux_markdown_artifact_pdf_profile.md](prompts/tmux_markdown_artifact_pdf_profile.md)
+- **PROMPT:** [prompts/202605/tmux_markdown_artifact_pdf_profile.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tmux_markdown_artifact_pdf_profile.md)
 
 # Plan: Tmux-Friendly Markdown Artifact Rendering
 

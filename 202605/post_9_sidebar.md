@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/post_9_sidebar.md](prompts/post_9_sidebar.md)
+- **PROMPT:** [prompts/202605/post_9_sidebar.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/post_9_sidebar.md)
 
 # Plan: Restore Post 9 In The sase.sh Sidebar
 

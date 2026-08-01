@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/docs_pdf_core_dependency.md](prompts/docs_pdf_core_dependency.md)
+- **PROMPT:** [prompts/202605/docs_pdf_core_dependency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/docs_pdf_core_dependency.md)
 
 # Fix `docs-pdf-check` dependency resolution
 

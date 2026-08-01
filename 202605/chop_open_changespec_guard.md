@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/chop_open_changespec_guard.md](prompts/chop_open_changespec_guard.md)
+- **PROMPT:** [prompts/202605/chop_open_changespec_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/chop_open_changespec_guard.md)
 
 # Plan: Guard SASE Repair Chops Against Existing Open ChangeSpecs
 

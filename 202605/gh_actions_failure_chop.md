@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/gh_actions_failure_chop.md](prompts/gh_actions_failure_chop.md)
+- **PROMPT:** [prompts/202605/gh_actions_failure_chop.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/gh_actions_failure_chop.md)
 
 # GitHub Actions Failure Fix Chop Plan
 

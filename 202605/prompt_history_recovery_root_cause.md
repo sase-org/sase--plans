@@ -4,7 +4,7 @@ status: proposed
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/prompt_history_recovery_root_cause.md](prompts/prompt_history_recovery_root_cause.md)
+- **PROMPT:** [prompts/202605/prompt_history_recovery_root_cause.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/prompt_history_recovery_root_cause.md)
 
 # Plan: Prompt History Root Cause Verification and Full Recovery
 

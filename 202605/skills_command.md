@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/skills_command.md](prompts/skills_command.md)
+- **PROMPT:** [prompts/202605/skills_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/skills_command.md)
 
 # Add `sase skills`
 

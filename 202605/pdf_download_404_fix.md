@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/pdf_download_404_fix.md](prompts/pdf_download_404_fix.md)
+- **PROMPT:** [prompts/202605/pdf_download_404_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/pdf_download_404_fix.md)
 
 # Plan: Fix Deployed PDF Download 404
 

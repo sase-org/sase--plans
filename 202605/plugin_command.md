@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/plugin_command.md](prompts/plugin_command.md)
+- **PROMPT:** [prompts/202605/plugin_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/plugin_command.md)
 
 # Plan: `sase plugin`
 

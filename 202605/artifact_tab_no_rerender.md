@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/artifact_tab_no_rerender.md](prompts/artifact_tab_no_rerender.md)
+- **PROMPT:** [prompts/202605/artifact_tab_no_rerender.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/artifact_tab_no_rerender.md)
 
 # Plan: Stop re-rendering artifact pane PDF when `<tab>` returns focus to the TUI
 

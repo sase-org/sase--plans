@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_root_diffs.md](prompts/agent_root_diffs.md)
+- **PROMPT:** [prompts/202605/agent_root_diffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_root_diffs.md)
 
 # Plan: Root Plan-Agent Rows Should Show Active Coder Diffs
 

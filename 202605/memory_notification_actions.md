@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/memory_notification_actions.md](prompts/memory_notification_actions.md)
+- **PROMPT:** [prompts/202605/memory_notification_actions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/memory_notification_actions.md)
 
 # Plan: Memory Proposal Notification Actions
 

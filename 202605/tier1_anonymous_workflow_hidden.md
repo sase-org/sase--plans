@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/tier1_anonymous_workflow_hidden.md](prompts/tier1_anonymous_workflow_hidden.md)
+- **PROMPT:** [prompts/202605/tier1_anonymous_workflow_hidden.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/tier1_anonymous_workflow_hidden.md)
 
 # Plan: Stop Treating `is_anonymous` Workflows as Hidden in the Tier 1 Index
 

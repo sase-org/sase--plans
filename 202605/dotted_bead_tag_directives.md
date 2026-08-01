@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/dotted_bead_tag_directives.md](prompts/dotted_bead_tag_directives.md)
+- **PROMPT:** [prompts/202605/dotted_bead_tag_directives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/dotted_bead_tag_directives.md)
 
 # Plan: Accept Dotted Bead IDs In `%tag` Directives
 

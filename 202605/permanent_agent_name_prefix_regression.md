@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/permanent_agent_name_prefix_regression.md](prompts/permanent_agent_name_prefix_regression.md)
+- **PROMPT:** [prompts/202605/permanent_agent_name_prefix_regression.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/permanent_agent_name_prefix_regression.md)
 
 # Plan: Fix Permanent Agent Name Prefix Regression
 

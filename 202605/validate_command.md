@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/validate_command.md](prompts/validate_command.md)
+- **PROMPT:** [prompts/202605/validate_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/validate_command.md)
 
 # Plan: Add `sase validate`
 

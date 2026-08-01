@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/nvim_xprompt_frontmatter_hover.md](prompts/nvim_xprompt_frontmatter_hover.md)
+- **PROMPT:** [prompts/202605/nvim_xprompt_frontmatter_hover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/nvim_xprompt_frontmatter_hover.md)
 
 # Plan: xprompt Markdown frontmatter hover
 

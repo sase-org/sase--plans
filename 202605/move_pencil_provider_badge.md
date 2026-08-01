@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/move_pencil_provider_badge.md](prompts/move_pencil_provider_badge.md)
+- **PROMPT:** [prompts/202605/move_pencil_provider_badge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/move_pencil_provider_badge.md)
 
 # Move Agent Row Pencil Next To Provider Badge
 

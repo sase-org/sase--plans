@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/ace_tui_slowdown.md](prompts/ace_tui_slowdown.md)
+- **PROMPT:** [prompts/202605/ace_tui_slowdown.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/ace_tui_slowdown.md)
 
 # Plan: Diagnose and fix `sase ace` TUI slowdown over long sessions
 

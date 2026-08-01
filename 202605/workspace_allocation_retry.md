@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/workspace_allocation_retry.md](prompts/workspace_allocation_retry.md)
+- **PROMPT:** [prompts/202605/workspace_allocation_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/workspace_allocation_retry.md)
 
 # Workspace Allocation Retry Plan
 

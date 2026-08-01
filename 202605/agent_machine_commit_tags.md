@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/agent_machine_commit_tags.md](prompts/agent_machine_commit_tags.md)
+- **PROMPT:** [prompts/202605/agent_machine_commit_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/agent_machine_commit_tags.md)
 
 # Plan: Add Agent and Machine Commit Tags
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/sync_dollar_hooks.md](prompts/sync_dollar_hooks.md)
+- **PROMPT:** [prompts/202605/sync_dollar_hooks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/sync_dollar_hooks.md)
 
 # Plan: Reset `$` Hook Results After `Y` Sync
 

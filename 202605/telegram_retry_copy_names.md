@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/telegram_retry_copy_names.md](prompts/telegram_retry_copy_names.md)
+- **PROMPT:** [prompts/202605/telegram_retry_copy_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/telegram_retry_copy_names.md)
 
 # Plan: Telegram Retry Copy Names
 

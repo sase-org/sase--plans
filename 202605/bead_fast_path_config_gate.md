@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/bead_fast_path_config_gate.md](prompts/bead_fast_path_config_gate.md)
+- **PROMPT:** [prompts/202605/bead_fast_path_config_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/bead_fast_path_config_gate.md)
 
 # Plan: Align bead fast-path store resolution with SDD VC mode
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revived_agent_visibility_resume.md](prompts/revived_agent_visibility_resume.md)
+- **PROMPT:** [prompts/202605/revived_agent_visibility_resume.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revived_agent_visibility_resume.md)
 
 # Plan: Stabilize Revived Agent Visibility and Resume Lookup
 

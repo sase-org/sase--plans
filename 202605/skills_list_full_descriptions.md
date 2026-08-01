@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/skills_list_full_descriptions.md](prompts/skills_list_full_descriptions.md)
+- **PROMPT:** [prompts/202605/skills_list_full_descriptions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/skills_list_full_descriptions.md)
 
 # Plan: Make `sase skills list` show full names and wrapped descriptions
 

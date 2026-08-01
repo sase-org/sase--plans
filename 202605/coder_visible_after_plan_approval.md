@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/coder_visible_after_plan_approval.md](prompts/coder_visible_after_plan_approval.md)
+- **PROMPT:** [prompts/202605/coder_visible_after_plan_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/coder_visible_after_plan_approval.md)
 
 # Plan: Show plan‑chain coder agent without requiring tier‑2 refresh
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/revive_empty_artifact_index.md](prompts/revive_empty_artifact_index.md)
+- **PROMPT:** [prompts/202605/revive_empty_artifact_index.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/revive_empty_artifact_index.md)
 
 # Plan: Fix Revive Visibility When the Artifact Index Is Empty/Stale
 

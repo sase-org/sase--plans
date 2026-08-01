@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202605/prompts/unread_plan_done_jump.md](prompts/unread_plan_done_jump.md)
+- **PROMPT:** [prompts/202605/unread_plan_done_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202605/unread_plan_done_jump.md)
 
 # Fix unread-agent jump for PLAN DONE terminal statuses
 
