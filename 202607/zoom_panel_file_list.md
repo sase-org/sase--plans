@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/zoom_panel_file_list.md](prompts/zoom_panel_file_list.md)
+- **PROMPT:** [prompts/202607/zoom_panel_file_list.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/zoom_panel_file_list.md)
 - **AGENTS:**
   - [bbugyi200.athena.1f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1f.md#member-code)
 

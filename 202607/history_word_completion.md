@@ -11,7 +11,7 @@ create_time: 2026-07-18 14:38:05
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/history_word_completion.md](prompts/history_word_completion.md)
+- **PROMPT:** [prompts/202607/history_word_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/history_word_completion.md)
 - **AGENTS:**
   - [bbugyi200.athena.dq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dq/README.md)
   - [bbugyi200.athena.dq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dq.md#member-code)

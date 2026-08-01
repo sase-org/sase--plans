@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/stale_runner_code_refresh.md](prompts/stale_runner_code_refresh.md)
+- **PROMPT:** [prompts/202607/stale_runner_code_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/stale_runner_code_refresh.md)
 - **AGENTS:**
   - [bbugyi200.athena.82](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.82/README.md)
   - [bbugyi200.athena.82--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.82.md#member-code)

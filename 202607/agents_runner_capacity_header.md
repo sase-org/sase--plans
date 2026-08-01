@@ -10,7 +10,7 @@ create_time: 2026-07-20 08:30:12
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/agents_runner_capacity_header.md](prompts/agents_runner_capacity_header.md)
+- **PROMPT:** [prompts/202607/agents_runner_capacity_header.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_runner_capacity_header.md)
 - **AGENTS:**
   - [bbugyi200.athena.fv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fv.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-19 10:56:55
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_77_completion.md](prompts/sase_77_completion.md)
+- **PROMPT:** [prompts/202607/sase_77_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_77_completion.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-77.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-77.land/README.md)
   - [bbugyi200.athena.sase-77.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-77.land.md#member-code)

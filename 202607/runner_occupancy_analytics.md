@@ -9,7 +9,7 @@ create_time: 2026-07-21 16:36:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/runner_occupancy_analytics.md](prompts/runner_occupancy_analytics.md)
+- **PROMPT:** [prompts/202607/runner_occupancy_analytics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/runner_occupancy_analytics.md)
 - **PARENT:** [202607/runners_statistics.md](https://github.com/sase-org/sase--plans/blob/main/202607/runners_statistics.md)
 - **BEAD:** [sase-8j.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8j/sase-8j.1.md)
 - **AGENTS:**

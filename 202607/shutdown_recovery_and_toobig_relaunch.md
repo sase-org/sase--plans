@@ -8,7 +8,7 @@ create_time: 2026-07-22 14:37:32
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/shutdown_recovery_and_toobig_relaunch.md](prompts/shutdown_recovery_and_toobig_relaunch.md)
+- **PROMPT:** [prompts/202607/shutdown_recovery_and_toobig_relaunch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/shutdown_recovery_and_toobig_relaunch.md)
 - **AGENTS:**
   - [bbugyi200.athena.im.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.im.f0/README.md)
   - [bbugyi200.athena.im.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.im.f0.md#member-code)

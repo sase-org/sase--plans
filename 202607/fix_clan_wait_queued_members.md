@@ -11,7 +11,7 @@ create_time: 2026-07-20 08:46:34
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/fix_clan_wait_queued_members.md](prompts/fix_clan_wait_queued_members.md)
+- **PROMPT:** [prompts/202607/fix_clan_wait_queued_members.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_clan_wait_queued_members.md)
 - **AGENTS:**
   - [bbugyi200.athena.fy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fy.md#member-code)
 

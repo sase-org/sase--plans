@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/linked_repos_clone_dir_migration.md](prompts/linked_repos_clone_dir_migration.md)
+- **PROMPT:** [prompts/202607/linked_repos_clone_dir_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/linked_repos_clone_dir_migration.md)
 - **AGENTS:**
   - [bbugyi200.athena.6s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6s/README.md)
   - [bbugyi200.athena.6s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6s.md#member-code)

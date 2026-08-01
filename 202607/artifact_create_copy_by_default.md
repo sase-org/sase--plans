@@ -9,7 +9,7 @@ create_time: 2026-07-30 10:30:37
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/artifact_create_copy_by_default.md](prompts/artifact_create_copy_by_default.md)
+- **PROMPT:** [prompts/202607/artifact_create_copy_by_default.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_create_copy_by_default.md)
 
 # Plan: Make `sase artifact create` copy by default
 

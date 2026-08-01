@@ -98,7 +98,7 @@ status: done
 bead_id: sase-a8
 ---
 
-- **PROMPT:** [202607/prompts/beads_sidecar_repo.md](prompts/beads_sidecar_repo.md)
+- **PROMPT:** [prompts/202607/beads_sidecar_repo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/beads_sidecar_repo.md)
 - **BEAD:** [sase-a8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-a8/README.md)
 
 # Plan: Split bead state into a dedicated `beads` sidecar repository

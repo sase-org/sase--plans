@@ -71,7 +71,7 @@ status: done
 bead_id: sase-8y
 ---
 
-- **PROMPT:** [202607/prompts/claimed_bead_status.md](prompts/claimed_bead_status.md)
+- **PROMPT:** [prompts/202607/claimed_bead_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/claimed_bead_status.md)
 - **BEAD:** [sase-8y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8y/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8y.land/README.md)

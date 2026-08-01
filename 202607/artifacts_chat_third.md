@@ -7,7 +7,7 @@ create_time: 2026-07-25 06:35:16
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_chat_third.md](prompts/artifacts_chat_third.md)
+- **PROMPT:** [prompts/202607/artifacts_chat_third.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_chat_third.md)
 - **AGENTS:**
   - [bbugyi200.athena.k1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k1/README.md)
   - [bbugyi200.athena.k1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k1.md#member-code)

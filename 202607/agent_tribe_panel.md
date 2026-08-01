@@ -57,7 +57,7 @@ status: done
 bead_id: sase-6z
 ---
 
-- **PROMPT:** [202607/prompts/agent_tribe_panel.md](prompts/agent_tribe_panel.md)
+- **PROMPT:** [prompts/202607/agent_tribe_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_tribe_panel.md)
 - **BEAD:** [sase-6z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6z/README.md)
 
 # Plan: Agent Tribe panel summaries and whole-panel selection

@@ -11,7 +11,7 @@ create_time: 2026-07-16 16:38:37
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_xprompt_panel_highlighting.md](prompts/agent_xprompt_panel_highlighting.md)
+- **PROMPT:** [prompts/202607/agent_xprompt_panel_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_xprompt_panel_highlighting.md)
 - **AGENTS:**
   - [bbugyi200.athena.aw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.aw/README.md)
   - [bbugyi200.athena.aw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.aw.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/launch_preview_pdf.md](prompts/launch_preview_pdf.md)
+- **PROMPT:** [prompts/202607/launch_preview_pdf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/launch_preview_pdf.md)
 - **AGENTS:**
   - [bbugyi200.athena.0c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c.md#member-code)
 

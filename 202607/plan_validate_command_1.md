@@ -5,7 +5,7 @@ bead_id: sase-61
 tier: epic
 ---
 
-- **PROMPT:** [202607/prompts/plan_validate_command_1.md](prompts/plan_validate_command_1.md)
+- **PROMPT:** [prompts/202607/plan_validate_command_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plan_validate_command_1.md)
 - **BEAD:** [sase-61](https://github.com/sase-org/sase--beads/blob/main/pages/sase-61/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.8p--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8p.md#member-epic)

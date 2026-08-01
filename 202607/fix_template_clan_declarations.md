@@ -10,7 +10,7 @@ create_time: 2026-07-20 17:28:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_template_clan_declarations.md](prompts/fix_template_clan_declarations.md)
+- **PROMPT:** [prompts/202607/fix_template_clan_declarations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_template_clan_declarations.md)
 - **AGENTS:**
   - [bbugyi200.athena.go](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.go/README.md)
   - [bbugyi200.athena.go--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.go.md#member-code)

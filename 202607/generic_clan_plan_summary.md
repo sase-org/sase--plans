@@ -10,7 +10,7 @@ create_time: 2026-07-20 15:34:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/generic_clan_plan_summary.md](prompts/generic_clan_plan_summary.md)
+- **PROMPT:** [prompts/202607/generic_clan_plan_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/generic_clan_plan_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8d.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.2/README.md)
   - [bbugyi200.athena.sase-8d.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.2.md#member-code)

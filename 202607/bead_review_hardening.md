@@ -132,7 +132,7 @@ status: done
 bead_id: sase-9v
 ---
 
-- **PROMPT:** [202607/prompts/bead_review_hardening.md](prompts/bead_review_hardening.md)
+- **PROMPT:** [prompts/202607/bead_review_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_review_hardening.md)
 - **BEAD:** [sase-9v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9v/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9v.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9v.land/README.md)

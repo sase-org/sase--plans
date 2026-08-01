@@ -10,7 +10,7 @@ create_time: 2026-07-20 14:48:12
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_phase_sizes.md](prompts/artifacts_phase_sizes.md)
+- **PROMPT:** [prompts/202607/artifacts_phase_sizes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_phase_sizes.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8b.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.2.md#member-code)
 

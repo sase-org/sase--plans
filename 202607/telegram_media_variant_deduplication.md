@@ -9,7 +9,7 @@ create_time: 2026-07-17 13:56:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/telegram_media_variant_deduplication.md](prompts/telegram_media_variant_deduplication.md)
+- **PROMPT:** [prompts/202607/telegram_media_variant_deduplication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_media_variant_deduplication.md)
 - **AGENTS:**
   - [bbugyi200.athena.cb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cb.md#member-code)
 

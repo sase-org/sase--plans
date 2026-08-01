@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/linked_repo_local_workspaces.md](prompts/linked_repo_local_workspaces.md)
+- **PROMPT:** [prompts/202607/linked_repo_local_workspaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/linked_repo_local_workspaces.md)
 - **AGENTS:**
   - [bbugyi200.athena.4y--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4y.md#member-code)
 

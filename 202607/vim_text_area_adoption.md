@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/vim_text_area_adoption.md](prompts/vim_text_area_adoption.md)
+- **PROMPT:** [prompts/202607/vim_text_area_adoption.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vim_text_area_adoption.md)
 
 # Plan: Adopt vim + readline editing across TUI input boxes
 

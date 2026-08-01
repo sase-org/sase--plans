@@ -9,7 +9,7 @@ create_time: 2026-07-21 17:38:23
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/runners_statistics_experience.md](prompts/runners_statistics_experience.md)
+- **PROMPT:** [prompts/202607/runners_statistics_experience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/runners_statistics_experience.md)
 - **PARENT:** [202607/runners_statistics.md](https://github.com/sase-org/sase--plans/blob/main/202607/runners_statistics.md)
 - **BEAD:** [sase-8j.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8j/sase-8j.3.md)
 - **AGENTS:**

@@ -9,7 +9,7 @@ create_time: 2026-07-31 10:54:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_list_type_indicator.md](prompts/bead_list_type_indicator.md)
+- **PROMPT:** [prompts/202607/bead_list_type_indicator.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_list_type_indicator.md)
 
 # Plan: Show each bead's type in `sase bead list`
 

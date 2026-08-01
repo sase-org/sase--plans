@@ -10,7 +10,7 @@ create_time: 2026-07-22 07:51:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/config_tab_jk_wraparound.md](prompts/config_tab_jk_wraparound.md)
+- **PROMPT:** [prompts/202607/config_tab_jk_wraparound.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/config_tab_jk_wraparound.md)
 - **AGENTS:**
   - [bbugyi200.athena.hw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hw/README.md)
   - [bbugyi200.athena.hw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hw.md#member-code)

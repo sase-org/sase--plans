@@ -9,12 +9,11 @@ create_time: 2026-07-31 13:13:53
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_id_shorthand.md](prompts/bead_id_shorthand.md)
+- **PROMPT:** [prompts/202607/bead_id_shorthand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_id_shorthand.md)
 - **AGENTS:**
   - [bbugyi200.athena.qi](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qi.md)
 - **COMMITS:**
-  - [791e751](https://github.com/sase-org/sase-core/commit/791e751fe58f99f4b632ebb4d00d125f5bb4946f) — feat(beads):
-    resolve shorthand bead ids in core
+  - [791e751](https://github.com/sase-org/sase-core/commit/791e751fe58f99f4b632ebb4d00d125f5bb4946f) — feat(beads): resolve shorthand bead ids in core
 
 # Plan: Accept dash-free shorthand in `sase bead` ID arguments
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_idle_tracking.md](prompts/remove_idle_tracking.md)
+- **PROMPT:** [prompts/202607/remove_idle_tracking.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_idle_tracking.md)
 
 # Remove the User Idle / Activity-Tracking System
 

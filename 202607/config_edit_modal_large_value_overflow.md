@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/config_edit_modal_large_value_overflow.md](prompts/config_edit_modal_large_value_overflow.md)
+- **PROMPT:** [prompts/202607/config_edit_modal_large_value_overflow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/config_edit_modal_large_value_overflow.md)
 
 # Plan: Fix Config Edit Modal Overflow for Large Object Values
 

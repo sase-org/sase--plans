@@ -10,7 +10,7 @@ create_time: 2026-07-21 08:53:32
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clickable_sdd_frontmatter_links.md](prompts/clickable_sdd_frontmatter_links.md)
+- **PROMPT:** [prompts/202607/clickable_sdd_frontmatter_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clickable_sdd_frontmatter_links.md)
 - **AGENTS:**
   - [bbugyi200.athena.gz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gz/README.md)
   - [bbugyi200.athena.gz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gz.md#member-code)

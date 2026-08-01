@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_marked_install_snapshot_flake.md](prompts/fix_marked_install_snapshot_flake.md)
+- **PROMPT:** [prompts/202607/fix_marked_install_snapshot_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_marked_install_snapshot_flake.md)
 - **AGENTS:**
   - [bbugyi200.athena.0f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0f.md#member-code)
 

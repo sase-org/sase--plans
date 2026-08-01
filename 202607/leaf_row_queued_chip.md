@@ -7,7 +7,7 @@ create_time: 2026-07-25 08:27:26
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/leaf_row_queued_chip.md](prompts/leaf_row_queued_chip.md)
+- **PROMPT:** [prompts/202607/leaf_row_queued_chip.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/leaf_row_queued_chip.md)
 - **AGENTS:**
   - [bbugyi200.athena.kh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kh/README.md)
   - [bbugyi200.athena.kh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kh.md#member-code)

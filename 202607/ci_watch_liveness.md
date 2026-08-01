@@ -35,7 +35,7 @@ status: wip
 bead_id: sase-a4
 ---
 
-- **PROMPT:** [202607/prompts/ci_watch_liveness.md](prompts/ci_watch_liveness.md)
+- **PROMPT:** [prompts/202607/ci_watch_liveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ci_watch_liveness.md)
 - **BEAD:** [sase-a4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-a4/README.md)
 
 # Plan: make ci_watch observable on high-cadence repositories

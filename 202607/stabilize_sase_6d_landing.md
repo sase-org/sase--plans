@@ -10,7 +10,7 @@ create_time: 2026-07-16 16:51:34
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/stabilize_sase_6d_landing.md](prompts/stabilize_sase_6d_landing.md)
+- **PROMPT:** [prompts/202607/stabilize_sase_6d_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/stabilize_sase_6d_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6d/README.md)
   - [bbugyi200.athena.sase-6d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6d.md#member-code)

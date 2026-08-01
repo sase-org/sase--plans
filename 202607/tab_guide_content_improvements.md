@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tab_guide_content_improvements.md](prompts/tab_guide_content_improvements.md)
+- **PROMPT:** [prompts/202607/tab_guide_content_improvements.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tab_guide_content_improvements.md)
 - **AGENTS:**
   - [bbugyi200.athena.0e.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e.w1.md#member-code)
 

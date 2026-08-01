@@ -10,15 +10,13 @@ create_time: 2026-07-31 15:54:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/cp_land_integration.md](prompts/cp_land_integration.md)
-- **PARENT:**
-  [202607/sase_beads_memory.md](https://github.com/sase-org/sase--plans/blob/main/202607/sase_beads_memory.md)
+- **PROMPT:** [prompts/202607/cp_land_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/cp_land_integration.md)
+- **PARENT:** [202607/sase_beads_memory.md](https://github.com/sase-org/sase--plans/blob/main/202607/sase_beads_memory.md)
 - **BEAD:** [sase-cp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cp/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-cp.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-cp.land.md)
 - **COMMITS:**
-  - [6d40abb](https://github.com/sase-org/sase--plans/commit/6d40abb49235501243e564e15e4f16d90fb8172b) — chore(plans):
-    mark bead memory epic done
+  - [6d40abb](https://github.com/sase-org/sase--plans/commit/6d40abb49235501243e564e15e4f16d90fb8172b) — chore(plans): mark bead memory epic done
 
 # Plan: Finish and land epic `sase-cp`
 

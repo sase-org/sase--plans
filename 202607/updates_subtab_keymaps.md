@@ -10,7 +10,7 @@ create_time: 2026-07-20 07:56:03
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/updates_subtab_keymaps.md](prompts/updates_subtab_keymaps.md)
+- **PROMPT:** [prompts/202607/updates_subtab_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/updates_subtab_keymaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.ft](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ft/README.md)
   - [bbugyi200.athena.ft--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ft.md#member-code)

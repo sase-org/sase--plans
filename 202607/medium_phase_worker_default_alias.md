@@ -11,7 +11,7 @@ create_time: 2026-07-25 09:59:00
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/medium_phase_worker_default_alias.md](prompts/medium_phase_worker_default_alias.md)
+- **PROMPT:** [prompts/202607/medium_phase_worker_default_alias.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/medium_phase_worker_default_alias.md)
 - **AGENTS:**
   - [bbugyi200.athena.km](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.km/README.md)
   - [bbugyi200.athena.km--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.km.md#member-code)

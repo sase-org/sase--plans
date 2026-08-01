@@ -8,7 +8,7 @@ create_time: 2026-07-24 22:19:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/vim_normal_mode_key_containment.md](prompts/vim_normal_mode_key_containment.md)
+- **PROMPT:** [prompts/202607/vim_normal_mode_key_containment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vim_normal_mode_key_containment.md)
 - **AGENTS:**
   - [bbugyi200.athena.k2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k2/README.md)
   - [bbugyi200.athena.k2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k2.md#member-code)

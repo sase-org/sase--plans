@@ -12,7 +12,7 @@ create_time: 2026-07-20 12:09:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_wait_resolution.md](prompts/bead_wait_resolution.md)
+- **PROMPT:** [prompts/202607/bead_wait_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_wait_resolution.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-87.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-87.3/README.md)
   - [bbugyi200.athena.sase-87.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.3.md#member-code)

@@ -77,7 +77,7 @@ status: done
 bead_id: sase-b1
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_swarm_stats.md](prompts/xprompt_swarm_stats.md)
+- **PROMPT:** [prompts/202607/xprompt_swarm_stats.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_swarm_stats.md)
 - **BEAD:** [sase-b1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b1/README.md)
 
 # Record xprompt-swarm origin so swarms appear in Statistics → XPrompts

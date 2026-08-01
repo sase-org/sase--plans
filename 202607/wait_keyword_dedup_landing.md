@@ -10,7 +10,7 @@ create_time: 2026-07-19 13:34:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/wait_keyword_dedup_landing.md](prompts/wait_keyword_dedup_landing.md)
+- **PROMPT:** [prompts/202607/wait_keyword_dedup_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/wait_keyword_dedup_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7h.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7h.land/README.md)
   - [bbugyi200.athena.sase-7h.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7h.land.md#member-code)

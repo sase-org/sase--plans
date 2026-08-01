@@ -48,7 +48,7 @@ status: done
 bead_id: sase-6i
 ---
 
-- **PROMPT:** [202607/prompts/custom_notification_gates.md](prompts/custom_notification_gates.md)
+- **PROMPT:** [prompts/202607/custom_notification_gates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/custom_notification_gates.md)
 - **BEAD:** [sase-6i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6i/README.md)
 
 # Plan: First-class custom notification gates with ORed commands, feedback, and icons

@@ -10,7 +10,7 @@ create_time: 2026-07-18 06:31:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_member_fold_isolation.md](prompts/clan_member_fold_isolation.md)
+- **PROMPT:** [prompts/202607/clan_member_fold_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_member_fold_isolation.md)
 - **AGENTS:**
   - [bbugyi200.athena.cx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cx/README.md)
   - [bbugyi200.athena.cx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.md#member-code)

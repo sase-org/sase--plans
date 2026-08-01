@@ -9,7 +9,7 @@ create_time: 2026-07-23 15:02:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/identity_relative_local_persistence.md](prompts/identity_relative_local_persistence.md)
+- **PROMPT:** [prompts/202607/identity_relative_local_persistence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/identity_relative_local_persistence.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
 - **BEAD:** [sase-8v.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.3.md)
 - **AGENTS:**

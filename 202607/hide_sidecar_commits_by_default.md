@@ -10,7 +10,7 @@ create_time: 2026-07-20 13:12:28
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/hide_sidecar_commits_by_default.md](prompts/hide_sidecar_commits_by_default.md)
+- **PROMPT:** [prompts/202607/hide_sidecar_commits_by_default.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hide_sidecar_commits_by_default.md)
 - **AGENTS:**
   - [bbugyi200.athena.gf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gf/README.md)
   - [bbugyi200.athena.gf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gf.md#member-code)

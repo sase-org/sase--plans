@@ -72,7 +72,7 @@ status: done
 bead_id: sase-ar
 ---
 
-- **PROMPT:** [202607/prompts/axe_chop_reports.md](prompts/axe_chop_reports.md)
+- **PROMPT:** [prompts/202607/axe_chop_reports.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_chop_reports.md)
 - **BEAD:** [sase-ar](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ar/README.md)
 
 # Plan: AXE Chop Reports

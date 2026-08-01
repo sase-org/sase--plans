@@ -7,7 +7,7 @@ create_time: 2026-07-22 12:32:15
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/plan_approval_toast_basename.md](prompts/plan_approval_toast_basename.md)
+- **PROMPT:** [prompts/202607/plan_approval_toast_basename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plan_approval_toast_basename.md)
 - **AGENTS:**
   - [bbugyi200.athena.ik--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ik.md#member-code)
 

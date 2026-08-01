@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tui_launch_approval_dispatch.md](prompts/tui_launch_approval_dispatch.md)
+- **PROMPT:** [prompts/202607/tui_launch_approval_dispatch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_launch_approval_dispatch.md)
 - **AGENTS:**
   - [bbugyi200.athena.f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f.md#member-code)
 

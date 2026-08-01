@@ -8,7 +8,7 @@ create_time: 2026-07-21 15:16:18
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/commit_timeline_position_badge.md](prompts/commit_timeline_position_badge.md)
+- **PROMPT:** [prompts/202607/commit_timeline_position_badge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_timeline_position_badge.md)
 - **AGENTS:**
   - [bbugyi200.athena.he](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.he/README.md)
   - [bbugyi200.athena.he--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.he.md#member-code)

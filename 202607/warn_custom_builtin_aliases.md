@@ -11,7 +11,7 @@ create_time: 2026-07-21 09:23:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/warn_custom_builtin_aliases.md](prompts/warn_custom_builtin_aliases.md)
+- **PROMPT:** [prompts/202607/warn_custom_builtin_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/warn_custom_builtin_aliases.md)
 - **AGENTS:**
   - [bbugyi200.athena.h1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h1/README.md)
   - [bbugyi200.athena.h1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h1.md#member-code)

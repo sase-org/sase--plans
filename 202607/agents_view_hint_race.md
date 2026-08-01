@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agents_view_hint_race.md](prompts/agents_view_hint_race.md)
+- **PROMPT:** [prompts/202607/agents_view_hint_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_view_hint_race.md)
 - **AGENTS:**
   - [bbugyi200.athena.5p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5p.md#member-code)
 

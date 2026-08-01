@@ -9,7 +9,7 @@ create_time: 2026-07-24 14:39:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_alias_ownership.md](prompts/models_panel_alias_ownership.md)
+- **PROMPT:** [prompts/202607/models_panel_alias_ownership.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_alias_ownership.md)
 - **AGENTS:**
   - [bbugyi200.athena.jk](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jk/README.md)
   - [bbugyi200.athena.jk--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jk.md#member-code)

@@ -12,7 +12,7 @@ create_time: 2026-07-21 10:42:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_pool_effort_display.md](prompts/models_panel_pool_effort_display.md)
+- **PROMPT:** [prompts/202607/models_panel_pool_effort_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_pool_effort_display.md)
 - **AGENTS:**
   - [bbugyi200.athena.gy.f1.f6.f0.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f6.f0.w0/README.md)
   - [bbugyi200.athena.gy.f1.f6.f0.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f6.f0.w0.md#member-code)

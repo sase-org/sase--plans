@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/minimal_diff_model_alias_edits.md](prompts/minimal_diff_model_alias_edits.md)
+- **PROMPT:** [prompts/202607/minimal_diff_model_alias_edits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/minimal_diff_model_alias_edits.md)
 
 # Plan: Minimal-Diff Model Alias Edits from the Models Panel
 

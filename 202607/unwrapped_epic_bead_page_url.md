@@ -8,13 +8,12 @@ create_time: 2026-07-29 08:49:19
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/unwrapped_epic_bead_page_url.md](prompts/unwrapped_epic_bead_page_url.md)
+- **PROMPT:** [prompts/202607/unwrapped_epic_bead_page_url.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/unwrapped_epic_bead_page_url.md)
 - **AGENTS:**
   - [bbugyi200.athena.nx.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.f0.md#member-code)
   - [bbugyi200.athena.nx.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.f0.md#member-plan)
 - **COMMITS:**
-  - [9e5eadc](https://github.com/sase-org/sase/commit/9e5eadc6b364d218571ea1cbde82f48d72f3d082) — fix: preserve epic
-    bead page URLs
+  - [9e5eadc](https://github.com/sase-org/sase/commit/9e5eadc6b364d218571ea1cbde82f48d72f3d082) — fix: preserve epic bead page URLs
 
 # Plan
 

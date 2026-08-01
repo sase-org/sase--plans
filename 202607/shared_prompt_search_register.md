@@ -10,7 +10,7 @@ create_time: 2026-07-18 17:03:57
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/shared_prompt_search_register.md](prompts/shared_prompt_search_register.md)
+- **PROMPT:** [prompts/202607/shared_prompt_search_register.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/shared_prompt_search_register.md)
 - **AGENTS:**
   - [bbugyi200.athena.dw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dw/README.md)
   - [bbugyi200.athena.dw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dw.md#member-code)

@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/vcs_repo_slash_completion.md](prompts/vcs_repo_slash_completion.md)
+- **PROMPT:** [prompts/202607/vcs_repo_slash_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_repo_slash_completion.md)
 - **BEAD:** [sase-5h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5h/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.0m--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0m.md#member-epic)

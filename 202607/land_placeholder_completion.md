@@ -10,7 +10,7 @@ create_time: 2026-07-16 09:51:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_placeholder_completion.md](prompts/land_placeholder_completion.md)
+- **PROMPT:** [prompts/202607/land_placeholder_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_placeholder_completion.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6b](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6b/README.md)
   - [bbugyi200.athena.sase-6b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6b.md#member-code)

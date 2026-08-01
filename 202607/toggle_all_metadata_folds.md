@@ -10,7 +10,7 @@ create_time: 2026-07-19 10:29:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/toggle_all_metadata_folds.md](prompts/toggle_all_metadata_folds.md)
+- **PROMPT:** [prompts/202607/toggle_all_metadata_folds.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toggle_all_metadata_folds.md)
 - **AGENTS:**
   - [bbugyi200.athena.ez](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ez/README.md)
   - [bbugyi200.athena.ez--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ez.md#member-code)

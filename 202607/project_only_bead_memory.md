@@ -10,7 +10,7 @@ create_time: 2026-07-31 17:47:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/project_only_bead_memory.md](prompts/project_only_bead_memory.md)
+- **PROMPT:** [prompts/202607/project_only_bead_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/project_only_bead_memory.md)
 
 # Plan: Scope the generated bead memory note to SASE-managed project repos
 

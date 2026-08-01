@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_project_agent_revert_checkout.md](prompts/fix_project_agent_revert_checkout.md)
+- **PROMPT:** [prompts/202607/fix_project_agent_revert_checkout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_project_agent_revert_checkout.md)
 - **AGENTS:**
   - [bbugyi200.athena.8f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8f/README.md)
   - [bbugyi200.athena.8f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8f.md#member-code)

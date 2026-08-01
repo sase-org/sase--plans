@@ -8,7 +8,7 @@ create_time: 2026-07-20 13:25:56
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_test_env_isolation.md](prompts/restore_test_env_isolation.md)
+- **PROMPT:** [prompts/202607/restore_test_env_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_test_env_isolation.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-83.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-83.land/README.md)
   - [bbugyi200.athena.sase-83.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-83.land.md#member-code)

@@ -11,7 +11,7 @@ create_time: 2026-07-18 16:26:41
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_member_status_sort.md](prompts/clan_member_status_sort.md)
+- **PROMPT:** [prompts/202607/clan_member_status_sort.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_member_status_sort.md)
 - **AGENTS:**
   - [bbugyi200.athena.dv.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dv.f1/README.md)
   - [bbugyi200.athena.dv.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dv.f1.md#member-code)

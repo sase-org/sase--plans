@@ -11,7 +11,7 @@ create_time: 2026-07-17 08:39:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/readme_redesign.md](prompts/readme_redesign.md)
+- **PROMPT:** [prompts/202607/readme_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/readme_redesign.md)
 - **AGENTS:**
   - [bbugyi200.athena.bp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bp/README.md)
   - [bbugyi200.athena.bp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bp.md#member-code)

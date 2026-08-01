@@ -10,7 +10,7 @@ create_time: 2026-07-20 10:40:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/phase_plan_and_bead_context.md](prompts/phase_plan_and_bead_context.md)
+- **PROMPT:** [prompts/202607/phase_plan_and_bead_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_plan_and_bead_context.md)
 - **AGENTS:**
   - [bbugyi200.athena.g7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g7/README.md)
   - [bbugyi200.athena.g7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g7.md#member-code)

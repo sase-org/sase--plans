@@ -8,7 +8,7 @@ create_time: 2026-07-23 10:16:33
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/published_core_integration.md](prompts/published_core_integration.md)
+- **PROMPT:** [prompts/202607/published_core_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/published_core_integration.md)
 - **PARENT:** [202607/finish_capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_capitalized_snippet_aliases.md)
 - **BEAD:** [sase-8u.4.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8u/sase-8u.4.2.md)
 

@@ -9,7 +9,7 @@ create_time: 2026-07-20 17:07:53
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/test_state_isolation.md](prompts/test_state_isolation.md)
+- **PROMPT:** [prompts/202607/test_state_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/test_state_isolation.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8g.11](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.11/README.md)
   - [bbugyi200.athena.sase-8g.11--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.11.md#member-code)

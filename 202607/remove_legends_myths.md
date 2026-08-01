@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_legends_myths.md](prompts/remove_legends_myths.md)
+- **PROMPT:** [prompts/202607/remove_legends_myths.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_legends_myths.md)
 - **AGENTS:**
   - [bbugyi200.athena.3w.f-0.w-1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3w.f-0.w-1.md#member-code)
 

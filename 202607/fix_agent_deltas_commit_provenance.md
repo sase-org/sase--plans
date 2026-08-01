@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_agent_deltas_commit_provenance.md](prompts/fix_agent_deltas_commit_provenance.md)
+- **PROMPT:** [prompts/202607/fix_agent_deltas_commit_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_agent_deltas_commit_provenance.md)
 - **AGENTS:**
   - [bbugyi200.athena.6m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6m/README.md)
   - [bbugyi200.athena.6m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6m.md#member-code)

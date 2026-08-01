@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_wait_time_shape_validation.md](prompts/remove_wait_time_shape_validation.md)
+- **PROMPT:** [prompts/202607/remove_wait_time_shape_validation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_wait_time_shape_validation.md)
 - **AGENTS:**
   - [bbugyi200.athena.4i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4i.md#member-code)
 

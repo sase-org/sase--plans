@@ -45,7 +45,7 @@ status: done
 bead_id: sase-70
 ---
 
-- **PROMPT:** [202607/prompts/statistics_project_changespec_views.md](prompts/statistics_project_changespec_views.md)
+- **PROMPT:** [prompts/202607/statistics_project_changespec_views.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_project_changespec_views.md)
 - **BEAD:** [sase-70](https://github.com/sase-org/sase--beads/blob/main/pages/sase-70/README.md)
 
 # Plan: Track and display agent work by project and ChangeSpec in Statistics

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/kill_waiting_agents_pid_fallback.md](prompts/kill_waiting_agents_pid_fallback.md)
+- **PROMPT:** [prompts/202607/kill_waiting_agents_pid_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/kill_waiting_agents_pid_fallback.md)
 - **AGENTS:**
   - [bbugyi200.athena.09--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.09.md#member-code)
 

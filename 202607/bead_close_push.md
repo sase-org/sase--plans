@@ -8,12 +8,11 @@ create_time: 2026-07-30 16:06:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_close_push.md](prompts/bead_close_push.md)
+- **PROMPT:** [prompts/202607/bead_close_push.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_close_push.md)
 - **AGENTS:**
   - [bbugyi200.athena.po](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.po.md)
 - **COMMITS:**
-  - [e3a898b](https://github.com/sase-org/sase/commit/e3a898b6a32609979d79ce03d31f6dbf0d7dbc16) — fix(beads): route
-    deferred close pushes correctly
+  - [e3a898b](https://github.com/sase-org/sase/commit/e3a898b6a32609979d79ce03d31f6dbf0d7dbc16) — fix(beads): route deferred close pushes correctly
 
 # Plan: Restore the post-commit push for `sase bead close`
 

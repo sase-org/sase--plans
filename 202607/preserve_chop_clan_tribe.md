@@ -9,7 +9,7 @@ create_time: 2026-07-19 21:32:43
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/preserve_chop_clan_tribe.md](prompts/preserve_chop_clan_tribe.md)
+- **PROMPT:** [prompts/202607/preserve_chop_clan_tribe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/preserve_chop_clan_tribe.md)
 - **AGENTS:**
   - [bbugyi200.athena.fp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fp/README.md)
   - [bbugyi200.athena.fp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fp.md#member-code)

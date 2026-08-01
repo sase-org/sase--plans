@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/phase_bead_epic_plan.md](prompts/phase_bead_epic_plan.md)
+- **PROMPT:** [prompts/202607/phase_bead_epic_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_bead_epic_plan.md)
 - **AGENTS:**
   - [bbugyi200.athena.1p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1p.md#member-code)
 

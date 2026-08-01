@@ -11,7 +11,7 @@ create_time: 2026-07-21 07:41:24
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/updates_confirm_modal.md](prompts/updates_confirm_modal.md)
+- **PROMPT:** [prompts/202607/updates_confirm_modal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/updates_confirm_modal.md)
 - **AGENTS:**
   - [bbugyi200.athena.gp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gp/README.md)
   - [bbugyi200.athena.gp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gp.md#member-code)

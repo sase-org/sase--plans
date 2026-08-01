@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/finish_toolong_epic.md](prompts/finish_toolong_epic.md)
+- **PROMPT:** [prompts/202607/finish_toolong_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_toolong_epic.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5r--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5r.md#member-code)
 

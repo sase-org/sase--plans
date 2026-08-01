@@ -10,7 +10,7 @@ create_time: 2026-07-21 08:10:23
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_family_view_keymap.md](prompts/agent_family_view_keymap.md)
+- **PROMPT:** [prompts/202607/agent_family_view_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_family_view_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.gv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gv/README.md)
   - [bbugyi200.athena.gv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gv.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/sdd_companion_artifact_discovery.md](prompts/sdd_companion_artifact_discovery.md)
+- **PROMPT:** [prompts/202607/sdd_companion_artifact_discovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sdd_companion_artifact_discovery.md)
 - **AGENTS:**
   - [bbugyi200.athena.3p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3p.md#member-code)
 

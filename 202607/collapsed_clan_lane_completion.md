@@ -8,7 +8,7 @@ create_time: 2026-07-23 14:34:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/collapsed_clan_lane_completion.md](prompts/collapsed_clan_lane_completion.md)
+- **PROMPT:** [prompts/202607/collapsed_clan_lane_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/collapsed_clan_lane_completion.md)
 - **AGENTS:**
   - [bbugyi200.athena.jh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jh/README.md)
   - [bbugyi200.athena.jh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jh.md#member-code)

@@ -11,7 +11,7 @@ create_time: 2026-07-18 16:59:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_6u_epic_landing.md](prompts/sase_6u_epic_landing.md)
+- **PROMPT:** [prompts/202607/sase_6u_epic_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_6u_epic_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6u.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6u.land/README.md)
   - [bbugyi200.athena.sase-6u.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6u.land.md#member-code)

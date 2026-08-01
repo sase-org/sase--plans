@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/commit_finalizer_linked_repo_metadata.md](prompts/commit_finalizer_linked_repo_metadata.md)
+- **PROMPT:** [prompts/202607/commit_finalizer_linked_repo_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_finalizer_linked_repo_metadata.md)
 - **AGENTS:**
   - [bbugyi200.athena.84](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.84/README.md)
   - [bbugyi200.athena.84--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.84.md#member-code)

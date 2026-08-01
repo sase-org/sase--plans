@@ -11,7 +11,7 @@ create_time: 2026-07-18 07:26:29
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/distinguish_plan_gate_approve_controls.md](prompts/distinguish_plan_gate_approve_controls.md)
+- **PROMPT:** [prompts/202607/distinguish_plan_gate_approve_controls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/distinguish_plan_gate_approve_controls.md)
 
 # Plan: Distinguish tale plan gate approval controls
 

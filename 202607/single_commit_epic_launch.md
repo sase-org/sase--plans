@@ -9,16 +9,14 @@ create_time: 2026-07-28 17:57:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/single_commit_epic_launch.md](prompts/single_commit_epic_launch.md)
-- **PARENT:**
-  [202607/beads_commit_consolidation.md](https://github.com/sase-org/sase--plans/blob/main/202607/beads_commit_consolidation.md)
+- **PROMPT:** [prompts/202607/single_commit_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/single_commit_epic_launch.md)
+- **PARENT:** [202607/beads_commit_consolidation.md](https://github.com/sase-org/sase--plans/blob/main/202607/beads_commit_consolidation.md)
 - **BEAD:** [sase-aj.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aj/sase-aj.3.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-aj.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-aj.3.md#member-code)
   - [bbugyi200.athena.sase-aj.3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-aj.3.md#member-plan)
 - **COMMITS:**
-  - [1943e18](https://github.com/sase-org/sase/commit/1943e18a74f5f2ca3731dd051e68837574ea1c1e) — feat(beads): preassign
-    epic work before launch
+  - [1943e18](https://github.com/sase-org/sase/commit/1943e18a74f5f2ca3731dd051e68837574ea1c1e) — feat(beads): preassign epic work before launch
 
 # Plan: Make epic bead work a single pre-spawn commit
 

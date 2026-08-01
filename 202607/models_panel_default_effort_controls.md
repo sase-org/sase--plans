@@ -10,7 +10,7 @@ create_time: 2026-07-21 11:46:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_default_effort_controls.md](prompts/models_panel_default_effort_controls.md)
+- **PROMPT:** [prompts/202607/models_panel_default_effort_controls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_default_effort_controls.md)
 - **AGENTS:**
   - [bbugyi200.athena.gy.f1.f6.f0.w0.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f6.f0.w0.f2/README.md)
   - [bbugyi200.athena.gy.f1.f6.f0.w0.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f6.f0.w0.f2.md#member-code)

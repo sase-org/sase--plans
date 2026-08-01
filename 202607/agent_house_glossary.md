@@ -10,7 +10,7 @@ create_time: 2026-07-18 18:49:08
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_house_glossary.md](prompts/agent_house_glossary.md)
+- **PROMPT:** [prompts/202607/agent_house_glossary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_house_glossary.md)
 - **AGENTS:**
   - [bbugyi200.athena.e2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e2/README.md)
   - [bbugyi200.athena.e2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e2.md#member-code)

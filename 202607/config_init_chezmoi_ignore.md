@@ -8,13 +8,12 @@ create_time: 2026-07-29 10:39:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/config_init_chezmoi_ignore.md](prompts/config_init_chezmoi_ignore.md)
+- **PROMPT:** [prompts/202607/config_init_chezmoi_ignore.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/config_init_chezmoi_ignore.md)
 - **AGENTS:**
   - [bbugyi200.athena.o9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o9.md#member-code)
   - [bbugyi200.athena.o9--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o9.md#member-plan)
 - **COMMITS:**
-  - [9180a1f](https://github.com/sase-org/sase/commit/9180a1fd67ae9b32231153fe65a2378fb179733c) — fix(config):
-    initialize chezmoi machine overlays safely
+  - [9180a1f](https://github.com/sase-org/sase/commit/9180a1fd67ae9b32231153fe65a2378fb179733c) — fix(config): initialize chezmoi machine overlays safely
 
 # Plan: Stage and host-gate the chezmoi overlay written by `sase config init`
 

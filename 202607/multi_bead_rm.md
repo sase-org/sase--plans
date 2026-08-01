@@ -27,7 +27,7 @@ status: done
 bead_id: sase-8x
 ---
 
-- **PROMPT:** [202607/prompts/multi_bead_rm.md](prompts/multi_bead_rm.md)
+- **PROMPT:** [prompts/202607/multi_bead_rm.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/multi_bead_rm.md)
 - **BEAD:** [sase-8x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8x/README.md)
 
 # Plan: Remove multiple beads atomically

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/per_workspace_sdd_clone.md](prompts/per_workspace_sdd_clone.md)
+- **PROMPT:** [prompts/202607/per_workspace_sdd_clone.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/per_workspace_sdd_clone.md)
 - **AGENTS:**
   - [bbugyi200.athena.2o.cld--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2o.cld.md#member-code)
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/migrate_sdd_to_companion_repo.md](prompts/migrate_sdd_to_companion_repo.md)
+- **PROMPT:** [prompts/202607/migrate_sdd_to_companion_repo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/migrate_sdd_to_companion_repo.md)
 - **AGENTS:**
   - [bbugyi200.athena.1u--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1u.md#member-1)
   - [bbugyi200.athena.1u--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1u.md#member-code)

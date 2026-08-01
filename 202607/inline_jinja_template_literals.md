@@ -6,7 +6,7 @@ create_time: 2026-07-15 15:46:11
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/inline_jinja_template_literals.md](prompts/inline_jinja_template_literals.md)
+- **PROMPT:** [prompts/202607/inline_jinja_template_literals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/inline_jinja_template_literals.md)
 - **AGENTS:**
   - [bbugyi200.athena.9p](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9p/README.md)
   - [bbugyi200.athena.9p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9p.md#member-code)

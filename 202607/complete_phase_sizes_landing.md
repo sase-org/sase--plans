@@ -9,7 +9,7 @@ create_time: 2026-07-23 21:20:06
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/complete_phase_sizes_landing.md](prompts/complete_phase_sizes_landing.md)
+- **PROMPT:** [prompts/202607/complete_phase_sizes_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/complete_phase_sizes_landing.md)
 - **PARENT:** [202607/finish_phase_sizes_landing.md](https://github.com/sase-org/sase--plans/blob/main/202607/finish_phase_sizes_landing.md)
 - **BEAD:** [sase-8w.7.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8w/sase-8w.7.4.md)
 - **AGENTS:**

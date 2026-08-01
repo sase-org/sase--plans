@@ -59,7 +59,7 @@ status: done
 bead_id: sase-ac.6
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_identity_landing.md](prompts/xprompt_identity_landing.md)
+- **PROMPT:** [prompts/202607/xprompt_identity_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_identity_landing.md)
 - **PARENT:** [202607/xprompt_project_identity.md](https://github.com/sase-org/sase--plans/blob/main/202607/xprompt_project_identity.md)
 - **BEAD:** [sase-ac.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ac/sase-ac.6.md)
 

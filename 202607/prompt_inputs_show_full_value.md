@@ -10,13 +10,12 @@ create_time: 2026-07-29 16:58:32
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_inputs_show_full_value.md](prompts/prompt_inputs_show_full_value.md)
+- **PROMPT:** [prompts/202607/prompt_inputs_show_full_value.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_inputs_show_full_value.md)
 - **AGENTS:**
   - [bbugyi200.athena.ou--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ou.md#member-code)
   - [bbugyi200.athena.ou--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ou.md#member-plan)
 - **COMMITS:**
-  - [07aebb2](https://github.com/sase-org/sase/commit/07aebb2f956550d47051b7d42f41d1642369dfff) — fix(tui): show full
-    prompt input values
+  - [07aebb2](https://github.com/sase-org/sase/commit/07aebb2f956550d47051b7d42f41d1642369dfff) — fix(tui): show full prompt input values
 
 # Plan: Prompt Inputs panel shows each field's full value at all times
 

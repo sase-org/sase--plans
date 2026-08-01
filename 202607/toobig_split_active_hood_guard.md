@@ -6,7 +6,7 @@ create_time: 2026-07-15 16:04:37
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/toobig_split_active_hood_guard.md](prompts/toobig_split_active_hood_guard.md)
+- **PROMPT:** [prompts/202607/toobig_split_active_hood_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toobig_split_active_hood_guard.md)
 - **AGENTS:**
   - [bbugyi200.athena.9p.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9p.f0.md#member-code)
 

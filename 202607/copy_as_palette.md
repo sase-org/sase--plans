@@ -64,7 +64,7 @@ status: done
 bead_id: sase-az
 ---
 
-- **PROMPT:** [202607/prompts/copy_as_palette.md](prompts/copy_as_palette.md)
+- **PROMPT:** [prompts/202607/copy_as_palette.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/copy_as_palette.md)
 - **BEAD:** [sase-az](https://github.com/sase-org/sase--beads/blob/main/pages/sase-az/README.md)
 
 # Plan: Unified "Copy as…" palette

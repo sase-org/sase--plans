@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tools_panel_detail_levels.md](prompts/tools_panel_detail_levels.md)
+- **PROMPT:** [prompts/202607/tools_panel_detail_levels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tools_panel_detail_levels.md)
 - **AGENTS:**
   - [bbugyi200.athena.0x--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0x.md#member-code)
 

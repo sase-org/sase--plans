@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/wait_runners_deferred_workspace.md](prompts/wait_runners_deferred_workspace.md)
+- **PROMPT:** [prompts/202607/wait_runners_deferred_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/wait_runners_deferred_workspace.md)
 - **AGENTS:**
   - [bbugyi200.athena.7t](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7t/README.md)
   - [bbugyi200.athena.7t--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7t.md#member-code)

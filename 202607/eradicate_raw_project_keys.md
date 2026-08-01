@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/eradicate_raw_project_keys.md](prompts/eradicate_raw_project_keys.md)
+- **PROMPT:** [prompts/202607/eradicate_raw_project_keys.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/eradicate_raw_project_keys.md)
 - **AGENTS:**
   - [bbugyi200.athena.a.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a.f1.md#member-code)
 

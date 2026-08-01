@@ -10,7 +10,7 @@ create_time: 2026-07-20 14:53:36
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/statistics_help_overlay.md](prompts/statistics_help_overlay.md)
+- **PROMPT:** [prompts/202607/statistics_help_overlay.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_help_overlay.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8a.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.3.md#member-code)
 

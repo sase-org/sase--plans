@@ -82,7 +82,7 @@ status: done
 bead_id: sase-9s
 ---
 
-- **PROMPT:** [202607/prompts/detached_epic_launch.md](prompts/detached_epic_launch.md)
+- **PROMPT:** [prompts/202607/detached_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/detached_epic_launch.md)
 - **BEAD:** [sase-9s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9s/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9s.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9s.land/README.md)

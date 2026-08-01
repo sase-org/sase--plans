@@ -7,7 +7,7 @@ create_time: 2026-07-24 18:20:01
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/persist_admin_center_resume_tab.md](prompts/persist_admin_center_resume_tab.md)
+- **PROMPT:** [prompts/202607/persist_admin_center_resume_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/persist_admin_center_resume_tab.md)
 - **AGENTS:**
   - [bbugyi200.athena.js](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.js/README.md)
   - [bbugyi200.athena.js--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.js.md#member-code)

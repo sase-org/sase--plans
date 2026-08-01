@@ -8,7 +8,7 @@ create_time: 2026-07-20 14:11:18
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/project_display_regression_audit.md](prompts/project_display_regression_audit.md)
+- **PROMPT:** [prompts/202607/project_display_regression_audit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/project_display_regression_audit.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-89.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.4/README.md)
   - [bbugyi200.athena.sase-89.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.4.md#member-code)

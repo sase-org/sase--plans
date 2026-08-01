@@ -11,7 +11,7 @@ create_time: 2026-07-23 12:43:49
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/large_only_epic_phase_planning.md](prompts/large_only_epic_phase_planning.md)
+- **PROMPT:** [prompts/202607/large_only_epic_phase_planning.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/large_only_epic_phase_planning.md)
 - **AGENTS:**
   - [bbugyi200.athena.jb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jb/README.md)
   - [bbugyi200.athena.jb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jb.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/migrate_actstat_sdd_prompts.md](prompts/migrate_actstat_sdd_prompts.md)
+- **PROMPT:** [prompts/202607/migrate_actstat_sdd_prompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/migrate_actstat_sdd_prompts.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5q.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.1/README.md)
   - [bbugyi200.athena.sase-5q.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5q.2/README.md)

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agents_tab_auto_approve_prefix_and_child_alignment.md](prompts/agents_tab_auto_approve_prefix_and_child_alignment.md)
+- **PROMPT:** [prompts/202607/agents_tab_auto_approve_prefix_and_child_alignment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_tab_auto_approve_prefix_and_child_alignment.md)
 
 # Plan: Fix over-applied ⚡ (auto-approve) prefix on Agents-tab child rows + child row alignment
 

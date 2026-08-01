@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/linked_repo_finalizer_blindness.md](prompts/linked_repo_finalizer_blindness.md)
+- **PROMPT:** [prompts/202607/linked_repo_finalizer_blindness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/linked_repo_finalizer_blindness.md)
 - **AGENTS:**
   - [bbugyi200.athena.r--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.r.md#member-code)
 

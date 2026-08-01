@@ -51,7 +51,7 @@ status: done
 bead_id: sase-9y
 ---
 
-- **PROMPT:** [202607/prompts/fix_ci_bead_isolation_and_visual_flakes.md](prompts/fix_ci_bead_isolation_and_visual_flakes.md)
+- **PROMPT:** [prompts/202607/fix_ci_bead_isolation_and_visual_flakes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_ci_bead_isolation_and_visual_flakes.md)
 - **BEAD:** [sase-9y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9y/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9y.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9y.land/README.md)

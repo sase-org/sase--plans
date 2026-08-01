@@ -51,7 +51,7 @@ status: done
 bead_id: sase-bc
 ---
 
-- **PROMPT:** [202607/prompts/commit_file_hooks.md](prompts/commit_file_hooks.md)
+- **PROMPT:** [prompts/202607/commit_file_hooks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_file_hooks.md)
 - **BEAD:** [sase-bc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bc/README.md)
 
 # Plan: Commit-time file hooks + `bob highlights create`

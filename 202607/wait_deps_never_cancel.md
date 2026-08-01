@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/wait_deps_never_cancel.md](prompts/wait_deps_never_cancel.md)
+- **PROMPT:** [prompts/202607/wait_deps_never_cancel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/wait_deps_never_cancel.md)
 - **AGENTS:**
   - [bbugyi200.athena.4o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4o.md#member-code)
 

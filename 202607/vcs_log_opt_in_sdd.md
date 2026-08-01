@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/vcs_log_opt_in_sdd.md](prompts/vcs_log_opt_in_sdd.md)
+- **PROMPT:** [prompts/202607/vcs_log_opt_in_sdd.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_log_opt_in_sdd.md)
 - **AGENTS:**
   - [bbugyi200.athena.4h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4h.md#member-code)
 

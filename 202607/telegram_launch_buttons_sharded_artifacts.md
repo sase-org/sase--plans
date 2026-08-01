@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_launch_buttons_sharded_artifacts.md](prompts/telegram_launch_buttons_sharded_artifacts.md)
+- **PROMPT:** [prompts/202607/telegram_launch_buttons_sharded_artifacts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_launch_buttons_sharded_artifacts.md)
 - **AGENTS:**
   - [bbugyi200.athena.06--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.06.md#member-code)
 

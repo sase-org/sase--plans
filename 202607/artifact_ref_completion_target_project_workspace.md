@@ -9,14 +9,12 @@ create_time: 2026-07-29 16:44:35
 status: done
 ---
 
-- **PROMPT:**
-  [202607/prompts/artifact_ref_completion_target_project_workspace.md](prompts/artifact_ref_completion_target_project_workspace.md)
+- **PROMPT:** [prompts/202607/artifact_ref_completion_target_project_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_ref_completion_target_project_workspace.md)
 - **AGENTS:**
   - [bbugyi200.athena.or--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.or.md#member-code)
   - [bbugyi200.athena.or--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.or.md#member-plan)
 - **COMMITS:**
-  - [03739dc](https://github.com/sase-org/sase/commit/03739dcecdc357d73dba1e83c3edce0b4309a58d) — fix(tui): load
-    artifact catalog from target project
+  - [03739dc](https://github.com/sase-org/sase/commit/03739dcecdc357d73dba1e83c3edce0b4309a58d) — fix(tui): load artifact catalog from target project
 
 # Artifact-Reference Completion: Resolve the Catalog from the Target Project's Workspace
 

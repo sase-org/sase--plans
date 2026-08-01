@@ -5,7 +5,7 @@ bead_id: sase-5w
 tier: epic
 ---
 
-- **PROMPT:** [202607/prompts/projects_repos_workspaces_redesign.md](prompts/projects_repos_workspaces_redesign.md)
+- **PROMPT:** [prompts/202607/projects_repos_workspaces_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/projects_repos_workspaces_redesign.md)
 - **BEAD:** [sase-5w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5w/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.7q.w1--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.w1.md#member-epic)

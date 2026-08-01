@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_config_schema_wheel_packaging.md](prompts/fix_config_schema_wheel_packaging.md)
+- **PROMPT:** [prompts/202607/fix_config_schema_wheel_packaging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_config_schema_wheel_packaging.md)
 
 # Fix Config Center schema-load error on wheel installs (uv tool install)
 

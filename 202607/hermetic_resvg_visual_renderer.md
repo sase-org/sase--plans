@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/hermetic_resvg_visual_renderer.md](prompts/hermetic_resvg_visual_renderer.md)
+- **PROMPT:** [prompts/202607/hermetic_resvg_visual_renderer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hermetic_resvg_visual_renderer.md)
 
 # Unify Visual Snapshot Rendering Across CI and Local Machines (Hermetic resvg Renderer)
 

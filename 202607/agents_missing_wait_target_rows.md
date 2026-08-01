@@ -10,7 +10,7 @@ create_time: 2026-07-21 11:38:04
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_missing_wait_target_rows.md](prompts/agents_missing_wait_target_rows.md)
+- **PROMPT:** [prompts/202607/agents_missing_wait_target_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_missing_wait_target_rows.md)
 - **AGENTS:**
   - [bbugyi200.athena.h8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h8/README.md)
   - [bbugyi200.athena.h8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h8.md#member-code)

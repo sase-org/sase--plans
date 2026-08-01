@@ -50,7 +50,7 @@ status: done
 bead_id: sase-bv
 ---
 
-- **PROMPT:** [202607/prompts/bead_created_by_attribution.md](prompts/bead_created_by_attribution.md)
+- **PROMPT:** [prompts/202607/bead_created_by_attribution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_created_by_attribution.md)
 - **BEAD:** [sase-bv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bv/README.md)
 
 # Plan: Attribute beads to the agent that created them

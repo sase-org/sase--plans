@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_stale_launch_body_patch_targets.md](prompts/fix_stale_launch_body_patch_targets.md)
+- **PROMPT:** [prompts/202607/fix_stale_launch_body_patch_targets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_stale_launch_body_patch_targets.md)
 
 # Fix CI Failure: Stale `mock.patch` Targets After `_launch_body` Split Refactor
 

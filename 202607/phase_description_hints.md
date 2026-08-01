@@ -11,7 +11,7 @@ create_time: 2026-07-17 10:48:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/phase_description_hints.md](prompts/phase_description_hints.md)
+- **PROMPT:** [prompts/202607/phase_description_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_description_hints.md)
 - **AGENTS:**
   - [bbugyi200.athena.by](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.by/README.md)
   - [bbugyi200.athena.by--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.by.md#member-code)

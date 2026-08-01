@@ -10,7 +10,7 @@ create_time: 2026-07-18 07:24:36
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/clan_unread_navigation.md](prompts/clan_unread_navigation.md)
+- **PROMPT:** [prompts/202607/clan_unread_navigation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_unread_navigation.md)
 - **AGENTS:**
   - [bbugyi200.athena.cx.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.w1.md#member-code)
 

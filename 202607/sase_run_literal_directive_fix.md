@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/sase_run_literal_directive_fix.md](prompts/sase_run_literal_directive_fix.md)
+- **PROMPT:** [prompts/202607/sase_run_literal_directive_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_run_literal_directive_fix.md)
 - **AGENTS:**
   - [bbugyi200.athena.04--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.04.md#member-code)
   - [bbugyi200.athena.04--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.04.md#member-plan-0)

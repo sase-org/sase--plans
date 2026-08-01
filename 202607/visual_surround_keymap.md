@@ -10,7 +10,7 @@ create_time: 2026-07-21 16:07:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/visual_surround_keymap.md](prompts/visual_surround_keymap.md)
+- **PROMPT:** [prompts/202607/visual_surround_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/visual_surround_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.hg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hg/README.md)
   - [bbugyi200.athena.hg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hg.md#member-code)

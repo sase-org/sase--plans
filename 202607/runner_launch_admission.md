@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/runner_launch_admission.md](prompts/runner_launch_admission.md)
+- **PROMPT:** [prompts/202607/runner_launch_admission.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/runner_launch_admission.md)
 - **AGENTS:**
   - [bbugyi200.athena.7v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7v/README.md)
   - [bbugyi200.athena.7v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7v.md#member-code)

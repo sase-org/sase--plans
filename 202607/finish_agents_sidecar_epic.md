@@ -8,7 +8,7 @@ create_time: 2026-07-22 17:12:26
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_agents_sidecar_epic.md](prompts/finish_agents_sidecar_epic.md)
+- **PROMPT:** [prompts/202607/finish_agents_sidecar_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_agents_sidecar_epic.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
 - **BEAD:** [sase-8k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/README.md)
 - **AGENTS:**

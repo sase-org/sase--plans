@@ -9,7 +9,7 @@ create_time: 2026-07-21 08:22:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/shared_word_completion_min_length.md](prompts/shared_word_completion_min_length.md)
+- **PROMPT:** [prompts/202607/shared_word_completion_min_length.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/shared_word_completion_min_length.md)
 - **AGENTS:**
   - [bbugyi200.athena.gx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gx/README.md)
   - [bbugyi200.athena.gx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gx.md#member-code)

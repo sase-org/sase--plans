@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/prs_tab_onboarding.md](prompts/prs_tab_onboarding.md)
+- **PROMPT:** [prompts/202607/prs_tab_onboarding.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prs_tab_onboarding.md)
 
 # PRs Tab Onboarding Page
 

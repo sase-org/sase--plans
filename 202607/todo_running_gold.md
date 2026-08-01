@@ -10,7 +10,7 @@ create_time: 2026-07-22 09:18:23
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/todo_running_gold.md](prompts/todo_running_gold.md)
+- **PROMPT:** [prompts/202607/todo_running_gold.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/todo_running_gold.md)
 - **AGENTS:**
   - [bbugyi200.athena.i3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i3/README.md)
   - [bbugyi200.athena.i3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i3.md#member-code)

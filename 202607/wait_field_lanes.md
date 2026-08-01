@@ -8,7 +8,7 @@ create_time: 2026-07-28 09:26:10
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/wait_field_lanes.md](prompts/wait_field_lanes.md)
+- **PROMPT:** [prompts/202607/wait_field_lanes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/wait_field_lanes.md)
 - **AGENTS:**
   - [bbugyi200.athena.mw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mw.md#member-code)
 - **COMMITS:**

@@ -8,13 +8,12 @@ create_time: 2026-07-29 10:17:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ctrl_j_exit_populated_bullet.md](prompts/ctrl_j_exit_populated_bullet.md)
+- **PROMPT:** [prompts/202607/ctrl_j_exit_populated_bullet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ctrl_j_exit_populated_bullet.md)
 - **AGENTS:**
   - [bbugyi200.athena.o7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o7.md#member-code)
   - [bbugyi200.athena.o7--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.o7.md#member-plan)
 - **COMMITS:**
-  - [3463978](https://github.com/sase-org/sase/commit/3463978fb3b571b5770eae676279ded54b39f780) — fix(ace): exit
-    populated bullets with ctrl+j
+  - [3463978](https://github.com/sase-org/sase/commit/3463978fb3b571b5770eae676279ded54b39f780) — fix(ace): exit populated bullets with ctrl+j
 
 # Plan: Exit prompt bullets from the marker content column
 

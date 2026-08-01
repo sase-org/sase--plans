@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_arg_color.md](prompts/xprompt_arg_color.md)
+- **PROMPT:** [prompts/202607/xprompt_arg_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_arg_color.md)
 - **AGENTS:**
   - [bbugyi200.athena.8b](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8b/README.md)
   - [bbugyi200.athena.8b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8b.md#member-code)

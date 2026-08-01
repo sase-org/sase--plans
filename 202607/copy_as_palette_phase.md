@@ -9,15 +9,14 @@ create_time: 2026-07-29 20:34:42
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/copy_as_palette_phase.md](prompts/copy_as_palette_phase.md)
+- **PROMPT:** [prompts/202607/copy_as_palette_phase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/copy_as_palette_phase.md)
 - **PARENT:** [202607/copy_as_palette.md](https://github.com/sase-org/sase--plans/blob/main/202607/copy_as_palette.md)
 - **BEAD:** [sase-az.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-az/sase-az.3.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-az.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-az.3.md#member-code)
   - [bbugyi200.athena.sase-az.3--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-az.3.md#member-plan)
 - **COMMITS:**
-  - [3da9140](https://github.com/sase-org/sase/commit/3da9140b4968f590f84ace1db91f21c565746381) — feat(ace): add
-    contextual Copy as palette
+  - [3da9140](https://github.com/sase-org/sase/commit/3da9140b4968f590f84ace1db91f21c565746381) — feat(ace): add contextual Copy as palette
 
 # Plan: Add the ACE “Copy as…” palette
 

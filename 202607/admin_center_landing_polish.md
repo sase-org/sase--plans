@@ -11,7 +11,7 @@ create_time: 2026-07-20 13:02:37
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/admin_center_landing_polish.md](prompts/admin_center_landing_polish.md)
+- **PROMPT:** [prompts/202607/admin_center_landing_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/admin_center_landing_polish.md)
 - **AGENTS:**
   - [bbugyi200.athena.gc.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gc.f0/README.md)
   - [bbugyi200.athena.gc.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gc.f0.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/rename_toolong_to_toobig.md](prompts/rename_toolong_to_toobig.md)
+- **PROMPT:** [prompts/202607/rename_toolong_to_toobig.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/rename_toolong_to_toobig.md)
 - **AGENTS:**
   - [bbugyi200.athena.7a](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7a/README.md)
   - [bbugyi200.athena.7a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7a.md#member-code)

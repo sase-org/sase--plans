@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_chop_credentials.md](prompts/telegram_chop_credentials.md)
+- **PROMPT:** [prompts/202607/telegram_chop_credentials.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_chop_credentials.md)
 
 # Fix tg_inbound / tg_outbound Telegram Chop Errors (Credentials, Not Executables)
 

@@ -5,7 +5,7 @@ tier: epic
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/first_blog_post.md](prompts/first_blog_post.md)
+- **PROMPT:** [prompts/202607/first_blog_post.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/first_blog_post.md)
 - **BEAD:** [sase-5k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5k/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.1n--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1n.md#member-epic)

@@ -10,7 +10,7 @@ create_time: 2026-07-22 08:11:46
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_panel_h_collapse_ladder.md](prompts/tribe_panel_h_collapse_ladder.md)
+- **PROMPT:** [prompts/202607/tribe_panel_h_collapse_ladder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_panel_h_collapse_ladder.md)
 - **AGENTS:**
   - [bbugyi200.athena.hq.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hq.f2/README.md)
   - [bbugyi200.athena.hq.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hq.f2.md#member-code)

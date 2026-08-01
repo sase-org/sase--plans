@@ -8,7 +8,7 @@ create_time: 2026-07-28 08:01:53
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fold_slow_tool_commands.md](prompts/fold_slow_tool_commands.md)
+- **PROMPT:** [prompts/202607/fold_slow_tool_commands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fold_slow_tool_commands.md)
 - **AGENTS:**
   - [bbugyi200.athena.mr.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.f1.md#member-code)
 - **COMMITS:**

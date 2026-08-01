@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/question_notification_summary.md](prompts/question_notification_summary.md)
+- **PROMPT:** [prompts/202607/question_notification_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/question_notification_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.85](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.85/README.md)
   - [bbugyi200.athena.85--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.85.md#member-code)

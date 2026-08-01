@@ -8,7 +8,7 @@ create_time: 2026-07-23 08:15:37
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/capitalized_snippet_core.md](prompts/capitalized_snippet_core.md)
+- **PROMPT:** [prompts/202607/capitalized_snippet_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/capitalized_snippet_core.md)
 - **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
 - **BEAD:** [sase-8u.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8u/sase-8u.1.md)
 - **AGENTS:**

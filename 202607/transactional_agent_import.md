@@ -9,7 +9,7 @@ create_time: 2026-07-24 14:30:06
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/transactional_agent_import.md](prompts/transactional_agent_import.md)
+- **PROMPT:** [prompts/202607/transactional_agent_import.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/transactional_agent_import.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
 - **BEAD:** [sase-8v.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.5.md)
 - **AGENTS:**

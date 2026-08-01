@@ -10,7 +10,7 @@ create_time: 2026-07-18 19:47:34
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_sase_6x_landing.md](prompts/finish_sase_6x_landing.md)
+- **PROMPT:** [prompts/202607/finish_sase_6x_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_sase_6x_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6x.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6x.land.md#member-code)
   - [bbugyi200.athena.sase-6x.land--code-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6x.land.md#member-code-0)

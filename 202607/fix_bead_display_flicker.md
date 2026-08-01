@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_bead_display_flicker.md](prompts/fix_bead_display_flicker.md)
+- **PROMPT:** [prompts/202607/fix_bead_display_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_bead_display_flicker.md)
 
 # Fix flickering `Bead:` field in the ace TUI agent metadata panel
 

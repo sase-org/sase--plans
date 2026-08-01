@@ -7,7 +7,7 @@ create_time: 2026-07-20 16:37:03
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/retry_family_phase_agents.md](prompts/retry_family_phase_agents.md)
+- **PROMPT:** [prompts/202607/retry_family_phase_agents.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/retry_family_phase_agents.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8g.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.2/README.md)
   - [bbugyi200.athena.sase-8g.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.2.md#member-code)

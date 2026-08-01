@@ -8,7 +8,7 @@ create_time: 2026-07-24 18:13:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/claimed_status_landing.md](prompts/claimed_status_landing.md)
+- **PROMPT:** [prompts/202607/claimed_status_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/claimed_status_landing.md)
 - **PARENT:** [202607/claimed_bead_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/claimed_bead_status.md)
 - **BEAD:** [sase-8y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8y/README.md)
 - **AGENTS:**

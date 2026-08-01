@@ -9,7 +9,7 @@ create_time: 2026-07-21 11:42:01
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/post_preparation_clan_summary_reresolution.md](prompts/post_preparation_clan_summary_reresolution.md)
+- **PROMPT:** [prompts/202607/post_preparation_clan_summary_reresolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/post_preparation_clan_summary_reresolution.md)
 - **PARENT:** [202607/race_free_epic_clan_summaries.md](https://github.com/sase-org/sase--plans/blob/main/202607/race_free_epic_clan_summaries.md)
 - **BEAD:** [sase-8i.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8i/sase-8i.3.md)
 - **AGENTS:**

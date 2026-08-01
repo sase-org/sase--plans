@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/multi_commit_view_navigation.md](prompts/multi_commit_view_navigation.md)
+- **PROMPT:** [prompts/202607/multi_commit_view_navigation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/multi_commit_view_navigation.md)
 - **AGENTS:**
   - [bbugyi200.athena.3o.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3o.f-0.md#member-code)
 

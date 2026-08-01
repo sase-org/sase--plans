@@ -7,7 +7,7 @@ create_time: 2026-07-23 13:16:19
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_lane_rename.md](prompts/agent_lane_rename.md)
+- **PROMPT:** [prompts/202607/agent_lane_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_lane_rename.md)
 - **AGENTS:**
   - [bbugyi200.athena.jf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jf/README.md)
   - [bbugyi200.athena.jf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jf.md#member-code)

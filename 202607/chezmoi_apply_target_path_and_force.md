@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/chezmoi_apply_target_path_and_force.md](prompts/chezmoi_apply_target_path_and_force.md)
+- **PROMPT:** [prompts/202607/chezmoi_apply_target_path_and_force.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chezmoi_apply_target_path_and_force.md)
 
 # Plan: Fix `chezmoi apply` "not in source state" on config/model-alias edits, and always use `--force`
 

@@ -10,7 +10,7 @@ create_time: 2026-07-19 07:25:19
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_admin_center_digit_keymaps.md](prompts/restore_admin_center_digit_keymaps.md)
+- **PROMPT:** [prompts/202607/restore_admin_center_digit_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_admin_center_digit_keymaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.ec](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ec/README.md)
   - [bbugyi200.athena.ec--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ec.md#member-code)

@@ -8,7 +8,7 @@ create_time: 2026-07-27 11:55:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_sase_9y.md](prompts/land_sase_9y.md)
+- **PROMPT:** [prompts/202607/land_sase_9y.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_sase_9y.md)
 - **PARENT:** [202607/fix_ci_bead_isolation_and_visual_flakes.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_bead_isolation_and_visual_flakes.md)
 - **BEAD:** [sase-9y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9y/README.md)
 - **AGENTS:**

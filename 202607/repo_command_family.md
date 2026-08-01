@@ -5,7 +5,7 @@ bead_id: sase-5x
 tier: epic
 ---
 
-- **PROMPT:** [202607/prompts/repo_command_family.md](prompts/repo_command_family.md)
+- **PROMPT:** [prompts/202607/repo_command_family.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/repo_command_family.md)
 - **BEAD:** [sase-5x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5x/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5w.f3--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5w.f3.md#member-epic)

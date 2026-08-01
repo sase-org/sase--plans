@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/admin_center_tab_keymap_swap.md](prompts/admin_center_tab_keymap_swap.md)
+- **PROMPT:** [prompts/202607/admin_center_tab_keymap_swap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/admin_center_tab_keymap_swap.md)
 - **AGENTS:**
   - [bbugyi200.athena.7r](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7r/README.md)
   - [bbugyi200.athena.7r--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7r.md#member-code)

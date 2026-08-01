@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/plugins_marked_batch_install.md](prompts/plugins_marked_batch_install.md)
+- **PROMPT:** [prompts/202607/plugins_marked_batch_install.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plugins_marked_batch_install.md)
 - **AGENTS:**
   - [bbugyi200.athena.07--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.07.md#member-code)
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/logs_apostrophe_jump.md](prompts/logs_apostrophe_jump.md)
+- **PROMPT:** [prompts/202607/logs_apostrophe_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/logs_apostrophe_jump.md)
 - **AGENTS:**
   - [bbugyi200.athena.1j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1j.md#member-code)
 

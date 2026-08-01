@@ -6,7 +6,7 @@ create_time: 2026-07-15 08:22:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/workspace_local_core_fallback.md](prompts/workspace_local_core_fallback.md)
+- **PROMPT:** [prompts/202607/workspace_local_core_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/workspace_local_core_fallback.md)
 - **AGENTS:**
   - [bbugyi200.athena.8v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8v/README.md)
   - [bbugyi200.athena.8v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8v.md#member-code)

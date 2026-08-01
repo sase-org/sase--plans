@@ -13,7 +13,7 @@ create_time: 2026-07-19 18:43:04
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_panel_display_config.md](prompts/tribe_panel_display_config.md)
+- **PROMPT:** [prompts/202607/tribe_panel_display_config.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_panel_display_config.md)
 - **AGENTS:**
   - [bbugyi200.athena.fi](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fi/README.md)
   - [bbugyi200.athena.fi--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fi.md#member-code)

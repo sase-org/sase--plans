@@ -8,7 +8,7 @@ create_time: 2026-07-21 08:33:26
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/phase_worker_alias_bucket.md](prompts/phase_worker_alias_bucket.md)
+- **PROMPT:** [prompts/202607/phase_worker_alias_bucket.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_worker_alias_bucket.md)
 - **AGENTS:**
   - [bbugyi200.athena.gy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy/README.md)
   - [bbugyi200.athena.gy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.md#member-code)

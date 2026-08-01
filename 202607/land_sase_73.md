@@ -27,7 +27,7 @@ status: done
 bead_id: sase-7f
 ---
 
-- **PROMPT:** [202607/prompts/land_sase_73.md](prompts/land_sase_73.md)
+- **PROMPT:** [prompts/202607/land_sase_73.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_sase_73.md)
 - **BEAD:** [sase-7f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7f/README.md)
 
 # Plan: Integrate and land smart summary folding

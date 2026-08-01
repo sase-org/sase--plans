@@ -10,7 +10,7 @@ create_time: 2026-07-20 12:10:54
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/distribution_scheduling.md](prompts/distribution_scheduling.md)
+- **PROMPT:** [prompts/202607/distribution_scheduling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/distribution_scheduling.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-86.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.4/README.md)
   - [bbugyi200.athena.sase-86.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.4.md#member-code)

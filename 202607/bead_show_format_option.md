@@ -9,7 +9,7 @@ create_time: 2026-07-27 10:42:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_show_format_option.md](prompts/bead_show_format_option.md)
+- **PROMPT:** [prompts/202607/bead_show_format_option.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_show_format_option.md)
 - **AGENTS:**
   - [bbugyi200.athena.m9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m9/README.md)
   - [bbugyi200.athena.m9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m9.md#member-code)

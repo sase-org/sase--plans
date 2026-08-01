@@ -44,7 +44,7 @@ status: done
 bead_id: sase-ah
 ---
 
-- **PROMPT:** [202607/prompts/agent_publication_reliability.md](prompts/agent_publication_reliability.md)
+- **PROMPT:** [prompts/202607/agent_publication_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_publication_reliability.md)
 - **BEAD:** [sase-ah](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ah/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-ag.land.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ag.land.f0/README.md)

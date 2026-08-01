@@ -11,7 +11,7 @@ create_time: 2026-07-19 08:33:50
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/epic_tale_pending_statuses.md](prompts/epic_tale_pending_statuses.md)
+- **PROMPT:** [prompts/202607/epic_tale_pending_statuses.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_tale_pending_statuses.md)
 - **AGENTS:**
   - [bbugyi200.athena.el--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.el.md#member-code)
 

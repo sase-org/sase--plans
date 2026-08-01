@@ -7,7 +7,7 @@ create_time: 2026-07-17 17:43:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/compact_bead_phase_identity.md](prompts/compact_bead_phase_identity.md)
+- **PROMPT:** [prompts/202607/compact_bead_phase_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/compact_bead_phase_identity.md)
 - **AGENTS:**
   - [bbugyi200.athena.cl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cl/README.md)
   - [bbugyi200.athena.cl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cl.md#member-code)

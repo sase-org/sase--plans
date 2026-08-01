@@ -6,7 +6,7 @@ create_time: 2026-07-15 12:24:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/visual_snapshot_freshness.md](prompts/visual_snapshot_freshness.md)
+- **PROMPT:** [prompts/202607/visual_snapshot_freshness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/visual_snapshot_freshness.md)
 - **AGENTS:**
   - [bbugyi200.athena.96.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.96.f1/README.md)
   - [bbugyi200.athena.96.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.96.f1.md#member-code)

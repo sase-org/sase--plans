@@ -9,7 +9,7 @@ create_time: 2026-07-28 12:52:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_sidecar_infographic.md](prompts/agents_sidecar_infographic.md)
+- **PROMPT:** [prompts/202607/agents_sidecar_infographic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_sidecar_infographic.md)
 - **AGENTS:**
   - [bbugyi200.athena.n6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n6.md#member-code)
 - **COMMITS:**

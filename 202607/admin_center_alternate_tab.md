@@ -8,7 +8,7 @@ create_time: 2026-07-31 07:34:11
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/admin_center_alternate_tab.md](prompts/admin_center_alternate_tab.md)
+- **PROMPT:** [prompts/202607/admin_center_alternate_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/admin_center_alternate_tab.md)
 
 # Plan: Admin Center alternate-section jump (`#` inside a tab)
 

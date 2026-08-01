@@ -7,7 +7,7 @@ create_time: 2026-07-16 12:35:22
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/telegram_plan_frontmatter_properties.md](prompts/telegram_plan_frontmatter_properties.md)
+- **PROMPT:** [prompts/202607/telegram_plan_frontmatter_properties.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_plan_frontmatter_properties.md)
 - **AGENTS:**
   - [bbugyi200.athena.ai--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ai.md#member-code)
 

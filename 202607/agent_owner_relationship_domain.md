@@ -9,7 +9,7 @@ create_time: 2026-07-23 13:05:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_owner_relationship_domain.md](prompts/agent_owner_relationship_domain.md)
+- **PROMPT:** [prompts/202607/agent_owner_relationship_domain.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_owner_relationship_domain.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
 - **BEAD:** [sase-8v.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.1.md)
 - **AGENTS:**

@@ -9,7 +9,7 @@ create_time: 2026-07-16 13:29:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/reference_commit_tag_links.md](prompts/reference_commit_tag_links.md)
+- **PROMPT:** [prompts/202607/reference_commit_tag_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/reference_commit_tag_links.md)
 - **AGENTS:**
   - [bbugyi200.athena.an](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.an/README.md)
   - [bbugyi200.athena.an--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.an.md#member-code)

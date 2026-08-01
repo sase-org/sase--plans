@@ -8,7 +8,7 @@ create_time: 2026-07-28 11:30:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/var_set_multiline_values.md](prompts/var_set_multiline_values.md)
+- **PROMPT:** [prompts/202607/var_set_multiline_values.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/var_set_multiline_values.md)
 - **AGENTS:**
   - [bbugyi200.athena.n0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n0.md#member-code)
 - **COMMITS:**

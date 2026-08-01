@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/auto_commit_qa_prompt_snapshot.md](prompts/auto_commit_qa_prompt_snapshot.md)
+- **PROMPT:** [prompts/202607/auto_commit_qa_prompt_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/auto_commit_qa_prompt_snapshot.md)
 - **AGENTS:**
   - [bbugyi200.athena.7n](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7n/README.md)
   - [bbugyi200.athena.7n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7n.md#member-code)

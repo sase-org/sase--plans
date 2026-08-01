@@ -77,7 +77,7 @@ status: done
 bead_id: sase-b0
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_files_subtab.md](prompts/artifacts_files_subtab.md)
+- **PROMPT:** [prompts/202607/artifacts_files_subtab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_files_subtab.md)
 - **BEAD:** [sase-b0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b0/README.md)
 
 # Plan: Artifacts → Files sub-tab

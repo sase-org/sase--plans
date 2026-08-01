@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/artifact_type_icons.md](prompts/artifact_type_icons.md)
+- **PROMPT:** [prompts/202607/artifact_type_icons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_type_icons.md)
 - **AGENTS:**
   - [bbugyi200.athena.5q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5q.md#member-code)
 

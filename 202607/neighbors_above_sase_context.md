@@ -10,7 +10,7 @@ create_time: 2026-07-25 13:44:00
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/neighbors_above_sase_context.md](prompts/neighbors_above_sase_context.md)
+- **PROMPT:** [prompts/202607/neighbors_above_sase_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/neighbors_above_sase_context.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-99.land.f3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-99.land.f3/README.md)
   - [bbugyi200.athena.sase-99.land.f3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-99.land.f3.md#member-code)

@@ -7,7 +7,7 @@ create_time: 2026-07-26 10:24:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/publish_id_bead_claims.md](prompts/publish_id_bead_claims.md)
+- **PROMPT:** [prompts/202607/publish_id_bead_claims.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/publish_id_bead_claims.md)
 - **AGENTS:**
   - [bbugyi200.athena.lm](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lm/README.md)
   - [bbugyi200.athena.lm--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lm.md#member-code)

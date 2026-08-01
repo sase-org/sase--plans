@@ -8,7 +8,7 @@ create_time: 2026-07-16 07:42:00
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/required_plan_titles.md](prompts/required_plan_titles.md)
+- **PROMPT:** [prompts/202607/required_plan_titles.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/required_plan_titles.md)
 - **AGENTS:**
   - [bbugyi200.athena.a4.w0.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a4.w0.w0/README.md)
   - [bbugyi200.athena.a4.w0.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a4.w0.w0.md#member-code)

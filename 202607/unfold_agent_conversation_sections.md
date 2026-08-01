@@ -7,7 +7,7 @@ create_time: 2026-07-28 07:02:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/unfold_agent_conversation_sections.md](prompts/unfold_agent_conversation_sections.md)
+- **PROMPT:** [prompts/202607/unfold_agent_conversation_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/unfold_agent_conversation_sections.md)
 - **AGENTS:**
   - [bbugyi200.athena.mr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mr/README.md)
   - [bbugyi200.athena.mr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mr.md#member-code)

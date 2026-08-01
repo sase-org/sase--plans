@@ -7,7 +7,7 @@ create_time: 2026-07-23 10:26:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_ctrl_j_auto_bullets.md](prompts/prompt_ctrl_j_auto_bullets.md)
+- **PROMPT:** [prompts/202607/prompt_ctrl_j_auto_bullets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_ctrl_j_auto_bullets.md)
 - **AGENTS:**
   - [bbugyi200.athena.j1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j1/README.md)
   - [bbugyi200.athena.j1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j1.md#member-code)

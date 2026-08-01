@@ -11,7 +11,7 @@ create_time: 2026-07-19 10:53:33
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_agent_count_projection.md](prompts/tribe_agent_count_projection.md)
+- **PROMPT:** [prompts/202607/tribe_agent_count_projection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_agent_count_projection.md)
 - **AGENTS:**
   - [bbugyi200.athena.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f0/README.md)
   - [bbugyi200.athena.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f0.md#member-code)

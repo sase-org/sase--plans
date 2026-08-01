@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_state_column_alignment.md](prompts/models_panel_state_column_alignment.md)
+- **PROMPT:** [prompts/202607/models_panel_state_column_alignment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_state_column_alignment.md)
 
 # Plan: Align the Models panel state column
 

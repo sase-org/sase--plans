@@ -81,7 +81,7 @@ status: done
 bead_id: sase-b8
 ---
 
-- **PROMPT:** [202607/prompts/family_scoped_agent_provenance.md](prompts/family_scoped_agent_provenance.md)
+- **PROMPT:** [prompts/202607/family_scoped_agent_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/family_scoped_agent_provenance.md)
 - **BEAD:** [sase-b8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b8/README.md)
 
 # Plan: Anchor agent commit provenance on the agent lane instead of the family member

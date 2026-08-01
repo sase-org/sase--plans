@@ -81,7 +81,7 @@ status: done
 bead_id: sase-9t
 ---
 
-- **PROMPT:** [202607/prompts/axe_required_descriptions.md](prompts/axe_required_descriptions.md)
+- **PROMPT:** [prompts/202607/axe_required_descriptions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_required_descriptions.md)
 - **BEAD:** [sase-9t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9t/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9t.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9t.land/README.md)

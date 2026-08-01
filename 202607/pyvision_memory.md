@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/pyvision_memory.md](prompts/pyvision_memory.md)
+- **PROMPT:** [prompts/202607/pyvision_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/pyvision_memory.md)
 - **AGENTS:**
   - [bbugyi200.athena.3j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3j.md#member-code)
 

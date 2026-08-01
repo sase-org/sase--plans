@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/commit_hooks.md](prompts/commit_hooks.md)
+- **PROMPT:** [prompts/202607/commit_hooks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_hooks.md)
 - **AGENTS:**
   - [bbugyi200.athena.5c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5c.md#member-code)
 

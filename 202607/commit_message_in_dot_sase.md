@@ -9,7 +9,7 @@ create_time: 2026-07-31 08:30:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/commit_message_in_dot_sase.md](prompts/commit_message_in_dot_sase.md)
+- **PROMPT:** [prompts/202607/commit_message_in_dot_sase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_message_in_dot_sase.md)
 
 # Plan: Write agent commit messages to `.sase/commit_message.md`
 

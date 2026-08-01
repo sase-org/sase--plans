@@ -8,7 +8,7 @@ create_time: 2026-07-23 13:01:46
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/numbered_gate_options.md](prompts/numbered_gate_options.md)
+- **PROMPT:** [prompts/202607/numbered_gate_options.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/numbered_gate_options.md)
 - **AGENTS:**
   - [bbugyi200.athena.je](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.je/README.md)
   - [bbugyi200.athena.je--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.je.md#member-code)

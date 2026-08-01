@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_flaky_neighbor_modal_visual_test.md](prompts/fix_flaky_neighbor_modal_visual_test.md)
+- **PROMPT:** [prompts/202607/fix_flaky_neighbor_modal_visual_test.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_flaky_neighbor_modal_visual_test.md)
 
 # Fix Flaky CI Visual Test: `test_agent_neighbor_modal_dismissed_descendant_png_snapshot`
 

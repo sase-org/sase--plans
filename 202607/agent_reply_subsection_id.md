@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agent_reply_subsection_id.md](prompts/agent_reply_subsection_id.md)
+- **PROMPT:** [prompts/202607/agent_reply_subsection_id.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_reply_subsection_id.md)
 - **AGENTS:**
   - [bbugyi200.athena.2e.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.2e.f1.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-19 08:06:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_agent_jump_forward.md](prompts/restore_agent_jump_forward.md)
+- **PROMPT:** [prompts/202607/restore_agent_jump_forward.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_agent_jump_forward.md)
 - **AGENTS:**
   - [bbugyi200.athena.eh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eh/README.md)
   - [bbugyi200.athena.eh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eh.md#member-code)

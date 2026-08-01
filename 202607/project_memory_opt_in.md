@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/project_memory_opt_in.md](prompts/project_memory_opt_in.md)
+- **PROMPT:** [prompts/202607/project_memory_opt_in.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/project_memory_opt_in.md)
 - **AGENTS:**
   - [bbugyi200.athena.53--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.53.md#member-code)
 

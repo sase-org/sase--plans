@@ -9,7 +9,7 @@ create_time: 2026-07-22 07:27:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_group_house_collapse_precedence.md](prompts/agents_group_house_collapse_precedence.md)
+- **PROMPT:** [prompts/202607/agents_group_house_collapse_precedence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_group_house_collapse_precedence.md)
 - **AGENTS:**
   - [bbugyi200.athena.hk.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hk.f0.f0/README.md)
   - [bbugyi200.athena.hk.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hk.f0.f0.md#member-code)

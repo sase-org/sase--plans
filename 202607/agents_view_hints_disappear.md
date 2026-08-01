@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agents_view_hints_disappear.md](prompts/agents_view_hints_disappear.md)
+- **PROMPT:** [prompts/202607/agents_view_hints_disappear.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_view_hints_disappear.md)
 - **AGENTS:**
   - [bbugyi200.athena.3o.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3o.w2.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-20 10:27:49
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/phase_bead_children_and_land_sase7z.md](prompts/phase_bead_children_and_land_sase7z.md)
+- **PROMPT:** [prompts/202607/phase_bead_children_and_land_sase7z.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_bead_children_and_land_sase7z.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7z.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7z.land/README.md)
   - [bbugyi200.athena.sase-7z.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7z.land.md#member-code)

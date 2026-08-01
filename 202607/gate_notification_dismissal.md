@@ -8,7 +8,7 @@ create_time: 2026-07-25 10:13:25
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/gate_notification_dismissal.md](prompts/gate_notification_dismissal.md)
+- **PROMPT:** [prompts/202607/gate_notification_dismissal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_notification_dismissal.md)
 - **AGENTS:**
   - [bbugyi200.athena.ko](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ko/README.md)
   - [bbugyi200.athena.ko--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ko.md#member-code)

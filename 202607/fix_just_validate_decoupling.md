@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_just_validate_decoupling.md](prompts/fix_just_validate_decoupling.md)
+- **PROMPT:** [prompts/202607/fix_just_validate_decoupling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_just_validate_decoupling.md)
 - **AGENTS:**
   - [bbugyi200.athena.6l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6l.md#member-code)
 

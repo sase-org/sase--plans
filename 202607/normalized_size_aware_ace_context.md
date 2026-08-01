@@ -11,7 +11,7 @@ create_time: 2026-07-20 14:11:41
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/normalized_size_aware_ace_context.md](prompts/normalized_size_aware_ace_context.md)
+- **PROMPT:** [prompts/202607/normalized_size_aware_ace_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/normalized_size_aware_ace_context.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8b.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8b.1/README.md)
   - [bbugyi200.athena.sase-8b.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8b.1.md#member-code)

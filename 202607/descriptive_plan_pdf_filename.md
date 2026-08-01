@@ -10,7 +10,7 @@ create_time: 2026-07-18 07:43:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/descriptive_plan_pdf_filename.md](prompts/descriptive_plan_pdf_filename.md)
+- **PROMPT:** [prompts/202607/descriptive_plan_pdf_filename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/descriptive_plan_pdf_filename.md)
 - **AGENTS:**
   - [bbugyi200.athena.d5.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d5.f0.md#member-code)
 

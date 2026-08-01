@@ -7,7 +7,7 @@ create_time: 2026-07-25 06:46:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/dotfiles_ruff_markdown.md](prompts/dotfiles_ruff_markdown.md)
+- **PROMPT:** [prompts/202607/dotfiles_ruff_markdown.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/dotfiles_ruff_markdown.md)
 - **AGENTS:**
   - [bbugyi200.athena.k4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k4.md#member-code)
 

@@ -11,7 +11,7 @@ create_time: 2026-07-23 12:40:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/pdf_plan_properties.md](prompts/pdf_plan_properties.md)
+- **PROMPT:** [prompts/202607/pdf_plan_properties.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/pdf_plan_properties.md)
 - **AGENTS:**
   - [bbugyi200.athena.j9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j9/README.md)
   - [bbugyi200.athena.j9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j9.md#member-code)

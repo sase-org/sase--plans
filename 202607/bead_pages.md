@@ -114,7 +114,7 @@ status: done
 bead_id: sase-ai
 ---
 
-- **PROMPT:** [202607/prompts/bead_pages.md](prompts/bead_pages.md)
+- **PROMPT:** [prompts/202607/bead_pages.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_pages.md)
 - **BEAD:** [sase-ai](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ai/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-ai.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ai.1/README.md)

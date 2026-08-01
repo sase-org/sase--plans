@@ -10,7 +10,7 @@ create_time: 2026-07-19 08:24:22
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_tribe_jump_keymaps.md](prompts/agent_tribe_jump_keymaps.md)
+- **PROMPT:** [prompts/202607/agent_tribe_jump_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_tribe_jump_keymaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.ek](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ek/README.md)
   - [bbugyi200.athena.ek--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ek.md#member-code)

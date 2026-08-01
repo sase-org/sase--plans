@@ -35,7 +35,7 @@ status: done
 bead_id: sase-8f
 ---
 
-- **PROMPT:** [202607/prompts/jit_bead_claims.md](prompts/jit_bead_claims.md)
+- **PROMPT:** [prompts/202607/jit_bead_claims.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/jit_bead_claims.md)
 - **BEAD:** [sase-8f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8f/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8f.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.1.md#member-code)

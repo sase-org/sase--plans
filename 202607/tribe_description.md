@@ -8,7 +8,7 @@ create_time: 2026-07-31 07:34:33
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_description.md](prompts/tribe_description.md)
+- **PROMPT:** [prompts/202607/tribe_description.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_description.md)
 
 # Plan: Required `description` For Configured Agent Tribes
 

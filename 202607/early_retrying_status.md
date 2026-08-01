@@ -10,7 +10,7 @@ create_time: 2026-07-17 12:15:10
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/early_retrying_status.md](prompts/early_retrying_status.md)
+- **PROMPT:** [prompts/202607/early_retrying_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/early_retrying_status.md)
 - **AGENTS:**
   - [bbugyi200.athena.c3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c3/README.md)
   - [bbugyi200.athena.c3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c3.md#member-code)

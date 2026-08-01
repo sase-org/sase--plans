@@ -11,7 +11,7 @@ create_time: 2026-07-22 06:31:03
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_all_house_member_navigation.md](prompts/agents_all_house_member_navigation.md)
+- **PROMPT:** [prompts/202607/agents_all_house_member_navigation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_all_house_member_navigation.md)
 - **AGENTS:**
   - [bbugyi200.athena.hk.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hk.f0/README.md)
   - [bbugyi200.athena.hk.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hk.f0.md#member-code)

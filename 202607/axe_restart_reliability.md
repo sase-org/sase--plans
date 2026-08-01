@@ -49,7 +49,7 @@ status: done
 bead_id: sase-7p
 ---
 
-- **PROMPT:** [202607/prompts/axe_restart_reliability.md](prompts/axe_restart_reliability.md)
+- **PROMPT:** [prompts/202607/axe_restart_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_restart_reliability.md)
 - **BEAD:** [sase-7p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7p/README.md)
 
 # Plan: Axe restart reliability and lumberjack outage self-healing

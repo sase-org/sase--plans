@@ -10,7 +10,7 @@ create_time: 2026-07-21 10:01:33
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/default_artifacts_commits.md](prompts/default_artifacts_commits.md)
+- **PROMPT:** [prompts/202607/default_artifacts_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/default_artifacts_commits.md)
 - **AGENTS:**
   - [bbugyi200.athena.h2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h2/README.md)
   - [bbugyi200.athena.h2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h2.md#member-code)

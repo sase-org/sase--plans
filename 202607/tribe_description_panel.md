@@ -9,7 +9,7 @@ create_time: 2026-07-31 08:47:34
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_description_panel.md](prompts/tribe_description_panel.md)
+- **PROMPT:** [prompts/202607/tribe_description_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_description_panel.md)
 
 # Plan: Render the TRIBE panel description as a labeled block below the header fields
 

@@ -10,7 +10,7 @@ create_time: 2026-07-28 10:49:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/family_predecessor_bucket.md](prompts/family_predecessor_bucket.md)
+- **PROMPT:** [prompts/202607/family_predecessor_bucket.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/family_predecessor_bucket.md)
 - **AGENTS:**
   - [bbugyi200.athena.mz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mz.md#member-code)
 - **COMMITS:**

@@ -10,7 +10,7 @@ create_time: 2026-07-18 10:01:24
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/gate_primary_footer.md](prompts/gate_primary_footer.md)
+- **PROMPT:** [prompts/202607/gate_primary_footer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_primary_footer.md)
 - **AGENTS:**
   - [bbugyi200.athena.dd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dd/README.md)
   - [bbugyi200.athena.dd--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dd.md#member-code)

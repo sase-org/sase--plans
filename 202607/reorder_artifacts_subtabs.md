@@ -10,7 +10,7 @@ create_time: 2026-07-21 07:51:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/reorder_artifacts_subtabs.md](prompts/reorder_artifacts_subtabs.md)
+- **PROMPT:** [prompts/202607/reorder_artifacts_subtabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/reorder_artifacts_subtabs.md)
 - **AGENTS:**
   - [bbugyi200.athena.gr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gr/README.md)
   - [bbugyi200.athena.gr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gr.md#member-code)

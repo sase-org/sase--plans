@@ -10,7 +10,7 @@ create_time: 2026-07-20 11:56:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/top_offender_test_optimizations.md](prompts/top_offender_test_optimizations.md)
+- **PROMPT:** [prompts/202607/top_offender_test_optimizations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/top_offender_test_optimizations.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-86.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-86.3/README.md)
   - [bbugyi200.athena.sase-86.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-86.3.md#member-code)

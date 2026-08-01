@@ -8,7 +8,7 @@ create_time: 2026-07-31 07:23:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/promoted_plan_family_status.md](prompts/promoted_plan_family_status.md)
+- **PROMPT:** [prompts/202607/promoted_plan_family_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/promoted_plan_family_status.md)
 
 # Plan: Project plan-family status onto promoted family roots
 

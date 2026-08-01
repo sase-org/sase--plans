@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/stuck_pending_tool_calls.md](prompts/stuck_pending_tool_calls.md)
+- **PROMPT:** [prompts/202607/stuck_pending_tool_calls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/stuck_pending_tool_calls.md)
 - **AGENTS:**
   - [bbugyi200.athena.0z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0z.md#member-code)
 

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/vcs_prefill_display_names.md](prompts/vcs_prefill_display_names.md)
+- **PROMPT:** [prompts/202607/vcs_prefill_display_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_prefill_display_names.md)
 
 # Show the Configured `PROJECT_NAME` (Never the Directory Key) in VCS xprompt Prefill Surfaces
 

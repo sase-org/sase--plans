@@ -7,7 +7,7 @@ create_time: 2026-07-19 07:12:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_stash_delete_all.md](prompts/prompt_stash_delete_all.md)
+- **PROMPT:** [prompts/202607/prompt_stash_delete_all.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_stash_delete_all.md)
 - **AGENTS:**
   - [bbugyi200.athena.e9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e9/README.md)
   - [bbugyi200.athena.e9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e9.md#member-code)

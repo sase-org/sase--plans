@@ -8,7 +8,7 @@ create_time: 2026-07-23 13:28:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/help_guide_tab_content.md](prompts/help_guide_tab_content.md)
+- **PROMPT:** [prompts/202607/help_guide_tab_content.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/help_guide_tab_content.md)
 - **AGENTS:**
   - [bbugyi200.athena.jg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jg/README.md)
   - [bbugyi200.athena.jg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jg.md#member-code)

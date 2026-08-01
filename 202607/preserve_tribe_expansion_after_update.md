@@ -8,7 +8,7 @@ create_time: 2026-07-20 10:17:24
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/preserve_tribe_expansion_after_update.md](prompts/preserve_tribe_expansion_after_update.md)
+- **PROMPT:** [prompts/202607/preserve_tribe_expansion_after_update.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/preserve_tribe_expansion_after_update.md)
 - **AGENTS:**
   - [bbugyi200.athena.g5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g5/README.md)
   - [bbugyi200.athena.g5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g5.md#member-code)

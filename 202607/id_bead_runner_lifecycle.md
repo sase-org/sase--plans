@@ -11,7 +11,7 @@ create_time: 2026-07-20 16:27:54
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/id_bead_runner_lifecycle.md](prompts/id_bead_runner_lifecycle.md)
+- **PROMPT:** [prompts/202607/id_bead_runner_lifecycle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/id_bead_runner_lifecycle.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8f.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8f.2/README.md)
   - [bbugyi200.athena.sase-8f.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8f.2.md#member-code)

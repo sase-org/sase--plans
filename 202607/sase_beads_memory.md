@@ -35,7 +35,7 @@ status: done
 bead_id: sase-cp
 ---
 
-- **PROMPT:** [202607/prompts/sase_beads_memory.md](prompts/sase_beads_memory.md)
+- **PROMPT:** [prompts/202607/sase_beads_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_beads_memory.md)
 - **BEAD:** [sase-cp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cp/README.md)
 
 # Plan: Migrate the sase_beads skill into generated Tier 2 memory

@@ -13,7 +13,7 @@ create_time: 2026-07-18 06:49:02
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ace_commit_diff_render_freeze.md](prompts/ace_commit_diff_render_freeze.md)
+- **PROMPT:** [prompts/202607/ace_commit_diff_render_freeze.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ace_commit_diff_render_freeze.md)
 - **AGENTS:**
   - [bbugyi200.athena.cy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cy/README.md)
   - [bbugyi200.athena.cy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cy.md#member-code)

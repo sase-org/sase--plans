@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/vcs_log_default_tags_fetch_ttl.md](prompts/vcs_log_default_tags_fetch_ttl.md)
+- **PROMPT:** [prompts/202607/vcs_log_default_tags_fetch_ttl.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_log_default_tags_fetch_ttl.md)
 - **AGENTS:**
   - [bbugyi200.athena.3t.f-0.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3t.f-0.f-0.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-21 10:53:53
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_stamp_meta_fallback.md](prompts/bead_stamp_meta_fallback.md)
+- **PROMPT:** [prompts/202607/bead_stamp_meta_fallback.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_stamp_meta_fallback.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8h.1.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8h.1.w1/README.md)
   - [bbugyi200.athena.sase-8h.1.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8h.1.w1.md#member-code)

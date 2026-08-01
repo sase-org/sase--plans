@@ -66,7 +66,7 @@ status: done
 bead_id: sase-91
 ---
 
-- **PROMPT:** [202607/prompts/agents_sidecar_publication_recovery.md](prompts/agents_sidecar_publication_recovery.md)
+- **PROMPT:** [prompts/202607/agents_sidecar_publication_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_sidecar_publication_recovery.md)
 - **BEAD:** [sase-91](https://github.com/sase-org/sase--beads/blob/main/pages/sase-91/README.md)
 
 # Plan: Repair agents-sidecar publication blocked by legacy agent names

@@ -54,7 +54,7 @@ status: wip
 bead_id: sase-6o
 ---
 
-- **PROMPT:** [202607/prompts/gate_one_tap_choices.md](prompts/gate_one_tap_choices.md)
+- **PROMPT:** [prompts/202607/gate_one_tap_choices.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_one_tap_choices.md)
 - **BEAD:** sase-6o
 - **AGENTS:**
   - [bbugyi200.athena.sase-6o](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6o/README.md)

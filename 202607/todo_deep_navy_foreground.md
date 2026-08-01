@@ -7,7 +7,7 @@ create_time: 2026-07-22 11:01:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/todo_deep_navy_foreground.md](prompts/todo_deep_navy_foreground.md)
+- **PROMPT:** [prompts/202607/todo_deep_navy_foreground.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/todo_deep_navy_foreground.md)
 - **AGENTS:**
   - [bbugyi200.athena.i7.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i7.f0/README.md)
   - [bbugyi200.athena.i7.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i7.f0.md#member-code)

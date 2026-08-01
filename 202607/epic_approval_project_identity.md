@@ -8,7 +8,7 @@ create_time: 2026-07-15 17:04:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_approval_project_identity.md](prompts/epic_approval_project_identity.md)
+- **PROMPT:** [prompts/202607/epic_approval_project_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_approval_project_identity.md)
 - **AGENTS:**
   - [bbugyi200.athena.9s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9s/README.md)
   - [bbugyi200.athena.9s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9s.md#member-code)

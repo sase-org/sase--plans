@@ -9,7 +9,7 @@ create_time: 2026-07-28 13:12:58
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_plan_header_provenance.md](prompts/land_plan_header_provenance.md)
+- **PROMPT:** [prompts/202607/land_plan_header_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_plan_header_provenance.md)
 - **PARENT:** [202607/plan_header_provenance.md](https://github.com/sase-org/sase--plans/blob/main/202607/plan_header_provenance.md)
 - **BEAD:** [sase-ag](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ag/README.md)
 - **AGENTS:**

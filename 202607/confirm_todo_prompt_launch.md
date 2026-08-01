@@ -8,7 +8,7 @@ create_time: 2026-07-23 11:24:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/confirm_todo_prompt_launch.md](prompts/confirm_todo_prompt_launch.md)
+- **PROMPT:** [prompts/202607/confirm_todo_prompt_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/confirm_todo_prompt_launch.md)
 - **AGENTS:**
   - [bbugyi200.athena.j4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.j4/README.md)
   - [bbugyi200.athena.j4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j4.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/research_swarm_lead_month_dir.md](prompts/research_swarm_lead_month_dir.md)
+- **PROMPT:** [prompts/202607/research_swarm_lead_month_dir.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/research_swarm_lead_month_dir.md)
 - **AGENTS:**
   - [bbugyi200.athena.7q.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.w0.md#member-code)
   - [bbugyi200.athena.7q.w0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.w0.md#member-plan)

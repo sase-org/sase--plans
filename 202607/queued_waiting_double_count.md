@@ -8,7 +8,7 @@ create_time: 2026-07-25 09:43:37
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/queued_waiting_double_count.md](prompts/queued_waiting_double_count.md)
+- **PROMPT:** [prompts/202607/queued_waiting_double_count.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/queued_waiting_double_count.md)
 - **AGENTS:**
   - [bbugyi200.athena.kh.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kh.f2/README.md)
   - [bbugyi200.athena.kh.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kh.f2.md#member-code)

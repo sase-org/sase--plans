@@ -9,7 +9,7 @@ create_time: 2026-07-27 07:38:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_row_running_count.md](prompts/clan_row_running_count.md)
+- **PROMPT:** [prompts/202607/clan_row_running_count.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_row_running_count.md)
 - **AGENTS:**
   - [bbugyi200.athena.m1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m1/README.md)
   - [bbugyi200.athena.m1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m1.md#member-code)

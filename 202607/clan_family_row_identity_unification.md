@@ -12,7 +12,7 @@ create_time: 2026-07-18 09:54:48
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/clan_family_row_identity_unification.md](prompts/clan_family_row_identity_unification.md)
+- **PROMPT:** [prompts/202607/clan_family_row_identity_unification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_family_row_identity_unification.md)
 - **AGENTS:**
   - [bbugyi200.athena.d7.w1.f1.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1.f1.f0/README.md)
   - [bbugyi200.athena.d7.w1.f1.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.f1.f0.md#member-code)

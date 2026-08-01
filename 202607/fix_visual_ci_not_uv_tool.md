@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_visual_ci_not_uv_tool.md](prompts/fix_visual_ci_not_uv_tool.md)
+- **PROMPT:** [prompts/202607/fix_visual_ci_not_uv_tool.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_visual_ci_not_uv_tool.md)
 
 # Fix master CI: deterministic `not_uv_tool` visual snapshot (unmocked `gh api` + stale golden)
 

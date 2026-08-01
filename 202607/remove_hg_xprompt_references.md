@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_hg_xprompt_references.md](prompts/remove_hg_xprompt_references.md)
+- **PROMPT:** [prompts/202607/remove_hg_xprompt_references.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_hg_xprompt_references.md)
 - **AGENTS:**
   - [bbugyi200.athena.49--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.49.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-19 16:20:02
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/selected_tribe_panel_title_highlight.md](prompts/selected_tribe_panel_title_highlight.md)
+- **PROMPT:** [prompts/202607/selected_tribe_panel_title_highlight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/selected_tribe_panel_title_highlight.md)
 - **AGENTS:**
   - [bbugyi200.athena.fd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fd/README.md)
   - [bbugyi200.athena.fd--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fd.md#member-code)

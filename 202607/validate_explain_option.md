@@ -10,7 +10,7 @@ create_time: 2026-07-22 09:44:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/validate_explain_option.md](prompts/validate_explain_option.md)
+- **PROMPT:** [prompts/202607/validate_explain_option.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/validate_explain_option.md)
 - **AGENTS:**
   - [bbugyi200.athena.i5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i5/README.md)
   - [bbugyi200.athena.i5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i5.md#member-code)

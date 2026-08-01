@@ -11,7 +11,7 @@ create_time: 2026-07-18 20:37:22
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_work_clan_container_wipe.md](prompts/bead_work_clan_container_wipe.md)
+- **PROMPT:** [prompts/202607/bead_work_clan_container_wipe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_work_clan_container_wipe.md)
 - **AGENTS:**
   - [bbugyi200.athena.e5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e5/README.md)
   - [bbugyi200.athena.e5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e5.md#member-code)

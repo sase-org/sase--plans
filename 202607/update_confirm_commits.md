@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/update_confirm_commits.md](prompts/update_confirm_commits.md)
+- **PROMPT:** [prompts/202607/update_confirm_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/update_confirm_commits.md)
 - **AGENTS:**
   - [bbugyi200.athena.0s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0s.md#member-code)
 

@@ -6,7 +6,7 @@ create_time: 2026-07-31 10:38:19
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/unlabel_tribe_description.md](prompts/unlabel_tribe_description.md)
+- **PROMPT:** [prompts/202607/unlabel_tribe_description.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/unlabel_tribe_description.md)
 
 # Unlabel the agent tribe description summary
 

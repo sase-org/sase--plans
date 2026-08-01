@@ -7,9 +7,8 @@ create_time: 2026-07-31 09:43:56
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_conventional_commit_gate.md](prompts/land_conventional_commit_gate.md)
-- **PARENT:**
-  [202607/conventional_commit_subject_gate.md](https://github.com/sase-org/sase--plans/blob/main/202607/conventional_commit_subject_gate.md)
+- **PROMPT:** [prompts/202607/land_conventional_commit_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_conventional_commit_gate.md)
+- **PARENT:** [202607/conventional_commit_subject_gate.md](https://github.com/sase-org/sase--plans/blob/main/202607/conventional_commit_subject_gate.md)
 - **BEAD:** [sase-bj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bj/README.md)
 
 # Finish and land epic `sase-bj`

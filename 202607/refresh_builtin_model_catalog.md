@@ -6,7 +6,7 @@ create_time: 2026-07-31 06:59:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/refresh_builtin_model_catalog.md](prompts/refresh_builtin_model_catalog.md)
+- **PROMPT:** [prompts/202607/refresh_builtin_model_catalog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/refresh_builtin_model_catalog.md)
 
 # Refresh the Builtin Model Catalog
 

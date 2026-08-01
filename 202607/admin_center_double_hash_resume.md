@@ -10,7 +10,7 @@ create_time: 2026-07-20 13:36:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/admin_center_double_hash_resume.md](prompts/admin_center_double_hash_resume.md)
+- **PROMPT:** [prompts/202607/admin_center_double_hash_resume.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/admin_center_double_hash_resume.md)
 - **AGENTS:**
   - [bbugyi200.athena.gc.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gc.f0.f0/README.md)
   - [bbugyi200.athena.gc.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gc.f0.f0.md#member-code)

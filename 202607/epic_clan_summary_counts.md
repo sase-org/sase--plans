@@ -8,7 +8,7 @@ create_time: 2026-07-31 09:17:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_clan_summary_counts.md](prompts/epic_clan_summary_counts.md)
+- **PROMPT:** [prompts/202607/epic_clan_summary_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_clan_summary_counts.md)
 
 # Plan: Epic clan summary phase and wave counts
 

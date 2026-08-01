@@ -11,7 +11,7 @@ create_time: 2026-07-31 15:48:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_archive_prompt_link.md](prompts/epic_archive_prompt_link.md)
+- **PROMPT:** [prompts/202607/epic_archive_prompt_link.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_archive_prompt_link.md)
 
 # Plan: Stop approved epic archives from dropping their PROMPT link
 

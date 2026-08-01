@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/gh_first_use_project_display.md](prompts/gh_first_use_project_display.md)
+- **PROMPT:** [prompts/202607/gh_first_use_project_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gh_first_use_project_display.md)
 - **AGENTS:**
   - [bbugyi200.athena.0i--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i.md#member-code)
 

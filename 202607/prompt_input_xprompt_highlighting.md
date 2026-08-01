@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/prompt_input_xprompt_highlighting.md](prompts/prompt_input_xprompt_highlighting.md)
+- **PROMPT:** [prompts/202607/prompt_input_xprompt_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_input_xprompt_highlighting.md)
 - **AGENTS:**
   - [bbugyi200.athena.77](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.77/README.md)
   - [bbugyi200.athena.77--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.77.md#member-code)

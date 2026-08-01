@@ -10,7 +10,7 @@ create_time: 2026-07-16 16:52:17
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_6f_completion.md](prompts/sase_6f_completion.md)
+- **PROMPT:** [prompts/202607/sase_6f_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_6f_completion.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6f/README.md)
   - [bbugyi200.athena.sase-6f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6f.md#member-code)

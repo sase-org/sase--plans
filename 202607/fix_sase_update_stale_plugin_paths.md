@@ -10,7 +10,7 @@ create_time: 2026-07-18 22:41:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_sase_update_stale_plugin_paths.md](prompts/fix_sase_update_stale_plugin_paths.md)
+- **PROMPT:** [prompts/202607/fix_sase_update_stale_plugin_paths.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_sase_update_stale_plugin_paths.md)
 - **AGENTS:**
   - [bbugyi200.athena.e8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e8/README.md)
   - [bbugyi200.athena.e8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e8.md#member-code)

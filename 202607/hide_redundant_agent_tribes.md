@@ -9,7 +9,7 @@ create_time: 2026-07-18 06:25:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/hide_redundant_agent_tribes.md](prompts/hide_redundant_agent_tribes.md)
+- **PROMPT:** [prompts/202607/hide_redundant_agent_tribes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hide_redundant_agent_tribes.md)
 - **AGENTS:**
   - [bbugyi200.athena.cu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cu/README.md)
   - [bbugyi200.athena.cu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cu.md#member-code)

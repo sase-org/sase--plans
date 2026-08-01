@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/prompt_stash_panel_leader_keymap.md](prompts/prompt_stash_panel_leader_keymap.md)
+- **PROMPT:** [prompts/202607/prompt_stash_panel_leader_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_stash_panel_leader_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.6o](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6o/README.md)
   - [bbugyi200.athena.6o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6o.md#member-code)

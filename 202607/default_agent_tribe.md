@@ -10,7 +10,7 @@ create_time: 2026-07-19 18:32:03
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/default_agent_tribe.md](prompts/default_agent_tribe.md)
+- **PROMPT:** [prompts/202607/default_agent_tribe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/default_agent_tribe.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7o.4.w3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7o.4.w3/README.md)
   - [bbugyi200.athena.sase-7o.4.w3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7o.4.w3.md#member-code)

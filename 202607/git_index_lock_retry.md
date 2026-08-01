@@ -42,7 +42,7 @@ status: done
 bead_id: sase-77
 ---
 
-- **PROMPT:** [202607/prompts/git_index_lock_retry.md](prompts/git_index_lock_retry.md)
+- **PROMPT:** [prompts/202607/git_index_lock_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/git_index_lock_retry.md)
 - **BEAD:** [sase-77](https://github.com/sase-org/sase--beads/blob/main/pages/sase-77/README.md)
 
 # Plan: Codebase-wide git index.lock retry and stale-lock recovery

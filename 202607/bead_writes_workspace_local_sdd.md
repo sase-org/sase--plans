@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/bead_writes_workspace_local_sdd.md](prompts/bead_writes_workspace_local_sdd.md)
+- **PROMPT:** [prompts/202607/bead_writes_workspace_local_sdd.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_writes_workspace_local_sdd.md)
 - **AGENTS:**
   - [bbugyi200.athena.39--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.39.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-22 09:18:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/post_update_toast_commits.md](prompts/post_update_toast_commits.md)
+- **PROMPT:** [prompts/202607/post_update_toast_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/post_update_toast_commits.md)
 - **AGENTS:**
   - [bbugyi200.athena.i2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.i2/README.md)
   - [bbugyi200.athena.i2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.i2.md#member-code)

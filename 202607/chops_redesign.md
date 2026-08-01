@@ -88,7 +88,7 @@ status: done
 bead_id: sase-6v
 ---
 
-- **PROMPT:** [202607/prompts/chops_redesign.md](prompts/chops_redesign.md)
+- **PROMPT:** [prompts/202607/chops_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chops_redesign.md)
 - **BEAD:** [sase-6v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6v/README.md)
 
 # Plan: Script-only chops with structured launch proposals

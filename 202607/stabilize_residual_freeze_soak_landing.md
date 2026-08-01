@@ -11,7 +11,7 @@ create_time: 2026-07-17 09:33:38
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/stabilize_residual_freeze_soak_landing.md](prompts/stabilize_residual_freeze_soak_landing.md)
+- **PROMPT:** [prompts/202607/stabilize_residual_freeze_soak_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/stabilize_residual_freeze_soak_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6j](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6j/README.md)
   - [bbugyi200.athena.sase-6j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6j.md#member-code)

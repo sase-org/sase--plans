@@ -47,7 +47,7 @@ status: done
 bead_id: sase-ax
 ---
 
-- **PROMPT:** [202607/prompts/artifact_read_cli.md](prompts/artifact_read_cli.md)
+- **PROMPT:** [prompts/202607/artifact_read_cli.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_read_cli.md)
 - **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.ov](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ov/README.md)

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_enabled_gate.md](prompts/telegram_enabled_gate.md)
+- **PROMPT:** [prompts/202607/telegram_enabled_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_enabled_gate.md)
 
 # Gate Telegram Chops on `~/.sase/telegram_is_enabled` + Move Chop Config to `sase.yml`
 

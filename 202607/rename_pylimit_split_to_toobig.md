@@ -4,12 +4,12 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/rename_pylimit_split_to_toobig.md](prompts/rename_pylimit_split_to_toobig.md)
+- **PROMPT:** [prompts/202607/rename_pylimit_split_to_toobig.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/rename_pylimit_split_to_toobig.md)
 - **AGENTS:**
   - [bbugyi200.athena.7j](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7j/README.md)
   - [bbugyi200.athena.7j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7j.md#member-code)
 - **COMMITS:**
-  - [a086bb9](https://github.com/sase-org/sase/commit/a086bb95274059d4a46b35b1161792f974e51aa9) — feat\!: rename pylimit_split workflow to toobig_split
+  - [a086bb9](https://github.com/sase-org/sase/commit/a086bb95274059d4a46b35b1161792f974e51aa9) — feat\!: rename pylimit\_split workflow to toobig\_split
 
 # Plan: Rename the pylimit split workflow and chop to toobig
 

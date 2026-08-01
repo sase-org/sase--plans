@@ -9,7 +9,7 @@ create_time: 2026-07-27 06:50:33
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/defer_epic_completion_notification.md](prompts/defer_epic_completion_notification.md)
+- **PROMPT:** [prompts/202607/defer_epic_completion_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/defer_epic_completion_notification.md)
 - **AGENTS:**
   - [bbugyi200.athena.lw](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lw/README.md)
   - [bbugyi200.athena.lw--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lw.md#member-code)

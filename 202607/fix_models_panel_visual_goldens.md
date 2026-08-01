@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_models_panel_visual_goldens.md](prompts/fix_models_panel_visual_goldens.md)
+- **PROMPT:** [prompts/202607/fix_models_panel_visual_goldens.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_models_panel_visual_goldens.md)
 
 # Fix the 3 Models-Panel PNG Snapshot Failures in CI (Corrupted macOS-Rendered Goldens)
 

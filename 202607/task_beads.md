@@ -101,7 +101,7 @@ status: done
 bead_id: sase-bg
 ---
 
-- **PROMPT:** [202607/prompts/task_beads.md](prompts/task_beads.md)
+- **PROMPT:** [prompts/202607/task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/task_beads.md)
 - **BEAD:** [sase-bg](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bg/README.md)
 
 # Task Beads: Capture, Triage, and Work Discovered Follow-Ups

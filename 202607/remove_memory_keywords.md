@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_memory_keywords.md](prompts/remove_memory_keywords.md)
+- **PROMPT:** [prompts/202607/remove_memory_keywords.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_memory_keywords.md)
 - **AGENTS:**
   - [bbugyi200.athena.7h](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7h/README.md)
   - [bbugyi200.athena.7h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7h.md#member-code)

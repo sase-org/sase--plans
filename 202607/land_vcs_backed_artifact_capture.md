@@ -9,9 +9,8 @@ create_time: 2026-07-30 10:51:56
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/land_vcs_backed_artifact_capture.md](prompts/land_vcs_backed_artifact_capture.md)
-- **PARENT:**
-  [202607/vcs_backed_artifact_capture.md](https://github.com/sase-org/sase--plans/blob/main/202607/vcs_backed_artifact_capture.md)
+- **PROMPT:** [prompts/202607/land_vcs_backed_artifact_capture.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_vcs_backed_artifact_capture.md)
+- **PARENT:** [202607/vcs_backed_artifact_capture.md](https://github.com/sase-org/sase--plans/blob/main/202607/vcs_backed_artifact_capture.md)
 - **BEAD:** [sase-b7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b7/README.md)
 
 # Plan: Finish landing VCS-backed artifact capture

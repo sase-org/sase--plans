@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_models_panel_description_strip.md](prompts/fix_models_panel_description_strip.md)
+- **PROMPT:** [prompts/202607/fix_models_panel_description_strip.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_models_panel_description_strip.md)
 
 # Fix the Invisible Models-Panel Alias Description Strip
 

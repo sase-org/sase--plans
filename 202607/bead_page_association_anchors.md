@@ -69,8 +69,8 @@ status: done
 bead_id: sase-b5
 ---
 
+- **PROMPT:** [prompts/202607/bead_page_association_anchors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_page_association_anchors.md)
 - **BEAD:** [sase-b5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b5/README.md)
-- **PROMPT:** [202607/prompts/bead_page_association_anchors.md](prompts/bead_page_association_anchors.md)
 
 # Plan: Bead pages associate every repo's commits and always link their agents
 

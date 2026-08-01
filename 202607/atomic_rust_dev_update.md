@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/atomic_rust_dev_update.md](prompts/atomic_rust_dev_update.md)
+- **PROMPT:** [prompts/202607/atomic_rust_dev_update.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/atomic_rust_dev_update.md)
 
 # Plan: Make the dev-update Rust reconcile atomic and self-healing
 

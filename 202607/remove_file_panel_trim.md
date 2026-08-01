@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_file_panel_trim.md](prompts/remove_file_panel_trim.md)
+- **PROMPT:** [prompts/202607/remove_file_panel_trim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_file_panel_trim.md)
 - **AGENTS:**
   - [bbugyi200.athena.6w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6w.md#member-code)
 

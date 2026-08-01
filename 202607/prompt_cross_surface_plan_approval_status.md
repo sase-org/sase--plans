@@ -10,7 +10,7 @@ create_time: 2026-07-22 06:41:33
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_cross_surface_plan_approval_status.md](prompts/prompt_cross_surface_plan_approval_status.md)
+- **PROMPT:** [prompts/202607/prompt_cross_surface_plan_approval_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_cross_surface_plan_approval_status.md)
 - **AGENTS:**
   - [bbugyi200.athena.ho](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ho/README.md)
   - [bbugyi200.athena.ho--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ho.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/delete_workspace_repos_dir.md](prompts/delete_workspace_repos_dir.md)
+- **PROMPT:** [prompts/202607/delete_workspace_repos_dir.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/delete_workspace_repos_dir.md)
 - **AGENTS:**
   - [bbugyi200.athena.7q](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7q/README.md)
   - [bbugyi200.athena.7q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7q.md#member-code)

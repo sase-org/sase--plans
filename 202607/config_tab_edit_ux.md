@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/config_tab_edit_ux.md](prompts/config_tab_edit_ux.md)
+- **PROMPT:** [prompts/202607/config_tab_edit_ux.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/config_tab_edit_ux.md)
 
 # Plan: Make Config-Field Editing WAY Nicer in the Admin Center Config Tab
 

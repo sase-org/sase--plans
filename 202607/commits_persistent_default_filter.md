@@ -10,7 +10,7 @@ create_time: 2026-07-21 08:35:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/commits_persistent_default_filter.md](prompts/commits_persistent_default_filter.md)
+- **PROMPT:** [prompts/202607/commits_persistent_default_filter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commits_persistent_default_filter.md)
 - **AGENTS:**
   - [bbugyi200.athena.gr.w2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gr.w2/README.md)
   - [bbugyi200.athena.gr.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gr.w2.md#member-code)

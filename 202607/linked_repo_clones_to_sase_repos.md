@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/linked_repo_clones_to_sase_repos.md](prompts/linked_repo_clones_to_sase_repos.md)
+- **PROMPT:** [prompts/202607/linked_repo_clones_to_sase_repos.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/linked_repo_clones_to_sase_repos.md)
 - **AGENTS:**
   - [bbugyi200.athena.6a](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6a/README.md)
   - [bbugyi200.athena.6a--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6a.md#member-code)

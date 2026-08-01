@@ -49,7 +49,7 @@ status: done
 bead_id: sase-6w
 ---
 
-- **PROMPT:** [202607/prompts/member_roster_sections.md](prompts/member_roster_sections.md)
+- **PROMPT:** [prompts/202607/member_roster_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/member_roster_sections.md)
 - **BEAD:** [sase-6w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6w/README.md)
 
 # Plan: Numbered member rosters for clan and family detail panels

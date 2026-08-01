@@ -10,7 +10,7 @@ create_time: 2026-07-21 16:23:54
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/suppress_intermediate_handoff_bell.md](prompts/suppress_intermediate_handoff_bell.md)
+- **PROMPT:** [prompts/202607/suppress_intermediate_handoff_bell.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/suppress_intermediate_handoff_bell.md)
 - **AGENTS:**
   - [bbugyi200.athena.hi](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hi/README.md)
   - [bbugyi200.athena.hi--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hi.md#member-code)

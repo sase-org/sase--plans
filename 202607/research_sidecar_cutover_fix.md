@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/research_sidecar_cutover_fix.md](prompts/research_sidecar_cutover_fix.md)
+- **PROMPT:** [prompts/202607/research_sidecar_cutover_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/research_sidecar_cutover_fix.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-60](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-60/README.md)
   - [bbugyi200.athena.sase-60--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-60.md#member-code)

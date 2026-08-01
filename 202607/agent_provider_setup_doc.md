@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agent_provider_setup_doc.md](prompts/agent_provider_setup_doc.md)
+- **PROMPT:** [prompts/202607/agent_provider_setup_doc.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_provider_setup_doc.md)
 - **AGENTS:**
   - [bbugyi200.athena.29--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.29.md#member-code)
 

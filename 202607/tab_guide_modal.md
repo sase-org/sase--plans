@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tab_guide_modal.md](prompts/tab_guide_modal.md)
+- **PROMPT:** [prompts/202607/tab_guide_modal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tab_guide_modal.md)
 
 # Plan: Per-Tab Onboarding "Tab Guide" Modal (`,?`)
 

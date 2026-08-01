@@ -9,7 +9,7 @@ create_time: 2026-07-23 07:31:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/axe_editor_redesign.md](prompts/axe_editor_redesign.md)
+- **PROMPT:** [prompts/202607/axe_editor_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_editor_redesign.md)
 - **AGENTS:**
   - [bbugyi200.athena.it](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.it/README.md)
   - [bbugyi200.athena.it--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.it.md#member-code)

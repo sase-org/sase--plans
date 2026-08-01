@@ -8,7 +8,7 @@ create_time: 2026-07-28 09:52:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/selected_clan_collapse_precedence.md](prompts/selected_clan_collapse_precedence.md)
+- **PROMPT:** [prompts/202607/selected_clan_collapse_precedence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/selected_clan_collapse_precedence.md)
 - **AGENTS:**
   - [bbugyi200.athena.my--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.my.md#member-code)
 - **COMMITS:**

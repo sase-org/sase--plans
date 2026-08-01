@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/github_enterprise_support.md](prompts/github_enterprise_support.md)
+- **PROMPT:** [prompts/202607/github_enterprise_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/github_enterprise_support.md)
 
 # Plan: GitHub Enterprise / Custom Root URL Support for the sase-github Plugin
 

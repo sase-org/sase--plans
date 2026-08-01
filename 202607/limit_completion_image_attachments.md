@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/limit_completion_image_attachments.md](prompts/limit_completion_image_attachments.md)
+- **PROMPT:** [prompts/202607/limit_completion_image_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/limit_completion_image_attachments.md)
 - **AGENTS:**
   - [bbugyi200.athena.4e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4e.md#member-code)
 

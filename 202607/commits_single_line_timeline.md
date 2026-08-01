@@ -10,7 +10,7 @@ create_time: 2026-07-17 12:17:31
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/commits_single_line_timeline.md](prompts/commits_single_line_timeline.md)
+- **PROMPT:** [prompts/202607/commits_single_line_timeline.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commits_single_line_timeline.md)
 - **AGENTS:**
   - [bbugyi200.athena.c4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c4/README.md)
   - [bbugyi200.athena.c4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c4.md#member-code)

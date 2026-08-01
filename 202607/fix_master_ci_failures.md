@@ -12,7 +12,7 @@ create_time: 2026-07-16 13:20:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_master_ci_failures.md](prompts/fix_master_ci_failures.md)
+- **PROMPT:** [prompts/202607/fix_master_ci_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_master_ci_failures.md)
 - **AGENTS:**
   - [bbugyi200.athena.ak](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ak/README.md)
   - [bbugyi200.athena.ak--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ak.md#member-code)

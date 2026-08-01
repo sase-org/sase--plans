@@ -10,7 +10,7 @@ create_time: 2026-07-19 08:07:05
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_fold_selector_l_keymap.md](prompts/agents_fold_selector_l_keymap.md)
+- **PROMPT:** [prompts/202607/agents_fold_selector_l_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_fold_selector_l_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.eg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eg/README.md)
   - [bbugyi200.athena.eg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eg.md#member-code)

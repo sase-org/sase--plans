@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/demo_video_stamp_and_commit.md](prompts/demo_video_stamp_and_commit.md)
+- **PROMPT:** [prompts/202607/demo_video_stamp_and_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/demo_video_stamp_and_commit.md)
 - **AGENTS:**
   - [bbugyi200.athena.s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.s.md#member-code)
 

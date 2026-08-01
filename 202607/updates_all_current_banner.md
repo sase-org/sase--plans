@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/updates_all_current_banner.md](prompts/updates_all_current_banner.md)
+- **PROMPT:** [prompts/202607/updates_all_current_banner.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/updates_all_current_banner.md)
 - **AGENTS:**
   - [bbugyi200.athena.1d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1d.md#member-code)
 

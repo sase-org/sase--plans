@@ -9,7 +9,7 @@ create_time: 2026-07-24 21:52:38
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_sase_90.md](prompts/finish_sase_90.md)
+- **PROMPT:** [prompts/202607/finish_sase_90.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_sase_90.md)
 - **PARENT:** [202607/artifacts_chats_subtab.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifacts_chats_subtab.md)
 - **BEAD:** [sase-90](https://github.com/sase-org/sase--beads/blob/main/pages/sase-90/README.md)
 - **AGENTS:**

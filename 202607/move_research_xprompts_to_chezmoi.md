@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/move_research_xprompts_to_chezmoi.md](prompts/move_research_xprompts_to_chezmoi.md)
+- **PROMPT:** [prompts/202607/move_research_xprompts_to_chezmoi.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/move_research_xprompts_to_chezmoi.md)
 
 # Move Research XPrompts from sase Defaults to Chezmoi + Add `@research` / `@research_assist` Model Aliases
 

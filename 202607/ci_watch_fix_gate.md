@@ -8,7 +8,7 @@ create_time: 2026-07-28 18:03:46
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ci_watch_fix_gate.md](prompts/ci_watch_fix_gate.md)
+- **PROMPT:** [prompts/202607/ci_watch_fix_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ci_watch_fix_gate.md)
 - **AGENTS:**
   - [bbugyi200.athena.nn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nn.md#member-code)
   - [bbugyi200.athena.nn--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nn.md#member-plan)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agent_panel_fold_scope.md](prompts/agent_panel_fold_scope.md)
+- **PROMPT:** [prompts/202607/agent_panel_fold_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_panel_fold_scope.md)
 - **AGENTS:**
   - [bbugyi200.athena.8m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8m/README.md)
   - [bbugyi200.athena.8m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8m.md#member-code)

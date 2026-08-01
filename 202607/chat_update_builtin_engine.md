@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/chat_update_builtin_engine.md](prompts/chat_update_builtin_engine.md)
+- **PROMPT:** [prompts/202607/chat_update_builtin_engine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chat_update_builtin_engine.md)
 - **AGENTS:**
   - [bbugyi200.athena.00--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00.md#member-code)
 

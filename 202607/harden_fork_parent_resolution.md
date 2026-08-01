@@ -7,7 +7,7 @@ create_time: 2026-07-20 16:48:01
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/harden_fork_parent_resolution.md](prompts/harden_fork_parent_resolution.md)
+- **PROMPT:** [prompts/202607/harden_fork_parent_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/harden_fork_parent_resolution.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8g.8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.8/README.md)
   - [bbugyi200.athena.sase-8g.8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.8.md#member-code)

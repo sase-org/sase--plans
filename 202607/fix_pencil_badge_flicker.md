@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_pencil_badge_flicker.md](prompts/fix_pencil_badge_flicker.md)
+- **PROMPT:** [prompts/202607/fix_pencil_badge_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_pencil_badge_flicker.md)
 
 # Fix flickering ✏️ file-change pencil badge for running agents in the ace TUI
 

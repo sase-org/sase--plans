@@ -7,7 +7,7 @@ create_time: 2026-07-28 06:24:40
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/commits_project_filter.md](prompts/commits_project_filter.md)
+- **PROMPT:** [prompts/202607/commits_project_filter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commits_project_filter.md)
 - **AGENTS:**
   - [bbugyi200.athena.mp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mp/README.md)
   - [bbugyi200.athena.mp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.md#member-code)

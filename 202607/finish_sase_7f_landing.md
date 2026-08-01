@@ -10,7 +10,7 @@ create_time: 2026-07-19 14:21:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_sase_7f_landing.md](prompts/finish_sase_7f_landing.md)
+- **PROMPT:** [prompts/202607/finish_sase_7f_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_sase_7f_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7f.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7f.land.md#member-code)
 

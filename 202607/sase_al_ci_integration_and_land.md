@@ -9,17 +9,14 @@ create_time: 2026-07-28 18:57:00
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_al_ci_integration_and_land.md](prompts/sase_al_ci_integration_and_land.md)
-- **PARENT:**
-  [202607/fix_ci_core_clippy_and_minimum.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_core_clippy_and_minimum.md)
+- **PROMPT:** [prompts/202607/sase_al_ci_integration_and_land.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_al_ci_integration_and_land.md)
+- **PARENT:** [202607/fix_ci_core_clippy_and_minimum.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_core_clippy_and_minimum.md)
 - **BEAD:** [sase-al](https://github.com/sase-org/sase--beads/blob/main/pages/sase-al/README.md)
 - **AGENTS:**
   - bbugyi200.athena.sase-al.land--code
 - **COMMITS:**
-  - [0266e43](https://github.com/sase-org/sase--plans/commit/0266e43f8fd9a126b294ced1576c27f4eeb0f379) — docs: restore
-    CI epic prompt links
-  - [a535a33](https://github.com/sase-org/sase--plans/commit/a535a335e0aab861d6fabe4c6cdbe50459d88db0) — docs: mark
-    sase-al epic plan complete
+  - [0266e43](https://github.com/sase-org/sase--plans/commit/0266e43f8fd9a126b294ced1576c27f4eeb0f379) — docs: restore CI epic prompt links
+  - [a535a33](https://github.com/sase-org/sase--plans/commit/a535a335e0aab861d6fabe4c6cdbe50459d88db0) — docs: mark sase-al epic plan complete
 
 # Finish sase-al CI integration and land the epic
 

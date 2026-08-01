@@ -10,7 +10,7 @@ create_time: 2026-07-20 16:58:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bound_log_sinks.md](prompts/bound_log_sinks.md)
+- **PROMPT:** [prompts/202607/bound_log_sinks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bound_log_sinks.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8g.10](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8g.10/README.md)
   - [bbugyi200.athena.sase-8g.10--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8g.10.md#member-code)

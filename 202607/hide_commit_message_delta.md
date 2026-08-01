@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/hide_commit_message_delta.md](prompts/hide_commit_message_delta.md)
+- **PROMPT:** [prompts/202607/hide_commit_message_delta.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hide_commit_message_delta.md)
 - **AGENTS:**
   - [bbugyi200.athena.3o.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3o.w1.md#member-code)
 

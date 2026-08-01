@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/sdd_artifact_attribution.md](prompts/sdd_artifact_attribution.md)
+- **PROMPT:** [prompts/202607/sdd_artifact_attribution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sdd_artifact_attribution.md)
 - **AGENTS:**
   - [bbugyi200.athena.56--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.56.md#member-code)
 

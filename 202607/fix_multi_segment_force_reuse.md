@@ -10,7 +10,7 @@ create_time: 2026-07-18 17:04:58
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/fix_multi_segment_force_reuse.md](prompts/fix_multi_segment_force_reuse.md)
+- **PROMPT:** [prompts/202607/fix_multi_segment_force_reuse.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_multi_segment_force_reuse.md)
 
 # Plan: Wipe every `%name:!` owner in multi-segment TUI launches
 

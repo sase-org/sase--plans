@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/video_artifact_preview.md](prompts/video_artifact_preview.md)
+- **PROMPT:** [prompts/202607/video_artifact_preview.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/video_artifact_preview.md)
 - **AGENTS:**
   - [bbugyi200.athena.l.f1.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.l.f1.f1.md#member-code)
 

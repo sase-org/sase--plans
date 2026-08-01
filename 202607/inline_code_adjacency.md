@@ -10,7 +10,7 @@ create_time: 2026-07-19 08:37:24
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/inline_code_adjacency.md](prompts/inline_code_adjacency.md)
+- **PROMPT:** [prompts/202607/inline_code_adjacency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/inline_code_adjacency.md)
 - **AGENTS:**
   - [bbugyi200.athena.em](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.em/README.md)
   - [bbugyi200.athena.em--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.em.md#member-code)

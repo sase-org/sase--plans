@@ -35,7 +35,7 @@ status: wip
 bead_id: sase-8u.4
 ---
 
-- **PROMPT:** [202607/prompts/finish_capitalized_snippet_aliases.md](prompts/finish_capitalized_snippet_aliases.md)
+- **PROMPT:** [prompts/202607/finish_capitalized_snippet_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_capitalized_snippet_aliases.md)
 - **PARENT:** [202607/capitalized_snippet_aliases.md](https://github.com/sase-org/sase--plans/blob/main/202607/capitalized_snippet_aliases.md)
 - **BEAD:** [sase-8u.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8u/sase-8u.4.md)
 - **AGENTS:**

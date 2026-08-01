@@ -9,7 +9,7 @@ create_time: 2026-07-15 10:06:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sidecar_ssh_remote_normalization.md](prompts/sidecar_ssh_remote_normalization.md)
+- **PROMPT:** [prompts/202607/sidecar_ssh_remote_normalization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sidecar_ssh_remote_normalization.md)
 - **AGENTS:**
   - [bbugyi200.athena.92](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.92/README.md)
   - [bbugyi200.athena.92--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.92.md#member-code)

@@ -12,7 +12,7 @@ create_time: 2026-07-22 08:33:23
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/todo_annotation_polish.md](prompts/todo_annotation_polish.md)
+- **PROMPT:** [prompts/202607/todo_annotation_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/todo_annotation_polish.md)
 - **AGENTS:**
   - [bbugyi200.athena.hz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hz/README.md)
   - [bbugyi200.athena.hz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hz.md#member-code)

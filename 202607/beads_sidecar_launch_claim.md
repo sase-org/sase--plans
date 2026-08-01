@@ -8,7 +8,7 @@ create_time: 2026-07-28 06:56:01
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/beads_sidecar_launch_claim.md](prompts/beads_sidecar_launch_claim.md)
+- **PROMPT:** [prompts/202607/beads_sidecar_launch_claim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/beads_sidecar_launch_claim.md)
 - **AGENTS:**
   - [bbugyi200.athena.mq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mq/README.md)
   - [bbugyi200.athena.mq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mq.md#member-code)

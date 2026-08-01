@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/prompt_stash_pin_fixes.md](prompts/prompt_stash_pin_fixes.md)
+- **PROMPT:** [prompts/202607/prompt_stash_pin_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_stash_pin_fixes.md)
 - **AGENTS:**
   - [bbugyi200.athena.65](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.65/README.md)
   - [bbugyi200.athena.65--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.65.md#member-code)

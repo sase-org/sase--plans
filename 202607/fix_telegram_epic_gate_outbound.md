@@ -10,7 +10,7 @@ create_time: 2026-07-17 08:40:16
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_telegram_epic_gate_outbound.md](prompts/fix_telegram_epic_gate_outbound.md)
+- **PROMPT:** [prompts/202607/fix_telegram_epic_gate_outbound.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_telegram_epic_gate_outbound.md)
 - **AGENTS:**
   - [bbugyi200.athena.bq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bq.md#member-code)
 

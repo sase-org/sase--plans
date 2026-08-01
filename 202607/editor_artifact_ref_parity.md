@@ -51,7 +51,7 @@ status: done
 bead_id: sase-b3.10
 ---
 
-- **PROMPT:** [202607/prompts/editor_artifact_ref_parity.md](prompts/editor_artifact_ref_parity.md)
+- **PROMPT:** [prompts/202607/editor_artifact_ref_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/editor_artifact_ref_parity.md)
 - **PARENT:** [202607/fuzzy_artifact_ref_completion.md](202607/fuzzy_artifact_ref_completion.md)
 - **BEAD:** [sase-b3.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/sase-b3.10.md)
 

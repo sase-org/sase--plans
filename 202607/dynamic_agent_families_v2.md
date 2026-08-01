@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/dynamic_agent_families_v2.md](prompts/dynamic_agent_families_v2.md)
+- **PROMPT:** [prompts/202607/dynamic_agent_families_v2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/dynamic_agent_families_v2.md)
 - **BEAD:** [sase-5g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5g/README.md)
 
 # Implementation Plan: Dynamic Agent Families v2

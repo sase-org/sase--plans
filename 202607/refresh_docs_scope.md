@@ -11,7 +11,7 @@ create_time: 2026-07-19 21:14:04
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/refresh_docs_scope.md](prompts/refresh_docs_scope.md)
+- **PROMPT:** [prompts/202607/refresh_docs_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/refresh_docs_scope.md)
 - **AGENTS:**
   - [bbugyi200.athena.fo](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fo/README.md)
   - [bbugyi200.athena.fo--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fo.md#member-code)

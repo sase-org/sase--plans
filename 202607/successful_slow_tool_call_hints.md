@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/successful_slow_tool_call_hints.md](prompts/successful_slow_tool_call_hints.md)
+- **PROMPT:** [prompts/202607/successful_slow_tool_call_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/successful_slow_tool_call_hints.md)
 - **AGENTS:**
   - [bbugyi200.athena.0z.w1.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0z.w1.f1.md#member-code)
 

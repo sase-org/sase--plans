@@ -117,7 +117,7 @@ status: done
 bead_id: sase-96.8
 ---
 
-- **PROMPT:** [202607/prompts/managed_tmp_reaping.md](prompts/managed_tmp_reaping.md)
+- **PROMPT:** [prompts/202607/managed_tmp_reaping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/managed_tmp_reaping.md)
 - **PARENT:** [202607/tmp_space_exhaustion.md](https://github.com/sase-org/sase--plans/blob/main/202607/tmp_space_exhaustion.md)
 - **BEAD:** [sase-96.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-96/sase-96.8.md)
 - **AGENTS:**

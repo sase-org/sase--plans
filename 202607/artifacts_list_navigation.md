@@ -10,7 +10,7 @@ create_time: 2026-07-17 08:46:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_list_navigation.md](prompts/artifacts_list_navigation.md)
+- **PROMPT:** [prompts/202607/artifacts_list_navigation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_list_navigation.md)
 - **AGENTS:**
   - [bbugyi200.athena.br](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.br/README.md)
   - [bbugyi200.athena.br--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.br.md#member-code)

@@ -7,7 +7,7 @@ create_time: 2026-07-24 15:58:18
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ctrl_j_exit_bullet_list.md](prompts/ctrl_j_exit_bullet_list.md)
+- **PROMPT:** [prompts/202607/ctrl_j_exit_bullet_list.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ctrl_j_exit_bullet_list.md)
 - **AGENTS:**
   - [bbugyi200.athena.jl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jl/README.md)
   - [bbugyi200.athena.jl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jl.md#member-code)

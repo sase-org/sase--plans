@@ -11,7 +11,7 @@ create_time: 2026-07-18 10:42:04
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_family_name_first_identity.md](prompts/clan_family_name_first_identity.md)
+- **PROMPT:** [prompts/202607/clan_family_name_first_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_family_name_first_identity.md)
 - **AGENTS:**
   - [bbugyi200.athena.d7.w1.f1.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1.f1.f0.f0/README.md)
   - [bbugyi200.athena.d7.w1.f1.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.f1.f0.f0.md#member-code)

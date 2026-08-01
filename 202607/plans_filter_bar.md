@@ -51,7 +51,7 @@ status: done
 bead_id: sase-6t
 ---
 
-- **PROMPT:** [202607/prompts/plans_filter_bar.md](prompts/plans_filter_bar.md)
+- **PROMPT:** [prompts/202607/plans_filter_bar.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plans_filter_bar.md)
 - **BEAD:** [sase-6t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6t/README.md)
 
 # Plan: Plans filter bar with live filtering and completion

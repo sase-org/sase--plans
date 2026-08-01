@@ -11,7 +11,7 @@ create_time: 2026-07-16 13:21:57
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tui_perf_memory_refresh.md](prompts/tui_perf_memory_refresh.md)
+- **PROMPT:** [prompts/202607/tui_perf_memory_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_perf_memory_refresh.md)
 - **AGENTS:**
   - [bbugyi200.athena.al](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.al/README.md)
   - [bbugyi200.athena.al--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.al.md#member-code)

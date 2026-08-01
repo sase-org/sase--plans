@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/add_smartest_model_alias.md](prompts/add_smartest_model_alias.md)
+- **PROMPT:** [prompts/202607/add_smartest_model_alias.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/add_smartest_model_alias.md)
 - **AGENTS:**
   - [bbugyi200.athena.5g.f-0.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5g.f-0.f-0.md#member-code)
 

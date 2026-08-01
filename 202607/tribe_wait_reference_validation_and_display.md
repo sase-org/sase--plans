@@ -55,7 +55,7 @@ status: done
 bead_id: sase-ak
 ---
 
-- **PROMPT:** [202607/prompts/tribe_wait_reference_validation_and_display.md](prompts/tribe_wait_reference_validation_and_display.md)
+- **PROMPT:** [prompts/202607/tribe_wait_reference_validation_and_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_wait_reference_validation_and_display.md)
 - **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.ng](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ng/README.md)

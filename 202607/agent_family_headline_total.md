@@ -10,7 +10,7 @@ create_time: 2026-07-17 12:25:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_family_headline_total.md](prompts/agent_family_headline_total.md)
+- **PROMPT:** [prompts/202607/agent_family_headline_total.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_family_headline_total.md)
 - **AGENTS:**
   - [bbugyi200.athena.c2.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c2.f0/README.md)
   - [bbugyi200.athena.c2.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c2.f0.md#member-code)

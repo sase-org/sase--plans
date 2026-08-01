@@ -8,7 +8,7 @@ create_time: 2026-07-27 06:42:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/replay_stable_bead_event_merge.md](prompts/replay_stable_bead_event_merge.md)
+- **PROMPT:** [prompts/202607/replay_stable_bead_event_merge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/replay_stable_bead_event_merge.md)
 - **PARENT:** [202607/bead_merge_replay_stability.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_merge_replay_stability.md)
 - **BEAD:** [sase-9x.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9x/sase-9x.1.md)
 - **AGENTS:**

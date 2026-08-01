@@ -10,7 +10,7 @@ create_time: 2026-07-21 16:47:55
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_sidecar_prelaunch_visibility.md](prompts/epic_sidecar_prelaunch_visibility.md)
+- **PROMPT:** [prompts/202607/epic_sidecar_prelaunch_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_sidecar_prelaunch_visibility.md)
 - **AGENTS:**
   - [bbugyi200.athena.hl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hl/README.md)
   - [bbugyi200.athena.hl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hl.md#member-code)

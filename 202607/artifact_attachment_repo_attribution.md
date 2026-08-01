@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/artifact_attachment_repo_attribution.md](prompts/artifact_attachment_repo_attribution.md)
+- **PROMPT:** [prompts/202607/artifact_attachment_repo_attribution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_attachment_repo_attribution.md)
 - **AGENTS:**
   - [bbugyi200.athena.8c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8c/README.md)
   - [bbugyi200.athena.8c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8c.md#member-code)

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tui_title_version.md](prompts/tui_title_version.md)
+- **PROMPT:** [prompts/202607/tui_title_version.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_title_version.md)
 
 # Show sase Version Instead of PID in the ace TUI Title
 

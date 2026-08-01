@@ -9,7 +9,7 @@ create_time: 2026-07-31 16:27:57
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/exclude_beads_memory_from_home.md](prompts/exclude_beads_memory_from_home.md)
+- **PROMPT:** [prompts/202607/exclude_beads_memory_from_home.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/exclude_beads_memory_from_home.md)
 
 # Plan
 

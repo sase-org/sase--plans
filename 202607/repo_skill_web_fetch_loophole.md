@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/repo_skill_web_fetch_loophole.md](prompts/repo_skill_web_fetch_loophole.md)
+- **PROMPT:** [prompts/202607/repo_skill_web_fetch_loophole.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/repo_skill_web_fetch_loophole.md)
 - **AGENTS:**
   - [bbugyi200.athena.research.b.cld.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.b.cld.f0/README.md)
   - [bbugyi200.athena.research.b.cld.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.b.cld.f0.md#member-code)

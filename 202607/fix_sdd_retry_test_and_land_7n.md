@@ -11,7 +11,7 @@ create_time: 2026-07-19 16:10:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_sdd_retry_test_and_land_7n.md](prompts/fix_sdd_retry_test_and_land_7n.md)
+- **PROMPT:** [prompts/202607/fix_sdd_retry_test_and_land_7n.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_sdd_retry_test_and_land_7n.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7n.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7n.land/README.md)
 - **COMMITS:**

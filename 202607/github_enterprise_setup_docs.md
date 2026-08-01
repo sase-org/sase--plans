@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/github_enterprise_setup_docs.md](prompts/github_enterprise_setup_docs.md)
+- **PROMPT:** [prompts/202607/github_enterprise_setup_docs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/github_enterprise_setup_docs.md)
 
 # Plan: GitHub Enterprise Setup Documentation (install routes + end-to-end walkthrough)
 

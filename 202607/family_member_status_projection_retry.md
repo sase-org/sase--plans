@@ -10,7 +10,7 @@ create_time: 2026-07-19 09:18:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/family_member_status_projection_retry.md](prompts/family_member_status_projection_retry.md)
+- **PROMPT:** [prompts/202607/family_member_status_projection_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/family_member_status_projection_retry.md)
 - **AGENTS:**
   - [bbugyi200.athena.eu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.eu/README.md)
   - [bbugyi200.athena.eu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.eu.md#member-code)

@@ -8,7 +8,7 @@ create_time: 2026-07-23 11:24:47
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/toobig_split_clan_summary.md](prompts/toobig_split_clan_summary.md)
+- **PROMPT:** [prompts/202607/toobig_split_clan_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toobig_split_clan_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.j3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j3.md#member-code)
 

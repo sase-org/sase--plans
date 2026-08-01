@@ -8,7 +8,7 @@ create_time: 2026-07-25 07:43:08
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/static_running_count_color.md](prompts/static_running_count_color.md)
+- **PROMPT:** [prompts/202607/static_running_count_color.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/static_running_count_color.md)
 - **AGENTS:**
   - [bbugyi200.athena.kc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kc/README.md)
   - [bbugyi200.athena.kc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kc.md#member-code)

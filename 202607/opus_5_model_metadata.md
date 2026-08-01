@@ -8,7 +8,7 @@ create_time: 2026-07-25 06:52:25
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/opus_5_model_metadata.md](prompts/opus_5_model_metadata.md)
+- **PROMPT:** [prompts/202607/opus_5_model_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/opus_5_model_metadata.md)
 - **AGENTS:**
   - [bbugyi200.athena.k6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.k6/README.md)
   - [bbugyi200.athena.k6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.k6.md#member-code)

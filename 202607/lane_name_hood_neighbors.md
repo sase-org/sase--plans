@@ -9,7 +9,7 @@ create_time: 2026-07-25 13:43:02
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/lane_name_hood_neighbors.md](prompts/lane_name_hood_neighbors.md)
+- **PROMPT:** [prompts/202607/lane_name_hood_neighbors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/lane_name_hood_neighbors.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-99.land.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-99.land.f2/README.md)
   - [bbugyi200.athena.sase-99.land.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-99.land.f2.md#member-code)

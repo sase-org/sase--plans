@@ -37,7 +37,7 @@ status: done
 bead_id: sase-83
 ---
 
-- **PROMPT:** [202607/prompts/agent_cli_update_awareness.md](prompts/agent_cli_update_awareness.md)
+- **PROMPT:** [prompts/202607/agent_cli_update_awareness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_cli_update_awareness.md)
 - **BEAD:** [sase-83](https://github.com/sase-org/sase--beads/blob/main/pages/sase-83/README.md)
 
 # Plan: Provider-aware comprehensive update experience

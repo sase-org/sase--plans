@@ -8,7 +8,7 @@ create_time: 2026-07-15 18:03:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/compact_sase_plan_heading.md](prompts/compact_sase_plan_heading.md)
+- **PROMPT:** [prompts/202607/compact_sase_plan_heading.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/compact_sase_plan_heading.md)
 - **AGENTS:**
   - [bbugyi200.athena.9t](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9t/README.md)
   - [bbugyi200.athena.9t--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9t.md#member-code)

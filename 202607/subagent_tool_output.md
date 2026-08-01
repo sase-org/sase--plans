@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/subagent_tool_output.md](prompts/subagent_tool_output.md)
+- **PROMPT:** [prompts/202607/subagent_tool_output.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/subagent_tool_output.md)
 - **AGENTS:**
   - [bbugyi200.athena.1h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1h.md#member-code)
 

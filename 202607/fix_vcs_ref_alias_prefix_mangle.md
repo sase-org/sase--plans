@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_vcs_ref_alias_prefix_mangle.md](prompts/fix_vcs_ref_alias_prefix_mangle.md)
+- **PROMPT:** [prompts/202607/fix_vcs_ref_alias_prefix_mangle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_vcs_ref_alias_prefix_mangle.md)
 - **AGENTS:**
   - [bbugyi200.athena.6c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6c/README.md)
   - [bbugyi200.athena.6c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6c.md#member-code)

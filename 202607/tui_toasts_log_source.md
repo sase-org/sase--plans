@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tui_toasts_log_source.md](prompts/tui_toasts_log_source.md)
+- **PROMPT:** [prompts/202607/tui_toasts_log_source.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_toasts_log_source.md)
 - **AGENTS:**
   - [bbugyi200.athena.0n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0n.md#member-code)
 

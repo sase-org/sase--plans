@@ -28,7 +28,7 @@ status: done
 bead_id: sase-6a
 ---
 
-- **PROMPT:** [202607/prompts/plans_pane_all_projects_upgrade.md](prompts/plans_pane_all_projects_upgrade.md)
+- **PROMPT:** [prompts/202607/plans_pane_all_projects_upgrade.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plans_pane_all_projects_upgrade.md)
 - **BEAD:** [sase-6a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6a/README.md)
 
 # Plan: Plans artifacts pane — all-projects scope, recency sort, and readable details

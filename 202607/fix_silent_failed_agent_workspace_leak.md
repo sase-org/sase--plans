@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_silent_failed_agent_workspace_leak.md](prompts/fix_silent_failed_agent_workspace_leak.md)
+- **PROMPT:** [prompts/202607/fix_silent_failed_agent_workspace_leak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_silent_failed_agent_workspace_leak.md)
 - **AGENTS:**
   - [bbugyi200.athena.7g](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7g/README.md)
   - [bbugyi200.athena.7g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7g.md#member-code)

@@ -8,13 +8,12 @@ create_time: 2026-07-28 15:03:25
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_ci_symvision_failures.md](prompts/fix_ci_symvision_failures.md)
+- **PROMPT:** [prompts/202607/fix_ci_symvision_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_ci_symvision_failures.md)
 - **AGENTS:**
   - [bbugyi200.athena.nb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nb.md#member-code)
   - [bbugyi200.athena.nb--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nb.md#member-plan)
 - **COMMITS:**
-  - [a575d65](https://github.com/sase-org/sase/commit/a575d6539730da437fd65491b60eb6f598ad3e9c) — refactor(agents-sync):
-    remove unused publication interfaces
+  - [a575d65](https://github.com/sase-org/sase/commit/a575d6539730da437fd65491b60eb6f598ad3e9c) — refactor(agents-sync): remove unused publication interfaces
 
 # Fix the SASE CI Symvision failures
 

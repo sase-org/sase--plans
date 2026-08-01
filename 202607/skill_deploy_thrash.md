@@ -77,7 +77,7 @@ status: done
 bead_id: sase-ae
 ---
 
-- **PROMPT:** [202607/prompts/skill_deploy_thrash.md](prompts/skill_deploy_thrash.md)
+- **PROMPT:** [prompts/202607/skill_deploy_thrash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/skill_deploy_thrash.md)
 - **BEAD:** [sase-ae](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ae/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-ae.6--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ae.6.md#member-1)

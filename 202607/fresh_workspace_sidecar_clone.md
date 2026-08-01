@@ -9,7 +9,7 @@ create_time: 2026-07-15 11:04:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fresh_workspace_sidecar_clone.md](prompts/fresh_workspace_sidecar_clone.md)
+- **PROMPT:** [prompts/202607/fresh_workspace_sidecar_clone.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fresh_workspace_sidecar_clone.md)
 - **AGENTS:**
   - [bbugyi200.athena.95](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.95/README.md)
   - [bbugyi200.athena.95--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.95.md#member-code)

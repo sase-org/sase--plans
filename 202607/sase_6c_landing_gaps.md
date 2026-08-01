@@ -10,7 +10,7 @@ create_time: 2026-07-16 12:10:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_6c_landing_gaps.md](prompts/sase_6c_landing_gaps.md)
+- **PROMPT:** [prompts/202607/sase_6c_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_6c_landing_gaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6c/README.md)
   - [bbugyi200.athena.sase-6c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6c.md#member-code)

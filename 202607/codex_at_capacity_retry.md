@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/codex_at_capacity_retry.md](prompts/codex_at_capacity_retry.md)
+- **PROMPT:** [prompts/202607/codex_at_capacity_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/codex_at_capacity_retry.md)
 - **AGENTS:**
   - [bbugyi200.athena.4t--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4t.md#member-code)
 

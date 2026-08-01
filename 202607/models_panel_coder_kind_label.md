@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_coder_kind_label.md](prompts/models_panel_coder_kind_label.md)
+- **PROMPT:** [prompts/202607/models_panel_coder_kind_label.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_coder_kind_label.md)
 
 # Plan: Show `coder` instead of `<provider> coder` in the Models panel kind column
 

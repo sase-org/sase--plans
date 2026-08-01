@@ -11,7 +11,7 @@ create_time: 2026-07-18 10:40:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/gate_review_workbench.md](prompts/gate_review_workbench.md)
+- **PROMPT:** [prompts/202607/gate_review_workbench.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_review_workbench.md)
 - **AGENTS:**
   - [bbugyi200.athena.dd.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dd.f1/README.md)
   - [bbugyi200.athena.dd.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dd.f1.md#member-code)

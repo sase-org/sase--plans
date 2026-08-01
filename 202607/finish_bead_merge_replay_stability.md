@@ -7,7 +7,7 @@ create_time: 2026-07-27 09:20:58
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_bead_merge_replay_stability.md](prompts/finish_bead_merge_replay_stability.md)
+- **PROMPT:** [prompts/202607/finish_bead_merge_replay_stability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_bead_merge_replay_stability.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9x.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9x.land/README.md)
   - [bbugyi200.athena.sase-9x.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-9x.land.md#member-code)

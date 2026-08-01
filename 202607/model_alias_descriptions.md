@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/model_alias_descriptions.md](prompts/model_alias_descriptions.md)
+- **PROMPT:** [prompts/202607/model_alias_descriptions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/model_alias_descriptions.md)
 
 # Model Alias Descriptions on the Models Panel
 

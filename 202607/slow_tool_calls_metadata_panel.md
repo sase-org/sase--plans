@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/slow_tool_calls_metadata_panel.md](prompts/slow_tool_calls_metadata_panel.md)
+- **PROMPT:** [prompts/202607/slow_tool_calls_metadata_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/slow_tool_calls_metadata_panel.md)
 
 # Plan: Surface Slow Tool Calls in the Agent Metadata Panel
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/chop_agent_drain_barriers.md](prompts/chop_agent_drain_barriers.md)
+- **PROMPT:** [prompts/202607/chop_agent_drain_barriers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chop_agent_drain_barriers.md)
 - **AGENTS:**
   - [bbugyi200.athena.7j.f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7j.f-0/README.md)
   - [bbugyi200.athena.7j.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7j.f-0.md#member-code)

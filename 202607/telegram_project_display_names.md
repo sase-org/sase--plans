@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_project_display_names.md](prompts/telegram_project_display_names.md)
+- **PROMPT:** [prompts/202607/telegram_project_display_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_project_display_names.md)
 - **AGENTS:**
   - [bbugyi200.athena.m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m.md#member-code)
 

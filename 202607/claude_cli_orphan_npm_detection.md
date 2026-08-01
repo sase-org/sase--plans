@@ -11,7 +11,7 @@ create_time: 2026-07-22 08:36:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/claude_cli_orphan_npm_detection.md](prompts/claude_cli_orphan_npm_detection.md)
+- **PROMPT:** [prompts/202607/claude_cli_orphan_npm_detection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/claude_cli_orphan_npm_detection.md)
 - **AGENTS:**
   - [bbugyi200.athena.hy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hy/README.md)
   - [bbugyi200.athena.hy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hy.md#member-code)

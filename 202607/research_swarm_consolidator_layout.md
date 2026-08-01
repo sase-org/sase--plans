@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/research_swarm_consolidator_layout.md](prompts/research_swarm_consolidator_layout.md)
+- **PROMPT:** [prompts/202607/research_swarm_consolidator_layout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/research_swarm_consolidator_layout.md)
 - **AGENTS:**
   - [bbugyi200.athena.5y--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5y.md#member-code)
 

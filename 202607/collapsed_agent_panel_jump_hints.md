@@ -10,7 +10,7 @@ create_time: 2026-07-16 16:06:57
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/collapsed_agent_panel_jump_hints.md](prompts/collapsed_agent_panel_jump_hints.md)
+- **PROMPT:** [prompts/202607/collapsed_agent_panel_jump_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/collapsed_agent_panel_jump_hints.md)
 - **AGENTS:**
   - [bbugyi200.athena.as](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.as/README.md)
   - [bbugyi200.athena.as--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.as.md#member-code)

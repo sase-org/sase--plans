@@ -14,7 +14,7 @@ create_time: 2026-07-16 18:27:01
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_lane_in_sase_context.md](prompts/artifacts_lane_in_sase_context.md)
+- **PROMPT:** [prompts/202607/artifacts_lane_in_sase_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_lane_in_sase_context.md)
 - **AGENTS:**
   - [bbugyi200.athena.b1.f2.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b1.f2.f1/README.md)
   - [bbugyi200.athena.b1.f2.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b1.f2.f1.md#member-code)

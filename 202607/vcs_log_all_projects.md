@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/vcs_log_all_projects.md](prompts/vcs_log_all_projects.md)
+- **PROMPT:** [prompts/202607/vcs_log_all_projects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_log_all_projects.md)
 - **AGENTS:**
   - [bbugyi200.athena.4f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4f.md#member-code)
 

@@ -9,7 +9,7 @@ create_time: 2026-07-25 11:17:43
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/default_override_alias_propagation.md](prompts/default_override_alias_propagation.md)
+- **PROMPT:** [prompts/202607/default_override_alias_propagation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/default_override_alias_propagation.md)
 - **AGENTS:**
   - [bbugyi200.athena.km.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.km.f0/README.md)
   - [bbugyi200.athena.km.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.km.f0.md#member-code)

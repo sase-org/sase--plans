@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_plan_fork_button.md](prompts/telegram_plan_fork_button.md)
+- **PROMPT:** [prompts/202607/telegram_plan_fork_button.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_plan_fork_button.md)
 - **AGENTS:**
   - [bbugyi200.athena.3c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3c.md#member-code)
 

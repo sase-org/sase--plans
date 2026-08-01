@@ -10,7 +10,7 @@ create_time: 2026-07-19 13:02:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_contextual_query_shortcuts.md](prompts/restore_contextual_query_shortcuts.md)
+- **PROMPT:** [prompts/202607/restore_contextual_query_shortcuts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_contextual_query_shortcuts.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-76.land.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-76.land.f1/README.md)
   - [bbugyi200.athena.sase-76.land.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-76.land.f1.md#member-code)

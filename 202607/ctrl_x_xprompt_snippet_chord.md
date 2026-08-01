@@ -10,7 +10,7 @@ create_time: 2026-07-18 08:19:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ctrl_x_xprompt_snippet_chord.md](prompts/ctrl_x_xprompt_snippet_chord.md)
+- **PROMPT:** [prompts/202607/ctrl_x_xprompt_snippet_chord.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ctrl_x_xprompt_snippet_chord.md)
 - **AGENTS:**
   - [bbugyi200.athena.da](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.da/README.md)
   - [bbugyi200.athena.da--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.da.md#member-code)

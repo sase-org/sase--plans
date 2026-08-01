@@ -8,13 +8,12 @@ create_time: 2026-07-29 18:40:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/alt_brace_punctuation.md](prompts/alt_brace_punctuation.md)
+- **PROMPT:** [prompts/202607/alt_brace_punctuation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/alt_brace_punctuation.md)
 - **AGENTS:**
   - [bbugyi200.athena.ox--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ox.md#member-code)
   - [bbugyi200.athena.ox--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ox.md#member-plan)
 - **COMMITS:**
-  - [a79dad1](https://github.com/sase-org/sase/commit/a79dad1639a7a54406a4c185fdc15be00d8e8628) — feat(ace): allow alt
-    braces before punctuation
+  - [a79dad1](https://github.com/sase-org/sase/commit/a79dad1639a7a54406a4c185fdc15be00d8e8628) — feat(ace): allow alt braces before punctuation
 
 # Plan: Expand `%{` before trailing punctuation
 

@@ -10,7 +10,7 @@ create_time: 2026-07-18 06:24:23
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/collapsed_panel_bulk_cleanup.md](prompts/collapsed_panel_bulk_cleanup.md)
+- **PROMPT:** [prompts/202607/collapsed_panel_bulk_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/collapsed_panel_bulk_cleanup.md)
 - **AGENTS:**
   - [bbugyi200.athena.cv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cv/README.md)
   - [bbugyi200.athena.cv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cv.md#member-code)

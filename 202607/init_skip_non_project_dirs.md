@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/init_skip_non_project_dirs.md](prompts/init_skip_non_project_dirs.md)
+- **PROMPT:** [prompts/202607/init_skip_non_project_dirs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/init_skip_non_project_dirs.md)
 
 # Plan: `sase init` should not scaffold project files in non-project directories
 

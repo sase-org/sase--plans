@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/init_command_improvements.md](prompts/init_command_improvements.md)
+- **PROMPT:** [prompts/202607/init_command_improvements.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/init_command_improvements.md)
 
 # Plan: Fix bugs and objective UX gaps in `sase init`
 

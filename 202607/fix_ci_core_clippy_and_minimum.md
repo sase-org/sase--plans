@@ -28,8 +28,8 @@ status: done
 bead_id: sase-al
 ---
 
+- **PROMPT:** [prompts/202607/fix_ci_core_clippy_and_minimum.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_ci_core_clippy_and_minimum.md)
 - **BEAD:** [sase-al](https://github.com/sase-org/sase--beads/blob/main/pages/sase-al/README.md)
-- **PROMPT:** [202607/prompts/fix_ci_core_clippy_and_minimum.md](prompts/fix_ci_core_clippy_and_minimum.md)
 - **AGENTS:**
   - [bbugyi200.athena.nj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nj/README.md)
   - [bbugyi200.athena.sase-al.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-al.1/README.md)

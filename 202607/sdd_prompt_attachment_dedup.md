@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/sdd_prompt_attachment_dedup.md](prompts/sdd_prompt_attachment_dedup.md)
+- **PROMPT:** [prompts/202607/sdd_prompt_attachment_dedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sdd_prompt_attachment_dedup.md)
 - **AGENTS:**
   - [bbugyi200.athena.75](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.75/README.md)
   - [bbugyi200.athena.75--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.75.md#member-code)

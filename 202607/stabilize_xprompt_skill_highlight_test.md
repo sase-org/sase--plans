@@ -6,7 +6,7 @@ create_time: 2026-07-15 09:17:28
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/stabilize_xprompt_skill_highlight_test.md](prompts/stabilize_xprompt_skill_highlight_test.md)
+- **PROMPT:** [prompts/202607/stabilize_xprompt_skill_highlight_test.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/stabilize_xprompt_skill_highlight_test.md)
 - **AGENTS:**
   - [bbugyi200.athena.90](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.90/README.md)
   - [bbugyi200.athena.90--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.90.md#member-code)

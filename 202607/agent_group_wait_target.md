@@ -10,7 +10,7 @@ create_time: 2026-07-19 14:09:50
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_group_wait_target.md](prompts/agent_group_wait_target.md)
+- **PROMPT:** [prompts/202607/agent_group_wait_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_group_wait_target.md)
 - **AGENTS:**
   - [bbugyi200.athena.f9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.f9/README.md)
   - [bbugyi200.athena.f9--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f9.md#member-code)

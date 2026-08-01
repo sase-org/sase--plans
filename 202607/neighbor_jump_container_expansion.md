@@ -10,7 +10,7 @@ create_time: 2026-07-18 21:09:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/neighbor_jump_container_expansion.md](prompts/neighbor_jump_container_expansion.md)
+- **PROMPT:** [prompts/202607/neighbor_jump_container_expansion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/neighbor_jump_container_expansion.md)
 - **AGENTS:**
   - [bbugyi200.athena.e6.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.e6.f1/README.md)
   - [bbugyi200.athena.e6.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e6.f1.md#member-code)

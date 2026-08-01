@@ -24,7 +24,7 @@ status: done
 bead_id: sase-8l
 ---
 
-- **PROMPT:** [202607/prompts/toobig_clan_summary.md](prompts/toobig_clan_summary.md)
+- **PROMPT:** [prompts/202607/toobig_clan_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toobig_clan_summary.md)
 - **BEAD:** [sase-8l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8l/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8l.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8l.1/README.md)

@@ -78,7 +78,7 @@ status: done
 bead_id: sase-bb
 ---
 
-- **PROMPT:** [202607/prompts/spec_artifact_references.md](prompts/spec_artifact_references.md)
+- **PROMPT:** [prompts/202607/spec_artifact_references.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/spec_artifact_references.md)
 - **BEAD:** [sase-bb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bb/README.md)
 
 # Plan: Persist artifact references on beads and ChangeSpecs

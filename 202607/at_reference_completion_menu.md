@@ -91,7 +91,7 @@ status: done
 bead_id: sase-ay
 ---
 
-- **PROMPT:** [202607/prompts/at_reference_completion_menu.md](prompts/at_reference_completion_menu.md)
+- **PROMPT:** [prompts/202607/at_reference_completion_menu.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/at_reference_completion_menu.md)
 - **BEAD:** [sase-ay](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ay/README.md)
 
 # Plan: Bare `@` opens one reference menu for artifact kinds and local files

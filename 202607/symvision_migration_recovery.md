@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/symvision_migration_recovery.md](prompts/symvision_migration_recovery.md)
+- **PROMPT:** [prompts/202607/symvision_migration_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/symvision_migration_recovery.md)
 - **AGENTS:**
   - [bbugyi200.athena.7e](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7e/README.md)
   - [bbugyi200.athena.7e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7e.md#member-code)

@@ -10,7 +10,7 @@ create_time: 2026-07-21 07:44:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/statistics_reverse_range.md](prompts/statistics_reverse_range.md)
+- **PROMPT:** [prompts/202607/statistics_reverse_range.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_reverse_range.md)
 - **AGENTS:**
   - [bbugyi200.athena.gq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gq/README.md)
   - [bbugyi200.athena.gq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gq.md#member-code)

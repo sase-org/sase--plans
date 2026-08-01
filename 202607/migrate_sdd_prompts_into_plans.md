@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/migrate_sdd_prompts_into_plans.md](prompts/migrate_sdd_prompts_into_plans.md)
+- **PROMPT:** [prompts/202607/migrate_sdd_prompts_into_plans.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/migrate_sdd_prompts_into_plans.md)
 - **AGENTS:**
   - [bbugyi200.athena.66](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.66/README.md)
   - [bbugyi200.athena.66--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.66.md#member-code)

@@ -8,7 +8,7 @@ create_time: 2026-07-22 12:04:07
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/shared_config_editor.md](prompts/shared_config_editor.md)
+- **PROMPT:** [prompts/202607/shared_config_editor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/shared_config_editor.md)
 - **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
 - **BEAD:** [sase-8m.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8m/sase-8m.2.md)
 - **AGENTS:**

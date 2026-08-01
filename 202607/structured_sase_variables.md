@@ -62,7 +62,7 @@ status: done
 bead_id: sase-bf
 ---
 
-- **PROMPT:** [202607/prompts/structured_sase_variables.md](prompts/structured_sase_variables.md)
+- **PROMPT:** [prompts/202607/structured_sase_variables.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/structured_sase_variables.md)
 - **BEAD:** [sase-bf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bf/README.md)
 
 # Plan: Structured sase variables (nested lists and maps)

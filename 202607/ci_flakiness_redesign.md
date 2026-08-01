@@ -46,8 +46,8 @@ status: done
 bead_id: sase-am
 ---
 
+- **PROMPT:** [prompts/202607/ci_flakiness_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ci_flakiness_redesign.md)
 - **BEAD:** [sase-am](https://github.com/sase-org/sase--beads/blob/main/pages/sase-am/README.md)
-- **PROMPT:** [202607/prompts/ci_flakiness_redesign.md](prompts/ci_flakiness_redesign.md)
 - **AGENTS:**
   - [bbugyi200.athena.nm](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nm/README.md)
   - [bbugyi200.athena.sase-am.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-am.1/README.md)

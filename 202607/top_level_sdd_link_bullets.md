@@ -10,7 +10,7 @@ create_time: 2026-07-21 10:54:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/top_level_sdd_link_bullets.md](prompts/top_level_sdd_link_bullets.md)
+- **PROMPT:** [prompts/202607/top_level_sdd_link_bullets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/top_level_sdd_link_bullets.md)
 - **AGENTS:**
   - [bbugyi200.athena.gz.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gz.f0/README.md)
   - [bbugyi200.athena.gz.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gz.f0.md#member-code)

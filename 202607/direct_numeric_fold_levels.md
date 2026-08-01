@@ -10,7 +10,7 @@ create_time: 2026-07-19 07:31:24
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/direct_numeric_fold_levels.md](prompts/direct_numeric_fold_levels.md)
+- **PROMPT:** [prompts/202607/direct_numeric_fold_levels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/direct_numeric_fold_levels.md)
 - **AGENTS:**
   - [bbugyi200.athena.ed](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ed/README.md)
   - [bbugyi200.athena.ed--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ed.md#member-code)

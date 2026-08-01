@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/changespec_project_name_query.md](prompts/changespec_project_name_query.md)
+- **PROMPT:** [prompts/202607/changespec_project_name_query.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/changespec_project_name_query.md)
 - **AGENTS:**
   - [bbugyi200.athena.4q--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4q.md#member-code)
 

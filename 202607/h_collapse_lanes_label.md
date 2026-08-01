@@ -9,13 +9,12 @@ create_time: 2026-07-29 06:35:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/h_collapse_lanes_label.md](prompts/h_collapse_lanes_label.md)
+- **PROMPT:** [prompts/202607/h_collapse_lanes_label.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/h_collapse_lanes_label.md)
 - **AGENTS:**
   - [bbugyi200.athena.nr--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nr.md#member-1)
   - [bbugyi200.athena.nr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nr.md#member-code)
 - **COMMITS:**
-  - [cca22e6](https://github.com/sase-org/sase/commit/cca22e64d9648386ad52631f8f0217a55cc01f55) — refactor(ace): rename
-    collapse houses to lanes
+  - [cca22e6](https://github.com/sase-org/sase/commit/cca22e64d9648386ad52631f8f0217a55cc01f55) — refactor(ace): rename collapse houses to lanes
 
 # Rename the `H` "houses" vocabulary to the real SASE term "lanes"
 

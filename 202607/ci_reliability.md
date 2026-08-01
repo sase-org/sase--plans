@@ -8,7 +8,7 @@ create_time: 2026-07-15 13:47:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ci_reliability.md](prompts/ci_reliability.md)
+- **PROMPT:** [prompts/202607/ci_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ci_reliability.md)
 - **AGENTS:**
   - [bbugyi200.athena.9f](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9f/README.md)
   - [bbugyi200.athena.9f--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9f.md#member-code)

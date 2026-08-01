@@ -39,7 +39,7 @@ status: done
 bead_id: sase-6e
 ---
 
-- **PROMPT:** [202607/prompts/unified_notification_gates.md](prompts/unified_notification_gates.md)
+- **PROMPT:** [prompts/202607/unified_notification_gates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/unified_notification_gates.md)
 - **BEAD:** [sase-6e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6e/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.research.e.final.f0--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.e.final.f0.md#member-1)

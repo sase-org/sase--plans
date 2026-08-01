@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/vcs_ref_colon_completion.md](prompts/vcs_ref_colon_completion.md)
+- **PROMPT:** [prompts/202607/vcs_ref_colon_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/vcs_ref_colon_completion.md)
 - **BEAD:** [sase-5i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5i/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5h.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5h.w1.md#member-code)

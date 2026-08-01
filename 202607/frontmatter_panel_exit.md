@@ -9,7 +9,7 @@ create_time: 2026-07-27 06:56:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/frontmatter_panel_exit.md](prompts/frontmatter_panel_exit.md)
+- **PROMPT:** [prompts/202607/frontmatter_panel_exit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/frontmatter_panel_exit.md)
 - **AGENTS:**
   - [bbugyi200.athena.ly](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ly/README.md)
   - [bbugyi200.athena.ly--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ly.md#member-code)

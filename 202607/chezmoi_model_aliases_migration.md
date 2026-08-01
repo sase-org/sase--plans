@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/chezmoi_model_aliases_migration.md](prompts/chezmoi_model_aliases_migration.md)
+- **PROMPT:** [prompts/202607/chezmoi_model_aliases_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chezmoi_model_aliases_migration.md)
 
 # Plan: Migrate chezmoi `sase.yml` to the unified `model_aliases` shape
 

@@ -9,7 +9,7 @@ create_time: 2026-07-16 16:17:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/inline_code_visibility.md](prompts/inline_code_visibility.md)
+- **PROMPT:** [prompts/202607/inline_code_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/inline_code_visibility.md)
 - **AGENTS:**
   - [bbugyi200.athena.av](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.av/README.md)
   - [bbugyi200.athena.av--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.av.md#member-code)

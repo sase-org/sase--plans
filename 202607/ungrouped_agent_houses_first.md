@@ -10,7 +10,7 @@ create_time: 2026-07-22 07:20:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ungrouped_agent_houses_first.md](prompts/ungrouped_agent_houses_first.md)
+- **PROMPT:** [prompts/202607/ungrouped_agent_houses_first.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ungrouped_agent_houses_first.md)
 - **AGENTS:**
   - [bbugyi200.athena.hu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hu/README.md)
   - [bbugyi200.athena.hu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hu.md#member-code)

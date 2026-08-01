@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/public_sdd_companion_label.md](prompts/public_sdd_companion_label.md)
+- **PROMPT:** [prompts/202607/public_sdd_companion_label.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/public_sdd_companion_label.md)
 - **AGENTS:**
   - [bbugyi200.athena.33.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.33.f1.md#member-code)
 

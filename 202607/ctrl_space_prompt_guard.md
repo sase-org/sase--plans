@@ -8,7 +8,7 @@ create_time: 2026-07-28 11:56:35
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ctrl_space_prompt_guard.md](prompts/ctrl_space_prompt_guard.md)
+- **PROMPT:** [prompts/202607/ctrl_space_prompt_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ctrl_space_prompt_guard.md)
 - **AGENTS:**
   - [bbugyi200.athena.n4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n4.md#member-code)
 - **COMMITS:**

@@ -10,7 +10,7 @@ create_time: 2026-07-19 10:19:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/two_character_tui_hints.md](prompts/two_character_tui_hints.md)
+- **PROMPT:** [prompts/202607/two_character_tui_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/two_character_tui_hints.md)
 - **AGENTS:**
   - [bbugyi200.athena.ey](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ey/README.md)
   - [bbugyi200.athena.ey--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ey.md#member-code)

@@ -43,7 +43,7 @@ status: done
 bead_id: sase-ci
 ---
 
-- **PROMPT:** [202607/prompts/telegram_generic_gate_support.md](prompts/telegram_generic_gate_support.md)
+- **PROMPT:** [prompts/202607/telegram_generic_gate_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_generic_gate_support.md)
 - **BEAD:** [sase-ci](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ci/README.md)
 
 # Plan: Registry-driven Telegram support for every SASE gate kind

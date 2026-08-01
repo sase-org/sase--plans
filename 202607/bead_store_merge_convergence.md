@@ -89,7 +89,7 @@ status: wip
 bead_id: sase-9u
 ---
 
-- **PROMPT:** [202607/prompts/bead_store_merge_convergence.md](prompts/bead_store_merge_convergence.md)
+- **PROMPT:** [prompts/202607/bead_store_merge_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_store_merge_convergence.md)
 - **BEAD:** sase-9u
 
 # Converge diverged bead stores with one-shot semantic merge integration

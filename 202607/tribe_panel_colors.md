@@ -12,7 +12,7 @@ create_time: 2026-07-19 21:53:58
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/tribe_panel_colors.md](prompts/tribe_panel_colors.md)
+- **PROMPT:** [prompts/202607/tribe_panel_colors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_panel_colors.md)
 - **AGENTS:**
   - [bbugyi200.athena.fi--code.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fi--code.f0.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-15 13:21:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_hook_finalizer_env.md](prompts/fix_hook_finalizer_env.md)
+- **PROMPT:** [prompts/202607/fix_hook_finalizer_env.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_hook_finalizer_env.md)
 - **AGENTS:**
   - [bbugyi200.athena.9d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9d/README.md)
   - [bbugyi200.athena.9d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9d.md#member-code)

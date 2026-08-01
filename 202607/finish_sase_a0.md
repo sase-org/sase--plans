@@ -31,7 +31,7 @@ status: wip
 bead_id: sase-a0.5
 ---
 
-- **PROMPT:** [202607/prompts/finish_sase_a0.md](prompts/finish_sase_a0.md)
+- **PROMPT:** [prompts/202607/finish_sase_a0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_sase_a0.md)
 - **PARENT:** [202607/fix_ci_failures.md](https://github.com/sase-org/sase--plans/blob/main/202607/fix_ci_failures.md)
 - **BEAD:** [sase-a0.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-a0/sase-a0.5.md)
 - **AGENTS:**

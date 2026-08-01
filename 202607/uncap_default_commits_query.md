@@ -8,7 +8,7 @@ create_time: 2026-07-21 13:06:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/uncap_default_commits_query.md](prompts/uncap_default_commits_query.md)
+- **PROMPT:** [prompts/202607/uncap_default_commits_query.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/uncap_default_commits_query.md)
 - **AGENTS:**
   - [bbugyi200.athena.hb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hb/README.md)
   - [bbugyi200.athena.hb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hb.md#member-code)

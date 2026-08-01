@@ -8,7 +8,7 @@ create_time: 2026-07-23 08:09:06
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/axe_status_snapshot.md](prompts/axe_status_snapshot.md)
+- **PROMPT:** [prompts/202607/axe_status_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_status_snapshot.md)
 - **PARENT:** [202607/axe_status.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_status.md)
 - **BEAD:** [sase-8t.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8t/sase-8t.2.md)
 - **AGENTS:**

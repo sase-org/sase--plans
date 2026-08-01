@@ -9,7 +9,7 @@ create_time: 2026-07-28 11:04:28
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_lumberjack_wait_runners.md](prompts/land_lumberjack_wait_runners.md)
+- **PROMPT:** [prompts/202607/land_lumberjack_wait_runners.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_lumberjack_wait_runners.md)
 - **PARENT:** [202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--plans/blob/main/202607/lumberjack_wait_runners.md)
 - **BEAD:** [sase-af](https://github.com/sase-org/sase--beads/blob/main/pages/sase-af/README.md)
 - **AGENTS:**

@@ -10,7 +10,7 @@ create_time: 2026-07-20 14:23:53
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/wait_priority_directive_1.md](prompts/wait_priority_directive_1.md)
+- **PROMPT:** [prompts/202607/wait_priority_directive_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/wait_priority_directive_1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8c.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8c.2/README.md)
   - [bbugyi200.athena.sase-8c.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8c.2.md#member-code)

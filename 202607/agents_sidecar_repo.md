@@ -97,7 +97,7 @@ status: done
 bead_id: sase-8k
 ---
 
-- **PROMPT:** [202607/prompts/agents_sidecar_repo.md](prompts/agents_sidecar_repo.md)
+- **PROMPT:** [prompts/202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_sidecar_repo.md)
 - **BEAD:** [sase-8k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8k.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8k.1/README.md)

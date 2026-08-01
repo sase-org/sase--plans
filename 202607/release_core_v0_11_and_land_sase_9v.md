@@ -12,7 +12,7 @@ create_time: 2026-07-26 13:37:34
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/release_core_v0_11_and_land_sase_9v.md](prompts/release_core_v0_11_and_land_sase_9v.md)
+- **PROMPT:** [prompts/202607/release_core_v0_11_and_land_sase_9v.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/release_core_v0_11_and_land_sase_9v.md)
 - **PARENT:** [202607/bead_review_hardening.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_review_hardening.md)
 - **BEAD:** [sase-9v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9v/README.md)
 - **AGENTS:**

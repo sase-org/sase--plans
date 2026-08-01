@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/companion_sdd_finalizer_prompting.md](prompts/companion_sdd_finalizer_prompting.md)
+- **PROMPT:** [prompts/202607/companion_sdd_finalizer_prompting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/companion_sdd_finalizer_prompting.md)
 - **AGENTS:**
   - [bbugyi200.athena.73](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.73/README.md)
   - [bbugyi200.athena.73--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.73.md#member-code)

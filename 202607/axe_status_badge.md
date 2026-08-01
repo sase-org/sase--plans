@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/axe_status_badge.md](prompts/axe_status_badge.md)
+- **PROMPT:** [prompts/202607/axe_status_badge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_status_badge.md)
 - **AGENTS:**
   - [bbugyi200.athena.46--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.46.md#member-code)
 

@@ -11,7 +11,7 @@ create_time: 2026-07-22 07:12:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_runner_limit_controls.md](prompts/models_panel_runner_limit_controls.md)
+- **PROMPT:** [prompts/202607/models_panel_runner_limit_controls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_runner_limit_controls.md)
 - **AGENTS:**
   - [bbugyi200.athena.hs](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hs/README.md)
   - [bbugyi200.athena.hs--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hs.md#member-code)

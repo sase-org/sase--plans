@@ -10,7 +10,7 @@ create_time: 2026-07-17 09:31:56
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ctrl_space_all_artifacts_subtabs.md](prompts/ctrl_space_all_artifacts_subtabs.md)
+- **PROMPT:** [prompts/202607/ctrl_space_all_artifacts_subtabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ctrl_space_all_artifacts_subtabs.md)
 - **AGENTS:**
   - [bbugyi200.athena.br.w0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.br.w0/README.md)
   - [bbugyi200.athena.br.w0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.br.w0.md#member-code)

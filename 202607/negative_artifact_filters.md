@@ -10,7 +10,7 @@ create_time: 2026-07-18 15:33:58
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/negative_artifact_filters.md](prompts/negative_artifact_filters.md)
+- **PROMPT:** [prompts/202607/negative_artifact_filters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/negative_artifact_filters.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6t.land.w2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6t.land.w2/README.md)
   - [bbugyi200.athena.sase-6t.land.w2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6t.land.w2.md#member-code)

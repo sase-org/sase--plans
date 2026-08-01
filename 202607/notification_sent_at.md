@@ -9,7 +9,7 @@ create_time: 2026-07-31 13:26:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/notification_sent_at.md](prompts/notification_sent_at.md)
+- **PROMPT:** [prompts/202607/notification_sent_at.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/notification_sent_at.md)
 
 # Show when the selected notification was sent in the notification panel
 

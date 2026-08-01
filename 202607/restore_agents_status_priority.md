@@ -11,7 +11,7 @@ create_time: 2026-07-18 15:41:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_agents_status_priority.md](prompts/restore_agents_status_priority.md)
+- **PROMPT:** [prompts/202607/restore_agents_status_priority.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_agents_status_priority.md)
 - **AGENTS:**
   - [bbugyi200.athena.dv](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dv/README.md)
   - [bbugyi200.athena.dv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dv.md#member-code)

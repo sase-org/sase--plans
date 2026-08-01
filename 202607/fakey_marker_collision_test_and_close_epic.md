@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fakey_marker_collision_test_and_close_epic.md](prompts/fakey_marker_collision_test_and_close_epic.md)
+- **PROMPT:** [prompts/202607/fakey_marker_collision_test_and_close_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fakey_marker_collision_test_and_close_epic.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5o.md#member-code)
 

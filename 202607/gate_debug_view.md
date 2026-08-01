@@ -12,7 +12,7 @@ create_time: 2026-07-17 09:14:36
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/gate_debug_view.md](prompts/gate_debug_view.md)
+- **PROMPT:** [prompts/202607/gate_debug_view.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_debug_view.md)
 - **AGENTS:**
   - [bbugyi200.athena.bu](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bu/README.md)
   - [bbugyi200.athena.bu--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bu.md#member-code)

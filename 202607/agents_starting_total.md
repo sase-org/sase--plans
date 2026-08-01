@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agents_starting_total.md](prompts/agents_starting_total.md)
+- **PROMPT:** [prompts/202607/agents_starting_total.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_starting_total.md)
 
 # Plan: Include STARTING Agents in the Agents Tab Total
 

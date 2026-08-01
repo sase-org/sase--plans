@@ -57,7 +57,7 @@ status: done
 bead_id: sase-bd.9
 ---
 
-- **PROMPT:** [202607/prompts/bead_close_integrity_landing.md](prompts/bead_close_integrity_landing.md)
+- **PROMPT:** [prompts/202607/bead_close_integrity_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_close_integrity_landing.md)
 - **PARENT:** [202607/bead_close_integrity.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_close_integrity.md)
 - **BEAD:** [sase-bd.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bd/sase-bd.9.md)
 

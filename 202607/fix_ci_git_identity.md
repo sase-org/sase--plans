@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_ci_git_identity.md](prompts/fix_ci_git_identity.md)
+- **PROMPT:** [prompts/202607/fix_ci_git_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_ci_git_identity.md)
 - **AGENTS:**
   - [bbugyi200.athena.45--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.45.md#member-code)
 

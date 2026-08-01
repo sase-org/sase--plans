@@ -7,7 +7,7 @@ create_time: 2026-07-22 11:23:46
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_hole_tribe_counts.md](prompts/agent_hole_tribe_counts.md)
+- **PROMPT:** [prompts/202607/agent_hole_tribe_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_hole_tribe_counts.md)
 - **AGENTS:**
   - [bbugyi200.athena.ia.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ia.f1/README.md)
   - [bbugyi200.athena.ia.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ia.f1.md#member-code)

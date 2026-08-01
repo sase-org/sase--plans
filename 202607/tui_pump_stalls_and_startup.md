@@ -33,7 +33,7 @@ status: done
 bead_id: sase-6c
 ---
 
-- **PROMPT:** [202607/prompts/tui_pump_stalls_and_startup.md](prompts/tui_pump_stalls_and_startup.md)
+- **PROMPT:** [prompts/202607/tui_pump_stalls_and_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_pump_stalls_and_startup.md)
 - **BEAD:** [sase-6c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6c/README.md)
 
 # Plan: Eliminate ACE TUI multi-second freezes and startup regressions

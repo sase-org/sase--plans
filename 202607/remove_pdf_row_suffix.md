@@ -8,13 +8,12 @@ create_time: 2026-07-29 07:23:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/remove_pdf_row_suffix.md](prompts/remove_pdf_row_suffix.md)
+- **PROMPT:** [prompts/202607/remove_pdf_row_suffix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_pdf_row_suffix.md)
 - **AGENTS:**
   - [bbugyi200.athena.nv--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nv.md#member-code)
   - [bbugyi200.athena.nv--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nv.md#member-plan)
 - **COMMITS:**
-  - [7e20cd2](https://github.com/sase-org/sase/commit/7e20cd22e847c12fc6e435e6da4003e9d054f358) — fix(ace): remove PDF
-    activity from agent rows
+  - [7e20cd2](https://github.com/sase-org/sase/commit/7e20cd22e847c12fc6e435e6da4003e9d054f358) — fix(ace): remove PDF activity from agent rows
 
 # Remove the PDF finalization label from ACE agent rows
 

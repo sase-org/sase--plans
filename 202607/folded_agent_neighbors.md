@@ -10,7 +10,7 @@ create_time: 2026-07-19 17:26:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/folded_agent_neighbors.md](prompts/folded_agent_neighbors.md)
+- **PROMPT:** [prompts/202607/folded_agent_neighbors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/folded_agent_neighbors.md)
 - **AGENTS:**
   - [bbugyi200.athena.ff](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ff/README.md)
   - [bbugyi200.athena.ff--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ff.md#member-code)

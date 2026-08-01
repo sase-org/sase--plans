@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/sase_5q_record_repair_and_closeout.md](prompts/sase_5q_record_repair_and_closeout.md)
+- **PROMPT:** [prompts/202607/sase_5q_record_repair_and_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_5q_record_repair_and_closeout.md)
 - **AGENTS:**
   - [bbugyi200.athena.6p](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6p/README.md)
   - [bbugyi200.athena.6p--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6p.md#member-code)

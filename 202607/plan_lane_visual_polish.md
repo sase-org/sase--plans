@@ -12,7 +12,7 @@ create_time: 2026-07-16 17:53:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/plan_lane_visual_polish.md](prompts/plan_lane_visual_polish.md)
+- **PROMPT:** [prompts/202607/plan_lane_visual_polish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plan_lane_visual_polish.md)
 - **AGENTS:**
   - [bbugyi200.athena.b1.f2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b1.f2/README.md)
   - [bbugyi200.athena.b1.f2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b1.f2.md#member-code)

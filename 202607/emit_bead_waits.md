@@ -8,7 +8,7 @@ create_time: 2026-07-20 12:07:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/emit_bead_waits.md](prompts/emit_bead_waits.md)
+- **PROMPT:** [prompts/202607/emit_bead_waits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/emit_bead_waits.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-87.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-87.4/README.md)
   - [bbugyi200.athena.sase-87.4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.4.md#member-code)

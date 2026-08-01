@@ -57,7 +57,7 @@ status: done
 bead_id: sase-7t
 ---
 
-- **PROMPT:** [202607/prompts/chop_lifecycle_fixes_v2.md](prompts/chop_lifecycle_fixes_v2.md)
+- **PROMPT:** [prompts/202607/chop_lifecycle_fixes_v2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/chop_lifecycle_fixes_v2.md)
 - **BEAD:** [sase-7t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7t/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.fh--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fh.md#member-plan-0)

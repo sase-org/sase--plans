@@ -54,7 +54,7 @@ status: done
 bead_id: sase-ab
 ---
 
-- **PROMPT:** [202607/prompts/land_beads_sidecar_epic.md](prompts/land_beads_sidecar_epic.md)
+- **PROMPT:** [prompts/202607/land_beads_sidecar_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_beads_sidecar_epic.md)
 - **BEAD:** [sase-ab](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ab/README.md)
 
 # Plan: Finish and land the dedicated beads sidecar (sase-a8)

@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/timezone_runtime_consistency.md](prompts/timezone_runtime_consistency.md)
+- **PROMPT:** [prompts/202607/timezone_runtime_consistency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/timezone_runtime_consistency.md)
 
 # Plan: Fix running-agent runtime (and all other timezone bugs) on machines whose system tz differs from the configured tz
 

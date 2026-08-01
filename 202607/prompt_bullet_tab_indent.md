@@ -10,7 +10,7 @@ create_time: 2026-07-25 08:25:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_bullet_tab_indent.md](prompts/prompt_bullet_tab_indent.md)
+- **PROMPT:** [prompts/202607/prompt_bullet_tab_indent.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_bullet_tab_indent.md)
 - **AGENTS:**
   - [bbugyi200.athena.kg](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kg/README.md)
   - [bbugyi200.athena.kg--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kg.md#member-code)

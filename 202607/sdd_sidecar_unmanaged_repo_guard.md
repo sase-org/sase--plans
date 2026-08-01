@@ -27,7 +27,7 @@ create_time: 2026-07-15 14:33:49
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sdd_sidecar_unmanaged_repo_guard.md](prompts/sdd_sidecar_unmanaged_repo_guard.md)
+- **PROMPT:** [prompts/202607/sdd_sidecar_unmanaged_repo_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sdd_sidecar_unmanaged_repo_guard.md)
 - **AGENTS:**
   - [bbugyi200.athena.9m](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9m/README.md)
   - [bbugyi200.athena.9m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9m.md#member-code)

@@ -11,7 +11,7 @@ create_time: 2026-07-16 21:11:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_xprompt_agent_families.md](prompts/finish_xprompt_agent_families.md)
+- **PROMPT:** [prompts/202607/finish_xprompt_agent_families.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_xprompt_agent_families.md)
 
 # Plan: Finish and land xprompt agent families
 

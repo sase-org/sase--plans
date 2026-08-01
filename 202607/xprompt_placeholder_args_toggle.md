@@ -12,7 +12,7 @@ create_time: 2026-07-26 11:29:42
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_placeholder_args_toggle.md](prompts/xprompt_placeholder_args_toggle.md)
+- **PROMPT:** [prompts/202607/xprompt_placeholder_args_toggle.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_placeholder_args_toggle.md)
 - **PARENT:** [202607/raw_placeholder_inputs.md](https://github.com/sase-org/sase--plans/blob/main/202607/raw_placeholder_inputs.md)
 - **BEAD:** [sase-9q](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9q/README.md)
 - **AGENTS:**

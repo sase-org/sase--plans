@@ -8,7 +8,7 @@ create_time: 2026-07-20 16:18:43
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_clan_plan_summary.md](prompts/epic_clan_plan_summary.md)
+- **PROMPT:** [prompts/202607/epic_clan_plan_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_clan_plan_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8d.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.3/README.md)
   - [bbugyi200.athena.sase-8d.3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.3.md#member-code)

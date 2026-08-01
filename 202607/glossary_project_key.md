@@ -9,7 +9,7 @@ create_time: 2026-07-16 07:50:41
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/glossary_project_key.md](prompts/glossary_project_key.md)
+- **PROMPT:** [prompts/202607/glossary_project_key.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/glossary_project_key.md)
 - **AGENTS:**
   - [bbugyi200.athena.a6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a6/README.md)
   - [bbugyi200.athena.a6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a6.md#member-code)

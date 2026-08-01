@@ -10,7 +10,7 @@ create_time: 2026-07-16 08:09:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_input_format_keymap.md](prompts/prompt_input_format_keymap.md)
+- **PROMPT:** [prompts/202607/prompt_input_format_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_input_format_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.a8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a8/README.md)
   - [bbugyi200.athena.a8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a8.md#member-code)

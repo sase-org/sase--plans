@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/config_edit_modal_fullscreen.md](prompts/config_edit_modal_fullscreen.md)
+- **PROMPT:** [prompts/202607/config_edit_modal_fullscreen.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/config_edit_modal_fullscreen.md)
 
 # Plan: Near-Fullscreen Config Edit Modal (SASE Admin Center → Config tab)
 

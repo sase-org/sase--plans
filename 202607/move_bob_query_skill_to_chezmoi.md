@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/move_bob_query_skill_to_chezmoi.md](prompts/move_bob_query_skill_to_chezmoi.md)
+- **PROMPT:** [prompts/202607/move_bob_query_skill_to_chezmoi.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/move_bob_query_skill_to_chezmoi.md)
 - **AGENTS:**
   - [bbugyi200.athena.4j.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.4j.f-0.md#member-code)
 

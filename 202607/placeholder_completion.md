@@ -25,7 +25,7 @@ status: done
 bead_id: sase-6b
 ---
 
-- **PROMPT:** [202607/prompts/placeholder_completion.md](prompts/placeholder_completion.md)
+- **PROMPT:** [prompts/202607/placeholder_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/placeholder_completion.md)
 - **BEAD:** [sase-6b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6b/README.md)
 
 # Plan: Placeholder completion for `<placeholder text>` in prompts

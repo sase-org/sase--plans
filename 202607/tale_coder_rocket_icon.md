@@ -9,7 +9,7 @@ create_time: 2026-07-18 14:04:50
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tale_coder_rocket_icon.md](prompts/tale_coder_rocket_icon.md)
+- **PROMPT:** [prompts/202607/tale_coder_rocket_icon.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tale_coder_rocket_icon.md)
 - **AGENTS:**
   - [bbugyi200.athena.dn](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dn/README.md)
   - [bbugyi200.athena.dn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dn.md#member-code)

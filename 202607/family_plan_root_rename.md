@@ -11,7 +11,7 @@ create_time: 2026-07-18 08:24:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/family_plan_root_rename.md](prompts/family_plan_root_rename.md)
+- **PROMPT:** [prompts/202607/family_plan_root_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/family_plan_root_rename.md)
 - **AGENTS:**
   - [bbugyi200.athena.d7.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.d7.w1/README.md)
   - [bbugyi200.athena.d7.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.d7.w1.md#member-code)

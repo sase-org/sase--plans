@@ -102,7 +102,7 @@ status: done
 bead_id: sase-bd
 ---
 
-- **PROMPT:** [202607/prompts/bead_close_integrity.md](prompts/bead_close_integrity.md)
+- **PROMPT:** [prompts/202607/bead_close_integrity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_close_integrity.md)
 - **BEAD:** [sase-bd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bd/README.md)
 
 # Idempotent bead close-and-publish, then repair the projection

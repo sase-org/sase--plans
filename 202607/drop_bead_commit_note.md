@@ -8,7 +8,7 @@ create_time: 2026-07-25 09:53:27
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/drop_bead_commit_note.md](prompts/drop_bead_commit_note.md)
+- **PROMPT:** [prompts/202607/drop_bead_commit_note.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/drop_bead_commit_note.md)
 - **AGENTS:**
   - [bbugyi200.athena.kn](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kn/README.md)
   - [bbugyi200.athena.kn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kn.md#member-code)

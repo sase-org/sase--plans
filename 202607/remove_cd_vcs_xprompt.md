@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/remove_cd_vcs_xprompt.md](prompts/remove_cd_vcs_xprompt.md)
+- **PROMPT:** [prompts/202607/remove_cd_vcs_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/remove_cd_vcs_xprompt.md)
 - **AGENTS:**
   - [bbugyi200.athena.3w.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3w.f-0.md#member-code)
 

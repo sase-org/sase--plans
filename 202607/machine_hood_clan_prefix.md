@@ -8,7 +8,7 @@ create_time: 2026-07-23 08:11:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/machine_hood_clan_prefix.md](prompts/machine_hood_clan_prefix.md)
+- **PROMPT:** [prompts/202607/machine_hood_clan_prefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/machine_hood_clan_prefix.md)
 - **AGENTS:**
   - [bbugyi200.athena.iy](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.iy/README.md)
   - [bbugyi200.athena.iy--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.iy.md#member-code)

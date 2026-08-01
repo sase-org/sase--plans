@@ -9,12 +9,11 @@ create_time: 2026-07-31 16:08:02
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/yaml_model_alias_defaults.md](prompts/yaml_model_alias_defaults.md)
+- **PROMPT:** [prompts/202607/yaml_model_alias_defaults.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/yaml_model_alias_defaults.md)
 - **AGENTS:**
   - [bbugyi200.athena.qq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qq.md)
 - **COMMITS:**
-  - [f55ce07](https://github.com/sase-org/sase/commit/f55ce07d164d57b1c05d6585b191459adcc9e5e7) — feat(llm_provider):
-    drive shipped model alias defaults from one YAML file
+  - [f55ce07](https://github.com/sase-org/sase/commit/f55ce07d164d57b1c05d6585b191459adcc9e5e7) — feat(llm\_provider): drive shipped model alias defaults from one YAML file
 
 # Plan: YAML-Driven Default Model Alias Configuration
 

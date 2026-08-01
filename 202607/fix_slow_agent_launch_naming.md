@@ -7,7 +7,7 @@ create_time: 2026-07-23 07:31:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_slow_agent_launch_naming.md](prompts/fix_slow_agent_launch_naming.md)
+- **PROMPT:** [prompts/202607/fix_slow_agent_launch_naming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_slow_agent_launch_naming.md)
 - **AGENTS:**
   - [bbugyi200.athena.is.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.is.cdx/README.md)
   - [bbugyi200.athena.is.cdx--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.is.cdx.md#member-code)

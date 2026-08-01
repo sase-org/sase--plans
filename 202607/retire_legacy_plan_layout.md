@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/retire_legacy_plan_layout.md](prompts/retire_legacy_plan_layout.md)
+- **PROMPT:** [prompts/202607/retire_legacy_plan_layout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/retire_legacy_plan_layout.md)
 - **AGENTS:**
   - [bbugyi200.athena.5v.f-1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.5v.f-1/README.md)
   - [bbugyi200.athena.5v.f-1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5v.f-1.md#member-code)

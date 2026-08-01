@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/daemon_only_run.md](prompts/daemon_only_run.md)
+- **PROMPT:** [prompts/202607/daemon_only_run.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/daemon_only_run.md)
 
 # Plan: Make Detached Launch the Only `sase run` Behavior (remove `-d|--daemon`)
 

@@ -7,7 +7,7 @@ create_time: 2026-07-28 08:46:38
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/project_name_display.md](prompts/project_name_display.md)
+- **PROMPT:** [prompts/202607/project_name_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/project_name_display.md)
 - **AGENTS:**
   - [bbugyi200.athena.mp.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mp.f0.md#member-code)
 - **COMMITS:**

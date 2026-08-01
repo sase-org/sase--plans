@@ -10,7 +10,7 @@ create_time: 2026-07-20 17:12:22
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_sase_8d.md](prompts/land_sase_8d.md)
+- **PROMPT:** [prompts/202607/land_sase_8d.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_sase_8d.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8d.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8d.land/README.md)
   - [bbugyi200.athena.sase-8d.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.land.md#member-code)

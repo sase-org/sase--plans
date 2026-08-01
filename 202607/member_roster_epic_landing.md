@@ -10,7 +10,7 @@ create_time: 2026-07-18 20:58:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/member_roster_epic_landing.md](prompts/member_roster_epic_landing.md)
+- **PROMPT:** [prompts/202607/member_roster_epic_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/member_roster_epic_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-6w.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-6w.land/README.md)
   - [bbugyi200.athena.sase-6w.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-6w.land.md#member-code)

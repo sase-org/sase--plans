@@ -10,7 +10,7 @@ create_time: 2026-07-17 11:36:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/update_confirm_commit_scrolling.md](prompts/update_confirm_commit_scrolling.md)
+- **PROMPT:** [prompts/202607/update_confirm_commit_scrolling.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/update_confirm_commit_scrolling.md)
 - **AGENTS:**
   - [bbugyi200.athena.c1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.c1/README.md)
   - [bbugyi200.athena.c1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c1.md#member-code)

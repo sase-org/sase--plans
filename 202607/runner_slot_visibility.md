@@ -11,7 +11,7 @@ create_time: 2026-07-17 18:47:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/runner_slot_visibility.md](prompts/runner_slot_visibility.md)
+- **PROMPT:** [prompts/202607/runner_slot_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/runner_slot_visibility.md)
 - **AGENTS:**
   - [bbugyi200.athena.cp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cp/README.md)
   - [bbugyi200.athena.cp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cp.md#member-code)

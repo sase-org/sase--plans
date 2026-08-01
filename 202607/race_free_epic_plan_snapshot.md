@@ -11,7 +11,7 @@ create_time: 2026-07-21 11:06:10
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/race_free_epic_plan_snapshot.md](prompts/race_free_epic_plan_snapshot.md)
+- **PROMPT:** [prompts/202607/race_free_epic_plan_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/race_free_epic_plan_snapshot.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8i.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8i.2/README.md)
   - [bbugyi200.athena.sase-8i.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8i.2.md#member-code)

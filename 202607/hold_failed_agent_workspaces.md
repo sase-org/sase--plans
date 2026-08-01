@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/hold_failed_agent_workspaces.md](prompts/hold_failed_agent_workspaces.md)
+- **PROMPT:** [prompts/202607/hold_failed_agent_workspaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hold_failed_agent_workspaces.md)
 - **AGENTS:**
   - [bbugyi200.athena.76](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.76/README.md)
   - [bbugyi200.athena.76--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.76.md#member-code)

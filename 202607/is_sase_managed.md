@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/is_sase_managed.md](prompts/is_sase_managed.md)
+- **PROMPT:** [prompts/202607/is_sase_managed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/is_sase_managed.md)
 - **AGENTS:**
   - [bbugyi200.athena.5b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5b.md#member-code)
 

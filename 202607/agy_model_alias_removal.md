@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/agy_model_alias_removal.md](prompts/agy_model_alias_removal.md)
+- **PROMPT:** [prompts/202607/agy_model_alias_removal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agy_model_alias_removal.md)
 
 # Plan: Remove the hacky `agy` / `agy_pro` model aliases in favor of quoted `%model` arguments
 

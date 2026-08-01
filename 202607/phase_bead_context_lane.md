@@ -10,7 +10,7 @@ create_time: 2026-07-17 14:14:04
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/phase_bead_context_lane.md](prompts/phase_bead_context_lane.md)
+- **PROMPT:** [prompts/202607/phase_bead_context_lane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/phase_bead_context_lane.md)
 - **AGENTS:**
   - [bbugyi200.athena.cc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cc.md#member-code)
 

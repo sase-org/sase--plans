@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/typed_linked_repo_prep.md](prompts/typed_linked_repo_prep.md)
+- **PROMPT:** [prompts/202607/typed_linked_repo_prep.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/typed_linked_repo_prep.md)
 - **AGENTS:**
   - [bbugyi200.athena.j.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.j.f1.md#member-code)
 

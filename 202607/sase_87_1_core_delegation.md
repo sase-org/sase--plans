@@ -8,7 +8,7 @@ create_time: 2026-07-20 11:25:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sase_87_1_core_delegation.md](prompts/sase_87_1_core_delegation.md)
+- **PROMPT:** [prompts/202607/sase_87_1_core_delegation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sase_87_1_core_delegation.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-87.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-87.1.md#member-code)
 

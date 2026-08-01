@@ -8,13 +8,12 @@ create_time: 2026-07-29 12:10:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/changelog_unreleased_cleanup.md](prompts/changelog_unreleased_cleanup.md)
+- **PROMPT:** [prompts/202607/changelog_unreleased_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/changelog_unreleased_cleanup.md)
 - **AGENTS:**
   - [bbugyi200.athena.of--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.of.md#member-code)
   - [bbugyi200.athena.of--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.of.md#member-plan)
 - **COMMITS:**
-  - [619de09](https://github.com/sase-org/sase/commit/619de093a7e9f9cb86a05042fb402f2710039996) — fix(changelog):
-    enforce release-please ownership
+  - [619de09](https://github.com/sase-org/sase/commit/619de093a7e9f9cb86a05042fb402f2710039996) — fix(changelog): enforce release-please ownership
 
 # Remove the hand-written CHANGELOG `Unreleased` section and guard against its return
 

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/models_panel_alias_references.md](prompts/models_panel_alias_references.md)
+- **PROMPT:** [prompts/202607/models_panel_alias_references.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/models_panel_alias_references.md)
 - **AGENTS:**
   - [bbugyi200.athena.5s--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5s.md#member-code)
 

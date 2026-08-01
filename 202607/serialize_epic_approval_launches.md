@@ -8,7 +8,7 @@ create_time: 2026-07-20 11:03:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/serialize_epic_approval_launches.md](prompts/serialize_epic_approval_launches.md)
+- **PROMPT:** [prompts/202607/serialize_epic_approval_launches.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/serialize_epic_approval_launches.md)
 - **AGENTS:**
   - [bbugyi200.athena.ga](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ga/README.md)
   - [bbugyi200.athena.ga--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ga.md#member-code)

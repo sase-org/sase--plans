@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/ci_sdd_companion_clone.md](prompts/ci_sdd_companion_clone.md)
+- **PROMPT:** [prompts/202607/ci_sdd_companion_clone.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ci_sdd_companion_clone.md)
 - **AGENTS:**
   - [bbugyi200.athena.3b--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3b.md#member-code)
   - [bbugyi200.athena.3b--plan-0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3b.md#member-plan-0)

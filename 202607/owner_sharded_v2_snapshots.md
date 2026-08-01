@@ -8,7 +8,7 @@ create_time: 2026-07-23 16:02:00
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/owner_sharded_v2_snapshots.md](prompts/owner_sharded_v2_snapshots.md)
+- **PROMPT:** [prompts/202607/owner_sharded_v2_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/owner_sharded_v2_snapshots.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
 - **BEAD:** [sase-8v.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.4.md)
 - **AGENTS:**

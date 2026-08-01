@@ -11,7 +11,7 @@ create_time: 2026-07-20 16:00:39
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/statistics_empty_filter_landing.md](prompts/statistics_empty_filter_landing.md)
+- **PROMPT:** [prompts/202607/statistics_empty_filter_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_empty_filter_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8a.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-8a.land/README.md)
   - [bbugyi200.athena.sase-8a.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8a.land.md#member-code)

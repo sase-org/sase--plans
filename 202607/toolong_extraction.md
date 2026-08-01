@@ -5,7 +5,7 @@ status: wip
 tier: epic
 ---
 
-- **PROMPT:** [202607/prompts/toolong_extraction.md](prompts/toolong_extraction.md)
+- **PROMPT:** [prompts/202607/toolong_extraction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toolong_extraction.md)
 - **BEAD:** [sase-5r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5r/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.6f--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6f.md#member-epic)

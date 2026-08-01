@@ -7,7 +7,7 @@ create_time: 2026-07-24 18:06:28
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_header_counts.md](prompts/agents_header_counts.md)
+- **PROMPT:** [prompts/202607/agents_header_counts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_header_counts.md)
 - **AGENTS:**
   - [bbugyi200.athena.jq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq/README.md)
   - [bbugyi200.athena.jq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.md#member-code)

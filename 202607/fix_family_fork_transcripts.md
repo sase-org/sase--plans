@@ -10,7 +10,7 @@ create_time: 2026-07-19 21:53:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_family_fork_transcripts.md](prompts/fix_family_fork_transcripts.md)
+- **PROMPT:** [prompts/202607/fix_family_fork_transcripts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_family_fork_transcripts.md)
 - **AGENTS:**
   - [bbugyi200.athena.fr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fr/README.md)
   - [bbugyi200.athena.fr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fr.md#member-code)

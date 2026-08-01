@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/slow_tool_calls_root_child_scoping.md](prompts/slow_tool_calls_root_child_scoping.md)
+- **PROMPT:** [prompts/202607/slow_tool_calls_root_child_scoping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/slow_tool_calls_root_child_scoping.md)
 
 # Plan: Scope SLOW TOOL CALLS per selected agent row (child = own calls; root = all children, attributed)
 

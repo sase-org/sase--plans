@@ -10,7 +10,7 @@ create_time: 2026-07-16 17:40:40
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_view_hints_context_and_latency.md](prompts/agents_view_hints_context_and_latency.md)
+- **PROMPT:** [prompts/202607/agents_view_hints_context_and_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_view_hints_context_and_latency.md)
 - **AGENTS:**
   - [bbugyi200.athena.b2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b2/README.md)
   - [bbugyi200.athena.b2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b2.md#member-code)

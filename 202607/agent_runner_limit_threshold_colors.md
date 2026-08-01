@@ -7,7 +7,7 @@ create_time: 2026-07-24 19:11:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_runner_limit_threshold_colors.md](prompts/agent_runner_limit_threshold_colors.md)
+- **PROMPT:** [prompts/202607/agent_runner_limit_threshold_colors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_runner_limit_threshold_colors.md)
 - **AGENTS:**
   - [bbugyi200.athena.jq.f0.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jq.f0.f0/README.md)
   - [bbugyi200.athena.jq.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jq.f0.f0.md#member-code)

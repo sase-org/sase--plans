@@ -8,7 +8,7 @@ create_time: 2026-07-20 12:50:54
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/project_display_contract.md](prompts/project_display_contract.md)
+- **PROMPT:** [prompts/202607/project_display_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/project_display_contract.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-89.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.1/README.md)
   - [bbugyi200.athena.sase-89.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.1.md#member-code)

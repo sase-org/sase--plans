@@ -9,7 +9,7 @@ create_time: 2026-07-28 13:00:26
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_sdd_store_annotation_ci_break.md](prompts/fix_sdd_store_annotation_ci_break.md)
+- **PROMPT:** [prompts/202607/fix_sdd_store_annotation_ci_break.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_sdd_store_annotation_ci_break.md)
 - **AGENTS:**
   - [bbugyi200.athena.n7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n7.md#member-code)
 - **COMMITS:**

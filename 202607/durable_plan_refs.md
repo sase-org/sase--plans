@@ -67,7 +67,7 @@ status: done
 bead_id: sase-9z
 ---
 
-- **PROMPT:** [202607/prompts/durable_plan_refs.md](prompts/durable_plan_refs.md)
+- **PROMPT:** [prompts/202607/durable_plan_refs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/durable_plan_refs.md)
 - **BEAD:** [sase-9z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9z/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-9z.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-9z.5/README.md)

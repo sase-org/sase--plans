@@ -7,7 +7,7 @@ create_time: 2026-07-27 15:26:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fix_epic_plan_link_race.md](prompts/fix_epic_plan_link_race.md)
+- **PROMPT:** [prompts/202607/fix_epic_plan_link_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_epic_plan_link_race.md)
 - **AGENTS:**
   - [bbugyi200.athena.mj](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.mj/README.md)
   - [bbugyi200.athena.mj--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.mj.md#member-code)

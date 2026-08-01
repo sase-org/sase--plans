@@ -11,7 +11,7 @@ create_time: 2026-07-21 09:19:49
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fast_updates_u_keymap.md](prompts/fast_updates_u_keymap.md)
+- **PROMPT:** [prompts/202607/fast_updates_u_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fast_updates_u_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.h0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h0/README.md)
   - [bbugyi200.athena.h0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h0.md#member-code)

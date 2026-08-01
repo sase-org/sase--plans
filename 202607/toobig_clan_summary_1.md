@@ -8,7 +8,7 @@ create_time: 2026-07-22 12:57:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/toobig_clan_summary_1.md](prompts/toobig_clan_summary_1.md)
+- **PROMPT:** [prompts/202607/toobig_clan_summary_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/toobig_clan_summary_1.md)
 - **PARENT:** [202607/toobig_clan_summary.md](https://github.com/sase-org/sase--plans/blob/main/202607/toobig_clan_summary.md)
 - **BEAD:** [sase-8l.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8l/sase-8l.2.md)
 - **AGENTS:**

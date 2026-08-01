@@ -11,7 +11,7 @@ create_time: 2026-07-20 16:40:59
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/telegram_show_command.md](prompts/telegram_show_command.md)
+- **PROMPT:** [prompts/202607/telegram_show_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_show_command.md)
 - **AGENTS:**
   - [bbugyi200.athena.gn--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gn.md#member-code)
 

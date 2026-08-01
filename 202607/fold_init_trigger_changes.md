@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fold_init_trigger_changes.md](prompts/fold_init_trigger_changes.md)
+- **PROMPT:** [prompts/202607/fold_init_trigger_changes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fold_init_trigger_changes.md)
 - **AGENTS:**
   - [bbugyi200.athena.5j--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5j.md#member-code)
 

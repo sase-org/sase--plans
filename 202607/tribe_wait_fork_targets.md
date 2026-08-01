@@ -48,7 +48,7 @@ status: done
 bead_id: sase-6x
 ---
 
-- **PROMPT:** [202607/prompts/tribe_wait_fork_targets.md](prompts/tribe_wait_fork_targets.md)
+- **PROMPT:** [prompts/202607/tribe_wait_fork_targets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_wait_fork_targets.md)
 - **BEAD:** [sase-6x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6x/README.md)
 
 # Plan: Tribe next-entity targeting for %wait and #fork, plus clan forking

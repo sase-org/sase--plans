@@ -53,7 +53,7 @@ status: wip
 bead_id: sase-a0
 ---
 
-- **PROMPT:** [202607/prompts/fix_ci_failures.md](prompts/fix_ci_failures.md)
+- **PROMPT:** [prompts/202607/fix_ci_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_ci_failures.md)
 - **BEAD:** [sase-a0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-a0/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-a0.5.2--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-a0.5.2.md#member-1)

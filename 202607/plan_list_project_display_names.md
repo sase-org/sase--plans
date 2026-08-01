@@ -7,7 +7,7 @@ create_time: 2026-07-15 09:01:16
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/plan_list_project_display_names.md](prompts/plan_list_project_display_names.md)
+- **PROMPT:** [prompts/202607/plan_list_project_display_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plan_list_project_display_names.md)
 - **AGENTS:**
   - [bbugyi200.athena.8z](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8z/README.md)
   - [bbugyi200.athena.8z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8z.md#member-code)

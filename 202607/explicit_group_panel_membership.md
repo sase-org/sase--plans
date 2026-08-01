@@ -7,7 +7,7 @@ create_time: 2026-07-17 14:37:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/explicit_group_panel_membership.md](prompts/explicit_group_panel_membership.md)
+- **PROMPT:** [prompts/202607/explicit_group_panel_membership.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/explicit_group_panel_membership.md)
 - **AGENTS:**
   - [bbugyi200.athena.cf](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cf/README.md)
   - [bbugyi200.athena.cf--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cf.md#member-code)

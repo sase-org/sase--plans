@@ -10,7 +10,7 @@ create_time: 2026-07-19 16:20:17
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_panel_isolation_undo.md](prompts/tribe_panel_isolation_undo.md)
+- **PROMPT:** [prompts/202607/tribe_panel_isolation_undo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_panel_isolation_undo.md)
 - **AGENTS:**
   - [bbugyi200.athena.fc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fc/README.md)
   - [bbugyi200.athena.fc--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fc.md#member-code)

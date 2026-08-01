@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/unified_model_aliases.md](prompts/unified_model_aliases.md)
+- **PROMPT:** [prompts/202607/unified_model_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/unified_model_aliases.md)
 
 # Plan: Unified `model_aliases` Config Field + Always-Visible Alias Descriptions
 

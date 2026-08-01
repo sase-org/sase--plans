@@ -34,7 +34,7 @@ status: done
 bead_id: sase-74
 ---
 
-- **PROMPT:** [202607/prompts/agent_cleanup_clan_scope.md](prompts/agent_cleanup_clan_scope.md)
+- **PROMPT:** [prompts/202607/agent_cleanup_clan_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_cleanup_clan_scope.md)
 - **BEAD:** [sase-74](https://github.com/sase-org/sase--beads/blob/main/pages/sase-74/README.md)
 
 # Plan: Clan-scoped Agent Cleanup

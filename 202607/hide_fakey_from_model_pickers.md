@@ -8,7 +8,7 @@ create_time: 2026-07-31 07:09:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/hide_fakey_from_model_pickers.md](prompts/hide_fakey_from_model_pickers.md)
+- **PROMPT:** [prompts/202607/hide_fakey_from_model_pickers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hide_fakey_from_model_pickers.md)
 
 # Hide the Fakey Test Provider From Model Pickers
 

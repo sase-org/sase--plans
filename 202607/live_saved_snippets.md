@@ -11,7 +11,7 @@ create_time: 2026-07-18 08:56:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/live_saved_snippets.md](prompts/live_saved_snippets.md)
+- **PROMPT:** [prompts/202607/live_saved_snippets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/live_saved_snippets.md)
 - **AGENTS:**
   - [bbugyi200.athena.da.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.da.f1/README.md)
   - [bbugyi200.athena.da.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.da.f1.md#member-code)

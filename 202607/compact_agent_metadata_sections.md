@@ -7,7 +7,7 @@ create_time: 2026-07-15 18:29:38
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/compact_agent_metadata_sections.md](prompts/compact_agent_metadata_sections.md)
+- **PROMPT:** [prompts/202607/compact_agent_metadata_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/compact_agent_metadata_sections.md)
 - **AGENTS:**
   - [bbugyi200.athena.9w](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9w/README.md)
   - [bbugyi200.athena.9w--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9w.md#member-code)

@@ -8,13 +8,12 @@ create_time: 2026-07-29 10:02:52
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/inline_epic_bead_page_label.md](prompts/inline_epic_bead_page_label.md)
+- **PROMPT:** [prompts/202607/inline_epic_bead_page_label.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/inline_epic_bead_page_label.md)
 - **AGENTS:**
   - [bbugyi200.athena.nx.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.f0.f0.md#member-code)
   - [bbugyi200.athena.nx.f0.f0--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nx.f0.f0.md#member-plan)
 - **COMMITS:**
-  - [13b8aab](https://github.com/sase-org/sase/commit/13b8aab3687aefc453a9cdf7681572a24ed91844) — fix: keep epic page
-    labels inline with URLs
+  - [13b8aab](https://github.com/sase-org/sase/commit/13b8aab3687aefc453a9cdf7681572a24ed91844) — fix: keep epic page labels inline with URLs
 
 # Plan
 

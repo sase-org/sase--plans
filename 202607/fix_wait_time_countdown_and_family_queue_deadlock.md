@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_wait_time_countdown_and_family_queue_deadlock.md](prompts/fix_wait_time_countdown_and_family_queue_deadlock.md)
+- **PROMPT:** [prompts/202607/fix_wait_time_countdown_and_family_queue_deadlock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_wait_time_countdown_and_family_queue_deadlock.md)
 - **AGENTS:**
   - [bbugyi200.athena.e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.e.md#member-code)
 

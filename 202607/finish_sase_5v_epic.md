@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/finish_sase_5v_epic.md](prompts/finish_sase_5v_epic.md)
+- **PROMPT:** [prompts/202607/finish_sase_5v_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_sase_5v_epic.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-5v](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-5v/README.md)
   - [bbugyi200.athena.sase-5v--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-5v.md#member-code)

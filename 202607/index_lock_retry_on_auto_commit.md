@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/index_lock_retry_on_auto_commit.md](prompts/index_lock_retry_on_auto_commit.md)
+- **PROMPT:** [prompts/202607/index_lock_retry_on_auto_commit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/index_lock_retry_on_auto_commit.md)
 - **AGENTS:**
   - [bbugyi200.athena.23--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.23.md#member-code)
 

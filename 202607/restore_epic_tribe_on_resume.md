@@ -9,7 +9,7 @@ create_time: 2026-07-20 10:00:55
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_epic_tribe_on_resume.md](prompts/restore_epic_tribe_on_resume.md)
+- **PROMPT:** [prompts/202607/restore_epic_tribe_on_resume.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_epic_tribe_on_resume.md)
 - **AGENTS:**
   - [bbugyi200.athena.g2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g2/README.md)
   - [bbugyi200.athena.g2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g2.md#member-code)

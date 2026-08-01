@@ -62,7 +62,7 @@ status: done
 bead_id: sase-ac
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_project_identity.md](prompts/xprompt_project_identity.md)
+- **PROMPT:** [prompts/202607/xprompt_project_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_project_identity.md)
 - **BEAD:** [sase-ac](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ac/README.md)
 
 # Plan: Fix project-local xprompt completion by canonicalizing project identity

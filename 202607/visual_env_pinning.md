@@ -11,7 +11,7 @@ create_time: 2026-07-15 21:29:55
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/visual_env_pinning.md](prompts/visual_env_pinning.md)
+- **PROMPT:** [prompts/202607/visual_env_pinning.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/visual_env_pinning.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-65](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-65/README.md)
   - [bbugyi200.athena.sase-65--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-65.md#member-code)

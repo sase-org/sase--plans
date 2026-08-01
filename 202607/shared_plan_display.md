@@ -10,7 +10,7 @@ create_time: 2026-07-20 14:43:43
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/shared_plan_display.md](prompts/shared_plan_display.md)
+- **PROMPT:** [prompts/202607/shared_plan_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/shared_plan_display.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-8d.1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-8d.1.md#member-code)
 

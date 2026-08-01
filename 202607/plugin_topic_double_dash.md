@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/plugin_topic_double_dash.md](prompts/plugin_topic_double_dash.md)
+- **PROMPT:** [prompts/202607/plugin_topic_double_dash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plugin_topic_double_dash.md)
 - **AGENTS:**
   - [bbugyi200.athena.36--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.36.md#member-code)
 

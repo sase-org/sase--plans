@@ -9,15 +9,13 @@ create_time: 2026-07-28 19:37:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/complete_sase_am.md](prompts/complete_sase_am.md)
-- **PARENT:**
-  [202607/ci_flakiness_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202607/ci_flakiness_redesign.md)
+- **PROMPT:** [prompts/202607/complete_sase_am.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/complete_sase_am.md)
+- **PARENT:** [202607/ci_flakiness_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202607/ci_flakiness_redesign.md)
 - **BEAD:** [sase-am](https://github.com/sase-org/sase--beads/blob/main/pages/sase-am/README.md)
 - **AGENTS:**
   - bbugyi200.athena.sase-am.land--code
 - **COMMITS:**
-  - [fe4dc62](https://github.com/sase-org/sase--plans/commit/fe4dc62512a971e2dc0f3a7e810bd606b80152c0) — docs: close CI
-    redesign plan and track flaky fetch test
+  - [fe4dc62](https://github.com/sase-org/sase--plans/commit/fe4dc62512a971e2dc0f3a7e810bd606b80152c0) — docs: close CI redesign plan and track flaky fetch test
 
 # Complete and land `sase-am`
 

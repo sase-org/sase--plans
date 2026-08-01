@@ -9,7 +9,7 @@ create_time: 2026-07-23 14:13:21
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/nested_identity_config.md](prompts/nested_identity_config.md)
+- **PROMPT:** [prompts/202607/nested_identity_config.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/nested_identity_config.md)
 - **PARENT:** [202607/global_agent_hoods.md](https://github.com/sase-org/sase--plans/blob/main/202607/global_agent_hoods.md)
 - **BEAD:** [sase-8v.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8v/sase-8v.2.md)
 - **AGENTS:**

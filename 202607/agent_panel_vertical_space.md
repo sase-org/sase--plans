@@ -10,7 +10,7 @@ create_time: 2026-07-18 14:00:50
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_panel_vertical_space.md](prompts/agent_panel_vertical_space.md)
+- **PROMPT:** [prompts/202607/agent_panel_vertical_space.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_panel_vertical_space.md)
 - **AGENTS:**
   - [bbugyi200.athena.dl](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.dl/README.md)
   - [bbugyi200.athena.dl--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.dl.md#member-code)

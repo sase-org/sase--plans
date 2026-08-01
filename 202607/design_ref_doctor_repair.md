@@ -9,7 +9,7 @@ create_time: 2026-07-27 10:02:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/design_ref_doctor_repair.md](prompts/design_ref_doctor_repair.md)
+- **PROMPT:** [prompts/202607/design_ref_doctor_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/design_ref_doctor_repair.md)
 - **PARENT:** [202607/durable_plan_refs.md](https://github.com/sase-org/sase--plans/blob/main/202607/durable_plan_refs.md)
 - **BEAD:** [sase-9z.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9z/sase-9z.5.md)
 - **AGENTS:**

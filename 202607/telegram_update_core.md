@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/telegram_update_core.md](prompts/telegram_update_core.md)
+- **PROMPT:** [prompts/202607/telegram_update_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/telegram_update_core.md)
 - **AGENTS:**
   - [bbugyi200.athena.16--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.16.md#member-code)
 

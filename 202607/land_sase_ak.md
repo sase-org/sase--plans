@@ -9,15 +9,13 @@ create_time: 2026-07-28 18:23:11
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_sase_ak.md](prompts/land_sase_ak.md)
-- **PARENT:**
-  [202607/tribe_wait_reference_validation_and_display.md](https://github.com/sase-org/sase--plans/blob/main/202607/tribe_wait_reference_validation_and_display.md)
+- **PROMPT:** [prompts/202607/land_sase_ak.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_sase_ak.md)
+- **PARENT:** [202607/tribe_wait_reference_validation_and_display.md](https://github.com/sase-org/sase--plans/blob/main/202607/tribe_wait_reference_validation_and_display.md)
 - **BEAD:** [sase-ak](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ak/README.md)
 - **AGENTS:**
   - bbugyi200.athena.sase-ak.land--code
 - **COMMITS:**
-  - [a9cbf16](https://github.com/sase-org/sase--plans/commit/a9cbf16b70acc759c1ec2fd3b2a031ee64d3171b) — docs: mark
-    tribe wait epic complete
+  - [a9cbf16](https://github.com/sase-org/sase--plans/commit/a9cbf16b70acc759c1ec2fd3b2a031ee64d3171b) — docs: mark tribe wait epic complete
 
 # Land `sase-ak` after integrating post-epic changes
 

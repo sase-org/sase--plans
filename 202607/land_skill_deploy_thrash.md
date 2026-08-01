@@ -9,7 +9,7 @@ create_time: 2026-07-28 10:04:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_skill_deploy_thrash.md](prompts/land_skill_deploy_thrash.md)
+- **PROMPT:** [prompts/202607/land_skill_deploy_thrash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_skill_deploy_thrash.md)
 - **PARENT:** [202607/skill_deploy_thrash.md](https://github.com/sase-org/sase--plans/blob/main/202607/skill_deploy_thrash.md)
 - **BEAD:** [sase-ae](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ae/README.md)
 - **AGENTS:**

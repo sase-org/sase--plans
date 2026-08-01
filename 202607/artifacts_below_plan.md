@@ -10,7 +10,7 @@ create_time: 2026-07-17 09:02:15
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/artifacts_below_plan.md](prompts/artifacts_below_plan.md)
+- **PROMPT:** [prompts/202607/artifacts_below_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifacts_below_plan.md)
 - **AGENTS:**
   - [bbugyi200.athena.bs](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bs/README.md)
   - [bbugyi200.athena.bs--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bs.md#member-code)

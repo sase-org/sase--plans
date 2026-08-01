@@ -7,7 +7,7 @@ create_time: 2026-07-22 12:21:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/restore_epic_clan_summaries.md](prompts/restore_epic_clan_summaries.md)
+- **PROMPT:** [prompts/202607/restore_epic_clan_summaries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/restore_epic_clan_summaries.md)
 - **AGENTS:**
   - [bbugyi200.athena.ih](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ih/README.md)
   - [bbugyi200.athena.ih--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ih.md#member-code)

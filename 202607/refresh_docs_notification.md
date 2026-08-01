@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/refresh_docs_notification.md](prompts/refresh_docs_notification.md)
+- **PROMPT:** [prompts/202607/refresh_docs_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/refresh_docs_notification.md)
 - **AGENTS:**
   - [bbugyi200.athena.3l--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3l.md#member-code)
 

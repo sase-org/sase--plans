@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/replace_stale_workspace_sdd_clone.md](prompts/replace_stale_workspace_sdd_clone.md)
+- **PROMPT:** [prompts/202607/replace_stale_workspace_sdd_clone.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/replace_stale_workspace_sdd_clone.md)
 - **AGENTS:**
   - [bbugyi200.athena.28.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.28.f1.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-21 10:06:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/simplify_phase_model_aliases.md](prompts/simplify_phase_model_aliases.md)
+- **PROMPT:** [prompts/202607/simplify_phase_model_aliases.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/simplify_phase_model_aliases.md)
 - **AGENTS:**
   - [bbugyi200.athena.gy.f1.f8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.gy.f1.f8/README.md)
   - [bbugyi200.athena.gy.f1.f8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.gy.f1.f8.md#member-code)

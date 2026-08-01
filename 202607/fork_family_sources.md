@@ -11,7 +11,7 @@ create_time: 2026-07-19 15:13:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/fork_family_sources.md](prompts/fork_family_sources.md)
+- **PROMPT:** [prompts/202607/fork_family_sources.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fork_family_sources.md)
 - **AGENTS:**
   - [bbugyi200.athena.fb](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.fb/README.md)
   - [bbugyi200.athena.fb--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.fb.md#member-code)

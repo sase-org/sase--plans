@@ -8,7 +8,7 @@ create_time: 2026-07-24 17:59:16
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_lane_cleanup_confirmations.md](prompts/agent_lane_cleanup_confirmations.md)
+- **PROMPT:** [prompts/202607/agent_lane_cleanup_confirmations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_lane_cleanup_confirmations.md)
 - **AGENTS:**
   - [bbugyi200.athena.jp](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jp/README.md)
   - [bbugyi200.athena.jp--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jp.md#member-code)

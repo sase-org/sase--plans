@@ -12,7 +12,7 @@ create_time: 2026-07-19 08:46:05
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/gate_frontmatter_highlighting.md](prompts/gate_frontmatter_highlighting.md)
+- **PROMPT:** [prompts/202607/gate_frontmatter_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/gate_frontmatter_highlighting.md)
 
 # Plan: Frontmatter syntax highlighting in gate review documents
 

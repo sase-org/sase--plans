@@ -9,15 +9,13 @@ create_time: 2026-07-29 19:30:34
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_sase_ax.md](prompts/land_sase_ax.md)
-- **PARENT:**
-  [202607/artifact_read_cli.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_read_cli.md)
+- **PROMPT:** [prompts/202607/land_sase_ax.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_sase_ax.md)
+- **PARENT:** [202607/artifact_read_cli.md](https://github.com/sase-org/sase--plans/blob/main/202607/artifact_read_cli.md)
 - **BEAD:** [sase-ax](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ax/README.md)
 - **AGENTS:**
   - bbugyi200.athena.sase-ax.land--code
 - **COMMITS:**
-  - [ef19f49](https://github.com/sase-org/sase--plans/commit/ef19f49def836e8d86906b1dbc88b80d0ce9841a) — docs: mark
-    artifact CLI epic done
+  - [ef19f49](https://github.com/sase-org/sase--plans/commit/ef19f49def836e8d86906b1dbc88b80d0ce9841a) — docs: mark artifact CLI epic done
 
 # Integrate and land `sase-ax`
 

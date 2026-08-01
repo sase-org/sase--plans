@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/conditional_auto_id_dash.md](prompts/conditional_auto_id_dash.md)
+- **PROMPT:** [prompts/202607/conditional_auto_id_dash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/conditional_auto_id_dash.md)
 - **AGENTS:**
   - [bbugyi200.athena.7m--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7m.md#member-code)
 

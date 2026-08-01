@@ -10,7 +10,7 @@ create_time: 2026-07-17 10:21:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/custom_gate_command_keymaps.md](prompts/custom_gate_command_keymaps.md)
+- **PROMPT:** [prompts/202607/custom_gate_command_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/custom_gate_command_keymaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.bu.w1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.bu.w1/README.md)
   - [bbugyi200.athena.bu.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bu.w1.md#member-code)

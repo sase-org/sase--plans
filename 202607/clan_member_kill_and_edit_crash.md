@@ -7,7 +7,7 @@ create_time: 2026-07-22 12:27:03
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/clan_member_kill_and_edit_crash.md](prompts/clan_member_kill_and_edit_crash.md)
+- **PROMPT:** [prompts/202607/clan_member_kill_and_edit_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_member_kill_and_edit_crash.md)
 - **AGENTS:**
   - [bbugyi200.athena.ii](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ii/README.md)
   - [bbugyi200.athena.ii--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ii.md#member-code)

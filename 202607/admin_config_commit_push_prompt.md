@@ -10,7 +10,7 @@ create_time: 2026-07-20 10:04:55
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/admin_config_commit_push_prompt.md](prompts/admin_config_commit_push_prompt.md)
+- **PROMPT:** [prompts/202607/admin_config_commit_push_prompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/admin_config_commit_push_prompt.md)
 - **AGENTS:**
   - [bbugyi200.athena.g4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.g4/README.md)
   - [bbugyi200.athena.g4--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.g4.md#member-code)

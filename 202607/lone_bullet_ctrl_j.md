@@ -9,7 +9,7 @@ create_time: 2026-07-25 14:20:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/lone_bullet_ctrl_j.md](prompts/lone_bullet_ctrl_j.md)
+- **PROMPT:** [prompts/202607/lone_bullet_ctrl_j.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/lone_bullet_ctrl_j.md)
 - **AGENTS:**
   - [bbugyi200.athena.l0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.l0/README.md)
   - [bbugyi200.athena.l0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.l0.md#member-code)

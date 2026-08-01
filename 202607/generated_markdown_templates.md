@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/generated_markdown_templates.md](prompts/generated_markdown_templates.md)
+- **PROMPT:** [prompts/202607/generated_markdown_templates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/generated_markdown_templates.md)
 - **AGENTS:**
   - [bbugyi200.athena.74.f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.74.f-0/README.md)
   - [bbugyi200.athena.74.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.74.f-0.md#member-code)

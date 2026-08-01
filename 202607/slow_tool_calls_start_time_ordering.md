@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/slow_tool_calls_start_time_ordering.md](prompts/slow_tool_calls_start_time_ordering.md)
+- **PROMPT:** [prompts/202607/slow_tool_calls_start_time_ordering.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/slow_tool_calls_start_time_ordering.md)
 
 # Plan: Order SLOW TOOL CALLS rows by command start time
 

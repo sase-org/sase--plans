@@ -7,7 +7,7 @@ create_time: 2026-07-25 11:17:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/ace_quit_hang.md](prompts/ace_quit_hang.md)
+- **PROMPT:** [prompts/202607/ace_quit_hang.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/ace_quit_hang.md)
 - **AGENTS:**
   - [bbugyi200.athena.kt](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kt/README.md)
   - [bbugyi200.athena.kt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kt.md#member-code)

@@ -9,7 +9,7 @@ create_time: 2026-07-15 13:37:36
 status: wip
 ---
 
-- **PROMPT:** [202607/prompts/github_ci_core_source_alignment.md](prompts/github_ci_core_source_alignment.md)
+- **PROMPT:** [prompts/202607/github_ci_core_source_alignment.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/github_ci_core_source_alignment.md)
 - **AGENTS:**
   - [bbugyi200.athena.9e--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9e.md#member-code)
 

@@ -10,7 +10,7 @@ create_time: 2026-07-16 17:44:30
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_metadata_section_keymaps.md](prompts/agents_metadata_section_keymaps.md)
+- **PROMPT:** [prompts/202607/agents_metadata_section_keymaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_metadata_section_keymaps.md)
 - **AGENTS:**
   - [bbugyi200.athena.b3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.b3/README.md)
   - [bbugyi200.athena.b3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.b3.md#member-code)

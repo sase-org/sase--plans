@@ -8,13 +8,12 @@ create_time: 2026-07-29 14:06:31
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/statistics_numbered_subtabs.md](prompts/statistics_numbered_subtabs.md)
+- **PROMPT:** [prompts/202607/statistics_numbered_subtabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_numbered_subtabs.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-au.5.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-au.5.w1.md#member-code)
   - [bbugyi200.athena.sase-au.5.w1--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-au.5.w1.md#member-plan)
 - **COMMITS:**
-  - [216d027](https://github.com/sase-org/sase/commit/216d027d8ba439f6156b45557750e292c029311b) — feat(ace): add
-    numbered Statistics subtabs
+  - [216d027](https://github.com/sase-org/sase/commit/216d027d8ba439f6156b45557750e292c029311b) — feat(ace): add numbered Statistics subtabs
 
 # Plan: Numbered Statistics sub-tabs with `0<N>` selection keymaps
 

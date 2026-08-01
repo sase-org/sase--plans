@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/land_epic_xprompt_integration.md](prompts/land_epic_xprompt_integration.md)
+- **PROMPT:** [prompts/202607/land_epic_xprompt_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_epic_xprompt_integration.md)
 - **AGENTS:**
   - [bbugyi200.athena.7z](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.7z/README.md)
   - [bbugyi200.athena.7z--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.7z.md#member-code)

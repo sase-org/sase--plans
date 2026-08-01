@@ -11,15 +11,13 @@ create_time: 2026-07-31 11:08:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/land_bead_creator_attribution.md](prompts/land_bead_creator_attribution.md)
-- **PARENT:**
-  [202607/bead_created_by_attribution.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_created_by_attribution.md)
+- **PROMPT:** [prompts/202607/land_bead_creator_attribution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/land_bead_creator_attribution.md)
+- **PARENT:** [202607/bead_created_by_attribution.md](https://github.com/sase-org/sase--plans/blob/main/202607/bead_created_by_attribution.md)
 - **BEAD:** [sase-bv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-bv/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-bv.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-bv.land.md)
 - **COMMITS:**
-  - [92f9f2c](https://github.com/sase-org/sase--plans/commit/92f9f2c8b0d485493f7117ba93436571e9e36d09) — docs(plan):
-    mark bead_created_by_attribution epic done
+  - [92f9f2c](https://github.com/sase-org/sase--plans/commit/92f9f2c8b0d485493f7117ba93436571e9e36d09) — docs(plan): mark bead\_created\_by\_attribution epic done
 
 # Plan: Land bead creator attribution (epic sase-bv)
 

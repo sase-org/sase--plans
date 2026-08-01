@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/prompt_stash_preview_pane.md](prompts/prompt_stash_preview_pane.md)
+- **PROMPT:** [prompts/202607/prompt_stash_preview_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_stash_preview_pane.md)
 - **AGENTS:**
   - [bbugyi200.athena.6k--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6k.md#member-code)
 

@@ -7,7 +7,7 @@ create_time: 2026-07-24 18:34:45
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/axe_editor_q_quit.md](prompts/axe_editor_q_quit.md)
+- **PROMPT:** [prompts/202607/axe_editor_q_quit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/axe_editor_q_quit.md)
 - **AGENTS:**
   - [bbugyi200.athena.jt](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.jt/README.md)
   - [bbugyi200.athena.jt--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.jt.md#member-code)

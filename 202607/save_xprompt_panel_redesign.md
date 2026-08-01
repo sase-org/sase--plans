@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/save_xprompt_panel_redesign.md](prompts/save_xprompt_panel_redesign.md)
+- **PROMPT:** [prompts/202607/save_xprompt_panel_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/save_xprompt_panel_redesign.md)
 - **AGENTS:**
   - [bbugyi200.athena.63](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.63/README.md)
   - [bbugyi200.athena.63--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.63.md#member-code)

@@ -55,7 +55,7 @@ status: done
 bead_id: sase-ao
 ---
 
-- **PROMPT:** [202607/prompts/model_alias_completion.md](prompts/model_alias_completion.md)
+- **PROMPT:** [prompts/202607/model_alias_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/model_alias_completion.md)
 - **BEAD:** [sase-ao](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ao/README.md)
 
 # Plan: Model aliases in the `%model` completion menu

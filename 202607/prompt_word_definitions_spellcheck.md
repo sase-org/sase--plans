@@ -9,7 +9,7 @@ create_time: 2026-07-26 12:16:11
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_word_definitions_spellcheck.md](prompts/prompt_word_definitions_spellcheck.md)
+- **PROMPT:** [prompts/202607/prompt_word_definitions_spellcheck.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_word_definitions_spellcheck.md)
 - **AGENTS:**
   - [bbugyi200.athena.lr](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.lr/README.md)
   - [bbugyi200.athena.lr--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.lr.md#member-code)

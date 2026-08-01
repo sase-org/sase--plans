@@ -77,7 +77,7 @@ status: done
 bead_id: sase-aj
 ---
 
-- **PROMPT:** [202607/prompts/beads_commit_consolidation.md](prompts/beads_commit_consolidation.md)
+- **PROMPT:** [prompts/202607/beads_commit_consolidation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/beads_commit_consolidation.md)
 - **BEAD:** [sase-aj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-aj/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.nd](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.nd/README.md)

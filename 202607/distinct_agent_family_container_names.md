@@ -9,7 +9,7 @@ create_time: 2026-07-21 16:14:18
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/distinct_agent_family_container_names.md](prompts/distinct_agent_family_container_names.md)
+- **PROMPT:** [prompts/202607/distinct_agent_family_container_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/distinct_agent_family_container_names.md)
 - **AGENTS:**
   - [bbugyi200.athena.hh](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hh/README.md)
   - [bbugyi200.athena.hh--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hh.md#member-code)

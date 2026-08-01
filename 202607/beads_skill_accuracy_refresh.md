@@ -8,7 +8,7 @@ create_time: 2026-07-27 09:39:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/beads_skill_accuracy_refresh.md](prompts/beads_skill_accuracy_refresh.md)
+- **PROMPT:** [prompts/202607/beads_skill_accuracy_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/beads_skill_accuracy_refresh.md)
 - **AGENTS:**
   - [bbugyi200.athena.m8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.m8/README.md)
   - [bbugyi200.athena.m8--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.m8.md#member-code)

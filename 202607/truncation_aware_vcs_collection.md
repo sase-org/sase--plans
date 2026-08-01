@@ -9,7 +9,7 @@ status: done
 bead: sase-8h.2
 ---
 
-- **PROMPT:** [202607/prompts/truncation_aware_vcs_collection.md](prompts/truncation_aware_vcs_collection.md)
+- **PROMPT:** [prompts/202607/truncation_aware_vcs_collection.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/truncation_aware_vcs_collection.md)
 - **PARENT:** [202607/commits_filter_correctness.md](https://github.com/sase-org/sase--plans/blob/main/202607/commits_filter_correctness.md)
 - **BEAD:** [sase-8h.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8h/sase-8h.2.md)
 - **AGENTS:**

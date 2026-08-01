@@ -10,7 +10,7 @@ create_time: 2026-07-25 10:37:32
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_scoped_single_key_fold_hints.md](prompts/tribe_scoped_single_key_fold_hints.md)
+- **PROMPT:** [prompts/202607/tribe_scoped_single_key_fold_hints.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_scoped_single_key_fold_hints.md)
 - **AGENTS:**
   - [bbugyi200.athena.kq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.kq/README.md)
   - [bbugyi200.athena.kq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.kq.md#member-code)

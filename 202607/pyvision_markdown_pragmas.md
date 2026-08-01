@@ -5,7 +5,7 @@ tier: epic
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/pyvision_markdown_pragmas.md](prompts/pyvision_markdown_pragmas.md)
+- **PROMPT:** [prompts/202607/pyvision_markdown_pragmas.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/pyvision_markdown_pragmas.md)
 - **BEAD:** [sase-5n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-5n/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.37--epic](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.37.md#member-epic)

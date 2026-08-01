@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/plugin_install_update_restart.md](prompts/plugin_install_update_restart.md)
+- **PROMPT:** [prompts/202607/plugin_install_update_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plugin_install_update_restart.md)
 
 # Plan: Restart TUI + AXE when installing/updating individual plugins
 

@@ -6,7 +6,7 @@ create_time: 2026-07-15 13:04:05
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/question_paused_runner_slots.md](prompts/question_paused_runner_slots.md)
+- **PROMPT:** [prompts/202607/question_paused_runner_slots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/question_paused_runner_slots.md)
 - **AGENTS:**
   - [bbugyi200.athena.9c](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9c/README.md)
   - [bbugyi200.athena.9c--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9c.md#member-code)

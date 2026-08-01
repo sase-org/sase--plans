@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/model_directive_alias_overrides.md](prompts/model_directive_alias_overrides.md)
+- **PROMPT:** [prompts/202607/model_directive_alias_overrides.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/model_directive_alias_overrides.md)
 - **AGENTS:**
   - [bbugyi200.athena.6d](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6d/README.md)
   - [bbugyi200.athena.6d--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6d.md#member-code)

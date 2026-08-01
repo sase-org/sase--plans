@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/install_mode_switch.md](prompts/install_mode_switch.md)
+- **PROMPT:** [prompts/202607/install_mode_switch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/install_mode_switch.md)
 
 # Plan: First-class switching between PyPI (managed) and Dev (editable) installs
 

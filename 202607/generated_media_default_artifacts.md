@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/generated_media_default_artifacts.md](prompts/generated_media_default_artifacts.md)
+- **PROMPT:** [prompts/202607/generated_media_default_artifacts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/generated_media_default_artifacts.md)
 - **AGENTS:**
   - [bbugyi200.athena.l.f1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.l.f1.md#member-code)
 

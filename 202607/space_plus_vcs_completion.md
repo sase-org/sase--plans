@@ -25,7 +25,7 @@ status: done
 bead_id: sase-75
 ---
 
-- **PROMPT:** [202607/prompts/space_plus_vcs_completion.md](prompts/space_plus_vcs_completion.md)
+- **PROMPT:** [prompts/202607/space_plus_vcs_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/space_plus_vcs_completion.md)
 - **BEAD:** [sase-75](https://github.com/sase-org/sase--beads/blob/main/pages/sase-75/README.md)
 
 # Plan: Space-triggered VCS project completion

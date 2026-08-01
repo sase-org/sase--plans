@@ -7,7 +7,7 @@ create_time: 2026-07-18 07:55:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agent_tree_grouping_precedence.md](prompts/agent_tree_grouping_precedence.md)
+- **PROMPT:** [prompts/202607/agent_tree_grouping_precedence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_tree_grouping_precedence.md)
 - **AGENTS:**
   - [bbugyi200.athena.cx.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cx.f0/README.md)
   - [bbugyi200.athena.cx.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cx.f0.md#member-code)

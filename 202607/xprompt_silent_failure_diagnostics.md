@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_silent_failure_diagnostics.md](prompts/xprompt_silent_failure_diagnostics.md)
+- **PROMPT:** [prompts/202607/xprompt_silent_failure_diagnostics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_silent_failure_diagnostics.md)
 
 # Plan: Make xprompt silent failures loud — unresolved-reference warnings + definition load-error surfacing
 

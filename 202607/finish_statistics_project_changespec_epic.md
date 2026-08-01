@@ -31,7 +31,7 @@ status: done
 bead_id: sase-72
 ---
 
-- **PROMPT:** [202607/prompts/finish_statistics_project_changespec_epic.md](prompts/finish_statistics_project_changespec_epic.md)
+- **PROMPT:** [prompts/202607/finish_statistics_project_changespec_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_statistics_project_changespec_epic.md)
 - **BEAD:** [sase-72](https://github.com/sase-org/sase--beads/blob/main/pages/sase-72/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-72.3--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-72.3.md#member-1)

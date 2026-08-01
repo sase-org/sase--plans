@@ -104,7 +104,7 @@ status: wip
 bead_id: sase-b3
 ---
 
-- **PROMPT:** [202607/prompts/fuzzy_artifact_ref_completion.md](prompts/fuzzy_artifact_ref_completion.md)
+- **PROMPT:** [prompts/202607/fuzzy_artifact_ref_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fuzzy_artifact_ref_completion.md)
 - **BEAD:** [sase-b3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b3/README.md)
 
 # Plan: Fuzzy Artifact-Reference Completion With Matched-Run Highlighting

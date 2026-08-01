@@ -25,7 +25,7 @@ status: done
 bead_id: sase-7h
 ---
 
-- **PROMPT:** [202607/prompts/agent_group_completion.md](prompts/agent_group_completion.md)
+- **PROMPT:** [prompts/202607/agent_group_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_group_completion.md)
 - **BEAD:** [sase-7h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7h/README.md)
 
 # Plan: Group-aware agent completion for %wait and #fork

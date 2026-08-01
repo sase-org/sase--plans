@@ -8,7 +8,7 @@ create_time: 2026-07-28 13:18:38
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/sidecar_repo_labels.md](prompts/sidecar_repo_labels.md)
+- **PROMPT:** [prompts/202607/sidecar_repo_labels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/sidecar_repo_labels.md)
 - **AGENTS:**
   - [bbugyi200.athena.n8.f0.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.n8.f0.f0.md#member-code)
 - **COMMITS:**

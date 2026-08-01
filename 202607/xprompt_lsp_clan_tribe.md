@@ -10,7 +10,7 @@ create_time: 2026-07-19 11:39:49
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/xprompt_lsp_clan_tribe.md](prompts/xprompt_lsp_clan_tribe.md)
+- **PROMPT:** [prompts/202607/xprompt_lsp_clan_tribe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/xprompt_lsp_clan_tribe.md)
 - **AGENTS:**
   - [bbugyi200.athena.f3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.f3.md#member-code)
 

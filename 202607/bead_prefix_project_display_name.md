@@ -9,7 +9,7 @@ create_time: 2026-07-31 08:25:10
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_prefix_project_display_name.md](prompts/bead_prefix_project_display_name.md)
+- **PROMPT:** [prompts/202607/bead_prefix_project_display_name.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_prefix_project_display_name.md)
 
 # Plan: Derive bead issue prefixes from PROJECT_NAME instead of the ProjectSpec key
 

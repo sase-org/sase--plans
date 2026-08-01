@@ -8,13 +8,12 @@ create_time: 2026-07-30 09:29:22
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/commit_table_repo_column.md](prompts/commit_table_repo_column.md)
+- **PROMPT:** [prompts/202607/commit_table_repo_column.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/commit_table_repo_column.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-b5.4.w1--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b5.4.w1.md#member-code)
   - [bbugyi200.athena.sase-b5.4.w1--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-b5.4.w1.md#member-plan)
 - **COMMITS:**
-  - [63d0ca5](https://github.com/sase-org/sase/commit/63d0ca504d48b8daed6702e38d79443d77af44cb) — feat: show repository
-    names in commit tables
+  - [63d0ca5](https://github.com/sase-org/sase/commit/63d0ca504d48b8daed6702e38d79443d77af44cb) — feat: show repository names in commit tables
 
 # Plan: Name the owning repository in every published commit table
 

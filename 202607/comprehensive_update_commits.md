@@ -10,7 +10,7 @@ create_time: 2026-07-21 11:11:17
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/comprehensive_update_commits.md](prompts/comprehensive_update_commits.md)
+- **PROMPT:** [prompts/202607/comprehensive_update_commits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/comprehensive_update_commits.md)
 - **AGENTS:**
   - [bbugyi200.athena.h7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.h7/README.md)
   - [bbugyi200.athena.h7--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.h7.md#member-code)

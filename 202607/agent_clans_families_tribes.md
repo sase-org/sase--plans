@@ -77,7 +77,7 @@ status: done
 bead_id: sase-6n
 ---
 
-- **PROMPT:** [202607/prompts/agent_clans_families_tribes.md](prompts/agent_clans_families_tribes.md)
+- **PROMPT:** [prompts/202607/agent_clans_families_tribes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agent_clans_families_tribes.md)
 - **BEAD:** [sase-6n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6n/README.md)
 
 # Plan: Split agent clans, sequential families, and tribes

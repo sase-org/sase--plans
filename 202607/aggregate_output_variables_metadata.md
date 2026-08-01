@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/aggregate_output_variables_metadata.md](prompts/aggregate_output_variables_metadata.md)
+- **PROMPT:** [prompts/202607/aggregate_output_variables_metadata.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/aggregate_output_variables_metadata.md)
 - **AGENTS:**
   - [bbugyi200.athena.34--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.34.md#member-code)
 

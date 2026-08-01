@@ -9,15 +9,13 @@ create_time: 2026-07-30 08:12:51
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/finish_b4_release_floor_and_land.md](prompts/finish_b4_release_floor_and_land.md)
-- **PARENT:**
-  [202607/at_reference_file_row_gate.md](https://github.com/sase-org/sase--plans/blob/main/202607/at_reference_file_row_gate.md)
+- **PROMPT:** [prompts/202607/finish_b4_release_floor_and_land.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/finish_b4_release_floor_and_land.md)
+- **PARENT:** [202607/at_reference_file_row_gate.md](https://github.com/sase-org/sase--plans/blob/main/202607/at_reference_file_row_gate.md)
 - **BEAD:** [sase-b4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b4/README.md)
 - **AGENTS:**
   - bbugyi200.athena.sase-b4.land--code
 - **COMMITS:**
-  - [7bf2f17](https://github.com/sase-org/sase--plans/commit/7bf2f173f906774f85b303f3791ba77c8c6b7c7e) — docs(plans):
-    land the b4 release-floor plan
+  - [7bf2f17](https://github.com/sase-org/sase--plans/commit/7bf2f173f906774f85b303f3791ba77c8c6b7c7e) — docs(plans): land the b4 release-floor plan
 
 # Finish the `sase-b4` published-core floor and land the epic
 

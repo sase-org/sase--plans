@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/companion_clone_dir_prefix_strip.md](prompts/companion_clone_dir_prefix_strip.md)
+- **PROMPT:** [prompts/202607/companion_clone_dir_prefix_strip.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/companion_clone_dir_prefix_strip.md)
 - **AGENTS:**
   - [bbugyi200.athena.6s.f-0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.6s.f-0/README.md)
   - [bbugyi200.athena.6s.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6s.f-0.md#member-code)

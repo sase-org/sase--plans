@@ -10,7 +10,7 @@ create_time: 2026-07-20 12:23:05
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/complete_sase_85_landing.md](prompts/complete_sase_85_landing.md)
+- **PROMPT:** [prompts/202607/complete_sase_85_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/complete_sase_85_landing.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-85.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-85.land/README.md)
   - [bbugyi200.athena.sase-85.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-85.land.md#member-code)

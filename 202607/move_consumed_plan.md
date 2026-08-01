@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/move_consumed_plan.md](prompts/move_consumed_plan.md)
+- **PROMPT:** [prompts/202607/move_consumed_plan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/move_consumed_plan.md)
 - **AGENTS:**
   - [bbugyi200.athena.5--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5.md#member-code)
 

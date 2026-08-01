@@ -8,12 +8,12 @@ create_time: 2026-07-25 13:18:13
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_lander_default_and_epic_creator_removal.md](prompts/epic_lander_default_and_epic_creator_removal.md)
+- **PROMPT:** [prompts/202607/epic_lander_default_and_epic_creator_removal.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_lander_default_and_epic_creator_removal.md)
 - **AGENTS:**
   - [bbugyi200.athena.ky](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ky/README.md)
   - [bbugyi200.athena.ky--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ky.md#member-code)
 - **COMMITS:**
-  - [14bf5f1](https://github.com/sase-org/sase/commit/14bf5f15c169579fe947609236c23f7d77ccb6f4) — feat(llm-provider)\!: retire epic_creator model alias
+  - [14bf5f1](https://github.com/sase-org/sase/commit/14bf5f15c169579fe947609236c23f7d77ccb6f4) — feat(llm-provider)\!: retire epic\_creator model alias
 
 # Plan: Point `@epic_lander` at `@default` and retire `@epic_creator`
 

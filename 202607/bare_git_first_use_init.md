@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/bare_git_first_use_init.md](prompts/bare_git_first_use_init.md)
+- **PROMPT:** [prompts/202607/bare_git_first_use_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bare_git_first_use_init.md)
 - **AGENTS:**
   - [bbugyi200.athena.6--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.6.md#member-code)
 

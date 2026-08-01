@@ -4,7 +4,7 @@ status: wip
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/mode_switch_github_dev_root.md](prompts/mode_switch_github_dev_root.md)
+- **PROMPT:** [prompts/202607/mode_switch_github_dev_root.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/mode_switch_github_dev_root.md)
 
 # Plan: Clone mode-switch dev checkouts into `~/projects/github/` using SSH remotes
 

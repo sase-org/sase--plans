@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/dev_update_editable_overrides.md](prompts/dev_update_editable_overrides.md)
+- **PROMPT:** [prompts/202607/dev_update_editable_overrides.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/dev_update_editable_overrides.md)
 - **AGENTS:**
   - [bbugyi200.athena.0o--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0o.md#member-code)
 

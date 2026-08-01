@@ -7,7 +7,7 @@ create_time: 2026-07-15 13:48:14
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tail_preserving_tool_call_output.md](prompts/tail_preserving_tool_call_output.md)
+- **PROMPT:** [prompts/202607/tail_preserving_tool_call_output.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tail_preserving_tool_call_output.md)
 - **AGENTS:**
   - [bbugyi200.athena.9g](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.9g/README.md)
   - [bbugyi200.athena.9g--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.9g.md#member-code)

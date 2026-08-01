@@ -9,7 +9,7 @@ create_time: 2026-07-28 17:46:09
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/queued_status_for_all_runner_slot_waits.md](prompts/queued_status_for_all_runner_slot_waits.md)
+- **PROMPT:** [prompts/202607/queued_status_for_all_runner_slot_waits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/queued_status_for_all_runner_slot_waits.md)
 - **AGENTS:**
   - [bbugyi200.athena.nk--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nk.md#member-code)
   - [bbugyi200.athena.nk--plan](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.nk.md#member-plan)

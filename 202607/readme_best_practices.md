@@ -11,7 +11,7 @@ create_time: 2026-07-17 10:13:28
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/readme_best_practices.md](prompts/readme_best_practices.md)
+- **PROMPT:** [prompts/202607/readme_best_practices.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/readme_best_practices.md)
 - **AGENTS:**
   - [bbugyi200.athena.research.g.final.f0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.g.final.f0/README.md)
   - [bbugyi200.athena.research.g.final.f0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.g.final.f0.md#member-code)

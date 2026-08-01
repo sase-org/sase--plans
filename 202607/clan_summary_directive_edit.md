@@ -10,7 +10,7 @@ create_time: 2026-07-19 21:24:32
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_summary_directive_edit.md](prompts/clan_summary_directive_edit.md)
+- **PROMPT:** [prompts/202607/clan_summary_directive_edit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_summary_directive_edit.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7r.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-7r.land/README.md)
   - [bbugyi200.athena.sase-7r.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7r.land.md#member-code)

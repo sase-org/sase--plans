@@ -8,7 +8,7 @@ create_time: 2026-07-15 20:39:12
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/epic_created_status.md](prompts/epic_created_status.md)
+- **PROMPT:** [prompts/202607/epic_created_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/epic_created_status.md)
 - **AGENTS:**
   - [bbugyi200.athena.a2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a2/README.md)
   - [bbugyi200.athena.a2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a2.md#member-code)

@@ -10,7 +10,7 @@ create_time: 2026-07-31 16:36:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/handoff_sigterm_normalization.md](prompts/handoff_sigterm_normalization.md)
+- **PROMPT:** [prompts/202607/handoff_sigterm_normalization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/handoff_sigterm_normalization.md)
 
 # Plan: Normalize handoff interruptions structurally, not by parsing provider error text
 

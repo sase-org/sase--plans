@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/beautiful_vcs_log_tags.md](prompts/beautiful_vcs_log_tags.md)
+- **PROMPT:** [prompts/202607/beautiful_vcs_log_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/beautiful_vcs_log_tags.md)
 - **AGENTS:**
   - [bbugyi200.athena.3t.f-0--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3t.f-0.md#member-code)
 

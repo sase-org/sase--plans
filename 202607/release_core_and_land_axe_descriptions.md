@@ -11,7 +11,7 @@ create_time: 2026-07-26 11:38:44
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/release_core_and_land_axe_descriptions.md](prompts/release_core_and_land_axe_descriptions.md)
+- **PROMPT:** [prompts/202607/release_core_and_land_axe_descriptions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/release_core_and_land_axe_descriptions.md)
 - **PARENT:** [202607/axe_required_descriptions.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_required_descriptions.md)
 - **BEAD:** [sase-9t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-9t/README.md)
 - **AGENTS:**

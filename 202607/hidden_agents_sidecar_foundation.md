@@ -9,7 +9,7 @@ create_time: 2026-07-22 10:58:48
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/hidden_agents_sidecar_foundation.md](prompts/hidden_agents_sidecar_foundation.md)
+- **PROMPT:** [prompts/202607/hidden_agents_sidecar_foundation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/hidden_agents_sidecar_foundation.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
 - **BEAD:** [sase-8k.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/sase-8k.4.md)
 - **AGENTS:**

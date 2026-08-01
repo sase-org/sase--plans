@@ -46,7 +46,7 @@ status: done
 bead_id: sase-af
 ---
 
-- **PROMPT:** [202607/prompts/lumberjack_wait_runners.md](prompts/lumberjack_wait_runners.md)
+- **PROMPT:** [prompts/202607/lumberjack_wait_runners.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/lumberjack_wait_runners.md)
 - **BEAD:** [sase-af](https://github.com/sase-org/sase--beads/blob/main/pages/sase-af/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-af.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-af.land.md#member-code)

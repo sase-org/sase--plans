@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/bulk_kill_edit_waiting_name_reuse.md](prompts/bulk_kill_edit_waiting_name_reuse.md)
+- **PROMPT:** [prompts/202607/bulk_kill_edit_waiting_name_reuse.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bulk_kill_edit_waiting_name_reuse.md)
 - **AGENTS:**
   - [bbugyi200.athena.8n](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.8n/README.md)
   - [bbugyi200.athena.8n--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.8n.md#member-code)

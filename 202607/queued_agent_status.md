@@ -10,7 +10,7 @@ create_time: 2026-07-25 11:45:03
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/queued_agent_status.md](prompts/queued_agent_status.md)
+- **PROMPT:** [prompts/202607/queued_agent_status.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/queued_agent_status.md)
 - **AGENTS:**
   - [bbugyi200.athena.ku](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ku/README.md)
   - [bbugyi200.athena.ku--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ku.md#member-code)

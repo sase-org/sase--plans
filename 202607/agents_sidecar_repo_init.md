@@ -9,7 +9,7 @@ create_time: 2026-07-22 11:58:25
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/agents_sidecar_repo_init.md](prompts/agents_sidecar_repo_init.md)
+- **PROMPT:** [prompts/202607/agents_sidecar_repo_init.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/agents_sidecar_repo_init.md)
 - **PARENT:** [202607/agents_sidecar_repo.md](https://github.com/sase-org/sase--plans/blob/main/202607/agents_sidecar_repo.md)
 - **BEAD:** [sase-8k.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-8k/sase-8k.5.md)
 - **AGENTS:**

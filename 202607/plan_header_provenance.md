@@ -63,7 +63,7 @@ status: done
 bead_id: sase-ag
 ---
 
-- **PROMPT:** [202607/prompts/plan_header_provenance.md](prompts/plan_header_provenance.md)
+- **PROMPT:** [prompts/202607/plan_header_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/plan_header_provenance.md)
 - **BEAD:** [sase-ag](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ag/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-ag.land--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ag.land.md#member-code)

@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/tui_bead_warmup_pump_stall.md](prompts/tui_bead_warmup_pump_stall.md)
+- **PROMPT:** [prompts/202607/tui_bead_warmup_pump_stall.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tui_bead_warmup_pump_stall.md)
 - **AGENTS:**
   - [bbugyi200.athena.79](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.79/README.md)
   - [bbugyi200.athena.79--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.79.md#member-code)

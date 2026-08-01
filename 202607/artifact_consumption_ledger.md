@@ -53,7 +53,7 @@ status: done
 bead_id: sase-b9
 ---
 
-- **PROMPT:** [202607/prompts/artifact_consumption_ledger.md](prompts/artifact_consumption_ledger.md)
+- **PROMPT:** [prompts/202607/artifact_consumption_ledger.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/artifact_consumption_ledger.md)
 - **BEAD:** [sase-b9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-b9/README.md)
 
 # Plan: Record artifact consumption at `@`-ref expansion

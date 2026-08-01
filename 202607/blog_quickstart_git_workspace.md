@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/blog_quickstart_git_workspace.md](prompts/blog_quickstart_git_workspace.md)
+- **PROMPT:** [prompts/202607/blog_quickstart_git_workspace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/blog_quickstart_git_workspace.md)
 
 # Plan: Fix the quickstart blog's workspace-isolation narrative by switching to `#git`
 

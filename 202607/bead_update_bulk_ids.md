@@ -9,12 +9,11 @@ create_time: 2026-07-31 14:43:58
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_update_bulk_ids.md](prompts/bead_update_bulk_ids.md)
+- **PROMPT:** [prompts/202607/bead_update_bulk_ids.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_update_bulk_ids.md)
 - **AGENTS:**
   - [bbugyi200.athena.qm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.qm.md)
 - **COMMITS:**
-  - [8449e01](https://github.com/sase-org/sase-core/commit/8449e01f06f136c456c12418e58c91ed5325d9c1) — feat(bead):
-    support atomic multi-ID \`update_issues\` mutation
+  - [8449e01](https://github.com/sase-org/sase-core/commit/8449e01f06f136c456c12418e58c91ed5325d9c1) — feat(bead): support atomic multi-ID \`update\_issues\` mutation
 
 # Plan: Accept multiple bead IDs in `sase bead update`
 

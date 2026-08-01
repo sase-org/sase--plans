@@ -62,7 +62,7 @@ status: done
 bead_id: sase-ad
 ---
 
-- **PROMPT:** [202607/prompts/fix_family_agent_publication.md](prompts/fix_family_agent_publication.md)
+- **PROMPT:** [prompts/202607/fix_family_agent_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_family_agent_publication.md)
 - **BEAD:** [sase-ad](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ad/README.md)
 
 # Plan: Repair agent-hood publication for family members and un-wedge the agents sidecar

@@ -53,7 +53,7 @@ status: done
 bead_id: sase-7i
 ---
 
-- **PROMPT:** [202607/prompts/fix_toobig_split_chop_dedupe.md](prompts/fix_toobig_split_chop_dedupe.md)
+- **PROMPT:** [prompts/202607/fix_toobig_split_chop_dedupe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_toobig_split_chop_dedupe.md)
 - **BEAD:** [sase-7i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-7i/README.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-7d.1--1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-7d.1.md#member-1)

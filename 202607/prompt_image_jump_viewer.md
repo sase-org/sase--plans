@@ -9,7 +9,7 @@ create_time: 2026-07-18 06:52:06
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/prompt_image_jump_viewer.md](prompts/prompt_image_jump_viewer.md)
+- **PROMPT:** [prompts/202607/prompt_image_jump_viewer.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/prompt_image_jump_viewer.md)
 - **AGENTS:**
   - [bbugyi200.athena.cz](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.cz/README.md)
   - [bbugyi200.athena.cz--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cz.md#member-code)

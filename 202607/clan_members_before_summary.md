@@ -7,7 +7,7 @@ create_time: 2026-07-22 11:08:29
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/clan_members_before_summary.md](prompts/clan_members_before_summary.md)
+- **PROMPT:** [prompts/202607/clan_members_before_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/clan_members_before_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.ic](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ic/README.md)
   - [bbugyi200.athena.ic--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ic.md#member-code)

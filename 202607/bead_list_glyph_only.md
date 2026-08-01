@@ -9,7 +9,7 @@ create_time: 2026-07-31 13:05:08
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/bead_list_glyph_only.md](prompts/bead_list_glyph_only.md)
+- **PROMPT:** [prompts/202607/bead_list_glyph_only.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/bead_list_glyph_only.md)
 
 # Plan: Keep only the colored type symbol in compact bead rows
 

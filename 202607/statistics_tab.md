@@ -55,7 +55,7 @@ status: done
 bead_id: sase-6y
 ---
 
-- **PROMPT:** [202607/prompts/statistics_tab.md](prompts/statistics_tab.md)
+- **PROMPT:** [prompts/202607/statistics_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_tab.md)
 - **BEAD:** [sase-6y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-6y/README.md)
 
 # Plan: Replace the Admin Center Telemetry tab with a Statistics tab

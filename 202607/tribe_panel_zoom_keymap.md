@@ -10,7 +10,7 @@ create_time: 2026-07-22 06:57:41
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/tribe_panel_zoom_keymap.md](prompts/tribe_panel_zoom_keymap.md)
+- **PROMPT:** [prompts/202607/tribe_panel_zoom_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/tribe_panel_zoom_keymap.md)
 - **AGENTS:**
   - [bbugyi200.athena.hq](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.hq/README.md)
   - [bbugyi200.athena.hq--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.hq.md#member-code)

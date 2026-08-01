@@ -10,7 +10,7 @@ create_time: 2026-07-20 12:46:20
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/statistics_range_summary.md](prompts/statistics_range_summary.md)
+- **PROMPT:** [prompts/202607/statistics_range_summary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_range_summary.md)
 - **AGENTS:**
   - [bbugyi200.athena.ge](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.ge/README.md)
   - [bbugyi200.athena.ge--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ge.md#member-code)

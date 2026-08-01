@@ -4,7 +4,7 @@ status: done
 tier: tale
 ---
 
-- **PROMPT:** [202607/prompts/fix_sase_plan_tag_separate_repo.md](prompts/fix_sase_plan_tag_separate_repo.md)
+- **PROMPT:** [prompts/202607/fix_sase_plan_tag_separate_repo.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/fix_sase_plan_tag_separate_repo.md)
 - **AGENTS:**
   - [bbugyi200.athena.5h--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.5h.md#member-code)
 

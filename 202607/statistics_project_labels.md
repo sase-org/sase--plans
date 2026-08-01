@@ -8,7 +8,7 @@ create_time: 2026-07-20 13:12:16
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/statistics_project_labels.md](prompts/statistics_project_labels.md)
+- **PROMPT:** [prompts/202607/statistics_project_labels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/statistics_project_labels.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-89.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-89.2/README.md)
   - [bbugyi200.athena.sase-89.2--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-89.2.md#member-code)
