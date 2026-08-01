@@ -1,76 +1,78 @@
 ---
 tier: epic
 title: Durable artifact persistence and canonical prompt archive in sidecar repos
-goal: "Every artifact a prompt references is captured locally at launch, content-addressed so different bytes never
-  overwrite each other, and published beside the prompt when the agent commits. The `<project>--agents` sidecar becomes
-  the single canonical home for prompt Markdown files, each one linking inline to its own archived artifacts and
-  cross-linking to its plan when it has one, with `sase validate` proving the whole graph.
+goal: 'Every artifact a prompt references is captured locally at launch, content-addressed
+  so different bytes never overwrite each other, and published beside the prompt when
+  the agent commits. The `<project>--agents` sidecar becomes the single canonical
+  home for prompt Markdown files, each one linking inline to its own archived artifacts
+  and cross-linking to its plan when it has one, with `sase validate` proving the
+  whole graph.
 
-  "
+  '
 phases:
-  - id: core
-    title: Rust prompt-artifact contract and cross-repo header links
-    depends_on: []
-    size: medium
-    description:
-      "core: add the Rust-owned staging manifest, pool naming, prompt link rewriting, ARTIFACTS header section, and
-      absolute PLAN/PROMPT targets, plus their pyo3 bindings."
-  - id: stage
-    title: Local .sase/artifacts staging at prompt launch
-    depends_on:
-      - core
-    size: medium
-    description:
-      "stage: capture every prompt artifact reference into the content-addressed .sase/artifacts pool, move .sase/home
-      under it, and record one manifest row per reference."
-  - id: archive
-    title: Agents sidecar prompt and artifact archive written by sase commit
-    depends_on:
-      - core
-      - stage
-    size: medium
-    description:
-      "archive: write prompts/<YYYYMM>/ and artifacts/<YYYYMM>/ into the agents sidecar at commit time, with inline
-      artifact links, month indexes, locking, and outbox retry."
-  - id: crosslink
-    title: Plan and prompt cross-repo linkage
-    depends_on:
-      - core
-      - archive
-    size: medium
-    description:
-      "crosslink: point plan PROMPT bullets at the agents sidecar, point archived prompts back at their plans, and stop
-      writing prompt snapshots into the plans sidecar."
-  - id: validate
-    title: Validation for the canonical prompt archive
-    depends_on:
-      - crosslink
-    size: medium
-    description:
-      "validate: add sase agent prompts validate, teach plan links validate about cross-repo prompt links, and wire the
-      new check into sase validate."
-  - id: migrate
-    title: Migrate historical prompts out of the plans sidecar
-    depends_on:
-      - validate
-    size: medium
-    description:
-      "migrate: move every existing <YYYYMM>/prompts/*.md into the agents sidecar, repair both link directions, and
-      leave the plans sidecar with zero prompt files."
-  - id: docs
-    title: Documentation, sidecar READMEs, and discoverability
-    depends_on:
-      - migrate
-    size: small
-    description:
-      "docs: refresh sidecar README templates, user docs, and command help so the new artifact and prompt layout is
-      discoverable."
+- id: core
+  title: Rust prompt-artifact contract and cross-repo header links
+  depends_on: []
+  size: medium
+  description: 'core: add the Rust-owned staging manifest, pool naming, prompt link
+    rewriting, ARTIFACTS header section, and absolute PLAN/PROMPT targets, plus their
+    pyo3 bindings.'
+- id: stage
+  title: Local .sase/artifacts staging at prompt launch
+  depends_on:
+  - core
+  size: medium
+  description: 'stage: capture every prompt artifact reference into the content-addressed
+    .sase/artifacts pool, move .sase/home under it, and record one manifest row per
+    reference.'
+- id: archive
+  title: Agents sidecar prompt and artifact archive written by sase commit
+  depends_on:
+  - core
+  - stage
+  size: medium
+  description: 'archive: write prompts/<YYYYMM>/ and artifacts/<YYYYMM>/ into the
+    agents sidecar at commit time, with inline artifact links, month indexes, locking,
+    and outbox retry.'
+- id: crosslink
+  title: Plan and prompt cross-repo linkage
+  depends_on:
+  - core
+  - archive
+  size: medium
+  description: 'crosslink: point plan PROMPT bullets at the agents sidecar, point
+    archived prompts back at their plans, and stop writing prompt snapshots into the
+    plans sidecar.'
+- id: validate
+  title: Validation for the canonical prompt archive
+  depends_on:
+  - crosslink
+  size: medium
+  description: 'validate: add sase agent prompts validate, teach plan links validate
+    about cross-repo prompt links, and wire the new check into sase validate.'
+- id: migrate
+  title: Migrate historical prompts out of the plans sidecar
+  depends_on:
+  - validate
+  size: medium
+  description: 'migrate: move every existing <YYYYMM>/prompts/*.md into the agents
+    sidecar, repair both link directions, and leave the plans sidecar with zero prompt
+    files.'
+- id: docs
+  title: Documentation, sidecar READMEs, and discoverability
+  depends_on:
+  - migrate
+  size: small
+  description: 'docs: refresh sidecar README templates, user docs, and command help
+    so the new artifact and prompt layout is discoverable.'
 proposed_by: bbugyi200.athena.rh
 create_time: 2026-08-01 11:05:41
 status: wip
+bead_id: sase-dh
 ---
 
 - **PROMPT:** [202608/prompts/artifact_persistence_sidecars.md](prompts/artifact_persistence_sidecars.md)
+- **BEAD:** [sase-dh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dh/README.md)
 
 # Plan: Durable artifact persistence and canonical prompt archive in sidecar repos
 
