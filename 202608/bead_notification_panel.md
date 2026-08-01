@@ -61,7 +61,7 @@ phases:
     documentation with the shipped behavior.'
 proposed_by: bbugyi200.athena.qw
 create_time: 2026-08-01 07:03:37
-status: wip
+status: done
 bead_id: sase-cz
 ---
 
