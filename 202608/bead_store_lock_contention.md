@@ -1,63 +1,69 @@
 ---
 tier: epic
 title: Survivable bead-store locking for concurrent bead work launches
-goal: "Task-bead worker launches succeed while an epic launch (or any other bead writer) is in flight, and an epic
-  launch that blocks on a lock reports what it is waiting for instead of stalling silently for minutes.
+goal: 'Task-bead worker launches succeed while an epic launch (or any other bead writer)
+  is in flight, and an epic launch that blocks on a lock reports what it is waiting
+  for instead of stalling silently for minutes.
 
-  "
+  '
 phases:
-  - id: store_lock
-    title: Fair, configurable store-lock waits in sase-core
-    depends_on: []
-    size: medium
-    description: "store_lock: replace the 2s hardcoded try-lock poll in the Rust bead-mutation, task-store, and
-      prompt-stash locks with a capped-backoff wait whose bound is a long, env-overridable default, and record holder
-      identity so an expired wait names its blocker.
+- id: store_lock
+  title: Fair, configurable store-lock waits in sase-core
+  depends_on: []
+  size: medium
+  description: 'store_lock: replace the 2s hardcoded try-lock poll in the Rust bead-mutation,
+    task-store, and prompt-stash locks with a capped-backoff wait whose bound is a
+    long, env-overridable default, and record holder identity so an expired wait names
+    its blocker.
 
-      "
-  - id: work_timing
-    title: Durable stage timing for sase bead work
-    depends_on: []
-    size: medium
-    description: "work_timing: promote the bead-work launch timer to a durable telemetry sink, instrument the currently
-      unmeasured plan-to-epic span, and warn on slow stages so a multi-minute launch is attributable after the fact.
+    '
+- id: work_timing
+  title: Durable stage timing for sase bead work
+  depends_on: []
+  size: medium
+  description: 'work_timing: promote the bead-work launch timer to a durable telemetry
+    sink, instrument the currently unmeasured plan-to-epic span, and warn on slow
+    stages so a multi-minute launch is attributable after the fact.
 
-      "
-  - id: launch_lock
-    title: Bounded and instrumented plan-launch and store-write locks
-    depends_on:
-      - work_timing
-    size: medium
-    description: "launch_lock: give the unbounded epic-plan launch flock a deadline, holder identity, and an actionable
-      expiry error, and record every store-write-lock wait through the durable timing sink instead of only warning on
-      fail-open.
+    '
+- id: launch_lock
+  title: Bounded and instrumented plan-launch and store-write locks
+  depends_on:
+  - work_timing
+  size: medium
+  description: 'launch_lock: give the unbounded epic-plan launch flock a deadline,
+    holder identity, and an actionable expiry error, and record every store-write-lock
+    wait through the durable timing sink instead of only warning on fail-open.
 
-      "
-  - id: launch_retry
-    title: Contention-resilient task and epic bead launches
-    depends_on:
-      - store_lock
-    size: small
-    description: "launch_retry: classify store-lock expiry as a distinct retryable failure, retry bead-work preclaims
-      within a bounded budget, and report contention to the operator as a wait rather than a bare exit-code-1 error.
+    '
+- id: launch_retry
+  title: Contention-resilient task and epic bead launches
+  depends_on:
+  - store_lock
+  size: small
+  description: 'launch_retry: classify store-lock expiry as a distinct retryable failure,
+    retry bead-work preclaims within a bounded budget, and report contention to the
+    operator as a wait rather than a bare exit-code-1 error.
 
-      "
-  - id: contention_tests
-    title: Concurrency regression coverage for bead launches
-    depends_on:
-      - store_lock
-      - launch_lock
-      - launch_retry
-    size: small
-    description:
-      "contention_tests: add regression tests that drive concurrent bead mutations and a task launch overlapping an epic
-      launch, asserting no lock expiry and no half-claimed beads."
+    '
+- id: contention_tests
+  title: Concurrency regression coverage for bead launches
+  depends_on:
+  - store_lock
+  - launch_lock
+  - launch_retry
+  size: small
+  description: 'contention_tests: add regression tests that drive concurrent bead
+    mutations and a task launch overlapping an epic launch, asserting no lock expiry
+    and no half-claimed beads.'
 proposed_by: bbugyi200.athena.r5
 create_time: 2026-08-01 09:03:42
 status: wip
+bead_id: sase-da
 ---
 
 - **PROMPT:** [202608/prompts/bead_store_lock_contention.md](prompts/bead_store_lock_contention.md)
+- **BEAD:** [sase-da](https://github.com/sase-org/sase--beads/blob/main/pages/sase-da/README.md)
 
 # Plan: Survivable bead-store locking for concurrent bead work launches
 
