@@ -10,6 +10,11 @@ status: done
 ---
 
 - **PROMPT:** [202608/prompts/hide_fakey_from_updates.md](prompts/hide_fakey_from_updates.md)
+- **AGENTS:**
+  - [bbugyi200.athena.rg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.rg.md)
+- **COMMITS:**
+  - [1c29afa](https://github.com/sase-org/sase/commit/1c29afae277b55a4bbe584c9f73193d90ef3f1a4) — fix(agent-clis): hide
+    internal providers from CLI management
 
 # Hide Fakey From Agent-CLI Update Inventories
 
