@@ -1,57 +1,56 @@
 ---
 tier: epic
 title: Corroborated SASE task beads and disciplined task creation
-goal: "Agents can record independently evidenced +1s on existing task beads, every new task has an intentional size and
-  size-derived launch route, and concise generated guidance prevents duplicate tasks or tasks caused by active epics.
+goal: 'Agents can record independently evidenced +1s on existing task beads, every
+  new task has an intentional size and size-derived launch route, and concise generated
+  guidance prevents duplicate tasks or tasks caused by active epics.
 
-  "
+  '
 phases:
-  - id: core-contract
-    title: Atomic task +1 domain and persistence contract
-    depends_on: []
-    size: medium
-    description:
-      "core-contract: add the Rust-backed structured +1 evidence operation, compatibility codecs, and task-size creation
-      invariant."
-  - id: cli-routing
-    title: Public CLI, task sizing, and model routing
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "cli-routing: expose the +1 workflow, require sizes on every task creation path, and replace the sizeless task
-      model alias with phase-size routing."
-  - id: surface-polish
-    title: Task +1 presentation across every user surface
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "surface-polish: render +1 counts and evidence beautifully in CLI, TUI, triage, mobile, and published bead views."
-  - id: agent-guidance
-    title: Concise sase_new_task skill and agent policy
-    depends_on:
-      - cli-routing
-    size: medium
-    description:
-      "agent-guidance: add the generated task-creation skill, route agent prompts and memories through it, and document
-      duplicate and active-epic decisions."
-  - id: integration
-    title: Cross-repository verification and contract cleanup
-    depends_on:
-      - cli-routing
-      - surface-polish
-      - agent-guidance
-    size: small
-    description:
-      "integration: exercise the complete workflow, reconcile generated contracts and snapshots, and prove legacy
-      compatibility and removal of task_worker routing."
+- id: core-contract
+  title: Atomic task +1 domain and persistence contract
+  depends_on: []
+  size: medium
+  description: 'core-contract: add the Rust-backed structured +1 evidence operation,
+    compatibility codecs, and task-size creation invariant.'
+- id: cli-routing
+  title: Public CLI, task sizing, and model routing
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'cli-routing: expose the +1 workflow, require sizes on every task creation
+    path, and replace the sizeless task model alias with phase-size routing.'
+- id: surface-polish
+  title: Task +1 presentation across every user surface
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'surface-polish: render +1 counts and evidence beautifully in CLI,
+    TUI, triage, mobile, and published bead views.'
+- id: agent-guidance
+  title: Concise sase_new_task skill and agent policy
+  depends_on:
+  - cli-routing
+  size: medium
+  description: 'agent-guidance: add the generated task-creation skill, route agent
+    prompts and memories through it, and document duplicate and active-epic decisions.'
+- id: integration
+  title: Cross-repository verification and contract cleanup
+  depends_on:
+  - cli-routing
+  - surface-polish
+  - agent-guidance
+  size: small
+  description: 'integration: exercise the complete workflow, reconcile generated contracts
+    and snapshots, and prove legacy compatibility and removal of task_worker routing.'
 proposed_by: bbugyi200.athena.rl
 create_time: 2026-08-01 13:10:27
 status: wip
+bead_id: sase-dr
 ---
 
 - **PROMPT:** [202608/prompts/task_bead_plus_one.md](prompts/task_bead_plus_one.md)
+- **BEAD:** [sase-dr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dr/README.md)
 
 # Plan: Corroborated SASE task beads and disciplined task creation
 
