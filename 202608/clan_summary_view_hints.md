@@ -90,7 +90,7 @@ phases:
     perf harness, and cover the whole `v` flow on a clan with an app-level test.'
 proposed_by: bbugyi200.athena.r3
 create_time: 2026-08-01 08:34:53
-status: wip
+status: done
 bead_id: sase-d9
 ---
 
