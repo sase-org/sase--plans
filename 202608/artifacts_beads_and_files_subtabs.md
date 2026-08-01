@@ -71,7 +71,7 @@ phases:
     new group, and re-record the affected PNG goldens.'
 proposed_by: bbugyi200.athena.r7
 create_time: 2026-08-01 09:52:31
-status: wip
+status: done
 bead_id: sase-dd
 ---
 
