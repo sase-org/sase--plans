@@ -1,65 +1,72 @@
 ---
 tier: epic
 title: Beads notification panel and gate origin attribution
-goal: "Ready task beads arrive as compact `[bead]` rows in their own `Beads` notification tab, any SASE gate can declare
-  the notification tab it lands in and the agent it was filed on behalf of, and the filing agent is visible in both the
-  notification detail pane and the gate action panel.
+goal: 'Ready task beads arrive as compact `[bead]` rows in their own `Beads` notification
+  tab, any SASE gate can declare the notification tab it lands in and the agent it
+  was filed on behalf of, and the filing agent is visible in both the notification
+  detail pane and the gate action panel.
 
-  "
+  '
 phases:
-  - id: contract
-    title: Generic gate presentation panel and origin fields
-    depends_on: []
-    size: medium
-    description: "contract: add the `presentation.panel` and `presentation.origin_agent` gate request fields, their
-      normalization and validation, their projection into notification `action_data`, the `GateAdapter.display_title`
-      field, the matching `sase gate create` options, and the gate documentation and skill-source updates.
+- id: contract
+  title: Generic gate presentation panel and origin fields
+  depends_on: []
+  size: medium
+  description: 'contract: add the `presentation.panel` and `presentation.origin_agent`
+    gate request fields, their normalization and validation, their projection into
+    notification `action_data`, the `GateAdapter.display_title` field, the matching
+    `sase gate create` options, and the gate documentation and skill-source updates.
 
-      "
-  - id: bead-gate
-    title: Task triage gate identity, filer, and self-heal
-    depends_on:
-      - contract
-    size: medium
-    description: "bead-gate: rename the task triage sender to `bead`, shorten its note to `<bead-id> — <title>`, route
-      it to the `beads` panel, carry the bead's filer through `origin_agent` and the Markdown preview, and
-      cancel-and-recreate pending gates that still use the previous presentation contract.
+    '
+- id: bead-gate
+  title: Task triage gate identity, filer, and self-heal
+  depends_on:
+  - contract
+  size: medium
+  description: 'bead-gate: rename the task triage sender to `bead`, shorten its note
+    to `<bead-id> — <title>`, route it to the `beads` panel, carry the bead''s filer
+    through `origin_agent` and the Markdown preview, and cancel-and-recreate pending
+    gates that still use the previous presentation contract.
 
-      "
-  - id: inbox
-    title: Panel tabs and filer line in the notification modal
-    depends_on:
-      - contract
-    size: medium
-    description: "inbox: resolve notification modal tabs from the declared panel ahead of the synthetic HITL and Errors
-      tabs, order and label panel tabs, and render the filing agent on the detail pane's meta line.
+    '
+- id: inbox
+  title: Panel tabs and filer line in the notification modal
+  depends_on:
+  - contract
+  size: medium
+  description: 'inbox: resolve notification modal tabs from the declared panel ahead
+    of the synthetic HITL and Errors tabs, order and label panel tabs, and render
+    the filing agent on the detail pane''s meta line.
 
-      "
-  - id: action-panel
-    title: Gate action panel title and filer line
-    depends_on:
-      - contract
-    size: small
-    description: 'action-panel: title the generic gate review modal from its adapter instead of the hardcoded "Custom
-      Gate" string and render a "Filed by" line above the Context section when the gate declares an origin agent.
+    '
+- id: action-panel
+  title: Gate action panel title and filer line
+  depends_on:
+  - contract
+  size: small
+  description: 'action-panel: title the generic gate review modal from its adapter
+    instead of the hardcoded "Custom Gate" string and render a "Filed by" line above
+    the Context section when the gate declares an origin agent.
 
-      '
-  - id: visuals
-    title: PNG snapshot coverage and documentation sweep
-    depends_on:
-      - bead-gate
-      - inbox
-      - action-panel
-    size: small
-    description:
-      "visuals: add PNG snapshot goldens for the Beads tab, the filer meta line, and the task triage action panel, then
-      reconcile the notification and bead documentation with the shipped behavior."
+    '
+- id: visuals
+  title: PNG snapshot coverage and documentation sweep
+  depends_on:
+  - bead-gate
+  - inbox
+  - action-panel
+  size: small
+  description: 'visuals: add PNG snapshot goldens for the Beads tab, the filer meta
+    line, and the task triage action panel, then reconcile the notification and bead
+    documentation with the shipped behavior.'
 proposed_by: bbugyi200.athena.qw
 create_time: 2026-08-01 07:03:37
 status: wip
+bead_id: sase-cz
 ---
 
 - **PROMPT:** [202608/prompts/bead_notification_panel.md](prompts/bead_notification_panel.md)
+- **BEAD:** [sase-cz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-cz/README.md)
 
 # Plan: Beads notification panel and gate origin attribution
 
