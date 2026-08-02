@@ -6,7 +6,7 @@ goal:
   arrive after the pane mounts.
 proposed_by: bbugyi200.athena.s1
 create_time: 2026-08-02 10:25:56
-status: wip
+status: done
 ---
 
 # Plan: Restore the Tasks tab selection for durable-store rows
