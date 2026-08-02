@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/runner_occupancy_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/runner_occupancy_history.md)
+- **AGENTS:**
+  - [bbugyi200.athena.rn.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.rn.f1.md)
+- **COMMITS:**
+  - [c4f8a9e](https://github.com/sase-org/sase-core/commit/c4f8a9ebca15a74ca3c90640e6c28fc44f7ea5a8) — fix(stats):
+    correct historical runner occupancy
 
 # Restore Truthful Runner-Occupancy History
 
