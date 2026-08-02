@@ -9,7 +9,7 @@ create_time: 2026-07-16 06:33:26
 status: done
 ---
 
-- **PROMPT:** [202607/prompts/uppercase_active_subtabs.md](prompts/uppercase_active_subtabs.md)
+- **PROMPT:** [prompts/202607/uppercase_active_subtabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202607/uppercase_active_subtabs.md)
 - **AGENTS:**
   - [bbugyi200.athena.a3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.a3/README.md)
   - [bbugyi200.athena.a3--code](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.a3.md#member-code)
