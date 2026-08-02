@@ -9,6 +9,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/remove_statistics_runs_runtime_tabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/remove_statistics_runs_runtime_tabs.md)
+- **AGENTS:**
+  - [bbugyi200.athena.s4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.s4.md)
+- **COMMITS:**
+  - [bcefbb8](https://github.com/sase-org/sase/commit/bcefbb8e40d48578b3aa221b6bd343669b13a2e9) — feat(ace)\!: remove
+    Statistics runs and runtime tabs
 
 # Remove the Runs and Runtime Statistics views
 
