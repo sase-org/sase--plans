@@ -6,7 +6,7 @@ goal:
   preserving explicit override precedence and @coder fallback behavior for other providers.
 proposed_by: bbugyi200.athena.rp.f2
 create_time: 2026-08-02 07:41:06
-status: wip
+status: done
 ---
 
 # Pin `@claude_coder` and `@codex_coder` to provider-local defaults
