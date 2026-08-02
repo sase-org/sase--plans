@@ -45,7 +45,7 @@ create_time: 2026-08-01 16:22:50
 bead_id: sase-dh.8
 ---
 
-- **PROMPT:** [202608/prompts/finish_dh.md](prompts/finish_dh.md)
+- **PROMPT:** [prompts/202608/finish_dh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_dh.md)
 - **PARENT:** [202608/artifact_persistence_sidecars.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_persistence_sidecars.md)
 - **BEAD:** [sase-dh.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dh/sase-dh.8.md)
 
