@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/plan_question_stats_from_gates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plan_question_stats_from_gates.md)
+- **AGENTS:**
+  - [bbugyi200.athena.rn](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.rn.md)
+- **COMMITS:**
+  - [ae28695](https://github.com/sase-org/sase-core/commit/ae28695430e27c2083210fa4088638f323f0eab9) — feat(stats):
+    derive plan and question activity from gates
 
 # Rebuild Plan & Question Statistics On Durable Gate Bundles
 
