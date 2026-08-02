@@ -15,8 +15,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.rn.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.rn.f1.md)
 - **COMMITS:**
-  - [c4f8a9e](https://github.com/sase-org/sase-core/commit/c4f8a9ebca15a74ca3c90640e6c28fc44f7ea5a8) — fix(stats):
-    correct historical runner occupancy
+  - [5143cb9](https://github.com/sase-org/sase/commit/5143cb9813d129850bbea0ec52246238bc31f696) — fix(stats): expose
+    runner occupancy diagnostics
 
 # Restore Truthful Runner-Occupancy History
 
