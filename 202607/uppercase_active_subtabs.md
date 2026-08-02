@@ -24,7 +24,7 @@ Make selection state easier to scan in the two nested tab strips called out by t
 
 - **SASE Admin Center → Projects:** the selected label is `PROJECTS`, `REPOS`, or `WORKSPACES`; inactive labels remain
   `Projects`, `Repos`, and `Workspaces`.
-- **Artifacts tab:** the selected label is `PRS`, `COMMITS`, `BUGS`, or `PLANS`; inactive labels remain `PRs`, `Commits`,
+- **Artifacts:** the selected label is `PRS`, `COMMITS`, `BUGS`, or `PLANS`; inactive labels remain `PRs`, `Commits`,
   `Bugs`, and `Plans`. In particular, the current incorrect inactive spelling `Prs` disappears.
 
 This is a display-only change. Sub-tab IDs (`projects`, `repos`, `workspaces`, `prs`, `commits`, `bugs`, `plans`),
