@@ -1,75 +1,80 @@
 ---
 tier: epic
 title: Restore green CI on master
-goal: "A master CI run finishes with every job green: the published-core minimum smoke passes, `just validate` passes on
-  a clean CI host, the bead ANSI snapshot matches in every environment, and all three test-matrix legs finish inside
-  their timeout.
+goal: 'A master CI run finishes with every job green: the published-core minimum smoke
+  passes, `just validate` passes on a clean CI host, the bead ANSI snapshot matches
+  in every environment, and all three test-matrix legs finish inside their timeout.
 
-  "
+  '
 phases:
-  - id: core-floor
-    title: Raise the published sase-core-rs floor to 0.17.8
-    depends_on: []
-    size: small
-    description: "core-floor: bump the pyproject dependency window so the published-core smoke lane installs a
-      sase-core-rs release that actually exposes every binding this repo calls, and refresh the recorded lock specifier
-      to match.
+- id: core-floor
+  title: Raise the published sase-core-rs floor to 0.17.8
+  depends_on: []
+  size: small
+  description: 'core-floor: bump the pyproject dependency window so the published-core
+    smoke lane installs a sase-core-rs release that actually exposes every binding
+    this repo calls, and refresh the recorded lock specifier to match.
 
-      "
-  - id: bead-color
-    title: Make bead prose highlighting ignore ambient NO_COLOR
-    depends_on: []
-    size: small
-    description: "bead-color: force color on the internal rendering console so `--color always` wins over the ambient
-      NO_COLOR environment variable, restore the highlighted ANSI golden that was overwritten with degraded output, and
-      add a regression test that renders under NO_COLOR.
+    '
+- id: bead-color
+  title: Make bead prose highlighting ignore ambient NO_COLOR
+  depends_on: []
+  size: small
+  description: 'bead-color: force color on the internal rendering console so `--color
+    always` wins over the ambient NO_COLOR environment variable, restore the highlighted
+    ANSI golden that was overwritten with degraded output, and add a regression test
+    that renders under NO_COLOR.
 
-      "
-  - id: ci-budget
-    title: Fit the test matrix inside its job timeout
-    depends_on: []
-    size: small
-    description: "ci-budget: raise the test job timeout and stop running coverage on the matrix legs that never upload
-      it, so the slowest interpreter leg can finish instead of being cancelled at the limit.
+    '
+- id: ci-budget
+  title: Fit the test matrix inside its job timeout
+  depends_on: []
+  size: small
+  description: 'ci-budget: raise the test job timeout and stop running coverage on
+    the matrix legs that never upload it, so the slowest interpreter leg can finish
+    instead of being cancelled at the limit.
 
-      "
-  - id: validate-skip
-    title: Skip the prompt-archive check when its context is unavailable
-    depends_on: []
-    size: medium
-    description: "validate-skip: teach the prompt-archive validation an explicit unavailable-context outcome and have
-      `sase validate` report it as skipped rather than failed, so a clean host without a project registry or
-      agents-sidecar clone can still run the aggregate validation.
+    '
+- id: validate-skip
+  title: Skip the prompt-archive check when its context is unavailable
+  depends_on: []
+  size: medium
+  description: 'validate-skip: teach the prompt-archive validation an explicit unavailable-context
+    outcome and have `sase validate` report it as skipped rather than failed, so a
+    clean host without a project registry or agents-sidecar clone can still run the
+    aggregate validation.
 
-      "
-  - id: publish-migration
-    title: Publish the plans-sidecar prompt migration
-    depends_on: []
-    size: medium
-    description: "publish-migration: finish and publish the historical prompt migration so the plans sidecar remote no
-      longer carries prompt Markdown or dangling relative prompt links, coordinating with the in-progress phase bead
-      that already owns this work instead of redoing it.
+    '
+- id: publish-migration
+  title: Publish the plans-sidecar prompt migration
+  depends_on: []
+  size: medium
+  description: 'publish-migration: finish and publish the historical prompt migration
+    so the plans sidecar remote no longer carries prompt Markdown or dangling relative
+    prompt links, coordinating with the in-progress phase bead that already owns this
+    work instead of redoing it.
 
-      "
-  - id: verify-green
-    title: Confirm a fully green master run
-    depends_on:
-      - core-floor
-      - bead-color
-      - ci-budget
-      - validate-skip
-      - publish-migration
-    size: small
-    description:
-      "verify-green: watch a full master run after the other phases land, confirm every job is green, and re-tune the
-      test timeout if the slowest leg still lands close to the limit."
+    '
+- id: verify-green
+  title: Confirm a fully green master run
+  depends_on:
+  - core-floor
+  - bead-color
+  - ci-budget
+  - validate-skip
+  - publish-migration
+  size: small
+  description: 'verify-green: watch a full master run after the other phases land,
+    confirm every job is green, and re-tune the test timeout if the slowest leg still
+    lands close to the limit.'
 proposed_by: bbugyi200.athena.rm
 create_time: 2026-08-02 06:45:37
 status: wip
+bead_id: sase-dz
 ---
 
-- **PROMPT:**
-  [prompts/202608/ci_green_restoration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ci_green_restoration.md)
+- **PROMPT:** [prompts/202608/ci_green_restoration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ci_green_restoration.md)
+- **BEAD:** [sase-dz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-dz/README.md)
 
 # Plan: Restore green CI on master
 
