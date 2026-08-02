@@ -9,6 +9,12 @@ create_time: 2026-08-02 07:41:06
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.rp.f2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.rp.f2.md)
+- **COMMITS:**
+  - [e4c13b3](https://github.com/sase-org/sase/commit/e4c13b3e837b8d8464013cf52194a596a1c4ac9b) — feat(llm): add
+    provider-specific coder defaults
+
 # Pin `@claude_coder` and `@codex_coder` to provider-local defaults
 
 ## Goal
