@@ -6,7 +6,7 @@ goal:
   support remain intact.
 proposed_by: bbugyi200.athena.rp
 create_time: 2026-08-02 06:59:12
-status: wip
+status: done
 ---
 
 # Change the implicit `@smartest` default to `claude/opus@max`
