@@ -1,65 +1,61 @@
 ---
 tier: epic
 title: Stop TUI freezes caused by workspace materialization on the render path
-goal: "Navigating and viewing agents in the ACE TUI never blocks the UI thread on git clone/fetch/push, SDD store locks,
-  or registry writes; multi-second random freezes stop, and any freeze that does occur is captured by the stall
-  watchdog.
+goal: 'Navigating and viewing agents in the ACE TUI never blocks the UI thread on
+  git clone/fetch/push, SDD store locks, or registry writes; multi-second random freezes
+  stop, and any freeze that does occur is captured by the stall watchdog.
 
-  "
+  '
 phases:
-  - id: probe
-    title: Read-only workspace directory probe API
-    depends_on: []
-    size: medium
-    description:
-      "probe: add a side-effect-free workspace path resolver to workspace_provider so callers can ask where a workspace
-      is without materializing it."
-  - id: hints
-    title: Convert agent-detail hint rendering to the probe API
-    depends_on:
-      - probe
-    size: medium
-    description:
-      "hints: make the prompt-panel hint and clan/family render paths resolve workspace dirs read-only, removing git
-      subprocesses from the UI thread."
-  - id: sweep
-    title: Audit remaining TUI resolution call sites
-    depends_on:
-      - probe
-    size: medium
-    description:
-      "sweep: find every other keystroke, render, and completion path that materializes a workspace and move it to a
-      read-only probe or a tracked background task."
-  - id: guard
-    title: Regression guard against materialization on the UI thread
-    depends_on:
-      - hints
-      - sweep
-    size: small
-    description:
-      "guard: add a runtime guard plus tests so a future change cannot reintroduce clone/fetch/push work into a render
-      or keystroke path."
-  - id: watchdog
-    title: Close the stall-watchdog forensics gap
-    depends_on: []
-    size: small
-    description:
-      "watchdog: explain and fix why a reported multi-second freeze produced no record, so future freezes are always
-      diagnosable."
-  - id: loader
-    title: Reduce agents-tab reload cost
-    depends_on: []
-    size: large
-    description:
-      "loader: cut the full agents reload disk stage down from multi-second so post-launch and auto-refresh updates stop
-      reading as unresponsiveness."
+- id: probe
+  title: Read-only workspace directory probe API
+  depends_on: []
+  size: medium
+  description: 'probe: add a side-effect-free workspace path resolver to workspace_provider
+    so callers can ask where a workspace is without materializing it.'
+- id: hints
+  title: Convert agent-detail hint rendering to the probe API
+  depends_on:
+  - probe
+  size: medium
+  description: 'hints: make the prompt-panel hint and clan/family render paths resolve
+    workspace dirs read-only, removing git subprocesses from the UI thread.'
+- id: sweep
+  title: Audit remaining TUI resolution call sites
+  depends_on:
+  - probe
+  size: medium
+  description: 'sweep: find every other keystroke, render, and completion path that
+    materializes a workspace and move it to a read-only probe or a tracked background
+    task.'
+- id: guard
+  title: Regression guard against materialization on the UI thread
+  depends_on:
+  - hints
+  - sweep
+  size: small
+  description: 'guard: add a runtime guard plus tests so a future change cannot reintroduce
+    clone/fetch/push work into a render or keystroke path.'
+- id: watchdog
+  title: Close the stall-watchdog forensics gap
+  depends_on: []
+  size: small
+  description: 'watchdog: explain and fix why a reported multi-second freeze produced
+    no record, so future freezes are always diagnosable.'
+- id: loader
+  title: Reduce agents-tab reload cost
+  depends_on: []
+  size: large
+  description: 'loader: cut the full agents reload disk stage down from multi-second
+    so post-launch and auto-refresh updates stop reading as unresponsiveness.'
 proposed_by: bbugyi200.athena.rr
 create_time: 2026-08-02 09:05:43
 status: wip
+bead_id: sase-e4
 ---
 
-- **PROMPT:**
-  [prompts/202608/tui_freeze_render_path_git.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/tui_freeze_render_path_git.md)
+- **PROMPT:** [prompts/202608/tui_freeze_render_path_git.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/tui_freeze_render_path_git.md)
+- **BEAD:** [sase-e4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e4/README.md)
 
 # Plan: Stop TUI freezes caused by workspace materialization on the render path
 
