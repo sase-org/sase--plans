@@ -1,42 +1,43 @@
 ---
 tier: epic
 title: Fix just test failures caused by host contention
-goal: "`just test` stops failing on a busy host: the suite-gate integration test bounds child pytest lifecycles by
-  observable progress instead of idle-host wall clocks, and ACE PNG snapshots can no longer capture a
-  stable-but-unfinished frame.
+goal: '`just test` stops failing on a busy host: the suite-gate integration test bounds
+  child pytest lifecycles by observable progress instead of idle-host wall clocks,
+  and ACE PNG snapshots can no longer capture a stable-but-unfinished frame.
 
-  "
+  '
 phases:
-  - id: gate
-    title: Load-tolerant suite-gate integration budgets
-    depends_on: []
-    size: small
-    description:
-      "gate: replace the fixed 60s/20s/10s/15s wall clocks in the suite-gate integration test with budgets calibrated
-      from measured child admission latency, and fail with child diagnostics instead of a bare TimeoutExpired."
-  - id: visual
-    title: Close the ACE visual convergence gap
-    depends_on: []
-    size: medium
-    description:
-      "visual: stop Textual animations from running under PNG snapshot tests and teach the convergence helper to treat
-      pending animations as unfinished work, so a starved app cannot present five identical mid-animation frames."
-  - id: baseline
-    title: Revalidate and record the contention baseline
-    depends_on:
-      - gate
-      - visual
-    size: small
-    description:
-      "baseline: rerun the visual contention harness and the suite-gate integration test under load, confirm both phases
-      hold together, and refresh the recorded harness baseline."
+- id: gate
+  title: Load-tolerant suite-gate integration budgets
+  depends_on: []
+  size: small
+  description: 'gate: replace the fixed 60s/20s/10s/15s wall clocks in the suite-gate
+    integration test with budgets calibrated from measured child admission latency,
+    and fail with child diagnostics instead of a bare TimeoutExpired.'
+- id: visual
+  title: Close the ACE visual convergence gap
+  depends_on: []
+  size: medium
+  description: 'visual: stop Textual animations from running under PNG snapshot tests
+    and teach the convergence helper to treat pending animations as unfinished work,
+    so a starved app cannot present five identical mid-animation frames.'
+- id: baseline
+  title: Revalidate and record the contention baseline
+  depends_on:
+  - gate
+  - visual
+  size: small
+  description: 'baseline: rerun the visual contention harness and the suite-gate integration
+    test under load, confirm both phases hold together, and refresh the recorded harness
+    baseline.'
 proposed_by: bbugyi200.athena.rw
 create_time: 2026-08-02 10:11:34
 status: wip
+bead_id: sase-e9
 ---
 
-- **PROMPT:**
-  [prompts/202608/just_test_contention_flakes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/just_test_contention_flakes.md)
+- **PROMPT:** [prompts/202608/just_test_contention_flakes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/just_test_contention_flakes.md)
+- **BEAD:** [sase-e9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e9/README.md)
 
 # Plan: Fix `just test` failures caused by host contention
 
