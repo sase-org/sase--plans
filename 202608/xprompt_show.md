@@ -49,7 +49,7 @@ phases:
     and retire the epic symvision whitelist entries.'
 proposed_by: bbugyi200.athena.s3
 create_time: 2026-08-02 11:49:10
-status: wip
+status: done
 bead_id: sase-eb
 ---
 
