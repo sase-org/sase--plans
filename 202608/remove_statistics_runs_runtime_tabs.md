@@ -4,7 +4,7 @@ title: Remove Runs and Runtime from Admin Center Statistics
 goal: The Admin Center exposes a coherent seven-view Statistics experience without the low-value Runs and Runtime views.
 proposed_by: bbugyi200.athena.s4
 create_time: 2026-08-02 11:47:35
-status: wip
+status: done
 ---
 
 - **PROMPT:**
