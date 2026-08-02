@@ -1,55 +1,60 @@
 ---
 tier: epic
 title: sase xprompt show
-goal: "`sase xprompt show <name>` renders any single xprompt or workflow definition — its declared properties, inputs,
-  local helpers, body, and provenance — with the same xprompt syntax highlighting the ACE prompt input bar uses, plus
-  byte-faithful `--format raw` and stable `--format json` modes.
+goal: '`sase xprompt show <name>` renders any single xprompt or workflow definition
+  — its declared properties, inputs, local helpers, body, and provenance — with the
+  same xprompt syntax highlighting the ACE prompt input bar uses, plus byte-faithful
+  `--format raw` and stable `--format json` modes.
 
-  "
+  '
 phases:
-  - id: highlight
-    title: Shared xprompt highlight core (roles, flattened spans, palette)
-    depends_on: []
-    size: medium
-    description: "highlight: add the frontend-agnostic highlight role model, an overlap-flattening span merger over the
-      existing xprompt/jinja/alt/placeholder/artifact-ref scanners, and a flexoki-derived palette exposing Rich and ANSI
-      styles; move the shared argument-color blend out of the TUI mixin.
+- id: highlight
+  title: Shared xprompt highlight core (roles, flattened spans, palette)
+  depends_on: []
+  size: medium
+  description: 'highlight: add the frontend-agnostic highlight role model, an overlap-flattening
+    span merger over the existing xprompt/jinja/alt/placeholder/artifact-ref scanners,
+    and a flexoki-derived palette exposing Rich and ANSI styles; move the shared argument-color
+    blend out of the TUI mixin.
 
-      "
-  - id: resolve
-    title: Definition resolution, provenance, and the JSON record
-    depends_on: []
-    size: medium
-    description: "resolve: add name normalization and lookup with suggestions, source classification and provenance
-      (path, line, hosted URL, editability), byte-faithful raw-definition extraction for every source bucket, the
-      reference scan, and the versioned show record with its JSON projection.
+    '
+- id: resolve
+  title: Definition resolution, provenance, and the JSON record
+  depends_on: []
+  size: medium
+  description: 'resolve: add name normalization and lookup with suggestions, source
+    classification and provenance (path, line, hosted URL, editability), byte-faithful
+    raw-definition extraction for every source bucket, the reference scan, and the
+    versioned show record with its JSON projection.
 
-      "
-  - id: render
-    title: Rich rendering of the show layout
-    depends_on:
-      - highlight
-      - resolve
-    size: medium
-    description: "render: build the Rich renderables for the header, properties, inputs, local xprompts, body with a
-      line-number gutter and role styling, workflow steps, references, and hints; add the shared CLI chrome palette.
+    '
+- id: render
+  title: Rich rendering of the show layout
+  depends_on:
+  - highlight
+  - resolve
+  size: medium
+  description: 'render: build the Rich renderables for the header, properties, inputs,
+    local xprompts, body with a line-number gutter and role styling, workflow steps,
+    references, and hints; add the shared CLI chrome palette.
 
-      "
-  - id: cli
-    title: CLI wiring, help, and documentation
-    depends_on:
-      - render
-    size: small
-    description:
-      "cli: register the `show` subparser with its flags and examples, dispatch it from the xprompt handler, document
-      the command in the three docs surfaces, and retire the epic symvision whitelist entries."
+    '
+- id: cli
+  title: CLI wiring, help, and documentation
+  depends_on:
+  - render
+  size: small
+  description: 'cli: register the `show` subparser with its flags and examples, dispatch
+    it from the xprompt handler, document the command in the three docs surfaces,
+    and retire the epic symvision whitelist entries.'
 proposed_by: bbugyi200.athena.s3
 create_time: 2026-08-02 11:49:10
 status: wip
+bead_id: sase-eb
 ---
 
-- **PROMPT:**
-  [prompts/202608/xprompt_show.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_show.md)
+- **PROMPT:** [prompts/202608/xprompt_show.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_show.md)
+- **BEAD:** [sase-eb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-eb/README.md)
 
 # Plan: `sase xprompt show`
 
