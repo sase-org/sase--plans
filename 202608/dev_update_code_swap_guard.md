@@ -7,7 +7,7 @@ goal:
   `priority_property` epic (`gh_bobs-org__bob-cli-4`) is relaunched successfully.
 proposed_by: bbugyi200.athena.se
 create_time: 2026-08-02 16:00:21
-status: wip
+status: done
 ---
 
 - **PROMPT:**
