@@ -6,7 +6,7 @@ goal:
   alias-specific override behavior.
 proposed_by: bbugyi200.athena.s6
 create_time: 2026-08-02 11:55:44
-status: wip
+status: done
 ---
 
 - **PROMPT:**
