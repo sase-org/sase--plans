@@ -67,7 +67,7 @@ phases:
     so the new artifact and prompt layout is discoverable.'
 proposed_by: bbugyi200.athena.rh
 create_time: 2026-08-01 11:05:41
-status: wip
+status: done
 bead_id: sase-dh
 ---
 
