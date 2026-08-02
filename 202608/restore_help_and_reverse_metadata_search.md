@@ -6,7 +6,7 @@ goal:
   already-active Agents metadata search without losing the query, matches, or reverse-search functionality.
 proposed_by: bbugyi200.athena.s5
 create_time: 2026-08-02 11:58:38
-status: wip
+status: done
 ---
 
 - **PROMPT:**
