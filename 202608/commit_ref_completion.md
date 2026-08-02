@@ -71,7 +71,7 @@ phases:
     invariant end to end in both surfaces.'
 proposed_by: bbugyi200.athena.ry
 create_time: 2026-08-02 10:03:46
-status: wip
+status: done
 bead_id: sase-e8
 ---
 
