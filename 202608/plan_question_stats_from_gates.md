@@ -7,7 +7,7 @@ goal:
   no longer silently dropped.
 proposed_by: bbugyi200.athena.rn
 create_time: 2026-08-02 06:43:13
-status: wip
+status: done
 ---
 
 - **PROMPT:**
