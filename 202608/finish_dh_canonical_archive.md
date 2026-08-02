@@ -1,65 +1,72 @@
 ---
 tier: epic
 title: Close the remaining canonical prompt-archive gaps in sase-dh
-goal: "The agents sidecar is the canonical and only home for prompt Markdown in practice as well as in principle: no
-  supported command can write prompt Markdown into plans, prompt search reads the canonical archive, plan authors can
-  write ordinary body bullets named after header labels, the migration command acts on the caller's own sidecar and
-  publishes what it commits, the shipped docs and directory map match the implementation, and sase-dh is closed on
-  verified evidence.
+goal: 'The agents sidecar is the canonical and only home for prompt Markdown in practice
+  as well as in principle: no supported command can write prompt Markdown into plans,
+  prompt search reads the canonical archive, plan authors can write ordinary body
+  bullets named after header labels, the migration command acts on the caller''s own
+  sidecar and publishes what it commits, the shipped docs and directory map match
+  the implementation, and sase-dh is closed on verified evidence.
 
-  "
+  '
 phases:
-  - id: header-block
-    title: Restrict plan-header parsing to the leading block
-    depends_on: []
-    size: medium
-    description: "header-block: stop the Rust plan-header parser from scanning the whole document body, so an ordinary
-      known-label bullet no longer invalidates a plan; publish the fix in a core release, raise the Python floor to it,
-      and drop the plans-sidecar wording workaround.
+- id: header-block
+  title: Restrict plan-header parsing to the leading block
+  depends_on: []
+  size: medium
+  description: 'header-block: stop the Rust plan-header parser from scanning the whole
+    document body, so an ordinary known-label bullet no longer invalidates a plan;
+    publish the fix in a core release, raise the Python floor to it, and drop the
+    plans-sidecar wording workaround.
 
-      "
-  - id: canonical-interfaces
-    title: Make every prompt interface canonical
-    depends_on: []
-    size: medium
-    description: "canonical-interfaces: retire the export path that writes prompt Markdown into the plans store,
-      retarget prompt search at the canonical agents archive, delete plans-snapshot discovery once nothing calls it, and
-      add the regression test that enforces the invariant.
+    '
+- id: canonical-interfaces
+  title: Make every prompt interface canonical
+  depends_on: []
+  size: medium
+  description: 'canonical-interfaces: retire the export path that writes prompt Markdown
+    into the plans store, retarget prompt search at the canonical agents archive,
+    delete plans-snapshot discovery once nothing calls it, and add the regression
+    test that enforces the invariant.
 
-      "
-  - id: migrate-durability
-    title: Make agent prompts migrate correct and durable
-    depends_on: []
-    size: medium
-    description: "migrate-durability: resolve the plans sidecar effective for the caller instead of the first existing
-      clone, and make a write run either publish both sidecars or fail with exact recovery instructions, with restart
-      states tested.
+    '
+- id: migrate-durability
+  title: Make agent prompts migrate correct and durable
+  depends_on: []
+  size: medium
+  description: 'migrate-durability: resolve the plans sidecar effective for the caller
+    instead of the first existing clone, and make a write run either publish both
+    sidecars or fail with exact recovery instructions, with restart states tested.
 
-      "
-  - id: docs-assets
-    title: Correct the directory-map asset and the prompt docs
-    depends_on:
-      - canonical-interfaces
-    size: small
-    description: "docs-assets: remove prompt snapshots from the plans directory-map source, regenerate its PNG, and
-      bring the prompt documentation in line with the canonical archive and the export decision.
+    '
+- id: docs-assets
+  title: Correct the directory-map asset and the prompt docs
+  depends_on:
+  - canonical-interfaces
+  size: small
+  description: 'docs-assets: remove prompt snapshots from the plans directory-map
+    source, regenerate its PNG, and bring the prompt documentation in line with the
+    canonical archive and the export decision.
 
-      "
-  - id: closeout
-    title: Close out sase-dh
-    depends_on:
-      - header-block
-      - canonical-interfaces
-      - migrate-durability
-      - docs-assets
-    size: medium
-    description:
-      "closeout: re-verify every gap against final source and remote state, disposition all proposed follow-ups, close
-      the epic on evidence rather than force, run post-close Symvision cleanup, and mark the linked plan done."
+    '
+- id: closeout
+  title: Close out sase-dh
+  depends_on:
+  - header-block
+  - canonical-interfaces
+  - migrate-durability
+  - docs-assets
+  size: medium
+  description: 'closeout: re-verify every gap against final source and remote state,
+    disposition all proposed follow-ups, close the epic on evidence rather than force,
+    run post-close Symvision cleanup, and mark the linked plan done.'
 proposed_by: bbugyi200.athena.rt
 create_time: 2026-08-02 09:28:20
 status: wip
+bead_id: sase-e7
 ---
+
+- **BEAD:** [sase-e7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e7/README.md)
 
 # Close the remaining gaps in `sase-dh`
 
