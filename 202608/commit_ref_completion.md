@@ -1,75 +1,82 @@
 ---
 tier: epic
-title: "Excellent @commit: argument completion in the prompt bar and LSP"
-goal: "Typing `@commit:` offers the project's recent revisions across every one of its repos — in the ACE prompt bar and
-  in any LSP editor — ranked by relevance then recency, rendered as a short SHA plus the commit subject, and every row
-  it offers resolves at launch.
+title: 'Excellent @commit: argument completion in the prompt bar and LSP'
+goal: 'Typing `@commit:` offers the project''s recent revisions across every one of
+  its repos — in the ACE prompt bar and in any LSP editor — ranked by relevance then
+  recency, rendered as a short SHA plus the commit subject, and every row it offers
+  resolves at launch.
 
-  "
+  '
 phases:
-  - id: core_menu
-    title: Scoped payload rows and stable payload ranking
-    depends_on: []
-    size: medium
-    description: "core_menu: add `scope`, `rank`, and `body` to the at-reference payload row wire, match a qualified
-      `scope@title` target so a repo fragment and subject words combine in one query, and make provider rank the
-      tiebreak after tier and score so recency survives a typed query.
+- id: core_menu
+  title: Scoped payload rows and stable payload ranking
+  depends_on: []
+  size: medium
+  description: 'core_menu: add `scope`, `rank`, and `body` to the at-reference payload
+    row wire, match a qualified `scope@title` target so a repo fragment and subject
+    words combine in one query, and make provider rank the tiebreak after tier and
+    score so recency survives a typed query.
 
-      "
-  - id: core_commits
-    title: Local commit enumeration in the shared payload inventory
-    depends_on:
-      - core_menu
-    size: medium
-    description: "core_commits: enumerate each repository checkout's recent revisions with a bounded, timed `git log`,
-      emit rows keyed by a 12-char-floored abbreviated SHA merged across repos in recency order, and drop the `commit`
-      early-out that made the kind unenumerable.
+    '
+- id: core_commits
+  title: Local commit enumeration in the shared payload inventory
+  depends_on:
+  - core_menu
+  size: medium
+  description: 'core_commits: enumerate each repository checkout''s recent revisions
+    with a bounded, timed `git log`, emit rows keyed by a 12-char-floored abbreviated
+    SHA merged across repos in recency order, and drop the `commit` early-out that
+    made the kind unenumerable.
 
-      "
-  - id: core_bridge
-    title: Python binding for the payload inventory
-    depends_on:
-      - core_commits
-    size: small
-    description: "core_bridge: expose `artifact_ref_payload_inventory(kind, context)` through `sase_core_rs`, release
-      the sase-core version that carries it, and widen the `sase-core-rs` dependency window so the host can consume it.
+    '
+- id: core_bridge
+  title: Python binding for the payload inventory
+  depends_on:
+  - core_commits
+  size: small
+  description: 'core_bridge: expose `artifact_ref_payload_inventory(kind, context)`
+    through `sase_core_rs`, release the sase-core version that carries it, and widen
+    the `sase-core-rs` dependency window so the host can consume it.
 
-      "
-  - id: lsp_items
-    title: Commit-aware LSP completion items
-    depends_on:
-      - core_commits
-    size: small
-    description: 'lsp_items: describe payload items by their artifact kind instead of always "file", mark
-      identifier-backed kinds as references, and render the commit body into item documentation.
+    '
+- id: lsp_items
+  title: Commit-aware LSP completion items
+  depends_on:
+  - core_commits
+  size: small
+  description: 'lsp_items: describe payload items by their artifact kind instead of
+    always "file", mark identifier-backed kinds as references, and render the commit
+    body into item documentation.
 
-      '
-  - id: tui_commits
-    title: Pane-independent commit snapshots in the prompt bar
-    depends_on:
-      - core_bridge
-    size: medium
-    description: "tui_commits: replace the mounted-Commits-pane projection with a TTL-revalidated background snapshot
-      from the shared inventory, show a loading row while the first snapshot lands, and render commit rows with a dimmed
-      repo segment and no duplicated detail.
+    '
+- id: tui_commits
+  title: Pane-independent commit snapshots in the prompt bar
+  depends_on:
+  - core_bridge
+  size: medium
+  description: 'tui_commits: replace the mounted-Commits-pane projection with a TTL-revalidated
+    background snapshot from the shared inventory, show a loading row while the first
+    snapshot lands, and render commit rows with a dimmed repo segment and no duplicated
+    detail.
 
-      "
-  - id: docs_verify
-    title: Documentation and end-to-end verification
-    depends_on:
-      - lsp_items
-      - tui_commits
-    size: small
-    description:
-      "docs_verify: correct the editor and getting-started documentation that still says commit references are not
-      enumerated, and verify the completion-resolution invariant end to end in both surfaces."
+    '
+- id: docs_verify
+  title: Documentation and end-to-end verification
+  depends_on:
+  - lsp_items
+  - tui_commits
+  size: small
+  description: 'docs_verify: correct the editor and getting-started documentation
+    that still says commit references are not enumerated, and verify the completion-resolution
+    invariant end to end in both surfaces.'
 proposed_by: bbugyi200.athena.ry
 create_time: 2026-08-02 10:03:46
 status: wip
+bead_id: sase-e8
 ---
 
-- **PROMPT:**
-  [prompts/202608/commit_ref_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/commit_ref_completion.md)
+- **PROMPT:** [prompts/202608/commit_ref_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/commit_ref_completion.md)
+- **BEAD:** [sase-e8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e8/README.md)
 
 # Plan: Excellent `@commit:` Argument Completion
 
