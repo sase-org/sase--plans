@@ -1,76 +1,83 @@
 ---
 tier: epic
 title: Store both prompt renderings and linkify xprompt references
-goal: "Every SASE agent chat markdown file and every published prompt archive entry stores both the unrendered XPrompt
-  prompt and the rendered agent prompt, and every resolvable xprompt reference inside an unrendered prompt renders as a
-  Markdown hyperlink to the hosted file that defines it, including chezmoi-managed definitions when `use_chezmoi: true`.
+goal: 'Every SASE agent chat markdown file and every published prompt archive entry
+  stores both the unrendered XPrompt prompt and the rendered agent prompt, and every
+  resolvable xprompt reference inside an unrendered prompt renders as a Markdown hyperlink
+  to the hosted file that defines it, including chezmoi-managed definitions when `use_chezmoi:
+  true`.
 
-  "
+  '
 phases:
-  - id: core
-    title: Rust xprompt-source wire and reference link rewriting
-    depends_on: []
-    size: medium
-    description: "core: add the `prompt_xprompt` module to sase_core with the launch-capture record wire,
-      newest-per-reference selection, and a boundary-aware reference rewriter that shares the artifact rewriter's
-      literal-zone and Markdown-link protection, plus the sase_core_py bindings and Rust tests.
+- id: core
+  title: Rust xprompt-source wire and reference link rewriting
+  depends_on: []
+  size: medium
+  description: 'core: add the `prompt_xprompt` module to sase_core with the launch-capture
+    record wire, newest-per-reference selection, and a boundary-aware reference rewriter
+    that shares the artifact rewriter''s literal-zone and Markdown-link protection,
+    plus the sase_core_py bindings and Rust tests.
 
-      "
-  - id: capture
-    title: Launch-time capture of xprompt definition provenance
-    depends_on:
-      - core
-    size: medium
-    description: "capture: write the per-run `xprompt_sources.json` artifact recording each surviving reference's exact
-      token and its owning repository, repo-relative path, chezmoi remapping, and definition line, resolved best-effort
-      so a launch never fails because provenance was unavailable.
+    '
+- id: capture
+  title: Launch-time capture of xprompt definition provenance
+  depends_on:
+  - core
+  size: medium
+  description: 'capture: write the per-run `xprompt_sources.json` artifact recording
+    each surviving reference''s exact token and its owning repository, repo-relative
+    path, chezmoi remapping, and definition line, resolved best-effort so a launch
+    never fails because provenance was unavailable.
 
-      "
-  - id: links
-    title: Hosted URL resolution for xprompt definitions
-    depends_on:
-      - core
-      - capture
-    size: small
-    description: "links: add the resolver that turns one captured provenance record into a hosted blob URL with a line
-      anchor, pinning the primary repository at the publication revision and returning nothing rather than guessing.
+    '
+- id: links
+  title: Hosted URL resolution for xprompt definitions
+  depends_on:
+  - core
+  - capture
+  size: small
+  description: 'links: add the resolver that turns one captured provenance record
+    into a hosted blob URL with a line anchor, pinning the primary repository at the
+    publication revision and returning nothing rather than guessing.
 
-      "
-  - id: chat
-    title: Chat markdown stores both prompt renderings
-    depends_on:
-      - links
-    size: medium
-    description: "chat: extend the chat writer with sentinel-delimited XPrompt and rendered-prompt sections, harden turn
-      parsing against them, update every `save_chat_history` caller to supply both renderings, and linkify references in
-      the stored XPrompt section.
+    '
+- id: chat
+  title: Chat markdown stores both prompt renderings
+  depends_on:
+  - links
+  size: medium
+  description: 'chat: extend the chat writer with sentinel-delimited XPrompt and rendered-prompt
+    sections, harden turn parsing against them, update every `save_chat_history` caller
+    to supply both renderings, and linkify references in the stored XPrompt section.
 
-      "
-  - id: archive
-    title: Prompt archive stores both prompt renderings
-    depends_on:
-      - links
-    size: medium
-    description: "archive: linkify xprompt references in the published prompt body, append the rendered prompt as a
-      collapsed verbatim section, and extend prompt archive validation and the sidecar README template to cover both.
+    '
+- id: archive
+  title: Prompt archive stores both prompt renderings
+  depends_on:
+  - links
+  size: medium
+  description: 'archive: linkify xprompt references in the published prompt body,
+    append the rendered prompt as a collapsed verbatim section, and extend prompt
+    archive validation and the sidecar README template to cover both.
 
-      "
-  - id: surfaces
-    title: Read surfaces, docs, and end-to-end verification
-    depends_on:
-      - chat
-      - archive
-    size: small
-    description:
-      "surfaces: teach the ACE chat detail view and the `sase agent prompts show` / `sase chat show` commands about the
-      two renderings, update the documentation, and verify the whole path end to end."
+    '
+- id: surfaces
+  title: Read surfaces, docs, and end-to-end verification
+  depends_on:
+  - chat
+  - archive
+  size: small
+  description: 'surfaces: teach the ACE chat detail view and the `sase agent prompts
+    show` / `sase chat show` commands about the two renderings, update the documentation,
+    and verify the whole path end to end.'
 proposed_by: bbugyi200.athena.rs
 create_time: 2026-08-02 09:22:19
 status: wip
+bead_id: sase-e6
 ---
 
-- **PROMPT:**
-  [prompts/202608/stored_prompt_duality.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stored_prompt_duality.md)
+- **PROMPT:** [prompts/202608/stored_prompt_duality.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stored_prompt_duality.md)
+- **BEAD:** [sase-e6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-e6/README.md)
 
 # Plan: Store both prompt renderings and linkify xprompt references
 
