@@ -1,60 +1,60 @@
 ---
 tier: epic
 title: Revert the historical bead re-prefix epic and hand-fix bob-cli
-goal:
-  Every code, data, and tracking artifact produced by the sase-ei epic is removed from the sase and sase-core
-  repositories, and the single project that actually carries a leaked ProjectSpec-key bead prefix, bob-cli, is corrected
-  by a one-off manual rename instead of by shipping a general migration feature.
+goal: Every code, data, and tracking artifact produced by the sase-ei epic is removed
+  from the sase and sase-core repositories, and the single project that actually carries
+  a leaked ProjectSpec-key bead prefix, bob-cli, is corrected by a one-off manual
+  rename instead of by shipping a general migration feature.
 phases:
-  - id: sase-revert
-    title: Revert the sase-repo bead re-prefix surface
-    depends_on: []
-    size: medium
-    description:
-      "sase-revert: revert the three sase-ei commits in the sase repo, keep the unrelated forward mint guard, resolve
-      the three known conflict files, and prove the reverted tree still builds, lints, and passes the bead/agents_sync
-      suites."
-  - id: core-revert
-    title: Remove the Rust alias and re-prefix primitives
-    depends_on:
-      - sase-revert
-    size: large
-    description:
-      "core-revert: delete the sase-core bead re-prefix module, alias config field, and PyO3 migration bindings, restore
-      pre-epic bead ID resolution semantics without regressing the retained single-pass detail read, and cut a patch
-      release."
-  - id: epic-retire
-    title: Retire the sase-ei plans, beads, and store residue
-    depends_on:
-      - sase-revert
-    size: medium
-    description:
-      "epic-retire: remove the epic and phase plan files from the local and sidecar plan stores, drop the id_aliases
-      residue from the sase bead store config, and close sase-ei and its unfinished phases as canceled with an auditable
-      reason."
-  - id: bob-cli-reprefix
-    title: Hand-fix the bob-cli bead and agent identities
-    depends_on:
-      - sase-revert
-    size: large
-    description:
-      "bob-cli-reprefix: rename the thirteen leaked-prefix bob-cli beads and their derived agent identities to a
-      collision-free bob-cli prefix with a one-off throwaway script, rewriting the bead store, plan refs, agent
-      artifacts, registries, chats, and the agents sidecar while leaving published commit history untouched."
-  - id: final-audit
-    title: Audit that the epic left nothing behind
-    depends_on:
-      - core-revert
-      - epic-retire
-      - bob-cli-reprefix
-    size: medium
-    description:
-      "final-audit: run the full sase and sase-core verification gates, confirm no re-prefix code surface or
-      leaked-prefix bead token survives outside immutable git history, and record the outcome on the tracking bead."
+- id: sase-revert
+  title: Revert the sase-repo bead re-prefix surface
+  depends_on: []
+  size: medium
+  description: 'sase-revert: revert the three sase-ei commits in the sase repo, keep
+    the unrelated forward mint guard, resolve the three known conflict files, and
+    prove the reverted tree still builds, lints, and passes the bead/agents_sync suites.'
+- id: core-revert
+  title: Remove the Rust alias and re-prefix primitives
+  depends_on:
+  - sase-revert
+  size: large
+  description: 'core-revert: delete the sase-core bead re-prefix module, alias config
+    field, and PyO3 migration bindings, restore pre-epic bead ID resolution semantics
+    without regressing the retained single-pass detail read, and cut a patch release.'
+- id: epic-retire
+  title: Retire the sase-ei plans, beads, and store residue
+  depends_on:
+  - sase-revert
+  size: medium
+  description: 'epic-retire: remove the epic and phase plan files from the local and
+    sidecar plan stores, drop the id_aliases residue from the sase bead store config,
+    and close sase-ei and its unfinished phases as canceled with an auditable reason.'
+- id: bob-cli-reprefix
+  title: Hand-fix the bob-cli bead and agent identities
+  depends_on:
+  - sase-revert
+  size: large
+  description: 'bob-cli-reprefix: rename the thirteen leaked-prefix bob-cli beads
+    and their derived agent identities to a collision-free bob-cli prefix with a one-off
+    throwaway script, rewriting the bead store, plan refs, agent artifacts, registries,
+    chats, and the agents sidecar while leaving published commit history untouched.'
+- id: final-audit
+  title: Audit that the epic left nothing behind
+  depends_on:
+  - core-revert
+  - epic-retire
+  - bob-cli-reprefix
+  size: medium
+  description: 'final-audit: run the full sase and sase-core verification gates, confirm
+    no re-prefix code surface or leaked-prefix bead token survives outside immutable
+    git history, and record the outcome on the tracking bead.'
 proposed_by: bbugyi200.athena.sy
 create_time: 2026-08-03 10:54:49
 status: wip
+bead_id: sase-ev
 ---
+
+- **BEAD:** [sase-ev](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ev/README.md)
 
 # Plan: Revert the historical bead re-prefix epic and hand-fix bob-cli
 
