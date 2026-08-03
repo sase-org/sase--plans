@@ -7,7 +7,7 @@ goal:
   of `gh_bobs-org__bob-cli-6`, and reports the repair in its output.
 proposed_by: bbugyi200.athena.sf
 create_time: 2026-08-03 04:18:59
-status: wip
+status: done
 ---
 
 - **PROMPT:**
