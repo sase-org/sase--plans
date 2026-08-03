@@ -51,9 +51,10 @@ phases:
 proposed_by: bbugyi200.athena.sy
 create_time: 2026-08-03 10:54:49
 status: wip
+bead_id: sase-ey
 ---
 
-- **BEAD:** [sase-ev](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ev/README.md)
+- **BEAD:** [sase-ey](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ey/README.md)
 
 # Plan: Revert the historical bead re-prefix epic and hand-fix bob-cli
 
