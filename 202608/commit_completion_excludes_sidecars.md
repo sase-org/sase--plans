@@ -40,7 +40,7 @@ phases:
     cannot silently run the unfiltered enumeration.'
 proposed_by: bbugyi200.athena.si
 create_time: 2026-08-03 06:31:58
-status: wip
+status: done
 bead_id: sase-ek
 ---
 
