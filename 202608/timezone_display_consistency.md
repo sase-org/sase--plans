@@ -1,78 +1,83 @@
 ---
 tier: epic
 title: Render every user-facing timestamp in the configured timezone
-goal: "Every timestamp SASE shows a human — TUI panes, CLI tables, generated Markdown pages — is rendered in the
-  configured `timezone`, never in UTC and never in the host system clock, and a repo-wide guard test keeps new
-  UTC/system-clock display sites from landing.
+goal: 'Every timestamp SASE shows a human — TUI panes, CLI tables, generated Markdown
+  pages — is rendered in the configured `timezone`, never in UTC and never in the
+  host system clock, and a repo-wide guard test keeps new UTC/system-clock display
+  sites from landing.
 
-  "
+  '
 phases:
-  - id: helpers
-    title: Shared display helpers in sase.core.time
-    depends_on: []
-    size: small
-    description: "helpers: add `parse_local`/`format_local` to `sase.core.time` so every display site has one way to
-      turn a stored timestamp (aware-UTC ISO, naive ISO, or epoch) into an aware configured-tz value, plus
-      divergence-fixture unit tests.
+- id: helpers
+  title: Shared display helpers in sase.core.time
+  depends_on: []
+  size: small
+  description: 'helpers: add `parse_local`/`format_local` to `sase.core.time` so every
+    display site has one way to turn a stored timestamp (aware-UTC ISO, naive ISO,
+    or epoch) into an aware configured-tz value, plus divergence-fixture unit tests.
 
-      "
-  - id: artifacts
-    title: Artifacts tab and artifact CLI
-    depends_on:
-      - helpers
-    size: medium
-    description: "artifacts: fix the Files/Beads/Plans panes, the artifact-ref completion menu, and `sase artifact list`
-      so artifact and bead timestamps render in the configured timezone instead of raw UTC.
+    '
+- id: artifacts
+  title: Artifacts tab and artifact CLI
+  depends_on:
+  - helpers
+  size: medium
+  description: 'artifacts: fix the Files/Beads/Plans panes, the artifact-ref completion
+    menu, and `sase artifact list` so artifact and bead timestamps render in the configured
+    timezone instead of raw UTC.
 
-      "
-  - id: tui-panels
-    title: ACE modals, tools panel, and file panel
-    depends_on:
-      - helpers
-    size: medium
-    description: "tui-panels: fix the logs, statistics, project-inventory, tasks, saved-group, and roster displays plus
-      the tools and file panel fetch clocks, which currently show UTC or the host system clock.
+    '
+- id: tui-panels
+  title: ACE modals, tools panel, and file panel
+  depends_on:
+  - helpers
+  size: medium
+  description: 'tui-panels: fix the logs, statistics, project-inventory, tasks, saved-group,
+    and roster displays plus the tools and file panel fetch clocks, which currently
+    show UTC or the host system clock.
 
-      "
-  - id: cli-pages
-    title: CLI tables, generated Markdown pages, and telemetry defaults
-    depends_on:
-      - helpers
-    size: medium
-    description: "cli-pages: fix `sase task`, `sase repo log`, `sase memory log`, `sase skills log`, the agents-sync and
-      bead-page Markdown renderers, the memory review TUI, notification-gate debug dumps, and the telemetry render tz
-      defaults.
+    '
+- id: cli-pages
+  title: CLI tables, generated Markdown pages, and telemetry defaults
+  depends_on:
+  - helpers
+  size: medium
+  description: 'cli-pages: fix `sase task`, `sase repo log`, `sase memory log`, `sase
+    skills log`, the agents-sync and bead-page Markdown renderers, the memory review
+    TUI, notification-gate debug dumps, and the telemetry render tz defaults.
 
-      "
-  - id: artifact-dates
-    title: Artifact-file calendar dates in the configured timezone
-    depends_on:
-      - helpers
-    size: medium
-    description: "artifact-dates: mint artifact `created_at` and the retention `now` with the configured-tz offset and
-      make the Rust core bucket calendar dates by that embedded offset, so `date:`/`since:` filtering agrees with the
-      displayed day.
+    '
+- id: artifact-dates
+  title: Artifact-file calendar dates in the configured timezone
+  depends_on:
+  - helpers
+  size: medium
+  description: 'artifact-dates: mint artifact `created_at` and the retention `now`
+    with the configured-tz offset and make the Rust core bucket calendar dates by
+    that embedded offset, so `date:`/`since:` filtering agrees with the displayed
+    day.
 
-      "
-  - id: guard-docs
-    title: Repo-wide guard test and documentation
-    depends_on:
-      - helpers
-      - artifacts
-      - tui-panels
-      - cli-pages
-      - artifact-dates
-    size: small
-    description:
-      "guard-docs: add an allowlisted AST guard that fails on new system-clock and UTC-display patterns under `src/`,
-      document the display convention, and run the full check suite."
+    '
+- id: guard-docs
+  title: Repo-wide guard test and documentation
+  depends_on:
+  - helpers
+  - artifacts
+  - tui-panels
+  - cli-pages
+  - artifact-dates
+  size: small
+  description: 'guard-docs: add an allowlisted AST guard that fails on new system-clock
+    and UTC-display patterns under `src/`, document the display convention, and run
+    the full check suite.'
 proposed_by: bbugyi200.athena.sn
 create_time: 2026-08-03 07:44:41
 status: wip
+bead_id: sase-em
 ---
 
-- **PROMPT:**
-  [prompts/202608/timezone_display_consistency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/timezone_display_consistency.md)
+- **PROMPT:** [prompts/202608/timezone_display_consistency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/timezone_display_consistency.md)
+- **BEAD:** [sase-em](https://github.com/sase-org/sase--beads/blob/main/pages/sase-em/README.md)
 
 # Plan: Render every user-facing timestamp in the configured timezone
 
