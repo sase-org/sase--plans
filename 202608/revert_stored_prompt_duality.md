@@ -77,7 +77,7 @@ phases:
     then delete the tool itself.'
 proposed_by: bbugyi200.athena.sase-ej.land.w2
 create_time: 2026-08-03 14:48:17
-status: wip
+status: done
 bead_id: sase-f2
 ---
 
