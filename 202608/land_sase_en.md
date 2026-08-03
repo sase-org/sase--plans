@@ -7,7 +7,7 @@ goal:
 proposed_by: bbugyi200.athena.sase-en.land
 bead: sase-en
 create_time: 2026-08-03 10:53:44
-status: wip
+status: done
 ---
 
 - **PARENT:** [202608/bead_show_speed.md](https://github.com/sase-org/sase--plans/blob/main/202608/bead_show_speed.md)
