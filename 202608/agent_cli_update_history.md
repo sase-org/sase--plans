@@ -1,53 +1,55 @@
 ---
 tier: epic
 title: Durable agent-CLI update history in the Admin Center Agent CLIs sub-tab
-goal: "Every sase-managed agent-CLI update run is recorded to a durable, bounded journal, and the Agent CLIs sub-tab
-  renders that history beneath the selected CLI's detail panel — per-CLI by default, with a toggle to a run-grouped
-  timeline across all CLIs — without any disk I/O on the keystroke path.
+goal: 'Every sase-managed agent-CLI update run is recorded to a durable, bounded journal,
+  and the Agent CLIs sub-tab renders that history beneath the selected CLI''s detail
+  panel — per-CLI by default, with a toggle to a run-grouped timeline across all CLIs
+  — without any disk I/O on the keystroke path.
 
-  "
+  '
 phases:
-  - id: journal
-    title: Durable agent-CLI update run journal
-    depends_on: []
-    size: medium
-    description:
-      "journal: add the bounded JSONL run journal under ~/.sase/logs, define the run/entry records and the UpdateTrigger
-      enum, record every run from the single execute_agent_cli_updates choke point with a best-effort writer that can
-      never fail an update, and thread the trigger through the three call sites."
-  - id: plumbing
-    title: Pane load path, config, and session state
-    depends_on:
-      - journal
-    size: small
-    description:
-      "plumbing: read a bounded tail of the journal inside the existing off-thread Updates load worker, carry it on
-      PluginsLoadResult into pane state, add the two ace.updates config keys and the session-scoped history-scope flag,
-      and mount the history Static with its TCSS so the render phase has a surface to paint into."
-  - id: render
-    title: History panel rendering and scope toggle
-    depends_on:
-      - plumbing
-    size: medium
-    description:
-      "render: build the per-CLI and all-CLIs history renderables with their glyph/color palette, relative timestamps
-      derived from the load clock, trigger badges, truncation footer, and empty/error states, and wire the H scope
-      toggle with its check_action gating and repaint path."
-  - id: polish
-    title: Help, docs, and visual goldens
-    depends_on:
-      - render
-    size: small
-    description:
-      "polish: document the panel and journal in the help modal, the ACE guide, the agent-providers guide, and the
-      configuration reference, record the three new PNG goldens, and land a green just check."
+- id: journal
+  title: Durable agent-CLI update run journal
+  depends_on: []
+  size: medium
+  description: 'journal: add the bounded JSONL run journal under ~/.sase/logs, define
+    the run/entry records and the UpdateTrigger enum, record every run from the single
+    execute_agent_cli_updates choke point with a best-effort writer that can never
+    fail an update, and thread the trigger through the three call sites.'
+- id: plumbing
+  title: Pane load path, config, and session state
+  depends_on:
+  - journal
+  size: small
+  description: 'plumbing: read a bounded tail of the journal inside the existing off-thread
+    Updates load worker, carry it on PluginsLoadResult into pane state, add the two
+    ace.updates config keys and the session-scoped history-scope flag, and mount the
+    history Static with its TCSS so the render phase has a surface to paint into.'
+- id: render
+  title: History panel rendering and scope toggle
+  depends_on:
+  - plumbing
+  size: medium
+  description: 'render: build the per-CLI and all-CLIs history renderables with their
+    glyph/color palette, relative timestamps derived from the load clock, trigger
+    badges, truncation footer, and empty/error states, and wire the H scope toggle
+    with its check_action gating and repaint path.'
+- id: polish
+  title: Help, docs, and visual goldens
+  depends_on:
+  - render
+  size: small
+  description: 'polish: document the panel and journal in the help modal, the ACE
+    guide, the agent-providers guide, and the configuration reference, record the
+    three new PNG goldens, and land a green just check.'
 proposed_by: bbugyi200.athena.sk
 create_time: 2026-08-03 06:52:56
 status: wip
+bead_id: sase-el
 ---
 
-- **PROMPT:**
-  [prompts/202608/agent_cli_update_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_cli_update_history.md)
+- **PROMPT:** [prompts/202608/agent_cli_update_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_cli_update_history.md)
+- **BEAD:** [sase-el](https://github.com/sase-org/sase--beads/blob/main/pages/sase-el/README.md)
 
 # Plan: Agent-CLI update history
 
