@@ -51,7 +51,6 @@ phases:
 proposed_by: bbugyi200.athena.sy
 create_time: 2026-08-03 10:54:49
 status: wip
-bead_id: sase-ev
 ---
 
 - **BEAD:** [sase-ev](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ev/README.md)
