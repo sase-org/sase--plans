@@ -1,80 +1,88 @@
 ---
 tier: epic
 title: Revert stored prompt duality and xprompt linkification
-goal: "Chat markdown and published prompt archive entries store exactly what they stored before sase-e6 — one `##
-  Prompt` section in a chat, one verbatim body in an archive entry — every already-written file in the sase-e6 format is
-  rewritten to the pre-sase-e6 format, and no code anywhere in sase or sase-core knows the sase-e6 format exists.
+goal: 'Chat markdown and published prompt archive entries store exactly what they
+  stored before sase-e6 — one `## Prompt` section in a chat, one verbatim body in
+  an archive entry — every already-written file in the sase-e6 format is rewritten
+  to the pre-sase-e6 format, and no code anywhere in sase or sase-core knows the sase-e6
+  format exists.
 
-  "
+  '
 phases:
-  - id: chat
-    title: Chat markdown returns to a single Prompt section
-    depends_on: []
-    size: medium
-    description: "chat: strip the sentinel-delimited XPrompt and rendered-prompt sections out of the chat writer, drop
-      the two keyword arguments from every `save_chat_history` caller, remove the parser's strip pass, and delete the
-      `chat_history.rendered_prompt_max_bytes` config field.
+- id: chat
+  title: Chat markdown returns to a single Prompt section
+  depends_on: []
+  size: medium
+  description: 'chat: strip the sentinel-delimited XPrompt and rendered-prompt sections
+    out of the chat writer, drop the two keyword arguments from every `save_chat_history`
+    caller, remove the parser''s strip pass, and delete the `chat_history.rendered_prompt_max_bytes`
+    config field.
 
-      "
-  - id: archive
-    title: Prompt archive publishes only the verbatim body
-    depends_on: []
-    size: medium
-    description: "archive: remove the appended rendered-prompt section and the xprompt link rewrite from prompt archive
-      rendering and preparation, drop the sentinel/fence/link-target checks and the legacy counter from validation, and
-      restore the sidecar agents README template.
+    '
+- id: archive
+  title: Prompt archive publishes only the verbatim body
+  depends_on: []
+  size: medium
+  description: 'archive: remove the appended rendered-prompt section and the xprompt
+    link rewrite from prompt archive rendering and preparation, drop the sentinel/fence/link-target
+    checks and the legacy counter from validation, and restore the sidecar agents
+    README template.
 
-      "
-  - id: surfaces
-    title: Read surfaces and documentation
-    depends_on:
-      - chat
-      - archive
-    size: medium
-    description: "surfaces: revert the ACE Chats detail pane, the `sase chat show` and `sase agent prompts show`
-      rendering selectors, and prompt search's section stripping, then delete `chat_prompt_sections.py` and remove every
-      documentation paragraph describing the two stored renderings.
+    '
+- id: surfaces
+  title: Read surfaces and documentation
+  depends_on:
+  - chat
+  - archive
+  size: medium
+  description: 'surfaces: revert the ACE Chats detail pane, the `sase chat show` and
+    `sase agent prompts show` rendering selectors, and prompt search''s section stripping,
+    then delete `chat_prompt_sections.py` and remove every documentation paragraph
+    describing the two stored renderings.
 
-      "
-  - id: provenance
-    title: Launch-time provenance capture removal
-    depends_on:
-      - chat
-      - archive
-      - surfaces
-    size: small
-    description: "provenance: stop writing `xprompt_sources.json` at launch, reduce the source-collection and hosted-URL
-      modules to exactly the definition-resolution surface `sase xprompt show` calls, and delete the record loading and
-      link rewriting helpers that only the reverted stores used.
+    '
+- id: provenance
+  title: Launch-time provenance capture removal
+  depends_on:
+  - chat
+  - archive
+  - surfaces
+  size: small
+  description: 'provenance: stop writing `xprompt_sources.json` at launch, reduce
+    the source-collection and hosted-URL modules to exactly the definition-resolution
+    surface `sase xprompt show` calls, and delete the record loading and link rewriting
+    helpers that only the reverted stores used.
 
-      "
-  - id: core
-    title: Rust prompt_xprompt module removal
-    depends_on:
-      - surfaces
-      - provenance
-    size: small
-    description: "core: delete the `prompt_xprompt` module and its three PyO3 bindings from the sibling Rust core
-      repository while keeping the shared `prompt_rewrite` helper the artifact rewriter still uses.
+    '
+- id: core
+  title: Rust prompt_xprompt module removal
+  depends_on:
+  - surfaces
+  - provenance
+  size: small
+  description: 'core: delete the `prompt_xprompt` module and its three PyO3 bindings
+    from the sibling Rust core repository while keeping the shared `prompt_rewrite`
+    helper the artifact rewriter still uses.
 
-      "
-  - id: migrate
-    title: One-shot rewrite of stored files
-    depends_on:
-      - chat
-      - archive
-    size: medium
-    description:
-      "migrate: rewrite every already-stored chat transcript and archived prompt entry back to the pre-sase-e6 format
-      with a throwaway tool, commit and push the affected agents sidecars, delete the orphaned provenance artifacts, and
-      then delete the tool itself."
+    '
+- id: migrate
+  title: One-shot rewrite of stored files
+  depends_on:
+  - chat
+  - archive
+  size: medium
+  description: 'migrate: rewrite every already-stored chat transcript and archived
+    prompt entry back to the pre-sase-e6 format with a throwaway tool, commit and
+    push the affected agents sidecars, delete the orphaned provenance artifacts, and
+    then delete the tool itself.'
 proposed_by: bbugyi200.athena.sase-ej.land.w2
 create_time: 2026-08-03 14:48:17
 status: wip
+bead_id: sase-f2
 ---
 
-- **PROMPT:**
-  [prompts/202608/revert_stored_prompt_duality.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/revert_stored_prompt_duality.md)
+- **PROMPT:** [prompts/202608/revert_stored_prompt_duality.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/revert_stored_prompt_duality.md)
+- **BEAD:** [sase-f2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-f2/README.md)
 
 # Plan: Revert stored prompt duality and xprompt linkification
 
