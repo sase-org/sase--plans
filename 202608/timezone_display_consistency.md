@@ -72,7 +72,7 @@ phases:
     the full check suite.'
 proposed_by: bbugyi200.athena.sn
 create_time: 2026-08-03 07:44:41
-status: wip
+status: done
 bead_id: sase-em
 ---
 
