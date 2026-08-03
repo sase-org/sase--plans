@@ -6,7 +6,7 @@ goal:
   its plan finalized.
 proposed_by: bbugyi200.athena.sase-ek.land
 create_time: 2026-08-03 08:33:17
-status: wip
+status: done
 ---
 
 # Finish and land epic `sase-ek`
