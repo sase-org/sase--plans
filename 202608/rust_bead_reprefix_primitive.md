@@ -16,6 +16,11 @@ status: done
 - **PARENT:**
   [202608/historical_bead_reprefix.md](https://github.com/sase-org/sase--plans/blob/main/202608/historical_bead_reprefix.md)
 - **BEAD:** [sase-ei.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ei/sase-ei.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ei.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ei.1.md)
+- **COMMITS:**
+  - [0343b6f](https://github.com/sase-org/sase-core/commit/0343b6f20a8210a631641d8764d8747037c24641) — feat(beads): add
+    prefix migration primitives
 
 # Plan: Build the Rust bead identity, alias, and store re-prefix primitive
 
