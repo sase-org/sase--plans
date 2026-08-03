@@ -1,55 +1,60 @@
 ---
 tier: epic
 title: Make `sase bead show` much faster
-goal: "`sase bead show` returns in well under a second instead of ~1.8 s (and ~3.2 s for beads that carry refs), with
-  byte-identical output at every format, style, and wrap setting, by removing a 418-call subprocess storm, the full-CLI
-  parser import, and two redundant full bead-store reductions.
+goal: '`sase bead show` returns in well under a second instead of ~1.8 s (and ~3.2
+  s for beads that carry refs), with byte-identical output at every format, style,
+  and wrap setting, by removing a 418-call subprocess storm, the full-CLI parser import,
+  and two redundant full bead-store reductions.
 
-  "
+  '
 phases:
-  - id: inventory
-    title: Stop re-probing git remotes and re-merging config in repo inventory
-    depends_on: []
-    size: medium
-    description: "inventory: memoize the per-primary git-origin probe and the sidecar identity/config derivation that
-      collect_repo_inventory recomputes hundreds of times per command, with an explicit reset hook for the long-lived
-      ACE TUI, and guard it with a subprocess-count regression test.
+- id: inventory
+  title: Stop re-probing git remotes and re-merging config in repo inventory
+  depends_on: []
+  size: medium
+  description: 'inventory: memoize the per-primary git-origin probe and the sidecar
+    identity/config derivation that collect_repo_inventory recomputes hundreds of
+    times per command, with an explicit reset hook for the long-lived ACE TUI, and
+    guard it with a subprocess-count regression test.
 
-      "
-  - id: parser
-    title: Build only the invoked command's subparser
-    depends_on: []
-    size: medium
-    description: "parser: give create_parser an opt-in only= hint so a normal sase <cmd> run registers just that
-      command's subparser, drive it from a single shared command registry so the full and narrow paths cannot drift, and
-      stop parser_artifact from importing the heavy artifact facade for one tuple of argparse choices.
+    '
+- id: parser
+  title: Build only the invoked command's subparser
+  depends_on: []
+  size: medium
+  description: 'parser: give create_parser an opt-in only= hint so a normal sase <cmd>
+    run registers just that command''s subparser, drive it from a single shared command
+    registry so the full and narrow paths cannot drift, and stop parser_artifact from
+    importing the heavy artifact facade for one tuple of argparse choices.
 
-      "
-  - id: store
-    title: Resolve bead detail from one bead-store read
-    depends_on: []
-    size: medium
-    description: "store: add a single-pass bead detail read to the Rust core and its binding so sase bead show reduces
-      the event store once instead of three times, and route the Python detail resolver through it.
+    '
+- id: store
+  title: Resolve bead detail from one bead-store read
+  depends_on: []
+  size: medium
+  description: 'store: add a single-pass bead detail read to the Rust core and its
+    binding so sase bead show reduces the event store once instead of three times,
+    and route the Python detail resolver through it.
 
-      "
-  - id: guard
-    title: End-to-end budget guard and documentation
-    depends_on:
-      - inventory
-      - parser
-      - store
-    size: small
-    description:
-      "guard: assert the combined end-to-end cost ceiling and the output-identity invariant across formats, then record
-      the new performance characteristics in the changelog and bead docs."
+    '
+- id: guard
+  title: End-to-end budget guard and documentation
+  depends_on:
+  - inventory
+  - parser
+  - store
+  size: small
+  description: 'guard: assert the combined end-to-end cost ceiling and the output-identity
+    invariant across formats, then record the new performance characteristics in the
+    changelog and bead docs.'
 proposed_by: bbugyi200.athena.sl.f1
 create_time: 2026-08-03 08:39:40
 status: wip
+bead_id: sase-en
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_show_speed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_show_speed.md)
+- **PROMPT:** [prompts/202608/bead_show_speed.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_show_speed.md)
+- **BEAD:** [sase-en](https://github.com/sase-org/sase--beads/blob/main/pages/sase-en/README.md)
 
 # Plan: Make `sase bead show` much faster
 
