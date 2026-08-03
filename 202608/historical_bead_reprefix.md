@@ -1,59 +1,60 @@
 ---
 tier: epic
 title: Safely re-prefix historical bead identities
-goal:
-  Historical beads whose IDs leaked a ProjectSpec key can be migrated to the project's display-name prefix through a
-  dry-run-first, restartable workflow that preserves lineage, rewrites owned references, and keeps old IDs and hosted
-  URLs working as compatibility aliases without changing immutable commit history.
+goal: Historical beads whose IDs leaked a ProjectSpec key can be migrated to the project's
+  display-name prefix through a dry-run-first, restartable workflow that preserves
+  lineage, rewrites owned references, and keeps old IDs and hosted URLs working as
+  compatibility aliases without changing immutable commit history.
 phases:
-  - id: core-reprefix
-    title: Rust bead identity and alias primitive
-    depends_on: []
-    size: large
-    description:
-      "core-reprefix: add the Rust-backed collision-safe full-store bead ID mapping, canonical event/projection rewrite,
-      persistent old-ID aliases, exact token rewriting, PyO3 bindings, and mixed-prefix lineage tests."
-  - id: reference-rewriters
-    title: Plan, ChangeSpec, and compatibility-page rewriters
-    depends_on:
-      - core-reprefix
-    size: medium
-    description:
-      "reference-rewriters: add codec-driven plan and ChangeSpec rewrite planners plus canonical and old-ID
-      compatibility bead pages, with exact-match audit and malformed-input coverage."
-  - id: agent-history
-    title: Historical agent identity and chat migration
-    depends_on:
-      - core-reprefix
-    size: large
-    description:
-      "agent-history: migrate derived bead-named agents, structured run artifacts, chats, registries, and agents-sidecar
-      bundles while preserving old hosted agent links through explicit compatibility aliases."
-  - id: migration-cli
-    title: Migration CLI and multi-store transaction
-    depends_on:
-      - core-reprefix
-      - reference-rewriters
-      - agent-history
-    size: large
-    description:
-      "migration-cli: expose the default-dry-run migrate-prefix command and compose deterministic preflight, locking,
-      receipts, recovery refs, atomic apply, scoped commits, rollback, and resumable publication across every target."
-  - id: integration-docs
-    title: End-to-end verification and documentation
-    depends_on:
-      - migration-cli
-    size: medium
-    description:
-      "integration-docs: prove mixed-prefix migration, aliases, immutable commit history, idempotency, and injected
-      recovery paths in a multi-repository fixture, then document and run the complete Rust/Python validation suite."
+- id: core-reprefix
+  title: Rust bead identity and alias primitive
+  depends_on: []
+  size: large
+  description: 'core-reprefix: add the Rust-backed collision-safe full-store bead
+    ID mapping, canonical event/projection rewrite, persistent old-ID aliases, exact
+    token rewriting, PyO3 bindings, and mixed-prefix lineage tests.'
+- id: reference-rewriters
+  title: Plan, ChangeSpec, and compatibility-page rewriters
+  depends_on:
+  - core-reprefix
+  size: medium
+  description: 'reference-rewriters: add codec-driven plan and ChangeSpec rewrite
+    planners plus canonical and old-ID compatibility bead pages, with exact-match
+    audit and malformed-input coverage.'
+- id: agent-history
+  title: Historical agent identity and chat migration
+  depends_on:
+  - core-reprefix
+  size: large
+  description: 'agent-history: migrate derived bead-named agents, structured run artifacts,
+    chats, registries, and agents-sidecar bundles while preserving old hosted agent
+    links through explicit compatibility aliases.'
+- id: migration-cli
+  title: Migration CLI and multi-store transaction
+  depends_on:
+  - core-reprefix
+  - reference-rewriters
+  - agent-history
+  size: large
+  description: 'migration-cli: expose the default-dry-run migrate-prefix command and
+    compose deterministic preflight, locking, receipts, recovery refs, atomic apply,
+    scoped commits, rollback, and resumable publication across every target.'
+- id: integration-docs
+  title: End-to-end verification and documentation
+  depends_on:
+  - migration-cli
+  size: medium
+  description: 'integration-docs: prove mixed-prefix migration, aliases, immutable
+    commit history, idempotency, and injected recovery paths in a multi-repository
+    fixture, then document and run the complete Rust/Python validation suite.'
 proposed_by: bbugyi200.athena.sase-eh
 create_time: 2026-08-03 04:47:52
 status: wip
+bead_id: sase-ei
 ---
 
-- **PROMPT:**
-  [prompts/202608/historical_bead_reprefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/historical_bead_reprefix.md)
+- **PROMPT:** [prompts/202608/historical_bead_reprefix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/historical_bead_reprefix.md)
+- **BEAD:** [sase-ei](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ei/README.md)
 
 # Plan: Safely re-prefix historical bead identities
 
