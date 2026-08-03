@@ -7,7 +7,7 @@ goal:
   archived prompt in the agents sidecar instead of the plan.
 proposed_by: bbugyi200.athena.sm
 create_time: 2026-08-03 07:31:52
-status: wip
+status: done
 ---
 
 # Plan: Fix clan summary view hints for logical plan references and archived prompts
