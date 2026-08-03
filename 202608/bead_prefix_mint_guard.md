@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/bead_prefix_mint_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_prefix_mint_guard.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sf.md)
+- **COMMITS:**
+  - [77ef395](https://github.com/sase-org/sase/commit/77ef3953e5c67c8be6247c4de1e2e62c474243a3) — fix(beads): repair
+    stale project-key prefixes before minting
 
 # Plan: Repair a leaked ProjectSpec-key issue prefix before minting top-level beads
 
