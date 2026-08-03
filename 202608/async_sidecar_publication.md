@@ -1,75 +1,80 @@
 ---
 tier: epic
 title: Publish agents and beads sidecars asynchronously from an axe chop
-goal: "`sase commit` never blocks on agents/beads sidecar publication. It records durable publication requests and
-  returns, while a dedicated axe lumberjack drains those requests, and `just check` stays green while requests are still
-  pending.
+goal: '`sase commit` never blocks on agents/beads sidecar publication. It records
+  durable publication requests and returns, while a dedicated axe lumberjack drains
+  those requests, and `just check` stays green while requests are still pending.
 
-  "
+  '
 phases:
-  - id: scanfix
-    title: Bound the agent-name registry source scan
-    depends_on: []
-    size: medium
-    description: "scanfix: eliminate the per-lookup rescan of ~17k dismissed bundles and every agent artifact directory
-      that makes plan-association resolution CPU-bound, which is the concrete stall reported by sase-cl.
+- id: scanfix
+  title: Bound the agent-name registry source scan
+  depends_on: []
+  size: medium
+  description: 'scanfix: eliminate the per-lookup rescan of ~17k dismissed bundles
+    and every agent artifact directory that makes plan-association resolution CPU-bound,
+    which is the concrete stall reported by sase-cl.
 
-      "
-  - id: queue
-    title: Durable sidecar publication queue
-    depends_on: []
-    size: medium
-    description: "queue: generalize the agents publication outbox into a workspace-independent, per-project queue that
-      also records pending bead-page and plan-header publication work, with enqueue, drain, quarantine, and retire
-      semantics.
+    '
+- id: queue
+  title: Durable sidecar publication queue
+  depends_on: []
+  size: medium
+  description: 'queue: generalize the agents publication outbox into a workspace-independent,
+    per-project queue that also records pending bead-page and plan-header publication
+    work, with enqueue, drain, quarantine, and retire semantics.
 
-      "
-  - id: chop
-    title: publications lumberjack and sidecar_publication chop
-    depends_on:
-      - queue
-    size: medium
-    description: "chop: add the new axe lumberjack plus the builtin chop that drains the queue for every project, in
-      agents -> beads -> plan-header order, under bounded per-project locks, work budgets, and exponential backoff.
+    '
+- id: chop
+  title: publications lumberjack and sidecar_publication chop
+  depends_on:
+  - queue
+  size: medium
+  description: 'chop: add the new axe lumberjack plus the builtin chop that drains
+    the queue for every project, in agents -> beads -> plan-header order, under bounded
+    per-project locks, work budgets, and exponential backoff.
 
-      "
-  - id: commit
-    title: Rewire commit and other writers to mark instead of publish
-    depends_on:
-      - queue
-      - chop
-    size: medium
-    description: "commit: convert `sase commit` and every remaining synchronous agents/beads sidecar writer into
-      enqueue-only callers so no interactive command performs sidecar git work.
+    '
+- id: commit
+  title: Rewire commit and other writers to mark instead of publish
+  depends_on:
+  - queue
+  - chop
+  size: medium
+  description: 'commit: convert `sase commit` and every remaining synchronous agents/beads
+    sidecar writer into enqueue-only callers so no interactive command performs sidecar
+    git work.
 
-      "
-  - id: validate
-    title: Keep validation green while publication is pending
-    depends_on:
-      - commit
-    size: small
-    description: "validate: remove the dead prompt-to-plan link validation and make every remaining prompt-archive and
-      plan check tolerant of a non-empty publication queue so `just check` never depends on sidecar publication.
+    '
+- id: validate
+  title: Keep validation green while publication is pending
+  depends_on:
+  - commit
+  size: small
+  description: 'validate: remove the dead prompt-to-plan link validation and make
+    every remaining prompt-archive and plan check tolerant of a non-empty publication
+    queue so `just check` never depends on sidecar publication.
 
-      "
-  - id: land
-    title: Observability, docs, and sase-cl closure
-    depends_on:
-      - scanfix
-      - chop
-      - commit
-      - validate
-    size: small
-    description:
-      "land: surface queue health in doctor and ACE, refresh the axe and configuration documentation, verify the stall
-      is gone end to end, and close the sase-cl bead with that evidence."
+    '
+- id: land
+  title: Observability, docs, and sase-cl closure
+  depends_on:
+  - scanfix
+  - chop
+  - commit
+  - validate
+  size: small
+  description: 'land: surface queue health in doctor and ACE, refresh the axe and
+    configuration documentation, verify the stall is gone end to end, and close the
+    sase-cl bead with that evidence.'
 proposed_by: bbugyi200.athena.sh
 create_time: 2026-08-03 06:18:50
 status: wip
+bead_id: sase-ej
 ---
 
-- **PROMPT:**
-  [prompts/202608/async_sidecar_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/async_sidecar_publication.md)
+- **PROMPT:** [prompts/202608/async_sidecar_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/async_sidecar_publication.md)
+- **BEAD:** [sase-ej](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ej/README.md)
 
 # Plan: Publish agents and beads sidecars asynchronously from an axe chop
 
