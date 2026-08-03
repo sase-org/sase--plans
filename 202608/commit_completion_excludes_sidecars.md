@@ -1,47 +1,51 @@
 ---
 tier: epic
-title: "`@commit:` completion stops offering SDD sidecar commits"
-goal: "`@commit:` completion — in the ACE prompt bar and in every LSP editor — offers only commits from repositories a
-  human writes code in. SDD sidecar repositories (`plans`, `beads`, `agents`, `research`) contribute no completion rows,
-  while a `@commit:<sidecar>@<sha>` reference typed in full still resolves at launch exactly as it does today.
+title: '`@commit:` completion stops offering SDD sidecar commits'
+goal: '`@commit:` completion — in the ACE prompt bar and in every LSP editor — offers
+  only commits from repositories a human writes code in. SDD sidecar repositories
+  (`plans`, `beads`, `agents`, `research`) contribute no completion rows, while a
+  `@commit:<sidecar>@<sha>` reference typed in full still resolves at launch exactly
+  as it does today.
 
-  "
+  '
 phases:
-  - id: core_kind_filter
-    title: Repository kind on the wire, sidecars skipped in commit enumeration
-    depends_on: []
-    size: small
-    description: 'core_kind_filter: add a defaulted `kind` field to `ArtifactRefRepositoryWire` and skip `kind ==
-      "sidecar"` repositories in `append_commit_candidates` before spawning `git log`, leaving `resolve_commit` and
-      every other kind untouched.
+- id: core_kind_filter
+  title: Repository kind on the wire, sidecars skipped in commit enumeration
+  depends_on: []
+  size: small
+  description: 'core_kind_filter: add a defaulted `kind` field to `ArtifactRefRepositoryWire`
+    and skip `kind == "sidecar"` repositories in `append_commit_candidates` before
+    spawning `git log`, leaving `resolve_commit` and every other kind untouched.
 
-      '
-  - id: host_repo_kind
-    title: The host labels each repository and proves both surfaces agree
-    depends_on:
-      - core_kind_filter
-    size: small
-    description: "host_repo_kind: carry `RepoRecord.kind` into `ArtifactRefRepository` and its wire form in
-      `artifact_ref_context()`, extend the prompt-bar/LSP parity test with a sidecar repository, assert sidecar
-      resolution still succeeds, and correct the two documentation sentences that promise commits from every local
-      checkout.
+    '
+- id: host_repo_kind
+  title: The host labels each repository and proves both surfaces agree
+  depends_on:
+  - core_kind_filter
+  size: small
+  description: 'host_repo_kind: carry `RepoRecord.kind` into `ArtifactRefRepository`
+    and its wire form in `artifact_ref_context()`, extend the prompt-bar/LSP parity
+    test with a sidecar repository, assert sidecar resolution still succeeds, and
+    correct the two documentation sentences that promise commits from every local
+    checkout.
 
-      "
-  - id: core_floor
-    title: Raise the published sase-core-rs floor
-    depends_on:
-      - host_repo_kind
-    size: small
-    description:
-      "core_floor: once the release carrying `core_kind_filter` is published, raise the `sase-core-rs` lower bound in
-      `pyproject.toml` so an installed sase cannot silently run the unfiltered enumeration."
+    '
+- id: core_floor
+  title: Raise the published sase-core-rs floor
+  depends_on:
+  - host_repo_kind
+  size: small
+  description: 'core_floor: once the release carrying `core_kind_filter` is published,
+    raise the `sase-core-rs` lower bound in `pyproject.toml` so an installed sase
+    cannot silently run the unfiltered enumeration.'
 proposed_by: bbugyi200.athena.si
 create_time: 2026-08-03 06:31:58
 status: wip
+bead_id: sase-ek
 ---
 
-- **PROMPT:**
-  [prompts/202608/commit_completion_excludes_sidecars.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/commit_completion_excludes_sidecars.md)
+- **PROMPT:** [prompts/202608/commit_completion_excludes_sidecars.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/commit_completion_excludes_sidecars.md)
+- **BEAD:** [sase-ek](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ek/README.md)
 
 # Plan: `@commit:` Completion Excludes SDD Sidecar Commits
 
