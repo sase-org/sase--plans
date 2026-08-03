@@ -45,7 +45,7 @@ phases:
     hardened loader''s negative paths, then restore and report.'
 proposed_by: bbugyi200.athena.sw.f1
 create_time: 2026-08-03 14:46:44
-status: wip
+status: done
 bead_id: sase-f1
 ---
 
