@@ -44,7 +44,7 @@ phases:
     three new PNG goldens, and land a green just check.'
 proposed_by: bbugyi200.athena.sk
 create_time: 2026-08-03 06:52:56
-status: wip
+status: done
 bead_id: sase-el
 ---
 
