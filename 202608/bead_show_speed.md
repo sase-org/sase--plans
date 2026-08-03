@@ -49,7 +49,7 @@ phases:
     changelog and bead docs.'
 proposed_by: bbugyi200.athena.sl.f1
 create_time: 2026-08-03 08:39:40
-status: wip
+status: done
 bead_id: sase-en
 ---
 
