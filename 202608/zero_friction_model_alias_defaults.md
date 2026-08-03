@@ -1,54 +1,56 @@
 ---
 tier: epic
 title: Zero-friction model alias default edits
-goal: "Editing any value in src/sase/llm_provider/model_alias_defaults.yml requires no other change anywhere in the
-  repo, and the full just check passes without the editor having to run it.
+goal: 'Editing any value in src/sase/llm_provider/model_alias_defaults.yml requires
+  no other change anywhere in the repo, and the full just check passes without the
+  editor having to run it.
 
-  "
+  '
 phases:
-  - id: seam
-    title: Frozen test defaults, re-pinned tests, hardened loader
-    depends_on: []
-    size: medium
-    description:
-      "seam: split the defaults parser from the cached resource loader, add fallback-reference, selector-grammar, and
-      fallback-cycle validation to the parser, add a test-owned frozen defaults map installed by an autouse conftest
-      fixture, re-pin the 39 measured value-coupled assertions to named frozen constants, and rewrite the shipped-file
-      test module as a value-agnostic contract suite with a shape-parity guard."
-  - id: docs
-    title: One generated table, zero literal values in prose
-    depends_on: []
-    size: medium
-    description:
-      "docs: add a tools/ generator that rewrites a marked block in docs/llms.md from the shipped defaults, wire it into
-      just fmt only, strip literal shipped values from prose across the six docs that restate them, and delete the
-      docs-sync test without replacing it."
-  - id: guidance
-    title: De-hardcode product strings
-    depends_on: []
-    size: small
-    description:
-      "guidance: interpolate the live medium_phase_worker default into the doctor message instead of hardcoding it, make
-      the sase.schema.json and default_config.yml claims about shipped values value-free, and assert the doctor message
-      value-agnostically."
-  - id: verify
-    title: Prove the acceptance criterion end to end
-    depends_on:
-      - seam
-      - docs
-      - guidance
-    size: small
-    description:
-      "verify: perturb every target and description in the shipped defaults YAML, prove the full check and visual suite
-      pass with zero edits outside that file, confirm just fmt heals the generated docs block idempotently, exercise the
-      hardened loader's negative paths, then restore and report."
+- id: seam
+  title: Frozen test defaults, re-pinned tests, hardened loader
+  depends_on: []
+  size: medium
+  description: 'seam: split the defaults parser from the cached resource loader, add
+    fallback-reference, selector-grammar, and fallback-cycle validation to the parser,
+    add a test-owned frozen defaults map installed by an autouse conftest fixture,
+    re-pin the 39 measured value-coupled assertions to named frozen constants, and
+    rewrite the shipped-file test module as a value-agnostic contract suite with a
+    shape-parity guard.'
+- id: docs
+  title: One generated table, zero literal values in prose
+  depends_on: []
+  size: medium
+  description: 'docs: add a tools/ generator that rewrites a marked block in docs/llms.md
+    from the shipped defaults, wire it into just fmt only, strip literal shipped values
+    from prose across the six docs that restate them, and delete the docs-sync test
+    without replacing it.'
+- id: guidance
+  title: De-hardcode product strings
+  depends_on: []
+  size: small
+  description: 'guidance: interpolate the live medium_phase_worker default into the
+    doctor message instead of hardcoding it, make the sase.schema.json and default_config.yml
+    claims about shipped values value-free, and assert the doctor message value-agnostically.'
+- id: verify
+  title: Prove the acceptance criterion end to end
+  depends_on:
+  - seam
+  - docs
+  - guidance
+  size: small
+  description: 'verify: perturb every target and description in the shipped defaults
+    YAML, prove the full check and visual suite pass with zero edits outside that
+    file, confirm just fmt heals the generated docs block idempotently, exercise the
+    hardened loader''s negative paths, then restore and report.'
 proposed_by: bbugyi200.athena.sw.f1
 create_time: 2026-08-03 14:46:44
 status: wip
+bead_id: sase-f1
 ---
 
-- **PROMPT:**
-  [prompts/202608/zero_friction_model_alias_defaults.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/zero_friction_model_alias_defaults.md)
+- **PROMPT:** [prompts/202608/zero_friction_model_alias_defaults.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/zero_friction_model_alias_defaults.md)
+- **BEAD:** [sase-f1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-f1/README.md)
 
 # Epic: Make `model_alias_defaults.yml` a zero-friction edit point
 
