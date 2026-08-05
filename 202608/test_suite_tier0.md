@@ -7,7 +7,7 @@ goal:
   worker RSS — with every relocated test still covered by a CI job.
 proposed_by: bbugyi200.athena.tm
 create_time: 2026-08-05 19:11:25
-status: wip
+status: done
 ---
 
 - **PROMPT:**
