@@ -1,43 +1,44 @@
 ---
 tier: epic
 title: Stop silently losing agent bead closes written in ephemeral workspaces
-goal:
-  A `sase bead close` run by an agent inside a numbered workspace either reaches the canonical bead store or fails
-  loudly. The CLI never prints `✓ Closed` for a mutation that exists only in a workspace-local sidecar clone, workspace
-  eviction can never destroy unpublished canonical bead commits, and the post-completion finalizer verifies published
-  state instead of the local projection.
+goal: A `sase bead close` run by an agent inside a numbered workspace either reaches
+  the canonical bead store or fails loudly. The CLI never prints `✓ Closed` for a
+  mutation that exists only in a workspace-local sidecar clone, workspace eviction
+  can never destroy unpublished canonical bead commits, and the post-completion finalizer
+  verifies published state instead of the local projection.
 phases:
-  - id: publish
-    title: Make every bead-store mutation publication-verified before the CLI reports success
-    depends_on: []
-    size: medium
-    description:
-      "publish: after a bead mutation commits, verify the commit actually reached the canonical remote; force a
-      synchronous publish when it did not, and fail the command loudly when it still cannot publish, instead of
-      returning 0 on a workspace-local-only write."
-  - id: evict
-    title: Refuse to evict a workspace sidecar clone that holds unpublished bead commits
-    depends_on: []
-    size: medium
-    description:
-      "evict: teach the launch-time workspace bead safety net about the sidecar-repos layout and wire it into the
-      eviction path so `clear_workspace_repos` can never trash a `sase--beads` clone with unpushed canonical bead
-      commits."
-  - id: finalize
-    title: Verify published bead state in the post-completion finalizer
-    depends_on:
-      - publish
-    size: small
-    description:
-      "finalize: make the finalizer's bead safety net publish and verify rather than only commit, and stop instructing
-      agents to confirm a close with a command that reads the local projection."
+- id: publish
+  title: Make every bead-store mutation publication-verified before the CLI reports
+    success
+  depends_on: []
+  size: medium
+  description: 'publish: after a bead mutation commits, verify the commit actually
+    reached the canonical remote; force a synchronous publish when it did not, and
+    fail the command loudly when it still cannot publish, instead of returning 0 on
+    a workspace-local-only write.'
+- id: evict
+  title: Refuse to evict a workspace sidecar clone that holds unpublished bead commits
+  depends_on: []
+  size: medium
+  description: 'evict: teach the launch-time workspace bead safety net about the sidecar-repos
+    layout and wire it into the eviction path so `clear_workspace_repos` can never
+    trash a `sase--beads` clone with unpushed canonical bead commits.'
+- id: finalize
+  title: Verify published bead state in the post-completion finalizer
+  depends_on:
+  - publish
+  size: small
+  description: 'finalize: make the finalizer''s bead safety net publish and verify
+    rather than only commit, and stop instructing agents to confirm a close with a
+    command that reads the local projection.'
 proposed_by: bbugyi200.athena.t9
 create_time: 2026-08-05 15:45:37
 status: wip
+bead_id: sase-fb
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_close_publication_loss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_close_publication_loss.md)
+- **PROMPT:** [prompts/202608/bead_close_publication_loss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_close_publication_loss.md)
+- **BEAD:** [sase-fb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fb/README.md)
 
 # Plan: Stop silently losing agent bead closes written in ephemeral workspaces
 
