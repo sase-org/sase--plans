@@ -1,45 +1,50 @@
 ---
 tier: epic
 title: Host-owned epic launches stop failing their planner agent
-goal: "An approved epic whose host-owned `sase bead work` launch is still running (or already succeeded) never marks its
-  planner agent FAILED, a planner-side SDD publication failure is reported as exactly that, and a `sase dev update`
-  source swap under a live agent runner is prevented where it can be and named honestly where it cannot.
+goal: 'An approved epic whose host-owned `sase bead work` launch is still running
+  (or already succeeded) never marks its planner agent FAILED, a planner-side SDD
+  publication failure is reported as exactly that, and a `sase dev update` source
+  swap under a live agent runner is prevented where it can be and named honestly where
+  it cannot.
 
-  "
+  '
 phases:
-  - id: attribution
-    title: Host-owned launches own their own outcome
-    depends_on: []
-    size: medium
-    description: "attribution: stop converting a planner-side SDD store failure into `epic_launch_failed` when the
-      approval response assigned launch ownership to the host, degrade to `epic_approved` with a recorded publication
-      error, and carry that degradation into the completion notification instead of a bogus resume command.
+- id: attribution
+  title: Host-owned launches own their own outcome
+  depends_on: []
+  size: medium
+  description: 'attribution: stop converting a planner-side SDD store failure into
+    `epic_launch_failed` when the approval response assigned launch ownership to the
+    host, degrade to `epic_approved` with a recorded publication error, and carry
+    that degradation into the completion notification instead of a bogus resume command.
 
-      "
-  - id: skew_guard
-    title: Agent runners survive mid-run editable source swaps
-    depends_on: []
-    size: medium
-    description: "skew_guard: preload the post-gate import surface once at agent-runner start so a later `sase dev
-      update` cannot tear a deferred import, snapshot the source revision the process booted against, and label failures
-      whose cause is an import error after a swap as a code swap rather than an unusable store.
+    '
+- id: skew_guard
+  title: Agent runners survive mid-run editable source swaps
+  depends_on: []
+  size: medium
+  description: 'skew_guard: preload the post-gate import surface once at agent-runner
+    start so a later `sase dev update` cannot tear a deferred import, snapshot the
+    source revision the process booted against, and label failures whose cause is
+    an import error after a swap as a code swap rather than an unusable store.
 
-      "
-  - id: swap_visibility
-    title: Dev updates name the live runners they may tear
-    depends_on:
-      - skew_guard
-    size: small
-    description:
-      "swap_visibility: register long-lived agent runners as advisory, non-blocking code-swap readers and surface them
-      in `sase update` and the ACE update preview, without ever letting an agent defer a source swap."
+    '
+- id: swap_visibility
+  title: Dev updates name the live runners they may tear
+  depends_on:
+  - skew_guard
+  size: small
+  description: 'swap_visibility: register long-lived agent runners as advisory, non-blocking
+    code-swap readers and surface them in `sase update` and the ACE update preview,
+    without ever letting an agent defer a source swap.'
 proposed_by: bbugyi200.athena.tl
 create_time: 2026-08-05 18:31:19
 status: wip
+bead_id: sase-fl
 ---
 
-- **PROMPT:**
-  [prompts/202608/epic_launch_false_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/epic_launch_false_failure.md)
+- **PROMPT:** [prompts/202608/epic_launch_false_failure.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/epic_launch_false_failure.md)
+- **BEAD:** [sase-fl](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fl/README.md)
 
 # Plan: Host-owned epic launches stop failing their planner agent
 
