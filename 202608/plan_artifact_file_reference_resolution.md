@@ -11,6 +11,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/plan_artifact_file_reference_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plan_artifact_file_reference_resolution.md)
+- **AGENTS:**
+  - [bbugyi200.athena.th](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.th.md)
+- **COMMITS:**
+  - [b3ac417](https://github.com/sase-org/sase/commit/b3ac417f3a595cee7ee123a5da819a384e50cc6c) — fix(artifact-file):
+    resolve logical plans: references when synthesizing plan rows
 
 # Plan: Resolve logical `plans:` references when synthesizing plan artifact files
 
