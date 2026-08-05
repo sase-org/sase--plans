@@ -53,7 +53,7 @@ phases:
     the `t2` family page resolves, and close out the sase-ej bead lineage.'
 proposed_by: bbugyi200.athena.t4
 create_time: 2026-08-05 14:26:20
-status: wip
+status: done
 bead_id: sase-fa
 ---
 
