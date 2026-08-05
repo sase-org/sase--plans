@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/test_suite_tier0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/test_suite_tier0.md)
+- **AGENTS:**
+  - [bbugyi200.athena.tm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.tm.md)
+- **COMMITS:**
+  - [9672c56](https://github.com/sase-org/sase/commit/9672c5602816c39f3d6f2e4af2b50a2e032f0d5e) — fix(tests): stop CI
+    worker collapse and drop visual from default lane
 
 # Plan: Test suite Tier 0
 
