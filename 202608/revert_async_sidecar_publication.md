@@ -1,61 +1,64 @@
 ---
 tier: epic
-title: Revert async sidecar publication so `sase commit` publishes sidecars inline again
-goal:
-  "`sase commit` once again publishes to every appropriate sidecar repo (agents, beads, plans) before it returns, so the
-  `SASE_AGENT` footer URL resolves as soon as the commit lands. The `sidecar_publication` chop and the `publications`
-  lumberjack are removed, the durable outbox is narrowed back to agent-hood retries, the agents sidecar corruption that
-  is currently blocking all publication is repaired, and this project's agents repo is fully synced."
+title: Revert async sidecar publication so `sase commit` publishes sidecars inline
+  again
+goal: '`sase commit` once again publishes to every appropriate sidecar repo (agents,
+  beads, plans) before it returns, so the `SASE_AGENT` footer URL resolves as soon
+  as the commit lands. The `sidecar_publication` chop and the `publications` lumberjack
+  are removed, the durable outbox is narrowed back to agent-hood retries, the agents
+  sidecar corruption that is currently blocking all publication is repaired, and this
+  project''s agents repo is fully synced.'
 phases:
-  - id: commit
-    title: Restore synchronous sidecar publication on the commit path
-    depends_on: []
-    size: medium
-    description:
-      "commit: turn every enqueue-only writer back into an inline publisher so `sase commit`, planner approval, and the
-      bead-store launch push perform their agents/beads/plans sidecar work before returning."
-  - id: chop
-    title: Remove the sidecar_publication chop and publications lumberjack
-    depends_on:
-      - commit
-    size: medium
-    description:
-      "chop: delete the builtin chop, its console script, the `publications` axe lane, its tests, and the lock-deadline
-      plumbing that existed only to bound that chop."
-  - id: queue
-    title: Narrow the durable outbox back to agent-hood retries
-    depends_on:
-      - chop
-    size: medium
-    description:
-      "queue: drop the `bead_pages`, `plan_header`, and `sidecar_push` request kinds, bump the outbox schema so existing
-      v4 files load without resurrecting them, and revert doctor, ACE, status, and prompt-archive validation to
-      agent-hood-only semantics."
-  - id: repair
-    title: Repair the agents sidecar digest corruption blocking all publication
-    depends_on: []
-    size: medium
-    description:
-      "repair: re-sign the 73 hood-snapshot file digests broken by an out-of-band sidecar rewrite, stop the writer that
-      broke them, add a doctor check for payload/snapshot drift, and clear the stuck publication residue."
-  - id: land
-    title: Docs, end-to-end verification, agents-repo sync, and bead bookkeeping
-    depends_on:
-      - commit
-      - chop
-      - queue
-      - repair
-    size: small
-    description:
-      "land: sweep the remaining queue/lane prose out of the docs, prove a real commit publishes inline and fast, sync
-      this project's agents repo until the `t2` family page resolves, and close out the sase-ej bead lineage."
+- id: commit
+  title: Restore synchronous sidecar publication on the commit path
+  depends_on: []
+  size: medium
+  description: 'commit: turn every enqueue-only writer back into an inline publisher
+    so `sase commit`, planner approval, and the bead-store launch push perform their
+    agents/beads/plans sidecar work before returning.'
+- id: chop
+  title: Remove the sidecar_publication chop and publications lumberjack
+  depends_on:
+  - commit
+  size: medium
+  description: 'chop: delete the builtin chop, its console script, the `publications`
+    axe lane, its tests, and the lock-deadline plumbing that existed only to bound
+    that chop.'
+- id: queue
+  title: Narrow the durable outbox back to agent-hood retries
+  depends_on:
+  - chop
+  size: medium
+  description: 'queue: drop the `bead_pages`, `plan_header`, and `sidecar_push` request
+    kinds, bump the outbox schema so existing v4 files load without resurrecting them,
+    and revert doctor, ACE, status, and prompt-archive validation to agent-hood-only
+    semantics.'
+- id: repair
+  title: Repair the agents sidecar digest corruption blocking all publication
+  depends_on: []
+  size: medium
+  description: 'repair: re-sign the 73 hood-snapshot file digests broken by an out-of-band
+    sidecar rewrite, stop the writer that broke them, add a doctor check for payload/snapshot
+    drift, and clear the stuck publication residue.'
+- id: land
+  title: Docs, end-to-end verification, agents-repo sync, and bead bookkeeping
+  depends_on:
+  - commit
+  - chop
+  - queue
+  - repair
+  size: small
+  description: 'land: sweep the remaining queue/lane prose out of the docs, prove
+    a real commit publishes inline and fast, sync this project''s agents repo until
+    the `t2` family page resolves, and close out the sase-ej bead lineage.'
 proposed_by: bbugyi200.athena.t4
 create_time: 2026-08-05 14:26:20
 status: wip
+bead_id: sase-fa
 ---
 
-- **PROMPT:**
-  [prompts/202608/revert_async_sidecar_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/revert_async_sidecar_publication.md)
+- **PROMPT:** [prompts/202608/revert_async_sidecar_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/revert_async_sidecar_publication.md)
+- **BEAD:** [sase-fa](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fa/README.md)
 
 # Plan: Revert async sidecar publication so `sase commit` publishes sidecars inline again
 
