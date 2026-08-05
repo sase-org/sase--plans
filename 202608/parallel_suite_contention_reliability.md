@@ -1,78 +1,82 @@
 ---
 tier: epic
 title: Make the default parallel test suite reliable under host contention
-goal: "A full `just test` / `just check` run stops failing single unrelated nodes under xdist and host contention, the
-  flake class is reproducible on demand through a committed deterministic harness, and the harness runs as a gate so
-  newly written contention-fragile tests fail immediately instead of intercepting an unrelated agent's required check
-  weeks later.
+goal: 'A full `just test` / `just check` run stops failing single unrelated nodes
+  under xdist and host contention, the flake class is reproducible on demand through
+  a committed deterministic harness, and the harness runs as a gate so newly written
+  contention-fragile tests fail immediately instead of intercepting an unrelated agent''s
+  required check weeks later.
 
-  "
+  '
 phases:
-  - id: harness
-    title: Deterministic contention model and reproduction lane
-    depends_on: []
-    size: medium
-    description: "harness: add the committed pytest contention model that pins Textual's process_time idle probe and
-      delays off-loop work, expose it through a run_pytest mode plus a Justfile recipe, and record the pre-fix baseline
-      of failing nodes.
+- id: harness
+  title: Deterministic contention model and reproduction lane
+  depends_on: []
+  size: medium
+  description: 'harness: add the committed pytest contention model that pins Textual''s
+    process_time idle probe and delays off-loop work, expose it through a run_pytest
+    mode plus a Justfile recipe, and record the pre-fix baseline of failing nodes.
 
-      "
-  - id: settle
-    title: Contention-proof settle for Textual pilot pauses
-    depends_on:
-      - harness
-    size: medium
-    description: "settle: replace the CPU-heuristic idle wait behind pilot.pause() with a quiescence-signal settle that
-      drains message pumps, Textual workers, and registered pump-free tasks, backed by a process-global pump-free task
-      registry.
+    '
+- id: settle
+  title: Contention-proof settle for Textual pilot pauses
+  depends_on:
+  - harness
+  size: medium
+  description: 'settle: replace the CPU-heuristic idle wait behind pilot.pause() with
+    a quiescence-signal settle that drains message pumps, Textual workers, and registered
+    pump-free tasks, backed by a process-global pump-free task registry.
 
-      "
-  - id: tui_residual
-    title: Residual ACE TUI nodes that settle cannot reach
-    depends_on:
-      - settle
-    size: medium
-    description: "tui_residual: convert the remaining pause-then-assert ACE TUI tests that still fail under the
-      contention model into event-driven waits, without weakening any assertion.
+    '
+- id: tui_residual
+  title: Residual ACE TUI nodes that settle cannot reach
+  depends_on:
+  - settle
+  size: medium
+  description: 'tui_residual: convert the remaining pause-then-assert ACE TUI tests
+    that still fail under the contention model into event-driven waits, without weakening
+    any assertion.
 
-      "
-  - id: deadlines
-    title: Wall-clock deadline assertions
-    depends_on: []
-    size: medium
-    description: "deadlines: remove fixed real-time budgets from the prompt-catalog heartbeat, stall-watchdog
-      state-machine, and pending-question marker tests by asserting causal ordering or driving an injected clock
-      instead.
+    '
+- id: deadlines
+  title: Wall-clock deadline assertions
+  depends_on: []
+  size: medium
+  description: 'deadlines: remove fixed real-time budgets from the prompt-catalog
+    heartbeat, stall-watchdog state-machine, and pending-question marker tests by
+    asserting causal ordering or driving an injected clock instead.
 
-      "
-  - id: shared_state
-    title: Load-sensitive and order-sensitive non-pump nodes
-    depends_on:
-      - harness
-    size: medium
-    description: "shared_state: diagnose and fix the reported flakes that never touch the Textual pump - the xprompt
-      VCS-tag selector identity cache, the TaskMirror detached count, the artifact-file facade reclaim and VCS cache
-      nodes, and the custom-gate tracked executor.
+    '
+- id: shared_state
+  title: Load-sensitive and order-sensitive non-pump nodes
+  depends_on:
+  - harness
+  size: medium
+  description: 'shared_state: diagnose and fix the reported flakes that never touch
+    the Textual pump - the xprompt VCS-tag selector identity cache, the TaskMirror
+    detached count, the artifact-file facade reclaim and VCS cache nodes, and the
+    custom-gate tracked executor.
 
-      "
-  - id: guard
-    title: Gate the harness and soak the full suite
-    depends_on:
-      - settle
-      - tui_residual
-      - deadlines
-      - shared_state
-    size: medium
-    description:
-      "guard: wire the contention lane into CI, confirm the visual contention lane is clean, soak the full parallel
-      suite, and close the umbrella bead with the measured evidence."
+    '
+- id: guard
+  title: Gate the harness and soak the full suite
+  depends_on:
+  - settle
+  - tui_residual
+  - deadlines
+  - shared_state
+  size: medium
+  description: 'guard: wire the contention lane into CI, confirm the visual contention
+    lane is clean, soak the full parallel suite, and close the umbrella bead with
+    the measured evidence.'
 proposed_by: bbugyi200.athena.tg
 create_time: 2026-08-05 18:13:51
 status: wip
+bead_id: sase-fd
 ---
 
-- **PROMPT:**
-  [prompts/202608/parallel_suite_contention_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/parallel_suite_contention_reliability.md)
+- **PROMPT:** [prompts/202608/parallel_suite_contention_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/parallel_suite_contention_reliability.md)
+- **BEAD:** [sase-fd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fd/README.md)
 
 # Plan: Make the default parallel test suite reliable under host contention
 
