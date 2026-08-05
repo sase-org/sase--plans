@@ -1,91 +1,98 @@
 ---
 tier: epic
 title: Show bead creation time on every bead surface
-goal: "Every SASE surface that displays a bead also displays when that bead was created, rendered through one shared
-  presentation module so the glyph, color, wording, and timezone are identical everywhere, and so persisted or
-  content-validated surfaces stay byte-stable.
+goal: 'Every SASE surface that displays a bead also displays when that bead was created,
+  rendered through one shared presentation module so the glyph, color, wording, and
+  timezone are identical everywhere, and so persisted or content-validated surfaces
+  stay byte-stable.
 
-  "
+  '
 phases:
-  - id: presentation
-    title: Shared bead time presentation module
-    depends_on: []
-    size: medium
-    description: "presentation: add src/sase/bead_time_presentation.py as the single source of bead instant and age
-      rendering (glyphs, teal accent, absolute labels, compact age labels, Rich chips, ANSI CLI cells), with honest
-      placeholders for unparseable values and a patchable clock indirection, plus unit tests.
+- id: presentation
+  title: Shared bead time presentation module
+  depends_on: []
+  size: medium
+  description: 'presentation: add src/sase/bead_time_presentation.py as the single
+    source of bead instant and age rendering (glyphs, teal accent, absolute labels,
+    compact age labels, Rich chips, ANSI CLI cells), with honest placeholders for
+    unparseable values and a patchable clock indirection, plus unit tests.
 
-      "
-  - id: cli
-    title: Bead CLI detail, list, search, and dependency surfaces
-    depends_on:
-      - presentation
-    size: medium
-    description: "cli: add a CREATED section to sase bead show, a created-age cell to compact list and search rows, and
-      created context to dependency list/tree rows, then pin the test clock and regenerate the affected CLI golden
-      files.
+    '
+- id: cli
+  title: Bead CLI detail, list, search, and dependency surfaces
+  depends_on:
+  - presentation
+  size: medium
+  description: 'cli: add a CREATED section to sase bead show, a created-age cell to
+    compact list and search rows, and created context to dependency list/tree rows,
+    then pin the test clock and regenerate the affected CLI golden files.
 
-      "
-  - id: gate
-    title: Task triage gate payload, preview, and validation
-    depends_on:
-      - presentation
-    size: medium
-    description: "gate: thread the bead created_at through the TaskTriage gate payload, notification note, and Markdown
-      preview using absolute-only rendering, extend the strict payload and preview-reconstruction validation to match,
-      and add created_at to the chop presentation fingerprint.
+    '
+- id: gate
+  title: Task triage gate payload, preview, and validation
+  depends_on:
+  - presentation
+  size: medium
+  description: 'gate: thread the bead created_at through the TaskTriage gate payload,
+    notification note, and Markdown preview using absolute-only rendering, extend
+    the strict payload and preview-reconstruction validation to match, and add created_at
+    to the chop presentation fingerprint.
 
-      "
-  - id: context_lane
-    title: BEAD lane in the SASE CONTEXT agent metadata panel
-    depends_on:
-      - presentation
-    size: medium
-    description: "context_lane: add created_at to BeadSummary and both summary builders, render a trailing Created row
-      in the BEAD lane for task and phase beads, register the new module with the visual-snapshot clock pin, and
-      regenerate the affected PNG snapshots.
+    '
+- id: context_lane
+  title: BEAD lane in the SASE CONTEXT agent metadata panel
+  depends_on:
+  - presentation
+  size: medium
+  description: 'context_lane: add created_at to BeadSummary and both summary builders,
+    render a trailing Created row in the BEAD lane for task and phase beads, register
+    the new module with the visual-snapshot clock pin, and regenerate the affected
+    PNG snapshots.
 
-      "
-  - id: ace_panel
-    title: ACE Beads pane rows, detail pane, and reference completion
-    depends_on:
-      - presentation
-    size: medium
-    description: "ace_panel: replace the ambiguous single age on Beads pane rows with explicit created and updated
-      cells, move the detail pane and preview Markdown onto the shared helpers, add created age to bead
-      reference-completion rows, and regenerate the affected PNG snapshots.
+    '
+- id: ace_panel
+  title: ACE Beads pane rows, detail pane, and reference completion
+  depends_on:
+  - presentation
+  size: medium
+  description: 'ace_panel: replace the ambiguous single age on Beads pane rows with
+    explicit created and updated cells, move the detail pane and preview Markdown
+    onto the shared helpers, add created age to bead reference-completion rows, and
+    regenerate the affected PNG snapshots.
 
-      "
-  - id: wire_pages
-    title: Mobile wire, bead pages, and clan epic summary
-    depends_on:
-      - presentation
-    size: medium
-    description: "wire_pages: add created_at to the mobile helper bead summary wire, add a Created column to the bead
-      pages phase and dependency tables while keeping page bytes stable, and show creation time in the clan epic summary
-      header and phase lines.
+    '
+- id: wire_pages
+  title: Mobile wire, bead pages, and clan epic summary
+  depends_on:
+  - presentation
+  size: medium
+  description: 'wire_pages: add created_at to the mobile helper bead summary wire,
+    add a Created column to the bead pages phase and dependency tables while keeping
+    page bytes stable, and show creation time in the clan epic summary header and
+    phase lines.
 
-      "
-  - id: audit
-    title: Cross-surface audit and documentation
-    depends_on:
-      - presentation
-      - cli
-      - gate
-      - context_lane
-      - ace_panel
-      - wire_pages
-    size: small
-    description:
-      "audit: sweep the repo for any remaining bead-rendering site that omits creation time, add a regression test that
-      enumerates the covered surfaces, document the created-time contract in docs/beads.md, and run just check."
+    '
+- id: audit
+  title: Cross-surface audit and documentation
+  depends_on:
+  - presentation
+  - cli
+  - gate
+  - context_lane
+  - ace_panel
+  - wire_pages
+  size: small
+  description: 'audit: sweep the repo for any remaining bead-rendering site that omits
+    creation time, add a regression test that enumerates the covered surfaces, document
+    the created-time contract in docs/beads.md, and run just check.'
 proposed_by: bbugyi200.athena.tc
 create_time: 2026-08-05 16:28:24
 status: wip
+bead_id: sase-fc
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_create_time.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_create_time.md)
+- **PROMPT:** [prompts/202608/bead_create_time.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_create_time.md)
+- **BEAD:** [sase-fc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fc/README.md)
 
 # Plan: Show bead creation time on every bead surface
 
