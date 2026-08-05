@@ -8,6 +8,12 @@ goal:
 proposed_by: bbugyi200.athena.tj
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.tj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.tj.md)
+- **COMMITS:**
+  - [840cdff](https://github.com/sase-org/sase/commit/840cdff10664d2629ddc38f2677ec80e7dcaaca8) — fix(commit-finalizer):
+    break async-wait deadlock in finalizer passes
+
 # Plan: Break the commit-finalizer async-wait deadlock
 
 ## Background: the diagnosed failure
