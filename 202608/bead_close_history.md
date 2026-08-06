@@ -87,7 +87,7 @@ phases:
     recovery from the event log, and every surface that renders it in docs/beads.md.'
 proposed_by: bbugyi200.athena.tr
 create_time: 2026-08-05 21:17:46
-status: wip
+status: done
 bead_id: sase-fr
 ---
 
