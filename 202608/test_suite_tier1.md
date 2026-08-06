@@ -1,75 +1,76 @@
 ---
 tier: epic
 title: Test suite Tier 1 — two-speed verification with diff-scoped test selection
-goal:
-  Agents verify a change with a diff-scoped, gate-free `just check` that costs ~1 core-minute instead of ~61
-  worker-minutes, `just check-full` preserves today's exhaustive contract for landing and CI, and selection health (what
-  was skipped, and whether skipping it was ever wrong) is a measured, machine-readable metric rather than an assumption.
+goal: Agents verify a change with a diff-scoped, gate-free `just check` that costs
+  ~1 core-minute instead of ~61 worker-minutes, `just check-full` preserves today's
+  exhaustive contract for landing and CI, and selection health (what was skipped,
+  and whether skipping it was ever wrong) is a measured, machine-readable metric rather
+  than an assumption.
 phases:
-  - id: engine
-    title: Static import-graph selection engine
-    depends_on: []
-    size: medium
-    description:
-      "engine: build the cached import-graph selector, its depth-bounded reverse closure, the broadening/escalation
-      rules, and the JSON selection manifest, plus the tools/select_tests CLI. No runner or Justfile behavior changes."
-  - id: contract
-    title: Curated contract/audit test set
-    depends_on: []
-    size: small
-    description:
-      "contract: add the `contract` pytest marker, curate the repository-wide audit tests behind it to a measured
-      serial-runtime budget, generate a committed manifest from the marker, and add drift and budget guards."
-  - id: runner
-    title: Scoped run mode and the no-lease path
-    depends_on:
-      - engine
-      - contract
-    size: medium
-    description:
-      "runner: add a `scoped` mode to tools/run_pytest that runs the selection serially with the suite-gate explicitly
-      disabled, escalates to the governed full lane when the selection is too large, and never queues for tokens."
-  - id: check-split
-    title: just check / just check-full split
-    depends_on:
-      - runner
-    size: small
-    description:
-      "check-split: repoint `just check` at the scoped lane, add `just check-full` carrying today's exhaustive
-      behaviour, and update docs/development.md, README.md, CONTRIBUTING.md, and the CI guard tests."
-  - id: health
-    title: Selection health metrics and false-negative detection
-    depends_on:
-      - runner
-    size: medium
-    description:
-      "health: persist selection manifests to a durable host-local store, detect when a full run fails a test a recent
-      scoped run excluded, and add `just selection-health` to summarize coverage, escalation, and false-negative rates."
-  - id: contexts
-    title: Coverage-context ground truth for selection
-    depends_on:
-      - engine
-      - health
-    size: medium
-    description:
-      "contexts: add --cov-context=test to the CI coverage leg, publish the contexts database as an artifact, and teach
-      the engine to prefer per-test coverage ground truth over the static closure when a fresh baseline is available."
-  - id: policy
-    title: Two-speed verification policy in SASE memory
-    depends_on:
-      - check-split
-      - health
-    size: small
-    description:
-      "policy: obtain live user permission, then record the two-speed verification contract in sase/memory and
-      regenerate the derived instruction files."
+- id: engine
+  title: Static import-graph selection engine
+  depends_on: []
+  size: medium
+  description: 'engine: build the cached import-graph selector, its depth-bounded
+    reverse closure, the broadening/escalation rules, and the JSON selection manifest,
+    plus the tools/select_tests CLI. No runner or Justfile behavior changes.'
+- id: contract
+  title: Curated contract/audit test set
+  depends_on: []
+  size: small
+  description: 'contract: add the `contract` pytest marker, curate the repository-wide
+    audit tests behind it to a measured serial-runtime budget, generate a committed
+    manifest from the marker, and add drift and budget guards.'
+- id: runner
+  title: Scoped run mode and the no-lease path
+  depends_on:
+  - engine
+  - contract
+  size: medium
+  description: 'runner: add a `scoped` mode to tools/run_pytest that runs the selection
+    serially with the suite-gate explicitly disabled, escalates to the governed full
+    lane when the selection is too large, and never queues for tokens.'
+- id: check-split
+  title: just check / just check-full split
+  depends_on:
+  - runner
+  size: small
+  description: 'check-split: repoint `just check` at the scoped lane, add `just check-full`
+    carrying today''s exhaustive behaviour, and update docs/development.md, README.md,
+    CONTRIBUTING.md, and the CI guard tests.'
+- id: health
+  title: Selection health metrics and false-negative detection
+  depends_on:
+  - runner
+  size: medium
+  description: 'health: persist selection manifests to a durable host-local store,
+    detect when a full run fails a test a recent scoped run excluded, and add `just
+    selection-health` to summarize coverage, escalation, and false-negative rates.'
+- id: contexts
+  title: Coverage-context ground truth for selection
+  depends_on:
+  - engine
+  - health
+  size: medium
+  description: 'contexts: add --cov-context=test to the CI coverage leg, publish the
+    contexts database as an artifact, and teach the engine to prefer per-test coverage
+    ground truth over the static closure when a fresh baseline is available.'
+- id: policy
+  title: Two-speed verification policy in SASE memory
+  depends_on:
+  - check-split
+  - health
+  size: small
+  description: 'policy: obtain live user permission, then record the two-speed verification
+    contract in sase/memory and regenerate the derived instruction files.'
 proposed_by: bbugyi200.athena.tn
 create_time: 2026-08-05 20:55:58
 status: wip
+bead_id: sase-fp
 ---
 
-- **PROMPT:**
-  [prompts/202608/test_suite_tier1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/test_suite_tier1.md)
+- **PROMPT:** [prompts/202608/test_suite_tier1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/test_suite_tier1.md)
+- **BEAD:** [sase-fp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fp/README.md)
 
 # Plan: Test suite Tier 1 — two-speed verification
 
