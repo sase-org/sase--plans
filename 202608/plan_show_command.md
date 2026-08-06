@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/plan_show_command.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plan_show_command.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ud](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ud.md)
+- **COMMITS:**
+  - [2c11c4e](https://github.com/sase-org/sase/commit/2c11c4eb85e3c421e76897c871b47c5425cb663a) — feat(cli): add \`sase
+    plan show\` detail command
 
 # Plan: Add a flexible, beautiful `sase plan show` detail command
 
