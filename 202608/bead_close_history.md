@@ -1,94 +1,98 @@
 ---
 tier: epic
 title: Preserve close provenance when a +1 reopens a bead
-goal: "A bead that was closed and later reopened keeps the reason it was closed, and every surface that shows the bead
-  says plainly that it was previously closed, why, and what reopened it — including which +1 did it.
+goal: 'A bead that was closed and later reopened keeps the reason it was closed, and
+  every surface that shows the bead says plainly that it was previously closed, why,
+  and what reopened it — including which +1 did it.
 
-  "
+  '
 phases:
-  - id: core-model
-    title: Durable close history in the bead event reducer
-    depends_on: []
-    size: medium
-    description: "core-model: add BeadCloseRecordWire and IssueWire.close_history to sase-core, archive close metadata
-      instead of discarding it on every reopen path, unify the mutation and reducer paths on one helper, and release.
+- id: core-model
+  title: Durable close history in the bead event reducer
+  depends_on: []
+  size: medium
+  description: 'core-model: add BeadCloseRecordWire and IssueWire.close_history to
+    sase-core, archive close metadata instead of discarding it on every reopen path,
+    unify the mutation and reducer paths on one helper, and release.
 
-      "
-  - id: core-adopt
-    title: Adopt the release and carry close history through Python storage
-    depends_on:
-      - core-model
-    size: medium
-    description: "core-adopt: raise the sase-core-rs window to the release from core-model and thread close_history
-      through the Python model, wire conversion, issues.jsonl, the SQLite mirror with its migration, and the projection
-      repair guard.
+    '
+- id: core-adopt
+  title: Adopt the release and carry close history through Python storage
+  depends_on:
+  - core-model
+  size: medium
+  description: 'core-adopt: raise the sase-core-rs window to the release from core-model
+    and thread close_history through the Python model, wire conversion, issues.jsonl,
+    the SQLite mirror with its migration, and the projection repair guard.
 
-      "
-  - id: presentation
-    title: Shared reopen presentation vocabulary
-    depends_on:
-      - core-adopt
-    size: small
-    description: "presentation: add sase/bead/reopen_presentation.py with the accent, glyph, section label, badge,
-      record labels, search text, and the single shared join that decides which +1 entry reopened a bead.
+    '
+- id: presentation
+  title: Shared reopen presentation vocabulary
+  depends_on:
+  - core-adopt
+  size: small
+  description: 'presentation: add sase/bead/reopen_presentation.py with the accent,
+    glyph, section label, badge, record labels, search text, and the single shared
+    join that decides which +1 entry reopened a bead.
 
-      "
-  - id: cli
-    title: sase bead show, JSON, list badges, and search
-    depends_on:
-      - presentation
-    size: medium
-    description: "cli: render the PREVIOUSLY CLOSED section and the reopening-+1 marker in bead detail, emit
-      close_history in detail JSON, add the reopen badge to list/ready/search rows, and make archived close reasons
-      searchable.
+    '
+- id: cli
+  title: sase bead show, JSON, list badges, and search
+  depends_on:
+  - presentation
+  size: medium
+  description: 'cli: render the PREVIOUSLY CLOSED section and the reopening-+1 marker
+    in bead detail, emit close_history in detail JSON, add the reopen badge to list/ready/search
+    rows, and make archived close reasons searchable.
 
-      "
-  - id: triage
-    title: Prior-close warning in the TaskTriage gate
-    depends_on:
-      - presentation
-    size: small
-    description: "triage: put a prior-close callout above the description in the task triage preview, mark the reopening
-      +1, add the reopen badge to the notification note, and include close history in the chop's presentation
-      fingerprint.
+    '
+- id: triage
+  title: Prior-close warning in the TaskTriage gate
+  depends_on:
+  - presentation
+  size: small
+  description: 'triage: put a prior-close callout above the description in the task
+    triage preview, mark the reopening +1, add the reopen badge to the notification
+    note, and include close history in the chop''s presentation fingerprint.
 
-      "
-  - id: ace
-    title: ACE beads pane close history
-    depends_on:
-      - presentation
-    size: small
-    description: "ace: show the reopen badge on beads list rows, a Previously closed property and body section in the
-      detail pane, and a has:reopened filter, with PNG snapshot coverage.
+    '
+- id: ace
+  title: ACE beads pane close history
+  depends_on:
+  - presentation
+  size: small
+  description: 'ace: show the reopen badge on beads list rows, a Previously closed
+    property and body section in the detail pane, and a has:reopened filter, with
+    PNG snapshot coverage.
 
-      "
-  - id: pages
-    title: Generated bead pages close history
-    depends_on:
-      - presentation
-    size: small
-    description: "pages: render a Previously Closed section and primary-fact badge on generated bead pages and add a
-      reopen column to the lineage roster.
+    '
+- id: pages
+  title: Generated bead pages close history
+  depends_on:
+  - presentation
+  size: small
+  description: 'pages: render a Previously Closed section and primary-fact badge on
+    generated bead pages and add a reopen column to the lineage roster.
 
-      "
-  - id: docs
-    title: Document close history and reopen provenance
-    depends_on:
-      - cli
-      - triage
-      - ace
-      - pages
-    size: small
-    description:
-      "docs: document the close-history record, the reopen causes, the retroactive recovery from the event log, and
-      every surface that renders it in docs/beads.md."
+    '
+- id: docs
+  title: Document close history and reopen provenance
+  depends_on:
+  - cli
+  - triage
+  - ace
+  - pages
+  size: small
+  description: 'docs: document the close-history record, the reopen causes, the retroactive
+    recovery from the event log, and every surface that renders it in docs/beads.md.'
 proposed_by: bbugyi200.athena.tr
 create_time: 2026-08-05 21:17:46
 status: wip
+bead_id: sase-fr
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_close_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_close_history.md)
+- **PROMPT:** [prompts/202608/bead_close_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_close_history.md)
+- **BEAD:** [sase-fr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fr/README.md)
 
 # Plan: Preserve close provenance when a +1 reopens a bead
 
