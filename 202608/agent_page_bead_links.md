@@ -11,6 +11,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/agent_page_bead_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_page_bead_links.md)
+- **AGENTS:**
+  - [bbugyi200.athena.u0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.u0.md)
+- **COMMITS:**
+  - [48a34b4](https://github.com/sase-org/sase/commit/48a34b4a11b9dd3553a3e0bd0fa4545ccddb10f6) — feat(agents-sync):
+    link published agent pages back to their bead pages
 
 # Plan: Link published agent pages back to their bead pages
 
