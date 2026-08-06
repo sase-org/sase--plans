@@ -7,7 +7,7 @@ goal:
   a single publication's hoods.
 proposed_by: bbugyi200.athena.u1
 create_time: 2026-08-06 09:45:34
-status: wip
+status: done
 ---
 
 # Plan: Stop dismissed agents from turning owned legacy-v1 hoods into `unknown-user` imports
