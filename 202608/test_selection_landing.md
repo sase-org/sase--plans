@@ -1,44 +1,46 @@
 ---
 tier: epic
-title: sase-fp landing — a budget guard that measures the set, and a false-negative metric that measures selection
-goal:
-  The contract-set budget guard sase-fp introduced stops failing on host load and starts measuring what it claims to
-  measure, the false-negative metric that is sase-fp's own exit criterion stops charging one workspace's flakes to
-  another workspace's selection, and sase-fp lands with an honest reading of both.
+title: sase-fp landing — a budget guard that measures the set, and a false-negative
+  metric that measures selection
+goal: The contract-set budget guard sase-fp introduced stops failing on host load
+  and starts measuring what it claims to measure, the false-negative metric that is
+  sase-fp's own exit criterion stops charging one workspace's flakes to another workspace's
+  selection, and sase-fp lands with an honest reading of both.
 phases:
-  - id: budget
-    title: Load- and machine-normalized contract-set budget guard
-    depends_on: []
-    size: medium
-    description:
-      "budget: replace the wall-clock ceiling in test_contract_set_serial_runtime_stays_within_budget with a
-      calibration-probe-normalized CPU measurement, so the guard bounds the contract set's size instead of the host's
-      load, and settle sase-fp.2's deferred contract-set membership question with the re-measured headroom."
-  - id: correlate
-    title: Change-scoped false-negative correlation
-    depends_on: []
-    size: medium
-    description:
-      "correlate: record the workspace and change-set identity that the false-negative definition requires on full-run
-      health records, restrict find_false_negatives to pairs that describe the same change, and re-read the metric."
-  - id: land
-    title: Land epic sase-fp
-    depends_on:
-      - budget
-      - correlate
-    size: small
-    description:
-      "land: file the collected follow-ups with /sase_new_task, close sase-fp with a note covering the verification and
-      integration findings, run just symvision after the close, and mark plans:202608/test_suite_tier1.md done."
+- id: budget
+  title: Load- and machine-normalized contract-set budget guard
+  depends_on: []
+  size: medium
+  description: 'budget: replace the wall-clock ceiling in test_contract_set_serial_runtime_stays_within_budget
+    with a calibration-probe-normalized CPU measurement, so the guard bounds the contract
+    set''s size instead of the host''s load, and settle sase-fp.2''s deferred contract-set
+    membership question with the re-measured headroom.'
+- id: correlate
+  title: Change-scoped false-negative correlation
+  depends_on: []
+  size: medium
+  description: 'correlate: record the workspace and change-set identity that the false-negative
+    definition requires on full-run health records, restrict find_false_negatives
+    to pairs that describe the same change, and re-read the metric.'
+- id: land
+  title: Land epic sase-fp
+  depends_on:
+  - budget
+  - correlate
+  size: small
+  description: 'land: file the collected follow-ups with /sase_new_task, close sase-fp
+    with a note covering the verification and integration findings, run just symvision
+    after the close, and mark plans:202608/test_suite_tier1.md done.'
 proposed_by: bbugyi200.athena.sase-fp.land
 parent_bead: sase-fp
 create_time: 2026-08-06 01:41:36
 status: wip
+bead_id: sase-fp.8
 ---
 
-- **PROMPT:**
-  [prompts/202608/test_selection_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/test_selection_landing.md)
+- **PROMPT:** [prompts/202608/test_selection_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/test_selection_landing.md)
 - **PARENT:** [202608/test_suite_tier1.md](https://github.com/sase-org/sase--plans/blob/main/202608/test_suite_tier1.md)
+- **BEAD:** [sase-fp.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fp/sase-fp.8.md)
 
 # Plan: sase-fp landing — fix the two defects the epic left behind, then close it
 
