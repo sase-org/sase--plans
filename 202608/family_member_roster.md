@@ -11,6 +11,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/family_member_roster.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/family_member_roster.md)
+- **AGENTS:**
+  - [bbugyi200.athena.u9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.u9.md)
+- **COMMITS:**
+  - [8fcc252](https://github.com/sase-org/sase/commit/8fcc2520fb17e20ba0d8c17381bbde58e8145949) — feat(ace-tui): show
+    FAMILY MEMBERS roster on family-member detail panels
 
 # Show `FAMILY MEMBERS` on family-member detail panels
 
