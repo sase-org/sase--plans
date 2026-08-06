@@ -7,7 +7,7 @@ goal:
   one that has a materialized `.sase/sdd-store.json`.
 proposed_by: bbugyi200.athena.u8
 create_time: 2026-08-06 13:08:12
-status: wip
+status: done
 ---
 
 - **PROMPT:**
