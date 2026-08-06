@@ -8,7 +8,7 @@ goal:
   caused it instead of cascading across its xdist worker.
 proposed_by: bbugyi200.athena.tw.f1
 create_time: 2026-08-06 09:42:21
-status: wip
+status: done
 ---
 
 # Plan: Isolate every process global `run_pytest.main()` writes, and stop one leak from poisoning a worker
