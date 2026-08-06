@@ -7,7 +7,7 @@ goal:
   ACE TUI's PLAN lane, with machine-readable `json` and byte-faithful `raw` output alongside it.
 proposed_by: bbugyi200.athena.ud
 create_time: 2026-08-06 15:48:40
-status: wip
+status: done
 ---
 
 - **PROMPT:**
