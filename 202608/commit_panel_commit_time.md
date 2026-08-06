@@ -7,7 +7,7 @@ goal:
   and lazily recovered for historical ones.
 proposed_by: bbugyi200.athena.tv
 create_time: 2026-08-06 08:16:37
-status: wip
+status: done
 ---
 
 - **PROMPT:**
