@@ -9,6 +9,12 @@ create_time: 2026-08-06 09:11:09
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.tz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.tz.md)
+- **COMMITS:**
+  - [9a366e0](https://github.com/sase-org/sase/commit/9a366e0d6c5a0357a25044feb485357ad7ee2121) — fix(ace): resolve
+    Artifacts project scope through project refs
+
 # Plan: Resolve the Artifacts project scope through project refs
 
 ## Problem
