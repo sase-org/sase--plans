@@ -7,7 +7,7 @@ goal:
   commit-inventory diagnostic reports the real errno instead of guessing at TMPDIR.
 proposed_by: bbugyi200.athena.tw
 create_time: 2026-08-06 08:46:37
-status: wip
+status: done
 ---
 
 - **PROMPT:**
