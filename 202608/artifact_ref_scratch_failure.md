@@ -1,42 +1,44 @@
 ---
 tier: epic
-title: Fix the artifact-ref commit inventory's scratch-file failure and finish landing sase-fq
-goal:
-  The artifact-ref commit inventory stops returning an empty result on GitHub runners, the failure is fixed at the cause
-  the runtime diagnostic actually names rather than at the budget hypothesis that was already disproved, every job in
-  the sase CI workflow passes on master, and epic sase-fq is closed out.
+title: Fix the artifact-ref commit inventory's scratch-file failure and finish landing
+  sase-fq
+goal: The artifact-ref commit inventory stops returning an empty result on GitHub
+  runners, the failure is fixed at the cause the runtime diagnostic actually names
+  rather than at the budget hypothesis that was already disproved, every job in the
+  sase CI workflow passes on master, and epic sase-fq is closed out.
 phases:
-  - id: scratch-probe
-    title: Identify the OS error behind the scratch-file failure on a CI runner
-    depends_on: []
-    size: medium
-    description:
-      "scratch-probe: land a diagnostic that makes the next master CI run report the actual OS error and resource state
-      behind CommitLogFailure::Scratch, and record the answer in the phase notes."
-  - id: scratch-fix
-    title: Fix the identified scratch-file failure at its source
-    depends_on:
-      - scratch-probe
-    size: medium
-    description:
-      "scratch-fix: fix the cause scratch-probe identified, carry the underlying io::Error into sase-core's
-      commit-inventory diagnostic, and confirm the parity test passes on master CI."
-  - id: land-fq
-    title: Close out epic sase-fq
-    depends_on:
-      - scratch-fix
-    size: small
-    description:
-      "land-fq: confirm every sase CI job is green on master, close epic sase-fq with a verification note, run just
-      symvision, and mark both plan files done."
+- id: scratch-probe
+  title: Identify the OS error behind the scratch-file failure on a CI runner
+  depends_on: []
+  size: medium
+  description: 'scratch-probe: land a diagnostic that makes the next master CI run
+    report the actual OS error and resource state behind CommitLogFailure::Scratch,
+    and record the answer in the phase notes.'
+- id: scratch-fix
+  title: Fix the identified scratch-file failure at its source
+  depends_on:
+  - scratch-probe
+  size: medium
+  description: 'scratch-fix: fix the cause scratch-probe identified, carry the underlying
+    io::Error into sase-core''s commit-inventory diagnostic, and confirm the parity
+    test passes on master CI.'
+- id: land-fq
+  title: Close out epic sase-fq
+  depends_on:
+  - scratch-fix
+  size: small
+  description: 'land-fq: confirm every sase CI job is green on master, close epic
+    sase-fq with a verification note, run just symvision, and mark both plan files
+    done.'
 proposed_by: bbugyi200.athena.sase-fq.land
 parent_bead: sase-fq
 create_time: 2026-08-06 07:04:59
 status: wip
+bead_id: sase-fq.8
 ---
 
-- **PARENT:**
-  [202608/ci_master_red_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202608/ci_master_red_recovery.md)
+- **PARENT:** [202608/ci_master_red_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202608/ci_master_red_recovery.md)
+- **BEAD:** [sase-fq.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fq/sase-fq.8.md)
 
 # Plan: Fix the artifact-ref commit inventory's scratch-file failure and finish landing sase-fq
 
