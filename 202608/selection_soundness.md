@@ -62,7 +62,7 @@ create_time: 2026-08-06 08:52:25
 status: wip
 ---
 
-- **PARENT:** [202608/test_suite_tier1.md](202608/test_suite_tier1.md) (epic `sase-fp`, closed)
+- **PARENT:** [202608/test_suite_tier1.md](202608/test_suite_tier1.md)
 
 # Plan: make diff-scoped selection reliability a measured property
 
