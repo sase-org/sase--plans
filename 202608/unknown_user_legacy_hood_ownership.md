@@ -10,6 +10,12 @@ create_time: 2026-08-06 09:45:34
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.u1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.u1.md)
+- **COMMITS:**
+  - [8b8acb4](https://github.com/sase-org/sase/commit/8b8acb4335881db4d490650461652237a405dd60) — fix(agents-sync): stop
+    dismissed agents' owned legacy-v1 hoods from importing as unknown-user
+
 # Plan: Stop dismissed agents from turning owned legacy-v1 hoods into `unknown-user` imports
 
 ## Problem
