@@ -62,7 +62,7 @@ phases:
     under CI-like load.'
 proposed_by: bbugyi200.athena.tq
 create_time: 2026-08-05 21:05:31
-status: wip
+status: done
 bead_id: sase-fq
 ---
 
