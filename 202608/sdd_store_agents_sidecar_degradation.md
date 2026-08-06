@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/sdd_store_agents_sidecar_degradation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sdd_store_agents_sidecar_degradation.md)
+- **AGENTS:**
+  - [bbugyi200.athena.u8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.u8.md)
+- **COMMITS:**
+  - [baebfcd](https://github.com/sase-org/sase/commit/baebfcd216319315e169d4c189666fe3db148048) — fix(sdd-store):
+    degrade unresolvable agents sidecar instead of aborting store resolution
 
 # Plan: Stop SDD store resolution from aborting on an unresolvable agents sidecar
 
