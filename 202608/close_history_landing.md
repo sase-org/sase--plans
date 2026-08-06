@@ -1,49 +1,51 @@
 ---
 tier: epic
 title: Ship the close-history reducer so bead reopen provenance actually works
-goal: "A bead that is closed and later reopened really does keep its close reason at runtime, not only in tests: the
-  sase-core reducer that archives close metadata is released and adopted, and `sase bead search` finds an archived close
-  reason.
+goal: 'A bead that is closed and later reopened really does keep its close reason
+  at runtime, not only in tests: the sase-core reducer that archives close metadata
+  is released and adopted, and `sase bead search` finds an archived close reason.
 
-  "
+  '
 phases:
-  - id: core-search
-    title: Make archived close reasons searchable and release the reducer
-    depends_on: []
-    size: medium
-    description: "core-search: add close_history to sase-core's BEAD_SEARCH_FIELD_NAMES and searchable_fields so the
-      Rust matcher agrees with the Python snippet map, fold it into the pending close-history branch, land that branch
-      on master, and get the release published.
+- id: core-search
+  title: Make archived close reasons searchable and release the reducer
+  depends_on: []
+  size: medium
+  description: 'core-search: add close_history to sase-core''s BEAD_SEARCH_FIELD_NAMES
+    and searchable_fields so the Rust matcher agrees with the Python snippet map,
+    fold it into the pending close-history branch, land that branch on master, and
+    get the release published.
 
-      "
-  - id: adopt
-    title: Adopt the release and prove close history end to end
-    depends_on:
-      - core-search
-    size: small
-    description: "adopt: raise the sase-core-rs window to the release from core-search, refresh uv.lock and the
-      declared-minimum assertion, replace the end-to-end test's skip guard with a hard assertion, and add real CLI
-      coverage for searching an archived close reason and for the history entry a reopen writes.
+    '
+- id: adopt
+  title: Adopt the release and prove close history end to end
+  depends_on:
+  - core-search
+  size: small
+  description: 'adopt: raise the sase-core-rs window to the release from core-search,
+    refresh uv.lock and the declared-minimum assertion, replace the end-to-end test''s
+    skip guard with a hard assertion, and add real CLI coverage for searching an archived
+    close reason and for the history entry a reopen writes.
 
-      "
-  - id: land
-    title: Close epic sase-fr and retire its plan
-    depends_on:
-      - adopt
-    size: small
-    description:
-      "land: close bead sase-fr with the recorded verification and follow-up outcomes, clear anything symvision reports
-      once its epic-symbol whitelist expires, and mark the close-history plan file done."
+    '
+- id: land
+  title: Close epic sase-fr and retire its plan
+  depends_on:
+  - adopt
+  size: small
+  description: 'land: close bead sase-fr with the recorded verification and follow-up
+    outcomes, clear anything symvision reports once its epic-symbol whitelist expires,
+    and mark the close-history plan file done.'
 proposed_by: bbugyi200.athena.sase-fr.land
 parent_bead: sase-fr
 create_time: 2026-08-06 00:19:21
 status: wip
+bead_id: sase-fr.9
 ---
 
-- **PROMPT:**
-  [prompts/202608/close_history_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/close_history_landing.md)
-- **PARENT:**
-  [202608/bead_close_history.md](https://github.com/sase-org/sase--plans/blob/main/202608/bead_close_history.md)
+- **PROMPT:** [prompts/202608/close_history_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/close_history_landing.md)
+- **PARENT:** [202608/bead_close_history.md](https://github.com/sase-org/sase--plans/blob/main/202608/bead_close_history.md)
+- **BEAD:** [sase-fr.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fr/sase-fr.9.md)
 
 # Plan: Ship the close-history reducer so bead reopen provenance actually works
 
