@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/agent_prompt_wrap_width_120.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_prompt_wrap_width_120.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ua](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ua.md)
+- **COMMITS:**
+  - [5da1934](https://github.com/sase-org/sase/commit/5da193482e4f755413418330e7f5c3e681ccf73f) — fix(llm): wrap agent
+    prompts at the repo-wide 120-column width
 
 # Plan: Wrap agent prompts at the repo-wide 120-column width
 
