@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/scratch_tmpdir_leak_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/scratch_tmpdir_leak_fix.md)
+- **AGENTS:**
+  - [bbugyi200.athena.tw](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.tw.md)
+- **COMMITS:**
+  - [e0acf80](https://github.com/sase-org/sase/commit/e0acf8097775a472cb8d47e2d4b25a8cbd6aadc1) — fix(tests): stop a
+    contract test from leaking TMPDIR across its xdist worker
 
 # Plan: Stop a contract test from leaking TMPDIR into every later test on its xdist worker
 
