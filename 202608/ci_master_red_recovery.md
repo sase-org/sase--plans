@@ -1,71 +1,73 @@
 ---
 tier: epic
-title: Restore master CI to green after the sase-core 0.18 skew and the parallelism restoration
-goal: "Every job in the sase CI workflow passes on master again, each of the six independent root causes behind the
-  current failure is fixed at its source rather than suppressed, and CI regains the guarantee that source lanes actually
-  test the sase-core wheel built from sase-core master.
+title: Restore master CI to green after the sase-core 0.18 skew and the parallelism
+  restoration
+goal: 'Every job in the sase CI workflow passes on master again, each of the six independent
+  root causes behind the current failure is fixed at its source rather than suppressed,
+  and CI regains the guarantee that source lanes actually test the sase-core wheel
+  built from sase-core master.
 
-  "
+  '
 phases:
-  - id: core-window
-    title: Bump the published sase-core-rs window to 0.18.1
-    depends_on: []
-    size: small
-    description:
-      "core-window: raise the pyproject sase-core-rs constraint (and uv.lock) from >=0.17.15,<0.18.0 to >=0.18.1,<0.19.0
-      so the bead relocation binding sase already calls is guaranteed present."
-  - id: symvision-import
-    title: Give progress_fingerprint an import symvision can see
-    depends_on: []
-    size: small
-    description:
-      "symvision-import: make commit_finalizer.py import progress_fingerprint explicitly instead of reaching it through
-      a module alias, so the symvision lint stage stops reporting it as an unused public symbol."
-  - id: sidecar-git-identity
-    title: Configure a git identity on the sidecar clone in the git-sync fixtures
-    depends_on: []
-    size: small
-    description:
-      "sidecar-git-identity: set user.name/user.email on the sidecar clone built by setup_repo so tests that commit
-      there stop failing with exit 128 on runners where git cannot auto-detect an identity."
-  - id: uv-harness-tmpdir
-    title: Stop the real-uv harness leaking lock files into the watched temp root
-    depends_on: []
-    size: small
-    description:
-      "uv-harness-tmpdir: give the uv_env fixture its own TMPDIR under tmp_path so real uv subprocesses stop dropping
-      uv-setuptools-*.lock into the managed SASE temp root and tripping the session temp-leak guard."
-  - id: ci-wheel-pin
-    title: Keep CI's prebuilt core wheel installed for every just recipe in a job
-    depends_on: []
-    size: medium
-    description:
-      "ci-wheel-pin: stop later just recipes from silently re-resolving sase-core-rs back to a published wheel, so
-      source lanes really do test the sase-core commit that build-core built, and add CI-shape coverage that locks the
-      behavior in."
-  - id: core-commit-budget
-    title: Fix the silent 2s commit-log budget in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-commit-budget: replace the hard, silently-empty two-second git log budget in the artifact-ref commit
-      inventory with a generous and overridable one, land it in sase-core, and get a release published."
-  - id: commit-budget-adopt
-    title: Adopt the released commit-budget fix and stabilize the parity test
-    depends_on:
-      - core-window
-      - core-commit-budget
-    size: small
-    description:
-      "commit-budget-adopt: raise the sase-core-rs floor to the release carrying the commit-budget fix and confirm the
-      commit-completion parity test is stable under CI-like load."
+- id: core-window
+  title: Bump the published sase-core-rs window to 0.18.1
+  depends_on: []
+  size: small
+  description: 'core-window: raise the pyproject sase-core-rs constraint (and uv.lock)
+    from >=0.17.15,<0.18.0 to >=0.18.1,<0.19.0 so the bead relocation binding sase
+    already calls is guaranteed present.'
+- id: symvision-import
+  title: Give progress_fingerprint an import symvision can see
+  depends_on: []
+  size: small
+  description: 'symvision-import: make commit_finalizer.py import progress_fingerprint
+    explicitly instead of reaching it through a module alias, so the symvision lint
+    stage stops reporting it as an unused public symbol.'
+- id: sidecar-git-identity
+  title: Configure a git identity on the sidecar clone in the git-sync fixtures
+  depends_on: []
+  size: small
+  description: 'sidecar-git-identity: set user.name/user.email on the sidecar clone
+    built by setup_repo so tests that commit there stop failing with exit 128 on runners
+    where git cannot auto-detect an identity.'
+- id: uv-harness-tmpdir
+  title: Stop the real-uv harness leaking lock files into the watched temp root
+  depends_on: []
+  size: small
+  description: 'uv-harness-tmpdir: give the uv_env fixture its own TMPDIR under tmp_path
+    so real uv subprocesses stop dropping uv-setuptools-*.lock into the managed SASE
+    temp root and tripping the session temp-leak guard.'
+- id: ci-wheel-pin
+  title: Keep CI's prebuilt core wheel installed for every just recipe in a job
+  depends_on: []
+  size: medium
+  description: 'ci-wheel-pin: stop later just recipes from silently re-resolving sase-core-rs
+    back to a published wheel, so source lanes really do test the sase-core commit
+    that build-core built, and add CI-shape coverage that locks the behavior in.'
+- id: core-commit-budget
+  title: Fix the silent 2s commit-log budget in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-commit-budget: replace the hard, silently-empty two-second git
+    log budget in the artifact-ref commit inventory with a generous and overridable
+    one, land it in sase-core, and get a release published.'
+- id: commit-budget-adopt
+  title: Adopt the released commit-budget fix and stabilize the parity test
+  depends_on:
+  - core-window
+  - core-commit-budget
+  size: small
+  description: 'commit-budget-adopt: raise the sase-core-rs floor to the release carrying
+    the commit-budget fix and confirm the commit-completion parity test is stable
+    under CI-like load.'
 proposed_by: bbugyi200.athena.tq
 create_time: 2026-08-05 21:05:31
 status: wip
+bead_id: sase-fq
 ---
 
-- **PROMPT:**
-  [prompts/202608/ci_master_red_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ci_master_red_recovery.md)
+- **PROMPT:** [prompts/202608/ci_master_red_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ci_master_red_recovery.md)
+- **BEAD:** [sase-fq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-fq/README.md)
 
 # Plan: Restore master CI to green after the sase-core 0.18 skew and the parallelism restoration
 
