@@ -6,7 +6,7 @@ goal:
   prints on demand, with the derived instruction files regenerated to match.
 proposed_by: bbugyi200.athena.v1.f1
 create_time: 2026-08-07 17:38:31
-status: wip
+status: done
 ---
 
 # Revert the stale-core sentence from `build_and_run.md`
