@@ -9,6 +9,12 @@ create_time: 2026-08-07 17:38:31
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.v1.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.v1.f1.md)
+- **COMMITS:**
+  - [0c08406](https://github.com/sase-org/sase/commit/0c084068cfa7247123d4a9bc96d372ef620ac6bd)
+    — revert(memory): drop stale-core sentence from build_and_run.md
+
 # Revert the stale-core sentence from `build_and_run.md`
 
 ## Problem
