@@ -8,7 +8,7 @@ goal:
   with a bogus "Unsupported keyword on %clan" error.
 proposed_by: bbugyi200.athena.ut
 create_time: 2026-08-07 13:19:32
-status: wip
+status: done
 ---
 
 - **PROMPT:**
