@@ -7,7 +7,7 @@ goal:
   payload, and a deterministic regression test pins the behavior.'
 proposed_by: bbugyi200.athena.v4
 create_time: 2026-08-07 17:21:13
-status: wip
+status: done
 ---
 
 - **PROMPT:**
