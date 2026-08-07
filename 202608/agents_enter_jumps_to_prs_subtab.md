@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/agents_enter_jumps_to_prs_subtab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agents_enter_jumps_to_prs_subtab.md)
+- **AGENTS:**
+  - [bbugyi200.athena.uz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.uz.md)
+- **COMMITS:**
+  - [41103b5](https://github.com/sase-org/sase/commit/41103b594bd852f35e798961a5a7706f4f498246)
+    — fix(ace): route ChangeSpec navigation through the Artifacts PRs sub-tab
 
 # Plan: Route ChangeSpec navigation through the Artifacts PRs sub-tab
 
