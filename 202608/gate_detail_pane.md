@@ -8,7 +8,7 @@ goal:
   `Gates` and custom gates are required to declare the title, icon, and notes that make that card readable.
 proposed_by: bbugyi200.athena.ui
 create_time: 2026-08-07 08:39:44
-status: wip
+status: done
 ---
 
 - **PROMPT:**
