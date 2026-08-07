@@ -7,7 +7,7 @@ goal:
   longer appears and disappears as tabs come and go.
 proposed_by: bbugyi200.athena.sase-gz.land.f1
 create_time: 2026-08-07 13:34:48
-status: wip
+status: done
 ---
 
 # Plan: Always show the notification modal's tag tab strip
