@@ -19,9 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-h7.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.3.md)
 - **COMMITS:**
-  - [8e52e46](https://github.com/sase-org/sase/commit/8e52e46386c7a7950f3335e6e9ae58d8c388df90)
-    — feat(notification-gates): add declarative per-option inputs and per-option
-    submission
+  - [2f213a1](https://github.com/sase-org/sase--plans/commit/2f213a1ed034a10a36ae9fe333a42c37b05c1d8a)
+    — docs: add SDD plan for gate_input_collection epic
 
 # Plan: Declarative per-option gate inputs and per-option submission
 
