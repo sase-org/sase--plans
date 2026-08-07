@@ -7,7 +7,7 @@ goal:
   old shape.
 proposed_by: bbugyi200.athena.un
 create_time: 2026-08-07 09:38:32
-status: wip
+status: done
 ---
 
 - **PROMPT:**
