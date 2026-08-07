@@ -16,8 +16,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.un.w0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.un.w0.md)
 - **COMMITS:**
-  - [bfdc411](https://github.com/sase-org/sase-core/commit/bfdc4112a42b724957c081a500ef5eacf1cdb131)
-    — feat(bead): append a snooze note recording wake conditions
+  - [8865cf5](https://github.com/sase-org/sase/commit/8865cf54da8a014299f8771a2d92335b80b6c33b) —
+    test(bead): pin the snooze note contract across CLI, gate, and lifecycle
 
 # Plan: Always note a task bead's snooze conditions
 
