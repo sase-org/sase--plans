@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/snooze_note.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/snooze_note.md)
+- **AGENTS:**
+  - [bbugyi200.athena.un.w0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.un.w0.md)
+- **COMMITS:**
+  - [bfdc411](https://github.com/sase-org/sase-core/commit/bfdc4112a42b724957c081a500ef5eacf1cdb131)
+    — feat(bead): append a snooze note recording wake conditions
 
 # Plan: Always note a task bead's snooze conditions
 
