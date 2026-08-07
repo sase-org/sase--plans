@@ -20,8 +20,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-h7.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.8.md)
 - **COMMITS:**
-  - [65e0ec1](https://github.com/sase-org/sase-core/commit/65e0ec1e7323fc1ca958e7dabe806acc6661bd96)
-    — feat(mobile)\!: carry declared gate inputs on the mobile wire
+  - [7bbd82a](https://github.com/sase-org/sase/commit/7bbd82a47ed7b3e2aec55ec0dfce76ed128f1cb5)
+    — feat(mobile): accept per-option gate inputs on the mobile bridge
 
 # Plan: Mobile wire and Telegram step flow for declared gate inputs
 
