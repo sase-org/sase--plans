@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/gate_input_collection.md](gate_input_collection.md)
 - **BEAD:**
   [sase-h7.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h7/sase-h7.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-h7.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.3.md)
+- **COMMITS:**
+  - [a35fe91](https://github.com/sase-org/sase-core/commit/a35fe9180e2d4dc756b08019a9951cec9088c0d2)
+    — feat(xprompt): add enum input type with declared choices
 
 # Plan: Declarative per-option gate inputs and per-option submission
 
