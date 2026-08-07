@@ -10,6 +10,12 @@ create_time: 2026-08-07 13:34:48
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-gz.land.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-gz.land.f1.md)
+- **COMMITS:**
+  - [4a03351](https://github.com/sase-org/sase/commit/4a03351ecd4f8cbd041892cd4e437faa079338d4)
+    — fix(ace): keep the notification modal's tag strip visible with a single tab
+
 # Plan: Always show the notification modal's tag tab strip
 
 ## Which bar this is
