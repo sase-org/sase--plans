@@ -10,6 +10,12 @@ create_time: 2026-08-07 13:25:26
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.uu](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.uu.md)
+- **COMMITS:**
+  - [add38d7](https://github.com/sase-org/sase/commit/add38d73011e2bcbc08117c6d7e98cefc0f7c7d3)
+    — fix(ace): make Logs pane source rows non-wrapping and compact
+
 # Plan: Compact, non-wrapping source metadata in the Admin Center Logs pane
 
 ## Problem
