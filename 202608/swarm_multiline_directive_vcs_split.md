@@ -13,6 +13,12 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/swarm_multiline_directive_vcs_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/swarm_multiline_directive_vcs_split.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ut](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ut.md)
+- **COMMITS:**
+  - [4c7c635](https://github.com/sase-org/sase/commit/4c7c635d2db3b6b882a8f1844c4153771d73dc91)
+    — fix(agent): stop swarm expansion splicing VCS refs into multi-line %clan(...)
+    directives
 
 # Plan: Fix VCS-ref injection inside multi-line `%clan(...)` args during swarm expansion
 
