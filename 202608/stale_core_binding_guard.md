@@ -9,6 +9,12 @@ create_time: 2026-08-07 16:53:17
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.v1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.v1.md)
+- **COMMITS:**
+  - [5a039ef](https://github.com/sase-org/sase/commit/5a039ef149805f3d5bde7465b9c23c0050dc8bc9)
+    — fix(deps): fail loudly when the built sase_core_rs is behind the pyproject floor
+
 # Fail loudly when the built `sase_core_rs` is older than sase requires
 
 ## Problem
