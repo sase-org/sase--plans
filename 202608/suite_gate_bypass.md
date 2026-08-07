@@ -7,7 +7,7 @@ goal:
   deliberate SASE_TEST_GATE_DISABLED bypass is bounded by the host budget and announces
   itself."
 proposed_by: bbugyi200.athena.v7
-create_time: 2026-08-07 19:14:02
+create_time: 2026-08-07 19:16:03
 status: wip
 ---
 
