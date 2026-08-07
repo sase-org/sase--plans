@@ -6,7 +6,7 @@ goal:
   actionable message instead of silently producing seven false test failures.
 proposed_by: bbugyi200.athena.v1
 create_time: 2026-08-07 16:53:17
-status: wip
+status: done
 ---
 
 # Fail loudly when the built `sase_core_rs` is older than sase requires
