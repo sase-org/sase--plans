@@ -19,8 +19,9 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-h7.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.3.md)
 - **COMMITS:**
-  - [a35fe91](https://github.com/sase-org/sase-core/commit/a35fe9180e2d4dc756b08019a9951cec9088c0d2)
-    — feat(xprompt): add enum input type with declared choices
+  - [8e52e46](https://github.com/sase-org/sase/commit/8e52e46386c7a7950f3335e6e9ae58d8c388df90)
+    — feat(notification-gates): add declarative per-option inputs and per-option
+    submission
 
 # Plan: Declarative per-option gate inputs and per-option submission
 
