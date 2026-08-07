@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/prompt_cursor_readout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/prompt_cursor_readout.md)
+- **AGENTS:**
+  - [bbugyi200.athena.up](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.up.md)
+- **COMMITS:**
+  - [6399389](https://github.com/sase-org/sase/commit/6399389e5994a9fef98dceb34f0452b350f36c5c) —
+    feat(ace): show a cursor line/column readout for every prompt input pane
 
 # Plan: Show a cursor line/column readout for every prompt input pane
 
