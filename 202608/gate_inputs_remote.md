@@ -17,6 +17,11 @@ status: done
   [202608/gate_input_collection.md](https://github.com/sase-org/sase--plans/blob/main/202608/gate_input_collection.md)
 - **BEAD:**
   [sase-h7.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h7/sase-h7.8.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-h7.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.8.md)
+- **COMMITS:**
+  - [65e0ec1](https://github.com/sase-org/sase-core/commit/65e0ec1e7323fc1ca958e7dabe806acc6661bd96)
+    — feat(mobile)\!: carry declared gate inputs on the mobile wire
 
 # Plan: Mobile wire and Telegram step flow for declared gate inputs
 
