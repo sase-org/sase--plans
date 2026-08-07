@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/gate_stdin_broken_pipe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/gate_stdin_broken_pipe.md)
+- **AGENTS:**
+  - [bbugyi200.athena.v4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.v4.md)
+- **COMMITS:**
+  - [aaa8245](https://github.com/sase-org/sase/commit/aaa8245df375ee96f68bbeef62c0e1d60c3e2735)
+    — fix(notification-gates): guard streaming stdin close against broken pipe
 
 # Plan: Stop gate command execution from failing on a broken stdin pipe
 
