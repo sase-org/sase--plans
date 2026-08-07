@@ -7,7 +7,7 @@ goal:
   unfocused pane's cursor is no longer invisible.
 proposed_by: bbugyi200.athena.up
 create_time: 2026-08-07 09:51:42
-status: wip
+status: done
 ---
 
 - **PROMPT:**
