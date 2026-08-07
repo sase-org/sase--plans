@@ -7,7 +7,7 @@ goal:
   one pane, sub-tab, or action without scrolling the full reference.
 proposed_by: bbugyi200.athena.uk
 create_time: 2026-08-07 09:02:57
-status: wip
+status: done
 ---
 
 - **PROMPT:**
