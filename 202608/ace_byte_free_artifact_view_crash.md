@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/ace_byte_free_artifact_view_crash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ace_byte_free_artifact_view_crash.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ux](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ux.md)
+- **COMMITS:**
+  - [28e8ed1](https://github.com/sase-org/sase/commit/28e8ed1cebc384f1a283cf7b010c27d981b7f49d)
+    — fix(ace): materialize byte-free artifact rows before opening from Agents tab
 
 # Plan: Fix the ACE crash when opening a byte-free (VCS-backed) artifact file
 
