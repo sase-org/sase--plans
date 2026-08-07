@@ -7,7 +7,7 @@ goal:
   of pane width, title length, or jump-hint prefixes.
 proposed_by: bbugyi200.athena.uu
 create_time: 2026-08-07 13:25:26
-status: wip
+status: done
 ---
 
 # Plan: Compact, non-wrapping source metadata in the Admin Center Logs pane
