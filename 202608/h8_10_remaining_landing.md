@@ -1,50 +1,47 @@
 ---
 tier: epic
 title: Finish the verified residue and land epic sase-h8.10
-goal:
-  Epic sase-h8.10 closes only after its contract-budget target is deterministic under
-  contention, post-start commits adopt the shared load-tolerant wait convention, the
-  linked plan's dangling provenance is repaired, every proposed follow-up has a recorded
-  outcome, and the combined tree passes proportionate landing verification.
+goal: Epic sase-h8.10 closes only after its contract-budget target is deterministic
+  under contention, post-start commits adopt the shared load-tolerant wait convention,
+  the linked plan's dangling provenance is repaired, every proposed follow-up has
+  a recorded outcome, and the combined tree passes proportionate landing verification.
 phases:
-  - id: contract-budget
-    title: Replace the load-sensitive contract runtime oracle
-    depends_on: []
-    size: medium
-    description:
-      "contract-budget: replace the still-load-sensitive normalized-child-CPU
-      contract-set guard with the deterministic manifest-entry budget explicitly allowed
-      by the original contract-set plan, remove the now-unused calibration machinery,
-      and prove the guard and its diagnostic remain useful without any real-time or
-      CPU-time correctness oracle."
-  - id: post-start-integration
-    title: Integrate commits that landed after the epic began
-    depends_on: []
-    size: small
-    description:
-      "post-start-integration: migrate the post-epic plan-link concurrency waits to the
-      shared load-tolerant timeout, re-audit all non-epic commits after 2e9e1a29c for
-      wait-helper conflicts, and repair the linked epic plan's dangling parent-plan link
-      while leaving its status wip for the landing phase."
-  - id: land
-    title: Verify, close sase-h8.10, and complete its plan
-    depends_on:
-      - contract-budget
-      - post-start-integration
-    size: small
-    description:
-      "land: verify every child and epic commit on the combined tree, run the
-      contention, full, visual, and flake-gate criteria, record every follow-up outcome,
-      close sase-h8.10 with a comprehensive note, run post-close symvision and remove
-      its findings, then set status done in plans:202608/flake_class_residue.md."
+- id: contract-budget
+  title: Replace the load-sensitive contract runtime oracle
+  depends_on: []
+  size: medium
+  description: 'contract-budget: replace the still-load-sensitive normalized-child-CPU
+    contract-set guard with the deterministic manifest-entry budget explicitly allowed
+    by the original contract-set plan, remove the now-unused calibration machinery,
+    and prove the guard and its diagnostic remain useful without any real-time or
+    CPU-time correctness oracle.'
+- id: post-start-integration
+  title: Integrate commits that landed after the epic began
+  depends_on: []
+  size: small
+  description: 'post-start-integration: migrate the post-epic plan-link concurrency
+    waits to the shared load-tolerant timeout, re-audit all non-epic commits after
+    2e9e1a29c for wait-helper conflicts, and repair the linked epic plan''s dangling
+    parent-plan link while leaving its status wip for the landing phase.'
+- id: land
+  title: Verify, close sase-h8.10, and complete its plan
+  depends_on:
+  - contract-budget
+  - post-start-integration
+  size: small
+  description: 'land: verify every child and epic commit on the combined tree, run
+    the contention, full, visual, and flake-gate criteria, record every follow-up
+    outcome, close sase-h8.10 with a comprehensive note, run post-close symvision
+    and remove its findings, then set status done in plans:202608/flake_class_residue.md.'
 proposed_by: bbugyi200.athena.sase-h8.10.land
 parent_bead: sase-h8.10
 create_time: 2026-08-08 13:27:08
 status: wip
+bead_id: sase-h8.10.5
 ---
 
-- **PARENT:**
-  [202608/flake_class_residue.md](https://github.com/sase-org/sase--plans/blob/main/202608/flake_class_residue.md)
+- **PARENT:** [202608/flake_class_residue.md](https://github.com/sase-org/sase--plans/blob/main/202608/flake_class_residue.md)
+- **BEAD:** [sase-h8.10.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h8/sase-h8.10.5.md)
 
 # Plan: Finish and land `sase-h8.10`
 
