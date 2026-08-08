@@ -1,59 +1,55 @@
 ---
 tier: epic
 title: Canonical xprompt skill directories and namespaced invocation
-goal: "Xprompt-backed agent skills are defined only in canonical sase/skills sources,
-  remain invokable as agent skills with /<name>, and require a skills/ namespace
-  whenever they are expanded as xprompts.
+goal: 'Xprompt-backed agent skills are defined only in canonical sase/skills sources,
+  remain invokable as agent skills with /<name>, and require a skills/ namespace whenever
+  they are expanded as xprompts.
 
-  "
+  '
 phases:
-  - id: core-contract
-    title: Shared skill layout and editor contract
-    depends_on: []
-    size: medium
-    description:
-      "core-contract: define canonical skill sources, dual names, and editor behavior in
-      the Rust backend."
-  - id: sase-runtime
-    title: Python discovery, validation, generation, and bundled migration
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "sase-runtime: consume the core contract, enforce canonical placement, preserve
-      slash names, and migrate bundled sources."
-  - id: user-surfaces
-    title: Catalog, authoring, completion, and documentation updates
-    depends_on:
-      - sase-runtime
-    size: medium
-    description:
-      "user-surfaces: expose the split xprompt and slash names consistently across every
-      user-facing workflow."
-  - id: source-migrations
-    title: Enabled-project and chezmoi source migration
-    depends_on:
-      - sase-runtime
-    size: small
-    description:
-      "source-migrations: re-audit enabled projects and move every personal skill source
-      and reference to the canonical layout."
-  - id: rollout-verification
-    title: Cross-repository validation and canonical deployment
-    depends_on:
-      - user-surfaces
-      - source-migrations
-    size: small
-    description:
-      "rollout-verification: prove the hard cutover end to end and deploy generated
-      skills only from landed canonical sources."
+- id: core-contract
+  title: Shared skill layout and editor contract
+  depends_on: []
+  size: medium
+  description: 'core-contract: define canonical skill sources, dual names, and editor
+    behavior in the Rust backend.'
+- id: sase-runtime
+  title: Python discovery, validation, generation, and bundled migration
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'sase-runtime: consume the core contract, enforce canonical placement,
+    preserve slash names, and migrate bundled sources.'
+- id: user-surfaces
+  title: Catalog, authoring, completion, and documentation updates
+  depends_on:
+  - sase-runtime
+  size: medium
+  description: 'user-surfaces: expose the split xprompt and slash names consistently
+    across every user-facing workflow.'
+- id: source-migrations
+  title: Enabled-project and chezmoi source migration
+  depends_on:
+  - sase-runtime
+  size: small
+  description: 'source-migrations: re-audit enabled projects and move every personal
+    skill source and reference to the canonical layout.'
+- id: rollout-verification
+  title: Cross-repository validation and canonical deployment
+  depends_on:
+  - user-surfaces
+  - source-migrations
+  size: small
+  description: 'rollout-verification: prove the hard cutover end to end and deploy
+    generated skills only from landed canonical sources.'
 proposed_by: bbugyi200.athena.vh
 create_time: 2026-08-07 22:51:10
 status: wip
+bead_id: sase-hb
 ---
 
-- **PROMPT:**
-  [prompts/202608/xprompt_skill_directories.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_skill_directories.md)
+- **PROMPT:** [prompts/202608/xprompt_skill_directories.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_skill_directories.md)
+- **BEAD:** [sase-hb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hb/README.md)
 
 # Plan: Canonical xprompt skill directories and namespaced invocation
 
