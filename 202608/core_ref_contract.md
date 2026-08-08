@@ -16,6 +16,11 @@ status: done
   [202608/artifact_reference_xprompts.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_reference_xprompts.md)
 - **BEAD:**
   [sase-ho.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ho/sase-ho.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ho.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ho.1.md)
+- **COMMITS:**
+  - [4071bf0](https://github.com/sase-org/sase-core/commit/4071bf083ea59e1ecdb97a64c816d272f3f5ad66)
+    — feat(core)\!: add reference artifact contract
 
 # Add the shared reference and filter contract to sase-core
 
