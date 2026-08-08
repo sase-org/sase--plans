@@ -13,8 +13,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.vm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vm.md)
 - **COMMITS:**
-  - [315a5f9](https://github.com/sase-org/sase/commit/315a5f9ffbb4ee110c5ca5b6d0ae5a6f6c45f54a)
-    — fix(bead): fail cleanly on SDD materialization refusal in read commands
+  - [19167fb](https://github.com/sase-org/sase-telegram/commit/19167fbd1ed7a678bb5d29dbcce4b3095603069c)
+    — fix(bead): parse the JSON list contract and enumerate enabled projects only
 
 # Plan: Repair the Telegram /bead command end to end
 
