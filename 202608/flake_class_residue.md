@@ -1,75 +1,69 @@
 ---
 tier: epic
-title:
-  Finish epic sase-h8 by landing the never-implemented clock phase, clearing the four
-  nodes that failed its exit criterion, and closing the wait-idiom gate gaps
-goal: "Epic sase-h8 reaches the exit criterion it wrote for itself and could not meet.
+title: Finish epic sase-h8 by landing the never-implemented clock phase, clearing
+  the four nodes that failed its exit criterion, and closing the wait-idiom gate gaps
+goal: 'Epic sase-h8 reaches the exit criterion it wrote for itself and could not meet.
   The `clock` phase, whose bead closed `done` with zero commits after its agent stalled
   on a soak, is actually implemented: the stall watchdog runs off an injectable time
-  source so its five F2 nodes assert exact episode counts instead of tolerances, and the
-  contract-set budget guard stops depending on real elapsed wall clock. The four nodes
-  that failed `just test-contention` at the land attempt are fixed by mechanism under
-  the same discipline. The wait-helper gate stops missing the idiom it was built to
-  retire, so post-epic commits cannot silently reintroduce it. Only then does sase-h8
+  source so its five F2 nodes assert exact episode counts instead of tolerances, and
+  the contract-set budget guard stops depending on real elapsed wall clock. The four
+  nodes that failed `just test-contention` at the land attempt are fixed by mechanism
+  under the same discipline. The wait-helper gate stops missing the idiom it was built
+  to retire, so post-epic commits cannot silently reintroduce it. Only then does sase-h8
   close and sase-ct close on the measured, enforced criterion the epic promised.
 
-  "
+  '
 phases:
-  - id: clock
-    title: Actually implement the clock phase that sase-h8.5 closed without landing
-    depends_on: []
-    size: medium
-    description:
-      "clock: drive `EventLoopStallWatchdog` from an injectable time source so the five
-      F2 `test_stall_watchdog.py` nodes plus
-      `test_nested_pause_requires_final_resume_before_detection` produce hitch and stall
-      episodes deterministically, restore exact episode counts in place of the `>= 1`
-      tolerances two prior fixes installed, keep one real-timer end-to-end test, and
-      move `test_contract_set_serial_runtime_stays_within_budget` off wall clock now
-      that sase-h8.7's F6 fix unblocked it."
-  - id: residue
-    title: Fix the four nodes that failed the sase-h8.9 exit criterion
-    depends_on:
-      - clock
-    size: medium
-    description:
-      "residue: fix the four nodes `just test-contention` failed on at the land attempt
-      — three wall-clock-shaped (`test_first_page_paints_before_full_extension`,
-      `test_lowered_threshold_soak_keeps_fixed_paths_responsive`,
-      `test_timed_out_summary_script_never_blocks_launch`) and one off-pump
-      (`test_apostrophe_enters_jump_mode_with_hints_skipping_headers`) — using the
-      conventions `clock` establishes and the sase-h8.2 wait primitive."
-  - id: gate-gaps
-    title: Close the wait-idiom gate gaps that let the retired pattern back in
-    depends_on: []
-    size: medium
-    description:
-      "gate-gaps: widen `tools/check_test_wait_helpers` past the two roots and the one
-      function name it currently matches so it catches the sixth `_wait_until` copy, the
-      inline `for _ in range(N): await pilot.pause()` bounded-wait loops that landed
-      after the epic's waits phase, and the raw ACE panel injections sase-h8.6 asked
-      for; migrate every call site the widened check reports."
-  - id: land
-    title: Meet the exit criterion, close sase-ct, and close the epic
-    depends_on:
-      - clock
-      - residue
-      - gate-gaps
-    size: small
-    description:
-      "land: re-run all four sase-h8 exit criteria on the combined tree, file genuinely
-      distinct residue with /sase_new_task, close sase-ct with the note its plan
-      specifies, then close sase-h8, run `just symvision` and remove what it reports,
-      and mark both plan files done."
+- id: clock
+  title: Actually implement the clock phase that sase-h8.5 closed without landing
+  depends_on: []
+  size: medium
+  description: 'clock: drive `EventLoopStallWatchdog` from an injectable time source
+    so the five F2 `test_stall_watchdog.py` nodes plus `test_nested_pause_requires_final_resume_before_detection`
+    produce hitch and stall episodes deterministically, restore exact episode counts
+    in place of the `>= 1` tolerances two prior fixes installed, keep one real-timer
+    end-to-end test, and move `test_contract_set_serial_runtime_stays_within_budget`
+    off wall clock now that sase-h8.7''s F6 fix unblocked it.'
+- id: residue
+  title: Fix the four nodes that failed the sase-h8.9 exit criterion
+  depends_on:
+  - clock
+  size: medium
+  description: 'residue: fix the four nodes `just test-contention` failed on at the
+    land attempt — three wall-clock-shaped (`test_first_page_paints_before_full_extension`,
+    `test_lowered_threshold_soak_keeps_fixed_paths_responsive`, `test_timed_out_summary_script_never_blocks_launch`)
+    and one off-pump (`test_apostrophe_enters_jump_mode_with_hints_skipping_headers`)
+    — using the conventions `clock` establishes and the sase-h8.2 wait primitive.'
+- id: gate-gaps
+  title: Close the wait-idiom gate gaps that let the retired pattern back in
+  depends_on: []
+  size: medium
+  description: 'gate-gaps: widen `tools/check_test_wait_helpers` past the two roots
+    and the one function name it currently matches so it catches the sixth `_wait_until`
+    copy, the inline `for _ in range(N): await pilot.pause()` bounded-wait loops that
+    landed after the epic''s waits phase, and the raw ACE panel injections sase-h8.6
+    asked for; migrate every call site the widened check reports.'
+- id: land
+  title: Meet the exit criterion, close sase-ct, and close the epic
+  depends_on:
+  - clock
+  - residue
+  - gate-gaps
+  size: small
+  description: 'land: re-run all four sase-h8 exit criteria on the combined tree,
+    file genuinely distinct residue with /sase_new_task, close sase-ct with the note
+    its plan specifies, then close sase-h8, run `just symvision` and remove what it
+    reports, and mark both plan files done.'
 proposed_by: bbugyi200.athena.sase-h8.land
 parent_bead: sase-h8
 create_time: 2026-08-08 10:56:16
 status: wip
+bead_id: sase-h8.10
 ---
 
-- **PROMPT:**
-  [prompts/202608/flake_class_residue.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/flake_class_residue.md)
+- **PROMPT:** [prompts/202608/flake_class_residue.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/flake_class_residue.md)
 - **PARENT:** [202608/parallel_suite_flake_class.md](parallel_suite_flake_class.md)
+- **BEAD:** [sase-h8.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h8/sase-h8.10.md)
 
 # Plan: Finish epic sase-h8
 
