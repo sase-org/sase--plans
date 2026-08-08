@@ -5,9 +5,12 @@ goal:
   Hook-created Highlights PDFs retain the repository-relative Markdown source path as
   synchronized research metadata.
 proposed_by: bbugyi200.athena.vq
-create_time: 2026-08-08 11:21:42
+create_time: 2026-08-08 11:22:43
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/research_highlights_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/research_highlights_provenance.md)
 
 # Plan: Add research-source provenance to hook-created Highlights PDFs
 
