@@ -17,6 +17,11 @@ status: done
   [202608/gate_input_collection.md](https://github.com/sase-org/sase--plans/blob/main/202608/gate_input_collection.md)
 - **BEAD:**
   [sase-h7.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h7/sase-h7.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-h7.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h7.6.md)
+- **COMMITS:**
+  - [e1da6d1](https://github.com/sase-org/sase/commit/e1da6d1b76fd1ea28bc620ab20ad63085842e932)
+    — feat(notification-gates): collect typed gate inputs in the ACE modals
 
 # Plan: Generic typed input collection in the ACE gate modals
 
