@@ -47,7 +47,7 @@ phases:
     and full combined-tree verification for artifact reference xprompts.'
 proposed_by: bbugyi200.athena.vw
 create_time: 2026-08-08 13:31:48
-status: wip
+status: done
 bead_id: sase-ho
 ---
 
