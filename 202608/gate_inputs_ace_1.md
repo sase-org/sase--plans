@@ -9,7 +9,7 @@ goal:
   collect typed, validated input with no per-kind code.
 proposed_by: bbugyi200.athena.sase-h7.6
 bead: sase-h7.6
-create_time: 2026-08-07 20:10:39
+create_time: 2026-08-07 20:10:44
 status: wip
 ---
 
