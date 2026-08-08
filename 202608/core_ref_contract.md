@@ -6,10 +6,12 @@ goal:
   resolution, canonicalization, inventories, and native completion.
 proposed_by: bbugyi200.athena.sase-ho.1
 bead: sase-ho.1
-create_time: 2026-08-08 13:46:02
+create_time: 2026-08-08 13:46:06
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/core_ref_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/core_ref_contract.md)
 - **PARENT:**
   [202608/artifact_reference_xprompts.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_reference_xprompts.md)
 - **BEAD:**
