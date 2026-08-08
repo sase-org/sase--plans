@@ -9,9 +9,12 @@ goal:
   the hook loads again and fires on every research report except the two
   pre-consolidation `#research_swarm` researchers' throwaway reports.
 proposed_by: bbugyi200.athena.vc.f1
-create_time: 2026-08-07 21:50:54
+create_time: 2026-08-07 21:51:57
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/chezmoi_research_highlights_filters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/chezmoi_research_highlights_filters.md)
 
 # Plan: chezmoi `research-highlights` → `path_globs` + `agent_name_globs`
 
