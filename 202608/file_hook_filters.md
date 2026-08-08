@@ -6,7 +6,7 @@ goal:
   event-selection field under filters, and the research-highlights hook is migrated
   without changing its behavior.
 proposed_by: bbugyi200.athena.vq.f1
-create_time: 2026-08-08 11:43:25
+create_time: 2026-08-08 11:44:42
 status: wip
 ---
 
