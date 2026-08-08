@@ -11,6 +11,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/research_highlights_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/research_highlights_provenance.md)
+- **AGENTS:**
+  - [bbugyi200.athena.vq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vq.md)
+- **COMMITS:**
+  - [7aef61c](https://github.com/bobs-org/bob-cli/commit/7aef61ca5a4b4e13e65d12f243a9ee2953503a44)
+    — feat(highlights): embed research provenance in created PDFs
 
 # Plan: Add research-source provenance to hook-created Highlights PDFs
 
