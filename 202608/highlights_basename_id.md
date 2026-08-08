@@ -9,6 +9,12 @@ create_time: 2026-08-08 12:36:03
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.vq.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vq.f0.md)
+- **COMMITS:**
+  - [3a615f3](https://github.com/bobs-org/bob-cli/commit/3a615f329d2c6e90a0a3d1bd152b57a5be75df35)
+    — feat(highlights)\!: derive marker ids from markdown basenames
+
 # Plan: Use source basenames as Highlights research IDs
 
 ## Goal
