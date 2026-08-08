@@ -1,96 +1,90 @@
 ---
 tier: epic
 title: Meta Muse Code as a first-class SASE LLM provider
-goal: "SASE can run agents on Meta's Muse Code CLI as a native provider — selected by
-  config, `%model:muse/...`, or `SASE_MUSE_PATH` — with reply, usage, and tool-call
+goal: 'SASE can run agents on Meta''s Muse Code CLI as a native provider — selected
+  by config, `%model:muse/...`, or `SASE_MUSE_PATH` — with reply, usage, and tool-call
   artifacts; correctly-rendered Muse-native skills; a data-sharing advisory that makes
-  the Contributor model's training terms impossible to miss; and `sase agent-cli`
+  the Contributor model''s training terms impossible to miss; and `sase agent-cli`
   install/update support that works for a channel-versioned, self-updating CLI.
 
-  "
+  '
 phases:
-  - id: cli_meta
-    title: Channel-versioned agent-CLI detection and update
-    depends_on: []
-    size: medium
-    description:
-      "cli_meta: teach agent-CLI detection, latest-version resolution, and update
-      planning about CLIs distributed by a version channel instead of npm — a
-      JSON-endpoint latest oracle, an exact version comparator, env-carrying self-update
-      commands, and the `script` install manager."
-  - id: provider
-    title: The Muse provider and its JSONL stream parser
-    depends_on: []
-    size: medium
-    description:
-      "provider: add `MuseProvider` and `_subprocess_muse`, register the `muse` entry
-      point, map tiers and the full canonical reasoning-effort vocabulary, deploy skills
-      to Muse's native root, add the doctor setup fallback, and test both against
-      recorded release-keyed fixtures."
-  - id: cli_install
-    title: sase agent-cli install
-    depends_on:
-      - cli_meta
-    size: medium
-    description:
-      "cli_install: add a confirmed, shell-free `sase agent-cli install` subcommand that
-      fetches a provider-declared installer over HTTPS, shows its digest before running
-      it, and never edits the user's shell rc files."
-  - id: artifacts
-    title: Usage, tool-call, and model-identity artifacts
-    depends_on:
-      - provider
-    size: medium
-    description:
-      "artifacts: extract tool calls from the Muse event stream, recover token usage
-      from the session log SASE owns via `--session-id`, and record the model Muse
-      actually configured."
-  - id: advisory
-    title: Model advisories and the Contributor data-sharing guard
-    depends_on:
-      - provider
-    size: medium
-    description:
-      "advisory: add a provider-neutral model-advisory hook, surface it in the model
-      picker, `%model` completion, and model labels, and add a doctor check that reports
-      when a resolved default routes SASE traffic to an advisory-flagged model."
-  - id: polish
-    title: ACE styling and provider badges
-    depends_on:
-      - provider
-    size: small
-    description:
-      "polish: give Muse a Meta-blue provider palette, an emoji badge, and a family
-      color so agent rows, model labels, and integrations render it as a known provider
-      instead of the neutral fallback."
-  - id: docs
-    title: Documentation sweep
-    depends_on:
-      - cli_install
-      - artifacts
-      - advisory
-      - polish
-    size: medium
-    description:
-      "docs: add the Muse provider section and update every provider enumeration across
-      the docs set and `default_config.yml` comments, including the new install/update
-      and advisory behavior."
-  - id: verify
-    title: Live end-to-end verification
-    depends_on:
-      - docs
-    size: small
-    description:
-      "verify: run real SASE agents on Muse, confirm the artifacts and skill rendering
-      on disk, exercise `sase agent-cli` install/update against the live channel, and
-      land the tree green under `just check-full`."
+- id: cli_meta
+  title: Channel-versioned agent-CLI detection and update
+  depends_on: []
+  size: medium
+  description: 'cli_meta: teach agent-CLI detection, latest-version resolution, and
+    update planning about CLIs distributed by a version channel instead of npm — a
+    JSON-endpoint latest oracle, an exact version comparator, env-carrying self-update
+    commands, and the `script` install manager.'
+- id: provider
+  title: The Muse provider and its JSONL stream parser
+  depends_on: []
+  size: medium
+  description: 'provider: add `MuseProvider` and `_subprocess_muse`, register the
+    `muse` entry point, map tiers and the full canonical reasoning-effort vocabulary,
+    deploy skills to Muse''s native root, add the doctor setup fallback, and test
+    both against recorded release-keyed fixtures.'
+- id: cli_install
+  title: sase agent-cli install
+  depends_on:
+  - cli_meta
+  size: medium
+  description: 'cli_install: add a confirmed, shell-free `sase agent-cli install`
+    subcommand that fetches a provider-declared installer over HTTPS, shows its digest
+    before running it, and never edits the user''s shell rc files.'
+- id: artifacts
+  title: Usage, tool-call, and model-identity artifacts
+  depends_on:
+  - provider
+  size: medium
+  description: 'artifacts: extract tool calls from the Muse event stream, recover
+    token usage from the session log SASE owns via `--session-id`, and record the
+    model Muse actually configured.'
+- id: advisory
+  title: Model advisories and the Contributor data-sharing guard
+  depends_on:
+  - provider
+  size: medium
+  description: 'advisory: add a provider-neutral model-advisory hook, surface it in
+    the model picker, `%model` completion, and model labels, and add a doctor check
+    that reports when a resolved default routes SASE traffic to an advisory-flagged
+    model.'
+- id: polish
+  title: ACE styling and provider badges
+  depends_on:
+  - provider
+  size: small
+  description: 'polish: give Muse a Meta-blue provider palette, an emoji badge, and
+    a family color so agent rows, model labels, and integrations render it as a known
+    provider instead of the neutral fallback.'
+- id: docs
+  title: Documentation sweep
+  depends_on:
+  - cli_install
+  - artifacts
+  - advisory
+  - polish
+  size: medium
+  description: 'docs: add the Muse provider section and update every provider enumeration
+    across the docs set and `default_config.yml` comments, including the new install/update
+    and advisory behavior.'
+- id: verify
+  title: Live end-to-end verification
+  depends_on:
+  - docs
+  size: small
+  description: 'verify: run real SASE agents on Muse, confirm the artifacts and skill
+    rendering on disk, exercise `sase agent-cli` install/update against the live channel,
+    and land the tree green under `just check-full`.'
 proposed_by: bbugyi200.athena.ve
 create_time: 2026-08-07 20:45:30
 status: wip
+bead_id: sase-ha
 ---
 
-- **PROMPT:**
-  [prompts/202608/muse_provider.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/muse_provider.md)
+- **PROMPT:** [prompts/202608/muse_provider.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/muse_provider.md)
+- **BEAD:** [sase-ha](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ha/README.md)
 
 # Plan: Meta Muse Code as a first-class SASE LLM provider
 
