@@ -7,7 +7,7 @@ goal:
   surface ever pastes a raw Python traceback into the chat."
 proposed_by: bbugyi200.athena.vm
 create_time: 2026-08-07 23:27:56
-status: wip
+status: done
 ---
 
 # Plan: Repair the Telegram /bead command end to end
