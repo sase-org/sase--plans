@@ -13,8 +13,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.vq.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vq.f1.md)
 - **COMMITS:**
-  - [4bf7805](https://github.com/sase-org/sase/commit/4bf78056c0bf22fe487fd2d402ff8a8a5b9d382a)
-    — feat(config)\!: nest file hook filters
+  - [ed0b708](https://github.com/bbugyi200/dotfiles/commit/ed0b708c15305f175dd4e0081604bb1d41579710)
+    — chore(config): nest SASE file hook filters
 
 # Plan: Nest file-hook filters under `filters`
 
