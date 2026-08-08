@@ -10,6 +10,12 @@ create_time: 2026-08-07 20:16:47
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.va](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.va.md)
+- **COMMITS:**
+  - [99397cb](https://github.com/bbugyi200/bugyi-chops/commit/99397cb426bedb5d8c72f620055645c85f1b85b3)
+    — fix(ci-watch): route release notifications to the ci tab
+
 # Plan: Merge the ACE notification Release tab into the CI tab
 
 ## Problem
