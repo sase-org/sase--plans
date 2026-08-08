@@ -1,63 +1,58 @@
 ---
 tier: epic
 title: Artifact reference xprompts
-goal:
-  Define artifact-reference renderers as contextual `#ref/` xprompts, automatically
-  synthesize and configure them for sidecar repositories, and enforce one shared
-  path-filter contract in resolution and completion.
+goal: Define artifact-reference renderers as contextual `#ref/` xprompts, automatically
+  synthesize and configure them for sidecar repositories, and enforce one shared path-filter
+  contract in resolution and completion.
 phases:
-  - id: core-ref-contract
-    title: Add the shared reference and filter contract to sase-core
-    depends_on: []
-    size: large
-    description:
-      "core-ref-contract: extend the Rust content-layout, artifact-reference, catalog,
-      and completion wires with contextual ref sources, path filters, and deterministic
-      filtered-path behavior."
-  - id: python-ref-registry
-    title: Build the Python ref registry and sidecar configuration
-    depends_on:
-      - core-ref-contract
-    size: large
-    description:
-      "python-ref-registry: consume the new core contract, load `sase/refs`, synthesize
-      sidecar ref xprompts, ship builtin renderers, and expose validated config and
-      catalog metadata."
-  - id: artifact-rendering
-    title: Route artifact expansion through ref xprompts
-    depends_on:
-      - python-ref-registry
-    size: medium
-    description:
-      "artifact-rendering: make `#ref/` and `@` use one late resolver-renderer pipeline
-      while preserving staging, consumption tracking, builtin output compatibility, and
-      Jinja safety."
-  - id: reference-completion
-    title: Unify filtered completion across invocation surfaces
-    depends_on:
-      - core-ref-contract
-      - python-ref-registry
-    size: medium
-    description:
-      "reference-completion: drive TUI and LSP completion for both `@kind:` and
-      `#ref/kind` from the same filtered artifact inventory and invalidate it on all
-      relevant source/config changes."
-  - id: integration-and-docs
-    title: Prove the end-to-end contract and document it
-    depends_on:
-      - artifact-rendering
-      - reference-completion
-    size: medium
-    description:
-      "integration-and-docs: add cross-surface tests, migration/config documentation,
-      and full combined-tree verification for artifact reference xprompts."
+- id: core-ref-contract
+  title: Add the shared reference and filter contract to sase-core
+  depends_on: []
+  size: large
+  description: 'core-ref-contract: extend the Rust content-layout, artifact-reference,
+    catalog, and completion wires with contextual ref sources, path filters, and deterministic
+    filtered-path behavior.'
+- id: python-ref-registry
+  title: Build the Python ref registry and sidecar configuration
+  depends_on:
+  - core-ref-contract
+  size: large
+  description: 'python-ref-registry: consume the new core contract, load `sase/refs`,
+    synthesize sidecar ref xprompts, ship builtin renderers, and expose validated
+    config and catalog metadata.'
+- id: artifact-rendering
+  title: Route artifact expansion through ref xprompts
+  depends_on:
+  - python-ref-registry
+  size: medium
+  description: 'artifact-rendering: make `#ref/` and `@` use one late resolver-renderer
+    pipeline while preserving staging, consumption tracking, builtin output compatibility,
+    and Jinja safety.'
+- id: reference-completion
+  title: Unify filtered completion across invocation surfaces
+  depends_on:
+  - core-ref-contract
+  - python-ref-registry
+  size: medium
+  description: 'reference-completion: drive TUI and LSP completion for both `@kind:`
+    and `#ref/kind` from the same filtered artifact inventory and invalidate it on
+    all relevant source/config changes.'
+- id: integration-and-docs
+  title: Prove the end-to-end contract and document it
+  depends_on:
+  - artifact-rendering
+  - reference-completion
+  size: medium
+  description: 'integration-and-docs: add cross-surface tests, migration/config documentation,
+    and full combined-tree verification for artifact reference xprompts.'
 proposed_by: bbugyi200.athena.vw
 create_time: 2026-08-08 13:31:48
 status: wip
+bead_id: sase-ho
 ---
 
-- **PROMPT:**
-  [prompts/202608/artifact_reference_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifact_reference_xprompts.md)
+- **PROMPT:** [prompts/202608/artifact_reference_xprompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifact_reference_xprompts.md)
+- **BEAD:** [sase-ho](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ho/README.md)
 
 # Artifact reference xprompts
 
