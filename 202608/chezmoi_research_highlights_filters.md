@@ -15,6 +15,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/chezmoi_research_highlights_filters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/chezmoi_research_highlights_filters.md)
+- **AGENTS:**
+  - [bbugyi200.athena.vc.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vc.f1.md)
+- **COMMITS:**
+  - [cee2a01](https://github.com/bbugyi200/dotfiles/commit/cee2a0106607c759d17e23500cf925ee1c0e788b)
+    — feat(file-hooks): migrate research-highlights to path_globs + agent_name_globs
 
 # Plan: chezmoi `research-highlights` → `path_globs` + `agent_name_globs`
 
