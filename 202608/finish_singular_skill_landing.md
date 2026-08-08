@@ -1,47 +1,44 @@
 ---
 tier: epic
 title: Finish and land the singular xprompt skill namespace epic
-goal: "Epic sase-hi closes only after a published core binding provides singular skill
-  references, the latest primary tree adopts that release alongside post-start core and
-  Python work, post-close Symvision is clean, and the linked plans are done.
+goal: 'Epic sase-hi closes only after a published core binding provides singular skill
+  references, the latest primary tree adopts that release alongside post-start core
+  and Python work, post-close Symvision is clean, and the linked plans are done.
 
-  "
+  '
 phases:
-  - id: release_compatible_core_binding
-    title: Publish and verify the compatible core binding
-    depends_on: []
-    size: medium
-    description:
-      "release_compatible_core_binding: publish the release-plz-managed binding that
-      contains the singular skill contract and later compatible core work, then verify
-      the exact distribution."
-  - id: adopt_release_and_reconcile_primary
-    title: Adopt the release and integrate the latest primary tree
-    depends_on:
-      - release_compatible_core_binding
-    size: medium
-    description:
-      "adopt_release_and_reconcile_primary: require the published binding, reconcile
-      later Patch and artifact-ref adoption, and prove the combined singular-skill
-      contract with full repository gates."
-  - id: land_sase_hi
-    title: Verify, close, clean, and complete the epic
-    depends_on:
-      - adopt_release_and_reconcile_primary
-    size: small
-    description:
-      "land_sase_hi: repeat the bead, commit, source, and follow-up audit; close
-      sase-hi; run post-close Symvision cleanup; and mark the linked plans done."
+- id: release_compatible_core_binding
+  title: Publish and verify the compatible core binding
+  depends_on: []
+  size: medium
+  description: 'release_compatible_core_binding: publish the release-plz-managed binding
+    that contains the singular skill contract and later compatible core work, then
+    verify the exact distribution.'
+- id: adopt_release_and_reconcile_primary
+  title: Adopt the release and integrate the latest primary tree
+  depends_on:
+  - release_compatible_core_binding
+  size: medium
+  description: 'adopt_release_and_reconcile_primary: require the published binding,
+    reconcile later Patch and artifact-ref adoption, and prove the combined singular-skill
+    contract with full repository gates.'
+- id: land_sase_hi
+  title: Verify, close, clean, and complete the epic
+  depends_on:
+  - adopt_release_and_reconcile_primary
+  size: small
+  description: 'land_sase_hi: repeat the bead, commit, source, and follow-up audit;
+    close sase-hi; run post-close Symvision cleanup; and mark the linked plans done.'
 proposed_by: bbugyi200.athena.sase-hi.land
 parent_bead: sase-hi
 create_time: 2026-08-08 14:50:28
 status: wip
+bead_id: sase-hi.4
 ---
 
-- **PROMPT:**
-  [prompts/202608/finish_singular_skill_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_singular_skill_landing.md)
-- **PARENT:**
-  [202608/xprompt_skill_singular_namespace.md](https://github.com/sase-org/sase--plans/blob/main/202608/xprompt_skill_singular_namespace.md)
+- **PROMPT:** [prompts/202608/finish_singular_skill_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_singular_skill_landing.md)
+- **PARENT:** [202608/xprompt_skill_singular_namespace.md](https://github.com/sase-org/sase--plans/blob/main/202608/xprompt_skill_singular_namespace.md)
+- **BEAD:** [sase-hi.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hi/sase-hi.4.md)
 
 # Finish and land the singular xprompt skill namespace epic
 
