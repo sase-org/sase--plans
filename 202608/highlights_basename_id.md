@@ -12,8 +12,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.vq.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vq.f0.md)
 - **COMMITS:**
-  - [3a615f3](https://github.com/bobs-org/bob-cli/commit/3a615f329d2c6e90a0a3d1bd152b57a5be75df35)
-    — feat(highlights)\!: derive marker ids from markdown basenames
+  - [98db6ff](https://github.com/bbugyi200/dotfiles/commit/98db6fff801f5b228db393ee032b487ce5cb87dc)
+    — chore(sase): use basename ids in research highlight hook
 
 # Plan: Use source basenames as Highlights research IDs
 
