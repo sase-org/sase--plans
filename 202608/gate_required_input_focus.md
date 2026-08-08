@@ -10,6 +10,12 @@ create_time: 2026-08-08 10:17:56
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.vo](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vo.md)
+- **COMMITS:**
+  - [010b01a](https://github.com/sase-org/sase/commit/010b01a4143e7e5fac5fb2efe26182245c86cc0c)
+    — fix: focus invalid gate inputs before warning
+
 # Focus required gate input when a decision shortcut cannot submit
 
 ## Goal
