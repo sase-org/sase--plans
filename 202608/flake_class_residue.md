@@ -62,7 +62,6 @@ bead_id: sase-h8.10
 ---
 
 - **PROMPT:** [prompts/202608/flake_class_residue.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/flake_class_residue.md)
-- **PARENT:** [202608/parallel_suite_flake_class.md](parallel_suite_flake_class.md)
 - **BEAD:** [sase-h8.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h8/sase-h8.10.md)
 
 # Plan: Finish epic sase-h8
