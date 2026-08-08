@@ -11,6 +11,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/launch_state_thrash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/launch_state_thrash.md)
+- **AGENTS:**
+  - [bbugyi200.athena.vt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vt.md)
+- **COMMITS:**
+  - [8037b94](https://github.com/sase-org/sase/commit/8037b94969220422b644221a23ff84abf66920ef)
+    — fix(agents): coalesce launch artifact refreshes
 
 # Stop launch-time STARTING/RUNNING refresh thrash
 
