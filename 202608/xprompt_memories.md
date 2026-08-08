@@ -1,58 +1,54 @@
 ---
 tier: epic
 title: Xprompt memories and memory namespace invocation
-goal:
-  "Valid SASE memory notes are exposed as an explicit xprompt-memory type under the
-  required memory/ namespace, so the active context's glossary note expands with
-  #memory/glossary while bare #glossary remains unresolved."
+goal: 'Valid SASE memory notes are exposed as an explicit xprompt-memory type under
+  the required memory/ namespace, so the active context''s glossary note expands with
+  #memory/glossary while bare #glossary remains unresolved.'
 phases:
-  - id: shared-memory-contract
-    title: Shared xprompt-memory layout and catalog contract
-    depends_on: []
-    size: medium
-    description:
-      "shared-memory-contract: define memory source precedence, reference naming, type
-      metadata, and native editor/catalog behavior in the Rust core."
-  - id: python-memory-runtime
-    title: Python discovery and expansion integration
-    depends_on:
-      - shared-memory-contract
-    size: medium
-    description:
-      "python-memory-runtime: consume the shared contract, load valid memory notes as
-      contextual xprompts, and enforce memory namespace semantics."
-  - id: memory-user-surfaces
-    title: CLI, ACE, helper, and editor presentation
-    depends_on:
-      - python-memory-runtime
-    size: medium
-    description:
-      "memory-user-surfaces: expose xprompt-memory identity and refresh behavior
-      consistently across every xprompt discovery and authoring surface."
-  - id: memory-docs
-    title: Memory documentation and glossary regeneration
-    depends_on:
-      - python-memory-runtime
-    size: small
-    description:
-      "memory-docs: document explicit xprompt-memory inclusion, add the glossary term,
-      and regenerate managed memory outputs through sase memory init."
-  - id: xprompt-memory-verification
-    title: Cross-runtime verification
-    depends_on:
-      - memory-user-surfaces
-      - memory-docs
-    size: small
-    description:
-      "xprompt-memory-verification: prove contextual precedence, namespaced expansion,
-      catalog parity, memory regeneration, and absence of dynamic matching end to end."
+- id: shared-memory-contract
+  title: Shared xprompt-memory layout and catalog contract
+  depends_on: []
+  size: medium
+  description: 'shared-memory-contract: define memory source precedence, reference
+    naming, type metadata, and native editor/catalog behavior in the Rust core.'
+- id: python-memory-runtime
+  title: Python discovery and expansion integration
+  depends_on:
+  - shared-memory-contract
+  size: medium
+  description: 'python-memory-runtime: consume the shared contract, load valid memory
+    notes as contextual xprompts, and enforce memory namespace semantics.'
+- id: memory-user-surfaces
+  title: CLI, ACE, helper, and editor presentation
+  depends_on:
+  - python-memory-runtime
+  size: medium
+  description: 'memory-user-surfaces: expose xprompt-memory identity and refresh behavior
+    consistently across every xprompt discovery and authoring surface.'
+- id: memory-docs
+  title: Memory documentation and glossary regeneration
+  depends_on:
+  - python-memory-runtime
+  size: small
+  description: 'memory-docs: document explicit xprompt-memory inclusion, add the glossary
+    term, and regenerate managed memory outputs through sase memory init.'
+- id: xprompt-memory-verification
+  title: Cross-runtime verification
+  depends_on:
+  - memory-user-surfaces
+  - memory-docs
+  size: small
+  description: 'xprompt-memory-verification: prove contextual precedence, namespaced
+    expansion, catalog parity, memory regeneration, and absence of dynamic matching
+    end to end.'
 proposed_by: bbugyi200.athena.vh.f3
 create_time: 2026-08-08 08:49:43
 status: wip
+bead_id: sase-hf
 ---
 
-- **PROMPT:**
-  [prompts/202608/xprompt_memories.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_memories.md)
+- **PROMPT:** [prompts/202608/xprompt_memories.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_memories.md)
+- **BEAD:** [sase-hf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hf/README.md)
 
 # Plan: Xprompt memories and memory namespace invocation
 
