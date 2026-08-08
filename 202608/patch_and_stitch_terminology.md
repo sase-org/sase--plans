@@ -1,74 +1,67 @@
 ---
 tier: epic
 title: Rename ChangeSpec to Patch and introduce stitches
-goal:
-  Make Patch and stitch the canonical SASE vocabulary everywhere without changing
+goal: Make Patch and stitch the canonical SASE vocabulary everywhere without changing
   workflow semantics or breaking existing data, commands, configuration, integrations,
   or machine consumers
 phases:
-  - id: rust-core-contract
-    title: Establish Patch and stitch terminology in the Rust core
-    depends_on: []
-    description:
-      "rust-core-contract: add canonical Rust domain names and parser/wire compatibility
-      while preserving serialized and binding contracts."
-    size: medium
-  - id: python-domain-storage
-    title: Migrate the Python domain and ProjectSpec storage layer
-    depends_on:
-      - rust-core-contract
-    description:
-      "python-domain-storage: introduce canonical models, modules, parsing, formatting,
-      persistence, and wire adapters with legacy aliases."
-    size: large
-  - id: workflows-cli-contracts
-    title: Rename workflow, automation, CLI, and metadata contracts
-    depends_on:
-      - python-domain-storage
-    description:
-      "workflows-cli-contracts: migrate lifecycle, automation, command, and
-      machine-facing call sites while keeping old entry points and data compatible."
-    size: large
-  - id: tui-config-surface
-    title: Rename the ACE TUI and configuration surface
-    depends_on:
-      - workflows-cli-contracts
-    description:
-      "tui-config-surface: present Patches and stitches throughout ACE and normalize
-      legacy keymap, config, completion, and saved-state identifiers."
-    size: large
-  - id: linked-integrations
-    title: Update linked GitHub, Telegram, and Neovim integrations
-    depends_on:
-      - workflows-cli-contracts
-    description:
-      "linked-integrations: adopt canonical APIs and labels in GitHub, Telegram, and
-      Neovim while retaining mixed-version compatibility."
-    size: medium
-  - id: docs-memory-skills
-    title: Update documentation, glossary, demos, and generated-skill sources
-    depends_on:
-      - tui-config-surface
-      - linked-integrations
-    description:
-      "docs-memory-skills: rewrite maintained explanatory surfaces, regenerate memory
-      shims, and prepare generated skills from authoritative sources."
-    size: medium
-  - id: compatibility-audit
-    title: Reconcile compatibility and verify the complete rename
-    depends_on:
-      - docs-memory-skills
-    description:
-      "compatibility-audit: classify every remaining legacy token and run exhaustive
-      cross-repository compatibility and regression verification."
-    size: large
+- id: rust-core-contract
+  title: Establish Patch and stitch terminology in the Rust core
+  depends_on: []
+  description: 'rust-core-contract: add canonical Rust domain names and parser/wire
+    compatibility while preserving serialized and binding contracts.'
+  size: medium
+- id: python-domain-storage
+  title: Migrate the Python domain and ProjectSpec storage layer
+  depends_on:
+  - rust-core-contract
+  description: 'python-domain-storage: introduce canonical models, modules, parsing,
+    formatting, persistence, and wire adapters with legacy aliases.'
+  size: large
+- id: workflows-cli-contracts
+  title: Rename workflow, automation, CLI, and metadata contracts
+  depends_on:
+  - python-domain-storage
+  description: 'workflows-cli-contracts: migrate lifecycle, automation, command, and
+    machine-facing call sites while keeping old entry points and data compatible.'
+  size: large
+- id: tui-config-surface
+  title: Rename the ACE TUI and configuration surface
+  depends_on:
+  - workflows-cli-contracts
+  description: 'tui-config-surface: present Patches and stitches throughout ACE and
+    normalize legacy keymap, config, completion, and saved-state identifiers.'
+  size: large
+- id: linked-integrations
+  title: Update linked GitHub, Telegram, and Neovim integrations
+  depends_on:
+  - workflows-cli-contracts
+  description: 'linked-integrations: adopt canonical APIs and labels in GitHub, Telegram,
+    and Neovim while retaining mixed-version compatibility.'
+  size: medium
+- id: docs-memory-skills
+  title: Update documentation, glossary, demos, and generated-skill sources
+  depends_on:
+  - tui-config-surface
+  - linked-integrations
+  description: 'docs-memory-skills: rewrite maintained explanatory surfaces, regenerate
+    memory shims, and prepare generated skills from authoritative sources.'
+  size: medium
+- id: compatibility-audit
+  title: Reconcile compatibility and verify the complete rename
+  depends_on:
+  - docs-memory-skills
+  description: 'compatibility-audit: classify every remaining legacy token and run
+    exhaustive cross-repository compatibility and regression verification.'
+  size: large
 proposed_by: bbugyi200.athena.vu
 create_time: 2026-08-08 13:05:29
 status: wip
+bead_id: sase-hn
 ---
 
-- **PROMPT:**
-  [prompts/202608/patch_and_stitch_terminology.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_and_stitch_terminology.md)
+- **PROMPT:** [prompts/202608/patch_and_stitch_terminology.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_and_stitch_terminology.md)
+- **BEAD:** [sase-hn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/README.md)
 
 # Patch and Stitch Terminology Migration
 
