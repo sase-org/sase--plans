@@ -14,8 +14,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.vq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vq.md)
 - **COMMITS:**
-  - [7aef61c](https://github.com/bobs-org/bob-cli/commit/7aef61ca5a4b4e13e65d12f243a9ee2953503a44)
-    — feat(highlights): embed research provenance in created PDFs
+  - [3c5674a](https://github.com/bbugyi200/dotfiles/commit/3c5674a39e4b74aceb7e0724dde591462bb1d34b)
+    — chore(sase): pass research root to highlights hook
 
 # Plan: Add research-source provenance to hook-created Highlights PDFs
 
