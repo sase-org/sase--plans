@@ -1,98 +1,99 @@
 ---
 tier: epic
 title: XPrompt target mode for the prompt input stack
-goal: 'Editing an existing xprompt definition from the ACE TUI is a first-class,
-  obvious, reliable loop: loading a definition from any surface puts the prompt input
-  widget stack into a visibly distinct "targeting" state, <enter> offers a
-  single-keypress "save to the targeted xprompt" option, and saving writes the correct
-  file (chezmoi source included) and then offers exactly the follow-up actions that file
-  needs — commit/push, a scoped chezmoi apply, or the matching `sase memory init` /
-  `sase skill init`.
+goal: 'Editing an existing xprompt definition from the ACE TUI is a first-class, obvious,
+  reliable loop: loading a definition from any surface puts the prompt input widget
+  stack into a visibly distinct "targeting" state, <enter> offers a single-keypress
+  "save to the targeted xprompt" option, and saving writes the correct file (chezmoi
+  source included) and then offers exactly the follow-up actions that file needs —
+  commit/push, a scoped chezmoi apply, or the matching `sase memory init` / `sase
+  skill init`.
 
   '
 phases:
-  - id: target
-    title: Targeting model, reference identity, and chezmoi-aware write paths
-    depends_on: []
-    size: medium
-    description: "target: harden XPromptBinding into a full targeting record (canonical
-      reference form, resolved chezmoi write path, apply target, cheap stat-only
-      staleness), add the single target/clear choke point on PromptInputBar, and route
-      bound writes through the resolved write path.
+- id: target
+  title: Targeting model, reference identity, and chezmoi-aware write paths
+  depends_on: []
+  size: medium
+  description: 'target: harden XPromptBinding into a full targeting record (canonical
+    reference form, resolved chezmoi write path, apply target, cheap stat-only staleness),
+    add the single target/clear choke point on PromptInputBar, and route bound writes
+    through the resolved write path.
 
-      "
-  - id: surfaces
-    title: Every definition-load surface targets its xprompt
-    depends_on:
-      - target
-    size: medium
-    description: 'surfaces: audit every path that loads an xprompt definition into the
-      prompt stack, add the missing "edit definition here" action to the Select XPrompt
-      panel, stop the external-editor round trip from silently dropping the target, and
-      lock the audit down with an invariant test.
+    '
+- id: surfaces
+  title: Every definition-load surface targets its xprompt
+  depends_on:
+  - target
+  size: medium
+  description: 'surfaces: audit every path that loads an xprompt definition into the
+    prompt stack, add the missing "edit definition here" action to the Select XPrompt
+    panel, stop the external-editor round trip from silently dropping the target,
+    and lock the audit down with an invariant test.
 
-      '
-  - id: menu
-    title: Target-aware <enter> chooser with a single-key save
-    depends_on:
-      - target
-    size: medium
-    description: 'menu: open the submit chooser whenever the stack is multi-pane or
-      targeted, and add the single-key "save to the targeted xprompt" and "save as a new
-      xprompt" rows with dirty/clean-aware copy.
+    '
+- id: menu
+  title: Target-aware <enter> chooser with a single-key save
+  depends_on:
+  - target
+  size: medium
+  description: 'menu: open the submit chooser whenever the stack is multi-pane or
+    targeted, and add the single-key "save to the targeted xprompt" and "save as a
+    new xprompt" rows with dirty/clean-aware copy.
 
-      '
-  - id: followup
-    title: Post-write follow-up actions with memory and skill init integration
-    depends_on:
-      - target
-    size: medium
-    description: "followup: replace the single commit/push confirmation with a
-      classifier-driven follow-up chooser that offers commit/push, a scoped chezmoi
-      apply, `sase memory init`, or `sase skill init` — whichever actually apply to the
-      written file — and runs them through the tracked task queue.
+    '
+- id: followup
+  title: Post-write follow-up actions with memory and skill init integration
+  depends_on:
+  - target
+  size: medium
+  description: 'followup: replace the single commit/push confirmation with a classifier-driven
+    follow-up chooser that offers commit/push, a scoped chezmoi apply, `sase memory
+    init`, or `sase skill init` — whichever actually apply to the written file — and
+    runs them through the tracked task queue.
 
-      "
-  - id: visual
-    title: Visual language for the targeting state
-    depends_on:
-      - target
-      - menu
-    size: medium
-    description: "visual: give the targeting state a deliberate, theme-safe look —
-      distinct bar border, a reference chip with clean/dirty/read-only/stale states,
-      matching frontmatter panel tint, subtitle and footer hints — and pin it with PNG
-      snapshot goldens.
+    '
+- id: visual
+  title: Visual language for the targeting state
+  depends_on:
+  - target
+  - menu
+  size: medium
+  description: 'visual: give the targeting state a deliberate, theme-safe look — distinct
+    bar border, a reference chip with clean/dirty/read-only/stale states, matching
+    frontmatter panel tint, subtitle and footer hints — and pin it with PNG snapshot
+    goldens.
 
-      "
-  - id: docs
-    title: Help modal, footer, and documentation
-    depends_on:
-      - surfaces
-      - menu
-      - followup
-      - visual
-    size: small
-    description: "docs: bring the `?` help popup, the conditional keybinding footer, and
-      the ACE / xprompt documentation in line with the new targeting keys and save flow.
+    '
+- id: docs
+  title: Help modal, footer, and documentation
+  depends_on:
+  - surfaces
+  - menu
+  - followup
+  - visual
+  size: small
+  description: 'docs: bring the `?` help popup, the conditional keybinding footer,
+    and the ACE / xprompt documentation in line with the new targeting keys and save
+    flow.
 
-      "
-  - id: verify
-    title: End-to-end verification of the edit loop
-    depends_on:
-      - docs
-    size: small
-    description:
-      "verify: run the full verification gate and drive the real TUI through the
-      complete loop for a plain xprompt, a memory note, and a skill source, including
-      the chezmoi path."
+    '
+- id: verify
+  title: End-to-end verification of the edit loop
+  depends_on:
+  - docs
+  size: small
+  description: 'verify: run the full verification gate and drive the real TUI through
+    the complete loop for a plain xprompt, a memory note, and a skill source, including
+    the chezmoi path.'
 proposed_by: bbugyi200.athena.vy
 create_time: 2026-08-08 15:51:55
 status: wip
+bead_id: sase-hp
 ---
 
-- **PROMPT:**
-  [prompts/202608/xprompt_target_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_target_mode.md)
+- **PROMPT:** [prompts/202608/xprompt_target_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_target_mode.md)
+- **BEAD:** [sase-hp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hp/README.md)
 
 # Plan: XPrompt target mode for the prompt input stack
 
