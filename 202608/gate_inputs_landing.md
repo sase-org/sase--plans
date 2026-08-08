@@ -1,72 +1,68 @@
 ---
 tier: epic
 title: Close the gate-input epic's own gaps and land it
-goal: "The gate input-collection epic lands green: a custom gate whose option declares a
-  raw required property is creatable and answerable again instead of rejected at
-  creation, sase-telegram's custom-gate suite passes against this repo's validation, the
-  conformance matrix asserts the mobile leg the epic actually shipped, submitted secrets
-  stay out of journal.jsonl, and the epic's two input-enforcement layers agree.
+goal: 'The gate input-collection epic lands green: a custom gate whose option declares
+  a raw required property is creatable and answerable again instead of rejected at
+  creation, sase-telegram''s custom-gate suite passes against this repo''s validation,
+  the conformance matrix asserts the mobile leg the epic actually shipped, submitted
+  secrets stay out of journal.jsonl, and the epic''s two input-enforcement layers
+  agree.
 
-  "
+  '
 phases:
-  - id: answerability
-    title: Model what a surface can really submit at creation
-    depends_on: []
-    size: medium
-    description:
-      "answerability: teach the creation-time answerability probe about the raw-schema
-      escape hatch every surface gained later in the epic, so an option declaring a
-      required property under `properties` is creatable again, while a required name
-      with no control behind it still fails closed."
-  - id: telegram-presentation
-    title: Repair sase-telegram against the custom-gate presentation contract
-    depends_on: []
-    size: small
-    description:
-      "telegram-presentation: give sase-telegram's custom-gate test specs the
-      `presentation.title` this epic began requiring, and audit that repo for any other
-      spec the same validation now rejects."
-  - id: input-integrity
-    title: Close the three input-enforcement gaps the epic left open
-    depends_on: []
-    size: medium
-    description:
-      "input-integrity: redact secret-declared values out of the durable journal's
-      command results, anchor the compiled string patterns so schema validation and
-      `InputArg.validate_and_convert` agree, and widen the pre-execution rejection
-      recorder so an adapter's own exception type still reaches `errors/`."
-  - id: mobile-conformance
-    title: Assert the mobile leg the epic shipped
-    depends_on:
-      - answerability
-    size: medium
-    description:
-      "mobile-conformance: declare the per-option input capability the mobile bridge
-      actually has, submit it through the conformance driver, and replace the stale
-      closed-phase excuses on whatever the bridge still cannot do with an honest reason
-      or the missing support."
-  - id: land
-    title: Land the epic
-    depends_on:
-      - answerability
-      - telegram-presentation
-      - input-integrity
-      - mobile-conformance
-    size: small
-    description:
-      "land: run the full gate across both repos, close epic bead sase-h7 with a
-      verification note, clear the epic's expired symvision whitelist entries, and mark
-      the epic plan file done."
+- id: answerability
+  title: Model what a surface can really submit at creation
+  depends_on: []
+  size: medium
+  description: 'answerability: teach the creation-time answerability probe about the
+    raw-schema escape hatch every surface gained later in the epic, so an option declaring
+    a required property under `properties` is creatable again, while a required name
+    with no control behind it still fails closed.'
+- id: telegram-presentation
+  title: Repair sase-telegram against the custom-gate presentation contract
+  depends_on: []
+  size: small
+  description: 'telegram-presentation: give sase-telegram''s custom-gate test specs
+    the `presentation.title` this epic began requiring, and audit that repo for any
+    other spec the same validation now rejects.'
+- id: input-integrity
+  title: Close the three input-enforcement gaps the epic left open
+  depends_on: []
+  size: medium
+  description: 'input-integrity: redact secret-declared values out of the durable
+    journal''s command results, anchor the compiled string patterns so schema validation
+    and `InputArg.validate_and_convert` agree, and widen the pre-execution rejection
+    recorder so an adapter''s own exception type still reaches `errors/`.'
+- id: mobile-conformance
+  title: Assert the mobile leg the epic shipped
+  depends_on:
+  - answerability
+  size: medium
+  description: 'mobile-conformance: declare the per-option input capability the mobile
+    bridge actually has, submit it through the conformance driver, and replace the
+    stale closed-phase excuses on whatever the bridge still cannot do with an honest
+    reason or the missing support.'
+- id: land
+  title: Land the epic
+  depends_on:
+  - answerability
+  - telegram-presentation
+  - input-integrity
+  - mobile-conformance
+  size: small
+  description: 'land: run the full gate across both repos, close epic bead sase-h7
+    with a verification note, clear the epic''s expired symvision whitelist entries,
+    and mark the epic plan file done.'
 proposed_by: bbugyi200.athena.sase-h7.land
 parent_bead: sase-h7
 create_time: 2026-08-07 23:11:52
 status: wip
+bead_id: sase-h7.13
 ---
 
-- **PROMPT:**
-  [prompts/202608/gate_inputs_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/gate_inputs_landing.md)
-- **PARENT:**
-  [202608/gate_input_collection.md](https://github.com/sase-org/sase--plans/blob/main/202608/gate_input_collection.md)
+- **PROMPT:** [prompts/202608/gate_inputs_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/gate_inputs_landing.md)
+- **PARENT:** [202608/gate_input_collection.md](https://github.com/sase-org/sase--plans/blob/main/202608/gate_input_collection.md)
+- **BEAD:** [sase-h7.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h7/sase-h7.13.md)
 
 # Plan: Close the gate-input epic's own gaps and land it
 
