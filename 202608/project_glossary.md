@@ -1,68 +1,63 @@
 ---
 tier: epic
 title: Project-local glossary memory and editor semantics
-goal:
-  Make one project-local glossary configuration the reliable source for generated agent
-  memory, project-aware prompt highlighting, definition previews, and definition editing
-  in ACE and every SASE LSP client.
+goal: Make one project-local glossary configuration the reliable source for generated
+  agent memory, project-aware prompt highlighting, definition previews, and definition
+  editing in ACE and every SASE LSP client.
 phases:
-  - id: glossary-core-contract
-    title: Define the canonical glossary domain
-    depends_on: []
-    description:
-      "core: add validated glossary parsing, effective aliases, deterministic matching,
-      source metadata wires, and reusable Rust/Python APIs."
-    size: medium
-  - id: glossary-config-memory
-    title: Generate glossary memory from project config
-    depends_on:
-      - glossary-core-contract
-    description:
-      "memory: add the project-local schema and make memory init render glossary.md
-      before composing agent instructions."
-    size: medium
-  - id: glossary-project-catalog
-    title: Build project-aware glossary catalogs
-    depends_on:
-      - glossary-core-contract
-      - glossary-config-memory
-    description:
-      "catalog: resolve glossary entries and editable source locations for the project
-      selected by prompt VCS context without blocking keystrokes."
-    size: medium
-  - id: glossary-ace-experience
-    title: Add beautiful ACE glossary interactions
-    depends_on:
-      - glossary-project-catalog
-    description:
-      "ace: highlight glossary aliases and route K and Ctrl+] to project glossary
-      previews and source editing."
-    size: medium
-  - id: glossary-lsp-experience
-    title: Add glossary semantics to the xprompt LSP
-    depends_on:
-      - glossary-project-catalog
-    description:
-      "lsp: expose project glossary aliases through semantic tokens, hover, and
-      go-to-definition with live cache invalidation."
-    size: medium
-  - id: glossary-migration-verification
-    title: Migrate SASE's glossary and prove the complete feature
-    depends_on:
-      - glossary-config-memory
-      - glossary-ace-experience
-      - glossary-lsp-experience
-    description:
-      "migration: move the existing SASE glossary into config, regenerate memory and
-      instruction files, document the workflow, and run cross-repository verification."
-    size: medium
+- id: glossary-core-contract
+  title: Define the canonical glossary domain
+  depends_on: []
+  description: 'core: add validated glossary parsing, effective aliases, deterministic
+    matching, source metadata wires, and reusable Rust/Python APIs.'
+  size: medium
+- id: glossary-config-memory
+  title: Generate glossary memory from project config
+  depends_on:
+  - glossary-core-contract
+  description: 'memory: add the project-local schema and make memory init render glossary.md
+    before composing agent instructions.'
+  size: medium
+- id: glossary-project-catalog
+  title: Build project-aware glossary catalogs
+  depends_on:
+  - glossary-core-contract
+  - glossary-config-memory
+  description: 'catalog: resolve glossary entries and editable source locations for
+    the project selected by prompt VCS context without blocking keystrokes.'
+  size: medium
+- id: glossary-ace-experience
+  title: Add beautiful ACE glossary interactions
+  depends_on:
+  - glossary-project-catalog
+  description: 'ace: highlight glossary aliases and route K and Ctrl+] to project
+    glossary previews and source editing.'
+  size: medium
+- id: glossary-lsp-experience
+  title: Add glossary semantics to the xprompt LSP
+  depends_on:
+  - glossary-project-catalog
+  description: 'lsp: expose project glossary aliases through semantic tokens, hover,
+    and go-to-definition with live cache invalidation.'
+  size: medium
+- id: glossary-migration-verification
+  title: Migrate SASE's glossary and prove the complete feature
+  depends_on:
+  - glossary-config-memory
+  - glossary-ace-experience
+  - glossary-lsp-experience
+  description: 'migration: move the existing SASE glossary into config, regenerate
+    memory and instruction files, document the workflow, and run cross-repository
+    verification.'
+  size: medium
 proposed_by: bbugyi200.athena.w2
 create_time: 2026-08-08 17:02:21
 status: wip
+bead_id: sase-hq
 ---
 
-- **PROMPT:**
-  [prompts/202608/project_glossary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/project_glossary.md)
+- **PROMPT:** [prompts/202608/project_glossary.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/project_glossary.md)
+- **BEAD:** [sase-hq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hq/README.md)
 
 # Project-local glossary memory and editor semantics
 
