@@ -7,7 +7,7 @@ goal:
   produced for new notifications.
 proposed_by: bbugyi200.athena.va
 create_time: 2026-08-07 20:16:47
-status: wip
+status: done
 ---
 
 # Plan: Merge the ACE notification Release tab into the CI tab
