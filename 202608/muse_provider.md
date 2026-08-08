@@ -79,7 +79,7 @@ phases:
     and land the tree green under `just check-full`.'
 proposed_by: bbugyi200.athena.ve
 create_time: 2026-08-07 20:45:30
-status: wip
+status: done
 bead_id: sase-ha
 ---
 
