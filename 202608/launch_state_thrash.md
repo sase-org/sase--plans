@@ -5,9 +5,12 @@ goal:
   Agent launch state advances monotonically while marker bursts stay on the bounded
   exact-delta refresh path.
 proposed_by: bbugyi200.athena.vt
-create_time: 2026-08-08 12:38:56
+create_time: 2026-08-08 12:39:42
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/launch_state_thrash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/launch_state_thrash.md)
 
 # Stop launch-time STARTING/RUNNING refresh thrash
 
