@@ -9,6 +9,12 @@ create_time: 2026-08-08 11:36:53
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.vr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.vr.md)
+- **COMMITS:**
+  - [125b5c3](https://github.com/sase-org/sase/commit/125b5c31b23a147d1e65445a7c8a1ff862b4f543)
+    — docs: document Muse Code provider support
+
 # Document Meta Muse Code as a supported agent CLI
 
 ## Goal
