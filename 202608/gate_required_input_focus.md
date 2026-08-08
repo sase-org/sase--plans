@@ -7,7 +7,7 @@ goal:
   or changing valid submission behavior.
 proposed_by: bbugyi200.athena.vo
 create_time: 2026-08-08 10:17:56
-status: wip
+status: done
 ---
 
 # Focus required gate input when a decision shortcut cannot submit
