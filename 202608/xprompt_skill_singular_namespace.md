@@ -1,44 +1,43 @@
 ---
 tier: epic
 title: Singular xprompt skill references and builtin source exception
-goal: "Xprompt-backed skills expand through the singular #skill/ namespace while user
+goal: 'Xprompt-backed skills expand through the singular #skill/ namespace while user
   and plugin sources remain in plural skills/ directories and bundled Markdown skill
   sources live only under src/sase/xprompts/skills/.
 
-  "
+  '
 phases:
-  - id: core_skill_reference_contract
-    title: Shared skill reference and directory contracts
-    depends_on: []
-    size: medium
-    description:
-      "core_skill_reference_contract: separate physical skill directories from singular
-      xprompt references across the Rust catalog, bindings, editor, and gateway
-      contracts."
-  - id: builtin_skill_source_exception
-    title: Python builtin source layout and loading
-    depends_on:
-      - core_skill_reference_contract
-    size: medium
-    description:
-      "builtin_skill_source_exception: move only bundled Markdown skill assets beneath
-      xprompts and update Python discovery, placement, packaging, and deployment guards."
-  - id: skill_surface_cutover
-    title: User-facing cutover and end-to-end verification
-    depends_on:
-      - core_skill_reference_contract
-      - builtin_skill_source_exception
-    size: medium
-    description:
-      "skill_surface_cutover: align CLI, ACE, LSP-facing fixtures, documentation, visual
-      snapshots, and full repository checks with the singular reference contract."
+- id: core_skill_reference_contract
+  title: Shared skill reference and directory contracts
+  depends_on: []
+  size: medium
+  description: 'core_skill_reference_contract: separate physical skill directories
+    from singular xprompt references across the Rust catalog, bindings, editor, and
+    gateway contracts.'
+- id: builtin_skill_source_exception
+  title: Python builtin source layout and loading
+  depends_on:
+  - core_skill_reference_contract
+  size: medium
+  description: 'builtin_skill_source_exception: move only bundled Markdown skill assets
+    beneath xprompts and update Python discovery, placement, packaging, and deployment
+    guards.'
+- id: skill_surface_cutover
+  title: User-facing cutover and end-to-end verification
+  depends_on:
+  - core_skill_reference_contract
+  - builtin_skill_source_exception
+  size: medium
+  description: 'skill_surface_cutover: align CLI, ACE, LSP-facing fixtures, documentation,
+    visual snapshots, and full repository checks with the singular reference contract.'
 proposed_by: bbugyi200.athena.sase-hf.land.w2
 create_time: 2026-08-08 11:49:49
 status: wip
+bead_id: sase-hi
 ---
 
-- **PROMPT:**
-  [prompts/202608/xprompt_skill_singular_namespace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_skill_singular_namespace.md)
+- **PROMPT:** [prompts/202608/xprompt_skill_singular_namespace.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_skill_singular_namespace.md)
+- **BEAD:** [sase-hi](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hi/README.md)
 
 # Plan: Singular xprompt skill references and builtin source exception
 
