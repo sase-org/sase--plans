@@ -6,7 +6,7 @@ goal:
   metadata remains safely synchronizable.
 proposed_by: bbugyi200.athena.vq.f0
 create_time: 2026-08-08 12:36:03
-status: wip
+status: done
 ---
 
 # Plan: Use source basenames as Highlights research IDs
