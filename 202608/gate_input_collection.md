@@ -145,6 +145,7 @@ phases:
       the `/sase_gate` skill's input guidance with a worked non-empty example, document
       the new `enum` xprompt input type, and regenerate the deployed skills."
 proposed_by: bbugyi200.athena.v2
+status: done
 ---
 
 # Plan: Gate input collection and repeatable non-terminal gate actions
