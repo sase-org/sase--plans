@@ -6,7 +6,7 @@ goal:
   machine-readable `sase bead list` contract over enabled projects only, and no SASE
   surface ever pastes a raw Python traceback into the chat."
 proposed_by: bbugyi200.athena.vm
-create_time: 2026-08-07 23:27:01
+create_time: 2026-08-07 23:27:56
 status: wip
 ---
 
