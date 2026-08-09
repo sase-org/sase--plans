@@ -15,6 +15,11 @@ status: done
   [202608/patch_and_stitch_terminology.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_and_stitch_terminology.md)
 - **BEAD:**
   [sase-hn.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-hn.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-hn.7.md)
+- **COMMITS:**
+  - [db632d7](https://github.com/sase-org/sase/commit/db632d7fda78ae7d2ebc9a209e057d60943638c3)
+    — feat: audit Patch/stitch compatibility terminology
 
 # Complete the Patch and stitch compatibility audit
 
