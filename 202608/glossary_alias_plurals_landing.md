@@ -19,8 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-i3.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-i3.land.md)
 - **COMMITS:**
-  - [a717c60](https://github.com/sase-org/sase-core/commit/a717c6087982ac0dd2ca27af686740b958ed1e41)
-    — docs(glossary): document plural alias release note
+  - [a764618](https://github.com/sase-org/sase/commit/a76461812e1fdf1a6661dbb790bd8fc54ed95300)
+    — test(glossary): include display aliases in prompt fixture
 
 # Finish and land epic `sase-i3`
 
