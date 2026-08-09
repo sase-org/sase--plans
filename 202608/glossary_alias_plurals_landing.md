@@ -19,8 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-i3.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-i3.land.md)
 - **COMMITS:**
-  - [a764618](https://github.com/sase-org/sase/commit/a76461812e1fdf1a6661dbb790bd8fc54ed95300)
-    — test(glossary): include display aliases in prompt fixture
+  - [8aaeb59](https://github.com/sase-org/sase--plans/commit/8aaeb593e283543a7a92eb804a02c32f183e3b0c)
+    — docs(plan): mark glossary alias plural plan done
 
 # Finish and land epic `sase-i3`
 
