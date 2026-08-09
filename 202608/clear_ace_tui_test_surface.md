@@ -6,12 +6,13 @@ goal:
   preserving legacy contracts and pixel-identical PNG snapshots.
 proposed_by: bbugyi200.athena.sase-hn.8.6.2
 bead: sase-hn.8.6.2
-create_time: 2026-08-09 04:51:38
+create_time: 2026-08-09 04:51:43
 status: wip
 ---
 
-- **PARENT:**
-  [202608/patch_audit_gate_repair.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_audit_gate_repair.md)
+- **PROMPT:**
+  [prompts/202608/clear_ace_tui_test_surface.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/clear_ace_tui_test_surface.md)
+- **PARENT:** [202608/patch_audit_gate_repair.md](patch_audit_gate_repair.md)
 - **BEAD:**
   [sase-hn.8.6.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.8.6.2.md)
 
