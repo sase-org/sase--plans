@@ -1,59 +1,57 @@
 ---
 tier: epic
 title: Finish and land opt-in regex bead search
-goal: "Epic sase-i1 is complete in normal published installs and local development:
+goal: 'Epic sase-i1 is complete in normal published installs and local development:
   regex matching works consistently in both lanes, literal search keeps its cheap
-  substring path, the released core floor is correct, all follow-ups are routed, and the
-  epic is closed with its linked plan marked done.
+  substring path, the released core floor is correct, all follow-ups are routed, and
+  the epic is closed with its linked plan marked done.
 
-  "
+  '
 phases:
-  - id: published-floor
-    title: Restore the published binding floor
-    depends_on: []
-    size: small
-    description: "published-floor: require the already-published regex-capable core,
-      refresh the lock, smoke the minimum wheel, and restore normal-install
-      compatibility.
+- id: published-floor
+  title: Restore the published binding floor
+  depends_on: []
+  size: small
+  description: 'published-floor: require the already-published regex-capable core,
+    refresh the lock, smoke the minimum wheel, and restore normal-install compatibility.
 
-      "
-  - id: core-correctness
-    title: Correct core match semantics and the literal fast path
-    depends_on: []
-    size: medium
-    description: "core-correctness: separate match truth from highlight ranges, restore
-      the cheap literal path, support zero-width regex matches, unify errors, and add
-      Rust tests.
+    '
+- id: core-correctness
+  title: Correct core match semantics and the literal fast path
+  depends_on: []
+  size: medium
+  description: 'core-correctness: separate match truth from highlight ranges, restore
+    the cheap literal path, support zero-width regex matches, unify errors, and add
+    Rust tests.
 
-      "
-  - id: adopt-corrected-release
-    title: Adopt the corrected core release and verify both lanes
-    depends_on:
-      - published-floor
-      - core-correctness
-    size: medium
-    description: "adopt-corrected-release: wait for the corrective core release, raise
-      the floor, add cross-format integration coverage, and run exhaustive verification.
+    '
+- id: adopt-corrected-release
+  title: Adopt the corrected core release and verify both lanes
+  depends_on:
+  - published-floor
+  - core-correctness
+  size: medium
+  description: 'adopt-corrected-release: wait for the corrective core release, raise
+    the floor, add cross-format integration coverage, and run exhaustive verification.
 
-      "
-  - id: land-epic
-    title: Verify and close epic sase-i1
-    depends_on:
-      - adopt-corrected-release
-    size: small
-    description:
-      "land-epic: re-audit the integrated tree, record every follow-up outcome, close
-      sase-i1 without force, run post-close Symvision, and mark the plans done."
+    '
+- id: land-epic
+  title: Verify and close epic sase-i1
+  depends_on:
+  - adopt-corrected-release
+  size: small
+  description: 'land-epic: re-audit the integrated tree, record every follow-up outcome,
+    close sase-i1 without force, run post-close Symvision, and mark the plans done.'
 proposed_by: bbugyi200.athena.sase-i1.land
 parent_bead: sase-i1
 create_time: 2026-08-09 09:05:10
 status: wip
+bead_id: sase-i1.4
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_search_regex_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_search_regex_landing.md)
-- **PARENT:**
-  [202608/bead_search_regex.md](https://github.com/sase-org/sase--plans/blob/main/202608/bead_search_regex.md)
+- **PROMPT:** [prompts/202608/bead_search_regex_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_search_regex_landing.md)
+- **PARENT:** [202608/bead_search_regex.md](https://github.com/sase-org/sase--plans/blob/main/202608/bead_search_regex.md)
+- **BEAD:** [sase-i1.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i1/sase-i1.4.md)
 
 # Finish and land opt-in regex bead search
 
