@@ -1,68 +1,64 @@
 ---
 tier: epic
 title: Move glossary and amd_h1_title under a new memory config section
-goal: "`memory.glossary` and `memory.h1_title` are the canonical config paths across the
-  schema, the readers, the Rust layer diagnostics, the docs, and every real config file
-  SASE owns, while the legacy top-level `glossary` and `amd_h1_title` keys keep working
-  as deprecated aliases so no repository silently loses its glossary or its generated
-  AGENTS.md title during the migration.
+goal: '`memory.glossary` and `memory.h1_title` are the canonical config paths across
+  the schema, the readers, the Rust layer diagnostics, the docs, and every real config
+  file SASE owns, while the legacy top-level `glossary` and `amd_h1_title` keys keep
+  working as deprecated aliases so no repository silently loses its glossary or its
+  generated AGENTS.md title during the migration.
 
-  "
+  '
 phases:
-  - id: core-scope
-    title: Nested glossary scope diagnostic in sase-core
-    depends_on: []
-    size: small
-    description:
-      "core-scope: teach the Rust config provenance pass to diagnose a non-local
-      `memory.glossary` in addition to the legacy top-level `glossary`, and extend the
-      config parity test to cover both paths."
-  - id: config-surface
-    title: Config schema, deprecation registry, and packaged defaults
-    depends_on:
-      - core-scope
-    size: small
-    description:
-      "config-surface: add the `memory` object with `h1_title` and `glossary` to
-      sase.schema.json, mark the two legacy top-level keys deprecated, register them in
-      DEPRECATED_TOP_LEVEL_KEYS, restructure default_config.yml, and update the schema
-      and inventory tests."
-  - id: read-sites
-    title: Nested reads with legacy fallback
-    depends_on: []
-    size: medium
-    description:
-      "read-sites: add one shared glossary-location resolver, read `memory.h1_title` and
-      `memory.glossary` first with a legacy fallback in the AMD title loader, the memory
-      init glossary loader, and the editor glossary catalog, and update every affected
-      test fixture."
-  - id: self-migration
-    title: Migrate sase's own config and documentation
-    depends_on:
-      - config-surface
-      - read-sites
-    size: medium
-    description:
-      "self-migration: move this repository's own `sase/sase.yml` keys under `memory:`,
-      regenerate memory, and rewrite the configuration/init/memory/xprompt/ace docs to
-      document the canonical paths and the deprecated aliases."
-  - id: downstream-repos
-    title: Migrate downstream repository configs
-    depends_on:
-      - config-surface
-      - read-sites
-    size: small
-    description:
-      "downstream-repos: migrate the bob-cli project config and the chezmoi user overlay
-      to the nested form, correct the sase-nvim README reference, and confirm actstat
-      needs no change."
+- id: core-scope
+  title: Nested glossary scope diagnostic in sase-core
+  depends_on: []
+  size: small
+  description: 'core-scope: teach the Rust config provenance pass to diagnose a non-local
+    `memory.glossary` in addition to the legacy top-level `glossary`, and extend the
+    config parity test to cover both paths.'
+- id: config-surface
+  title: Config schema, deprecation registry, and packaged defaults
+  depends_on:
+  - core-scope
+  size: small
+  description: 'config-surface: add the `memory` object with `h1_title` and `glossary`
+    to sase.schema.json, mark the two legacy top-level keys deprecated, register them
+    in DEPRECATED_TOP_LEVEL_KEYS, restructure default_config.yml, and update the schema
+    and inventory tests.'
+- id: read-sites
+  title: Nested reads with legacy fallback
+  depends_on: []
+  size: medium
+  description: 'read-sites: add one shared glossary-location resolver, read `memory.h1_title`
+    and `memory.glossary` first with a legacy fallback in the AMD title loader, the
+    memory init glossary loader, and the editor glossary catalog, and update every
+    affected test fixture.'
+- id: self-migration
+  title: Migrate sase's own config and documentation
+  depends_on:
+  - config-surface
+  - read-sites
+  size: medium
+  description: 'self-migration: move this repository''s own `sase/sase.yml` keys under
+    `memory:`, regenerate memory, and rewrite the configuration/init/memory/xprompt/ace
+    docs to document the canonical paths and the deprecated aliases.'
+- id: downstream-repos
+  title: Migrate downstream repository configs
+  depends_on:
+  - config-surface
+  - read-sites
+  size: small
+  description: 'downstream-repos: migrate the bob-cli project config and the chezmoi
+    user overlay to the nested form, correct the sase-nvim README reference, and confirm
+    actstat needs no change.'
 proposed_by: bbugyi200.athena.we.f0.w1
 create_time: 2026-08-09 10:21:54
 status: wip
+bead_id: sase-ia
 ---
 
-- **PROMPT:**
-  [prompts/202608/memory_config_section.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/memory_config_section.md)
+- **PROMPT:** [prompts/202608/memory_config_section.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/memory_config_section.md)
+- **BEAD:** [sase-ia](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ia/README.md)
 
 # Plan: Move glossary and amd_h1_title under a new memory config section
 
