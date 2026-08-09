@@ -7,9 +7,12 @@ goal:
   one shared anchor, so a clan that started Friday night and finished Saturday morning
   renders under `Yesterday`, not under `This Week`.
 proposed_by: bbugyi200.athena.wc
-create_time: 2026-08-09 07:51:10
+create_time: 2026-08-09 07:51:30
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/by_date_bucket_anchor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/by_date_bucket_anchor.md)
 
 # Fix the BY_DATE bucket/subgroup anchor mismatch
 
