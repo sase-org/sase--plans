@@ -8,106 +8,105 @@ goal: 'Merge commits are first-class in every SASE commit-log surface: hidden by
 
   '
 phases:
-  - id: core
-    title: Rust core — parent ids, tolerant parser, merge summary
-    depends_on: []
-    size: medium
-    description: "core: in the sase-core repo, add parent ids to the VCS-log wire, make
-      the pinned git-log parser accept both the legacy 7-field and the new 8-field
-      record layout, bump the wire schema to 3, add a strict merge-subject summary
-      parser, and expose the new PyO3 bindings.
+- id: core
+  title: Rust core — parent ids, tolerant parser, merge summary
+  depends_on: []
+  size: medium
+  description: 'core: in the sase-core repo, add parent ids to the VCS-log wire, make
+    the pinned git-log parser accept both the legacy 7-field and the new 8-field record
+    layout, bump the wire schema to 3, add a strict merge-subject summary parser,
+    and expose the new PyO3 bindings.
 
-      "
-  - id: wire
-    title: Python wire mirror and skew probes
-    depends_on:
-      - core
-    size: small
-    description: "wire: mirror the Rust contract on the Python side — parent ids and
-      schema 3 in the wire module, %P in the pinned git-log format, the tolerant golden
-      parser, a merge-summary facade — and add the validator probes that make wheel/host
-      skew fail loudly instead of silently returning zero commits.
+    '
+- id: wire
+  title: Python wire mirror and skew probes
+  depends_on:
+  - core
+  size: small
+  description: 'wire: mirror the Rust contract on the Python side — parent ids and
+    schema 3 in the wire module, %P in the pinned git-log format, the tolerant golden
+    parser, a merge-summary facade — and add the validator probes that make wheel/host
+    skew fail loudly instead of silently returning zero commits.
 
-      "
-  - id: provider
-    title: Provider-level merge visibility
-    depends_on:
-      - wire
-    size: medium
-    description: "provider: introduce the three-valued merge-visibility mode, thread it
-      through the log and partition hooks so presence and ahead/behind stay consistent
-      with what is displayed, prove the partition law, and make merge-commit diffs and
-      author-time lookups work.
+    '
+- id: provider
+  title: Provider-level merge visibility
+  depends_on:
+  - wire
+  size: medium
+  description: 'provider: introduce the three-valued merge-visibility mode, thread
+    it through the log and partition hooks so presence and ahead/behind stay consistent
+    with what is displayed, prove the partition law, and make merge-commit diffs and
+    author-time lookups work.
 
-      "
-  - id: collect
-    title: Collection models and the merges query key
-    depends_on:
-      - provider
-    size: medium
-    description: "collect: carry merge visibility through the collection filters and the
-      commit filter-query language, including the in-memory matcher, canonical tokens,
-      completions, and snapshot-coverage rules that keep live preview honest.
+    '
+- id: collect
+  title: Collection models and the merges query key
+  depends_on:
+  - provider
+  size: medium
+  description: 'collect: carry merge visibility through the collection filters and
+    the commit filter-query language, including the in-memory matcher, canonical tokens,
+    completions, and snapshot-coverage rules that keep live preview honest.
 
-      "
-  - id: render
-    title: Marking merges in every renderer
-    depends_on:
-      - collect
-    size: medium
-    description: "render: give merges a dedicated accent, a reserved marker column that
-      costs nothing when no merge is visible, a legend key, parent lines in full output,
-      structured JSON fields, and a condensed pull-request headline in the pretty
-      timeline.
+    '
+- id: render
+  title: Marking merges in every renderer
+  depends_on:
+  - collect
+  size: medium
+  description: 'render: give merges a dedicated accent, a reserved marker column that
+    costs nothing when no merge is visible, a legend key, parent lines in full output,
+    structured JSON fields, and a condensed pull-request headline in the pretty timeline.
 
-      "
-  - id: cli
-    title: sase vcs log --merges and documentation
-    depends_on:
-      - collect
-    size: small
-    description: "cli: add the -m/--merges option with its three modes, wire it through
-      the vcs handler, and document the behavior and its relationship to git's own merge
-      flags.
+    '
+- id: cli
+  title: sase vcs log --merges and documentation
+  depends_on:
+  - collect
+  size: small
+  description: 'cli: add the -m/--merges option with its three modes, wire it through
+    the vcs handler, and document the behavior and its relationship to git''s own
+    merge flags.
 
-      "
-  - id: tui
-    title: ACE Commits pane merge affordances
-    depends_on:
-      - render
-    size: medium
-    description: "tui: add the merge-visibility cycle key to the Commits sub-tab with
-      its hint, help, availability, keymap, and config entries, and make the detail pane
-      and commit modal show the merge badge, parents, and a meaningful merge diff.
+    '
+- id: tui
+  title: ACE Commits pane merge affordances
+  depends_on:
+  - render
+  size: medium
+  description: 'tui: add the merge-visibility cycle key to the Commits sub-tab with
+    its hint, help, availability, keymap, and config entries, and make the detail
+    pane and commit modal show the merge badge, parents, and a meaningful merge diff.
 
-      "
-  - id: floor
-    title: Raise the sase-core-rs dependency window
-    depends_on:
-      - cli
-      - tui
-    size: small
-    description: "floor: after the core release publishes, move the sase-core-rs version
-      window in pyproject.toml to the release that carries the schema-3 contract and
-      confirm the exhaustive gate passes against the published wheel.
+    '
+- id: floor
+  title: Raise the sase-core-rs dependency window
+  depends_on:
+  - cli
+  - tui
+  size: small
+  description: 'floor: after the core release publishes, move the sase-core-rs version
+    window in pyproject.toml to the release that carries the schema-3 contract and
+    confirm the exhaustive gate passes against the published wheel.
 
-      "
-  - id: verify
-    title: End-to-end acceptance against real merge history
-    depends_on:
-      - floor
-    size: small
-    description:
-      "verify: exercise every mode of every surface against a real repository that
-      contains merge commits, confirm the partition law and the skew probe in a live
-      environment, and record the acceptance evidence."
+    '
+- id: verify
+  title: End-to-end acceptance against real merge history
+  depends_on:
+  - floor
+  size: small
+  description: 'verify: exercise every mode of every surface against a real repository
+    that contains merge commits, confirm the partition law and the skew probe in a
+    live environment, and record the acceptance evidence.'
 proposed_by: bbugyi200.athena.wl
 create_time: 2026-08-09 09:42:58
 status: wip
+bead_id: sase-i8
 ---
 
-- **PROMPT:**
-  [prompts/202608/merge_commit_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/merge_commit_support.md)
+- **PROMPT:** [prompts/202608/merge_commit_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/merge_commit_support.md)
+- **BEAD:** [sase-i8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i8/README.md)
 
 # Plan: Merge-commit support for the VCS commit log
 
