@@ -1,37 +1,37 @@
 ---
 tier: epic
 title: Underline glossary terms in ACE prompts and in LSP-backed editors
-goal: "A matched project glossary term reads as a definable link everywhere SASE renders
-  prompt text: bold, theme-accent, and underlined in the ACE prompt input, and
-  underlined on top of the colorscheme's semantic-token color in Neovim, without
-  weakening the red misspelling underline it sits next to.
+goal: 'A matched project glossary term reads as a definable link everywhere SASE renders
+  prompt text: bold, theme-accent, and underlined in the ACE prompt input, and underlined
+  on top of the colorscheme''s semantic-token color in Neovim, without weakening the
+  red misspelling underline it sits next to.
 
-  "
+  '
 phases:
-  - id: ace
-    title: Underline glossary matches in the ACE prompt input
-    depends_on: []
-    size: medium
-    description:
-      "ace: add the additive underline to the `glossary.term` text-area style,
-      neutralize leaked underlines inside inline-code chips, make the visual glossary
-      matcher fake skip code literals like the Rust matcher, refresh widget assertions,
-      and regenerate dark plus new light PNG goldens with the ACE docs."
-  - id: editor
-    title: Underline glossary semantic tokens in LSP-backed editors
-    depends_on: []
-    size: medium
-    description:
-      "editor: give sase-nvim an overridable `SaseGlossaryTerm` underline applied to the
-      xprompt LSP's glossary semantic tokens through `LspTokenUpdate`, with a headless
-      test, README coverage, and corrected editor/LSP documentation in the sase repo."
+- id: ace
+  title: Underline glossary matches in the ACE prompt input
+  depends_on: []
+  size: medium
+  description: 'ace: add the additive underline to the `glossary.term` text-area style,
+    neutralize leaked underlines inside inline-code chips, make the visual glossary
+    matcher fake skip code literals like the Rust matcher, refresh widget assertions,
+    and regenerate dark plus new light PNG goldens with the ACE docs.'
+- id: editor
+  title: Underline glossary semantic tokens in LSP-backed editors
+  depends_on: []
+  size: medium
+  description: 'editor: give sase-nvim an overridable `SaseGlossaryTerm` underline
+    applied to the xprompt LSP''s glossary semantic tokens through `LspTokenUpdate`,
+    with a headless test, README coverage, and corrected editor/LSP documentation
+    in the sase repo.'
 proposed_by: bbugyi200.athena.w9
 create_time: 2026-08-09 07:49:39
 status: wip
+bead_id: sase-i2
 ---
 
-- **PROMPT:**
-  [prompts/202608/glossary_term_underline.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_term_underline.md)
+- **PROMPT:** [prompts/202608/glossary_term_underline.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_term_underline.md)
+- **BEAD:** [sase-i2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i2/README.md)
 
 # Plan: Underline glossary terms in ACE prompts and in LSP-backed editors
 
