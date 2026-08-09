@@ -1,42 +1,40 @@
 ---
 tier: epic
 title: Derive glossary alias plurals automatically and hide them from ALIASES
-goal:
-  Glossary matching recognizes the plural form of every term and alias without it being
-  configured, while the generated `ALIASES:` line lists only aliases the system cannot
-  derive on its own and disappears entirely when nothing is left to list.
+goal: Glossary matching recognizes the plural form of every term and alias without
+  it being configured, while the generated `ALIASES:` line lists only aliases the
+  system cannot derive on its own and disappears entirely when nothing is left to
+  list.
 phases:
-  - id: core
-    title: Derive plurals and display aliases in the Rust glossary domain
-    depends_on: []
-    size: medium
-    description:
-      "core: add phrase pluralization to sase-core, split authored / effective / display
-      alias lists, and expose the new display list on the glossary wire."
-  - id: core-release
-    title: Publish a sase-core-rs release containing the glossary change
-    depends_on:
-      - core
-    size: small
-    description:
-      "core-release: land the release-plz version bump for sase-core and confirm the new
-      sase-core-rs wheel resolves from PyPI."
-  - id: python
-    title: Render display aliases and raise the core floor in sase
-    depends_on:
-      - core-release
-    size: medium
-    description:
-      "python: raise the sase-core-rs floor, carry the display alias list through the
-      Python facade and LSP payload, render it in generated glossary memory, and
-      regenerate the agent instruction files."
+- id: core
+  title: Derive plurals and display aliases in the Rust glossary domain
+  depends_on: []
+  size: medium
+  description: 'core: add phrase pluralization to sase-core, split authored / effective
+    / display alias lists, and expose the new display list on the glossary wire.'
+- id: core-release
+  title: Publish a sase-core-rs release containing the glossary change
+  depends_on:
+  - core
+  size: small
+  description: 'core-release: land the release-plz version bump for sase-core and
+    confirm the new sase-core-rs wheel resolves from PyPI.'
+- id: python
+  title: Render display aliases and raise the core floor in sase
+  depends_on:
+  - core-release
+  size: medium
+  description: 'python: raise the sase-core-rs floor, carry the display alias list
+    through the Python facade and LSP payload, render it in generated glossary memory,
+    and regenerate the agent instruction files.'
 proposed_by: bbugyi200.athena.wa.f0
 create_time: 2026-08-09 08:17:19
 status: wip
+bead_id: sase-i3
 ---
 
-- **PROMPT:**
-  [prompts/202608/glossary_alias_plurals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_alias_plurals.md)
+- **PROMPT:** [prompts/202608/glossary_alias_plurals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_alias_plurals.md)
+- **BEAD:** [sase-i3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i3/README.md)
 
 # Derive glossary alias plurals automatically and hide them from `ALIASES:`
 
