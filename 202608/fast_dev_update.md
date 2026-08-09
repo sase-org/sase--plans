@@ -55,7 +55,7 @@ phases:
     confirm `just install` and CI are unaffected, and refresh the Rust backend docs.'
 proposed_by: bbugyi200.athena.wj
 create_time: 2026-08-09 10:09:32
-status: wip
+status: done
 bead_id: sase-i9
 ---
 
