@@ -1,94 +1,93 @@
 ---
 tier: epic
 title: Make `just test` fast under agent contention
-goal: "`just test` runs the same 27,978 tests in roughly half the CPU-seconds and a
-  fraction of the wall clock it costs today, on an idle host and — especially — when
-  several SASE agents run it concurrently, with no test deleted, skipped, re-marked
+goal: '`just test` runs the same 27,978 tests in roughly half the CPU-seconds and
+  a fraction of the wall clock it costs today, on an idle host and — especially —
+  when several SASE agents run it concurrently, with no test deleted, skipped, re-marked
   `slow`, or weakened, and with no increase in host CPU or memory pressure.
 
-  "
+  '
 phases:
-  - id: baseline
-    title: Suite cost harness and committed baseline
-    depends_on: []
-    size: medium
-    description: "baseline: build the per-cause suite cost harness (idle vs CPU, app
-      boots, subprocess, parser, collection, worker RSS) on top of the existing timings
-      store, and commit the measured starting numbers every later phase is scored
-      against.
+- id: baseline
+  title: Suite cost harness and committed baseline
+  depends_on: []
+  size: medium
+  description: 'baseline: build the per-cause suite cost harness (idle vs CPU, app
+    boots, subprocess, parser, collection, worker RSS) on top of the existing timings
+    store, and commit the measured starting numbers every later phase is scored against.
 
-      "
-  - id: idle
-    title: Eliminate idle waiting in ACE TUI tests
-    depends_on:
-      - baseline
-    size: large
-    description: "idle: replace the 20ms-granularity CPU-idle heuristic behind every
-      `pilot.pause()` and every bounded waiter with event-driven barriers, so TUI tests
-      stop spending over half their wall clock asleep.
+    '
+- id: idle
+  title: Eliminate idle waiting in ACE TUI tests
+  depends_on:
+  - baseline
+  size: large
+  description: 'idle: replace the 20ms-granularity CPU-idle heuristic behind every
+    `pilot.pause()` and every bounded waiter with event-driven barriers, so TUI tests
+    stop spending over half their wall clock asleep.
 
-      "
-  - id: boot
-    title: Amortize ACE app startup across tests
-    depends_on:
-      - baseline
-      - idle
-    size: large
-    description: "boot: cut the cost of one ACE app boot and add a supported way for a
-      group of tests to share one booted app, then migrate the heaviest TUI files onto
-      it without weakening isolation.
+    '
+- id: boot
+  title: Amortize ACE app startup across tests
+  depends_on:
+  - baseline
+  - idle
+  size: large
+  description: 'boot: cut the cost of one ACE app boot and add a supported way for
+    a group of tests to share one booted app, then migrate the heaviest TUI files
+    onto it without weakening isolation.
 
-      "
-  - id: overhead
-    title: Cut cross-cutting per-test overhead outside the TUI
-    depends_on:
-      - baseline
-    size: medium
-    description: "overhead: remove the repeated full-argparse parser builds, gettext
-      lookups, YAML/config reparses, and avoidable CLI subprocess round-trips that the
-      harness attributes across the non-TUI suite.
+    '
+- id: overhead
+  title: Cut cross-cutting per-test overhead outside the TUI
+  depends_on:
+  - baseline
+  size: medium
+  description: 'overhead: remove the repeated full-argparse parser builds, gettext
+    lookups, YAML/config reparses, and avoidable CLI subprocess round-trips that the
+    harness attributes across the non-TUI suite.
 
-      "
-  - id: footprint
-    title: Shrink worker memory and collection cost
-    depends_on:
-      - baseline
-    size: medium
-    description: "footprint: reduce the per-worker collection time and the resident
-      memory each xdist worker holds and grows, which is what currently caps how many
-      workers the host can afford.
+    '
+- id: footprint
+  title: Shrink worker memory and collection cost
+  depends_on:
+  - baseline
+  size: medium
+  description: 'footprint: reduce the per-worker collection time and the resident
+    memory each xdist worker holds and grows, which is what currently caps how many
+    workers the host can afford.
 
-      "
-  - id: gate
-    title: Fair worker allocation when agents run in parallel
-    depends_on:
-      - baseline
-      - footprint
-    size: medium
-    description: "gate: make the host-global worker-token pool split fairly between
-      concurrent runs instead of granting the first arrival 28 tokens and every later
-      arrival the floor of 4.
+    '
+- id: gate
+  title: Fair worker allocation when agents run in parallel
+  depends_on:
+  - baseline
+  - footprint
+  size: medium
+  description: 'gate: make the host-global worker-token pool split fairly between
+    concurrent runs instead of granting the first arrival 28 tokens and every later
+    arrival the floor of 4.
 
-      "
-  - id: guard
-    title: Lock in the win with a cost regression gate
-    depends_on:
-      - idle
-      - boot
-      - overhead
-      - footprint
-      - gate
-    size: small
-    description:
-      "guard: turn the harness into a standing regression gate with committed budgets,
-      and document the new cost model for future contributors."
+    '
+- id: guard
+  title: Lock in the win with a cost regression gate
+  depends_on:
+  - idle
+  - boot
+  - overhead
+  - footprint
+  - gate
+  size: small
+  description: 'guard: turn the harness into a standing regression gate with committed
+    budgets, and document the new cost model for future contributors.'
 proposed_by: bbugyi200.athena.wk
 create_time: 2026-08-09 10:29:39
 status: wip
+bead_id: sase-ib
 ---
 
-- **PROMPT:**
-  [prompts/202608/fast_test_suite_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fast_test_suite_1.md)
+- **PROMPT:** [prompts/202608/fast_test_suite_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fast_test_suite_1.md)
+- **BEAD:** [sase-ib](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ib/README.md)
 
 # Plan: Make `just test` fast under agent contention
 
