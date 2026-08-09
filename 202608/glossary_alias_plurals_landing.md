@@ -16,6 +16,11 @@ status: done
   [202608/glossary_alias_plurals.md](https://github.com/sase-org/sase--plans/blob/main/202608/glossary_alias_plurals.md)
 - **BEAD:**
   [sase-i3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i3/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-i3.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-i3.land.md)
+- **COMMITS:**
+  - [a717c60](https://github.com/sase-org/sase-core/commit/a717c6087982ac0dd2ca27af686740b958ed1e41)
+    — docs(glossary): document plural alias release note
 
 # Finish and land epic `sase-i3`
 
