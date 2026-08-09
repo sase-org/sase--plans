@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/by_date_bucket_anchor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/by_date_bucket_anchor.md)
+- **AGENTS:**
+  - [bbugyi200.athena.wc](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.wc.md)
+- **COMMITS:**
+  - [f35fa95](https://github.com/sase-org/sase/commit/f35fa95482c481893dae821977430acfdeab8074)
+    — fix(ace): align BY_DATE buckets with terminal anchors
 
 # Fix the BY_DATE bucket/subgroup anchor mismatch
 
