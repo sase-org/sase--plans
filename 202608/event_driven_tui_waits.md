@@ -18,6 +18,11 @@ status: done
   [202608/fast_test_suite_1.md](https://github.com/sase-org/sase--plans/blob/main/202608/fast_test_suite_1.md)
 - **BEAD:**
   [sase-ib.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ib/sase-ib.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ib.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ib.2.md)
+- **COMMITS:**
+  - [cfe18d7](https://github.com/sase-org/sase/commit/cfe18d7f0de46080e1a5b9e509845261e543b946)
+    — perf(test): make ACE TUI waits event-driven
 
 # Plan: Replace ACE test idle sleeps with event-driven settling
 
