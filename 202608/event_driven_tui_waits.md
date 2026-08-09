@@ -8,10 +8,12 @@ goal:
   shows no new flakes.
 proposed_by: bbugyi200.athena.sase-ib.2
 bead: sase-ib.2
-create_time: 2026-08-09 11:32:19
+create_time: 2026-08-09 11:32:26
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/event_driven_tui_waits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/event_driven_tui_waits.md)
 - **PARENT:**
   [202608/fast_test_suite_1.md](https://github.com/sase-org/sase--plans/blob/main/202608/fast_test_suite_1.md)
 - **BEAD:**
