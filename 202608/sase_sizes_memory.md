@@ -1,67 +1,64 @@
 ---
 tier: epic
 title: Canonical sase-size memory and size-driven agent routing
-goal: "One generated long-term memory note owns every sase-size instruction, tale plans
-  carry a validated `size`, and coder follow-ups route through the size-specific
+goal: 'One generated long-term memory note owns every sase-size instruction, tale
+  plans carry a validated `size`, and coder follow-ups route through the size-specific
   phase-worker aliases instead of the retired coder alias bucket.
 
-  "
+  '
 phases:
-  - id: memory-parent
-    title: Robust long-note parent support
-    depends_on: []
-    size: medium
-    description:
-      "memory-parent: make a long memory note parented by another long note a
-      first-class, validated arrangement across `sase memory init`, `sase memory read`,
-      and memory proposals."
-  - id: sizes-memory
-    title: Generated sase_sizes.md memory note
-    depends_on:
-      - memory-parent
-    size: medium
-    description:
-      "sizes-memory: add the generated `sase/memory/sase_sizes.md` long note parented by
-      `sase/memory/sase_beads.md` and make it the only place sase-size guidance lives."
-  - id: core-tale-size
-    title: Required tale size in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-tale-size: require and validate a tale plan's `size` frontmatter in the
-      sase-core plan validator, expose it on the wire, and release it."
-  - id: plan-size-adopt
-    title: Adopt tale size in sase
-    depends_on:
-      - sizes-memory
-      - core-tale-size
-    size: medium
-    description:
-      "plan-size-adopt: raise the sase-core floor, plumb the validated tale `size`
-      through the Python adapter, and point every remaining size instruction at the
-      memory note."
-  - id: coder-alias
-    title: Retire the coder alias bucket
-    depends_on:
-      - plan-size-adopt
-    size: large
-    description:
-      "coder-alias: delete the `coder` and `<provider>_coder` implicit aliases and route
-      coder follow-ups through the phase-worker alias for the tale plan's size."
-  - id: task-plan-handoff
-    title: Verify plan handoff for large task beads
-    depends_on: []
-    size: small
-    description:
-      "task-plan-handoff: audit and regression-test that every task-bead launch path
-      appends `#plan` for `large` and `xlarge` task beads."
+- id: memory-parent
+  title: Robust long-note parent support
+  depends_on: []
+  size: medium
+  description: 'memory-parent: make a long memory note parented by another long note
+    a first-class, validated arrangement across `sase memory init`, `sase memory read`,
+    and memory proposals.'
+- id: sizes-memory
+  title: Generated sase_sizes.md memory note
+  depends_on:
+  - memory-parent
+  size: medium
+  description: 'sizes-memory: add the generated `sase/memory/sase_sizes.md` long note
+    parented by `sase/memory/sase_beads.md` and make it the only place sase-size guidance
+    lives.'
+- id: core-tale-size
+  title: Required tale size in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-tale-size: require and validate a tale plan''s `size` frontmatter
+    in the sase-core plan validator, expose it on the wire, and release it.'
+- id: plan-size-adopt
+  title: Adopt tale size in sase
+  depends_on:
+  - sizes-memory
+  - core-tale-size
+  size: medium
+  description: 'plan-size-adopt: raise the sase-core floor, plumb the validated tale
+    `size` through the Python adapter, and point every remaining size instruction
+    at the memory note.'
+- id: coder-alias
+  title: Retire the coder alias bucket
+  depends_on:
+  - plan-size-adopt
+  size: large
+  description: 'coder-alias: delete the `coder` and `<provider>_coder` implicit aliases
+    and route coder follow-ups through the phase-worker alias for the tale plan''s
+    size.'
+- id: task-plan-handoff
+  title: Verify plan handoff for large task beads
+  depends_on: []
+  size: small
+  description: 'task-plan-handoff: audit and regression-test that every task-bead
+    launch path appends `#plan` for `large` and `xlarge` task beads.'
 proposed_by: bbugyi200.athena.wt
 create_time: 2026-08-09 16:43:05
 status: wip
+bead_id: sase-il
 ---
 
-- **PROMPT:**
-  [prompts/202608/sase_sizes_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_sizes_memory.md)
+- **PROMPT:** [prompts/202608/sase_sizes_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_sizes_memory.md)
+- **BEAD:** [sase-il](https://github.com/sase-org/sase--beads/blob/main/pages/sase-il/README.md)
 
 # Plan: Canonical sase-size memory and size-driven agent routing
 
