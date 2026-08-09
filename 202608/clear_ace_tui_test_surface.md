@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/patch_audit_gate_repair.md](patch_audit_gate_repair.md)
 - **BEAD:**
   [sase-hn.8.6.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.8.6.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-hn.8.6.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-hn.8.6.2.md)
+- **COMMITS:**
+  - [7feb0b8](https://github.com/sase-org/sase/commit/7feb0b84b69a0b3a197db2aab5e5ac37c986081c)
+    — test(ace): rename TUI tests to Patch terminology
 
 # Clear the ACE TUI test surface
 
