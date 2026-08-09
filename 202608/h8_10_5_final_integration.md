@@ -18,8 +18,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-h8.10.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h8.10.5.land.md)
 - **COMMITS:**
-  - [aeab1cb](https://github.com/sase-org/sase/commit/aeab1cb9cc11033a5c1c57c09bbf49f1ca14ceb4)
-    — test(tui): update artifact ref highlight snapshot
+  - [99a7e4f](https://github.com/sase-org/sase--plans/commit/99a7e4f9e9f59d43a36846df702d94b9051878a3)
+    — docs: mark h8.10 landing plan done
 
 # Repair the post-start XPrompt write-target conflict and land `sase-h8.10.5`
 
