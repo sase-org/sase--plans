@@ -1,103 +1,103 @@
 ---
 tier: epic
-title: Ratchet the sase-core-rs window at the release boundary instead of on feature PRs
-goal: "A feature agent can call a newly landed sase-core binding or behavior without
-  editing pyproject.toml, uv.lock, or a version literal, and without waiting on a core
-  release; the published-floor invariant is enforced once, mechanically, on the pending
-  sase release instead of ~1.2 times a day by a dedicated agent.
+title: Ratchet the sase-core-rs window at the release boundary instead of on feature
+  PRs
+goal: 'A feature agent can call a newly landed sase-core binding or behavior without
+  editing pyproject.toml, uv.lock, or a version literal, and without waiting on a
+  core release; the published-floor invariant is enforced once, mechanically, on the
+  pending sase release instead of ~1.2 times a day by a dedicated agent.
 
-  "
+  '
 phases:
-  - id: derive-floor-literal
-    title: Derive the telemetry smoke test's expected minimum from pyproject
-    depends_on: []
-    size: small
-    description: 'derive-floor-literal: replace the hardcoded "0.21.3" golden assertion
-      in tests/test_sase_core_rs_telemetry_smoke_tool.py with a value derived from
-      pyproject.toml, so a floor change stops requiring a test edit.
+- id: derive-floor-literal
+  title: Derive the telemetry smoke test's expected minimum from pyproject
+  depends_on: []
+  size: small
+  description: 'derive-floor-literal: replace the hardcoded "0.21.3" golden assertion
+    in tests/test_sase_core_rs_telemetry_smoke_tool.py with a value derived from pyproject.toml,
+    so a floor change stops requiring a test edit.
 
-      '
-  - id: ratchet-tool
-    title: Build the window ratchet tool
-    depends_on:
-      - derive-floor-literal
-    size: medium
-    description: "ratchet-tool: add a stdlib-only tools/ratchet_core_window that selects
-      the newest fully published stable sase-core-rs from PyPI, rewrites only that
-      requirement in pyproject.toml through one tested ceiling-policy function,
-      refreshes uv.lock with a bounded diff guard, and supports --check/--report-only
-      with idempotence and downgrade refusal.
+    '
+- id: ratchet-tool
+  title: Build the window ratchet tool
+  depends_on:
+  - derive-floor-literal
+  size: medium
+  description: 'ratchet-tool: add a stdlib-only tools/ratchet_core_window that selects
+    the newest fully published stable sase-core-rs from PyPI, rewrites only that requirement
+    in pyproject.toml through one tested ceiling-policy function, refreshes uv.lock
+    with a bounded diff guard, and supports --check/--report-only with idempotence
+    and downgrade refusal.
 
-      "
-  - id: release-lane
-    title: Enforce the published floor on the release branch and at publish time
-    depends_on: []
-    size: medium
-    description: "release-lane: add a CI job that runs only on the release-please branch
-      and validates the exact declared PyPI core floor against bindings, wire-schema
-      probes, smokes and the contract set, and pin the floor exactly in publish.yml's
-      install-smoke so an incompatible floor mechanically blocks the PyPI upload.
+    '
+- id: release-lane
+  title: Enforce the published floor on the release branch and at publish time
+  depends_on: []
+  size: medium
+  description: 'release-lane: add a CI job that runs only on the release-please branch
+    and validates the exact declared PyPI core floor against bindings, wire-schema
+    probes, smokes and the contract set, and pin the floor exactly in publish.yml''s
+    install-smoke so an incompatible floor mechanically blocks the PyPI upload.
 
-      "
-  - id: release-ratchet
-    title: Ratchet the window on the pending release branch in report-only mode
-    depends_on:
-      - ratchet-tool
-    size: medium
-    description: "release-ratchet: extend publish.yml's sync-lockfile job into a
-      sync-release-metadata reconciler that runs the ratchet tool ahead of the lock
-      refresh, landing it in report-only mode so a real release can be observed before
-      it writes anything.
+    '
+- id: release-ratchet
+  title: Ratchet the window on the pending release branch in report-only mode
+  depends_on:
+  - ratchet-tool
+  size: medium
+  description: 'release-ratchet: extend publish.yml''s sync-lockfile job into a sync-release-metadata
+    reconciler that runs the ratchet tool ahead of the lock refresh, landing it in
+    report-only mode so a real release can be observed before it writes anything.
 
-      "
-  - id: enable-ratchet
-    title: Verify one report-only run and switch the ratchet to apply
-    depends_on:
-      - release-lane
-      - release-ratchet
-    size: small
-    description: "enable-ratchet: read the report-only output from at least one real
-      master push with a pending release branch, confirm the proposed version and diff
-      are exactly right, then flip the reconciler to apply and confirm the release
-      branch stays green.
+    '
+- id: enable-ratchet
+  title: Verify one report-only run and switch the ratchet to apply
+  depends_on:
+  - release-lane
+  - release-ratchet
+  size: small
+  description: 'enable-ratchet: read the report-only output from at least one real
+    master push with a pending release branch, confirm the proposed version and diff
+    are exactly right, then flip the reconciler to apply and confirm the release branch
+    stays green.
 
-      "
-  - id: retire-conscription
-    title: Stop conscripting feature agents into the floor bump
-    depends_on:
-      - enable-ratchet
-    size: small
-    description: "retire-conscription: remove published-core-minimum-smoke from feature
-      PRs and master pushes now that the invariant is enforced at the release boundary,
-      and rewrite the three Justfile warnings and the docs that currently tell agents to
-      bump the window by hand.
+    '
+- id: retire-conscription
+  title: Stop conscripting feature agents into the floor bump
+  depends_on:
+  - enable-ratchet
+  size: small
+  description: 'retire-conscription: remove published-core-minimum-smoke from feature
+    PRs and master pushes now that the invariant is enforced at the release boundary,
+    and rewrite the three Justfile warnings and the docs that currently tell agents
+    to bump the window by hand.
 
-      "
-  - id: early-warning
-    title: Add a non-fatal core-floor probe to just check
-    depends_on: []
-    size: medium
-    description: "early-warning: add a cached, offline-tolerant tools/probe_core_floor
-      that runs the two stdlib probes against the declared floor, names the sase-core
-      commit and release that provides any missing capability, and wire it into just
-      check and just check-full as a warning that can never fail the run.
+    '
+- id: early-warning
+  title: Add a non-fatal core-floor probe to just check
+  depends_on: []
+  size: medium
+  description: 'early-warning: add a cached, offline-tolerant tools/probe_core_floor
+    that runs the two stdlib probes against the declared floor, names the sase-core
+    commit and release that provides any missing capability, and wire it into just
+    check and just check-full as a warning that can never fail the run.
 
-      "
-  - id: core-automerge
-    title: Merge sase-core release PRs from the release-plz workflow
-    depends_on: []
-    size: small
-    description:
-      "core-automerge: add a guarded job to sase-core's release-plz.yml that waits for
-      the release PR's checks and squash-merges it, collapsing a median 43-minute and
-      worst-case 9h36m human wait into roughly ten minutes."
+    '
+- id: core-automerge
+  title: Merge sase-core release PRs from the release-plz workflow
+  depends_on: []
+  size: small
+  description: 'core-automerge: add a guarded job to sase-core''s release-plz.yml
+    that waits for the release PR''s checks and squash-merges it, collapsing a median
+    43-minute and worst-case 9h36m human wait into roughly ten minutes.'
 proposed_by: bbugyi200.athena.wq
 create_time: 2026-08-09 15:17:18
 status: wip
+bead_id: sase-ij
 ---
 
-- **PROMPT:**
-  [prompts/202608/core_window_ratchet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/core_window_ratchet.md)
+- **PROMPT:** [prompts/202608/core_window_ratchet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/core_window_ratchet.md)
+- **BEAD:** [sase-ij](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ij/README.md)
 
 # Plan: Ratchet the sase-core-rs window at the release boundary instead of on feature PRs
 
