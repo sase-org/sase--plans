@@ -1,70 +1,66 @@
 ---
 tier: epic
 title: Make dev-install SASE updates fast
-goal: "Pressing `,U` on a dev (editable) SASE install completes in seconds instead of
-  minutes, with every existing safety check, blocker, fallback, journal record, toast,
-  and restart behavior preserved.
+goal: 'Pressing `,U` on a dev (editable) SASE install completes in seconds instead
+  of minutes, with every existing safety check, blocker, fallback, journal record,
+  toast, and restart behavior preserved.
 
-  "
+  '
 phases:
-  - id: timings
-    title: Instrument dev-update step durations
-    depends_on: []
-    size: small
-    description:
-      "timings: record per-command and per-step wall-clock durations in the dev-update
-      journal, surface the slowest steps in the result log, and add a read-only analysis
-      script so every later phase has a hard before/after baseline."
-  - id: unified-build
-    title: Build the Rust core and LSP in one feature-unified cargo invocation
-    depends_on:
-      - timings
-    size: medium
-    description:
-      "unified-build: collapse the two separate cargo/maturin reconcile steps into a
-      single feature-unified build so sase_core and its shared dependencies compile once
-      per update instead of twice, and so the two builds stop invalidating each other's
-      cached units."
-  - id: fast-profile
-    title: Add a fast dev-update cargo profile
-    depends_on:
-      - unified-build
-    size: medium
-    description:
-      "fast-profile: add a dev-update-only cargo profile in sase-core that drops LTO and
-      codegen-units=1 in favor of incremental parallel codegen, wire the dev-update
-      recipes to it with an escape hatch, and prove the published wheel/CI profile is
-      untouched and runtime performance does not regress."
-  - id: prebuild
-    title: Prebuild Rust artifacts off the interactive path
-    depends_on:
-      - unified-build
-      - fast-profile
-    size: large
-    description:
-      "prebuild: build the Rust artifacts in the background from a dedicated mirror
-      clone as soon as the update poller sees incoming sase-core commits, then install
-      the stamped prebuilt artifacts during the interactive update when every provenance
-      field matches, falling back to a normal build on any mismatch."
-  - id: verify
-    title: End-to-end verification and documentation
-    depends_on:
-      - timings
-      - unified-build
-      - fast-profile
-      - prebuild
-    size: small
-    description:
-      "verify: measure the real `,U` flow against the phase-one baseline, re-exercise
-      every preserved blocker/fallback/restart path on the live dev install, confirm
-      `just install` and CI are unaffected, and refresh the Rust backend docs."
+- id: timings
+  title: Instrument dev-update step durations
+  depends_on: []
+  size: small
+  description: 'timings: record per-command and per-step wall-clock durations in the
+    dev-update journal, surface the slowest steps in the result log, and add a read-only
+    analysis script so every later phase has a hard before/after baseline.'
+- id: unified-build
+  title: Build the Rust core and LSP in one feature-unified cargo invocation
+  depends_on:
+  - timings
+  size: medium
+  description: 'unified-build: collapse the two separate cargo/maturin reconcile steps
+    into a single feature-unified build so sase_core and its shared dependencies compile
+    once per update instead of twice, and so the two builds stop invalidating each
+    other''s cached units.'
+- id: fast-profile
+  title: Add a fast dev-update cargo profile
+  depends_on:
+  - unified-build
+  size: medium
+  description: 'fast-profile: add a dev-update-only cargo profile in sase-core that
+    drops LTO and codegen-units=1 in favor of incremental parallel codegen, wire the
+    dev-update recipes to it with an escape hatch, and prove the published wheel/CI
+    profile is untouched and runtime performance does not regress.'
+- id: prebuild
+  title: Prebuild Rust artifacts off the interactive path
+  depends_on:
+  - unified-build
+  - fast-profile
+  size: large
+  description: 'prebuild: build the Rust artifacts in the background from a dedicated
+    mirror clone as soon as the update poller sees incoming sase-core commits, then
+    install the stamped prebuilt artifacts during the interactive update when every
+    provenance field matches, falling back to a normal build on any mismatch.'
+- id: verify
+  title: End-to-end verification and documentation
+  depends_on:
+  - timings
+  - unified-build
+  - fast-profile
+  - prebuild
+  size: small
+  description: 'verify: measure the real `,U` flow against the phase-one baseline,
+    re-exercise every preserved blocker/fallback/restart path on the live dev install,
+    confirm `just install` and CI are unaffected, and refresh the Rust backend docs.'
 proposed_by: bbugyi200.athena.wj
 create_time: 2026-08-09 10:09:32
 status: wip
+bead_id: sase-i9
 ---
 
-- **PROMPT:**
-  [prompts/202608/fast_dev_update.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fast_dev_update.md)
+- **PROMPT:** [prompts/202608/fast_dev_update.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fast_dev_update.md)
+- **BEAD:** [sase-i9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i9/README.md)
 
 # Plan: Make dev-install SASE updates fast
 
