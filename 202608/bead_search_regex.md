@@ -38,7 +38,7 @@ phases:
     search tests and documentation.'
 proposed_by: bbugyi200.athena.w8
 create_time: 2026-08-09 07:40:29
-status: wip
+status: done
 bead_id: sase-i1
 ---
 
