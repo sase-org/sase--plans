@@ -1,64 +1,63 @@
 ---
 tier: epic
 title: Repair the Patch/stitch terminology gate and finish the test-tree sweep
-goal: "The Patch/stitch terminology gate passes on an ordinary checkout and in CI, the
-  audit can report a defect anywhere under tests/ and smoke/ instead of rubber-stamping
-  them, the test tree says Patch and stitch, and epic sase-hn.8 is closed with its plan
-  marked done.
+goal: 'The Patch/stitch terminology gate passes on an ordinary checkout and in CI,
+  the audit can report a defect anywhere under tests/ and smoke/ instead of rubber-stamping
+  them, the test tree says Patch and stitch, and epic sase-hn.8 is closed with its
+  plan marked done.
 
-  "
+  '
 phases:
-  - id: gate-repair
-    title: Unbreak the gate and reopen the test-tree work list
-    depends_on: []
-    size: medium
-    description: "gate-repair: stop the lint gate from hard-failing on unmaterialized
-      linked repos, restore the strict all-repos invocation for the explicit audit
-      command, and add a temporary opt-in flag that re-enables content-aware tests/ and
-      smoke/ classification so the sweep phases have an enforceable work list.
+- id: gate-repair
+  title: Unbreak the gate and reopen the test-tree work list
+  depends_on: []
+  size: medium
+  description: 'gate-repair: stop the lint gate from hard-failing on unmaterialized
+    linked repos, restore the strict all-repos invocation for the explicit audit command,
+    and add a temporary opt-in flag that re-enables content-aware tests/ and smoke/
+    classification so the sweep phases have an enforceable work list.
 
-      "
-  - id: test-tui-sweep
-    title: Clear the ACE TUI test surface
-    depends_on:
-      - gate-repair
-    size: large
-    description: "test-tui-sweep: retire ChangeSpec vocabulary from the 2709 defects
-      under tests/ace/tui by switching canonical call sites to the existing Patch
-      helpers, fixing prose, and annotating genuine retained contracts, keeping the PNG
-      goldens pixel-inert.
+    '
+- id: test-tui-sweep
+  title: Clear the ACE TUI test surface
+  depends_on:
+  - gate-repair
+  size: large
+  description: 'test-tui-sweep: retire ChangeSpec vocabulary from the 2709 defects
+    under tests/ace/tui by switching canonical call sites to the existing Patch helpers,
+    fixing prose, and annotating genuine retained contracts, keeping the PNG goldens
+    pixel-inert.
 
-      "
-  - id: test-rest-sweep
-    title: Clear the remaining test surface
-    depends_on:
-      - gate-repair
-    size: medium
-    description: "test-rest-sweep: clear the 244 defects under tests/ outside
-      tests/ace/tui, make the sase.ace.changespec compatibility tests self-declaring
-      rather than path-exempt, and confirm smoke/ stays clean.
+    '
+- id: test-rest-sweep
+  title: Clear the remaining test surface
+  depends_on:
+  - gate-repair
+  size: medium
+  description: 'test-rest-sweep: clear the 244 defects under tests/ outside tests/ace/tui,
+    make the sase.ace.changespec compatibility tests self-declaring rather than path-exempt,
+    and confirm smoke/ stays clean.
 
-      "
-  - id: land-epic
-    title: Make strict classification the default and land epic sase-hn.8
-    depends_on:
-      - test-tui-sweep
-      - test-rest-sweep
-    size: medium
-    description:
-      "land-epic: make content-aware tests/ and smoke/ classification unconditional,
-      replace the test that pinned the blanket rule, run the full cross-repository
-      verification set, close bead sase-hn.8, run symvision, and mark this plan done."
+    '
+- id: land-epic
+  title: Make strict classification the default and land epic sase-hn.8
+  depends_on:
+  - test-tui-sweep
+  - test-rest-sweep
+  size: medium
+  description: 'land-epic: make content-aware tests/ and smoke/ classification unconditional,
+    replace the test that pinned the blanket rule, run the full cross-repository verification
+    set, close bead sase-hn.8, run symvision, and mark this plan done.'
 proposed_by: bbugyi200.athena.sase-hn.8.land
 parent_bead: sase-hn.8
 create_time: 2026-08-09 04:14:48
 status: wip
+bead_id: sase-hn.8.6
 ---
 
-- **PROMPT:**
-  [prompts/202608/patch_audit_gate_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_audit_gate_repair.md)
-- **PARENT:**
-  [202608/patch_terminology_completion.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_terminology_completion.md)
+- **PROMPT:** [prompts/202608/patch_audit_gate_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_audit_gate_repair.md)
+- **PARENT:** [202608/patch_terminology_completion.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_terminology_completion.md)
+- **BEAD:** [sase-hn.8.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.8.6.md)
 
 # Repair the Patch/stitch terminology gate and finish the test-tree sweep
 
