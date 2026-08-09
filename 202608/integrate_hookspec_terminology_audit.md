@@ -14,6 +14,11 @@ status: done
   [202608/patch_audit_gate_repair.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_audit_gate_repair.md)
 - **BEAD:**
   [sase-hn.8.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.8.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-hn.8.6.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-hn.8.6.land.md)
+- **COMMITS:**
+  - [11cd863](https://github.com/sase-org/sase/commit/11cd8634d6be9acd2c0e1b6fa5ff8fe5779a08ed)
+    — test: annotate legacy workspace hook arguments
 
 # Integrate the frozen hookspec compatibility contract with the terminology audit
 
