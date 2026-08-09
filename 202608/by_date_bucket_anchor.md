@@ -8,7 +8,7 @@ goal:
   renders under `Yesterday`, not under `This Week`.
 proposed_by: bbugyi200.athena.wc
 create_time: 2026-08-09 07:51:30
-status: wip
+status: done
 ---
 
 - **PROMPT:**
