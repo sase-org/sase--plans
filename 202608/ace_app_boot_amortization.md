@@ -16,6 +16,11 @@ status: done
   [202608/fast_test_suite_1.md](https://github.com/sase-org/sase--plans/blob/main/202608/fast_test_suite_1.md)
 - **BEAD:**
   [sase-ib.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ib/sase-ib.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ib.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ib.3.md)
+- **COMMITS:**
+  - [44bf25f](https://github.com/sase-org/sase/commit/44bf25f84fecc2ee32c0c6fc8cf58a642f0f632b)
+    — perf(ace): amortize ACE test app startup
 
 # Plan: Amortize ACE app startup across tests
 
