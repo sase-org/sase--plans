@@ -6,10 +6,12 @@ goal:
   with clean post-close state.
 proposed_by: bbugyi200.athena.sase-i3.land
 bead: sase-i3
-create_time: 2026-08-09 09:35:16
+create_time: 2026-08-09 09:35:21
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/glossary_alias_plurals_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_alias_plurals_landing.md)
 - **PARENT:**
   [202608/glossary_alias_plurals.md](https://github.com/sase-org/sase--plans/blob/main/202608/glossary_alias_plurals.md)
 - **BEAD:**
