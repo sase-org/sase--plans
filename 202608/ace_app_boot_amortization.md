@@ -6,10 +6,12 @@ goal:
   every node, assertion, isolation guarantee, and contention check.
 proposed_by: bbugyi200.athena.sase-ib.3
 bead: sase-ib.3
-create_time: 2026-08-09 13:46:58
+create_time: 2026-08-09 13:47:07
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/ace_app_boot_amortization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ace_app_boot_amortization.md)
 - **PARENT:**
   [202608/fast_test_suite_1.md](https://github.com/sase-org/sase--plans/blob/main/202608/fast_test_suite_1.md)
 - **BEAD:**
