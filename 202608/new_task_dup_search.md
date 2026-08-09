@@ -7,7 +7,7 @@ goal:
   using `sase bead list` for in-progress epics.
 proposed_by: bbugyi200.athena.wb
 create_time: 2026-08-09 07:41:31
-status: wip
+status: done
 ---
 
 # Plan: Duplicate detection in `/sase_new_task` moves to `sase bead search`
