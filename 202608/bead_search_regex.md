@@ -1,49 +1,49 @@
 ---
 tier: epic
 title: Opt-in regex mode for sase bead search
-goal: "`sase bead search -e/--regex <pattern>` matches beads with a regular expression
+goal: '`sase bead search -e/--regex <pattern>` matches beads with a regular expression
   on both the Rust fast path and the Python fallback, while the default literal search
   keeps its current substring semantics and compiles no regex at all.
 
-  "
+  '
 phases:
-  - id: core
-    title: Rust core regex matcher and fast-path flag
-    depends_on: []
-    size: medium
-    description: "core: add a shared bead query matcher to sase-core, thread an opt-in
-      `regex` argument through `search_issues`/`search_issues_in_issues` and the
-      `bead_search` PyO3 binding, teach the Rust bead CLI to parse `-e`/`--regex` and to
-      highlight and snippet regex matches, and cover all of it with Rust tests.
+- id: core
+  title: Rust core regex matcher and fast-path flag
+  depends_on: []
+  size: medium
+  description: 'core: add a shared bead query matcher to sase-core, thread an opt-in
+    `regex` argument through `search_issues`/`search_issues_in_issues` and the `bead_search`
+    PyO3 binding, teach the Rust bead CLI to parse `-e`/`--regex` and to highlight
+    and snippet regex matches, and cover all of it with Rust tests.
 
-      "
-  - id: floor
-    title: Adopt the released core in the sase dependency floor
-    depends_on:
-      - core
-    size: small
-    description: "floor: after sase-core publishes the release that carries the regex
-      binding, raise the `sase-core-rs` minimum in pyproject.toml, refresh uv.lock, and
-      confirm the published-core minimum smoke tooling accepts the new floor.
+    '
+- id: floor
+  title: Adopt the released core in the sase dependency floor
+  depends_on:
+  - core
+  size: small
+  description: 'floor: after sase-core publishes the release that carries the regex
+    binding, raise the `sase-core-rs` minimum in pyproject.toml, refresh uv.lock,
+    and confirm the published-core minimum smoke tooling accepts the new floor.
 
-      "
-  - id: cli
-    title: Python CLI flag, rendering, tests, and docs
-    depends_on:
-      - floor
-    size: medium
-    description:
-      "cli: add the `-e`/`--regex` option to the `sase bead search` argparse parser,
-      plumb it through the bead read facade and BeadProject, handle invalid patterns and
-      regex snippet selection in the Python renderer, and update the bead search tests
-      and documentation."
+    '
+- id: cli
+  title: Python CLI flag, rendering, tests, and docs
+  depends_on:
+  - floor
+  size: medium
+  description: 'cli: add the `-e`/`--regex` option to the `sase bead search` argparse
+    parser, plumb it through the bead read facade and BeadProject, handle invalid
+    patterns and regex snippet selection in the Python renderer, and update the bead
+    search tests and documentation.'
 proposed_by: bbugyi200.athena.w8
 create_time: 2026-08-09 07:40:29
 status: wip
+bead_id: sase-i1
 ---
 
-- **PROMPT:**
-  [prompts/202608/bead_search_regex.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_search_regex.md)
+- **PROMPT:** [prompts/202608/bead_search_regex.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/bead_search_regex.md)
+- **BEAD:** [sase-i1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i1/README.md)
 
 # Plan: Opt-in regex mode for `sase bead search`
 
