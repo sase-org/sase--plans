@@ -15,6 +15,11 @@ status: done
   [202608/h8_10_remaining_landing.md](https://github.com/sase-org/sase--plans/blob/main/202608/h8_10_remaining_landing.md)
 - **BEAD:**
   [sase-h8.10.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-h8/sase-h8.10.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-h8.10.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-h8.10.5.land.md)
+- **COMMITS:**
+  - [aeab1cb](https://github.com/sase-org/sase/commit/aeab1cb9cc11033a5c1c57c09bbf49f1ca14ceb4)
+    — test(tui): update artifact ref highlight snapshot
 
 # Repair the post-start XPrompt write-target conflict and land `sase-h8.10.5`
 
