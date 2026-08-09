@@ -1,72 +1,71 @@
 ---
 tier: epic
 title: Finish the Patch/stitch terminology migration and land epic sase-hn
-goal: "User-facing output and canonical-module prose everywhere say Patch and stitch,
+goal: 'User-facing output and canonical-module prose everywhere say Patch and stitch,
   the terminology audit can actually detect a defect instead of rubber-stamping the
   source tree, and epic sase-hn is closed with its plan marked done.
 
-  "
+  '
 phases:
-  - id: audit-classifier
-    title: Make the terminology audit content-aware
-    depends_on: []
-    size: medium
-    description: "audit-classifier: replace path-prefix-only classification with
-      content-aware rules, make skipped linked repos a hard error, and produce the
-      authoritative defect list the sweep phases work from.
+- id: audit-classifier
+  title: Make the terminology audit content-aware
+  depends_on: []
+  size: medium
+  description: 'audit-classifier: replace path-prefix-only classification with content-aware
+    rules, make skipped linked repos a hard error, and produce the authoritative defect
+    list the sweep phases work from.
 
-      "
-  - id: ace-surface
-    title: Sweep the ACE surface
-    depends_on:
-      - audit-classifier
-    size: large
-    description: "ace-surface: retire ChangeSpec vocabulary from ACE console output,
-      toasts, TUI labels, docstrings, and canonical locals, including the glossary PNG
-      snapshot fixture, while retained aliases and saved state keep working.
+    '
+- id: ace-surface
+  title: Sweep the ACE surface
+  depends_on:
+  - audit-classifier
+  size: large
+  description: 'ace-surface: retire ChangeSpec vocabulary from ACE console output,
+    toasts, TUI labels, docstrings, and canonical locals, including the glossary PNG
+    snapshot fixture, while retained aliases and saved state keep working.
 
-      "
-  - id: workflows-cli-surface
-    title: Sweep workflows, CLI, and the remaining source tree
-    depends_on:
-      - audit-classifier
-    size: large
-    description: "workflows-cli-surface: fix CLI help text, workflow status messages,
-      error strings, and docstrings across every non-ACE source path, plus the garbled
-      ChangeSpecI strings, without changing any legacy command contract.
+    '
+- id: workflows-cli-surface
+  title: Sweep workflows, CLI, and the remaining source tree
+  depends_on:
+  - audit-classifier
+  size: large
+  description: 'workflows-cli-surface: fix CLI help text, workflow status messages,
+    error strings, and docstrings across every non-ACE source path, plus the garbled
+    ChangeSpecI strings, without changing any legacy command contract.
 
-      "
-  - id: core-and-linked
-    title: Sweep the Rust core and linked integrations
-    depends_on:
-      - audit-classifier
-    size: medium
-    description: "core-and-linked: fix sase-core Rust doc comments and audit the four
-      linked repositories the phase-7 run never scanned, keeping wire and completion
-      compatibility intact in both directions.
+    '
+- id: core-and-linked
+  title: Sweep the Rust core and linked integrations
+  depends_on:
+  - audit-classifier
+  size: medium
+  description: 'core-and-linked: fix sase-core Rust doc comments and audit the four
+    linked repositories the phase-7 run never scanned, keeping wire and completion
+    compatibility intact in both directions.
 
-      "
-  - id: land-epic
-    title: Verify and land epic sase-hn
-    depends_on:
-      - ace-surface
-      - workflows-cli-surface
-      - core-and-linked
-    size: medium
-    description:
-      "land-epic: run the full cross-repository verification set, enforce the audit as a
-      lint gate, close bead sase-hn with the verification note, run symvision, and mark
-      both plan files done."
+    '
+- id: land-epic
+  title: Verify and land epic sase-hn
+  depends_on:
+  - ace-surface
+  - workflows-cli-surface
+  - core-and-linked
+  size: medium
+  description: 'land-epic: run the full cross-repository verification set, enforce
+    the audit as a lint gate, close bead sase-hn with the verification note, run symvision,
+    and mark both plan files done.'
 proposed_by: bbugyi200.athena.sase-hn.land
 parent_bead: sase-hn
 create_time: 2026-08-09 00:10:47
 status: wip
+bead_id: sase-hn.8
 ---
 
-- **PROMPT:**
-  [prompts/202608/patch_terminology_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_terminology_completion.md)
-- **PARENT:**
-  [202608/patch_and_stitch_terminology.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_and_stitch_terminology.md)
+- **PROMPT:** [prompts/202608/patch_terminology_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/patch_terminology_completion.md)
+- **PARENT:** [202608/patch_and_stitch_terminology.md](https://github.com/sase-org/sase--plans/blob/main/202608/patch_and_stitch_terminology.md)
+- **BEAD:** [sase-hn.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-hn/sase-hn.8.md)
 
 # Finish the Patch/stitch terminology migration and land epic sase-hn
 
