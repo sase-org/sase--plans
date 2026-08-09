@@ -52,7 +52,7 @@ phases:
   size: medium
 proposed_by: bbugyi200.athena.w2
 create_time: 2026-08-08 17:02:21
-status: wip
+status: done
 bead_id: sase-hq
 ---
 
