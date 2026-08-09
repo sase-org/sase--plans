@@ -1,43 +1,41 @@
 ---
 tier: epic
 title: Recognize glossary terms that wrap across a line break
-goal:
-  A multiword glossary term stays recognized when a line break falls between its words,
-  so it is highlighted, previewable, and jumpable in ACE and in LSP-backed editors
-  exactly as it is when it fits on one line.
+goal: A multiword glossary term stays recognized when a line break falls between its
+  words, so it is highlighted, previewable, and jumpable in ACE and in LSP-backed
+  editors exactly as it is when it fits on one line.
 phases:
-  - id: core
-    title: Match phrases across one line break and expose per-line span segments
-    depends_on: []
-    size: medium
-    description:
-      "core: allow a single line break inside a multiword alias in the Rust matcher, add
-      core-computed per-line display segments to the glossary span wire, and emit one
-      LSP semantic token per segment."
-  - id: core-release
-    title: Publish a sase-core-rs release containing the matcher change
-    depends_on:
-      - core
-    size: small
-    description:
-      "core-release: land the release-plz version bump for sase-core, record the
-      published version, and confirm the wheel resolves from PyPI."
-  - id: python
-    title: Consume segments in ACE, guard the floor, and correct the docs
-    depends_on:
-      - core-release
-    size: medium
-    description:
-      "python: move the sase-core-rs window, carry span segments through the facade into
-      the prompt highlight map, normalize wrapped matched text in the preview card, add
-      a published-minimum smoke gate, and fix the docs that promise line-local matching."
+- id: core
+  title: Match phrases across one line break and expose per-line span segments
+  depends_on: []
+  size: medium
+  description: 'core: allow a single line break inside a multiword alias in the Rust
+    matcher, add core-computed per-line display segments to the glossary span wire,
+    and emit one LSP semantic token per segment.'
+- id: core-release
+  title: Publish a sase-core-rs release containing the matcher change
+  depends_on:
+  - core
+  size: small
+  description: 'core-release: land the release-plz version bump for sase-core, record
+    the published version, and confirm the wheel resolves from PyPI.'
+- id: python
+  title: Consume segments in ACE, guard the floor, and correct the docs
+  depends_on:
+  - core-release
+  size: medium
+  description: 'python: move the sase-core-rs window, carry span segments through
+    the facade into the prompt highlight map, normalize wrapped matched text in the
+    preview card, add a published-minimum smoke gate, and fix the docs that promise
+    line-local matching.'
 proposed_by: bbugyi200.athena.ws
 create_time: 2026-08-09 15:53:19
 status: wip
+bead_id: sase-ik
 ---
 
-- **PROMPT:**
-  [prompts/202608/glossary_line_break_matching.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_line_break_matching.md)
+- **PROMPT:** [prompts/202608/glossary_line_break_matching.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_line_break_matching.md)
+- **BEAD:** [sase-ik](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ik/README.md)
 
 # Recognize glossary terms that wrap across a line break
 
