@@ -4,6 +4,7 @@ title: Make @cheapest a load-balanced pool
 goal:
   SASE round-robins explicit @cheapest launches between the existing Haiku and GPT-5.3 Codex Spark members, with
   independent cursor state and consistent tests, Models-panel presentation, examples, and documentation.
+size: medium
 proposed_by: bbugyi200.athena.rc.f1
 create_time: 2026-08-01 10:39:24
 status: done

@@ -7,6 +7,7 @@ goal:
   errors) built from the durable bundle, and every other row shows a compact summary card instead of
   an empty pane — while gate-backed rows group under a tab named `Gates` and custom gates are
   required to declare the title, icon, and notes that make that card readable.
+size: medium
 proposed_by: bbugyi200.athena.ui
 create_time: 2026-08-07 08:39:44
 status: done

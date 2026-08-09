@@ -4,6 +4,7 @@ title: Resolve Artifacts project scope through project refs, not raw ProjectSpec
 goal:
   Every Artifacts pane resolves its project scope for `#gh` projects whose ProjectSpec key differs from the configured
   project name, so the Beads pane stops reporting "No bead store is available for this project."
+size: medium
 proposed_by: bbugyi200.athena.tz
 create_time: 2026-08-06 09:11:09
 status: done

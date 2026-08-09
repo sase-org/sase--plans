@@ -5,6 +5,7 @@ goal:
   A bead store whose `issue_prefix` leaked the ProjectSpec key repairs itself to the project's `PROJECT_NAME` the next
   time a top-level bead is minted, so `sase bead work` on an approved epic plan in `bob-cli` creates `bob-cli-6` instead
   of `gh_bobs-org__bob-cli-6`, and reports the repair in its output.
+size: medium
 proposed_by: bbugyi200.athena.sf
 create_time: 2026-08-03 04:18:59
 status: done

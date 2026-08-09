@@ -5,6 +5,7 @@ goal:
   test_commit_completion_rows_match_shared_inventory_and_resolve passes on all three test legs of a master CI run,
   because no test can silently redirect the process TMPDIR at a directory pytest is about to delete, and sase-core's
   commit-inventory diagnostic reports the real errno instead of guessing at TMPDIR.
+size: medium
 proposed_by: bbugyi200.athena.tw
 create_time: 2026-08-06 08:46:37
 status: done

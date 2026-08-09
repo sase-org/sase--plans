@@ -4,6 +4,7 @@ title: Restore global help and scope reverse metadata search
 goal:
   Bare question mark opens the tab-aware Ace help panel from every top-level tab, while Ctrl+R reverses an
   already-active Agents metadata search without losing the query, matches, or reverse-search functionality.
+size: medium
 proposed_by: bbugyi200.athena.s5
 create_time: 2026-08-02 11:58:38
 status: done

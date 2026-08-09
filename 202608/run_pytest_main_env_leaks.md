@@ -6,6 +6,7 @@ goal:
   because no test in the tools/run_pytest family can leave TMPDIR, the commit-workflow env keys, or the working
   directory mutated past its own teardown, and because a leak that does slip through is contained at the test that
   caused it instead of cascading across its xdist worker.
+size: medium
 proposed_by: bbugyi200.athena.tw.f1
 create_time: 2026-08-06 09:42:21
 status: done

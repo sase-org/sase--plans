@@ -4,6 +4,7 @@ title: Finish and land epic sase-en
 goal:
   Published SASE installs require the core release that contains the single-pass bead detail API, the integrated epic is
   fully revalidated and closed, post-close Symvision is clean, and the durable epic plan is marked done.
+size: medium
 proposed_by: bbugyi200.athena.sase-en.land
 bead: sase-en
 create_time: 2026-08-03 10:53:44

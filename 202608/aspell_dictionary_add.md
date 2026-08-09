@@ -5,6 +5,7 @@ goal:
   The spellcheck correction panel gains a `d` action that writes the word to the user's aspell personal dictionary,
   verifies the write actually landed by re-checking in a fresh aspell process, and clears the sticky squiggle only once
   that verification succeeds.
+size: medium
 proposed_by: bbugyi200.athena.qx.f0
 create_time: 2026-08-01 07:57:07
 status: done

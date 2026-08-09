@@ -5,6 +5,7 @@ goal:
   Restore a coherent XPrompt write-target API on the integrated base, verify the
   combined tree, close sase-h8.10.5 normally, pass post-close Symvision, and mark its
   linked epic plan done.
+size: medium
 proposed_by: bbugyi200.athena.sase-h8.10.5.land
 bead: sase-h8.10.5
 create_time: 2026-08-08 18:09:02

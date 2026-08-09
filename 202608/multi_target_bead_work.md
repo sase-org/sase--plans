@@ -4,6 +4,7 @@ title: Sequential multi-target sase bead work
 goal:
   Allow one sase bead work invocation to process any ordered mix of plan files and bead
   IDs with shell-&& short-circuit semantics.
+size: medium
 proposed_by: bbugyi200.athena.w0
 create_time: 2026-08-08 15:48:46
 status: wip

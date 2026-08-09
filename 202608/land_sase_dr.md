@@ -4,6 +4,7 @@ title: Finish integration and land epic sase-dr
 goal:
   Epic sase-dr is integrated with later prompt-archive changes, its follow-ups are deliberately settled, and its bead
   and linked plan are finalized.
+size: medium
 proposed_by: bbugyi200.athena.sase-dr.land
 bead: sase-dr
 create_time: 2026-08-01 16:17:41

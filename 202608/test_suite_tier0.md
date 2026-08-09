@@ -5,6 +5,7 @@ goal:
   The default `just test` lane stops running the visual PNG suite and the three dismissed-bundle scale tests, the
   suite-gate stops collapsing to a single worker on small-CPU hosts, and the per-worker memory reserve matches measured
   worker RSS — with every relocated test still covered by a CI job.
+size: medium
 proposed_by: bbugyi200.athena.tm
 create_time: 2026-08-05 19:11:25
 status: done

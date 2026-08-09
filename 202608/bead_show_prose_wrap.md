@@ -5,6 +5,7 @@ goal:
   "`sase bead show` wraps DESCRIPTION, NOTES, and +1 evidence prose at a configurable column budget (default 120)
   without ever splitting a URL or an inline code span, and `-S/--style {auto,plain,color,rich}` becomes `-s/--style
   {auto,plain,rich}`."
+size: medium
 proposed_by: bbugyi200.athena.sl
 create_time: 2026-08-03 07:13:04
 status: done

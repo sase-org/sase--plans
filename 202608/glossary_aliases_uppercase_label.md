@@ -4,6 +4,7 @@ title: Render ALIASES instead of Aliases in generated glossary memory
 goal:
   Glossary entries with configured aliases render an uppercase `ALIASES:` label in
   `sase/memory/glossary.md` and in every generated agent instruction file.
+size: medium
 proposed_by: bbugyi200.athena.wa
 create_time: 2026-08-09 07:39:19
 status: wip

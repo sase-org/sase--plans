@@ -5,6 +5,7 @@ goal:
   Agent prompts wrap at 120 columns on every surface — explicit gf / Ctrl+G f formatting in the ACE prompt input,
   launch-time preprocessing, and the published prompt document — retiring the 80-column agent-prompt special case so
   prompt text matches the width already used for plans, SDD files, generated skills, and repo Markdown.
+size: medium
 proposed_by: bbugyi200.athena.ua
 create_time: 2026-08-06 15:13:05
 status: done

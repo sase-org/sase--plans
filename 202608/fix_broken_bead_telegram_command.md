@@ -5,6 +5,7 @@ goal:
   "`/bead` in Telegram renders the active-bead picker again, built from a
   machine-readable `sase bead list` contract over enabled projects only, and no SASE
   surface ever pastes a raw Python traceback into the chat."
+size: medium
 proposed_by: bbugyi200.athena.vm
 create_time: 2026-08-07 23:27:56
 status: done

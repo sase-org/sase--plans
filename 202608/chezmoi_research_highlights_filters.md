@@ -8,6 +8,7 @@ goal:
   line, is committed to the chezmoi repo, and is applied to `~/.config/sase/sase.yml` so
   the hook loads again and fires on every research report except the two
   pre-consolidation `#research_swarm` researchers' throwaway reports.
+size: medium
 proposed_by: bbugyi200.athena.vc.f1
 create_time: 2026-08-07 21:51:57
 status: done

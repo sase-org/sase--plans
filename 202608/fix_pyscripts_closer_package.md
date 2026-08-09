@@ -2,6 +2,7 @@
 tier: tale
 title: Fix pyscripts closer-directory package false positives
 goal: Package directories no longer trigger Rule 2 while genuine closer standalone-script directories remain invalid.
+size: medium
 proposed_by: bbugyi200.athena.sase-de
 create_time: 2026-08-01 10:25:02
 status: done

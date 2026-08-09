@@ -4,6 +4,7 @@ title: Restore the Tasks tab selection for durable-store rows
 goal:
   Reopening the Admin Center Tasks tab reselects the entry the user had selected, including durable-store rows that
   arrive after the pane mounts.
+size: medium
 proposed_by: bbugyi200.athena.s1
 create_time: 2026-08-02 10:25:56
 status: done

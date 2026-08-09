@@ -5,6 +5,7 @@ goal:
   Pressing <enter> on a VCS-backed (byte-free) artifact row in the Agents-tab artifact
   picker materializes the file and opens it in the viewer instead of crashing sase ace
   with a TypeError.
+size: medium
 proposed_by: bbugyi200.athena.ux
 create_time: 2026-08-07 14:28:26
 status: done

@@ -4,6 +4,7 @@ title: Add research provenance to Highlights PDFs
 goal:
   Hook-created Highlights PDFs retain the repository-relative Markdown source path as
   synchronized research metadata.
+size: medium
 proposed_by: bbugyi200.athena.vq
 create_time: 2026-08-08 11:22:43
 status: done

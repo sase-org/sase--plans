@@ -5,6 +5,7 @@ goal:
   Concurrent epic approvals for one project serialize on a single lockfile instead of racing each other's sidecar
   clones, so a second approval waits for the in-flight launch rather than failing with an unusable-store error or
   hard-resetting the shared beads checkout out from under it.
+size: medium
 proposed_by: bbugyi200.athena.rz
 create_time: 2026-08-02 10:00:58
 status: wip

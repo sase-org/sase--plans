@@ -4,6 +4,7 @@ title: Document Meta Muse Code as a supported agent CLI
 goal:
   All current supported-agent CLI documentation includes Muse Code without implying
   auto-detection.
+size: medium
 proposed_by: bbugyi200.athena.vr
 create_time: 2026-08-08 11:36:53
 status: done

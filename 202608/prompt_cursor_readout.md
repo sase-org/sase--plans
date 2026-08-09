@@ -5,6 +5,7 @@ goal:
   Every prompt input pane advertises its cursor position — the active pane live on the bar's bottom
   border, each parked pane on its own separator rule — so the column is always visible and an
   unfocused pane's cursor is no longer invisible.
+size: medium
 proposed_by: bbugyi200.athena.up
 create_time: 2026-08-07 09:51:42
 status: done

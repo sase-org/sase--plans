@@ -5,6 +5,7 @@ goal:
   Agents that background a long-running verification command can no longer burn every commit-finalizer pass "waiting for
   a notification" that can never arrive; the finalizer detects a no-progress pass, escalates with an explicit
   single-turn contract, and reports the stall in its result artifact.
+size: medium
 proposed_by: bbugyi200.athena.tj
 ---
 

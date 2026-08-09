@@ -4,6 +4,7 @@ title: Sticky misspelling highlighting in the prompt input widget
 goal:
   Words that NORMAL-mode `K` proved misspelled are remembered durably and rendered with a red underline in every prompt
   input from that moment on, with a first-class way to accept a word and stop flagging it.
+size: medium
 proposed_by: bbugyi200.athena.qx
 create_time: 2026-08-01 07:04:20
 status: done

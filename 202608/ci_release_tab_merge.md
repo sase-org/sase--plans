@@ -5,6 +5,7 @@ goal:
   Every ci_watch notification — CI repair proposals and release merge/blocked notices
   alike — lands in a single ACE notification-panel `Ci` tab, and no `Release` tab is
   produced for new notifications.
+size: medium
 proposed_by: bbugyi200.athena.va
 create_time: 2026-08-07 20:16:47
 status: done

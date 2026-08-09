@@ -4,6 +4,7 @@ title: Display bead notes in the agent metadata BEAD lane
 goal:
   Show every persisted note for the selected agent's corresponding bead in a readable, responsive BEAD lane while
   leaving note-free lanes visually unchanged.
+size: medium
 proposed_by: bbugyi200.athena.rf
 create_time: 2026-08-01 10:30:05
 status: done

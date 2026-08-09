@@ -5,6 +5,7 @@ goal:
   'Answering a notification gate never fails with the spurious error "cannot start
   command: [Errno 32] Broken pipe" when a gate command exits without reading its stdin
   payload, and a deterministic regression test pins the behavior.'
+size: medium
 proposed_by: bbugyi200.athena.v4
 create_time: 2026-08-07 17:21:13
 status: done

@@ -5,6 +5,7 @@ goal:
   A `sase dev update` fast-forward can no longer hot-swap the editable source tree underneath an in-flight `sase bead
   work`, `sase bead work` refuses to start while a swap is in progress instead of dying mid-launch, and the
   `priority_property` epic (`gh_bobs-org__bob-cli-4`) is relaunched successfully.
+size: medium
 proposed_by: bbugyi200.athena.se
 create_time: 2026-08-02 16:00:21
 status: done

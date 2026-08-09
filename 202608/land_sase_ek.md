@@ -4,6 +4,7 @@ title: Finish and land epic sase-ek
 goal:
   Complete the remaining repository-kind acceptance details, require the published fixed core, and close the epic with
   its plan finalized.
+size: medium
 proposed_by: bbugyi200.athena.sase-ek.land
 create_time: 2026-08-03 08:33:17
 status: done

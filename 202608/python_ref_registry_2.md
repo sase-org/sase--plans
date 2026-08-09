@@ -4,6 +4,7 @@ title: Build the Python ref registry and sidecar configuration
 goal:
   Expose validated contextual ref xprompts and one shared sidecar filter policy across
   Python catalog and artifact contexts.
+size: large
 proposed_by: bbugyi200.athena.sase-ho.2
 bead: sase-ho.2
 create_time: 2026-08-08 15:50:44

@@ -4,6 +4,7 @@ title: Reversible agents-tab mark-all-read action
 goal:
   Pressing ,u on the Agents tab marks every unread completed lane read, and a second ,u restores that exact batch as
   unread when no lane has become unread in the interim.
+size: medium
 proposed_by: bbugyi200.athena.ri
 ---
 

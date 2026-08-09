@@ -5,6 +5,7 @@ goal:
   Every row in the Logs tab source list renders on exactly two lines — a title line and
   a compact `size · age` subtitle — and wrapping is structurally impossible regardless
   of pane width, title length, or jump-hint prefixes.
+size: medium
 proposed_by: bbugyi200.athena.uu
 create_time: 2026-08-07 13:25:26
 status: done

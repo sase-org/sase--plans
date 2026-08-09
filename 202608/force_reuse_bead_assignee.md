@@ -4,6 +4,7 @@ title: Preserve bead ownership across forced agent relaunches
 goal:
   A confirmed forced relaunch can retain the overwritten agent's in-progress bead
   without weakening bead contention safeguards.
+size: medium
 proposed_by: bbugyi200.athena.w6
 create_time: 2026-08-08 19:04:49
 status: wip

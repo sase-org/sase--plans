@@ -4,6 +4,7 @@ title: Audit open task beads and close duplicate, stale, and non-reproducible on
 goal:
   The non-closed task-bead backlog contains only beads that still describe real unresolved work, with every closed bead
   carrying an accurate resolution and evidence trail.
+size: medium
 proposed_by: bbugyi200.athena.ru
 create_time: 2026-08-02 09:45:50
 status: wip

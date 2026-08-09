@@ -4,6 +4,7 @@ title: Show FAMILY MEMBERS on family-member detail panels
 goal:
   Selecting an agent family member in ACE renders the enclosing family's numbered FAMILY MEMBERS roster with every
   member except the selected one, and its 0-9 member jumps work exactly as they do on family container panels.
+size: medium
 proposed_by: bbugyi200.athena.u9
 create_time: 2026-08-06 13:28:32
 status: done

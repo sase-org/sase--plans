@@ -5,6 +5,7 @@ goal:
   ACE focuses the first actionable invalid required input when a reviewer activates a
   gate branch that cannot yet submit, without emitting the generic invalid-input toast
   or changing valid submission behavior.
+size: medium
 proposed_by: bbugyi200.athena.vo
 create_time: 2026-08-08 10:17:56
 status: done

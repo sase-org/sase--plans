@@ -5,6 +5,7 @@ goal:
   yaml-language-server accepts src/sase/config/sase.schema.json again, restoring LSP
   validation and completion for sase.yml files, and a regression test fails if any
   bundled JSON schema regains a duplicate enum value.
+size: medium
 proposed_by: bbugyi200.athena.wd
 create_time: 2026-08-09 07:53:13
 status: wip

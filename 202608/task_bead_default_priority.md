@@ -2,6 +2,7 @@
 tier: tale
 title: Use default runner priority for task-bead workers
 goal: Bundled task-bead workers use the same implicit runner priority as other bundled bead-worker agents.
+size: medium
 proposed_by: bbugyi200.athena.r0.f0
 create_time: 2026-08-01 08:26:54
 status: done

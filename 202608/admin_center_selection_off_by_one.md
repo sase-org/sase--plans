@@ -4,6 +4,7 @@ title: Fix Admin Center resumed-selection drift to the neighboring entry
 goal:
   Resuming an Admin Center tab within one ACE process leaves the visible cursor on the entry that was selected before,
   on every selectable surface, with index fallback used only when the remembered entry is genuinely gone.
+size: medium
 proposed_by: bbugyi200.athena.qy.f0
 create_time: 2026-08-01 09:10:10
 status: wip

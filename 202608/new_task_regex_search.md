@@ -4,6 +4,7 @@ title: Use regex alternation for new-task duplicate searches
 goal:
   The new-task skill finds semantic duplicates efficiently with one concise regex search
   while preserving active-epic checks.
+size: medium
 proposed_by: bbugyi200.athena.wb.f1
 create_time: 2026-08-09 09:11:13
 status: wip

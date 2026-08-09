@@ -6,6 +6,7 @@ goal:
   the user types, with matched text highlighted, sections preserved for context, and a match counter
   — making it easy to find the keymaps for one pane, sub-tab, or action without scrolling the full
   reference.
+size: medium
 proposed_by: bbugyi200.athena.uk
 create_time: 2026-08-07 09:02:57
 status: done

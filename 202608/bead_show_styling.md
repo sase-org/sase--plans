@@ -5,6 +5,7 @@ goal:
   "`sase bead show` renders a beautiful, semantically colored detail block with markdown/code syntax highlighting in
   DESCRIPTION and NOTES, controlled by a new `-S/--style` option, while the plain-text skeleton stays byte-for-byte
   identical to today's output."
+size: medium
 proposed_by: bbugyi200.athena.r6
 create_time: 2026-08-01 09:04:08
 status: done

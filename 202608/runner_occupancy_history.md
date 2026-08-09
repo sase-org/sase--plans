@@ -5,6 +5,7 @@ goal:
   The Statistics "Runners" sub-tab measures every runner-slot lane that ran in the selected window, using only
   trustworthy end timestamps, so occupancy stops collapsing to near zero for windows older than one day and discloses
   any lane it could not measure.
+size: medium
 proposed_by: bbugyi200.athena.rn.f1
 create_time: 2026-08-02 08:14:13
 status: done

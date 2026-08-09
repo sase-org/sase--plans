@@ -6,6 +6,7 @@ goal:
   when inlined into an agent instruction file — `#### 1.2 Section` for the 2nd section
   of the 1st Tier 1 memory, `##### 1.2.1 Subsection` beneath it — so agents and humans
   can name any part of `AGENTS.md` by number instead of by prose title.
+size: medium
 proposed_by: bbugyi200.athena.we.f0
 create_time: 2026-08-09 09:28:53
 status: wip

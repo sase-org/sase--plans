@@ -4,6 +4,7 @@ title: Audit and prune the open task-bead backlog
 goal:
   Every non-closed task bead is revalidated, obsolete entries are closed with durable evidence, and actionable work
   remains open.
+size: medium
 proposed_by: bbugyi200.athena.qv
 create_time: 2026-08-01 06:57:44
 status: wip

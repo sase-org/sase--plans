@@ -5,6 +5,7 @@ goal:
   The mobile app and Telegram can see what input a gate option declares and submit one
   typed value per selected option, using the same closed vocabulary and the same
   feedback rule as every other surface.
+size: large
 proposed_by: bbugyi200.athena.sase-h7.8
 bead: sase-h7.8
 create_time: 2026-08-07 18:43:38

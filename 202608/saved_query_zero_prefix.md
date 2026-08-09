@@ -5,6 +5,7 @@ goal:
   Pressing `0` followed by a digit on the Artifacts tab loads that saved PR query slot
   directly (`02` -> slot 2, `00` -> slot 0), without disturbing the numbered Artifacts
   sub-tab keys or the `*` saved-query chooser.
+size: medium
 proposed_by: bbugyi200.athena.vf
 create_time: 2026-08-07 21:35:17
 status: wip

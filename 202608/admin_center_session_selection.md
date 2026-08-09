@@ -4,6 +4,7 @@ title: Restore Admin Center entry selections within the ACE session
 goal:
   Reopening SASE Admin Center restores each pane's last logical entry by stable identity, with deterministic fallback
   and no durable entry persistence.
+size: medium
 proposed_by: bbugyi200.athena.qy
 create_time: 2026-08-01 07:18:06
 status: done

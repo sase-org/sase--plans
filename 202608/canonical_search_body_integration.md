@@ -5,6 +5,7 @@ goal:
   Canonical prompt search matches archived prompts on the text their author wrote, never on the rendered agent prompt
   the archive now stores beside it, the documented cross-store collapse fires again, and epic sase-e7 is closed on
   verified evidence with every proposed follow-up dispositioned.
+size: medium
 proposed_by: bbugyi200.athena.sase-e7.land
 bead: sase-e7
 create_time: 2026-08-02 12:17:49

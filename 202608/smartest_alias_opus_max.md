@@ -4,6 +4,7 @@ title: Change the implicit @smartest default to Claude Opus at max effort
 goal:
   Unconfigured @smartest launches and dependent roles resolve to claude/opus@max while overrides and general selector
   support remain intact.
+size: medium
 proposed_by: bbugyi200.athena.rp
 create_time: 2026-08-02 06:59:12
 status: done

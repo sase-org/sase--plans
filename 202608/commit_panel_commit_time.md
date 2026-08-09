@@ -5,6 +5,7 @@ goal:
   The shared commit panel (Agents tab hints and Artifacts → Commits) shows each commit's creation time as a
   right-aligned "Today 07:05:54 · 2h ago" chip, sourced from the commit's real author time, persisted for new commits
   and lazily recovered for historical ones.
+size: medium
 proposed_by: bbugyi200.athena.tv
 create_time: 2026-08-06 08:16:37
 status: done

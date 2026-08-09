@@ -6,6 +6,7 @@ goal:
   An xprompt swarm whose first segment opens with a multi-line %clan(...) directive
   launches successfully when the prompt carries a VCS/project ref, instead of failing
   with a bogus "Unsupported keyword on %clan" error.
+size: medium
 proposed_by: bbugyi200.athena.ut
 create_time: 2026-08-07 13:19:32
 status: done

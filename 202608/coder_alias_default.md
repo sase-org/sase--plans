@@ -4,6 +4,7 @@ title: Centralize coder follow-up defaults on @coder
 goal:
   All unconfigured provider-coder aliases inherit codex/gpt-5.5 through the shared @coder alias while preserving
   provider-specific overrides.
+size: medium
 proposed_by: bbugyi200.athena.sp
 create_time: 2026-08-03 08:16:34
 status: wip

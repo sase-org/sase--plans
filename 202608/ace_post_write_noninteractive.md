@@ -5,6 +5,7 @@ goal:
   Saving an xprompt memory note or skill source from ACE runs `sase memory init` / `sase
   skill init` as a fully non-interactive background task that either completes or fails
   with a visible error, and can never block on stdin or steal the TUI's terminal.
+size: medium
 proposed_by: bbugyi200.athena.wo
 create_time: 2026-08-09 13:53:58
 status: wip

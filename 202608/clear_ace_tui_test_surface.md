@@ -4,6 +4,7 @@ title: Clear the ACE TUI test surface
 goal:
   Eliminate every strict Patch/stitch terminology defect under tests/ace/tui while
   preserving legacy contracts and pixel-identical PNG snapshots.
+size: large
 proposed_by: bbugyi200.athena.sase-hn.8.6.2
 bead: sase-hn.8.6.2
 create_time: 2026-08-09 04:51:43

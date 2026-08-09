@@ -5,6 +5,7 @@ goal:
   Any way a user can name a plan — an explicit path, a `plans:` reference, a pending-approval prefix, a bare slug, or a
   bead id — resolves to exactly one plan and renders it as a colored, section-structured detail view that matches the
   ACE TUI's PLAN lane, with machine-readable `json` and byte-faithful `raw` output alongside it.
+size: medium
 proposed_by: bbugyi200.athena.ud
 create_time: 2026-08-06 15:48:40
 status: done

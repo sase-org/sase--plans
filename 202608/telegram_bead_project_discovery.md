@@ -4,6 +4,7 @@ title: Fix Telegram bead project discovery
 goal:
   Telegram's /bead command reliably lists active beads from enabled project workspaces
   and never substitutes an unrelated ambient bead store when project discovery fails.
+size: medium
 proposed_by: bbugyi200.athena.w4
 create_time: 2026-08-08 17:15:35
 status: wip

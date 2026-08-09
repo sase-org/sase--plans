@@ -5,6 +5,7 @@ goal:
   SASE exposes every known artifact kind as a validated contextual ref xprompt with
   sidecar-owned filters, deterministic renderer provenance, and matching catalog
   metadata.
+size: large
 proposed_by: bbugyi200.athena.sase-ho.2
 bead: sase-ho.2
 create_time: 2026-08-08 15:02:23

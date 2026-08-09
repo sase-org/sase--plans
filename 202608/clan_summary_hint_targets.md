@@ -5,6 +5,7 @@ goal:
   Pressing `v` on an agent clan row numbers each clan-summary path from its true first character and opens the exact
   file that path names, so a `plans:` plan reference is marked and resolved as one token and the `Prompt:` row opens the
   archived prompt in the agents sidecar instead of the plan.
+size: medium
 proposed_by: bbugyi200.athena.sm
 create_time: 2026-08-03 07:31:52
 status: done

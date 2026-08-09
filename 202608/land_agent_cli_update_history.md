@@ -4,6 +4,7 @@ title: Land durable Agent CLI update history with configured-timezone integratio
 goal:
   Close epic sase-el only after its history panel follows the configured-timezone display contract and every phase
   follow-up has a recorded outcome.
+size: medium
 proposed_by: bbugyi200.athena.sase-el.land
 bead: sase-el
 create_time: 2026-08-03 10:43:39

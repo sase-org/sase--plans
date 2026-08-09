@@ -5,6 +5,7 @@ goal:
   The notification modal's tag tab strip is visible whenever the modal has any
   notifications, including when only one tab exists, so the left pane's header row no
   longer appears and disappears as tabs come and go.
+size: medium
 proposed_by: bbugyi200.athena.sase-gz.land.f1
 create_time: 2026-08-07 13:34:48
 status: done

@@ -4,6 +4,7 @@ title: Stop glossary highlight flicker in the prompt input widget
 goal:
   Glossary term styling stays steady on every keystroke instead of blinking off and back
   on.
+size: medium
 proposed_by: bbugyi200.athena.wf
 create_time: 2026-08-09 09:06:14
 status: wip

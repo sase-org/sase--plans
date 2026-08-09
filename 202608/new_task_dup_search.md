@@ -5,6 +5,7 @@ goal:
   The /sase_new_task skill directs agents to detect semantic duplicates with a few
   targeted `sase bead search` queries instead of dumping every task bead, while still
   using `sase bead list` for in-progress epics.
+size: medium
 proposed_by: bbugyi200.athena.wb
 create_time: 2026-08-09 07:41:31
 status: done

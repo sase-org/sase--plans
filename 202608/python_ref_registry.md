@@ -4,6 +4,7 @@ title: Build the Python artifact-reference renderer registry
 goal:
   SASE loads validated contextual ref renderers and sidecar filters into artifact
   resolution and catalog metadata using the released shared core contract.
+size: large
 proposed_by: bbugyi200.athena.sase-ho.2
 bead: sase-ho.2
 create_time: 2026-08-08 14:44:52

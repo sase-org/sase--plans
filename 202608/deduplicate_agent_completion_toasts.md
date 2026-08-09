@@ -4,6 +4,7 @@ title: Deduplicate ACE agent-completion toasts by activity generation
 goal:
   Each notification activity generation produces exactly one ACE toast and bell while legitimate snooze resurfaces still
   alert once.
+size: medium
 proposed_by: bbugyi200.athena.ra
 create_time: 2026-08-01 10:01:47
 status: done

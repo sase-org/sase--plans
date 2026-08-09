@@ -4,6 +4,7 @@ title: Enable automatic SASE artifact pruning
 goal:
   Opt the chezmoi-managed global SASE configuration into automatic artifact retention while preserving the shipped
   retention thresholds and verifying the deployed effective policy.
+size: medium
 proposed_by: bbugyi200.athena.r8
 create_time: 2026-08-01 09:50:41
 status: done

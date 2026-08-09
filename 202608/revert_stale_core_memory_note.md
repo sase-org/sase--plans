@@ -4,6 +4,7 @@ title: Revert the stale-core sentence from build_and_run.md
 goal:
   Tier 1 memory stops permanently carrying a stale-core explanation that the build now
   prints on demand, with the derived instruction files regenerated to match.
+size: medium
 proposed_by: bbugyi200.athena.v1.f1
 create_time: 2026-08-07 17:38:31
 status: done

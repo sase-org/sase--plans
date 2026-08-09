@@ -6,6 +6,7 @@ goal:
   definition card that renders the definition as prose and the entry's properties as a
   styled chip row plus an aligned label/value grid, cross-links the other glossary terms
   a definition mentions, and hands off to the real `sase.yml` definition line.
+size: medium
 proposed_by: bbugyi200.athena.wn
 create_time: 2026-08-09 13:43:49
 status: wip

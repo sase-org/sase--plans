@@ -4,6 +4,7 @@ title: Retune the cheap model alias pools
 goal:
   SASE ships the requested Sonnet- and GPT-5.5-based defaults for @cheap and @cheaper, preserves their effort
   annotations through resolution, and presents the same values consistently in tests and user documentation.
+size: medium
 proposed_by: bbugyi200.athena.rb
 create_time: 2026-08-01 10:02:10
 status: wip

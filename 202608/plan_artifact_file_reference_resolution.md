@@ -4,6 +4,7 @@ title: "Resolve logical plans: references when synthesizing plan artifact files"
 goal:
   Synthesized plan artifact files always carry a real filesystem path, so the agent metadata panel stops falsely marking
   an existing epic plan as missing and stops rendering it as a duplicate row.
+size: medium
 proposed_by: bbugyi200.athena.th
 create_time: 2026-08-05 17:11:33
 status: done

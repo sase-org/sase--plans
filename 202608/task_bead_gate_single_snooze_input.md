@@ -5,6 +5,7 @@ goal:
   TaskTriage and BeadSnooze gates collect one required wake-time line in the form
   "<wake-time> [+N]", with no preset enum or second custom field, while pending gates
   migrate safely and invalid input remains retryable.
+size: medium
 proposed_by: bbugyi200.athena.vo.f0
 create_time: 2026-08-08 11:36:45
 status: wip

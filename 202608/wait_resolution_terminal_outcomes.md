@@ -5,6 +5,7 @@ goal:
   A %wait naming an agent that finished successfully resolves for every terminal
   done.json outcome, not just "completed", so an epic-approved, noop, or plan-committed
   dependency can no longer park a waiting agent forever.
+size: medium
 proposed_by: bbugyi200.athena.wi
 create_time: 2026-08-09 09:21:01
 status: wip

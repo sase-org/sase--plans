@@ -4,6 +4,7 @@ title: Canonicalize the Python Patch domain and ProjectSpec storage
 goal:
   Python exposes one canonical Patch/Stitch domain and storage implementation while
   legacy ChangeSpec APIs and persisted ProjectSpec data remain fully compatible.
+size: large
 proposed_by: bbugyi200.athena.sase-hn.2
 bead: sase-hn.2
 create_time: 2026-08-08 13:46:35

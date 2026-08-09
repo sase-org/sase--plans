@@ -4,6 +4,7 @@ title: Default the Claude coder alias to Codex GPT-5.5
 goal:
   Unconfigured Claude-authored plan follow-ups resolve through @claude_coder to codex/gpt-5.5 while preserving
   alias-specific override behavior.
+size: medium
 proposed_by: bbugyi200.athena.s6
 create_time: 2026-08-02 11:55:44
 status: done

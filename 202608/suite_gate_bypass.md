@@ -6,6 +6,7 @@ goal:
   see: an exemption is honoured only when a real ancestor lease corroborates it, and a
   deliberate SASE_TEST_GATE_DISABLED bypass is bounded by the host budget and announces
   itself."
+size: medium
 proposed_by: bbugyi200.athena.v7
 create_time: 2026-08-07 19:16:03
 status: wip

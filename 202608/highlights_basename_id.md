@@ -4,6 +4,7 @@ title: Use source basenames as Highlights research IDs
 goal:
   Hook-created research PDFs embed a basename-derived id while legacy research-path
   metadata remains safely synchronizable.
+size: medium
 proposed_by: bbugyi200.athena.vq.f0
 create_time: 2026-08-08 12:36:03
 status: done

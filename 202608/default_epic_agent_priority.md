@@ -4,6 +4,7 @@ title: Use default runner priority for epic phase and lander agents
 goal:
   Epic phase and lander launches no longer inject an explicit priority-15 wait while retaining their dependency and bead
   waits.
+size: medium
 proposed_by: bbugyi200.athena.r0
 create_time: 2026-08-01 08:05:23
 status: done

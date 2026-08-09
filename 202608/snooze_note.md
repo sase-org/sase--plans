@@ -6,6 +6,7 @@ goal:
   re-snooze — atomically appends one attributed note recording the wake time, the deferral length,
   any +1 target, and the reason, so the "why and until when" survives the wake that erases the
   snooze record.
+size: medium
 proposed_by: bbugyi200.athena.un.w0
 create_time: 2026-08-07 10:40:07
 status: done

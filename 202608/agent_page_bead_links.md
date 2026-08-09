@@ -4,6 +4,7 @@ title: Link published agent pages back to their bead pages
 goal:
   Every published agent and family page in the agents sidecar links to the bead page in the beads sidecar for the bead
   that agent worked, closing the one-way bead-to-agent link that exists today.
+size: medium
 proposed_by: bbugyi200.athena.u0
 create_time: 2026-08-06 09:30:21
 status: done

@@ -6,6 +6,7 @@ goal:
   label, its sort position, and the finish timestamp rendered on its row all derive from
   one shared anchor, so a clan that started Friday night and finished Saturday morning
   renders under `Yesterday`, not under `This Week`.
+size: medium
 proposed_by: bbugyi200.athena.wc
 create_time: 2026-08-09 07:51:30
 status: done

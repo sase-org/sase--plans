@@ -4,6 +4,7 @@ title: Finish and land glossary alias plural derivation
 goal:
   The shipped glossary behavior is accurately documented, fully verified, and closed out
   with clean post-close state.
+size: medium
 proposed_by: bbugyi200.athena.sase-i3.land
 bead: sase-i3
 create_time: 2026-08-09 09:35:21

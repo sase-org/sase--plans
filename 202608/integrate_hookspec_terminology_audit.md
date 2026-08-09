@@ -4,6 +4,7 @@ title: Integrate the frozen hookspec compatibility contract with the terminology
 goal:
   The late hookspec compatibility fix passes the strict Patch/stitch audit, the full
   tree is verified, and reopened epic sase-hn.8.6 is landed cleanly.
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.8.6.land
 bead: sase-hn.8.6
 create_time: 2026-08-09 07:33:14

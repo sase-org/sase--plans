@@ -3,6 +3,7 @@ tier: tale
 title: Land zero-friction model alias defaults
 goal:
   Epic sase-f1 is acceptance-tested on the integrated tree, its follow-ups are dispositioned, and it is closed cleanly.
+size: medium
 proposed_by: bbugyi200.athena.sase-f1.land
 bead: sase-f1
 create_time: 2026-08-03 16:49:14

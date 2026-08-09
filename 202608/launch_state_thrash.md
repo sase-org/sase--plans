@@ -4,6 +4,7 @@ title: Stop launch-time STARTING/RUNNING refresh thrash
 goal:
   Agent launch state advances monotonically while marker bursts stay on the bounded
   exact-delta refresh path.
+size: medium
 proposed_by: bbugyi200.athena.vt
 create_time: 2026-08-08 12:39:42
 status: done

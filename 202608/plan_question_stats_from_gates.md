@@ -5,6 +5,7 @@ goal:
   The Statistics "Plans & Questions" sub-tab reports every plan proposal and question session in the selected window,
   sourced from durable notification-gate bundles instead of the agent artifact index, so handed-off planner agents are
   no longer silently dropped.
+size: medium
 proposed_by: bbugyi200.athena.rn
 create_time: 2026-08-02 06:43:13
 status: done

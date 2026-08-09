@@ -5,6 +5,7 @@ goal:
   Resolving an SDD store never fails because the hidden agents sidecar root cannot be resolved, unrelated commands keep
   working when the owning project key is missing, and the four `just test` failures pass from any checkout — including
   one that has a materialized `.sase/sdd-store.json`.
+size: medium
 proposed_by: bbugyi200.athena.u8
 create_time: 2026-08-06 13:08:12
 status: done

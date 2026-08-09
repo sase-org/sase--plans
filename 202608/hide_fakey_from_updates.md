@@ -4,6 +4,7 @@ title: Hide Fakey from agent-CLI update inventories
 goal:
   Agent-CLI management surfaces omit the internal Fakey provider while Fakey's routing, diagnostics, tests, and demos
   continue to work.
+size: medium
 proposed_by: bbugyi200.athena.rg
 create_time: 2026-08-01 10:36:25
 status: done

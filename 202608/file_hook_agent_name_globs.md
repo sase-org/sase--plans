@@ -7,6 +7,7 @@ goal:
   `path_globs` with a loud fail-soft error on the legacy key, and the chezmoi-managed
   `research-highlights` hook uses both fields so it fires on more research markdown
   while ignoring the two pre-consolidation `#research_swarm` researchers.
+size: medium
 proposed_by: bbugyi200.athena.v8
 create_time: 2026-08-07 19:21:18
 status: wip

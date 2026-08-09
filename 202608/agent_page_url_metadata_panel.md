@@ -4,6 +4,7 @@ title: Show the hosted agents-sidecar page URL in the Agents metadata panel
 goal:
   Selecting a Done-bucket agent that made commits on the Agents tab shows its hosted `agents` sidecar page URL near the
   top of the metadata panel, on exactly one never-wrapping line.
+size: medium
 proposed_by: bbugyi200.athena.ro
 create_time: 2026-08-02 06:58:55
 status: done

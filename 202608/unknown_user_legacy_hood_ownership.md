@@ -5,6 +5,7 @@ goal:
   Legacy-v1 hoods this machine published stay owner-observed after their local runs are dismissed, ACE stops advertising
   the owner's own hoods as `unknown-user.<machine>.<hood>`, and the v2 owner manifest can no longer silently collapse to
   a single publication's hoods.
+size: medium
 proposed_by: bbugyi200.athena.u1
 create_time: 2026-08-06 09:45:34
 status: done

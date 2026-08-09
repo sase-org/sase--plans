@@ -4,6 +4,7 @@ title: Pin the Claude and Codex coder alias defaults
 goal:
   Make unconfigured @claude_coder and @codex_coder resolve to claude/sonnet and codex/gpt-5.5 respectively, while
   preserving explicit override precedence and @coder fallback behavior for other providers.
+size: medium
 proposed_by: bbugyi200.athena.rp.f2
 create_time: 2026-08-02 07:41:06
 status: done

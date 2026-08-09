@@ -6,6 +6,7 @@ goal:
   because every dev-update reconcile step receives a complete child environment
   regardless of which command runner executes it, and an unlaunchable step command
   becomes a labeled step failure instead of an opaque aggregate exception.
+size: medium
 proposed_by: bbugyi200.athena.wp
 create_time: 2026-08-09 14:59:34
 status: wip

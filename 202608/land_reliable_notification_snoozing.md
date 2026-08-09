@@ -4,6 +4,7 @@ title: Land reliable notification snoozing and resurfacing
 goal:
   The released core dependency, cross-surface behavior, follow-ups, epic closure, Symvision cleanup, and durable plan
   status are fully integrated and verified.
+size: medium
 proposed_by: bbugyi200.athena.sase-cy.land
 bead: sase-cy
 create_time: 2026-08-01 09:07:05

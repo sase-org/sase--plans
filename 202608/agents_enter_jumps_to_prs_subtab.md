@@ -5,6 +5,7 @@ goal:
   Pressing `<enter>` on the Agents tab lands the user on the Artifacts tab's PRs sub-tab
   with the target ChangeSpec selected, and every other cross-tab ChangeSpec jump does
   the same.
+size: medium
 proposed_by: bbugyi200.athena.uz
 create_time: 2026-08-07 14:55:29
 status: done

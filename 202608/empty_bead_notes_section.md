@@ -5,6 +5,7 @@ goal:
   Every bead surface renders a `Notes` section only when the bead actually has notes, no surface
   emits a `_No notes._` placeholder, and gate validation still accepts both the new note-less shape
   and every preview already persisted in the old shape.
+size: medium
 proposed_by: bbugyi200.athena.un
 create_time: 2026-08-07 09:38:32
 status: done

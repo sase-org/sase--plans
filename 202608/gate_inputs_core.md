@@ -5,6 +5,7 @@ goal:
   A gate option declares what it needs with a closed `inputs:` vocabulary that compiles
   into its `input_schema` at creation, and the executor accepts and persists one input
   value per selected option instead of one shared blob.
+size: large
 proposed_by: bbugyi200.athena.sase-h7.3
 bead: sase-h7.3
 create_time: 2026-08-07 17:24:18

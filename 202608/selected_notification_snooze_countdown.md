@@ -4,6 +4,7 @@ title: Selected notification snooze countdown
 goal:
   Make the selected snoozed notification's remaining sleep and wake time immediately
   visible, trustworthy over time, and visually at home in the ACE notification panel.
+size: medium
 proposed_by: bbugyi200.athena.vp
 create_time: 2026-08-08 11:14:26
 status: wip

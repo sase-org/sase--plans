@@ -4,6 +4,7 @@ title: Drop Matched and uppercase the field labels in the ACE glossary preview
 goal:
   The `K` glossary preview panel renders `ALIASES:`, `PROJECT:`, and `SOURCE:` field
   labels and no longer renders a redundant `Matched:` field.
+size: medium
 proposed_by: bbugyi200.athena.wg
 create_time: 2026-08-09 09:09:33
 status: wip
