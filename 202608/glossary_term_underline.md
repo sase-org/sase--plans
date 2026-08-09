@@ -26,7 +26,7 @@ phases:
     in the sase repo.'
 proposed_by: bbugyi200.athena.w9
 create_time: 2026-08-09 07:49:39
-status: wip
+status: done
 bead_id: sase-i2
 ---
 
