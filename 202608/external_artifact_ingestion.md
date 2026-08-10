@@ -79,7 +79,6 @@ phases:
 proposed_by: bbugyi200.athena.xp
 create_time: 2026-08-10 19:02:48
 status: wip
-bead_id: sase-jb
 ---
 
 - **PROMPT:** [prompts/202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_artifact_ingestion.md)
