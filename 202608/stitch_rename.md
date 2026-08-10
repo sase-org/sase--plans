@@ -9,52 +9,52 @@ goal: '`sase stitch` is the CLI command for the repository constellation and cro
 
   '
 phases:
-  - id: cli
-    title: Rename the sase vcs CLI command to sase stitch
-    depends_on: []
-    size: medium
-    description: "cli: rename the `sase vcs` command tree to `sase stitch`, keep `vcs`
-      as a registered legacy alias with facade modules, and update the compact root
-      help, parser/handler modules, tests, and CLI/VCS/configuration docs.
+- id: cli
+  title: Rename the sase vcs CLI command to sase stitch
+  depends_on: []
+  size: medium
+  description: 'cli: rename the `sase vcs` command tree to `sase stitch`, keep `vcs`
+    as a registered legacy alias with facade modules, and update the compact root
+    help, parser/handler modules, tests, and CLI/VCS/configuration docs.
 
-      "
-  - id: subtab-id
-    title: Rename the ACE Artifacts sub-tab identifier to stitches
-    depends_on: []
-    size: medium
-    description: "subtab-id: rename the ACE Artifacts sub-tab identifier from `commits`
-      to `stitches` across `artifact_tabs.py` and every consumer, including the pane DOM
-      ids and their `styles.tcss` selectors, without changing any displayed text.
+    '
+- id: subtab-id
+  title: Rename the ACE Artifacts sub-tab identifier to stitches
+  depends_on: []
+  size: medium
+  description: 'subtab-id: rename the ACE Artifacts sub-tab identifier from `commits`
+    to `stitches` across `artifact_tabs.py` and every consumer, including the pane
+    DOM ids and their `styles.tcss` selectors, without changing any displayed text.
 
-      "
-  - id: config-keys
-    title: Rename user-configurable commits keymap and config keys
-    depends_on:
-      - subtab-id
-    size: medium
-    description: "config-keys: rename the `commits_*` app keymap actions to
-      `stitches_*`, the `artifacts_commits` copy-mode group to `artifacts_stitches`, and
-      the `ace.artifacts.commits` config block to `ace.artifacts.stitches`, each with a
-      deprecated legacy name that still loads and warns.
+    '
+- id: config-keys
+  title: Rename user-configurable commits keymap and config keys
+  depends_on:
+  - subtab-id
+  size: medium
+  description: 'config-keys: rename the `commits_*` app keymap actions to `stitches_*`,
+    the `artifacts_commits` copy-mode group to `artifacts_stitches`, and the `ace.artifacts.commits`
+    config block to `ace.artifacts.stitches`, each with a deprecated legacy name that
+    still loads and warns.
 
-      "
-  - id: labels
-    title: Flip user-visible Commits text to Stitches and refresh snapshots
-    depends_on:
-      - config-keys
-    size: medium
-    description:
-      'labels: change every displayed "Commits" string that names the Artifacts pane to
-      "Stitches" — tab strip, pane chip, placeholder copy, quickstart, help modal,
-      command palette, footer — then update docs and regenerate the affected text and
-      PNG snapshot goldens.'
+    '
+- id: labels
+  title: Flip user-visible Commits text to Stitches and refresh snapshots
+  depends_on:
+  - config-keys
+  size: medium
+  description: 'labels: change every displayed "Commits" string that names the Artifacts
+    pane to "Stitches" — tab strip, pane chip, placeholder copy, quickstart, help
+    modal, command palette, footer — then update docs and regenerate the affected
+    text and PNG snapshot goldens.'
 proposed_by: bbugyi200.athena.xn
 create_time: 2026-08-10 16:17:49
 status: wip
+bead_id: sase-j8
 ---
 
-- **PROMPT:**
-  [prompts/202608/stitch_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_rename.md)
+- **PROMPT:** [prompts/202608/stitch_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_rename.md)
+- **BEAD:** [sase-j8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j8/README.md)
 
 # Plan: Rename `sase vcs` to `sase stitch` and the ACE Commits sub-tab to Stitches
 
