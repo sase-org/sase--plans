@@ -1,39 +1,39 @@
 ---
 tier: epic
 title: Split Agents-tab `Z` into panel isolation (`=`) and tribe-aware zoom
-goal: "On the Agents tab, `=` isolates or restores tribe panels from any selection
+goal: 'On the Agents tab, `=` isolates or restores tribe panels from any selection
   (whole-panel focus or a row inside a panel), and `Z` opens the zoom modal for agent
   rows, clan containers, agent lanes, and selected tribe panels alike.
 
-  "
+  '
 phases:
-  - id: isolate
-    title: Move panel isolation onto a new `=` keymap
-    depends_on: []
-    size: medium
-    description: "isolate: add the configurable `isolate_panels` action bound to `=`,
-      stop `action_zoom_panel` from owning whole-panel isolation, broaden isolate and
-      restore so they work from an in-panel row selection, and resync the footer, help
-      modal, command palette, and docs.
+- id: isolate
+  title: Move panel isolation onto a new `=` keymap
+  depends_on: []
+  size: medium
+  description: 'isolate: add the configurable `isolate_panels` action bound to `=`,
+    stop `action_zoom_panel` from owning whole-panel isolation, broaden isolate and
+    restore so they work from an in-panel row selection, and resync the footer, help
+    modal, command palette, and docs.
 
-      "
-  - id: tribezoom
-    title: Zoom the tribe metadata document from whole-panel focus
-    depends_on:
-      - isolate
-    size: medium
-    description:
-      "tribezoom: teach ZoomPanelModal a metadata-only tribe mode fed by a tribe
-      snapshot provider, route `action_zoom_panel` to it when a tribe panel is selected,
-      keep the zoomed document live through tribe enrichment, and resync the affected
-      help, command palette, and docs copy."
+    '
+- id: tribezoom
+  title: Zoom the tribe metadata document from whole-panel focus
+  depends_on:
+  - isolate
+  size: medium
+  description: 'tribezoom: teach ZoomPanelModal a metadata-only tribe mode fed by
+    a tribe snapshot provider, route `action_zoom_panel` to it when a tribe panel
+    is selected, keep the zoomed document live through tribe enrichment, and resync
+    the affected help, command palette, and docs copy.'
 proposed_by: bbugyi200.athena.xh
 create_time: 2026-08-10 14:07:55
 status: wip
+bead_id: sase-j2
 ---
 
-- **PROMPT:**
-  [prompts/202608/tribe_zoom_and_panel_isolation_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/tribe_zoom_and_panel_isolation_keymap.md)
+- **PROMPT:** [prompts/202608/tribe_zoom_and_panel_isolation_keymap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/tribe_zoom_and_panel_isolation_keymap.md)
+- **BEAD:** [sase-j2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j2/README.md)
 
 # Plan: Split Agents-tab `Z` into panel isolation (`=`) and tribe-aware zoom
 
