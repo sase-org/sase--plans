@@ -1,43 +1,43 @@
 ---
 tier: epic
 title: Split Agents-tab `H` into a panel fold sweep (`-`) and a hinted fold collapse
-goal: "On the Agents tab, `-` collapses every open fold in the tribe panel that holds
-  focus — from whole-panel focus or from a row inside it — and reverses itself when that
-  panel has nothing left to collapse, while `H` on a selected tribe panel hints every
-  collapsible fold and collapses exactly the one you pick.
+goal: 'On the Agents tab, `-` collapses every open fold in the tribe panel that holds
+  focus — from whole-panel focus or from a row inside it — and reverses itself when
+  that panel has nothing left to collapse, while `H` on a selected tribe panel hints
+  every collapsible fold and collapses exactly the one you pick.
 
-  "
+  '
 phases:
-  - id: sweep
-    title: Add the `-` panel fold sweep with a per-panel reverse
-    depends_on: []
-    size: medium
-    description: "sweep: add a configurable `collapse_panel_folds` action bound to `-`
-      that saturates every open lane, clan, and top-level grouping banner in the focused
-      tribe panel in one press, remembers exactly what it closed in a session-local
-      per-panel record, and re-expands that record when the panel has nothing left to
-      collapse. Works from whole-panel focus, from a row selection, and in merged
-      layout. Resync the footer, command palette, help modal, and docs.
+- id: sweep
+  title: Add the `-` panel fold sweep with a per-panel reverse
+  depends_on: []
+  size: medium
+  description: 'sweep: add a configurable `collapse_panel_folds` action bound to `-`
+    that saturates every open lane, clan, and top-level grouping banner in the focused
+    tribe panel in one press, remembers exactly what it closed in a session-local
+    per-panel record, and re-expands that record when the panel has nothing left to
+    collapse. Works from whole-panel focus, from a row selection, and in merged layout.
+    Resync the footer, command palette, help modal, and docs.
 
-      "
-  - id: hint
-    title: Give `H` a hinted fold collapse on a selected tribe panel
-    depends_on:
-      - sweep
-    size: medium
-    description:
-      "hint: replace the whole-panel `H` collapse ladder with a collapse-intent fold
-      hint mode — the `L` hint affordance restricted to folds that are currently
-      expanded, collapsing the picked fold instead of toggling it. Retire the now-dead
-      panel-ladder resolvers, and resync the footer, help modal, keymap labels, and
-      docs."
+    '
+- id: hint
+  title: Give `H` a hinted fold collapse on a selected tribe panel
+  depends_on:
+  - sweep
+  size: medium
+  description: 'hint: replace the whole-panel `H` collapse ladder with a collapse-intent
+    fold hint mode — the `L` hint affordance restricted to folds that are currently
+    expanded, collapsing the picked fold instead of toggling it. Retire the now-dead
+    panel-ladder resolvers, and resync the footer, help modal, keymap labels, and
+    docs.'
 proposed_by: bbugyi200.athena.xo
 create_time: 2026-08-10 17:20:10
 status: wip
+bead_id: sase-j9
 ---
 
-- **PROMPT:**
-  [prompts/202608/agents_panel_fold_sweep.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agents_panel_fold_sweep.md)
+- **PROMPT:** [prompts/202608/agents_panel_fold_sweep.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agents_panel_fold_sweep.md)
+- **BEAD:** [sase-j9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j9/README.md)
 
 # Plan: Split Agents-tab `H` into a panel fold sweep (`-`) and a hinted fold collapse
 
