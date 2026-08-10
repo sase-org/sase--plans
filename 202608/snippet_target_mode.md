@@ -97,7 +97,7 @@ phases:
     confirming the cursor returns exactly and no launch path regressed.'
 proposed_by: bbugyi200.athena.xl
 create_time: 2026-08-10 14:49:25
-status: wip
+status: done
 bead_id: sase-j3
 ---
 
