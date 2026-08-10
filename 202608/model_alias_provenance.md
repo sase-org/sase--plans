@@ -10,12 +10,6 @@ size: medium
 proposed_by: bbugyi200.athena.xm
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.xm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xm.md)
-- **COMMITS:**
-  - [b8b574c](https://github.com/sase-org/sase-core/commit/b8b574c42c910c9558eb85a380f4c41f0b0f8c01)
-    — feat: expose model alias provenance in agent scans
-
 # Show the model alias an agent was launched with in the `Model:` field
 
 ## Problem
