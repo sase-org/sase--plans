@@ -1,52 +1,49 @@
 ---
 tier: epic
 title: Finish core-owned tale size semantics and land sase-il
-goal: "sase-core owns the full tale-size contract the sase-il design specified — tales
+goal: 'sase-core owns the full tale-size contract the sase-il design specified — tales
   accept only xsmall/small/medium, launch mode normalizes legacy tales instead of
-  failing, and the size field descriptions point at sase/memory/sase_sizes.md instead of
-  restating it — so the generated size note is genuinely the single source of size
+  failing, and the size field descriptions point at sase/memory/sase_sizes.md instead
+  of restating it — so the generated size note is genuinely the single source of size
   truth, and epic sase-il can then be closed out.
 
-  "
+  '
 phases:
-  - id: core-tale-size-contract
-    title: Complete the tale size contract in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-tale-size-contract: restrict tale `size` to xsmall/small/medium, add the
-      launch-mode normalization the design specified, reduce the size/model field
-      descriptions to pointers at the canonical size memory note, and cut a sase-core
-      release."
-  - id: sase-adopt-contract
-    title: Adopt the completed contract in sase
-    depends_on:
-      - core-tale-size-contract
-    size: medium
-    description:
-      "sase-adopt-contract: raise the sase-core-rs floor to the new release, delete the
-      Python launch-compatibility shim now that core owns it, migrate the 21 committed
-      tale plans the sase-il backfill over-sized to `large`, and cover the completed
-      contract with tests."
-  - id: land-sase-il
-    title: Land and close epic sase-il
-    depends_on:
-      - sase-adopt-contract
-    size: medium
-    description:
-      "land-sase-il: run the full gate, close epic sase-il with a verification note,
-      clear any expired sase-il symvision whitelist entries, and mark the
-      sase_sizes_memory plan file done."
+- id: core-tale-size-contract
+  title: Complete the tale size contract in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-tale-size-contract: restrict tale `size` to xsmall/small/medium,
+    add the launch-mode normalization the design specified, reduce the size/model
+    field descriptions to pointers at the canonical size memory note, and cut a sase-core
+    release.'
+- id: sase-adopt-contract
+  title: Adopt the completed contract in sase
+  depends_on:
+  - core-tale-size-contract
+  size: medium
+  description: 'sase-adopt-contract: raise the sase-core-rs floor to the new release,
+    delete the Python launch-compatibility shim now that core owns it, migrate the
+    21 committed tale plans the sase-il backfill over-sized to `large`, and cover
+    the completed contract with tests.'
+- id: land-sase-il
+  title: Land and close epic sase-il
+  depends_on:
+  - sase-adopt-contract
+  size: medium
+  description: 'land-sase-il: run the full gate, close epic sase-il with a verification
+    note, clear any expired sase-il symvision whitelist entries, and mark the sase_sizes_memory
+    plan file done.'
 proposed_by: bbugyi200.athena.sase-il.land
 parent_bead: sase-il
 create_time: 2026-08-10 10:54:04
 status: wip
+bead_id: sase-il.7
 ---
 
-- **PROMPT:**
-  [prompts/202608/finish_tale_size_semantics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_tale_size_semantics.md)
-- **PARENT:**
-  [202608/sase_sizes_memory.md](https://github.com/sase-org/sase--plans/blob/main/202608/sase_sizes_memory.md)
+- **PROMPT:** [prompts/202608/finish_tale_size_semantics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_tale_size_semantics.md)
+- **PARENT:** [202608/sase_sizes_memory.md](https://github.com/sase-org/sase--plans/blob/main/202608/sase_sizes_memory.md)
+- **BEAD:** [sase-il.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-il/sase-il.7.md)
 
 # Plan: Finish core-owned tale size semantics and land sase-il
 
