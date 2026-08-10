@@ -8,8 +8,6 @@ goal:
   resolved to.
 size: medium
 proposed_by: bbugyi200.athena.xm
-create_time: 2026-08-10 15:44:48
-status: wip
 ---
 
 # Show the model alias an agent was launched with in the `Model:` field
