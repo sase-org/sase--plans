@@ -1,55 +1,52 @@
 ---
 tier: epic
 title: Stop in-flight +1s from reopening a task the instant its worker closes it
-goal: "A task bead that an assigned agent is actively working, or has just finished
+goal: 'A task bead that an assigned agent is actively working, or has just finished
   working, is never pushed back into the triage queue by corroboration that was already
   in flight before the close. Corroboration is still recorded, still visible to the
   owner, and a genuinely fresh reproduction still reopens the bead.
 
-  "
+  '
 phases:
-  - id: core
-    title: Observation-window freshness rule in the bead core
-    depends_on: []
-    size: medium
-    description:
-      "core: carry each +1 reporter's observation-window start on the evidence wire, and
-      reopen a closed task only when that window starts after the close, in both the
-      mutation path and the event reducer."
-  - id: cli
-    title: Supplying and overriding the observation window from Python
-    depends_on:
-      - core
-    size: small
-    description:
-      "cli: resolve the reporter's observation-window start from its own agent metadata,
-      thread it through the mutation facade, add the explicit post-close override flag,
-      and report a withheld reopen accurately."
-  - id: surfaces
-    title: Making withheld corroboration visible
-    depends_on:
-      - cli
-    size: small
-    description:
-      "surfaces: render post-close corroboration on the closed bead across the CLI, ACE,
-      generated pages, and gate previews, and teach the task-filing skill when the
-      override applies."
-  - id: verify
-    title: End-to-end race regression and store audit
-    depends_on:
-      - surfaces
-    size: small
-    description:
-      "verify: reproduce the original race end to end as a regression exercise, audit
-      the live store for beads reopened by this race, and reconcile the documented
-      contract."
+- id: core
+  title: Observation-window freshness rule in the bead core
+  depends_on: []
+  size: medium
+  description: 'core: carry each +1 reporter''s observation-window start on the evidence
+    wire, and reopen a closed task only when that window starts after the close, in
+    both the mutation path and the event reducer.'
+- id: cli
+  title: Supplying and overriding the observation window from Python
+  depends_on:
+  - core
+  size: small
+  description: 'cli: resolve the reporter''s observation-window start from its own
+    agent metadata, thread it through the mutation facade, add the explicit post-close
+    override flag, and report a withheld reopen accurately.'
+- id: surfaces
+  title: Making withheld corroboration visible
+  depends_on:
+  - cli
+  size: small
+  description: 'surfaces: render post-close corroboration on the closed bead across
+    the CLI, ACE, generated pages, and gate previews, and teach the task-filing skill
+    when the override applies.'
+- id: verify
+  title: End-to-end race regression and store audit
+  depends_on:
+  - surfaces
+  size: small
+  description: 'verify: reproduce the original race end to end as a regression exercise,
+    audit the live store for beads reopened by this race, and reconcile the documented
+    contract.'
 proposed_by: bbugyi200.athena.x9
 create_time: 2026-08-10 10:49:19
 status: wip
+bead_id: sase-ix
 ---
 
-- **PROMPT:**
-  [prompts/202608/plus_one_post_close_reopen_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plus_one_post_close_reopen_race.md)
+- **PROMPT:** [prompts/202608/plus_one_post_close_reopen_race.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plus_one_post_close_reopen_race.md)
+- **BEAD:** [sase-ix](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ix/README.md)
 
 # Plan: Stop in-flight +1s from reopening a task the instant its worker closes it
 
