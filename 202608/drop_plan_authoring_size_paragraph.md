@@ -11,6 +11,12 @@ create_time: 2026-08-10 12:57:31
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.xd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xd.md)
+- **COMMITS:**
+  - [24dde37](https://github.com/sase-org/sase/commit/24dde377599fa0bdcec8207663fdd11517e87204)
+    — docs: drop plan authoring size paragraph
+
 # Drop the plan-authoring-size paragraph from the generated SASE sizes memory
 
 ## Problem
