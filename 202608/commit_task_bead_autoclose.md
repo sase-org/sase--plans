@@ -11,6 +11,12 @@ create_time: 2026-08-10 10:45:53
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.xa](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xa.md)
+- **COMMITS:**
+  - [6bf4a0c](https://github.com/sase-org/sase/commit/6bf4a0c460c0b0fc61bcb297eb37524f8ea73f2f)
+    — feat(commit)\!: auto-close task beads after commits
+
 # Auto-close task beads on `sase commit`, with a `-B|--do-not-close-bead` opt-out
 
 ## Problem
