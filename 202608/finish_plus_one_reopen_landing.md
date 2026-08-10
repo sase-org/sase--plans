@@ -1,50 +1,46 @@
 ---
 tier: epic
 title: Finish observation-window hardening and land sase-ix
-goal:
-  Every task +1 gets a valid observation-window instant or a safe current-time fallback,
-  the canonical bead memory and deployed task-filing skill describe the shipped
-  close-boundary behavior, and epic sase-ix is fully verified, integrated with later
-  commits, and closed without stale Symvision exemptions.
+goal: Every task +1 gets a valid observation-window instant or a safe current-time
+  fallback, the canonical bead memory and deployed task-filing skill describe the
+  shipped close-boundary behavior, and epic sase-ix is fully verified, integrated
+  with later commits, and closed without stale Symvision exemptions.
 phases:
-  - id: harden-observation-metadata
-    title: Fall back safely for malformed observation metadata
-    depends_on: []
-    size: small
-    description:
-      "harden-observation-metadata: validate agent_meta.json run_started_at before
-      passing it to the Rust +1 mutation, fall back to a sub-second current instant with
-      a debug diagnostic when it is malformed, and add direct and CLI regressions."
-  - id: reconcile-contract-guidance
-    title: Reconcile canonical docs and deployed plus-one guidance
-    depends_on:
-      - harden-observation-metadata
-    size: medium
-    description:
-      "reconcile-contract-guidance: update the generated canonical bead memory and
-      public bead docs to state the observation-window close rule, run sase memory init,
-      then deploy the already committed sase_new_task guidance from a clean merged tree
-      and verify every active runtime receives it."
-  - id: land-sase-ix
-    title: Verify, close, and clean up epic sase-ix
-    depends_on:
-      - reconcile-contract-guidance
-    size: medium
-    description:
-      "land-sase-ix: rerun full Python and Rust verification, record every child-note
-      and post-start integration outcome in the close note, close sase-ix, run Symvision
-      after closure and remove anything it newly exposes, then mark the original and
-      follow-up plans done."
+- id: harden-observation-metadata
+  title: Fall back safely for malformed observation metadata
+  depends_on: []
+  size: small
+  description: 'harden-observation-metadata: validate agent_meta.json run_started_at
+    before passing it to the Rust +1 mutation, fall back to a sub-second current instant
+    with a debug diagnostic when it is malformed, and add direct and CLI regressions.'
+- id: reconcile-contract-guidance
+  title: Reconcile canonical docs and deployed plus-one guidance
+  depends_on:
+  - harden-observation-metadata
+  size: medium
+  description: 'reconcile-contract-guidance: update the generated canonical bead memory
+    and public bead docs to state the observation-window close rule, run sase memory
+    init, then deploy the already committed sase_new_task guidance from a clean merged
+    tree and verify every active runtime receives it.'
+- id: land-sase-ix
+  title: Verify, close, and clean up epic sase-ix
+  depends_on:
+  - reconcile-contract-guidance
+  size: medium
+  description: 'land-sase-ix: rerun full Python and Rust verification, record every
+    child-note and post-start integration outcome in the close note, close sase-ix,
+    run Symvision after closure and remove anything it newly exposes, then mark the
+    original and follow-up plans done.'
 proposed_by: bbugyi200.athena.sase-ix.land
 parent_bead: sase-ix
 create_time: 2026-08-10 13:26:52
 status: wip
+bead_id: sase-ix.5
 ---
 
-- **PROMPT:**
-  [prompts/202608/finish_plus_one_reopen_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_plus_one_reopen_landing.md)
-- **PARENT:**
-  [202608/plus_one_post_close_reopen_race.md](https://github.com/sase-org/sase--plans/blob/main/202608/plus_one_post_close_reopen_race.md)
+- **PROMPT:** [prompts/202608/finish_plus_one_reopen_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_plus_one_reopen_landing.md)
+- **PARENT:** [202608/plus_one_post_close_reopen_race.md](https://github.com/sase-org/sase--plans/blob/main/202608/plus_one_post_close_reopen_race.md)
+- **BEAD:** [sase-ix.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ix/sase-ix.5.md)
 
 # Plan: Finish observation-window hardening and land sase-ix
 
