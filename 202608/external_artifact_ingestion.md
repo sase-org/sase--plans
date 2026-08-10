@@ -1,95 +1,89 @@
 ---
 tier: epic
 title: Mirror external issues into beads and external PRs into Patches
-goal: "Every issue in an enabled project's external tracker has a corresponding bead and
-  every PR not created by SASE's tracked workflow has a corresponding Patch, kept
-  current continuously by AXE on every enabled project on the machine, and the Artifacts
-  tab presents those relationships on one integrated surface whose sub-tabs are
-  Stitches, Patches, Beads, Files.
+goal: 'Every issue in an enabled project''s external tracker has a corresponding bead
+  and every PR not created by SASE''s tracked workflow has a corresponding Patch,
+  kept current continuously by AXE on every enabled project on the machine, and the
+  Artifacts tab presents those relationships on one integrated surface whose sub-tabs
+  are Stitches, Patches, Beads, Files.
 
-  "
+  '
 phases:
-  - id: bead_ref
-    title: external_ref bead identity field
-    depends_on: []
-    size: large
-    description:
-      "bead_ref: add the nullable, partially-unique external_ref column to the sase-core
-      bead schema and thread it through wire, jsonl, events, read, mutation, CLI,
-      history, and search plus the Python mirrors; add the project-qualified external
-      ref normalizer and widen bug_links to task beads through it."
-  - id: pr_seam
-    title: Pull-request provider seam
-    depends_on: []
-    size: medium
-    description:
-      "pr_seam: add PullRequestWire, vcs_list_pull_requests, and split list/read/mutate
-      capability probes to the VCS provider boundary, implement them in sase-github over
-      gh pr list, extend the in-memory fake, and add provider_id to IssueWire."
-  - id: pr_origin
-    title: PR_ORIGIN field, SASE_PATCH stamp, and the external-Patch safety exclusion
-    depends_on: []
-    size: medium
-    description:
-      "pr_origin: add the tri-state PR_ORIGIN Patch field across parser, storage,
-      section order, and the four ACE styling surfaces; stamp SASE_PATCH in
-      append_pr_tags; and structurally exclude external Patches from AXE work before any
-      importer can create one."
-  - id: issue_mirror
-    title: external_issue_mirror chop
-    depends_on:
-      - bead_ref
-    size: large
-    description:
-      "issue_mirror: add the per-project builtin chop that diffs the tracker against
-      beads on external_ref and creates unsized open task beads, with watermarks, a
-      resumable backfill, per-pass budgets, backoff, a daily repair scan, a dry run, and
-      a doctor check for detached tracker auth."
-  - id: pr_mirror
-    title: external_pr_mirror chop and the two-file Patch importer
-    depends_on:
-      - pr_seam
-      - pr_origin
-    size: large
-    description:
-      "pr_mirror: add the per-project builtin chop that adopts unowned remote PRs as
-      Patches, built on a new importer that locks the active and archive ProjectSpec
-      files together and writes merged and closed PRs straight into the archive."
-  - id: bead_bug_ui
-    title: External-issue presentation and actions in the Beads pane
-    depends_on:
-      - bead_ref
-    size: large
-    description:
-      "bead_bug_ui: give Beads the external-issue chip, drift badge, detail section,
-      capability-gated migrated actions, and bug filter tokens additively, while the
-      Bugs sub-tab is still present, backed by one bounded per-project cache refresh."
-  - id: patch_pr_ui
-    title: PR badge and origin chip on Patch rows and detail
-    depends_on:
-      - pr_origin
-    size: medium
-    description:
-      "patch_pr_ui: render the PR badge and the origin chip as two independent signals
-      on Patch rows and in the detail panel, add the origin query property, and add the
-      mark-origin/adopt operation that clears unknown records."
-  - id: tabs
-    title: Retire Bugs, rename PRs to Patches, reorder the Artifacts sub-tabs
-    depends_on:
-      - bead_bug_ui
-      - issue_mirror
-    size: large
-    description:
-      "tabs: collapse the Artifacts sub-tabs to Stitches, Patches, Beads, Files by
-      deleting the Bugs pane and renaming the prs identifier to patches, keeping
-      deprecated action aliases, and regenerating every affected text and PNG golden."
+- id: bead_ref
+  title: external_ref bead identity field
+  depends_on: []
+  size: large
+  description: 'bead_ref: add the nullable, partially-unique external_ref column to
+    the sase-core bead schema and thread it through wire, jsonl, events, read, mutation,
+    CLI, history, and search plus the Python mirrors; add the project-qualified external
+    ref normalizer and widen bug_links to task beads through it.'
+- id: pr_seam
+  title: Pull-request provider seam
+  depends_on: []
+  size: medium
+  description: 'pr_seam: add PullRequestWire, vcs_list_pull_requests, and split list/read/mutate
+    capability probes to the VCS provider boundary, implement them in sase-github
+    over gh pr list, extend the in-memory fake, and add provider_id to IssueWire.'
+- id: pr_origin
+  title: PR_ORIGIN field, SASE_PATCH stamp, and the external-Patch safety exclusion
+  depends_on: []
+  size: medium
+  description: 'pr_origin: add the tri-state PR_ORIGIN Patch field across parser,
+    storage, section order, and the four ACE styling surfaces; stamp SASE_PATCH in
+    append_pr_tags; and structurally exclude external Patches from AXE work before
+    any importer can create one.'
+- id: issue_mirror
+  title: external_issue_mirror chop
+  depends_on:
+  - bead_ref
+  size: large
+  description: 'issue_mirror: add the per-project builtin chop that diffs the tracker
+    against beads on external_ref and creates unsized open task beads, with watermarks,
+    a resumable backfill, per-pass budgets, backoff, a daily repair scan, a dry run,
+    and a doctor check for detached tracker auth.'
+- id: pr_mirror
+  title: external_pr_mirror chop and the two-file Patch importer
+  depends_on:
+  - pr_seam
+  - pr_origin
+  size: large
+  description: 'pr_mirror: add the per-project builtin chop that adopts unowned remote
+    PRs as Patches, built on a new importer that locks the active and archive ProjectSpec
+    files together and writes merged and closed PRs straight into the archive.'
+- id: bead_bug_ui
+  title: External-issue presentation and actions in the Beads pane
+  depends_on:
+  - bead_ref
+  size: large
+  description: 'bead_bug_ui: give Beads the external-issue chip, drift badge, detail
+    section, capability-gated migrated actions, and bug filter tokens additively,
+    while the Bugs sub-tab is still present, backed by one bounded per-project cache
+    refresh.'
+- id: patch_pr_ui
+  title: PR badge and origin chip on Patch rows and detail
+  depends_on:
+  - pr_origin
+  size: medium
+  description: 'patch_pr_ui: render the PR badge and the origin chip as two independent
+    signals on Patch rows and in the detail panel, add the origin query property,
+    and add the mark-origin/adopt operation that clears unknown records.'
+- id: tabs
+  title: Retire Bugs, rename PRs to Patches, reorder the Artifacts sub-tabs
+  depends_on:
+  - bead_bug_ui
+  - issue_mirror
+  size: large
+  description: 'tabs: collapse the Artifacts sub-tabs to Stitches, Patches, Beads,
+    Files by deleting the Bugs pane and renaming the prs identifier to patches, keeping
+    deprecated action aliases, and regenerating every affected text and PNG golden.'
 proposed_by: bbugyi200.athena.xp
 create_time: 2026-08-10 19:02:48
 status: wip
+bead_id: sase-jb
 ---
 
-- **PROMPT:**
-  [prompts/202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_artifact_ingestion.md)
+- **PROMPT:** [prompts/202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_artifact_ingestion.md)
+- **BEAD:** [sase-jb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jb/README.md)
 
 # Plan: Mirror external issues into beads and external PRs into Patches
 
