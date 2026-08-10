@@ -8,7 +8,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.xd
 create_time: 2026-08-10 12:57:31
-status: wip
+status: done
 ---
 
 # Drop the plan-authoring-size paragraph from the generated SASE sizes memory
