@@ -82,7 +82,7 @@ phases:
     budgets, and document the new cost model for future contributors.'
 proposed_by: bbugyi200.athena.wk
 create_time: 2026-08-09 10:29:39
-status: wip
+status: done
 bead_id: sase-ib
 ---
 
