@@ -8,7 +8,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.xa
 create_time: 2026-08-10 10:45:53
-status: wip
+status: done
 ---
 
 # Auto-close task beads on `sase commit`, with a `-B|--do-not-close-bead` opt-out
