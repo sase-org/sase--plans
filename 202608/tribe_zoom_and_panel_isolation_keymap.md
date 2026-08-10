@@ -28,7 +28,7 @@ phases:
     the affected help, command palette, and docs copy.'
 proposed_by: bbugyi200.athena.xh
 create_time: 2026-08-10 14:07:55
-status: wip
+status: done
 bead_id: sase-j2
 ---
 
