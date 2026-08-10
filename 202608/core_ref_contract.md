@@ -4,7 +4,7 @@ title: Add the shared artifact-reference and filter contract to sase-core
 goal:
   Make Rust the versioned authority for ref source placement, document filtering,
   resolution, canonicalization, inventories, and native completion.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-ho.1
 bead: sase-ho.1
 create_time: 2026-08-08 13:46:06

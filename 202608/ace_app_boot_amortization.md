@@ -4,7 +4,7 @@ title: Amortize ACE app startup across tests
 goal:
   ACE TUI tests spend at least 50% fewer measured seconds entering apps while retaining
   every node, assertion, isolation guarantee, and contention check.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-ib.3
 bead: sase-ib.3
 create_time: 2026-08-09 13:47:07

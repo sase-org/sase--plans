@@ -6,7 +6,7 @@ goal:
   answers it with a typed reply or an inline keyboard, and submits one value per option
   through `option_inputs` — with the local feedback heuristic deleted so the executor
   owns that rule for every surface.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-h7.8
 bead: sase-h7.8
 create_time: 2026-08-07 20:09:55

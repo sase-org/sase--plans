@@ -4,7 +4,7 @@ title: Sweep the ACE surface to canonical Patch/stitch terminology
 goal:
   ACE user-facing output and canonical implementation use Patch/stitch terminology,
   while legacy aliases, saved state, wire keys, and import paths remain compatible.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.8.2
 bead: sase-hn.8.2
 create_time: 2026-08-09 00:34:29

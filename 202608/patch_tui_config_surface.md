@@ -4,7 +4,7 @@ title: Rename the ACE TUI and configuration surface to Patch and stitch
 goal:
   ACE and its configuration present canonical Patch and stitch terminology while legacy
   config, saved state, tabs, and completion payloads continue to work unchanged.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.4
 bead: sase-hn.4
 create_time: 2026-08-08 18:41:55

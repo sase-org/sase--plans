@@ -4,7 +4,7 @@ title: Canonicalize Patch and stitch workflow contracts
 goal:
   Make Patch and stitch canonical across non-TUI workflows, CLI, and machine metadata
   while preserving legacy entry points and stored data compatibility.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.3
 bead: sase-hn.3
 create_time: 2026-08-08 17:14:06

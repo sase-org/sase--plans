@@ -5,7 +5,7 @@ goal:
   ACE prebuilds exact, stamped sase-core artifacts in an isolated background cache,
   confirmed dev updates install matching artifacts in seconds, and every miss safely
   falls back to the existing Rust build with full observability.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-i9.4
 bead: sase-i9.4
 create_time: 2026-08-09 13:01:07

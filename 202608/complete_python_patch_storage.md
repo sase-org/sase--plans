@@ -4,7 +4,7 @@ title: Complete the Python Patch and ProjectSpec storage migration
 goal:
   Make Patch and Stitch canonical in the Python domain and storage layer while
   preserving legacy imports, attributes, ProjectSpec text, and wire compatibility.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.2
 bead: sase-hn.2
 create_time: 2026-08-08 15:50:53

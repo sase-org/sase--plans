@@ -5,7 +5,7 @@ goal:
   Make Patch and stitch canonical throughout the non-ACE Python source tree, CLI help,
   workflow messages, and corresponding tests while preserving every legacy command,
   option, import, wire, and serialized-data contract.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.8.3
 bead: sase-hn.8.3
 create_time: 2026-08-09 00:38:17

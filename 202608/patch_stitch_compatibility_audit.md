@@ -5,7 +5,7 @@ goal:
   Make every maintained SASE surface Patch/stitch-first, retain only explicit and tested
   legacy compatibility boundaries, and prove the complete migration across the main,
   core, integration, and handwritten configuration repositories.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-hn.7
 bead: sase-hn.7
 create_time: 2026-08-08 22:42:31

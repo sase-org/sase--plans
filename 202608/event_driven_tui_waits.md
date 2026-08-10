@@ -6,7 +6,7 @@ goal:
   heuristic's fixed 20ms sleep, while bounded waits retain their timeouts and
   diagnostics, intentional real-time tests remain explicit, and contention coverage
   shows no new flakes.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-ib.2
 bead: sase-ib.2
 create_time: 2026-08-09 11:32:26

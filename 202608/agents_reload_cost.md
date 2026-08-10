@@ -4,7 +4,7 @@ title: Reduce full Agents-tab reload cost
 goal:
   Routine Tier-1 Agents-tab reloads consume the read-only artifact-index projection without source-tree filesystem
   probes or writer-lock contention while exact deltas and Tier-2 reconciliation preserve freshness.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-e4.6
 bead: sase-e4.6
 create_time: 2026-08-02 09:31:25

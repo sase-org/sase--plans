@@ -7,7 +7,7 @@ goal:
   `GateBranchControls`, and deliver the collected values per option through the custom
   and plan submission paths — so plan, epic, custom, triage, and snooze gates all
   collect typed, validated input with no per-kind code.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-h7.6
 bead: sase-h7.6
 create_time: 2026-08-07 20:10:44

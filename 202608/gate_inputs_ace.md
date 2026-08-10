@@ -6,7 +6,7 @@ goal:
   epic, custom, triage, and snooze modals, and those values reach the gate command's
   stdin — with no per-kind code on the ACE side and no behavior change to xprompt input
   collection.
-size: large
+size: medium
 proposed_by: bbugyi200.athena.sase-h7.6
 bead: sase-h7.6
 create_time: 2026-08-07 18:41:11
