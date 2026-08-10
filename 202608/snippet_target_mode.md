@@ -1,109 +1,108 @@
 ---
 tier: epic
 title: Snippet target mode for a single prompt input pane
-goal: "Authoring and editing an ACE snippet is a first-class prompt-bar loop: `gt` /
-  `Ctrl+G t` asks for the trigger name with live collision evidence, opens one visibly
+goal: 'Authoring and editing an ACE snippet is a first-class prompt-bar loop: `gt`
+  / `Ctrl+G t` asks for the trigger name with live collision evidence, opens one visibly
   distinct snippet pane at the bottom of the prompt input stack (pre-filled with the
-  existing definition when the trigger already exists), and `<enter>` saves it to the
-  user's configured snippet config file — showing a real diff before writing and
-  offering exactly the follow-up actions that file needs — after which the pane
+  existing definition when the trigger already exists), and `<enter>` saves it to
+  the user''s configured snippet config file — showing a real diff before writing
+  and offering exactly the follow-up actions that file needs — after which the pane
   disappears and the cursor returns to precisely where it was.
 
-  "
+  '
 phases:
-  - id: target
-    title: Snippet destination resolution, the new config field, and the collision index
-    depends_on: []
-    size: medium
-    description: "target: add the `ace.snippet_config_path` config field with its schema
-      and default, lift snippet-location discovery out of the modals package into a
-      UI-free module, add the chezmoi-aware destination resolver and the pure
-      trigger-collision index, and make the existing unified save panel honor the
-      configured destination.
+- id: target
+  title: Snippet destination resolution, the new config field, and the collision index
+  depends_on: []
+  size: medium
+  description: 'target: add the `ace.snippet_config_path` config field with its schema
+    and default, lift snippet-location discovery out of the modals package into a
+    UI-free module, add the chezmoi-aware destination resolver and the pure trigger-collision
+    index, and make the existing unified save panel honor the configured destination.
 
-      "
-  - id: model
-    title: Snippet panes in the prompt stack model
-    depends_on: []
-    size: medium
-    description: "model: teach PromptStackState about at most one pinned bottom snippet
-      pane that never participates in launch, stash, or save-as payloads, add the
-      agent-pane accessors and structural invariants, and convert every pane-count call
-      site through an audited table pinned by tests.
+    '
+- id: model
+  title: Snippet panes in the prompt stack model
+  depends_on: []
+  size: medium
+  description: 'model: teach PromptStackState about at most one pinned bottom snippet
+    pane that never participates in launch, stash, or save-as payloads, add the agent-pane
+    accessors and structural invariants, and convert every pane-count call site through
+    an audited table pinned by tests.
 
-      "
-  - id: name
-    title: Trigger-name panel with live collision evidence
-    depends_on:
-      - target
-    size: medium
-    description: "name: build the trigger-name panel that validates as you type, shows
-      where a colliding trigger already lives and what saving would shadow, lets the
-      destination be overridden for the session, and returns the existing definition
-      body when the user commits to an existing trigger.
+    '
+- id: name
+  title: Trigger-name panel with live collision evidence
+  depends_on:
+  - target
+  size: medium
+  description: 'name: build the trigger-name panel that validates as you type, shows
+    where a colliding trigger already lives and what saving would shadow, lets the
+    destination be overridden for the session, and returns the existing definition
+    body when the user commits to an existing trigger.
 
-      "
-  - id: pane
-    title: The gt keymap, pane lifecycle, and exact cursor restoration
-    depends_on:
-      - model
-      - name
-    size: medium
-    description: "pane: add the `gt` / `Ctrl+G t` keymap and its hint, open the named
-      snippet pane at the bottom of the stack, keep cursor and vim mode per pane so
-      closing the snippet pane returns to the exact prior position, and enforce the
-      discard-confirmation and last-agent-pane guard rails.
+    '
+- id: pane
+  title: The gt keymap, pane lifecycle, and exact cursor restoration
+  depends_on:
+  - model
+  - name
+  size: medium
+  description: 'pane: add the `gt` / `Ctrl+G t` keymap and its hint, open the named
+    snippet pane at the bottom of the stack, keep cursor and vim mode per pane so
+    closing the snippet pane returns to the exact prior position, and enforce the
+    discard-confirmation and last-agent-pane guard rails.
 
-      "
-  - id: save
-    title: Save confirmation with a real diff, the write, and follow-up actions
-    depends_on:
-      - pane
-    size: medium
-    description: "save: route `<enter>` in the snippet pane to a confirmation panel with
-      draft/existing/diff views and an external-change guard, reuse the existing snippet
-      write, session publish, and post-write action chain, and close the pane only after
-      the write succeeds.
+    '
+- id: save
+  title: Save confirmation with a real diff, the write, and follow-up actions
+  depends_on:
+  - pane
+  size: medium
+  description: 'save: route `<enter>` in the snippet pane to a confirmation panel
+    with draft/existing/diff views and an external-change guard, reuse the existing
+    snippet write, session publish, and post-write action chain, and close the pane
+    only after the write succeeds.
 
-      "
-  - id: visual
-    title: Visual language for the snippet pane
-    depends_on:
-      - pane
-    size: medium
-    description: "visual: give the snippet pane its own theme-safe look — a
-      trigger-labeled separator rule, a distinct pane accent, new/overwrite and dirty
-      states, and its own subtitle — and pin it with PNG snapshot goldens.
+    '
+- id: visual
+  title: Visual language for the snippet pane
+  depends_on:
+  - pane
+  size: medium
+  description: 'visual: give the snippet pane its own theme-safe look — a trigger-labeled
+    separator rule, a distinct pane accent, new/overwrite and dirty states, and its
+    own subtitle — and pin it with PNG snapshot goldens.
 
-      "
-  - id: docs
-    title: Help modal and documentation
-    depends_on:
-      - name
-      - save
-      - visual
-    size: small
-    description: "docs: add the new keymap to the `?` help popup's Prompt Input section
-      and document the snippet authoring loop and the new config field in `docs/ace.md`
-      and `docs/configuration.md`.
+    '
+- id: docs
+  title: Help modal and documentation
+  depends_on:
+  - name
+  - save
+  - visual
+  size: small
+  description: 'docs: add the new keymap to the `?` help popup''s Prompt Input section
+    and document the snippet authoring loop and the new config field in `docs/ace.md`
+    and `docs/configuration.md`.
 
-      "
-  - id: verify
-    title: End-to-end verification of the snippet loop
-    depends_on:
-      - docs
-    size: small
-    description:
-      "verify: run the full verification gate and drive the real TUI through creating,
-      editing, shadow-warning, discarding, and chezmoi-backed snippet saves, confirming
-      the cursor returns exactly and no launch path regressed."
+    '
+- id: verify
+  title: End-to-end verification of the snippet loop
+  depends_on:
+  - docs
+  size: small
+  description: 'verify: run the full verification gate and drive the real TUI through
+    creating, editing, shadow-warning, discarding, and chezmoi-backed snippet saves,
+    confirming the cursor returns exactly and no launch path regressed.'
 proposed_by: bbugyi200.athena.xl
 create_time: 2026-08-10 14:49:25
 status: wip
+bead_id: sase-j3
 ---
 
-- **PROMPT:**
-  [prompts/202608/snippet_target_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/snippet_target_mode.md)
+- **PROMPT:** [prompts/202608/snippet_target_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/snippet_target_mode.md)
+- **BEAD:** [sase-j3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j3/README.md)
 
 # Plan: Snippet target mode for a single prompt input pane
 
