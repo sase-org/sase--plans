@@ -1,75 +1,71 @@
 ---
 tier: epic
 title: Close the three live task beads and retire the sase-ct umbrella permanently
-goal: "The three non-snoozed task beads (sase-ct, sase-ii, sase-iq) are closed with
-  their underlying issues actually resolved. sase-ii and sase-iq are verified fixed on
-  master and closed. The sase-ct class is attacked at the three mechanisms that produce
-  it today — a deterministic prompt-catalog convergence hang that makes the PNG lane red
-  in isolation, a wait-idiom gate blind spot that lets attempt-bounded pause loops back
-  into ACE tests, and the residual contention-sensitive nodes — and then sase-ct is
-  retired as an umbrella: it closes with a reason that forbids future +1 corroboration
-  and directs the next reporter to file a node-specific task bead that references
-  sase-ct as RELATED, and /sase_new_task is changed so that instruction is actually
-  reachable at the moment an agent would otherwise +1.
+goal: 'The three non-snoozed task beads (sase-ct, sase-ii, sase-iq) are closed with
+  their underlying issues actually resolved. sase-ii and sase-iq are verified fixed
+  on master and closed. The sase-ct class is attacked at the three mechanisms that
+  produce it today — a deterministic prompt-catalog convergence hang that makes the
+  PNG lane red in isolation, a wait-idiom gate blind spot that lets attempt-bounded
+  pause loops back into ACE tests, and the residual contention-sensitive nodes — and
+  then sase-ct is retired as an umbrella: it closes with a reason that forbids future
+  +1 corroboration and directs the next reporter to file a node-specific task bead
+  that references sase-ct as RELATED, and /sase_new_task is changed so that instruction
+  is actually reachable at the moment an agent would otherwise +1.
 
-  "
+  '
 phases:
-  - id: closeouts
-    title: Verify and close sase-ii and sase-iq
-    depends_on: []
-    size: small
-    description:
-      "closeouts: confirm on current master that the sase-ii mtime-cache node and both
-      sase-iq run_pytest cost-mode nodes pass, establish that each reopening +1 predates
-      the landed fix, then close both beads with evidence notes."
-  - id: catalog
-    title: Fix the deterministic prompt-catalog convergence hang in the PNG lane
-    depends_on: []
-    size: medium
-    description:
-      "catalog: make the ACE startup prompt-catalog rebuild worker stop holding
-      wait_for_visual_idle open for its full 30s deadline. Reproduced deterministically
-      in isolation on clean master; fix it centrally in the visual fixtures rather than
-      per file, and prove the PNG lane green."
-  - id: waitgate
-    title: Widen the wait-idiom gate past its receiver and name blind spots
-    depends_on: []
-    size: medium
-    description:
-      "waitgate: tools/check_test_wait_helpers only recognizes bounded-wait loops whose
-      receiver is literally named pilot and private helpers named _wait_until, so
-      page.pause() loops and _wait_for helpers pass it. Widen both axes and migrate
-      every call site the widened gate reports onto the shared waiters."
-  - id: residue
-    title: Fix the remaining contention-sensitive sase-ct nodes by mechanism
-    depends_on:
-      - waitgate
-    size: medium
-    description:
-      "residue: take the non-visual nodes still recurring on sase-ct that waitgate does
-      not already fix — agent-group revival, commits-pane filters, the vcs_tag pair,
-      plugins-browser updates — and fix each by mechanism, using just test-contention as
-      the falsifiable before/after harness."
-  - id: retire
-    title: Retire the umbrella, close sase-ct, and make the no-+1 instruction reachable
-    depends_on:
-      - closeouts
-      - catalog
-      - waitgate
-      - residue
-    size: medium
-    description:
-      "retire: change /sase_new_task so a retired umbrella routes the next reporter to a
-      node-specific task bead with a RELATED note instead of a +1, run the exit criteria
-      on the combined tree, and close sase-ct with the verbatim reason this plan
-      specifies."
+- id: closeouts
+  title: Verify and close sase-ii and sase-iq
+  depends_on: []
+  size: small
+  description: 'closeouts: confirm on current master that the sase-ii mtime-cache
+    node and both sase-iq run_pytest cost-mode nodes pass, establish that each reopening
+    +1 predates the landed fix, then close both beads with evidence notes.'
+- id: catalog
+  title: Fix the deterministic prompt-catalog convergence hang in the PNG lane
+  depends_on: []
+  size: medium
+  description: 'catalog: make the ACE startup prompt-catalog rebuild worker stop holding
+    wait_for_visual_idle open for its full 30s deadline. Reproduced deterministically
+    in isolation on clean master; fix it centrally in the visual fixtures rather than
+    per file, and prove the PNG lane green.'
+- id: waitgate
+  title: Widen the wait-idiom gate past its receiver and name blind spots
+  depends_on: []
+  size: medium
+  description: 'waitgate: tools/check_test_wait_helpers only recognizes bounded-wait
+    loops whose receiver is literally named pilot and private helpers named _wait_until,
+    so page.pause() loops and _wait_for helpers pass it. Widen both axes and migrate
+    every call site the widened gate reports onto the shared waiters.'
+- id: residue
+  title: Fix the remaining contention-sensitive sase-ct nodes by mechanism
+  depends_on:
+  - waitgate
+  size: medium
+  description: 'residue: take the non-visual nodes still recurring on sase-ct that
+    waitgate does not already fix — agent-group revival, commits-pane filters, the
+    vcs_tag pair, plugins-browser updates — and fix each by mechanism, using just
+    test-contention as the falsifiable before/after harness.'
+- id: retire
+  title: Retire the umbrella, close sase-ct, and make the no-+1 instruction reachable
+  depends_on:
+  - closeouts
+  - catalog
+  - waitgate
+  - residue
+  size: medium
+  description: 'retire: change /sase_new_task so a retired umbrella routes the next
+    reporter to a node-specific task bead with a RELATED note instead of a +1, run
+    the exit criteria on the combined tree, and close sase-ct with the verbatim reason
+    this plan specifies.'
 proposed_by: bbugyi200.athena.xb
 create_time: 2026-08-10 11:01:13
 status: wip
+bead_id: sase-iy
 ---
 
-- **PROMPT:**
-  [prompts/202608/retire_sase_ct_umbrella.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/retire_sase_ct_umbrella.md)
+- **PROMPT:** [prompts/202608/retire_sase_ct_umbrella.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/retire_sase_ct_umbrella.md)
+- **BEAD:** [sase-iy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-iy/README.md)
 
 # Plan: Close the three live task beads and retire the `sase-ct` umbrella
 
