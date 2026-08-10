@@ -8,10 +8,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-jd.1
 bead: sase-jd.1
-create_time: 2026-08-10 19:24:33
-status: wip
+create_time: 2026-08-10 19:24:39
+status: done
 ---
 
+- **PROMPT:**
+  [prompts/202608/external_ref_bead_identity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_ref_bead_identity.md)
 - **PARENT:**
   [202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_artifact_ingestion.md)
 - **BEAD:**
