@@ -7,10 +7,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-j2.land
 bead: sase-j2
-create_time: 2026-08-10 15:41:23
+create_time: 2026-08-10 15:41:29
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/j2_epic_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/j2_epic_landing.md)
 - **PARENT:**
   [202608/tribe_zoom_and_panel_isolation_keymap.md](https://github.com/sase-org/sase--plans/blob/main/202608/tribe_zoom_and_panel_isolation_keymap.md)
 - **BEAD:**
