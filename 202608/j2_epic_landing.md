@@ -17,6 +17,11 @@ status: done
   [202608/tribe_zoom_and_panel_isolation_keymap.md](https://github.com/sase-org/sase--plans/blob/main/202608/tribe_zoom_and_panel_isolation_keymap.md)
 - **BEAD:**
   [sase-j2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j2/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-j2.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-j2.land.md)
+- **COMMITS:**
+  - [bf4fdc7](https://github.com/sase-org/sase--plans/commit/bf4fdc7db66e372603ba68043d8015859078006f)
+    — docs: mark tribe_zoom_and_panel_isolation_keymap plan done
 
 # Complete and land epic `sase-j2`
 
