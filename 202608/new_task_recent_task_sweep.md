@@ -7,6 +7,7 @@ goal:
   /sase_new_task reviews every task bead created in the last week before concluding a
   report is new, and records RELATED notes for near-miss beads, using a new
   creation-date filter on `sase bead list`.
+size: medium
 proposed_by: bbugyi200.athena.wu
 create_time: 2026-08-09 17:01:38
 status: wip
