@@ -20,8 +20,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-j2.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-j2.land.md)
 - **COMMITS:**
-  - [bf4fdc7](https://github.com/sase-org/sase--plans/commit/bf4fdc7db66e372603ba68043d8015859078006f)
-    — docs: mark tribe_zoom_and_panel_isolation_keymap plan done
+  - [5b97f27](https://github.com/sase-org/sase/commit/5b97f275518a5990068a8bc13f671f04e2e80170)
+    — test: finish epic sase-j2's isolation terminology cleanup and stale goldens
 
 # Complete and land epic `sase-j2`
 
