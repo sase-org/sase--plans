@@ -1,62 +1,61 @@
 ---
 tier: epic
 title: Make merge visibility work through the real provider dispatch path
-goal: "`sase vcs log --merges hide|show|only` and the ACE Commits merge cycle actually
-  re-slice history at runtime, the partition law holds against a real repository, the
-  epic's own test-isolation flake is gone, and epic sase-i8 lands with recorded
+goal: '`sase vcs log --merges hide|show|only` and the ACE Commits merge cycle actually
+  re-slice history at runtime, the partition law holds against a real repository,
+  the epic''s own test-isolation flake is gone, and epic sase-i8 lands with recorded
   acceptance evidence.
 
-  "
+  '
 phases:
-  - id: dispatch
-    title: Stop pluggy from silently dropping optional VCS hook arguments
-    depends_on: []
-    size: medium
-    description: "dispatch: make optional VCS hook parameters reach hook implementations
-      by declaring them positional-or-keyword without defaults in both the hookspec and
-      BareGitPlugin, add a structural guard test over every hookspec family, and
-      re-point the optional-argument tests through VCSPluginManager so they can fail.
+- id: dispatch
+  title: Stop pluggy from silently dropping optional VCS hook arguments
+  depends_on: []
+  size: medium
+  description: 'dispatch: make optional VCS hook parameters reach hook implementations
+    by declaring them positional-or-keyword without defaults in both the hookspec
+    and BareGitPlugin, add a structural guard test over every hookspec family, and
+    re-point the optional-argument tests through VCSPluginManager so they can fail.
 
-      "
-  - id: isolation
-    title: Give each remote-fixture test its own origin repository
-    depends_on: []
-    size: small
-    description: "isolation: remove the shared bare-remote path that makes two provider
-      tests collide inside one pytest worker, which is the reproducible flake recorded
-      three times against this epic.
+    '
+- id: isolation
+  title: Give each remote-fixture test its own origin repository
+  depends_on: []
+  size: small
+  description: 'isolation: remove the shared bare-remote path that makes two provider
+    tests collide inside one pytest worker, which is the reproducible flake recorded
+    three times against this epic.
 
-      "
-  - id: accept
-    title: Redo end-to-end acceptance against real merge history
-    depends_on:
-      - dispatch
-      - isolation
-    size: small
-    description: "accept: run the full acceptance matrix the closed verify phase never
-      recorded, against a repository that really contains merge commits, and write the
-      evidence onto the epic bead.
+    '
+- id: accept
+  title: Redo end-to-end acceptance against real merge history
+  depends_on:
+  - dispatch
+  - isolation
+  size: small
+  description: 'accept: run the full acceptance matrix the closed verify phase never
+    recorded, against a repository that really contains merge commits, and write the
+    evidence onto the epic bead.
 
-      "
-  - id: land
-    title: Land the epic and file the remaining follow-ups
-    depends_on:
-      - accept
-    size: small
-    description:
-      "land: refresh the stale contract manifest, file the surviving follow-up proposals
-      as sized task beads, close the epic with a verification note, run symvision, and
-      mark both plan files done."
+    '
+- id: land
+  title: Land the epic and file the remaining follow-ups
+  depends_on:
+  - accept
+  size: small
+  description: 'land: refresh the stale contract manifest, file the surviving follow-up
+    proposals as sized task beads, close the epic with a verification note, run symvision,
+    and mark both plan files done.'
 proposed_by: bbugyi200.athena.sase-i8.land
 parent_bead: sase-i8
 create_time: 2026-08-10 08:25:55
 status: wip
+bead_id: sase-i8.10
 ---
 
-- **PROMPT:**
-  [prompts/202608/merge_visibility_dispatch_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/merge_visibility_dispatch_fix.md)
-- **PARENT:**
-  [202608/merge_commit_support.md](https://github.com/sase-org/sase--plans/blob/main/202608/merge_commit_support.md)
+- **PROMPT:** [prompts/202608/merge_visibility_dispatch_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/merge_visibility_dispatch_fix.md)
+- **PARENT:** [202608/merge_commit_support.md](https://github.com/sase-org/sase--plans/blob/main/202608/merge_commit_support.md)
+- **BEAD:** [sase-i8.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-i8/sase-i8.10.md)
 
 # Plan: Make merge visibility work through the real provider dispatch path
 
