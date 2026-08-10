@@ -1,68 +1,63 @@
 ---
 tier: epic
-title:
-  Fix the sase-ct flake class at its root - process-global state leaking between tests
-goal:
-  The tests behind sase-ct stop failing under the full parallel lane because the
+title: Fix the sase-ct flake class at its root - process-global state leaking between
+  tests
+goal: The tests behind sase-ct stop failing under the full parallel lane because the
   process-global state that leaks between tests is fixed by mechanism, a leak detector
-  gate makes the class non-recurring, tests/reproducible_flake_baseline.txt shrinks to
-  only nodes proven still broken, and sase-ct, sase-iy.5, sase-j4, sase-j5, and sase-j6
-  are closed on evidence.
+  gate makes the class non-recurring, tests/reproducible_flake_baseline.txt shrinks
+  to only nodes proven still broken, and sase-ct, sase-iy.5, sase-j4, sase-j5, and
+  sase-j6 are closed on evidence.
 phases:
-  - id: vcs-cache
-    title: Fix the confirmed xprompt VCS-tag cache leak
-    depends_on: []
-    size: medium
-    description:
-      vcs-cache - give the caches derived from workspace-provider metadata a real
-      invalidation entry point and restore them on teardown, so a test that fakes plugin
-      metadata stops poisoning every later test in its worker.
-  - id: leak-detector
-    title: Build a global-state leak detector and inventory every leak in the suite
-    depends_on: []
-    size: medium
-    description:
-      leak-detector - build an opt-in pytest plugin that snapshots process-global state
-      around every test, distinguishes cache warming from poisoning, and delivers a
-      full-suite inventory artifact of every leak. Reports only; blocks nothing.
-  - id: stale-nodes
-    title: Stop the flake gate from flagging node IDs that no longer exist
-    depends_on: []
-    size: medium
-    description:
-      stale-nodes - bead sase-j5. Make the reproducible-flake gate skip or separately
-      report recorded node IDs absent from the collected suite, so a renamed test stops
-      manufacturing pressure to bump the baseline cutoff.
-  - id: fix-leaks
-    title: Fix every inventoried leak and root-cause the residual flakes
-    depends_on:
-      - vcs-cache
-      - leak-detector
-    size: large
-    description:
-      fix-leaks - fix every poisoning leak in the inventory by mechanism,
-      deterministically reproduce and fix the bead-cluster and plan-approval nodes whose
-      cause is not yet known, and flip the leak detector into a blocking gate so the
-      class cannot recur.
-  - id: retire
-    title: Shrink the baseline, run the exit criteria, and close the beads
-    depends_on:
-      - vcs-cache
-      - leak-detector
-      - stale-nodes
-      - fix-leaks
-    size: medium
-    description:
-      retire - remove every fixed node from the flake baseline, run the four exit
-      criteria non-vacuously on the combined tree, and close sase-j4, sase-j5, sase-j6,
-      sase-ct, and sase-iy.5 on that evidence.
+- id: vcs-cache
+  title: Fix the confirmed xprompt VCS-tag cache leak
+  depends_on: []
+  size: medium
+  description: vcs-cache - give the caches derived from workspace-provider metadata
+    a real invalidation entry point and restore them on teardown, so a test that fakes
+    plugin metadata stops poisoning every later test in its worker.
+- id: leak-detector
+  title: Build a global-state leak detector and inventory every leak in the suite
+  depends_on: []
+  size: medium
+  description: leak-detector - build an opt-in pytest plugin that snapshots process-global
+    state around every test, distinguishes cache warming from poisoning, and delivers
+    a full-suite inventory artifact of every leak. Reports only; blocks nothing.
+- id: stale-nodes
+  title: Stop the flake gate from flagging node IDs that no longer exist
+  depends_on: []
+  size: medium
+  description: stale-nodes - bead sase-j5. Make the reproducible-flake gate skip or
+    separately report recorded node IDs absent from the collected suite, so a renamed
+    test stops manufacturing pressure to bump the baseline cutoff.
+- id: fix-leaks
+  title: Fix every inventoried leak and root-cause the residual flakes
+  depends_on:
+  - vcs-cache
+  - leak-detector
+  size: large
+  description: fix-leaks - fix every poisoning leak in the inventory by mechanism,
+    deterministically reproduce and fix the bead-cluster and plan-approval nodes whose
+    cause is not yet known, and flip the leak detector into a blocking gate so the
+    class cannot recur.
+- id: retire
+  title: Shrink the baseline, run the exit criteria, and close the beads
+  depends_on:
+  - vcs-cache
+  - leak-detector
+  - stale-nodes
+  - fix-leaks
+  size: medium
+  description: retire - remove every fixed node from the flake baseline, run the four
+    exit criteria non-vacuously on the combined tree, and close sase-j4, sase-j5,
+    sase-j6, sase-ct, and sase-iy.5 on that evidence.
 proposed_by: bbugyi200.athena.sase-j0.w1.f0
 create_time: 2026-08-10 15:44:26
 status: wip
+bead_id: sase-j7
 ---
 
-- **PROMPT:**
-  [prompts/202608/fix_sase_ct_flake_class.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fix_sase_ct_flake_class.md)
+- **PROMPT:** [prompts/202608/fix_sase_ct_flake_class.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fix_sase_ct_flake_class.md)
+- **BEAD:** [sase-j7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-j7/README.md)
 
 # Fix the `sase-ct` flake class at its root
 
