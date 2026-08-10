@@ -30,7 +30,7 @@ phases:
     line-local matching.'
 proposed_by: bbugyi200.athena.ws
 create_time: 2026-08-09 15:53:19
-status: wip
+status: done
 bead_id: sase-ik
 ---
 
