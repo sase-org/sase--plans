@@ -9,7 +9,7 @@ goal:
   docs, and PNG goldens) consistent with the new order.
 proposed_by: bbugyi200.athena.xi
 create_time: 2026-08-10 14:10:52
-status: wip
+status: done
 ---
 
 # Show the PLAN lane above the BEAD lane in SASE CONTEXT
