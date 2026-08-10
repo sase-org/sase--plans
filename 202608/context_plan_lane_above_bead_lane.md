@@ -12,6 +12,12 @@ create_time: 2026-08-10 14:10:52
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.xi](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xi.md)
+- **COMMITS:**
+  - [14279fd](https://github.com/sase-org/sase/commit/14279fd90f42dc36560601650775cc6da3da7f9b)
+    — fix(ace): render plan lane above bead context
+
 # Show the PLAN lane above the BEAD lane in SASE CONTEXT
 
 ## Goal
