@@ -21,8 +21,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-jd.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-jd.1.md)
 - **COMMITS:**
-  - [730a78f](https://github.com/sase-org/sase-core/commit/730a78f005b10a2b2ed99892cfed2a1111f8215f)
-    — feat(beads): add external ref identity field
+  - [fd93aab](https://github.com/sase-org/sase/commit/fd93aab1d4c850d10fddb13330108d4e0627a0a1)
+    — feat(beads): surface external refs in Python workflows
 
 # External issue identity for beads
 
