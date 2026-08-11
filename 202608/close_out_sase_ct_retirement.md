@@ -18,6 +18,12 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/close_out_sase_ct_retirement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/close_out_sase_ct_retirement.md)
+- **AGENTS:**
+  - [bbugyi200.athena.xy](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xy.md)
+- **COMMITS:**
+  - [560f9b3](https://github.com/sase-org/sase/commit/560f9b3326cb8e20d3b82fccfe614ce5452eb15f)
+    — chore(tests): retire stale flake baseline debt
+
 # Plan: Close out epic `sase-iy` and retire the `sase-ct` umbrella
 
 ## Problem
