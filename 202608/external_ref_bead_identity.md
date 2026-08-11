@@ -18,6 +18,11 @@ status: done
   [202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_artifact_ingestion.md)
 - **BEAD:**
   [sase-jd.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jd/sase-jd.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-jd.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-jd.1.md)
+- **COMMITS:**
+  - [730a78f](https://github.com/sase-org/sase-core/commit/730a78f005b10a2b2ed99892cfed2a1111f8215f)
+    — feat(beads): add external ref identity field
 
 # External issue identity for beads
 
