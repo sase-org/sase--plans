@@ -9,7 +9,7 @@ size: medium
 proposed_by: bbugyi200.athena.sase-jo.land
 bead: sase-jo
 create_time: 2026-08-11 10:39:28
-status: wip
+status: done
 ---
 
 - **BEAD:**
