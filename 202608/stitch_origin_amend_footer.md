@@ -14,6 +14,11 @@ status: done
 
 - **BEAD:**
   [sase-jo](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jo/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-jo.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-jo.land.md)
+- **COMMITS:**
+  - [33b8861](https://github.com/sase-org/sase/commit/33b886150b672b85f471d0e3d1a9e9de0385cb71)
+    — fix(vcs): preserve SASE_TYPE footer across commit amend
 
 # Preserve the `SASE_TYPE=` footer across amend, then land epic sase-jo
 
