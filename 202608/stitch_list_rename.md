@@ -14,6 +14,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/stitch_list_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_list_rename.md)
+- **AGENTS:**
+  - [bbugyi200.athena.xt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xt.md)
+- **COMMITS:**
+  - [3306e09](https://github.com/sase-org/sase/commit/3306e093cb2cf866be3da097167abb85b79705a9)
+    — feat(cli)\!: rename stitch log to list
 
 # Rename `sase stitch log` to `sase stitch list` and delete the old repo-listing command
 
