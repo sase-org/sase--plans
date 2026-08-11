@@ -15,6 +15,11 @@ status: done
   [202608/artifact_ref_contract.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_ref_contract.md)
 - **BEAD:**
   [sase-js.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-js/sase-js.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-js.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-js.3.md)
+- **COMMITS:**
+  - [f53e43a](https://github.com/sase-org/sase/commit/f53e43ab139a7db2c50b75971fb7a5fc202619e5)
+    — feat\!: add artifact provider registry
 
 # Provider registry, plugin hooks, and config
 
