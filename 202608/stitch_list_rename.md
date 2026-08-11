@@ -8,9 +8,12 @@ goal:
   deleted.
 size: medium
 proposed_by: bbugyi200.athena.xt
-create_time: 2026-08-11 06:40:36
+create_time: 2026-08-11 06:40:40
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/stitch_list_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_list_rename.md)
 
 # Rename `sase stitch log` to `sase stitch list` and delete the old repo-listing command
 
