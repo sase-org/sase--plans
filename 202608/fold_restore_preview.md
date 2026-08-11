@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/fold_restore_preview.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fold_restore_preview.md)
+- **AGENTS:**
+  - [bbugyi200.athena.xz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xz.md)
+- **COMMITS:**
+  - [3e19e7c](https://github.com/sase-org/sase/commit/3e19e7cd15c71a2eacaa95fb5bb265a0c89c7b1f)
+    — feat(ace): show fold restore preview markers
 
 # Fold Restore Preview for the Agents-tab `-` Keymap
 
