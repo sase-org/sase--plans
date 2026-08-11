@@ -78,7 +78,7 @@ phases:
     deprecated action aliases, and regenerating every affected text and PNG golden.'
 proposed_by: bbugyi200.athena.xp
 create_time: 2026-08-10 19:02:48
-status: wip
+status: done
 bead_id: sase-jd
 ---
 
