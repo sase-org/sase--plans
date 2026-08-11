@@ -12,10 +12,12 @@ goal:
   bead `sase-j0`, explicitly carved out of this closure by the owner."
 size: medium
 proposed_by: bbugyi200.athena.xy
-create_time: 2026-08-11 08:27:36
+create_time: 2026-08-11 08:27:41
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/close_out_sase_ct_retirement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/close_out_sase_ct_retirement.md)
 # Plan: Close out epic `sase-iy` and retire the `sase-ct` umbrella
 
 ## Problem
