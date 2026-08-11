@@ -1,83 +1,83 @@
 ---
 tier: epic
 title: Stitch origin indicators on the Artifacts Stitches sub-tab
-goal: "Every row on the Artifacts Stitches sub-tab carries a distinct, self-documenting
+goal: 'Every row on the Artifacts Stitches sub-tab carries a distinct, self-documenting
   indicator for how the commit was created — through `sase stitch create`, automatically
   by another `sase` command, or by hand — backed by a provenance invariant that makes
   the classification reliable rather than heuristic, and exposed through a matching
   `origin:` filter, the shared `sase stitch log` renderers, and the core wire.
 
-  "
+  '
 phases:
-  - id: core
-    title: Core stitch-origin classifier
-    depends_on: []
-    size: medium
-    description: "core: add the `CommitOriginWire` enum, the footer-driven
-      `classify_commit_origin` function, and the `origin` field on the VCS-log commit
-      wire in the linked `sase-core` repo, bump the VCS-log wire schema version, and
-      expose both through the PyO3 binding with Rust unit and parity tests.
+- id: core
+  title: Core stitch-origin classifier
+  depends_on: []
+  size: medium
+  description: 'core: add the `CommitOriginWire` enum, the footer-driven `classify_commit_origin`
+    function, and the `origin` field on the VCS-log commit wire in the linked `sase-core`
+    repo, bump the VCS-log wire schema version, and expose both through the PyO3 binding
+    with Rust unit and parity tests.
 
-      "
-  - id: invariant
-    title: Tracked-commit provenance invariant
-    depends_on: []
-    size: medium
-    description: "invariant: stamp `SASE_TYPE=stitch` on every commit created through
-      the tracked `sase stitch create` workflow, audit every remaining commit-creating
-      call site so each stamps a `SASE_TYPE=` value, and add a contract test that keeps
-      new call sites from regressing the invariant.
+    '
+- id: invariant
+  title: Tracked-commit provenance invariant
+  depends_on: []
+  size: medium
+  description: 'invariant: stamp `SASE_TYPE=stitch` on every commit created through
+    the tracked `sase stitch create` workflow, audit every remaining commit-creating
+    call site so each stamps a `SASE_TYPE=` value, and add a contract test that keeps
+    new call sites from regressing the invariant.
 
-      "
-  - id: wire
-    title: Python wire and golden-contract parity
-    depends_on:
-      - core
-    size: small
-    description: "wire: mirror the new `origin` field in the Python VCS-log wire
-      records, teach the pure-Python golden-contract parser to compute the same value,
-      and update the shared commit fixtures and core wire tests.
+    '
+- id: wire
+  title: Python wire and golden-contract parity
+  depends_on:
+  - core
+  size: small
+  description: 'wire: mirror the new `origin` field in the Python VCS-log wire records,
+    teach the pure-Python golden-contract parser to compute the same value, and update
+    the shared commit fixtures and core wire tests.
 
-      "
-  - id: render
-    title: Timeline, legend, and detail rendering
-    depends_on:
-      - wire
-    size: medium
-    description: "render: add the shared origin glyph/label/style module, the fixed
-      origin column on timeline rows, the adaptive legend key, the Origin line in the
-      Stitches detail panel, and the origin field in every `sase stitch log` output
-      format, with unit and PNG visual coverage.
+    '
+- id: render
+  title: Timeline, legend, and detail rendering
+  depends_on:
+  - wire
+  size: medium
+  description: 'render: add the shared origin glyph/label/style module, the fixed
+    origin column on timeline rows, the adaptive legend key, the Origin line in the
+    Stitches detail panel, and the origin field in every `sase stitch log` output
+    format, with unit and PNG visual coverage.
 
-      "
-  - id: filter
-    title: origin filter and CLI flag
-    depends_on:
-      - wire
-    size: medium
-    description: "filter: add the repeatable, negatable `origin:` key to the Stitches
-      filter query language with completions and canonical rendering, plus the matching
-      `sase stitch log --origin` flag and post-collection filtering.
+    '
+- id: filter
+  title: origin filter and CLI flag
+  depends_on:
+  - wire
+  size: medium
+  description: 'filter: add the repeatable, negatable `origin:` key to the Stitches
+    filter query language with completions and canonical rendering, plus the matching
+    `sase stitch log --origin` flag and post-collection filtering.
 
-      "
-  - id: docs
-    title: Docs, help modal, and configuration reference
-    depends_on:
-      - invariant
-      - render
-      - filter
-    size: small
-    description:
-      "docs: document the origin taxonomy, glyphs, provenance invariant, and `origin:`
-      filter across the ACE guide, commit-workflow guide, CLI reference, configuration
-      reference, and the ACE help modal."
+    '
+- id: docs
+  title: Docs, help modal, and configuration reference
+  depends_on:
+  - invariant
+  - render
+  - filter
+  size: small
+  description: 'docs: document the origin taxonomy, glyphs, provenance invariant,
+    and `origin:` filter across the ACE guide, commit-workflow guide, CLI reference,
+    configuration reference, and the ACE help modal.'
 proposed_by: bbugyi200.athena.xv
 create_time: 2026-08-11 06:57:35
 status: wip
+bead_id: sase-jo
 ---
 
-- **PROMPT:**
-  [prompts/202608/stitch_origin_badges.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_origin_badges.md)
+- **PROMPT:** [prompts/202608/stitch_origin_badges.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stitch_origin_badges.md)
+- **BEAD:** [sase-jo](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jo/README.md)
 
 # Plan: Stitch origin indicators on the Artifacts Stitches sub-tab
 
