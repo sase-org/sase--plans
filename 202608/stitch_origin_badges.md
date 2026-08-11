@@ -72,7 +72,7 @@ phases:
     configuration reference, and the ACE help modal.'
 proposed_by: bbugyi200.athena.xv
 create_time: 2026-08-11 06:57:35
-status: wip
+status: done
 bead_id: sase-jo
 ---
 
