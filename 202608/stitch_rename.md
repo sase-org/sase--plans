@@ -49,7 +49,7 @@ phases:
     text and PNG snapshot goldens.'
 proposed_by: bbugyi200.athena.xn
 create_time: 2026-08-10 16:17:49
-status: wip
+status: done
 bead_id: sase-j8
 ---
 
