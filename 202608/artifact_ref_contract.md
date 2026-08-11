@@ -1,111 +1,103 @@
 ---
 tier: epic
 title: Artifact reference contract
-goal: 'Artifact references stop being xprompts and become a first-class, versioned ref
-  contract: five builtin kinds (`@stitch`, `@patch`, `@bead`, `@agent`, `@file`) plus
-  artifact-repo document kinds (`@plan`, `@research`, ...) configured inline or with
-  `use: <provider>` from an installed plugin. Every ref expands deterministically, is
-  recorded per occurrence against the agent that used it, publishes as a numbered
+goal: 'Artifact references stop being xprompts and become a first-class, versioned
+  ref contract: five builtin kinds (`@stitch`, `@patch`, `@bead`, `@agent`, `@file`)
+  plus artifact-repo document kinds (`@plan`, `@research`, ...) configured inline
+  or with `use: <provider>` from an installed plugin. Every ref expands deterministically,
+  is recorded per occurrence against the agent that used it, publishes as a numbered
   Markdown reference link, writes a `Referenced By` table back into the cited artifact,
   and gets a generated "Artifacts" sub-tab in ACE.
 
   '
 phases:
-  - id: core
-    title: Ref contract wire types in sase-core
-    depends_on: []
-    size: large
-    description:
-      "core: define the versioned provider/entry/resolution/use wire types, the closed
-      expansion formatter, quoted-argument grammar, the `@stitch`/`@patch`/path-`@file`
-      kinds with permanent legacy aliases, the shared numeric Markdown-link allocator,
-      and the `Referenced By` footer block; release the binding."
-  - id: retire
-    title: Retire the ref xprompt surface
-    depends_on: []
-    size: medium
-    description:
-      "retire: delete the `#ref/<kind>` xprompt adapter, its packaged renderer bodies,
-      the synthetic source schemes, the precedence table, and the catalog, completion,
-      LSP, and docs surfaces built on it, falling builtins back to hardcoded rendering."
-  - id: registry
-    title: Provider registry, plugin hooks, and config
-    depends_on:
-      - core
-      - retire
-    size: large
-    description:
-      "registry: add the `sase_artifact` pluggy project with ref-provider and file-hook
-      provider hookspecs, the spec registry with `use:`/inline merge and validation, the
-      config schema deltas, the builtin `plan` provider, the `sase init` writer, and
-      fail-soft diagnostics."
-  - id: builtins
-    title: Builtin refs and prompt ref context
-    depends_on:
-      - registry
-    size: large
-    description:
-      "builtins: thread an explicit per-segment `PromptRefContext` through late prompt
-      processing, implement `@stitch`, `@patch`, `@bead`, and `@agent` resolution on it,
-      record one immutable use row per ref occurrence, and land the legacy parse
-      aliases."
-  - id: files
-    title: The @file ref and the content-addressed store
-    depends_on:
-      - registry
-    size: large
-    description:
-      "files: add the `artifact_refs.file.roots` allow-list, launch-time capture with a
-      single byte read and full SHA-256, the one-object-per-digest store in the agents
-      sidecar, and durable logical-path/version indexing at publication."
-  - id: linking
-    title: Reference links and Referenced By write-back
-    depends_on:
-      - builtins
-      - files
-    size: large
-    description:
-      "linking: rewrite published prompts to numbered `[@kind:arg][N]` reference links
-      with revision-pinned destinations, and reconcile a managed `Referenced By` table
-      plus structured index into each cited artifact repo through the publication
-      outbox."
-  - id: ace
-    title: Generated Artifacts sub-tabs and the new Files pane
-    depends_on:
-      - builtins
-      - files
-    size: large
-    description:
-      "ace: make the Artifacts sub-tab set dynamic, collapse the plans/chats/files panes
-      into one provider-driven documents pane, and rebuild Files as one row per logical
-      file with version toggling and a visible origin badge."
-  - id: research
-    title: The sase-research plugin repository
-    depends_on:
-      - registry
-    size: large
-    description:
-      "research: build `sase-org/sase-research` as an installable plugin owning the
-      `research` ref provider, the `research-highlights` file-hook provider, and the
-      `#research*` xprompts, with wheel-level CI, tests, and documentation."
-  - id: adopt
-    title: Adoption, glossary, and documentation
-    depends_on:
-      - linking
-      - ace
-      - research
-    size: medium
-    description:
-      "adopt: link and install the research plugin, move Bryan's config to `use:` plus
-      overrides, add the `@file` roots for `~/bob`, add the Artifact Reference glossary
-      term, and rewrite the affected documentation end to end."
+- id: core
+  title: Ref contract wire types in sase-core
+  depends_on: []
+  size: large
+  description: 'core: define the versioned provider/entry/resolution/use wire types,
+    the closed expansion formatter, quoted-argument grammar, the `@stitch`/`@patch`/path-`@file`
+    kinds with permanent legacy aliases, the shared numeric Markdown-link allocator,
+    and the `Referenced By` footer block; release the binding.'
+- id: retire
+  title: Retire the ref xprompt surface
+  depends_on: []
+  size: medium
+  description: 'retire: delete the `#ref/<kind>` xprompt adapter, its packaged renderer
+    bodies, the synthetic source schemes, the precedence table, and the catalog, completion,
+    LSP, and docs surfaces built on it, falling builtins back to hardcoded rendering.'
+- id: registry
+  title: Provider registry, plugin hooks, and config
+  depends_on:
+  - core
+  - retire
+  size: large
+  description: 'registry: add the `sase_artifact` pluggy project with ref-provider
+    and file-hook provider hookspecs, the spec registry with `use:`/inline merge and
+    validation, the config schema deltas, the builtin `plan` provider, the `sase init`
+    writer, and fail-soft diagnostics.'
+- id: builtins
+  title: Builtin refs and prompt ref context
+  depends_on:
+  - registry
+  size: large
+  description: 'builtins: thread an explicit per-segment `PromptRefContext` through
+    late prompt processing, implement `@stitch`, `@patch`, `@bead`, and `@agent` resolution
+    on it, record one immutable use row per ref occurrence, and land the legacy parse
+    aliases.'
+- id: files
+  title: The @file ref and the content-addressed store
+  depends_on:
+  - registry
+  size: large
+  description: 'files: add the `artifact_refs.file.roots` allow-list, launch-time
+    capture with a single byte read and full SHA-256, the one-object-per-digest store
+    in the agents sidecar, and durable logical-path/version indexing at publication.'
+- id: linking
+  title: Reference links and Referenced By write-back
+  depends_on:
+  - builtins
+  - files
+  size: large
+  description: 'linking: rewrite published prompts to numbered `[@kind:arg][N]` reference
+    links with revision-pinned destinations, and reconcile a managed `Referenced By`
+    table plus structured index into each cited artifact repo through the publication
+    outbox.'
+- id: ace
+  title: Generated Artifacts sub-tabs and the new Files pane
+  depends_on:
+  - builtins
+  - files
+  size: large
+  description: 'ace: make the Artifacts sub-tab set dynamic, collapse the plans/chats/files
+    panes into one provider-driven documents pane, and rebuild Files as one row per
+    logical file with version toggling and a visible origin badge.'
+- id: research
+  title: The sase-research plugin repository
+  depends_on:
+  - registry
+  size: large
+  description: 'research: build `sase-org/sase-research` as an installable plugin
+    owning the `research` ref provider, the `research-highlights` file-hook provider,
+    and the `#research*` xprompts, with wheel-level CI, tests, and documentation.'
+- id: adopt
+  title: Adoption, glossary, and documentation
+  depends_on:
+  - linking
+  - ace
+  - research
+  size: medium
+  description: 'adopt: link and install the research plugin, move Bryan''s config
+    to `use:` plus overrides, add the `@file` roots for `~/bob`, add the Artifact
+    Reference glossary term, and rewrite the affected documentation end to end.'
 proposed_by: bbugyi200.athena.y2
 create_time: 2026-08-11 13:20:32
 status: wip
+bead_id: sase-js
 ---
 
-- **PROMPT:**
-  [prompts/202608/artifact_ref_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifact_ref_contract.md)
+- **PROMPT:** [prompts/202608/artifact_ref_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifact_ref_contract.md)
+- **BEAD:** [sase-js](https://github.com/sase-org/sase--beads/blob/main/pages/sase-js/README.md)
 
 # Plan: Artifact reference contract
 
