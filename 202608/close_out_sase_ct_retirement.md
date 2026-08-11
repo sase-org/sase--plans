@@ -23,6 +23,8 @@ status: done
 - **COMMITS:**
   - [560f9b3](https://github.com/sase-org/sase/commit/560f9b3326cb8e20d3b82fccfe614ce5452eb15f)
     — chore(tests): retire stale flake baseline debt
+  - [c388b56](https://github.com/sase-org/sase/commit/c388b560cfc3b0a2ae5f5abce693c837cd2cd292)
+    — style(tests): format external mirror issue assertions
 
 # Plan: Close out epic `sase-iy` and retire the `sase-ct` umbrella
 
