@@ -25,6 +25,8 @@ status: done
     — chore(tests): retire stale flake baseline debt
   - [c388b56](https://github.com/sase-org/sase/commit/c388b560cfc3b0a2ae5f5abce693c837cd2cd292)
     — style(tests): format external mirror issue assertions
+  - [db338f2](https://github.com/sase-org/sase/commit/db338f2ef7ab970dc54ccc4c3d1561fd6b57f906)
+    — test(visual): refresh bead external issue goldens
 
 # Plan: Close out epic `sase-iy` and retire the `sase-ct` umbrella
 
