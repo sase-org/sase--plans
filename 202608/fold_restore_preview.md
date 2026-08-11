@@ -7,9 +7,12 @@ goal:
   markers clear the instant the next press would sweep instead.
 size: medium
 proposed_by: bbugyi200.athena.xz
-create_time: 2026-08-11 08:39:26
+create_time: 2026-08-11 08:39:28
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/fold_restore_preview.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fold_restore_preview.md)
 
 # Fold Restore Preview for the Agents-tab `-` Keymap
 
