@@ -21,12 +21,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.xy](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.xy.md)
 - **COMMITS:**
-  - [560f9b3](https://github.com/sase-org/sase/commit/560f9b3326cb8e20d3b82fccfe614ce5452eb15f)
-    — chore(tests): retire stale flake baseline debt
-  - [c388b56](https://github.com/sase-org/sase/commit/c388b560cfc3b0a2ae5f5abce693c837cd2cd292)
-    — style(tests): format external mirror issue assertions
-  - [db338f2](https://github.com/sase-org/sase/commit/db338f2ef7ab970dc54ccc4c3d1561fd6b57f906)
-    — test(visual): refresh bead external issue goldens
+  - [531b04d](https://github.com/sase-org/sase--plans/commit/531b04d890ddf7167e0871322f30a3a61dc9fec9)
+    — docs(plans): mark sase-ct retirement done
 
 # Plan: Close out epic `sase-iy` and retire the `sase-ct` umbrella
 
