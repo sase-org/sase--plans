@@ -20,6 +20,11 @@ status: done
   [202608/artifact_ref_contract.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_ref_contract.md)
 - **BEAD:**
   [sase-js.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-js/sase-js.6.md)
+- **AGENTS:**
+  - bbugyi200.athena.sase-js.6
+- **COMMITS:**
+  - [37cd14a](https://github.com/sase-org/sase-core/commit/37cd14acffcbd52a6232dfcbffe4ff6bd1124f8c)
+    — feat: render prompt artifact links as references
 
 # Plan: Reference links and `Referenced By` write-back
 
