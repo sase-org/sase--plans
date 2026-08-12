@@ -7,9 +7,12 @@ goal:
   an unexplained "(missing)" and holding the workspace.
 size: medium
 proposed_by: bbugyi200.athena.ym
-create_time: 2026-08-12 11:12:09
+create_time: 2026-08-12 11:12:12
 status: wip
 ---
+
+- **PROMPT:**
+  [prompts/202608/lazy_sidecar_ref_materialization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/lazy_sidecar_ref_materialization.md)
 
 # Plan: Materialize lazily-cloned document sidecars on the launch ref path
 
