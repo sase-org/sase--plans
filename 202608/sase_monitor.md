@@ -1,139 +1,139 @@
 ---
 tier: epic
 title: sase monitor — long-running commands as first-class agent family members
-goal: "Agents can hand a slow command (`just check-full`, a CI wait, `sase bead work`)
-  to `sase monitor start` and be killed cleanly, while the command keeps running as a
-  live, first-class monitor member of their agent family — with streaming output, live
-  runtime, custom start/stop statuses, a timeout, and an optional follow-up agent that
-  resumes the same workspace and conversation when the command finishes.
+goal: 'Agents can hand a slow command (`just check-full`, a CI wait, `sase bead work`)
+  to `sase monitor start` and be killed cleanly, while the command keeps running as
+  a live, first-class monitor member of their agent family — with streaming output,
+  live runtime, custom start/stop statuses, a timeout, and an optional follow-up agent
+  that resumes the same workspace and conversation when the command finishes.
 
-  "
+  '
 phases:
-  - id: core-wire
-    title: Monitor marker fields on the agent scan wire
-    depends_on: []
-    size: small
-    description: "core-wire: add the monitor marker fields to the Rust `AgentMetaWire` /
-      `DoneMarkerWire` and their Python mirrors so monitor members survive the agent
-      artifact scan.
+- id: core-wire
+  title: Monitor marker fields on the agent scan wire
+  depends_on: []
+  size: small
+  description: 'core-wire: add the monitor marker fields to the Rust `AgentMetaWire`
+    / `DoneMarkerWire` and their Python mirrors so monitor members survive the agent
+    artifact scan.
 
-      "
-  - id: status-bucket
-    title: First-class custom agent status labels
-    depends_on: []
-    size: medium
-    description: "status-bucket: give `Agent` an explicit status-bucket override and
-      route agent-shaped bucket lookups through one accessor so arbitrary status labels
-      bucket correctly.
+    '
+- id: status-bucket
+  title: First-class custom agent status labels
+  depends_on: []
+  size: medium
+  description: 'status-bucket: give `Agent` an explicit status-bucket override and
+    route agent-shaped bucket lookups through one accessor so arbitrary status labels
+    bucket correctly.
 
-      "
-  - id: engine-run
-    title: Monitor member lifecycle and supervisor process
-    depends_on:
-      - core-wire
-      - status-bucket
-    size: medium
-    description: "engine-run: create the monitor family member, run and stream the
-      monitored command from a detached supervisor, enforce the timeout, own the
-      workspace claim, and write the terminal marker.
+    '
+- id: engine-run
+  title: Monitor member lifecycle and supervisor process
+  depends_on:
+  - core-wire
+  - status-bucket
+  size: medium
+  description: 'engine-run: create the monitor family member, run and stream the monitored
+    command from a detached supervisor, enforce the timeout, own the workspace claim,
+    and write the terminal marker.
 
-      "
-  - id: engine-next
-    title: Follow-up agent handoff after a monitor completes
-    depends_on:
-      - engine-run
-    size: medium
-    description: "engine-next: compose the command breakdown, resume the starter's
-      conversation with `#fork`, and launch the follow-up agent into the same lane and
-      workspace.
+    '
+- id: engine-next
+  title: Follow-up agent handoff after a monitor completes
+  depends_on:
+  - engine-run
+  size: medium
+  description: 'engine-next: compose the command breakdown, resume the starter''s
+    conversation with `#fork`, and launch the follow-up agent into the same lane and
+    workspace.
 
-      "
-  - id: handoff
-    title: In-agent handoff marker and runner adoption
-    depends_on:
-      - engine-run
-    size: medium
-    description: "handoff: add the `.sase_monitor_pending` handoff so `sase monitor
-      start` kills the calling agent cleanly, saves its chat for `#fork`, and never
-      releases the workspace.
+    '
+- id: handoff
+  title: In-agent handoff marker and runner adoption
+  depends_on:
+  - engine-run
+  size: medium
+  description: 'handoff: add the `.sase_monitor_pending` handoff so `sase monitor
+    start` kills the calling agent cleanly, saves its chat for `#fork`, and never
+    releases the workspace.
 
-      "
-  - id: cli
-    title: sase monitor command group
-    depends_on:
-      - engine-next
-      - handoff
-    size: medium
-    description: "cli: add `sase monitor start|stop|list|show` with multi-format output,
-      duration parsing, and monitor id resolution.
+    '
+- id: cli
+  title: sase monitor command group
+  depends_on:
+  - engine-next
+  - handoff
+  size: medium
+  description: 'cli: add `sase monitor start|stop|list|show` with multi-format output,
+    duration parsing, and monitor id resolution.
 
-      "
-  - id: tui-rows
-    title: Monitor rows in agent lists and family rosters
-    depends_on:
-      - status-bucket
-      - engine-run
-    size: medium
-    description: "tui-rows: render monitor members in the Agents tab, family roster, and
-      integration agent lists with their own glyph, phase label, live runtime, and
-      status.
+    '
+- id: tui-rows
+  title: Monitor rows in agent lists and family rosters
+  depends_on:
+  - status-bucket
+  - engine-run
+  size: medium
+  description: 'tui-rows: render monitor members in the Agents tab, family roster,
+    and integration agent lists with their own glyph, phase label, live runtime, and
+    status.
 
-      "
-  - id: tui-detail
-    title: Monitor detail panel, live output, and keybindings
-    depends_on:
-      - tui-rows
-      - cli
-    size: medium
-    description: "tui-detail: render the monitor detail section and live command output,
-      and wire the stop action into the footer and help modal.
+    '
+- id: tui-detail
+  title: Monitor detail panel, live output, and keybindings
+  depends_on:
+  - tui-rows
+  - cli
+  size: medium
+  description: 'tui-detail: render the monitor detail section and live command output,
+    and wire the stop action into the footer and help modal.
 
-      "
-  - id: epic-launch
-    title: Approved-epic launch runs as a monitor
-    depends_on:
-      - cli
-    size: medium
-    description: "epic-launch: replace the detached epic-launch task with a generic
-      monitor start using `EPIC APPROVED` / `EPIC CREATED`, keeping the host claim and a
-      fallback.
+    '
+- id: epic-launch
+  title: Approved-epic launch runs as a monitor
+  depends_on:
+  - cli
+  size: medium
+  description: 'epic-launch: replace the detached epic-launch task with a generic
+    monitor start using `EPIC APPROVED` / `EPIC CREATED`, keeping the host claim and
+    a fallback.
 
-      "
-  - id: skill
-    title: /sase_monitor skill
-    depends_on:
-      - cli
-    size: small
-    description: "skill: author the `/sase_monitor` skill source so agents prefer it
-      over their own monitor and scheduled wake-up tools.
+    '
+- id: skill
+  title: /sase_monitor skill
+  depends_on:
+  - cli
+  size: small
+  description: 'skill: author the `/sase_monitor` skill source so agents prefer it
+    over their own monitor and scheduled wake-up tools.
 
-      "
-  - id: memory-docs
-    title: Memory and documentation updates
-    depends_on:
-      - skill
-    size: small
-    description: "memory-docs: update the build-and-run memory note, regenerate agent
-      instruction files, and document monitors.
+    '
+- id: memory-docs
+  title: Memory and documentation updates
+  depends_on:
+  - skill
+  size: small
+  description: 'memory-docs: update the build-and-run memory note, regenerate agent
+    instruction files, and document monitors.
 
-      "
-  - id: smoke
-    title: End-to-end monitor exercises
-    depends_on:
-      - tui-detail
-      - epic-launch
-      - memory-docs
-    size: xsmall
-    description:
-      "smoke: launch real agents that exercise the sleep, timeout, stop, and follow-up
-      monitor paths and report what the surfaces actually showed."
+    '
+- id: smoke
+  title: End-to-end monitor exercises
+  depends_on:
+  - tui-detail
+  - epic-launch
+  - memory-docs
+  size: xsmall
+  description: 'smoke: launch real agents that exercise the sleep, timeout, stop,
+    and follow-up monitor paths and report what the surfaces actually showed.'
 proposed_by: bbugyi200.athena.yy
 create_time: 2026-08-12 17:27:54
 status: wip
+bead_id: sase-kp
 ---
 
-- **PROMPT:**
-  [prompts/202608/sase_monitor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_monitor.md)
+- **PROMPT:** [prompts/202608/sase_monitor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_monitor.md)
+- **BEAD:** [sase-kp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-kp/README.md)
 
 # Plan: `sase monitor` — long-running commands as agent family members
 
