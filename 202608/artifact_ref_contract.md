@@ -92,7 +92,7 @@ phases:
     Reference glossary term, and rewrite the affected documentation end to end.'
 proposed_by: bbugyi200.athena.y2
 create_time: 2026-08-11 13:20:32
-status: wip
+status: done
 bead_id: sase-js
 ---
 
