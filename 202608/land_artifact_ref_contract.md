@@ -20,6 +20,12 @@ status: done
   [202608/artifact_ref_contract.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_ref_contract.md)
 - **BEAD:**
   [sase-js](https://github.com/sase-org/sase--beads/blob/main/pages/sase-js/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-js.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-js.land.md)
+- **COMMITS:**
+  - [ad11756](https://github.com/sase-org/sase/commit/ad11756e6ed919d83f30c69fdb82d3c37c59b955)
+    — fix(ace): break artifact-provider import cycle, delete retired Chats pane, drop
+    @chat completion
 
 # Plan: Finish and land the artifact reference contract epic (sase-js)
 
