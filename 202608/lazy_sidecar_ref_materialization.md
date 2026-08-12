@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/lazy_sidecar_ref_materialization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/lazy_sidecar_ref_materialization.md)
+- **AGENTS:**
+  - [bbugyi200.athena.ym](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.ym.md)
+- **COMMITS:**
+  - [d6f435c](https://github.com/sase-org/sase/commit/d6f435c7a2a50678560e377d2604a08194408d7e)
+    — feat: lazily materialize prompt document sidecars
 
 # Plan: Materialize lazily-cloned document sidecars on the launch ref path
 
