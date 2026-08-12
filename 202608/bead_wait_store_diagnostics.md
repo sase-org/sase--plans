@@ -1,48 +1,49 @@
 ---
 tier: epic
 title: Bead waits must never block silently on an unresolvable bead store
-goal: "A bead-gated agent wait that cannot be decided — because the project's bead store
-  is unresolvable, or because a waited-on bead is absent from a readable store — is
-  reported as a distinct, attributable condition on the waiter, its chops, `sase
+goal: 'A bead-gated agent wait that cannot be decided — because the project''s bead
+  store is unresolvable, or because a waited-on bead is absent from a readable store
+  — is reported as a distinct, attributable condition on the waiter, its chops, `sase
   doctor`, and ACE, instead of blocking forever behind an ordinary WAITING status.
 
-  "
+  '
 phases:
-  - id: store
-    title: One project bead-store resolver with an explicit availability result
-    depends_on: []
-    size: medium
-    description: "store: collapse the three disagreeing project bead-store resolvers
-      into one candidate-ordered lookup that returns an explicit unavailable result with
-      the paths it tried, and stop the cwd walk-up from binding a project to an
-      unrelated store.
+- id: store
+  title: One project bead-store resolver with an explicit availability result
+  depends_on: []
+  size: medium
+  description: 'store: collapse the three disagreeing project bead-store resolvers
+    into one candidate-ordered lookup that returns an explicit unavailable result
+    with the paths it tried, and stop the cwd walk-up from binding a project to an
+    unrelated store.
 
-      "
-  - id: signal
-    title: Structured blocked reasons through the wait barrier
-    depends_on:
-      - store
-    size: medium
-    description: "signal: give every blocked bead dependency a reason
-      (store_unavailable, absent_from_store, not_closed), persist it on the waiting
-      marker through the sase-core waiting wire, and make the wait_checks and
-      bead_store_refresh chops report the undecidable cases instead of counting them as
-      ordinary no-ops.
+    '
+- id: signal
+  title: Structured blocked reasons through the wait barrier
+  depends_on:
+  - store
+  size: medium
+  description: 'signal: give every blocked bead dependency a reason (store_unavailable,
+    absent_from_store, not_closed), persist it on the waiting marker through the sase-core
+    waiting wire, and make the wait_checks and bead_store_refresh chops report the
+    undecidable cases instead of counting them as ordinary no-ops.
 
-      "
-  - id: surface
-    title: Doctor check, notification, and waiter rendering
-    depends_on:
-      - signal
-    size: medium
-    description:
-      "surface: add a doctor check for live waiters whose bead dependencies cannot be
-      decided, notify once per waiter past a dwell threshold, and render the reason in
-      the ACE wait section and `sase agent list`."
+    '
+- id: surface
+  title: Doctor check, notification, and waiter rendering
+  depends_on:
+  - signal
+  size: medium
+  description: 'surface: add a doctor check for live waiters whose bead dependencies
+    cannot be decided, notify once per waiter past a dwell threshold, and render the
+    reason in the ACE wait section and `sase agent list`.'
 proposed_by: bbugyi200.athena.y4
 create_time: 2026-08-12 07:29:03
 status: wip
+bead_id: sase-ju
 ---
+
+- **BEAD:** [sase-ju](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ju/README.md)
 
 # Plan: Bead waits must never block silently on an unresolvable bead store
 
