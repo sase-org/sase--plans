@@ -8,7 +8,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.yd
 create_time: 2026-08-12 08:10:09
-status: wip
+status: done
 ---
 
 # Give sase-core a Runnable CI-Parity Gate
