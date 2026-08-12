@@ -10,10 +10,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-k2.4
 bead: sase-k2.4
-create_time: 2026-08-12 12:55:45
+create_time: 2026-08-12 12:55:57
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/mirrored_bead_status_sync.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/mirrored_bead_status_sync.md)
 - **PARENT:**
   [202608/external_mirror_refinement.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_mirror_refinement.md)
 - **BEAD:**
