@@ -20,6 +20,11 @@ status: done
   [202608/external_mirror_refinement.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_mirror_refinement.md)
 - **BEAD:**
   [sase-k2.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k2/sase-k2.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-k2.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-k2.4.md)
+- **COMMITS:**
+  - [67d8463](https://github.com/sase-org/sase/commit/67d84632794e9e3f1c7f1ae6fd8d1c0cc486907b)
+    — feat(beads): sync mirrored issue status
 
 # Plan: Bug state drives mirrored bead status (epic phase `bug_status`, bead sase-k2.4)
 
