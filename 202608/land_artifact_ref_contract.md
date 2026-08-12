@@ -23,8 +23,11 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-js.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-js.land.md)
 - **COMMITS:**
-  - [4718e3a](https://github.com/sase-org/sase--plans/commit/4718e3aa2d1f53eb08da2f495790e4b66b7ef798)
-    — docs: mark artifact reference contract epic plan done
+  - [ad11756](https://github.com/sase-org/sase/commit/ad11756e6ed919d83f30c69fdb82d3c37c59b955)
+    — fix(ace): break artifact-provider import cycle, delete retired Chats pane, drop
+    @chat completion
+  - [c30bcb0](https://github.com/sase-org/sase/commit/c30bcb012c50f36b9e6b240d146fffa2cf3d8a8c)
+    — chore(symvision): retire epic-js whitelist, delete or wire up its five symbols
 
 # Plan: Finish and land the artifact reference contract epic (sase-js)
 
