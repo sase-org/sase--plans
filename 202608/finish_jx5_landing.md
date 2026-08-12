@@ -1,44 +1,41 @@
 ---
 tier: epic
 title: Finish the sase-jx.5 landing audit and closeout
-goal:
-  The last stale selected-run contract text is corrected, the combined AXE chop-overrun
-  feature is verified against every child note and intervening commit, follow-ups are
-  dispositioned accurately, and epic sase-jx.5 is closed without force with its linked
-  plan marked done.
+goal: The last stale selected-run contract text is corrected, the combined AXE chop-overrun
+  feature is verified against every child note and intervening commit, follow-ups
+  are dispositioned accurately, and epic sase-jx.5 is closed without force with its
+  linked plan marked done.
 phases:
-  - id: align_selected_run_contract
-    title: Align the chop-detail API documentation with selected-run rendering
-    depends_on: []
-    size: xsmall
-    description:
-      "align_selected_run_contract: update the stale update_chop_display argument
-      documentation that still says the header only describes the newest sampled run and
-      run_idx zero; document the actual schema-v2 behavior in which run_ratios is
-      aligned to raw history and the displayed run index controls the overrun segment,
-      then run the focused status-section tests and the repository check required for a
-      source change."
-  - id: close_epic
-    title: Complete verification, integration, follow-up disposition, and closeout
-    depends_on:
-      - align_selected_run_contract
-    size: medium
-    description:
-      "close_epic: re-audit the final combined tree and any newly landed base commits,
-      run the full cross-repository verification lane, record the obsolete sase-js
-      follow-up as already fixed by c30bcb012 rather than falsely corroborating it,
-      close phase sase-jx.5.4 and epic sase-jx.5 without force, run post-close Symvision
-      cleanup, and set status done in the linked land_axe_chop_overrun plan."
+- id: align_selected_run_contract
+  title: Align the chop-detail API documentation with selected-run rendering
+  depends_on: []
+  size: xsmall
+  description: 'align_selected_run_contract: update the stale update_chop_display
+    argument documentation that still says the header only describes the newest sampled
+    run and run_idx zero; document the actual schema-v2 behavior in which run_ratios
+    is aligned to raw history and the displayed run index controls the overrun segment,
+    then run the focused status-section tests and the repository check required for
+    a source change.'
+- id: close_epic
+  title: Complete verification, integration, follow-up disposition, and closeout
+  depends_on:
+  - align_selected_run_contract
+  size: medium
+  description: 'close_epic: re-audit the final combined tree and any newly landed
+    base commits, run the full cross-repository verification lane, record the obsolete
+    sase-js follow-up as already fixed by c30bcb012 rather than falsely corroborating
+    it, close phase sase-jx.5.4 and epic sase-jx.5 without force, run post-close Symvision
+    cleanup, and set status done in the linked land_axe_chop_overrun plan.'
 proposed_by: bbugyi200.athena.sase-jx.5.land
 parent_bead: sase-jx.5
 create_time: 2026-08-12 14:02:19
 status: wip
+bead_id: sase-jx.5.5
 ---
 
-- **PROMPT:**
-  [prompts/202608/finish_jx5_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_jx5_landing.md)
-- **PARENT:**
-  [202608/land_axe_chop_overrun.md](https://github.com/sase-org/sase--plans/blob/main/202608/land_axe_chop_overrun.md)
+- **PROMPT:** [prompts/202608/finish_jx5_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_jx5_landing.md)
+- **PARENT:** [202608/land_axe_chop_overrun.md](https://github.com/sase-org/sase--plans/blob/main/202608/land_axe_chop_overrun.md)
+- **BEAD:** [sase-jx.5.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jx/sase-jx.5.5.md)
 
 # Plan: Finish the sase-jx.5 landing audit and closeout
 
