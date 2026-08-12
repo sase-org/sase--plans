@@ -10,10 +10,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-js.6
 bead: sase-js.6
-create_time: 2026-08-12 07:54:25
+create_time: 2026-08-12 07:54:30
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/reference_links_and_referenced_by.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/reference_links_and_referenced_by.md)
 - **PARENT:**
   [202608/artifact_ref_contract.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_ref_contract.md)
 - **BEAD:**
