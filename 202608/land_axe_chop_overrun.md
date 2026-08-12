@@ -1,61 +1,56 @@
 ---
 tier: epic
 title: Finish and land the AXE chop-overrun indicator
-goal:
-  The AXE chop-overrun feature satisfies its original classifier and rendering contracts
-  on real first paint, on every selected run, and in published installs; all landing
-  verification is recorded and epic sase-jx is closed cleanly.
+goal: The AXE chop-overrun feature satisfies its original classifier and rendering
+  contracts on real first paint, on every selected run, and in published installs;
+  all landing verification is recorded and epic sase-jx is closed cleanly.
 phases:
-  - id: repair_core_contract
-    title: Repair the classifier's timestamp and per-run contract
-    depends_on: []
-    size: medium
-    description:
-      "repair_core_contract: in sase-core, reject every run whose started_at is
-      unparsable and extend the versioned verdict so Python can associate an overrun
-      ratio with each raw cached run, then verify and publish the corrected binding
-      without hand-editing release-plz-owned versions."
-  - id: integrate_tui_contract
-    title: Integrate per-run and responsive rendering in AXE
-    depends_on:
-      - repair_core_contract
-    size: medium
-    description:
-      "integrate_tui_contract: consume the corrected core verdict in sase, render the
-      detail-header mark only for the raw run currently selected, and make the overview
-      choose wide or compact layout after initial layout and immediately after terminal
-      resize, with focused unit and PNG coverage."
-  - id: publish_core_floor
-    title: Ratchet the published core dependency contract
-    depends_on:
-      - repair_core_contract
-      - integrate_tui_contract
-    size: small
-    description:
-      "publish_core_floor: after the corrected sase-core release is fully available, use
-      the repository's release-owned ratchet workflow to move pyproject.toml and uv.lock
-      to the first published sase-core-rs version containing the complete corrected
-      chop-overrun schema contract, and verify the floor-pinned binding inventory and
-      schema probe."
-  - id: close_epic
-    title: Verify and close epic sase-jx
-    depends_on:
-      - publish_core_floor
-    size: medium
-    description:
-      "close_epic: verify the combined cross-repo tree, record all verification,
-      integration, and follow-up outcomes, close sase-jx without force, run post-close
-      Symvision cleanup, and set status done in the original epic plan."
+- id: repair_core_contract
+  title: Repair the classifier's timestamp and per-run contract
+  depends_on: []
+  size: medium
+  description: 'repair_core_contract: in sase-core, reject every run whose started_at
+    is unparsable and extend the versioned verdict so Python can associate an overrun
+    ratio with each raw cached run, then verify and publish the corrected binding
+    without hand-editing release-plz-owned versions.'
+- id: integrate_tui_contract
+  title: Integrate per-run and responsive rendering in AXE
+  depends_on:
+  - repair_core_contract
+  size: medium
+  description: 'integrate_tui_contract: consume the corrected core verdict in sase,
+    render the detail-header mark only for the raw run currently selected, and make
+    the overview choose wide or compact layout after initial layout and immediately
+    after terminal resize, with focused unit and PNG coverage.'
+- id: publish_core_floor
+  title: Ratchet the published core dependency contract
+  depends_on:
+  - repair_core_contract
+  - integrate_tui_contract
+  size: small
+  description: 'publish_core_floor: after the corrected sase-core release is fully
+    available, use the repository''s release-owned ratchet workflow to move pyproject.toml
+    and uv.lock to the first published sase-core-rs version containing the complete
+    corrected chop-overrun schema contract, and verify the floor-pinned binding inventory
+    and schema probe.'
+- id: close_epic
+  title: Verify and close epic sase-jx
+  depends_on:
+  - publish_core_floor
+  size: medium
+  description: 'close_epic: verify the combined cross-repo tree, record all verification,
+    integration, and follow-up outcomes, close sase-jx without force, run post-close
+    Symvision cleanup, and set status done in the original epic plan.'
 proposed_by: bbugyi200.athena.sase-jx.land
 parent_bead: sase-jx
 create_time: 2026-08-12 12:13:53
 status: wip
+bead_id: sase-jx.5
 ---
 
-- **PROMPT:**
-  [prompts/202608/land_axe_chop_overrun.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/land_axe_chop_overrun.md)
-- **PARENT:**
-  [202608/axe_chop_overrun_indicator.md](https://github.com/sase-org/sase--plans/blob/main/202608/axe_chop_overrun_indicator.md)
+- **PROMPT:** [prompts/202608/land_axe_chop_overrun.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/land_axe_chop_overrun.md)
+- **PARENT:** [202608/axe_chop_overrun_indicator.md](https://github.com/sase-org/sase--plans/blob/main/202608/axe_chop_overrun_indicator.md)
+- **BEAD:** [sase-jx.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jx/sase-jx.5.md)
 
 # Plan: Finish and land the AXE chop-overrun indicator
 
