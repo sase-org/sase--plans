@@ -1,56 +1,57 @@
 ---
 tier: epic
 title: Mark chops that outrun their lumberjack's interval in the AXE tab
-goal: "The AXE tab visibly marks every chop whose run time reaches or exceeds its
-  lumberjack's interval — on the sidebar row, in the lumberjack overview table, and in
-  the chop detail header — so the operator can tell at a glance which chop is stretching
-  its lumberjack's cycle and needs a longer interval or a lumberjack of its own.
+goal: 'The AXE tab visibly marks every chop whose run time reaches or exceeds its
+  lumberjack''s interval — on the sidebar row, in the lumberjack overview table, and
+  in the chop detail header — so the operator can tell at a glance which chop is stretching
+  its lumberjack''s cycle and needs a longer interval or a lumberjack of its own.
 
-  "
+  '
 phases:
-  - id: core_classifier
-    title: Overrun classifier in the Rust core
-    depends_on: []
-    size: medium
-    description: "core_classifier: add the host-I/O-free `axe_overrun` module, its
-      versioned wire records, and the `classify_chop_overrun` PyO3 binding that turns
-      one chop's cached run history plus its lumberjack interval into a level/ratio
-      verdict.
+- id: core_classifier
+  title: Overrun classifier in the Rust core
+  depends_on: []
+  size: medium
+  description: 'core_classifier: add the host-I/O-free `axe_overrun` module, its versioned
+    wire records, and the `classify_chop_overrun` PyO3 binding that turns one chop''s
+    cached run history plus its lumberjack interval into a level/ratio verdict.
 
-      "
-  - id: blocking_duration
-    title: Record how long a chop actually blocked its tick
-    depends_on: []
-    size: small
-    description: "blocking_duration: persist `script_duration_ms` on chop run entries so
-      an agent-launching run keeps its script wall-clock after lifecycle finalization
-      overwrites `duration_ms`, and make the run-entry reader tolerate unknown keys.
+    '
+- id: blocking_duration
+  title: Record how long a chop actually blocked its tick
+  depends_on: []
+  size: small
+  description: 'blocking_duration: persist `script_duration_ms` on chop run entries
+    so an agent-launching run keeps its script wall-clock after lifecycle finalization
+    overwrites `duration_ms`, and make the run-entry reader tolerate unknown keys.
 
-      "
-  - id: snapshot_wiring
-    title: Classify each chop while collecting AXE snapshots
-    depends_on:
-      - core_classifier
-      - blocking_duration
-    size: medium
-    description: "snapshot_wiring: add the typed Python facade, carry the effective
-      interval and the verdict on `ChopSnapshot`/`LumberjackSnapshot`, and compute both
-      on the full collector and the targeted single-chop refresh path.
+    '
+- id: snapshot_wiring
+  title: Classify each chop while collecting AXE snapshots
+  depends_on:
+  - core_classifier
+  - blocking_duration
+  size: medium
+  description: 'snapshot_wiring: add the typed Python facade, carry the effective
+    interval and the verdict on `ChopSnapshot`/`LumberjackSnapshot`, and compute both
+    on the full collector and the targeted single-chop refresh path.
 
-      "
-  - id: tab_indicator
-    title: Render the overrun mark across the AXE tab
-    depends_on:
-      - snapshot_wiring
-    size: medium
-    description:
-      "tab_indicator: paint the sidebar chop chip and lumberjack roll-up, the overview
-      table's PACE column and advisory line, the chop detail header segment, the help
-      guide legend, docs, and the PNG snapshots that pin all of it."
+    '
+- id: tab_indicator
+  title: Render the overrun mark across the AXE tab
+  depends_on:
+  - snapshot_wiring
+  size: medium
+  description: 'tab_indicator: paint the sidebar chop chip and lumberjack roll-up,
+    the overview table''s PACE column and advisory line, the chop detail header segment,
+    the help guide legend, docs, and the PNG snapshots that pin all of it.'
 proposed_by: bbugyi200.athena.ye
 create_time: 2026-08-12 09:05:51
 status: wip
+bead_id: sase-jx
 ---
+
+- **BEAD:** [sase-jx](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jx/README.md)
 
 # Plan: Mark chops that outrun their lumberjack's interval in the AXE tab
 
