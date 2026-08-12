@@ -11,6 +11,12 @@ create_time: 2026-08-12 08:10:09
 status: done
 ---
 
+- **AGENTS:**
+  - bbugyi200.athena.yd
+- **COMMITS:**
+  - [865da85](https://github.com/sase-org/sase-core/commit/865da857f400027393364d35569c6543d6e0890c)
+    — feat: add CI-parity verification gate
+
 # Give sase-core a Runnable CI-Parity Gate
 
 ## Incident Summary (already healed — read before assuming CI is red)
