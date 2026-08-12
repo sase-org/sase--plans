@@ -18,10 +18,10 @@ status: done
 - **BEAD:**
   [sase-k2.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k2/sase-k2.5.md)
 - **AGENTS:**
-  - [bbugyi200.athena.sase-k2.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-k2.5.md)
+  - [bbugyi200.athena.sase-k2.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-k2.5/README.md)
 - **COMMITS:**
-  - [0567ce0](https://github.com/sase-org/sase/commit/0567ce03be8450a991ec296494dbb8d185804d96)
-    — feat(external-mirror): refresh adopted external Patches from PR state
+  - [fb3c869](https://github.com/sase-org/sase-core/commit/fb3c869810eb632415d170d126d866820957a4d5)
+    — feat(external-pr): classify refresh actions for adopted external Patches
 
 # Plan: Refresh adopted external Patches from pull-request state
 
