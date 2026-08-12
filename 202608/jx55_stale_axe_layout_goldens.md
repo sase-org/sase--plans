@@ -19,6 +19,11 @@ status: done
 - **PARENT:** [202608/finish_jx5_landing.md](finish_jx5_landing.md)
 - **BEAD:**
   [sase-jx.5.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jx/sase-jx.5.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-jx.5.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-jx.5.5.land.md)
+- **COMMITS:**
+  - [2ba70f0](https://github.com/sase-org/sase/commit/2ba70f07f2c33352a8454da1188b5365ba5c0dcd)
+    — test(axe): rebaseline compact layout goldens
 
 # Plan: Re-baseline the two stale AXE layout goldens and land epic sase-jx.5.5
 
