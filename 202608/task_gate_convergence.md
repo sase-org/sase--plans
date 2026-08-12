@@ -38,7 +38,7 @@ phases:
     have gates.'
 proposed_by: bbugyi200.athena.yk
 create_time: 2026-08-12 10:58:32
-status: wip
+status: done
 bead_id: sase-k0
 ---
 
