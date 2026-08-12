@@ -74,7 +74,7 @@ phases:
     it with one locked batch apply over an incrementally maintained index.'
 proposed_by: bbugyi200.athena.yn
 create_time: 2026-08-12 11:27:53
-status: wip
+status: done
 bead_id: sase-k2
 ---
 
