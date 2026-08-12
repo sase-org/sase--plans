@@ -1,51 +1,49 @@
 ---
 tier: epic
 title: Retire the code_quality audit chops and gate CI-fix launches
-goal: "The `code_quality` lumberjack and its `audit_bugs`/`audit_improvements` agents
+goal: 'The `code_quality` lumberjack and its `audit_bugs`/`audit_improvements` agents
   never run again, the `bugyi_chop_recent_*` scripts are gone from bugyi-chops, and
   `bugyi_chop_ci_watch` stops launching `ci_fix.*` agents through Axe: it files one
   durable LaunchApproval gate per distinct CI failure so the user approves or rejects
   each repair launch at their convenience, and never files a duplicate gate.
 
-  "
+  '
 phases:
-  - id: retire_audits
-    title: Remove the code_quality lumberjack and the recent-audit chops
-    depends_on: []
-    size: small
-    description:
-      "retire_audits: delete the `code_quality` lumberjack from the chezmoi-managed axe
-      config, apply and restart axe so its lumberjack process stops, then delete the
-      `recent_audits` module, its tests, its two console-script entry points, and its
-      README coverage from bugyi-chops."
-  - id: gate_ci_fix
-    title: Replace ci_watch fix proposals with LaunchApproval gates
-    depends_on:
-      - retire_audits
-    size: medium
-    description:
-      "gate_ci_fix: stop emitting `proposed_launches` from `bugyi_chop_ci_watch` and
-      instead create one durable LaunchApproval gate per mature red CI failure, with a
-      self-sufficient prompt, a version-2 fix ledger recording each gate's request id,
-      and layered suppression that makes a duplicate gate impossible; update the report,
-      tests, and README to match."
-  - id: rollout
-    title: Roll the new ci_watch out to the live host and verify
-    depends_on:
-      - gate_ci_fix
-    size: small
-    description:
-      "rollout: bump the package version, push bugyi-chops, drop the now-inert
-      `wait_runners: 0` from the `ci_watch` lane, reinstall the plugin from git, and
-      verify with a dry run plus a live tick that the gate path files exactly one gate
-      and no duplicates."
+- id: retire_audits
+  title: Remove the code_quality lumberjack and the recent-audit chops
+  depends_on: []
+  size: small
+  description: 'retire_audits: delete the `code_quality` lumberjack from the chezmoi-managed
+    axe config, apply and restart axe so its lumberjack process stops, then delete
+    the `recent_audits` module, its tests, its two console-script entry points, and
+    its README coverage from bugyi-chops.'
+- id: gate_ci_fix
+  title: Replace ci_watch fix proposals with LaunchApproval gates
+  depends_on:
+  - retire_audits
+  size: medium
+  description: 'gate_ci_fix: stop emitting `proposed_launches` from `bugyi_chop_ci_watch`
+    and instead create one durable LaunchApproval gate per mature red CI failure,
+    with a self-sufficient prompt, a version-2 fix ledger recording each gate''s request
+    id, and layered suppression that makes a duplicate gate impossible; update the
+    report, tests, and README to match.'
+- id: rollout
+  title: Roll the new ci_watch out to the live host and verify
+  depends_on:
+  - gate_ci_fix
+  size: small
+  description: 'rollout: bump the package version, push bugyi-chops, drop the now-inert
+    `wait_runners: 0` from the `ci_watch` lane, reinstall the plugin from git, and
+    verify with a dry run plus a live tick that the gate path files exactly one gate
+    and no duplicates.'
 proposed_by: bbugyi200.athena.yi
 create_time: 2026-08-12 10:38:38
 status: wip
+bead_id: sase-jz
 ---
 
-- **PROMPT:**
-  [prompts/202608/retire_audit_chops_and_gate_ci_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/retire_audit_chops_and_gate_ci_fixes.md)
+- **PROMPT:** [prompts/202608/retire_audit_chops_and_gate_ci_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/retire_audit_chops_and_gate_ci_fixes.md)
+- **BEAD:** [sase-jz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jz/README.md)
 
 # Plan: Retire the code_quality audit chops and gate CI-fix launches
 
