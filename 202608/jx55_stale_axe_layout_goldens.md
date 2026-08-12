@@ -10,12 +10,13 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-jx.5.5.land
 bead: sase-jx.5.5
-create_time: 2026-08-12 15:29:10
-status: wip
+create_time: 2026-08-12 15:29:15
+status: done
 ---
 
-- **PARENT:**
-  [202608/finish_jx5_landing.md](https://github.com/sase-org/sase--plans/blob/main/202608/finish_jx5_landing.md)
+- **PROMPT:**
+  [prompts/202608/jx55_stale_axe_layout_goldens.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/jx55_stale_axe_layout_goldens.md)
+- **PARENT:** [202608/finish_jx5_landing.md](finish_jx5_landing.md)
 - **BEAD:**
   [sase-jx.5.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-jx/sase-jx.5.5.md)
 
