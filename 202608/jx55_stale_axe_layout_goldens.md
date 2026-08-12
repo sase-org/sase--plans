@@ -22,8 +22,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-jx.5.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-jx.5.5.land.md)
 - **COMMITS:**
-  - [2ba70f0](https://github.com/sase-org/sase/commit/2ba70f07f2c33352a8454da1188b5365ba5c0dcd)
-    — test(axe): rebaseline compact layout goldens
+  - [2904d5e](https://github.com/sase-org/sase--plans/commit/2904d5eb2b9ec8a896fe922f695d84e7c550533e)
+    — chore(plans): mark AXE landing plans done
 
 # Plan: Re-baseline the two stale AXE layout goldens and land epic sase-jx.5.5
 
