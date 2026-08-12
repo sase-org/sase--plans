@@ -1,49 +1,49 @@
 ---
 tier: epic
 title: Converge task bead gates and settle them the moment a bead closes
-goal: "Live TaskTriage/BeadSnooze notifications match the set of live task beads even
-  after a project leaves the inventory or the chop's state file is lost, and closing a
-  task bead from the CLI clears its gate notification immediately instead of up to five
-  minutes later.
+goal: 'Live TaskTriage/BeadSnooze notifications match the set of live task beads even
+  after a project leaves the inventory or the chop''s state file is lost, and closing
+  a task bead from the CLI clears its gate notification immediately instead of up
+  to five minutes later.
 
-  "
+  '
 phases:
-  - id: gate_lookup
-    title: Shared pending bead-gate lookup
-    depends_on: []
-    size: small
-    description: "gate_lookup: add one scan-once resolver for pending task_triage and
-      bead_snooze bundles that reports each gate's kind, request id, project, bead id,
-      and producing chop, and move the existing per-bead triage scan onto it.
+- id: gate_lookup
+  title: Shared pending bead-gate lookup
+  depends_on: []
+  size: small
+  description: 'gate_lookup: add one scan-once resolver for pending task_triage and
+    bead_snooze bundles that reports each gate''s kind, request id, project, bead
+    id, and producing chop, and move the existing per-bead triage scan onto it.
 
-      "
-  - id: chop_sweep
-    title: Make the reconciler converge on gates it no longer tracks
-    depends_on:
-      - gate_lookup
-    size: medium
-    description: "chop_sweep: cancel pending gates stranded by a project that left the
-      enabled inventory and by a lost or corrupt state file, without cancelling gates
-      for a project that is merely unreadable this pass.
+    '
+- id: chop_sweep
+  title: Make the reconciler converge on gates it no longer tracks
+  depends_on:
+  - gate_lookup
+  size: medium
+  description: 'chop_sweep: cancel pending gates stranded by a project that left the
+    enabled inventory and by a lost or corrupt state file, without cancelling gates
+    for a project that is merely unreadable this pass.
 
-      "
-  - id: close_settle
-    title: Settle bead gates from sase bead close
-    depends_on:
-      - gate_lookup
-    size: medium
-    description:
-      "close_settle: have the close command cancel each closed task bead's pending gate
-      right after the store mutation commits, so the existing notifications inotify
-      watch refreshes ACE at once, and keep the added cost off closes that cannot have
-      gates."
+    '
+- id: close_settle
+  title: Settle bead gates from sase bead close
+  depends_on:
+  - gate_lookup
+  size: medium
+  description: 'close_settle: have the close command cancel each closed task bead''s
+    pending gate right after the store mutation commits, so the existing notifications
+    inotify watch refreshes ACE at once, and keep the added cost off closes that cannot
+    have gates.'
 proposed_by: bbugyi200.athena.yk
 create_time: 2026-08-12 10:58:32
 status: wip
+bead_id: sase-k0
 ---
 
-- **PROMPT:**
-  [prompts/202608/task_gate_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/task_gate_convergence.md)
+- **PROMPT:** [prompts/202608/task_gate_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/task_gate_convergence.md)
+- **BEAD:** [sase-k0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k0/README.md)
 
 # Plan: Converge task bead gates and settle them the moment a bead closes
 
