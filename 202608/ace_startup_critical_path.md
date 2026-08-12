@@ -1,81 +1,74 @@
 ---
 tier: epic
-title:
-  ACE startup — take badge classification, hidden-row repair, and a double ProjectSpec
+title: ACE startup — take badge classification, hidden-row repair, and a double ProjectSpec
   parse off first paint
-goal:
-  Warm `sase ace` time-to-interactive drops from roughly 3.5–4 s to under 2 s on athena,
-  the part of startup that grows with every dismissed agent stops growing, and a durable
-  startup telemetry record makes both claims checkable in a real terminal instead of
-  modelled from component measurements.
+goal: Warm `sase ace` time-to-interactive drops from roughly 3.5–4 s to under 2 s
+  on athena, the part of startup that grows with every dismissed agent stops growing,
+  and a durable startup telemetry record makes both claims checkable in a real terminal
+  instead of modelled from component measurements.
 phases:
-  - id: telemetry
-    title: Durable startup telemetry
-    depends_on: []
-    size: small
-    description:
-      "telemetry: record one JSONL row per ACE session carrying both a
-      visible-surface-ready and an all-surfaces-ready time plus the component budget,
-      make the loader-stage log threshold env-overridable so sub-2 s stages are
-      capturable, and document the before/after capture recipe."
-  - id: imports
-    title: Two module-level import defects
-    depends_on: []
-    size: xsmall
-    description:
-      "imports: move the `sase.axe.state` import in toast_log out of module scope, drop
-      the module-level `unittest.mock` import from the Patch loader in favor of a
-      sys.modules-guarded check, and add a subprocess import-graph guard test."
-  - id: badges
-    title: Deferred persisted diff-badge classification
-    depends_on:
-      - telemetry
-    size: medium
-    description:
-      "badges: stop classifying persisted diff badges inside the loader's
-      status-override pass and compute them for visible rows only in a coalesced
-      background pass modeled on the existing bead-warmup and live-hint mixins, with
-      carry-over across reloads so badges do not flicker on refresh."
-  - id: repair
-    title: Read-only freshness policy for ACE's Tier-1 index query
-    depends_on:
-      - telemetry
-    size: medium
-    description:
-      "repair: add a freshness knob to the artifact-index query wire in sase-core so
-      ACE's startup and auto-refresh queries skip hidden-row repair and per-row marker
-      revalidation, stop selecting record_json in refresh_stale_rows, and run one
-      coalesced revalidating reconcile after first paint on a long cadence."
-  - id: axe
-    title: AXE collect stops parsing every ProjectSpec twice
-    depends_on:
-      - telemetry
-    size: small
-    description:
-      "axe: route the two global runner counters through one shared cached Patch
-      snapshot instead of two uncached full-archive parses, and end the startup
-      stopwatch on the initially visible tab so a future hidden-tab feature cannot
-      silently regress every startup mode."
-  - id: land
-    title: Land the epic
-    depends_on:
-      - telemetry
-      - imports
-      - badges
-      - repair
-      - axe
-    size: small
-    description:
-      "land: re-measure the full budget in a real terminal against the phase `telemetry`
-      baseline, file the named follow-ups with /sase_new_task, and close the epic with
-      an honest reading of what each phase bought."
+- id: telemetry
+  title: Durable startup telemetry
+  depends_on: []
+  size: small
+  description: 'telemetry: record one JSONL row per ACE session carrying both a visible-surface-ready
+    and an all-surfaces-ready time plus the component budget, make the loader-stage
+    log threshold env-overridable so sub-2 s stages are capturable, and document the
+    before/after capture recipe.'
+- id: imports
+  title: Two module-level import defects
+  depends_on: []
+  size: xsmall
+  description: 'imports: move the `sase.axe.state` import in toast_log out of module
+    scope, drop the module-level `unittest.mock` import from the Patch loader in favor
+    of a sys.modules-guarded check, and add a subprocess import-graph guard test.'
+- id: badges
+  title: Deferred persisted diff-badge classification
+  depends_on:
+  - telemetry
+  size: medium
+  description: 'badges: stop classifying persisted diff badges inside the loader''s
+    status-override pass and compute them for visible rows only in a coalesced background
+    pass modeled on the existing bead-warmup and live-hint mixins, with carry-over
+    across reloads so badges do not flicker on refresh.'
+- id: repair
+  title: Read-only freshness policy for ACE's Tier-1 index query
+  depends_on:
+  - telemetry
+  size: medium
+  description: 'repair: add a freshness knob to the artifact-index query wire in sase-core
+    so ACE''s startup and auto-refresh queries skip hidden-row repair and per-row
+    marker revalidation, stop selecting record_json in refresh_stale_rows, and run
+    one coalesced revalidating reconcile after first paint on a long cadence.'
+- id: axe
+  title: AXE collect stops parsing every ProjectSpec twice
+  depends_on:
+  - telemetry
+  size: small
+  description: 'axe: route the two global runner counters through one shared cached
+    Patch snapshot instead of two uncached full-archive parses, and end the startup
+    stopwatch on the initially visible tab so a future hidden-tab feature cannot silently
+    regress every startup mode.'
+- id: land
+  title: Land the epic
+  depends_on:
+  - telemetry
+  - imports
+  - badges
+  - repair
+  - axe
+  size: small
+  description: 'land: re-measure the full budget in a real terminal against the phase
+    `telemetry` baseline, file the named follow-ups with /sase_new_task, and close
+    the epic with an honest reading of what each phase bought.'
 proposed_by: bbugyi200.athena.yo
 create_time: 2026-08-12 11:36:00
 status: wip
+bead_id: sase-k3
 ---
 
-- **PROMPT:**
-  [prompts/202608/ace_startup_critical_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ace_startup_critical_path.md)
+- **PROMPT:** [prompts/202608/ace_startup_critical_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ace_startup_critical_path.md)
+- **BEAD:** [sase-k3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k3/README.md)
 
 # Plan: ACE startup — stop paying for hidden rows, persisted diffs, and a double archive parse before first paint
 
