@@ -23,8 +23,8 @@ status: done
 - **AGENTS:**
   - bbugyi200.athena.sase-js.6
 - **COMMITS:**
-  - [37cd14a](https://github.com/sase-org/sase-core/commit/37cd14acffcbd52a6232dfcbffe4ff6bd1124f8c)
-    — feat: render prompt artifact links as references
+  - [9907b1d](https://github.com/sase-org/sase/commit/9907b1d1611bb397d21237367c95acd4b5578f00)
+    — feat(agents-sync): write referenced-by links for prompt artifacts
 
 # Plan: Reference links and `Referenced By` write-back
 
