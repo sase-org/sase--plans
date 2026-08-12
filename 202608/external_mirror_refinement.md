@@ -1,85 +1,85 @@
 ---
 tier: epic
-title: Configurable external mirror filters, its own lumberjack, and two-way bug/PR sync
-goal: "A user controls exactly which external bugs and pull requests become beads and
-  Patches, release-please and release-plz PRs are excluded by default, the mirror chops
-  run in their own generously paced lumberjack instead of overrunning the checks lane, a
-  bead linked to a bug tracks that bug's open/closed state, an adopted external Patch
-  tracks its PR's merge state, and the ProjectSpec corruption the mirror has been
-  silently accumulating is fixed and repaired.
+title: Configurable external mirror filters, its own lumberjack, and two-way bug/PR
+  sync
+goal: 'A user controls exactly which external bugs and pull requests become beads
+  and Patches, release-please and release-plz PRs are excluded by default, the mirror
+  chops run in their own generously paced lumberjack instead of overrunning the checks
+  lane, a bead linked to a bug tracks that bug''s open/closed state, an adopted external
+  Patch tracks its PR''s merge state, and the ProjectSpec corruption the mirror has
+  been silently accumulating is fixed and repaired.
 
-  "
+  '
 phases:
-  - id: spec_repair
-    title: ProjectSpec description truncation and duplicate-block repair
-    depends_on: []
-    size: large
-    description: "spec_repair: fix the two-blank-line record terminator that silently
-      drops any Patch whose DESCRIPTION contains a blank run, in both the Python and
-      Rust parsers plus the block writer, and add the raw-text de-duplication repair
-      that reclaims the archives the external PR mirror has already corrupted.
+- id: spec_repair
+  title: ProjectSpec description truncation and duplicate-block repair
+  depends_on: []
+  size: large
+  description: 'spec_repair: fix the two-blank-line record terminator that silently
+    drops any Patch whose DESCRIPTION contains a blank run, in both the Python and
+    Rust parsers plus the block writer, and add the raw-text de-duplication repair
+    that reclaims the archives the external PR mirror has already corrupted.
 
-      "
-  - id: filters
-    title: Configurable bug and pull-request filters
-    depends_on: []
-    size: large
-    description: 'filters: add external_mirror.issues.filters and
-      external_mirror.pull_requests.filters as glob criterion lists with "!"-prefixed
-      exclusions, default the PR head-ref criterion to drop release-please and
-      release-plz branches, and migrate exclude_labels and pr_authors onto the new
-      surface as deprecated aliases.
+    '
+- id: filters
+  title: Configurable bug and pull-request filters
+  depends_on: []
+  size: large
+  description: 'filters: add external_mirror.issues.filters and external_mirror.pull_requests.filters
+    as glob criterion lists with "!"-prefixed exclusions, default the PR head-ref
+    criterion to drop release-please and release-plz branches, and migrate exclude_labels
+    and pr_authors onto the new surface as deprecated aliases.
 
-      '
-  - id: lane
-    title: Dedicated external_mirror lumberjack and lane-independent state
-    depends_on: []
-    size: medium
-    description: "lane: move both mirror chops out of the 300-second checks lane into a
-      new external_mirror lumberjack with a 15-minute interval and 5-minute chop
-      timeout, and relocate the PR mirror's cursor and backoff state out of the lane
-      directory so no consumer hardcodes a lane name again.
+    '
+- id: lane
+  title: Dedicated external_mirror lumberjack and lane-independent state
+  depends_on: []
+  size: medium
+  description: 'lane: move both mirror chops out of the 300-second checks lane into
+    a new external_mirror lumberjack with a 15-minute interval and 5-minute chop timeout,
+    and relocate the PR mirror''s cursor and backoff state out of the lane directory
+    so no consumer hardcodes a lane name again.
 
-      "
-  - id: bug_status
-    title: Bug state drives mirrored bead status
-    depends_on:
-      - filters
-    size: large
-    description: "bug_status: reverse the epic's original note-only decision and close
-      or reopen a mirrored bead when its tracker issue closes or reopens, guarded so an
-      in-progress, claimed, or parented bead only gets the note it gets today.
+    '
+- id: bug_status
+  title: Bug state drives mirrored bead status
+  depends_on:
+  - filters
+  size: large
+  description: 'bug_status: reverse the epic''s original note-only decision and close
+    or reopen a mirrored bead when its tracker issue closes or reopens, guarded so
+    an in-progress, claimed, or parented bead only gets the note it gets today.
 
-      "
-  - id: patch_status
-    title: Adopted external Patches track their pull request
-    depends_on:
-      - spec_repair
-      - filters
-    size: large
-    description: "patch_status: add the refresh action the external PR classifier is
-      missing so an already-adopted Patch follows its PR from open to merged or closed
-      and moves from the active ProjectSpec into the archive, across the sase-core wire
-      and the Python importer.
+    '
+- id: patch_status
+  title: Adopted external Patches track their pull request
+  depends_on:
+  - spec_repair
+  - filters
+  size: large
+  description: 'patch_status: add the refresh action the external PR classifier is
+    missing so an already-adopted Patch follows its PR from open to merged or closed
+    and moves from the active ProjectSpec into the archive, across the sase-core wire
+    and the Python importer.
 
-      "
-  - id: perf
-    title: Bounded per-pass cost for the PR mirror
-    depends_on:
-      - spec_repair
-      - patch_status
-    size: medium
-    description:
-      "perf: stop re-reading and re-parsing the whole active-plus-archive ProjectSpec
-      index once per mutation in both the sync loop and the importer, replacing it with
-      one locked batch apply over an incrementally maintained index."
+    '
+- id: perf
+  title: Bounded per-pass cost for the PR mirror
+  depends_on:
+  - spec_repair
+  - patch_status
+  size: medium
+  description: 'perf: stop re-reading and re-parsing the whole active-plus-archive
+    ProjectSpec index once per mutation in both the sync loop and the importer, replacing
+    it with one locked batch apply over an incrementally maintained index.'
 proposed_by: bbugyi200.athena.yn
 create_time: 2026-08-12 11:27:53
 status: wip
+bead_id: sase-k2
 ---
 
-- **PROMPT:**
-  [prompts/202608/external_mirror_refinement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_mirror_refinement.md)
+- **PROMPT:** [prompts/202608/external_mirror_refinement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/external_mirror_refinement.md)
+- **BEAD:** [sase-k2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k2/README.md)
 
 # Plan: Refine the merged external bug and PR mirror
 
