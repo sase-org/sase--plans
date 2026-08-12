@@ -1,44 +1,44 @@
 ---
 tier: epic
 title: Finish and land task bead gate convergence
-goal: "Restore the two promised convergence regressions missing from epic sase-k0,
-  verify the combined implementation against intervening master changes, close the epic
-  with a complete audit record, clean post-close Symvision findings, and mark its
-  durable plan done.
+goal: 'Restore the two promised convergence regressions missing from epic sase-k0,
+  verify the combined implementation against intervening master changes, close the
+  epic with a complete audit record, clean post-close Symvision findings, and mark
+  its durable plan done.
 
-  "
+  '
 phases:
-  - id: convergence_regressions
-    title: Complete the promised convergence regression coverage
-    depends_on: []
-    size: small
-    description: "convergence_regressions: add the removed-then-re-enabled fresh-g1 and
-      cross-project-key exact-convergence regressions promised by the original plan,
-      fixing implementation defects if either regression exposes one, and rerun the
-      focused task-gate suites.
+- id: convergence_regressions
+  title: Complete the promised convergence regression coverage
+  depends_on: []
+  size: small
+  description: 'convergence_regressions: add the removed-then-re-enabled fresh-g1
+    and cross-project-key exact-convergence regressions promised by the original plan,
+    fixing implementation defects if either regression exposes one, and rerun the
+    focused task-gate suites.
 
-      "
-  - id: land_task_gate_convergence
-    title: Verify and close epic sase-k0
-    depends_on:
-      - convergence_regressions
-    size: medium
-    description: "land_task_gate_convergence: verify the combined tree and intervening
-      commits, close sase-k0 without force with the complete audit and follow-up
-      outcomes, run post-close Symvision cleanup, finish any task made obsolete by that
-      cleanup, run landing checks, and set status done in the original durable plan.
+    '
+- id: land_task_gate_convergence
+  title: Verify and close epic sase-k0
+  depends_on:
+  - convergence_regressions
+  size: medium
+  description: 'land_task_gate_convergence: verify the combined tree and intervening
+    commits, close sase-k0 without force with the complete audit and follow-up outcomes,
+    run post-close Symvision cleanup, finish any task made obsolete by that cleanup,
+    run landing checks, and set status done in the original durable plan.
 
-      "
+    '
 proposed_by: bbugyi200.athena.sase-k0.land
 parent_bead: sase-k0
 create_time: 2026-08-12 12:46:14
 status: wip
+bead_id: sase-k0.4
 ---
 
-- **PROMPT:**
-  [prompts/202608/finish_task_gate_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_task_gate_convergence.md)
-- **PARENT:**
-  [202608/task_gate_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202608/task_gate_convergence.md)
+- **PROMPT:** [prompts/202608/finish_task_gate_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finish_task_gate_convergence.md)
+- **PARENT:** [202608/task_gate_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202608/task_gate_convergence.md)
+- **BEAD:** [sase-k0.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-k0/sase-k0.4.md)
 
 # Plan: Finish and land task bead gate convergence
 
