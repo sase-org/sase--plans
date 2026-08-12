@@ -1,56 +1,56 @@
 ---
 tier: epic
 title: Add an agent_runners chop guard and idle-gate bugyi_chop_ci_watch
-goal: "A declarative `inhibit_if: {agent_runners: {max: N}}` chop guard exists end to
-  end, and `bugyi_chop_ci_watch` uses it so the chop only runs while no SASE agent holds
-  a runner slot.
+goal: 'A declarative `inhibit_if: {agent_runners: {max: N}}` chop guard exists end
+  to end, and `bugyi_chop_ci_watch` uses it so the chop only runs while no SASE agent
+  holds a runner slot.
 
-  "
+  '
 phases:
-  - id: core-guard
-    title: Rust agent_runners guard provider
-    depends_on: []
-    size: medium
-    description: "core-guard: add the `agent_runners` guard variant, the
-      `holds_runner_slot` agent snapshot field, the decision and validation logic, and
-      config-authority acceptance in `../sase-core`.
+- id: core-guard
+  title: Rust agent_runners guard provider
+  depends_on: []
+  size: medium
+  description: 'core-guard: add the `agent_runners` guard variant, the `holds_runner_slot`
+    agent snapshot field, the decision and validation logic, and config-authority
+    acceptance in `../sase-core`.
 
-      "
-  - id: host-guard
-    title: Host snapshot, schema, and docs for agent_runners
-    depends_on:
-      - core-guard
-    size: medium
-    description: "host-guard: teach the Python preflight host to build runner-slot agent
-      snapshots for the new provider, accept it in `sase.schema.json`, document it, and
-      cover it with tests including count parity.
+    '
+- id: host-guard
+  title: Host snapshot, schema, and docs for agent_runners
+  depends_on:
+  - core-guard
+  size: medium
+  description: 'host-guard: teach the Python preflight host to build runner-slot agent
+    snapshots for the new provider, accept it in `sase.schema.json`, document it,
+    and cover it with tests including count parity.
 
-      "
-  - id: guard-cadence
-    title: Guard skips stop consuming run_every cadence
-    depends_on: []
-    size: small
-    description: "guard-cadence: stop advancing a chop's `run_every` clock when the skip
-      came from an `inhibit_if` guard rather than from the configured trigger, so a
-      guarded chop retries on the next tick.
+    '
+- id: guard-cadence
+  title: Guard skips stop consuming run_every cadence
+  depends_on: []
+  size: small
+  description: 'guard-cadence: stop advancing a chop''s `run_every` clock when the
+    skip came from an `inhibit_if` guard rather than from the configured trigger,
+    so a guarded chop retries on the next tick.
 
-      "
-  - id: ci-watch-idle
-    title: Enable the idle guard on bugyi_chop_ci_watch
-    depends_on:
-      - host-guard
-    size: xsmall
-    description:
-      "ci-watch-idle: add `inhibit_if: {agent_runners: {max: 0}}` to the `ci_watch` chop
-      in the chezmoi-managed config, refresh its description body, and verify the live
-      runtime accepts and honors it."
+    '
+- id: ci-watch-idle
+  title: Enable the idle guard on bugyi_chop_ci_watch
+  depends_on:
+  - host-guard
+  size: xsmall
+  description: 'ci-watch-idle: add `inhibit_if: {agent_runners: {max: 0}}` to the
+    `ci_watch` chop in the chezmoi-managed config, refresh its description body, and
+    verify the live runtime accepts and honors it.'
 proposed_by: bbugyi200.athena.yx
 create_time: 2026-08-12 15:59:53
 status: wip
+bead_id: sase-ko
 ---
 
-- **PROMPT:**
-  [prompts/202608/chop_agent_runners_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/chop_agent_runners_guard.md)
+- **PROMPT:** [prompts/202608/chop_agent_runners_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/chop_agent_runners_guard.md)
+- **BEAD:** [sase-ko](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ko/README.md)
 
 # Plan: Add an `agent_runners` chop guard and idle-gate `bugyi_chop_ci_watch`
 
