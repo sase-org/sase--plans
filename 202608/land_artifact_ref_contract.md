@@ -10,10 +10,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-js.land
 bead: sase-js
-create_time: 2026-08-12 10:34:17
+create_time: 2026-08-12 10:34:23
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/land_artifact_ref_contract.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/land_artifact_ref_contract.md)
 - **PARENT:**
   [202608/artifact_ref_contract.md](https://github.com/sase-org/sase--plans/blob/main/202608/artifact_ref_contract.md)
 - **BEAD:**
