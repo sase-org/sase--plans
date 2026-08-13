@@ -1,95 +1,87 @@
 ---
 tier: epic
 title: Grok Build LLM provider
-goal: "SASE gains a first-class `grok` LLM provider driving xAI's Grok Build CLI,
-  supported everywhere the existing providers are — invocation, streaming text,
-  reasoning pane, Tools panel, usage/cost accounting, doctor, agent-cli inventory and
-  updates, model routing, skill deployment, TUI theming, and docs — with tool rows and
-  reasoning that render as richly as Claude's rather than degrading to opaque key lists.
+goal: 'SASE gains a first-class `grok` LLM provider driving xAI''s Grok Build CLI,
+  supported everywhere the existing providers are — invocation, streaming text, reasoning
+  pane, Tools panel, usage/cost accounting, doctor, agent-cli inventory and updates,
+  model routing, skill deployment, TUI theming, and docs — with tool rows and reasoning
+  that render as richly as Claude''s rather than degrading to opaque key lists.
 
-  "
+  '
 phases:
-  - id: wire
-    title: Provider-neutral Messages-wire stream layer
-    depends_on: []
-    size: medium
-    description:
-      "wire: generalize the Claude stream-json parser into a provider-parameterized
-      Anthropic-Messages reader — runtime tagging, `errors[]` diagnostics, a
-      thinking-block sink, and a pluggable tool-call writer seam — leaving Claude
-      behavior byte-identical."
-  - id: tools
-    title: Grok tool-call normalizer
-    depends_on:
-      - wire
-    size: medium
-    description:
-      "tools: add `_tool_call_grok.py` mapping Grok's snake_case tool names and
-      JSON-string tool_result envelopes onto SASE's canonical display names and
-      structured summaries so ACE Tools rows show real commands and paths."
-  - id: provider
-    title: The grok provider module
-    depends_on:
-      - tools
-    size: medium
-    description:
-      "provider: add `src/sase/llm_provider/grok.py` and its `sase_llm` entry point —
-      hooks, tier/model mapping, the verified four-level effort table, the invocation
-      vector, the interrupt/continue loop, and unit tests over recorded fixtures."
-  - id: identity
-    title: Doctor, inventory, and binary-collision safety
-    depends_on:
-      - provider
-    size: small
-    description:
-      "identity: wire Grok into `sase doctor` and `sase agent-cli`
-      install/update/version surfaces, and make the contested `grok` executable name
-      fail loudly and actionably instead of silently launching an unrelated binary."
-  - id: palette
-    title: Badge, palette, and model-surface polish
-    depends_on:
-      - provider
-    size: small
-    description:
-      "palette: give Grok its emoji badge, TUI color palette, `default_config.yml`
-      provider-list entry, and correct rendering in model pickers and provider-labeled
-      rows."
-  - id: skills
-    title: Skill deployment and instruction files
-    depends_on:
-      - provider
-    size: small
-    description:
-      "skills: verify SASE skills deploy to and load from `~/.grok/skills/`, confirm the
-      native-over-compat precedence and the no-shim AGENTS.md path, and record the
-      CLAUDE.md double-load as a follow-up."
-  - id: docs
-    title: Documentation sweep
-    depends_on:
-      - identity
-      - palette
-      - skills
-    size: medium
-    description:
-      "docs: document Grok Build across the provider, configuration, install, and LLM
-      reference docs, including the auto-approve/no-sandbox posture, the effort ceiling,
-      and the best-effort usage caveat."
-  - id: smoke
-    title: Authenticated end-to-end smoke exercises
-    depends_on:
-      - docs
-    size: xsmall
-    description:
-      "smoke: launch real SASE agents on the grok provider to confirm text, reasoning,
-      tool rows, usage, skills, interrupt/relaunch, and failure diagnostics behave in
-      ACE."
+- id: wire
+  title: Provider-neutral Messages-wire stream layer
+  depends_on: []
+  size: medium
+  description: 'wire: generalize the Claude stream-json parser into a provider-parameterized
+    Anthropic-Messages reader — runtime tagging, `errors[]` diagnostics, a thinking-block
+    sink, and a pluggable tool-call writer seam — leaving Claude behavior byte-identical.'
+- id: tools
+  title: Grok tool-call normalizer
+  depends_on:
+  - wire
+  size: medium
+  description: 'tools: add `_tool_call_grok.py` mapping Grok''s snake_case tool names
+    and JSON-string tool_result envelopes onto SASE''s canonical display names and
+    structured summaries so ACE Tools rows show real commands and paths.'
+- id: provider
+  title: The grok provider module
+  depends_on:
+  - tools
+  size: medium
+  description: 'provider: add `src/sase/llm_provider/grok.py` and its `sase_llm` entry
+    point — hooks, tier/model mapping, the verified four-level effort table, the invocation
+    vector, the interrupt/continue loop, and unit tests over recorded fixtures.'
+- id: identity
+  title: Doctor, inventory, and binary-collision safety
+  depends_on:
+  - provider
+  size: small
+  description: 'identity: wire Grok into `sase doctor` and `sase agent-cli` install/update/version
+    surfaces, and make the contested `grok` executable name fail loudly and actionably
+    instead of silently launching an unrelated binary.'
+- id: palette
+  title: Badge, palette, and model-surface polish
+  depends_on:
+  - provider
+  size: small
+  description: 'palette: give Grok its emoji badge, TUI color palette, `default_config.yml`
+    provider-list entry, and correct rendering in model pickers and provider-labeled
+    rows.'
+- id: skills
+  title: Skill deployment and instruction files
+  depends_on:
+  - provider
+  size: small
+  description: 'skills: verify SASE skills deploy to and load from `~/.grok/skills/`,
+    confirm the native-over-compat precedence and the no-shim AGENTS.md path, and
+    record the CLAUDE.md double-load as a follow-up.'
+- id: docs
+  title: Documentation sweep
+  depends_on:
+  - identity
+  - palette
+  - skills
+  size: medium
+  description: 'docs: document Grok Build across the provider, configuration, install,
+    and LLM reference docs, including the auto-approve/no-sandbox posture, the effort
+    ceiling, and the best-effort usage caveat.'
+- id: smoke
+  title: Authenticated end-to-end smoke exercises
+  depends_on:
+  - docs
+  size: xsmall
+  description: 'smoke: launch real SASE agents on the grok provider to confirm text,
+    reasoning, tool rows, usage, skills, interrupt/relaunch, and failure diagnostics
+    behave in ACE.'
 proposed_by: bbugyi200.athena.zu
 create_time: 2026-08-13 14:40:32
 status: wip
+bead_id: sase-l3
 ---
 
-- **PROMPT:**
-  [prompts/202608/grok_provider.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/grok_provider.md)
+- **PROMPT:** [prompts/202608/grok_provider.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/grok_provider.md)
+- **BEAD:** [sase-l3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-l3/README.md)
 
 # Plan: Grok Build LLM provider
 
