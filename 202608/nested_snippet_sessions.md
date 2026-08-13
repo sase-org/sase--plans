@@ -77,7 +77,7 @@ phases:
     floor once the core release lands.'
 proposed_by: bbugyi200.athena.zm
 create_time: 2026-08-13 12:25:46
-status: wip
+status: done
 bead_id: sase-kz
 ---
 
@@ -271,9 +271,18 @@ offset:
 `PromptTextArea.edit()` override: compute the edit's absolute start/end against the
 _pre-edit_ document, call `super().edit(edit)`, then feed `(start, end, len(edit.text))`
 to the session. `Edit.from_location` / `to_location` are not guaranteed ordered — sort
-them. Guard re-entrancy with a flag around the expansion's own `_replace_via_keyboard`
-call, because the expansion installs its stops from post-edit offsets and must not then
-be told about its own delta.
+them.
+
+> **Deviation (recorded by `widget_engine`, kept as shipped).** This section originally
+> called for a re-entrancy flag around the expansion's own `_replace_via_keyboard` call,
+> on the theory that the expansion installs its stops from post-edit offsets and must
+> not then be told about its own delta. That is wrong, and the guard was empirically
+> shown to break the very bug it was meant to protect: nesting at a live outer tabstop
+> and then advancing landed mid-word instead of before the next literal text. The
+> expansion's substitution of a short trigger word for a longer template is an ordinary
+> delta, and the _enclosing_ session's stops after the trigger have to shift by it like
+> any other edit. The shipped `edit()` override therefore has no guard and feeds every
+> edit, including the expansion's own, to the active session.
 
 Replace the two scalars with one session object plus a `snippet_session_active`
 predicate, and update every site that currently reads the queue's truthiness as "a
