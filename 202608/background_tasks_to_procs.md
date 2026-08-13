@@ -1,105 +1,94 @@
 ---
 tier: epic
 title: Rename SASE Background Tasks to Procs
-goal:
-  SASE's durable background-execution feature is named **Proc** end to end — Rust wire
-  types and bindings, the `sase.procs` Python package, the `sase proc` CLI (with `task`
-  kept as a legacy alias), the ACE Procs tab and proc indicator, the
-  `procs.history_limit` config key, the `~/.sase/procs/procs.jsonl` store, docs, memory,
-  skills, and the project glossary — while task beads, asyncio/Textual worker tasks, and
-  the Muse `task.lifecycle.*` provider protocol keep the word "task" untouched.
+goal: SASE's durable background-execution feature is named **Proc** end to end — Rust
+  wire types and bindings, the `sase.procs` Python package, the `sase proc` CLI (with
+  `task` kept as a legacy alias), the ACE Procs tab and proc indicator, the `procs.history_limit`
+  config key, the `~/.sase/procs/procs.jsonl` store, docs, memory, skills, and the
+  project glossary — while task beads, asyncio/Textual worker tasks, and the Muse
+  `task.lifecycle.*` provider protocol keep the word "task" untouched.
 phases:
-  - id: core
-    title: Rename the Rust background-task core to procs
-    depends_on: []
-    size: medium
-    description:
-      "core: rename `crates/sase_core/src/tasks/` to `procs/` in ../sase-core, rename
-      the wire structs and the `task_id` field to `Proc*`/`proc_id`, bump the wire
-      schema to 2 while still deserializing legacy `task_id` records, and expose
-      canonical `read_procs_snapshot`/`append_proc`/`update_proc`/`prune_procs` PyO3
-      bindings alongside the existing legacy binding names."
-  - id: store
-    title: Move the Python package to sase.procs and migrate on-disk state and config
-    depends_on:
-      - core
-    size: medium
-    description:
-      "store: `git mv src/sase/tasks src/sase/procs`, rename `BackgroundTask` to `Proc`
-      and `task_id` to `proc_id` throughout, move the store to
-      `~/.sase/procs/procs.jsonl` with a marker-guarded one-shot migration, rename the
-      `tasks.history_limit` config key to `procs.history_limit` with the legacy key
-      still honored, and update `tools/validate_sase_core_rs` plus the monitor
-      cross-references."
-  - id: cli
-    title: Rename the sase task CLI command tree to sase proc
-    depends_on:
-      - store
-    size: medium
-    description:
-      "cli: rename `sase task` to `sase proc` with `task` registered as a legacy alias
-      and facade shim modules, rename the parser/handler/render modules and the `--json`
-      envelope key, and update the CLI help text, tests, and `docs/cli.md`."
-  - id: tui-runtime
-    title: Rename the TUI tracked-task runtime to procs
-    depends_on:
-      - store
-    size: medium
-    description:
-      "tui-runtime: rename `task_queue.py`, `task_mirror.py`, `task_subprocess.py`,
-      `task_actions.py`, `widgets/task_indicator.py`, and the `_*_tasks.py` action
-      mixins to their proc spellings, rename `TaskQueue`/`TaskMirror`/`TaskReporter`/
-      `TrackedTask*`/`_submit_tracked_task` and every call site, without changing
-      displayed text."
-  - id: tui-pane
-    title: Rename the ACE Tasks pane and Admin Center tab identifier to procs
-    depends_on:
-      - store
-    size: medium
-    description:
-      "tui-pane: rename the `tasks_pane*` and `tasks_store_rows` modules and `TasksPane`
-      to their proc spellings, move the Admin Center tab identifier from `tasks` to
-      `procs` with persisted-state migration, and rename the `#tasks-*` DOM ids and
-      their `styles.tcss` selectors, without changing displayed text."
-  - id: labels
-    title: Flip user-visible Task text to Proc and refresh snapshots
-    depends_on:
-      - cli
-      - tui-runtime
-      - tui-pane
-    size: medium
-    description:
-      "labels: change every displayed string that names this feature — Admin Center tab
-      label, pane title and hints, command palette entries, quit-confirm copy, status
-      messages, CLI help — from Task to Proc, then regenerate the affected text and PNG
-      snapshot goldens."
-  - id: docs
-    title: Rewrite documentation, memory, skills, and the glossary
-    depends_on:
-      - labels
-    size: medium
-    description:
-      "docs: rewrite the background-task sections of docs/ace.md, cli.md,
-      configuration.md, integrations.md, beads.md, sdd.md, notifications.md, plugins.md,
-      monitors.md, and INSTALL.md, update `sase/memory/tui_perf.md` and the
-      `sase_monitor` skill, add a `Proc` glossary entry to `sase/sase.yml`, and run
-      `sase memory init`."
-  - id: land
-    title: Verify the migration and land the epic
-    depends_on:
-      - docs
-    size: small
-    description:
-      "land: run the exhaustive verification lane over the combined tree, sweep for
-      residual background-task spellings, confirm no emitter writes `task_id` or
-      `~/.sase/tasks` again, and land the epic."
+- id: core
+  title: Rename the Rust background-task core to procs
+  depends_on: []
+  size: medium
+  description: 'core: rename `crates/sase_core/src/tasks/` to `procs/` in ../sase-core,
+    rename the wire structs and the `task_id` field to `Proc*`/`proc_id`, bump the
+    wire schema to 2 while still deserializing legacy `task_id` records, and expose
+    canonical `read_procs_snapshot`/`append_proc`/`update_proc`/`prune_procs` PyO3
+    bindings alongside the existing legacy binding names.'
+- id: store
+  title: Move the Python package to sase.procs and migrate on-disk state and config
+  depends_on:
+  - core
+  size: medium
+  description: 'store: `git mv src/sase/tasks src/sase/procs`, rename `BackgroundTask`
+    to `Proc` and `task_id` to `proc_id` throughout, move the store to `~/.sase/procs/procs.jsonl`
+    with a marker-guarded one-shot migration, rename the `tasks.history_limit` config
+    key to `procs.history_limit` with the legacy key still honored, and update `tools/validate_sase_core_rs`
+    plus the monitor cross-references.'
+- id: cli
+  title: Rename the sase task CLI command tree to sase proc
+  depends_on:
+  - store
+  size: medium
+  description: 'cli: rename `sase task` to `sase proc` with `task` registered as a
+    legacy alias and facade shim modules, rename the parser/handler/render modules
+    and the `--json` envelope key, and update the CLI help text, tests, and `docs/cli.md`.'
+- id: tui-runtime
+  title: Rename the TUI tracked-task runtime to procs
+  depends_on:
+  - store
+  size: medium
+  description: 'tui-runtime: rename `task_queue.py`, `task_mirror.py`, `task_subprocess.py`,
+    `task_actions.py`, `widgets/task_indicator.py`, and the `_*_tasks.py` action mixins
+    to their proc spellings, rename `TaskQueue`/`TaskMirror`/`TaskReporter`/ `TrackedTask*`/`_submit_tracked_task`
+    and every call site, without changing displayed text.'
+- id: tui-pane
+  title: Rename the ACE Tasks pane and Admin Center tab identifier to procs
+  depends_on:
+  - store
+  size: medium
+  description: 'tui-pane: rename the `tasks_pane*` and `tasks_store_rows` modules
+    and `TasksPane` to their proc spellings, move the Admin Center tab identifier
+    from `tasks` to `procs` with persisted-state migration, and rename the `#tasks-*`
+    DOM ids and their `styles.tcss` selectors, without changing displayed text.'
+- id: labels
+  title: Flip user-visible Task text to Proc and refresh snapshots
+  depends_on:
+  - cli
+  - tui-runtime
+  - tui-pane
+  size: medium
+  description: 'labels: change every displayed string that names this feature — Admin
+    Center tab label, pane title and hints, command palette entries, quit-confirm
+    copy, status messages, CLI help — from Task to Proc, then regenerate the affected
+    text and PNG snapshot goldens.'
+- id: docs
+  title: Rewrite documentation, memory, skills, and the glossary
+  depends_on:
+  - labels
+  size: medium
+  description: 'docs: rewrite the background-task sections of docs/ace.md, cli.md,
+    configuration.md, integrations.md, beads.md, sdd.md, notifications.md, plugins.md,
+    monitors.md, and INSTALL.md, update `sase/memory/tui_perf.md` and the `sase_monitor`
+    skill, add a `Proc` glossary entry to `sase/sase.yml`, and run `sase memory init`.'
+- id: land
+  title: Verify the migration and land the epic
+  depends_on:
+  - docs
+  size: small
+  description: 'land: run the exhaustive verification lane over the combined tree,
+    sweep for residual background-task spellings, confirm no emitter writes `task_id`
+    or `~/.sase/tasks` again, and land the epic.'
 proposed_by: bbugyi200.athena.000
 create_time: 2026-08-13 17:18:17
 status: wip
+bead_id: sase-lh
 ---
 
-- **PROMPT:**
-  [prompts/202608/background_tasks_to_procs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/background_tasks_to_procs.md)
+- **PROMPT:** [prompts/202608/background_tasks_to_procs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/background_tasks_to_procs.md)
+- **BEAD:** [sase-lh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lh/README.md)
 
 # Plan: Rename SASE Background Tasks to Procs
 
