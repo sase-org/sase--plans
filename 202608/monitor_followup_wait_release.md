@@ -89,3 +89,15 @@ the lane even after `--1` succeeds.
 - The focused tests and `just check` pass.
 - The durable `sase-l1.land` waiter is reconciled through normal `wait_checks` behavior
   and is no longer stuck on `sase-l1.6`.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Agent                        | Project | Reference                                    | Published  | Uses |
+| ---------------------------- | ------- | -------------------------------------------- | ---------- | ---: |
+| [bbugyi200.athena.002--1][1] | sase    | plan:202608/monitor_followup_wait_release.md | 2026-08-13 |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.002.md
+
+<!-- sase:referenced-by:end -->
