@@ -1,48 +1,46 @@
 ---
 tier: epic
 title: Complete the sase-research-artifacts repository rename
-goal: "The renamed research-artifacts plugin has one coherent repository, distribution,
+goal: 'The renamed research-artifacts plugin has one coherent repository, distribution,
   module, release, catalog, and linked-repository identity; SASE still exposes the
   existing research artifact-reference, hook, and xprompt contracts; obsolete warnings
-  that distinguish the plugin from the sase--research content sidecar are gone; and the
-  renamed plugin is installable and verified under its new name.
+  that distinguish the plugin from the sase--research content sidecar are gone; and
+  the renamed plugin is installable and verified under its new name.
 
-  "
+  '
 phases:
-  - id: plugin-identity
-    title: Rename the plugin's package and repository-facing identity
-    depends_on: []
-    size: medium
-    description:
-      "plugin-identity: migrate the renamed repository's distribution, import package,
-      entry-point targets, release metadata, automation, tests, documentation, and
-      GitHub description while preserving its research-facing feature IDs."
-  - id: host-wiring
-    title: Rewire SASE to the renamed linked repository and plugin
-    depends_on:
-      - plugin-identity
-    size: small
-    description:
-      "host-wiring: update SASE's linked-repository configuration, provider provenance
-      fixtures, artifact-reference documentation, and generated memory outputs to use
-      the new identity without the obsolete sidecar-name warning."
-  - id: integration-cutover
-    title: Verify the catalog cutover and restore the plugin
-    depends_on:
-      - plugin-identity
-      - host-wiring
-    size: small
-    description:
-      "integration-cutover: refresh the live catalog, exercise linked-repository and
-      install resolution, install the renamed plugin from Git, and prove the old
-      distribution identity is absent while the existing research contracts work."
+- id: plugin-identity
+  title: Rename the plugin's package and repository-facing identity
+  depends_on: []
+  size: medium
+  description: 'plugin-identity: migrate the renamed repository''s distribution, import
+    package, entry-point targets, release metadata, automation, tests, documentation,
+    and GitHub description while preserving its research-facing feature IDs.'
+- id: host-wiring
+  title: Rewire SASE to the renamed linked repository and plugin
+  depends_on:
+  - plugin-identity
+  size: small
+  description: 'host-wiring: update SASE''s linked-repository configuration, provider
+    provenance fixtures, artifact-reference documentation, and generated memory outputs
+    to use the new identity without the obsolete sidecar-name warning.'
+- id: integration-cutover
+  title: Verify the catalog cutover and restore the plugin
+  depends_on:
+  - plugin-identity
+  - host-wiring
+  size: small
+  description: 'integration-cutover: refresh the live catalog, exercise linked-repository
+    and install resolution, install the renamed plugin from Git, and prove the old
+    distribution identity is absent while the existing research contracts work.'
 proposed_by: bbugyi200.athena.zt
 create_time: 2026-08-13 14:11:56
 status: wip
+bead_id: sase-l2
 ---
 
-- **PROMPT:**
-  [prompts/202608/research_artifacts_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/research_artifacts_rename.md)
+- **PROMPT:** [prompts/202608/research_artifacts_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/research_artifacts_rename.md)
+- **BEAD:** [sase-l2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-l2/README.md)
 
 # Plan: Complete the `sase-research-artifacts` repository rename
 
