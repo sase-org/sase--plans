@@ -1,70 +1,70 @@
 ---
 tier: epic
 title: Icons for every Artifacts sub-tab, required per sidecar ref config
-goal: "Every Artifacts sub-tab renders a colored icon beside its name. The four fixed
+goal: 'Every Artifacts sub-tab renders a colored icon beside its name. The four fixed
   panes carry built-in marks, and every document-provider pane carries a mark declared
   as a required `ref.icon` field in its sidecar ref provider spec, so a sidecar repo
   chooses its own tab icon and the strip stays readable at any terminal width.
 
-  "
+  '
 phases:
-  - id: wire
-    title: Required `ref.icon` in the artifact ref provider spec wire
-    depends_on: []
-    size: small
-    description: "wire: add a required `icon` string to the Rust
-      `ArtifactRefProviderRefSpecWire`, validate it as a bounded one-or-two-cell glyph,
-      and cover accept/reject and digest cases in the Rust unit tests.
+- id: wire
+  title: Required `ref.icon` in the artifact ref provider spec wire
+  depends_on: []
+  size: small
+  description: 'wire: add a required `icon` string to the Rust `ArtifactRefProviderRefSpecWire`,
+    validate it as a bounded one-or-two-cell glyph, and cover accept/reject and digest
+    cases in the Rust unit tests.
 
-      "
-  - id: strip
-    title: Icons, cell-accurate click ranges, and reflow-to-fit in PanelTabStrip
-    depends_on: []
-    size: medium
-    description: "strip: give `PanelTab` an icon, render it between the number and the
-      label, measure click ranges in terminal cells instead of characters, and add an
-      opt-in reflow ladder that keeps every tab visible and clickable when the strip
-      cannot fit its full render.
+    '
+- id: strip
+  title: Icons, cell-accurate click ranges, and reflow-to-fit in PanelTabStrip
+  depends_on: []
+  size: medium
+  description: 'strip: give `PanelTab` an icon, render it between the number and the
+    label, measure click ranges in terminal cells instead of characters, and add an
+    opt-in reflow ladder that keeps every tab visible and clickable when the strip
+    cannot fit its full render.
 
-      "
-  - id: tabs
-    title: Icons on Artifacts tab descriptors and in sidecar ref config
-    depends_on:
-      - wire
-    size: medium
-    description: "tabs: add a built-in icon table for the four fixed panes, resolve each
-      provider pane's icon from its ref spec, accept `ref.icon` as a sidecar config
-      override, give the built-in plan provider its mark, and keep an outdated provider
-      plugin working behind a warning diagnostic.
+    '
+- id: tabs
+  title: Icons on Artifacts tab descriptors and in sidecar ref config
+  depends_on:
+  - wire
+  size: medium
+  description: 'tabs: add a built-in icon table for the four fixed panes, resolve
+    each provider pane''s icon from its ref spec, accept `ref.icon` as a sidecar config
+    override, give the built-in plan provider its mark, and keep an outdated provider
+    plugin working behind a warning diagnostic.
 
-      "
-  - id: research
-    title: Research sidecar ref provider icon
-    depends_on:
-      - wire
-    size: xsmall
-    description: "research: declare the research ref provider's icon in the
-      sase-research plugin so the Research pane matches the research tribe mark already
-      configured there.
+    '
+- id: research
+  title: Research sidecar ref provider icon
+  depends_on:
+  - wire
+  size: xsmall
+  description: 'research: declare the research ref provider''s icon in the sase-research
+    plugin so the Research pane matches the research tribe mark already configured
+    there.
 
-      "
-  - id: render
-    title: Render icons in the Artifacts strip, then document and re-golden
-    depends_on:
-      - strip
-      - tabs
-    size: medium
-    description:
-      "render: pass descriptor icons and the reflow opt-in into the Artifacts tab strip,
-      update the ACE and configuration docs, extend the mechanical glyph audit to the
-      new marks, and regenerate every affected PNG golden."
+    '
+- id: render
+  title: Render icons in the Artifacts strip, then document and re-golden
+  depends_on:
+  - strip
+  - tabs
+  size: medium
+  description: 'render: pass descriptor icons and the reflow opt-in into the Artifacts
+    tab strip, update the ACE and configuration docs, extend the mechanical glyph
+    audit to the new marks, and regenerate every affected PNG golden.'
 proposed_by: bbugyi200.athena.z6.f2
 create_time: 2026-08-13 09:16:19
 status: wip
+bead_id: sase-kv
 ---
 
-- **PROMPT:**
-  [prompts/202608/artifacts_tab_icons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifacts_tab_icons.md)
+- **PROMPT:** [prompts/202608/artifacts_tab_icons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifacts_tab_icons.md)
+- **BEAD:** [sase-kv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-kv/README.md)
 
 # Icons For Every Artifacts Sub-Tab, Required Per Sidecar Ref Config
 
