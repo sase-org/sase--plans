@@ -1,80 +1,75 @@
 ---
 tier: epic
-title:
-  SASE CONTEXT — stop re-parsing three whole stores per agent and stream the section
-  lane by lane
-goal: "The SASE CONTEXT section in the Agents metadata panel shows commit context on the
-  first paint and every remaining lane within a few tens of milliseconds instead of
-  after one all-or-nothing enrichment pass, the per-agent cost stops scaling with the
-  size of the artifact-file index and the memory/skill audit logs, and none of it moves
-  work onto the Textual event loop.
+title: SASE CONTEXT — stop re-parsing three whole stores per agent and stream the
+  section lane by lane
+goal: 'The SASE CONTEXT section in the Agents metadata panel shows commit context
+  on the first paint and every remaining lane within a few tens of milliseconds instead
+  of after one all-or-nothing enrichment pass, the per-agent cost stops scaling with
+  the size of the artifact-file index and the memory/skill audit logs, and none of
+  it moves work onto the Textual event loop.
 
-  "
+  '
 phases:
-  - id: trace
-    title: Per-lane enrichment telemetry
-    depends_on: []
-    size: small
-    description:
-      "trace: add a per-lane trace span and a repeatable measurement script for
-      detail-header enrichment, record the baseline in a real terminal, and document the
-      capture recipe so every later phase has a real before/after."
-  - id: stores
-    title: One parse per store change, not per agent
-    depends_on:
-      - trace
-    size: medium
-    description:
-      "stores: give the artifact-file index, the memory-read log, and the skill-use log
-      process-wide revalidating snapshot caches so N agents share one parse instead of
-      paying a full re-read each, and invalidate them from the write paths."
-  - id: lanes
-    title: Per-lane resolution, caching, and freshness
-    depends_on:
-      - trace
-    size: medium
-    description:
-      "lanes: split the monolithic detail-header summary into independently resolved and
-      independently cached lanes with per-lane freshness policies, replacing the blanket
-      1 s whole-summary TTL, with no user-visible change yet."
-  - id: stream
-    title: Publish and render lanes as they resolve
-    depends_on:
-      - lanes
-    size: medium
-    description:
-      "stream: resolve lanes cheapest-first and merge/publish each one as it lands so
-      the section renders partially, with stable lane order, a pending affordance, and
-      coalesced repaints that do not disturb hint mode or scroll position."
-  - id: immediate
-    title: Zero-I/O context on the first paint
-    depends_on:
-      - stream
-    size: small
-    description:
-      "immediate: render the in-memory commit rows and any already-cached lanes on the
-      cheap header path so SASE CONTEXT is present in the first paint after selection
-      instead of after the debounce plus a worker round trip."
-  - id: land
-    title: Land the epic
-    depends_on:
-      - trace
-      - stores
-      - lanes
-      - stream
-      - immediate
-    size: small
-    description:
-      "land: re-measure the full budget against the trace phase baseline in a real
-      terminal, file the named follow-ups with /sase_new_task, and close the epic with
-      an honest reading of what each phase bought."
+- id: trace
+  title: Per-lane enrichment telemetry
+  depends_on: []
+  size: small
+  description: 'trace: add a per-lane trace span and a repeatable measurement script
+    for detail-header enrichment, record the baseline in a real terminal, and document
+    the capture recipe so every later phase has a real before/after.'
+- id: stores
+  title: One parse per store change, not per agent
+  depends_on:
+  - trace
+  size: medium
+  description: 'stores: give the artifact-file index, the memory-read log, and the
+    skill-use log process-wide revalidating snapshot caches so N agents share one
+    parse instead of paying a full re-read each, and invalidate them from the write
+    paths.'
+- id: lanes
+  title: Per-lane resolution, caching, and freshness
+  depends_on:
+  - trace
+  size: medium
+  description: 'lanes: split the monolithic detail-header summary into independently
+    resolved and independently cached lanes with per-lane freshness policies, replacing
+    the blanket 1 s whole-summary TTL, with no user-visible change yet.'
+- id: stream
+  title: Publish and render lanes as they resolve
+  depends_on:
+  - lanes
+  size: medium
+  description: 'stream: resolve lanes cheapest-first and merge/publish each one as
+    it lands so the section renders partially, with stable lane order, a pending affordance,
+    and coalesced repaints that do not disturb hint mode or scroll position.'
+- id: immediate
+  title: Zero-I/O context on the first paint
+  depends_on:
+  - stream
+  size: small
+  description: 'immediate: render the in-memory commit rows and any already-cached
+    lanes on the cheap header path so SASE CONTEXT is present in the first paint after
+    selection instead of after the debounce plus a worker round trip.'
+- id: land
+  title: Land the epic
+  depends_on:
+  - trace
+  - stores
+  - lanes
+  - stream
+  - immediate
+  size: small
+  description: 'land: re-measure the full budget against the trace phase baseline
+    in a real terminal, file the named follow-ups with /sase_new_task, and close the
+    epic with an honest reading of what each phase bought.'
 proposed_by: bbugyi200.athena.zw
 create_time: 2026-08-13 15:23:27
 status: wip
+bead_id: sase-l6
 ---
 
-- **PROMPT:**
-  [prompts/202608/sase_context_incremental.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_context_incremental.md)
+- **PROMPT:** [prompts/202608/sase_context_incremental.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/sase_context_incremental.md)
+- **BEAD:** [sase-l6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-l6/README.md)
 
 # Plan: SASE CONTEXT — stop re-parsing three whole stores per agent and stream the section lane by lane
 
