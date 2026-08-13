@@ -41,7 +41,7 @@ compatibility API.
 Epic `sase-hn.8.6` has been reopened and carries a `DISCOVERED ISSUE:` note for this
 integration defect. It is caused by work in the terminology epic, so it remains epic
 work rather than becoming a standalone follow-up task. The original epic plan is
-`plans:202608/patch_audit_gate_repair.md`; reflect the reopened state while work is in
+`@plan:202608/patch_audit_gate_repair.md`; reflect the reopened state while work is in
 progress and restore `status: done` only in the final landing phase.
 
 ## Phase 1: annotate the intentional compatibility boundary
@@ -81,6 +81,6 @@ progress and restore `status: done` only in the final landing phase.
    workflow, remove only the reported stale entries/unused code, reverify, and append
    the result to the bead. Do not force the close merely to bypass lifecycle validation.
 3. Finally, set `status: done` in the frontmatter of
-   `plans:202608/patch_audit_gate_repair.md` and run committed-plan validation. Leave
+   `@plan:202608/patch_audit_gate_repair.md` and run committed-plan validation. Leave
    the primary checkout and plan sidecar clean, and append any evidence that arrived
    after the close with `sase bead note` rather than attempting a conflicting re-close.

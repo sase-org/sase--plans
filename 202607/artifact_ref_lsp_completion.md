@@ -74,7 +74,7 @@ Update the autouse LSP test fixture so all catalog writes remain under pytest te
 ### 2. Add a pre-tokenizer artifact completion context in `sase-core`
 
 In `crates/sase_core/src/editor/wire.rs`, add explicit artifact-reference completion context/trigger records that
-distinguish kind completion (`@`, `@pla`) from payload completion (`@plans:202607/`). Carry byte spans for the candidate
+distinguish kind completion (`@`, `@pla`) from payload completion (`@plan:202607/`). Carry byte spans for the candidate
 and replacement query, the parsed kind when present, and enough state for frontends to build edits without reparsing.
 
 In `crates/sase_core/src/editor/completion.rs`, add a detector before VCS, xprompt, directive, and generic-token

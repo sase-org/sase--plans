@@ -24,7 +24,7 @@ description require no companion source or test edits, integrate post-epic-start
 
 ## Verified starting state
 
-- `sase bead show sase-f1` links `plans:202608/zero_friction_model_alias_defaults.md`. The epic itself has no notes.
+- `sase bead show sase-f1` links `@plan:202608/zero_friction_model_alias_defaults.md`. The epic itself has no notes.
 - Children `sase-f1.1`, `.2`, and `.3` are closed as done; `.4` is the active land phase. Every child and child note has
   been read.
 - The implementation commits are on `master`:

@@ -42,7 +42,7 @@ bead_id: sase-jx.5.5
 ## Verified starting point
 
 The landing audit has already read `sase-jx.5`, all four children, every note and full
-history event, the linked `plans:202608/land_axe_chop_overrun.md` plan, the original
+history event, the linked `@plan:202608/land_axe_chop_overrun.md` plan, the original
 feature plan, and the implementation commits in both repositories:
 
 - `sase-core` `46ce1fe9` validates every otherwise-sampleable run timestamp, adds

@@ -300,7 +300,7 @@ explicitly in its close note rather than letting them evaporate:
 
 ### 6. Close out the epic's plan and its predecessors
 
-1. Set `status: done` in the frontmatter of `plans:202608/retire_sase_ct_umbrella.md`.
+1. Set `status: done` in the frontmatter of `@plan:202608/retire_sase_ct_umbrella.md`.
    Open the plans sidecar through `/sase_repo` and use only the path it prints; check
    `sase plan show` first in case the bead close already updated it. Commit that repo
    through `/sase_git_commit`.
@@ -330,7 +330,7 @@ explicitly in its close note rather than letting them evaporate:
 - `grep -rn "sase-ct" tests/reproducible_flake_baseline.txt` returns nothing.
 - `just check` green on the final tree, and the step-3 measurements recorded on the
   beads.
-- `plans:202608/retire_sase_ct_umbrella.md` has `status: done`.
+- `@plan:202608/retire_sase_ct_umbrella.md` has `status: done`.
 
 ## Watch out for
 

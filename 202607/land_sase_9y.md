@@ -44,7 +44,7 @@ capture time.
   with `sase-9y`. Current known examples are the published-core 0.11.2 binding check and CI's inability to resolve
   `sase-9z(...)` Symvision exemptions from its plans checkout.
 - Use `sase repo open plans` before reading or editing the plans sidecar. Refer to the epic plan as
-  `plans:202607/fix_ci_bead_isolation_and_visual_flakes.md`.
+  `@plan:202607/fix_ci_bead_isolation_and_visual_flakes.md`.
 - Run `just install` before repository checks in a fresh workspace, and run `just check` after changing the `Justfile`.
 
 ## Implementation

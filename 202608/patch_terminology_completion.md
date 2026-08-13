@@ -77,7 +77,7 @@ its phases, and its landing verification found the tree green (`just check` pass
 fixed). But the epic's own acceptance contract is not met yet, so it cannot be closed as
 done.
 
-The approved epic plan (`plans:202608/patch_and_stitch_terminology.md`) states:
+The approved epic plan (`@plan:202608/patch_and_stitch_terminology.md`) states:
 
 > This is an additive compatibility migration, not a blind search-and-replace. New code
 > and **user-facing output** use Patch/stitch. Old spellings may remain **only** in
@@ -425,7 +425,7 @@ medium.
    referenced), resolve them by the `sase/memory/symvision.md` decision hierarchy:
    delete, privatize, pragma, and only then whitelist.
 5. Set `status: done` in the frontmatter of **both** plan files:
-   `plans:202608/patch_and_stitch_terminology.md` (the epic's plan, currently
+   `@plan:202608/patch_and_stitch_terminology.md` (the epic's plan, currently
    `status: wip`) and this plan file.
 
 **Acceptance:** `sase bead show sase-hn` reports the epic closed with resolution `done`;

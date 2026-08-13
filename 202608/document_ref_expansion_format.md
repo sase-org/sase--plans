@@ -55,7 +55,7 @@ resolution is a plain filesystem probe against
 exact path right now" ends the run.
 
 This is the second launch killed by this code path in two days. The `yl` failure fixed
-by `plans:202608/lazy_sidecar_ref_materialization.md` (landed 2026-08-12 as `d6f435c7a`)
+by `@plan:202608/lazy_sidecar_ref_materialization.md` (landed 2026-08-12 as `d6f435c7a`)
 had a _correct_ path and a _missing clone_; that plan added the launch-time
 materialization pre-pass. Today's failure is the mirror image: the clone was made (the
 pre-pass worked, and cost ~15 s of the 22 s) and the path was wrong. Both are the same
@@ -64,7 +64,7 @@ local file — and that bet keeps losing.
 
 ### 2. `expansion_format` is declared, validated, documented, and ignored
 
-The `sase-js` epic (`plans:202608/artifact_ref_contract.md`, status `done`, §3.4)
+The `sase-js` epic (`@plan:202608/artifact_ref_contract.md`, status `done`, §3.4)
 specifies a closed expansion formatter for provider specs, and uses the research
 provider as its worked example:
 
@@ -183,7 +183,7 @@ lines 51-70. One entry per document policy, `role` from `policy.role`, `kind` fr
 
 Do **not** extend `ArtifactRefDocumentRoot`: it has a `to_wire()` and crosses into the
 Rust resolver, so extending it would drag in a `sase-core` wire change for no benefit
-(the same reasoning `plans:202608/lazy_sidecar_ref_materialization.md` step 2 used).
+(the same reasoning `@plan:202608/lazy_sidecar_ref_materialization.md` step 2 used).
 
 ### 2. Classify formats, and make the defaults honest
 

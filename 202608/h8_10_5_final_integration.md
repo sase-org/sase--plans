@@ -49,7 +49,7 @@ Symvision cleanup, and finally mark the epic's linked plan done.
 - The plans-sidecar commit `aeecfc99` removed the dangling parent-plan link from
   `202608/flake_class_residue.md`; the file retains `parent_bead: sase-h8` and
   `status: wip`. The epic's own linked plan is
-  `plans:202608/h8_10_remaining_landing.md`, also currently `wip`.
+  `@plan:202608/h8_10_remaining_landing.md`, also currently `wip`.
 - Fresh verification at `607b72bb0` passed:
   - 78 focused watchdog, residue, contract-manifest, plan-link concurrency, XPrompt,
     metadata-search, and wait-checker tests;
@@ -181,4 +181,4 @@ This is the final phase. Perform it only after phases 1-2 are green.
   six-repeat zero-failure evidence unless a new relevant change requires rerunning it.
 - Every proposed follow-up has the recorded outcome above, with no duplicate task.
 - `sase-h8.10.5` closes with resolution `done` and no force, post-close Symvision is
-  green, and `plans:202608/h8_10_remaining_landing.md` has `status: done`.
+  green, and `@plan:202608/h8_10_remaining_landing.md` has `status: done`.

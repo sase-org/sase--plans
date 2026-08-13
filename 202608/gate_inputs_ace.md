@@ -21,7 +21,7 @@ status: wip
 # Plan: Generic typed input collection in the ACE gate modals
 
 Phase `inputs-ace` of epic `sase-h7` (bead `sase-h7.6`). Epic plan:
-`plans:202608/gate_input_collection.md`.
+`@plan:202608/gate_input_collection.md`.
 
 ## Background
 

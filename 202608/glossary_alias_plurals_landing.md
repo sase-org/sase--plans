@@ -35,7 +35,7 @@ landed while the epic was in progress.
 ## Verified context
 
 - `sase bead show sase-i3` reports three closed phases and links
-  `plans:202608/glossary_alias_plurals.md`. The epic itself has no pre-existing notes.
+  `@plan:202608/glossary_alias_plurals.md`. The epic itself has no pre-existing notes.
 - Every child and every child note was reviewed. The implementation reports correspond
   to core commit `5c555dcda69367e31b64edc57d487f0b4a464b5c`, core release commit
   `c416cd0b7db4fbf61be4523f3c9ecbe037361a9b` / tag `v0.21.2`, and sase commit
@@ -140,4 +140,4 @@ note is still an unmet phase requirement and must be repaired as epic work.
 - The unrelated flake proposal has an explicit duplicate/non-independent disposition in
   the close note, with no redundant task or +1.
 - `sase-i3` is closed normally, post-close Symvision is clean, and
-  `plans:202608/glossary_alias_plurals.md` has `status: done`.
+  `@plan:202608/glossary_alias_plurals.md` has `status: done`.

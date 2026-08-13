@@ -21,7 +21,7 @@ status: wip
 # Plan: `external_issue_mirror` chop
 
 This is phase `issue_mirror` of epic `sase-jd`, whose plan is
-`plans:202608/external_artifact_ingestion.md`. Read that plan's `issue_mirror` section
+`@plan:202608/external_artifact_ingestion.md`. Read that plan's `issue_mirror` section
 alongside this one; everything below either implements it or explains a deliberate
 departure from it.
 

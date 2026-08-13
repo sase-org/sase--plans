@@ -32,7 +32,7 @@ phases:
   description: 'land: verify every child and epic commit on the combined tree, run
     the contention, full, visual, and flake-gate criteria, record every follow-up
     outcome, close sase-h8.10 with a comprehensive note, run post-close symvision
-    and remove its findings, then set status done in plans:202608/flake_class_residue.md.'
+    and remove its findings, then set status done in @plan:202608/flake_class_residue.md.'
 proposed_by: bbugyi200.athena.sase-h8.10.land
 parent_bead: sase-h8.10
 create_time: 2026-08-08 13:27:08
@@ -92,7 +92,7 @@ raising the ceiling again.
    the measured current set and preserve the original "err small" policy: adding a
    contract file should require an explicit value-per-second curation decision rather
    than consume invisible headroom. The failure message must point maintainers to the
-   curation procedure in `plans:202608/test_suite_tier1.md` and state the current
+   curation procedure in `@plan:202608/test_suite_tier1.md` and state the current
    measured serial cost.
 2. Remove `tests/_test_contract_budget.py` and
    `tests/test_contract_budget_normalization.py` if they have no remaining caller. Do
@@ -133,9 +133,9 @@ and `e368d5756`.
    repaired by `e368d5756`; the remaining docs/config commits do not duplicate or
    conflict with the epic. Change nothing for those commits unless current source
    inspection disproves these findings.
-3. In `plans:202608/flake_class_residue.md`, preserve `parent_bead: sase-h8` but replace
+3. In `@plan:202608/flake_class_residue.md`, preserve `parent_bead: sase-h8` but replace
    the Markdown `PARENT` link to nonexistent
-   `plans:202608/parallel_suite_flake_class.md` with a durable parent-bead reference.
+   `@plan:202608/parallel_suite_flake_class.md` with a durable parent-bead reference.
    Confirm with the plans repository history that the target plan file still does not
    exist. Leave this plan's `status` as `wip`; only the final landing phase changes it.
 4. Run `just check` for the main-repository change and validate the linked plan through
@@ -197,7 +197,7 @@ The final close note must preserve these outcomes and must not create duplicate 
    entries and unused code it reports, then run `just check` for any resulting
    main-repository changes (use `just check-full` if the change hits the broadening
    set). Finally set `status: done` in the frontmatter of
-   `plans:202608/flake_class_residue.md`. The status edit happens last, after the close
+   `@plan:202608/flake_class_residue.md`. The status edit happens last, after the close
    and post-close cleanup.
 
 Acceptance: `sase-h8.10` is closed without force with an evidence-rich note, post-close

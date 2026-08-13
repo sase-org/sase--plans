@@ -27,7 +27,7 @@ progress, verify the complete generated-memory rollout, and then perform the epi
 
 ## Verified context to preserve
 
-- `sase bead show sase-cp` reports three closed phases and links the canonical plan `plans:202607/sase_beads_memory.md`.
+- `sase bead show sase-cp` reports three closed phases and links the canonical plan `@plan:202607/sase_beads_memory.md`.
 - Phase `sase-cp.1` added the packaged `memory-sase-beads.template.md`, generated-long-note overlays, first-pass Tier 2
   rendering, deployment staging, documentation, and tests in commit `d6a2cce1f`.
 - Phase `sase-cp.2` retired the bundled `src/sase/xprompts/skills/sase_beads.md`, its docs row, source fixture, and

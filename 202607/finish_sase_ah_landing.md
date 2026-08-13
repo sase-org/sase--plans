@@ -23,7 +23,7 @@ bead: sase-ah
 Finish the two landing gaps discovered while auditing epic bead `sase-ah`, integrate the prompt-provenance requirement
 introduced by work that landed after the epic began, restore the full repository gate, and only then close the epic. The
 final landing order is fixed: close `sase-ah`, run the post-close Symvision cleanup, and mark
-`plans:202607/agent_publication_reliability.md` done.
+`@plan:202607/agent_publication_reliability.md` done.
 
 ## Verified starting point
 
@@ -126,5 +126,5 @@ This phase is deliberately last and must preserve the following order.
 - Focused tests and `just check` pass before closure.
 - `sase-ah` closes normally with resolution `done`; no force resolution is used.
 - Post-close Symvision is clean, and any expired exemption cleanup is tested and persisted.
-- `plans:202607/agent_publication_reliability.md` has `status: done`.
+- `@plan:202607/agent_publication_reliability.md` has `status: done`.
 - Main, plans, and any changed chezmoi repository state is durable and clean.

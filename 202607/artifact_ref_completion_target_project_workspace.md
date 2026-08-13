@@ -101,7 +101,7 @@ Implementation notes and constraints:
   added to the UI/keystroke path (`sase/memory/tui_perf.md` rules 1 and 11). `known_project_namespaces()` is already
   called inside this worker today; the fix only moves it earlier in the precedence order.
 - Do NOT hardcode the role name `research` anywhere in code or tests. Per the `sase-av` epic plan
-  (`plans:202607/artifact_refs_and_prompt_bar.md`), document-role kinds are dynamic and tests must use a fixture role
+  (`@plan:202607/artifact_refs_and_prompt_bar.md`), document-role kinds are dynamic and tests must use a fixture role
   such as `designs`. The existing suites already follow this convention.
 - This is presentation-layer wiring (which workspace feeds an existing Python context builder), so it stays in this
   repo; no `sase-core` (Rust) changes are involved. The Rust grammar/scanner is untouched.

@@ -176,7 +176,7 @@ gone and
 `SASE_TEST_SELECTION_HEALTH_DISABLED=1 pytest -p no:randomly tests/test_contract_manifest.py::test_contract_set_serial_runtime_stays_within_budget`
 now passes where it previously asserted `1 == 0`, so the harness can finally falsify a
 fix here. Two normalization attempts already exist — the `budget` phase of
-`plans:202608/test_selection_landing.md` and `08d0e0476` (reshaped CPU probe). Note what
+`@plan:202608/test_selection_landing.md` and `08d0e0476` (reshaped CPU probe). Note what
 `sase-h8.5` established before stalling: all 19 of this node's recorded full-run
 failures **predate** `08d0e0476`, verified with `git merge-base --is-ancestor`, so that
 guard is already off elapsed wall clock and asserts normalized child CPU. Its fix is
@@ -336,7 +336,7 @@ exercised.
 - Run `just symvision` and remove the stale epic-symbol whitelist entries and unused
   code it reports — those entries expire when the epic closes.
 - Set `status: done` in the frontmatter of **both** plan files: this one and
-  `plans:202608/parallel_suite_flake_class.md`.
+  `@plan:202608/parallel_suite_flake_class.md`.
 
 **Watch out for.** `sase-ct` has been closed six times and reopened six times, and
 `sase-h8.5` shows what a phase closed `done` without landing looks like from the

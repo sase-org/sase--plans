@@ -30,7 +30,7 @@ cleanup, and mark the epic's original plan done.
 ## Verified starting point
 
 - Epic `sase-j9` has two closed children: `sase-j9.1` and `sase-j9.2`. The original plan
-  is `plans:202608/agents_panel_fold_sweep.md` in the `plans` sidecar.
+  is `@plan:202608/agents_panel_fold_sweep.md` in the `plans` sidecar.
 - The epic's user notes supersede Phase 1's original group-banner behavior: `-` must
   collapse only agent clans and agent lanes, never panel grouping banners, and the old
   bottom-up group-collapse fallback can be dropped.

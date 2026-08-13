@@ -21,7 +21,7 @@ status: wip
 # Plan: `external_pr_mirror` chop and the two-file Patch importer
 
 Phase `pr_mirror` of epic `sase-jd` (bead `sase-jd.5`). Epic design:
-`plans:202608/external_artifact_ingestion.md`, section "Phase `pr_mirror`:
+`@plan:202608/external_artifact_ingestion.md`, section "Phase `pr_mirror`:
 external_pr_mirror chop and the two-file importer".
 
 ## Goal

@@ -20,7 +20,7 @@ status: wip
 
 # Plan: Configurable bug and pull-request filters (epic phase `filters`, bead sase-k2.2)
 
-Implements the `filters` phase of `plans:202608/external_mirror_refinement.md`. Nothing
+Implements the `filters` phase of `@plan:202608/external_mirror_refinement.md`. Nothing
 here depends on the sibling `spec_repair` or `lane` phases, and nothing here may assume
 their changes have landed.
 

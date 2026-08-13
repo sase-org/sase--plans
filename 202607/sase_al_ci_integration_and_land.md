@@ -46,7 +46,7 @@ Restore a fully green `sase` master CI run after the `sase-al.2` published-core 
   invalid record also makes plan-link validation fall back to nonexistent `.sase/sdd`.
 - Git blame shows the beads mapping was added by intervening commit `4d55dabc17152d033c195fcebdf21df4e16b2170` while the
   schema-version line remained stale. This is the integration work the epic land audit uncovered.
-- The durable epic plan is `plans:202607/fix_ci_core_clippy_and_minimum.md` in the `plans` sidecar; open that repository
+- The durable epic plan is `@plan:202607/fix_ci_core_clippy_and_minimum.md` in the `plans` sidecar; open that repository
   with the `/sase_repo` skill before reading or changing it.
 
 ## Phase 1: Correct and prove the CI sidecar record
@@ -92,4 +92,4 @@ Perform this phase only after Phase 1 has a fully green master CI run.
 - A post-fix `sase` master CI workflow is fully green.
 - Epic `sase-al` is closed with resolution `done` without force.
 - Post-close Symvision is clean.
-- `plans:202607/fix_ci_core_clippy_and_minimum.md` has `status: done`.
+- `@plan:202607/fix_ci_core_clippy_and_minimum.md` has `status: done`.

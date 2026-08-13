@@ -462,4 +462,4 @@ reports. `MergeSummary` and `merge_summary` were whitelisted by phase `wire`; th
 consumed by the render path now, so confirm rather than assume before deleting anything.
 
 Finally set `status: done` in the frontmatter of both this plan file and the original
-epic plan file, `plans:202608/merge_commit_support.md`.
+epic plan file, `@plan:202608/merge_commit_support.md`.

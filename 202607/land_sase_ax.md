@@ -28,7 +28,7 @@ intentionally deferred to landing, validate the merged behavior, then close the 
 ## Context and verified baseline
 
 - `sase bead show sase-ax` reports four child phases, all closed with resolution `done`, and links
-  `plans:202607/artifact_read_cli.md`.
+  `@plan:202607/artifact_read_cli.md`.
 - The phase commits are:
   - `ad900a77` in `sase-core` for `sase-ax.1`, providing the shared tolerant v1/v2 artifact-index reader,
     filtering/sorting query API, PyO3 binding, and wire handshake.
@@ -68,7 +68,7 @@ intentionally deferred to landing, validate the merged behavior, then close the 
      a healthy exit. Missing recycled-workspace source paths remain informational; stored-file, enrichment, duplicate,
      schema, and malformed-row problems must be absent.
    - Smoke the landed CLI on real data: bounded image listing renders durable refs and display names, and
-     `sase artifact path plans:202607/artifact_read_cli.md` resolves to the linked epic plan.
+     `sase artifact path plan:202607/artifact_read_cli.md` resolves to the linked epic plan.
 
 3. Validate the integrated tree.
    - Run `just install` before repository checks.
@@ -96,4 +96,4 @@ intentionally deferred to landing, validate the merged behavior, then close the 
 - The real artifact index is healthy after idempotent enrichment backfill.
 - Focused tests and `just check` pass.
 - `sase-ax` is closed with resolution `done` without force, post-close Symvision is clean, and
-  `plans:202607/artifact_read_cli.md` has `status: done`.
+  `@plan:202607/artifact_read_cli.md` has `status: done`.

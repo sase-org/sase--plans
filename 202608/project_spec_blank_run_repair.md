@@ -21,7 +21,7 @@ status: wip
 # Plan: stop losing Patches to indented blank runs, and reclaim the archives already corrupted
 
 This is the `spec_repair` phase of epic `sase-k2`
-(`plans:202608/external_mirror_refinement.md`). It is a prerequisite for the epic's
+(`@plan:202608/external_mirror_refinement.md`). It is a prerequisite for the epic's
 `patch_status` and `perf` phases.
 
 ## What is broken

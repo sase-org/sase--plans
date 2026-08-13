@@ -153,7 +153,7 @@ completion notification, and the CLI all show the same shape.
 **In-flight work this epic supersedes**
 
 Epic bead `sase-be` ("Vars-driven commit finalization with exclusion-based staging",
-`plans:202607/commit_vars_finalizer.md`) contains two variable phases: `sase-be.1` (`list-vars-rust`) is **closed** and
+`@plan:202607/commit_vars_finalizer.md`) contains two variable phases: `sase-be.1` (`list-vars-rust`) is **closed** and
 is exactly the v0.15.0 Rust change above; `sase-be.2` (`list-vars-python`) is open with no work landed and no agent
 running. See design decision 9.
 

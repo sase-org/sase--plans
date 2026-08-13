@@ -27,7 +27,7 @@ status: done
 # Plan: Generic typed input collection in the ACE gate modals
 
 This is phase `inputs-ace` of epic `sase-h7` (bead `sase-h7.6`). The epic plan lives at
-`plans:202608/gate_input_collection.md`; read its `inputs-ace` section for the framing.
+`@plan:202608/gate_input_collection.md`; read its `inputs-ace` section for the framing.
 This plan is self-contained and supersedes that section wherever the two differ — every
 deviation is called out under "Deviations from the epic plan" at the end, with its
 reason.

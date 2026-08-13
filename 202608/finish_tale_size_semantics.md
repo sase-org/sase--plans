@@ -222,7 +222,7 @@ tree.
    reports. Read `sase/memory/symvision.md` with `/sase_memory_read` before touching
    whitelists.
 
-4. Set `status: done` in the frontmatter of `plans:202608/sase_sizes_memory.md`, and
+4. Set `status: done` in the frontmatter of `@plan:202608/sase_sizes_memory.md`, and
    also mark this plan file done.
 
 ## Verification

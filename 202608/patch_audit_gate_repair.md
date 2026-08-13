@@ -425,8 +425,8 @@ reports zero defects under `tests/` outside `tests/ace/tui/` and zero under `smo
    symbols, resolve them by the `sase/memory/symvision.md` decision hierarchy: delete,
    privatize, pragma, and only then whitelist.
 8. Set `status: done` in the frontmatter of this plan file. The epic's own plan file
-   `plans:202608/patch_terminology_completion.md` already reads `status: done`; leave
-   it. Do not touch `plans:202608/patch_and_stitch_terminology.md` — that is `sase-hn`'s
+   `@plan:202608/patch_terminology_completion.md` already reads `status: done`; leave
+   it. Do not touch `@plan:202608/patch_and_stitch_terminology.md` — that is `sase-hn`'s
    plan and belongs to `sase-hn`'s land agent.
 
 **Acceptance:** `sase bead show sase-hn.8` reports the epic closed with resolution

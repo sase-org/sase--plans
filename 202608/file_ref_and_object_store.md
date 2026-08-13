@@ -23,7 +23,7 @@ status: wip
 # Plan: The `@file` ref and the content-addressed store
 
 Phase `files` of epic `sase-js` (bead `sase-js.5`), whose plan is
-`plans:202608/artifact_ref_contract.md` §3.5, §3.7 and §4.5. Depends on `registry`
+`@plan:202608/artifact_ref_contract.md` §3.5, §3.7 and §4.5. Depends on `registry`
 (`sase-js.3`), which is landed. Siblings `builtins` (`sase-js.4`), `linking`
 (`sase-js.6`), `ace` (`sase-js.7`) are in flight in parallel workspaces; this plan stays
 inside the `@file` and object-store surface so the land agent has minimal overlap to

@@ -21,7 +21,7 @@ status: wip
 # Plan: external_pr_mirror chop and the two-file Patch importer
 
 Phase `pr_mirror` of epic `sase-jd`
-([plans:202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_artifact_ingestion.md)).
+([@plan:202608/external_artifact_ingestion.md](https://github.com/sase-org/sase--plans/blob/main/202608/external_artifact_ingestion.md)).
 Both dependencies have landed: `pr_seam` (`498ef310f` here, `2b0d6a8` in sase-github)
 and `pr_origin` (`295140319` here, `d0eeb48` in sase-core).
 

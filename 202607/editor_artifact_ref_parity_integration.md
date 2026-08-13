@@ -37,7 +37,7 @@ One change landed after the epic began and intersects this work:
   `sase-core-rs>=0.12.18,<0.13.0`, and `uv.lock` still selects 0.12.18. A linked-source development install builds
   0.12.19 and masks the published-package incompatibility.
 
-The plan linked from `sase bead show sase-b3.10` is `plans:202607/editor_artifact_ref_parity.md`. Its frontmatter
+The plan linked from `sase bead show sase-b3.10` is `@plan:202607/editor_artifact_ref_parity.md`. Its frontmatter
 already says `status: done`, but that status was set before the land agent found this dependency-floor gap. Do not treat
 the premature status as evidence that landing is complete.
 
@@ -81,7 +81,7 @@ This is the final phase and must run only after Phase 1 is green.
 3. After the close, run `just symvision`. Remove only stale `sase-b3.10` epic-symbol whitelist entries or unused code it
    reports, then rerun Symvision until clean. If this creates source changes, rerun `just check`.
 4. Open the plans sidecar through `sase repo open plans -r "<reason>"`, then ensure
-   `plans:202607/editor_artifact_ref_parity.md` has `status: done` in frontmatter. It is already `done` in the audited
+   `@plan:202607/editor_artifact_ref_parity.md` has `status: done` in frontmatter. It is already `done` in the audited
    state, so preserve that value unless the durable plan changed during handoff; the important invariant is that it is
    confirmed after the successful bead close.
 5. Finish with clean worktrees for every repository touched and report the close resolution, dependency versions,

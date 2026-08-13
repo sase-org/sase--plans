@@ -135,7 +135,7 @@ Every item below was reproduced against current `master`, not inferred from bead
    `plans/*/prompts/*.md` snapshots" as a first-class store, and the export section documents `--sdd` writing under
    `<resolved-plans-root>/YYYYMM/prompts/`.
 8. **The epic is not closed out.** `sase-dh` is `IN_PROGRESS`, and its linked plan
-   `plans:202608/artifact_persistence_sidecars.md` still carries `status: wip`.
+   `@plan:202608/artifact_persistence_sidecars.md` still carries `status: wip`.
 
 Not a gap, checked and clear: the agents sidecar has no `artifacts/` directory yet only because every prompt archived so
 far resolved to clean tracked VCS content, which links to hosted URLs by design instead of copying bytes. The copy path
@@ -278,7 +278,7 @@ This phase runs last and must not start until the other four are landed and publ
    for `--force` merely to make the close succeed; if a child is genuinely incomplete, finish or reopen it.
 7. Only after the close succeeds, run `just symvision`, remove anything newly exposed as unused by the Phase 2
    deletions, rerun Symvision and the proportionate checks, and publish the cleanup through the SASE commit workflow.
-8. Set `status: done` in the frontmatter of `plans:202608/artifact_persistence_sidecars.md`, leaving the rest of the
+8. Set `status: done` in the frontmatter of `@plan:202608/artifact_persistence_sidecars.md`, leaving the rest of the
    plan intact, and publish that plans-sidecar edit.
 9. Finish by showing the closed epic, reading the linked plan from a fresh remote-backed checkout, and reporting clean
    and synchronized status for all four repositories.

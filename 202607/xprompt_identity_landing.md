@@ -67,7 +67,7 @@ bead_id: sase-ac.6
 
 ## Context
 
-Epic `sase-ac` (plan `plans:202607/xprompt_project_identity.md`) established the **canonical user-facing project name**
+Epic `sase-ac` (plan `@plan:202607/xprompt_project_identity.md`) established the **canonical user-facing project name**
 as the single xprompt namespace identity. Its five phases are closed and the headline defect is genuinely fixed —
 verified from a working directory outside the checkout:
 
@@ -319,7 +319,7 @@ Run this only after the four phases above are complete.
 2. Run `just symvision`. The `sase-ac` epic-symbol whitelist entries expire at close, so anything they were suppressing
    surfaces now. Remove the stale entries and any unused code it reports. (As of this plan, `just symvision` is clean
    and no `sase-ac` entries remain in the `Justfile` — but re-check after the close, since expiry is what changes.)
-3. Set `status: done` in the frontmatter of `plans:202607/xprompt_project_identity.md` (the epic's plan file, resolved
+3. Set `status: done` in the frontmatter of `@plan:202607/xprompt_project_identity.md` (the epic's plan file, resolved
    under `sase/repos/plans/202607/`).
 4. Set `status: done` in the frontmatter of this plan file.
 

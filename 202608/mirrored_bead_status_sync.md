@@ -28,7 +28,7 @@ status: done
 
 # Plan: Bug state drives mirrored bead status (epic phase `bug_status`, bead sase-k2.4)
 
-Implements the `bug_status` phase of `plans:202608/external_mirror_refinement.md`. The
+Implements the `bug_status` phase of `@plan:202608/external_mirror_refinement.md`. The
 phase depends on `filters`, which has landed (`6b139a0d4`), as have `spec_repair`
 (`d4139e96e`) and `lane` (`fb33e3c1f`). Nothing here may assume the sibling
 `patch_status` or `perf` phases have landed.

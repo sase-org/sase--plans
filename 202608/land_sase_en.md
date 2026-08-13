@@ -23,7 +23,7 @@ on the integrated `master` tree, and only then close the epic, run the required 
 its durable plan done.
 
 The live epic is `sase-en`; all four children (`sase-en.1` through `sase-en.4`) are already closed. Its durable plan is
-`plans:202608/bead_show_speed.md`, resolved through the linked `plans` repository. Do not force-close the epic.
+`@plan:202608/bead_show_speed.md`, resolved through the linked `plans` repository. Do not force-close the epic.
 
 ## Audit evidence to preserve
 

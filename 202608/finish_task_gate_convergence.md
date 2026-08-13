@@ -45,7 +45,7 @@ bead_id: sase-k0.4
 ## Audit already completed
 
 Epic `sase-k0` has three closed phases and no epic-level notes. The original durable
-plan is `plans:202608/task_gate_convergence.md`. The landing audit read the plan, every
+plan is `@plan:202608/task_gate_convergence.md`. The landing audit read the plan, every
 child bead and note, current source, tests, and all three epic commits:
 
 - `07f050d3a28091a0b7ef28a4e7ca1502e7ec3398` (`sase-k0.1`) adds the shared pending gate

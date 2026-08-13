@@ -88,7 +88,7 @@ This implements recommendation 3 of `research:202607/artifact_capture_and_retent
 ("Give the store a lifecycle: report -> dry-run -> opt-in retention"), including the retroactive migration that
 recommendation assigns to itself.
 
-It is the sequel to the epic that is landing now (`sase-b7`, plan `plans:202607/vcs_backed_artifact_capture.md`), which
+It is the sequel to the epic that is landing now (`sase-b7`, plan `@plan:202607/vcs_backed_artifact_capture.md`), which
 closed the tap: automatic capture already writes byte-free rows carrying `vcs_repo`/`vcs_sha`/`vcs_relpath` for content
 version control can reproduce. This epic drains the pool that accumulated before that landed, and bounds what pools
 next.

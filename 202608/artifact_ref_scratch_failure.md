@@ -196,7 +196,7 @@ Finish the landing that sase-fq's land agent could not complete.
   unused code it reports. A scan during the sase-fq landing found no `sase-fq` whitelist entries in the tree, so this is
   expected to be a no-op — but run it, and read `sase/memory/symvision.md` through `/sase_memory_read` before fixing
   anything it does report.
-- Set `status: done` in the frontmatter of `plans:202608/ci_master_red_recovery.md` (sase-fq's plan file) and in this
+- Set `status: done` in the frontmatter of `@plan:202608/ci_master_red_recovery.md` (sase-fq's plan file) and in this
   plan file.
 
 Do not force the close. If it is rejected, a phase bead is still open — finish or reopen it instead.

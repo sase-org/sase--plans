@@ -21,7 +21,7 @@ status: done
 
 ## Why This Plan Exists
 
-Epic `sase-ae` ("Stop `sase skill init` skill-deployment thrashing", plan `plans:202607/skill_deploy_thrash.md`) is
+Epic `sase-ae` ("Stop `sase skill init` skill-deployment thrashing", plan `@plan:202607/skill_deploy_thrash.md`) is
 substantively complete. A land-agent audit confirmed every phase against the source, the commits, and the live chezmoi
 repo, with one exception.
 
@@ -136,7 +136,7 @@ Do this only after the work above is committed.
 2. Run `just symvision`. Epic-symbol whitelist entries for `sase-ae` expire at close; remove any stale entries and
    unused code it reports. The audit found no `sase-ae` whitelist pragmas in `src/` or `tests/`, so a clean run is
    expected — but run it and act on whatever it reports.
-3. Set `status: done` in the frontmatter of `plans:202607/skill_deploy_thrash.md`.
+3. Set `status: done` in the frontmatter of `@plan:202607/skill_deploy_thrash.md`.
 
 ## Out Of Scope
 

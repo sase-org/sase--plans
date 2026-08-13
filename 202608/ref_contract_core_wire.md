@@ -24,7 +24,7 @@ status: wip
 # Plan: Ref contract wire types in sase-core
 
 This is phase `core` of epic `sase-js` (bead `sase-js.1`), specified by §4.1 of
-`plans:202608/artifact_ref_contract.md`. Read that file's §3.1–§3.8 before starting;
+`@plan:202608/artifact_ref_contract.md`. Read that file's §3.1–§3.8 before starting;
 this plan does not restate the design, it records the verified integration constraints
 and the exact API surface to build.
 

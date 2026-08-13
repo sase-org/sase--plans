@@ -49,7 +49,7 @@ sidecar.
 ## Root cause
 
 This is a gap left by the `sase-a8` epic ("Split bead state into a dedicated beads sidecar repository", plan
-`plans:202607/beads_sidecar_repo.md`). Under schema v3 the project's beads live in their own sidecar repo cloned to
+`@plan:202607/beads_sidecar_repo.md`). Under schema v3 the project's beads live in their own sidecar repo cloned to
 `<workspace>/sase/repos/beads`, and that clone is deliberately **lazy** — see the epic's "Auto-clone gating" and "Lazy
 beads sidecar materialization" sections, delivered as phase `sase-a8.7`.
 

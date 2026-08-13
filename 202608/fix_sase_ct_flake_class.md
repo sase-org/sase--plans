@@ -402,7 +402,7 @@ Re-read the parent epic plan before starting; open the plans sidecar with `/sase
 rather than reaching for a path:
 
 ```
-plans:202608/retire_sase_ct_umbrella.md
+@plan:202608/retire_sase_ct_umbrella.md
 ```
 
 ### Step 1 — Shrink the baseline
@@ -453,7 +453,7 @@ follow-up:
   `done` if `fix-leaks` fixed it; if it stayed unreproducible, leave it open with the
   investigation recorded and say so in the `sase-ct` close note.
 - **`sase-ct`** — close `done` as a retired umbrella. Use the epic plan's verbatim
-  retirement text (`plans:202608/retire_sase_ct_umbrella.md`), and **replace its "fixed
+  retirement text (`@plan:202608/retire_sase_ct_umbrella.md`), and **replace its "fixed
   by mechanism" paragraph with this epic's actual finding**: the class was
   process-global state leaking between tests, amplified by `--dist=worksteal`, not TUI
   timing. Name the leak detector gate as the reason it will not recur. Re-check the `+1`

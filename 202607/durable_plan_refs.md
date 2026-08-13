@@ -180,7 +180,7 @@ Both must stay in step.
 ### Boundary and constraints
 
 Reference syntax, canonicalization, and resolution are core backend behavior under the Rust core boundary: the CLI, the
-TUI, the mobile bridge, and any future frontend must agree on what `plans:202607/foo.md` means. That logic belongs in
+TUI, the mobile bridge, and any future frontend must agree on what `@plan:202607/foo.md` means. That logic belongs in
 the `sase-core` linked repo, with plan roots passed in as parameters — exactly the split
 `crates/sase_core/src/plan/search.rs` already uses, where Python resolves `repo_sdd_root` and `local_plans_dir` and Rust
 owns the algorithm. Root _discovery_ stays in Python, because `sase.sdd.store` owns storage-policy resolution.

@@ -42,7 +42,7 @@ bead_id: sase-a4
 
 ## Context
 
-The `ci_watch` chop shipped under epic `sase-a2` (plan `plans:202607/ci_watch_chop.md`) and is deployed and ticking
+The `ci_watch` chop shipped under epic `sase-a2` (plan `@plan:202607/ci_watch_chop.md`) and is deployed and ticking
 cleanly on the athena `ci_watch` lumberjack lane at a 300s interval. A review of live axe logs confirmed that the
 deployment, the `source`/`dry_run` context threading from phase `sase-a2.1`, the dual actstat/allowlist scoping, and the
 merge half's guard chain all work as designed. It also found that **the fix half is structurally unable to ever fire for

@@ -22,7 +22,7 @@ status: wip
 # Plan: Builtin refs and prompt ref context
 
 Implements phase `builtins` (bead `sase-js.4`) of the epic
-`plans:202608/artifact_ref_contract.md` (§3.6, §3.7, §4.4). Read §3.2–§3.4 and §4.4 of
+`@plan:202608/artifact_ref_contract.md` (§3.6, §3.7, §4.4). Read §3.2–§3.4 and §4.4 of
 that plan before starting; this document does not restate the epic's rationale, only the
 decisions and steps needed to land the phase.
 

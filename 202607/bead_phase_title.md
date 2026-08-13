@@ -26,7 +26,7 @@ validated, frontmatter-ordered phase entry:
                PARENT bullets, and deprecate the frontmatter property in the
                plan schema.
          Size: medium
-    Epic Plan: plans:202607/plan_header_provenance.md
+    Epic Plan: plan:202607/plan_header_provenance.md
    Epic Title: Plan-file provenance header block
 ```
 
@@ -52,7 +52,7 @@ Add one new field row, `Phase Title`, as the **first** body row of the `BEAD` la
                PARENT bullets, and deprecate the frontmatter property in the
                plan schema.
          Size: medium
-    Epic Plan: plans:202607/plan_header_provenance.md
+    Epic Plan: plan:202607/plan_header_provenance.md
    Epic Title: Plan-file provenance header block
 ```
 

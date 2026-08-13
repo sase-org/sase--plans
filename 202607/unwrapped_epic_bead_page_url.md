@@ -53,7 +53,7 @@ The plan-backed summary places the label directly below `Bead:` and the complete
 ◆ EPIC sase-ao
   Title: Model aliases in the %model completion menu
    Goal: Typing `%m:` / `%model:` shows model aliases as unmistakable, …
-   Path: plans:202607/model_alias_completion.md
+   Path: plan:202607/model_alias_completion.md
    Bead: sase-ao
    Page:
 https://github.com/sase-org/sase--beads/blob/main/pages/sase-ao/README.md

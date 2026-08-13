@@ -160,7 +160,7 @@ Do this last, after `just install` and a green `just check` (`init skills --chec
    entries or unused code it reports. Note that phase `sase-b7.4` already removed the epic's `--epic-symbol` entries
    from the `Justfile`, and symvision passes today, so no findings are expected; read the `symvision` long-term memory
    before acting on any that appear.
-3. Set `status: done` in the frontmatter of `plans:202607/vcs_backed_artifact_capture.md` (the epic's `PLAN` path, in
+3. Set `status: done` in the frontmatter of `@plan:202607/vcs_backed_artifact_capture.md` (the epic's `PLAN` path, in
    the plans sidecar — reach it with `/sase_repo`).
 
 ## Out of scope

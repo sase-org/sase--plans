@@ -63,7 +63,7 @@ bead_id: sase-bd.9
 
 # Land bead close integrity: unblock the core release and finish the repair
 
-Completes epic `sase-bd` (`plans:202607/bead_close_integrity.md`). That epic's eight phases all closed, and its
+Completes epic `sase-bd` (`@plan:202607/bead_close_integrity.md`). That epic's eight phases all closed, and its
 load-bearing behavior is real and verified: the reducer is idempotent under duplicate closes, the live projection is
 clean, and `sase-b8.8` — the epic's own reproduction case — now projects `closed_at: 2026-07-30T16:10:17Z`, the first
 close, instead of the 16:22:45Z rewrite.
@@ -288,7 +288,7 @@ outcome is recorded on `sase-bd.8`.
    `bead_doctor_report`; and what the user decided about the lost-note restore.
 2. Run `just symvision` and remove any stale `sase-bd` epic-symbol whitelist entries and unused code it reports. A
    pre-check found no `sase-bd` whitelist entries, so this is expected to be a no-op — confirm rather than assume.
-3. Set `status: done` in the frontmatter of `plans:202607/bead_close_integrity.md`.
+3. Set `status: done` in the frontmatter of `@plan:202607/bead_close_integrity.md`.
 
 If the close is rejected, the named phases were never completed: finish or reopen them rather than forcing. Never force
 merely to make the command succeed.

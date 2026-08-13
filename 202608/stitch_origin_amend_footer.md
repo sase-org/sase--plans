@@ -226,7 +226,7 @@ command succeed.
   `--epic-symbol` entries for `sase-jo` (the only two, for `sase-jd.5`, were removed by
   commit `e1c3d477b`), so this is expected to be a no-op — but run it and confirm.
 - Set `status: done` in the frontmatter of the epic's plan file,
-  `plans:202608/stitch_origin_badges.md` (resolve the concrete path with
+  `@plan:202608/stitch_origin_badges.md` (resolve the concrete path with
   `sase bead show sase-jo`). It is currently `status: wip`.
 
 ## Out of scope

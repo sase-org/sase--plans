@@ -23,7 +23,7 @@ status: done
 
 Complete the one criterion that the land audit found was closed prematurely, preserve it as a tested published-package
 contract, and then perform the original epic landing sequence. The target epic is `sase-b4`; its incomplete child is
-`sase-b4.3`, and its canonical epic plan is `plans:202607/at_reference_file_row_gate.md`.
+`sase-b4.3`, and its canonical epic plan is `@plan:202607/at_reference_file_row_gate.md`.
 
 ## Audit baseline
 
@@ -110,4 +110,4 @@ contract, and then perform the original epic landing sequence. The target epic i
 - CI has an exact-published-minimum behavioral smoke for the additive menu-options contract.
 - `sase-b4.3` and then `sase-b4` close normally with evidence; no descendant is swept or force-closed.
 - Post-close Symvision and the required repository checks pass.
-- `plans:202607/at_reference_file_row_gate.md` has `status: done`.
+- `@plan:202607/at_reference_file_row_gate.md` has `status: done`.

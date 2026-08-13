@@ -270,7 +270,7 @@ the refresh command invalidates it.
 - Close epic `sase-b3` with `sase bead close sase-b3 --note "<what was verified>"`, then run `just symvision` and remove
   any stale epic-symbol whitelist entries and unused code it reports for `sase-b3` — there are none today, so expect the
   pre-existing findings described under "Known unrelated failures" and leave them alone.
-- Set `status: done` in the frontmatter of **both** this plan file and `plans:202607/fuzzy_artifact_ref_completion.md`.
+- Set `status: done` in the frontmatter of **both** this plan file and `@plan:202607/fuzzy_artifact_ref_completion.md`.
 
 ## Verified State of `sase-b3` (do not redo)
 

@@ -25,7 +25,7 @@ Finish the integration that became necessary while epic `sase-az` was in flight:
 surface its complete copy vocabulary through the registry-driven **Copy as…** palette, including a Markdown-link
 representation, without regressing the direct chords that landed with `sase-b0.6`. Then re-verify the entire epic and
 perform the required landing sequence: close `sase-az`, run post-close Symvision cleanup, and mark
-`plans:202607/copy_as_palette.md` done.
+`@plan:202607/copy_as_palette.md` done.
 
 ## Verified baseline and remaining defect
 

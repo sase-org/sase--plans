@@ -173,7 +173,7 @@ importing host drift.
    any code it exposes as unused. A repo-wide search for `sase-jx` currently finds no
    whitelist entry, so expect a clean no-op; report it either way.
 
-8. Set `status: done` in the frontmatter of `plans:202608/finish_jx5_landing.md`,
+8. Set `status: done` in the frontmatter of `@plan:202608/finish_jx5_landing.md`,
    opening the plans sidecar through `/sase_repo`.
 
 9. Then finish the parent landing that this epic exists to complete. Epic
@@ -182,7 +182,7 @@ importing host drift.
    validation rejected its attempt only because `sase-jx.5.5` was still open, explicitly
    leaving it "for the land agent". With `sase-jx.5.5` closed, run
    `sase bead close sase-jx.5` without `--force` and set `status: done` in
-   `plans:202608/land_axe_chop_overrun.md`. If the close is still rejected, record the
+   `@plan:202608/land_axe_chop_overrun.md`. If the close is still rejected, record the
    named descendant and stop; do not force.
 
 ## Non-goals

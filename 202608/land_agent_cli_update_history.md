@@ -97,7 +97,7 @@ This is the final phase and must be completed only after phases 1-2 are green.
 4. After the close succeeds, run `just symvision`. If it reports stale `sase-el` whitelist entries or unused symbols,
    first read `symvision.md` through `/sase_memory_read`, then remove/fix what it reports and rerun Symvision until
    clean. Confirm no `sase-el` whitelist entry remains.
-5. Use `/sase_repo` to open the plans sidecar, change only the canonical `plans:202608/agent_cli_update_history.md`
+5. Use `/sase_repo` to open the plans sidecar, change only the canonical `@plan:202608/agent_cli_update_history.md`
    frontmatter from `status: wip` to `status: done`, and verify the plan diff. This status update happens last, after
    the epic is actually closed and post-close Symvision is green.
 

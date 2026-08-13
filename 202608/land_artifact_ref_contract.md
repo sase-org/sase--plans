@@ -309,7 +309,7 @@ Run this only after 3.1-3.3 are committed and `just check-full` is green.
    `test_builtin_entry_patch.py`, so it has real coverage even if `src/` has no caller.
 
 4. **Mark the plan file done.** Set `status: done` in the frontmatter of
-   `plans:202608/artifact_ref_contract.md` (the `PLAN` path from
+   `@plan:202608/artifact_ref_contract.md` (the `PLAN` path from
    `sase bead show sase-js`), and set it in this plan's own archived file too.
 
 ## 4. Verification

@@ -171,7 +171,7 @@ Dependencies: release-chain-integration, package-publication, soak-live-fix-path
 Land the original epic only after every preceding acceptance criterion is met.
 
 1. Re-run `sase bead show sase-a4` and each child. Confirm every child is closed with resolution `done`, every current
-   and recovered note is addressed, and the original plan still points to `plans:202607/ci_watch_liveness.md`.
+   and recovered note is addressed, and the original plan still points to `@plan:202607/ci_watch_liveness.md`.
 2. Recheck commits in SASE, `sase-core`, `bugyi-chops`, and `chezmoi` that landed since this follow-up began. Integrate
    any new direct overlap with `ci_watch`; do not broaden into unrelated cleanup.
 3. Close the epic with `sase bead close sase-a4`. If closure is rejected, complete or deliberately reopen the named

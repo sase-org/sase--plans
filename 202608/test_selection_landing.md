@@ -30,7 +30,7 @@ phases:
   size: small
   description: 'land: file the collected follow-ups with /sase_new_task, close sase-fp
     with a note covering the verification and integration findings, run just symvision
-    after the close, and mark plans:202608/test_suite_tier1.md done.'
+    after the close, and mark @plan:202608/test_suite_tier1.md done.'
 proposed_by: bbugyi200.athena.sase-fp.land
 parent_bead: sase-fp
 create_time: 2026-08-06 01:41:36
@@ -46,7 +46,7 @@ bead_id: sase-fp.8
 
 ## Why this plan exists
 
-This is the landing plan for epic `sase-fp` (`plans:202608/test_suite_tier1.md`). All seven phases are closed and, on
+This is the landing plan for epic `sase-fp` (`@plan:202608/test_suite_tier1.md`). All seven phases are closed and, on
 review, delivered: the selection engine, contract set, scoped runner, `just check` / `just check-full` split, health
 store, coverage contexts, and the memory policy edit all exist and match their bead notes.
 
@@ -281,7 +281,7 @@ corroborates as a duplicate or attaches to another active epic, and any you decl
 - **After** the close, run `just symvision` — `sase-fp`'s epic-symbol whitelist entries expire at close — and remove any
   stale entries and unused code it reports. There are no `sase-fp` whitelist entries in the tree today and symvision is
   green at `d66101e8f`, so expect a no-op; verify rather than assume.
-- Set `status: done` in the frontmatter of `plans:202608/test_suite_tier1.md`
+- Set `status: done` in the frontmatter of `@plan:202608/test_suite_tier1.md`
   (`/home/bryan/.sase/plans/202608/test_suite_tier1.md`).
 - If the close is rejected, the named phases were never completed: finish or reopen them, or record the outcome
   deliberately with `--force --reason ... --resolution canceled|superseded`. Never force merely to make the command

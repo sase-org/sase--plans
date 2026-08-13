@@ -66,7 +66,7 @@ Epic `sase-jx` has four closed phases and one commit for each phase:
 - `sase` `d4c4efda5` (`sase-jx.4`) renders sidebar, overview, detail-header, onboarding,
   docs, and PNG coverage.
 
-The land review read the original plan at `plans:202608/axe_chop_overrun_indicator.md`,
+The land review read the original plan at `@plan:202608/axe_chop_overrun_indicator.md`,
 every source path changed by those commits, every child bead note and history entry, and
 every commit after the epic started. Most reported behavior is present and covered, but
 four remaining defects prevent an honest close:
@@ -230,7 +230,7 @@ committed.
    expired `sase-jx` whitelist entries and any newly exposed unused code, then rerun the
    relevant checks.
 7. Open the plans sidecar through `/sase_repo` and change only the original epic plan's
-   frontmatter at `plans:202608/axe_chop_overrun_indicator.md` from `status: wip` to
+   frontmatter at `@plan:202608/axe_chop_overrun_indicator.md` from `status: wip` to
    `status: done`. Verify the plan link and sidecar status. Also ensure this landing
    plan reaches its normal completed lifecycle through the executing epic's land agent.
 

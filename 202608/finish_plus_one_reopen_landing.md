@@ -229,7 +229,7 @@ This final phase completes the landing interrupted by this follow-up plan.
    unused code it reports. Rerun `just check` after any cleanup.
 
 5. Set `status: done` in the frontmatter of
-   `plans:202608/plus_one_post_close_reopen_race.md`, and also mark this follow-up plan
+   `@plan:202608/plus_one_post_close_reopen_race.md`, and also mark this follow-up plan
    file done. Verify both sidecar changes are durable.
 
 ## Verification expectations

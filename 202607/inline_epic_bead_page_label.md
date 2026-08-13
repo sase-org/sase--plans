@@ -23,7 +23,7 @@ Commit `9e5eadc6` stopped SASE from hard-wrapping the epic bead page URL, which 
 uninterrupted URL by moving the `Page:` label onto its own line and starting the address at column zero:
 
 ```text
-   Path: plans:202607/axe_chop_reports.md
+   Path: plan:202607/axe_chop_reports.md
    Bead: sase-ar
    Page:
 https://github.com/sase-org/sase--beads/blob/main/pages/sase-ar/README.md
@@ -75,7 +75,7 @@ Plan-backed summary — the page row rejoins the label column and reads as one f
 ◆ EPIC sase-ar
   Title: AXE Chop Reports
    Goal: Selecting a chop on the ACE AXE tab shows a beautiful, colored, …
-   Path: plans:202607/axe_chop_reports.md
+   Path: plan:202607/axe_chop_reports.md
    Bead: sase-ar
    Page: https://github.com/sase-org/sase--beads/blob/main/pages/sase-ar/README.md
 ```

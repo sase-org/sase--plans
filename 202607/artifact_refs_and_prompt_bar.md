@@ -141,13 +141,13 @@ with `<kind>` matching `[a-z][a-z0-9_-]*` and these payload grammars:
 
 | Kind                         | Payload                                                         | Example                                    |
 | :--------------------------- | :-------------------------------------------------------------- | :----------------------------------------- |
-| `plans` or any document role | POSIX relpath under the role's roots                            | `plans:202607/durable_plan_refs.md`        |
+| `plans` or any document role | POSIX relpath under the role's roots                            | `plan:202607/durable_plan_refs.md`         |
 | `commit`                     | `<repo>@<sha>` (7–40 lowercase hex; canonical render = full 40) | `commit:sase@a1ed6146f…`                   |
 | `chat`                       | relpath under the chats root (`~/.sase/chats/`)                 | `chat:202607/main-commit-260707_115135.md` |
 | `bug`                        | `<project>#<n>`                                                 | `bug:sase#123`                             |
 | `file`                       | an artifact-file id (`explicit:<hex24>` or `default:<hex24>`)   | `file:default:52895d68931185056fd0e49f`    |
 
-Prompt form: the canonical form prefixed with `@`, e.g. `@plans:202607/foo.md#L12-L18`.
+Prompt form: the canonical form prefixed with `@`, e.g. `@plan:202607/foo.md#L12-L18`.
 
 Design decisions, made here so phases do not re-litigate them:
 
@@ -158,7 +158,7 @@ Design decisions, made here so phases do not re-litigate them:
   `crates/sase_core/src/plan/read.rs:56-72`).
 - **Unknown kinds are prose, not errors.** A token like `@user:handle` whose kind is neither builtin nor a configured
   role is left untouched everywhere: launch expansion skips it, the highlighter leaves it unstyled, and no diagnostic
-  fires by default. This keeps existing prompts byte-stable (today `@plans:x` is silently ignored because `:` is
+  fires by default. This keeps existing prompts byte-stable (today `@plan:x` is silently ignored because `:` is
   excluded from the file-ref token class, `src/sase/file_references.py:37`) and makes the known-kind set the single
   definition of refhood. Completion is what prevents typos.
 - **Fragment anchors resolve the `#` collision by kind.** The kind is parsed first and selects the payload grammar:
@@ -167,7 +167,7 @@ Design decisions, made here so phases do not re-litigate them:
   unambiguous, and xprompt tokenization cannot see the `#` because it never follows whitespace
   (`src/sase/xprompt/_parsing_references.py`). Resolution ignores fragments; they are carried, rendered, and shown.
 - **Left context escapes literals.** A ref candidate's `@` must sit at start-of-line, after whitespace, or after `"`/`'`
-  — the same rule as `_FILE_REF_PATTERN` — so writing a ref in backticks (`` `@plans:x.md` ``) keeps it literal in
+  — the same rule as `_FILE_REF_PATTERN` — so writing a ref in backticks (`` `@plan:x.md` ``) keeps it literal in
   prompts and in the highlighter (which additionally honors `literal_zone_ranges`).
 - **Bug and project labels use the user-facing project name** (`bug:sase#123`, never `gh_sase-org__sase`), per the
   project-display-name convention; resolution accepts the key as an alias.
@@ -211,7 +211,7 @@ have one canonical lexical source consumed by both the highlighter and launch pr
 (`src/sase/xprompt/_parsing_references.py:36`, `xprompt_inspect.tokenize`).
 
 **`:` is a hard token delimiter in every tokenizer** — Rust (`crates/sase_core/src/editor/token.rs:336`), Python
-(`widgets/file_completion.py:24`), Lua (`sase-nvim/lua/sase/complete/_token.lua:8`) — so `@plans:202607/foo.md`
+(`widgets/file_completion.py:24`), Lua (`sase-nvim/lua/sase/complete/_token.lua:8`) — so `@plan:202607/foo.md`
 truncates to `@plans` and classifies as nothing. The working precedent is `#gh:` refs, which bypass generic tokenization
 through a dedicated pre-tokenizer detector (`crates/sase_core/src/editor/completion.rs:110`,
 `detect_vcs_ref_context_at_position`).
@@ -334,7 +334,7 @@ display-name vs key acceptance for `bug` refs; schema-gate failure behavior.
 Spend the reference in copy mode, uniformly across the four non-PR sub-tabs:
 
 - **`%@` — copy reference.** Add an `at` target to all four `artifacts_*` key groups that copies the selected entry's
-  prompt-form reference (`@plans:202607/foo.md`) via `reference_for_entry_target`; when the sub-tab has marks, copy the
+  prompt-form reference (`@plan:202607/foo.md`) via `reference_for_entry_target`; when the sub-tab has marks, copy the
   marked set one per line through `format_multi_copy_content`, and let the toast name the count. An entry with no
   reference warns and names why (e.g. an imported chat outside the chats root).
 - **`%!` — reference to a new agent prompt.** Seed the prompt bar with the workspace ref prefix and the reference —
@@ -372,7 +372,7 @@ context, and:
 
 - **Document, chat, and file refs** rewrite to `@<resolved-path>`, handing the result to the existing file-reference
   machinery (validation, home-dir copying) unchanged. A fragment is detached before the path lands in the `@` token —
-  `@plans:x.md#L12-L18` becomes `@<abs-path> (lines 12-18)` — because the file-ref grammar would otherwise treat `#…` as
+  `@plan:x.md#L12-L18` becomes `@<abs-path> (lines 12-18)` — because the file-ref grammar would otherwise treat `#…` as
   part of the filename and fail the exists-check.
 - **Commit refs** rewrite to the `<repo>@<full-sha>` locator plus the repo's resolved checkout path when the repo is
   known in the launch workspace; **bug refs** rewrite to `#<n> <url>` via the same URL resolution the Bugs copy target

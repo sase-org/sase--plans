@@ -222,7 +222,7 @@ This step runs only after Steps 1–5 are committed and pushed.
    gives that symbol its first caller. Do **not** remove the `sase-e6` entry as part of this plan — that symbol belongs
    to an active epic and `sase-e6` Phase 6 has its own read surfaces to wire up. Remove only what Symvision actually
    reports as unused, then rerun the proportionate checks.
-5. Set `status: done` in the frontmatter of `plans:202608/finish_dh_canonical_archive.md`, leaving the rest of that plan
+5. Set `status: done` in the frontmatter of `@plan:202608/finish_dh_canonical_archive.md`, leaving the rest of that plan
    intact, and publish the plans-sidecar edit through the normal plans workflow.
 6. Finish by showing the closed epic and reporting clean, synchronized status for the main repo, the plans sidecar, and
    the agents sidecar.

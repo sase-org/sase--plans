@@ -87,7 +87,7 @@ of the plans clone and is wrong now that the bead store _is_ a clone root.
 
 2. **The ACE Artifacts -> Plans tab resolves `plans:` references against the wrong root.**
    `src/sase/ace/tui/widgets/artifacts/plans_data.py` derives `plans_root = beads_dir.parent`. Post-split that is
-   `<primary>/sase/repos`, not the plans clone, so `plans:202607/<file>.md` resolves to
+   `<primary>/sase/repos`, not the plans clone, so `@plan:202607/<file>.md` resolves to
    `<primary>/sase/repos/202607/<file>.md`, which does not exist. Every epic and phase row renders "Linked plan
    unavailable: file not found."
 
@@ -256,7 +256,7 @@ isolation.
 3. `just symvision`. Epic-symbol whitelist entries for `sase-a8` expire at close; remove whatever stale entries and
    now-unused code it reports. As of this plan there are no `sase-a8` pragmas anywhere in `src/`, `tests/`, `tools/`, or
    `docs/`, so a clean run is the expected result — investigate rather than assume if it reports otherwise.
-4. Set `status: done` in the frontmatter of the epic's plan file, `plans:202607/beads_sidecar_repo.md`.
+4. Set `status: done` in the frontmatter of the epic's plan file, `@plan:202607/beads_sidecar_repo.md`.
 5. Set `status: done` in the frontmatter of this plan file.
 
 ## Follow-ups deliberately excluded from this epic

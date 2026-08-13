@@ -106,7 +106,7 @@ Every enabling layer has already landed — this epic is pure presentation:
   (now a real reader — copy, `$EDITOR`, rendered Markdown, viewer hand-off; epic sase-aw) need no changes. Rows from the
   query facade already satisfy the viewer's `ArtifactFileLike` protocol (`path` + `kind`).
 
-The Chats sub-tab epic (sase-90, `plans:202607/artifacts_chats_subtab.md`) is the proven playbook for adding a sub-tab;
+The Chats sub-tab epic (sase-90, `@plan:202607/artifacts_chats_subtab.md`) is the proven playbook for adding a sub-tab;
 this plan follows its structure and names every registration point that has drifted since.
 
 ## Design pillars

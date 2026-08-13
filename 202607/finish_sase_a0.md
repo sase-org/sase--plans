@@ -49,7 +49,7 @@ entries and newly exposed dead code, and set the linked plan's frontmatter statu
 
 ## Verified baseline
 
-- `sase bead show sase-a0` resolves the plan as `plans:202607/fix_ci_failures.md`. All four phase beads are closed:
+- `sase bead show sase-a0` resolves the plan as `@plan:202607/fix_ci_failures.md`. All four phase beads are closed:
   `sase-a0.1`, `sase-a0.2`, `sase-a0.3`, and `sase-a0.4`.
 - The phase implementations are present in source and history:
   - `55a2b0321` adds the documented 3.0x `notification_store_5k_mark_all_read` per-anchor variance factor.
@@ -152,7 +152,7 @@ This is the final phase and must preserve the order below.
 4. Only after closure, run `just symvision` if the recipe is available. Remove every expired `sase-a0` `--epic-symbol`
    entry and any unused code symvision exposes. Run `just check` again after any source or Justfile cleanup.
 5. Open the plans sidecar through the repository skill and change only the linked canonical plan
-   `plans:202607/fix_ci_failures.md` frontmatter from `status: wip` to `status: done`.
+   `@plan:202607/fix_ci_failures.md` frontmatter from `status: wip` to `status: done`.
 6. Verify the final bead shows `status: closed` with resolution `done`, the linked plan shows `status: done`, symvision
    has no expired epic whitelist or unused-symbol findings, and both repositories are clean except for the intended
    landing changes.

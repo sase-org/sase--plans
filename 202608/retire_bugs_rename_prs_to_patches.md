@@ -22,7 +22,7 @@ status: wip
 # Retire Bugs, rename PRs to Patches, reorder the Artifacts sub-tabs
 
 Phase `tabs` of epic `sase-jd` (bead `sase-jd.8`). The epic plan is
-`plans:202608/external_artifact_ingestion.md`; read its `Phase tabs` section and its
+`@plan:202608/external_artifact_ingestion.md`; read its `Phase tabs` section and its
 `Ground rules for every phase` before starting.
 
 The Artifacts sub-tab strip becomes exactly four panes:

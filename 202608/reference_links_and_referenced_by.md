@@ -29,7 +29,7 @@ status: done
 # Plan: Reference links and `Referenced By` write-back
 
 Phase `linking` of epic `sase-js` (bead `sase-js.6`), whose plan is
-`plans:202608/artifact_ref_contract.md` — §3.7, §3.8 and §4.6. Depends on `builtins`
+`@plan:202608/artifact_ref_contract.md` — §3.7, §3.8 and §4.6. Depends on `builtins`
 (`sase-js.4`) and `files` (`sase-js.5`), both landed. Siblings `ace` (`sase-js.7`) and
 `adopt` (`sase-js.9`) are in flight in parallel workspaces; this plan touches no ACE
 module and no `docs/` page, so the land agent has nothing to reconcile with them.

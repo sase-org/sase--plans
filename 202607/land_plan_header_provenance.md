@@ -45,7 +45,7 @@ $ /tmp/core0123/bin/python -c '...sdd_plan_header_block_parse(plan_header_proven
 
 Consequences on a published install:
 
-1. `sase plan links validate` — a `just validate` and CI gate — errors on `plans:202607/plan_header_provenance.md`,
+1. `sase plan links validate` — a `just validate` and CI gate — errors on `@plan:202607/plan_header_provenance.md`,
    because its fenced Markdown example of the header block is read as a second, discontiguous live header. This is
    exactly the failure `sase-ag.1` and `sase-ag.3` recorded in their bead notes before `22fb5ba` landed. Plan viewers
    degrade to no provenance rows for the same reason.
@@ -166,7 +166,7 @@ This is the final step of the epic and must run after step 4, in this order:
 
    Do not add a pragma: `tools/` does not reference these Python symbols, only the Rust binding names.
 
-3. Set `status: done` in the frontmatter of `plans:202607/plan_header_provenance.md`
+3. Set `status: done` in the frontmatter of `@plan:202607/plan_header_provenance.md`
    (`sase/repos/plans/202607/plan_header_provenance.md`, currently `status: wip`).
 
 ## Verification

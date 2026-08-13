@@ -116,11 +116,11 @@ Help text must state the accepted target forms and the ladder order, and the epi
 examples:
   sase plan show
   sase plan show abcdef12
-  sase plan show plans:202608/plan_show_command.md
+  sase plan show plan:202608/plan_show_command.md
   sase plan show 202608/plan_show_command
   sase plan show sase_plan_feature.md
   sase plan show sase-64
-  sase plan show plans:202608/plan_show_command.md --format json
+  sase plan show plan:202608/plan_show_command.md --format json
   sase plan show plan_show_command --format raw > plan.md
 ```
 

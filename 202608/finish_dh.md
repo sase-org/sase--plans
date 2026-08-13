@@ -194,7 +194,7 @@ This is the final phase and must follow the user's landing order.
 5. Only after the close succeeds, run `just symvision`. Remove expired `sase-dh` whitelist entries and any newly exposed
    unused code, then rerun Symvision and the proportionate main checks. Commit and publish those cleanup changes through
    the required SASE commit workflow.
-6. Set `status: done` in the frontmatter of `plans:202608/artifact_persistence_sidecars.md`, preserving the rest of the
+6. Set `status: done` in the frontmatter of `@plan:202608/artifact_persistence_sidecars.md`, preserving the rest of the
    plan. Publish the plans-sidecar edit through its normal workflow.
 7. Finish by showing the closed epic, reading the linked plan from a fresh remote-backed checkout, and reporting
    clean/synchronized status for main, core, plans, and agents.

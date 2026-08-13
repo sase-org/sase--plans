@@ -297,7 +297,7 @@ it reports for `sase-bv`. The epic's entries were already removed by `sase-bv.3`
 expect no findings; if any appear, clean them.
 
 **Finally**, set `status: done` in the frontmatter of the epic's plan file,
-`plans:202607/bead_created_by_attribution.md` (the `PLAN` path printed by `sase bead show sase-bv`).
+`@plan:202607/bead_created_by_attribution.md` (the `PLAN` path printed by `sase bead show sase-bv`).
 
 If the close is rejected, do not force it. The named phases were never completed; finish or reopen them first.
 

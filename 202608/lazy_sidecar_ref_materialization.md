@@ -127,7 +127,7 @@ This is not specific to `@research`. It applies to any document sidecar with
 ### Relationship to the `sase-js` epic
 
 `sase-js` (Artifact reference contract) shipped all nine phases. The epic plan
-(`plans:202608/artifact_ref_contract.md`) addresses lazy sidecars only through
+(`@plan:202608/artifact_ref_contract.md`) addresses lazy sidecars only through
 `$(sase repo path research --ensure)` inside the `#research*` xprompts (§ around
 line 946) — that is, only for the _xprompt_ surface it was replacing. When the
 `@research` ref surface took over, it inherited the resolution contract but not the

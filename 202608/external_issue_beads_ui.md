@@ -20,7 +20,7 @@ status: wip
 
 ## Goal
 
-Complete phase `bead_bug_ui` from `plans:202608/external_artifact_ingestion.md` while
+Complete phase `bead_bug_ui` from `@plan:202608/external_artifact_ingestion.md` while
 the Bugs sub-tab still exists. The Beads pane must remain bead-only, but every bead that
 mirrors or references tracker issues must expose cached remote state, reconciliation
 drift, relationship detail, reverse links, issue-aware filters, and capability-gated
