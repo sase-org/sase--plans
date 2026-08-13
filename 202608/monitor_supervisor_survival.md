@@ -70,7 +70,7 @@ phases:
     and report what the CLI, the tree, and the follow-up agent actually did.'
 proposed_by: bbugyi200.athena.zo
 create_time: 2026-08-13 13:37:23
-status: wip
+status: done
 bead_id: sase-l1
 ---
 
