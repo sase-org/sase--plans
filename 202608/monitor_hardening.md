@@ -1,129 +1,128 @@
 ---
 tier: epic
-title: sase monitor hardening — a supervisor that cannot silently orphan, wedge, or lie
-goal: "The monitor supervisor survives every command shape a real build throws at it —
-  continuous output, partial lines, binary bytes, backgrounded grandchildren,
+title: sase monitor hardening — a supervisor that cannot silently orphan, wedge, or
+  lie
+goal: 'The monitor supervisor survives every command shape a real build throws at
+  it — continuous output, partial lines, binary bytes, backgrounded grandchildren,
   TERM-ignoring children — enforces its deadline on every tick, never leaves a live
-  process group behind when it dies, reconciles wedged lanes without a human, and only
-  reports a monitor terminal once the claim, the log, and the follow-up have actually
-  been settled.
+  process group behind when it dies, reconciles wedged lanes without a human, and
+  only reports a monitor terminal once the claim, the log, and the follow-up have
+  actually been settled.
 
-  "
+  '
 phases:
-  - id: wire
-    title: Monitor supervision fields on the agent scan wire
-    depends_on: []
-    size: small
-    description: "wire: add the process-identity, settlement, idle-timeout, and
-      follow-up-output marker fields to the Rust `AgentMetaWire` and its Python mirrors
-      so the hardening phases have somewhere durable to record them.
+- id: wire
+  title: Monitor supervision fields on the agent scan wire
+  depends_on: []
+  size: small
+  description: 'wire: add the process-identity, settlement, idle-timeout, and follow-up-output
+    marker fields to the Rust `AgentMetaWire` and its Python mirrors so the hardening
+    phases have somewhere durable to record them.
 
-      "
-  - id: stream
-    title: Rebuild the supervisor's stream and wait loop
-    depends_on: []
-    size: medium
-    description: "stream: replace the blocking line-oriented `readline()` loop with a
-      pipe-backed bounded writer plus a `child.poll()` tick loop, guard the whole
-      supervisor lifecycle in `try`/`finally`, make every reader rotation-aware, and
-      pass the monitor workflow to `release_workspace()`.
+    '
+- id: stream
+  title: Rebuild the supervisor's stream and wait loop
+  depends_on: []
+  size: medium
+  description: 'stream: replace the blocking line-oriented `readline()` loop with
+    a pipe-backed bounded writer plus a `child.poll()` tick loop, guard the whole
+    supervisor lifecycle in `try`/`finally`, make every reader rotation-aware, and
+    pass the monitor workflow to `release_workspace()`.
 
-      "
-  - id: identity
-    title: Durable process identity for the supervisor and its child
-    depends_on:
-      - wire
-      - stream
-    size: small
-    description: "identity: persist the monitored command's pgid and a
-      boot-id/start-ticks identity for the supervisor pid before the command can outlive
-      its recorder, scrub agent identity from the command's environment, and validate
-      identity before signalling.
+    '
+- id: identity
+  title: Durable process identity for the supervisor and its child
+  depends_on:
+  - wire
+  - stream
+  size: small
+  description: 'identity: persist the monitored command''s pgid and a boot-id/start-ticks
+    identity for the supervisor pid before the command can outlive its recorder, scrub
+    agent identity from the command''s environment, and validate identity before signalling.
 
-      "
-  - id: transaction
-    title: Transactional monitor start and settlement
-    depends_on:
-      - identity
-    size: medium
-    description: "transaction: take a per-lane lock inside `start_monitor()`, hold the
-      command behind a go barrier until the workspace claim is secured, fingerprint the
-      request for honest idempotency, and write the terminal marker only after
-      settlement.
+    '
+- id: transaction
+  title: Transactional monitor start and settlement
+  depends_on:
+  - identity
+  size: medium
+  description: 'transaction: take a per-lane lock inside `start_monitor()`, hold the
+    command behind a go barrier until the workspace claim is secured, fingerprint
+    the request for honest idempotency, and write the terminal marker only after settlement.
 
-      "
-  - id: reconcile
-    title: Active, complete reconciliation of dead supervisors
-    depends_on:
-      - transaction
-    size: medium
-    description: "reconcile: make dead-supervisor reconciliation kill the surviving
-      tree, release the claim, and dispose of the dropped follow-up; run it from `list`,
-      the TUI, and the axe scheduler rather than only from `stop`; mark pre-reboot
-      monitors `lost`.
+    '
+- id: reconcile
+  title: Active, complete reconciliation of dead supervisors
+  depends_on:
+  - transaction
+  size: medium
+  description: 'reconcile: make dead-supervisor reconciliation kill the surviving
+    tree, release the claim, and dispose of the dropped follow-up; run it from `list`,
+    the TUI, and the axe scheduler rather than only from `stop`; mark pre-reboot monitors
+    `lost`.
 
-      "
-  - id: idle
-    title: --idle-timeout for commands that hang without exiting
-    depends_on:
-      - wire
-      - stream
-    size: small
-    description: "idle: add an opt-in idle timeout that fires when a monitored command
-      has produced no output for N seconds, so `--timeout` can be generous without being
-      useless.
+    '
+- id: idle
+  title: --idle-timeout for commands that hang without exiting
+  depends_on:
+  - wire
+  - stream
+  size: small
+  description: 'idle: add an opt-in idle timeout that fires when a monitored command
+    has produced no output for N seconds, so `--timeout` can be generous without being
+    useless.
 
-      "
-  - id: followup
-    title: Follow-up prompt trust boundary and inherited routing
-    depends_on:
-      - wire
-      - stream
-    size: medium
-    description: "followup: treat retained command output as untrusted data in the
-      composed prompt, add `--next-output none|tail|file`, fence the command and cwd
-      cells, and carry the starter's model and reasoning effort to the follow-up agent.
+    '
+- id: followup
+  title: Follow-up prompt trust boundary and inherited routing
+  depends_on:
+  - wire
+  - stream
+  size: medium
+  description: 'followup: treat retained command output as untrusted data in the composed
+    prompt, add `--next-output none|tail|file`, fence the command and cwd cells, and
+    carry the starter''s model and reasoning effort to the follow-up agent.
 
-      "
-  - id: fidelity
-    title: Close the monitor fidelity gaps
-    depends_on:
-      - transaction
-    size: small
-    description: "fidelity: print the start summary before the handoff kill, write
-      `monitor_output_path` and `run_started_at`, and read the member's own marker files
-      instead of re-querying the artifact index in every polling loop.
+    '
+- id: fidelity
+  title: Close the monitor fidelity gaps
+  depends_on:
+  - transaction
+  size: small
+  description: 'fidelity: print the start summary before the handoff kill, write `monitor_output_path`
+    and `run_started_at`, and read the member''s own marker files instead of re-querying
+    the artifact index in every polling loop.
 
-      "
-  - id: docs
-    title: Monitor documentation and skill hazards
-    depends_on:
-      - reconcile
-      - idle
-      - followup
-      - fidelity
-    size: small
-    description: "docs: document the new supervision guarantees, states, and flags in
-      `docs/monitors.md`, and tighten the `/sase_monitor` skill with the hazard list and
-      the flags it never mentioned.
+    '
+- id: docs
+  title: Monitor documentation and skill hazards
+  depends_on:
+  - reconcile
+  - idle
+  - followup
+  - fidelity
+  size: small
+  description: 'docs: document the new supervision guarantees, states, and flags in
+    `docs/monitors.md`, and tighten the `/sase_monitor` skill with the hazard list
+    and the flags it never mentioned.
 
-      "
-  - id: exercises
-    title: End-to-end hardening exercises
-    depends_on:
-      - docs
-    size: xsmall
-    description:
-      "exercises: run real monitors and agents against the regression matrix rows that
-      automated tests cannot express, and report what the CLI, TUI, and follow-up agent
-      actually did."
+    '
+- id: exercises
+  title: End-to-end hardening exercises
+  depends_on:
+  - docs
+  size: xsmall
+  description: 'exercises: run real monitors and agents against the regression matrix
+    rows that automated tests cannot express, and report what the CLI, TUI, and follow-up
+    agent actually did.'
 proposed_by: bbugyi200.athena.sase-kp.land.w1
 create_time: 2026-08-13 09:02:19
 status: wip
+bead_id: sase-ku
 ---
 
-- **PROMPT:**
-  [prompts/202608/monitor_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/monitor_hardening.md)
+- **PROMPT:** [prompts/202608/monitor_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/monitor_hardening.md)
+- **BEAD:** [sase-ku](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ku/README.md)
 
 # Plan: `sase monitor` hardening
 
