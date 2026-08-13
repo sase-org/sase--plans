@@ -1,66 +1,60 @@
 ---
 tier: epic
 title: Rename the plans-sidecar artifact ref kind to plan
-goal:
-  The plans sidecar's document reference kind is spelled `plan` everywhere SASE writes
-  it — `plan:<path>` in machine fields and `@plan:<path>` in prose — the `plans:`
-  spelling is never emitted again, and every live `plans:` reference on this machine has
-  been migrated.
+goal: The plans sidecar's document reference kind is spelled `plan` everywhere SASE
+  writes it — `plan:<path>` in machine fields and `@plan:<path>` in prose — the `plans:`
+  spelling is never emitted again, and every live `plans:` reference on this machine
+  has been migrated.
 phases:
-  - id: core
-    title: Rename the SDD plan-reference grammar in sase-core
-    depends_on: []
-    size: small
-    description:
-      "core: rename PLAN_REFERENCE_KIND/PREFIX to plan in
-      crates/sase_core/src/plan/refs.rs, keep `plans:` as a read-only input alias that
-      re-renders canonically, and update the Rust tests and the plan_reference_render
-      kind guard."
-  - id: python
-    title: Switch every Python plan-reference literal to plan
-    depends_on:
-      - core
-    size: medium
-    description:
-      "python: replace the functional `plans:` literals in src/sase with a single shared
-      constant set to `plan:`, update CLI help and docstrings, add the sidecar ref-kind
-      naming regression test, and fix the 82 affected test files plus any visual
-      snapshots."
-  - id: beads
-    title: Migrate bead design references
-    depends_on:
-      - python
-    size: medium
-    description:
-      "beads: add a prefix-only fast path to the design-ref repair planner so an
-      alias-spelled reference is rewritten without needing its plan file on disk, then
-      run the repair over this machine's bead store and commit the result."
-  - id: prose
-    title: Rewrite prose and remaining stored references
-    depends_on:
-      - python
-    size: medium
-    description:
-      "prose: update the documentation that describes the grammar, then sweep prose
-      `plans:<path>` citations to `@plan:<path>` across docs, the plans sidecar,
-      ~/.sase/plans, and the two small stored-data sites, without touching immutable
-      history."
-  - id: land
-    title: Verify and land the rename
-    depends_on:
-      - beads
-      - prose
-    size: small
-    description:
-      "land: run the exhaustive verification lane over the combined tree, confirm no
-      emitter can produce `plans:` again, and land the epic."
+- id: core
+  title: Rename the SDD plan-reference grammar in sase-core
+  depends_on: []
+  size: small
+  description: 'core: rename PLAN_REFERENCE_KIND/PREFIX to plan in crates/sase_core/src/plan/refs.rs,
+    keep `plans:` as a read-only input alias that re-renders canonically, and update
+    the Rust tests and the plan_reference_render kind guard.'
+- id: python
+  title: Switch every Python plan-reference literal to plan
+  depends_on:
+  - core
+  size: medium
+  description: 'python: replace the functional `plans:` literals in src/sase with
+    a single shared constant set to `plan:`, update CLI help and docstrings, add the
+    sidecar ref-kind naming regression test, and fix the 82 affected test files plus
+    any visual snapshots.'
+- id: beads
+  title: Migrate bead design references
+  depends_on:
+  - python
+  size: medium
+  description: 'beads: add a prefix-only fast path to the design-ref repair planner
+    so an alias-spelled reference is rewritten without needing its plan file on disk,
+    then run the repair over this machine''s bead store and commit the result.'
+- id: prose
+  title: Rewrite prose and remaining stored references
+  depends_on:
+  - python
+  size: medium
+  description: 'prose: update the documentation that describes the grammar, then sweep
+    prose `plans:<path>` citations to `@plan:<path>` across docs, the plans sidecar,
+    ~/.sase/plans, and the two small stored-data sites, without touching immutable
+    history.'
+- id: land
+  title: Verify and land the rename
+  depends_on:
+  - beads
+  - prose
+  size: small
+  description: 'land: run the exhaustive verification lane over the combined tree,
+    confirm no emitter can produce `plans:` again, and land the epic.'
 proposed_by: bbugyi200.athena.zl.f1
 create_time: 2026-08-13 12:21:26
 status: wip
+bead_id: sase-ky
 ---
 
-- **PROMPT:**
-  [prompts/202608/plan_ref_kind_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plan_ref_kind_rename.md)
+- **PROMPT:** [prompts/202608/plan_ref_kind_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/plan_ref_kind_rename.md)
+- **BEAD:** [sase-ky](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ky/README.md)
 
 # Plan: Rename the plans-sidecar artifact ref kind to plan
 
