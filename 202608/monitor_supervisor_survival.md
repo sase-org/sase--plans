@@ -1,81 +1,81 @@
 ---
 tier: epic
 title: A monitor an agent starts must actually run
-goal: "A monitor started from inside an agent survives that agent's own runner teardown,
-  and when it cannot, the failure is loud and immediate: `sase monitor start` refuses to
-  return success for a supervisor that is not provably alive, a monitor's workspace is
-  never harvested out from under it, and a monitor's `--next` action is never silently
-  dropped.
+goal: 'A monitor started from inside an agent survives that agent''s own runner teardown,
+  and when it cannot, the failure is loud and immediate: `sase monitor start` refuses
+  to return success for a supervisor that is not provably alive, a monitor''s workspace
+  is never harvested out from under it, and a monitor''s `--next` action is never
+  silently dropped.
 
-  "
+  '
 phases:
-  - id: detach
-    title: Supervisor survives its starter's teardown
-    depends_on: []
-    size: medium
-    description: "detach: reparent the supervisor to PID 1 before `start_monitor`
-      returns and set its signal dispositions in the first statements it executes, so
-      the starter's runner teardown cannot kill it during its startup window.
+- id: detach
+  title: Supervisor survives its starter's teardown
+  depends_on: []
+  size: medium
+  description: 'detach: reparent the supervisor to PID 1 before `start_monitor` returns
+    and set its signal dispositions in the first statements it executes, so the starter''s
+    runner teardown cannot kill it during its startup window.
 
-      "
-  - id: ack
-    title: Monitor start is not reported until the supervisor proves it is alive
-    depends_on:
-      - detach
-    size: medium
-    description: "ack: have the supervisor publish a startup acknowledgement, block
-      `start_monitor` on it, and turn a missing acknowledgement into a torn-down member
-      and a hard `MonitorError` the still-live starter agent can act on.
+    '
+- id: ack
+  title: Monitor start is not reported until the supervisor proves it is alive
+  depends_on:
+  - detach
+  size: medium
+  description: 'ack: have the supervisor publish a startup acknowledgement, block
+    `start_monitor` on it, and turn a missing acknowledgement into a torn-down member
+    and a hard `MonitorError` the still-live starter agent can act on.
 
-      "
-  - id: claim
-    title: A monitor's workspace claim cannot be harvested behind its back
-    depends_on: []
-    size: small
-    description: "claim: make the stale-RUNNING sweeper reconcile a monitor before
-      releasing its `ace-monitor` claim, and leave the claim alone when reconciliation
-      fails, so a live lane's workspace is never handed to another agent.
+    '
+- id: claim
+  title: A monitor's workspace claim cannot be harvested behind its back
+  depends_on: []
+  size: small
+  description: 'claim: make the stale-RUNNING sweeper reconcile a monitor before releasing
+    its `ace-monitor` claim, and leave the claim alone when reconciliation fails,
+    so a live lane''s workspace is never handed to another agent.
 
-      "
-  - id: followup
-    title: The --next action survives a failed claim transfer
-    depends_on:
-      - claim
-    size: medium
-    description: "followup: stop coupling the follow-up launch to a workspace-claim
-      transfer that can no longer succeed, and give settlement an explicit
-      degraded-launch outcome instead of dropping the follow-up.
+    '
+- id: followup
+  title: The --next action survives a failed claim transfer
+  depends_on:
+  - claim
+  size: medium
+  description: 'followup: stop coupling the follow-up launch to a workspace-claim
+    transfer that can no longer succeed, and give settlement an explicit degraded-launch
+    outcome instead of dropping the follow-up.
 
-      "
-  - id: visibility
-    title: A stalled monitor lane is visible without reading done.json
-    depends_on:
-      - followup
-    size: small
-    description: "visibility: surface dead-on-arrival supervisors and follow-up launch
-      failures in the ACE Agents tree, `sase monitor list`, and notifications, and
-      document the new guarantees.
+    '
+- id: visibility
+  title: A stalled monitor lane is visible without reading done.json
+  depends_on:
+  - followup
+  size: small
+  description: 'visibility: surface dead-on-arrival supervisors and follow-up launch
+    failures in the ACE Agents tree, `sase monitor list`, and notifications, and document
+    the new guarantees.
 
-      "
-  - id: exercises
-    title: End-to-end exercises for the agent-started monitor path
-    depends_on:
-      - detach
-      - ack
-      - claim
-      - followup
-      - visibility
-    size: xsmall
-    description:
-      "exercises: drive a real agent-started monitor on every supported runtime and
-      report what the CLI, the tree, and the follow-up agent actually did."
+    '
+- id: exercises
+  title: End-to-end exercises for the agent-started monitor path
+  depends_on:
+  - detach
+  - ack
+  - claim
+  - followup
+  - visibility
+  size: xsmall
+  description: 'exercises: drive a real agent-started monitor on every supported runtime
+    and report what the CLI, the tree, and the follow-up agent actually did.'
 proposed_by: bbugyi200.athena.zo
 create_time: 2026-08-13 13:37:23
 status: wip
+bead_id: sase-l1
 ---
 
-- **PROMPT:**
-  [prompts/202608/monitor_supervisor_survival.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/monitor_supervisor_survival.md)
+- **PROMPT:** [prompts/202608/monitor_supervisor_survival.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/monitor_supervisor_survival.md)
+- **BEAD:** [sase-l1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-l1/README.md)
 
 # Plan: A monitor an agent starts must actually run
 
