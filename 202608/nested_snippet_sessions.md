@@ -1,94 +1,88 @@
 ---
 tier: epic
 title: Nested snippet sessions in the prompt input widget
-goal: "Expanding a snippet while another snippet's tabstops are still pending suspends
-  the outer snippet instead of destroying it: the nested snippet's tabstops are visited
+goal: 'Expanding a snippet while another snippet''s tabstops are still pending suspends
+  the outer snippet instead of destroying it: the nested snippet''s tabstops are visited
   first, and once they are exhausted `Tab` resumes the enclosing snippet at the stop
   after the one that was nested into. Tabstop anchors survive arbitrary editing because
-  they are remapped from real document deltas, `Shift+Tab` steps backwards through the
-  visited stops, and the whole session state machine lives in the Rust core so any
-  future frontend gets the same behavior.
+  they are remapped from real document deltas, `Shift+Tab` steps backwards through
+  the visited stops, and the whole session state machine lives in the Rust core so
+  any future frontend gets the same behavior.
 
-  "
+  '
 phases:
-  - id: core_expansion
-    title: Rust snippet expansion planner
-    depends_on: []
-    size: medium
-    description:
-      "core_expansion: add a pure Rust expansion planner that turns a template plus its
-      insertion context into cleaned text and ordered tabstop offsets, and make it the
-      single owner of unescaped-tabstop scanning."
-  - id: core_session
-    title: Rust nested snippet session state machine
-    depends_on:
-      - core_expansion
-    size: medium
-    description:
-      "core_session: add the pure session state machine over a flat ordered stop list —
-      nest-vs-reset on expand, advance/retreat, and absolute-anchor remapping from
-      document edit deltas."
-  - id: core_binding
-    title: PyO3 binding and wire parity for the session engine
-    depends_on:
-      - core_session
-    size: small
-    description:
-      "core_binding: expose the session state machine to Python as a single wire-shaped
-      binding, with binding-level tests and the lib.rs binding inventory updated."
-  - id: py_facade
-    title: Python facade for the snippet session engine
-    depends_on:
-      - core_binding
-    size: small
-    description:
-      "py_facade: add a validated Python facade over the new binding, register the
-      binding name with the core validator, and prove the round trip against a locally
-      built core."
-  - id: widget_engine
-    title: Rewrite the prompt widget snippet mixin over the session engine
-    depends_on:
-      - py_facade
-    size: medium
-    description:
-      "widget_engine: replace the from-doc-end tabstop queue with the facade-backed
-      session, feed every document mutation through a TextArea.edit hook, and swap the
-      raw _snippet_tabstops reads for a session-active predicate."
-  - id: call_sites
-    title: Nest-vs-reset policy for every non-trigger expansion caller
-    depends_on:
-      - widget_engine
-    size: small
-    description:
-      "call_sites: make each of the five non-trigger callers of the expansion entry
-      point declare whether it nests inside the active session or replaces it, and cover
-      the whole-pane skeleton reset."
-  - id: back_nav
-    title: Shift+Tab backward tabstop navigation
-    depends_on:
-      - widget_engine
-    size: small
-    description:
-      "back_nav: turn the consumed Shift+Tab no-op into a retreat through
-      already-visited stops, across nesting boundaries, without disturbing the bullet
-      and ordered-list dedent path."
-  - id: docs_pin
-    title: Documentation and core version pin
-    depends_on:
-      - call_sites
-      - back_nav
-    size: small
-    description:
-      "docs_pin: document nested sessions and backward navigation in the ACE and editor
-      guides, update the keymap tables and CHANGELOG, and raise the sase-core-rs floor
-      once the core release lands."
+- id: core_expansion
+  title: Rust snippet expansion planner
+  depends_on: []
+  size: medium
+  description: 'core_expansion: add a pure Rust expansion planner that turns a template
+    plus its insertion context into cleaned text and ordered tabstop offsets, and
+    make it the single owner of unescaped-tabstop scanning.'
+- id: core_session
+  title: Rust nested snippet session state machine
+  depends_on:
+  - core_expansion
+  size: medium
+  description: 'core_session: add the pure session state machine over a flat ordered
+    stop list — nest-vs-reset on expand, advance/retreat, and absolute-anchor remapping
+    from document edit deltas.'
+- id: core_binding
+  title: PyO3 binding and wire parity for the session engine
+  depends_on:
+  - core_session
+  size: small
+  description: 'core_binding: expose the session state machine to Python as a single
+    wire-shaped binding, with binding-level tests and the lib.rs binding inventory
+    updated.'
+- id: py_facade
+  title: Python facade for the snippet session engine
+  depends_on:
+  - core_binding
+  size: small
+  description: 'py_facade: add a validated Python facade over the new binding, register
+    the binding name with the core validator, and prove the round trip against a locally
+    built core.'
+- id: widget_engine
+  title: Rewrite the prompt widget snippet mixin over the session engine
+  depends_on:
+  - py_facade
+  size: medium
+  description: 'widget_engine: replace the from-doc-end tabstop queue with the facade-backed
+    session, feed every document mutation through a TextArea.edit hook, and swap the
+    raw _snippet_tabstops reads for a session-active predicate.'
+- id: call_sites
+  title: Nest-vs-reset policy for every non-trigger expansion caller
+  depends_on:
+  - widget_engine
+  size: small
+  description: 'call_sites: make each of the five non-trigger callers of the expansion
+    entry point declare whether it nests inside the active session or replaces it,
+    and cover the whole-pane skeleton reset.'
+- id: back_nav
+  title: Shift+Tab backward tabstop navigation
+  depends_on:
+  - widget_engine
+  size: small
+  description: 'back_nav: turn the consumed Shift+Tab no-op into a retreat through
+    already-visited stops, across nesting boundaries, without disturbing the bullet
+    and ordered-list dedent path.'
+- id: docs_pin
+  title: Documentation and core version pin
+  depends_on:
+  - call_sites
+  - back_nav
+  size: small
+  description: 'docs_pin: document nested sessions and backward navigation in the
+    ACE and editor guides, update the keymap tables and CHANGELOG, and raise the sase-core-rs
+    floor once the core release lands.'
 proposed_by: bbugyi200.athena.zm
 create_time: 2026-08-13 12:25:46
 status: wip
+bead_id: sase-kz
 ---
 
-- **PROMPT:**
-  [prompts/202608/nested_snippet_sessions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/nested_snippet_sessions.md)
+- **PROMPT:** [prompts/202608/nested_snippet_sessions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/nested_snippet_sessions.md)
+- **BEAD:** [sase-kz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-kz/README.md)
 
 # Plan: Nested snippet sessions in the prompt input widget
 
