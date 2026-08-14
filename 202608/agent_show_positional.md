@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/agent_show_positional.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/agent_show_positional.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01t](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01t.md)
+- **COMMITS:**
+  - [d3c5254](https://github.com/sase-org/sase/commit/d3c5254ca8cbddf7df611592793632ba3b1cb4a7)
+    — feat(cli)\!: make \`sase agent show\` take the agent name positionally
 
 # Plan: Make `sase agent show` take the agent name positionally
 
