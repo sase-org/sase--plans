@@ -10,6 +10,12 @@ create_time: 2026-08-14 13:41:52
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.01j](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01j.md)
+- **COMMITS:**
+  - [402b3b6](https://github.com/sase-org/sase/commit/402b3b65ad162ff9ab978342196b4ed3c4807b33)
+    — feat(ace): inherit VCS xprompt tag for added panes
+
 # Plan: Inherit VCS xprompt when adding prompt panes
 
 ## Context and decisions
