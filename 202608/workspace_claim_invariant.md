@@ -1,85 +1,79 @@
 ---
 tier: epic
 title: One live agent per numbered workspace — close the monitor claim hole
-goal: "A numbered `<project>_<N>` workspace checkout is never occupied by two live
-  agents at once. Every process that works inside a numbered workspace holds the
-  RUNNING-field claim for that exact number for as long as it is in there, the claim's
-  PID is always a live process, and any code path that cannot satisfy that invariant
-  fails loudly instead of silently running unclaimed.
+goal: 'A numbered `<project>_<N>` workspace checkout is never occupied by two live
+  agents at once. Every process that works inside a numbered workspace holds the RUNNING-field
+  claim for that exact number for as long as it is in there, the claim''s PID is always
+  a live process, and any code path that cannot satisfy that invariant fails loudly
+  instead of silently running unclaimed.
 
-  "
+  '
 phases:
-  - id: meta
-    title: Record the agent's real workspace number in agent_meta.json
-    depends_on: []
-    size: small
-    description:
-      "meta: write and maintain `workspace_num` in every agent's `agent_meta.json` so
-      downstream consumers stop reading `None`."
-  - id: lookup
-    title: Authoritative workspace-directory to workspace-number lookup
-    depends_on: []
-    size: small
-    description:
-      "lookup: add a registry-backed helper that resolves a checkout directory to its
-      owning workspace number."
-  - id: monitor-claim
-    title: A monitor holds the claim on the workspace it runs in
-    depends_on:
-      - meta
-      - lookup
-    size: medium
-    description:
-      "monitor-claim: replace the silent `workspace_num = 0` fallback in monitor start
-      so the monitor always claims the numbered workspace its command runs in, or
-      refuses to start."
-  - id: orphan
-    title: A monitor handoff never orphans the starter's claim
-    depends_on:
-      - monitor-claim
-    size: medium
-    description:
-      "orphan: make the runner's `monitored` shutdown skip conditional on the claim
-      actually having moved to a live supervisor, so a dead-PID claim is never left
-      behind for the stale-claim reaper."
-  - id: followup
-    title:
-      Follow-up and family-attach launches never pair workspace 0 with a numbered
-      directory
-    depends_on:
-      - meta
-      - lookup
-    size: medium
-    description:
-      "followup: normalize workspace number and directory together in the monitor
-      follow-up and family-attach launch paths so a degraded launch moves out of the
-      numbered workspace instead of squatting in it unclaimed."
-  - id: finalizer
-    title: The commit finalizer stops attributing pre-existing dirt to the agent
-    depends_on: []
-    size: medium
-    description:
-      "finalizer: capture a dirty-path baseline at runner start and exclude those paths
-      from the finalizer's must-commit set, reporting them as pre-existing instead."
-  - id: guard
-    title: Occupancy diagnostics and an end-to-end regression exercise
-    depends_on:
-      - monitor-claim
-      - orphan
-      - followup
-    size: small
-    description:
-      "guard: add doctor/inventory diagnostics for unclaimed-but-occupied and
-      double-occupied workspaces, plus a regression test that replays the original
-      incident sequence."
+- id: meta
+  title: Record the agent's real workspace number in agent_meta.json
+  depends_on: []
+  size: small
+  description: 'meta: write and maintain `workspace_num` in every agent''s `agent_meta.json`
+    so downstream consumers stop reading `None`.'
+- id: lookup
+  title: Authoritative workspace-directory to workspace-number lookup
+  depends_on: []
+  size: small
+  description: 'lookup: add a registry-backed helper that resolves a checkout directory
+    to its owning workspace number.'
+- id: monitor-claim
+  title: A monitor holds the claim on the workspace it runs in
+  depends_on:
+  - meta
+  - lookup
+  size: medium
+  description: 'monitor-claim: replace the silent `workspace_num = 0` fallback in
+    monitor start so the monitor always claims the numbered workspace its command
+    runs in, or refuses to start.'
+- id: orphan
+  title: A monitor handoff never orphans the starter's claim
+  depends_on:
+  - monitor-claim
+  size: medium
+  description: 'orphan: make the runner''s `monitored` shutdown skip conditional on
+    the claim actually having moved to a live supervisor, so a dead-PID claim is never
+    left behind for the stale-claim reaper.'
+- id: followup
+  title: Follow-up and family-attach launches never pair workspace 0 with a numbered
+    directory
+  depends_on:
+  - meta
+  - lookup
+  size: medium
+  description: 'followup: normalize workspace number and directory together in the
+    monitor follow-up and family-attach launch paths so a degraded launch moves out
+    of the numbered workspace instead of squatting in it unclaimed.'
+- id: finalizer
+  title: The commit finalizer stops attributing pre-existing dirt to the agent
+  depends_on: []
+  size: medium
+  description: 'finalizer: capture a dirty-path baseline at runner start and exclude
+    those paths from the finalizer''s must-commit set, reporting them as pre-existing
+    instead.'
+- id: guard
+  title: Occupancy diagnostics and an end-to-end regression exercise
+  depends_on:
+  - monitor-claim
+  - orphan
+  - followup
+  size: small
+  description: 'guard: add doctor/inventory diagnostics for unclaimed-but-occupied
+    and double-occupied workspaces, plus a regression test that replays the original
+    incident sequence.'
 proposed_by: bbugyi200.athena.015
 parent_bead: sase-lb
 create_time: 2026-08-14 11:09:06
 status: wip
+bead_id: sase-lb.1
 ---
 
-- **PROMPT:**
-  [prompts/202608/workspace_claim_invariant.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/workspace_claim_invariant.md)
+- **PROMPT:** [prompts/202608/workspace_claim_invariant.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/workspace_claim_invariant.md)
+- **BEAD:** [sase-lb.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lb/sase-lb.1.md)
 
 # Plan: One live agent per numbered workspace — close the monitor claim hole
 
