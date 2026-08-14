@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.01r
 create_time: 2026-08-14 15:48:06
-status: wip
+status: done
 ---
 
 # Fix dotfiles CI: make `~/lib/bugyi.sh` available to the bash test job
