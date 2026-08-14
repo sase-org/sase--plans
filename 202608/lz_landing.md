@@ -19,8 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-lz.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-lz.land.md)
 - **COMMITS:**
-  - [6ee3347](https://github.com/sase-org/sase/commit/6ee334708e366715046bc7f871ca66f234794126)
-    — fix(ace): reject typed selectors in builder members
+  - [631e4b9](https://github.com/sase-org/sase--plans/commit/631e4b92bea5973cd0d11d3c3a92bb7fddbe514b)
+    — docs: mark models panel pool authoring plan done
 
 # Finish and land epic sase-lz
 
