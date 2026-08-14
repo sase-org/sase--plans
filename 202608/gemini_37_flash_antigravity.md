@@ -16,8 +16,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.01w](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01w.md)
 - **COMMITS:**
-  - [9c66daf](https://github.com/sase-org/sase/commit/9c66dafee99f15623a3969f3c394a6ecb6161ce0)
-    — feat(agy): add Gemini 3.7 Flash and make it Antigravity's default
+  - [19a78ab](https://github.com/bbugyi200/dotfiles/commit/19a78ab48ec5a8c557a7d73f80f9944e7352be22)
+    — feat(sase): default Antigravity presets to Gemini 3.7 Flash High
 
 # Add Gemini 3.7 Flash and make it Antigravity's default
 
