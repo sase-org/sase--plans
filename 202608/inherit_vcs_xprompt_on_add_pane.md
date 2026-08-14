@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.01j
 create_time: 2026-08-14 13:41:52
-status: wip
+status: done
 ---
 
 # Plan: Inherit VCS xprompt when adding prompt panes
