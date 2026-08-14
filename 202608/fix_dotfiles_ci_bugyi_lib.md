@@ -10,6 +10,12 @@ create_time: 2026-08-14 15:48:06
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.01r](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01r.md)
+- **COMMITS:**
+  - [cec2a35](https://github.com/bbugyi200/dotfiles/commit/cec2a3527575b146e15c290cf3ca87b12aa2305e)
+    — ci: install bugyi.sh before running tests
+
 # Fix dotfiles CI: make `~/lib/bugyi.sh` available to the bash test job
 
 ## Problem
