@@ -49,7 +49,7 @@ phases:
     confirm no emitter can produce `plans:` again, and land the epic.'
 proposed_by: bbugyi200.athena.zl.f1
 create_time: 2026-08-13 12:21:26
-status: wip
+status: done
 bead_id: sase-ky
 ---
 
