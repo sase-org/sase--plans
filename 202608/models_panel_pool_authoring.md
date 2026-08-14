@@ -54,7 +54,7 @@ phases:
     the selector semantics and configuration references.'
 proposed_by: bbugyi200.athena.014
 create_time: 2026-08-14 10:49:15
-status: wip
+status: done
 bead_id: sase-lz
 ---
 
