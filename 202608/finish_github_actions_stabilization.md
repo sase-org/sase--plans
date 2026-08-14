@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/stabilize_github_actions.md](stabilize_github_actions.md)
 - **BEAD:**
   [sase-m4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m4/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m4.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m4.land.md)
+- **COMMITS:**
+  - [5601920](https://github.com/sase-org/sase/commit/5601920c9dc66259eb858dc7c851e6d4801014a8)
+    — test: stabilize GitHub Actions checks
 
 # Plan
 
