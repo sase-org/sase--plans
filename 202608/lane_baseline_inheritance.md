@@ -20,6 +20,11 @@ status: done
   [202608/workspace_claim_invariant.md](https://github.com/sase-org/sase--plans/blob/main/202608/workspace_claim_invariant.md)
 - **BEAD:**
   [sase-lb.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lb/sase-lb.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-lb.1.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-lb.1.land.md)
+- **COMMITS:**
+  - [e2df552](https://github.com/sase-org/sase--plans/commit/e2df5527ccd3bfc8801d29f28d34e5e777ea3ed0)
+    — docs(plans): mark workspace_claim_invariant epic plan done
 
 # Plan: A lane's dirty-path baseline belongs to the lane, not to each continuation run
 
