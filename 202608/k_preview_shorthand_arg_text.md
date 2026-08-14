@@ -14,6 +14,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/k_preview_shorthand_arg_text.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/k_preview_shorthand_arg_text.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01v](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01v.md)
+- **COMMITS:**
+  - [f59e307](https://github.com/sase-org/sase/commit/f59e30717cc06c962d5acf4406a43b65372f9184)
+    — fix(ace): demote owning-xprompt preview inside shorthand argument text
 
 # `K` should stop previewing the owning xprompt from inside `#name: ` / `#name:: ` argument text
 
