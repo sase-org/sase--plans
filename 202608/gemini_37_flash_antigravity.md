@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/gemini_37_flash_antigravity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/gemini_37_flash_antigravity.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01w](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01w.md)
+- **COMMITS:**
+  - [9c66daf](https://github.com/sase-org/sase/commit/9c66dafee99f15623a3969f3c394a6ecb6161ce0)
+    — feat(agy): add Gemini 3.7 Flash and make it Antigravity's default
 
 # Add Gemini 3.7 Flash and make it Antigravity's default
 
