@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/fix_selector_builder_enter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fix_selector_builder_enter.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01h](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01h.md)
+- **COMMITS:**
+  - [ecb5c93](https://github.com/sase-org/sase/commit/ecb5c939df060286609a659680b42ef494ebba41)
+    — fix(ace): confirm selector builder on Enter when list is focused
 
 # Restore Enter confirmation in the model selector builder
 
