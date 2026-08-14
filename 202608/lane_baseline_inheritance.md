@@ -23,8 +23,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-lb.1.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-lb.1.land.md)
 - **COMMITS:**
-  - [e2df552](https://github.com/sase-org/sase--plans/commit/e2df5527ccd3bfc8801d29f28d34e5e777ea3ed0)
-    — docs(plans): mark workspace_claim_invariant epic plan done
+  - [ee6f3c7](https://github.com/sase-org/sase/commit/ee6f3c7d302e37504d7c4fd951bc7d846dfd7f1d)
+    — fix(axe): inherit a family-attach parent's commit finalizer baseline
 
 # Plan: A lane's dirty-path baseline belongs to the lane, not to each continuation run
 
