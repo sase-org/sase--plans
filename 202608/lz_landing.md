@@ -16,6 +16,11 @@ status: done
   [202608/models_panel_pool_authoring.md](https://github.com/sase-org/sase--plans/blob/main/202608/models_panel_pool_authoring.md)
 - **BEAD:**
   [sase-lz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lz/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-lz.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-lz.land.md)
+- **COMMITS:**
+  - [6ee3347](https://github.com/sase-org/sase/commit/6ee334708e366715046bc7f871ca66f234794126)
+    — fix(ace): reject typed selectors in builder members
 
 # Finish and land epic sase-lz
 
