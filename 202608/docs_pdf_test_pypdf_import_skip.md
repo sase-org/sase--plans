@@ -18,6 +18,12 @@ status: done
   [prompts/202608/docs_pdf_test_pypdf_import_skip.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/docs_pdf_test_pypdf_import_skip.md)
 - **BEAD:**
   [sase-m4.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m4/sase-m4.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m4.6--2--code](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-m4.6--2--code/README.md)
+  - [bbugyi200.athena.sase-m4.6--2--plan](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-m4.6--2--plan/README.md)
+- **COMMITS:**
+  - [357c45c](https://github.com/sase-org/sase/commit/357c45c7235f4d8f23539787dc16f4df41955470)
+    — test(docs): skip pypdf-dependent docs-PDF test when pypdf is absent
 
 # Plan: Skip the pypdf-dependent docs-PDF unit test when pypdf is not installed
 
