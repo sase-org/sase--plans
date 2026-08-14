@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/xprompt_spacer_tabstop_jump.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/xprompt_spacer_tabstop_jump.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01n](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01n.md)
+- **COMMITS:**
+  - [fa93b3a](https://github.com/sase-org/sase/commit/fa93b3ad7c31cf1bf57232db25d112643bb7b7bb)
+    — fix(ace): drop xprompt completion spacer when Tab jumps to next tabstop
 
 # Plan: Drop the xprompt completion spacer when Tab jumps to the next tabstop
 
