@@ -1,65 +1,65 @@
 ---
 tier: epic
 title: Full model-pool support in the Models panel alias editor
-goal: "Model alias definitions overridden from the ACE Models panel can specify
-  round-robin pools and ordered fallback chains through a guided, keyboard-driven
-  builder instead of hand-typed free text, the temporary-override path refuses selector
-  expressions instead of silently persisting a corrupted single target, and the docs
-  describe the shipped behavior.
+goal: 'Model alias definitions overridden from the ACE Models panel can specify round-robin
+  pools and ordered fallback chains through a guided, keyboard-driven builder instead
+  of hand-typed free text, the temporary-override path refuses selector expressions
+  instead of silently persisting a corrupted single target, and the docs describe
+  the shipped behavior.
 
-  "
+  '
 phases:
-  - id: override-selector-reject
-    title: Reject selector expressions in the temporary-override path
-    depends_on: []
-    size: small
-    description: "override-selector-reject: detect selector syntax with
-      parse_model_alias_selector in the panel's Custom Override Model flow and refuse it
-      with a message pointing at the persistent Edit key, instead of letting a pool
-      string split on its first slash and persist a bogus single-target override.
+- id: override-selector-reject
+  title: Reject selector expressions in the temporary-override path
+  depends_on: []
+  size: small
+  description: 'override-selector-reject: detect selector syntax with parse_model_alias_selector
+    in the panel''s Custom Override Model flow and refuse it with a message pointing
+    at the persistent Edit key, instead of letting a pool string split on its first
+    slash and persist a bogus single-target override.
 
-      "
-  - id: selector-edit-plumbing
-    title: Parse-based selector detection and prefilled custom input
-    depends_on:
-      - override-selector-reject
-    size: small
-    description: "selector-edit-plumbing: add a shared TUI selector helper module over
-      the existing llm_provider API, replace the substring selector sniffing in the
-      alias Edit flow with real parsing plus per-member safety checks, and give the
-      custom-model input an initial value so editing an existing selector no longer
-      means retyping it.
+    '
+- id: selector-edit-plumbing
+  title: Parse-based selector detection and prefilled custom input
+  depends_on:
+  - override-selector-reject
+  size: small
+  description: 'selector-edit-plumbing: add a shared TUI selector helper module over
+    the existing llm_provider API, replace the substring selector sniffing in the
+    alias Edit flow with real parsing plus per-member safety checks, and give the
+    custom-model input an initial value so editing an existing selector no longer
+    means retyping it.
 
-      "
-  - id: selector-builder
-    title: Guided pool and fallback builder modal
-    depends_on:
-      - selector-edit-plumbing
-    size: medium
-    description: "selector-builder: add a SelectorBuilderModal that assembles selector
-      members from the existing model picker and effort ladder with add, remove,
-      reorder, per-member effort, and pool-versus-fallback toggling, gate member
-      selection against nested selectors, and route a new picker entry row through it
-      into the unchanged preview and write path.
+    '
+- id: selector-builder
+  title: Guided pool and fallback builder modal
+  depends_on:
+  - selector-edit-plumbing
+  size: medium
+  description: 'selector-builder: add a SelectorBuilderModal that assembles selector
+    members from the existing model picker and effort ladder with add, remove, reorder,
+    per-member effort, and pool-versus-fallback toggling, gate member selection against
+    nested selectors, and route a new picker entry row through it into the unchanged
+    preview and write path.
 
-      "
-  - id: selector-docs
-    title: Documentation sync for selector authoring
-    depends_on:
-      - selector-builder
-    size: small
-    description:
-      "selector-docs: correct the ACE Models panel documentation that claims the custom
-      input only accepts concrete model strings, document the builder row and its keys,
-      state that temporary overrides refuse selectors, and cross-check the selector
-      semantics and configuration references."
+    '
+- id: selector-docs
+  title: Documentation sync for selector authoring
+  depends_on:
+  - selector-builder
+  size: small
+  description: 'selector-docs: correct the ACE Models panel documentation that claims
+    the custom input only accepts concrete model strings, document the builder row
+    and its keys, state that temporary overrides refuse selectors, and cross-check
+    the selector semantics and configuration references.'
 proposed_by: bbugyi200.athena.014
 create_time: 2026-08-14 10:49:15
 status: wip
+bead_id: sase-lz
 ---
 
-- **PROMPT:**
-  [prompts/202608/models_panel_pool_authoring.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/models_panel_pool_authoring.md)
+- **PROMPT:** [prompts/202608/models_panel_pool_authoring.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/models_panel_pool_authoring.md)
+- **BEAD:** [sase-lz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lz/README.md)
 
 # Full model-pool support when overriding model alias definitions in the Models panel
 
