@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/powerful_variables.md](powerful_variables.md)
 - **BEAD:**
   [sase-mg](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mg/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-mg.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mg.land.md)
+- **COMMITS:**
+  - [9d9d499](https://github.com/sase-org/sase/commit/9d9d49959146740f171753547ad32145fbcb0d3e)
+    — build(deps): require powerful variable core release
 
 # Complete powerful-variable landing integration
 
