@@ -7,7 +7,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.02j
 create_time: 2026-08-15 13:23:54
-status: wip
+status: done
 ---
 
 # Plan: Fix nested epic landing handoffs
