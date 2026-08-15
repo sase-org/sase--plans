@@ -17,6 +17,12 @@ status: done
 - **PARENT:** [202608/unified_artifacts_query_1.md](unified_artifacts_query_1.md)
 - **BEAD:**
   [sase-m6.6.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.6.1.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m6.6.1.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.6.1.5.md)
+- **COMMITS:**
+  - [545cb8e](https://github.com/sase-org/sase/commit/545cb8e7055c61a81773c424a94a73386aa131db)
+    — feat(query): wire the compiled query profile into contracts, host facade, and
+    FilterBar
 
 # Plan: Migrate every flat Artifacts pane to the shared query profile
 
