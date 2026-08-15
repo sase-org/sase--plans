@@ -20,8 +20,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-m9.2.1.6.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.2.1.6.land.md)
 - **COMMITS:**
-  - [4ba7ee8](https://github.com/sase-org/sase/commit/4ba7ee812573024d48b201d223c7cc075903b3b0)
-    — build(deps): require provider-disable core floor
+  - [1ecbc8c](https://github.com/sase-org/sase-core/commit/1ecbc8c54af83e069b26aca148e102774fde756d)
+    — fix(notifications): preserve snooze microsecond timestamps
 
 # Plan: Finish the proc-shell repair integration and land sase-m9.2.1.6
 
