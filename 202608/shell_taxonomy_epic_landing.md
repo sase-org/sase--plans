@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/shell_taxonomy.md](shell_taxonomy.md)
 - **BEAD:**
   [sase-m9.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m9/sase-m9.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m9.1.1.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.1.1.land.md)
+- **COMMITS:**
+  - [76356cf](https://github.com/sase-org/sase/commit/76356cf57d71e7574350f003f15caea0f50d9c0d)
+    — docs: align shell taxonomy wording
 
 # Plan: Complete the sase-agent taxonomy epic landing
 
