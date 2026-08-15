@@ -10,6 +10,12 @@ create_time: 2026-08-15 11:01:24
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.02d](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02d.md)
+- **COMMITS:**
+  - [435cb34](https://github.com/sase-org/sase/commit/435cb34df1e5c0fb82475d8f1efa8e1e92385845)
+    — fix: complete hyphenated prompt words
+
 # Hyphenated prompt-word completion
 
 ## Goal
