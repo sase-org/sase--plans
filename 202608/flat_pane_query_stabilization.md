@@ -17,6 +17,11 @@ status: done
 - **PARENT:** [202608/unified_artifacts_query_1.md](unified_artifacts_query_1.md)
 - **BEAD:**
   [sase-m6.6.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.6.1.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m6.6.1.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.6.1.5.md)
+- **COMMITS:**
+  - [e4c6460](https://github.com/sase-org/sase/commit/e4c64607f693552d3101bd1d130c3c76680f6e7f)
+    — test(ace): align flat-pane visual fixtures with query profiles
 
 # Plan: Stabilize and close the flat Artifacts query migration
 
