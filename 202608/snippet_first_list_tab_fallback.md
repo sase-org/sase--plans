@@ -8,7 +8,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.02s
 create_time: 2026-08-15 15:27:15
-status: wip
+status: done
 ---
 
 # Plan: Fall back from snippet Tab actions to shifting the current list item
