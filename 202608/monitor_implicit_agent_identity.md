@@ -13,6 +13,11 @@ status: done
 
 - **BEAD:**
   [sase-ll](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ll/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ll](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ll.md)
+- **COMMITS:**
+  - [0b465a3](https://github.com/sase-org/sase/commit/0b465a39c31d55f64a087123b68ff33ad50a5b04)
+    — fix(monitor): pin implicit starts to the calling agent
 
 # Pin implicit monitor starts to the calling agent
 
