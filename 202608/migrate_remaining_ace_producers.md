@@ -15,6 +15,11 @@ status: done
   [prompts/202608/migrate_remaining_ace_producers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/migrate_remaining_ace_producers.md)
 - **BEAD:**
   [sase-m9.3.1.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m9/sase-m9.3.1.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m9.3.1.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.3.1.3.md)
+- **COMMITS:**
+  - [7d7581a](https://github.com/sase-org/sase/commit/7d7581a21cc7e3418979f09b2b17c8ec0daba0f6)
+    — feat(ace): migrate remaining durable producers
 
 # Migrate remaining durable ACE producers
 
