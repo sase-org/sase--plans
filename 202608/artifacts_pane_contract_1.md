@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/artifacts_pane_contract.md](artifacts_pane_contract.md)
 - **BEAD:**
   [sase-m6.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m6.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.4.md)
+- **COMMITS:**
+  - [7060a2e](https://github.com/sase-org/sase/commit/7060a2ec45dc8a89f6f29b72e9555259103259e7)
+    — feat(tui): drive Artifacts panes from a derived host contract
 
 # Plan: ArtifactsPaneContract and derived, explainable capabilities
 
