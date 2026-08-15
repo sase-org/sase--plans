@@ -15,6 +15,11 @@ status: done
   [prompts/202608/isolate_forced_color_tests.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/isolate_forced_color_tests.md)
 - **BEAD:**
   [sase-m7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m7/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m7.md)
+- **COMMITS:**
+  - [2c9f2b7](https://github.com/sase-org/sase/commit/2c9f2b7fab35576642f50f0c5007494f805174db)
+    — test: isolate tests from ambient color overrides
 
 # Make captured-output tests independent of ambient forced color
 
