@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.02d
 create_time: 2026-08-15 11:01:24
-status: wip
+status: done
 ---
 
 # Hyphenated prompt-word completion
