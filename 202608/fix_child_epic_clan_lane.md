@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/fix_child_epic_clan_lane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/fix_child_epic_clan_lane.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01y](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01y.md)
+- **COMMITS:**
+  - [6f027ae](https://github.com/sase-org/sase/commit/6f027ae6b499eeec91608ccaa9f848a93dd23248)
+    — fix(beads): pin child-epic monitors to clanned phase lanes
 
 # Fix child epic launches from clanned phase agents
 
