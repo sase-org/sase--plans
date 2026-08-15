@@ -14,6 +14,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/safe_bead_work_relaunch_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/safe_bead_work_relaunch_2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.02v](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02v.md)
+- **COMMITS:**
+  - [6f3e51a](https://github.com/sase-org/sase/commit/6f3e51a137ec3b6142288eb6fa17aa855ea4b952)
+    — fix(bead): preserve active workers during relaunch
 
 # Plan: Preserve active bead workers during safe relaunch
 
