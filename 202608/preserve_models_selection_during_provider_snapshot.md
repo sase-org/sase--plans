@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/provider_disable_completion.md](provider_disable_completion.md)
 - **BEAD:**
   [sase-mc.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mc/sase-mc.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-mc.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mc.5.land.md)
+- **COMMITS:**
+  - [5511f04](https://github.com/sase-org/sase/commit/5511f04ed37e0545984957e17e52247cc3fa3256)
+    — fix(tui): keep Models selection across provider snapshots
 
 # Preserve Models selection across provider snapshot completion
 
