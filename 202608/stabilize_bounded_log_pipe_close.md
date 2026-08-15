@@ -15,6 +15,11 @@ status: done
   [prompts/202608/stabilize_bounded_log_pipe_close.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stabilize_bounded_log_pipe_close.md)
 - **BEAD:**
   [sase-lk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-lk/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-lk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-lk.md)
+- **COMMITS:**
+  - [b569cbd](https://github.com/sase-org/sase/commit/b569cbdc2488b21320d6ca6aaffbf701fb9089d0)
+    — fix(logs): bound pipe close to the drain budget
 
 # Stabilize bounded log pipe shutdown under load
 
