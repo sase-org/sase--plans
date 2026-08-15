@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/unify_var_get.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/unify_var_get.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-mg.land.w1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mg.land.w1.md)
+- **COMMITS:**
+  - [8e06aef](https://github.com/sase-org/sase/commit/8e06aef3f4a88b38174374faf8b60c47e263e7cf)
+    — feat(cli)\!: fold sase var show into sase var get
 
 # Plan: Unify variable snapshots under `sase var get`
 
