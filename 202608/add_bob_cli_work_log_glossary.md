@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.028.f0.f0.f0
 create_time: 2026-08-15 11:25:38
-status: wip
+status: done
 ---
 
 # Plan: Add the Work Log glossary entry to bob-cli
