@@ -11,6 +11,12 @@ create_time: 2026-08-15 15:27:15
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.02s](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02s.md)
+- **COMMITS:**
+  - [f86373a](https://github.com/sase-org/sase/commit/f86373aeddab1d2e53b0336d6b999d3c87fb302b)
+    — feat(ace): run snippet Tab actions before list shifts
+
 # Plan: Fall back from snippet Tab actions to shifting the current list item
 
 ## Goal and current behavior
