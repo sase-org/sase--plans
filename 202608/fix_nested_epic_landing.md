@@ -10,6 +10,12 @@ create_time: 2026-08-15 13:23:54
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.02j](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02j.md)
+- **COMMITS:**
+  - [87a5698](https://github.com/sase-org/sase/commit/87a569884f80ece1aca82ee011235eeb22ae69ec)
+    — fix: resume nested epic landing handoffs
+
 # Plan: Fix nested epic landing handoffs
 
 ## Diagnosis
