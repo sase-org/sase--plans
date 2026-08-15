@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/antigravity_flash37_high_cheaper_pool.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/antigravity_flash37_high_cheaper_pool.md)
+- **AGENTS:**
+  - [bbugyi200.athena.020](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.020.md)
+- **COMMITS:**
+  - [7183571](https://github.com/sase-org/sase/commit/71835710281e47198437589bc30588bb61f803a4)
+    — feat(llm-provider): select Gemini 3.7 Flash High for Antigravity in @cheaper
 
 # Plan: Use Gemini 3.7 Flash High for Antigravity in `@cheaper`
 
