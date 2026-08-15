@@ -17,6 +17,11 @@ status: done
   [202608/finish_unified_proc_shell_platform.md](finish_unified_proc_shell_platform.md)
 - **BEAD:**
   [sase-m9.2.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m9/sase-m9.2.1.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m9.2.1.6.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.2.1.6.land.md)
+- **COMMITS:**
+  - [4ba7ee8](https://github.com/sase-org/sase/commit/4ba7ee812573024d48b201d223c7cc075903b3b0)
+    — build(deps): require provider-disable core floor
 
 # Plan: Finish the proc-shell repair integration and land sase-m9.2.1.6
 
