@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/complete_flat_pane_query_migration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/complete_flat_pane_query_migration.md)
+- **AGENTS:**
+  - [bbugyi200.athena.02i](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02i.md)
+- **COMMITS:**
+  - [c62765e](https://github.com/sase-org/sase/commit/c62765eb7f3bca0e3a171ab923a5c25e4d6554e4)
+    — feat(ace): complete flat artifact query migration
 
 # Plan: Complete and verify the flat Artifacts pane query migration
 
