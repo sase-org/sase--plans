@@ -9,6 +9,12 @@ create_time: 2026-08-15 09:37:34
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.027](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.027.md)
+- **COMMITS:**
+  - [4197762](https://github.com/sase-org/sase/commit/41977629d7b5d15c8c5b2273dd46f4cbb04bad0a)
+    — docs: restore agent lane glossary entry
+
 # Restore Agent Lane to the Project Glossary
 
 ## Goal
