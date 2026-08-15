@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/gemini_37_flash_cheaper_pool.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/gemini_37_flash_cheaper_pool.md)
+- **AGENTS:**
+  - [bbugyi200.athena.01w.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01w.f1.md)
+- **COMMITS:**
+  - [97e12b2](https://github.com/sase-org/sase/commit/97e12b29e4c0a72425396f5a2baca8c751801e80)
+    — feat(llm): add antigravity flash to cheaper pool
 
 # Add Gemini 3.7 Flash Medium to the `@cheaper` pool
 
