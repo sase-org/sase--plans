@@ -9,7 +9,7 @@ goal: "Re-running sase bead work replaces only eligible waiting or failed owners
 size: medium
 proposed_by: bbugyi200.athena.02v
 create_time: 2026-08-15 17:37:25
-status: wip
+status: done
 ---
 
 - **PROMPT:**
