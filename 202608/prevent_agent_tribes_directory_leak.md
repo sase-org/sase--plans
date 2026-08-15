@@ -10,6 +10,12 @@ create_time: 2026-08-15 19:39:40
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.02z](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02z.md)
+- **COMMITS:**
+  - [ca60019](https://github.com/sase-org/sase/commit/ca600192c528f43faf59cecec8fdac0c777f38df)
+    — fix: avoid artifact lock for tribe-only updates
+
 # Prevent tribe-only persistence from creating `agent-tribes/`
 
 ## Problem and diagnosis
