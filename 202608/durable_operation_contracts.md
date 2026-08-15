@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/ace_proc_ownership.md](ace_proc_ownership.md)
 - **BEAD:**
   [sase-m9.3.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m9/sase-m9.3.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m9.3.1.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.3.1.1.md)
+- **COMMITS:**
+  - [07e254a](https://github.com/sase-org/sase/commit/07e254a42073f3367bba23b1beb893ad72f92635)
+    — feat(ops): add durable operation contracts and producer inventory
 
 # Plan: Durable operation and result contracts
 
