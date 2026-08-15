@@ -8,7 +8,7 @@ size: medium
 proposed_by: bbugyi200.athena.sase-m9.3.1.1
 bead: sase-m9.3.1.1
 create_time: 2026-08-15 15:24:36
-status: wip
+status: done
 ---
 
 - **PARENT:** [202608/ace_proc_ownership.md](ace_proc_ownership.md)
