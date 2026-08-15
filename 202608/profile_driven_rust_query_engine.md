@@ -9,7 +9,7 @@ size: medium
 proposed_by: bbugyi200.athena.sase-m6.6.1.2
 bead: sase-m6.6.1.2
 create_time: 2026-08-15 07:10:19
-status: wip
+status: done
 ---
 
 - **PARENT:** [202608/unified_artifacts_query_1.md](unified_artifacts_query_1.md)
