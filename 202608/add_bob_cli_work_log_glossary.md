@@ -10,6 +10,12 @@ create_time: 2026-08-15 11:25:38
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.028.f0.f0.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.028.f0.f0.f0.md)
+- **COMMITS:**
+  - [b7a294a](https://github.com/bobs-org/bob-cli/commit/b7a294a5483a205236ec51d4498b45bd267afeba)
+    — docs: add work log glossary entry
+
 # Plan: Add the Work Log glossary entry to bob-cli
 
 ## Goal
