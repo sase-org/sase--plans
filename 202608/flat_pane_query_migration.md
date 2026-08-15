@@ -20,9 +20,9 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-m6.6.1.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.6.1.5.md)
 - **COMMITS:**
-  - [545cb8e](https://github.com/sase-org/sase/commit/545cb8e7055c61a81773c424a94a73386aa131db)
-    — feat(query): wire the compiled query profile into contracts, host facade, and
-    FilterBar
+  - [f898057](https://github.com/sase-org/sase-core/commit/f8980573b24217d227a9931617443ceec0ceb302)
+    — fix(query): correct exact-match, date-range, and digest handling in the profile
+    engine
 
 # Plan: Migrate every flat Artifacts pane to the shared query profile
 
