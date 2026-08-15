@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.02z
 create_time: 2026-08-15 19:39:40
-status: wip
+status: done
 ---
 
 # Prevent tribe-only persistence from creating `agent-tribes/`
