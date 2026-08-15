@@ -9,7 +9,7 @@ size: medium
 proposed_by: bbugyi200.athena.sase-m9.1.1.land
 bead: sase-m9.1.1
 create_time: 2026-08-14 21:15:26
-status: wip
+status: done
 ---
 
 - **PARENT:** [202608/shell_taxonomy.md](shell_taxonomy.md)
