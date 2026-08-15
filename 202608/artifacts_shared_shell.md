@@ -18,6 +18,11 @@ status: done
 - **PARENT:** [202608/artifacts_pane_contract.md](artifacts_pane_contract.md)
 - **BEAD:**
   [sase-m6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m6.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.5.md)
+- **COMMITS:**
+  - [d19d086](https://github.com/sase-org/sase/commit/d19d08641246a2b0f9276fded07d93004815d640)
+    — feat(tui): give every Artifacts pane a shared shell and visual grammar
 
 # Give every Artifacts pane one shared shell and visual grammar
 
