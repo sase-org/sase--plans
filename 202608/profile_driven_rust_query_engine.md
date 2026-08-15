@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/unified_artifacts_query_1.md](unified_artifacts_query_1.md)
 - **BEAD:**
   [sase-m6.6.1.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.6.1.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m6.6.1.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.6.1.2.md)
+- **COMMITS:**
+  - [ba78216](https://github.com/sase-org/sase-core/commit/ba7821682990377dae42ad9c8a08392592470f54)
+    — feat(query): parameterize the Rust query engine by compiled profile
 
 # Plan: Parameterize the Rust query engine by compiled profile
 
