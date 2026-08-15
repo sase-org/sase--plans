@@ -15,6 +15,11 @@ status: done
   [prompts/202608/stabilize_mark_snoozed_round_trip.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stabilize_mark_snoozed_round_trip.md)
 - **BEAD:**
   [sase-me](https://github.com/sase-org/sase--beads/blob/main/pages/sase-me/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-me](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-me.md)
+- **COMMITS:**
+  - [5b4d5b3](https://github.com/sase-org/sase/commit/5b4d5b3c6ed49d5e4f3fdc46ad196cef6dd47f59)
+    — test: stabilize snoozed notification round trip
 
 # Plan: Stabilize the notification snooze round-trip gate
 
