@@ -14,6 +14,11 @@ status: done
 
 - **BEAD:**
   [sase-m6.6.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.6.1.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.026](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.026.md)
+- **COMMITS:**
+  - [e9a7c8d](https://github.com/sase-org/sase-core/commit/e9a7c8d7d14352cc9e6dee811ea017b8f4e2fc7c)
+    — feat: support host predicates in flat query profiles
 
 # Plan: Finish the flat Artifacts pane query migration
 
