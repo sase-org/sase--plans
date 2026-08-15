@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/stepwise_hidden_step_collapse.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/stepwise_hidden_step_collapse.md)
+- **AGENTS:**
+  - [bbugyi200.athena.02l](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02l.md)
+- **COMMITS:**
+  - [067ed4f](https://github.com/sase-org/sase/commit/067ed4f2174a005e8fbbf5f062b970f94109c16c)
+    — fix(ace): retreat selected workflow/family one H level first
 
 # Restore stepwise `H` collapse for hidden workflow steps
 
