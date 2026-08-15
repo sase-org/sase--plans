@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/launch_control_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/launch_control_panel.md)
+- **AGENTS:**
+  - [bbugyi200.athena.02w](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.02w.md)
+- **COMMITS:**
+  - [75c670c](https://github.com/sase-org/sase/commit/75c670c4b671c81f5d919542c41ef96f78721eee)
+    — feat(ace): add launch control threshold editing
 
 # Refine the Models panel into Launch Control
 
