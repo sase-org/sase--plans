@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-nb.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-nb.8.md)
 - **COMMITS:**
-  - [a2260be](https://github.com/sase-org/sase-core/commit/a2260be5c73dcefbec06ad7b332817dfca6c67f7)
-    — feat(beads): exclude flags from external ref ownership
+  - [0bda964](https://github.com/sase-org/sase-telegram/commit/0bda96492d6efec470a5ac76f3f03cf302e89805)
+    — feat(beads): render flag sections in Telegram
 
 # Flag beads on every bead-rendering surface
 
