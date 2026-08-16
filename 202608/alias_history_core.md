@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/launch_control_alias_history.md](launch_control_alias_history.md)
 - **BEAD:**
   [sase-n8.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-n8/sase-n8.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-n8.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-n8.2.md)
+- **COMMITS:**
+  - [5078d26](https://github.com/sase-org/sase-core/commit/5078d263f9078bd66382d40d24ed659154c48b88)
+    — feat(agent_scan): project alias trails and query bounded alias history
 
 # Plan: Rust core alias-history projection and query
 
