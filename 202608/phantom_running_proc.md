@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/phantom_running_proc.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/phantom_running_proc.md)
+- **AGENTS:**
+  - [bbugyi200.athena.03i](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.03i.md)
+- **COMMITS:**
+  - [2a587ff](https://github.com/sase-org/sase/commit/2a587fff70c2cb43035eaa340915291026028eca)
+    — fix: reconcile phantom running procs
 
 # Plan: Fix the phantom running-proc count and the restart it blocks
 
