@@ -1,77 +1,72 @@
 ---
 tier: epic
 title: High-impact task bead sweep
-goal: "Reconcile every ready sase task bead, retire stale recommendations with evidence,
-  and complete the five live fixes with the largest durability, verification,
-  responsiveness, and commit-workflow impact.
+goal: 'Reconcile every ready sase task bead, retire stale recommendations with evidence,
+  and complete the five live fixes with the largest durability, verification, responsiveness,
+  and commit-workflow impact.
 
-  "
+  '
 phases:
-  - id: audit_ready_queue
-    title: Audit and reconcile the ready task queue
-    depends_on: []
-    size: medium
-    description:
-      "audit_ready_queue: Revalidate every non-in-progress task bead, close only
-      evidence-backed stale items, and preserve the five selected tasks for
-      implementation."
-  - id: protect_bead_streams
-    title: Protect append-only bead event streams
-    depends_on:
-      - audit_ready_queue
-    size: medium
-    description:
-      "protect_bead_streams: Fix sase-li by preventing publication or sync from
-      shrinking event streams and by diagnosing the offending history precisely."
-  - id: attribute_dirty_runs
-    title: Exclude attributable dirty-tree failures from flake debt
-    depends_on:
-      - audit_ready_queue
-    size: medium
-    description:
-      "attribute_dirty_runs: Fix sase-lc by making reproducible-flake evidence
-      distinguish dirty source-audit failures from shared master flakes."
-  - id: cache_agent_page_links
-    title: Bound agent page-link resolution latency
-    depends_on:
-      - audit_ready_queue
-    size: medium
-    description:
-      "cache_agent_page_links: Fix sase-lw with a correctly invalidated registry
-      snapshot so TUI selections do not repeat a 400-800ms scan."
-  - id: stabilize_publication_budget
-    title: Stabilize the large publication backlog contract
-    depends_on:
-      - audit_ready_queue
-    size: small
-    description:
-      "stabilize_publication_budget: Fix sase-mb with a contention-resistant performance
-      tripwire that retains the queue's scaling contract."
-  - id: bound_post_push_publication
-    title: Bound post-push agent publication
-    depends_on:
-      - stabilize_publication_budget
-    size: medium
-    description:
-      "bound_post_push_publication: Fix sase-mh so a stalled agent-page render cannot
-      indefinitely block commit finalization while durable publication retry remains
-      intact."
-  - id: verify_and_reconcile
-    title: Verify the combined tree and reconcile task beads
-    depends_on:
-      - protect_bead_streams
-      - attribute_dirty_runs
-      - cache_agent_page_links
-      - stabilize_publication_budget
-      - bound_post_push_publication
-    size: medium
-    description:
-      "verify_and_reconcile: Run combined verification, leave a concise outcome note on
-      each selected task, and close every task whose acceptance criteria pass."
+- id: audit_ready_queue
+  title: Audit and reconcile the ready task queue
+  depends_on: []
+  size: medium
+  description: 'audit_ready_queue: Revalidate every non-in-progress task bead, close
+    only evidence-backed stale items, and preserve the five selected tasks for implementation.'
+- id: protect_bead_streams
+  title: Protect append-only bead event streams
+  depends_on:
+  - audit_ready_queue
+  size: medium
+  description: 'protect_bead_streams: Fix sase-li by preventing publication or sync
+    from shrinking event streams and by diagnosing the offending history precisely.'
+- id: attribute_dirty_runs
+  title: Exclude attributable dirty-tree failures from flake debt
+  depends_on:
+  - audit_ready_queue
+  size: medium
+  description: 'attribute_dirty_runs: Fix sase-lc by making reproducible-flake evidence
+    distinguish dirty source-audit failures from shared master flakes.'
+- id: cache_agent_page_links
+  title: Bound agent page-link resolution latency
+  depends_on:
+  - audit_ready_queue
+  size: medium
+  description: 'cache_agent_page_links: Fix sase-lw with a correctly invalidated registry
+    snapshot so TUI selections do not repeat a 400-800ms scan.'
+- id: stabilize_publication_budget
+  title: Stabilize the large publication backlog contract
+  depends_on:
+  - audit_ready_queue
+  size: small
+  description: 'stabilize_publication_budget: Fix sase-mb with a contention-resistant
+    performance tripwire that retains the queue''s scaling contract.'
+- id: bound_post_push_publication
+  title: Bound post-push agent publication
+  depends_on:
+  - stabilize_publication_budget
+  size: medium
+  description: 'bound_post_push_publication: Fix sase-mh so a stalled agent-page render
+    cannot indefinitely block commit finalization while durable publication retry
+    remains intact.'
+- id: verify_and_reconcile
+  title: Verify the combined tree and reconcile task beads
+  depends_on:
+  - protect_bead_streams
+  - attribute_dirty_runs
+  - cache_agent_page_links
+  - stabilize_publication_budget
+  - bound_post_push_publication
+  size: medium
+  description: 'verify_and_reconcile: Run combined verification, leave a concise outcome
+    note on each selected task, and close every task whose acceptance criteria pass.'
 proposed_by: bbugyi200.athena.02y
 create_time: 2026-08-15 20:00:30
 status: wip
+bead_id: sase-mi
 ---
+
+- **BEAD:** [sase-mi](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mi/README.md)
 
 # Plan: High-impact task bead sweep
 
