@@ -18,6 +18,11 @@ status: done
 - **PARENT:** [202608/top_task_bead_sweep.md](top_task_bead_sweep.md)
 - **BEAD:**
   [sase-ns.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.3.md)
+- **COMMITS:**
+  - [291ea25](https://github.com/sase-org/sase-core/commit/291ea25baa1c49db70341e558160f58db8f25ecd)
+    — perf(bead): write only changed event streams
 
 # Plan
 
