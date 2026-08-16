@@ -14,7 +14,9 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.038](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.038.md)
   - [bbugyi200.athena.038.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.038.f1/README.md)
+  - [bbugyi200.athena.sase-mf.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mf.4/README.md)
   - [bbugyi200.athena.sase-mq.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.1/README.md)
+  - [bbugyi200.athena.sase-mq.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.2.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
@@ -25,6 +27,10 @@ status: done
     — refactor(tui): split models panel display options
   - [6f7052f](https://github.com/sase-org/sase/commit/6f7052fc90467145c78def777622e950eeb9f0ec)
     — feat(workspace): add ownership contract for store mutations
+  - [9811067](https://github.com/sase-org/sase/commit/98110679997c34218eec17eb96f20fec5e6bfe74)
+    — docs: migrate docs and tests off retired model-alias names
+  - [419c5a9](https://github.com/sase-org/sase/commit/419c5a9fcdcce70bb42d3ebd22974ced71321163)
+    — feat(workspace): add durable operational workspace leases
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
