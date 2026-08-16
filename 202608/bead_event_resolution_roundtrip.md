@@ -14,11 +14,17 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.038](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.038.md)
   - [bbugyi200.athena.038.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.038.f1/README.md)
+  - [bbugyi200.athena.sase-mq.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.1/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
   - [5184f5a](https://github.com/sase-org/sase/commit/5184f5ab0ad992c56f967c39a352b4d51edc5a7c)
     — fix(plan-gate): accept every EpicLaunchMode in the epic approve schema
+  - [271b8f1](https://github.com/sase-org/sase/commit/271b8f1a25319e85e20455a937427fd5a1633708)
+    — refactor(tui): split models panel display options
+  - [6f7052f](https://github.com/sase-org/sase/commit/6f7052fc90467145c78def777622e950eeb9f0ec)
+    — feat(workspace): add ownership contract for store mutations
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
