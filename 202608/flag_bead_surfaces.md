@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-nb.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-nb.8.md)
 - **COMMITS:**
-  - [0bda964](https://github.com/sase-org/sase-telegram/commit/0bda96492d6efec470a5ac76f3f03cf302e89805)
-    — feat(beads): render flag sections in Telegram
+  - [278cc81](https://github.com/sase-org/sase/commit/278cc810b6bbce80b5b2e6784b9c49a09748654c)
+    — feat(beads): surface flag beads across bead views
 
 # Flag beads on every bead-rendering surface
 
