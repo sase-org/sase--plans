@@ -9,12 +9,15 @@ goal:
   `events/manifest.json`, the on-disk format, and the guard's semantics are unchanged.
 proposed_by: bbugyi200.athena.sase-ns.3
 bead: sase-ns.3
-create_time: 2026-08-16 17:25:14
+create_time: 2026-08-16 17:25:22
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/per_stream_bead_event_writes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/per_stream_bead_event_writes.md)
 - **PARENT:** [202608/top_task_bead_sweep.md](top_task_bead_sweep.md)
-- **BEAD:** sase-ns.3
+- **BEAD:**
+  [sase-ns.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.3.md)
 
 # Plan
 
