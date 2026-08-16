@@ -19,10 +19,12 @@ status: done
   - [bbugyi200.athena.sase-mf.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mf.land.md)
   - [bbugyi200.athena.sase-mq.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.1/README.md)
   - [bbugyi200.athena.sase-mq.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.2.md)
+  - [bbugyi200.athena.sase-mq.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.3.md)
   - [bbugyi200.athena.sase-mq.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.6/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
@@ -46,6 +48,10 @@ status: done
     — test(ace): refresh the visual goldens stranded by the launch-default pill stub
   - [35006a8](https://github.com/sase-org/sase/commit/35006a841c42d376afdeb600dfdb1923d2a091f8)
     — refactor(bead): split _stream_integrity into focused modules
+  - [985aae2](https://github.com/sase-org/sase/commit/985aae20c132bf9d5c629820f330cc12eef174a2)
+    — feat(workspace): add reset-and-replay recovery for leased checkouts
+  - [577086a](https://github.com/sase-org/sase/commit/577086aae1a0dbca9daf112a219519813822254d)
+    — refactor(bead): split work cleanup responsibilities
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
