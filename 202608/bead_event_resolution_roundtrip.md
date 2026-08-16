@@ -28,6 +28,7 @@ status: done
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0.md)
   - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
@@ -61,6 +62,8 @@ status: done
     — feat(bead): lease workspace-local stores for background writers
   - [02bd008](https://github.com/sase-org/sase/commit/02bd00833f240fad7b887c7146e9d5de9458cc8e)
     — test(var): split test_var_get into focused modules
+  - [9d4e575](https://github.com/sase-org/sase/commit/9d4e575996d6ed8adc6b3a806da5fb1fb95468e5)
+    — test: split var tests by responsibility
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
