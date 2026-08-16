@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/ace_proc_ownership.md](ace_proc_ownership.md)
 - **BEAD:**
   [sase-m9.3.1.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m9/sase-m9.3.1.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-m9.3.1.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m9.3.1.4.md)
+- **COMMITS:**
+  - [8c48404](https://github.com/sase-org/sase/commit/8c48404581cabc8b49f1534ef4e64f542363141d)
+    — feat(ace): observe durable procs read-only
 
 # Plan: Read-only ACE proc observation
 
