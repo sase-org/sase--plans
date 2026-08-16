@@ -7,10 +7,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-n8.2
 bead: sase-n8.2
-create_time: 2026-08-16 11:45:55
+create_time: 2026-08-16 11:46:02
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/alias_history_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/alias_history_core.md)
 - **PARENT:** [202608/launch_control_alias_history.md](launch_control_alias_history.md)
 - **BEAD:**
   [sase-n8.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-n8/sase-n8.2.md)
