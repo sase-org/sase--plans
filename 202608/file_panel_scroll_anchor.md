@@ -8,7 +8,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.03x
 create_time: 2026-08-16 12:52:51
-status: wip
+status: done
 ---
 
 # Plan
