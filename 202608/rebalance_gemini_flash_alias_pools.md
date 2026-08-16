@@ -11,6 +11,12 @@ create_time: 2026-08-15 19:50:02
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.030](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.030.md)
+- **COMMITS:**
+  - [85c09a8](https://github.com/sase-org/sase/commit/85c09a886472fae743be8733622b784a4263d2d5)
+    — feat(llm): route Gemini Flash Medium via @xsmall and Flash High via @small
+
 # Plan: Rebalance Gemini 3.7 Flash size-alias defaults
 
 ## Context
