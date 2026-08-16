@@ -20,6 +20,11 @@ status: done
 - **PARENT:** [202608/launch_control_alias_history.md](launch_control_alias_history.md)
 - **BEAD:**
   [sase-n8.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-n8/sase-n8.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-n8.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-n8.1.md)
+- **COMMITS:**
+  - [96b48d0](https://github.com/sase-org/sase/commit/96b48d0abbe9acec0f8037a08c388fc7c291edf8)
+    — feat: record alias launch provenance
 
 # Plan: Record the alias resolution trail and its origin at launch
 
