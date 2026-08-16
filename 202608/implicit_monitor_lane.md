@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/top_task_bead_sweep.md](top_task_bead_sweep.md)
 - **BEAD:**
   [sase-ns.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.1.md)
+- **COMMITS:**
+  - [2605324](https://github.com/sase-org/sase/commit/2605324cb2c47e43809de822ae78db120905faa2)
+    — fix(monitor): resolve implicit start/show/stop caller from its own artifacts
 
 # Plan
 
