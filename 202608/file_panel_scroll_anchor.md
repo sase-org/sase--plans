@@ -11,6 +11,12 @@ create_time: 2026-08-16 12:52:51
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.03x](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.03x.md)
+- **COMMITS:**
+  - [ce1ad41](https://github.com/sase-org/sase/commit/ce1ad41a1c874bca1d05158477a80ab8d8a612c9)
+    — fix(ace): stop the file panel from losing the reader's scroll position
+
 # Plan
 
 ## 1. Problem
