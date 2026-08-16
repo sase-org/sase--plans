@@ -25,6 +25,7 @@ status: done
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead.cli_work_cleanup.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
@@ -52,6 +53,8 @@ status: done
     — feat(workspace): add reset-and-replay recovery for leased checkouts
   - [577086a](https://github.com/sase-org/sase/commit/577086aae1a0dbca9daf112a219519813822254d)
     — refactor(bead): split work cleanup responsibilities
+  - [89511fb](https://github.com/sase-org/sase/commit/89511fb744a9c992e6b1da4c7a2f0136f7ede19a)
+    — refactor(stats): split performance view builder
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
