@@ -13,6 +13,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/ctrl_space_stale_prompt_context.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ctrl_space_stale_prompt_context.md)
+- **AGENTS:**
+  - [bbugyi200.athena.03a](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.03a.md)
+- **COMMITS:**
+  - [2aa8ba2](https://github.com/sase-org/sase/commit/2aa8ba26f7efc6522a7cc28e969c688a3f870b18)
+    — fix(tui): release stale prompt context after launch
 
 # Plan: Fix `<ctrl+space>` dying mid-session (stale `_prompt_context` after every launch)
 
