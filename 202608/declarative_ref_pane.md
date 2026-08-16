@@ -22,8 +22,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-m6.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-m6.8.md)
 - **COMMITS:**
-  - [ae3c862](https://github.com/sase-org/sase/commit/ae3c86249e73b24d3807842ac91cc22fb81f4683)
-    — feat(artifacts): support declarative ref pane presentation
+  - [24daa87](https://github.com/sase-org/sase-research-artifacts/commit/24daa876b135cce8969bbcfc309d15632f2fbaf6)
+    — feat(provider): declare research artifact pane metadata
 
 # Plan: Compile and render the declarative `ref.pane` contract
 
