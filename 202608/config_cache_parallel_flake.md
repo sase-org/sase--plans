@@ -8,10 +8,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ns.2
 bead: sase-ns.2
-create_time: 2026-08-16 17:19:21
+create_time: 2026-08-16 17:19:28
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/config_cache_parallel_flake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/config_cache_parallel_flake.md)
 - **PARENT:** [202608/top_task_bead_sweep.md](top_task_bead_sweep.md)
 - **BEAD:**
   [sase-ns.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.2.md)
