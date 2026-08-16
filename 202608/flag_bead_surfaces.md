@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/feature_flags.md](feature_flags.md)
 - **BEAD:**
   [sase-nb.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-nb/sase-nb.8.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-nb.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-nb.8.md)
+- **COMMITS:**
+  - [a2260be](https://github.com/sase-org/sase-core/commit/a2260be5c73dcefbec06ad7b332817dfca6c67f7)
+    — feat(beads): exclude flags from external ref ownership
 
 # Flag beads on every bead-rendering surface
 
