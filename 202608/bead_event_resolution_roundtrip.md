@@ -11,6 +11,12 @@ create_time: 2026-08-15 22:21:37
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.0m.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.0m.cdx/README.md)
+- **COMMITS:**
+  - [d5f2d8f](https://github.com/sase-org/sase--research/commit/d5f2d8fe86c7fd0aeb4743aabc0ad9ebbb78e72a)
+    — docs(research): recommend feature flag architecture
+
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
 ## Problem
