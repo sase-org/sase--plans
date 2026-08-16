@@ -24,7 +24,10 @@ status: done
   - [bbugyi200.athena.sase-mq.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.5/README.md)
   - [bbugyi200.athena.sase-mq.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.6/README.md)
   - [bbugyi200.athena.sase-mq.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.7/README.md)
+  - [bbugyi200.athena.sase-mq.8.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.1/README.md)
+  - [bbugyi200.athena.sase-mq.8.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.2/README.md)
   - [bbugyi200.athena.sase-mq.8.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.3/README.md)
+  - [bbugyi200.athena.sase-mq.8.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.4/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
@@ -82,6 +85,12 @@ status: done
     — test: split test selection health correlation tests
   - [b82f21c](https://github.com/sase-org/sase/commit/b82f21c1bfcbaa40d1224102465b69446a0b54c4)
     — test: register ownership audit coverage
+  - [9b5bba5](https://github.com/sase-org/sase/commit/9b5bba5df887247ec28aa50e1f14d6ddf431d513)
+    — perf(beads): fuse claim-check snapshot and reconcile into one lease
+  - [b57f644](https://github.com/sase-org/sase/commit/b57f644dbf6a48e656aaa3e708d07741d22a063b)
+    — refactor(sidecar-sync): replace bead-store-refresh chop with sync hints
+  - [d10fe53](https://github.com/sase-org/sase/commit/d10fe53024144a0084501c349642552cccc8e033)
+    — test: audit ownership invariant launch paths
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
