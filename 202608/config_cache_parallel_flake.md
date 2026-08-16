@@ -17,6 +17,11 @@ status: done
 - **PARENT:** [202608/top_task_bead_sweep.md](top_task_bead_sweep.md)
 - **BEAD:**
   [sase-ns.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.2.md)
+- **COMMITS:**
+  - [3a22ff0](https://github.com/sase-org/sase/commit/3a22ff04f67a78af9416c87b1f6b591903c30962)
+    — fix(config): isolate config cache from test-owned CONFIG_DIR
 
 # Eliminate the full-lane config-cache poisoning flake
 
