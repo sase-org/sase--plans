@@ -12,10 +12,13 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.0m.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.0m.cdx/README.md)
+  - [bbugyi200.athena.038](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.038.md)
+  - [bbugyi200.athena.038.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.038.f1/README.md)
 - **COMMITS:**
-  - [d5f2d8f](https://github.com/sase-org/sase--research/commit/d5f2d8fe86c7fd0aeb4743aabc0ad9ebbb78e72a)
-    — docs(research): recommend feature flag architecture
+  - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
+    — fix(bead): name concrete field diff in append-only rewrite guard message
+  - [5184f5a](https://github.com/sase-org/sase/commit/5184f5ab0ad992c56f967c39a352b4d51edc5a7c)
+    — fix(plan-gate): accept every EpicLaunchMode in the epic approve schema
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
