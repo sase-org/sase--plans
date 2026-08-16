@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/feature_flags.md](feature_flags.md)
 - **BEAD:**
   [sase-nb.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-nb/sase-nb.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-nb.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-nb.6.md)
+- **COMMITS:**
+  - [5703667](https://github.com/sase-org/sase/commit/5703667f0e6c37909e82b01b52aee336661e5f11)
+    — feat(bead): add the FlagTriage gate and generalize the bead gate reconciler
 
 # Plan: The FlagTriage gate and its generalized bead gate reconciler
 
