@@ -8,7 +8,7 @@ goal:
   committed store junk, and relaunch the epic that the wedge blocked.
 proposed_by: bbugyi200.athena.038
 create_time: 2026-08-15 22:21:37
-status: wip
+status: done
 ---
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
