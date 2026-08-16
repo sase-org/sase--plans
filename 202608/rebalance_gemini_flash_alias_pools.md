@@ -8,7 +8,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.030
 create_time: 2026-08-15 19:50:02
-status: wip
+status: done
 ---
 
 # Plan: Rebalance Gemini 3.7 Flash size-alias defaults
