@@ -11,9 +11,6 @@ create_time: 2026-08-16 12:52:51
 status: wip
 ---
 
-- **PROMPT:**
-  [prompts/202608/file_panel_scroll_anchor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/file_panel_scroll_anchor.md)
-
 # Plan
 
 ## 1. Problem
