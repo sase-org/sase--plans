@@ -18,6 +18,11 @@ status: done
 - **PARENT:** [202608/launch_control_alias_history.md](launch_control_alias_history.md)
 - **BEAD:**
   [sase-n8.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-n8/sase-n8.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-n8.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-n8.6.md)
+- **COMMITS:**
+  - [bc529f1](https://github.com/sase-org/sase/commit/bc529f11f5f2c8c910f3e2ba08650350b68eb1e9)
+    — feat(ace): add alias agent-history panel to Launch Control
 
 # Plan
 
