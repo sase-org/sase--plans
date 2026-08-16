@@ -13,12 +13,39 @@ status: done
 
 - **AGENTS:**
   - [bbugyi200.athena.038](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.038.md)
+  - [bbugyi200.athena.038.f1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.038.f1/README.md)
+  - [bbugyi200.athena.sase-m6.6.1.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-m6.6.1.7/README.md)
+  - [bbugyi200.athena.sase-mf.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mf.4/README.md)
+  - [bbugyi200.athena.sase-mf.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mf.land.md)
+  - [bbugyi200.athena.sase-mq.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.1/README.md)
   - [bbugyi200.athena.sase-mq.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.2.md)
+  - [bbugyi200.athena.sase-mq.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.6/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
 - **COMMITS:**
-  - [2233171](https://github.com/sase-org/sase-core/commit/2233171367319d433a94addc3fb66f272804b53d)
-    — fix(bead): make issue_updated resolution round-trip stable
-  - [3e6502d](https://github.com/sase-org/sase-core/commit/3e6502d10db0f404379c587ad8c2928493b0cf4b)
-    — feat(workspace_lease): add operational lease eligibility and policy kinds
+  - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
+    — fix(bead): name concrete field diff in append-only rewrite guard message
+  - [5184f5a](https://github.com/sase-org/sase/commit/5184f5ab0ad992c56f967c39a352b4d51edc5a7c)
+    — fix(plan-gate): accept every EpicLaunchMode in the epic approve schema
+  - [271b8f1](https://github.com/sase-org/sase/commit/271b8f1a25319e85e20455a937427fd5a1633708)
+    — refactor(tui): split models panel display options
+  - [6f7052f](https://github.com/sase-org/sase/commit/6f7052fc90467145c78def777622e950eeb9f0ec)
+    — feat(workspace): add ownership contract for store mutations
+  - [9811067](https://github.com/sase-org/sase/commit/98110679997c34218eec17eb96f20fec5e6bfe74)
+    — docs: migrate docs and tests off retired model-alias names
+  - [419c5a9](https://github.com/sase-org/sase/commit/419c5a9fcdcce70bb42d3ebd22974ced71321163)
+    — feat(workspace): add durable operational workspace leases
+  - [ff3b0fa](https://github.com/sase-org/sase/commit/ff3b0fa43f8175fea54af7cead671d3e863a88ca)
+    — test: add artifacts query profile conformance goldens
+  - [7bf73f7](https://github.com/sase-org/sase/commit/7bf73f7855735f384663e125b53729016595ca0a)
+    — refactor(tui): split models panel rendering helpers
+  - [e342ff4](https://github.com/sase-org/sase/commit/e342ff47614d3b955b7598578e8da85d0f2577e3)
+    — feat(repos): add generic primary-sidecar auto-sync
+  - [0f63a62](https://github.com/sase-org/sase/commit/0f63a62abc8e533fb0f61196d4bc60e0999e2950)
+    — test(ace): refresh the visual goldens stranded by the launch-default pill stub
+  - [35006a8](https://github.com/sase-org/sase/commit/35006a841c42d376afdeb600dfdb1923d2a091f8)
+    — refactor(bead): split _stream_integrity into focused modules
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
