@@ -20,6 +20,8 @@ status: done
 - **COMMITS:**
   - [78a9130](https://github.com/sase-org/sase/commit/78a9130f753609fab8a6adb9d3245afb05574d46)
     — fix(tui): honor Artifacts pane contract actions
+  - [5d0bcf9](https://github.com/sase-org/sase/commit/5d0bcf9e8a389fdb47d1d612c0191bd730b5dfc2)
+    — test: expect relation-backed fields in the notes fixture query profile
 
 # Plan: Recover the lost `sase-m6.7.1.6` conformance, docs, and perf-gate work
 
