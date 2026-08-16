@@ -9,7 +9,7 @@ goal:
   shapes and docs that match the behavior.
 proposed_by: bbugyi200.athena.sase-ns.1
 bead: sase-ns.1
-create_time: 2026-08-16 17:27:43
+create_time: 2026-08-16 17:28:00
 status: wip
 ---
 
