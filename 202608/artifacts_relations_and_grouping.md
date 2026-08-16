@@ -1,77 +1,74 @@
 ---
 tier: epic
 title: Relations, reveal, and grouping as Artifacts contract features
-goal:
-  Hierarchy, family, and link relations are declared contract facts rendered by one
-  host-owned relation panel on every Artifacts pane; reveal is a reversible lens that
-  never destroys a composed query; and every pane's grouping runs on the one shared
-  GroupFoldRegistry with collapsed banners as first-class navigation targets. A sidecar
-  that names a property gets jumpers and grouping without shipping code.
+goal: Hierarchy, family, and link relations are declared contract facts rendered by
+  one host-owned relation panel on every Artifacts pane; reveal is a reversible lens
+  that never destroys a composed query; and every pane's grouping runs on the one
+  shared GroupFoldRegistry with collapsed banners as first-class navigation targets.
+  A sidecar that names a property gets jumpers and grouping without shipping code.
 phases:
-  - id: vocabulary
-    title: Relations and grouping become declared contract facts
-    depends_on: []
-    size: medium
-    description:
-      "vocabulary: replace the PaneRelationDecl/PaneGroupingDecl placeholders with real
-      records, derive RELATIONS and GROUPING from named rules, add the additive
-      ref.relations and ref.grouping declaration blocks, and surface both in the pane
-      explainer."
-  - id: index
-    title: The host-owned relation index and its built-in sources
-    depends_on:
-      - vocabulary
-    size: large
-    description:
-      "index: build one immutable per-snapshot RelationIndex over the three primitives
-      with derived inverses, cycle detection, and dangling diagnostics, then supply it
-      from built-in sources for all five panes plus a generic declared-property source."
-  - id: panel
-    title: One host-owned relation panel and generalized jumpers
-    depends_on:
-      - index
-    size: large
-    description:
-      "panel: replace AncestorsChildrenPanel with a shell-owned RelationPanel,
-      generalize the ancestor/child/sibling key modes off Patch onto any pane with the
-      RELATIONS capability, and route cross-pane edges through the shared entry request."
-  - id: reveal
-    title: Reveal as a reversible lens
-    depends_on:
-      - panel
-    size: medium
-    description:
-      "reveal: keep the query rewrite as the mechanism but wrap it in a lens record with
-      a visible return affordance, generalize the hard-coded Patch rewrite terms onto
-      the contract, and make dangling targets diagnostics instead of pane invalidations."
-  - id: grouping
-    title: Every pane's grouping on the shared fold registry
-    depends_on:
-      - vocabulary
-    size: large
-    description:
-      "grouping: give every pane a GroupFoldRegistry, convert the four panes that render
-      non-selectable headers into foldable banners that are first-class navigation and
-      jump targets, and migrate Beads off its inverted expanded-epic set."
-  - id: conform
-    title: Conformance, docs, and the relation performance gate
-    depends_on:
-      - reveal
-      - grouping
-    size: medium
-    description:
-      "conform: extend the conformance harness and the synthetic third-party fixture
-      with relation and grouping checks, document the relation and banner grammar, and
-      hold the navigation performance gate on every converted pane."
+- id: vocabulary
+  title: Relations and grouping become declared contract facts
+  depends_on: []
+  size: medium
+  description: 'vocabulary: replace the PaneRelationDecl/PaneGroupingDecl placeholders
+    with real records, derive RELATIONS and GROUPING from named rules, add the additive
+    ref.relations and ref.grouping declaration blocks, and surface both in the pane
+    explainer.'
+- id: index
+  title: The host-owned relation index and its built-in sources
+  depends_on:
+  - vocabulary
+  size: large
+  description: 'index: build one immutable per-snapshot RelationIndex over the three
+    primitives with derived inverses, cycle detection, and dangling diagnostics, then
+    supply it from built-in sources for all five panes plus a generic declared-property
+    source.'
+- id: panel
+  title: One host-owned relation panel and generalized jumpers
+  depends_on:
+  - index
+  size: large
+  description: 'panel: replace AncestorsChildrenPanel with a shell-owned RelationPanel,
+    generalize the ancestor/child/sibling key modes off Patch onto any pane with the
+    RELATIONS capability, and route cross-pane edges through the shared entry request.'
+- id: reveal
+  title: Reveal as a reversible lens
+  depends_on:
+  - panel
+  size: medium
+  description: 'reveal: keep the query rewrite as the mechanism but wrap it in a lens
+    record with a visible return affordance, generalize the hard-coded Patch rewrite
+    terms onto the contract, and make dangling targets diagnostics instead of pane
+    invalidations.'
+- id: grouping
+  title: Every pane's grouping on the shared fold registry
+  depends_on:
+  - vocabulary
+  size: large
+  description: 'grouping: give every pane a GroupFoldRegistry, convert the four panes
+    that render non-selectable headers into foldable banners that are first-class
+    navigation and jump targets, and migrate Beads off its inverted expanded-epic
+    set.'
+- id: conform
+  title: Conformance, docs, and the relation performance gate
+  depends_on:
+  - reveal
+  - grouping
+  size: medium
+  description: 'conform: extend the conformance harness and the synthetic third-party
+    fixture with relation and grouping checks, document the relation and banner grammar,
+    and hold the navigation performance gate on every converted pane.'
 proposed_by: bbugyi200.athena.sase-m6.7
 parent_bead: sase-m6.7
 create_time: 2026-08-16 02:53:05
 status: wip
+bead_id: sase-m6.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202608/artifacts_relations_and_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifacts_relations_and_grouping.md)
+- **PROMPT:** [prompts/202608/artifacts_relations_and_grouping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifacts_relations_and_grouping.md)
 - **PARENT:** [202608/artifacts_pane_contract.md](artifacts_pane_contract.md)
+- **BEAD:** [sase-m6.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.7.1.md)
 
 # Plan: Relations, reveal, and grouping as Artifacts contract features
 
