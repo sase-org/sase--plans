@@ -19,6 +19,11 @@ status: done
 - **PARENT:** [202608/feature_flags.md](feature_flags.md)
 - **BEAD:**
   [sase-nb.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-nb/sase-nb.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-nb.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-nb.2.md)
+- **COMMITS:**
+  - [76c332b](https://github.com/sase-org/sase/commit/76c332bd5d1e15a2753fd1a005242b9040b2d327)
+    — feat: add feature flag registry foundation
 
 # Plan: The typed feature-flag registry, resolver, and snapshot
 
