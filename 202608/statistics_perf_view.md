@@ -1,69 +1,69 @@
 ---
 tier: epic
 title: Admin Center Statistics Perf view
-goal: 'The Admin Center Statistics tab gains an eighth "Perf" view that answers "is SASE
-  fast right now, and where is it slow?" from durable data SASE already records — TUI
-  startup and stall behavior, agent-launch latency, and agent/LLM/hook latency and
-  reliability — with honest coverage reporting and no new event-loop work.
+goal: 'The Admin Center Statistics tab gains an eighth "Perf" view that answers "is
+  SASE fast right now, and where is it slow?" from durable data SASE already records
+  — TUI startup and stall behavior, agent-launch latency, and agent/LLM/hook latency
+  and reliability — with honest coverage reporting and no new event-loop work.
 
   '
 phases:
-  - id: core_perf_logs
-    title: Rust perf-log aggregation and binding
-    depends_on: []
-    size: medium
-    description: "core_perf_logs: add a `perf_logs` module to the sibling Rust core that
-      reads the six durable TUI/launch perf JSONL logs with bounded tail reads,
-      aggregates them over a caller-supplied window into one composite wire payload, and
-      exposes it as the `perf_logs_query` Python binding.
+- id: core_perf_logs
+  title: Rust perf-log aggregation and binding
+  depends_on: []
+  size: medium
+  description: 'core_perf_logs: add a `perf_logs` module to the sibling Rust core
+    that reads the six durable TUI/launch perf JSONL logs with bounded tail reads,
+    aggregates them over a caller-supplied window into one composite wire payload,
+    and exposes it as the `perf_logs_query` Python binding.
 
-      "
-  - id: stats_facade
-    title: Python perf facade and view model
-    depends_on:
-      - core_perf_logs
-    size: medium
-    description: "stats_facade: add the thin `sase.stats` adapter that calls the new
-      Rust binding, fans out the fixed telemetry-store query set, and builds one
-      immutable presentation-ready PerfView with status grading and coverage notes.
+    '
+- id: stats_facade
+  title: Python perf facade and view model
+  depends_on:
+  - core_perf_logs
+  size: medium
+  description: 'stats_facade: add the thin `sase.stats` adapter that calls the new
+    Rust binding, fans out the fixed telemetry-store query set, and builds one immutable
+    presentation-ready PerfView with status grading and coverage notes.
 
-      "
-  - id: perf_view
-    title: Perf view registration and interaction
-    depends_on:
-      - stats_facade
-    size: medium
-    description: "perf_view: register Perf as the eighth Statistics view — tab strip,
-      numbered selection, description, legends, grouping modes, non-project scope, lazy
-      loading, and the contextual help methodology section.
+    '
+- id: perf_view
+  title: Perf view registration and interaction
+  depends_on:
+  - stats_facade
+  size: medium
+  description: 'perf_view: register Perf as the eighth Statistics view — tab strip,
+    numbered selection, description, legends, grouping modes, non-project scope, lazy
+    loading, and the contextual help methodology section.
 
-      "
-  - id: perf_render
-    title: Perf view rendering
-    depends_on:
-      - perf_view
-    size: medium
-    description: "perf_render: build the Perf renderable — the five hero tiles, the TUI
-      startup and stall panels, the grouped latency table, the data-and-instrumentation
-      strip, and every degraded, partial, and empty state.
+    '
+- id: perf_render
+  title: Perf view rendering
+  depends_on:
+  - perf_view
+  size: medium
+  description: 'perf_render: build the Perf renderable — the five hero tiles, the
+    TUI startup and stall panels, the grouped latency table, the data-and-instrumentation
+    strip, and every degraded, partial, and empty state.
 
-      "
-  - id: perf_visuals
-    title: Visual snapshots and documentation
-    depends_on:
-      - perf_render
-    size: small
-    description:
-      "perf_visuals: add the PNG visual snapshots and their fixtures for the populated,
-      narrow, and telemetry-disabled Perf states, and document the view in the ACE
-      performance runbook."
+    '
+- id: perf_visuals
+  title: Visual snapshots and documentation
+  depends_on:
+  - perf_render
+  size: small
+  description: 'perf_visuals: add the PNG visual snapshots and their fixtures for
+    the populated, narrow, and telemetry-disabled Perf states, and document the view
+    in the ACE performance runbook.'
 proposed_by: bbugyi200.athena.032
 create_time: 2026-08-15 20:25:25
 status: wip
+bead_id: sase-mj
 ---
 
-- **PROMPT:**
-  [prompts/202608/statistics_perf_view.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/statistics_perf_view.md)
+- **PROMPT:** [prompts/202608/statistics_perf_view.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/statistics_perf_view.md)
+- **BEAD:** [sase-mj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mj/README.md)
 
 # Plan: Admin Center Statistics Perf view
 
