@@ -1,76 +1,70 @@
 ---
 tier: epic
 title: Enforce user-owned primary workspace boundaries
-goal: "Every SASE-initiated repository mutation runs in a claimed disposable workspace,
+goal: 'Every SASE-initiated repository mutation runs in a claimed disposable workspace,
   conflict recovery is destructive only inside that ownership boundary, and configured
   primary sidecar checkouts converge safely without disturbing user work.
 
-  "
+  '
 phases:
-  - id: ownership-contract
-    title: Workspace ownership and mutation contract
-    depends_on: []
-    size: medium
-    description:
-      "ownership-contract: codify writable operational contexts and make canonical
-      primary-project access read-only by default."
-  - id: operation-leases
-    title: Durable operational workspace leases
-    depends_on:
-      - ownership-contract
-    size: medium
-    description:
-      "operation-leases: add reusable claimed-workspace lifecycle support for
-      synchronous jobs, monitors, and detached procs."
-  - id: disposable-retry
-    title: Reset-and-replay conflict recovery
-    depends_on:
-      - operation-leases
-    size: medium
-    description:
-      "disposable-retry: recover conflicts by resetting only leased machine-owned
-      checkouts and replaying bounded idempotent operations."
-  - id: approval-launches
-    title: Approval and task launches off the primary checkout
-    depends_on:
-      - disposable-retry
-    size: medium
-    description:
-      "approval-launches: move approval-time plan archiving plus epic and task launch
-      orchestration into durable operational workspace leases."
-  - id: background-mutators
-    title: Background bead mutations off canonical primary clones
-    depends_on:
-      - disposable-retry
-    size: medium
-    description:
-      "background-mutators: route runner and scheduled bead writers through writable
-      workspace-local stores while retaining canonical stores for reads."
-  - id: sidecar-autosync
-    title: Generic primary-sidecar auto-sync
-    depends_on:
-      - ownership-contract
-    size: medium
-    description:
-      "sidecar-autosync: add opt-in clean fast-forward synchronization for plans, beads,
-      research, and arbitrary configured sidecars."
-  - id: invariant-audit
-    title: End-to-end ownership audit and regression gates
-    depends_on:
-      - approval-launches
-      - background-mutators
-      - sidecar-autosync
-    size: small
-    description:
-      "invariant-audit: prove primary-checkout immutability, disposable retry safety,
-      and sidecar convergence across automated workflows."
+- id: ownership-contract
+  title: Workspace ownership and mutation contract
+  depends_on: []
+  size: medium
+  description: 'ownership-contract: codify writable operational contexts and make
+    canonical primary-project access read-only by default.'
+- id: operation-leases
+  title: Durable operational workspace leases
+  depends_on:
+  - ownership-contract
+  size: medium
+  description: 'operation-leases: add reusable claimed-workspace lifecycle support
+    for synchronous jobs, monitors, and detached procs.'
+- id: disposable-retry
+  title: Reset-and-replay conflict recovery
+  depends_on:
+  - operation-leases
+  size: medium
+  description: 'disposable-retry: recover conflicts by resetting only leased machine-owned
+    checkouts and replaying bounded idempotent operations.'
+- id: approval-launches
+  title: Approval and task launches off the primary checkout
+  depends_on:
+  - disposable-retry
+  size: medium
+  description: 'approval-launches: move approval-time plan archiving plus epic and
+    task launch orchestration into durable operational workspace leases.'
+- id: background-mutators
+  title: Background bead mutations off canonical primary clones
+  depends_on:
+  - disposable-retry
+  size: medium
+  description: 'background-mutators: route runner and scheduled bead writers through
+    writable workspace-local stores while retaining canonical stores for reads.'
+- id: sidecar-autosync
+  title: Generic primary-sidecar auto-sync
+  depends_on:
+  - ownership-contract
+  size: medium
+  description: 'sidecar-autosync: add opt-in clean fast-forward synchronization for
+    plans, beads, research, and arbitrary configured sidecars.'
+- id: invariant-audit
+  title: End-to-end ownership audit and regression gates
+  depends_on:
+  - approval-launches
+  - background-mutators
+  - sidecar-autosync
+  size: small
+  description: 'invariant-audit: prove primary-checkout immutability, disposable retry
+    safety, and sidecar convergence across automated workflows.'
 proposed_by: bbugyi200.athena.035
 create_time: 2026-08-15 21:47:50
 status: wip
+bead_id: sase-mm
 ---
 
-- **PROMPT:**
-  [prompts/202608/primary_workspace_ownership.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/primary_workspace_ownership.md)
+- **PROMPT:** [prompts/202608/primary_workspace_ownership.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/primary_workspace_ownership.md)
+- **BEAD:** [sase-mm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mm/README.md)
 
 # Plan: Enforce user-owned primary workspace boundaries
 
