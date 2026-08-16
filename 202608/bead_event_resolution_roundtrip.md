@@ -20,6 +20,7 @@ status: done
   - [bbugyi200.athena.sase-mq.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.1/README.md)
   - [bbugyi200.athena.sase-mq.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.2.md)
   - [bbugyi200.athena.sase-mq.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.3.md)
+  - [bbugyi200.athena.sase-mq.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.4.md)
   - [bbugyi200.athena.sase-mq.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.5/README.md)
   - [bbugyi200.athena.sase-mq.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.6/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
@@ -29,6 +30,7 @@ status: done
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-2t.split_file.src.sase.stats._perf_view.0.md)
   - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_navigation.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_navigation.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
@@ -64,6 +66,10 @@ status: done
     — test(var): split test_var_get into focused modules
   - [9d4e575](https://github.com/sase-org/sase/commit/9d4e575996d6ed8adc6b3a806da5fb1fb95468e5)
     — test: split var tests by responsibility
+  - [1672858](https://github.com/sase-org/sase/commit/16728587dd72a1e7c0ba817f380a09ba864e388b)
+    — feat(workspace): run approval launches on operational leases
+  - [495f10b](https://github.com/sase-org/sase/commit/495f10b71e5772bc1845697ba3c2406fe384692c)
+    — test: split models panel navigation tests by concern
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
