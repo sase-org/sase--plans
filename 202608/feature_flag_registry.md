@@ -10,10 +10,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-nb.2
 bead: sase-nb.2
-create_time: 2026-08-16 12:50:59
+create_time: 2026-08-16 12:51:12
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/feature_flag_registry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/feature_flag_registry.md)
 - **PARENT:** [202608/feature_flags.md](feature_flags.md)
 - **BEAD:**
   [sase-nb.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-nb/sase-nb.2.md)
