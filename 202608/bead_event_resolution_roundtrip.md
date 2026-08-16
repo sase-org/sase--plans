@@ -28,6 +28,7 @@ status: done
   - [bbugyi200.athena.sase-mq.8.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.2/README.md)
   - [bbugyi200.athena.sase-mq.8.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.3/README.md)
   - [bbugyi200.athena.sase-mq.8.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.4/README.md)
+  - [bbugyi200.athena.sase-mq.8.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-mq.8.land.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
@@ -91,6 +92,8 @@ status: done
     — refactor(sidecar-sync): replace bead-store-refresh chop with sync hints
   - [d10fe53](https://github.com/sase-org/sase/commit/d10fe53024144a0084501c349642552cccc8e033)
     — test: audit ownership invariant launch paths
+  - [71012c5](https://github.com/sase-org/sase/commit/71012c5c742c7ddc4cd4e5592927b0798778ff3e)
+    — refactor(workspace): narrow operational lease internals
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
