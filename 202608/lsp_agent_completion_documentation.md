@@ -16,6 +16,11 @@ status: done
   [202608/agent_family_completion_previews.md](agent_family_completion_previews.md)
 - **BEAD:**
   [sase-n9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-n9/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-n9.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-n9.land.md)
+- **COMMITS:**
+  - [534bc1d](https://github.com/sase-org/sase-core/commit/534bc1d495fea13780536b927326e936ffffb96a)
+    — feat(editor): pass through agent-family completion documentation
 
 # Plan: sase-core LSP agent-catalog documentation passthrough
 
