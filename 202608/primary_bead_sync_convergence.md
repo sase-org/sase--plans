@@ -1,55 +1,51 @@
 ---
 tier: epic
 title: Converge bead-store refresh on the single primary-sidecar sync policy
-goal: "The only automated writer that touches a project's primary bead sidecar is the
-  conservative fetch/fast-forward auto-sync policy, periodic bead chops hold one lease
-  per project per tick, and the ownership invariant audit covers the launch and archive
-  workflows plus every directory operation the epic introduced.
+goal: 'The only automated writer that touches a project''s primary bead sidecar is
+  the conservative fetch/fast-forward auto-sync policy, periodic bead chops hold one
+  lease per project per tick, and the ownership invariant audit covers the launch
+  and archive workflows plus every directory operation the epic introduced.
 
-  "
+  '
 phases:
-  - id: waiter-sync-hints
-    title: Retire the competing canonical bead-store refresh path
-    depends_on: []
-    size: medium
-    description:
-      "waiter-sync-hints: replace machine-initiated integrate_sdd_repository against
-      canonical primary bead sidecars with sync hints consumed by sidecar_auto_sync."
-  - id: chop-lease-batching
-    title: One lease and one publication per project per claim-check tick
-    depends_on: []
-    size: medium
-    description:
-      "chop-lease-batching: fuse the bead_claim_checks read snapshot and reconcile batch
-      into a single operational lease per project."
-  - id: audit-gaps
-    title: Close the ownership epic's own audit gaps
-    depends_on: []
-    size: small
-    description:
-      "audit-gaps: review reset_replay._clear_owned_paths in the artifact directory
-      audit, register the writable-store import boundary as a source-tree audit, and
-      document the remaining user-directed primary bead writers."
-  - id: launch-invariant-coverage
-    title: Extend the ownership invariant audit to launch and archive workflows
-    depends_on:
-      - waiter-sync-hints
-      - chop-lease-batching
-      - audit-gaps
-    size: medium
-    description:
-      "launch-invariant-coverage: assert primary worktree/index/HEAD/ref stability
-      across plan approval and archive, epic launch, and task launch."
+- id: waiter-sync-hints
+  title: Retire the competing canonical bead-store refresh path
+  depends_on: []
+  size: medium
+  description: 'waiter-sync-hints: replace machine-initiated integrate_sdd_repository
+    against canonical primary bead sidecars with sync hints consumed by sidecar_auto_sync.'
+- id: chop-lease-batching
+  title: One lease and one publication per project per claim-check tick
+  depends_on: []
+  size: medium
+  description: 'chop-lease-batching: fuse the bead_claim_checks read snapshot and
+    reconcile batch into a single operational lease per project.'
+- id: audit-gaps
+  title: Close the ownership epic's own audit gaps
+  depends_on: []
+  size: small
+  description: 'audit-gaps: review reset_replay._clear_owned_paths in the artifact
+    directory audit, register the writable-store import boundary as a source-tree
+    audit, and document the remaining user-directed primary bead writers.'
+- id: launch-invariant-coverage
+  title: Extend the ownership invariant audit to launch and archive workflows
+  depends_on:
+  - waiter-sync-hints
+  - chop-lease-batching
+  - audit-gaps
+  size: medium
+  description: 'launch-invariant-coverage: assert primary worktree/index/HEAD/ref
+    stability across plan approval and archive, epic launch, and task launch.'
 parent_bead: sase-mq
 proposed_by: bbugyi200.athena.sase-mq.land
 create_time: 2026-08-16 04:51:30
 status: wip
+bead_id: sase-mq.8
 ---
 
-- **PROMPT:**
-  [prompts/202608/primary_bead_sync_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/primary_bead_sync_convergence.md)
-- **PARENT:**
-  [202608/primary_workspace_ownership.md](https://github.com/sase-org/sase--plans/blob/main/202608/primary_workspace_ownership.md)
+- **PROMPT:** [prompts/202608/primary_bead_sync_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/primary_bead_sync_convergence.md)
+- **PARENT:** [202608/primary_workspace_ownership.md](https://github.com/sase-org/sase--plans/blob/main/202608/primary_workspace_ownership.md)
+- **BEAD:** [sase-mq.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-mq/sase-mq.8.md)
 
 # Plan: Converge bead-store refresh on the single primary-sidecar sync policy
 
