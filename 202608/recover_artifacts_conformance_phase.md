@@ -15,6 +15,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/recover_artifacts_conformance_phase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/recover_artifacts_conformance_phase.md)
+- **AGENTS:**
+  - [bbugyi200.athena.03c](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.03c.md)
+- **COMMITS:**
+  - [78a9130](https://github.com/sase-org/sase/commit/78a9130f753609fab8a6adb9d3245afb05574d46)
+    — fix(tui): honor Artifacts pane contract actions
 
 # Plan: Recover the lost `sase-m6.7.1.6` conformance, docs, and perf-gate work
 
