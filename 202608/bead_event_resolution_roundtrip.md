@@ -31,6 +31,7 @@ status: done
   - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_get.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.main.test_var_handler.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_navigation.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_navigation.0/README.md)
+  - [bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_provider_routing.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.tests.test_models_panel_provider_routing.0/README.md)
 - **COMMITS:**
   - [f935aca](https://github.com/sase-org/sase/commit/f935acacee35d7261aa3b4dbe0bd57342e09d43d)
     — fix(bead): name concrete field diff in append-only rewrite guard message
@@ -70,6 +71,8 @@ status: done
     — feat(workspace): run approval launches on operational leases
   - [495f10b](https://github.com/sase-org/sase/commit/495f10b71e5772bc1845697ba3c2406fe384692c)
     — test: split models panel navigation tests by concern
+  - [ab5677b](https://github.com/sase-org/sase/commit/ab5677b7dc6f1af0464cc67c68162b43eb3cb1e8)
+    — test: split provider routing panel tests
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
