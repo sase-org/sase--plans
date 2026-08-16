@@ -24,6 +24,7 @@ status: done
   - [bbugyi200.athena.sase-mq.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.5/README.md)
   - [bbugyi200.athena.sase-mq.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.6/README.md)
   - [bbugyi200.athena.sase-mq.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.7/README.md)
+  - [bbugyi200.athena.sase-mq.8.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-mq.8.3/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_display.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.ace.tui.modals.models_panel_rendering.0/README.md)
   - [bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-2t.split_file.src.sase.bead._stream_integrity.0/README.md)
@@ -79,6 +80,8 @@ status: done
     — test(workspace): add end-to-end ownership invariant audit gates
   - [738d76b](https://github.com/sase-org/sase/commit/738d76b865a3aa2170a17481660f953a027c9468)
     — test: split test selection health correlation tests
+  - [b82f21c](https://github.com/sase-org/sase/commit/b82f21c1bfcbaa40d1224102465b69446a0b54c4)
+    — test: register ownership audit coverage
 
 # Fix non-round-trip-stable bead event `resolution` field wedging the bead store
 
