@@ -10,10 +10,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-m6.8
 bead: sase-m6.8
-create_time: 2026-08-16 13:45:16
+create_time: 2026-08-16 13:45:25
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/declarative_ref_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/declarative_ref_pane.md)
 - **PARENT:** [202608/artifacts_pane_contract.md](artifacts_pane_contract.md)
 - **BEAD:**
   [sase-m6.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-m6/sase-m6.8.md)
