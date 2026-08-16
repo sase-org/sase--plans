@@ -19,6 +19,8 @@ status: done
 - **COMMITS:**
   - [278cc81](https://github.com/sase-org/sase/commit/278cc810b6bbce80b5b2e6784b9c49a09748654c)
     — feat(beads): surface flag beads across bead views
+  - [6f1286e](https://github.com/sase-org/sase/commit/6f1286e269aeb279aa42f3e8a78466767ea8893c)
+    — fix(ace): repair post-rebase history metadata checks
 
 # Flag beads on every bead-rendering surface
 
