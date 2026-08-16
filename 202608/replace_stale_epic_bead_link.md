@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/replace_stale_epic_bead_link.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/replace_stale_epic_bead_link.md)
+- **AGENTS:**
+  - [bbugyi200.athena.031](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.031.md)
+- **COMMITS:**
+  - [37fe22b](https://github.com/sase-org/sase/commit/37fe22b8115f77ae283e7fca7b663630ecdca511)
+    — fix(bead): replace stale epic links from plan files
 
 # Plan: Replace stale epic bead links during plan work
 
