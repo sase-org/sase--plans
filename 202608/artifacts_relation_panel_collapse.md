@@ -11,9 +11,6 @@ create_time: 2026-08-17 06:54:58
 status: wip
 ---
 
-- **PROMPT:**
-  [prompts/202608/artifacts_relation_panel_collapse.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/artifacts_relation_panel_collapse.md)
-
 # Plan: Collapse the Artifacts relation panel with `.`
 
 ## 1. Outcome
