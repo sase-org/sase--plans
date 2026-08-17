@@ -11,6 +11,12 @@ create_time: 2026-08-17 06:54:58
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.04h](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.04h.md)
+- **COMMITS:**
+  - [b8d26eb](https://github.com/sase-org/sase/commit/b8d26eb035a7d9ff8bc2e2d108ab1ad88b9c9b5c)
+    — feat(ace-tui): collapse the artifacts relations rail with \`.\`
+
 # Plan: Collapse the Artifacts relation panel with `.`
 
 ## 1. Outcome
