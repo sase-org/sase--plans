@@ -28,6 +28,8 @@ status: done
   [202608/backlog_top_five_gates_and_flakes.md](backlog_top_five_gates_and_flakes.md)
 - **BEAD:**
   [sase-ns.6.6.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.6.6.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.6.6.6.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.6.6.1.md)
 
 # Plan: Finish isolating the process-global merged-config cache
 
