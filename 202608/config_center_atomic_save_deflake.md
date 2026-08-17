@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/task_backlog_top5.md](task_backlog_top5.md)
 - **BEAD:**
   [sase-ns.6.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.6.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.2.md)
+- **COMMITS:**
+  - [d9b2984](https://github.com/sase-org/sase/commit/d9b2984a7b54e5c0788513755a2cf165ea673919)
+    — fix(tui): isolate config center state replacement
 
 # Deflake the Config Center Atomic-Save Test
 
