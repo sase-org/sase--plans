@@ -9,7 +9,7 @@ goal:
   contract is satisfied.
 proposed_by: bbugyi200.athena.04q
 create_time: 2026-08-17 09:10:22
-status: wip
+status: done
 ---
 
 # Fix sase-telegram CI: build the `flag_triage` gate with its real factory
