@@ -18,10 +18,12 @@ goal: "`load_merged_config()` and `get_agent_owner_config_snapshot()` publish th
 size: medium
 proposed_by: bbugyi200.athena.sase-ns.6.6.6.1
 bead: sase-ns.6.6.6.1
-create_time: 2026-08-17 12:34:42
+create_time: 2026-08-17 12:34:55
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/config_cache_atomic_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/config_cache_atomic_publication.md)
 - **PARENT:**
   [202608/backlog_top_five_gates_and_flakes.md](backlog_top_five_gates_and_flakes.md)
 - **BEAD:**
