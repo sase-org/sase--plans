@@ -8,7 +8,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.04h
 create_time: 2026-08-17 06:54:58
-status: wip
+status: done
 ---
 
 # Plan: Collapse the Artifacts relation panel with `.`
