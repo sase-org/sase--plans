@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/backlog_top5_gates_green.md](backlog_top5_gates_green.md)
 - **BEAD:**
   [sase-ns.6.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.6.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.6.6.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.6.5.md)
+- **COMMITS:**
+  - [b6246f1](https://github.com/sase-org/sase/commit/b6246f1cfb8b1d4d9c2d524efab7c4082ba2ee93)
+    — test: deflake headless epic approval against an in-flight launch
 
 # Deflake Headless Epic Approval Against An In-Flight Launch (sase-nz)
 
