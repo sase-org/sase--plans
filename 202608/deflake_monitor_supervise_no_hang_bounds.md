@@ -9,10 +9,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ns.6.6.6.3
 bead: sase-ns.6.6.6.3
-create_time: 2026-08-17 06:15:36
+create_time: 2026-08-17 06:15:43
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/deflake_monitor_supervise_no_hang_bounds.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/deflake_monitor_supervise_no_hang_bounds.md)
 - **PARENT:**
   [202608/backlog_top_five_gates_and_flakes.md](backlog_top_five_gates_and_flakes.md)
 - **BEAD:**
