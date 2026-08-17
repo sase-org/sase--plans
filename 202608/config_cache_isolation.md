@@ -8,10 +8,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ns.6.6.6.1
 bead: sase-ns.6.6.6.1
-create_time: 2026-08-17 06:00:35
+create_time: 2026-08-17 06:00:42
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/config_cache_isolation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/config_cache_isolation.md)
 - **PARENT:**
   [202608/backlog_top_five_gates_and_flakes.md](backlog_top_five_gates_and_flakes.md)
 - **BEAD:**
