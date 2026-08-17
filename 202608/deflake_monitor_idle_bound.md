@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/backlog_top5_gates_green.md](backlog_top5_gates_green.md)
 - **BEAD:**
   [sase-ns.6.6.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.6.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.6.6.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.6.4.md)
+- **COMMITS:**
+  - [f9ab15d](https://github.com/sase-org/sase/commit/f9ab15d9c2a271d0db6f922885803ee257299771)
+    — test(monitor): deflake idle timeout liveness bound
 
 # Deflake the monitor idle-timeout liveness bound
 
