@@ -12,7 +12,7 @@ goal: "`just selection-health --fail-on-new-flake` can be told that one specific
 proposed_by: bbugyi200.athena.sase-ns.6.1
 bead: sase-ns.6.1
 create_time: 2026-08-16 21:11:41
-status: wip
+status: done
 ---
 
 - **PROMPT:**
