@@ -20,6 +20,11 @@ status: done
 - **PARENT:** [202608/task_backlog_top5.md](task_backlog_top5.md)
 - **BEAD:**
   [sase-ns.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ns.6.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.1.md)
+- **COMMITS:**
+  - [6000a54](https://github.com/sase-org/sase/commit/6000a54a1894375ed21f68b3e2c44026b2dcd481)
+    — feat(selection-health): retire a fixed node's historical flake evidence
 
 # Retire A Fixed Node's Historical Flake Evidence
 
