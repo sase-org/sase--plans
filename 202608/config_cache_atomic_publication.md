@@ -30,6 +30,9 @@ status: done
   [sase-ns.6.6.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.6.6.1.md)
 - **AGENTS:**
   - [bbugyi200.athena.sase-ns.6.6.6.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ns.6.6.6.1.md)
+- **COMMITS:**
+  - [5e58fb1](https://github.com/sase-org/sase/commit/5e58fb1c8b4a92e91056a179b9591d52beedd0d8)
+    — fix(config): publish merged-config and owner-snapshot caches atomically
 
 # Plan: Finish isolating the process-global merged-config cache
 
