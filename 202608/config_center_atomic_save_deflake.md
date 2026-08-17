@@ -7,10 +7,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ns.6.2
 bead: sase-ns.6.2
-create_time: 2026-08-16 21:07:35
+create_time: 2026-08-16 21:07:42
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/config_center_atomic_save_deflake.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/config_center_atomic_save_deflake.md)
 - **PARENT:** [202608/task_backlog_top5.md](task_backlog_top5.md)
 - **BEAD:**
   [sase-ns.6.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ns/sase-ns.6.2.md)
