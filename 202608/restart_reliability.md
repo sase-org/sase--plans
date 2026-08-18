@@ -11,9 +11,6 @@ create_time: 2026-08-18 09:42:01
 status: wip
 ---
 
-- **PROMPT:**
-  [prompts/202608/restart_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/restart_reliability.md)
-
 # Plan: Harden `sase agent restart`
 
 ## 1. The Reported Failure
