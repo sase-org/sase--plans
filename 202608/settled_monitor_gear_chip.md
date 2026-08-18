@@ -8,7 +8,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.067
 create_time: 2026-08-18 10:42:03
-status: wip
+status: done
 ---
 
 # Settled-monitor gear chip on clan and family container rows
