@@ -11,6 +11,12 @@ create_time: 2026-08-18 09:42:01
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.05t.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.05t.f0.md)
+- **COMMITS:**
+  - [cfdaa65](https://github.com/sase-org/sase/commit/cfdaa657769f84c66408d49c60d8e8b6ee8840b5)
+    — feat(agent): make restart reuse names it used to refuse
+
 # Plan: Harden `sase agent restart`
 
 ## 1. The Reported Failure
