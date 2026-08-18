@@ -8,7 +8,7 @@ goal:
   escape as a traceback after the old agent is already dead."
 proposed_by: bbugyi200.athena.05t.f0
 create_time: 2026-08-18 09:42:01
-status: wip
+status: done
 ---
 
 # Plan: Harden `sase agent restart`
