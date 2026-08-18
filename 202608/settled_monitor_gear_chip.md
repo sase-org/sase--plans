@@ -11,6 +11,12 @@ create_time: 2026-08-18 10:42:03
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.067](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.067.md)
+- **COMMITS:**
+  - [8452535](https://github.com/sase-org/sase/commit/8452535057142c8810648fea4ec3355dd4ece024)
+    — feat(ace): render settled-monitor gear count on clan/family container rows
+
 # Settled-monitor gear chip on clan and family container rows
 
 ## Goal
