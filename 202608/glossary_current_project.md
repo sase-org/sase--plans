@@ -10,6 +10,12 @@ create_time: 2026-08-18 20:28:11
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.079](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.079.md)
+- **COMMITS:**
+  - [de06c55](https://github.com/sase-org/sase/commit/de06c55caeba25772574329103f72c355aa618ad)
+    — docs: define Current Project glossary term
+
 # Add a "Current Project" glossary term
 
 ## Goal
