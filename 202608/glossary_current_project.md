@@ -10,9 +10,6 @@ create_time: 2026-08-18 20:28:11
 status: wip
 ---
 
-- **PROMPT:**
-  [prompts/202608/glossary_current_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/glossary_current_project.md)
-
 # Add a "Current Project" glossary term
 
 ## Goal
