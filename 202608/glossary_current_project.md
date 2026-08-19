@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.079
 create_time: 2026-08-18 20:28:11
-status: wip
+status: done
 ---
 
 # Add a "Current Project" glossary term
