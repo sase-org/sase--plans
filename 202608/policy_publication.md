@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.3.md)
+- **COMMITS:**
+  - [58256f9](https://github.com/sase-org/sase-core/commit/58256f90d11a82bd8c104ea9bc6d90db39096fd3)
+    — feat(task_type): add optional create_refusal on catalog wire
 
 # Reconcile memory, plan publication, and flag policy contracts
 
