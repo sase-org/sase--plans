@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.11.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.11](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.11.md)
+- **COMMITS:**
+  - [569d425](https://github.com/sase-org/sase/commit/569d4257b747902476422cd7b30ad7824e6b876e)
+    — fix: stabilize process concurrency closeout
 
 # Plan: Stabilize process-concurrency and isolation tests
 
