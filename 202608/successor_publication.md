@@ -7,10 +7,12 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-rm.4
 bead: sase-rm.4
-create_time: 2026-08-20 16:13:56
+create_time: 2026-08-20 16:14:07
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/successor_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/successor_publication.md)
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.4.md)
