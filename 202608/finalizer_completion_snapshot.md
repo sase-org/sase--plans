@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/pluggable_finalizers.md](pluggable_finalizers.md)
 - **BEAD:**
   [sase-rn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rn/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rn.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rn.land.md)
+- **COMMITS:**
+  - [7c52152](https://github.com/sase-org/sase/commit/7c52152832fbb4033f89d8d4cf0a690afbe1fbd1)
+    — test(completion): sync cli_spec.json snapshot with finalizer subcommands
 
 # Refresh the finalizer completion snapshot
 
