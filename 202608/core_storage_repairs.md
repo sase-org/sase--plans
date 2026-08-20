@@ -19,8 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.1.md)
 - **COMMITS:**
-  - [279f0e0](https://github.com/sase-org/sase-core/commit/279f0e0ef7b694dd8ecadd6fae00124695b2d09a)
-    — fix: repair core storage identity contracts
+  - [891cf60](https://github.com/sase-org/sase/commit/891cf604f38cd4b308245210df6443dd46d60160)
+    — fix: propagate core storage repair outcomes
 
 # Complete the core-storage phase
 
