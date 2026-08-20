@@ -19,8 +19,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.3.md)
 - **COMMITS:**
-  - [58256f9](https://github.com/sase-org/sase-core/commit/58256f90d11a82bd8c104ea9bc6d90db39096fd3)
-    — feat(task_type): add optional create_refusal on catalog wire
+  - [f136f4f](https://github.com/sase-org/sase/commit/f136f4fbdcb8a48cde0716dd54ad71aa3c386796)
+    — feat: reconcile memory, plan publication, and flag policy contracts
 
 # Reconcile memory, plan publication, and flag policy contracts
 
