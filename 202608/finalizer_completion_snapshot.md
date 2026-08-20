@@ -7,10 +7,12 @@ goal:
 size: xsmall
 proposed_by: bbugyi200.athena.sase-rn.land
 bead: sase-rn
-create_time: 2026-08-20 19:49:30
+create_time: 2026-08-20 19:49:37
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/finalizer_completion_snapshot.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/finalizer_completion_snapshot.md)
 - **PARENT:** [202608/pluggable_finalizers.md](pluggable_finalizers.md)
 - **BEAD:**
   [sase-rn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rn/README.md)
