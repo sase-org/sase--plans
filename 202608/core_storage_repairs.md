@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.1.md)
+- **COMMITS:**
+  - [279f0e0](https://github.com/sase-org/sase-core/commit/279f0e0ef7b694dd8ecadd6fae00124695b2d09a)
+    — fix: repair core storage identity contracts
 
 # Complete the core-storage phase
 
