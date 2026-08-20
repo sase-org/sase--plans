@@ -16,6 +16,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.4.md)
+- **COMMITS:**
+  - [982ad29](https://github.com/sase-org/sase/commit/982ad299ee6a81eec30f496b303b4ff0a29eb15b)
+    — fix: make successor handoffs collision-safe
 
 # Plan: Make research publication and family handoffs collision-safe
 
