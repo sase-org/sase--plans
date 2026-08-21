@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.2.md)
 - **COMMITS:**
-  - [4a3e691](https://github.com/sase-org/sase/commit/4a3e691964b6715a8698cce29fd5a16d55d50acc)
-    — feat(completion): add inventory and snippet candidate providers
+  - [427d57e](https://github.com/sase-org/sase-core/commit/427d57e743d02eafbd39388bdba0a35d1966c370)
+    — feat(completion): share model filtering with bindings and LSP
 
 # Recover and land the completion architecture phase
 
