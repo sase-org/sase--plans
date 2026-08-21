@@ -18,8 +18,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.5.md)
 - **COMMITS:**
-  - [abb80f4](https://github.com/sase-org/sase/commit/abb80f44ac78e3ddadb3d8708613dfa144dd74e8)
-    — feat(completion): support managed shell distribution
+  - [eaf6cd4](https://github.com/bbugyi200/dotfiles/commit/eaf6cd45c1e695f1e9ab88113032c53860aeecf0)
+    — feat(shell): add managed SASE completions
 
 # Finish shell completion measurement, inline references, and deployment
 
