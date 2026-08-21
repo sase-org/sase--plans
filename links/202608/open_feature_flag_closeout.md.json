@@ -2,6 +2,17 @@
   "artifact_ref": "plan:202608/open_feature_flag_closeout.md",
   "rows": [
     {
+      "created_at": "2026-08-21T14:47:07Z",
+      "created_by": "sase-ru.2",
+      "description": "Need the epic design for sase-ru.2 completion soak phase",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-ru.2",
+      "target_ref": "plan:202608/open_feature_flag_closeout.md",
+      "uses": 1
+    },
+    {
       "created_at": "2026-08-21T15:02:09Z",
       "created_by": "sase-ru.4",
       "description": "Need the planner_chat_trial phase design while recording matched-handoff evidence",
