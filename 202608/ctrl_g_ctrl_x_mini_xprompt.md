@@ -10,6 +10,9 @@ create_time: 2026-08-21 08:41:19
 status: wip
 ---
 
+- **PROMPT:**
+  [prompts/202608/ctrl_g_ctrl_x_mini_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ctrl_g_ctrl_x_mini_xprompt.md)
+
 # Align Ctrl+G Ctrl+X with mini-xprompt targeting
 
 ## Goal
