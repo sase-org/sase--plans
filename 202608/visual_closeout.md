@@ -17,8 +17,8 @@ status: wip
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.13](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.13.md)
 - **COMMITS:**
-  - [1f0d236](https://github.com/sase-org/sase-core/commit/1f0d236f940f8cde852e3de55679e8185c591c34)
-    — fix(editor): hide final directive from name completions
+  - [72f93fb](https://github.com/sase-org/sase/commit/72f93fb1fb3917c39f1859650b87ac33b6d80847)
+    — fix: stabilize visual closeout and verification gates
 
 # Fix visual convergence and clear the PNG backlog
 
