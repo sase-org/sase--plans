@@ -17,8 +17,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-s0.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-s0.land.md)
 - **COMMITS:**
-  - [6ee4e1d](https://github.com/sase-org/sase/commit/6ee4e1d3d26c35d3641de2e267f9297d94b236e1)
-    — test(completion): cover ACE and LSP %final completion parity
+  - [82a5e4a](https://github.com/sase-org/sase-core/commit/82a5e4a4331b6ec42760291e93706ce4d20df60c)
+    — test(editor): expect final directive name and snippet completions
 
 # Complete `%final` LSP exposure and ACE/LSP parity verification
 
