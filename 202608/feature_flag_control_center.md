@@ -1,71 +1,68 @@
 ---
 tier: epic
 title: Durable feature-flag controls in the SASE Admin Center
-goal:
-  Users can inspect and persistently enable or disable every registered SASE feature
+goal: Users can inspect and persistently enable or disable every registered SASE feature
   flag from either a polished Config > Flags pane or the sase flag CLI, with both
-  surfaces sharing one crash-safe state mutation path and applying changes through the
-  established ACE and AXE restart flows without editing normal configuration files.
+  surfaces sharing one crash-safe state mutation path and applying changes through
+  the established ACE and AXE restart flows without editing normal configuration files.
 phases:
-  - id: core
-    title: Rust feature-flag preference store and bindings
-    depends_on: []
-    size: medium
-    description:
-      "core: add a versioned, locked, atomic machine-state store for persistent
-      feature-flag booleans in sase-core, expose strict PyO3 read and set bindings, and
-      prove concurrency, corruption, downgrade, and durability behavior."
-  - id: floor
-    title: Adopt the released core binding floor
-    depends_on:
-      - core
-    size: small
-    description:
-      "floor: wait for the core release, raise sase's sase-core-rs dependency floor,
-      refresh the lockfile and editable install, and smoke-test the published bindings
-      before Python callers land."
-  - id: runtime
-    title: Shared Python resolution and mutation facade
-    depends_on:
-      - floor
-    size: medium
-    description:
-      "runtime: add the thin typed Python adapter, insert saved machine preferences into
-      feature-flag resolution at the designed precedence, synchronize process transport
-      after writes, and return one structured mutation outcome used by every frontend."
-  - id: cli
-    title: Persistent flag enable and disable commands
-    depends_on:
-      - runtime
-    size: medium
-    description:
-      "cli: add sorted sase flag disable and enable commands with rich and JSON results,
-      completion, idempotent shared mutations, and the existing AXE restart machinery,
-      including clear partial-success reporting."
-  - id: tui
-    title: Beautiful Config Flags pane and controlled restart flow
-    depends_on:
-      - runtime
-    size: medium
-    description:
-      "tui: create the default-on sunset rollout flag and its live call site, add the
-      lazy Config > Flags list/detail pane with filtering, provenance, removal metadata,
-      confirmation and narrow layouts, and apply successful toggles through the existing
-      proc-aware ACE plus AXE restart path."
-  - id: polish
-    title: Integrated documentation, visual coverage, and release verification
-    depends_on:
-      - cli
-      - tui
-    size: small
-    description:
-      "polish: align all user documentation and help, exercise the complete CLI and TUI
-      journeys including both rollout-flag states and restart failures, refresh
-      intentional PNG goldens, and run the repository's exhaustive landing gates."
+- id: core
+  title: Rust feature-flag preference store and bindings
+  depends_on: []
+  size: medium
+  description: 'core: add a versioned, locked, atomic machine-state store for persistent
+    feature-flag booleans in sase-core, expose strict PyO3 read and set bindings,
+    and prove concurrency, corruption, downgrade, and durability behavior.'
+- id: floor
+  title: Adopt the released core binding floor
+  depends_on:
+  - core
+  size: small
+  description: 'floor: wait for the core release, raise sase''s sase-core-rs dependency
+    floor, refresh the lockfile and editable install, and smoke-test the published
+    bindings before Python callers land.'
+- id: runtime
+  title: Shared Python resolution and mutation facade
+  depends_on:
+  - floor
+  size: medium
+  description: 'runtime: add the thin typed Python adapter, insert saved machine preferences
+    into feature-flag resolution at the designed precedence, synchronize process transport
+    after writes, and return one structured mutation outcome used by every frontend.'
+- id: cli
+  title: Persistent flag enable and disable commands
+  depends_on:
+  - runtime
+  size: medium
+  description: 'cli: add sorted sase flag disable and enable commands with rich and
+    JSON results, completion, idempotent shared mutations, and the existing AXE restart
+    machinery, including clear partial-success reporting.'
+- id: tui
+  title: Beautiful Config Flags pane and controlled restart flow
+  depends_on:
+  - runtime
+  size: medium
+  description: 'tui: create the default-on sunset rollout flag and its live call site,
+    add the lazy Config > Flags list/detail pane with filtering, provenance, removal
+    metadata, confirmation and narrow layouts, and apply successful toggles through
+    the existing proc-aware ACE plus AXE restart path.'
+- id: polish
+  title: Integrated documentation, visual coverage, and release verification
+  depends_on:
+  - cli
+  - tui
+  size: small
+  description: 'polish: align all user documentation and help, exercise the complete
+    CLI and TUI journeys including both rollout-flag states and restart failures,
+    refresh intentional PNG goldens, and run the repository''s exhaustive landing
+    gates.'
 proposed_by: bbugyi200.athena.09g
 create_time: 2026-08-21 10:00:39
 status: wip
+bead_id: sase-rs
 ---
+
+- **BEAD:** [sase-rs](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rs/README.md)
 
 # Plan: Durable feature-flag controls in the SASE Admin Center
 
