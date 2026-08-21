@@ -13,6 +13,17 @@
       "uses": 1
     },
     {
+      "created_at": "2026-08-21T14:47:53Z",
+      "created_by": "sase-ru.5",
+      "description": "Need the epic design and phase scope for sase-ru.5",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-ru.5",
+      "target_ref": "plan:202608/open_feature_flag_closeout.md",
+      "uses": 1
+    },
+    {
       "created_at": "2026-08-21T15:02:09Z",
       "created_by": "sase-ru.4",
       "description": "Need the planner_chat_trial phase design while recording matched-handoff evidence",
