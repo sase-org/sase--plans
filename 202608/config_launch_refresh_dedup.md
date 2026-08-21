@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/admin_center_launch.md](admin_center_launch.md)
 - **BEAD:**
   [sase-rp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rp/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rp.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rp.land.md)
+- **COMMITS:**
+  - [3e0bebe](https://github.com/sase-org/sase/commit/3e0bebedd26e1be97ce3b07f0ac89f1ffd3fa4eb)
+    — fix: dedupe embedded launch refresh callbacks
 
 # Plan: Make Config Launch mutation refreshes exactly once
 
