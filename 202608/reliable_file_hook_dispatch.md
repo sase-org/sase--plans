@@ -7,7 +7,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.research.0v.final.f0
 create_time: 2026-08-21 20:28:20
-status: wip
+status: done
 ---
 
 # Plan: Make file-hook dispatch reliable and diagnosable
