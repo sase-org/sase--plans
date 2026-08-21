@@ -13,6 +13,8 @@ status: done
 - **PARENT:** [202608/finalizer_integrity_closeout.md](finalizer_integrity_closeout.md)
 - **BEAD:**
   [sase-rr.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rr/sase-rr.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rr.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rr.5.land.md)
 
 # Adopt the finalizer integrity core floor
 
