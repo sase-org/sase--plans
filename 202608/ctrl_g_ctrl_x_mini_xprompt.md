@@ -12,6 +12,11 @@ status: done
 
 - **PROMPT:**
   [prompts/202608/ctrl_g_ctrl_x_mini_xprompt.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202608/ctrl_g_ctrl_x_mini_xprompt.md)
+- **AGENTS:**
+  - [bbugyi200.athena.094](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.094.md)
+- **COMMITS:**
+  - [e91b9f8](https://github.com/sase-org/sase/commit/e91b9f83acba631f36d0d74b3e8a6e19ae63d51e)
+    — fix(ace): route ctrl-g ctrl-x to mini xprompt
 
 # Align Ctrl+G Ctrl+X with mini-xprompt targeting
 
