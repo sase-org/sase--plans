@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/feature_flag_control_center.md",
+  "rows": [
+    {
+      "created_at": "2026-08-21T17:01:06Z",
+      "created_by": "sase-rs.5",
+      "description": "Need the design for the Config Flags pane and restart flow in sase-rs.5",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-rs.5",
+      "target_ref": "plan:202608/feature_flag_control_center.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
