@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/final_directive_completion.md",
+  "rows": [
+    {
+      "created_at": "2026-08-21T22:17:50Z",
+      "created_by": "sase-s0.land",
+      "description": "Need the approved epic design and phase acceptance criteria for landing verification",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-s0.land",
+      "target_ref": "plan:202608/final_directive_completion.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
