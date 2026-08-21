@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.10.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.10](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.10.md)
+- **COMMITS:**
+  - [b8559f3](https://github.com/sase-org/sase/commit/b8559f36f00a3f46c0ee0ce7343dc50735275900)
+    — fix(ace): stabilize async teardown and interaction waits
 
 # Stabilize the remaining ACE lifecycle and interaction flakes
 
