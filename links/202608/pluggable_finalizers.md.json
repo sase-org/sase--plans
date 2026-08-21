@@ -33,6 +33,17 @@
       "source_ref": "research:202608/sase_native_finalizer_use_cases.md",
       "target_ref": "plan:202608/pluggable_finalizers.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-21T19:42:06Z",
+      "created_by": "research.0v.cld",
+      "description": "Uses the original protocol plan as the acceptance baseline",
+      "origin": "manual",
+      "relation": "related",
+      "schema_version": 2,
+      "source_ref": "research:202608/finalizer_bugs_and_capability_upgrades.md",
+      "target_ref": "plan:202608/pluggable_finalizers.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
