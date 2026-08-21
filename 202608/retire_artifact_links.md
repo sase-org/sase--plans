@@ -10,7 +10,7 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.099
 create_time: 2026-08-21 09:18:27
-status: wip
+status: done
 ---
 
 # Plan: Graduate artifact links and retire the beta flag
