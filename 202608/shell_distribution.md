@@ -18,8 +18,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.sase-rm.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.5.md)
 - **COMMITS:**
-  - [eaf6cd4](https://github.com/bbugyi200/dotfiles/commit/eaf6cd45c1e695f1e9ab88113032c53860aeecf0)
-    — feat(shell): add managed SASE completions
+  - [0c9592f](https://github.com/sase-org/sase-telegram/commit/0c9592fb4e26807f595dcc1667a3aa63330b38fc)
+    — ci: pin setup-just workflow inputs
 
 # Finish shell completion measurement, inline references, and deployment
 
