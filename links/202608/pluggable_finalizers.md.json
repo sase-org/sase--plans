@@ -11,6 +11,28 @@
       "source_ref": "agent:research.0u.cdx",
       "target_ref": "plan:202608/pluggable_finalizers.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-21T15:30:31Z",
+      "created_by": "research.0u.cld",
+      "description": "Need sase-rn design for finalizer use-case research",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.0u.cld",
+      "target_ref": "plan:202608/pluggable_finalizers.md",
+      "uses": 1
+    },
+    {
+      "created_at": "2026-08-21T15:36:34Z",
+      "created_by": "research.0u.cld",
+      "description": "implementation plan for the host-owned finalizer protocol",
+      "origin": "manual",
+      "relation": "related",
+      "schema_version": 2,
+      "source_ref": "research:202608/sase_native_finalizer_use_cases.md",
+      "target_ref": "plan:202608/pluggable_finalizers.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
