@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/sase-rm.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.5.md)
+- **COMMITS:**
+  - [abb80f4](https://github.com/sase-org/sase/commit/abb80f44ac78e3ddadb3d8708613dfa144dd74e8)
+    — feat(completion): support managed shell distribution
 
 # Finish shell completion measurement, inline references, and deployment
 
