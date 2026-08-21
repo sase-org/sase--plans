@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ctrl_g_ctrl_x_mini_xprompt.md",
+  "rows": [
+    {
+      "created_at": "2026-08-21T12:42:01Z",
+      "created_by": "094",
+      "description": "Need approved implementation steps before changing xprompt behavior",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:094",
+      "target_ref": "plan:202608/ctrl_g_ctrl_x_mini_xprompt.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
