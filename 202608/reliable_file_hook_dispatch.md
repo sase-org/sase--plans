@@ -10,6 +10,12 @@ create_time: 2026-08-21 20:28:20
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.0v.final.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.0v.final.f0.md)
+- **COMMITS:**
+  - [4dde458](https://github.com/sase-org/sase/commit/4dde458f593687ee4e8fb6734c1dbd1b0fef1215)
+    — fix(file-hooks): record dispatch outcomes and repair missed commit batches
+
 # Plan: Make file-hook dispatch reliable and diagnosable
 
 ## Objective
