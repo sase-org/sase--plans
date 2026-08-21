@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/finalizer_integrity_closeout.md",
+  "rows": [
+    {
+      "created_at": "2026-08-21T20:31:43Z",
+      "created_by": "sase-rr.5.1",
+      "description": "Need the audited design as recorded context for sase-rr.5.1",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-rr.5.1",
+      "target_ref": "plan:202608/finalizer_integrity_closeout.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
