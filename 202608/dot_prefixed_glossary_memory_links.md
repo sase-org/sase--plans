@@ -10,6 +10,12 @@ create_time: 2026-08-21 10:38:19
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ri.land.w2.f2.w2.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ri.land.w2.f2.w2.f1.md)
+- **COMMITS:**
+  - [dc7da84](https://github.com/sase-org/sase/commit/dc7da84f9458186a100620b4f7f0dc1c22370bba)
+    — feat(ace-tui): use .1-.9 for Glossary and Memory numbered links
+
 # Plan: Use a dot prefix for Glossary and Memory numbered links
 
 ## Goal
