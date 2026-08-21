@@ -16,8 +16,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.099](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.099.md)
 - **COMMITS:**
-  - [cb1c5de](https://github.com/bbugyi200/dotfiles/commit/cb1c5de2e27753ccef9a9ec00e6a64bf6edccdf0)
-    — docs(skills): update artifact file link wording
+  - [ae70ba9](https://github.com/sase-org/sase--plans/commit/ae70ba98ce658f52cdb49056aba0283b0facd317)
+    — chore(artifact-links): migrate plans sidecar to v2
 
 # Plan: Graduate artifact links and retire the beta flag
 
