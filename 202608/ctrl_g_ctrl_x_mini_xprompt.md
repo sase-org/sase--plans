@@ -15,8 +15,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.094](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.094.md)
 - **COMMITS:**
-  - [e91b9f8](https://github.com/sase-org/sase/commit/e91b9f83acba631f36d0d74b3e8a6e19ae63d51e)
-    — fix(ace): route ctrl-g ctrl-x to mini xprompt
+  - [19e0f9b](https://github.com/sase-org/sase--plans/commit/19e0f9b6aaa799c943b8dfb5f099e4c841878d06)
+    — chore(plans): record ctrl-g ctrl-x plan links
 
 # Align Ctrl+G Ctrl+X with mini-xprompt targeting
 
