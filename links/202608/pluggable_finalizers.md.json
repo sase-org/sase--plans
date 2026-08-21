@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/pluggable_finalizers.md",
+  "rows": [
+    {
+      "created_at": "2026-08-21T15:17:39Z",
+      "created_by": "research.0u.cdx",
+      "description": "Need the completed finalizer protocol design and its rationale for the requested use-case research",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.0u.cdx",
+      "target_ref": "plan:202608/pluggable_finalizers.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
