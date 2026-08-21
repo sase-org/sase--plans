@@ -7,7 +7,7 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.sase-ri.land.w2.f2.w2.f1
 create_time: 2026-08-21 10:38:19
-status: wip
+status: done
 ---
 
 # Plan: Use a dot prefix for Glossary and Memory numbered links
