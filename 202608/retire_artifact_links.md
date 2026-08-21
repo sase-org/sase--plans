@@ -16,8 +16,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.099](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.099.md)
 - **COMMITS:**
-  - [b6662f3](https://github.com/sase-org/sase/commit/b6662f34d7022065a5895d119a7fd2e52a3f89fc)
-    — feat(artifact-links): retire beta flag
+  - [cb1c5de](https://github.com/bbugyi200/dotfiles/commit/cb1c5de2e27753ccef9a9ec00e6a64bf6edccdf0)
+    — docs(skills): update artifact file link wording
 
 # Plan: Graduate artifact links and retire the beta flag
 
