@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/task_backlog_closeout.md](task_backlog_closeout.md)
 - **BEAD:**
   [sase-rm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rm/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rm.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rm.land.md)
+- **COMMITS:**
+  - [a1ee712](https://github.com/sase-org/sase/commit/a1ee712381d7e5c038f576329970450a10c2c91d)
+    — refactor(finalizers): export declaration helpers as a public API
 
 # Repair the finalizer declaration module boundary
 
