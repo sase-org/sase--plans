@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/final_directive_completion.md](final_directive_completion.md)
 - **BEAD:**
   [sase-s0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-s0/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-s0.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-s0.land.md)
+- **COMMITS:**
+  - [6ee4e1d](https://github.com/sase-org/sase/commit/6ee4e1d3d26c35d3641de2e267f9297d94b236e1)
+    — test(completion): cover ACE and LSP %final completion parity
 
 # Complete `%final` LSP exposure and ACE/LSP parity verification
 
