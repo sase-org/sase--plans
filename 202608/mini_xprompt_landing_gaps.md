@@ -14,6 +14,11 @@ status: done
 - **PARENT:** [202608/targeted_mini_xprompt.md](targeted_mini_xprompt.md)
 - **BEAD:**
   [sase-rl](https://github.com/sase-org/sase--beads/blob/main/pages/sase-rl/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-rl.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-rl.land.md)
+- **COMMITS:**
+  - [c1dabb1](https://github.com/sase-org/sase/commit/c1dabb1b5154109bff5ca3c8397a6685b6886656)
+    — fix(ace): harden mini-xprompt save targets
 
 # Close mini-xprompt landing gaps
 
