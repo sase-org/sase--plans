@@ -5,8 +5,6 @@ goal:
   The SASE glossary teaches both AXE concepts precisely without wasting agent context.
 size: small
 proposed_by: bbugyi200.athena.0bb
-create_time: 2026-08-22 18:41:31
-status: wip
 ---
 
 # Add Lumberjack and Chop to the SASE glossary
