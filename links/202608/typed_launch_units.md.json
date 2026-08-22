@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/typed_launch_units.md",
+  "rows": [
+    {
+      "created_at": "2026-08-22T20:50:50Z",
+      "created_by": "sase-s6.3",
+      "description": "Need phase 3 durable launch admission design as audited context for sase-s6.3",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-s6.3",
+      "target_ref": "plan:202608/typed_launch_units.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
