@@ -6,8 +6,6 @@ goal:
   declaration submission from turning a completed agent into a discarded-work failure.
 size: medium
 proposed_by: bbugyi200.athena.0b6
-create_time: 2026-08-22 16:46:52
-status: wip
 ---
 
 # Reject stale final declarations before acceptance
