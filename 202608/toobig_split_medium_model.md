@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0b9
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0b9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0b9.md)
+- **COMMITS:**
+  - [52f8f7a](https://github.com/bbugyi200/bugyi-chops/commit/52f8f7ac20f86379515ee05d8e48f91faafbf6ea)
+    — feat(toobig_split): route split-file proposals through @medium
+
 # Route `toobig_split` agents through `@medium`
 
 ## Context
