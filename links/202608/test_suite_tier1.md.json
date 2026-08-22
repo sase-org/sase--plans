@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/test_suite_tier1.md",
+  "rows": [
+    {
+      "created_at": "2026-08-22T14:26:46Z",
+      "created_by": "sase-s1.6--1",
+      "description": "Need contract-set curation rules before adding sase-s1.5's new contract-marked ratchet test to the manifest",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-s1.6--1",
+      "target_ref": "plan:202608/test_suite_tier1.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
