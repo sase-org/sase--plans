@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bc
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bc](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bc.md)
+- **COMMITS:**
+  - [aee7026](https://github.com/sase-org/sase--plans/commit/aee70261fa33b830c58ee38b142ca9d7a7478a04)
+    — docs(plans): record sase-s5 land-agent read of file_hook_producer_filter
+
 # Land and close `sase-s5`
 
 ## Goal
