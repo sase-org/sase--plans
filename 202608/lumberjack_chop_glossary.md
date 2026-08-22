@@ -7,6 +7,12 @@ size: small
 proposed_by: bbugyi200.athena.0bb
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bb.md)
+- **COMMITS:**
+  - [2e7a723](https://github.com/sase-org/sase/commit/2e7a72354028de5d29d61a68d0a790b0c9d352d8)
+    — docs(memory): add AXE glossary terms
+
 # Add Lumberjack and Chop to the SASE glossary
 
 ## Goal
