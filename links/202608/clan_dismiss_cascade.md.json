@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/clan_dismiss_cascade.md",
+  "rows": [
+    {
+      "created_at": "2026-08-22T11:54:16Z",
+      "created_by": "0ak",
+      "description": "Compare the approved cleanup design with the observed orphan-monitor behavior",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0ak",
+      "target_ref": "plan:202608/clan_dismiss_cascade.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
