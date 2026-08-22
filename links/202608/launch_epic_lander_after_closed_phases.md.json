@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/launch_epic_lander_after_closed_phases.md",
+  "rows": [
+    {
+      "created_at": "2026-08-22T15:36:06Z",
+      "created_by": "0b1",
+      "description": "Need approved implementation plan for land-only epic relaunch",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0b1",
+      "target_ref": "plan:202608/launch_epic_lander_after_closed_phases.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
