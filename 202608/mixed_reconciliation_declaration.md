@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0b3
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0b3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0b3.md)
+- **COMMITS:**
+  - [3712033](https://github.com/sase-org/sase/commit/37120333b0c37a8a1b5c2b5341671cfb70a9d252)
+    — fix(finalizers): preserve mixed reconciliation declarations
+
 # Preserve finalizer declarations across mixed machine reconciliation
 
 ## Goal
