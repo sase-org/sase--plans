@@ -1,65 +1,62 @@
 ---
 tier: epic
-title:
-  Restore green GitHub Actions across source, visual, performance, and release lanes
-goal: "GitHub Actions uses complete source-built Rust artifacts, portable test
-  assertions, deterministic visual cursor normalization, evidence-based performance
-  floors, and safe release-lock source validation so every currently failing SASE lane
-  passes without weakening product contracts or accepting unintended generated changes.
+title: Restore green GitHub Actions across source, visual, performance, and release
+  lanes
+goal: 'GitHub Actions uses complete source-built Rust artifacts, portable test assertions,
+  deterministic visual cursor normalization, evidence-based performance floors, and
+  safe release-lock source validation so every currently failing SASE lane passes
+  without weakening product contracts or accepting unintended generated changes.
 
-  "
+  '
 phases:
-  - id: ci-runtime-artifacts
-    title: Ship the source-built xprompt LSP to every CI consumer
-    depends_on: []
-    size: medium
-    description:
-      "ci-runtime-artifacts: build, publish, install, and contract-test the xprompt LSP
-      beside the Rust wheel from the same sase-core revision."
-  - id: portable-cli-contracts
-    title: Make CLI and skills rendering assertions environment-independent
-    depends_on: []
-    size: small
-    description:
-      "portable-cli-contracts: reuse portable metavar assertions and tolerate Rich line
-      wrapping while retaining the tested user-facing contracts."
-  - id: visual-cursor-convergence
-    title: Eliminate stale cursor paint from visual snapshots
-    depends_on: []
-    size: medium
-    description:
-      "visual-cursor-convergence: normalize focused and blurred input cursor caches
-      before accepting a converged visual frame."
-  - id: query-perf-floor
-    title: Recalibrate the persistent-query absolute performance floor
-    depends_on: []
-    size: small
-    description:
-      "query-perf-floor: add an evidence-backed per-anchor ceiling while preserving the
-      hardware-independent Rust-versus-Python gate."
-  - id: release-lock-normalization
-    title: Accept equivalent canonical PyPI registry spellings in the release ratchet
-    depends_on: []
-    size: small
-    description:
-      "release-lock-normalization: normalize only the trailing-slash-equivalent PyPI
-      simple-index source and keep all non-PyPI lock rewrites fail-closed."
-  - id: integration-verification
-    title: Reproduce every failed lane and run exhaustive verification
-    depends_on:
-      - ci-runtime-artifacts
-      - portable-cli-contracts
-      - visual-cursor-convergence
-      - query-perf-floor
-      - release-lock-normalization
-    size: medium
-    description:
-      "integration-verification: combine the repairs, run focused reproductions plus
-      full repository and visual gates, and inspect the resulting Actions signal."
+- id: ci-runtime-artifacts
+  title: Ship the source-built xprompt LSP to every CI consumer
+  depends_on: []
+  size: medium
+  description: 'ci-runtime-artifacts: build, publish, install, and contract-test the
+    xprompt LSP beside the Rust wheel from the same sase-core revision.'
+- id: portable-cli-contracts
+  title: Make CLI and skills rendering assertions environment-independent
+  depends_on: []
+  size: small
+  description: 'portable-cli-contracts: reuse portable metavar assertions and tolerate
+    Rich line wrapping while retaining the tested user-facing contracts.'
+- id: visual-cursor-convergence
+  title: Eliminate stale cursor paint from visual snapshots
+  depends_on: []
+  size: medium
+  description: 'visual-cursor-convergence: normalize focused and blurred input cursor
+    caches before accepting a converged visual frame.'
+- id: query-perf-floor
+  title: Recalibrate the persistent-query absolute performance floor
+  depends_on: []
+  size: small
+  description: 'query-perf-floor: add an evidence-backed per-anchor ceiling while
+    preserving the hardware-independent Rust-versus-Python gate.'
+- id: release-lock-normalization
+  title: Accept equivalent canonical PyPI registry spellings in the release ratchet
+  depends_on: []
+  size: small
+  description: 'release-lock-normalization: normalize only the trailing-slash-equivalent
+    PyPI simple-index source and keep all non-PyPI lock rewrites fail-closed.'
+- id: integration-verification
+  title: Reproduce every failed lane and run exhaustive verification
+  depends_on:
+  - ci-runtime-artifacts
+  - portable-cli-contracts
+  - visual-cursor-convergence
+  - query-perf-floor
+  - release-lock-normalization
+  size: medium
+  description: 'integration-verification: combine the repairs, run focused reproductions
+    plus full repository and visual gates, and inspect the resulting Actions signal.'
 proposed_by: bbugyi200.athena.0al
 create_time: 2026-08-22 12:30:18
 status: wip
+bead_id: sase-s1
 ---
+
+- **BEAD:** [sase-s1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-s1/README.md)
 
 # Plan: Restore green GitHub Actions
 
