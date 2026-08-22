@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0b6
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0b6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0b6.md)
+- **COMMITS:**
+  - [d8c4085](https://github.com/sase-org/sase/commit/d8c4085524087b768949f2468c0a57376c56f78c)
+    — fix(finalizers): reject stale final declarations
+
 # Reject stale final declarations before acceptance
 
 ## Goal
