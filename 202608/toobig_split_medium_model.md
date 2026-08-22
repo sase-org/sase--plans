@@ -6,8 +6,6 @@ goal:
   %model:@medium directive while preserving the existing sequential split workflow.
 size: small
 proposed_by: bbugyi200.athena.0b9
-create_time: 2026-08-22 18:12:09
-status: wip
 ---
 
 # Route `toobig_split` agents through `@medium`
