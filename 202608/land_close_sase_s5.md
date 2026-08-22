@@ -6,8 +6,6 @@ goal:
   are fully reverified.
 size: medium
 proposed_by: bbugyi200.athena.0bc
-create_time: 2026-08-22 19:40:33
-status: wip
 ---
 
 # Land and close `sase-s5`
