@@ -6,8 +6,6 @@ goal:
   weakening stale-state rejection.
 size: medium
 proposed_by: bbugyi200.athena.0b3
-create_time: 2026-08-22 16:25:43
-status: wip
 ---
 
 # Preserve finalizer declarations across mixed machine reconciliation
