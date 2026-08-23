@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/remove_legacy_commit_command.md",
+  "rows": [
+    {
+      "created_at": "2026-08-23T15:10:44Z",
+      "created_by": "0bt",
+      "description": "this tale removed sase commit and recorded the protected-memory follow-up",
+      "origin": "manual",
+      "relation": "related",
+      "schema_version": 2,
+      "source_ref": "bead:sase-se",
+      "target_ref": "plan:202608/remove_legacy_commit_command.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
