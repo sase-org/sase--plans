@@ -6,8 +6,6 @@ goal:
   merge structure, and Patch association through one responsive type query facet.
 size: medium
 proposed_by: bbugyi200.athena.0bw
-create_time: 2026-08-23 13:32:45
-status: wip
 ---
 
 # Add `type:` filtering to the Artifacts Stitch pane
