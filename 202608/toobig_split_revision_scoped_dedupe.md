@@ -9,33 +9,6 @@ goal:
 proposed_by: bbugyi200.athena.0bj
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0bj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bj.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_config_hub_pane.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_config_hub_pane.0/README.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_statistics_pane_interactions.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_statistics_pane_interactions.0.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.monitor.test_monitor_supervise.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-3l.split_file.tests.monitor.test_monitor_supervise.0/README.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.test_axe_run_agent_exec_plan_followup_approvals.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-3l.split_file.tests.test_axe_run_agent_exec_plan_followup_approvals.0/README.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.test_bead.test_epic_launch.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-3l.split_file.tests.test_bead.test_epic_launch.0.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.test_file_hook_engine.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-3l.split_file.tests.test_file_hook_engine.0/README.md)
-  - [bbugyi200.athena.toobig-3l.split_file.tests.test_file_hooks.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-3l.split_file.tests.test_file_hooks.0.md)
-- **COMMITS:**
-  - [e2056bd](https://github.com/sase-org/sase/commit/e2056bddebf0898dbf67f8aa8420a057dab42712)
-    — docs(axe): warn that content-only once_per keys stay reserved
-  - [f8ce6bb](https://github.com/sase-org/sase/commit/f8ce6bb2253eaed83700d77ea79367e9a3f12a98)
-    — test(ace): split config hub pane tests
-  - [062ae22](https://github.com/sase-org/sase/commit/062ae22c214e6b03683fb3933bbd03cf7788d130)
-    — test(ace): split statistics pane interaction tests under 500 lines
-  - [d46236d](https://github.com/sase-org/sase/commit/d46236d0f27c401320e617b9b9015ccd83826806)
-    — test(monitor): split test_monitor_supervise under 500 lines
-  - [3a92510](https://github.com/sase-org/sase/commit/3a92510eeda6c2e84420c6c223d53f60cd106430)
-    — test(axe): split follow-up approval tests
-  - [cbf3e66](https://github.com/sase-org/sase/commit/cbf3e661e7261bd705d4ab506b50cba03b091b51)
-    — test(bead): split test_epic_launch.py under 500 lines
-  - [e797bb4](https://github.com/sase-org/sase/commit/e797bb411a46dfe4d4a30cfb367155a55ec7b927)
-    — test(file-hooks): split test_file_hook_engine.py under 500 lines
-  - [1b2dda6](https://github.com/sase-org/sase/commit/1b2dda699527585995f136097928e7eba374e15a)
-    — test: split file-hook tests by loader and matching concerns
-
 # Plan: Scope toobig_split dedupe keys to the target repository's HEAD commit
 
 ## Problem
