@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bw
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bw](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bw.md)
+- **COMMITS:**
+  - [4612a84](https://github.com/sase-org/sase/commit/4612a84c896e912c021788cc212d2e843e20242c)
+    — feat(vcs): add stitch type filtering
+
 # Add `type:` filtering to the Artifacts Stitch pane
 
 ## Goal
