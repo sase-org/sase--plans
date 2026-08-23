@@ -8,8 +8,6 @@ goal: "The active agent-family runtime suffix renders the current shell runtime 
   "
 size: small
 proposed_by: bbugyi200.athena.0bo.f0
-create_time: 2026-08-23 10:20:52
-status: wip
 ---
 
 # Plan: Tighten the family runtime separator to a bare slash
