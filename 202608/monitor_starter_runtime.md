@@ -7,8 +7,6 @@ goal:
   clan container rows keep spanning the running monitor.
 size: small
 proposed_by: bbugyi200.athena.0c0
-create_time: 2026-08-23 15:56:11
-status: wip
 ---
 
 # Settled monitor starters must stop borrowing their monitor's runtime
