@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0bz
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bz.md)
+- **COMMITS:**
+  - [67bcea3](https://github.com/sase-org/sase/commit/67bcea32329a897f81eb1b74dcdf5d1b3012fc05)
+    — feat(axe): project agent family into completion notifications
+
 # Fix completion notifications to identify the owning agent family
 
 ## Goal
