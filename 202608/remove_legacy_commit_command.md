@@ -9,6 +9,13 @@ size: medium
 proposed_by: bbugyi200.athena.0bt
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bt.md)
+- **COMMITS:**
+  - [b4a8688](https://github.com/sase-org/sase/commit/b4a86889383e932ff5761dbfdb6ec26752b2b631)
+    — feat(cli)\!: drop the sase commit alias; stitch create is the only tracked VCS
+    path
+
 # Plan
 
 ## Context and boundaries
