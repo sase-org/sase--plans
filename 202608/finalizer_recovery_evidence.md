@@ -6,8 +6,6 @@ goal:
   stops refusing the commit finalizer on the false belief that the files predate it.
 size: medium
 proposed_by: bbugyi200.athena.0bq
-create_time: 2026-08-23 09:54:51
-status: wip
 ---
 
 # Plan: Give the finalizer declaration-recovery turn evidence of its own run
