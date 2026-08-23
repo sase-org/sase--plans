@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0bx
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bx](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bx.md)
+- **COMMITS:**
+  - [6eb51ac](https://github.com/sase-org/sase/commit/6eb51ac49cc08f23ec240f9b73ed059788395a5c)
+    — fix(ace): preserve proc shell selection on refresh
+
 # Plan: Keep a focused stand-alone proc shell selected across Agents-tab refreshes
 
 ## Symptom
