@@ -7,8 +7,6 @@ goal:
   behavior.
 size: medium
 proposed_by: bbugyi200.athena.0bk
-create_time: 2026-08-23 08:01:22
-status: wip
 ---
 
 # Plan: Color-code Agents tree guides by hierarchy depth
