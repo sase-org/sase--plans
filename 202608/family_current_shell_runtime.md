@@ -8,8 +8,6 @@ goal: "Sequential agent-family container rows show the currently running shell's
   "
 size: medium
 proposed_by: bbugyi200.athena.0bo
-create_time: 2026-08-23 08:59:01
-status: wip
 ---
 
 # Plan: Show the current shell runtime on agent family rows
