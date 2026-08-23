@@ -11,6 +11,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bf
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bf.md)
+- **COMMITS:**
+  - [e21d050](https://github.com/sase-org/sase-core/commit/e21d05004b3b342eaddf2ab2ec68bb276de22129)
+    — feat(completion): thread configured UTC offset into commit-age display
+
 # Plan: Restore the configured timezone and close the remaining hardcoded-UTC display sites
 
 ## Outcome
