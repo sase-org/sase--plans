@@ -6,8 +6,6 @@ goal:
   finishing-shell navigation and diagnostics.
 size: small
 proposed_by: bbugyi200.athena.0bz
-create_time: 2026-08-23 15:15:17
-status: wip
 ---
 
 # Fix completion notifications to identify the owning agent family
