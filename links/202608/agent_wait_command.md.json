@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/agent_wait_command.md",
+  "rows": [
+    {
+      "created_at": "2026-08-23T12:50:15Z",
+      "created_by": "sase-s8.3",
+      "description": "Need epic plan and live-TTY phase design for sase-s8.3",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-s8.3",
+      "target_ref": "plan:202608/agent_wait_command.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
