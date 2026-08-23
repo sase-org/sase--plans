@@ -6,8 +6,6 @@ goal:
   auto-refresh, and each refresh runs one finalize pass instead of two.
 size: small
 proposed_by: bbugyi200.athena.0bx
-create_time: 2026-08-23 14:00:11
-status: wip
 ---
 
 # Plan: Keep a focused stand-alone proc shell selected across Agents-tab refreshes
