@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bu
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bu](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bu.md)
+- **COMMITS:**
+  - [f0982f2](https://github.com/sase-org/sase/commit/f0982f28b82bd135db92fc0fd48d8d2aca6ad161)
+    — fix(commit): auto-close assigned beads after landing
+
 # Make final declaration use unavoidable and auto-close assigned beads
 
 ## Context and root cause
