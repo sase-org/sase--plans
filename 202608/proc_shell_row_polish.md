@@ -7,8 +7,6 @@ goal:
   panel leads with the command and its output instead of six lines of hashes.
 size: medium
 proposed_by: bbugyi200.athena.0by
-create_time: 2026-08-23 14:44:12
-status: wip
 ---
 
 # Plan: Beautiful stand-alone proc shell rows and details
