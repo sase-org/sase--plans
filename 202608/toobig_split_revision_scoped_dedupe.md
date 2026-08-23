@@ -9,12 +9,6 @@ goal:
 proposed_by: bbugyi200.athena.0bj
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0bj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bj.md)
-- **COMMITS:**
-  - [644583e](https://github.com/bbugyi200/bugyi-chops/commit/644583e6763dd9ced5429d310407c5bfe76f36cb)
-    — fix(toobig_split): scope dedupe keys to repository HEAD
-
 # Plan: Scope toobig_split dedupe keys to the target repository's HEAD commit
 
 ## Problem
