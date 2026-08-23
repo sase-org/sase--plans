@@ -7,8 +7,6 @@ goal:
   lives in is unchanged, measured by that repo's HEAD commit, so any new commit re-opens
   every still-oversized file for proposal and the chop stops being permanently inert.
 proposed_by: bbugyi200.athena.0bj
-create_time: 2026-08-23 08:00:40
-status: wip
 ---
 
 # Plan: Scope toobig_split dedupe keys to the target repository's HEAD commit
