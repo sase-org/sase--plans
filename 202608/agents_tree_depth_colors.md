@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bk
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bk.md)
+- **COMMITS:**
+  - [9422a5f](https://github.com/sase-org/sase/commit/9422a5f37df8dcfc8092e25fee05602db19059f9)
+    — feat(tui): color Agents tree guides by hierarchy depth
+
 # Plan: Color-code Agents tree guides by hierarchy depth
 
 ## Goal
