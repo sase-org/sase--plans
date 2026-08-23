@@ -9,12 +9,6 @@ goal:
 proposed_by: bbugyi200.athena.0bj
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0bj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bj.md)
-- **COMMITS:**
-  - [e2056bd](https://github.com/sase-org/sase/commit/e2056bddebf0898dbf67f8aa8420a057dab42712)
-    — docs(axe): warn that content-only once_per keys stay reserved
-
 # Plan: Scope toobig_split dedupe keys to the target repository's HEAD commit
 
 ## Problem
