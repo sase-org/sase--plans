@@ -9,6 +9,15 @@ goal:
 proposed_by: bbugyi200.athena.0bj
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bj.md)
+  - [bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_config_hub_pane.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-3l.split_file.tests.ace.tui.test_config_hub_pane.0/README.md)
+- **COMMITS:**
+  - [e2056bd](https://github.com/sase-org/sase/commit/e2056bddebf0898dbf67f8aa8420a057dab42712)
+    — docs(axe): warn that content-only once_per keys stay reserved
+  - [f8ce6bb](https://github.com/sase-org/sase/commit/f8ce6bb2253eaed83700d77ea79367e9a3f12a98)
+    — test(ace): split config hub pane tests
+
 # Plan: Scope toobig_split dedupe keys to the target repository's HEAD commit
 
 ## Problem
