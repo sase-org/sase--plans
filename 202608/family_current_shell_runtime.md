@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bo
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bo](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bo.md)
+- **COMMITS:**
+  - [184fa9a](https://github.com/sase-org/sase/commit/184fa9aed8b71a950393c8d1eba67bcee6141766)
+    — feat(ace): show current family shell runtime
+
 # Plan: Show the current shell runtime on agent family rows
 
 ## Context
