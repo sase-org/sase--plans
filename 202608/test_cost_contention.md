@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bv
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bv.md)
+- **COMMITS:**
+  - [22ece6b](https://github.com/sase-org/sase/commit/22ece6b7c1bcc19301b01339e643d88ca647d3cb)
+    — feat(test-cost): commit per-cause cpu_limit budgets with provenance
+
 # Plan: Gate suite cost on contention-stable metrics instead of wall clock
 
 ## Problem
