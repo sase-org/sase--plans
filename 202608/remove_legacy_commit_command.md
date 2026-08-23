@@ -7,8 +7,6 @@ goal:
   documentation surface.
 size: medium
 proposed_by: bbugyi200.athena.0bt
-create_time: 2026-08-23 10:41:28
-status: wip
 ---
 
 # Plan
