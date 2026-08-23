@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bs
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bs](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bs.md)
+- **COMMITS:**
+  - [7690b23](https://github.com/sase-org/sase/commit/7690b23f863bc188992a3202d76e364f5decedc1)
+    — feat(memory): generate task_types.md for project roots only
+
 # Stop generating the home `sase/memory/task_types.md` note
 
 ## Goal
