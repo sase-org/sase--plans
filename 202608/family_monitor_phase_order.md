@@ -8,8 +8,6 @@ goal:
   by the family root itself.
 size: small
 proposed_by: bbugyi200.athena.0bn
-create_time: 2026-08-23 08:32:20
-status: wip
 ---
 
 # Plan: Order family monitor phases after the shell that started them
