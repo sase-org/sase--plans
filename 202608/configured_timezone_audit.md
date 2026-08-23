@@ -9,8 +9,6 @@ goal:
   `sase.core.time`.
 size: medium
 proposed_by: bbugyi200.athena.0bf
-create_time: 2026-08-23 11:51:15
-status: wip
 ---
 
 # Plan: Restore the configured timezone and close the remaining hardcoded-UTC display sites
