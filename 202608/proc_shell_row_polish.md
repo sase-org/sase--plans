@@ -9,12 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.0by
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0by](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0by.md)
-- **COMMITS:**
-  - [e02106a](https://github.com/sase-org/sase/commit/e02106a29f12a8962b75678d4aa84d8f91e4dcb1)
-    — feat(ace): polish proc shell rows
-
 # Plan: Beautiful stand-alone proc shell rows and details
 
 ## Background
