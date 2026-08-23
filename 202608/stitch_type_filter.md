@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bw
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bw](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bw.md)
+- **COMMITS:**
+  - [6ea047d](https://github.com/sase-org/sase-core/commit/6ea047d943e200e8f44a8068826ff6b8dd59d586)
+    — feat(vcs): classify commit types
+
 # Add `type:` filtering to the Artifacts Stitch pane
 
 ## Goal
