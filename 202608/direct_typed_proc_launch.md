@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bm
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bm.md)
+- **COMMITS:**
+  - [1d00fb2](https://github.com/sase-org/sase/commit/1d00fb2c4b67be95784ddb22964b14d315d7a366)
+    — feat(agent): admit direct ACE and sase run typed proc launches
+
 # Fix direct `%proc` / typed-unit launches
 
 ## Goal
