@@ -7,8 +7,6 @@ goal:
   RSS, and reports wall-clock overages as advisories."
 size: medium
 proposed_by: bbugyi200.athena.0bv
-create_time: 2026-08-23 11:06:31
-status: wip
 ---
 
 # Plan: Gate suite cost on contention-stable metrics instead of wall clock
