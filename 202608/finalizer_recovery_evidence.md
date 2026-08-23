@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0bq
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bq.md)
+- **COMMITS:**
+  - [6536745](https://github.com/sase-org/sase/commit/65367452b95634556873d1d44ac4373d9bc7a9e3)
+    — fix(finalizers): give declaration recovery an evidence brief of its own run
+
 # Plan: Give the finalizer declaration-recovery turn evidence of its own run
 
 ## Incident this plan fixes
