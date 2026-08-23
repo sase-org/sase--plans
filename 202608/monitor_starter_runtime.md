@@ -9,6 +9,12 @@ size: small
 proposed_by: bbugyi200.athena.0c0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0c0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c0.md)
+- **COMMITS:**
+  - [20f0d13](https://github.com/sase-org/sase/commit/20f0d13959116e67db52269d10f4be0591da6011)
+    — fix(tui): stop settled monitor starters from borrowing monitor runtime
+
 # Settled monitor starters must stop borrowing their monitor's runtime
 
 ## Problem
