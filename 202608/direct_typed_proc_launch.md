@@ -6,8 +6,6 @@ goal:
   through durable typed admission without creating empty agent shells.
 size: medium
 proposed_by: bbugyi200.athena.0bm
-create_time: 2026-08-23 08:15:32
-status: wip
 ---
 
 # Fix direct `%proc` / typed-unit launches
