@@ -10,6 +10,12 @@ size: small
 proposed_by: bbugyi200.athena.0bn
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bn](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bn.md)
+- **COMMITS:**
+  - [0ccfd7a](https://github.com/sase-org/sase/commit/0ccfd7a6ff3c52b163c8a05c1fa3065e1588db97)
+    — fix(ace): order family monitor phases after the shell that started them
+
 # Plan: Order family monitor phases after the shell that started them
 
 ## Symptom
