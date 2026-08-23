@@ -7,8 +7,6 @@ goal:
   roots.
 size: medium
 proposed_by: bbugyi200.athena.0bs
-create_time: 2026-08-23 10:34:09
-status: wip
 ---
 
 # Stop generating the home `sase/memory/task_types.md` note
