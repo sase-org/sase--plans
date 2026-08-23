@@ -11,6 +11,13 @@ size: medium
 proposed_by: bbugyi200.athena.0bf
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0bf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0bf.md)
+- **COMMITS:**
+  - [1dd58f0](https://github.com/sase-org/sase/commit/1dd58f06cd52585d90dcafcbb3d92af670e754a7)
+    — fix(time): resolve UTC-hardcoded display sites and add config.timezone doctor
+    check
+
 # Plan: Restore the configured timezone and close the remaining hardcoded-UTC display sites
 
 ## Outcome
