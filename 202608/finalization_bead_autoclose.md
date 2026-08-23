@@ -7,8 +7,6 @@ goal:
   lifecycle validation.
 size: medium
 proposed_by: bbugyi200.athena.0bu
-create_time: 2026-08-23 10:56:00
-status: wip
 ---
 
 # Make final declaration use unavoidable and auto-close assigned beads
