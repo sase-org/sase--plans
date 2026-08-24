@@ -12,8 +12,6 @@ goal: 'Replace the Agents-tab header''s leading "N procs" text with a compact bl
   '
 size: small
 proposed_by: bbugyi200.athena.0c8
-create_time: 2026-08-24 07:22:52
-status: wip
 ---
 
 # Plan: Render the Agents header proc count as a trailing blue gear badge
