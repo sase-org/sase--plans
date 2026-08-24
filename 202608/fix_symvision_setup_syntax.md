@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0cg
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cg.md)
+- **COMMITS:**
+  - [7d956d0](https://github.com/sase-org/sase/commit/7d956d03be392df7ef7d088b5ceb8a8801eeaa0c)
+    — fix(symvision): repair finalizer setup syntax
+
 # Repair the `just symvision` setup syntax regression
 
 ## Objective
