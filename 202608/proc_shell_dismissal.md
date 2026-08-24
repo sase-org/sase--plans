@@ -8,8 +8,6 @@ goal:
   proc-shell row also acts on it.
 size: medium
 proposed_by: bbugyi200.athena.0c7
-create_time: 2026-08-24 07:02:38
-status: wip
 ---
 
 # Plan: Make terminal stand-alone proc-shell rows dismissable
