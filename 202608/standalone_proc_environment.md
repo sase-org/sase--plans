@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cj
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cj.md)
+- **COMMITS:**
+  - [f1f4b27](https://github.com/sase-org/sase-core/commit/f1f4b2772a8023d22611763ce81e8400dc34f1f3)
+    — feat(agent-launch): add base_env to proc runtime wire contract
+
 # Restore the executable environment for stand-alone procs
 
 ## Objective
