@@ -12,6 +12,11 @@ bead: sase-sq.2
 - **PARENT:** [202608/memory_webs.md](memory_webs.md)
 - **BEAD:**
   [sase-sq.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-sq/sase-sq.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-sq.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-sq.2.md)
+- **COMMITS:**
+  - [f72ff9f](https://github.com/sase-org/sase/commit/f72ff9f385643bfe1f7a9b35f72702bd4b055163)
+    — feat(memory): add memory web substrate
 
 # Memory web and strand substrate
 
