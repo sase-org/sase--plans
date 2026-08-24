@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cx
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cx](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cx.md)
+- **COMMITS:**
+  - [c09fe51](https://github.com/sase-org/sase/commit/c09fe5170800136c60ead1934062d1f15fc6dd9e)
+    — feat(memory): support core memory priority
+
 # Plan: Optional `priority` frontmatter for core memory ordering
 
 ## Goal
