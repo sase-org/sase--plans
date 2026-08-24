@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0c7
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0c7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c7.md)
+- **COMMITS:**
+  - [f7595ad](https://github.com/sase-org/sase/commit/f7595ad53e21cd26cf630718ce5a5767dac3a5f1)
+    — feat(ace): dismiss finished proc-shell rows from the Agents tab
+
 # Plan: Make terminal stand-alone proc-shell rows dismissable
 
 ## Problem
