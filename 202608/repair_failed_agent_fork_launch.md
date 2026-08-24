@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0d3
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0d3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d3.md)
+- **COMMITS:**
+  - [eb1aea8](https://github.com/sase-org/sase/commit/eb1aea8af182c695fb84215ec9c8b121cbc754e2)
+    — fix(axe): admit failed-fork parents into a real workspace instead of asserting
+
 # Repair failed-agent fork launch admission
 
 ## Diagnosis
