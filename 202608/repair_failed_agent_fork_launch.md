@@ -6,8 +6,6 @@ goal:
   semantics or conflicting with the active shell-aware fork epic.
 size: small
 proposed_by: bbugyi200.athena.0d3
-create_time: 2026-08-24 18:50:27
-status: wip
 ---
 
 # Repair failed-agent fork launch admission
