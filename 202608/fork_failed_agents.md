@@ -11,6 +11,12 @@ goal:
 proposed_by: bbugyi200.athena.0cz
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cz.md)
+- **COMMITS:**
+  - [e4534d2](https://github.com/sase-org/sase/commit/e4534d2651783989fddf66e29a0dc3d562cf0e89)
+    — fix(agent): allow forking failed agents
+
 # Plan: Fork failed agents
 
 ## Symptom
