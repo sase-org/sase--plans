@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cy
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cy](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cy.md)
+- **COMMITS:**
+  - [9abe196](https://github.com/sase-org/sase/commit/9abe1967b916f1cdfa9c13a2be483c8cca98bc76)
+    — test(bead): add regression test for legacy JSONL event-stream prefix preservation
+
 # Preserve legacy bead event prefixes during mutations
 
 ## Problem
