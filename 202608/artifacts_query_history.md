@@ -8,8 +8,6 @@ goal: "Make the configured previous/next query keys navigate an independent, dur
   "
 size: medium
 proposed_by: bbugyi200.athena.0cq
-create_time: 2026-08-24 13:54:42
-status: wip
 ---
 
 # Plan: Query history for every Artifacts pane
