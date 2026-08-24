@@ -14,6 +14,12 @@ size: small
 proposed_by: bbugyi200.athena.0c8
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0c8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c8.md)
+- **COMMITS:**
+  - [5dc8973](https://github.com/sase-org/sase/commit/5dc8973956dbd2b82635cfb836be712ae9fa8439)
+    — feat(tui): render agent header proc count as gear badge
+
 # Plan: Render the Agents header proc count as a trailing blue gear badge
 
 ## Problem
