@@ -10,6 +10,12 @@ size: small
 proposed_by: bbugyi200.athena.0ci
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ci](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ci.md)
+- **COMMITS:**
+  - [0eb0730](https://github.com/sase-org/sase/commit/0eb073079d2fcc63a0c0ec501364ef99ad770551)
+    — feat(xprompt): reference approved plans by path in \#coder instead of inlining
+
 # Plan: Rewrite the `#coder` xprompt to name the plan instead of inlining it
 
 ## Goal
