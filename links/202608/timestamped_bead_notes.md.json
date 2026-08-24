@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/timestamped_bead_notes.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T18:42:25Z",
+      "created_by": "sase-t2.1",
+      "description": "Need design context before implementing bead sase-t2.1",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-t2.1",
+      "target_ref": "plan:202608/timestamped_bead_notes.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
