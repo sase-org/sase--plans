@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cf
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cf.md)
+- **COMMITS:**
+  - [1b23813](https://github.com/sase-org/sase/commit/1b238136654b2d2cf5b41c2299ab010b17324083)
+    — fix(ace): make family-root kill-and-edit name reuse deterministic
+
 # Plan: Make family-root kill-and-edit name reuse deterministic
 
 ## Diagnosis
