@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0c3
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0c3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c3.md)
+- **COMMITS:**
+  - [1f21c4b](https://github.com/sase-org/sase/commit/1f21c4b846657cbf601be4d7fec7ec47053a52ba)
+    — test: restore green CI for v0.17.0
+
 # Plan: Repair master CI so ci_watch can merge the v0.17.0 release PR
 
 ## Context
