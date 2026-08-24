@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0c4
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0c4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0c4.md)
+- **COMMITS:**
+  - [7f05bed](https://github.com/sase-org/sase/commit/7f05bed4fa9a2187a1ea8e86b0054ca2576d2b19)
+    — test(finalizer): split declaration channel tests
+
 # Recover the interrupted finalizer declaration-channel test split
 
 ## Goal
