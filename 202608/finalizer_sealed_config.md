@@ -9,6 +9,13 @@ size: medium
 proposed_by: bbugyi200.athena.0cr
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cr.md)
+- **COMMITS:**
+  - [43f4538](https://github.com/sase-org/sase/commit/43f4538f885e982a082119f5597a63b21b0e98da)
+    — feat(finalizers): seal config snapshot into authority artifact and report live
+    drift as diagnostics
+
 # Seal the effective finalizer config so a mid-turn host change cannot kill the turn
 
 ## Symptom
