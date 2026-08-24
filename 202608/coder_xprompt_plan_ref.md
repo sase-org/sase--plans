@@ -8,8 +8,6 @@ goal:
   instead of receiving it pre-inlined.'
 size: small
 proposed_by: bbugyi200.athena.0ci
-create_time: 2026-08-24 11:36:50
-status: wip
 ---
 
 # Plan: Rewrite the `#coder` xprompt to name the plan instead of inlining it
