@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/reference_links_and_referenced_by.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T18:16:33Z",
+      "created_by": "research.11.cdx",
+      "description": "Trace the implementation design for typed links and automatic provenance",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.11.cdx",
+      "target_ref": "plan:202608/reference_links_and_referenced_by.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
