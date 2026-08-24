@@ -6,8 +6,6 @@ goal:
   pull request 284 (chore(master): release 0.17.0)."
 size: medium
 proposed_by: bbugyi200.athena.0c3
-create_time: 2026-08-23 21:50:36
-status: wip
 ---
 
 # Plan: Repair master CI so ci_watch can merge the v0.17.0 release PR
