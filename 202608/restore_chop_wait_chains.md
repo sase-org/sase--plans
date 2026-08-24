@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0d5
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0d5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d5.md)
+- **COMMITS:**
+  - [fdd76b5](https://github.com/sase-org/sase/commit/fdd76b580a2cfe5dd36972540276de9158dd6f00)
+    — fix(axe): restore typed chop wait chains
+
 # Plan: Restore sequential AXE chop agent wait chains
 
 ## Problem and root cause
