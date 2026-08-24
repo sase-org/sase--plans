@@ -6,8 +6,6 @@ goal:
   Keep self-healing sase-core release runs alive long enough for the post-build metadata
   check and PyPI publish to execute under ordinary runner contention.
 proposed_by: bbugyi200.athena.0cl
-create_time: 2026-08-24 12:59:52
-status: wip
 ---
 
 # Prevent release metadata checks from timing out in the runner queue
