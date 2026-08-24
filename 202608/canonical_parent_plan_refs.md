@@ -7,8 +7,6 @@ goal:
   the plans store.
 size: medium
 proposed_by: bbugyi200.athena.0d2
-create_time: 2026-08-24 18:44:47
-status: wip
 ---
 
 # Plan
