@@ -6,8 +6,6 @@ goal:
   of falling back to the home project.
 size: medium
 proposed_by: bbugyi200.athena.0cs
-create_time: 2026-08-24 14:07:04
-status: wip
 ---
 
 # Plan: Preserve chop project routing through typed admission
