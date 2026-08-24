@@ -15,6 +15,11 @@ bead: sase-sq.1
 - **PARENT:** [202608/memory_webs.md](memory_webs.md)
 - **BEAD:**
   [sase-sq.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-sq/sase-sq.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-sq.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-sq.1.md)
+- **COMMITS:**
+  - [c9ca0db](https://github.com/sase-org/sase/commit/c9ca0db5f8d0d7b5d007010e661abb1d2b5638dc)
+    — feat(memory): rename memory tiers to core and reference
 
 # Plan: Core and reference memory vocabulary
 
