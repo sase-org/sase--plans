@@ -8,8 +8,6 @@ goal: "Killing or dismissing an agent family and relaunching its explicit name f
   "
 size: medium
 proposed_by: bbugyi200.athena.0cf
-create_time: 2026-08-24 10:42:09
-status: wip
 ---
 
 # Plan: Make family-root kill-and-edit name reuse deterministic
