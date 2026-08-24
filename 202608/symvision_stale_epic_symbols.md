@@ -7,8 +7,6 @@ goal:
   non-test consumer.
 size: small
 proposed_by: bbugyi200.athena.0ck
-create_time: 2026-08-24 12:29:24
-status: wip
 ---
 
 # Clear the stale symvision `--epic-symbol` entries that break `just symvision`
