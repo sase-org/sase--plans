@@ -10,8 +10,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-sq.1
 bead: sase-sq.1
-create_time: 2026-08-24 10:48:23
-status: wip
 ---
 
 - **PARENT:** [202608/memory_webs.md](memory_webs.md)
