@@ -6,8 +6,6 @@ goal:
   current branch.
 size: small
 proposed_by: bbugyi200.athena.0c4
-create_time: 2026-08-23 21:31:11
-status: wip
 ---
 
 # Recover the interrupted finalizer declaration-channel test split
