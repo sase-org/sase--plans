@@ -6,8 +6,6 @@ goal:
   including correct relinking across admission-time skips.
 size: medium
 proposed_by: bbugyi200.athena.0d5
-create_time: 2026-08-24 19:21:15
-status: wip
 ---
 
 # Plan: Restore sequential AXE chop agent wait chains
