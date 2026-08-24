@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cs
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cs](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cs.md)
+- **COMMITS:**
+  - [d88994b](https://github.com/sase-org/sase/commit/d88994bd816dcc61447a068ea4844b3b176b8382)
+    — fix(axe): preserve chop dispatch project routing
+
 # Plan: Preserve chop project routing through typed admission
 
 ## Diagnosis
