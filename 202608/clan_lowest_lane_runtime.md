@@ -7,8 +7,6 @@ goal:
   already show.
 size: medium
 proposed_by: bbugyi200.athena.0d4
-create_time: 2026-08-24 19:08:16
-status: wip
 ---
 
 # Plan: Show the lowest running-lane runtime on agent clan nodes
