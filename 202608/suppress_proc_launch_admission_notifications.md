@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0cp
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cp.md)
+- **COMMITS:**
+  - [2a13976](https://github.com/sase-org/sase/commit/2a139761e1494703bb087444e219a3f56d829614)
+    — fix(agent): suppress clean proc admission notifications
+
 # Plan: Suppress redundant standalone-proc launch-admission notifications
 
 ## Goal
