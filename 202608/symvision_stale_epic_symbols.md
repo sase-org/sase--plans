@@ -9,6 +9,9 @@ size: small
 proposed_by: bbugyi200.athena.0ck
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ck](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ck.md)
+
 # Clear the stale symvision `--epic-symbol` entries that break `just symvision`
 
 ## Problem
