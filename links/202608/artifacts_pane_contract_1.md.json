@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/artifacts_pane_contract_1.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T17:48:17Z",
+      "created_by": "0cq",
+      "description": "Need approved Artifacts pane contract design context to plan completion of its query-history capability",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0cq",
+      "target_ref": "plan:202608/artifacts_pane_contract_1.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/complete_flat_pane_query_migration.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T17:48:40Z",
+      "created_by": "0cq",
+      "description": "Need final flat-pane migration constraints before planning query-history navigation across all Artifacts panes",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0cq",
+      "target_ref": "plan:202608/complete_flat_pane_query_migration.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
