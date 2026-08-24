@@ -6,8 +6,6 @@ goal:
   preserving its stable navigation identity and behavior.
 size: small
 proposed_by: bbugyi200.athena.0cu
-create_time: 2026-08-24 14:38:02
-status: wip
 ---
 
 # Plan
