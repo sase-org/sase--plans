@@ -8,12 +8,6 @@ size: medium
 proposed_by: bbugyi200.athena.0cj
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0cj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cj.md)
-- **COMMITS:**
-  - [aeae0bb](https://github.com/sase-org/sase/commit/aeae0bb8f6e63b35b3c31a68f2a0140dd1b14a35)
-    — feat(agent): thread base_env through standalone proc launch runtime
-
 # Restore the executable environment for stand-alone procs
 
 ## Objective
