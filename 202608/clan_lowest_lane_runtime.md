@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0d4
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0d4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d4.md)
+- **COMMITS:**
+  - [86bbbb5](https://github.com/sase-org/sase/commit/86bbbb532096a532c61929695b91e9264c5800e9)
+    — feat(ace): show clan-wide minimum remaining runtime on collapsed clan lanes
+
 # Plan: Show the lowest running-lane runtime on agent clan nodes
 
 ## Background
