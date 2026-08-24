@@ -6,8 +6,6 @@ goal:
   actionable and agent-bearing admissions remain observable.
 size: small
 proposed_by: bbugyi200.athena.0cp
-create_time: 2026-08-24 13:15:35
-status: wip
 ---
 
 # Plan: Suppress redundant standalone-proc launch-admission notifications
