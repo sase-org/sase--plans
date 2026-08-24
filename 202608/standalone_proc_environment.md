@@ -6,8 +6,6 @@ goal:
   remains scrubbed.
 size: medium
 proposed_by: bbugyi200.athena.0cj
-create_time: 2026-08-24 11:35:17
-status: wip
 ---
 
 # Restore the executable environment for stand-alone procs
