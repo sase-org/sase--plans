@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/green_master_ci_for_v0_17_0.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T01:55:59Z",
+      "created_by": "0c3",
+      "description": "approved CI repair plan identified the stale build_and_run memory guidance",
+      "origin": "manual",
+      "relation": "related",
+      "schema_version": 2,
+      "source_ref": "bead:sase-sl",
+      "target_ref": "plan:202608/green_master_ci_for_v0_17_0.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
