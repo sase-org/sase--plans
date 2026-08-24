@@ -9,8 +9,6 @@ goal:
   the conversation transcript, and never strands the new agent on an unreachable implied
   wait.
 proposed_by: bbugyi200.athena.0cz
-create_time: 2026-08-24 17:31:20
-status: wip
 ---
 
 # Plan: Fork failed agents
