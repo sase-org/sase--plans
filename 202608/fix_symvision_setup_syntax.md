@@ -6,8 +6,6 @@ goal:
   without changing finalizer behavior.
 size: small
 proposed_by: bbugyi200.athena.0cg
-create_time: 2026-08-24 11:11:22
-status: wip
 ---
 
 # Repair the `just symvision` setup syntax regression
