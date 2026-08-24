@@ -6,8 +6,6 @@ goal:
   including an intervening folded group banner.
 size: small
 proposed_by: bbugyi200.athena.0cw
-create_time: 2026-08-24 14:54:26
-status: wip
 ---
 
 # Select the next folded agent group after marking
