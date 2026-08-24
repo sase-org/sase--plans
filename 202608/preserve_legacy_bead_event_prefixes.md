@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cy
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cy](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cy.md)
+- **COMMITS:**
+  - [b5d7f3c](https://github.com/sase-org/sase-core/commit/b5d7f3cb317a49968f6e18add6c5378e94061635)
+    — fix(bead): preserve legacy event-stream byte prefixes when appending JSONL writes
+
 # Preserve legacy bead event prefixes during mutations
 
 ## Problem
