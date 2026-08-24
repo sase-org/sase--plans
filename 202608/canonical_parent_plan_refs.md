@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0d2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0d2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d2.md)
+- **COMMITS:**
+  - [0f3f235](https://github.com/sase-org/sase/commit/0f3f2350d77270935b9bc6142f39df61b50c9ecc)
+    — fix(sdd): render parent plan provenance canonically
+
 # Plan
 
 ## Diagnosis
