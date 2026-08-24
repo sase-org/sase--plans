@@ -8,6 +8,12 @@ goal:
 proposed_by: bbugyi200.athena.0cl
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cl](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cl.md)
+- **COMMITS:**
+  - [1713d56](https://github.com/sase-org/sase-core/commit/1713d56b2c0874989c053148ac2336b17a83e1f5)
+    — fix(ci): give metadata-check a 60m timeout to survive runner queue contention
+
 # Prevent release metadata checks from timing out in the runner queue
 
 ## Diagnosis
