@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/xprompt_text_block_args.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T12:09:20Z",
+      "created_by": "sase-sn.5",
+      "description": "Need the design for sase-sn.5 Rust core parity",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-sn.5",
+      "target_ref": "plan:202608/xprompt_text_block_args.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
