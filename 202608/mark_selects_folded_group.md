@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0cw
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cw](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cw.md)
+- **COMMITS:**
+  - [04299c2](https://github.com/sase-org/sase/commit/04299c29e7d73cbdb43cb66cf3946521e4873bbc)
+    — fix: advance agent marks to folded banners
+
 # Select the next folded agent group after marking
 
 ## Goal
