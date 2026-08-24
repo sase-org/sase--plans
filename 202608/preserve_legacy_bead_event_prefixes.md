@@ -6,8 +6,6 @@ goal:
   including legacy note encodings.
 size: medium
 proposed_by: bbugyi200.athena.0cy
-create_time: 2026-08-24 17:27:34
-status: wip
 ---
 
 # Preserve legacy bead event prefixes during mutations
