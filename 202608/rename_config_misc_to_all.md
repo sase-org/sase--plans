@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0cu
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cu](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cu.md)
+- **COMMITS:**
+  - [b14532d](https://github.com/sase-org/sase/commit/b14532d028c66b9abe65b0e353b248df185e1ebd)
+    — refactor(ace): rename config hub misc tab to all
+
 # Plan
 
 ## Outcome and compatibility contract
