@@ -8,8 +8,6 @@ goal:
   deliberately sets something lower."
 size: medium
 proposed_by: bbugyi200.athena.0cx
-create_time: 2026-08-24 17:21:30
-status: wip
 ---
 
 # Plan: Optional `priority` frontmatter for core memory ordering
