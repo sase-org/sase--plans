@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/pool_launch_reservation.md",
+  "rows": [
+    {
+      "created_at": "2026-08-24T15:11:21Z",
+      "created_by": "0ch",
+      "description": "Need approved implementation plan before making code changes",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0ch",
+      "target_ref": "plan:202608/pool_launch_reservation.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
