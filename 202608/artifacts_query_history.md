@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0cq
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0cq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0cq.md)
+- **COMMITS:**
+  - [e500f0a](https://github.com/sase-org/sase/commit/e500f0a71ebff2650c8dd4b49e2bdcdd464b5daa)
+    — feat(ace): add pane-local artifact query history
+
 # Plan: Query history for every Artifacts pane
 
 ## Outcome and current gap
