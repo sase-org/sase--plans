@@ -7,8 +7,6 @@ goal:
   records any live drift as a non-fatal diagnostic.
 size: medium
 proposed_by: bbugyi200.athena.0cr
-create_time: 2026-08-24 14:06:49
-status: wip
 ---
 
 # Seal the effective finalizer config so a mid-turn host change cannot kill the turn
