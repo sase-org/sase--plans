@@ -15,6 +15,11 @@ bead: sase-sq.1
 - **PARENT:** [202608/memory_webs.md](memory_webs.md)
 - **BEAD:**
   [sase-sq.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-sq/sase-sq.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-sq.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-sq.1.md)
+- **COMMITS:**
+  - [f6eedd9](https://github.com/sase-org/sase-core/commit/f6eedd98fbb6e72cb0adeb7fd40a71ff5b47906e)
+    — feat(memory): support core and reference memory tiers
 
 # Plan: Core and reference memory vocabulary
 
