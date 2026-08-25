@@ -7,8 +7,6 @@ goal:
   keep them.
 size: small
 proposed_by: bbugyi200.athena.0dr
-create_time: 2026-08-25 14:58:28
-status: wip
 ---
 
 # Strip strand-roster markers from inlined agent instruction files
