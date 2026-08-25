@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dh
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dh](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dh.md)
+- **COMMITS:**
+  - [cc66e7b](https://github.com/sase-org/sase/commit/cc66e7bf321680feae3a781a51a1994eb2ef96fa)
+    — feat(ace-tui): show clan/family/lane total runtime rows
+
 # Plan
 
 ## Problem
