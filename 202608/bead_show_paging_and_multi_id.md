@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dv
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dv.md)
+- **COMMITS:**
+  - [2ed9dc7](https://github.com/sase-org/sase/commit/2ed9dc7c9fbaf640ec79337c2cbdfb0b025bbaad)
+    — feat(bead): page show output and accept multiple ids
+
 # Plan
 
 ## Why this shape
