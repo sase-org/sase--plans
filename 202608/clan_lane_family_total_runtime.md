@@ -8,8 +8,6 @@ goal:
   shell inside that family happens to be executing.
 size: medium
 proposed_by: bbugyi200.athena.0dh
-create_time: 2026-08-25 12:02:37
-status: wip
 ---
 
 # Plan
