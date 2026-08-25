@@ -6,8 +6,6 @@ goal:
   while making sase memory resolve to Xprompt Memory.
 size: small
 proposed_by: bbugyi200.athena.0dr.w0
-create_time: 2026-08-25 15:23:55
-status: wip
 ---
 
 # Plan
