@@ -9,8 +9,6 @@ goal:
   every removed rule that still matters re-homed in the right reference note.
 size: medium
 proposed_by: bbugyi200.athena.0dj
-create_time: 2026-08-25 12:08:30
-status: wip
 ---
 
 # Plan: Act on the AGENTS.md proofread notes
