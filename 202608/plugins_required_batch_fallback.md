@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-to.land
 bead: sase-to
-create_time: 2026-08-25 14:48:05
-status: wip
 ---
 
 - **PARENT:**
