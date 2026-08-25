@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0dr.w0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dr.w0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dr.w0.md)
+- **COMMITS:**
+  - [8776211](https://github.com/sase-org/sase/commit/877621113041f1ada918f8f9b0403f388ab2675f)
+    — docs(memory): drop stale project/repo glossary aliases, add sase memory alias
+
 # Plan
 
 ## Scope and current state
