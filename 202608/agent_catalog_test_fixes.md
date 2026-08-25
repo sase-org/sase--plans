@@ -10,6 +10,13 @@ size: medium
 proposed_by: bbugyi200.athena.bngrde806zge.f0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.bngrde806zge.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.bngrde806zge.f0.md)
+- **COMMITS:**
+  - [bb429cf](https://github.com/sase-org/sase/commit/bb429cf3756a82462340be3287a3957eac4cd8cf)
+    — test(agent-catalog): dedup AgentCatalogRow factories and replace mount
+    page.pause() with an explicit wait_for
+
 # Plan: Repair the eight `just test` failures in the agent-catalog row factories and the Agent pane mount test
 
 ## 1. Situation
