@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dj.w0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dj.w0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dj.w0.md)
+- **COMMITS:**
+  - [6b22f7e](https://github.com/sase-org/sase/commit/6b22f7e72d6d989c7350d3dec1ce41cc9ea0f5f5)
+    — feat(task-types): render self-contained memory strands
+
 # Make task-type memory strands self-contained
 
 ## Objective
