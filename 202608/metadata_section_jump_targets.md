@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dt
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dt.md)
+- **COMMITS:**
+  - [44ce806](https://github.com/sase-org/sase/commit/44ce8061276bd420e9baa6b447460f5f0da9e3ca)
+    — feat(ace): add section jump targets to metadata fold sections
+
 # Plan: Restrict Ctrl+J/Ctrl+K to real metadata section titles
 
 ## Problem
