@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0de
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0de](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0de.md)
+- **COMMITS:**
+  - [1a96ea9](https://github.com/sase-org/sase/commit/1a96ea92bf4dd066e20d51f024fb79001867232d)
+    — fix(ace-tui): mount prompt bar immediately and gate relaunch on a cleanup barrier
+
 # Plan: Make `,x` load the relaunch prompt immediately
 
 ## Problem
