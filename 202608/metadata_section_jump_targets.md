@@ -7,8 +7,6 @@ goal:
   sub-headings keep working as fold anchors.
 size: medium
 proposed_by: bbugyi200.athena.0dt
-create_time: 2026-08-25 16:18:36
-status: wip
 ---
 
 # Plan: Restrict Ctrl+J/Ctrl+K to real metadata section titles
