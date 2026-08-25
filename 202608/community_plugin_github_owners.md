@@ -8,8 +8,6 @@ goal: "Community plugin rows in SASE Admin Center Updates > Plugins always show 
   "
 size: small
 proposed_by: bbugyi200.athena.0d7
-create_time: 2026-08-25 07:02:03
-status: wip
 ---
 
 # Plan: Show GitHub owners for community plugins
