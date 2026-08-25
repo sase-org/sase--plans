@@ -8,8 +8,6 @@ goal:
   glossary:memory-web read pays for.
 size: small
 proposed_by: bbugyi200.athena.0dl
-create_time: 2026-08-25 12:42:19
-status: wip
 ---
 
 # Refresh the Memory Web glossary strands
