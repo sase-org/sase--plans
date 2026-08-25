@@ -11,6 +11,17 @@
       "source_ref": "agent:sase-t2.1",
       "target_ref": "plan:202608/timestamped_bead_notes.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-25T11:12:44Z",
+      "created_by": "sase-t2.4",
+      "description": "Need design context before completing bead sase-t2.4",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-t2.4",
+      "target_ref": "plan:202608/timestamped_bead_notes.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
