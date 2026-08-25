@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/artifact_link_durability_and_derivation.md",
+  "rows": [
+    {
+      "created_at": "2026-08-25T20:16:29Z",
+      "created_by": "sase-tw.2",
+      "description": "Need the accepted epic design and phase scope for sase-tw.2",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-tw.2",
+      "target_ref": "plan:202608/artifact_link_durability_and_derivation.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
