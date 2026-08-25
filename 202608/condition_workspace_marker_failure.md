@@ -12,6 +12,11 @@ bead: sase-tk
 - **PARENT:** [202608/claimed_workspace_if.md](claimed_workspace_if.md)
 - **BEAD:**
   [sase-tk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-tk/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-tk.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-tk.land.md)
+- **COMMITS:**
+  - [0bdca93](https://github.com/sase-org/sase/commit/0bdca9380de38a8fe7857531537839944bd9f415)
+    — fix(agent): release condition lease on marker failure
 
 # Repair condition-lease cleanup when marker persistence fails
 
