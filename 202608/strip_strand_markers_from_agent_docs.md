@@ -9,6 +9,12 @@ size: small
 proposed_by: bbugyi200.athena.0dr
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dr.md)
+- **COMMITS:**
+  - [51bb2f1](https://github.com/sase-org/sase/commit/51bb2f136663f0ebbf9a54a60ee2ffce05bc2294)
+    — fix(memory): strip roster markers from agent docs
+
 # Strip strand-roster markers from inlined agent instruction files
 
 ## Problem
