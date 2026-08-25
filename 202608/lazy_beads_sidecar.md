@@ -7,8 +7,6 @@ goal:
   generated config, doc, and agent-instruction surface agrees.
 size: medium
 proposed_by: bbugyi200.athena.0dq
-create_time: 2026-08-25 15:07:09
-status: wip
 ---
 
 # Plan
