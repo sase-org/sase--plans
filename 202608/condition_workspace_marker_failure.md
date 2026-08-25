@@ -7,8 +7,6 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.sase-tk.land
 bead: sase-tk
-create_time: 2026-08-25 13:05:04
-status: wip
 ---
 
 - **PARENT:** [202608/claimed_workspace_if.md](claimed_workspace_if.md)
