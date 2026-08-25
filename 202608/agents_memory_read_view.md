@@ -6,8 +6,6 @@ goal:
   strand, and batch reads without blocking the TUI.
 size: medium
 proposed_by: bbugyi200.athena.0db
-create_time: 2026-08-25 08:20:16
-status: wip
 ---
 
 # Plan: View memory-web reads from the Agents tab
