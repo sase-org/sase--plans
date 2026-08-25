@@ -13,6 +13,11 @@ bead: sase-to
   [202608/git_fallback_and_bugyi_chops_release.md](git_fallback_and_bugyi_chops_release.md)
 - **BEAD:**
   [sase-to](https://github.com/sase-org/sase--beads/blob/main/pages/sase-to/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-to.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-to.land.md)
+- **COMMITS:**
+  - [269329d](https://github.com/sase-org/sase/commit/269329d34f0b32cfef8089f168c3e07c9b70dfa1)
+    — fix(plugins): batch required-plugin gate installs
 
 # Plan: Complete required-plugin batch fallback integration
 
