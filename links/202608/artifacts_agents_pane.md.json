@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/artifacts_agents_pane.md",
+  "rows": [
+    {
+      "created_at": "2026-08-25T14:56:29Z",
+      "created_by": "sase-tj.5",
+      "description": "Need design context for phase sase-tj.5 query implementation",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-tj.5",
+      "target_ref": "plan:202608/artifacts_agents_pane.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
