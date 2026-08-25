@@ -8,8 +8,6 @@ goal:
   to today in all three formats."
 size: medium
 proposed_by: bbugyi200.athena.0dv
-create_time: 2026-08-25 18:01:17
-status: wip
 ---
 
 # Plan
