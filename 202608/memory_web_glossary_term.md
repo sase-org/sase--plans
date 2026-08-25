@@ -10,6 +10,13 @@ size: small
 proposed_by: bbugyi200.athena.0dl
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dl](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dl.md)
+- **COMMITS:**
+  - [21b49aa](https://github.com/sase-org/sase/commit/21b49aa98a4dd73cd0abc14d4a78fd7cd00f9cce)
+    — docs(memory): refresh Memory Web glossary strands to describe the shipped
+    substrate
+
 # Refresh the Memory Web glossary strands
 
 ## Problem
