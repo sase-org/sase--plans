@@ -11,6 +11,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dj
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dj.md)
+- **COMMITS:**
+  - [50d9c3b](https://github.com/sase-org/sase/commit/50d9c3bc219120a7a6ee8dc4fb060d6053f8cbf0)
+    — chore(memory): trim generated agent instructions
+
 # Plan: Act on the AGENTS.md proofread notes
 
 ## Context and intended behavior
