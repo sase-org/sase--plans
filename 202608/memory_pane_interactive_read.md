@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dn
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dn](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dn.md)
+- **COMMITS:**
+  - [e5cd318](https://github.com/sase-org/sase/commit/e5cd318b8eef1117b1152f6530908466b2d55ec2)
+    — feat(ace): fall back to interactive identity for memory panel audit logging
+
 # Plan: Stop the ACE Memory pane from crashing on human strand previews
 
 ## Problem
