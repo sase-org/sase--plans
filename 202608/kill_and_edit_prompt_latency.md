@@ -6,8 +6,6 @@ goal:
   replacement launch still waits for the kill/dismiss persistence proc to settle.
 size: medium
 proposed_by: bbugyi200.athena.0de
-create_time: 2026-08-25 08:36:16
-status: wip
 ---
 
 # Plan: Make `,x` load the relaunch prompt immediately
