@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dq
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dq.md)
+- **COMMITS:**
+  - [46fc307](https://github.com/sase-org/sase/commit/46fc307d83f7c5d68be943ddde6681079541f37f)
+    — feat(sase): make beads sidecar lazy-clone by default
+
 # Plan
 
 ## Problem
