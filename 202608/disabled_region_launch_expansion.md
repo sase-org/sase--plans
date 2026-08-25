@@ -7,8 +7,6 @@ goal:
   its own parent."
 size: medium
 proposed_by: bbugyi200.athena.0d6
-create_time: 2026-08-24 19:39:06
-status: wip
 ---
 
 # Plan
