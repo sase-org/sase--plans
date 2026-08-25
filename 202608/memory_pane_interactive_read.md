@@ -6,8 +6,6 @@ goal:
   body, and have the read recorded as an interactive read instead of crashing the app.
 size: medium
 proposed_by: bbugyi200.athena.0dn
-create_time: 2026-08-25 14:31:23
-status: wip
 ---
 
 # Plan: Stop the ACE Memory pane from crashing on human strand previews
