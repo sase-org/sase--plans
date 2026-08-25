@@ -8,8 +8,6 @@ goal:
   AgentCatalogRow can no longer silently break unrelated test modules.
 size: medium
 proposed_by: bbugyi200.athena.bngrde806zge.f0
-create_time: 2026-08-25 13:50:10
-status: wip
 ---
 
 # Plan: Repair the eight `just test` failures in the agent-catalog row factories and the Agent pane mount test
