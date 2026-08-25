@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/legacy_note_bytes_in_conflict_resolution.md",
+  "rows": [
+    {
+      "created_at": "2026-08-25T13:47:33Z",
+      "created_by": "sase-t2.7.2",
+      "description": "Need parent epic design for phase sase-t2.7.2 documentation and comment updates",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-t2.7.2",
+      "target_ref": "plan:202608/legacy_note_bytes_in_conflict_resolution.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
