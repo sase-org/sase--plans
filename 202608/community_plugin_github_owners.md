@@ -10,6 +10,12 @@ size: small
 proposed_by: bbugyi200.athena.0d7
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0d7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0d7.md)
+- **COMMITS:**
+  - [1a652b9](https://github.com/sase-org/sase/commit/1a652b9e64ad7e11bd09537a05f86a4a3c42174c)
+    — feat(tui): show community plugin repository owners
+
 # Plan: Show GitHub owners for community plugins
 
 ## Current behavior and constraints
