@@ -6,8 +6,6 @@ goal:
   task_types memory web without invoking a separate catalog command.
 size: medium
 proposed_by: bbugyi200.athena.0dj.w0
-create_time: 2026-08-25 13:07:07
-status: wip
 ---
 
 # Make task-type memory strands self-contained
