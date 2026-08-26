@@ -6,8 +6,6 @@ goal:
   surface lists it.
 size: small
 proposed_by: bbugyi200.athena.0ee
-create_time: 2026-08-26 11:59:24
-status: wip
 ---
 
 # Plan: Add the "Sase Gate" glossary strand
