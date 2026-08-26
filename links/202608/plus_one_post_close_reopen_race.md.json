@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/plus_one_post_close_reopen_race.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T03:38:22Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202608/plus_one_post_close_reopen_race.md",
+      "target_ref": "bead:sase-ix",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
