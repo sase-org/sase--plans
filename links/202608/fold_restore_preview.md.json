@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/fold_restore_preview.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T04:51:07Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/fold_restore_preview.md's `AGENTS:` header entry for bbugyi200.athena.xz--plan",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.xz--plan",
+      "target_ref": "plan:202608/fold_restore_preview.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
