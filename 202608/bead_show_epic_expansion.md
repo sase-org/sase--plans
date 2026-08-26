@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0e1.f1
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e1.f1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e1.f1.md)
+- **COMMITS:**
+  - [9351d79](https://github.com/sase-org/sase/commit/9351d7953cb41250f639a9f32c061627ff0c94a9)
+    — feat(bead): add show epic expansion for \`\<epic-id\>..\` batch queries
+
 # Plan: `<epic>..` expansion for `sase bead show`
 
 ## Goal
