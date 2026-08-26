@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202606/flatten_memory_nested_long.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T03:12:28Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202606/flatten_memory_nested_long.md",
+      "target_ref": "bead:sase-4u",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
