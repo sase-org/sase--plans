@@ -11,6 +11,17 @@
       "source_ref": "agent:sase-tw.2",
       "target_ref": "plan:202608/artifact_link_durability_and_derivation.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-26T16:33:18Z",
+      "created_by": "research.16.cdx",
+      "description": "Need the ACE relation-preservation, read-payoff, and graph UX details for cross-tab panel design",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.16.cdx",
+      "target_ref": "plan:202608/artifact_link_durability_and_derivation.md",
+      "uses": 2
     }
   ],
   "schema_version": 2

@@ -11,6 +11,17 @@
       "source_ref": "agent:sase-tj.5",
       "target_ref": "plan:202608/artifacts_agents_pane.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-26T16:33:18Z",
+      "created_by": "research.16.cdx",
+      "description": "Need the cross-tab link seams and navigation precedent from the approved Agent-pane plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.16.cdx",
+      "target_ref": "plan:202608/artifacts_agents_pane.md",
+      "uses": 2
     }
   ],
   "schema_version": 2
