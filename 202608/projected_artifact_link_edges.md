@@ -16,11 +16,6 @@ bead: sase-ug.3
 - **PARENT:** [202608/link_rail_every_tab.md](link_rail_every_tab.md)
 - **BEAD:**
   [sase-ug.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ug/sase-ug.3.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-ug.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ug.3.md)
-- **COMMITS:**
-  - [4bce1a4](https://github.com/sase-org/sase/commit/4bce1a4f68d985c623611416ea8187da7052609f)
-    — feat(artifact-links): project recomputed edges into the read model (sase-ug.3)
 
 # Plan: Projected edges from facts SASE already owns
 
