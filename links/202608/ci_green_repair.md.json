@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ci_green_repair.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T13:21:09Z",
+      "created_by": "0e6--1",
+      "description": "Need the approved implementation scope before repairing the remaining check-full failure",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0e6--1",
+      "target_ref": "plan:202608/ci_green_repair.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
