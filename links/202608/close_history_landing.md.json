@@ -11,6 +11,17 @@
       "source_ref": "plan:202608/close_history_landing.md",
       "target_ref": "bead:sase-fr.9",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-26T04:50:33Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/close_history_landing.md's `AGENTS:` header entry for bbugyi200.athena.sase-fr.9.3",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sase-fr.9.3",
+      "target_ref": "plan:202608/close_history_landing.md",
+      "uses": 1
     }
   ],
   "schema_version": 2

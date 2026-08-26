@@ -11,6 +11,17 @@
       "source_ref": "plan:202608/artifacts_relations_and_grouping.md",
       "target_ref": "bead:sase-m6.7.1",
       "uses": 1
+    },
+    {
+      "created_at": "2026-08-26T04:50:33Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/artifacts_relations_and_grouping.md's `AGENTS:` header entry for bbugyi200.athena.sase-m6.7--plan",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sase-m6.7--plan",
+      "target_ref": "plan:202608/artifacts_relations_and_grouping.md",
+      "uses": 1
     }
   ],
   "schema_version": 2

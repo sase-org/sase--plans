@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/bead_prefix_mint_guard.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T04:50:33Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/bead_prefix_mint_guard.md's `AGENTS:` header entry for bbugyi200.athena.sf--plan",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sf--plan",
+      "target_ref": "plan:202608/bead_prefix_mint_guard.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

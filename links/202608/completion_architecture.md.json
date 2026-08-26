@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/completion_architecture.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T04:50:33Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/completion_architecture.md's `AGENTS:` header entry for bbugyi200.athena.sase-rm.2--plan",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sase-rm.2--plan",
+      "target_ref": "plan:202608/completion_architecture.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
