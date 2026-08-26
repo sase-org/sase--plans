@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-um.2
 bead: sase-um.2
-create_time: 2026-08-26 19:17:37
-status: wip
 ---
 
 - **PARENT:** [202608/release_gate_liveness.md](release_gate_liveness.md)
