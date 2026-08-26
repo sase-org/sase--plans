@@ -9,6 +9,12 @@ size: small
 proposed_by: bbugyi200.athena.0e0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e0.md)
+- **COMMITS:**
+  - [f232814](https://github.com/sase-org/sase-core/commit/f232814e4cd974fddf8891193a9b112b15890ade)
+    — fix: restore sase-core check gate
+
 # Context
 
 `actstat --repo sase-org/sase-core -n 4 --only-failures` reports the same primary
