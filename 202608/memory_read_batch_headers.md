@@ -6,8 +6,6 @@ goal:
   Markdown output without changing single-note output.
 size: small
 proposed_by: bbugyi200.athena.0ef
-create_time: 2026-08-26 12:23:03
-status: wip
 ---
 
 # Label each reference-memory file in batched Markdown reads
