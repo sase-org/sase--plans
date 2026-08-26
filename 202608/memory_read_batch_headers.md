@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0ef
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ef](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ef.md)
+- **COMMITS:**
+  - [95dc60c](https://github.com/sase-org/sase/commit/95dc60c5aa2fc1ddf649d3bd46fac6e9c0e75c01)
+    — feat(memory): add MEMORY FILE header to multi-note selector batch renders
+
 # Label each reference-memory file in batched Markdown reads
 
 ## Goal
