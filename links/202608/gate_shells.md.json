@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/gate_shells.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T18:06:36Z",
+      "created_by": "sase-ud.2",
+      "description": "Need detailed shells-phase deliverables and exclusions before authoring the implementation plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-ud.2",
+      "target_ref": "plan:202608/gate_shells.md",
+      "uses": 3
+    }
+  ],
+  "schema_version": 2
+}
