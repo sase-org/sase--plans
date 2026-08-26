@@ -11,6 +11,12 @@ size: medium
 proposed_by: bbugyi200.athena.0ed
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ed](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ed.md)
+- **COMMITS:**
+  - [e6eccc5](https://github.com/sase-org/sase/commit/e6eccc5fea6bb4c9b8561267824fbc50753b100b)
+    — feat(tui): group notification modal beads by type
+
 # Plan: Group notification-panel rows into per-tab sections
 
 ## Problem
