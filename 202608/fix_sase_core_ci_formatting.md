@@ -7,8 +7,6 @@ goal:
   changing release-owned versions.
 size: small
 proposed_by: bbugyi200.athena.0e0
-create_time: 2026-08-26 07:30:26
-status: wip
 ---
 
 # Context
