@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0e8
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e8.md)
+- **COMMITS:**
+  - [a3b69bd](https://github.com/sase-org/sase/commit/a3b69bd85bdbb83c24a457aad126e0891df233f7)
+    — feat(tui): make Admin Center tab memory session-scoped
+
 # Plan: Scope Admin Center tab memory to one TUI session
 
 ## Problem
