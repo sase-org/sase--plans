@@ -9,8 +9,6 @@ goal:
   slowdown degrades into a logged deferral instead of a silent SIGKILL.
 size: medium
 proposed_by: bbugyi200.athena.0ec
-create_time: 2026-08-26 11:09:05
-status: wip
 ---
 
 # Plan: Stop the `artifact_link_backfill` chop from timing out
