@@ -7,8 +7,6 @@ goal:
   no production behavior change."
 size: medium
 proposed_by: bbugyi200.athena.0e6
-create_time: 2026-08-26 08:30:42
-status: wip
 ---
 
 # Repair the three deterministic master CI failure clusters
