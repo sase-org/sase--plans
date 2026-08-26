@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202607/space_plus_vcs_completion.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T03:30:36Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202607/space_plus_vcs_completion.md",
+      "target_ref": "bead:sase-75",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
