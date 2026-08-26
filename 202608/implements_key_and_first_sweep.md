@@ -16,6 +16,11 @@ bead: sase-tw
   [202608/artifact_link_durability_and_derivation.md](artifact_link_durability_and_derivation.md)
 - **BEAD:**
   [sase-tw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-tw/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-tw.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-tw.land.md)
+- **COMMITS:**
+  - [e391b1a](https://github.com/sase-org/sase/commit/e391b1a28354166b00437f4ca895eaec81231fe7)
+    — feat(artifact-links): derive plan implements-key and backfill sweep
 
 # Plan: Derive `implements` from the plan's own bead, then run the first sweep
 
