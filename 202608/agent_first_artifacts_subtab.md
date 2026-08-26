@@ -6,8 +6,6 @@ goal:
   every rendered, cycled, and fallback shortcut synchronized with visual order.
 size: small
 proposed_by: bbugyi200.athena.0dx
-create_time: 2026-08-26 05:02:29
-status: wip
 ---
 
 # Plan: Put Agent first in the Artifacts sub-tab order
