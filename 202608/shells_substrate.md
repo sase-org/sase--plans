@@ -12,6 +12,11 @@ bead: sase-ud.2
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.2.md)
+- **COMMITS:**
+  - [e16872c](https://github.com/sase-org/sase/commit/e16872c9deaa9e48cf73e9d26196adf6bae621d8)
+    — feat(shells): add shells substrate
 
 # Extract the family-shell substrate
 
