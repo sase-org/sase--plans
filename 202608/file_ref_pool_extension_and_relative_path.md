@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0e5
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e5.md)
+- **COMMITS:**
+  - [a2e9f2e](https://github.com/sase-org/sase/commit/a2e9f2e145b71eecba8f7a39ef1527e8c3ba6cda)
+    — fix(artifacts): preserve captured file-ref suffixes
+
 # Plan: Give captured `@file` pool copies a real extension and render them workspace-relative
 
 ## Problem
