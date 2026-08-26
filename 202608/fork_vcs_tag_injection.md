@@ -10,6 +10,12 @@ size: small
 proposed_by: bbugyi200.athena.0e4
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e4.md)
+- **COMMITS:**
+  - [6ae021b](https://github.com/sase-org/sase/commit/6ae021b2bb881b928c26cb8c8118ae7f1f1f13ee)
+    — fix(xprompt): stop injecting the VCS workflow tag into \#fork-injected history
+
 # Stop injecting the VCS workflow tag into `#fork`-injected history
 
 ## Problem
