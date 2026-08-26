@@ -16,6 +16,11 @@ bead: sase-ug.3
 - **PARENT:** [202608/link_rail_every_tab.md](link_rail_every_tab.md)
 - **BEAD:**
   [sase-ug.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ug/sase-ug.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ug.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ug.3.md)
+- **COMMITS:**
+  - [917951d](https://github.com/sase-org/sase-core/commit/917951d207b47099162423247c1811bcdf6aa31a)
+    — feat(artifact-links): add projection relation builtins
 
 # Plan: Projected edges from facts SASE already owns
 
