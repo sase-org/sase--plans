@@ -13,6 +13,11 @@ bead: sase-ud.3
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.3.md)
+- **COMMITS:**
+  - [1cb772d](https://github.com/sase-org/sase/commit/1cb772d9c38e648f432460e0a097e78e4ef06df6)
+    — feat(gate): add gate shell lifecycle
 
 # Gate shell creation, handoff, and settlement
 
