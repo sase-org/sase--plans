@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/release_gate_liveness.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T23:08:23Z",
+      "created_by": "0ek",
+      "description": "Consolidated diagnosis of the 19-day release stall, its measurements, and the R1-R7 recommendation set this plan implements with two documented overrides.",
+      "origin": "manual",
+      "relation": "derives-from",
+      "schema_version": 2,
+      "source_ref": "plan:202608/release_gate_liveness.md",
+      "target_ref": "research:202608/release_gate_liveness/release_gate_liveness.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
