@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/link_rail_every_tab.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T20:35:07Z",
+      "created_by": "research.19.cdx",
+      "description": "Finish reviewing sase-ug performance, implementation, testing, and sequencing constraints relevant to pager integration",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.19.cdx",
+      "target_ref": "plan:202608/link_rail_every_tab.md",
+      "uses": 3
+    }
+  ],
+  "schema_version": 2
+}
