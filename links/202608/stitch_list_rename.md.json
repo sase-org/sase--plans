@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/stitch_list_rename.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T04:51:14Z",
+      "created_by": "sase",
+      "description": "derived from prompts/202608/stitch_list_rename.md's `AGENTS:` header entry for bbugyi200.athena.xt--plan",
+      "origin": "derived",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.xt--plan",
+      "target_ref": "plan:202608/stitch_list_rename.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
