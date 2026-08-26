@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0dx
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dx](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dx.md)
+- **COMMITS:**
+  - [4dd2995](https://github.com/sase-org/sase/commit/4dd2995028fd6d20b34e1077a7bdc1d8aae9755b)
+    — feat(artifacts): put agents first in subtabs
+
 # Plan: Put Agent first in the Artifacts sub-tab order
 
 ## Context and intent
