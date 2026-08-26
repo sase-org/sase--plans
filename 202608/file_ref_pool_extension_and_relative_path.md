@@ -8,8 +8,6 @@ goal:
   `.sase/artifacts/pool/<sha12>-file-ref.<ext>` instead of an absolute workspace path.
 size: medium
 proposed_by: bbugyi200.athena.0e5
-create_time: 2026-08-26 08:15:05
-status: wip
 ---
 
 # Plan: Give captured `@file` pool copies a real extension and render them workspace-relative
