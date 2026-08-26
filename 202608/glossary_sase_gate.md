@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0ee
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ee](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ee.md)
+- **COMMITS:**
+  - [4a987d8](https://github.com/sase-org/sase/commit/4a987d8e8b2afeda8df636d04ceeee50b289a670)
+    — docs(memory): add sase-gate glossary strand
+
 # Plan: Add the "Sase Gate" glossary strand
 
 ## Context
