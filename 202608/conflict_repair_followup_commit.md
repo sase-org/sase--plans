@@ -8,8 +8,6 @@ goal:
   `dirty_after_stitch` after the primary commit has already landed.
 size: medium
 proposed_by: bbugyi200.athena.0dz
-create_time: 2026-08-26 07:20:27
-status: wip
 ---
 
 # Plan: Execute the conflict-repair turn's follow-up commit declaration
