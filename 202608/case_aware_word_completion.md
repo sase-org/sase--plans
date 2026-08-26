@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0e3
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0e3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0e3.md)
+- **COMMITS:**
+  - [3837e92](https://github.com/sase-org/sase/commit/3837e92201d02f9e002cacc3a35a5b7345571732)
+    — feat(tui): make word completion case-aware
+
 # Plan: Case-smart prompt-history word completion
 
 ## Goal
