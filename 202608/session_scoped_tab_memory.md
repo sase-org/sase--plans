@@ -7,8 +7,6 @@ goal:
   first sub-tab instead of always opening XPrompts.
 size: medium
 proposed_by: bbugyi200.athena.0e8
-create_time: 2026-08-26 09:22:12
-status: wip
 ---
 
 # Plan: Scope Admin Center tab memory to one TUI session
