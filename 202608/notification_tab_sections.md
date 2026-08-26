@@ -9,8 +9,6 @@ goal:
   the rows that carry no type.
 size: medium
 proposed_by: bbugyi200.athena.0ed
-create_time: 2026-08-26 11:28:02
-status: wip
 ---
 
 # Plan: Group notification-panel rows into per-tab sections
