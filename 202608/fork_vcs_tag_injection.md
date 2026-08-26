@@ -8,8 +8,6 @@ goal:
   the tag exactly as they do today.
 size: small
 proposed_by: bbugyi200.athena.0e4
-create_time: 2026-08-26 08:18:52
-status: wip
 ---
 
 # Stop injecting the VCS workflow tag into `#fork`-injected history
