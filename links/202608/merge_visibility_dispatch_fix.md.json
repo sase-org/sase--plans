@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/merge_visibility_dispatch_fix.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T03:37:52Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202608/merge_visibility_dispatch_fix.md",
+      "target_ref": "bead:sase-i8.10",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
