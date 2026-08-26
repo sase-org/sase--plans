@@ -10,8 +10,6 @@ goal:
   only in the code."
 proposed_by: bbugyi200.athena.sase-tw.land
 bead: sase-tw
-create_time: 2026-08-25 21:49:29
-status: wip
 ---
 
 - **PARENT:**
