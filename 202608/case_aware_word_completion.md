@@ -6,8 +6,6 @@ goal:
   spelling verbatim, and collapses case-variant spellings of the same word into one row.
 size: medium
 proposed_by: bbugyi200.athena.0e3
-create_time: 2026-08-26 07:58:34
-status: wip
 ---
 
 # Plan: Case-smart prompt-history word completion
