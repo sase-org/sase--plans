@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0dz
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0dz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0dz.md)
+- **COMMITS:**
+  - [a301139](https://github.com/sase-org/sase/commit/a3011392c432bf3232f9cdb1e1337d5aa5222cc5)
+    — fix(finalizers): run repair follow-up commits
+
 # Plan: Execute the conflict-repair turn's follow-up commit declaration
 
 ## Context: the failure being fixed
