@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202604/rust_backend_phase4_status_machine_phase4e_handoff_1.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T04:00:14Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202604/rust_backend_phase4_status_machine_phase4e_handoff_1.md",
+      "target_ref": "bead:sase-19.5",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
