@@ -6,8 +6,6 @@ goal:
   nine-bead show costs roughly one bead's work instead of nine."
 size: medium
 proposed_by: bbugyi200.athena.0e1.f1
-create_time: 2026-08-26 08:15:20
-status: wip
 ---
 
 # Plan: `<epic>..` expansion for `sase bead show`
