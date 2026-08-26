@@ -12,6 +12,12 @@ bead: sase-um.2
 - **PARENT:** [202608/release_gate_liveness.md](release_gate_liveness.md)
 - **BEAD:**
   [sase-um.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-um/sase-um.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-um.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-um.2.md)
+- **COMMITS:**
+  - [312a62e](https://github.com/bbugyi200/bugyi-chops/commit/312a62e1d2432aadd951a2b6a46c5d1971f159fe)
+    — feat(ci-watch)\!: gate release-please merges with configurable allowlists, a
+    heavy-lane freshness check, and a configurable merge strategy
 
 # ci_watch release-gate allowlists, freshness, and merge strategy
 
