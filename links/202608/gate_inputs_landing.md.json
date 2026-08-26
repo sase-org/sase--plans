@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/gate_inputs_landing.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T03:36:53Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202608/gate_inputs_landing.md",
+      "target_ref": "bead:sase-h7.13",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
