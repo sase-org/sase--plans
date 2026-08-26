@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202604/dismissed_agent_name_prefix.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T01:54:32Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202604/dismissed_agent_name_prefix.md",
+      "target_ref": "bead:sase-10",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

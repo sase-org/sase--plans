@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202604/ace_testing_dsl.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T01:54:32Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202604/ace_testing_dsl.md",
+      "target_ref": "bead:sase-i",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

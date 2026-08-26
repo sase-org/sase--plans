@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202604/chop_agent_visibility_and_pylimit_split.md",
+  "rows": [
+    {
+      "created_at": "2026-08-26T01:54:32Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202604/chop_agent_visibility_and_pylimit_split.md",
+      "target_ref": "bead:sase-11",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
