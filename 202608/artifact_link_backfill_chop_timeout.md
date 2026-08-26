@@ -11,6 +11,12 @@ size: medium
 proposed_by: bbugyi200.athena.0ec
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ec](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ec.md)
+- **COMMITS:**
+  - [cc2d907](https://github.com/sase-org/sase/commit/cc2d90721baf4188eb6e19b116fd594f89ea9bc4)
+    — fix(sdd): bound artifact link backfill reconciliation
+
 # Plan: Stop the `artifact_link_backfill` chop from timing out
 
 ## 1. The symptom
