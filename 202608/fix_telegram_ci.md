@@ -9,12 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.0eo
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0eo](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0eo.md)
-- **COMMITS:**
-  - [be63e9c](https://github.com/sase-org/sase/commit/be63e9c7dcd35944ac51d7da8171677bbd499205)
-    — fix(history): fall back when chat workspace helper is unavailable
-
 # Fix the two sase-telegram CI test failures
 
 ## Diagnosis
