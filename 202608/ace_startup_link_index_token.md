@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0em
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0em](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0em.md)
+- **COMMITS:**
+  - [f49030d](https://github.com/sase-org/sase/commit/f49030db66b134281bc447c9d367cd7aabad6d9c)
+    — perf(ace-tui): cache provider_source_token and cascade tab cache invalidation
+
 # Fix the ACE startup regression caused by uncached `provider_source_token()`
 
 ## Problem
