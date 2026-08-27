@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ud.13.1.2
 bead: sase-ud.13.1.2
-create_time: 2026-08-27 08:54:34
-status: wip
 ---
 
 - **PARENT:** [202608/gate_shell_status_collapse.md](gate_shell_status_collapse.md)
