@@ -13,6 +13,11 @@ bead: sase-ug.7
 - **PARENT:** [202608/link_rail_every_tab.md](link_rail_every_tab.md)
 - **BEAD:**
   [sase-ug.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ug/sase-ug.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ug.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ug.7.md)
+- **COMMITS:**
+  - [d070280](https://github.com/sase-org/sase/commit/d07028050cb831849d1e666ab267a39223779f9b)
+    — feat(tui): add link-follow key grammar
 
 # The `$` grammar and a jump that always lands
 
