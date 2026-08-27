@@ -14,6 +14,11 @@ bead: sase-ud.12
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.12.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.12](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.12.md)
+- **COMMITS:**
+  - [777e51e](https://github.com/sase-org/sase/commit/777e51e734a6770e232e039ecfa159a199247295)
+    — feat(agents): retire q asker suffix
 
 # Plan
 
