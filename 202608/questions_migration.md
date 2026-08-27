@@ -15,6 +15,12 @@ bead: sase-ud.10
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.10.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.10](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.10.md)
+- **COMMITS:**
+  - [05ce87f](https://github.com/sase-org/sase/commit/05ce87fbf3d0942372ccc3b74cec299f8374af39)
+    — feat(gate-shell): migrate /sase_questions to a gate shell behind
+    gate_shell_handoff
 
 # Plan: Migrate /sase_questions to a gate shell
 
