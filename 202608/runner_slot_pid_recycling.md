@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0et
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0et](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0et.md)
+- **COMMITS:**
+  - [7e1214c](https://github.com/sase-org/sase/commit/7e1214ced961376fa623f5115d204c9321c6eb02)
+    — fix(agent): guard runner slots against pid recycling
+
 # Plan
 
 ## Problem
