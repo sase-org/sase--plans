@@ -11,6 +11,11 @@ bead: sase-ud.7
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.7.md)
+- **COMMITS:**
+  - [72abf37](https://github.com/sase-org/sase/commit/72abf372901571748ba63dc5a88213ac3ba7e875)
+    — feat(gate-shell): add configurable per-branch follow-up (sase-ud.7)
 
 # Configurable per-branch gate-shell follow-up
 
