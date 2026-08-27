@@ -7,8 +7,6 @@ goal:
   starving the agents disk load.
 size: medium
 proposed_by: bbugyi200.athena.0em
-create_time: 2026-08-27 07:50:38
-status: wip
 ---
 
 # Fix the ACE startup regression caused by uncached `provider_source_token()`
