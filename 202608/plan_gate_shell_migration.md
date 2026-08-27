@@ -12,6 +12,11 @@ bead: sase-ud.11
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.11.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.11](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.11.md)
+- **COMMITS:**
+  - [32da1f3](https://github.com/sase-org/sase/commit/32da1f3d2d76878f61dec184514b7e8620e0b461)
+    — feat(plan): add shell-backed approval handoff
 
 # Migrate `/sase_plan` approval to gate shells
 
