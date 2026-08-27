@@ -12,6 +12,11 @@ bead: sase-ud.13.1.2
 - **PARENT:** [202608/gate_shell_status_collapse.md](gate_shell_status_collapse.md)
 - **BEAD:**
   [sase-ud.13.1.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.13.1.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.13.1.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.13.1.2.md)
+- **COMMITS:**
+  - [a646bda](https://github.com/sase-org/sase/commit/a646bdaf6b75838326f8c9d16f42fb935393e5c1)
+    — refactor(plan-gate): remove the gate_shell_handoff flag and blocking Off branch
 
 # Remove the gate-shell handoff flag and blocking fallback
 
