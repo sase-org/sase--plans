@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ace_stale_artifact_read_hint.md",
+  "rows": [
+    {
+      "created_at": "2026-08-27T18:31:19Z",
+      "created_by": "0f7",
+      "description": "Need approved implementation plan for stale artifact read hint",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0f7",
+      "target_ref": "plan:202608/ace_stale_artifact_read_hint.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
