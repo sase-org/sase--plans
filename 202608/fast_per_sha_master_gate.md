@@ -12,6 +12,11 @@ bead: sase-um.1
 - **PARENT:** [202608/release_gate_liveness.md](release_gate_liveness.md)
 - **BEAD:**
   [sase-um.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-um/sase-um.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-um.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-um.1.md)
+- **COMMITS:**
+  - [5d8872f](https://github.com/sase-org/sase/commit/5d8872f4d2ed263d38a41bcedea44fd15e7ba206)
+    — feat(ci): add fast per-SHA master gate with sharded test matrix
 
 # Fast per-SHA master gate
 
