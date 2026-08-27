@@ -8,8 +8,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ug.7
 bead: sase-ug.7
-create_time: 2026-08-26 22:39:45
-status: wip
 ---
 
 - **PARENT:** [202608/link_rail_every_tab.md](link_rail_every_tab.md)
