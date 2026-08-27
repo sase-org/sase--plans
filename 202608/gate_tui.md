@@ -12,6 +12,11 @@ bead: sase-ud.6
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
 - **BEAD:**
   [sase-ud.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ud/sase-ud.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-ud.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-ud.6.md)
+- **COMMITS:**
+  - [10d2c17](https://github.com/sase-org/sase/commit/10d2c17a171ffff1fcf700edadc46be1e4405f2e)
+    — feat(ace): render gate shell rows in agents tui
 
 # Plan: Gate shells in ACE
 
