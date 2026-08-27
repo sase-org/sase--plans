@@ -14,6 +14,11 @@ bead: sase-uv.7
 - **PARENT:** [202608/ace_tui_responsiveness.md](ace_tui_responsiveness.md)
 - **BEAD:**
   [sase-uv.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-uv/sase-uv.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-uv.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-uv.7.md)
+- **COMMITS:**
+  - [a615273](https://github.com/sase-org/sase/commit/a615273b13a5e0615ddbbc6a6c3747c58c19f8f8)
+    — feat(tui): hydrate list-shaped artifact records
 
 # Plan: Project the heavy `record_json` leaves off the list-render path
 
