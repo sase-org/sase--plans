@@ -12,11 +12,6 @@ bead: sase-uv.8
 
 - **BEAD:**
   [sase-uv.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-uv/sase-uv.8.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-uv.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-uv.8.md)
-- **COMMITS:**
-  - [a805b0d](https://github.com/sase-org/sase/commit/a805b0da2f23de59d628c9c16ff4855fb68d8a02)
-    — feat(agents): add bounded viewport loading
 
 # Plan: Honour the AgentsViewport contract on the direct ACE read path
 
