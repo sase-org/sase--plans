@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-ud.11
 bead: sase-ud.11
-create_time: 2026-08-27 00:21:00
-status: wip
 ---
 
 - **PARENT:** [202608/gate_shells.md](gate_shells.md)
