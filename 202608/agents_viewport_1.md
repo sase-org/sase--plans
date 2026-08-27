@@ -12,6 +12,11 @@ bead: sase-uv.8
 
 - **BEAD:**
   [sase-uv.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-uv/sase-uv.8.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-uv.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-uv.8.md)
+- **COMMITS:**
+  - [07bd0f5](https://github.com/sase-org/sase-core/commit/07bd0f589434f90c51faab4994c0ef0d4db1c31d)
+    — feat(agent-scan): support windowed index reads
 
 # Plan: Honour the AgentsViewport contract on the direct ACE read path
 
