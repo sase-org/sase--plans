@@ -7,8 +7,6 @@ goal:
   path.
 size: medium
 proposed_by: bbugyi200.athena.0et
-create_time: 2026-08-27 09:57:35
-status: wip
 ---
 
 # Plan
