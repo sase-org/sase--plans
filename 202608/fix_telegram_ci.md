@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0eo
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0eo](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0eo.md)
+- **COMMITS:**
+  - [4b4fa4a](https://github.com/sase-org/sase-telegram/commit/4b4fa4a92e067766c76cc1185134cd4a03009a94)
+    — test(gates): refresh Telegram plan gate fixtures
+
 # Fix the two sase-telegram CI test failures
 
 ## Diagnosis
