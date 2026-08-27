@@ -9,12 +9,11 @@ goal:
   the abandoned-row repair scan stops full-scanning a 138 MB text column.
 proposed_by: bbugyi200.athena.sase-uv.7
 bead: sase-uv.7
-create_time: 2026-08-27 14:49:59
-status: wip
 ---
 
 - **PARENT:** [202608/ace_tui_responsiveness.md](ace_tui_responsiveness.md)
-- **BEAD:** sase-uv.7
+- **BEAD:**
+  [sase-uv.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-uv/sase-uv.7.md)
 
 # Plan: Project the heavy `record_json` leaves off the list-render path
 
