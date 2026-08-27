@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ace_tui_responsiveness.md",
+  "rows": [
+    {
+      "created_at": "2026-08-27T15:54:09Z",
+      "created_by": "0ex",
+      "description": "supplies the telemetry baseline and the two-problem framing this epic implements",
+      "origin": "manual",
+      "relation": "derives-from",
+      "schema_version": 2,
+      "source_ref": "plan:202608/ace_tui_responsiveness.md",
+      "target_ref": "research:202608/ace_refresh_loop_and_link_rail_regression/ace_refresh_loop_and_link_rail_regression.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
