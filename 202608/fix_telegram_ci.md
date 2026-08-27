@@ -7,8 +7,6 @@ goal:
   fixture stubs the host plan archive the way sase's own tests do.
 size: medium
 proposed_by: bbugyi200.athena.0eo
-create_time: 2026-08-27 08:39:11
-status: wip
 ---
 
 # Fix the two sase-telegram CI test failures
