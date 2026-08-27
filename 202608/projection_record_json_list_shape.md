@@ -14,6 +14,11 @@ bead: sase-uv.7
 - **PARENT:** [202608/ace_tui_responsiveness.md](ace_tui_responsiveness.md)
 - **BEAD:**
   [sase-uv.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-uv/sase-uv.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-uv.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-uv.7.md)
+- **COMMITS:**
+  - [bdce575](https://github.com/sase-org/sase-core/commit/bdce575a5bea16a97f0f5fd31947d42a7de81dd1)
+    — feat(agent-scan): project list-shaped artifact records
 
 # Plan: Project the heavy `record_json` leaves off the list-render path
 
