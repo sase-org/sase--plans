@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/link_traversing_pager.md",
+  "rows": [
+    {
+      "created_at": "2026-08-27T01:24:16Z",
+      "created_by": "sase-uk.6",
+      "description": "Need D7-D8 trail and copy/edit design details for phase sase-uk.6",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-uk.6",
+      "target_ref": "plan:202608/link_traversing_pager.md",
+      "uses": 2
+    }
+  ],
+  "schema_version": 2
+}
