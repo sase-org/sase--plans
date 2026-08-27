@@ -8,8 +8,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-uv.8
 bead: sase-uv.8
-create_time: 2026-08-27 17:20:05
-status: wip
 ---
 
 - **BEAD:**
