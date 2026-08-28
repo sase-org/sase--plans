@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ace_completion_convergence.md",
+  "rows": [
+    {
+      "created_at": "2026-08-28T20:11:46Z",
+      "created_by": "0fp--2",
+      "description": "Need the approved ACE completion-convergence plan to verify implementation vs check-full failure",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0fp--2",
+      "target_ref": "plan:202608/ace_completion_convergence.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
