@@ -12,6 +12,12 @@ size: small
 proposed_by: bbugyi200.athena.0fm
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fm.md)
+- **COMMITS:**
+  - [70e2d52](https://github.com/sase-org/sase/commit/70e2d5250765cbae1fdb892ee6bc00d7aed20199)
+    — fix(task-types): require one plus-one for bug triage
+
 # Plan
 
 The builtin `bug` task type ships no `triage` block, so `TaskTypeRecord.min_plus_ones`
