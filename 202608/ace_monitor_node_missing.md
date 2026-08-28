@@ -7,8 +7,6 @@ goal:
   disk.
 size: medium
 proposed_by: bbugyi200.athena.0fn.f2
-create_time: 2026-08-28 14:40:48
-status: wip
 ---
 
 # Plan: Restore settled monitor nodes in the ACE Agents tab
