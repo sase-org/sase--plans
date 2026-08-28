@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fp
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fp.md)
+- **COMMITS:**
+  - [6e8744c](https://github.com/sase-org/sase/commit/6e8744c1013729a53241d6ba86f5318431ed8849)
+    — fix(ace): converge completion toast with agent-list done state
+
 # Plan: Converge ACE agent rows with the completion notification that announces them
 
 ## Symptom
