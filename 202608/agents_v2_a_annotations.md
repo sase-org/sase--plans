@@ -9,15 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.0fq
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0fq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fq.md)
-  - [bbugyi200.athena.0fs](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fs.md)
-- **COMMITS:**
-  - [affc43a](https://github.com/sase-org/sase/commit/affc43a6fef74e33c1c3edfb6cc51b5a978e20af)
-    — docs(memory): apply AGENTS v2 \#a annotation trims
-  - [2a4c075](https://github.com/sase-org/sase/commit/2a4c075375bc331320fd1b7ad596c5d612274a21)
-    — docs(agents): align AGENTS v2 instruction annotations
-
 # Plan: Apply the `#a` annotations from the sase AGENTS v2 review
 
 The user annotated the rendered agent instruction file and asked that only the comments
