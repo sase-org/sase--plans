@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fr
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fr.md)
+- **COMMITS:**
+  - [aeeaddd](https://github.com/sase-org/sase-core/commit/aeeaddd5ffe03a2030a8578338b719e6fb9f4e68)
+    — fix(agent-scan): give the windowed completed tier its own budget
+
 <!-- sase:links:start -->
 
 ## Links
