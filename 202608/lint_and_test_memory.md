@@ -8,8 +8,6 @@ goal:
   1 context without weakening the verification mandate.
 size: small
 proposed_by: bbugyi200.athena.0fo
-create_time: 2026-08-28 14:16:33
-status: wip
 ---
 
 # Plan: Migrate `build_and_run.md` to a `lint_and_test.md` reference note
