@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fc
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fc](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fc.md)
+- **COMMITS:**
+  - [d929ed8](https://github.com/sase-org/sase/commit/d929ed82bd1b698d4bd010bb8147cc98c459e519)
+    — test(selection): record current flake baseline debt
+
 # Fix chronic axe chop failures: `gate_shell_reclaim` and `stale_running_cleanup`
 
 ## Problem
