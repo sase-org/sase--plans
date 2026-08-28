@@ -6,8 +6,6 @@ goal:
   clans, and tribes it lists once the session is warm, instead of only live rows.
 size: medium
 proposed_by: bbugyi200.athena.0fr
-create_time: 2026-08-28 17:09:59
-status: wip
 ---
 
 <!-- sase:links:start -->
