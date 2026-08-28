@@ -11,10 +11,14 @@ proposed_by: bbugyi200.athena.0fp
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.0fp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fp.md)
   - [bbugyi200.athena.research.1c.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.cdx/README.md)
+  - [bbugyi200.athena.research.1c.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.cld/README.md)
 - **COMMITS:**
   - [50167df](https://github.com/sase-org/sase--research/commit/50167dfcff1077023b1f0601be02c09caaf9018f)
     — docs(research): assess memory as artifacts
+  - [a82e179](https://github.com/sase-org/sase--research/commit/a82e1798dce1e3c81b47eb4862933ed71500cfe7)
+    — docs(research): assess migrating sase memory into artifacts
 
 # Plan: Converge ACE agent rows with the completion notification that announces them
 
