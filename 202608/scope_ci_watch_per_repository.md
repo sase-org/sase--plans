@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.athena.sase-um.9.1
 bead: sase-um.9.1
-create_time: 2026-08-28 15:54:17
-status: wip
 ---
 
 - **PARENT:** [202608/release_gate_completion.md](release_gate_completion.md)
