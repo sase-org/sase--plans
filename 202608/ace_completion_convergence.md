@@ -8,8 +8,6 @@ goal:
   without adding broad Tier 1 loads or growing the inotify watch set.
 size: medium
 proposed_by: bbugyi200.athena.0fp
-create_time: 2026-08-28 14:52:26
-status: wip
 ---
 
 # Plan: Converge ACE agent rows with the completion notification that announces them
