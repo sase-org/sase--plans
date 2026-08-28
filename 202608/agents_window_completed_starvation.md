@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fr
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fr.md)
+- **COMMITS:**
+  - [45a0a88](https://github.com/sase-org/sase/commit/45a0a8880a4e0c7f55e15ca30959fe8f63b7fde3)
+    — fix(ace): complete the Agents window prefix once after first paint
+
 <!-- sase:links:start -->
 
 ## Links
