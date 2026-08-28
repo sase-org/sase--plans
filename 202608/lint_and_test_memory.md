@@ -10,6 +10,12 @@ size: small
 proposed_by: bbugyi200.athena.0fo
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fo](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fo.md)
+- **COMMITS:**
+  - [52327ed](https://github.com/sase-org/sase/commit/52327ed785b1a5faec08db9a5bc931b33cb855f1)
+    — docs(memory): migrate build_and_run to lint_and_test reference note
+
 # Plan: Migrate `build_and_run.md` to a `lint_and_test.md` reference note
 
 ## Why
