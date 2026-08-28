@@ -7,8 +7,6 @@ goal:
 size: small
 proposed_by: bbugyi200.athena.sase-um.5.1.land--2
 bead: sase-um.5.1
-create_time: 2026-08-28 14:44:44
-status: wip
 ---
 
 - **BEAD:**
