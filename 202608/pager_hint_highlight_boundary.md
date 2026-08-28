@@ -6,8 +6,6 @@ goal:
   intended foreground styling.
 size: small
 proposed_by: bbugyi200.athena.0fd
-create_time: 2026-08-28 06:59:39
-status: wip
 ---
 
 # Limit pager hint highlighting to the bracketed key
