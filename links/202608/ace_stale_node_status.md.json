@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/ace_stale_node_status.md",
+  "rows": [
+    {
+      "created_at": "2026-08-28T18:09:13Z",
+      "created_by": "0fl--1",
+      "description": "discovered while repairing ACE stale node-status watches",
+      "origin": "manual",
+      "relation": "related",
+      "schema_version": 2,
+      "source_ref": "bead:sase-v4",
+      "target_ref": "plan:202608/ace_stale_node_status.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
