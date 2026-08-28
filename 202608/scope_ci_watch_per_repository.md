@@ -12,11 +12,6 @@ bead: sase-um.9.1
 - **PARENT:** [202608/release_gate_completion.md](release_gate_completion.md)
 - **BEAD:**
   [sase-um.9.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-um/sase-um.9.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-um.9.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-um.9.1.md)
-- **COMMITS:**
-  - [ec5e82f](https://github.com/bbugyi200/dotfiles/commit/ec5e82fb7490b21395a60bccd92cecf5c4b91379)
-    — chore(config): scope ci_watch release gates by repo
 
 # Scope `ci_watch` release gates per repository
 
