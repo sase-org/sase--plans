@@ -11,6 +11,11 @@ bead: sase-um.5.1
 
 - **BEAD:**
   [sase-um.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-um/sase-um.5.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-um.5.1.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-um.5.1.land.md)
+- **COMMITS:**
+  - [bcd6813](https://github.com/sase-org/sase/commit/bcd6813d270aa0da6e48df79410fe7017f5441c9)
+    — fix(history): restore helper-git-cwd chat name fallback
 
 # Restore the chat-name fallback chain
 
