@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fp
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.1c.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.cdx/README.md)
+- **COMMITS:**
+  - [50167df](https://github.com/sase-org/sase--research/commit/50167dfcff1077023b1f0601be02c09caaf9018f)
+    — docs(research): assess memory as artifacts
+
 # Plan: Converge ACE agent rows with the completion notification that announces them
 
 ## Symptom
