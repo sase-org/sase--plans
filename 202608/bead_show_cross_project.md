@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fh
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fh](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fh.md)
+- **COMMITS:**
+  - [8e32b47](https://github.com/sase-org/sase/commit/8e32b47b36f7e0c9da1d76f7760f57d28d3f69d9)
+    — feat(bead): route show across enabled projects
+
 # Cross-Project `sase bead show`
 
 ## Problem
