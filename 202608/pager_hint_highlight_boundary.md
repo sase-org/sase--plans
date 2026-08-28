@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0fd
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fd.md)
+- **COMMITS:**
+  - [65e0974](https://github.com/sase-org/sase/commit/65e09744a0180e86a21574be01dfc6882d90b969)
+    — fix(pager): bound hint capsule styles
+
 # Limit pager hint highlighting to the bracketed key
 
 ## Outcome
