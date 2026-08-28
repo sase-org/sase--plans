@@ -7,8 +7,6 @@ goal:
   date shards.
 size: medium
 proposed_by: bbugyi200.athena.0fl
-create_time: 2026-08-28 12:44:50
-status: wip
 ---
 
 # Plan: Repair ACE agent-status latency by de-starving the artifact watcher
