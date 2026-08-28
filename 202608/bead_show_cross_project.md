@@ -7,8 +7,6 @@ goal:
   plan roots and hosted URLs and no added cost when every ID is local."
 size: medium
 proposed_by: bbugyi200.athena.0fh
-create_time: 2026-08-28 09:54:07
-status: wip
 ---
 
 # Cross-Project `sase bead show`
