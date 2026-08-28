@@ -7,8 +7,6 @@ goal:
   skill-duplicating prose, and the audited-read commands named where agents need them.
 size: medium
 proposed_by: bbugyi200.athena.0fq
-create_time: 2026-08-28 16:57:37
-status: wip
 ---
 
 # Plan: Apply the `#a` annotations from the sase AGENTS v2 review
