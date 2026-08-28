@@ -7,8 +7,6 @@ goal:
   sase.monitor package.
 size: medium
 proposed_by: bbugyi200.athena.0fc
-create_time: 2026-08-28 06:57:19
-status: wip
 ---
 
 # Fix chronic axe chop failures: `gate_shell_reclaim` and `stale_running_cleanup`
