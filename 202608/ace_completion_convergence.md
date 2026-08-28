@@ -10,6 +10,22 @@ size: medium
 proposed_by: bbugyi200.athena.0fp
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.1c.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.cdx/README.md)
+  - [bbugyi200.athena.research.1c.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.cld/README.md)
+  - [bbugyi200.athena.research.1c.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.final/README.md)
+  - [bbugyi200.athena.research.1c.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1c.image/README.md)
+- **COMMITS:**
+  - [50167df](https://github.com/sase-org/sase--research/commit/50167dfcff1077023b1f0601be02c09caaf9018f)
+    — docs(research): assess memory as artifacts
+  - [a82e179](https://github.com/sase-org/sase--research/commit/a82e1798dce1e3c81b47eb4862933ed71500cfe7)
+    — docs(research): assess migrating sase memory into artifacts
+  - [59fe226](https://github.com/sase-org/sase--research/commit/59fe22602f15de519d99df9a53265f8da87e9fab)
+    — docs(research): consolidate memory-as-artifacts research into
+    memory_as_source_artifacts
+  - [25cd282](https://github.com/sase-org/sase--research/commit/25cd28279b58aa849e3adc74a31ea675d7e1ac93)
+    — feat(research): add memory-as-source-artifacts infographic
+
 # Plan: Converge ACE agent rows with the completion notification that announces them
 
 ## Symptom
