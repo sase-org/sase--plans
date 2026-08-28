@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fn
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fn](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fn.md)
+- **COMMITS:**
+  - [98707c0](https://github.com/sase-org/sase/commit/98707c02b9271e5a01ee2603b60e1d90c35981a0)
+    — fix(wait-deps): resolve self-family fork waits
+
 # Plan: Let `#fork` resume a family the forking agent belongs to
 
 ## Problem
