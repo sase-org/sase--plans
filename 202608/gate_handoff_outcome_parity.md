@@ -8,8 +8,6 @@ goal:
   transcript, write a `completed` done marker, and leave the gate shell's workspace
   claim alone."
 proposed_by: bbugyi200.athena.0fb
-create_time: 2026-08-27 19:32:30
-status: wip
 ---
 
 # Teach the runner shutdown path that a gate handoff is not a failed run
