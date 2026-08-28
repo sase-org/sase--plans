@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fn.f2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fn.f2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fn.f2.md)
+- **COMMITS:**
+  - [a148b80](https://github.com/sase-org/sase-core/commit/a148b80f56704306b674ffef463c8376aab87990)
+    — fix(agent-scan): derive missing finished_at from stopped_at
+
 # Plan: Restore settled monitor nodes in the ACE Agents tab
 
 ## Symptom
