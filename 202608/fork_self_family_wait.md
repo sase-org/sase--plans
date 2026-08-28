@@ -7,8 +7,6 @@ goal:
   the forking agent as a not-shown member.
 size: medium
 proposed_by: bbugyi200.athena.0fn
-create_time: 2026-08-28 14:03:34
-status: wip
 ---
 
 # Plan: Let `#fork` resume a family the forking agent belongs to
