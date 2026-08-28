@@ -10,6 +10,12 @@ goal:
 proposed_by: bbugyi200.athena.0fb
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fb.md)
+- **COMMITS:**
+  - [6308174](https://github.com/sase-org/sase/commit/630817489aec8f2230109101de4532a3062e70fe)
+    — fix(gate): treat gate handoffs as successful shell handoffs
+
 # Teach the runner shutdown path that a gate handoff is not a failed run
 
 ## Problem
