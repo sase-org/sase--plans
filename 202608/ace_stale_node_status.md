@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fl
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fl](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fl.md)
+- **COMMITS:**
+  - [dde1b22](https://github.com/sase-org/sase/commit/dde1b22d843f9a218c950b4141d9d68cca5b3269)
+    — fix(ace): keep live ace-run shards in the artifact watcher
+
 # Plan: Repair ACE agent-status latency by de-starving the artifact watcher
 
 ## Symptom
