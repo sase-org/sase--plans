@@ -10,8 +10,6 @@ goal:
   bead with zero `+1` reports is dismissed without any gate being re-raised."
 size: small
 proposed_by: bbugyi200.athena.0fm
-create_time: 2026-08-28 13:13:25
-status: wip
 ---
 
 # Plan
