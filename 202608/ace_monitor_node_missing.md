@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fn.f2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fn.f2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fn.f2.md)
+- **COMMITS:**
+  - [965aa5c](https://github.com/sase-org/sase/commit/965aa5c5ec24921f35cc019842a415b94dbc0bdd)
+    — fix(ace): stamp finished_at on settled monitor nodes
+
 # Plan: Restore settled monitor nodes in the ACE Agents tab
 
 ## Symptom
