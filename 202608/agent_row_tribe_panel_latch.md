@@ -8,8 +8,6 @@ goal:
   fields.
 size: medium
 proposed_by: bbugyi200.athena.0fz
-create_time: 2026-08-29 08:15:18
-status: wip
 ---
 
 # Plan: Stop the Agents tab latching a pre-metadata row into the wrong tribe panel
