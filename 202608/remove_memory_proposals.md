@@ -11,18 +11,6 @@ size: medium
 proposed_by: bbugyi200.athena.0g5
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0g5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g5.md)
-  - [bbugyi200.athena.sase-vk.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vk.1/README.md)
-  - [bbugyi200.athena.sase-vk.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vk.2/README.md)
-- **COMMITS:**
-  - [1be5429](https://github.com/sase-org/sase/commit/1be5429ea9812ff722c94cd2f1103ffc9b6142da)
-    — feat(memory): make web descriptors tier-free
-  - [1791874](https://github.com/sase-org/sase/commit/179187499eb9df7fca11551ffe66afc9b4496297)
-    — feat(memory)\!: remove unused memory proposal path
-  - [b726d0a](https://github.com/sase-org/sase/commit/b726d0a18cf690c871b12b4bb56ef5d07652afeb)
-    — feat(memory): give agent docs a Memory Webs section
-
 # Plan: Remove the memory proposal path and apply the skill annotations
 
 ## Why
