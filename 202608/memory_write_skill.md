@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0g0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g0.md)
+- **COMMITS:**
+  - [80f389d](https://github.com/sase-org/sase/commit/80f389d746baddabe1bb1fc800bce86f3b8dbbd7)
+    — feat: add /sase_memory_write skill as the memory-edit gate
+
 # Plan: Add the `/sase_memory_write` skill
 
 ## Why
