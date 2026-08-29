@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fu
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fu](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fu.md)
+- **COMMITS:**
+  - [72a96a8](https://github.com/sase-org/sase/commit/72a96a801dbf8eeb6ee5b1459af94e9626ffb2ed)
+    — fix(ace): keep pending gate shells visible in the Agents tab
+
 # Plan: A pending gate shell is visible in ACE before anyone answers it
 
 ## The bug, and the exact reason for it
