@@ -7,8 +7,6 @@ goal:
   counts as authorization for memory edits.
 size: medium
 proposed_by: bbugyi200.athena.0g0
-create_time: 2026-08-29 08:37:43
-status: wip
 ---
 
 # Plan: Add the `/sase_memory_write` skill
