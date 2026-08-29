@@ -9,8 +9,6 @@ goal:
   and the tests.
 size: medium
 proposed_by: bbugyi200.athena.0g5
-create_time: 2026-08-29 10:27:39
-status: wip
 ---
 
 # Plan: Remove the memory proposal path and apply the skill annotations
