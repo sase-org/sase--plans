@@ -9,6 +9,30 @@ size: medium
 proposed_by: bbugyi200.athena.0fq
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fq.md)
+  - [bbugyi200.athena.0fs](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fs.md)
+  - [bbugyi200.athena.sase-vd.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.1/README.md)
+  - [bbugyi200.athena.sase-vd.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.2/README.md)
+  - [bbugyi200.athena.sase-vd.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.3/README.md)
+  - [bbugyi200.athena.sase-vd.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.4/README.md)
+  - [bbugyi200.athena.sase-vd.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.5/README.md)
+- **COMMITS:**
+  - [affc43a](https://github.com/sase-org/sase/commit/affc43a6fef74e33c1c3edfb6cc51b5a978e20af)
+    — docs(memory): apply AGENTS v2 \#a annotation trims
+  - [2a4c075](https://github.com/sase-org/sase/commit/2a4c075375bc331320fd1b7ad596c5d612274a21)
+    — docs(agents): align AGENTS v2 instruction annotations
+  - [8426315](https://github.com/sase-org/sase/commit/84263159f6499bf922e33ae58c7b4ce193e6698f)
+    — feat(git-setup): adopt the runner's numbered workspace claim
+  - [0235ff0](https://github.com/sase-org/sase/commit/0235ff059ad3e5e87156508fd10bf43f7dbcade6)
+    — feat(shells): pre-allocate VCS workspace on family follow-up launches
+  - [b7fcee9](https://github.com/sase-org/sase/commit/b7fcee9db595cebb6b5fcbc474898fab8c6595e8)
+    — feat(agent): rebind runner workspace identity
+  - [1a14630](https://github.com/sase-org/sase/commit/1a1463028a7619fa7bcd6ad3331ee640ac5f69c5)
+    — feat(workspace): skip VCS release on handoff and pid mismatch
+  - [6d88905](https://github.com/sase-org/sase/commit/6d889058c89a0318ad74f3eabede360c7580680f)
+    — feat(workspace): detect multi-workspace pid claims
+
 # Plan: Apply the `#a` annotations from the sase AGENTS v2 review
 
 The user annotated the rendered agent instruction file and asked that only the comments
