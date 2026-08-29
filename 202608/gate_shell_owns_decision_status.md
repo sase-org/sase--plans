@@ -9,6 +9,12 @@ size: small
 proposed_by: bbugyi200.athena.0g3
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g3.md)
+- **COMMITS:**
+  - [d432798](https://github.com/sase-org/sase/commit/d4327985d50f37797a4782bd98f29ed7bbb9bd99)
+    — fix(tui): make gate shells own decision statuses
+
 # Tale: The gate shell node owns its decision status, not the agent shell that created it
 
 ## Problem
