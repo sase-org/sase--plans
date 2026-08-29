@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.athena.0g2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g2.md)
+- **COMMITS:**
+  - [0dbc70d](https://github.com/sase-org/sase-core/commit/0dbc70d3186efde4c25b3d2899941a6878ff6da1)
+    — fix(directives): bound unterminated argument ranges
+
 # Plan: Bound unterminated directive argument bodies at the value, not the line
 
 ## 1. The Reported Bug
