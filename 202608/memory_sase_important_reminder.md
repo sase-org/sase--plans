@@ -8,8 +8,6 @@ goal:
   edited source and no committed drift.
 size: small
 proposed_by: bbugyi200.athena.0g6
-create_time: 2026-08-29 10:51:11
-status: wip
 ---
 
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
