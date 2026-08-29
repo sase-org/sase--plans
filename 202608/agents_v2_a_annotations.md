@@ -9,6 +9,15 @@ size: medium
 proposed_by: bbugyi200.athena.0fq
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-vd.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.1/README.md)
+  - [bbugyi200.athena.sase-vd.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.3/README.md)
+- **COMMITS:**
+  - [5e8e9ea](https://github.com/sase-org/sase-github/commit/5e8e9ea6a48b5b285a65d9cb1fa087f74d52b6b0)
+    — feat(gh-setup): adopt the runner's numbered workspace claim
+  - [f4663ae](https://github.com/sase-org/sase-github/commit/f4663ae526929b23378372005662c20b495bd0f7)
+    — feat(gh): mark runner-bound workspace allocations
+
 # Plan: Apply the `#a` annotations from the sase AGENTS v2 review
 
 The user annotated the rendered agent instruction file and asked that only the comments
