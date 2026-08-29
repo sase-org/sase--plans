@@ -9,12 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.0fq
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.sase-vd.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vd.3/README.md)
-- **COMMITS:**
-  - [4f16434](https://github.com/sase-org/sase-core/commit/4f16434b5a5be70711d4617ef9a164c4efa28905)
-    — fix(agent-launch): transfer workspace claim names
-
 # Plan: Apply the `#a` annotations from the sase AGENTS v2 review
 
 The user annotated the rendered agent instruction file and asked that only the comments
