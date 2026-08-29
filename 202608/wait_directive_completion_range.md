@@ -7,8 +7,6 @@ goal:
   directive argument body and for both the ACE prompt widget and the xprompt LSP.
 size: medium
 proposed_by: bbugyi200.athena.0g2
-create_time: 2026-08-29 09:19:22
-status: wip
 ---
 
 # Plan: Bound unterminated directive argument bodies at the value, not the line
