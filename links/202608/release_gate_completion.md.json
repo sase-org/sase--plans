@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/release_gate_completion.md",
+  "rows": [
+    {
+      "created_at": "2026-08-29T18:28:57Z",
+      "created_by": "sase-um.9.5.land",
+      "description": "Land agent closing parent epic sase-um.9: need its final acceptance/exit section",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-um.9.5.land",
+      "target_ref": "plan:202608/release_gate_completion.md",
+      "uses": 3
+    }
+  ],
+  "schema_version": 2
+}

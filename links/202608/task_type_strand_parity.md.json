@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/task_type_strand_parity.md",
+  "rows": [
+    {
+      "created_at": "2026-08-29T18:05:26Z",
+      "created_by": "sase-um.9.5.land",
+      "description": "Land agent sase-um.9.5: need the strand-parity design intent before changing generated task-type strand provenance rendering",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-um.9.5.land",
+      "target_ref": "plan:202608/task_type_strand_parity.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
