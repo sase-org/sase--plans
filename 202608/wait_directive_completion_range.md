@@ -9,6 +9,15 @@ size: medium
 proposed_by: bbugyi200.athena.0g2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g0.w0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g0.w0.md)
+  - [bbugyi200.athena.0g2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g2.md)
+- **COMMITS:**
+  - [9bc169e](https://github.com/sase-org/sase/commit/9bc169e6cf0ff2ad2e1e31ebd15be4d1c21b80fb)
+    — docs(memory): apply AGENTS v3 \#b repository reminder annotations
+  - [04c676f](https://github.com/sase-org/sase/commit/04c676f9c69427c6dd11901fdfb4bff069a3b149)
+    — test(directives): cover bounded wait completion ranges
+
 # Plan: Bound unterminated directive argument bodies at the value, not the line
 
 ## 1. The Reported Bug
