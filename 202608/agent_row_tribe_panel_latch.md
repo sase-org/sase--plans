@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.athena.0fz
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fz.md)
+- **COMMITS:**
+  - [17c465c](https://github.com/sase-org/sase/commit/17c465c9d706219323d95e02bc3d8fb7ed09a76f)
+    — fix(tui): keep nested agent rows in parent tribe
+
 # Plan: Stop the Agents tab latching a pre-metadata row into the wrong tribe panel
 
 ## 1. The Defect
