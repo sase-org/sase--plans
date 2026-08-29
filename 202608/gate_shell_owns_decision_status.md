@@ -7,8 +7,6 @@ goal:
   on the planner row and TALE APPROVED on the gate row and the family node.
 size: small
 proposed_by: bbugyi200.athena.0g3
-create_time: 2026-08-29 09:43:02
-status: wip
 ---
 
 # Tale: The gate shell node owns its decision status, not the agent shell that created it
