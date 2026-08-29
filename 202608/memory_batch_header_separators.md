@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0fx
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0fx](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fx.md)
+- **COMMITS:**
+  - [2069fce](https://github.com/sase-org/sase/commit/2069fcea0b78076ebfbf1cf071bdaecd0d8bc9e3)
+    — feat(memory): delimit batch Markdown section headers
+
 # Plan: Delimit memory batch section headers
 
 ## Intended behavior
