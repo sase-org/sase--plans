@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/status_strip.md",
+  "rows": [
+    {
+      "created_at": "2026-08-29T13:32:04Z",
+      "created_by": "0g3",
+      "description": "understand the gate-contract phase that governs which row owns a gate decision status",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0g3",
+      "target_ref": "plan:202608/status_strip.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
