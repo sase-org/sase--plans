@@ -7,8 +7,6 @@ goal:
   custom pending_status) instead of falling back to the dead planner's DONE.
 size: medium
 proposed_by: bbugyi200.athena.0fu
-create_time: 2026-08-29 06:09:49
-status: wip
 ---
 
 # Plan: A pending gate shell is visible in ACE before anyone answers it
