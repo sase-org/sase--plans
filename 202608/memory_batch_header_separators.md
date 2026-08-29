@@ -6,8 +6,6 @@ goal:
   with a leading blank line and a ten-dash header prefix.
 size: small
 proposed_by: bbugyi200.athena.0fx
-create_time: 2026-08-29 07:18:57
-status: wip
 ---
 
 # Plan: Delimit memory batch section headers
