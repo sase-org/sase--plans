@@ -11,6 +11,12 @@ size: small
 proposed_by: bbugyi200.athena.sase-vk.land.w2.f0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.sase-vk.land.w2.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.f0.md)
+- **COMMITS:**
+  - [cccacb9](https://github.com/sase-org/sase/commit/cccacb98b605766c96178506b14bd29d43b06e2f)
+    — docs(memory): reorder SASE memory bullets
+
 # Reorder The `SASE Memory` Bullets To Core → Reference → Memory Webs
 
 ## Goal
