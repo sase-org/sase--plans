@@ -10,6 +10,24 @@ size: small
 proposed_by: bbugyi200.athena.0g6
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g6.md)
+  - [bbugyi200.athena.sase-vs.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.1/README.md)
+  - [bbugyi200.athena.sase-vs.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.2/README.md)
+  - [bbugyi200.athena.sase-vs.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.3/README.md)
+  - [bbugyi200.athena.toobig-4l.read_log.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4l.read_log.0/README.md)
+- **COMMITS:**
+  - [0e47ef6](https://github.com/sase-org/sase/commit/0e47ef6482937cf35ae29529fcb69ba5b840765a)
+    — docs(memory): collapse repository reminders into one IMPORTANT paragraph
+  - [da1da7a](https://github.com/sase-org/sase/commit/da1da7aea46802e2f58e9fda6fac6c56788798e2)
+    — refactor(memory): split read log module
+  - [6e0e586](https://github.com/sase-org/sase/commit/6e0e5860b0bcf4e1b08a50e68a72c32c62e1c5bd)
+    — feat(plan-approval): stamp approval waits onto the tale coder successor prompt
+  - [9c5cbea](https://github.com/sase-org/sase/commit/9c5cbeac56ea753c88550e8095016f2c3a5a153b)
+    — feat(bead): add wait-spec parser and sase bead work --wait
+  - [2bf5164](https://github.com/sase-org/sase/commit/2bf51641d2aa1952c359f787b5f075e8dbe9b47e)
+    — feat(bead): thread wait spec through the host-owned epic launch
+
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
 ## Goal
