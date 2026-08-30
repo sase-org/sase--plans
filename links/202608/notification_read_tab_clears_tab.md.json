@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/notification_read_tab_clears_tab.md",
+  "rows": [
+    {
+      "created_at": "2026-08-30T15:13:28Z",
+      "created_by": "0gb--code",
+      "description": "Need the approved plan of record before implementing",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0gb--code",
+      "target_ref": "plan:202608/notification_read_tab_clears_tab.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
