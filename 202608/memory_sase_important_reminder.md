@@ -10,15 +10,6 @@ size: small
 proposed_by: bbugyi200.athena.0g6
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.0g6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g6.md)
-  - [bbugyi200.athena.toobig-4l.read_log.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4l.read_log.0/README.md)
-- **COMMITS:**
-  - [0e47ef6](https://github.com/sase-org/sase/commit/0e47ef6482937cf35ae29529fcb69ba5b840765a)
-    — docs(memory): collapse repository reminders into one IMPORTANT paragraph
-  - [da1da7a](https://github.com/sase-org/sase/commit/da1da7aea46802e2f58e9fda6fac6c56788798e2)
-    — refactor(memory): split read log module
-
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
 ## Goal
