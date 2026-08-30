@@ -11,6 +11,7 @@ proposed_by: bbugyi200.athena.sase-vk.land.w2
 
 - **AGENTS:**
   - [bbugyi200.athena.sase-vk.land.w2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.md)
+  - [bbugyi200.athena.sase-vw.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.1/README.md)
   - [bbugyi200.athena.sase-vw.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.2/README.md)
   - [bbugyi200.athena.toobig-4m.test_plan_approval_actions.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-4m.test_plan_approval_actions.0.md)
 - **COMMITS:**
@@ -20,6 +21,8 @@ proposed_by: bbugyi200.athena.sase-vk.land.w2
     — test(plan): split plan approval action tests under 500 lines
   - [ae83faa](https://github.com/sase-org/sase/commit/ae83faa2e020c5b9966badd44a0758b4cb271331)
     — feat(memory): add authored link scanner and resolver
+  - [7c8117b](https://github.com/sase-org/sase/commit/7c8117b17e92674f99f52d98f2a44ad5481f86b8)
+    — feat(memory): add link_reference and link_rendering frontmatter
 
 # Plan: Render Memory Webs as the final agent-instruction section
 
