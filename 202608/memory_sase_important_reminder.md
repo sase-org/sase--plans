@@ -10,6 +10,36 @@ size: small
 proposed_by: bbugyi200.athena.0g6
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0g6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g6.md)
+  - [bbugyi200.athena.sase-vs.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.1/README.md)
+  - [bbugyi200.athena.sase-vs.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.2/README.md)
+  - [bbugyi200.athena.sase-vs.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.3/README.md)
+  - [bbugyi200.athena.sase-vs.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.4/README.md)
+  - [bbugyi200.athena.sase-vs.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.5/README.md)
+  - [bbugyi200.athena.sase-vs.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.6/README.md)
+  - [bbugyi200.athena.sase-vs.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vs.land.md)
+  - [bbugyi200.athena.toobig-4l.read_log.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4l.read_log.0/README.md)
+- **COMMITS:**
+  - [0e47ef6](https://github.com/sase-org/sase/commit/0e47ef6482937cf35ae29529fcb69ba5b840765a)
+    — docs(memory): collapse repository reminders into one IMPORTANT paragraph
+  - [da1da7a](https://github.com/sase-org/sase/commit/da1da7aea46802e2f58e9fda6fac6c56788798e2)
+    — refactor(memory): split read log module
+  - [6e0e586](https://github.com/sase-org/sase/commit/6e0e5860b0bcf4e1b08a50e68a72c32c62e1c5bd)
+    — feat(plan-approval): stamp approval waits onto the tale coder successor prompt
+  - [9c5cbea](https://github.com/sase-org/sase/commit/9c5cbeac56ea753c88550e8095016f2c3a5a153b)
+    — feat(bead): add wait-spec parser and sase bead work --wait
+  - [2bf5164](https://github.com/sase-org/sase/commit/2bf51641d2aa1952c359f787b5f075e8dbe9b47e)
+    — feat(bead): thread wait spec through the host-owned epic launch
+  - [15be5ac](https://github.com/sase-org/sase/commit/15be5ac470cafd2f31ba03b511ae11b959c951d6)
+    — feat(plan): accept wait on tale and epic approval options
+  - [c507cea](https://github.com/sase-org/sase/commit/c507ceab9b2334268aeefda9a6272c838e33d677)
+    — feat(plan): add approval wait CLI
+  - [18fa499](https://github.com/sase-org/sase/commit/18fa499a3af9c4d941123f51aa0827c6ab0a68d6)
+    — feat(ace): add approval wait editor
+  - [c087df8](https://github.com/sase-org/sase/commit/c087df878c0bf6e2eb17ab3a899e6d4a1f6d7117)
+    — fix(completion): resync the CLI spec snapshot for plan approve --wait
+
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
 ## Goal
