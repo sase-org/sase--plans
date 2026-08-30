@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/memory_link_strategies.md",
+  "rows": [
+    {
+      "created_at": "2026-08-30T14:07:21Z",
+      "created_by": "sase-vw.2",
+      "description": "Need the design context for phase bead sase-vw.2",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-vw.2",
+      "target_ref": "plan:202608/memory_link_strategies.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
