@@ -8,15 +8,6 @@ size: small
 proposed_by: bbugyi200.athena.0gd
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.research.1e.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.cdx/README.md)
-  - [bbugyi200.athena.research.1e.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.cld/README.md)
-- **COMMITS:**
-  - [2c39995](https://github.com/sase-org/sase--research/commit/2c39995e2010ec040247a19f5e4ad7ee67e9a155)
-    — docs(research): critique memory strand supersession
-  - [f46ffa2](https://github.com/sase-org/sase--research/commit/f46ffa29ed44e4cfe02aaac88e9aa0374cf8714b)
-    — docs(research): critique memory strand supersession
-
 # Settled handoff gates must bucket as Running, not Done
 
 ## Goal
