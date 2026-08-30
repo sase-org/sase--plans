@@ -8,6 +8,21 @@ size: small
 proposed_by: bbugyi200.athena.0gd
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.1e.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.cdx/README.md)
+  - [bbugyi200.athena.research.1e.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.cld/README.md)
+  - [bbugyi200.athena.research.1e.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.final/README.md)
+  - [bbugyi200.athena.research.1e.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.image/README.md)
+- **COMMITS:**
+  - [2c39995](https://github.com/sase-org/sase--research/commit/2c39995e2010ec040247a19f5e4ad7ee67e9a155)
+    — docs(research): critique memory strand supersession
+  - [f46ffa2](https://github.com/sase-org/sase--research/commit/f46ffa29ed44e4cfe02aaac88e9aa0374cf8714b)
+    — docs(research): critique memory strand supersession
+  - [8102dc5](https://github.com/sase-org/sase--research/commit/8102dc5b8267bd2b95c22b3f0183abaa235f3152)
+    — docs(research): consolidate memory strand supersession critique
+  - [3a743d3](https://github.com/sase-org/sase--research/commit/3a743d3946a8dec32733a2e1a85b29c9bde4e4d8)
+    — feat(research): add superseding-memory-strands infographic
+
 # Settled handoff gates must bucket as Running, not Done
 
 ## Goal
