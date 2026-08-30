@@ -6,8 +6,6 @@ goal:
   instead of dropping into Done the moment the gate settles.
 size: small
 proposed_by: bbugyi200.athena.0gd
-create_time: 2026-08-30 11:27:47
-status: wip
 ---
 
 # Settled handoff gates must bucket as Running, not Done
