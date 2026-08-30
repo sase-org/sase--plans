@@ -9,15 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.sase-vk.land.w2
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.sase-vk.land.w2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.md)
-  - [bbugyi200.athena.toobig-4m.test_plan_approval_actions.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-4m.test_plan_approval_actions.0.md)
-- **COMMITS:**
-  - [93b005d](https://github.com/sase-org/sase/commit/93b005d9921f8430ef11af80ccd35dabcbf716c1)
-    — feat(amd): render Memory Webs as the final agent-instruction section
-  - [d2f6cb8](https://github.com/sase-org/sase/commit/d2f6cb8223ea97f6fe585320257cdcf4ae0825ed)
-    — test(plan): split plan approval action tests under 500 lines
-
 # Plan: Render Memory Webs as the final agent-instruction section
 
 ## Outcome and boundaries
