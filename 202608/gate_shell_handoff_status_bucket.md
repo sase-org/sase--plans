@@ -8,6 +8,12 @@ size: small
 proposed_by: bbugyi200.athena.0gd
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0gd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gd.md)
+- **COMMITS:**
+  - [fdb962c](https://github.com/sase-org/sase/commit/fdb962c13ab6827a5ca3b7c3aca3c0d94a5a261c)
+    — fix(tui): keep approved gate shells in the Running bucket
+
 # Settled handoff gates must bucket as Running, not Done
 
 ## Goal
