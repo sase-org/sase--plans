@@ -9,8 +9,6 @@ goal:
   committed drift.
 size: small
 proposed_by: bbugyi200.athena.sase-vk.land.w2.f0
-create_time: 2026-08-30 11:04:40
-status: wip
 ---
 
 # Reorder The `SASE Memory` Bullets To Core → Reference → Memory Webs
