@@ -9,12 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.sase-vk.land.w2
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.sase-vk.land.w2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.md)
-- **COMMITS:**
-  - [93b005d](https://github.com/sase-org/sase/commit/93b005d9921f8430ef11af80ccd35dabcbf716c1)
-    — feat(amd): render Memory Webs as the final agent-instruction section
-
 # Plan: Render Memory Webs as the final agent-instruction section
 
 ## Outcome and boundaries
