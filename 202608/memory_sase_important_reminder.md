@@ -10,15 +10,6 @@ size: small
 proposed_by: bbugyi200.athena.0g6
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.research.1d.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1d.cdx/README.md)
-  - [bbugyi200.athena.research.1d.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1d.cld/README.md)
-- **COMMITS:**
-  - [730508a](https://github.com/sase-org/sase--research/commit/730508a3446a250fb0a9cd3a5d5b46c199536a17)
-    — docs(research): add project rename naming research with ranked candidates
-  - [a2f655d](https://github.com/sase-org/sase--research/commit/a2f655debddb73d798b99f47ee32c6d7e5147b78)
-    — docs(research): evaluate replacement names for sase
-
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
 ## Goal
