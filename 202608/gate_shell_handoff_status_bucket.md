@@ -9,10 +9,10 @@ proposed_by: bbugyi200.athena.0gd
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.0gd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gd.md)
+  - [bbugyi200.athena.research.1e.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1e.cdx/README.md)
 - **COMMITS:**
-  - [fdb962c](https://github.com/sase-org/sase/commit/fdb962c13ab6827a5ca3b7c3aca3c0d94a5a261c)
-    — fix(tui): keep approved gate shells in the Running bucket
+  - [2c39995](https://github.com/sase-org/sase--research/commit/2c39995e2010ec040247a19f5e4ad7ee67e9a155)
+    — docs(research): critique memory strand supersession
 
 # Settled handoff gates must bucket as Running, not Done
 
