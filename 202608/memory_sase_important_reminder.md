@@ -17,6 +17,7 @@ proposed_by: bbugyi200.athena.0g6
   - [bbugyi200.athena.sase-vs.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.3/README.md)
   - [bbugyi200.athena.sase-vs.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.4/README.md)
   - [bbugyi200.athena.sase-vs.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.5/README.md)
+  - [bbugyi200.athena.sase-vs.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.6/README.md)
   - [bbugyi200.athena.toobig-4l.read_log.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4l.read_log.0/README.md)
 - **COMMITS:**
   - [0e47ef6](https://github.com/sase-org/sase/commit/0e47ef6482937cf35ae29529fcb69ba5b840765a)
@@ -33,6 +34,8 @@ proposed_by: bbugyi200.athena.0g6
     — feat(plan): accept wait on tale and epic approval options
   - [c507cea](https://github.com/sase-org/sase/commit/c507ceab9b2334268aeefda9a6272c838e33d677)
     — feat(plan): add approval wait CLI
+  - [18fa499](https://github.com/sase-org/sase/commit/18fa499a3af9c4d941123f51aa0827c6ab0a68d6)
+    — feat(ace): add approval wait editor
 
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
