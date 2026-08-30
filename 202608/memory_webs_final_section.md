@@ -15,6 +15,7 @@ proposed_by: bbugyi200.athena.sase-vk.land.w2
   - [bbugyi200.athena.sase-vw.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.2/README.md)
   - [bbugyi200.athena.sase-vw.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.3/README.md)
   - [bbugyi200.athena.sase-vw.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.4/README.md)
+  - [bbugyi200.athena.sase-vw.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.5/README.md)
   - [bbugyi200.athena.sase-vw.6](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.6/README.md)
   - [bbugyi200.athena.toobig-4m.test_plan_approval_actions.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-4m.test_plan_approval_actions.0.md)
 - **COMMITS:**
@@ -32,6 +33,8 @@ proposed_by: bbugyi200.athena.sase-vk.land.w2
     — feat(memory): render Linked References for show and read
   - [19a77ee](https://github.com/sase-org/sase/commit/19a77eea96af28f13f973f191cc0415afd1fcf3d)
     — feat(memory): emit Related Task Types links on generated strands
+  - [70dd1da](https://github.com/sase-org/sase/commit/70dd1da6174fe18fa264d5cbf1247daaaf88e8df)
+    — feat(memory): declare existing web link strategies
 
 # Plan: Render Memory Webs as the final agent-instruction section
 
