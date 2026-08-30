@@ -9,27 +9,6 @@ size: medium
 proposed_by: bbugyi200.athena.sase-vk.land.w2
 ---
 
-- **AGENTS:**
-  - [bbugyi200.athena.sase-vk.land.w2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.md)
-  - [bbugyi200.athena.sase-vw.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.1/README.md)
-  - [bbugyi200.athena.sase-vw.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.2/README.md)
-  - [bbugyi200.athena.sase-vw.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.3/README.md)
-  - [bbugyi200.athena.sase-vw.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vw.4/README.md)
-  - [bbugyi200.athena.toobig-4m.test_plan_approval_actions.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-4m.test_plan_approval_actions.0.md)
-- **COMMITS:**
-  - [93b005d](https://github.com/sase-org/sase/commit/93b005d9921f8430ef11af80ccd35dabcbf716c1)
-    — feat(amd): render Memory Webs as the final agent-instruction section
-  - [d2f6cb8](https://github.com/sase-org/sase/commit/d2f6cb8223ea97f6fe585320257cdcf4ae0825ed)
-    — test(plan): split plan approval action tests under 500 lines
-  - [ae83faa](https://github.com/sase-org/sase/commit/ae83faa2e020c5b9966badd44a0758b4cb271331)
-    — feat(memory): add authored link scanner and resolver
-  - [7c8117b](https://github.com/sase-org/sase/commit/7c8117b17e92674f99f52d98f2a44ad5481f86b8)
-    — feat(memory): add link_reference and link_rendering frontmatter
-  - [90e3a38](https://github.com/sase-org/sase/commit/90e3a385c526e7659b93b29a5ce599d1e6deade6)
-    — feat(memory): fold authored links into the closure walk
-  - [40cd8ce](https://github.com/sase-org/sase/commit/40cd8ce6eaf4204f7cf55eab58193841f98a911e)
-    — feat(memory): render Linked References for show and read
-
 # Plan: Render Memory Webs as the final agent-instruction section
 
 ## Outcome and boundaries
