@@ -7,8 +7,6 @@ goal:
   documents or webless roots.
 size: medium
 proposed_by: bbugyi200.athena.sase-vk.land.w2
-create_time: 2026-08-30 09:07:59
-status: wip
 ---
 
 # Plan: Render Memory Webs as the final agent-instruction section
