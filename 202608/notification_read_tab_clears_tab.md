@@ -9,6 +9,12 @@ size: small
 proposed_by: bbugyi200.athena.0gb
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0gb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gb.md)
+- **COMMITS:**
+  - [0fd1cc6](https://github.com/sase-org/sase/commit/0fd1cc6c180b160bd4954a40ce6d07a62f270dfd)
+    — fix(ace): clear the notification tab after R marks it read
+
 # Plan: Clear the notification tab in place when `R` marks it read
 
 ## Problem
