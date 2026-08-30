@@ -12,6 +12,7 @@ proposed_by: bbugyi200.athena.0g6
 
 - **AGENTS:**
   - [bbugyi200.athena.0g6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g6.md)
+  - [bbugyi200.athena.sase-vs.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.1/README.md)
   - [bbugyi200.athena.sase-vs.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-vs.2/README.md)
   - [bbugyi200.athena.toobig-4l.read_log.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4l.read_log.0/README.md)
 - **COMMITS:**
@@ -21,6 +22,8 @@ proposed_by: bbugyi200.athena.0g6
     — refactor(memory): split read log module
   - [6e0e586](https://github.com/sase-org/sase/commit/6e0e5860b0bcf4e1b08a50e68a72c32c62e1c5bd)
     — feat(plan-approval): stamp approval waits onto the tale coder successor prompt
+  - [9c5cbea](https://github.com/sase-org/sase/commit/9c5cbeac56ea753c88550e8095016f2c3a5a153b)
+    — feat(bead): add wait-spec parser and sase bead work --wait
 
 # Collapse The `sase.md` Repository Reminders Into One `**IMPORTANT**` Paragraph
 
