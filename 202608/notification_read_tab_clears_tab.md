@@ -7,8 +7,6 @@ goal:
   panel to see that the tab is gone.
 size: small
 proposed_by: bbugyi200.athena.0gb
-create_time: 2026-08-30 11:11:35
-status: wip
 ---
 
 # Plan: Clear the notification tab in place when `R` marks it read
