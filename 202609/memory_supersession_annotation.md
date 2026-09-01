@@ -10,6 +10,12 @@ size: medium
 proposed_by: bbugyi200.apollo.2
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.2.md)
+- **COMMITS:**
+  - [ae7ca22](https://github.com/sase-org/sase/commit/ae7ca2226f473252824141f78ae1f21151b53df0)
+    — feat(memory): annotate superseded memory strands
+
 <!-- sase:links:start -->
 
 ## Links
