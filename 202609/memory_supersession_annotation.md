@@ -8,8 +8,6 @@ goal:
   corpus's one real supersession is finally marked.
 size: medium
 proposed_by: bbugyi200.apollo.2
-create_time: 2026-09-01 17:20:17
-status: wip
 ---
 
 <!-- sase:links:start -->
