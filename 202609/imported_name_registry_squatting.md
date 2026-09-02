@@ -11,6 +11,12 @@ size: medium
 proposed_by: bbugyi200.apollo.7
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.7.md)
+- **COMMITS:**
+  - [1bf114e](https://github.com/sase-org/sase/commit/1bf114e4f74cb46facee261146c63383b68e82bf)
+    — fix(agent-names): stop imported registry entries from squatting local namespaces
+
 # Fix Imported Registry Entries Squatting Local Agent Namespaces (Xprompt Swarm NameCollisionError)
 
 ## Problem
