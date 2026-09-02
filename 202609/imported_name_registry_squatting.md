@@ -9,8 +9,6 @@ goal:
   allocation loop."
 size: medium
 proposed_by: bbugyi200.apollo.7
-create_time: 2026-09-02 14:04:37
-status: wip
 ---
 
 # Fix Imported Registry Entries Squatting Local Agent Namespaces (Xprompt Swarm NameCollisionError)
