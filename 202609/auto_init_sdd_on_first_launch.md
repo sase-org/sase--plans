@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.6.f0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.6.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.6.f0.md)
+- **COMMITS:**
+  - [58d3ed7](https://github.com/sase-org/sase/commit/58d3ed746e37f1f02c19f0d4e4db95f8ef7dece9)
+    — feat(sdd): auto-connect existing sidecar stores on first launch
+
 # Plan: Auto-Connect The SDD Store When A Project Launches Its First Agent On A Machine
 
 ## Problem
