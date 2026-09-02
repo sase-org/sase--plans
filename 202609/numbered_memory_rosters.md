@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.apollo.4
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.4.md)
+- **COMMITS:**
+  - [8b0c654](https://github.com/sase-org/sase/commit/8b0c65476b9cb9326221122d87a221f2b495d4d4)
+    — feat(memory): render memory rosters as ordered lists
+
 # Numbered Memory Rosters And A Numbered Reference Memory Section
 
 ## Goal
