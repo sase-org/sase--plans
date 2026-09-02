@@ -7,8 +7,6 @@ goal:
   instead of one H3 subsection each.
 size: medium
 proposed_by: bbugyi200.apollo.4
-create_time: 2026-09-02 07:49:22
-status: wip
 ---
 
 # Numbered Memory Rosters And A Numbered Reference Memory Section
