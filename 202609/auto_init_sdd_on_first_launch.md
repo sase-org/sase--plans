@@ -7,8 +7,6 @@ goal:
   the user to run `sase repo init`.
 size: medium
 proposed_by: bbugyi200.kellys_mbp.6.f0
-create_time: 2026-09-02 15:30:34
-status: wip
 ---
 
 # Plan: Auto-Connect The SDD Store When A Project Launches Its First Agent On A Machine
