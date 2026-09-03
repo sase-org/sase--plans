@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/updates_one_list.md",
+  "rows": [
+    {
+      "created_at": "2026-09-03T18:23:42Z",
+      "created_by": "sase-w0.2",
+      "description": "Implement the approved Updates tab one-list plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-w0.2",
+      "target_ref": "plan:202609/updates_one_list.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/unified_updates_tab_1.md",
+  "rows": [
+    {
+      "created_at": "2026-09-03T18:24:29Z",
+      "created_by": "sase-w0.2",
+      "description": "Need the epic list-phase section and cross-cutting constraints before implementing sase-w0.2",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-w0.2",
+      "target_ref": "plan:202609/unified_updates_tab_1.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
