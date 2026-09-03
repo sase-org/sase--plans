@@ -12,8 +12,6 @@ goal:
   under `src/`."
 proposed_by: bbugyi200.apollo.sase-w0.2
 bead: sase-w0.2
-create_time: 2026-09-03 14:22:11
-status: wip
 ---
 
 - **PARENT:** [202609/unified_updates_tab_1.md](unified_updates_tab_1.md)
