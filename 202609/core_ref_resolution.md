@@ -14,6 +14,11 @@ bead: sase-w3.1
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
 - **BEAD:**
   [sase-w3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w3/sase-w3.1.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w3.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w3.1.md)
+- **COMMITS:**
+  - [8c3e7b6](https://github.com/sase-org/sase/commit/8c3e7b6bffd9f518ec33ce1698f717b69a49a394)
+    — feat: use core artifact row resolution
 
 # Canonical Ref -> Row Resolution Rules In sase-core
 
