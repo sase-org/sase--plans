@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.apollo.c
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.c](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.c.md)
+- **COMMITS:**
+  - [d60eecd](https://github.com/sase-org/sase/commit/d60eecd87a2d19bd8ac4d7560d58e8bef38af1f4)
+    — feat(memory): template chezmoi home AGENTS.md H1 per hostname
+
 # Chezmoi-Templated Machine-Specific `memory.h1_title`
 
 ## Problem
