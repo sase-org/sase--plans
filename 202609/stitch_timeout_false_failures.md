@@ -13,6 +13,7 @@ proposed_by: bbugyi200.kellys_mbp.j.f0
   - [bbugyi200.kellys_mbp.research.3.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.cdx/README.md)
   - [bbugyi200.kellys_mbp.research.3.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.cld/README.md)
   - [bbugyi200.kellys_mbp.research.3.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.final/README.md)
+  - [bbugyi200.kellys_mbp.research.4.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.4.cdx/README.md)
 - **COMMITS:**
   - [4aba47c](https://github.com/sase-org/sase--research/commit/4aba47cde707987998fb776b3e8f57cc08f9b1ec)
     — docs(research): analyze a ,X kill-and-edit for the last launched agent
@@ -20,6 +21,8 @@ proposed_by: bbugyi200.kellys_mbp.j.f0
     — docs(research): assess last-launch kill-and-edit
   - [643120e](https://github.com/sase-org/sase--research/commit/643120e383b37a7622b08acbc803e2f515fcab29)
     — docs(research): consolidate agents-tab kill-last-launch keymap research
+  - [72ac1a6](https://github.com/sase-org/sase--research/commit/72ac1a66b0ca00be2ba9ed96ddcbfaea1b53ca0b)
+    — docs(research): recommend bulk project onboarding UX
 
 # Stop failing agent runs whose commit landed before a stitch timeout
 
