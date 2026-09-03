@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.j.f0
 ---
 
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.j.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.j.f0.md)
+- **COMMITS:**
+  - [ad1da7f](https://github.com/sase-org/sase/commit/ad1da7fc2bcb564924eda094ffa7353396103d57)
+    — fix(finalizers): rescue stitch timeouts after the commit already landed
+
 # Stop failing agent runs whose commit landed before a stitch timeout
 
 ## Problem
