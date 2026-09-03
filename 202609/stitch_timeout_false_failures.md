@@ -10,10 +10,16 @@ proposed_by: bbugyi200.kellys_mbp.j.f0
 ---
 
 - **AGENTS:**
-  - [bbugyi200.kellys_mbp.j.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.j.f0.md)
+  - [bbugyi200.kellys_mbp.research.3.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.cdx/README.md)
+  - [bbugyi200.kellys_mbp.research.3.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.cld/README.md)
+  - [bbugyi200.kellys_mbp.research.3.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.final/README.md)
 - **COMMITS:**
-  - [ad1da7f](https://github.com/sase-org/sase/commit/ad1da7fc2bcb564924eda094ffa7353396103d57)
-    — fix(finalizers): rescue stitch timeouts after the commit already landed
+  - [4aba47c](https://github.com/sase-org/sase--research/commit/4aba47cde707987998fb776b3e8f57cc08f9b1ec)
+    — docs(research): analyze a ,X kill-and-edit for the last launched agent
+  - [05aa21f](https://github.com/sase-org/sase--research/commit/05aa21fd939ca983f56e9bad762668bca125b8b3)
+    — docs(research): assess last-launch kill-and-edit
+  - [643120e](https://github.com/sase-org/sase--research/commit/643120e383b37a7622b08acbc803e2f515fcab29)
+    — docs(research): consolidate agents-tab kill-last-launch keymap research
 
 # Stop failing agent runs whose commit landed before a stitch timeout
 
