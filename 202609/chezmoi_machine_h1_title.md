@@ -247,3 +247,16 @@ files, so the Rust-core boundary is not crossed.
 - Regenerating the live chezmoi source: after this lands, the next `sase memory init`
   run on any machine (with the updated sase installed and the chezmoi repo pulled)
   produces `AGENTS.md.tmpl` + templated shims and deploys per-machine titles.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                            | Why                                                                  | Uses |
+| -------- | ----------------------------------- | -------------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.apollo.c--code][1] | prompt reference @plan:202609/chezmoi_machine_h1_title.md            |    1 |
+| read-by  | [agent:c--code][1]                  | Implement the approved chezmoi machine-specific memory.h1_title plan |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.c.md
+
+<!-- sase:referenced-by:end -->

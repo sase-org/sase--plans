@@ -11,6 +11,17 @@
       "source_ref": "agent:c--code",
       "target_ref": "plan:202609/chezmoi_machine_h1_title.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-03T20:42:43Z",
+      "created_by": "bbugyi200.apollo.c--code",
+      "description": "prompt reference @plan:202609/chezmoi_machine_h1_title.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.apollo.c--code",
+      "target_ref": "plan:202609/chezmoi_machine_h1_title.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
