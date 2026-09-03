@@ -10,9 +10,12 @@ proposed_by: bbugyi200.kellys_mbp.k
 
 - **AGENTS:**
   - [bbugyi200.kellys_mbp.research.5.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.cdx/README.md)
+  - [bbugyi200.kellys_mbp.research.5.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.cld/README.md)
 - **COMMITS:**
   - [e1ab151](https://github.com/sase-org/sase--research/commit/e1ab1512fa2131d2fb22149b514c5622ec83efff)
     — docs(research): evaluate cross-machine agent control
+  - [00a909c](https://github.com/sase-org/sase--research/commit/00a909cea32ffd360df8542e244742efc28ca867)
+    — docs(research): evaluate cross-machine agent dispatch over the tailnet
 
 # Enable the bob vault-sync launch service on apollo
 
