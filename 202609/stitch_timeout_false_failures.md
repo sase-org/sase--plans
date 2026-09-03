@@ -7,8 +7,6 @@ goal:
   itself is raised so slower machines stop hitting it in the first place.
 size: medium
 proposed_by: bbugyi200.kellys_mbp.j.f0
-create_time: 2026-09-03 15:43:20
-status: wip
 ---
 
 # Stop failing agent runs whose commit landed before a stitch timeout
