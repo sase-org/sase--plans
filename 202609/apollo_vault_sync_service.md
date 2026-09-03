@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.k
 ---
 
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.research.5.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.cdx/README.md)
+- **COMMITS:**
+  - [e1ab151](https://github.com/sase-org/sase--research/commit/e1ab1512fa2131d2fb22149b514c5622ec83efff)
+    — docs(research): evaluate cross-machine agent control
+
 # Enable the bob vault-sync launch service on apollo
 
 ## Goal
