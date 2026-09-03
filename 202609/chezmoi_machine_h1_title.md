@@ -7,8 +7,6 @@ goal:
   their own memory.h1_title values.
 size: medium
 proposed_by: bbugyi200.apollo.c
-create_time: 2026-09-03 14:49:45
-status: wip
 ---
 
 # Chezmoi-Templated Machine-Specific `memory.h1_title`
