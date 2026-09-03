@@ -17,6 +17,11 @@ bead: sase-w0.2
 - **PARENT:** [202609/unified_updates_tab_1.md](unified_updates_tab_1.md)
 - **BEAD:**
   [sase-w0.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w0/sase-w0.2.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w0.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w0.2.md)
+- **COMMITS:**
+  - [4c1c7b2](https://github.com/sase-org/sase/commit/4c1c7b24ef396eef3973edaba33c0c9ce5ecc6d6)
+    — feat(ace): merge Updates tab into one scoped inventory list
 
 # Plan: One list, domain sections, and the scope filter
 
