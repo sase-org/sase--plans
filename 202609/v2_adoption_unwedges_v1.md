@@ -17,6 +17,11 @@ bead: sase-w2.4
 - **PARENT:** [202609/athena_agent_sync_repair.md](athena_agent_sync_repair.md)
 - **BEAD:**
   [sase-w2.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w2/sase-w2.4.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w2.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w2.4.md)
+- **COMMITS:**
+  - [bdd2ead](https://github.com/sase-org/sase/commit/bdd2eadcf65b84d467ce26cfae34f11f2fb67fee)
+    — feat(agents-sync): evidence-backed v1-to-v2 adoption unwedges blocked machines
 
 # Evidence-Backed v1-to-v2 Adoption Unwedges Blocked Machines
 
