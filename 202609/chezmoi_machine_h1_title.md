@@ -9,18 +9,6 @@ size: medium
 proposed_by: bbugyi200.apollo.c
 ---
 
-- **AGENTS:**
-  - [bbugyi200.apollo.research.0.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.research.0.cdx/README.md)
-  - [bbugyi200.apollo.research.0.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.research.0.cld/README.md)
-  - [bbugyi200.apollo.research.0.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.research.0.final/README.md)
-- **COMMITS:**
-  - [904e7b9](https://github.com/sase-org/sase--research/commit/904e7b998c72660c3781b82b4e8ad938047c9557)
-    — docs(research): design admin center project init flow
-  - [7db292a](https://github.com/sase-org/sase--research/commit/7db292a53a3faa807d21d0945323377883c5995d)
-    — docs(research): add UX research for running sase init from the Projects tab
-  - [a4333c6](https://github.com/sase-org/sase--research/commit/a4333c6902566d49ee58139fd39df07527f49041)
-    — docs(research): consolidate Admin Center Projects-tab init UX research
-
 # Chezmoi-Templated Machine-Specific `memory.h1_title`
 
 ## Problem
