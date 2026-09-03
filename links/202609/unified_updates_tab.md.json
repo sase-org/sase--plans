@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/unified_updates_tab.md",
+  "rows": [
+    {
+      "created_at": "2026-09-03T10:50:26Z",
+      "created_by": "5",
+      "description": "consolidated research this plan implements, with the deviations noted in the plan body",
+      "origin": "manual",
+      "relation": "derives-from",
+      "schema_version": 2,
+      "source_ref": "plan:202609/unified_updates_tab.md",
+      "target_ref": "research:202609/updates_tab_unified_inventory/updates_tab_unified_inventory.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
