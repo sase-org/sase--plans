@@ -9,6 +9,12 @@ size: medium
 proposed_by: bbugyi200.apollo.c
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.research.0.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.research.0.cdx/README.md)
+- **COMMITS:**
+  - [904e7b9](https://github.com/sase-org/sase--research/commit/904e7b998c72660c3781b82b4e8ad938047c9557)
+    — docs(research): design admin center project init flow
+
 # Chezmoi-Templated Machine-Specific `memory.h1_title`
 
 ## Problem
