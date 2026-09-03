@@ -9,12 +9,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.j.f0
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.research.3.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.3.cld/README.md)
-- **COMMITS:**
-  - [4aba47c](https://github.com/sase-org/sase--research/commit/4aba47cde707987998fb776b3e8f57cc08f9b1ec)
-    — docs(research): analyze a ,X kill-and-edit for the last launched agent
-
 # Stop failing agent runs whose commit landed before a stitch timeout
 
 ## Problem
