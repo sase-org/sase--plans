@@ -9,8 +9,6 @@ goal:
   facade with no TUI behavior regression and the Class A identity gaps closed.
 proposed_by: bbugyi200.apollo.sase-w3.1
 bead: sase-w3.1
-create_time: 2026-09-03 15:49:02
-status: wip
 ---
 
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
