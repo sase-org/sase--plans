@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/stitch_timeout_false_failures.md",
+  "rows": [
+    {
+      "created_at": "2026-09-04T10:51:48Z",
+      "created_by": "research.6.cld",
+      "description": "Research prior work on stitch_timeout agent failures to avoid duplicating the fix",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.6.cld",
+      "target_ref": "plan:202609/stitch_timeout_false_failures.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
