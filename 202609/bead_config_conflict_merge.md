@@ -6,8 +6,6 @@ goal:
   epic sase-wh's diverged store can integrate, relocate, and launch.
 size: medium
 proposed_by: bbugyi200.apollo.f
-create_time: 2026-09-04 09:37:16
-status: wip
 ---
 
 # Plan: Merge `config.json` `next_counter` conflicts in the bead conflict resolver
