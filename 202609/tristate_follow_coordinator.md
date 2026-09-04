@@ -12,6 +12,11 @@ bead: sase-w3.3
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
 - **BEAD:**
   [sase-w3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w3/sase-w3.3.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w3.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w3.3.md)
+- **COMMITS:**
+  - [82dc1e2](https://github.com/sase-org/sase/commit/82dc1e2246875a66a8084b79d62baed734a2728a)
+    — feat(ace): tri-state link-follow coordinator for artifact panes (sase-w3.3)
 
 # Complete tri-state artifact-link follows
 
