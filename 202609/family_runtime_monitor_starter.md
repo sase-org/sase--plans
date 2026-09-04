@@ -9,13 +9,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.q
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.q](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.q.md)
-  - [bbugyi200.kellys_mbp.s](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.s/README.md)
-- **COMMITS:**
-  - [43fe900](https://github.com/sase-org/sase/commit/43fe900186cc988f117cee88a09dd80f6579150d)
-    — fix(ace): widen Procs tab K kill guard to act or explain
-
 # Fix: family total runtime drops agents that started monitors
 
 ## Problem
