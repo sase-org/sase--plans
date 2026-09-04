@@ -9,8 +9,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.apollo.sase-wn.5
 bead: sase-wn.5
-create_time: 2026-09-04 12:57:50
-status: wip
 ---
 
 - **PARENT:** [202609/sase_idle_cpu_diet.md](sase_idle_cpu_diet.md)
