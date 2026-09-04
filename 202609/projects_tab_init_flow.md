@@ -11,8 +11,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.apollo.sase-wm.2
 bead: sase-wm.2
-create_time: 2026-09-04 18:17:10
-status: wip
 ---
 
 - **PARENT:**
