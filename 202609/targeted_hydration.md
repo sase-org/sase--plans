@@ -12,6 +12,11 @@ bead: sase-w3.7
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
 - **BEAD:**
   [sase-w3.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w3/sase-w3.7.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w3.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w3.7.md)
+- **COMMITS:**
+  - [ae196a3](https://github.com/sase-org/sase/commit/ae196a367bf2f0a48533ce3af48e735c73ee44ff)
+    — feat(ace): add targeted hydration for artifact link-follow panes
 
 # Targeted hydration for never-fetched artifact rows
 
