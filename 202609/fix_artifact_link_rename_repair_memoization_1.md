@@ -10,12 +10,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.m
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.m.md)
-- **COMMITS:**
-  - [b8f62f1](https://github.com/sase-org/sase/commit/b8f62f182d66656b62219041907ac2d16278df33)
-    — fix(sdd): memoize artifact-link rename repair and honor chop deadline
-
 # Plan: Fix the `artifact_link_backfill` chop's per-ref rename-scan loop (closes sase-u9)
 
 ## 1. The symptom
