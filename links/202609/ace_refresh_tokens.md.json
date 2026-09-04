@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/ace_refresh_tokens.md",
+  "rows": [
+    {
+      "created_at": "2026-09-04T17:00:14Z",
+      "created_by": "sase-wn.5",
+      "description": "Need the approved plan to implement ACE refresh tokens",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-wn.5",
+      "target_ref": "plan:202609/ace_refresh_tokens.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
