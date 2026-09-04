@@ -10,12 +10,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.m
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.m.md)
-- **COMMITS:**
-  - [e8bfaec](https://github.com/sase-org/sase--research/commit/e8bfaec0d6a3212e702d865d8ead3f6d96ce2267)
-    — chore(artifact-links): persist repaired rename indexes
-
 # Plan: Fix the `artifact_link_backfill` chop's per-ref rename-scan loop (closes sase-u9)
 
 ## 1. The symptom
