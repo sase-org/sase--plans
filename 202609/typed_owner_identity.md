@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.apollo.sase-w2.6
 bead: sase-w2.6
-create_time: 2026-09-03 14:24:00
-status: wip
 ---
 
 - **PARENT:** [202609/athena_agent_sync_repair.md](athena_agent_sync_repair.md)
