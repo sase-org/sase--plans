@@ -10,18 +10,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.m
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.m.md)
-  - [bbugyi200.kellys_mbp.research.6.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.6.cdx/README.md)
-  - [bbugyi200.kellys_mbp.research.6.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.6.cld/README.md)
-- **COMMITS:**
-  - [e8bfaec](https://github.com/sase-org/sase--research/commit/e8bfaec0d6a3212e702d865d8ead3f6d96ce2267)
-    — chore(artifact-links): persist repaired rename indexes
-  - [c2c26bf](https://github.com/sase-org/sase--research/commit/c2c26bf42d90a5ebc30d597241021a4fded5a47b)
-    — docs(research): analyze stitch timeout reliability
-  - [b28663c](https://github.com/sase-org/sase--research/commit/b28663cc63bf2af9b2fcf489a7c791d984829a7f)
-    — docs(research): diagnose stitch_timeout agent failures and recommend a fix
-
 # Plan: Fix the `artifact_link_backfill` chop's per-ref rename-scan loop (closes sase-u9)
 
 ## 1. The symptom
