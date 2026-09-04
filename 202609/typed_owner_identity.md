@@ -12,6 +12,11 @@ bead: sase-w2.6
 - **PARENT:** [202609/athena_agent_sync_repair.md](athena_agent_sync_repair.md)
 - **BEAD:**
   [sase-w2.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w2/sase-w2.6.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w2.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w2.6.md)
+- **COMMITS:**
+  - [f4032c5](https://github.com/sase-org/sase/commit/f4032c55d73694a137cc2ef5d3276870abb996a1)
+    — feat(agent): wire typed owner identity through SASE
 
 # Plan: Typed owner-aware agent identity
 
