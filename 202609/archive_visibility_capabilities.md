@@ -12,6 +12,11 @@ bead: sase-w2.7
 - **PARENT:** [202609/athena_agent_sync_repair.md](athena_agent_sync_repair.md)
 - **BEAD:**
   [sase-w2.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w2/sase-w2.7.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w2.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w2.7.md)
+- **COMMITS:**
+  - [b1c108f](https://github.com/sase-org/sase/commit/b1c108fd7941c413faffbedb58331543ac7f4405)
+    — feat(agent): add archive visibility capabilities
 
 # Immutable agent archive, local visibility, and honest capabilities
 
