@@ -8,22 +8,6 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.k
 ---
 
-- **AGENTS:**
-  - [bbugyi200.kellys_mbp.research.5.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.cdx/README.md)
-  - [bbugyi200.kellys_mbp.research.5.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.cld/README.md)
-  - [bbugyi200.kellys_mbp.research.5.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.final/README.md)
-  - [bbugyi200.kellys_mbp.research.5.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.research.5.image/README.md)
-- **COMMITS:**
-  - [e1ab151](https://github.com/sase-org/sase--research/commit/e1ab1512fa2131d2fb22149b514c5622ec83efff)
-    — docs(research): evaluate cross-machine agent control
-  - [00a909c](https://github.com/sase-org/sase--research/commit/00a909cea32ffd360df8542e244742efc28ca867)
-    — docs(research): evaluate cross-machine agent dispatch over the tailnet
-  - [ac378cb](https://github.com/sase-org/sase--research/commit/ac378cb74f28e6c3847a47c8d583cbc1dfca342e)
-    — docs(research): consolidate cross-machine agent fleet research into
-    tailnet_agent_fleet
-  - [ebbc42b](https://github.com/sase-org/sase--research/commit/ebbc42b7ffe8ccb214bbab81182faf594d67bfe3)
-    — feat(research): add tailnet fleet infographic
-
 # Enable the bob vault-sync launch service on apollo
 
 ## Goal
