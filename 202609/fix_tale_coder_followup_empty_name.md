@@ -6,8 +6,6 @@ goal:
   sentinels no longer abort family-attach resolution.
 size: small
 proposed_by: bbugyi200.kellys_mbp.t
-create_time: 2026-09-04 12:57:33
-status: wip
 ---
 
 # Fix approved tale plans never launching their coder agent (EmptyAgentName regression)
