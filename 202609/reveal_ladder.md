@@ -18,6 +18,11 @@ bead: sase-w3.4
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
 - **BEAD:**
   [sase-w3.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w3/sase-w3.4.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-w3.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-w3.4.md)
+- **COMMITS:**
+  - [0f66320](https://github.com/sase-org/sase/commit/0f66320dffd890e83975d016e0d18c8b2e4d5b39)
+    — feat(tui): add host-owned artifact link reveal ladder
 
 # Phase sase-w3.4 — The Generic Host-Owned Reveal Ladder
 
