@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/fix_artifact_link_rename_repair_memoization_1.md",
+  "rows": [
+    {
+      "created_at": "2026-09-04T09:22:52Z",
+      "created_by": "m--code",
+      "description": "Need the approved plan to implement artifact link rename repair memoization",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:m--code",
+      "target_ref": "plan:202609/fix_artifact_link_rename_repair_memoization_1.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
