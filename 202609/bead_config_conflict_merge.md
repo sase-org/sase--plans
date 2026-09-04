@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.apollo.f
 ---
 
+- **AGENTS:**
+  - [bbugyi200.apollo.f](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.f.md)
+- **COMMITS:**
+  - [dfcc32b](https://github.com/sase-org/sase/commit/dfcc32b87f4959fe4afa8bfe46ba7702e56153e7)
+    — fix(beads): merge next_counter-only config.json store conflicts
+
 # Plan: Merge `config.json` `next_counter` conflicts in the bead conflict resolver
 
 ## Problem
