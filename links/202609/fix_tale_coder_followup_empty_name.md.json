@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/fix_tale_coder_followup_empty_name.md",
+  "rows": [
+    {
+      "created_at": "2026-09-04T17:01:14Z",
+      "created_by": "v",
+      "description": "Implementing the approved tale plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:v",
+      "target_ref": "plan:202609/fix_tale_coder_followup_empty_name.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
