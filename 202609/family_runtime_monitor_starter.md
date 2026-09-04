@@ -7,8 +7,6 @@ goal:
   pass-through semantics stay unchanged.
 size: medium
 proposed_by: bbugyi200.kellys_mbp.q
-create_time: 2026-09-04 12:32:39
-status: wip
 ---
 
 # Fix: family total runtime drops agents that started monitors
