@@ -13,8 +13,6 @@ goal: "Replace the single ad-hoc limit-drop fallback in the ``$`` link-follow pa
   "
 proposed_by: bbugyi200.apollo.sase-w3.4
 bead: sase-w3.4
-create_time: 2026-09-04 09:27:36
-status: wip
 ---
 
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
