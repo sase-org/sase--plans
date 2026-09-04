@@ -2,75 +2,78 @@
 tier: epic
 title: Initialize projects from the Admin Center Projects tab
 goal: 'On the Admin Center Projects sub-tab, `i` initializes the marked or highlighted
-  projects and `I` initializes every enabled project: each gesture plans off-thread via
-  `sase init … --check --json`, shows a preview modal with the exact argv, per-planner
+  projects and `I` initializes every enabled project: each gesture plans off-thread
+  via `sase init … --check --json`, shows a preview modal with the exact argv, per-planner
   rows, warnings, blockers, and full diffs, and on confirm streams exactly one `sase
   init … --yes` proc into the Procs tab — with an honest "Run in terminal" valve for
   TTY-only steps.
 
   '
 phases:
-  - id: cli
-    title: Project selector and structured check output for `sase init`
-    depends_on: []
-    size: medium
-    description: "cli: add the repeatable `-p/--project` selector beside `--all`, a
-      `-j/--json` mode on `--check` with a schema version, per-planner `requires_tty`
-      markers, and a status that distinguishes drift from blockers, lift the doctor plan
-      serializer into `init_plan.py` without silent truncation, mirror the
-      `--all`-with-subcommand dispatch guard for `-p`, and document both options.
+- id: cli
+  title: Project selector and structured check output for `sase init`
+  depends_on: []
+  size: medium
+  description: 'cli: add the repeatable `-p/--project` selector beside `--all`, a
+    `-j/--json` mode on `--check` with a schema version, per-planner `requires_tty`
+    markers, and a status that distinguishes drift from blockers, lift the doctor
+    plan serializer into `init_plan.py` without silent truncation, mirror the `--all`-with-subcommand
+    dispatch guard for `-p`, and document both options.
 
-      "
-  - id: flow
-    title: The i/I gestures, the InitPlanModal preview, and the streaming apply proc
-    depends_on:
-      - cli
-    size: large
-    description: "flow: wire `i`/`I` through the full Projects keymap chain, plan
-      off-thread via a session-worker `sase init … --check --json` proc, show the
-      `InitPlanModal` preview with per-planner rows, warnings, blockers, and full diffs,
-      and on confirm submit exactly one streaming `sase init … --yes` session proc with
-      a dedup key and an exclusive scope, then toast and refresh in place.
+    '
+- id: flow
+  title: The i/I gestures, the InitPlanModal preview, and the streaming apply proc
+  depends_on:
+  - cli
+  size: large
+  description: 'flow: wire `i`/`I` through the full Projects keymap chain, plan off-thread
+    via a session-worker `sase init … --check --json` proc, show the `InitPlanModal`
+    preview with per-planner rows, warnings, blockers, and full diffs, and on confirm
+    submit exactly one streaming `sase init … --yes` session proc with a dedup key
+    and an exclusive scope, then toast and refresh in place.
 
-      "
-  - id: valve
-    title: The run-in-terminal valve for TTY-only blockers
-    depends_on:
-      - flow
-    size: small
-    description: 'valve: when the plan reports TTY-only blockers, offer a "Run in
-      terminal" button that suspends the TUI into interactive `sase init` for the
-      blocked subset, handles unsupported suspend, and reloads on return without ever
-      reporting held projects as initialized.
+    '
+- id: valve
+  title: The run-in-terminal valve for TTY-only blockers
+  depends_on:
+  - flow
+  size: small
+  description: 'valve: when the plan reports TTY-only blockers, offer a "Run in terminal"
+    button that suspends the TUI into interactive `sase init` for the blocked subset,
+    handles unsupported suspend, and reloads on return without ever reporting held
+    projects as initialized.
 
-      '
-  - id: polish
-    title: Hint line, key help, docs, and PNG snapshot goldens
-    depends_on:
-      - valve
-    size: medium
-    description: "polish: surface the new keys in the Projects hint line and key help,
-      document the flow in `docs/ace.md`, `docs/configuration.md`, and `docs/init.md`,
-      and pin the modal's visual states — single-project update, mixed all-projects,
-      danger variant, TTY-blocked, diff expansion, and narrow terminal — with PNG
-      snapshot goldens.
+    '
+- id: polish
+  title: Hint line, key help, docs, and PNG snapshot goldens
+  depends_on:
+  - valve
+  size: medium
+  description: 'polish: surface the new keys in the Projects hint line and key help,
+    document the flow in `docs/ace.md`, `docs/configuration.md`, and `docs/init.md`,
+    and pin the modal''s visual states — single-project update, mixed all-projects,
+    danger variant, TTY-blocked, diff expansion, and narrow terminal — with PNG snapshot
+    goldens.
 
-      "
-  - id: verify
-    title: End-to-end verification of the init loop
-    depends_on:
-      - polish
-    size: small
-    description: "verify: run the full verification gates and drive the real TUI through
-      single, marked-set, and all-project inits, the no-op toast, the terminal valve,
-      double-activation collision, and a mid-run kill, confirming refresh preserves
-      selection and no half-written chezmoi state remains.
+    '
+- id: verify
+  title: End-to-end verification of the init loop
+  depends_on:
+  - polish
+  size: small
+  description: 'verify: run the full verification gates and drive the real TUI through
+    single, marked-set, and all-project inits, the no-op toast, the terminal valve,
+    double-activation collision, and a mid-run kill, confirming refresh preserves
+    selection and no half-written chezmoi state remains.
 
-      "
+    '
 proposed_by: bbugyi200.apollo.e
 create_time: 2026-09-04 06:51:20
 status: wip
+bead_id: sase-wh
 ---
+
+- **BEAD:** [sase-wh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-wh/README.md)
 
 # Plan: Initialize projects from the Admin Center Projects tab
 
