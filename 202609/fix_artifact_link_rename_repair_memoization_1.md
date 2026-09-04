@@ -8,8 +8,6 @@ goal:
   instead of being SIGKILLed by it.
 size: medium
 proposed_by: bbugyi200.kellys_mbp.m
-create_time: 2026-09-04 05:21:56
-status: wip
 ---
 
 # Plan: Fix the `artifact_link_backfill` chop's per-ref rename-scan loop (closes sase-u9)
