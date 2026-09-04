@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/reveal_ladder.md",
+  "rows": [
+    {
+      "created_at": "2026-09-04T13:30:22Z",
+      "created_by": "sase-w3.4",
+      "description": "Need the approved reveal_ladder plan to implement it",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-w3.4",
+      "target_ref": "plan:202609/reveal_ladder.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

@@ -11,6 +11,17 @@
       "source_ref": "plan:202609/link_follow_reliability.md",
       "target_ref": "research:202609/artifact_link_follow_reliability/artifact_link_follow_reliability.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-04T13:30:46Z",
+      "created_by": "sase-w3.4",
+      "description": "Need epic decisions and ground rules for reveal_ladder implementation",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-w3.4",
+      "target_ref": "plan:202609/link_follow_reliability.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
