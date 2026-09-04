@@ -1,113 +1,107 @@
 ---
 tier: epic
-title: "Idle CPU diet: stop sase from burning ~4 cores at rest"
-goal: "An idle sase host (ace open, lumberjacks running, no agent work) drops from
+title: 'Idle CPU diet: stop sase from burning ~4 cores at rest'
+goal: 'An idle sase host (ace open, lumberjacks running, no agent work) drops from
   roughly four sustained cores of sase CPU to well under half a core — by eliminating
-  per-chop interpreter boot waste, skipping chop subprocess spawns when their inputs are
-  provably unchanged, replacing ace's unconditional full-disk refresh with cheap
-  per-surface change tokens, caching immutable axe status reads, and reusing one
-  sase-core release build across workspaces — all without changing chop cadence,
-  subprocess isolation, timeout semantics, or user-visible TUI freshness.
+  per-chop interpreter boot waste, skipping chop subprocess spawns when their inputs
+  are provably unchanged, replacing ace''s unconditional full-disk refresh with cheap
+  per-surface change tokens, caching immutable axe status reads, and reusing one sase-core
+  release build across workspaces — all without changing chop cadence, subprocess
+  isolation, timeout semantics, or user-visible TUI freshness.
 
-  "
+  '
 phases:
-  - id: chop-import-slim
-    title: Slim chop subprocess imports
-    depends_on: []
-    size: medium
-    description:
-      "chop-import-slim: cut the ~0.6s/1,251-module import cost every sase_chop_*
-      subprocess pays before doing any work, by making sase.axe lazy, trimming the chops
-      SDK import chain, and adding an import-budget regression test; no behavior change."
-  - id: chop-trigger-provider
-    title: Filesystem change-token trigger provider (sase-core)
-    depends_on: []
-    size: medium
-    description:
-      "chop-trigger-provider: add an fs change-token trigger provider to the sase-core
-      axe_chop preflight engine (paths -> cheap state token, fire on change, fail-open,
-      max_quiet fallback), with Rust tests, binding surface, and Python plumbing; no
-      shipped chop uses it yet."
-  - id: chop-guard-defaults
-    title: Wire pre-spawn guards into shipped chop defaults
-    depends_on:
-      - chop-trigger-provider
-    size: medium
-    description:
-      "chop-guard-defaults: give every high-frequency shipped chop in default_config.yml
-      an fs change-token trigger (or run_every where inputs are time-based), so an idle
-      tick costs a few stat() calls instead of 8-14 interpreter boots; per-chop input
-      maps verified against chop source, with fire/skip tests for each."
-  - id: chop-incremental-scans
-    title: Make wait_checks and bead_claim_checks incremental
-    depends_on: []
-    size: medium
-    description:
-      "chop-incremental-scans: invert both scan chops so their cheap short-circuit runs
-      before the full O(all-artifacts) walk - wait_checks consults waiting markers first
-      and resolves only referenced dependencies (via the agent artifact index where it
-      suffices), bead_claim_checks runs its owner pre-pass before scanning; identical
-      outputs on the non-skip path."
-  - id: ace-refresh-tokens
-    title: Per-surface change tokens for ace auto-refresh
-    depends_on: []
-    size: large
-    description:
-      "ace-refresh-tokens: replace ace's unconditional full reconcile every
-      refresh_interval with cheap per-surface change tokens (agents, axe, notifications,
-      patches, procs) that work without an fs watcher, restoring the dirty-gate design
-      on macOS and under Linux churn, with a periodic full-sanity reconcile and a sunset
-      flag keeping the old unconditional path reachable."
-  - id: ace-axe-status-cache
-    title: Cache immutable axe status reads in ace
-    depends_on:
-      - ace-refresh-tokens
-    size: medium
-    description:
-      "ace-axe-status-cache: stop collect_axe_status_data re-parsing ~600 files per tick
-      - cache immutable chop run records by (path, mtime), tail logs only when they
-      grew, and collect full chop snapshots only when the Axe tab needs them."
-  - id: ace-idle-render-cache
-    title: Stop multi-second idle re-renders of the prompt panel
-    depends_on: []
-    size: medium
-    description:
-      "ace-idle-render-cache: make prompt-panel rendering (section-navigation
-      strips/heights, lazy syntax highlighting, frontmatter lexing) cache-stable across
-      refreshes of unchanged content, so an idle ace stops logging 1.5-4s main-thread
-      stalls re-rendering the same document."
-  - id: ace-io-hygiene
-    title: Small ace I/O fixes (agents-sync reads, bead N+1)
-    depends_on: []
-    size: small
-    description:
-      "ace-io-hygiene: replace the byte-at-a-time _read_until_nul in agents_sync git
-      blob reads with buffered reads, and batch the per-bead show() N+1 in the
-      prompt-panel detail header summary."
-  - id: core-build-cache
-    title: Reuse sase-core release builds across workspaces
-    depends_on: []
-    size: medium
-    description:
-      "core-build-cache: add a host-level sase_core_rs wheel cache keyed by sase-core
-      commit, toolchain, and ABI so ephemeral workspaces install a cached wheel instead
-      of each running a multi-core-minute maturin release build; cache miss or dirty
-      checkout falls back to today's build path."
-  - id: perf-guardrails
-    title: Perf counters, budgets, and regression guardrails
-    depends_on:
-      - chop-import-slim
-      - chop-guard-defaults
-      - ace-refresh-tokens
-    size: medium
-    description:
-      "perf-guardrails: land the counters that prove the wins (chop spawns/min and no-op
-      ratio in lumberjack metrics, per-tick reload counters in ace), lock in import-time
-      and spawn-rate budgets as tests, and update the perf runbook."
+- id: chop-import-slim
+  title: Slim chop subprocess imports
+  depends_on: []
+  size: medium
+  description: 'chop-import-slim: cut the ~0.6s/1,251-module import cost every sase_chop_*
+    subprocess pays before doing any work, by making sase.axe lazy, trimming the chops
+    SDK import chain, and adding an import-budget regression test; no behavior change.'
+- id: chop-trigger-provider
+  title: Filesystem change-token trigger provider (sase-core)
+  depends_on: []
+  size: medium
+  description: 'chop-trigger-provider: add an fs change-token trigger provider to
+    the sase-core axe_chop preflight engine (paths -> cheap state token, fire on change,
+    fail-open, max_quiet fallback), with Rust tests, binding surface, and Python plumbing;
+    no shipped chop uses it yet.'
+- id: chop-guard-defaults
+  title: Wire pre-spawn guards into shipped chop defaults
+  depends_on:
+  - chop-trigger-provider
+  size: medium
+  description: 'chop-guard-defaults: give every high-frequency shipped chop in default_config.yml
+    an fs change-token trigger (or run_every where inputs are time-based), so an idle
+    tick costs a few stat() calls instead of 8-14 interpreter boots; per-chop input
+    maps verified against chop source, with fire/skip tests for each.'
+- id: chop-incremental-scans
+  title: Make wait_checks and bead_claim_checks incremental
+  depends_on: []
+  size: medium
+  description: 'chop-incremental-scans: invert both scan chops so their cheap short-circuit
+    runs before the full O(all-artifacts) walk - wait_checks consults waiting markers
+    first and resolves only referenced dependencies (via the agent artifact index
+    where it suffices), bead_claim_checks runs its owner pre-pass before scanning;
+    identical outputs on the non-skip path.'
+- id: ace-refresh-tokens
+  title: Per-surface change tokens for ace auto-refresh
+  depends_on: []
+  size: large
+  description: 'ace-refresh-tokens: replace ace''s unconditional full reconcile every
+    refresh_interval with cheap per-surface change tokens (agents, axe, notifications,
+    patches, procs) that work without an fs watcher, restoring the dirty-gate design
+    on macOS and under Linux churn, with a periodic full-sanity reconcile and a sunset
+    flag keeping the old unconditional path reachable.'
+- id: ace-axe-status-cache
+  title: Cache immutable axe status reads in ace
+  depends_on:
+  - ace-refresh-tokens
+  size: medium
+  description: 'ace-axe-status-cache: stop collect_axe_status_data re-parsing ~600
+    files per tick - cache immutable chop run records by (path, mtime), tail logs
+    only when they grew, and collect full chop snapshots only when the Axe tab needs
+    them.'
+- id: ace-idle-render-cache
+  title: Stop multi-second idle re-renders of the prompt panel
+  depends_on: []
+  size: medium
+  description: 'ace-idle-render-cache: make prompt-panel rendering (section-navigation
+    strips/heights, lazy syntax highlighting, frontmatter lexing) cache-stable across
+    refreshes of unchanged content, so an idle ace stops logging 1.5-4s main-thread
+    stalls re-rendering the same document.'
+- id: ace-io-hygiene
+  title: Small ace I/O fixes (agents-sync reads, bead N+1)
+  depends_on: []
+  size: small
+  description: 'ace-io-hygiene: replace the byte-at-a-time _read_until_nul in agents_sync
+    git blob reads with buffered reads, and batch the per-bead show() N+1 in the prompt-panel
+    detail header summary.'
+- id: core-build-cache
+  title: Reuse sase-core release builds across workspaces
+  depends_on: []
+  size: medium
+  description: 'core-build-cache: add a host-level sase_core_rs wheel cache keyed
+    by sase-core commit, toolchain, and ABI so ephemeral workspaces install a cached
+    wheel instead of each running a multi-core-minute maturin release build; cache
+    miss or dirty checkout falls back to today''s build path.'
+- id: perf-guardrails
+  title: Perf counters, budgets, and regression guardrails
+  depends_on:
+  - chop-import-slim
+  - chop-guard-defaults
+  - ace-refresh-tokens
+  size: medium
+  description: 'perf-guardrails: land the counters that prove the wins (chop spawns/min
+    and no-op ratio in lumberjack metrics, per-tick reload counters in ace), lock
+    in import-time and spawn-rate budgets as tests, and update the perf runbook.'
 proposed_by: bbugyi200.kellys_mbp.o.f0
 create_time: 2026-09-04 12:10:54
 status: wip
+bead_id: sase-wn
 ---
+
+- **BEAD:** [sase-wn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-wn/README.md)
 
 # Idle CPU Diet: Stop sase From Burning ~4 Cores At Rest
 
