@@ -8,6 +8,12 @@ size: medium
 proposed_by: bbugyi200.kellys_mbp.k
 ---
 
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.sase-w8.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.sase-w8.2/README.md)
+- **COMMITS:**
+  - [4394da2](https://github.com/sase-org/sase/commit/4394da2e11e2652c84f2d3c28a21212c56f696f3)
+    — feat(ace): add kill-and-edit-last-launch keymap (,X) for resolved-branch relaunch
+
 # Enable the bob vault-sync launch service on apollo
 
 ## Goal
