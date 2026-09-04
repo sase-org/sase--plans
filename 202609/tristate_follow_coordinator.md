@@ -7,8 +7,6 @@ goal:
 size: medium
 proposed_by: bbugyi200.apollo.sase-w3.3
 bead: sase-w3.3
-create_time: 2026-09-04 06:57:10
-status: wip
 ---
 
 - **PARENT:** [202609/link_follow_reliability.md](link_follow_reliability.md)
