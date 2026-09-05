@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Delete the agents-sync import engine and legacy v1 leg
-goal:
-  Remove every runtime that can capture or materialize remote agent imports while
+goal: Remove every runtime that can capture or materialize remote agent imports while
   preserving agents-sidecar publication and the explicit purge of historical local
   import state.
 size: medium
 bead: sase-ws.4
 proposed_by: bbugyi200.apollo.sase-ws.4
-create_time: 2026-09-05 11:41:44
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remove_agents_sync_import.md](remove_agents_sync_import.md)
