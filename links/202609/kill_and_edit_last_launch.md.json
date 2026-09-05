@@ -33,6 +33,17 @@
       "source_ref": "agent:sase-w8.4.land",
       "target_ref": "plan:202609/kill_and_edit_last_launch.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-05T07:24:02Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202609/kill_and_edit_last_launch.md",
+      "target_ref": "bead:sase-w8",
+      "uses": 1
     }
   ],
   "schema_version": 2
