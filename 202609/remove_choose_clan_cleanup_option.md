@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Remove the "Choose clan" option from the Agent Cleanup panel
-goal:
-  The Agent Cleanup panel no longer offers a clan chooser, and agent shells/families
+goal: The Agent Cleanup panel no longer offers a clan chooser, and agent shells/families
   inside agent clans are cleaned up by the ordinary panel-scoped options exactly like
   agents outside clans, with regression tests locking that uniform treatment in.
 size: medium
 proposed_by: bbugyi200.athena.0ge
-create_time: 2026-09-05 17:35:58
-status: wip
+status: done
 ---
 
 # Remove the "Choose clan" option from the Agent Cleanup panel
