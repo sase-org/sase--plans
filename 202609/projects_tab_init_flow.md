@@ -17,6 +17,11 @@ bead: sase-wm.2
   [202609/projects_tab_init.md](https://github.com/sase-org/sase--plans/blob/main/202609/projects_tab_init.md)
 - **BEAD:**
   [sase-wm.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-wm/sase-wm.2.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-wm.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-wm.2.md)
+- **COMMITS:**
+  - [29ce9cd](https://github.com/sase-org/sase/commit/29ce9cd8b202e6bfe6c1716ad773c25542b31ddc)
+    — feat(ace): add Projects tab i/I init plan modal and streaming apply
 
 # Plan: the `i`/`I` init gestures, `InitPlanModal`, and the streaming apply proc
 
