@@ -1,12 +1,19 @@
 ---
 tier: tale
-title: 'Add a suffix input to #research and use __a/__b suffixes in #research_swarm'
-goal: 'The two initial #research_swarm researchers write reports with explicit __a/__b
-  filename suffixes via a new generic optional suffix input on the #research xprompt.'
+title: "Add a suffix input to #research and use __a/__b suffixes in #research_swarm"
+goal:
+  "The two initial #research_swarm researchers write reports with explicit __a/__b
+  filename suffixes via a new generic optional suffix input on the #research xprompt."
 size: small
 proposed_by: bbugyi200.athena.0gj
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gj.md)
+- **COMMITS:**
+  - [68bb0dd](https://github.com/sase-org/sase-research-artifacts/commit/68bb0dd3326adfeaf42637c330b757c6bdece13e)
+    — feat: add research suffix input
 
 # Add an optional `suffix` input to `#research` and use `__a`/`__b` suffixes in `#research_swarm`
 
