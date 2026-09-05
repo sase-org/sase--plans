@@ -10,10 +10,14 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.0gh](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gh.md)
   - [bbugyi200.athena.research.1g.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1g.cdx/README.md)
+  - [bbugyi200.athena.research.1g.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1g.cld/README.md)
 - **COMMITS:**
   - [72fc612](https://github.com/sase-org/sase--research/commit/72fc612fff7e7f3765d76af3659a4d886f0584fc)
     — docs(research): design tailnet agent fleet control plane
+  - [8250318](https://github.com/sase-org/sase--research/commit/8250318d346c5eccf0ad732b49bb28575e1a409b)
+    — docs(research): add cross-machine agent control plane research
 
 # Prompt search performance
 
