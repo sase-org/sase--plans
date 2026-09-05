@@ -14,6 +14,11 @@ bead: sase-wn.5
 - **PARENT:** [202609/sase_idle_cpu_diet.md](sase_idle_cpu_diet.md)
 - **BEAD:**
   [sase-wn.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-wn/sase-wn.5.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-wn.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-wn.5.md)
+- **COMMITS:**
+  - [2eb1335](https://github.com/sase-org/sase/commit/2eb13350f991a84b340f4d6619334b9311bd7f9c)
+    — feat(ace): gate auto-refresh on per-surface change tokens
 
 # Plan: Gate ACE Refresh Surfaces With Stat-Only Change Tokens
 
