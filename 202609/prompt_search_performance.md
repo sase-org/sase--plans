@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Make prompt search fast by removing repeated preprocessing and validation
-goal: Substantially reduce fresh-process sase prompt search latency while preserving
-  its matching, ranking, filtering, counts, and output contracts.
+goal:
+  Substantially reduce fresh-process sase prompt search latency while preserving its
+  matching, ranking, filtering, counts, and output contracts.
 size: medium
 proposed_by: bbugyi200.athena.0gh
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1g.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1g.cdx/README.md)
+- **COMMITS:**
+  - [72fc612](https://github.com/sase-org/sase--research/commit/72fc612fff7e7f3765d76af3659a4d886f0584fc)
+    — docs(research): design tailnet agent fleet control plane
 
 # Prompt search performance
 
