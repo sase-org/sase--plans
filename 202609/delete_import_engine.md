@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Delete the agents-sync import engine and legacy v1 leg
-goal: Remove every runtime that can capture or materialize remote agent imports while
+goal:
+  Remove every runtime that can capture or materialize remote agent imports while
   preserving agents-sidecar publication and the explicit purge of historical local
   import state.
 size: medium
@@ -13,6 +14,11 @@ status: done
 - **PARENT:** [202609/remove_agents_sync_import.md](remove_agents_sync_import.md)
 - **BEAD:**
   [sase-ws.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-ws/sase-ws.4.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-ws.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-ws.4.md)
+- **COMMITS:**
+  - [b5b3a98](https://github.com/sase-org/sase/commit/b5b3a984f2fbe16909aa75e8007d43c35ea36681)
+    — refactor(agents-sync): delete import engine
 
 # Delete the agents-sync import engine and legacy v1 leg
 
