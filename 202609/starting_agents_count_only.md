@@ -2,12 +2,10 @@
 tier: tale
 title: Restore count-only presentation for starting agents
 size: small
-goal:
-  Keep every STARTING agent hidden from Agents-tab rows while preserving the starting
+goal: Keep every STARTING agent hidden from Agents-tab rows while preserving the starting
   count and normal status transitions.
 proposed_by: bbugyi200.athena.0gf
-create_time: 2026-09-05 17:49:19
-status: wip
+status: done
 ---
 
 # Restore count-only presentation for starting agents
