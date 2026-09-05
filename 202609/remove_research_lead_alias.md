@@ -2,12 +2,19 @@
 tier: tale
 size: small
 title: Remove the research_lead alias; lead uses @xlarge
-goal: 'The #research_swarm lead launches directly through the built-in @xlarge alias,
-  and the now-unused research_lead custom model alias is removed from the plugin defaults
-  and the chezmoi-managed user config.'
+goal:
+  "The #research_swarm lead launches directly through the built-in @xlarge alias, and
+  the now-unused research_lead custom model alias is removed from the plugin defaults
+  and the chezmoi-managed user config."
 proposed_by: bbugyi200.athena.0gg
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gg.md)
+- **COMMITS:**
+  - [1b760da](https://github.com/bbugyi200/dotfiles/commit/1b760daeb540dfa4d2691ce5dfb88367f62ac3e8)
+    — chore(config): remove research lead model alias
 
 # Remove the `research_lead` alias; the research-swarm lead uses `@xlarge`
 
