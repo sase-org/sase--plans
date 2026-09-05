@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/sase_idle_cpu_diet.md",
+  "rows": [
+    {
+      "created_at": "2026-09-05T10:16:17Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202609/sase_idle_cpu_diet.md",
+      "target_ref": "bead:sase-wn",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
