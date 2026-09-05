@@ -9,10 +9,13 @@ proposed_by: bbugyi200.kellys_mbp.t
 ---
 
 - **AGENTS:**
+  - [bbugyi200.kellys_mbp.sase-ws.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.sase-ws.2/README.md)
   - [bbugyi200.kellys_mbp.v](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.v.md)
 - **COMMITS:**
   - [5fc41b3](https://github.com/sase-org/sase/commit/5fc41b3cba1f0ef547831556e953d4764a4540f6)
     — fix(agent): skip empty identity fields in family attach
+  - [470442d](https://github.com/sase-org/sase/commit/470442d3d828e720d99d44c7a0f305dfc225e3ff)
+    — feat(agent-sync): make sync publication-only
 
 # Fix approved tale plans never launching their coder agent (EmptyAgentName regression)
 
