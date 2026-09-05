@@ -2,11 +2,18 @@
 tier: tale
 title: Restore count-only presentation for starting agents
 size: small
-goal: Keep every STARTING agent hidden from Agents-tab rows while preserving the starting
+goal:
+  Keep every STARTING agent hidden from Agents-tab rows while preserving the starting
   count and normal status transitions.
 proposed_by: bbugyi200.athena.0gf
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gf.md)
+- **COMMITS:**
+  - [ee35836](https://github.com/sase-org/sase/commit/ee358364ae7b7b87fd9d69b09142c6cee7ed776b)
+    — fix(tui): always hide STARTING agent rows from the Agents tab
 
 # Restore count-only presentation for starting agents
 
