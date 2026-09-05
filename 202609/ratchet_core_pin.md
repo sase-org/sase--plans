@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Ratchet the pinned sase-core revision to fix Master Gate
-goal: Master Gate on sase master is green again because CI builds a sase_core_rs wheel
-  that exposes every required binding.
+goal:
+  Master Gate on sase master is green again because CI builds a sase_core_rs wheel that
+  exposes every required binding.
 size: small
 proposed_by: bbugyi200.athena.0gi
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gi](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gi.md)
+- **COMMITS:**
+  - [a945518](https://github.com/sase-org/sase/commit/a9455184f1774d6c7553288b4b4bab378b0bb911)
+    — chore(sase-core): ratchet core pin to fe9a643c
 
 # Ratchet The Pinned sase-core Revision To Fix Master Gate
 
