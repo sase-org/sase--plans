@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/remove_choose_clan_cleanup_option.md",
+  "rows": [
+    {
+      "created_at": "2026-09-05T21:37:02Z",
+      "created_by": "0ge--code",
+      "description": "Need the approved plan to implement",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0ge--code",
+      "target_ref": "plan:202609/remove_choose_clan_cleanup_option.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
