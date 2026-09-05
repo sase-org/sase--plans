@@ -1,13 +1,11 @@
 ---
 tier: tale
-title: "Add a suffix input to #research and use __a/__b suffixes in #research_swarm"
-goal:
-  "The two initial #research_swarm researchers write reports with explicit __a/__b
-  filename suffixes via a new generic optional suffix input on the #research xprompt."
+title: 'Add a suffix input to #research and use __a/__b suffixes in #research_swarm'
+goal: 'The two initial #research_swarm researchers write reports with explicit __a/__b
+  filename suffixes via a new generic optional suffix input on the #research xprompt.'
 size: small
 proposed_by: bbugyi200.athena.0gj
-create_time: 2026-09-05 18:39:00
-status: wip
+status: done
 ---
 
 # Add an optional `suffix` input to `#research` and use `__a`/`__b` suffixes in `#research_swarm`
