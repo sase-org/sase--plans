@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/heal_torn_beads_clone_before_claim.md",
+  "rows": [
+    {
+      "created_at": "2026-09-05T11:32:22Z",
+      "created_by": "l",
+      "description": "Implement the approved heal_torn_beads_clone_before_claim plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:l",
+      "target_ref": "plan:202609/heal_torn_beads_clone_before_claim.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
