@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Remove the "Choose clan" option from the Agent Cleanup panel
-goal: The Agent Cleanup panel no longer offers a clan chooser, and agent shells/families
+goal:
+  The Agent Cleanup panel no longer offers a clan chooser, and agent shells/families
   inside agent clans are cleaned up by the ordinary panel-scoped options exactly like
   agents outside clans, with regression tests locking that uniform treatment in.
 size: medium
 proposed_by: bbugyi200.athena.0ge
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ge](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ge.md)
+- **COMMITS:**
+  - [c671169](https://github.com/sase-org/sase/commit/c6711695aa60c53f6224aa82113c9aa00ff8a977)
+    — feat(ace): remove the Agent Cleanup clan chooser
 
 # Remove the "Choose clan" option from the Agent Cleanup panel
 
