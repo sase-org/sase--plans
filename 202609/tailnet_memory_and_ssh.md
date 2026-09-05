@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Tailnet memory note + cross-device Tailscale SSH config
-goal: A chezmoi-managed ~/sase/memory/tailnet.md documents athena, apollo, and mac,
-  and every tailnet machine configures SSH to the others via a chezmoi-managed ~/.ssh/tailnet.conf
-  included from its ~/.ssh/config.
+goal:
+  A chezmoi-managed ~/sase/memory/tailnet.md documents athena, apollo, and mac, and
+  every tailnet machine configures SSH to the others via a chezmoi-managed
+  ~/.ssh/tailnet.conf included from its ~/.ssh/config.
 size: medium
 proposed_by: bbugyi200.athena.0gl
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1g.final_2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1g.final_2/README.md)
+- **COMMITS:**
+  - [3b7e923](https://github.com/sase-org/sase--research/commit/3b7e923a4aa14481336784ceb16abd674633df04)
+    — docs(research): consolidate tailnet fleet-federation research
 
 # Tailnet Memory Note + Cross-Device Tailscale SSH Config
 
