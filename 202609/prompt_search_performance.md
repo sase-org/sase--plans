@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Make prompt search fast by removing repeated preprocessing and validation
-goal:
-  Substantially reduce fresh-process sase prompt search latency while preserving its
-  matching, ranking, filtering, counts, and output contracts.
+goal: Substantially reduce fresh-process sase prompt search latency while preserving
+  its matching, ranking, filtering, counts, and output contracts.
 size: medium
 proposed_by: bbugyi200.athena.0gh
-create_time: 2026-09-05 18:16:01
-status: wip
+status: done
 ---
 
 # Prompt search performance
