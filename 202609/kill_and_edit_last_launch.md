@@ -36,7 +36,7 @@ phases:
     size: medium
 proposed_by: bbugyi200.kellys_mbp.l
 bead_id: sase-w8
-status: in_progress
+status: done
 ---
 
 - **BEAD:** [sase-w8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-w8/README.md)
