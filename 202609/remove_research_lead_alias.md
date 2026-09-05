@@ -2,13 +2,11 @@
 tier: tale
 size: small
 title: Remove the research_lead alias; lead uses @xlarge
-goal:
-  "The #research_swarm lead launches directly through the built-in @xlarge alias, and
-  the now-unused research_lead custom model alias is removed from the plugin defaults
-  and the chezmoi-managed user config."
+goal: 'The #research_swarm lead launches directly through the built-in @xlarge alias,
+  and the now-unused research_lead custom model alias is removed from the plugin defaults
+  and the chezmoi-managed user config.'
 proposed_by: bbugyi200.athena.0gg
-create_time: 2026-09-05 17:58:41
-status: wip
+status: done
 ---
 
 # Remove the `research_lead` alias; the research-swarm lead uses `@xlarge`
