@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/kill_and_edit_lifecycle.md",
+  "rows": [
+    {
+      "created_at": "2026-09-06T20:58:45Z",
+      "created_by": "0h3",
+      "description": "Reviewing remainder of the prior plan to know its full intended scope before diagnosing the persisting ,X failure",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0h3",
+      "target_ref": "plan:202609/kill_and_edit_lifecycle.md",
+      "uses": 2
+    }
+  ],
+  "schema_version": 2
+}
