@@ -1,29 +1,13 @@
 ---
 tier: tale
 title: Tailnet memory note + cross-device Tailscale SSH config
-goal:
-  A chezmoi-managed ~/sase/memory/tailnet.md documents athena, apollo, and mac, and
-  every tailnet machine configures SSH to the others via a chezmoi-managed
-  ~/.ssh/tailnet.conf included from its ~/.ssh/config.
+goal: A chezmoi-managed ~/sase/memory/tailnet.md documents athena, apollo, and mac,
+  and every tailnet machine configures SSH to the others via a chezmoi-managed ~/.ssh/tailnet.conf
+  included from its ~/.ssh/config.
 size: medium
 proposed_by: bbugyi200.athena.0gl
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-x8.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-x8.1/README.md)
-  - [bbugyi200.athena.sase-x8.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-x8.2/README.md)
-  - [bbugyi200.athena.toobig-4p.bench_prompt_search.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4p.bench_prompt_search.0/README.md)
-  - [bbugyi200.athena.toobig-4p.driver.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4p.driver.0/README.md)
-- **COMMITS:**
-  - [d64696c](https://github.com/sase-org/sase/commit/d64696cce522d9a7a13f4304ac650c86d45be334)
-    — feat(core): add exact-producer artifact-context query facade
-  - [f3b00cd](https://github.com/sase-org/sase/commit/f3b00cd9f7a121cc7631bba46ead433066d36f84)
-    — feat(xprompt): expose runtime wait context
-  - [1df2a78](https://github.com/sase-org/sase/commit/1df2a78076a2a7c8d2c9660a4cc2be68af1e9cdd)
-    — refactor(migration-kit): split driver.py into focused modules
-  - [b688aed](https://github.com/sase-org/sase/commit/b688aeddc68b0b8abd767f8e039700692d892444)
-    — refactor(perf): split bench_prompt_search into focused modules
 
 # Tailnet Memory Note + Cross-Device Tailscale SSH Config
 
