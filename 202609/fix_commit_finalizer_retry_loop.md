@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix commit-finalizer infinite retry loop after a partially-failed stitch
-goal:
-  The commit finalizer's retry loop always terminates within its attempt budget, and a
-  retry cycle that finds an accepted repo already committed by a prior attempt of the
-  same run completes successfully instead of hanging the agent runner.
+goal: The commit finalizer's retry loop always terminates within its attempt budget,
+  and a retry cycle that finds an accepted repo already committed by a prior attempt
+  of the same run completes successfully instead of hanging the agent runner.
 size: medium
 proposed_by: bbugyi200.athena.0gt
-create_time: 2026-09-06 14:46:57
-status: wip
+status: done
 ---
 
 # Fix Commit-Finalizer Infinite Retry Loop That Hangs Agents After A Partially-Failed Stitch
