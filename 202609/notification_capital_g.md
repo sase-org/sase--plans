@@ -1,12 +1,20 @@
 ---
 tier: tale
 title: Restore uppercase G scrolling in the notifications panel
-goal: Uppercase G consistently scrolls notification details to the bottom while preserving
+goal:
+  Uppercase G consistently scrolls notification details to the bottom while preserving
   lowercase g and jump-mode behavior.
 size: small
 proposed_by: bbugyi200.athena.0gv
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gv.md)
+  - [bbugyi200.athena.sase-o0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-o0/README.md)
+- **COMMITS:**
+  - [71fbcd9](https://github.com/sase-org/sase/commit/71fbcd986d9d4c3effec7b21dcbd49e98e5b916e)
+    — test(selection): retire fixed flake-baseline evidence
 
 # Restore uppercase G scrolling in the notifications panel
 
