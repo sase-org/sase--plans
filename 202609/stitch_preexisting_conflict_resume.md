@@ -1,14 +1,13 @@
 ---
 tier: tale
-title: Stop misattributing pre-existing rebase state and support no-commit stitch resume
-goal:
-  "A leftover rebase/merge in a shared repo no longer fails an agent run after a
-  successful conflict repair: sase stitch create refuses to blame pre-existing conflict
-  state on itself, and --resume finishes cleanly when no commit exists to resume."
+title: Stop misattributing pre-existing rebase state and support no-commit stitch
+  resume
+goal: 'A leftover rebase/merge in a shared repo no longer fails an agent run after
+  a successful conflict repair: sase stitch create refuses to blame pre-existing conflict
+  state on itself, and --resume finishes cleanly when no commit exists to resume.'
 size: medium
 proposed_by: bbugyi200.athena.0gr.f0
-create_time: 2026-09-06 15:15:26
-status: wip
+status: done
 ---
 
 # Stitch: Stop Misattributing Pre-Existing Rebase State And Support No-Commit Resume
