@@ -16,6 +16,8 @@ status: done
 - **COMMITS:**
   - [b103017](https://github.com/sase-org/sase/commit/b1030177a4794d0bde0fb7ef32095080d22127e8)
     — docs(memory): record two-speed CI decision
+  - [78fdf65](https://github.com/sase-org/sase/commit/78fdf65b8501c7615f67ea0979ce3d6893a4a7a2)
+    — fix(commit): handle no-commit conflict resumes
 
 # Stitch: Stop Misattributing Pre-Existing Rebase State And Support No-Commit Resume
 
