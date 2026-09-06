@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Define portable fleet identity and operation contracts in sase-core
-goal:
-  Provide one validated, versioned, transport-free domain contract for remote agent
-  identity, owner-resolved records, counts, cursors, operation replay, connection plans,
-  and elapsed/freshness semantics, exposed to Python through sase_core_rs.
+goal: Provide one validated, versioned, transport-free domain contract for remote
+  agent identity, owner-resolved records, counts, cursors, operation replay, connection
+  plans, and elapsed/freshness semantics, exposed to Python through sase_core_rs.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.2
 bead: sase-xe.2
-create_time: 2026-09-06 14:19:22
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
