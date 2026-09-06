@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Authenticated fleet gateway enrollment
-goal: Remote fleet access starts from target authorization and remains bounded, revocable,
+goal:
+  Remote fleet access starts from target authorization and remains bounded, revocable,
   versioned, and identity-pinned.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.4
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.4.md)
+- **COMMITS:**
+  - [f00ed92](https://github.com/sase-org/sase-core/commit/f00ed92aa41f5bb0a94216b74031b38ac608824f)
+    — feat(gateway): add fleet authentication
 
 # Authenticated fleet gateway enrollment
 
