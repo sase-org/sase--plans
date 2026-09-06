@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Keep the runner slot held across the monitor-to-follow-up handoff
-goal:
-  Queued agents are never admitted into the slot a settling monitor is handing to its
-  guaranteed --next follow-up, so max_running_agents and %wait(runners=N) thresholds are
-  never exceeded by monitor successions.
+goal: Queued agents are never admitted into the slot a settling monitor is handing
+  to its guaranteed --next follow-up, so max_running_agents and %wait(runners=N) thresholds
+  are never exceeded by monitor successions.
 size: medium
 proposed_by: bbugyi200.athena.0gz
-create_time: 2026-09-06 15:54:21
-status: wip
+status: done
 ---
 
 # Keep The Runner Slot Held Across The Monitor-To-Follow-Up Handoff
