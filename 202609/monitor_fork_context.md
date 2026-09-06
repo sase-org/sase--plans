@@ -1,12 +1,25 @@
 ---
 tier: tale
 title: Preserve monitor shell identity when expanding fork context
-goal: Resume dotted agent families with bounded monitor evidence while preserving
-  correct provider retry behavior.
+goal:
+  Resume dotted agent families with bounded monitor evidence while preserving correct
+  provider retry behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-x7.3.1.5.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-x7.3.1.5.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-x7.3.1.5.f0.md)
+  - [bbugyi200.athena.sase-xe.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.1/README.md)
+  - [bbugyi200.athena.sase-xe.9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.9/README.md)
+- **COMMITS:**
+  - [a45669b](https://github.com/sase-org/sase/commit/a45669b26fd3f6f313398e09f82160e2253fe168)
+    — fix(agent): preserve monitor fork context
+  - [8efecdd](https://github.com/sase-org/sase/commit/8efecdd7390a0103f66ce7a3f4b54376a2079a63)
+    — feat(agent-listing): use bounded index snapshots
+  - [fdfb4e2](https://github.com/sase-org/sase/commit/fdfb4e238a386b5470a67025da8db1c30bc92e90)
+    — feat(fleet): add durable follow store
 
 # Preserve monitor shell identity when expanding fork context
 
