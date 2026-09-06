@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Keep the runner slot held across the monitor-to-follow-up handoff
-goal: Queued agents are never admitted into the slot a settling monitor is handing
-  to its guaranteed --next follow-up, so max_running_agents and %wait(runners=N) thresholds
-  are never exceeded by monitor successions.
+goal:
+  Queued agents are never admitted into the slot a settling monitor is handing to its
+  guaranteed --next follow-up, so max_running_agents and %wait(runners=N) thresholds are
+  never exceeded by monitor successions.
 size: medium
 proposed_by: bbugyi200.athena.0gz
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gz.md)
+- **COMMITS:**
+  - [56754a1](https://github.com/sase-org/sase/commit/56754a17ae5e99b3193d4d8860ae07d64e1c0d35)
+    — fix(monitor): hold slot across follow-up handoff
 
 # Keep The Runner Slot Held Across The Monitor-To-Follow-Up Handoff
 
