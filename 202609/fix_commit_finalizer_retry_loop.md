@@ -1,21 +1,13 @@
 ---
 tier: tale
 title: Fix commit-finalizer infinite retry loop after a partially-failed stitch
-goal:
-  The commit finalizer's retry loop always terminates within its attempt budget, and a
-  retry cycle that finds an accepted repo already committed by a prior attempt of the
-  same run completes successfully instead of hanging the agent runner.
+goal: The commit finalizer's retry loop always terminates within its attempt budget,
+  and a retry cycle that finds an accepted repo already committed by a prior attempt
+  of the same run completes successfully instead of hanging the agent runner.
 size: medium
 proposed_by: bbugyi200.athena.0gt
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0gt](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gt.md)
-  - [bbugyi200.athena.sase-se](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-se/README.md)
-- **COMMITS:**
-  - [eab4639](https://github.com/sase-org/sase/commit/eab4639cc0f06e37f4cc176001b42f2337aea83c)
-    — docs(memory): update generated skills commit guidance
 
 # Fix Commit-Finalizer Infinite Retry Loop That Hangs Agents After A Partially-Failed Stitch
 
