@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Repair sase-telegram CI after the SASE plan-gate API removal
-goal:
-  Restore the sase-telegram GitHub Actions matrix by migrating its plan-gate integration
+goal: Restore the sase-telegram GitHub Actions matrix by migrating its plan-gate integration
   tests to the current public SASE gate-construction API.
 size: small
 proposed_by: bbugyi200.athena.0gr
-create_time: 2026-09-06 14:19:17
-status: wip
+status: done
 ---
 
 # Diagnosis
