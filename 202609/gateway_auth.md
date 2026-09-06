@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Authenticated fleet gateway enrollment
-goal:
-  Remote fleet access starts from target authorization and remains bounded, revocable,
+goal: Remote fleet access starts from target authorization and remains bounded, revocable,
   versioned, and identity-pinned.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.4
 bead: sase-xe.4
-create_time: 2026-09-06 16:27:22
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
