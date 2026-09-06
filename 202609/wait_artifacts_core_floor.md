@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Require the released artifact-context core bindings
-goal:
-  Published SASE installs always receive the Rust artifact-context query contract used
-  by the wait.artifacts runtime namespace.
+goal: Published SASE installs always receive the Rust artifact-context query contract
+  used by the wait.artifacts runtime namespace.
 size: medium
 proposed_by: bbugyi200.athena.sase-x8.land
 bead: sase-x8
-create_time: 2026-09-05 22:34:14
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/wait_artifacts.md](wait_artifacts.md)
