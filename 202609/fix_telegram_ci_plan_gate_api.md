@@ -10,10 +10,11 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.sase-xf.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xf.1/README.md)
+  - [bbugyi200.athena.0gr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gr.md)
+  - [bbugyi200.athena.sase-x9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-x9/README.md)
 - **COMMITS:**
-  - [08c4c84](https://github.com/sase-org/sase-core/commit/08c4c84044f533204d92779c8a6f9f023dee5a8a)
-    — feat(provider): add provider priority core policy
+  - [ae1f91f](https://github.com/sase-org/sase/commit/ae1f91fadda904720e3a364c724cecffd2853dc8)
+    — docs(memory): update TUI durable proc guidance
 
 # Diagnosis
 
