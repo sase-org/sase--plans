@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Repair sase-telegram CI after the SASE plan-gate API removal
-goal: Restore the sase-telegram GitHub Actions matrix by migrating its plan-gate integration
+goal:
+  Restore the sase-telegram GitHub Actions matrix by migrating its plan-gate integration
   tests to the current public SASE gate-construction API.
 size: small
 proposed_by: bbugyi200.athena.0gr
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xf.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xf.1/README.md)
+- **COMMITS:**
+  - [08c4c84](https://github.com/sase-org/sase-core/commit/08c4c84044f533204d92779c8a6f9f023dee5a8a)
+    — feat(provider): add provider priority core policy
 
 # Diagnosis
 
