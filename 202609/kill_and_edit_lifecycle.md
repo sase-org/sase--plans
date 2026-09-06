@@ -1,21 +1,15 @@
 ---
 tier: tale
 title: Fix kill-and-edit targeting and cancelled prompt launch holds
-goal: "Make ACE kill the exact launch requested by ,X across completion and refresh
+goal: 'Make ACE kill the exact launch requested by ,X across completion and refresh
   races, and prevent cancelled kill-and-edit prompts from delaying or replaying through
   a new prompt.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.0go
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0go](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0go.md)
-- **COMMITS:**
-  - [88e6f4e](https://github.com/sase-org/sase/commit/88e6f4ef7ebb555f7ced1e2447b8efa7c1b64304)
-    — fix(ace): harden kill-and-edit relaunch lifecycle
 
 # Fix kill-and-edit targeting and cancelled prompt launch holds
 
