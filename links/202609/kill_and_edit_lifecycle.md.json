@@ -11,6 +11,17 @@
       "source_ref": "agent:0h3",
       "target_ref": "plan:202609/kill_and_edit_lifecycle.md",
       "uses": 2
+    },
+    {
+      "created_at": "2026-09-06T16:18:03Z",
+      "created_by": "bbugyi200.athena.0go--code",
+      "description": "prompt reference @plan:202609/kill_and_edit_lifecycle.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0go--code",
+      "target_ref": "plan:202609/kill_and_edit_lifecycle.md",
+      "uses": 1
     }
   ],
   "schema_version": 2

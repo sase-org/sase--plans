@@ -275,3 +275,15 @@ tests and the required exhaustive landing gate through `/sase_monitor`, includin
 fails; this optimization should preserve it. Record final benchmark measurements and
 correctness/check results in the change summary. Host-owned finalization handles commits
 and landing.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                        | Uses |
+| -------- | ------------------------------------- | ---------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0gh--code][1] | prompt reference @plan:202609/prompt_search_performance.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gh.md
+
+<!-- sase:referenced-by:end -->

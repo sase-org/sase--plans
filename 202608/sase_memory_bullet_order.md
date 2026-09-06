@@ -205,3 +205,16 @@ every provider shim must read:
   (`## 1. Core Memory` → `## 2. Reference Memory` → `## 3. Memory Webs`).
 - `.venv/bin/sase memory init --check` exits 0 with no pending changes, twice in a row.
 - `just check` passes, including `tests/main/test_init_memory_committed_drift.py`.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                             | Why                                                       | Uses |
+| -------- | ---------------------------------------------------- | --------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.sase-vk.land.w2.f0--code][1] | prompt reference @plan:202608/sase_memory_bullet_order.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.f0.md
+
+<!-- sase:referenced-by:end -->

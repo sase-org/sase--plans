@@ -88,3 +88,16 @@ Do not change visual goldens, close `sase-um.5.1`, run its symbol cleanup, or up
 epic plan status in this tale. Do not absorb the already-routed flake tasks listed
 above. Those are landing-agent work or independent task-bead work after this focused
 regression fix lands.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                           | Why                                                    | Uses |
+| -------- | -------------------------------------------------- | ------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.sase-um.5.1.land--code][1] | prompt reference @plan:202608/restore_chat_fallback.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-um.5.1.land.md
+
+<!-- sase:referenced-by:end -->

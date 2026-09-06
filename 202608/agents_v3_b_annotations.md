@@ -180,3 +180,16 @@ just check
 
 Hand `just check` to your `/sase_monitor` skill if it runs long. Nothing here touches
 the broadening set, so `just check-full` is not required.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                 | Why                                                      | Uses |
+| -------- | ---------------------------------------- | -------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0g0.w0--code][1] | prompt reference @plan:202608/agents_v3_b_annotations.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g0.w0.md
+
+<!-- sase:referenced-by:end -->

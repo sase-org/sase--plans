@@ -59,3 +59,15 @@ blank line already present after each header, or the JSON and Rich renderers.
    in this plan.
 3. Run the required repository gate, `just check`, and resolve any selected test, lint,
    type-check, or documentation failures before handing off the completed change.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                             | Uses |
+| -------- | ------------------------------------- | --------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0fx--code][1] | prompt reference @plan:202608/memory_batch_header_separators.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0fx.md
+
+<!-- sase:referenced-by:end -->

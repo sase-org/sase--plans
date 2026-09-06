@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/sase_memory_bullet_order.md",
+  "rows": [
+    {
+      "created_at": "2026-08-30T15:19:52Z",
+      "created_by": "bbugyi200.athena.sase-vk.land.w2.f0--code",
+      "description": "prompt reference @plan:202608/sase_memory_bullet_order.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sase-vk.land.w2.f0--code",
+      "target_ref": "plan:202608/sase_memory_bullet_order.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

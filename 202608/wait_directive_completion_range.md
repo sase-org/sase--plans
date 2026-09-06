@@ -348,3 +348,15 @@ will surface each one for a `commit` decision.
 - `just check` passes in `sase-core`, and `just check` passes in `sase` after
   `just install`.
 - A task bead exists for the `%wait:a, b` runtime-truncation defect from section 5.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                              | Uses |
+| -------- | ------------------------------------- | ---------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0g2--code][1] | prompt reference @plan:202608/wait_directive_completion_range.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0g2.md
+
+<!-- sase:referenced-by:end -->

@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/wait_directive_completion_range.md",
+  "rows": [
+    {
+      "created_at": "2026-08-29T13:58:44Z",
+      "created_by": "bbugyi200.athena.0g2--code",
+      "description": "prompt reference @plan:202608/wait_directive_completion_range.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0g2--code",
+      "target_ref": "plan:202608/wait_directive_completion_range.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

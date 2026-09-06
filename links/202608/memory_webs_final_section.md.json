@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/memory_webs_final_section.md",
+  "rows": [
+    {
+      "created_at": "2026-08-30T13:24:26Z",
+      "created_by": "bbugyi200.athena.sase-vk.land.w2--code",
+      "description": "prompt reference @plan:202608/memory_webs_final_section.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.sase-vk.land.w2--code",
+      "target_ref": "plan:202608/memory_webs_final_section.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

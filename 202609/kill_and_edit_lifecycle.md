@@ -258,3 +258,17 @@ cancelled editor's old launch cannot replay; a fresh unrelated prompt launches w
 the cancelled editor's wait; and an active replacement still respects its own source
 cleanup ordering. Report any environment or baseline-check failure separately from
 actual test results.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                                                                               | Uses |
+| -------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0go--code][1] | prompt reference @plan:202609/kill_and_edit_lifecycle.md                                                          |    1 |
+| read-by  | [agent:0h3][2]                        | Reviewing remainder of the prior plan to know its full intended scope before diagnosing the persisting ,X failure |    2 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0go.md
+[2]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0h3.md
+
+<!-- sase:referenced-by:end -->

@@ -227,3 +227,16 @@ fleet-deployment failure. Do not close or restart `sase-x7.3.1.5` as part of thi
 tale: the approved change should make a later explicit continuation safe, while that
 phase retains its original verification obligations. No recovery run, live deployment,
 provider cache cleanup, or historical artifact rewrite is needed to prove this repair.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                           | Why                                                   | Uses |
+| -------- | -------------------------------------------------- | ----------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.sase-x7.3.1.5.f0--code][1] | prompt reference @plan:202609/monitor_fork_context.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-x7.3.1.5.f0.md
+
+<!-- sase:referenced-by:end -->

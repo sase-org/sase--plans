@@ -157,3 +157,16 @@ unavailable.
   for migration and reference-description recovery.
 - The root `AGENTS.md` and all tracked provider instruction shims converge to identical
   generated content in the new order; `sase memory init --check` and `just check` pass.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                          | Why                                                        | Uses |
+| -------- | ------------------------------------------------- | ---------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.sase-vk.land.w2--code][1] | prompt reference @plan:202608/memory_webs_final_section.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-vk.land.w2.md
+
+<!-- sase:referenced-by:end -->

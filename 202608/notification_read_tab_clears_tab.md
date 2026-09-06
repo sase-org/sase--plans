@@ -265,3 +265,16 @@ reopened. Both writes serialize on the `notification-state` concurrency key, so 
 requires a deliberate mutation inside the in-flight window, and removing exactly what
 the user confirmed is the more predictable behavior. Do not add reconciliation machinery
 for it.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                               | Uses |
+| -------- | ------------------------------------- | ----------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0gb--code][1] | prompt reference @plan:202608/notification_read_tab_clears_tab.md |    1 |
+| read-by  | [agent:0gb--code][1]                  | Need the approved plan of record before implementing              |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gb.md
+
+<!-- sase:referenced-by:end -->

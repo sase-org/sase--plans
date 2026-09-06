@@ -223,3 +223,15 @@ compatible for gate/plan shells.
 Follow the repo's two-speed rule: run `just install` if the workspace venv is stale,
 then `just fmt` and `just check` after the changes (inline; hand long runs to a
 monitor). `just check-full` is a landing gate, not an agent-turn default.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                            | Uses |
+| -------- | ------------------------------------- | -------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0gz--code][1] | prompt reference @plan:202609/monitor_followup_slot_handoff.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gz.md
+
+<!-- sase:referenced-by:end -->

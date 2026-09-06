@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/monitor_followup_slot_handoff.md",
+  "rows": [
+    {
+      "created_at": "2026-09-06T20:47:24Z",
+      "created_by": "bbugyi200.athena.0gz--code",
+      "description": "prompt reference @plan:202609/monitor_followup_slot_handoff.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0gz--code",
+      "target_ref": "plan:202609/monitor_followup_slot_handoff.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

@@ -171,3 +171,16 @@ Keep untouched (they serve paths that remain):
 - Task bead **sase-wo** (bare uppercase modal keys dead under CSI-u key reporting) lists
   this modal's `C` binding among its findings; this change removes that key entirely,
   shrinking sase-wo's remaining scope. No action needed here beyond the removal itself.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                                | Uses |
+| -------- | ------------------------------------- | ------------------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.0ge--code][1] | prompt reference @plan:202609/remove_choose_clan_cleanup_option.md |    1 |
+| read-by  | [agent:0ge--code][1]                  | Need the approved plan to implement                                |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ge.md
+
+<!-- sase:referenced-by:end -->

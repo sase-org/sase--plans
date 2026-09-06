@@ -168,3 +168,16 @@ place until the cause is understood. If a failure occurs after replacement, rest
 the affected live files from the recorded backups after checking for intervening edits,
 then retest the prior route. Never relax authentication checks to make a test pass.
 Report exactly which work is complete and which verification is still blocked.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                                                 | Uses |
+| -------- | ------------------------------------- | ----------------------------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0gm--code][1] | prompt reference @plan:202609/tailnet_ssh_repair.md                                 |    1 |
+| read-by  | [agent:0gm--code][1]                  | Need the approved Tailnet SSH repair plan as recorded context before implementation |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gm.md
+
+<!-- sase:referenced-by:end -->

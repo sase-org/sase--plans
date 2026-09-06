@@ -162,3 +162,15 @@ repo is untouched, so its `just check` lane is not needed.
 - Expanding `#research_swarm` yields `#research(suffix=a)` in the `cdx` segment,
   `#research(suffix=b)` in the `cld` segment, and no `report_target=` anywhere.
 - `#research` with no arguments and with `report_target=...` behaves exactly as before.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                    | Uses |
+| -------- | ------------------------------------- | ------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.0gj--code][1] | prompt reference @plan:202609/research_suffix_input.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gj.md
+
+<!-- sase:referenced-by:end -->
