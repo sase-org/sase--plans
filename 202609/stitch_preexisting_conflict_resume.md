@@ -1,14 +1,21 @@
 ---
 tier: tale
-title: Stop misattributing pre-existing rebase state and support no-commit stitch
-  resume
-goal: 'A leftover rebase/merge in a shared repo no longer fails an agent run after
-  a successful conflict repair: sase stitch create refuses to blame pre-existing conflict
-  state on itself, and --resume finishes cleanly when no commit exists to resume.'
+title: Stop misattributing pre-existing rebase state and support no-commit stitch resume
+goal:
+  "A leftover rebase/merge in a shared repo no longer fails an agent run after a
+  successful conflict repair: sase stitch create refuses to blame pre-existing conflict
+  state on itself, and --resume finishes cleanly when no commit exists to resume."
 size: medium
 proposed_by: bbugyi200.athena.0gr.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gr.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gr.f0.md)
+  - [bbugyi200.athena.sase-v7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-v7/README.md)
+- **COMMITS:**
+  - [b103017](https://github.com/sase-org/sase/commit/b1030177a4794d0bde0fb7ef32095080d22127e8)
+    — docs(memory): record two-speed CI decision
 
 # Stitch: Stop Misattributing Pre-Existing Rebase State And Support No-Commit Resume
 
