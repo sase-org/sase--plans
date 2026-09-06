@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Require the released artifact-context core bindings
-goal: Published SASE installs always receive the Rust artifact-context query contract
-  used by the wait.artifacts runtime namespace.
+goal:
+  Published SASE installs always receive the Rust artifact-context query contract used
+  by the wait.artifacts runtime namespace.
 size: medium
 proposed_by: bbugyi200.athena.sase-x8.land
 bead: sase-x8
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/wait_artifacts.md](wait_artifacts.md)
 - **BEAD:**
   [sase-x8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-x8/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-x8.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-x8.land.md)
+- **COMMITS:**
+  - [18b3cf0](https://github.com/sase-org/sase/commit/18b3cf0fae9238517aefc963fac6387cca660c67)
+    — fix(deps): raise sase-core-rs floor to 0.32.25 for wait.artifacts
 
 # Outcome
 
