@@ -1,15 +1,14 @@
 ---
 tier: tale
 title: Fix kill-and-edit targeting and cancelled prompt launch holds
-goal: "Make ACE kill the exact launch requested by ,X across completion and refresh
+goal: 'Make ACE kill the exact launch requested by ,X across completion and refresh
   races, and prevent cancelled kill-and-edit prompts from delaying or replaying through
   a new prompt.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.0go
-create_time: 2026-09-06 11:21:29
-status: wip
+status: done
 ---
 
 # Fix kill-and-edit targeting and cancelled prompt launch holds
