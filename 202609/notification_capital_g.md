@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Restore uppercase G scrolling in the notifications panel
-goal:
-  Uppercase G consistently scrolls notification details to the bottom while preserving
+goal: Uppercase G consistently scrolls notification details to the bottom while preserving
   lowercase g and jump-mode behavior.
 size: small
 proposed_by: bbugyi200.athena.0gv
-create_time: 2026-09-06 15:00:43
-status: wip
+status: done
 ---
 
 # Restore uppercase G scrolling in the notifications panel
