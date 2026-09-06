@@ -1,12 +1,22 @@
 ---
 tier: tale
 title: Preserve monitor shell identity when expanding fork context
-goal: Resume dotted agent families with bounded monitor evidence while preserving
-  correct provider retry behavior.
+goal:
+  Resume dotted agent families with bounded monitor evidence while preserving correct
+  provider retry behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-x7.3.1.5.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-x7.3.1.5.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-x7.3.1.5.f0.md)
+  - [bbugyi200.athena.sase-xe.9](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.9/README.md)
+- **COMMITS:**
+  - [5e60561](https://github.com/sase-org/sase-core/commit/5e60561ba7660e2846489a4cdfa316ede3ea5c12)
+    — feat(core): add bounded text tail primitive
+  - [7d382db](https://github.com/sase-org/sase-core/commit/7d382db7d986a1e29ab6edc27689c6058b55ebf8)
+    — feat(fleet): add follow reconciliation contracts
 
 # Preserve monitor shell identity when expanding fork context
 
