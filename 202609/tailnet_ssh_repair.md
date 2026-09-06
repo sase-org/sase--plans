@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Repair managed Tailnet SSH settings and remove MacBook duplicates
-goal:
-  Keep DNS-based SSH working through the managed config and remove redundant MacBook
+goal: Keep DNS-based SSH working through the managed config and remove redundant MacBook
   host blocks.
 size: small
 proposed_by: bbugyi200.athena.0gm
-create_time: 2026-09-06 07:37:44
-status: wip
+status: done
 ---
 
 # Repair the managed Tailnet SSH configuration and clean up the MacBook
