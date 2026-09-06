@@ -11,10 +11,10 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1g.final_2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1g.final_2/README.md)
+  - [bbugyi200.athena.sase-x8.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-x8.1/README.md)
 - **COMMITS:**
-  - [3b7e923](https://github.com/sase-org/sase--research/commit/3b7e923a4aa14481336784ceb16abd674633df04)
-    — docs(research): consolidate tailnet fleet-federation research
+  - [d64696c](https://github.com/sase-org/sase/commit/d64696cce522d9a7a13f4304ac650c86d45be334)
+    — feat(core): add exact-producer artifact-context query facade
 
 # Tailnet Memory Note + Cross-Device Tailscale SSH Config
 
