@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Repair managed Tailnet SSH settings and remove MacBook duplicates
-goal: Keep DNS-based SSH working through the managed config and remove redundant MacBook
+goal:
+  Keep DNS-based SSH working through the managed config and remove redundant MacBook
   host blocks.
 size: small
 proposed_by: bbugyi200.athena.0gm
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0gm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0gm.md)
+- **COMMITS:**
+  - [899c9af](https://github.com/bbugyi200/dotfiles/commit/899c9af9654ec2bfa13a0341a3fe69e094fcf02b)
+    — fix(ssh): set Athena Tailnet SSH port to 34857
 
 # Repair the managed Tailnet SSH configuration and clean up the MacBook
 
