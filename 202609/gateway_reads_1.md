@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete bounded fleet reads and recoverable gateway events
-goal:
-  The Rust fleet gateway serves safe bounded authoritative reads and loss-aware live
-  invalidations for downstream federation clients.
+goal: The Rust fleet gateway serves safe bounded authoritative reads and loss-aware
+  live invalidations for downstream federation clients.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.5
 bead: sase-xe.5
-create_time: 2026-09-06 18:41:28
-status: wip
+status: done
 ---
 
 - **BEAD:**
