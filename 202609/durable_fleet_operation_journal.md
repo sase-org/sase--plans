@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Durable fleet mutation journal and launch admission recovery
-goal:
-  Make fleet mutations durably idempotent and make launch admission recover the one
-  reserved run across crashes and competing controllers.
+goal: Make fleet mutations durably idempotent and make launch admission recover the
+  one reserved run across crashes and competing controllers.
 size: medium
 bead_id: sase-xe.6
 proposed_by: bbugyi200.athena.sase-xe.6
 bead: sase-xe.6
-create_time: 2026-09-06 18:40:22
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
