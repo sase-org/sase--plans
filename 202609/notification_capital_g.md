@@ -15,6 +15,8 @@ status: done
 - **COMMITS:**
   - [71fbcd9](https://github.com/sase-org/sase/commit/71fbcd986d9d4c3effec7b21dcbd49e98e5b916e)
     — test(selection): retire fixed flake-baseline evidence
+  - [d59bf50](https://github.com/sase-org/sase/commit/d59bf500e8f5cc452023b0c4997a616004195323)
+    — fix(tui): handle notification capital g scroll
 
 # Restore uppercase G scrolling in the notifications panel
 
