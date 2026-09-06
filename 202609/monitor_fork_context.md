@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Preserve monitor shell identity when expanding fork context
-goal:
-  Resume dotted agent families with bounded monitor evidence while preserving correct
-  provider retry behavior.
+goal: Resume dotted agent families with bounded monitor evidence while preserving
+  correct provider retry behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-x7.3.1.5.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-x7.3.1.5.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-x7.3.1.5.f0.md)
-- **COMMITS:**
-  - [a45669b](https://github.com/sase-org/sase/commit/a45669b26fd3f6f313398e09f82160e2253fe168)
-    — fix(agent): preserve monitor fork context
 
 # Preserve monitor shell identity when expanding fork context
 
