@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/remote_dispatch_fleet.md",
+  "rows": [
+    {
+      "created_at": "2026-09-06T20:23:08Z",
+      "created_by": "sase-xe.9",
+      "description": "Need design context for assigned phase bead sase-xe.9 follow-store",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xe.9",
+      "target_ref": "plan:202609/remote_dispatch_fleet.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
