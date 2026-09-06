@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix `,X` by re-keying launch records to durable proc ids
-goal:
-  "`,X` kills and edits the last accepted launch in real ACE sessions because launch
-  records are re-keyed from the submit-time placeholder proc id to the durable proc id,
-  so completion stamping and deferred kills find their record."
+goal: '`,X` kills and edits the last accepted launch in real ACE sessions because
+  launch records are re-keyed from the submit-time placeholder proc id to the durable
+  proc id, so completion stamping and deferred kills find their record.'
 size: medium
 proposed_by: bbugyi200.athena.0h3
-create_time: 2026-09-06 17:13:11
-status: wip
+status: done
 ---
 
 # Fix `,X` by re-keying launch records from placeholder to durable proc ids
