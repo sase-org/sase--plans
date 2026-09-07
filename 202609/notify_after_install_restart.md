@@ -1,12 +1,29 @@
 ---
 tier: tale
 title: Notify when an install-triggered restart completes
-goal: A running-copy just install produces one polished, actionable macOS completion
-  notification from the successfully relaunched app without changing install reliability.
+goal:
+  A running-copy just install produces one polished, actionable macOS completion
+  notification from the successfully relaunched app without changing install
+  reliability.
 size: medium
 proposed_by: bbugyi200.athena.01k.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xz.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xz.1/README.md)
+  - [bbugyi200.athena.sase-xz.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xz.2/README.md)
+  - [bbugyi200.athena.sase-xz.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xz.3/README.md)
+  - [bbugyi200.athena.sase-xz.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xz.4/README.md)
+- **COMMITS:**
+  - [7ca1654](https://github.com/sase-org/sase/commit/7ca1654a2175b3e042b862f9bacb20f04535d2bc)
+    — feat(pager): add source-language facade over the rust contract
+  - [0aa7cb9](https://github.com/sase-org/sase/commit/0aa7cb9e965b504f08a6b3fccef69b84902c03a7)
+    — feat(pager): add inactive syntax span engine
+  - [a9f95ca](https://github.com/sase-org/sase/commit/a9f95ca5e64510df9f6161ee259d4d99d042537f)
+    — feat(pager): thread source-language syntax hints through screen and layout
+  - [dbf9413](https://github.com/sase-org/sase/commit/dbf94132ce3d34ec849eed9ab82e8cb401aec443)
+    — feat(pager): activate file-aware syntax highlighting at every entry point
 
 # Plan: Notify when an install-triggered restart completes
 
