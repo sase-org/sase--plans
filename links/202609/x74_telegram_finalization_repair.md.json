@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/x74_telegram_finalization_repair.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T21:30:51Z",
+      "created_by": "06c",
+      "description": "Need approved plan contents before implementation",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:06c",
+      "target_ref": "plan:202609/x74_telegram_finalization_repair.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
