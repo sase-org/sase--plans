@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/pager_link_reliability.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T18:50:48Z",
+      "created_by": "sase-xy.4.land--1",
+      "description": "Need the parent epic's approved scope and readiness criteria before deciding whether it can close after child sase-xy.4",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xy.4.land--1",
+      "target_ref": "plan:202609/pager_link_reliability.md",
+      "uses": 2
+    }
+  ],
+  "schema_version": 2
+}

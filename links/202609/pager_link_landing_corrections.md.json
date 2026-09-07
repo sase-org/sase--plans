@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/pager_link_landing_corrections.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T18:37:29Z",
+      "created_by": "sase-xy.4.land--1",
+      "description": "Need the approved child plan and acceptance criteria for final landing verification",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xy.4.land--1",
+      "target_ref": "plan:202609/pager_link_landing_corrections.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
