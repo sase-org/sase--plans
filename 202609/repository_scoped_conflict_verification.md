@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Scope conflict-repair verification to the repository being repaired
-goal:
-  Sidecar conflict repair validates the resolved content without borrowing an unrelated
-  repository's gate, while preserving required verification for code repositories.
+goal: Sidecar conflict repair validates the resolved content without borrowing an
+  unrelated repository's gate, while preserving required verification for code repositories.
 size: small
 proposed_by: bbugyi200.athena.research.1m.cdx.f0.f0
-create_time: 2026-09-07 15:43:07
-status: wip
+status: done
 ---
 
 # Scope conflict-repair verification to the repository being repaired
