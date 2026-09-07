@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Complete the machine CLI and enrollment phase
-goal: Operators can explicitly enroll, inspect, maintain, and diagnose remote SASE
-  machines through the CLI and onboarding flow without implicit trust, ambient network
-  work, or secret exposure.
+goal:
+  Operators can explicitly enroll, inspect, maintain, and diagnose remote SASE machines
+  through the CLI and onboarding flow without implicit trust, ambient network work, or
+  secret exposure.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.8
 bead: sase-xe.8
@@ -12,6 +13,11 @@ status: done
 
 - **BEAD:**
   [sase-xe.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.8.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.8.md)
+- **COMMITS:**
+  - [09c9325](https://github.com/sase-org/sase/commit/09c93253dc76bb71c71ee4e855de7998172abb73)
+    — feat(dispatch): add machine enrollment CLI
 
 # Plan: Complete the machine CLI and enrollment phase
 
