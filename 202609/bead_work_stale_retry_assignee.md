@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Unblock bead-work relaunches held by stale retry-agent bead claims
-goal: sase bead work automatically relaunches phases whose beads are claimed by dead
+goal:
+  sase bead work automatically relaunches phases whose beads are claimed by dead
   retry-descendant agents, preserves slots whose retry descendant is still live, and
   only blocks on genuinely foreign assignees.
 size: medium
 proposed_by: bbugyi200.athena.01d
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.01d](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01d.md)
+- **COMMITS:**
+  - [635c5a3](https://github.com/sase-org/sase/commit/635c5a31b73c638375f7b93bb42a6d5e21ebccde)
+    — fix(bead): unblock bead work relaunch when assignee is a stale retry descendant
 
 # Unblock `sase bead work` Relaunches When A Bead Is Held By A Stale Retry Agent
 
