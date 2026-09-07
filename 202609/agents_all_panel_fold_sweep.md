@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Add an all-panel fold sweep keymap (`_`) to the Agents tab
-goal:
-  On the Agents tab, `_` collapses every open agent-node and clan fold across every
-  visible tribe panel in one press, and re-expands exactly what the sweep records closed
-  once nothing is left to collapse anywhere — working identically from row,
+goal: On the Agents tab, `_` collapses every open agent-node and clan fold across
+  every visible tribe panel in one press, and re-expands exactly what the sweep records
+  closed once nothing is left to collapse anywhere — working identically from row,
   group-banner, whole-panel, and collapsed-panel focus.
 size: medium
 proposed_by: bbugyi200.athena.043
-create_time: 2026-09-07 14:43:00
-status: wip
+status: done
 ---
 
 # Plan: Agents-tab all-panel fold sweep (`_`)
