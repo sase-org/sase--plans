@@ -1,15 +1,22 @@
 ---
 tier: tale
 title: Close the attention preview gap and verify sase-xe.14
-goal: A pending remote question or gate carries a bounded, sanitized, digest-validated
+goal:
+  A pending remote question or gate carries a bounded, sanitized, digest-validated
   preview of its decision and command detail, served through the existing fleet content
   route, so the attention modal genuinely blocks approval until the reviewer can see
-  what they are approving; both repositories verify clean and sase-xe.14 closes with
-  a real verification note.
+  what they are approving; both repositories verify clean and sase-xe.14 closes with a
+  real verification note.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.03r](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.03r/README.md)
+- **COMMITS:**
+  - [bd2db93](https://github.com/bbugyi200/dotfiles/commit/bd2db93ae848eb0bc164c5812f591f8427542db6)
+    — feat(sase): rename research_a/research_b model aliases to sol_or_grok/opus_or_grok
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
