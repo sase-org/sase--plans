@@ -13,10 +13,10 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.03r](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.03r/README.md)
+  - [bbugyi200.athena.research.1l.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cld/README.md)
 - **COMMITS:**
-  - [bd2db93](https://github.com/bbugyi200/dotfiles/commit/bd2db93ae848eb0bc164c5812f591f8427542db6)
-    — feat(sase): rename research_a/research_b model aliases to sol_or_grok/opus_or_grok
+  - [441a3c9](https://github.com/sase-org/sase--research/commit/441a3c9066d54159275288f2e6da3cac28c8338d)
+    — docs(research): add LLM provider usage-metrics report (researcher B)
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
