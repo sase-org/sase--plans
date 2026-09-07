@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.00h
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.00h](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00h.md)
+- **COMMITS:**
+  - [53c262a](https://github.com/sase-org/sase/commit/53c262a096b85de5f61cf17fd3f8705fe4a934c2)
+    — fix(axe): retain subprocess diagnostics in error digests
+
 # Preserve useful diagnostics for failed AXE subprocesses
 
 ## Outcome
