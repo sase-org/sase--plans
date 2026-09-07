@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Add Focus and Fleet agent views
-goal:
-  ACE presents local and enrolled-machine agents through responsive Focus and Fleet
-  views with honest freshness, durable follows, and no unnecessary remote work.
+goal: ACE presents local and enrolled-machine agents through responsive Focus and
+  Fleet views with honest freshness, durable follows, and no unnecessary remote work.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.11
 bead: sase-xe.11
-create_time: 2026-09-06 21:18:05
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
