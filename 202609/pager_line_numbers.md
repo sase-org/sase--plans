@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Pager line-number gutter and `;`/`:` go-to-line prompt
-goal:
-  Every SASE pager target renders an always-on line-number gutter, and `;`/`:` open a
-  distinct one-line go-to-line prompt that shows the valid `1-<N>` range and jumps
-  exactly.
+goal: Every SASE pager target renders an always-on line-number gutter, and `;`/`:`
+  open a distinct one-line go-to-line prompt that shows the valid `1-<N>` range and
+  jumps exactly.
 size: medium
 proposed_by: bbugyi200.athena.05a
-create_time: 2026-09-07 16:21:37
-status: wip
+status: done
 ---
 
 # Pager Line-Number Gutter And `;` / `:` Go-To-Line Prompt
