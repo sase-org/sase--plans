@@ -5,8 +5,7 @@ goal: Provider-priority intent is truthful in the top bar and orphaned modal sta
 size: small
 proposed_by: bbugyi200.athena.sase-xf.land
 bead: sase-xf
-create_time: 2026-09-07 01:10:52
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/provider_priority.md](provider_priority.md)
