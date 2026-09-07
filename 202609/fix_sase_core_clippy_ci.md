@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Fix sase-core Clippy CI failures
-goal:
-  Restore sase-core master CI and unblock Release-plz without changing fleet-attention
+goal: Restore sase-core master CI and unblock Release-plz without changing fleet-attention
   behavior or weakening lint enforcement.
 size: small
 proposed_by: bbugyi200.athena.053
-create_time: 2026-09-07 16:04:42
-status: wip
+status: done
 ---
 
 # Plan: Fix sase-core Clippy CI failures
