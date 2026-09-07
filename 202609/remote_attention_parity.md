@@ -1,12 +1,12 @@
 ---
 tier: tale
 title: Implement remote question, gate, and notification attention parity
-goal:
-  A followed remote agent's pending question or gate shows up in Focus with the same
-  visual language as local attention, is readable before it is answered, and is answered
-  or approved exactly once through a journaled consume-once mutation that tells a losing
-  controller "Already answered on <host>" with the settled result, while reconnects and
-  refreshes never re-toast an attention request the viewer has already been shown.
+goal: A followed remote agent's pending question or gate shows up in Focus with the
+  same visual language as local attention, is readable before it is answered, and
+  is answered or approved exactly once through a journaled consume-once mutation that
+  tells a losing controller "Already answered on <host>" with the settled result,
+  while reconnects and refreshes never re-toast an attention request the viewer has
+  already been shown.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14
 bead: sase-xe.14
@@ -16,11 +16,6 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.14](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.14.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-xe.14](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.14.md)
-- **COMMITS:**
-  - [287048d](https://github.com/sase-org/sase/commit/287048d601b6a2003aa01e12743c2ed053c7c982)
-    — feat(dispatch): surface and answer remote question/gate attention in Focus
 
 # Plan: Implement remote question, gate, and notification attention parity
 
