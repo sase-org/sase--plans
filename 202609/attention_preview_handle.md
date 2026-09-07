@@ -17,6 +17,7 @@ status: done
   - [bbugyi200.athena.research.1l.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cld/README.md)
   - [bbugyi200.athena.research.1l.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.final/README.md)
   - [bbugyi200.athena.research.1l.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.image/README.md)
+  - [bbugyi200.athena.research.1m.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.cdx/README.md)
   - [bbugyi200.athena.research.1m.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.cld/README.md)
 - **COMMITS:**
   - [441a3c9](https://github.com/sase-org/sase--research/commit/441a3c9066d54159275288f2e6da3cac28c8338d)
@@ -29,6 +30,8 @@ status: done
     — docs(research): add provider usage infographic
   - [550ab69](https://github.com/sase-org/sase--research/commit/550ab69d8889bf579e6b1d7d38ddb0d4b5cdef46)
     — docs(research): add provider quota CLI/TUI UX design (researcher B)
+  - [e7b70cf](https://github.com/sase-org/sase--research/commit/e7b70cf05272a730992e7ea4bbab8164c7e5b4ee)
+    — docs(research): design provider usage UX
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
