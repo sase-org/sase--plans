@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/bead_work_stale_retry_assignee.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T11:42:08Z",
+      "created_by": "01d--code",
+      "description": "Implement the approved plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:01d--code",
+      "target_ref": "plan:202609/bead_work_stale_retry_assignee.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
