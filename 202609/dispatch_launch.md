@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Implement reliable remote dispatch launch
-goal: '`%dispatch:<machine>` launches exactly once on the pinned remote host and remains
-  recoverable across lost replies without local fallback.'
+goal:
+  "`%dispatch:<machine>` launches exactly once on the pinned remote host and remains
+  recoverable across lost replies without local fallback."
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.12
 bead: sase-xe.12
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.12.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.12](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.12.md)
+- **COMMITS:**
+  - [06fb5c3](https://github.com/sase-org/sase-core/commit/06fb5c38ec612253ce1d6ced75e4a4ae89278ed4)
+    — feat(fleet): add remote launch dispatch contract
 
 # Implement `%dispatch` and reliable remote launch
 
