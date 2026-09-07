@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Fix sase-core Clippy CI failures
-goal:
-  Restore sase-core master CI and unblock Release-plz without changing fleet-attention
+goal: Restore sase-core master CI and unblock Release-plz without changing fleet-attention
   behavior or weakening lint enforcement.
 size: small
 proposed_by: bbugyi200.athena.053
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-y5.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-y5.1/README.md)
-- **COMMITS:**
-  - [07bd3bc](https://github.com/sase-org/sase-core/commit/07bd3bc80be6cefba3643a36b74c1ebf2f6e6b20)
-    — feat(provider-usage): add observation and public read contracts
 
 # Plan: Fix sase-core Clippy CI failures
 
