@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Complete the machine CLI and enrollment phase
-goal:
-  Operators can explicitly enroll, inspect, maintain, and diagnose remote SASE machines
-  through the CLI and onboarding flow without implicit trust, ambient network work, or
-  secret exposure.
+goal: Operators can explicitly enroll, inspect, maintain, and diagnose remote SASE
+  machines through the CLI and onboarding flow without implicit trust, ambient network
+  work, or secret exposure.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.8
 bead: sase-xe.8
-create_time: 2026-09-06 19:22:05
-status: wip
+status: done
 ---
 
 - **BEAD:**
