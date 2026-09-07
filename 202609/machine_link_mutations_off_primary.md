@@ -53,9 +53,10 @@ phases:
 proposed_by: bbugyi200.athena.04n
 create_time: 2026-09-07 14:58:55
 status: wip
+bead_id: sase-y3
 ---
 
-- **BEAD:** [sase-y1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-y1/README.md)
+- **BEAD:** [sase-y3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-y3/README.md)
 
 # Keep Machine Artifact-Link Mutations Out Of The Primary Workspace's Sidecar Clones
 
