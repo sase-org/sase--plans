@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Preserve useful diagnostics for failed AXE subprocesses
-goal:
-  AXE error digests retain bounded subprocess failure details and run identity after
-  per-run logs are pruned.
+goal: AXE error digests retain bounded subprocess failure details and run identity
+  after per-run logs are pruned.
 size: medium
 proposed_by: bbugyi200.athena.00h
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.00h](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00h.md)
-- **COMMITS:**
-  - [53c262a](https://github.com/sase-org/sase/commit/53c262a096b85de5f61cf17fd3f8705fe4a934c2)
-    — fix(axe): retain subprocess diagnostics in error digests
 
 # Preserve useful diagnostics for failed AXE subprocesses
 
@@ -155,15 +148,3 @@ attempt to eliminate network timeouts, suppress failures, change retention polic
 repair historical reports, or restart the running services. Completion should report the
 diagnostic fix and its tests separately from any fresh read-only observation of live
 Telegram health.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact                              | Why                                                               | Uses |
-| -------- | ------------------------------------- | ----------------------------------------------------------------- | ---: |
-| cited-by | [agent:bbugyi200.athena.00h--code][1] | prompt reference @plan:202609/axe_subprocess_error_diagnostics.md |    1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00h.md
-
-<!-- sase:referenced-by:end -->
