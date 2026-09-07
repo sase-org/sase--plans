@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Local federation worker and Python remote facade
-goal: 'Remote fleet consumers use a secure, on-demand Rust worker for bounded cached
+goal: "Remote fleet consumers use a secure, on-demand Rust worker for bounded cached
   reads, host-isolated reconciliation, and restart-transparent access through a thin
   Python facade, while local-only SASE remains network- and worker-free.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.10
 bead: sase-xe.10
@@ -15,6 +15,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.10.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.10](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.10.md)
+- **COMMITS:**
+  - [69f24c9](https://github.com/sase-org/sase-core/commit/69f24c90d134ebee039da0236cdcafde035253ad)
+    — feat(gateway): add local federation worker
 
 # Plan: Local federation worker and Python remote facade
 
