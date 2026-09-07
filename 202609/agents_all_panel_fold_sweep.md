@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Add an all-panel fold sweep keymap (`_`) to the Agents tab
-goal: On the Agents tab, `_` collapses every open agent-node and clan fold across
-  every visible tribe panel in one press, and re-expands exactly what the sweep records
-  closed once nothing is left to collapse anywhere — working identically from row,
+goal:
+  On the Agents tab, `_` collapses every open agent-node and clan fold across every
+  visible tribe panel in one press, and re-expands exactly what the sweep records closed
+  once nothing is left to collapse anywhere — working identically from row,
   group-banner, whole-panel, and collapsed-panel focus.
 size: medium
 proposed_by: bbugyi200.athena.043
@@ -399,3 +400,15 @@ or a module-private helper used in its own file.
 - Collapsing or expanding whole panels — that stays `h` / `l` / `=` / `L`.
 - Persisting sweep records across sessions; like `-`'s records, they stay session-local.
 - Any change in `../sase-core` (see §1).
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                          | Uses |
+| -------- | ------------------------------------- | ------------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.043--code][1] | prompt reference @plan:202609/agents_all_panel_fold_sweep.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.043.md
+
+<!-- sase:referenced-by:end -->
