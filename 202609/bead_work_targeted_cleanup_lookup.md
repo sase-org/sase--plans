@@ -1,10 +1,11 @@
 ---
 tier: tale
 title: Fix bead-work cleanup TypeError with a targeted owner lookup
-goal: All three bead-work cleanup fast paths call the post-635c5a31b classify signatures
+goal:
+  All three bead-work cleanup fast paths call the post-635c5a31b classify signatures
   through a bounded owner lookup, so epic retries like `sase bead work x7 -Y` complete
-  without a TypeError while keeping the no-full-rescan perf contract and the live-retry-descendant
-  PRESERVE semantics.
+  without a TypeError while keeping the no-full-rescan perf contract and the
+  live-retry-descendant PRESERVE semantics.
 size: medium
 proposed_by: bbugyi200.athena.01d.f2
 status: done
@@ -198,3 +199,17 @@ and/or `test_cli_work_cleanup_assignees.py`, reusing `write_bead_agent_meta`,
 - The root cause (two branches individually green, semantically conflicting merge) is
   the accepted trade-off recorded in the `ci-two-speed-split` decision; no process
   change is proposed here.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                 | Why                                                                | Uses |
+| -------- | ---------------------------------------- | ------------------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.01d.f2--code][1] | prompt reference @plan:202609/bead_work_targeted_cleanup_lookup.md |    1 |
+| read-by  | [agent:01d.f2--code][1]                  | Need the approved plan to implement targeted cleanup lookup        |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01d.f2.md
+
+<!-- sase:referenced-by:end -->
