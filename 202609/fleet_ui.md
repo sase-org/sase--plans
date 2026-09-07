@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Add Focus and Fleet agent views
-goal: ACE presents local and enrolled-machine agents through responsive Focus and
-  Fleet views with honest freshness, durable follows, and no unnecessary remote work.
+goal:
+  ACE presents local and enrolled-machine agents through responsive Focus and Fleet
+  views with honest freshness, durable follows, and no unnecessary remote work.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.11
 bead: sase-xe.11
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.11.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.11](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.11.md)
+- **COMMITS:**
+  - [e2fc10c](https://github.com/sase-org/sase/commit/e2fc10c3c70d1ac1b778dbb267689e10e39fc264)
+    — feat(tui): add focus and fleet agents views
 
 # Add Focus and Fleet agent views
 
