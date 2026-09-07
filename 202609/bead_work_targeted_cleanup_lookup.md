@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Fix bead-work cleanup TypeError with a targeted owner lookup
-goal:
-  All three bead-work cleanup fast paths call the post-635c5a31b classify signatures
+goal: All three bead-work cleanup fast paths call the post-635c5a31b classify signatures
   through a bounded owner lookup, so epic retries like `sase bead work x7 -Y` complete
-  without a TypeError while keeping the no-full-rescan perf contract and the
-  live-retry-descendant PRESERVE semantics.
+  without a TypeError while keeping the no-full-rescan perf contract and the live-retry-descendant
+  PRESERVE semantics.
 size: medium
 proposed_by: bbugyi200.athena.01d.f2
-create_time: 2026-09-07 09:11:19
-status: wip
+status: done
 ---
 
 # Fix bead-work cleanup TypeError: give targeted paths a real owner lookup
