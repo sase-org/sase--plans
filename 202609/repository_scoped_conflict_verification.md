@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Scope conflict-repair verification to the repository being repaired
-goal: Sidecar conflict repair validates the resolved content without borrowing an
-  unrelated repository's gate, while preserving required verification for code repositories.
+goal:
+  Sidecar conflict repair validates the resolved content without borrowing an unrelated
+  repository's gate, while preserving required verification for code repositories.
 size: small
 proposed_by: bbugyi200.athena.research.1m.cdx.f0.f0
 status: done
@@ -203,3 +204,16 @@ instruction is gone, and confirm no repair lifecycle or global configuration cha
 Finish through `/sase_final` with the implementation, verification result, and accurate
 skill-deployment status. This planning turn creates only this scratch plan and submits
 it through `sase plan propose`; implementation begins after the plan handoff.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                                                | Why                                                                      | Uses |
+| -------- | ------------------------------------------------------- | ------------------------------------------------------------------------ | ---: |
+| cited-by | [agent:bbugyi200.athena.research.1m.cdx.f0.f0--code][1] | prompt reference @plan:202609/repository_scoped_conflict_verification.md |    1 |
+
+[1]:
+  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.1m.cdx.f0.f0.md
+
+<!-- sase:referenced-by:end -->

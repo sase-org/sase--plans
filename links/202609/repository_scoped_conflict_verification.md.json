@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/repository_scoped_conflict_verification.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T19:55:13Z",
+      "created_by": "bbugyi200.athena.research.1m.cdx.f0.f0--code",
+      "description": "prompt reference @plan:202609/repository_scoped_conflict_verification.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.research.1m.cdx.f0.f0--code",
+      "target_ref": "plan:202609/repository_scoped_conflict_verification.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
