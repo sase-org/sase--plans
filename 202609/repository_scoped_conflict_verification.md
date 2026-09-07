@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.research.1m.cdx.f0.f0
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.research.1m.cdx.f0.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.research.1m.cdx.f0.f0.md)
+- **COMMITS:**
+  - [e5106d4](https://github.com/sase-org/sase/commit/e5106d490f89ae28682a3264555f2d8722a4bacc)
+    — fix(commit): scope conflict-repair verification to target repo
+
 # Scope conflict-repair verification to the repository being repaired
 
 ## Problem and evidence
