@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.00h
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.00h](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.00h.md)
+- **COMMITS:**
+  - [c3c5e8a](https://github.com/sase-org/sase-core/commit/c3c5e8ac2bf3912465394379486ff21564c4f90b)
+    — feat(axe): normalize chop subprocess diagnostics
+
 # Preserve useful diagnostics for failed AXE subprocesses
 
 ## Outcome
