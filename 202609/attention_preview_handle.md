@@ -1,43 +1,15 @@
 ---
 tier: tale
 title: Close the attention preview gap and verify sase-xe.14
-goal:
-  A pending remote question or gate carries a bounded, sanitized, digest-validated
+goal: A pending remote question or gate carries a bounded, sanitized, digest-validated
   preview of its decision and command detail, served through the existing fleet content
   route, so the attention modal genuinely blocks approval until the reviewer can see
-  what they are approving; both repositories verify clean and sase-xe.14 closes with a
-  real verification note.
+  what they are approving; both repositories verify clean and sase-xe.14 closes with
+  a real verification note.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1l.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cdx/README.md)
-  - [bbugyi200.athena.research.1l.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cld/README.md)
-  - [bbugyi200.athena.research.1l.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.final/README.md)
-  - [bbugyi200.athena.research.1l.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.image/README.md)
-  - [bbugyi200.athena.research.1m.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.cdx/README.md)
-  - [bbugyi200.athena.research.1m.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.cld/README.md)
-  - [bbugyi200.athena.research.1m.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.final/README.md)
-  - [bbugyi200.athena.research.1m.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1m.image/README.md)
-- **COMMITS:**
-  - [441a3c9](https://github.com/sase-org/sase--research/commit/441a3c9066d54159275288f2e6da3cac28c8338d)
-    — docs(research): add LLM provider usage-metrics report (researcher B)
-  - [2ebbb46](https://github.com/sase-org/sase--research/commit/2ebbb4692a88c3d5ad2f33d94f9a3527d5780987)
-    — docs(research): assess provider usage metrics
-  - [ae818bf](https://github.com/sase-org/sase--research/commit/ae818bf07170b763f8e0fed9078f943151541a2f)
-    — docs(research): consolidate LLM provider subscription usage metrics research
-  - [a277db1](https://github.com/sase-org/sase--research/commit/a277db127af64be0f22686713c751e4f1caf405e)
-    — docs(research): add provider usage infographic
-  - [550ab69](https://github.com/sase-org/sase--research/commit/550ab69d8889bf579e6b1d7d38ddb0d4b5cdef46)
-    — docs(research): add provider quota CLI/TUI UX design (researcher B)
-  - [e7b70cf](https://github.com/sase-org/sase--research/commit/e7b70cf05272a730992e7ea4bbab8164c7e5b4ee)
-    — docs(research): design provider usage UX
-  - [1e7de2a](https://github.com/sase-org/sase--research/commit/1e7de2a38014ed772b8d9af2e93dac326a1039ed)
-    — docs(research): synthesize subscription capacity CLI and TUI design
-  - [ea4051b](https://github.com/sase-org/sase--research/commit/ea4051b4d89a37a5453e3fae125e63d23e3e5e10)
-    — docs: add subscription capacity UX infographic
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
