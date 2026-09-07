@@ -1,24 +1,14 @@
 ---
 tier: tale
 title: Cycle Ctrl-A/Ctrl-E across physical lines in the capture editor
-goal:
-  In the Bob Mac Capture editor, Ctrl-A and Ctrl-E move to the beginning/end of the
-  current physical line, and when the caret already sits on that edge they step to the
-  beginning of the previous line / end of the next line, stopping at the first and last
-  line.
+goal: In the Bob Mac Capture editor, Ctrl-A and Ctrl-E move to the beginning/end of
+  the current physical line, and when the caret already sits on that edge they step
+  to the beginning of the previous line / end of the next line, stopping at the first
+  and last line.
 size: medium
 proposed_by: bbugyi200.athena.01e
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1k.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1k.cdx/README.md)
-  - [bbugyi200.athena.research.1k.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1k.cld/README.md)
-- **COMMITS:**
-  - [172e163](https://github.com/sase-org/sase--research/commit/172e16361b99b5308aa73eda11e312f3b1a2e7e6)
-    — docs(research): design file-type syntax highlighting for the pager
-  - [0f6b52b](https://github.com/sase-org/sase--research/commit/0f6b52bcf5d0867da6bf9e39f5f8a2070a3c7297)
-    — docs(research): design layered pager syntax highlighting
 
 # Plan: Cycle Ctrl-A/Ctrl-E across physical lines in the capture editor
 
