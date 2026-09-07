@@ -11,6 +11,12 @@ proposed_by: bbugyi200.athena.043
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.043](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.043.md)
+- **COMMITS:**
+  - [df86d7e](https://github.com/sase-org/sase/commit/df86d7e5d3af9e57c39f8865b3abf61d08bb63c6)
+    — feat(agents-panel): add all-panel fold sweep bound to \`_\`
+
 # Plan: Agents-tab all-panel fold sweep (`_`)
 
 ## 1. Outcome
