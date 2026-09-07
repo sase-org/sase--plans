@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Stop gate shells from releasing a live finalizer run's workspace claim
-goal:
-  A gate created during a host finalizer turn is refused, and gate settlement never
-  frees a workspace whose creator process is still alive.
+goal: A gate created during a host finalizer turn is refused, and gate settlement
+  never frees a workspace whose creator process is still alive.
 size: medium
 proposed_by: bbugyi200.athena.03z
-create_time: 2026-09-07 14:26:28
-status: wip
+status: done
 ---
 
 # Stop gate shells from releasing a live finalizer run's workspace claim
