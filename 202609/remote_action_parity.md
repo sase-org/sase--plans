@@ -1,16 +1,14 @@
 ---
 tier: tale
 title: Implement remote lifecycle management parity
-goal:
-  A followed remote agent can be stopped, retried, forked on its own machine, and read
-  through bounded content handles with the same action vocabulary as a local agent,
-  under journal protection and exact-instance fencing, with bulk actions partitioned per
-  origin and honest per-target results.
+goal: A followed remote agent can be stopped, retried, forked on its own machine,
+  and read through bounded content handles with the same action vocabulary as a local
+  agent, under journal protection and exact-instance fencing, with bulk actions partitioned
+  per origin and honest per-target results.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.13
 bead: sase-xe.13
-create_time: 2026-09-07 07:40:03
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
