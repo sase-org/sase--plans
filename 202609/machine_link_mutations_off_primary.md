@@ -1,62 +1,62 @@
 ---
 tier: epic
 title: Keep machine artifact-link mutations out of primary sidecar clones
-goal: "SASE background link maintenance never dirties or commits into the sidecar clones
-  nested under a project's primary (human) workspace checkout: rename-repair deletions
-  are committable, every background writer authorizes before mutating with an honest
-  machine origin, machine writes land in hidden host-owned sidecar clones that push to
-  the remote, the primary's clones converge via pull-based auto-sync only, and the
-  currently stranded deletions are healed with a doctor guardrail against recurrence.
+goal: 'SASE background link maintenance never dirties or commits into the sidecar
+  clones nested under a project''s primary (human) workspace checkout: rename-repair
+  deletions are committable, every background writer authorizes before mutating with
+  an honest machine origin, machine writes land in hidden host-owned sidecar clones
+  that push to the remote, the primary''s clones converge via pull-based auto-sync
+  only, and the currently stranded deletions are healed with a doctor guardrail against
+  recurrence.
 
-  "
+  '
 phases:
-  - id: stage-removed-link-indexes
-    title: Make removed link indexes committable
-    depends_on: []
-    size: small
-    description:
-      "stage-removed-link-indexes: validate deleted per-artifact link-index paths by
-      canonical location instead of on-disk content in _group_valid_indexes so rename
-      repairs commit their deletions alongside their rewrites, with regression tests
-      proving one clean commit and no leftover worktree dirt."
-  - id: authorize-before-mutate
-    title: Authorize before mutating, with honest machine origin
-    depends_on:
-      - stage-removed-link-indexes
-    size: medium
-    description:
-      "authorize-before-mutate: gate every background link-maintenance writer (rename
-      repair, backfill sweep, outbox drain, referenced-by refresh) on machine
-      writability of each sidecar root before any worktree write, skip unauthorized
-      roots with diagnostics, and replace defaulted user mutation origins with explicit
-      machine origin on background commit paths."
-  - id: hidden-clone-machine-writes
-    title: Machine writes move to hidden host-owned sidecar clones
-    depends_on:
-      - stage-removed-link-indexes
-      - authorize-before-mutate
-    size: large
-    description:
-      "hidden-clone-machine-writes: add a machine-context artifact-link store resolution
-      rooted at hidden host-owned sidecar clones following the agents-sidecar precedent,
-      bless those clones for machine mutation in the ownership contract without
-      weakening primary-#0 refusal, switch the artifact_link_backfill chop and
-      agents-sync referenced-by drain to it, and verify primary clones converge via
-      pull-based auto-sync."
-  - id: heal-and-guard
-    title: Heal stranded deletions and add a doctor guardrail
-    depends_on:
-      - hidden-clone-machine-writes
-    size: small
-    description:
-      "heal-and-guard: add a doctor check for dirty machine-managed sidecar clones under
-      a primary checkout with a restore-based user-invoked fix, propose the one-time
-      restore of the six stranded research link-index deletions through a gate, and file
-      task beads proposing a decisions-web record plus any unpublished-commit retry gap."
+- id: stage-removed-link-indexes
+  title: Make removed link indexes committable
+  depends_on: []
+  size: small
+  description: 'stage-removed-link-indexes: validate deleted per-artifact link-index
+    paths by canonical location instead of on-disk content in _group_valid_indexes
+    so rename repairs commit their deletions alongside their rewrites, with regression
+    tests proving one clean commit and no leftover worktree dirt.'
+- id: authorize-before-mutate
+  title: Authorize before mutating, with honest machine origin
+  depends_on:
+  - stage-removed-link-indexes
+  size: medium
+  description: 'authorize-before-mutate: gate every background link-maintenance writer
+    (rename repair, backfill sweep, outbox drain, referenced-by refresh) on machine
+    writability of each sidecar root before any worktree write, skip unauthorized
+    roots with diagnostics, and replace defaulted user mutation origins with explicit
+    machine origin on background commit paths.'
+- id: hidden-clone-machine-writes
+  title: Machine writes move to hidden host-owned sidecar clones
+  depends_on:
+  - stage-removed-link-indexes
+  - authorize-before-mutate
+  size: large
+  description: 'hidden-clone-machine-writes: add a machine-context artifact-link store
+    resolution rooted at hidden host-owned sidecar clones following the agents-sidecar
+    precedent, bless those clones for machine mutation in the ownership contract without
+    weakening primary-#0 refusal, switch the artifact_link_backfill chop and agents-sync
+    referenced-by drain to it, and verify primary clones converge via pull-based auto-sync.'
+- id: heal-and-guard
+  title: Heal stranded deletions and add a doctor guardrail
+  depends_on:
+  - hidden-clone-machine-writes
+  size: small
+  description: 'heal-and-guard: add a doctor check for dirty machine-managed sidecar
+    clones under a primary checkout with a restore-based user-invoked fix, propose
+    the one-time restore of the six stranded research link-index deletions through
+    a gate, and file task beads proposing a decisions-web record plus any unpublished-commit
+    retry gap.'
 proposed_by: bbugyi200.athena.04n
 create_time: 2026-09-07 14:58:55
 status: wip
+bead_id: sase-y1
 ---
+
+- **BEAD:** [sase-y1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-y1/README.md)
 
 # Keep Machine Artifact-Link Mutations Out Of The Primary Workspace's Sidecar Clones
 
