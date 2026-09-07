@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Preserve useful diagnostics for failed AXE subprocesses
-goal:
-  AXE error digests retain bounded subprocess failure details and run identity after
-  per-run logs are pruned.
+goal: AXE error digests retain bounded subprocess failure details and run identity
+  after per-run logs are pruned.
 size: medium
 proposed_by: bbugyi200.athena.00h
-create_time: 2026-09-06 21:42:33
-status: wip
+status: done
 ---
 
 # Preserve useful diagnostics for failed AXE subprocesses
