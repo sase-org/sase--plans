@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/remote_action_parity.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T11:41:15Z",
+      "created_by": "sase-xe.13",
+      "description": "Read approved plan remaining verification, close, and follow-up rules for sase-xe.13",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xe.13",
+      "target_ref": "plan:202609/remote_action_parity.md",
+      "uses": 2
+    }
+  ],
+  "schema_version": 2
+}
