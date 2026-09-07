@@ -1,10 +1,11 @@
 ---
 tier: tale
 title: Implement remote lifecycle management parity
-goal: A followed remote agent can be stopped, retried, forked on its own machine,
-  and read through bounded content handles with the same action vocabulary as a local
-  agent, under journal protection and exact-instance fencing, with bulk actions partitioned
-  per origin and honest per-target results.
+goal:
+  A followed remote agent can be stopped, retried, forked on its own machine, and read
+  through bounded content handles with the same action vocabulary as a local agent,
+  under journal protection and exact-instance fencing, with bulk actions partitioned per
+  origin and honest per-target results.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.13
 bead: sase-xe.13
@@ -14,6 +15,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
 - **BEAD:**
   [sase-xe.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.13.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.13](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.13.md)
+- **COMMITS:**
+  - [3965615](https://github.com/sase-org/sase-core/commit/396561556ec0d0c4f8ede23b01a182913e3a359d)
+    — feat(fleet): add journaled mutation contract and mutate gateway
 
 # Plan: Implement remote lifecycle management parity
 
