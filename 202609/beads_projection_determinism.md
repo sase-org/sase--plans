@@ -1,0 +1,221 @@
+---
+tier: epic
+title: Bead projection determinism fix
+goal: "Regenerating issues.jsonl from bead event streams is byte-stable in every
+  workspace clone, and agent commit finalizers stop failing on beads:issues.jsonl dirt
+  they did not cause.
+
+  "
+phases:
+  - id: core-link-replay-parity
+    title: Align link mutation and replay in sase-core
+    depends_on: []
+    size: small
+    description:
+      "core-link-replay-parity: remove the mutation-side updated_at bump on bead link
+      add/remove so it matches event replay, and pin the reprojection byte-identity
+      invariant with regression tests."
+  - id: finalizer-reprojection-autocommit
+    title: Auto-commit proven reprojection-only beads diffs
+    depends_on: []
+    size: medium
+    description:
+      "finalizer-reprojection-autocommit: teach the builtin commit finalizer to prove a
+      beads-sidecar diff is a pure issues.jsonl reprojection and commit it host-owned
+      instead of failing the agent."
+  - id: store-reheal-and-pin
+    title: Settle the shared beads store and require the fixed core
+    depends_on:
+      - core-link-replay-parity
+    size: small
+    description:
+      "store-reheal-and-pin: raise the sase-core-rs floor to the fixed release,
+      reproject the shared beads store once with doctor --fix-projection, and verify the
+      store stays clean."
+proposed_by: bbugyi200.athena.0h2
+status: done
+bead_id: sase-xq
+---
+
+# Fix Bead Projection Non-Determinism That Fails Agent Commit Finalizers
+
+## Problem
+
+SASE agents keep failing their builtin commit finalizer with:
+
+```
+sase.finalizers.commit_types.BuiltinCommitFinalizerError: Commit finalizer failed:
+uncommitted changes remain after 1 finalizer pass(es) in
+beads=<workspace>/sase/repos/beads: beads:issues.jsonl.
+```
+
+The dirty file is always `issues.jsonl` in the beads sidecar repo — the _generated
+projection_ of the canonical event streams under `events/streams/` — with no
+accompanying event-stream change. Agents did not knowingly edit it, cannot legitimately
+commit it, and so the run is marked FAILED.
+
+## Verified Root Cause
+
+The projection is not a pure function of the event streams: the in-memory mutation path
+and the event-replay path in the Rust core (`crates/sase_core/src/bead/`) disagree on
+`updated_at` for **bead link** operations, and only for those (dependencies and
+references consistently skip the bump on both sides; updates/notes/open/close/claims
+consistently bump on both sides):
+
+- `add_bead_link` and `remove_bead_link` in `mutation.rs` set the holder issue's
+  `updated_at` to the mutation wall-clock (the
+  `store.issues[holder_index].updated_at = added_at` / `= removed_at` assignments)
+  before saving `issues.jsonl`.
+- The `LinkAdded` / `LinkRemoved` replay arms in `events.rs` (`apply_link_added` and the
+  `LinkRemoved` match arm) update the `links` array but never touch `issue.updated_at`.
+
+This violates the invariant already documented in `events.rs` on
+`apply_update_event_fields`: "a bead reprojected from its events is byte-identical to
+the same bead mutated in memory."
+
+Concrete reproduction from the shared beads sidecar history (commit hashes are stable
+across clones):
+
+1. Beads-sidecar commits `6fa4aa8b4` ("chore(beads): update sase-xo") and `738e1ab9d`
+   ("chore(beads): update artifact links") recorded a `related` link between `sase-xo`
+   and `sase-mb`. The committed `issues.jsonl` carried `sase-mb` with
+   `"updated_at":"2026-09-06T20:08:07Z"` (mutation wall-clock), while `sase-mb`'s own
+   event stream still ends earlier for `updated_at` purposes.
+2. Any other clone that afterwards regenerates the projection (every bead mutation and
+   `sase bead sync` runs `export_jsonl`, which is `MutableStore::load` → replay →
+   `save_issues`) derives `"updated_at":"2026-08-25T22:00:35Z"` for `sase-mb` from
+   replay — a permanent one-line diff against HEAD.
+3. `git_sync` (`src/sase/bead/_sync_git.py`) auto-stages the diff on every bead command,
+   but no host-owned commit path owns it (the mutation was a no-op change-wise), so the
+   workspace's beads sidecar stays dirty.
+4. The builtin commit finalizer (`src/sase/finalizers/commit.py`,
+   `_dispatch_commit_decisions` → residual-repos check) then fails the agent with the
+   error above. This was reproduced end-to-end: running the current binding's
+   `export_jsonl` against a copy of a stale-HEAD clone reproduces the exact staged
+   one-line `sase-mb` diff observed in a failed run.
+
+Later bead commits that happened to be authored by replay-derived writers partially
+"healed" individual lines, which is why the dirty line set drifts over time — every new
+`sase artifact link add`/`link rm` involving beads plants a fresh divergence.
+
+## Fix Direction
+
+Make the **mutation path stop bumping `updated_at` for link add/remove**, so it matches
+replay (which is left unchanged):
+
+- Replay semantics do not change, so projections regenerated by _old_ and _new_ binding
+  builds converge on identical bytes. Rolling out the opposite fix (teaching replay to
+  bump) would make every workspace with a stale `sase_core_rs` build regenerate
+  conflicting bytes until all venvs rebuild — recreating exactly the incident under
+  repair. That alternative is rejected for this reason.
+- The result is internally consistent: graph-edge operations (dependencies, references,
+  links) then uniformly do not move `updated_at`; direct field, status, note, claim, and
+  lifecycle operations uniformly do.
+- Cost: `sase bead show` no longer reflects link changes in `updated_at`. That is
+  cosmetic and already true for dependency and reference changes.
+
+Additionally, harden the host so any _future_ determinism regression heals itself
+instead of failing agents: the builtin commit finalizer gains a provably-safe
+auto-commit for reprojection-only beads diffs, following the existing narrow auto-commit
+pattern (`commit_finalizer_git_autocommit.py`).
+
+## Phases
+
+### Phase 1 — `core-link-replay-parity` (sase-core repo, Rust)
+
+Work in the `sase-core` linked repo (open it with the `/sase_repo` skill; do not edit it
+through any other path).
+
+1. In `crates/sase_core/src/bead/mutation.rs`, remove the holder `updated_at`
+   assignments from `add_bead_link` and `remove_bead_link` (the
+   `store.issues[holder_index].updated_at = added_at.clone()` line and the
+   `store.issues[index].updated_at = removed_at.clone()` line in the removal loop). The
+   event timestamps themselves are unchanged.
+2. Add a reprojection byte-identity regression test: after `add_bead_link` and after
+   `remove_bead_link`, capture `issues.jsonl`, call `export_jsonl` (pure
+   load→replay→save), and assert the file bytes are unchanged. This test fails against
+   the current code and pins the invariant.
+3. Generalize the check where cheap: add a small test helper that asserts reprojection
+   stability of the store, and call it from the existing link-mutation tests (for
+   example `link_mutations_round_trip_and_keep_related_undirected`) and at least one
+   test per mutation family (update, note, close, claim, dependency, reference) to prove
+   no other mutation/replay `updated_at` pair diverges.
+4. Update any existing tests that assert the old link-time `updated_at` bump.
+5. Verify with sase-core's `just check` (fmt + clippy + tests). Bump the workspace
+   package version patch level in the root `Cargo.toml` per repo convention so
+   downstream consumers can require the fix.
+
+Size: small — the root cause is pinned to two assignments, and the test pattern already
+exists in the module.
+
+### Phase 2 — `finalizer-reprojection-autocommit` (sase repo, Python)
+
+Runs independently of phase 1 (the proof below compares against whatever the installed
+binding's replay produces, so it is correct under old and new semantics).
+
+1. In `src/sase/llm_provider/commit_finalizer_git_autocommit.py`, add a new
+   provably-narrow candidate: for a dirty repo of kind `sdd` whose changed set is
+   exactly the bead store's `issues.jsonl` (accept both staged `M ` — which `git_sync`
+   produces — and unstaged ` M` status codes, no renames, no other paths):
+   - Prove the diff is a pure reprojection: copy the bead store directory (excluding
+     `.git`) to a temp dir, run the existing
+     `sase.core.bead_mutation_facade.export_jsonl` on the copy, and require the copy's
+     regenerated `issues.jsonl` to be byte-identical to the real worktree file. This
+     deliberately reuses the Rust exporter rather than reimplementing any projection
+     logic in Python (rust-core-boundary rule); no new core API is needed.
+   - On proof success, commit host-owned with an `apply_auto_commit_tags_with_runtime`
+     message like `chore(beads): reproject issues.jsonl`, taking the bead store write
+     lock via the existing `sase.bead._sync_git` machinery (`bead_store_write_lock` /
+     `run_sdd_git_write`) so the commit serializes with concurrent bead writers,
+     mirroring how `_commit_bead_state` behaves.
+2. Wire the candidate into `src/sase/finalizers/reconciliation.py` beside
+   `auto_commit_done_sdd_plan_status` / `sdd_prompt_qa_auto_commit_candidates` so a
+   healed beads repo drops out of the dirty state before commit decisions are demanded
+   of the agent.
+3. Tests: unit tests for the candidate detection and proof (including negative cases:
+   extra changed files, event-stream changes alongside the projection, worktree bytes
+   that do not match reprojection, staged-vs- unstaged codes) and a reconciliation-level
+   test showing a reprojection-only dirty beads repo no longer reaches the
+   `BuiltinCommitFinalizerError` path. Follow the existing autocommit test patterns.
+4. Verify with `just check` (run `just install` first in a fresh workspace clone).
+
+Size: medium — new proof logic plus reconciliation wiring and tests, but the candidate
+pattern, locking helpers, and test scaffolding all exist.
+
+### Phase 3 — `store-reheal-and-pin` (sase repo + shared beads store)
+
+Depends on phase 1 (the fixed binding must be the one installed in the workspace running
+the reheal).
+
+1. Raise the `sase-core-rs` floor in `pyproject.toml` to the phase-1 release (currently
+   `>=0.32.25,<0.33.0`) so environments cannot silently run the divergent mutation path,
+   and run `just install` so the workspace uses it. If the dependency flow requires a
+   published wheel that is not yet available, record that as the phase's blocking
+   finding instead of forcing the bump.
+2. Settle the shared beads store once: run `sase bead doctor --fix-projection`, which
+   reprojects `issues.jsonl` from the canonical event streams and commits host-owned
+   (`chore(beads): reproject bead state from canonical events`).
+3. Verify convergence: `sase bead sync --status` reports clean; running the projection
+   export again produces no diff; `sase bead doctor` emits no "bead state has
+   uncommitted changes" warning.
+4. Verify with `just check` for the `pyproject.toml` change.
+
+Size: small — existing tooling (`doctor --fix-projection`) performs the reheal; the
+phase is a pin bump plus verification.
+
+## What Settles the Incident
+
+- Phase 1 stops new divergences at the source for updated environments.
+- Phase 2 organically heals any clone (including ones still running an old binding that
+  re-plants a divergence) the next time an agent finishes a turn there, instead of
+  failing the agent.
+- Phase 3 converges the shared store immediately and prevents regressed environments
+  from being installed.
+
+## Notes for the Land Agent
+
+PROPOSED FOLLOW-UP: `src/sase/bead/_project_store.py::_export` still carries a Python
+sqlite fallback (`export_to_jsonl`) behind the Rust `export_jsonl` call, despite the
+"rust-core-required" decision record (no Python fallback). A fallback writer with
+different serialization semantics is the same class of hazard this epic fixes; consider
+retiring it as a separate task.
