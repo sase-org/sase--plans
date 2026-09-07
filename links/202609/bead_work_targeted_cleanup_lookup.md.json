@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/bead_work_targeted_cleanup_lookup.md",
+  "rows": [
+    {
+      "created_at": "2026-09-07T13:13:00Z",
+      "created_by": "01d.f2--code",
+      "description": "Need the approved plan to implement targeted cleanup lookup",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:01d.f2--code",
+      "target_ref": "plan:202609/bead_work_targeted_cleanup_lookup.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
