@@ -1,24 +1,14 @@
 ---
 tier: tale
 title: Extend Ctrl-U to delete the previous line when there is nothing to delete
-goal:
-  In the Bob Mac Capture editor, Ctrl-U keeps deleting from the caret to the beginning
-  of the current physical line, and when the caret already sits at that line's start (so
-  the ordinary deletion would remove nothing) it instead deletes the entire previous
+goal: In the Bob Mac Capture editor, Ctrl-U keeps deleting from the caret to the beginning
+  of the current physical line, and when the caret already sits at that line's start
+  (so the ordinary deletion would remove nothing) it instead deletes the entire previous
   physical line including its terminator, stopping on the first line.
 size: small
 proposed_by: bbugyi200.athena.01e.f1
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-xy.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.1/README.md)
-  - [bbugyi200.athena.sase-xy.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.3/README.md)
-- **COMMITS:**
-  - [4bb47fc](https://github.com/sase-org/sase/commit/4bb47fc987541c33386ee508024a956c44cbb79d)
-    — feat(pager): resolve links against ordered workspace anchors
-  - [f6501e3](https://github.com/sase-org/sase/commit/f6501e308fbf83d544501c724e201c54762361b6)
-    — feat(pager): include :line suffixes in scanned file-path spans
 
 # Plan: Delete the previous line with Ctrl-U when the current deletion would be empty
 
