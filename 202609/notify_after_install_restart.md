@@ -1,20 +1,12 @@
 ---
 tier: tale
 title: Notify when an install-triggered restart completes
-goal:
-  A running-copy just install produces one polished, actionable macOS completion
-  notification from the successfully relaunched app without changing install
-  reliability.
+goal: A running-copy just install produces one polished, actionable macOS completion
+  notification from the successfully relaunched app without changing install reliability.
 size: medium
 proposed_by: bbugyi200.athena.01k.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-xz.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xz.1/README.md)
-- **COMMITS:**
-  - [eacd178](https://github.com/sase-org/sase-core/commit/eacd17823834d441f205289b0c4f30510918734f)
-    — feat(source-language): add pager language policy and wire API
 
 # Plan: Notify when an install-triggered restart completes
 
