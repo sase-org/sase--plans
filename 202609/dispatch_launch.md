@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Implement reliable remote dispatch launch
-goal:
-  "`%dispatch:<machine>` launches exactly once on the pinned remote host and remains
-  recoverable across lost replies without local fallback."
+goal: '`%dispatch:<machine>` launches exactly once on the pinned remote host and remains
+  recoverable across lost replies without local fallback.'
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.12
 bead: sase-xe.12
-create_time: 2026-09-06 21:20:03
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_fleet.md](remote_dispatch_fleet.md)
