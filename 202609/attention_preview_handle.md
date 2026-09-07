@@ -1,25 +1,15 @@
 ---
 tier: tale
 title: Close the attention preview gap and verify sase-xe.14
-goal:
-  A pending remote question or gate carries a bounded, sanitized, digest-validated
+goal: A pending remote question or gate carries a bounded, sanitized, digest-validated
   preview of its decision and command detail, served through the existing fleet content
   route, so the attention modal genuinely blocks approval until the reviewer can see
-  what they are approving; both repositories verify clean and sase-xe.14 closes with a
-  real verification note.
+  what they are approving; both repositories verify clean and sase-xe.14 closes with
+  a real verification note.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1l.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cdx/README.md)
-  - [bbugyi200.athena.research.1l.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1l.cld/README.md)
-- **COMMITS:**
-  - [441a3c9](https://github.com/sase-org/sase--research/commit/441a3c9066d54159275288f2e6da3cac28c8338d)
-    — docs(research): add LLM provider usage-metrics report (researcher B)
-  - [2ebbb46](https://github.com/sase-org/sase--research/commit/2ebbb4692a88c3d5ad2f33d94f9a3527d5780987)
-    — docs(research): assess provider usage metrics
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
