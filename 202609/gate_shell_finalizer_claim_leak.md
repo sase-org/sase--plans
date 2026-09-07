@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Stop gate shells from releasing a live finalizer run's workspace claim
-goal: A gate created during a host finalizer turn is refused, and gate settlement
-  never frees a workspace whose creator process is still alive.
+goal:
+  A gate created during a host finalizer turn is refused, and gate settlement never
+  frees a workspace whose creator process is still alive.
 size: medium
 proposed_by: bbugyi200.athena.03z
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.03z](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.03z.md)
+- **COMMITS:**
+  - [a1d88a8](https://github.com/sase-org/sase/commit/a1d88a861ee0c52c553d11c348967f6b1b8a15a1)
+    — fix(gate-shell): protect finalizer workspace claims
 
 # Stop gate shells from releasing a live finalizer run's workspace claim
 
