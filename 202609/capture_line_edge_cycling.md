@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Cycle Ctrl-A/Ctrl-E across physical lines in the capture editor
-goal: In the Bob Mac Capture editor, Ctrl-A and Ctrl-E move to the beginning/end of
-  the current physical line, and when the caret already sits on that edge they step
-  to the beginning of the previous line / end of the next line, stopping at the first
-  and last line.
+goal:
+  In the Bob Mac Capture editor, Ctrl-A and Ctrl-E move to the beginning/end of the
+  current physical line, and when the caret already sits on that edge they step to the
+  beginning of the previous line / end of the next line, stopping at the first and last
+  line.
 size: medium
 proposed_by: bbugyi200.athena.01e
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.toobig-4y.registry.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-4y.registry.0/README.md)
+- **COMMITS:**
+  - [07f44fc](https://github.com/sase-org/sase/commit/07f44fc905f491da7be8b286cca1dbc1d9f043cc)
+    — refactor(agent-names): split registry facade modules
 
 # Plan: Cycle Ctrl-A/Ctrl-E across physical lines in the capture editor
 
