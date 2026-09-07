@@ -53,7 +53,6 @@ phases:
 proposed_by: bbugyi200.athena.04n
 create_time: 2026-09-07 14:58:55
 status: wip
-bead_id: sase-y1
 ---
 
 - **BEAD:** [sase-y1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-y1/README.md)
