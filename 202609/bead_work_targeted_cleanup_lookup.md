@@ -11,6 +11,12 @@ proposed_by: bbugyi200.athena.01d.f2
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.01d.f2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.01d.f2.md)
+- **COMMITS:**
+  - [e2ce985](https://github.com/sase-org/sase/commit/e2ce985dd5b0a9014f173d566d334dd8c0514dc3)
+    — fix(bead): give targeted cleanup paths a real owner lookup
+
 # Fix bead-work cleanup TypeError: give targeted paths a real owner lookup
 
 ## Problem
