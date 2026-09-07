@@ -11,6 +11,11 @@ status: done
 - **PARENT:** [202609/provider_priority.md](provider_priority.md)
 - **BEAD:**
   [sase-xf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xf/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xf.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xf.land.md)
+- **COMMITS:**
+  - [5db3185](https://github.com/sase-org/sase/commit/5db318521be61fd497dbbc94929d820f9e6f074e)
+    — fix(tui): show unavailable provider priorities
 
 # Finish unavailable provider-priority presentation
 
