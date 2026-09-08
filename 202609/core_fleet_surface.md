@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Package the gateway and expose the fleet setup surface
-goal: A normal sase-core-rs wheel runs the gateway, issues policy-preserving local
-  fleet bootstraps, and advertises its canonical fleet protocol through public health.
+goal:
+  A normal sase-core-rs wheel runs the gateway, issues policy-preserving local fleet
+  bootstraps, and advertises its canonical fleet protocol through public health.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.1
 bead: sase-xe.16.1
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_completion.md](remote_dispatch_completion.md)
 - **BEAD:**
   [sase-xe.16.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.1.md)
+- **COMMITS:**
+  - [9adb209](https://github.com/sase-org/sase-core/commit/9adb209f95ab67a83b6bfe39303a065dd232ec33)
+    — feat(gateway): expose fleet setup surface
 
 # Plan: Package the gateway and expose the fleet setup surface
 
