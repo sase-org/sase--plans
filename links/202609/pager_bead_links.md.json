@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/pager_bead_links.md",
+  "rows": [
+    {
+      "created_at": "2026-09-08T17:58:34Z",
+      "created_by": "bbugyi200.athena.08z--code",
+      "description": "prompt reference @plan:202609/pager_bead_links.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.08z--code",
+      "target_ref": "plan:202609/pager_bead_links.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

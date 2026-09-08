@@ -204,3 +204,15 @@ project, failures retain actionable diagnostics without corrupting history, and
 navigation performs no store initialization or publication. Public-path regression tests
 and required repository checks pass. Changes to publication/reconciliation, artifact
 prompt expansion, keymaps, and unrelated link kinds are outside this fix.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.08z--code][1] | prompt reference @plan:202609/pager_bead_links.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.08z.md
+
+<!-- sase:referenced-by:end -->
