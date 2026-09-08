@@ -1,21 +1,15 @@
 ---
 tier: tale
 title: Add a prompt model-alias star shortcut
-goal: "Typing * at the start of a prompt line or immediately after a literal space
+goal: 'Typing * at the start of a prompt line or immediately after a literal space
   expands to %m:@ and immediately opens model-alias completion without disturbing
   literal-star or vim search behavior in other contexts.
 
-  "
+  '
 size: small
 proposed_by: bbugyi200.athena.07c
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-xe.16.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.7/README.md)
-- **COMMITS:**
-  - [8c4f8fd](https://github.com/sase-org/sase/commit/8c4f8fd22ae92ddb1e56e67c13778673476aa79d)
-    — test(tui): add offline fleet refresh fixture
 
 # Plan: Add a prompt model-alias star shortcut
 
