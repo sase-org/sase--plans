@@ -1,15 +1,25 @@
 ---
 tier: tale
 title: Close the attention preview gap and verify sase-xe.14
-goal: A pending remote question or gate carries a bounded, sanitized, digest-validated
+goal:
+  A pending remote question or gate carries a bounded, sanitized, digest-validated
   preview of its decision and command detail, served through the existing fleet content
   route, so the attention modal genuinely blocks approval until the reviewer can see
-  what they are approving; both repositories verify clean and sase-xe.14 closes with
-  a real verification note.
+  what they are approving; both repositories verify clean and sase-xe.14 closes with a
+  real verification note.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xy.5.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.2/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.5.1/README.md)
+- **COMMITS:**
+  - [0ec3050](https://github.com/sase-org/sase-core/commit/0ec30508fc0baa339cec0d89b1c5b70c3d800538)
+    — feat(artifact-ref): resolve document-owned source paths by repository identity
+  - [885a61b](https://github.com/sase-org/sase-core/commit/885a61bd819ab239b2058ef8d6ef5bb6cc051c8e)
+    — fix(artifact-ref): make document source resolution repository-owned
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
