@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fix new-snippet prefix collision handling
-goal: Let an unused snippet trigger create a new snippet even when it is a prefix
-  of an existing trigger.
+goal:
+  Let an unused snippet trigger create a new snippet even when it is a prefix of an
+  existing trigger.
 size: small
 proposed_by: bbugyi200.athena.0ai
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ai](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ai.md)
+- **COMMITS:**
+  - [95295fe](https://github.com/sase-org/sase/commit/95295fea07682dc7cce6f09dc654b6d3b6595cb6)
+    — fix(snippets): allow unused prefix triggers
 
 # Plan: Fix new-snippet prefix collision handling
 
