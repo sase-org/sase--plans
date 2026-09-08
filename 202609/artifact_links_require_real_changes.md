@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.0ao
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0ao](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ao.md)
+- **COMMITS:**
+  - [26ece76](https://github.com/sase-org/sase-core/commit/26ece768dfc3465d7d394e19d389fe121d410516)
+    — feat(core): add artifact_link_eligibility policy module
+
 # Publish automatic artifact links only for turns that change files
 
 ## Objective and scope
