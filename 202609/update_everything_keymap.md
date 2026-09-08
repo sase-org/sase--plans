@@ -88,3 +88,15 @@ when that preview is runnable, and run the existing tracked comprehensive-update
   provider inventory captured for an invocation, or introduce a second update pipeline.
 - Do not move shared update execution into Python or Rust core; this is presentation and
   TUI glue around the existing backend behavior.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.092--code][1] | prompt reference @plan:202609/update_everything_keymap.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.092.md
+
+<!-- sase:referenced-by:end -->
