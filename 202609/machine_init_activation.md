@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Canonical machine initialization with verified activation
-goal:
-  All machine initialization entry points share an offline-plan, explicit-discovery
+goal: All machine initialization entry points share an offline-plan, explicit-discovery
   workflow that reports enrollment honestly and verifies applied configuration before
   success.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.6
 bead: sase-xe.16.6
-create_time: 2026-09-08 16:59:40
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_completion.md](remote_dispatch_completion.md)
