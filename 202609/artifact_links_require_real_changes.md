@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Require real changes before publishing automatic artifact links
-goal:
-  Read-only runs create no artifact-link commits, while runs with real changes retain
-  their links.
+goal: Read-only runs create no artifact-link commits, while runs with real changes
+  retain their links.
 size: medium
 proposed_by: bbugyi200.athena.0ao
-create_time: 2026-09-08 16:27:39
-status: wip
+status: done
 ---
 
 # Publish automatic artifact links only for turns that change files
