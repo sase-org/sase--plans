@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Canonical machine initialization with verified activation
-goal: All machine initialization entry points share an offline-plan, explicit-discovery
+goal:
+  All machine initialization entry points share an offline-plan, explicit-discovery
   workflow that reports enrollment honestly and verifies applied configuration before
   success.
 size: medium
@@ -13,6 +14,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_completion.md](remote_dispatch_completion.md)
 - **BEAD:**
   [sase-xe.16.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.6.md)
+- **COMMITS:**
+  - [338e3b3](https://github.com/sase-org/sase/commit/338e3b349e131797f122bff3e5fd8583279ca913)
+    — feat(machine): add canonical sase machine init with verified activation
 
 # Canonical machine initialization with verified activation
 
