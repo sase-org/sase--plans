@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/subscription_capacity.md",
+  "rows": [
+    {
+      "created_at": "2026-09-08T13:38:23Z",
+      "created_by": "sase-y5.8",
+      "description": "Need design requirements for implementing phase sase-y5.8 usage CLI",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-y5.8",
+      "target_ref": "plan:202609/subscription_capacity.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
