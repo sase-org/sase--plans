@@ -1,15 +1,14 @@
 ---
 tier: tale
 title: Add a prompt model-alias star shortcut
-goal: "Typing * at the start of a prompt line or immediately after a literal space
+goal: 'Typing * at the start of a prompt line or immediately after a literal space
   expands to %m:@ and immediately opens model-alias completion without disturbing
   literal-star or vim search behavior in other contexts.
 
-  "
+  '
 size: small
 proposed_by: bbugyi200.athena.07c
-create_time: 2026-09-08 09:10:22
-status: wip
+status: done
 ---
 
 # Plan: Add a prompt model-alias star shortcut
