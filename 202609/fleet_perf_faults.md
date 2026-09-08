@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Complete Fleet performance and failure-table hardening
-goal: Fleet navigation stays responsive under remote faults and its remaining reconciliation
+goal:
+  Fleet navigation stays responsive under remote faults and its remaining reconciliation
   and fencing contracts are covered end to end.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.9
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/remote_dispatch_completion.md](remote_dispatch_completion.md)
 - **BEAD:**
   [sase-xe.16.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.9.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.9.md)
+- **COMMITS:**
+  - [7ee2e51](https://github.com/sase-org/sase/commit/7ee2e51778692064bb4bc588c07a943b616475b1)
+    — feat(fleet): harden fault refresh performance coverage
 
 # Plan: Complete Fleet performance and failure-table hardening
 
