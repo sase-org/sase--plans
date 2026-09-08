@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Release stale held workspace claims and fix the leaks that strand them
-goal:
-  Orphaned dead-PID workspace claims in the sase project are released, unclaimed
-  ephemeral checkouts are deleted, and the runner/sweep are fixed so failed runs can no
-  longer hold workspaces invisibly or accumulate holds without bound.
+goal: Orphaned dead-PID workspace claims in the sase project are released, unclaimed
+  ephemeral checkouts are deleted, and the runner/sweep are fixed so failed runs can
+  no longer hold workspaces invisibly or accumulate holds without bound.
 size: medium
 proposed_by: bbugyi200.athena.06s
-create_time: 2026-09-07 18:53:39
-status: wip
+status: done
 ---
 
 # Plan: Release Stale Held Workspace Claims And Fix The Leaks That Strand Them
