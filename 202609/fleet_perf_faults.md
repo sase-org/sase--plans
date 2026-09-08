@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete Fleet performance and failure-table hardening
-goal:
-  Fleet navigation stays responsive under remote faults and its remaining reconciliation
+goal: Fleet navigation stays responsive under remote faults and its remaining reconciliation
   and fencing contracts are covered end to end.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.9
 bead: sase-xe.16.9
-create_time: 2026-09-08 11:13:56
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/remote_dispatch_completion.md](remote_dispatch_completion.md)
