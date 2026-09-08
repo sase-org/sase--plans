@@ -12,13 +12,19 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.sase-xe.16.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.5/README.md)
-  - [bbugyi200.athena.sase-xe.16.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.7/README.md)
+  - [bbugyi200.athena.research.1o.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.cdx/README.md)
+  - [bbugyi200.athena.research.1o.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.cld/README.md)
+  - [bbugyi200.athena.research.1o.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.final/README.md)
+  - [bbugyi200.athena.research.1o.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.image/README.md)
 - **COMMITS:**
-  - [8c4f8fd](https://github.com/sase-org/sase/commit/8c4f8fd22ae92ddb1e56e67c13778673476aa79d)
-    — test(tui): add offline fleet refresh fixture
-  - [f081f23](https://github.com/sase-org/sase/commit/f081f23038f4bb21170cc7860c24e5894ab36616)
-    — feat(dispatch): isolate third-party provider hooks
+  - [245c0d7](https://github.com/sase-org/sase--research/commit/245c0d7a4fb870a4acb033b050e79737afddad65)
+    — docs(research): design artifact-link conflict elimination (researcher B)
+  - [c9584db](https://github.com/sase-org/sase--research/commit/c9584db6814f2423e9a4e6c1ecf42e91d3f7e4c0)
+    — docs(research): analyze artifact link conflict elimination
+  - [78a9e94](https://github.com/sase-org/sase--research/commit/78a9e9432a71116d0be32f4ecba22b591a578c49)
+    — docs(research): consolidate artifact-link conflict prevention research
+  - [1dd2a6c](https://github.com/sase-org/sase--research/commit/1dd2a6c68be6fc81dc1b5ba833390f0f04f2ac59)
+    — docs(research): add artifact link conflict infographic
 
 # Plan: Add a prompt model-alias star shortcut
 
