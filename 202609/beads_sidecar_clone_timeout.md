@@ -1,13 +1,28 @@
 ---
 tier: tale
 title: Fix beads sidecar clone timeouts that hard-fail agent launches
-goal: 'Agent launches no longer hard-fail on beads sidecar clone timeouts: a timed-out
+goal:
+  "Agent launches no longer hard-fail on beads sidecar clone timeouts: a timed-out
   reference clone retries once without the local reference, and the sidecar auto-sync
-  chop keeps primary sidecar clones defragmented so reference-based clones stay fast.'
+  chop keeps primary sidecar clones defragmented so reference-based clones stay fast."
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.8.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.8.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.8.f0.md)
+  - [bbugyi200.athena.sase-yh.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yh.1/README.md)
+  - [bbugyi200.athena.sase-yh.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yh.3/README.md)
+- **COMMITS:**
+  - [46f7f54](https://github.com/sase-org/sase/commit/46f7f549ef2edc9d4e7f9136d810786cb9792b48)
+    — fix(sdd): retry unpublished artifact-link sidecars
+  - [3ec9b78](https://github.com/sase-org/sase/commit/3ec9b78b2e128554f281409e80043f77888418db)
+    — fix(workspace): reconcile managed clone origins before stitch
+  - [a5e642c](https://github.com/sase-org/sase/commit/a5e642c929a07fde7fd76b3be34439ce42c897bf)
+    — fix(sdd): harden sidecar clone materialization
+  - [5b8ee98](https://github.com/sase-org/sase/commit/5b8ee98ce19a11e2d6f96abe7bf73eecf022318f)
+    — fix(core): keep eligibility schema helper private
 
 # Fix Beads Sidecar Clone Timeouts That Hard-Fail Agent Launches
 
