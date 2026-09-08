@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Fix new-snippet prefix collision handling
-goal:
-  Let an unused snippet trigger create a new snippet even when it is a prefix of an
-  existing trigger.
+goal: Let an unused snippet trigger create a new snippet even when it is a prefix
+  of an existing trigger.
 size: small
 proposed_by: bbugyi200.athena.0ai
-create_time: 2026-09-08 15:40:14
-status: wip
+status: done
 ---
 
 # Plan: Fix new-snippet prefix collision handling
