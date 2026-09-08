@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Add a global update-everything shorthand
-goal: A configurable `,E` leader chord safely performs the same previewed, no-confirmation
+goal:
+  A configurable `,E` leader chord safely performs the same previewed, no-confirmation
   Everything update as `,UE`.
 size: small
 proposed_by: bbugyi200.athena.092
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.092](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.092.md)
+- **COMMITS:**
+  - [3fd2b5e](https://github.com/sase-org/sase/commit/3fd2b5e2ff70e3062809a4a42f7c2482c5bf5c70)
+    — feat(ace): add update everything leader shortcut
 
 # Add a `,E` update-everything shorthand
 
