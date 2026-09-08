@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Fix beads sidecar clone timeouts that hard-fail agent launches
-goal: 'Agent launches no longer hard-fail on beads sidecar clone timeouts: a timed-out
+goal:
+  "Agent launches no longer hard-fail on beads sidecar clone timeouts: a timed-out
   reference clone retries once without the local reference, and the sidecar auto-sync
-  chop keeps primary sidecar clones defragmented so reference-based clones stay fast.'
+  chop keeps primary sidecar clones defragmented so reference-based clones stay fast."
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.8.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yh.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yh.3/README.md)
+- **COMMITS:**
+  - [ff0a72e](https://github.com/sase-org/sase-core/commit/ff0a72e1f060130d34e49af4c8b8ba94666db453)
+    — feat(artifact-link): add publication retry policy
 
 # Fix Beads Sidecar Clone Timeouts That Hard-Fail Agent Launches
 
