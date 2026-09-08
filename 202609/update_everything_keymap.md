@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Add a global update-everything shorthand
-goal:
-  A configurable `,E` leader chord safely performs the same previewed, no-confirmation
+goal: A configurable `,E` leader chord safely performs the same previewed, no-confirmation
   Everything update as `,UE`.
 size: small
 proposed_by: bbugyi200.athena.092
-create_time: 2026-09-08 15:31:56
-status: wip
+status: done
 ---
 
 # Add a `,E` update-everything shorthand
