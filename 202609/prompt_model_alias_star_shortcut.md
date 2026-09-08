@@ -12,10 +12,13 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.research.1o.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.cdx/README.md)
   - [bbugyi200.athena.research.1o.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1o.cld/README.md)
 - **COMMITS:**
   - [245c0d7](https://github.com/sase-org/sase--research/commit/245c0d7a4fb870a4acb033b050e79737afddad65)
     — docs(research): design artifact-link conflict elimination (researcher B)
+  - [c9584db](https://github.com/sase-org/sase--research/commit/c9584db6814f2423e9a4e6c1ecf42e91d3f7e4c0)
+    — docs(research): analyze artifact link conflict elimination
 
 # Plan: Add a prompt model-alias star shortcut
 
