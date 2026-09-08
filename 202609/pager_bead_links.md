@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Make pager bead hints open live details without published pages
-goal:
-  Existing beads open through pager hints and direct pager inputs using the correct
+goal: Existing beads open through pager hints and direct pager inputs using the correct
   project store, independently of generated pages, with safe navigation and regression
   coverage.
 size: medium
 proposed_by: bbugyi200.athena.08z
-create_time: 2026-09-08 12:31:57
-status: wip
+status: done
 ---
 
 # Make pager bead hints open live bead details without requiring published pages
