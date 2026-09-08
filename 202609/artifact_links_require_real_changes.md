@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Require real changes before publishing automatic artifact links
-goal: Read-only runs create no artifact-link commits, while runs with real changes
-  retain their links.
+goal:
+  Read-only runs create no artifact-link commits, while runs with real changes retain
+  their links.
 size: medium
 proposed_by: bbugyi200.athena.0ao
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ao](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ao.md)
+- **COMMITS:**
+  - [dd1f829](https://github.com/sase-org/sase/commit/dd1f829c2d2289510be190562e2c3ae090abdd62)
+    — feat(artifact-links): require real changes before publishing links
 
 # Publish automatic artifact links only for turns that change files
 
