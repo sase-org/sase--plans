@@ -1,15 +1,48 @@
 ---
 tier: tale
 title: Close the attention preview gap and verify sase-xe.14
-goal: A pending remote question or gate carries a bounded, sanitized, digest-validated
+goal:
+  A pending remote question or gate carries a bounded, sanitized, digest-validated
   preview of its decision and command detail, served through the existing fleet content
   route, so the attention modal genuinely blocks approval until the reviewer can see
-  what they are approving; both repositories verify clean and sase-xe.14 closes with
-  a real verification note.
+  what they are approving; both repositories verify clean and sase-xe.14 closes with a
+  real verification note.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.14.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xy.5.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.2/README.md)
+  - [bbugyi200.athena.sase-xy.5.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.3/README.md)
+  - [bbugyi200.athena.sase-xy.5.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.4/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.5.1/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.5.2/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xy.5.5.3.md)
+  - [bbugyi200.athena.sase-xy.5.5.4.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.5.4.1/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.4.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xy.5.5.4.2/README.md)
+  - [bbugyi200.athena.sase-xy.5.5.4.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xy.5.5.4.3.md)
+- **COMMITS:**
+  - [d8a299c](https://github.com/sase-org/sase/commit/d8a299c2c3e401d9a08f5802849c15afb3eceb7b)
+    — feat(pager-refs): add Python adapter for document-owned source-path resolution
+  - [2b08ca3](https://github.com/sase-org/sase/commit/2b08ca3017aade6523ab8fcb16d36460f6ed8866)
+    — feat(pager): carry semantic targets and owner provenance through every action
+  - [2ba228d](https://github.com/sase-org/sase/commit/2ba228da326eedba37e66c5b8eb73ed4525b2967)
+    — test(pager): enforce rendered-link contract through real navigation
+  - [d101fbd](https://github.com/sase-org/sase/commit/d101fbd08657694233523cca298a526ada3b2609)
+    — feat(artifact-ref): transport optional source path_globs on document owner
+  - [e38f065](https://github.com/sase-org/sase/commit/e38f065b8ba25478f38a2edae7c8a94fa7c2abe7)
+    — feat(pager): preserve semantic target identity
+  - [b67c74c](https://github.com/sase-org/sase/commit/b67c74ce7ecf2268a3abba0d61e0fdbabf7f56e1)
+    — feat(artifact-ref): ratchet sase-core-rs floor to 0.32.41 and extend contract
+    validation
+  - [eccc091](https://github.com/sase-org/sase/commit/eccc0916048d844dfeaa64ee13ae4a411df2cd35)
+    — fix(artifact-ref): send selected_project and honor owner project in context
+    assembly
+  - [3763cce](https://github.com/sase-org/sase/commit/3763cce8fb584b3af323742a062606cbf7afc0e0)
+    — fix(pager): honor owner-scoped copy and freeze configured kinds
+  - [ce3d670](https://github.com/sase-org/sase/commit/ce3d6708714127486f069a04fbba065350e289a6)
+    — chore(deps): ratchet sase-core-rs to 0.32.42
 
 # Plan: Close the attention preview gap and verify sase-xe.14
 
