@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Fix gate-shell settlement race that sent a coder into workspace 0
-goal: An approved-plan coder never silently runs in the primary checkout; the gate
-  claim survives settlement, VCS-tagged follow-ups fall back to a fresh pool workspace,
-  and any degraded workspace is disclosed in the successor's prompt.
+goal:
+  An approved-plan coder never silently runs in the primary checkout; the gate claim
+  survives settlement, VCS-tagged follow-ups fall back to a fresh pool workspace, and
+  any degraded workspace is disclosed in the successor's prompt.
 size: medium
 proposed_by: bbugyi200.athena.09m
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.09m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.09m.md)
+- **COMMITS:**
+  - [a37e1fb](https://github.com/sase-org/sase/commit/a37e1fbaa0814875571e1bae01aadb27d958cde5)
+    — fix(gate-shell): preserve follow-up workspace claims
 
 # Fix Gate-Shell Settlement Race That Sent A Coder Into Workspace #0
 
