@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/gate_settlement_workspace_race.md",
+  "rows": [
+    {
+      "created_at": "2026-09-08T19:20:38Z",
+      "created_by": "bbugyi200.athena.09m--code",
+      "description": "prompt reference @plan:202609/gate_settlement_workspace_race.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.09m--code",
+      "target_ref": "plan:202609/gate_settlement_workspace_race.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

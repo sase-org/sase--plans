@@ -173,3 +173,15 @@ CLI-surface, or flag changes are involved. The implementing agent must read
   — `gate_claim_is_releasable` already protects that phase.
 - The scheduler's `cleanup_stale_running_entries` gate handling (it consults the same
   rule and is fixed by the same hold).
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.09m--code][1] | prompt reference @plan:202609/gate_settlement_workspace_race.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.09m.md
+
+<!-- sase:referenced-by:end -->
