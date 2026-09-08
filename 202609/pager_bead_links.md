@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Make pager bead hints open live details without published pages
-goal: Existing beads open through pager hints and direct pager inputs using the correct
+goal:
+  Existing beads open through pager hints and direct pager inputs using the correct
   project store, independently of generated pages, with safe navigation and regression
   coverage.
 size: medium
 proposed_by: bbugyi200.athena.08z
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.08z](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.08z.md)
+- **COMMITS:**
+  - [952ef34](https://github.com/sase-org/sase/commit/952ef34f5a8b5fbb58389f42c8df0e38d86882a0)
+    — test(pager): expect live bead missing-store diagnostic
 
 # Make pager bead hints open live bead details without requiring published pages
 
