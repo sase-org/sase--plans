@@ -235,3 +235,15 @@ authored-work obligations for read-only runs, while a run with real changes reta
 links and passes existing publication and commit-integrity checks. Submit the normal
 host-owned final declaration for each changed repo; implementation agents do not create
 branches, commits, or PRs themselves.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0ao--code][1] | prompt reference @plan:202609/artifact_links_require_real_changes.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ao.md
+
+<!-- sase:referenced-by:end -->
