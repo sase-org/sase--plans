@@ -11,6 +11,17 @@
       "source_ref": "agent:sase-xe.16.6",
       "target_ref": "plan:202609/remote_dispatch_completion.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T14:21:09Z",
+      "created_by": "sase-xe.16.11.5",
+      "description": "Need parent live-proof requirements and host-upgrade steps for sase-xe.16.11.5",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xe.16.11.5",
+      "target_ref": "plan:202609/remote_dispatch_completion.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
