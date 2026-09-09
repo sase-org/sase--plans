@@ -1,20 +1,12 @@
 ---
 tier: tale
 title: Remove the redundant toobig queue priority
-goal:
-  Toobig split agents rely on the configured three-runner admission threshold without
-  authoring an explicit priority.
+goal: Toobig split agents rely on the configured three-runner admission threshold
+  without authoring an explicit priority.
 size: small
 proposed_by: bbugyi200.athena.0hf
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0hf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hf.md)
-  - [bbugyi200.athena.sase-xc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xc/README.md)
-- **COMMITS:**
-  - [e89b9e5](https://github.com/sase-org/sase/commit/e89b9e522a4f89cbe68734861c65b3ba99a0a6c2)
-    — fix(test-cost): recalibrate hard CPU budgets
 
 # Plan: Remove the redundant toobig queue priority
 
@@ -71,15 +63,3 @@ priority, including on the uncommon machines whose runner cap is below three.
 - Conditional admission, structured model selection, sequential clan execution, and
   stale-file skipping behave exactly as before.
 - Focused tests and the full `bugyi-chops` verification gate pass.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact                              | Why                                                           | Uses |
-| -------- | ------------------------------------- | ------------------------------------------------------------- | ---: |
-| cited-by | [agent:bbugyi200.athena.0hf--code][1] | prompt reference @plan:202609/remove_toobig_queue_priority.md |    1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hf.md
-
-<!-- sase:referenced-by:end -->
