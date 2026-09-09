@@ -167,3 +167,15 @@ included — preserve the current construction order).
    discovery walk, and the index query — all unchanged by design).
 4. No public API, wire format, config, log format, summary counter, or resolution
    semantics change; `SASE_CHOP_SCAN_FULL_WALK=1` parity path still works.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0a9--code][1] | prompt reference @plan:202609/wait_checks_perf.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md
+
+<!-- sase:referenced-by:end -->
