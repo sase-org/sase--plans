@@ -1,12 +1,17 @@
 ---
 tier: tale
 title: Add configurable runner capacity to the research swarm
-goal: Every research-swarm agent uses a configurable runner limit that defaults to
-  16.
+goal: Every research-swarm agent uses a configurable runner limit that defaults to 16.
 size: small
 proposed_by: bbugyi200.athena.0hz
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0hz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hz.md)
+- **COMMITS:**
+  - [59a54e0](https://github.com/sase-org/sase-research-artifacts/commit/59a54e0eba0433c94e10c5b688d49363aa27b11b)
+    — feat(xprompt): add research swarm runners option
 
 # Add configurable runner capacity to `#research_swarm`
 
