@@ -293,3 +293,15 @@ before release.
 5. JSON stdout stays valid, normal clean starts do not rewrite state, required
    Rust/Python/visual checks pass, and supported published installs contain the required
    binding.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0hh.f0--code][1] | prompt reference @plan:202609/unknown_feature_flag_cleanup.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md
+
+<!-- sase:referenced-by:end -->
