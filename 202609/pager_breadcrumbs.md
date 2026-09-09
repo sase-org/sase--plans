@@ -1,15 +1,21 @@
 ---
 tier: tale
 title: A clear and beautiful pager breadcrumb trail
-goal: 'Make the pager''s navigation history immediately legible, with a prominent
-  current visit, useful surrounding breadcrumbs, accurate back and forward context,
-  and a readable complete trail at every supported terminal size.
+goal: "Make the pager's navigation history immediately legible, with a prominent current
+  visit, useful surrounding breadcrumbs, accurate back and forward context, and a
+  readable complete trail at every supported terminal size.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.0he
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0he](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0he.md)
+- **COMMITS:**
+  - [562e855](https://github.com/sase-org/sase/commit/562e855bc0c5f1d45d9893dca4d3540733cdcff7)
+    — feat(pager): redesign breadcrumb trail chrome
 
 # A clear and beautiful pager breadcrumb trail
 
