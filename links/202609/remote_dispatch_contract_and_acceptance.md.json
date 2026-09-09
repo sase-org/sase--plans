@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/remote_dispatch_contract_and_acceptance.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T19:46:01Z",
+      "created_by": "0hv",
+      "description": "Canceled sase-xe.16.11.6 plan whose repair scope this epic absorbs.",
+      "origin": "manual",
+      "relation": "supersedes",
+      "schema_version": 2,
+      "source_ref": "plan:202609/unified_agents_across_machines.md",
+      "target_ref": "plan:202609/remote_dispatch_contract_and_acceptance.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
