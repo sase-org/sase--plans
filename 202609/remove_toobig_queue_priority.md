@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.0hf
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0hf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hf.md)
+- **COMMITS:**
+  - [285c5ad](https://github.com/bbugyi200/bugyi-chops/commit/285c5ad048fbe1aea25ae19401465c081d39bc57)
+    — fix(toobig): remove redundant queue priority
+
 # Plan: Remove the redundant toobig queue priority
 
 ## Context and scope
