@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Remove the redundant toobig queue priority
-goal: Toobig split agents rely on the configured three-runner admission threshold
-  without authoring an explicit priority.
+goal:
+  Toobig split agents rely on the configured three-runner admission threshold without
+  authoring an explicit priority.
 size: small
 proposed_by: bbugyi200.athena.0hf
 status: done
@@ -63,3 +64,15 @@ priority, including on the uncommon machines whose runner cap is below three.
 - Conditional admission, structured model selection, sequential clan execution, and
   stale-file skipping behave exactly as before.
 - Focused tests and the full `bugyi-chops` verification gate pass.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact                              | Why                                                           | Uses |
+| -------- | ------------------------------------- | ------------------------------------------------------------- | ---: |
+| cited-by | [agent:bbugyi200.athena.0hf--code][1] | prompt reference @plan:202609/remove_toobig_queue_priority.md |    1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hf.md
+
+<!-- sase:referenced-by:end -->
