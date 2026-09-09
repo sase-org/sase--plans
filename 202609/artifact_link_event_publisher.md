@@ -1,10 +1,9 @@
 ---
 tier: tale
 title: Publish artifact-link operations through the immutable event lane
-goal:
-  Automatic and explicit artifact-link mutations publish conflict-free immutable events
-  through serialized hidden clones while legacy behavior remains available behind a
-  default-off beta flag.
+goal: Automatic and explicit artifact-link mutations publish conflict-free immutable
+  events through serialized hidden clones while legacy behavior remains available
+  behind a default-off beta flag.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.4
 bead: sase-yy.4
@@ -14,11 +13,6 @@ status: done
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
 - **BEAD:**
   [sase-yy.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.4.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-yy.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.4.md)
-- **COMMITS:**
-  - [37ab56b](https://github.com/sase-org/sase/commit/37ab56bd93a84d851c80cc5c50e63c75747f4aa6)
-    — feat(artifact-links): publish immutable link events
 
 # Publish automatic artifact links as immutable events
 
