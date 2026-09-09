@@ -1,32 +1,32 @@
 ---
 tier: epic
 title: Double-star explicit model completion
-goal:
-  Choose concrete models with ** in the prompt widget and external editors, with
+goal: Choose concrete models with ** in the prompt widget and external editors, with
   consistent filtering, precise directive edits, responsive interaction, and a polished
   menu that complements the existing * alias shortcut.
 phases:
-  - id: core_lsp
-    title: Shared model shortcut contract and LSP support
-    depends_on: []
-    size: medium
-    description:
-      "core_lsp: extend the Rust shortcut contract and Python bindings with explicit
-      model selection, implement the complete LSP experience, and verify star-mode
-      transitions, filtering, protected contexts, and edit ranges."
-  - id: prompt_integration
-    title: Prompt integration, visual polish, and editor parity
-    depends_on:
-      - core_lsp
-    size: medium
-    description:
-      "prompt_integration: pin the landed core, integrate the explicit-model menu into
-      ACE's completion lifecycle, verify installed-binary and Neovim parity, review
-      visual snapshots, and document both shortcuts."
+- id: core_lsp
+  title: Shared model shortcut contract and LSP support
+  depends_on: []
+  size: medium
+  description: 'core_lsp: extend the Rust shortcut contract and Python bindings with
+    explicit model selection, implement the complete LSP experience, and verify star-mode
+    transitions, filtering, protected contexts, and edit ranges.'
+- id: prompt_integration
+  title: Prompt integration, visual polish, and editor parity
+  depends_on:
+  - core_lsp
+  size: medium
+  description: 'prompt_integration: pin the landed core, integrate the explicit-model
+    menu into ACE''s completion lifecycle, verify installed-binary and Neovim parity,
+    review visual snapshots, and document both shortcuts.'
 proposed_by: bbugyi200.athena.0hg
 create_time: 2026-09-09 10:57:28
 status: wip
+bead_id: sase-yw
 ---
+
+- **BEAD:** [sase-yw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yw/README.md)
 
 # Double-star explicit model completion
 
