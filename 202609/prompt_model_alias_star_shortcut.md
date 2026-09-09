@@ -1,15 +1,54 @@
 ---
 tier: tale
 title: Add a prompt model-alias star shortcut
-goal: 'Typing * at the start of a prompt line or immediately after a literal space
+goal: "Typing * at the start of a prompt line or immediately after a literal space
   expands to %m:@ and immediately opens model-alias completion without disturbing
   literal-star or vim search behavior in other contexts.
 
-  '
+  "
 size: small
 proposed_by: bbugyi200.athena.07c
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.10](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.10.md)
+  - [bbugyi200.athena.sase-xe.16.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.2/README.md)
+  - [bbugyi200.athena.sase-xe.16.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.3/README.md)
+  - [bbugyi200.athena.sase-xe.16.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.4/README.md)
+  - [bbugyi200.athena.sase-xe.16.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.5/README.md)
+  - [bbugyi200.athena.sase-xe.16.7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.7/README.md)
+  - [bbugyi200.athena.sase-xe.16.8](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.8/README.md)
+  - [bbugyi200.athena.sase-yf.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yf.2/README.md)
+  - [bbugyi200.athena.sase-yf.3.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yf.3.1/README.md)
+  - [bbugyi200.athena.toobig-50.artifact_ref_models.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-50.artifact_ref_models.0.md)
+  - [bbugyi200.athena.toobig-50.processing.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-50.processing.0/README.md)
+  - [bbugyi200.athena.toobig-50.store.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-50.store.0/README.md)
+- **COMMITS:**
+  - [8c4f8fd](https://github.com/sase-org/sase/commit/8c4f8fd22ae92ddb1e56e67c13778673476aa79d)
+    — test(tui): add offline fleet refresh fixture
+  - [f081f23](https://github.com/sase-org/sase/commit/f081f23038f4bb21170cc7860c24e5894ab36616)
+    — feat(dispatch): isolate third-party provider hooks
+  - [a95d7c1](https://github.com/sase-org/sase/commit/a95d7c1ddfcd34d95b56de75d3ad2265f8e3b1a0)
+    — feat(ace): add prompt model alias shortcut
+  - [18b0a91](https://github.com/sase-org/sase/commit/18b0a91a264ddd3e9b55a609c9a62c209b87a06a)
+    — feat(machine): add target bootstrap CLI
+  - [6ae983d](https://github.com/sase-org/sase/commit/6ae983ddc2b607513cf5cebf1c6e9ea5ea2318f6)
+    — test(tui): add Fleet and Focus PNG coverage
+  - [5015d76](https://github.com/sase-org/sase/commit/5015d76e9561cc68e0526627473aef9e159bc647)
+    — chore(deps): ratchet sase-core pin and floor
+  - [ace9e2c](https://github.com/sase-org/sase/commit/ace9e2cd468ff998b1a3b849ea3f7adf12820231)
+    — feat(dispatch): discover tailnet machines
+  - [5620ac0](https://github.com/sase-org/sase/commit/5620ac028d1a56439705849330f5937946b1fb7b)
+    — fix(model-alias): harden shortcut completion behavior
+  - [938d927](https://github.com/sase-org/sase/commit/938d9276b0b9930e410205f6ed323e025c725c55)
+    — refactor: split hint input processing
+  - [7678e4f](https://github.com/sase-org/sase/commit/7678e4f04278f441eebef300cc63d5fdf3adb20d)
+    — refactor(artifact-ref): split artifact reference models
+  - [890660e](https://github.com/sase-org/sase/commit/890660e257526d3c8fd1d78ec3e0ab53a062321c)
+    — docs(dispatch): add remote setup runbook
+  - [d7e6ca1](https://github.com/sase-org/sase/commit/d7e6ca1ff70ba4e11f95a73d4199bd6e845edd54)
+    — refactor(usage): split provider usage store
 
 # Plan: Add a prompt model-alias star shortcut
 
