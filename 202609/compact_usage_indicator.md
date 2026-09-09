@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Compact, lossless provider usage attention
-goal:
-  Make ACE's usage indicator concise and consistent across providers while preserving
+goal: Make ACE's usage indicator concise and consistent across providers while preserving
   scope, remaining-capacity meaning, and access to every detail.
 size: medium
 proposed_by: bbugyi200.athena.0hb
-create_time: 2026-09-09 09:01:49
-status: wip
+status: done
 ---
 
 # Compact provider usage attention
