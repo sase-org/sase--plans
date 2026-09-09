@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Finish the queue-directive landing prerequisites
-goal:
-  The published dependency floor, Neovim completion coverage, and retired flag state all
-  match the unconditional queue-directive contract.
+goal: The published dependency floor, Neovim completion coverage, and retired flag
+  state all match the unconditional queue-directive contract.
 size: medium
 proposed_by: bbugyi200.athena.sase-yj.land
 bead: sase-yj
-create_time: 2026-09-09 06:57:54
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/queue_directive.md](queue_directive.md)
