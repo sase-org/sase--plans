@@ -1,12 +1,18 @@
 ---
 tier: tale
 title: Add configurable runner capacity to the research swarm
-goal: Every research-swarm agent uses a configurable runner limit that defaults to
-  16.
+goal: Every research-swarm agent uses a configurable runner limit that defaults to 16.
 size: small
 proposed_by: bbugyi200.athena.0hz
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0hz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hz.md)
+  - [bbugyi200.athena.sase-z2.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.1/README.md)
+- **COMMITS:**
+  - [d6b1163](https://github.com/sase-org/sase/commit/d6b116360301dda75ed92c63ca61eb64b2c4c717)
+    — fix(bead): publish epic plan archives after launch
 
 # Add configurable runner capacity to `#research_swarm`
 
