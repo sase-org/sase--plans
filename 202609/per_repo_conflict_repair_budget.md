@@ -1,23 +1,13 @@
 ---
 tier: tale
 title: Make the commit finalizer's conflict-repair budget per-repository
-goal:
-  A first conflict in any declared repository gets its own conflict-repair turn; only a
-  conflict that resurfaces in a repo that already consumed its repair turn fails the
-  run.
+goal: A first conflict in any declared repository gets its own conflict-repair turn;
+  only a conflict that resurfaces in a repo that already consumed its repair turn
+  fails the run.
 size: medium
 proposed_by: bbugyi200.athena.0ht
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0ht](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.2/README.md)
-- **COMMITS:**
-  - [d590e55](https://github.com/sase-org/sase/commit/d590e558baa1d024a227b5b607dce37ff5ad0b11)
-    — fix(finalizers): scope conflict repair budget per repo
-  - [c1d8efd](https://github.com/sase-org/sase/commit/c1d8efd3c0a56c779bccdf36b0a2633aa4cf3f83)
-    — feat(dispatch): expose remote attention inventory
 
 # Make the commit finalizer's conflict-repair budget per-repository
 
