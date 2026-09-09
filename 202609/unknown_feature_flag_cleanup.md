@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Automatically clean unknown saved feature flags with a distinct notice
-goal:
-  Remove unregistered keys from valid machine-local feature-flag state during process
-  startup, show an accurate and visually distinct cleanup notice in ACE, and eliminate
-  repeated state warnings after successful cleanup.
+goal: Remove unregistered keys from valid machine-local feature-flag state during
+  process startup, show an accurate and visually distinct cleanup notice in ACE, and
+  eliminate repeated state warnings after successful cleanup.
 size: medium
 proposed_by: bbugyi200.athena.0hh.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1q.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cld/README.md)
-- **COMMITS:**
-  - [d67efe2](https://github.com/sase-org/sase--research/commit/d67efe2013f8902768584347e523e32f71c812aa)
-    — docs(research): recommend a machine-as-attribute UX for remote dispatch
 
 # Plan: Automatically clean unknown saved feature flags
 
