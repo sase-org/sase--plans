@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Add configurable runner capacity to the research swarm
-goal: Every research-swarm agent uses a configurable runner limit that defaults to 16.
+goal: Every research-swarm agent uses a configurable runner limit that defaults to
+  16.
 size: small
 proposed_by: bbugyi200.athena.0hz
-create_time: 2026-09-09 18:06:39
-status: wip
+status: done
 ---
 
 # Add configurable runner capacity to `#research_swarm`
