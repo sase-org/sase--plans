@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/per_repo_conflict_repair_budget.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T19:56:29Z",
+      "created_by": "bbugyi200.athena.0ht--code",
+      "description": "prompt reference @plan:202609/per_repo_conflict_repair_budget.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0ht--code",
+      "target_ref": "plan:202609/per_repo_conflict_repair_budget.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

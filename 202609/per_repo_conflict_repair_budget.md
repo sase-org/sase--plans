@@ -152,3 +152,15 @@ it first), including the focused finalizer test modules:
   mechanism (bounded repair, accurate second-conflict failure) rather than introducing
   new user-reaching behavior; the old behavior (fail a never-repaired repo's first
   conflict) is a defect with no backward-compatibility constituency.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0ht--code][1] | prompt reference @plan:202609/per_repo_conflict_repair_budget.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md
+
+<!-- sase:referenced-by:end -->
