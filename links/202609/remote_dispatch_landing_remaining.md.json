@@ -33,6 +33,17 @@
       "source_ref": "agent:research.1p.final",
       "target_ref": "plan:202609/remote_dispatch_landing_remaining.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T13:27:55Z",
+      "created_by": "sase-xe.16.11.4",
+      "description": "Need the design for setup-integration phase sase-xe.16.11.4",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xe.16.11.4",
+      "target_ref": "plan:202609/remote_dispatch_landing_remaining.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
