@@ -1,13 +1,30 @@
 ---
 tier: tale
 title: Remove O(waiters × artifacts) realpath churn from wait-dependency resolution
-goal: The wait_checks chop completes in seconds instead of minutes at production scale,
-  with byte-identical observable behavior, by memoizing artifact-dir key resolution
-  and replacing full-index scans with lazily built, mutation-invalidated lookups.
+goal:
+  The wait_checks chop completes in seconds instead of minutes at production scale, with
+  byte-identical observable behavior, by memoizing artifact-dir key resolution and
+  replacing full-index scans with lazily built, mutation-invalidated lookups.
 size: medium
 proposed_by: bbugyi200.athena.0a9
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.11.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.1/README.md)
+  - [bbugyi200.athena.sase-xe.16.11.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.2/README.md)
+  - [bbugyi200.athena.sase-xe.16.11.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.11.3.md)
+  - [bbugyi200.athena.sase-ys.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ys.1/README.md)
+- **COMMITS:**
+  - [0318b31](https://github.com/sase-org/sase-core/commit/0318b317e8bd96482f2dca4ea4819527ab907055)
+    — feat(core): add Tailnet discovery and enrollment reconciliation policy
+  - [06025ba](https://github.com/sase-org/sase-core/commit/06025baef6985f7a84d997325f774468d8efcaca)
+    — feat(core): derive followed-batch singleton-to-family follow promotions
+  - [cb669ec](https://github.com/sase-org/sase-core/commit/cb669ec96526294cb14b07cd936c28b8b39be9bc)
+    — feat(editor): share the star model-alias shortcut contract with the xprompt LSP
+  - [a6d40ba](https://github.com/sase-org/sase-core/commit/a6d40bad16a8f0b8e16510edcd58067a8af56137)
+    — fix(gateway): bound outer deadline grace and prove worker/routes fencing with real
+    fault tests
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
