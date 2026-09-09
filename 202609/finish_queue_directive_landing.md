@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish the queue-directive landing prerequisites
-goal: The published dependency floor, Neovim completion coverage, and retired flag
-  state all match the unconditional queue-directive contract.
+goal:
+  The published dependency floor, Neovim completion coverage, and retired flag state all
+  match the unconditional queue-directive contract.
 size: medium
 proposed_by: bbugyi200.athena.sase-yj.land
 bead: sase-yj
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/queue_directive.md](queue_directive.md)
 - **BEAD:**
   [sase-yj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yj/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yj.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yj.land.md)
+- **COMMITS:**
+  - [2618517](https://github.com/sase-org/sase-nvim/commit/261851742104de5c23adcda21529bafd73b04e9b)
+    — test: cover queue directive lsp completion
 
 # Plan: Finish the queue-directive landing prerequisites
 
