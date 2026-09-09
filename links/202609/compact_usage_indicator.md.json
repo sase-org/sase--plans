@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/compact_usage_indicator.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T13:54:08Z",
+      "created_by": "bbugyi200.athena.0hb--code",
+      "description": "prompt reference @plan:202609/compact_usage_indicator.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0hb--code",
+      "target_ref": "plan:202609/compact_usage_indicator.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

@@ -293,3 +293,15 @@ Completion means the screenshot case occupies at most 27 content cells in its no
 form, other providers follow the same semantics, compacting never creates an unscoped
 percentage or false certainty, complete information is accessible by both mouse and
 keyboard, and the focused visual/behavior checks plus required repository checks pass.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0hb--code][1] | prompt reference @plan:202609/compact_usage_indicator.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hb.md
+
+<!-- sase:referenced-by:end -->
