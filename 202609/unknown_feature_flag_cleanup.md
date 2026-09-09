@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Automatically clean unknown saved feature flags with a distinct notice
-goal:
-  Remove unregistered keys from valid machine-local feature-flag state during process
-  startup, show an accurate and visually distinct cleanup notice in ACE, and eliminate
-  repeated state warnings after successful cleanup.
+goal: Remove unregistered keys from valid machine-local feature-flag state during
+  process startup, show an accurate and visually distinct cleanup notice in ACE, and
+  eliminate repeated state warnings after successful cleanup.
 size: medium
 proposed_by: bbugyi200.athena.0hh.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0hh.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md)
-- **COMMITS:**
-  - [86077c6](https://github.com/sase-org/sase-core/commit/86077c6e5adf6d66f0351736940f33651089e98c)
-    — feat(feature-flags): reconcile saved flag state
 
 # Plan: Automatically clean unknown saved feature flags
 
@@ -290,16 +283,3 @@ before release.
 5. JSON stdout stays valid, normal clean starts do not rewrite state, required
    Rust/Python/visual checks pass, and supported published installs contain the required
    binding.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact                                 | Why                                                           | Uses |
-| -------- | ---------------------------------------- | ------------------------------------------------------------- | ---: |
-| cited-by | [agent:bbugyi200.athena.0hh.f0--code][1] | prompt reference @plan:202609/unknown_feature_flag_cleanup.md |    1 |
-
-[1]:
-  https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md
-
-<!-- sase:referenced-by:end -->
