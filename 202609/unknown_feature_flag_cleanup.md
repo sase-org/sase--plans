@@ -10,6 +10,12 @@ proposed_by: bbugyi200.athena.0hh.f0
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0hh.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md)
+- **COMMITS:**
+  - [86077c6](https://github.com/sase-org/sase-core/commit/86077c6e5adf6d66f0351736940f33651089e98c)
+    — feat(feature-flags): reconcile saved flag state
+
 # Plan: Automatically clean unknown saved feature flags
 
 ## Outcome and scope
