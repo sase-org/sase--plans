@@ -14,6 +14,7 @@ status: done
   - [bbugyi200.athena.0a9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md)
   - [bbugyi200.athena.sase-xe.16.11.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.11.3.md)
   - [bbugyi200.athena.sase-xe.16.11.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.4/README.md)
+  - [bbugyi200.athena.sase-xe.16.11.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.5/README.md)
   - [bbugyi200.athena.sase-ys.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ys.2/README.md)
 - **COMMITS:**
   - [3b338c2](https://github.com/sase-org/sase/commit/3b338c208a4252aeea9fdd023d0f6763eb4514e0)
@@ -25,6 +26,8 @@ status: done
     gateway + Fleet fault tests
   - [20c7b98](https://github.com/sase-org/sase/commit/20c7b9804577b7db315f42131b5702379f4d1c49)
     — feat(dispatch): integrate core setup policy and durable activation
+  - [b7c6bc0](https://github.com/sase-org/sase/commit/b7c6bc0067032b53f30e841b54a6f179d4ff52e1)
+    — fix(ace): decode live Fleet worker envelopes for Apollo catalog rows
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
