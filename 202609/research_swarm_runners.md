@@ -10,9 +10,12 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.0hz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hz.md)
   - [bbugyi200.athena.sase-z2.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.1/README.md)
+  - [bbugyi200.athena.sase-z2.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.3/README.md)
 - **COMMITS:**
   - [d6b1163](https://github.com/sase-org/sase/commit/d6b116360301dda75ed92c63ca61eb64b2c4c717)
     — fix(bead): publish epic plan archives after launch
+  - [b8ac9f3](https://github.com/sase-org/sase/commit/b8ac9f39290d48a3710277541c438a0cd154d107)
+    — feat(beads): add plan archive doctor repair
 
 # Add configurable runner capacity to `#research_swarm`
 
