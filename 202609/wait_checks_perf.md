@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Remove O(waiters × artifacts) realpath churn from wait-dependency resolution
-goal:
-  The wait_checks chop completes in seconds instead of minutes at production scale, with
-  byte-identical observable behavior, by memoizing artifact-dir key resolution and
-  replacing full-index scans with lazily built, mutation-invalidated lookups.
+goal: The wait_checks chop completes in seconds instead of minutes at production scale,
+  with byte-identical observable behavior, by memoizing artifact-dir key resolution
+  and replacing full-index scans with lazily built, mutation-invalidated lookups.
 size: medium
 proposed_by: bbugyi200.athena.0a9
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0a9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md)
-- **COMMITS:**
-  - [3b338c2](https://github.com/sase-org/sase/commit/3b338c208a4252aeea9fdd023d0f6763eb4514e0)
-    — perf(wait-deps): cache artifact directory lookups
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
@@ -167,15 +160,3 @@ included — preserve the current construction order).
    discovery walk, and the index query — all unchanged by design).
 4. No public API, wire format, config, log format, summary counter, or resolution
    semantics change; `SASE_CHOP_SCAN_FULL_WALK=1` parity path still works.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact | Why | Uses |
-| --- | --- | --- | ---: |
-| cited-by | [agent:bbugyi200.athena.0a9--code][1] | prompt reference @plan:202609/wait_checks_perf.md | 1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md
-
-<!-- sase:referenced-by:end -->
