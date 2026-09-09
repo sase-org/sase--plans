@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/usage_context_recovery.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T13:03:57Z",
+      "created_by": "0hb--code",
+      "description": "Implement approved compact usage indicator plan",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:0hb--code",
+      "target_ref": "plan:202609/usage_context_recovery.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
