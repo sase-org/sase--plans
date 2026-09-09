@@ -11,12 +11,15 @@ status: done
 
 - **AGENTS:**
   - [bbugyi200.athena.sase-xc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xc/README.md)
+  - [bbugyi200.athena.sase-yy.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.3/README.md)
   - [bbugyi200.athena.sase-yz.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.1/README.md)
 - **COMMITS:**
   - [e89b9e5](https://github.com/sase-org/sase/commit/e89b9e522a4f89cbe68734861c65b3ba99a0a6c2)
     — fix(test-cost): recalibrate hard CPU budgets
   - [7a4fb21](https://github.com/sase-org/sase/commit/7a4fb2149a1d308299d968f0f3d7c477c72dbaec)
     — feat(usage): accept vendor drift reason
+  - [fb89440](https://github.com/sase-org/sase/commit/fb89440a55d1971bb0bb17934ef0ebace24ddeee)
+    — feat(artifact-links): add operation-aware link outbox
 
 # Plan: Remove the redundant toobig queue priority
 
