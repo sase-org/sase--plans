@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Resolve artifact-link index conflicts semantically
-goal:
-  Distinct concurrent artifact-link index updates merge automatically in both rebase
-  paths while ambiguous histories continue to fail closed.
+goal: Distinct concurrent artifact-link index updates merge automatically in both
+  rebase paths while ambiguous histories continue to fail closed.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.1
 bead: sase-yy.1
-create_time: 2026-09-09 12:01:19
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
