@@ -67,3 +67,15 @@ From the `sase-research-artifacts` repository:
 
 The wheel resource inventory is unchanged, so the slow `just test-wheel` packaging lane
 is not required for this content-only update.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0hz--code][1] | prompt reference @plan:202609/research_swarm_runners.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hz.md
+
+<!-- sase:referenced-by:end -->
