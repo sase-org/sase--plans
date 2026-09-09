@@ -22,6 +22,17 @@
       "source_ref": "plan:202609/artifact_link_event_store.md",
       "target_ref": "research:202609/artifact_link_event_store/artifact_link_event_store.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T23:56:14Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202609/artifact_link_event_store.md",
+      "target_ref": "bead:sase-yi",
+      "uses": 1
     }
   ],
   "schema_version": 2

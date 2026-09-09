@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/equals_model_shortcuts.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T23:56:14Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202609/equals_model_shortcuts.md",
+      "target_ref": "bead:sase-z3",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

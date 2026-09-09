@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202608/snooze_close_corruption.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T23:56:14Z",
+      "created_by": "sase",
+      "description": "derived from the plan's `bead_id:` frontmatter field",
+      "origin": "derived",
+      "relation": "implements",
+      "schema_version": 2,
+      "source_ref": "plan:202608/snooze_close_corruption.md",
+      "target_ref": "bead:sase-gn.10",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
