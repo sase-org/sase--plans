@@ -11,13 +11,13 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1p.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1p.cdx/README.md)
-  - [bbugyi200.athena.research.1p.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1p.cld/README.md)
+  - [bbugyi200.athena.0a9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md)
+  - [bbugyi200.athena.sase-ys.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ys.2/README.md)
 - **COMMITS:**
-  - [2c056cc](https://github.com/sase-org/sase--research/commit/2c056cc3d7422c6102c4b2a3738f496b11771993)
-    — docs(research): diagnose empty Apollo Fleet catalog
-  - [b1374eb](https://github.com/sase-org/sase--research/commit/b1374eb945a4c5d64283661789ee7e759564821a)
-    — docs(research): explain why the Fleet tab lists no Apollo agents
+  - [3b338c2](https://github.com/sase-org/sase/commit/3b338c208a4252aeea9fdd023d0f6763eb4514e0)
+    — perf(wait-deps): cache artifact directory lookups
+  - [1852f09](https://github.com/sase-org/sase/commit/1852f091ac3a4ebe8ac0cc25c6298d87d7edd3ee)
+    — feat(xprompt): pin core and share ACE/LSP star-alias completion
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
