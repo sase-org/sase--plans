@@ -11,9 +11,10 @@ status: done
 
 - **AGENTS:**
   - [bbugyi200.athena.0hf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hf.md)
+  - [bbugyi200.athena.sase-xc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xc/README.md)
 - **COMMITS:**
-  - [285c5ad](https://github.com/bbugyi200/bugyi-chops/commit/285c5ad048fbe1aea25ae19401465c081d39bc57)
-    — fix(toobig): remove redundant queue priority
+  - [e89b9e5](https://github.com/sase-org/sase/commit/e89b9e522a4f89cbe68734861c65b3ba99a0a6c2)
+    — fix(test-cost): recalibrate hard CPU budgets
 
 # Plan: Remove the redundant toobig queue priority
 
