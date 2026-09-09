@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Remove O(waiters × artifacts) realpath churn from wait-dependency resolution
-goal:
-  The wait_checks chop completes in seconds instead of minutes at production scale, with
-  byte-identical observable behavior, by memoizing artifact-dir key resolution and
-  replacing full-index scans with lazily built, mutation-invalidated lookups.
+goal: The wait_checks chop completes in seconds instead of minutes at production scale,
+  with byte-identical observable behavior, by memoizing artifact-dir key resolution
+  and replacing full-index scans with lazily built, mutation-invalidated lookups.
 size: medium
 proposed_by: bbugyi200.athena.0a9
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1p.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1p.cdx/README.md)
-- **COMMITS:**
-  - [2c056cc](https://github.com/sase-org/sase--research/commit/2c056cc3d7422c6102c4b2a3738f496b11771993)
-    — docs(research): diagnose empty Apollo Fleet catalog
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
