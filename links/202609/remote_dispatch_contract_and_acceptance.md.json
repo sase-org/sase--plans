@@ -33,6 +33,17 @@
       "source_ref": "agent:sase-xe.16.11.7.2",
       "target_ref": "plan:202609/remote_dispatch_contract_and_acceptance.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T20:02:17Z",
+      "created_by": "sase-xe.16.11.7.4",
+      "description": "Need superseded remote dispatch plan context before implementing phase sase-xe.16.11.7.4 launch-durability",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-xe.16.11.7.4",
+      "target_ref": "plan:202609/remote_dispatch_contract_and_acceptance.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
