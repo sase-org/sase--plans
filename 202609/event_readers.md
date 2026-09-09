@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Complete reduced artifact-link event readers and maintenance
-goal:
-  Artifact-link read, projection, health, rename, and managed-conflict paths consume
-  validated reduced events plus pending operations without regressing pre-cutover legacy
-  indexes.
+goal: Artifact-link read, projection, health, rename, and managed-conflict paths consume
+  validated reduced events plus pending operations without regressing pre-cutover
+  legacy indexes.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.5
 bead: sase-yy.5
-create_time: 2026-09-09 14:35:50
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
