@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/fleet_ui.md",
+  "rows": [
+    {
+      "created_at": "2026-09-09T12:09:43Z",
+      "created_by": "research.1p.cdx",
+      "description": "Compare the implemented Fleet query with the original UI acceptance contract",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.1p.cdx",
+      "target_ref": "plan:202609/fleet_ui.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
