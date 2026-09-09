@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Resolve artifact-link index conflicts semantically
-goal: Distinct concurrent artifact-link index updates merge automatically in both
-  rebase paths while ambiguous histories continue to fail closed.
+goal:
+  Distinct concurrent artifact-link index updates merge automatically in both rebase
+  paths while ambiguous histories continue to fail closed.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.1
 bead: sase-yy.1
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
 - **BEAD:**
   [sase-yy.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.1.md)
+- **COMMITS:**
+  - [55770cb](https://github.com/sase-org/sase-core/commit/55770cb46f4ab99d61289fb6efee7c6fb96877db)
+    — feat(artifact-links): merge link indexes
 
 # Semantic resolver for artifact-link index conflicts
 
