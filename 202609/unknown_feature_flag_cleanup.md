@@ -11,6 +11,7 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.0hs](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0hs/README.md)
   - [bbugyi200.athena.research.1q.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cdx/README.md)
   - [bbugyi200.athena.research.1q.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cld/README.md)
   - [bbugyi200.athena.research.1q.final_2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.final_2/README.md)
@@ -24,6 +25,8 @@ status: done
     — docs(research): recommend a unified cross-machine ACE experience
   - [adeda2b](https://github.com/sase-org/sase--research/commit/adeda2b8f0a7ce290b3649304db8f83f4ea09d54)
     — docs(research): add remote agents UX infographic
+  - [12b4168](https://github.com/sase-org/sase--research/commit/12b4168484b18494d5ae7aef31ff227fd1725b58)
+    — docs(research): review agents_across_machines UX recommendation
 
 # Plan: Automatically clean unknown saved feature flags
 
