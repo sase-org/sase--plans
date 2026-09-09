@@ -11,13 +11,10 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1q.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cdx/README.md)
-  - [bbugyi200.athena.research.1q.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cld/README.md)
+  - [bbugyi200.athena.0hh.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md)
 - **COMMITS:**
-  - [d67efe2](https://github.com/sase-org/sase--research/commit/d67efe2013f8902768584347e523e32f71c812aa)
-    — docs(research): recommend a machine-as-attribute UX for remote dispatch
-  - [f406806](https://github.com/sase-org/sase--research/commit/f4068068fb1414f336de74ce0a0a8a96c7064821)
-    — docs(research): recommend unified remote agent UX
+  - [63ec413](https://github.com/sase-org/sase/commit/63ec413b60492082e0a7a95e142417d74e05150b)
+    — feat(feature-flags): clean unknown saved flags on startup
 
 # Plan: Automatically clean unknown saved feature flags
 
