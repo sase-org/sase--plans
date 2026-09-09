@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Immutable artifact-link event contract and reducer
-goal: Artifact-link operations have a validated content-addressed wire and deterministic
+goal:
+  Artifact-link operations have a validated content-addressed wire and deterministic
   Rust reduction API exposed to Python for later event-store phases.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.2
@@ -12,6 +13,11 @@ status: done
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
 - **BEAD:**
   [sase-yy.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.2.md)
+- **COMMITS:**
+  - [528c3db](https://github.com/sase-org/sase-core/commit/528c3dbd7ee3dd6a1a6de221287cb73d1b37b7ac)
+    — feat: add artifact link event contract
 
 # Plan: Immutable artifact-link event contract and reducer
 
