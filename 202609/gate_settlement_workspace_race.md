@@ -1,13 +1,38 @@
 ---
 tier: tale
 title: Fix gate-shell settlement race that sent a coder into workspace 0
-goal: An approved-plan coder never silently runs in the primary checkout; the gate
-  claim survives settlement, VCS-tagged follow-ups fall back to a fresh pool workspace,
-  and any degraded workspace is disclosed in the successor's prompt.
+goal:
+  An approved-plan coder never silently runs in the primary checkout; the gate claim
+  survives settlement, VCS-tagged follow-ups fall back to a fresh pool workspace, and
+  any degraded workspace is disclosed in the successor's prompt.
 size: medium
 proposed_by: bbugyi200.athena.09m
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.09m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.09m.md)
+  - [bbugyi200.athena.sase-yj.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yj.1.md)
+  - [bbugyi200.athena.sase-yj.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yj.2/README.md)
+  - [bbugyi200.athena.sase-yj.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yj.3/README.md)
+  - [bbugyi200.athena.toobig-51.file_completion_workers.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-51.file_completion_workers.0/README.md)
+  - [bbugyi200.athena.toobig-51.fleet_agents.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-51.fleet_agents.0/README.md)
+  - [bbugyi200.athena.toobig-51.providers.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-51.providers.0/README.md)
+- **COMMITS:**
+  - [a37e1fb](https://github.com/sase-org/sase/commit/a37e1fbaa0814875571e1bae01aadb27d958cde5)
+    — fix(gate-shell): preserve follow-up workspace claims
+  - [c235300](https://github.com/sase-org/sase/commit/c235300c6228bdd28f806760bdbd15284aa242c9)
+    — feat(xprompt): add thin Python adapter for shared %queue/%q contract
+  - [0770357](https://github.com/sase-org/sase/commit/0770357cd84dfc16b7bd1ac59f0bfae3dc3408b7)
+    — feat(xprompt): wire queue directive into python runtime
+  - [3f23a53](https://github.com/sase-org/sase/commit/3f23a53745761c38d0c25a268f634d98b5720bdf)
+    — refactor(xprompt): retire wait_queue flag, make %queue directive unconditional
+  - [f994133](https://github.com/sase-org/sase/commit/f994133fc4012c537b6c8d3d90ed8dc429c9dff9)
+    — refactor(ace-tui): split fleet_agents.py into focused private modules
+  - [a41e3c3](https://github.com/sase-org/sase/commit/a41e3c3d4775e4c892f0cae5f3d56fb6c3400ed0)
+    — refactor(ace): split file-completion workers into domain modules
+  - [2771ba2](https://github.com/sase-org/sase/commit/2771ba29553808f2d218d08000aeee1055fa405e)
+    — refactor(dispatch): split providers.py into hook, inventory, and discovery modules
 
 # Fix Gate-Shell Settlement Race That Sent A Coder Into Workspace #0
 
