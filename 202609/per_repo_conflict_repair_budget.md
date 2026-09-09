@@ -11,10 +11,13 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.sase-xe.16.11.7.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.1/README.md)
+  - [bbugyi200.athena.0ht](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md)
+  - [bbugyi200.athena.sase-xe.16.11.7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.2/README.md)
 - **COMMITS:**
-  - [6b29558](https://github.com/sase-org/sase-core/commit/6b29558e8ac031df97133fd2a4991dd67f339ee2)
-    — feat(fleet): normalize federation read envelopes
+  - [d590e55](https://github.com/sase-org/sase/commit/d590e558baa1d024a227b5b607dce37ff5ad0b11)
+    — fix(finalizers): scope conflict repair budget per repo
+  - [c1d8efd](https://github.com/sase-org/sase/commit/c1d8efd3c0a56c779bccdf36b0a2633aa4cf3f83)
+    — feat(dispatch): expose remote attention inventory
 
 # Make the commit finalizer's conflict-repair budget per-repository
 
