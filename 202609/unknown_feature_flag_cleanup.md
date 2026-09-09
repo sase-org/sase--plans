@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Automatically clean unknown saved feature flags with a distinct notice
-goal:
-  Remove unregistered keys from valid machine-local feature-flag state during process
-  startup, show an accurate and visually distinct cleanup notice in ACE, and eliminate
-  repeated state warnings after successful cleanup.
+goal: Remove unregistered keys from valid machine-local feature-flag state during
+  process startup, show an accurate and visually distinct cleanup notice in ACE, and
+  eliminate repeated state warnings after successful cleanup.
 size: medium
 proposed_by: bbugyi200.athena.0hh.f0
-create_time: 2026-09-09 13:41:28
-status: wip
+status: done
 ---
 
 # Plan: Automatically clean unknown saved feature flags
