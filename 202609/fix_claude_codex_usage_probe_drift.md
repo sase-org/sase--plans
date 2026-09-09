@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fix Claude and Codex subscription-usage probes broken by vendor CLI drift
-goal: sase usage collects Claude and Codex subscription windows reliably again, and
-  future probe failures carry bounded diagnostics naming the actual cause.
+goal:
+  sase usage collects Claude and Codex subscription windows reliably again, and future
+  probe failures carry bounded diagnostics naming the actual cause.
 size: medium
 proposed_by: bbugyi200.athena.0hd
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0hd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hd.md)
+- **COMMITS:**
+  - [633af68](https://github.com/sase-org/sase/commit/633af6862f034436c031ae870f84d1ab59e22238)
+    — fix(usage): tolerate Claude and Codex probe drift
 
 # Fix Claude and Codex subscription-usage probes broken by vendor CLI drift
 
