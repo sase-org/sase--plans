@@ -1,13 +1,29 @@
 ---
 tier: tale
 title: Automatically clean unknown saved feature flags with a distinct notice
-goal: Remove unregistered keys from valid machine-local feature-flag state during
-  process startup, show an accurate and visually distinct cleanup notice in ACE, and
-  eliminate repeated state warnings after successful cleanup.
+goal:
+  Remove unregistered keys from valid machine-local feature-flag state during process
+  startup, show an accurate and visually distinct cleanup notice in ACE, and eliminate
+  repeated state warnings after successful cleanup.
 size: medium
 proposed_by: bbugyi200.athena.0hh.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1q.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cdx/README.md)
+  - [bbugyi200.athena.research.1q.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.cld/README.md)
+  - [bbugyi200.athena.research.1q.final_2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.final_2/README.md)
+  - [bbugyi200.athena.research.1q.image_2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1q.image_2/README.md)
+- **COMMITS:**
+  - [d67efe2](https://github.com/sase-org/sase--research/commit/d67efe2013f8902768584347e523e32f71c812aa)
+    — docs(research): recommend a machine-as-attribute UX for remote dispatch
+  - [f406806](https://github.com/sase-org/sase--research/commit/f4068068fb1414f336de74ce0a0a8a96c7064821)
+    — docs(research): recommend unified remote agent UX
+  - [835f08a](https://github.com/sase-org/sase--research/commit/835f08a73a9ed5224569878740420d5d041a9a40)
+    — docs(research): recommend a unified cross-machine ACE experience
+  - [adeda2b](https://github.com/sase-org/sase--research/commit/adeda2b8f0a7ce290b3649304db8f83f4ea09d54)
+    — docs(research): add remote agents UX infographic
 
 # Plan: Automatically clean unknown saved feature flags
 
