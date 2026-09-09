@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Publish artifact-link operations through the immutable event lane
-goal:
-  Automatic and explicit artifact-link mutations publish conflict-free immutable events
-  through serialized hidden clones while legacy behavior remains available behind a
-  default-off beta flag.
+goal: Automatic and explicit artifact-link mutations publish conflict-free immutable
+  events through serialized hidden clones while legacy behavior remains available
+  behind a default-off beta flag.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.4
 bead: sase-yy.4
-create_time: 2026-09-09 14:44:13
-status: wip
+status: done
 ---
 
 - **PARENT:** [202609/artifact_link_events_v2.md](artifact_link_events_v2.md)
