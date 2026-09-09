@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Remove the redundant toobig queue priority
-goal:
-  Toobig split agents rely on the configured three-runner admission threshold without
-  authoring an explicit priority.
+goal: Toobig split agents rely on the configured three-runner admission threshold
+  without authoring an explicit priority.
 size: small
 proposed_by: bbugyi200.athena.0hf
-create_time: 2026-09-09 11:02:21
-status: wip
+status: done
 ---
 
 # Plan: Remove the redundant toobig queue priority
