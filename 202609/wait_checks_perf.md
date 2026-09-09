@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Remove O(waiters × artifacts) realpath churn from wait-dependency resolution
-goal:
-  The wait_checks chop completes in seconds instead of minutes at production scale, with
-  byte-identical observable behavior, by memoizing artifact-dir key resolution and
-  replacing full-index scans with lazily built, mutation-invalidated lookups.
+goal: The wait_checks chop completes in seconds instead of minutes at production scale,
+  with byte-identical observable behavior, by memoizing artifact-dir key resolution
+  and replacing full-index scans with lazily built, mutation-invalidated lookups.
 size: medium
 proposed_by: bbugyi200.athena.0a9
-create_time: 2026-09-09 04:36:50
-status: wip
+status: done
 ---
 
 # Make the `wait_checks` chop much faster without changing its behavior
