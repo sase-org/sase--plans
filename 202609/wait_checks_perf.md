@@ -11,10 +11,10 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.sase-xe.16.11.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.1/README.md)
+  - [bbugyi200.athena.0a9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md)
 - **COMMITS:**
-  - [0318b31](https://github.com/sase-org/sase-core/commit/0318b317e8bd96482f2dca4ea4819527ab907055)
-    — feat(core): add Tailnet discovery and enrollment reconciliation policy
+  - [3b338c2](https://github.com/sase-org/sase/commit/3b338c208a4252aeea9fdd023d0f6763eb4514e0)
+    — perf(wait-deps): cache artifact directory lookups
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
