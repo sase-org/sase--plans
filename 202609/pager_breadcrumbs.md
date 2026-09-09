@@ -1,15 +1,14 @@
 ---
 tier: tale
 title: A clear and beautiful pager breadcrumb trail
-goal: "Make the pager's navigation history immediately legible, with a prominent current
-  visit, useful surrounding breadcrumbs, accurate back and forward context, and a
-  readable complete trail at every supported terminal size.
+goal: 'Make the pager''s navigation history immediately legible, with a prominent
+  current visit, useful surrounding breadcrumbs, accurate back and forward context,
+  and a readable complete trail at every supported terminal size.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.0he
-create_time: 2026-09-09 09:49:20
-status: wip
+status: done
 ---
 
 # A clear and beautiful pager breadcrumb trail
