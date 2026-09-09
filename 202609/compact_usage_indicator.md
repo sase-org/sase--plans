@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Compact, lossless provider usage attention
-goal: Make ACE's usage indicator concise and consistent across providers while preserving
+goal:
+  Make ACE's usage indicator concise and consistent across providers while preserving
   scope, remaining-capacity meaning, and access to every detail.
 size: medium
 proposed_by: bbugyi200.athena.0hb
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0hb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hb.md)
+- **COMMITS:**
+  - [72b76ba](https://github.com/sase-org/sase/commit/72b76bae6673a1f50d9d5e0e2b3d1ec48f17e57d)
+    — feat(ace): compact provider usage indicator
 
 # Compact provider usage attention
 
