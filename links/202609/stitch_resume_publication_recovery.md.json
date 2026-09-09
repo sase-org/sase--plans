@@ -11,6 +11,17 @@
       "source_ref": "agent:sase-yh.5.1",
       "target_ref": "plan:202609/stitch_resume_publication_recovery.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T12:42:02Z",
+      "created_by": "sase-yh.5.3",
+      "description": "Need parent plan acceptance context before completing child phase sase-yh.5.3",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:sase-yh.5.3",
+      "target_ref": "plan:202609/stitch_resume_publication_recovery.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
