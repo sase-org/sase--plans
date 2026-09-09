@@ -77,6 +77,17 @@
       "source_ref": "agent:sase-xe.16.11.5",
       "target_ref": "plan:202609/remote_dispatch_fleet.md",
       "uses": 1
+    },
+    {
+      "created_at": "2026-09-09T18:25:37Z",
+      "created_by": "research.1q.cdx",
+      "description": "Need the canonical remote-dispatch UX design and phase contract for independent evaluation",
+      "origin": "read",
+      "relation": "read",
+      "schema_version": 2,
+      "source_ref": "agent:research.1q.cdx",
+      "target_ref": "plan:202609/remote_dispatch_fleet.md",
+      "uses": 1
     }
   ],
   "schema_version": 2
