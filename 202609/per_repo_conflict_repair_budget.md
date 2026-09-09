@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Make the commit finalizer's conflict-repair budget per-repository
-goal:
-  A first conflict in any declared repository gets its own conflict-repair turn; only a
-  conflict that resurfaces in a repo that already consumed its repair turn fails the
-  run.
+goal: A first conflict in any declared repository gets its own conflict-repair turn;
+  only a conflict that resurfaces in a repo that already consumed its repair turn
+  fails the run.
 size: medium
 proposed_by: bbugyi200.athena.0ht
-create_time: 2026-09-09 15:30:26
-status: wip
+status: done
 ---
 
 # Make the commit finalizer's conflict-repair budget per-repository
