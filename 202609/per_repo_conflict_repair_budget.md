@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Make the commit finalizer's conflict-repair budget per-repository
-goal:
-  A first conflict in any declared repository gets its own conflict-repair turn; only a
-  conflict that resurfaces in a repo that already consumed its repair turn fails the
-  run.
+goal: A first conflict in any declared repository gets its own conflict-repair turn;
+  only a conflict that resurfaces in a repo that already consumed its repair turn
+  fails the run.
 size: medium
 proposed_by: bbugyi200.athena.0ht
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0ht](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md)
-- **COMMITS:**
-  - [d590e55](https://github.com/sase-org/sase/commit/d590e558baa1d024a227b5b607dce37ff5ad0b11)
-    — fix(finalizers): scope conflict repair budget per repo
 
 # Make the commit finalizer's conflict-repair budget per-repository
 
@@ -159,15 +152,3 @@ it first), including the focused finalizer test modules:
   mechanism (bounded repair, accurate second-conflict failure) rather than introducing
   new user-reaching behavior; the old behavior (fail a never-repaired repo's first
   conflict) is a defect with no backward-compatibility constituency.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact | Why | Uses |
-| --- | --- | --- | ---: |
-| cited-by | [agent:bbugyi200.athena.0ht--code][1] | prompt reference @plan:202609/per_repo_conflict_repair_budget.md | 1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md
-
-<!-- sase:referenced-by:end -->
