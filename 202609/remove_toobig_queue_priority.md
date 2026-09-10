@@ -1,12 +1,31 @@
 ---
 tier: tale
 title: Remove the redundant toobig queue priority
-goal: Toobig split agents rely on the configured three-runner admission threshold
-  without authoring an explicit priority.
+goal:
+  Toobig split agents rely on the configured three-runner admission threshold without
+  authoring an explicit priority.
 size: small
 proposed_by: bbugyi200.athena.0hf
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xc](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xc/README.md)
+  - [bbugyi200.athena.sase-yy.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.3/README.md)
+  - [bbugyi200.athena.sase-yz.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.1/README.md)
+  - [bbugyi200.athena.sase-yz.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yz.2.md)
+  - [bbugyi200.athena.sase-yz.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.3/README.md)
+- **COMMITS:**
+  - [e89b9e5](https://github.com/sase-org/sase/commit/e89b9e522a4f89cbe68734861c65b3ba99a0a6c2)
+    — fix(test-cost): recalibrate hard CPU budgets
+  - [7a4fb21](https://github.com/sase-org/sase/commit/7a4fb2149a1d308299d968f0f3d7c477c72dbaec)
+    — feat(usage): accept vendor drift reason
+  - [fb89440](https://github.com/sase-org/sase/commit/fb89440a55d1971bb0bb17934ef0ebace24ddeee)
+    — feat(artifact-links): add operation-aware link outbox
+  - [0879bfe](https://github.com/sase-org/sase/commit/0879bfe5fddb08db00fb7ce1b117979286909ee9)
+    — feat(usage): show collector health in CLI and doctor
+  - [afc5226](https://github.com/sase-org/sase/commit/afc52262f4dcaa9b4144c772c8795b3373870230)
+    — feat(usage): add drift-classifying probe strategies
 
 # Plan: Remove the redundant toobig queue priority
 
