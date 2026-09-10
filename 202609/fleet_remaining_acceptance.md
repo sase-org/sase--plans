@@ -1,71 +1,65 @@
 ---
 tier: epic
 title: Complete fleet snapshot correctness and released live acceptance
-goal: "Remote fleet reads accept ordinary prompts, preserve safe dismissal and bounded
+goal: 'Remote fleet reads accept ordinary prompts, preserve safe dismissal and bounded
   presentation with explicit history, merge only coherent snapshots, and render truthful
   family/status/count evidence on verified released builds with live Athena-to-Apollo
   acceptance.
 
-  "
+  '
 parent_bead: sase-xe.16.11.7.14
 phases:
-  - id: payload-safety
-    title: Make owner-generated fleet labels valid and repair contract fixtures
-    size: medium
-    depends_on: []
-    description:
-      "payload-safety: normalize owner-produced display intent and repair correlated
-      wire fixtures with projection and gateway regressions."
-  - id: dismissal-parity
-    title: Complete unloaded-family dismissal and protected-liveness guarantees
-    size: medium
-    depends_on:
-      - payload-safety
-    description:
-      "dismissal-parity: prove unloaded-member cleanup, preserve live and protected
-      records, and surface index-sync failures."
-  - id: catalog-snapshots
-    title: Separate bounded presentation from history and identify real snapshots
-    size: large
-    depends_on:
-      - dismissal-parity
-    description:
-      "catalog-snapshots: make older history explicitly pageable and bind catalog
-      continuation and shared merging to genuine snapshot identities."
-  - id: released-builds
-    title: Repair actual release-plz packaging and prove the published core surface
-    size: medium
-    depends_on:
-      - catalog-snapshots
-    description:
-      "released-builds: repair release-plz packaging, publish the repaired core, ratchet
-      the combined-tree pin and floor, and verify real wheels."
-  - id: viewer-integration
-    title: Integrate snapshot, family, and count evidence into the current Agents UI
-    size: medium
-    depends_on:
-      - released-builds
-    description:
-      "viewer-integration: consume snapshot policy, family lineage, observation age, and
-      authoritative counts in current grouping, queries, and rendering."
-  - id: live-acceptance
-    title: Prove the repaired Apollo view, dismissal propagation, and restart behavior
-    size: medium
-    depends_on:
-      - viewer-integration
-    description:
-      "live-acceptance: verify released Athena-to-Apollo presentation, controlled
-      dismissal and death transitions, history paging, restart resilience, and
-      combined-tree checks."
+- id: payload-safety
+  title: Make owner-generated fleet labels valid and repair contract fixtures
+  size: medium
+  depends_on: []
+  description: 'payload-safety: normalize owner-produced display intent and repair
+    correlated wire fixtures with projection and gateway regressions.'
+- id: dismissal-parity
+  title: Complete unloaded-family dismissal and protected-liveness guarantees
+  size: medium
+  depends_on:
+  - payload-safety
+  description: 'dismissal-parity: prove unloaded-member cleanup, preserve live and
+    protected records, and surface index-sync failures.'
+- id: catalog-snapshots
+  title: Separate bounded presentation from history and identify real snapshots
+  size: large
+  depends_on:
+  - dismissal-parity
+  description: 'catalog-snapshots: make older history explicitly pageable and bind
+    catalog continuation and shared merging to genuine snapshot identities.'
+- id: released-builds
+  title: Repair actual release-plz packaging and prove the published core surface
+  size: medium
+  depends_on:
+  - catalog-snapshots
+  description: 'released-builds: repair release-plz packaging, publish the repaired
+    core, ratchet the combined-tree pin and floor, and verify real wheels.'
+- id: viewer-integration
+  title: Integrate snapshot, family, and count evidence into the current Agents UI
+  size: medium
+  depends_on:
+  - released-builds
+  description: 'viewer-integration: consume snapshot policy, family lineage, observation
+    age, and authoritative counts in current grouping, queries, and rendering.'
+- id: live-acceptance
+  title: Prove the repaired Apollo view, dismissal propagation, and restart behavior
+  size: medium
+  depends_on:
+  - viewer-integration
+  description: 'live-acceptance: verify released Athena-to-Apollo presentation, controlled
+    dismissal and death transitions, history paging, restart resilience, and combined-tree
+    checks.'
 proposed_by: bbugyi200.athena.sase-xe.16.11.7.14.land
 create_time: 2026-09-10 19:57:57
 status: wip
+bead_id: sase-xe.16.11.7.14.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/fleet_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_remaining_acceptance.md)
-- **PARENT:**
-  [202609/fleet_stale_remote_rows.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_stale_remote_rows.md)
+- **PROMPT:** [prompts/202609/fleet_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_remaining_acceptance.md)
+- **PARENT:** [202609/fleet_stale_remote_rows.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_stale_remote_rows.md)
+- **BEAD:** [sase-xe.16.11.7.14.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.14.6.md)
 
 # Complete fleet snapshot correctness and released live acceptance
 
