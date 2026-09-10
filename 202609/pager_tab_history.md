@@ -1,20 +1,14 @@
 ---
 tier: tale
 title: Fix pager forward history and display the Tab shortcut
-goal: "Tab advances the pager's retained forward history in standalone and embedded use,
-  and the pager consistently advertises the shortcut as <tab>.
+goal: 'Tab advances the pager''s retained forward history in standalone and embedded
+  use, and the pager consistently advertises the shortcut as <tab>.
 
-  "
+  '
 size: small
 proposed_by: bbugyi200.athena.0i3
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0i3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i3.md)
-- **COMMITS:**
-  - [0523874](https://github.com/sase-org/sase/commit/0523874af159e7f029ec342218d08d5d2f5b8570)
-    — fix(tui): bind pager tab history
 
 # Fix pager forward history and display the Tab shortcut
 
@@ -158,15 +152,3 @@ handling free of new I/O, subprocesses, and blocking work.
 Acceptance requires working Tab traversal in both pager hosts, retained Ctrl+I
 compatibility, unchanged prompt/modal ownership and history edge behavior, consistent
 `<tab>` shortcut displays, and passing focused tests plus `just check`.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact | Why | Uses |
-| --- | --- | --- | ---: |
-| cited-by | [agent:bbugyi200.athena.0i3--code][1] | prompt reference @plan:202609/pager_tab_history.md | 1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i3.md
-
-<!-- sase:referenced-by:end -->
