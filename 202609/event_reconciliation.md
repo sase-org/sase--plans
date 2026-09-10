@@ -1,8 +1,8 @@
 ---
 tier: tale
 title: Reduce artifact-link event unions before projection
-goal: Reconciliation and bead endpoints converge to one lossless Rust-reduced event
-  truth.
+goal:
+  Reconciliation and bead endpoints converge to one lossless Rust-reduced event truth.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.8.3
 bead: sase-yy.8.3
@@ -13,6 +13,11 @@ status: done
   [202609/artifact_link_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_landing_repairs.md)
 - **BEAD:**
   [sase-yy.8.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.8.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.8.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.8.3.md)
+- **COMMITS:**
+  - [717c36e](https://github.com/sase-org/sase-core/commit/717c36e7fa0d9ca5e967fb4e058317242570bd50)
+    — feat(beads): project artifact links by edge receipt
 
 # Reduce artifact-link event unions before projecting rows
 
