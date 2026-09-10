@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Owner-side presentable fleet snapshots and honest freshness
-goal: The gateway serves a bounded, liveness-aware owner snapshot whose family metadata,
+goal:
+  The gateway serves a bounded, liveness-aware owner snapshot whose family metadata,
   freshness, and authoritative counts stay honest over time.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.11.7.14.1
@@ -13,6 +14,11 @@ status: done
   [202609/fleet_stale_remote_rows.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_stale_remote_rows.md)
 - **BEAD:**
   [sase-xe.16.11.7.14.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.14.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.11.7.14.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.11.7.14.1.md)
+- **COMMITS:**
+  - [270e501](https://github.com/sase-org/sase-core/commit/270e50168391d38a32083f12ebac5afda0a8247d)
+    — feat(fleet): bound owner-side presentation and derive honest freshness
 
 # Owner-side presentable fleet snapshots and honest freshness
 
