@@ -1,41 +1,38 @@
 ---
 tier: epic
 title: Compact, configurable usage window indicators
-goal:
-  Make each provider usage window independently configurable and show compact, truthful
-  capacity and reset countdowns with clear ten-bucket colors in ACE.
+goal: Make each provider usage window independently configurable and show compact,
+  truthful capacity and reset countdowns with clear ten-bucket colors in ACE.
 phases:
-  - id: window-policy
-    title: Define shared usage window identity and visibility policy
-    depends_on: []
-    size: medium
-    description:
-      "window-policy: implement Rust classification, policy validation and selection,
-      time-aware projection, bindings, and contract tests."
-  - id: config-and-cache
-    title: Integrate configuration and time-aware cached display data
-    depends_on:
-      - window-policy
-    size: medium
-    description:
-      "config-and-cache: integrate Python adapters, schema and defaults, live config
-      invalidation, documentation, and the Usage Window glossary strand."
-  - id: compact-display
-    title: Render and verify the compact usage window display
-    depends_on:
-      - window-policy
-      - config-and-cache
-    size: medium
-    description:
-      "compact-display: implement icon badges, countdowns, ten-color themes, bounded
-      layout, accessible disclosure, integration tests, and visual verification."
+- id: window-policy
+  title: Define shared usage window identity and visibility policy
+  depends_on: []
+  size: medium
+  description: 'window-policy: implement Rust classification, policy validation and
+    selection, time-aware projection, bindings, and contract tests.'
+- id: config-and-cache
+  title: Integrate configuration and time-aware cached display data
+  depends_on:
+  - window-policy
+  size: medium
+  description: 'config-and-cache: integrate Python adapters, schema and defaults,
+    live config invalidation, documentation, and the Usage Window glossary strand.'
+- id: compact-display
+  title: Render and verify the compact usage window display
+  depends_on:
+  - window-policy
+  - config-and-cache
+  size: medium
+  description: 'compact-display: implement icon badges, countdowns, ten-color themes,
+    bounded layout, accessible disclosure, integration tests, and visual verification.'
 proposed_by: bbugyi200.athena.0hy
 create_time: 2026-09-10 07:06:03
 status: wip
+bead_id: sase-z7
 ---
 
-- **PROMPT:**
-  [prompts/202609/usage_window_indicators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_window_indicators.md)
+- **PROMPT:** [prompts/202609/usage_window_indicators.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_window_indicators.md)
+- **BEAD:** [sase-z7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z7/README.md)
 
 # Compact, configurable usage window indicators
 
