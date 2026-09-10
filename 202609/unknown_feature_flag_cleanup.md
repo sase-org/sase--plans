@@ -1,13 +1,23 @@
 ---
 tier: tale
 title: Automatically clean unknown saved feature flags with a distinct notice
-goal: Remove unregistered keys from valid machine-local feature-flag state during
-  process startup, show an accurate and visually distinct cleanup notice in ACE, and
-  eliminate repeated state warnings after successful cleanup.
+goal:
+  Remove unregistered keys from valid machine-local feature-flag state during process
+  startup, show an accurate and visually distinct cleanup notice in ACE, and eliminate
+  repeated state warnings after successful cleanup.
 size: medium
 proposed_by: bbugyi200.athena.0hh.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0hh.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hh.f0.md)
+  - [bbugyi200.athena.sase-x7.5.1.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-x7.5.1.2/README.md)
+- **COMMITS:**
+  - [86077c6](https://github.com/sase-org/sase-core/commit/86077c6e5adf6d66f0351736940f33651089e98c)
+    — feat(feature-flags): reconcile saved flag state
+  - [02a1725](https://github.com/sase-org/sase-core/commit/02a172567b30e697fedf517b29f58e4a9349a895)
+    — feat(core): land native PatchWire parser and shared-format conversion contracts
 
 # Plan: Automatically clean unknown saved feature flags
 
