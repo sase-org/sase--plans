@@ -1,25 +1,12 @@
 ---
 tier: tale
 title: Preserve batch predecessors when launching prompt stacks
-goal:
-  Make no-argument waits target the preceding submitted agent consistently across TUI
-  prompt stacks and named xprompt swarms, including deferred expansion and naming.
+goal: Make no-argument waits target the preceding submitted agent consistently across
+  TUI prompt stacks and named xprompt swarms, including deferred expansion and naming.
 size: medium
 proposed_by: bbugyi200.athena.0i1
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0i0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0i0/README.md)
-  - [bbugyi200.athena.0i1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i1.md)
-  - [bbugyi200.athena.sase-z7.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z7.1/README.md)
-- **COMMITS:**
-  - [2afe3d7](https://github.com/sase-org/sase-core/commit/2afe3d7d3cef42b88c2c6b916debd53b11c4ee17)
-    — feat(agent-launch): add predecessor wait binding
-  - [904f2d2](https://github.com/sase-org/sase-core/commit/904f2d2c602453755189d7d23e69842461544d3f)
-    — fix(release): allow release-plz major version bumps
-  - [7c949b4](https://github.com/sase-org/sase-core/commit/7c949b46c3ae656a84b5a94759ddcb926fa6f3c1)
-    — feat: add usage indicator policy projection
 
 # Preserve batch predecessors when launching prompt stacks
 
