@@ -15,6 +15,7 @@ status: done
   - [bbugyi200.athena.sase-yz.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.1/README.md)
   - [bbugyi200.athena.sase-yz.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yz.2.md)
   - [bbugyi200.athena.sase-yz.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.3/README.md)
+  - [bbugyi200.athena.sase-yz.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yz.4/README.md)
 - **COMMITS:**
   - [e89b9e5](https://github.com/sase-org/sase/commit/e89b9e522a4f89cbe68734861c65b3ba99a0a6c2)
     — fix(test-cost): recalibrate hard CPU budgets
@@ -26,6 +27,8 @@ status: done
     — feat(usage): show collector health in CLI and doctor
   - [afc5226](https://github.com/sase-org/sase/commit/afc52262f4dcaa9b4144c772c8795b3373870230)
     — feat(usage): add drift-classifying probe strategies
+  - [41f8dfe](https://github.com/sase-org/sase/commit/41f8dfe615da3d7085eed9abae80e88600138764)
+    — feat(ace): show failing collector usage health
 
 # Plan: Remove the redundant toobig queue priority
 
