@@ -1,13 +1,42 @@
 ---
 tier: tale
 title: Remove O(waiters × artifacts) realpath churn from wait-dependency resolution
-goal: The wait_checks chop completes in seconds instead of minutes at production scale,
-  with byte-identical observable behavior, by memoizing artifact-dir key resolution
-  and replacing full-index scans with lazily built, mutation-invalidated lookups.
+goal:
+  The wait_checks chop completes in seconds instead of minutes at production scale, with
+  byte-identical observable behavior, by memoizing artifact-dir key resolution and
+  replacing full-index scans with lazily built, mutation-invalidated lookups.
 size: medium
 proposed_by: bbugyi200.athena.0a9
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0a9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0a9.md)
+  - [bbugyi200.athena.sase-xe.16.11.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.11.3.md)
+  - [bbugyi200.athena.sase-xe.16.11.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.4/README.md)
+  - [bbugyi200.athena.sase-xe.16.11.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.5/README.md)
+  - [bbugyi200.athena.sase-xe.16.11.6.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.6.1/README.md)
+  - [bbugyi200.athena.sase-ys.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-ys.2/README.md)
+  - [bbugyi200.athena.toobig-52.artifact_link_publication_retry.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-52.artifact_link_publication_retry.0/README.md)
+  - [bbugyi200.athena.toobig-52.machine_init.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-52.machine_init.0.md)
+- **COMMITS:**
+  - [3b338c2](https://github.com/sase-org/sase/commit/3b338c208a4252aeea9fdd023d0f6763eb4514e0)
+    — perf(wait-deps): cache artifact directory lookups
+  - [1852f09](https://github.com/sase-org/sase/commit/1852f091ac3a4ebe8ac0cc25c6298d87d7edd3ee)
+    — feat(xprompt): pin core and share ACE/LSP star-alias completion
+  - [d015f48](https://github.com/sase-org/sase/commit/d015f48cb014c70483ee31d3b729c099bdd3e9d5)
+    — fix(dispatch): clarify replayed-bootstrap 409 handling and prove it with real
+    gateway + Fleet fault tests
+  - [20c7b98](https://github.com/sase-org/sase/commit/20c7b9804577b7db315f42131b5702379f4d1c49)
+    — feat(dispatch): integrate core setup policy and durable activation
+  - [b7c6bc0](https://github.com/sase-org/sase/commit/b7c6bc0067032b53f30e841b54a6f179d4ff52e1)
+    — fix(ace): decode live Fleet worker envelopes for Apollo catalog rows
+  - [54b1d07](https://github.com/sase-org/sase/commit/54b1d07a4ca2bdefb15cb2fecfb0e34ed892ced5)
+    — refactor(dispatch): split machine init helpers
+  - [8c8dfc3](https://github.com/sase-org/sase/commit/8c8dfc3f6b08a1ce26304fff822f339c9c84b591)
+    — feat(fleet): consume Rust federation counts
+  - [9c738c2](https://github.com/sase-org/sase/commit/9c738c25f62ebc0962898e83d222b4c960afd7ae)
+    — refactor(sdd): split artifact-link publication retry into sibling modules
 
 # Make the `wait_checks` chop much faster without changing its behavior
 
