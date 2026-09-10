@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Make usage window indicators readable at a glance
-goal:
-  Give each existing usage window a distinct, high-contrast presentation with a
-  color-matched percentage and reset countdown, preserving all displayed content and
-  layout capacity.
+goal: Give each existing usage window a distinct, high-contrast presentation with
+  a color-matched percentage and reset countdown, preserving all displayed content
+  and layout capacity.
 size: medium
 proposed_by: bbugyi200.athena.0j0
-create_time: 2026-09-10 17:15:22
-status: wip
+status: done
 ---
 
 # Make usage window indicators readable at a glance
