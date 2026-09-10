@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Make legacy cutover resumable and preserve frozen history
-goal: A legacy artifact-link cutover never loses an unconverted queue row, resumes
-  exactly the same import after any interrupted marker/baseline/commit step, requires
-  an operator capability attestation before mutating, and leaves `links/**` byte-identical
+goal:
+  A legacy artifact-link cutover never loses an unconverted queue row, resumes exactly
+  the same import after any interrupted marker/baseline/commit step, requires an
+  operator capability attestation before mutating, and leaves `links/**` byte-identical
   once imported.
 size: medium
 bead: sase-yy.8.4
@@ -15,6 +16,11 @@ status: done
   [202609/artifact_link_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_landing_repairs.md)
 - **BEAD:**
   [sase-yy.8.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.8.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.8.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.8.4.md)
+- **COMMITS:**
+  - [e0f105d](https://github.com/sase-org/sase-core/commit/e0f105d68045ffe00ae78f64263cd4bfb6f3d559)
+    — feat(artifact-links): add cutover recovery policy
 
 # Make legacy cutover resumable and preserve frozen history
 
