@@ -1,29 +1,13 @@
 ---
 tier: tale
 title: Make the commit finalizer's conflict-repair budget per-repository
-goal:
-  A first conflict in any declared repository gets its own conflict-repair turn; only a
-  conflict that resurfaces in a repo that already consumed its repair turn fails the
-  run.
+goal: A first conflict in any declared repository gets its own conflict-repair turn;
+  only a conflict that resurfaces in a repo that already consumed its repair turn
+  fails the run.
 size: medium
 proposed_by: bbugyi200.athena.0ht
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-xe.16.11.7.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.1/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.2/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.3/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.4/README.md)
-- **COMMITS:**
-  - [6b29558](https://github.com/sase-org/sase-core/commit/6b29558e8ac031df97133fd2a4991dd67f339ee2)
-    — feat(fleet): normalize federation read envelopes
-  - [86a1ab6](https://github.com/sase-org/sase-core/commit/86a1ab6905d7056549c64acd671153e918d7f8e2)
-    — feat(fleet): add pending attention inventory contract
-  - [faebd5c](https://github.com/sase-org/sase-core/commit/faebd5c6634d0380e75da306688cde066926490f)
-    — fix(gateway): settle fleet launches durably
-  - [bc45534](https://github.com/sase-org/sase-core/commit/bc45534a29afcabeb07fc8946bb072a4d7963d95)
-    — fix(federation): enforce TLS trust for remote hosts
 
 # Make the commit finalizer's conflict-repair budget per-repository
 
