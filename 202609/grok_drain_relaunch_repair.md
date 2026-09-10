@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Repair provider-drain replacement launches
-goal: Usage-limit drains launch valid replacements, settle the original trigger, and
-  report actionable failures without duplicating recovered work.
+goal:
+  Usage-limit drains launch valid replacements, settle the original trigger, and report
+  actionable failures without duplicating recovered work.
 size: medium
 proposed_by: bbugyi200.athena.0ix
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ix](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ix.md)
+- **COMMITS:**
+  - [63a5dbe](https://github.com/sase-org/sase/commit/63a5dbef1c732d6c95613244da06abe744320732)
+    — fix(agent): repair provider drain forced-reuse relaunches
 
 # Repair provider-drain replacement launches
 
