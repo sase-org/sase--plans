@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Restore Ctrl+I as the pager's advertised forward-history key
-goal: The pager advertises Ctrl+I for forward history everywhere while retaining the
-  working Tab compatibility binding.
+goal:
+  The pager advertises Ctrl+I for forward history everywhere while retaining the working
+  Tab compatibility binding.
 size: small
 proposed_by: bbugyi200.athena.0ii
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ii](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ii.md)
+- **COMMITS:**
+  - [37b32cf](https://github.com/sase-org/sase/commit/37b32cfdef053db297332144592d0f2a166152bc)
+    — fix(pager): restore Ctrl+I as the forward-history key
 
 # Restore Ctrl+I as the pager's advertised forward-history key
 
