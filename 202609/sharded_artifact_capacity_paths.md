@@ -2,12 +2,19 @@
 tier: tale
 size: medium
 title: Fix capacity path derivations broken by day-sharded artifact dirs
-goal: ACE agent nodes show QUEUED with real queue context for runner-slot waiters,
-  and the locked-admission candidate carries its real project name, under the day-sharded
+goal:
+  ACE agent nodes show QUEUED with real queue context for runner-slot waiters, and the
+  locked-admission candidate carries its real project name, under the day-sharded
   artifact layout.
 proposed_by: bbugyi200.athena.0iu
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0iu](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0iu.md)
+- **COMMITS:**
+  - [140c8e4](https://github.com/sase-org/sase/commit/140c8e42f268e8b67728be1a2f93cf16b85af776)
+    — fix(ace): derive capacity paths from the sharded artifact layout parser
 
 # Fix capacity path derivations broken by day-sharded artifact dirs
 
