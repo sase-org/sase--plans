@@ -1,30 +1,12 @@
 ---
 tier: tale
 title: Add configurable runner capacity to the research swarm
-goal: Every research-swarm agent uses a configurable runner limit that defaults to 16.
+goal: Every research-swarm agent uses a configurable runner limit that defaults to
+  16.
 size: small
 proposed_by: bbugyi200.athena.0hz
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0hz](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0hz.md)
-  - [bbugyi200.athena.sase-z2.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.1/README.md)
-  - [bbugyi200.athena.sase-z2.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.3/README.md)
-  - [bbugyi200.athena.sase-z2.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z2.4/README.md)
-  - [bbugyi200.athena.sase-z3.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z3.2/README.md)
-  - [bbugyi200.athena.sase-z4.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z4.2/README.md)
-- **COMMITS:**
-  - [d6b1163](https://github.com/sase-org/sase/commit/d6b116360301dda75ed92c63ca61eb64b2c4c717)
-    — fix(bead): publish epic plan archives after launch
-  - [b8ac9f3](https://github.com/sase-org/sase/commit/b8ac9f39290d48a3710277541c438a0cd154d107)
-    — feat(beads): add plan archive doctor repair
-  - [93de142](https://github.com/sase-org/sase/commit/93de1427708a8fc8b6b1bcb02d1ee944ab57bed1)
-    — fix(beads): skip invalid plan archive sources
-  - [0dc3536](https://github.com/sase-org/sase/commit/0dc3536782a38da976262be332cc603a0e915b3f)
-    — feat(ace): adopt equals model shortcuts
-  - [7c31d9a](https://github.com/sase-org/sase/commit/7c31d9abac15e0c772d4d9f2bacbd3536417cfe9)
-    — feat(agent-launch): preserve weighted queue metadata
 
 # Add configurable runner capacity to `#research_swarm`
 
