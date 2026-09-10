@@ -1,32 +1,13 @@
 ---
 tier: tale
 title: Make the commit finalizer's conflict-repair budget per-repository
-goal:
-  A first conflict in any declared repository gets its own conflict-repair turn; only a
-  conflict that resurfaces in a repo that already consumed its repair turn fails the
-  run.
+goal: A first conflict in any declared repository gets its own conflict-repair turn;
+  only a conflict that resurfaces in a repo that already consumed its repair turn
+  fails the run.
 size: medium
 proposed_by: bbugyi200.athena.0ht
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0ht](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ht.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.2/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.3/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.4/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.5/README.md)
-- **COMMITS:**
-  - [d590e55](https://github.com/sase-org/sase/commit/d590e558baa1d024a227b5b607dce37ff5ad0b11)
-    — fix(finalizers): scope conflict repair budget per repo
-  - [c1d8efd](https://github.com/sase-org/sase/commit/c1d8efd3c0a56c779bccdf36b0a2633aa4cf3f83)
-    — feat(dispatch): expose remote attention inventory
-  - [bc4566d](https://github.com/sase-org/sase/commit/bc4566dfbf2d47bf9465f717dbbcf825613ad04f)
-    — fix(dispatch): handle failed remote launch receipts
-  - [dacce95](https://github.com/sase-org/sase/commit/dacce95f3b441832bfe5d32544907652b75b57ef)
-    — fix(fleet): continue catalog pages per host
-  - [5b330b2](https://github.com/sase-org/sase/commit/5b330b242759f5393170cd334d19669b1236c9f1)
-    — feat(ace): use published fleet projection contracts
 
 # Make the commit finalizer's conflict-repair budget per-repository
 
