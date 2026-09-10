@@ -1,14 +1,13 @@
 ---
 tier: tale
 title: Fix pager forward history and display the Tab shortcut
-goal: "Tab advances the pager's retained forward history in standalone and embedded use,
-  and the pager consistently advertises the shortcut as <tab>.
+goal: 'Tab advances the pager''s retained forward history in standalone and embedded
+  use, and the pager consistently advertises the shortcut as <tab>.
 
-  "
+  '
 size: small
 proposed_by: bbugyi200.athena.0i3
-create_time: 2026-09-10 07:55:46
-status: wip
+status: done
 ---
 
 # Fix pager forward history and display the Tab shortcut
