@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Preserve batch predecessors when launching prompt stacks
-goal:
-  Make no-argument waits target the preceding submitted agent consistently across TUI
-  prompt stacks and named xprompt swarms, including deferred expansion and naming.
+goal: Make no-argument waits target the preceding submitted agent consistently across
+  TUI prompt stacks and named xprompt swarms, including deferred expansion and naming.
 size: medium
 proposed_by: bbugyi200.athena.0i1
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0i1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i1.md)
-- **COMMITS:**
-  - [2afe3d7](https://github.com/sase-org/sase-core/commit/2afe3d7d3cef42b88c2c6b916debd53b11c4ee17)
-    — feat(agent-launch): add predecessor wait binding
 
 # Preserve batch predecessors when launching prompt stacks
 
@@ -244,15 +237,3 @@ global agent-list sorting, introduce automatic serial execution for every pane, 
 standalone wait targeting, change swarm template namespace policy, redesign the typed
 coordinator, or migrate unrelated backend logic. No new CLI options, memory edits, or
 keymap changes are planned.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact                              | Why                                                      | Uses |
-| -------- | ------------------------------------- | -------------------------------------------------------- | ---: |
-| cited-by | [agent:bbugyi200.athena.0i1--code][1] | prompt reference @plan:202609/prompt_stack_swarm_wait.md |    1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i1.md
-
-<!-- sase:referenced-by:end -->
