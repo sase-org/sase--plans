@@ -1,14 +1,34 @@
 ---
 tier: tale
 title: Fix pager forward history and display the Tab shortcut
-goal: 'Tab advances the pager''s retained forward history in standalone and embedded
-  use, and the pager consistently advertises the shortcut as <tab>.
+goal: "Tab advances the pager's retained forward history in standalone and embedded use,
+  and the pager consistently advertises the shortcut as <tab>.
 
-  '
+  "
 size: small
 proposed_by: bbugyi200.athena.0i3
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0i3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i3.md)
+  - [bbugyi200.athena.toobig-54.agent_list_build.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-54.agent_list_build.0/README.md)
+  - [bbugyi200.athena.toobig-54.fleet.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-54.fleet.0/README.md)
+  - [bbugyi200.athena.toobig-54.fleet_fixture.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-54.fleet_fixture.0/README.md)
+  - [bbugyi200.athena.toobig-54.machines_pane.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-54.machines_pane.0/README.md)
+- **COMMITS:**
+  - [0523874](https://github.com/sase-org/sase/commit/0523874af159e7f029ec342218d08d5d2f5b8570)
+    — fix(tui): bind pager tab history
+  - [2da11eb](https://github.com/sase-org/sase/commit/2da11eb28790d10291b1b5912b70f03f1e2cd169)
+    — refactor(agents): split fleet mixin modules
+  - [024e01b](https://github.com/sase-org/sase/commit/024e01b70c379aa4ad2bd87c8b8b62d8ef96bbd1)
+    — fix(check): restore split-module public APIs
+  - [9378903](https://github.com/sase-org/sase/commit/93789035bbff78e168c06ee9bdfa089e9cf87411)
+    — refactor(tui): split machines pane helpers
+  - [16001bb](https://github.com/sase-org/sase/commit/16001bb368d7a24de1ac0ee4743b6d511eef7b62)
+    — refactor(tui): split agent list build helpers
+  - [8d9f248](https://github.com/sase-org/sase/commit/8d9f24833a97b35e0351951d1fce2e9d4a21f961)
+    — test: split fleet fixture helpers
 
 # Fix pager forward history and display the Tab shortcut
 
