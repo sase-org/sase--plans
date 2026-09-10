@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Fence and import legacy artifact-link indexes
-goal: Cut artifact-link storage over to immutable events with a deterministic, resumable
+goal:
+  Cut artifact-link storage over to immutable events with a deterministic, resumable
   baseline import and no regression in publication recovery.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.6
@@ -13,6 +14,11 @@ status: done
   [202609/artifact_link_events_v2.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_events_v2.md)
 - **BEAD:**
   [sase-yy.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.6.md)
+- **COMMITS:**
+  - [a8d99d2](https://github.com/sase-org/sase/commit/a8d99d2952681d2aed4e755a30942e8cc82a0424)
+    — feat(artifact-links): cut over legacy indexes to events
 
 # Fence, import legacy artifact-link indexes, and cut over
 
