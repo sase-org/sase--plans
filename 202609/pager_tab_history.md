@@ -152,3 +152,15 @@ handling free of new I/O, subprocesses, and blocking work.
 Acceptance requires working Tab traversal in both pager hosts, retained Ctrl+I
 compatibility, unchanged prompt/modal ownership and history edge behavior, consistent
 `<tab>` shortcut displays, and passing focused tests plus `just check`.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0i3--code][1] | prompt reference @plan:202609/pager_tab_history.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i3.md
+
+<!-- sase:referenced-by:end -->
