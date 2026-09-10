@@ -1,70 +1,64 @@
 ---
 tier: epic
 title: Finish the weighted-capacity core pin, lifecycle acceptance, and released floors
-goal:
-  The pinned Rust core actually contains the lineage wire this repo consumes, the
-  weight-2 monitor/gate lifecycle and one-snapshot runtime/CLI/TUI parity acceptance
+goal: The pinned Rust core actually contains the lineage wire this repo consumes,
+  the weight-2 monitor/gate lifecycle and one-snapshot runtime/CLI/TUI parity acceptance
   exist, the capacity-strip visual corpus is honest, and published floors are proven.
 parent_bead: sase-z4.6.5
 phases:
-  - id: core-pin
-    title: Ratchet the core revision pin to the commit that carries the lineage wire
-    size: medium
-    depends_on: []
-    description:
-      "core-pin: advance sase-core-revision.txt to a core commit containing the
-      agent-scan runner_claim_owner_key wire field and index schema 27, then prove a
-      clean provision from the pin builds and passes."
-  - id: monitor-gate-acceptance
-    title: Add the missing weight-2 monitor and gate lifecycle acceptance
-    size: medium
-    depends_on:
-      - core-pin
-    description:
-      "monitor-gate-acceptance: exercise a weight-2 land-style family through real
-      monitor creation, supervision, and --next handoff plus the gate routes, instead of
-      hand-authoring a monitor record."
-  - id: snapshot-parity
-    title: Compare runtime, CLI, and TUI capacity from one captured snapshot
-    size: medium
-    depends_on:
-      - core-pin
-    description:
-      "snapshot-parity: from one captured source snapshot, compare runtime admission,
-      sase agent list -j, the ACE capacity header, queue ranks/blockers/details, local
-      and remote badges, unknown usage, and filtering/folding."
-  - id: capacity-visual-corpus
-    title: Regenerate the capacity-strip visual corpus deliberately
-    size: medium
-    depends_on:
-      - core-pin
-      - snapshot-parity
-    description:
-      "capacity-visual-corpus: settle the capacity-strip text and regenerate the stale
-      agents-pane PNG goldens by inspection, retiring the status-strip diff class that
-      has kept just test-visual red since the prefix landed."
-  - id: published-floors
-    title: Prove actual released floors and retire the rollout flag
-    size: medium
-    depends_on:
-      - core-pin
-      - monitor-gate-acceptance
-      - snapshot-parity
-      - capacity-visual-corpus
-    description:
-      "published-floors: establish releases containing the repaired core and host work,
-      verify the exact published wheels in a clean environment, ratchet floors and pins,
-      and close the weighted_queue_capacity flag bead only after the release proof
-      succeeds."
+- id: core-pin
+  title: Ratchet the core revision pin to the commit that carries the lineage wire
+  size: medium
+  depends_on: []
+  description: 'core-pin: advance sase-core-revision.txt to a core commit containing
+    the agent-scan runner_claim_owner_key wire field and index schema 27, then prove
+    a clean provision from the pin builds and passes.'
+- id: monitor-gate-acceptance
+  title: Add the missing weight-2 monitor and gate lifecycle acceptance
+  size: medium
+  depends_on:
+  - core-pin
+  description: 'monitor-gate-acceptance: exercise a weight-2 land-style family through
+    real monitor creation, supervision, and --next handoff plus the gate routes, instead
+    of hand-authoring a monitor record.'
+- id: snapshot-parity
+  title: Compare runtime, CLI, and TUI capacity from one captured snapshot
+  size: medium
+  depends_on:
+  - core-pin
+  description: 'snapshot-parity: from one captured source snapshot, compare runtime
+    admission, sase agent list -j, the ACE capacity header, queue ranks/blockers/details,
+    local and remote badges, unknown usage, and filtering/folding.'
+- id: capacity-visual-corpus
+  title: Regenerate the capacity-strip visual corpus deliberately
+  size: medium
+  depends_on:
+  - core-pin
+  - snapshot-parity
+  description: 'capacity-visual-corpus: settle the capacity-strip text and regenerate
+    the stale agents-pane PNG goldens by inspection, retiring the status-strip diff
+    class that has kept just test-visual red since the prefix landed.'
+- id: published-floors
+  title: Prove actual released floors and retire the rollout flag
+  size: medium
+  depends_on:
+  - core-pin
+  - monitor-gate-acceptance
+  - snapshot-parity
+  - capacity-visual-corpus
+  description: 'published-floors: establish releases containing the repaired core
+    and host work, verify the exact published wheels in a clean environment, ratchet
+    floors and pins, and close the weighted_queue_capacity flag bead only after the
+    release proof succeeds.'
 proposed_by: bbugyi200.athena.sase-z4.6.5.land
 create_time: 2026-09-10 17:42:10
 status: wip
+bead_id: sase-z4.6.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/weighted_capacity_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_remaining_acceptance.md)
-- **PARENT:**
-  [202609/weighted_capacity_final_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_final_acceptance.md)
+- **PROMPT:** [prompts/202609/weighted_capacity_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_remaining_acceptance.md)
+- **PARENT:** [202609/weighted_capacity_final_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_final_acceptance.md)
+- **BEAD:** [sase-z4.6.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z4/sase-z4.6.5.4.md)
 
 # Finish the weighted-capacity core pin, lifecycle acceptance, and released floors
 
