@@ -1,10 +1,11 @@
 ---
 tier: tale
 title: Require durable owners and publish complete event files atomically
-goal: Artifact-link event publication acknowledges an operation only when a durable
-  owner receipt exists, installs event objects with an atomic no-replace write that
-  survives process death, and routes manual `link add/rm` plus plan-links ingestion
-  through the hidden machine store.
+goal:
+  Artifact-link event publication acknowledges an operation only when a durable owner
+  receipt exists, installs event objects with an atomic no-replace write that survives
+  process death, and routes manual `link add/rm` plus plan-links ingestion through the
+  hidden machine store.
 size: medium
 bead: sase-yy.8.2
 proposed_by: bbugyi200.athena.sase-yy.8.2
@@ -15,6 +16,11 @@ status: done
   [202609/artifact_link_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_landing_repairs.md)
 - **BEAD:**
   [sase-yy.8.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.8.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-yy.8.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-yy.8.2.md)
+- **COMMITS:**
+  - [811700b](https://github.com/sase-org/sase/commit/811700bc3830558df0db9ff7eaefecb2b6e7614b)
+    — fix(artifact-links): require durable publication receipts
 
 # Require durable owners and publish complete event files atomically
 
