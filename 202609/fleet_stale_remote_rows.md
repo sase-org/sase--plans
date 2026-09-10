@@ -1,66 +1,64 @@
 ---
 tier: epic
 title: Stop serving and rendering stale remote fleet rows
-goal: "A machine's fleet API serves only the agents its own Agents list would present,
-  with honest freshness and liveness, and viewers render honest statuses and
-  authoritative counts - so a cleaned-up remote machine shows clean everywhere.
+goal: 'A machine''s fleet API serves only the agents its own Agents list would present,
+  with honest freshness and liveness, and viewers render honest statuses and authoritative
+  counts - so a cleaned-up remote machine shows clean everywhere.
 
-  "
+  '
 parent_bead: sase-xe.16.11.7
 phases:
-  - id: owner-scope
-    title: Owner-side presentable snapshot scope and honest freshness
-    size: large
-    depends_on: []
-    description:
-      "owner-scope: apply a core-owned presentable policy to the gateway fleet snapshot
-      (demote dead active-tier records, bound recent completions, fold or drop orphaned
-      members of dismissed families), replace hard-coded Fresh stamps with age-derived
-      freshness plus an age-based snapshot rebuild, and make status bucketing
-      liveness-aware."
-  - id: dismissal-reconcile
-    title: Close the dismissal identity leak and reconcile history
-    size: medium
-    depends_on: []
-    description:
-      "dismissal-reconcile: extend the cleanup cascade to cover member records
-      discovered from the index, add gc back-fill of dismissal identities for dead
-      members of dismissed families, and surface silent index-sync failures."
-  - id: core-ratchet
-    title: Publish and adopt the new core surface
-    size: small
-    depends_on:
-      - owner-scope
-      - dismissal-reconcile
-    description:
-      "core-ratchet: release the core changes, ratchet the revision pin and dependency
-      floor, just install, and verify the published wheel contains the new surfaces."
-  - id: viewer-honesty
-    title: Liveness-aware rendering, authoritative banners, bounded requests
-    size: medium
-    depends_on:
-      - core-ratchet
-    description:
-      "viewer-honesty: make status projection consult liveness and connection health,
-      source machine banners from authoritative counts, request the bounded terminal
-      scope instead of include_terminal=True, make page merging generation-aware, and
-      render observation age instead of stamped freshness."
-  - id: live-proof
-    title: Athena-to-Apollo verification of the repaired view
-    size: small
-    depends_on:
-      - viewer-honesty
-    description:
-      "live-proof: run gc reconciliation on both machines, verify athena's apollo group
-      matches apollo's own presentation with honest counts, and prove dismissal and
-      dead-agent transitions propagate on refresh and survive gateway restarts."
+- id: owner-scope
+  title: Owner-side presentable snapshot scope and honest freshness
+  size: large
+  depends_on: []
+  description: 'owner-scope: apply a core-owned presentable policy to the gateway
+    fleet snapshot (demote dead active-tier records, bound recent completions, fold
+    or drop orphaned members of dismissed families), replace hard-coded Fresh stamps
+    with age-derived freshness plus an age-based snapshot rebuild, and make status
+    bucketing liveness-aware.'
+- id: dismissal-reconcile
+  title: Close the dismissal identity leak and reconcile history
+  size: medium
+  depends_on: []
+  description: 'dismissal-reconcile: extend the cleanup cascade to cover member records
+    discovered from the index, add gc back-fill of dismissal identities for dead members
+    of dismissed families, and surface silent index-sync failures.'
+- id: core-ratchet
+  title: Publish and adopt the new core surface
+  size: small
+  depends_on:
+  - owner-scope
+  - dismissal-reconcile
+  description: 'core-ratchet: release the core changes, ratchet the revision pin and
+    dependency floor, just install, and verify the published wheel contains the new
+    surfaces.'
+- id: viewer-honesty
+  title: Liveness-aware rendering, authoritative banners, bounded requests
+  size: medium
+  depends_on:
+  - core-ratchet
+  description: 'viewer-honesty: make status projection consult liveness and connection
+    health, source machine banners from authoritative counts, request the bounded
+    terminal scope instead of include_terminal=True, make page merging generation-aware,
+    and render observation age instead of stamped freshness.'
+- id: live-proof
+  title: Athena-to-Apollo verification of the repaired view
+  size: small
+  depends_on:
+  - viewer-honesty
+  description: 'live-proof: run gc reconciliation on both machines, verify athena''s
+    apollo group matches apollo''s own presentation with honest counts, and prove
+    dismissal and dead-agent transitions propagate on refresh and survive gateway
+    restarts.'
 proposed_by: bbugyi200.athena.0it
 create_time: 2026-09-10 13:39:00
 status: wip
+bead_id: sase-xe.16.11.7.14
 ---
 
-- **PROMPT:**
-  [prompts/202609/fleet_stale_remote_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_stale_remote_rows.md)
+- **PROMPT:** [prompts/202609/fleet_stale_remote_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_stale_remote_rows.md)
+- **BEAD:** [sase-xe.16.11.7.14](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.14.md)
 
 # Plan: Stop serving and rendering stale remote fleet rows
 
