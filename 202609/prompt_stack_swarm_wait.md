@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Preserve batch predecessors when launching prompt stacks
-goal:
-  Make no-argument waits target the preceding submitted agent consistently across TUI
-  prompt stacks and named xprompt swarms, including deferred expansion and naming.
+goal: Make no-argument waits target the preceding submitted agent consistently across
+  TUI prompt stacks and named xprompt swarms, including deferred expansion and naming.
 size: medium
 proposed_by: bbugyi200.athena.0i1
-create_time: 2026-09-09 18:24:57
-status: wip
+status: done
 ---
 
 # Preserve batch predecessors when launching prompt stacks
