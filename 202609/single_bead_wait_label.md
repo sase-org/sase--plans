@@ -2,12 +2,10 @@
 tier: tale
 size: small
 title: Show the sole waited-on bead ID in agent rows
-goal:
-  Make a WAITING agent's single bead dependency identifiable in the Agents list while
-  preserving status cues, other wait summaries, and responsive refreshes.
+goal: Make a WAITING agent's single bead dependency identifiable in the Agents list
+  while preserving status cues, other wait summaries, and responsive refreshes.
 proposed_by: bbugyi200.athena.0hl
-create_time: 2026-09-10 07:54:32
-status: wip
+status: done
 ---
 
 # Single bead wait labels
