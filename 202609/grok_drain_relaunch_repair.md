@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Repair provider-drain replacement launches
-goal:
-  Usage-limit drains launch valid replacements, settle the original trigger, and report
-  actionable failures without duplicating recovered work.
+goal: Usage-limit drains launch valid replacements, settle the original trigger, and
+  report actionable failures without duplicating recovered work.
 size: medium
 proposed_by: bbugyi200.athena.0ix
-create_time: 2026-09-10 16:40:19
-status: wip
+status: done
 ---
 
 # Repair provider-drain replacement launches
