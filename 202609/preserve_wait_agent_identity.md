@@ -1,22 +1,12 @@
 ---
 tier: tale
 title: Preserve agent identity through wait edits and runner refreshes
-goal:
-  Keep assigned agent names stable across wait-driven relaunches and automatic runner
-  refreshes so existing downstream dependencies continue to resolve.
+goal: Keep assigned agent names stable across wait-driven relaunches and automatic
+  runner refreshes so existing downstream dependencies continue to resolve.
 size: medium
 proposed_by: bbugyi200.athena.0i7
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0i7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i7.md)
-  - [bbugyi200.athena.sase-z8.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z8.1/README.md)
-- **COMMITS:**
-  - [a723858](https://github.com/sase-org/sase/commit/a723858f27dc48fe42ea849b71f69527046811a0)
-    — fix(agent): preserve wait agent identity
-  - [25266f2](https://github.com/sase-org/sase/commit/25266f215dd16b12da78f0aed9cf2a02b3c245c0)
-    — feat(completion): refresh stale shell scripts reliably
 
 # Preserve agent names through wait edits and runner refreshes
 
@@ -240,15 +230,3 @@ PyO3 binding tests run. Do not use core-only cargo tests as the final Rust verif
 Report the two diagnosed triggers, the identity-preserving behavior, and actual
 verification results. Follow host-owned finalization and `/sase_final` for the
 implementation turn; do not manually create commits, branches, or PRs.
-
-<!-- sase:referenced-by:start -->
-
-## Referenced By
-
-| Relation | Artifact                              | Why                                                           | Uses |
-| -------- | ------------------------------------- | ------------------------------------------------------------- | ---: |
-| cited-by | [agent:bbugyi200.athena.0i7--code][1] | prompt reference @plan:202609/preserve_wait_agent_identity.md |    1 |
-
-[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i7.md
-
-<!-- sase:referenced-by:end -->
