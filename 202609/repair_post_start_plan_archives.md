@@ -13,7 +13,7 @@ phases:
   size: xsmall
 proposed_by: bbugyi200.athena.sase-z2.land
 create_time: 2026-09-10 12:48:58
-status: wip
+status: done
 bead_id: sase-z2.5
 ---
 
