@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/preserve_wait_agent_identity.md",
+  "rows": [
+    {
+      "created_at": "2026-09-10T14:14:16Z",
+      "created_by": "bbugyi200.athena.0i7--code",
+      "description": "prompt reference @plan:202609/preserve_wait_agent_identity.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0i7--code",
+      "target_ref": "plan:202609/preserve_wait_agent_identity.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}

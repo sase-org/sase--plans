@@ -230,3 +230,15 @@ PyO3 binding tests run. Do not use core-only cargo tests as the final Rust verif
 Report the two diagnosed triggers, the identity-preserving behavior, and actual
 verification results. Follow host-owned finalization and `/sase_final` for the
 implementation turn; do not manually create commits, branches, or PRs.
+
+<!-- sase:referenced-by:start -->
+
+## Referenced By
+
+| Relation | Artifact | Why | Uses |
+| --- | --- | --- | ---: |
+| cited-by | [agent:bbugyi200.athena.0i7--code][1] | prompt reference @plan:202609/preserve_wait_agent_identity.md | 1 |
+
+[1]: https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i7.md
+
+<!-- sase:referenced-by:end -->
