@@ -5,12 +5,14 @@ goal:
   Centralize layered AXE composition and exact-key sparse mutation planning in Rust,
   with conflict-safe atomic Python application and runtime-preview parity.
 bead: plans-7.1
-parent: sase/repos/plans/202607/axe_config_editor.md
 create_time: 2026-09-09 19:53:00
 status: wip
 ---
 
+- **PARENT:** [202607/axe_config_editor.md](https://github.com/sase-org/sase--plans/blob/main/202607/axe_config_editor.md)
 - **BEAD:** plans-7.1
+- **AGENTS:**
+  - [bbugyi200.athena.plans-7.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.plans-7.1.md)
 
 # Exact AXE config composition and mutation planning
 
