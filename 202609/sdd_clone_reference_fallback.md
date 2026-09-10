@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Fall back to a referenceless SDD sidecar clone on any reference-assisted failure
-goal:
-  A transient failure in a reference-assisted SDD sidecar clone retries without the
-  local reference instead of failing the agent launch.
+goal: A transient failure in a reference-assisted SDD sidecar clone retries without
+  the local reference instead of failing the agent launch.
 size: small
 proposed_by: bbugyi200.athena.0iq
-create_time: 2026-09-10 12:15:04
-status: wip
+status: done
 ---
 
 # Fall Back To A Referenceless SDD Sidecar Clone On Any Reference-Assisted Failure
