@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Restore Ctrl+I as the pager's advertised forward-history key
-goal:
-  The pager advertises Ctrl+I for forward history everywhere while retaining the working
-  Tab compatibility binding.
+goal: The pager advertises Ctrl+I for forward history everywhere while retaining the
+  working Tab compatibility binding.
 size: small
 proposed_by: bbugyi200.athena.0ii
-create_time: 2026-09-10 16:35:09
-status: wip
+status: done
 ---
 
 # Restore Ctrl+I as the pager's advertised forward-history key
