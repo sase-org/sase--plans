@@ -1,16 +1,14 @@
 ---
 tier: tale
 title: Make legacy cutover resumable and preserve frozen history
-goal:
-  A legacy artifact-link cutover never loses an unconverted queue row, resumes exactly
-  the same import after any interrupted marker/baseline/commit step, requires an
-  operator capability attestation before mutating, and leaves `links/**` byte-identical
+goal: A legacy artifact-link cutover never loses an unconverted queue row, resumes
+  exactly the same import after any interrupted marker/baseline/commit step, requires
+  an operator capability attestation before mutating, and leaves `links/**` byte-identical
   once imported.
 size: medium
 bead: sase-yy.8.4
 proposed_by: bbugyi200.athena.sase-yy.8.4
-create_time: 2026-09-10 18:14:15
-status: wip
+status: done
 ---
 
 - **PARENT:**
