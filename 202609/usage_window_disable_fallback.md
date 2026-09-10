@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Usage-limit disables fall back to collected usage-window resets
-goal:
-  When a usage-limit error carries no reset hint, the provider disable expiry comes from
-  the usage collectors' window reset data (clamped and corroborated), falling back to
-  the flat disable_seconds only when no usable window data exists.
+goal: When a usage-limit error carries no reset hint, the provider disable expiry
+  comes from the usage collectors' window reset data (clamped and corroborated), falling
+  back to the flat disable_seconds only when no usable window data exists.
 size: medium
 proposed_by: bbugyi200.athena.0ix.f0
-create_time: 2026-09-10 16:54:25
-status: wip
+status: done
 ---
 
 # Usage-Limit Disable Duration: Fall Back To Collected Usage-Window Resets
