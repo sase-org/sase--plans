@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Repair post-start plan archives before landing sase-z2
-goal:
-  Publish the two recoverable bead-linked plans created after sase-z2 began and prove
-  the plans sidecar is current.
+goal: Publish the two recoverable bead-linked plans created after sase-z2 began and
+  prove the plans sidecar is current.
 parent_bead: sase-z2
 phases:
-  - id: repair-archives
-    title: Repair and verify the post-start plan archives
-    depends_on: []
-    description:
-      "repair-archives: publish the two recoverable bead-linked plans and verify their
-      canonical, sidecar, and remote state."
-    size: xsmall
+- id: repair-archives
+  title: Repair and verify the post-start plan archives
+  depends_on: []
+  description: 'repair-archives: publish the two recoverable bead-linked plans and
+    verify their canonical, sidecar, and remote state.'
+  size: xsmall
 proposed_by: bbugyi200.athena.sase-z2.land
 create_time: 2026-09-10 12:48:58
 status: wip
+bead_id: sase-z2.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/repair_post_start_plan_archives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/repair_post_start_plan_archives.md)
-- **PARENT:**
-  [202609/durable_plan_archive_publication.md](https://github.com/sase-org/sase--plans/blob/main/202609/durable_plan_archive_publication.md)
+- **PROMPT:** [prompts/202609/repair_post_start_plan_archives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/repair_post_start_plan_archives.md)
+- **PARENT:** [202609/durable_plan_archive_publication.md](https://github.com/sase-org/sase--plans/blob/main/202609/durable_plan_archive_publication.md)
+- **BEAD:** [sase-z2.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z2/sase-z2.5.md)
 
 # Plan
 
