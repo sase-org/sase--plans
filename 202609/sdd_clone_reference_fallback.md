@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fall back to a referenceless SDD sidecar clone on any reference-assisted failure
-goal: A transient failure in a reference-assisted SDD sidecar clone retries without
-  the local reference instead of failing the agent launch.
+goal:
+  A transient failure in a reference-assisted SDD sidecar clone retries without the
+  local reference instead of failing the agent launch.
 size: small
 proposed_by: bbugyi200.athena.0iq
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0iq](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0iq.md)
+- **COMMITS:**
+  - [74de0fa](https://github.com/sase-org/sase/commit/74de0fa7cc5e36dd153f72e2901863ccb5d4ca43)
+    — fix(sdd): retry sidecar clones without local object reference on any failure
 
 # Fall Back To A Referenceless SDD Sidecar Clone On Any Reference-Assisted Failure
 
