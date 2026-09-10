@@ -1,66 +1,62 @@
 ---
 tier: epic
 title: Unify the Agents tab query language with the Artifacts Agent pane
-goal: "The top-level Agents tab filters with the same boolean query-profile dialect,
-  Rust-backed evaluation, and FilterBar editing chrome as the Artifacts Agent pane, with
-  zero idle screen-space cost and no measurable performance regression.
+goal: 'The top-level Agents tab filters with the same boolean query-profile dialect,
+  Rust-backed evaluation, and FilterBar editing chrome as the Artifacts Agent pane,
+  with zero idle screen-space cost and no measurable performance regression.
 
-  "
+  '
 phases:
-  - id: shared-profile
-    title: Shared agents-live query profile and row adapter
-    depends_on: []
-    size: medium
-    description:
-      "shared-profile: factor shared agent query field specs out of the Artifacts agents
-      schema, add the agents-live boolean profile and the live-row query adapter, and
-      pin Python/Rust conformance goldens for the new dialect."
-  - id: live-engine
-    title: Rust-backed committed-query engine behind a sunset flag
-    depends_on:
-      - shared-profile
-    size: medium
-    description:
-      "live-engine: swap the Agents tab committed-query parse/evaluate path to the
-      agents-live profile behind a new sunset feature flag, using an off-thread Rust
-      corpus index, tree-preserving match masks, and last-good error handling."
-  - id: consumers-and-pushdown
-    title: Load-path pushdown parity and secondary query consumers
-    depends_on:
-      - live-engine
-    size: medium
-    description:
-      "consumers-and-pushdown: compile the new dialect into the existing Rust
-      candidate-filter pushdown with window-safety parity, and migrate the machines-pane
-      writer, project seeding, unread-jump, neighbor, and prospective-clan consumers to
-      the shared match-mask facade."
-  - id: filter-bar-ui
-    title: Auto-hiding FilterBar chrome on the Agents tab
-    depends_on:
-      - live-engine
-      - consumers-and-pushdown
-    size: medium
-    description:
-      "filter-bar-ui: replace the query-edit modal with an auto-hiding FilterBar plus a
-      highlighted canonical query readout in the existing info panel, wiring live
-      preview, completions, saved slots, query history, and the keybinding, footer, and
-      help-modal updates."
-  - id: docs-and-sweep
-    title: Documentation rewrite and verification sweep
-    depends_on:
-      - filter-bar-ui
-    size: small
-    description:
-      "docs-and-sweep: rewrite the user docs for the unified dialect including the
-      legacy-token migration table, refresh the help-modal syntax section and
-      configuration reference, and run the final perf and visual snapshot sweep."
+- id: shared-profile
+  title: Shared agents-live query profile and row adapter
+  depends_on: []
+  size: medium
+  description: 'shared-profile: factor shared agent query field specs out of the Artifacts
+    agents schema, add the agents-live boolean profile and the live-row query adapter,
+    and pin Python/Rust conformance goldens for the new dialect.'
+- id: live-engine
+  title: Rust-backed committed-query engine behind a sunset flag
+  depends_on:
+  - shared-profile
+  size: medium
+  description: 'live-engine: swap the Agents tab committed-query parse/evaluate path
+    to the agents-live profile behind a new sunset feature flag, using an off-thread
+    Rust corpus index, tree-preserving match masks, and last-good error handling.'
+- id: consumers-and-pushdown
+  title: Load-path pushdown parity and secondary query consumers
+  depends_on:
+  - live-engine
+  size: medium
+  description: 'consumers-and-pushdown: compile the new dialect into the existing
+    Rust candidate-filter pushdown with window-safety parity, and migrate the machines-pane
+    writer, project seeding, unread-jump, neighbor, and prospective-clan consumers
+    to the shared match-mask facade.'
+- id: filter-bar-ui
+  title: Auto-hiding FilterBar chrome on the Agents tab
+  depends_on:
+  - live-engine
+  - consumers-and-pushdown
+  size: medium
+  description: 'filter-bar-ui: replace the query-edit modal with an auto-hiding FilterBar
+    plus a highlighted canonical query readout in the existing info panel, wiring
+    live preview, completions, saved slots, query history, and the keybinding, footer,
+    and help-modal updates.'
+- id: docs-and-sweep
+  title: Documentation rewrite and verification sweep
+  depends_on:
+  - filter-bar-ui
+  size: small
+  description: 'docs-and-sweep: rewrite the user docs for the unified dialect including
+    the legacy-token migration table, refresh the help-modal syntax section and configuration
+    reference, and run the final perf and visual snapshot sweep.'
 proposed_by: bbugyi200.athena.0iy
 create_time: 2026-09-10 18:01:44
 status: wip
+bead_id: sase-zf
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_query_unification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_query_unification.md)
+- **PROMPT:** [prompts/202609/agents_query_unification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_query_unification.md)
+- **BEAD:** [sase-zf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zf/README.md)
 
 # Plan: Unify the Agents tab query language with the Artifacts Agent pane
 
