@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Preserve agent identity through wait edits and runner refreshes
-goal:
-  Keep assigned agent names stable across wait-driven relaunches and automatic runner
-  refreshes so existing downstream dependencies continue to resolve.
+goal: Keep assigned agent names stable across wait-driven relaunches and automatic
+  runner refreshes so existing downstream dependencies continue to resolve.
 size: medium
 proposed_by: bbugyi200.athena.0i7
-create_time: 2026-09-10 09:33:18
-status: wip
+status: done
 ---
 
 # Preserve agent names through wait edits and runner refreshes
