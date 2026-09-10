@@ -1,22 +1,12 @@
 ---
 tier: tale
 title: Preserve batch predecessors when launching prompt stacks
-goal:
-  Make no-argument waits target the preceding submitted agent consistently across TUI
-  prompt stacks and named xprompt swarms, including deferred expansion and naming.
+goal: Make no-argument waits target the preceding submitted agent consistently across
+  TUI prompt stacks and named xprompt swarms, including deferred expansion and naming.
 size: medium
 proposed_by: bbugyi200.athena.0i1
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0i1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i1.md)
-  - [bbugyi200.athena.sase-z7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-z7.2/README.md)
-- **COMMITS:**
-  - [ea096db](https://github.com/sase-org/sase/commit/ea096dbfcb3198cac511181c2270d44d478b5b17)
-    — feat(agent): bind prompt stack waits to predecessors
-  - [4504b1b](https://github.com/sase-org/sase/commit/4504b1b84f70252596818fc8908fad8c926c6f82)
-    — feat(usage): integrate usage indicator config
 
 # Preserve batch predecessors when launching prompt stacks
 
