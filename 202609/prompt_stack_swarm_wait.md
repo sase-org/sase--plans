@@ -9,6 +9,12 @@ proposed_by: bbugyi200.athena.0i1
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0i1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i1.md)
+- **COMMITS:**
+  - [2afe3d7](https://github.com/sase-org/sase-core/commit/2afe3d7d3cef42b88c2c6b916debd53b11c4ee17)
+    — feat(agent-launch): add predecessor wait binding
+
 # Preserve batch predecessors when launching prompt stacks
 
 ## Goal
