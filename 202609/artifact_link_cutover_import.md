@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fence and import legacy artifact-link indexes
-goal:
-  Cut artifact-link storage over to immutable events with a deterministic, resumable
+goal: Cut artifact-link storage over to immutable events with a deterministic, resumable
   baseline import and no regression in publication recovery.
 size: medium
 proposed_by: bbugyi200.athena.sase-yy.6
 bead: sase-yy.6
-create_time: 2026-09-10 10:19:06
-status: wip
+status: done
 ---
 
 - **PARENT:**
