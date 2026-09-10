@@ -1,54 +1,50 @@
 ---
 tier: epic
 title: Complete weighted capacity ownership, presentation, and release acceptance
-goal:
-  Repair the remaining sase-z4 acceptance failures and integrate weighted capacity with
-  the newer fleet UI so its parent landing can resume.
+goal: Repair the remaining sase-z4 acceptance failures and integrate weighted capacity
+  with the newer fleet UI so its parent landing can resume.
 parent_bead: sase-z4
 phases:
-  - id: capacity-policy
-    title: Correct numeric fitting and explicit claim lineage in Rust
-    size: medium
-    depends_on: []
-    description:
-      "capacity-policy: fix decimal-boundary admission, model serial claim ownership
-      through parallel predecessors, and expose authoritative admission and parked-order
-      decisions to host consumers."
-  - id: lifecycle-boundaries
-    title: Make weighted continuation and shell admission atomic
-    size: medium
-    depends_on:
-      - capacity-policy
-    description:
-      "lifecycle-boundaries: exclude unadmitted successors from their own claims,
-      preserve authored versus inherited weights, and acquire or transfer capacity
-      before monitor and gate work starts."
-  - id: capacity-presentation
-    title: Correct queue projection and integrate weighted fleet rows
-    size: medium
-    depends_on:
-      - lifecycle-boundaries
-    description:
-      "capacity-presentation: project global local claims before display
-      transformations, include serial waiters, consume shared parked ordering, carry
-      remote weight metadata, and finish capacity labels and visual acceptance."
-  - id: release-acceptance
-    title: Prove packaged compatibility and integrated weighted workloads
-    size: medium
-    depends_on:
-      - capacity-presentation
-    description:
-      "release-acceptance: establish real published package floors, add wheel-only
-      compatibility checks and end-to-end workload coverage, and resolve the existing
-      retired rollout flag bead."
+- id: capacity-policy
+  title: Correct numeric fitting and explicit claim lineage in Rust
+  size: medium
+  depends_on: []
+  description: 'capacity-policy: fix decimal-boundary admission, model serial claim
+    ownership through parallel predecessors, and expose authoritative admission and
+    parked-order decisions to host consumers.'
+- id: lifecycle-boundaries
+  title: Make weighted continuation and shell admission atomic
+  size: medium
+  depends_on:
+  - capacity-policy
+  description: 'lifecycle-boundaries: exclude unadmitted successors from their own
+    claims, preserve authored versus inherited weights, and acquire or transfer capacity
+    before monitor and gate work starts.'
+- id: capacity-presentation
+  title: Correct queue projection and integrate weighted fleet rows
+  size: medium
+  depends_on:
+  - lifecycle-boundaries
+  description: 'capacity-presentation: project global local claims before display
+    transformations, include serial waiters, consume shared parked ordering, carry
+    remote weight metadata, and finish capacity labels and visual acceptance.'
+- id: release-acceptance
+  title: Prove packaged compatibility and integrated weighted workloads
+  size: medium
+  depends_on:
+  - capacity-presentation
+  description: 'release-acceptance: establish real published package floors, add wheel-only
+    compatibility checks and end-to-end workload coverage, and resolve the existing
+    retired rollout flag bead.'
 proposed_by: bbugyi200.athena.sase-z4.land
 create_time: 2026-09-10 08:15:36
 status: wip
+bead_id: sase-z4.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/weighted_capacity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_landing_repairs.md)
+- **PROMPT:** [prompts/202609/weighted_capacity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_landing_repairs.md)
 - **PARENT:** [202609/weighted_queue_capacity.md](weighted_queue_capacity.md)
+- **BEAD:** [sase-z4.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z4/sase-z4.6.md)
 
 # Remaining weighted-capacity work
 
