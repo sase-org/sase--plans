@@ -1,41 +1,38 @@
 ---
 tier: epic
 title: Keep shell completion current with the installed SASE CLI
-goal:
-  Restore usage completion and reliably refresh and verify generated shell scripts when
-  commands change, including on chezmoi-managed machines.
+goal: Restore usage completion and reliably refresh and verify generated shell scripts
+  when commands change, including on chezmoi-managed machines.
 phases:
-  - id: completion_freshness
-    title: Detect stale scripts and make local installation and refresh reliable
-    size: medium
-    depends_on: []
-    description:
-      "completion_freshness: add content-based diagnostics, reliable installation,
-      explicit refresh, and refresh from the updated executable."
-  - id: managed_installation
-    title: Replace frozen chezmoi snapshots with a repeatable installation recipe
-    size: medium
-    depends_on:
-      - completion_freshness
-    description:
-      "managed_installation: generate an apply-time installer, migrate owned snapshots,
-      and update the linked chezmoi source."
-  - id: completion_acceptance
-    title: Verify shell behavior, migration, and documentation end to end
-    size: medium
-    depends_on:
-      - completion_freshness
-      - managed_installation
-    description:
-      "completion_acceptance: add real-shell regressions for usage and future commands,
-      migration and update scenarios, and accurate troubleshooting guidance."
+- id: completion_freshness
+  title: Detect stale scripts and make local installation and refresh reliable
+  size: medium
+  depends_on: []
+  description: 'completion_freshness: add content-based diagnostics, reliable installation,
+    explicit refresh, and refresh from the updated executable.'
+- id: managed_installation
+  title: Replace frozen chezmoi snapshots with a repeatable installation recipe
+  size: medium
+  depends_on:
+  - completion_freshness
+  description: 'managed_installation: generate an apply-time installer, migrate owned
+    snapshots, and update the linked chezmoi source.'
+- id: completion_acceptance
+  title: Verify shell behavior, migration, and documentation end to end
+  size: medium
+  depends_on:
+  - completion_freshness
+  - managed_installation
+  description: 'completion_acceptance: add real-shell regressions for usage and future
+    commands, migration and update scenarios, and accurate troubleshooting guidance.'
 proposed_by: bbugyi200.athena.0i9
 create_time: 2026-09-10 09:46:01
 status: wip
+bead_id: sase-z8
 ---
 
-- **PROMPT:**
-  [prompts/202609/completion_freshness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/completion_freshness.md)
+- **PROMPT:** [prompts/202609/completion_freshness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/completion_freshness.md)
+- **BEAD:** [sase-z8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z8/README.md)
 
 # Keep shell completion current with the installed SASE CLI
 
