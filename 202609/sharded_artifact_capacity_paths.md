@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Fix capacity path derivations broken by day-sharded artifact dirs
-goal:
-  ACE agent nodes show QUEUED with real queue context for runner-slot waiters, and the
-  locked-admission candidate carries its real project name, under the day-sharded
+goal: ACE agent nodes show QUEUED with real queue context for runner-slot waiters,
+  and the locked-admission candidate carries its real project name, under the day-sharded
   artifact layout.
 proposed_by: bbugyi200.athena.0iu
-create_time: 2026-09-10 13:56:43
-status: wip
+status: done
 ---
 
 # Fix capacity path derivations broken by day-sharded artifact dirs
