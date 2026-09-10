@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Status sub-groups under BY_MACHINE machine groups
-goal:
-  In the Agents-tab BY_MACHINE grouping mode, every machine group (here and each remote
-  alias) nests its agents under priority-ordered status sub-group banners, with
-  name-root/name-prefix grouping intact inside each bucket, all other grouping modes
-  byte-for-byte unchanged, and BY_MACHINE still on the in-place patch fast paths.
+goal: In the Agents-tab BY_MACHINE grouping mode, every machine group (here and each
+  remote alias) nests its agents under priority-ordered status sub-group banners,
+  with name-root/name-prefix grouping intact inside each bucket, all other grouping
+  modes byte-for-byte unchanged, and BY_MACHINE still on the in-place patch fast paths.
 size: medium
 proposed_by: bbugyi200.athena.0iw
-create_time: 2026-09-10 16:39:37
-status: wip
+status: done
 ---
 
 # Status Sub-Groups Under BY_MACHINE Machine Groups
