@@ -1,71 +1,65 @@
 ---
 tier: epic
 title: Complete artifact-link event identity, publication, and cutover guarantees
-goal:
-  Repair the reproduced sase-yy landing failures so immutable link operations survive
-  retries, partial publication, reconciliation, and legacy cutover without lost counts
-  or manual metadata repair.
+goal: Repair the reproduced sase-yy landing failures so immutable link operations
+  survive retries, partial publication, reconciliation, and legacy cutover without
+  lost counts or manual metadata repair.
 parent_bead: sase-yy
 phases:
-  - id: producer_identity
-    title: Freeze derived and alias operation identity across retries
-    size: medium
-    depends_on: []
-    description:
-      "producer_identity: make repeated derivation and rename discovery reuse
-      byte-identical immutable events, reject collisions before persistence, and
-      preserve machine eligibility without releasing unrelated agent reads."
-  - id: publication_durability
-    title: Require durable owners and publish complete event files atomically
-    size: large
-    depends_on:
-      - producer_identity
-    description:
-      "publication_durability: prevent false acknowledgements for missing owners,
-      preserve non-document operations, install event files atomically across process
-      death, and route manual document mutations through hidden machine stores with
-      synchronous publication."
-  - id: event_reconciliation
-    title: Reduce event unions and keep bead projections consistent
-    size: large
-    depends_on:
-      - publication_durability
-    description:
-      "event_reconciliation: union immutable operations before cross-clone reduction,
-      preserve add-wins and alias semantics, and make bead projection and operation
-      receipts agree with the same reduced truth."
-  - id: cutover_recovery
-    title: Make legacy cutover resumable and preserve frozen history
-    size: large
-    depends_on:
-      - producer_identity
-      - publication_durability
-      - event_reconciliation
-    description:
-      "cutover_recovery: preserve legacy outbox rows during ordinary drains, resume
-      interrupted multi-root import safely, require operator capability confirmation,
-      and make post-import rename and maintenance event-only with shared policy in Rust."
-  - id: acceptance
-    title: Verify real producer, crash, and reconciliation paths end to end
-    size: medium
-    depends_on:
-      - producer_identity
-      - publication_durability
-      - event_reconciliation
-      - cutover_recovery
-    description:
-      "acceptance: extend multi-clone tests through production producers and actual
-      process death, cover every reproduced landing defect and public mutation path, and
-      complete the existing flag-retirement verification."
+- id: producer_identity
+  title: Freeze derived and alias operation identity across retries
+  size: medium
+  depends_on: []
+  description: 'producer_identity: make repeated derivation and rename discovery reuse
+    byte-identical immutable events, reject collisions before persistence, and preserve
+    machine eligibility without releasing unrelated agent reads.'
+- id: publication_durability
+  title: Require durable owners and publish complete event files atomically
+  size: large
+  depends_on:
+  - producer_identity
+  description: 'publication_durability: prevent false acknowledgements for missing
+    owners, preserve non-document operations, install event files atomically across
+    process death, and route manual document mutations through hidden machine stores
+    with synchronous publication.'
+- id: event_reconciliation
+  title: Reduce event unions and keep bead projections consistent
+  size: large
+  depends_on:
+  - publication_durability
+  description: 'event_reconciliation: union immutable operations before cross-clone
+    reduction, preserve add-wins and alias semantics, and make bead projection and
+    operation receipts agree with the same reduced truth.'
+- id: cutover_recovery
+  title: Make legacy cutover resumable and preserve frozen history
+  size: large
+  depends_on:
+  - producer_identity
+  - publication_durability
+  - event_reconciliation
+  description: 'cutover_recovery: preserve legacy outbox rows during ordinary drains,
+    resume interrupted multi-root import safely, require operator capability confirmation,
+    and make post-import rename and maintenance event-only with shared policy in Rust.'
+- id: acceptance
+  title: Verify real producer, crash, and reconciliation paths end to end
+  size: medium
+  depends_on:
+  - producer_identity
+  - publication_durability
+  - event_reconciliation
+  - cutover_recovery
+  description: 'acceptance: extend multi-clone tests through production producers
+    and actual process death, cover every reproduced landing defect and public mutation
+    path, and complete the existing flag-retirement verification.'
 proposed_by: bbugyi200.athena.sase-yy.land
 create_time: 2026-09-10 14:27:19
 status: wip
+bead_id: sase-yy.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_landing_repairs.md)
-- **PARENT:**
-  [202609/artifact_link_events_v2.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_events_v2.md)
+- **PROMPT:** [prompts/202609/artifact_link_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_landing_repairs.md)
+- **PARENT:** [202609/artifact_link_events_v2.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_events_v2.md)
+- **BEAD:** [sase-yy.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.8.md)
 
 # Remaining artifact-link event work
 
