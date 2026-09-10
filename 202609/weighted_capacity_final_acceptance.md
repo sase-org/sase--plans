@@ -1,49 +1,45 @@
 ---
 tier: epic
 title: Finish weighted-capacity acceptance
-goal:
-  Weighted capacity uses authoritative durable lineage end to end, passes integrated
+goal: Weighted capacity uses authoritative durable lineage end to end, passes integrated
   lifecycle acceptance, and ships with verified published package floors.
 parent_bead: sase-z4.6
 phases:
-  - id: admission-authority
-    title: Make Rust candidate lineage authoritative at admission
-    size: medium
-    depends_on: []
-    description:
-      "admission-authority: connect the Rust runner-capacity candidate decision and
-      durable claim lineage through scan metadata and the locked Python admission path,
-      then integrate the later capacity-only scan mode without losing predecessor
-      ownership."
-  - id: integrated-acceptance
-    title: Add the missing integrated weighted workload acceptance
-    size: medium
-    depends_on:
-      - admission-authority
-    description:
-      "integrated-acceptance: exercise weighted claims, parallel-lineage handoffs,
-      monitor transfer, research swarm expansion, cleanup, and runtime/CLI/TUI parity
-      through real lifecycle fixtures rather than isolated projections."
-  - id: published-floors
-    title: Prove actual released floors and retire the rollout flag
-    size: medium
-    depends_on:
-      - admission-authority
-      - integrated-acceptance
-    description:
-      "published-floors: establish releases that contain the repaired core, host, and
-      research contracts; verify exact published wheels in a clean environment; ratchet
-      dependency floors and pins; and close the existing weighted_queue_capacity flag
-      bead only after the release proof succeeds."
+- id: admission-authority
+  title: Make Rust candidate lineage authoritative at admission
+  size: medium
+  depends_on: []
+  description: 'admission-authority: connect the Rust runner-capacity candidate decision
+    and durable claim lineage through scan metadata and the locked Python admission
+    path, then integrate the later capacity-only scan mode without losing predecessor
+    ownership.'
+- id: integrated-acceptance
+  title: Add the missing integrated weighted workload acceptance
+  size: medium
+  depends_on:
+  - admission-authority
+  description: 'integrated-acceptance: exercise weighted claims, parallel-lineage
+    handoffs, monitor transfer, research swarm expansion, cleanup, and runtime/CLI/TUI
+    parity through real lifecycle fixtures rather than isolated projections.'
+- id: published-floors
+  title: Prove actual released floors and retire the rollout flag
+  size: medium
+  depends_on:
+  - admission-authority
+  - integrated-acceptance
+  description: 'published-floors: establish releases that contain the repaired core,
+    host, and research contracts; verify exact published wheels in a clean environment;
+    ratchet dependency floors and pins; and close the existing weighted_queue_capacity
+    flag bead only after the release proof succeeds.'
 proposed_by: bbugyi200.athena.sase-z4.6.land
 create_time: 2026-09-10 13:23:36
 status: wip
+bead_id: sase-z4.6.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/weighted_capacity_final_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_final_acceptance.md)
-- **PARENT:**
-  [202609/weighted_capacity_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_landing_repairs.md)
+- **PROMPT:** [prompts/202609/weighted_capacity_final_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_final_acceptance.md)
+- **PARENT:** [202609/weighted_capacity_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_landing_repairs.md)
+- **BEAD:** [sase-z4.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z4/sase-z4.6.5.md)
 
 # Finish weighted-capacity acceptance
 
