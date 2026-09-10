@@ -1,55 +1,52 @@
 ---
 tier: epic
 title: Host resource diet for parked runners and the notification store
-goal: "Parked agent runners and the ACE TUI stop consuming CPU, RSS, and swap in
-  proportion to on-disk history: runner-slot admission scans only live capacity state,
-  and the notification store stays O(live) via compaction.
+goal: 'Parked agent runners and the ACE TUI stop consuming CPU, RSS, and swap in proportion
+  to on-disk history: runner-slot admission scans only live capacity state, and the
+  notification store stays O(live) via compaction.
 
-  "
+  '
 phases:
-  - id: capacity-scan-mode
-    title: Capacity-only artifact scan in the Rust core
-    depends_on: []
-    size: medium
-    description:
-      "capacity-scan-mode: add an additive sase-core scan option that skips done
-      artifact dirs before parsing and returns only running/waiting records, exposed
-      through the scan-options wire and sase_core_rs with Rust tests and the
-      revision-pin bump."
-  - id: slot-poll-diet
-    title: Make parked runners cheap
-    depends_on:
-      - capacity-scan-mode
-    size: medium
-    description:
-      "slot-poll-diet: switch the runner-slot wait loop to the capacity-only scan, share
-      one scan per poll window host-wide under the existing lock, and add jittered
-      backoff with a slot-state change signal while preserving admission semantics."
-  - id: notification-compaction
-    title: Keep notifications.jsonl O(live)
-    depends_on: []
-    size: medium
-    description:
-      "notification-compaction: add crash-safe automatic compaction with a retention
-      window to the Rust notification store, archiving old dismissed rows to a sibling
-      JSONL file with tests and unchanged Python caller behavior."
-  - id: verify-resource-diet
-    title: Live verification and perf floors
-    depends_on:
-      - slot-poll-diet
-      - notification-compaction
-    size: small
-    description:
-      "verify-resource-diet: capture after-measurements on the live host, add perf-floor
-      benches for the capacity scan and notification snapshot reads, and record residual
-      hotspots on the epic bead."
+- id: capacity-scan-mode
+  title: Capacity-only artifact scan in the Rust core
+  depends_on: []
+  size: medium
+  description: 'capacity-scan-mode: add an additive sase-core scan option that skips
+    done artifact dirs before parsing and returns only running/waiting records, exposed
+    through the scan-options wire and sase_core_rs with Rust tests and the revision-pin
+    bump.'
+- id: slot-poll-diet
+  title: Make parked runners cheap
+  depends_on:
+  - capacity-scan-mode
+  size: medium
+  description: 'slot-poll-diet: switch the runner-slot wait loop to the capacity-only
+    scan, share one scan per poll window host-wide under the existing lock, and add
+    jittered backoff with a slot-state change signal while preserving admission semantics.'
+- id: notification-compaction
+  title: Keep notifications.jsonl O(live)
+  depends_on: []
+  size: medium
+  description: 'notification-compaction: add crash-safe automatic compaction with
+    a retention window to the Rust notification store, archiving old dismissed rows
+    to a sibling JSONL file with tests and unchanged Python caller behavior.'
+- id: verify-resource-diet
+  title: Live verification and perf floors
+  depends_on:
+  - slot-poll-diet
+  - notification-compaction
+  size: small
+  description: 'verify-resource-diet: capture after-measurements on the live host,
+    add perf-floor benches for the capacity scan and notification snapshot reads,
+    and record residual hotspots on the epic bead.'
 proposed_by: bbugyi200.athena.0ih
 create_time: 2026-09-10 11:44:14
 status: wip
+bead_id: sase-za
 ---
 
-- **PROMPT:**
-  [prompts/202609/host_resource_diet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/host_resource_diet.md)
+- **PROMPT:** [prompts/202609/host_resource_diet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/host_resource_diet.md)
+- **BEAD:** [sase-za](https://github.com/sase-org/sase--beads/blob/main/pages/sase-za/README.md)
 
 # Host Resource Diet: O(live) Runner-Slot Admission and Notification Store Compaction
 
