@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Preserve agent identity through wait edits and runner refreshes
-goal: Keep assigned agent names stable across wait-driven relaunches and automatic
-  runner refreshes so existing downstream dependencies continue to resolve.
+goal:
+  Keep assigned agent names stable across wait-driven relaunches and automatic runner
+  refreshes so existing downstream dependencies continue to resolve.
 size: medium
 proposed_by: bbugyi200.athena.0i7
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0i7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0i7.md)
+- **COMMITS:**
+  - [a723858](https://github.com/sase-org/sase/commit/a723858f27dc48fe42ea849b71f69527046811a0)
+    — fix(agent): preserve wait agent identity
 
 # Preserve agent names through wait edits and runner refreshes
 
