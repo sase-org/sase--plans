@@ -1,43 +1,40 @@
 ---
 tier: epic
 title: Require explicit bead decisions when creating stitches
-goal:
-  Prevent commits from closing unfinished beads by requiring an explicit close or keep
-  decision for bead-associated stitch creation, including host finalization and
-  checkpoint recovery.
+goal: Prevent commits from closing unfinished beads by requiring an explicit close
+  or keep decision for bead-associated stitch creation, including host finalization
+  and checkpoint recovery.
 phases:
-  - id: core_contract
-    title: Shared bead decision contract
-    depends_on: []
-    size: medium
-    description:
-      "core_contract: add a strict Rust bead-action policy and Python bindings, plus
-      authenticated finalizer context for the assigned bead."
-  - id: integrate_policy
-    title: Enforce and carry the decision through every commit path
-    depends_on:
-      - core_contract
-    size: medium
-    description:
-      "integrate_policy: replace the opt-out CLI, enforce preflight and resume rules,
-      carry declared choices through host finalization, and migrate callers, skill
-      sources, documentation, and focused tests together."
-  - id: verify_lifecycle
-    title: Verify lifecycle and recovery across the integrated system
-    depends_on:
-      - integrate_policy
-    size: medium
-    description:
-      "verify_lifecycle: exercise real phase and task beads with local commit remotes,
-      test interrupted close recovery and declaration propagation, and fix integration
-      defects before landing."
+- id: core_contract
+  title: Shared bead decision contract
+  depends_on: []
+  size: medium
+  description: 'core_contract: add a strict Rust bead-action policy and Python bindings,
+    plus authenticated finalizer context for the assigned bead.'
+- id: integrate_policy
+  title: Enforce and carry the decision through every commit path
+  depends_on:
+  - core_contract
+  size: medium
+  description: 'integrate_policy: replace the opt-out CLI, enforce preflight and resume
+    rules, carry declared choices through host finalization, and migrate callers,
+    skill sources, documentation, and focused tests together.'
+- id: verify_lifecycle
+  title: Verify lifecycle and recovery across the integrated system
+  depends_on:
+  - integrate_policy
+  size: medium
+  description: 'verify_lifecycle: exercise real phase and task beads with local commit
+    remotes, test interrupted close recovery and declaration propagation, and fix
+    integration defects before landing.'
 proposed_by: bbugyi200.athena.0jp
 create_time: 2026-09-11 15:33:34
 status: wip
+bead_id: sase-zq
 ---
 
-- **PROMPT:**
-  [prompts/202609/explicit_bead_action.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/explicit_bead_action.md)
+- **PROMPT:** [prompts/202609/explicit_bead_action.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/explicit_bead_action.md)
+- **BEAD:** [sase-zq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zq/README.md)
 
 # Explicit bead decisions for stitch creation
 
