@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix Grok usage collection when zero usage is omitted after reset
-goal:
-  Grok's verified zero-usage billing responses produce a fresh included-allowance
-  observation and clear collector failures through normal refresh, while ambiguous or
-  invalid billing payloads remain errors.
+goal: Grok's verified zero-usage billing responses produce a fresh included-allowance
+  observation and clear collector failures through normal refresh, while ambiguous
+  or invalid billing payloads remain errors.
 size: medium
 proposed_by: bbugyi200.athena.0je
-create_time: 2026-09-11 10:08:36
-status: wip
+status: done
 ---
 
 # Plan: Fix Grok usage collection after the weekly reset
