@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Recover approved tale gates whose coder handoff never completed
-goal:
-  Make approved coder handoffs durable, diagnosable, and safely resumable without
+goal: Make approved coder handoffs durable, diagnosable, and safely resumable without
   repeating the approval or plan commit.
 size: medium
 proposed_by: bbugyi200.athena.0jg
-create_time: 2026-09-11 11:00:46
-status: wip
+status: done
 ---
 
 # Recover approved tale coder handoffs
