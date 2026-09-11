@@ -1,74 +1,68 @@
 ---
 tier: epic
 title: Repair approval launches and finish the remote Agents epic
-goal:
-  Preserve requester continuation and exact launch targeting, complete the outstanding
-  real and live acceptance evidence, and carry the existing landing chain through a
-  verified normal close of sase-xe.
+goal: Preserve requester continuation and exact launch targeting, complete the outstanding
+  real and live acceptance evidence, and carry the existing landing chain through
+  a verified normal close of sase-xe.
 parent_bead: sase-xe.16.11.7.14.6
 phases:
-  - id: launch-targets
-    title: Preserve workspace and remote targeting through approved admission
-    size: medium
-    depends_on: []
-    description:
-      "launch-targets: repair the Rust typed launch round trip and Python approved
-      dispatch path, including remote identity and durable receipt handling; prove the
-      reviewed project and machine are the actual execution targets."
-  - id: requester-continuation
-    title: Resume requesters and isolate inherited operation context
-    size: medium
-    depends_on: []
-    description:
-      "requester-continuation: add an explicit durable continuation contract for helper
-      launches, prevent competing family successors, scrub parent operation sidecars at
-      agent boundaries, and update launch skill guidance and regressions."
-  - id: acceptance-regressions
-    title: Finish actual instance replacement and unified cutover checks
-    size: medium
-    depends_on:
-      - launch-targets
-      - requester-continuation
-    description:
-      "acceptance-regressions: complete the captured-old-instance fencing proof, verify
-      the existing successful HTTPS host fixture, resolve unified flag retirement, and
-      reproduce and repair the reported target-picker focus hazard."
-  - id: released-runtime
-    title: Publish and install the repaired execution cohort
-    size: medium
-    depends_on:
-      - launch-targets
-      - requester-continuation
-      - acceptance-regressions
-    description:
-      "released-runtime: adopt the published repaired Rust contract, validate clean
-      wheel and installed commands, deploy landed skill sources, refresh both machines
-      through supported workflows, and record running binary identities."
-  - id: stale-row-proof
-    title: Complete the interrupted snapshot and dismissal proof
-    size: medium
-    depends_on:
-      - released-runtime
-    description:
-      "stale-row-proof: prove actual Apollo presentation from Athena, controlled
-      dismissal and death reconciliation, older history, snapshot changes and restart
-      resilience; produce the evidence owed by sase-xe.16.11.7.14.6.6."
-  - id: unified-live-proof
-    title: Complete the unified workflow and combined acceptance matrix
-    size: medium
-    depends_on:
-      - stale-row-proof
-    description:
-      "unified-live-proof: execute the remaining unified Agents research scenarios,
-      prove exact remote output and stop, attention and uncertainty recovery, run
-      combined checks and supply evidence for all reopened original phases."
+- id: launch-targets
+  title: Preserve workspace and remote targeting through approved admission
+  size: medium
+  depends_on: []
+  description: 'launch-targets: repair the Rust typed launch round trip and Python
+    approved dispatch path, including remote identity and durable receipt handling;
+    prove the reviewed project and machine are the actual execution targets.'
+- id: requester-continuation
+  title: Resume requesters and isolate inherited operation context
+  size: medium
+  depends_on: []
+  description: 'requester-continuation: add an explicit durable continuation contract
+    for helper launches, prevent competing family successors, scrub parent operation
+    sidecars at agent boundaries, and update launch skill guidance and regressions.'
+- id: acceptance-regressions
+  title: Finish actual instance replacement and unified cutover checks
+  size: medium
+  depends_on:
+  - launch-targets
+  - requester-continuation
+  description: 'acceptance-regressions: complete the captured-old-instance fencing
+    proof, verify the existing successful HTTPS host fixture, resolve unified flag
+    retirement, and reproduce and repair the reported target-picker focus hazard.'
+- id: released-runtime
+  title: Publish and install the repaired execution cohort
+  size: medium
+  depends_on:
+  - launch-targets
+  - requester-continuation
+  - acceptance-regressions
+  description: 'released-runtime: adopt the published repaired Rust contract, validate
+    clean wheel and installed commands, deploy landed skill sources, refresh both
+    machines through supported workflows, and record running binary identities.'
+- id: stale-row-proof
+  title: Complete the interrupted snapshot and dismissal proof
+  size: medium
+  depends_on:
+  - released-runtime
+  description: 'stale-row-proof: prove actual Apollo presentation from Athena, controlled
+    dismissal and death reconciliation, older history, snapshot changes and restart
+    resilience; produce the evidence owed by sase-xe.16.11.7.14.6.6.'
+- id: unified-live-proof
+  title: Complete the unified workflow and combined acceptance matrix
+  size: medium
+  depends_on:
+  - stale-row-proof
+  description: 'unified-live-proof: execute the remaining unified Agents research
+    scenarios, prove exact remote output and stop, attention and uncertainty recovery,
+    run combined checks and supply evidence for all reopened original phases.'
 proposed_by: bbugyi200.athena.0jc
 create_time: 2026-09-11 09:46:22
 status: wip
+bead_id: sase-xe.16.11.7.14.6.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/launch_recovery_and_xe_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/launch_recovery_and_xe_closeout.md)
+- **PROMPT:** [prompts/202609/launch_recovery_and_xe_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/launch_recovery_and_xe_closeout.md)
+- **BEAD:** [sase-xe.16.11.7.14.6.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.14.6.7.md)
 
 # Repair approval launches and finish the remote Agents epic
 
