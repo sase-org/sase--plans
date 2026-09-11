@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Recover concurrent sidecar publication before agent startup
-goal: Start agents after safely publishing compatible sidecar divergence while preserving
+goal:
+  Start agents after safely publishing compatible sidecar divergence while preserving
   unpublished work when recovery fails.
 size: medium
 proposed_by: bbugyi200.athena.0jb
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0jb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0jb.md)
+- **COMMITS:**
+  - [3153478](https://github.com/sase-org/sase-core/commit/3153478b832db52ec92ea64c3b988e47d1d6bd23)
+    — fix: add sidecar publication policy
 
 # Recover concurrent sidecar publication before agent startup
 
