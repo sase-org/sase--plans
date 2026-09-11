@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Simplify stale usage labels and emphasize exhausted windows
-goal: Usage indicators omit the stale tilde and make exact zero remaining capacity
+goal:
+  Usage indicators omit the stale tilde and make exact zero remaining capacity
   unmistakable with an accessible token-scoped red background.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0j8.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j8.f0.md)
+- **COMMITS:**
+  - [afbfc08](https://github.com/sase-org/sase/commit/afbfc0883ec34a3b57dcc61f23f337f018573f4d)
+    — feat(ace): emphasize exhausted usage indicators
 
 # Plan: Simplify stale usage labels and emphasize exhausted windows
 
