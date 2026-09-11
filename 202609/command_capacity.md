@@ -1,159 +1,145 @@
 ---
 tier: epic
 title: Command capacity reservations and fleet load meters
-goal:
-  Account for expensive commands through reliable shared admission, require explicit
+goal: Account for expensive commands through reliable shared admission, require explicit
   machine capacities, and make every enabled machine's load clear in Agents.
 phases:
-  - id: baseline
-    title: Establish integration prerequisites and acceptance fixtures
-    size: medium
-    depends_on: []
-    description:
-      "baseline: record the current weighted-capacity and monitor contracts, add the
-      external bead dependencies described below to the affected materialized phases,
-      and establish representative accounting, verification, and UI fixtures without
-      enabling new behavior."
-  - id: contracts
-    title: Define command reservations and ownership in Rust
-    size: medium
-    depends_on:
-      - baseline
-    description:
-      "contracts: implement the versioned Rust reservation, shell-role accounting,
-      numeric, transition, snapshot, and profile-input contracts with PyO3 parity tests.
-      Keep launch-time queue_weight immutable."
-  - id: leases
-    title: Supervise command reservations and recover their lifetime
-    size: medium
-    depends_on:
-      - contracts
-    description:
-      "leases: implement host locking, durable publication, argv execution,
-      descendant-aware cleanup, nested grant validation, and standalone owners using the
-      shared Rust policy. Prove cancellation, startup failure, and crash recovery with
-      real subprocesses."
-  - id: fair-queue
-    title: Admit agents and tool requests through one fair queue
-    size: medium
-    depends_on:
-      - leases
-    description:
-      "fair-queue: extend the Rust queue and Python admission adapter to include parked
-      tool requests, bounded bypass, persistent aging protection, impossible-request
-      handling, capacity changes, and ordinary-agent readmission."
-  - id: monitors
-    title: Integrate queued tools and independent monitor weights
-    size: medium
-    depends_on:
-      - fair-queue
-    description:
-      "monitors: integrate with the completed sase-zl lifecycle, add explicit monitor
-      weight, release provider capacity only after an acknowledged handoff, count
-      wrapped monitor demand without the agent baseline, and preserve result delivery
-      and prepared-completion semantics."
-  - id: cli
-    title: Deliver the tool command and useful admission diagnostics
-    size: medium
-    depends_on:
-      - monitors
-    description:
-      "cli: implement tool run/status, argv separation, queue/force choices, dry-run
-      explanations, structured outcomes, and CLI completion/help using the tested
-      lifecycle and policy contracts."
-  - id: initialization
-    title: Require persistent machine capacity during initialization
-    size: medium
-    depends_on:
-      - contracts
-    description:
-      "initialization: extend config init and sase init completion, source-aware
-      capacity validation, doctor, and temporary-override reporting while preserving
-      machine identity and YAML. Prepare but do not activate the requested 32/8/4
-      configuration changes."
-  - id: profiles
-    title: Price command plans from real verification work
-    size: medium
-    depends_on:
-      - cli
-      - initialization
-    description:
-      "profiles: implement versioned SASE-repository profiles, the specified initial
-      demand table, setup/build preflight, and selection-driven check stages. Record
-      estimated work, granted workers, and fingerprints; keep policy in Rust and
-      repository evidence collection in thin tooling."
-  - id: pytest-admission
-    title: Connect pytest concurrency to the shared capacity grant
-    size: medium
-    depends_on:
-      - profiles
-    description:
-      "pytest-admission: adapt scoped, full, coverage, cost, direct pytest, and nested
-      test runs to validated shared grants on managed hosts; enforce worker limits,
-      preserve required selection, and implement the deliberate serial fallback for
-      refused optional middle gear."
-  - id: recipe-admission
-    title: Govern recipes before setup and make bootstrap safe
-    size: medium
-    depends_on:
-      - pytest-admission
-    description:
-      "recipe-admission: put the seven public recipes and expensive setup/build entry
-      points behind admission before dependencies execute, reuse outer grants without
-      recursion, bound build concurrency, preserve diagnostics, and implement the
-      managed-host migration/version barrier."
-  - id: fleet-snapshots
-    title: Publish cached capacity for each enabled machine
-    size: medium
-    depends_on:
-      - leases
-      - initialization
-    description:
-      "fleet-snapshots: extend the Rust fleet worker and wire contracts with
-      machine-wide load/capacity snapshots, freshness, source and diagnostics; consume
-      them through existing bounded background refresh and invalidation paths without
-      deriving load from visible agents."
-  - id: meters
-    title: Render accessible machine badges and load meters
-    size: medium
-    depends_on:
-      - fleet-snapshots
-    description:
-      "meters: replace the top-right fleet sentence with one compact badge/meter/ratio
-      per enabled machine, remove the old left capacity prefix, preserve standalone
-      visibility and exact fractional formatting, and verify responsive layout,
-      accessibility, PNG scenes, and navigation/idle cost."
-  - id: guidance
-    title: Replace static workload weights and synchronize guidance
-    size: medium
-    depends_on:
-      - recipe-admission
-      - monitors
-      - meters
-    description:
-      "guidance: remove the four research-swarm quarter weights and lander weight two,
-      update the requested lint_and_test memory and authoritative monitor skill,
-      regenerate memory instructions, and prepare canonical post-landing skill/config
-      deployment with package compatibility tests."
-  - id: acceptance
-    title: Validate and activate the coordinated fleet rollout
-    size: medium
-    depends_on:
-      - guidance
-      - recipe-admission
-      - meters
-    description:
-      "acceptance: run the integrated lifecycle, managed-pytest, bootstrap,
-      fleet/visual, packaging and performance matrix; collect representative cost
-      evidence; drain legacy admission before the per-machine cutover; activate athena
-      32, apollo 8 and the existing Mac identity 4 only with the complete protocol."
+- id: baseline
+  title: Establish integration prerequisites and acceptance fixtures
+  size: medium
+  depends_on: []
+  description: 'baseline: record the current weighted-capacity and monitor contracts,
+    add the external bead dependencies described below to the affected materialized
+    phases, and establish representative accounting, verification, and UI fixtures
+    without enabling new behavior.'
+- id: contracts
+  title: Define command reservations and ownership in Rust
+  size: medium
+  depends_on:
+  - baseline
+  description: 'contracts: implement the versioned Rust reservation, shell-role accounting,
+    numeric, transition, snapshot, and profile-input contracts with PyO3 parity tests.
+    Keep launch-time queue_weight immutable.'
+- id: leases
+  title: Supervise command reservations and recover their lifetime
+  size: medium
+  depends_on:
+  - contracts
+  description: 'leases: implement host locking, durable publication, argv execution,
+    descendant-aware cleanup, nested grant validation, and standalone owners using
+    the shared Rust policy. Prove cancellation, startup failure, and crash recovery
+    with real subprocesses.'
+- id: fair-queue
+  title: Admit agents and tool requests through one fair queue
+  size: medium
+  depends_on:
+  - leases
+  description: 'fair-queue: extend the Rust queue and Python admission adapter to
+    include parked tool requests, bounded bypass, persistent aging protection, impossible-request
+    handling, capacity changes, and ordinary-agent readmission.'
+- id: monitors
+  title: Integrate queued tools and independent monitor weights
+  size: medium
+  depends_on:
+  - fair-queue
+  description: 'monitors: integrate with the completed sase-zl lifecycle, add explicit
+    monitor weight, release provider capacity only after an acknowledged handoff,
+    count wrapped monitor demand without the agent baseline, and preserve result delivery
+    and prepared-completion semantics.'
+- id: cli
+  title: Deliver the tool command and useful admission diagnostics
+  size: medium
+  depends_on:
+  - monitors
+  description: 'cli: implement tool run/status, argv separation, queue/force choices,
+    dry-run explanations, structured outcomes, and CLI completion/help using the tested
+    lifecycle and policy contracts.'
+- id: initialization
+  title: Require persistent machine capacity during initialization
+  size: medium
+  depends_on:
+  - contracts
+  description: 'initialization: extend config init and sase init completion, source-aware
+    capacity validation, doctor, and temporary-override reporting while preserving
+    machine identity and YAML. Prepare but do not activate the requested 32/8/4 configuration
+    changes.'
+- id: profiles
+  title: Price command plans from real verification work
+  size: medium
+  depends_on:
+  - cli
+  - initialization
+  description: 'profiles: implement versioned SASE-repository profiles, the specified
+    initial demand table, setup/build preflight, and selection-driven check stages.
+    Record estimated work, granted workers, and fingerprints; keep policy in Rust
+    and repository evidence collection in thin tooling.'
+- id: pytest-admission
+  title: Connect pytest concurrency to the shared capacity grant
+  size: medium
+  depends_on:
+  - profiles
+  description: 'pytest-admission: adapt scoped, full, coverage, cost, direct pytest,
+    and nested test runs to validated shared grants on managed hosts; enforce worker
+    limits, preserve required selection, and implement the deliberate serial fallback
+    for refused optional middle gear.'
+- id: recipe-admission
+  title: Govern recipes before setup and make bootstrap safe
+  size: medium
+  depends_on:
+  - pytest-admission
+  description: 'recipe-admission: put the seven public recipes and expensive setup/build
+    entry points behind admission before dependencies execute, reuse outer grants
+    without recursion, bound build concurrency, preserve diagnostics, and implement
+    the managed-host migration/version barrier.'
+- id: fleet-snapshots
+  title: Publish cached capacity for each enabled machine
+  size: medium
+  depends_on:
+  - leases
+  - initialization
+  description: 'fleet-snapshots: extend the Rust fleet worker and wire contracts with
+    machine-wide load/capacity snapshots, freshness, source and diagnostics; consume
+    them through existing bounded background refresh and invalidation paths without
+    deriving load from visible agents.'
+- id: meters
+  title: Render accessible machine badges and load meters
+  size: medium
+  depends_on:
+  - fleet-snapshots
+  description: 'meters: replace the top-right fleet sentence with one compact badge/meter/ratio
+    per enabled machine, remove the old left capacity prefix, preserve standalone
+    visibility and exact fractional formatting, and verify responsive layout, accessibility,
+    PNG scenes, and navigation/idle cost.'
+- id: guidance
+  title: Replace static workload weights and synchronize guidance
+  size: medium
+  depends_on:
+  - recipe-admission
+  - monitors
+  - meters
+  description: 'guidance: remove the four research-swarm quarter weights and lander
+    weight two, update the requested lint_and_test memory and authoritative monitor
+    skill, regenerate memory instructions, and prepare canonical post-landing skill/config
+    deployment with package compatibility tests.'
+- id: acceptance
+  title: Validate and activate the coordinated fleet rollout
+  size: medium
+  depends_on:
+  - guidance
+  - recipe-admission
+  - meters
+  description: 'acceptance: run the integrated lifecycle, managed-pytest, bootstrap,
+    fleet/visual, packaging and performance matrix; collect representative cost evidence;
+    drain legacy admission before the per-machine cutover; activate athena 32, apollo
+    8 and the existing Mac identity 4 only with the complete protocol.'
 proposed_by: bbugyi200.athena.0jh
 create_time: 2026-09-11 11:21:35
 status: wip
+bead_id: sase-zm
 ---
 
-- **PROMPT:**
-  [prompts/202609/command_capacity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_capacity.md)
+- **PROMPT:** [prompts/202609/command_capacity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_capacity.md)
+- **BEAD:** [sase-zm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zm/README.md)
 
 # Command capacity reservations and fleet load meters
 
