@@ -1,14 +1,13 @@
 ---
 tier: tale
 title: Stop treating prose %if / %proc mentions as directives
-goal:
-  Prompts that mention %if or %proc as plain prose (bead titles, quoted text) launch
-  normally in both typed_launch_units flag states, in the Python extractor and the Rust
-  typed-launch planner, while all real directive forms keep their current hard errors.
+goal: Prompts that mention %if or %proc as plain prose (bead titles, quoted text)
+  launch normally in both typed_launch_units flag states, in the Python extractor
+  and the Rust typed-launch planner, while all real directive forms keep their current
+  hard errors.
 size: medium
 proposed_by: bbugyi200.athena.0j3
-create_time: 2026-09-11 06:42:52
-status: wip
+status: done
 ---
 
 # Stop treating prose `%if` / `%proc` mentions as directives
