@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Keep repository aliases on the checkout used by host hooks
-goal: Prevent agents from editing an accidental duplicate of a configured repository
-  and then failing finalization against a different checkout.
+goal:
+  Prevent agents from editing an accidental duplicate of a configured repository and
+  then failing finalization against a different checkout.
 size: medium
 proposed_by: bbugyi200.athena.0ja
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ja](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ja.md)
+- **COMMITS:**
+  - [354dcd4](https://github.com/sase-org/sase-core/commit/354dcd4d22b69f4c463503ad31fd0ee824d3326e)
+    — feat(repo): add canonical repository resolver
 
 # Keep repository aliases on the checkout used by host hooks
 
