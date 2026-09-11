@@ -1,70 +1,64 @@
 ---
 tier: epic
 title: Finish artifact-link durable truth and publication recovery
-goal:
-  Artifact-link operations retain replayable history, every projection converges from
-  that history, synchronous retries verify publication, and the pinned core exposes
+goal: Artifact-link operations retain replayable history, every projection converges
+  from that history, synchronous retries verify publication, and the pinned core exposes
   every required API.
 parent_bead: sase-yy.8
 phases:
-  - id: binding_baseline
-    title: Restore the required core revision baseline
-    depends_on: []
-    description:
-      "binding_baseline: ratchet the core revision to include existing projection and
-      cutover APIs and verify the exact pinned build."
-    size: small
-  - id: bead_history
-    title: Persist immutable history for bead-owned link operations
-    depends_on:
-      - binding_baseline
-    description:
-      "bead_history: require canonical durable operation history for bead-only
-      publication and consume it during reduction and replay."
-    size: medium
-  - id: projection_convergence
-    title: Repair bead projections from complete event truth
-    depends_on:
-      - bead_history
-    description:
-      "projection_convergence: separate occurrence deduplication from state projection
-      so old receipts cannot suppress a necessary converged projection."
-    size: medium
-  - id: reader_causality
-    title: Accept valid out-of-order tombstones on read surfaces
-    depends_on:
-      - projection_convergence
-    description:
-      "reader_causality: keep missing-predecessor diagnostics without rejecting
-      Rust-valid event sets or reviving legacy rows."
-    size: small
-  - id: synchronous_recovery
-    title: Verify remote publication on unchanged CLI and import retries
-    depends_on:
-      - binding_baseline
-    description:
-      "synchronous_recovery: retry or report outstanding publication even when the
-      requested link or final cutover marker already exists locally."
-    size: medium
-  - id: acceptance
-    title: Prove durable history and recovery through production paths
-    depends_on:
-      - binding_baseline
-      - bead_history
-      - projection_convergence
-      - reader_causality
-      - synchronous_recovery
-    description:
-      "acceptance: cover all five reproduced failures with production-path regression
-      tests and verify the combined pinned build."
-    size: medium
+- id: binding_baseline
+  title: Restore the required core revision baseline
+  depends_on: []
+  description: 'binding_baseline: ratchet the core revision to include existing projection
+    and cutover APIs and verify the exact pinned build.'
+  size: small
+- id: bead_history
+  title: Persist immutable history for bead-owned link operations
+  depends_on:
+  - binding_baseline
+  description: 'bead_history: require canonical durable operation history for bead-only
+    publication and consume it during reduction and replay.'
+  size: medium
+- id: projection_convergence
+  title: Repair bead projections from complete event truth
+  depends_on:
+  - bead_history
+  description: 'projection_convergence: separate occurrence deduplication from state
+    projection so old receipts cannot suppress a necessary converged projection.'
+  size: medium
+- id: reader_causality
+  title: Accept valid out-of-order tombstones on read surfaces
+  depends_on:
+  - projection_convergence
+  description: 'reader_causality: keep missing-predecessor diagnostics without rejecting
+    Rust-valid event sets or reviving legacy rows.'
+  size: small
+- id: synchronous_recovery
+  title: Verify remote publication on unchanged CLI and import retries
+  depends_on:
+  - binding_baseline
+  description: 'synchronous_recovery: retry or report outstanding publication even
+    when the requested link or final cutover marker already exists locally.'
+  size: medium
+- id: acceptance
+  title: Prove durable history and recovery through production paths
+  depends_on:
+  - binding_baseline
+  - bead_history
+  - projection_convergence
+  - reader_causality
+  - synchronous_recovery
+  description: 'acceptance: cover all five reproduced failures with production-path
+    regression tests and verify the combined pinned build.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-yy.8.land--1
 create_time: 2026-09-11 06:54:35
 status: wip
+bead_id: sase-yy.8.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_durable_truth_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_durable_truth_repairs.md)
+- **PROMPT:** [prompts/202609/artifact_link_durable_truth_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_durable_truth_repairs.md)
+- **BEAD:** [sase-yy.8.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-yy/sase-yy.8.6.md)
 
 # Remaining artifact-link durability repairs
 
