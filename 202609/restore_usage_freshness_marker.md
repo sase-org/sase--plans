@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Restore the usage freshness marker
-goal:
-  Restore a visible stale-reading cue without confusing collector health or regressing
+goal: Restore a visible stale-reading cue without confusing collector health or regressing
   zero emphasis and usage grouping.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0.f2.f0
-create_time: 2026-09-11 11:59:25
-status: wip
+status: done
 ---
 
 # Restore the usage freshness marker
