@@ -1,118 +1,106 @@
 ---
 tier: epic
 title: Reliable monitor continuations with clear results and bounded context
-goal:
-  Monitor chains preserve the user's intent without recursively replaying history,
+goal: Monitor chains preserve the user's intent without recursively replaying history,
   deliver one useful result with recoverable evidence, and reliably continue or finish
   through an explicitly prepared host completion action in a clear, polished interface.
 phases:
-  - id: baseline
-    title: Reproduce failures and measure continuation costs
-    depends_on: []
-    size: medium
-    description:
-      "baseline: add deterministic replay, evidence and lifecycle fixtures plus
-      component-level prompt measurements and shadow budget checks."
-  - id: contract
-    title: Define the Rust continuation and result contracts
-    depends_on:
-      - baseline
-    size: medium
-    description:
-      "contract: implement versioned exact-identity records, deterministic replay
-      planning, evidence policies and typed budget decisions with PyO3 bindings."
-  - id: capture
-    title: Persist local deltas and handoff checkpoints
-    depends_on:
-      - contract
-    size: medium
-    description:
-      "capture: capture provenance during expansion and persist immutable local turns,
-      exact parents and checkpoints across normal and interrupted endings."
-  - id: replay
-    title: Reconstruct ancestry without recursive transcript replay
-    depends_on:
-      - capture
-    size: medium
-    description:
-      "replay: integrate unique-node serial replay, exact fork targets, stable blocks
-      and a conservative immutable-history compatibility reader."
-  - id: diagnostics
-    title: Preserve structured verification evidence
-    depends_on:
-      - contract
-    size: medium
-    description:
-      "diagnostics: capture first-party stage results before temporary output disappears
-      and record bounded durable diagnostics and precise log-retention metadata."
-  - id: results
-    title: Deliver each monitor result once
-    depends_on:
-      - replay
-      - diagnostics
-    size: medium
-    description:
-      "results: freeze terminal results and apply auto, tail, file and none policies
-      consistently across successor, family and direct-reference projections."
-  - id: dispatch
-    title: Make outcome delivery durable and deduplicated
-    depends_on:
-      - results
-    size: medium
-    description:
-      "dispatch: persist outcome policies and delivery identities, deduplicate successor
-      adoption, and reconcile crashes while preserving claims and cancellation."
-  - id: prepare
-    title: Prepare conditional completion declarations
-    depends_on:
-      - dispatch
-    size: medium
-    description:
-      "prepare: add a host-sealed completion intent with repository decisions,
-      verification requirements, state fingerprints and prepared result text."
-  - id: completion
-    title: Complete eligible verification through the host
-    depends_on:
-      - prepare
-    size: medium
-    description:
-      "completion: consume valid success intents through existing finalizers without a
-      model turn and route stale or failed completion into durable recovery."
-  - id: budgets
-    title: Bound continuation context without losing instructions
-    depends_on:
-      - results
-    size: medium
-    description:
-      "budgets: enforce expanded-prompt budgets, reuse explicit checkpoints at
-      thresholds, preserve essential context and expose actionable nonlaunchable
-      outcomes."
-  - id: experience
-    title: Present a coherent monitor workflow
-    depends_on:
-      - completion
-      - budgets
-    size: medium
-    description:
-      "experience: expose the profile and evidence controls, implement compact result
-      and continuation views in CLI and ACE, and synchronize documentation and skill
-      sources."
-  - id: release
-    title: Validate the combined feature and activate it
-    depends_on:
-      - experience
-    size: medium
-    description:
-      "release: exercise failure recovery and visual contracts, evaluate task-level
-      efficiency, activate the complete feature with a defined compatibility route and
-      verify coordinated Rust and Python delivery."
+- id: baseline
+  title: Reproduce failures and measure continuation costs
+  depends_on: []
+  size: medium
+  description: 'baseline: add deterministic replay, evidence and lifecycle fixtures
+    plus component-level prompt measurements and shadow budget checks.'
+- id: contract
+  title: Define the Rust continuation and result contracts
+  depends_on:
+  - baseline
+  size: medium
+  description: 'contract: implement versioned exact-identity records, deterministic
+    replay planning, evidence policies and typed budget decisions with PyO3 bindings.'
+- id: capture
+  title: Persist local deltas and handoff checkpoints
+  depends_on:
+  - contract
+  size: medium
+  description: 'capture: capture provenance during expansion and persist immutable
+    local turns, exact parents and checkpoints across normal and interrupted endings.'
+- id: replay
+  title: Reconstruct ancestry without recursive transcript replay
+  depends_on:
+  - capture
+  size: medium
+  description: 'replay: integrate unique-node serial replay, exact fork targets, stable
+    blocks and a conservative immutable-history compatibility reader.'
+- id: diagnostics
+  title: Preserve structured verification evidence
+  depends_on:
+  - contract
+  size: medium
+  description: 'diagnostics: capture first-party stage results before temporary output
+    disappears and record bounded durable diagnostics and precise log-retention metadata.'
+- id: results
+  title: Deliver each monitor result once
+  depends_on:
+  - replay
+  - diagnostics
+  size: medium
+  description: 'results: freeze terminal results and apply auto, tail, file and none
+    policies consistently across successor, family and direct-reference projections.'
+- id: dispatch
+  title: Make outcome delivery durable and deduplicated
+  depends_on:
+  - results
+  size: medium
+  description: 'dispatch: persist outcome policies and delivery identities, deduplicate
+    successor adoption, and reconcile crashes while preserving claims and cancellation.'
+- id: prepare
+  title: Prepare conditional completion declarations
+  depends_on:
+  - dispatch
+  size: medium
+  description: 'prepare: add a host-sealed completion intent with repository decisions,
+    verification requirements, state fingerprints and prepared result text.'
+- id: completion
+  title: Complete eligible verification through the host
+  depends_on:
+  - prepare
+  size: medium
+  description: 'completion: consume valid success intents through existing finalizers
+    without a model turn and route stale or failed completion into durable recovery.'
+- id: budgets
+  title: Bound continuation context without losing instructions
+  depends_on:
+  - results
+  size: medium
+  description: 'budgets: enforce expanded-prompt budgets, reuse explicit checkpoints
+    at thresholds, preserve essential context and expose actionable nonlaunchable
+    outcomes.'
+- id: experience
+  title: Present a coherent monitor workflow
+  depends_on:
+  - completion
+  - budgets
+  size: medium
+  description: 'experience: expose the profile and evidence controls, implement compact
+    result and continuation views in CLI and ACE, and synchronize documentation and
+    skill sources.'
+- id: release
+  title: Validate the combined feature and activate it
+  depends_on:
+  - experience
+  size: medium
+  description: 'release: exercise failure recovery and visual contracts, evaluate
+    task-level efficiency, activate the complete feature with a defined compatibility
+    route and verify coordinated Rust and Python delivery.'
 proposed_by: bbugyi200.athena.0j2
 create_time: 2026-09-11 06:30:09
 status: wip
+bead_id: sase-zl
 ---
 
-- **PROMPT:**
-  [prompts/202609/monitor_continuations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuations.md)
+- **PROMPT:** [prompts/202609/monitor_continuations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuations.md)
+- **BEAD:** [sase-zl](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zl/README.md)
 
 # Reliable monitor continuations
 
