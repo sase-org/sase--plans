@@ -11,9 +11,12 @@ status: done
 
 - **AGENTS:**
   - [bbugyi200.athena.0j8.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j8.f0.md)
+  - [bbugyi200.athena.sase-zl.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zl.3/README.md)
 - **COMMITS:**
   - [afbfc08](https://github.com/sase-org/sase/commit/afbfc0883ec34a3b57dcc61f23f337f018573f4d)
     — feat(ace): emphasize exhausted usage indicators
+  - [de84c60](https://github.com/sase-org/sase/commit/de84c60d1c9908fef3402fd41ddd514f8f05297a)
+    — feat(continuation): persist local turn capture
 
 # Plan: Simplify stale usage labels and emphasize exhausted windows
 
