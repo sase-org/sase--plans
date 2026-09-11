@@ -1,104 +1,102 @@
 ---
 tier: epic
-title:
-  Fix ACE TUI typing lag on athena (memory pressure, O(corpus) refresh work, unreaped
-  scratch)
-goal: "Typing in the ACE prompt input stays responsive on athena under normal agent
-  load: the long-lived `sase ace` process holds a bounded heap instead of growing to
-  ~12.5 GB, its periodic refresh work stops re-doing O(corpus) index and notification
+title: Fix ACE TUI typing lag on athena (memory pressure, O(corpus) refresh work,
+  unreaped scratch)
+goal: 'Typing in the ACE prompt input stays responsive on athena under normal agent
+  load: the long-lived `sase ace` process holds a bounded heap instead of growing
+  to ~12.5 GB, its periodic refresh work stops re-doing O(corpus) index and notification
   passes, and SASE scratch stops filling a RAM-backed /tmp and a Syncthing-synced
   SASE_TMPDIR.
 
-  "
+  '
 phases:
-  - id: host-relief
-    title: Reclaim athena now and move SASE_TMPDIR off tmpfs and out of Syncthing
-    depends_on: []
-    size: small
-    description: "host-relief: reclaim the two 31 GB scratch piles on athena, relocate
-      SASE_TMPDIR out of the Syncthing-synced tree, and capture a documented
-      before/after responsiveness baseline the later phases measure against.
+- id: host-relief
+  title: Reclaim athena now and move SASE_TMPDIR off tmpfs and out of Syncthing
+  depends_on: []
+  size: small
+  description: 'host-relief: reclaim the two 31 GB scratch piles on athena, relocate
+    SASE_TMPDIR out of the Syncthing-synced tree, and capture a documented before/after
+    responsiveness baseline the later phases measure against.
 
-      "
-  - id: index-core-sql
-    title: Replace the artifact-index N+1 reconcile and full dismissed-table rewrite
-    depends_on: []
-    size: medium
-    description: "index-core-sql: in the linked sase-core repo, turn the per-candidate
-      reconcile queries into set-based SQL and make the dismissed-identity projection a
-      diff-based upsert instead of an unconditional 46k-row table replace.
+    '
+- id: index-core-sql
+  title: Replace the artifact-index N+1 reconcile and full dismissed-table rewrite
+  depends_on: []
+  size: medium
+  description: 'index-core-sql: in the linked sase-core repo, turn the per-candidate
+    reconcile queries into set-based SQL and make the dismissed-identity projection
+    a diff-based upsert instead of an unconditional 46k-row table replace.
 
-      "
-  - id: notif-snapshot
-    title: Stop re-parsing the whole notification store on every refresh tick
-    depends_on: []
-    size: medium
-    description: "notif-snapshot: cache the parsed notification snapshot against a cheap
-      change token and bound the active notifications.jsonl so a 13.6 MB re-parse stops
-      running on the TUI refresh cadence.
+    '
+- id: notif-snapshot
+  title: Stop re-parsing the whole notification store on every refresh tick
+  depends_on: []
+  size: medium
+  description: 'notif-snapshot: cache the parsed notification snapshot against a cheap
+    change token and bound the active notifications.jsonl so a 13.6 MB re-parse stops
+    running on the TUI refresh cadence.
 
-      "
-  - id: stream-bound
-    title: Bound retained child-process output in the session proc reporter
-    depends_on: []
-    size: small
-    description: "stream-bound: cap the unbounded in-memory output list in
-      _stream_subprocess and stop mirroring the whole stream into operation-request.json
-      records that reached 40 MB each.
+    '
+- id: stream-bound
+  title: Bound retained child-process output in the session proc reporter
+  depends_on: []
+  size: small
+  description: 'stream-bound: cap the unbounded in-memory output list in _stream_subprocess
+    and stop mirroring the whole stream into operation-request.json records that reached
+    40 MB each.
 
-      "
-  - id: index-tui-cadence
-    title:
-      Narrow the artifact-index lock and stop authoritative syncs bypassing the
-      signature check
-    depends_on:
-      - index-core-sql
-    size: medium
-    description: "index-tui-cadence: keep interactive index reads off the long
-      maintenance lock and let authoritative dismissed-projection syncs short-circuit on
-      an unchanged signature the same way non-authoritative ones already do.
+    '
+- id: index-tui-cadence
+  title: Narrow the artifact-index lock and stop authoritative syncs bypassing the
+    signature check
+  depends_on:
+  - index-core-sql
+  size: medium
+  description: 'index-tui-cadence: keep interactive index reads off the long maintenance
+    lock and let authoritative dismissed-projection syncs short-circuit on an unchanged
+    signature the same way non-authoritative ones already do.
 
-      "
-  - id: tmp-hygiene
-    title: Extend scratch hygiene to agent-created build directories and disk pressure
-    depends_on:
-      - host-relief
-    size: medium
-    description: "tmp-hygiene: give agent-created cargo/build scratch a managed home the
-      reaper can actually see, and add size-aware pressure reaping so a multi-gigabyte
-      directory is not held for a purely time-based horizon.
+    '
+- id: tmp-hygiene
+  title: Extend scratch hygiene to agent-created build directories and disk pressure
+  depends_on:
+  - host-relief
+  size: medium
+  description: 'tmp-hygiene: give agent-created cargo/build scratch a managed home
+    the reaper can actually see, and add size-aware pressure reaping so a multi-gigabyte
+    directory is not held for a purely time-based horizon.
 
-      "
-  - id: heap-attrib
-    title: Attribute and fix the residual ACE heap growth
-    depends_on:
-      - host-relief
-      - stream-bound
-    size: medium
-    description: "heap-attrib: add an opt-in heap sampler for the long-lived TUI,
-      attribute whatever remains of the ~12.5 GB anonymous heap after the bounded-stream
-      fix, and fix the retained-object sites it names.
+    '
+- id: heap-attrib
+  title: Attribute and fix the residual ACE heap growth
+  depends_on:
+  - host-relief
+  - stream-bound
+  size: medium
+  description: 'heap-attrib: add an opt-in heap sampler for the long-lived TUI, attribute
+    whatever remains of the ~12.5 GB anonymous heap after the bounded-stream fix,
+    and fix the retained-object sites it names.
 
-      "
-  - id: verify
-    title: Re-measure on athena against explicit responsiveness targets
-    depends_on:
-      - index-tui-cadence
-      - notif-snapshot
-      - tmp-hygiene
-      - heap-attrib
-    size: small
-    description:
-      "verify: re-run the documented capture recipe on athena under real agent load and
-      confirm the keystroke, CPU, and RSS targets hold, recording the result in the perf
-      runbook."
+    '
+- id: verify
+  title: Re-measure on athena against explicit responsiveness targets
+  depends_on:
+  - index-tui-cadence
+  - notif-snapshot
+  - tmp-hygiene
+  - heap-attrib
+  size: small
+  description: 'verify: re-run the documented capture recipe on athena under real
+    agent load and confirm the keystroke, CPU, and RSS targets hold, recording the
+    result in the perf runbook.'
 proposed_by: bbugyi200.kellys_mbp.03
 create_time: 2026-09-11 12:20:17
 status: wip
+bead_id: sase-zn
 ---
 
-- **PROMPT:**
-  [prompts/202609/ace_typing_lag_athena.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/ace_typing_lag_athena.md)
+- **PROMPT:** [prompts/202609/ace_typing_lag_athena.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/ace_typing_lag_athena.md)
+- **BEAD:** [sase-zn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zn/README.md)
 
 # Plan: Fix ACE TUI typing lag on athena
 
