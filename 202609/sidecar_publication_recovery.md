@@ -1,29 +1,12 @@
 ---
 tier: tale
 title: Recover concurrent sidecar publication before agent startup
-goal:
-  Start agents after safely publishing compatible sidecar divergence while preserving
+goal: Start agents after safely publishing compatible sidecar divergence while preserving
   unpublished work when recovery fails.
 size: medium
 proposed_by: bbugyi200.athena.0jb
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0jb](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0jb.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.14.6.7.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.14.6.7.1/README.md)
-  - [bbugyi200.athena.sase-xe.16.11.7.14.6.7.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-xe.16.11.7.14.6.7.2/README.md)
-  - [bbugyi200.athena.toobig-57.test_provider_usage_indicator_presentation.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-57.test_provider_usage_indicator_presentation.0.md)
-- **COMMITS:**
-  - [e0aa727](https://github.com/sase-org/sase/commit/e0aa727b6c70717f0ca570ee70a258c31dd69c8c)
-    — fix: recover sidecar publication retries
-  - [e47d159](https://github.com/sase-org/sase/commit/e47d159b55f4a828929827980474ea6572f6d3ad)
-    — fix(launch): resume requesters after launch gates
-  - [5428b99](https://github.com/sase-org/sase/commit/5428b994392987a7155d9661112ae6fba7aac67e)
-    — fix(agent-launch): preserve workspace and remote targeting through approved
-    admission
-  - [1218967](https://github.com/sase-org/sase/commit/121896776f4b53b8798d9cb2342cc3e74866a17b)
-    — test: split provider-usage indicator presentation tests
 
 # Recover concurrent sidecar publication before agent startup
 
