@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Keep repository aliases on the checkout used by host hooks
-goal: Prevent agents from editing an accidental duplicate of a configured repository
-  and then failing finalization against a different checkout.
+goal:
+  Prevent agents from editing an accidental duplicate of a configured repository and
+  then failing finalization against a different checkout.
 size: medium
 proposed_by: bbugyi200.athena.0ja
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ja](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ja.md)
+- **COMMITS:**
+  - [2b81149](https://github.com/sase-org/sase/commit/2b811499c4b661f3b98919a27136b133ce1e20c8)
+    — fix(repo): route provider aliases to configured checkouts
 
 # Keep repository aliases on the checkout used by host hooks
 
