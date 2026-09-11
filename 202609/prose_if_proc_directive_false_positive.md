@@ -11,10 +11,13 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.research.1t.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cdx/README.md)
   - [bbugyi200.athena.research.1t.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cld/README.md)
 - **COMMITS:**
   - [0e76f6d](https://github.com/sase-org/sase--research/commit/0e76f6db51d21a6873eb16a1793d83c2797bff1a)
     — docs(research): add sase tool dynamic capacity claim research (researcher B)
+  - [5209648](https://github.com/sase-org/sase--research/commit/5209648b3f852e90a9697a512b0604011f654a8a)
+    — docs(research): design dynamic tool capacity
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
