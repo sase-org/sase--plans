@@ -1,14 +1,23 @@
 ---
 tier: tale
 title: Stop treating prose %if / %proc mentions as directives
-goal: Prompts that mention %if or %proc as plain prose (bead titles, quoted text)
-  launch normally in both typed_launch_units flag states, in the Python extractor
-  and the Rust typed-launch planner, while all real directive forms keep their current
-  hard errors.
+goal:
+  Prompts that mention %if or %proc as plain prose (bead titles, quoted text) launch
+  normally in both typed_launch_units flag states, in the Python extractor and the Rust
+  typed-launch planner, while all real directive forms keep their current hard errors.
 size: medium
 proposed_by: bbugyi200.athena.0j3
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0j3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j3.md)
+  - [bbugyi200.athena.sase-yy.8.6.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.2/README.md)
+- **COMMITS:**
+  - [fb635c5](https://github.com/sase-org/sase-core/commit/fb635c529592cb7a22868beb14585be5d6181d04)
+    — fix(agent-launch): preserve prose code-directive mentions
+  - [18a78c8](https://github.com/sase-org/sase-core/commit/18a78c8441d11f450ca332863e1483481a144ca6)
+    — fix(artifact-links): require durable bead history receipt
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
