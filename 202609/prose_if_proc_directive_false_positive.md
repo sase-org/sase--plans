@@ -11,19 +11,19 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1t.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cdx/README.md)
-  - [bbugyi200.athena.research.1t.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cld/README.md)
-  - [bbugyi200.athena.research.1t.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.final/README.md)
-  - [bbugyi200.athena.research.1t.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.image/README.md)
+  - [bbugyi200.athena.0j3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j3.md)
+  - [bbugyi200.athena.sase-yy.8.6.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.2/README.md)
+  - [bbugyi200.athena.sase-yy.8.6.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.3/README.md)
+  - [bbugyi200.athena.sase-yy.8.6.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.5/README.md)
 - **COMMITS:**
-  - [0e76f6d](https://github.com/sase-org/sase--research/commit/0e76f6db51d21a6873eb16a1793d83c2797bff1a)
-    — docs(research): add sase tool dynamic capacity claim research (researcher B)
-  - [5209648](https://github.com/sase-org/sase--research/commit/5209648b3f852e90a9697a512b0604011f654a8a)
-    — docs(research): design dynamic tool capacity
-  - [d6fa54c](https://github.com/sase-org/sase--research/commit/d6fa54cd5811efdab4f344855a3c2dbd4c3e448d)
-    — docs(research): consolidate command capacity and load meter design
-  - [6223095](https://github.com/sase-org/sase--research/commit/622309517db172b40b48cfb698cf938cb1e5f05d)
-    — docs(research): add command capacity infographic
+  - [e6fdda0](https://github.com/sase-org/sase/commit/e6fdda0179fdcf2dbccd64994557e935dee53b11)
+    — fix(xprompt): ignore prose code-directive mentions
+  - [2f9bef1](https://github.com/sase-org/sase/commit/2f9bef14cbce4405e0c7c2a83812215125dd6492)
+    — fix(artifact-links): persist bead-owned event history
+  - [49f4a5f](https://github.com/sase-org/sase/commit/49f4a5f9fd1e62d737e9591ac0ca857ccaa55b08)
+    — fix(artifact-links): verify publication on no-op retries
+  - [8f6e653](https://github.com/sase-org/sase/commit/8f6e65361d1803160446bb3bdff16c061c7fa050)
+    — test(sdd): cover bead projection convergence
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
