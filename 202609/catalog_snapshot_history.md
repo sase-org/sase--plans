@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Complete bounded fleet catalog snapshots and explicit history
-goal: Default fleet reads stay bounded while explicit history paging and page merging
-  use genuine, trustworthy snapshot identities.
+goal:
+  Default fleet reads stay bounded while explicit history paging and page merging use
+  genuine, trustworthy snapshot identities.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.11.7.14.6.3
 bead: sase-xe.16.11.7.14.6.3
@@ -13,6 +14,11 @@ status: done
   [202609/fleet_remaining_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_remaining_acceptance.md)
 - **BEAD:**
   [sase-xe.16.11.7.14.6.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.14.6.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-xe.16.11.7.14.6.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-xe.16.11.7.14.6.3.md)
+- **COMMITS:**
+  - [5b0187e](https://github.com/sase-org/sase-core/commit/5b0187e70869621474c2a574534e70eb891121d6)
+    — feat(fleet): add catalog snapshot history
 
 # Complete bounded fleet catalog snapshots and explicit history
 
