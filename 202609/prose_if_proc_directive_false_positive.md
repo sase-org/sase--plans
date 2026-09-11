@@ -1,29 +1,14 @@
 ---
 tier: tale
 title: Stop treating prose %if / %proc mentions as directives
-goal:
-  Prompts that mention %if or %proc as plain prose (bead titles, quoted text) launch
-  normally in both typed_launch_units flag states, in the Python extractor and the Rust
-  typed-launch planner, while all real directive forms keep their current hard errors.
+goal: Prompts that mention %if or %proc as plain prose (bead titles, quoted text)
+  launch normally in both typed_launch_units flag states, in the Python extractor
+  and the Rust typed-launch planner, while all real directive forms keep their current
+  hard errors.
 size: medium
 proposed_by: bbugyi200.athena.0j3
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0j3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j3.md)
-  - [bbugyi200.athena.sase-yy.8.6.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.2/README.md)
-  - [bbugyi200.athena.sase-yy.8.6.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.3/README.md)
-  - [bbugyi200.athena.sase-yy.8.6.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-yy.8.6.5/README.md)
-- **COMMITS:**
-  - [e6fdda0](https://github.com/sase-org/sase/commit/e6fdda0179fdcf2dbccd64994557e935dee53b11)
-    — fix(xprompt): ignore prose code-directive mentions
-  - [2f9bef1](https://github.com/sase-org/sase/commit/2f9bef14cbce4405e0c7c2a83812215125dd6492)
-    — fix(artifact-links): persist bead-owned event history
-  - [49f4a5f](https://github.com/sase-org/sase/commit/49f4a5f9fd1e62d737e9591ac0ca857ccaa55b08)
-    — fix(artifact-links): verify publication on no-op retries
-  - [8f6e653](https://github.com/sase-org/sase/commit/8f6e65361d1803160446bb3bdff16c061c7fa050)
-    — test(sdd): cover bead projection convergence
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
