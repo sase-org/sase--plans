@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Make usage window indicators readable at a glance
-goal:
-  Give each existing usage window a distinct, high-contrast presentation with a
-  color-matched percentage and reset countdown, preserving all displayed content and
-  layout capacity.
+goal: Give each existing usage window a distinct, high-contrast presentation with
+  a color-matched percentage and reset countdown, preserving all displayed content
+  and layout capacity.
 size: medium
 proposed_by: bbugyi200.athena.0j0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-zf.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.land/README.md)
-- **COMMITS:**
-  - [89c8f4e](https://github.com/sase-org/sase--plans/commit/89c8f4ede58e4053a31e0a15cacb8f24c774ab17)
-    — docs(plans): mark agents_query_unification done after landing epic sase-zf
 
 # Make usage window indicators readable at a glance
 
