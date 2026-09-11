@@ -1,26 +1,14 @@
 ---
 tier: tale
 title: Stop treating prose %if / %proc mentions as directives
-goal:
-  Prompts that mention %if or %proc as plain prose (bead titles, quoted text) launch
-  normally in both typed_launch_units flag states, in the Python extractor and the Rust
-  typed-launch planner, while all real directive forms keep their current hard errors.
+goal: Prompts that mention %if or %proc as plain prose (bead titles, quoted text)
+  launch normally in both typed_launch_units flag states, in the Python extractor
+  and the Rust typed-launch planner, while all real directive forms keep their current
+  hard errors.
 size: medium
 proposed_by: bbugyi200.athena.0j3
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1t.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cdx/README.md)
-  - [bbugyi200.athena.research.1t.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cld/README.md)
-  - [bbugyi200.athena.research.1t.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.final/README.md)
-- **COMMITS:**
-  - [0e76f6d](https://github.com/sase-org/sase--research/commit/0e76f6db51d21a6873eb16a1793d83c2797bff1a)
-    — docs(research): add sase tool dynamic capacity claim research (researcher B)
-  - [5209648](https://github.com/sase-org/sase--research/commit/5209648b3f852e90a9697a512b0604011f654a8a)
-    — docs(research): design dynamic tool capacity
-  - [d6fa54c](https://github.com/sase-org/sase--research/commit/d6fa54cd5811efdab4f344855a3c2dbd4c3e448d)
-    — docs(research): consolidate command capacity and load meter design
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
