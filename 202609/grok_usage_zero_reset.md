@@ -1,13 +1,23 @@
 ---
 tier: tale
 title: Fix Grok usage collection when zero usage is omitted after reset
-goal: Grok's verified zero-usage billing responses produce a fresh included-allowance
-  observation and clear collector failures through normal refresh, while ambiguous
-  or invalid billing payloads remain errors.
+goal:
+  Grok's verified zero-usage billing responses produce a fresh included-allowance
+  observation and clear collector failures through normal refresh, while ambiguous or
+  invalid billing payloads remain errors.
 size: medium
 proposed_by: bbugyi200.athena.0je
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0je](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0je.md)
+  - [bbugyi200.athena.0ji](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0ji/README.md)
+- **COMMITS:**
+  - [db535fa](https://github.com/sase-org/sase/commit/db535fabda4620af1e4123630f41a18d4636fce0)
+    — fix(llm-provider): collect Grok omitted-zero billing through core
+  - [8e3790c](https://github.com/sase-org/sase/commit/8e3790c587f7458ca7dca6eb3a3c54de05c5c3d3)
+    — feat(ace): group usage windows by provider
 
 # Plan: Fix Grok usage collection after the weekly reset
 
