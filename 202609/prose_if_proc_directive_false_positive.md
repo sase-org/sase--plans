@@ -1,14 +1,20 @@
 ---
 tier: tale
 title: Stop treating prose %if / %proc mentions as directives
-goal: Prompts that mention %if or %proc as plain prose (bead titles, quoted text)
-  launch normally in both typed_launch_units flag states, in the Python extractor
-  and the Rust typed-launch planner, while all real directive forms keep their current
-  hard errors.
+goal:
+  Prompts that mention %if or %proc as plain prose (bead titles, quoted text) launch
+  normally in both typed_launch_units flag states, in the Python extractor and the Rust
+  typed-launch planner, while all real directive forms keep their current hard errors.
 size: medium
 proposed_by: bbugyi200.athena.0j3
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1t.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1t.cld/README.md)
+- **COMMITS:**
+  - [0e76f6d](https://github.com/sase-org/sase--research/commit/0e76f6db51d21a6873eb16a1793d83c2797bff1a)
+    — docs(research): add sase tool dynamic capacity claim research (researcher B)
 
 # Stop treating prose `%if` / `%proc` mentions as directives
 
