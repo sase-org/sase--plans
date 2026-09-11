@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Recover concurrent sidecar publication before agent startup
-goal:
-  Start agents after safely publishing compatible sidecar divergence while preserving
+goal: Start agents after safely publishing compatible sidecar divergence while preserving
   unpublished work when recovery fails.
 size: medium
 proposed_by: bbugyi200.athena.0jb
-create_time: 2026-09-11 09:10:04
-status: wip
+status: done
 ---
 
 # Recover concurrent sidecar publication before agent startup
