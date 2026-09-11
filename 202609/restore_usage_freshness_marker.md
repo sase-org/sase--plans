@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Restore the usage freshness marker
-goal:
-  Restore a visible stale-reading cue without confusing collector health or regressing
+goal: Restore a visible stale-reading cue without confusing collector health or regressing
   zero emphasis and usage grouping.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0.f2.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-zp.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zp.1/README.md)
-- **COMMITS:**
-  - [d2f8d72](https://github.com/sase-org/sase-core/commit/d2f8d72734c6a74ea116ed7d7ddf97b3a05bf796)
-    — feat(queue): replace runners with weighted-load capacity contract
 
 # Restore the usage freshness marker
 
