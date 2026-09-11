@@ -1,22 +1,12 @@
 ---
 tier: tale
 title: Restore the usage freshness marker
-goal:
-  Restore a visible stale-reading cue without confusing collector health or regressing
+goal: Restore a visible stale-reading cue without confusing collector health or regressing
   zero emphasis and usage grouping.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0.f2.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1u.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cdx/README.md)
-  - [bbugyi200.athena.research.1u.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cld/README.md)
-- **COMMITS:**
-  - [f9531b2](https://github.com/sase-org/sase--research/commit/f9531b291e6ea354791030e5435f6b12635b7048)
-    — docs(research): recommend usage window indicator UX
-  - [49dd94d](https://github.com/sase-org/sase--research/commit/49dd94de891f9d2f45016c1b3955a28ffbfd0ede)
-    — docs(research): add usage-window indicator presentation study
 
 # Restore the usage freshness marker
 
