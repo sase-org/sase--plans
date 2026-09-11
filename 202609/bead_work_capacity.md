@@ -1,50 +1,47 @@
 ---
 tier: epic
 title: Add weighted queue capacity to bead work and epic approval
-goal:
-  Let users set the weighted-load threshold for every agent launched for an epic through
-  sase bead work or its approval gate, and name the queue directive argument capacity
-  consistently.
+goal: Let users set the weighted-load threshold for every agent launched for an epic
+  through sase bead work or its approval gate, and name the queue directive argument
+  capacity consistently.
 phases:
-  - id: capacity_contract
-    title: Establish the weighted capacity directive contract
-    size: medium
-    depends_on: []
-    description:
-      "capacity_contract: rename the directive field in Rust and its Python adapters,
-      enforce weighted-load thresholds, update queue presentation, and test the binding
-      boundary."
-  - id: bead_capacity
-    title: Carry capacity through epic work and launch handoffs
-    size: medium
-    depends_on:
-      - capacity_contract
-    description:
-      "bead_capacity: add -c/--capacity, move --cl-name to -C, and preserve capacity
-      across all epic rendering, resume, and launch paths."
-  - id: epic_gate_capacity
-    title: Add capacity to epic approval controls
-    size: medium
-    depends_on:
-      - bead_capacity
-    description:
-      "epic_gate_capacity: expose capacity in gate schemas and the custom approval
-      modal, retain it through response translation, and pass it into the epic launcher."
-  - id: capacity_docs_integration
-    title: Document and verify the complete capacity workflow
-    size: small
-    depends_on:
-      - epic_gate_capacity
-    description:
-      "capacity_docs_integration: synchronize CLI and directive documentation, reference
-      memory and skill source, and verify the complete gate-to-admission path."
+- id: capacity_contract
+  title: Establish the weighted capacity directive contract
+  size: medium
+  depends_on: []
+  description: 'capacity_contract: rename the directive field in Rust and its Python
+    adapters, enforce weighted-load thresholds, update queue presentation, and test
+    the binding boundary.'
+- id: bead_capacity
+  title: Carry capacity through epic work and launch handoffs
+  size: medium
+  depends_on:
+  - capacity_contract
+  description: 'bead_capacity: add -c/--capacity, move --cl-name to -C, and preserve
+    capacity across all epic rendering, resume, and launch paths.'
+- id: epic_gate_capacity
+  title: Add capacity to epic approval controls
+  size: medium
+  depends_on:
+  - bead_capacity
+  description: 'epic_gate_capacity: expose capacity in gate schemas and the custom
+    approval modal, retain it through response translation, and pass it into the epic
+    launcher.'
+- id: capacity_docs_integration
+  title: Document and verify the complete capacity workflow
+  size: small
+  depends_on:
+  - epic_gate_capacity
+  description: 'capacity_docs_integration: synchronize CLI and directive documentation,
+    reference memory and skill source, and verify the complete gate-to-admission path.'
 proposed_by: bbugyi200.athena.0jl
 create_time: 2026-09-11 13:40:26
 status: wip
+bead_id: sase-zp
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_work_capacity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_work_capacity.md)
+- **PROMPT:** [prompts/202609/bead_work_capacity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_work_capacity.md)
+- **BEAD:** [sase-zp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zp/README.md)
 
 # Bead work queue capacity
 
