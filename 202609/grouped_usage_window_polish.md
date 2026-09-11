@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Group and polish the TUI usage window indicators
-goal:
-  Make ACE's top-right usage display compact and readable with one icon per provider,
+goal: Make ACE's top-right usage display compact and readable with one icon per provider,
   default-first windows, colored names and pipe separators, and no caution triangles,
   while preserving configurable selection and useful overflow.
 size: medium
 proposed_by: bbugyi200.athena.0j8
-create_time: 2026-09-11 07:50:56
-status: wip
+status: done
 ---
 
 # Group and polish the TUI usage window indicators
