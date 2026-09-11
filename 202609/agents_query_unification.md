@@ -51,7 +51,7 @@ phases:
     reference, and run the final perf and visual snapshot sweep.'
 proposed_by: bbugyi200.athena.0iy
 create_time: 2026-09-10 18:01:44
-status: wip
+status: done
 bead_id: sase-zf
 ---
 
