@@ -13,6 +13,7 @@ status: done
   - [bbugyi200.athena.research.1u.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cdx/README.md)
   - [bbugyi200.athena.research.1u.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cld/README.md)
   - [bbugyi200.athena.research.1u.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.final/README.md)
+  - [bbugyi200.athena.research.1u.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.image/README.md)
   - [bbugyi200.athena.research.1v.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.cdx/README.md)
   - [bbugyi200.athena.research.1v.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.cld/README.md)
   - [bbugyi200.athena.research.1v.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.final/README.md)
@@ -32,6 +33,8 @@ status: done
     — docs(research): consolidate tailnet dispatch mesh readiness
   - [312f6bb](https://github.com/sase-org/sase--research/commit/312f6bb553b18aaa6d5bd48e9d8a57370ea30dbf)
     — docs(research): add tailnet dispatch infographic
+  - [8fa189e](https://github.com/sase-org/sase--research/commit/8fa189e5d1428063d213da7fe2db93738cf908a8)
+    — docs(research): add usage window header design infographic
 
 # Restore the usage freshness marker
 
