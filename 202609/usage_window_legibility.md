@@ -1,13 +1,35 @@
 ---
 tier: tale
 title: Make usage window indicators readable at a glance
-goal: Give each existing usage window a distinct, high-contrast presentation with
-  a color-matched percentage and reset countdown, preserving all displayed content
-  and layout capacity.
+goal:
+  Give each existing usage window a distinct, high-contrast presentation with a
+  color-matched percentage and reset countdown, preserving all displayed content and
+  layout capacity.
 size: medium
 proposed_by: bbugyi200.athena.0j0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0j0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j0.md)
+  - [bbugyi200.athena.sase-zf.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.1/README.md)
+  - [bbugyi200.athena.sase-zf.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.2/README.md)
+  - [bbugyi200.athena.sase-zf.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.3/README.md)
+  - [bbugyi200.athena.sase-zf.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.4/README.md)
+  - [bbugyi200.athena.sase-zf.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zf.5/README.md)
+- **COMMITS:**
+  - [77d8e04](https://github.com/sase-org/sase/commit/77d8e043383e34ec607cee38e340cfb5c9d3331d)
+    — feat(tui): improve usage window legibility in top bar badges
+  - [bfcdc04](https://github.com/sase-org/sase/commit/bfcdc0416288ba8d9175177ecbdadaf6a3e64c9e)
+    — feat(query): add agents-live profile adapter
+  - [699d2ad](https://github.com/sase-org/sase/commit/699d2adf7a8ab928c0bcfa57dedfb54357f9189c)
+    — feat(agents-tab): add Rust-backed committed-query engine behind sunset flag
+  - [e62e96f](https://github.com/sase-org/sase/commit/e62e96f5ff917f5837051f2a192f842f453ce18d)
+    — feat(agents): push down live query filters
+  - [6278e02](https://github.com/sase-org/sase/commit/6278e02c446a430671c96273b034fd0ada67c157)
+    — feat(agents-tab): add auto-hiding FilterBar chrome (sase-zf.4)
+  - [a53f4d0](https://github.com/sase-org/sase/commit/a53f4d04e5fa8e45452a3e293d1edeee6188fc23)
+    — docs(ace): document unified agents query syntax
 
 # Make usage window indicators readable at a glance
 
