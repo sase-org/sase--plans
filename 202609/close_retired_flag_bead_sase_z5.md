@@ -1,20 +1,12 @@
 ---
 tier: tale
 title: Close retired flag bead sase-z5 to unbreak just check-full
-goal:
-  just check-full passes on a clean master tree because flag bead sase-z5, whose
+goal: just check-full passes on a clean master tree because flag bead sase-z5, whose
   weighted_queue_capacity flag was already removed from the code, is closed.
 size: small
 proposed_by: bbugyi200.athena.0ij--1
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0ij](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ij.md)
-  - [bbugyi200.athena.sase-zl.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zl.1/README.md)
-- **COMMITS:**
-  - [e40da3e](https://github.com/sase-org/sase/commit/e40da3e1aa29f8518bb54bae45f2739a71ae2998)
-    — feat(monitor): record continuation baseline measurements
 
 # Close Retired Flag Bead sase-z5 To Unbreak `just check-full`
 
