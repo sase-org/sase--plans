@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Keep repository aliases on the checkout used by host hooks
-goal:
-  Prevent agents from editing an accidental duplicate of a configured repository and
-  then failing finalization against a different checkout.
+goal: Prevent agents from editing an accidental duplicate of a configured repository
+  and then failing finalization against a different checkout.
 size: medium
 proposed_by: bbugyi200.athena.0ja
-create_time: 2026-09-11 09:00:48
-status: wip
+status: done
 ---
 
 # Keep repository aliases on the checkout used by host hooks
