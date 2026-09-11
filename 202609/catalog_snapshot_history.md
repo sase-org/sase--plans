@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete bounded fleet catalog snapshots and explicit history
-goal:
-  Default fleet reads stay bounded while explicit history paging and page merging use
-  genuine, trustworthy snapshot identities.
+goal: Default fleet reads stay bounded while explicit history paging and page merging
+  use genuine, trustworthy snapshot identities.
 size: medium
 proposed_by: bbugyi200.athena.sase-xe.16.11.7.14.6.3
 bead: sase-xe.16.11.7.14.6.3
-create_time: 2026-09-10 22:23:34
-status: wip
+status: done
 ---
 
 - **PARENT:**
