@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Simplify stale usage labels and emphasize exhausted windows
-goal:
-  Usage indicators omit the stale tilde and make exact zero remaining capacity
+goal: Usage indicators omit the stale tilde and make exact zero remaining capacity
   unmistakable with an accessible token-scoped red background.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0
-create_time: 2026-09-11 08:53:39
-status: wip
+status: done
 ---
 
 # Plan: Simplify stale usage labels and emphasize exhausted windows
