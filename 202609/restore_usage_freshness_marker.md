@@ -1,12 +1,37 @@
 ---
 tier: tale
 title: Restore the usage freshness marker
-goal: Restore a visible stale-reading cue without confusing collector health or regressing
+goal:
+  Restore a visible stale-reading cue without confusing collector health or regressing
   zero emphasis and usage grouping.
 size: small
 proposed_by: bbugyi200.athena.0j8.f0.f2.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1u.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cdx/README.md)
+  - [bbugyi200.athena.research.1u.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.cld/README.md)
+  - [bbugyi200.athena.research.1u.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1u.final/README.md)
+  - [bbugyi200.athena.research.1v.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.cdx/README.md)
+  - [bbugyi200.athena.research.1v.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.cld/README.md)
+  - [bbugyi200.athena.research.1v.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.final/README.md)
+  - [bbugyi200.athena.research.1v.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1v.image/README.md)
+- **COMMITS:**
+  - [f9531b2](https://github.com/sase-org/sase--research/commit/f9531b291e6ea354791030e5435f6b12635b7048)
+    — docs(research): recommend usage window indicator UX
+  - [49dd94d](https://github.com/sase-org/sase--research/commit/49dd94de891f9d2f45016c1b3955a28ffbfd0ede)
+    — docs(research): add usage-window indicator presentation study
+  - [c7d7c3e](https://github.com/sase-org/sase--research/commit/c7d7c3e5751bff8006b25bbf017c78a8d7199ffd)
+    — docs(research): map full-mesh remote dispatch readiness
+  - [d06c202](https://github.com/sase-org/sase--research/commit/d06c2023cd54bf34730633914568d95e80795402)
+    — docs(research): analyze remaining work for a full tailnet dispatch mesh
+  - [113cf26](https://github.com/sase-org/sase--research/commit/113cf26aafdcbd02aaae36a165f0e71b4183c703)
+    — docs(research): recommend a concise usage-window header design
+  - [e5bf2c3](https://github.com/sase-org/sase--research/commit/e5bf2c3b57cc1da6d9b45e71b7b851a3525ad9e1)
+    — docs(research): consolidate tailnet dispatch mesh readiness
+  - [312f6bb](https://github.com/sase-org/sase--research/commit/312f6bb553b18aaa6d5bd48e9d8a57370ea30dbf)
+    — docs(research): add tailnet dispatch infographic
 
 # Restore the usage freshness marker
 
