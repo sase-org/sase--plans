@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Recover approved tale gates whose coder handoff never completed
-goal:
-  Make approved coder handoffs durable, diagnosable, and safely resumable without
+goal: Make approved coder handoffs durable, diagnosable, and safely resumable without
   repeating the approval or plan commit.
 size: medium
 proposed_by: bbugyi200.athena.0jg
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0jg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0jg.md)
-- **COMMITS:**
-  - [71717d9](https://github.com/sase-org/sase/commit/71717d95a009416058ce7f277009bcf6e2882e2f)
-    — fix(gate-shell): recover approved tale coder handoffs
 
 # Recover approved tale coder handoffs
 
