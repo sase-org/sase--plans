@@ -1,16 +1,14 @@
 ---
 tier: tale
 title: Break the sase.agent to sase.monitor import cycle crashing the AXE lumberjack
-goal:
-  Every module under `src/sase/agent/` imports cleanly in a cold interpreter because no
-  module there imports the `sase.monitor` package at module scope, so the `run_every`
-  lumberjack stops crash-looping on the partially-initialized
-  `sase.agent.launch_admission_store` import, and a static import-boundary gate plus
-  cold-import probes fail closed if the edge is ever reintroduced.
+goal: Every module under `src/sase/agent/` imports cleanly in a cold interpreter because
+  no module there imports the `sase.monitor` package at module scope, so the `run_every`
+  lumberjack stops crash-looping on the partially-initialized `sase.agent.launch_admission_store`
+  import, and a static import-boundary gate plus cold-import probes fail closed if
+  the edge is ever reintroduced.
 size: medium
 proposed_by: bbugyi200.athena.0k8
-create_time: 2026-09-12 09:41:05
-status: wip
+status: done
 ---
 
 # Plan: Break The `sase.agent` -> `sase.monitor` Import Cycle
