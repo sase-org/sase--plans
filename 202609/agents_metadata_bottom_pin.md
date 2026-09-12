@@ -1,17 +1,15 @@
 ---
 tier: tale
-title:
-  Pin the Agents metadata panel to the bottom after G instead of scrolling to it once
-goal:
-  Pressing `G` on the Agents tab while the metadata panel is the active detail surface
-  keeps that panel's viewport showing the end of the document as async enrichment,
+title: Pin the Agents metadata panel to the bottom after G instead of scrolling to
+  it once
+goal: Pressing `G` on the Agents tab while the metadata panel is the active detail
+  surface keeps that panel's viewport showing the end of the document as async enrichment,
   slow-tool ticks, and auto-refresh repaint it, instead of drifting upward as the
-  document grows and jumping when a shorter repaint clamps the scroll offset; the pin
-  releases on the next deliberate move away and on a document identity change.
+  document grows and jumping when a shorter repaint clamps the scroll offset; the
+  pin releases on the next deliberate move away and on a document identity change.
 size: medium
 proposed_by: bbugyi200.athena.0k9
-create_time: 2026-09-12 12:10:24
-status: wip
+status: done
 ---
 
 # Plan: Pin The Agents Metadata Panel To The Bottom After `G`
