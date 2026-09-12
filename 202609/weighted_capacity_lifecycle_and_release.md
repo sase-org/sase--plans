@@ -1,46 +1,42 @@
 ---
 tier: epic
 title: Finish weighted-capacity lifecycle and published-package proof
-goal:
-  Prove real weighted monitor and gate handoffs on the integrated tree and deliver a
-  compatible published SASE, core, and research-plugin cohort.
+goal: Prove real weighted monitor and gate handoffs on the integrated tree and deliver
+  a compatible published SASE, core, and research-plugin cohort.
 parent_bead: sase-z4.6.5.4
 phases:
-  - id: lifecycle-proof
-    title: Complete production-path weighted lifecycle acceptance
-    depends_on: []
-    description:
-      "lifecycle-proof: drive real monitor-next delivery and gate execution under
-      contention, preserve zero-valued queue inputs, and prove timeout/crash isolation
-      on the current integrated tree."
-    size: medium
-  - id: package-contract
-    title: Repair the research package compatibility contract
-    depends_on: []
-    description:
-      "package-contract: reconcile the research plugin's incompatible core window and
-      stale wheel assertions with the actual containing release and the current SASE API
-      requirements."
-    size: medium
-  - id: published-proof
-    title: Establish and verify the published minimum-version cohort
-    depends_on:
-      - lifecycle-proof
-      - package-contract
-    description:
-      "published-proof: establish real containing releases through existing automation,
-      run clean wheel-only positive and negative smoke checks without skipped research
-      acceptance, and preserve the flag-retirement evidence."
-    size: medium
+- id: lifecycle-proof
+  title: Complete production-path weighted lifecycle acceptance
+  depends_on: []
+  description: 'lifecycle-proof: drive real monitor-next delivery and gate execution
+    under contention, preserve zero-valued queue inputs, and prove timeout/crash isolation
+    on the current integrated tree.'
+  size: medium
+- id: package-contract
+  title: Repair the research package compatibility contract
+  depends_on: []
+  description: 'package-contract: reconcile the research plugin''s incompatible core
+    window and stale wheel assertions with the actual containing release and the current
+    SASE API requirements.'
+  size: medium
+- id: published-proof
+  title: Establish and verify the published minimum-version cohort
+  depends_on:
+  - lifecycle-proof
+  - package-contract
+  description: 'published-proof: establish real containing releases through existing
+    automation, run clean wheel-only positive and negative smoke checks without skipped
+    research acceptance, and preserve the flag-retirement evidence.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-z4.6.5.4.land
 create_time: 2026-09-12 06:29:11
 status: wip
+bead_id: sase-z4.6.5.4.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/weighted_capacity_lifecycle_and_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_lifecycle_and_release.md)
-- **PARENT:**
-  [202609/weighted_capacity_remaining_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_remaining_acceptance.md)
+- **PROMPT:** [prompts/202609/weighted_capacity_lifecycle_and_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/weighted_capacity_lifecycle_and_release.md)
+- **PARENT:** [202609/weighted_capacity_remaining_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/weighted_capacity_remaining_acceptance.md)
+- **BEAD:** [sase-z4.6.5.4.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-z4/sase-z4.6.5.4.6.md)
 
 # Finish weighted-capacity lifecycle and published-package proof
 
