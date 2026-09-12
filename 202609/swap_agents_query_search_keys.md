@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Swap the Agents query and metadata-search shortcuts
-goal:
-  Bare slash opens the Agents structured-query editor, while leader-slash starts inline
-  metadata search, without changing either feature on other tabs.
+goal: Bare slash opens the Agents structured-query editor, while leader-slash starts
+  inline metadata search, without changing either feature on other tabs.
 size: small
 proposed_by: bbugyi200.athena.0jn.f0
-create_time: 2026-09-11 16:44:30
-status: wip
+status: done
 ---
 
 # Plan: Swap the Agents query and metadata-search shortcuts
