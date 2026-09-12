@@ -1,15 +1,32 @@
 ---
 tier: tale
 title: Break the sase.agent to sase.monitor import cycle crashing the AXE lumberjack
-goal: Every module under `src/sase/agent/` imports cleanly in a cold interpreter because
-  no module there imports the `sase.monitor` package at module scope, so the `run_every`
-  lumberjack stops crash-looping on the partially-initialized `sase.agent.launch_admission_store`
-  import, and a static import-boundary gate plus cold-import probes fail closed if
-  the edge is ever reintroduced.
+goal:
+  Every module under `src/sase/agent/` imports cleanly in a cold interpreter because no
+  module there imports the `sase.monitor` package at module scope, so the `run_every`
+  lumberjack stops crash-looping on the partially-initialized
+  `sase.agent.launch_admission_store` import, and a static import-boundary gate plus
+  cold-import probes fail closed if the edge is ever reintroduced.
 size: medium
 proposed_by: bbugyi200.athena.0k8
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0k8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0k8.md)
+  - [bbugyi200.athena.sase-zs.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.1/README.md)
+  - [bbugyi200.athena.sase-zs.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.2/README.md)
+  - [bbugyi200.athena.sase-zs.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.3/README.md)
+  - [bbugyi200.athena.sase-zs.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.4/README.md)
+- **COMMITS:**
+  - [63653c5](https://github.com/sase-org/sase/commit/63653c5ee1593d8deef0aa6890639af8f79ccfdb)
+    — fix(sdd): reuse primary sidecar clone references
+  - [4ea8a15](https://github.com/sase-org/sase/commit/4ea8a1531b366d644522ddd7795d6cc8cb878ea1)
+    — fix(sdd): retry remote clone timeouts
+  - [186c543](https://github.com/sase-org/sase/commit/186c543d0e79e0518a7da20a96754dd7295ea3da)
+    — feat(github): add retryability classifier facade
+  - [ecea389](https://github.com/sase-org/sase/commit/ecea389efd48ff04d3ab054c99496748299f3f9d)
+    — feat(sdd): stream network git progress
 
 # Plan: Break The `sase.agent` -> `sase.monitor` Import Cycle
 
