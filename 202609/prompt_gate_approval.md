@@ -1,112 +1,104 @@
 ---
 tier: epic
 title: Make gate approval and notification dismissal respond promptly
-goal:
-  Publish durable tale and epic approval decisions and refresh ACE and Telegram promptly
-  without waiting for archive publication or successor launch, while preserving
+goal: Publish durable tale and epic approval decisions and refresh ACE and Telegram
+  promptly without waiting for archive publication or successor launch, while preserving
   execution recovery and exactly-once follow-up ownership.
 phases:
-  - id: bounded-gate-resolution
-    title: Measure approval stages and replace full-history gate lookup
-    depends_on: []
-    size: medium
-    description:
-      "bounded-gate-resolution: In sase-core and sase, instrument the approval
-      boundaries from submission through paint and replace find_gate_shell_by_gate_id's
-      full-history scan with an indexed exact gate-id lookup exposed through the Rust
-      binding. Maintain the lookup on gate creation and marker mutation, handle old
-      indexes off the interactive path, and test that lookup work stays bounded as
-      unrelated history grows. Resolve the exact owning shell, not a successor
-      inheriting its gate id. Preserve project scoping and newest-real-shell behavior.
-      Run focused Rust/PyO3 and Python tests and each changed repository's required
-      checks."
-  - id: durable-approval-publication
-    title: Separate durable decision acceptance from slow execution
-    depends_on:
-      - bounded-gate-resolution
-    size: medium
-    description:
-      "durable-approval-publication: Implement shared acceptance and execution policy in
-      sase-core with thin sase orchestration. Validate and durably reserve one decision
-      and its supervised proc before publishing approval and dismissing the
-      notification. Keep response.json's existing execution-complete contract and
-      required host archive receipts; project accepted plan decisions separately from
-      terminal shell state. Route ACE-facing plan APIs, CLI, mobile, and auto approval
-      through the same policy. Move archive/network/launch work behind the acceptance
-      boundary, publish terminal shell state before follow-up, and make crash recovery
-      and retry ownership explicit. Preserve branch inputs, source, archive protocol,
-      wait and coder choices, cancellation, and partial attempts. Prove acceptance
-      remains visible while archive/launch barriers are blocked, and prove duplicate or
-      racing submissions cannot duplicate work."
-  - id: ace-immediate-projection
-    title: Apply decision and notification changes through ACE's fast path
-    depends_on:
-      - durable-approval-publication
-    size: medium
-    description:
-      "ace-immediate-projection: Update neutral plan and generic gate submissions in
-      sase to use the shared durable operation and consume its acceptance result.
-      Refresh the exact gate shell, planner, and family plus the cached notification row
-      and indicator promptly, including approvals from Telegram/CLI/mobile. Bypass the
-      broad agent-load cadence only for bounded decision deltas, reuse existing
-      coalescing and pump-free refresh helpers, and protect new state from older
-      snapshots. Keep all disk, subprocess and lock work off Textual's event loop and
-      serial message pump. Verify folded/filtered/off-tab rows, stale overrides,
-      repeated actions, failure recovery and input responsiveness."
-  - id: telegram-prompt-actions
-    title: Decouple Telegram acknowledgements and cleanup from gate execution
-    depends_on:
-      - durable-approval-publication
-    size: medium
-    description:
-      "telegram-prompt-actions: In the sase-telegram repository, replace synchronous
-      resolve_gate_response execution and settlement in inbound handlers with the shared
-      durable submission API. Acknowledge callbacks promptly, remove or disable accepted
-      decision keyboards, persist completion/error delivery and keyboard-cleanup
-      retries, and continue processing later updates while gate execution runs.
-      Reconcile externally accepted gates independently of slow handlers and outbound
-      PDF/message delivery. Test authentication, duplicate callbacks, restart recovery,
-      rate limits, input/feedback flows and cross-surface dismissal without real
-      Telegram sends. Preserve the existing polling entry point for the receiver phase
-      to integrate."
-  - id: telegram-continuous-receiver
-    title: Remove Telegram's periodic polling delay
-    depends_on:
-      - telegram-prompt-actions
-    size: medium
-    description:
-      "telegram-continuous-receiver: Measure the effective inbound cadence and integrate
-      a supervised, single-owner long-poll receiver with sase-telegram's existing chop
-      entry point. Preserve --once, disabled-credential behavior and axe stop/config
-      lifecycle. Keep local cleanup independent of the network poll, durably claim
-      actionable updates before advancing offsets, and preserve ordering for mutable
-      question/input progress and non-gate launches. Test receiver restart, two
-      competing pollers, offset replay, rate limits, idle CPU and prompt cleanup during
-      a long poll. Reuse SASE supervision rather than adding an unsupervised process or
-      new queue service."
-  - id: integrated-latency-verification
-    title: Verify latency, recovery, and coordinated rollout
-    depends_on:
-      - ace-immediate-projection
-      - telegram-continuous-receiver
-    size: medium
-    description:
-      "integrated-latency-verification: Exercise both approval tiers across ACE,
-      Telegram, CLI and mobile using the matched sase-core binding and the full combined
-      implementation. Produce before/after stage timings and bounded-work evidence,
-      including blocked archive/launch workers and large history. Run just check in
-      every changed repository and sase's combined-tree just check-full through
-      sase_monitor. Verify restart, duplicate, cancellation, partial-command and
-      archive-failure behavior. Document rollout order, the Telegram receiver
-      lifecycle/configuration, latency measurements and any remaining network limits.
-      Remove temporary epic scaffolding before landing."
+- id: bounded-gate-resolution
+  title: Measure approval stages and replace full-history gate lookup
+  depends_on: []
+  size: medium
+  description: 'bounded-gate-resolution: In sase-core and sase, instrument the approval
+    boundaries from submission through paint and replace find_gate_shell_by_gate_id''s
+    full-history scan with an indexed exact gate-id lookup exposed through the Rust
+    binding. Maintain the lookup on gate creation and marker mutation, handle old
+    indexes off the interactive path, and test that lookup work stays bounded as unrelated
+    history grows. Resolve the exact owning shell, not a successor inheriting its
+    gate id. Preserve project scoping and newest-real-shell behavior. Run focused
+    Rust/PyO3 and Python tests and each changed repository''s required checks.'
+- id: durable-approval-publication
+  title: Separate durable decision acceptance from slow execution
+  depends_on:
+  - bounded-gate-resolution
+  size: medium
+  description: 'durable-approval-publication: Implement shared acceptance and execution
+    policy in sase-core with thin sase orchestration. Validate and durably reserve
+    one decision and its supervised proc before publishing approval and dismissing
+    the notification. Keep response.json''s existing execution-complete contract and
+    required host archive receipts; project accepted plan decisions separately from
+    terminal shell state. Route ACE-facing plan APIs, CLI, mobile, and auto approval
+    through the same policy. Move archive/network/launch work behind the acceptance
+    boundary, publish terminal shell state before follow-up, and make crash recovery
+    and retry ownership explicit. Preserve branch inputs, source, archive protocol,
+    wait and coder choices, cancellation, and partial attempts. Prove acceptance remains
+    visible while archive/launch barriers are blocked, and prove duplicate or racing
+    submissions cannot duplicate work.'
+- id: ace-immediate-projection
+  title: Apply decision and notification changes through ACE's fast path
+  depends_on:
+  - durable-approval-publication
+  size: medium
+  description: 'ace-immediate-projection: Update neutral plan and generic gate submissions
+    in sase to use the shared durable operation and consume its acceptance result.
+    Refresh the exact gate shell, planner, and family plus the cached notification
+    row and indicator promptly, including approvals from Telegram/CLI/mobile. Bypass
+    the broad agent-load cadence only for bounded decision deltas, reuse existing
+    coalescing and pump-free refresh helpers, and protect new state from older snapshots.
+    Keep all disk, subprocess and lock work off Textual''s event loop and serial message
+    pump. Verify folded/filtered/off-tab rows, stale overrides, repeated actions,
+    failure recovery and input responsiveness.'
+- id: telegram-prompt-actions
+  title: Decouple Telegram acknowledgements and cleanup from gate execution
+  depends_on:
+  - durable-approval-publication
+  size: medium
+  description: 'telegram-prompt-actions: In the sase-telegram repository, replace
+    synchronous resolve_gate_response execution and settlement in inbound handlers
+    with the shared durable submission API. Acknowledge callbacks promptly, remove
+    or disable accepted decision keyboards, persist completion/error delivery and
+    keyboard-cleanup retries, and continue processing later updates while gate execution
+    runs. Reconcile externally accepted gates independently of slow handlers and outbound
+    PDF/message delivery. Test authentication, duplicate callbacks, restart recovery,
+    rate limits, input/feedback flows and cross-surface dismissal without real Telegram
+    sends. Preserve the existing polling entry point for the receiver phase to integrate.'
+- id: telegram-continuous-receiver
+  title: Remove Telegram's periodic polling delay
+  depends_on:
+  - telegram-prompt-actions
+  size: medium
+  description: 'telegram-continuous-receiver: Measure the effective inbound cadence
+    and integrate a supervised, single-owner long-poll receiver with sase-telegram''s
+    existing chop entry point. Preserve --once, disabled-credential behavior and axe
+    stop/config lifecycle. Keep local cleanup independent of the network poll, durably
+    claim actionable updates before advancing offsets, and preserve ordering for mutable
+    question/input progress and non-gate launches. Test receiver restart, two competing
+    pollers, offset replay, rate limits, idle CPU and prompt cleanup during a long
+    poll. Reuse SASE supervision rather than adding an unsupervised process or new
+    queue service.'
+- id: integrated-latency-verification
+  title: Verify latency, recovery, and coordinated rollout
+  depends_on:
+  - ace-immediate-projection
+  - telegram-continuous-receiver
+  size: medium
+  description: 'integrated-latency-verification: Exercise both approval tiers across
+    ACE, Telegram, CLI and mobile using the matched sase-core binding and the full
+    combined implementation. Produce before/after stage timings and bounded-work evidence,
+    including blocked archive/launch workers and large history. Run just check in
+    every changed repository and sase''s combined-tree just check-full through sase_monitor.
+    Verify restart, duplicate, cancellation, partial-command and archive-failure behavior.
+    Document rollout order, the Telegram receiver lifecycle/configuration, latency
+    measurements and any remaining network limits. Remove temporary epic scaffolding
+    before landing.'
 proposed_by: bbugyi200.athena.0js
 create_time: 2026-09-12 05:06:11
 status: wip
+bead_id: sase-zr
 ---
 
-- **PROMPT:**
-  [prompts/202609/prompt_gate_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_gate_approval.md)
+- **PROMPT:** [prompts/202609/prompt_gate_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_gate_approval.md)
+- **BEAD:** [sase-zr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zr/README.md)
 
 # Prompt gate approval publication
 
