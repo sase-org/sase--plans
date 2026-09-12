@@ -1,108 +1,100 @@
 ---
 tier: epic
 title: Finish monitor continuation correctness and production acceptance
-goal: "Complete the missing capture, replay, evidence, delivery, recovery and budget
-  paths required by sase-zl, preserve intervening launch and capacity changes, and prove
-  the integrated feature before resuming its interrupted landing.
+goal: 'Complete the missing capture, replay, evidence, delivery, recovery and budget
+  paths required by sase-zl, preserve intervening launch and capacity changes, and
+  prove the integrated feature before resuming its interrupted landing.
 
-  "
+  '
 parent_bead: sase-zl
 phases:
-  - id: capture
-    title: Preserve local provenance and durable exact handoffs
-    size: medium
-    depends_on: []
-    description:
-      "capture: exclude injected ancestry from canonical local records, accept authored
-      checkpoints, and publish immutable recoverable handoffs with exact parent
-      references."
-  - id: replay
-    title: Hydrate ancestry and retain protected context
-    size: medium
-    depends_on:
-      - capture
-    description:
-      "replay: traverse persisted exact parents from a single source, render
-      materialized constraints and checkpoints, and refuse incomplete automatic context."
-  - id: evidence
-    title: Materialize selected diagnostics from one frozen result
-    size: medium
-    depends_on:
-      - capture
-    description:
-      "evidence: feed frozen results and bounded stage diagnostics through every
-      projection with configured UTF-8 limits and complete command identity."
-  - id: policies
-    title: Execute validated frozen outcome policies
-    size: medium
-    depends_on:
-      - capture
-    description:
-      "policies: validate and persist full branch policies before startup, apply
-      overrides consistently, and preserve stopped/lost cancellation."
-  - id: adoption
-    title: Reserve and adopt ordinary continuation deliveries
-    size: medium
-    depends_on:
-      - replay
-      - evidence
-      - policies
-    description:
-      "adoption: add Rust-owned delivery transitions and exact receiver adoption through
-      existing launch admission before provider invocation."
-  - id: recovery
-    title: Reconcile terminal delivery and implement manual resume
-    size: medium
-    depends_on:
-      - adoption
-    description:
-      "recovery: recover terminal monitors without rerunning commands and atomically
-      admit immutable manual-resume revisions with explicit ownership outcomes."
-  - id: completion
-    title: Repair real host-finalizer recovery and receipts
-    size: medium
-    depends_on:
-      - recovery
-    description:
-      "completion: repair recovery launcher arguments, serialize host adoption, and
-      verify all finalizer actions with real controller and multi-repository receipt
-      coverage."
-  - id: budgets
-    title: Apply checkpoint projections and provider-aware budgets
-    size: medium
-    depends_on:
-      - replay
-      - evidence
-      - recovery
-    description:
-      "budgets: select and render safe checkpoint reductions, use actual provider and
-      transport limits, and publish recoverable refusals through delivery state."
-  - id: experience
-    title: Complete monitor controls and visual contracts
-    size: medium
-    depends_on:
-      - completion
-      - budgets
-    description:
-      "experience: expose working recovery and evidence controls, synchronize docs and
-      skill templates, and inspect narrow/wide monitor-state snapshots."
-  - id: acceptance
-    title: Prove the complete route and compatibility rollout
-    size: medium
-    depends_on:
-      - experience
-    description:
-      "acceptance: run production-path crash and efficiency evaluations, finish the
-      approved flag rollout, and verify coordinated released Rust and Python delivery."
+- id: capture
+  title: Preserve local provenance and durable exact handoffs
+  size: medium
+  depends_on: []
+  description: 'capture: exclude injected ancestry from canonical local records, accept
+    authored checkpoints, and publish immutable recoverable handoffs with exact parent
+    references.'
+- id: replay
+  title: Hydrate ancestry and retain protected context
+  size: medium
+  depends_on:
+  - capture
+  description: 'replay: traverse persisted exact parents from a single source, render
+    materialized constraints and checkpoints, and refuse incomplete automatic context.'
+- id: evidence
+  title: Materialize selected diagnostics from one frozen result
+  size: medium
+  depends_on:
+  - capture
+  description: 'evidence: feed frozen results and bounded stage diagnostics through
+    every projection with configured UTF-8 limits and complete command identity.'
+- id: policies
+  title: Execute validated frozen outcome policies
+  size: medium
+  depends_on:
+  - capture
+  description: 'policies: validate and persist full branch policies before startup,
+    apply overrides consistently, and preserve stopped/lost cancellation.'
+- id: adoption
+  title: Reserve and adopt ordinary continuation deliveries
+  size: medium
+  depends_on:
+  - replay
+  - evidence
+  - policies
+  description: 'adoption: add Rust-owned delivery transitions and exact receiver adoption
+    through existing launch admission before provider invocation.'
+- id: recovery
+  title: Reconcile terminal delivery and implement manual resume
+  size: medium
+  depends_on:
+  - adoption
+  description: 'recovery: recover terminal monitors without rerunning commands and
+    atomically admit immutable manual-resume revisions with explicit ownership outcomes.'
+- id: completion
+  title: Repair real host-finalizer recovery and receipts
+  size: medium
+  depends_on:
+  - recovery
+  description: 'completion: repair recovery launcher arguments, serialize host adoption,
+    and verify all finalizer actions with real controller and multi-repository receipt
+    coverage.'
+- id: budgets
+  title: Apply checkpoint projections and provider-aware budgets
+  size: medium
+  depends_on:
+  - replay
+  - evidence
+  - recovery
+  description: 'budgets: select and render safe checkpoint reductions, use actual
+    provider and transport limits, and publish recoverable refusals through delivery
+    state.'
+- id: experience
+  title: Complete monitor controls and visual contracts
+  size: medium
+  depends_on:
+  - completion
+  - budgets
+  description: 'experience: expose working recovery and evidence controls, synchronize
+    docs and skill templates, and inspect narrow/wide monitor-state snapshots.'
+- id: acceptance
+  title: Prove the complete route and compatibility rollout
+  size: medium
+  depends_on:
+  - experience
+  description: 'acceptance: run production-path crash and efficiency evaluations,
+    finish the approved flag rollout, and verify coordinated released Rust and Python
+    delivery.'
 proposed_by: bbugyi200.athena.sase-zl.land
 create_time: 2026-09-11 23:43:23
 status: wip
+bead_id: sase-zl.13
 ---
 
-- **PROMPT:**
-  [prompts/202609/monitor_continuation_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuation_landing_repairs.md)
-- **PARENT:**
-  [202609/monitor_continuations.md](https://github.com/sase-org/sase--plans/blob/main/202609/monitor_continuations.md)
+- **PROMPT:** [prompts/202609/monitor_continuation_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuation_landing_repairs.md)
+- **PARENT:** [202609/monitor_continuations.md](https://github.com/sase-org/sase--plans/blob/main/202609/monitor_continuations.md)
+- **BEAD:** [sase-zl.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zl/sase-zl.13.md)
 
 # Finish the remaining monitor continuation work
 
