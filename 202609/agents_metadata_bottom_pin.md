@@ -1,16 +1,23 @@
 ---
 tier: tale
-title: Pin the Agents metadata panel to the bottom after G instead of scrolling to
-  it once
-goal: Pressing `G` on the Agents tab while the metadata panel is the active detail
-  surface keeps that panel's viewport showing the end of the document as async enrichment,
+title:
+  Pin the Agents metadata panel to the bottom after G instead of scrolling to it once
+goal:
+  Pressing `G` on the Agents tab while the metadata panel is the active detail surface
+  keeps that panel's viewport showing the end of the document as async enrichment,
   slow-tool ticks, and auto-refresh repaint it, instead of drifting upward as the
-  document grows and jumping when a shorter repaint clamps the scroll offset; the
-  pin releases on the next deliberate move away and on a document identity change.
+  document grows and jumping when a shorter repaint clamps the scroll offset; the pin
+  releases on the next deliberate move away and on a document identity change.
 size: medium
 proposed_by: bbugyi200.athena.0k9
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0k9](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0k9.md)
+- **COMMITS:**
+  - [f2bb0af](https://github.com/sase-org/sase/commit/f2bb0af043a70767812b85f02e248e0157b24ec9)
+    — fix(tui): pin agents metadata bottom scroll
 
 # Plan: Pin The Agents Metadata Panel To The Bottom After `G`
 
