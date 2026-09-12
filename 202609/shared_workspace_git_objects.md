@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Share Git objects across managed workspace checkouts
-goal: Managed checkouts persistently share primary Git objects, compact safely, and
-  recover stale dependencies.
+goal:
+  Managed checkouts persistently share primary Git objects, compact safely, and recover
+  stale dependencies.
 size: medium
 proposed_by: bbugyi200.athena.sase-zw.6
 bead: sase-zw.6
@@ -13,6 +14,11 @@ status: done
   [202609/bound_sase_disk_footprint.md](https://github.com/sase-org/sase--plans/blob/main/202609/bound_sase_disk_footprint.md)
 - **BEAD:**
   [sase-zw.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zw/sase-zw.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-zw.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-zw.6.md)
+- **COMMITS:**
+  - [4460e13](https://github.com/sase-org/sase/commit/4460e13c4465fa36f2394f88a0723d67d7bb5970)
+    — feat(workspace): share git objects across checkouts
 
 # Plan: Share Git objects across managed workspace checkouts
 
