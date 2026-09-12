@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Merge pomodoros with Ctrl+X in the entry move and rename picker
-goal: Combine pomodoro names and append their bullets while keeping the current timed
-  entry or selected future destination intact.
+goal:
+  Combine pomodoro names and append their bullets while keeping the current timed entry
+  or selected future destination intact.
 size: medium
 proposed_by: bbugyi200.athena.0k5
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0k7](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0k7/README.md)
+- **COMMITS:**
+  - [e499bbc](https://github.com/sase-org/sase/commit/e499bbc7c80c43c6c12002d1534f91011ea34548)
+    — fix: parse Claude at reset timestamps
 
 # Merge pomodoros from the Ctrl+Shift+M entry picker
 
