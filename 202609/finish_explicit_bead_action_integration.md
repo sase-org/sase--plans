@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Finish explicit bead-action integration and recovery
-goal:
-  Assigned stitch decisions remain explicit, authenticated, and truthful through every
-  producer and recovery path.
+goal: Assigned stitch decisions remain explicit, authenticated, and truthful through
+  every producer and recovery path.
 size: medium
 proposed_by: bbugyi200.athena.sase-zq.land
 bead: sase-zq
-create_time: 2026-09-12 13:46:35
-status: wip
+status: done
 ---
 
 - **PARENT:**
