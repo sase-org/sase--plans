@@ -1,99 +1,99 @@
 ---
 tier: epic
 title: Harden every GitHub network interaction against slow and degraded transports
-goal: "A slow, congested, or degraded GitHub transport degrades SASE gracefully instead
-  of failing an agent run: redundant bulk transfers are eliminated, every network git
-  and `gh` call retries transient failures under a shared deterministic classifier,
+goal: 'A slow, congested, or degraded GitHub transport degrades SASE gracefully instead
+  of failing an agent run: redundant bulk transfers are eliminated, every network
+  git and `gh` call retries transient failures under a shared deterministic classifier,
   wall-clock timeouts are replaced by stall-aware deadlines, and sustained degradation
   is visible in telemetry before it becomes an agent failure.
 
-  "
+  '
 phases:
-  - id: ref-reuse
-    title: Borrow local objects when materializing sidecar SDD clones
-    depends_on: []
-    size: small
-    description: "ref-reuse: pass a validated `reference_repo` down the sidecar-kind
-      clone path so workspace materialization of the plans store stops re-downloading
-      the full pack from GitHub on every launch.
+- id: ref-reuse
+  title: Borrow local objects when materializing sidecar SDD clones
+  depends_on: []
+  size: small
+  description: 'ref-reuse: pass a validated `reference_repo` down the sidecar-kind
+    clone path so workspace materialization of the plans store stops re-downloading
+    the full pack from GitHub on every launch.
 
-      "
-  - id: clone-retry
-    title: Make remote clone timeouts retryable instead of fatal
-    depends_on: []
-    size: small
-    description: "clone-retry: close the hole where `SddGitCommandTimeout` bypasses the
-      clone retry loop whenever no reference repo is in play, and give retries an
-      escalating, deadline-aware timeout budget.
+    '
+- id: clone-retry
+  title: Make remote clone timeouts retryable instead of fatal
+  depends_on: []
+  size: small
+  description: 'clone-retry: close the hole where `SddGitCommandTimeout` bypasses
+    the clone retry loop whenever no reference repo is in play, and give retries an
+    escalating, deadline-aware timeout budget.
 
-      "
-  - id: classifier
-    title: Deterministic retryability classifier in the Rust core
-    depends_on: []
-    size: medium
-    description: "classifier: port transient-failure detection for git and `gh` output
-      into sase_core as a pure deterministic classifier with a PyO3 binding, replacing
-      the ad-hoc substring tuple that only covers git clone stderr.
+    '
+- id: classifier
+  title: Deterministic retryability classifier in the Rust core
+  depends_on: []
+  size: medium
+  description: 'classifier: port transient-failure detection for git and `gh` output
+    into sase_core as a pure deterministic classifier with a PyO3 binding, replacing
+    the ad-hoc substring tuple that only covers git clone stderr.
 
-      "
-  - id: stall-deadline
-    title: Replace fixed wall-clock timeouts with stall-aware deadlines
-    depends_on:
-      - clone-retry
-    size: medium
-    description: "stall-deadline: stream git progress output so a slow-but-advancing
-      transfer is distinguished from a genuinely stalled one, bounding idle time rather
-      than total duration.
+    '
+- id: stall-deadline
+  title: Replace fixed wall-clock timeouts with stall-aware deadlines
+  depends_on:
+  - clone-retry
+  size: medium
+  description: 'stall-deadline: stream git progress output so a slow-but-advancing
+    transfer is distinguished from a genuinely stalled one, bounding idle time rather
+    than total duration.
 
-      "
-  - id: gh-runner
-    title: Single retrying chokepoint for gh CLI calls
-    depends_on:
-      - classifier
-    size: medium
-    description: "gh-runner: add one bounded, non-interactive `gh` execution boundary
-      that applies the shared classifier, honors rate-limit and Retry-After signals, and
-      reports structured failures.
+    '
+- id: gh-runner
+  title: Single retrying chokepoint for gh CLI calls
+  depends_on:
+  - classifier
+  size: medium
+  description: 'gh-runner: add one bounded, non-interactive `gh` execution boundary
+    that applies the shared classifier, honors rate-limit and Retry-After signals,
+    and reports structured failures.
 
-      "
-  - id: adoption
-    title: Migrate ad-hoc GitHub call sites onto the shared runners
-    depends_on:
-      - classifier
-      - gh-runner
-    size: medium
-    description: "adoption: move the scattered direct `gh` subprocess calls and the
-      remaining network git paths in agents sync and bead sync onto the shared retrying
-      runners so resilience is uniform rather than per-call-site.
+    '
+- id: adoption
+  title: Migrate ad-hoc GitHub call sites onto the shared runners
+  depends_on:
+  - classifier
+  - gh-runner
+  size: medium
+  description: 'adoption: move the scattered direct `gh` subprocess calls and the
+    remaining network git paths in agents sync and bead sync onto the shared retrying
+    runners so resilience is uniform rather than per-call-site.
 
-      "
-  - id: materialization
-    title: Bound clone concurrency and stop stranding workspaces on transient failure
-    depends_on:
-      - clone-retry
-    size: medium
-    description: "materialization: cap concurrent remote clones so parallel launches
-      stop saturating the uplink, and let the agent runner degrade or requeue instead of
-      hard-failing and holding a numbered workspace.
+    '
+- id: materialization
+  title: Bound clone concurrency and stop stranding workspaces on transient failure
+  depends_on:
+  - clone-retry
+  size: medium
+  description: 'materialization: cap concurrent remote clones so parallel launches
+    stop saturating the uplink, and let the agent runner degrade or requeue instead
+    of hard-failing and holding a numbered workspace.
 
-      "
-  - id: observability
-    title: Surface transport degradation before it fails a run
-    depends_on:
-      - classifier
-      - stall-deadline
-    size: small
-    description:
-      "observability: record near-miss margin and retry outcomes on network git
-      operations and add a doctor check that warns when durations trend toward the
-      configured ceiling."
+    '
+- id: observability
+  title: Surface transport degradation before it fails a run
+  depends_on:
+  - classifier
+  - stall-deadline
+  size: small
+  description: 'observability: record near-miss margin and retry outcomes on network
+    git operations and add a doctor check that warns when durations trend toward the
+    configured ceiling.'
 proposed_by: bbugyi200.athena.0k6
 create_time: 2026-09-12 09:44:47
 status: wip
+bead_id: sase-zs
 ---
 
-- **PROMPT:**
-  [prompts/202609/github_network_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/github_network_resilience.md)
+- **PROMPT:** [prompts/202609/github_network_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/github_network_resilience.md)
+- **BEAD:** [sase-zs](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zs/README.md)
 
 # Plan: Harden every GitHub network interaction against slow and degraded transports
 
