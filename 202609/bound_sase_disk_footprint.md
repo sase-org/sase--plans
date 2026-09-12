@@ -1,75 +1,72 @@
 ---
 tier: epic
 title: Bound SASE's disk footprint on a long-running host
-goal: "Every class of disk SASE creates — Rust build output, managed scratch, proc
-  runtime state, agent artifact directories, and managed workspace clones — has an owner
-  that reclaims it on a bounded horizon, the host notices disk pressure before it runs
-  out, and the ~340 GiB already leaked on athena is reclaimed.
+goal: 'Every class of disk SASE creates — Rust build output, managed scratch, proc
+  runtime state, agent artifact directories, and managed workspace clones — has an
+  owner that reclaims it on a bounded horizon, the host notices disk pressure before
+  it runs out, and the ~340 GiB already leaked on athena is reclaimed.
 
-  "
+  '
 phases:
-  - id: triage
-    title: Reclaim the measured backlog under one gate
-    depends_on: []
-    size: small
-    description:
-      "triage: reclaim the already-leaked bytes through one approval gate, then
-      re-measure and record the result."
-  - id: tmpreap
-    title: Close the managed-temp reaper's coverage gaps
-    depends_on: []
-    size: small
-    description:
-      "tmpreap: prune children of unregistered managed-temp buckets, register the
-      missing buckets, and add a test that the horizon table covers every bucket the
-      code creates."
-  - id: procreap
-    title: Reap proc runtime directories with proc-row retention
-    depends_on: []
-    size: small
-    description:
-      "procreap: delete a pruned proc's runtime directory alongside its logs and sweep
-      the runtime directories whose proc rows are already gone."
-  - id: cargo
-    title: Stop the Rust dev-build target leak at its source
-    depends_on: []
-    size: medium
-    description:
-      "cargo: make the dev-update profile non-incremental, keep every dev-install entry
-      point on a managed or repo-owned target root, and document the rule that agents
-      never invent a CARGO_TARGET_DIR."
-  - id: artifacts
-    title: Bound per-project agent artifact directories
-    depends_on: []
-    size: medium
-    description:
-      "artifacts: give ace-run month shards a retention horizon that protects referenced
-      and recent runs, and drop the empty out-of-range shards that starve shard watches."
-  - id: wsobjects
-    title: Share Git objects across managed workspace checkouts
-    depends_on: []
-    size: large
-    description:
-      "wsobjects: stop every managed checkout from carrying its own full copy of the
-      primary's pack, and retrofit the existing checkouts."
-  - id: pressure
-    title: Make the footprint visible and self-correcting
-    depends_on:
-      - triage
-      - tmpreap
-      - procreap
-      - cargo
-      - artifacts
-      - wsobjects
-    size: medium
-    description:
-      "pressure: add the sase disk command group over every owner the earlier phases
-      created, make the disk doctor check proportional to volume size, and act on
-      pressure from the housekeeping lane."
+- id: triage
+  title: Reclaim the measured backlog under one gate
+  depends_on: []
+  size: small
+  description: 'triage: reclaim the already-leaked bytes through one approval gate,
+    then re-measure and record the result.'
+- id: tmpreap
+  title: Close the managed-temp reaper's coverage gaps
+  depends_on: []
+  size: small
+  description: 'tmpreap: prune children of unregistered managed-temp buckets, register
+    the missing buckets, and add a test that the horizon table covers every bucket
+    the code creates.'
+- id: procreap
+  title: Reap proc runtime directories with proc-row retention
+  depends_on: []
+  size: small
+  description: 'procreap: delete a pruned proc''s runtime directory alongside its
+    logs and sweep the runtime directories whose proc rows are already gone.'
+- id: cargo
+  title: Stop the Rust dev-build target leak at its source
+  depends_on: []
+  size: medium
+  description: 'cargo: make the dev-update profile non-incremental, keep every dev-install
+    entry point on a managed or repo-owned target root, and document the rule that
+    agents never invent a CARGO_TARGET_DIR.'
+- id: artifacts
+  title: Bound per-project agent artifact directories
+  depends_on: []
+  size: medium
+  description: 'artifacts: give ace-run month shards a retention horizon that protects
+    referenced and recent runs, and drop the empty out-of-range shards that starve
+    shard watches.'
+- id: wsobjects
+  title: Share Git objects across managed workspace checkouts
+  depends_on: []
+  size: large
+  description: 'wsobjects: stop every managed checkout from carrying its own full
+    copy of the primary''s pack, and retrofit the existing checkouts.'
+- id: pressure
+  title: Make the footprint visible and self-correcting
+  depends_on:
+  - triage
+  - tmpreap
+  - procreap
+  - cargo
+  - artifacts
+  - wsobjects
+  size: medium
+  description: 'pressure: add the sase disk command group over every owner the earlier
+    phases created, make the disk doctor check proportional to volume size, and act
+    on pressure from the housekeeping lane.'
 proposed_by: bbugyi200.athena.0ka
 create_time: 2026-09-12 13:26:38
 status: wip
+bead_id: sase-zw
 ---
+
+- **BEAD:** [sase-zw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zw/README.md)
 
 # Plan: Bound SASE's disk footprint on a long-running host
 
