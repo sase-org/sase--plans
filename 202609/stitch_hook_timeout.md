@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Prevent local formatting setup from exhausting stitch finalization
-goal:
-  Finish stitch formatting without installing or rebuilding the application runtime, and
-  preserve actionable hook diagnostics when finalization times out.
+goal: Finish stitch formatting without installing or rebuilding the application runtime,
+  and preserve actionable hook diagnostics when finalization times out.
 size: medium
 proposed_by: bbugyi200.athena.0k3
-create_time: 2026-09-12 08:25:04
-status: wip
+status: done
 ---
 
 # Plan: Fix stitch timeouts in the local commit hook
