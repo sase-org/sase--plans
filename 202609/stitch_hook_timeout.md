@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Prevent local formatting setup from exhausting stitch finalization
-goal: Finish stitch formatting without installing or rebuilding the application runtime,
-  and preserve actionable hook diagnostics when finalization times out.
+goal:
+  Finish stitch formatting without installing or rebuilding the application runtime, and
+  preserve actionable hook diagnostics when finalization times out.
 size: medium
 proposed_by: bbugyi200.athena.0k3
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0k3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0k3.md)
+- **COMMITS:**
+  - [0be51f9](https://github.com/sase-org/sase/commit/0be51f9007c480d1e33d534a7b33c0f712de1e4c)
+    — fix(commit): diagnose stitch hook timeouts
 
 # Plan: Fix stitch timeouts in the local commit hook
 
