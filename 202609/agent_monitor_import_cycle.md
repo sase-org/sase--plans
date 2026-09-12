@@ -15,9 +15,12 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.0k8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0k8.md)
   - [bbugyi200.athena.sase-zs.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.1/README.md)
+  - [bbugyi200.athena.sase-zs.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zs.2/README.md)
 - **COMMITS:**
   - [63653c5](https://github.com/sase-org/sase/commit/63653c5ee1593d8deef0aa6890639af8f79ccfdb)
     — fix(sdd): reuse primary sidecar clone references
+  - [4ea8a15](https://github.com/sase-org/sase/commit/4ea8a1531b366d644522ddd7795d6cc8cb878ea1)
+    — fix(sdd): retry remote clone timeouts
 
 # Plan: Break The `sase.agent` -> `sase.monitor` Import Cycle
 
