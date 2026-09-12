@@ -1,20 +1,13 @@
 ---
 tier: tale
 title: Group and polish the TUI usage window indicators
-goal:
-  Make ACE's top-right usage display compact and readable with one icon per provider,
+goal: Make ACE's top-right usage display compact and readable with one icon per provider,
   default-first windows, colored names and pipe separators, and no caution triangles,
   while preserving configurable selection and useful overflow.
 size: medium
 proposed_by: bbugyi200.athena.0j8
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0j8](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0j8.md)
-- **COMMITS:**
-  - [ac55d0c](https://github.com/sase-org/sase/commit/ac55d0c874f1927f0555b3cb56233bf3f2eed449)
-    — feat(tui): group usage window indicators
 
 # Group and polish the TUI usage window indicators
 
