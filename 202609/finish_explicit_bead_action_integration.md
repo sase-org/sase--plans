@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish explicit bead-action integration and recovery
-goal: Assigned stitch decisions remain explicit, authenticated, and truthful through
-  every producer and recovery path.
+goal:
+  Assigned stitch decisions remain explicit, authenticated, and truthful through every
+  producer and recovery path.
 size: medium
 proposed_by: bbugyi200.athena.sase-zq.land
 bead: sase-zq
@@ -13,6 +14,11 @@ status: done
   [202609/explicit_bead_action.md](https://github.com/sase-org/sase--plans/blob/main/202609/explicit_bead_action.md)
 - **BEAD:**
   [sase-zq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zq/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-zq.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-zq.land.md)
+- **COMMITS:**
+  - [92f99bc](https://github.com/sase-org/sase/commit/92f99bc14ce9b8e72f83c98c9f7c6f396439ad79)
+    — fix(final): finish explicit bead action integration
 
 # Finish explicit bead-action integration and recovery
 
