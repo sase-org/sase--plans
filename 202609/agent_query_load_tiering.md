@@ -1,89 +1,92 @@
 ---
 tier: epic
 title: Agent queries stop escalating to full-archive filesystem scans
-goal: "A committed Agents-tab filter never decides how much of the artifact archive a
-  load reads. First paint always serves the bounded index window, full history arrives
+goal: 'A committed Agents-tab filter never decides how much of the artifact archive
+  a load reads. First paint always serves the bounded index window, full history arrives
   in the background from the SQLite index rather than a filesystem walk, and the common
-  `machine:` filter is pushed down instead of falling off the indexed path — with a
-  parity oracle proving no visible agent row is ever lost to any of it.
+  `machine:` filter is pushed down instead of falling off the indexed path — with
+  a parity oracle proving no visible agent row is ever lost to any of it.
 
-  "
+  '
 phases:
-  - id: harness
-    title: Load-path parity oracle and archive-scale benchmark
-    depends_on: []
-    size: medium
-    description: "harness: build the synthetic large-archive fixture, the parity oracle
-      that proves every load path returns the same visible rows as an authoritative
-      source scan, and the benchmark that times the three load paths.
+- id: harness
+  title: Load-path parity oracle and archive-scale benchmark
+  depends_on: []
+  size: medium
+  description: 'harness: build the synthetic large-archive fixture, the parity oracle
+    that proves every load path returns the same visible rows as an authoritative
+    source scan, and the benchmark that times the three load paths.
 
-      "
-  - id: defer
-    title: Pushdown misses degrade to deferred history, not to a blocking full scan
-    depends_on:
-      - harness
-    size: medium
-    description: "defer: stop letting a non-window-safe committed query escalate the
-      load tier; serve the bounded index window first, arm the existing quiet-window
-      full-history reconcile, and show honest partial-history state.
+    '
+- id: defer
+  title: Pushdown misses degrade to deferred history, not to a blocking full scan
+  depends_on:
+  - harness
+  size: medium
+  description: 'defer: stop letting a non-window-safe committed query escalate the
+    load tier; serve the bounded index window first, arm the existing quiet-window
+    full-history reconcile, and show honest partial-history state.
 
-      "
-  - id: rust_index
-    title: Artifact index gains full-history candidate filtering and machine provenance
-    depends_on:
-      - harness
-    size: medium
-    description: "rust_index: in sase-core, apply the candidate filter on the
-      non-windowed selection path, add an indexed machine-provenance column, and bump
-      the artifact index schema version.
+    '
+- id: rust_index
+  title: Artifact index gains full-history candidate filtering and machine provenance
+  depends_on:
+  - harness
+  size: medium
+  description: 'rust_index: in sase-core, apply the candidate filter on the non-windowed
+    selection path, add an indexed machine-provenance column, and bump the artifact
+    index schema version.
 
-      "
-  - id: tui_full_history
-    title: TUI full-history loads read the index instead of walking the filesystem
-    depends_on:
-      - rust_index
-    size: small
-    description: "tui_full_history: route the TUI's full-history load through the
-      artifact index with a candidate filter, keeping the bounded source scan as an
-      explicit fallback.
+    '
+- id: tui_full_history
+  title: TUI full-history loads read the index instead of walking the filesystem
+  depends_on:
+  - rust_index
+  size: small
+  description: 'tui_full_history: route the TUI''s full-history load through the artifact
+    index with a candidate filter, keeping the bounded source scan as an explicit
+    fallback.
 
-      "
-  - id: machine_pushdown
-    title: machine filters become window-safe, and pushdown coverage becomes a contract
-    depends_on:
-      - rust_index
-    size: small
-    description: "machine_pushdown: make `machine:` pushable with proven negation parity
-      and add the coverage test that forces every future agents-live field to declare
-      pushable or fallback.
+    '
+- id: machine_pushdown
+  title: machine filters become window-safe, and pushdown coverage becomes a contract
+  depends_on:
+  - rust_index
+  size: small
+  description: 'machine_pushdown: make `machine:` pushable with proven negation parity
+    and add the coverage test that forces every future agents-live field to declare
+    pushable or fallback.
 
-      "
-  - id: refresh_reuse
-    title: Refreshes stop re-paying for history the session already has
-    depends_on:
-      - defer
-      - tui_full_history
-    size: medium
-    description: "refresh_reuse: make the full-history upgrade a
-      once-per-committed-query event so ordinary auto-refreshes use the delta path
-      instead of repeating the expensive load.
+    '
+- id: refresh_reuse
+  title: Refreshes stop re-paying for history the session already has
+  depends_on:
+  - defer
+  - tui_full_history
+  size: medium
+  description: 'refresh_reuse: make the full-history upgrade a once-per-committed-query
+    event so ordinary auto-refreshes use the delta path instead of repeating the expensive
+    load.
 
-      "
-  - id: land
-    title: Remove the epic flags and land the measured result
-    depends_on:
-      - harness
-      - defer
-      - machine_pushdown
-      - refresh_reuse
-    size: small
-    description:
-      "land: delete the three beta flags' disabled branches, close their flag beads,
-      publish before/after numbers in the perf runbook, and file the memory task bead."
+    '
+- id: land
+  title: Remove the epic flags and land the measured result
+  depends_on:
+  - harness
+  - defer
+  - machine_pushdown
+  - refresh_reuse
+  size: small
+  description: 'land: delete the three beta flags'' disabled branches, close their
+    flag beads, publish before/after numbers in the perf runbook, and file the memory
+    task bead.'
 proposed_by: bbugyi200.kellys_mbp.05.f0
 create_time: 2026-09-12 10:35:40
 status: wip
+bead_id: sase-zu
 ---
+
+- **BEAD:** [sase-zu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zu/README.md)
 
 # Plan: Agent queries stop escalating to full-archive filesystem scans
 
