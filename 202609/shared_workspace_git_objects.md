@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Share Git objects across managed workspace checkouts
-goal:
-  Managed checkouts persistently share primary Git objects, compact safely, and recover
-  stale dependencies.
+goal: Managed checkouts persistently share primary Git objects, compact safely, and
+  recover stale dependencies.
 size: medium
 proposed_by: bbugyi200.athena.sase-zw.6
 bead: sase-zw.6
-create_time: 2026-09-12 15:42:03
-status: wip
+status: done
 ---
 
 - **PARENT:**
