@@ -1,69 +1,71 @@
 ---
 tier: epic
 title: Make %queue capacity a per-launch capacity budget
-goal: "`%q:N` gives that launch a capacity budget of N that replaces
-  `max_running_agents` for its own admission decision, unsatisfiable capacity/weight
-  combinations are rejected when they are authored instead of parking forever, and every
-  agent node and agent family node shows the capacity it authored.
+goal: '`%q:N` gives that launch a capacity budget of N that replaces `max_running_agents`
+  for its own admission decision, unsatisfiable capacity/weight combinations are rejected
+  when they are authored instead of parking forever, and every agent node and agent
+  family node shows the capacity it authored.
 
-  "
+  '
 phases:
-  - id: core
-    title: Rust admission contract — capacity is the limit
-    depends_on: []
-    size: medium
-    description: "core: rename the persisted capacity field to `queue_capacity`,
-      evaluate each waiter against its own admission limit instead of a shared global
-      limit, reject unsatisfiable authored capacity at parse time, translate legacy
-      `capacity=0` records, and gate all of it behind the sunset flag.
+- id: core
+  title: Rust admission contract — capacity is the limit
+  depends_on: []
+  size: medium
+  description: 'core: rename the persisted capacity field to `queue_capacity`, evaluate
+    each waiter against its own admission limit instead of a shared global limit,
+    reject unsatisfiable authored capacity at parse time, translate legacy `capacity=0`
+    records, and gate all of it behind the sunset flag.
 
-      "
-  - id: admission
-    title: Python adapters, launcher, and the sunset flag
-    depends_on:
-      - core
-    size: medium
-    description: "admission: register the `queue_capacity_budget` sunset flag, pass it
-      into the Rust entry points, rebuild against the new core revision, and carry
-      `queue_capacity` plus the per-waiter admission limit through the adapters, the
-      slot-poll launcher, and the agent-listing wire.
+    '
+- id: admission
+  title: Python adapters, launcher, and the sunset flag
+  depends_on:
+  - core
+  size: medium
+  description: 'admission: register the `queue_capacity_budget` sunset flag, pass
+    it into the Rust entry points, rebuild against the new core revision, and carry
+    `queue_capacity` plus the per-waiter admission limit through the adapters, the
+    slot-poll launcher, and the agent-listing wire.
 
-      "
-  - id: display
-    title: The capacity badge and the live/authored split
-    depends_on:
-      - admission
-    size: medium
-    description: "display: add the `cN` capacity badge to agent nodes and agent family
-      nodes beside the existing weight badge, accent an over-subscribing budget, move
-      the queue ladder and detail pane onto each waiter's own admission limit, and
-      restate the wait and epic-approval modals.
+    '
+- id: display
+  title: The capacity badge and the live/authored split
+  depends_on:
+  - admission
+  size: medium
+  description: 'display: add the `cN` capacity badge to agent nodes and agent family
+    nodes beside the existing weight badge, accent an over-subscribing budget, move
+    the queue ladder and detail pane onto each waiter''s own admission limit, and
+    restate the wait and epic-approval modals.
 
-      "
-  - id: docs
-    title: Documentation sweep and the xprompts memory correction
-    depends_on:
-      - admission
-      - display
-    size: small
-    description: "docs: restate capacity as a per-launch budget across the xprompt, ACE,
-      configuration, and runner-slot troubleshooting docs, and correct the stale
-      capacity paragraph in the `sase/memory/xprompts.md` reference memory note.
+    '
+- id: docs
+  title: Documentation sweep and the xprompts memory correction
+  depends_on:
+  - admission
+  - display
+  size: small
+  description: 'docs: restate capacity as a per-launch budget across the xprompt,
+    ACE, configuration, and runner-slot troubleshooting docs, and correct the stale
+    capacity paragraph in the `sase/memory/xprompts.md` reference memory note.
 
-      "
-  - id: verify
-    title: Live admission and display smoke
-    depends_on:
-      - display
-    size: xsmall
-    description:
-      "verify: launch real agents against a lowered runner limit to confirm a
-      high-capacity launch is admitted, a low-capacity launch drains first, and both
-      render the intended badge and accent."
+    '
+- id: verify
+  title: Live admission and display smoke
+  depends_on:
+  - display
+  size: xsmall
+  description: 'verify: launch real agents against a lowered runner limit to confirm
+    a high-capacity launch is admitted, a low-capacity launch drains first, and both
+    render the intended badge and accent.'
 proposed_by: bbugyi200.kellys_mbp.06.f0
 create_time: 2026-09-12 10:33:25
 status: wip
+bead_id: sase-zt
 ---
+
+- **BEAD:** [sase-zt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zt/README.md)
 
 # Plan: Make `%queue` capacity a per-launch capacity budget
 
