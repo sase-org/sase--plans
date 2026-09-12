@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Swap the Agents query and metadata-search shortcuts
-goal:
-  Bare slash opens the Agents structured-query editor, while leader-slash starts inline
-  metadata search, without changing either feature on other tabs.
+goal: Bare slash opens the Agents structured-query editor, while leader-slash starts
+  inline metadata search, without changing either feature on other tabs.
 size: small
 proposed_by: bbugyi200.athena.0jn.f0
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0jn.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0jn.f0.md)
-- **COMMITS:**
-  - [18f472c](https://github.com/sase-org/sase/commit/18f472c96e8303fdce4eed49402bc4e9bd62c848)
-    — feat(agents): swap query and search keys
 
 # Plan: Swap the Agents query and metadata-search shortcuts
 
