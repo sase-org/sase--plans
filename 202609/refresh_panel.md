@@ -1,54 +1,56 @@
 ---
 tier: epic
 title: Unified ACE Refresh panel on R
-goal: "One `R` gesture opens a Refresh panel that replaces both the immediate tab
-  refresh and the `,y` full-history refresh, adds a provider usage-window refresh and an
-  everything sweep, shows each option's real freshness, and keeps the old gestures
-  reachable behind a sunset flag until the panel has soaked.
+goal: 'One `R` gesture opens a Refresh panel that replaces both the immediate tab
+  refresh and the `,y` full-history refresh, adds a provider usage-window refresh
+  and an everything sweep, shows each option''s real freshness, and keeps the old
+  gestures reachable behind a sunset flag until the panel has soaked.
 
-  "
+  '
 phases:
-  - id: freshness
-    title: Surface freshness recorder
-    depends_on: []
-    size: small
-    description: 'freshness: add the in-memory per-surface "last reloaded" recorder,
-      stamp it from the auto-refresh sweep and the manual agents/artifacts/axe refresh
-      paths, and expose a pure formatter for relative freshness labels.
+- id: freshness
+  title: Surface freshness recorder
+  depends_on: []
+  size: small
+  description: 'freshness: add the in-memory per-surface "last reloaded" recorder,
+    stamp it from the auto-refresh sweep and the manual agents/artifacts/axe refresh
+    paths, and expose a pure formatter for relative freshness labels.
 
-      '
-  - id: panel
-    title: Refresh panel modal
-    depends_on:
-      - freshness
-    size: medium
-    description: "panel: build the RefreshPanelModal single-key chooser, its rows,
-      cursor, banner, availability states, worker-loaded usage freshness, styles, and
-      modal exports.
+    '
+- id: panel
+  title: Refresh panel modal
+  depends_on:
+  - freshness
+  size: medium
+  description: 'panel: build the RefreshPanelModal single-key chooser, its rows, cursor,
+    banner, availability states, worker-loaded usage freshness, styles, and modal
+    exports.
 
-      "
-  - id: wire
-    title: Gesture rewiring behind the refresh_panel flag
-    depends_on:
-      - panel
-    size: medium
-    description: "wire: create the sunset refresh_panel flag, route R and `,y` through
-      the panel when it is on, execute each chosen option, and keep today's direct
-      gestures as the off branch.
+    '
+- id: wire
+  title: Gesture rewiring behind the refresh_panel flag
+  depends_on:
+  - panel
+  size: medium
+  description: 'wire: create the sunset refresh_panel flag, route R and `,y` through
+    the panel when it is on, execute each chosen option, and keep today''s direct
+    gestures as the off branch.
 
-      "
-  - id: finish
-    title: Documentation and visual snapshot
-    depends_on:
-      - wire
-    size: small
-    description:
-      "finish: document the panel in docs/ace.md, correct the stale refresh-key prose,
-      add the PNG visual snapshot, and run the full verification gate."
+    '
+- id: finish
+  title: Documentation and visual snapshot
+  depends_on:
+  - wire
+  size: small
+  description: 'finish: document the panel in docs/ace.md, correct the stale refresh-key
+    prose, add the PNG visual snapshot, and run the full verification gate.'
 proposed_by: bbugyi200.athena.0kb
 create_time: 2026-09-12 14:56:15
 status: wip
+bead_id: sase-100
 ---
+
+- **BEAD:** [sase-100](https://github.com/sase-org/sase--beads/blob/main/pages/sase-100/README.md)
 
 # Plan: Unified ACE Refresh panel on R
 
