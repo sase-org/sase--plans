@@ -2,12 +2,10 @@
 tier: tale
 title: Restore Codex weekly usage visibility with NVM executable resolution
 size: medium
-goal:
-  Restore the Codex weekly all-model usage indicator when Codex is installed through NVM
-  and its bin directory is absent from the TUI's PATH.
+goal: Restore the Codex weekly all-model usage indicator when Codex is installed through
+  NVM and its bin directory is absent from the TUI's PATH.
 proposed_by: bbugyi200.athena.0jv
-create_time: 2026-09-12 05:21:06
-status: wip
+status: done
 ---
 
 # Restore Codex usage visibility with NVM executable resolution
