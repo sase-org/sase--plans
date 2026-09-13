@@ -1,13 +1,21 @@
 ---
 tier: tale
 title: Harden gate_shell_reclaim against its two-minute timeout
-goal: One gate_shell_reclaim pass reads the artifact index at most twice, finishes
-  inside a pass-wide budget well under the 120s chop timeout, and leaves progress
-  output in its run log even when killed.
+goal:
+  One gate_shell_reclaim pass reads the artifact index at most twice, finishes inside a
+  pass-wide budget well under the 120s chop timeout, and leaves progress output in its
+  run log even when killed.
 size: medium
 proposed_by: bbugyi200.athena.0kd
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kd](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kd.md)
+- **COMMITS:**
+  - [817c5c5](https://github.com/sase-org/sase/commit/817c5c5679154fffe7892e7124aa496782d9b8a7)
+    — fix(gate_shell): harden reclaim timeout handling with shared snapshot and
+    pass-wide deadline
 
 # Harden the `gate_shell_reclaim` chop so its two-minute timeout cannot return
 
