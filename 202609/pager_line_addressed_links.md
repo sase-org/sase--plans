@@ -36,7 +36,7 @@ phases:
     pin every form in the rendered-link corpus and a pilot navigation test.'
 proposed_by: bbugyi200.athena.1o
 create_time: 2026-09-13 10:09:09
-status: wip
+status: done
 bead_id: sase-108
 ---
 
