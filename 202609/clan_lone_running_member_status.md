@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Clan row mirrors its lone running member's status
-goal:
-  When exactly one direct clan member is running, the clan row and CLAN detail header
-  show that member's own status label and styling (e.g. TESTING) instead of a generic
-  RUNNING, and runner-slot refreshes keep it.
+goal: When exactly one direct clan member is running, the clan row and CLAN detail
+  header show that member's own status label and styling (e.g. TESTING) instead of
+  a generic RUNNING, and runner-slot refreshes keep it.
 size: small
 proposed_by: bbugyi200.athena.1m
-create_time: 2026-09-13 07:36:15
-status: wip
+status: done
 ---
 
 # Clan row mirrors its lone running member's status
