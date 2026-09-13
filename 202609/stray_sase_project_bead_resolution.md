@@ -7,6 +7,12 @@ proposed_by: bbugyi200.athena.c
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.c](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.c.md)
+- **COMMITS:**
+  - [73e337f](https://github.com/sase-org/sase/commit/73e337ff271f91ccc4a20c9085a32dc8d1dd10f4)
+    — fix: stop stray sase project from shadowing bead resolution
+
 # Fix `sase bead list` finding no beads from the primary `sase` checkout
 
 ## Problem
