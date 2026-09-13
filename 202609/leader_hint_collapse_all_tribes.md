@@ -1,16 +1,14 @@
 ---
 tier: tale
-title:
-  ",H leader chord: collapse any fold by hint across the selected tribe or every tribe"
-goal:
-  Agents-tab users can press ,H from any row to hint-collapse one expanded fold in the
-  selected tribe panel, or from a selected tribe panel to hint-collapse any expanded
-  fold or panel across every tribe panel, with stable focus, clear chips, and a scoped
-  footer.
+title: ',H leader chord: collapse any fold by hint across the selected tribe or every
+  tribe'
+goal: Agents-tab users can press ,H from any row to hint-collapse one expanded fold
+  in the selected tribe panel, or from a selected tribe panel to hint-collapse any
+  expanded fold or panel across every tribe panel, with stable focus, clear chips,
+  and a scoped footer.
 size: medium
 proposed_by: bbugyi200.apollo.u
-create_time: 2026-09-13 17:58:46
-status: wip
+status: done
 ---
 
 # Plan: `,H` — Collapse Any Fold By Hint (Selected Tribe, or Every Tribe)
