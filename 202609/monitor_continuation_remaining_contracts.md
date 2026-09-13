@@ -1,72 +1,68 @@
 ---
 tier: epic
 title: Repair the remaining monitor continuation contracts
-goal:
-  Preserve exact frozen context, protected instructions, single-delivery recovery, and
-  existing-record semantics while integrating continuation ancestry with retention and
-  proving the complete route.
+goal: Preserve exact frozen context, protected instructions, single-delivery recovery,
+  and existing-record semantics while integrating continuation ancestry with retention
+  and proving the complete route.
 parent_bead: sase-zl.13
 phases:
-  - id: frozen_context
-    title: Route and render successors from immutable result context
-    size: medium
-    depends_on: []
-    description:
-      "frozen_context: bind ordinary and recovery successors to the exact result graph
-      and project facts, evidence, intents and checkpoints from persisted context."
-  - id: protected_budget
-    title: Budget from trusted provenance and explicit checkpoint coverage
-    size: medium
-    depends_on:
-      - frozen_context
-    description:
-      "protected_budget: replace Markdown-based reduction discovery with attributed
-      projection data and validate actual resulting bytes before provider invocation."
-  - id: atomic_recovery
-    title: Fence manual resume against concurrent receiver adoption
-    size: medium
-    depends_on:
-      - frozen_context
-    description:
-      "atomic_recovery: atomically revalidate and supersede undelivered branches,
-      preserve acknowledgments, and refuse ambiguous receiver ownership."
-  - id: record_semantics
-    title: Preserve persisted protocol semantics across rollout changes
-    size: medium
-    depends_on:
-      - protected_budget
-      - atomic_recovery
-    description:
-      "record_semantics: select the protocol for new starts with the rollout flag while
-      keeping existing versioned runs on their immutable capture, policy and delivery
-      contracts."
-  - id: ancestry_retention
-    title: Protect and recover referenced continuation ancestry
-    size: medium
-    depends_on:
-      - frozen_context
-    description:
-      "ancestry_retention: integrate the run-retention planner with active continuation
-      dependencies and durable portable refs without broad UI or repeated archive scans."
-  - id: acceptance
-    title: Prove repaired production routes and combined compatibility
-    size: medium
-    depends_on:
-      - record_semantics
-      - ancestry_retention
-    description:
-      "acceptance: exercise integrated capture-through-invocation and recovery paths,
-      publish reproducible evaluation evidence, and complete released-package, visual
-      and full verification gates."
+- id: frozen_context
+  title: Route and render successors from immutable result context
+  size: medium
+  depends_on: []
+  description: 'frozen_context: bind ordinary and recovery successors to the exact
+    result graph and project facts, evidence, intents and checkpoints from persisted
+    context.'
+- id: protected_budget
+  title: Budget from trusted provenance and explicit checkpoint coverage
+  size: medium
+  depends_on:
+  - frozen_context
+  description: 'protected_budget: replace Markdown-based reduction discovery with
+    attributed projection data and validate actual resulting bytes before provider
+    invocation.'
+- id: atomic_recovery
+  title: Fence manual resume against concurrent receiver adoption
+  size: medium
+  depends_on:
+  - frozen_context
+  description: 'atomic_recovery: atomically revalidate and supersede undelivered branches,
+    preserve acknowledgments, and refuse ambiguous receiver ownership.'
+- id: record_semantics
+  title: Preserve persisted protocol semantics across rollout changes
+  size: medium
+  depends_on:
+  - protected_budget
+  - atomic_recovery
+  description: 'record_semantics: select the protocol for new starts with the rollout
+    flag while keeping existing versioned runs on their immutable capture, policy
+    and delivery contracts.'
+- id: ancestry_retention
+  title: Protect and recover referenced continuation ancestry
+  size: medium
+  depends_on:
+  - frozen_context
+  description: 'ancestry_retention: integrate the run-retention planner with active
+    continuation dependencies and durable portable refs without broad UI or repeated
+    archive scans.'
+- id: acceptance
+  title: Prove repaired production routes and combined compatibility
+  size: medium
+  depends_on:
+  - record_semantics
+  - ancestry_retention
+  description: 'acceptance: exercise integrated capture-through-invocation and recovery
+    paths, publish reproducible evaluation evidence, and complete released-package,
+    visual and full verification gates.'
 proposed_by: bbugyi200.athena.sase-zl.13.land
 create_time: 2026-09-13 06:00:37
 status: wip
+bead_id: sase-zl.13.11
 ---
 
-- **PROMPT:**
-  [prompts/202609/monitor_continuation_remaining_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuation_remaining_contracts.md)
-- **PARENT:**
-  [202609/monitor_continuation_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/monitor_continuation_landing_repairs.md)
+- **PROMPT:** [prompts/202609/monitor_continuation_remaining_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_continuation_remaining_contracts.md)
+- **PARENT:** [202609/monitor_continuation_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/monitor_continuation_landing_repairs.md)
+- **BEAD:** [sase-zl.13.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zl/sase-zl.13.11.md)
 
 This is remaining work from the landing of `sase-zl.13`. Read its audit
 `file:explicit:af7cbd77c889b65ed26818c9` first: it records five executed failures, all
