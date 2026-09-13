@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Fix
-goal: '#research_swarm resolves to the fixed sase-research-artifacts plugin definition
-  on this Mac again, and `sase doctor` flags any xprompt definition that still uses
-  retired directive syntax (such as %wait(priority=...)) with its source file before
-  a launch can fail.'
+goal:
+  "#research_swarm resolves to the fixed sase-research-artifacts plugin definition on
+  this Mac again, and `sase doctor` flags any xprompt definition that still uses retired
+  directive syntax (such as %wait(priority=...)) with its source file before a launch
+  can fail."
 size: medium
 proposed_by: bbugyi200.kellys_mbp.0b
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.0b](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.0b.md)
+- **COMMITS:**
+  - [2170f42](https://github.com/sase-org/sase/commit/2170f422e938d1e15cba5aa2002d4adca8cbb505)
+    — feat(xprompt): flag retired directive syntax in doctor
 
 # Plan: Fix the `#research_swarm` launch failure caused by a stale home xprompt override
 
