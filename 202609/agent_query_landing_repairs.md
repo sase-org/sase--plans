@@ -2,62 +2,57 @@
 tier: epic
 parent_bead: sase-zu
 title: Finish indexed agent-history correctness, reuse and measured acceptance
-goal:
-  Repair the confirmed row-loss and freshness gaps, preserve later queue and Refresh
+goal: Repair the confirmed row-loss and freshness gaps, preserve later queue and Refresh
   panel changes, and prove the remaining sase-zu acceptance criteria.
 phases:
-  - id: production-oracle
-    title: Make the parity oracle exercise production history and refresh paths
-    size: medium
-    depends_on: []
-    description:
-      "production-oracle: extend the harness to reproduce unseen artifacts, conflicting
-      machine provenance, settled bounded queries and query-keyed refresh invalidation
-      through production entry points."
-  - id: index-freshness
-    title: Make indexed history authoritative without archive-wide marker repair
-    size: medium
-    depends_on:
-      - production-oracle
-    description:
-      "index-freshness: repair the Rust-owned completeness and discovery contract, bound
-      steady-state revalidation, and adopt its wire through the existing Python loader."
-  - id: machine-parity
-    title: Repair machine candidate parity across provenance and tree projection
-    size: medium
-    depends_on:
-      - index-freshness
-    description:
-      "machine-parity: make candidate selection preserve every live row across
-      source-owner conflicts, tree descendants and both query dialects, proving
-      exactness before retaining negated pushdown."
-  - id: refresh-integration
-    title: Finish query-keyed delta reuse and integrate completion with Refresh
-    size: medium
-    depends_on:
-      - machine-parity
-    description:
-      "refresh-integration: preserve exact deltas under committed queries, invalidate
-      overflow and stale-query work, ensure settled completeness, and stamp successful
-      Agents history completion in Refresh."
-  - id: acceptance
-    title: Verify the pinned cohort and complete measured acceptance
-    size: medium
-    depends_on:
-      - refresh-integration
-    description:
-      "acceptance: verify the selected Rust revision and supported install, prove
-      production-path parity and performance on synthetic and real archives, publish
-      evidence, and finish the three flag retirements."
+- id: production-oracle
+  title: Make the parity oracle exercise production history and refresh paths
+  size: medium
+  depends_on: []
+  description: 'production-oracle: extend the harness to reproduce unseen artifacts,
+    conflicting machine provenance, settled bounded queries and query-keyed refresh
+    invalidation through production entry points.'
+- id: index-freshness
+  title: Make indexed history authoritative without archive-wide marker repair
+  size: medium
+  depends_on:
+  - production-oracle
+  description: 'index-freshness: repair the Rust-owned completeness and discovery
+    contract, bound steady-state revalidation, and adopt its wire through the existing
+    Python loader.'
+- id: machine-parity
+  title: Repair machine candidate parity across provenance and tree projection
+  size: medium
+  depends_on:
+  - index-freshness
+  description: 'machine-parity: make candidate selection preserve every live row across
+    source-owner conflicts, tree descendants and both query dialects, proving exactness
+    before retaining negated pushdown.'
+- id: refresh-integration
+  title: Finish query-keyed delta reuse and integrate completion with Refresh
+  size: medium
+  depends_on:
+  - machine-parity
+  description: 'refresh-integration: preserve exact deltas under committed queries,
+    invalidate overflow and stale-query work, ensure settled completeness, and stamp
+    successful Agents history completion in Refresh.'
+- id: acceptance
+  title: Verify the pinned cohort and complete measured acceptance
+  size: medium
+  depends_on:
+  - refresh-integration
+  description: 'acceptance: verify the selected Rust revision and supported install,
+    prove production-path parity and performance on synthetic and real archives, publish
+    evidence, and finish the three flag retirements.'
 proposed_by: bbugyi200.athena.sase-zu.land
 create_time: 2026-09-13 10:21:10
 status: wip
+bead_id: sase-zu.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_query_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_query_landing_repairs.md)
-- **PARENT:**
-  [202609/agent_query_load_tiering.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_query_load_tiering.md)
+- **PROMPT:** [prompts/202609/agent_query_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_query_landing_repairs.md)
+- **PARENT:** [202609/agent_query_load_tiering.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_query_load_tiering.md)
+- **BEAD:** [sase-zu.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zu/sase-zu.8.md)
 
 # Finish the remaining sase-zu work
 
