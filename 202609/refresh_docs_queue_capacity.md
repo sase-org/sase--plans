@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Give documentation-refresh agents a valid run-alone queue budget
-goal:
-  Every configured refresh_docs proposal uses %queue(capacity=1) while preserving its
-  existing scope and dependency chain.
+goal: Every configured refresh_docs proposal uses %queue(capacity=1) while preserving
+  its existing scope and dependency chain.
 size: small
 proposed_by: bbugyi200.athena.cm
-create_time: 2026-09-13 17:59:40
-status: wip
+status: done
 ---
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
