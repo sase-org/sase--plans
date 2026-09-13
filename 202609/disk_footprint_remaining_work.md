@@ -1,73 +1,67 @@
 ---
 tier: epic
 title: Finish disk retention safety and integrated footprint acceptance
-goal:
-  SASE disk owners enforce bounded, safe retention through Rust core, disk pressure
+goal: SASE disk owners enforce bounded, safe retention through Rust core, disk pressure
   reports and invokes the same policies, and the remaining host acceptance is measured.
 parent_bead: sase-zw
 phases:
-  - id: scratch
-    title: Adopt the Rust scratch owner and finish Cargo leak prevention
-    size: medium
-    depends_on: []
-    description:
-      "scratch: replace the duplicate temp reaper with the existing Rust API, complete
-      configurable horizons and the non-incremental core profile, and preserve isolated
-      Cargo build directories."
-  - id: procs
-    title: Make proc runtime retention bounded and safe against concurrent launches
-    size: medium
-    depends_on:
-      - scratch
-    description:
-      "procs: implement validated, age-bounded runtime retention in Rust, protect
-      concurrent reservations, and run orphan cleanup on the hourly lane."
-  - id: runs
-    title: Complete protected run retention and empty-shard cleanup
-    size: medium
-    depends_on:
-      - procs
-    description:
-      "runs: move shared run-retention decisions into Rust, revalidate protection before
-      apply, remove eligible empty descendants safely, and surface actionable previews."
-  - id: objects
-    title: Preserve shared-object dependencies throughout repair and reuse
-    size: medium
-    depends_on:
-      - runs
-    description:
-      "objects: complete Rust-owned sharing and repair safety, retain foreign
-      alternates, and prevent failed borrower recovery from deleting local work."
-  - id: pressure
-    title: Unify disk inventory, pressure decisions and owner delegation
-    size: medium
-    depends_on:
-      - scratch
-      - procs
-      - runs
-      - objects
-    description:
-      "pressure: make disk inventory bounded and complete about partial scans, share
-      pressure thresholds across surfaces, and return truthful preview/apply outcomes
-      from owner APIs."
-  - id: acceptance
-    title: Complete host reclamation and combined verification evidence
-    size: medium
-    depends_on:
-      - pressure
-    description:
-      "acceptance: verify the installed cohort, account for the prior cleanup decision,
-      measure remaining owned reclamation and safe workspace compaction, and publish
-      full acceptance evidence."
+- id: scratch
+  title: Adopt the Rust scratch owner and finish Cargo leak prevention
+  size: medium
+  depends_on: []
+  description: 'scratch: replace the duplicate temp reaper with the existing Rust
+    API, complete configurable horizons and the non-incremental core profile, and
+    preserve isolated Cargo build directories.'
+- id: procs
+  title: Make proc runtime retention bounded and safe against concurrent launches
+  size: medium
+  depends_on:
+  - scratch
+  description: 'procs: implement validated, age-bounded runtime retention in Rust,
+    protect concurrent reservations, and run orphan cleanup on the hourly lane.'
+- id: runs
+  title: Complete protected run retention and empty-shard cleanup
+  size: medium
+  depends_on:
+  - procs
+  description: 'runs: move shared run-retention decisions into Rust, revalidate protection
+    before apply, remove eligible empty descendants safely, and surface actionable
+    previews.'
+- id: objects
+  title: Preserve shared-object dependencies throughout repair and reuse
+  size: medium
+  depends_on:
+  - runs
+  description: 'objects: complete Rust-owned sharing and repair safety, retain foreign
+    alternates, and prevent failed borrower recovery from deleting local work.'
+- id: pressure
+  title: Unify disk inventory, pressure decisions and owner delegation
+  size: medium
+  depends_on:
+  - scratch
+  - procs
+  - runs
+  - objects
+  description: 'pressure: make disk inventory bounded and complete about partial scans,
+    share pressure thresholds across surfaces, and return truthful preview/apply outcomes
+    from owner APIs.'
+- id: acceptance
+  title: Complete host reclamation and combined verification evidence
+  size: medium
+  depends_on:
+  - pressure
+  description: 'acceptance: verify the installed cohort, account for the prior cleanup
+    decision, measure remaining owned reclamation and safe workspace compaction, and
+    publish full acceptance evidence.'
 proposed_by: bbugyi200.athena.sase-zw.land
 create_time: 2026-09-13 18:40:34
 status: wip
+bead_id: sase-zw.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/disk_footprint_remaining_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_footprint_remaining_work.md)
-- **PARENT:**
-  [202609/bound_sase_disk_footprint.md](https://github.com/sase-org/sase--plans/blob/main/202609/bound_sase_disk_footprint.md)
+- **PROMPT:** [prompts/202609/disk_footprint_remaining_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_footprint_remaining_work.md)
+- **PARENT:** [202609/bound_sase_disk_footprint.md](https://github.com/sase-org/sase--plans/blob/main/202609/bound_sase_disk_footprint.md)
+- **BEAD:** [sase-zw.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zw/sase-zw.8.md)
 
 # Finish the remaining work for sase-zw
 
