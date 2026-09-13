@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Keep Poseidon clear with bounded compiler caching and managed Cargo output
-goal: Athena's normal Cargo and SASE builds cannot recreate the unbounded Poseidon
-  target tree, reusable compiler results have a 40 GiB budget, and disk pressure produces
+goal:
+  Athena's normal Cargo and SASE builds cannot recreate the unbounded Poseidon target
+  tree, reusable compiler results have a 40 GiB budget, and disk pressure produces
   actionable local alerts.
 size: medium
 proposed_by: bbugyi200.athena.3u
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.3u](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.3u.md)
+- **COMMITS:**
+  - [a01facc](https://github.com/bbugyi200/dotfiles/commit/a01facce0dd51827e3ff74151ea0dbac5abbc3db)
+    — feat(athena): cap Poseidon compiler cache and watch pressure
 
 # Keep Poseidon clear
 
