@@ -1,55 +1,50 @@
 ---
 tier: epic
 title: Finish queue capacity persistence, authoring and display
-goal:
-  Preserve authored queue budgets through real scans, history and continuations, present
-  them truthfully, and complete the missing acceptance evidence for sase-zt.
+goal: Preserve authored queue budgets through real scans, history and continuations,
+  present them truthfully, and complete the missing acceptance evidence for sase-zt.
 parent_bead: sase-zt
 phases:
-  - id: core-contracts
-    title: Complete canonical capacity records and editor semantics in Rust
-    depends_on: []
-    description:
-      "core-contracts: preserve canonical and legacy capacity through metadata, waiting
-      markers, launch wires and indexed scans; share persisted-zero handling and
-      flag-aware editor suggestions in Rust."
-    size: medium
-  - id: adapters-continuations
-    title: Adopt the complete capacity wire and preserve continuation budgets
-    depends_on:
-      - core-contracts
-    description:
-      "adapters-continuations: advance the core pin without losing later contracts,
-      finish Python canonical-field adoption, remove duplicate admission policy, and
-      preserve exact capacity through monitor delivery."
-    size: medium
-  - id: presentation
-    title: Complete capacity metadata, colors and both-state presentation
-    depends_on:
-      - adapters-continuations
-    description:
-      "presentation: show authored capacity in the detail header and every eligible row,
-      fix large-budget accents, preserve the legacy flag branch, and prove real
-      scan-to-render behavior."
-    size: medium
-  - id: acceptance
-    title: Complete visual, live and combined-tree acceptance
-    depends_on:
-      - presentation
-    description:
-      "acceptance: inspect the required PNG changes, observe the real admission and TUI
-      color scenarios, verify newer index and monitor integrations, and run the repaired
-      combined-tree landing gate."
-    size: medium
+- id: core-contracts
+  title: Complete canonical capacity records and editor semantics in Rust
+  depends_on: []
+  description: 'core-contracts: preserve canonical and legacy capacity through metadata,
+    waiting markers, launch wires and indexed scans; share persisted-zero handling
+    and flag-aware editor suggestions in Rust.'
+  size: medium
+- id: adapters-continuations
+  title: Adopt the complete capacity wire and preserve continuation budgets
+  depends_on:
+  - core-contracts
+  description: 'adapters-continuations: advance the core pin without losing later
+    contracts, finish Python canonical-field adoption, remove duplicate admission
+    policy, and preserve exact capacity through monitor delivery.'
+  size: medium
+- id: presentation
+  title: Complete capacity metadata, colors and both-state presentation
+  depends_on:
+  - adapters-continuations
+  description: 'presentation: show authored capacity in the detail header and every
+    eligible row, fix large-budget accents, preserve the legacy flag branch, and prove
+    real scan-to-render behavior.'
+  size: medium
+- id: acceptance
+  title: Complete visual, live and combined-tree acceptance
+  depends_on:
+  - presentation
+  description: 'acceptance: inspect the required PNG changes, observe the real admission
+    and TUI color scenarios, verify newer index and monitor integrations, and run
+    the repaired combined-tree landing gate.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-zt.land
 create_time: 2026-09-13 07:09:15
 status: wip
+bead_id: sase-zt.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_capacity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_landing_repairs.md)
-- **PARENT:**
-  [202609/queue_capacity_budget.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_capacity_budget.md)
+- **PROMPT:** [prompts/202609/queue_capacity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_landing_repairs.md)
+- **PARENT:** [202609/queue_capacity_budget.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_capacity_budget.md)
+- **BEAD:** [sase-zt.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zt/sase-zt.6.md)
 
 # Remaining work for sase-zt
 
