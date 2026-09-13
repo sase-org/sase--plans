@@ -1,90 +1,82 @@
 ---
 tier: epic
 title: Remote agents render as real agent nodes
-goal: "Remote agents in the ACE Agents tab are displayed identically to local agents —
-  same family/clan nodes, member shells, counts, timestamps, and project names — except
-  that remote agent nodes carry their host's name, and local nodes never carry a `here`
-  indicator.
+goal: 'Remote agents in the ACE Agents tab are displayed identically to local agents
+  — same family/clan nodes, member shells, counts, timestamps, and project names —
+  except that remote agent nodes carry their host''s name, and local nodes never carry
+  a `here` indicator.
 
-  "
+  '
 parent_bead: sase-xe.16.11.7
 phases:
-  - id: no-here-chip
-    title: Host chips on remote nodes, never a here chip
-    depends_on: []
-    size: small
-    description:
-      "no-here-chip: invert the machine-chip policy — delete the here fallback so local
-      rows never carry a chip, render the host alias chip on remote agent nodes in every
-      grouping mode, and update render-cache keys, tests, and fleet PNG snapshots."
-  - id: remote-node-synthesis
-    title: Remote rows become family and clan nodes
-    depends_on: []
-    size: large
-    description:
-      "remote-node-synthesis: consume
-      row_kind/family_role/current_instance/container_projected_concrete_agent, link
-      members under family containers via host-qualified parent lineage, dedupe
-      container and non-current instances, route remote rows through the shared
-      node-synthesis and clan-projection pipeline, and fix the reproject/refilter fold
-      asymmetry."
-  - id: wire-parity-fields
-    title: Core wire carries the missing presentation facts
-    depends_on: []
-    size: large
-    description:
-      "wire-parity-fields: renderer-driven audit of Agent fields versus wire sources,
-      then extend ResolvedAgentSummaryWire and the owner projection with start/stop
-      timestamps, workspace number, clan/tribe identity, and a human project label; bump
-      contract schema, bindings, and fixtures with full core checks."
-  - id: published-core-adoption
-    title: Publish, ratchet, and verify the new core surface
-    depends_on:
-      - wire-parity-fields
-    size: small
-    description:
-      "published-core-adoption: wait for release-plz to publish the new core surface,
-      ratchet the pin and dependency floor with supported tools, just install, and
-      verify the installed wheel exposes the new fields before any consumer lands."
-  - id: remote-render-integration
-    title: Viewer consumes the new facts and drops noisy chrome
-    depends_on:
-      - remote-node-synthesis
-      - published-core-adoption
-    size: medium
-    description:
-      "remote-render-integration: map timestamps, workspace numbers, clan identity, and
-      human project labels into remote rows; suppress online/aging chrome on healthy
-      rows and align viewer freshness thresholds with the worker poll cadence; keep
-      render-cache keys honest."
-  - id: parity-proof
-    title: Mechanical local-versus-remote parity proof
-    depends_on:
-      - no-here-chip
-      - remote-render-integration
-    size: medium
-    description:
-      "parity-proof: same-body-of-work equality regression rendering one population
-      through the local pipeline and through serialized wire payloads, asserting
-      identical rows modulo the host chip; refreshed PNG snapshots and fleet navigation
-      benches within budget."
-  - id: live-acceptance
-    title: Live Athena-to-Apollo before/after acceptance
-    depends_on:
-      - parity-proof
-    size: medium
-    description:
-      "live-acceptance: reproduce the original defect scenario live from Athena viewing
-      Apollo on builds with every prior phase, capture pane evidence of
-      family/clan-grouped remote nodes with host chips and honest chrome, and leave the
-      phase open on any unmet gate."
+- id: no-here-chip
+  title: Host chips on remote nodes, never a here chip
+  depends_on: []
+  size: small
+  description: 'no-here-chip: invert the machine-chip policy — delete the here fallback
+    so local rows never carry a chip, render the host alias chip on remote agent nodes
+    in every grouping mode, and update render-cache keys, tests, and fleet PNG snapshots.'
+- id: remote-node-synthesis
+  title: Remote rows become family and clan nodes
+  depends_on: []
+  size: large
+  description: 'remote-node-synthesis: consume row_kind/family_role/current_instance/container_projected_concrete_agent,
+    link members under family containers via host-qualified parent lineage, dedupe
+    container and non-current instances, route remote rows through the shared node-synthesis
+    and clan-projection pipeline, and fix the reproject/refilter fold asymmetry.'
+- id: wire-parity-fields
+  title: Core wire carries the missing presentation facts
+  depends_on: []
+  size: large
+  description: 'wire-parity-fields: renderer-driven audit of Agent fields versus wire
+    sources, then extend ResolvedAgentSummaryWire and the owner projection with start/stop
+    timestamps, workspace number, clan/tribe identity, and a human project label;
+    bump contract schema, bindings, and fixtures with full core checks.'
+- id: published-core-adoption
+  title: Publish, ratchet, and verify the new core surface
+  depends_on:
+  - wire-parity-fields
+  size: small
+  description: 'published-core-adoption: wait for release-plz to publish the new core
+    surface, ratchet the pin and dependency floor with supported tools, just install,
+    and verify the installed wheel exposes the new fields before any consumer lands.'
+- id: remote-render-integration
+  title: Viewer consumes the new facts and drops noisy chrome
+  depends_on:
+  - remote-node-synthesis
+  - published-core-adoption
+  size: medium
+  description: 'remote-render-integration: map timestamps, workspace numbers, clan
+    identity, and human project labels into remote rows; suppress online/aging chrome
+    on healthy rows and align viewer freshness thresholds with the worker poll cadence;
+    keep render-cache keys honest.'
+- id: parity-proof
+  title: Mechanical local-versus-remote parity proof
+  depends_on:
+  - no-here-chip
+  - remote-render-integration
+  size: medium
+  description: 'parity-proof: same-body-of-work equality regression rendering one
+    population through the local pipeline and through serialized wire payloads, asserting
+    identical rows modulo the host chip; refreshed PNG snapshots and fleet navigation
+    benches within budget.'
+- id: live-acceptance
+  title: Live Athena-to-Apollo before/after acceptance
+  depends_on:
+  - parity-proof
+  size: medium
+  description: 'live-acceptance: reproduce the original defect scenario live from
+    Athena viewing Apollo on builds with every prior phase, capture pane evidence
+    of family/clan-grouped remote nodes with host chips and honest chrome, and leave
+    the phase open on any unmet gate.'
 proposed_by: bbugyi200.apollo.v
 create_time: 2026-09-13 18:37:54
 status: wip
+bead_id: sase-xe.16.11.7.15
 ---
 
-- **PROMPT:**
-  [prompts/202609/remote_agents_display_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_agents_display_parity.md)
+- **PROMPT:** [prompts/202609/remote_agents_display_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_agents_display_parity.md)
+- **BEAD:** [sase-xe.16.11.7.15](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.15.md)
 
 # Remote agents render as real agent nodes — display parity across machines
 
