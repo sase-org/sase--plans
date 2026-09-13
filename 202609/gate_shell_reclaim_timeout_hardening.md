@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Harden gate_shell_reclaim against its two-minute timeout
-goal:
-  One gate_shell_reclaim pass reads the artifact index at most twice, finishes inside a
-  pass-wide budget well under the 120s chop timeout, and leaves progress output in its
-  run log even when killed.
+goal: One gate_shell_reclaim pass reads the artifact index at most twice, finishes
+  inside a pass-wide budget well under the 120s chop timeout, and leaves progress
+  output in its run log even when killed.
 size: medium
 proposed_by: bbugyi200.athena.0kd
-create_time: 2026-09-13 04:44:00
-status: wip
+status: done
 ---
 
 # Harden the `gate_shell_reclaim` chop so its two-minute timeout cannot return
