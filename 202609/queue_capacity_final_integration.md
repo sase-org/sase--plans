@@ -1,45 +1,41 @@
 ---
 tier: epic
 title: Finish queue-capacity landing integration
-goal:
-  The current pinned core and every approved launch path preserve and describe authored
-  queue-capacity budgets, and the combined implementation passes the missing live and
-  full acceptance evidence.
+goal: The current pinned core and every approved launch path preserve and describe
+  authored queue-capacity budgets, and the combined implementation passes the missing
+  live and full acceptance evidence.
 parent_bead: sase-zt.6
 phases:
-  - id: core-completion
-    title: Finish flag-aware queue name completion in the current Rust core
-    size: small
-    depends_on: []
-    description:
-      "core-completion: select flag-aware queue metadata for directive-name completion
-      and cover enabled/disabled documentation through Rust and the LSP."
-  - id: pin-and-launch
-    title: Pin the integrated core and prove LaunchApproval preserves capacity
-    size: medium
-    depends_on:
-      - core-completion
-    description:
-      "pin-and-launch: ratchet the current core cohort and repair or disprove the
-      reported agent-skill LaunchApproval capacity loss through typed request and
-      dispatch boundaries."
-  - id: acceptance
-    title: Complete live and combined-tree capacity acceptance
-    size: medium
-    depends_on:
-      - pin-and-launch
-    description:
-      "acceptance: observe the authorized live capacity scenarios, inspect targeted
-      visuals, and complete focused plus full integrated verification."
+- id: core-completion
+  title: Finish flag-aware queue name completion in the current Rust core
+  size: small
+  depends_on: []
+  description: 'core-completion: select flag-aware queue metadata for directive-name
+    completion and cover enabled/disabled documentation through Rust and the LSP.'
+- id: pin-and-launch
+  title: Pin the integrated core and prove LaunchApproval preserves capacity
+  size: medium
+  depends_on:
+  - core-completion
+  description: 'pin-and-launch: ratchet the current core cohort and repair or disprove
+    the reported agent-skill LaunchApproval capacity loss through typed request and
+    dispatch boundaries.'
+- id: acceptance
+  title: Complete live and combined-tree capacity acceptance
+  size: medium
+  depends_on:
+  - pin-and-launch
+  description: 'acceptance: observe the authorized live capacity scenarios, inspect
+    targeted visuals, and complete focused plus full integrated verification.'
 proposed_by: bbugyi200.athena.sase-zt.6.land
 create_time: 2026-09-13 14:29:52
 status: wip
+bead_id: sase-zt.6.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_capacity_final_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_final_integration.md)
-- **PARENT:**
-  [202609/queue_capacity_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_capacity_landing_repairs.md)
+- **PROMPT:** [prompts/202609/queue_capacity_final_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_final_integration.md)
+- **PARENT:** [202609/queue_capacity_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_capacity_landing_repairs.md)
+- **BEAD:** [sase-zt.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zt/sase-zt.6.5.md)
 
 # Finish queue-capacity landing integration
 
