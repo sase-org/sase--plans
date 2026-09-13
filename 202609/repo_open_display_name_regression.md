@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix sase repo open tier-1 resolution for display-named projects
-goal:
-  sase repo open resolves sidecar, linked, and primary repos again in projects whose
-  display name differs from their canonical project key, and the unknown-repo error
-  lists the real repo names.
+goal: sase repo open resolves sidecar, linked, and primary repos again in projects
+  whose display name differs from their canonical project key, and the unknown-repo
+  error lists the real repo names.
 size: small
 proposed_by: bbugyi200.kellys_mbp.0g
-create_time: 2026-09-13 18:30:28
-status: wip
+status: done
 ---
 
 # Fix `sase repo open` Tier-1 Resolution For Display-Named Projects
