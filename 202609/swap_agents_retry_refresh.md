@@ -4,8 +4,7 @@ title: Swap Agents retry and refresh keys
 goal: Make r refresh and R retry on Agents without changing the other tabs.
 size: medium
 proposed_by: bbugyi200.athena.55
-create_time: 2026-09-13 15:13:08
-status: wip
+status: done
 ---
 
 # Swap Agents Retry And Refresh Keys
