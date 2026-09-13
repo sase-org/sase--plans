@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Clan row mirrors its lone running member's status
-goal: When exactly one direct clan member is running, the clan row and CLAN detail
-  header show that member's own status label and styling (e.g. TESTING) instead of
-  a generic RUNNING, and runner-slot refreshes keep it.
+goal:
+  When exactly one direct clan member is running, the clan row and CLAN detail header
+  show that member's own status label and styling (e.g. TESTING) instead of a generic
+  RUNNING, and runner-slot refreshes keep it.
 size: small
 proposed_by: bbugyi200.athena.1m
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.1m](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.1m.md)
+- **COMMITS:**
+  - [21cdb65](https://github.com/sase-org/sase/commit/21cdb658b05246ca5b19efa1a81f73d19bc7a87d)
+    — feat(ace): mirror a lone running clan member's status on the clan row
 
 # Clan row mirrors its lone running member's status
 
