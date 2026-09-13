@@ -4,8 +4,7 @@ title: Fix bead list shadowed by an auto-created stray sase project
 goal: sase bead list works from the primary sase checkout, and
 size: medium
 proposed_by: bbugyi200.athena.c
-create_time: 2026-09-13 05:03:27
-status: wip
+status: done
 ---
 
 # Fix `sase bead list` finding no beads from the primary `sase` checkout
