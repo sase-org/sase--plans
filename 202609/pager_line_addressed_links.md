@@ -1,50 +1,47 @@
 ---
 tier: epic
 title: Line-addressed links in the pager
-goal: "Every pager link that carries a line location (plain paths, Markdown
-  destinations, and typed artifact refs, in colon `:12` / `:12:5` / `:12-40` or GitHub
-  `#L12` / `#L12-L40` / `#L12C5` form) follows without an error and lands on that line.
-  The referenced line or range is marked with an accent rail in the gutter, and copy
-  (`y`) and edit (`E`) carry the same location.
+goal: 'Every pager link that carries a line location (plain paths, Markdown destinations,
+  and typed artifact refs, in colon `:12` / `:12:5` / `:12-40` or GitHub `#L12` /
+  `#L12-L40` / `#L12C5` form) follows without an error and lands on that line. The
+  referenced line or range is marked with an accent rail in the gutter, and copy (`y`)
+  and edit (`E`) carry the same location.
 
-  "
+  '
 phases:
-  - id: core-location
-    title: Rust link-location grammar
-    depends_on: []
-    size: medium
-    description:
-      "core-location: in sase-core, add the one link-location grammar
-      (split_link_location plus its binding), accept GitHub-style line fragments in
-      parse_fragment, and extend the document file-path scanner so a location suffix
-      stays inside the link span."
-  - id: landing-mark
-    title: Pager landing placement and range rail
-    depends_on: []
-    size: medium
-    description:
-      "landing-mark: generalize the goto mark into a line/range mark rendered as an
-      accent gutter rail, place landed lines at a reading position shared with `;`,
-      clamp past-EOF lines with a gentle toast, carry the mark through back/forward
-      history and the breadcrumb."
-  - id: location-resolution
-    title: Location-first link resolution, copy, and the corpus
-    depends_on:
-      - core-location
-      - landing-mark
-    size: medium
-    description:
-      "location-resolution: ratchet sase-core, add the Python adapter, split locations
-      before resolving every pager ref (including the ACE LinkIndex fast path), retire
-      the duplicate Python line grammar, make copy include the location, and pin every
-      form in the rendered-link corpus and a pilot navigation test."
+- id: core-location
+  title: Rust link-location grammar
+  depends_on: []
+  size: medium
+  description: 'core-location: in sase-core, add the one link-location grammar (split_link_location
+    plus its binding), accept GitHub-style line fragments in parse_fragment, and extend
+    the document file-path scanner so a location suffix stays inside the link span.'
+- id: landing-mark
+  title: Pager landing placement and range rail
+  depends_on: []
+  size: medium
+  description: 'landing-mark: generalize the goto mark into a line/range mark rendered
+    as an accent gutter rail, place landed lines at a reading position shared with
+    `;`, clamp past-EOF lines with a gentle toast, carry the mark through back/forward
+    history and the breadcrumb.'
+- id: location-resolution
+  title: Location-first link resolution, copy, and the corpus
+  depends_on:
+  - core-location
+  - landing-mark
+  size: medium
+  description: 'location-resolution: ratchet sase-core, add the Python adapter, split
+    locations before resolving every pager ref (including the ACE LinkIndex fast path),
+    retire the duplicate Python line grammar, make copy include the location, and
+    pin every form in the rendered-link corpus and a pilot navigation test.'
 proposed_by: bbugyi200.athena.1o
 create_time: 2026-09-13 10:09:09
 status: wip
+bead_id: sase-108
 ---
 
-- **PROMPT:**
-  [prompts/202609/pager_line_addressed_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/pager_line_addressed_links.md)
+- **PROMPT:** [prompts/202609/pager_line_addressed_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/pager_line_addressed_links.md)
+- **BEAD:** [sase-108](https://github.com/sase-org/sase--beads/blob/main/pages/sase-108/README.md)
 
 # Plan: Line-addressed links in the pager
 
