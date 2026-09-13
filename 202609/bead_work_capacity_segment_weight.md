@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Make sase bead work --capacity admissible for every epic segment
-goal:
-  "`sase bead work --capacity N` (including the advertised run-alone value 1) launches
-  every epic phase and land agent with an admissible queue budget, and any remaining
-  queue-directive conflict is rejected before the command changes beads or spawns
-  agents."
+goal: '`sase bead work --capacity N` (including the advertised run-alone value 1)
+  launches every epic phase and land agent with an admissible queue budget, and any
+  remaining queue-directive conflict is rejected before the command changes beads
+  or spawns agents.'
 size: medium
 proposed_by: bbugyi200.athena.0ke
-create_time: 2026-09-13 04:45:05
-status: wip
+status: done
 ---
 
 # Plan: Make `sase bead work --capacity` admissible for every epic segment
