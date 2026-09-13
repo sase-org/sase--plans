@@ -1,48 +1,46 @@
 ---
 tier: epic
 title: Gate approval never blocks on weighted capacity
-goal: "Answering a tale/epic plan gate on a machine at full weighted runner capacity
+goal: 'Answering a tale/epic plan gate on a machine at full weighted runner capacity
   completes promptly: the coder agent launches and parks as QUEUED, and the epic-launch
   monitor starts immediately with an explicit queue weight of 0.
 
-  "
+  '
 phases:
-  - id: core-zero-weight
-    title: Allow explicit zero-weight capacity records in the Rust core
-    depends_on: []
-    size: medium
-    description:
-      "core-zero-weight: in sase-core's runner_capacity.rs, accept explicit queue_weight
-      0.0 records as valid non-occupying, non-reusable-lineage capacity records while
-      limits and user-authored %q weights stay strictly positive, with fail-closed
-      tests."
-  - id: gate-exec-nonblocking
-    title: Make gate-shell execution admission non-blocking
-    depends_on: []
-    size: medium
-    description:
-      "gate-exec-nonblocking: replace the wait_for_runner_slot loop in gate_shell/log.py
-      with one locked claim attempt that degrades to unclaimed execution with no phantom
-      claim or waiting marker, so answers complete on every surface and successors
-      self-acquire capacity."
-  - id: epic-monitor-zero-weight
-    title: Epic-launch monitor carries explicit weight 0 and full-capacity acceptance
-    depends_on:
-      - core-zero-weight
-      - gate-exec-nonblocking
-    size: medium
-    description:
-      "epic-monitor-zero-weight: author queue_weight 0 on the epic-launch monitor member
-      only, keep general monitor claim lineage intact, check capacity presentation, and
-      add fakey end-to-end acceptance for tale/epic approval and rejection at a full
-      weighted limit."
+- id: core-zero-weight
+  title: Allow explicit zero-weight capacity records in the Rust core
+  depends_on: []
+  size: medium
+  description: 'core-zero-weight: in sase-core''s runner_capacity.rs, accept explicit
+    queue_weight 0.0 records as valid non-occupying, non-reusable-lineage capacity
+    records while limits and user-authored %q weights stay strictly positive, with
+    fail-closed tests.'
+- id: gate-exec-nonblocking
+  title: Make gate-shell execution admission non-blocking
+  depends_on: []
+  size: medium
+  description: 'gate-exec-nonblocking: replace the wait_for_runner_slot loop in gate_shell/log.py
+    with one locked claim attempt that degrades to unclaimed execution with no phantom
+    claim or waiting marker, so answers complete on every surface and successors self-acquire
+    capacity.'
+- id: epic-monitor-zero-weight
+  title: Epic-launch monitor carries explicit weight 0 and full-capacity acceptance
+  depends_on:
+  - core-zero-weight
+  - gate-exec-nonblocking
+  size: medium
+  description: 'epic-monitor-zero-weight: author queue_weight 0 on the epic-launch
+    monitor member only, keep general monitor claim lineage intact, check capacity
+    presentation, and add fakey end-to-end acceptance for tale/epic approval and rejection
+    at a full weighted limit.'
 proposed_by: bbugyi200.athena.fa
 create_time: 2026-09-13 19:13:22
 status: wip
+bead_id: sase-10h
 ---
 
-- **PROMPT:**
-  [prompts/202609/gate_admission_never_blocks_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_admission_never_blocks_approval.md)
+- **PROMPT:** [prompts/202609/gate_admission_never_blocks_approval.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_admission_never_blocks_approval.md)
+- **BEAD:** [sase-10h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10h/README.md)
 
 # Gate Approval Never Blocks On Weighted Capacity
 
