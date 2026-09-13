@@ -1,15 +1,22 @@
 ---
 tier: tale
-title: ',H leader chord: collapse any fold by hint across the selected tribe or every
-  tribe'
-goal: Agents-tab users can press ,H from any row to hint-collapse one expanded fold
-  in the selected tribe panel, or from a selected tribe panel to hint-collapse any
-  expanded fold or panel across every tribe panel, with stable focus, clear chips,
-  and a scoped footer.
+title:
+  ",H leader chord: collapse any fold by hint across the selected tribe or every tribe"
+goal:
+  Agents-tab users can press ,H from any row to hint-collapse one expanded fold in the
+  selected tribe panel, or from a selected tribe panel to hint-collapse any expanded
+  fold or panel across every tribe panel, with stable focus, clear chips, and a scoped
+  footer.
 size: medium
 proposed_by: bbugyi200.apollo.u
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.u](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.u.md)
+- **COMMITS:**
+  - [0d36494](https://github.com/sase-org/sase/commit/0d36494d25ec8bf03a897f1d3c5ad1ed330d6477)
+    — feat(ace): add ,H leader chord to hint-collapse folds across tribes
 
 # Plan: `,H` — Collapse Any Fold By Hint (Selected Tribe, or Every Tribe)
 
