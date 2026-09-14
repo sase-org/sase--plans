@@ -61,7 +61,7 @@ phases:
     render the intended badge and accent.'
 proposed_by: bbugyi200.kellys_mbp.06.f0
 create_time: 2026-09-12 10:33:25
-status: wip
+status: done
 bead_id: sase-zt
 ---
 
