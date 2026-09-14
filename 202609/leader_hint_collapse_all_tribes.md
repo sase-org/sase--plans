@@ -13,10 +13,13 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.apollo.sase-xe.16.11.7.15.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.sase-xe.16.11.7.15.1/README.md)
   - [bbugyi200.apollo.u](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.u.md)
 - **COMMITS:**
   - [0d36494](https://github.com/sase-org/sase/commit/0d36494d25ec8bf03a897f1d3c5ad1ed330d6477)
     — feat(ace): add ,H leader chord to hint-collapse folds across tribes
+  - [f0fb9c8](https://github.com/sase-org/sase/commit/f0fb9c8843c5ad509960c6ff58cb05fd6cade972)
+    — fix(ace-tui): drop here chips and show host chips on remote nodes
 
 # Plan: `,H` — Collapse Any Fold By Hint (Selected Tribe, or Every Tribe)
 
