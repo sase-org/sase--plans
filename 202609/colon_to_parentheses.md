@@ -1,53 +1,12 @@
 ---
 tier: tale
 title: Switch colon arguments to parentheses while typing
-goal:
-  Typing an opening parenthesis after an invocation's argument colon removes the colon
-  in ACE and supported LSP editors while preserving pairing and cursor behavior.
+goal: Typing an opening parenthesis after an invocation's argument colon removes the
+  colon in ACE and supported LSP editors while preserving pairing and cursor behavior.
 size: medium
 proposed_by: bbugyi200.athena.0kg
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0kg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kg.md)
-  - [bbugyi200.athena.sase-10w.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.1/README.md)
-  - [bbugyi200.athena.sase-10w.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.2/README.md)
-  - [bbugyi200.athena.sase-10w.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.3/README.md)
-  - [bbugyi200.athena.sase-10w.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.4/README.md)
-  - [bbugyi200.athena.toobig-5e.agent_load_tiering_fixture.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.agent_load_tiering_fixture.0/README.md)
-  - [bbugyi200.athena.toobig-5e.agent_load_tiering_harness.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.agent_load_tiering_harness.0/README.md)
-  - [bbugyi200.athena.toobig-5e.test_axe_chop_agents.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.test_axe_chop_agents.0/README.md)
-  - [bbugyi200.athena.toobig-5e.test_bare_git_workspace.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.test_bare_git_workspace.0/README.md)
-  - [bbugyi200.athena.toobig-5e.test_enrich_agent_waiting.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.test_enrich_agent_waiting.0/README.md)
-  - [bbugyi200.athena.toobig-5e.test_fleet_agents_projection.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.test_fleet_agents_projection.0/README.md)
-  - [bbugyi200.athena.toobig-5e.test_notification_store.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5e.test_notification_store.0/README.md)
-- **COMMITS:**
-  - [107a003](https://github.com/sase-org/sase/commit/107a00334193fd4c9057096e429f5b442f213563)
-    — test(perf): split agent load tiering fixture
-  - [20d4782](https://github.com/sase-org/sase/commit/20d4782c96804fa8ea79810be86ec412a7b10ad4)
-    — test(notification-store): split test_notification_store.py into focused files
-  - [3fc45ec](https://github.com/sase-org/sase/commit/3fc45ec01a164f6b163428bf104df8b29b1e3549)
-    — test(enrich-agent-waiting): split test_enrich_agent_waiting.py into focused files
-  - [5024571](https://github.com/sase-org/sase/commit/5024571a3254393d56c2c9d5cf45fac996d18128)
-    — fix(monitor): repair store_lane and monitor __init__ imports
-  - [526df13](https://github.com/sase-org/sase/commit/526df13e48b81e8128b37552e76233e362d75775)
-    — fix(scope): recalibrate scoped lane budget
-  - [7dfbaea](https://github.com/sase-org/sase/commit/7dfbaea8bba90a16105d8d755a94f7db3a2d53a3)
-    — test(tui): split fleet agents projection tests
-  - [8823a85](https://github.com/sase-org/sase/commit/8823a856171253bde90440577d75070d22338f7f)
-    — test(bare-git): split test_bare_git_workspace.py by function under test
-  - [8f4bf9a](https://github.com/sase-org/sase/commit/8f4bf9a28050cfa3110cbe8707bdcf46dd887252)
-    — test(chop-agents): split test_axe_chop_agents.py into focused files
-  - [cc91c0a](https://github.com/sase-org/sase/commit/cc91c0aa435c225402a4598dc6adf998ef257510)
-    — test: make git identity hermetic in tests
-  - [d0a849d](https://github.com/sase-org/sase/commit/d0a849df74be36f030ec392f30e159b54a65cb36)
-    — test(ace): rebaseline drifted ACE PNG goldens and fix shell-label squeeze
-    truncation
-  - [f86056c](https://github.com/sase-org/sase/commit/f86056c7fd08d94f6dcf0ce2ac094249fc9f54ea)
-    — feat(ace): convert argument colons when typing parens
-  - [faf37fe](https://github.com/sase-org/sase/commit/faf37fec2214a7568e5038663fd1ff42fd2ded02)
-    — refactor(tests): split agent_load_tiering_harness into private submodules
 
 # Switch an invocation's colon arguments to parentheses while typing
 
