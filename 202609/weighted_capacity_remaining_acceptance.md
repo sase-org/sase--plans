@@ -52,7 +52,7 @@ phases:
     release proof succeeds.'
 proposed_by: bbugyi200.athena.sase-z4.6.5.land
 create_time: 2026-09-10 17:42:10
-status: wip
+status: done
 bead_id: sase-z4.6.5.4
 ---
 

@@ -33,7 +33,7 @@ phases:
     flag bead only after the release proof succeeds.'
 proposed_by: bbugyi200.athena.sase-z4.6.land
 create_time: 2026-09-10 13:23:36
-status: wip
+status: done
 bead_id: sase-z4.6.5
 ---
 

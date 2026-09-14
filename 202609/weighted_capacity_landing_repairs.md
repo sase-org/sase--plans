@@ -38,7 +38,7 @@ phases:
     retired rollout flag bead.'
 proposed_by: bbugyi200.athena.sase-z4.land
 create_time: 2026-09-10 08:15:36
-status: wip
+status: done
 bead_id: sase-z4.6
 ---
 
