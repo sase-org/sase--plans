@@ -12,6 +12,7 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.cm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cm.md)
   - [bbugyi200.athena.sase-10h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.2/README.md)
+  - [bbugyi200.athena.sase-zt.6.5.4.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zt.6.5.4.2/README.md)
   - [bbugyi200.athena.toobig-5c.loading_disk.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.loading_disk.0/README.md)
   - [bbugyi200.athena.toobig-5c.run_agent_wait_slots.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.run_agent_wait_slots.0/README.md)
 - **COMMITS:**
@@ -21,6 +22,8 @@ status: done
     — refactor(tui): split agent disk loading module
   - [66a46b8](https://github.com/sase-org/sase/commit/66a46b8cc39312b0a8c347e1b92a1f45af6d661c)
     — refactor(axe): split run_agent_wait_slots.py into candidate/state modules
+  - [1dd9160](https://github.com/sase-org/sase/commit/1dd9160fdb98c187bbd09abf38f465df4345b0c1)
+    — feat(ace/fleet): restore queue capacity parity for remote fleet agent rows
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
