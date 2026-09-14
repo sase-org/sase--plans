@@ -1,13 +1,23 @@
 ---
 tier: tale
 title: Open the Agents-tab metadata panel in the pager with V
-goal: Pressing V on any local Agents-tab row (running or done) opens that agent's
-  metadata as a beautiful sectioned pager document with agent-aware links, agent chrome,
-  and a live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
+goal:
+  Pressing V on any local Agents-tab row (running or done) opens that agent's metadata
+  as a beautiful sectioned pager document with agent-aware links, agent chrome, and a
+  live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
 size: medium
 proposed_by: bbugyi200.athena.0kf
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kf.md)
+  - [bbugyi200.athena.chop.refresh_docs.sase.0_289632.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.chop.refresh_docs.sase.0_289632.1/README.md)
+- **COMMITS:**
+  - [a59ded7](https://github.com/sase-org/sase/commit/a59ded7669c59b7e80fc5d1794ff6e15f7e26c93)
+    — feat(ace,pager): open agent metadata in the pager with V
+  - [aecb02d](https://github.com/sase-org/sase/commit/aecb02db26d979e6d64bed8acfa552fc2f84900c)
+    — docs(agents): clarify fleet capacity and recovered waits
 
 # `V` on the Agents tab: open the metadata panel in the pager
 
