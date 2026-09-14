@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Stop waiting bead workers before reusing their names
-goal: Ensure sase bead work retires every superseded waiting shell before launching
-  a replacement with the same name.
+goal:
+  Ensure sase bead work retires every superseded waiting shell before launching a
+  replacement with the same name.
 size: medium
 proposed_by: bbugyi200.athena.0ko
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ko](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ko.md)
+- **COMMITS:**
+  - [4908f64](https://github.com/sase-org/sase-core/commit/4908f645d7ef46dd33769e4f657cd53e1099ff27)
+    — fix(agent-cleanup): add forced reuse stop barrier
 
 # Plan: Stop waiting bead workers before reusing their names
 
