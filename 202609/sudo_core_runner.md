@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Sudo manifest contracts and TTY-attached runner in sase-core
-goal:
-  Ship hash-bound sudo wires, an unprivileged TTY runner, Python/wheel plumbing, and
-  deny-only remote approval enforcement for sase-110.1.
+goal: Ship hash-bound sudo wires, an unprivileged TTY runner, Python/wheel plumbing,
+  and deny-only remote approval enforcement for sase-110.1.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.1
 bead: sase-110.1
-create_time: 2026-09-14 11:46:04
-status: wip
+status: done
 ---
 
 - **PARENT:**
