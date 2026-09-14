@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Close out sase-10w.5 with green CI and a consulted coverage baseline
-goal:
-  Master Gate and Full CI are green on a tip containing the core-pin fix, a fresh
+goal: Master Gate and Full CI are green on a tip containing the core-pin fix, a fresh
   coverage-contexts baseline is installed and proven consulted by the scoped lane,
   evidence is on the bead, and sase-10w.5 is closed.
 size: medium
 proposed_by: bbugyi200.athena.sase-10w.5.f0
-create_time: 2026-09-14 12:04:58
-status: wip
+status: done
 ---
 
 # Plan: Close out sase-10w.5 — green CI on the fixed tip, then a fresh, consulted coverage baseline
