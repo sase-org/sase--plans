@@ -1,73 +1,69 @@
 ---
 tier: epic
-title:
-  Fleet ghost rows — finish live acceptance, fix v1 read-compat, make broken feeds
-  honest
-goal: "Athena's ACE never silently renders stale ghost agents for a remote host: the
-  sase-xe.16.11.7.15 live-acceptance phase is completed and closed on today's
-  verified-live fleet view, capability-set validation honors the contract's claimed v1
-  read-compatibility so mixed-version hosts do not collapse to zero rows behind a
-  hello-ok status, and a host whose feed is invalid or stale is rendered loudly
+title: Fleet ghost rows — finish live acceptance, fix v1 read-compat, make broken
+  feeds honest
+goal: 'Athena''s ACE never silently renders stale ghost agents for a remote host:
+  the sase-xe.16.11.7.15 live-acceptance phase is completed and closed on today''s
+  verified-live fleet view, capability-set validation honors the contract''s claimed
+  v1 read-compatibility so mixed-version hosts do not collapse to zero rows behind
+  a hello-ok status, and a host whose feed is invalid or stale is rendered loudly
   (host-level error surfacing plus honest staleness chrome on every cached row) instead
   of masquerading as healthy.
 
-  "
+  '
 parent_bead: sase-xe.16.11.7
 phases:
-  - id: close-live-acceptance
-    title: Complete and close the sase-xe.16.11.7.15 live-acceptance phase
-    depends_on: []
-    size: small
-    description:
-      "close-live-acceptance: with SSH from Apollo to Athena now working and Apollo's
-      gateway restarted onto the current installed binary, capture Athena-side `sase ace
-      --tmux` pane evidence of the live Apollo machine group (family/clan nodes, host
-      chips, honest chrome, no ghost rows), attach it to phase bead sase-xe.16.11.7.15.7
-      with a root-cause note, and close that phase bead so the epic's land agent can
-      land and close epic bead sase-xe.16.11.7.15. Leave the phase open on any unmet
-      gate. Never close the epic bead itself."
-  - id: caps-readcompat
-    title: Capability-set validation honors claimed v1 read-compatibility
-    depends_on: []
-    size: medium
-    description:
-      "caps-readcompat: in sase-core fleet_contract.rs, stop rejecting
-      older-but-readable capability sets — the normalized-equality check must ignore the
-      schema_version stamp that CapabilitySetWire::normalized rewrites to the current
-      version — audit the file for the same normalize-then-strict-equality pattern on
-      other versioned wires, and add regression tests proving a v1 summary envelope
-      yields rows instead of fleet_envelope_invalid while unnormalized content is still
-      rejected. Full core checks including PyO3."
-  - id: invalid-feed-honesty
-    title: Invalid or stale host feeds render loudly in the viewer
-    depends_on: []
-    size: medium
-    description:
-      'invalid-feed-honesty: when a remote host''s snapshot is status "invalid" or
-      served from cache beyond freshness thresholds, the ACE Agents tab must surface the
-      feed error at the host/machine level (banner or host row with error state and
-      cache age) and stamp honest staleness chrome on every cached row — no plain
-      RUNNING rows frozen from an hours-old cache — with the fleet_envelope_invalid
-      diagnostic reachable from the detail panel; regression tests cover the
-      invalid-host and stale-cache render paths.'
-  - id: gateway-skew-loudness
-    title: Gateway version skew is visible, and the upgrade runbook says to restart
-    depends_on: []
-    size: small
-    description:
-      'gateway-skew-loudness: surface remote gateway service/contract version skew in
-      `sase machine status` output (hello already carries service versions) so an
-      outdated target gateway is visible instead of hiding behind "hello ok", and extend
-      docs/remote_dispatch.md with the restart-after-upgrade requirement for supervised
-      gateways, whose Restart=on-failure units keep running the old binary after an
-      install upgrade.'
+- id: close-live-acceptance
+  title: Complete and close the sase-xe.16.11.7.15 live-acceptance phase
+  depends_on: []
+  size: small
+  description: 'close-live-acceptance: with SSH from Apollo to Athena now working
+    and Apollo''s gateway restarted onto the current installed binary, capture Athena-side
+    `sase ace --tmux` pane evidence of the live Apollo machine group (family/clan
+    nodes, host chips, honest chrome, no ghost rows), attach it to phase bead sase-xe.16.11.7.15.7
+    with a root-cause note, and close that phase bead so the epic''s land agent can
+    land and close epic bead sase-xe.16.11.7.15. Leave the phase open on any unmet
+    gate. Never close the epic bead itself.'
+- id: caps-readcompat
+  title: Capability-set validation honors claimed v1 read-compatibility
+  depends_on: []
+  size: medium
+  description: 'caps-readcompat: in sase-core fleet_contract.rs, stop rejecting older-but-readable
+    capability sets — the normalized-equality check must ignore the schema_version
+    stamp that CapabilitySetWire::normalized rewrites to the current version — audit
+    the file for the same normalize-then-strict-equality pattern on other versioned
+    wires, and add regression tests proving a v1 summary envelope yields rows instead
+    of fleet_envelope_invalid while unnormalized content is still rejected. Full core
+    checks including PyO3.'
+- id: invalid-feed-honesty
+  title: Invalid or stale host feeds render loudly in the viewer
+  depends_on: []
+  size: medium
+  description: 'invalid-feed-honesty: when a remote host''s snapshot is status "invalid"
+    or served from cache beyond freshness thresholds, the ACE Agents tab must surface
+    the feed error at the host/machine level (banner or host row with error state
+    and cache age) and stamp honest staleness chrome on every cached row — no plain
+    RUNNING rows frozen from an hours-old cache — with the fleet_envelope_invalid
+    diagnostic reachable from the detail panel; regression tests cover the invalid-host
+    and stale-cache render paths.'
+- id: gateway-skew-loudness
+  title: Gateway version skew is visible, and the upgrade runbook says to restart
+  depends_on: []
+  size: small
+  description: 'gateway-skew-loudness: surface remote gateway service/contract version
+    skew in `sase machine status` output (hello already carries service versions)
+    so an outdated target gateway is visible instead of hiding behind "hello ok",
+    and extend docs/remote_dispatch.md with the restart-after-upgrade requirement
+    for supervised gateways, whose Restart=on-failure units keep running the old binary
+    after an install upgrade.'
 proposed_by: bbugyi200.apollo.01
 create_time: 2026-09-14 16:25:22
 status: wip
+bead_id: sase-xe.16.11.7.16
 ---
 
-- **PROMPT:**
-  [prompts/202609/fleet_ghost_rows_readcompat.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_ghost_rows_readcompat.md)
+- **PROMPT:** [prompts/202609/fleet_ghost_rows_readcompat.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_ghost_rows_readcompat.md)
+- **BEAD:** [sase-xe.16.11.7.16](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.16.md)
 
 # Fleet ghost rows: finish live acceptance, fix v1 read-compat, make broken feeds honest
 
