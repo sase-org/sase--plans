@@ -1,10 +1,11 @@
 ---
 tier: tale
-title: Fix the Telegram inbound receiver launch failure and escalate repeated re-arm
-  failures
-goal: The supervised Telegram long-poll receiver launches reliably from the proc supervisor
-  regardless of the host services' PATH, and a receiver that cannot launch surfaces
-  a deduped notification instead of silently flooding the proc store while Telegram
+title:
+  Fix the Telegram inbound receiver launch failure and escalate repeated re-arm failures
+goal:
+  The supervised Telegram long-poll receiver launches reliably from the proc supervisor
+  regardless of the host services' PATH, and a receiver that cannot launch surfaces a
+  deduped notification instead of silently flooding the proc store while Telegram
   approvals go dead.
 size: medium
 proposed_by: bbugyi200.athena.0kp
