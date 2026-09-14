@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Remote fleet rows become family and clan nodes
-goal: Remote serialized rows project into stable local-equivalent family and clan
-  trees without local-only side effects.
+goal:
+  Remote serialized rows project into stable local-equivalent family and clan trees
+  without local-only side effects.
 size: medium
 proposed_by: bbugyi200.apollo.sase-xe.16.11.7.15.2
 bead: sase-xe.16.11.7.15.2
@@ -13,6 +14,11 @@ status: done
   [202609/remote_agents_display_parity.md](https://github.com/sase-org/sase--plans/blob/main/202609/remote_agents_display_parity.md)
 - **BEAD:**
   [sase-xe.16.11.7.15.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.15.2.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-xe.16.11.7.15.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.sase-xe.16.11.7.15.2.md)
+- **COMMITS:**
+  - [65f876a](https://github.com/sase-org/sase/commit/65f876aafcedd8512eaf900497d1363939a656f4)
+    — feat(ace): synthesize remote fleet rows into family and clan nodes
 
 # Remote fleet rows become family and clan nodes
 
