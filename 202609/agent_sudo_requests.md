@@ -1,95 +1,89 @@
 ---
 tier: epic
 title: Agent sudo requests with terminal-handoff authentication
-goal: "An agent on any machine can request that Bryan authenticate an exact, reviewed
+goal: 'An agent on any machine can request that Bryan authenticate an exact, reviewed
   batch of sudo commands; authentication happens only on a real TTY handed to sudo/PAM
   (never through SASE), execution flows through an unprivileged hash-verified runner
-  locally or over ssh -t remotely, a follow-up agent receives a structured ledger, and
-  athena's NOPASSWD sudo policy is tightened so the reviewed approval becomes a real
-  privilege boundary.
+  locally or over ssh -t remotely, a follow-up agent receives a structured ledger,
+  and athena''s NOPASSWD sudo policy is tightened so the reviewed approval becomes
+  a real privilege boundary.
 
-  "
+  '
 phases:
-  - id: core-runner
-    title: Sudo manifest contracts and the TTY-attached runner in sase-core
-    depends_on: []
-    size: large
-    description:
-      "core-runner: add the sudo manifest/ledger/risk-badge wire contracts to sase_core
-      and an unprivileged sase_sudo_runner binary (sudo -v, per-command sudo -n, sudo -k
-      on the controlling TTY) shipped as a wheel console script."
-  - id: sudo-gate
-    title: Typed sudo gate kind with the sase sudo front doors
-    depends_on: []
-    size: large
-    description:
-      "sudo-gate: register the sudo gate kind, add the sase sudo
-      request/answer/list/show CLI group with a questions-style single-turn handoff,
-      requires_tty option enforcement, risk badges, the batch ledger follow-up prompt,
-      and the agent_sudo_requests beta flag."
-  - id: core-pin
-    title: Ratchet the core pin and dependency floor past the runner surface
-    depends_on:
-      - core-runner
-    size: small
-    description:
-      "core-pin: ratchet sase-core-revision.txt and the sase-core-rs floor to the
-      release carrying the sudo runner and bindings, keeping binding validators green."
-  - id: ace-review
-    title: ACE review modal and the Authenticate terminal handoff
-    depends_on:
-      - sudo-gate
-      - core-pin
-    size: large
-    description:
-      "ace-review: add the 🔐 sudo review modal, the synchronous Approve-and-run suspend
-      flow that hands the terminal to the runner, SUDO/SUDOED statuses,
-      single-active-handoff locking, and completion toasts."
-  - id: skill-guard
-    title: The /sase_sudo generated skill and the raw-sudo PreToolUse guard
-    depends_on:
-      - sudo-gate
-    size: medium
-    description:
-      "skill-guard: author the generated /sase_sudo skill teaching the request contract,
-      add the chezmoi-managed PreToolUse deny for raw sudo in agent Bash calls, and
-      revise the 'SASE never uses sudo' user-facing copy."
-  - id: remote-sudo
-    title: Machine-targeted and remote-raised sudo over ssh -t
-    depends_on:
-      - ace-review
-    size: large
-    description:
-      "remote-sudo: add ssh targets to machine records, machine-targeted requests
-      executed over ssh -t with a sealed manifest, remote-raised requests answered via
-      the ssh -t relay from local ACE, and deny-only behavior on every non-TTY surface."
-  - id: athena-policy
-    title: Chezmoi sudo guards and the athena policy tightening
-    depends_on:
-      - ace-review
-      - skill-guard
-    size: medium
-    description:
-      "athena-policy: guard the chezmoi run_onchange scripts against password-required
-      sudo, then live-tighten athena by replacing the NOPASSWD:ALL sudoers rule and
-      setting ptrace_scope=1 through the shipped /sase_sudo flow itself."
-  - id: acceptance
-    title: Canary absence proof, live remote proof, and flag removal
-    depends_on:
-      - remote-sudo
-      - athena-policy
-    size: large
-    description:
-      "acceptance: land the canary-credential absence suite, run the live apollo
-      machine-targeted proof with a real password prompt, remove the agent_sudo_requests
-      flag, and finish docs and polish."
+- id: core-runner
+  title: Sudo manifest contracts and the TTY-attached runner in sase-core
+  depends_on: []
+  size: large
+  description: 'core-runner: add the sudo manifest/ledger/risk-badge wire contracts
+    to sase_core and an unprivileged sase_sudo_runner binary (sudo -v, per-command
+    sudo -n, sudo -k on the controlling TTY) shipped as a wheel console script.'
+- id: sudo-gate
+  title: Typed sudo gate kind with the sase sudo front doors
+  depends_on: []
+  size: large
+  description: 'sudo-gate: register the sudo gate kind, add the sase sudo request/answer/list/show
+    CLI group with a questions-style single-turn handoff, requires_tty option enforcement,
+    risk badges, the batch ledger follow-up prompt, and the agent_sudo_requests beta
+    flag.'
+- id: core-pin
+  title: Ratchet the core pin and dependency floor past the runner surface
+  depends_on:
+  - core-runner
+  size: small
+  description: 'core-pin: ratchet sase-core-revision.txt and the sase-core-rs floor
+    to the release carrying the sudo runner and bindings, keeping binding validators
+    green.'
+- id: ace-review
+  title: ACE review modal and the Authenticate terminal handoff
+  depends_on:
+  - sudo-gate
+  - core-pin
+  size: large
+  description: 'ace-review: add the 🔐 sudo review modal, the synchronous Approve-and-run
+    suspend flow that hands the terminal to the runner, SUDO/SUDOED statuses, single-active-handoff
+    locking, and completion toasts.'
+- id: skill-guard
+  title: The /sase_sudo generated skill and the raw-sudo PreToolUse guard
+  depends_on:
+  - sudo-gate
+  size: medium
+  description: 'skill-guard: author the generated /sase_sudo skill teaching the request
+    contract, add the chezmoi-managed PreToolUse deny for raw sudo in agent Bash calls,
+    and revise the ''SASE never uses sudo'' user-facing copy.'
+- id: remote-sudo
+  title: Machine-targeted and remote-raised sudo over ssh -t
+  depends_on:
+  - ace-review
+  size: large
+  description: 'remote-sudo: add ssh targets to machine records, machine-targeted
+    requests executed over ssh -t with a sealed manifest, remote-raised requests answered
+    via the ssh -t relay from local ACE, and deny-only behavior on every non-TTY surface.'
+- id: athena-policy
+  title: Chezmoi sudo guards and the athena policy tightening
+  depends_on:
+  - ace-review
+  - skill-guard
+  size: medium
+  description: 'athena-policy: guard the chezmoi run_onchange scripts against password-required
+    sudo, then live-tighten athena by replacing the NOPASSWD:ALL sudoers rule and
+    setting ptrace_scope=1 through the shipped /sase_sudo flow itself.'
+- id: acceptance
+  title: Canary absence proof, live remote proof, and flag removal
+  depends_on:
+  - remote-sudo
+  - athena-policy
+  size: large
+  description: 'acceptance: land the canary-credential absence suite, run the live
+    apollo machine-targeted proof with a real password prompt, remove the agent_sudo_requests
+    flag, and finish docs and polish.'
 proposed_by: bbugyi200.athena.0kl
 create_time: 2026-09-14 11:33:11
 status: wip
+bead_id: sase-110
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_sudo_requests.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_sudo_requests.md)
+- **PROMPT:** [prompts/202609/agent_sudo_requests.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_sudo_requests.md)
+- **BEAD:** [sase-110](https://github.com/sase-org/sase--beads/blob/main/pages/sase-110/README.md)
 
 # Plan: Agent sudo requests with terminal-handoff authentication
 
