@@ -1,46 +1,44 @@
 ---
 tier: epic
 title: Finish queue-capacity remote parity and landing acceptance
-goal:
-  Queue capacity survives the remote fleet summary boundary with the same canonical
-  semantics and ACE presentation as local agents, the deferred low-capacity launch is
-  observed admitting after drain, and the integrated tree passes the complete landing
+goal: Queue capacity survives the remote fleet summary boundary with the same canonical
+  semantics and ACE presentation as local agents, the deferred low-capacity launch
+  is observed admitting after drain, and the integrated tree passes the complete landing
   gate.
 parent_bead: sase-zt.6.5
 phases:
-  - id: remote-wire
-    title: Carry canonical queue capacity through the Rust fleet summary
-    size: medium
-    depends_on: []
-    description:
-      "remote-wire: extend the current Rust fleet summary contract and owner projection
-      with canonical queue-capacity value and explicitness, preserving the local loader
-      precedence, legacy-read, explicit-zero, and schema compatibility contracts."
-  - id: remote-consumer
-    title: Restore queue-capacity parity in synthesized remote agent rows
-    size: medium
-    depends_on:
-      - remote-wire
-    description:
-      "remote-consumer: ratchet the supported core cohort, consume the new fleet fields
-      through the existing Agent adapter, and prove remote row/detail capacity
-      presentation without changing admission accounting."
-  - id: integrated-acceptance
-    title: Complete drain, remote, and full landing acceptance
-    size: medium
-    depends_on:
-      - remote-consumer
-    description:
-      "integrated-acceptance: integrate later queue and fleet changes, finish the
-      missing drain-then-admit and remote presentation proofs, disposition the filed
-      historical flake baseline entries, and pass focused plus full verification."
+- id: remote-wire
+  title: Carry canonical queue capacity through the Rust fleet summary
+  size: medium
+  depends_on: []
+  description: 'remote-wire: extend the current Rust fleet summary contract and owner
+    projection with canonical queue-capacity value and explicitness, preserving the
+    local loader precedence, legacy-read, explicit-zero, and schema compatibility
+    contracts.'
+- id: remote-consumer
+  title: Restore queue-capacity parity in synthesized remote agent rows
+  size: medium
+  depends_on:
+  - remote-wire
+  description: 'remote-consumer: ratchet the supported core cohort, consume the new
+    fleet fields through the existing Agent adapter, and prove remote row/detail capacity
+    presentation without changing admission accounting.'
+- id: integrated-acceptance
+  title: Complete drain, remote, and full landing acceptance
+  size: medium
+  depends_on:
+  - remote-consumer
+  description: 'integrated-acceptance: integrate later queue and fleet changes, finish
+    the missing drain-then-admit and remote presentation proofs, disposition the filed
+    historical flake baseline entries, and pass focused plus full verification.'
 proposed_by: bbugyi200.athena.sase-zt.6.5.land
 create_time: 2026-09-13 22:09:23
 status: wip
+bead_id: sase-zt.6.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_capacity_remote_fleet_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_remote_fleet_parity.md)
+- **PROMPT:** [prompts/202609/queue_capacity_remote_fleet_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_remote_fleet_parity.md)
+- **BEAD:** [sase-zt.6.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zt/sase-zt.6.5.4.md)
 
 # Finish queue-capacity remote parity and landing acceptance
 
