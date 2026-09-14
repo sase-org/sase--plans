@@ -1,51 +1,51 @@
 ---
 tier: epic
 title: Eliminate recurring plans-sidecar provenance merge conflicts
-goal: "Concurrent plan provenance refreshes from different repos and machines converge
-  additively instead of fighting, the sync rebase auto-resolves the recurring
-  AGENTS/COMMITS conflict class, and finished plans stop being stamped onto unrelated
-  commits — so plans-sidecar merge conflicts no longer require manual resolution.
+goal: 'Concurrent plan provenance refreshes from different repos and machines converge
+  additively instead of fighting, the sync rebase auto-resolves the recurring AGENTS/COMMITS
+  conflict class, and finished plans stop being stamped onto unrelated commits — so
+  plans-sidecar merge conflicts no longer require manual resolution.
 
-  "
+  '
 phases:
-  - id: additive-provenance-merge
-    title: Additive provenance section merging
-    depends_on: []
-    size: medium
-    description: "additive-provenance-merge: make refresh_association_sections and both
-      refresh callers union locally derived AGENTS/COMMITS entries with the plan file's
-      existing entries (derived side wins per-key metadata, no entry is ever dropped for
-      being outside the local view), with deterministic ordering pinned by idempotence
-      and merge-stability tests.
+- id: additive-provenance-merge
+  title: Additive provenance section merging
+  depends_on: []
+  size: medium
+  description: 'additive-provenance-merge: make refresh_association_sections and both
+    refresh callers union locally derived AGENTS/COMMITS entries with the plan file''s
+    existing entries (derived side wins per-key metadata, no entry is ever dropped
+    for being outside the local view), with deterministic ordering pinned by idempotence
+    and merge-stability tests.
 
-      "
-  - id: plan-header-conflict-resolver
-    title: Plan-header semantic conflict resolver
-    depends_on:
-      - additive-provenance-merge
-    size: medium
-    description: "plan-header-conflict-resolver: add a resolver to the SDD semantic
-      conflict chain that claims plans-store month-dir markdown conflicts and, when
-      stages differ only in generated AGENTS/COMMITS sections, resolves by unioning both
-      sides with the phase-1 merge helper, failing closed on any authored difference.
+    '
+- id: plan-header-conflict-resolver
+  title: Plan-header semantic conflict resolver
+  depends_on:
+  - additive-provenance-merge
+  size: medium
+  description: 'plan-header-conflict-resolver: add a resolver to the SDD semantic
+    conflict chain that claims plans-store month-dir markdown conflicts and, when
+    stages differ only in generated AGENTS/COMMITS sections, resolves by unioning
+    both sides with the phase-1 merge helper, failing closed on any authored difference.
 
-      "
-  - id: stale-plan-attribution
-    title: Stop stale SASE_PLAN attribution
-    depends_on: []
-    size: medium
-    description:
-      "stale-plan-attribution: reproduce how launches inherit a stale SASE_PLAN env
-      value after a plan finishes, then gate the commit-workflow stamp and/or the
-      launch-side propagation so completed plans stop collecting unrelated commits, with
-      regression tests keeping legitimate plan-execution flows stamped."
+    '
+- id: stale-plan-attribution
+  title: Stop stale SASE_PLAN attribution
+  depends_on: []
+  size: medium
+  description: 'stale-plan-attribution: reproduce how launches inherit a stale SASE_PLAN
+    env value after a plan finishes, then gate the commit-workflow stamp and/or the
+    launch-side propagation so completed plans stop collecting unrelated commits,
+    with regression tests keeping legitimate plan-execution flows stamped.'
 proposed_by: bbugyi200.athena.0kt
 create_time: 2026-09-14 14:03:45
 status: wip
+bead_id: sase-112
 ---
 
-- **PROMPT:**
-  [prompts/202609/provenance_refresh_conflicts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/provenance_refresh_conflicts.md)
+- **PROMPT:** [prompts/202609/provenance_refresh_conflicts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/provenance_refresh_conflicts.md)
+- **BEAD:** [sase-112](https://github.com/sase-org/sase--beads/blob/main/pages/sase-112/README.md)
 
 # Eliminate Recurring Plans-Sidecar Merge Conflicts From Plan Provenance Refresh
 
