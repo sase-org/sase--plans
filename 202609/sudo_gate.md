@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Typed sudo gate and CLI front doors
-goal: Agents can request a reviewed privileged command batch and terminal users can
-  safely approve or deny it without SASE ever collecting a credential.
+goal:
+  Agents can request a reviewed privileged command batch and terminal users can safely
+  approve or deny it without SASE ever collecting a credential.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.2
 bead: sase-110.2
@@ -13,6 +14,11 @@ status: done
   [202609/agent_sudo_requests.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_sudo_requests.md)
 - **BEAD:**
   [sase-110.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-110/sase-110.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-110.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-110.2.md)
+- **COMMITS:**
+  - [7b85eb6](https://github.com/sase-org/sase/commit/7b85eb6c11ed1b098c06f372d62609ca55fae3e4)
+    — feat(sudo): add typed sudo gate workflow
 
 # Typed sudo gate and CLI front doors
 
