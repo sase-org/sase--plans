@@ -1,45 +1,43 @@
 ---
 tier: epic
 title: Failed monitor member permanently blocks family wait resolution
-goal: "A family wait resolves once a lane recovers from a failed shell member via a
-  same-kind retry, monitor starts stop minting doomed family members or stealing live
-  workspace claims, and permanently blocked waiters surface as notifications.
+goal: 'A family wait resolves once a lane recovers from a failed shell member via
+  a same-kind retry, monitor starts stop minting doomed family members or stealing
+  live workspace claims, and permanently blocked waiters surface as notifications.
 
-  "
+  '
 phases:
-  - id: wait-supersession
-    title: Superseded failed shell members stop blocking family waits
-    depends_on: []
-    size: medium
-    description:
-      "wait-supersession: classify monitor/gate shell members on ArtifactCandidate and
-      exclude a terminal-failed, follow-up-less shell member from the family's effective
-      generation when a newer same-kind shell member exists in the same generation, with
-      reproduction tests for the sase-zt.6.5.3 incident."
-  - id: monitor-start-claim
-    title: Monitor start stops minting doomed members and stealing live claims
-    depends_on: []
-    size: medium
-    description:
-      "monitor-start-claim: pre-flight the lane workspace claim before
-      create_monitor_member so a doomed start raises without creating a family member,
-      resolve stale transfer pids by adopting only dead holders' claim rows (never
-      transferring away from a live process), and make no-op releases record truthfully."
-  - id: terminal-block-notify
-    title: Surface permanently blocked waiters instead of only logging
-    depends_on: []
-    size: small
-    description:
-      "terminal-block-notify: have the wait_checks chop upsert one deduplicated inbox
-      notification per terminally-blocked waiter naming the blocker and actionable
-      guidance."
+- id: wait-supersession
+  title: Superseded failed shell members stop blocking family waits
+  depends_on: []
+  size: medium
+  description: 'wait-supersession: classify monitor/gate shell members on ArtifactCandidate
+    and exclude a terminal-failed, follow-up-less shell member from the family''s
+    effective generation when a newer same-kind shell member exists in the same generation,
+    with reproduction tests for the sase-zt.6.5.3 incident.'
+- id: monitor-start-claim
+  title: Monitor start stops minting doomed members and stealing live claims
+  depends_on: []
+  size: medium
+  description: 'monitor-start-claim: pre-flight the lane workspace claim before create_monitor_member
+    so a doomed start raises without creating a family member, resolve stale transfer
+    pids by adopting only dead holders'' claim rows (never transferring away from
+    a live process), and make no-op releases record truthfully.'
+- id: terminal-block-notify
+  title: Surface permanently blocked waiters instead of only logging
+  depends_on: []
+  size: small
+  description: 'terminal-block-notify: have the wait_checks chop upsert one deduplicated
+    inbox notification per terminally-blocked waiter naming the blocker and actionable
+    guidance.'
 proposed_by: bbugyi200.kellys_mbp.0i.f0
 create_time: 2026-09-13 21:53:01
 status: wip
+bead_id: sase-10j
 ---
 
-- **PROMPT:**
-  [prompts/202609/failed_monitor_blocks_family_wait.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/failed_monitor_blocks_family_wait.md)
+- **PROMPT:** [prompts/202609/failed_monitor_blocks_family_wait.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/failed_monitor_blocks_family_wait.md)
+- **BEAD:** [sase-10j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10j/README.md)
 
 # Failed monitor member permanently blocks family wait resolution
 
