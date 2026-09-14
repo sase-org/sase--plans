@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Sudo manifest contracts and TTY-attached runner in sase-core
-goal: Ship hash-bound sudo wires, an unprivileged TTY runner, Python/wheel plumbing,
-  and deny-only remote approval enforcement for sase-110.1.
+goal:
+  Ship hash-bound sudo wires, an unprivileged TTY runner, Python/wheel plumbing, and
+  deny-only remote approval enforcement for sase-110.1.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.1
 bead: sase-110.1
@@ -13,6 +14,11 @@ status: done
   [202609/agent_sudo_requests.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_sudo_requests.md)
 - **BEAD:**
   [sase-110.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-110/sase-110.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-110.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-110.1.md)
+- **COMMITS:**
+  - [ab68522](https://github.com/sase-org/sase-core/commit/ab68522ac465d11544d48d6881ad1ea0c9f372d3)
+    — feat(sudo): add reviewed sudo runner contracts
 
 # Sudo Manifest Contracts And TTY-Attached Runner In `sase-core`
 
