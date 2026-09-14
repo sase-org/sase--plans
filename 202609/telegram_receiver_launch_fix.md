@@ -13,10 +13,10 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1x.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cld/README.md)
+  - [bbugyi200.athena.0kp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kp.md)
 - **COMMITS:**
-  - [b55a005](https://github.com/sase-org/sase--research/commit/b55a005123d9bd02d918e47a7746f85399e08c87)
-    — docs(research): critique AXE/ACE/lumberjack/chop rename proposal (researcher B)
+  - [8586f91](https://github.com/sase-org/sase-telegram/commit/8586f9159ef4577c795e8f3f386879f709e56d11)
+    — fix(receiver): anchor telegram proc executables
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
