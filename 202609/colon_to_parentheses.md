@@ -12,11 +12,14 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.0kg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kg.md)
   - [bbugyi200.athena.sase-10w.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.1/README.md)
+  - [bbugyi200.athena.sase-10w.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.4/README.md)
 - **COMMITS:**
   - [f86056c](https://github.com/sase-org/sase/commit/f86056c7fd08d94f6dcf0ce2ac094249fc9f54ea)
     — feat(ace): convert argument colons when typing parens
   - [5024571](https://github.com/sase-org/sase/commit/5024571a3254393d56c2c9d5cf45fac996d18128)
     — fix(monitor): repair store_lane and monitor __init__ imports
+  - [526df13](https://github.com/sase-org/sase/commit/526df13e48b81e8128b37552e76233e362d75775)
+    — fix(scope): recalibrate scoped lane budget
 
 # Switch an invocation's colon arguments to parentheses while typing
 
