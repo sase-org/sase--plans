@@ -1,13 +1,27 @@
 ---
 tier: tale
 title: Fix sase repo open tier-1 resolution for display-named projects
-goal: sase repo open resolves sidecar, linked, and primary repos again in projects
-  whose display name differs from their canonical project key, and the unknown-repo
-  error lists the real repo names.
+goal:
+  sase repo open resolves sidecar, linked, and primary repos again in projects whose
+  display name differs from their canonical project key, and the unknown-repo error
+  lists the real repo names.
 size: small
 proposed_by: bbugyi200.kellys_mbp.0g
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.kellys_mbp.0g](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.kellys_mbp.0g.md)
+  - [bbugyi200.kellys_mbp.sase-10j.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.sase-10j.1/README.md)
+  - [bbugyi200.kellys_mbp.sase-10r.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.kellys_mbp.sase-10r.3/README.md)
+- **COMMITS:**
+  - [e57d76c](https://github.com/sase-org/sase/commit/e57d76c79bf2184cd463520c0e0dc19c6fe2e82e)
+    — fix(repo): resolve display-named repo opens
+  - [3d74d69](https://github.com/sase-org/sase/commit/3d74d690a2f55474ea8c297da9db67d9dca4f744)
+    — fix(wait-dependency): stop superseded failed shell members from blocking family
+    waits
+  - [df5fbba](https://github.com/sase-org/sase/commit/df5fbbaccf07646c34dfcf75eb3bd74f30ef4d71)
+    — fix(test): reap sibling pytest scratch roots
 
 # Fix `sase repo open` Tier-1 Resolution For Display-Named Projects
 
