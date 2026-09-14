@@ -12,6 +12,8 @@ status: done
 - **AGENTS:**
   - [bbugyi200.athena.0kg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kg.md)
   - [bbugyi200.athena.sase-10w.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.1/README.md)
+  - [bbugyi200.athena.sase-10w.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.2/README.md)
+  - [bbugyi200.athena.sase-10w.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.3/README.md)
   - [bbugyi200.athena.sase-10w.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.4/README.md)
 - **COMMITS:**
   - [f86056c](https://github.com/sase-org/sase/commit/f86056c7fd08d94f6dcf0ce2ac094249fc9f54ea)
@@ -20,6 +22,11 @@ status: done
     — fix(monitor): repair store_lane and monitor __init__ imports
   - [526df13](https://github.com/sase-org/sase/commit/526df13e48b81e8128b37552e76233e362d75775)
     — fix(scope): recalibrate scoped lane budget
+  - [d0a849d](https://github.com/sase-org/sase/commit/d0a849df74be36f030ec392f30e159b54a65cb36)
+    — test(ace): rebaseline drifted ACE PNG goldens and fix shell-label squeeze
+    truncation
+  - [cc91c0a](https://github.com/sase-org/sase/commit/cc91c0aa435c225402a4598dc6adf998ef257510)
+    — test: make git identity hermetic in tests
 
 # Switch an invocation's colon arguments to parentheses while typing
 
