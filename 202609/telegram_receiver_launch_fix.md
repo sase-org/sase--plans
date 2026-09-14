@@ -14,15 +14,10 @@ status: done
 
 - **AGENTS:**
   - [bbugyi200.athena.0kp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kp.md)
-  - [bbugyi200.athena.0kr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kr.md)
-  - [bbugyi200.athena.0kv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kv.md)
+  - [bbugyi200.athena.sase-112.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-112.1/README.md)
 - **COMMITS:**
-  - [8586f91](https://github.com/sase-org/sase-telegram/commit/8586f9159ef4577c795e8f3f386879f709e56d11)
-    — fix(receiver): anchor telegram proc executables
-  - [b547425](https://github.com/sase-org/sase-telegram/commit/b547425f7277957c452cc0f07b9eedbb469c58ff)
-    — test(gates): cover sudo generic form
-  - [0ec0562](https://github.com/sase-org/sase-telegram/commit/0ec0562cde439741a11c3fcd0099569121579d95)
-    — test: isolate sudo gate flag override from env
+  - [f692235](https://github.com/sase-org/sase/commit/f692235fc3c0fe2161bc1ef5e92699b9d567d89f)
+    — fix(sdd): merge plan provenance entries additively
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
