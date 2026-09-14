@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Give documentation-refresh agents a valid run-alone queue budget
-goal:
-  Every configured refresh_docs proposal uses %queue(capacity=1) while preserving its
-  existing scope and dependency chain.
+goal: Every configured refresh_docs proposal uses %queue(capacity=1) while preserving
+  its existing scope and dependency chain.
 size: small
 proposed_by: bbugyi200.athena.cm
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.sase-zt.6.5.4.land](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zt.6.5.4.land/README.md)
-- **COMMITS:**
-  - [23583cb](https://github.com/sase-org/sase--plans/commit/23583cb1268a3b773b9d5d9c5af4cfb5ad10e518)
-    — chore(plans): mark queue-capacity epic chain plans done
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
