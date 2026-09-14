@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Restore epic-launch zero-weight supervision
-goal: Epic approval supervision starts immediately without consuming weighted runner
+goal:
+  Epic approval supervision starts immediately without consuming weighted runner
   capacity, while ordinary monitors keep their existing inherited claims.
 size: medium
 proposed_by: bbugyi200.athena.sase-10h.land
@@ -13,6 +14,11 @@ status: done
   [202609/gate_admission_never_blocks_approval.md](https://github.com/sase-org/sase--plans/blob/main/202609/gate_admission_never_blocks_approval.md)
 - **BEAD:**
   [sase-10h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10h/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-10h.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-10h.land.md)
+- **COMMITS:**
+  - [3f1ca28](https://github.com/sase-org/sase-core/commit/3f1ca286e53b7e702c92f8a9662dcd77c3777e9d)
+    — fix(fleet_contract): accept explicit zero queue weight in scan and validation
 
 # Restore The Missing Epic-Launch Zero-Weight Monitor Work
 
