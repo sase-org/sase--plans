@@ -10,10 +10,13 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.research.1w.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.cdx/README.md)
   - [bbugyi200.athena.research.1w.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.cld/README.md)
 - **COMMITS:**
   - [fd31339](https://github.com/sase-org/sase--research/commit/fd31339f7d24160ee80d2f3f0fdb35b5beba2c12)
     — docs(research): add researcher B report on agent-requested sudo password prompts
+  - [a42c51a](https://github.com/sase-org/sase--research/commit/a42c51a12656177c2bda737ec1bf4ea86583cac6)
+    — docs(research): analyze secure sudo agent requests
 
 # Reliable scheduled task-status hooks on the Mac
 
