@@ -14,6 +14,7 @@ status: done
   - [bbugyi200.athena.0kf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kf.md)
   - [bbugyi200.athena.chop.refresh_docs.sase.0_289632.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.chop.refresh_docs.sase.0_289632.1/README.md)
   - [bbugyi200.athena.chop.refresh_docs.sase.0_289632.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.chop.refresh_docs.sase.0_289632.2/README.md)
+  - [bbugyi200.athena.toobig-5d.test_agent_wait_resume.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-5d.test_agent_wait_resume.0.md)
 - **COMMITS:**
   - [a59ded7](https://github.com/sase-org/sase/commit/a59ded7669c59b7e80fc5d1794ff6e15f7e26c93)
     — feat(ace,pager): open agent metadata in the pager with V
@@ -21,6 +22,8 @@ status: done
     — docs(agents): clarify fleet capacity and recovered waits
   - [fd30496](https://github.com/sase-org/sase/commit/fd30496f76baacdf73776879c4c1d9017869c31c)
     — docs(agents): tighten fleet capacity and shell-retry wait wording
+  - [e87a5b4](https://github.com/sase-org/sase/commit/e87a5b459528ecc3a3dfc039e5c117b48ee1beb1)
+    — test(ace): split test_agent_wait_resume.py into focused files
 
 # `V` on the Agents tab: open the metadata panel in the pager
 
