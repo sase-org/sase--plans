@@ -1,12 +1,22 @@
 ---
 tier: tale
 title: Switch colon arguments to parentheses while typing
-goal: Typing an opening parenthesis after an invocation's argument colon removes the
-  colon in ACE and supported LSP editors while preserving pairing and cursor behavior.
+goal:
+  Typing an opening parenthesis after an invocation's argument colon removes the colon
+  in ACE and supported LSP editors while preserving pairing and cursor behavior.
 size: medium
 proposed_by: bbugyi200.athena.0kg
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kg](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kg.md)
+  - [bbugyi200.athena.sase-10w.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10w.1/README.md)
+- **COMMITS:**
+  - [f86056c](https://github.com/sase-org/sase/commit/f86056c7fd08d94f6dcf0ce2ac094249fc9f54ea)
+    — feat(ace): convert argument colons when typing parens
+  - [5024571](https://github.com/sase-org/sase/commit/5024571a3254393d56c2c9d5cf45fac996d18128)
+    — fix(monitor): repair store_lane and monitor __init__ imports
 
 # Switch an invocation's colon arguments to parentheses while typing
 
