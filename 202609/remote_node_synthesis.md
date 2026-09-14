@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Remote fleet rows become family and clan nodes
-goal:
-  Remote serialized rows project into stable local-equivalent family and clan trees
-  without local-only side effects.
+goal: Remote serialized rows project into stable local-equivalent family and clan
+  trees without local-only side effects.
 size: medium
 proposed_by: bbugyi200.apollo.sase-xe.16.11.7.15.2
 bead: sase-xe.16.11.7.15.2
-create_time: 2026-09-13 18:46:19
-status: wip
+status: done
 ---
 
 - **PARENT:**
