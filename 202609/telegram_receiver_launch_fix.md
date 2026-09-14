@@ -1,15 +1,29 @@
 ---
 tier: tale
-title: Fix the Telegram inbound receiver launch failure and escalate repeated re-arm
-  failures
-goal: The supervised Telegram long-poll receiver launches reliably from the proc supervisor
-  regardless of the host services' PATH, and a receiver that cannot launch surfaces
-  a deduped notification instead of silently flooding the proc store while Telegram
+title:
+  Fix the Telegram inbound receiver launch failure and escalate repeated re-arm failures
+goal:
+  The supervised Telegram long-poll receiver launches reliably from the proc supervisor
+  regardless of the host services' PATH, and a receiver that cannot launch surfaces a
+  deduped notification instead of silently flooding the proc store while Telegram
   approvals go dead.
 size: medium
 proposed_by: bbugyi200.athena.0kp
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kp.md)
+  - [bbugyi200.athena.sase-112.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-112.1/README.md)
+  - [bbugyi200.athena.sase-112.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-112.2/README.md)
+  - [bbugyi200.athena.sase-112.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-112.3/README.md)
+- **COMMITS:**
+  - [2e0dd5e](https://github.com/sase-org/sase/commit/2e0dd5ee46fe4b8ef583e2c6a2c901c3652a8685)
+    — fix(commit): stop stale plan attribution
+  - [b3c99b0](https://github.com/sase-org/sase/commit/b3c99b0b747a9dc80fab0d302fc9ebdeda8c87fd)
+    — fix(sdd): resolve generated plan header conflicts
+  - [f692235](https://github.com/sase-org/sase/commit/f692235fc3c0fe2161bc1ef5e92699b9d567d89f)
+    — fix(sdd): merge plan provenance entries additively
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
