@@ -1,26 +1,16 @@
 ---
 tier: tale
-title:
-  Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure age
-goal:
-  "The sase-10r.2 behavior that never landed actually ships: a launched agent runner
-  removes its own per-launch cargo-targets and agent-tmp directories at exit when no
-  live process still uses them, the Rust-owned managed-tmp pressure pass uses a 1h
-  minimum age whenever the free-space floor is breached, and the sase-10r epic is closed
-  with honest bead records."
+title: Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure
+  age
+goal: 'The sase-10r.2 behavior that never landed actually ships: a launched agent
+  runner removes its own per-launch cargo-targets and agent-tmp directories at exit
+  when no live process still uses them, the Rust-owned managed-tmp pressure pass uses
+  a 1h minimum age whenever the free-space floor is breached, and the sase-10r epic
+  is closed with honest bead records.'
 size: medium
 proposed_by: bbugyi200.athena.0kk
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0kk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kk.md)
-  - [bbugyi200.athena.sase-110.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-110.5/README.md)
-- **COMMITS:**
-  - [59dde52](https://github.com/sase-org/sase/commit/59dde523c37cbc0d629cdab41e82d89c986cdccb)
-    — feat(axe): clean launch scratch on runner exit
-  - [378f18b](https://github.com/sase-org/sase/commit/378f18b2ef0ccb6b12a91408ddf9adb80fa8511e)
-    — feat(skills): add reviewed sudo request guidance
 
 # Finish the sase-10r epic: land the missing sase-10r.2 work, then close the epic
 
