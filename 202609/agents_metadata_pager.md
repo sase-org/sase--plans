@@ -1,13 +1,32 @@
 ---
 tier: tale
 title: Open the Agents-tab metadata panel in the pager with V
-goal: Pressing V on any local Agents-tab row (running or done) opens that agent's
-  metadata as a beautiful sectioned pager document with agent-aware links, agent chrome,
-  and a live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
+goal:
+  Pressing V on any local Agents-tab row (running or done) opens that agent's metadata
+  as a beautiful sectioned pager document with agent-aware links, agent chrome, and a
+  live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
 size: medium
 proposed_by: bbugyi200.athena.0kf
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kf](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kf.md)
+  - [bbugyi200.athena.chop.refresh_docs.sase.0_289632.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.chop.refresh_docs.sase.0_289632.1/README.md)
+  - [bbugyi200.athena.chop.refresh_docs.sase.0_289632.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.chop.refresh_docs.sase.0_289632.2/README.md)
+  - [bbugyi200.athena.toobig-5d.test_agent_wait_resume.0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.toobig-5d.test_agent_wait_resume.0.md)
+  - [bbugyi200.athena.toobig-5d.test_prompt_panel_section_navigation_targets.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5d.test_prompt_panel_section_navigation_targets.0/README.md)
+- **COMMITS:**
+  - [a59ded7](https://github.com/sase-org/sase/commit/a59ded7669c59b7e80fc5d1794ff6e15f7e26c93)
+    — feat(ace,pager): open agent metadata in the pager with V
+  - [aecb02d](https://github.com/sase-org/sase/commit/aecb02db26d979e6d64bed8acfa552fc2f84900c)
+    — docs(agents): clarify fleet capacity and recovered waits
+  - [fd30496](https://github.com/sase-org/sase/commit/fd30496f76baacdf73776879c4c1d9017869c31c)
+    — docs(agents): tighten fleet capacity and shell-retry wait wording
+  - [e87a5b4](https://github.com/sase-org/sase/commit/e87a5b459528ecc3a3dfc039e5c117b48ee1beb1)
+    — test(ace): split test_agent_wait_resume.py into focused files
+  - [5d26cff](https://github.com/sase-org/sase/commit/5d26cff74615ca25be6025973bb856fa798187e8)
+    — test(ace): split prompt panel navigation target tests
 
 # `V` on the Agents tab: open the metadata panel in the pager
 
