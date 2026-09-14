@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: ACE sudo review and terminal authentication handoff
-goal:
-  Typed sudo requests can be reviewed command by command in ACE and executed through a
-  credential-free terminal handoff with accurate status and failure recovery.
+goal: Typed sudo requests can be reviewed command by command in ACE and executed through
+  a credential-free terminal handoff with accurate status and failure recovery.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.4
 bead: sase-110.4
-create_time: 2026-09-14 14:10:10
-status: wip
+status: done
 ---
 
 - **PARENT:**
