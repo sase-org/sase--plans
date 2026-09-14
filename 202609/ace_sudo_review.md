@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: ACE sudo review and terminal authentication handoff
-goal: Typed sudo requests can be reviewed command by command in ACE and executed through
-  a credential-free terminal handoff with accurate status and failure recovery.
+goal:
+  Typed sudo requests can be reviewed command by command in ACE and executed through a
+  credential-free terminal handoff with accurate status and failure recovery.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.4
 bead: sase-110.4
@@ -13,6 +14,11 @@ status: done
   [202609/agent_sudo_requests.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_sudo_requests.md)
 - **BEAD:**
   [sase-110.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-110/sase-110.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-110.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-110.4.md)
+- **COMMITS:**
+  - [bfd22d8](https://github.com/sase-org/sase/commit/bfd22d8df3f168ac232ec428ca83944d5d650b5a)
+    — feat(sudo): add ACE review terminal handoff
 
 # ACE sudo review and terminal authentication handoff
 
