@@ -1,74 +1,70 @@
 ---
 tier: epic
 title: Green CI, a fed selector, and the v0.17.2 release
-goal: "Master Gate and Full CI pass on the master tip, the diff-scoped test lane stops
+goal: 'Master Gate and Full CI pass on the master tip, the diff-scoped test lane stops
   escalating on stale coverage baselines so `just check` gets fast again, and sase
   v0.17.2 reaches PyPI through the ci_watch-owned release path.
 
-  "
+  '
 phases:
-  - id: red-lane-fixes
-    title: Fix the deterministic red-lane test failures at master tip
-    depends_on: []
-    size: medium
-    description:
-      "red-lane-fixes: repair the stale Justfile-lint assertion, the
-      require_rust_binding literal-scan violations in managed_tmp_reaper, and any Master
-      Gate / Full CI test failure still deterministic at the worker's HEAD, coordinating
-      with the active epics that own those domains."
-  - id: hermetic-git-identity
-    title: Test-owned git identity for every test-created repository
-    depends_on: []
-    size: medium
-    description:
-      "hermetic-git-identity: export a fixture-owned git config and author/committer
-      identity for the whole suite plus a redirected-HOME guard test, so the CI 'Author
-      identity unknown' class can never silently return."
-  - id: visual-goldens
-    title: Rebaseline the drifted ACE PNG goldens
-    depends_on:
-      - red-lane-fixes
-    size: medium
-    description:
-      "visual-goldens: re-run the visual suite, audit each mismatching golden against
-      the landed UI commits that changed it, and accept only intentional pixel changes."
-  - id: budget-recalibration
-    title: Re-derive the scoped lane's serial-budget crossover from current evidence
-    depends_on: []
-    size: small
-    description:
-      "budget-recalibration: measure the governed full lane's current wall clock at the
-      worker widths agents actually get, and update or deliberately confirm the 232 s
-      crossover constant with recorded provenance."
-  - id: green-ci-and-baseline
-    title: Observe green CI and feed the selector a fresh baseline
-    depends_on:
-      - red-lane-fixes
-      - hermetic-git-identity
-      - visual-goldens
-      - budget-recalibration
-    size: medium
-    description:
-      "green-ci-and-baseline: watch Master Gate go green on the tip, dispatch and watch
-      a fully green Full CI whose coverage-contexts job uploads a .coverage baseline,
-      then install that baseline locally and verify the scoped lane consults it instead
-      of depth-boosting."
-  - id: release-v0-17-2
-    title: Ship sase v0.17.2 to PyPI through ci_watch
-    depends_on:
-      - green-ci-and-baseline
-    size: small
-    description:
-      "release-v0-17-2: verify ci_watch submits release PR #299 once its gating
-      conditions clear (never hand-merge), watch the Publish workflow create tag v0.17.2
-      and upload to PyPI, and prove the published package installs."
+- id: red-lane-fixes
+  title: Fix the deterministic red-lane test failures at master tip
+  depends_on: []
+  size: medium
+  description: 'red-lane-fixes: repair the stale Justfile-lint assertion, the require_rust_binding
+    literal-scan violations in managed_tmp_reaper, and any Master Gate / Full CI test
+    failure still deterministic at the worker''s HEAD, coordinating with the active
+    epics that own those domains.'
+- id: hermetic-git-identity
+  title: Test-owned git identity for every test-created repository
+  depends_on: []
+  size: medium
+  description: 'hermetic-git-identity: export a fixture-owned git config and author/committer
+    identity for the whole suite plus a redirected-HOME guard test, so the CI ''Author
+    identity unknown'' class can never silently return.'
+- id: visual-goldens
+  title: Rebaseline the drifted ACE PNG goldens
+  depends_on:
+  - red-lane-fixes
+  size: medium
+  description: 'visual-goldens: re-run the visual suite, audit each mismatching golden
+    against the landed UI commits that changed it, and accept only intentional pixel
+    changes.'
+- id: budget-recalibration
+  title: Re-derive the scoped lane's serial-budget crossover from current evidence
+  depends_on: []
+  size: small
+  description: 'budget-recalibration: measure the governed full lane''s current wall
+    clock at the worker widths agents actually get, and update or deliberately confirm
+    the 232 s crossover constant with recorded provenance.'
+- id: green-ci-and-baseline
+  title: Observe green CI and feed the selector a fresh baseline
+  depends_on:
+  - red-lane-fixes
+  - hermetic-git-identity
+  - visual-goldens
+  - budget-recalibration
+  size: medium
+  description: 'green-ci-and-baseline: watch Master Gate go green on the tip, dispatch
+    and watch a fully green Full CI whose coverage-contexts job uploads a .coverage
+    baseline, then install that baseline locally and verify the scoped lane consults
+    it instead of depth-boosting.'
+- id: release-v0-17-2
+  title: Ship sase v0.17.2 to PyPI through ci_watch
+  depends_on:
+  - green-ci-and-baseline
+  size: small
+  description: 'release-v0-17-2: verify ci_watch submits release PR #299 once its
+    gating conditions clear (never hand-merge), watch the Publish workflow create
+    tag v0.17.2 and upload to PyPI, and prove the published package installs.'
 proposed_by: bbugyi200.athena.0kh
 create_time: 2026-09-14 09:06:43
 status: wip
+bead_id: sase-10w
 ---
 
-- **PROMPT:**
-  [prompts/202609/green_ci_fast_lane_v0_17_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/green_ci_fast_lane_v0_17_2.md)
+- **PROMPT:** [prompts/202609/green_ci_fast_lane_v0_17_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/green_ci_fast_lane_v0_17_2.md)
+- **BEAD:** [sase-10w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10w/README.md)
 
 # Plan: Green CI, a fed selector, and the v0.17.2 release
 
