@@ -1,12 +1,23 @@
 ---
 tier: tale
 title: Give documentation-refresh agents a valid run-alone queue budget
-goal: Every configured refresh_docs proposal uses %queue(capacity=1) while preserving
-  its existing scope and dependency chain.
+goal:
+  Every configured refresh_docs proposal uses %queue(capacity=1) while preserving its
+  existing scope and dependency chain.
 size: small
 proposed_by: bbugyi200.athena.cm
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.cm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cm.md)
+  - [bbugyi200.athena.sase-10h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.2/README.md)
+  - [bbugyi200.athena.toobig-5c.loading_disk.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.loading_disk.0/README.md)
+- **COMMITS:**
+  - [78570c0](https://github.com/sase-org/sase/commit/78570c06110f05075acf44ac3d1cc847ee0caa1d)
+    — fix(gate-shell): do not block gate execution on runner capacity
+  - [5a280bd](https://github.com/sase-org/sase/commit/5a280bddbce83dcb65209c0a0c171150b0732064)
+    — refactor(tui): split agent disk loading module
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
