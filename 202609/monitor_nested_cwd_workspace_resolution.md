@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Fix monitor workspace resolution for cwds nested inside managed checkouts
-goal:
-  "A monitor started from a directory nested inside a managed workspace checkout (e.g.
-  an opened external repo clone) keeps its workspace identity, inherits the lane
-  workspace claim, and its follow-up relaunches in that workspace instead of degrading
-  to workspace #0."
+goal: 'A monitor started from a directory nested inside a managed workspace checkout
+  (e.g. an opened external repo clone) keeps its workspace identity, inherits the
+  lane workspace claim, and its follow-up relaunches in that workspace instead of
+  degrading to workspace #0.'
 size: medium
 proposed_by: bbugyi200.apollo.x
-create_time: 2026-09-13 21:02:58
-status: wip
+status: done
 ---
 
 # Fix Monitor Workspace Resolution For Cwds Nested Inside Managed Checkouts
