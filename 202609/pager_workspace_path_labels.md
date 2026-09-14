@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Collapse workspace parent directories into a quiet ~ws root in pager labels
-goal: Pager labels for files inside managed SASE workspaces render as ~ws/<workspace>/<rest>
+goal:
+  Pager labels for files inside managed SASE workspaces render as ~ws/<workspace>/<rest>
   with a muted root token, so the workspace and file stay visible while every identity,
   copy, edit, and link path stays exact.
 size: medium
 proposed_by: bbugyi200.apollo.y
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.y](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.y.md)
+- **COMMITS:**
+  - [e2d9d64](https://github.com/sase-org/sase/commit/e2d9d64f1a70cb1770d36421f25681c001517fcb)
+    — feat(pager): mute workspace root in trail chrome and titles
 
 # Plan: Collapse Workspace Parent Directories Into A Quiet `~ws` Root
 
