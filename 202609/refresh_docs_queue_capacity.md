@@ -1,12 +1,38 @@
 ---
 tier: tale
 title: Give documentation-refresh agents a valid run-alone queue budget
-goal: Every configured refresh_docs proposal uses %queue(capacity=1) while preserving
-  its existing scope and dependency chain.
+goal:
+  Every configured refresh_docs proposal uses %queue(capacity=1) while preserving its
+  existing scope and dependency chain.
 size: small
 proposed_by: bbugyi200.athena.cm
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.cm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cm.md)
+  - [bbugyi200.athena.sase-10h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.2/README.md)
+  - [bbugyi200.athena.sase-zt.6.5.4.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zt.6.5.4.2/README.md)
+  - [bbugyi200.athena.sase-zt.6.5.4.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-zt.6.5.4.3.md)
+  - [bbugyi200.athena.toobig-5c.commit_repair.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.commit_repair.0/README.md)
+  - [bbugyi200.athena.toobig-5c.continuation_budget.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.continuation_budget.0/README.md)
+  - [bbugyi200.athena.toobig-5c.loading_disk.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.loading_disk.0/README.md)
+  - [bbugyi200.athena.toobig-5c.run_agent_wait_slots.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.run_agent_wait_slots.0/README.md)
+- **COMMITS:**
+  - [78570c0](https://github.com/sase-org/sase/commit/78570c06110f05075acf44ac3d1cc847ee0caa1d)
+    — fix(gate-shell): do not block gate execution on runner capacity
+  - [5a280bd](https://github.com/sase-org/sase/commit/5a280bddbce83dcb65209c0a0c171150b0732064)
+    — refactor(tui): split agent disk loading module
+  - [66a46b8](https://github.com/sase-org/sase/commit/66a46b8cc39312b0a8c347e1b92a1f45af6d661c)
+    — refactor(axe): split run_agent_wait_slots.py into candidate/state modules
+  - [1dd9160](https://github.com/sase-org/sase/commit/1dd9160fdb98c187bbd09abf38f465df4345b0c1)
+    — feat(ace/fleet): restore queue capacity parity for remote fleet agent rows
+  - [4cd297a](https://github.com/sase-org/sase/commit/4cd297ada2cabb839a5a189946575e5e03007d38)
+    — refactor(finalizers): split commit repair helpers
+  - [74d532a](https://github.com/sase-org/sase/commit/74d532a22d8bf76a32a4ac5deaeb6adf81ec8068)
+    — fix(ace,axe,gates): complete drain, remote, and full landing acceptance
+  - [6218d15](https://github.com/sase-org/sase/commit/6218d1585dbe4f7be896b3b08aaefaba644ffe1d)
+    — refactor(llm_provider): split continuation_budget.py into focused modules
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
