@@ -1,15 +1,43 @@
 ---
 tier: tale
-title: Fix the Telegram inbound receiver launch failure and escalate repeated re-arm
-  failures
-goal: The supervised Telegram long-poll receiver launches reliably from the proc supervisor
-  regardless of the host services' PATH, and a receiver that cannot launch surfaces
-  a deduped notification instead of silently flooding the proc store while Telegram
+title:
+  Fix the Telegram inbound receiver launch failure and escalate repeated re-arm failures
+goal:
+  The supervised Telegram long-poll receiver launches reliably from the proc supervisor
+  regardless of the host services' PATH, and a receiver that cannot launch surfaces a
+  deduped notification instead of silently flooding the proc store while Telegram
   approvals go dead.
 size: medium
 proposed_by: bbugyi200.athena.0kp
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ks](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.0ks/README.md)
+  - [bbugyi200.athena.research.1x.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cdx/README.md)
+  - [bbugyi200.athena.research.1x.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cld/README.md)
+  - [bbugyi200.athena.research.1x.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.final/README.md)
+  - [bbugyi200.athena.research.1x.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.image/README.md)
+  - [bbugyi200.athena.research.1y.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1y.cdx/README.md)
+  - [bbugyi200.athena.research.1y.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1y.cld/README.md)
+  - [bbugyi200.athena.research.1y.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1y.final/README.md)
+- **COMMITS:**
+  - [b55a005](https://github.com/sase-org/sase--research/commit/b55a005123d9bd02d918e47a7746f85399e08c87)
+    — docs(research): critique AXE/ACE/lumberjack/chop rename proposal (researcher B)
+  - [5996469](https://github.com/sase-org/sase--research/commit/5996469abb5368b043697eb1e1df534a928f2a22)
+    — docs(research): critique scheduler and TUI terminology
+  - [1ba672c](https://github.com/sase-org/sase--research/commit/1ba672cb54dacd3213ba1857f63e9a602fbd16b3)
+    — docs(research): consolidate scheduler/TUI rename critique
+  - [9372de4](https://github.com/sase-org/sase--research/commit/9372de403000d96307e27d6c84a53956c270347b)
+    — docs(research): evaluate sase tool use cases and UX
+  - [bf26886](https://github.com/sase-org/sase--research/commit/bf268861f938814c5ef1b192f8882fb4e48299d2)
+    — docs(research): add scheduler naming infographic
+  - [9b09aad](https://github.com/sase-org/sase--research/commit/9b09aad349b63cbe03624a02b5339d5795f851ff)
+    — docs(research): add sase tool use-case and UX report (researcher B)
+  - [37dd78e](https://github.com/sase-org/sase--research/commit/37dd78e2a746c8090ce1f68b5b5bab9e59a11efa)
+    — docs(research): reassess scheduler naming and recommend loops
+  - [8f4bbd8](https://github.com/sase-org/sase--research/commit/8f4bbd843f9ffd6262995188f62efd58dc089ec1)
+    — docs(research): consolidate sase tool use-case and UX research
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
