@@ -13,22 +13,13 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.research.1x.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cdx/README.md)
-  - [bbugyi200.athena.research.1x.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cld/README.md)
-  - [bbugyi200.athena.research.1x.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.final/README.md)
-  - [bbugyi200.athena.research.1x.image](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.image/README.md)
-  - [bbugyi200.athena.research.1y.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1y.cdx/README.md)
+  - [bbugyi200.athena.0kp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kp.md)
+  - [bbugyi200.athena.0kr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kr.md)
 - **COMMITS:**
-  - [b55a005](https://github.com/sase-org/sase--research/commit/b55a005123d9bd02d918e47a7746f85399e08c87)
-    — docs(research): critique AXE/ACE/lumberjack/chop rename proposal (researcher B)
-  - [5996469](https://github.com/sase-org/sase--research/commit/5996469abb5368b043697eb1e1df534a928f2a22)
-    — docs(research): critique scheduler and TUI terminology
-  - [1ba672c](https://github.com/sase-org/sase--research/commit/1ba672cb54dacd3213ba1857f63e9a602fbd16b3)
-    — docs(research): consolidate scheduler/TUI rename critique
-  - [9372de4](https://github.com/sase-org/sase--research/commit/9372de403000d96307e27d6c84a53956c270347b)
-    — docs(research): evaluate sase tool use cases and UX
-  - [bf26886](https://github.com/sase-org/sase--research/commit/bf268861f938814c5ef1b192f8882fb4e48299d2)
-    — docs(research): add scheduler naming infographic
+  - [8586f91](https://github.com/sase-org/sase-telegram/commit/8586f9159ef4577c795e8f3f386879f709e56d11)
+    — fix(receiver): anchor telegram proc executables
+  - [b547425](https://github.com/sase-org/sase-telegram/commit/b547425f7277957c452cc0f07b9eedbb469c58ff)
+    — test(gates): cover sudo generic form
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
