@@ -2,76 +2,68 @@
 tier: epic
 parent_bead: sase-zw.8
 title: Finish the remaining disk-retention safety and integration gaps
-goal:
-  Retention refuses incomplete protection evidence, preserves protected paths and Git
-  dependencies, and reports bounded owner results on the correct filesystem.
+goal: Retention refuses incomplete protection evidence, preserves protected paths
+  and Git dependencies, and reports bounded owner results on the correct filesystem.
 phases:
-  - id: scratch
-    title: Share scratch liveness and report every cleanup outcome
-    size: medium
-    depends_on: []
-    description:
-      "scratch: integrate launch-exit cleanup with the Rust scratch owner and expose
-      ordinary-age bytes, failed removals and incomplete liveness checks."
-  - id: procs
-    title: Refuse proc cleanup when durable protection coverage is incomplete
-    size: medium
-    depends_on:
-      - scratch
-    description:
-      "procs: reject missing or malformed proc stores, preserve unreadable trees, and
-      bound scanning while retaining reservation synchronization."
-  - id: runs
-    title: Preserve run protections through deletion and empty-shard cleanup
-    size: medium
-    depends_on:
-      - procs
-    description:
-      "runs: fix symlink-ancestor validation, protect empty referenced runs, refresh
-      protection coverage safely, and expose deduplicated actionable previews."
-  - id: objects
-    title: Apply dependency-preserving repair rules to normal borrower reuse
-    size: medium
-    depends_on:
-      - runs
-    description:
-      "objects: prevent healthy checkout reuse from rewriting alternates without
-      eligibility, source connectivity and rollback guarantees."
-  - id: inventory
-    title: Make inventory bounded and accurate about ownership and coverage
-    size: medium
-    depends_on:
-      - objects
-    description:
-      "inventory: move shared inventory classification to Rust, apply a whole-pass
-      budget, resolve actual owned roots and configured horizons, and account for
-      overlap and incomplete scans."
-  - id: pressure
-    title: Use owner filesystem observations and structured cleanup results
-    size: medium
-    depends_on:
-      - inventory
-    description:
-      "pressure: align doctor, housekeeping and manual cleanup thresholds per filesystem
-      and propagate owner errors, skips and measured bytes to CLI results."
-  - id: acceptance
-    title: Prove the repaired combined tree and refresh host acceptance
-    size: medium
-    depends_on:
-      - pressure
-    description:
-      "acceptance: run installed binding and complete verification, add regression
-      evidence for every landing reproduction, and finish bounded inventory and
-      build-timing acceptance."
+- id: scratch
+  title: Share scratch liveness and report every cleanup outcome
+  size: medium
+  depends_on: []
+  description: 'scratch: integrate launch-exit cleanup with the Rust scratch owner
+    and expose ordinary-age bytes, failed removals and incomplete liveness checks.'
+- id: procs
+  title: Refuse proc cleanup when durable protection coverage is incomplete
+  size: medium
+  depends_on:
+  - scratch
+  description: 'procs: reject missing or malformed proc stores, preserve unreadable
+    trees, and bound scanning while retaining reservation synchronization.'
+- id: runs
+  title: Preserve run protections through deletion and empty-shard cleanup
+  size: medium
+  depends_on:
+  - procs
+  description: 'runs: fix symlink-ancestor validation, protect empty referenced runs,
+    refresh protection coverage safely, and expose deduplicated actionable previews.'
+- id: objects
+  title: Apply dependency-preserving repair rules to normal borrower reuse
+  size: medium
+  depends_on:
+  - runs
+  description: 'objects: prevent healthy checkout reuse from rewriting alternates
+    without eligibility, source connectivity and rollback guarantees.'
+- id: inventory
+  title: Make inventory bounded and accurate about ownership and coverage
+  size: medium
+  depends_on:
+  - objects
+  description: 'inventory: move shared inventory classification to Rust, apply a whole-pass
+    budget, resolve actual owned roots and configured horizons, and account for overlap
+    and incomplete scans.'
+- id: pressure
+  title: Use owner filesystem observations and structured cleanup results
+  size: medium
+  depends_on:
+  - inventory
+  description: 'pressure: align doctor, housekeeping and manual cleanup thresholds
+    per filesystem and propagate owner errors, skips and measured bytes to CLI results.'
+- id: acceptance
+  title: Prove the repaired combined tree and refresh host acceptance
+  size: medium
+  depends_on:
+  - pressure
+  description: 'acceptance: run installed binding and complete verification, add regression
+    evidence for every landing reproduction, and finish bounded inventory and build-timing
+    acceptance.'
 proposed_by: bbugyi200.athena.sase-zw.8.land
 create_time: 2026-09-14 16:48:08
 status: wip
+bead_id: sase-zw.8.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/disk_retention_final_safety.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_retention_final_safety.md)
-- **PARENT:**
-  [202609/disk_footprint_remaining_work.md](https://github.com/sase-org/sase--plans/blob/main/202609/disk_footprint_remaining_work.md)
+- **PROMPT:** [prompts/202609/disk_retention_final_safety.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_retention_final_safety.md)
+- **PARENT:** [202609/disk_footprint_remaining_work.md](https://github.com/sase-org/sase--plans/blob/main/202609/disk_footprint_remaining_work.md)
+- **BEAD:** [sase-zw.8.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zw/sase-zw.8.7.md)
 
 # Finish disk-retention safety before landing sase-zw.8
 
