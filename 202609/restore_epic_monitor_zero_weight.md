@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Restore epic-launch zero-weight supervision
-goal:
-  Epic approval supervision starts immediately without consuming weighted runner
+goal: Epic approval supervision starts immediately without consuming weighted runner
   capacity, while ordinary monitors keep their existing inherited claims.
 size: medium
 proposed_by: bbugyi200.athena.sase-10h.land
 bead: sase-10h
-create_time: 2026-09-14 07:14:33
-status: wip
+status: done
 ---
 
 - **PARENT:**
