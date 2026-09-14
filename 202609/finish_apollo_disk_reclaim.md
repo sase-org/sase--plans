@@ -1,16 +1,23 @@
 ---
 tier: tale
-title: Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure
-  age
-goal: 'The sase-10r.2 behavior that never landed actually ships: a launched agent
-  runner removes its own per-launch cargo-targets and agent-tmp directories at exit
-  when no live process still uses them, the Rust-owned managed-tmp pressure pass uses
-  a 1h minimum age whenever the free-space floor is breached, and the sase-10r epic
-  is closed with honest bead records.'
+title:
+  Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure age
+goal:
+  "The sase-10r.2 behavior that never landed actually ships: a launched agent runner
+  removes its own per-launch cargo-targets and agent-tmp directories at exit when no
+  live process still uses them, the Rust-owned managed-tmp pressure pass uses a 1h
+  minimum age whenever the free-space floor is breached, and the sase-10r epic is closed
+  with honest bead records."
 size: medium
 proposed_by: bbugyi200.athena.0kk
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-110.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-110.5/README.md)
+- **COMMITS:**
+  - [ca9aa21](https://github.com/bbugyi200/dotfiles/commit/ca9aa21d3ff2b558ecd8b422526c87cc2ff0b16a)
+    — feat(claude): deny raw sudo in agent Bash hooks
 
 # Finish the sase-10r epic: land the missing sase-10r.2 work, then close the epic
 
