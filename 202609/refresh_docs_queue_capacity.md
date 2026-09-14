@@ -10,10 +10,11 @@ status: done
 ---
 
 - **AGENTS:**
-  - [bbugyi200.athena.sase-10h.1](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.1/README.md)
+  - [bbugyi200.athena.cm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cm.md)
+  - [bbugyi200.athena.sase-10h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.2/README.md)
 - **COMMITS:**
-  - [e3e926f](https://github.com/sase-org/sase-core/commit/e3e926f7f544aa6698f4493ded815d4a3c3c3ff2)
-    — feat(runner_capacity): accept explicit zero-weight capacity records
+  - [78570c0](https://github.com/sase-org/sase/commit/78570c06110f05075acf44ac3d1cc847ee0caa1d)
+    — fix(gate-shell): do not block gate execution on runner capacity
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
