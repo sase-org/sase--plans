@@ -1,45 +1,43 @@
 ---
 tier: epic
 title: Reclaim apollo root disk and stop SASE build scratch from refilling it
-goal: "apollo's root filesystem regains roughly 100G of free space without disturbing
+goal: 'apollo''s root filesystem regains roughly 100G of free space without disturbing
   running agents, and per-launch cargo targets plus per-checkout pytest scratch are
   reclaimed automatically so the disk does not refill.
 
-  "
+  '
 phases:
-  - id: apollo-emergency-reclaim
-    title: Emergency reclaim on apollo
-    depends_on: []
-    size: small
-    description:
-      "apollo-emergency-reclaim: over ssh with no repo changes, delete finished agents'
-      cargo targets, stale zorg target dirs, trashed pre-cutover SASE trees, stale
-      pytest scratch, and legacy cargo strays, with liveness guards and before/after df
-      accounting."
-  - id: agent-scratch-exit-cleanup
-    title: Runner-exit scratch cleanup and low-free-space pressure reaping
-    depends_on: []
-    size: medium
-    description:
-      "agent-scratch-exit-cleanup: remove the runner's launch-assigned cargo-targets and
-      agent-tmp directories at exit, and use a 1h pressure min age whenever the
-      free-space floor is breached regardless of which pressure trigger fired, with
-      tests."
-  - id: pytest-scratch-sibling-reap
-    title: Reap sibling pytest scratch roots
-    depends_on: []
-    size: small
-    description:
-      "pytest-scratch-sibling-reap: make tools/run_pytest also reap stale runs in other
-      /var/tmp/sase-<sha8> roots owned by the user and remove empty stale roots, with
-      tests."
+- id: apollo-emergency-reclaim
+  title: Emergency reclaim on apollo
+  depends_on: []
+  size: small
+  description: 'apollo-emergency-reclaim: over ssh with no repo changes, delete finished
+    agents'' cargo targets, stale zorg target dirs, trashed pre-cutover SASE trees,
+    stale pytest scratch, and legacy cargo strays, with liveness guards and before/after
+    df accounting.'
+- id: agent-scratch-exit-cleanup
+  title: Runner-exit scratch cleanup and low-free-space pressure reaping
+  depends_on: []
+  size: medium
+  description: 'agent-scratch-exit-cleanup: remove the runner''s launch-assigned cargo-targets
+    and agent-tmp directories at exit, and use a 1h pressure min age whenever the
+    free-space floor is breached regardless of which pressure trigger fired, with
+    tests.'
+- id: pytest-scratch-sibling-reap
+  title: Reap sibling pytest scratch roots
+  depends_on: []
+  size: small
+  description: 'pytest-scratch-sibling-reap: make tools/run_pytest also reap stale
+    runs in other /var/tmp/sase-<sha8> roots owned by the user and remove empty stale
+    roots, with tests.'
 proposed_by: bbugyi200.kellys_mbp.0l
 create_time: 2026-09-14 06:56:18
 status: wip
+bead_id: sase-10r
 ---
 
-- **PROMPT:**
-  [prompts/202609/apollo_disk_reclaim_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/apollo_disk_reclaim_1.md)
+- **PROMPT:** [prompts/202609/apollo_disk_reclaim_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/apollo_disk_reclaim_1.md)
+- **BEAD:** [sase-10r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-10r/README.md)
 
 # Reclaim apollo's root disk and stop SASE build scratch from refilling it
 
