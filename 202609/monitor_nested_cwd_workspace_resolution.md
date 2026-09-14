@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Fix monitor workspace resolution for cwds nested inside managed checkouts
-goal: 'A monitor started from a directory nested inside a managed workspace checkout
-  (e.g. an opened external repo clone) keeps its workspace identity, inherits the
-  lane workspace claim, and its follow-up relaunches in that workspace instead of
-  degrading to workspace #0.'
+goal:
+  "A monitor started from a directory nested inside a managed workspace checkout (e.g.
+  an opened external repo clone) keeps its workspace identity, inherits the lane
+  workspace claim, and its follow-up relaunches in that workspace instead of degrading
+  to workspace #0."
 size: medium
 proposed_by: bbugyi200.apollo.x
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-zr.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.sase-zr.2/README.md)
+- **COMMITS:**
+  - [809f45e](https://github.com/sase-org/sase-core/commit/809f45ed26a656d8fb8152afb1f077dd6070f022)
+    — feat(gate_decision): add durable decision-acceptance policy and binding
 
 # Fix Monitor Workspace Resolution For Cwds Nested Inside Managed Checkouts
 
