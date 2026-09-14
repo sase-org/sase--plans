@@ -13,6 +13,7 @@ status: done
   - [bbugyi200.athena.cm](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.cm.md)
   - [bbugyi200.athena.sase-10h.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-10h.2/README.md)
   - [bbugyi200.athena.sase-zt.6.5.4.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-zt.6.5.4.2/README.md)
+  - [bbugyi200.athena.sase-zt.6.5.4.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-zt.6.5.4.3.md)
   - [bbugyi200.athena.toobig-5c.commit_repair.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.commit_repair.0/README.md)
   - [bbugyi200.athena.toobig-5c.loading_disk.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.loading_disk.0/README.md)
   - [bbugyi200.athena.toobig-5c.run_agent_wait_slots.0](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.toobig-5c.run_agent_wait_slots.0/README.md)
@@ -27,6 +28,8 @@ status: done
     — feat(ace/fleet): restore queue capacity parity for remote fleet agent rows
   - [4cd297a](https://github.com/sase-org/sase/commit/4cd297ada2cabb839a5a189946575e5e03007d38)
     — refactor(finalizers): split commit repair helpers
+  - [74d532a](https://github.com/sase-org/sase/commit/74d532a22d8bf76a32a4ac5deaeb6adf81ec8068)
+    — fix(ace,axe,gates): complete drain, remote, and full landing acceptance
 
 # Plan: Give documentation-refresh agents a valid run-alone queue budget
 
