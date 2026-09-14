@@ -1,106 +1,98 @@
 ---
 tier: epic
 title: Rename the public AXE and ACE interfaces to Schedule and TUI
-goal:
-  Make schedule, routine, job, and tui the consistent public interfaces across SASE
-  while preserving scheduler behavior and existing internal identities.
+goal: Make schedule, routine, job, and tui the consistent public interfaces across
+  SASE while preserving scheduler behavior and existing internal identities.
 phases:
-  - id: cli-contract
-    title: Canonical commands and compatibility contract
-    depends_on: []
-    size: medium
-    description:
-      "cli-contract: implement canonical CLI grammar, a sunset rollout flag, hidden
-      compatibility inputs, help, completion, and lifecycle command forwarding."
-  - id: config-core
-    title: Shared configuration name translation
-    depends_on:
-      - cli-contract
-    size: medium
-    description:
-      "config-core: implement Rust-owned per-layer config normalization, public
-      projections, exact provenance, and migration planning with binding tests."
-  - id: config-surfaces
-    title: Canonical configuration and migration interface
-    depends_on:
-      - config-core
-    size: medium
-    description:
-      "config-surfaces: connect the shared config contract to Python loading, schemas,
-      defaults, config commands, keymaps, and an explicit migration preview/apply
-      command."
-  - id: job-authoring
-    title: Public job script and SDK interfaces
-    depends_on:
-      - config-surfaces
-    size: medium
-    description:
-      "job-authoring: add job-named entrypoints, a thin public SDK facade, environment
-      aliases, and version-aware script context presentation without moving
-      implementation packages."
-  - id: public-records
-    title: Public status, references, and diagnostics
-    depends_on:
-      - job-authoring
-    size: medium
-    description:
-      "public-records: present jobs and routines in status, diagnostics, artifact
-      references, producer metadata, and metrics while preserving stored identities and
-      old wire readers."
-  - id: tui-surfaces
-    title: Schedule tab and TUI terminology
-    depends_on:
-      - config-surfaces
-      - public-records
-    size: medium
-    description:
-      "tui-surfaces: update TUI titles, navigation, editors, help, notifications, and
-      palette behavior, retaining internal widget and action identities and checking
-      visual regressions."
-  - id: integrations
-    title: Plugin and operator-facing integrations
-    depends_on:
-      - cli-contract
-      - config-surfaces
-      - job-authoring
-      - public-records
-      - tui-surfaces
-    size: medium
-    description:
-      "integrations: update maintained plugin interfaces, operator config sources, shell
-      helpers, and generated-completion inputs with a dependency-safe release order."
-  - id: documentation
-    title: Documentation, memory, skills, and current demos
-    depends_on:
-      - integrations
-    size: medium
-    description:
-      "documentation: update maintained documentation and media, glossary and memory
-      sources, generated skill templates, and canonical site routes while preserving
-      history."
-  - id: acceptance
-    title: Combined acceptance and rollout verification
-    depends_on:
-      - cli-contract
-      - config-core
-      - config-surfaces
-      - job-authoring
-      - public-records
-      - tui-surfaces
-      - integrations
-      - documentation
-    size: medium
-    description:
-      "acceptance: audit every public surface, verify both compatibility states and
-      existing state reuse, run combined checks, and record the coordinated rollout
-      procedure."
+- id: cli-contract
+  title: Canonical commands and compatibility contract
+  depends_on: []
+  size: medium
+  description: 'cli-contract: implement canonical CLI grammar, a sunset rollout flag,
+    hidden compatibility inputs, help, completion, and lifecycle command forwarding.'
+- id: config-core
+  title: Shared configuration name translation
+  depends_on:
+  - cli-contract
+  size: medium
+  description: 'config-core: implement Rust-owned per-layer config normalization,
+    public projections, exact provenance, and migration planning with binding tests.'
+- id: config-surfaces
+  title: Canonical configuration and migration interface
+  depends_on:
+  - config-core
+  size: medium
+  description: 'config-surfaces: connect the shared config contract to Python loading,
+    schemas, defaults, config commands, keymaps, and an explicit migration preview/apply
+    command.'
+- id: job-authoring
+  title: Public job script and SDK interfaces
+  depends_on:
+  - config-surfaces
+  size: medium
+  description: 'job-authoring: add job-named entrypoints, a thin public SDK facade,
+    environment aliases, and version-aware script context presentation without moving
+    implementation packages.'
+- id: public-records
+  title: Public status, references, and diagnostics
+  depends_on:
+  - job-authoring
+  size: medium
+  description: 'public-records: present jobs and routines in status, diagnostics,
+    artifact references, producer metadata, and metrics while preserving stored identities
+    and old wire readers.'
+- id: tui-surfaces
+  title: Schedule tab and TUI terminology
+  depends_on:
+  - config-surfaces
+  - public-records
+  size: medium
+  description: 'tui-surfaces: update TUI titles, navigation, editors, help, notifications,
+    and palette behavior, retaining internal widget and action identities and checking
+    visual regressions.'
+- id: integrations
+  title: Plugin and operator-facing integrations
+  depends_on:
+  - cli-contract
+  - config-surfaces
+  - job-authoring
+  - public-records
+  - tui-surfaces
+  size: medium
+  description: 'integrations: update maintained plugin interfaces, operator config
+    sources, shell helpers, and generated-completion inputs with a dependency-safe
+    release order.'
+- id: documentation
+  title: Documentation, memory, skills, and current demos
+  depends_on:
+  - integrations
+  size: medium
+  description: 'documentation: update maintained documentation and media, glossary
+    and memory sources, generated skill templates, and canonical site routes while
+    preserving history.'
+- id: acceptance
+  title: Combined acceptance and rollout verification
+  depends_on:
+  - cli-contract
+  - config-core
+  - config-surfaces
+  - job-authoring
+  - public-records
+  - tui-surfaces
+  - integrations
+  - documentation
+  size: medium
+  description: 'acceptance: audit every public surface, verify both compatibility
+    states and existing state reuse, run combined checks, and record the coordinated
+    rollout procedure.'
 proposed_by: bbugyi200.athena.0kz
 create_time: 2026-09-14 15:33:49
 status: wip
+bead_id: sase-113
 ---
 
-- **PROMPT:**
-  [prompts/202609/schedule_tui_interfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/schedule_tui_interfaces.md)
+- **PROMPT:** [prompts/202609/schedule_tui_interfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/schedule_tui_interfaces.md)
+- **BEAD:** [sase-113](https://github.com/sase-org/sase--beads/blob/main/pages/sase-113/README.md)
 
 # Rename the public AXE and ACE interfaces
 
