@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Reliable scheduled task-status hooks on the Mac
-goal: Recover safely from transient vault contention, retain cron diagnostics in logs,
-  and stagger and verify the Mac's Bob maintenance jobs.
+goal:
+  Recover safely from transient vault contention, retain cron diagnostics in logs, and
+  stagger and verify the Mac's Bob maintenance jobs.
 size: medium
 proposed_by: bbugyi200.athena.0kj
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1w.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.cld/README.md)
+- **COMMITS:**
+  - [fd31339](https://github.com/sase-org/sase--research/commit/fd31339f7d24160ee80d2f3f0fdb35b5beba2c12)
+    — docs(research): add researcher B report on agent-requested sudo password prompts
 
 # Reliable scheduled task-status hooks on the Mac
 
