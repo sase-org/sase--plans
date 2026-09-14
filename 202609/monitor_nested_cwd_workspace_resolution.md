@@ -12,10 +12,14 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.apollo.sase-xe.16.11.7.15.4](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.sase-xe.16.11.7.15.4/README.md)
   - [bbugyi200.apollo.sase-zr.2](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.apollo.sase-zr.2/README.md)
+  - [bbugyi200.apollo.x](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.x.md)
 - **COMMITS:**
-  - [809f45e](https://github.com/sase-org/sase-core/commit/809f45ed26a656d8fb8152afb1f077dd6070f022)
-    — feat(gate_decision): add durable decision-acceptance policy and binding
+  - [c8152f4](https://github.com/sase-org/sase/commit/c8152f4978272b6c6cce30ec9f23470926fff144)
+    — feat(gate-shell): accept gate decisions durably before slow execution
+  - [631e0b5](https://github.com/sase-org/sase/commit/631e0b510d89ce4fdaa224e9cad3b601c8b3b0ee)
+    — chore(core): ratchet sase-core revision pin to published v0.34.25
 
 # Fix Monitor Workspace Resolution For Cwds Nested Inside Managed Checkouts
 
