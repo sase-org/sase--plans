@@ -1,12 +1,26 @@
 ---
 tier: tale
 title: Reliable scheduled task-status hooks on the Mac
-goal: Recover safely from transient vault contention, retain cron diagnostics in logs,
-  and stagger and verify the Mac's Bob maintenance jobs.
+goal:
+  Recover safely from transient vault contention, retain cron diagnostics in logs, and
+  stagger and verify the Mac's Bob maintenance jobs.
 size: medium
 proposed_by: bbugyi200.athena.0kj
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.research.1w.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.cdx/README.md)
+  - [bbugyi200.athena.research.1w.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.cld/README.md)
+  - [bbugyi200.athena.research.1w.final](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1w.final/README.md)
+- **COMMITS:**
+  - [fd31339](https://github.com/sase-org/sase--research/commit/fd31339f7d24160ee80d2f3f0fdb35b5beba2c12)
+    — docs(research): add researcher B report on agent-requested sudo password prompts
+  - [a42c51a](https://github.com/sase-org/sase--research/commit/a42c51a12656177c2bda737ec1bf4ea86583cac6)
+    — docs(research): analyze secure sudo agent requests
+  - [c307083](https://github.com/sase-org/sase--research/commit/c3070837b63b6aee101d88fc1d06da5994356f48)
+    — docs(research): consolidate agent sudo-request research into agent_sudo_requests
+    bundle
 
 # Reliable scheduled task-status hooks on the Mac
 
