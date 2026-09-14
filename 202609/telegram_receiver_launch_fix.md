@@ -1,25 +1,15 @@
 ---
 tier: tale
-title:
-  Fix the Telegram inbound receiver launch failure and escalate repeated re-arm failures
-goal:
-  The supervised Telegram long-poll receiver launches reliably from the proc supervisor
-  regardless of the host services' PATH, and a receiver that cannot launch surfaces a
-  deduped notification instead of silently flooding the proc store while Telegram
+title: Fix the Telegram inbound receiver launch failure and escalate repeated re-arm
+  failures
+goal: The supervised Telegram long-poll receiver launches reliably from the proc supervisor
+  regardless of the host services' PATH, and a receiver that cannot launch surfaces
+  a deduped notification instead of silently flooding the proc store while Telegram
   approvals go dead.
 size: medium
 proposed_by: bbugyi200.athena.0kp
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.research.1x.cdx](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cdx/README.md)
-  - [bbugyi200.athena.research.1x.cld](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.research.1x.cld/README.md)
-- **COMMITS:**
-  - [b55a005](https://github.com/sase-org/sase--research/commit/b55a005123d9bd02d918e47a7746f85399e08c87)
-    — docs(research): critique AXE/ACE/lumberjack/chop rename proposal (researcher B)
-  - [5996469](https://github.com/sase-org/sase--research/commit/5996469abb5368b043697eb1e1df534a928f2a22)
-    — docs(research): critique scheduler and TUI terminology
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
