@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Stop waiting bead workers before reusing their names
-goal:
-  Ensure sase bead work retires every superseded waiting shell before launching a
-  replacement with the same name.
+goal: Ensure sase bead work retires every superseded waiting shell before launching
+  a replacement with the same name.
 size: medium
 proposed_by: bbugyi200.athena.0ko
-create_time: 2026-09-14 12:04:35
-status: wip
+status: done
 ---
 
 # Plan: Stop waiting bead workers before reusing their names
