@@ -1,15 +1,28 @@
 ---
 tier: tale
-title: Fix the Telegram inbound receiver launch failure and escalate repeated re-arm
-  failures
-goal: The supervised Telegram long-poll receiver launches reliably from the proc supervisor
-  regardless of the host services' PATH, and a receiver that cannot launch surfaces
-  a deduped notification instead of silently flooding the proc store while Telegram
+title:
+  Fix the Telegram inbound receiver launch failure and escalate repeated re-arm failures
+goal:
+  The supervised Telegram long-poll receiver launches reliably from the proc supervisor
+  regardless of the host services' PATH, and a receiver that cannot launch surfaces a
+  deduped notification instead of silently flooding the proc store while Telegram
   approvals go dead.
 size: medium
 proposed_by: bbugyi200.athena.0kp
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kp](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kp.md)
+  - [bbugyi200.athena.0kr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kr.md)
+  - [bbugyi200.athena.0kv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kv.md)
+- **COMMITS:**
+  - [8586f91](https://github.com/sase-org/sase-telegram/commit/8586f9159ef4577c795e8f3f386879f709e56d11)
+    — fix(receiver): anchor telegram proc executables
+  - [b547425](https://github.com/sase-org/sase-telegram/commit/b547425f7277957c452cc0f07b9eedbb469c58ff)
+    — test(gates): cover sudo generic form
+  - [0ec0562](https://github.com/sase-org/sase-telegram/commit/0ec0562cde439741a11c3fcd0099569121579d95)
+    — test: isolate sudo gate flag override from env
 
 # Fix The Telegram Inbound Receiver Launch Failure And Escalate Repeated Re-Arm Failures
 
