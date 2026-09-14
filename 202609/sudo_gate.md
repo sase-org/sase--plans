@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Typed sudo gate and CLI front doors
-goal:
-  Agents can request a reviewed privileged command batch and terminal users can safely
-  approve or deny it without SASE ever collecting a credential.
+goal: Agents can request a reviewed privileged command batch and terminal users can
+  safely approve or deny it without SASE ever collecting a credential.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.2
 bead: sase-110.2
-create_time: 2026-09-14 11:43:15
-status: wip
+status: done
 ---
 
 - **PARENT:**
