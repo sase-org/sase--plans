@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Open the Agents-tab metadata panel in the pager with V
-goal:
-  Pressing V on any local Agents-tab row (running or done) opens that agent's metadata
-  as a beautiful sectioned pager document with agent-aware links, agent chrome, and a
-  live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
+goal: Pressing V on any local Agents-tab row (running or done) opens that agent's
+  metadata as a beautiful sectioned pager document with agent-aware links, agent chrome,
+  and a live r-refresh, while V on other tabs keeps opening the Agent Run Log modal.
 size: medium
 proposed_by: bbugyi200.athena.0kf
-create_time: 2026-09-13 21:44:30
-status: wip
+status: done
 ---
 
 # `V` on the Agents tab: open the metadata panel in the pager
