@@ -1,16 +1,23 @@
 ---
 tier: tale
-title: Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure
-  age
-goal: 'The sase-10r.2 behavior that never landed actually ships: a launched agent
-  runner removes its own per-launch cargo-targets and agent-tmp directories at exit
-  when no live process still uses them, the Rust-owned managed-tmp pressure pass uses
-  a 1h minimum age whenever the free-space floor is breached, and the sase-10r epic
-  is closed with honest bead records.'
+title:
+  Finish sase-10r — safe runner-exit scratch cleanup and low-free-space pressure age
+goal:
+  "The sase-10r.2 behavior that never landed actually ships: a launched agent runner
+  removes its own per-launch cargo-targets and agent-tmp directories at exit when no
+  live process still uses them, the Rust-owned managed-tmp pressure pass uses a 1h
+  minimum age whenever the free-space floor is breached, and the sase-10r epic is closed
+  with honest bead records."
 size: medium
 proposed_by: bbugyi200.athena.0kk
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0kk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kk.md)
+- **COMMITS:**
+  - [5ea49f5](https://github.com/sase-org/sase-core/commit/5ea49f5b6199da130f58923cec609d70a775eaa8)
+    — feat(managed-tmp): lower pressure age under low space
 
 # Finish the sase-10r epic: land the missing sase-10r.2 work, then close the epic
 
