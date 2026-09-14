@@ -14,10 +14,16 @@ status: done
 ---
 
 - **AGENTS:**
+  - [bbugyi200.athena.0kk](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0kk.md)
+  - [bbugyi200.athena.sase-110.3](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-110.3/README.md)
   - [bbugyi200.athena.sase-110.5](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-110.5/README.md)
 - **COMMITS:**
-  - [ca9aa21](https://github.com/bbugyi200/dotfiles/commit/ca9aa21d3ff2b558ecd8b422526c87cc2ff0b16a)
-    — feat(claude): deny raw sudo in agent Bash hooks
+  - [59dde52](https://github.com/sase-org/sase/commit/59dde523c37cbc0d629cdab41e82d89c986cdccb)
+    — feat(axe): clean launch scratch on runner exit
+  - [378f18b](https://github.com/sase-org/sase/commit/378f18b2ef0ccb6b12a91408ddf9adb80fa8511e)
+    — feat(skills): add reviewed sudo request guidance
+  - [dd672fd](https://github.com/sase-org/sase/commit/dd672fd6cbd3e5bcf89ae51ea12e77ce62f1228d)
+    — chore(core): ratchet sudo runner core floor
 
 # Finish the sase-10r epic: land the missing sase-10r.2 work, then close the epic
 
