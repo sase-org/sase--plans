@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete remote sudo over SSH terminal handoff
-goal:
-  Machine-targeted and remote-raised sudo requests authenticate on the target host over
-  SSH while headless paths remain deny-only.
+goal: Machine-targeted and remote-raised sudo requests authenticate on the target
+  host over SSH while headless paths remain deny-only.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.6
 bead: sase-110.6
-create_time: 2026-09-15 08:06:25
-status: wip
+status: done
 ---
 
 - **PARENT:**
