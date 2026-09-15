@@ -1,40 +1,38 @@
 ---
 tier: epic
 title: Finish global bead routing contracts and command acceptance
-goal:
-  Full-ID bead routing remains local-first, treats routing and publication failures as
-  terminal, stores owner-correct plan references, and is proven across every existing-ID
+goal: Full-ID bead routing remains local-first, treats routing and publication failures
+  as terminal, stores owner-correct plan references, and is proven across every existing-ID
   command surface before sase-116 lands.
 parent_bead: sase-116
 phases:
-  - id: routing-contract-repairs
-    title: Repair local-first routing and fail-closed owner operations
-    depends_on: []
-    size: medium
-    description:
-      "routing-contract-repairs: make operation routing discover foreign stores only
-      after a real local miss, preserve actionable unavailable-store errors, stop
-      fast-path and apply-status retries against the caller store after routing failure,
-      require routed sidecar mutations to commit and publish successfully, and persist
-      plan references against the selected owner while resolving input paths against the
-      caller."
-  - id: command-acceptance
-    title: Prove every existing-bead command through isolated owner fixtures
-    depends_on:
-      - routing-contract-repairs
-    size: medium
-    description:
-      "command-acceptance: build a public-dispatch matrix for every existing-ID operand
-      and owner-sensitive side effect, reproduce the original deep-ID outside-cwd close,
-      verify mixed-store and unavailable failures leave all stores untouched, and run
-      the combined focused and repository checks."
+- id: routing-contract-repairs
+  title: Repair local-first routing and fail-closed owner operations
+  depends_on: []
+  size: medium
+  description: 'routing-contract-repairs: make operation routing discover foreign
+    stores only after a real local miss, preserve actionable unavailable-store errors,
+    stop fast-path and apply-status retries against the caller store after routing
+    failure, require routed sidecar mutations to commit and publish successfully,
+    and persist plan references against the selected owner while resolving input paths
+    against the caller.'
+- id: command-acceptance
+  title: Prove every existing-bead command through isolated owner fixtures
+  depends_on:
+  - routing-contract-repairs
+  size: medium
+  description: 'command-acceptance: build a public-dispatch matrix for every existing-ID
+    operand and owner-sensitive side effect, reproduce the original deep-ID outside-cwd
+    close, verify mixed-store and unavailable failures leave all stores untouched,
+    and run the combined focused and repository checks.'
 proposed_by: bbugyi200.athena.sase-116.land
 create_time: 2026-09-15 13:51:53
 status: wip
+bead_id: sase-116.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/global_bead_resolution_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/global_bead_resolution_landing_repairs.md)
+- **PROMPT:** [prompts/202609/global_bead_resolution_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/global_bead_resolution_landing_repairs.md)
+- **BEAD:** [sase-116.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-116/sase-116.5.md)
 
 # Finish global bead routing contracts and command acceptance
 
