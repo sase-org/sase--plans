@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete production settlement handoff recovery
-goal:
-  Epic-launch completion notifications survive every monitor settlement and recovery
+goal: Epic-launch completion notifications survive every monitor settlement and recovery
   path while driving exact family-chain TUI convergence once.
 size: medium
 proposed_by: bbugyi200.athena.sase-117.5.land
 bead: sase-117.5
-create_time: 2026-09-15 14:53:20
-status: wip
+status: done
 ---
 
 - **PARENT:**
