@@ -1,72 +1,65 @@
 ---
 tier: epic
 title: Rename public AXE lumberjacks and chops to routines and jobs
-goal:
-  Make routines and jobs the consistent public AXE vocabulary while preserving
+goal: Make routines and jobs the consistent public AXE vocabulary while preserving
   scheduling behavior and existing runtime identities.
 phases:
-  - id: config_contract
-    title: Shared configuration names and compatibility contract
-    depends_on: []
-    description:
-      "config_contract: implement Rust-owned public configuration name translation,
-      exact source provenance, and the contract rollout flag."
-    size: medium
-  - id: job_authoring
-    title: Public job scripts and SDK
-    depends_on:
-      - config_contract
-    description:
-      "job_authoring: add canonical executable, SDK, context, and environment access for
-      job authors without replacing the existing execution engine."
-    size: medium
-  - id: cli_contract
-    title: Commands, structured output, and reference presentation
-    depends_on:
-      - job_authoring
-    description:
-      "cli_contract: expose axe routine and axe job commands, public JSON projections,
-      diagnostics, and job reference spelling while preserving stored identities."
-    size: medium
-  - id: config_tui
-    title: Canonical configuration and AXE presentation
-    depends_on:
-      - cli_contract
-    description:
-      "config_tui: connect public configuration views and editors, update defaults and
-      schema, and rename visible AXE and automation-tribe text."
-    size: medium
-  - id: integrations
-    title: Telegram scripts and maintained operator configuration
-    depends_on:
-      - config_tui
-    description:
-      "integrations: update Telegram public entrypoints and documentation, maintained
-      chezmoi configuration, and generated shell completions."
-    size: medium
-  - id: documentation
-    title: Current documentation, glossary, and visual examples
-    depends_on:
-      - integrations
-    description:
-      "documentation: update maintained guides, executable examples, glossary
-      definitions, and current visual assets to routines and jobs."
-    size: medium
-  - id: acceptance
-    title: Combined contract and upgrade verification
-    depends_on:
-      - documentation
-    description:
-      "acceptance: verify the combined rename, legacy-input compatibility, unchanged AXE
-      behavior, generated outputs, and repository checks."
-    size: medium
+- id: config_contract
+  title: Shared configuration names and compatibility contract
+  depends_on: []
+  description: 'config_contract: implement Rust-owned public configuration name translation,
+    exact source provenance, and the contract rollout flag.'
+  size: medium
+- id: job_authoring
+  title: Public job scripts and SDK
+  depends_on:
+  - config_contract
+  description: 'job_authoring: add canonical executable, SDK, context, and environment
+    access for job authors without replacing the existing execution engine.'
+  size: medium
+- id: cli_contract
+  title: Commands, structured output, and reference presentation
+  depends_on:
+  - job_authoring
+  description: 'cli_contract: expose axe routine and axe job commands, public JSON
+    projections, diagnostics, and job reference spelling while preserving stored identities.'
+  size: medium
+- id: config_tui
+  title: Canonical configuration and AXE presentation
+  depends_on:
+  - cli_contract
+  description: 'config_tui: connect public configuration views and editors, update
+    defaults and schema, and rename visible AXE and automation-tribe text.'
+  size: medium
+- id: integrations
+  title: Telegram scripts and maintained operator configuration
+  depends_on:
+  - config_tui
+  description: 'integrations: update Telegram public entrypoints and documentation,
+    maintained chezmoi configuration, and generated shell completions.'
+  size: medium
+- id: documentation
+  title: Current documentation, glossary, and visual examples
+  depends_on:
+  - integrations
+  description: 'documentation: update maintained guides, executable examples, glossary
+    definitions, and current visual assets to routines and jobs.'
+  size: medium
+- id: acceptance
+  title: Combined contract and upgrade verification
+  depends_on:
+  - documentation
+  description: 'acceptance: verify the combined rename, legacy-input compatibility,
+    unchanged AXE behavior, generated outputs, and repository checks.'
+  size: medium
 proposed_by: bbugyi200.athena.0l8.r0
 create_time: 2026-09-15 15:18:39
 status: wip
+bead_id: sase-11e
 ---
 
-- **PROMPT:**
-  [prompts/202609/axe_routines_jobs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_routines_jobs.md)
+- **PROMPT:** [prompts/202609/axe_routines_jobs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_routines_jobs.md)
+- **BEAD:** [sase-11e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/README.md)
 
 # Rename public AXE lumberjacks and chops to routines and jobs
 
