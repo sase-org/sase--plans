@@ -1,28 +1,26 @@
 ---
 tier: epic
 title: Finish fleet acceptance evidence and phase handoff
-goal:
-  Fresh Athena-to-Apollo evidence is durable and the two acceptance phases explicitly
+goal: Fresh Athena-to-Apollo evidence is durable and the two acceptance phases explicitly
   owned by the fleet ghost-row plan are closed only after every live gate passes.
 parent_bead: sase-xe.16.11.7.16.5
 phases:
-  - id: capture-and-close-live-acceptance
-    title: Capture durable fleet evidence and close the acceptance phases
-    depends_on: []
-    size: medium
-    description:
-      "capture-and-close-live-acceptance: repeat the fresh Athena-to-Apollo fleet proof,
-      register and attach its complete evidence, and normally close the two still-open
-      acceptance phases."
+- id: capture-and-close-live-acceptance
+  title: Capture durable fleet evidence and close the acceptance phases
+  depends_on: []
+  size: medium
+  description: 'capture-and-close-live-acceptance: repeat the fresh Athena-to-Apollo
+    fleet proof, register and attach its complete evidence, and normally close the
+    two still-open acceptance phases.'
 proposed_by: bbugyi200.apollo.sase-xe.16.11.7.16.5.land
 create_time: 2026-09-15 16:01:46
 status: wip
+bead_id: sase-xe.16.11.7.16.5.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_fleet_acceptance_evidence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_fleet_acceptance_evidence.md)
-- **PARENT:**
-  [202609/fleet_ghost_rows_remaining.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_ghost_rows_remaining.md)
+- **PROMPT:** [prompts/202609/finish_fleet_acceptance_evidence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_fleet_acceptance_evidence.md)
+- **PARENT:** [202609/fleet_ghost_rows_remaining.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_ghost_rows_remaining.md)
+- **BEAD:** [sase-xe.16.11.7.16.5.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.16.5.5.md)
 
 # Plan: Finish fleet acceptance evidence and phase handoff
 
