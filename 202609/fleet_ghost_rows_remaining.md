@@ -1,53 +1,49 @@
 ---
 tier: epic
 title: Finish fleet ghost-row read compatibility
-goal:
-  Owner-side fleet presentation, gateway version reporting, and the viewer's
-  invalid-feed diagnostics agree with local behavior, and fresh Athena-to-Apollo
-  acceptance shows no orphan family rows or hidden feed failures.
+goal: Owner-side fleet presentation, gateway version reporting, and the viewer's invalid-feed
+  diagnostics agree with local behavior, and fresh Athena-to-Apollo acceptance shows
+  no orphan family rows or hidden feed failures.
 parent_bead: sase-xe.16.11.7.16
 phases:
-  - id: owner-presentation-parity
-    title: Align owner presentation with local family history
-    depends_on: []
-    size: medium
-    description:
-      "owner-presentation-parity: suppress orphan terminal family members in the shared
-      Rust presentation policy while preserving active and paginated families."
-  - id: gateway-version-contract
-    title: Publish the gateway version in fleet hello
-    depends_on: []
-    size: small
-    description:
-      "gateway-version-contract: add an honest read-compatible gateway service/version
-      identity to the authenticated hello wire and its contract tests."
-  - id: viewer-feed-honesty
-    title: Complete viewer version and feed diagnostics
-    depends_on:
-      - gateway-version-contract
-    size: medium
-    description:
-      "viewer-feed-honesty: consume the real gateway version and preserve reachable
-      invalid/stale-host diagnostics through every projection path."
-  - id: release-live-acceptance
-    title: Adopt the fixes and complete live acceptance
-    depends_on:
-      - owner-presentation-parity
-      - gateway-version-contract
-      - viewer-feed-honesty
-    size: medium
-    description:
-      "release-live-acceptance: release and adopt the Rust changes, redeploy both
-      machines, capture clean live evidence, and complete the reopened acceptance beads."
+- id: owner-presentation-parity
+  title: Align owner presentation with local family history
+  depends_on: []
+  size: medium
+  description: 'owner-presentation-parity: suppress orphan terminal family members
+    in the shared Rust presentation policy while preserving active and paginated families.'
+- id: gateway-version-contract
+  title: Publish the gateway version in fleet hello
+  depends_on: []
+  size: small
+  description: 'gateway-version-contract: add an honest read-compatible gateway service/version
+    identity to the authenticated hello wire and its contract tests.'
+- id: viewer-feed-honesty
+  title: Complete viewer version and feed diagnostics
+  depends_on:
+  - gateway-version-contract
+  size: medium
+  description: 'viewer-feed-honesty: consume the real gateway version and preserve
+    reachable invalid/stale-host diagnostics through every projection path.'
+- id: release-live-acceptance
+  title: Adopt the fixes and complete live acceptance
+  depends_on:
+  - owner-presentation-parity
+  - gateway-version-contract
+  - viewer-feed-honesty
+  size: medium
+  description: 'release-live-acceptance: release and adopt the Rust changes, redeploy
+    both machines, capture clean live evidence, and complete the reopened acceptance
+    beads.'
 proposed_by: bbugyi200.apollo.sase-xe.16.11.7.16.land
 create_time: 2026-09-15 08:35:12
 status: wip
+bead_id: sase-xe.16.11.7.16.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/fleet_ghost_rows_remaining.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_ghost_rows_remaining.md)
-- **PARENT:**
-  [202609/fleet_ghost_rows_readcompat.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_ghost_rows_readcompat.md)
+- **PROMPT:** [prompts/202609/fleet_ghost_rows_remaining.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fleet_ghost_rows_remaining.md)
+- **PARENT:** [202609/fleet_ghost_rows_readcompat.md](https://github.com/sase-org/sase--plans/blob/main/202609/fleet_ghost_rows_readcompat.md)
+- **BEAD:** [sase-xe.16.11.7.16.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-xe/sase-xe.16.11.7.16.5.md)
 
 # Plan: Finish fleet ghost-row read compatibility
 
