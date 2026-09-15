@@ -1,59 +1,56 @@
 ---
 tier: epic
 title: Converge ACE family status with settlement notifications
-goal: "When a family shell settles (e.g. an epic-launch monitor flips EPIC APPROVED to
-  EPIC CREATED), the ACE agents tree converges to the new status within one auto-refresh
-  tick of the settlement notification, through every load path, with no new TUI
-  performance cost.
+goal: 'When a family shell settles (e.g. an epic-launch monitor flips EPIC APPROVED
+  to EPIC CREATED), the ACE agents tree converges to the new status within one auto-refresh
+  tick of the settlement notification, through every load path, with no new TUI performance
+  cost.
 
-  "
+  '
 phases:
-  - id: repro-harness
-    title: Deterministic repro harness
-    depends_on: []
-    size: medium
-    description:
-      "repro-harness: build a sandbox-home pytest harness that replays the recorded
-      stale-family incident step by step through the real loader/merge/apply seams, pins
-      the exact in-session pinning mechanism, and commits xfail tests plus a unit test
-      for the exact-delta queue-loss defect."
-  - id: convergence-fix
-    title: Convergence fix
-    depends_on:
-      - repro-harness
-    size: medium
-    description:
-      "convergence-fix: stop dropping queued exact artifact dirs in fallback state, fix
-      the mechanism Phase 1 pinned in the merge/token-accept/apply path, and turn the
-      harness xfails green under the tui_perf acceptance criteria (no new refresh paths,
-      quiet idle ticks, unchanged j/k p95)."
-  - id: settlement-notify-targeting
-    title: Settlement notification targeting
-    depends_on:
-      - repro-harness
-    size: medium
-    description:
-      "settlement-notify-targeting: carry the settled shell's identity in
-      monitor-settlement and epic-launch notification action_data and resolve those
-      notifications to an exact family-chain artifact-dir delta so the status flip lands
-      on the notification's own tick."
-  - id: incident-verification
-    title: Incident verification
-    depends_on:
-      - convergence-fix
-      - settlement-notify-targeting
-    size: small
-    description:
-      "incident-verification: run the integrated harness green without xfails, confirm
-      quiet-tick and j/k bench guardrails, and replay the live-shaped epic-launch
-      scenario through the watcher-only and notification-only paths."
+- id: repro-harness
+  title: Deterministic repro harness
+  depends_on: []
+  size: medium
+  description: 'repro-harness: build a sandbox-home pytest harness that replays the
+    recorded stale-family incident step by step through the real loader/merge/apply
+    seams, pins the exact in-session pinning mechanism, and commits xfail tests plus
+    a unit test for the exact-delta queue-loss defect.'
+- id: convergence-fix
+  title: Convergence fix
+  depends_on:
+  - repro-harness
+  size: medium
+  description: 'convergence-fix: stop dropping queued exact artifact dirs in fallback
+    state, fix the mechanism Phase 1 pinned in the merge/token-accept/apply path,
+    and turn the harness xfails green under the tui_perf acceptance criteria (no new
+    refresh paths, quiet idle ticks, unchanged j/k p95).'
+- id: settlement-notify-targeting
+  title: Settlement notification targeting
+  depends_on:
+  - repro-harness
+  size: medium
+  description: 'settlement-notify-targeting: carry the settled shell''s identity in
+    monitor-settlement and epic-launch notification action_data and resolve those
+    notifications to an exact family-chain artifact-dir delta so the status flip lands
+    on the notification''s own tick.'
+- id: incident-verification
+  title: Incident verification
+  depends_on:
+  - convergence-fix
+  - settlement-notify-targeting
+  size: small
+  description: 'incident-verification: run the integrated harness green without xfails,
+    confirm quiet-tick and j/k bench guardrails, and replay the live-shaped epic-launch
+    scenario through the watcher-only and notification-only paths.'
 proposed_by: bbugyi200.athena.0l7
 create_time: 2026-09-15 09:49:36
 status: wip
+bead_id: sase-117
 ---
 
-- **PROMPT:**
-  [prompts/202609/ace_family_status_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/ace_family_status_convergence.md)
+- **PROMPT:** [prompts/202609/ace_family_status_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/ace_family_status_convergence.md)
+- **BEAD:** [sase-117](https://github.com/sase-org/sase--beads/blob/main/pages/sase-117/README.md)
 
 # Converge ACE Family Status With Settlement Notifications
 
