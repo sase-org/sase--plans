@@ -1,76 +1,68 @@
 ---
 tier: epic
 title: Complete the remaining retention landing contracts
-goal:
-  Retention preserves changing protections and active borrowers, stays bounded, reports
-  complete owner outcomes, and passes supported-build and host acceptance.
+goal: Retention preserves changing protections and active borrowers, stays bounded,
+  reports complete owner outcomes, and passes supported-build and host acceptance.
 parent_bead: sase-zw.8.7
 phases:
-  - id: scratch_bounds
-    title: Bound scratch observation before choosing removals
-    description:
-      "scratch_bounds: add shared work bounds to scratch traversal and launch liveness
-      while preserving complete outcome reporting."
-    size: medium
-    depends_on: []
-  - id: run_protection
-    title: Revalidate authoritative run protections at mutation
-    description:
-      "run_protection: refuse absent protection proof and preserve references or
-      continuation state that change during collection and deletion."
-    size: medium
-    depends_on:
-      - scratch_bounds
-  - id: borrower_eligibility
-    title: Guard every existing borrower dependency mutation
-    description:
-      "borrower_eligibility: check claims and occupants under project synchronization
-      for reuse, recovery, repoint and dissociation."
-    size: medium
-    depends_on:
-      - run_protection
-  - id: inventory_bounds
-    title: Bound configured owner discovery as part of inventory
-    description:
-      "inventory_bounds: cover workspace discovery and target resolution with the shared
-      deadline and report every unresolved owner."
-    size: medium
-    depends_on:
-      - borrower_eligibility
-  - id: cleanup_results
-    title: Preserve every owner error and partial cleanup effect
-    description:
-      "cleanup_results: put aggregate result policy in Rust and propagate discovery
-      failures, structured workspace errors and proc log effects."
-    size: medium
-    depends_on:
-      - inventory_bounds
-  - id: binding_compatibility
-    title: Verify the supported core revision and wheel contracts
-    description:
-      "binding_compatibility: advance the CI core pin to the completed APIs and prove
-      all required bindings and schema versions through supported installs."
-    size: medium
-    depends_on:
-      - cleanup_results
-  - id: measured_acceptance
-    title: Complete host measurements and combined acceptance
-    description:
-      "measured_acceptance: prove the repaired safety cases, host inventory and build
-      timing requirements, resolve unsupported baseline allowances, and pass both
-      repository gates."
-    size: medium
-    depends_on:
-      - binding_compatibility
+- id: scratch_bounds
+  title: Bound scratch observation before choosing removals
+  description: 'scratch_bounds: add shared work bounds to scratch traversal and launch
+    liveness while preserving complete outcome reporting.'
+  size: medium
+  depends_on: []
+- id: run_protection
+  title: Revalidate authoritative run protections at mutation
+  description: 'run_protection: refuse absent protection proof and preserve references
+    or continuation state that change during collection and deletion.'
+  size: medium
+  depends_on:
+  - scratch_bounds
+- id: borrower_eligibility
+  title: Guard every existing borrower dependency mutation
+  description: 'borrower_eligibility: check claims and occupants under project synchronization
+    for reuse, recovery, repoint and dissociation.'
+  size: medium
+  depends_on:
+  - run_protection
+- id: inventory_bounds
+  title: Bound configured owner discovery as part of inventory
+  description: 'inventory_bounds: cover workspace discovery and target resolution
+    with the shared deadline and report every unresolved owner.'
+  size: medium
+  depends_on:
+  - borrower_eligibility
+- id: cleanup_results
+  title: Preserve every owner error and partial cleanup effect
+  description: 'cleanup_results: put aggregate result policy in Rust and propagate
+    discovery failures, structured workspace errors and proc log effects.'
+  size: medium
+  depends_on:
+  - inventory_bounds
+- id: binding_compatibility
+  title: Verify the supported core revision and wheel contracts
+  description: 'binding_compatibility: advance the CI core pin to the completed APIs
+    and prove all required bindings and schema versions through supported installs.'
+  size: medium
+  depends_on:
+  - cleanup_results
+- id: measured_acceptance
+  title: Complete host measurements and combined acceptance
+  description: 'measured_acceptance: prove the repaired safety cases, host inventory
+    and build timing requirements, resolve unsupported baseline allowances, and pass
+    both repository gates.'
+  size: medium
+  depends_on:
+  - binding_compatibility
 proposed_by: bbugyi200.athena.sase-zw.8.7.land
 create_time: 2026-09-15 18:33:17
 status: wip
+bead_id: sase-zw.8.7.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/retention_landing_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/retention_landing_contracts.md)
-- **PARENT:**
-  [202609/disk_retention_final_safety.md](https://github.com/sase-org/sase--plans/blob/main/202609/disk_retention_final_safety.md)
+- **PROMPT:** [prompts/202609/retention_landing_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/retention_landing_contracts.md)
+- **PARENT:** [202609/disk_retention_final_safety.md](https://github.com/sase-org/sase--plans/blob/main/202609/disk_retention_final_safety.md)
+- **BEAD:** [sase-zw.8.7.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zw/sase-zw.8.7.8.md)
 
 # Complete the remaining retention landing contracts
 
