@@ -58,7 +58,7 @@ phases:
     after an install upgrade.'
 proposed_by: bbugyi200.apollo.01
 create_time: 2026-09-14 16:25:22
-status: wip
+status: done
 bead_id: sase-xe.16.11.7.16
 ---
 

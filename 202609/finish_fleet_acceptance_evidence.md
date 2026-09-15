@@ -14,7 +14,7 @@ phases:
     two still-open acceptance phases.'
 proposed_by: bbugyi200.apollo.sase-xe.16.11.7.16.5.land
 create_time: 2026-09-15 16:01:46
-status: wip
+status: done
 bead_id: sase-xe.16.11.7.16.5.5
 ---
 
