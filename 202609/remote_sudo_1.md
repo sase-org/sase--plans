@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Complete remote sudo over SSH terminal handoff
-goal: Machine-targeted and remote-raised sudo requests authenticate on the target
-  host over SSH while headless paths remain deny-only.
+goal:
+  Machine-targeted and remote-raised sudo requests authenticate on the target host over
+  SSH while headless paths remain deny-only.
 size: medium
 proposed_by: bbugyi200.athena.sase-110.6
 bead: sase-110.6
@@ -13,6 +14,11 @@ status: done
   [202609/agent_sudo_requests.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_sudo_requests.md)
 - **BEAD:**
   [sase-110.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-110/sase-110.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-110.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-110.6.md)
+- **COMMITS:**
+  - [7a1a1ca](https://github.com/sase-org/sase/commit/7a1a1ca3e46554fd99035617484773af8b57cf6e)
+    — feat(sudo): support remote sudo handoff over ssh
 
 # Complete machine-targeted and remote-raised sudo over SSH
 
