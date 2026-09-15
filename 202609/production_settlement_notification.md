@@ -1,39 +1,36 @@
 ---
 tier: epic
 title: Deliver production settlement notification targeting
-goal: "Epic-launch monitor completion is notified exactly once only after the monitor's
+goal: 'Epic-launch monitor completion is notified exactly once only after the monitor''s
   terminal state is durable, and that existing notification targets the settled monitor
   plus its full family chain so ACE converges without watcher assistance.
 
-  "
+  '
 parent_bead: sase-117
 phases:
-  - id: settlement_handoff
-    title: Post-settlement notification handoff
-    depends_on: []
-    size: medium
-    description:
-      "settlement_handoff: defer the existing epic-launch completion notification
-      through monitor settlement and attach the settled monitor and family-root
-      identities."
-  - id: production_replay
-    title: Production-path incident replay
-    depends_on:
-      - settlement_handoff
-    size: small
-    description:
-      "production_replay: replace the synthetic notification-only proof with a real
-      monitored epic-launch replay and verify exact family-chain convergence and
-      delivery invariants."
+- id: settlement_handoff
+  title: Post-settlement notification handoff
+  depends_on: []
+  size: medium
+  description: 'settlement_handoff: defer the existing epic-launch completion notification
+    through monitor settlement and attach the settled monitor and family-root identities.'
+- id: production_replay
+  title: Production-path incident replay
+  depends_on:
+  - settlement_handoff
+  size: small
+  description: 'production_replay: replace the synthetic notification-only proof with
+    a real monitored epic-launch replay and verify exact family-chain convergence
+    and delivery invariants.'
 proposed_by: bbugyi200.athena.sase-117.land
 create_time: 2026-09-15 13:09:40
 status: wip
+bead_id: sase-117.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/production_settlement_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/production_settlement_notification.md)
-- **PARENT:**
-  [202609/ace_family_status_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202609/ace_family_status_convergence.md)
+- **PROMPT:** [prompts/202609/production_settlement_notification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/production_settlement_notification.md)
+- **PARENT:** [202609/ace_family_status_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202609/ace_family_status_convergence.md)
+- **BEAD:** [sase-117.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-117/sase-117.5.md)
 
 # Plan: Deliver production settlement notification targeting
 
