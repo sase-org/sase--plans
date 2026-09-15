@@ -1,53 +1,49 @@
 ---
 tier: epic
 title: Resolve full bead IDs across enabled projects for every bead command
-goal:
-  Every existing-bead argument to sase bead resolves a full ID independently of the
-  caller's directory and executes against the owning project's correct store and
+goal: Every existing-bead argument to sase bead resolves a full ID independently of
+  the caller's directory and executes against the owning project's correct store and
   context.
 phases:
-  - id: core-routing
-    title: Shared Rust bead target resolution
-    depends_on: []
-    size: medium
-    description:
-      "core-routing: implement tested Rust routing policy and bindings, add a thin
-      Python discovery adapter, and migrate show to the shared resolver while preserving
-      its presentation contract."
-  - id: operation-context
-    title: Route reads and writes through one explicit operation context
-    depends_on:
-      - core-routing
-    size: medium
-    description:
-      "operation-context: provide routed read and mutation contexts, preserve store
-      ownership and publication guarantees, and integrate the Rust fast dispatch with
-      the shared target resolver."
-  - id: command-coverage
-    title: Integrate lifecycle, relationship, and history commands
-    depends_on:
-      - operation-context
-    size: medium
-    description:
-      "command-coverage: route every lifecycle, parented-create, dependency, reference,
-      history, and apply-status bead argument; test complete command coverage and
-      document the full-ID contract."
-  - id: work-and-pages
-    title: Route work launches, pages, and epic symbol checks
-    depends_on:
-      - operation-context
-    size: medium
-    description:
-      "work-and-pages: propagate the owning project through bead work and parent
-      overrides, page operations, and epic-symbol discovery; verify launch and
-      projection behavior with isolated fixtures."
+- id: core-routing
+  title: Shared Rust bead target resolution
+  depends_on: []
+  size: medium
+  description: 'core-routing: implement tested Rust routing policy and bindings, add
+    a thin Python discovery adapter, and migrate show to the shared resolver while
+    preserving its presentation contract.'
+- id: operation-context
+  title: Route reads and writes through one explicit operation context
+  depends_on:
+  - core-routing
+  size: medium
+  description: 'operation-context: provide routed read and mutation contexts, preserve
+    store ownership and publication guarantees, and integrate the Rust fast dispatch
+    with the shared target resolver.'
+- id: command-coverage
+  title: Integrate lifecycle, relationship, and history commands
+  depends_on:
+  - operation-context
+  size: medium
+  description: 'command-coverage: route every lifecycle, parented-create, dependency,
+    reference, history, and apply-status bead argument; test complete command coverage
+    and document the full-ID contract.'
+- id: work-and-pages
+  title: Route work launches, pages, and epic symbol checks
+  depends_on:
+  - operation-context
+  size: medium
+  description: 'work-and-pages: propagate the owning project through bead work and
+    parent overrides, page operations, and epic-symbol discovery; verify launch and
+    projection behavior with isolated fixtures.'
 proposed_by: bbugyi200.athena.0l4
 create_time: 2026-09-15 09:03:28
 status: wip
+bead_id: sase-116
 ---
 
-- **PROMPT:**
-  [prompts/202609/global_bead_id_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/global_bead_id_resolution.md)
+- **PROMPT:** [prompts/202609/global_bead_id_resolution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/global_bead_id_resolution.md)
+- **BEAD:** [sase-116](https://github.com/sase-org/sase--beads/blob/main/pages/sase-116/README.md)
 
 # Full bead IDs work from any directory
 
