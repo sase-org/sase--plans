@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Complete production settlement handoff recovery
-goal: Epic-launch completion notifications survive every monitor settlement and recovery
+goal:
+  Epic-launch completion notifications survive every monitor settlement and recovery
   path while driving exact family-chain TUI convergence once.
 size: medium
 proposed_by: bbugyi200.athena.sase-117.5.land
@@ -13,6 +14,11 @@ status: done
   [202609/production_settlement_notification.md](https://github.com/sase-org/sase--plans/blob/main/202609/production_settlement_notification.md)
 - **BEAD:**
   [sase-117.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-117/sase-117.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-117.5.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-117.5.land.md)
+- **COMMITS:**
+  - [824ef83](https://github.com/sase-org/sase/commit/824ef831c88a5c78f33b3ae2cd0d308f5afd41b2)
+    — fix(epic-launch): recover monitor completion handoff
 
 # Plan: Complete production settlement handoff recovery
 
