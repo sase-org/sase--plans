@@ -1,50 +1,47 @@
 ---
 tier: epic
 title: Retire unsafe disk cleanup paths and settle the sase-zw epic chain
-goal: "Artifact-run deletion fails closed, workspace reuse preserves object
-  dependencies, cleanup failures remain visible, the tested core is pinned, and the
-  abandoned sase-zw epics are closed with explicit scope and evidence.
+goal: 'Artifact-run deletion fails closed, workspace reuse preserves object dependencies,
+  cleanup failures remain visible, the tested core is pinned, and the abandoned sase-zw
+  epics are closed with explicit scope and evidence.
 
-  "
+  '
 phases:
-  - id: core_safety
-    title: Establish the three bounded Rust safety contracts
-    depends_on: []
-    size: medium
-    description:
-      "core_safety: refuse artifact-run mutation, distinguish reuse from guarded
-      maintenance, and normalize cleanup outcomes in Rust."
-  - id: safe_callers
-    title: Integrate preview-only run retention and safe workspace reuse
-    depends_on:
-      - core_safety
-    size: medium
-    description:
-      "safe_callers: pin the finalized core, route both manual prune paths through
-      refusal, and preserve existing borrower dependencies during launch."
-  - id: cleanup_results
-    title: Propagate owner failures and preserve partial effects
-    depends_on:
-      - safe_callers
-    size: medium
-    description:
-      "cleanup_results: adopt the core outcome contract for discovery, subprocess,
-      scratch, and proc failures without losing successful effects."
-  - id: verify_delivery
-    title: Remove unsupported test allowances and verify the integrated delivery
-    depends_on:
-      - cleanup_results
-    size: medium
-    description:
-      "verify_delivery: repair the fourteen-node baseline addition, verify the exact
-      pinned wheel, and record the finite acceptance results."
+- id: core_safety
+  title: Establish the three bounded Rust safety contracts
+  depends_on: []
+  size: medium
+  description: 'core_safety: refuse artifact-run mutation, distinguish reuse from
+    guarded maintenance, and normalize cleanup outcomes in Rust.'
+- id: safe_callers
+  title: Integrate preview-only run retention and safe workspace reuse
+  depends_on:
+  - core_safety
+  size: medium
+  description: 'safe_callers: pin the finalized core, route both manual prune paths
+    through refusal, and preserve existing borrower dependencies during launch.'
+- id: cleanup_results
+  title: Propagate owner failures and preserve partial effects
+  depends_on:
+  - safe_callers
+  size: medium
+  description: 'cleanup_results: adopt the core outcome contract for discovery, subprocess,
+    scratch, and proc failures without losing successful effects.'
+- id: verify_delivery
+  title: Remove unsupported test allowances and verify the integrated delivery
+  depends_on:
+  - cleanup_results
+  size: medium
+  description: 'verify_delivery: repair the fourteen-node baseline addition, verify
+    the exact pinned wheel, and record the finite acceptance results.'
 proposed_by: bbugyi200.athena.0ln.f0
 create_time: 2026-09-15 19:35:45
 status: wip
+bead_id: sase-11h
 ---
 
-- **PROMPT:**
-  [prompts/202609/disk_safety_and_epic_retirement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_safety_and_epic_retirement.md)
+- **PROMPT:** [prompts/202609/disk_safety_and_epic_retirement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/disk_safety_and_epic_retirement.md)
+- **BEAD:** [sase-11h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11h/README.md)
 
 # Retire unsafe disk cleanup paths and settle the sase-zw epic chain
 
