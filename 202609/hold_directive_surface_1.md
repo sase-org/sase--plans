@@ -1,16 +1,15 @@
 ---
 tier: tale
 title: Parse the hold directive across Rust and Python
-goal: "The beta-gated %hold directive has one canonical Rust contract, survives typed
+goal: 'The beta-gated %hold directive has one canonical Rust contract, survives typed
   agent and proc launch planning, and is parsed identically by Python with the required
   validation and plan-time safety diagnostics.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.5.1.1
 bead: sase-11l.5.1.1
-create_time: 2026-09-16 13:56:46
-status: wip
+status: done
 ---
 
 - **PARENT:**
