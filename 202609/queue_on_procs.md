@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Allow queue-capacity admission on proc launch units
-goal: Stand-alone proc units honor authored queue capacity, priority, and weight before
+goal:
+  Stand-alone proc units honor authored queue capacity, priority, and weight before
   dispatch while preserving existing agent admission behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.1
@@ -13,6 +14,11 @@ status: done
   [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
 - **BEAD:**
   [sase-11l.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11l.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11l.1.md)
+- **COMMITS:**
+  - [b6b11f2](https://github.com/sase-org/sase/commit/b6b11f21556bccae2efcd8c32a161d4171614528)
+    — feat(agent-launch): admit queued proc units
 
 # Allow queue-capacity admission on proc launch units
 
