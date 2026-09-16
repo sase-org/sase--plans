@@ -1,53 +1,48 @@
 ---
 tier: epic
 title: Finish structured argument highlighting and prove frontend parity
-goal:
-  Argument highlighting remains structured while typing, preserves names and multiline
+goal: Argument highlighting remains structured while typing, preserves names and multiline
   or nested values across ACE and LSP, respects directive colors, and meets the existing
   responsiveness and acceptance contracts.
 parent_bead: sase-11i
 phases:
-  - id: core-editing
-    title: Complete incremental argument spans and remove suffix reparsing
-    size: medium
-    depends_on: []
-    description:
-      "core-editing: preserve structural spans in unfinished calls and make directive
-      extraction use bounded shared parsing."
-  - id: lsp-output
-    title: Emit complete LSP names and argument coverage
-    size: medium
-    depends_on:
-      - core-editing
-    description:
-      "lsp-output: emit invocation and directive names and preserve multiline and
-      partially overlapped argument spans."
-  - id: tui-palette
-    title: Preserve directive argument colors and responsive editing
-    size: medium
-    depends_on:
-      - core-editing
-    description:
-      "tui-palette: consume span source in theme selection and integrate structured
-      highlighting with keyword completion and warm catalogs."
-  - id: real-parity
-    title: Verify actual frontends, snapshots, and input latency
-    size: medium
-    depends_on:
-      - lsp-output
-      - tui-palette
-    description:
-      "real-parity: replace the synthetic LSP mapping check with real-server parity and
-      complete visual and performance acceptance."
+- id: core-editing
+  title: Complete incremental argument spans and remove suffix reparsing
+  size: medium
+  depends_on: []
+  description: 'core-editing: preserve structural spans in unfinished calls and make
+    directive extraction use bounded shared parsing.'
+- id: lsp-output
+  title: Emit complete LSP names and argument coverage
+  size: medium
+  depends_on:
+  - core-editing
+  description: 'lsp-output: emit invocation and directive names and preserve multiline
+    and partially overlapped argument spans.'
+- id: tui-palette
+  title: Preserve directive argument colors and responsive editing
+  size: medium
+  depends_on:
+  - core-editing
+  description: 'tui-palette: consume span source in theme selection and integrate
+    structured highlighting with keyword completion and warm catalogs.'
+- id: real-parity
+  title: Verify actual frontends, snapshots, and input latency
+  size: medium
+  depends_on:
+  - lsp-output
+  - tui-palette
+  description: 'real-parity: replace the synthetic LSP mapping check with real-server
+    parity and complete visual and performance acceptance.'
 proposed_by: bbugyi200.athena.sase-11i.land
 create_time: 2026-09-16 00:36:10
 status: wip
+bead_id: sase-11i.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_argument_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_argument_highlighting.md)
-- **PARENT:**
-  [202609/xprompt_keyword_arg_highlighting.md](https://github.com/sase-org/sase--plans/blob/main/202609/xprompt_keyword_arg_highlighting.md)
+- **PROMPT:** [prompts/202609/finish_argument_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_argument_highlighting.md)
+- **PARENT:** [202609/xprompt_keyword_arg_highlighting.md](https://github.com/sase-org/sase--plans/blob/main/202609/xprompt_keyword_arg_highlighting.md)
+- **BEAD:** [sase-11i.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11i/sase-11i.6.md)
 
 # Finish structured argument highlighting
 
