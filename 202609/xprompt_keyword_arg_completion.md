@@ -12,6 +12,9 @@ create_time: 2026-09-15 22:08:28
 status: wip
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0lr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0lr.md)
+
 # Plan: Selectable xprompt keyword-argument completion in the prompt input widget
 
 ## Problem
