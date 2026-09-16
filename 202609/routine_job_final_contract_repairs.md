@@ -1,53 +1,46 @@
 ---
 tier: epic
 title: Finish routine/job source edits, tribe safety, and landing integration
-goal:
-  Complete the remaining routine/job compatibility contracts with reproducible
+goal: Complete the remaining routine/job compatibility contracts with reproducible
   production-path acceptance.
 parent_bead: sase-11e.8
 phases:
-  - id: source_edits
-    title: Preserve existing AXE source structure for generic edits
-    depends_on: []
-    description:
-      "source_edits: repair inherited-leaf and list-form source editing through the
-      shared Rust planner and Python apply adapter."
-    size: medium
-  - id: tribe_safety
-    title: Enforce the shared automation tribe collision contract
-    depends_on:
-      - source_edits
-    description:
-      "tribe_safety: connect provenance-aware Rust resolution to config validation,
-      assignment, filtering, references, and display without changing historical
-      identities."
-    size: medium
-  - id: diagnostics
-    title: Finish canonical diagnostic templates without changing user data
-    depends_on:
-      - tribe_safety
-    description:
-      "diagnostics: update live routine/job diagnostics at their owning templates and
-      preserve authored paths and opaque payloads."
-    size: medium
-  - id: acceptance
-    title: Align the CI core pin and prove the combined upgrade contract
-    depends_on:
-      - diagnostics
-    description:
-      "acceptance: integrate the actual pinned Rust dependency, add missing
-      production-path acceptance, review drift, and run complete repository
-      verification."
-    size: medium
+- id: source_edits
+  title: Preserve existing AXE source structure for generic edits
+  depends_on: []
+  description: 'source_edits: repair inherited-leaf and list-form source editing through
+    the shared Rust planner and Python apply adapter.'
+  size: medium
+- id: tribe_safety
+  title: Enforce the shared automation tribe collision contract
+  depends_on:
+  - source_edits
+  description: 'tribe_safety: connect provenance-aware Rust resolution to config validation,
+    assignment, filtering, references, and display without changing historical identities.'
+  size: medium
+- id: diagnostics
+  title: Finish canonical diagnostic templates without changing user data
+  depends_on:
+  - tribe_safety
+  description: 'diagnostics: update live routine/job diagnostics at their owning templates
+    and preserve authored paths and opaque payloads.'
+  size: medium
+- id: acceptance
+  title: Align the CI core pin and prove the combined upgrade contract
+  depends_on:
+  - diagnostics
+  description: 'acceptance: integrate the actual pinned Rust dependency, add missing
+    production-path acceptance, review drift, and run complete repository verification.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-11e.8.land
 create_time: 2026-09-16 06:01:32
 status: wip
+bead_id: sase-11e.8.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/routine_job_final_contract_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_final_contract_repairs.md)
-- **PARENT:**
-  [202609/axe_routine_job_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/axe_routine_job_landing_repairs.md)
+- **PROMPT:** [prompts/202609/routine_job_final_contract_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_final_contract_repairs.md)
+- **PARENT:** [202609/axe_routine_job_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/axe_routine_job_landing_repairs.md)
+- **BEAD:** [sase-11e.8.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/sase-11e.8.6.md)
 
 # Finish the remaining routine/job contracts
 
