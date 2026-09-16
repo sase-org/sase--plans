@@ -1,60 +1,55 @@
 ---
 tier: epic
 title: Complete the AXE routine/job landing contracts
-goal:
-  General configuration, automation tribe identity, and public output satisfy the
-  routine/job compatibility contract without changing stored identities or user data.
+goal: General configuration, automation tribe identity, and public output satisfy
+  the routine/job compatibility contract without changing stored identities or user
+  data.
 parent_bead: sase-11e
 phases:
-  - id: shared_config
-    title: Share structural AXE normalization with general configuration
-    size: medium
-    depends_on: []
-    description:
-      "shared_config: complete Rust normalization, projection, provenance, and
-      source-preserving edit support for general config consumers."
-  - id: config_consumers
-    title: Connect canonical config views and editors
-    size: medium
-    depends_on:
-      - shared_config
-    description:
-      "config_consumers: wire runtime loading, config show and inventory, schema
-      catalogs, and both editors to the shared contract in both rollout states."
-  - id: tribe_identity
-    title: Resolve automation tribe aliases and collisions in Rust
-    size: medium
-    depends_on:
-      - config_consumers
-    description:
-      "tribe_identity: preserve stored chop identity while exposing job consistently and
-      rejecting independent job tribe collisions through shared core behavior."
-  - id: public_output
-    title: Preserve data while completing routine and job presentation
-    size: medium
-    depends_on:
-      - tribe_identity
-    description:
-      "public_output: replace whole-string substitutions with explicit projections and
-      canonical diagnostic templates, retaining exact names, paths, payloads, and legacy
-      contracts."
-  - id: acceptance
-    title: Prove the repaired upgrade contract and integration
-    size: medium
-    depends_on:
-      - public_output
-    description:
-      "acceptance: complete isolated end-to-end, visual, generated-output, binding, and
-      repository checks against the combined tree and intervening changes."
+- id: shared_config
+  title: Share structural AXE normalization with general configuration
+  size: medium
+  depends_on: []
+  description: 'shared_config: complete Rust normalization, projection, provenance,
+    and source-preserving edit support for general config consumers.'
+- id: config_consumers
+  title: Connect canonical config views and editors
+  size: medium
+  depends_on:
+  - shared_config
+  description: 'config_consumers: wire runtime loading, config show and inventory,
+    schema catalogs, and both editors to the shared contract in both rollout states.'
+- id: tribe_identity
+  title: Resolve automation tribe aliases and collisions in Rust
+  size: medium
+  depends_on:
+  - config_consumers
+  description: 'tribe_identity: preserve stored chop identity while exposing job consistently
+    and rejecting independent job tribe collisions through shared core behavior.'
+- id: public_output
+  title: Preserve data while completing routine and job presentation
+  size: medium
+  depends_on:
+  - tribe_identity
+  description: 'public_output: replace whole-string substitutions with explicit projections
+    and canonical diagnostic templates, retaining exact names, paths, payloads, and
+    legacy contracts.'
+- id: acceptance
+  title: Prove the repaired upgrade contract and integration
+  size: medium
+  depends_on:
+  - public_output
+  description: 'acceptance: complete isolated end-to-end, visual, generated-output,
+    binding, and repository checks against the combined tree and intervening changes.'
 proposed_by: bbugyi200.athena.sase-11e.land
 create_time: 2026-09-16 01:04:08
 status: wip
+bead_id: sase-11e.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/axe_routine_job_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_routine_job_landing_repairs.md)
-- **PARENT:**
-  [202609/axe_routines_jobs.md](https://github.com/sase-org/sase--plans/blob/main/202609/axe_routines_jobs.md)
+- **PROMPT:** [prompts/202609/axe_routine_job_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_routine_job_landing_repairs.md)
+- **PARENT:** [202609/axe_routines_jobs.md](https://github.com/sase-org/sase--plans/blob/main/202609/axe_routines_jobs.md)
+- **BEAD:** [sase-11e.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/sase-11e.8.md)
 
 # Complete the AXE routine/job landing contracts
 
