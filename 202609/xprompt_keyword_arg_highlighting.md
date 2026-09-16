@@ -1,71 +1,71 @@
 ---
 tier: epic
 title: Structured highlighting for xprompt keyword arguments
-goal: "A keyword argument such as `#research_swarm(lead_model=claude-fable-5)` reads as
-  structured syntax rather than one flat blob, identically in the ACE prompt widget and
-  in external editors over LSP, with key, value, punctuation, literal type, and
+goal: 'A keyword argument such as `#research_swarm(lead_model=claude-fable-5)` reads
+  as structured syntax rather than one flat blob, identically in the ACE prompt widget
+  and in external editors over LSP, with key, value, punctuation, literal type, and
   declaration validity each visually distinct and driven by one shared Rust grammar.
 
-  "
+  '
 phases:
-  - id: core-spans
-    title: Argument span grammar in the Rust core
-    depends_on: []
-    size: medium
-    description: "core-spans: add a frontend-neutral xprompt/directive argument span
-      tokenizer to sase-core that decomposes every argument form into key, assign,
-      value, and delimiter roles with literal-type and validity classification, and stop
-      treating unresolvable values as type mismatches.
+- id: core-spans
+  title: Argument span grammar in the Rust core
+  depends_on: []
+  size: medium
+  description: 'core-spans: add a frontend-neutral xprompt/directive argument span
+    tokenizer to sase-core that decomposes every argument form into key, assign, value,
+    and delimiter roles with literal-type and validity classification, and stop treating
+    unresolvable values as type mismatches.
 
-      "
-  - id: lsp-tokens
-    title: LSP semantic tokens for argument structure
-    depends_on:
-      - core-spans
-    size: medium
-    description: "lsp-tokens: grow the xprompt LSP semantic token legend with standard
-      LSP token types and emit argument-structure tokens from the core spans, merged
-      against the existing artifact, code, and glossary tokens.
+    '
+- id: lsp-tokens
+  title: LSP semantic tokens for argument structure
+  depends_on:
+  - core-spans
+  size: medium
+  description: 'lsp-tokens: grow the xprompt LSP semantic token legend with standard
+    LSP token types and emit argument-structure tokens from the core spans, merged
+    against the existing artifact, code, and glossary tokens.
 
-      "
-  - id: nvim-groups
-    title: Neovim legend safety and default highlight links
-    depends_on:
-      - lsp-tokens
-    size: small
-    description: "nvim-groups: make the glossary underline filter legend-proof, add
-      default highlight links only where a standard token type reads poorly on a plain
-      colorscheme, and cover the new tokens with an LSP smoke test.
+    '
+- id: nvim-groups
+  title: Neovim legend safety and default highlight links
+  depends_on:
+  - lsp-tokens
+  size: small
+  description: 'nvim-groups: make the glossary underline filter legend-proof, add
+    default highlight links only where a standard token type reads poorly on a plain
+    colorscheme, and cover the new tokens with an LSP smoke test.
 
-      "
-  - id: tui-render
-    title: ACE prompt widget argument rendering
-    depends_on:
-      - core-spans
-    size: medium
-    description: "tui-render: consume the core spans in the prompt text area and the
-      shared span partition, add the new highlight roles and their theme ramp, and stop
-      the argument container role from overpainting nested Jinja, placeholder, and
-      artifact spans.
+    '
+- id: tui-render
+  title: ACE prompt widget argument rendering
+  depends_on:
+  - core-spans
+  size: medium
+  description: 'tui-render: consume the core spans in the prompt text area and the
+    shared span partition, add the new highlight roles and their theme ramp, and stop
+    the argument container role from overpainting nested Jinja, placeholder, and artifact
+    spans.
 
-      "
-  - id: visual-parity
-    title: Visual snapshots and cross-surface parity
-    depends_on:
-      - lsp-tokens
-      - tui-render
-    size: medium
-    description:
-      "visual-parity: pin the new rendering with dark and light PNG snapshots, prove the
-      TUI and LSP classify the same text identically, and confirm the CLI and pager
-      surfaces render every new role."
+    '
+- id: visual-parity
+  title: Visual snapshots and cross-surface parity
+  depends_on:
+  - lsp-tokens
+  - tui-render
+  size: medium
+  description: 'visual-parity: pin the new rendering with dark and light PNG snapshots,
+    prove the TUI and LSP classify the same text identically, and confirm the CLI
+    and pager surfaces render every new role.'
 proposed_by: bbugyi200.athena.0lq
 create_time: 2026-09-15 21:08:36
 status: wip
+bead_id: sase-11i
 ---
 
-- **PROMPT:**
-  [prompts/202609/xprompt_keyword_arg_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/xprompt_keyword_arg_highlighting.md)
+- **PROMPT:** [prompts/202609/xprompt_keyword_arg_highlighting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/xprompt_keyword_arg_highlighting.md)
+- **BEAD:** [sase-11i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11i/README.md)
 
 # Plan: Structured highlighting for xprompt keyword arguments
 
