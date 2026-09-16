@@ -1,71 +1,65 @@
 ---
 tier: epic
 title: sase-core service foundations
-goal: "sase-core owns every piece of shared service-host behavior that later phases of
-  the service-host epic (sase-11y) build on: the proc-wire `service` block with
+goal: 'sase-core owns every piece of shared service-host behavior that later phases
+  of the service-host epic (sase-11y) build on: the proc-wire `service` block with
   per-service retention, the `service.procs` config composer, the pure restart-decision
-  function, the locked boot-scoped service state store, and the versioned service status
-  snapshot. Each piece has PyO3 bindings and a thin typed Python facade, and the Procs
-  query dialect gains the `service` and `svc:` fields.
+  function, the locked boot-scoped service state store, and the versioned service
+  status snapshot. Each piece has PyO3 bindings and a thin typed Python facade, and
+  the Procs query dialect gains the `service` and `svc:` fields.
 
-  "
+  '
 phases:
-  - id: proc-service-block
-    title: Proc wire service block, per-service retention, Procs query fields
-    depends_on: []
-    size: medium
-    description:
-      "proc-service-block: add the optional additive `service` block `{name, mode,
-      source}` to proc rows and reserve requests in sase-core (no schema bump), validate
-      it when a row is created, keep the newest 20 terminal rows per named service proc
-      instead of counting them against the generic cap, add a shared service-name
-      vocabulary module, and carry the block through the Python
-      Proc/ProcReserve/ObservedProc models into new `service` and `svc:` Procs query
-      fields."
-  - id: service-config
-    title: service.procs config composer, schema, defaults, and loader
-    depends_on:
-      - proc-service-block
-    size: medium
-    description:
-      "service-config: add the sase-core `service.procs` composer (field-by-field merge,
-      whole-list replacement, explicit enabled:false, per-field provenance, plugin
-      entries default-disabled, project-local layers ignored, reserved builtin names,
-      oneshot rejected, invalid entries marked unavailable) with a
-      `service_config_compose` binding; add the `service:` and `ace.procs` schema, the
-      scheduler/gateway defaults, and the `sase.service.config` loader that fails closed
-      on section-level errors."
-  - id: restart-state
-    title: Restart decisions and the locked service state store
-    depends_on:
-      - service-config
-    size: medium
-    description:
-      "restart-state: add the pure `decide_service_restart` function (restart policy,
-      clean-exit rules, orchestrator-identical backoff and crash-loop accounting) and
-      the flock-guarded `~/.sase/service/state.json` store (machine-local enablement
-      overrides, boot-id-keyed stops, markers, host record) with bindings, plus the
-      Python restart, state, paths, and boot-id facades."
-  - id: status-wire
-    title: Enablement resolution and the service status snapshot wire
-    depends_on:
-      - restart-state
-    size: medium
-    description:
-      "status-wire: add enablement-provenance resolution, the schema-versioned service
-      status snapshot (pure state derivation plus a change token that ignores heartbeat
-      churn), and atomic snapshot read/write in sase-core with bindings, plus the
-      `sase.service.status` Python facade."
+- id: proc-service-block
+  title: Proc wire service block, per-service retention, Procs query fields
+  depends_on: []
+  size: medium
+  description: 'proc-service-block: add the optional additive `service` block `{name,
+    mode, source}` to proc rows and reserve requests in sase-core (no schema bump),
+    validate it when a row is created, keep the newest 20 terminal rows per named
+    service proc instead of counting them against the generic cap, add a shared service-name
+    vocabulary module, and carry the block through the Python Proc/ProcReserve/ObservedProc
+    models into new `service` and `svc:` Procs query fields.'
+- id: service-config
+  title: service.procs config composer, schema, defaults, and loader
+  depends_on:
+  - proc-service-block
+  size: medium
+  description: 'service-config: add the sase-core `service.procs` composer (field-by-field
+    merge, whole-list replacement, explicit enabled:false, per-field provenance, plugin
+    entries default-disabled, project-local layers ignored, reserved builtin names,
+    oneshot rejected, invalid entries marked unavailable) with a `service_config_compose`
+    binding; add the `service:` and `ace.procs` schema, the scheduler/gateway defaults,
+    and the `sase.service.config` loader that fails closed on section-level errors.'
+- id: restart-state
+  title: Restart decisions and the locked service state store
+  depends_on:
+  - service-config
+  size: medium
+  description: 'restart-state: add the pure `decide_service_restart` function (restart
+    policy, clean-exit rules, orchestrator-identical backoff and crash-loop accounting)
+    and the flock-guarded `~/.sase/service/state.json` store (machine-local enablement
+    overrides, boot-id-keyed stops, markers, host record) with bindings, plus the
+    Python restart, state, paths, and boot-id facades.'
+- id: status-wire
+  title: Enablement resolution and the service status snapshot wire
+  depends_on:
+  - restart-state
+  size: medium
+  description: 'status-wire: add enablement-provenance resolution, the schema-versioned
+    service status snapshot (pure state derivation plus a change token that ignores
+    heartbeat churn), and atomic snapshot read/write in sase-core with bindings, plus
+    the `sase.service.status` Python facade.'
 proposed_by: bbugyi200.athena.sase-11y.2
 parent_bead: sase-11y.2
 create_time: 2026-09-16 15:15:21
 status: wip
+bead_id: sase-11y.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/core_service_foundations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/core_service_foundations.md)
-- **PARENT:**
-  [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **PROMPT:** [prompts/202609/core_service_foundations.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/core_service_foundations.md)
+- **PARENT:** [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **BEAD:** [sase-11y.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.2.1.md)
 
 # Plan: sase-core service foundations (phase `core-service` of epic sase-11y)
 
