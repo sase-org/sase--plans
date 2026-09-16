@@ -1,56 +1,53 @@
 ---
 tier: epic
 title: The %hold prompt directive
-goal: "A prompt can arm a durable agent hold with `%hold`, behind the `agent_holds` beta
-  flag. Python, the Rust typed launch planner, and the shared editor contract all parse
-  it the same way. Agent and proc launches arm the hold when they are submitted,
-  excluding their own kin and getting a priority boost. Approval previews list what each
-  hold captures, broad holds need interactive confirmation, and `%hold` is rejected when
-  combined with `%repeat` or `%dispatch`.
+goal: 'A prompt can arm a durable agent hold with `%hold`, behind the `agent_holds`
+  beta flag. Python, the Rust typed launch planner, and the shared editor contract
+  all parse it the same way. Agent and proc launches arm the hold when they are submitted,
+  excluding their own kin and getting a priority boost. Approval previews list what
+  each hold captures, broad holds need interactive confirmation, and `%hold` is rejected
+  when combined with `%repeat` or `%dispatch`.
 
-  "
+  '
 phases:
-  - id: directive-surface
-    title: Parse %hold everywhere behind agent_holds
-    depends_on: []
-    size: large
-    description:
-      "directive-surface: create the agent_holds beta flag. Add a Rust hold-directive
-      collector with a canonical formatter and a selector expansion, plus the `hold`
-      contract entry and the new Hood value role. Parse %hold into the typed agent and
-      proc unit wires, including previews, the dispatch-prompt re-render, and plan-time
-      diagnostics for self holds, cycles, %repeat and %dispatch. Route Python directive
-      parsing through the same collector."
-  - id: arm-runtime
-    title: Arm holds at launch submission
-    depends_on:
-      - directive-surface
-    size: large
-    description:
-      "arm-runtime: extend the Rust hold store with a pending-launch armer kind,
-      arm-time rejection of the armer's own and kin names, and an armer rebind that
-      keeps the record's timing. Arm from the agent runner bootstrap and from typed-plan
-      submission, rebind the hold when a unit dispatches, release units that never
-      dispatch, and apply the implied armer priority."
-  - id: preview-confirm
-    title: Preview captures and confirm broad holds
-    depends_on:
-      - directive-surface
-    size: medium
-    description:
-      "preview-confirm: list each hold and its live pending capture in launch previews.
-      Add a capture-threshold config value, gate broad holds behind a TUI modal and a
-      tty prompt in sase run, and document the directive in docs/xprompt.md."
+- id: directive-surface
+  title: Parse %hold everywhere behind agent_holds
+  depends_on: []
+  size: large
+  description: 'directive-surface: create the agent_holds beta flag. Add a Rust hold-directive
+    collector with a canonical formatter and a selector expansion, plus the `hold`
+    contract entry and the new Hood value role. Parse %hold into the typed agent and
+    proc unit wires, including previews, the dispatch-prompt re-render, and plan-time
+    diagnostics for self holds, cycles, %repeat and %dispatch. Route Python directive
+    parsing through the same collector.'
+- id: arm-runtime
+  title: Arm holds at launch submission
+  depends_on:
+  - directive-surface
+  size: large
+  description: 'arm-runtime: extend the Rust hold store with a pending-launch armer
+    kind, arm-time rejection of the armer''s own and kin names, and an armer rebind
+    that keeps the record''s timing. Arm from the agent runner bootstrap and from
+    typed-plan submission, rebind the hold when a unit dispatches, release units that
+    never dispatch, and apply the implied armer priority.'
+- id: preview-confirm
+  title: Preview captures and confirm broad holds
+  depends_on:
+  - directive-surface
+  size: medium
+  description: 'preview-confirm: list each hold and its live pending capture in launch
+    previews. Add a capture-threshold config value, gate broad holds behind a TUI
+    modal and a tty prompt in sase run, and document the directive in docs/xprompt.md.'
 proposed_by: bbugyi200.athena.sase-11l.5
 parent_bead: sase-11l.5
 create_time: 2026-09-16 13:44:45
 status: wip
+bead_id: sase-11l.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/hold_directive_surface.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_directive_surface.md)
-- **PARENT:**
-  [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
+- **PROMPT:** [prompts/202609/hold_directive_surface.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_directive_surface.md)
+- **PARENT:** [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
+- **BEAD:** [sase-11l.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.5.1.md)
 
 # Plan: the `%hold` prompt directive
 
