@@ -1,61 +1,55 @@
 ---
 tier: epic
 title: Close the residual job-tribe identity and routine/job diagnostic gaps
-goal:
-  Every persisted, targeted, and displayed job-tribe identity comes from one contextual
+goal: Every persisted, targeted, and displayed job-tribe identity comes from one contextual
   resolution, every live routine/job diagnostic uses canonical wording at its owner
-  without rewriting user data, and the combined upgrade passes the published-floor and
-  full landing gates.
+  without rewriting user data, and the combined upgrade passes the published-floor
+  and full landing gates.
 parent_bead: sase-11e.8.6.5
 phases:
-  - id: tribe_writes
-    title: Resolve job-tribe identity before any metadata or store write
-    size: medium
-    depends_on: []
-    description:
-      "tribe_writes: %id, %clan, TUI, and proposal tribe writes persist the contextually
-      resolved identity and reject collisions before touching any state."
-  - id: tribe_evidence
-    title: Share one stored-tribe evidence source across wait, fork, and display
-    size: medium
-    depends_on: []
-    description:
-      "tribe_evidence: runner wait fast path, fork, completion, clan tribes, colors, and
-      panel collapse resolve @job from the same evidence."
-  - id: python_diagnostics
-    title: Canonicalize the remaining live Python routine/job text at its owners
-    size: medium
-    depends_on: []
-    description:
-      "python_diagnostics: replace the doctor blanket rewrite and fix residual
-      chop/lumberjack wording in digests, doctor, SDK, logs, help, and editor."
-  - id: core_diagnostics
-    title: Canonicalize the remaining live Rust job validation text
-    size: small
-    depends_on: []
-    description:
-      "core_diagnostics: job wording for sase-core axe_chop validation, target, and PyO3
-      request-label messages without changing codes or wire keys."
-  - id: acceptance
-    title: Prove the repaired contract and pass published-floor and full landing gates
-    size: medium
-    depends_on:
-      - tribe_writes
-      - tribe_evidence
-      - python_diagnostics
-      - core_diagnostics
-    description:
-      "acceptance: extend the upgrade fixture, ratchet the core floor and pin after a
-      published release, and run just check-full through a monitor."
+- id: tribe_writes
+  title: Resolve job-tribe identity before any metadata or store write
+  size: medium
+  depends_on: []
+  description: 'tribe_writes: %id, %clan, TUI, and proposal tribe writes persist the
+    contextually resolved identity and reject collisions before touching any state.'
+- id: tribe_evidence
+  title: Share one stored-tribe evidence source across wait, fork, and display
+  size: medium
+  depends_on: []
+  description: 'tribe_evidence: runner wait fast path, fork, completion, clan tribes,
+    colors, and panel collapse resolve @job from the same evidence.'
+- id: python_diagnostics
+  title: Canonicalize the remaining live Python routine/job text at its owners
+  size: medium
+  depends_on: []
+  description: 'python_diagnostics: replace the doctor blanket rewrite and fix residual
+    chop/lumberjack wording in digests, doctor, SDK, logs, help, and editor.'
+- id: core_diagnostics
+  title: Canonicalize the remaining live Rust job validation text
+  size: small
+  depends_on: []
+  description: 'core_diagnostics: job wording for sase-core axe_chop validation, target,
+    and PyO3 request-label messages without changing codes or wire keys.'
+- id: acceptance
+  title: Prove the repaired contract and pass published-floor and full landing gates
+  size: medium
+  depends_on:
+  - tribe_writes
+  - tribe_evidence
+  - python_diagnostics
+  - core_diagnostics
+  description: 'acceptance: extend the upgrade fixture, ratchet the core floor and
+    pin after a published release, and run just check-full through a monitor.'
 proposed_by: bbugyi200.athena.sase-11e.8.6.5.land
 create_time: 2026-09-16 14:58:07
 status: wip
+bead_id: sase-11e.8.6.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/routine_job_identity_diagnostic_residuals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_identity_diagnostic_residuals.md)
-- **PARENT:**
-  [202609/routine_job_identity_diagnostic_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_job_identity_diagnostic_completion.md)
+- **PROMPT:** [prompts/202609/routine_job_identity_diagnostic_residuals.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_identity_diagnostic_residuals.md)
+- **PARENT:** [202609/routine_job_identity_diagnostic_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_job_identity_diagnostic_completion.md)
+- **BEAD:** [sase-11e.8.6.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/sase-11e.8.6.5.4.md)
 
 # Close the residual job-tribe identity and routine/job diagnostic gaps
 
