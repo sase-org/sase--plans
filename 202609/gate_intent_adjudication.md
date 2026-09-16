@@ -2,14 +2,12 @@
 tier: tale
 size: medium
 title: Gate-creation intent marker and host adjudication
-goal:
-  An agent-side gate creation that dies before handing off leaves a durable intent
-  marker, and the host fails the run loudly, naming the lost gate kind and request id,
-  instead of reporting a silent SUCCESS.
+goal: An agent-side gate creation that dies before handing off leaves a durable intent
+  marker, and the host fails the run loudly, naming the lost gate kind and request
+  id, instead of reporting a silent SUCCESS.
 proposed_by: bbugyi200.athena.sase-11t.1
 bead: sase-11t.1
-create_time: 2026-09-16 10:58:18
-status: wip
+status: done
 ---
 
 - **PARENT:**
