@@ -1,54 +1,51 @@
 ---
 tier: epic
 title: Crash-safe sudo/gate handoff and codex turn-integrity detection
-goal: "An in-agent gate creation that dies mid-flight can never end as a silent SUCCESS
-  again: the host fails the run loudly, the codex provider detects aborted turns, and
-  the sudo skill prevents the yield-and-abandon pattern.
+goal: 'An in-agent gate creation that dies mid-flight can never end as a silent SUCCESS
+  again: the host fails the run loudly, the codex provider detects aborted turns,
+  and the sudo skill prevents the yield-and-abandon pattern.
 
-  "
+  '
 phases:
-  - id: gate-intent-adjudication
-    title: Gate-creation intent marker and host adjudication
-    depends_on: []
-    size: large
-    description:
-      "gate-intent-adjudication: write a durable intent marker at the top of the shared
-      agent-side gate creation path and make the host runner lifecycle fail the run with
-      a needs-attention notification when an intent is left unconsumed."
-  - id: codex-turn-integrity
-    title: Codex provider turn-integrity detection
-    depends_on: []
-    size: medium
-    description:
-      "codex-turn-integrity: treat a codex turn that ends with an empty final answer
-      plus a command killed at teardown as a provider failure that raises for retry
-      instead of returning success."
-  - id: sudo-skill-foreground-guidance
-    title: Sudo skill foreground-execution guidance
-    depends_on: []
-    size: small
-    description:
-      "sudo-skill-foreground-guidance: update the generated sase_sudo skill template to
-      require foreground execution of sase sudo request and to state that any returned
-      tool result means the turn did not end."
-  - id: sudo-e2e-verification
-    title: End-to-end verification of the sudo handoff
-    depends_on:
-      - gate-intent-adjudication
-      - codex-turn-integrity
-      - sudo-skill-foreground-guidance
-    size: small
-    description:
-      "sudo-e2e-verification: re-run the /root/foobar sudo request to confirm gate,
-      bundle, and notification creation, and simulate a killed CLI to confirm the run
-      now fails loudly."
+- id: gate-intent-adjudication
+  title: Gate-creation intent marker and host adjudication
+  depends_on: []
+  size: large
+  description: 'gate-intent-adjudication: write a durable intent marker at the top
+    of the shared agent-side gate creation path and make the host runner lifecycle
+    fail the run with a needs-attention notification when an intent is left unconsumed.'
+- id: codex-turn-integrity
+  title: Codex provider turn-integrity detection
+  depends_on: []
+  size: medium
+  description: 'codex-turn-integrity: treat a codex turn that ends with an empty final
+    answer plus a command killed at teardown as a provider failure that raises for
+    retry instead of returning success.'
+- id: sudo-skill-foreground-guidance
+  title: Sudo skill foreground-execution guidance
+  depends_on: []
+  size: small
+  description: 'sudo-skill-foreground-guidance: update the generated sase_sudo skill
+    template to require foreground execution of sase sudo request and to state that
+    any returned tool result means the turn did not end.'
+- id: sudo-e2e-verification
+  title: End-to-end verification of the sudo handoff
+  depends_on:
+  - gate-intent-adjudication
+  - codex-turn-integrity
+  - sudo-skill-foreground-guidance
+  size: small
+  description: 'sudo-e2e-verification: re-run the /root/foobar sudo request to confirm
+    gate, bundle, and notification creation, and simulate a killed CLI to confirm
+    the run now fails loudly.'
 proposed_by: bbugyi200.athena.0lw.r0.f0
 create_time: 2026-09-16 10:41:57
 status: wip
+bead_id: sase-11t
 ---
 
-- **PROMPT:**
-  [prompts/202609/sudo_gate_crash_safe_handoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_gate_crash_safe_handoff.md)
+- **PROMPT:** [prompts/202609/sudo_gate_crash_safe_handoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_gate_crash_safe_handoff.md)
+- **BEAD:** [sase-11t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11t/README.md)
 
 # Plan: Crash-Safe Sudo/Gate Handoff and Codex Turn-Integrity Detection
 
