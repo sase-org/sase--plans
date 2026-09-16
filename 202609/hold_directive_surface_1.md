@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Parse the hold directive across Rust and Python
-goal: 'The beta-gated %hold directive has one canonical Rust contract, survives typed
+goal: "The beta-gated %hold directive has one canonical Rust contract, survives typed
   agent and proc launch planning, and is parsed identically by Python with the required
   validation and plan-time safety diagnostics.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.5.1.1
 bead: sase-11l.5.1.1
@@ -16,6 +16,11 @@ status: done
   [202609/hold_directive_surface.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive_surface.md)
 - **BEAD:**
   [sase-11l.5.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.5.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11l.5.1.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11l.5.1.1.md)
+- **COMMITS:**
+  - [a685c07](https://github.com/sase-org/sase-core/commit/a685c0725fba4b6391bfb8541a06f935480253d4)
+    — feat(core): add hold directive contracts
 
 # Plan: Parse `%hold` everywhere behind `agent_holds`
 
