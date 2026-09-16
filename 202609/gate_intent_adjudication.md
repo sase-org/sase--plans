@@ -2,9 +2,10 @@
 tier: tale
 size: medium
 title: Gate-creation intent marker and host adjudication
-goal: An agent-side gate creation that dies before handing off leaves a durable intent
-  marker, and the host fails the run loudly, naming the lost gate kind and request
-  id, instead of reporting a silent SUCCESS.
+goal:
+  An agent-side gate creation that dies before handing off leaves a durable intent
+  marker, and the host fails the run loudly, naming the lost gate kind and request id,
+  instead of reporting a silent SUCCESS.
 proposed_by: bbugyi200.athena.sase-11t.1
 bead: sase-11t.1
 status: done
@@ -14,6 +15,11 @@ status: done
   [202609/sudo_gate_crash_safe_handoff.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_gate_crash_safe_handoff.md)
 - **BEAD:**
   [sase-11t.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11t/sase-11t.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11t.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11t.1.md)
+- **COMMITS:**
+  - [491daa9](https://github.com/sase-org/sase/commit/491daa988a2095e3b7ad32105135e87bb6adbf68)
+    — fix(gates): adjudicate lost gate intents
 
 # Plan: Gate-Creation Intent Marker and Host Adjudication (sase-11t.1)
 
