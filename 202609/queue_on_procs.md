@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Allow queue-capacity admission on proc launch units
-goal:
-  Stand-alone proc units honor authored queue capacity, priority, and weight before
+goal: Stand-alone proc units honor authored queue capacity, priority, and weight before
   dispatch while preserving existing agent admission behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.1
 bead: sase-11l.1
-create_time: 2026-09-15 22:53:37
-status: wip
+status: done
 ---
 
 - **PARENT:**
