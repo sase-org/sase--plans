@@ -1,123 +1,114 @@
 ---
 tier: epic
 title: Service host and Services tab
-goal: "Every SASE background process on a machine — the AXE scheduler, the mobile
+goal: 'Every SASE background process on a machine — the AXE scheduler, the mobile
   gateway, plugin daemons like the Telegram receiver, user daemons, and `!` background
-  commands — is owned by one `sase service` host that a platform unit (systemd user unit
-  on Linux, launchd LaunchAgent on macOS) starts at boot/login, controlled from one
-  `sase service` CLI and one Services tab, with every legacy supervision path retired as
-  its replacement lands.
+  commands — is owned by one `sase service` host that a platform unit (systemd user
+  unit on Linux, launchd LaunchAgent on macOS) starts at boot/login, controlled from
+  one `sase service` CLI and one Services tab, with every legacy supervision path
+  retired as its replacement lands.
 
-  "
+  '
 phases:
-  - id: detach-scope
-    title: Cgroup escape helper for detached work
-    depends_on: []
-    size: medium
-    description:
-      "detach-scope: add a detach_scope helper that lets agents, detached procs,
-      monitors/gates, and gateway bridges escape the service unit's cgroup (systemd-run
-      scope on Linux, setsid on macOS), apply it at every detach point, and rename
-      src/sase/procs/service.py."
-  - id: core-service
-    title: sase-core service foundations
-    depends_on: []
-    size: large
-    description:
-      "core-service: add the Rust-side service.procs config composer, the proc-wire
-      service block and query field, the retention exemption, the locked service state
-      store with boot-scoped stops, the status wire, and the pure restart-decision
-      function, plus PyO3 bindings and Python facades."
-  - id: supervision-lib
-    title: Extract the shared child-supervision library
-    depends_on: []
-    size: medium
-    description:
-      "supervision-lib: extract the AXE orchestrator's child-supervision logic (backoff,
-      crash-loop detection, TERM->KILL, bounded log pump) into a shared module and
-      re-use it from the orchestrator with no behavior change."
-  - id: service-host
-    title: Service host runtime and CLI
-    depends_on:
-      - detach-scope
-      - core-service
-      - supervision-lib
-    size: large
-    description:
-      "service-host: implement the sase service host runtime and the sase service / sase
-      service proc / sase scheduler CLI behind a new service_host beta flag, with the
-      scheduler builtin, orchestrator handover, and the detached no-unit fallback."
-  - id: platform-units
-    title: Platform units and init integration
-    depends_on:
-      - service-host
-    size: large
-    description:
-      "platform-units: add sase service init/uninstall with systemd and launchd unit
-      writers, the captured host environment file, legacy-unit detection, linger and
-      provider-CLI checks, and the machine-scoped sase init step prompted once under
-      --all."
-  - id: gateway-telegram
-    title: Gateway builtin and Telegram plugin migration
-    depends_on:
-      - service-host
-    size: large
-    description:
-      "gateway-telegram: add the gateway builtin launcher and sase mobile gateway pair,
-      default the gateway off in core config, and migrate the sase-telegram receiver to
-      a plugin-declared service proc while retiring the rearm tick and core's
-      origin-string hack."
-  - id: services-tab
-    title: Services tab in the TUI
-    depends_on:
-      - core-service
-      - service-host
-    size: large
-    description:
-      "services-tab: rename the AXE tab display label to Services, render service-proc
-      nodes with routine/job nodes nested under the Scheduler node, add
-      start/stop/enable/disable keys and the host status line, replace the footer pill,
-      and wire gear exclusion plus the configurable -service Procs default query."
-  - id: oneshots
-    title: Migrate background commands to oneshot service procs
-    depends_on:
-      - service-host
-      - services-tab
-    size: medium
-    description:
-      "oneshots: move the ! background-command flow onto the durable proc store as
-      transient oneshot service procs with recorded exit codes and durable rerun, render
-      them as a distinct oneshot section on the Services tab, and keep legacy slot dirs
-      readable behind a sunset flag."
-  - id: rollout
-    title: Live migration on athena and apollo
-    depends_on:
-      - platform-units
-      - gateway-telegram
-    size: medium
-    description:
-      "rollout: install the platform unit on both machines, migrate the hand-written
-      gateway units and the Telegram receiver per the runbook, and run the
-      restart-with-live-work release gate before the new host is declared authoritative."
-  - id: sunset
-    title: Sunset legacy paths, docs, and glossary
-    depends_on:
-      - services-tab
-      - oneshots
-      - rollout
-    size: large
-    description:
-      "sunset: retire the ensure timer, TUI direct-start, and scope-wrapper paths,
-      formalize the sase axe alias, canonicalize the services tab id, remove the
-      service_host beta flag, update docs, and land the new and edited glossary strands
-      via the memory-write skill."
+- id: detach-scope
+  title: Cgroup escape helper for detached work
+  depends_on: []
+  size: medium
+  description: 'detach-scope: add a detach_scope helper that lets agents, detached
+    procs, monitors/gates, and gateway bridges escape the service unit''s cgroup (systemd-run
+    scope on Linux, setsid on macOS), apply it at every detach point, and rename src/sase/procs/service.py.'
+- id: core-service
+  title: sase-core service foundations
+  depends_on: []
+  size: large
+  description: 'core-service: add the Rust-side service.procs config composer, the
+    proc-wire service block and query field, the retention exemption, the locked service
+    state store with boot-scoped stops, the status wire, and the pure restart-decision
+    function, plus PyO3 bindings and Python facades.'
+- id: supervision-lib
+  title: Extract the shared child-supervision library
+  depends_on: []
+  size: medium
+  description: 'supervision-lib: extract the AXE orchestrator''s child-supervision
+    logic (backoff, crash-loop detection, TERM->KILL, bounded log pump) into a shared
+    module and re-use it from the orchestrator with no behavior change.'
+- id: service-host
+  title: Service host runtime and CLI
+  depends_on:
+  - detach-scope
+  - core-service
+  - supervision-lib
+  size: large
+  description: 'service-host: implement the sase service host runtime and the sase
+    service / sase service proc / sase scheduler CLI behind a new service_host beta
+    flag, with the scheduler builtin, orchestrator handover, and the detached no-unit
+    fallback.'
+- id: platform-units
+  title: Platform units and init integration
+  depends_on:
+  - service-host
+  size: large
+  description: 'platform-units: add sase service init/uninstall with systemd and launchd
+    unit writers, the captured host environment file, legacy-unit detection, linger
+    and provider-CLI checks, and the machine-scoped sase init step prompted once under
+    --all.'
+- id: gateway-telegram
+  title: Gateway builtin and Telegram plugin migration
+  depends_on:
+  - service-host
+  size: large
+  description: 'gateway-telegram: add the gateway builtin launcher and sase mobile
+    gateway pair, default the gateway off in core config, and migrate the sase-telegram
+    receiver to a plugin-declared service proc while retiring the rearm tick and core''s
+    origin-string hack.'
+- id: services-tab
+  title: Services tab in the TUI
+  depends_on:
+  - core-service
+  - service-host
+  size: large
+  description: 'services-tab: rename the AXE tab display label to Services, render
+    service-proc nodes with routine/job nodes nested under the Scheduler node, add
+    start/stop/enable/disable keys and the host status line, replace the footer pill,
+    and wire gear exclusion plus the configurable -service Procs default query.'
+- id: oneshots
+  title: Migrate background commands to oneshot service procs
+  depends_on:
+  - service-host
+  - services-tab
+  size: medium
+  description: 'oneshots: move the ! background-command flow onto the durable proc
+    store as transient oneshot service procs with recorded exit codes and durable
+    rerun, render them as a distinct oneshot section on the Services tab, and keep
+    legacy slot dirs readable behind a sunset flag.'
+- id: rollout
+  title: Live migration on athena and apollo
+  depends_on:
+  - platform-units
+  - gateway-telegram
+  size: medium
+  description: 'rollout: install the platform unit on both machines, migrate the hand-written
+    gateway units and the Telegram receiver per the runbook, and run the restart-with-live-work
+    release gate before the new host is declared authoritative.'
+- id: sunset
+  title: Sunset legacy paths, docs, and glossary
+  depends_on:
+  - services-tab
+  - oneshots
+  - rollout
+  size: large
+  description: 'sunset: retire the ensure timer, TUI direct-start, and scope-wrapper
+    paths, formalize the sase axe alias, canonicalize the services tab id, remove
+    the service_host beta flag, update docs, and land the new and edited glossary
+    strands via the memory-write skill.'
 proposed_by: bbugyi200.athena.0m3
 create_time: 2026-09-16 14:41:54
 status: wip
+bead_id: sase-11y
 ---
 
-- **PROMPT:**
-  [prompts/202609/service_host_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_1.md)
+- **PROMPT:** [prompts/202609/service_host_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_1.md)
+- **BEAD:** [sase-11y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/README.md)
 
 # Plan: Service host and Services tab
 
