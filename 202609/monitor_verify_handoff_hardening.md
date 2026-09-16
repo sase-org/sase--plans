@@ -1,43 +1,42 @@
 ---
 tier: epic
 title: Harden the monitor verify handoff (sase-11o.1 failure class)
-goal: "A fast-settling verify monitor no longer strands its family: the follow-up still
-  dispatches once the starter settles, a not-launchable follow-up durably preserves the
-  dirty worktree and names its recovery command, and monitor start never destroys
+goal: 'A fast-settling verify monitor no longer strands its family: the follow-up
+  still dispatches once the starter settles, a not-launchable follow-up durably preserves
+  the dirty worktree and names its recovery command, and monitor start never destroys
   command quoting.
 
-  "
+  '
 phases:
-  - id: starter-race
-    title: Close the monitor-settles-before-starter race
-    depends_on: []
-    size: medium
-    description:
-      "starter-race: wait bounded for the starter to settle and re-hydrate parent nodes
-      before stamping needs_recovery or recording not-launchable."
-  - id: recovery-evidence
-    title: Preserve worktree evidence on not-launchable follow-ups
-    depends_on:
-      - starter-race
-    size: medium
-    description:
-      "recovery-evidence: snapshot the monitored workspace's uncommitted diff before
-      claim release and add resume-command and snapshot hints to wait_checks
-      notifications."
-  - id: argv-quoting
-    title: Stop monitor start from destroying command quoting
-    depends_on: []
-    size: small
-    description:
-      "argv-quoting: preserve remainder argv with shlex-aware joining, warn on redundant
-      bash -c wrappers, and update the monitor skill's command-authoring guidance."
+- id: starter-race
+  title: Close the monitor-settles-before-starter race
+  depends_on: []
+  size: medium
+  description: 'starter-race: wait bounded for the starter to settle and re-hydrate
+    parent nodes before stamping needs_recovery or recording not-launchable.'
+- id: recovery-evidence
+  title: Preserve worktree evidence on not-launchable follow-ups
+  depends_on:
+  - starter-race
+  size: medium
+  description: 'recovery-evidence: snapshot the monitored workspace''s uncommitted
+    diff before claim release and add resume-command and snapshot hints to wait_checks
+    notifications.'
+- id: argv-quoting
+  title: Stop monitor start from destroying command quoting
+  depends_on: []
+  size: small
+  description: 'argv-quoting: preserve remainder argv with shlex-aware joining, warn
+    on redundant bash -c wrappers, and update the monitor skill''s command-authoring
+    guidance.'
 proposed_by: bbugyi200.athena.0lx
 create_time: 2026-09-16 10:07:16
 status: wip
+bead_id: sase-11r
 ---
 
-- **PROMPT:**
-  [prompts/202609/monitor_verify_handoff_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_verify_handoff_hardening.md)
+- **PROMPT:** [prompts/202609/monitor_verify_handoff_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/monitor_verify_handoff_hardening.md)
+- **BEAD:** [sase-11r](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11r/README.md)
 
 # Harden the monitor verify handoff (sase-11o.1 failure class)
 
