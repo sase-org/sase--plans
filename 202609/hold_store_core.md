@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Rust hold-record store and bindings
-goal:
-  Later hold phases can arm, list, release, and evaluate durable TTL-bounded holds
+goal: Later hold phases can arm, list, release, and evaluate durable TTL-bounded holds
   through one fail-open Rust domain API and its Python bindings.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.2
 bead: sase-11l.2
-create_time: 2026-09-15 22:53:46
-status: wip
+status: done
 ---
 
 - **PARENT:**
