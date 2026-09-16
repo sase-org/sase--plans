@@ -1,83 +1,78 @@
 ---
 tier: epic
-title: "Close out sase-zr: decision integrity, honest status, and fast TUI gate refresh"
-goal: "The narrowed sase-zr close-out holds end to end: an accepted gate decision can
-  never be superseded while its execution runs, any post-acceptance failure is durable
-  and recoverable instead of invisible, TALE/EPIC APPROVED derives from the receipt
-  while PLAN COMMITTED waits for archive success, the TUI paints gate responses on exact
-  rows promptly from every source, Telegram rejects strangers and TTY-only options, and
-  every deliberately deferred audit gap is tracked by a ready task bead so the land
-  agent can close sase-zr.
+title: 'Close out sase-zr: decision integrity, honest status, and fast TUI gate refresh'
+goal: 'The narrowed sase-zr close-out holds end to end: an accepted gate decision
+  can never be superseded while its execution runs, any post-acceptance failure is
+  durable and recoverable instead of invisible, TALE/EPIC APPROVED derives from the
+  receipt while PLAN COMMITTED waits for archive success, the TUI paints gate responses
+  on exact rows promptly from every source, Telegram rejects strangers and TTY-only
+  options, and every deliberately deferred audit gap is tracked by a ready task bead
+  so the land agent can close sase-zr.
 
-  "
+  '
 parent_bead: sase-zr
 phases:
-  - id: decision-integrity
-    title:
-      Conflict rejection while running, durable failure outcomes, truthful attempt
-      completion
-    depends_on: []
-    size: large
-    description:
-      "decision-integrity: in sase-core and sase, record a verifiable execution owner on
-      every accepted receipt, reject conflicting answers while the owner is live, permit
-      supersede and cancel only after a durable failed outcome or a proven-dead owner,
-      record a redacted durable failure outcome for command, archive, side-effect and
-      post-acceptance GateError failures, journal attempt_completed only after terminal
-      preparation succeeds, give poll_gate and waiting requesters a failure result, and
-      publish one deduped failure notification with resume, restart and cancel actions."
-  - id: approval-projection
-    title: Receipt-derived approval labels and honest commit status
-    depends_on:
-      - decision-integrity
-    size: medium
-    description:
-      "approval-projection: derive TALE/EPIC APPROVED from the acceptance receipt on
-      every load path, show PLAN COMMITTED only after archive success and roll it back
-      on failure, surface the failed outcome as a distinct status, and publish
-      response.json, shell terminal state and the refresh pulse before post-terminal
-      epic launch preparation."
-  - id: ace-fast-refresh
-    title: Exact, off-loop ACE refresh and actionable failure recovery
-    depends_on:
-      - decision-integrity
-      - approval-projection
-    size: medium
-    description:
-      "ace-fast-refresh: route gate receipts and watcher observations to exact shell,
-      planner and family row deltas, fix the notification-cache disappearance race, make
-      the acceptance pulse target the exact agent directory, move the remaining
-      synchronous count refresh and journal reads off the UI thread and message pump,
-      and add the plan-gate partial_attempt retry path plus failure-notification
-      resume/restart/cancel actions."
-  - id: telegram-auth
-    title: Authenticated Telegram updates and TTY-only pre-rejection
-    depends_on: []
-    size: small
-    description:
-      "telegram-auth: in sase-telegram, reject every update whose effective chat or
-      callback sender is not the configured chat before any handler runs, hide
-      requires_tty options from gate keyboards and pre-reject them before submission,
-      and tag submissions with source telegram."
-  - id: verify-close
-    title: Corrected docs, targeted latency evidence, and combined verification
-    depends_on:
-      - ace-fast-refresh
-      - telegram-auth
-    size: medium
-    description:
-      "verify-close: correct the notification and Telegram inbound docs, record targeted
-      before/after TUI gate-response latency evidence on an isolated fixture, run every
-      changed repo's checks plus sase's combined check-full through sase_monitor, remove
-      any epic scaffolding, and hand the narrowed-contract re-verification of parent
-      sase-zr to the land agent."
+- id: decision-integrity
+  title: Conflict rejection while running, durable failure outcomes, truthful attempt
+    completion
+  depends_on: []
+  size: large
+  description: 'decision-integrity: in sase-core and sase, record a verifiable execution
+    owner on every accepted receipt, reject conflicting answers while the owner is
+    live, permit supersede and cancel only after a durable failed outcome or a proven-dead
+    owner, record a redacted durable failure outcome for command, archive, side-effect
+    and post-acceptance GateError failures, journal attempt_completed only after terminal
+    preparation succeeds, give poll_gate and waiting requesters a failure result,
+    and publish one deduped failure notification with resume, restart and cancel actions.'
+- id: approval-projection
+  title: Receipt-derived approval labels and honest commit status
+  depends_on:
+  - decision-integrity
+  size: medium
+  description: 'approval-projection: derive TALE/EPIC APPROVED from the acceptance
+    receipt on every load path, show PLAN COMMITTED only after archive success and
+    roll it back on failure, surface the failed outcome as a distinct status, and
+    publish response.json, shell terminal state and the refresh pulse before post-terminal
+    epic launch preparation.'
+- id: ace-fast-refresh
+  title: Exact, off-loop ACE refresh and actionable failure recovery
+  depends_on:
+  - decision-integrity
+  - approval-projection
+  size: medium
+  description: 'ace-fast-refresh: route gate receipts and watcher observations to
+    exact shell, planner and family row deltas, fix the notification-cache disappearance
+    race, make the acceptance pulse target the exact agent directory, move the remaining
+    synchronous count refresh and journal reads off the UI thread and message pump,
+    and add the plan-gate partial_attempt retry path plus failure-notification resume/restart/cancel
+    actions.'
+- id: telegram-auth
+  title: Authenticated Telegram updates and TTY-only pre-rejection
+  depends_on: []
+  size: small
+  description: 'telegram-auth: in sase-telegram, reject every update whose effective
+    chat or callback sender is not the configured chat before any handler runs, hide
+    requires_tty options from gate keyboards and pre-reject them before submission,
+    and tag submissions with source telegram.'
+- id: verify-close
+  title: Corrected docs, targeted latency evidence, and combined verification
+  depends_on:
+  - ace-fast-refresh
+  - telegram-auth
+  size: medium
+  description: 'verify-close: correct the notification and Telegram inbound docs,
+    record targeted before/after TUI gate-response latency evidence on an isolated
+    fixture, run every changed repo''s checks plus sase''s combined check-full through
+    sase_monitor, remove any epic scaffolding, and hand the narrowed-contract re-verification
+    of parent sase-zr to the land agent.'
 proposed_by: bbugyi200.apollo.07
 create_time: 2026-09-16 14:25:04
 status: wip
+bead_id: sase-zr.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_zr_close_out.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_zr_close_out.md)
+- **PROMPT:** [prompts/202609/sase_zr_close_out.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_zr_close_out.md)
+- **BEAD:** [sase-zr.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zr/sase-zr.7.md)
 
 # Close out sase-zr: decision integrity, honest status, and fast TUI gate refresh
 
