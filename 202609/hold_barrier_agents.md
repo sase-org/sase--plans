@@ -1,19 +1,18 @@
 ---
 tier: tale
 title: Enforce agent holds at runner-slot admission
-goal:
-  Matching pre-run agents park behind durable holds and release only after terminal
+goal: Matching pre-run agents park behind durable holds and release only after terminal
   armer settlement, while running agents and hold-store failures remain unaffected.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.3
 bead: sase-11l.3
-create_time: 2026-09-16 09:04:57
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
-- **BEAD:** sase-11l.3
+- **BEAD:**
+  [sase-11l.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.3.md)
 
 # Hold-barrier admission for agents
 
