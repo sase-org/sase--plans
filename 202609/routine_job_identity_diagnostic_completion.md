@@ -1,45 +1,42 @@
 ---
 tier: epic
 title: Finish contextual job identity and public diagnostic contracts
-goal: "Every canonical job identity operation and live routine/job diagnostic honors the
-  compatibility contract, and the complete upgrade passes published-floor and full
-  landing verification.
+goal: 'Every canonical job identity operation and live routine/job diagnostic honors
+  the compatibility contract, and the complete upgrade passes published-floor and
+  full landing verification.
 
-  "
+  '
 parent_bead: sase-11e.8.6
 phases:
-  - id: tribe_context
-    title: Route every job tribe operation through contextual identity resolution
-    size: medium
-    depends_on: []
-    description:
-      "tribe_context: unify assignment, query, wait/fork, completion, and display
-      resolution without changing stored identities."
-  - id: public_diagnostics
-    title: Finish canonical live diagnostics without rewriting user data
-    size: medium
-    depends_on: []
-    description:
-      "public_diagnostics: update remaining reachable SDK, context, CLI, TUI, and
-      routine-log templates at their owners."
-  - id: acceptance
-    title: Prove the complete routine and job upgrade contract
-    size: medium
-    depends_on:
-      - tribe_context
-      - public_diagnostics
-    description:
-      "acceptance: exercise both-state production paths, published-floor compatibility,
-      drift, and full repository gates."
+- id: tribe_context
+  title: Route every job tribe operation through contextual identity resolution
+  size: medium
+  depends_on: []
+  description: 'tribe_context: unify assignment, query, wait/fork, completion, and
+    display resolution without changing stored identities.'
+- id: public_diagnostics
+  title: Finish canonical live diagnostics without rewriting user data
+  size: medium
+  depends_on: []
+  description: 'public_diagnostics: update remaining reachable SDK, context, CLI,
+    TUI, and routine-log templates at their owners.'
+- id: acceptance
+  title: Prove the complete routine and job upgrade contract
+  size: medium
+  depends_on:
+  - tribe_context
+  - public_diagnostics
+  description: 'acceptance: exercise both-state production paths, published-floor
+    compatibility, drift, and full repository gates.'
 proposed_by: bbugyi200.athena.sase-11e.8.6.land
 create_time: 2026-09-16 09:55:14
 status: wip
+bead_id: sase-11e.8.6.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/routine_job_identity_diagnostic_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_identity_diagnostic_completion.md)
-- **PARENT:**
-  [202609/routine_job_final_contract_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_job_final_contract_repairs.md)
+- **PROMPT:** [prompts/202609/routine_job_identity_diagnostic_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_job_identity_diagnostic_completion.md)
+- **PARENT:** [202609/routine_job_final_contract_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_job_final_contract_repairs.md)
+- **BEAD:** [sase-11e.8.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/sase-11e.8.6.5.md)
 
 # Finish the remaining routine/job landing contracts
 
