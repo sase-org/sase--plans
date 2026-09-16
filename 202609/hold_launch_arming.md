@@ -1,70 +1,66 @@
 ---
 tier: epic
 title: Arm %hold at launch submission
-goal: "A launch that carries `%hold` arms a durable hold as soon as it is submitted. For
-  plain agent launches the runner arms the hold before any dependency wait. For typed
-  plans the hold is armed before any unit dispatches. The hold then follows each unit to
-  its runner or proc without losing its original timing. It is released when a unit
-  never dispatches, and it survives every hand-off between processes. The armer never
-  holds its own kin, and a hold-carrying launch gets an implied, non-authored priority
-  boost.
+goal: 'A launch that carries `%hold` arms a durable hold as soon as it is submitted.
+  For plain agent launches the runner arms the hold before any dependency wait. For
+  typed plans the hold is armed before any unit dispatches. The hold then follows
+  each unit to its runner or proc without losing its original timing. It is released
+  when a unit never dispatches, and it survives every hand-off between processes.
+  The armer never holds its own kin, and a hold-carrying launch gets an implied, non-authored
+  priority boost.
 
-  "
+  '
 phases:
-  - id: hold-core
-    title: Rust hold store, launch armer, and wire support
-    depends_on: []
-    size: medium
-    description:
-      'hold-core: add the `launch` armer kind, arm-time kin rejection, and armer rebind
-      to the Rust hold store. Add a pure launch-unit armer builder and key helper, a
-      `future` edge in the typed hold-cycle check, and a waiting-marker wire that keeps
-      "absent" separate from "false" for `wait_priority_explicit`. Add pyo3 bindings and
-      bump the core pin.'
-  - id: hold-facade
-    title: Python hold facade and launch-hold primitives
-    depends_on:
-      - hold-core
-    size: medium
-    description:
-      "hold-facade: extend the facade with an explicit armer and selectors, rebind, a
-      shared TTL resolver, and `launch`-kind validation and liveness (a receipt only
-      counts once it is complete). Add `launch_hold.py` with the key, armer, arm,
-      pre-arm, rebind, re-anchor, and release primitives, plus
-      `HOLD_ARMER_WAIT_PRIORITY`. The CLI reuses the TTL resolver."
-  - id: typed-arm
-    title: Pre-arm typed plans and follow units to dispatch
-    depends_on:
-      - hold-facade
-    size: medium
-    description:
-      "typed-arm: pre-arm hold-carrying units under the admission lock, with idempotent
-      per-unit markers and rollback on failure. The coordinator re-anchors the holds
-      before it acks startup. Agent dispatch passes the key and re-anchors the hold to
-      the spawned runner; proc dispatch rebinds the hold to the proc. Units that never
-      dispatch release their hold, and proc candidates and proc capacity admission use
-      the key and the implied priority."
-  - id: bootstrap-arm
-    title: Arm or rebind in the agent runner bootstrap
-    depends_on:
-      - hold-facade
-    size: medium
-    description:
-      "bootstrap-arm: carry the parsed hold on AgentInfo. Arm a fresh agent hold, or
-      rebind the SASE_LAUNCH_HOLD_KEY pre-arm, right after directive extraction; skip
-      refresh passes and retry handoffs, and scrub the env var. Thread an implied hold
-      priority through runner-slot admission as non-explicit, and make the TUI wire
-      enrichment honor an explicit false."
+- id: hold-core
+  title: Rust hold store, launch armer, and wire support
+  depends_on: []
+  size: medium
+  description: 'hold-core: add the `launch` armer kind, arm-time kin rejection, and
+    armer rebind to the Rust hold store. Add a pure launch-unit armer builder and
+    key helper, a `future` edge in the typed hold-cycle check, and a waiting-marker
+    wire that keeps "absent" separate from "false" for `wait_priority_explicit`. Add
+    pyo3 bindings and bump the core pin.'
+- id: hold-facade
+  title: Python hold facade and launch-hold primitives
+  depends_on:
+  - hold-core
+  size: medium
+  description: 'hold-facade: extend the facade with an explicit armer and selectors,
+    rebind, a shared TTL resolver, and `launch`-kind validation and liveness (a receipt
+    only counts once it is complete). Add `launch_hold.py` with the key, armer, arm,
+    pre-arm, rebind, re-anchor, and release primitives, plus `HOLD_ARMER_WAIT_PRIORITY`.
+    The CLI reuses the TTL resolver.'
+- id: typed-arm
+  title: Pre-arm typed plans and follow units to dispatch
+  depends_on:
+  - hold-facade
+  size: medium
+  description: 'typed-arm: pre-arm hold-carrying units under the admission lock, with
+    idempotent per-unit markers and rollback on failure. The coordinator re-anchors
+    the holds before it acks startup. Agent dispatch passes the key and re-anchors
+    the hold to the spawned runner; proc dispatch rebinds the hold to the proc. Units
+    that never dispatch release their hold, and proc candidates and proc capacity
+    admission use the key and the implied priority.'
+- id: bootstrap-arm
+  title: Arm or rebind in the agent runner bootstrap
+  depends_on:
+  - hold-facade
+  size: medium
+  description: 'bootstrap-arm: carry the parsed hold on AgentInfo. Arm a fresh agent
+    hold, or rebind the SASE_LAUNCH_HOLD_KEY pre-arm, right after directive extraction;
+    skip refresh passes and retry handoffs, and scrub the env var. Thread an implied
+    hold priority through runner-slot admission as non-explicit, and make the TUI
+    wire enrichment honor an explicit false.'
 proposed_by: bbugyi200.athena.sase-11l.5.1.2
 parent_bead: sase-11l.5.1.2
 create_time: 2026-09-16 16:01:33
 status: wip
+bead_id: sase-11l.5.1.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/hold_launch_arming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_launch_arming.md)
-- **PARENT:**
-  [202609/hold_directive_surface.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive_surface.md)
+- **PROMPT:** [prompts/202609/hold_launch_arming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_launch_arming.md)
+- **PARENT:** [202609/hold_directive_surface.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive_surface.md)
+- **BEAD:** [sase-11l.5.1.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.5.1.2.1.md)
 
 # Plan: arm `%hold` at launch submission
 
