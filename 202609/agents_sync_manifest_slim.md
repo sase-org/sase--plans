@@ -1,40 +1,39 @@
 ---
 tier: epic
 title: Restore agents-sync hood publication by slimming the owner manifest
-goal: "New agent hoods publish to the sase--agents sidecar again on athena (including
+goal: 'New agent hoods publish to the sase--agents sidecar again on athena (including
   the backfilled sase-11l hood and its sase-11l.2 run page), single-hood publishes
-  finish well inside the drain timeout, and the owner manifest format no longer has an
-  imminent byte or hood-count ceiling.
+  finish well inside the drain timeout, and the owner manifest format no longer has
+  an imminent byte or hood-count ceiling.
 
-  "
+  '
 phases:
-  - id: slim-manifest-fix
-    title: Slim owner manifest, raise manifest caps, scope validation
-    depends_on: []
-    size: medium
-    description:
-      "slim-manifest-fix: make per-hood manifest `files` optional on read and omitted on
-      write behind a new slim_agents_manifest sunset flag, add dedicated (larger)
-      manifest byte and hood-count read caps plus a pre-write size guard, scope run-file
-      re-hashing to the hoods being written, and lock old-reader lenient-skip
-      compatibility in with tests."
-  - id: athena-recovery-backfill
-    title: Recover the athena outbox and backfill unpublished hoods
-    depends_on:
-      - slim-manifest-fix
-    size: small
-    description:
-      "athena-recovery-backfill: with the fixed sase installed on athena, drop retired
-      and retry quarantined publication outbox items, repair the owner manifest's
-      missing on-disk hoods, run a full reconcile sync, and verify the sase-11l.2 agent
-      page is live on GitHub and the manifest shrank."
+- id: slim-manifest-fix
+  title: Slim owner manifest, raise manifest caps, scope validation
+  depends_on: []
+  size: medium
+  description: 'slim-manifest-fix: make per-hood manifest `files` optional on read
+    and omitted on write behind a new slim_agents_manifest sunset flag, add dedicated
+    (larger) manifest byte and hood-count read caps plus a pre-write size guard, scope
+    run-file re-hashing to the hoods being written, and lock old-reader lenient-skip
+    compatibility in with tests.'
+- id: athena-recovery-backfill
+  title: Recover the athena outbox and backfill unpublished hoods
+  depends_on:
+  - slim-manifest-fix
+  size: small
+  description: 'athena-recovery-backfill: with the fixed sase installed on athena,
+    drop retired and retry quarantined publication outbox items, repair the owner
+    manifest''s missing on-disk hoods, run a full reconcile sync, and verify the sase-11l.2
+    agent page is live on GitHub and the manifest shrank.'
 proposed_by: bbugyi200.athena.0lt
 create_time: 2026-09-16 09:17:26
 status: wip
+bead_id: sase-11o
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_sync_manifest_slim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_sync_manifest_slim.md)
+- **PROMPT:** [prompts/202609/agents_sync_manifest_slim.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_sync_manifest_slim.md)
+- **BEAD:** [sase-11o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11o/README.md)
 
 # Restore agents-sync hood publication: slim the owner manifest and scope validation
 
