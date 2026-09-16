@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Add the sase agent hold command group
-goal:
-  Durable agent holds can be created, inspected, released, and wrapped around commands
-  through a safe CLI.
+goal: Durable agent holds can be created, inspected, released, and wrapped around
+  commands through a safe CLI.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.4
 bead: sase-11l.4
-create_time: 2026-09-16 10:49:36
-status: wip
+status: done
 ---
 
 - **PARENT:**
