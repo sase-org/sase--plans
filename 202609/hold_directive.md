@@ -1,111 +1,103 @@
 ---
 tier: epic
-title: "%hold: a reverse-%wait admission barrier"
-goal: "A launch (agent or stand-alone proc) can arm a durable, TTL-bounded, fail-open
-  hold that makes selected WAITING/QUEUED agents and un-dispatched procs wait for it to
-  settle — never touching running work — with a first-class CLI, a %hold prompt
+title: '%hold: a reverse-%wait admission barrier'
+goal: 'A launch (agent or stand-alone proc) can arm a durable, TTL-bounded, fail-open
+  hold that makes selected WAITING/QUEUED agents and un-dispatched procs wait for
+  it to settle — never touching running work — with a first-class CLI, a %hold prompt
   directive, ACE/LSP completion, and TUI visibility.
 
-  "
+  '
 phases:
-  - id: queue-on-procs
-    title: Allow %queue capacity on proc units
-    depends_on: []
-    size: large
-    description:
-      "queue-on-procs: allow %queue(capacity=) on %proc units with default weight 0 so a
-      stand-alone proc can gate on runner load and drain the host before dispatch."
-  - id: hold-store-core
-    title: Rust hold-record store and bindings
-    depends_on: []
-    size: large
-    description:
-      "hold-store-core: add agent_hold.rs, a TTL-bounded fail-open flock-guarded hold
-      store under SASE home with prune-on-read, armer-liveness pruning, the
-      match/exclusion predicate, and pyo3 bindings."
-  - id: hold-blocker-agents
-    title: hold-barrier blocker at runner-slot admission
-    depends_on:
-      - hold-store-core
-    size: large
-    description:
-      "hold-blocker-agents: consult hold records under runner_slots.lock via a new
-      hold-barrier blocker, add agent_name to capacity records, park held waiters, and
-      release holds on family and terminal-proc settlement."
-  - id: hold-cli
-    title: sase agent hold command group
-    depends_on:
-      - hold-blocker-agents
-    size: large
-    description:
-      "hold-cli: add sase agent hold create/list/release/run/show plus arm and expiry
-      notifications, proving the runtime behind a watchable CLI before any prompt
-      surface exists."
-  - id: hold-directive
-    title: The %hold prompt directive
-    depends_on:
-      - queue-on-procs
-      - hold-cli
-    size: large
-    description:
-      "hold-directive: add %hold behind a new agent_holds beta flag — parsing, directive
-      contract entry, arm-at-launch, kin exclusion, armer priority boost, approval
-      preview, confirmation gating, and %repeat/%dispatch rejection."
-  - id: hold-completion-lsp
-    title: Completion and LSP for %hold
-    depends_on:
-      - hold-directive
-    size: medium
-    description:
-      "hold-completion-lsp: complete %hold everywhere — new Hood value role, hood
-      candidate rows, WAITING/QUEUED-first agent ranking, proc rows included, ACE
-      wait-clause generalization, and xprompt LSP parity."
-  - id: hold-proc-targets
-    title: Hold un-dispatched proc units
-    depends_on:
-      - hold-cli
-    size: medium
-    description:
-      "hold-proc-targets: evaluate the hold predicate at the admission-engine
-      eligibility boundary so lexical and future selectors fence stand-alone procs
-      before dispatch, while dispatched procs stay immune."
-  - id: hold-visibility
-    title: TUI, doctor, and deadlock visibility
-    depends_on:
-      - hold-cli
-    size: medium
-    description:
-      "hold-visibility: surface holds — held_by on queue markers, Agents-tab and agent
-      list -j rendering, a TUI hold panel modeled on the runner-limit override panel, a
-      doctor stale-hold check, and the admission-deadlock notification."
-  - id: wait-hood
-    title: Hood selector for %wait
-    depends_on:
-      - hold-completion-lsp
-    size: medium
-    description:
-      "wait-hood: give %wait a hood= keyword using the existing hood matcher, with
-      contract, wait-resolution, completion, and parity-test updates."
-  - id: hold-flag-removal
-    title: Remove the agent_holds flag and close out
-    depends_on:
-      - hold-directive
-      - hold-completion-lsp
-      - hold-proc-targets
-      - hold-visibility
-      - wait-hood
-    size: small
-    description:
-      "hold-flag-removal: delete the agent_holds Off branch, make %hold unconditional,
-      close the flag bead, run the full landing gate, and propose the
-      memory-documentation follow-up."
+- id: queue-on-procs
+  title: Allow %queue capacity on proc units
+  depends_on: []
+  size: large
+  description: 'queue-on-procs: allow %queue(capacity=) on %proc units with default
+    weight 0 so a stand-alone proc can gate on runner load and drain the host before
+    dispatch.'
+- id: hold-store-core
+  title: Rust hold-record store and bindings
+  depends_on: []
+  size: large
+  description: 'hold-store-core: add agent_hold.rs, a TTL-bounded fail-open flock-guarded
+    hold store under SASE home with prune-on-read, armer-liveness pruning, the match/exclusion
+    predicate, and pyo3 bindings.'
+- id: hold-blocker-agents
+  title: hold-barrier blocker at runner-slot admission
+  depends_on:
+  - hold-store-core
+  size: large
+  description: 'hold-blocker-agents: consult hold records under runner_slots.lock
+    via a new hold-barrier blocker, add agent_name to capacity records, park held
+    waiters, and release holds on family and terminal-proc settlement.'
+- id: hold-cli
+  title: sase agent hold command group
+  depends_on:
+  - hold-blocker-agents
+  size: large
+  description: 'hold-cli: add sase agent hold create/list/release/run/show plus arm
+    and expiry notifications, proving the runtime behind a watchable CLI before any
+    prompt surface exists.'
+- id: hold-directive
+  title: The %hold prompt directive
+  depends_on:
+  - queue-on-procs
+  - hold-cli
+  size: large
+  description: 'hold-directive: add %hold behind a new agent_holds beta flag — parsing,
+    directive contract entry, arm-at-launch, kin exclusion, armer priority boost,
+    approval preview, confirmation gating, and %repeat/%dispatch rejection.'
+- id: hold-completion-lsp
+  title: Completion and LSP for %hold
+  depends_on:
+  - hold-directive
+  size: medium
+  description: 'hold-completion-lsp: complete %hold everywhere — new Hood value role,
+    hood candidate rows, WAITING/QUEUED-first agent ranking, proc rows included, ACE
+    wait-clause generalization, and xprompt LSP parity.'
+- id: hold-proc-targets
+  title: Hold un-dispatched proc units
+  depends_on:
+  - hold-cli
+  size: medium
+  description: 'hold-proc-targets: evaluate the hold predicate at the admission-engine
+    eligibility boundary so lexical and future selectors fence stand-alone procs before
+    dispatch, while dispatched procs stay immune.'
+- id: hold-visibility
+  title: TUI, doctor, and deadlock visibility
+  depends_on:
+  - hold-cli
+  size: medium
+  description: 'hold-visibility: surface holds — held_by on queue markers, Agents-tab
+    and agent list -j rendering, a TUI hold panel modeled on the runner-limit override
+    panel, a doctor stale-hold check, and the admission-deadlock notification.'
+- id: wait-hood
+  title: Hood selector for %wait
+  depends_on:
+  - hold-completion-lsp
+  size: medium
+  description: 'wait-hood: give %wait a hood= keyword using the existing hood matcher,
+    with contract, wait-resolution, completion, and parity-test updates.'
+- id: hold-flag-removal
+  title: Remove the agent_holds flag and close out
+  depends_on:
+  - hold-directive
+  - hold-completion-lsp
+  - hold-proc-targets
+  - hold-visibility
+  - wait-hood
+  size: small
+  description: 'hold-flag-removal: delete the agent_holds Off branch, make %hold unconditional,
+    close the flag bead, run the full landing gate, and propose the memory-documentation
+    follow-up.'
 proposed_by: bbugyi200.athena.0ls
 create_time: 2026-09-15 22:45:56
 status: wip
+bead_id: sase-11l
 ---
 
-- **PROMPT:**
-  [prompts/202609/hold_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_directive.md)
+- **PROMPT:** [prompts/202609/hold_directive.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_directive.md)
+- **BEAD:** [sase-11l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/README.md)
 
 # Plan: %hold — a reverse-%wait admission barrier
 
