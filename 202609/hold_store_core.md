@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Rust hold-record store and bindings
-goal: Later hold phases can arm, list, release, and evaluate durable TTL-bounded holds
+goal:
+  Later hold phases can arm, list, release, and evaluate durable TTL-bounded holds
   through one fail-open Rust domain API and its Python bindings.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.2
@@ -13,6 +14,11 @@ status: done
   [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
 - **BEAD:**
   [sase-11l.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11l.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11l.2.md)
+- **COMMITS:**
+  - [4ef449d](https://github.com/sase-org/sase-core/commit/4ef449de9fc232402fc1eee72dbd5b6199438bf7)
+    — feat(agent-hold): add durable hold store
 
 # Rust hold-record store and bindings
 
