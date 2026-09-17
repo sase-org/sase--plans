@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish shared job identity evidence and the routine timeout editor
-goal: Job identity resolution agrees across launch, assignment, wait, fork, and TUI,
-  and canonical timeout editing preserves legacy source values.
+goal:
+  Job identity resolution agrees across launch, assignment, wait, fork, and TUI, and
+  canonical timeout editing preserves legacy source values.
 size: medium
 proposed_by: bbugyi200.athena.sase-11e.8.6.5.4.land
 bead: sase-11e.8.6.5.4
@@ -13,6 +14,11 @@ status: done
   [202609/routine_job_identity_diagnostic_residuals.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_job_identity_diagnostic_residuals.md)
 - **BEAD:**
   [sase-11e.8.6.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11e/sase-11e.8.6.5.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11e.8.6.5.4.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11e.8.6.5.4.land.md)
+- **COMMITS:**
+  - [244634e](https://github.com/sase-org/sase-core/commit/244634e143412a52231911f3f20b2dca376272a3)
+    — fix(config): preserve legacy routine timeout mutation sources
 
 # Finish shared job identity evidence and the routine timeout editor
 
