@@ -1,40 +1,38 @@
 ---
 tier: epic
 title: Complete service-foundation landing integration
-goal: "Service status derives boot-scoped stops and duplicate observations correctly,
+goal: 'Service status derives boot-scoped stops and duplicate observations correctly,
   the shared Python supervision library delegates restart accounting to the Rust core
   decision function now that it exists, and sase pins the integrated core revision.
 
-  "
+  '
 parent_bead: sase-11y.2.1
 phases:
-  - id: status-runtime-scope
-    title: Correct service-status runtime scoping
-    depends_on: []
-    size: small
-    description:
-      "status-runtime-scope: make sase-core honor the request boot id when projecting
-      stops, deduplicate configured and orphan observations consistently, and add Rust
-      and binding-level regressions."
-  - id: supervision-core-delegation
-    title: Delegate shared restart accounting and ratchet core
-    depends_on:
-      - status-runtime-scope
-    size: medium
-    description:
-      "supervision-core-delegation: preserve the shared supervision API while delegating
-      restart accounting to the Rust-backed service restart facade, prove AXE
-      compatibility, ratchet sase-core-revision.txt past the completed core work, and
-      run repository verification."
+- id: status-runtime-scope
+  title: Correct service-status runtime scoping
+  depends_on: []
+  size: small
+  description: 'status-runtime-scope: make sase-core honor the request boot id when
+    projecting stops, deduplicate configured and orphan observations consistently,
+    and add Rust and binding-level regressions.'
+- id: supervision-core-delegation
+  title: Delegate shared restart accounting and ratchet core
+  depends_on:
+  - status-runtime-scope
+  size: medium
+  description: 'supervision-core-delegation: preserve the shared supervision API while
+    delegating restart accounting to the Rust-backed service restart facade, prove
+    AXE compatibility, ratchet sase-core-revision.txt past the completed core work,
+    and run repository verification.'
 proposed_by: bbugyi200.athena.sase-11y.2.1.land
 create_time: 2026-09-17 19:38:44
 status: wip
+bead_id: sase-11y.2.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/complete_service_foundations_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_service_foundations_landing.md)
-- **PARENT:**
-  [202609/core_service_foundations.md](https://github.com/sase-org/sase--plans/blob/main/202609/core_service_foundations.md)
+- **PROMPT:** [prompts/202609/complete_service_foundations_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_service_foundations_landing.md)
+- **PARENT:** [202609/core_service_foundations.md](https://github.com/sase-org/sase--plans/blob/main/202609/core_service_foundations.md)
+- **BEAD:** [sase-11y.2.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.2.1.5.md)
 
 # Plan: Complete service-foundation landing integration
 
