@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Recover typed launch hold arming and finish its integration
-goal:
-  Typed launches arm, carry, rebind, and release durable holds end to end on current
+goal: Typed launches arm, carry, rebind, and release durable holds end to end on current
   master with complete acceptance coverage and no epic symbol exemptions.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.5.1.2.1.land
 bead: sase-11l.5.1.2.1
-create_time: 2026-09-17 14:19:36
-status: wip
+status: done
 ---
 
 - **BEAD:**
