@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Recover typed launch hold arming and finish its integration
-goal: Typed launches arm, carry, rebind, and release durable holds end to end on current
+goal:
+  Typed launches arm, carry, rebind, and release durable holds end to end on current
   master with complete acceptance coverage and no epic symbol exemptions.
 size: medium
 proposed_by: bbugyi200.athena.sase-11l.5.1.2.1.land
@@ -11,6 +12,11 @@ status: done
 
 - **BEAD:**
   [sase-11l.5.1.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.5.1.2.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11l.5.1.2.1.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11l.5.1.2.1.land.md)
+- **COMMITS:**
+  - [ff08843](https://github.com/sase-org/sase/commit/ff088437985ffa0f679ae59406280202f58b9279)
+    — feat(agent): pre-arm typed launch holds
 
 # Recover typed launch hold arming and finish its integration
 
