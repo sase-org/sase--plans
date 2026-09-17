@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Stop Agents-tab visible-set oscillation across load tiers
-goal:
-  Consecutive broad and bounded agent loads converge on a stable query-visible roster
-  and tribe-panel set without recycling Tier 2 reconciliation.
+goal: Consecutive broad and bounded agent loads converge on a stable query-visible
+  roster and tribe-panel set without recycling Tier 2 reconciliation.
 size: medium
 proposed_by: bbugyi200.athena.sase-127.1
 bead: sase-127.1
-create_time: 2026-09-17 17:07:10
-status: wip
+status: done
 ---
 
 - **PARENT:**
