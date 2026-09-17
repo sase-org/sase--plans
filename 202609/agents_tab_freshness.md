@@ -1,81 +1,79 @@
 ---
 tier: epic
 title: Agents tab freshness on large-archive hosts
-goal: "The Agents tab reflects load/capacity, unread notification, and node status
+goal: 'The Agents tab reflects load/capacity, unread notification, and node status
   changes within seconds on hosts with tens of thousands of stored agents, without
   adding per-tick TUI cost.
 
-  "
+  '
 phases:
-  - id: pulse-delta
-    size: medium
-    title: Stop refresh-pulse writes from poisoning the bounded artifact-delta path
-    depends_on: []
-    description:
-      "pulse-delta: classify project-level .ace_refresh_pulse watcher paths as a pure
-      freshness kick instead of an unknown_watcher_path fallback (leaving
-      per-agent-directory pulses exact for sase-zr.7.3), and fix sase-zc by routing the
-      two misplaced pulse writers through the existing touch_shell_refresh_pulse helper."
-  - id: capacity-fresh
-    size: medium
-    title:
-      Give the load/capacity indicator a cheap refresh path independent of broad loads
-    depends_on: []
-    description:
-      "capacity-fresh: recompute the runner-capacity snapshot from the in-memory roster
-      on tab entry with a guard so older in-flight loads cannot overwrite it,
-      token-track limit-override/holds changes, and fix the stale agent-info metrics
-      memo key."
-  - id: tick-diet
-    size: medium
-    title: Take the federation attention RPC off the auto-refresh critical path
-    depends_on: []
-    description:
-      "tick-diet: make per-tick fleet-attention polling cache-backed with a longer
-      network recompute cadence, run it concurrently with local surfaces, and add tick
-      trace counters for it."
-  - id: broad-load-diet
-    size: large
-    title: Cut broad Tier 1 load and post-apply warmup cost on large archives
-    depends_on: []
-    description:
-      "broad-load-diet: profile then cache/coalesce the unwindowed per-load
-      project/patch sweeps, the bead-confirmation/monitor/live-hint warmups, the
-      detail-header rebuilds, and evaluate incremental Tier 1 index revalidation."
-  - id: ui-hitches
-    size: medium
-    title: Remove Agents-tab UI-thread hitches (unread ack, info-panel countdown)
-    depends_on: []
-    description:
-      "ui-hitches: move the unread-ack notification-store mutation off the UI thread
-      with optimistic row updates, and make the 1 s info-panel countdown patch only the
-      countdown segment."
-  - id: inflight-status
-    size: medium
-    title: Bounded marker polling so in-flight node status converges without broad loads
-    depends_on:
-      - pulse-delta
-    description:
-      "inflight-status: extend the STARTING-row 1 s stat poll to all in-flight rows so
-      marker transitions schedule exact artifact-delta refreshes within seconds even
-      when inotify misses events."
-  - id: verify
-    size: medium
-    title: Before/after verification on athena and regression coverage
-    depends_on:
-      - pulse-delta
-      - capacity-fresh
-      - tick-diet
-      - broad-load-diet
-      - ui-hitches
-      - inflight-status
-    description:
-      "verify: capture before/after trace, perf, and stall data on athena against the
-      acceptance targets, run the benches, and record results on the epic bead."
+- id: pulse-delta
+  size: medium
+  title: Stop refresh-pulse writes from poisoning the bounded artifact-delta path
+  depends_on: []
+  description: 'pulse-delta: classify project-level .ace_refresh_pulse watcher paths
+    as a pure freshness kick instead of an unknown_watcher_path fallback (leaving
+    per-agent-directory pulses exact for sase-zr.7.3), and fix sase-zc by routing
+    the two misplaced pulse writers through the existing touch_shell_refresh_pulse
+    helper.'
+- id: capacity-fresh
+  size: medium
+  title: Give the load/capacity indicator a cheap refresh path independent of broad
+    loads
+  depends_on: []
+  description: 'capacity-fresh: recompute the runner-capacity snapshot from the in-memory
+    roster on tab entry with a guard so older in-flight loads cannot overwrite it,
+    token-track limit-override/holds changes, and fix the stale agent-info metrics
+    memo key.'
+- id: tick-diet
+  size: medium
+  title: Take the federation attention RPC off the auto-refresh critical path
+  depends_on: []
+  description: 'tick-diet: make per-tick fleet-attention polling cache-backed with
+    a longer network recompute cadence, run it concurrently with local surfaces, and
+    add tick trace counters for it.'
+- id: broad-load-diet
+  size: large
+  title: Cut broad Tier 1 load and post-apply warmup cost on large archives
+  depends_on: []
+  description: 'broad-load-diet: profile then cache/coalesce the unwindowed per-load
+    project/patch sweeps, the bead-confirmation/monitor/live-hint warmups, the detail-header
+    rebuilds, and evaluate incremental Tier 1 index revalidation.'
+- id: ui-hitches
+  size: medium
+  title: Remove Agents-tab UI-thread hitches (unread ack, info-panel countdown)
+  depends_on: []
+  description: 'ui-hitches: move the unread-ack notification-store mutation off the
+    UI thread with optimistic row updates, and make the 1 s info-panel countdown patch
+    only the countdown segment.'
+- id: inflight-status
+  size: medium
+  title: Bounded marker polling so in-flight node status converges without broad loads
+  depends_on:
+  - pulse-delta
+  description: 'inflight-status: extend the STARTING-row 1 s stat poll to all in-flight
+    rows so marker transitions schedule exact artifact-delta refreshes within seconds
+    even when inotify misses events.'
+- id: verify
+  size: medium
+  title: Before/after verification on athena and regression coverage
+  depends_on:
+  - pulse-delta
+  - capacity-fresh
+  - tick-diet
+  - broad-load-diet
+  - ui-hitches
+  - inflight-status
+  description: 'verify: capture before/after trace, perf, and stall data on athena
+    against the acceptance targets, run the benches, and record results on the epic
+    bead.'
 proposed_by: bbugyi200.athena.0mc
 create_time: 2026-09-17 10:59:38
 status: wip
+bead_id: sase-124
 ---
+
+- **BEAD:** [sase-124](https://github.com/sase-org/sase--beads/blob/main/pages/sase-124/README.md)
 
 # Agents Tab Freshness on Large-Archive Hosts
 
