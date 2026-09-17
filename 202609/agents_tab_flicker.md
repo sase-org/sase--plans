@@ -1,55 +1,53 @@
 ---
 tier: epic
 title: Fix Agents-tab flicker and disappearing tribe panels
-goal: "The Agents tab stops flickering under an active filter query and live agent
-  churn: unchanged-data refreshes patch instead of full-rebuilding, no-op fleet
-  reprojections stop repainting, consecutive load tiers converge on one stable visible
-  agent set, and tribe panels such as @epic stay mounted.
+goal: 'The Agents tab stops flickering under an active filter query and live agent
+  churn: unchanged-data refreshes patch instead of full-rebuilding, no-op fleet reprojections
+  stop repainting, consecutive load tiers converge on one stable visible agent set,
+  and tribe panels such as @epic stay mounted.
 
-  "
+  '
 phases:
-  - id: converge-load-tiers
-    title: Stop the visible-set oscillation across load tiers
-    depends_on: []
-    size: large
-    description:
-      "converge-load-tiers: reproduce the bounded-vs-revalidate agent-set swing with a
-      failing test, fix the incomplete-load merge and complete-history latch so
-      consecutive loads converge, and assert panel-key stability across a bounded apply."
-  - id: incremental-under-search
-    title: Incremental panel refresh with an active filter query
-    depends_on: []
-    size: medium
-    description:
-      "incremental-under-search: allow the incremental display diff path when the search
-      query text is unchanged, keep a distinct full-rebuild fallback for query changes,
-      and cover both with tests."
-  - id: skip-noop-fleet-repaint
-    title: Skip no-op fleet reprojection repaints
-    depends_on: []
-    size: small
-    description:
-      "skip-noop-fleet-repaint: signature-compare fleet projection inputs and skip
-      finalize/repaint when unchanged, preserving forced sources and genuine changes,
-      with tests."
-  - id: verify-on-athena
-    title: Regression coverage and on-host verification
-    depends_on:
-      - converge-load-tiers
-      - incremental-under-search
-      - skip-noop-fleet-repaint
-    size: medium
-    description:
-      "verify-on-athena: soak the fixed TUI on athena with trace capture, compare
-      against the recorded pre-fix baselines, add a guard test against silent
-      full-rebuild regressions, and record CPU before/after."
+- id: converge-load-tiers
+  title: Stop the visible-set oscillation across load tiers
+  depends_on: []
+  size: large
+  description: 'converge-load-tiers: reproduce the bounded-vs-revalidate agent-set
+    swing with a failing test, fix the incomplete-load merge and complete-history
+    latch so consecutive loads converge, and assert panel-key stability across a bounded
+    apply.'
+- id: incremental-under-search
+  title: Incremental panel refresh with an active filter query
+  depends_on: []
+  size: medium
+  description: 'incremental-under-search: allow the incremental display diff path
+    when the search query text is unchanged, keep a distinct full-rebuild fallback
+    for query changes, and cover both with tests.'
+- id: skip-noop-fleet-repaint
+  title: Skip no-op fleet reprojection repaints
+  depends_on: []
+  size: small
+  description: 'skip-noop-fleet-repaint: signature-compare fleet projection inputs
+    and skip finalize/repaint when unchanged, preserving forced sources and genuine
+    changes, with tests.'
+- id: verify-on-athena
+  title: Regression coverage and on-host verification
+  depends_on:
+  - converge-load-tiers
+  - incremental-under-search
+  - skip-noop-fleet-repaint
+  size: medium
+  description: 'verify-on-athena: soak the fixed TUI on athena with trace capture,
+    compare against the recorded pre-fix baselines, add a guard test against silent
+    full-rebuild regressions, and record CPU before/after.'
 proposed_by: bbugyi200.athena.0ml
 create_time: 2026-09-17 16:26:19
 status: wip
+bead_id: sase-127
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_tab_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_flicker.md)
+- **PROMPT:** [prompts/202609/agents_tab_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_flicker.md)
+- **BEAD:** [sase-127](https://github.com/sase-org/sase--beads/blob/main/pages/sase-127/README.md)
 
 # Fix Agents-Tab Flicker And Disappearing Tribe Panels
 
