@@ -1,52 +1,50 @@
 ---
 tier: epic
 title: Complete gate decision integrity after landing audit
-goal: "Finish the gate-decision integrity contract left incomplete by sase-zr.7.1.1 so
-  every accepted execution has one verifiable owner, every failure and terminal
-  transition is durably receipt-scoped, and every requester receives actionable,
-  deduplicated recovery information without duplicate execution.
+goal: 'Finish the gate-decision integrity contract left incomplete by sase-zr.7.1.1
+  so every accepted execution has one verifiable owner, every failure and terminal
+  transition is durably receipt-scoped, and every requester receives actionable, deduplicated
+  recovery information without duplicate execution.
 
-  "
+  '
 phases:
-  - id: core-contract-completion
-    title: Complete and validate the shared gate-decision policy contract
-    depends_on: []
-    size: medium
-    description:
-      "core-contract-completion: extend the Rust wire and policy contract with
-      superseded receipt, owner-loss, liveness, and failure evidence; reject malformed
-      acceptance and failure facts; expose the completed contract through PyO3; and
-      publish a core release that downstream Python can adopt."
-  - id: terminal-transition-integrity
-    title: Serialize and journal every terminal ownership transition
-    depends_on:
-      - core-contract-completion
-    size: medium
-    description:
-      "terminal-transition-integrity: adopt the completed core contract, put supersede,
-      cancel, owner-loss, poll, reclaim, resume, and restart decisions behind one
-      bounded acceptance lock with a final recheck, and journal each owner_lost,
-      decision_superseded, and attempt_superseded transition exactly once while
-      restoring drift-deleted regression coverage."
-  - id: failure-recovery-surface
-    title: Finish the requester and recovery-notification contract
-    depends_on:
-      - terminal-transition-integrity
-    size: medium
-    description:
-      "failure-recovery-surface: publish deterministic actionable execution-failure
-      notifications, route them through ACE and every waiting requester, preserve them
-      until recovery is actually claimed or succeeds, document the failed status and
-      exit behavior, and close the remaining end-to-end and plan-gate recovery test
-      gaps."
+- id: core-contract-completion
+  title: Complete and validate the shared gate-decision policy contract
+  depends_on: []
+  size: medium
+  description: 'core-contract-completion: extend the Rust wire and policy contract
+    with superseded receipt, owner-loss, liveness, and failure evidence; reject malformed
+    acceptance and failure facts; expose the completed contract through PyO3; and
+    publish a core release that downstream Python can adopt.'
+- id: terminal-transition-integrity
+  title: Serialize and journal every terminal ownership transition
+  depends_on:
+  - core-contract-completion
+  size: medium
+  description: 'terminal-transition-integrity: adopt the completed core contract,
+    put supersede, cancel, owner-loss, poll, reclaim, resume, and restart decisions
+    behind one bounded acceptance lock with a final recheck, and journal each owner_lost,
+    decision_superseded, and attempt_superseded transition exactly once while restoring
+    drift-deleted regression coverage.'
+- id: failure-recovery-surface
+  title: Finish the requester and recovery-notification contract
+  depends_on:
+  - terminal-transition-integrity
+  size: medium
+  description: 'failure-recovery-surface: publish deterministic actionable execution-failure
+    notifications, route them through ACE and every waiting requester, preserve them
+    until recovery is actually claimed or succeeds, document the failed status and
+    exit behavior, and close the remaining end-to-end and plan-gate recovery test
+    gaps.'
 proposed_by: bbugyi200.apollo.sase-zr.7.1.1.land
 parent_bead: sase-zr.7.1.1
 create_time: 2026-09-17 19:54:34
 status: wip
+bead_id: sase-zr.7.1.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/gate_decision_integrity_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_decision_integrity_completion.md)
+- **PROMPT:** [prompts/202609/gate_decision_integrity_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_decision_integrity_completion.md)
+- **BEAD:** [sase-zr.7.1.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zr/sase-zr.7.1.1.5.md)
 
 # Complete Gate Decision Integrity After Landing Audit
 
