@@ -1,55 +1,51 @@
 ---
 tier: epic
 title: Restore SASE Master Gate and Full CI
-goal:
-  Align the required Rust core with the Python source, repair stale visual tests, and
-  restore the performance floors so Master Gate and Full CI pass without weakening their
-  checks.
+goal: Align the required Rust core with the Python source, repair stale visual tests,
+  and restore the performance floors so Master Gate and Full CI pass without weakening
+  their checks.
 phases:
-  - id: core-contract
-    title: Align the source pin and published core requirement
-    depends_on: []
-    size: small
-    description:
-      "core-contract: advance the Rust source pin and package floor to the verified
-      release containing every required binding and behavioral fix, and validate the
-      affected contracts."
-  - id: visual-contracts
-    title: Repair visual fixtures and regenerate reviewed goldens
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "visual-contracts: correct outdated tribe and job expectations and SVG text
-      assertions, then review and refresh snapshots for intentional TUI changes using
-      the pinned renderer."
-  - id: performance-floors
-    title: Reduce scan hydration and notification copy overhead
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "performance-floors: reproduce the two failing performance anchors, optimize the
-      measured Python adapter overhead while preserving contracts, and pass the existing
-      regression ceilings."
-  - id: integrated-verification
-    title: Verify the combined repair against both CI lanes
-    depends_on:
-      - core-contract
-      - visual-contracts
-      - performance-floors
-    size: medium
-    description:
-      "integrated-verification: verify the combined tree with the exact selected core,
-      the exhaustive checks, visual suite, performance floors, and current Actions
-      results, resolving any remaining failures in scope."
+- id: core-contract
+  title: Align the source pin and published core requirement
+  depends_on: []
+  size: small
+  description: 'core-contract: advance the Rust source pin and package floor to the
+    verified release containing every required binding and behavioral fix, and validate
+    the affected contracts.'
+- id: visual-contracts
+  title: Repair visual fixtures and regenerate reviewed goldens
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'visual-contracts: correct outdated tribe and job expectations and
+    SVG text assertions, then review and refresh snapshots for intentional TUI changes
+    using the pinned renderer.'
+- id: performance-floors
+  title: Reduce scan hydration and notification copy overhead
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'performance-floors: reproduce the two failing performance anchors,
+    optimize the measured Python adapter overhead while preserving contracts, and
+    pass the existing regression ceilings.'
+- id: integrated-verification
+  title: Verify the combined repair against both CI lanes
+  depends_on:
+  - core-contract
+  - visual-contracts
+  - performance-floors
+  size: medium
+  description: 'integrated-verification: verify the combined tree with the exact selected
+    core, the exhaustive checks, visual suite, performance floors, and current Actions
+    results, resolving any remaining failures in scope.'
 proposed_by: bbugyi200.athena.0mh
 create_time: 2026-09-17 15:12:07
 status: wip
+bead_id: sase-126
 ---
 
-- **PROMPT:**
-  [prompts/202609/restore_actions_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_actions_ci.md)
+- **PROMPT:** [prompts/202609/restore_actions_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_actions_ci.md)
+- **BEAD:** [sase-126](https://github.com/sase-org/sase--beads/blob/main/pages/sase-126/README.md)
 
 # Restore SASE Master Gate and Full CI
 
