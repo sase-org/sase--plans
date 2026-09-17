@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Stop Agents-tab visible-set oscillation across load tiers
-goal: Consecutive broad and bounded agent loads converge on a stable query-visible
-  roster and tribe-panel set without recycling Tier 2 reconciliation.
+goal:
+  Consecutive broad and bounded agent loads converge on a stable query-visible roster
+  and tribe-panel set without recycling Tier 2 reconciliation.
 size: medium
 proposed_by: bbugyi200.athena.sase-127.1
 bead: sase-127.1
@@ -13,6 +14,11 @@ status: done
   [202609/agents_tab_flicker.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_flicker.md)
 - **BEAD:**
   [sase-127.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-127/sase-127.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-127.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-127.1.md)
+- **COMMITS:**
+  - [7058f16](https://github.com/sase-org/sase/commit/7058f16ceb867bd5ea3f3d865c9fb24300cdd5dd)
+    — fix(agents): stabilize bounded load convergence
 
 # Stop Agents-tab visible-set oscillation across load tiers
 
