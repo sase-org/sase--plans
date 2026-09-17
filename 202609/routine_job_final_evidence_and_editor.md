@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Finish shared job identity evidence and the routine timeout editor
-goal:
-  Job identity resolution agrees across launch, assignment, wait, fork, and TUI, and
-  canonical timeout editing preserves legacy source values.
+goal: Job identity resolution agrees across launch, assignment, wait, fork, and TUI,
+  and canonical timeout editing preserves legacy source values.
 size: medium
 proposed_by: bbugyi200.athena.sase-11e.8.6.5.4.land
 bead: sase-11e.8.6.5.4
-create_time: 2026-09-17 08:33:25
-status: wip
+status: done
 ---
 
 - **PARENT:**
