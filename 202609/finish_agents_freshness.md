@@ -1,52 +1,51 @@
 ---
 tier: epic
 title: Finish Agents freshness correctness and acceptance
-goal: "Cached-roster capacity stays correct across hidden rows, empty rosters, and
+goal: 'Cached-roster capacity stays correct across hidden rows, empty rosters, and
   interleaved loads; attention polling never delays local refreshes or loses a requested
   network refresh; fresh measurements establish the integrated sase-124 freshness
   contract.
 
-  "
+  '
 parent_bead: sase-124
 phases:
-  - id: capacity-ordering
-    title: Correct capacity inputs and asynchronous result ordering
-    depends_on: []
-    size: medium
-    description: "capacity-ordering: use the canonical capacity roster including hidden
-      and empty cases, guard all changing inputs, and keep stale-result recomputation
-      off the UI thread with deterministic race regressions.
+- id: capacity-ordering
+  title: Correct capacity inputs and asynchronous result ordering
+  depends_on: []
+  size: medium
+  description: 'capacity-ordering: use the canonical capacity roster including hidden
+    and empty cases, guard all changing inputs, and keep stale-result recomputation
+    off the UI thread with deterministic race regressions.
 
-      "
-  - id: attention-scheduling
-    title: Preserve attention refresh intent without delaying local surfaces
-    depends_on:
-      - capacity-ordering
-    size: medium
-    description: "attention-scheduling: detach cache and network attention work from
-      local ticks, preserve stronger pending network requests, and record poll duration
-      and mode with deterministic scheduling regressions.
+    '
+- id: attention-scheduling
+  title: Preserve attention refresh intent without delaying local surfaces
+  depends_on:
+  - capacity-ordering
+  size: medium
+  description: 'attention-scheduling: detach cache and network attention work from
+    local ticks, preserve stronger pending network requests, and record poll duration
+    and mode with deterministic scheduling regressions.
 
-      "
-  - id: acceptance
-    title: Prove freshness on the integrated athena tree
-    depends_on:
-      - capacity-ordering
-      - attention-scheduling
-    size: medium
-    description:
-      "acceptance: integrate intervening refresh changes, capture fresh busy and idle
-      session evidence plus scripted marker and capacity latencies, rerun relevant
-      benches, and attribute every inherited acceptance proposal."
+    '
+- id: acceptance
+  title: Prove freshness on the integrated athena tree
+  depends_on:
+  - capacity-ordering
+  - attention-scheduling
+  size: medium
+  description: 'acceptance: integrate intervening refresh changes, capture fresh busy
+    and idle session evidence plus scripted marker and capacity latencies, rerun relevant
+    benches, and attribute every inherited acceptance proposal.'
 proposed_by: bbugyi200.athena.sase-124.land
 create_time: 2026-09-17 17:43:26
 status: wip
+bead_id: sase-124.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_agents_freshness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agents_freshness.md)
-- **PARENT:**
-  [202609/agents_tab_freshness.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_freshness.md)
+- **PROMPT:** [prompts/202609/finish_agents_freshness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agents_freshness.md)
+- **PARENT:** [202609/agents_tab_freshness.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_freshness.md)
+- **BEAD:** [sase-124.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-124/sase-124.8.md)
 
 # Finish Agents freshness correctness and acceptance
 
