@@ -1,72 +1,67 @@
 ---
 tier: epic
 title: Agent screenshots of a real sase TUI (sase screenshot)
-goal: "Agents can launch a real `sase tui` locally or on a remote machine, drive it with
-  keypresses, and capture a canonical PNG of the live screen; TUI memory is restructured
+goal: 'Agents can launch a real `sase tui` locally or on a remote machine, drive it
+  with keypresses, and capture a canonical PNG of the live screen; TUI memory is restructured
   under a new tui.md reference note that inlines tui_screenshot.md and tui_perf.md.
 
-  "
+  '
 phases:
-  - id: visual-render-promotion
-    title: Promote the canonical rasterizer out of tests/
-    depends_on: []
-    size: small
-    description:
-      "visual-render-promotion: move render_svg_to_png and the bundled fonts from
-      tests/ace/tui/visual/ into a runtime src/sase module with lazy resvg/pillow
-      imports, repoint the visual suite at it, and verify goldens stay byte-identical."
-  - id: live-screenshot-export
-    title: Externally-triggerable live-app screenshot export
-    depends_on: []
-    size: medium
-    description:
-      "live-screenshot-export: add the per-window request-dir protocol and a
-      SIGUSR2-triggered, settle-then-export SVG capture to the live TUI, with the tmux
-      launcher injecting SASE_TUI_SCREENSHOT_DIR and printing the dir."
-  - id: screenshot-cli
-    title: sase screenshot local orchestration
-    depends_on:
-      - visual-render-promotion
-      - live-screenshot-export
-    size: medium
-    description:
-      "screenshot-cli: add the top-level command that launches the TUI in tmux with
-      fixed geometry, sends keys with regex settle-waits, triggers the in-app SVG
-      export, rasterizes to PNG, and cleans up the window unless --keep/--window."
-  - id: screenshot-remote
-    title: Remote capture via --host
-    depends_on:
-      - screenshot-cli
-    size: medium
-    description:
-      "screenshot-remote: resolve enrolled machine aliases or raw SSH destinations, run
-      the SVG capture leg remotely over SSH with a contract probe and cleanup modeled on
-      sudo/ssh.py, rasterize locally, and report the remote sase version."
-  - id: memory-inline-embeds
-    title: Flat-note inline embedding in memory reads
-    depends_on: []
-    size: medium
-    description:
-      "memory-inline-embeds: make sase memory read/show render ![[target]] links of flat
-      notes inline with depth caps, cycle guards, and no duplicate reference/children
-      listings, updating docs and the test locking old behavior."
-  - id: tui-memory-notes
-    title: Author the TUI memory notes
-    depends_on:
-      - screenshot-remote
-      - memory-inline-embeds
-    size: small
-    description:
-      "tui-memory-notes: create tui.md and tui_screenshot.md, reparent tui_perf.md under
-      tui.md, link tui_screenshot from lint_and_test.md, and regenerate agent
-      instructions via sase memory init."
+- id: visual-render-promotion
+  title: Promote the canonical rasterizer out of tests/
+  depends_on: []
+  size: small
+  description: 'visual-render-promotion: move render_svg_to_png and the bundled fonts
+    from tests/ace/tui/visual/ into a runtime src/sase module with lazy resvg/pillow
+    imports, repoint the visual suite at it, and verify goldens stay byte-identical.'
+- id: live-screenshot-export
+  title: Externally-triggerable live-app screenshot export
+  depends_on: []
+  size: medium
+  description: 'live-screenshot-export: add the per-window request-dir protocol and
+    a SIGUSR2-triggered, settle-then-export SVG capture to the live TUI, with the
+    tmux launcher injecting SASE_TUI_SCREENSHOT_DIR and printing the dir.'
+- id: screenshot-cli
+  title: sase screenshot local orchestration
+  depends_on:
+  - visual-render-promotion
+  - live-screenshot-export
+  size: medium
+  description: 'screenshot-cli: add the top-level command that launches the TUI in
+    tmux with fixed geometry, sends keys with regex settle-waits, triggers the in-app
+    SVG export, rasterizes to PNG, and cleans up the window unless --keep/--window.'
+- id: screenshot-remote
+  title: Remote capture via --host
+  depends_on:
+  - screenshot-cli
+  size: medium
+  description: 'screenshot-remote: resolve enrolled machine aliases or raw SSH destinations,
+    run the SVG capture leg remotely over SSH with a contract probe and cleanup modeled
+    on sudo/ssh.py, rasterize locally, and report the remote sase version.'
+- id: memory-inline-embeds
+  title: Flat-note inline embedding in memory reads
+  depends_on: []
+  size: medium
+  description: 'memory-inline-embeds: make sase memory read/show render ![[target]]
+    links of flat notes inline with depth caps, cycle guards, and no duplicate reference/children
+    listings, updating docs and the test locking old behavior.'
+- id: tui-memory-notes
+  title: Author the TUI memory notes
+  depends_on:
+  - screenshot-remote
+  - memory-inline-embeds
+  size: small
+  description: 'tui-memory-notes: create tui.md and tui_screenshot.md, reparent tui_perf.md
+    under tui.md, link tui_screenshot from lint_and_test.md, and regenerate agent
+    instructions via sase memory init.'
 proposed_by: bbugyi200.athena.0m5
 create_time: 2026-09-17 08:43:25
 status: wip
+bead_id: sase-123
 ---
 
-- **PROMPT:**
-  [prompts/202609/tui_agent_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tui_agent_screenshots.md)
+- **PROMPT:** [prompts/202609/tui_agent_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tui_agent_screenshots.md)
+- **BEAD:** [sase-123](https://github.com/sase-org/sase--beads/blob/main/pages/sase-123/README.md)
 
 # Agent Screenshots Of A Real `sase tui` (`sase screenshot`)
 
