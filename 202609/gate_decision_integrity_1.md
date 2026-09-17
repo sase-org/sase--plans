@@ -1,75 +1,66 @@
 ---
 tier: epic
-title:
-  "Gate decision integrity: owned execution, durable failure outcomes, truthful
-  completion"
-goal:
-  An accepted gate decision can never be superseded or cancelled while its execution
-  owner is live; every post-acceptance failure (option command, terminal preparation or
-  archive, side effects, follow-up, or owner death) leaves a redacted, durable,
+title: 'Gate decision integrity: owned execution, durable failure outcomes, truthful
+  completion'
+goal: An accepted gate decision can never be superseded or cancelled while its execution
+  owner is live; every post-acceptance failure (option command, terminal preparation
+  or archive, side effects, follow-up, or owner death) leaves a redacted, durable,
   receipt-scoped failure outcome; attempt_completed is journaled only after the response
-  is published; resume retries only the failed work; poll_gate and every waiting
-  requester receive a failure result instead of a false pending or already_answered; and
-  each failure publishes one deduped notification carrying resume, restart and cancel
-  recovery.
+  is published; resume retries only the failed work; poll_gate and every waiting requester
+  receive a failure result instead of a false pending or already_answered; and each
+  failure publishes one deduped notification carrying resume, restart and cancel recovery.
 parent_bead: sase-zr.7.1
 phases:
-  - id: core_execution_policy
-    title: Execution owner, failure outcome and liveness policy in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core_execution_policy: in sase-core, add the execution owner, acceptance id,
-      execution-facts and failure-outcome wires; make decide_gate_decision_acceptance
-      reject conflicts while the owner is live and supersede only after a failed outcome
-      or a proven-dead owner; add cancellation-over-receipt precedence and
-      accepted_failed/accepted_owner_lost dispositions with cancel/supersede permissions
-      to decide_gate_lifecycle; add claim_gate_decision_execution; cover it with Rust
-      and PyO3 binding tests; land it so release-plz publishes it."
-  - id: failure_journal
-    title:
-      Receipt-scoped journal, truthful attempt completion and durable failure outcomes
-    depends_on:
-      - core_execution_policy
-    size: medium
-    description:
-      "failure_journal: in sase, adopt the new core revision, stamp every receipt and
-      journal lifecycle event with an acceptance id, record a redacted attempt_failed
-      outcome for command, terminal_prepare, side_effects and follow_up failures,
-      journal attempt_completed only after response.json is published, make resume retry
-      only archive/terminal preparation or failed side effects without re-running
-      completed commands, and keep legacy early-completed journals resumable."
-  - id: owner_conflict
-    title:
-      Verifiable owner, live-owner conflict rejection and post-failure supersede/cancel
-    depends_on:
-      - failure_journal
-    size: medium
-    description:
-      "owner_conflict: in sase, record the execution owner on every receipt, collect
-      lock/pid/proc liveness and failure facts for the core policy, reject a conflicting
-      answer while the owner is live, supersede or cancel only after a failed outcome or
-      proven-dead owner, re-own the receipt under the acceptance lock before execution,
-      and teach lifecycle, reclaim, gate show and gate cancel the new dispositions."
-  - id: failure_surfacing
-    title: Failure results for requesters and deduped recovery notifications
-    depends_on:
-      - owner_conflict
-    size: medium
-    description:
-      "failure_surfacing: in sase, give poll_gate a failed status, record owner_lost on
-      the poll and reclaim paths, keep waiting requesters honest through their
-      deadlines, update sase gate wait and the other requesters, publish one deduped
-      GateExecutionFailed notification per failure with resume/restart/cancel recovery,
-      dismiss it on success, supersede or cancel, add a minimal ACE fallback for the new
-      action, and run the combined verification."
+- id: core_execution_policy
+  title: Execution owner, failure outcome and liveness policy in sase-core
+  depends_on: []
+  size: medium
+  description: 'core_execution_policy: in sase-core, add the execution owner, acceptance
+    id, execution-facts and failure-outcome wires; make decide_gate_decision_acceptance
+    reject conflicts while the owner is live and supersede only after a failed outcome
+    or a proven-dead owner; add cancellation-over-receipt precedence and accepted_failed/accepted_owner_lost
+    dispositions with cancel/supersede permissions to decide_gate_lifecycle; add claim_gate_decision_execution;
+    cover it with Rust and PyO3 binding tests; land it so release-plz publishes it.'
+- id: failure_journal
+  title: Receipt-scoped journal, truthful attempt completion and durable failure outcomes
+  depends_on:
+  - core_execution_policy
+  size: medium
+  description: 'failure_journal: in sase, adopt the new core revision, stamp every
+    receipt and journal lifecycle event with an acceptance id, record a redacted attempt_failed
+    outcome for command, terminal_prepare, side_effects and follow_up failures, journal
+    attempt_completed only after response.json is published, make resume retry only
+    archive/terminal preparation or failed side effects without re-running completed
+    commands, and keep legacy early-completed journals resumable.'
+- id: owner_conflict
+  title: Verifiable owner, live-owner conflict rejection and post-failure supersede/cancel
+  depends_on:
+  - failure_journal
+  size: medium
+  description: 'owner_conflict: in sase, record the execution owner on every receipt,
+    collect lock/pid/proc liveness and failure facts for the core policy, reject a
+    conflicting answer while the owner is live, supersede or cancel only after a failed
+    outcome or proven-dead owner, re-own the receipt under the acceptance lock before
+    execution, and teach lifecycle, reclaim, gate show and gate cancel the new dispositions.'
+- id: failure_surfacing
+  title: Failure results for requesters and deduped recovery notifications
+  depends_on:
+  - owner_conflict
+  size: medium
+  description: 'failure_surfacing: in sase, give poll_gate a failed status, record
+    owner_lost on the poll and reclaim paths, keep waiting requesters honest through
+    their deadlines, update sase gate wait and the other requesters, publish one deduped
+    GateExecutionFailed notification per failure with resume/restart/cancel recovery,
+    dismiss it on success, supersede or cancel, add a minimal ACE fallback for the
+    new action, and run the combined verification.'
 proposed_by: bbugyi200.apollo.sase-zr.7.1
 create_time: 2026-09-17 06:47:18
 status: wip
+bead_id: sase-zr.7.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/gate_decision_integrity_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_decision_integrity_1.md)
+- **PROMPT:** [prompts/202609/gate_decision_integrity_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/gate_decision_integrity_1.md)
+- **BEAD:** [sase-zr.7.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zr/sase-zr.7.1.1.md)
 
 # Gate decision integrity: owned execution, durable failure outcomes, truthful completion
 
