@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Cut bounded Tier 1 loader decode amplification
-goal:
-  Restore bounded Agents-list load cost by filtering non-projectable index records
+goal: Restore bounded Agents-list load cost by filtering non-projectable index records
   before JSON hydration while preserving loader parity.
 size: medium
 proposed_by: bbugyi200.athena.sase-132.3
 bead: sase-132.3
-create_time: 2026-09-18 16:44:56
-status: wip
+status: done
 ---
 
 - **PARENT:**
