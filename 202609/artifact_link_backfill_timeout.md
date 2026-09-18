@@ -1,75 +1,75 @@
 ---
 tier: epic
 title: Fix artifact_link_backfill hourly 300s SIGKILL
-goal: "The hourly artifact_link_backfill chop finishes every project inside its 240s
+goal: 'The hourly artifact_link_backfill chop finishes every project inside its 240s
   budget, bead endpoint projection costs one store open per pass instead of one per
   endpoint, deadline expiry defers publication work cleanly instead of dying by SIGKILL,
   and the artifact-link outbox stops accumulating identical duplicate events.
 
-  "
+  '
 phases:
-  - id: rust-batched-projection
-    title: Batched bead endpoint projection in sase-core
-    depends_on: []
-    size: medium
-    description: "rust-batched-projection: add a batched bead endpoint projection
-      operation to the sase_core crate and its PyO3 binding that applies N projection
-      specs with one store open/load and one persist, with sequential-parity semantics,
-      per-spec outcomes, contract-validator updates, and a performance measurement gate.
+- id: rust-batched-projection
+  title: Batched bead endpoint projection in sase-core
+  depends_on: []
+  size: medium
+  description: 'rust-batched-projection: add a batched bead endpoint projection operation
+    to the sase_core crate and its PyO3 binding that applies N projection specs with
+    one store open/load and one persist, with sequential-parity semantics, per-spec
+    outcomes, contract-validator updates, and a performance measurement gate.
 
-      "
-  - id: python-batched-adoption
-    title: One batched Rust call per apply pass
-    depends_on:
-      - rust-batched-projection
-    size: medium
-    description: "python-batched-adoption: rework apply_events_to_beads to collect every
-      endpoint projection it currently issues one Rust call at a time and submit them as
-      a single batched call through a new facade wrapper, preserving affected-key
-      computation, changed aggregation, commit-once, and receipt semantics.
+    '
+- id: python-batched-adoption
+  title: One batched Rust call per apply pass
+  depends_on:
+  - rust-batched-projection
+  size: medium
+  description: 'python-batched-adoption: rework apply_events_to_beads to collect every
+    endpoint projection it currently issues one Rust call at a time and submit them
+    as a single batched call through a new facade wrapper, preserving affected-key
+    computation, changed aggregation, commit-once, and receipt semantics.
 
-      "
-  - id: deadline-propagation
-    title: Chop budget reaches every publication step
-    depends_on:
-      - python-batched-adoption
-    size: medium
-    description: "deadline-propagation: thread an optional monotonic deadline from the
-      artifact_link_backfill chop through persist_derived_link_candidates,
-      drain_artifact_link_outbox, publish_artifact_link_events, and
-      apply_events_to_beads so expiry defers remaining work with diagnostics and no
-      receipts, leaving deferred outbox entries queued for the next tick.
+    '
+- id: deadline-propagation
+  title: Chop budget reaches every publication step
+  depends_on:
+  - python-batched-adoption
+  size: medium
+  description: 'deadline-propagation: thread an optional monotonic deadline from the
+    artifact_link_backfill chop through persist_derived_link_candidates, drain_artifact_link_outbox,
+    publish_artifact_link_events, and apply_events_to_beads so expiry defers remaining
+    work with diagnostics and no receipts, leaving deferred outbox entries queued
+    for the next tick.
 
-      "
-  - id: outbox-hygiene-and-chop-hardening
-    title: Stop the duplicate and fairness amplification
-    depends_on: []
-    size: small
-    description: "outbox-hygiene-and-chop-hardening: make
-      append_artifact_link_outbox_event skip byte-identical duplicate events for an
-      already-queued operation_id, and persist the chop's fairness cursor at project
-      start so a hard kill still rotates the project order on the next tick.
+    '
+- id: outbox-hygiene-and-chop-hardening
+  title: Stop the duplicate and fairness amplification
+  depends_on: []
+  size: small
+  description: 'outbox-hygiene-and-chop-hardening: make append_artifact_link_outbox_event
+    skip byte-identical duplicate events for an already-queued operation_id, and persist
+    the chop''s fairness cursor at project start so a hard kill still rotates the
+    project order on the next tick.
 
-      "
-  - id: end-to-end-verification
-    title: Prove the hourly job converges on real state
-    depends_on:
-      - python-batched-adoption
-      - deadline-propagation
-      - outbox-hygiene-and-chop-hardening
-    size: small
-    description:
-      "end-to-end-verification: run the chop manually against real machine state,
-      confirm gh_sase-org__sase completes well under budget, the duplicated derived
-      outbox backlog collapses, checkpoints and cursor advance, and subsequent scheduled
-      runs produce no new timeout digests."
+    '
+- id: end-to-end-verification
+  title: Prove the hourly job converges on real state
+  depends_on:
+  - python-batched-adoption
+  - deadline-propagation
+  - outbox-hygiene-and-chop-hardening
+  size: small
+  description: 'end-to-end-verification: run the chop manually against real machine
+    state, confirm gh_sase-org__sase completes well under budget, the duplicated derived
+    outbox backlog collapses, checkpoints and cursor advance, and subsequent scheduled
+    runs produce no new timeout digests.'
 proposed_by: bbugyi200.athena.0n5
 create_time: 2026-09-18 14:40:52
 status: wip
+bead_id: sase-131
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_backfill_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_backfill_timeout.md)
+- **PROMPT:** [prompts/202609/artifact_link_backfill_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_backfill_timeout.md)
+- **BEAD:** [sase-131](https://github.com/sase-org/sase--beads/blob/main/pages/sase-131/README.md)
 
 # Fix the hourly `artifact_link_backfill` 300s SIGKILL on large projects
 
