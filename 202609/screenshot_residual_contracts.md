@@ -1,56 +1,51 @@
 ---
 tier: epic
 title: Finish screenshot failure paths and nested memory rendering
-goal:
-  Close the reproduced launch, retained-target, settling, and nested-memory gaps left in
-  sase-123.7 without redoing its completed renderer and transport work.
+goal: Close the reproduced launch, retained-target, settling, and nested-memory gaps
+  left in sase-123.7 without redoing its completed renderer and transport work.
 parent_bead: sase-123.7
 phases:
-  - id: launch-failure-ownership
-    title: Guard launch ownership and preserve timeout diagnostics
-    depends_on: []
-    description:
-      "launch-failure-ownership: clean up claims and owned windows across launch
-      exceptions, normalize CLI errors, and retain the last pane text on polling
-      timeouts."
-    size: medium
-  - id: retained-target-contract
-    title: Preserve remote window identity and usable iteration guidance
-    depends_on:
-      - launch-failure-ownership
-    description:
-      "retained-target-contract: carry the printed unique tmux target through SSH
-      metadata and hints, prove both shell boundaries, and correct the authorized
-      screenshot-memory target key."
-    size: medium
-  - id: nested-memory-listings
-    title: Preserve unread descendants and suppress nested duplicate listings
-    depends_on: []
-    description:
-      "nested-memory-listings: recursively normalize inline-note listings across
-      Markdown, Rich, and JSON while preserving discoverable unread descendants and
-      existing batch deduplication."
-    size: medium
-  - id: finite-visual-settling
-    title: Bound finite visual settling and verify the repaired workflow
-    depends_on:
-      - launch-failure-ownership
-      - retained-target-contract
-      - nested-memory-listings
-    description:
-      "finite-visual-settling: distinguish pending finite visual work from recurring
-      background work, bound awaited refreshes, and exercise the repaired local, remote,
-      and memory contracts together."
-    size: medium
+- id: launch-failure-ownership
+  title: Guard launch ownership and preserve timeout diagnostics
+  depends_on: []
+  description: 'launch-failure-ownership: clean up claims and owned windows across
+    launch exceptions, normalize CLI errors, and retain the last pane text on polling
+    timeouts.'
+  size: medium
+- id: retained-target-contract
+  title: Preserve remote window identity and usable iteration guidance
+  depends_on:
+  - launch-failure-ownership
+  description: 'retained-target-contract: carry the printed unique tmux target through
+    SSH metadata and hints, prove both shell boundaries, and correct the authorized
+    screenshot-memory target key.'
+  size: medium
+- id: nested-memory-listings
+  title: Preserve unread descendants and suppress nested duplicate listings
+  depends_on: []
+  description: 'nested-memory-listings: recursively normalize inline-note listings
+    across Markdown, Rich, and JSON while preserving discoverable unread descendants
+    and existing batch deduplication.'
+  size: medium
+- id: finite-visual-settling
+  title: Bound finite visual settling and verify the repaired workflow
+  depends_on:
+  - launch-failure-ownership
+  - retained-target-contract
+  - nested-memory-listings
+  description: 'finite-visual-settling: distinguish pending finite visual work from
+    recurring background work, bound awaited refreshes, and exercise the repaired
+    local, remote, and memory contracts together.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-123.7.land
 create_time: 2026-09-18 00:03:27
 status: wip
+bead_id: sase-123.7.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/screenshot_residual_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/screenshot_residual_contracts.md)
-- **PARENT:**
-  [202609/complete_tui_screenshots.md](https://github.com/sase-org/sase--plans/blob/main/202609/complete_tui_screenshots.md)
+- **PROMPT:** [prompts/202609/screenshot_residual_contracts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/screenshot_residual_contracts.md)
+- **PARENT:** [202609/complete_tui_screenshots.md](https://github.com/sase-org/sase--plans/blob/main/202609/complete_tui_screenshots.md)
+- **BEAD:** [sase-123.7.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-123/sase-123.7.6.md)
 
 # Finish screenshot failure paths and nested memory rendering
 
