@@ -1,17 +1,16 @@
 ---
 tier: tale
 title: Service host runtime and CLI
-goal: "Ship the flag-gated per-machine SASE service host, service-proc and scheduler
+goal: 'Ship the flag-gated per-machine SASE service host, service-proc and scheduler
   command surfaces, scheduler ownership handover, durable proc recording, and detached
   fallback required by phase sase-11y.4 without exposing unfinished platform-unit
   integration or allowing two supervisors to own the scheduler.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.4
 bead: sase-11y.4
-create_time: 2026-09-18 04:28:38
-status: wip
+status: done
 ---
 
 - **PARENT:**
