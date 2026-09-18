@@ -1,66 +1,60 @@
 ---
 tier: epic
 title: Complete the screenshot and inline-memory contracts
-goal:
-  Live TUI captures reliably address and clean up their own window, remote captures
+goal: Live TUI captures reliably address and clean up their own window, remote captures
   preserve arguments across SSH, and inline memory reads render each target once with
   complete agent workflow guidance.
 parent_bead: sase-123
 phases:
-  - id: canonical-renderer
-    title: Restore one renderer for screenshots and visual snapshots
-    size: small
-    depends_on: []
-    description:
-      "canonical-renderer: remove the test-side rasterizer copy reintroduced by
-      concurrent commits and repoint visual helpers and fingerprints to the packaged
-      runtime renderer without changing pixels."
-  - id: capture-lifecycle
-    title: Make local capture ownership, deadlines, and settling reliable
-    size: medium
-    depends_on: []
-    description:
-      "capture-lifecycle: correct tmux window ownership and failure cleanup, propagate
-      the capture deadline through launch, and wait for a settled live frame without
-      blocking Textual."
-  - id: ssh-contract
-    title: Preserve the remote shell contract and cleanup
-    size: medium
-    depends_on:
-      - capture-lifecycle
-    description:
-      "ssh-contract: quote the complete remote command correctly, prove literal argument
-      forwarding and actual file cleanup, and preserve bounded failures and the shared
-      SSH target resolver."
-  - id: memory-deduplication
-    title: Deduplicate inline memory across the complete read
-    size: medium
-    depends_on: []
-    description:
-      "memory-deduplication: render shared inline notes once across roots, suppress
-      already-rendered references and children consistently, and keep depth, cycle, and
-      audit semantics correct."
-  - id: workflow-acceptance
-    title: Complete screenshot guidance and verify the integrated workflow
-    size: medium
-    depends_on:
-      - canonical-renderer
-      - capture-lifecycle
-      - ssh-contract
-      - memory-deduplication
-    description:
-      "workflow-acceptance: complete the originally approved screenshot memory content
-      and verify real local capture, retained-window iteration, remote shell behavior,
-      and memory read integration against the newer TUI changes."
+- id: canonical-renderer
+  title: Restore one renderer for screenshots and visual snapshots
+  size: small
+  depends_on: []
+  description: 'canonical-renderer: remove the test-side rasterizer copy reintroduced
+    by concurrent commits and repoint visual helpers and fingerprints to the packaged
+    runtime renderer without changing pixels.'
+- id: capture-lifecycle
+  title: Make local capture ownership, deadlines, and settling reliable
+  size: medium
+  depends_on: []
+  description: 'capture-lifecycle: correct tmux window ownership and failure cleanup,
+    propagate the capture deadline through launch, and wait for a settled live frame
+    without blocking Textual.'
+- id: ssh-contract
+  title: Preserve the remote shell contract and cleanup
+  size: medium
+  depends_on:
+  - capture-lifecycle
+  description: 'ssh-contract: quote the complete remote command correctly, prove literal
+    argument forwarding and actual file cleanup, and preserve bounded failures and
+    the shared SSH target resolver.'
+- id: memory-deduplication
+  title: Deduplicate inline memory across the complete read
+  size: medium
+  depends_on: []
+  description: 'memory-deduplication: render shared inline notes once across roots,
+    suppress already-rendered references and children consistently, and keep depth,
+    cycle, and audit semantics correct.'
+- id: workflow-acceptance
+  title: Complete screenshot guidance and verify the integrated workflow
+  size: medium
+  depends_on:
+  - canonical-renderer
+  - capture-lifecycle
+  - ssh-contract
+  - memory-deduplication
+  description: 'workflow-acceptance: complete the originally approved screenshot memory
+    content and verify real local capture, retained-window iteration, remote shell
+    behavior, and memory read integration against the newer TUI changes.'
 proposed_by: bbugyi200.athena.sase-123.land
 create_time: 2026-09-17 21:13:46
 status: wip
+bead_id: sase-123.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/complete_tui_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_tui_screenshots.md)
-- **PARENT:**
-  [202609/tui_agent_screenshots.md](https://github.com/sase-org/sase--plans/blob/main/202609/tui_agent_screenshots.md)
+- **PROMPT:** [prompts/202609/complete_tui_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_tui_screenshots.md)
+- **PARENT:** [202609/tui_agent_screenshots.md](https://github.com/sase-org/sase--plans/blob/main/202609/tui_agent_screenshots.md)
+- **BEAD:** [sase-123.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-123/sase-123.7.md)
 
 # Complete the screenshot and inline-memory contracts
 
