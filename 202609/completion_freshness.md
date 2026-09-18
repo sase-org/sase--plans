@@ -1,42 +1,41 @@
 ---
 tier: epic
 title: Keep installed shell completion fresh across SASE upgrades
-goal:
-  Bash, fish, and zsh completion follow the installed SASE command tree after upgrades,
-  including screenshot, with the same behavior on machines with and without chezmoi and
-  without rebuilding the parser on every completion.
+goal: Bash, fish, and zsh completion follow the installed SASE command tree after
+  upgrades, including screenshot, with the same behavior on machines with and without
+  chezmoi and without rebuilding the parser on every completion.
 phases:
-  - id: runtime-loaders
-    title: Cached grammar resolution and portable shell loaders
-    depends_on: []
-    size: medium
-    description:
-      "runtime-loaders: add a lightweight completion ensure fast path, runtime-aware
-      grammar caches, and portable loaders for bash, fish, and zsh, preserving the
-      existing raw script generators and candidate fast path."
-  - id: install-update
-    title: Install, refresh, update, and diagnostic integration
-    depends_on:
-      - runtime-loaders
-    size: medium
-    description:
-      "install-update: make stamped installs use the loaders, refresh both local and
-      chezmoi-owned installs, include successful update mode switches, and distinguish
-      loader registration from cached grammar freshness in diagnostics."
-  - id: chezmoi-integration
-    title: Chezmoi migration and upgrade regression coverage
-    depends_on:
-      - runtime-loaders
-      - install-update
-    size: medium
-    description:
-      "chezmoi-integration: distribute portable loaders instead of frozen grammar and
-      runtime stamps, migrate the linked chezmoi configuration, prove upgrade behavior
-      through real shells and repeated applies, and document the lifecycle."
+- id: runtime-loaders
+  title: Cached grammar resolution and portable shell loaders
+  depends_on: []
+  size: medium
+  description: 'runtime-loaders: add a lightweight completion ensure fast path, runtime-aware
+    grammar caches, and portable loaders for bash, fish, and zsh, preserving the existing
+    raw script generators and candidate fast path.'
+- id: install-update
+  title: Install, refresh, update, and diagnostic integration
+  depends_on:
+  - runtime-loaders
+  size: medium
+  description: 'install-update: make stamped installs use the loaders, refresh both
+    local and chezmoi-owned installs, include successful update mode switches, and
+    distinguish loader registration from cached grammar freshness in diagnostics.'
+- id: chezmoi-integration
+  title: Chezmoi migration and upgrade regression coverage
+  depends_on:
+  - runtime-loaders
+  - install-update
+  size: medium
+  description: 'chezmoi-integration: distribute portable loaders instead of frozen
+    grammar and runtime stamps, migrate the linked chezmoi configuration, prove upgrade
+    behavior through real shells and repeated applies, and document the lifecycle.'
 proposed_by: bbugyi200.apollo.0f
 create_time: 2026-09-18 06:05:17
 status: wip
+bead_id: sase-12o
 ---
+
+- **BEAD:** [sase-12o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12o/README.md)
 
 # Keep installed shell completion fresh across SASE upgrades
 
