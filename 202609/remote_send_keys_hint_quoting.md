@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Make the remote screenshot send-keys hint apostrophe-safe
-goal:
-  The printed remote send-keys hint carries an arbitrary single-line key through both
-  the local and remote shells without syntax errors or argument splitting.
+goal: The printed remote send-keys hint carries an arbitrary single-line key through
+  both the local and remote shells without syntax errors or argument splitting.
 phases:
-  - id: shell-safe-key-template
-    title: Preserve arbitrary key text across both SSH shell boundaries
-    depends_on: []
-    size: small
-    description:
-      "shell-safe-key-template: repair the printed hint and prove apostrophes and other
-      harmless shell metacharacters reach tmux as one exact argument."
+- id: shell-safe-key-template
+  title: Preserve arbitrary key text across both SSH shell boundaries
+  depends_on: []
+  size: small
+  description: 'shell-safe-key-template: repair the printed hint and prove apostrophes
+    and other harmless shell metacharacters reach tmux as one exact argument.'
 proposed_by: bbugyi200.athena.sase-123.7.6.land
 parent_bead: sase-123.7.6
 create_time: 2026-09-18 02:08:30
 status: wip
+bead_id: sase-123.7.6.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/remote_send_keys_hint_quoting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_send_keys_hint_quoting.md)
-- **PARENT:**
-  [202609/screenshot_residual_contracts.md](https://github.com/sase-org/sase--plans/blob/main/202609/screenshot_residual_contracts.md)
+- **PROMPT:** [prompts/202609/remote_send_keys_hint_quoting.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_send_keys_hint_quoting.md)
+- **PARENT:** [202609/screenshot_residual_contracts.md](https://github.com/sase-org/sase--plans/blob/main/202609/screenshot_residual_contracts.md)
+- **BEAD:** [sase-123.7.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-123/sase-123.7.6.5.md)
 
 # Plan: Make the remote screenshot send-keys hint apostrophe-safe
 
