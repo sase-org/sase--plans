@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Gateway builtin and Telegram plugin migration
-goal: The service host can own the mobile gateway and Telegram receiver without duplicate
+goal:
+  The service host can own the mobile gateway and Telegram receiver without duplicate
   supervisors or restart-created pairing challenges.
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.6
@@ -13,6 +14,11 @@ status: done
   [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
 - **BEAD:**
   [sase-11y.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11y.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11y.6.md)
+- **COMMITS:**
+  - [2f76876](https://github.com/sase-org/sase-telegram/commit/2f768762d2aba05cafa52ba7a7ec96d71a4342d9)
+    — feat(receiver): register service-host proc
 
 # Gateway builtin and Telegram plugin migration
 
