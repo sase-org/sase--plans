@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Wire owner presentation facts through fleet rows
-goal:
-  Remote fleet rows carry the status, lineage, tribe, and runtime facts needed to
-  reproduce the owner's presentation while remaining compatible with older payloads.
+goal: Remote fleet rows carry the status, lineage, tribe, and runtime facts needed
+  to reproduce the owner's presentation while remaining compatible with older payloads.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.2
 bead: sase-133.2
-create_time: 2026-09-18 17:59:00
-status: wip
+status: done
 ---
 
 - **PARENT:**
