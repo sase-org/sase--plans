@@ -1,45 +1,42 @@
 ---
 tier: epic
 title: Keep artifact-link bead projection within the housekeeping deadline
-goal:
-  The artifact_link_backfill chop projects complete event truth into beads through
-  bounded bulk mutations, preserves durable receipts and hidden-clone safety, and exits
-  normally before Axe's 300-second timeout.
+goal: The artifact_link_backfill chop projects complete event truth into beads through
+  bounded bulk mutations, preserves durable receipts and hidden-clone safety, and
+  exits normally before Axe's 300-second timeout.
 phases:
-  - id: projection_batch_core
-    title: Add an atomic bulk bead-projection core API
-    depends_on: []
-    size: medium
-    description:
-      "projection_batch_core: add and publish a Rust/PyO3 batch mutation that preserves
-      the exact single-projection receipt and convergence contract while taking one bead
-      lock, loading once, and saving once per bounded batch."
-  - id: deadline_aware_projection
-    title: Batch and bound artifact-link projection in SASE
-    depends_on:
-      - projection_batch_core
-    size: medium
-    description:
-      "deadline_aware_projection: pin the published core capability, route full-truth
-      bead projection through bounded batches, and propagate the chop deadline so
-      partial progress is committed and safely retried instead of being SIGKILLed."
-  - id: production_acceptance
-    title: Prove convergence and scheduled-job completion
-    depends_on:
-      - projection_batch_core
-      - deadline_aware_projection
-    size: small
-    description:
-      "production_acceptance: exercise the production backfill path against a scaled
-      fixture and one controlled live run, proving the queued operations converge,
-      hidden sidecars remain clean, and the chop completes below its soft budget."
+- id: projection_batch_core
+  title: Add an atomic bulk bead-projection core API
+  depends_on: []
+  size: medium
+  description: 'projection_batch_core: add and publish a Rust/PyO3 batch mutation
+    that preserves the exact single-projection receipt and convergence contract while
+    taking one bead lock, loading once, and saving once per bounded batch.'
+- id: deadline_aware_projection
+  title: Batch and bound artifact-link projection in SASE
+  depends_on:
+  - projection_batch_core
+  size: medium
+  description: 'deadline_aware_projection: pin the published core capability, route
+    full-truth bead projection through bounded batches, and propagate the chop deadline
+    so partial progress is committed and safely retried instead of being SIGKILLed.'
+- id: production_acceptance
+  title: Prove convergence and scheduled-job completion
+  depends_on:
+  - projection_batch_core
+  - deadline_aware_projection
+  size: small
+  description: 'production_acceptance: exercise the production backfill path against
+    a scaled fixture and one controlled live run, proving the queued operations converge,
+    hidden sidecars remain clean, and the chop completes below its soft budget.'
 proposed_by: bbugyi200.apollo.0k
 create_time: 2026-09-18 09:47:54
 status: wip
+bead_id: sase-12y
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_projection_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_projection_timeout.md)
+- **PROMPT:** [prompts/202609/artifact_link_projection_timeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_projection_timeout.md)
+- **BEAD:** [sase-12y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12y/README.md)
 
 # Keep artifact-link bead projection within the housekeeping deadline
 
