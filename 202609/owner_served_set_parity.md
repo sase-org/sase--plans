@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Owner served-set parity
-goal: The gateway serves exactly the agent rows the owner presents, excluding dead
+goal:
+  The gateway serves exactly the agent rows the owner presents, excluding dead
   protected, dismissed, zombie, and recycled-PID records.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.1
@@ -13,6 +14,11 @@ status: done
   [202609/remote_dispatch_agents_tab_parity.md](https://github.com/sase-org/sase--plans/blob/main/202609/remote_dispatch_agents_tab_parity.md)
 - **BEAD:**
   [sase-133.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/sase-133.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-133.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-133.1.md)
+- **COMMITS:**
+  - [b7531db](https://github.com/sase-org/sase-core/commit/b7531dbeae28d447f973381d9d486f7db6e88315)
+    — fix(fleet): honor owner dismissal and strong host liveness in the served set
 
 # Plan: Owner served-set parity
 
