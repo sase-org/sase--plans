@@ -1,69 +1,65 @@
 ---
 tier: epic
 title: Detached proc execution for sase sudo
-goal: "Approving a sudo gate takes over the terminal only long enough to authenticate;
+goal: 'Approving a sudo gate takes over the terminal only long enough to authenticate;
   the reviewed commands then run under a detached, supervised proc so the TUI is usable
   again immediately, and the gate still settles with a validated ledger when execution
   finishes.
 
-  "
+  '
 phases:
-  - id: runner
-    title: Runner auth-then-spawn mode and handshake wire
-    depends_on: []
-    size: large
-    description:
-      "runner: teach sase_sudo_runner (sase-core) a detach mode that authenticates on
-      the TTY, spawns a detached root executor for the sealed manifest, invalidates the
-      sudo timestamp, and prints a started-handshake; add the handshake wire type, a
-      --capabilities probe, and sase_core_py bindings."
-  - id: cli
-    title: Detached sudo answer path and finalize proc
-    depends_on:
-      - runner
-    size: large
-    description:
-      "cli: add an opt-in --detach path to `sase sudo answer` that runs the runner in
-      auth-then-spawn mode, records a durable in-flight execution record, and submits a
-      supervised finalize proc; add the internal `sase sudo finalize` subcommand that
-      waits for the executor, validates the ledger, answers the gate, and settles the
-      gate shell."
-  - id: tui
-    title: TUI handoff returns after authentication
-    depends_on:
-      - cli
-    size: medium
-    description:
-      "tui: make the ACE sudo terminal handoff pass --detach, handle the new
-      execution_started payload, toast the background handoff, and surface the executing
-      state on the sudo gate and its finalize proc."
-  - id: remote
-    title: Detached execution for remote sudo targets
-    depends_on:
-      - cli
-    size: medium
-    description:
-      "remote: extend `sase sudo exec` and the SSH relay so a remote target
-      authenticates interactively, spawns its own detached executor, and the local
-      finalize proc polls for and fetches the remote ledger; gate the path on an
-      additive contract capability with a synchronous fallback."
-  - id: default
-    title: Detach becomes the default answer mode
-    depends_on:
-      - tui
-      - remote
-    size: small
-    description:
-      "default: flip `sase sudo answer --run` to detach by default with --no-detach
-      keeping the synchronous path, matching the shell-backed `sase gate answer`
-      convention; update help text and tests."
+- id: runner
+  title: Runner auth-then-spawn mode and handshake wire
+  depends_on: []
+  size: large
+  description: 'runner: teach sase_sudo_runner (sase-core) a detach mode that authenticates
+    on the TTY, spawns a detached root executor for the sealed manifest, invalidates
+    the sudo timestamp, and prints a started-handshake; add the handshake wire type,
+    a --capabilities probe, and sase_core_py bindings.'
+- id: cli
+  title: Detached sudo answer path and finalize proc
+  depends_on:
+  - runner
+  size: large
+  description: 'cli: add an opt-in --detach path to `sase sudo answer` that runs the
+    runner in auth-then-spawn mode, records a durable in-flight execution record,
+    and submits a supervised finalize proc; add the internal `sase sudo finalize`
+    subcommand that waits for the executor, validates the ledger, answers the gate,
+    and settles the gate shell.'
+- id: tui
+  title: TUI handoff returns after authentication
+  depends_on:
+  - cli
+  size: medium
+  description: 'tui: make the ACE sudo terminal handoff pass --detach, handle the
+    new execution_started payload, toast the background handoff, and surface the executing
+    state on the sudo gate and its finalize proc.'
+- id: remote
+  title: Detached execution for remote sudo targets
+  depends_on:
+  - cli
+  size: medium
+  description: 'remote: extend `sase sudo exec` and the SSH relay so a remote target
+    authenticates interactively, spawns its own detached executor, and the local finalize
+    proc polls for and fetches the remote ledger; gate the path on an additive contract
+    capability with a synchronous fallback.'
+- id: default
+  title: Detach becomes the default answer mode
+  depends_on:
+  - tui
+  - remote
+  size: small
+  description: 'default: flip `sase sudo answer --run` to detach by default with --no-detach
+    keeping the synchronous path, matching the shell-backed `sase gate answer` convention;
+    update help text and tests.'
 proposed_by: bbugyi200.athena.0ms
 create_time: 2026-09-18 08:50:35
 status: wip
+bead_id: sase-12w
 ---
 
-- **PROMPT:**
-  [prompts/202609/sudo_proc_execution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_proc_execution.md)
+- **PROMPT:** [prompts/202609/sudo_proc_execution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_proc_execution.md)
+- **BEAD:** [sase-12w](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/README.md)
 
 # Plan: Detached proc execution for sase sudo
 
