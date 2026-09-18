@@ -1,97 +1,90 @@
 ---
 tier: epic
 title: Restore TUI startup time on large-archive hosts
-goal: "A sase TUI session on athena is interactive on its visible tab in about 3.5
+goal: 'A sase TUI session on athena is interactive on its visible tab in about 3.5
   seconds at the median again (it is 6.8-8 s today, from 3.25 s in mid-August), every
-  stage of the durable startup telemetry returns to its mid-August band, and the
-  startup-critical path is regression-guarded so the next creep is caught by measurement
-  instead of by feel.
+  stage of the durable startup telemetry returns to its mid-August band, and the startup-critical
+  path is regression-guarded so the next creep is caught by measurement instead of
+  by feel.
 
-  "
+  '
 phases:
-  - id: baseline
-    size: medium
-    title: Controlled baselines and startup observability gaps
-    depends_on: []
-    description:
-      "baseline: capture controlled quiet-host and busy-host loader benches plus traced
-      live startups at a recorded deployed SHA, and close the instrumentation gaps this
-      diagnosis hit - sub-stage spans inside agents.load_from_disk, spans for the axe
-      surface first load (none exist in live traces today), a pre-mount split of
-      process_start_to_on_mount, and a startup-window marker on spans so startup
-      contention is directly queryable."
-  - id: startup-sequence
-    size: large
-    title: Make the visible surface win the startup window
-    depends_on:
-      - baseline
-    description:
-      "startup-sequence: stop launching every post-mount background load concurrently
-      with the visible tab's first load; sequence or gate non-visible-surface work
-      (relations index builds, prompt catalog warm, detail/prompt panel first renders,
-      monitor reconcile, bead warmups, dismissed-index sync, proc-shell prune, update
-      checks) behind visible-ready with a bounded fallback delay, and deduplicate work
-      that runs twice in the window today."
-  - id: loader-diet
-    size: large
-    title: Cut the bounded Tier 1 load's absolute cost
-    depends_on:
-      - baseline
-    description:
-      "loader-diet: attribute and reverse the standalone bounded-load creep
-      (production_bounded p50 1002 ms on 2026-09-13 to 1632 ms on 2026-09-18 at +3%
-      archive growth), including the ~11x decode amplification (about 1,062 records
-      decoded to return 96 rows) and index row growth, with Rust-core pushdown evaluated
-      under the rust_core_backend_boundary rule."
-  - id: premount-diet
-    size: medium
-    title: Import-graph diet for process start to on_mount
-    depends_on: []
-    description:
-      "premount-diet: bring process_start_to_on_mount back under its mid-August band
-      (0.67-0.76 s median; 1.10 s today) by trimming the TUI app import graph (3,285
-      modules imported before first paint) and add an import-count/time regression guard
-      on the startup-critical path."
-  - id: axe-ready
-    size: medium
-    title: Attribute and fix the doubled axe surface startup cost
-    depends_on:
-      - baseline
-    description:
-      "axe-ready: using the axe spans added in baseline, attribute why axe_ready_seconds
-      doubled (2.0 s to 3.5 s median, step on 2026-08-27/28) and restore it to about 2
-      s, keeping the axe first load off the visible surface's critical path."
-  - id: first-paint
-    size: small
-    title: Trim on_mount to first paint back under 0.3 s
-    depends_on:
-      - baseline
-    description:
-      "first-paint: profile the compose/on_mount/first-refresh path
-      (on_mount_to_first_paint_seconds doubled from 0.21 s to 0.44 s median) and remove
-      or defer the growth so first paint lands in about 0.25 s again."
-  - id: verify
-    size: medium
-    title: Prove the recovery on athena and pin it with regression guards
-    depends_on:
-      - startup-sequence
-      - loader-diet
-      - premount-diet
-      - axe-ready
-      - first-paint
-    description:
-      "verify: capture after-telemetry over real athena sessions at a recorded deployed
-      SHA, compare against this plan's baselines per stage, confirm the regression
-      benches and guards fail on reintroduction, and record results on the epic bead
-      with explicit non-overlap accounting against the sase-124.8.4 freshness
-      acceptance."
+- id: baseline
+  size: medium
+  title: Controlled baselines and startup observability gaps
+  depends_on: []
+  description: 'baseline: capture controlled quiet-host and busy-host loader benches
+    plus traced live startups at a recorded deployed SHA, and close the instrumentation
+    gaps this diagnosis hit - sub-stage spans inside agents.load_from_disk, spans
+    for the axe surface first load (none exist in live traces today), a pre-mount
+    split of process_start_to_on_mount, and a startup-window marker on spans so startup
+    contention is directly queryable.'
+- id: startup-sequence
+  size: large
+  title: Make the visible surface win the startup window
+  depends_on:
+  - baseline
+  description: 'startup-sequence: stop launching every post-mount background load
+    concurrently with the visible tab''s first load; sequence or gate non-visible-surface
+    work (relations index builds, prompt catalog warm, detail/prompt panel first renders,
+    monitor reconcile, bead warmups, dismissed-index sync, proc-shell prune, update
+    checks) behind visible-ready with a bounded fallback delay, and deduplicate work
+    that runs twice in the window today.'
+- id: loader-diet
+  size: large
+  title: Cut the bounded Tier 1 load's absolute cost
+  depends_on:
+  - baseline
+  description: 'loader-diet: attribute and reverse the standalone bounded-load creep
+    (production_bounded p50 1002 ms on 2026-09-13 to 1632 ms on 2026-09-18 at +3%
+    archive growth), including the ~11x decode amplification (about 1,062 records
+    decoded to return 96 rows) and index row growth, with Rust-core pushdown evaluated
+    under the rust_core_backend_boundary rule.'
+- id: premount-diet
+  size: medium
+  title: Import-graph diet for process start to on_mount
+  depends_on: []
+  description: 'premount-diet: bring process_start_to_on_mount back under its mid-August
+    band (0.67-0.76 s median; 1.10 s today) by trimming the TUI app import graph (3,285
+    modules imported before first paint) and add an import-count/time regression guard
+    on the startup-critical path.'
+- id: axe-ready
+  size: medium
+  title: Attribute and fix the doubled axe surface startup cost
+  depends_on:
+  - baseline
+  description: 'axe-ready: using the axe spans added in baseline, attribute why axe_ready_seconds
+    doubled (2.0 s to 3.5 s median, step on 2026-08-27/28) and restore it to about
+    2 s, keeping the axe first load off the visible surface''s critical path.'
+- id: first-paint
+  size: small
+  title: Trim on_mount to first paint back under 0.3 s
+  depends_on:
+  - baseline
+  description: 'first-paint: profile the compose/on_mount/first-refresh path (on_mount_to_first_paint_seconds
+    doubled from 0.21 s to 0.44 s median) and remove or defer the growth so first
+    paint lands in about 0.25 s again.'
+- id: verify
+  size: medium
+  title: Prove the recovery on athena and pin it with regression guards
+  depends_on:
+  - startup-sequence
+  - loader-diet
+  - premount-diet
+  - axe-ready
+  - first-paint
+  description: 'verify: capture after-telemetry over real athena sessions at a recorded
+    deployed SHA, compare against this plan''s baselines per stage, confirm the regression
+    benches and guards fail on reintroduction, and record results on the epic bead
+    with explicit non-overlap accounting against the sase-124.8.4 freshness acceptance.'
 proposed_by: bbugyi200.athena.0n7
 create_time: 2026-09-18 15:22:30
 status: wip
+bead_id: sase-132
 ---
 
-- **PROMPT:**
-  [prompts/202609/tui_startup_regression.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tui_startup_regression.md)
+- **PROMPT:** [prompts/202609/tui_startup_regression.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tui_startup_regression.md)
+- **BEAD:** [sase-132](https://github.com/sase-org/sase--beads/blob/main/pages/sase-132/README.md)
 
 # Restore TUI Startup Time on Large-Archive Hosts
 
