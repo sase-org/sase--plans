@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Add detached sudo runner execution and handshake validation
-goal:
-  Implement the sase-12w.1 auth-then-spawn runner contract in sase-core without changing
-  synchronous runner behavior.
+goal: Implement the sase-12w.1 auth-then-spawn runner contract in sase-core without
+  changing synchronous runner behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.1
 bead: sase-12w.1
-create_time: 2026-09-18 08:55:53
-status: wip
+status: done
 ---
 
 - **PARENT:**
