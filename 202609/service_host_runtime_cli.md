@@ -1,12 +1,12 @@
 ---
 tier: tale
 title: Service host runtime and CLI
-goal: 'Ship the flag-gated per-machine SASE service host, service-proc and scheduler
+goal: "Ship the flag-gated per-machine SASE service host, service-proc and scheduler
   command surfaces, scheduler ownership handover, durable proc recording, and detached
   fallback required by phase sase-11y.4 without exposing unfinished platform-unit
   integration or allowing two supervisors to own the scheduler.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.4
 bead: sase-11y.4
@@ -17,6 +17,11 @@ status: done
   [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
 - **BEAD:**
   [sase-11y.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11y.4](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11y.4.md)
+- **COMMITS:**
+  - [9ecf40c](https://github.com/sase-org/sase/commit/9ecf40c5d60a9f9f8478e2d6a854c5934ae1cdd2)
+    — feat(service): add beta service host runtime CLI
 
 # Plan: Service host runtime and CLI
 
