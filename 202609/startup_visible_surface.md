@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Make the visible TUI surface win the startup window
-goal:
-  The initially visible TUI surface loads without deferrable startup contention, while
-  every hidden surface and maintenance task still starts within a bounded delay.
+goal: The initially visible TUI surface loads without deferrable startup contention,
+  while every hidden surface and maintenance task still starts within a bounded delay.
 size: medium
 proposed_by: bbugyi200.athena.sase-132.2
 bead: sase-132.2
-create_time: 2026-09-18 16:43:22
-status: wip
+status: done
 ---
 
 - **PARENT:**
