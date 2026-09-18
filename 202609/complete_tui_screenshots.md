@@ -48,7 +48,7 @@ phases:
     behavior, and memory read integration against the newer TUI changes.'
 proposed_by: bbugyi200.athena.sase-123.land
 create_time: 2026-09-17 21:13:46
-status: wip
+status: done
 bead_id: sase-123.7
 ---
 
