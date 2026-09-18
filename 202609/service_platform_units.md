@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Platform units and init integration
-goal: Install and manage the beta SASE service host safely through systemd or launchd,
-  with a captured host environment, machine-scoped onboarding, migration diagnostics,
-  and no competing legacy supervisors
+goal:
+  Install and manage the beta SASE service host safely through systemd or launchd, with
+  a captured host environment, machine-scoped onboarding, migration diagnostics, and no
+  competing legacy supervisors
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.5
 bead: sase-11y.5
@@ -14,6 +15,11 @@ status: done
   [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
 - **BEAD:**
   [sase-11y.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11y.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11y.5.md)
+- **COMMITS:**
+  - [3fb42fa](https://github.com/sase-org/sase/commit/3fb42fa11ee2ba0539a085484edb2e3f98e6dd1f)
+    — feat(service): add platform unit integration
 
 # Plan: Platform units and init integration
 
