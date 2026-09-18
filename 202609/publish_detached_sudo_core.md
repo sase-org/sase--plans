@@ -1,39 +1,37 @@
 ---
 tier: epic
 title: Publish and consume the portable detached sudo core
-goal:
-  Make every pinned CI build and published SASE install use a portable sase-core release
-  that contains the detached sudo runner, ownership, settlement, and remote handoff
-  contracts completed by sase-12w.6.
+goal: Make every pinned CI build and published SASE install use a portable sase-core
+  release that contains the detached sudo runner, ownership, settlement, and remote
+  handoff contracts completed by sase-12w.6.
 parent_bead: sase-12w.6
 phases:
-  - id: core-portability
-    title: Restore portable sudo-runner release builds
-    depends_on: []
-    description:
-      "core-portability: fix the epic-introduced macOS initgroups type mismatch without
-      weakening account-switch validation, prove the runner on Linux and with an
-      Apple-target compile or release-equivalent check, and let the normal sase-core
-      release workflow publish the repaired contracts."
-    size: medium
-  - id: consumer-ratchet
-    title: Ratchet SASE onto the published sudo contracts
-    depends_on:
-      - core-portability
-    description:
-      "consumer-ratchet: after a complete non-yanked sase-core-rs release containing all
-      sase-12w.6 Rust commits is published, advance the CI source pin, dependency floor,
-      and lockfile to it and prove exact-floor binding plus focused sudo behavior."
-    size: medium
+- id: core-portability
+  title: Restore portable sudo-runner release builds
+  depends_on: []
+  description: 'core-portability: fix the epic-introduced macOS initgroups type mismatch
+    without weakening account-switch validation, prove the runner on Linux and with
+    an Apple-target compile or release-equivalent check, and let the normal sase-core
+    release workflow publish the repaired contracts.'
+  size: medium
+- id: consumer-ratchet
+  title: Ratchet SASE onto the published sudo contracts
+  depends_on:
+  - core-portability
+  description: 'consumer-ratchet: after a complete non-yanked sase-core-rs release
+    containing all sase-12w.6 Rust commits is published, advance the CI source pin,
+    dependency floor, and lockfile to it and prove exact-floor binding plus focused
+    sudo behavior.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-12w.6.land
 create_time: 2026-09-18 19:34:57
 status: wip
+bead_id: sase-12w.6.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/publish_detached_sudo_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/publish_detached_sudo_core.md)
-- **PARENT:**
-  [202609/sudo_detached_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_detached_landing_repairs.md)
+- **PROMPT:** [prompts/202609/publish_detached_sudo_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/publish_detached_sudo_core.md)
+- **PARENT:** [202609/sudo_detached_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_detached_landing_repairs.md)
+- **BEAD:** [sase-12w.6.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/sase-12w.6.4.md)
 
 # Publish and consume the portable detached sudo core
 
