@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Complete the Services tab in the TUI
-goal: The beta service host is fully observable and controllable from a responsive
-  Services tab, with correct service health, proc filtering, compatibility aliases,
-  and phase closure evidence.
+goal:
+  The beta service host is fully observable and controllable from a responsive Services
+  tab, with correct service health, proc filtering, compatibility aliases, and phase
+  closure evidence.
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.7
 bead: sase-11y.7
@@ -14,6 +15,11 @@ status: done
   [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
 - **BEAD:**
   [sase-11y.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-11y.7](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-11y.7.md)
+- **COMMITS:**
+  - [c2befdb](https://github.com/sase-org/sase/commit/c2befdbb3e83e6531c61d28af5dacb91f661ce16)
+    — feat(tui): add services tab controls
 
 # Complete `sase-11y.7`: Services tab in the TUI
 
