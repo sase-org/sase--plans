@@ -1,59 +1,56 @@
 ---
 tier: epic
 title: Remote dispatch Agents-tab parity
-goal: "Remote machine nodes on the Agents tab are indistinguishable from local nodes
+goal: 'Remote machine nodes on the Agents tab are indistinguishable from local nodes
   except for the machine chip, and a viewer filtered to machine:X shows exactly the
-  nodes machine X's own TUI shows — same count, grouping, statuses, and chips — with
+  nodes machine X''s own TUI shows — same count, grouping, statuses, and chips — with
   stale owner-side rows retired and `sase screenshot` able to drive query filters
   unattended for the cross-machine evidence captures.
 
-  "
+  '
 phases:
-  - id: owner-served-set-parity
-    title: Owner served-set parity
-    depends_on: []
-    size: large
-    description:
-      "owner-served-set-parity: make the gateway snapshot serve exactly the rows the
-      owner's own TUI presents — retire dead-PID protected waiting rows, honor owner
-      dismissal state, and harden liveness beyond bare kill(pid,0) — with the selection
-      decision unit-tested in sase_core."
-  - id: wire-presentation-facts
-    title: Wire presentation facts
-    depends_on:
-      - owner-served-set-parity
-    size: large
-    description:
-      "wire-presentation-facts: extend the fleet contract additively so every row
-      carries the owner-presented display status, family/parent linkage for historical
-      shells, resolved tribe/clan tribe, and both runtime timestamps, populated by the
-      gateway projection and covered by golden wire fixtures."
-  - id: viewer-remote-node-parity
-    title: Viewer remote-node render parity
-    depends_on:
-      - wire-presentation-facts
-    size: large
-    description:
-      "viewer-remote-node-parity: render remote rows through the same grouping and
-      presentation paths as local rows — tribe panels, nested done shells, shell-count
-      and proc/gate/monitor chips, owner status text, and banner counts that include
-      done nodes — differing only by the machine chip."
-  - id: screenshot-text-input
-    title: sase screenshot text-input driving
-    depends_on: []
-    size: medium
-    description:
-      "screenshot-text-input: add an ordered, repeatable --type option that sends
-      literal text interleaved with -p presses and -w waits, forward it through the
-      remote --host leg, and cover ordering and remote argv forwarding with tests, so
-      query filters can be driven unattended."
+- id: owner-served-set-parity
+  title: Owner served-set parity
+  depends_on: []
+  size: large
+  description: 'owner-served-set-parity: make the gateway snapshot serve exactly the
+    rows the owner''s own TUI presents — retire dead-PID protected waiting rows, honor
+    owner dismissal state, and harden liveness beyond bare kill(pid,0) — with the
+    selection decision unit-tested in sase_core.'
+- id: wire-presentation-facts
+  title: Wire presentation facts
+  depends_on:
+  - owner-served-set-parity
+  size: large
+  description: 'wire-presentation-facts: extend the fleet contract additively so every
+    row carries the owner-presented display status, family/parent linkage for historical
+    shells, resolved tribe/clan tribe, and both runtime timestamps, populated by the
+    gateway projection and covered by golden wire fixtures.'
+- id: viewer-remote-node-parity
+  title: Viewer remote-node render parity
+  depends_on:
+  - wire-presentation-facts
+  size: large
+  description: 'viewer-remote-node-parity: render remote rows through the same grouping
+    and presentation paths as local rows — tribe panels, nested done shells, shell-count
+    and proc/gate/monitor chips, owner status text, and banner counts that include
+    done nodes — differing only by the machine chip.'
+- id: screenshot-text-input
+  title: sase screenshot text-input driving
+  depends_on: []
+  size: medium
+  description: 'screenshot-text-input: add an ordered, repeatable --type option that
+    sends literal text interleaved with -p presses and -w waits, forward it through
+    the remote --host leg, and cover ordering and remote argv forwarding with tests,
+    so query filters can be driven unattended.'
 proposed_by: bbugyi200.athena.0na
 create_time: 2026-09-18 16:37:55
 status: wip
+bead_id: sase-133
 ---
 
-- **PROMPT:**
-  [prompts/202609/remote_dispatch_agents_tab_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_dispatch_agents_tab_parity.md)
+- **PROMPT:** [prompts/202609/remote_dispatch_agents_tab_parity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_dispatch_agents_tab_parity.md)
+- **BEAD:** [sase-133](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/README.md)
 
 # Remote Dispatch Agents-Tab Parity
 
