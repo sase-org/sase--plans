@@ -1,38 +1,36 @@
 ---
 tier: epic
 title: Finish Agents freshness acceptance verification
-goal:
-  Prove the sase-124.8.4 trace-writer remediation on the live/scripted path it changed,
-  classify the previously failed trace benchmark on the integrated tree, and obtain the
-  required combined-tree verification without absorbing independently owned latency or
-  marker work.
+goal: Prove the sase-124.8.4 trace-writer remediation on the live/scripted path it
+  changed, classify the previously failed trace benchmark on the integrated tree,
+  and obtain the required combined-tree verification without absorbing independently
+  owned latency or marker work.
 parent_bead: sase-124.8.4
 phases:
-  - id: trace-remeasurement
-    title: Remeasure the trace remediation and settle the failed benchmark
-    depends_on: []
-    size: medium
-    description:
-      "trace-remeasurement: prove the off-loop trace writer on a dedicated live/scripted
-      TUI, rerun the failed trace benchmark, and repair only evidence-backed regressions
-      caused by sase-124.8.4."
-  - id: combined-verification
-    title: Verify the integrated Agents freshness cohort
-    depends_on:
-      - trace-remeasurement
-    size: small
-    description:
-      "combined-verification: audit the remeasurement result and post-phase drift, rerun
-      the focused integration cohort, and complete monitored combined-tree verification."
+- id: trace-remeasurement
+  title: Remeasure the trace remediation and settle the failed benchmark
+  depends_on: []
+  size: medium
+  description: 'trace-remeasurement: prove the off-loop trace writer on a dedicated
+    live/scripted TUI, rerun the failed trace benchmark, and repair only evidence-backed
+    regressions caused by sase-124.8.4.'
+- id: combined-verification
+  title: Verify the integrated Agents freshness cohort
+  depends_on:
+  - trace-remeasurement
+  size: small
+  description: 'combined-verification: audit the remeasurement result and post-phase
+    drift, rerun the focused integration cohort, and complete monitored combined-tree
+    verification.'
 proposed_by: bbugyi200.athena.sase-124.8.4.land
 create_time: 2026-09-18 01:13:20
 status: wip
+bead_id: sase-124.8.4.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_agents_freshness_acceptance_verification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agents_freshness_acceptance_verification.md)
-- **PARENT:**
-  [202609/complete_agents_freshness_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/complete_agents_freshness_acceptance.md)
+- **PROMPT:** [prompts/202609/finish_agents_freshness_acceptance_verification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agents_freshness_acceptance_verification.md)
+- **PARENT:** [202609/complete_agents_freshness_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/complete_agents_freshness_acceptance.md)
+- **BEAD:** [sase-124.8.4.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-124/sase-124.8.4.3.md)
 
 # Finish Agents freshness acceptance verification
 
