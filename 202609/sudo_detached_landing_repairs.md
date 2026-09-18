@@ -1,45 +1,41 @@
 ---
 tier: epic
 title: Complete detached sudo execution after the landing audit
-goal:
-  Make authenticated detached sudo runs settle without a TTY, prevent duplicate
+goal: Make authenticated detached sudo runs settle without a TTY, prevent duplicate
   execution, and complete the local and remote supervision contracts.
 parent_bead: sase-12w
 phases:
-  - id: runner
-    title: Preserve executor ownership and stream command output
-    depends_on: []
-    description:
-      "runner: repair post-spawn failure ownership, provide live bounded output, and
-      advertise only supported detach capabilities in sase-core."
-    size: large
-  - id: completion
-    title: Authorize headless completion and protect every answer path
-    depends_on:
-      - runner
-    description:
-      "completion: implement durable attempt ownership and narrowly authorized headless
-      receipt finalization, including foreground fallback and remote-aware recovery
-      state."
-    size: large
-  - id: remote
-    title: Complete SSH transport and integrated detached acceptance
-    depends_on:
-      - completion
-    description:
-      "remote: fix SSH script encoding and root liveness, preserve uncertain remote
-      attempts, stream remote output, and prove local/remote completion through
-      realistic acceptance tests."
-    size: large
+- id: runner
+  title: Preserve executor ownership and stream command output
+  depends_on: []
+  description: 'runner: repair post-spawn failure ownership, provide live bounded
+    output, and advertise only supported detach capabilities in sase-core.'
+  size: large
+- id: completion
+  title: Authorize headless completion and protect every answer path
+  depends_on:
+  - runner
+  description: 'completion: implement durable attempt ownership and narrowly authorized
+    headless receipt finalization, including foreground fallback and remote-aware
+    recovery state.'
+  size: large
+- id: remote
+  title: Complete SSH transport and integrated detached acceptance
+  depends_on:
+  - completion
+  description: 'remote: fix SSH script encoding and root liveness, preserve uncertain
+    remote attempts, stream remote output, and prove local/remote completion through
+    realistic acceptance tests.'
+  size: large
 proposed_by: bbugyi200.athena.sase-12w.land
 create_time: 2026-09-18 13:56:19
 status: wip
+bead_id: sase-12w.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/sudo_detached_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_detached_landing_repairs.md)
-- **PARENT:**
-  [202609/sudo_proc_execution.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_proc_execution.md)
+- **PROMPT:** [prompts/202609/sudo_detached_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sudo_detached_landing_repairs.md)
+- **PARENT:** [202609/sudo_proc_execution.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_proc_execution.md)
+- **BEAD:** [sase-12w.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/sase-12w.6.md)
 
 # Complete detached sudo execution after the landing audit
 
