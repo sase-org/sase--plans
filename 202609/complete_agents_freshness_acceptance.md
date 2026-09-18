@@ -1,36 +1,33 @@
 ---
 tier: epic
 title: Complete Agents freshness acceptance
-goal:
-  Supply the controlled freshness evidence still missing from sase-124.8, attribute
-  every missed target, and repair only regressions caused by the Agents freshness work
-  before returning to its land agent.
+goal: Supply the controlled freshness evidence still missing from sase-124.8, attribute
+  every missed target, and repair only regressions caused by the Agents freshness
+  work before returning to its land agent.
 parent_bead: sase-124.8
 phases:
-  - id: controlled-acceptance
-    title: Capture and attribute the missing live freshness evidence
-    depends_on: []
-    size: medium
-    description:
-      "controlled-acceptance: gather the required busy, idle, marker, capacity, stall,
-      and navigation measurements and attribute every target."
-  - id: acceptance-remediation
-    title: Repair confirmed epic regressions and complete acceptance verification
-    depends_on:
-      - controlled-acceptance
-    size: medium
-    description:
-      "acceptance-remediation: fix only evidence-backed freshness regressions, add
-      deterministic coverage, and reverify the affected acceptance targets."
+- id: controlled-acceptance
+  title: Capture and attribute the missing live freshness evidence
+  depends_on: []
+  size: medium
+  description: 'controlled-acceptance: gather the required busy, idle, marker, capacity,
+    stall, and navigation measurements and attribute every target.'
+- id: acceptance-remediation
+  title: Repair confirmed epic regressions and complete acceptance verification
+  depends_on:
+  - controlled-acceptance
+  size: medium
+  description: 'acceptance-remediation: fix only evidence-backed freshness regressions,
+    add deterministic coverage, and reverify the affected acceptance targets.'
 proposed_by: bbugyi200.athena.sase-124.8.land
 create_time: 2026-09-17 22:34:28
 status: wip
+bead_id: sase-124.8.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/complete_agents_freshness_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_agents_freshness_acceptance.md)
-- **PARENT:**
-  [202609/finish_agents_freshness.md](https://github.com/sase-org/sase--plans/blob/main/202609/finish_agents_freshness.md)
+- **PROMPT:** [prompts/202609/complete_agents_freshness_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/complete_agents_freshness_acceptance.md)
+- **PARENT:** [202609/finish_agents_freshness.md](https://github.com/sase-org/sase--plans/blob/main/202609/finish_agents_freshness.md)
+- **BEAD:** [sase-124.8.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-124/sase-124.8.4.md)
 
 # Complete Agents freshness acceptance
 
