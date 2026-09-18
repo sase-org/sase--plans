@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Authorize headless sudo completion and protect every answer path
-goal: One durable sudo attempt owns approval through exactly-once headless settlement
+goal:
+  One durable sudo attempt owns approval through exactly-once headless settlement
   without weakening terminal-only approval elsewhere.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.6.2
@@ -13,6 +14,11 @@ status: done
   [202609/sudo_detached_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_detached_landing_repairs.md)
 - **BEAD:**
   [sase-12w.6.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/sase-12w.6.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-12w.6.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-12w.6.2.md)
+- **COMMITS:**
+  - [7179ec2](https://github.com/sase-org/sase/commit/7179ec2e23ad5ac9470fec9da8b8f37cc0c3bd8b)
+    — feat(sudo): authorize durable completion ownership
 
 # Authorize headless sudo completion and protect every answer path
 
