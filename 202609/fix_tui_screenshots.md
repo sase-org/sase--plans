@@ -1,57 +1,53 @@
 ---
 tier: epic
 title: Make TUI screenshot maintenance automatic locally and check-only in CI
-goal:
-  Replace the manual visual snapshot workflow with a reviewable, staged
-  fix-tui-screenshots command that updates goldens during local check-full and explicit
-  agent calls, while CI checks the complete corpus without accepting it.
+goal: Replace the manual visual snapshot workflow with a reviewable, staged fix-tui-screenshots
+  command that updates goldens during local check-full and explicit agent calls, while
+  CI checks the complete corpus without accepting it.
 phases:
-  - id: capture-protocol
-    title: Collect complete screenshot candidates without changing goldens
-    depends_on: []
-    description:
-      "capture-protocol: add an isolated, versioned candidate-capture protocol to the
-      shared ACE and pager fixtures, with xdist-safe records, execution completeness
-      evidence, and focused regression tests. Preserve existing rendering, convergence
-      checks, and direct comparison behavior."
-    size: medium
-  - id: maintenance-runner
-    title: Compare candidates and safely apply screenshot changes
-    depends_on:
-      - capture-protocol
-    description:
-      "maintenance-runner: implement tools/fix_tui_screenshots with explicit check mode,
-      governed pytest execution, exact pixel comparison, bounded stability verification,
-      conservative orphan handling, recoverable application, and tests for failures and
-      unchanged golden trees."
-    size: medium
-  - id: change-reports
-    title: Make every generated screenshot change reviewable
-    depends_on:
-      - maintenance-runner
-    description:
-      "change-reports: extend the existing visual report pipeline to consume the run
-      manifest and report created, updated, and stale screenshots, preserving before
-      images, grouped diffs, contact sheets, JSON, CI annotations, and durable per-run
-      output on successful updates as well as failures."
-    size: medium
-  - id: workflow-integration
-    title: Switch commands, exhaustive verification, CI, and agent guidance
-    depends_on:
-      - change-reports
-    description:
-      "workflow-integration: expose the canonical Just recipe, call its update form from
-      local check-full and its explicit check form from the existing CI visual job,
-      migrate old entry points and documentation, update the two relevant reference
-      memories, and validate the combined workflow before landing."
-    size: medium
+- id: capture-protocol
+  title: Collect complete screenshot candidates without changing goldens
+  depends_on: []
+  description: 'capture-protocol: add an isolated, versioned candidate-capture protocol
+    to the shared ACE and pager fixtures, with xdist-safe records, execution completeness
+    evidence, and focused regression tests. Preserve existing rendering, convergence
+    checks, and direct comparison behavior.'
+  size: medium
+- id: maintenance-runner
+  title: Compare candidates and safely apply screenshot changes
+  depends_on:
+  - capture-protocol
+  description: 'maintenance-runner: implement tools/fix_tui_screenshots with explicit
+    check mode, governed pytest execution, exact pixel comparison, bounded stability
+    verification, conservative orphan handling, recoverable application, and tests
+    for failures and unchanged golden trees.'
+  size: medium
+- id: change-reports
+  title: Make every generated screenshot change reviewable
+  depends_on:
+  - maintenance-runner
+  description: 'change-reports: extend the existing visual report pipeline to consume
+    the run manifest and report created, updated, and stale screenshots, preserving
+    before images, grouped diffs, contact sheets, JSON, CI annotations, and durable
+    per-run output on successful updates as well as failures.'
+  size: medium
+- id: workflow-integration
+  title: Switch commands, exhaustive verification, CI, and agent guidance
+  depends_on:
+  - change-reports
+  description: 'workflow-integration: expose the canonical Just recipe, call its update
+    form from local check-full and its explicit check form from the existing CI visual
+    job, migrate old entry points and documentation, update the two relevant reference
+    memories, and validate the combined workflow before landing.'
+  size: medium
 proposed_by: bbugyi200.athena.0mx
 create_time: 2026-09-18 10:39:48
 status: wip
+bead_id: sase-12z
 ---
 
-- **PROMPT:**
-  [prompts/202609/fix_tui_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_tui_screenshots.md)
+- **PROMPT:** [prompts/202609/fix_tui_screenshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_tui_screenshots.md)
+- **BEAD:** [sase-12z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12z/README.md)
 
 # Outcome and decisions
 
