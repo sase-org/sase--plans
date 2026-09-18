@@ -1,42 +1,39 @@
 ---
 tier: epic
 title: Finish gate-decision integrity landing gaps
-goal:
-  Close the residual contract, atomicity, notification-lifecycle, and requester
-  acceptance gaps found while landing sase-zr.7.1.1.5, without repeating work that its
-  three completed phases already delivered.
+goal: Close the residual contract, atomicity, notification-lifecycle, and requester
+  acceptance gaps found while landing sase-zr.7.1.1.5, without repeating work that
+  its three completed phases already delivered.
 phases:
-  - id: atomic-lifecycle-completion
-    title: Complete released-core adoption and atomic failure transitions
-    depends_on: []
-    size: medium
-    description:
-      "atomic-lifecycle-completion: ratchet the published sase-core floor to the
-      released gate-decision contract, delete the older-binding capability fallback,
-      make receipt and attempt supersession atomic and correctly acceptance-scoped,
-      preserve current post-response failures across plain replay, retain enough
-      selection identity for every recovery command, and add the missing deterministic
-      transition races."
-  - id: requester-recovery-acceptance
-    title: Complete requester and plan-gate recovery acceptance
-    depends_on:
-      - atomic-lifecycle-completion
-    size: medium
-    description:
-      "requester-recovery-acceptance: prove actionable failure recovery through launch
-      approval, workflow HITL, plan approval, CLI and ACE; restore the specifically
-      required plan archive and terminal-preparation recovery cases; and verify the
-      integrated tree with focused, governed, and full checks."
+- id: atomic-lifecycle-completion
+  title: Complete released-core adoption and atomic failure transitions
+  depends_on: []
+  size: medium
+  description: 'atomic-lifecycle-completion: ratchet the published sase-core floor
+    to the released gate-decision contract, delete the older-binding capability fallback,
+    make receipt and attempt supersession atomic and correctly acceptance-scoped,
+    preserve current post-response failures across plain replay, retain enough selection
+    identity for every recovery command, and add the missing deterministic transition
+    races.'
+- id: requester-recovery-acceptance
+  title: Complete requester and plan-gate recovery acceptance
+  depends_on:
+  - atomic-lifecycle-completion
+  size: medium
+  description: 'requester-recovery-acceptance: prove actionable failure recovery through
+    launch approval, workflow HITL, plan approval, CLI and ACE; restore the specifically
+    required plan archive and terminal-preparation recovery cases; and verify the
+    integrated tree with focused, governed, and full checks.'
 proposed_by: bbugyi200.apollo.sase-zr.7.1.1.5.land
 parent_bead: sase-zr.7.1.1.5
 create_time: 2026-09-17 23:21:14
 status: wip
+bead_id: sase-zr.7.1.1.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_gate_decision_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_gate_decision_landing.md)
-- **PARENT:**
-  [202609/gate_decision_integrity_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/gate_decision_integrity_completion.md)
+- **PROMPT:** [prompts/202609/finish_gate_decision_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_gate_decision_landing.md)
+- **PARENT:** [202609/gate_decision_integrity_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/gate_decision_integrity_completion.md)
+- **BEAD:** [sase-zr.7.1.1.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-zr/sase-zr.7.1.1.5.4.md)
 
 # Finish Gate-Decision Integrity Landing Gaps
 
