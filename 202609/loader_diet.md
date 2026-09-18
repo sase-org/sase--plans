@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Cut bounded Tier 1 loader decode amplification
-goal: Restore bounded Agents-list load cost by filtering non-projectable index records
+goal:
+  Restore bounded Agents-list load cost by filtering non-projectable index records
   before JSON hydration while preserving loader parity.
 size: medium
 proposed_by: bbugyi200.athena.sase-132.3
@@ -13,6 +14,11 @@ status: done
   [202609/tui_startup_regression.md](https://github.com/sase-org/sase--plans/blob/main/202609/tui_startup_regression.md)
 - **BEAD:**
   [sase-132.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-132/sase-132.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-132.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-132.3.md)
+- **COMMITS:**
+  - [13a8efb](https://github.com/sase-org/sase/commit/13a8efbb4ad4adc7a1694238b27a2613cf78553f)
+    — feat(tui): project Agents-list index rows before JSON hydration
 
 # Cut bounded Tier 1 loader decode amplification
 
