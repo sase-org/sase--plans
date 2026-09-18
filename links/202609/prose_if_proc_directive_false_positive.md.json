@@ -1,0 +1,17 @@
+{
+  "artifact_ref": "plan:202609/prose_if_proc_directive_false_positive.md",
+  "rows": [
+    {
+      "created_at": "2026-09-11T11:26:45Z",
+      "created_by": "bbugyi200.athena.0j3--code",
+      "description": "prompt reference @plan:202609/prose_if_proc_directive_false_positive.md",
+      "origin": "prompt_ref",
+      "relation": "cites",
+      "schema_version": 2,
+      "source_ref": "agent:bbugyi200.athena.0j3--code",
+      "target_ref": "plan:202609/prose_if_proc_directive_false_positive.md",
+      "uses": 1
+    }
+  ],
+  "schema_version": 2
+}
