@@ -1,54 +1,51 @@
 ---
 tier: epic
-title:
-  Keep tribe panels mounted under BY_STATUS grouping and surface stale running-TUI code
-goal:
-  The Agents tab stops tearing down and remounting tribe panels (for example `@epic`)
+title: Keep tribe panels mounted under BY_STATUS grouping and surface stale running-TUI
+  code
+goal: The Agents tab stops tearing down and remounting tribe panels (for example `@epic`)
   under BY_STATUS grouping with live agent churn, and a long-running TUI whose editable
   checkout has advanced past the code it imported detects that staleness, tells the
-  user, and offers the existing restart-when-ready flow — so landed fixes actually reach
-  the screen instead of silently sitting on disk.
+  user, and offers the existing restart-when-ready flow — so landed fixes actually
+  reach the screen instead of silently sitting on disk.
 phases:
-  - id: by-status-incremental
-    title: Admit BY_STATUS grouping to the incremental Agents display path
-    depends_on: []
-    size: medium
-    description:
-      "by-status-incremental: determine the BY_STATUS panel-safety invariants, allow the
-      incremental display diff and row remove paths when the rendered widget tree and
-      status-bucket membership are stable, retain a full rebuild (under a distinct
-      fallback reason) for genuine bucket, hierarchy, or anchor changes, and cover both
-      directions with focused and perf tests."
-  - id: stale-process-restart
-    title: Detect and surface a running TUI whose editable checkout has advanced
-    depends_on: []
-    size: medium
-    description:
-      "stale-process-restart: record the editable checkouts' imported git revisions at
-      TUI startup, cheaply revalidate them on the existing update-status cadence, and
-      when the deployed checkout has advanced past the running process surface a
-      restart-to-load-new-code state in the Update panel and notifications wired to the
-      existing restart-when-ready machinery, without adding render-path or keystroke
-      cost."
-  - id: verify-on-athena
-    title: On-host verification of panel stability and stale-code surfacing
-    size: medium
-    depends_on:
-      - by-status-incremental
-      - stale-process-restart
-    description:
-      "verify-on-athena: restart the athena TUI onto the fixed tree, soak under
-      BY_STATUS grouping with live churn proving `@epic` stays mounted with no
-      steady-state unsupported_grouping fallbacks, script a checkout-advance to prove
-      the staleness indicator fires and clears through a restart, and add a regression
-      guard against silent full-rebuild reintroduction."
+- id: by-status-incremental
+  title: Admit BY_STATUS grouping to the incremental Agents display path
+  depends_on: []
+  size: medium
+  description: 'by-status-incremental: determine the BY_STATUS panel-safety invariants,
+    allow the incremental display diff and row remove paths when the rendered widget
+    tree and status-bucket membership are stable, retain a full rebuild (under a distinct
+    fallback reason) for genuine bucket, hierarchy, or anchor changes, and cover both
+    directions with focused and perf tests.'
+- id: stale-process-restart
+  title: Detect and surface a running TUI whose editable checkout has advanced
+  depends_on: []
+  size: medium
+  description: 'stale-process-restart: record the editable checkouts'' imported git
+    revisions at TUI startup, cheaply revalidate them on the existing update-status
+    cadence, and when the deployed checkout has advanced past the running process
+    surface a restart-to-load-new-code state in the Update panel and notifications
+    wired to the existing restart-when-ready machinery, without adding render-path
+    or keystroke cost.'
+- id: verify-on-athena
+  title: On-host verification of panel stability and stale-code surfacing
+  size: medium
+  depends_on:
+  - by-status-incremental
+  - stale-process-restart
+  description: 'verify-on-athena: restart the athena TUI onto the fixed tree, soak
+    under BY_STATUS grouping with live churn proving `@epic` stays mounted with no
+    steady-state unsupported_grouping fallbacks, script a checkout-advance to prove
+    the staleness indicator fires and clears through a restart, and add a regression
+    guard against silent full-rebuild reintroduction.'
 proposed_by: bbugyi200.athena.0mq
 create_time: 2026-09-18 06:26:36
 status: wip
+bead_id: sase-12p
 ---
 
-- **PROMPT:**
-  [prompts/202609/by_status_panels_and_stale_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/by_status_panels_and_stale_tui.md)
+- **PROMPT:** [prompts/202609/by_status_panels_and_stale_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/by_status_panels_and_stale_tui.md)
+- **BEAD:** [sase-12p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12p/README.md)
 
 # Keep Tribe Panels Mounted Under BY_STATUS Grouping And Surface Stale Running-TUI Code
 
