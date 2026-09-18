@@ -42,7 +42,7 @@ phases:
     full-rebuild regressions, and record CPU before/after.'
 proposed_by: bbugyi200.athena.0ml
 create_time: 2026-09-17 16:26:19
-status: wip
+status: done
 bead_id: sase-127
 ---
 
