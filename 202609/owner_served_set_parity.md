@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Owner served-set parity
-goal:
-  The gateway serves exactly the agent rows the owner presents, excluding dead
+goal: The gateway serves exactly the agent rows the owner presents, excluding dead
   protected, dismissed, zombie, and recycled-PID records.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.1
 bead: sase-133.1
-create_time: 2026-09-18 17:07:34
-status: wip
+status: done
 ---
 
 - **PARENT:**
