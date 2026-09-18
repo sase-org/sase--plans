@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Complete the Services tab in the TUI
-goal:
-  The beta service host is fully observable and controllable from a responsive Services
-  tab, with correct service health, proc filtering, compatibility aliases, and phase
-  closure evidence.
+goal: The beta service host is fully observable and controllable from a responsive
+  Services tab, with correct service health, proc filtering, compatibility aliases,
+  and phase closure evidence.
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.7
 bead: sase-11y.7
-create_time: 2026-09-18 05:48:22
-status: wip
+status: done
 ---
 
 - **PARENT:**
