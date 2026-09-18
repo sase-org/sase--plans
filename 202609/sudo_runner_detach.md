@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Add detached sudo runner execution and handshake validation
-goal: Implement the sase-12w.1 auth-then-spawn runner contract in sase-core without
-  changing synchronous runner behavior.
+goal:
+  Implement the sase-12w.1 auth-then-spawn runner contract in sase-core without changing
+  synchronous runner behavior.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.1
 bead: sase-12w.1
@@ -13,6 +14,11 @@ status: done
   [202609/sudo_proc_execution.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_proc_execution.md)
 - **BEAD:**
   [sase-12w.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/sase-12w.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-12w.1](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-12w.1.md)
+- **COMMITS:**
+  - [b70e64d](https://github.com/sase-org/sase-core/commit/b70e64d84902e5638dee62cb1512d0d853418747)
+    — feat(sudo): add detached runner execution
 
 # Plan
 
