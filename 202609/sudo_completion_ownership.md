@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Authorize headless sudo completion and protect every answer path
-goal:
-  One durable sudo attempt owns approval through exactly-once headless settlement
+goal: One durable sudo attempt owns approval through exactly-once headless settlement
   without weakening terminal-only approval elsewhere.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.6.2
 bead: sase-12w.6.2
-create_time: 2026-09-18 15:00:37
-status: wip
+status: done
 ---
 
 - **PARENT:**
