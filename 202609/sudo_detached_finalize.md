@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Detached sudo answer and finalize proc
-goal: Local sudo approvals can release the terminal after authentication while a supervised
+goal:
+  Local sudo approvals can release the terminal after authentication while a supervised
   proc safely completes and settles the gate.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.2
@@ -13,6 +14,11 @@ status: done
   [202609/sudo_proc_execution.md](https://github.com/sase-org/sase--plans/blob/main/202609/sudo_proc_execution.md)
 - **BEAD:**
   [sase-12w.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12w/sase-12w.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-12w.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-12w.2.md)
+- **COMMITS:**
+  - [af8b7ec](https://github.com/sase-org/sase/commit/af8b7ec14009c34ccac57c7879ec52329d53f4fa)
+    — feat(sudo): add local detached answer path and finalize proc
 
 # Detached sudo answer and finalize proc
 
