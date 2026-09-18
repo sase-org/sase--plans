@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Gateway builtin and Telegram plugin migration
-goal:
-  The service host can own the mobile gateway and Telegram receiver without duplicate
+goal: The service host can own the mobile gateway and Telegram receiver without duplicate
   supervisors or restart-created pairing challenges.
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.6
 bead: sase-11y.6
-create_time: 2026-09-18 05:43:18
-status: wip
+status: done
 ---
 
 - **PARENT:**
