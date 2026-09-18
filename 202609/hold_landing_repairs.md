@@ -1,57 +1,53 @@
 ---
 tier: epic
 title: Complete hold admission and visibility after the landing audit
-goal: "Holds select the same targets across CLI, directives, admission, and display;
+goal: 'Holds select the same targets across CLI, directives, admission, and display;
   arming is ordered with admission; capture and release evidence stays visible; and
   observable wait cycles are reported on a supported released core.
 
-  "
+  '
 parent_bead: sase-11l
 phases:
-  - id: selector-parity
-    title: Unify hold selectors and effective tribe identity
-    depends_on: []
-    size: medium
-    description:
-      "selector-parity: share Rust selector expansion across CLI and directives,
-      integrate stored and contextual tribe membership into admission and display, and
-      correct required CLI operands."
-  - id: admission-ordering
-    title: Order hold arming with agent and proc admission
-    depends_on:
-      - selector-parity
-    size: medium
-    description:
-      "admission-ordering: serialize hold publication with the final pre-run admission
-      transition, cover both race orders, and preserve running-work immunity and
-      fail-open recovery."
-  - id: capture-lifecycle
-    title: Persist capture summaries and report expiry releases
-    depends_on:
-      - admission-ordering
-    size: medium
-    description:
-      "capture-lifecycle: retain effective arm-time counts across rebind, render them in
-      CLI and Holds pane, and carry validated expiry and liveness prune outcomes to
-      deduplicated notifications."
-  - id: deadlock-integration
-    title: Complete deadlock detection and supported-core acceptance
-    depends_on:
-      - capture-lifecycle
-    size: medium
-    description:
-      "deadlock-integration: traverse every relevant wait branch including hood
-      dependencies through shared core policy, finish released-core adoption, and prove
-      the repaired hold composition across its production paths."
+- id: selector-parity
+  title: Unify hold selectors and effective tribe identity
+  depends_on: []
+  size: medium
+  description: 'selector-parity: share Rust selector expansion across CLI and directives,
+    integrate stored and contextual tribe membership into admission and display, and
+    correct required CLI operands.'
+- id: admission-ordering
+  title: Order hold arming with agent and proc admission
+  depends_on:
+  - selector-parity
+  size: medium
+  description: 'admission-ordering: serialize hold publication with the final pre-run
+    admission transition, cover both race orders, and preserve running-work immunity
+    and fail-open recovery.'
+- id: capture-lifecycle
+  title: Persist capture summaries and report expiry releases
+  depends_on:
+  - admission-ordering
+  size: medium
+  description: 'capture-lifecycle: retain effective arm-time counts across rebind,
+    render them in CLI and Holds pane, and carry validated expiry and liveness prune
+    outcomes to deduplicated notifications.'
+- id: deadlock-integration
+  title: Complete deadlock detection and supported-core acceptance
+  depends_on:
+  - capture-lifecycle
+  size: medium
+  description: 'deadlock-integration: traverse every relevant wait branch including
+    hood dependencies through shared core policy, finish released-core adoption, and
+    prove the repaired hold composition across its production paths.'
 proposed_by: bbugyi200.athena.sase-11l.land
 create_time: 2026-09-18 18:08:37
 status: wip
+bead_id: sase-11l.11
 ---
 
-- **PROMPT:**
-  [prompts/202609/hold_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_landing_repairs.md)
-- **PARENT:**
-  [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
+- **PROMPT:** [prompts/202609/hold_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_landing_repairs.md)
+- **PARENT:** [202609/hold_directive.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_directive.md)
+- **BEAD:** [sase-11l.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.11.md)
 
 # Plan: complete hold landing repairs
 
