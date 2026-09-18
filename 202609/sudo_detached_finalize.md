@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Detached sudo answer and finalize proc
-goal:
-  Local sudo approvals can release the terminal after authentication while a supervised
+goal: Local sudo approvals can release the terminal after authentication while a supervised
   proc safely completes and settles the gate.
 size: medium
 proposed_by: bbugyi200.athena.sase-12w.2
 bead: sase-12w.2
-create_time: 2026-09-18 09:43:07
-status: wip
+status: done
 ---
 
 - **PARENT:**
