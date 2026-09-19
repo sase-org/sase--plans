@@ -1,82 +1,75 @@
 ---
 tier: epic
 title: Named tools and the foreground ToolRun ledger
-goal:
-  Deliver project-owned named commands and a Rust-owned, machine-local ToolRun ledger
-  through sase tool list/run/runs/show, preserving command behavior while recording
-  stages, fingerprints, and host load, with bounded retention, adoption guidance, and
-  reproducible black-box acceptance evidence.
+goal: Deliver project-owned named commands and a Rust-owned, machine-local ToolRun
+  ledger through sase tool list/run/runs/show, preserving command behavior while recording
+  stages, fingerprints, and host load, with bounded retention, adoption guidance,
+  and reproducible black-box acceptance evidence.
 phases:
-  - id: core-ledger
-    title: Establish the versioned ToolRun store and bindings
-    size: medium
-    depends_on: []
-    description:
-      "core-ledger: Implement section 1, including Rust records, event/projection
-      transactions, reconciliation and retention policy, golden fixtures, PyO3 bindings,
-      the initial disk owner, and a forward-only core pin update."
-  - id: catalog
-    title: Add the project-owned catalog and tool list command
-    size: medium
-    depends_on:
-      - core-ledger
-    description:
-      "catalog: Implement section 2, including whole project-layer tool definitions,
-      Rust validation, operational retention configuration, five repository tools,
-      versioned list output, and parser/default-list coverage."
-  - id: foreground-run
-    title: Execute and inspect foreground runs reliably
-    size: medium
-    depends_on:
-      - catalog
-    description:
-      "foreground-run: Implement section 3, including exact argv, two-stream output,
-      signals, fail-open recording, ownership and bounded logs, lost-run recovery,
-      runs/show queries, and real-process acceptance cases."
-  - id: stage-timeline
-    title: Record run_silent stages and render the timeline
-    size: medium
-    depends_on:
-      - foreground-run
-    description:
-      "stage-timeline: Implement section 4, adding recoverable JSONL start/finish events
-      to run_silent without changing Justfile recipes, parent ingestion, compact
-      progress, monitor timing fields, and timeline recovery tests."
-  - id: run-evidence
-    title: Capture fingerprints, host samples, and recording metrics
-    size: medium
-    depends_on:
-      - stage-timeline
-    description:
-      "run-evidence: Implement section 5, including complete-or-explicitly-incomplete
-      pre/post repository fingerprints, bounded probes, PSI/loadavg samples,
-      low-cardinality telemetry, and evidence/concurrency acceptance cases."
-  - id: agent-adoption
-    title: Teach the tool workflow and measure its adoption
-    size: medium
-    depends_on:
-      - run-evidence
-    description:
-      "agent-adoption: Implement section 6, including docs/tool.md, the lint_and_test
-      memory update, Tool Run and Tool Catalog glossary strands, monitor skill source
-      guidance, compact root help, and the read-only adoption report."
-  - id: acceptance
-    title: Prove the combined product and publish rerunnable evidence
-    size: medium
-    depends_on:
-      - agent-adoption
-    description:
-      "acceptance: Implement section 7 and the numbered Definition of Done. Run the real
-      CLI harness and combined checks, dogfood check, arrange the final verify monitor
-      handoff, and publish an evaluation artifact with exact commands, results, run
-      identities, limitations, and ownership of unrelated failures."
+- id: core-ledger
+  title: Establish the versioned ToolRun store and bindings
+  size: medium
+  depends_on: []
+  description: 'core-ledger: Implement section 1, including Rust records, event/projection
+    transactions, reconciliation and retention policy, golden fixtures, PyO3 bindings,
+    the initial disk owner, and a forward-only core pin update.'
+- id: catalog
+  title: Add the project-owned catalog and tool list command
+  size: medium
+  depends_on:
+  - core-ledger
+  description: 'catalog: Implement section 2, including whole project-layer tool definitions,
+    Rust validation, operational retention configuration, five repository tools, versioned
+    list output, and parser/default-list coverage.'
+- id: foreground-run
+  title: Execute and inspect foreground runs reliably
+  size: medium
+  depends_on:
+  - catalog
+  description: 'foreground-run: Implement section 3, including exact argv, two-stream
+    output, signals, fail-open recording, ownership and bounded logs, lost-run recovery,
+    runs/show queries, and real-process acceptance cases.'
+- id: stage-timeline
+  title: Record run_silent stages and render the timeline
+  size: medium
+  depends_on:
+  - foreground-run
+  description: 'stage-timeline: Implement section 4, adding recoverable JSONL start/finish
+    events to run_silent without changing Justfile recipes, parent ingestion, compact
+    progress, monitor timing fields, and timeline recovery tests.'
+- id: run-evidence
+  title: Capture fingerprints, host samples, and recording metrics
+  size: medium
+  depends_on:
+  - stage-timeline
+  description: 'run-evidence: Implement section 5, including complete-or-explicitly-incomplete
+    pre/post repository fingerprints, bounded probes, PSI/loadavg samples, low-cardinality
+    telemetry, and evidence/concurrency acceptance cases.'
+- id: agent-adoption
+  title: Teach the tool workflow and measure its adoption
+  size: medium
+  depends_on:
+  - run-evidence
+  description: 'agent-adoption: Implement section 6, including docs/tool.md, the lint_and_test
+    memory update, Tool Run and Tool Catalog glossary strands, monitor skill source
+    guidance, compact root help, and the read-only adoption report.'
+- id: acceptance
+  title: Prove the combined product and publish rerunnable evidence
+  size: medium
+  depends_on:
+  - agent-adoption
+  description: 'acceptance: Implement section 7 and the numbered Definition of Done.
+    Run the real CLI harness and combined checks, dogfood check, arrange the final
+    verify monitor handoff, and publish an evaluation artifact with exact commands,
+    results, run identities, limitations, and ownership of unrelated failures.'
 proposed_by: bbugyi200.athena.0nm
 create_time: 2026-09-18 22:19:14
 status: wip
+bead_id: sase-135
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_e1_named_tools.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e1_named_tools.md)
+- **PROMPT:** [prompts/202609/tool_e1_named_tools.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e1_named_tools.md)
+- **BEAD:** [sase-135](https://github.com/sase-org/sase--beads/blob/main/pages/sase-135/README.md)
 
 # E1: named tools and the foreground ToolRun ledger
 
