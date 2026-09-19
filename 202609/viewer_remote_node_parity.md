@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Viewer remote-node render parity
-goal:
-  Remote fleet nodes render and group like equivalent local nodes, differing only by
-  deliberate remote affordances.
+goal: Remote fleet nodes render and group like equivalent local nodes, differing only
+  by deliberate remote affordances.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.3
 bead: sase-133.3
-create_time: 2026-09-18 20:22:25
-status: wip
+status: done
 ---
 
 - **PARENT:**
