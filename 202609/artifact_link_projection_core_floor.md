@@ -1,28 +1,26 @@
 ---
 tier: epic
 title: Ratchet the core wheel floor for bulk artifact-link projection
-goal:
-  Published SASE installations resolve a sase-core-rs release that provides every
+goal: Published SASE installations resolve a sase-core-rs release that provides every
   binding used by the current Python tree, including bead_set_link_projections.
 phases:
-  - id: core_floor_reconciliation
-    title: Reconcile the published core wheel floor
-    depends_on: []
-    size: medium
-    description:
-      "core_floor_reconciliation: move the declared sase-core-rs floor and lockfile
-      through the safe window workflow, including recovery from the invalid old
-      baseline, and prove the published floor provides every Python-used binding."
+- id: core_floor_reconciliation
+  title: Reconcile the published core wheel floor
+  depends_on: []
+  size: medium
+  description: 'core_floor_reconciliation: move the declared sase-core-rs floor and
+    lockfile through the safe window workflow, including recovery from the invalid
+    old baseline, and prove the published floor provides every Python-used binding.'
 parent_bead: sase-12y
 proposed_by: bbugyi200.apollo.sase-12y.land
 create_time: 2026-09-18 20:08:24
 status: wip
+bead_id: sase-12y.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_projection_core_floor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_projection_core_floor.md)
-- **PARENT:**
-  [202609/artifact_link_projection_timeout.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_projection_timeout.md)
+- **PROMPT:** [prompts/202609/artifact_link_projection_core_floor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_projection_core_floor.md)
+- **PARENT:** [202609/artifact_link_projection_timeout.md](https://github.com/sase-org/sase--plans/blob/main/202609/artifact_link_projection_timeout.md)
+- **BEAD:** [sase-12y.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12y/sase-12y.4.md)
 
 # Ratchet the core wheel floor for bulk artifact-link projection
 
