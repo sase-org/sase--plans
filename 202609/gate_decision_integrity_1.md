@@ -55,7 +55,7 @@ phases:
     new action, and run the combined verification.'
 proposed_by: bbugyi200.apollo.sase-zr.7.1
 create_time: 2026-09-17 06:47:18
-status: wip
+status: done
 bead_id: sase-zr.7.1.1
 ---
 
