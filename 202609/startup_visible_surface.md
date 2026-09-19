@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Make the visible TUI surface win the startup window
-goal: The initially visible TUI surface loads without deferrable startup contention,
-  while every hidden surface and maintenance task still starts within a bounded delay.
+goal:
+  The initially visible TUI surface loads without deferrable startup contention, while
+  every hidden surface and maintenance task still starts within a bounded delay.
 size: medium
 proposed_by: bbugyi200.athena.sase-132.2
 bead: sase-132.2
@@ -13,6 +14,11 @@ status: done
   [202609/tui_startup_regression.md](https://github.com/sase-org/sase--plans/blob/main/202609/tui_startup_regression.md)
 - **BEAD:**
   [sase-132.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-132/sase-132.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-132.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-132.2.md)
+- **COMMITS:**
+  - [59c82a3](https://github.com/sase-org/sase/commit/59c82a36e85f282c10aaaeb51e5d30656686161c)
+    — feat(tui): prioritize visible startup surface
 
 # Make the visible TUI surface win the startup window
 
