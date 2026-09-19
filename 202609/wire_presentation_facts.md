@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Wire owner presentation facts through fleet rows
-goal: Remote fleet rows carry the status, lineage, tribe, and runtime facts needed
-  to reproduce the owner's presentation while remaining compatible with older payloads.
+goal:
+  Remote fleet rows carry the status, lineage, tribe, and runtime facts needed to
+  reproduce the owner's presentation while remaining compatible with older payloads.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.2
 bead: sase-133.2
@@ -13,6 +14,11 @@ status: done
   [202609/remote_dispatch_agents_tab_parity.md](https://github.com/sase-org/sase--plans/blob/main/202609/remote_dispatch_agents_tab_parity.md)
 - **BEAD:**
   [sase-133.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/sase-133.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-133.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-133.2.md)
+- **COMMITS:**
+  - [67614ee](https://github.com/sase-org/sase/commit/67614ee2b01e6f2e6e2b8c6fe9fd21e4394b0956)
+    — feat(fleet): consume owner presentation facts
 
 # Plan: Wire presentation facts
 
