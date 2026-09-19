@@ -1,60 +1,60 @@
 ---
 tier: epic
 title: Stop the Agents-tab @epic tribe panel from flickering
-goal: "The Agents-tab @epic tribe panel stays mounted as a tribe-keyed widget across
-  disk applies, proc-shell sync, bounded loads, and sibling-tribe occupancy churn: one
-  logical apply publishes one roster, incomplete bounded loads never delete by omission,
-  and a standing filter query no longer forces a full rebuild of untouched panels.
+goal: 'The Agents-tab @epic tribe panel stays mounted as a tribe-keyed widget across
+  disk applies, proc-shell sync, bounded loads, and sibling-tribe occupancy churn:
+  one logical apply publishes one roster, incomplete bounded loads never delete by
+  omission, and a standing filter query no longer forces a full rebuild of untouched
+  panels.
 
-  "
+  '
 phases:
-  - id: atomic-roster-publication
-    title: Publish one aggregate roster per disk apply
-    depends_on: []
-    size: medium
-    description: "atomic-roster-publication: merge the generation-stamped proc
-      projection into the disk/cached roster before the single finalize, rebase if the
-      generation moved during the worker, and cover the empty-disk plus live-projection
-      regression.
+- id: atomic-roster-publication
+  title: Publish one aggregate roster per disk apply
+  depends_on: []
+  size: medium
+  description: 'atomic-roster-publication: merge the generation-stamped proc projection
+    into the disk/cached roster before the single finalize, rebase if the generation
+    moved during the worker, and cover the empty-disk plus live-projection regression.
 
-      "
-  - id: tribe-stable-widgets
-    title: Key AgentList widgets by tribe and stop blanking untouched panels
-    depends_on: []
-    size: medium
-    description: "tribe-stable-widgets: give each tribe a stable widget id, insert or
-      remove one panel without rebuilding siblings, skip clear_options on unchanged row
-      sets, and finish the standing-query row-remove path.
+    '
+- id: tribe-stable-widgets
+  title: Key AgentList widgets by tribe and stop blanking untouched panels
+  depends_on: []
+  size: medium
+  description: 'tribe-stable-widgets: give each tribe a stable widget id, insert or
+    remove one panel without rebuilding siblings, skip clear_options on unchanged
+    row sets, and finish the standing-query row-remove path.
 
-      "
-  - id: removal-authority
-    title: Stop incomplete bounded loads from replacing a larger cache
-    depends_on:
-      - atomic-roster-publication
-    size: medium
-    description: "removal-authority: patch same-query bounded loads regardless of
-      has_more, keep a nonempty cache across a bounded zero, clear the complete-history
-      latch only on a committed-query change, and converge revalidate with auto-refresh.
+    '
+- id: removal-authority
+  title: Stop incomplete bounded loads from replacing a larger cache
+  depends_on:
+  - atomic-roster-publication
+  size: medium
+  description: 'removal-authority: patch same-query bounded loads regardless of has_more,
+    keep a nonempty cache across a bounded zero, clear the complete-history latch
+    only on a committed-query change, and converge revalidate with auto-refresh.
 
-      "
-  - id: verify-on-athena
-    title: Prove panel stability on the live host with traces
-    depends_on:
-      - atomic-roster-publication
-      - tribe-stable-widgets
-      - removal-authority
-    size: medium
-    description:
-      "verify-on-athena: restart onto the landed tree, soak under by_status and the
-      standing NOT machine:apollo query, and assert from traces that @epic never
-      unmounts and one apply never publishes N then 0 then N."
+    '
+- id: verify-on-athena
+  title: Prove panel stability on the live host with traces
+  depends_on:
+  - atomic-roster-publication
+  - tribe-stable-widgets
+  - removal-authority
+  size: medium
+  description: 'verify-on-athena: restart onto the landed tree, soak under by_status
+    and the standing NOT machine:apollo query, and assert from traces that @epic never
+    unmounts and one apply never publishes N then 0 then N.'
 proposed_by: bbugyi200.athena.0ns
 create_time: 2026-09-19 10:43:09
 status: wip
+bead_id: sase-13i
 ---
 
-- **PROMPT:**
-  [prompts/202609/epic_tribe_panel_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_tribe_panel_flicker.md)
+- **PROMPT:** [prompts/202609/epic_tribe_panel_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_tribe_panel_flicker.md)
+- **BEAD:** [sase-13i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-13i/README.md)
 
 # Stop The Agents-Tab @epic Tribe Panel From Flickering
 
