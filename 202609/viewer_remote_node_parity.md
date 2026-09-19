@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Viewer remote-node render parity
-goal: Remote fleet nodes render and group like equivalent local nodes, differing only
-  by deliberate remote affordances.
+goal:
+  Remote fleet nodes render and group like equivalent local nodes, differing only by
+  deliberate remote affordances.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.3
 bead: sase-133.3
@@ -13,6 +14,11 @@ status: done
   [202609/remote_dispatch_agents_tab_parity.md](https://github.com/sase-org/sase--plans/blob/main/202609/remote_dispatch_agents_tab_parity.md)
 - **BEAD:**
   [sase-133.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/sase-133.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-133.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-133.3.md)
+- **COMMITS:**
+  - [2ec00fe](https://github.com/sase-org/sase/commit/2ec00fe68360d40767990d563b9c432a42acf921)
+    — feat(tui): render remote fleet rows with local Agents-tab parity
 
 # Plan: Viewer Remote-Node Render Parity
 
