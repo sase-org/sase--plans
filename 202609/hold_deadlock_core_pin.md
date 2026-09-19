@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Ratchet the hold-deadlock source pin
-goal:
-  SASE's pinned Rust core contains the hold-deadlock binding used by production Python
-  code.
+goal: SASE's pinned Rust core contains the hold-deadlock binding used by production
+  Python code.
 parent_bead: sase-11l.11
 phases:
-  - id: source-pin
-    title: Ratchet and verify the hold-deadlock core revision
-    description:
-      "source-pin: move SASE's source pin to a current core revision containing the
-      deadlock binding and verify the pinned build."
-    size: small
-    depends_on: []
+- id: source-pin
+  title: Ratchet and verify the hold-deadlock core revision
+  description: 'source-pin: move SASE''s source pin to a current core revision containing
+    the deadlock binding and verify the pinned build.'
+  size: small
+  depends_on: []
 proposed_by: bbugyi200.athena.sase-11l.11.land
 create_time: 2026-09-19 04:37:21
 status: wip
+bead_id: sase-11l.11.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/hold_deadlock_core_pin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_deadlock_core_pin.md)
-- **PARENT:**
-  [202609/hold_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_landing_repairs.md)
+- **PROMPT:** [prompts/202609/hold_deadlock_core_pin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/hold_deadlock_core_pin.md)
+- **PARENT:** [202609/hold_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202609/hold_landing_repairs.md)
+- **BEAD:** [sase-11l.11.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11l/sase-11l.11.5.md)
 
 # Ratchet the hold-deadlock source pin
 
