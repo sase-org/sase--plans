@@ -1,52 +1,48 @@
 ---
 tier: epic
 title: Complete remote Agents parity from real owner state
-goal:
-  The production owner roster and fleet feed produce the same visible Agents nodes,
-  family statuses, shells, tribes, and runtimes, with truthful version diagnostics and
-  matching live apollo evidence.
+goal: The production owner roster and fleet feed produce the same visible Agents nodes,
+  family statuses, shells, tribes, and runtimes, with truthful version diagnostics
+  and matching live apollo evidence.
 parent_bead: sase-133
 phases:
-  - id: owner-roster
-    title: Share the real owner roster and retain visible family shells
-    size: large
-    depends_on: []
-    description:
-      "owner-roster: reconcile gateway selection with the actual local loader and modern
-      family-shell lifecycle using one production fixture oracle."
-  - id: owner-facts
-    title: Resolve production family presentation facts
-    size: large
-    depends_on:
-      - owner-roster
-    description:
-      "owner-facts: derive topology, rich statuses, tribe inheritance, shell facts, and
-      runtime anchors from real owner records and consume them through the existing
-      viewer renderer."
-  - id: version-diagnostics
-    title: Distinguish capability and fleet data versions
-    size: medium
-    depends_on: []
-    description:
-      "version-diagnostics: replace the false capability-versus-fleet comparison with
-      explicit fleet contract evidence and preserve genuine version-skew diagnostics."
-  - id: parity-acceptance
-    title: Prove production and live cross-machine parity
-    size: medium
-    depends_on:
-      - owner-facts
-      - version-diagnostics
-    description:
-      "parity-acceptance: exercise the production path, validate ordered screenshot
-      driving, deploy consistent builds, and save reviewed parity evidence from both
-      hosts."
+- id: owner-roster
+  title: Share the real owner roster and retain visible family shells
+  size: large
+  depends_on: []
+  description: 'owner-roster: reconcile gateway selection with the actual local loader
+    and modern family-shell lifecycle using one production fixture oracle.'
+- id: owner-facts
+  title: Resolve production family presentation facts
+  size: large
+  depends_on:
+  - owner-roster
+  description: 'owner-facts: derive topology, rich statuses, tribe inheritance, shell
+    facts, and runtime anchors from real owner records and consume them through the
+    existing viewer renderer.'
+- id: version-diagnostics
+  title: Distinguish capability and fleet data versions
+  size: medium
+  depends_on: []
+  description: 'version-diagnostics: replace the false capability-versus-fleet comparison
+    with explicit fleet contract evidence and preserve genuine version-skew diagnostics.'
+- id: parity-acceptance
+  title: Prove production and live cross-machine parity
+  size: medium
+  depends_on:
+  - owner-facts
+  - version-diagnostics
+  description: 'parity-acceptance: exercise the production path, validate ordered
+    screenshot driving, deploy consistent builds, and save reviewed parity evidence
+    from both hosts.'
 proposed_by: bbugyi200.athena.sase-133.land
 create_time: 2026-09-19 08:06:06
 status: wip
+bead_id: sase-133.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/remote_parity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_parity_landing_repairs.md)
+- **PROMPT:** [prompts/202609/remote_parity_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_parity_landing_repairs.md)
+- **BEAD:** [sase-133.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/sase-133.5.md)
 
 # Complete Remote Agents Parity From Real Owner State
 
