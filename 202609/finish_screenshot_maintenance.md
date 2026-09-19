@@ -1,38 +1,37 @@
 ---
 tier: epic
 title: Finish screenshot-maintenance landing integration
-goal: "The canonical finalizer guidance commits every dirty screenshot golden and labels
-  unrelated golden updates, while the full ACE and pager visual corpus passes against
-  the post-epic metadata-only Agents detail default with every intentional golden change
-  reviewed.
+goal: 'The canonical finalizer guidance commits every dirty screenshot golden and
+  labels unrelated golden updates, while the full ACE and pager visual corpus passes
+  against the post-epic metadata-only Agents detail default with every intentional
+  golden change reviewed.
 
-  "
+  '
 parent_bead: sase-12z
 phases:
-  - id: finalizer-guidance
-    title: Require screenshot goldens in finalizer commits
-    depends_on: []
-    size: small
-    description:
-      "finalizer-guidance: teach the canonical finalizer skill to retain every dirty
-      screenshot golden and add the required trailer for unrelated updates, with source
-      and rendered-skill regressions."
-  - id: visual-integration
-    title: Integrate the metadata-only Agents default with the visual corpus
-    depends_on:
-      - finalizer-guidance
-    size: medium
-    description:
-      "visual-integration: repair stale secondary-panel test flows, review and accept
-      only the intentional metadata-only golden changes, and prove the complete corpus
-      is clean."
+- id: finalizer-guidance
+  title: Require screenshot goldens in finalizer commits
+  depends_on: []
+  size: small
+  description: 'finalizer-guidance: teach the canonical finalizer skill to retain
+    every dirty screenshot golden and add the required trailer for unrelated updates,
+    with source and rendered-skill regressions.'
+- id: visual-integration
+  title: Integrate the metadata-only Agents default with the visual corpus
+  depends_on:
+  - finalizer-guidance
+  size: medium
+  description: 'visual-integration: repair stale secondary-panel test flows, review
+    and accept only the intentional metadata-only golden changes, and prove the complete
+    corpus is clean.'
 proposed_by: bbugyi200.athena.sase-12z.land--1
 create_time: 2026-09-18 20:31:28
 status: wip
+bead_id: sase-12z.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_screenshot_maintenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_screenshot_maintenance.md)
+- **PROMPT:** [prompts/202609/finish_screenshot_maintenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_screenshot_maintenance.md)
+- **BEAD:** [sase-12z.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-12z/sase-12z.5.md)
 
 # Plan: Finish screenshot-maintenance landing integration
 
