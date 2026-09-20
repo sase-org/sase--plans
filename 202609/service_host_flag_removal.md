@@ -1,18 +1,16 @@
 ---
 tier: tale
 title: Remove the service_host beta flag and its Off branches
-goal:
-  The `service_host` beta flag no longer exists in SASE. Its registry entry, schema
+goal: The `service_host` beta flag no longer exists in SASE. Its registry entry, schema
   block, env injection helper, and every gate that reads it are deleted; the scheduler
   handler, the service control plane, `sase service init`, `sase doctor`, the mobile
-  gateway, and the Services tab run the former On branch unconditionally; the legacy AXE
-  lifecycle Off branches they guarded are gone; and flag bead sase-12m is closed with
-  the removal.
+  gateway, and the Services tab run the former On branch unconditionally; the legacy
+  AXE lifecycle Off branches they guarded are gone; and flag bead sase-12m is closed
+  with the removal.
 size: medium
 proposed_by: bbugyi200.athena.sase-11y.10.1.2
 bead: sase-11y.10.1.2
-create_time: 2026-09-20 14:38:23
-status: wip
+status: done
 ---
 
 - **PARENT:**
