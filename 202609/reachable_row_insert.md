@@ -2,67 +2,65 @@
 tier: epic
 title: Make the Agents-tab row insert reachable for real arrivals and close sase-13i.4
 parent_bead: sase-142
-goal: "A real agent node arriving in the @epic tribe panel on athena records
-  display_row_insert, not display_panel_rebuild, and an apply that changes no rendered
-  row in a panel repaints nothing in that panel. Both claims are proved by the existing
-  frame-level harness extended to the row shapes real arrivals actually have, and
-  re-proved by a landed-SHA soak on athena with deliberately created nodes, which closes
-  sase-13i.4.
+goal: 'A real agent node arriving in the @epic tribe panel on athena records display_row_insert,
+  not display_panel_rebuild, and an apply that changes no rendered row in a panel
+  repaints nothing in that panel. Both claims are proved by the existing frame-level
+  harness extended to the row shapes real arrivals actually have, and re-proved by
+  a landed-SHA soak on athena with deliberately created nodes, which closes sase-13i.4.
 
-  "
+  '
 phases:
-  - id: panel-scoped-rebuild-gates
-    title: Decide rebuild scope per panel instead of per roster
-    depends_on: []
-    size: medium
-    description: "panel-scoped-rebuild-gates: make the three whole-roster predicates in
-      _try_refresh_agents_display_incremental attribute a rebuild to the panel keys they
-      concern instead of rebuilding every panel, keeping the reason observable per panel
-      and covering it with a sibling-panel-change harness scenario.
+- id: panel-scoped-rebuild-gates
+  title: Decide rebuild scope per panel instead of per roster
+  depends_on: []
+  size: medium
+  description: 'panel-scoped-rebuild-gates: make the three whole-roster predicates
+    in _try_refresh_agents_display_incremental attribute a rebuild to the panel keys
+    they concern instead of rebuilding every panel, keeping the reason observable
+    per panel and covering it with a sibling-panel-change harness scenario.
 
-      "
-  - id: reachable-insert-for-real-rows
-    title: Admit the row shapes real arrivals actually have
-    depends_on:
-      - panel-scoped-rebuild-gates
-    size: medium
-    description: "reachable-insert-for-real-rows: decide on evidence whether a workflow
-      family that arrives whole can be inserted in place, implement that answer under
-      the existing insert-equals-rebuild contract, and either prove the shape reaches
-      display_row_insert or name the topology invariant that blocks it.
+    '
+- id: reachable-insert-for-real-rows
+  title: Admit the row shapes real arrivals actually have
+  depends_on:
+  - panel-scoped-rebuild-gates
+  size: medium
+  description: 'reachable-insert-for-real-rows: decide on evidence whether a workflow
+    family that arrives whole can be inserted in place, implement that answer under
+    the existing insert-equals-rebuild contract, and either prove the shape reaches
+    display_row_insert or name the topology invariant that blocks it.
 
-      "
-  - id: quiet-applies
-    title: Stop applies that change no rendered row from repainting
-    depends_on:
-      - panel-scoped-rebuild-gates
-    size: medium
-    description: "quiet-applies: scope each panel's paint key to its own rows so a
-      fold-count change in one panel stops repainting the others, settle the agent-list
-      column in-frame when a removal collapses a panel, and re-measure the residual
-      same-occupancy rebuilds by reason.
+    '
+- id: quiet-applies
+  title: Stop applies that change no rendered row from repainting
+  depends_on:
+  - panel-scoped-rebuild-gates
+  size: medium
+  description: 'quiet-applies: scope each panel''s paint key to its own rows so a
+    fold-count change in one panel stops repainting the others, settle the agent-list
+    column in-frame when a removal collapses a panel, and re-measure the residual
+    same-occupancy rebuilds by reason.
 
-      "
-  - id: reverify-arrivals-on-athena
-    title: Re-soak with real arrivals, prove the insert, and close sase-13i.4
-    depends_on:
-      - reachable-insert-for-real-rows
-      - quiet-applies
-    size: medium
-    description:
-      "reverify-arrivals-on-athena: re-run the landed-SHA athena soak with probes that
-      can actually reach the insert, assert a nonzero display_row_insert and the rest of
-      the trace criteria, close sase-13i.4 with that evidence, and route the
-      consolidated tui_perf.md update through the memory-write skill."
+    '
+- id: reverify-arrivals-on-athena
+  title: Re-soak with real arrivals, prove the insert, and close sase-13i.4
+  depends_on:
+  - reachable-insert-for-real-rows
+  - quiet-applies
+  size: medium
+  description: 'reverify-arrivals-on-athena: re-run the landed-SHA athena soak with
+    probes that can actually reach the insert, assert a nonzero display_row_insert
+    and the rest of the trace criteria, close sase-13i.4 with that evidence, and route
+    the consolidated tui_perf.md update through the memory-write skill.'
 proposed_by: bbugyi200.athena.sase-142.land
 create_time: 2026-09-20 17:09:24
 status: wip
+bead_id: sase-142.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/reachable_row_insert.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/reachable_row_insert.md)
-- **PARENT:**
-  [202609/epic_panel_new_node_flicker.md](https://github.com/sase-org/sase--plans/blob/main/202609/epic_panel_new_node_flicker.md)
+- **PROMPT:** [prompts/202609/reachable_row_insert.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/reachable_row_insert.md)
+- **PARENT:** [202609/epic_panel_new_node_flicker.md](https://github.com/sase-org/sase--plans/blob/main/202609/epic_panel_new_node_flicker.md)
+- **BEAD:** [sase-142.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-142/sase-142.5.md)
 
 # Make The Agents-Tab Row Insert Reachable For Real Arrivals And Close sase-13i.4
 
