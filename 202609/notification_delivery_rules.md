@@ -62,7 +62,7 @@ phases:
     the shipping build understands the key.'
 proposed_by: bbugyi200.athena.0o7
 create_time: 2026-09-20 13:11:26
-status: wip
+status: done
 bead_id: sase-14d
 ---
 
