@@ -1,82 +1,76 @@
 ---
 tier: epic
 title: Sunset legacy supervision paths, docs, and glossary
-goal: "The sase service host is SASE's only supervisor of the scheduler: the
-  service_host beta flag and every Off branch are gone, the ensure watchdog, the TUI
-  direct-start path, the axe-start scope wrapper, the sase-update direct restart, and
-  the Telegram rearm branch are deleted, `sase axe` is a documented alias of `sase
-  scheduler`, the TUI tab id is `services`, and the docs and glossary describe the
-  shipped system.
+goal: 'The sase service host is SASE''s only supervisor of the scheduler: the service_host
+  beta flag and every Off branch are gone, the ensure watchdog, the TUI direct-start
+  path, the axe-start scope wrapper, the sase-update direct restart, and the Telegram
+  rearm branch are deleted, `sase axe` is a documented alias of `sase scheduler`,
+  the TUI tab id is `services`, and the docs and glossary describe the shipped system.
 
-  "
+  '
 phases:
-  - id: telegram-rearm
-    title: Retire the Telegram receiver rearm branch
-    depends_on: []
-    size: small
-    description:
-      "telegram-rearm: in the sase-telegram repo, stop `ensure_receiver_running` from
-      consulting the `service_host` flag so removing that flag from sase cannot silently
-      re-arm a second getUpdates consumer, and delete the rearm branch's flag-off tests."
-  - id: flag-removal
-    title: Remove the service_host beta flag and its Off branches
-    depends_on:
-      - telegram-rearm
-    size: large
-    description:
-      "flag-removal: delete the `service_host` registry entry and every gate that reads
-      it, delete the Off branches in the scheduler handler, the TUI, the mobile gateway,
-      doctor, init, and the service control plane, make the On branch unconditional, and
-      close flag bead sase-12m."
-  - id: axe-cli
-    title: Retire the AXE watchdogs and alias sase axe to sase scheduler
-    depends_on:
-      - flag-removal
-    size: large
-    description:
-      "axe-cli: delete the ensure watchdog, the opportunistic ensure on agent waits, the
-      axe-start systemd scope wrapper and its doctor check, route the `sase update`
-      restart through the scheduler service proc, and make `sase axe` lifecycle verbs a
-      documented alias of `sase scheduler`."
-  - id: tab-id
-    title: Canonicalize the Services tab id
-    depends_on:
-      - flag-removal
-    size: large
-    description:
-      "tab-id: rename the internal ACE tab id from `axe` to `services` across tab_order,
-      the app, actions, widgets, modals, and test helpers, keep `axe` as a normalized
-      legacy alias for persisted and CLI input, and refresh the PNG goldens."
-  - id: docs
-    title: Update the documentation for the service host
-    depends_on:
-      - axe-cli
-      - tab-id
-    size: medium
-    description:
-      "docs: rewrite docs/axe.md around the scheduler/host split, update ace, cli,
-      configuration, plugins, remote_dispatch, and mobile_gateway for `sase service`,
-      and retitle the mkdocs nav entry."
-  - id: glossary
-    title: Land the service-host glossary strands
-    depends_on:
-      - axe-cli
-      - tab-id
-    size: medium
-    description:
-      "glossary: add the Sase Service, Service Proc, Oneshot Service Proc, Service Node,
-      and Sase Scheduler strands, edit the Sase Node, Routine, Job, and Proc strands,
-      and republish generated agent instructions."
+- id: telegram-rearm
+  title: Retire the Telegram receiver rearm branch
+  depends_on: []
+  size: small
+  description: 'telegram-rearm: in the sase-telegram repo, stop `ensure_receiver_running`
+    from consulting the `service_host` flag so removing that flag from sase cannot
+    silently re-arm a second getUpdates consumer, and delete the rearm branch''s flag-off
+    tests.'
+- id: flag-removal
+  title: Remove the service_host beta flag and its Off branches
+  depends_on:
+  - telegram-rearm
+  size: large
+  description: 'flag-removal: delete the `service_host` registry entry and every gate
+    that reads it, delete the Off branches in the scheduler handler, the TUI, the
+    mobile gateway, doctor, init, and the service control plane, make the On branch
+    unconditional, and close flag bead sase-12m.'
+- id: axe-cli
+  title: Retire the AXE watchdogs and alias sase axe to sase scheduler
+  depends_on:
+  - flag-removal
+  size: large
+  description: 'axe-cli: delete the ensure watchdog, the opportunistic ensure on agent
+    waits, the axe-start systemd scope wrapper and its doctor check, route the `sase
+    update` restart through the scheduler service proc, and make `sase axe` lifecycle
+    verbs a documented alias of `sase scheduler`.'
+- id: tab-id
+  title: Canonicalize the Services tab id
+  depends_on:
+  - flag-removal
+  size: large
+  description: 'tab-id: rename the internal ACE tab id from `axe` to `services` across
+    tab_order, the app, actions, widgets, modals, and test helpers, keep `axe` as
+    a normalized legacy alias for persisted and CLI input, and refresh the PNG goldens.'
+- id: docs
+  title: Update the documentation for the service host
+  depends_on:
+  - axe-cli
+  - tab-id
+  size: medium
+  description: 'docs: rewrite docs/axe.md around the scheduler/host split, update
+    ace, cli, configuration, plugins, remote_dispatch, and mobile_gateway for `sase
+    service`, and retitle the mkdocs nav entry.'
+- id: glossary
+  title: Land the service-host glossary strands
+  depends_on:
+  - axe-cli
+  - tab-id
+  size: medium
+  description: 'glossary: add the Sase Service, Service Proc, Oneshot Service Proc,
+    Service Node, and Sase Scheduler strands, edit the Sase Node, Routine, Job, and
+    Proc strands, and republish generated agent instructions.'
 proposed_by: bbugyi200.athena.sase-11y.10
 parent_bead: sase-11y.10
 create_time: 2026-09-20 13:56:08
 status: wip
+bead_id: sase-11y.10.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/service_host_sunset.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_sunset.md)
-- **PARENT:**
-  [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **PROMPT:** [prompts/202609/service_host_sunset.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_sunset.md)
+- **PARENT:** [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **BEAD:** [sase-11y.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.10.1.md)
 
 # Plan: Sunset legacy supervision paths, docs, and glossary
 
