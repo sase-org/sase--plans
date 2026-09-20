@@ -1,47 +1,46 @@
 ---
 tier: epic
 title: Muse Code subscription usage windows
-goal: "SASE collects Muse Code's two subscription usage windows on the normal background
-  cadence at zero model cost, and the TUI header shows Muse's weekly window by default
+goal: 'SASE collects Muse Code''s two subscription usage windows on the normal background
+  cadence at zero model cost, and the TUI header shows Muse''s weekly window by default
   whenever Muse is an eligible provider.
 
-  "
+  '
 phases:
-  - id: core-normalizer
-    title: Rust normalizer and weekly classification
-    depends_on: []
-    size: medium
-    description: "core-normalizer: add the sase_core Muse subscription-usage normalizer,
-      its PyO3 binding, and the indicator arm that classifies Muse's weekly window as a
-      weekly all-model window.
+- id: core-normalizer
+  title: Rust normalizer and weekly classification
+  depends_on: []
+  size: medium
+  description: 'core-normalizer: add the sase_core Muse subscription-usage normalizer,
+    its PyO3 binding, and the indicator arm that classifies Muse''s weekly window
+    as a weekly all-model window.
 
-      "
-  - id: collector
-    title: Free echo-mint usage probe
-    depends_on:
-      - core-normalizer
-    size: medium
-    description: "collector: add the Python MSP probe that mints a Muse usage
-      observation with no model call, wire the provider usage hooks, and move the pinned
-      core revision and sase-core-rs floor forward so the new binding is guaranteed
-      present.
+    '
+- id: collector
+  title: Free echo-mint usage probe
+  depends_on:
+  - core-normalizer
+  size: medium
+  description: 'collector: add the Python MSP probe that mints a Muse usage observation
+    with no model call, wire the provider usage hooks, and move the pinned core revision
+    and sase-core-rs floor forward so the new binding is guaranteed present.
 
-      "
-  - id: indicator-default
-    title: Default header indicator policy
-    depends_on:
-      - collector
-    size: small
-    description:
-      "indicator-default: ship default config that shows only Muse's weekly window in
-      the TUI header usage cluster, document it, and verify the rendered result."
+    '
+- id: indicator-default
+  title: Default header indicator policy
+  depends_on:
+  - collector
+  size: small
+  description: 'indicator-default: ship default config that shows only Muse''s weekly
+    window in the TUI header usage cluster, document it, and verify the rendered result.'
 proposed_by: bbugyi200.athena.0o6
 create_time: 2026-09-20 12:41:06
 status: wip
+bead_id: sase-14c
 ---
 
-- **PROMPT:**
-  [prompts/202609/muse_usage_windows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/muse_usage_windows.md)
+- **PROMPT:** [prompts/202609/muse_usage_windows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/muse_usage_windows.md)
+- **BEAD:** [sase-14c](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14c/README.md)
 
 # Plan: Muse Code subscription usage windows
 
