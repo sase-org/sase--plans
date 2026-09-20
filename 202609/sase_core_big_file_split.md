@@ -1,99 +1,90 @@
 ---
 tier: epic
 title: Split The Ten Largest sase-core Rust Files Into <=1500 Line Modules
-goal: "Each of the ten largest Rust files in the sase-core repo is decomposed into a
-  module tree whose every file is at most 1500 lines, with no behavior change, no public
-  API change, and `just check` green after each phase.
+goal: 'Each of the ten largest Rust files in the sase-core repo is decomposed into
+  a module tree whose every file is at most 1500 lines, with no behavior change, no
+  public API change, and `just check` green after each phase.
 
-  "
+  '
 phases:
-  - id: py_bindings
-    title: Split crates/sase_core_py/src/lib.rs
-    depends_on: []
-    size: medium
-    description:
-      "py_bindings: decompose the 35,166-line PyO3 binding crate root into a
-      domain-keyed module tree while keeping the `sase_core_rs` pymodule registration
-      intact."
-  - id: agent_scan_index
-    title: Split crates/sase_core/src/agent_scan/index.rs
-    depends_on:
-      - py_bindings
-    size: medium
-    description:
-      "agent_scan_index: decompose the 13,468-line agent artifact index module into wire
-      types, index maintenance, query, and alias/output-variable history submodules."
-  - id: bead_mutation
-    title: Split crates/sase_core/src/bead/mutation.rs
-    depends_on:
-      - agent_scan_index
-    size: medium
-    description:
-      "bead_mutation: decompose the 11,316-line bead mutation module along its
-      create/update/claim/close/link/store seams."
-  - id: fleet_contract
-    title: Split crates/sase_core/src/fleet_contract.rs
-    depends_on:
-      - bead_mutation
-    size: medium
-    description:
-      "fleet_contract: decompose the 10,548-line fleet wire contract into a
-      fleet_contract/ module tree grouped by contract area."
-  - id: gateway_routes
-    title: Split crates/sase_gateway/src/routes.rs
-    depends_on:
-      - fleet_contract
-    size: medium
-    description:
-      "gateway_routes: decompose the 10,062-line axum router module into state, router
-      assembly, and per-area handler submodules."
-  - id: lsp_server
-    title: Split crates/sase_xprompt_lsp/src/server.rs
-    depends_on:
-      - gateway_routes
-    size: medium
-    description:
-      "lsp_server: decompose the 9,939-line LSP server module into per-LSP-capability
-      submodules behind the existing server entry point."
-  - id: agent_launch
-    title: Split crates/sase_core/src/agent_launch/mod.rs
-    depends_on:
-      - lsp_server
-    size: medium
-    description:
-      "agent_launch: move the 7,978-line agent_launch crate-module body out of mod.rs
-      into new siblings so mod.rs becomes a thin facade."
-  - id: editor_completion
-    title: Split crates/sase_core/src/editor/completion.rs
-    depends_on:
-      - agent_launch
-    size: medium
-    description:
-      "editor_completion: decompose the 7,260-line editor completion module by
-      completion source and by ranking/rendering concern."
-  - id: xprompt_catalog
-    title: Split crates/sase_core/src/xprompt_catalog.rs
-    depends_on:
-      - editor_completion
-    size: medium
-    description:
-      "xprompt_catalog: decompose the 4,850-line xprompt catalog module into a
-      xprompt_catalog/ module tree."
-  - id: sudo_runner
-    title: Split crates/sase_gateway/src/sudo_runner.rs
-    depends_on:
-      - xprompt_catalog
-    size: medium
-    description:
-      "sudo_runner: decompose the 4,595-line gateway sudo runner into a sudo_runner/
-      module tree and close out the epic's file-size invariant."
+- id: py_bindings
+  title: Split crates/sase_core_py/src/lib.rs
+  depends_on: []
+  size: medium
+  description: 'py_bindings: decompose the 35,166-line PyO3 binding crate root into
+    a domain-keyed module tree while keeping the `sase_core_rs` pymodule registration
+    intact.'
+- id: agent_scan_index
+  title: Split crates/sase_core/src/agent_scan/index.rs
+  depends_on:
+  - py_bindings
+  size: medium
+  description: 'agent_scan_index: decompose the 13,468-line agent artifact index module
+    into wire types, index maintenance, query, and alias/output-variable history submodules.'
+- id: bead_mutation
+  title: Split crates/sase_core/src/bead/mutation.rs
+  depends_on:
+  - agent_scan_index
+  size: medium
+  description: 'bead_mutation: decompose the 11,316-line bead mutation module along
+    its create/update/claim/close/link/store seams.'
+- id: fleet_contract
+  title: Split crates/sase_core/src/fleet_contract.rs
+  depends_on:
+  - bead_mutation
+  size: medium
+  description: 'fleet_contract: decompose the 10,548-line fleet wire contract into
+    a fleet_contract/ module tree grouped by contract area.'
+- id: gateway_routes
+  title: Split crates/sase_gateway/src/routes.rs
+  depends_on:
+  - fleet_contract
+  size: medium
+  description: 'gateway_routes: decompose the 10,062-line axum router module into
+    state, router assembly, and per-area handler submodules.'
+- id: lsp_server
+  title: Split crates/sase_xprompt_lsp/src/server.rs
+  depends_on:
+  - gateway_routes
+  size: medium
+  description: 'lsp_server: decompose the 9,939-line LSP server module into per-LSP-capability
+    submodules behind the existing server entry point.'
+- id: agent_launch
+  title: Split crates/sase_core/src/agent_launch/mod.rs
+  depends_on:
+  - lsp_server
+  size: medium
+  description: 'agent_launch: move the 7,978-line agent_launch crate-module body out
+    of mod.rs into new siblings so mod.rs becomes a thin facade.'
+- id: editor_completion
+  title: Split crates/sase_core/src/editor/completion.rs
+  depends_on:
+  - agent_launch
+  size: medium
+  description: 'editor_completion: decompose the 7,260-line editor completion module
+    by completion source and by ranking/rendering concern.'
+- id: xprompt_catalog
+  title: Split crates/sase_core/src/xprompt_catalog.rs
+  depends_on:
+  - editor_completion
+  size: medium
+  description: 'xprompt_catalog: decompose the 4,850-line xprompt catalog module into
+    a xprompt_catalog/ module tree.'
+- id: sudo_runner
+  title: Split crates/sase_gateway/src/sudo_runner.rs
+  depends_on:
+  - xprompt_catalog
+  size: medium
+  description: 'sudo_runner: decompose the 4,595-line gateway sudo runner into a sudo_runner/
+    module tree and close out the epic''s file-size invariant.'
 proposed_by: bbugyi200.athena.0oh
 create_time: 2026-09-20 19:06:02
 status: wip
+bead_id: sase-14s
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_core_big_file_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_big_file_split.md)
+- **PROMPT:** [prompts/202609/sase_core_big_file_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_big_file_split.md)
+- **BEAD:** [sase-14s](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14s/README.md)
 
 # Plan: Split The Ten Largest sase-core Rust Files Into <=1500 Line Modules
 
