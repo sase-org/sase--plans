@@ -1,19 +1,18 @@
 ---
 tier: tale
 title: Resolve production family presentation facts
-goal:
-  The gateway-served fleet catalog carries the owner's real per-record presentation
+goal: The gateway-served fleet catalog carries the owner's real per-record presentation
   facts — rich status with bucket, shell kind/state and chip facts, role, direct and
   inherited tribe, and family/run/completion timestamps — so the shared viewer renderer
   reproduces the owner's rows for the production fixture.
 size: medium
 proposed_by: bbugyi200.athena.sase-133.5.2
 bead: sase-133.5.2
-create_time: 2026-09-20 06:42:02
-status: wip
+status: done
 ---
 
-- **BEAD:** sase-133.5.2
+- **BEAD:**
+  [sase-133.5.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-133/sase-133.5.2.md)
 
 # Resolve Production Family Presentation Facts
 
