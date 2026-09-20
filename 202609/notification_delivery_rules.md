@@ -1,79 +1,73 @@
 ---
 tier: epic
 title: Client-side notification delivery rules
-goal: "A person receiving SASE notifications can match them by tab, sender, action, tag,
-  title, or note text, and decide per match whether a TUI toast is shown and whether the
-  announcement is the terminal bell, a custom sound file, or silence. Task-bead
-  notifications announce nothing on every machine, and kellys_mbp announces with a sound
-  file instead of the bell.
+goal: 'A person receiving SASE notifications can match them by tab, sender, action,
+  tag, title, or note text, and decide per match whether a TUI toast is shown and
+  whether the announcement is the terminal bell, a custom sound file, or silence.
+  Task-bead notifications announce nothing on every machine, and kellys_mbp announces
+  with a sound file instead of the bell.
 
-  "
+  '
 phases:
-  - id: core-rules
-    title: Rule matcher in the Rust core
-    depends_on: []
-    size: medium
-    description:
-      "core-rules: add notification delivery rule wire types, the first-match-per-field
-      resolver, a case-insensitive glob matcher, and the batched
-      resolve_notification_deliveries PyO3 binding to sase-core, reusing tab_key_for for
-      the tab criterion."
-  - id: config-rules
-    title: Config surface and Python facade
-    depends_on:
-      - core-rules
-    size: medium
-    description:
-      "config-rules: ratchet the pinned core revision, add ace.notification_rules to
-      default_config.yml and the JSON schema, and add the token-cached Python facade
-      that reads the rules and resolves deliveries through the new binding."
-  - id: sound-backend
-    title: Sound file playback
-    depends_on: []
-    size: small
-    description:
-      "sound-backend: add a presentation-side sound module that resolves a platform
-      audio player (afplay on macOS; paplay, aplay, then ffplay on Linux) and plays a
-      file without ever raising into the event loop."
-  - id: tui-delivery
-    title: Apply rules in the notification poll
-    depends_on:
-      - core-rules
-      - config-rules
-      - sound-backend
-    size: medium
-    description:
-      "tui-delivery: resolve each arriving notification's delivery on the existing
-      worker hop, filter toast-suppressed rows out before batching, and play at most one
-      resolved sound per poll tick in place of the unconditional tmux bell."
-  - id: observability
-    title: sase notify rules, doctor check, and docs
-    depends_on:
-      - config-rules
-      - sound-backend
-      - tui-delivery
-    size: medium
-    description:
-      "observability: add the sase notify rules subcommand with per-notification
-      explanation, a config.notification_rules doctor check, and the notifications docs
-      section describing matching, resolution, and playback."
-  - id: chezmoi-config
-    title: The two requested configurations
-    depends_on:
-      - config-rules
-      - observability
-    size: small
-    description:
-      "chezmoi-config: add the global task-bead suppression rule to sase.yml and the
-      sound-file rule to sase_kellys_mbp.yml in the chezmoi repo, after confirming the
-      shipping build understands the key."
+- id: core-rules
+  title: Rule matcher in the Rust core
+  depends_on: []
+  size: medium
+  description: 'core-rules: add notification delivery rule wire types, the first-match-per-field
+    resolver, a case-insensitive glob matcher, and the batched resolve_notification_deliveries
+    PyO3 binding to sase-core, reusing tab_key_for for the tab criterion.'
+- id: config-rules
+  title: Config surface and Python facade
+  depends_on:
+  - core-rules
+  size: medium
+  description: 'config-rules: ratchet the pinned core revision, add ace.notification_rules
+    to default_config.yml and the JSON schema, and add the token-cached Python facade
+    that reads the rules and resolves deliveries through the new binding.'
+- id: sound-backend
+  title: Sound file playback
+  depends_on: []
+  size: small
+  description: 'sound-backend: add a presentation-side sound module that resolves
+    a platform audio player (afplay on macOS; paplay, aplay, then ffplay on Linux)
+    and plays a file without ever raising into the event loop.'
+- id: tui-delivery
+  title: Apply rules in the notification poll
+  depends_on:
+  - core-rules
+  - config-rules
+  - sound-backend
+  size: medium
+  description: 'tui-delivery: resolve each arriving notification''s delivery on the
+    existing worker hop, filter toast-suppressed rows out before batching, and play
+    at most one resolved sound per poll tick in place of the unconditional tmux bell.'
+- id: observability
+  title: sase notify rules, doctor check, and docs
+  depends_on:
+  - config-rules
+  - sound-backend
+  - tui-delivery
+  size: medium
+  description: 'observability: add the sase notify rules subcommand with per-notification
+    explanation, a config.notification_rules doctor check, and the notifications docs
+    section describing matching, resolution, and playback.'
+- id: chezmoi-config
+  title: The two requested configurations
+  depends_on:
+  - config-rules
+  - observability
+  size: small
+  description: 'chezmoi-config: add the global task-bead suppression rule to sase.yml
+    and the sound-file rule to sase_kellys_mbp.yml in the chezmoi repo, after confirming
+    the shipping build understands the key.'
 proposed_by: bbugyi200.athena.0o7
 create_time: 2026-09-20 13:11:26
 status: wip
+bead_id: sase-14d
 ---
 
-- **PROMPT:**
-  [prompts/202609/notification_delivery_rules.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/notification_delivery_rules.md)
+- **PROMPT:** [prompts/202609/notification_delivery_rules.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/notification_delivery_rules.md)
+- **BEAD:** [sase-14d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14d/README.md)
 
 # Client-Side Notification Delivery Rules
 
