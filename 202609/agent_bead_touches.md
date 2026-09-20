@@ -1,72 +1,67 @@
 ---
 tier: epic
 title: Beads sub-section in the agent metadata panel's ARTIFACTS lane
-goal:
-  Selecting a sase agent in the Agents tab shows a Beads sub-section inside SASE
+goal: Selecting a sase agent in the Agents tab shows a Beads sub-section inside SASE
   CONTEXT's ARTIFACTS lane that lists every bead that agent read, created, or changed,
   with one row per bead, the verbs it performed, and the bead's title; the underlying
-  agent-to-bead touch facts are reduced once in sase-core, queryable from the CLI, and
-  cheap enough for the panel's hot path.
+  agent-to-bead touch facts are reduced once in sase-core, queryable from the CLI,
+  and cheap enough for the panel's hot path.
 phases:
-  - id: core-index
-    title: Reduce bead event streams into an actor-keyed touch index in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-index: add the actor/bead touch reduction over beads/events/streams, its
-      versioned index wire, incremental signature-cached refresh, and the read-only
-      touch query, exposed through PyO3 bindings with fixture and parity tests."
-  - id: host-refresh
-    title: Adopt the touch index in Python and keep it fresh off the hot path
-    depends_on:
-      - core-index
-    size: medium
-    description:
-      "host-refresh: add the Python facade over the new bindings, normalize actors onto
-      agent identities, and refresh the index incrementally from bead mutation commits,
-      post-sync refresh, and a bounded lumberjack routine, with a doctor check."
-  - id: bead-cli
-    title: sase bead touched
-    depends_on:
-      - host-refresh
-    size: small
-    description:
-      "bead-cli: add the agent-scoped touch listing subcommand with colored and JSON
-      output, and wire its help, ordering, and option contract to the CLI rules."
-  - id: panel-data
-    title: Resolve per-agent bead touches for the metadata panel
-    depends_on:
-      - host-refresh
-    size: medium
-    description:
-      "panel-data: add the mtime-cached per-agent touch loader, the summary field and
-      artifacts-lane resolution that carries it, and the merge that folds audited bead
-      reads and the agent's own assigned beads into one ranked per-bead view."
-  - id: panel-render
-    title: Render the Beads sub-section
-    depends_on:
-      - panel-data
-    size: medium
-    description:
-      "panel-render: paint the per-bead rows, verb chips, glyph and palette, lane
-      counts, hints, and clan aggregation, stop double-listing bead refs under Reads,
-      and cover the result with header and visual tests."
-  - id: bead-views
-    title: Record agent bead views so unaudited reads are not silently missing
-    depends_on:
-      - panel-render
-    size: small
-    description:
-      "bead-views: record agent-attributed sase bead show invocations as a local viewed
-      touch, merge them into the query behind the durable mutation and audited-read
-      facts, and render them as a visibly weaker signal."
+- id: core-index
+  title: Reduce bead event streams into an actor-keyed touch index in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-index: add the actor/bead touch reduction over beads/events/streams,
+    its versioned index wire, incremental signature-cached refresh, and the read-only
+    touch query, exposed through PyO3 bindings with fixture and parity tests.'
+- id: host-refresh
+  title: Adopt the touch index in Python and keep it fresh off the hot path
+  depends_on:
+  - core-index
+  size: medium
+  description: 'host-refresh: add the Python facade over the new bindings, normalize
+    actors onto agent identities, and refresh the index incrementally from bead mutation
+    commits, post-sync refresh, and a bounded lumberjack routine, with a doctor check.'
+- id: bead-cli
+  title: sase bead touched
+  depends_on:
+  - host-refresh
+  size: small
+  description: 'bead-cli: add the agent-scoped touch listing subcommand with colored
+    and JSON output, and wire its help, ordering, and option contract to the CLI rules.'
+- id: panel-data
+  title: Resolve per-agent bead touches for the metadata panel
+  depends_on:
+  - host-refresh
+  size: medium
+  description: 'panel-data: add the mtime-cached per-agent touch loader, the summary
+    field and artifacts-lane resolution that carries it, and the merge that folds
+    audited bead reads and the agent''s own assigned beads into one ranked per-bead
+    view.'
+- id: panel-render
+  title: Render the Beads sub-section
+  depends_on:
+  - panel-data
+  size: medium
+  description: 'panel-render: paint the per-bead rows, verb chips, glyph and palette,
+    lane counts, hints, and clan aggregation, stop double-listing bead refs under
+    Reads, and cover the result with header and visual tests.'
+- id: bead-views
+  title: Record agent bead views so unaudited reads are not silently missing
+  depends_on:
+  - panel-render
+  size: small
+  description: 'bead-views: record agent-attributed sase bead show invocations as
+    a local viewed touch, merge them into the query behind the durable mutation and
+    audited-read facts, and render them as a visibly weaker signal.'
 proposed_by: bbugyi200.athena.0oa
 create_time: 2026-09-20 16:31:02
 status: wip
+bead_id: sase-14j
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_bead_touches.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_bead_touches.md)
+- **PROMPT:** [prompts/202609/agent_bead_touches.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_bead_touches.md)
+- **BEAD:** [sase-14j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14j/README.md)
 
 # Beads sub-section in the agent metadata panel's ARTIFACTS lane
 
