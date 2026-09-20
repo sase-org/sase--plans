@@ -1,76 +1,71 @@
 ---
 tier: epic
 title: Restore sase-core PyPI publishing and bound its storage growth
-goal: "The sase-core Release-plz workflow publishes complete releases to PyPI again, the
-  project sits well under its 10 GB PyPI storage limit with months of headroom instead
-  of days, a partial upload can no longer be mistaken for a published release, and a
-  pre-flight guard fails loudly with an actionable message before PyPI can reject an
-  upload mid-stream.
+goal: 'The sase-core Release-plz workflow publishes complete releases to PyPI again,
+  the project sits well under its 10 GB PyPI storage limit with months of headroom
+  instead of days, a partial upload can no longer be mistaken for a published release,
+  and a pre-flight guard fails loudly with an actionable message before PyPI can reject
+  an upload mid-stream.
 
-  "
+  '
 phases:
-  - id: reclaim
-    title: Reclaim PyPI storage below the limit
-    depends_on: []
-    size: medium
-    description:
-      "reclaim: confirm no consumer pins a doomed version, build the retention
-      keep/delete list, and drive the human-gated pypi-cleanup deletion until the
-      project is back under 10 GB."
-  - id: shrink
-    title: Measure and reduce per-release wheel bytes
-    depends_on: []
-    size: medium
-    description:
-      "shrink: measure link-time options against the 36 MB extension module, land only
-      changes that shrink it without regressing behavior, and report the macOS x86_64
-      slice decision rather than taking it unilaterally."
-  - id: heal
-    title: Gate on file-set completeness and heal the partial 0.34.48 release
-    depends_on:
-      - reclaim
-    size: medium
-    description:
-      "heal: replace the version-existence publish gate with an expected-file-set check,
-      top up the partial 0.34.48 release, and get the tagged backlog through 0.34.66
-      published complete."
-  - id: preflight
-    title: Pre-flight PyPI quota guard and headroom reporting
-    depends_on:
-      - heal
-    size: small
-    description:
-      "preflight: check remaining project storage before uploading, fail with an
-      actionable message instead of a mid-upload 400, and surface headroom in the job
-      summary."
-  - id: cadence
-    title: Bound release cadence to a daily cut
-    depends_on:
-      - preflight
-    size: medium
-    description:
-      "cadence: stop auto-merging the release PR on every master push, cut releases on
-      one daily schedule instead, and keep the six-hourly heal plus a manual escape
-      hatch for urgent floor bumps."
-  - id: verify
-    title: End-to-end verification and downstream unblock
-    depends_on:
-      - heal
-      - preflight
-      - cadence
-      - shrink
-    size: small
-    description:
-      "verify: prove a complete five-file release lands through the changed path, record
-      measured headroom, and corroborate the downstream beads that were blocked on
-      published core."
+- id: reclaim
+  title: Reclaim PyPI storage below the limit
+  depends_on: []
+  size: medium
+  description: 'reclaim: confirm no consumer pins a doomed version, build the retention
+    keep/delete list, and drive the human-gated pypi-cleanup deletion until the project
+    is back under 10 GB.'
+- id: shrink
+  title: Measure and reduce per-release wheel bytes
+  depends_on: []
+  size: medium
+  description: 'shrink: measure link-time options against the 36 MB extension module,
+    land only changes that shrink it without regressing behavior, and report the macOS
+    x86_64 slice decision rather than taking it unilaterally.'
+- id: heal
+  title: Gate on file-set completeness and heal the partial 0.34.48 release
+  depends_on:
+  - reclaim
+  size: medium
+  description: 'heal: replace the version-existence publish gate with an expected-file-set
+    check, top up the partial 0.34.48 release, and get the tagged backlog through
+    0.34.66 published complete.'
+- id: preflight
+  title: Pre-flight PyPI quota guard and headroom reporting
+  depends_on:
+  - heal
+  size: small
+  description: 'preflight: check remaining project storage before uploading, fail
+    with an actionable message instead of a mid-upload 400, and surface headroom in
+    the job summary.'
+- id: cadence
+  title: Bound release cadence to a daily cut
+  depends_on:
+  - preflight
+  size: medium
+  description: 'cadence: stop auto-merging the release PR on every master push, cut
+    releases on one daily schedule instead, and keep the six-hourly heal plus a manual
+    escape hatch for urgent floor bumps.'
+- id: verify
+  title: End-to-end verification and downstream unblock
+  depends_on:
+  - heal
+  - preflight
+  - cadence
+  - shrink
+  size: small
+  description: 'verify: prove a complete five-file release lands through the changed
+    path, record measured headroom, and corroborate the downstream beads that were
+    blocked on published core.'
 proposed_by: bbugyi200.apollo.11
 create_time: 2026-09-20 08:29:23
 status: wip
+bead_id: sase-13t
 ---
 
-- **PROMPT:**
-  [prompts/202609/pypi_quota_and_release_publishing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/pypi_quota_and_release_publishing.md)
+- **PROMPT:** [prompts/202609/pypi_quota_and_release_publishing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/pypi_quota_and_release_publishing.md)
+- **BEAD:** [sase-13t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-13t/README.md)
 
 # Plan: Restore sase-core PyPI publishing and bound its storage growth
 
