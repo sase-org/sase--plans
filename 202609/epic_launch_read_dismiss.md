@@ -1,49 +1,49 @@
 ---
 tier: epic
 title: Agent-row settlement notifications clear when the row is read
-goal: "An `epic-launch` or `monitor-settlement` notification that names one exact agent
-  row is dismissed automatically the moment that row goes unread to read in the Agents
-  tab, through the same Rust-owned store operation every surface already uses, so the
-  notification inbox stops accumulating launch rows the user has already acknowledged on
-  the agent.
+goal: 'An `epic-launch` or `monitor-settlement` notification that names one exact
+  agent row is dismissed automatically the moment that row goes unread to read in
+  the Agents tab, through the same Rust-owned store operation every surface already
+  uses, so the notification inbox stops accumulating launch rows the user has already
+  acknowledged on the agent.
 
-  "
+  '
 phases:
-  - id: core-match
-    title: Rust store matches row-owned settlement notifications
-    depends_on: []
-    size: small
-    description: "core-match: teach the notification store's agent-keyed dismissal to
-      match host-owned settlement rows by exact (cl_name, raw_suffix), with parity tests
-      that pin the exact-match requirement.
+- id: core-match
+  title: Rust store matches row-owned settlement notifications
+  depends_on: []
+  size: small
+  description: 'core-match: teach the notification store''s agent-keyed dismissal
+    to match host-owned settlement rows by exact (cl_name, raw_suffix), with parity
+    tests that pin the exact-match requirement.
 
-      "
-  - id: host-ack
-    title: Read acknowledgment dismisses the settlement row
-    depends_on:
-      - core-match
-    size: medium
-    description: "host-ack: ratchet the core revision pin, widen the TUI's
-      cached-snapshot predicate so acknowledged settlement rows leave the cache and the
-      indicator with the completion row, and document the widened contract.
+    '
+- id: host-ack
+  title: Read acknowledgment dismisses the settlement row
+  depends_on:
+  - core-match
+  size: medium
+  description: 'host-ack: ratchet the core revision pin, widen the TUI''s cached-snapshot
+    predicate so acknowledged settlement rows leave the cache and the indicator with
+    the completion row, and document the widened contract.
 
-      "
-  - id: unread-projection
-    title: An active settlement row keeps its agent row unread
-    depends_on:
-      - host-ack
-    size: small
-    description:
-      "unread-projection: project active row-owned settlement notifications into agent
-      row unread state so a settlement that arrives after the completion was read still
-      has a read event to clear it."
+    '
+- id: unread-projection
+  title: An active settlement row keeps its agent row unread
+  depends_on:
+  - host-ack
+  size: small
+  description: 'unread-projection: project active row-owned settlement notifications
+    into agent row unread state so a settlement that arrives after the completion
+    was read still has a read event to clear it.'
 proposed_by: bbugyi200.apollo.17
 create_time: 2026-09-20 16:56:50
 status: wip
+bead_id: sase-14l
 ---
 
-- **PROMPT:**
-  [prompts/202609/epic_launch_read_dismiss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_launch_read_dismiss.md)
+- **PROMPT:** [prompts/202609/epic_launch_read_dismiss.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_launch_read_dismiss.md)
+- **BEAD:** [sase-14l](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14l/README.md)
 
 # Plan: Agent-row settlement notifications clear when the row is read
 
