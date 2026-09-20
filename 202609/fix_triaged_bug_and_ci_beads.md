@@ -1,162 +1,162 @@
 ---
 tier: epic
 title: Fix the bug and CI task beads that survived 2026-09-20 triage
-goal: "Every bug and CI task bead filed by agents on 2026-09-20 that is neither a
+goal: 'Every bug and CI task bead filed by agents on 2026-09-20 that is neither a
   duplicate nor already fixed is repaired and closed: `just check` passes on a clean
-  master with no known-failure caveat, the ACE PNG corpus matches its goldens, and the
-  nine product defects behind those beads (ToolRun ledger addressability and retention,
-  the release core-floor smoke, doctor model advisories, the Agents view surfaces, the
-  notification modal footer, gate reachability, and workspace-preparation diagnostics)
+  master with no known-failure caveat, the ACE PNG corpus matches its goldens, and
+  the nine product defects behind those beads (ToolRun ledger addressability and retention,
+  the release core-floor smoke, doctor model advisories, the Agents view surfaces,
+  the notification modal footer, gate reachability, and workspace-preparation diagnostics)
   are fixed.
 
-  "
+  '
 phases:
-  - id: symvision
-    title: Clear the 26 unused public symbols that abort every lint run
-    depends_on: []
-    size: medium
-    description: "symvision: privatize, wire up, or delete the 26 unused public symbols
-      reported by `just _lint-symvision` so `just check` reaches its later stages for
-      every other phase.
+- id: symvision
+  title: Clear the 26 unused public symbols that abort every lint run
+  depends_on: []
+  size: medium
+  description: 'symvision: privatize, wire up, or delete the 26 unused public symbols
+    reported by `just _lint-symvision` so `just check` reaches its later stages for
+    every other phase.
 
-      "
-  - id: latch
-    title: Restore the complete-history latch reset on a changed query key
-    depends_on: []
-    size: medium
-    description: "latch: decide whether the keep-the-larger-cache change or the test
-      expectation is wrong for an incomplete tier1 load under a changed history query
-      key, then fix that side.
+    '
+- id: latch
+  title: Restore the complete-history latch reset on a changed query key
+  depends_on: []
+  size: medium
+  description: 'latch: decide whether the keep-the-larger-cache change or the test
+    expectation is wrong for an incomplete tier1 load under a changed history query
+    key, then fix that side.
 
-      "
-  - id: queue_weight
-    title: Settle the land segment's queue weight
-    depends_on: []
-    size: medium
-    description: "queue_weight: decide from the documented weighted-capacity contract
-      whether the rendered land segment must claim weight 2.0, then fix the renderer or
-      the test accordingly.
+    '
+- id: queue_weight
+  title: Settle the land segment's queue weight
+  depends_on: []
+  size: medium
+  description: 'queue_weight: decide from the documented weighted-capacity contract
+    whether the rendered land segment must claim weight 2.0, then fix the renderer
+    or the test accordingly.
 
-      "
-  - id: import_budget
-    title: Land the TUI import count strictly under its budget
-    depends_on: []
-    size: small
-    description: "import_budget: the app import now sits exactly at the 3290 module cap
-      against a strict comparison, so cut at least one startup import or change the
-      boundary semantics with a recorded rationale.
+    '
+- id: import_budget
+  title: Land the TUI import count strictly under its budget
+  depends_on: []
+  size: small
+  description: 'import_budget: the app import now sits exactly at the 3290 module
+    cap against a strict comparison, so cut at least one startup import or change
+    the boundary semantics with a recorded rationale.
 
-      "
-  - id: tmp_paths
-    title: Stop eleven ACE tests asserting a full pytest tmp path
-    depends_on: []
-    size: medium
-    description: "tmp_paths: replace the rendered-text path assertions in the zoom
-      file-list and commit-view tests with assertions that do not depend on the length
-      of the pytest basetemp.
+    '
+- id: tmp_paths
+  title: Stop eleven ACE tests asserting a full pytest tmp path
+  depends_on: []
+  size: medium
+  description: 'tmp_paths: replace the rendered-text path assertions in the zoom file-list
+    and commit-view tests with assertions that do not depend on the length of the
+    pytest basetemp.
 
-      "
-  - id: row_weight_golden
-    title: Settle the clan-collapse agent-row label weight
-    depends_on: []
-    size: medium
-    description: "row_weight_golden: decide whether the tribeless DONE agent row lost
-      its bold label or the golden is stale, then fix the renderer or refresh that one
-      snapshot.
+    '
+- id: row_weight_golden
+  title: Settle the clan-collapse agent-row label weight
+  depends_on: []
+  size: medium
+  description: 'row_weight_golden: decide whether the tribeless DONE agent row lost
+    its bold label or the golden is stale, then fix the renderer or refresh that one
+    snapshot.
 
-      "
-  - id: agents_view
-    title: Repair the Agents view surfaces the metadata-only default left behind
-    depends_on:
-      - symvision
-      - latch
-      - import_budget
-      - tmp_paths
-      - row_weight_golden
-    size: medium
-    description: "agents_view: dispatch the zoom modal's LLM Calls visibility message
-      and repaint the Agents header view hint on every view-picker exit path.
+    '
+- id: agents_view
+  title: Repair the Agents view surfaces the metadata-only default left behind
+  depends_on:
+  - symvision
+  - latch
+  - import_budget
+  - tmp_paths
+  - row_weight_golden
+  size: medium
+  description: 'agents_view: dispatch the zoom modal''s LLM Calls visibility message
+    and repaint the Agents header view hint on every view-picker exit path.
 
-      "
-  - id: notify_footer
-    title: Make the notification modal footer fit the modal
-    depends_on:
-      - symvision
-      - latch
-      - import_budget
-      - tmp_paths
-      - row_weight_golden
-    size: medium
-    description: "notify_footer: give the notification modal's hint line a width-aware
-      tier ladder so close and +1 stay visible at 120 columns in all three hint
-      variants.
+    '
+- id: notify_footer
+  title: Make the notification modal footer fit the modal
+  depends_on:
+  - symvision
+  - latch
+  - import_budget
+  - tmp_paths
+  - row_weight_golden
+  size: medium
+  description: 'notify_footer: give the notification modal''s hint line a width-aware
+    tier ladder so close and +1 stay visible at 120 columns in all three hint variants.
 
-      "
-  - id: toolrun_cli
-    title: Disclose the run id on a failed launch and gate the floor smoke
-    depends_on:
-      - symvision
-    size: small
-    description: "toolrun_cli: print the wrapper header for a run whose child never
-      starts, and add the ToolRun smoke to the release core-floor job now that the floor
-      contains it.
+    '
+- id: toolrun_cli
+  title: Disclose the run id on a failed launch and gate the floor smoke
+  depends_on:
+  - symvision
+  size: small
+  description: 'toolrun_cli: print the wrapper header for a run whose child never
+    starts, and add the ToolRun smoke to the release core-floor job now that the floor
+    contains it.
 
-      "
-  - id: toolrun_retention
-    title: Reclaim quarantined ToolRun stores
-    depends_on:
-      - symvision
-    size: medium
-    description: "toolrun_retention: extend sase-core's tool_run retention selection to
-      quarantined corrupt stores and surface them through the existing preview and apply
-      reports.
+    '
+- id: toolrun_retention
+  title: Reclaim quarantined ToolRun stores
+  depends_on:
+  - symvision
+  size: medium
+  description: 'toolrun_retention: extend sase-core''s tool_run retention selection
+    to quarantined corrupt stores and surface them through the existing preview and
+    apply reports.
 
-      "
-  - id: doctor_pools
-    title: Warn on every advisory-flagged pool member
-    depends_on:
-      - symvision
-    size: medium
-    description: "doctor_pools: expand each alias pool's members in the model-advisory
-      check so its verdict no longer depends on the round-robin cursor.
+    '
+- id: doctor_pools
+  title: Warn on every advisory-flagged pool member
+  depends_on:
+  - symvision
+  size: medium
+  description: 'doctor_pools: expand each alias pool''s members in the model-advisory
+    check so its verdict no longer depends on the round-robin cursor.
 
-      "
-  - id: gate_shell_row
-    title: Keep the declared shell block through gate creation
-    depends_on:
-      - symvision
-      - queue_weight
-    size: medium
-    description: "gate_shell_row: find and fix the seam that records continuation_mode
-      none for a custom gate whose request declares a shell block, so its gate-shell row
-      is registered and the gate stays listed.
+    '
+- id: gate_shell_row
+  title: Keep the declared shell block through gate creation
+  depends_on:
+  - symvision
+  - queue_weight
+  size: medium
+  description: 'gate_shell_row: find and fix the seam that records continuation_mode
+    none for a custom gate whose request declares a shell block, so its gate-shell
+    row is registered and the gate stays listed.
 
-      "
-  - id: gate_undismiss
-    title: Make notification dismissal recoverable
-    depends_on:
-      - symvision
-      - queue_weight
-    size: medium
-    description: "gate_undismiss: add an undismiss state transition to the notification
-      action surfaces so a dismissed live gate can be reached again.
+    '
+- id: gate_undismiss
+  title: Make notification dismissal recoverable
+  depends_on:
+  - symvision
+  - queue_weight
+  size: medium
+  description: 'gate_undismiss: add an undismiss state transition to the notification
+    action surfaces so a dismissed live gate can be reached again.
 
-      "
-  - id: workspace_error
-    title: Surface why workspace preparation failed
-    depends_on:
-      - symvision
-    size: medium
-    description:
-      "workspace_error: carry the underlying git or update failure out of
-      prepare_workspace into the raised error and the run log instead of discarding it."
+    '
+- id: workspace_error
+  title: Surface why workspace preparation failed
+  depends_on:
+  - symvision
+  size: medium
+  description: 'workspace_error: carry the underlying git or update failure out of
+    prepare_workspace into the raised error and the run log instead of discarding
+    it.'
 proposed_by: bbugyi200.athena.0oe
 create_time: 2026-09-20 17:14:05
 status: wip
+bead_id: sase-14n
 ---
 
-- **PROMPT:**
-  [prompts/202609/fix_triaged_bug_and_ci_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_triaged_bug_and_ci_beads.md)
+- **PROMPT:** [prompts/202609/fix_triaged_bug_and_ci_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_triaged_bug_and_ci_beads.md)
+- **BEAD:** [sase-14n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14n/README.md)
 
 # Plan: Fix the bug and CI task beads that survived 2026-09-20 triage
 
