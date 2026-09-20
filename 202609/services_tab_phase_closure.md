@@ -3,14 +3,12 @@ tier: tale
 title: Finish and close the Services tab phase
 size: medium
 bead: sase-11y.7
-goal:
-  Finish the remaining sase-11y.7 Services-tab contract — always-on host chrome, a real
-  service-health footer pill, service-aware gear counting, inline enablement provenance,
-  a quit modal that stops Scheduler instead of the host, a service-aware idle refresh
-  probe — then clear the phase's Symvision whitelist and close only sase-11y.7.
+goal: Finish the remaining sase-11y.7 Services-tab contract — always-on host chrome,
+  a real service-health footer pill, service-aware gear counting, inline enablement
+  provenance, a quit modal that stops Scheduler instead of the host, a service-aware
+  idle refresh probe — then clear the phase's Symvision whitelist and close only sase-11y.7.
 proposed_by: bbugyi200.athena.sase-11y.7
-create_time: 2026-09-20 06:46:25
-status: wip
+status: done
 ---
 
 - **BEAD:**
