@@ -1,67 +1,66 @@
 ---
 tier: epic
 title: Stop the @epic tribe panel flickering when new nodes join it
-goal: "A new agent node joining the @epic tribe panel produces exactly one visual
+goal: 'A new agent node joining the @epic tribe panel produces exactly one visual
   transition: the panel widget is never blanked, its highlight and scroll position
-  survive, the agent-list column geometry settles in the same frame as the rows, and an
-  apply that changes nothing repaints nothing. The claim is proved by a deterministic
+  survive, the agent-list column geometry settles in the same frame as the rows, and
+  an apply that changes nothing repaints nothing. The claim is proved by a deterministic
   frame-level harness in CI and re-proved by a landed-SHA soak on athena that actually
   creates new nodes.
 
-  "
+  '
 phases:
-  - id: flicker-frame-harness
-    title: Deterministic frame-level repro for a node joining @epic
-    depends_on: []
-    size: medium
-    description: "flicker-frame-harness: build the per-refresh paint log and the
-      no-blank/one-transition invariants, drive a new node into an @epic clan panel
-      through the real apply pipeline under the host's grouping, query and collapse
-      shape, and land it green with a strict xfail on every invariant the current tree
-      violates.
+- id: flicker-frame-harness
+  title: Deterministic frame-level repro for a node joining @epic
+  depends_on: []
+  size: medium
+  description: 'flicker-frame-harness: build the per-refresh paint log and the no-blank/one-transition
+    invariants, drive a new node into an @epic clan panel through the real apply pipeline
+    under the host''s grouping, query and collapse shape, and land it green with a
+    strict xfail on every invariant the current tree violates.
 
-      "
-  - id: collapsed-panel-mode
-    title: Stop collapsed panels forcing a full rebuild on every apply
-    depends_on: []
-    size: small
-    description: "collapsed-panel-mode: record the active grouping mode when a panel
-      paints collapsed so the stale_grouping_mode guard stops sending 232 of 234 applies
-      down the full-rebuild path, without weakening the guard for panels that hold rows
-      from an earlier mode.
+    '
+- id: collapsed-panel-mode
+  title: Stop collapsed panels forcing a full rebuild on every apply
+  depends_on: []
+  size: small
+  description: 'collapsed-panel-mode: record the active grouping mode when a panel
+    paints collapsed so the stale_grouping_mode guard stops sending 232 of 234 applies
+    down the full-rebuild path, without weakening the guard for panels that hold rows
+    from an earlier mode.
 
-      "
-  - id: row-insert-without-blanking
-    title: Add rows in place and settle the column in one frame
-    depends_on:
-      - flicker-frame-harness
-      - collapsed-panel-mode
-    size: medium
-    description: "row-insert-without-blanking: give AgentList an in-place row insert to
-      mirror try_remove_rows so an added node stops clearing and re-emitting the whole
-      panel, and make the agent-list container width settle inside the refresh that
-      changed the rows instead of one pump cycle later.
+    '
+- id: row-insert-without-blanking
+  title: Add rows in place and settle the column in one frame
+  depends_on:
+  - flicker-frame-harness
+  - collapsed-panel-mode
+  size: medium
+  description: 'row-insert-without-blanking: give AgentList an in-place row insert
+    to mirror try_remove_rows so an added node stops clearing and re-emitting the
+    whole panel, and make the agent-list container width settle inside the refresh
+    that changed the rows instead of one pump cycle later.
 
-      "
-  - id: verify-new-nodes-on-athena
-    title: Prove it on athena with real node arrivals and close sase-13i.4
-    depends_on:
-      - flicker-frame-harness
-      - collapsed-panel-mode
-      - row-insert-without-blanking
-    size: medium
-    description:
-      "verify-new-nodes-on-athena: soak a landed SHA under the host's real state while
-      deliberately creating nodes that join the @epic tribe, assert the harness
-      invariants from traces and live captures, then close sase-13i.4 with the evidence
-      or record precisely why it still cannot close."
+    '
+- id: verify-new-nodes-on-athena
+  title: Prove it on athena with real node arrivals and close sase-13i.4
+  depends_on:
+  - flicker-frame-harness
+  - collapsed-panel-mode
+  - row-insert-without-blanking
+  size: medium
+  description: 'verify-new-nodes-on-athena: soak a landed SHA under the host''s real
+    state while deliberately creating nodes that join the @epic tribe, assert the
+    harness invariants from traces and live captures, then close sase-13i.4 with the
+    evidence or record precisely why it still cannot close.'
 proposed_by: bbugyi200.athena.sase-13i.4.f0.f0
 create_time: 2026-09-20 12:14:18
 status: wip
+bead_id: sase-142
 ---
 
-- **PROMPT:**
-  [prompts/202609/epic_panel_new_node_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_panel_new_node_flicker.md)
+- **PROMPT:** [prompts/202609/epic_panel_new_node_flicker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/epic_panel_new_node_flicker.md)
+- **BEAD:** [sase-142](https://github.com/sase-org/sase--beads/blob/main/pages/sase-142/README.md)
 
 # Stop The @epic Tribe Panel Flickering When New Nodes Join It
 
