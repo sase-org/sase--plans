@@ -67,7 +67,7 @@ phases:
     of parent sase-zr to the land agent.'
 proposed_by: bbugyi200.apollo.07
 create_time: 2026-09-16 14:25:04
-status: wip
+status: done
 bead_id: sase-zr.7
 ---
 
