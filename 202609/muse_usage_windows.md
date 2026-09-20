@@ -35,7 +35,7 @@ phases:
     window in the TUI header usage cluster, document it, and verify the rendered result.'
 proposed_by: bbugyi200.athena.0o6
 create_time: 2026-09-20 12:41:06
-status: wip
+status: done
 bead_id: sase-14c
 ---
 
