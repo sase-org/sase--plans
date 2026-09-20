@@ -60,7 +60,7 @@ phases:
     blocked on published core.'
 proposed_by: bbugyi200.apollo.11
 create_time: 2026-09-20 08:29:23
-status: wip
+status: done
 bead_id: sase-13t
 ---
 
