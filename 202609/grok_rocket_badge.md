@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Make the Grok provider badge easy to see (🛰️ → 🚀)
-goal:
-  The Grok/xAI provider badge renders as a bold, full-width 🚀 everywhere provider
+goal: The Grok/xAI provider badge renders as a bold, full-width 🚀 everywhere provider
   badges appear, with docs and tests updated.
 size: small
 proposed_by: bbugyi200.athena.0ou
-create_time: 2026-09-21 16:45:07
-status: wip
+status: done
 ---
 
 # Plan: Make the Grok provider badge easy to see (🛰️ → 🚀)
