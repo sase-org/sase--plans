@@ -1,39 +1,37 @@
 ---
 tier: epic
 title: Make the required sase-core macOS CI leg actually run and pass
-goal: "The sase-core rust-checks macOS leg installs its toolchain, runs fmt, clippy, and
-  the full test suite, and a master CI run is green on both ubuntu-latest and
+goal: 'The sase-core rust-checks macOS leg installs its toolchain, runs fmt, clippy,
+  and the full test suite, and a master CI run is green on both ubuntu-latest and
   macos-latest with the macOS leg blocking.
 
-  "
+  '
 phases:
-  - id: ci-toolchain-parse
-    title: Make the CI toolchain-parse step portable to the macOS runner
-    depends_on: []
-    size: small
-    description:
-      "ci-toolchain-parse: replace the GNU-only grep/sed parsing of rust-toolchain.toml
-      in the rust-checks job with a form BSD tools accept, and make sure
-      scripts/check.sh runs under the macOS runner's bash."
-  - id: macos-ci-green
-    title: Fix whatever the first real macOS CI run surfaces
-    depends_on:
-      - ci-toolchain-parse
-    size: medium
-    description:
-      "macos-ci-green: watch the first master CI run in which the macOS leg gets past
-      toolchain install, and fix every macOS-only fmt, clippy, or test failure it
-      reports under the parent epic's platform-path rule."
+- id: ci-toolchain-parse
+  title: Make the CI toolchain-parse step portable to the macOS runner
+  depends_on: []
+  size: small
+  description: 'ci-toolchain-parse: replace the GNU-only grep/sed parsing of rust-toolchain.toml
+    in the rust-checks job with a form BSD tools accept, and make sure scripts/check.sh
+    runs under the macOS runner''s bash.'
+- id: macos-ci-green
+  title: Fix whatever the first real macOS CI run surfaces
+  depends_on:
+  - ci-toolchain-parse
+  size: medium
+  description: 'macos-ci-green: watch the first master CI run in which the macOS leg
+    gets past toolchain install, and fix every macOS-only fmt, clippy, or test failure
+    it reports under the parent epic''s platform-path rule.'
 proposed_by: bbugyi200.athena.sase-157.land
 parent_bead: sase-157
 create_time: 2026-09-21 12:36:10
 status: wip
+bead_id: sase-157.10
 ---
 
-- **PROMPT:**
-  [prompts/202609/macos_ci_leg_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/macos_ci_leg_green.md)
-- **PARENT:**
-  [202609/macos_portability.md](https://github.com/sase-org/sase--plans/blob/main/202609/macos_portability.md)
+- **PROMPT:** [prompts/202609/macos_ci_leg_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/macos_ci_leg_green.md)
+- **PARENT:** [202609/macos_portability.md](https://github.com/sase-org/sase--plans/blob/main/202609/macos_portability.md)
+- **BEAD:** [sase-157.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-157/sase-157.10.md)
 
 # Plan: Make the required sase-core macOS CI leg actually run and pass
 
