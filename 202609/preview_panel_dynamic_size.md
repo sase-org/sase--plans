@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Content-aware sizing for the K preview panel
-goal: The K preview panel keeps its current size when content fits and grows toward
+goal:
+  The K preview panel keeps its current size when content fits and grows toward
   near-full-screen when it does not.
 size: medium
 proposed_by: bbugyi200.athena.0ol
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ol](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ol.md)
+- **COMMITS:**
+  - [f330e2b](https://github.com/sase-org/sase/commit/f330e2b949b5e9744213dd48d7c785cab29b3de1)
+    — feat(preview): content-aware sizing for the prompt preview panel
 
 # Content-Aware Sizing for the Prompt Preview Panel (`K`)
 
