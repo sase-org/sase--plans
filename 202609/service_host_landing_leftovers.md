@@ -1,73 +1,67 @@
 ---
 tier: epic
 title: Finish the service-host epic leftovers found at landing
-goal: "Restarting the sase service host no longer kills detached scheduler, hook, and
-  chat-install runners. The host runtime scenarios the epic plan required are covered by
-  tests. Every TUI surface, help text, and doc describes the shipped Services tab,
-  service host, and scheduler. No `sase-11y` epic-symbol whitelist entry remains.
+goal: 'Restarting the sase service host no longer kills detached scheduler, hook,
+  and chat-install runners. The host runtime scenarios the epic plan required are
+  covered by tests. Every TUI surface, help text, and doc describes the shipped Services
+  tab, service host, and scheduler. No `sase-11y` epic-symbol whitelist entry remains.
 
-  "
+  '
 phases:
-  - id: detach-runners
-    title: Escape the service cgroup at the remaining detached runner spawns
-    depends_on: []
-    size: medium
-    description:
-      "detach-runners: route the CRS, fix-hook, and summarize workflow runners, the
-      mentor runner, the checks runner, hook execution, and the chat-install update
-      worker through `detach_scope`, so that a `sase.service` stop or restart
-      (`KillMode=mixed`) no longer SIGKILLs them. Prove that recorded PIDs and the
-      chat-install lock fd survive the wrap."
-  - id: services-wording
-    title: Make the TUI surfaces describe the Services tab and service host
-    depends_on: []
-    size: medium
-    description:
-      "services-wording: relabel the quit modal's host-restart option, fix the
-      Services-tab footer `x` hint, and rename the remaining Axe/AXE wording in the help
-      title, onboarding guides, process-select modal, command-palette category, doctor
-      next steps, and the screenshot example. Then regenerate and inspect the affected
-      PNG goldens."
-  - id: stale-docs
-    title: Rewrite the docs that still describe the pre-host model
-    depends_on:
-      - services-wording
-    size: small
-    description:
-      "stale-docs: rewrite the Telegram receiver paragraph in `notifications.md` for the
-      `telegram_receiver` service proc, and drop the removed `service_host` flag from
-      three blog posts. Fix the `chat_install.restart_attempts` schema description.
-      Point the mobile runbook at `sase service proc restart gateway`. Align the ACE and
-      plugin docs with the relabeled restart option."
-  - id: host-runtime-tests
-    title: Cover the service host runtime scenarios the epic plan required
-    depends_on: []
-    size: medium
-    description:
-      "host-runtime-tests: add tests for these host scenarios: concurrent start, stale
-      lock, signal handling (SIGTERM/SIGUSR1), config reload, stop-vs-restart race,
-      host-level crash loop, and no-oneshot-replay. They must drive the real
-      `_ServiceHost`/`ServiceHostLock` code under a temporary SASE home. Fix any host
-      defect the tests expose."
-  - id: epic-symbols
-    title: Resolve the sase-11y epic-symbol whitelist and the stale start label
-    depends_on: []
-    size: small
-    description:
-      'epic-symbols: make private or delete the seven service facades still whitelisted
-      as `--epic-symbol "sase-11y(...)"` and drop those Justfile entries. Move
-      sase-telegram''s service-config test onto the public `load_service_config` seam.
-      Stop journaling every host-launched scheduler start as "axe start".'
+- id: detach-runners
+  title: Escape the service cgroup at the remaining detached runner spawns
+  depends_on: []
+  size: medium
+  description: 'detach-runners: route the CRS, fix-hook, and summarize workflow runners,
+    the mentor runner, the checks runner, hook execution, and the chat-install update
+    worker through `detach_scope`, so that a `sase.service` stop or restart (`KillMode=mixed`)
+    no longer SIGKILLs them. Prove that recorded PIDs and the chat-install lock fd
+    survive the wrap.'
+- id: services-wording
+  title: Make the TUI surfaces describe the Services tab and service host
+  depends_on: []
+  size: medium
+  description: 'services-wording: relabel the quit modal''s host-restart option, fix
+    the Services-tab footer `x` hint, and rename the remaining Axe/AXE wording in
+    the help title, onboarding guides, process-select modal, command-palette category,
+    doctor next steps, and the screenshot example. Then regenerate and inspect the
+    affected PNG goldens.'
+- id: stale-docs
+  title: Rewrite the docs that still describe the pre-host model
+  depends_on:
+  - services-wording
+  size: small
+  description: 'stale-docs: rewrite the Telegram receiver paragraph in `notifications.md`
+    for the `telegram_receiver` service proc, and drop the removed `service_host`
+    flag from three blog posts. Fix the `chat_install.restart_attempts` schema description.
+    Point the mobile runbook at `sase service proc restart gateway`. Align the ACE
+    and plugin docs with the relabeled restart option.'
+- id: host-runtime-tests
+  title: Cover the service host runtime scenarios the epic plan required
+  depends_on: []
+  size: medium
+  description: 'host-runtime-tests: add tests for these host scenarios: concurrent
+    start, stale lock, signal handling (SIGTERM/SIGUSR1), config reload, stop-vs-restart
+    race, host-level crash loop, and no-oneshot-replay. They must drive the real `_ServiceHost`/`ServiceHostLock`
+    code under a temporary SASE home. Fix any host defect the tests expose.'
+- id: epic-symbols
+  title: Resolve the sase-11y epic-symbol whitelist and the stale start label
+  depends_on: []
+  size: small
+  description: 'epic-symbols: make private or delete the seven service facades still
+    whitelisted as `--epic-symbol "sase-11y(...)"` and drop those Justfile entries.
+    Move sase-telegram''s service-config test onto the public `load_service_config`
+    seam. Stop journaling every host-launched scheduler start as "axe start".'
 proposed_by: bbugyi200.athena.sase-11y.land
 parent_bead: sase-11y
 create_time: 2026-09-21 07:19:24
 status: wip
+bead_id: sase-11y.11
 ---
 
-- **PROMPT:**
-  [prompts/202609/service_host_landing_leftovers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_landing_leftovers.md)
-- **PARENT:**
-  [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **PROMPT:** [prompts/202609/service_host_landing_leftovers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_landing_leftovers.md)
+- **PARENT:** [202609/service_host_1.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_1.md)
+- **BEAD:** [sase-11y.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.11.md)
 
 # Plan: Finish the service-host epic leftovers found at landing
 
