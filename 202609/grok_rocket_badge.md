@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Make the Grok provider badge easy to see (🛰️ → 🚀)
-goal: The Grok/xAI provider badge renders as a bold, full-width 🚀 everywhere provider
+goal:
+  The Grok/xAI provider badge renders as a bold, full-width 🚀 everywhere provider
   badges appear, with docs and tests updated.
 size: small
 proposed_by: bbugyi200.athena.0ou
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ou](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ou.md)
+- **COMMITS:**
+  - [21c7d00](https://github.com/sase-org/sase/commit/21c7d0033f7cd30678d0c8f64937f5b9796d92e0)
+    — feat(providers): render Grok/xAI badge as rocket instead of satellite
 
 # Plan: Make the Grok provider badge easy to see (🛰️ → 🚀)
 
