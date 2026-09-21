@@ -1,76 +1,70 @@
 ---
 tier: epic
 title: Retire the AXE watchdogs and alias sase axe to sase scheduler
-goal: "The sase service host is the only thing that starts, restarts, or stops the
+goal: 'The sase service host is the only thing that starts, restarts, or stops the
   scheduler from a CLI path: the ensure watchdog and its systemd timer are gone, no
   agent wait heals axe, the axe-start systemd scope wrapper and its doctor check are
-  gone, `sase update` / `sase flag` / `sase plugin` restart the `scheduler` service proc
-  instead of the AXE daemon, `sase axe start|stop|restart|status` is a documented alias
-  of `sase scheduler`, and the direct AXE restart machinery that those paths kept alive
-  is deleted.
+  gone, `sase update` / `sase flag` / `sase plugin` restart the `scheduler` service
+  proc instead of the AXE daemon, `sase axe start|stop|restart|status` is a documented
+  alias of `sase scheduler`, and the direct AXE restart machinery that those paths
+  kept alive is deleted.
 
-  "
+  '
 phases:
-  - id: ensure-watchdog
-    title: Delete the axe ensure watchdog and its healing notifications
-    depends_on: []
-    size: medium
-    description:
-      "ensure-watchdog: delete `sase axe ensure`, the `ensure.py` / `_ensure_timer.py` /
-      `_ensure_runtime.py` modules, the ensure lock the stop path waits on, the
-      opportunistic heal on agent waits, and the three healing notification senders that
-      lose their only producer."
-  - id: systemd-scope
-    title: Delete the axe-start systemd scope wrapper and its evidence
-    depends_on:
-      - ensure-watchdog
-    size: medium
-    description:
-      "systemd-scope: delete `sase/axe/systemd_scope.py`, the `_allow_systemd_scope`
-      wrapping and unwrapped-retry branch in `_process_start.py`, the
-      `axe.systemd_scope` doctor check, and the `orchestrator_session_scope` issue the
-      status collector appends."
-  - id: update-restart
-    title: Route the post-update restart through the scheduler service proc
-    depends_on: []
-    size: medium
-    description:
-      'update-restart: make `restart_after_update` call
-      `restart_service_proc("scheduler", ...)`, rename the axe-shaped injection types,
-      drop the AXE-only `pid` / `attempts` / `verified` fields from `RestartInfo`, and
-      update every `sase update`, `sase flag`, and `sase plugin` caller.'
-  - id: axe-alias
-    title: Make sase axe lifecycle verbs an alias of sase scheduler
-    depends_on:
-      - ensure-watchdog
-      - systemd-scope
-      - update-restart
-    size: medium
-    description:
-      "axe-alias: retarget `sase axe start|stop|restart|status` at
-      `handle_scheduler_command`, share the scheduler parser's option builders, retarget
-      the detached daemon command at `sase scheduler run`, and say the alias out loud in
-      both commands' help."
-  - id: dead-supervisors
-    title: Delete the AXE restart machinery the alias orphaned
-    depends_on:
-      - axe-alias
-    size: medium
-    description:
-      "dead-supervisors: delete `_process_restart.py`, `_restart_events.py`,
-      `restart_render.py`, and `status_render.py` once the alias removes their last
-      callers, and prune the `sase.axe.process` / `sase.axe` re-export surface that kept
-      a second supervisor reachable."
+- id: ensure-watchdog
+  title: Delete the axe ensure watchdog and its healing notifications
+  depends_on: []
+  size: medium
+  description: 'ensure-watchdog: delete `sase axe ensure`, the `ensure.py` / `_ensure_timer.py`
+    / `_ensure_runtime.py` modules, the ensure lock the stop path waits on, the opportunistic
+    heal on agent waits, and the three healing notification senders that lose their
+    only producer.'
+- id: systemd-scope
+  title: Delete the axe-start systemd scope wrapper and its evidence
+  depends_on:
+  - ensure-watchdog
+  size: medium
+  description: 'systemd-scope: delete `sase/axe/systemd_scope.py`, the `_allow_systemd_scope`
+    wrapping and unwrapped-retry branch in `_process_start.py`, the `axe.systemd_scope`
+    doctor check, and the `orchestrator_session_scope` issue the status collector
+    appends.'
+- id: update-restart
+  title: Route the post-update restart through the scheduler service proc
+  depends_on: []
+  size: medium
+  description: 'update-restart: make `restart_after_update` call `restart_service_proc("scheduler",
+    ...)`, rename the axe-shaped injection types, drop the AXE-only `pid` / `attempts`
+    / `verified` fields from `RestartInfo`, and update every `sase update`, `sase
+    flag`, and `sase plugin` caller.'
+- id: axe-alias
+  title: Make sase axe lifecycle verbs an alias of sase scheduler
+  depends_on:
+  - ensure-watchdog
+  - systemd-scope
+  - update-restart
+  size: medium
+  description: 'axe-alias: retarget `sase axe start|stop|restart|status` at `handle_scheduler_command`,
+    share the scheduler parser''s option builders, retarget the detached daemon command
+    at `sase scheduler run`, and say the alias out loud in both commands'' help.'
+- id: dead-supervisors
+  title: Delete the AXE restart machinery the alias orphaned
+  depends_on:
+  - axe-alias
+  size: medium
+  description: 'dead-supervisors: delete `_process_restart.py`, `_restart_events.py`,
+    `restart_render.py`, and `status_render.py` once the alias removes their last
+    callers, and prune the `sase.axe.process` / `sase.axe` re-export surface that
+    kept a second supervisor reachable.'
 proposed_by: bbugyi200.athena.sase-11y.10.1.3
 parent_bead: sase-11y.10.1.3
 create_time: 2026-09-20 21:17:49
 status: wip
+bead_id: sase-11y.10.1.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/axe_cli_sunset.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_cli_sunset.md)
-- **PARENT:**
-  [202609/service_host_sunset.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_sunset.md)
+- **PROMPT:** [prompts/202609/axe_cli_sunset.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/axe_cli_sunset.md)
+- **PARENT:** [202609/service_host_sunset.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_sunset.md)
+- **BEAD:** [sase-11y.10.1.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.10.1.3.1.md)
 
 # Plan: Retire the AXE watchdogs and alias sase axe to sase scheduler
 
