@@ -1,104 +1,96 @@
 ---
 tier: epic
 title: Split The Next Ten Largest sase-core Rust Files Into <=1500 Line Modules
-goal: "Each of the ten largest Rust files remaining in the sase-core repo after epic
-  sase-14s is decomposed into a module tree whose every file is at most 1500 lines, with
-  no behavior change, no public API change, and `just check` green after each phase.
+goal: 'Each of the ten largest Rust files remaining in the sase-core repo after epic
+  sase-14s is decomposed into a module tree whose every file is at most 1500 lines,
+  with no behavior change, no public API change, and `just check` green after each
+  phase.
 
-  "
+  '
 phases:
-  - id: bead_cli
-    title: Split crates/sase_core/src/bead/cli.rs
-    depends_on: []
-    size: medium
-    description:
-      "bead_cli: decompose the 4,276-line bead CLI module into dispatch, per-command
-      handler, argument parsing, and rendering submodules under bead/cli/."
-  - id: federation_worker
-    title: Split crates/sase_gateway/src/federation_worker.rs
-    depends_on:
-      - bead_cli
-    size: medium
-    description:
-      "federation_worker: decompose the 3,953-line gateway federation worker, including
-      its 1,950-line cfg(unix) imp module, into a federation_worker/ tree without
-      disturbing its platform gating."
-  - id: agent_stats_run
-    title: Split crates/sase_core/src/agent_stats/run.rs
-    depends_on:
-      - federation_worker
-    size: medium
-    description:
-      "agent_stats_run: decompose the 3,732-line run-stats aggregation module into
-      query, per-dimension fold, attribution, and finishing submodules, and split its
-      2,250-line test block."
-  - id: fleet_reads
-    title: Split crates/sase_gateway/src/fleet_reads.rs
-    depends_on:
-      - agent_stats_run
-    size: medium
-    description:
-      "fleet_reads: decompose the 3,371-line gateway fleet read service into service,
-      snapshot, record resolution, content, and invalidation-hub submodules."
-  - id: bead_events
-    title: Split crates/sase_core/src/bead/events.rs
-    depends_on:
-      - fleet_reads
-    size: medium
-    description:
-      "bead_events: decompose the 3,314-line bead event-stream module into wire, import,
-      reduction, and merge/relocation submodules under bead/events/."
-  - id: tool_run_store
-    title: Split crates/sase_core/src/tool_run/store.rs
-    depends_on:
-      - bead_events
-    size: medium
-    description:
-      "tool_run_store: decompose the 3,229-line SQLite tool-run store into
-      connection/schema, run lifecycle, query, and retention submodules under
-      tool_run/store/."
-  - id: provider_usage_tests
-    title: Split crates/sase_core/src/provider_usage/tests.rs
-    depends_on:
-      - tool_run_store
-    size: medium
-    description:
-      "provider_usage_tests: split the 3,176-line provider_usage test file into a
-      provider_usage/tests/ directory keyed by the production module each group covers."
-  - id: editor_directive
-    title: Split crates/sase_core/src/editor/directive.rs
-    depends_on:
-      - provider_usage_tests
-    size: medium
-    description:
-      "editor_directive: decompose the 2,952-line editor directive module into metadata
-      tables, contract lookup, completion candidates, and context detection submodules
-      under editor/directive/."
-  - id: runner_capacity
-    title: Split crates/sase_core/src/runner_capacity.rs
-    depends_on:
-      - editor_directive
-    size: medium
-    description:
-      "runner_capacity: decompose the 2,938-line runner capacity policy module into
-      wire, claims/lineage, waiters, candidate decision, holds, and capacity math
-      submodules under runner_capacity/."
-  - id: notification_store_parity
-    title: Split crates/sase_core/tests/notification_store_parity.rs
-    depends_on:
-      - runner_capacity
-    size: medium
-    description:
-      "notification_store_parity: split the 2,825-line notification store integration
-      test into a single-binary tests/notification_store_parity/ directory and close out
-      the epic's file-size invariant."
+- id: bead_cli
+  title: Split crates/sase_core/src/bead/cli.rs
+  depends_on: []
+  size: medium
+  description: 'bead_cli: decompose the 4,276-line bead CLI module into dispatch,
+    per-command handler, argument parsing, and rendering submodules under bead/cli/.'
+- id: federation_worker
+  title: Split crates/sase_gateway/src/federation_worker.rs
+  depends_on:
+  - bead_cli
+  size: medium
+  description: 'federation_worker: decompose the 3,953-line gateway federation worker,
+    including its 1,950-line cfg(unix) imp module, into a federation_worker/ tree
+    without disturbing its platform gating.'
+- id: agent_stats_run
+  title: Split crates/sase_core/src/agent_stats/run.rs
+  depends_on:
+  - federation_worker
+  size: medium
+  description: 'agent_stats_run: decompose the 3,732-line run-stats aggregation module
+    into query, per-dimension fold, attribution, and finishing submodules, and split
+    its 2,250-line test block.'
+- id: fleet_reads
+  title: Split crates/sase_gateway/src/fleet_reads.rs
+  depends_on:
+  - agent_stats_run
+  size: medium
+  description: 'fleet_reads: decompose the 3,371-line gateway fleet read service into
+    service, snapshot, record resolution, content, and invalidation-hub submodules.'
+- id: bead_events
+  title: Split crates/sase_core/src/bead/events.rs
+  depends_on:
+  - fleet_reads
+  size: medium
+  description: 'bead_events: decompose the 3,314-line bead event-stream module into
+    wire, import, reduction, and merge/relocation submodules under bead/events/.'
+- id: tool_run_store
+  title: Split crates/sase_core/src/tool_run/store.rs
+  depends_on:
+  - bead_events
+  size: medium
+  description: 'tool_run_store: decompose the 3,229-line SQLite tool-run store into
+    connection/schema, run lifecycle, query, and retention submodules under tool_run/store/.'
+- id: provider_usage_tests
+  title: Split crates/sase_core/src/provider_usage/tests.rs
+  depends_on:
+  - tool_run_store
+  size: medium
+  description: 'provider_usage_tests: split the 3,176-line provider_usage test file
+    into a provider_usage/tests/ directory keyed by the production module each group
+    covers.'
+- id: editor_directive
+  title: Split crates/sase_core/src/editor/directive.rs
+  depends_on:
+  - provider_usage_tests
+  size: medium
+  description: 'editor_directive: decompose the 2,952-line editor directive module
+    into metadata tables, contract lookup, completion candidates, and context detection
+    submodules under editor/directive/.'
+- id: runner_capacity
+  title: Split crates/sase_core/src/runner_capacity.rs
+  depends_on:
+  - editor_directive
+  size: medium
+  description: 'runner_capacity: decompose the 2,938-line runner capacity policy module
+    into wire, claims/lineage, waiters, candidate decision, holds, and capacity math
+    submodules under runner_capacity/.'
+- id: notification_store_parity
+  title: Split crates/sase_core/tests/notification_store_parity.rs
+  depends_on:
+  - runner_capacity
+  size: medium
+  description: 'notification_store_parity: split the 2,825-line notification store
+    integration test into a single-binary tests/notification_store_parity/ directory
+    and close out the epic''s file-size invariant.'
 proposed_by: bbugyi200.athena.0oh.r0
 create_time: 2026-09-21 11:31:32
 status: wip
+bead_id: sase-15b
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_core_next_ten_big_file_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_next_ten_big_file_split.md)
+- **PROMPT:** [prompts/202609/sase_core_next_ten_big_file_split.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_next_ten_big_file_split.md)
+- **BEAD:** [sase-15b](https://github.com/sase-org/sase--beads/blob/main/pages/sase-15b/README.md)
 
 # Plan: Split The Next Ten Largest sase-core Rust Files Into <=1500 Line Modules
 
