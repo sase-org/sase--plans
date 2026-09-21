@@ -1,36 +1,35 @@
 ---
 tier: epic
 title: Launch-context cluster on each tab's status row
-goal: "The launch-default model/effort and current-project chips leave the crowded top
-  bar and appear, clearly labeled and with precise tooltips, at the far right of every
-  tab's status row, backed by one shared state source.
+goal: 'The launch-default model/effort and current-project chips leave the crowded
+  top bar and appear, clearly labeled and with precise tooltips, at the far right
+  of every tab''s status row, backed by one shared state source.
 
-  "
+  '
 phases:
-  - id: launch-context-source
-    title: One shared launch-context source
-    depends_on: []
-    size: medium
-    description:
-      "launch-context-source: move launch-default and current-project polling and
-      resolution into one app-scoped LaunchContextSource and make both indicators
-      render-only views, with no visible change."
-  - id: launch-context-bar
-    title: Labeled launch-context cluster on every tab's status row
-    depends_on:
-      - launch-context-source
-    size: medium
-    description:
-      "launch-context-bar: build the labeled, density-aware LaunchContextBar, mount it
-      on the Agents, Artifacts, and Services status rows, drop the chips from the top
-      bar, rewrite tooltips, and refresh tests, goldens, and docs."
+- id: launch-context-source
+  title: One shared launch-context source
+  depends_on: []
+  size: medium
+  description: 'launch-context-source: move launch-default and current-project polling
+    and resolution into one app-scoped LaunchContextSource and make both indicators
+    render-only views, with no visible change.'
+- id: launch-context-bar
+  title: Labeled launch-context cluster on every tab's status row
+  depends_on:
+  - launch-context-source
+  size: medium
+  description: 'launch-context-bar: build the labeled, density-aware LaunchContextBar,
+    mount it on the Agents, Artifacts, and Services status rows, drop the chips from
+    the top bar, rewrite tooltips, and refresh tests, goldens, and docs.'
 proposed_by: bbugyi200.apollo.0s.f0.f0.w2
 create_time: 2026-09-20 22:21:47
 status: wip
+bead_id: sase-14y
 ---
 
-- **PROMPT:**
-  [prompts/202609/launch_context_row.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/launch_context_row.md)
+- **PROMPT:** [prompts/202609/launch_context_row.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/launch_context_row.md)
+- **BEAD:** [sase-14y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14y/README.md)
 
 # Move the launch-default model and current-project chips into a labeled "launch context" cluster on each tab's status row
 
