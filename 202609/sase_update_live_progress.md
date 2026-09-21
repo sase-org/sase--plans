@@ -1,70 +1,66 @@
 ---
 tier: epic
 title: Live, streaming progress for sase update
-goal: "`sase update` shows every step as it happens: a live timeline on terminals and an
-  append-only log when output is piped. It streams the tail of slow subprocess output
-  (cargo, uv), shows each checkout's commits and diffstat as it fast-forwards, expands
-  the failing step's output on error, survives Ctrl-C cleanly, and always leaves a full
-  log file behind. The JSON and quiet contracts stay stable.
+goal: '`sase update` shows every step as it happens: a live timeline on terminals
+  and an append-only log when output is piped. It streams the tail of slow subprocess
+  output (cargo, uv), shows each checkout''s commits and diffstat as it fast-forwards,
+  expands the failing step''s output on error, survives Ctrl-C cleanly, and always
+  leaves a full log file behind. The JSON and quiet contracts stay stable.
 
-  "
+  '
 phases:
-  - id: stream-runner
-    title: Streaming subprocess runner
-    depends_on: []
-    size: medium
-    description:
-      "stream-runner: add a line-streaming subprocess primitive with sanitization,
-      timeout, and process-group interrupt handling, and plumb an optional on_output
-      sink through run_dev_update_command, run_recorded_command, and run_uv without
-      changing their existing behavior."
-  - id: progress-model
-    title: Progress event protocol, timeline model, and renderers
-    depends_on: []
-    size: medium
-    description:
-      "progress-model: create the sase.update_progress package: the UpdateProgress event
-      protocol plus a null sink, a thread-safe timeline model, the rich Live renderer,
-      the plain append-only renderer, the full-run log file sink, and a fan-out sink."
-  - id: instrument-backends
-    title: Emit progress events from dev-update, uv, and mode-switch backends
-    depends_on:
-      - stream-runner
-      - progress-model
-    size: medium
-    description:
-      "instrument-backends: thread an optional progress sink through plan_dev_update,
-      execute_dev_update (fetch, preflight, merge, reconcile), and execute_mode_switch.
-      Emit step events with friendly titles and result details, and route subprocess
-      output into the running step."
-  - id: wire-live-update
-    title: Wire the live timeline into the sase update live path
-    depends_on:
-      - instrument-backends
-    size: medium
-    description:
-      "wire-live-update: add the -v/--verbose flag and renderer selection, declare the
-      step timeline, run the managed uv upgrade as a streamed step with live package
-      rows, add restart and completion rows, print the final frame and a deduplicated
-      summary, expand output on failure, handle Ctrl-C with exit 130, and add log_path
-      to the JSON output."
-  - id: wire-mode-switch-dry-run-docs
-    title: Mode switch, dry-run, and documentation
-    depends_on:
-      - wire-live-update
-    size: small
-    description:
-      "wire-mode-switch-dry-run-docs: move --to mode switches onto the same live session
-      after confirmation, show a transient timeline while --dry-run plans its fetches,
-      and update the plugins.md and cli.md docs with the new output and the --verbose
-      flag."
+- id: stream-runner
+  title: Streaming subprocess runner
+  depends_on: []
+  size: medium
+  description: 'stream-runner: add a line-streaming subprocess primitive with sanitization,
+    timeout, and process-group interrupt handling, and plumb an optional on_output
+    sink through run_dev_update_command, run_recorded_command, and run_uv without
+    changing their existing behavior.'
+- id: progress-model
+  title: Progress event protocol, timeline model, and renderers
+  depends_on: []
+  size: medium
+  description: 'progress-model: create the sase.update_progress package: the UpdateProgress
+    event protocol plus a null sink, a thread-safe timeline model, the rich Live renderer,
+    the plain append-only renderer, the full-run log file sink, and a fan-out sink.'
+- id: instrument-backends
+  title: Emit progress events from dev-update, uv, and mode-switch backends
+  depends_on:
+  - stream-runner
+  - progress-model
+  size: medium
+  description: 'instrument-backends: thread an optional progress sink through plan_dev_update,
+    execute_dev_update (fetch, preflight, merge, reconcile), and execute_mode_switch.
+    Emit step events with friendly titles and result details, and route subprocess
+    output into the running step.'
+- id: wire-live-update
+  title: Wire the live timeline into the sase update live path
+  depends_on:
+  - instrument-backends
+  size: medium
+  description: 'wire-live-update: add the -v/--verbose flag and renderer selection,
+    declare the step timeline, run the managed uv upgrade as a streamed step with
+    live package rows, add restart and completion rows, print the final frame and
+    a deduplicated summary, expand output on failure, handle Ctrl-C with exit 130,
+    and add log_path to the JSON output.'
+- id: wire-mode-switch-dry-run-docs
+  title: Mode switch, dry-run, and documentation
+  depends_on:
+  - wire-live-update
+  size: small
+  description: 'wire-mode-switch-dry-run-docs: move --to mode switches onto the same
+    live session after confirmation, show a transient timeline while --dry-run plans
+    its fetches, and update the plugins.md and cli.md docs with the new output and
+    the --verbose flag.'
 proposed_by: bbugyi200.apollo.1d
 create_time: 2026-09-21 07:49:16
 status: wip
+bead_id: sase-158
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_update_live_progress.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_update_live_progress.md)
+- **PROMPT:** [prompts/202609/sase_update_live_progress.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_update_live_progress.md)
+- **BEAD:** [sase-158](https://github.com/sase-org/sase--beads/blob/main/pages/sase-158/README.md)
 
 # Plan: Live, streaming progress for `sase update`
 
