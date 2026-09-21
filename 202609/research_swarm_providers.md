@@ -1,60 +1,59 @@
 ---
 tier: epic
 title: Provider-gated
-goal: "#research_swarm launches one researcher per enabled LLM provider (codex and
+goal: '#research_swarm launches one researcher per enabled LLM provider (codex and
   claude by default, grok and muse opt-in), skips any provider that is temporarily
-  disabled, names every input and report suffix after its provider, and the lead
-  consolidates whatever set of reports actually ran.
+  disabled, names every input and report suffix after its provider, and the lead consolidates
+  whatever set of reports actually ran.
 
-  "
+  '
 phases:
-  - id: predicate
-    title: Provider-disabled Jinja predicate
-    depends_on: []
-    size: small
-    description: "predicate: add `provider_disabled` / `provider_enabled` prompt-body
-      Jinja filters over the existing Rust-backed provider-disable state, with tests and
-      xprompt docs, so `%if(should_run=...)` can gate a segment on provider
-      availability.
+- id: predicate
+  title: Provider-disabled Jinja predicate
+  depends_on: []
+  size: small
+  description: 'predicate: add `provider_disabled` / `provider_enabled` prompt-body
+    Jinja filters over the existing Rust-backed provider-disable state, with tests
+    and xprompt docs, so `%if(should_run=...)` can gate a segment on provider availability.
 
-      "
-  - id: swarm
-    title: Per-provider research swarm segments
-    depends_on:
-      - predicate
-    size: medium
-    description: "swarm: rewrite the research_swarm xprompt around four provider-gated
-      researcher segments plus an always-run lead, rename its inputs to `<provider>` /
-      `<provider>_model`, switch report suffixes to provider short names, move the clan
-      declaration onto the lead, and update the plugin's config, tests, and docs.
+    '
+- id: swarm
+  title: Per-provider research swarm segments
+  depends_on:
+  - predicate
+  size: medium
+  description: 'swarm: rewrite the research_swarm xprompt around four provider-gated
+    researcher segments plus an always-run lead, rename its inputs to `<provider>`
+    / `<provider>_model`, switch report suffixes to provider short names, move the
+    clan declaration onto the lead, and update the plugin''s config, tests, and docs.
 
-      "
-  - id: aliases
-    title: Retire the host researcher model aliases
-    depends_on:
-      - swarm
-    size: xsmall
-    description: "aliases: drop the now-unreferenced `sol_or_grok` / `opus_or_grok`
-      custom model aliases from the host SASE config in the chezmoi repo, keep `image`,
-      and retune the `researchers` bucket description.
+    '
+- id: aliases
+  title: Retire the host researcher model aliases
+  depends_on:
+  - swarm
+  size: xsmall
+  description: 'aliases: drop the now-unreferenced `sol_or_grok` / `opus_or_grok`
+    custom model aliases from the host SASE config in the chezmoi repo, keep `image`,
+    and retune the `researchers` bucket description.
 
-      "
-  - id: fanout
-    title: Harden the installed-swarm fan-out regression
-    depends_on:
-      - swarm
-    size: small
-    description:
-      "fanout: make the fakey runner-slot test that plans the installed research swarm
-      independent of machine-wide provider-disable state and extend it to cover the new
-      opt-in providers."
+    '
+- id: fanout
+  title: Harden the installed-swarm fan-out regression
+  depends_on:
+  - swarm
+  size: small
+  description: 'fanout: make the fakey runner-slot test that plans the installed research
+    swarm independent of machine-wide provider-disable state and extend it to cover
+    the new opt-in providers.'
 proposed_by: bbugyi200.athena.0oi
 create_time: 2026-09-20 20:51:27
 status: wip
+bead_id: sase-14t
 ---
 
-- **PROMPT:**
-  [prompts/202609/research_swarm_providers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/research_swarm_providers.md)
+- **PROMPT:** [prompts/202609/research_swarm_providers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/research_swarm_providers.md)
+- **BEAD:** [sase-14t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14t/README.md)
 
 # Plan: Provider-gated #research_swarm researchers
 
