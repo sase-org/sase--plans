@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Content-aware sizing for the K preview panel
-goal:
-  The K preview panel keeps its current size when content fits and grows toward
+goal: The K preview panel keeps its current size when content fits and grows toward
   near-full-screen when it does not.
 size: medium
 proposed_by: bbugyi200.athena.0ol
-create_time: 2026-09-21 09:25:08
-status: wip
+status: done
 ---
 
 # Content-Aware Sizing for the Prompt Preview Panel (`K`)
