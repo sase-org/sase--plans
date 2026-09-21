@@ -1,49 +1,48 @@
 ---
 tier: epic
 title: Antigravity (agy) subscription usage windows and default header indicator
-goal: "SASE collects Antigravity's four subscription usage windows on the normal
-  background cadence at zero model cost, and the top-right TUI header shows agy's Gemini
-  weekly window by default (for example `🪐 96% 6d1h`) whenever agy is installed and in
-  use, proven by a live post-landing screenshot saved as a SASE artifact.
+goal: 'SASE collects Antigravity''s four subscription usage windows on the normal
+  background cadence at zero model cost, and the top-right TUI header shows agy''s
+  Gemini weekly window by default (for example `🪐 96% 6d1h`) whenever agy is installed
+  and in use, proven by a live post-landing screenshot saved as a SASE artifact.
 
-  "
+  '
 phases:
-  - id: core-normalizer
-    title: Rust normalizer and Gemini weekly anchor rule
-    depends_on: []
-    size: medium
-    description:
-      "core-normalizer: in sase-core, add agy.rs to normalize the `agy -p /usage
-      --output-format json` envelope into honest model_family-scoped windows with the
-      hardening guards (omitted-zero TSV cross-check, turn-ran guard, logged-out
-      envelope), add the narrow agy arm to is_weekly_all_window, export and bind
-      provider_usage_normalize_agy_usage, and cover it with fixtures and tests."
-  - id: agy-collector
-    title: Hardened agy usage collector and provider hooks
-    depends_on:
-      - core-normalizer
-    size: medium
-    description:
-      "agy-collector: add collect_agy_usage (version floor, own process group, stderr
-      auth-prompt kill, deadline margins, no auto-update, private log file), wire
-      AgyProvider usage hooks, raise the sase-core-rs floor and ratchet the core
-      revision, add a scripted fake-agy test fixture, and document the collector."
-  - id: header-default
-    title: Header naming polish, default config, and snapshots
-    depends_on:
-      - agy-collector
-    size: small
-    description:
-      "header-default: render model_family scopes as the bare family in compact header
-      names only, add commented agy indicator examples to default_config.yml, pin the
-      shipped-default agy header outcome in tests, and add agy visual snapshot coverage."
+- id: core-normalizer
+  title: Rust normalizer and Gemini weekly anchor rule
+  depends_on: []
+  size: medium
+  description: 'core-normalizer: in sase-core, add agy.rs to normalize the `agy -p
+    /usage --output-format json` envelope into honest model_family-scoped windows
+    with the hardening guards (omitted-zero TSV cross-check, turn-ran guard, logged-out
+    envelope), add the narrow agy arm to is_weekly_all_window, export and bind provider_usage_normalize_agy_usage,
+    and cover it with fixtures and tests.'
+- id: agy-collector
+  title: Hardened agy usage collector and provider hooks
+  depends_on:
+  - core-normalizer
+  size: medium
+  description: 'agy-collector: add collect_agy_usage (version floor, own process group,
+    stderr auth-prompt kill, deadline margins, no auto-update, private log file),
+    wire AgyProvider usage hooks, raise the sase-core-rs floor and ratchet the core
+    revision, add a scripted fake-agy test fixture, and document the collector.'
+- id: header-default
+  title: Header naming polish, default config, and snapshots
+  depends_on:
+  - agy-collector
+  size: small
+  description: 'header-default: render model_family scopes as the bare family in compact
+    header names only, add commented agy indicator examples to default_config.yml,
+    pin the shipped-default agy header outcome in tests, and add agy visual snapshot
+    coverage.'
 proposed_by: bbugyi200.athena.0os
 create_time: 2026-09-21 15:31:49
 status: wip
+bead_id: sase-15p
 ---
 
-- **PROMPT:**
-  [prompts/202609/agy_usage_windows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agy_usage_windows.md)
+- **PROMPT:** [prompts/202609/agy_usage_windows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agy_usage_windows.md)
+- **BEAD:** [sase-15p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-15p/README.md)
 
 # Plan: Antigravity (agy) subscription usage windows and default header indicator
 
