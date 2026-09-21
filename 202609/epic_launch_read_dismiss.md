@@ -38,7 +38,7 @@ phases:
     was read still has a read event to clear it.'
 proposed_by: bbugyi200.apollo.17
 create_time: 2026-09-20 16:56:50
-status: wip
+status: done
 bead_id: sase-14l
 ---
 
