@@ -1,17 +1,15 @@
 ---
 tier: tale
 title: Finish landing the agent bead touches epic
-goal:
-  sase bead touched is on master, one row per bead, and agrees with the Agents-tab Beads
-  sub-section. The CLI shares the panel's glyph vocabulary and includes views and
-  audited reads. The sase-core pin exposes the touch-index bindings. symvision carries
-  no sase-14j debt. The Beads goldens are current, so sase-14j's land agent can close
-  it.
+goal: sase bead touched is on master, one row per bead, and agrees with the Agents-tab
+  Beads sub-section. The CLI shares the panel's glyph vocabulary and includes views
+  and audited reads. The sase-core pin exposes the touch-index bindings. symvision
+  carries no sase-14j debt. The Beads goldens are current, so sase-14j's land agent
+  can close it.
 size: medium
 proposed_by: bbugyi200.athena.sase-14j.land
 bead: sase-14j
-create_time: 2026-09-21 09:32:06
-status: wip
+status: done
 ---
 
 - **PARENT:**
