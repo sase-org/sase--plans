@@ -1,52 +1,50 @@
 ---
 tier: epic
 title: Finish sase update live progress
-goal: "`sase update` live progress holds up on a real terminal. Result panels print
+goal: '`sase update` live progress holds up on a real terminal. Result panels print
   intact after the live region is torn down, and rows render in execution order. The
   managed uv step streams its output and package rows, interrupts and failures produce
   one accurate final frame, and streaming subprocesses honor their timeouts. The CLI
   completion snapshot matches the parser again.
 
-  "
+  '
 phases:
-  - id: stream-and-backend-fixes
-    title: Bound streaming waits, fix CRLF, and fix backend step details
-    depends_on: []
-    size: small
-    description:
-      "stream-and-backend-fixes: always group-kill and bound the pump joins in
-      run_streaming (enforcing timeouts after leader exit), keep CRLF lines, isolate
-      prebuild stdin, parent the health-check repair row, clear stale transient merge
-      details, and regenerate the stale completion snapshot."
-  - id: timeline-renderer-fixes
-    title: Fix the timeline model, renderers, and session lifecycle
-    depends_on: []
-    size: medium
-    description:
-      "timeline-renderer-fixes: stop Live before the final frame, and make print_final
-      finalize and run once. Add precise interrupt finalization, trailing rows, a line
-      counter for verbose output past 200 lines, robust plain fallback, full-width
-      titles with an m:ss running clock, and the log mode line; remove dead members."
-  - id: handler-wiring-fixes
-    title: Fix the update handlers, managed rows, and docs
-    depends_on:
-      - timeline-renderer-fixes
-    size: medium
-    description:
-      "handler-wiring-fixes: print stdout only after teardown in the live, mode-switch,
-      and dry-run handlers. Stream managed uv output with normalized, parented package
-      rows, declare trailing rows in execution order, and make interrupts single-shot.
-      Pass argv to the log, dedupe RunUvFn, fix the docs, and add shared-terminal tests."
+- id: stream-and-backend-fixes
+  title: Bound streaming waits, fix CRLF, and fix backend step details
+  depends_on: []
+  size: small
+  description: 'stream-and-backend-fixes: always group-kill and bound the pump joins
+    in run_streaming (enforcing timeouts after leader exit), keep CRLF lines, isolate
+    prebuild stdin, parent the health-check repair row, clear stale transient merge
+    details, and regenerate the stale completion snapshot.'
+- id: timeline-renderer-fixes
+  title: Fix the timeline model, renderers, and session lifecycle
+  depends_on: []
+  size: medium
+  description: 'timeline-renderer-fixes: stop Live before the final frame, and make
+    print_final finalize and run once. Add precise interrupt finalization, trailing
+    rows, a line counter for verbose output past 200 lines, robust plain fallback,
+    full-width titles with an m:ss running clock, and the log mode line; remove dead
+    members.'
+- id: handler-wiring-fixes
+  title: Fix the update handlers, managed rows, and docs
+  depends_on:
+  - timeline-renderer-fixes
+  size: medium
+  description: 'handler-wiring-fixes: print stdout only after teardown in the live,
+    mode-switch, and dry-run handlers. Stream managed uv output with normalized, parented
+    package rows, declare trailing rows in execution order, and make interrupts single-shot.
+    Pass argv to the log, dedupe RunUvFn, fix the docs, and add shared-terminal tests.'
 proposed_by: bbugyi200.apollo.sase-158.land
 parent_bead: sase-158
 create_time: 2026-09-21 16:18:51
 status: wip
+bead_id: sase-158.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_update_live_progress_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_update_live_progress_fixes.md)
-- **PARENT:**
-  [202609/sase_update_live_progress.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_update_live_progress.md)
+- **PROMPT:** [prompts/202609/sase_update_live_progress_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_update_live_progress_fixes.md)
+- **PARENT:** [202609/sase_update_live_progress.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_update_live_progress.md)
+- **BEAD:** [sase-158.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-158/sase-158.6.md)
 
 # Plan: Finish `sase update` live progress (sase-158 landing fixes)
 
