@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Remove the Agents-tab ~ neighbor keymap and neighbors badge
-goal: 'On the Agents tab, ~ no longer opens or jumps to neighbors and the info panel
-  no longer shows [neighbors: N (~)]; numbered NEIGHBORS jumps remain the only neighbor
-  navigation, while Patches/Artifacts ~ family navigation is unchanged.'
+goal:
+  "On the Agents tab, ~ no longer opens or jumps to neighbors and the info panel no
+  longer shows [neighbors: N (~)]; numbered NEIGHBORS jumps remain the only neighbor
+  navigation, while Patches/Artifacts ~ family navigation is unchanged."
 size: medium
 proposed_by: bbugyi200.apollo.1c
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.1c](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.1c.md)
+- **COMMITS:**
+  - [184241f](https://github.com/sase-org/sase/commit/184241fa6635a1bd3ff2e2e793147ebbb7407099)
+    — feat(ace): remove Agents-tab tilde neighbor keymap
 
 # Remove the Agents-tab `~` neighbor keymap and the `[neighbors: N (~)]` badge
 
