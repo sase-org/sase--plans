@@ -1,83 +1,77 @@
 ---
 tier: epic
 title: Finish the service-host sunset leftovers found at landing
-goal: "No code path outside the sase service host starts the scheduler, nothing reads
+goal: 'No code path outside the sase service host starts the scheduler, nothing reads
   the retired AXE desired-state marker, `sase scheduler` offers no option it ignores,
   the Services-tab collector carries no permanently-empty legacy fields, and every
   non-blog doc describes the shipped service host, scheduler alias, and Services tab.
 
-  "
+  '
 phases:
-  - id: chat-restart
-    title: Route the chat-install post-update recovery through the service host
-    depends_on: []
-    size: medium
-    description:
-      'chat-restart: make the chat-install update worker bring the scheduler back
-      through the `scheduler` service proc instead of `start_axe_daemon`, retitle its
-      messages to "scheduler", and delete `start_axe_daemon` plus every
-      `_process_start.py` helper that loses its last caller (sase-152).'
-  - id: desired-state
-    title: Retire the AXE desired-state marker
-    depends_on:
-      - chat-restart
-    size: medium
-    description:
-      "desired-state: derive the scheduler's desired state from the service host instead
-      of `~/.sase/axe/desired_state.json`, rebase the `axe.health` doctor check and the
-      status collector on it, and delete the marker module, its `record_desired_state`
-      plumbing, and its tests."
-  - id: scheduler-cli
-    title: Delete the scheduler options the service path ignores
-    depends_on: []
-    size: small
-    description:
-      "scheduler-cli: remove `-A/-H/-q/-z` from `sase scheduler start|restart` and their
-      `sase axe` aliases and remove `restart -j`, keeping those overrides on `sase
-      scheduler run`, then regenerate the CLI spec and completion snapshots."
-  - id: tui-dead-state
-    title: Retire the Services-tab fields the flag removal emptied
-    depends_on: []
-    size: medium
-    description:
-      "tui-dead-state: delete `AxeCollectedData.axe_status` / `axe_metrics`, the app's
-      `_axe_status` / `_axe_metrics`, the `status` / `full_cycles` parameters they feed,
-      and the `None` arm of `KeybindingFooter.set_service_health`, keeping the render
-      pixel-identical."
-  - id: docs-core
-    title: Fix the service-host and scheduler reference docs
-    depends_on:
-      - chat-restart
-      - desired-state
-      - scheduler-cli
-    size: medium
-    description:
-      "docs-core: remove the `service_host` flag, whole-system-status, heartbeat-verify,
-      and ignored-option claims from `docs/axe.md`, `configuration.md`, `cli.md`,
-      `architecture.md`, `init.md`, `getting_started.md`, `README.md`, and `index.md`,
-      and fix the anchors those heading changes break."
-  - id: docs-surfaces
-    title: Rename the AXE tab and AXE restarts across the remaining docs and help text
-    depends_on:
-      - chat-restart
-      - tui-dead-state
-    size: medium
-    description:
-      "docs-surfaces: say Services tab and scheduler restart in `ace.md`, `plugins.md`,
-      `integrations.md`, `perf_runbook.md`, `vcs.md`, `query_language.md`,
-      `rust_backend.md`, `notifications.md`, `mentors.md`, runner-slots troubleshooting,
-      `llms.md`, and the tabs infographic prompt, plus the stale `!x` and plugin-install
-      help strings in `src/`."
+- id: chat-restart
+  title: Route the chat-install post-update recovery through the service host
+  depends_on: []
+  size: medium
+  description: 'chat-restart: make the chat-install update worker bring the scheduler
+    back through the `scheduler` service proc instead of `start_axe_daemon`, retitle
+    its messages to "scheduler", and delete `start_axe_daemon` plus every `_process_start.py`
+    helper that loses its last caller (sase-152).'
+- id: desired-state
+  title: Retire the AXE desired-state marker
+  depends_on:
+  - chat-restart
+  size: medium
+  description: 'desired-state: derive the scheduler''s desired state from the service
+    host instead of `~/.sase/axe/desired_state.json`, rebase the `axe.health` doctor
+    check and the status collector on it, and delete the marker module, its `record_desired_state`
+    plumbing, and its tests.'
+- id: scheduler-cli
+  title: Delete the scheduler options the service path ignores
+  depends_on: []
+  size: small
+  description: 'scheduler-cli: remove `-A/-H/-q/-z` from `sase scheduler start|restart`
+    and their `sase axe` aliases and remove `restart -j`, keeping those overrides
+    on `sase scheduler run`, then regenerate the CLI spec and completion snapshots.'
+- id: tui-dead-state
+  title: Retire the Services-tab fields the flag removal emptied
+  depends_on: []
+  size: medium
+  description: 'tui-dead-state: delete `AxeCollectedData.axe_status` / `axe_metrics`,
+    the app''s `_axe_status` / `_axe_metrics`, the `status` / `full_cycles` parameters
+    they feed, and the `None` arm of `KeybindingFooter.set_service_health`, keeping
+    the render pixel-identical.'
+- id: docs-core
+  title: Fix the service-host and scheduler reference docs
+  depends_on:
+  - chat-restart
+  - desired-state
+  - scheduler-cli
+  size: medium
+  description: 'docs-core: remove the `service_host` flag, whole-system-status, heartbeat-verify,
+    and ignored-option claims from `docs/axe.md`, `configuration.md`, `cli.md`, `architecture.md`,
+    `init.md`, `getting_started.md`, `README.md`, and `index.md`, and fix the anchors
+    those heading changes break.'
+- id: docs-surfaces
+  title: Rename the AXE tab and AXE restarts across the remaining docs and help text
+  depends_on:
+  - chat-restart
+  - tui-dead-state
+  size: medium
+  description: 'docs-surfaces: say Services tab and scheduler restart in `ace.md`,
+    `plugins.md`, `integrations.md`, `perf_runbook.md`, `vcs.md`, `query_language.md`,
+    `rust_backend.md`, `notifications.md`, `mentors.md`, runner-slots troubleshooting,
+    `llms.md`, and the tabs infographic prompt, plus the stale `!x` and plugin-install
+    help strings in `src/`.'
 proposed_by: bbugyi200.athena.sase-11y.10.1.land
 parent_bead: sase-11y.10.1
 create_time: 2026-09-21 03:59:09
 status: wip
+bead_id: sase-11y.10.1.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/service_host_sunset_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_sunset_finish.md)
-- **PARENT:**
-  [202609/service_host_sunset.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_sunset.md)
+- **PROMPT:** [prompts/202609/service_host_sunset_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/service_host_sunset_finish.md)
+- **PARENT:** [202609/service_host_sunset.md](https://github.com/sase-org/sase--plans/blob/main/202609/service_host_sunset.md)
+- **BEAD:** [sase-11y.10.1.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-11y/sase-11y.10.1.7.md)
 
 # Plan: Finish the service-host sunset leftovers found at landing
 
