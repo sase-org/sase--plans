@@ -1,102 +1,94 @@
 ---
 tier: epic
 title: Make sase-core correct and green on macOS
-goal: "The managed-tmp reap guard refuses broad roots on every platform and no test can
-  perform a live reap, every sase-core workspace test passes on macOS, and a required
+goal: 'The managed-tmp reap guard refuses broad roots on every platform and no test
+  can perform a live reap, every sase-core workspace test passes on macOS, and a required
   macOS CI leg keeps it that way.
 
-  "
+  '
 phases:
-  - id: reap-guard
-    title: Fix the managed-tmp reap guard and disarm its test
-    depends_on: []
-    size: small
-    description:
-      "reap-guard: canonicalize the unsafe-root denylist so the guard fires on macOS,
-      widen it to the platform temp aliases and $TMPDIR/$HOME, and rewrite the guard
-      test so it can never apply a removal."
-  - id: check-args
-    title: Let the verification gate run a filtered suite
-    depends_on:
-      - reap-guard
-    size: xsmall
-    description:
-      "check-args: forward trailing arguments from scripts/check.sh and the justfile
-      through to cargo test so a filtered or skipped run is possible without bypassing
-      the documented gate."
-  - id: macos-ci-advisory
-    title: Add an advisory macOS CI leg
-    depends_on:
-      - check-args
-    size: small
-    description:
-      "macos-ci-advisory: turn rust-checks into an os matrix with a non-blocking
-      macos-latest leg so every later phase gets real macOS signal without turning
-      master red."
-  - id: sudo-identity
-    title: Gate the procfs process-identity token to Linux
-    depends_on:
-      - macos-ci-advisory
-    size: medium
-    description:
-      "sudo-identity: split process_identity_token so the procfs body is target_os =
-      linux with an explicit unsupported-platform error elsewhere, add a config test
-      seam so the detached handshake tests keep running off Linux, and make the macOS
-      story for the sase_sudo_runner console script explicit."
-  - id: sudo-started-path
-    title: Fix the detached handoff started-path mismatch
-    depends_on:
-      - sudo-identity
-    size: medium
-    description:
-      "sudo-started-path: stop comparing a caller-supplied --started-path against one
-      derived from a canonicalized --detach-dir, and correct the remaining sudo_runner
-      cwd and sudo-order path expectations."
-  - id: gateway-attachments
-    title: Decide how attachment validation treats symlinked ancestors
-    depends_on:
-      - macos-ci-advisory
-    size: medium
-    description:
-      "gateway-attachments: adjudicate whether a platform symlink ancestor should make a
-      notification attachment undownloadable, implement the decision in
-      validate_attachment_path, and fix the five route tests."
-  - id: core-path-expectations
-    title: Reconcile canonicalized paths across sase_core and the bindings
-    depends_on:
-      - macos-ci-advisory
-    size: medium
-    description:
-      "core-path-expectations: fix the five remaining sase_core and sase_core_py
-      failures caused by comparing canonicalized paths against caller-supplied ones,
-      deciding per site whether production or the expectation is wrong."
-  - id: lsp-uri
-    title: Make LSP definition URIs agree with their expectations
-    depends_on:
-      - macos-ci-advisory
-    size: small
-    description:
-      "lsp-uri: resolve the canonical-versus-supplied path disagreement behind the two
-      sase_xprompt_lsp definition failures."
-  - id: macos-ci-required
-    title: Make the macOS leg required and document the loop
-    depends_on:
-      - sudo-started-path
-      - gateway-attachments
-      - core-path-expectations
-      - lsp-uri
-    size: small
-    description:
-      "macos-ci-required: drop the advisory escape hatch so the macOS leg blocks, and
-      document the macOS verification loop and the platform-path rule for future
-      contributors."
+- id: reap-guard
+  title: Fix the managed-tmp reap guard and disarm its test
+  depends_on: []
+  size: small
+  description: 'reap-guard: canonicalize the unsafe-root denylist so the guard fires
+    on macOS, widen it to the platform temp aliases and $TMPDIR/$HOME, and rewrite
+    the guard test so it can never apply a removal.'
+- id: check-args
+  title: Let the verification gate run a filtered suite
+  depends_on:
+  - reap-guard
+  size: xsmall
+  description: 'check-args: forward trailing arguments from scripts/check.sh and the
+    justfile through to cargo test so a filtered or skipped run is possible without
+    bypassing the documented gate.'
+- id: macos-ci-advisory
+  title: Add an advisory macOS CI leg
+  depends_on:
+  - check-args
+  size: small
+  description: 'macos-ci-advisory: turn rust-checks into an os matrix with a non-blocking
+    macos-latest leg so every later phase gets real macOS signal without turning master
+    red.'
+- id: sudo-identity
+  title: Gate the procfs process-identity token to Linux
+  depends_on:
+  - macos-ci-advisory
+  size: medium
+  description: 'sudo-identity: split process_identity_token so the procfs body is
+    target_os = linux with an explicit unsupported-platform error elsewhere, add a
+    config test seam so the detached handshake tests keep running off Linux, and make
+    the macOS story for the sase_sudo_runner console script explicit.'
+- id: sudo-started-path
+  title: Fix the detached handoff started-path mismatch
+  depends_on:
+  - sudo-identity
+  size: medium
+  description: 'sudo-started-path: stop comparing a caller-supplied --started-path
+    against one derived from a canonicalized --detach-dir, and correct the remaining
+    sudo_runner cwd and sudo-order path expectations.'
+- id: gateway-attachments
+  title: Decide how attachment validation treats symlinked ancestors
+  depends_on:
+  - macos-ci-advisory
+  size: medium
+  description: 'gateway-attachments: adjudicate whether a platform symlink ancestor
+    should make a notification attachment undownloadable, implement the decision in
+    validate_attachment_path, and fix the five route tests.'
+- id: core-path-expectations
+  title: Reconcile canonicalized paths across sase_core and the bindings
+  depends_on:
+  - macos-ci-advisory
+  size: medium
+  description: 'core-path-expectations: fix the five remaining sase_core and sase_core_py
+    failures caused by comparing canonicalized paths against caller-supplied ones,
+    deciding per site whether production or the expectation is wrong.'
+- id: lsp-uri
+  title: Make LSP definition URIs agree with their expectations
+  depends_on:
+  - macos-ci-advisory
+  size: small
+  description: 'lsp-uri: resolve the canonical-versus-supplied path disagreement behind
+    the two sase_xprompt_lsp definition failures.'
+- id: macos-ci-required
+  title: Make the macOS leg required and document the loop
+  depends_on:
+  - sudo-started-path
+  - gateway-attachments
+  - core-path-expectations
+  - lsp-uri
+  size: small
+  description: 'macos-ci-required: drop the advisory escape hatch so the macOS leg
+    blocks, and document the macOS verification loop and the platform-path rule for
+    future contributors.'
 proposed_by: bbugyi200.athena.0oj
 create_time: 2026-09-21 06:25:40
 status: wip
+bead_id: sase-157
 ---
 
-- **PROMPT:**
-  [prompts/202609/macos_portability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/macos_portability.md)
+- **PROMPT:** [prompts/202609/macos_portability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/macos_portability.md)
+- **BEAD:** [sase-157](https://github.com/sase-org/sase--beads/blob/main/pages/sase-157/README.md)
 
 # Plan: Make sase-core correct and green on macOS
 
