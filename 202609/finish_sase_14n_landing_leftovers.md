@@ -1,48 +1,45 @@
 ---
 tier: epic
 title: Finish the sase-14n landing leftovers
-goal:
-  "`just check` is green on master again: symvision is clean and the TUI app import
+goal: '`just check` is green on master again: symvision is clean and the TUI app import
   count is strictly under its unchanged 3290 cap. Both defects behind sase-14g are
   closed end to end: a dismissed notification can be found and restored from the ACE
-  notification modal, and a shell-block custom gate always registers its gate-shell row
-  through the real creation path."
+  notification modal, and a shell-block custom gate always registers its gate-shell
+  row through the real creation path.'
 parent_bead: sase-14n
 phases:
-  - id: check_green
-    title: Return just check to green on master
-    depends_on: []
-    size: medium
-    description:
-      "check_green: privatize the three test-only notification footer helpers that
-      symvision flags, and cut at least 20 modules from the sase.ace.tui.app import
-      closure so the import-budget node passes under its unchanged cap."
-  - id: dismissed_view
-    title: Reach and restore dismissed notifications from the notification modal
-    depends_on:
-      - check_green
-    size: medium
-    description:
-      "dismissed_view: give the ACE notification modal a way to show dismissed rows, so
-      its existing u binding can restore one, then advertise both keys in the footer."
-  - id: gate_row
-    title: Prove the gate-shell row through the production gate creation path
-    depends_on:
-      - check_green
-    size: medium
-    description:
-      "gate_row: find how a shell-block custom gate can reach create_gate without
-      registering a row, stop that path from succeeding silently, and replace the
-      fabricated row test with an end-to-end one."
+- id: check_green
+  title: Return just check to green on master
+  depends_on: []
+  size: medium
+  description: 'check_green: privatize the three test-only notification footer helpers
+    that symvision flags, and cut at least 20 modules from the sase.ace.tui.app import
+    closure so the import-budget node passes under its unchanged cap.'
+- id: dismissed_view
+  title: Reach and restore dismissed notifications from the notification modal
+  depends_on:
+  - check_green
+  size: medium
+  description: 'dismissed_view: give the ACE notification modal a way to show dismissed
+    rows, so its existing u binding can restore one, then advertise both keys in the
+    footer.'
+- id: gate_row
+  title: Prove the gate-shell row through the production gate creation path
+  depends_on:
+  - check_green
+  size: medium
+  description: 'gate_row: find how a shell-block custom gate can reach create_gate
+    without registering a row, stop that path from succeeding silently, and replace
+    the fabricated row test with an end-to-end one.'
 proposed_by: bbugyi200.athena.sase-14n.land
 create_time: 2026-09-21 15:11:19
 status: wip
+bead_id: sase-14n.15
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_sase_14n_landing_leftovers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_sase_14n_landing_leftovers.md)
-- **PARENT:**
-  [202609/fix_triaged_bug_and_ci_beads.md](https://github.com/sase-org/sase--plans/blob/main/202609/fix_triaged_bug_and_ci_beads.md)
+- **PROMPT:** [prompts/202609/finish_sase_14n_landing_leftovers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_sase_14n_landing_leftovers.md)
+- **PARENT:** [202609/fix_triaged_bug_and_ci_beads.md](https://github.com/sase-org/sase--plans/blob/main/202609/fix_triaged_bug_and_ci_beads.md)
+- **BEAD:** [sase-14n.15](https://github.com/sase-org/sase--beads/blob/main/pages/sase-14n/sase-14n.15.md)
 
 # Plan: Finish the sase-14n landing leftovers
 
