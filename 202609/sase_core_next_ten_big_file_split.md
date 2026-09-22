@@ -85,7 +85,7 @@ phases:
     and close out the epic''s file-size invariant.'
 proposed_by: bbugyi200.athena.0oh.r0
 create_time: 2026-09-21 11:31:32
-status: wip
+status: done
 bead_id: sase-15b
 ---
 
