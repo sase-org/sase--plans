@@ -1,73 +1,74 @@
 ---
 tier: epic
 title: Make fix-tui-screenshots salvage, retry, and warn instead of failing
-goal: "`just fix-tui-screenshots` in update mode applies every golden it can prove,
+goal: '`just fix-tui-screenshots` in update mode applies every golden it can prove,
   retries the tests and captures that fail or flicker, leaves only the rest untouched
-  behind a loud warning, and exits 0. It fails only when it is invoked wrongly, when the
-  environment must refuse, or when no capture inventory can be produced at all.
+  behind a loud warning, and exits 0. It fails only when it is invoked wrongly, when
+  the environment must refuse, or when no capture inventory can be produced at all.
   `--check` stays strict for CI.
 
-  "
+  '
 phases:
-  - id: marker-evidence
-    title: Stop unmarked tests from blocking full inventories
-    depends_on: []
-    size: small
-    description: "marker-evidence: make the capture plugin ignore marker-based
-      deselection of tests that cannot produce PNG goldens. Mark the stray
-      startup-regression module as visual and add a static guard so no test module under
-      a visual root misses the marker.
+- id: marker-evidence
+  title: Stop unmarked tests from blocking full inventories
+  depends_on: []
+  size: small
+  description: 'marker-evidence: make the capture plugin ignore marker-based deselection
+    of tests that cannot produce PNG goldens. Mark the stray startup-regression module
+    as visual and add a static guard so no test module under a visual root misses
+    the marker.
 
-      "
-  - id: salvage
-    title: Per-node salvage, recovery retries, and partial apply
-    depends_on: []
-    size: medium
-    description: 'salvage: in update mode, trust captures per test node instead of per
-      run. Rerun failed or lost nodes a bounded number of times, apply every trusted
-      change, and skip the rest with warnings under a new `partial` status. Downgrade
-      whole-run evidence problems to "stale removal skipped" and exit 0.
+    '
+- id: salvage
+  title: Per-node salvage, recovery retries, and partial apply
+  depends_on: []
+  size: medium
+  description: 'salvage: in update mode, trust captures per test node instead of per
+    run. Rerun failed or lost nodes a bounded number of times, apply every trusted
+    change, and skip the rest with warnings under a new `partial` status. Downgrade
+    whole-run evidence problems to "stale removal skipped" and exit 0.
 
-      '
-  - id: verify-agreement
-    title: Per-golden determinism agreement
-    depends_on:
-      - salvage
-    size: medium
-    description: "verify-agreement: replace the all-or-nothing determinism verification
-      with per-golden agreement voting over bounded serial re-verification. Apply agreed
-      captures and skip unstable goldens with warnings.
+    '
+- id: verify-agreement
+  title: Per-golden determinism agreement
+  depends_on:
+  - salvage
+  size: medium
+  description: 'verify-agreement: replace the all-or-nothing determinism verification
+    with per-golden agreement voting over bounded serial re-verification. Apply agreed
+    captures and skip unstable goldens with warnings.
 
-      "
-  - id: invocation
-    title: Lock waiting and worker-count translation
-    depends_on:
-      - salvage
-    size: small
-    description: "invocation: wait (bounded) for the checkout-local maintenance lock
-      instead of refusing at once. Translate `-n/--numprocesses` selector arguments into
-      the governed `SASE_PYTEST_WORKERS` request instead of letting pytest reject them.
+    '
+- id: invocation
+  title: Lock waiting and worker-count translation
+  depends_on:
+  - salvage
+  size: small
+  description: 'invocation: wait (bounded) for the checkout-local maintenance lock
+    instead of refusing at once. Translate `-n/--numprocesses` selector arguments
+    into the governed `SASE_PYTEST_WORKERS` request instead of letting pytest reject
+    them.
 
-      "
-  - id: docs
-    title: Document the partial-success contract and prove a full run
-    depends_on:
-      - marker-evidence
-      - salvage
-      - verify-agreement
-      - invocation
-    size: small
-    description:
-      "docs: update the Justfile comments, tool help, and developer docs for the new
-      exit contract. Record the needed memory-note changes as a follow-up, then prove
-      that a real full update run exits 0 on this host."
+    '
+- id: docs
+  title: Document the partial-success contract and prove a full run
+  depends_on:
+  - marker-evidence
+  - salvage
+  - verify-agreement
+  - invocation
+  size: small
+  description: 'docs: update the Justfile comments, tool help, and developer docs
+    for the new exit contract. Record the needed memory-note changes as a follow-up,
+    then prove that a real full update run exits 0 on this host.'
 proposed_by: bbugyi200.apollo.1i
 create_time: 2026-09-22 10:17:55
 status: wip
+bead_id: sase-169
 ---
 
-- **PROMPT:**
-  [prompts/202609/fix_tui_screenshots_never_fail.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_tui_screenshots_never_fail.md)
+- **PROMPT:** [prompts/202609/fix_tui_screenshots_never_fail.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/fix_tui_screenshots_never_fail.md)
+- **BEAD:** [sase-169](https://github.com/sase-org/sase--beads/blob/main/pages/sase-169/README.md)
 
 # Why `just fix-tui-screenshots` fails today
 
