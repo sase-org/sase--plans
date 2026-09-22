@@ -1,48 +1,46 @@
 ---
 tier: epic
 title: Sticky collapsible agent header panel on the Agents tab
-goal: "On the Agents tab, the selected node's identity header (every field from the kind
-  line through Timestamps, plus Fold where present) renders in its own always-visible
-  panel above the scrolling metadata document whenever the metadata panel is shown. The
-  panel is collapsed to two concise rows by default and expands to the full field list
-  with a configurable `d` keymap. Agent clan nodes are excluded.
+goal: 'On the Agents tab, the selected node''s identity header (every field from the
+  kind line through Timestamps, plus Fold where present) renders in its own always-visible
+  panel above the scrolling metadata document whenever the metadata panel is shown.
+  The panel is collapsed to two concise rows by default and expands to the full field
+  list with a configurable `d` keymap. Agent clan nodes are excluded.
 
-  "
+  '
 phases:
-  - id: document
-    title: Detachable identity header in prompt-panel documents
-    depends_on: []
-    size: medium
-    description:
-      "document: prompt-panel builders can split the identity header out of the metadata
-      document into an IdentityHeader (expanded and two-row compact forms) that travels
-      with the document and is published to an optional sink; nothing attaches a sink
-      yet, so rendering is unchanged."
-  - id: keymap
-    title: Inert toggle_agent_header keymap plumbing
-    depends_on: []
-    size: small
-    description:
-      "keymap: add the `toggle_agent_header` app action on `d` end to end (config,
-      dataclass, registry shared-key pairs, binding, availability, palette entry,
-      action), gated so it stays unavailable until the panel exists."
-  - id: panel
-    title: Agent header panel widget, layout, and visual verification
-    depends_on:
-      - document
-      - keymap
-    size: medium
-    description:
-      "panel: mount the bordered header panel above the metadata scroll, wire the prompt
-      panel's sink, sync visibility with the metadata panel, make `d` toggle it, then
-      update help/docs/tests and refresh and inspect the PNG goldens."
+- id: document
+  title: Detachable identity header in prompt-panel documents
+  depends_on: []
+  size: medium
+  description: 'document: prompt-panel builders can split the identity header out
+    of the metadata document into an IdentityHeader (expanded and two-row compact
+    forms) that travels with the document and is published to an optional sink; nothing
+    attaches a sink yet, so rendering is unchanged.'
+- id: keymap
+  title: Inert toggle_agent_header keymap plumbing
+  depends_on: []
+  size: small
+  description: 'keymap: add the `toggle_agent_header` app action on `d` end to end
+    (config, dataclass, registry shared-key pairs, binding, availability, palette
+    entry, action), gated so it stays unavailable until the panel exists.'
+- id: panel
+  title: Agent header panel widget, layout, and visual verification
+  depends_on:
+  - document
+  - keymap
+  size: medium
+  description: 'panel: mount the bordered header panel above the metadata scroll,
+    wire the prompt panel''s sink, sync visibility with the metadata panel, make `d`
+    toggle it, then update help/docs/tests and refresh and inspect the PNG goldens.'
 proposed_by: bbugyi200.athena.0pi
 create_time: 2026-09-22 13:53:05
 status: wip
+bead_id: sase-16k
 ---
 
-- **PROMPT:**
-  [prompts/202609/sticky_agent_header_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sticky_agent_header_panel.md)
+- **PROMPT:** [prompts/202609/sticky_agent_header_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sticky_agent_header_panel.md)
+- **BEAD:** [sase-16k](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16k/README.md)
 
 # Plan: Sticky collapsible agent header panel on the Agents tab
 
