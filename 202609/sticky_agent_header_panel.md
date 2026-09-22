@@ -35,7 +35,7 @@ phases:
     toggle it, then update help/docs/tests and refresh and inspect the PNG goldens.'
 proposed_by: bbugyi200.athena.0pi
 create_time: 2026-09-22 13:53:05
-status: wip
+status: done
 bead_id: sase-16k
 ---
 
