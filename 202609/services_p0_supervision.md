@@ -1,83 +1,82 @@
 ---
 tier: epic
-title:
-  "Service supervision P0: honest restarts, loud failures, safe config and environment"
-goal: "The service host obeys its own restart decisions, an explicit restart is a
-  confirmed transition with a new pid, every failure is visible in a notification, the
-  CLI, and the Services tab, a broken config layer never silently stops a proc, and
-  `sase service init` cannot freeze an agent shell's feature flags into the 24/7 host.
+title: 'Service supervision P0: honest restarts, loud failures, safe config and environment'
+goal: 'The service host obeys its own restart decisions, an explicit restart is a
+  confirmed transition with a new pid, every failure is visible in a notification,
+  the CLI, and the Services tab, a broken config layer never silently stops a proc,
+  and `sase service init` cannot freeze an agent shell''s feature flags into the 24/7
+  host.
 
-  "
+  '
 phases:
-  - id: core
-    title: Core restart, request, and config-layer semantics
-    depends_on: []
-    size: medium
-    description: "core: make crash-loop stickiness survive capped backoff, add a
-      per-proc restart request with a generation to the service state store, surface the
-      pending request in the status snapshot, and make an errored or unknown-kind config
-      layer fatal instead of invisible.
+- id: core
+  title: Core restart, request, and config-layer semantics
+  depends_on: []
+  size: medium
+  description: 'core: make crash-loop stickiness survive capped backoff, add a per-proc
+    restart request with a generation to the service state store, surface the pending
+    request in the status snapshot, and make an errored or unknown-kind config layer
+    fatal instead of invisible.
 
-      "
-  - id: restartgen
-    title: Restart is a confirmed transition
-    depends_on:
-      - core
-    size: medium
-    description: "restartgen: move the sase-core revision pin, rebuild start and restart
-      on the new request generation, have the host consume requests and record the pid
-      it produced, and make the CLI wait for that generation, print old pid to new pid,
-      and fail honestly.
+    '
+- id: restartgen
+  title: Restart is a confirmed transition
+  depends_on:
+  - core
+  size: medium
+  description: 'restartgen: move the sase-core revision pin, rebuild start and restart
+    on the new request generation, have the host consume requests and record the pid
+    it produced, and make the CLI wait for that generation, print old pid to new pid,
+    and fail honestly.
 
-      "
-  - id: config
-    title: Last-known-good config keeps the host supervising
-    depends_on:
-      - restartgen
-    size: medium
-    description: "config: keep the last composition that loaded, observe exits and stop
-      children without reloading config, and publish the config error through the
-      heartbeat and the status snapshot instead of going silently stale.
+    '
+- id: config
+  title: Last-known-good config keeps the host supervising
+  depends_on:
+  - restartgen
+  size: medium
+  description: 'config: keep the last composition that loaded, observe exits and stop
+    children without reloading config, and publish the config error through the heartbeat
+    and the status snapshot instead of going silently stale.
 
-      "
-  - id: giveup
-    title: The host honors give_up and says so
-    depends_on:
-      - config
-    size: medium
-    description: "giveup: stop relaunching procs the restart policy gave up on, keep a
-      signature-keyed given-up record that an explicit request clears, emit a durable
-      notification on crash-loop and on give-up while desired running, and make the
-      Telegram receiver exit retryable instead of reporting missing credentials as
-      success.
+    '
+- id: giveup
+  title: The host honors give_up and says so
+  depends_on:
+  - config
+  size: medium
+  description: 'giveup: stop relaunching procs the restart policy gave up on, keep
+    a signature-keyed given-up record that an explicit request clears, emit a durable
+    notification on crash-loop and on give-up while desired running, and make the
+    Telegram receiver exit retryable instead of reporting missing credentials as success.
 
-      "
-  - id: surfaces
-    title: The CLI and the Services tab show the real failure states
-    depends_on:
-      - giveup
-    size: medium
-    description: "surfaces: replace the invented failed/error vocabulary with the wire
-      states the core emits, render restart evidence and the host config error in the
-      CLI tables and the Services tab, and make an unreadable snapshot read as unknown
-      instead of healthy.
+    '
+- id: surfaces
+  title: The CLI and the Services tab show the real failure states
+  depends_on:
+  - giveup
+  size: medium
+  description: 'surfaces: replace the invented failed/error vocabulary with the wire
+    states the core emits, render restart evidence and the host config error in the
+    CLI tables and the Services tab, and make an unreadable snapshot read as unknown
+    instead of healthy.
 
-      "
-  - id: env
-    title: The captured service environment is context-safe
-    depends_on: []
-    size: medium
-    description:
-      "env: stop capturing SASE_FEATURE_FLAGS into the host environment, settle the
-      currency check by ignoring volatile keys and normalizing PATH, and refuse an
-      agent-context `sase service init --yes` unless it is explicitly allowed."
+    '
+- id: env
+  title: The captured service environment is context-safe
+  depends_on: []
+  size: medium
+  description: 'env: stop capturing SASE_FEATURE_FLAGS into the host environment,
+    settle the currency check by ignoring volatile keys and normalizing PATH, and
+    refuse an agent-context `sase service init --yes` unless it is explicitly allowed.'
 proposed_by: bbugyi200.athena.0pe
 create_time: 2026-09-22 12:59:03
 status: wip
+bead_id: sase-16g
 ---
 
-- **PROMPT:**
-  [prompts/202609/services_p0_supervision.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_p0_supervision.md)
+- **PROMPT:** [prompts/202609/services_p0_supervision.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_p0_supervision.md)
+- **BEAD:** [sase-16g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16g/README.md)
 
 <!-- sase:links:start -->
 
