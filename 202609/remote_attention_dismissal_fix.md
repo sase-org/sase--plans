@@ -1,47 +1,45 @@
 ---
 tier: epic
-title:
-  Make remote-attention notifications dismissable and unfreeze apollo's attention feed
-goal: "A user dismissal of a remote-attention notification sticks for that revision; the
-  gateway attention inventory works on hosts with more than 200 visible notifications;
+title: Make remote-attention notifications dismissable and unfreeze apollo's attention
+  feed
+goal: 'A user dismissal of a remote-attention notification sticks for that revision;
+  the gateway attention inventory works on hosts with more than 200 visible notifications;
   and on athena the fix is installed, the 8 stuck apollo rows are dismissed and stay
   dismissed, and a fresh sase screenshot no longer shows `?8` at the top right.
 
-  "
+  '
 phases:
-  - id: inbox-dismissal
-    title: Honor local dismissal in the remote-attention reconciler
-    depends_on: []
-    size: small
-    description:
-      "inbox-dismissal: stop reconcile_remote_attention_inbox from un-dismissing
-      same-revision rows, mark and reverse only its own auto-dismissals, and treat
-      has_more pages as incomplete, with regression tests."
-  - id: inventory-row-cap
-    title: Gateway attention inventory must not fail on busy hosts
-    depends_on: []
-    size: small
-    description:
-      "inventory-row-cap: in sase-core, drop the 200 raw-row cap from
-      project_fleet_attention_inventory (paging bounds output) and pre-filter the
-      gateway handler to actionable rows, with core and route tests."
-  - id: deploy-dismiss-verify
-    title: Install on athena, dismiss the 8 rows, and verify
-    depends_on:
-      - inbox-dismissal
-      - inventory-row-cap
-    size: small
-    description:
-      "deploy-dismiss-verify: run sase update -y, restart pre-update TUIs through their
-      Quit/Restart panel, dismiss the remote-attention rows, confirm they stay
-      dismissed, and verify via sase screenshot that ?8 is gone."
+- id: inbox-dismissal
+  title: Honor local dismissal in the remote-attention reconciler
+  depends_on: []
+  size: small
+  description: 'inbox-dismissal: stop reconcile_remote_attention_inbox from un-dismissing
+    same-revision rows, mark and reverse only its own auto-dismissals, and treat has_more
+    pages as incomplete, with regression tests.'
+- id: inventory-row-cap
+  title: Gateway attention inventory must not fail on busy hosts
+  depends_on: []
+  size: small
+  description: 'inventory-row-cap: in sase-core, drop the 200 raw-row cap from project_fleet_attention_inventory
+    (paging bounds output) and pre-filter the gateway handler to actionable rows,
+    with core and route tests.'
+- id: deploy-dismiss-verify
+  title: Install on athena, dismiss the 8 rows, and verify
+  depends_on:
+  - inbox-dismissal
+  - inventory-row-cap
+  size: small
+  description: 'deploy-dismiss-verify: run sase update -y, restart pre-update TUIs
+    through their Quit/Restart panel, dismiss the remote-attention rows, confirm they
+    stay dismissed, and verify via sase screenshot that ?8 is gone.'
 proposed_by: bbugyi200.athena.0pa
 create_time: 2026-09-22 10:05:54
 status: wip
+bead_id: sase-168
 ---
 
-- **PROMPT:**
-  [prompts/202609/remote_attention_dismissal_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_attention_dismissal_fix.md)
+- **PROMPT:** [prompts/202609/remote_attention_dismissal_fix.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/remote_attention_dismissal_fix.md)
+- **BEAD:** [sase-168](https://github.com/sase-org/sase--beads/blob/main/pages/sase-168/README.md)
 
 # Make remote-attention notifications dismissable and unfreeze apollo's attention feed
 
