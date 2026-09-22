@@ -1,12 +1,20 @@
 ---
 tier: tale
 title: Rename research_swarm should_generate_image input to image
-goal: '#research_swarm opts into its infographic agent with `image=true`, and no caller,
-  test, or doc in sase or sase-research-artifacts still references `should_generate_image`.'
+goal:
+  "#research_swarm opts into its infographic agent with `image=true`, and no caller,
+  test, or doc in sase or sase-research-artifacts still references
+  `should_generate_image`."
 size: small
 proposed_by: bbugyi200.athena.0pj
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0pj](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0pj.md)
+- **COMMITS:**
+  - [1cb7e3a](https://github.com/sase-org/sase-research-artifacts/commit/1cb7e3ac6de7a6e6e65f96031b8505a6533ef01e)
+    — feat(research-swarm): rename should_generate_image input to image
 
 # Plan: Rename `#research_swarm`'s `should_generate_image` input to `image`
 
