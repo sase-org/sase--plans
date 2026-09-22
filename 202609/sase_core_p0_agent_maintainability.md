@@ -1,85 +1,79 @@
 ---
 tier: epic
-title: "sase-core P0: fast loop, instruction delivery, cross-repo truth"
-goal: "Every agent that touches sase-core gets a concise, accurate guide without being
+title: 'sase-core P0: fast loop, instruction delivery, cross-repo truth'
+goal: 'Every agent that touches sase-core gets a concise, accurate guide without being
   told to look for it. A real sase_core edit re-checks in about 30 s on athena, and
   switching cargo scope no longer recompiles sase_core. sase stops producing false
   signals about the core: the pin bot opens its PRs, and `just check` rebuilds a dev
   extension that no longer matches the linked core source.
 
-  "
+  '
 phases:
-  - id: core-fast-loop
-    title: Pinned features, just fast, and a true MSRV in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-fast-loop: in sase-core, unify dependency features with a cargo-hakari
-      workspace-hack plus a tool-free check.sh features gate (also run in CI). Add `just
-      fast`, and make rust-version true by deleting the incompatible_msrv allows.
-      Measure a ≤5 s no-edit -p scope switch."
-  - id: core-agent-guide
-    title: sase-core agent guide, provider shims, module map, README
-    depends_on:
-      - core-fast-loop
-    size: medium
-    description:
-      "core-agent-guide: rewrite sase-core AGENTS.md to the target content, add
-      CLAUDE.md and GEMINI.md import shims, add `just modules` and fill the missing
-      top-level `//!` summaries. Delete the stale sase_core_py binding manifest and cut
-      the README down to current facts."
-  - id: instruction-delivery
-    title: repo-open AGENTS.md hint, sase_repo skill, core memory fix
-    depends_on: []
-    size: small
-    description:
-      "instruction-delivery: sase repo open names an opened repo's AGENTS.md on stderr,
-      the sase_repo skill says the same, and the rust_core_backend_boundary core memory
-      stops pointing at ../sase-core and points at docs/rust_backend.md (sase-15w). Also
-      add a short cross-repo pointer in docs/rust_backend.md."
-  - id: pin-ratchet-bot
-    title: Core pin ratchet workflow opens its PR
-    depends_on: []
-    size: small
-    description:
-      "pin-ratchet-bot: make core-pin-ratchet.yml tolerate the apply path's exit 2 so it
-      reaches the push and PR steps. Behavior-test the step script (sase-15v)."
-  - id: extension-freshness
-    title: Dev extension rebuilds when linked sase-core source changes
-    depends_on: []
-    size: medium
-    description:
-      "extension-freshness: rust-install stamps the source identity (HEAD plus a dirty
-      digest) it built from. validate_test_environment compares it with the linked
-      checkout and flags a rebuild through a new status bit and fingerprint bucket,
-      _setup rebuilds on that bit, and the stale-extension flake-baseline entry is
-      retired."
-  - id: reaper-root
-    title: Managed-tmp reaper covers the root agents actually use
-    depends_on: []
-    size: medium
-    description:
-      "reaper-root: capture SASE_TMPDIR (and sibling SASE path overrides) in the service
-      env, and warn when the reaper's managed root differs from the launch root, so
-      per-run cargo targets are really reaped (sase-15q). This is a prerequisite for
-      larger incremental target dirs."
-  - id: incremental-check
-    title: Incremental check/clippy through the athena rustc wrapper
-    depends_on:
-      - reaper-root
-    size: medium
-    description:
-      "incremental-check: sase-rustc-wrapper runs metadata-only incremental units
-      directly and strips incremental from codegen units before sccache, and chezmoi
-      drops incremental=false. A new sase config opt-in replaces the forced
-      CARGO_INCREMENTAL=0 and athena enables it. Measure a ≤30 s edit→check."
+- id: core-fast-loop
+  title: Pinned features, just fast, and a true MSRV in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-fast-loop: in sase-core, unify dependency features with a cargo-hakari
+    workspace-hack plus a tool-free check.sh features gate (also run in CI). Add `just
+    fast`, and make rust-version true by deleting the incompatible_msrv allows. Measure
+    a ≤5 s no-edit -p scope switch.'
+- id: core-agent-guide
+  title: sase-core agent guide, provider shims, module map, README
+  depends_on:
+  - core-fast-loop
+  size: medium
+  description: 'core-agent-guide: rewrite sase-core AGENTS.md to the target content,
+    add CLAUDE.md and GEMINI.md import shims, add `just modules` and fill the missing
+    top-level `//!` summaries. Delete the stale sase_core_py binding manifest and
+    cut the README down to current facts.'
+- id: instruction-delivery
+  title: repo-open AGENTS.md hint, sase_repo skill, core memory fix
+  depends_on: []
+  size: small
+  description: 'instruction-delivery: sase repo open names an opened repo''s AGENTS.md
+    on stderr, the sase_repo skill says the same, and the rust_core_backend_boundary
+    core memory stops pointing at ../sase-core and points at docs/rust_backend.md
+    (sase-15w). Also add a short cross-repo pointer in docs/rust_backend.md.'
+- id: pin-ratchet-bot
+  title: Core pin ratchet workflow opens its PR
+  depends_on: []
+  size: small
+  description: 'pin-ratchet-bot: make core-pin-ratchet.yml tolerate the apply path''s
+    exit 2 so it reaches the push and PR steps. Behavior-test the step script (sase-15v).'
+- id: extension-freshness
+  title: Dev extension rebuilds when linked sase-core source changes
+  depends_on: []
+  size: medium
+  description: 'extension-freshness: rust-install stamps the source identity (HEAD
+    plus a dirty digest) it built from. validate_test_environment compares it with
+    the linked checkout and flags a rebuild through a new status bit and fingerprint
+    bucket, _setup rebuilds on that bit, and the stale-extension flake-baseline entry
+    is retired.'
+- id: reaper-root
+  title: Managed-tmp reaper covers the root agents actually use
+  depends_on: []
+  size: medium
+  description: 'reaper-root: capture SASE_TMPDIR (and sibling SASE path overrides)
+    in the service env, and warn when the reaper''s managed root differs from the
+    launch root, so per-run cargo targets are really reaped (sase-15q). This is a
+    prerequisite for larger incremental target dirs.'
+- id: incremental-check
+  title: Incremental check/clippy through the athena rustc wrapper
+  depends_on:
+  - reaper-root
+  size: medium
+  description: 'incremental-check: sase-rustc-wrapper runs metadata-only incremental
+    units directly and strips incremental from codegen units before sccache, and chezmoi
+    drops incremental=false. A new sase config opt-in replaces the forced CARGO_INCREMENTAL=0
+    and athena enables it. Measure a ≤30 s edit→check.'
 proposed_by: bbugyi200.athena.0p2
 create_time: 2026-09-22 08:03:49
 status: wip
+bead_id: sase-164
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_core_p0_agent_maintainability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_p0_agent_maintainability.md)
+- **PROMPT:** [prompts/202609/sase_core_p0_agent_maintainability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_p0_agent_maintainability.md)
+- **BEAD:** [sase-164](https://github.com/sase-org/sase--beads/blob/main/pages/sase-164/README.md)
 
 # Plan: sase-core P0: fast loop, instruction delivery, cross-repo truth
 
