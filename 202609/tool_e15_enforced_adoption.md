@@ -1,74 +1,71 @@
 ---
 tier: epic
-title: "E1.5: enforced sase tool adoption and monitor wrapping"
-goal: "Every heavy verification run by a SASE agent is a recorded ToolRun by
-  construction: guarded recipes refuse a raw agent invocation, monitors wrap what they
-  run, the wrapper is at least as faithful as the raw command, and the linked repos
-  carry their own catalogs and guards.
+title: 'E1.5: enforced sase tool adoption and monitor wrapping'
+goal: 'Every heavy verification run by a SASE agent is a recorded ToolRun by construction:
+  guarded recipes refuse a raw agent invocation, monitors wrap what they run, the
+  wrapper is at least as faithful as the raw command, and the linked repos carry their
+  own catalogs and guards.
 
-  "
+  '
 phases:
-  - id: ownership-roots
-    title: Make an agent an ownership root and always export the wrapper marker
-    depends_on: []
-    size: medium
-    description:
-      "ownership-roots: scrub executor-ownership variables at every agent launch, ignore
-      an inherited monitor/proc id under SASE_AGENT, always export SASE_TOOL_NAME and
-      SASE_TOOL_PROJECT_ROOT, and carry a monitor's starter agent into its recorded
-      runs."
-  - id: core-child-facts
-    title: Record child process facts and authorize reaping in sase-core
-    depends_on:
-      - ownership-roots
-    size: medium
-    description:
-      "core-child-facts: add the sase-core wire, store write, and binding that persist a
-      running run's child pid, pgid, and process identity, extend reconcile to return
-      identity-matched reap candidates, and move sase's core revision pin past that
-      commit."
-  - id: wrapper-fidelity
-    title: Make the wrapper as faithful as the raw command
-    depends_on:
-      - core-child-facts
-    size: medium
-    description:
-      "wrapper-fidelity: keep the child in the wrapper's process group under a live
-      owner, make an inline child die with its wrapper, reap identity-matched survivors
-      of lost runs, and give the child one merged pipe whenever a single target receives
-      both streams."
-  - id: recipe-guard
-    title: Refuse a raw agent invocation of a guarded recipe
-    depends_on:
-      - wrapper-fidelity
-    size: medium
-    description:
-      "recipe-guard: add the dependency-free tools/require_tool_run script, wire it into
-      check and check-full, document the environment contract, teach the adoption report
-      bypasses and refusals, and record the decision that partly supersedes
-      record-before-admit."
-  - id: monitor-wrap
-    title: Wrap a monitor's command in sase tool run
-    depends_on:
-      - recipe-guard
-    size: medium
-    description:
-      "monitor-wrap: upgrade an exact catalog match to a named run and wrap other
-      verify-profile commands ad-hoc, in the proc argv only, behind a monitor.tool_wrap
-      config field, leaving monitor_command and host completion bindings untouched."
-  - id: linked-repo-catalogs
-    title: Give the linked repos catalogs and guards
-    depends_on:
-      - monitor-wrap
-    size: medium
-    description:
-      "linked-repo-catalogs: add project tools catalogs and the recipe guard to
-      sase-core, sase-telegram, sase-github, and sase-research-artifacts so enforcement
-      and named upgrades reach the raw residual that lives outside the sase repo."
+- id: ownership-roots
+  title: Make an agent an ownership root and always export the wrapper marker
+  depends_on: []
+  size: medium
+  description: 'ownership-roots: scrub executor-ownership variables at every agent
+    launch, ignore an inherited monitor/proc id under SASE_AGENT, always export SASE_TOOL_NAME
+    and SASE_TOOL_PROJECT_ROOT, and carry a monitor''s starter agent into its recorded
+    runs.'
+- id: core-child-facts
+  title: Record child process facts and authorize reaping in sase-core
+  depends_on:
+  - ownership-roots
+  size: medium
+  description: 'core-child-facts: add the sase-core wire, store write, and binding
+    that persist a running run''s child pid, pgid, and process identity, extend reconcile
+    to return identity-matched reap candidates, and move sase''s core revision pin
+    past that commit.'
+- id: wrapper-fidelity
+  title: Make the wrapper as faithful as the raw command
+  depends_on:
+  - core-child-facts
+  size: medium
+  description: 'wrapper-fidelity: keep the child in the wrapper''s process group under
+    a live owner, make an inline child die with its wrapper, reap identity-matched
+    survivors of lost runs, and give the child one merged pipe whenever a single target
+    receives both streams.'
+- id: recipe-guard
+  title: Refuse a raw agent invocation of a guarded recipe
+  depends_on:
+  - wrapper-fidelity
+  size: medium
+  description: 'recipe-guard: add the dependency-free tools/require_tool_run script,
+    wire it into check and check-full, document the environment contract, teach the
+    adoption report bypasses and refusals, and record the decision that partly supersedes
+    record-before-admit.'
+- id: monitor-wrap
+  title: Wrap a monitor's command in sase tool run
+  depends_on:
+  - recipe-guard
+  size: medium
+  description: 'monitor-wrap: upgrade an exact catalog match to a named run and wrap
+    other verify-profile commands ad-hoc, in the proc argv only, behind a monitor.tool_wrap
+    config field, leaving monitor_command and host completion bindings untouched.'
+- id: linked-repo-catalogs
+  title: Give the linked repos catalogs and guards
+  depends_on:
+  - monitor-wrap
+  size: medium
+  description: 'linked-repo-catalogs: add project tools catalogs and the recipe guard
+    to sase-core, sase-telegram, sase-github, and sase-research-artifacts so enforcement
+    and named upgrades reach the raw residual that lives outside the sase repo.'
 proposed_by: bbugyi200.athena.0pf
 create_time: 2026-09-22 13:05:36
 status: wip
+bead_id: sase-16h
 ---
+
+- **BEAD:** [sase-16h](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16h/README.md)
 
 <!-- sase:links:start -->
 
