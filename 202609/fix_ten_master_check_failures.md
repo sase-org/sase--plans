@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fix the ten deterministic just check failures on master
-goal: The ten full-suite failures on a clean master tree pass. The emptied Agents-tab
-  panel retires within one visual frame. The tracking task beads are closed.
+goal:
+  The ten full-suite failures on a clean master tree pass. The emptied Agents-tab panel
+  retires within one visual frame. The tracking task beads are closed.
 size: medium
 proposed_by: bbugyi200.athena.sase-165.6.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-165.6.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-165.6.f0.md)
+- **COMMITS:**
+  - [d3002ab](https://github.com/sase-org/sase/commit/d3002aba1ad5bcde49fd6f5b030407a2767df6eb)
+    — fix(check): resolve the ten deterministic just-check failures on master
 
 # Fix the ten deterministic `just check` failures on master
 
