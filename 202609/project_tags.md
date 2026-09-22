@@ -1,131 +1,130 @@
 ---
 tier: epic
 title: Xprompt project tags (+sase)
-goal: "Prompts name their project with a `+<project>` project tag by default. SASE
-  resolves the tag to the project's VCS type and runs the same `#gh:`/`#git:` workflow
+goal: 'Prompts name their project with a `+<project>` project tag by default. SASE
+  resolves the tag to the project''s VCS type and runs the same `#gh:`/`#git:` workflow
   as before. Every completion surface (TUI, LSP/Neovim, shell) inserts tags. Every
-  surface that shows raw prompts renders tags in the project's accent color. Project
+  surface that shows raw prompts renders tags in the project''s accent color. Project
   names are enforced unique, case-insensitively, across all VCS types.
 
-  "
+  '
 phases:
-  - id: core-tags
-    title: sase-core project tag lexer, resolver, expander, and bindings
-    depends_on: []
-    size: medium
-    description: "core-tags: add the sase_core project_tag module (tag scanning with
-      literal-zone skipping, anchored-position detection, case-insensitive resolution
-      with suggestions, in-place expansion to VCS refs, completion trigger and
-      selection-apply), the v5 catalog wire types, and Python bindings.
+- id: core-tags
+  title: sase-core project tag lexer, resolver, expander, and bindings
+  depends_on: []
+  size: medium
+  description: 'core-tags: add the sase_core project_tag module (tag scanning with
+    literal-zone skipping, anchored-position detection, case-insensitive resolution
+    with suggestions, in-place expansion to VCS refs, completion trigger and selection-apply),
+    the v5 catalog wire types, and Python bindings.
 
-      "
-  - id: unique-names
-    title: Case-insensitive project name uniqueness across VCS types
-    depends_on: []
-    size: small
-    description: "unique-names: make every write-time project ref check case-insensitive
-      and reserve home. Widen doctor project.name_collisions to every key/name/alias
-      conflict, and mirror the rule in sase-core collision warnings and sase-github name
-      allocation. Then verify this machine has no collisions.
+    '
+- id: unique-names
+  title: Case-insensitive project name uniqueness across VCS types
+  depends_on: []
+  size: small
+  description: 'unique-names: make every write-time project ref check case-insensitive
+    and reserve home. Widen doctor project.name_collisions to every key/name/alias
+    conflict, and mirror the rule in sase-core collision warnings and sase-github
+    name allocation. Then verify this machine has no collisions.
 
-      "
-  - id: backend
-    title: Python project tag backend and launch integration
-    depends_on:
-      - core-tags
-      - unique-names
-    size: medium
-    description: "backend: shared accent module, cached project tag catalog, expansion
-      inside prompt canonicalization and launch_query, launch-unit validation, tag-aware
-      helpers for raw-text consumers, generators that default to tags, and the v5 LSP
-      catalog payload. Also moves the core pin.
+    '
+- id: backend
+  title: Python project tag backend and launch integration
+  depends_on:
+  - core-tags
+  - unique-names
+  size: medium
+  description: 'backend: shared accent module, cached project tag catalog, expansion
+    inside prompt canonicalization and launch_query, launch-unit validation, tag-aware
+    helpers for raw-text consumers, generators that default to tags, and the v5 LSP
+    catalog payload. Also moves the core pin.
 
-      "
-  - id: lsp
-    title: sase-xprompt-lsp project tag support
-    depends_on:
-      - core-tags
-    size: medium
-    description: "lsp: tag completion with in-place edits, semantic tokens with accent
-      modifiers plus a palette capability, hover, diagnostics, quick fixes and a
-      rewrite-to-tag code action, and leading-project detection that understands tags.
+    '
+- id: lsp
+  title: sase-xprompt-lsp project tag support
+  depends_on:
+  - core-tags
+  size: medium
+  description: 'lsp: tag completion with in-place edits, semantic tokens with accent
+    modifiers plus a palette capability, hover, diagnostics, quick fixes and a rewrite-to-tag
+    code action, and leading-project detection that understands tags.
 
-      "
-  - id: tui-editor
-    title: TUI prompt editor completion and tag defaults
-    depends_on:
-      - backend
-    size: medium
-    description: "tui-editor: the + trigger through the core binding, in-place accept,
-      accent-styled completion rows ordered current-project-first, tag prefills and MRU
-      cycling, editor project context from tags, pre-submit tag validation, and shell
-      completion for +.
+    '
+- id: tui-editor
+  title: TUI prompt editor completion and tag defaults
+  depends_on:
+  - backend
+  size: medium
+  description: 'tui-editor: the + trigger through the core binding, in-place accept,
+    accent-styled completion rows ordered current-project-first, tag prefills and
+    MRU cycling, editor project context from tags, pre-submit tag validation, and
+    shell completion for +.
 
-      "
-  - id: tag-display
-    title: Tag rendering in the agent panel and prompt editor
-    depends_on:
-      - tui-editor
-    size: medium
-    description: "tag-display: the humanizer renders project refs as tags; the shared
-      tokenizer emits project_tag spans; accent styles in both highlight systems; the
-      prompt editor, the AGENT XPROMPT sections (main, family, hint, and clan), and
-      their visual snapshots.
+    '
+- id: tag-display
+  title: Tag rendering in the agent panel and prompt editor
+  depends_on:
+  - tui-editor
+  size: medium
+  description: 'tag-display: the humanizer renders project refs as tags; the shared
+    tokenizer emits project_tag spans; accent styles in both highlight systems; the
+    prompt editor, the AGENT XPROMPT sections (main, family, hint, and clan), and
+    their visual snapshots.
 
-      "
-  - id: tag-surfaces
-    title: Accent-colored tags on every remaining raw-prompt surface
-    depends_on:
-      - tag-display
-    size: medium
-    description: "tag-surfaces: prompt history, stash, launch approval,
-      runners/revive/run-log previews, the metadata pager, the ACE query +project
-      shorthand, CLI prompt output, and the sase project list/show TAG column and JSON
-      fields.
+    '
+- id: tag-surfaces
+  title: Accent-colored tags on every remaining raw-prompt surface
+  depends_on:
+  - tag-display
+  size: medium
+  description: 'tag-surfaces: prompt history, stash, launch approval, runners/revive/run-log
+    previews, the metadata pager, the ACE query +project shorthand, CLI prompt output,
+    and the sase project list/show TAG column and JSON fields.
 
-      "
-  - id: nvim
-    title: sase-nvim project tag highlighting and picker
-    depends_on:
-      - lsp
-      - backend
-    size: small
-    description: "nvim: accent highlight groups built from the server palette, a
-      semantic-token handler for saseProjectTag, + support in the Ctrl+T picker, README,
-      and smoke tests.
+    '
+- id: nvim
+  title: sase-nvim project tag highlighting and picker
+  depends_on:
+  - lsp
+  - backend
+  size: small
+  description: 'nvim: accent highlight groups built from the server palette, a semantic-token
+    handler for saseProjectTag, + support in the Ctrl+T picker, README, and smoke
+    tests.
 
-      "
-  - id: plugins
-    title: sase-telegram and sase-github tag adoption
-    depends_on:
-      - tag-display
-    size: small
-    description: "plugins: Telegram project-context capture and copy-text buttons use
-      tags, its inbound docs and tests are updated, and sase-github docs present
-      +<project> as the default.
+    '
+- id: plugins
+  title: sase-telegram and sase-github tag adoption
+  depends_on:
+  - tag-display
+  size: small
+  description: 'plugins: Telegram project-context capture and copy-text buttons use
+    tags, its inbound docs and tests are updated, and sase-github docs present +<project>
+    as the default.
 
-      "
-  - id: docs-memory
-    title: Docs, skills, memory, config, and machine verification
-    depends_on:
-      - unique-names
-      - tui-editor
-      - tag-surfaces
-      - nvim
-      - plugins
-    size: medium
-    description:
-      "docs-memory: docs and CLI help move to +<project>; fix the sase_run skill
-      example; add the Project Tag glossary strand and update the sase-project and
-      xprompts notes; drop redundant chezmoi gh_* xprompt shortcuts; run the final
-      doctor verification on this machine."
+    '
+- id: docs-memory
+  title: Docs, skills, memory, config, and machine verification
+  depends_on:
+  - unique-names
+  - tui-editor
+  - tag-surfaces
+  - nvim
+  - plugins
+  size: medium
+  description: 'docs-memory: docs and CLI help move to +<project>; fix the sase_run
+    skill example; add the Project Tag glossary strand and update the sase-project
+    and xprompts notes; drop redundant chezmoi gh_* xprompt shortcuts; run the final
+    doctor verification on this machine.'
 proposed_by: bbugyi200.athena.0pl
 create_time: 2026-09-22 18:48:42
 status: wip
+bead_id: sase-16n
 ---
 
-- **PROMPT:**
-  [prompts/202609/project_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags.md)
+- **PROMPT:** [prompts/202609/project_tags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags.md)
+- **BEAD:** [sase-16n](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16n/README.md)
 
 # Plan: Xprompt project tags (`+sase`)
 
