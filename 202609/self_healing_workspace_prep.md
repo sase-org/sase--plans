@@ -1,73 +1,70 @@
 ---
 tier: epic
 title: Self-healing agent workspace preparation
-goal: "A new SASE agent launch into a numbered ephemeral workspace never fails because
+goal: 'A new SASE agent launch into a numbered ephemeral workspace never fails because
   of state an earlier run left behind (unpublishable sidecar commits, merge/rebase
   conflicts, in-progress git operations, dirty or diverged checkouts). Old state is
   rescued durably outside the workspace on a best-effort basis, the workspace is healed
   or re-created from the primary checkout, and the bead-merge bug that triggered the
   original failure is fixed at its root.
 
-  "
+  '
 phases:
-  - id: rescue-store
-    title: Durable rescue store and non-refusing sidecar eviction
-    depends_on: []
-    size: medium
-    description:
-      "rescue-store: add a best-effort rescue store outside the workspace (git bundles,
-      worktree patches, manifests, retention, one notification per rescue) and change
-      launch-time sidecar protection to publish once, rescue, and always proceed with
-      eviction instead of raising _WorkspaceBeadEvictionRefused."
-  - id: checkout-heal
-    title: Self-healing checkout preparation for numbered workspaces
-    depends_on:
-      - rescue-store
-    size: medium
-    description:
-      "checkout-heal: give prepare_workspace an opt-in self-heal ladder for numbered
-      workspaces that rescues state, aborts in-progress git operations, survives stash
-      failures, replaces a conflicting sync rebase with rescue plus hard reset to the
-      default branch, and verifies a clean postcondition."
-  - id: reclone
-    title: Last-resort workspace re-creation and non-holding setup failures
-    depends_on:
-      - checkout-heal
-    size: medium
-    description:
-      "reclone: when in-place healing still fails, rescue and move the numbered checkout
-      aside, re-materialize it from the primary checkout, chdir into it, and prepare it
-      once more (launch, retry, and linked-repo paths); release rather than hold
-      workspaces whose setup ultimately failed."
-  - id: core-merge
-    title: Order-preserving bead event stream merge in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-merge: in the sase-core repo, stop the bead event-stream merge from
-      re-sorting already-published upstream events by timestamp, and accept pure-reorder
-      branches produced by the old merge so wedged clones can heal."
-  - id: bead-sync
-    title: Bead sync rollback and wedged-clone healing
-    depends_on:
-      - core-merge
-    size: medium
-    description:
-      "bead-sync: bump the sase-core pin, roll a clone back when the post-integration
-      stream guard rejects an integration, abort cleanly on deadline timeouts, and
-      mirror the pure-reorder tolerance in the Python stream-integrity guard."
-  - id: visibility
-    title: Truthful setup-failure reporting
-    depends_on: []
-    size: small
-    description:
-      'visibility: make a recorded runner error beat the synthesized "Runner exited
-      without recording an error" fallback in the TUI, and make runner stdout
-      line-buffered so the output file interleaves stdout/stderr correctly.'
+- id: rescue-store
+  title: Durable rescue store and non-refusing sidecar eviction
+  depends_on: []
+  size: medium
+  description: 'rescue-store: add a best-effort rescue store outside the workspace
+    (git bundles, worktree patches, manifests, retention, one notification per rescue)
+    and change launch-time sidecar protection to publish once, rescue, and always
+    proceed with eviction instead of raising _WorkspaceBeadEvictionRefused.'
+- id: checkout-heal
+  title: Self-healing checkout preparation for numbered workspaces
+  depends_on:
+  - rescue-store
+  size: medium
+  description: 'checkout-heal: give prepare_workspace an opt-in self-heal ladder for
+    numbered workspaces that rescues state, aborts in-progress git operations, survives
+    stash failures, replaces a conflicting sync rebase with rescue plus hard reset
+    to the default branch, and verifies a clean postcondition.'
+- id: reclone
+  title: Last-resort workspace re-creation and non-holding setup failures
+  depends_on:
+  - checkout-heal
+  size: medium
+  description: 'reclone: when in-place healing still fails, rescue and move the numbered
+    checkout aside, re-materialize it from the primary checkout, chdir into it, and
+    prepare it once more (launch, retry, and linked-repo paths); release rather than
+    hold workspaces whose setup ultimately failed.'
+- id: core-merge
+  title: Order-preserving bead event stream merge in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-merge: in the sase-core repo, stop the bead event-stream merge
+    from re-sorting already-published upstream events by timestamp, and accept pure-reorder
+    branches produced by the old merge so wedged clones can heal.'
+- id: bead-sync
+  title: Bead sync rollback and wedged-clone healing
+  depends_on:
+  - core-merge
+  size: medium
+  description: 'bead-sync: bump the sase-core pin, roll a clone back when the post-integration
+    stream guard rejects an integration, abort cleanly on deadline timeouts, and mirror
+    the pure-reorder tolerance in the Python stream-integrity guard.'
+- id: visibility
+  title: Truthful setup-failure reporting
+  depends_on: []
+  size: small
+  description: 'visibility: make a recorded runner error beat the synthesized "Runner
+    exited without recording an error" fallback in the TUI, and make runner stdout
+    line-buffered so the output file interleaves stdout/stderr correctly.'
 proposed_by: bbugyi200.athena.0pc
 create_time: 2026-09-22 12:13:26
 status: wip
+bead_id: sase-16e
 ---
+
+- **BEAD:** [sase-16e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16e/README.md)
 
 # Plan: Self-healing agent workspace preparation
 
