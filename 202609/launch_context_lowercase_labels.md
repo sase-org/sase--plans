@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Lowercase launch-context labels (model:/project:)
-goal: 'The ACE launch-context cluster reads "model: opus@high · project: +sase" instead
-  of the uppercase MODEL:/PROJECT: labels.'
+goal:
+  'The ACE launch-context cluster reads "model: opus@high · project: +sase" instead of
+  the uppercase MODEL:/PROJECT: labels.'
 size: small
 proposed_by: bbugyi200.apollo.1h.f0.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.1h.f0.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.1h.f0.f0.md)
+- **COMMITS:**
+  - [215f1cd](https://github.com/sase-org/sase/commit/215f1cd26774e2d70e6234c9d7fb2dc03b6c3241)
+    — feat(ace): lowercase launch-context labels to model:/project:
 
 # Lowercase the launch-context cluster labels: `MODEL:` → `model:`, `PROJECT:` → `project:`
 
