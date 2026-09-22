@@ -1,52 +1,52 @@
 ---
 tier: epic
 title: Context-aware Enter on the Agents tab (retire the ,n leader key)
-goal: "Pressing Enter on an Agents-tab row opens that agent node's pending gate (every
-  gate kind, including sudo, launch, HITL, and custom gates), jumps to its Patch, or —
-  when both apply — opens a polished one-keypress chooser. The `,n` leader key is
-  retired cleanly, and the footer, help, palette, onboarding, and docs all describe the
-  new Enter.
+goal: 'Pressing Enter on an Agents-tab row opens that agent node''s pending gate (every
+  gate kind, including sudo, launch, HITL, and custom gates), jumps to its Patch,
+  or — when both apply — opens a polished one-keypress chooser. The `,n` leader key
+  is retired cleanly, and the footer, help, palette, onboarding, and docs all describe
+  the new Enter.
 
-  "
+  '
 phases:
-  - id: resolve
-    title: Gate resolution and shared notification dispatch
-    depends_on: []
-    size: medium
-    description: "resolve: extract the NotificationModal action routing into a shared
-      dispatcher, then build the in-memory AgentEnterTarget resolver (pending gate rows,
-      identity-matched gate notifications, legacy question/HITL/remote-attention
-      sources, and the node's Patch) and the target executor, all without new UI-thread
-      disk reads.
+- id: resolve
+  title: Gate resolution and shared notification dispatch
+  depends_on: []
+  size: medium
+  description: 'resolve: extract the NotificationModal action routing into a shared
+    dispatcher, then build the in-memory AgentEnterTarget resolver (pending gate rows,
+    identity-matched gate notifications, legacy question/HITL/remote-attention sources,
+    and the node''s Patch) and the target executor, all without new UI-thread disk
+    reads.
 
-      "
-  - id: chooser
-    title: AgentActionChooserModal
-    depends_on: []
-    size: medium
-    description: "chooser: add the self-contained single-keypress chooser modal: generic
-      choice view model, deterministic g/1-9/p key assignment, AgentView-family styling,
-      unit tests, and one PNG visual golden.
+    '
+- id: chooser
+  title: AgentActionChooserModal
+  depends_on: []
+  size: medium
+  description: 'chooser: add the self-contained single-keypress chooser modal: generic
+    choice view model, deterministic g/1-9/p key assignment, AgentView-family styling,
+    unit tests, and one PNG visual golden.
 
-      "
-  - id: wire
-    title: Enter keymap swap and ,n retirement
-    depends_on:
-      - resolve
-      - chooser
-    size: medium
-    description:
-      "wire: add the act_on_agent app action bound to enter (jump_to_agent_patch stays
-      as an unbound action), connect the resolver to the chooser, retire
-      leader.jump_to_notification as a relocated key, and update the footer, help,
-      palette, onboarding, docs, and tests."
+    '
+- id: wire
+  title: Enter keymap swap and ,n retirement
+  depends_on:
+  - resolve
+  - chooser
+  size: medium
+  description: 'wire: add the act_on_agent app action bound to enter (jump_to_agent_patch
+    stays as an unbound action), connect the resolver to the chooser, retire leader.jump_to_notification
+    as a relocated key, and update the footer, help, palette, onboarding, docs, and
+    tests.'
 proposed_by: bbugyi200.athena.0ph
 create_time: 2026-09-22 13:38:25
 status: wip
+bead_id: sase-16j
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_enter_act_on_agent.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_enter_act_on_agent.md)
+- **PROMPT:** [prompts/202609/agents_enter_act_on_agent.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_enter_act_on_agent.md)
+- **BEAD:** [sase-16j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16j/README.md)
 
 # Plan: Context-aware `<enter>` on the Agents tab
 
