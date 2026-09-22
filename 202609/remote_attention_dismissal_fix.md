@@ -34,7 +34,7 @@ phases:
     stay dismissed, and verify via sase screenshot that ?8 is gone.'
 proposed_by: bbugyi200.athena.0pa
 create_time: 2026-09-22 10:05:54
-status: wip
+status: done
 bead_id: sase-168
 ---
 
