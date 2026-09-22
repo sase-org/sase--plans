@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Bind Space to repeat last VCS xprompt and remove Run agent (home)
-goal:
-  In the ACE TUI, Space prefills the prompt with the last launched VCS xprompt (blank
-  home prompt when none), Ctrl+Space is unbound by default, and the start_agent_home
+goal: In the ACE TUI, Space prefills the prompt with the last launched VCS xprompt
+  (blank home prompt when none), Ctrl+Space is unbound by default, and the start_agent_home
   action is gone.
 size: medium
 proposed_by: bbugyi200.athena.0p0
-create_time: 2026-09-22 06:51:01
-status: wip
+status: done
 ---
 
 # Move "Repeat last VCS xprompt" from `<ctrl+space>` to `<space>`; remove "Run agent (home)"
