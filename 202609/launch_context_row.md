@@ -24,7 +24,7 @@ phases:
     the top bar, rewrite tooltips, and refresh tests, goldens, and docs.'
 proposed_by: bbugyi200.apollo.0s.f0.f0.w2
 create_time: 2026-09-20 22:21:47
-status: wip
+status: done
 bead_id: sase-14y
 ---
 
