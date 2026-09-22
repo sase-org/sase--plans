@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Lowercase launch-context labels (model:/project:)
-goal:
-  'The ACE launch-context cluster reads "model: opus@high · project: +sase" instead of
-  the uppercase MODEL:/PROJECT: labels.'
+goal: 'The ACE launch-context cluster reads "model: opus@high · project: +sase" instead
+  of the uppercase MODEL:/PROJECT: labels.'
 size: small
 proposed_by: bbugyi200.apollo.1h.f0.f0
-create_time: 2026-09-22 07:48:38
-status: wip
+status: done
 ---
 
 # Lowercase the launch-context cluster labels: `MODEL:` → `model:`, `PROJECT:` → `project:`
