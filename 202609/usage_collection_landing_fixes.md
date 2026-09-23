@@ -2,56 +2,55 @@
 tier: epic
 title: Finish usage-window collection landing fixes and floor-aware header freshness
 parent_bead: sase-16z
-goal: "The usage-window collection work from epic sase-16z is actually complete. Its
-  epic-introduced symvision failures are gone. agy and grok capability-cache entries hit
-  in production. Rate-limit evidence on transport failures is classified. The stale chop
-  test no longer spawns real provider CLIs. The TUI header usage indicator uses the same
-  floor-aware freshness (`max(refresh_seconds, floor)`) as the CLI and Models panel, so
-  a provider polled at its floor never shows as stale or unknown between probes.
+goal: 'The usage-window collection work from epic sase-16z is actually complete. Its
+  epic-introduced symvision failures are gone. agy and grok capability-cache entries
+  hit in production. Rate-limit evidence on transport failures is classified. The
+  stale chop test no longer spawns real provider CLIs. The TUI header usage indicator
+  uses the same floor-aware freshness (`max(refresh_seconds, floor)`) as the CLI and
+  Models panel, so a provider polled at its floor never shows as stale or unknown
+  between probes.
 
-  "
+  '
 phases:
-  - id: landing-fixes
-    title: Fix sase-16z landing defects in sase
-    depends_on: []
-    size: medium
-    description:
-      "landing-fixes: resolve the three epic-introduced symvision failures (reuse
-      resolve_provider_cli_command in refresh readiness; privatize the capability-cache
-      dir/invalidate helpers), make executable_fingerprint resolve bare commands through
-      PATH so agy/grok cache entries hit, classify rate limits on JSON-line transport
-      failures, stop 429 matching decimals, remove the stale real-CLI chop test, keep
-      the inline crash path from overwriting finished providers, keep a failed
-      Models-panel reservation read from ending tracking early, and fix stale comments,
-      a test name, and the axe.md opt-out key."
-  - id: core-indicator-floors
-    title: "sase-core: per-provider polling floors in the usage indicator projection"
-    depends_on: []
-    size: small
-    description:
-      "core-indicator-floors: in the linked sase-core repo, add an optional
-      serde-defaulted `provider_min_intervals` map to the usage indicator projection
-      request, validated like the floor-aware store read, and compute each window's
-      freshness from `max(cadence_seconds, floor)` for providers that name a floor.
-      Requests without the field must project exactly as today."
-  - id: header-floor-freshness
-    title: Floor-aware freshness for the TUI header usage indicator
-    depends_on:
-      - core-indicator-floors
-      - landing-fixes
-    size: small
-    description:
-      "header-floor-freshness: move the sase-core pin past core-indicator-floors, pass
-      per-provider polling floors captured off the UI thread into the header indicator
-      projection, and test and document that the header uses `max(refresh_seconds,
-      floor)` freshness like the CLI and Models panel."
+- id: landing-fixes
+  title: Fix sase-16z landing defects in sase
+  depends_on: []
+  size: medium
+  description: 'landing-fixes: resolve the three epic-introduced symvision failures
+    (reuse resolve_provider_cli_command in refresh readiness; privatize the capability-cache
+    dir/invalidate helpers), make executable_fingerprint resolve bare commands through
+    PATH so agy/grok cache entries hit, classify rate limits on JSON-line transport
+    failures, stop 429 matching decimals, remove the stale real-CLI chop test, keep
+    the inline crash path from overwriting finished providers, keep a failed Models-panel
+    reservation read from ending tracking early, and fix stale comments, a test name,
+    and the axe.md opt-out key.'
+- id: core-indicator-floors
+  title: 'sase-core: per-provider polling floors in the usage indicator projection'
+  depends_on: []
+  size: small
+  description: 'core-indicator-floors: in the linked sase-core repo, add an optional
+    serde-defaulted `provider_min_intervals` map to the usage indicator projection
+    request, validated like the floor-aware store read, and compute each window''s
+    freshness from `max(cadence_seconds, floor)` for providers that name a floor.
+    Requests without the field must project exactly as today.'
+- id: header-floor-freshness
+  title: Floor-aware freshness for the TUI header usage indicator
+  depends_on:
+  - core-indicator-floors
+  - landing-fixes
+  size: small
+  description: 'header-floor-freshness: move the sase-core pin past core-indicator-floors,
+    pass per-provider polling floors captured off the UI thread into the header indicator
+    projection, and test and document that the header uses `max(refresh_seconds, floor)`
+    freshness like the CLI and Models panel.'
 proposed_by: bbugyi200.athena.sase-16z.land
 create_time: 2026-09-23 16:32:16
 status: wip
+bead_id: sase-16z.9
 ---
 
-- **PROMPT:**
-  [prompts/202609/usage_collection_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_collection_landing_fixes.md)
+- **PROMPT:** [prompts/202609/usage_collection_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_collection_landing_fixes.md)
+- **BEAD:** [sase-16z.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16z/sase-16z.9.md)
 
 # Plan: Finish usage-window collection landing fixes and floor-aware header freshness
 
