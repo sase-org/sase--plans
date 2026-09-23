@@ -2,112 +2,105 @@
 tier: epic
 title: Service-tree usage-window collection with adaptive, provider-safe refresh
 goal: 'Periodic usage-window collection runs inside the scheduler service tree (a
-  dedicated `usage` routine whose job probes inline) and no longer creates periodic proc
-  rows. Usage windows refresh sooner where the numbers actually move (a 60 s routine
-  tick plus a "hot" cadence for providers in use). Per-provider polling floors, jitter,
-  honored Retry-After, and reason-aware backoff keep every provider from being
-  overwhelmed. Each provider''s collection errors are classified, surfaced with a retry
-  time, and recovered from without blanking last-known-good windows.
+  dedicated `usage` routine whose job probes inline) and no longer creates periodic
+  proc rows. Usage windows refresh sooner where the numbers actually move (a 60 s
+  routine tick plus a "hot" cadence for providers in use). Per-provider polling floors,
+  jitter, honored Retry-After, and reason-aware backoff keep every provider from being
+  overwhelmed. Each provider''s collection errors are classified, surfaced with a
+  retry time, and recovered from without blanking last-known-good windows.
 
   '
 phases:
-  - id: core-attempt-policy
-    title: "sase-core: reason-aware attempt recording and rate-limit policy"
-    depends_on: []
-    size: medium
-    description:
-      "core-attempt-policy: in the linked sase-core repo, add the `rate_limited` reason
-      code, an optional observation `retry_after_seconds`, reason-aware backoff classes
-      behind an opt-in `adaptive` attempt flag (Retry-After clamping, rate-limit
-      escalation, parking, 1 h drift park, 60 s explicit cooldown), collector-health
-      `retry_at`/`last_failure_reason`, and pruning of superseded-generation schedule
-      rows. Legacy requests must behave exactly as they do today."
-  - id: core-admission-policy
-    title:
-      "sase-core: floors, jitter, parking, hot cadence, and reservation reads in
-      admission"
-    depends_on:
-      - core-attempt-policy
-    size: medium
-    description:
-      "core-admission-policy: extend due/admit evaluation (opt-in via `adaptive` and new
-      optional request fields) with per-provider polling floors, deterministic ±10%
-      jitter, CLI-fingerprint unparking, and hot cadence (hot hints, warn-level windows,
-      passive-coverage suppression). Add a `mark_provider_usage_hot` store operation, a
-      read-only live-reservation listing, and per-provider floor-aware freshness on
-      reads, all with bindings and golden legacy-compat tests."
-  - id: probe-robustness
-    title: Probe and runner robustness fixes
-    depends_on: []
-    size: medium
-    description:
-      "probe-robustness: fix the runner's batch-deadline double-record, the probe
-      TypeError re-run, the process-tree kill gap, the worker env allowlist, the 2 s
-      agy/grok version timeouts, Muse's missed-mint blanking, and Codex's best-effort
-      `account/read` poisoning the session. Each fix gets a regression test. This phase
-      is pure Python and needs no core change."
-  - id: rate-limit-plumbing
-    title: Rate-limit classification and reason-aware attempt plumbing
-    depends_on:
-      - core-attempt-policy
-      - probe-robustness
-    size: medium
-    description:
-      "rate-limit-plumbing: move the core pin, add a shared rate-limit/Retry-After
-      classifier that every collector consults, normalize `not_installed`, and pass the
-      reason code, Retry-After, and `adaptive=True` into every recorded attempt. Render
-      the new collector-health retry information in `sase usage list -v` and the Models
-      panel, and update the usage docs."
-  - id: adaptive-admission
-    title: Plugin polling floors, CLI fingerprints, and limit events that only mark due
-    depends_on:
-      - core-admission-policy
-      - rate-limit-plumbing
-    size: medium
-    description:
-      "adaptive-admission: move the core pin, let plugins declare
-      `min_probe_interval_seconds` (claude 300, muse 180, agy/grok/codex 120), compute
-      CLI fingerprints, and pass floors, fingerprints, and `adaptive=True` through
-      admission, attempts, and floor-aware reads. Limit events only mark providers due
-      and no longer force explicit probes."
-  - id: usage-routine
-    title: Dedicated `usage` scheduler routine that probes inline
-    depends_on:
-      - adaptive-admission
-    size: medium
-    description:
-      "usage-routine: move `usage_refresh` out of `checks` into a new 60 s `usage`
-      routine whose job runs the admitted batch in-process under non-proc operation IDs.
-      Store-based waiting replaces proc waits for joiners (CLI and Models panel). The
-      TUI fallback runs only when the scheduler does not own collection, `u` toasts
-      render real receipt reasons, and the tests and docs are updated to match."
-  - id: hot-cadence
-    title: Hot cadence for providers in active use
-    depends_on:
-      - usage-routine
-    size: medium
-    description:
-      "hot-cadence: add `llm_provider.usage_metrics.active_refresh_seconds` (default
-      120), pass the active cadence and warn percent into admission, and write
-      best-effort 15-minute hot hints from the agent launch path and limit events.
-      Update the config schema, defaults, and docs."
-  - id: capability-cache
-    title: CLI capability cache for usage probes
-    depends_on:
-      - adaptive-admission
-    size: medium
-    description:
-      "capability-cache: add a fingerprint-keyed, TTL-bounded on-disk cache of CLI
-      version and help capability results so warm Claude probes spawn 2 processes
-      instead of 5, and agy/grok skip `--version` spawns. Invalidate an entry on
-      fingerprint change, TTL expiry, or a drift/unsupported-version result."
+- id: core-attempt-policy
+  title: 'sase-core: reason-aware attempt recording and rate-limit policy'
+  depends_on: []
+  size: medium
+  description: 'core-attempt-policy: in the linked sase-core repo, add the `rate_limited`
+    reason code, an optional observation `retry_after_seconds`, reason-aware backoff
+    classes behind an opt-in `adaptive` attempt flag (Retry-After clamping, rate-limit
+    escalation, parking, 1 h drift park, 60 s explicit cooldown), collector-health
+    `retry_at`/`last_failure_reason`, and pruning of superseded-generation schedule
+    rows. Legacy requests must behave exactly as they do today.'
+- id: core-admission-policy
+  title: 'sase-core: floors, jitter, parking, hot cadence, and reservation reads in
+    admission'
+  depends_on:
+  - core-attempt-policy
+  size: medium
+  description: 'core-admission-policy: extend due/admit evaluation (opt-in via `adaptive`
+    and new optional request fields) with per-provider polling floors, deterministic
+    ±10% jitter, CLI-fingerprint unparking, and hot cadence (hot hints, warn-level
+    windows, passive-coverage suppression). Add a `mark_provider_usage_hot` store
+    operation, a read-only live-reservation listing, and per-provider floor-aware
+    freshness on reads, all with bindings and golden legacy-compat tests.'
+- id: probe-robustness
+  title: Probe and runner robustness fixes
+  depends_on: []
+  size: medium
+  description: 'probe-robustness: fix the runner''s batch-deadline double-record,
+    the probe TypeError re-run, the process-tree kill gap, the worker env allowlist,
+    the 2 s agy/grok version timeouts, Muse''s missed-mint blanking, and Codex''s
+    best-effort `account/read` poisoning the session. Each fix gets a regression test.
+    This phase is pure Python and needs no core change.'
+- id: rate-limit-plumbing
+  title: Rate-limit classification and reason-aware attempt plumbing
+  depends_on:
+  - core-attempt-policy
+  - probe-robustness
+  size: medium
+  description: 'rate-limit-plumbing: move the core pin, add a shared rate-limit/Retry-After
+    classifier that every collector consults, normalize `not_installed`, and pass
+    the reason code, Retry-After, and `adaptive=True` into every recorded attempt.
+    Render the new collector-health retry information in `sase usage list -v` and
+    the Models panel, and update the usage docs.'
+- id: adaptive-admission
+  title: Plugin polling floors, CLI fingerprints, and limit events that only mark
+    due
+  depends_on:
+  - core-admission-policy
+  - rate-limit-plumbing
+  size: medium
+  description: 'adaptive-admission: move the core pin, let plugins declare `min_probe_interval_seconds`
+    (claude 300, muse 180, agy/grok/codex 120), compute CLI fingerprints, and pass
+    floors, fingerprints, and `adaptive=True` through admission, attempts, and floor-aware
+    reads. Limit events only mark providers due and no longer force explicit probes.'
+- id: usage-routine
+  title: Dedicated `usage` scheduler routine that probes inline
+  depends_on:
+  - adaptive-admission
+  size: medium
+  description: 'usage-routine: move `usage_refresh` out of `checks` into a new 60
+    s `usage` routine whose job runs the admitted batch in-process under non-proc
+    operation IDs. Store-based waiting replaces proc waits for joiners (CLI and Models
+    panel). The TUI fallback runs only when the scheduler does not own collection,
+    `u` toasts render real receipt reasons, and the tests and docs are updated to
+    match.'
+- id: hot-cadence
+  title: Hot cadence for providers in active use
+  depends_on:
+  - usage-routine
+  size: medium
+  description: 'hot-cadence: add `llm_provider.usage_metrics.active_refresh_seconds`
+    (default 120), pass the active cadence and warn percent into admission, and write
+    best-effort 15-minute hot hints from the agent launch path and limit events. Update
+    the config schema, defaults, and docs.'
+- id: capability-cache
+  title: CLI capability cache for usage probes
+  depends_on:
+  - adaptive-admission
+  size: medium
+  description: 'capability-cache: add a fingerprint-keyed, TTL-bounded on-disk cache
+    of CLI version and help capability results so warm Claude probes spawn 2 processes
+    instead of 5, and agy/grok skip `--version` spawns. Invalidate an entry on fingerprint
+    change, TTL expiry, or a drift/unsupported-version result.'
 proposed_by: bbugyi200.athena.0q3
 create_time: 2026-09-23 11:06:08
 status: wip
+bead_id: sase-16z
 ---
 
-- **PROMPT:**
-  [prompts/202609/usage_window_collection_service_tree.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_window_collection_service_tree.md)
+- **PROMPT:** [prompts/202609/usage_window_collection_service_tree.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/usage_window_collection_service_tree.md)
+- **BEAD:** [sase-16z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16z/README.md)
 
 # Plan: Service-tree usage-window collection with adaptive, provider-safe refresh
 
