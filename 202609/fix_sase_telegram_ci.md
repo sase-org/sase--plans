@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Fix sase-telegram CI test failures after sase gate changes
-goal:
-  sase-telegram CI passes again against sase master, with the two broken tests made
-  hermetic and adapted to the new gate-shell and plan-credential preflight rules.
+goal: sase-telegram CI passes again against sase master, with the two broken tests
+  made hermetic and adapted to the new gate-shell and plan-credential preflight rules.
 size: small
 proposed_by: bbugyi200.athena.0pr
-create_time: 2026-09-23 08:22:05
-status: wip
+status: done
 ---
 
 # Fix sase-telegram CI: adapt two tests to recent sase gate changes
