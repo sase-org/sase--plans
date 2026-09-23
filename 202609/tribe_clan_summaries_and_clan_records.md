@@ -55,7 +55,7 @@ phases:
     record them as Inherited, log it, document it, and test it.'
 proposed_by: bbugyi200.athena.0pw.w0
 create_time: 2026-09-23 11:39:51
-status: wip
+status: done
 bead_id: sase-170
 ---
 
