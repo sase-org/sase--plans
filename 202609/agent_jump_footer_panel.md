@@ -1,53 +1,52 @@
 ---
 tier: epic
 title: Sticky collapsible jump footer panel on the Agents tab
-goal: "On the Agents tab, every live numbered roster target (family shells, neighbors,
+goal: 'On the Agents tab, every live numbered roster target (family shells, neighbors,
   clan members, tribe members) is listed in a sticky panel at the bottom of the detail
-  column, below the LLM Calls/file panel. The panel appears only when digit jumps are
-  live. It is collapsed by default to at most two packed rows, where every visible
-  number carries a label that unambiguously identifies its target. `.` expands it to the
-  complete list, and the first digit of a two-digit jump narrows it to the matching
-  candidates. The Agents show/hide non-run agents toggle moves from `.` to `I`.
+  column, below the LLM Calls/file panel. The panel appears only when digit jumps
+  are live. It is collapsed by default to at most two packed rows, where every visible
+  number carries a label that unambiguously identifies its target. `.` expands it
+  to the complete list, and the first digit of a two-digit jump narrows it to the
+  matching candidates. The Agents show/hide non-run agents toggle moves from `.` to
+  `I`.
 
-  "
+  '
 phases:
-  - id: legend
-    title: Jump-map sections, document carrier, and pure legend renderer
-    depends_on: []
-    size: medium
-    description:
-      "legend: enrich MemberJumpMap with per-target labels and status buckets plus
-      ordered roster sections, carry the exact published map on detached documents (not
-      hint documents or cheap tribe paints) through a new AgentPromptPanel sink, and
-      build the width-responsive collapsed/expanded/narrowed legend renderable with its
-      uniqueness-preserving packer and unit tests; no visible change."
-  - id: keymap
-    title: Dot jump-panel toggle plumbing and the non-run toggle move
-    depends_on: []
-    size: small
-    description:
-      "keymap: add the inert Agents-only toggle_agent_jump_panel action on full_stop,
-      move the Agents show/hide non-run agents toggle to a new
-      toggle_hide_non_run_agents action on I, narrow toggle_hide_reverted to Services,
-      and update availability, registry pairs, palette, help, docs, and keymap tests."
-  - id: panel
-    title: Jump panel widget, layout, toggle, narrowing, and visual verification
-    depends_on:
-      - legend
-      - keymap
-    size: medium
-    description:
-      "panel: add the AgentJumpPanel widget as the last child of the detail column, wire
-      the sink, visibility, dot toggle, bottom-pin handling, and first-digit narrowing,
-      add CSS, help and docs, pilot/reliability/visual tests, live screenshot review,
-      and the Agents golden refresh."
+- id: legend
+  title: Jump-map sections, document carrier, and pure legend renderer
+  depends_on: []
+  size: medium
+  description: 'legend: enrich MemberJumpMap with per-target labels and status buckets
+    plus ordered roster sections, carry the exact published map on detached documents
+    (not hint documents or cheap tribe paints) through a new AgentPromptPanel sink,
+    and build the width-responsive collapsed/expanded/narrowed legend renderable with
+    its uniqueness-preserving packer and unit tests; no visible change.'
+- id: keymap
+  title: Dot jump-panel toggle plumbing and the non-run toggle move
+  depends_on: []
+  size: small
+  description: 'keymap: add the inert Agents-only toggle_agent_jump_panel action on
+    full_stop, move the Agents show/hide non-run agents toggle to a new toggle_hide_non_run_agents
+    action on I, narrow toggle_hide_reverted to Services, and update availability,
+    registry pairs, palette, help, docs, and keymap tests.'
+- id: panel
+  title: Jump panel widget, layout, toggle, narrowing, and visual verification
+  depends_on:
+  - legend
+  - keymap
+  size: medium
+  description: 'panel: add the AgentJumpPanel widget as the last child of the detail
+    column, wire the sink, visibility, dot toggle, bottom-pin handling, and first-digit
+    narrowing, add CSS, help and docs, pilot/reliability/visual tests, live screenshot
+    review, and the Agents golden refresh.'
 proposed_by: bbugyi200.athena.0q0
 create_time: 2026-09-23 10:49:52
 status: wip
+bead_id: sase-16y
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_jump_footer_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_jump_footer_panel.md)
+- **PROMPT:** [prompts/202609/agent_jump_footer_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_jump_footer_panel.md)
+- **BEAD:** [sase-16y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16y/README.md)
 
 # Plan: Sticky collapsible jump footer panel on the Agents tab
 
