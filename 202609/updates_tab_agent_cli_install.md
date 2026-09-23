@@ -1,49 +1,47 @@
 ---
 tier: epic
 title: Install agent CLIs from the Admin Center Updates tab
-goal: "A missing agent CLI can be found, previewed, and installed from the SASE Admin
+goal: 'A missing agent CLI can be found, previewed, and installed from the SASE Admin
   Center Updates tab, either one at a time or as a marked bulk set. Installs go through
   the same confirmed, shell-free installer that backs `sase agent-cli install`, which
   now also installs npm-packaged CLIs. The previewed bytes are exactly the bytes that
   run, and every outcome (success, not on PATH, failure) stays visible afterwards.
 
-  "
+  '
 phases:
-  - id: npm-installs
-    title: Shared installer learns npm-packaged CLIs
-    depends_on: []
-    size: medium
-    description:
-      "npm-installs: add a pure install-route classifier, npm-package install planning
-      with npm/PATH/writability checks, plan-time PATH status, and a per-entry progress
-      hook in sase.agent_clis; update `sase agent-cli install` rendering, JSON, help,
-      hints, and docs."
-  - id: tui-install
-    title: Install flow in the Updates tab
-    depends_on:
-      - npm-installs
-    size: medium
-    description:
-      "tui-install: give missing agent-CLI rows an install verb on i / Space / I, a
-      redesigned install detail panel, a digest-bearing confirm preview, a tracked
-      sequential install proc, one combined flow for mixed plugin + CLI marks,
-      install-aware history, result lines, and toasts, plus tests, docs, and goldens."
-  - id: discover-bulk
-    title: Discoverability and bulk-select accelerators
-    depends_on:
-      - tui-install
-    size: medium
-    description:
-      "discover-bulk: add the Available scope, the `*` mark-all-like-this key, a
-      cross-scope hint when a filter matches nothing, the final detail call-to-action,
-      docs, and goldens."
+- id: npm-installs
+  title: Shared installer learns npm-packaged CLIs
+  depends_on: []
+  size: medium
+  description: 'npm-installs: add a pure install-route classifier, npm-package install
+    planning with npm/PATH/writability checks, plan-time PATH status, and a per-entry
+    progress hook in sase.agent_clis; update `sase agent-cli install` rendering, JSON,
+    help, hints, and docs.'
+- id: tui-install
+  title: Install flow in the Updates tab
+  depends_on:
+  - npm-installs
+  size: medium
+  description: 'tui-install: give missing agent-CLI rows an install verb on i / Space
+    / I, a redesigned install detail panel, a digest-bearing confirm preview, a tracked
+    sequential install proc, one combined flow for mixed plugin + CLI marks, install-aware
+    history, result lines, and toasts, plus tests, docs, and goldens.'
+- id: discover-bulk
+  title: Discoverability and bulk-select accelerators
+  depends_on:
+  - tui-install
+  size: medium
+  description: 'discover-bulk: add the Available scope, the `*` mark-all-like-this
+    key, a cross-scope hint when a filter matches nothing, the final detail call-to-action,
+    docs, and goldens.'
 proposed_by: bbugyi200.athena.0q6
 create_time: 2026-09-23 11:58:13
 status: wip
+bead_id: sase-171
 ---
 
-- **PROMPT:**
-  [prompts/202609/updates_tab_agent_cli_install.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/updates_tab_agent_cli_install.md)
+- **PROMPT:** [prompts/202609/updates_tab_agent_cli_install.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/updates_tab_agent_cli_install.md)
+- **BEAD:** [sase-171](https://github.com/sase-org/sase--beads/blob/main/pages/sase-171/README.md)
 
 # Plan: Install agent CLIs from the Admin Center Updates tab
 
