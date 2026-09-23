@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Close the sase-169 landing gaps in fix-tui-screenshots update mode
-goal:
-  A successful capture retry applies the retry's candidates. No dead legacy update-mode
+goal: A successful capture retry applies the retry's candidates. No dead legacy update-mode
   verify/apply code remains in the check path. Update-mode unfinished-journal conflicts
   exit 2 as the sase-169 contract specifies. Check-mode behavior is unchanged.
 size: small
 proposed_by: bbugyi200.apollo.sase-169.land
 bead: sase-169
-create_time: 2026-09-22 21:35:31
-status: wip
+status: done
 ---
 
 - **PARENT:**
