@@ -1,67 +1,65 @@
 ---
 tier: epic
 title: Tribe clan summaries and durable clan records
-goal: "Selecting an agent tribe panel shows the summary of every clan in the tribe
+goal: 'Selecting an agent tribe panel shows the summary of every clan in the tribe
   through a fast, fold-aware CLAN SUMMARIES section with a useful one-line-per-clan
-  default. A clan's summary and chosen tribe are recorded durably per clan generation,
-  so they survive member kills, dismissals, relaunches, and full reloads, and they seed
-  the defaults when a clan with the same name is created again.
+  default. A clan''s summary and chosen tribe are recorded durably per clan generation,
+  so they survive member kills, dismissals, relaunches, and full reloads, and they
+  seed the defaults when a clan with the same name is created again.
 
-  "
+  '
 phases:
-  - id: tribe_clan_summaries
-    title: CLAN SUMMARIES section in the tribe metadata panel
-    depends_on: []
-    size: medium
-    description:
-      "tribe_clan_summaries: add a fold-aware CLAN SUMMARIES section after TRIBE
-      MEMBERS, backed by worker-side cached summary digests (kicker, headline, lede,
-      styled body lines), with a Glance index, Triage ledes, Inspect previews, Forensics
-      full bodies, per-entry za/zA folds, docs, unit tests, and PNG goldens."
-  - id: clan_record_core
-    title: Durable clan record store in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "clan_record_core: in the linked sase-core repo, add the per-clan JSON record
-      store (schema, merge rules, bounded locks, atomic writes, mtime cache), apply
-      records over clan context in all three scan/index paths through a new
-      clan_records_dir scan option, add capture-from-artifacts and launch-default
-      resolution, and expose four Python bindings with tests."
-  - id: clan_record_wiring
-    title: Record, capture, and read clan attributes from sase
-    depends_on:
-      - clan_record_core
-    size: medium
-    description:
-      "clan_record_wiring: bump the sase-core pin, add the Python facade, pass the
-      records dir through every scan, record summaries and tribes at launch and on
-      summary refresh, capture records before any artifact deletion, make the wait index
-      honor recorded tribes, update docs, and add regression tests for the lost summary
-      scenarios."
-  - id: clan_tribe_edits
-    title: Clan-level tribe edits from the Agents tab
-    depends_on:
-      - clan_record_wiring
-    size: medium
-    description:
-      "clan_tribe_edits: make the tribe modal on a clan member or the synthetic clan row
-      write an Edited clan record (including sticky unsets) through the durable
-      directive path, with optimistic display, modal copy, docs, and tests."
-  - id: clan_launch_defaults
-    title: Inherit remembered tribe and summary for new clan generations
-    depends_on:
-      - clan_record_wiring
-    size: medium
-    description:
-      "clan_launch_defaults: when a launch creates a new generation of a previously
-      recorded clan without explicit tribe or summary, inherit the remembered tribe,
-      re-run the remembered summary script (falling back to the remembered text), record
-      them as Inherited, log it, document it, and test it."
+- id: tribe_clan_summaries
+  title: CLAN SUMMARIES section in the tribe metadata panel
+  depends_on: []
+  size: medium
+  description: 'tribe_clan_summaries: add a fold-aware CLAN SUMMARIES section after
+    TRIBE MEMBERS, backed by worker-side cached summary digests (kicker, headline,
+    lede, styled body lines), with a Glance index, Triage ledes, Inspect previews,
+    Forensics full bodies, per-entry za/zA folds, docs, unit tests, and PNG goldens.'
+- id: clan_record_core
+  title: Durable clan record store in sase-core
+  depends_on: []
+  size: medium
+  description: 'clan_record_core: in the linked sase-core repo, add the per-clan JSON
+    record store (schema, merge rules, bounded locks, atomic writes, mtime cache),
+    apply records over clan context in all three scan/index paths through a new clan_records_dir
+    scan option, add capture-from-artifacts and launch-default resolution, and expose
+    four Python bindings with tests.'
+- id: clan_record_wiring
+  title: Record, capture, and read clan attributes from sase
+  depends_on:
+  - clan_record_core
+  size: medium
+  description: 'clan_record_wiring: bump the sase-core pin, add the Python facade,
+    pass the records dir through every scan, record summaries and tribes at launch
+    and on summary refresh, capture records before any artifact deletion, make the
+    wait index honor recorded tribes, update docs, and add regression tests for the
+    lost summary scenarios.'
+- id: clan_tribe_edits
+  title: Clan-level tribe edits from the Agents tab
+  depends_on:
+  - clan_record_wiring
+  size: medium
+  description: 'clan_tribe_edits: make the tribe modal on a clan member or the synthetic
+    clan row write an Edited clan record (including sticky unsets) through the durable
+    directive path, with optimistic display, modal copy, docs, and tests.'
+- id: clan_launch_defaults
+  title: Inherit remembered tribe and summary for new clan generations
+  depends_on:
+  - clan_record_wiring
+  size: medium
+  description: 'clan_launch_defaults: when a launch creates a new generation of a
+    previously recorded clan without explicit tribe or summary, inherit the remembered
+    tribe, re-run the remembered summary script (falling back to the remembered text),
+    record them as Inherited, log it, document it, and test it.'
 proposed_by: bbugyi200.athena.0pw.w0
 create_time: 2026-09-23 11:39:51
 status: wip
+bead_id: sase-170
 ---
+
+- **BEAD:** [sase-170](https://github.com/sase-org/sase--beads/blob/main/pages/sase-170/README.md)
 
 # Plan: Tribe clan summaries and durable clan records
 
