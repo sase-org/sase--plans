@@ -2,39 +2,38 @@
 tier: epic
 title: Services tab Service Procs and Scheduled Routines panels
 goal: 'The Services tab sidebar renders as two titled, tribe-panel-style panels —
-  "Service Procs" (daemon procs plus oneshots) and "Scheduled Routines" (routines with
-  their jobs) — each with at-a-glance metadata in its title, and J/K jump to the
-  first/last node of the next/previous panel.
+  "Service Procs" (daemon procs plus oneshots) and "Scheduled Routines" (routines
+  with their jobs) — each with at-a-glance metadata in its title, and J/K jump to
+  the first/last node of the next/previous panel.
 
   '
 phases:
-  - id: service-panels
-    title: "Phase 1: Two-panel Services sidebar with titled panels"
-    depends_on: []
-    size: medium
-    description: "service-panels: split the BgCmdList sidebar into statically composed
-      Service Procs and Scheduled Routines panels over the unchanged global _axe_items
-      index, with metadata titles, focus chrome, shared height allocation, width
-      settling, scheduler-fold removal, docs, glossary strands, tests, and visual
-      goldens.
+- id: service-panels
+  title: 'Phase 1: Two-panel Services sidebar with titled panels'
+  depends_on: []
+  size: medium
+  description: 'service-panels: split the BgCmdList sidebar into statically composed
+    Service Procs and Scheduled Routines panels over the unchanged global _axe_items
+    index, with metadata titles, focus chrome, shared height allocation, width settling,
+    scheduler-fold removal, docs, glossary strands, tests, and visual goldens.
 
-      "
-  - id: service-panel-jk
-    title: "Phase 2: J / K panel jumps on the Services tab"
-    depends_on:
-      - service-panels
-    size: small
-    description:
-      "service-panel-jk: add tab-scoped focus_next/prev_service_panel keymaps on J/K
-      that select the first/last node of the adjacent non-empty panel with wrap, plus
-      availability gating, palette/help/docs discoverability, tests, and goldens."
+    '
+- id: service-panel-jk
+  title: 'Phase 2: J / K panel jumps on the Services tab'
+  depends_on:
+  - service-panels
+  size: small
+  description: 'service-panel-jk: add tab-scoped focus_next/prev_service_panel keymaps
+    on J/K that select the first/last node of the adjacent non-empty panel with wrap,
+    plus availability gating, palette/help/docs discoverability, tests, and goldens.'
 proposed_by: bbugyi200.athena.0q5--1
 create_time: 2026-09-23 18:26:48
 status: wip
+bead_id: sase-17a
 ---
 
-- **PROMPT:**
-  [prompts/202609/services_tab_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_tab_panels.md)
+- **PROMPT:** [prompts/202609/services_tab_panels.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_tab_panels.md)
+- **BEAD:** [sase-17a](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17a/README.md)
 
 # Services Tab: "Service Procs" and "Scheduled Routines" Panels
 
