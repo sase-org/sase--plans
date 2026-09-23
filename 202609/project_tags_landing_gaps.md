@@ -1,93 +1,90 @@
 ---
 tier: epic
 title: Close project tag (+sase) landing gaps
-goal: "Finish the work the sase-16n landing audit found missing or broken in project
-  tags. The cases are: `+home` on a fresh machine, CLI and cold-TUI tag rendering, the
-  D7 accept parity, the LSP disabled/hover fields, the invalid rewrite-to-tag, the
-  doctor case collisions, the red prompt-history tests, the metadata pager regression,
+goal: 'Finish the work the sase-16n landing audit found missing or broken in project
+  tags. The cases are: `+home` on a fresh machine, CLI and cold-TUI tag rendering,
+  the D7 accept parity, the LSP disabled/hover fields, the invalid rewrite-to-tag,
+  the doctor case collisions, the red prompt-history tests, the metadata pager regression,
   the tag PNG goldens, the nvim picker/palette/sigil, and the docs.
 
-  "
+  '
 phases:
-  - id: core-fixes
-    title: sase-core accept parity, target wire fields, and LSP tag fixes
-    depends_on: []
-    size: medium
-    description: "core-fixes: accept removes every workspace target the Python
-      one-target guard counts; LSP accept uses all tag targets; ProjectTagTargetWire
-      gains state and workspace_dir; LSP gains disabled diagnostics/modifier and a
-      richer hover; rewrite-to-tag emits only valid tags; suggestions are deduped;
-      collision warnings skip siblings and flag key case variants; the dead catalog wire
-      is used or removed.
+- id: core-fixes
+  title: sase-core accept parity, target wire fields, and LSP tag fixes
+  depends_on: []
+  size: medium
+  description: 'core-fixes: accept removes every workspace target the Python one-target
+    guard counts; LSP accept uses all tag targets; ProjectTagTargetWire gains state
+    and workspace_dir; LSP gains disabled diagnostics/modifier and a richer hover;
+    rewrite-to-tag emits only valid tags; suggestions are deduped; collision warnings
+    skip siblings and flag key case variants; the dead catalog wire is used or removed.
 
-      "
-  - id: backend-fixes
-    title: Python project tag backend fixes and missing launch tests
-    depends_on:
-      - core-fixes
-    size: medium
-    description: "backend-fixes: `+home` resolves before home's spec exists;
-      project_tag_for leaves unknown names alone; targets send state and workspace_dir
-      over the wire; the completion cache follows current/MRU changes; doctor reports
-      key case collisions with accurate wording; dead catalog code goes; the backend
-      step-8 launch tests that were never written are added.
+    '
+- id: backend-fixes
+  title: Python project tag backend fixes and missing launch tests
+  depends_on:
+  - core-fixes
+  size: medium
+  description: 'backend-fixes: `+home` resolves before home''s spec exists; project_tag_for
+    leaves unknown names alone; targets send state and workspace_dir over the wire;
+    the completion cache follows current/MRU changes; doctor reports key case collisions
+    with accurate wording; dead catalog code goes; the backend step-8 launch tests
+    that were never written are added.
 
-      "
-  - id: display-fixes
-    title: CLI and cold-TUI tag rendering, pager, MRU label, and red tests
-    depends_on:
-      - backend-fixes
-    size: medium
-    description: "display-fixes: fix the two red prompt-history label tests; CLI
-      surfaces load the catalog so they tagify; the TUI warms the catalog at startup,
-      refreshes cold renders, and re-highlights the editor; the metadata pager keeps
-      Markdown highlighting around tags; MRU labels read the tag; clan triage tags are
-      accent-colored.
+    '
+- id: display-fixes
+  title: CLI and cold-TUI tag rendering, pager, MRU label, and red tests
+  depends_on:
+  - backend-fixes
+  size: medium
+  description: 'display-fixes: fix the two red prompt-history label tests; CLI surfaces
+    load the catalog so they tagify; the TUI warms the catalog at startup, refreshes
+    cold renders, and re-highlights the editor; the metadata pager keeps Markdown
+    highlighting around tags; MRU labels read the tag; clan triage tags are accent-colored.
 
-      "
-  - id: tag-goldens
-    title: Deterministic tag PNG golden coverage
-    depends_on:
-      - display-fixes
-    size: small
-    description: "tag-goldens: pin a fixture tag catalog in the visual harness, add
-      prompt-highlighting and AGENT XPROMPT tag cases, and capture and inspect their
-      goldens plus any tag-surface drift with fix-tui-screenshots.
+    '
+- id: tag-goldens
+  title: Deterministic tag PNG golden coverage
+  depends_on:
+  - display-fixes
+  size: small
+  description: 'tag-goldens: pin a fixture tag catalog in the visual harness, add
+    prompt-highlighting and AGENT XPROMPT tag cases, and capture and inspect their
+    goldens plus any tag-surface drift with fix-tui-screenshots.
 
-      "
-  - id: nvim-fixes
-    title: sase-nvim picker fallback, palette overrides, and dim sigil
-    depends_on:
-      - core-fixes
-    size: small
-    description: "nvim-fixes: the Ctrl+T +query picker works without native LSP
-      completion; palette application keeps user overrides; the + sigil renders in dim
-      accent; disabled tags use the new server modifier; README and tests match.
+    '
+- id: nvim-fixes
+  title: sase-nvim picker fallback, palette overrides, and dim sigil
+  depends_on:
+  - core-fixes
+  size: small
+  description: 'nvim-fixes: the Ctrl+T +query picker works without native LSP completion;
+    palette application keeps user overrides; the + sigil renders in dim accent; disabled
+    tags use the new server modifier; README and tests match.
 
-      "
-  - id: docs-fixes
-    title: Project tag docs accuracy pass
-    depends_on:
-      - core-fixes
-      - backend-fixes
-      - display-fixes
-      - nvim-fixes
-    size: small
-    description:
-      "docs-fixes: editor.md semantic-token legend and palette capability, stale
-      #gh:sase and gh_sase alias examples, the -P help wording, getting_started
-      tag-first wording, the sase-github #gh(sase) note, and a fresh-machine check of
-      the +home first-run examples."
+    '
+- id: docs-fixes
+  title: Project tag docs accuracy pass
+  depends_on:
+  - core-fixes
+  - backend-fixes
+  - display-fixes
+  - nvim-fixes
+  size: small
+  description: 'docs-fixes: editor.md semantic-token legend and palette capability,
+    stale #gh:sase and gh_sase alias examples, the -P help wording, getting_started
+    tag-first wording, the sase-github #gh(sase) note, and a fresh-machine check of
+    the +home first-run examples.'
 proposed_by: bbugyi200.athena.sase-16n.land
 parent_bead: sase-16n
 create_time: 2026-09-23 08:51:41
 status: wip
+bead_id: sase-16n.11
 ---
 
-- **PROMPT:**
-  [prompts/202609/project_tags_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags_landing_gaps.md)
-- **PARENT:**
-  [202609/project_tags.md](https://github.com/sase-org/sase--plans/blob/main/202609/project_tags.md)
+- **PROMPT:** [prompts/202609/project_tags_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags_landing_gaps.md)
+- **PARENT:** [202609/project_tags.md](https://github.com/sase-org/sase--plans/blob/main/202609/project_tags.md)
+- **BEAD:** [sase-16n.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16n/sase-16n.11.md)
 
 # Plan: Close project tag (`+sase`) landing gaps
 
