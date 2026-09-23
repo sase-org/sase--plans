@@ -2,128 +2,121 @@
 tier: epic
 title: Agents tab agent data decks and cards
 goal: 'The Agents tab replaces its metadata panel and its Files and LLM Calls panels
-  with one deck-panel type. It shows one or two panels, stacked top and bottom or side
-  by side, and each panel shows an agent data deck (Main, Files or Tools) made of agent
-  data cards. A deck renders all of its cards on one page when they fit a configurable
-  threshold and one card per page otherwise. Keys cycle cards (Ctrl+J/K) and decks
-  (Ctrl+N/P), split and unsplit panels (\ and |), move focus (Ctrl+F), collapse the node
-  panel (Ctrl+S) and zoom a deck in place (Z). The p view picker, the Z zoom modal and
-  the legacy panel modes are deleted, and glossary strands describe the new vocabulary.
+  with one deck-panel type. It shows one or two panels, stacked top and bottom or
+  side by side, and each panel shows an agent data deck (Main, Files or Tools) made
+  of agent data cards. A deck renders all of its cards on one page when they fit a
+  configurable threshold and one card per page otherwise. Keys cycle cards (Ctrl+J/K)
+  and decks (Ctrl+N/P), split and unsplit panels (\ and |), move focus (Ctrl+F), collapse
+  the node panel (Ctrl+S) and zoom a deck in place (Z). The p view picker, the Z zoom
+  modal and the legacy panel modes are deleted, and glossary strands describe the
+  new vocabulary.
 
   '
 phases:
-  - id: llm-calls-subject-guard
-    title: LLM Calls stale-worker fix and split-key display
-    depends_on: []
-    size: small
-    description:
-      "llm-calls-subject-guard: stop LLM Calls worker results from painting onto a
-      different agent, and teach key validation and display about backslash and
-      vertical_line so split keys can be overridden and shown."
-  - id: main-card-partition
-    title: Card-partitioned Main documents
-    depends_on: []
-    size: large
-    description:
-      "main-card-partition: every metadata builder wraps its output in
-      Context/Reply/Output/Summary card parts, error tracebacks move to the top of the
-      Reply card, and tree walkers learn the card wrapper. With the flag off the panel
-      renders as before, except the traceback fix."
-  - id: deck-panel-core
-    title: Deck panel core behind the agent_decks beta flag
-    depends_on:
-      - llm-calls-subject-guard
-      - main-card-partition
-    size: large
-    description:
-      "deck-panel-core: create the agent_decks beta flag and the widgets/decks package:
-      DeckArea with two pre-composed DeckPanels, a hidden Main source feeding
-      MainDeckViews, per-panel Files and Tools views, tab-strip titles, empty-state
-      cards, lazy loading and no-I/O availability probes. Paged rendering only."
-  - id: deck-navigation-keys
-    title: Card and deck cycling keys
-    depends_on:
-      - deck-panel-core
-    size: medium
-    description:
-      "deck-navigation-keys: Ctrl+J/K cycle cards and Ctrl+N/P cycle decks in the
-      focused panel, with sticky preferred cards. Ctrl+D/U, g/G and the bottom pin
-      target the focused deck panel. Includes full keymap registration and the first
-      flag-on PNG goldens."
-  - id: deck-splits-focus
-    title: Split layouts, focus and split ratio
-    depends_on:
-      - deck-navigation-keys
-    size: large
-    description:
-      'deck-splits-focus: \ and | toggle top-bottom and left-right splits through a pure
-      layout state machine. Ctrl+F moves logical focus and {/} resize the focused panel.
-      Duplicate decks fan out to both panels, with no remounts on layout change.'
-  - id: deck-action-retarget
-    title: Retarget detail actions to the focused deck panel
-    depends_on:
-      - deck-splits-focus
-    size: large
-    description:
-      "deck-action-retarget: inventory every consumer of the legacy panel ids and
-      visibility helpers, then give each one a deck-mode path. Covers folds, hints,
-      search, E, LLM detail levels, clipboard, footer, palette context and auto-refresh,
-      and makes the SLOW TOOL CALLS hint accurate."
-  - id: node-panel-collapse-zoom
-    title: Node panel collapse and in-place zoom
-    depends_on:
-      - deck-splits-focus
-    size: medium
-    description:
-      "node-panel-collapse-zoom: Ctrl+S hides the node panel without unmounting it and
-      shows a slim node spine plus an info-row chip. With decks on, Z becomes an
-      in-place zoom of the focused deck panel that a second Z restores."
-  - id: deck-spread-mode
-    title: Spread versus paged rendering
-    depends_on:
-      - deck-action-retarget
-    size: large
-    description:
-      "deck-spread-mode: adds the ace.agent_decks.spread_max_screens config and a pure
-      decide_render_mode with hysteresis. Measures cheap lower bounds first, renders
-      Main and Files spread with titled separators and card anchors, and keeps the
-      reading position stable across transitions."
-  - id: deck-state-persistence
-    title: Persist the deck layout across restarts
-    depends_on:
-      - node-panel-collapse-zoom
-    size: small
-    description:
-      "deck-state-persistence: persist the layout, ratio, focus, node-panel collapse and
-      each panel's deck and preferred card to ~/.sase/ace_agents_deck_state.json.
-      Loading fails open and saves are coalesced off the event loop."
-  - id: deck-cutover
-    title: Cut over to decks and delete the legacy UI
-    depends_on:
-      - deck-spread-mode
-      - deck-state-persistence
-    size: large
-    description:
-      "deck-cutover: delete the flag's Off branch and the flag, the p picker, the zoom
-      modal, the panel enums and the legacy panel ids and CSS. Retire or rename the
-      affected action ids, migrate or delete tests, and regenerate every affected PNG
-      golden."
-  - id: deck-docs-glossary
-    title: Docs, glossary strands and key-change notice
-    depends_on:
-      - deck-cutover
-    size: medium
-    description:
-      "deck-docs-glossary: rewrite the Agents detail docs around decks and cards, sweep
-      stale zoom, picker and section-stop references, add a one-time post-update key
-      notice, and add and edit the listed glossary strands, then run sase memory init."
+- id: llm-calls-subject-guard
+  title: LLM Calls stale-worker fix and split-key display
+  depends_on: []
+  size: small
+  description: 'llm-calls-subject-guard: stop LLM Calls worker results from painting
+    onto a different agent, and teach key validation and display about backslash and
+    vertical_line so split keys can be overridden and shown.'
+- id: main-card-partition
+  title: Card-partitioned Main documents
+  depends_on: []
+  size: large
+  description: 'main-card-partition: every metadata builder wraps its output in Context/Reply/Output/Summary
+    card parts, error tracebacks move to the top of the Reply card, and tree walkers
+    learn the card wrapper. With the flag off the panel renders as before, except
+    the traceback fix.'
+- id: deck-panel-core
+  title: Deck panel core behind the agent_decks beta flag
+  depends_on:
+  - llm-calls-subject-guard
+  - main-card-partition
+  size: large
+  description: 'deck-panel-core: create the agent_decks beta flag and the widgets/decks
+    package: DeckArea with two pre-composed DeckPanels, a hidden Main source feeding
+    MainDeckViews, per-panel Files and Tools views, tab-strip titles, empty-state
+    cards, lazy loading and no-I/O availability probes. Paged rendering only.'
+- id: deck-navigation-keys
+  title: Card and deck cycling keys
+  depends_on:
+  - deck-panel-core
+  size: medium
+  description: 'deck-navigation-keys: Ctrl+J/K cycle cards and Ctrl+N/P cycle decks
+    in the focused panel, with sticky preferred cards. Ctrl+D/U, g/G and the bottom
+    pin target the focused deck panel. Includes full keymap registration and the first
+    flag-on PNG goldens.'
+- id: deck-splits-focus
+  title: Split layouts, focus and split ratio
+  depends_on:
+  - deck-navigation-keys
+  size: large
+  description: 'deck-splits-focus: \ and | toggle top-bottom and left-right splits
+    through a pure layout state machine. Ctrl+F moves logical focus and {/} resize
+    the focused panel. Duplicate decks fan out to both panels, with no remounts on
+    layout change.'
+- id: deck-action-retarget
+  title: Retarget detail actions to the focused deck panel
+  depends_on:
+  - deck-splits-focus
+  size: large
+  description: 'deck-action-retarget: inventory every consumer of the legacy panel
+    ids and visibility helpers, then give each one a deck-mode path. Covers folds,
+    hints, search, E, LLM detail levels, clipboard, footer, palette context and auto-refresh,
+    and makes the SLOW TOOL CALLS hint accurate.'
+- id: node-panel-collapse-zoom
+  title: Node panel collapse and in-place zoom
+  depends_on:
+  - deck-splits-focus
+  size: medium
+  description: 'node-panel-collapse-zoom: Ctrl+S hides the node panel without unmounting
+    it and shows a slim node spine plus an info-row chip. With decks on, Z becomes
+    an in-place zoom of the focused deck panel that a second Z restores.'
+- id: deck-spread-mode
+  title: Spread versus paged rendering
+  depends_on:
+  - deck-action-retarget
+  size: large
+  description: 'deck-spread-mode: adds the ace.agent_decks.spread_max_screens config
+    and a pure decide_render_mode with hysteresis. Measures cheap lower bounds first,
+    renders Main and Files spread with titled separators and card anchors, and keeps
+    the reading position stable across transitions.'
+- id: deck-state-persistence
+  title: Persist the deck layout across restarts
+  depends_on:
+  - node-panel-collapse-zoom
+  size: small
+  description: 'deck-state-persistence: persist the layout, ratio, focus, node-panel
+    collapse and each panel''s deck and preferred card to ~/.sase/ace_agents_deck_state.json.
+    Loading fails open and saves are coalesced off the event loop.'
+- id: deck-cutover
+  title: Cut over to decks and delete the legacy UI
+  depends_on:
+  - deck-spread-mode
+  - deck-state-persistence
+  size: large
+  description: 'deck-cutover: delete the flag''s Off branch and the flag, the p picker,
+    the zoom modal, the panel enums and the legacy panel ids and CSS. Retire or rename
+    the affected action ids, migrate or delete tests, and regenerate every affected
+    PNG golden.'
+- id: deck-docs-glossary
+  title: Docs, glossary strands and key-change notice
+  depends_on:
+  - deck-cutover
+  size: medium
+  description: 'deck-docs-glossary: rewrite the Agents detail docs around decks and
+    cards, sweep stale zoom, picker and section-stop references, add a one-time post-update
+    key notice, and add and edit the listed glossary strands, then run sase memory
+    init.'
 proposed_by: bbugyi200.athena.0qd
 create_time: 2026-09-23 19:16:44
 status: wip
+bead_id: sase-17d
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_tab_decks_and_cards.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_decks_and_cards.md)
+- **PROMPT:** [prompts/202609/agents_tab_decks_and_cards.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_decks_and_cards.md)
+- **BEAD:** [sase-17d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/README.md)
 
 # Plan: Agent Data Decks and Cards for the Agents Tab
 
