@@ -61,7 +61,7 @@ phases:
     and named upgrades reach the raw residual that lives outside the sase repo.'
 proposed_by: bbugyi200.athena.0pf
 create_time: 2026-09-22 13:05:36
-status: wip
+status: done
 bead_id: sase-16h
 ---
 
