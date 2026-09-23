@@ -1,73 +1,72 @@
 ---
 tier: epic
 title: Finish the project tag (+sase) landing-gap fixes
-goal: "Fix the defects the sase-16n.11 landing audit found in its own work. sase-core: a
-  macOS-red CI test, and accept joining lines. sase-nvim: tag colors never show, and
-  palette overrides get lost. sase: a follow-up monitor regression, a warm-refresh that
-  does nothing, pager tag styling, and a history-filter blocking load. Also integrate
+goal: 'Fix the defects the sase-16n.11 landing audit found in its own work. sase-core:
+  a macOS-red CI test, and accept joining lines. sase-nvim: tag colors never show,
+  and palette overrides get lost. sase: a follow-up monitor regression, a warm-refresh
+  that does nothing, pager tag styling, and a history-filter blocking load. Also integrate
   the new tribe PROMPTS chip, and close the remaining test and doc gaps.
 
-  "
+  '
 phases:
-  - id: core-accept
-    title: sase-core macOS test fix, accept line-join fix, and tag cleanups
-    depends_on: []
-    size: medium
-    description: "core-accept: make the case-variant collision test pass on
-      case-insensitive file systems; accept removal no longer deletes the newline after
-      a line-end ref and counts refs hidden inside a rejected glued match; pre-v5 LSP
-      catalogs fall back to enabled rows for accept; fix stale comments and dead checks.
+- id: core-accept
+  title: sase-core macOS test fix, accept line-join fix, and tag cleanups
+  depends_on: []
+  size: medium
+  description: 'core-accept: make the case-variant collision test pass on case-insensitive
+    file systems; accept removal no longer deletes the newline after a line-end ref
+    and counts refs hidden inside a rejected glued match; pre-v5 LSP catalogs fall
+    back to enabled rows for accept; fix stale comments and dead checks.
 
-      "
-  - id: nvim-tokens
-    title: sase-nvim set-shaped token modifiers, full override tracking, picker errors
-    depends_on: []
-    size: small
-    description: "nvim-tokens: token_group reads the set-shaped modifiers Neovim passes
-      so accent, sigil, unknown and disabled colors actually show; palette refresh keeps
-      any user override, not just a different foreground; the +query picker reports
-      failures and adds a trailing space; tests use real modifier shapes and cover the
-      auto-mode fallback.
+    '
+- id: nvim-tokens
+  title: sase-nvim set-shaped token modifiers, full override tracking, picker errors
+  depends_on: []
+  size: small
+  description: 'nvim-tokens: token_group reads the set-shaped modifiers Neovim passes
+    so accent, sigil, unknown and disabled colors actually show; palette refresh keeps
+    any user override, not just a different foreground; the +query picker reports
+    failures and adds a trailing space; tests use real modifier shapes and cover the
+    auto-mode fallback.
 
-      "
-  - id: backend-regressions
-    title:
-      sase follow-up prefix regression, non-blocking history filter, test isolation and
-      gaps, docs nits
-    depends_on:
-      - core-accept
-    size: medium
-    description: "backend-regressions: ratchet the sase-core pin;
-      frozen_intent_vcs_prefix counts only a real +tag token; the prompt-history project
-      filter never builds the catalog on the event loop; the tag catalog cache resets
-      between tests; add the missing assertions for completion order, fresh-process CLI
-      output, alt fan-out and the MRU label; skip catalog loads for raw/json prompt
-      show; add occupant_kind to doctor JSON; fix the docs nits.
+    '
+- id: backend-regressions
+  title: sase follow-up prefix regression, non-blocking history filter, test isolation
+    and gaps, docs nits
+  depends_on:
+  - core-accept
+  size: medium
+  description: 'backend-regressions: ratchet the sase-core pin; frozen_intent_vcs_prefix
+    counts only a real +tag token; the prompt-history project filter never builds
+    the catalog on the event loop; the tag catalog cache resets between tests; add
+    the missing assertions for completion order, fresh-process CLI output, alt fan-out
+    and the MRU label; skip catalog loads for raw/json prompt show; add occupant_kind
+    to doctor JSON; fix the docs nits.
 
-      "
-  - id: tui-tag-surfaces
-    title:
-      TUI warm refresh that rebuilds surfaces, pager tag accents, tribe PROMPTS chip
-    depends_on:
-      - backend-regressions
-    size: medium
-    description: "tui-tag-surfaces: ProjectTagCatalogWarmed rebuilds the surfaces that
-      rendered cold (agent detail and panels, history, query accents), with a real-app
-      test; the metadata pager styles only resolved tags, in each project's D6 accent,
-      and never inside fences; the tribe PROMPTS chip shows +name only for catalog-known
-      projects; refresh the affected goldens.
+    '
+- id: tui-tag-surfaces
+  title: TUI warm refresh that rebuilds surfaces, pager tag accents, tribe PROMPTS
+    chip
+  depends_on:
+  - backend-regressions
+  size: medium
+  description: 'tui-tag-surfaces: ProjectTagCatalogWarmed rebuilds the surfaces that
+    rendered cold (agent detail and panels, history, query accents), with a real-app
+    test; the metadata pager styles only resolved tags, in each project''s D6 accent,
+    and never inside fences; the tribe PROMPTS chip shows +name only for catalog-known
+    projects; refresh the affected goldens.
 
-      "
+    '
 proposed_by: bbugyi200.athena.sase-16n.11.land
 parent_bead: sase-16n.11
 create_time: 2026-09-23 14:10:48
 status: wip
+bead_id: sase-16n.11.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/project_tags_landing_gaps_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags_landing_gaps_finish.md)
-- **PARENT:**
-  [202609/project_tags_landing_gaps.md](https://github.com/sase-org/sase--plans/blob/main/202609/project_tags_landing_gaps.md)
+- **PROMPT:** [prompts/202609/project_tags_landing_gaps_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/project_tags_landing_gaps_finish.md)
+- **PARENT:** [202609/project_tags_landing_gaps.md](https://github.com/sase-org/sase--plans/blob/main/202609/project_tags_landing_gaps.md)
+- **BEAD:** [sase-16n.11.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16n/sase-16n.11.7.md)
 
 # Plan: Finish the project tag (`+sase`) landing-gap fixes
 
