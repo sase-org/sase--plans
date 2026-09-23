@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fix sase-telegram CI test failures after sase gate changes
-goal: sase-telegram CI passes again against sase master, with the two broken tests
-  made hermetic and adapted to the new gate-shell and plan-credential preflight rules.
+goal:
+  sase-telegram CI passes again against sase master, with the two broken tests made
+  hermetic and adapted to the new gate-shell and plan-credential preflight rules.
 size: small
 proposed_by: bbugyi200.athena.0pr
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0pr](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0pr.md)
+- **COMMITS:**
+  - [5deb9e0](https://github.com/sase-org/sase-telegram/commit/5deb9e00739e69ae62fdcc3be221d992fe366c37)
+    — test(telegram): isolate git-remote probe and mark shell spec row-managed
 
 # Fix sase-telegram CI: adapt two tests to recent sase gate changes
 
