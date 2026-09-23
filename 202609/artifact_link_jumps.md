@@ -1,105 +1,98 @@
 ---
 tier: epic
 title: Rock-solid artifact link jumps
-goal: "Following any artifact link (the `$` link rail, the `$0` Links panel, relation
-  jumps) always lands on the target row: the destination Artifacts sub-tab switches to a
-  verified, readable context query that shows the target among its natural family (for
-  example `id:sase-16n.* limit:100` for a closed epic phase), selects it, explains the
-  rewrite in one clear toast, and restores the user's query with `^`. Jumps fail only
-  for truly dangling refs.
+goal: 'Following any artifact link (the `$` link rail, the `$0` Links panel, relation
+  jumps) always lands on the target row: the destination Artifacts sub-tab switches
+  to a verified, readable context query that shows the target among its natural family
+  (for example `id:sase-16n.* limit:100` for a closed epic phase), selects it, explains
+  the rewrite in one clear toast, and restores the user''s query with `^`. Jumps fail
+  only for truly dangling refs.
 
-  "
+  '
 phases:
-  - id: core-glob
-    title: Wildcard matching in the sase-core query evaluator
-    depends_on: []
-    size: small
-    description:
-      "core-glob: in the linked sase-core repo, make `*` a wildcard inside string-field
-      property values (anchored for exact-match fields and `sha`, unanchored for
-      substring fields, literal for enums), with Rust tests proving `id:alpha-1.*`
-      semantics and byte-identical behavior for values without `*`."
-  - id: host-glob
-    title: Wildcard parity, pin bump, pushdown guard, and docs in sase
-    depends_on:
-      - core-glob
-    size: small
-    description:
-      "host-glob: move the sase-core CI pin past the wildcard commit, mirror the
-      semantics in the Python reference evaluator with parity tests, keep glob values
-      out of Agents-tab index pushdown, and document wildcards in the query language
-      reference and field hints."
-  - id: seam
-    title: Never lose a pane report, never treat loading as absence
-    depends_on: []
-    size: medium
-    description:
-      "seam: fix the confirmed root cause (Beads/Plans/Agents/Files resolve a request
-      synchronously, the report is dropped during dispatch, and the pane returns PENDING
-      so the transaction hangs), capture synchronous reports at the host seam, make
-      fold-hidden pending targets truthful, wait on loading panes, re-resolve refs after
-      load, fix project scope handling, re-index hydrated rows, and add real-pane
-      regression tests."
-  - id: planner
-    title: Plan-then-commit reveal engine with Beads context queries
-    depends_on:
-      - host-glob
-      - seam
-    size: medium
-    description:
-      "planner: replace the trial-and-error limit-drop, widening, and neutral rungs with
-      one verified context rewrite (fold, acquire, context, identity, neutral, honest
-      failure), add the `host_reveal_context` pane hook, the dialect-aware query
-      renderer, the limit policy, and hidden-reason analysis, and ship the Beads family
-      queries (`id:<epic>.*`) end to end."
-  - id: flat-panes
-    title: Agent and File context queries plus Agents-tab reveal
-    depends_on:
-      - planner
-    size: medium
-    description:
-      "flat-panes: add hood/family context queries for the Artifacts Agent pane and
-      creating-agent context for Files, and make `agent:` jumps reveal folded rows on
-      the Agents tab, falling back to Artifacts ▸ Agent when the Agents-tab filter hides
-      them."
-  - id: bounded-panes
-    title: Stitch, Plan/provider, and Patch context queries
-    depends_on:
-      - planner
-    size: medium
-    description:
-      "bounded-panes: acquire-then-reveal for panes whose inventory is bounded. Stitch
-      jumps rewrite to a repo-and-day window, Plan and provider panes use a `path:`
-      context, and Patch jumps show the patch's stack, with Stitches' reveal row read
-      from the unfiltered collection."
-  - id: toast
-    title: The reveal toast, lens chip, and user docs
-    depends_on:
-      - planner
-    size: small
-    description:
-      "toast: add a pure, escaped toast formatter showing the new query, what hid the
-      target, the scope change, and the real restore/back keys, plus unified failure
-      copy, a context label on the lens chip, and rewritten reveal-ladder docs."
-  - id: entry-points
-    title: One engine for every jump, plus the end-to-end matrix
-    depends_on:
-      - flat-panes
-      - bounded-panes
-      - toast
-    size: medium
-    description:
-      "entry-points: route relation-panel misses and cross-pane relation jumps through
-      the engine, fix `job:` jumps hidden by a collapsed scheduler fold and unconfigured
-      provider kinds, and add a Links-panel-driven end-to-end test matrix covering every
-      artifact kind."
+- id: core-glob
+  title: Wildcard matching in the sase-core query evaluator
+  depends_on: []
+  size: small
+  description: 'core-glob: in the linked sase-core repo, make `*` a wildcard inside
+    string-field property values (anchored for exact-match fields and `sha`, unanchored
+    for substring fields, literal for enums), with Rust tests proving `id:alpha-1.*`
+    semantics and byte-identical behavior for values without `*`.'
+- id: host-glob
+  title: Wildcard parity, pin bump, pushdown guard, and docs in sase
+  depends_on:
+  - core-glob
+  size: small
+  description: 'host-glob: move the sase-core CI pin past the wildcard commit, mirror
+    the semantics in the Python reference evaluator with parity tests, keep glob values
+    out of Agents-tab index pushdown, and document wildcards in the query language
+    reference and field hints.'
+- id: seam
+  title: Never lose a pane report, never treat loading as absence
+  depends_on: []
+  size: medium
+  description: 'seam: fix the confirmed root cause (Beads/Plans/Agents/Files resolve
+    a request synchronously, the report is dropped during dispatch, and the pane returns
+    PENDING so the transaction hangs), capture synchronous reports at the host seam,
+    make fold-hidden pending targets truthful, wait on loading panes, re-resolve refs
+    after load, fix project scope handling, re-index hydrated rows, and add real-pane
+    regression tests.'
+- id: planner
+  title: Plan-then-commit reveal engine with Beads context queries
+  depends_on:
+  - host-glob
+  - seam
+  size: medium
+  description: 'planner: replace the trial-and-error limit-drop, widening, and neutral
+    rungs with one verified context rewrite (fold, acquire, context, identity, neutral,
+    honest failure), add the `host_reveal_context` pane hook, the dialect-aware query
+    renderer, the limit policy, and hidden-reason analysis, and ship the Beads family
+    queries (`id:<epic>.*`) end to end.'
+- id: flat-panes
+  title: Agent and File context queries plus Agents-tab reveal
+  depends_on:
+  - planner
+  size: medium
+  description: 'flat-panes: add hood/family context queries for the Artifacts Agent
+    pane and creating-agent context for Files, and make `agent:` jumps reveal folded
+    rows on the Agents tab, falling back to Artifacts ▸ Agent when the Agents-tab
+    filter hides them.'
+- id: bounded-panes
+  title: Stitch, Plan/provider, and Patch context queries
+  depends_on:
+  - planner
+  size: medium
+  description: 'bounded-panes: acquire-then-reveal for panes whose inventory is bounded.
+    Stitch jumps rewrite to a repo-and-day window, Plan and provider panes use a `path:`
+    context, and Patch jumps show the patch''s stack, with Stitches'' reveal row read
+    from the unfiltered collection.'
+- id: toast
+  title: The reveal toast, lens chip, and user docs
+  depends_on:
+  - planner
+  size: small
+  description: 'toast: add a pure, escaped toast formatter showing the new query,
+    what hid the target, the scope change, and the real restore/back keys, plus unified
+    failure copy, a context label on the lens chip, and rewritten reveal-ladder docs.'
+- id: entry-points
+  title: One engine for every jump, plus the end-to-end matrix
+  depends_on:
+  - flat-panes
+  - bounded-panes
+  - toast
+  size: medium
+  description: 'entry-points: route relation-panel misses and cross-pane relation
+    jumps through the engine, fix `job:` jumps hidden by a collapsed scheduler fold
+    and unconfigured provider kinds, and add a Links-panel-driven end-to-end test
+    matrix covering every artifact kind.'
 proposed_by: bbugyi200.athena.0pq
 create_time: 2026-09-23 08:23:28
 status: wip
+bead_id: sase-16t
 ---
 
-- **PROMPT:**
-  [prompts/202609/artifact_link_jumps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_jumps.md)
+- **PROMPT:** [prompts/202609/artifact_link_jumps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/artifact_link_jumps.md)
+- **BEAD:** [sase-16t](https://github.com/sase-org/sase--beads/blob/main/pages/sase-16t/README.md)
 
 # Plan: Rock-solid artifact link jumps
 
