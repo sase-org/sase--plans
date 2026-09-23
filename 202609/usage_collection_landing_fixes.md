@@ -45,7 +45,7 @@ phases:
     freshness like the CLI and Models panel.'
 proposed_by: bbugyi200.athena.sase-16z.land
 create_time: 2026-09-23 16:32:16
-status: wip
+status: done
 bead_id: sase-16z.9
 ---
 

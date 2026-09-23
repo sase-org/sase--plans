@@ -95,7 +95,7 @@ phases:
     change, TTL expiry, or a drift/unsupported-version result.'
 proposed_by: bbugyi200.athena.0q3
 create_time: 2026-09-23 11:06:08
-status: wip
+status: done
 bead_id: sase-16z
 ---
 
