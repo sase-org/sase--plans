@@ -1,61 +1,58 @@
 ---
 tier: epic
-title:
-  Make Muse agents single-turn with a synchronous shell, up-front monitor routing, and a
-  stranded-wait guard
-goal: "Muse agents stop dying mid-task because they waited on Muse's own post-turn
+title: Make Muse agents single-turn with a synchronous shell, up-front monitor routing,
+  and a stranded-wait guard
+goal: 'Muse agents stop dying mid-task because they waited on Muse''s own post-turn
   background wake. Muse runs every command synchronously inside its turn, and anything
-  that can outlast Muse's 10-minute synchronous ceiling goes to a SASE monitor, chosen
-  before the command starts. A reply that still ends by claiming to wait is caught and
-  continued, or fails loudly. The skills and memory stop telling agents to declare and
-  then wait, or to switch to a monitor mid-flight.
+  that can outlast Muse''s 10-minute synchronous ceiling goes to a SASE monitor, chosen
+  before the command starts. A reply that still ends by claiming to wait is caught
+  and continued, or fails loudly. The skills and memory stop telling agents to declare
+  and then wait, or to switch to a monitor mid-flight.
 
-  "
+  '
 phases:
-  - id: muse-shell
-    title: Muse runs synchronously behind a sunset flag, with a single-turn directive
-    depends_on: []
-    size: medium
-    description:
-      "muse-shell: add the muse_synchronous_shell sunset flag; when on, launch muse exec
-      with --enable-shell-tool (never duplicated from extra-args env); prefix every Muse
-      prompt with a mode-aware single-turn directive stating the 10-minute ceiling and
-      up-front routing rules; test both flag states; document in docs/llms.md."
-  - id: muse-wait-guard
-    title: Muse stranded-wait guard
-    depends_on:
-      - muse-shell
-    size: small
-    description:
-      "muse-wait-guard: move Claude's wait-signal regex into a shared module; after a
-      clean Muse exit whose reply ends by claiming to wait, re-invoke with reconstructed
-      context and a nudge up to a bounded budget, then raise LLMInvocationError; log
-      each firing; tests and docs."
-  - id: muse-shell-tool-calls
-    title: Tool-call capture for Muse's legacy shell tool
-    depends_on: []
-    size: small
-    description:
-      "muse-shell-tool-calls: capture a real muse exec --enable-shell-tool fixture,
-      display `shell` calls as Bash with the best command target the stream allows, and
-      record a timed-out tool result as a failure instead of a success; tests and docs."
-  - id: wait-guidance
-    title: Skill, memory, and decision text for the up-front routing rule
-    depends_on: []
-    size: medium
-    description:
-      "wait-guidance: rewrite sase_monitor and sase_final skill sources, the core-memory
-      SASE Final Declaration template (and its test), and lint_and_test.md so no agent
-      is told to declare-then-wait or to cancel an in-flight command for a monitor; fold
-      in sase-16q; add a companion decision record on adapter harness normalization;
-      regenerate memory; record follow-ups."
+- id: muse-shell
+  title: Muse runs synchronously behind a sunset flag, with a single-turn directive
+  depends_on: []
+  size: medium
+  description: 'muse-shell: add the muse_synchronous_shell sunset flag; when on, launch
+    muse exec with --enable-shell-tool (never duplicated from extra-args env); prefix
+    every Muse prompt with a mode-aware single-turn directive stating the 10-minute
+    ceiling and up-front routing rules; test both flag states; document in docs/llms.md.'
+- id: muse-wait-guard
+  title: Muse stranded-wait guard
+  depends_on:
+  - muse-shell
+  size: small
+  description: 'muse-wait-guard: move Claude''s wait-signal regex into a shared module;
+    after a clean Muse exit whose reply ends by claiming to wait, re-invoke with reconstructed
+    context and a nudge up to a bounded budget, then raise LLMInvocationError; log
+    each firing; tests and docs.'
+- id: muse-shell-tool-calls
+  title: Tool-call capture for Muse's legacy shell tool
+  depends_on: []
+  size: small
+  description: 'muse-shell-tool-calls: capture a real muse exec --enable-shell-tool
+    fixture, display `shell` calls as Bash with the best command target the stream
+    allows, and record a timed-out tool result as a failure instead of a success;
+    tests and docs.'
+- id: wait-guidance
+  title: Skill, memory, and decision text for the up-front routing rule
+  depends_on: []
+  size: medium
+  description: 'wait-guidance: rewrite sase_monitor and sase_final skill sources,
+    the core-memory SASE Final Declaration template (and its test), and lint_and_test.md
+    so no agent is told to declare-then-wait or to cancel an in-flight command for
+    a monitor; fold in sase-16q; add a companion decision record on adapter harness
+    normalization; regenerate memory; record follow-ups.'
 proposed_by: bbugyi200.athena.0qc--1
 create_time: 2026-09-23 17:47:05
 status: wip
+bead_id: sase-177
 ---
 
-- **PROMPT:**
-  [prompts/202609/muse_single_turn_normalization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/muse_single_turn_normalization.md)
+- **PROMPT:** [prompts/202609/muse_single_turn_normalization.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/muse_single_turn_normalization.md)
+- **BEAD:** [sase-177](https://github.com/sase-org/sase--beads/blob/main/pages/sase-177/README.md)
 
 # Plan: Make Muse agents single-turn
 
