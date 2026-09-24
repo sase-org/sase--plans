@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: sase-core CommandLineGrammar resolver and sase adapter
-goal: A frozen sase_core_rs.CommandLineGrammar parses the Command Line spec once and,
-  per keystroke, returns tokens, slot, diagnostics, signature, run policy and fuzzy-ranked
+goal:
+  A frozen sase_core_rs.CommandLineGrammar parses the Command Line spec once and, per
+  keystroke, returns tokens, slot, diagnostics, signature, run policy and fuzzy-ranked
   candidates; sase loads it through a typed adapter proven by a whole-spec contract
   test.
 size: medium
@@ -15,6 +16,11 @@ status: done
   [202609/command_line_panel.md](https://github.com/sase-org/sase--plans/blob/main/202609/command_line_panel.md)
 - **BEAD:**
   [sase-17x.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17x/sase-17x.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-17x.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-17x.5.md)
+- **COMMITS:**
+  - [ede63ea](https://github.com/sase-org/sase/commit/ede63ea9dcec4672873412d9f5d4d3f65f72ffcf)
+    — feat(command-line): CommandLineGrammar resolver adapter and contract test
 
 # Plan: sase-core `CommandLineGrammar` resolver + sase adapter (phase `line-resolver`, bead sase-17x.5)
 
