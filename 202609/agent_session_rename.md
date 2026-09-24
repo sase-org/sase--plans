@@ -4,116 +4,107 @@ title: Rename agent family to sase agent session
 goal: 'The concept formerly called an agent family is named a sase agent session (agent
   session) on every current surface in sase, sase-core, sase-telegram, and chezmoi:
   code, wire contracts, persisted output, CLI, prompt syntax, ACE, skills, docs, and
-  memory. Pre-rename data still loads, retired user syntax keeps working behind a sunset
-  flag, and unrelated meanings of "family" are unchanged.
+  memory. Pre-rename data still loads, retired user syntax keeps working behind a
+  sunset flag, and unrelated meanings of "family" are unchanged.
 
   '
 phases:
-  - id: free-name
-    title: Free the agent session name
-    depends_on: []
-    size: small
-    description:
-      'free-name: rename the existing identifiers and prose that already use "agent
-      session" for other things (provider transcripts, the ACE tmux session, a single
-      agent run, a workflow lifetime, fold scope), so the phrase is free for the new
-      concept.'
-  - id: core-expand
-    title: sase-core additive rename
-    depends_on: []
-    size: large
-    description:
-      "core-expand: non-breaking sase-core change. Rename the Rust internals to
-      agent-session vocabulary and add the new pyo3 binding names alongside the old
-      ones. Inputs accept both old and new spellings; serialized output stays
-      byte-identical."
-  - id: wire-cutover
-    title: Python persistence and wire cutover
-    depends_on:
-      - free-name
-      - core-expand
-    size: large
-    description:
-      "wire-cutover: bump the core pin and switch sase to the new binding names. Rename
-      the Python wire mirrors and durable JSON fields: new data is written only with
-      agent_session keys, and readers accept both key spellings. Rename the Agent model
-      fields and the rebuildable caches."
-  - id: runtime-cutover
-    title: Runtime, syntax, and CLI cutover
-    depends_on:
-      - wire-cutover
-    size: large
-    description:
-      "runtime-cutover: rename every non-ACE module and identifier. Make session= /
-      session: / --next-fork session / SASE_AGENT_SESSION_ATTACH canonical and keep the
-      old spellings working behind the legacy_agent_family_syntax sunset flag. Update
-      CLI help and JSON output, the editor bridge, and the skill templates."
-  - id: ace-cutover
-    title: ACE agent session surfaces
-    depends_on:
-      - runtime-cutover
-    size: large
-    description:
-      "ace-cutover: rename ACE modules, row kinds, the grouping mode, and visible copy
-      (SESSION SHELLS, SESSION). Update keymap and help text, default_config.yml and the
-      schema, perf baselines, and the PNG goldens, with no change to the performance
-      contract."
-  - id: docs-memory
-    title: Documentation and memory
-    depends_on:
-      - runtime-cutover
-    size: medium
-    description:
-      "docs-memory: rename docs/agent_families.md to docs/agent_sessions.md and rewrite
-      every concept mention in docs/ and the blog. Replace the Agent Family glossary
-      strand with Sase Agent Session, update the related strands and notes, then run
-      sase memory init."
-  - id: telegram
-    title: sase-telegram cutover
-    depends_on:
-      - runtime-cutover
-    size: small
-    description:
-      "telegram: move the /show session kind, formatting, help, docs, and tests to the
-      renamed sase APIs, and stop a missing import from silently disabling the lookup."
-  - id: core-contract
-    title: sase-core contract flip
-    depends_on:
-      - ace-cutover
-      - docs-memory
-      - telegram
-    size: medium
-    description:
-      "core-contract: breaking feat! sase-core change. Serialize the new key and value
-      names, drop the legacy binding names, emit sessions/ link paths and session: fleet
-      keys, and bump the changed schema versions and the fleet protocol. Keep aliases so
-      legacy durable data still reads."
-  - id: session-pages
-    title: Pin bump and agents sidecar session pages
-    depends_on:
-      - core-contract
-    size: medium
-    description:
-      "session-pages: bump the core pin and the Python schema mirrors. Publish
-      agents-sidecar pages under sessions/, keep permanent redirect stubs at the old
-      families/ paths for historical commit-footer links, and update the sidecar docs,
-      templates, and goldens."
-  - id: audit
-    title: Cross-repo audit, guardrail, and deploy
-    depends_on:
-      - session-pages
-    size: medium
-    description:
-      'audit: add a terminology regression test and sweep every repo, classifying each
-      remaining "family" hit. Regenerate the chezmoi skill copies from the landed tree
-      and update the chezmoi ACE snippet.'
+- id: free-name
+  title: Free the agent session name
+  depends_on: []
+  size: small
+  description: 'free-name: rename the existing identifiers and prose that already
+    use "agent session" for other things (provider transcripts, the ACE tmux session,
+    a single agent run, a workflow lifetime, fold scope), so the phrase is free for
+    the new concept.'
+- id: core-expand
+  title: sase-core additive rename
+  depends_on: []
+  size: large
+  description: 'core-expand: non-breaking sase-core change. Rename the Rust internals
+    to agent-session vocabulary and add the new pyo3 binding names alongside the old
+    ones. Inputs accept both old and new spellings; serialized output stays byte-identical.'
+- id: wire-cutover
+  title: Python persistence and wire cutover
+  depends_on:
+  - free-name
+  - core-expand
+  size: large
+  description: 'wire-cutover: bump the core pin and switch sase to the new binding
+    names. Rename the Python wire mirrors and durable JSON fields: new data is written
+    only with agent_session keys, and readers accept both key spellings. Rename the
+    Agent model fields and the rebuildable caches.'
+- id: runtime-cutover
+  title: Runtime, syntax, and CLI cutover
+  depends_on:
+  - wire-cutover
+  size: large
+  description: 'runtime-cutover: rename every non-ACE module and identifier. Make
+    session= / session: / --next-fork session / SASE_AGENT_SESSION_ATTACH canonical
+    and keep the old spellings working behind the legacy_agent_family_syntax sunset
+    flag. Update CLI help and JSON output, the editor bridge, and the skill templates.'
+- id: ace-cutover
+  title: ACE agent session surfaces
+  depends_on:
+  - runtime-cutover
+  size: large
+  description: 'ace-cutover: rename ACE modules, row kinds, the grouping mode, and
+    visible copy (SESSION SHELLS, SESSION). Update keymap and help text, default_config.yml
+    and the schema, perf baselines, and the PNG goldens, with no change to the performance
+    contract.'
+- id: docs-memory
+  title: Documentation and memory
+  depends_on:
+  - runtime-cutover
+  size: medium
+  description: 'docs-memory: rename docs/agent_families.md to docs/agent_sessions.md
+    and rewrite every concept mention in docs/ and the blog. Replace the Agent Family
+    glossary strand with Sase Agent Session, update the related strands and notes,
+    then run sase memory init.'
+- id: telegram
+  title: sase-telegram cutover
+  depends_on:
+  - runtime-cutover
+  size: small
+  description: 'telegram: move the /show session kind, formatting, help, docs, and
+    tests to the renamed sase APIs, and stop a missing import from silently disabling
+    the lookup.'
+- id: core-contract
+  title: sase-core contract flip
+  depends_on:
+  - ace-cutover
+  - docs-memory
+  - telegram
+  size: medium
+  description: 'core-contract: breaking feat! sase-core change. Serialize the new
+    key and value names, drop the legacy binding names, emit sessions/ link paths
+    and session: fleet keys, and bump the changed schema versions and the fleet protocol.
+    Keep aliases so legacy durable data still reads.'
+- id: session-pages
+  title: Pin bump and agents sidecar session pages
+  depends_on:
+  - core-contract
+  size: medium
+  description: 'session-pages: bump the core pin and the Python schema mirrors. Publish
+    agents-sidecar pages under sessions/, keep permanent redirect stubs at the old
+    families/ paths for historical commit-footer links, and update the sidecar docs,
+    templates, and goldens.'
+- id: audit
+  title: Cross-repo audit, guardrail, and deploy
+  depends_on:
+  - session-pages
+  size: medium
+  description: 'audit: add a terminology regression test and sweep every repo, classifying
+    each remaining "family" hit. Regenerate the chezmoi skill copies from the landed
+    tree and update the chezmoi ACE snippet.'
 proposed_by: bbugyi200.athena.0qh
 create_time: 2026-09-23 22:46:31
 status: wip
+bead_id: sase-17m
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_rename.md)
+- **PROMPT:** [prompts/202609/agent_session_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_rename.md)
+- **BEAD:** [sase-17m](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/README.md)
 
 # Plan: Rename agent family to sase agent session
 
