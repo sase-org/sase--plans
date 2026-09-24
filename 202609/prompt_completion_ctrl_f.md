@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Move prompt completion acceptance from Ctrl+E to Ctrl+F
-goal:
-  Prompt completion menus use Ctrl+F for highlighted-row acceptance while Ctrl+E
+goal: Prompt completion menus use Ctrl+F for highlighted-row acceptance while Ctrl+E
   consistently retains its readline end-of-line behavior.
 size: medium
 proposed_by: bbugyi200.athena.0r5
-create_time: 2026-09-24 14:28:11
-status: wip
+status: done
 ---
 
 # Plan: Move prompt completion acceptance from Ctrl+E to Ctrl+F
