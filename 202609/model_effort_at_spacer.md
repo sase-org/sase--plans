@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Typing @ after a %model value and space opens effort completion
-goal:
-  In the ACE prompt input, pressing @ right after `%m:<model> ` replaces the space with
-  @ and opens the effort-level completion menu.
+goal: In the ACE prompt input, pressing @ right after `%m:<model> ` replaces the space
+  with @ and opens the effort-level completion menu.
 size: small
 proposed_by: bbugyi200.athena.0rc
-create_time: 2026-09-24 16:13:20
-status: wip
+status: done
 ---
 
 # Plan: `@` after `%m:<model> ` swallows the space and opens effort completion
