@@ -1,9 +1,10 @@
 ---
 tier: tale
-title: 'E2 settlement: settle hand-off ToolRuns truthfully after crashes and deliver
-  once'
-goal: Every handed-off ToolRun settles from owner facts, stop/timeout intent, and
-  proc or monitor settlement to an authoritative outcome or typed uncertainty, proc-owned
+title:
+  "E2 settlement: settle hand-off ToolRuns truthfully after crashes and deliver once"
+goal:
+  Every handed-off ToolRun settles from owner facts, stop/timeout intent, and proc or
+  monitor settlement to an authoritative outcome or typed uncertainty, proc-owned
   hand-offs publish exactly one notification, and expired owner logs are reported
   explicitly.
 size: medium
@@ -16,6 +17,12 @@ status: done
   [202609/tool_e2_durable_handoff.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e2_durable_handoff.md)
 - **BEAD:**
   [sase-17p.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17p/sase-17p.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-17p.5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-17p.5.md)
+- **COMMITS:**
+  - [7173669](https://github.com/sase-org/sase/commit/71736697dcb97b14cceb96cf687dfa24d6454d17)
+    — feat(tool): settle hand-off ToolRuns from owner facts and deliver once
+    (sase-17p.5)
 
 # Phase sase-17p.5 (settlement): settle hand-off runs truthfully after crashes and deliver once
 
