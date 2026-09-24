@@ -1,15 +1,14 @@
 ---
 tier: tale
 title: Card-partitioned Main documents
-goal:
-  Every Agents metadata-panel builder emits Context/Reply/Output/Summary card parts that
-  tree walkers understand. Failed-agent tracebacks move to the top of the Reply or
-  Output card under a TRACEBACK heading, and the rest of the panel renders unchanged.
+goal: Every Agents metadata-panel builder emits Context/Reply/Output/Summary card
+  parts that tree walkers understand. Failed-agent tracebacks move to the top of the
+  Reply or Output card under a TRACEBACK heading, and the rest of the panel renders
+  unchanged.
 size: medium
 proposed_by: bbugyi200.athena.sase-17d.2
 bead: sase-17d.2
-create_time: 2026-09-23 19:28:38
-status: wip
+status: done
 ---
 
 - **PARENT:**
