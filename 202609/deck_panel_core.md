@@ -1,18 +1,16 @@
 ---
 tier: tale
 title: Deck panel core behind the agent_decks beta flag
-goal:
-  With the new agent_decks beta flag on, the Agents tab detail area shows a DeckArea of
-  pre-composed deck panels fed by a hidden Main source instead of the metadata panel
-  plus one Files or LLM Calls panel. Each panel renders its deck paged with tab-strip
-  titles, a deck-switcher subtitle and empty-state cards. Files and Tools views load
-  only when a panel shows them. With the flag off, the Agents tab behaves exactly as it
-  does today.
+goal: With the new agent_decks beta flag on, the Agents tab detail area shows a DeckArea
+  of pre-composed deck panels fed by a hidden Main source instead of the metadata
+  panel plus one Files or LLM Calls panel. Each panel renders its deck paged with
+  tab-strip titles, a deck-switcher subtitle and empty-state cards. Files and Tools
+  views load only when a panel shows them. With the flag off, the Agents tab behaves
+  exactly as it does today.
 size: medium
 proposed_by: bbugyi200.athena.sase-17d.3
 bead: sase-17d.3
-create_time: 2026-09-23 20:52:24
-status: wip
+status: done
 ---
 
 - **PARENT:**
