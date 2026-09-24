@@ -1,15 +1,13 @@
 ---
 tier: tale
 size: medium
-title: "sase-17p.2 standalone-handoff: sase tool run -H over a plain durable proc"
-goal:
-  Outside agents, sase tool run -H reserves a ToolRun fail-closed, hands it to a plain
-  durable proc whose hidden worker claims and runs the frozen invocation through the
-  same executor body as foreground runs, behind the tool_handoff beta flag.
+title: 'sase-17p.2 standalone-handoff: sase tool run -H over a plain durable proc'
+goal: Outside agents, sase tool run -H reserves a ToolRun fail-closed, hands it to
+  a plain durable proc whose hidden worker claims and runs the frozen invocation through
+  the same executor body as foreground runs, behind the tool_handoff beta flag.
 proposed_by: bbugyi200.athena.sase-17p.2
 bead: sase-17p.2
-create_time: 2026-09-24 11:17:34
-status: wip
+status: done
 ---
 
 - **BEAD:**
