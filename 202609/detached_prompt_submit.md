@@ -48,7 +48,7 @@ phases:
     revalidate or rebuild the project-tag catalog on the UI thread.'
 proposed_by: bbugyi200.athena.0r6
 create_time: 2026-09-24 15:03:13
-status: wip
+status: done
 bead_id: sase-185
 ---
 
