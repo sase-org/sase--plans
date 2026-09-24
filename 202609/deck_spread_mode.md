@@ -2,15 +2,13 @@
 tier: tale
 size: medium
 title: Deck spread versus paged rendering (sase-17d.8)
-goal:
-  Agents-tab deck panels render a multi-card Main or Files deck spread (all cards on one
-  page with titled separators and card anchors) when it fits
-  ace.agent_decks.spread_max_screens viewport heights and paged otherwise, deciding with
-  hysteresis and keeping the reading position stable across transitions.
+goal: Agents-tab deck panels render a multi-card Main or Files deck spread (all cards
+  on one page with titled separators and card anchors) when it fits ace.agent_decks.spread_max_screens
+  viewport heights and paged otherwise, deciding with hysteresis and keeping the reading
+  position stable across transitions.
 proposed_by: bbugyi200.athena.sase-17d.8
 bead: sase-17d.8
-create_time: 2026-09-24 08:57:23
-status: wip
+status: done
 ---
 
 - **PARENT:**
