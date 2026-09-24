@@ -35,7 +35,7 @@ phases:
     hints with the plan name, add a `name` JSON field, and finish the name-first docs.'
 proposed_by: bbugyi200.athena.0qx
 create_time: 2026-09-24 12:07:24
-status: wip
+status: done
 bead_id: sase-17z
 ---
 
