@@ -1,143 +1,132 @@
 ---
 tier: epic
-title: "`:` Command Line: run sase commands from the TUI"
-goal: "`;` opens the Command Palette and `:` opens a new bottom-anchored Command Line
-  panel. In the panel, users type `sase` commands with better completion than any shell
-  offers: selection-aware, fuzzy, documented and grammar-checked. Output streams inline.
-  Every command runs as a durable, tagged proc that keeps running after the panel is
-  hidden, shows up in Admin Center → Procs, and returns to the transcript when the panel
-  reopens.
+title: '`:` Command Line: run sase commands from the TUI'
+goal: '`;` opens the Command Palette and `:` opens a new bottom-anchored Command Line
+  panel. In the panel, users type `sase` commands with better completion than any
+  shell offers: selection-aware, fuzzy, documented and grammar-checked. Output streams
+  inline. Every command runs as a durable, tagged proc that keeps running after the
+  panel is hidden, shows up in Admin Center → Procs, and returns to the transcript
+  when the panel reopens.
 
-  "
+  '
 phases:
-  - id: color-contract
-    title: Output color contract
-    depends_on: []
-    size: medium
-    description:
-      "color-contract: add one shared color resolver (NO_COLOR, then
-      FORCE_COLOR/CLICOLOR_FORCE, then isatty). Adopt it in the bead renderers and every
-      other stdout color branch, so a piped `sase` child renders in color the way a
-      terminal does."
-  - id: spec-contract
-    title: Command Line spec contract
-    depends_on: []
-    size: medium
-    description:
-      "spec-contract: extend the completion spec with
-      required/metavar/default/value_hint and per-command run policy, writes and
-      confirms data. Add `sase completion spec -d/--descriptions` and an identity-keyed
-      on-disk spec cache that is built in a subprocess."
-  - id: kind-coverage
-    title: Value-kind coverage and ratchet
-    depends_on:
-      - spec-contract
-    size: medium
-    description:
-      "kind-coverage: add GATE, TOOL_RUN and TASK_TYPE value kinds with providers,
-      annotate the unkinded entity slots, and add a coverage ratchet test. The test
-      requires every non-hidden value slot to be kinded, to have choices, or to carry a
-      free-form value_hint."
-  - id: proc-retention
-    title: Command-line proc tag and retention bucket
-    depends_on: []
-    size: small
-    description:
-      "proc-retention: in sase-core, give finished procs tagged `command-line` their own
-      retention bucket of 50 so they never evict operational proc history. Export the
-      tag and limit through the binding and move sase's sase-core revision pin."
-  - id: line-resolver
-    title: sase-core CommandLineGrammar resolver
-    depends_on:
-      - spec-contract
-      - proc-retention
-    size: large
-    description:
-      "line-resolver: build a frozen `CommandLineGrammar` handle in sase-core that
-      parses the spec JSON once. Per keystroke it returns tokens, slot, diagnostics,
-      signature, run policy and fuzzy-ranked candidates. Add the Python adapter in sase
-      and move the revision pin."
-  - id: proc-plumbing
-    title: Command-line proc plumbing
-    depends_on:
-      - proc-retention
-    size: medium
-    description:
-      "proc-plumbing: add `submit_command_line_proc` (a tagged ordinary proc with the
-      output env contract and no operation), an observer exit watch, ref-counted tails,
-      an offset-based `ProcLogCursor`, `ObservedProc.tags` with a Procs `tag:` query
-      field, and an Admin Center proc focus target."
-  - id: panel-shell
-    title: Command Line panel shell (beta flag)
-    depends_on:
-      - proc-plumbing
-    size: medium
-    description:
-      "panel-shell: create the `ace_command_line` beta flag. Add `open_command_line`,
-      the bottom-anchored `CommandLineScreen` and the app-held `CommandLineSession`,
-      plus the working-context chip, a locked history store with ghost text, submitting
-      to procs, and streaming transcript blocks. Add PNG goldens for the base states."
-  - id: transcript-blocks
-    title: Transcript block interactions and lifecycle
-    depends_on:
-      - panel-shell
-    size: medium
-    description:
-      "transcript-blocks: add NORMAL-mode block navigation with expand, pager, kill,
-      rerun, edit, copy, open-in-Procs and remove. Add completion toasts while hidden,
-      unseen dots, restore after a TUI restart, pruned-record handling, and `⏎` from a
-      Procs command-line row back to its block."
-  - id: completion-popup
-    title: Grammar-aware completion popup and signature line
-    depends_on:
-      - panel-shell
-      - line-resolver
-    size: medium
-    description:
-      "completion-popup: load the grammar at idle and wire the resolver into the input.
-      This adds token highlighting, advisory diagnostics, the floating fuzzy popup fed
-      by in-memory TUI entities and debounced providers, the zsh menu-select key rules,
-      and the live signature line with its chips."
-  - id: completion-extras
-    title: Empty state, doc peek, and history search
-    depends_on:
-      - completion-popup
-    size: medium
-    description:
-      'completion-extras: add the empty-state RECENT and derived "FOR <selection>" rows,
-      a wide-terminal doc peek beside the popup, ctrl+r fuzzy history search in the
-      popup, marked rows that fill variadic slots, and provider-unavailable footers.'
-  - id: run-policies
-    title: Run policies, confirmation-aware blocks, and built-ins
-    depends_on:
-      - transcript-blocks
-      - completion-popup
-    size: medium
-    description:
-      "run-policies: run foreground-policy commands in the real terminal through
-      `app.suspend()` and refuse deny-policy commands with an alternative. Add
-      confirmation-aware declined blocks with an explicit `R` rerun-with-`-y`, plus the
-      `cd`, `clear`, `help` and `history` built-ins."
-  - id: flip-and-land
-    title: Flip `:` and `;`, remove the flag, and land
-    depends_on:
-      - color-contract
-      - kind-coverage
-      - completion-extras
-      - run-policies
-    size: medium
-    description:
-      "flip-and-land: bind `:` to the Command Line and `;` to the palette only. Add the
-      palette-side hop key, the fallback row and the one-time tip. Update every help,
-      onboarding, docs and test touchpoint, delete the flag's Off branch, close the flag
-      bead, and regenerate the PNG goldens."
+- id: color-contract
+  title: Output color contract
+  depends_on: []
+  size: medium
+  description: 'color-contract: add one shared color resolver (NO_COLOR, then FORCE_COLOR/CLICOLOR_FORCE,
+    then isatty). Adopt it in the bead renderers and every other stdout color branch,
+    so a piped `sase` child renders in color the way a terminal does.'
+- id: spec-contract
+  title: Command Line spec contract
+  depends_on: []
+  size: medium
+  description: 'spec-contract: extend the completion spec with required/metavar/default/value_hint
+    and per-command run policy, writes and confirms data. Add `sase completion spec
+    -d/--descriptions` and an identity-keyed on-disk spec cache that is built in a
+    subprocess.'
+- id: kind-coverage
+  title: Value-kind coverage and ratchet
+  depends_on:
+  - spec-contract
+  size: medium
+  description: 'kind-coverage: add GATE, TOOL_RUN and TASK_TYPE value kinds with providers,
+    annotate the unkinded entity slots, and add a coverage ratchet test. The test
+    requires every non-hidden value slot to be kinded, to have choices, or to carry
+    a free-form value_hint.'
+- id: proc-retention
+  title: Command-line proc tag and retention bucket
+  depends_on: []
+  size: small
+  description: 'proc-retention: in sase-core, give finished procs tagged `command-line`
+    their own retention bucket of 50 so they never evict operational proc history.
+    Export the tag and limit through the binding and move sase''s sase-core revision
+    pin.'
+- id: line-resolver
+  title: sase-core CommandLineGrammar resolver
+  depends_on:
+  - spec-contract
+  - proc-retention
+  size: large
+  description: 'line-resolver: build a frozen `CommandLineGrammar` handle in sase-core
+    that parses the spec JSON once. Per keystroke it returns tokens, slot, diagnostics,
+    signature, run policy and fuzzy-ranked candidates. Add the Python adapter in sase
+    and move the revision pin.'
+- id: proc-plumbing
+  title: Command-line proc plumbing
+  depends_on:
+  - proc-retention
+  size: medium
+  description: 'proc-plumbing: add `submit_command_line_proc` (a tagged ordinary proc
+    with the output env contract and no operation), an observer exit watch, ref-counted
+    tails, an offset-based `ProcLogCursor`, `ObservedProc.tags` with a Procs `tag:`
+    query field, and an Admin Center proc focus target.'
+- id: panel-shell
+  title: Command Line panel shell (beta flag)
+  depends_on:
+  - proc-plumbing
+  size: medium
+  description: 'panel-shell: create the `ace_command_line` beta flag. Add `open_command_line`,
+    the bottom-anchored `CommandLineScreen` and the app-held `CommandLineSession`,
+    plus the working-context chip, a locked history store with ghost text, submitting
+    to procs, and streaming transcript blocks. Add PNG goldens for the base states.'
+- id: transcript-blocks
+  title: Transcript block interactions and lifecycle
+  depends_on:
+  - panel-shell
+  size: medium
+  description: 'transcript-blocks: add NORMAL-mode block navigation with expand, pager,
+    kill, rerun, edit, copy, open-in-Procs and remove. Add completion toasts while
+    hidden, unseen dots, restore after a TUI restart, pruned-record handling, and
+    `⏎` from a Procs command-line row back to its block.'
+- id: completion-popup
+  title: Grammar-aware completion popup and signature line
+  depends_on:
+  - panel-shell
+  - line-resolver
+  size: medium
+  description: 'completion-popup: load the grammar at idle and wire the resolver into
+    the input. This adds token highlighting, advisory diagnostics, the floating fuzzy
+    popup fed by in-memory TUI entities and debounced providers, the zsh menu-select
+    key rules, and the live signature line with its chips.'
+- id: completion-extras
+  title: Empty state, doc peek, and history search
+  depends_on:
+  - completion-popup
+  size: medium
+  description: 'completion-extras: add the empty-state RECENT and derived "FOR <selection>"
+    rows, a wide-terminal doc peek beside the popup, ctrl+r fuzzy history search in
+    the popup, marked rows that fill variadic slots, and provider-unavailable footers.'
+- id: run-policies
+  title: Run policies, confirmation-aware blocks, and built-ins
+  depends_on:
+  - transcript-blocks
+  - completion-popup
+  size: medium
+  description: 'run-policies: run foreground-policy commands in the real terminal
+    through `app.suspend()` and refuse deny-policy commands with an alternative. Add
+    confirmation-aware declined blocks with an explicit `R` rerun-with-`-y`, plus
+    the `cd`, `clear`, `help` and `history` built-ins.'
+- id: flip-and-land
+  title: Flip `:` and `;`, remove the flag, and land
+  depends_on:
+  - color-contract
+  - kind-coverage
+  - completion-extras
+  - run-policies
+  size: medium
+  description: 'flip-and-land: bind `:` to the Command Line and `;` to the palette
+    only. Add the palette-side hop key, the fallback row and the one-time tip. Update
+    every help, onboarding, docs and test touchpoint, delete the flag''s Off branch,
+    close the flag bead, and regenerate the PNG goldens.'
 proposed_by: bbugyi200.athena.0qs
 create_time: 2026-09-24 11:20:33
 status: wip
+bead_id: sase-17v
 ---
 
-- **PROMPT:**
-  [prompts/202609/command_line_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_panel.md)
+- **PROMPT:** [prompts/202609/command_line_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_panel.md)
+- **BEAD:** [sase-17v](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17v/README.md)
 
 # Plan: `:` Command Line — run `sase` commands from inside the TUI
 
