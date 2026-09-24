@@ -28,7 +28,7 @@ phases:
     plus availability gating, palette/help/docs discoverability, tests, and goldens.'
 proposed_by: bbugyi200.athena.0q5--1
 create_time: 2026-09-23 18:26:48
-status: wip
+status: done
 bead_id: sase-17a
 ---
 
