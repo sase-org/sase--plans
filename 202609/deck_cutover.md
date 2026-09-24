@@ -1,53 +1,50 @@
 ---
 tier: epic
 title: Cut over the Agents tab to decks and delete the legacy detail UI
-goal:
-  Deck panels become the only Agents-tab detail UI. The agent_decks beta flag and every
-  Off branch are removed. The p view picker, the Z zoom modal, the detail panel and
-  layout enums, the legacy panel ids and CSS, the view chip, the metadata section-stop
-  actions and the retired redirect handlers are deleted. Keymap ids are retired or
-  renamed with compatibility aliases, tests use the deck API, and every affected PNG
-  golden is regenerated and inspected.
+goal: Deck panels become the only Agents-tab detail UI. The agent_decks beta flag
+  and every Off branch are removed. The p view picker, the Z zoom modal, the detail
+  panel and layout enums, the legacy panel ids and CSS, the view chip, the metadata
+  section-stop actions and the retired redirect handlers are deleted. Keymap ids are
+  retired or renamed with compatibility aliases, tests use the deck API, and every
+  affected PNG golden is regenerated and inspected.
 phases:
-  - id: deck-flag-removal
-    title: Remove the agent_decks flag and its Off branches
-    depends_on: []
-    size: large
-    description:
-      "deck-flag-removal: delete the agent_decks beta flag, make every deck On branch
-      unconditional, delete each Off-branch body and the legacy compose branch, close
-      flag bead sase-17k, remove the flag override wrappers in tests, and migrate or
-      delete non-visual tests that exercised the flag-off UI. Legacy modules left
-      unreachable stay in place for legacy-ui-deletion."
-  - id: legacy-ui-deletion
-    title: Delete the legacy detail UI and retire its keymap ids
-    depends_on:
-      - deck-flag-removal
-    size: large
-    description:
-      "legacy-ui-deletion: delete the p picker, the view modal, the zoom modal and its
-      seed and CSS, the panel/layout enums and cycle, the hidden compat host ids and
-      legacy CSS, the view chip, the section-stop actions and the redirect handlers.
-      Retire choose_agent_view and the section-stop ids, rename next/prev_agent_file to
-      next/prev_chop_run with aliases, and delete or migrate the tests of the deleted
-      code, including visual test modules."
-  - id: cutover-goldens
-    title: Regenerate and inspect every affected PNG golden
-    depends_on:
-      - legacy-ui-deletion
-    size: medium
-    description:
-      "cutover-goldens: run the full just fix-tui-screenshots through /sase_monitor,
-      inspect every creation, removal and update group, fix any rendering regression it
-      reveals, capture live deck screenshots, and run the final j/k perf bench."
+- id: deck-flag-removal
+  title: Remove the agent_decks flag and its Off branches
+  depends_on: []
+  size: large
+  description: 'deck-flag-removal: delete the agent_decks beta flag, make every deck
+    On branch unconditional, delete each Off-branch body and the legacy compose branch,
+    close flag bead sase-17k, remove the flag override wrappers in tests, and migrate
+    or delete non-visual tests that exercised the flag-off UI. Legacy modules left
+    unreachable stay in place for legacy-ui-deletion.'
+- id: legacy-ui-deletion
+  title: Delete the legacy detail UI and retire its keymap ids
+  depends_on:
+  - deck-flag-removal
+  size: large
+  description: 'legacy-ui-deletion: delete the p picker, the view modal, the zoom
+    modal and its seed and CSS, the panel/layout enums and cycle, the hidden compat
+    host ids and legacy CSS, the view chip, the section-stop actions and the redirect
+    handlers. Retire choose_agent_view and the section-stop ids, rename next/prev_agent_file
+    to next/prev_chop_run with aliases, and delete or migrate the tests of the deleted
+    code, including visual test modules.'
+- id: cutover-goldens
+  title: Regenerate and inspect every affected PNG golden
+  depends_on:
+  - legacy-ui-deletion
+  size: medium
+  description: 'cutover-goldens: run the full just fix-tui-screenshots through /sase_monitor,
+    inspect every creation, removal and update group, fix any rendering regression
+    it reveals, capture live deck screenshots, and run the final j/k perf bench.'
 proposed_by: bbugyi200.athena.sase-17d.10
 parent_bead: sase-17d.10
 create_time: 2026-09-24 10:13:41
 status: wip
+bead_id: sase-17d.10.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/deck_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_cutover.md)
+- **PROMPT:** [prompts/202609/deck_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_cutover.md)
+- **BEAD:** [sase-17d.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/sase-17d.10.1.md)
 
 # Plan: Cut over the Agents tab to decks (phase `deck-cutover` of epic sase-17d)
 
