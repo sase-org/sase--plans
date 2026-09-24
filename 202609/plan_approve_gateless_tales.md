@@ -1,41 +1,41 @@
 ---
 tier: epic
 title: Approve any tale plan file from the CLI
-goal: "`sase plan approve <plan>` commits and approves a tale plan the way sase's TUI
-  does — through its live approval gate when one exists, and otherwise by committing the
-  plan itself and launching a `#coder` agent into the planner's agent family, or as a
-  standalone agent when no family can be found. `-k/--kind` defaults to `tale`, and
-  every success, dry run, refusal, and failure prints a clear, colored summary.
+goal: '`sase plan approve <plan>` commits and approves a tale plan the way sase''s
+  TUI does — through its live approval gate when one exists, and otherwise by committing
+  the plan itself and launching a `#coder` agent into the planner''s agent family,
+  or as a standalone agent when no family can be found. `-k/--kind` defaults to `tale`,
+  and every success, dry run, refusal, and failure prints a clear, colored summary.
 
-  "
+  '
 phases:
-  - id: engine
-    title: Direct approval engine
-    depends_on: []
-    size: medium
-    description: "engine: add the backend for approving a plan with no live gate. This
-      covers archive and adoption helpers, direct-approval receipts wired into plan
-      history and `sase plan list`, the gate-history classifier, the resolver/decision
-      model with `#coder` prompt composition, the executor, and coder follow-up fields
-      on gate approval results.
+- id: engine
+  title: Direct approval engine
+  depends_on: []
+  size: medium
+  description: 'engine: add the backend for approving a plan with no live gate. This
+    covers archive and adoption helpers, direct-approval receipts wired into plan
+    history and `sase plan list`, the gate-history classifier, the resolver/decision
+    model with `#coder` prompt composition, the executor, and coder follow-up fields
+    on gate approval results.
 
-      "
-  - id: cli
-    title: CLI routing, output, and docs
-    depends_on:
-      - engine
-    size: medium
-    description:
-      "cli: default `--kind` to tale with an epic guard, and add `-n/--dry-run` and
-      `-P/--project`. Route live gates and gateless plans through one handler, render
-      one approval card for every outcome, and update help, docs, and CLI tests."
+    '
+- id: cli
+  title: CLI routing, output, and docs
+  depends_on:
+  - engine
+  size: medium
+  description: 'cli: default `--kind` to tale with an epic guard, and add `-n/--dry-run`
+    and `-P/--project`. Route live gates and gateless plans through one handler, render
+    one approval card for every outcome, and update help, docs, and CLI tests.'
 proposed_by: bbugyi200.athena.0rr
 create_time: 2026-09-24 19:04:53
 status: wip
+bead_id: sase-18i
 ---
 
-- **PROMPT:**
-  [prompts/202609/plan_approve_gateless_tales.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/plan_approve_gateless_tales.md)
+- **PROMPT:** [prompts/202609/plan_approve_gateless_tales.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/plan_approve_gateless_tales.md)
+- **BEAD:** [sase-18i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18i/README.md)
 
 # Plan: Approve any tale plan file from the CLI
 
