@@ -1,50 +1,50 @@
 ---
 tier: epic
 title: AGENT XPROMPT preview in the sticky agent header
-goal: "On the Agents tab, the selected agent's AGENT XPROMPT moves out of the data
-  deck's Context card and into the sticky header panel above the deck. While collapsed,
-  the header shows a dense, syntax-highlighted preview of the prompt. The preview fills
-  the full panel width and as many rows as a height budget derived from the detail
-  column allows. `d` expands the header to the complete xprompt alongside the full
-  identity fields. Header and body always come from the same document, j/k never
-  flickers on agents you have already visited, and the collapsed header no longer wastes
-  a blank row.
+goal: 'On the Agents tab, the selected agent''s AGENT XPROMPT moves out of the data
+  deck''s Context card and into the sticky header panel above the deck. While collapsed,
+  the header shows a dense, syntax-highlighted preview of the prompt. The preview
+  fills the full panel width and as many rows as a height budget derived from the
+  detail column allows. `d` expands the header to the complete xprompt alongside the
+  full identity fields. Header and body always come from the same document, j/k never
+  flickers on agents you have already visited, and the collapsed header no longer
+  wastes a blank row.
 
-  "
+  '
 phases:
-  - id: preview
-    title: Pure xprompt preview fitting and header settings
-    depends_on: []
-    size: medium
-    description:
-      "preview: add a pure module that reflows the highlighted xprompt, fits it to a
-      width and row budget behind a quote bar, and reports hidden lines; add the
-      row-budget helper and the inert ace.agent_header.collapsed_max_share setting
-      (schema, default config, parser, app wiring) with unit tests."
-  - id: document
-    title: XPROMPT section travels with the detached identity
-    depends_on: []
-    size: medium
-    description:
-      "document: extend IdentityHeader with the xprompt, attach it instead of rendering
-      the body section in the agent, family, and both hint paths when xprompt detachment
-      is on (off by default), give the cheap j/k path a bounded memo plus a pending
-      flag, and update the inline renderable and hint-cache key, with tests."
-  - id: panel
-    title: Header panel preview, expansion, layout, docs, and visual verification
-    depends_on:
-      - preview
-      - document
-    size: medium
-    description:
-      "panel: turn on xprompt detachment, render the collapsed preview and expanded
-      XPROMPT section in AgentHeaderPanel with column-derived budgets, an overflow
-      subtitle, a pending-height hold, and pin reapply; remove the phantom header/footer
-      row; update docs and goldens; and verify with live screenshots."
+- id: preview
+  title: Pure xprompt preview fitting and header settings
+  depends_on: []
+  size: medium
+  description: 'preview: add a pure module that reflows the highlighted xprompt, fits
+    it to a width and row budget behind a quote bar, and reports hidden lines; add
+    the row-budget helper and the inert ace.agent_header.collapsed_max_share setting
+    (schema, default config, parser, app wiring) with unit tests.'
+- id: document
+  title: XPROMPT section travels with the detached identity
+  depends_on: []
+  size: medium
+  description: 'document: extend IdentityHeader with the xprompt, attach it instead
+    of rendering the body section in the agent, family, and both hint paths when xprompt
+    detachment is on (off by default), give the cheap j/k path a bounded memo plus
+    a pending flag, and update the inline renderable and hint-cache key, with tests.'
+- id: panel
+  title: Header panel preview, expansion, layout, docs, and visual verification
+  depends_on:
+  - preview
+  - document
+  size: medium
+  description: 'panel: turn on xprompt detachment, render the collapsed preview and
+    expanded XPROMPT section in AgentHeaderPanel with column-derived budgets, an overflow
+    subtitle, a pending-height hold, and pin reapply; remove the phantom header/footer
+    row; update docs and goldens; and verify with live screenshots.'
 proposed_by: bbugyi200.athena.0rk
 create_time: 2026-09-24 17:41:26
 status: wip
+bead_id: sase-18g
 ---
+
+- **BEAD:** [sase-18g](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18g/README.md)
 
 # Plan: AGENT XPROMPT preview in the sticky agent header
 
