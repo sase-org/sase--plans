@@ -3,114 +3,105 @@ tier: epic
 title: Runtime, syntax, and CLI cutover to agent session (runtime-cutover)
 goal: 'Outside src/sase/ace, sase names the former agent-family concept "agent session"
   in every module, identifier, comment, message, and test. %id(..., session=), agent
-  queries session:/kind:session, --next-fork session, gate spec "fork": "session", and
-  SASE_AGENT_SESSION_ATTACH are the canonical user syntax. The retired spellings keep
-  working only behind the legacy_agent_family_syntax sunset flag. CLI help, JSON output,
-  the editor bridge, and the skill sources use the new vocabulary, and `sase tool run
-  check` passes.
+  queries session:/kind:session, --next-fork session, gate spec "fork": "session",
+  and SASE_AGENT_SESSION_ATTACH are the canonical user syntax. The retired spellings
+  keep working only behind the legacy_agent_family_syntax sunset flag. CLI help, JSON
+  output, the editor bridge, and the skill sources use the new vocabulary, and `sase
+  tool run check` passes.
 
   '
 phases:
-  - id: attach-modules
-    title: Agent-session attach and promotion modules
-    depends_on: []
-    size: medium
-    description:
-      "attach-modules: rename
-      agent/_family_attach_{candidates,directives,launch,resolution,types}.py,
-      _family_promotion.py, and family_attach.py to their _agent_session_* /
-      agent_session_attach names. Rename their types, functions, and locals, the attach
-      env-payload JSON keys (keeping named legacy readers), and the xprompt directive
-      fields family_attach_parent/suffix and name_family_args. Update every importer,
-      including ACE imports only, and rename the matching tests."
-  - id: names-preview
-    title: Name lookup, plan_chain, and plan preview
-    depends_on:
-      - attach-modules
-    size: medium
-    description:
-      "names-preview: rename the family-concept identifiers in agent/names/
-      (find_agent_family, agent_family_base, reserved-name and forced-reuse helpers) and
-      plan_chain.py, and delete the deprecated AGENT_FAMILY_* aliases. Rename
-      agent_family_plan_preview.py to agent_session_plan_preview.py along with its
-      types. Update every importer, including ACE imports only, and the tests."
-  - id: agent-runtime
-    title: Remaining agent package runtime identifiers
-    depends_on:
-      - names-preview
-    size: medium
-    description:
-      "agent-runtime: rename the family-concept identifiers, comments, and messages left
-      in src/sase/agent/ after the attach and names phases. That covers launch_executor,
-      launch_validation, detached_child, multi_prompt_launch_execution,
-      launch_request_*, launch_hold_preview, wait_watch internals, and relaunch_prompt
-      internals. User-facing syntax and wait -j output values are left to later phases."
-  - id: lanes
-    title: Axe, monitor, gate, shell, and bead lanes
-    depends_on:
-      - agent-runtime
-    size: medium
-    description:
-      "lanes: rename family-concept identifiers, constants (GATE_FAMILY_ROLE,
-      MONITOR_FAMILY_ROLE, spawn_family_successor), comments, and messages in axe,
-      monitor, monitor_state.py, gate_shell, plan_shell, question_shell,
-      notification_gates, sudo, runner_slots (both trees), dispatch, shells, and bead,
-      plus their tests."
-  - id: core-history
-    title: Core mirrors, chat fork, scripts, and remaining non-ACE packages
-    depends_on:
-      - lanes
-    size: medium
-    description:
-      "core-history: rename history/chat_fork/family.py and
-      scripts/_agent_chat_from_name_family.py and the family-concept identifiers in
-      src/sase/core (keeping core-emitted legacy values as named mirrors), history,
-      scripts, stats, ops, sdd (except sidecar paths), llm_provider, workspace_provider,
-      config/_settings_runner.py, sase_agent.py (except the families/ URL), main
-      internals, xprompt internals, and the remaining top-level modules."
-  - id: syntax-flag
-    title: Canonical session syntax and the legacy_agent_family_syntax flag
-    depends_on:
-      - core-history
-    size: medium
-    description:
-      'syntax-flag: create the legacy_agent_family_syntax sunset flag with sase flag
-      new. Make %id(<suffix>, session=<parent>), --next-fork session, gate spec "fork":
-      "session", and SASE_AGENT_SESSION_ATTACH canonical. Route the retired spellings
-      through one module that accepts them when the flag is on and rejects them with a
-      replacement-naming error when it is off. Test both flag states.'
-  - id: query-cli-json
-    title: Agent query dialect, CLI help, JSON output, and editor bridge
-    depends_on:
-      - syntax-flag
-    size: medium
-    description:
-      "query-cli-json: make agent query session:/kind:session canonical, with flag-gated
-      family:/kind:family aliases. Update the CLI help text and flip the JSON output of
-      sase agent list/search/index/wait -j and the sase editor bridge to agent_session
-      keys and session kinds. Refresh the cli_spec snapshot, confirm sase-nvim does not
-      branch on the old editor kinds, and declare a feat! breaking change."
-  - id: skills-sweep
-    title: Skill sources, leftover tests, and classification sweep
-    depends_on:
-      - query-cli-json
-    size: medium
-    description:
-      "skills-sweep: update the sase_run, sase_gate, sase_pipe, sase_questions,
-      sase_monitor, and sase_agents_status skill sources and with_feedback.yml. Rename
-      any family-named test files still in scope and update the shard-timing and flake
-      baselines. Classify every remaining non-ACE famil hit, record hand-offs on
-      sase-17m.4, and run sase tool run check."
+- id: attach-modules
+  title: Agent-session attach and promotion modules
+  depends_on: []
+  size: medium
+  description: 'attach-modules: rename agent/_family_attach_{candidates,directives,launch,resolution,types}.py,
+    _family_promotion.py, and family_attach.py to their _agent_session_* / agent_session_attach
+    names. Rename their types, functions, and locals, the attach env-payload JSON
+    keys (keeping named legacy readers), and the xprompt directive fields family_attach_parent/suffix
+    and name_family_args. Update every importer, including ACE imports only, and rename
+    the matching tests.'
+- id: names-preview
+  title: Name lookup, plan_chain, and plan preview
+  depends_on:
+  - attach-modules
+  size: medium
+  description: 'names-preview: rename the family-concept identifiers in agent/names/
+    (find_agent_family, agent_family_base, reserved-name and forced-reuse helpers)
+    and plan_chain.py, and delete the deprecated AGENT_FAMILY_* aliases. Rename agent_family_plan_preview.py
+    to agent_session_plan_preview.py along with its types. Update every importer,
+    including ACE imports only, and the tests.'
+- id: agent-runtime
+  title: Remaining agent package runtime identifiers
+  depends_on:
+  - names-preview
+  size: medium
+  description: 'agent-runtime: rename the family-concept identifiers, comments, and
+    messages left in src/sase/agent/ after the attach and names phases. That covers
+    launch_executor, launch_validation, detached_child, multi_prompt_launch_execution,
+    launch_request_*, launch_hold_preview, wait_watch internals, and relaunch_prompt
+    internals. User-facing syntax and wait -j output values are left to later phases.'
+- id: lanes
+  title: Axe, monitor, gate, shell, and bead lanes
+  depends_on:
+  - agent-runtime
+  size: medium
+  description: 'lanes: rename family-concept identifiers, constants (GATE_FAMILY_ROLE,
+    MONITOR_FAMILY_ROLE, spawn_family_successor), comments, and messages in axe, monitor,
+    monitor_state.py, gate_shell, plan_shell, question_shell, notification_gates,
+    sudo, runner_slots (both trees), dispatch, shells, and bead, plus their tests.'
+- id: core-history
+  title: Core mirrors, chat fork, scripts, and remaining non-ACE packages
+  depends_on:
+  - lanes
+  size: medium
+  description: 'core-history: rename history/chat_fork/family.py and scripts/_agent_chat_from_name_family.py
+    and the family-concept identifiers in src/sase/core (keeping core-emitted legacy
+    values as named mirrors), history, scripts, stats, ops, sdd (except sidecar paths),
+    llm_provider, workspace_provider, config/_settings_runner.py, sase_agent.py (except
+    the families/ URL), main internals, xprompt internals, and the remaining top-level
+    modules.'
+- id: syntax-flag
+  title: Canonical session syntax and the legacy_agent_family_syntax flag
+  depends_on:
+  - core-history
+  size: medium
+  description: 'syntax-flag: create the legacy_agent_family_syntax sunset flag with
+    sase flag new. Make %id(<suffix>, session=<parent>), --next-fork session, gate
+    spec "fork": "session", and SASE_AGENT_SESSION_ATTACH canonical. Route the retired
+    spellings through one module that accepts them when the flag is on and rejects
+    them with a replacement-naming error when it is off. Test both flag states.'
+- id: query-cli-json
+  title: Agent query dialect, CLI help, JSON output, and editor bridge
+  depends_on:
+  - syntax-flag
+  size: medium
+  description: 'query-cli-json: make agent query session:/kind:session canonical,
+    with flag-gated family:/kind:family aliases. Update the CLI help text and flip
+    the JSON output of sase agent list/search/index/wait -j and the sase editor bridge
+    to agent_session keys and session kinds. Refresh the cli_spec snapshot, confirm
+    sase-nvim does not branch on the old editor kinds, and declare a feat! breaking
+    change.'
+- id: skills-sweep
+  title: Skill sources, leftover tests, and classification sweep
+  depends_on:
+  - query-cli-json
+  size: medium
+  description: 'skills-sweep: update the sase_run, sase_gate, sase_pipe, sase_questions,
+    sase_monitor, and sase_agents_status skill sources and with_feedback.yml. Rename
+    any family-named test files still in scope and update the shard-timing and flake
+    baselines. Classify every remaining non-ACE famil hit, record hand-offs on sase-17m.4,
+    and run sase tool run check.'
 proposed_by: bbugyi200.athena.sase-17m.4
 parent_bead: sase-17m.4
 create_time: 2026-09-24 13:32:24
 status: wip
+bead_id: sase-17m.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_runtime_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_runtime_cutover.md)
-- **PARENT:**
-  [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **PROMPT:** [prompts/202609/agent_session_runtime_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_runtime_cutover.md)
+- **PARENT:** [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **BEAD:** [sase-17m.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.4.1.md)
 
 # Plan: Runtime, syntax, and CLI cutover to agent session (runtime-cutover)
 
