@@ -1,34 +1,33 @@
 ---
 tier: epic
 title: Project artifact links from agents to the beads they wait on
-goal:
-  An agent launched with `%wait(bead=<id>)` gets a durable, visible artifact link to
-  that bead, just as `%id(..., bead=<id>)` already yields `agent:<name> implements
+goal: An agent launched with `%wait(bead=<id>)` gets a durable, visible artifact link
+  to that bead, just as `%id(..., bead=<id>)` already yields `agent:<name> implements
   bead:<id>`.
 phases:
-  - id: core-relation
-    title: Awaits relation in the sase-core registry
-    depends_on: []
-    description:
-      "core-relation: in the linked sase-core repo, add the projection-only `awaits` /
-      `awaited-by` builtin relation to the artifact-link registry, with Rust tests."
-    size: small
-  - id: wait-projection
-    title: Publish bead waits and project awaits links
-    description:
-      "wait-projection: publish `wait_for_beads` as portable agent metadata, add an
-      `agent-wait-bead` projection rule emitting `agent:<name> awaits bead:<id>`, bump
-      the sase-core pin, and update docs, TUI sigils, snapshots, and tests."
-    size: medium
-    depends_on:
-      - core-relation
+- id: core-relation
+  title: Awaits relation in the sase-core registry
+  depends_on: []
+  description: 'core-relation: in the linked sase-core repo, add the projection-only
+    `awaits` / `awaited-by` builtin relation to the artifact-link registry, with Rust
+    tests.'
+  size: small
+- id: wait-projection
+  title: Publish bead waits and project awaits links
+  description: 'wait-projection: publish `wait_for_beads` as portable agent metadata,
+    add an `agent-wait-bead` projection rule emitting `agent:<name> awaits bead:<id>`,
+    bump the sase-core pin, and update docs, TUI sigils, snapshots, and tests.'
+  size: medium
+  depends_on:
+  - core-relation
 proposed_by: bbugyi200.athena.0qk
 create_time: 2026-09-24 08:23:06
 status: wip
+bead_id: sase-17o
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_wait_bead_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_wait_bead_links.md)
+- **PROMPT:** [prompts/202609/agent_wait_bead_links.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_wait_bead_links.md)
+- **BEAD:** [sase-17o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17o/README.md)
 
 # Project artifact links from agents to the beads they wait on
 
