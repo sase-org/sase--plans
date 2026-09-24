@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Delete the legacy Agents detail UI and retire its keymap ids
-goal: The Agents tab has one deck-only detail model, with legacy UI code removed and
-  stale user keymaps handled compatibly.
+goal:
+  The Agents tab has one deck-only detail model, with legacy UI code removed and stale
+  user keymaps handled compatibly.
 size: medium
 proposed_by: bbugyi200.athena.sase-17d.10.1.2
 bead: sase-17d.10.1.2
@@ -11,6 +12,11 @@ status: done
 
 - **BEAD:**
   [sase-17d.10.1.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/sase-17d.10.1.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-17d.10.1.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-17d.10.1.2.md)
+- **COMMITS:**
+  - [742c1df](https://github.com/sase-org/sase/commit/742c1df38b04d1b190a5102168f0cf2ab37e6840)
+    — feat(ace): remove legacy agents UI
 
 # Delete the legacy Agents detail UI and retire its keymap ids
 
