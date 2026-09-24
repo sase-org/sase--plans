@@ -1,115 +1,109 @@
 ---
 tier: epic
 title: Return just check to green and remove its recurring failure causes
-goal: "A clean checkout of latest master passes `sase tool run check` and the full
+goal: 'A clean checkout of latest master passes `sase tool run check` and the full
   non-visual `just test` suite. The recurring causes found in the ToolRun ledger are
   removed: premature flag-bead closes, split-file agents that break symvision, stale
-  `__pycache__`-only directories that fail pyscripts, and the uncached per-launch Rust
-  LSP rebuild that pushes checks past agent command timeouts.
+  `__pycache__`-only directories that fail pyscripts, and the uncached per-launch
+  Rust LSP rebuild that pushes checks past agent command timeouts.
 
-  "
+  '
 phases:
-  - id: lint-green
-    title: Restore every lint gate except toobig on master
-    depends_on: []
-    size: medium
-    description:
-      "lint-green: re-derive master's lint failures stage by stage, including
-      symvision's masked categories. Fix the mypy errors in the agent-detail mixins,
-      launch-prompt inputs, and command-line input/screen. Replace the fixed sleep in
-      the command-line completion test. Resolve the ~41 unused public symbols using the
-      symvision decision hierarchy."
-  - id: toobig-splits
-    title: Split the two oversized ACE modules
-    depends_on:
-      - lint-green
-    size: medium
-    description:
-      "toobig-splits: split command_line/screen.py and widgets/decks/panel.py under the
-      toobig limit with purely mechanical moves. Import no `_private` names across
-      modules, keep the public import paths stable, and keep symvision and mypy green."
-  - id: tests-core
-    title: Repair non-UI tests that fail on clean master
-    depends_on:
-      - lint-green
-    size: medium
-    description:
-      "tests-core: fix the deterministic non-UI failures. These are the wait-check
-      summary and scan-once tests (sase-186), the system-clock guard (sase-188 plus
-      command-line block_render), the config-schema keymap, fakey help color, the
-      agent-session rename fallout in kill-and-edit and launch approval, and the
-      marker-mutation audit. Classify the load-sensitive tests by rerunning them."
-  - id: tests-ace-ui
-    title: Repair ACE TUI tests that fail on clean master
-    depends_on:
-      - lint-green
-      - toobig-splits
-    size: medium
-    description:
-      "tests-ace-ui: fix the ACE/TUI failures from the legacy-agents-UI removal and the
-      deck cutover. This includes the prompt-panel monitor tests (sase-184), the
-      completion-accept key move to ctrl-f, the command-line visual fixture host path,
-      the TUI import budget, and the artifacts ref-prefix contract. Fix the code or
-      update the tests of intentionally removed behavior."
-  - id: pyscripts-stale-dirs
-    title: Ignore cache-only script directories in the pyscripts lint
-    depends_on: []
-    size: xsmall
-    description:
-      "pyscripts-stale-dirs: make tools/pyscripts-260801 ignore scripts/ and tools/
-      directories with no collectable files, such as a `__pycache__`-only leftover from
-      a rename, so reused workspaces stop failing Rule 2. Add a regression test."
-  - id: flag-close-guard
-    title: Refuse closing a flag bead while its registry definition survives
-    depends_on: []
-    size: small
-    description:
-      "flag-close-guard: mirror the leftover --epic-symbol refusal in `sase bead close`.
-      Refuse to close a flag task bead while the working tree's feature-flag registry
-      still defines a flag naming it, because check_feature_flags rule 7 would redden
-      every workspace."
-  - id: split-file-prompt
-    title: Make the split_file xprompt keep symvision and mypy green
-    depends_on: []
-    size: small
-    description:
-      "split-file-prompt: expand the built-in split_file xprompt that toobig routine
-      agents run. It must forbid cross-module private imports, keep the public import
-      paths, and require the split agent to run and fix symvision, mypy, and toobig
-      before finishing. Close sase-180."
-  - id: lsp-build-cache
-    title: Cache sase-xprompt-lsp builds and dedupe concurrent core builds
-    depends_on: []
-    size: medium
-    description:
-      "lsp-build-cache: add a host-wide content-addressed cache for the sase-xprompt-lsp
-      binary, keyed like the sase_core_rs wheel cache, and use it in rust-lsp-install.
-      Add a per-identity build lock so concurrent workspaces build each new sase-core
-      source identity once."
-  - id: verify-green
-    title: Verify green check and full test suite on clean master
-    depends_on:
-      - lint-green
-      - toobig-splits
-      - tests-core
-      - tests-ace-ui
-      - pyscripts-stale-dirs
-      - flag-close-guard
-      - split-file-prompt
-      - lsp-build-cache
-    size: small
-    description:
-      "verify-green: on a clean checkout of latest master, prove that `sase tool run
-      check` exits 0 and that the full non-visual `just test` passes except for baseline
-      flakes. Fix only small stragglers from concurrent landings and record the rest as
-      follow-ups."
+- id: lint-green
+  title: Restore every lint gate except toobig on master
+  depends_on: []
+  size: medium
+  description: 'lint-green: re-derive master''s lint failures stage by stage, including
+    symvision''s masked categories. Fix the mypy errors in the agent-detail mixins,
+    launch-prompt inputs, and command-line input/screen. Replace the fixed sleep in
+    the command-line completion test. Resolve the ~41 unused public symbols using
+    the symvision decision hierarchy.'
+- id: toobig-splits
+  title: Split the two oversized ACE modules
+  depends_on:
+  - lint-green
+  size: medium
+  description: 'toobig-splits: split command_line/screen.py and widgets/decks/panel.py
+    under the toobig limit with purely mechanical moves. Import no `_private` names
+    across modules, keep the public import paths stable, and keep symvision and mypy
+    green.'
+- id: tests-core
+  title: Repair non-UI tests that fail on clean master
+  depends_on:
+  - lint-green
+  size: medium
+  description: 'tests-core: fix the deterministic non-UI failures. These are the wait-check
+    summary and scan-once tests (sase-186), the system-clock guard (sase-188 plus
+    command-line block_render), the config-schema keymap, fakey help color, the agent-session
+    rename fallout in kill-and-edit and launch approval, and the marker-mutation audit.
+    Classify the load-sensitive tests by rerunning them.'
+- id: tests-ace-ui
+  title: Repair ACE TUI tests that fail on clean master
+  depends_on:
+  - lint-green
+  - toobig-splits
+  size: medium
+  description: 'tests-ace-ui: fix the ACE/TUI failures from the legacy-agents-UI removal
+    and the deck cutover. This includes the prompt-panel monitor tests (sase-184),
+    the completion-accept key move to ctrl-f, the command-line visual fixture host
+    path, the TUI import budget, and the artifacts ref-prefix contract. Fix the code
+    or update the tests of intentionally removed behavior.'
+- id: pyscripts-stale-dirs
+  title: Ignore cache-only script directories in the pyscripts lint
+  depends_on: []
+  size: xsmall
+  description: 'pyscripts-stale-dirs: make tools/pyscripts-260801 ignore scripts/
+    and tools/ directories with no collectable files, such as a `__pycache__`-only
+    leftover from a rename, so reused workspaces stop failing Rule 2. Add a regression
+    test.'
+- id: flag-close-guard
+  title: Refuse closing a flag bead while its registry definition survives
+  depends_on: []
+  size: small
+  description: 'flag-close-guard: mirror the leftover --epic-symbol refusal in `sase
+    bead close`. Refuse to close a flag task bead while the working tree''s feature-flag
+    registry still defines a flag naming it, because check_feature_flags rule 7 would
+    redden every workspace.'
+- id: split-file-prompt
+  title: Make the split_file xprompt keep symvision and mypy green
+  depends_on: []
+  size: small
+  description: 'split-file-prompt: expand the built-in split_file xprompt that toobig
+    routine agents run. It must forbid cross-module private imports, keep the public
+    import paths, and require the split agent to run and fix symvision, mypy, and
+    toobig before finishing. Close sase-180.'
+- id: lsp-build-cache
+  title: Cache sase-xprompt-lsp builds and dedupe concurrent core builds
+  depends_on: []
+  size: medium
+  description: 'lsp-build-cache: add a host-wide content-addressed cache for the sase-xprompt-lsp
+    binary, keyed like the sase_core_rs wheel cache, and use it in rust-lsp-install.
+    Add a per-identity build lock so concurrent workspaces build each new sase-core
+    source identity once.'
+- id: verify-green
+  title: Verify green check and full test suite on clean master
+  depends_on:
+  - lint-green
+  - toobig-splits
+  - tests-core
+  - tests-ace-ui
+  - pyscripts-stale-dirs
+  - flag-close-guard
+  - split-file-prompt
+  - lsp-build-cache
+  size: small
+  description: 'verify-green: on a clean checkout of latest master, prove that `sase
+    tool run check` exits 0 and that the full non-visual `just test` passes except
+    for baseline flakes. Fix only small stragglers from concurrent landings and record
+    the rest as follow-ups.'
 proposed_by: bbugyi200.athena.0rh
 create_time: 2026-09-24 17:18:47
 status: wip
+bead_id: sase-18f
 ---
 
-- **PROMPT:**
-  [prompts/202609/green_just_check.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/green_just_check.md)
+- **PROMPT:** [prompts/202609/green_just_check.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/green_just_check.md)
+- **BEAD:** [sase-18f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18f/README.md)
 
 # Plan: Return `just check` to green and remove its recurring failure causes
 
