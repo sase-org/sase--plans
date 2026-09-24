@@ -1,86 +1,81 @@
 ---
 tier: epic
 title: Reliable Agents-tab x kill and dismiss
-goal: "Pressing `x` on any Agents-tab node (agent, clan container, workflow, monitor,
-  proc shell, gate, panel, group, or marked set) removes every affected row at once and
-  it never comes back. Every process that belongs to a killed node is verifiably
-  terminated, including descendants that left the runner's process group. This holds
+goal: 'Pressing `x` on any Agents-tab node (agent, clan container, workflow, monitor,
+  proc shell, gate, panel, group, or marked set) removes every affected row at once
+  and it never comes back. Every process that belongs to a killed node is verifiably
+  terminated, including descendants that left the runner''s process group. This holds
   even if the TUI exits right after the keypress.
 
-  "
+  '
 phases:
-  - id: core-wire
-    title: Rust cleanup wire for live runners and atomic dismissed index
-    depends_on: []
-    size: medium
-    description:
-      "core-wire: in sase-core, add runner_is_live to the cleanup target wire (schema 5)
-      so a FAILED row with a live runner becomes a kill item. Add an atomic, locked,
-      merge-on-write dismissed-index update API. Then update the Python wire, the
-      reference planner, the target projection, and the sase-core revision pin in the
-      same change."
-  - id: row-tombstones
-    title: Session removal tombstones honored at every roster publication
-    depends_on: []
-    size: medium
-    description:
-      "row-tombstones: record a session tombstone for every x-driven removal. Honor it
-      in the load compute filter, the Tier-1 merge, apply time (removal-generation
-      recheck), fleet reprojection, and refilter, ahead of runner_is_live. Keep the
-      local roster copy in sync, fix the revive-modal repair that drops kill identities,
-      and stop one failed signal from blocking the removal of every other row."
-  - id: tree-kill
-    title: Verified process-tree termination in the durable cleanup proc
-    depends_on:
-      - row-tombstones
-    size: medium
-    description:
-      "tree-kill: add a shared terminator that finds an agent's whole process set
-      (process group, session, ppid tree, and inherited launch scratch key). It sends
-      SIGTERM, escalates to SIGKILL, and verifies death. The durable persist-cleanup
-      proc runs it before it releases workspaces or deletes artifacts. The TUI only
-      sends the immediate SIGTERM. Also stop the in-flight guard from dropping whole
-      batches."
-  - id: member-scope
-    title: x stops every member kind instead of skipping it
-    depends_on:
-      - row-tombstones
-      - tree-kill
-    size: medium
-    description:
-      "member-scope: focused x on a running monitor, an active proc shell, or a pending
-      gate now stops or cancels it and removes the row in one step. Clan, panel, group,
-      and marked cleanups include active proc shells and pending gates instead of
-      skipping them. Leftover members are named explicitly, and remote clan members are
-      resolved correctly."
-  - id: additive-dismissals
-    title: Additive dismissed-index persistence for every writer
-    depends_on:
-      - core-wire
-      - member-scope
-    size: medium
-    description:
-      "additive-dismissals: switch the cleanup transactions and every other
-      dismissed-agents writer from full-snapshot saves to the core-wire add/remove API.
-      Revive becomes a removal. Concurrent procs, runners, and TUIs can no longer lose
-      each other's dismissals."
-  - id: e2e-regression
-    title: End-to-end x regression coverage
-    depends_on:
-      - additive-dismissals
-    size: small
-    description:
-      "e2e-regression: drive the real Agents tab through Textual pilot against on-disk
-      fixture agents with real process trees. Race an in-flight load, a fleet
-      reprojection, and a live runner against x on a clan and on single rows. Assert the
-      rows never reappear and every fixture process is dead."
+- id: core-wire
+  title: Rust cleanup wire for live runners and atomic dismissed index
+  depends_on: []
+  size: medium
+  description: 'core-wire: in sase-core, add runner_is_live to the cleanup target
+    wire (schema 5) so a FAILED row with a live runner becomes a kill item. Add an
+    atomic, locked, merge-on-write dismissed-index update API. Then update the Python
+    wire, the reference planner, the target projection, and the sase-core revision
+    pin in the same change.'
+- id: row-tombstones
+  title: Session removal tombstones honored at every roster publication
+  depends_on: []
+  size: medium
+  description: 'row-tombstones: record a session tombstone for every x-driven removal.
+    Honor it in the load compute filter, the Tier-1 merge, apply time (removal-generation
+    recheck), fleet reprojection, and refilter, ahead of runner_is_live. Keep the
+    local roster copy in sync, fix the revive-modal repair that drops kill identities,
+    and stop one failed signal from blocking the removal of every other row.'
+- id: tree-kill
+  title: Verified process-tree termination in the durable cleanup proc
+  depends_on:
+  - row-tombstones
+  size: medium
+  description: 'tree-kill: add a shared terminator that finds an agent''s whole process
+    set (process group, session, ppid tree, and inherited launch scratch key). It
+    sends SIGTERM, escalates to SIGKILL, and verifies death. The durable persist-cleanup
+    proc runs it before it releases workspaces or deletes artifacts. The TUI only
+    sends the immediate SIGTERM. Also stop the in-flight guard from dropping whole
+    batches.'
+- id: member-scope
+  title: x stops every member kind instead of skipping it
+  depends_on:
+  - row-tombstones
+  - tree-kill
+  size: medium
+  description: 'member-scope: focused x on a running monitor, an active proc shell,
+    or a pending gate now stops or cancels it and removes the row in one step. Clan,
+    panel, group, and marked cleanups include active proc shells and pending gates
+    instead of skipping them. Leftover members are named explicitly, and remote clan
+    members are resolved correctly.'
+- id: additive-dismissals
+  title: Additive dismissed-index persistence for every writer
+  depends_on:
+  - core-wire
+  - member-scope
+  size: medium
+  description: 'additive-dismissals: switch the cleanup transactions and every other
+    dismissed-agents writer from full-snapshot saves to the core-wire add/remove API.
+    Revive becomes a removal. Concurrent procs, runners, and TUIs can no longer lose
+    each other''s dismissals.'
+- id: e2e-regression
+  title: End-to-end x regression coverage
+  depends_on:
+  - additive-dismissals
+  size: small
+  description: 'e2e-regression: drive the real Agents tab through Textual pilot against
+    on-disk fixture agents with real process trees. Race an in-flight load, a fleet
+    reprojection, and a live runner against x on a clan and on single rows. Assert
+    the rows never reappear and every fixture process is dead.'
 proposed_by: bbugyi200.athena.0ra
 create_time: 2026-09-24 16:28:27
 status: wip
+bead_id: sase-18d
 ---
 
-- **PROMPT:**
-  [prompts/202609/x_kill_removal_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/x_kill_removal_reliability.md)
+- **PROMPT:** [prompts/202609/x_kill_removal_reliability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/x_kill_removal_reliability.md)
+- **BEAD:** [sase-18d](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18d/README.md)
 
 # Plan: Reliable Agents-tab `x` kill and dismiss
 
