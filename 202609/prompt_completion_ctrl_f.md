@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Move prompt completion acceptance from Ctrl+E to Ctrl+F
-goal: Prompt completion menus use Ctrl+F for highlighted-row acceptance while Ctrl+E
+goal:
+  Prompt completion menus use Ctrl+F for highlighted-row acceptance while Ctrl+E
   consistently retains its readline end-of-line behavior.
 size: medium
 proposed_by: bbugyi200.athena.0r5
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0r5](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0r5.md)
+- **COMMITS:**
+  - [307da2d](https://github.com/sase-org/sase/commit/307da2dacc1c5cfaf37c15cc69e4d60f1adf02fc)
+    — feat(ace): accept completion menus with ctrl-f
 
 # Plan: Move prompt completion acceptance from Ctrl+E to Ctrl+F
 
