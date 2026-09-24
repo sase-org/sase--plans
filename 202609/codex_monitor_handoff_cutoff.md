@@ -1,50 +1,48 @@
 ---
 tier: epic
 title: Stop Codex monitor handoffs from being silently cut off
-goal: "An agent's in-agent handoff (above all `sase monitor start`) either completes or
-  fails loudly. Codex turns can no longer end while a handoff command is still running,
-  monitor starts are fast and never silent, and a killed handoff is recorded and
-  surfaced instead of leaving an assigned bead stuck in_progress.
+goal: 'An agent''s in-agent handoff (above all `sase monitor start`) either completes
+  or fails loudly. Codex turns can no longer end while a handoff command is still
+  running, monitor starts are fast and never silent, and a killed handoff is recorded
+  and surfaced instead of leaving an assigned bead stuck in_progress.
 
-  "
+  '
 phases:
-  - id: codex-handoff-guard
-    title: Codex adapter conformance for handoff commands
-    depends_on: []
-    size: medium
-    description: "codex-handoff-guard: count only the final answer in the Codex
-      turn-integrity signal, classify SASE handoff commands, replace the silent pass
-      with a bounded continuation that re-drives a stranded handoff, state Codex's real
-      exec-yield ceiling in a single-turn directive, and clarify the monitor and final
-      skill wording.
+- id: codex-handoff-guard
+  title: Codex adapter conformance for handoff commands
+  depends_on: []
+  size: medium
+  description: 'codex-handoff-guard: count only the final answer in the Codex turn-integrity
+    signal, classify SASE handoff commands, replace the silent pass with a bounded
+    continuation that re-drives a stranded handoff, state Codex''s real exec-yield
+    ceiling in a single-turn directive, and clarify the monitor and final skill wording.
 
-      "
-  - id: fast-monitor-start
-    title: Make in-agent sase monitor start fast and never silent
-    depends_on: []
-    size: medium
-    description: "fast-monitor-start: resolve a pinned caller without a full project
-      scan, do one lane-scoped monitor read per start (adding an index filter in
-      sase-core if needed), add start timing, and print a stderr line before any slow
-      work.
+    '
+- id: fast-monitor-start
+  title: Make in-agent sase monitor start fast and never silent
+  depends_on: []
+  size: medium
+  description: 'fast-monitor-start: resolve a pinned caller without a full project
+    scan, do one lane-scoped monitor read per start (adding an index filter in sase-core
+    if needed), add start timing, and print a stderr line before any slow work.
 
-      "
-  - id: aborted-handoff-evidence
-    title: Host records and surfaces a killed handoff
-    depends_on:
-      - fast-monitor-start
-    size: medium
-    description:
-      "aborted-handoff-evidence: write an in-flight marker from in-agent handoff
-      commands, have the runner adopt a late handoff or record handoff_aborted, write
-      accurate recovery evidence, and notify the user when a handoff was killed."
+    '
+- id: aborted-handoff-evidence
+  title: Host records and surfaces a killed handoff
+  depends_on:
+  - fast-monitor-start
+  size: medium
+  description: 'aborted-handoff-evidence: write an in-flight marker from in-agent
+    handoff commands, have the runner adopt a late handoff or record handoff_aborted,
+    write accurate recovery evidence, and notify the user when a handoff was killed.'
 proposed_by: bbugyi200.athena.0re
 create_time: 2026-09-24 16:48:51
 status: wip
+bead_id: sase-18e
 ---
 
-- **PROMPT:**
-  [prompts/202609/codex_monitor_handoff_cutoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/codex_monitor_handoff_cutoff.md)
+- **PROMPT:** [prompts/202609/codex_monitor_handoff_cutoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/codex_monitor_handoff_cutoff.md)
+- **BEAD:** [sase-18e](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18e/README.md)
 
 # Stop Codex monitor handoffs from being silently cut off
 
