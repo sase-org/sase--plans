@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Typing @ after a %model value and space opens effort completion
-goal: In the ACE prompt input, pressing @ right after `%m:<model> ` replaces the space
-  with @ and opens the effort-level completion menu.
+goal:
+  In the ACE prompt input, pressing @ right after `%m:<model> ` replaces the space with
+  @ and opens the effort-level completion menu.
 size: small
 proposed_by: bbugyi200.athena.0rc
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0rc](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0rc.md)
+- **COMMITS:**
+  - [740c08f](https://github.com/sase-org/sase/commit/740c08f6183175ec46b6d2fdbfbfe229ae16f22a)
+    — feat(ace): open effort completion on @ after %m:\<model\> space
 
 # Plan: `@` after `%m:<model> ` swallows the space and opens effort completion
 
