@@ -1,80 +1,75 @@
 ---
 tier: epic
-title: "E2: durable ToolRun hand-off and lifecycle control"
-goal: "A handed-off ToolRun has a durable identity before its caller lets go, stays
+title: 'E2: durable ToolRun hand-off and lifecycle control'
+goal: 'A handed-off ToolRun has a durable identity before its caller lets go, stays
   discoverable, followable, waitable, and stoppable through that identity, and always
   settles to either an authoritative outcome or an explicit, typed uncertainty — built
   on the existing monitor and proc executors, with no new supervisor.
 
-  "
+  '
 phases:
-  - id: core-contract
-    title:
-      Extend the sase-core ToolRun contract for reservation, adoption, and owner-aware
-      settlement
-    depends_on: []
-    size: large
-    description:
-      "core-contract: add reservation with a private launch envelope, an atomic claim, a
-      durable stop request, typed terminal causes, persisted finish diagnostics, the
-      owner log locator, and owner-aware reconcile to the sase-core ToolRun store and
-      bindings, all additive at wire schema 1, then move sase's core revision pin."
-  - id: standalone-handoff
-    title: Hand a ToolRun off to a plain durable proc with sase tool run -H
-    depends_on:
-      - core-contract
-    size: large
-    description:
-      "standalone-handoff: split the executor so one body serves foreground and adopted
-      runs, add the hidden claim-then-run worker and the shared launch module, and ship
-      fail-closed sase tool run -H outside agents over a plain proc, behind the
-      tool_handoff beta flag."
-  - id: monitor-handoff
-    title: Reserve the ToolRun when a monitor start hands off a tool run
-    depends_on:
-      - standalone-handoff
-    size: medium
-    description:
-      "monitor-handoff: when a monitor's proc will run a ToolRun, reserve and bind it to
-      the monitor before hand-off and run the adopting worker, leaving monitor_command,
-      execution_argv, and -f bindings untouched, fail-open to E1.5 wrapping, behind the
-      same flag."
-  - id: lifecycle-controls
-    title: Stop, follow, and wait on a ToolRun by id
-    depends_on:
-      - standalone-handoff
-    size: medium
-    description:
-      "lifecycle-controls: add sase tool stop, sase tool show -F/--follow, and sase tool
-      wait as ownership-aware facades over the run's execution owner, with
-      stop-requested versus stopped reporting and viewer-only interruption."
-  - id: settlement
-    title: Settle hand-off runs truthfully after crashes and deliver once
-    depends_on:
-      - monitor-handoff
-      - lifecycle-controls
-    size: large
-    description:
-      "settlement: feed owner facts into reconcile, record stop and timeout causes from
-      the owner's termination intent, settle from proc and monitor settlement, publish
-      exactly one notification for proc-owned hand-offs, and report expired owner logs
-      explicitly."
-  - id: acceptance-and-adoption
-    title: Prove the hand-off contract end to end and remove the beta flag
-    depends_on:
-      - settlement
-    size: medium
-    description:
-      "acceptance-and-adoption: extend the ToolRun smoke harness with the hand-off fault
-      matrix, update docs, the sase_monitor skill source, and the named memory, and
-      remove the tool_handoff flag."
+- id: core-contract
+  title: Extend the sase-core ToolRun contract for reservation, adoption, and owner-aware
+    settlement
+  depends_on: []
+  size: large
+  description: 'core-contract: add reservation with a private launch envelope, an
+    atomic claim, a durable stop request, typed terminal causes, persisted finish
+    diagnostics, the owner log locator, and owner-aware reconcile to the sase-core
+    ToolRun store and bindings, all additive at wire schema 1, then move sase''s core
+    revision pin.'
+- id: standalone-handoff
+  title: Hand a ToolRun off to a plain durable proc with sase tool run -H
+  depends_on:
+  - core-contract
+  size: large
+  description: 'standalone-handoff: split the executor so one body serves foreground
+    and adopted runs, add the hidden claim-then-run worker and the shared launch module,
+    and ship fail-closed sase tool run -H outside agents over a plain proc, behind
+    the tool_handoff beta flag.'
+- id: monitor-handoff
+  title: Reserve the ToolRun when a monitor start hands off a tool run
+  depends_on:
+  - standalone-handoff
+  size: medium
+  description: 'monitor-handoff: when a monitor''s proc will run a ToolRun, reserve
+    and bind it to the monitor before hand-off and run the adopting worker, leaving
+    monitor_command, execution_argv, and -f bindings untouched, fail-open to E1.5
+    wrapping, behind the same flag.'
+- id: lifecycle-controls
+  title: Stop, follow, and wait on a ToolRun by id
+  depends_on:
+  - standalone-handoff
+  size: medium
+  description: 'lifecycle-controls: add sase tool stop, sase tool show -F/--follow,
+    and sase tool wait as ownership-aware facades over the run''s execution owner,
+    with stop-requested versus stopped reporting and viewer-only interruption.'
+- id: settlement
+  title: Settle hand-off runs truthfully after crashes and deliver once
+  depends_on:
+  - monitor-handoff
+  - lifecycle-controls
+  size: large
+  description: 'settlement: feed owner facts into reconcile, record stop and timeout
+    causes from the owner''s termination intent, settle from proc and monitor settlement,
+    publish exactly one notification for proc-owned hand-offs, and report expired
+    owner logs explicitly.'
+- id: acceptance-and-adoption
+  title: Prove the hand-off contract end to end and remove the beta flag
+  depends_on:
+  - settlement
+  size: medium
+  description: 'acceptance-and-adoption: extend the ToolRun smoke harness with the
+    hand-off fault matrix, update docs, the sase_monitor skill source, and the named
+    memory, and remove the tool_handoff flag.'
 proposed_by: bbugyi200.athena.0qj
 create_time: 2026-09-24 08:40:17
 status: wip
+bead_id: sase-17p
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_e2_durable_handoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e2_durable_handoff.md)
+- **PROMPT:** [prompts/202609/tool_e2_durable_handoff.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e2_durable_handoff.md)
+- **BEAD:** [sase-17p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17p/README.md)
 
 # Plan: E2 — durable ToolRun hand-off and lifecycle control
 
