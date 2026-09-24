@@ -4,98 +4,90 @@ title: Python persistence and wire cutover to agent session (wire-cutover)
 goal: 'sase is pinned to the landed core-expand sase-core commit, calls only the new
   agent-session binding names, and names the former agent-family concept "agent session"
   in its canonical metadata keys, Python wire mirrors, Agent model fields, durable
-  Python-owned JSON, and the agent name registry. New data is written only with
-  agent-session keys and values, every reader still loads pre-rename data through named
-  legacy helpers, and `sase tool run check` passes.
+  Python-owned JSON, and the agent name registry. New data is written only with agent-session
+  keys and values, every reader still loads pre-rename data through named legacy helpers,
+  and `sase tool run check` passes.
 
   '
 phases:
-  - id: pin-bindings
-    title: Core pin bump and new binding names
-    depends_on: []
-    size: medium
-    description:
-      "pin-bindings: ratchet sase-core-revision.txt to the landed core-expand commit,
-      switch every caller to parse_agent_session_name, resolve_agent_session_parent,
-      reconcile_agent_artifact_index_dismissed_agent_session_members, and
-      fleet_followed_batch_agent_session_promotions, rename the Python facade wrappers
-      for them, update tools/validate_sase_core_rs and the demo seed, and tighten the
-      dual-shape directive tests to session-only."
-  - id: canonical-keys
-    title: Canonical agent-session metadata keys and shared accessor
-    depends_on:
-      - pin-bindings
-    size: medium
-    description:
-      "canonical-keys: make src/sase/plan_chain.py own AGENT_SESSION_* keys, the
-      separator, and LEGACY_AGENT_FAMILY_* constants read only by one shared accessor.
-      Route every agent_meta.json / done.json reader through it and make every writer
-      emit only agent_session, agent_session_role, and agent_session_shell, dropping
-      legacy keys on rewrite."
-  - id: wire-mirrors
-    title: Python wire mirrors hydrate either spelling
-    depends_on:
-      - canonical-keys
-    size: medium
-    description:
-      "wire-mirrors: rename the agent-session fields and types in the src/sase/core wire
-      mirrors (scan markers and conversion, agent_scan_wire_family_shell.py to
-      agent_scan_wire_agent_session_shell.py, launch, cleanup, group-archive,
-      runner-slot, hold, gate hand-off, monitor follow-up, wait-dependency index) and
-      the fleet nodes, rows, promotion, and follow store. Each hydrates from either
-      spelling and sends new spellings to core."
-  - id: agent-model
-    title: Agent model fields
-    depends_on:
-      - wire-mirrors
-    size: medium
-    description:
-      "agent-model: rename the family-concept fields of the Agent dataclass
-      (src/sase/ace/tui/models/_agent_state.py) to agent_session* and update every src
-      and tests reference mechanically, keeping ACE module, label, and row names for
-      ace-cutover. Dismissed agent bundles still load the old field names."
-  - id: durable-json
-    title: Durable Python-owned JSON surfaces
-    depends_on:
-      - agent-model
-    size: medium
-    description:
-      "durable-json: saved dismissed groups (canonical_global_agent_session),
-      wait_for_fork_sources and chat-fork source kind session, gate descriptors and
-      gate_next_fork session, notification action_data agent_session_root_suffix, ops
-      revert requests, launch-request agent_session_type, and stats runtime_group_by.
-      Writers emit only new spellings; named legacy readers load pre-rename files."
-  - id: name-registry
-    title: Agent name registry session kinds and schema v3
-    depends_on:
-      - agent-model
-    size: small
-    description:
-      "name-registry: agent_name_registry.json reservation_kind and container_kind
-      become session, readers accept family, and SCHEMA_VERSION goes 2 to 3 through the
-      existing legacy-upgrade and stale-cache rebuild path without moving a rebuild onto
-      ACE startup or the UI thread."
-  - id: verify
-    title: Classification sweep and phase verification
-    depends_on:
-      - durable-json
-      - name-registry
-    size: small
-    description:
-      "verify: sweep the wire-cutover surfaces for remaining agent-family keys, confirm
-      every durable surface has a legacy-input test and a no-legacy-emitted test, run
-      sase tool run check, and record hand-offs for runtime-cutover, ace-cutover, and
-      core-contract on the sase-17m.3 phase bead."
+- id: pin-bindings
+  title: Core pin bump and new binding names
+  depends_on: []
+  size: medium
+  description: 'pin-bindings: ratchet sase-core-revision.txt to the landed core-expand
+    commit, switch every caller to parse_agent_session_name, resolve_agent_session_parent,
+    reconcile_agent_artifact_index_dismissed_agent_session_members, and fleet_followed_batch_agent_session_promotions,
+    rename the Python facade wrappers for them, update tools/validate_sase_core_rs
+    and the demo seed, and tighten the dual-shape directive tests to session-only.'
+- id: canonical-keys
+  title: Canonical agent-session metadata keys and shared accessor
+  depends_on:
+  - pin-bindings
+  size: medium
+  description: 'canonical-keys: make src/sase/plan_chain.py own AGENT_SESSION_* keys,
+    the separator, and LEGACY_AGENT_FAMILY_* constants read only by one shared accessor.
+    Route every agent_meta.json / done.json reader through it and make every writer
+    emit only agent_session, agent_session_role, and agent_session_shell, dropping
+    legacy keys on rewrite.'
+- id: wire-mirrors
+  title: Python wire mirrors hydrate either spelling
+  depends_on:
+  - canonical-keys
+  size: medium
+  description: 'wire-mirrors: rename the agent-session fields and types in the src/sase/core
+    wire mirrors (scan markers and conversion, agent_scan_wire_family_shell.py to
+    agent_scan_wire_agent_session_shell.py, launch, cleanup, group-archive, runner-slot,
+    hold, gate hand-off, monitor follow-up, wait-dependency index) and the fleet nodes,
+    rows, promotion, and follow store. Each hydrates from either spelling and sends
+    new spellings to core.'
+- id: agent-model
+  title: Agent model fields
+  depends_on:
+  - wire-mirrors
+  size: medium
+  description: 'agent-model: rename the family-concept fields of the Agent dataclass
+    (src/sase/ace/tui/models/_agent_state.py) to agent_session* and update every src
+    and tests reference mechanically, keeping ACE module, label, and row names for
+    ace-cutover. Dismissed agent bundles still load the old field names.'
+- id: durable-json
+  title: Durable Python-owned JSON surfaces
+  depends_on:
+  - agent-model
+  size: medium
+  description: 'durable-json: saved dismissed groups (canonical_global_agent_session),
+    wait_for_fork_sources and chat-fork source kind session, gate descriptors and
+    gate_next_fork session, notification action_data agent_session_root_suffix, ops
+    revert requests, launch-request agent_session_type, and stats runtime_group_by.
+    Writers emit only new spellings; named legacy readers load pre-rename files.'
+- id: name-registry
+  title: Agent name registry session kinds and schema v3
+  depends_on:
+  - agent-model
+  size: small
+  description: 'name-registry: agent_name_registry.json reservation_kind and container_kind
+    become session, readers accept family, and SCHEMA_VERSION goes 2 to 3 through
+    the existing legacy-upgrade and stale-cache rebuild path without moving a rebuild
+    onto ACE startup or the UI thread.'
+- id: verify
+  title: Classification sweep and phase verification
+  depends_on:
+  - durable-json
+  - name-registry
+  size: small
+  description: 'verify: sweep the wire-cutover surfaces for remaining agent-family
+    keys, confirm every durable surface has a legacy-input test and a no-legacy-emitted
+    test, run sase tool run check, and record hand-offs for runtime-cutover, ace-cutover,
+    and core-contract on the sase-17m.3 phase bead.'
 proposed_by: bbugyi200.athena.sase-17m.3
 parent_bead: sase-17m.3
 create_time: 2026-09-24 02:56:40
 status: wip
+bead_id: sase-17m.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_wire_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_wire_cutover.md)
-- **PARENT:**
-  [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **PROMPT:** [prompts/202609/agent_session_wire_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_wire_cutover.md)
+- **PARENT:** [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **BEAD:** [sase-17m.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.3.1.md)
 
 # Plan: Python persistence and wire cutover to agent session (wire-cutover)
 
