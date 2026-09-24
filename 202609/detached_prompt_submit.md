@@ -1,60 +1,59 @@
 ---
 tier: epic
 title: Release the prompt bar at submit via detached pending launches
-goal: "Submitting from the ACE prompt input bar removes the bar on the very next paint
+goal: 'Submitting from the ACE prompt input bar removes the bar on the very next paint
   in every launch flow. Kill/dismiss cleanup waits, provider/hold/dispatch preflights,
   and launch bookkeeping continue as a visible, cancellable pending launch that hands
   off to the durable `sase run` proc, and every abort path gives the prompt back.
 
-  "
+  '
 phases:
-  - id: pending-launch
-    title: Pending launch lifecycle and detached relaunch waits
-    depends_on: []
-    size: medium
-    description: "pending-launch: add the PendingLaunch record, restore helper, pending
-      proc row, `,X` cancel of not-yet-submitted launches, and quit-time stash; unmount
-      the bar ahead of the relaunch-cleanup/pending-kill holds; move the synchronous
-      post-unmount tail (MRU write, bulk Patch resolution) off the UI thread.
+- id: pending-launch
+  title: Pending launch lifecycle and detached relaunch waits
+  depends_on: []
+  size: medium
+  description: 'pending-launch: add the PendingLaunch record, restore helper, pending
+    proc row, `,X` cancel of not-yet-submitted launches, and quit-time stash; unmount
+    the bar ahead of the relaunch-cleanup/pending-kill holds; move the synchronous
+    post-unmount tail (MRU write, bulk Patch resolution) off the UI thread.
 
-      "
-  - id: detached-guards
-    title: Hold and provider guards run after the bar unmounts
-    depends_on:
-      - pending-launch
-    size: medium
-    description: "detached-guards: move the acceptance point ahead of the `%hold` and
-      hard-disabled-provider preflights, re-key both guards per pending launch with
-      non-exclusive workers, and surface their decisions without stealing focus,
-      restoring or stashing the prompt on abort.
+    '
+- id: detached-guards
+  title: Hold and provider guards run after the bar unmounts
+  depends_on:
+  - pending-launch
+  size: medium
+  description: 'detached-guards: move the acceptance point ahead of the `%hold` and
+    hard-disabled-provider preflights, re-key both guards per pending launch with
+    non-exclusive workers, and surface their decisions without stealing focus, restoring
+    or stashing the prompt on abort.
 
-      "
-  - id: detached-dispatch
-    title: Dispatch source preflight becomes a pending-launch stage
-    depends_on:
-      - detached-guards
-    size: small
-    description: "detached-dispatch: post the submit immediately for `%dispatch` prompts
-      (syntax errors still keep the bar) and run the source preview as the first
-      pending-launch stage, restoring the prompt with the blocked-source line on
-      failure.
+    '
+- id: detached-dispatch
+  title: Dispatch source preflight becomes a pending-launch stage
+  depends_on:
+  - detached-guards
+  size: small
+  description: 'detached-dispatch: post the submit immediately for `%dispatch` prompts
+    (syntax errors still keep the bar) and run the source preview as the first pending-launch
+    stage, restoring the prompt with the blocked-source line on failure.
 
-      "
-  - id: keystroke-tag-catalog
-    title: Prompt keystroke paths stop loading the project-tag catalog
-    depends_on: []
-    size: small
-    description:
-      "keystroke-tag-catalog: add snapshot-only effective-tag helpers and convert
-      keystroke, render, and submit-handler callers so typing and Enter never revalidate
-      or rebuild the project-tag catalog on the UI thread."
+    '
+- id: keystroke-tag-catalog
+  title: Prompt keystroke paths stop loading the project-tag catalog
+  depends_on: []
+  size: small
+  description: 'keystroke-tag-catalog: add snapshot-only effective-tag helpers and
+    convert keystroke, render, and submit-handler callers so typing and Enter never
+    revalidate or rebuild the project-tag catalog on the UI thread.'
 proposed_by: bbugyi200.athena.0r6
 create_time: 2026-09-24 15:03:13
 status: wip
+bead_id: sase-185
 ---
 
-- **PROMPT:**
-  [prompts/202609/detached_prompt_submit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/detached_prompt_submit.md)
+- **PROMPT:** [prompts/202609/detached_prompt_submit.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/detached_prompt_submit.md)
+- **BEAD:** [sase-185](https://github.com/sase-org/sase--beads/blob/main/pages/sase-185/README.md)
 
 # Plan: Release the prompt bar at submit via detached pending launches
 
