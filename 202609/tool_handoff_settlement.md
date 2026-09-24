@@ -1,17 +1,15 @@
 ---
 tier: tale
-title:
-  "E2 settlement: settle hand-off ToolRuns truthfully after crashes and deliver once"
-goal:
-  Every handed-off ToolRun settles from owner facts, stop/timeout intent, and proc or
-  monitor settlement to an authoritative outcome or typed uncertainty, proc-owned
+title: 'E2 settlement: settle hand-off ToolRuns truthfully after crashes and deliver
+  once'
+goal: Every handed-off ToolRun settles from owner facts, stop/timeout intent, and
+  proc or monitor settlement to an authoritative outcome or typed uncertainty, proc-owned
   hand-offs publish exactly one notification, and expired owner logs are reported
   explicitly.
 size: medium
 proposed_by: bbugyi200.athena.sase-17p.5
 bead: sase-17p.5
-create_time: 2026-09-24 12:51:51
-status: wip
+status: done
 ---
 
 - **PARENT:**
