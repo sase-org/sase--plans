@@ -1,10 +1,10 @@
 ---
 tier: tale
 title: Card-partitioned Main documents
-goal: Every Agents metadata-panel builder emits Context/Reply/Output/Summary card
-  parts that tree walkers understand. Failed-agent tracebacks move to the top of the
-  Reply or Output card under a TRACEBACK heading, and the rest of the panel renders
-  unchanged.
+goal:
+  Every Agents metadata-panel builder emits Context/Reply/Output/Summary card parts that
+  tree walkers understand. Failed-agent tracebacks move to the top of the Reply or
+  Output card under a TRACEBACK heading, and the rest of the panel renders unchanged.
 size: medium
 proposed_by: bbugyi200.athena.sase-17d.2
 bead: sase-17d.2
@@ -15,6 +15,11 @@ status: done
   [202609/agents_tab_decks_and_cards.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_decks_and_cards.md)
 - **BEAD:**
   [sase-17d.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/sase-17d.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-17d.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-17d.2.md)
+- **COMMITS:**
+  - [9abf08b](https://github.com/sase-org/sase/commit/9abf08b5df74ebc17f5e293e4909702867105880)
+    — feat(agents-tab): card-partitioned Main documents
 
 # Plan: Card-partitioned Main documents (phase `main-card-partition`, bead sase-17d.2)
 
