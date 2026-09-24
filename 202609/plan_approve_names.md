@@ -1,48 +1,46 @@
 ---
 tier: epic
 title: Name-first `sase plan approve`/`reject` that can see every pending plan
-goal: '`sase plan approve` and `sase plan reject` find every plan that is really
-  awaiting review, accept the plan''s name in whatever form the user has on hand
-  (`unrelated_red_gate_bead_close`, `202609/unrelated_red_gate_bead_close.md`, a path, a
-  `plan:` ref, the planner agent, or the old notification ID), TAB-complete pending plan
-  names with rich descriptions, and explain every miss precisely instead of printing
-  "pending plan approval not found".
+goal: '`sase plan approve` and `sase plan reject` find every plan that is really awaiting
+  review, accept the plan''s name in whatever form the user has on hand (`unrelated_red_gate_bead_close`,
+  `202609/unrelated_red_gate_bead_close.md`, a path, a `plan:` ref, the planner agent,
+  or the old notification ID), TAB-complete pending plan names with rich descriptions,
+  and explain every miss precisely instead of printing "pending plan approval not
+  found".
 
   '
 phases:
-  - id: resolver
-    title: Gate-owned visibility and the name-first selector resolver
-    depends_on: []
-    size: medium
-    description:
-      "resolver: make pending-plan visibility gate-shell aware, add the lightweight
-      plan-name module, replace the ID-only selector with the exact-then-prefix resolver
-      and its miss diagnosis, and render approve/reject errors, ambiguity, and success
-      beautifully."
-  - id: completion
-    title: TAB completion for pending plan names
-    depends_on:
-      - resolver
-    size: medium
-    description:
-      "completion: add the `pending_plan` value kind with a fast-path provider that
-      mirrors the resolver's visibility rule, bind it to the approve/reject PLAN slot,
-      and keep candidates fresh with a short per-kind cache TTL in every shell."
-  - id: surfaces
-    title: Names everywhere plans are listed
-    depends_on:
-      - resolver
-    size: small
-    description:
-      "surfaces: lead `sase plan list` Proposed rows and `sase plan show` hints with the
-      plan name, add a `name` JSON field, and finish the name-first docs."
+- id: resolver
+  title: Gate-owned visibility and the name-first selector resolver
+  depends_on: []
+  size: medium
+  description: 'resolver: make pending-plan visibility gate-shell aware, add the lightweight
+    plan-name module, replace the ID-only selector with the exact-then-prefix resolver
+    and its miss diagnosis, and render approve/reject errors, ambiguity, and success
+    beautifully.'
+- id: completion
+  title: TAB completion for pending plan names
+  depends_on:
+  - resolver
+  size: medium
+  description: 'completion: add the `pending_plan` value kind with a fast-path provider
+    that mirrors the resolver''s visibility rule, bind it to the approve/reject PLAN
+    slot, and keep candidates fresh with a short per-kind cache TTL in every shell.'
+- id: surfaces
+  title: Names everywhere plans are listed
+  depends_on:
+  - resolver
+  size: small
+  description: 'surfaces: lead `sase plan list` Proposed rows and `sase plan show`
+    hints with the plan name, add a `name` JSON field, and finish the name-first docs.'
 proposed_by: bbugyi200.athena.0qx
 create_time: 2026-09-24 12:07:24
 status: wip
+bead_id: sase-17z
 ---
 
-- **PROMPT:**
-  [prompts/202609/plan_approve_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/plan_approve_names.md)
+- **PROMPT:** [prompts/202609/plan_approve_names.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/plan_approve_names.md)
+- **BEAD:** [sase-17z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17z/README.md)
 
 # Plan: Name-first `sase plan approve`/`reject` that can see every pending plan
 
