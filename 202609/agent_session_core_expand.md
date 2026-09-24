@@ -3,65 +3,60 @@ tier: epic
 title: sase-core additive agent-session rename (core-expand)
 goal: 'sase-core names the former agent-family concept "agent session" in every Rust
   module, type, function, constant, enum variant, test, comment, and message, and
-  exposes the new pyo3 binding names next to the legacy ones. Every input accepts both
-  spellings. Serialized output, schema versions, SQLite columns, and goldens stay
-  byte-identical, so a sase tree pinned to the previous core, and every sase workspace
-  that rebuilds against the new core, keeps passing `sase tool run check`.
+  exposes the new pyo3 binding names next to the legacy ones. Every input accepts
+  both spellings. Serialized output, schema versions, SQLite columns, and goldens
+  stay byte-identical, so a sase tree pinned to the previous core, and every sase
+  workspace that rebuilds against the new core, keeps passing `sase tool run check`.
 
   '
 phases:
-  - id: identity-directives
-    title: Identity, launch, holds, and directive/editor surfaces
-    depends_on: []
-    size: medium
-    description:
-      "identity-directives: rename agent_family.rs to agent_session.rs and the
-      agent_identity, artifact_link, agent_launch, hold, editor, and LSP family concept.
-      Add the parse_agent_session_name and resolve_agent_session_parent bindings, accept
-      %id session=, reserve session/sessions, and flip editor completion to session=
-      with companion sase tests that tolerate both core shapes."
-  - id: scan-runtime
-    title: Scan, runtime, lifecycle, runner, and stats wires
-    depends_on:
-      - identity-directives
-    size: medium
-    description:
-      "scan-runtime: rename the family concept in agent_scan, agent_runtime,
-      agent_clan_record, agent_cleanup, agent_ownership, agent_group_archive,
-      agent_stats, runner_capacity, gate_followup, and their neighbours. Pin legacy
-      serde spellings, read new-then-legacy keys in hand-read JSON, and add the
-      reconcile_agent_artifact_index_dismissed_agent_session_members binding."
-  - id: fleet
-    title: Fleet core and gateway
-    depends_on:
-      - scan-runtime
-    size: medium
-    description:
-      "fleet: rename fleet_family.rs to fleet_agent_session.rs and the family concept in
-      fleet_*, fleet_contract, and sase_gateway. Add the
-      fleet_followed_batch_agent_session_promotions binding, accept session: logical-key
-      segments and session-<hex> fallback ids on input, and keep fleet_api_v1.json and
-      emitted keys unchanged."
-  - id: sweep
-    title: Classification sweep and cross-repo verification
-    depends_on:
-      - fleet
-    size: small
-    description:
-      "sweep: classify every remaining famil hit in sase-core, fix stragglers, confirm
-      byte-identical output and unchanged schema versions, and verify that a sase
-      workspace built against the final core passes sase tool run check. Record
-      follow-ups for wire-cutover and core-contract on the phase bead."
+- id: identity-directives
+  title: Identity, launch, holds, and directive/editor surfaces
+  depends_on: []
+  size: medium
+  description: 'identity-directives: rename agent_family.rs to agent_session.rs and
+    the agent_identity, artifact_link, agent_launch, hold, editor, and LSP family
+    concept. Add the parse_agent_session_name and resolve_agent_session_parent bindings,
+    accept %id session=, reserve session/sessions, and flip editor completion to session=
+    with companion sase tests that tolerate both core shapes.'
+- id: scan-runtime
+  title: Scan, runtime, lifecycle, runner, and stats wires
+  depends_on:
+  - identity-directives
+  size: medium
+  description: 'scan-runtime: rename the family concept in agent_scan, agent_runtime,
+    agent_clan_record, agent_cleanup, agent_ownership, agent_group_archive, agent_stats,
+    runner_capacity, gate_followup, and their neighbours. Pin legacy serde spellings,
+    read new-then-legacy keys in hand-read JSON, and add the reconcile_agent_artifact_index_dismissed_agent_session_members
+    binding.'
+- id: fleet
+  title: Fleet core and gateway
+  depends_on:
+  - scan-runtime
+  size: medium
+  description: 'fleet: rename fleet_family.rs to fleet_agent_session.rs and the family
+    concept in fleet_*, fleet_contract, and sase_gateway. Add the fleet_followed_batch_agent_session_promotions
+    binding, accept session: logical-key segments and session-<hex> fallback ids on
+    input, and keep fleet_api_v1.json and emitted keys unchanged.'
+- id: sweep
+  title: Classification sweep and cross-repo verification
+  depends_on:
+  - fleet
+  size: small
+  description: 'sweep: classify every remaining famil hit in sase-core, fix stragglers,
+    confirm byte-identical output and unchanged schema versions, and verify that a
+    sase workspace built against the final core passes sase tool run check. Record
+    follow-ups for wire-cutover and core-contract on the phase bead.'
 proposed_by: bbugyi200.athena.sase-17m.2
 parent_bead: sase-17m.2
 create_time: 2026-09-23 22:54:46
 status: wip
+bead_id: sase-17m.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_core_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_core_expand.md)
-- **PARENT:**
-  [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **PROMPT:** [prompts/202609/agent_session_core_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_core_expand.md)
+- **PARENT:** [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **BEAD:** [sase-17m.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.2.1.md)
 
 # Plan: sase-core additive agent-session rename (core-expand)
 
