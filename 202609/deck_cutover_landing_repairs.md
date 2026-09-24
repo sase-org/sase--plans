@@ -1,55 +1,52 @@
 ---
 tier: epic
 title: Finish the deck cutover's visual migration, coverage goldens and live checks
-goal:
-  Every ACE visual test that still drives the deleted legacy Agents detail UI is
-  migrated to the deck API (or deleted when its subject is gone), its goldens are
-  regenerated and inspected, the coverage goldens and live screenshot checks that the
-  cutover-goldens phase skipped are done, and `just fix-tui-screenshots --check` is
-  clean apart from failures that reproduce without the cutover.
+goal: Every ACE visual test that still drives the deleted legacy Agents detail UI
+  is migrated to the deck API (or deleted when its subject is gone), its goldens are
+  regenerated and inspected, the coverage goldens and live screenshot checks that
+  the cutover-goldens phase skipped are done, and `just fix-tui-screenshots --check`
+  is clean apart from failures that reproduce without the cutover.
 parent_bead: sase-17d.10.1
 phases:
-  - id: family-visual-migration
-    title: Migrate the family, monitor and collapsed-panel visual tests to decks
-    depends_on: []
-    size: medium
-    description:
-      "family-visual-migration: confirm the land-agent repairs from section 2 are on
-      master (reapply any that are missing), then migrate the family-panel, monitor,
-      gate-shell and collapsed-panel ACE PNG tests listed in section 3.1 off the deleted
-      legacy ids and section-stop APIs onto the deck API, regenerate only their goldens
-      with a scoped just fix-tui-screenshots, and inspect every changed PNG."
-  - id: tribe-files-visual-migration
-    title: Migrate the tribe, clan, files, LLM Calls, search and waiting visual tests
-    depends_on: []
-    size: medium
-    description:
-      "tribe-files-visual-migration: migrate the tribe, clan, slow-tools,
-      linked/external repo, LLM Calls, metadata-search and waiting ACE PNG tests listed
-      in section 3.2 onto the deck API, delete the zoom-modal-only waiting scenario,
-      regenerate only their goldens with a scoped just fix-tui-screenshots, and inspect
-      every changed PNG."
-  - id: cutover-coverage-and-live
-    title: Add the missing deck coverage goldens and run the live and full checks
-    depends_on:
-      - family-visual-migration
-      - tribe-files-visual-migration
-    size: medium
-    description:
-      "cutover-coverage-and-live: add the spread Files, paged-after-threshold and
-      LEFT_RIGHT committed-search-overlay goldens, capture and inspect live sase
-      screenshot PNGs of the deck layouts, check the deck border-title clipping, run the
-      full just fix-tui-screenshots --check clean except for failures proven to
-      reproduce without the cutover, and record j/k bench numbers."
+- id: family-visual-migration
+  title: Migrate the family, monitor and collapsed-panel visual tests to decks
+  depends_on: []
+  size: medium
+  description: 'family-visual-migration: confirm the land-agent repairs from section
+    2 are on master (reapply any that are missing), then migrate the family-panel,
+    monitor, gate-shell and collapsed-panel ACE PNG tests listed in section 3.1 off
+    the deleted legacy ids and section-stop APIs onto the deck API, regenerate only
+    their goldens with a scoped just fix-tui-screenshots, and inspect every changed
+    PNG.'
+- id: tribe-files-visual-migration
+  title: Migrate the tribe, clan, files, LLM Calls, search and waiting visual tests
+  depends_on: []
+  size: medium
+  description: 'tribe-files-visual-migration: migrate the tribe, clan, slow-tools,
+    linked/external repo, LLM Calls, metadata-search and waiting ACE PNG tests listed
+    in section 3.2 onto the deck API, delete the zoom-modal-only waiting scenario,
+    regenerate only their goldens with a scoped just fix-tui-screenshots, and inspect
+    every changed PNG.'
+- id: cutover-coverage-and-live
+  title: Add the missing deck coverage goldens and run the live and full checks
+  depends_on:
+  - family-visual-migration
+  - tribe-files-visual-migration
+  size: medium
+  description: 'cutover-coverage-and-live: add the spread Files, paged-after-threshold
+    and LEFT_RIGHT committed-search-overlay goldens, capture and inspect live sase
+    screenshot PNGs of the deck layouts, check the deck border-title clipping, run
+    the full just fix-tui-screenshots --check clean except for failures proven to
+    reproduce without the cutover, and record j/k bench numbers.'
 proposed_by: bbugyi200.athena.sase-17d.10.1.land
 create_time: 2026-09-24 17:30:34
 status: wip
+bead_id: sase-17d.10.1.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/deck_cutover_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_cutover_landing_repairs.md)
-- **PARENT:**
-  [202609/deck_cutover.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_cutover.md)
+- **PROMPT:** [prompts/202609/deck_cutover_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_cutover_landing_repairs.md)
+- **PARENT:** [202609/deck_cutover.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_cutover.md)
+- **BEAD:** [sase-17d.10.1.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/sase-17d.10.1.4.md)
 
 # Plan: finish landing the deck cutover (child of epic sase-17d.10.1)
 
