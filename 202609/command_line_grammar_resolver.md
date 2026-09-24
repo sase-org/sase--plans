@@ -1,16 +1,14 @@
 ---
 tier: tale
 title: sase-core CommandLineGrammar resolver and sase adapter
-goal:
-  A frozen sase_core_rs.CommandLineGrammar parses the Command Line spec once and, per
-  keystroke, returns tokens, slot, diagnostics, signature, run policy and fuzzy-ranked
+goal: A frozen sase_core_rs.CommandLineGrammar parses the Command Line spec once and,
+  per keystroke, returns tokens, slot, diagnostics, signature, run policy and fuzzy-ranked
   candidates; sase loads it through a typed adapter proven by a whole-spec contract
   test.
 size: medium
 proposed_by: bbugyi200.athena.sase-17x.5
 bead: sase-17x.5
-create_time: 2026-09-24 12:51:41
-status: wip
+status: done
 ---
 
 - **PARENT:**
