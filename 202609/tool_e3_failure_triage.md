@@ -1,110 +1,102 @@
 ---
 tier: epic
-title: "E3: failure triage — every failure labeled, no KNOWN failure hides the rest"
-goal: "On a red master, an agent's `sase tool run check` runs past stages whose failures
+title: 'E3: failure triage — every failure labeled, no KNOWN failure hides the rest'
+goal: 'On a red master, an agent''s `sase tool run check` runs past stages whose failures
   are all KNOWN or FLAKY, so its tests still run. It labels every failure item NEW,
   KNOWN, FLAKY, or UNKNOWN with evidence, prints one verdict line, and keeps the exit
-  code that fail-fast `just check` would have returned. `sase tool failures` groups the
-  machine's red-master signatures, and verify-monitor follow-ups carry the verdict.
+  code that fail-fast `just check` would have returned. `sase tool failures` groups
+  the machine''s red-master signatures, and verify-monitor follow-ups carry the verdict.
   KNOWN precision is proven by a chronological backtest before any agent sees a label.
 
-  "
+  '
 phases:
-  - id: ledger-hygiene
-    title: Record runs under the catalog repo's identity and stop nested stage events
-    depends_on: []
-    size: medium
-    description:
-      "ledger-hygiene: fix sase-182 (a run's project and fingerprint identity come from
-      the catalog's repo, not SASE_PROJECT) and sase-114 plus the nesting guard (a
-      run_silent stage's children never append stage events or monitor diagnostics to
-      the enclosing run); close both beads."
-  - id: core-failure-items
-    title: Durable failure items, extractors, and normalization in sase-core
-    depends_on: []
-    size: large
-    description:
-      "core-failure-items: add the additive triage tables, the versioned extractor
-      registry and normalization, golden fixtures from real athena logs, early
-      fingerprint_before persistence, retention (including stage output files), and the
-      extract/record/show bindings, in sase-core only."
-  - id: core-classification
-    title: Pure classification, verdict, and failures aggregation in sase-core
-    depends_on:
-      - core-failure-items
-    size: large
-    description:
-      "core-classification: implement the witness-based NEW/KNOWN/FLAKY/UNKNOWN rule as
-      a deterministic pure function with two tightening knobs, the failure-kind and
-      legacy mapping, the verdict, REPEAT detection, owner matching, the store-backed
-      stage and settle operations, and failures aggregation, in sase-core only."
-  - id: keep-going
-    title: Opt-in stage continuation with exit-code parity
-    depends_on:
-      - ledger-hygiene
-    size: medium
-    description:
-      "keep-going: add the run_silent continuation protocol (SASE_TOOL_CONTINUE
-      handshake, continued/stopped/recipe_finished records, --finish), the recipe finish
-      line, the executor safety net, and sase tool run -k/-x; opt-in and complete, so no
-      flag."
-  - id: bindings-and-backtest
-    title: Pin the core, gather triage inputs, and pass the precision backtest
-    depends_on:
-      - ledger-hygiene
-      - core-classification
-    size: large
-    description:
-      "bindings-and-backtest: move the core pin and add adapters and validators for
-      every new binding, build the bounded input gatherers, write
-      tools/tool_triage_backtest, and pass the at-least-95% hand-audited KNOWN precision
-      gate on athena before any label is stored."
-  - id: record-and-render
-    title: Triage every settled run and render it
-    depends_on:
-      - keep-going
-      - bindings-and-backtest
-    size: large
-    description:
-      "record-and-render: capture failed-stage output, run fail-open settle-time triage
-      in the shared executor body, persist continuation facts, render the triage block
-      and verdict in the footer behind the new tool_failure_triage flag, and add the
-      ungated triage section to sase tool show and show -j."
-  - id: known-gated-continuation
-    title: Continue past all-KNOWN stages by default for agents
-    depends_on:
-      - record-and-render
-    size: medium
-    description:
-      "known-gated-continuation: add the hidden _triage-stage verb and the bounded
-      fail-safe run_silent decision, and make known mode the default for
-      agent-attributed runs of run_silent tools behind the flag."
-  - id: failures-and-followups
-    title: sase tool failures and triage in verify-monitor follow-ups
-    depends_on:
-      - record-and-render
-    size: medium
-    description:
-      "failures-and-followups: add the sase tool failures subcommand over the Rust
-      aggregation, and a flag-gated Failure triage section in verify-monitor follow-up
-      prompts, for both reserved runs and wrapped raw just check."
-  - id: acceptance-and-governance
-    title: Prove the landing criteria, remove the flag, and document
-    depends_on:
-      - known-gated-continuation
-      - failures-and-followups
-    size: medium
-    description:
-      "acceptance-and-governance: add the triage smoke case group, re-run the backtest,
-      run the live athena acceptance, remove the tool_failure_triage flag, and ship
-      docs, the named memory edits, glossary strands, and the decision record."
+- id: ledger-hygiene
+  title: Record runs under the catalog repo's identity and stop nested stage events
+  depends_on: []
+  size: medium
+  description: 'ledger-hygiene: fix sase-182 (a run''s project and fingerprint identity
+    come from the catalog''s repo, not SASE_PROJECT) and sase-114 plus the nesting
+    guard (a run_silent stage''s children never append stage events or monitor diagnostics
+    to the enclosing run); close both beads.'
+- id: core-failure-items
+  title: Durable failure items, extractors, and normalization in sase-core
+  depends_on: []
+  size: large
+  description: 'core-failure-items: add the additive triage tables, the versioned
+    extractor registry and normalization, golden fixtures from real athena logs, early
+    fingerprint_before persistence, retention (including stage output files), and
+    the extract/record/show bindings, in sase-core only.'
+- id: core-classification
+  title: Pure classification, verdict, and failures aggregation in sase-core
+  depends_on:
+  - core-failure-items
+  size: large
+  description: 'core-classification: implement the witness-based NEW/KNOWN/FLAKY/UNKNOWN
+    rule as a deterministic pure function with two tightening knobs, the failure-kind
+    and legacy mapping, the verdict, REPEAT detection, owner matching, the store-backed
+    stage and settle operations, and failures aggregation, in sase-core only.'
+- id: keep-going
+  title: Opt-in stage continuation with exit-code parity
+  depends_on:
+  - ledger-hygiene
+  size: medium
+  description: 'keep-going: add the run_silent continuation protocol (SASE_TOOL_CONTINUE
+    handshake, continued/stopped/recipe_finished records, --finish), the recipe finish
+    line, the executor safety net, and sase tool run -k/-x; opt-in and complete, so
+    no flag.'
+- id: bindings-and-backtest
+  title: Pin the core, gather triage inputs, and pass the precision backtest
+  depends_on:
+  - ledger-hygiene
+  - core-classification
+  size: large
+  description: 'bindings-and-backtest: move the core pin and add adapters and validators
+    for every new binding, build the bounded input gatherers, write tools/tool_triage_backtest,
+    and pass the at-least-95% hand-audited KNOWN precision gate on athena before any
+    label is stored.'
+- id: record-and-render
+  title: Triage every settled run and render it
+  depends_on:
+  - keep-going
+  - bindings-and-backtest
+  size: large
+  description: 'record-and-render: capture failed-stage output, run fail-open settle-time
+    triage in the shared executor body, persist continuation facts, render the triage
+    block and verdict in the footer behind the new tool_failure_triage flag, and add
+    the ungated triage section to sase tool show and show -j.'
+- id: known-gated-continuation
+  title: Continue past all-KNOWN stages by default for agents
+  depends_on:
+  - record-and-render
+  size: medium
+  description: 'known-gated-continuation: add the hidden _triage-stage verb and the
+    bounded fail-safe run_silent decision, and make known mode the default for agent-attributed
+    runs of run_silent tools behind the flag.'
+- id: failures-and-followups
+  title: sase tool failures and triage in verify-monitor follow-ups
+  depends_on:
+  - record-and-render
+  size: medium
+  description: 'failures-and-followups: add the sase tool failures subcommand over
+    the Rust aggregation, and a flag-gated Failure triage section in verify-monitor
+    follow-up prompts, for both reserved runs and wrapped raw just check.'
+- id: acceptance-and-governance
+  title: Prove the landing criteria, remove the flag, and document
+  depends_on:
+  - known-gated-continuation
+  - failures-and-followups
+  size: medium
+  description: 'acceptance-and-governance: add the triage smoke case group, re-run
+    the backtest, run the live athena acceptance, remove the tool_failure_triage flag,
+    and ship docs, the named memory edits, glossary strands, and the decision record.'
 proposed_by: bbugyi200.athena.0rq
 create_time: 2026-09-24 19:06:57
 status: wip
+bead_id: sase-18j
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e3_failure_triage.md)
+- **PROMPT:** [prompts/202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e3_failure_triage.md)
+- **BEAD:** [sase-18j](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18j/README.md)
 
 # Plan: E3 — failure triage for `sase tool run`
 
