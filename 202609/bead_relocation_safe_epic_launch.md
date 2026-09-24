@@ -1,61 +1,58 @@
 ---
 tier: epic
 title: Relocation-safe bead IDs and epic launches
-goal: "A concurrently minted bead ID never renumbers a bead that is already published,
+goal: 'A concurrently minted bead ID never renumbers a bead that is already published,
   and `sase bead work` only acts on bead relocations it can prove moved its own beads.
-  When publication does move a freshly created epic graph, the launch rolls back by the
-  moved IDs and retries automatically, so an approved epic launches without a manual
-  retry and without collateral damage to other agents' beads.
+  When publication does move a freshly created epic graph, the launch rolls back by
+  the moved IDs and retries automatically, so an approved epic launches without a
+  manual retry and without collateral damage to other agents'' beads.
 
-  "
+  '
 phases:
-  - id: core-winner
-    title: Published bead creations keep their ID in duplicate-ID merges
-    depends_on: []
-    size: small
-    description:
-      "core-winner: in the linked sase-core repo, make the merge-base or published
-      upstream creation win a duplicate issue_created collision so only the local,
-      unpublished bead is ever relocated; replace the orientation-independence tests and
-      update the docs."
-  - id: launch-guard
-    title: Identity-verified relocation handling in bead work launches
-    depends_on: []
-    size: medium
-    description:
-      "launch-guard: replace the prompt and env text rewrite in launch_epic_bead_work
-      with an identity-verified check. Foreign relocations are ignored; a relocation of
-      the launch's own graph rolls back on the moved IDs and raises
-      EpicGraphRelocatedError. Also fix the resume callback that drops relocations,
-      guard the task path, and make the text rewrite helper token-safe."
-  - id: plan-retry
-    title: Automatic recovery for approved-plan epic launches
-    depends_on:
-      - launch-guard
-    size: medium
-    description:
-      "plan-retry: when a freshly created epic is relocated, remove it by its moved ID,
-      restore the plan's bead_id, publish the rollback, and retry creation (at most 3
-      attempts); relink a resumed plan to its moved epic and fail with an actionable
-      resume command."
-  - id: pin-regression
-    title: Core pin bump, git-backed regressions, and incident cleanup
-    depends_on:
-      - core-winner
-      - plan-retry
-    size: small
-    description:
-      "pin-regression: move sase-core-revision.txt past the core-winner commit, add
-      git-backed regressions where the local creation is older than the upstream one,
-      and repoint the tool_handoff flag registry entry to sase-17w if it still names
-      sase-17v."
+- id: core-winner
+  title: Published bead creations keep their ID in duplicate-ID merges
+  depends_on: []
+  size: small
+  description: 'core-winner: in the linked sase-core repo, make the merge-base or
+    published upstream creation win a duplicate issue_created collision so only the
+    local, unpublished bead is ever relocated; replace the orientation-independence
+    tests and update the docs.'
+- id: launch-guard
+  title: Identity-verified relocation handling in bead work launches
+  depends_on: []
+  size: medium
+  description: 'launch-guard: replace the prompt and env text rewrite in launch_epic_bead_work
+    with an identity-verified check. Foreign relocations are ignored; a relocation
+    of the launch''s own graph rolls back on the moved IDs and raises EpicGraphRelocatedError.
+    Also fix the resume callback that drops relocations, guard the task path, and
+    make the text rewrite helper token-safe.'
+- id: plan-retry
+  title: Automatic recovery for approved-plan epic launches
+  depends_on:
+  - launch-guard
+  size: medium
+  description: 'plan-retry: when a freshly created epic is relocated, remove it by
+    its moved ID, restore the plan''s bead_id, publish the rollback, and retry creation
+    (at most 3 attempts); relink a resumed plan to its moved epic and fail with an
+    actionable resume command.'
+- id: pin-regression
+  title: Core pin bump, git-backed regressions, and incident cleanup
+  depends_on:
+  - core-winner
+  - plan-retry
+  size: small
+  description: 'pin-regression: move sase-core-revision.txt past the core-winner commit,
+    add git-backed regressions where the local creation is older than the upstream
+    one, and repoint the tool_handoff flag registry entry to sase-17w if it still
+    names sase-17v.'
 proposed_by: bbugyi200.athena.0qv
 create_time: 2026-09-24 11:57:09
 status: wip
+bead_id: sase-17y
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_relocation_safe_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_relocation_safe_epic_launch.md)
+- **PROMPT:** [prompts/202609/bead_relocation_safe_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_relocation_safe_epic_launch.md)
+- **BEAD:** [sase-17y](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17y/README.md)
 
 # Plan: Relocation-safe bead IDs and epic launches
 
