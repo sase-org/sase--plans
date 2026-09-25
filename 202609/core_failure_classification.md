@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Complete core failure classification and aggregation
-goal: Rust core deterministically classifies durable ToolRun failure items, computes
+goal:
+  Rust core deterministically classifies durable ToolRun failure items, computes
   verdicts, and exposes stage, settle, show, and failures operations.
 size: medium
 proposed_by: bbugyi200.athena.sase-18j.3
@@ -13,6 +14,11 @@ status: done
   [202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e3_failure_triage.md)
 - **BEAD:**
   [sase-18j.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18j/sase-18j.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-18j.3](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-18j.3.md)
+- **COMMITS:**
+  - [321e7b4](https://github.com/sase-org/sase-core/commit/321e7b4762ff461f189ce18281c8306e0fb9c0eb)
+    — feat(triage): pure classification, verdict, stage/settle, and failures aggregation
 
 # Complete phase sase-18j.3: core failure classification
 
