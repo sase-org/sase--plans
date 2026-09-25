@@ -36,7 +36,7 @@ phases:
     and update the user docs and config text that say weight must be positive.'
 proposed_by: bbugyi200.apollo.1n
 create_time: 2026-09-25 09:48:57
-status: wip
+status: done
 bead_id: sase-198
 ---
 
