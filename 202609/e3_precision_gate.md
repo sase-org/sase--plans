@@ -1,48 +1,45 @@
 ---
 tier: epic
-title:
-  "Unblock E3: repair the triage backtest, pass the precision gate, close sase-18j.5"
-goal: "Phase sase-18j.5 closes on a DoD-5 precision backtest that was measured correctly
+title: 'Unblock E3: repair the triage backtest, pass the precision gate, close sase-18j.5'
+goal: 'Phase sase-18j.5 closes on a DoD-5 precision backtest that was measured correctly
   and hand-audited for real. Closing it releases the E3 agents that are already queued
-  (sase-18j.6 through sase-18j.9 and sase-18j.land). They finish the epic, and
-  sase-18j.land closes sase-18j.
+  (sase-18j.6 through sase-18j.9 and sase-18j.land). They finish the epic, and sase-18j.land
+  closes sase-18j.
 
-  "
+  '
 phases:
-  - id: backtest-repair
-    title: Fix the backtest's metrics, witness evidence, and workspace attribution
-    depends_on: []
-    size: medium
-    description:
-      "backtest-repair: fix four defects in tools/tool_triage_backtest (added-file
-      metric, witness evidence, workspace attribution, selection lookback), make the
-      audit worksheet auditable, and add the fixture twin and real-binding round trips
-      that sase-18j.5 skipped."
-  - id: continued-stage-output
-    title: Show continued stage failures as failures
-    depends_on: []
-    size: small
-    description:
-      "continued-stage-output: make tools/run_silent print the failure marker and the
-      captured output for a stage it continues past, instead of a check mark and no
-      output, and pin that with a keep-going test."
-  - id: precision-gate
-    title: Run and hand-audit the DoD-5 backtest, then close sase-18j.5
-    depends_on:
-      - backtest-repair
-      - continued-stage-output
-    size: medium
-    description:
-      "precision-gate: run the repaired backtest on athena, hand-audit at least 50 KNOWN
-      labels, tighten the knobs only if the audit fails, record the evidence and
-      follow-ups, and close sase-18j.5 so the queued E3 phases resume."
+- id: backtest-repair
+  title: Fix the backtest's metrics, witness evidence, and workspace attribution
+  depends_on: []
+  size: medium
+  description: 'backtest-repair: fix four defects in tools/tool_triage_backtest (added-file
+    metric, witness evidence, workspace attribution, selection lookback), make the
+    audit worksheet auditable, and add the fixture twin and real-binding round trips
+    that sase-18j.5 skipped.'
+- id: continued-stage-output
+  title: Show continued stage failures as failures
+  depends_on: []
+  size: small
+  description: 'continued-stage-output: make tools/run_silent print the failure marker
+    and the captured output for a stage it continues past, instead of a check mark
+    and no output, and pin that with a keep-going test.'
+- id: precision-gate
+  title: Run and hand-audit the DoD-5 backtest, then close sase-18j.5
+  depends_on:
+  - backtest-repair
+  - continued-stage-output
+  size: medium
+  description: 'precision-gate: run the repaired backtest on athena, hand-audit at
+    least 50 KNOWN labels, tighten the knobs only if the audit fails, record the evidence
+    and follow-ups, and close sase-18j.5 so the queued E3 phases resume.'
 proposed_by: bbugyi200.athena.0rz
 create_time: 2026-09-25 07:43:27
 status: wip
+bead_id: sase-191
 ---
 
-- **PROMPT:**
-  [prompts/202609/e3_precision_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e3_precision_gate.md)
+- **PROMPT:** [prompts/202609/e3_precision_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e3_precision_gate.md)
+- **BEAD:** [sase-191](https://github.com/sase-org/sase--beads/blob/main/pages/sase-191/README.md)
 
 # Plan: Unblock E3 by finishing phase `bindings-and-backtest` (`sase-18j.5`)
 
