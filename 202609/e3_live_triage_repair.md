@@ -1,65 +1,59 @@
 ---
 tier: epic
-title:
-  "Finish E3: make live failure triage actually run, fix owner matching, and prove it on
-  athena"
-goal: "An agent's `sase tool run check` on athena records a triage for every settled
+title: 'Finish E3: make live failure triage actually run, fix owner matching, and
+  prove it on athena'
+goal: 'An agent''s `sase tool run check` on athena records a triage for every settled
   named run and continues past all-KNOWN/FLAKY stages to `test (scoped)`. Possible
   owners are suggested only when a bead really names the failing file. The E3 landing
   criteria are proven live, so the E3 land agent can close `sase-18j`.
 
-  "
+  '
 parent_bead: sase-18j
 phases:
-  - id: triage-inputs
-    title:
-      Send wire-valid evidence, store triage diagnostics, and clear the E3 stragglers
-    depends_on: []
-    size: medium
-    description:
-      "triage-inputs: make the selection-record gatherer emit wire-valid evidence
-      (failures extracted into items) for both settle and the mid-run stage verb.
-      Persist dropped-input and failure diagnostics. Privatize stage_decision, fix the
-      stopd marker, and fix the linked-repo monitor lookup. Add real-binding and smoke
-      regressions that feed a real-shaped full-run selection record."
-  - id: core-owner-match
-    title: Match possible owners on file identity, not on shared path tokens
-    depends_on: []
-    size: medium
-    description:
-      "core-owner-match: in sase-core only, replace the any-3-char-token substring owner
-      match with a path-level match against a candidate's location plus a guarded
-      file-name title match. Record what matched, and add the sase-191.3 probe as a
-      regression fixture."
-  - id: owner-pin
-    title: Pin the owner-matching core and verify owners on live candidates
-    depends_on:
-      - core-owner-match
-      - triage-inputs
-    size: small
-    description:
-      "owner-pin: move sase-core-revision.txt to a pushed sase-core commit that contains
-      the new owner matcher, add a real-binding owner round trip, and re-run the owner
-      probe against the live bead candidates."
-  - id: live-acceptance
-    title: Prove E3's landing criteria live on athena
-    depends_on:
-      - owner-pin
-    size: medium
-    description:
-      "live-acceptance: run the live athena acceptance, re-run and hand-audit the
-      precision backtest, cross-check sase tool failures against the ledger, confirm the
-      check digest, measure the post-landing baseline, and record the DoD checklist on
-      sase-18j."
+- id: triage-inputs
+  title: Send wire-valid evidence, store triage diagnostics, and clear the E3 stragglers
+  depends_on: []
+  size: medium
+  description: 'triage-inputs: make the selection-record gatherer emit wire-valid
+    evidence (failures extracted into items) for both settle and the mid-run stage
+    verb. Persist dropped-input and failure diagnostics. Privatize stage_decision,
+    fix the stopd marker, and fix the linked-repo monitor lookup. Add real-binding
+    and smoke regressions that feed a real-shaped full-run selection record.'
+- id: core-owner-match
+  title: Match possible owners on file identity, not on shared path tokens
+  depends_on: []
+  size: medium
+  description: 'core-owner-match: in sase-core only, replace the any-3-char-token
+    substring owner match with a path-level match against a candidate''s location
+    plus a guarded file-name title match. Record what matched, and add the sase-191.3
+    probe as a regression fixture.'
+- id: owner-pin
+  title: Pin the owner-matching core and verify owners on live candidates
+  depends_on:
+  - core-owner-match
+  - triage-inputs
+  size: small
+  description: 'owner-pin: move sase-core-revision.txt to a pushed sase-core commit
+    that contains the new owner matcher, add a real-binding owner round trip, and
+    re-run the owner probe against the live bead candidates.'
+- id: live-acceptance
+  title: Prove E3's landing criteria live on athena
+  depends_on:
+  - owner-pin
+  size: medium
+  description: 'live-acceptance: run the live athena acceptance, re-run and hand-audit
+    the precision backtest, cross-check sase tool failures against the ledger, confirm
+    the check digest, measure the post-landing baseline, and record the DoD checklist
+    on sase-18j.'
 proposed_by: bbugyi200.athena.sase-18j.land
 create_time: 2026-09-25 19:07:39
 status: wip
+bead_id: sase-18j.10
 ---
 
-- **PROMPT:**
-  [prompts/202609/e3_live_triage_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e3_live_triage_repair.md)
-- **PARENT:**
-  [202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e3_failure_triage.md)
+- **PROMPT:** [prompts/202609/e3_live_triage_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e3_live_triage_repair.md)
+- **PARENT:** [202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e3_failure_triage.md)
+- **BEAD:** [sase-18j.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18j/sase-18j.10.md)
 
 # Plan: finish E3 so failure triage runs in production
 
