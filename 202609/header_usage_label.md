@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Label the ACE header usage cluster with a dim "usage:" prefix
-goal: The ACE header's usage-window badges start with a dim `usage:` label styled
-  like the status-row `<type>:` labels. When space is tight, the label is dropped
-  before any window is hidden.
+goal:
+  The ACE header's usage-window badges start with a dim `usage:` label styled like the
+  status-row `<type>:` labels. When space is tight, the label is dropped before any
+  window is hidden.
 size: small
 proposed_by: bbugyi200.athena.0rv
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0rv](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0rv.md)
+- **COMMITS:**
+  - [4fb63b0](https://github.com/sase-org/sase/commit/4fb63b05a1e79e157fc1aac8463ebd1a9850ddad)
+    — feat(ace-tui): label header usage cluster with dim usage: prefix
 
 # Add a dim `usage:` label to the ACE header usage cluster
 
