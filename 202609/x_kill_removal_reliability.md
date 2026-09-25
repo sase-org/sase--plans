@@ -70,7 +70,7 @@ phases:
     the rows never reappear and every fixture process is dead.'
 proposed_by: bbugyi200.athena.0ra
 create_time: 2026-09-24 16:28:27
-status: wip
+status: done
 bead_id: sase-18d
 ---
 
