@@ -1,72 +1,72 @@
 ---
 tier: epic
-title:
-  Publish orphaned prompt-archive objects and stop sidecar dirt from wedging completion
-goal: "Prompt-archive objects under files/objects are committed with the prompt that
+title: Publish orphaned prompt-archive objects and stop sidecar dirt from wedging
+  completion
+goal: 'Prompt-archive objects under files/objects are committed with the prompt that
   links them, the orphans already in the agents sidecar clones get published by that
-  same path, broken or unpublished object links are reported, pre-existing dirt in a
-  repository an agent is not committing no longer blocks or invalidates `sase final
-  prepare`, and the raw-submit fallback can no longer commit the manifest template's
+  same path, broken or unpublished object links are reported, pre-existing dirt in
+  a repository an agent is not committing no longer blocks or invalidates `sase final
+  prepare`, and the raw-submit fallback can no longer commit the manifest template''s
   placeholder message.
 
-  "
+  '
 phases:
-  - id: archive-objects
-    title: Commit prompt-archive objects with their prompts
-    depends_on: []
-    size: medium
-    description: "archive-objects: stage files/objects in both prompt-archive commit
-      paths, never clean it, sweep hash-valid pending objects (including today's
-      orphans), and quarantine invalid ones. Pending objects must not break the
-      pre-commit pull.
+- id: archive-objects
+  title: Commit prompt-archive objects with their prompts
+  depends_on: []
+  size: medium
+  description: 'archive-objects: stage files/objects in both prompt-archive commit
+    paths, never clean it, sweep hash-valid pending objects (including today''s orphans),
+    and quarantine invalid ones. Pending objects must not break the pre-commit pull.
 
-      "
-  - id: archive-validation
-    title: Report unpublished and dangling archive objects
-    depends_on:
-      - archive-objects
-    size: medium
-    description: "archive-validation: teach `sase agent prompts validate` about
-      files/objects links (missing, untracked, digest, orphan) and add a bounded `sase
-      doctor` check that reports dirt in agents sidecar clones.
+    '
+- id: archive-validation
+  title: Report unpublished and dangling archive objects
+  depends_on:
+  - archive-objects
+  size: medium
+  description: 'archive-validation: teach `sase agent prompts validate` about files/objects
+    links (missing, untracked, digest, orphan) and add a bounded `sase doctor` check
+    that reports dirt in agents sidecar clones.
 
-      "
-  - id: seal-scope-core
-    title: Scope the completion seal to obligated repositories in sase-core
-    depends_on: []
-    size: medium
-    description: "seal-scope-core: in the sase-core continuation seal and evaluator,
-      apply the protected/foreign, completeness, and unknown-HEAD checks and compute the
-      worktree fingerprint only over repositories that have a repository decision.
-      Errors should name the repository.
+    '
+- id: seal-scope-core
+  title: Scope the completion seal to obligated repositories in sase-core
+  depends_on: []
+  size: medium
+  description: 'seal-scope-core: in the sase-core continuation seal and evaluator,
+    apply the protected/foreign, completeness, and unknown-HEAD checks and compute
+    the worktree fingerprint only over repositories that have a repository decision.
+    Errors should name the repository.
 
-      "
-  - id: seal-scope-adopt
-    title: Adopt the scoped seal in sase
-    depends_on:
-      - seal-scope-core
-    size: small
-    description: "seal-scope-adopt: move the sase-core revision pin, add Python
-      regression tests for the incident shape, and document which repositories prepare
-      inspects and fingerprints.
+    '
+- id: seal-scope-adopt
+  title: Adopt the scoped seal in sase
+  depends_on:
+  - seal-scope-core
+  size: small
+  description: 'seal-scope-adopt: move the sase-core revision pin, add Python regression
+    tests for the incident shape, and document which repositories prepare inspects
+    and fingerprints.
 
-      "
-  - id: submit-fallback-guard
-    title: Guard the raw-submit fallback
-    depends_on: []
-    size: small
-    description:
-      "submit-fallback-guard: reject the manifest template's placeholder commit message
-      in submit and prepare (sase-190). Let `sase final submit` accept a prepare
-      wrapper, point prepare refusals at that one-command fallback, and fix the submit
-      help example and the sase_final skill text that encourage the lossy rebuild."
+    '
+- id: submit-fallback-guard
+  title: Guard the raw-submit fallback
+  depends_on: []
+  size: small
+  description: 'submit-fallback-guard: reject the manifest template''s placeholder
+    commit message in submit and prepare (sase-190). Let `sase final submit` accept
+    a prepare wrapper, point prepare refusals at that one-command fallback, and fix
+    the submit help example and the sase_final skill text that encourage the lossy
+    rebuild.'
 proposed_by: bbugyi200.athena.0ry.f0
 create_time: 2026-09-25 09:05:31
 status: wip
+bead_id: sase-196
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_sidecar_orphan_objects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_sidecar_orphan_objects.md)
+- **PROMPT:** [prompts/202609/agents_sidecar_orphan_objects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_sidecar_orphan_objects.md)
+- **BEAD:** [sase-196](https://github.com/sase-org/sase--beads/blob/main/pages/sase-196/README.md)
 
 # Publish orphaned prompt-archive objects and stop sidecar dirt from wedging completion
 
