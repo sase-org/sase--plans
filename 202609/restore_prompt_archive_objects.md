@@ -4,7 +4,7 @@ title: Publish remaining prompt-archive objects
 goal: Restore and publish the remaining content-addressed objects linked by archived
   prompts so the new archive validator and just check pass.
 parent_bead: sase-196
-status: wip
+status: done
 phases:
 - id: apollo-object
   title: Restore Apollo's missing prompt-archive object

@@ -61,7 +61,7 @@ phases:
     rebuild.'
 proposed_by: bbugyi200.athena.0ry.f0
 create_time: 2026-09-25 09:05:31
-status: wip
+status: done
 bead_id: sase-196
 ---
 
