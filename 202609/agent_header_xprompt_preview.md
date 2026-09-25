@@ -40,7 +40,7 @@ phases:
     row; update docs and goldens; and verify with live screenshots.'
 proposed_by: bbugyi200.athena.0rk
 create_time: 2026-09-24 17:41:26
-status: wip
+status: done
 bead_id: sase-18g
 ---
 
