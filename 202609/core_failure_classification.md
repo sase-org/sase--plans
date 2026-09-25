@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Complete core failure classification and aggregation
-goal:
-  Rust core deterministically classifies durable ToolRun failure items, computes
+goal: Rust core deterministically classifies durable ToolRun failure items, computes
   verdicts, and exposes stage, settle, show, and failures operations.
 size: medium
 proposed_by: bbugyi200.athena.sase-18j.3
 bead: sase-18j.3
-create_time: 2026-09-24 20:37:15
-status: wip
+status: done
 ---
 
 - **PARENT:**
