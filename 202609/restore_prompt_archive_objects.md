@@ -1,34 +1,31 @@
 ---
 tier: epic
 title: Publish remaining prompt-archive objects
-goal:
-  Restore and publish the remaining content-addressed objects linked by archived prompts
-  so the new archive validator and just check pass.
+goal: Restore and publish the remaining content-addressed objects linked by archived
+  prompts so the new archive validator and just check pass.
 parent_bead: sase-196
 status: wip
 phases:
-  - id: apollo-object
-    title: Restore Apollo's missing prompt-archive object
-    size: medium
-    depends_on: []
-    description:
-      "apollo-object: recover the exact object linked by an already-published sase
-      prompt, then publish it through the fixed agents sync path."
-  - id: bob-cli-objects
-    title: Publish Bob's pending prompt-archive objects
-    size: small
-    depends_on: []
-    description:
-      "bob-cli-objects: publish the two hash-valid pending bob-cli agents-sidecar
-      objects through the fixed agents sync path."
+- id: apollo-object
+  title: Restore Apollo's missing prompt-archive object
+  size: medium
+  depends_on: []
+  description: 'apollo-object: recover the exact object linked by an already-published
+    sase prompt, then publish it through the fixed agents sync path.'
+- id: bob-cli-objects
+  title: Publish Bob's pending prompt-archive objects
+  size: small
+  depends_on: []
+  description: 'bob-cli-objects: publish the two hash-valid pending bob-cli agents-sidecar
+    objects through the fixed agents sync path.'
 proposed_by: bbugyi200.athena.sase-196.land
 create_time: 2026-09-25 12:06:22
+bead_id: sase-196.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/restore_prompt_archive_objects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_prompt_archive_objects.md)
-- **PARENT:**
-  [202609/agents_sidecar_orphan_objects.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_sidecar_orphan_objects.md)
+- **PROMPT:** [prompts/202609/restore_prompt_archive_objects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_prompt_archive_objects.md)
+- **PARENT:** [202609/agents_sidecar_orphan_objects.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_sidecar_orphan_objects.md)
+- **BEAD:** [sase-196.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-196/sase-196.6.md)
 
 # Remaining work for sase-196
 
