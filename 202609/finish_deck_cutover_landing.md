@@ -1,15 +1,23 @@
 ---
 tier: tale
 title: Finish and close the deck cutover landing-repairs epic (sase-17d.10.1.4)
-goal: Every ACE visual test that drove the deleted legacy Agents detail UI runs on
-  the deck API, deck chrome renders deterministically without clipped titles, the
-  missing coverage goldens and live screenshots are done, the full visual check is
-  clean apart from known unrelated failures, and sase-17d.10.1.4 plus its three phase
-  beads are closed.
+goal:
+  Every ACE visual test that drove the deleted legacy Agents detail UI runs on the deck
+  API, deck chrome renders deterministically without clipped titles, the missing
+  coverage goldens and live screenshots are done, the full visual check is clean apart
+  from known unrelated failures, and sase-17d.10.1.4 plus its three phase beads are
+  closed.
 size: medium
 proposed_by: bbugyi200.athena.0ru
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ru](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.0ru.md)
+- **COMMITS:**
+  - [a674dc9](https://github.com/sase-org/sase/commit/a674dc91f186c653399a681f97d456876edbcb19)
+    — test(ace): finish the deck cutover's visual migration and chrome fixes
+    (sase-17d.10.1.4)
 
 # Plan: finish and close epic `sase-17d.10.1.4` (deck cutover landing repairs) as one tale
 
