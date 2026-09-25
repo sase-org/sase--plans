@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Label the ACE header usage cluster with a dim "usage:" prefix
-goal:
-  The ACE header's usage-window badges start with a dim `usage:` label styled like the
-  status-row `<type>:` labels. When space is tight, the label is dropped before any
-  window is hidden.
+goal: The ACE header's usage-window badges start with a dim `usage:` label styled
+  like the status-row `<type>:` labels. When space is tight, the label is dropped
+  before any window is hidden.
 size: small
 proposed_by: bbugyi200.athena.0rv
-create_time: 2026-09-25 06:46:24
-status: wip
+status: done
 ---
 
 # Add a dim `usage:` label to the ACE header usage cluster
