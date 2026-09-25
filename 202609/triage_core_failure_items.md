@@ -1,13 +1,15 @@
 ---
 tier: tale
 size: medium
-goal: 'sase-core records every failed stage''s output as durable, versioned failure
-  items: pure extractors with normalized, workspace-independent signatures (golden-tested
-  on real athena logs), additive cascade-safe triage tables with early fingerprint_before
-  persistence and retention, and the tool_run_triage_extract/record/show bindings,
-  with the wire schema still 1 and the sase repo untouched.'
-title: 'E3 core-failure-items: triage tables, extractors, normalization, and extract/record/show
-  bindings in sase-core'
+goal:
+  "sase-core records every failed stage's output as durable, versioned failure items:
+  pure extractors with normalized, workspace-independent signatures (golden-tested on
+  real athena logs), additive cascade-safe triage tables with early fingerprint_before
+  persistence and retention, and the tool_run_triage_extract/record/show bindings, with
+  the wire schema still 1 and the sase repo untouched."
+title:
+  "E3 core-failure-items: triage tables, extractors, normalization, and
+  extract/record/show bindings in sase-core"
 proposed_by: bbugyi200.athena.sase-18j.2
 bead: sase-18j.2
 status: done
@@ -17,6 +19,12 @@ status: done
   [202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e3_failure_triage.md)
 - **BEAD:**
   [sase-18j.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18j/sase-18j.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-18j.2](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-18j.2.md)
+- **COMMITS:**
+  - [8315364](https://github.com/sase-org/sase-core/commit/83153645fe14cdcc34c73b665a93b2cc84e987ee)
+    — feat(triage): durable failure items, extractors, normalization, and
+    extract/record/show bindings
 
 # Plan: sase-18j.2 — durable failure items, extractors, and normalization (sase-core only)
 
