@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Deck picker capital letters show a deck in the other panel
-goal: In the Agents deck picker, M/F/T show that deck in the non-focused deck panel,
-  opening a new top-bottom panel when the deck area is single and keeping an existing
-  left-right or top-bottom layout as is, with focus staying on the panel the picker
-  was opened from.
+goal:
+  In the Agents deck picker, M/F/T show that deck in the non-focused deck panel, opening
+  a new top-bottom panel when the deck area is single and keeping an existing left-right
+  or top-bottom layout as is, with focus staying on the panel the picker was opened
+  from.
 size: medium
 proposed_by: bbugyi200.apollo.1p.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.1p.f0](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.apollo.1p.f0.md)
+- **COMMITS:**
+  - [31a37bd](https://github.com/sase-org/sase/commit/31a37bd7b9b8e83dca71e29a04a84910ada6d866)
+    — feat(ace-tui): show a deck in the other panel from the deck picker capitals
 
 # Plan: Capital letters in the deck picker show a deck in the other panel
 
