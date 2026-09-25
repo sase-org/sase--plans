@@ -1,38 +1,38 @@
 ---
 tier: epic
 title: Keep bead note previews compact in split Context cards
-goal: "Make the agent-authored bead note preview readable and bounded by three visible
+goal: 'Make the agent-authored bead note preview readable and bounded by three visible
   body lines in narrow and split Main deck Context cards.
 
-  "
+  '
 parent_bead: sase-18z
 phases:
-  - id: responsive_preview
-    title: Bound note previews to the visible Context-card width
-    size: medium
-    depends_on: []
-    description: "responsive_preview: Pass the available card width to note rendering,
-      keep the preview within three physical body lines, and preserve attribution,
-      overflow, and hints.
+- id: responsive_preview
+  title: Bound note previews to the visible Context-card width
+  size: medium
+  depends_on: []
+  description: 'responsive_preview: Pass the available card width to note rendering,
+    keep the preview within three physical body lines, and preserve attribution, overflow,
+    and hints.
 
-      "
-  - id: visual_proof
-    title: Verify narrow note previews in the running TUI
-    size: small
-    depends_on:
-      - responsive_preview
-    description:
-      "visual_proof: Add width-sensitive coverage, refresh and inspect the targeted PNG,
-      and capture and inspect a live note preview when local data supports it."
+    '
+- id: visual_proof
+  title: Verify narrow note previews in the running TUI
+  size: small
+  depends_on:
+  - responsive_preview
+  description: 'visual_proof: Add width-sensitive coverage, refresh and inspect the
+    targeted PNG, and capture and inspect a live note preview when local data supports
+    it.'
 proposed_by: bbugyi200.athena.sase-18z.land
 create_time: 2026-09-25 10:45:24
 status: wip
+bead_id: sase-18z.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_note_split_layout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_note_split_layout.md)
-- **PARENT:**
-  [202609/agent_bead_note_previews.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_bead_note_previews.md)
+- **PROMPT:** [prompts/202609/bead_note_split_layout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_note_split_layout.md)
+- **PARENT:** [202609/agent_bead_note_previews.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_bead_note_previews.md)
+- **BEAD:** [sase-18z.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18z/sase-18z.3.md)
 
 # Remaining work for sase-18z
 
