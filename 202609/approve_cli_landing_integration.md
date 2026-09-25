@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Integrate gateless plan approval with agent-session syntax
-goal:
-  Direct approvals launch coders using canonical syntax and report every outcome
+goal: Direct approvals launch coders using canonical syntax and report every outcome
   accurately.
 size: medium
 proposed_by: bbugyi200.athena.sase-18i.land
 bead: sase-18i
-create_time: 2026-09-24 21:23:49
-status: wip
+status: done
 ---
 
 - **PARENT:**
