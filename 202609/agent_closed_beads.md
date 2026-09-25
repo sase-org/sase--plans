@@ -1,47 +1,47 @@
 ---
 tier: epic
 title: Agent-closed beads stand out in the Context card
-goal: "When a SASE agent closes a bead, that agent's Main-deck Context card lists the
-  bead in SASE CONTEXT › ARTIFACTS › Beads with an unmistakable CLOSED pill. The close
-  is credited to the agent that actually closed it (never the bead's creator), stays
-  visible even when the agent touched many other beads, and reads as one feature across
-  the card and `sase bead touched`.
+goal: 'When a SASE agent closes a bead, that agent''s Main-deck Context card lists
+  the bead in SASE CONTEXT › ARTIFACTS › Beads with an unmistakable CLOSED pill. The
+  close is credited to the agent that actually closed it (never the bead''s creator),
+  stays visible even when the agent touched many other beads, and reads as one feature
+  across the card and `sase bead touched`.
 
-  "
+  '
 phases:
-  - id: core
-    title: Close attribution and close facts in the touch index (sase-core)
-    depends_on: []
-    size: medium
-    description:
-      "core: stamp issue_closed events with the acting closer plus a durable closed_by
-      payload field, credit closes in the touch-index reducer (with legacy same-instant
-      note recovery), add a per-touch close record with resolution/reason/standing, and
-      bump the index schema."
-  - id: plumbing
-    title: Python close actor, facade, merge, glyph precedence, and CLI parity
-    depends_on:
-      - core
-    size: small
-    description:
-      "plumbing: move the sase-core pin, make `sase bead close` always pass the acting
-      agent, parse the new close record through the facade into BeadTouchEntry, promote
-      closed above created in the shared glyph precedence, and expose the record in
-      `sase bead touched --json`."
-  - id: render
-    title: CLOSED pill rendering, visibility guarantee, and goldens (TUI)
-    depends_on:
-      - plumbing
-    size: medium
-    description:
-      "render: paint agent-closed rows with a green check, a capped CLOSED pill,
-      resolution and reopened-since states, closed-reason precedence, a lane-header
-      closed count, and closure-first visible-row selection, then cover it with unit
-      tests and new PNG goldens."
+- id: core
+  title: Close attribution and close facts in the touch index (sase-core)
+  depends_on: []
+  size: medium
+  description: 'core: stamp issue_closed events with the acting closer plus a durable
+    closed_by payload field, credit closes in the touch-index reducer (with legacy
+    same-instant note recovery), add a per-touch close record with resolution/reason/standing,
+    and bump the index schema.'
+- id: plumbing
+  title: Python close actor, facade, merge, glyph precedence, and CLI parity
+  depends_on:
+  - core
+  size: small
+  description: 'plumbing: move the sase-core pin, make `sase bead close` always pass
+    the acting agent, parse the new close record through the facade into BeadTouchEntry,
+    promote closed above created in the shared glyph precedence, and expose the record
+    in `sase bead touched --json`.'
+- id: render
+  title: CLOSED pill rendering, visibility guarantee, and goldens (TUI)
+  depends_on:
+  - plumbing
+  size: medium
+  description: 'render: paint agent-closed rows with a green check, a capped CLOSED
+    pill, resolution and reopened-since states, closed-reason precedence, a lane-header
+    closed count, and closure-first visible-row selection, then cover it with unit
+    tests and new PNG goldens.'
 proposed_by: bbugyi200.athena.0s0
 create_time: 2026-09-25 14:05:24
 status: wip
+bead_id: sase-19p
 ---
+
+- **BEAD:** [sase-19p](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19p/README.md)
 
 # Plan: Agent-closed beads stand out in the Context card
 
