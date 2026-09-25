@@ -1,58 +1,56 @@
 ---
 tier: epic
 title: Make sase bead work resilient to agent-name registry drift
-goal: "A `sase bead work` retry never plans to launch an agent name that a live or
+goal: 'A `sase bead work` retry never plans to launch an agent name that a live or
   historical owner still holds: registry rebuilds stop dropping in-flight name claims,
   bead-work cleanup selection repairs (or refuses) any remaining registry drift before
   it kills anything, and every launch-name conflict is detected before bead-store
   preclaims, checkpoint commits, or pushes happen.
 
-  "
+  '
 phases:
-  - id: registry-inflight-claims
-    title: Registry rebuilds keep in-flight claims
-    depends_on: []
-    size: medium
-    description:
-      "registry-inflight-claims: make rebuild_name_registry() (both the optimistic
-      _commit_rebuild_locked path and the _rebuild_name_registry_locked fallback) carry
-      forward prior local artifact-backed claims whose artifact dir is identity-pending
-      (bootstrap agent_meta.json only, no name/clan/session yet) while its runner
-      process is alive, re-derive entries for dirs whose named metadata landed after the
-      unlocked scan, and keep dropping claims whose dir is gone, dead, or names a
-      different identity. Share one per-artifact derivation helper between the full scan
-      and the carry-forward. Add regression tests for the incident sequence."
-  - id: bead-work-registry-drift
-    title: Bead-work selection repairs registry drift
-    depends_on: []
-    size: small
-    description:
-      "bead-work-registry-drift: in select_bead_work_launch, detect slots whose registry
-      lookup is missing while the ace-run artifact owner view has records for that name,
-      force one registry rebuild plus a fresh reservation snapshot, and classify
-      normally; if drift survives the rebuild, emit a BLOCKED target so the command
-      aborts before any destructive cleanup or bead-store mutation. Zero extra cost when
-      there is no drift."
-  - id: bead-work-launch-name-preflight
-    title: Launch-name preflight before bead-store mutations
-    depends_on:
-      - registry-inflight-claims
-      - bead-work-registry-drift
-    size: medium
-    description:
-      'bead-work-launch-name-preflight: add a plan-only registry reservation API that
-      runs the same Rust ownership planner without applying, use it in the epic and task
-      bead-work paths right after force-reuse cleanup (before plan snapshot, mark-ready,
-      preclaim, checkpoint, push) to fail fast with owner details and the resume
-      command, and reuse it to explain launch-time reservation collisions instead of
-      surfacing the misleading "try ''X.61''" suggestion.'
+- id: registry-inflight-claims
+  title: Registry rebuilds keep in-flight claims
+  depends_on: []
+  size: medium
+  description: 'registry-inflight-claims: make rebuild_name_registry() (both the optimistic
+    _commit_rebuild_locked path and the _rebuild_name_registry_locked fallback) carry
+    forward prior local artifact-backed claims whose artifact dir is identity-pending
+    (bootstrap agent_meta.json only, no name/clan/session yet) while its runner process
+    is alive, re-derive entries for dirs whose named metadata landed after the unlocked
+    scan, and keep dropping claims whose dir is gone, dead, or names a different identity.
+    Share one per-artifact derivation helper between the full scan and the carry-forward.
+    Add regression tests for the incident sequence.'
+- id: bead-work-registry-drift
+  title: Bead-work selection repairs registry drift
+  depends_on: []
+  size: small
+  description: 'bead-work-registry-drift: in select_bead_work_launch, detect slots
+    whose registry lookup is missing while the ace-run artifact owner view has records
+    for that name, force one registry rebuild plus a fresh reservation snapshot, and
+    classify normally; if drift survives the rebuild, emit a BLOCKED target so the
+    command aborts before any destructive cleanup or bead-store mutation. Zero extra
+    cost when there is no drift.'
+- id: bead-work-launch-name-preflight
+  title: Launch-name preflight before bead-store mutations
+  depends_on:
+  - registry-inflight-claims
+  - bead-work-registry-drift
+  size: medium
+  description: 'bead-work-launch-name-preflight: add a plan-only registry reservation
+    API that runs the same Rust ownership planner without applying, use it in the
+    epic and task bead-work paths right after force-reuse cleanup (before plan snapshot,
+    mark-ready, preclaim, checkpoint, push) to fail fast with owner details and the
+    resume command, and reuse it to explain launch-time reservation collisions instead
+    of surfacing the misleading "try ''X.61''" suggestion.'
 proposed_by: bbugyi200.athena.0s9
 create_time: 2026-09-25 13:51:07
 status: wip
+bead_id: sase-19o
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_work_registry_drift_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_work_registry_drift_resilience.md)
+- **PROMPT:** [prompts/202609/bead_work_registry_drift_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_work_registry_drift_resilience.md)
+- **BEAD:** [sase-19o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19o/README.md)
 
 # Make `sase bead work` Resilient To Agent-Name Registry Drift
 
