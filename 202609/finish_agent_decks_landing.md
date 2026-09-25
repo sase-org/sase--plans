@@ -1,56 +1,53 @@
 ---
 tier: epic
-title:
-  Finish landing agent data decks - Files spread, live spread checks and the j/k bench
-goal:
-  The Files deck really spreads in the live app, the deck visual tests that are broken
-  at master pass again, live spread screenshots of Main, a spread/paged split and Files
-  have been inspected and any separator or title-pill defects fixed, and before/after
-  j/k bench numbers for the SINGLE and LEFT_RIGHT layouts are recorded with every budget
-  miss explained, so the land agent of epic sase-17d can close it.
+title: Finish landing agent data decks - Files spread, live spread checks and the
+  j/k bench
+goal: The Files deck really spreads in the live app, the deck visual tests that are
+  broken at master pass again, live spread screenshots of Main, a spread/paged split
+  and Files have been inspected and any separator or title-pill defects fixed, and
+  before/after j/k bench numbers for the SINGLE and LEFT_RIGHT layouts are recorded
+  with every budget miss explained, so the land agent of epic sase-17d can close it.
 parent_bead: sase-17d
 phases:
-  - id: files-spread-probe
-    title: Make the Files deck spread live and repair the broken deck visual tests
-    depends_on: []
-    size: medium
-    description:
-      "files-spread-probe: fix DeckPanelFilesMixin.on_worker_state_changed so the Files
-      spread probe result is applied (task sase-18m), drop the hand-fed probe from the
-      spread-Files golden test, retarget the session fold-levels PNG test off the
-      removed agent-xprompt anchor (task sase-18y), then regenerate and inspect every
-      Agents-tab golden these changes move."
-  - id: spread-live-inspection
-    title: Inspect live spread rendering and fix separator and title-pill defects
-    depends_on:
-      - files-spread-probe
-    size: medium
-    description:
-      "spread-live-inspection: capture live sase screenshot PNGs of a single spread Main
-      deck, a LEFT_RIGHT split with one spread and one paged panel, and a spread Files
-      deck. Inspect separators, the scroll-driven title pill and tiny-width degrade,
-      explain the missing separator in the Reply golden, fix any defect, add the
-      zoomed-tribe pilot test, and finish with a clean full visual check."
-  - id: deck-jk-bench
-    title: Record before/after j/k bench numbers for SINGLE and LEFT_RIGHT
-    depends_on:
-      - files-spread-probe
-      - spread-live-inspection
-    size: medium
-    description:
-      "deck-jk-bench: run the j/k key-to-paint bench with decks on in the SINGLE and
-      LEFT_RIGHT layouts, on the pre-spread baseline a054efc585 and on the final tree,
-      interleaved to control for host load. Explain every p95 budget miss as host noise
-      or a deck regression, fix any regression, and record the table in a bead note."
+- id: files-spread-probe
+  title: Make the Files deck spread live and repair the broken deck visual tests
+  depends_on: []
+  size: medium
+  description: 'files-spread-probe: fix DeckPanelFilesMixin.on_worker_state_changed
+    so the Files spread probe result is applied (task sase-18m), drop the hand-fed
+    probe from the spread-Files golden test, retarget the session fold-levels PNG
+    test off the removed agent-xprompt anchor (task sase-18y), then regenerate and
+    inspect every Agents-tab golden these changes move.'
+- id: spread-live-inspection
+  title: Inspect live spread rendering and fix separator and title-pill defects
+  depends_on:
+  - files-spread-probe
+  size: medium
+  description: 'spread-live-inspection: capture live sase screenshot PNGs of a single
+    spread Main deck, a LEFT_RIGHT split with one spread and one paged panel, and
+    a spread Files deck. Inspect separators, the scroll-driven title pill and tiny-width
+    degrade, explain the missing separator in the Reply golden, fix any defect, add
+    the zoomed-tribe pilot test, and finish with a clean full visual check.'
+- id: deck-jk-bench
+  title: Record before/after j/k bench numbers for SINGLE and LEFT_RIGHT
+  depends_on:
+  - files-spread-probe
+  - spread-live-inspection
+  size: medium
+  description: 'deck-jk-bench: run the j/k key-to-paint bench with decks on in the
+    SINGLE and LEFT_RIGHT layouts, on the pre-spread baseline a054efc585 and on the
+    final tree, interleaved to control for host load. Explain every p95 budget miss
+    as host noise or a deck regression, fix any regression, and record the table in
+    a bead note.'
 proposed_by: bbugyi200.athena.sase-17d.land
 create_time: 2026-09-25 08:46:09
 status: wip
+bead_id: sase-17d.12
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_agent_decks_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agent_decks_landing.md)
-- **PARENT:**
-  [202609/agents_tab_decks_and_cards.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_decks_and_cards.md)
+- **PROMPT:** [prompts/202609/finish_agent_decks_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_agent_decks_landing.md)
+- **PARENT:** [202609/agents_tab_decks_and_cards.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_tab_decks_and_cards.md)
+- **BEAD:** [sase-17d.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17d/sase-17d.12.md)
 
 # Plan: finish landing agent data decks (child of epic sase-17d)
 
