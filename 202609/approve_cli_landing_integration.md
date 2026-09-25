@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Integrate gateless plan approval with agent-session syntax
-goal: Direct approvals launch coders using canonical syntax and report every outcome
+goal:
+  Direct approvals launch coders using canonical syntax and report every outcome
   accurately.
 size: medium
 proposed_by: bbugyi200.athena.sase-18i.land
@@ -13,6 +14,11 @@ status: done
   [202609/plan_approve_gateless_tales.md](https://github.com/sase-org/sase--plans/blob/main/202609/plan_approve_gateless_tales.md)
 - **BEAD:**
   [sase-18i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18i/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-18i.land](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-18i.land.md)
+- **COMMITS:**
+  - [11b9c56](https://github.com/sase-org/sase/commit/11b9c56b0d8f5ee36afca4cb11773438a9feb4a1)
+    — fix(plan): emit session= coder prompts and settle concurrent gate answers
 
 # Integrate gateless plan approval with agent-session syntax
 
