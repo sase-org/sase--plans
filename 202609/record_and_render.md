@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Record and render ToolRun failure triage
-goal:
-  Settled named ToolRuns persist failure triage and expose it in the flagged footer and
-  ungated show views.
+goal: Settled named ToolRuns persist failure triage and expose it in the flagged footer
+  and ungated show views.
 size: medium
 proposed_by: bbugyi200.athena.sase-18j.6
 bead: sase-18j.6
-create_time: 2026-09-25 10:37:33
-status: wip
+status: done
 ---
 
 - **PARENT:**
