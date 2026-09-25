@@ -1,75 +1,71 @@
 ---
 tier: epic
 title: Finish ACE agent session surfaces (ace-cutover landing gaps)
-goal: 'The ACE agent-session cutover is complete: every non-visual test in tests/ace and
-  tests/perf passes, no visible "family" copy for the agent-session concept remains in
-  ACE, family-concept test identifiers in tests/ace use agent-session naming, new-shape
-  fleet keys have fixture coverage, docs name the renamed perf scenarios and copy, the
-  j/k benches show no regression, and `sase tool run check` passes.
+goal: 'The ACE agent-session cutover is complete: every non-visual test in tests/ace
+  and tests/perf passes, no visible "family" copy for the agent-session concept remains
+  in ACE, family-concept test identifiers in tests/ace use agent-session naming, new-shape
+  fleet keys have fixture coverage, docs name the renamed perf scenarios and copy,
+  the j/k benches show no regression, and `sase tool run check` passes.
 
   '
 parent_bead: sase-17m.5.1
 phases:
-  - id: copy-stragglers
-    title: Visible-copy and comment stragglers plus the 15 failing tests
-    depends_on: []
-    size: medium
-    description:
-      'copy-stragglers: fix the 15 tests/ace widget tests that fail on master because
-      they call renamed panel methods or expect retired FAMILY/family copy. Rename the
-      remaining visible agent-family copy in src/sase/ace (tribe Composition "N
-      families", Artifacts Agents pane description, statistics help eligibility text,
-      the fold notify message, revert preview error, confirm-revert "scope family") and
-      the agent-family comments and docstrings listed in the plan. Re-baseline, through
-      /sase_monitor, only the PNG goldens whose pixels change because of this copy.'
-  - id: widget-tests
-    title: Agent-session test identifiers in widgets, modals, actions, and visual tests
-    depends_on:
-      - copy-stragglers
-    size: medium
-    description:
-      "widget-tests: rename the family-concept test functions, helpers, locals, fixture
-      kwargs, and docstrings in tests/ace/tui/widgets, tests/ace/tui/modals,
-      tests/ace/tui/actions, and tests/ace/tui/visual to agent-session naming. Keep
-      unrelated meanings, marked core-emitted legacy wire fixtures, and opaque rendered
-      test data. Update the renamed node ID in tests/reproducible_flake_baseline.txt. No
-      pixels change."
-  - id: tui-tests
-    title:
-      Agent-session test identifiers in top-level TUI, models, and contract tests plus
-      new-shape fleet fixtures
-    depends_on:
-      - widget-tests
-    size: medium
-    description:
-      "tui-tests: rename the family-concept test functions, helpers, locals, fixture
-      kwargs, and docstrings in tests/ace/tui/*.py, tests/ace/tui/models,
-      tests/ace/tui/artifacts_contract, and tests/ace/*.py (including _family() in
-      _agent_enter_targets_helpers.py and owner_roster_fixture family= kwargs). Name the
-      fleet summary and locator fixtures as legacy wire fixtures and add new-shape fleet
-      fixture coverage that proves the new agent-session keys are read first."
-  - id: docs-verify
-    title: Docs integration, perf re-run, classification, and full verification
-    depends_on:
-      - tui-tests
-    size: medium
-    description:
-      "docs-verify: update docs that still name the renamed perf scenarios or the
-      retired agent-family copy (docs/perf_runbook.md, docs/ace.md, docs/pager.md, the
-      orchestration blog post, and any doc describing copy changed in copy-stragglers).
-      Run the full non-visual tests/ace and tests/perf suites, a visual check over the
-      session/tribe/clan/fleet goldens, the j/k navigation bench on a quiet host plus
-      the view-hints regression check, the final famil classification sweep, and `sase
-      tool run check`."
+- id: copy-stragglers
+  title: Visible-copy and comment stragglers plus the 15 failing tests
+  depends_on: []
+  size: medium
+  description: 'copy-stragglers: fix the 15 tests/ace widget tests that fail on master
+    because they call renamed panel methods or expect retired FAMILY/family copy.
+    Rename the remaining visible agent-family copy in src/sase/ace (tribe Composition
+    "N families", Artifacts Agents pane description, statistics help eligibility text,
+    the fold notify message, revert preview error, confirm-revert "scope family")
+    and the agent-family comments and docstrings listed in the plan. Re-baseline,
+    through /sase_monitor, only the PNG goldens whose pixels change because of this
+    copy.'
+- id: widget-tests
+  title: Agent-session test identifiers in widgets, modals, actions, and visual tests
+  depends_on:
+  - copy-stragglers
+  size: medium
+  description: 'widget-tests: rename the family-concept test functions, helpers, locals,
+    fixture kwargs, and docstrings in tests/ace/tui/widgets, tests/ace/tui/modals,
+    tests/ace/tui/actions, and tests/ace/tui/visual to agent-session naming. Keep
+    unrelated meanings, marked core-emitted legacy wire fixtures, and opaque rendered
+    test data. Update the renamed node ID in tests/reproducible_flake_baseline.txt.
+    No pixels change.'
+- id: tui-tests
+  title: Agent-session test identifiers in top-level TUI, models, and contract tests
+    plus new-shape fleet fixtures
+  depends_on:
+  - widget-tests
+  size: medium
+  description: 'tui-tests: rename the family-concept test functions, helpers, locals,
+    fixture kwargs, and docstrings in tests/ace/tui/*.py, tests/ace/tui/models, tests/ace/tui/artifacts_contract,
+    and tests/ace/*.py (including _family() in _agent_enter_targets_helpers.py and
+    owner_roster_fixture family= kwargs). Name the fleet summary and locator fixtures
+    as legacy wire fixtures and add new-shape fleet fixture coverage that proves the
+    new agent-session keys are read first.'
+- id: docs-verify
+  title: Docs integration, perf re-run, classification, and full verification
+  depends_on:
+  - tui-tests
+  size: medium
+  description: 'docs-verify: update docs that still name the renamed perf scenarios
+    or the retired agent-family copy (docs/perf_runbook.md, docs/ace.md, docs/pager.md,
+    the orchestration blog post, and any doc describing copy changed in copy-stragglers).
+    Run the full non-visual tests/ace and tests/perf suites, a visual check over the
+    session/tribe/clan/fleet goldens, the j/k navigation bench on a quiet host plus
+    the view-hints regression check, the final famil classification sweep, and `sase
+    tool run check`.'
 proposed_by: bbugyi200.athena.sase-17m.5.1.land
 create_time: 2026-09-25 04:39:06
 status: wip
+bead_id: sase-17m.5.1.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_ace_cutover_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_ace_cutover_finish.md)
-- **PARENT:**
-  [202609/agent_session_ace_cutover.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_ace_cutover.md)
+- **PROMPT:** [prompts/202609/agent_session_ace_cutover_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_ace_cutover_finish.md)
+- **PARENT:** [202609/agent_session_ace_cutover.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_ace_cutover.md)
+- **BEAD:** [sase-17m.5.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.5.1.6.md)
 
 # Plan: Finish ACE agent session surfaces (ace-cutover landing gaps)
 
