@@ -1,111 +1,102 @@
 ---
 tier: epic
-title: "Finish the `:` Command Line: fix landing-audit bugs and spec gaps"
-goal: "The `:` Command Line from epic sase-17x behaves as its plan specifies. Every key
-  in the Keys table works and is configurable under `ace.keymaps.command_line`. No
-  action crashes or silently fails. Completion reaches every candidate and every entity
-  kind. No synchronous disk I/O runs on the UI thread. The chrome and popup match the UX
-  specification. The missing PNG goldens exist, and CI builds a sase-core that exposes
-  `CommandLineGrammar`.
+title: 'Finish the `:` Command Line: fix landing-audit bugs and spec gaps'
+goal: 'The `:` Command Line from epic sase-17x behaves as its plan specifies. Every
+  key in the Keys table works and is configurable under `ace.keymaps.command_line`.
+  No action crashes or silently fails. Completion reaches every candidate and every
+  entity kind. No synchronous disk I/O runs on the UI thread. The chrome and popup
+  match the UX specification. The missing PNG goldens exist, and CI builds a sase-core
+  that exposes `CommandLineGrammar`.
 
-  "
+  '
 phases:
-  - id: core-pin
-    title: Move the sase-core CI pin past CommandLineGrammar
-    depends_on: []
-    size: xsmall
-    description:
-      "core-pin: ratchet `sase-core-revision.txt` to sase-core's remote HEAD so CI
-      builds a core that exposes `CommandLineGrammar`, then prove the pinned-bindings
-      check passes."
-  - id: worker-hops
-    title: Fix call_from_thread misuse on the app loop
-    depends_on: []
-    size: small
-    description:
-      "worker-hops: stop calling `call_from_thread` from coroutines that already run on
-      the app loop. This fixes the `v` pager crash on an unloaded tail and the popup
-      that never leaves `indexing commands…`. Sweep the package for the same pattern and
-      add pilot tests on the real paths."
-  - id: key-behavior
-    title: Make every Keys-table key behave as specified
-    depends_on:
-      - worker-hops
-    size: medium
-    description:
-      "key-behavior: wire ↑/↓ prefix-filtered history. Offer ghost text only at the end
-      of the line. Scope NORMAL mode and Block-nav key capture to their contexts. Add
-      `ctrl+f` menu accept. Limit `R` to confirmation-declined blocks. Keep the draft on
-      the palette `:` hop. Drive keys through the real input in the tests."
-  - id: keymap-config
-    title: Apply the ace.keymaps.command_line scope
-    depends_on:
-      - key-behavior
-    size: medium
-    description:
-      "keymap-config: build the panel's bindings and input routing from
-      `CommandLineKeymaps`, add the Block-nav actions to the scope, and render hints
-      from live key names. Update the schema, the docs and the onboarding touchpoints."
-  - id: completion-fixes
-    title: Popup, provider-footer and cache correctness
-    depends_on:
-      - key-behavior
-    size: medium
-    description:
-      "completion-fixes: make every candidate reachable through a scrolling popup window
-      and fix the highlight echo guard. Scope and clear the provider footer. Honor
-      per-kind TTLs and invalidate on finish. Recheck the cursor on async results. Fix
-      the hint and heading text."
-  - id: entity-sources
-    title: Proc, project, marked, path and cd completion sources
-    depends_on:
-      - completion-fixes
-    size: medium
-    description:
-      "entity-sources: feed proc and project slots from real app state with provider
-      fallback. Read Agents-tab marks. Add off-thread path/dir and `cd` completion. Rank
-      the selected agent's plan first."
-  - id: policy-io
-    title: Foreground interpreter, writes chips, and UI-thread I/O
-    depends_on:
-      - keymap-config
-    size: medium
-    description:
-      "policy-io: run foreground commands with the TUI's interpreter and fix the missing
-      writes classifications. Move history, the tip marker, kill, the Procs jump store
-      read and tail reads off the UI thread. Keep history in session-held memory that
-      updates on exit."
-  - id: chrome-layout
-    title: Border chrome and floating popup
-    depends_on:
-      - completion-fixes
-      - policy-io
-    size: medium
-    description:
-      "chrome-layout: move the title, context chip, key hints and running count onto the
-      frame borders, recomposed on resize. Float the popup over the transcript, anchored
-      above the input at the replace-span column."
-  - id: goldens-perf
-    title: Goldens, perf probe, and remaining test gaps
-    depends_on:
-      - entity-sources
-      - chrome-layout
-    size: medium
-    description:
-      "goldens-perf: add the missing completion-popup goldens and regenerate the
-      affected suites. Fix the host-path and import-budget stragglers if still red. Make
-      the keystroke probe measure key-to-paint. Close the listed test gaps and take a
-      live walkthrough."
+- id: core-pin
+  title: Move the sase-core CI pin past CommandLineGrammar
+  depends_on: []
+  size: xsmall
+  description: 'core-pin: ratchet `sase-core-revision.txt` to sase-core''s remote
+    HEAD so CI builds a core that exposes `CommandLineGrammar`, then prove the pinned-bindings
+    check passes.'
+- id: worker-hops
+  title: Fix call_from_thread misuse on the app loop
+  depends_on: []
+  size: small
+  description: 'worker-hops: stop calling `call_from_thread` from coroutines that
+    already run on the app loop. This fixes the `v` pager crash on an unloaded tail
+    and the popup that never leaves `indexing commands…`. Sweep the package for the
+    same pattern and add pilot tests on the real paths.'
+- id: key-behavior
+  title: Make every Keys-table key behave as specified
+  depends_on:
+  - worker-hops
+  size: medium
+  description: 'key-behavior: wire ↑/↓ prefix-filtered history. Offer ghost text only
+    at the end of the line. Scope NORMAL mode and Block-nav key capture to their contexts.
+    Add `ctrl+f` menu accept. Limit `R` to confirmation-declined blocks. Keep the
+    draft on the palette `:` hop. Drive keys through the real input in the tests.'
+- id: keymap-config
+  title: Apply the ace.keymaps.command_line scope
+  depends_on:
+  - key-behavior
+  size: medium
+  description: 'keymap-config: build the panel''s bindings and input routing from
+    `CommandLineKeymaps`, add the Block-nav actions to the scope, and render hints
+    from live key names. Update the schema, the docs and the onboarding touchpoints.'
+- id: completion-fixes
+  title: Popup, provider-footer and cache correctness
+  depends_on:
+  - key-behavior
+  size: medium
+  description: 'completion-fixes: make every candidate reachable through a scrolling
+    popup window and fix the highlight echo guard. Scope and clear the provider footer.
+    Honor per-kind TTLs and invalidate on finish. Recheck the cursor on async results.
+    Fix the hint and heading text.'
+- id: entity-sources
+  title: Proc, project, marked, path and cd completion sources
+  depends_on:
+  - completion-fixes
+  size: medium
+  description: 'entity-sources: feed proc and project slots from real app state with
+    provider fallback. Read Agents-tab marks. Add off-thread path/dir and `cd` completion.
+    Rank the selected agent''s plan first.'
+- id: policy-io
+  title: Foreground interpreter, writes chips, and UI-thread I/O
+  depends_on:
+  - keymap-config
+  size: medium
+  description: 'policy-io: run foreground commands with the TUI''s interpreter and
+    fix the missing writes classifications. Move history, the tip marker, kill, the
+    Procs jump store read and tail reads off the UI thread. Keep history in session-held
+    memory that updates on exit.'
+- id: chrome-layout
+  title: Border chrome and floating popup
+  depends_on:
+  - completion-fixes
+  - policy-io
+  size: medium
+  description: 'chrome-layout: move the title, context chip, key hints and running
+    count onto the frame borders, recomposed on resize. Float the popup over the transcript,
+    anchored above the input at the replace-span column.'
+- id: goldens-perf
+  title: Goldens, perf probe, and remaining test gaps
+  depends_on:
+  - entity-sources
+  - chrome-layout
+  size: medium
+  description: 'goldens-perf: add the missing completion-popup goldens and regenerate
+    the affected suites. Fix the host-path and import-budget stragglers if still red.
+    Make the keystroke probe measure key-to-paint. Close the listed test gaps and
+    take a live walkthrough.'
 proposed_by: bbugyi200.athena.sase-17x.land
 parent_bead: sase-17x
 create_time: 2026-09-24 20:28:36
 status: wip
+bead_id: sase-17x.13
 ---
 
-- **PROMPT:**
-  [prompts/202609/command_line_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_landing_fixes.md)
-- **PARENT:**
-  [202609/command_line_panel.md](https://github.com/sase-org/sase--plans/blob/main/202609/command_line_panel.md)
+- **PROMPT:** [prompts/202609/command_line_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_landing_fixes.md)
+- **PARENT:** [202609/command_line_panel.md](https://github.com/sase-org/sase--plans/blob/main/202609/command_line_panel.md)
+- **BEAD:** [sase-17x.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17x/sase-17x.13.md)
 
 # Plan: Finish the `:` Command Line
 
