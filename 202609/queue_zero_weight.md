@@ -1,49 +1,47 @@
 ---
 tier: epic
 title: Allow zero-load agents with %queue(weight=0)
-goal: "A user can author `%queue(weight=0)` or `%q(w=0)` to launch a sase agent that
+goal: 'A user can author `%queue(weight=0)` or `%q(w=0)` to launch a sase agent that
   adds no weighted load to runner capacity. The directive round-trips through every
-  re-authoring path, the agent and its user-authored lineage run at weight 0 end to end,
-  and the epic-launch monitor's host-set zero weight still never gives its successors a
-  free ride.
+  re-authoring path, the agent and its user-authored lineage run at weight 0 end to
+  end, and the epic-launch monitor''s host-set zero weight still never gives its successors
+  a free ride.
 
-  "
+  '
 phases:
-  - id: core-contract
-    title: Rust queue contract accepts authored zero weight
-    depends_on: []
-    size: medium
-    description:
-      "core-contract: in the linked sase-core repo, make the %queue parser accept an
-      exactly zero weight literal, make the canonical formatter emit weight=0, update
-      editor/LSP metadata, harden the legacy capacity=0 drain for zero-weight launches,
-      and pin the existing zero-weight admission rules with tests."
-  - id: py-runtime
-    title: Python runtime honors explicit zero weight
-    depends_on: []
-    size: medium
-    description:
-      "py-runtime: in sase, stop Python validators, fallbacks, and inheritance paths
-      from rejecting or dropping an explicit 0.0 queue weight, keep epic-launch monitor
-      zero from leaking to successors, and render a w0 badge; testable with records,
-      without the new core."
-  - id: pin-e2e-docs
-    title: Core pin bump, end-to-end directive tests, and docs
-    depends_on:
-      - core-contract
-      - py-runtime
-    size: small
-    description:
-      "pin-e2e-docs: move sase-core-revision.txt past the core-contract commit, add
-      directive-level tests that exercise %q(w=0) through the real Rust binding, and
-      update the user docs and config text that say weight must be positive."
+- id: core-contract
+  title: Rust queue contract accepts authored zero weight
+  depends_on: []
+  size: medium
+  description: 'core-contract: in the linked sase-core repo, make the %queue parser
+    accept an exactly zero weight literal, make the canonical formatter emit weight=0,
+    update editor/LSP metadata, harden the legacy capacity=0 drain for zero-weight
+    launches, and pin the existing zero-weight admission rules with tests.'
+- id: py-runtime
+  title: Python runtime honors explicit zero weight
+  depends_on: []
+  size: medium
+  description: 'py-runtime: in sase, stop Python validators, fallbacks, and inheritance
+    paths from rejecting or dropping an explicit 0.0 queue weight, keep epic-launch
+    monitor zero from leaking to successors, and render a w0 badge; testable with
+    records, without the new core.'
+- id: pin-e2e-docs
+  title: Core pin bump, end-to-end directive tests, and docs
+  depends_on:
+  - core-contract
+  - py-runtime
+  size: small
+  description: 'pin-e2e-docs: move sase-core-revision.txt past the core-contract commit,
+    add directive-level tests that exercise %q(w=0) through the real Rust binding,
+    and update the user docs and config text that say weight must be positive.'
 proposed_by: bbugyi200.apollo.1n
 create_time: 2026-09-25 09:48:57
 status: wip
+bead_id: sase-198
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_zero_weight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_zero_weight.md)
+- **PROMPT:** [prompts/202609/queue_zero_weight.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_zero_weight.md)
+- **BEAD:** [sase-198](https://github.com/sase-org/sase--beads/blob/main/pages/sase-198/README.md)
 
 # Plan: Allow zero-load agents with `%queue(weight=0)`
 
