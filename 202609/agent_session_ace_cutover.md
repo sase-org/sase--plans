@@ -1,99 +1,91 @@
 ---
 tier: epic
 title: ACE agent session surfaces (ace-cutover)
-goal: 'Inside ACE (src/sase/ace/**, tests/ace/**, tests/perf/**, default_config.yml, and
-  sase.schema.json), the former agent-family concept is named "agent session" in every
-  module, class, identifier, row kind, relation, grouping mode, trace name, perf
-  scenario, comment, test, and golden. The visible copy reads SESSION SHELLS, SESSION,
-  "Session" grouping, and "collapse session". Core-emitted legacy spellings stay as
-  marked readers. Unrelated meanings of "family" are unchanged. The performance contract
-  does not change, and `sase tool run check` passes.
+goal: 'Inside ACE (src/sase/ace/**, tests/ace/**, tests/perf/**, default_config.yml,
+  and sase.schema.json), the former agent-family concept is named "agent session"
+  in every module, class, identifier, row kind, relation, grouping mode, trace name,
+  perf scenario, comment, test, and golden. The visible copy reads SESSION SHELLS,
+  SESSION, "Session" grouping, and "collapse session". Core-emitted legacy spellings
+  stay as marked readers. Unrelated meanings of "family" are unchanged. The performance
+  contract does not change, and `sase tool run check` passes.
 
   '
 phases:
-  - id: models
-    title: ACE model modules and Agent identifiers
-    depends_on: []
-    size: medium
-    description:
-      "models: rename the family-named modules in src/sase/ace/tui/models/
-      (_agent_imported_family, _agent_parallel_family,
-      _agent_status_family{,_core,_planner,_policy}, _family_shell_membership,
-      agent_family_members, agent_family_preview_cache). Also rename their classes and
-      functions, the family-concept Agent methods and properties
-      (is_family_member_child, family_reference_name, presented_family_reference_name),
-      AgentChildLinkage.FAMILY_MEMBER, and the family identifiers in agent_groups,
-      agent_tribe_summary, agent_nodes, agent_bundle, clan, loaders, and fleet-agents
-      models. Core-emitted legacy keys stay as marked readers. Update every importer, in
-      or outside ACE, and rename the matching tests/ace/tui/models tests and helpers."
-  - id: actions
-    title: Agents actions, folding, navigation, and preview warmup
-    depends_on:
-      - models
-    size: medium
-    description:
-      'actions: rename actions/agents/_loading_family_previews.py and its mixin methods.
-      Rename the trace span agents.family_plan_preview_warmup to
-      agents.agent_session_plan_preview_warmup and the task sase-agents-family-previews
-      to sase-agents-session-previews. Change the fold and navigation kind value
-      "family" to "session" and rename the family identifiers in actions/agents,
-      actions/navigation, actions/agent_workflow, and the other ACE action and app
-      modules. Rename the perf scenarios family_container_press and
-      family_container_unfolded_press to session_container_*, along with their baselines
-      and bench assertions. Update the tests for all of these.'
-  - id: contract-completion
-    title: Artifacts-pane contract, row kinds, and completion kinds
-    depends_on:
-      - actions
-    size: medium
-    description:
-      'contract-completion: rename the Agents-pane relation
-      family/agent_family_container to session/agent_session_container, the grouping
-      mode by_family (label Family, keys family) to by_session (label Session), and
-      _artifact_tab_model FAMILY. Keep the Patch RelationKind.FAMILY. Rename the row
-      kinds and identifiers in widgets/artifacts (agents_list, agents_navigation,
-      agents_revival, query_rows) and relations/agents.py. Change the agent completion
-      candidate kind "family" to "session" across the completion models, directive
-      completion, and the prompt-bar completion rows. Update the artifacts contract
-      goldens and the completion parity tests.'
-  - id: copy
-    title: Prompt-panel widgets, visible copy, keymaps, and config
-    depends_on:
-      - contract-completion
-    size: medium
-    description:
-      'copy: rename widgets/prompt_panel/_agent_display_family{,_render} and every
-      family identifier, widget id, and CSS id in the ACE widgets. Change the visible
-      copy from FAMILY SHELLS to SESSION SHELLS (including the "also listed under" and
-      "see ... SHELLS" tails) and the identity header from FAMILY to SESSION, and rename
-      FAMILY_IDENTITY_COLOR. Update the bindings.py and keymaps/metadata.py labels, the
-      help_modal text, the "collapse family" command-palette alias, and the clipboard
-      copy. Update the family wording in the default_config.yml comments and the
-      sase.schema.json descriptions. Re-baseline, through /sase_monitor, only the PNG
-      goldens whose pixels change because of the copy.'
-  - id: snapshots-sweep
-    title: Snapshot renames, perf check, and classification sweep
-    depends_on:
-      - copy
-    size: medium
-    description:
-      "snapshots-sweep: rename the family-named PNG snapshot tests, fixture modules, and
-      goldens, and every remaining family-named tests/ace or tests/perf file. Update the
-      shard-timing and flake baselines. Run a full just fix-tui-screenshots through
-      /sase_monitor, inspect the report, and remove stale goldens only after the full
-      run. Run the j/k navigation benchmark to confirm no regression. Classify every
-      remaining famil hit in ACE scope, record hand-offs on sase-17m.5, and run sase
-      tool run check."
+- id: models
+  title: ACE model modules and Agent identifiers
+  depends_on: []
+  size: medium
+  description: 'models: rename the family-named modules in src/sase/ace/tui/models/
+    (_agent_imported_family, _agent_parallel_family, _agent_status_family{,_core,_planner,_policy},
+    _family_shell_membership, agent_family_members, agent_family_preview_cache). Also
+    rename their classes and functions, the family-concept Agent methods and properties
+    (is_family_member_child, family_reference_name, presented_family_reference_name),
+    AgentChildLinkage.FAMILY_MEMBER, and the family identifiers in agent_groups, agent_tribe_summary,
+    agent_nodes, agent_bundle, clan, loaders, and fleet-agents models. Core-emitted
+    legacy keys stay as marked readers. Update every importer, in or outside ACE,
+    and rename the matching tests/ace/tui/models tests and helpers.'
+- id: actions
+  title: Agents actions, folding, navigation, and preview warmup
+  depends_on:
+  - models
+  size: medium
+  description: 'actions: rename actions/agents/_loading_family_previews.py and its
+    mixin methods. Rename the trace span agents.family_plan_preview_warmup to agents.agent_session_plan_preview_warmup
+    and the task sase-agents-family-previews to sase-agents-session-previews. Change
+    the fold and navigation kind value "family" to "session" and rename the family
+    identifiers in actions/agents, actions/navigation, actions/agent_workflow, and
+    the other ACE action and app modules. Rename the perf scenarios family_container_press
+    and family_container_unfolded_press to session_container_*, along with their baselines
+    and bench assertions. Update the tests for all of these.'
+- id: contract-completion
+  title: Artifacts-pane contract, row kinds, and completion kinds
+  depends_on:
+  - actions
+  size: medium
+  description: 'contract-completion: rename the Agents-pane relation family/agent_family_container
+    to session/agent_session_container, the grouping mode by_family (label Family,
+    keys family) to by_session (label Session), and _artifact_tab_model FAMILY. Keep
+    the Patch RelationKind.FAMILY. Rename the row kinds and identifiers in widgets/artifacts
+    (agents_list, agents_navigation, agents_revival, query_rows) and relations/agents.py.
+    Change the agent completion candidate kind "family" to "session" across the completion
+    models, directive completion, and the prompt-bar completion rows. Update the artifacts
+    contract goldens and the completion parity tests.'
+- id: copy
+  title: Prompt-panel widgets, visible copy, keymaps, and config
+  depends_on:
+  - contract-completion
+  size: medium
+  description: 'copy: rename widgets/prompt_panel/_agent_display_family{,_render}
+    and every family identifier, widget id, and CSS id in the ACE widgets. Change
+    the visible copy from FAMILY SHELLS to SESSION SHELLS (including the "also listed
+    under" and "see ... SHELLS" tails) and the identity header from FAMILY to SESSION,
+    and rename FAMILY_IDENTITY_COLOR. Update the bindings.py and keymaps/metadata.py
+    labels, the help_modal text, the "collapse family" command-palette alias, and
+    the clipboard copy. Update the family wording in the default_config.yml comments
+    and the sase.schema.json descriptions. Re-baseline, through /sase_monitor, only
+    the PNG goldens whose pixels change because of the copy.'
+- id: snapshots-sweep
+  title: Snapshot renames, perf check, and classification sweep
+  depends_on:
+  - copy
+  size: medium
+  description: 'snapshots-sweep: rename the family-named PNG snapshot tests, fixture
+    modules, and goldens, and every remaining family-named tests/ace or tests/perf
+    file. Update the shard-timing and flake baselines. Run a full just fix-tui-screenshots
+    through /sase_monitor, inspect the report, and remove stale goldens only after
+    the full run. Run the j/k navigation benchmark to confirm no regression. Classify
+    every remaining famil hit in ACE scope, record hand-offs on sase-17m.5, and run
+    sase tool run check.'
 proposed_by: bbugyi200.athena.sase-17m.5
 parent_bead: sase-17m.5
 create_time: 2026-09-25 00:05:57
 status: wip
+bead_id: sase-17m.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_session_ace_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_ace_cutover.md)
-- **PARENT:**
-  [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **PROMPT:** [prompts/202609/agent_session_ace_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_session_ace_cutover.md)
+- **PARENT:** [202609/agent_session_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_rename.md)
+- **BEAD:** [sase-17m.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.5.1.md)
 
 # Plan: ACE agent session surfaces (ace-cutover)
 
