@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Repair the retry agent-session visual case
-goal:
-  The retry countdown visual test and golden use the renamed agent session and pass
-  verification.
+goal: The retry countdown visual test and golden use the renamed agent session and
+  pass verification.
 parent_bead: sase-17m.5.1.6
 phases:
-  - id: retry-visual
-    title: Repair the retry countdown visual test and golden
-    size: small
-    description:
-      "retry-visual: update the stale retry query, inspect the targeted golden update,
-      and verify the test and just check."
-    depends_on: []
+- id: retry-visual
+  title: Repair the retry countdown visual test and golden
+  size: small
+  description: 'retry-visual: update the stale retry query, inspect the targeted golden
+    update, and verify the test and just check.'
+  depends_on: []
 proposed_by: bbugyi200.athena.sase-17m.5.1.6.land
 create_time: 2026-09-25 10:02:00
 status: wip
+bead_id: sase-17m.5.1.6.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/retry_session_visual_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/retry_session_visual_gap.md)
-- **PARENT:**
-  [202609/agent_session_ace_cutover_finish.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_ace_cutover_finish.md)
+- **PROMPT:** [prompts/202609/retry_session_visual_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/retry_session_visual_gap.md)
+- **PARENT:** [202609/agent_session_ace_cutover_finish.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_session_ace_cutover_finish.md)
+- **BEAD:** [sase-17m.5.1.6.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17m/sase-17m.5.1.6.5.md)
 
 # Repair the retry agent-session visual case
 
