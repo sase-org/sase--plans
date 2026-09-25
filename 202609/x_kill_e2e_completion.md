@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Complete Agents-tab x end-to-end regression coverage
-goal:
-  Exercise the sase-18d kill and dismissal contract through the real Agents tab, durable
-  cleanup, disk reload, and process trees.
+goal: Exercise the sase-18d kill and dismissal contract through the real Agents tab,
+  durable cleanup, disk reload, and process trees.
 parent_bead: sase-18d
 phases:
-  - id: clan_race
-    title: Pilot harness and clan removal race
-    depends_on: []
-    description:
-      "clan_race: Drive the mounted Agents tab with on-disk agents through a clan x, an
-      in-flight load, and fleet reprojection."
-    size: medium
-  - id: row_lifecycle
-    title: Live row, process tree, and restart scenarios
-    depends_on:
-      - clan_race
-    description:
-      "row_lifecycle: Complete the pilot scenarios for FAILED, DONE, immediate exit, and
-      restart; repair any epic-caused defect exposed."
-    size: medium
+- id: clan_race
+  title: Pilot harness and clan removal race
+  depends_on: []
+  description: 'clan_race: Drive the mounted Agents tab with on-disk agents through
+    a clan x, an in-flight load, and fleet reprojection.'
+  size: medium
+- id: row_lifecycle
+  title: Live row, process tree, and restart scenarios
+  depends_on:
+  - clan_race
+  description: 'row_lifecycle: Complete the pilot scenarios for FAILED, DONE, immediate
+    exit, and restart; repair any epic-caused defect exposed.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-18d.land
 create_time: 2026-09-24 22:00:12
 status: wip
+bead_id: sase-18d.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/x_kill_e2e_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/x_kill_e2e_completion.md)
-- **PARENT:**
-  [202609/x_kill_removal_reliability.md](https://github.com/sase-org/sase--plans/blob/main/202609/x_kill_removal_reliability.md)
+- **PROMPT:** [prompts/202609/x_kill_e2e_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/x_kill_e2e_completion.md)
+- **PARENT:** [202609/x_kill_removal_reliability.md](https://github.com/sase-org/sase--plans/blob/main/202609/x_kill_removal_reliability.md)
+- **BEAD:** [sase-18d.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18d/sase-18d.7.md)
 
 # Complete the missing sase-18d regression phase
 
