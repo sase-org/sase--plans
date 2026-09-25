@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Record and render ToolRun failure triage
-goal: Settled named ToolRuns persist failure triage and expose it in the flagged footer
-  and ungated show views.
+goal:
+  Settled named ToolRuns persist failure triage and expose it in the flagged footer and
+  ungated show views.
 size: medium
 proposed_by: bbugyi200.athena.sase-18j.6
 bead: sase-18j.6
@@ -13,6 +14,11 @@ status: done
   [202609/tool_e3_failure_triage.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e3_failure_triage.md)
 - **BEAD:**
   [sase-18j.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18j/sase-18j.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-18j.6](https://github.com/sase-org/sase--agents/blob/main/families/bbugyi200.athena.sase-18j.6.md)
+- **COMMITS:**
+  - [71b25fb](https://github.com/sase-org/sase/commit/71b25fbf4eb20f3e184f25104307e20cc5488515)
+    — feat(tool): render settled failure triage
 
 # Record and render ToolRun failure triage (sase-18j.6)
 
