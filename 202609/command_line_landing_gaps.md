@@ -1,85 +1,78 @@
 ---
 tier: epic
-title:
-  "Close the `:` Command Line landing gaps: hide/hop deadlocks, key and source bugs,
-  stale goldens"
-goal: "The `:` Command Line from epics sase-17x and sase-17x.13 hides, hops, and reopens
-  without wedging the app. Every configurable key routes through
-  `ace.keymaps.command_line`. Completion sources return fresh, complete candidates. No
-  state mutation or disk write runs on the wrong thread. `just lint` passes the
-  line-count gate. Every golden this epic changed is regenerated and inspected, and a
-  live walkthrough succeeds end to end, including a screenshot export after hide and
-  reopen.
+title: 'Close the `:` Command Line landing gaps: hide/hop deadlocks, key and source
+  bugs, stale goldens'
+goal: 'The `:` Command Line from epics sase-17x and sase-17x.13 hides, hops, and reopens
+  without wedging the app. Every configurable key routes through `ace.keymaps.command_line`.
+  Completion sources return fresh, complete candidates. No state mutation or disk
+  write runs on the wrong thread. `just lint` passes the line-count gate. Every golden
+  this epic changed is regenerated and inspected, and a live walkthrough succeeds
+  end to end, including a screenshot export after hide and reopen.
 
-  "
+  '
 parent_bead: sase-17x.13
 phases:
-  - id: split-completion
-    title: Bring screen_completion.py under the line-count limit
-    depends_on: []
-    size: small
-    description:
-      "split-completion: extract a cohesive helper module from the 1039-line
-      `screen_completion.py` so `just lint` (toobig, enforced by the master-gate CI job)
-      passes again, keeping symvision and import paths green."
-  - id: hide-hop-deadlocks
-    title: Fix the hide and palette-hop deadlocks and the lost loop hops
-    depends_on: []
-    size: medium
-    description:
-      "hide-hop-deadlocks: stop awaiting `dismiss()` from the panel's own key handler
-      (Esc on an empty line and the `;` hop both wedge today). Route that Esc through
-      `hide_panel`. Deliver the Procs focus target without `call_from_thread` on the
-      loop, and refresh every screen that reopened while the grammar load was still
-      running."
-  - id: key-routing
-    title: History walk, menu keys, and compact key hints
-    depends_on:
-      - split-completion
-      - hide-hop-deadlocks
-    size: medium
-    description:
-      "key-routing: reset the history walk cursor on each new walk. Decouple menu
-      movement from the history bindings and fix the menu hint. Render compact `esc` /
-      `^R` key names. Drive the remaining key contracts through real key presses."
-  - id: completion-sources
-    title: Fresh caches, project and cd resolution, and the keystroke probe
-    depends_on:
-      - key-routing
-    size: medium
-    description:
-      "completion-sources: bypass the provider disk cache after a block finishes and
-      drop in-flight stale fetches. Resolve `cd +<label>` and `+home`, and merge the
-      provider into project slots. Offer `cd -` and dotfiles. Stamp the perf probe at
-      the key. Close the listed source test gaps."
-  - id: ui-thread-state
-    title: Tip marker write, restored-block append, and history counts
-    depends_on:
-      - hide-hop-deadlocks
-    size: small
-    description:
-      "ui-thread-state: move the palette-tip marker write off the loop. Append restored
-      blocks on the UI thread only. Remember each run once in memory. Add the
-      writes-chip and off-screen-tail pilot tests."
-  - id: goldens-walkthrough
-    title: Regenerate epic goldens and take the live walkthrough
-    depends_on:
-      - completion-sources
-      - ui-thread-state
-    size: medium
-    description:
-      "goldens-walkthrough: fix the doc-peek visual setup and tighten the never-awaits
-      test. Regenerate and inspect the 22 goldens this epic changed. Resolve sase-18o.
-      Take the live walkthrough, including a screenshot export after hide and reopen."
+- id: split-completion
+  title: Bring screen_completion.py under the line-count limit
+  depends_on: []
+  size: small
+  description: 'split-completion: extract a cohesive helper module from the 1039-line
+    `screen_completion.py` so `just lint` (toobig, enforced by the master-gate CI
+    job) passes again, keeping symvision and import paths green.'
+- id: hide-hop-deadlocks
+  title: Fix the hide and palette-hop deadlocks and the lost loop hops
+  depends_on: []
+  size: medium
+  description: 'hide-hop-deadlocks: stop awaiting `dismiss()` from the panel''s own
+    key handler (Esc on an empty line and the `;` hop both wedge today). Route that
+    Esc through `hide_panel`. Deliver the Procs focus target without `call_from_thread`
+    on the loop, and refresh every screen that reopened while the grammar load was
+    still running.'
+- id: key-routing
+  title: History walk, menu keys, and compact key hints
+  depends_on:
+  - split-completion
+  - hide-hop-deadlocks
+  size: medium
+  description: 'key-routing: reset the history walk cursor on each new walk. Decouple
+    menu movement from the history bindings and fix the menu hint. Render compact
+    `esc` / `^R` key names. Drive the remaining key contracts through real key presses.'
+- id: completion-sources
+  title: Fresh caches, project and cd resolution, and the keystroke probe
+  depends_on:
+  - key-routing
+  size: medium
+  description: 'completion-sources: bypass the provider disk cache after a block finishes
+    and drop in-flight stale fetches. Resolve `cd +<label>` and `+home`, and merge
+    the provider into project slots. Offer `cd -` and dotfiles. Stamp the perf probe
+    at the key. Close the listed source test gaps.'
+- id: ui-thread-state
+  title: Tip marker write, restored-block append, and history counts
+  depends_on:
+  - hide-hop-deadlocks
+  size: small
+  description: 'ui-thread-state: move the palette-tip marker write off the loop. Append
+    restored blocks on the UI thread only. Remember each run once in memory. Add the
+    writes-chip and off-screen-tail pilot tests.'
+- id: goldens-walkthrough
+  title: Regenerate epic goldens and take the live walkthrough
+  depends_on:
+  - completion-sources
+  - ui-thread-state
+  size: medium
+  description: 'goldens-walkthrough: fix the doc-peek visual setup and tighten the
+    never-awaits test. Regenerate and inspect the 22 goldens this epic changed. Resolve
+    sase-18o. Take the live walkthrough, including a screenshot export after hide
+    and reopen.'
 proposed_by: bbugyi200.athena.sase-17x.13.land
 create_time: 2026-09-25 08:41:36
 status: wip
+bead_id: sase-17x.13.10
 ---
 
-- **PROMPT:**
-  [prompts/202609/command_line_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_landing_gaps.md)
-- **PARENT:**
-  [202609/command_line_landing_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202609/command_line_landing_fixes.md)
+- **PROMPT:** [prompts/202609/command_line_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/command_line_landing_gaps.md)
+- **PARENT:** [202609/command_line_landing_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202609/command_line_landing_fixes.md)
+- **BEAD:** [sase-17x.13.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-17x/sase-17x.13.10.md)
 
 # Plan: Close the `:` Command Line landing gaps
 
