@@ -1,75 +1,74 @@
 ---
 tier: epic
-title: "%queue capacity multiplier (<M>x)"
-goal: "The `%queue` / `%q` capacity argument accepts a multiplier `<M>x` (at most two
-  decimal places). Admission resolves it as M times the machine's effective
-  `max_running_agents` budget. Every `#research_swarm` agent authors `%q(1.5x, w=0.25)`,
-  so on a machine whose effective budget is 5 each research agent gets a capacity of
-  7.5.
+title: '%queue capacity multiplier (<M>x)'
+goal: 'The `%queue` / `%q` capacity argument accepts a multiplier `<M>x` (at most
+  two decimal places). Admission resolves it as M times the machine''s effective `max_running_agents`
+  budget. Every `#research_swarm` agent authors `%q(1.5x, w=0.25)`, so on a machine
+  whose effective budget is 5 each research agent gets a capacity of 7.5.
 
-  "
+  '
 phases:
-  - id: core-parse
-    title: Rust multiplier syntax, formatting, launch wires, and editor metadata
-    depends_on: []
-    size: medium
-    description: "core-parse: in sase-core, parse and validate `<M>x` wherever `%queue`
-      accepts capacity, carry it as `queue_capacity_multiplier` through QueueFieldsWire
-      and the typed agent/proc launch wires, format it canonically, add helper bindings,
-      and update the completion metadata.
+- id: core-parse
+  title: Rust multiplier syntax, formatting, launch wires, and editor metadata
+  depends_on: []
+  size: medium
+  description: 'core-parse: in sase-core, parse and validate `<M>x` wherever `%queue`
+    accepts capacity, carry it as `queue_capacity_multiplier` through QueueFieldsWire
+    and the typed agent/proc launch wires, format it canonically, add helper bindings,
+    and update the completion metadata.
 
-      "
-  - id: core-admission
-    title: Rust admission resolution, scan records, and fleet contract
-    depends_on:
-      - core-parse
-    size: medium
-    description: "core-admission: in sase-core, resolve a persisted multiplier against
-      the request's effective_limit when computing the admission limit, add the field to
-      runner-capacity records and waiters, agent-scan meta and waiting wires (with an
-      index schema bump), and the fleet summary contract, and extend the normalize
-      binding.
+    '
+- id: core-admission
+  title: Rust admission resolution, scan records, and fleet contract
+  depends_on:
+  - core-parse
+  size: medium
+  description: 'core-admission: in sase-core, resolve a persisted multiplier against
+    the request''s effective_limit when computing the admission limit, add the field
+    to runner-capacity records and waiters, agent-scan meta and waiting wires (with
+    an index schema bump), and the fleet summary contract, and extend the normalize
+    binding.
 
-      "
-  - id: sase-plumbing
-    title: sase launch, persistence, admission, and continuation plumbing
-    depends_on:
-      - core-admission
-    size: medium
-    description: "sase-plumbing: bump the sase-core pin. Then carry
-      `queue_capacity_multiplier` from directive extraction through agent_meta and
-      waiting markers, runner-slot admission records, typed-unit and proc admission, and
-      continuation reauthoring. Update the xprompt and runner-slot docs.
+    '
+- id: sase-plumbing
+  title: sase launch, persistence, admission, and continuation plumbing
+  depends_on:
+  - core-admission
+  size: medium
+  description: 'sase-plumbing: bump the sase-core pin. Then carry `queue_capacity_multiplier`
+    from directive extraction through agent_meta and waiting markers, runner-slot
+    admission records, typed-unit and proc admission, and continuation reauthoring.
+    Update the xprompt and runner-slot docs.
 
-      "
-  - id: sase-surfaces
-    title: TUI and CLI display plus capacity editing surfaces
-    depends_on:
-      - sase-plumbing
-    size: medium
-    description: "sase-surfaces: render multiplier capacities as `c1.5x` badges with
-      resolved units in the TUI detail, wait lane, and queue ladder, and expose them in
-      agent-list JSON. The wait modal and the agent directive edit commands accept
-      `<M>x` and keep it when other queue fields are edited.
+    '
+- id: sase-surfaces
+  title: TUI and CLI display plus capacity editing surfaces
+  depends_on:
+  - sase-plumbing
+  size: medium
+  description: 'sase-surfaces: render multiplier capacities as `c1.5x` badges with
+    resolved units in the TUI detail, wait lane, and queue ladder, and expose them
+    in agent-list JSON. The wait modal and the agent directive edit commands accept
+    `<M>x` and keep it when other queue fields are edited.
 
-      "
-  - id: research-swarm
-    title: Research swarm authors a 1.5x capacity multiplier
-    depends_on:
-      - sase-plumbing
-    size: small
-    description:
-      "research-swarm: in sase-research-artifacts, render `%q(1.5x, w=0.25)` in every
-      swarm segment, with the optional `runners` input replacing the multiplier with an
-      absolute budget. Update the tests, wheel and publish smokes, docs, and dependency
-      floors where a published core supports it."
+    '
+- id: research-swarm
+  title: Research swarm authors a 1.5x capacity multiplier
+  depends_on:
+  - sase-plumbing
+  size: small
+  description: 'research-swarm: in sase-research-artifacts, render `%q(1.5x, w=0.25)`
+    in every swarm segment, with the optional `runners` input replacing the multiplier
+    with an absolute budget. Update the tests, wheel and publish smokes, docs, and
+    dependency floors where a published core supports it.'
 proposed_by: bbugyi200.apollo.1o
 create_time: 2026-09-25 12:24:30
 status: wip
+bead_id: sase-19f
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_capacity_multiplier.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_multiplier.md)
+- **PROMPT:** [prompts/202609/queue_capacity_multiplier.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_capacity_multiplier.md)
+- **BEAD:** [sase-19f](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19f/README.md)
 
 # Plan: `%queue` capacity multiplier (`<M>x`)
 
