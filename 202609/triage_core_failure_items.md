@@ -1,19 +1,16 @@
 ---
 tier: tale
 size: medium
-goal:
-  "sase-core records every failed stage's output as durable, versioned failure items:
-  pure extractors with normalized, workspace-independent signatures (golden-tested on
-  real athena logs), additive cascade-safe triage tables with early fingerprint_before
-  persistence and retention, and the tool_run_triage_extract/record/show bindings, with
-  the wire schema still 1 and the sase repo untouched."
-title:
-  "E3 core-failure-items: triage tables, extractors, normalization, and
-  extract/record/show bindings in sase-core"
+goal: 'sase-core records every failed stage''s output as durable, versioned failure
+  items: pure extractors with normalized, workspace-independent signatures (golden-tested
+  on real athena logs), additive cascade-safe triage tables with early fingerprint_before
+  persistence and retention, and the tool_run_triage_extract/record/show bindings,
+  with the wire schema still 1 and the sase repo untouched.'
+title: 'E3 core-failure-items: triage tables, extractors, normalization, and extract/record/show
+  bindings in sase-core'
 proposed_by: bbugyi200.athena.sase-18j.2
 bead: sase-18j.2
-create_time: 2026-09-24 19:50:23
-status: wip
+status: done
 ---
 
 - **PARENT:**
