@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Repair bead-work preflight integration before sase-19o landing
-goal: Bead-work preflight works with ownerless compatibility callers and landing verification
-  can complete.
+goal:
+  Bead-work preflight works with ownerless compatibility callers and landing
+  verification can complete.
 size: medium
 proposed_by: bbugyi200.athena.sase-19o.land--3
 bead: sase-19o
@@ -11,6 +12,12 @@ status: done
 
 - **BEAD:**
   [sase-19o](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19o/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-19o.land--3--code](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-19o.land--3--code/README.md)
+  - [bbugyi200.athena.sase-19o.land--3--plan](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-19o.land--3--plan/README.md)
+- **COMMITS:**
+  - [566c96b](https://github.com/sase-org/sase/commit/566c96bcdfb98b9d60621ff66ddaa45a66a5ea01)
+    — fix(bead): skip launch-name preflight for ownerless compatibility callers
 
 # Finish sase-19o landing after bead-work preflight drift
 
