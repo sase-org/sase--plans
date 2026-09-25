@@ -3,92 +3,92 @@ tier: epic
 title: Agents-tab Node Finder on the " key
 goal: 'Pressing `"` on the Agents tab opens a large Node Finder modal. It lists every
   reachable sase node as a tree, including nodes hidden by folds, collapsed grouping
-  banners, collapsed or isolated tribe panels, the Agents query, and (last phase) the
-  `I` hide-non-run toggle. Every jumpable row always carries a jump hint. A query bar
-  that starts unfocused (Tab toggles it) fuzzy-filters by node name. Enter and
-  Ctrl+N/Ctrl+P navigate. A fast two-tier preview shows the highlighted node. Every jump
-  lands reliably through the existing identity-based reveal primitive, and every change
-  it makes to view state is announced and can be undone.
+  banners, collapsed or isolated tribe panels, the Agents query, and (last phase)
+  the `I` hide-non-run toggle. Every jumpable row always carries a jump hint. A query
+  bar that starts unfocused (Tab toggles it) fuzzy-filters by node name. Enter and
+  Ctrl+N/Ctrl+P navigate. A fast two-tier preview shows the highlighted node. Every
+  jump lands reliably through the existing identity-based reveal primitive, and every
+  change it makes to view state is announced and can be undone.
 
   '
 phases:
-  - id: finder-model
-    title: Node Finder row model, snapshot, filtering, and hints
-    depends_on: []
-    size: medium
-    description: "finder-model: add the pure row model and the owner-aware snapshot
-      builder, which projects every fold, banner, and panel open and classifies why each
-      row is hidden. Add token-AND fuzzy filtering on name and title, with a contiguous
-      pass, a relaxed fallback, and incremental narrowing. Add prefix-free hint
-      allocation, wrapping cursor math, and the reason and action text, all unit-tested.
+- id: finder-model
+  title: Node Finder row model, snapshot, filtering, and hints
+  depends_on: []
+  size: medium
+  description: 'finder-model: add the pure row model and the owner-aware snapshot
+    builder, which projects every fold, banner, and panel open and classifies why
+    each row is hidden. Add token-AND fuzzy filtering on name and title, with a contiguous
+    pass, a relaxed fallback, and incremental narrowing. Add prefix-free hint allocation,
+    wrapping cursor math, and the reason and action text, all unit-tested.
 
-      "
-  - id: jump-ladder
-    title: Identity jump ladder with an announced query clear
-    depends_on: []
-    size: small
-    description: "jump-ladder: add a non-notifying reveal variant, a query-clear helper
-      that records history and is correct on both agents_unified_query branches, and
-      _jump_to_node_identity. It reveals by identity, clears the Agents query only when
-      the query hides the target, retries, and toasts. Test through a real AcePage.
+    '
+- id: jump-ladder
+  title: Identity jump ladder with an announced query clear
+  depends_on: []
+  size: small
+  description: 'jump-ladder: add a non-notifying reveal variant, a query-clear helper
+    that records history and is correct on both agents_unified_query branches, and
+    _jump_to_node_identity. It reveals by identity, clears the Agents query only when
+    the query hides the target, retries, and toasts. Test through a real AcePage.
 
-      "
-  - id: finder-preview
-    title: Two-tier Node Finder preview
-    depends_on:
-      - finder-model
-    size: medium
-    description: "finder-preview: add the Tier 0 renderers, which do no I/O and paint on
-      every highlight: kind chip, compact identity, breadcrumb, why-hidden and
-      Enter-action lines, and kind-specific in-memory sections. Add the Tier 1
-      prompt-head and reply-tail loader. It is thread-only, never mutates live rows, and
-      sits behind a modal-local LRU.
+    '
+- id: finder-preview
+  title: Two-tier Node Finder preview
+  depends_on:
+  - finder-model
+  size: medium
+  description: 'finder-preview: add the Tier 0 renderers, which do no I/O and paint
+    on every highlight: kind chip, compact identity, breadcrumb, why-hidden and Enter-action
+    lines, and kind-specific in-memory sections. Add the Tier 1 prompt-head and reply-tail
+    loader. It is thread-only, never mutates live rows, and sits behind a modal-local
+    LRU.
 
-      "
-  - id: finder-modal
-    title: NodeFinderModal screen, modes, keys, and layout
-    depends_on:
-      - finder-model
-      - finder-preview
-    size: medium
-    description: 'finder-modal: build the large responsive ModalScreen. It has a tree
-      list with a hint gutter and glyphs for why each row is hidden, a HINTS/SEARCH mode
-      pill, a scope strip, and a preview pane. Add the full key model (hints, Tab and /,
-      Enter, wrapping Ctrl+N/P and arrows, "" back, Esc, invalid-key flash with no leak
-      to the app), debounced off-pump Tier 1 wiring, styles, exports, and modal key
-      tests.
+    '
+- id: finder-modal
+  title: NodeFinderModal screen, modes, keys, and layout
+  depends_on:
+  - finder-model
+  - finder-preview
+  size: medium
+  description: 'finder-modal: build the large responsive ModalScreen. It has a tree
+    list with a hint gutter and glyphs for why each row is hidden, a HINTS/SEARCH
+    mode pill, a scope strip, and a preview pane. Add the full key model (hints, Tab
+    and /, Enter, wrapping Ctrl+N/P and arrows, "" back, Esc, invalid-key flash with
+    no leak to the app), debounced off-pump Tier 1 wiring, styles, exports, and modal
+    key tests.
 
-      '
-  - id: finder-wiring
-    title: Keymap, action, docs, visual goldens, and bench
-    depends_on:
-      - jump-ladder
-      - finder-modal
-    size: medium
-    description: "finder-wiring: bind quotation_mark to jump_to_node on the Agents tab
-      across the keymap validation, dataclass, default config, metadata, bindings,
-      availability, command palette, help, docs, and module exports. Connect the modal's
-      result to the jump ladder and drop the epic-symbol whitelist. Add end-to-end
-      tests, PNG goldens, and the 2,000-node perf bench.
+    '
+- id: finder-wiring
+  title: Keymap, action, docs, visual goldens, and bench
+  depends_on:
+  - jump-ladder
+  - finder-modal
+  size: medium
+  description: 'finder-wiring: bind quotation_mark to jump_to_node on the Agents tab
+    across the keymap validation, dataclass, default config, metadata, bindings, availability,
+    command palette, help, docs, and module exports. Connect the modal''s result to
+    the jump ladder and drop the epic-symbol whitelist. Add end-to-end tests, PNG
+    goldens, and the 2,000-node perf bench.
 
-      "
-  - id: hidden-by-i
-    title: Rows hidden by I, with a flip-and-reveal rung
-    depends_on:
-      - finder-wiring
-    size: medium
-    description:
-      "hidden-by-i: list the running and failed rows that the I hide-non-run toggle
-      hides as ◌ rows, in tree position, from an in-memory pre-hide roster. Add the
-      ladder rung that turns I off, waits for the reload, and then reveals, with a
-      toast. Update the scope strip, tests, and goldens."
+    '
+- id: hidden-by-i
+  title: Rows hidden by I, with a flip-and-reveal rung
+  depends_on:
+  - finder-wiring
+  size: medium
+  description: 'hidden-by-i: list the running and failed rows that the I hide-non-run
+    toggle hides as ◌ rows, in tree position, from an in-memory pre-hide roster. Add
+    the ladder rung that turns I off, waits for the reload, and then reveals, with
+    a toast. Update the scope strip, tests, and goldens.'
 proposed_by: bbugyi200.athena.0s5
 create_time: 2026-09-25 13:06:03
 status: wip
+bead_id: sase-19i
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_node_finder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_node_finder.md)
+- **PROMPT:** [prompts/202609/agents_node_finder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_node_finder.md)
+- **BEAD:** [sase-19i](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/README.md)
 
 # Plan: Agents-tab Node Finder on the `"` key
 
