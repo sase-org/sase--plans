@@ -1,35 +1,33 @@
 ---
 tier: epic
 title: Show agent bead notes in the Main deck Context card
-goal:
-  Agent-authored bead notes appear as readable, correctly attributed previews under SASE
-  CONTEXT / ARTIFACTS / Beads, with current text and reliable navigation to the complete
-  note log.
+goal: Agent-authored bead notes appear as readable, correctly attributed previews
+  under SASE CONTEXT / ARTIFACTS / Beads, with current text and reliable navigation
+  to the complete note log.
 phases:
-  - id: note_index
-    title: Project current agent notes in the Rust bead touch index
-    description:
-      "note_index: extend the core touch-index wire and reduction with bounded,
-      edit-aware, removal-aware note previews; cover schema rebuilds and the Python
-      binding."
-    depends_on: []
-    size: medium
-  - id: context_card
-    title: Render note previews in the Context card
-    description:
-      "context_card: carry indexed notes through the Python touch loader and render
-      compact, attributed note blocks with accessible overflow and full-detail
-      navigation; update docs and visual coverage."
-    depends_on:
-      - note_index
-    size: medium
+- id: note_index
+  title: Project current agent notes in the Rust bead touch index
+  description: 'note_index: extend the core touch-index wire and reduction with bounded,
+    edit-aware, removal-aware note previews; cover schema rebuilds and the Python
+    binding.'
+  depends_on: []
+  size: medium
+- id: context_card
+  title: Render note previews in the Context card
+  description: 'context_card: carry indexed notes through the Python touch loader
+    and render compact, attributed note blocks with accessible overflow and full-detail
+    navigation; update docs and visual coverage.'
+  depends_on:
+  - note_index
+  size: medium
 proposed_by: bbugyi200.athena.0rx
 create_time: 2026-09-25 07:12:27
 status: wip
+bead_id: sase-18z
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_bead_note_previews.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_bead_note_previews.md)
+- **PROMPT:** [prompts/202609/agent_bead_note_previews.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_bead_note_previews.md)
+- **BEAD:** [sase-18z](https://github.com/sase-org/sase--beads/blob/main/pages/sase-18z/README.md)
 
 # Agent bead notes in the Context card
 
