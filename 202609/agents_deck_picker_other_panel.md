@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Deck picker capital letters show a deck in the other panel
-goal:
-  In the Agents deck picker, M/F/T show that deck in the non-focused deck panel, opening
-  a new top-bottom panel when the deck area is single and keeping an existing left-right
-  or top-bottom layout as is, with focus staying on the panel the picker was opened
-  from.
+goal: In the Agents deck picker, M/F/T show that deck in the non-focused deck panel,
+  opening a new top-bottom panel when the deck area is single and keeping an existing
+  left-right or top-bottom layout as is, with focus staying on the panel the picker
+  was opened from.
 size: medium
 proposed_by: bbugyi200.apollo.1p.f0
-create_time: 2026-09-25 11:47:36
-status: wip
+status: done
 ---
 
 # Plan: Capital letters in the deck picker show a deck in the other panel
