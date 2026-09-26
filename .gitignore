@@ -1,6 +1,2 @@
 /links/**/*.lock
 /link-events/**/.staging/
-beads/beads.db
-beads/beads.db-shm
-beads/beads.db-wal
-beads/.bead-mutation-lock.holder
