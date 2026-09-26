@@ -99,7 +99,7 @@ phases:
     tree and update the chezmoi ACE snippet.'
 proposed_by: bbugyi200.athena.0qh
 create_time: 2026-09-23 22:46:31
-status: wip
+status: done
 bead_id: sase-17m
 ---
 
