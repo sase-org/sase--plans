@@ -1,126 +1,116 @@
 ---
 tier: epic
 title: Agent data card blocks - per-shell blocks for the session Reply card
-goal: "Agents-tab deck panels gain a third level, deck -> card -> block. An agent
-  session's Reply card is split into one block per concrete sase shell. A card shown
-  alone spreads its blocks when they fit `ace.agent_decks.block_spread_max_screens` and
-  pages them one shell at a time otherwise. Every node lands on its newest block, `[` /
-  `]` step to older / newer blocks, and a one-row block rail shows the session timeline.
-  The result is intuitive, reliable, fast, and beautiful.
+goal: 'Agents-tab deck panels gain a third level, deck -> card -> block. An agent
+  session''s Reply card is split into one block per concrete sase shell. A card shown
+  alone spreads its blocks when they fit `ace.agent_decks.block_spread_max_screens`
+  and pages them one shell at a time otherwise. Every node lands on its newest block,
+  `[` / `]` step to older / newer blocks, and a one-row block rail shows the session
+  timeline. The result is intuitive, reliable, fast, and beautiful.
 
-  "
+  '
 phases:
-  - id: card-block-model
-    title: CardBlock data model, walkers and block anchors
-    depends_on: []
-    size: medium
-    description:
-      "card-block-model: add the transparent CardBlock and BlockSpreadOnly wrappers,
-      validated CardPart preamble/blocks accessors, one is_card_container helper that
-      every renderable walker uses, salted per-block hint caching, the BLOCK
-      section-anchor role, and block_id divider meta. There is no visual change."
-  - id: block-cursor-model
-    title: Pure block cursor, block-mode decision and config key
-    depends_on: []
-    size: small
-    description:
-      "block-cursor-model: add the pure block_model module (BlockCursor
-      land/reconcile/step/select, arrivals, cycle_block_id, derive_spread_block,
-      decide_block_mode) and the ace.agent_decks.block_spread_max_screens setting with
-      its default-config, schema and parity tests."
-  - id: session-reply-blocks
-    title: Session Reply cards emit one block per sase shell
-    depends_on:
-      - card-block-model
-    size: medium
-    description:
-      "session-reply-blocks: make the agent-session Reply builder wrap each concrete
-      shell phase in a CardBlock whose BlockMeta matches the JUMP roster, in both hint
-      and non-hint modes. Remove the vestigial blank + rule + blank prefix that opens
-      every Reply/Output card, update the test walkers, and regenerate the affected
-      goldens."
-  - id: legacy-followup-blocks
-    title: Blocks for the legacy followup_agents Reply path
-    depends_on:
-      - session-reply-blocks
-    size: small
-    description:
-      "legacy-followup-blocks: give the still-reachable non-session followup_agents
-      Reply path the same per-phase blocks in both modes. This splits its single-Text
-      hint twin per phase and adds the missing gate branch."
-  - id: block-paged-view
-    title: Block-paged projection, newest landing and the card_blocks flag
-    depends_on:
-      - session-reply-blocks
-      - block-cursor-model
-    size: medium
-    description:
-      "block-paged-view: create the card_blocks beta flag. Add DeckPanelBlocksMixin and
-      the MainDeckView block mixin, which decide the block mode for a card shown alone,
-      render one block per page, and land on the newest block. They also follow new
-      shells, keep the reader's block by id, and expose cycle/select and a cached
-      navigable predicate. Add the sticky-Reply bench fixture."
-  - id: block-spread-view
-    title: Block-spread and deck-spread block navigation and transitions
-    depends_on:
-      - block-paged-view
-    size: medium
-    description:
-      "block-spread-view: add chat-log newest landing and anchor-motion navigation for
-      block-spread cards and spread decks, the scroll-derived block cursor, and a
-      block-aware layout reserve. Replace the ad hoc spread/paged anchoring with one
-      hierarchical ReadingAnchor capture/restore that also covers block-mode
-      transitions."
-  - id: block-keys
-    title: The [ and ] card-block keys, gating, footer, help and palette
-    depends_on:
-      - block-paged-view
-    size: medium
-    description:
-      "block-keys: register prev_card_block / next_card_block (defaults [ and ]) through
-      the whole keymap pipeline, including contextual duplicates with the Artifacts
-      sub-tab keys, check_app_action gating, a conditional footer entry, a help row,
-      palette metadata/availability, deck-search exit keys and the parity tests."
-  - id: block-rail
-    title: The one-row block rail
-    depends_on:
-      - block-spread-view
-    size: medium
-    description:
-      "block-rail: add the pure tiered block_rail_text renderer and the pre-composed
-      BlockRail widget, docked under the Main deck panel's top border. It uses roster
-      numbers, glyphs and status colors, an accent pill for the active block, arrival
-      dots, a key hint at the widest tier, click-to-select, focus dimming and theme
-      updates."
-  - id: card-blocks-cutover
-    title: Remove the flag, add goldens, inspect live, and bench
-    depends_on:
-      - legacy-followup-blocks
-      - block-keys
-      - block-rail
-    size: medium
-    description:
-      "card-blocks-cutover: record the flag-off vs flag-on j/k bench, then remove the
-      card_blocks flag (delete the Off branch, close the flag bead). Add and inspect the
-      block-state PNG goldens, inspect live sase screenshot captures, and leave just
-      check green."
-  - id: card-blocks-docs
-    title: User docs for card blocks
-    depends_on:
-      - card-blocks-cutover
-    size: small
-    description:
-      "card-blocks-docs: document the deck -> card -> block hierarchy, the newest-block
-      landing and triage loop, the rail, the [ / ] keys (and the Ctrl+Shift+J/K override
-      caveat) and block_spread_max_screens in docs/ace.md and docs/configuration.md.
-      Record proposed glossary-strand text as a follow-up note, without editing memory."
+- id: card-block-model
+  title: CardBlock data model, walkers and block anchors
+  depends_on: []
+  size: medium
+  description: 'card-block-model: add the transparent CardBlock and BlockSpreadOnly
+    wrappers, validated CardPart preamble/blocks accessors, one is_card_container
+    helper that every renderable walker uses, salted per-block hint caching, the BLOCK
+    section-anchor role, and block_id divider meta. There is no visual change.'
+- id: block-cursor-model
+  title: Pure block cursor, block-mode decision and config key
+  depends_on: []
+  size: small
+  description: 'block-cursor-model: add the pure block_model module (BlockCursor land/reconcile/step/select,
+    arrivals, cycle_block_id, derive_spread_block, decide_block_mode) and the ace.agent_decks.block_spread_max_screens
+    setting with its default-config, schema and parity tests.'
+- id: session-reply-blocks
+  title: Session Reply cards emit one block per sase shell
+  depends_on:
+  - card-block-model
+  size: medium
+  description: 'session-reply-blocks: make the agent-session Reply builder wrap each
+    concrete shell phase in a CardBlock whose BlockMeta matches the JUMP roster, in
+    both hint and non-hint modes. Remove the vestigial blank + rule + blank prefix
+    that opens every Reply/Output card, update the test walkers, and regenerate the
+    affected goldens.'
+- id: legacy-followup-blocks
+  title: Blocks for the legacy followup_agents Reply path
+  depends_on:
+  - session-reply-blocks
+  size: small
+  description: 'legacy-followup-blocks: give the still-reachable non-session followup_agents
+    Reply path the same per-phase blocks in both modes. This splits its single-Text
+    hint twin per phase and adds the missing gate branch.'
+- id: block-paged-view
+  title: Block-paged projection, newest landing and the card_blocks flag
+  depends_on:
+  - session-reply-blocks
+  - block-cursor-model
+  size: medium
+  description: 'block-paged-view: create the card_blocks beta flag. Add DeckPanelBlocksMixin
+    and the MainDeckView block mixin, which decide the block mode for a card shown
+    alone, render one block per page, and land on the newest block. They also follow
+    new shells, keep the reader''s block by id, and expose cycle/select and a cached
+    navigable predicate. Add the sticky-Reply bench fixture.'
+- id: block-spread-view
+  title: Block-spread and deck-spread block navigation and transitions
+  depends_on:
+  - block-paged-view
+  size: medium
+  description: 'block-spread-view: add chat-log newest landing and anchor-motion navigation
+    for block-spread cards and spread decks, the scroll-derived block cursor, and
+    a block-aware layout reserve. Replace the ad hoc spread/paged anchoring with one
+    hierarchical ReadingAnchor capture/restore that also covers block-mode transitions.'
+- id: block-keys
+  title: The [ and ] card-block keys, gating, footer, help and palette
+  depends_on:
+  - block-paged-view
+  size: medium
+  description: 'block-keys: register prev_card_block / next_card_block (defaults [
+    and ]) through the whole keymap pipeline, including contextual duplicates with
+    the Artifacts sub-tab keys, check_app_action gating, a conditional footer entry,
+    a help row, palette metadata/availability, deck-search exit keys and the parity
+    tests.'
+- id: block-rail
+  title: The one-row block rail
+  depends_on:
+  - block-spread-view
+  size: medium
+  description: 'block-rail: add the pure tiered block_rail_text renderer and the pre-composed
+    BlockRail widget, docked under the Main deck panel''s top border. It uses roster
+    numbers, glyphs and status colors, an accent pill for the active block, arrival
+    dots, a key hint at the widest tier, click-to-select, focus dimming and theme
+    updates.'
+- id: card-blocks-cutover
+  title: Remove the flag, add goldens, inspect live, and bench
+  depends_on:
+  - legacy-followup-blocks
+  - block-keys
+  - block-rail
+  size: medium
+  description: 'card-blocks-cutover: record the flag-off vs flag-on j/k bench, then
+    remove the card_blocks flag (delete the Off branch, close the flag bead). Add
+    and inspect the block-state PNG goldens, inspect live sase screenshot captures,
+    and leave just check green.'
+- id: card-blocks-docs
+  title: User docs for card blocks
+  depends_on:
+  - card-blocks-cutover
+  size: small
+  description: 'card-blocks-docs: document the deck -> card -> block hierarchy, the
+    newest-block landing and triage loop, the rail, the [ / ] keys (and the Ctrl+Shift+J/K
+    override caveat) and block_spread_max_screens in docs/ace.md and docs/configuration.md.
+    Record proposed glossary-strand text as a follow-up note, without editing memory.'
 proposed_by: bbugyi200.athena.0s4
 create_time: 2026-09-25 20:37:35
 status: wip
+bead_id: sase-19x
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_data_card_blocks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_data_card_blocks.md)
+- **PROMPT:** [prompts/202609/agent_data_card_blocks.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_data_card_blocks.md)
+- **BEAD:** [sase-19x](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19x/README.md)
 
 # Plan: Agent data card blocks
 
