@@ -1,57 +1,52 @@
 ---
 tier: epic
 title: Prompt recall tabs and bounded stash trash
-goal:
-  One reliable Prompts overlay unifies draft recall while bounded, transactional Trash
-  makes deliberate stash discards recoverable.
+goal: One reliable Prompts overlay unifies draft recall while bounded, transactional
+  Trash makes deliberate stash discards recoverable.
 phases:
-  - id: stash_lifecycle
-    title: Transactional stash trash in Rust core
-    size: medium
-    depends_on: []
-    description:
-      "stash_lifecycle: implement the atomic Rust stash lifecycle, binding, backup, and
-      data-integrity tests."
-  - id: python_contract
-    title: Python contract, configuration, and upgrade boundary
-    size: medium
-    depends_on:
-      - stash_lifecycle
-    description:
-      "python_contract: expose strict Python wires and config, then pin a core revision
-      with the new binding."
-  - id: prompts_shell
-    title: Reusable Prompts overlay and existing Stash and History panes
-    size: medium
-    depends_on: []
-    description:
-      "prompts_shell: build a lazy tabbed modal with preserved Stash, History, and
-      origin behavior."
-  - id: trash_interactions
-    title: Trash pane and reliable staged actions
-    size: medium
-    depends_on:
-      - stash_lifecycle
-      - python_contract
-      - prompts_shell
-    description:
-      "trash_interactions: add Trash actions, confirmations, authoritative repaint,
-      styling, and tests."
-  - id: rollout_polish
-    title: Atomic entry-point rollout, documentation, and visual acceptance
-    size: medium
-    depends_on:
-      - trash_interactions
-    description:
-      "rollout_polish: route all shortcuts to the complete overlay and finish docs,
-      glossary, visuals, and checks."
+- id: stash_lifecycle
+  title: Transactional stash trash in Rust core
+  size: medium
+  depends_on: []
+  description: 'stash_lifecycle: implement the atomic Rust stash lifecycle, binding,
+    backup, and data-integrity tests.'
+- id: python_contract
+  title: Python contract, configuration, and upgrade boundary
+  size: medium
+  depends_on:
+  - stash_lifecycle
+  description: 'python_contract: expose strict Python wires and config, then pin a
+    core revision with the new binding.'
+- id: prompts_shell
+  title: Reusable Prompts overlay and existing Stash and History panes
+  size: medium
+  depends_on: []
+  description: 'prompts_shell: build a lazy tabbed modal with preserved Stash, History,
+    and origin behavior.'
+- id: trash_interactions
+  title: Trash pane and reliable staged actions
+  size: medium
+  depends_on:
+  - stash_lifecycle
+  - python_contract
+  - prompts_shell
+  description: 'trash_interactions: add Trash actions, confirmations, authoritative
+    repaint, styling, and tests.'
+- id: rollout_polish
+  title: Atomic entry-point rollout, documentation, and visual acceptance
+  size: medium
+  depends_on:
+  - trash_interactions
+  description: 'rollout_polish: route all shortcuts to the complete overlay and finish
+    docs, glossary, visuals, and checks.'
 proposed_by: bbugyi200.athena.0sy
 create_time: 2026-09-26 14:44:18
 status: wip
+bead_id: sase-1au
 ---
 
-- **PROMPT:**
-  [prompts/202609/prompt_recall_tabs_and_stash_trash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_recall_tabs_and_stash_trash.md)
+- **PROMPT:** [prompts/202609/prompt_recall_tabs_and_stash_trash.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_recall_tabs_and_stash_trash.md)
+- **BEAD:** [sase-1au](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1au/README.md)
 
 # Prompt recall tabs and bounded stash trash
 
