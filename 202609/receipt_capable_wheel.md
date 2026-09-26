@@ -1,38 +1,35 @@
 ---
 tier: epic
 title: Publish the receipt-capable core wheel and raise the sase floor
-goal:
-  Unblock the sase-core release that contains the receipt report binding, publish a
-  complete sase-core-rs wheel, and raise sase's declared floor so a fresh wheel install
-  accepts the catalog receipt policy.
+goal: Unblock the sase-core release that contains the receipt report binding, publish
+  a complete sase-core-rs wheel, and raise sase's declared floor so a fresh wheel
+  install accepts the catalog receipt policy.
 parent_bead: sase-1ah.8
 phases:
-  - id: unblock-core-release
-    title: Let release-plz select the gateway across a minor bump
-    depends_on: []
-    size: small
-    description:
-      "unblock-core-release: drop the caret pin on the unpublished sase_gateway
-      workspace path dependency so release-plz can cut the 0.35.0 release that contains
-      the receipt binding."
-  - id: ratchet-receipt-wheel
-    title: Publish the wheel and raise the sase floor
-    depends_on:
-      - unblock-core-release
-    size: medium
-    description:
-      "ratchet-receipt-wheel: cut the urgent sase-core release, confirm a complete
-      receipt-capable sase-core-rs wheel, and raise sase's floor with a fresh-install
-      proof."
+- id: unblock-core-release
+  title: Let release-plz select the gateway across a minor bump
+  depends_on: []
+  size: small
+  description: 'unblock-core-release: drop the caret pin on the unpublished sase_gateway
+    workspace path dependency so release-plz can cut the 0.35.0 release that contains
+    the receipt binding.'
+- id: ratchet-receipt-wheel
+  title: Publish the wheel and raise the sase floor
+  depends_on:
+  - unblock-core-release
+  size: medium
+  description: 'ratchet-receipt-wheel: cut the urgent sase-core release, confirm a
+    complete receipt-capable sase-core-rs wheel, and raise sase''s floor with a fresh-install
+    proof.'
 proposed_by: bbugyi200.athena.sase-1ah.8.land
 create_time: 2026-09-26 18:37:43
 status: wip
+bead_id: sase-1ah.8.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/receipt_capable_wheel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/receipt_capable_wheel.md)
-- **PARENT:**
-  [202609/e4_landing_remainder.md](https://github.com/sase-org/sase--plans/blob/main/202609/e4_landing_remainder.md)
+- **PROMPT:** [prompts/202609/receipt_capable_wheel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/receipt_capable_wheel.md)
+- **PARENT:** [202609/e4_landing_remainder.md](https://github.com/sase-org/sase--plans/blob/main/202609/e4_landing_remainder.md)
+- **BEAD:** [sase-1ah.8.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ah/sase-1ah.8.4.md)
 
 # Publish the receipt-capable core wheel and raise the sase floor
 
