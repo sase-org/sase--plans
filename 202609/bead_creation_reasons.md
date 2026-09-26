@@ -1,41 +1,40 @@
 ---
 tier: epic
 title: Make agent-filed beads explain themselves in Context
-goal:
-  Every new bead records why it was created, and agent-created beads are recognizable
+goal: Every new bead records why it was created, and agent-created beads are recognizable
   and informative in the Context card.
 phases:
-  - id: durable_reason
-    title: Persist and index the bead creation reason in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "durable_reason: add a validated, immutable creation reason to bead creation,
-      storage, events, and the touch index while keeping historical beads readable."
-  - id: creation_flows
-    title: Require reasons in user creation flows and supply them in generated flows
-    depends_on:
-      - durable_reason
-    size: medium
-    description:
-      "creation_flows: wire the reason through Python, require it in CLI and TUI
-      creation, update generated creators and guidance, and ratchet the core revision."
-  - id: context_presentation
-    title: Give created and assigned beads distinct, polished Context treatments
-    depends_on:
-      - creation_flows
-    size: medium
-    description:
-      "context_presentation: show a prominent created state and its reason, clarify
-      assignment-only rows, expose reasons in bead details, and verify responsive visual
-      output."
+- id: durable_reason
+  title: Persist and index the bead creation reason in sase-core
+  depends_on: []
+  size: medium
+  description: 'durable_reason: add a validated, immutable creation reason to bead
+    creation, storage, events, and the touch index while keeping historical beads
+    readable.'
+- id: creation_flows
+  title: Require reasons in user creation flows and supply them in generated flows
+  depends_on:
+  - durable_reason
+  size: medium
+  description: 'creation_flows: wire the reason through Python, require it in CLI
+    and TUI creation, update generated creators and guidance, and ratchet the core
+    revision.'
+- id: context_presentation
+  title: Give created and assigned beads distinct, polished Context treatments
+  depends_on:
+  - creation_flows
+  size: medium
+  description: 'context_presentation: show a prominent created state and its reason,
+    clarify assignment-only rows, expose reasons in bead details, and verify responsive
+    visual output.'
 proposed_by: bbugyi200.athena.0sv
 create_time: 2026-09-26 11:35:46
 status: wip
+bead_id: sase-1ap
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_creation_reasons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_creation_reasons.md)
+- **PROMPT:** [prompts/202609/bead_creation_reasons.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_creation_reasons.md)
+- **BEAD:** [sase-1ap](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ap/README.md)
 
 # Problem and intended behavior
 
