@@ -1,48 +1,44 @@
 ---
 tier: epic
 title: Group scheduled routines by declaring source in Services navigation
-goal:
-  Make user, plugin, and builtin routines immediately findable in distinct, reliable
+goal: Make user, plugin, and builtin routines immediately findable in distinct, reliable
   Services nav sections while preserving fast navigation and visible health.
 phases:
-  - id: core_origin
-    title: Establish routine and job declaring-source contract
-    depends_on: []
-    description:
-      "core_origin: add stable first-declaration metadata to AXE inventory, with
-      composition and generated-job tests."
-    size: medium
-  - id: python_origin
-    title: Consume source metadata and expose it consistently
-    depends_on:
-      - core_origin
-    description:
-      "python_origin: ratchet the core revision and expose typed origin through cached
-      config, CLI, and Services details."
-    size: medium
-  - id: source_panels
-    title: Build source-based Services nav sections
-    depends_on:
-      - python_origin
-    description:
-      "source_panels: replace the single routine panel with fixed source sections and
-      coherent row ordering, focus, sizing, and navigation."
-    size: medium
-  - id: density_polish
-    title: Make dense builtin navigation calm and observable
-    depends_on:
-      - source_panels
-    description:
-      "density_polish: add cached health badges before default folding, then verify
-      visual design, documentation, and layout."
-    size: medium
+- id: core_origin
+  title: Establish routine and job declaring-source contract
+  depends_on: []
+  description: 'core_origin: add stable first-declaration metadata to AXE inventory,
+    with composition and generated-job tests.'
+  size: medium
+- id: python_origin
+  title: Consume source metadata and expose it consistently
+  depends_on:
+  - core_origin
+  description: 'python_origin: ratchet the core revision and expose typed origin through
+    cached config, CLI, and Services details.'
+  size: medium
+- id: source_panels
+  title: Build source-based Services nav sections
+  depends_on:
+  - python_origin
+  description: 'source_panels: replace the single routine panel with fixed source
+    sections and coherent row ordering, focus, sizing, and navigation.'
+  size: medium
+- id: density_polish
+  title: Make dense builtin navigation calm and observable
+  depends_on:
+  - source_panels
+  description: 'density_polish: add cached health badges before default folding, then
+    verify visual design, documentation, and layout.'
+  size: medium
 proposed_by: bbugyi200.apollo.1v
 create_time: 2026-09-26 07:23:35
 status: wip
+bead_id: sase-1af
 ---
 
-- **PROMPT:**
-  [prompts/202609/routine_source_nav_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_source_nav_sections.md)
+- **PROMPT:** [prompts/202609/routine_source_nav_sections.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/routine_source_nav_sections.md)
+- **BEAD:** [sase-1af](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1af/README.md)
 
 # Design
 
