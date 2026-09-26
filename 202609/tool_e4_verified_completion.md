@@ -1,81 +1,77 @@
 ---
 tier: epic
-title: "E4: Verified completion with fingerprint-bound verdict receipts"
-goal: "A named verification run can mint a short-lived receipt for its exact fingerprint
+title: 'E4: Verified completion with fingerprint-bound verdict receipts'
+goal: 'A named verification run can mint a short-lived receipt for its exact fingerprint
   and trustworthy E3 verdict; users and host-owned prepared completion can query that
   proof, while every tool invocation still executes and any drift or uncertain failure
   recovers.
 
-  "
+  '
 phases:
-  - id: hermetic-baseline
-    title: Recheck E3 precision and verification inputs
-    depends_on: []
-    size: medium
-    description:
-      "hermetic-baseline: re-run the KNOWN precision gate, inventory changing lint and
-      bead inputs, and make check fingerprints complete within bounded probe cost."
-  - id: rust-receipts
-    title: Add the Rust receipt contract and durable store
-    depends_on:
-      - hermetic-baseline
-    size: large
-    description:
-      "rust-receipts: add additive schema-1 receipt storage, strict mint and
-      invalidation rules, typed lookup refusals, retention, bindings, and compatibility
-      tests."
-  - id: core-pin-catalog
-    title: Pin the released core before catalog adoption
-    depends_on:
-      - rust-receipts
-    size: medium
-    description:
-      "core-pin-catalog: ratchet sase to a published receipt-capable core, create the
-      beta flag, then declare per-tool accept and TTL policy without moving definition
-      identity."
-  - id: receipt-execution-cli
-    title: Mint and query receipts on both execution paths
-    depends_on:
-      - core-pin-catalog
-    size: medium
-    description:
-      "receipt-execution-cli: wire foreground and handed-off settlement to Rust minting
-      and expose a truthful receipt query with versioned JSON and exact exit codes."
-  - id: opportunity-report
-    title: Measure content-equivalent verification repeats
-    depends_on:
-      - receipt-execution-cli
-    size: medium
-    description:
-      "opportunity-report: list receipts and report content-addressed repeat
-      opportunities, including dirty-tree-to-commit equivalence, without changing run
-      behavior."
-  - id: verdict-completion
-    title: Gate prepared completion on a covering receipt
-    depends_on:
-      - receipt-execution-cli
-    size: large
-    description:
-      "verdict-completion: add explicit no-new intent policy, recheck the verified tree
-      at commit time, recover with typed refusals, and record provenance in host
-      actions."
-  - id: landing-proof
-    title: Prove acceptance and remove the beta flag
-    depends_on:
-      - opportunity-report
-      - verdict-completion
-    size: medium
-    description:
-      "landing-proof: exercise all nine landing gates, demonstrate athena completion,
-      document the contract, publish authorized memory and skill sources, and remove the
-      flag."
+- id: hermetic-baseline
+  title: Recheck E3 precision and verification inputs
+  depends_on: []
+  size: medium
+  description: 'hermetic-baseline: re-run the KNOWN precision gate, inventory changing
+    lint and bead inputs, and make check fingerprints complete within bounded probe
+    cost.'
+- id: rust-receipts
+  title: Add the Rust receipt contract and durable store
+  depends_on:
+  - hermetic-baseline
+  size: large
+  description: 'rust-receipts: add additive schema-1 receipt storage, strict mint
+    and invalidation rules, typed lookup refusals, retention, bindings, and compatibility
+    tests.'
+- id: core-pin-catalog
+  title: Pin the released core before catalog adoption
+  depends_on:
+  - rust-receipts
+  size: medium
+  description: 'core-pin-catalog: ratchet sase to a published receipt-capable core,
+    create the beta flag, then declare per-tool accept and TTL policy without moving
+    definition identity.'
+- id: receipt-execution-cli
+  title: Mint and query receipts on both execution paths
+  depends_on:
+  - core-pin-catalog
+  size: medium
+  description: 'receipt-execution-cli: wire foreground and handed-off settlement to
+    Rust minting and expose a truthful receipt query with versioned JSON and exact
+    exit codes.'
+- id: opportunity-report
+  title: Measure content-equivalent verification repeats
+  depends_on:
+  - receipt-execution-cli
+  size: medium
+  description: 'opportunity-report: list receipts and report content-addressed repeat
+    opportunities, including dirty-tree-to-commit equivalence, without changing run
+    behavior.'
+- id: verdict-completion
+  title: Gate prepared completion on a covering receipt
+  depends_on:
+  - receipt-execution-cli
+  size: large
+  description: 'verdict-completion: add explicit no-new intent policy, recheck the
+    verified tree at commit time, recover with typed refusals, and record provenance
+    in host actions.'
+- id: landing-proof
+  title: Prove acceptance and remove the beta flag
+  depends_on:
+  - opportunity-report
+  - verdict-completion
+  size: medium
+  description: 'landing-proof: exercise all nine landing gates, demonstrate athena
+    completion, document the contract, publish authorized memory and skill sources,
+    and remove the flag.'
 proposed_by: bbugyi200.athena.0st
 create_time: 2026-09-26 07:26:21
 status: wip
+bead_id: sase-1ag
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_e4_verified_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e4_verified_completion.md)
+- **PROMPT:** [prompts/202609/tool_e4_verified_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_e4_verified_completion.md)
+- **BEAD:** [sase-1ag](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ag/README.md)
 
 # Plan: E4 verified completion
 
