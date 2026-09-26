@@ -1,53 +1,49 @@
 ---
 tier: epic
 title: Make built-in model and size-alias updates a one-file edit
-goal:
-  Maintainers update one bundled manifest for built-in model catalogs, tier defaults,
-  and size-alias pools, then regenerate checked documentation without editing
-  value-pinned tests.
+goal: Maintainers update one bundled manifest for built-in model catalogs, tier defaults,
+  and size-alias pools, then regenerate checked documentation without editing value-pinned
+  tests.
 phases:
-  - id: data_driven_tests
-    title:
-      Replace shipped-value copies in tests and guard the existing generated alias table
-    depends_on: []
-    size: medium
-    description:
-      "data_driven_tests: derive routing and completion expectations from shipped data,
-      preserve behavioral policy tests, and add a generated-doc drift check to fast
-      verification and CI."
-  - id: unified_manifest
-    title: Move built-in provider model data and size aliases into one manifest
-    depends_on:
-      - data_driven_tests
-    size: medium
-    description:
-      "unified_manifest: add a strictly validated, lazy models.yml loader and migrate
-      seven provider hooks and tier invocation defaults while preserving current
-      metadata and completion output."
-  - id: model_policy
-    title: Validate shipped size-alias policy from the manifest
-    depends_on:
-      - unified_manifest
-    size: medium
-    description:
-      "model_policy: enforce catalog membership, effort support and descent, provider
-      redundancy, and deliberate selector shape with actionable diagnostics."
-  - id: generated_model_docs
-    title: Generate model tables and prove the maintainer workflow
-    depends_on:
-      - model_policy
-    size: medium
-    description:
-      "generated_model_docs: render mirrored model tables from YAML, replace freshness
-      prose with table links, and verify a catalog or pool update requires only one
-      hand-edited file."
+- id: data_driven_tests
+  title: Replace shipped-value copies in tests and guard the existing generated alias
+    table
+  depends_on: []
+  size: medium
+  description: 'data_driven_tests: derive routing and completion expectations from
+    shipped data, preserve behavioral policy tests, and add a generated-doc drift
+    check to fast verification and CI.'
+- id: unified_manifest
+  title: Move built-in provider model data and size aliases into one manifest
+  depends_on:
+  - data_driven_tests
+  size: medium
+  description: 'unified_manifest: add a strictly validated, lazy models.yml loader
+    and migrate seven provider hooks and tier invocation defaults while preserving
+    current metadata and completion output.'
+- id: model_policy
+  title: Validate shipped size-alias policy from the manifest
+  depends_on:
+  - unified_manifest
+  size: medium
+  description: 'model_policy: enforce catalog membership, effort support and descent,
+    provider redundancy, and deliberate selector shape with actionable diagnostics.'
+- id: generated_model_docs
+  title: Generate model tables and prove the maintainer workflow
+  depends_on:
+  - model_policy
+  size: medium
+  description: 'generated_model_docs: render mirrored model tables from YAML, replace
+    freshness prose with table links, and verify a catalog or pool update requires
+    only one hand-edited file.'
 proposed_by: bbugyi200.apollo.1t
 create_time: 2026-09-25 22:26:12
 status: wip
+bead_id: sase-1aa
 ---
 
-- **PROMPT:**
-  [prompts/202609/model_catalog_maintenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_catalog_maintenance.md)
+- **PROMPT:** [prompts/202609/model_catalog_maintenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_catalog_maintenance.md)
+- **BEAD:** [sase-1aa](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aa/README.md)
 
 # Context and outcome
 
