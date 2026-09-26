@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Clear the agent-session terminology regression in closed-bead landing
-goal:
-  The close-attribution epic passes its terminology contract on the integrated tree,
-  with no remaining failures caused by sase-19p.
+goal: The close-attribution epic passes its terminology contract on the integrated
+  tree, with no remaining failures caused by sase-19p.
 parent_bead: sase-19p
 phases:
-  - id: terminology
-    title: Remove the stale family identifier introduced by the close-plumbing phase
-    depends_on: []
-    size: small
-    description:
-      "terminology: remove the retired family wire-key mention from the runner-slot
-      capacity projection docstring and verify the source terminology contract."
+- id: terminology
+  title: Remove the stale family identifier introduced by the close-plumbing phase
+  depends_on: []
+  size: small
+  description: 'terminology: remove the retired family wire-key mention from the runner-slot
+    capacity projection docstring and verify the source terminology contract.'
 proposed_by: bbugyi200.athena.sase-19p.land
 create_time: 2026-09-25 21:50:28
 status: wip
+bead_id: sase-19p.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_closed_bead_landing_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_closed_bead_landing_cleanup.md)
-- **PARENT:**
-  [202609/agent_closed_beads.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_closed_beads.md)
+- **PROMPT:** [prompts/202609/agent_closed_bead_landing_cleanup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_closed_bead_landing_cleanup.md)
+- **PARENT:** [202609/agent_closed_beads.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_closed_beads.md)
+- **BEAD:** [sase-19p.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19p/sase-19p.4.md)
 
 # Finish agent-closed bead landing after terminology regression
 
