@@ -1,45 +1,42 @@
 ---
 tier: epic
 title: Finish model manifest parity cleanup and maintenance proof
-goal:
-  Remove the temporary migration snapshot and stale manual model lists, then prove that
-  a synthetic built-in model update reaches every existing model surface through
+goal: Remove the temporary migration snapshot and stale manual model lists, then prove
+  that a synthetic built-in model update reaches every existing model surface through
   models.yml alone.
 parent_bead: sase-1aa
 phases:
-  - id: retire_baseline
-    title: Remove the temporary model-catalog parity snapshot
-    depends_on: []
-    size: small
-    description:
-      "retire_baseline: remove the phase-1 migration snapshot after confirming no
-      runtime or test consumer needs it; retain behavior-based parity checks."
-  - id: refresh_prose
-    title: Replace stale model and pool enumerations with generated-table links
-    depends_on: []
-    size: medium
-    description:
-      "refresh_prose: remove the duplicate manual model list and rewrite current-value
-      prose that would go stale after a manifest-only catalog or alias retune."
-  - id: exercise_manifest
-    title: Prove a synthetic manifest update across model surfaces
-    depends_on:
-      - retire_baseline
-      - refresh_prose
-    size: medium
-    description:
-      "exercise_manifest: demonstrate that one manifest edit reaches routing, alias
-      resolution, TUI picker/completion, and the LSP payload, with generated docs as the
-      only derived file."
+- id: retire_baseline
+  title: Remove the temporary model-catalog parity snapshot
+  depends_on: []
+  size: small
+  description: 'retire_baseline: remove the phase-1 migration snapshot after confirming
+    no runtime or test consumer needs it; retain behavior-based parity checks.'
+- id: refresh_prose
+  title: Replace stale model and pool enumerations with generated-table links
+  depends_on: []
+  size: medium
+  description: 'refresh_prose: remove the duplicate manual model list and rewrite
+    current-value prose that would go stale after a manifest-only catalog or alias
+    retune.'
+- id: exercise_manifest
+  title: Prove a synthetic manifest update across model surfaces
+  depends_on:
+  - retire_baseline
+  - refresh_prose
+  size: medium
+  description: 'exercise_manifest: demonstrate that one manifest edit reaches routing,
+    alias resolution, TUI picker/completion, and the LSP payload, with generated docs
+    as the only derived file.'
 proposed_by: bbugyi200.apollo.sase-1aa.land
 create_time: 2026-09-26 08:43:31
 status: wip
+bead_id: sase-1aa.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_model_catalog_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_model_catalog_landing.md)
-- **PARENT:**
-  [202609/model_catalog_maintenance.md](https://github.com/sase-org/sase--plans/blob/main/202609/model_catalog_maintenance.md)
+- **PROMPT:** [prompts/202609/finish_model_catalog_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_model_catalog_landing.md)
+- **PARENT:** [202609/model_catalog_maintenance.md](https://github.com/sase-org/sase--plans/blob/main/202609/model_catalog_maintenance.md)
+- **BEAD:** [sase-1aa.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aa/sase-1aa.5.md)
 
 # Remaining work from sase-1aa landing audit
 
