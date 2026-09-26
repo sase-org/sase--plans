@@ -1,27 +1,25 @@
 ---
 tier: epic
 title: Complete Services source-panel visual and performance verification
-goal:
-  Cover the promised source combinations and terminal sizes with reviewed PNG goldens,
-  and verify navigation and refresh cost before sase-1af lands.
+goal: Cover the promised source combinations and terminal sizes with reviewed PNG
+  goldens, and verify navigation and refresh cost before sase-1af lands.
 parent_bead: sase-1af
 phases:
-  - id: source_visual_verification
-    title: Cover Services source panels and verify visual and navigation cost
-    depends_on: []
-    description:
-      "source_visual_verification: add reviewed Services source-combination PNGs and
-      record navigation and refresh measurements."
-    size: medium
+- id: source_visual_verification
+  title: Cover Services source panels and verify visual and navigation cost
+  depends_on: []
+  description: 'source_visual_verification: add reviewed Services source-combination
+    PNGs and record navigation and refresh measurements.'
+  size: medium
 proposed_by: bbugyi200.apollo.sase-1af.land
 create_time: 2026-09-26 11:43:20
 status: wip
+bead_id: sase-1af.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/services_source_visual_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_source_visual_completion.md)
-- **PARENT:**
-  [202609/routine_source_nav_sections.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_source_nav_sections.md)
+- **PROMPT:** [prompts/202609/services_source_visual_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/services_source_visual_completion.md)
+- **PARENT:** [202609/routine_source_nav_sections.md](https://github.com/sase-org/sase--plans/blob/main/202609/routine_source_nav_sections.md)
+- **BEAD:** [sase-1af.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1af/sase-1af.5.md)
 
 # Remaining work
 
