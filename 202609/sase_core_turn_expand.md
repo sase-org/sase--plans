@@ -1,65 +1,63 @@
 ---
 tier: epic
 title: sase-core additive sase-turn rename (core-expand)
-goal: "sase-core names the former sase-shell concept with turn and named-proc vocabulary
+goal: 'sase-core names the former sase-shell concept with turn and named-proc vocabulary
   in Rust modules, types, functions, constants, tests, comments, and messages, and
-  registers the two new pyo3 binding names next to the legacy ones. Every renamed input
-  accepts the old and new spellings. Serialized output, schema versions, the SQLite
-  gate_shell_id column, and goldens stay byte-identical, so a sase tree pinned to the
-  previous core, and a sase workspace rebuilt against this core, still passes sase tool
-  run check with no sase source changes.
+  registers the two new pyo3 binding names next to the legacy ones. Every renamed
+  input accepts the old and new spellings. Serialized output, schema versions, the
+  SQLite gate_shell_id column, and goldens stay byte-identical, so a sase tree pinned
+  to the previous core, and a sase workspace rebuilt against this core, still passes
+  sase tool run check with no sase source changes.
 
-  "
+  '
 parent_bead: sase-1ab.1
 phases:
-  - id: scan-wires
-    title: Agent-scan wires and gate lookup
-    depends_on: []
-    size: medium
-    description: "scan-wires: rename the agent-scan shell wires, hand-read meta keys,
-      and gate-id lookup, pin legacy serde output, keep the SQLite column, and register
-      the new gate lookup binding beside the legacy one.
+- id: scan-wires
+  title: Agent-scan wires and gate lookup
+  depends_on: []
+  size: medium
+  description: 'scan-wires: rename the agent-scan shell wires, hand-read meta keys,
+    and gate-id lookup, pin legacy serde output, keep the SQLite column, and register
+    the new gate lookup binding beside the legacy one.
 
-      "
-  - id: procs
-    title: Named-proc store, launch, and holds
-    depends_on:
-      - scan-wires
-    size: medium
-    description: "procs: rename proc-shell fields, lifecycle helpers, launch-plan names,
-      and hold candidates to named-proc vocabulary, accept the new spellings, keep
-      emitted values legacy, and register the new name validator beside the legacy
-      binding.
+    '
+- id: procs
+  title: Named-proc store, launch, and holds
+  depends_on:
+  - scan-wires
+  size: medium
+  description: 'procs: rename proc-shell fields, lifecycle helpers, launch-plan names,
+    and hold candidates to named-proc vocabulary, accept the new spellings, keep emitted
+    values legacy, and register the new name validator beside the legacy binding.
 
-      "
-  - id: fleet-runtime
-    title: Fleet, runner capacity, and gateway
-    depends_on:
-      - procs
-    size: medium
-    description: "fleet-runtime: rename fleet row kinds, locator ids, owner status, and
-      runner-slot shell fields, emit the legacy spellings, accept the new ones, and
-      leave the fleet golden unchanged.
+    '
+- id: fleet-runtime
+  title: Fleet, runner capacity, and gateway
+  depends_on:
+  - procs
+  size: medium
+  description: 'fleet-runtime: rename fleet row kinds, locator ids, owner status,
+    and runner-slot shell fields, emit the legacy spellings, accept the new ones,
+    and leave the fleet golden unchanged.
 
-      "
-  - id: sweep
-    title: Editor text, classification, and cross-repo check
-    depends_on:
-      - fleet-runtime
-    size: small
-    description:
-      "sweep: retarget the editor proc snippet, classify every remaining shell hit, and
-      prove a sase workspace rebuilt against this core passes check with no sase source
-      changes."
+    '
+- id: sweep
+  title: Editor text, classification, and cross-repo check
+  depends_on:
+  - fleet-runtime
+  size: small
+  description: 'sweep: retarget the editor proc snippet, classify every remaining
+    shell hit, and prove a sase workspace rebuilt against this core passes check with
+    no sase source changes.'
 proposed_by: bbugyi200.athena.sase-1ab.1
 create_time: 2026-09-26 00:28:10
 status: wip
+bead_id: sase-1ab.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_core_turn_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_turn_expand.md)
-- **PARENT:**
-  [202609/sase_turn_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_turn_rename.md)
+- **PROMPT:** [prompts/202609/sase_core_turn_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_core_turn_expand.md)
+- **PARENT:** [202609/sase_turn_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_turn_rename.md)
+- **BEAD:** [sase-1ab.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ab/sase-1ab.1.1.md)
 
 # Plan: sase-core additive sase-turn rename (core-expand)
 
