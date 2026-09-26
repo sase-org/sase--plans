@@ -1,109 +1,104 @@
 ---
 tier: epic
 title: Rename sase shell to sase turn
-goal:
-  'The concept formerly called a sase shell is named a sase turn on every current
-  surface in sase, sase-core, sase-telegram, sase-github, sase-research-artifacts, and
-  chezmoi: code, wire contracts, persisted output, CLI, gate specs, config, the TUI,
-  skills, docs, and memory. Agent, gate, and monitor shells become agent, gate, and
-  monitor turns, and stand-alone proc shells become named procs. Pre-rename data still
-  loads, retired user syntax keeps working behind a sunset flag, and unrelated meanings
-  of "shell" (Unix shells, shell completion, UI chrome) are unchanged.'
+goal: 'The concept formerly called a sase shell is named a sase turn on every current
+  surface in sase, sase-core, sase-telegram, sase-github, sase-research-artifacts,
+  and chezmoi: code, wire contracts, persisted output, CLI, gate specs, config, the
+  TUI, skills, docs, and memory. Agent, gate, and monitor shells become agent, gate,
+  and monitor turns, and stand-alone proc shells become named procs. Pre-rename data
+  still loads, retired user syntax keeps working behind a sunset flag, and unrelated
+  meanings of "shell" (Unix shells, shell completion, UI chrome) are unchanged.'
 phases:
-  - id: core-expand
-    title: sase-core additive rename
-    depends_on: []
-    size: large
-    description:
-      "core-expand: non-breaking sase-core change. Rename the Rust internals to turn and
-      named-proc vocabulary and register the new pyo3 binding names next to the old
-      ones. Inputs accept old and new spellings; serialized output stays byte-identical."
-  - id: wire-cutover
-    title: Python persistence and wire cutover
-    depends_on:
-      - core-expand
-    size: large
-    description:
-      "wire-cutover: bump the core pin and switch sase to the new binding names. Rename
-      the Python wire mirrors and every durable key and value (agent meta, plan-gate
-      meta and files, gate bundles, proc rows, runner-slot records, dismissed procs):
-      new data is written only with turn/named-proc spellings, and readers accept both."
-  - id: runtime-cutover
-    title: Runtime, syntax, and CLI cutover
-    depends_on:
-      - wire-cutover
-    size: large
-    description:
-      "runtime-cutover: rename every non-TUI package, module, and identifier
-      (gate_shell, shells, plan_shell, question_shell, ...). Make the turn CLI flags,
-      gate-spec spellings, and config key canonical behind the legacy_sase_shell_syntax
-      sunset flag, and update CLI help and JSON output, the scheduler job, telemetry,
-      xprompts, and skill sources."
-  - id: tui-cutover
-    title: TUI turn surfaces
-    depends_on:
-      - runtime-cutover
-    size: large
-    description:
-      "tui-cutover: rename TUI modules, row kinds, section ids, and visible copy
-      (SESSION TURNS, AGENT TURN, GATE TURN, MONITOR TURN, NAMED PROC, the 0-9 turn
-      footer, help legend, modals, notifications) and re-baseline the PNG goldens, with
-      no change to the performance contract."
-  - id: docs-memory
-    title: Documentation and memory
-    depends_on:
-      - runtime-cutover
-    size: medium
-    description:
-      "docs-memory: redeploy the landed skill sources, rewrite every concept mention in
-      docs/ (including headings and anchors), replace the Sase Shell, Agent Shell, Gate
-      Shell, and Proc Shell glossary strands with Sase Turn, Agent Turn, Gate Turn, and
-      Named Proc, update related strands and notes, then run sase memory init."
-  - id: telegram
-    title: sase-telegram cutover
-    depends_on:
-      - runtime-cutover
-    size: small
-    description:
-      "telegram: move sase-telegram tests and docstrings to the renamed sase gate-turn
-      APIs through one named legacy-fallback import helper."
-  - id: contract-flip
-    title: sase-core contract flip
-    depends_on:
-      - tui-cutover
-      - telegram
-    size: medium
-    description:
-      "contract-flip: breaking feat! sase-core change. Serialize the new key and value
-      names, drop the legacy binding names, rename the gate_turn_id index column, bump
-      the changed schema versions and the fleet protocol, and prove current sase master
-      still passes against the new core before landing."
-  - id: pin-bump
-    title: Core pin bump and mirrors
-    depends_on:
-      - contract-flip
-    size: medium
-    description:
-      "pin-bump: move sase-core-revision.txt to the contract commit, update the Python
-      schema-version mirrors and the fixtures and goldens that capture core output, and
-      keep every durable legacy reader."
-  - id: audit-deploy
-    title: Cross-repo audit, guardrail, and deploy
-    depends_on:
-      - pin-bump
-      - docs-memory
-    size: medium
-    description:
-      "audit-deploy: add the sase-turn terminology guard test, sweep and classify every
-      remaining shell hit in all repos, fix tools/require_tool_run wording, note renamed
-      identifiers on open beads, and redeploy chezmoi skills from the landed tree."
+- id: core-expand
+  title: sase-core additive rename
+  depends_on: []
+  size: large
+  description: 'core-expand: non-breaking sase-core change. Rename the Rust internals
+    to turn and named-proc vocabulary and register the new pyo3 binding names next
+    to the old ones. Inputs accept old and new spellings; serialized output stays
+    byte-identical.'
+- id: wire-cutover
+  title: Python persistence and wire cutover
+  depends_on:
+  - core-expand
+  size: large
+  description: 'wire-cutover: bump the core pin and switch sase to the new binding
+    names. Rename the Python wire mirrors and every durable key and value (agent meta,
+    plan-gate meta and files, gate bundles, proc rows, runner-slot records, dismissed
+    procs): new data is written only with turn/named-proc spellings, and readers accept
+    both.'
+- id: runtime-cutover
+  title: Runtime, syntax, and CLI cutover
+  depends_on:
+  - wire-cutover
+  size: large
+  description: 'runtime-cutover: rename every non-TUI package, module, and identifier
+    (gate_shell, shells, plan_shell, question_shell, ...). Make the turn CLI flags,
+    gate-spec spellings, and config key canonical behind the legacy_sase_shell_syntax
+    sunset flag, and update CLI help and JSON output, the scheduler job, telemetry,
+    xprompts, and skill sources.'
+- id: tui-cutover
+  title: TUI turn surfaces
+  depends_on:
+  - runtime-cutover
+  size: large
+  description: 'tui-cutover: rename TUI modules, row kinds, section ids, and visible
+    copy (SESSION TURNS, AGENT TURN, GATE TURN, MONITOR TURN, NAMED PROC, the 0-9
+    turn footer, help legend, modals, notifications) and re-baseline the PNG goldens,
+    with no change to the performance contract.'
+- id: docs-memory
+  title: Documentation and memory
+  depends_on:
+  - runtime-cutover
+  size: medium
+  description: 'docs-memory: redeploy the landed skill sources, rewrite every concept
+    mention in docs/ (including headings and anchors), replace the Sase Shell, Agent
+    Shell, Gate Shell, and Proc Shell glossary strands with Sase Turn, Agent Turn,
+    Gate Turn, and Named Proc, update related strands and notes, then run sase memory
+    init.'
+- id: telegram
+  title: sase-telegram cutover
+  depends_on:
+  - runtime-cutover
+  size: small
+  description: 'telegram: move sase-telegram tests and docstrings to the renamed sase
+    gate-turn APIs through one named legacy-fallback import helper.'
+- id: contract-flip
+  title: sase-core contract flip
+  depends_on:
+  - tui-cutover
+  - telegram
+  size: medium
+  description: 'contract-flip: breaking feat! sase-core change. Serialize the new
+    key and value names, drop the legacy binding names, rename the gate_turn_id index
+    column, bump the changed schema versions and the fleet protocol, and prove current
+    sase master still passes against the new core before landing.'
+- id: pin-bump
+  title: Core pin bump and mirrors
+  depends_on:
+  - contract-flip
+  size: medium
+  description: 'pin-bump: move sase-core-revision.txt to the contract commit, update
+    the Python schema-version mirrors and the fixtures and goldens that capture core
+    output, and keep every durable legacy reader.'
+- id: audit-deploy
+  title: Cross-repo audit, guardrail, and deploy
+  depends_on:
+  - pin-bump
+  - docs-memory
+  size: medium
+  description: 'audit-deploy: add the sase-turn terminology guard test, sweep and
+    classify every remaining shell hit in all repos, fix tools/require_tool_run wording,
+    note renamed identifiers on open beads, and redeploy chezmoi skills from the landed
+    tree.'
 proposed_by: bbugyi200.athena.0ss
 create_time: 2026-09-26 00:15:02
 status: wip
+bead_id: sase-1ab
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_turn_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_turn_rename.md)
+- **PROMPT:** [prompts/202609/sase_turn_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_turn_rename.md)
+- **BEAD:** [sase-1ab](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ab/README.md)
 
 # Plan: Rename sase shell to sase turn
 
