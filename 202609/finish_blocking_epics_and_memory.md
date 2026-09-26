@@ -1,90 +1,82 @@
 ---
 tier: epic
 title: Finish the hold and remote-dispatch blockers of the memory backlog
-goal:
-  Land the existing hold, remote-dispatch, and Agents-parity epics with verified
-  acceptance, publish the two deferred memory updates, and close their descendants and
-  the sase-1ae backlog.
+goal: Land the existing hold, remote-dispatch, and Agents-parity epics with verified
+  acceptance, publish the two deferred memory updates, and close their descendants
+  and the sase-1ae backlog.
 phases:
-  - id: reconcile
-    title: Reconcile live ownership and the closeout ledger
-    depends_on: []
-    size: small
-    description:
-      "reconcile: inventory non-closed descendants, owners, evidence, and exact next
-      actions."
-  - id: hold_landing
-    title: Verify and land the existing hold epics
-    depends_on:
-      - reconcile
-    size: medium
-    description:
-      "hold_landing: verify current hold contracts and normally close both existing hold
-      epics."
-  - id: dispatch_runtime
-    title: Finish released runtime adoption for remote dispatch
-    depends_on:
-      - reconcile
-    size: medium
-    description:
-      "dispatch_runtime: publish and install matching repaired SASE and core builds on
-      both machines."
-  - id: dispatch_snapshot
-    title: Complete the live Apollo snapshot and dismissal proof
-    depends_on:
-      - dispatch_runtime
-    size: medium
-    description:
-      "dispatch_snapshot: prove owner-viewer fleet state, dismissal, history, and
-      restart on live Apollo."
-  - id: dispatch_unified
-    title: Complete unified Agents and exact remote-operation acceptance
-    depends_on:
-      - dispatch_snapshot
-    size: medium
-    description:
-      "dispatch_unified: finish the cross-machine live matrix and original fault proofs."
-  - id: dispatch_landing
-    title: Land the remote-dispatch ancestors through sase-xe
-    depends_on:
-      - dispatch_unified
-    size: medium
-    description:
-      "dispatch_landing: close reopened original phases and all remote-dispatch ancestor
-      epics."
-  - id: parity_landing
-    title: Prove and land owner-to-viewer Agents parity
-    depends_on:
-      - dispatch_landing
-    size: medium
-    description:
-      "parity_landing: establish production and same-build live parity, then close both
-      parity epics."
-  - id: deferred_memory
-    title: Publish landed hold and dispatch guidance
-    depends_on:
-      - hold_landing
-      - dispatch_landing
-      - parity_landing
-    size: medium
-    description:
-      "deferred_memory: publish the two authorized reference updates and close their
-      tasks and post-landing phase."
-  - id: final_audit
-    title: Close the memory backlog and verify every requested bead
-    depends_on:
-      - deferred_memory
-    size: small
-    description:
-      "final_audit: close the remaining memory phase and parent, then verify all target
-      trees are done."
+- id: reconcile
+  title: Reconcile live ownership and the closeout ledger
+  depends_on: []
+  size: small
+  description: 'reconcile: inventory non-closed descendants, owners, evidence, and
+    exact next actions.'
+- id: hold_landing
+  title: Verify and land the existing hold epics
+  depends_on:
+  - reconcile
+  size: medium
+  description: 'hold_landing: verify current hold contracts and normally close both
+    existing hold epics.'
+- id: dispatch_runtime
+  title: Finish released runtime adoption for remote dispatch
+  depends_on:
+  - reconcile
+  size: medium
+  description: 'dispatch_runtime: publish and install matching repaired SASE and core
+    builds on both machines.'
+- id: dispatch_snapshot
+  title: Complete the live Apollo snapshot and dismissal proof
+  depends_on:
+  - dispatch_runtime
+  size: medium
+  description: 'dispatch_snapshot: prove owner-viewer fleet state, dismissal, history,
+    and restart on live Apollo.'
+- id: dispatch_unified
+  title: Complete unified Agents and exact remote-operation acceptance
+  depends_on:
+  - dispatch_snapshot
+  size: medium
+  description: 'dispatch_unified: finish the cross-machine live matrix and original
+    fault proofs.'
+- id: dispatch_landing
+  title: Land the remote-dispatch ancestors through sase-xe
+  depends_on:
+  - dispatch_unified
+  size: medium
+  description: 'dispatch_landing: close reopened original phases and all remote-dispatch
+    ancestor epics.'
+- id: parity_landing
+  title: Prove and land owner-to-viewer Agents parity
+  depends_on:
+  - dispatch_landing
+  size: medium
+  description: 'parity_landing: establish production and same-build live parity, then
+    close both parity epics.'
+- id: deferred_memory
+  title: Publish landed hold and dispatch guidance
+  depends_on:
+  - hold_landing
+  - dispatch_landing
+  - parity_landing
+  size: medium
+  description: 'deferred_memory: publish the two authorized reference updates and
+    close their tasks and post-landing phase.'
+- id: final_audit
+  title: Close the memory backlog and verify every requested bead
+  depends_on:
+  - deferred_memory
+  size: small
+  description: 'final_audit: close the remaining memory phase and parent, then verify
+    all target trees are done.'
 proposed_by: bbugyi200.athena.0sw
 create_time: 2026-09-26 11:53:22
 status: wip
+bead_id: sase-1aq
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_blocking_epics_and_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_blocking_epics_and_memory.md)
+- **PROMPT:** [prompts/202609/finish_blocking_epics_and_memory.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_blocking_epics_and_memory.md)
+- **BEAD:** [sase-1aq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/README.md)
 
 # Finish the epics blocking `sase-1ae.4`
 
