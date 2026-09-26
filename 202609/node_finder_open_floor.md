@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Cut the Node Finder open path under the 50 ms budget
-goal:
-  The 2,000-node Node Finder open benchmark stays under 50 ms p95, with the other
+goal: The 2,000-node Node Finder open benchmark stays under 50 ms p95, with the other
   approved budgets still green and navigation behavior unchanged.
 parent_bead: sase-19i.7.3
 phases:
-  - id: snapshot-floor
-    title: Remove open-path stalls and halve snapshot cost
-    depends_on: []
-    description:
-      "snapshot-floor: keep snapshot construction in memory, read each agent role once,
-      and bring the warm 2,000-node snapshot under 35 ms p50."
-    size: medium
-  - id: open-budget
-    title: Pass the approved open p95 budget
-    depends_on:
-      - snapshot-floor
-    description:
-      "open-budget: make the official 2,000-node open benchmark pass at p95 under 50 ms
-      without relaxing the harness or the other budgets."
-    size: medium
+- id: snapshot-floor
+  title: Remove open-path stalls and halve snapshot cost
+  depends_on: []
+  description: 'snapshot-floor: keep snapshot construction in memory, read each agent
+    role once, and bring the warm 2,000-node snapshot under 35 ms p50.'
+  size: medium
+- id: open-budget
+  title: Pass the approved open p95 budget
+  depends_on:
+  - snapshot-floor
+  description: 'open-budget: make the official 2,000-node open benchmark pass at p95
+    under 50 ms without relaxing the harness or the other budgets.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-19i.7.3.land
 create_time: 2026-09-26 12:33:50
 status: wip
+bead_id: sase-19i.7.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_open_floor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_floor.md)
-- **PARENT:**
-  [202609/node_finder_remaining_budgets.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_remaining_budgets.md)
+- **PROMPT:** [prompts/202609/node_finder_open_floor.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_floor.md)
+- **PARENT:** [202609/node_finder_remaining_budgets.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_remaining_budgets.md)
+- **BEAD:** [sase-19i.7.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.3.3.md)
 
 # Cut the Node Finder open path under the 50 ms budget
 
