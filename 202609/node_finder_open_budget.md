@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Pass the Node Finder open p95 budget
-goal:
-  The unchanged 2,000-node Node Finder open benchmark stays under 50 ms p95, with the
-  other approved budgets still green and navigation unchanged.
+goal: The unchanged 2,000-node Node Finder open benchmark stays under 50 ms p95, with
+  the other approved budgets still green and navigation unchanged.
 parent_bead: sase-19i.7.3.3.3
 phases:
-  - id: snapshot-body
-    title: Cut the warm snapshot body
-    depends_on: []
-    size: medium
-    description:
-      "snapshot-body: remove the dominant in-snapshot cost until a same-process warm
-      build is at least 15 ms cheaper or its p95 is under 25 ms."
-  - id: open-budget
-    title: Pass the official open benchmark
-    depends_on:
-      - snapshot-body
-    size: medium
-    description:
-      "open-budget: finish the first-paint drain and any leftover snapshot cost until
-      the unchanged four-case benchmark passes."
+- id: snapshot-body
+  title: Cut the warm snapshot body
+  depends_on: []
+  size: medium
+  description: 'snapshot-body: remove the dominant in-snapshot cost until a same-process
+    warm build is at least 15 ms cheaper or its p95 is under 25 ms.'
+- id: open-budget
+  title: Pass the official open benchmark
+  depends_on:
+  - snapshot-body
+  size: medium
+  description: 'open-budget: finish the first-paint drain and any leftover snapshot
+    cost until the unchanged four-case benchmark passes.'
 proposed_by: bbugyi200.athena.sase-19i.7.3.3.3.land
 create_time: 2026-09-26 18:21:07
 status: wip
+bead_id: sase-19i.7.3.3.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_open_budget.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_budget.md)
-- **PARENT:**
-  [202609/node_finder_open_and_broad_tail.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_open_and_broad_tail.md)
+- **PROMPT:** [prompts/202609/node_finder_open_budget.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_budget.md)
+- **PARENT:** [202609/node_finder_open_and_broad_tail.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_open_and_broad_tail.md)
+- **BEAD:** [sase-19i.7.3.3.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.3.3.3.3.md)
 
 # Pass the Node Finder open p95 budget
 
