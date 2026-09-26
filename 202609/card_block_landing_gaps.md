@@ -2,49 +2,45 @@
 tier: epic
 parent_bead: sase-19x
 title: Finish card-block landing gaps
-goal:
-  Card-block transitions, legacy Reply visuals, navigation latency, and glossary context
-  satisfy the remaining acceptance requirements found while landing sase-19x.
+goal: Card-block transitions, legacy Reply visuals, navigation latency, and glossary
+  context satisfy the remaining acceptance requirements found while landing sase-19x.
 phases:
-  - id: scrollbar-transition
-    title: Keep the scrollbar in sync across card-block mode changes
-    size: medium
-    depends_on: []
-    description:
-      "scrollbar-transition: remove the block-spread to block-paged scrollbar
-      desynchronization and its snapshot workaround; add a focused regression."
-  - id: legacy-reply-visual
-    title: Verify the legacy followup Reply block heading visually
-    size: small
-    depends_on:
-      - scrollbar-transition
-    description:
-      "legacy-reply-visual: inspect the still-reachable legacy followup_agents Reply
-      heading and per-phase blocks in a targeted visual capture."
-  - id: block-performance
-    title: Verify and improve card-block navigation latency
-    size: medium
-    depends_on:
-      - scrollbar-transition
-    description:
-      "block-performance: profile block cycling and sticky-Reply j/k, remove avoidable
-      work, and record controlled latency against the original target and baseline."
-  - id: glossary
-    title: Add the Agent Data Card Block glossary term
-    size: small
-    depends_on: []
-    description:
-      "glossary: add a concise card-block strand and link it from Agent Data Card,
-      integrating the concurrent sase-turn terminology change."
+- id: scrollbar-transition
+  title: Keep the scrollbar in sync across card-block mode changes
+  size: medium
+  depends_on: []
+  description: 'scrollbar-transition: remove the block-spread to block-paged scrollbar
+    desynchronization and its snapshot workaround; add a focused regression.'
+- id: legacy-reply-visual
+  title: Verify the legacy followup Reply block heading visually
+  size: small
+  depends_on:
+  - scrollbar-transition
+  description: 'legacy-reply-visual: inspect the still-reachable legacy followup_agents
+    Reply heading and per-phase blocks in a targeted visual capture.'
+- id: block-performance
+  title: Verify and improve card-block navigation latency
+  size: medium
+  depends_on:
+  - scrollbar-transition
+  description: 'block-performance: profile block cycling and sticky-Reply j/k, remove
+    avoidable work, and record controlled latency against the original target and
+    baseline.'
+- id: glossary
+  title: Add the Agent Data Card Block glossary term
+  size: small
+  depends_on: []
+  description: 'glossary: add a concise card-block strand and link it from Agent Data
+    Card, integrating the concurrent sase-turn terminology change.'
 proposed_by: bbugyi200.athena.sase-19x.land
 create_time: 2026-09-26 14:47:52
 status: wip
+bead_id: sase-19x.11
 ---
 
-- **PROMPT:**
-  [prompts/202609/card_block_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/card_block_landing_gaps.md)
-- **PARENT:**
-  [202609/agent_data_card_blocks.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_data_card_blocks.md)
+- **PROMPT:** [prompts/202609/card_block_landing_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/card_block_landing_gaps.md)
+- **PARENT:** [202609/agent_data_card_blocks.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_data_card_blocks.md)
+- **BEAD:** [sase-19x.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19x/sase-19x.11.md)
 
 # Finish card-block landing gaps
 
