@@ -1,30 +1,28 @@
 ---
 tier: epic
 title: Show loaded queue multipliers on TUI capacity surfaces
-goal:
-  A persisted queue_capacity_multiplier of 1.5 with no queue_capacity_explicit flag
-  renders as c1.5x and as 1.5x budget (7.5 capacity units) on the TUI row, header, wait
-  lane, queue ladder, clan digest, and roster digest, while the runner capacity record
-  stays explicit-false.
+goal: A persisted queue_capacity_multiplier of 1.5 with no queue_capacity_explicit
+  flag renders as c1.5x and as 1.5x budget (7.5 capacity units) on the TUI row, header,
+  wait lane, queue ladder, clan digest, and roster digest, while the runner capacity
+  record stays explicit-false.
 parent_bead: sase-19f.6
 phases:
-  - id: loaded-display
-    title: Render loaded multipliers on the remaining TUI surfaces
-    size: medium
-    depends_on: []
-    description:
-      "loaded-display: Treat a valid multiplier with no integer as authored capacity on
-      the badge, header, wait lane, queue ladder, and clan and roster digests, and drop
-      the two reintroduced sase-19f epic-symbol lines."
+- id: loaded-display
+  title: Render loaded multipliers on the remaining TUI surfaces
+  size: medium
+  depends_on: []
+  description: 'loaded-display: Treat a valid multiplier with no integer as authored
+    capacity on the badge, header, wait lane, queue ladder, and clan and roster digests,
+    and drop the two reintroduced sase-19f epic-symbol lines.'
 proposed_by: bbugyi200.apollo.sase-19f.6.land
 create_time: 2026-09-26 08:08:30
 status: wip
+bead_id: sase-19f.6.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_multiplier_loaded_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_multiplier_loaded_display.md)
-- **PARENT:**
-  [202609/queue_multiplier_surfaces.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_multiplier_surfaces.md)
+- **PROMPT:** [prompts/202609/queue_multiplier_loaded_display.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_multiplier_loaded_display.md)
+- **PARENT:** [202609/queue_multiplier_surfaces.md](https://github.com/sase-org/sase--plans/blob/main/202609/queue_multiplier_surfaces.md)
+- **BEAD:** [sase-19f.6.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19f/sase-19f.6.4.md)
 
 # Show loaded queue multipliers on TUI capacity surfaces
 
