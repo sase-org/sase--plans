@@ -1,46 +1,43 @@
 ---
 tier: epic
 title: Complete E4 receipt reporting and live acceptance
-goal:
-  Move receipt opportunity facts into the Rust core, require a released receipt-capable
-  core before a fresh install can load the catalog, and prove prepared completion on
-  athena.
+goal: Move receipt opportunity facts into the Rust core, require a released receipt-capable
+  core before a fresh install can load the catalog, and prove prepared completion
+  on athena.
 parent_bead: sase-1ah
 phases:
-  - id: rust-opportunity-report
-    title: Put opportunity facts in the Rust core
-    depends_on: []
-    size: large
-    description:
-      "rust-opportunity-report: implement the bounded, read-only receipt and
-      content-equivalent repeat report in sase-core with a versioned binding and parity
-      fixtures."
-  - id: python-adapter-release
-    title: Adopt the core report and released wheel
-    depends_on:
-      - rust-opportunity-report
-    size: medium
-    description:
-      "python-adapter-release: replace the Python ledger and Git comparison with a thin
-      Rust adapter, ratchet the core pin, and make fresh installs require a published
-      receipt-capable wheel."
-  - id: live-acceptance
-    title: Demonstrate prepared completion and record the owner check
-    depends_on:
-      - python-adapter-release
-    size: medium
-    description:
-      "live-acceptance: run focused and required check gates, demonstrate live athena
-      pass and controlled no-new and drift outcomes, and record the 14-day owner check."
+- id: rust-opportunity-report
+  title: Put opportunity facts in the Rust core
+  depends_on: []
+  size: large
+  description: 'rust-opportunity-report: implement the bounded, read-only receipt
+    and content-equivalent repeat report in sase-core with a versioned binding and
+    parity fixtures.'
+- id: python-adapter-release
+  title: Adopt the core report and released wheel
+  depends_on:
+  - rust-opportunity-report
+  size: medium
+  description: 'python-adapter-release: replace the Python ledger and Git comparison
+    with a thin Rust adapter, ratchet the core pin, and make fresh installs require
+    a published receipt-capable wheel.'
+- id: live-acceptance
+  title: Demonstrate prepared completion and record the owner check
+  depends_on:
+  - python-adapter-release
+  size: medium
+  description: 'live-acceptance: run focused and required check gates, demonstrate
+    live athena pass and controlled no-new and drift outcomes, and record the 14-day
+    owner check.'
 proposed_by: bbugyi200.athena.sase-1ah.land
 create_time: 2026-09-26 13:37:25
 status: wip
+bead_id: sase-1ah.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/e4_landing_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e4_landing_remainder.md)
-- **PARENT:**
-  [202609/tool_e4_verified_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e4_verified_completion.md)
+- **PROMPT:** [prompts/202609/e4_landing_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/e4_landing_remainder.md)
+- **PARENT:** [202609/tool_e4_verified_completion.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_e4_verified_completion.md)
+- **BEAD:** [sase-1ah.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ah/sase-1ah.8.md)
 
 # Remaining E4 landing work
 
