@@ -35,7 +35,7 @@ phases:
     persistence, and prompt-edit tests; run just check in sase.'
 proposed_by: bbugyi200.apollo.sase-19f.land
 create_time: 2026-09-26 04:40:35
-status: wip
+status: done
 bead_id: sase-19f.6
 ---
 

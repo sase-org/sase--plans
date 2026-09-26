@@ -16,7 +16,7 @@ phases:
     and drop the two reintroduced sase-19f epic-symbol lines.'
 proposed_by: bbugyi200.apollo.sase-19f.6.land
 create_time: 2026-09-26 08:08:30
-status: wip
+status: done
 bead_id: sase-19f.6.4
 ---
 

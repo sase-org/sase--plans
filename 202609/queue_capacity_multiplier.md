@@ -63,7 +63,7 @@ phases:
     dependency floors where a published core supports it.'
 proposed_by: bbugyi200.apollo.1o
 create_time: 2026-09-25 12:24:30
-status: wip
+status: done
 bead_id: sase-19f
 ---
 
