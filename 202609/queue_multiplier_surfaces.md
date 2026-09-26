@@ -1,49 +1,46 @@
 ---
 tier: epic
 title: Finish queue multiplier display and editing surfaces
-goal:
-  The already implemented %queue multiplier reaches the TUI, agent-list JSON, and live
-  editing surfaces. An authored 1.5x budget remains 1.5x through display and edits while
-  resolving to 7.5 units when the effective machine budget is 5.
+goal: The already implemented %queue multiplier reaches the TUI, agent-list JSON,
+  and live editing surfaces. An authored 1.5x budget remains 1.5x through display
+  and edits while resolving to 7.5 units when the effective machine budget is 5.
 parent_bead: sase-19f
 phases:
-  - id: model-projection
-    title: Carry multiplier through TUI agent models and loaders
-    size: medium
-    depends_on: []
-    description:
-      "model-projection: Add queue_capacity_multiplier to Agent state and every
-      metadata, filesystem, identity, fleet, dedup, clan, and roster projection that
-      carries queue capacity. Keep integer and multiplier mutually exclusive in setters
-      and copies. Add focused projection and fleet tests."
-  - id: display-list
-    title: Render multiplier capacity and expose agent-list JSON
-    size: medium
-    depends_on:
-      - model-projection
-    description:
-      "display-list: Render c1.5x badges, 1.5x budget and resolved units in the detail
-      header, wait lane, queue ladder, and agent rows. Include the multiplier in display
-      cache keys and runner-slot capacity models. Expose queue_capacity_multiplier in
-      agent-list entries and JSON. Add focused widget and CLI/list tests."
-  - id: edit-capacity
-    title: Accept and preserve multiplier capacity in wait and directive editors
-    size: medium
-    depends_on:
-      - display-list
-    description:
-      "edit-capacity: Teach the wait modal, wait actions, directive persistence, agent
-      directive command, and prompt queue editing to accept <M>x through the Rust-backed
-      parser. Prefill authored 1.5x, clear the opposite capacity form on edits, and
-      preserve the multiplier on priority-only or weight-only changes. Add focused
-      modal, persistence, and prompt-edit tests; run just check in sase."
+- id: model-projection
+  title: Carry multiplier through TUI agent models and loaders
+  size: medium
+  depends_on: []
+  description: 'model-projection: Add queue_capacity_multiplier to Agent state and
+    every metadata, filesystem, identity, fleet, dedup, clan, and roster projection
+    that carries queue capacity. Keep integer and multiplier mutually exclusive in
+    setters and copies. Add focused projection and fleet tests.'
+- id: display-list
+  title: Render multiplier capacity and expose agent-list JSON
+  size: medium
+  depends_on:
+  - model-projection
+  description: 'display-list: Render c1.5x badges, 1.5x budget and resolved units
+    in the detail header, wait lane, queue ladder, and agent rows. Include the multiplier
+    in display cache keys and runner-slot capacity models. Expose queue_capacity_multiplier
+    in agent-list entries and JSON. Add focused widget and CLI/list tests.'
+- id: edit-capacity
+  title: Accept and preserve multiplier capacity in wait and directive editors
+  size: medium
+  depends_on:
+  - display-list
+  description: 'edit-capacity: Teach the wait modal, wait actions, directive persistence,
+    agent directive command, and prompt queue editing to accept <M>x through the Rust-backed
+    parser. Prefill authored 1.5x, clear the opposite capacity form on edits, and
+    preserve the multiplier on priority-only or weight-only changes. Add focused modal,
+    persistence, and prompt-edit tests; run just check in sase.'
 proposed_by: bbugyi200.apollo.sase-19f.land
 create_time: 2026-09-26 04:40:35
 status: wip
+bead_id: sase-19f.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/queue_multiplier_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_multiplier_surfaces.md)
+- **PROMPT:** [prompts/202609/queue_multiplier_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/queue_multiplier_surfaces.md)
+- **BEAD:** [sase-19f.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19f/sase-19f.6.md)
 
 # Finish queue multiplier display and editing surfaces
 
