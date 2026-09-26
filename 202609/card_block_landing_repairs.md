@@ -2,35 +2,32 @@
 tier: epic
 parent_bead: sase-19x.11
 title: Repair card-block landing lint and memory drift
-goal:
-  The scrollbar sync helper is public, and generated bead memory again matches the
-  creation-reason template, without reopening closed card-block behavior.
+goal: The scrollbar sync helper is public, and generated bead memory again matches
+  the creation-reason template, without reopening closed card-block behavior.
 phases:
-  - id: publish-scrollbar-sync
-    title: Make the block scrollbar sync helper public
-    size: small
-    depends_on: []
-    description:
-      "publish-scrollbar-sync: rename _sync_scrollbar_position to the public
-      sync_scrollbar_position so panel_transitions.py can import it, and leave the
-      sase-1ab legacy private import untouched."
-  - id: restore-bead-memory
-    title: Restore the creation-reason paragraph in generated bead memory
-    size: small
-    depends_on: []
-    description:
-      "restore-bead-memory: rerun sase memory init --no-commit so
-      sase/memory/sase_beads.md regains the -w/--reason contract from its template and
-      the README line and token counts match."
+- id: publish-scrollbar-sync
+  title: Make the block scrollbar sync helper public
+  size: small
+  depends_on: []
+  description: 'publish-scrollbar-sync: rename _sync_scrollbar_position to the public
+    sync_scrollbar_position so panel_transitions.py can import it, and leave the sase-1ab
+    legacy private import untouched.'
+- id: restore-bead-memory
+  title: Restore the creation-reason paragraph in generated bead memory
+  size: small
+  depends_on: []
+  description: 'restore-bead-memory: rerun sase memory init --no-commit so sase/memory/sase_beads.md
+    regains the -w/--reason contract from its template and the README line and token
+    counts match.'
 proposed_by: bbugyi200.athena.sase-19x.11.land
 create_time: 2026-09-26 17:16:19
 status: wip
+bead_id: sase-19x.11.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/card_block_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/card_block_landing_repairs.md)
-- **PARENT:**
-  [202609/card_block_landing_gaps.md](https://github.com/sase-org/sase--plans/blob/main/202609/card_block_landing_gaps.md)
+- **PROMPT:** [prompts/202609/card_block_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/card_block_landing_repairs.md)
+- **PARENT:** [202609/card_block_landing_gaps.md](https://github.com/sase-org/sase--plans/blob/main/202609/card_block_landing_gaps.md)
+- **BEAD:** [sase-19x.11.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19x/sase-19x.11.5.md)
 
 # Repair card-block landing lint and memory drift
 
