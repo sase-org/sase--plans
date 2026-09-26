@@ -1,56 +1,53 @@
 ---
 tier: epic
 title: Resolve the open SASE memory bead backlog
-goal:
-  Apply the audited memory corrections and close all 15 currently open memory task beads
-  with evidence-based reasons, including the two tasks gated by active epics.
+goal: Apply the audited memory corrections and close all 15 currently open memory
+  task beads with evidence-based reasons, including the two tasks gated by active
+  epics.
 phases:
-  - id: reconcile
-    title: Reconcile bead scope and close no-edit tasks
-    depends_on: []
-    size: small
-    description:
-      "reconcile: audit the live bead census, correct stale task descriptions by note,
-      close no-edit tasks, and install external dependencies on the later phase."
-  - id: reference
-    title: Correct existing reference memory and tools guidance
-    depends_on:
-      - reconcile
-    size: medium
-    description:
-      "reference: update existing source files, regenerate memory outputs, verify them,
-      and close seven implementation beads."
-  - id: decisions
-    title: Record machine-link and explicit-handoff decisions
-    depends_on:
-      - reference
-    size: medium
-    description:
-      "decisions: add two accepted strands, mark the old record superseded in part,
-      regenerate memory outputs, and close two decision beads."
-  - id: post_landing
-    title: Document hold and remote dispatch after their epics land
-    depends_on:
-      - decisions
-    size: medium
-    description:
-      "post_landing: after the hold, dispatch, and parity epic dependencies close,
-      verify current contracts, publish their guidance, and close two memory beads."
-  - id: final_audit
-    title: Verify the complete memory backlog is closed
-    depends_on:
-      - post_landing
-    size: small
-    description:
-      "final_audit: check regenerated memory and links, verify completion evidence and
-      close reasons, and confirm no memory task bead remains non-closed."
+- id: reconcile
+  title: Reconcile bead scope and close no-edit tasks
+  depends_on: []
+  size: small
+  description: 'reconcile: audit the live bead census, correct stale task descriptions
+    by note, close no-edit tasks, and install external dependencies on the later phase.'
+- id: reference
+  title: Correct existing reference memory and tools guidance
+  depends_on:
+  - reconcile
+  size: medium
+  description: 'reference: update existing source files, regenerate memory outputs,
+    verify them, and close seven implementation beads.'
+- id: decisions
+  title: Record machine-link and explicit-handoff decisions
+  depends_on:
+  - reference
+  size: medium
+  description: 'decisions: add two accepted strands, mark the old record superseded
+    in part, regenerate memory outputs, and close two decision beads.'
+- id: post_landing
+  title: Document hold and remote dispatch after their epics land
+  depends_on:
+  - decisions
+  size: medium
+  description: 'post_landing: after the hold, dispatch, and parity epic dependencies
+    close, verify current contracts, publish their guidance, and close two memory
+    beads.'
+- id: final_audit
+  title: Verify the complete memory backlog is closed
+  depends_on:
+  - post_landing
+  size: small
+  description: 'final_audit: check regenerated memory and links, verify completion
+    evidence and close reasons, and confirm no memory task bead remains non-closed.'
 proposed_by: bbugyi200.athena.0qi
 create_time: 2026-09-26 07:00:19
 status: wip
+bead_id: sase-1ae
 ---
 
-- **PROMPT:**
-  [prompts/202609/close_memory_bead_backlog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/close_memory_bead_backlog.md)
+- **PROMPT:** [prompts/202609/close_memory_bead_backlog.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/close_memory_bead_backlog.md)
+- **BEAD:** [sase-1ae](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ae/README.md)
 
 <!-- sase:links:start -->
 
