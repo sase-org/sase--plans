@@ -1,27 +1,26 @@
 ---
 tier: epic
 title: Remove adjacent model directives on shortcut acceptance
-goal:
-  Accepting =alias or ==model leaves exactly one standalone model directive in the
-  active prompt segment, even when redundant directives are adjacent at a line boundary.
+goal: Accepting =alias or ==model leaves exactly one standalone model directive in
+  the active prompt segment, even when redundant directives are adjacent at a line
+  boundary.
 parent_bead: sase-1ao
 phases:
-  - id: adjacent_cleanup
-    title: Make adjacent directive cleanup disjoint and verify both frontends
-    description:
-      "adjacent_cleanup: repair the shared Rust edit planner, pin its commit in sase,
-      and add ACE/LSP applied-document regression coverage."
-    depends_on: []
-    size: medium
+- id: adjacent_cleanup
+  title: Make adjacent directive cleanup disjoint and verify both frontends
+  description: 'adjacent_cleanup: repair the shared Rust edit planner, pin its commit
+    in sase, and add ACE/LSP applied-document regression coverage.'
+  depends_on: []
+  size: medium
 proposed_by: bbugyi200.apollo.sase-1ao.land
 create_time: 2026-09-26 13:15:15
 status: wip
+bead_id: sase-1ao.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/model_shortcut_adjacent_directives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_shortcut_adjacent_directives.md)
-- **PARENT:**
-  [202609/model_shortcut_replacement.md](https://github.com/sase-org/sase--plans/blob/main/202609/model_shortcut_replacement.md)
+- **PROMPT:** [prompts/202609/model_shortcut_adjacent_directives.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_shortcut_adjacent_directives.md)
+- **PARENT:** [202609/model_shortcut_replacement.md](https://github.com/sase-org/sase--plans/blob/main/202609/model_shortcut_replacement.md)
+- **BEAD:** [sase-1ao.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ao/sase-1ao.3.md)
 
 # Remaining work from sase-1ao landing
 
