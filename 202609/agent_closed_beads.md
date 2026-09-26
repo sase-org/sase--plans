@@ -37,7 +37,7 @@ phases:
     tests and new PNG goldens.'
 proposed_by: bbugyi200.athena.0s0
 create_time: 2026-09-25 14:05:24
-status: wip
+status: done
 bead_id: sase-19p
 ---
 
