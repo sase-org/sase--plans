@@ -1,38 +1,35 @@
 ---
 tier: epic
 title: Complete creation-reason Context visuals
-goal:
-  The created-bead Context card has verified wide and narrow PNG goldens on the current
-  Rust binding.
+goal: The created-bead Context card has verified wide and narrow PNG goldens on the
+  current Rust binding.
 parent_bead: sase-1ap
 phases:
-  - id: visual_runtime
-    title: Restore the visual test runtime
-    depends_on: []
-    description:
-      "visual_runtime: Rebuild the workspace Rust binding from the linked sase-core
-      revision and prove both new Context visual tests reach rendering. Repair a real
-      source or binding incompatibility only if a fresh build still fails."
-    size: small
-  - id: visual_goldens
-    title: Capture and inspect the created-bead goldens
-    depends_on:
-      - visual_runtime
-    description:
-      "visual_goldens: Capture both created-bead Context PNG goldens with the targeted
-      maintenance recipe, inspect the report and images, and verify the current card
-      behavior after intervening TUI changes. Run just check on any tracked source or
-      golden change."
-    size: medium
+- id: visual_runtime
+  title: Restore the visual test runtime
+  depends_on: []
+  description: 'visual_runtime: Rebuild the workspace Rust binding from the linked
+    sase-core revision and prove both new Context visual tests reach rendering. Repair
+    a real source or binding incompatibility only if a fresh build still fails.'
+  size: small
+- id: visual_goldens
+  title: Capture and inspect the created-bead goldens
+  depends_on:
+  - visual_runtime
+  description: 'visual_goldens: Capture both created-bead Context PNG goldens with
+    the targeted maintenance recipe, inspect the report and images, and verify the
+    current card behavior after intervening TUI changes. Run just check on any tracked
+    source or golden change.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1ap.land
 create_time: 2026-09-26 14:32:44
 status: wip
+bead_id: sase-1ap.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/1ap_visual_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1ap_visual_completion.md)
-- **PARENT:**
-  [202609/bead_creation_reasons.md](https://github.com/sase-org/sase--plans/blob/main/202609/bead_creation_reasons.md)
+- **PROMPT:** [prompts/202609/1ap_visual_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1ap_visual_completion.md)
+- **PARENT:** [202609/bead_creation_reasons.md](https://github.com/sase-org/sase--plans/blob/main/202609/bead_creation_reasons.md)
+- **BEAD:** [sase-1ap.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ap/sase-1ap.4.md)
 
 # Remaining work
 
