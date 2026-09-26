@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Finish the remaining Node Finder open and broad-query budgets
-goal:
-  The 2,000-node Node Finder meets the approved first-paint and refilter p95 budgets
+goal: The 2,000-node Node Finder meets the approved first-paint and refilter p95 budgets
   without changing navigation behavior.
 parent_bead: sase-19i.7
 phases:
-  - id: snapshot-facets
-    title: Bound snapshot construction for first paint
-    depends_on: []
-    description:
-      "snapshot-facets: profile and fuse repeated per-agent snapshot work while
-      preserving every reachable row and hidden reason."
-    size: medium
-  - id: modal-budget
-    title: Finish open and broad-query p95 budgets
-    depends_on:
-      - snapshot-facets
-    description:
-      "modal-budget: optimize any remaining modal and broad-filter costs, verify every
-      approved budget, and protect behavior with focused tests."
-    size: medium
+- id: snapshot-facets
+  title: Bound snapshot construction for first paint
+  depends_on: []
+  description: 'snapshot-facets: profile and fuse repeated per-agent snapshot work
+    while preserving every reachable row and hidden reason.'
+  size: medium
+- id: modal-budget
+  title: Finish open and broad-query p95 budgets
+  depends_on:
+  - snapshot-facets
+  description: 'modal-budget: optimize any remaining modal and broad-filter costs,
+    verify every approved budget, and protect behavior with focused tests.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-19i.7.land
 create_time: 2026-09-26 10:26:41
 status: wip
+bead_id: sase-19i.7.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_remaining_budgets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_remaining_budgets.md)
-- **PARENT:**
-  [202609/node_finder_perf_landing.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_perf_landing.md)
+- **PROMPT:** [prompts/202609/node_finder_remaining_budgets.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_remaining_budgets.md)
+- **PARENT:** [202609/node_finder_perf_landing.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_perf_landing.md)
+- **BEAD:** [sase-19i.7.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.3.md)
 
 # Finish the remaining Node Finder budgets
 
