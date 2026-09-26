@@ -1,16 +1,15 @@
 ---
 tier: tale
 title: Add the schema-1 ToolRun receipt contract in sase-core
-goal: "sase-core mints, supersedes, expires, and looks up fingerprint-bound verdict
+goal: 'sase-core mints, supersedes, expires, and looks up fingerprint-bound verdict
   receipts in the existing ToolRun store, with typed refusals, retention, and PyO3
   bindings, while definition digests and schema version stay put.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-1ah.2
 bead: sase-1ah.2
-create_time: 2026-09-26 08:19:52
-status: wip
+status: done
 ---
 
 - **PARENT:**
