@@ -19,7 +19,7 @@ phases:
     acceptance and Python parity.'
 proposed_by: bbugyi200.apollo.1w
 create_time: 2026-09-26 07:27:33
-status: wip
+status: done
 bead_id: sase-1ag
 ---
 
