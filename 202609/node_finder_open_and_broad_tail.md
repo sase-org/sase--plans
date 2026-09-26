@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Finish Node Finder open and broad-query budgets
-goal:
-  The 2,000-node Node Finder passes the unchanged first-paint and refilter p95 budgets
-  with exact navigation behavior.
+goal: The 2,000-node Node Finder passes the unchanged first-paint and refilter p95
+  budgets with exact navigation behavior.
 parent_bead: sase-19i.7.3.3
 phases:
-  - id: snapshot-tail
-    title: Bound the 2,000-node Node Finder snapshot tail
-    depends_on: []
-    size: medium
-    description:
-      "snapshot-tail: profile and remove repeated grouping and row passes until a warm
-      snapshot leaves room for first paint."
-  - id: paint-and-broad
-    title: Pass first-paint and broad-refilter budgets
-    size: medium
-    depends_on:
-      - snapshot-tail
-    description:
-      "paint-and-broad: trim first-paint pump work and broad refilter while preserving
-      navigation, then pass every official budget."
+- id: snapshot-tail
+  title: Bound the 2,000-node Node Finder snapshot tail
+  depends_on: []
+  size: medium
+  description: 'snapshot-tail: profile and remove repeated grouping and row passes
+    until a warm snapshot leaves room for first paint.'
+- id: paint-and-broad
+  title: Pass first-paint and broad-refilter budgets
+  size: medium
+  depends_on:
+  - snapshot-tail
+  description: 'paint-and-broad: trim first-paint pump work and broad refilter while
+    preserving navigation, then pass every official budget.'
 proposed_by: bbugyi200.athena.sase-19i.7.3.3.land
 create_time: 2026-09-26 15:55:40
 status: wip
+bead_id: sase-19i.7.3.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_open_and_broad_tail.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_and_broad_tail.md)
-- **PARENT:**
-  [202609/node_finder_open_floor.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_open_floor.md)
+- **PROMPT:** [prompts/202609/node_finder_open_and_broad_tail.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_and_broad_tail.md)
+- **PARENT:** [202609/node_finder_open_floor.md](https://github.com/sase-org/sase--plans/blob/main/202609/node_finder_open_floor.md)
+- **BEAD:** [sase-19i.7.3.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.3.3.3.md)
 
 # Finish the Node Finder open and broad-query budgets
 
