@@ -1,32 +1,30 @@
 ---
 tier: epic
 title: Restore project completion placement
-goal:
-  Selecting a project completion places the chosen tag at the existing workspace target
-  or leading prompt position in both the prompt widget and LSP.
+goal: Selecting a project completion places the chosen tag at the existing workspace
+  target or leading prompt position in both the prompt widget and LSP.
 phases:
-  - id: core
-    title: Restore shared project-tag selection and LSP edits
-    depends_on: []
-    size: medium
-    description:
-      "core: restore target-position insertion in sase-core and verify the Rust accept
-      and LSP contracts."
-  - id: sase
-    title: Adopt the core fix in the prompt widget
-    depends_on:
-      - core
-    size: small
-    description:
-      "sase: ratchet the committed core revision and verify prompt-widget acceptance and
-      Python parity."
+- id: core
+  title: Restore shared project-tag selection and LSP edits
+  depends_on: []
+  size: medium
+  description: 'core: restore target-position insertion in sase-core and verify the
+    Rust accept and LSP contracts.'
+- id: sase
+  title: Adopt the core fix in the prompt widget
+  depends_on:
+  - core
+  size: small
+  description: 'sase: ratchet the committed core revision and verify prompt-widget
+    acceptance and Python parity.'
 proposed_by: bbugyi200.apollo.1w
 create_time: 2026-09-26 07:27:33
 status: wip
+bead_id: sase-1ag
 ---
 
-- **PROMPT:**
-  [prompts/202609/restore_project_completion_placement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_project_completion_placement.md)
+- **PROMPT:** [prompts/202609/restore_project_completion_placement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/restore_project_completion_placement.md)
+- **BEAD:** [sase-1ag](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ag/README.md)
 
 # Restore project completion placement
 
