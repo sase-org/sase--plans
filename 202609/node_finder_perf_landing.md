@@ -1,36 +1,33 @@
 ---
 tier: epic
 title: Finish Node Finder performance budgets
-goal:
-  The Agents Node Finder meets its approved 2,000-node p95 open, refilter, and highlight
-  budgets without losing any jump targets or changing navigation behavior.
+goal: The Agents Node Finder meets its approved 2,000-node p95 open, refilter, and
+  highlight budgets without losing any jump targets or changing navigation behavior.
 parent_bead: sase-19i
 phases:
-  - id: snapshot-filter
-    title: Bound snapshot and broad-query filter work
-    size: medium
-    description:
-      "snapshot-filter: remove data-scaled repeated tree walks in the Node Finder
-      snapshot and pure filter while preserving every reachable row, ancestor, hidden
-      reason, and hint."
-    depends_on: []
-  - id: modal-paint
-    title: Meet first-paint, broad-query, and highlight budgets
-    size: medium
-    description:
-      "modal-paint: reduce modal list and preview work on the Textual pump, then enforce
-      the original 2,000-node p95 budgets with representative benchmarks."
-    depends_on:
-      - snapshot-filter
+- id: snapshot-filter
+  title: Bound snapshot and broad-query filter work
+  size: medium
+  description: 'snapshot-filter: remove data-scaled repeated tree walks in the Node
+    Finder snapshot and pure filter while preserving every reachable row, ancestor,
+    hidden reason, and hint.'
+  depends_on: []
+- id: modal-paint
+  title: Meet first-paint, broad-query, and highlight budgets
+  size: medium
+  description: 'modal-paint: reduce modal list and preview work on the Textual pump,
+    then enforce the original 2,000-node p95 budgets with representative benchmarks.'
+  depends_on:
+  - snapshot-filter
 proposed_by: bbugyi200.athena.sase-19i.land
 create_time: 2026-09-26 06:03:20
 status: wip
+bead_id: sase-19i.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_perf_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_perf_landing.md)
-- **PARENT:**
-  [202609/agents_node_finder.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_node_finder.md)
+- **PROMPT:** [prompts/202609/node_finder_perf_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_perf_landing.md)
+- **PARENT:** [202609/agents_node_finder.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_node_finder.md)
+- **BEAD:** [sase-19i.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.md)
 
 # Finish Node Finder performance budgets
 
