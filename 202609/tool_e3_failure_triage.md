@@ -91,7 +91,7 @@ phases:
     and ship docs, the named memory edits, glossary strands, and the decision record.'
 proposed_by: bbugyi200.athena.0rq
 create_time: 2026-09-24 19:06:57
-status: wip
+status: done
 bead_id: sase-18j
 ---
 
