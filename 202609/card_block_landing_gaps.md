@@ -34,7 +34,7 @@ phases:
     Card, integrating the concurrent sase-turn terminology change.'
 proposed_by: bbugyi200.athena.sase-19x.land
 create_time: 2026-09-26 14:47:52
-status: wip
+status: done
 bead_id: sase-19x.11
 ---
 
