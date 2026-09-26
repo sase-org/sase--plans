@@ -1,67 +1,61 @@
 ---
 tier: epic
 title: Finish the live dispatch, parity, and memory gates of sase-1aq
-goal:
-  Close sase-1aq and every promised descendant through verified released-build live
-  acceptance, landed guidance, and normal bead landing.
+goal: Close sase-1aq and every promised descendant through verified released-build
+  live acceptance, landed guidance, and normal bead landing.
 parent_bead: sase-1aq
 phases:
-  - id: recover_dispatch
-    title: Reconcile the uncertain dispatch and close the accepted snapshot proof
-    size: small
-    depends_on: []
-    description:
-      "recover_dispatch: reconcile Apollo's uncertain launch by its original operation
-      key, establish one active owner, and normally close the already evidenced snapshot
-      phase."
-  - id: unified_proof
-    title: Complete the unified live dispatch and exact-operation matrix
-    size: medium
-    depends_on:
-      - recover_dispatch
-    description:
-      "unified_proof: finish the original unified live proof and the remaining fault
-      cases on a matching released cohort."
-  - id: dispatch_landing
-    title: Land the original remote-dispatch epic chain
-    size: medium
-    depends_on:
-      - unified_proof
-    description:
-      "dispatch_landing: close the original dispatch acceptance beads and their
-      ancestors through sase-xe with evidence and normal land owners."
-  - id: parity_landing
-    title: Prove and land deployed owner-to-viewer Agents parity
-    size: medium
-    depends_on:
-      - dispatch_landing
-    description:
-      "parity_landing: complete the production parity oracle and same-build live
-      captures, then land sase-133.5 and sase-133."
-  - id: publish_memory
-    title: Publish the landed hold and dispatch guidance
-    size: medium
-    depends_on:
-      - dispatch_landing
-      - parity_landing
-    description:
-      "publish_memory: publish the two authorized memory changes, close their task
-      beads, and finish sase-1ae.4."
-  - id: final_audit
-    title: Audit the backlog and close sase-1ae and sase-1aq
-    size: small
-    depends_on:
-      - publish_memory
-    description:
-      "final_audit: finish the memory census and verify every requested descendant and
-      plan before normal parent landing."
+- id: recover_dispatch
+  title: Reconcile the uncertain dispatch and close the accepted snapshot proof
+  size: small
+  depends_on: []
+  description: 'recover_dispatch: reconcile Apollo''s uncertain launch by its original
+    operation key, establish one active owner, and normally close the already evidenced
+    snapshot phase.'
+- id: unified_proof
+  title: Complete the unified live dispatch and exact-operation matrix
+  size: medium
+  depends_on:
+  - recover_dispatch
+  description: 'unified_proof: finish the original unified live proof and the remaining
+    fault cases on a matching released cohort.'
+- id: dispatch_landing
+  title: Land the original remote-dispatch epic chain
+  size: medium
+  depends_on:
+  - unified_proof
+  description: 'dispatch_landing: close the original dispatch acceptance beads and
+    their ancestors through sase-xe with evidence and normal land owners.'
+- id: parity_landing
+  title: Prove and land deployed owner-to-viewer Agents parity
+  size: medium
+  depends_on:
+  - dispatch_landing
+  description: 'parity_landing: complete the production parity oracle and same-build
+    live captures, then land sase-133.5 and sase-133.'
+- id: publish_memory
+  title: Publish the landed hold and dispatch guidance
+  size: medium
+  depends_on:
+  - dispatch_landing
+  - parity_landing
+  description: 'publish_memory: publish the two authorized memory changes, close their
+    task beads, and finish sase-1ae.4.'
+- id: final_audit
+  title: Audit the backlog and close sase-1ae and sase-1aq
+  size: small
+  depends_on:
+  - publish_memory
+  description: 'final_audit: finish the memory census and verify every requested descendant
+    and plan before normal parent landing.'
 proposed_by: bbugyi200.apollo.23
 create_time: 2026-09-26 17:34:34
 status: wip
+bead_id: sase-1aq.10
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_1aq_live_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_1aq_live_closeout.md)
+- **PROMPT:** [prompts/202609/finish_1aq_live_closeout.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_1aq_live_closeout.md)
+- **BEAD:** [sase-1aq.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.md)
 
 # Finish `sase-1aq` on the live Athena–Apollo cohort
 
