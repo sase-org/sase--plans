@@ -1,33 +1,31 @@
 ---
 tier: epic
 title: Replace existing model directives on shortcut completion
-goal:
-  Accepting =alias or ==model yields one standalone model directive per prompt segment
-  while preserving alternation branches, with matching behavior in the prompt widget and
-  LSP.
+goal: Accepting =alias or ==model yields one standalone model directive per prompt
+  segment while preserving alternation branches, with matching behavior in the prompt
+  widget and LSP.
 phases:
-  - id: core_selection
-    title: Implement shared model edits and protect alternation targets
-    description:
-      "core_selection: implement and test alternation-aware model and project-tag
-      selection in sase-core, including LSP completion edits."
-    depends_on: []
-    size: medium
-  - id: widget_adoption
-    title: Apply shared edits in the prompt widget
-    description:
-      "widget_adoption: adopt the core selection result in the Python widget, update the
-      core revision pin, and verify cross-frontend parity."
-    depends_on:
-      - core_selection
-    size: medium
+- id: core_selection
+  title: Implement shared model edits and protect alternation targets
+  description: 'core_selection: implement and test alternation-aware model and project-tag
+    selection in sase-core, including LSP completion edits.'
+  depends_on: []
+  size: medium
+- id: widget_adoption
+  title: Apply shared edits in the prompt widget
+  description: 'widget_adoption: adopt the core selection result in the Python widget,
+    update the core revision pin, and verify cross-frontend parity.'
+  depends_on:
+  - core_selection
+  size: medium
 proposed_by: bbugyi200.apollo.1x
 create_time: 2026-09-26 10:14:28
 status: wip
+bead_id: sase-1ao
 ---
 
-- **PROMPT:**
-  [prompts/202609/model_shortcut_replacement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_shortcut_replacement.md)
+- **PROMPT:** [prompts/202609/model_shortcut_replacement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/model_shortcut_replacement.md)
+- **BEAD:** [sase-1ao](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ao/README.md)
 
 # Outcome
 
