@@ -133,7 +133,7 @@ phases:
       bead, and regenerate the PNG goldens."
 proposed_by: bbugyi200.athena.0qs
 create_time: 2026-09-24 11:20:33
-status: wip
+status: done
 ---
 
 - **PROMPT:**
