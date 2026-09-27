@@ -1,43 +1,39 @@
 ---
 tier: epic
 title: Finish the Prompts overlay cutover
-goal:
-  The Prompts overlay fails truthfully when lifecycle reads fail, passes the History
+goal: The Prompts overlay fails truthfully when lifecycle reads fail, passes the History
   responsiveness soak, and has clean cutover symbols and reviewed PNG coverage.
 parent_bead: sase-1au
 phases:
-  - id: fail_closed_read
-    title: Fail closed when the Prompts lifecycle snapshot cannot be read
-    size: medium
-    depends_on: []
-    description:
-      "fail_closed_read: remove the active-only fallback and cover stale bindings and
-      failed lifecycle reads without hiding Trash."
-  - id: retire_old_modal
-    title: Retire dead prompt modal surface and repair extraction test drift
-    size: medium
-    depends_on: []
-    description:
-      "retire_old_modal: resolve cutover unused symbols under Symvision policy and make
-      the residual freeze soak exercise the live History pane."
-  - id: overlay_visuals
-    title: Capture and inspect Prompts overlay visuals
-    size: medium
-    depends_on:
-      - fail_closed_read
-      - retire_old_modal
-    description:
-      "overlay_visuals: add narrow and wide Prompts overlay PNG snapshots with populated
-      Stash and Trash and inspect the targeted goldens."
+- id: fail_closed_read
+  title: Fail closed when the Prompts lifecycle snapshot cannot be read
+  size: medium
+  depends_on: []
+  description: 'fail_closed_read: remove the active-only fallback and cover stale
+    bindings and failed lifecycle reads without hiding Trash.'
+- id: retire_old_modal
+  title: Retire dead prompt modal surface and repair extraction test drift
+  size: medium
+  depends_on: []
+  description: 'retire_old_modal: resolve cutover unused symbols under Symvision policy
+    and make the residual freeze soak exercise the live History pane.'
+- id: overlay_visuals
+  title: Capture and inspect Prompts overlay visuals
+  size: medium
+  depends_on:
+  - fail_closed_read
+  - retire_old_modal
+  description: 'overlay_visuals: add narrow and wide Prompts overlay PNG snapshots
+    with populated Stash and Trash and inspect the targeted goldens.'
 proposed_by: bbugyi200.athena.sase-1au.land
 create_time: 2026-09-26 20:01:57
 status: wip
+bead_id: sase-1au.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/prompts_overlay_cutover_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompts_overlay_cutover_remainder.md)
-- **PARENT:**
-  [202609/prompt_recall_tabs_and_stash_trash.md](https://github.com/sase-org/sase--plans/blob/main/202609/prompt_recall_tabs_and_stash_trash.md)
+- **PROMPT:** [prompts/202609/prompts_overlay_cutover_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompts_overlay_cutover_remainder.md)
+- **PARENT:** [202609/prompt_recall_tabs_and_stash_trash.md](https://github.com/sase-org/sase--plans/blob/main/202609/prompt_recall_tabs_and_stash_trash.md)
+- **BEAD:** [sase-1au.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1au/sase-1au.6.md)
 
 # Finish the Prompts overlay cutover
 
