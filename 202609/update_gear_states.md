@@ -1,67 +1,63 @@
 ---
 tier: epic
-title:
-  Three-state updates gear (green updating, yellow restart queued, red last update
+title: Three-state updates gear (green updating, yellow restart queued, red last update
   failed)
-goal: "The gear inset at the left edge of the top bar's `updates:` badge shows at most
-  one gear and always tells the truth: green while an update proc runs, yellow while an
-  installed update waits for this ACE's own procs before restarting ACE and the SASE
-  service, and red while the user's most recent update (or update-planning) attempt has
-  failed. Each gear has a tooltip that explains it and a click target that acts on it.
-  The red state survives ACE restarts and crashes, and every ACE instance on the machine
-  shows it.
+goal: 'The gear inset at the left edge of the top bar''s `updates:` badge shows at
+  most one gear and always tells the truth: green while an update proc runs, yellow
+  while an installed update waits for this ACE''s own procs before restarting ACE
+  and the SASE service, and red while the user''s most recent update (or update-planning)
+  attempt has failed. Each gear has a tooltip that explains it and a click target
+  that acts on it. The red state survives ACE restarts and crashes, and every ACE
+  instance on the machine shows it.
 
-  "
+  '
 phases:
-  - id: yellow-gear
-    title: Gear state model, three-hue palette, and the yellow restart-queued gear
-    depends_on: []
-    size: medium
-    description:
-      "yellow-gear: add the pure gear-state model and precedence, the lime/yellow/red
-      palette with contrast guards, and state-driven chip rendering. Make the
-      tracked-restart wait publish a coalesced pending-restart record so the badge shows
-      the yellow gear with a blocker tooltip and a click that opens Procs on the first
-      blocker. Feature-flag restarts opt out."
-  - id: attempt-journal
-    title: Durable update-attempt journal
-    depends_on: []
-    size: medium
-    description:
-      "attempt-journal: add a best-effort, flock-guarded, atomically written JSON
-      journal under sase_home(). It holds pure reducers for attempt start and settle,
-      dismissal, and interrupted-attempt reconciliation (owner liveness survives execv
-      restarts). A revisioned view feeds the UI. No UI changes."
-  - id: red-gear
-    title: Red gear lifecycle and the failure report
-    depends_on:
-      - yellow-gear
-      - attempt-journal
-    size: medium
-    description:
-      "red-gear: record every update-lane attempt through the journal. Session workers
-      write start and settle markers in the worker thread before on_complete; durable
-      update procs settle off-thread. Add an app mixin that applies revisioned views at
-      startup, on the 10-minute tick, and after settles. Show the red gear with its
-      tooltip, and open a new failure-report modal on click (u open Update, d dismiss, y
-      copy)."
-  - id: panel-failure-row
-    title: Update panel failure row and docs polish
-    depends_on:
-      - red-gear
-    size: small
-    description:
-      "panel-failure-row: surface the recorded failure as the first Update panel (,U)
-      row. f opens the failure report, and d dismisses in place through a panel message.
-      The open panel refreshes when the journal view changes, and the Update-panel docs
-      describe the row."
+- id: yellow-gear
+  title: Gear state model, three-hue palette, and the yellow restart-queued gear
+  depends_on: []
+  size: medium
+  description: 'yellow-gear: add the pure gear-state model and precedence, the lime/yellow/red
+    palette with contrast guards, and state-driven chip rendering. Make the tracked-restart
+    wait publish a coalesced pending-restart record so the badge shows the yellow
+    gear with a blocker tooltip and a click that opens Procs on the first blocker.
+    Feature-flag restarts opt out.'
+- id: attempt-journal
+  title: Durable update-attempt journal
+  depends_on: []
+  size: medium
+  description: 'attempt-journal: add a best-effort, flock-guarded, atomically written
+    JSON journal under sase_home(). It holds pure reducers for attempt start and settle,
+    dismissal, and interrupted-attempt reconciliation (owner liveness survives execv
+    restarts). A revisioned view feeds the UI. No UI changes.'
+- id: red-gear
+  title: Red gear lifecycle and the failure report
+  depends_on:
+  - yellow-gear
+  - attempt-journal
+  size: medium
+  description: 'red-gear: record every update-lane attempt through the journal. Session
+    workers write start and settle markers in the worker thread before on_complete;
+    durable update procs settle off-thread. Add an app mixin that applies revisioned
+    views at startup, on the 10-minute tick, and after settles. Show the red gear
+    with its tooltip, and open a new failure-report modal on click (u open Update,
+    d dismiss, y copy).'
+- id: panel-failure-row
+  title: Update panel failure row and docs polish
+  depends_on:
+  - red-gear
+  size: small
+  description: 'panel-failure-row: surface the recorded failure as the first Update
+    panel (,U) row. f opens the failure report, and d dismisses in place through a
+    panel message. The open panel refreshes when the journal view changes, and the
+    Update-panel docs describe the row.'
 proposed_by: bbugyi200.apollo.2d
 create_time: 2026-09-27 13:22:55
 status: wip
+bead_id: sase-1bd
 ---
 
-- **PROMPT:**
-  [prompts/202609/update_gear_states.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/update_gear_states.md)
+- **PROMPT:** [prompts/202609/update_gear_states.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/update_gear_states.md)
+- **BEAD:** [sase-1bd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bd/README.md)
 
 # Plan: Three-state updates gear
 
