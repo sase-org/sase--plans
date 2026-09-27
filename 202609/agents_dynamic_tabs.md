@@ -1,145 +1,134 @@
 ---
 tier: epic
-title: "Dynamic Agents sub-tabs: %tab, machine tabs, and the o/O layout ladder"
-goal: "The Agents tab gains dynamic, launch-assigned sub-tabs. `%tab:<name>` places an
-  agent's whole session, clan, or workflow on a named tab on every machine. Agents
-  without a tab land on `main`, or on derived machine tabs (`⌨ local`, `⌨ <alias>`) when
-  remotes are configured. The strip stays invisible until two tabs have agents, never
-  hides something that needs you, and switches instantly. The `o`/`O` modal walks a
-  Split → Merged → All tabs ladder. The whole feature is intuitive, reliable across
-  machines and versions, and beautiful.
+title: 'Dynamic Agents sub-tabs: %tab, machine tabs, and the o/O layout ladder'
+goal: 'The Agents tab gains dynamic, launch-assigned sub-tabs. `%tab:<name>` places
+  an agent''s whole session, clan, or workflow on a named tab on every machine. Agents
+  without a tab land on `main`, or on derived machine tabs (`⌨ local`, `⌨ <alias>`)
+  when remotes are configured. The strip stays invisible until two tabs have agents,
+  never hides something that needs you, and switches instantly. The `o`/`O` modal
+  walks a Split → Merged → All tabs ladder. The whole feature is intuitive, reliable
+  across machines and versions, and beautiful.
 
-  "
+  '
 phases:
-  - id: card-block-keys
-    title: Free the brackets and delete the dead Focus/Fleet state
-    depends_on: []
-    size: medium
-    description:
-      "card-block-keys: move card-block stepping from [/] to (/) across config, keymap
-      types, availability, collision allowances, help, footer, rail hints, docs,
-      goldens, and the card-block glossary strand; warn on legacy bracket overrides;
-      delete the dead AgentsSubTab state."
-  - id: core-tab-model
-    title: sase-core agent tab model, directive contract, and typed units
-    depends_on: []
-    size: medium
-    description:
-      "core-tab-model: add sase_core agent_tab.rs (name canonicalization, reserved
-      names, tab keys, effective-tab resolution, catalog ordering), the `tab` directive
-      contract entry with a Tab value role and completion, and typed-unit parsing,
-      validation, re-emission, and digest coverage, plus Python bindings."
-  - id: core-tab-wires
-    title: sase-core scan wire and fleet contract carry agent_tab
-    depends_on:
-      - core-tab-model
-    size: medium
-    description:
-      "core-tab-wires: add agent_tab/agent_tab_source to the scan wire (schema 11) and
-      agent_tab to the fleet owner and summary wires (contract 7) with root inheritance
-      in fleet_catalog, gateway owner facts, stable revisions, validation, and a
-      breaking-change marker."
-  - id: tab-directive
-    title: "%tab launch path, storage, query field, and completion"
-    depends_on:
-      - core-tab-wires
-    size: large
-    description:
-      "tab-directive: bump the core pin; parse and validate %tab in Python; write
-      agent_tab to meta, clan records, and session follow-ups with root-mismatch errors;
-      preserve it across retry, revive, and fork; load it into the Agent model from
-      meta, index, and fleet rows; add the tab: query field and %tab completion; update
-      docs and the xprompts memory table."
-  - id: tab-lineage-dispatch
-    title: Lineage inheritance and dispatch preflight
-    depends_on:
-      - tab-directive
-    size: medium
-    description:
-      "tab-lineage-dispatch: export SASE_AGENT_TAB from agent, gate, and monitor turns
-      and insert an inherited %tab into agent-initiated launches (sase
-      run/LaunchApproval, sase bead work, epic approval); add the %tab+%dispatch version
-      preflight; update remote dispatch docs and the dispatch memory note."
-  - id: tab-scope
-    title: Tab index, active-tab scope, keys, and cross-tab navigation
-    depends_on:
-      - card-block-keys
-      - tab-directive
-    size: large
-    description:
-      "tab-scope: create the agent_tabs beta flag and the ace.agent_tabs config block;
-      compute the per-root tab index and catalog; add the active-tab scope stage after
-      the query; key panel index, folds, sticky panels, and selection memory by tab;
-      persist the active tab; bind [/] to tab cycling; make every cross-tab jump switch
-      tabs; scope bulk confirmations; add a minimal strip and perf metric."
-  - id: tab-strip
-    title: The beautiful tab strip
-    depends_on:
-      - tab-scope
-    size: large
-    description:
-      "tab-strip: build AgentTabStrip in #agents-header with accent labels, the active
-      pill, count and attention badges, tiers, an overflow window with a tab picker,
-      tooltips, jump hints, arrival dots, the emptied-tab latch, three-cause empty
-      states, and golden coverage."
-  - id: layout-ladder
-    title: The o/O layout ladder
-    depends_on:
-      - tab-strip
-    size: medium
-    description:
-      "layout-ladder: replace the merged boolean with a Split/Merged/All-tabs level;
-      turn the grouping modal's layout row into a segmented control with o (next) and O
-      (previous); add titles, info-row chip, all-tabs strip state, row tab chips,
-      tribe-roster tab chips, and anchor-preserving transitions."
-  - id: machine-tabs
-    title: Machine tabs
-    depends_on:
-      - tab-strip
-    size: medium
-    description:
-      "machine-tabs: render machine tabs with the ⌨ glyph and health colors; adopt
-      `local` vocabulary everywhere with machine:local; suppress redundant machine chips
-      and banners on machine tabs; make Admin Center Enter select the machine tab; add
-      off-tab tooltips and alias-rename and unenrolled-machine handling."
-  - id: launch-view-ux
-    title: Launch-from-view inheritance and launch UX
-    depends_on:
-      - tab-lineage-dispatch
-      - machine-tabs
-    size: medium
-    description:
-      "launch-view-ux: add the prompt-bar tab chip and remote-tab hint, the gb Launch
-      Tab picker, %tab insertion on submit from a named tab, landing toasts with arrival
-      marks, and the LaunchApproval tab field."
-  - id: tab-moves
-    title: Move agents between tabs
-    depends_on:
-      - tab-scope
-    size: medium
-    description:
-      "tab-moves: add persist-directive agent_tab support (meta, prompt, clan record),
-      the sase agent tab list/set/unset CLI, and a Tribe & Tab N modal with optimistic
-      moves; disable moves on remote rows."
-  - id: finish
-    title: Unflag, document, measure, and record memory
-    depends_on:
-      - layout-ladder
-      - machine-tabs
-      - launch-view-ux
-      - tab-moves
-    size: medium
-    description:
-      "finish: delete the agent_tabs flag's Off branches and close its bead; finish the
-      docs; add the tab-switch bench; do the full golden pass; add the agent-tab and
-      machine-tab glossary strands and update the node-panel strand."
+- id: card-block-keys
+  title: Free the brackets and delete the dead Focus/Fleet state
+  depends_on: []
+  size: medium
+  description: 'card-block-keys: move card-block stepping from [/] to (/) across config,
+    keymap types, availability, collision allowances, help, footer, rail hints, docs,
+    goldens, and the card-block glossary strand; warn on legacy bracket overrides;
+    delete the dead AgentsSubTab state.'
+- id: core-tab-model
+  title: sase-core agent tab model, directive contract, and typed units
+  depends_on: []
+  size: medium
+  description: 'core-tab-model: add sase_core agent_tab.rs (name canonicalization,
+    reserved names, tab keys, effective-tab resolution, catalog ordering), the `tab`
+    directive contract entry with a Tab value role and completion, and typed-unit
+    parsing, validation, re-emission, and digest coverage, plus Python bindings.'
+- id: core-tab-wires
+  title: sase-core scan wire and fleet contract carry agent_tab
+  depends_on:
+  - core-tab-model
+  size: medium
+  description: 'core-tab-wires: add agent_tab/agent_tab_source to the scan wire (schema
+    11) and agent_tab to the fleet owner and summary wires (contract 7) with root
+    inheritance in fleet_catalog, gateway owner facts, stable revisions, validation,
+    and a breaking-change marker.'
+- id: tab-directive
+  title: '%tab launch path, storage, query field, and completion'
+  depends_on:
+  - core-tab-wires
+  size: large
+  description: 'tab-directive: bump the core pin; parse and validate %tab in Python;
+    write agent_tab to meta, clan records, and session follow-ups with root-mismatch
+    errors; preserve it across retry, revive, and fork; load it into the Agent model
+    from meta, index, and fleet rows; add the tab: query field and %tab completion;
+    update docs and the xprompts memory table.'
+- id: tab-lineage-dispatch
+  title: Lineage inheritance and dispatch preflight
+  depends_on:
+  - tab-directive
+  size: medium
+  description: 'tab-lineage-dispatch: export SASE_AGENT_TAB from agent, gate, and
+    monitor turns and insert an inherited %tab into agent-initiated launches (sase
+    run/LaunchApproval, sase bead work, epic approval); add the %tab+%dispatch version
+    preflight; update remote dispatch docs and the dispatch memory note.'
+- id: tab-scope
+  title: Tab index, active-tab scope, keys, and cross-tab navigation
+  depends_on:
+  - card-block-keys
+  - tab-directive
+  size: large
+  description: 'tab-scope: create the agent_tabs beta flag and the ace.agent_tabs
+    config block; compute the per-root tab index and catalog; add the active-tab scope
+    stage after the query; key panel index, folds, sticky panels, and selection memory
+    by tab; persist the active tab; bind [/] to tab cycling; make every cross-tab
+    jump switch tabs; scope bulk confirmations; add a minimal strip and perf metric.'
+- id: tab-strip
+  title: The beautiful tab strip
+  depends_on:
+  - tab-scope
+  size: large
+  description: 'tab-strip: build AgentTabStrip in #agents-header with accent labels,
+    the active pill, count and attention badges, tiers, an overflow window with a
+    tab picker, tooltips, jump hints, arrival dots, the emptied-tab latch, three-cause
+    empty states, and golden coverage.'
+- id: layout-ladder
+  title: The o/O layout ladder
+  depends_on:
+  - tab-strip
+  size: medium
+  description: 'layout-ladder: replace the merged boolean with a Split/Merged/All-tabs
+    level; turn the grouping modal''s layout row into a segmented control with o (next)
+    and O (previous); add titles, info-row chip, all-tabs strip state, row tab chips,
+    tribe-roster tab chips, and anchor-preserving transitions.'
+- id: machine-tabs
+  title: Machine tabs
+  depends_on:
+  - tab-strip
+  size: medium
+  description: 'machine-tabs: render machine tabs with the ⌨ glyph and health colors;
+    adopt `local` vocabulary everywhere with machine:local; suppress redundant machine
+    chips and banners on machine tabs; make Admin Center Enter select the machine
+    tab; add off-tab tooltips and alias-rename and unenrolled-machine handling.'
+- id: launch-view-ux
+  title: Launch-from-view inheritance and launch UX
+  depends_on:
+  - tab-lineage-dispatch
+  - machine-tabs
+  size: medium
+  description: 'launch-view-ux: add the prompt-bar tab chip and remote-tab hint, the
+    gb Launch Tab picker, %tab insertion on submit from a named tab, landing toasts
+    with arrival marks, and the LaunchApproval tab field.'
+- id: tab-moves
+  title: Move agents between tabs
+  depends_on:
+  - tab-scope
+  size: medium
+  description: 'tab-moves: add persist-directive agent_tab support (meta, prompt,
+    clan record), the sase agent tab list/set/unset CLI, and a Tribe & Tab N modal
+    with optimistic moves; disable moves on remote rows.'
+- id: finish
+  title: Unflag, document, measure, and record memory
+  depends_on:
+  - layout-ladder
+  - machine-tabs
+  - launch-view-ux
+  - tab-moves
+  size: medium
+  description: 'finish: delete the agent_tabs flag''s Off branches and close its bead;
+    finish the docs; add the tab-switch bench; do the full golden pass; add the agent-tab
+    and machine-tab glossary strands and update the node-panel strand.'
 proposed_by: bbugyi200.athena.0t4
 create_time: 2026-09-27 10:56:57
 status: wip
+bead_id: sase-1bc
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_dynamic_tabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_dynamic_tabs.md)
+- **PROMPT:** [prompts/202609/agents_dynamic_tabs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_dynamic_tabs.md)
+- **BEAD:** [sase-1bc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bc/README.md)
 
 # Plan: Dynamic Agents sub-tabs
 
