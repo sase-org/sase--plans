@@ -1,79 +1,74 @@
 ---
 tier: epic
-title: "Agent tabs: tab index, active-tab scope, keys, and cross-tab navigation"
-goal: "Behind the new `agent_tabs` beta flag, the Agents tab shows one agent tab at a
-  time. A per-root tab index and ordered catalog come from the sase-core catalog. The
-  active tab re-scopes a cached, tab-independent query result without I/O. Folds, sticky
-  panels, and selection memory are kept per tab. The active tab persists across
+title: 'Agent tabs: tab index, active-tab scope, keys, and cross-tab navigation'
+goal: 'Behind the new `agent_tabs` beta flag, the Agents tab shows one agent tab at
+  a time. A per-root tab index and ordered catalog come from the sase-core catalog.
+  The active tab re-scopes a cached, tab-independent query result without I/O. Folds,
+  sticky panels, and selection memory are kept per tab. The active tab persists across
   restarts. `[`/`]` cycle tabs, every cross-tab jump switches tabs first, and bulk
-  confirmations name their scope. A minimal strip makes the scope visible. With the flag
-  off, the TUI is unchanged.
+  confirmations name their scope. A minimal strip makes the scope visible. With the
+  flag off, the TUI is unchanged.
 
-  "
+  '
 phases:
-  - id: tab-foundation
-    title: Flag, ace.agent_tabs config, machine mode, and the tab index model
-    depends_on: []
-    size: medium
-    description:
-      "tab-foundation: create the agent_tabs beta flag with sase flag new and a single
-      check helper; add the ace.agent_tabs typed reader, schema, defaults, and docs; add
-      the token-cached machine-mode accessor; extend the core adapter with typed tab
-      keys and a batched catalog wrapper; give clan containers an agent_tab; build the
-      pure, memoized per-root tab index model with tests. No UI wiring."
-  - id: scope-stage
-    title: Active-tab scope stage and tab-keyed panel state
-    depends_on:
-      - tab-foundation
-    size: medium
-    description:
-      "scope-stage: cache the tab-independent query result and add the active-tab scope
-      stage in the inline and worker finalize paths; add the scope to
-      PreparedApplySnapshot and the stale token; route every direct _agents mutation
-      through the cached result; key the panel-index memo, AgentPanelFoldScope (fold
-      persistence v3 to v4), session-sticky panels, and selection memory by tab scope."
-  - id: tab-state-keys
-    title: Tab switching, persistence, keys, minimal strip, and perf metric
-    depends_on:
-      - scope-stage
-    size: medium
-    description:
-      "tab-state-keys: add the synchronous tab switch with per-tab memory, startup
-      selection, the emptied-tab latch, and the disappearance fallback; persist the
-      active key off-thread; wire ]/[ next/prev_agents_tab and unbound pick_agents_tab
-      through the full keymap surface, with legacy bracket yield; render a labels-only
-      PanelTabStrip in #agents-header; add the tab-switch perf metric and AcePage state."
-  - id: cross-tab-nav
-    title: Switch-then-reveal for every cross-tab jump
-    depends_on:
-      - tab-state-keys
-    size: medium
-    description:
-      "cross-tab-nav: add one switch-then-reveal helper and route every agent-revealing
-      entry point through it (shared reveal, Node Finder with off-tab chips, ,j/,J from
-      the query result, relation jumps, notification jumps, link follow and trail, the
-      Procs monitor jump, the run-log jump, Files open agent, revive select); record the
-      tab in jump-back anchors."
-  - id: scope-honesty
-    title: Tab-scoped bulk confirmations, docs, and flag-on verification
-    depends_on:
-      - tab-state-keys
-    size: medium
-    description:
-      "scope-honesty: make bulk and cleanup confirmations name their scope (on <tab> or
-      across all tabs) and flag marked agents on other tabs; document the keys and the
-      flagged behavior in docs/ace.md; confirm that the flag-off goldens are unchanged
-      and a live flag-on screenshot shows instant switching."
+- id: tab-foundation
+  title: Flag, ace.agent_tabs config, machine mode, and the tab index model
+  depends_on: []
+  size: medium
+  description: 'tab-foundation: create the agent_tabs beta flag with sase flag new
+    and a single check helper; add the ace.agent_tabs typed reader, schema, defaults,
+    and docs; add the token-cached machine-mode accessor; extend the core adapter
+    with typed tab keys and a batched catalog wrapper; give clan containers an agent_tab;
+    build the pure, memoized per-root tab index model with tests. No UI wiring.'
+- id: scope-stage
+  title: Active-tab scope stage and tab-keyed panel state
+  depends_on:
+  - tab-foundation
+  size: medium
+  description: 'scope-stage: cache the tab-independent query result and add the active-tab
+    scope stage in the inline and worker finalize paths; add the scope to PreparedApplySnapshot
+    and the stale token; route every direct _agents mutation through the cached result;
+    key the panel-index memo, AgentPanelFoldScope (fold persistence v3 to v4), session-sticky
+    panels, and selection memory by tab scope.'
+- id: tab-state-keys
+  title: Tab switching, persistence, keys, minimal strip, and perf metric
+  depends_on:
+  - scope-stage
+  size: medium
+  description: 'tab-state-keys: add the synchronous tab switch with per-tab memory,
+    startup selection, the emptied-tab latch, and the disappearance fallback; persist
+    the active key off-thread; wire ]/[ next/prev_agents_tab and unbound pick_agents_tab
+    through the full keymap surface, with legacy bracket yield; render a labels-only
+    PanelTabStrip in #agents-header; add the tab-switch perf metric and AcePage state.'
+- id: cross-tab-nav
+  title: Switch-then-reveal for every cross-tab jump
+  depends_on:
+  - tab-state-keys
+  size: medium
+  description: 'cross-tab-nav: add one switch-then-reveal helper and route every agent-revealing
+    entry point through it (shared reveal, Node Finder with off-tab chips, ,j/,J from
+    the query result, relation jumps, notification jumps, link follow and trail, the
+    Procs monitor jump, the run-log jump, Files open agent, revive select); record
+    the tab in jump-back anchors.'
+- id: scope-honesty
+  title: Tab-scoped bulk confirmations, docs, and flag-on verification
+  depends_on:
+  - tab-state-keys
+  size: medium
+  description: 'scope-honesty: make bulk and cleanup confirmations name their scope
+    (on <tab> or across all tabs) and flag marked agents on other tabs; document the
+    keys and the flagged behavior in docs/ace.md; confirm that the flag-off goldens
+    are unchanged and a live flag-on screenshot shows instant switching.'
 proposed_by: bbugyi200.athena.sase-1bc.6
 parent_bead: sase-1bc.6
 create_time: 2026-09-27 13:46:02
 status: wip
+bead_id: sase-1bc.6.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_tabs_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_tabs_scope.md)
-- **PARENT:**
-  [202609/agents_dynamic_tabs.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_dynamic_tabs.md)
+- **PROMPT:** [prompts/202609/agent_tabs_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_tabs_scope.md)
+- **PARENT:** [202609/agents_dynamic_tabs.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_dynamic_tabs.md)
+- **BEAD:** [sase-1bc.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bc/sase-1bc.6.1.md)
 
 # Plan: agent tabs, active-tab scope, keys, and cross-tab navigation
 
