@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Make exact remote stop and retry settle certainly
-goal: "Exact remote stop and retry observe a settled same-key receipt, a fresh dispatch
+goal: 'Exact remote stop and retry observe a settled same-key receipt, a fresh dispatch
   row is addressable before a slow owner snapshot rebuild finishes, and a killed fleet
   row keeps its retry context for as long as it advertises retry.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.apollo.sase-1aq.10.7.5.2
 bead: sase-1aq.10.7.5.2
@@ -16,11 +16,6 @@ status: done
   [202609/1aq_close_original_gates.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_close_original_gates.md)
 - **BEAD:**
   [sase-1aq.10.7.5.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.7.5.2.md)
-- **AGENTS:**
-  - [bbugyi200.apollo.sase-1aq.10.7.5.2](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1aq.10.7.5.2.md)
-- **COMMITS:**
-  - [700b37b](https://github.com/sase-org/sase/commit/700b37b3849e84cd775405b7279fdaef2ea8a3ef)
-    — feat(dispatch): settle exact stop and retry receipts certainly
 
 # Plan: Make exact remote stop and retry settle certainly
 
