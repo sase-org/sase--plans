@@ -14,7 +14,7 @@ phases:
     the two new PNG goldens, and run just check.'
 proposed_by: bbugyi200.apollo.sase-1bd.land
 create_time: 2026-09-27 16:50:50
-status: wip
+status: done
 bead_id: sase-1bd.5
 ---
 
