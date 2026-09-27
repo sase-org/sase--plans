@@ -1,16 +1,15 @@
 ---
 tier: tale
 title: Bring P view transitions within the D10 budgets
-goal: "Each P transition on the 5,000-line and 14,000-line Reply fixtures meets the D10
-  key-to-paint budgets, or a measured guard the UI explains is in place, and the numbers
-  are recorded on bead sase-1b1.8.2.
+goal: 'Each P transition on the 5,000-line and 14,000-line Reply fixtures meets the
+  D10 key-to-paint budgets, or a measured guard the UI explains is in place, and the
+  numbers are recorded on bead sase-1b1.8.2.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-1b1.8.2
 bead: sase-1b1.8.2
-create_time: 2026-09-27 15:13:57
-status: wip
+status: done
 ---
 
 - **PARENT:**
