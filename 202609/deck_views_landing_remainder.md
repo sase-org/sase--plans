@@ -1,55 +1,50 @@
 ---
 tier: epic
-title:
-  "Deck views landing remainder: integration fixes, P-transition budgets, and the live
-  check"
-goal:
-  Finish the work the sase-1b1 (deck views) land agent found before that epic can close.
-  Re-apply its uncommitted integration fixes so master is green for deck views. Bring
-  `P` view transitions within the D10 budgets, or put the documented, measured
-  mitigation in place. Perform the never-run live wide/narrow drive of the deck-view
-  badge and cycle.
+title: 'Deck views landing remainder: integration fixes, P-transition budgets, and
+  the live check'
+goal: Finish the work the sase-1b1 (deck views) land agent found before that epic
+  can close. Re-apply its uncommitted integration fixes so master is green for deck
+  views. Bring `P` view transitions within the D10 budgets, or put the documented,
+  measured mitigation in place. Perform the never-run live wide/narrow drive of the
+  deck-view badge and cycle.
 phases:
-  - id: integrate
-    title: Re-apply the sase-1b1 landing integration fixes
-    depends_on: []
-    size: small
-    description:
-      "integrate: move four keymap tests that remap actions onto the now-owned P key to
-      the free key B. Privatize three view_policy symbols flagged by symvision. Make
-      DeckViewPolicies.with_deck and distinct layouts dispatch explicitly on Main/Files.
-      Delete the shadowed card_documents view_policy duplicate and add the R4
-      FINAL-panel persistence test."
-  - id: perf
-    title: Bring P view transitions within the D10 budgets or a measured guard
-    depends_on: []
-    size: large
-    description:
-      "perf: profile P key-to-paint on the 5,000-line and 14,000-line Reply fixtures.
-      Apply the D10 mitigations in order: remove redundant render and measurement work,
-      then badge-first pump-safe painting, then (last resort) an explicit measured guard
-      the UI explains. Re-measure with the deck-view bench and record the numbers."
-  - id: live-verify
-    title: Live wide/narrow drive of deck views and the acceptance checklist
-    depends_on:
-      - integrate
-      - perf
-    size: small
-    description:
-      "live-verify: drive the real TUI with sase screenshot at wide and narrow widths
-      (P, Ctrl+J, split, zoom). Confirm the D5 title-legibility test and walk the parent
-      plan's acceptance checklist. Fix small gaps and regenerate and inspect any golden
-      that changes."
+- id: integrate
+  title: Re-apply the sase-1b1 landing integration fixes
+  depends_on: []
+  size: small
+  description: 'integrate: move four keymap tests that remap actions onto the now-owned
+    P key to the free key B. Privatize three view_policy symbols flagged by symvision.
+    Make DeckViewPolicies.with_deck and distinct layouts dispatch explicitly on Main/Files.
+    Delete the shadowed card_documents view_policy duplicate and add the R4 FINAL-panel
+    persistence test.'
+- id: perf
+  title: Bring P view transitions within the D10 budgets or a measured guard
+  depends_on: []
+  size: large
+  description: 'perf: profile P key-to-paint on the 5,000-line and 14,000-line Reply
+    fixtures. Apply the D10 mitigations in order: remove redundant render and measurement
+    work, then badge-first pump-safe painting, then (last resort) an explicit measured
+    guard the UI explains. Re-measure with the deck-view bench and record the numbers.'
+- id: live-verify
+  title: Live wide/narrow drive of deck views and the acceptance checklist
+  depends_on:
+  - integrate
+  - perf
+  size: small
+  description: 'live-verify: drive the real TUI with sase screenshot at wide and narrow
+    widths (P, Ctrl+J, split, zoom). Confirm the D5 title-legibility test and walk
+    the parent plan''s acceptance checklist. Fix small gaps and regenerate and inspect
+    any golden that changes.'
 proposed_by: bbugyi200.athena.sase-1b1.land
 parent_bead: sase-1b1
 create_time: 2026-09-27 14:52:58
 status: wip
+bead_id: sase-1b1.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/deck_views_landing_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views_landing_remainder.md)
-- **PARENT:**
-  [202609/deck_views.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_views.md)
+- **PROMPT:** [prompts/202609/deck_views_landing_remainder.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views_landing_remainder.md)
+- **PARENT:** [202609/deck_views.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_views.md)
+- **BEAD:** [sase-1b1.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b1/sase-1b1.8.md)
 
 # Deck views landing remainder
 
