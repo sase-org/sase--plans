@@ -1,12 +1,12 @@
 ---
 tier: tale
-title: '%tab launch path, storage, query field, and completion'
-goal: 'A launch can place its presentation root with %tab. The canonical name is stored
+title: "%tab launch path, storage, query field, and completion"
+goal: "A launch can place its presentation root with %tab. The canonical name is stored
   on agent metadata, kept across retry, revive, fork, session follow-ups, and clan
   joiners, loaded onto Agent from meta, index, and fleet rows, and queried and completed
   as tab:. The directive is stripped before the model sees the prompt.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-1bc.4
 bead: sase-1bc.4
@@ -17,6 +17,11 @@ status: done
   [202609/agents_dynamic_tabs.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_dynamic_tabs.md)
 - **BEAD:**
   [sase-1bc.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bc/sase-1bc.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1bc.4](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1bc.4.md)
+- **COMMITS:**
+  - [372ecc9](https://github.com/sase-org/sase/commit/372ecc97c36ae7b7b25edb10a35b6ccf6da3e958)
+    — feat(xprompt): implement %tab directive for agent tab naming
 
 # Plan: %tab launch path, storage, query field, and completion
 
