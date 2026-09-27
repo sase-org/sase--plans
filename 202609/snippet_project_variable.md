@@ -35,7 +35,7 @@ phases:
     them with sase snippet show, and apply chezmoi after the commit lands.'
 proposed_by: bbugyi200.apollo.2a
 create_time: 2026-09-27 08:18:49
-status: wip
+status: done
 bead_id: sase-1b6
 ---
 
