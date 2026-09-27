@@ -1,39 +1,36 @@
 ---
 tier: epic
 title: Land the fleet claims-cache fix and reconverge Apollo and Athena builds
-goal:
-  The sase-core claims-cache fix that the receipt live proof deployed only to Apollo is
-  committed on sase-core master, both hosts run the same sase and sase-core build
-  containing it, and fresh remote rows stay visible from Athena while they run.
+goal: The sase-core claims-cache fix that the receipt live proof deployed only to
+  Apollo is committed on sase-core master, both hosts run the same sase and sase-core
+  build containing it, and fresh remote rows stay visible from Athena while they run.
 parent_bead: sase-1aq.10.7.5.7
 phases:
-  - id: land_claims_fix
-    title: Commit the host_liveness claims-cache recheck fix to sase-core
-    depends_on: []
-    size: small
-    description:
-      "land_claims_fix: apply the audited host_liveness.rs claims-cache recheck diff in
-      the linked sase-core checkout with its regression test, run the focused cargo
-      suites plus sase-core lint, and land it on sase-core master."
-  - id: reconverge_deploy
-    title: Reconverge both hosts on the fixed build and recheck fresh-row visibility
-    depends_on:
-      - land_claims_fix
-    size: medium
-    description:
-      "reconverge_deploy: reconcile the dirty Apollo primary sase-core checkout against
-      the landed fix, run the supported sase update on Apollo and Athena, restart the
-      gateway stack, confirm matched builds and health, and prove from Athena that a
-      fresh running Apollo dispatch is served while it runs."
+- id: land_claims_fix
+  title: Commit the host_liveness claims-cache recheck fix to sase-core
+  depends_on: []
+  size: small
+  description: 'land_claims_fix: apply the audited host_liveness.rs claims-cache recheck
+    diff in the linked sase-core checkout with its regression test, run the focused
+    cargo suites plus sase-core lint, and land it on sase-core master.'
+- id: reconverge_deploy
+  title: Reconverge both hosts on the fixed build and recheck fresh-row visibility
+  depends_on:
+  - land_claims_fix
+  size: medium
+  description: 'reconverge_deploy: reconcile the dirty Apollo primary sase-core checkout
+    against the landed fix, run the supported sase update on Apollo and Athena, restart
+    the gateway stack, confirm matched builds and health, and prove from Athena that
+    a fresh running Apollo dispatch is served while it runs.'
 proposed_by: bbugyi200.apollo.sase-1aq.10.7.5.7.land
 create_time: 2026-09-27 05:04:13
 status: wip
+bead_id: sase-1aq.10.7.5.7.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/1aq_land_claims_cache_fix_and_reconverge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_land_claims_cache_fix_and_reconverge.md)
-- **PARENT:**
-  [202609/1aq_receipts_matched_live_proof.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_receipts_matched_live_proof.md)
+- **PROMPT:** [prompts/202609/1aq_land_claims_cache_fix_and_reconverge.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_land_claims_cache_fix_and_reconverge.md)
+- **PARENT:** [202609/1aq_receipts_matched_live_proof.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_receipts_matched_live_proof.md)
+- **BEAD:** [sase-1aq.10.7.5.7.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.7.5.7.4.md)
 
 # Land the fleet claims-cache fix and reconverge Apollo and Athena builds
 
