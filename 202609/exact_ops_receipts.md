@@ -1,16 +1,15 @@
 ---
 tier: tale
 title: Make exact remote stop and retry settle certainly
-goal: "Exact remote stop and retry observe a settled same-key receipt, a fresh dispatch
+goal: 'Exact remote stop and retry observe a settled same-key receipt, a fresh dispatch
   row is addressable before a slow owner snapshot rebuild finishes, and a killed fleet
   row keeps its retry context for as long as it advertises retry.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.apollo.sase-1aq.10.7.5.2
 bead: sase-1aq.10.7.5.2
-create_time: 2026-09-26 22:11:40
-status: wip
+status: done
 ---
 
 - **PARENT:**
