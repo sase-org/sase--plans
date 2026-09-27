@@ -1,75 +1,72 @@
 ---
 tier: epic
 title: Bound agent scratch by ownership, not by environment luck
-goal: "Per-launch agent scratch (cargo targets, agent TMPDIRs) is removed when its
-  launch is dead, on every managed temp root any writer actually used, regardless of
-  which environment the service host was started with; cleanup refusals are visible; and
-  `sase disk list` / disk-pressure notifications account for where the bytes really are,
-  so a SASE host can no longer silently fill its disk.
+goal: 'Per-launch agent scratch (cargo targets, agent TMPDIRs) is removed when its
+  launch is dead, on every managed temp root any writer actually used, regardless
+  of which environment the service host was started with; cleanup refusals are visible;
+  and `sase disk list` / disk-pressure notifications account for where the bytes really
+  are, so a SASE host can no longer silently fill its disk.
 
-  "
+  '
 phases:
-  - id: root-registry
-    title: Managed temp root registry the reaper follows
-    depends_on: []
-    size: medium
-    description:
-      "root-registry: every root `get_sase_managed_tmpdir()` writes into is recorded in
-      a Rust-owned registry under SASE_HOME, and every managed-tmp reaper entry point
-      reaps all registered roots instead of only the root its own environment resolves."
-  - id: scratch-liveness
-    title: Rust-owned launch scratch liveness that works under systemd
-    depends_on: []
-    size: medium
-    description:
-      "scratch-liveness: move the procfs liveness probe into sase-core, stop treating
-      pre-launch non-dumpable processes (systemd --user, sd-pam, ssh-agent) as
-      incomplete observations, and make runner-exit cleanup log every outcome."
-  - id: dead-launch-reap
-    title: Dead-launch backstop pass and liveness-aware pressure
-    depends_on:
-      - root-registry
-      - scratch-liveness
-    size: medium
-    description:
-      "dead-launch-reap: the housekeeping reaper removes launch-keyed scratch that no
-      live process holds after a short grace, pressure pruning becomes liveness-aware
-      with a realistic minimum entry size, and defaults and docs move with it."
-  - id: disk-attribution
-    title: Truthful disk attribution under pressure
-    depends_on:
-      - root-registry
-    size: medium
-    description:
-      "disk-attribution: `sase disk list` and the disk_pressure job cover every
-      registered root and every workspace checkout before the stray walk, report
-      unattributed bytes, and workspace compaction stops over-reporting hardlinked
-      bytes."
-  - id: visual-run-retention
-    title: Retention for visual snapshot run reports
-    depends_on: []
-    size: small
-    description:
-      "visual-run-retention: the visual maintenance tooling prunes old
-      `.pytest_cache/sase-visual/runs/` directories while preserving the latest report,
-      recent runs, and any unfinished apply journal."
-  - id: host-acceptance
-    title: Integrated acceptance on apollo and athena
-    depends_on:
-      - root-registry
-      - scratch-liveness
-      - dead-launch-reap
-      - disk-attribution
-      - visual-run-retention
-    size: small
-    description:
-      "host-acceptance: after deployment, prove on apollo and athena that the registry
-      finds the agent root, runner exit removes scratch, the backstop reaps dead
-      launches, and disk attribution matches df."
+- id: root-registry
+  title: Managed temp root registry the reaper follows
+  depends_on: []
+  size: medium
+  description: 'root-registry: every root `get_sase_managed_tmpdir()` writes into
+    is recorded in a Rust-owned registry under SASE_HOME, and every managed-tmp reaper
+    entry point reaps all registered roots instead of only the root its own environment
+    resolves.'
+- id: scratch-liveness
+  title: Rust-owned launch scratch liveness that works under systemd
+  depends_on: []
+  size: medium
+  description: 'scratch-liveness: move the procfs liveness probe into sase-core, stop
+    treating pre-launch non-dumpable processes (systemd --user, sd-pam, ssh-agent)
+    as incomplete observations, and make runner-exit cleanup log every outcome.'
+- id: dead-launch-reap
+  title: Dead-launch backstop pass and liveness-aware pressure
+  depends_on:
+  - root-registry
+  - scratch-liveness
+  size: medium
+  description: 'dead-launch-reap: the housekeeping reaper removes launch-keyed scratch
+    that no live process holds after a short grace, pressure pruning becomes liveness-aware
+    with a realistic minimum entry size, and defaults and docs move with it.'
+- id: disk-attribution
+  title: Truthful disk attribution under pressure
+  depends_on:
+  - root-registry
+  size: medium
+  description: 'disk-attribution: `sase disk list` and the disk_pressure job cover
+    every registered root and every workspace checkout before the stray walk, report
+    unattributed bytes, and workspace compaction stops over-reporting hardlinked bytes.'
+- id: visual-run-retention
+  title: Retention for visual snapshot run reports
+  depends_on: []
+  size: small
+  description: 'visual-run-retention: the visual maintenance tooling prunes old `.pytest_cache/sase-visual/runs/`
+    directories while preserving the latest report, recent runs, and any unfinished
+    apply journal.'
+- id: host-acceptance
+  title: Integrated acceptance on apollo and athena
+  depends_on:
+  - root-registry
+  - scratch-liveness
+  - dead-launch-reap
+  - disk-attribution
+  - visual-run-retention
+  size: small
+  description: 'host-acceptance: after deployment, prove on apollo and athena that
+    the registry finds the agent root, runner exit removes scratch, the backstop reaps
+    dead launches, and disk attribution matches df.'
 proposed_by: bbugyi200.kellys_mbp.1d
 create_time: 2026-09-27 14:23:26
 status: wip
+bead_id: sase-1bf
 ---
+
+- **BEAD:** [sase-1bf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bf/README.md)
 
 # Plan: Bound agent scratch by ownership, not by environment luck
 
