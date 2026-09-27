@@ -1,48 +1,46 @@
 ---
 tier: epic
-title: "#{project} snippet variable"
-goal: "Snippet templates can write #{project}, and it expands to the display name of the
-  project the prompt targets, consistently in sase's TUI and in LSP editors. The user's
-  chezmoi `epic` and `bd` snippets then emit the correct bead-ID prefix in every
-  project.
+title: '#{project} snippet variable'
+goal: 'Snippet templates can write #{project}, and it expands to the display name
+  of the project the prompt targets, consistently in sase''s TUI and in LSP editors.
+  The user''s chezmoi `epic` and `bd` snippets then emit the correct bead-ID prefix
+  in every project.
 
-  "
+  '
 phases:
-  - id: core-snippet-vars
-    title: Core substitution helper and LSP support
-    depends_on: []
-    size: medium
-    description:
-      "core-snippet-vars: in sase-core, add the snippet_variables substitution helper,
-      an additive `variables` field on the snippet-session Plan event, and LSP
-      snippet-completion substitution resolved from the document's leading project tag
-      or VCS ref, then the catalog's current project, with tests."
-  - id: tui-snippet-vars
-    title: TUI resolution, CI pin, and docs
-    depends_on:
-      - core-snippet-vars
-    size: medium
-    description:
-      "tui-snippet-vars: in sase, ratchet the core pin, thread `variables` through the
-      snippet-session facade, and resolve #{project} on TUI Tab expansion (the prompt
-      target, then the cached current project, else verbatim with a warning) using no
-      keystroke-path I/O. Add tests and document it in ace.md and editor.md."
-  - id: chezmoi-epic-snippet
-    title: Switch the chezmoi epic and bd snippets
-    depends_on:
-      - tui-snippet-vars
-    size: xsmall
-    description:
-      "chezmoi-epic-snippet: in the chezmoi repo's sase.yml, change the `epic` and `bd`
-      snippets from the hard-coded sase- prefix to #{project}-, verify them with sase
-      snippet show, and apply chezmoi after the commit lands."
+- id: core-snippet-vars
+  title: Core substitution helper and LSP support
+  depends_on: []
+  size: medium
+  description: 'core-snippet-vars: in sase-core, add the snippet_variables substitution
+    helper, an additive `variables` field on the snippet-session Plan event, and LSP
+    snippet-completion substitution resolved from the document''s leading project
+    tag or VCS ref, then the catalog''s current project, with tests.'
+- id: tui-snippet-vars
+  title: TUI resolution, CI pin, and docs
+  depends_on:
+  - core-snippet-vars
+  size: medium
+  description: 'tui-snippet-vars: in sase, ratchet the core pin, thread `variables`
+    through the snippet-session facade, and resolve #{project} on TUI Tab expansion
+    (the prompt target, then the cached current project, else verbatim with a warning)
+    using no keystroke-path I/O. Add tests and document it in ace.md and editor.md.'
+- id: chezmoi-epic-snippet
+  title: Switch the chezmoi epic and bd snippets
+  depends_on:
+  - tui-snippet-vars
+  size: xsmall
+  description: 'chezmoi-epic-snippet: in the chezmoi repo''s sase.yml, change the
+    `epic` and `bd` snippets from the hard-coded sase- prefix to #{project}-, verify
+    them with sase snippet show, and apply chezmoi after the commit lands.'
 proposed_by: bbugyi200.apollo.2a
 create_time: 2026-09-27 08:18:49
 status: wip
+bead_id: sase-1b6
 ---
 
-- **PROMPT:**
-  [prompts/202609/snippet_project_variable.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/snippet_project_variable.md)
+- **PROMPT:** [prompts/202609/snippet_project_variable.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/snippet_project_variable.md)
+- **BEAD:** [sase-1b6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b6/README.md)
 
 # `#{project}` Snippet Variable
 
