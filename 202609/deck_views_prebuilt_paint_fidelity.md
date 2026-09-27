@@ -1,43 +1,39 @@
 ---
 tier: epic
-title:
-  "Deck views landing fixes: badge-first prebuilt paint fidelity, FINAL-flag test drift,
-  and golden rebaseline"
-goal:
-  The sase-1b1.8 deck-views landing remainder can close. The badge-first prebuilt Main
-  body paints pixel-identically to the synchronous render. The epic's tests and docs
-  match the always-on FINAL deck. The six agents_deck_view PNG goldens pass `--check` on
-  master.
+title: 'Deck views landing fixes: badge-first prebuilt paint fidelity, FINAL-flag
+  test drift, and golden rebaseline'
+goal: The sase-1b1.8 deck-views landing remainder can close. The badge-first prebuilt
+  Main body paints pixel-identically to the synchronous render. The epic's tests and
+  docs match the always-on FINAL deck. The six agents_deck_view PNG goldens pass `--check`
+  on master.
 phases:
-  - id: fidelity
-    title:
-      Make prebuilt deferred bodies match the synchronous render and re-apply the
-      landing edits
-    depends_on: []
-    size: medium
-    description:
-      "fidelity: render prebuilt Main bodies through the same console settings and
-      widget post_render base style that Textual's RichVisual uses, with a
-      strip-equality regression test. Re-apply the land agent's FINAL-flag test and Deck
-      Views docs edits."
-  - id: goldens
-    title: Rebaseline and inspect the six agents_deck_view goldens
-    depends_on:
-      - fidelity
-    size: small
-    description:
-      "goldens: regenerate the six agents_deck_view PNG goldens with the targeted update
-      form, inspect every change, and confirm `--check` and `sase tool run check`."
+- id: fidelity
+  title: Make prebuilt deferred bodies match the synchronous render and re-apply the
+    landing edits
+  depends_on: []
+  size: medium
+  description: 'fidelity: render prebuilt Main bodies through the same console settings
+    and widget post_render base style that Textual''s RichVisual uses, with a strip-equality
+    regression test. Re-apply the land agent''s FINAL-flag test and Deck Views docs
+    edits.'
+- id: goldens
+  title: Rebaseline and inspect the six agents_deck_view goldens
+  depends_on:
+  - fidelity
+  size: small
+  description: 'goldens: regenerate the six agents_deck_view PNG goldens with the
+    targeted update form, inspect every change, and confirm `--check` and `sase tool
+    run check`.'
 proposed_by: bbugyi200.athena.sase-1b1.8.land
 parent_bead: sase-1b1.8
 create_time: 2026-09-27 17:36:33
 status: wip
+bead_id: sase-1b1.8.4
 ---
 
-- **PROMPT:**
-  [prompts/202609/deck_views_prebuilt_paint_fidelity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views_prebuilt_paint_fidelity.md)
-- **PARENT:**
-  [202609/deck_views_landing_remainder.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_views_landing_remainder.md)
+- **PROMPT:** [prompts/202609/deck_views_prebuilt_paint_fidelity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views_prebuilt_paint_fidelity.md)
+- **PARENT:** [202609/deck_views_landing_remainder.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_views_landing_remainder.md)
+- **BEAD:** [sase-1b1.8.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b1/sase-1b1.8.4.md)
 
 # Deck views landing fixes
 
