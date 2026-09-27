@@ -1,38 +1,37 @@
 ---
 tier: epic
 title: Land the Node Finder open budget with real margin
-goal: "The unchanged 2,000-node Node Finder benchmark passes all four budgets on
-  consecutive runs. The Node Finder PNG goldens no longer depend on the wall clock. The
-  chain from sase-19i.7.3.3.3.3 up to sase-19i can then close.
+goal: 'The unchanged 2,000-node Node Finder benchmark passes all four budgets on consecutive
+  runs. The Node Finder PNG goldens no longer depend on the wall clock. The chain
+  from sase-19i.7.3.3.3.3 up to sase-19i can then close.
 
-  "
+  '
 parent_bead: sase-19i.7.3.3.3.3
 phases:
-  - id: finder-goldens
-    title: Pin the Node Finder age clock in the visual goldens
-    depends_on: []
-    size: small
-    description: "finder-goldens: pin the unpinned local_now read in
-      node_finder_rendering for the visual fixture, regenerate only the five drifting
-      Node Finder goldens after inspecting each diff, and prove 7/7 stability across two
-      runs minutes apart.
+- id: finder-goldens
+  title: Pin the Node Finder age clock in the visual goldens
+  depends_on: []
+  size: small
+  description: 'finder-goldens: pin the unpinned local_now read in node_finder_rendering
+    for the visual fixture, regenerate only the five drifting Node Finder goldens
+    after inspecting each diff, and prove 7/7 stability across two runs minutes apart.
 
-      "
-  - id: open-margin
-    title: Release per-open garbage and widen the open margin
-    depends_on: []
-    size: medium
-    description:
-      "open-margin: stop dismissed finder modals from keeping their snapshot rows alive
-      until cycle collection, cut snapshot and first-paint drain work, and pass the
-      unchanged official benchmark on three consecutive runs."
+    '
+- id: open-margin
+  title: Release per-open garbage and widen the open margin
+  depends_on: []
+  size: medium
+  description: 'open-margin: stop dismissed finder modals from keeping their snapshot
+    rows alive until cycle collection, cut snapshot and first-paint drain work, and
+    pass the unchanged official benchmark on three consecutive runs.'
 proposed_by: bbugyi200.athena.0t7
 create_time: 2026-09-27 15:26:21
 status: wip
+bead_id: sase-19i.7.3.3.3.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202609/node_finder_open_margin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_margin.md)
+- **PROMPT:** [prompts/202609/node_finder_open_margin.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/node_finder_open_margin.md)
+- **BEAD:** [sase-19i.7.3.3.3.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-19i/sase-19i.7.3.3.3.3.3.md)
 
 # Land the Node Finder open budget with real margin
 
