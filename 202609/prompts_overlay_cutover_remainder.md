@@ -27,7 +27,7 @@ phases:
     with populated Stash and Trash and inspect the targeted goldens.'
 proposed_by: bbugyi200.athena.sase-1au.land
 create_time: 2026-09-26 20:01:57
-status: wip
+status: done
 bead_id: sase-1au.6
 ---
 
