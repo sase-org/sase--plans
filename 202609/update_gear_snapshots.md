@@ -1,28 +1,26 @@
 ---
 tier: epic
 title: Finish the yellow and red update gear visual coverage
-goal:
-  The restart-queued and failed gears have deterministic ACE PNG snapshot tests and
-  inspected goldens, completing the remaining visual scope of sase-1bd.
+goal: The restart-queued and failed gears have deterministic ACE PNG snapshot tests
+  and inspected goldens, completing the remaining visual scope of sase-1bd.
 parent_bead: sase-1bd
 phases:
-  - id: gear-goldens
-    title: Capture and inspect the yellow and red update gear goldens
-    size: small
-    depends_on: []
-    description:
-      "gear-goldens: add deterministic visual tests for restart-pending and failed
-      update indicators, capture only their visual test module, inspect and retain the
-      two new PNG goldens, and run just check."
+- id: gear-goldens
+  title: Capture and inspect the yellow and red update gear goldens
+  size: small
+  depends_on: []
+  description: 'gear-goldens: add deterministic visual tests for restart-pending and
+    failed update indicators, capture only their visual test module, inspect and retain
+    the two new PNG goldens, and run just check.'
 proposed_by: bbugyi200.apollo.sase-1bd.land
 create_time: 2026-09-27 16:50:50
 status: wip
+bead_id: sase-1bd.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/update_gear_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/update_gear_snapshots.md)
-- **PARENT:**
-  [202609/update_gear_states.md](https://github.com/sase-org/sase--plans/blob/main/202609/update_gear_states.md)
+- **PROMPT:** [prompts/202609/update_gear_snapshots.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/update_gear_snapshots.md)
+- **PARENT:** [202609/update_gear_states.md](https://github.com/sase-org/sase--plans/blob/main/202609/update_gear_states.md)
+- **BEAD:** [sase-1bd.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bd/sase-1bd.5.md)
 
 # Finish the yellow and red update gear visual coverage
 
