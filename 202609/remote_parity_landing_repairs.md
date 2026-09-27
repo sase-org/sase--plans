@@ -37,7 +37,7 @@ phases:
     from both hosts.'
 proposed_by: bbugyi200.athena.sase-133.land
 create_time: 2026-09-19 08:06:06
-status: wip
+status: done
 bead_id: sase-133.5
 ---
 

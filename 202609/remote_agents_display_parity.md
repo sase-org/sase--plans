@@ -71,7 +71,7 @@ phases:
     the phase open on any unmet gate.'
 proposed_by: bbugyi200.apollo.v
 create_time: 2026-09-13 18:37:54
-status: wip
+status: done
 bead_id: sase-xe.16.11.7.15
 ---
 

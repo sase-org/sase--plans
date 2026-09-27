@@ -45,7 +45,7 @@ phases:
     so query filters can be driven unattended.'
 proposed_by: bbugyi200.athena.0na
 create_time: 2026-09-18 16:37:55
-status: wip
+status: done
 bead_id: sase-133
 ---
 
