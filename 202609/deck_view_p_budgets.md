@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Bring P view transitions within the D10 budgets
-goal: 'Each P transition on the 5,000-line and 14,000-line Reply fixtures meets the
-  D10 key-to-paint budgets, or a measured guard the UI explains is in place, and the
-  numbers are recorded on bead sase-1b1.8.2.
+goal: "Each P transition on the 5,000-line and 14,000-line Reply fixtures meets the D10
+  key-to-paint budgets, or a measured guard the UI explains is in place, and the numbers
+  are recorded on bead sase-1b1.8.2.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-1b1.8.2
 bead: sase-1b1.8.2
@@ -16,6 +16,11 @@ status: done
   [202609/deck_views_landing_remainder.md](https://github.com/sase-org/sase--plans/blob/main/202609/deck_views_landing_remainder.md)
 - **BEAD:**
   [sase-1b1.8.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b1/sase-1b1.8.2.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1b1.8.2](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1b1.8.2.md)
+- **COMMITS:**
+  - [80fbe70](https://github.com/sase-org/sase/commit/80fbe7020219c681a8f6bb2892f935b17b9827a4)
+    — feat(deck-views): badge-first P transitions within D10 budgets (sase-1b1.8.2)
 
 # Plan: Bring P view transitions within the D10 budgets
 
