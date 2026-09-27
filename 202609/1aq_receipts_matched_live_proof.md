@@ -1,48 +1,45 @@
 ---
 tier: epic
 title: Deploy the settled-receipt contract to both hosts and prove it live
-goal:
-  Apollo and Athena run the same sase and sase-core build, one that contains the
+goal: Apollo and Athena run the same sase and sase-core build, one that contains the
   exact_ops_receipts contract. From Athena, a live exact stop and retry against Apollo
   settle certainly, a fresh dispatch can be stopped before the owner snapshot rebuilds,
   and a killed row keeps its retry context.
 parent_bead: sase-1aq.10.7.5
 phases:
-  - id: receipt_cleanup
-    title: Land the settled-receipt type and kill-wrapper fixes
-    depends_on: []
-    size: small
-    description:
-      "receipt_cleanup: fix the mypy arg-type error in dispatch mutations and the
-      over-broad TypeError fallback in the mobile kill wrapper that exact_ops_receipts
-      introduced, update the stale test fakes, and verify."
-  - id: matched_deploy
-    title: Bring Apollo and Athena to the same build carrying the receipt contract
-    depends_on:
-      - receipt_cleanup
-    size: medium
-    description:
-      "matched_deploy: reconcile the dirty primary sase checkouts on both hosts, run the
-      supported sase update so both hosts match origin/master for sase and sase-core,
-      restart the gateway stack, repair the Athena agent index, and record identities."
-  - id: receipt_live_proof
-    title: Prove settled stop, fresh-row stop, and retry-after-kill live from Athena
-    depends_on:
-      - matched_deploy
-    size: medium
-    description:
-      "receipt_live_proof: drive Athena over SSH against Apollo on the matched build to
-      prove the exact_ops_receipts contract live, and attach audited
-      requirement-to-evidence notes to the original beads."
+- id: receipt_cleanup
+  title: Land the settled-receipt type and kill-wrapper fixes
+  depends_on: []
+  size: small
+  description: 'receipt_cleanup: fix the mypy arg-type error in dispatch mutations
+    and the over-broad TypeError fallback in the mobile kill wrapper that exact_ops_receipts
+    introduced, update the stale test fakes, and verify.'
+- id: matched_deploy
+  title: Bring Apollo and Athena to the same build carrying the receipt contract
+  depends_on:
+  - receipt_cleanup
+  size: medium
+  description: 'matched_deploy: reconcile the dirty primary sase checkouts on both
+    hosts, run the supported sase update so both hosts match origin/master for sase
+    and sase-core, restart the gateway stack, repair the Athena agent index, and record
+    identities.'
+- id: receipt_live_proof
+  title: Prove settled stop, fresh-row stop, and retry-after-kill live from Athena
+  depends_on:
+  - matched_deploy
+  size: medium
+  description: 'receipt_live_proof: drive Athena over SSH against Apollo on the matched
+    build to prove the exact_ops_receipts contract live, and attach audited requirement-to-evidence
+    notes to the original beads.'
 proposed_by: bbugyi200.apollo.sase-1aq.10.7.5.land
 create_time: 2026-09-27 02:20:27
 status: wip
+bead_id: sase-1aq.10.7.5.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/1aq_receipts_matched_live_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_receipts_matched_live_proof.md)
-- **PARENT:**
-  [202609/1aq_close_original_gates.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_close_original_gates.md)
+- **PROMPT:** [prompts/202609/1aq_receipts_matched_live_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_receipts_matched_live_proof.md)
+- **PARENT:** [202609/1aq_close_original_gates.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_close_original_gates.md)
+- **BEAD:** [sase-1aq.10.7.5.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.7.5.7.md)
 
 # Deploy the settled-receipt contract to both hosts and prove it live
 
