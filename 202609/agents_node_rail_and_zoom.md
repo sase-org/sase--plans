@@ -1,92 +1,85 @@
 ---
 tier: epic
 title: Agents node rail and unmistakable deck zoom
-goal: "Ctrl+S turns the Agents-tab node sidebar into a fixed-width, row-for-row node
+goal: 'Ctrl+S turns the Agents-tab node sidebar into a fixed-width, row-for-row node
   rail that still shows every tribe, group, and node as glyphs. Z zoom hides the left
-  column entirely and looks unmistakably different from the rail. Zoom never leaks into
-  the saved Ctrl+S preference, and no key silently drops a split.
+  column entirely and looks unmistakably different from the rail. Zoom never leaks
+  into the saved Ctrl+S preference, and no key silently drops a split.
 
-  "
+  '
 phases:
-  - id: sidebar-modes
-    title: Three sidebar modes and the zoom state fixes
-    depends_on: []
-    size: medium
-    description:
-      "sidebar-modes: derive EXPANDED / RAIL / HIDDEN from deck-area state. Stop zoom
-      from writing nodes_collapsed, and make Ctrl+S while zoomed restore the snapshot
-      like Z. Route every deck-state change through one sync choke point, un-nest the
-      info-row zoom chip, and update the tests, docs, and zoom goldens."
-  - id: rail-vocabulary
-    title: Pure node-rail vocabulary module
-    depends_on: []
-    size: medium
-    description:
-      "rail-vocabulary: add one pure module that owns the rail geometry constants, the
-      glyph and color vocabulary, and the fixed-width cell builders for rows, banners,
-      tribe titles, and overflow. Also add the tooltip text helper and the legend
-      entries, with exhaustiveness and cell-width tests. There is no widget wiring."
-  - id: rail-projection
-    title: Paint-time rail projection inside AgentList
-    depends_on:
-      - rail-vocabulary
-    size: medium
-    description:
-      "rail-projection: give AgentList a set_rail() render mode that overrides
-      _get_visual with a cache validated by prompt identity. Record an all-banner
-      _group_at_row map, add a rows-changed hook to every structural path (fixing the
-      insert path's ordering), and paint the overflow subtitle. Add unit and guard
-      tests, still unwired."
-  - id: zoom-chrome
-    title: Structural zoom chrome on the zoomed deck panel
-    depends_on:
-      - sidebar-modes
-    size: medium
-    description:
-      'zoom-chrome: DeckArea marks the zoomed panel -zoomed with ZoomChrome context. The
-      panel then gets a heavy border in its own deck accent, a reverse-gold ZOOM chip
-      leading its title, and a split-position plus "Z restore" hint in its subtitle.
-      Includes title/subtitle ladder tests and zoom goldens.'
-  - id: rail-wiring
-    title: Wire the rail into the Agents tab and delete NodeSpine
-    depends_on:
-      - sidebar-modes
-      - rail-projection
-    size: medium
-    description:
-      "rail-wiring: RAIL mode shows the tribe lists in rail form at a fixed width. Focus
-      stays on the list, titles and newly mounted panels become rail-aware, and runtime
-      ticks pause with a catch-up on expand. The info-row nodes chip becomes clickable,
-      and NodeSpine, its handler, CSS, and tests are deleted. Includes pilot tests and
-      rail goldens."
-  - id: banner-glyphs
-    title: Align expanded status banners with the rail glyphs
-    depends_on:
-      - rail-vocabulary
-    size: small
-    description:
-      "banner-glyphs: the TUI's expanded BY_STATUS and BY_MACHINE banners adopt the rail
-      bucket glyphs (? chip, ◷, ○), leaving the shared AGENT_STATUS_BUCKET_GLYPHS
-      untouched. Also fix the banner width math that uses len() instead of cell_len."
-  - id: mode-affordances
-    title: Info-row, footer, tooltip, help, palette, and docs affordances
-    depends_on:
-      - zoom-chrome
-      - rail-wiring
-    size: medium
-    description:
-      "mode-affordances: add a clickable reverse ZOOM info-row chip and conditional
-      footer entries (Z restore, Ctrl+S expand nodes). Rail rows get hover tooltips
-      showing the full expanded row, and the help modal gets a node-rail legend
-      generated from the vocabulary. Renames the binding, metadata, and palette labels,
-      rewrites the docs, and records the glossary follow-up."
+- id: sidebar-modes
+  title: Three sidebar modes and the zoom state fixes
+  depends_on: []
+  size: medium
+  description: 'sidebar-modes: derive EXPANDED / RAIL / HIDDEN from deck-area state.
+    Stop zoom from writing nodes_collapsed, and make Ctrl+S while zoomed restore the
+    snapshot like Z. Route every deck-state change through one sync choke point, un-nest
+    the info-row zoom chip, and update the tests, docs, and zoom goldens.'
+- id: rail-vocabulary
+  title: Pure node-rail vocabulary module
+  depends_on: []
+  size: medium
+  description: 'rail-vocabulary: add one pure module that owns the rail geometry constants,
+    the glyph and color vocabulary, and the fixed-width cell builders for rows, banners,
+    tribe titles, and overflow. Also add the tooltip text helper and the legend entries,
+    with exhaustiveness and cell-width tests. There is no widget wiring.'
+- id: rail-projection
+  title: Paint-time rail projection inside AgentList
+  depends_on:
+  - rail-vocabulary
+  size: medium
+  description: 'rail-projection: give AgentList a set_rail() render mode that overrides
+    _get_visual with a cache validated by prompt identity. Record an all-banner _group_at_row
+    map, add a rows-changed hook to every structural path (fixing the insert path''s
+    ordering), and paint the overflow subtitle. Add unit and guard tests, still unwired.'
+- id: zoom-chrome
+  title: Structural zoom chrome on the zoomed deck panel
+  depends_on:
+  - sidebar-modes
+  size: medium
+  description: 'zoom-chrome: DeckArea marks the zoomed panel -zoomed with ZoomChrome
+    context. The panel then gets a heavy border in its own deck accent, a reverse-gold
+    ZOOM chip leading its title, and a split-position plus "Z restore" hint in its
+    subtitle. Includes title/subtitle ladder tests and zoom goldens.'
+- id: rail-wiring
+  title: Wire the rail into the Agents tab and delete NodeSpine
+  depends_on:
+  - sidebar-modes
+  - rail-projection
+  size: medium
+  description: 'rail-wiring: RAIL mode shows the tribe lists in rail form at a fixed
+    width. Focus stays on the list, titles and newly mounted panels become rail-aware,
+    and runtime ticks pause with a catch-up on expand. The info-row nodes chip becomes
+    clickable, and NodeSpine, its handler, CSS, and tests are deleted. Includes pilot
+    tests and rail goldens.'
+- id: banner-glyphs
+  title: Align expanded status banners with the rail glyphs
+  depends_on:
+  - rail-vocabulary
+  size: small
+  description: 'banner-glyphs: the TUI''s expanded BY_STATUS and BY_MACHINE banners
+    adopt the rail bucket glyphs (? chip, ◷, ○), leaving the shared AGENT_STATUS_BUCKET_GLYPHS
+    untouched. Also fix the banner width math that uses len() instead of cell_len.'
+- id: mode-affordances
+  title: Info-row, footer, tooltip, help, palette, and docs affordances
+  depends_on:
+  - zoom-chrome
+  - rail-wiring
+  size: medium
+  description: 'mode-affordances: add a clickable reverse ZOOM info-row chip and conditional
+    footer entries (Z restore, Ctrl+S expand nodes). Rail rows get hover tooltips
+    showing the full expanded row, and the help modal gets a node-rail legend generated
+    from the vocabulary. Renames the binding, metadata, and palette labels, rewrites
+    the docs, and records the glossary follow-up.'
 proposed_by: bbugyi200.apollo.2h
 create_time: 2026-09-27 17:33:06
 status: wip
+bead_id: sase-1bn
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_node_rail_and_zoom.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_node_rail_and_zoom.md)
+- **PROMPT:** [prompts/202609/agents_node_rail_and_zoom.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_node_rail_and_zoom.md)
+- **BEAD:** [sase-1bn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bn/README.md)
 
 # Plan: Agents node rail and unmistakable deck zoom
 
