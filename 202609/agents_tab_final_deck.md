@@ -1,245 +1,225 @@
 ---
 tier: epic
-title:
-  Finalizers on the Agents tab - FINALIZING rows, Reply receipts, and the ⊛ FINAL deck
-goal: "Sase finalizers become first-class on the Agents tab at four zoom levels over one
-  provider-neutral data layer. At a glance, rows show a FINALIZING phase and a ⊛ chip
-  while finalizers run or after a non-success. In context, each shell's Reply phase ends
-  with a short ⊛ FINAL receipt. To diagnose, a new ⊛ FINAL deck has an Overview card
-  plus one card per finalizer instance and one card block per run, with attempts,
-  operations, steps, typed evidence, diagnostics and gated live tails. For authors, the
-  Overview and a read-only `sase final status` run view explain selection, declarations
-  and drift. A controller progress journal (which also records handoff skips), uniform
-  operation records, a step channel, bounded live logs, an agent_meta summary, and one
-  Rust-core projection feed every surface. Nothing in the model is commit-specific, so
-  future finalizers render well on day one.
+title: Finalizers on the Agents tab - FINALIZING rows, Reply receipts, and the ⊛ FINAL
+  deck
+goal: 'Sase finalizers become first-class on the Agents tab at four zoom levels over
+  one provider-neutral data layer. At a glance, rows show a FINALIZING phase and a
+  ⊛ chip while finalizers run or after a non-success. In context, each shell''s Reply
+  phase ends with a short ⊛ FINAL receipt. To diagnose, a new ⊛ FINAL deck has an
+  Overview card plus one card per finalizer instance and one card block per run, with
+  attempts, operations, steps, typed evidence, diagnostics and gated live tails. For
+  authors, the Overview and a read-only `sase final status` run view explain selection,
+  declarations and drift. A controller progress journal (which also records handoff
+  skips), uniform operation records, a step channel, bounded live logs, an agent_meta
+  summary, and one Rust-core projection feed every surface. Nothing in the model is
+  commit-specific, so future finalizers render well on day one.
 
-  "
+  '
 phases:
-  - id: core-status-wire
-    title: finalizer_status summary field on the Rust agent-scan wire
-    depends_on: []
-    size: small
-    description:
-      "core-status-wire: in sase-core, add the tolerant FinalizerStatusSummaryWire and
-      AgentMetaWire.finalizer_status, coerce it leniently in the scanner, bump the
-      artifact-index schema with a no-op refresh migration, and cover parity and
-      tolerance with tests."
-  - id: core-run-view-model
-    title: FinalizerNodeView projection - decoders, precedence, and selection
-    depends_on: []
-    size: medium
-    description:
-      "core-run-view-model: in sase-core, add the finalizer run_view module with
-      request/response wires, tolerant capped decoders for every finalizer artifact, the
-      ten source-precedence rules, run disposition and instance statuses, DAG order,
-      selection explanation, declaration timeline, cycles, drift and the attention hint.
-      Also add the project_finalizer_node_view binding."
-  - id: core-run-view-detail
-    title: FinalizerNodeView detail - attempts, operations, evidence, and runs
-    depends_on:
-      - core-run-view-model
-    size: medium
-    description:
-      "core-run-view-detail: extend the projection with attempts, operations (schema-v1
-      and legacy commit records), steps, carriage-return-collapsed live tails, typed
-      evidence and headline selection, attempt-scoped diagnostic dedupe, warning counts,
-      failure reason lines, and multi-run node composition. Prove it with commit,
-      command and plugin fixtures."
-  - id: journal-and-summary
-    title: Controller progress journal, handoff skips, and the row summary writer
-    depends_on: []
-    size: medium
-    description:
-      "journal-and-summary: add the best-effort finalizers/progress.jsonl writer and the
-      agent_meta finalizer_status tracker. Wire run, cycle, declaration, recovery,
-      instance and attempt events plus phase_skipped (with a new pending_handoff_kind
-      helper) into the controller, write the planned summary at plan seal, and touch the
-      refresh pulse on transitions."
-  - id: operation-records
-    title: One uniform operation record across every executor
-    depends_on:
-      - journal-and-summary
-    size: medium
-    description:
-      "operation-records: add an OperationRecorder that writes schema-v1
-      attempt-N.<op>.outcome.json records and journal op events for builtin@command,
-      plugin execute/verify (plus preflight describe/validate), commit stitches
-      (extending today's outcome.json) and conflict-repair model turns. Fix the
-      conflict-repair hard-coded commit instance id."
-  - id: step-channel-and-live-sink
-    title: Step channel, stitch steps, and bounded live output
-    depends_on:
-      - operation-records
-    size: medium
-    description:
-      "step-channel-and-live-sink: add SASE_FINALIZER_STEPS_FILE, emit_step and the SDK
-      step() helper, and structured sase stitch create steps including warn steps. Tee
-      subprocess output to bounded rotating .live files from run_bounded_subprocess, and
-      refresh the summary's step and warnings through a throttled wait-loop tick."
-  - id: status-summary-adapter
-    title: Python mirror and Agent model field for finalizer_status
-    depends_on:
-      - core-status-wire
-    size: small
-    description:
-      "status-summary-adapter: move the sase-core pin past core-status-wire, mirror
-      finalizer_status on the Python AgentMetaWire with a tolerant nested converter, add
-      the Agent model field through both enrichment paths and dedup, bump the index
-      schema constant, and add the validate_sase_core_rs scan probe. There is no visible
-      change."
-  - id: glance-surfaces
-    title:
-      FINALIZING rows, ⊛ chips, header chip, and Reply receipts behind ace_final_deck
-    depends_on:
-      - status-summary-adapter
-      - journal-and-summary
-    size: medium
-    description:
-      "glance-surfaces: create the ace_final_deck beta flag and the shared finalizer
-      view vocabulary. Add pure row-state helpers, the FINALIZING status word in the
-      Running bucket, ⊛ row chips with the session supersede rule, the identity-header
-      activity chip, and the ⊛ FINAL Reply receipt at every Reply assembly site
-      including hint twins. Test with the flag on and off."
-  - id: deck-spec-registry
-    title: DeckSpec registry and explicit per-deck dispatch
-    depends_on: []
-    size: medium
-    description:
-      "deck-spec-registry: replace the parallel per-deck tables with one DeckSpec record
-      per deck and an active_deck_cycle() accessor. Turn every else-means-Tools
-      fall-through into explicit dispatch, and route cycle, subtitle, picker, catalog,
-      layout and persistence through the accessor, with no behavior or pixel change."
-  - id: per-deck-preferred-cards
-    title: Per-deck sticky preferred cards
-    depends_on:
-      - deck-spec-registry
-    size: small
-    description:
-      "per-deck-preferred-cards: replace DeckPanelState's single preferred_card slot
-      with a per-deck mapping. Scope card cycling, re-show and resolve_active_card to
-      the focused deck, and persist a preferred_cards map inside schema v1 while still
-      writing and reading the legacy preferred_card key as Main's preference."
-  - id: card-document-view
-    title: A generic card-document view and block host beyond Main
-    depends_on:
-      - deck-spec-registry
-    size: medium
-    description:
-      "card-document-view: extract a deck-parameterized CardDocumentView from
-      MainDeckView. Generalize the spread/paged decision, measurement cache namespace,
-      separators, scroll watching, transitions and the DeckPanelBlocksMixin block host
-      so any card-document deck gets cards, spread, anchors and card blocks. Main is
-      unchanged."
-  - id: run-view-adapter
-    title: Python run-view facade, artifact collector, and end-to-end proof
-    depends_on:
-      - core-run-view-detail
-      - step-channel-and-live-sink
-      - status-summary-adapter
-    size: medium
-    description:
-      "run-view-adapter: move the pin past core-run-view-detail and add the typed
-      finalizer_run_view facade and binding-guard registrations. Add a TUI-agnostic
-      capped artifact collector with liveness facts and stat signatures, and an
-      end-to-end test that drives the real controller and executors into the projection."
-  - id: final-cli-status
-    title: Read-only sase final status run view
-    depends_on:
-      - run-view-adapter
-    size: small
-    description:
-      "final-cli-status: add `sase final status [<agent>]` with -d/--artifacts-dir and
-      -f/--format pretty|json over the shared collector and projection. It prints
-      colored output in the shared vocabulary, keeps help alphabetical, and defaults to
-      the calling agent inside a SASE turn."
-  - id: final-deck-shell
-    title: Register the ⊛ FINAL deck with its loader, availability, and chrome
-    depends_on:
-      - glance-surfaces
-      - per-deck-preferred-cards
-      - card-document-view
-      - run-view-adapter
-    size: medium
-    description:
-      "final-deck-shell: add DeckId.FINAL behind ace_final_deck at every registration
-      site. Add the off-thread FinalDeckView loader with subject/generation stale
-      rejection and a stat-signature cache, the no-I/O availability probe, the
-      status-colored subtitle and tab status strip, the default-card rule, sticky FINAL
-      cards, pinned-attempt support, and the p n / p N keys."
-  - id: final-overview-card
-    title: The Overview card
-    depends_on:
-      - final-deck-shell
-    size: small
-    description:
-      "final-overview-card: render the run-level Overview card. It shows the plan in DAG
-      order with selection reasons, configured-but-unselected instances dimmed, the
-      declaration timeline, controller cycles only when above one, drift, run-level
-      diagnostics, the runs ledger, calm skipped/not-reached/unavailable states and CLI
-      pointers."
-  - id: final-instance-cards
-    title: Generic instance cards with commit and command enrichers
-    depends_on:
-      - final-deck-shell
-    size: medium
-    description:
-      "final-instance-cards: render one provider-neutral card per finalizer instance
-      with why/trigger/declared lines, attempt sections (latest or failing expanded),
-      operations, steps, typed evidence, deduped diagnostics, log and protocol hint
-      targets, export and search. Add additive builtin@commit and builtin@command
-      enrichers, proven against a plugin fixture."
-  - id: final-run-blocks
-    title: One card block per run on session containers
-    depends_on:
-      - final-overview-card
-      - final-instance-cards
-    size: small
-    description:
-      "final-run-blocks: give every FINAL card on a session container one CardBlock per
-      shell that ran finalizers, with roster-matched BlockMeta and block ids. Skipped
-      and not-triggered shells appear only in the ledger. The rail, [ / ] and newest
-      landing work in FINAL through the generalized block host."
-  - id: final-live
-    title: Live tails, following, and the 1 Hz tick for the selected agent
-    depends_on:
-      - final-run-blocks
-    size: medium
-    description:
-      "final-live: add the ace.agent_decks.final_tail_delay_seconds gate and a sanitized
-      in-card live tail of at most 12 lines. The tail follows the newest run and attempt
-      with the arrival marker, pauses on scroll-up, and runs a pump-free 1 Hz
-      elapsed/tail refresh only while FINAL shows the selected agent's active
-      finalization."
-  - id: final-cutover
-    title: Remove the flag, add goldens, inspect live, and bench
-    depends_on:
-      - final-live
-      - final-cli-status
-    size: medium
-    description:
-      "final-cutover: bench the j/k and triage loop with the flag off and on, then
-      delete the Off branches and the ace_final_deck registry entry and close its flag
-      bead. Add deterministic goldens for every glance and deck state, re-baseline and
-      inspect the changed subtitle and picker goldens, and inspect live captures."
-  - id: final-docs
-    title: User and plugin-author docs for finalizer visibility
-    depends_on:
-      - final-cutover
-    size: small
-    description:
-      "final-docs: document the FINALIZING row phase, chips, receipts, the FINAL deck,
-      states, keys and live behavior in ace.md. Add the tail-delay key and picker
-      letters to configuration.md, the step channel, typed evidence and operation
-      records to plugins.md, and sase final status to the CLI docs. Record glossary
-      follow-ups as PROPOSED FOLLOW-UP notes."
+- id: core-status-wire
+  title: finalizer_status summary field on the Rust agent-scan wire
+  depends_on: []
+  size: small
+  description: 'core-status-wire: in sase-core, add the tolerant FinalizerStatusSummaryWire
+    and AgentMetaWire.finalizer_status, coerce it leniently in the scanner, bump the
+    artifact-index schema with a no-op refresh migration, and cover parity and tolerance
+    with tests.'
+- id: core-run-view-model
+  title: FinalizerNodeView projection - decoders, precedence, and selection
+  depends_on: []
+  size: medium
+  description: 'core-run-view-model: in sase-core, add the finalizer run_view module
+    with request/response wires, tolerant capped decoders for every finalizer artifact,
+    the ten source-precedence rules, run disposition and instance statuses, DAG order,
+    selection explanation, declaration timeline, cycles, drift and the attention hint.
+    Also add the project_finalizer_node_view binding.'
+- id: core-run-view-detail
+  title: FinalizerNodeView detail - attempts, operations, evidence, and runs
+  depends_on:
+  - core-run-view-model
+  size: medium
+  description: 'core-run-view-detail: extend the projection with attempts, operations
+    (schema-v1 and legacy commit records), steps, carriage-return-collapsed live tails,
+    typed evidence and headline selection, attempt-scoped diagnostic dedupe, warning
+    counts, failure reason lines, and multi-run node composition. Prove it with commit,
+    command and plugin fixtures.'
+- id: journal-and-summary
+  title: Controller progress journal, handoff skips, and the row summary writer
+  depends_on: []
+  size: medium
+  description: 'journal-and-summary: add the best-effort finalizers/progress.jsonl
+    writer and the agent_meta finalizer_status tracker. Wire run, cycle, declaration,
+    recovery, instance and attempt events plus phase_skipped (with a new pending_handoff_kind
+    helper) into the controller, write the planned summary at plan seal, and touch
+    the refresh pulse on transitions.'
+- id: operation-records
+  title: One uniform operation record across every executor
+  depends_on:
+  - journal-and-summary
+  size: medium
+  description: 'operation-records: add an OperationRecorder that writes schema-v1
+    attempt-N.<op>.outcome.json records and journal op events for builtin@command,
+    plugin execute/verify (plus preflight describe/validate), commit stitches (extending
+    today''s outcome.json) and conflict-repair model turns. Fix the conflict-repair
+    hard-coded commit instance id.'
+- id: step-channel-and-live-sink
+  title: Step channel, stitch steps, and bounded live output
+  depends_on:
+  - operation-records
+  size: medium
+  description: 'step-channel-and-live-sink: add SASE_FINALIZER_STEPS_FILE, emit_step
+    and the SDK step() helper, and structured sase stitch create steps including warn
+    steps. Tee subprocess output to bounded rotating .live files from run_bounded_subprocess,
+    and refresh the summary''s step and warnings through a throttled wait-loop tick.'
+- id: status-summary-adapter
+  title: Python mirror and Agent model field for finalizer_status
+  depends_on:
+  - core-status-wire
+  size: small
+  description: 'status-summary-adapter: move the sase-core pin past core-status-wire,
+    mirror finalizer_status on the Python AgentMetaWire with a tolerant nested converter,
+    add the Agent model field through both enrichment paths and dedup, bump the index
+    schema constant, and add the validate_sase_core_rs scan probe. There is no visible
+    change.'
+- id: glance-surfaces
+  title: FINALIZING rows, ⊛ chips, header chip, and Reply receipts behind ace_final_deck
+  depends_on:
+  - status-summary-adapter
+  - journal-and-summary
+  size: medium
+  description: 'glance-surfaces: create the ace_final_deck beta flag and the shared
+    finalizer view vocabulary. Add pure row-state helpers, the FINALIZING status word
+    in the Running bucket, ⊛ row chips with the session supersede rule, the identity-header
+    activity chip, and the ⊛ FINAL Reply receipt at every Reply assembly site including
+    hint twins. Test with the flag on and off.'
+- id: deck-spec-registry
+  title: DeckSpec registry and explicit per-deck dispatch
+  depends_on: []
+  size: medium
+  description: 'deck-spec-registry: replace the parallel per-deck tables with one
+    DeckSpec record per deck and an active_deck_cycle() accessor. Turn every else-means-Tools
+    fall-through into explicit dispatch, and route cycle, subtitle, picker, catalog,
+    layout and persistence through the accessor, with no behavior or pixel change.'
+- id: per-deck-preferred-cards
+  title: Per-deck sticky preferred cards
+  depends_on:
+  - deck-spec-registry
+  size: small
+  description: 'per-deck-preferred-cards: replace DeckPanelState''s single preferred_card
+    slot with a per-deck mapping. Scope card cycling, re-show and resolve_active_card
+    to the focused deck, and persist a preferred_cards map inside schema v1 while
+    still writing and reading the legacy preferred_card key as Main''s preference.'
+- id: card-document-view
+  title: A generic card-document view and block host beyond Main
+  depends_on:
+  - deck-spec-registry
+  size: medium
+  description: 'card-document-view: extract a deck-parameterized CardDocumentView
+    from MainDeckView. Generalize the spread/paged decision, measurement cache namespace,
+    separators, scroll watching, transitions and the DeckPanelBlocksMixin block host
+    so any card-document deck gets cards, spread, anchors and card blocks. Main is
+    unchanged.'
+- id: run-view-adapter
+  title: Python run-view facade, artifact collector, and end-to-end proof
+  depends_on:
+  - core-run-view-detail
+  - step-channel-and-live-sink
+  - status-summary-adapter
+  size: medium
+  description: 'run-view-adapter: move the pin past core-run-view-detail and add the
+    typed finalizer_run_view facade and binding-guard registrations. Add a TUI-agnostic
+    capped artifact collector with liveness facts and stat signatures, and an end-to-end
+    test that drives the real controller and executors into the projection.'
+- id: final-cli-status
+  title: Read-only sase final status run view
+  depends_on:
+  - run-view-adapter
+  size: small
+  description: 'final-cli-status: add `sase final status [<agent>]` with -d/--artifacts-dir
+    and -f/--format pretty|json over the shared collector and projection. It prints
+    colored output in the shared vocabulary, keeps help alphabetical, and defaults
+    to the calling agent inside a SASE turn.'
+- id: final-deck-shell
+  title: Register the ⊛ FINAL deck with its loader, availability, and chrome
+  depends_on:
+  - glance-surfaces
+  - per-deck-preferred-cards
+  - card-document-view
+  - run-view-adapter
+  size: medium
+  description: 'final-deck-shell: add DeckId.FINAL behind ace_final_deck at every
+    registration site. Add the off-thread FinalDeckView loader with subject/generation
+    stale rejection and a stat-signature cache, the no-I/O availability probe, the
+    status-colored subtitle and tab status strip, the default-card rule, sticky FINAL
+    cards, pinned-attempt support, and the p n / p N keys.'
+- id: final-overview-card
+  title: The Overview card
+  depends_on:
+  - final-deck-shell
+  size: small
+  description: 'final-overview-card: render the run-level Overview card. It shows
+    the plan in DAG order with selection reasons, configured-but-unselected instances
+    dimmed, the declaration timeline, controller cycles only when above one, drift,
+    run-level diagnostics, the runs ledger, calm skipped/not-reached/unavailable states
+    and CLI pointers.'
+- id: final-instance-cards
+  title: Generic instance cards with commit and command enrichers
+  depends_on:
+  - final-deck-shell
+  size: medium
+  description: 'final-instance-cards: render one provider-neutral card per finalizer
+    instance with why/trigger/declared lines, attempt sections (latest or failing
+    expanded), operations, steps, typed evidence, deduped diagnostics, log and protocol
+    hint targets, export and search. Add additive builtin@commit and builtin@command
+    enrichers, proven against a plugin fixture.'
+- id: final-run-blocks
+  title: One card block per run on session containers
+  depends_on:
+  - final-overview-card
+  - final-instance-cards
+  size: small
+  description: 'final-run-blocks: give every FINAL card on a session container one
+    CardBlock per shell that ran finalizers, with roster-matched BlockMeta and block
+    ids. Skipped and not-triggered shells appear only in the ledger. The rail, [ /
+    ] and newest landing work in FINAL through the generalized block host.'
+- id: final-live
+  title: Live tails, following, and the 1 Hz tick for the selected agent
+  depends_on:
+  - final-run-blocks
+  size: medium
+  description: 'final-live: add the ace.agent_decks.final_tail_delay_seconds gate
+    and a sanitized in-card live tail of at most 12 lines. The tail follows the newest
+    run and attempt with the arrival marker, pauses on scroll-up, and runs a pump-free
+    1 Hz elapsed/tail refresh only while FINAL shows the selected agent''s active
+    finalization.'
+- id: final-cutover
+  title: Remove the flag, add goldens, inspect live, and bench
+  depends_on:
+  - final-live
+  - final-cli-status
+  size: medium
+  description: 'final-cutover: bench the j/k and triage loop with the flag off and
+    on, then delete the Off branches and the ace_final_deck registry entry and close
+    its flag bead. Add deterministic goldens for every glance and deck state, re-baseline
+    and inspect the changed subtitle and picker goldens, and inspect live captures.'
+- id: final-docs
+  title: User and plugin-author docs for finalizer visibility
+  depends_on:
+  - final-cutover
+  size: small
+  description: 'final-docs: document the FINALIZING row phase, chips, receipts, the
+    FINAL deck, states, keys and live behavior in ace.md. Add the tail-delay key and
+    picker letters to configuration.md, the step channel, typed evidence and operation
+    records to plugins.md, and sase final status to the CLI docs. Record glossary
+    follow-ups as PROPOSED FOLLOW-UP notes.'
 proposed_by: bbugyi200.athena.0sr
 create_time: 2026-09-27 05:49:26
 status: wip
+bead_id: sase-1b2
 ---
 
-- **PROMPT:**
-  [prompts/202609/agents_tab_final_deck.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_final_deck.md)
+- **PROMPT:** [prompts/202609/agents_tab_final_deck.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agents_tab_final_deck.md)
+- **BEAD:** [sase-1b2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b2/README.md)
 
 # Plan: Finalizers on the Agents tab
 
