@@ -1,72 +1,65 @@
 ---
 tier: epic
 title: Close the original sase-1aq live gates in place
-goal:
-  The original remote-dispatch, owner-to-viewer parity, and dispatch-memory beads pass
-  their own acceptance criteria and close normally. Work is not handed to owners that
-  are not running.
+goal: The original remote-dispatch, owner-to-viewer parity, and dispatch-memory beads
+  pass their own acceptance criteria and close normally. Work is not handed to owners
+  that are not running.
 parent_bead: sase-1aq.10.7
 phases:
-  - id: fencing_proof
-    title: Prove healthy-beside-hung host and real-locator fencing
-    depends_on: []
-    size: medium
-    description:
-      "fencing_proof: finish sase-xe.16.11.3 in sase-core (TLS-honoring RemoteHost,
-      successful healthy host beside a hung host, captured-locator rejection) and close
-      it normally."
-  - id: exact_ops_receipts
-    title: Make exact remote stop and retry settle certainly
-    depends_on: []
-    size: large
-    description:
-      "exact_ops_receipts: resolve the uncertain-receipt, catalog-lag, and killed-row
-      reaping issues recorded on sase-xe.16.11 so exact remote operations meet
-      acceptance."
-  - id: live_matrix
-    title: Run the Athena-driven live matrix and close the dispatch phases
-    depends_on:
-      - fencing_proof
-      - exact_ops_receipts
-    size: medium
-    description:
-      "live_matrix: install matched builds on both hosts, drive Athena over SSH through
-      the full viewer and exact-operation matrix, and close the original dispatch phase
-      beads that pass."
-  - id: parity_capture
-    title: Capture same-build owner and viewer parity and close sase-133.5.4
-    depends_on:
-      - live_matrix
-    size: medium
-    description:
-      "parity_capture: capture matched Apollo owner and Athena machine:apollo Agents
-      panes at identical geometry, compare them, and close sase-133.5.4 normally."
-  - id: ancestor_landing
-    title: Audit and land the original remote-dispatch and parity ancestors
-    depends_on:
-      - live_matrix
-      - parity_capture
-    size: medium
-    description:
-      "ancestor_landing: land the sase-xe and sase-133 ancestor chains bottom-up with
-      full land audits, then close sase-1aq.5, .6 and .7 normally."
-  - id: dispatch_memory
-    title: Publish dispatch memory and close the memory backlog
-    depends_on:
-      - ancestor_landing
-    size: medium
-    description:
-      "dispatch_memory: publish the sase-ya dispatch reference note, then close sase-ya,
-      sase-1ae.4, sase-1aq.8, sase-1ae.5, sase-1ae and sase-1aq.9 normally."
+- id: fencing_proof
+  title: Prove healthy-beside-hung host and real-locator fencing
+  depends_on: []
+  size: medium
+  description: 'fencing_proof: finish sase-xe.16.11.3 in sase-core (TLS-honoring RemoteHost,
+    successful healthy host beside a hung host, captured-locator rejection) and close
+    it normally.'
+- id: exact_ops_receipts
+  title: Make exact remote stop and retry settle certainly
+  depends_on: []
+  size: large
+  description: 'exact_ops_receipts: resolve the uncertain-receipt, catalog-lag, and
+    killed-row reaping issues recorded on sase-xe.16.11 so exact remote operations
+    meet acceptance.'
+- id: live_matrix
+  title: Run the Athena-driven live matrix and close the dispatch phases
+  depends_on:
+  - fencing_proof
+  - exact_ops_receipts
+  size: medium
+  description: 'live_matrix: install matched builds on both hosts, drive Athena over
+    SSH through the full viewer and exact-operation matrix, and close the original
+    dispatch phase beads that pass.'
+- id: parity_capture
+  title: Capture same-build owner and viewer parity and close sase-133.5.4
+  depends_on:
+  - live_matrix
+  size: medium
+  description: 'parity_capture: capture matched Apollo owner and Athena machine:apollo
+    Agents panes at identical geometry, compare them, and close sase-133.5.4 normally.'
+- id: ancestor_landing
+  title: Audit and land the original remote-dispatch and parity ancestors
+  depends_on:
+  - live_matrix
+  - parity_capture
+  size: medium
+  description: 'ancestor_landing: land the sase-xe and sase-133 ancestor chains bottom-up
+    with full land audits, then close sase-1aq.5, .6 and .7 normally.'
+- id: dispatch_memory
+  title: Publish dispatch memory and close the memory backlog
+  depends_on:
+  - ancestor_landing
+  size: medium
+  description: 'dispatch_memory: publish the sase-ya dispatch reference note, then
+    close sase-ya, sase-1ae.4, sase-1aq.8, sase-1ae.5, sase-1ae and sase-1aq.9 normally.'
 proposed_by: bbugyi200.apollo.sase-1aq.10.7.land
 create_time: 2026-09-26 21:57:02
 status: wip
+bead_id: sase-1aq.10.7.5
 ---
 
-- **PROMPT:**
-  [prompts/202609/1aq_close_original_gates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_close_original_gates.md)
-- **PARENT:**
-  [202609/1aq_remaining_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_remaining_acceptance.md)
+- **PROMPT:** [prompts/202609/1aq_close_original_gates.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_close_original_gates.md)
+- **PARENT:** [202609/1aq_remaining_acceptance.md](https://github.com/sase-org/sase--plans/blob/main/202609/1aq_remaining_acceptance.md)
+- **BEAD:** [sase-1aq.10.7.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.7.5.md)
 
 # Close the original sase-1aq live gates in place
 
