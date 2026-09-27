@@ -1,101 +1,97 @@
 ---
 tier: epic
-title:
-  "SASE Goals G1: the goal ledger, the manual sase goal CLI, and the goal: artifact"
-goal: "Goals are durable, conflict-free, cross-machine records that a person can create,
+title: 'SASE Goals G1: the goal ledger, the manual sase goal CLI, and the goal: artifact'
+goal: 'Goals are durable, conflict-free, cross-machine records that a person can create,
   list, show, edit, drop, reopen, merge, and cite as @goal:<id>. Hot reads stay fast
-  however much settled history piles up, and every surface says honestly how fresh it
-  is.
+  however much settled history piles up, and every surface says honestly how fresh
+  it is.
 
-  "
+  '
 phases:
-  - id: core-model
-    title: Goal domain model in sase-core
-    depends_on: []
-    size: medium
-    description: "core-model: add the pure sase-core goal module. It covers ids, the
-      frozen event vocabulary and status machine, the total deterministic reducer with
-      concurrency tie-breaks, action validation, publish classes, and
-      presentation-neutral card/row view models.
+- id: core-model
+  title: Goal domain model in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-model: add the pure sase-core goal module. It covers ids, the
+    frozen event vocabulary and status machine, the total deterministic reducer with
+    concurrency tie-breaks, action validation, publish classes, and presentation-neutral
+    card/row view models.
 
-      "
-  - id: ledger-io
-    title: On-disk ledger, hot projection, doctor scan, and bindings
-    depends_on:
-      - core-model
-    size: medium
-    description: "ledger-io: add ledger file I/O in sase-core: STORE.json fence,
-      marker-superset write ordering, append, O(unsettled) hot read, stat-signature
-      projection, history scan, doctor scan and repair, and an I/O probe. Expose them as
-      PyO3 bindings with a thin Python facade and move the core pin.
+    '
+- id: ledger-io
+  title: On-disk ledger, hot projection, doctor scan, and bindings
+  depends_on:
+  - core-model
+  size: medium
+  description: 'ledger-io: add ledger file I/O in sase-core: STORE.json fence, marker-superset
+    write ordering, append, O(unsettled) hot read, stat-signature projection, history
+    scan, doctor scan and repair, and an I/O probe. Expose them as PyO3 bindings with
+    a thin Python facade and move the core pin.
 
-      "
-  - id: ledger-root
-    title: Ledger root resolution and the hidden-clone write lane
-    depends_on:
-      - ledger-io
-    size: medium
-    description: "ledger-root: resolve each project's ledger (goals.visibility /
-      goals.host_role config, shared in the hidden beads clone or local-only), and add
-      the locked write transaction that commits only goals/. Publish synchronously
-      through the existing managed sync worker, and keep bead commits and readers clear
-      of goals/.
+    '
+- id: ledger-root
+  title: Ledger root resolution and the hidden-clone write lane
+  depends_on:
+  - ledger-io
+  size: medium
+  description: 'ledger-root: resolve each project''s ledger (goals.visibility / goals.host_role
+    config, shared in the hidden beads clone or local-only), and add the locked write
+    transaction that commits only goals/. Publish synchronously through the existing
+    managed sync worker, and keep bead commits and readers clear of goals/.
 
-      "
-  - id: publish-sync
-    title: Publishing, convergence, and honest freshness
-    depends_on:
-      - ledger-root
-    size: medium
-    description: "publish-sync: after each integration, reconcile live markers for
-      touched goals. Mint ids only after a fetch and detect collisions. Add the
-      unpublished outbox, a push leg on the sidecar auto-sync tick, a push-retry
-      counter, a single-flight TTL background fetch, bounded fresh fetches, and the
-      synced-ago watermark.
+    '
+- id: publish-sync
+  title: Publishing, convergence, and honest freshness
+  depends_on:
+  - ledger-root
+  size: medium
+  description: 'publish-sync: after each integration, reconcile live markers for touched
+    goals. Mint ids only after a fetch and detect collisions. Add the unpublished
+    outbox, a push leg on the sidecar auto-sync tick, a push-retry counter, a single-flight
+    TTL background fetch, bounded fresh fetches, and the synced-ago watermark.
 
-      "
-  - id: cli
-    title: The sase goal command
-    depends_on:
-      - publish-sync
-    size: medium
-    description: "cli: add sase goal (list default, show, new, edit, drop, reopen,
-      merge, doctor) with human-only verbs refused inside agent runs. Render terminal
-      output through a Rust renderer, add JSON output, and serve list/show from a lean
-      entry.py fast path under the 50 ms budget. Register completion spec, run policy,
-      and CLI docs rows.
+    '
+- id: cli
+  title: The sase goal command
+  depends_on:
+  - publish-sync
+  size: medium
+  description: 'cli: add sase goal (list default, show, new, edit, drop, reopen, merge,
+    doctor) with human-only verbs refused inside agent runs. Render terminal output
+    through a Rust renderer, add JSON output, and serve list/show from a lean entry.py
+    fast path under the 50 ms budget. Register completion spec, run policy, and CLI
+    docs rows.
 
-      "
-  - id: artifact-kind
-    title: The goal artifact kind and @goal citations
-    depends_on:
-      - ledger-root
-    size: medium
-    description: "artifact-kind: make goal: a first-class builtin artifact kind across
-      the sase-core catalog, parser, resolver, and editor/LSP kind lists. Wire it
-      through Python builtin-entry dispatch, artifact read/show/path, one-line @goal
-      prompt expansion, staging, and ACE @goal payload completion, with zero golden
-      churn.
+    '
+- id: artifact-kind
+  title: The goal artifact kind and @goal citations
+  depends_on:
+  - ledger-root
+  size: medium
+  description: 'artifact-kind: make goal: a first-class builtin artifact kind across
+    the sase-core catalog, parser, resolver, and editor/LSP kind lists. Wire it through
+    Python builtin-entry dispatch, artifact read/show/path, one-line @goal prompt
+    expansion, staging, and ACE @goal payload completion, with zero golden churn.
 
-      "
-  - id: acceptance
-    title: Acceptance fixtures, benchmark, docs, and memory
-    depends_on:
-      - cli
-      - artifact-kind
-    size: medium
-    description:
-      "acceptance: prove the epic end to end with two-clone concurrency and marker-race
-      fixtures, crash repair, fail-closed schemas, offline publishing, the agent refusal
-      matrix, and the 100k-settled benchmark with file-open proof. Finish docs/goals.md
-      and land the authorized memory updates."
+    '
+- id: acceptance
+  title: Acceptance fixtures, benchmark, docs, and memory
+  depends_on:
+  - cli
+  - artifact-kind
+  size: medium
+  description: 'acceptance: prove the epic end to end with two-clone concurrency and
+    marker-race fixtures, crash repair, fail-closed schemas, offline publishing, the
+    agent refusal matrix, and the 100k-settled benchmark with file-open proof. Finish
+    docs/goals.md and land the authorized memory updates.'
 proposed_by: bbugyi200.athena.0tb.w0
 create_time: 2026-09-27 19:03:14
 status: wip
+bead_id: sase-1bu
 ---
 
-- **PROMPT:**
-  [prompts/202609/goal_ledger.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/goal_ledger.md)
+- **PROMPT:** [prompts/202609/goal_ledger.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/goal_ledger.md)
+- **BEAD:** [sase-1bu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bu/README.md)
 
 # SASE Goals G1: the goal ledger, manual `sase goal` CLI, and the `goal:` artifact
 
