@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Repaint Agents-tab grouping folds on the incremental display path
-goal:
-  Folding or unfolding an Agents-tab grouping banner (H / l, any incremental grouping
+goal: Folding or unfolding an Agents-tab grouping banner (H / l, any incremental grouping
   mode) immediately repaints the affected panel, so what is drawn always matches the
-  fold state that j/k navigation uses, while unchanged refreshes stay on the cheap patch
-  path.
+  fold state that j/k navigation uses, while unchanged refreshes stay on the cheap
+  patch path.
 size: medium
 proposed_by: bbugyi200.apollo.29
-create_time: 2026-09-27 07:22:21
-status: wip
+status: done
 ---
 
 # Plan: Repaint Agents-tab grouping folds on the incremental display path
