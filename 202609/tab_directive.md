@@ -1,17 +1,16 @@
 ---
 tier: tale
-title: "%tab launch path, storage, query field, and completion"
-goal: "A launch can place its presentation root with %tab. The canonical name is stored
+title: '%tab launch path, storage, query field, and completion'
+goal: 'A launch can place its presentation root with %tab. The canonical name is stored
   on agent metadata, kept across retry, revive, fork, session follow-ups, and clan
   joiners, loaded onto Agent from meta, index, and fleet rows, and queried and completed
   as tab:. The directive is stripped before the model sees the prompt.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-1bc.4
 bead: sase-1bc.4
-create_time: 2026-09-27 12:54:50
-status: wip
+status: done
 ---
 
 - **PARENT:**
