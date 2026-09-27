@@ -1,82 +1,74 @@
 ---
 tier: epic
 title: Finish the sase turn rename
-goal:
-  The sase-core contract flip is on sase-core master and pinned in sase, so core emits
-  turn and named-proc spellings. Every durable legacy reader and sunset-flag alias that
-  the rename corrupted works again and is proven by tests. The stale rename-era tests
-  pass, the remaining shell-concept wording in source is gone, and the parent epic
-  sase-1ab can land against a verified tree.
+goal: The sase-core contract flip is on sase-core master and pinned in sase, so core
+  emits turn and named-proc spellings. Every durable legacy reader and sunset-flag
+  alias that the rename corrupted works again and is proven by tests. The stale rename-era
+  tests pass, the remaining shell-concept wording in source is gone, and the parent
+  epic sase-1ab can land against a verified tree.
 phases:
-  - id: reader-repair
-    title: Legacy reader and sunset-flag repair
-    depends_on: []
-    size: medium
-    description:
-      "reader-repair: fix the durable readers the runtime cutover corrupted (the
-      agent_session_turn stripper, the continuation_mode and proc origin no-ops), route
-      authored gate specs and the gate.shell config key through the flag-gated
-      normalizers, fix the undefined LEGACY_NAMED_PROC_SECTION_ID, and audit every
-      rename commit for more corruption, with a legacy-input test for each fix."
-  - id: test-repair
-    title: Rename-stale tests and CLI contracts
-    depends_on: []
-    size: medium
-    description:
-      "test-repair: bring the 24 deterministic rename-stale test nodes to the turn and
-      named-proc contracts, refresh the completion spec, caption the turn completion
-      slots, and make the proc_wire_schema_version lookup optional so the pinned
-      bindings check passes against the published core."
-  - id: core-flip
-    title: Land the sase-core contract flip
-    depends_on:
-      - reader-repair
-      - test-repair
-    size: medium
-    description:
-      "core-flip: re-apply the orphaned contract-flip diff onto current sase-core
-      master, give the gate_turn_id column migration artifact-index schema 35, prove
-      current sase master against it, and land the feat! commit on sase-core
-      origin/master."
-  - id: pin-bump
-    title: Core pin bump and mirrors
-    depends_on:
-      - core-flip
-    size: medium
-    description:
-      "pin-bump: move sase-core-revision.txt to the landed flip commit, bump the Python
-      schema mirrors and probes, and flip the fleet fixtures while staying compatible
-      with the published pre-flip core floor."
-  - id: vocab-sweep
-    title: Finish turn vocabulary in source
-    depends_on:
-      - reader-repair
-      - test-repair
-    size: medium
-    description:
-      "vocab-sweep: rename the deferred shell-followup/shell-member cluster, rewrite the
-      remaining gate/agent/monitor/proc/session shell prose and visible messages in src,
-      and extend the terminology guard to keep it from coming back."
-  - id: acceptance
-    title: Acceptance audit and cross-repo closeout
-    depends_on:
-      - pin-bump
-      - vocab-sweep
-    size: small
-    description:
-      "acceptance: prove the parent epic's done criteria end to end, sweep commits that
-      landed during the rename for new shell wording, close sase-16v, and confirm
-      deployed skills and linked repos are current."
+- id: reader-repair
+  title: Legacy reader and sunset-flag repair
+  depends_on: []
+  size: medium
+  description: 'reader-repair: fix the durable readers the runtime cutover corrupted
+    (the agent_session_turn stripper, the continuation_mode and proc origin no-ops),
+    route authored gate specs and the gate.shell config key through the flag-gated
+    normalizers, fix the undefined LEGACY_NAMED_PROC_SECTION_ID, and audit every rename
+    commit for more corruption, with a legacy-input test for each fix.'
+- id: test-repair
+  title: Rename-stale tests and CLI contracts
+  depends_on: []
+  size: medium
+  description: 'test-repair: bring the 24 deterministic rename-stale test nodes to
+    the turn and named-proc contracts, refresh the completion spec, caption the turn
+    completion slots, and make the proc_wire_schema_version lookup optional so the
+    pinned bindings check passes against the published core.'
+- id: core-flip
+  title: Land the sase-core contract flip
+  depends_on:
+  - reader-repair
+  - test-repair
+  size: medium
+  description: 'core-flip: re-apply the orphaned contract-flip diff onto current sase-core
+    master, give the gate_turn_id column migration artifact-index schema 35, prove
+    current sase master against it, and land the feat! commit on sase-core origin/master.'
+- id: pin-bump
+  title: Core pin bump and mirrors
+  depends_on:
+  - core-flip
+  size: medium
+  description: 'pin-bump: move sase-core-revision.txt to the landed flip commit, bump
+    the Python schema mirrors and probes, and flip the fleet fixtures while staying
+    compatible with the published pre-flip core floor.'
+- id: vocab-sweep
+  title: Finish turn vocabulary in source
+  depends_on:
+  - reader-repair
+  - test-repair
+  size: medium
+  description: 'vocab-sweep: rename the deferred shell-followup/shell-member cluster,
+    rewrite the remaining gate/agent/monitor/proc/session shell prose and visible
+    messages in src, and extend the terminology guard to keep it from coming back.'
+- id: acceptance
+  title: Acceptance audit and cross-repo closeout
+  depends_on:
+  - pin-bump
+  - vocab-sweep
+  size: small
+  description: 'acceptance: prove the parent epic''s done criteria end to end, sweep
+    commits that landed during the rename for new shell wording, close sase-16v, and
+    confirm deployed skills and linked repos are current.'
 proposed_by: bbugyi200.athena.sase-1ab.land
 parent_bead: sase-1ab
 create_time: 2026-09-27 08:44:22
 status: wip
+bead_id: sase-1ab.10
 ---
 
-- **PROMPT:**
-  [prompts/202609/sase_turn_rename_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_turn_rename_finish.md)
-- **PARENT:**
-  [202609/sase_turn_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_turn_rename.md)
+- **PROMPT:** [prompts/202609/sase_turn_rename_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/sase_turn_rename_finish.md)
+- **PARENT:** [202609/sase_turn_rename.md](https://github.com/sase-org/sase--plans/blob/main/202609/sase_turn_rename.md)
+- **BEAD:** [sase-1ab.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ab/sase-1ab.10.md)
 
 # Plan: Finish the sase turn rename
 
