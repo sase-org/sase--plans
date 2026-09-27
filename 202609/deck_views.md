@@ -1,97 +1,97 @@
 ---
 tier: epic
-title: "Deck views: see and choose how a deck panel pages its cards and blocks"
-goal: "Every Main and Files deck panel names its effective view (spread, page cards, or
-  page blocks) and whether it is automatic or fixed, in a stable, text-first badge in
-  the top border. `P` cycles the focused panel through the valid views without losing
-  the reader's place. Palette commands pick a view directly or return to automatic.
+title: 'Deck views: see and choose how a deck panel pages its cards and blocks'
+goal: 'Every Main and Files deck panel names its effective view (spread, page cards,
+  or page blocks) and whether it is automatic or fixed, in a stable, text-first badge
+  in the top border. `P` cycles the focused panel through the valid views without
+  losing the reader''s place. Palette commands pick a view directly or return to automatic.
   Choices persist per panel and per deck across agents, splits, zoom, and restarts.
 
-  "
+  '
 phases:
-  - id: model
-    title: Deck view policy model, pure resolution, and persistence
-    depends_on: []
-    size: medium
-    description: "model: add the DeckView policy enum and per-panel policies to the pure
-      deck state. Add the pure view_policy resolution/cycle/equivalence module and the
-      pure badge-text helper. Persist views as an additive optional field in the v1
-      deck-state file. Unit tests only; no visible change.
+- id: model
+  title: Deck view policy model, pure resolution, and persistence
+  depends_on: []
+  size: medium
+  description: 'model: add the DeckView policy enum and per-panel policies to the
+    pure deck state. Add the pure view_policy resolution/cycle/equivalence module
+    and the pure badge-text helper. Persist views as an additive optional field in
+    the v1 deck-state file. Unit tests only; no visible change.
 
-      "
-  - id: main-engine
-    title: Main deck honors view policies with anchor-preserving transitions
-    depends_on:
-      - model
-    size: medium
-    description: "main-engine: store policies on DeckPanel through a new panel_view
-      mixin. Force deck/block modes in the Main deciders, and add one view-change
-      transition that keeps card, block, offset, pin, and following in every direction,
-      including rapid presses. Add the DeckArea/AgentDetail set/cycle API, the cached
-      cycle-availability predicate, and resolved_view(). Pilot tests.
+    '
+- id: main-engine
+  title: Main deck honors view policies with anchor-preserving transitions
+  depends_on:
+  - model
+  size: medium
+  description: 'main-engine: store policies on DeckPanel through a new panel_view
+    mixin. Force deck/block modes in the Main deciders, and add one view-change transition
+    that keeps card, block, offset, pin, and following in every direction, including
+    rapid presses. Add the DeckArea/AgentDetail set/cycle API, the cached cycle-availability
+    predicate, and resolved_view(). Pilot tests.
 
-      "
-  - id: files-engine
-    title: Files deck honors view policies with a complete spread probe
-    depends_on:
-      - main-engine
-    size: medium
-    description: "files-engine: make fixed Files views skip or complete the spread
-      probe. Add a complete probe with per-page line caps and truncation hints. Track
-      pending and media-blocked spread states for resolved_view, honor policy in the
-      probe result path, and add a user-initiated media toast. Tests.
+    '
+- id: files-engine
+  title: Files deck honors view policies with a complete spread probe
+  depends_on:
+  - main-engine
+  size: medium
+  description: 'files-engine: make fixed Files views skip or complete the spread probe.
+    Add a complete probe with per-page line caps and truncation hints. Track pending
+    and media-blocked spread states for resolved_view, honor policy in the probe result
+    path, and add a user-initiated media toast. Tests.
 
-      "
-  - id: chrome
-    title: Top-border view badge, rail cue, and subtitle cleanup
-    depends_on:
-      - main-engine
-    size: medium
-    description: "chrome: render the effective view badge after the deck name with a
-      width-tier ladder, held across partial paints. Add the page N/M / all N block-rail
-      cue, remove the old bottom-border spread tag, and regenerate and inspect the
-      affected deck goldens.
+    '
+- id: chrome
+  title: Top-border view badge, rail cue, and subtitle cleanup
+  depends_on:
+  - main-engine
+  size: medium
+  description: 'chrome: render the effective view badge after the deck name with a
+    width-tier ladder, held across partial paints. Add the page N/M / all N block-rail
+    cue, remove the old bottom-border spread tag, and regenerate and inspect the affected
+    deck goldens.
 
-      "
-  - id: controls
-    title: P key, palette view commands, footer, help, and search exits
-    depends_on:
-      - files-engine
-      - chrome
-    size: medium
-    description: 'controls: add the Agents-only cycle_deck_view action on P with gating,
-      footer "P view", help row, search passthrough, and the first-fix toast. Add
-      palette commands for the three fixed views and "Deck view: automatic", with
-      availability context and tests. Regenerate footer-affected goldens.
+    '
+- id: controls
+  title: P key, palette view commands, footer, help, and search exits
+  depends_on:
+  - files-engine
+  - chrome
+  size: medium
+  description: 'controls: add the Agents-only cycle_deck_view action on P with gating,
+    footer "P view", help row, search passthrough, and the first-fix toast. Add palette
+    commands for the three fixed views and "Deck view: automatic", with availability
+    context and tests. Regenerate footer-affected goldens.
 
-      '
-  - id: verify
-    title: View goldens, live inspection, and forced-spread benchmarks
-    depends_on:
-      - controls
-    size: medium
-    description: "verify: add new deck-view PNG scenarios and inspect live screenshots
-      at wide and narrow widths. Benchmark P transitions on the 5,000-line Reply, a
-      pathological Reply, and a forced Files spread against stated budgets. Mitigate
-      only by measured rules, then run the acceptance checklist.
+    '
+- id: verify
+  title: View goldens, live inspection, and forced-spread benchmarks
+  depends_on:
+  - controls
+  size: medium
+  description: 'verify: add new deck-view PNG scenarios and inspect live screenshots
+    at wide and narrow widths. Benchmark P transitions on the 5,000-line Reply, a
+    pathological Reply, and a forced Files spread against stated budgets. Mitigate
+    only by measured rules, then run the acceptance checklist.
 
-      "
-  - id: docs
-    title: User docs for deck views
-    depends_on:
-      - controls
-    size: small
-    description:
-      "docs: document deck views, the badge legend, P, palette reset, persistence, and
-      the Auto-only scope of the spread thresholds in docs/ace.md and
-      docs/configuration.md. Record a proposed glossary follow-up."
+    '
+- id: docs
+  title: User docs for deck views
+  depends_on:
+  - controls
+  size: small
+  description: 'docs: document deck views, the badge legend, P, palette reset, persistence,
+    and the Auto-only scope of the spread thresholds in docs/ace.md and docs/configuration.md.
+    Record a proposed glossary follow-up.'
 proposed_by: bbugyi200.athena.0sx
 create_time: 2026-09-27 05:45:12
 status: wip
+bead_id: sase-1b1
 ---
 
-- **PROMPT:**
-  [prompts/202609/deck_views.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views.md)
+- **PROMPT:** [prompts/202609/deck_views.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/deck_views.md)
+- **BEAD:** [sase-1b1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1b1/README.md)
 
 # Deck views: see and choose how a deck panel pages its cards and blocks
 
