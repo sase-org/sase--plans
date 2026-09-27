@@ -1,52 +1,47 @@
 ---
 tier: epic
 title: Finish the remaining sase-1aq live acceptance
-goal:
-  The original remote-dispatch, owner-to-viewer parity, and dispatch-memory beads meet
-  their approved live gates and close normally.
+goal: The original remote-dispatch, owner-to-viewer parity, and dispatch-memory beads
+  meet their approved live gates and close normally.
 parent_bead: sase-1aq.10
 phases:
-  - id: exact_ops
-    title: Repair exact remote operations on fleet-dispatched agents
-    depends_on: []
-    size: medium
-    description:
-      "exact_ops: make settled dispatch rows addressable and prove exact stop and retry
-      on a released cohort."
-  - id: viewer_matrix
-    title: Finish the viewer acceptance matrix and dispatch landing
-    depends_on:
-      - exact_ops
-    size: medium
-    description:
-      "viewer_matrix: finish the original live viewer and fault cases, then land the
-      remote-dispatch bead chain."
-  - id: parity
-    title: Capture and land same-build owner-to-viewer parity
-    depends_on:
-      - viewer_matrix
-    size: medium
-    description:
-      "parity: prove production owner and remote row equality on matched deployed builds
-      and land the parity beads."
-  - id: dispatch_memory
-    title: Publish dispatch guidance and finish the memory backlog
-    depends_on:
-      - viewer_matrix
-      - parity
-    size: medium
-    description:
-      "dispatch_memory: publish the authorized dispatch note, close its task and
-      original memory ancestors, and audit the backlog."
+- id: exact_ops
+  title: Repair exact remote operations on fleet-dispatched agents
+  depends_on: []
+  size: medium
+  description: 'exact_ops: make settled dispatch rows addressable and prove exact
+    stop and retry on a released cohort.'
+- id: viewer_matrix
+  title: Finish the viewer acceptance matrix and dispatch landing
+  depends_on:
+  - exact_ops
+  size: medium
+  description: 'viewer_matrix: finish the original live viewer and fault cases, then
+    land the remote-dispatch bead chain.'
+- id: parity
+  title: Capture and land same-build owner-to-viewer parity
+  depends_on:
+  - viewer_matrix
+  size: medium
+  description: 'parity: prove production owner and remote row equality on matched
+    deployed builds and land the parity beads.'
+- id: dispatch_memory
+  title: Publish dispatch guidance and finish the memory backlog
+  depends_on:
+  - viewer_matrix
+  - parity
+  size: medium
+  description: 'dispatch_memory: publish the authorized dispatch note, close its task
+    and original memory ancestors, and audit the backlog.'
 proposed_by: bbugyi200.apollo.sase-1aq.10.land
 create_time: 2026-09-26 20:01:45
 status: wip
+bead_id: sase-1aq.10.7
 ---
 
-- **PROMPT:**
-  [prompts/202609/1aq_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_remaining_acceptance.md)
-- **PARENT:**
-  [202609/finish_1aq_live_closeout.md](https://github.com/sase-org/sase--plans/blob/main/202609/finish_1aq_live_closeout.md)
+- **PROMPT:** [prompts/202609/1aq_remaining_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/1aq_remaining_acceptance.md)
+- **PARENT:** [202609/finish_1aq_live_closeout.md](https://github.com/sase-org/sase--plans/blob/main/202609/finish_1aq_live_closeout.md)
+- **BEAD:** [sase-1aq.10.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1aq/sase-1aq.10.7.md)
 
 # Finish the remaining sase-1aq live acceptance
 
