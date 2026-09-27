@@ -1,168 +1,167 @@
 ---
 tier: epic
-title:
-  "sase tool in the TUI: live ⚒ chips, the ⚒ Runs card, and the Admin Center Tools pane"
-goal: "A live ToolRun shows on the row that owns it with its stage progress, and turns
-  red when it goes silent. The selected node's header says whether its latest check
+title: 'sase tool in the TUI: live ⚒ chips, the ⚒ Runs card, and the Admin Center
+  Tools pane'
+goal: 'A live ToolRun shows on the row that owns it with its stage progress, and turns
+  red when it goes silent. The selected node''s header says whether its latest check
   added NEW failures. The Tools deck gains a ⚒ Runs card with a stage waterfall, triage
   items, and a log tail. LLM Calls, the slow-tool list, and monitor/proc Context cards
   link to the run instead of copying it. An Admin Center Tools pane covers project-wide
-  runs, failure groups, the catalog, stopping a run, starting a named tool, and the -H
-  settlement notification. Everything reads a slim sase-core projection and never
+  runs, failure groups, the catalog, stopping a run, starting a named tool, and the
+  -H settlement notification. Everything reads a slim sase-core projection and never
   reconciles or shells out on a UI path.
 
-  "
+  '
 phases:
-  - id: core-glance
-    title: Live glance, node summaries, brief lists, and the verdict bucket in sase-core
-    depends_on: []
-    size: medium
-    description: "core-glance: add the fingerprint-free tool_run_live_glance,
-      tool_run_briefs and tool_run_node_summaries projections, one shared verdict-bucket
-      helper, the silent threshold constant, and agent/owner indexes, with PyO3 bindings
-      and round-trip tests.
+- id: core-glance
+  title: Live glance, node summaries, brief lists, and the verdict bucket in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-glance: add the fingerprint-free tool_run_live_glance, tool_run_briefs
+    and tool_run_node_summaries projections, one shared verdict-bucket helper, the
+    silent threshold constant, and agent/owner indexes, with PyO3 bindings and round-trip
+    tests.
 
-      "
-  - id: core-run-detail
-    title: Per-run detail projection with stage timeline and witness counts in sase-core
-    depends_on:
-      - core-glance
-    size: medium
-    description: "core-run-detail: add tool_run_detail, which returns one run's brief,
-      safe argv, millisecond-normalized stages, the reference run's expected stages,
-      triage items with cross-run and cross-agent witness counts, child runs, log
-      metadata, and pruning facts, with its binding.
+    '
+- id: core-run-detail
+  title: Per-run detail projection with stage timeline and witness counts in sase-core
+  depends_on:
+  - core-glance
+  size: medium
+  description: 'core-run-detail: add tool_run_detail, which returns one run''s brief,
+    safe argv, millisecond-normalized stages, the reference run''s expected stages,
+    triage items with cross-run and cross-agent witness counts, child runs, log metadata,
+    and pruning facts, with its binding.
 
-      "
-  - id: tool-run-adapter
-    title:
-      Python adapter, state vocabulary, beta flag, shared log tail, and the chop glyph
-      move
-    depends_on:
-      - core-glance
-    size: medium
-    description: "tool-run-adapter: move the core pin, add typed Python adapters and
-      binding registrations, the ToolRun view vocabulary, the ace_tool_runs beta flag, a
-      shared pure log-tail helper used by the CLI, and move the chop link-trail icon
-      from ⚒ to ⏲.
+    '
+- id: tool-run-adapter
+  title: Python adapter, state vocabulary, beta flag, shared log tail, and the chop
+    glyph move
+  depends_on:
+  - core-glance
+  size: medium
+  description: 'tool-run-adapter: move the core pin, add typed Python adapters and
+    binding registrations, the ToolRun view vocabulary, the ace_tool_runs beta flag,
+    a shared pure log-tail helper used by the CLI, and move the chop link-trail icon
+    from ⚒ to ⏲.
 
-      "
-  - id: glance-row-chips
-    title: ToolRun glance snapshot service and live-only ⚒ row chips
-    depends_on:
-      - tool-run-adapter
-    size: medium
-    description: "glance-row-chips: build the TUI ToolRun snapshot service (surface
-      token, live drift probe, coalesced worker load, attribution), then render the live
-      and silent ⚒ row chips with session inheritance, minute ticking, render-cache
-      keys, and row patching behind ace_tool_runs.
+    '
+- id: glance-row-chips
+  title: ToolRun glance snapshot service and live-only ⚒ row chips
+  depends_on:
+  - tool-run-adapter
+  size: medium
+  description: 'glance-row-chips: build the TUI ToolRun snapshot service (surface
+    token, live drift probe, coalesced worker load, attribution), then render the
+    live and silent ⚒ row chips with session inheritance, minute ticking, render-cache
+    keys, and row patching behind ace_tool_runs.
 
-      "
-  - id: header-chip
-    title: Selection-scoped ⚒ header chip, Tool runs field, and copyable run ids
-    depends_on:
-      - glance-row-chips
-    size: medium
-    description: "header-chip: add the node-summary loader and LRU, a tool-runs
-      detail-header lane, the compact header chip for live and settled verdicts, the
-      expanded Tool runs field, and a copy-mode target for the run id.
+    '
+- id: header-chip
+  title: Selection-scoped ⚒ header chip, Tool runs field, and copyable run ids
+  depends_on:
+  - glance-row-chips
+  size: medium
+  description: 'header-chip: add the node-summary loader and LRU, a tool-runs detail-header
+    lane, the compact header chip for live and settled verdicts, the expanded Tool
+    runs field, and a copy-mode target for the run id.
 
-      "
-  - id: tools-deck-cards
-    title: Tools becomes a two-card deck with ⚒ Runs first
-    depends_on:
-      - header-chip
-    size: medium
-    description: "tools-deck-cards: give the Tools deck two card hosts (a
-      ToolRunsDeckView card document and the unchanged LLM Calls panel), with per-card
-      availability, the sticky default-card rule, a switcher status segment, active-card
-      detail levels, availability for monitors and procs, and outcome-line run blocks.
+    '
+- id: tools-deck-cards
+  title: Tools becomes a two-card deck with ⚒ Runs first
+  depends_on:
+  - header-chip
+  size: medium
+  description: 'tools-deck-cards: give the Tools deck two card hosts (a ToolRunsDeckView
+    card document and the unchanged LLM Calls panel), with per-card availability,
+    the sticky default-card rule, a switcher status segment, active-card detail levels,
+    availability for monitors and procs, and outcome-line run blocks.
 
-      "
-  - id: runs-card-anatomy
-    title: Full ⚒ Runs block anatomy - waterfall, triage, log tail, and honest absence
-    depends_on:
-      - tools-deck-cards
-      - core-run-detail
-    size: medium
-    description: "runs-card-anatomy: move the core pin past the detail projection and
-      render each run block's outcome and context lines, stage waterfall, triage items
-      with witness counts, child runs, bounded log tail, three detail levels,
-      retention-honest absence, and v/% integration.
+    '
+- id: runs-card-anatomy
+  title: Full ⚒ Runs block anatomy - waterfall, triage, log tail, and honest absence
+  depends_on:
+  - tools-deck-cards
+  - core-run-detail
+  size: medium
+  description: 'runs-card-anatomy: move the core pin past the detail projection and
+    render each run block''s outcome and context lines, stage waterfall, triage items
+    with witness counts, child runs, bounded log tail, three detail levels, retention-honest
+    absence, and v/% integration.
 
-      "
-  - id: runs-card-live
-    title: Live run blocks - in-flight stages, pending stages, follow and hold
-    depends_on:
-      - runs-card-anatomy
-    size: medium
-    description: "runs-card-live: make a live run's block progress in place with a pure
-      1 Hz elapsed repaint, a detail refetch only on glance drift, pending stages from
-      the reference run, silent state, follow-versus-hold on new runs, and an in-place
-      settle transition.
+    '
+- id: runs-card-live
+  title: Live run blocks - in-flight stages, pending stages, follow and hold
+  depends_on:
+  - runs-card-anatomy
+  size: medium
+  description: 'runs-card-live: make a live run''s block progress in place with a
+    pure 1 Hz elapsed repaint, a detail refetch only on glance drift, pending stages
+    from the reference run, silent state, follow-versus-hold on new runs, and an in-place
+    settle transition.
 
-      "
-  - id: run-links
-    title: Link LLM Calls, the slow-tool list, and Context cards to the run
-    depends_on:
-      - runs-card-anatomy
-    size: medium
-    description: "run-links: add a verdict suffix and a jump to the run's block on LLM
-      Calls rows that ran sase tool run, a live-stage or verdict suffix on the Main deck
-      slow-tool list, and a Tool run row on monitor and named-proc Context cards.
+    '
+- id: run-links
+  title: Link LLM Calls, the slow-tool list, and Context cards to the run
+  depends_on:
+  - runs-card-anatomy
+  size: medium
+  description: 'run-links: add a verdict suffix and a jump to the run''s block on
+    LLM Calls rows that ran sase tool run, a live-stage or verdict suffix on the Main
+    deck slow-tool list, and a Tool run row on monitor and named-proc Context cards.
 
-      "
-  - id: admin-tools-pane
-    title: Admin Center Tools pane with Runs, Failures, and Catalog views
-    depends_on:
-      - runs-card-anatomy
-    size: medium
-    description: "admin-tools-pane: add the Tools tab to the Admin Center, with a Runs
-      list and detail that reuse the Runs block renderer, a Failures signature view, a
-      read-only Catalog view, current-project filtering, jump-to-agent, and a generic
-      deep-link focus target.
+    '
+- id: admin-tools-pane
+  title: Admin Center Tools pane with Runs, Failures, and Catalog views
+  depends_on:
+  - runs-card-anatomy
+  size: medium
+  description: 'admin-tools-pane: add the Tools tab to the Admin Center, with a Runs
+    list and detail that reuse the Runs block renderer, a Failures signature view,
+    a read-only Catalog view, current-project filtering, jump-to-agent, and a generic
+    deep-link focus target.
 
-      "
-  - id: tool-run-actions
-    title:
-      Stop, run from the catalog, OpenToolRun notifications, Procs decode, and palette
-    depends_on:
-      - admin-tools-pane
-    size: medium
-    description: "tool-run-actions: add a confirmed stop as a durable proc with a typed
-      result, a catalog -H launch through a session worker, the OpenToolRun notification
-      action (sase-189), the ⚒ decode for tool-run procs, and context-aware palette
-      commands.
+    '
+- id: tool-run-actions
+  title: Stop, run from the catalog, OpenToolRun notifications, Procs decode, and
+    palette
+  depends_on:
+  - admin-tools-pane
+  size: medium
+  description: 'tool-run-actions: add a confirmed stop as a durable proc with a typed
+    result, a catalog -H launch through a session worker, the OpenToolRun notification
+    action (sase-189), the ⚒ decode for tool-run procs, and context-aware palette
+    commands.
 
-      "
-  - id: cutover
-    title: Remove ace_tool_runs, add goldens, inspect live, and bench
-    depends_on:
-      - runs-card-live
-      - run-links
-      - tool-run-actions
-    size: medium
-    description: "cutover: bench j/k and idle ticks with the flag on and off, delete the
-      flag's Off branches and close its flag bead, generate and inspect deterministic
-      goldens for every surface, and inspect live captures of real runs.
+    '
+- id: cutover
+  title: Remove ace_tool_runs, add goldens, inspect live, and bench
+  depends_on:
+  - runs-card-live
+  - run-links
+  - tool-run-actions
+  size: medium
+  description: 'cutover: bench j/k and idle ticks with the flag on and off, delete
+    the flag''s Off branches and close its flag bead, generate and inspect deterministic
+    goldens for every surface, and inspect live captures of real runs.
 
-      "
-  - id: docs
-    title: User docs for ToolRuns in the TUI
-    depends_on:
-      - cutover
-    size: small
-    description:
-      "docs: document the shipped surfaces, vocabulary, keys, and Admin Center tab
-      renumbering in docs/ace.md, docs/tool.md, and docs/configuration.md, and record
-      ready-to-apply glossary text as a PROPOSED FOLLOW-UP note."
+    '
+- id: docs
+  title: User docs for ToolRuns in the TUI
+  depends_on:
+  - cutover
+  size: small
+  description: 'docs: document the shipped surfaces, vocabulary, keys, and Admin Center
+    tab renumbering in docs/ace.md, docs/tool.md, and docs/configuration.md, and record
+    ready-to-apply glossary text as a PROPOSED FOLLOW-UP note.'
 proposed_by: bbugyi200.athena.0tc
 create_time: 2026-09-27 18:32:30
 status: wip
+bead_id: sase-1bt
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_runs_tui_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_runs_tui_surfaces.md)
+- **PROMPT:** [prompts/202609/tool_runs_tui_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_runs_tui_surfaces.md)
+- **BEAD:** [sase-1bt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bt/README.md)
 
 # Plan: `sase tool` in the TUI (roadmap E5, "Surfaces")
 
