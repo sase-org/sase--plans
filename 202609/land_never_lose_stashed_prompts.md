@@ -2,10 +2,11 @@
 tier: tale
 size: medium
 title: Finish and land epic sase-1ca (Never lose stashed prompts)
-goal: The pytest session HOME/SASE_HOME sandbox holds for every test, not just each
-  worker's first; the remaining sase-1ca restore, stop-axe-quit, logging, and archive-hint
-  gaps are fixed with regression tests; and epic sase-1ca is closed, symvision is
-  clean, and its plan file is marked done.
+goal:
+  The pytest session HOME/SASE_HOME sandbox holds for every test, not just each worker's
+  first; the remaining sase-1ca restore, stop-axe-quit, logging, and archive-hint gaps
+  are fixed with regression tests; and epic sase-1ca is closed, symvision is clean, and
+  its plan file is marked done.
 proposed_by: bbugyi200.athena.sase-1ca.land
 bead: sase-1ca
 status: done
@@ -15,6 +16,11 @@ status: done
   [202609/never_lose_stashed_prompts.md](https://github.com/sase-org/sase--plans/blob/main/202609/never_lose_stashed_prompts.md)
 - **BEAD:**
   [sase-1ca](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ca/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ca.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ca.land.md)
+- **COMMITS:**
+  - [119f97d](https://github.com/sase-org/sase/commit/119f97da8078cc265d6f2219cd94c91b8cbda43e)
+    — feat(prompt-stash): land sase-1ca hardening gaps 1-6 with regression tests
 
 # Finish and land epic sase-1ca: seal the session HOME sandbox, fix small hardening gaps, close the epic
 
