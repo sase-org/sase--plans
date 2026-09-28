@@ -62,7 +62,7 @@ phases:
     dead launches, and disk attribution matches df.'
 proposed_by: bbugyi200.kellys_mbp.1d
 create_time: 2026-09-27 14:23:26
-status: wip
+status: done
 bead_id: sase-1bf
 ---
 
