@@ -86,7 +86,7 @@ phases:
     Record a proposed glossary follow-up.'
 proposed_by: bbugyi200.athena.0sx
 create_time: 2026-09-27 05:45:12
-status: wip
+status: done
 bead_id: sase-1b1
 ---
 
