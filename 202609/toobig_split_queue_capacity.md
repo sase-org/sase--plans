@@ -4,8 +4,7 @@ title: Raise toobig_split launch capacity to 5
 goal: New agents the toobig_split job launches admit at queue capacity 5.
 size: small
 proposed_by: bbugyi200.athena.0tk
-create_time: 2026-09-28 09:22:33
-status: wip
+status: done
 ---
 
 # Plan: Raise toobig_split launch capacity to 5
