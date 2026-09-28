@@ -2,15 +2,13 @@
 tier: tale
 size: medium
 title: Finish and land epic sase-1ca (Never lose stashed prompts)
-goal:
-  The pytest session HOME/SASE_HOME sandbox holds for every test, not just each worker's
-  first; the remaining sase-1ca restore, stop-axe-quit, logging, and archive-hint gaps
-  are fixed with regression tests; and epic sase-1ca is closed, symvision is clean, and
-  its plan file is marked done.
+goal: The pytest session HOME/SASE_HOME sandbox holds for every test, not just each
+  worker's first; the remaining sase-1ca restore, stop-axe-quit, logging, and archive-hint
+  gaps are fixed with regression tests; and epic sase-1ca is closed, symvision is
+  clean, and its plan file is marked done.
 proposed_by: bbugyi200.athena.sase-1ca.land
 bead: sase-1ca
-create_time: 2026-09-28 19:25:56
-status: wip
+status: done
 ---
 
 - **PARENT:**
