@@ -1,157 +1,144 @@
 ---
 tier: epic
 title: Green sase master CI and ship sase 0.18.0 to PyPI
-goal: "sase-core-rs 0.36.0 and sase 0.18.0 are live on PyPI and install cleanly from a
-  fresh venv. They get there through the normal release path: Master Gate green on
-  master HEAD, a green Full CI no older than 6 hours, the core-floor smoke on PR #299,
-  and ci_watch merging #299. Full CI is restructured so that measurement and soak lanes
-  can no longer block a release.
+goal: 'sase-core-rs 0.36.0 and sase 0.18.0 are live on PyPI and install cleanly from
+  a fresh venv. They get there through the normal release path: Master Gate green
+  on master HEAD, a green Full CI no older than 6 hours, the core-floor smoke on PR
+  #299, and ci_watch merging #299. Full CI is restructured so that measurement and
+  soak lanes can no longer block a release.
 
-  "
+  '
 phases:
-  - id: core-macos
-    title: Fix macOS path canonicalization in sase-core
-    depends_on: []
-    size: small
-    description:
-      "core-macos: in the linked sase-core checkout, canonicalize the deepest existing
-      ancestor in launch_scratch_liveness normalize_path, make the managed_tmp_roots
-      test expect canonical storage, and add a symlink regression test that reproduces
-      the macOS /var vs /private/var bug on Linux."
-  - id: core-release
-    title: Cut and verify sase-core-rs 0.36.0 on PyPI
-    depends_on:
-      - core-macos
-    size: small
-    description:
-      "core-release: drive sase-core release PR #315 to all-green CI including macOS,
-      dispatch release-plz with dry_run=false, and verify that PyPI has every 0.36.0
-      wheel plus the sdist."
-  - id: core-pin
-    title: Move the sase core source pin and stop ratchet PR pileup
-    depends_on: []
-    size: small
-    description:
-      "core-pin: bump sase-core-revision.txt to sase-core master so the 3 goal bindings
-      and 16 tests clear, close the superseded core-pin-ratchet PRs, and make the
-      ratchet workflow keep at most one open PR."
-  - id: contract-drift
-    title: Repair whole-repo contract and guard drift
-    depends_on: []
-    size: medium
-    description:
-      "contract-drift: fix the 15 mechanical failures. Add completion kinds and sync the
-      spec, add the two schema properties, fix the AgentExecContext mock, and update the
-      trash-limit and getting-started docs assertions. Review the two marker-path sites,
-      and route the 7 system-clock sites through sase.core.time without touching the
-      allowlist."
-  - id: tab-completion
-    title: Settle %tab completion fallout
-    depends_on: []
-    size: medium
-    description:
-      "tab-completion: decide whether the default main tab group is a leak when the
-      agent_tabs flag is off, fix the product or the 11 agent/directive completion tests
-      to match, and assert removed directive names explicitly."
-  - id: admin-center-tabs
-    title: Repair Admin Center tab-model fallout from the Tools pane
-    depends_on: []
-    size: medium
-    description:
-      "admin-center-tabs: reconcile the 6 Admin Center and Config Center tests (tab
-      order, count, digit shortcuts, resume, cached open, blocked write) with the Tools
-      tab added by sase-1bt.10, fixing the product wherever a documented invariant
-      broke."
-  - id: tui-scroll-settle
-    title: Fix header half-page scroll and files Ctrl-J settle races
-    depends_on: []
-    size: medium
-    description:
-      "tui-scroll-settle: root-cause the asynchronous pin settle behind the header
-      half-page scroll test (sase-1b8) and the files deck Ctrl-J timeout (sase-1a7), and
-      fix them without blindly longer waits."
-  - id: tui-resize-layout
-    title: Fix chrome layout resize failures
-    depends_on: []
-    size: medium
-    description:
-      "tui-resize-layout: root-cause why a terminal resize sometimes has no effect in
-      the two test_chrome_layout nodes (sase-1a6) and make recompose and popup reclamp
-      settle deterministically."
-  - id: toobig-lint-tail
-    title: Split the two oversized modules and clear the masked lint tail
-    depends_on: []
-    size: medium
-    description:
-      "toobig-lint-tail: split src/sase/core/tool_run.py and src/sase/tool/executor.py
-      below 1000 lines along existing seams, then run every CI lint-job step in order
-      and fix what validate, validate-committed-plans, and build-check report now that
-      they finally run."
-  - id: ci-telemetry-split
-    title: Move measurement lanes out of the release-gating Full CI
-    depends_on: []
-    size: medium
-    description:
-      "ci-telemetry-split: move test-cost, coverage-contexts, and contention into a new
-      scheduled CI Telemetry workflow with realistic timeouts, run plain just test on
-      3.13 in Full CI, give the 3.12 coverage leg headroom, and update the
-      coverage-contexts fetcher, workflow tests, and docs."
-  - id: perf-floors
-    title: Fix the real perf-floors regressions
-    depends_on: []
-    size: medium
-    description:
-      "perf-floors: shorten the tmux socket directory (sase-18w), bring the
-      smoke_sase_tool_runs harness cases up to the current tool-run contract, and fix
-      the cached prompt-panel hint render regression behind the view-hints floor."
-  - id: visual-lane
-    title: Make the visual-test lane green without bulk acceptance
-    depends_on:
-      - tab-completion
-      - admin-center-tabs
-      - tui-scroll-settle
-      - tui-resize-layout
-    size: medium
-    description:
-      "visual-lane: reproduce just test-visual at HEAD after the TUI phases land, fix
-      the semantic timeouts (the Config Center flags SUNSET wait, the narrow top-bar
-      startup), and rebaseline only goldens whose drift traces to a deliberate UI
-      commit."
-  - id: green-master
-    title: Integrate and observe green Master Gate and Full CI
-    depends_on:
-      - core-pin
-      - contract-drift
-      - tab-completion
-      - admin-center-tabs
-      - tui-scroll-settle
-      - tui-resize-layout
-      - toobig-lint-tail
-      - ci-telemetry-split
-      - perf-floors
-      - visual-lane
-    size: medium
-    description:
-      "green-master: re-inventory CI at HEAD, fix any failure that landed since the
-      repair phases, watch Master Gate until it is green on HEAD, dispatch Full CI until
-      it is green, and take one measured CI Telemetry run."
-  - id: release
-    title: Release sase 0.18.0 to PyPI through ci_watch
-    depends_on:
-      - core-release
-      - green-master
-    size: small
-    description:
-      "release: dispatch Publish so #299 ratchets to sase-core-rs>=0.36.0,<0.37.0, get
-      the floor smoke green, let ci_watch merge #299 (or take the bounded one-time
-      bypass), cut the release, and verify 0.18.0 from a clean venv."
+- id: core-macos
+  title: Fix macOS path canonicalization in sase-core
+  depends_on: []
+  size: small
+  description: 'core-macos: in the linked sase-core checkout, canonicalize the deepest
+    existing ancestor in launch_scratch_liveness normalize_path, make the managed_tmp_roots
+    test expect canonical storage, and add a symlink regression test that reproduces
+    the macOS /var vs /private/var bug on Linux.'
+- id: core-release
+  title: Cut and verify sase-core-rs 0.36.0 on PyPI
+  depends_on:
+  - core-macos
+  size: small
+  description: 'core-release: drive sase-core release PR #315 to all-green CI including
+    macOS, dispatch release-plz with dry_run=false, and verify that PyPI has every
+    0.36.0 wheel plus the sdist.'
+- id: core-pin
+  title: Move the sase core source pin and stop ratchet PR pileup
+  depends_on: []
+  size: small
+  description: 'core-pin: bump sase-core-revision.txt to sase-core master so the 3
+    goal bindings and 16 tests clear, close the superseded core-pin-ratchet PRs, and
+    make the ratchet workflow keep at most one open PR.'
+- id: contract-drift
+  title: Repair whole-repo contract and guard drift
+  depends_on: []
+  size: medium
+  description: 'contract-drift: fix the 15 mechanical failures. Add completion kinds
+    and sync the spec, add the two schema properties, fix the AgentExecContext mock,
+    and update the trash-limit and getting-started docs assertions. Review the two
+    marker-path sites, and route the 7 system-clock sites through sase.core.time without
+    touching the allowlist.'
+- id: tab-completion
+  title: Settle %tab completion fallout
+  depends_on: []
+  size: medium
+  description: 'tab-completion: decide whether the default main tab group is a leak
+    when the agent_tabs flag is off, fix the product or the 11 agent/directive completion
+    tests to match, and assert removed directive names explicitly.'
+- id: admin-center-tabs
+  title: Repair Admin Center tab-model fallout from the Tools pane
+  depends_on: []
+  size: medium
+  description: 'admin-center-tabs: reconcile the 6 Admin Center and Config Center
+    tests (tab order, count, digit shortcuts, resume, cached open, blocked write)
+    with the Tools tab added by sase-1bt.10, fixing the product wherever a documented
+    invariant broke.'
+- id: tui-scroll-settle
+  title: Fix header half-page scroll and files Ctrl-J settle races
+  depends_on: []
+  size: medium
+  description: 'tui-scroll-settle: root-cause the asynchronous pin settle behind the
+    header half-page scroll test (sase-1b8) and the files deck Ctrl-J timeout (sase-1a7),
+    and fix them without blindly longer waits.'
+- id: tui-resize-layout
+  title: Fix chrome layout resize failures
+  depends_on: []
+  size: medium
+  description: 'tui-resize-layout: root-cause why a terminal resize sometimes has
+    no effect in the two test_chrome_layout nodes (sase-1a6) and make recompose and
+    popup reclamp settle deterministically.'
+- id: toobig-lint-tail
+  title: Split the two oversized modules and clear the masked lint tail
+  depends_on: []
+  size: medium
+  description: 'toobig-lint-tail: split src/sase/core/tool_run.py and src/sase/tool/executor.py
+    below 1000 lines along existing seams, then run every CI lint-job step in order
+    and fix what validate, validate-committed-plans, and build-check report now that
+    they finally run.'
+- id: ci-telemetry-split
+  title: Move measurement lanes out of the release-gating Full CI
+  depends_on: []
+  size: medium
+  description: 'ci-telemetry-split: move test-cost, coverage-contexts, and contention
+    into a new scheduled CI Telemetry workflow with realistic timeouts, run plain
+    just test on 3.13 in Full CI, give the 3.12 coverage leg headroom, and update
+    the coverage-contexts fetcher, workflow tests, and docs.'
+- id: perf-floors
+  title: Fix the real perf-floors regressions
+  depends_on: []
+  size: medium
+  description: 'perf-floors: shorten the tmux socket directory (sase-18w), bring the
+    smoke_sase_tool_runs harness cases up to the current tool-run contract, and fix
+    the cached prompt-panel hint render regression behind the view-hints floor.'
+- id: visual-lane
+  title: Make the visual-test lane green without bulk acceptance
+  depends_on:
+  - tab-completion
+  - admin-center-tabs
+  - tui-scroll-settle
+  - tui-resize-layout
+  size: medium
+  description: 'visual-lane: reproduce just test-visual at HEAD after the TUI phases
+    land, fix the semantic timeouts (the Config Center flags SUNSET wait, the narrow
+    top-bar startup), and rebaseline only goldens whose drift traces to a deliberate
+    UI commit.'
+- id: green-master
+  title: Integrate and observe green Master Gate and Full CI
+  depends_on:
+  - core-pin
+  - contract-drift
+  - tab-completion
+  - admin-center-tabs
+  - tui-scroll-settle
+  - tui-resize-layout
+  - toobig-lint-tail
+  - ci-telemetry-split
+  - perf-floors
+  - visual-lane
+  size: medium
+  description: 'green-master: re-inventory CI at HEAD, fix any failure that landed
+    since the repair phases, watch Master Gate until it is green on HEAD, dispatch
+    Full CI until it is green, and take one measured CI Telemetry run.'
+- id: release
+  title: Release sase 0.18.0 to PyPI through ci_watch
+  depends_on:
+  - core-release
+  - green-master
+  size: small
+  description: 'release: dispatch Publish so #299 ratchets to sase-core-rs>=0.36.0,<0.37.0,
+    get the floor smoke green, let ci_watch merge #299 (or take the bounded one-time
+    bypass), cut the release, and verify 0.18.0 from a clean venv.'
 proposed_by: bbugyi200.athena.0ti
 create_time: 2026-09-28 07:09:20
 status: wip
+bead_id: sase-1c1
 ---
 
-- **PROMPT:**
-  [prompts/202609/master_ci_green_and_0_18_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/master_ci_green_and_0_18_release.md)
+- **PROMPT:** [prompts/202609/master_ci_green_and_0_18_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/master_ci_green_and_0_18_release.md)
+- **BEAD:** [sase-1c1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1c1/README.md)
 
 # Plan: Green sase master CI and ship sase 0.18.0 to PyPI
 
