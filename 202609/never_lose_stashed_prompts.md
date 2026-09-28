@@ -1,75 +1,70 @@
 ---
 tier: epic
 title: Never lose stashed prompts
-goal: "A pytest process can never read or mutate the user's real prompt stash or
+goal: 'A pytest process can never read or mutate the user''s real prompt stash or
   history, every row that permanently leaves the prompt stash is archived first and
-  recoverable with `sase prompt stash-archive`, and the TUI's restore, stash-capture,
+  recoverable with `sase prompt stash-archive`, and the TUI''s restore, stash-capture,
   and quit paths can no longer silently drop a prompt draft.
 
-  "
+  '
 phases:
-  - id: seal-pytest-home
-    title: Seal pytest home isolation and remove the stash-popping test bug
-    depends_on: []
-    size: medium
-    description:
-      "seal-pytest-home: fix the monkeypatch.undo() test that popped the real stash,
-      remove every undo() on the shared monkeypatch fixture, add an undo-proof
-      session-level HOME/SASE_HOME sandbox, an AST guard test, a seal regression test,
-      and SASE_HOME forwarding for tmux-launched TUIs."
-  - id: guard-prompt-stores
-    title: Hard pytest boundary on the prompt stash and prompt history stores
-    depends_on: []
-    size: small
-    description:
-      "guard-prompt-stores: route every prompt_stash_facade read/mutation and every
-      prompt-history write through assert_test_state_write_isolated so pytest can never
-      touch the account's real prompts, with tests."
-  - id: core-stash-archive
-    title: sase-core append-only archive for every permanent stash removal
-    depends_on: []
-    size: medium
-    description:
-      "core-stash-archive: in the linked sase-core repo, archive (fsynced, fail-closed,
-      same lock) every popped, purged, evicted, and overwritten stash row before
-      rewriting the stash; add read_prompt_stash_archive and
-      recover_prompt_stash_archive bindings; fsync appends; tests."
-  - id: restore-capture-hardening
-    title: Restore and capture hardening in the TUI
-    depends_on: []
-    size: medium
-    description:
-      "restore-capture-hardening: restore loads from the pop outcome with fail-closed
-      reads and rollback, background stash-task failures are logged and toasted, failed
-      stash appends put the draft back in the bar, and @/q/Q are unavailable while a
-      prompt owns keys."
-  - id: quit-preserves-draft
-    title: Quitting the TUI stashes an open prompt draft
-    depends_on:
-      - restore-capture-hardening
-    size: small
-    description:
-      "quit-preserves-draft: generalize the pre-restart stash helper and call it on
-      explicit quit paths (source=quit), cancel the exit if the stash write fails,
-      mention the draft in the quit-confirm impact, with tests."
-  - id: stash-archive-recovery
-    title: Stash-archive recovery surface (CLI, TUI hints, docs) and core pin
-    depends_on:
-      - guard-prompt-stores
-      - core-stash-archive
-      - restore-capture-hardening
-    size: medium
-    description:
-      "stash-archive-recovery: bump the sase-core pin, add guarded archive facade
-      functions, the sase prompt stash-archive list/restore/show CLI, archive hints in
-      purge/evict/delete toasts, docs, and tests."
+- id: seal-pytest-home
+  title: Seal pytest home isolation and remove the stash-popping test bug
+  depends_on: []
+  size: medium
+  description: 'seal-pytest-home: fix the monkeypatch.undo() test that popped the
+    real stash, remove every undo() on the shared monkeypatch fixture, add an undo-proof
+    session-level HOME/SASE_HOME sandbox, an AST guard test, a seal regression test,
+    and SASE_HOME forwarding for tmux-launched TUIs.'
+- id: guard-prompt-stores
+  title: Hard pytest boundary on the prompt stash and prompt history stores
+  depends_on: []
+  size: small
+  description: 'guard-prompt-stores: route every prompt_stash_facade read/mutation
+    and every prompt-history write through assert_test_state_write_isolated so pytest
+    can never touch the account''s real prompts, with tests.'
+- id: core-stash-archive
+  title: sase-core append-only archive for every permanent stash removal
+  depends_on: []
+  size: medium
+  description: 'core-stash-archive: in the linked sase-core repo, archive (fsynced,
+    fail-closed, same lock) every popped, purged, evicted, and overwritten stash row
+    before rewriting the stash; add read_prompt_stash_archive and recover_prompt_stash_archive
+    bindings; fsync appends; tests.'
+- id: restore-capture-hardening
+  title: Restore and capture hardening in the TUI
+  depends_on: []
+  size: medium
+  description: 'restore-capture-hardening: restore loads from the pop outcome with
+    fail-closed reads and rollback, background stash-task failures are logged and
+    toasted, failed stash appends put the draft back in the bar, and @/q/Q are unavailable
+    while a prompt owns keys.'
+- id: quit-preserves-draft
+  title: Quitting the TUI stashes an open prompt draft
+  depends_on:
+  - restore-capture-hardening
+  size: small
+  description: 'quit-preserves-draft: generalize the pre-restart stash helper and
+    call it on explicit quit paths (source=quit), cancel the exit if the stash write
+    fails, mention the draft in the quit-confirm impact, with tests.'
+- id: stash-archive-recovery
+  title: Stash-archive recovery surface (CLI, TUI hints, docs) and core pin
+  depends_on:
+  - guard-prompt-stores
+  - core-stash-archive
+  - restore-capture-hardening
+  size: medium
+  description: 'stash-archive-recovery: bump the sase-core pin, add guarded archive
+    facade functions, the sase prompt stash-archive list/restore/show CLI, archive
+    hints in purge/evict/delete toasts, docs, and tests.'
 proposed_by: bbugyi200.athena.0tt.w0
 create_time: 2026-09-28 17:30:04
 status: wip
+bead_id: sase-1ca
 ---
 
-- **PROMPT:**
-  [prompts/202609/never_lose_stashed_prompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/never_lose_stashed_prompts.md)
+- **PROMPT:** [prompts/202609/never_lose_stashed_prompts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/never_lose_stashed_prompts.md)
+- **BEAD:** [sase-1ca](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ca/README.md)
 
 # Never lose stashed prompts: seal the pytest leak that deleted a real stash row, and make every stash removal recoverable
 
