@@ -74,7 +74,7 @@ phases:
     the docs, and records the glossary follow-up.'
 proposed_by: bbugyi200.apollo.2h
 create_time: 2026-09-27 17:33:06
-status: wip
+status: done
 bead_id: sase-1bn
 ---
 
