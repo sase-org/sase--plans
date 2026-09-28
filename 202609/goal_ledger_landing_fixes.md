@@ -1,43 +1,43 @@
 ---
 tier: epic
-title: "Goals G1 landing fixes: ledger correctness in sase-core and CLI honesty in sase"
-goal: "Every goal-ledger defect found while landing G1 (sase-1bu) is fixed and tested
+title: 'Goals G1 landing fixes: ledger correctness in sase-core and CLI honesty in
+  sase'
+goal: 'Every goal-ledger defect found while landing G1 (sase-1bu) is fixed and tested
   before the frozen contract ships. Actions on unknown ids refuse instead of minting
   phantom goals, criteria keep stable ids, one corrupt file never takes down the whole
   ledger, and the I/O probe proves what it claims. The `sase goal` CLI does what its
-  help says, and sase's core pin covers the fixes.
+  help says, and sase''s core pin covers the fixes.
 
-  "
+  '
 phases:
-  - id: core-fixes
-    title: Ledger correctness fixes in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-fixes: fix sase-core goal append/reduce/read/projection/doctor/probe defects
-      (unknown-id refusals, id normalization, stable criterion ids, criteria validation,
-      corrupt-file isolation, projection rebuild and header preservation, reopen/claim
-      reducer gaps, fixture and basis wire fidelity, a real I/O probe) with Rust tests."
-  - id: cli-fixes
-    title: CLI, reconcile, and pin fixes in sase
-    depends_on:
-      - core-fixes
-    size: medium
-    description:
-      "cli-fixes: ratchet the sase-core pin past core-fixes, then fix the sase goal CLI
-      (-x numbering, -s choices, cross-project ids, doctor context and wording), locked
-      reconcile commits, the acceptance test that leaks into the real SASE home, and a
-      stale docstring, with tests."
+- id: core-fixes
+  title: Ledger correctness fixes in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-fixes: fix sase-core goal append/reduce/read/projection/doctor/probe
+    defects (unknown-id refusals, id normalization, stable criterion ids, criteria
+    validation, corrupt-file isolation, projection rebuild and header preservation,
+    reopen/claim reducer gaps, fixture and basis wire fidelity, a real I/O probe)
+    with Rust tests.'
+- id: cli-fixes
+  title: CLI, reconcile, and pin fixes in sase
+  depends_on:
+  - core-fixes
+  size: medium
+  description: 'cli-fixes: ratchet the sase-core pin past core-fixes, then fix the
+    sase goal CLI (-x numbering, -s choices, cross-project ids, doctor context and
+    wording), locked reconcile commits, the acceptance test that leaks into the real
+    SASE home, and a stale docstring, with tests.'
 proposed_by: bbugyi200.athena.sase-1bu.land
 parent_bead: sase-1bu
 create_time: 2026-09-28 11:36:38
 status: wip
+bead_id: sase-1bu.8
 ---
 
-- **PROMPT:**
-  [prompts/202609/goal_ledger_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/goal_ledger_landing_fixes.md)
-- **PARENT:**
-  [202609/goal_ledger.md](https://github.com/sase-org/sase--plans/blob/main/202609/goal_ledger.md)
+- **PROMPT:** [prompts/202609/goal_ledger_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/goal_ledger_landing_fixes.md)
+- **PARENT:** [202609/goal_ledger.md](https://github.com/sase-org/sase--plans/blob/main/202609/goal_ledger.md)
+- **BEAD:** [sase-1bu.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bu/sase-1bu.8.md)
 
 # Goals G1 landing fixes
 
