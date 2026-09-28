@@ -59,7 +59,7 @@ phases:
     hints in purge/evict/delete toasts, docs, and tests.'
 proposed_by: bbugyi200.athena.0tt.w0
 create_time: 2026-09-28 17:30:04
-status: wip
+status: done
 bead_id: sase-1ca
 ---
 
