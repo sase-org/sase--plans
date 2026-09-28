@@ -86,7 +86,7 @@ phases:
     docs/goals.md and land the authorized memory updates.'
 proposed_by: bbugyi200.athena.0tb.w0
 create_time: 2026-09-27 19:03:14
-status: wip
+status: done
 bead_id: sase-1bu
 ---
 
