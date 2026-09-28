@@ -7,6 +7,12 @@ proposed_by: bbugyi200.athena.0tk
 status: done
 ---
 
+- **AGENTS:**
+  - [bbugyi200.athena.0tk](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0tk.md)
+- **COMMITS:**
+  - [5e5893e](https://github.com/bbugyi200/dotfiles/commit/5e5893e75fde998b4e05c8ad2c852551ab8aaa89)
+    — feat(athena): raise toobig_split queue capacity to 5
+
 # Plan: Raise toobig_split launch capacity to 5
 
 ## Outcome
