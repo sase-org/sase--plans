@@ -1,68 +1,63 @@
 ---
 tier: epic
-title:
-  "Agent tabs: repair the scope pipeline, tab switching, cross-tab jumps, and scope
-  wording"
-goal: "Fix the defects the sase-1bc.6.1 landing review found in the flagged agent-tabs
-  feature before that epic closes. Worker-path status overrides and the tab-index memo
-  work. A tab switch restores the target tab's own selection and focused panel. Emptied
-  machine tabs never strand the user. Every cross-tab jump records the right back-anchor
-  and restores the previous tab when its reveal fails. Bulk wording states the real
-  scope. The epic's public symbols pass symvision. With the `agent_tabs` flag off, the
-  TUI stays exactly as it was before agent tabs.
+title: 'Agent tabs: repair the scope pipeline, tab switching, cross-tab jumps, and
+  scope wording'
+goal: 'Fix the defects the sase-1bc.6.1 landing review found in the flagged agent-tabs
+  feature before that epic closes. Worker-path status overrides and the tab-index
+  memo work. A tab switch restores the target tab''s own selection and focused panel.
+  Emptied machine tabs never strand the user. Every cross-tab jump records the right
+  back-anchor and restores the previous tab when its reveal fails. Bulk wording states
+  the real scope. The epic''s public symbols pass symvision. With the `agent_tabs`
+  flag off, the TUI stays exactly as it was before agent tabs.
 
-  "
+  '
 phases:
-  - id: switch-pipeline-repairs
-    title: Scope pipeline, tab switch memory, catalog maintenance, and key yield fixes
-    depends_on: []
-    size: medium
-    description:
-      "switch-pipeline-repairs: apply worker-path status overrides over the
-      tab-independent query result; make the tab-index memo hit on an unchanged roster
-      without retaining old rosters; restore each tab's own row index, focused panel,
-      and scroll anchor; latch emptied machine tabs instead of stranding the user; fix
-      the doubled machine-gone toast glyph, the empty-first-catalog startup skip, and
-      the attention-tab choice; unbind only the colliding bracket key in the legacy
-      yield; hide the agent-tab help rows with the flag off."
-  - id: cross-tab-jump-repairs
-    title:
-      Back-anchors, failed-reveal restore, and fold-aware reveal for every cross-tab
-      jump
-    depends_on:
-      - switch-pipeline-repairs
-    size: medium
-    description:
-      "cross-tab-jump-repairs: save the back-anchor before switching tabs in
-      _try_reveal_agent_row; drop the notification pre-switch in favor of the Node
-      Finder ladder; route the run-log, revive, Files, and link-trail jumps through the
-      fold-expanding reveal with tab restore; restore the tab when a back-jump or a
-      last-launch reveal fails; make the ,j off-tab path reveal-aware; show the off-tab
-      chip on every off-tab Node Finder row; keep flag-off lookups unchanged; add tests
-      for every entry point."
-  - id: scope-wording-and-symbols
-    title: Honest marked and custom scope wording, docs accuracy, and symvision cleanup
-    depends_on:
-      - switch-pipeline-repairs
-      - cross-tab-jump-repairs
-    size: medium
-    description:
-      'scope-wording-and-symbols: count the "N of M marked agents are on other tabs"
-      line over one consistent set; make the custom cleanup header name the active tab;
-      correct the docs/ace.md agent-tabs note and the flag table wording; resolve every
-      symvision-flagged public symbol this epic added (privatize, delete, or re-key to a
-      still-open sase-1bc phase), so no agent-tabs symbol remains in the symvision
-      output.'
+- id: switch-pipeline-repairs
+  title: Scope pipeline, tab switch memory, catalog maintenance, and key yield fixes
+  depends_on: []
+  size: medium
+  description: 'switch-pipeline-repairs: apply worker-path status overrides over the
+    tab-independent query result; make the tab-index memo hit on an unchanged roster
+    without retaining old rosters; restore each tab''s own row index, focused panel,
+    and scroll anchor; latch emptied machine tabs instead of stranding the user; fix
+    the doubled machine-gone toast glyph, the empty-first-catalog startup skip, and
+    the attention-tab choice; unbind only the colliding bracket key in the legacy
+    yield; hide the agent-tab help rows with the flag off.'
+- id: cross-tab-jump-repairs
+  title: Back-anchors, failed-reveal restore, and fold-aware reveal for every cross-tab
+    jump
+  depends_on:
+  - switch-pipeline-repairs
+  size: medium
+  description: 'cross-tab-jump-repairs: save the back-anchor before switching tabs
+    in _try_reveal_agent_row; drop the notification pre-switch in favor of the Node
+    Finder ladder; route the run-log, revive, Files, and link-trail jumps through
+    the fold-expanding reveal with tab restore; restore the tab when a back-jump or
+    a last-launch reveal fails; make the ,j off-tab path reveal-aware; show the off-tab
+    chip on every off-tab Node Finder row; keep flag-off lookups unchanged; add tests
+    for every entry point.'
+- id: scope-wording-and-symbols
+  title: Honest marked and custom scope wording, docs accuracy, and symvision cleanup
+  depends_on:
+  - switch-pipeline-repairs
+  - cross-tab-jump-repairs
+  size: medium
+  description: 'scope-wording-and-symbols: count the "N of M marked agents are on
+    other tabs" line over one consistent set; make the custom cleanup header name
+    the active tab; correct the docs/ace.md agent-tabs note and the flag table wording;
+    resolve every symvision-flagged public symbol this epic added (privatize, delete,
+    or re-key to a still-open sase-1bc phase), so no agent-tabs symbol remains in
+    the symvision output.'
 parent_bead: sase-1bc.6.1
 proposed_by: bbugyi200.athena.sase-1bc.6.1.land
 create_time: 2026-09-27 20:11:03
 status: wip
+bead_id: sase-1bc.6.1.6
 ---
 
-- **PROMPT:**
-  [prompts/202609/agent_tabs_scope_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_tabs_scope_repairs.md)
-- **PARENT:**
-  [202609/agent_tabs_scope.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_tabs_scope.md)
+- **PROMPT:** [prompts/202609/agent_tabs_scope_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/agent_tabs_scope_repairs.md)
+- **PARENT:** [202609/agent_tabs_scope.md](https://github.com/sase-org/sase--plans/blob/main/202609/agent_tabs_scope.md)
+- **BEAD:** [sase-1bc.6.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bc/sase-1bc.6.1.6.md)
 
 # Plan: repair the agent-tabs scope, switching, jumps, and wording
 
