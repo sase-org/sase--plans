@@ -2,8 +2,9 @@
 tier: tale
 size: medium
 title: Finish and land the Agents node rail epic (sase-1bn)
-goal: The last epic-caused node-rail and zoom gaps are fixed and tested, and epic
-  sase-1bn is closed with a clean symvision whitelist and its plan marked done.
+goal:
+  The last epic-caused node-rail and zoom gaps are fixed and tested, and epic sase-1bn
+  is closed with a clean symvision whitelist and its plan marked done.
 proposed_by: bbugyi200.apollo.sase-1bn.land
 bead: sase-1bn
 status: done
@@ -13,6 +14,11 @@ status: done
   [202609/agents_node_rail_and_zoom.md](https://github.com/sase-org/sase--plans/blob/main/202609/agents_node_rail_and_zoom.md)
 - **BEAD:**
   [sase-1bn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bn/README.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-1bn.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1bn.land.md)
+- **COMMITS:**
+  - [f176ada](https://github.com/sase-org/sase/commit/f176ada71dd677e2d3fdc669d16065b3e5b232a9)
+    — fix(ace-tui): land the remaining node-rail epic gaps (sase-1bn)
 
 # Plan: Finish and land the Agents node rail epic (sase-1bn)
 
