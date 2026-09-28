@@ -2,11 +2,10 @@
 tier: tale
 size: small
 title: Finish and land epic sase-1bf (bounded agent scratch)
-goal:
-  "The epic-caused leftovers are fixed: zombies no longer make launch-scratch liveness
-  incomplete, nested registered roots no longer double-reap or double-count, and the CI
-  core pin builds managed-tmp wire 4. Then epic sase-1bf is verified, closed, and its
-  plan is marked done."
+goal: 'The epic-caused leftovers are fixed: zombies no longer make launch-scratch
+  liveness incomplete, nested registered roots no longer double-reap or double-count,
+  and the CI core pin builds managed-tmp wire 4. Then epic sase-1bf is verified, closed,
+  and its plan is marked done.'
 proposed_by: bbugyi200.apollo.sase-1bf.land
 bead: sase-1bf
 status: done
@@ -16,11 +15,6 @@ status: done
   [202609/bounded_agent_scratch.md](https://github.com/sase-org/sase--plans/blob/main/202609/bounded_agent_scratch.md)
 - **BEAD:**
   [sase-1bf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1bf/README.md)
-- **AGENTS:**
-  - [bbugyi200.apollo.sase-1bf.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1bf.land.md)
-- **COMMITS:**
-  - [241af2f](https://github.com/sase-org/sase/commit/241af2fd8dec897b4596dcd9307fb08090df1cf7)
-    — fix(managed-tmp): fold nested registered roots and ratchet the core pin
 
 # Plan: Finish and land epic sase-1bf (bounded agent scratch)
 
