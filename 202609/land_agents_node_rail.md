@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Finish and land the Agents node rail epic (sase-1bn)
-goal:
-  The last epic-caused node-rail and zoom gaps are fixed and tested, and epic sase-1bn
-  is closed with a clean symvision whitelist and its plan marked done.
+goal: The last epic-caused node-rail and zoom gaps are fixed and tested, and epic
+  sase-1bn is closed with a clean symvision whitelist and its plan marked done.
 proposed_by: bbugyi200.apollo.sase-1bn.land
 bead: sase-1bn
-create_time: 2026-09-28 00:18:54
-status: wip
+status: done
 ---
 
 - **PARENT:**
