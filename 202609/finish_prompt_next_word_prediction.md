@@ -1,76 +1,71 @@
 ---
 tier: epic
 title: Finish next-word prediction correctness, budgets, and calibration
-goal: "The next-word prediction feature from epic sase-1cj meets its own contract. The
-  core blocks every structural tail, including `%{...}` alternation. Support counts and
-  confidence presets are honest and calibrated. Predict meets the p95 ≤ 0.5 ms local
-  budget on real history. The TUI ghost never goes stale or inserts in the wrong place.
-  The missing goldens, the archive default decision, and the epic-symbol cleanup are
-  done, so sase-1cj can close.
+goal: 'The next-word prediction feature from epic sase-1cj meets its own contract.
+  The core blocks every structural tail, including `%{...}` alternation. Support counts
+  and confidence presets are honest and calibrated. Predict meets the p95 ≤ 0.5 ms
+  local budget on real history. The TUI ghost never goes stale or inserts in the wrong
+  place. The missing goldens, the archive default decision, and the epic-symbol cleanup
+  are done, so sase-1cj can close.
 
-  "
+  '
 phases:
-  - id: core-correctness
-    title: Core tokenizer, support, and origin correctness in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-correctness: block structural and alternation tails at query time, treat
-      alternation spans as excluded regions, count support once per row instead of
-      adding project partitions, replace the invented origin markers with a real
-      inventory, make casing canonicalization deterministic, and add the missing gate,
-      blocked-context, and boundary tests."
-  - id: tui-fixes
-    title: TUI ghost, ranking gate, warm-cache fixes, and epic-symbol cleanup
-    depends_on: []
-    size: medium
-    description:
-      "tui-fixes: clear the stale Textual suggestion whenever the ghost is invalidated,
-      gate context promotion on word_ranking smart, stop the archive and empty-history
-      rebuild loops, recompile on deletions-only changes, repair the three red next-word
-      tests with a sturdier fixture corpus, and retire all twelve sase-1cj epic-symbol
-      whitelist entries."
-  - id: core-perf
-    title: Meet the prompt prediction latency, compile, and memory budgets
-    depends_on:
-      - core-correctness
-    size: medium
-    description:
-      "core-perf: make the perf test representative, measure production predict on real
-      history, and optimize the corpus layout and predict path until p95, compile time,
-      and corpus bytes meet their budgets, with identical results."
-  - id: recalibrate
-    title: Recalibrate presets and settle the archive default
-    depends_on:
-      - core-correctness
-      - core-perf
-      - tui-fixes
-    size: medium
-    description:
-      "recalibrate: re-run the prequential replay under the corrected support semantics,
-      recalibrate balanced and eager, make cautious measurably stricter than balanced,
-      finish the history-plus-archive comparison and RSS measurement, and record all
-      numbers."
-  - id: visual-verify
-    title: Goldens, live screenshots, and docs
-    depends_on:
-      - tui-fixes
-      - recalibrate
-    size: small
-    description:
-      "visual-verify: add the context-ranking and auto-mode goldens, re-verify the
-      next-word goldens after recalibration, capture the live Ctrl+T chain flow, promote
-      the docs to a real subsection, and run the final check."
+- id: core-correctness
+  title: Core tokenizer, support, and origin correctness in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-correctness: block structural and alternation tails at query
+    time, treat alternation spans as excluded regions, count support once per row
+    instead of adding project partitions, replace the invented origin markers with
+    a real inventory, make casing canonicalization deterministic, and add the missing
+    gate, blocked-context, and boundary tests.'
+- id: tui-fixes
+  title: TUI ghost, ranking gate, warm-cache fixes, and epic-symbol cleanup
+  depends_on: []
+  size: medium
+  description: 'tui-fixes: clear the stale Textual suggestion whenever the ghost is
+    invalidated, gate context promotion on word_ranking smart, stop the archive and
+    empty-history rebuild loops, recompile on deletions-only changes, repair the three
+    red next-word tests with a sturdier fixture corpus, and retire all twelve sase-1cj
+    epic-symbol whitelist entries.'
+- id: core-perf
+  title: Meet the prompt prediction latency, compile, and memory budgets
+  depends_on:
+  - core-correctness
+  size: medium
+  description: 'core-perf: make the perf test representative, measure production predict
+    on real history, and optimize the corpus layout and predict path until p95, compile
+    time, and corpus bytes meet their budgets, with identical results.'
+- id: recalibrate
+  title: Recalibrate presets and settle the archive default
+  depends_on:
+  - core-correctness
+  - core-perf
+  - tui-fixes
+  size: medium
+  description: 'recalibrate: re-run the prequential replay under the corrected support
+    semantics, recalibrate balanced and eager, make cautious measurably stricter than
+    balanced, finish the history-plus-archive comparison and RSS measurement, and
+    record all numbers.'
+- id: visual-verify
+  title: Goldens, live screenshots, and docs
+  depends_on:
+  - tui-fixes
+  - recalibrate
+  size: small
+  description: 'visual-verify: add the context-ranking and auto-mode goldens, re-verify
+    the next-word goldens after recalibration, capture the live Ctrl+T chain flow,
+    promote the docs to a real subsection, and run the final check.'
 proposed_by: bbugyi200.athena.sase-1cj.land
 parent_bead: sase-1cj
 create_time: 2026-09-29 18:29:10
 status: wip
+bead_id: sase-1cj.12
 ---
 
-- **PROMPT:**
-  [prompts/202609/finish_prompt_next_word_prediction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_prompt_next_word_prediction.md)
-- **PARENT:**
-  [202609/prompt_next_word_prediction.md](https://github.com/sase-org/sase--plans/blob/main/202609/prompt_next_word_prediction.md)
+- **PROMPT:** [prompts/202609/finish_prompt_next_word_prediction.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/finish_prompt_next_word_prediction.md)
+- **PARENT:** [202609/prompt_next_word_prediction.md](https://github.com/sase-org/sase--plans/blob/main/202609/prompt_next_word_prediction.md)
+- **BEAD:** [sase-1cj.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cj/sase-1cj.12.md)
 
 # Plan: Finish next-word prediction correctness, budgets, and calibration
 
