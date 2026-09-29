@@ -1,58 +1,53 @@
 ---
 tier: epic
 title: Private attachment sidecar and shared store
-goal:
-  Bead note attachments of at most the git tier are stored in a private
-  attachments-private sidecar, uploaded before the bead store is published, and fetched
-  on demand with honest availability badges. A missing store or an explicit local-only
-  choice keeps the bytes on this machine and says so.
+goal: Bead note attachments of at most the git tier are stored in a private attachments-private
+  sidecar, uploaded before the bead store is published, and fetched on demand with
+  honest availability badges. A missing store or an explicit local-only choice keeps
+  the bytes on this machine and says so.
 phases:
-  - id: sidecar_role
-    title: Reserve the hidden private attachments-private sidecar
-    depends_on: []
-    size: medium
-    description:
-      "sidecar_role: reserve the attachments-private sidecar role (repo
-      <project>--attachments-private) as a hidden bare partial clone with
-      default-private visibility, a default-no repo-init consent prompt, and a sase-side
-      preflight test. Do not create GitHub repos or reserve the plain attachments name."
-  - id: git_store
-    title: Git blob store written with plumbing
-    depends_on: []
-    size: medium
-    description:
-      "git_store: add GitAttachmentStore, a BlobStore over a bare partial clone that
-      puts, checks, and fetches content-addressed objects with git plumbing, a writer
-      lock, bounded fetch, and digest verification."
-  - id: upload
-    title: Placement, pre-publication upload, and outbox
-    depends_on:
-      - sidecar_role
-      - git_store
-    size: medium
-    description:
-      "upload: place attachments with core policy and -L/--local-only, upload after the
-      bead commit and before bead publication, and persist a durable outbox that
-      attachment push and bead sync can drain."
-  - id: fetch
-    title: Lazy fetch, availability badges, and doctor
-    depends_on:
-      - upload
-    size: medium
-    description:
-      "fetch: lazily fetch under the auto-fetch cap for read, show, and path, render
-      every availability badge, and add a sase doctor check for store reachability and
-      outbox backlog."
+- id: sidecar_role
+  title: Reserve the hidden private attachments-private sidecar
+  depends_on: []
+  size: medium
+  description: 'sidecar_role: reserve the attachments-private sidecar role (repo <project>--attachments-private)
+    as a hidden bare partial clone with default-private visibility, a default-no repo-init
+    consent prompt, and a sase-side preflight test. Do not create GitHub repos or
+    reserve the plain attachments name.'
+- id: git_store
+  title: Git blob store written with plumbing
+  depends_on: []
+  size: medium
+  description: 'git_store: add GitAttachmentStore, a BlobStore over a bare partial
+    clone that puts, checks, and fetches content-addressed objects with git plumbing,
+    a writer lock, bounded fetch, and digest verification.'
+- id: upload
+  title: Placement, pre-publication upload, and outbox
+  depends_on:
+  - sidecar_role
+  - git_store
+  size: medium
+  description: 'upload: place attachments with core policy and -L/--local-only, upload
+    after the bead commit and before bead publication, and persist a durable outbox
+    that attachment push and bead sync can drain.'
+- id: fetch
+  title: Lazy fetch, availability badges, and doctor
+  depends_on:
+  - upload
+  size: medium
+  description: 'fetch: lazily fetch under the auto-fetch cap for read, show, and path,
+    render every availability badge, and add a sase doctor check for store reachability
+    and outbox backlog.'
 proposed_by: bbugyi200.athena.sase-1ck.5
 parent_bead: sase-1ck.5
 create_time: 2026-09-29 17:24:30
 status: wip
+bead_id: sase-1ck.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/private_attachment_store.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/private_attachment_store.md)
-- **PARENT:**
-  [202609/bead_note_attachments.md](https://github.com/sase-org/sase--plans/blob/main/202609/bead_note_attachments.md)
+- **PROMPT:** [prompts/202609/private_attachment_store.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/private_attachment_store.md)
+- **PARENT:** [202609/bead_note_attachments.md](https://github.com/sase-org/sase--plans/blob/main/202609/bead_note_attachments.md)
+- **BEAD:** [sase-1ck.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ck/sase-1ck.5.1.md)
 
 # Plan: Private attachment sidecar and shared store
 
