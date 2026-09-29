@@ -32,7 +32,7 @@ phases:
     for their own host commit.'
 proposed_by: bbugyi200.athena.0u6
 create_time: 2026-09-29 17:21:17
-status: wip
+status: done
 bead_id: sase-1cq
 ---
 
