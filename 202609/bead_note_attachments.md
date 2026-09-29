@@ -49,10 +49,11 @@ phases:
   depends_on:
   - note_cli
   size: large
-  description: 'shared_store: add the reserved private attachments sidecar role (a
-    hidden bare partial clone), the git BlobStore written with plumbing, and placement
-    with explicit -L local-only. Add pre-publication uploads with an outbox fallback,
-    capped lazy fetch, availability badges, attachment push, and a doctor check.'
+  description: 'shared_store: add the reserved private attachments-private sidecar role
+    (repo <project>--attachments-private, a hidden bare partial clone), the git BlobStore
+    written with plumbing, and placement with explicit -L local-only. Add pre-publication
+    uploads with an outbox fallback, capped lazy fetch, availability badges, attachment
+    push, and a doctor check.'
 - id: large_files
   title: Large-file store, background uploads, and progress
   depends_on:
@@ -177,7 +178,7 @@ These refine the literal request. Each choice is deliberate, and the reason is g
    and a verb reads better and takes stdin.
 5. **Snapshot on write, bytes outside the bead store.** A one-pass streaming ingest
    writes into a local CAS before the event is appended. Bytes are then shared through a
-   **private `attachments` sidecar**: a private git repo, held on each machine as a
+   **private `attachments-private` sidecar**: a private git repo, held on each machine as a
    hidden bare partial clone, for objects up to 50 MiB. An optional **rclone large
    store** takes objects above that. Keeping bytes on one machine only is an **explicit,
    badged choice** (`-L/--local-only`).
@@ -369,8 +370,8 @@ Write echo (stderr; plain for agents):
 
 ```text
 $ sase bead note ab "Crash right after login @./shots/login.png — log: @/tmp/crash.log"
-  🖼 login.png  image/png · 1280×720 · 184 KiB   ⇡ sase-org/sase--attachments (private) 0.8s
-  ≡ crash.log   text/plain · 2.1 MiB             ⇡ sase-org/sase--attachments (private) 0.4s
+  🖼 login.png  image/png · 1280×720 · 184 KiB   ⇡ sase-org/sase--attachments-private (private) 0.8s
+  ≡ crash.log   text/plain · 2.1 MiB             ⇡ sase-org/sase--attachments-private (private) 0.4s
 Noted: sase-ab — Login crashes on fresh profile  (#3 · 📎 2)
 ```
 
@@ -637,18 +638,32 @@ path behind the flag.
 
 ## Phase 5: `shared_store`
 
-- **Reserved sidecar role `attachments`:**
+> Amendment (2026-09-29): the reserved role is `attachments-private` per
+> `research:202609/bead_attachment_audience/bead_attachment_audience.md` §8. The plain
+> `attachments` name stays free for a future public store.
+
+- **Reserved sidecar role `attachments-private`:**
   - Add it to the schema enum and `RESERVED_SIDECAR_ROLES`, with default
-    `visibility: private`.
+    `visibility: private`, exposed as e.g. `ATTACHMENTS_PRIVATE_SIDECAR_ROLE`.
   - It is never cloned into workspaces.
   - Its clone is a **bare partial clone** (`git clone --bare --filter=blob:none`) at
-    `hidden_sidecar_clone_dir(project_key, "attachments")`, and it is shown by
+    `hidden_sidecar_clone_dir(project_key, "attachments-private")`, and it is shown by
     `sase repo list`.
   - `sase repo init` offers creation behind a default-no consent prompt that names the
     visibility (mirror `_confirm_agents_sidecar_creation`).
   - **Phases never create real GitHub repositories.** Tests use local bare remotes with
-    `uploadpack.allowFilter=true`. Creating `sase-org/sase--attachments` is a user step
+    `uploadpack.allowFilter=true`. Creating `sase-org/sase--attachments-private` is a user step
     through `sase repo init`.
+  - Don't reserve the plain `attachments` role. It is held for the follow-up
+    public-attachments epic.
+  - The role key is hyphenated because repos derive as `<project>--<role>` and the
+    GitHub provider accepts only `[a-z0-9-]` suffixes.
+  - sase-github now honors `sdd_visibility` (landed separately under this amendment),
+    so this phase doesn't change sase-github. Add a sase-side `preflight_sidecars`
+    test: a fake provider that reports `private` for a `visibility: private` role
+    passes, and one that still reports `public` fails closed.
+  - Keep the store private-only in this epic. Add no `visibility` descriptor field and
+    no public default.
 - **`GitAttachmentStore` (BlobStore):**
   - **has:** looks up the cached remote-tracking tree. Refresh with at most one bounded
     `git fetch` per process, with a timeout.
