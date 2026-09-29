@@ -1,69 +1,66 @@
 ---
 tier: epic
 title: Mid-word alternation (%{...}) everywhere
-goal: "`%{a | b}` fans out, highlights, and edits the same way wherever it appears: at a
-  word boundary, in the middle of a word (`foo%{bar | baz}qux`), right after
-  punctuation, or nested inside another branch. One Rust-owned scanner feeds launch, the
-  TUI prompt input, and the xprompt LSP, and nothing is added to the per-keystroke cost
-  of typing.
+goal: '`%{a | b}` fans out, highlights, and edits the same way wherever it appears:
+  at a word boundary, in the middle of a word (`foo%{bar | baz}qux`), right after
+  punctuation, or nested inside another branch. One Rust-owned scanner feeds launch,
+  the TUI prompt input, and the xprompt LSP, and nothing is added to the per-keystroke
+  cost of typing.
 
-  "
+  '
 phases:
-  - id: core-grammar
-    title: Core launch grammar for mid-word and nested alternation
-    depends_on: []
-    size: medium
-    description:
-      "core-grammar: in sase-core, let `%{` open anywhere outside literal zones while
-      `%(`/`%alt(` keep the boundary rule. Also fix the nested-alternation panic, keep
-      glued `%` directives parseable, stop the model shortcut gluing onto an opener, and
-      add tests."
-  - id: core-scan-lsp
-    title: Shared alternation scanner, Python binding, and LSP highlighting
-    depends_on:
-      - core-grammar
-    size: medium
-    description:
-      "core-scan-lsp: in sase-core, add one alternation scanner with its wire record and
-      a code-point-offset Python binding. Add an unclosed-alternation editor diagnostic
-      and xprompt LSP semantic tokens with new stable modifiers, plus unit and JSON-RPC
-      tests."
-  - id: sase-grammar-highlight
-    title: sase grammar mirror, highlight adapter, pin, and docs
-    depends_on:
-      - core-scan-lsp
-    size: medium
-    description:
-      "sase-grammar-highlight: in sase, bump the core pin, relax `_ALT_DIRECTIVE_RE` for
-      the brace form, and turn `alt_inspect.tokenize` into a memoized thin adapter over
-      the binding. Also route project-tag alt groups through that adapter, add
-      correctness and performance tests, and document the rule in `docs/xprompt.md`."
-  - id: tui-alt-editing
-    title: TUI prompt input editing for mid-word alternation
-    depends_on:
-      - sase-grammar-highlight
-    size: medium
-    description:
-      "tui-alt-editing: in sase, make brace padding and `|` separator normalization
-      recognize mid-word openers. Ignore openers in literal zones, keep an unclosed span
-      to its own line, and let the innermost nested span win. Stop Jinja auto-pairing
-      right after `%{`, then update tests and `docs/ace.md`."
-  - id: nvim-lsp-highlight
-    title: sase-nvim alternation highlighting from LSP tokens
-    depends_on:
-      - core-scan-lsp
-    size: medium
-    description:
-      "nvim-lsp-highlight: in sase-nvim, replace the Lua copy of the alternation grammar
-      with an overlay driven by LSP semantic tokens that keeps the `SaseAlt*` groups.
-      Apply the new opener rule to `alt_edit.lua`, and update the tests and the README."
+- id: core-grammar
+  title: Core launch grammar for mid-word and nested alternation
+  depends_on: []
+  size: medium
+  description: 'core-grammar: in sase-core, let `%{` open anywhere outside literal
+    zones while `%(`/`%alt(` keep the boundary rule. Also fix the nested-alternation
+    panic, keep glued `%` directives parseable, stop the model shortcut gluing onto
+    an opener, and add tests.'
+- id: core-scan-lsp
+  title: Shared alternation scanner, Python binding, and LSP highlighting
+  depends_on:
+  - core-grammar
+  size: medium
+  description: 'core-scan-lsp: in sase-core, add one alternation scanner with its
+    wire record and a code-point-offset Python binding. Add an unclosed-alternation
+    editor diagnostic and xprompt LSP semantic tokens with new stable modifiers, plus
+    unit and JSON-RPC tests.'
+- id: sase-grammar-highlight
+  title: sase grammar mirror, highlight adapter, pin, and docs
+  depends_on:
+  - core-scan-lsp
+  size: medium
+  description: 'sase-grammar-highlight: in sase, bump the core pin, relax `_ALT_DIRECTIVE_RE`
+    for the brace form, and turn `alt_inspect.tokenize` into a memoized thin adapter
+    over the binding. Also route project-tag alt groups through that adapter, add
+    correctness and performance tests, and document the rule in `docs/xprompt.md`.'
+- id: tui-alt-editing
+  title: TUI prompt input editing for mid-word alternation
+  depends_on:
+  - sase-grammar-highlight
+  size: medium
+  description: 'tui-alt-editing: in sase, make brace padding and `|` separator normalization
+    recognize mid-word openers. Ignore openers in literal zones, keep an unclosed
+    span to its own line, and let the innermost nested span win. Stop Jinja auto-pairing
+    right after `%{`, then update tests and `docs/ace.md`.'
+- id: nvim-lsp-highlight
+  title: sase-nvim alternation highlighting from LSP tokens
+  depends_on:
+  - core-scan-lsp
+  size: medium
+  description: 'nvim-lsp-highlight: in sase-nvim, replace the Lua copy of the alternation
+    grammar with an overlay driven by LSP semantic tokens that keeps the `SaseAlt*`
+    groups. Apply the new opener rule to `alt_edit.lua`, and update the tests and
+    the README.'
 proposed_by: bbugyi200.athena.0u1
 create_time: 2026-09-29 16:21:59
 status: wip
+bead_id: sase-1co
 ---
 
-- **PROMPT:**
-  [prompts/202609/midword_alternation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/midword_alternation.md)
+- **PROMPT:** [prompts/202609/midword_alternation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/midword_alternation.md)
+- **BEAD:** [sase-1co](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1co/README.md)
 
 # Plan: Mid-word alternation (`%{...}`) everywhere
 
