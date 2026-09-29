@@ -1,59 +1,56 @@
 ---
 tier: epic
 title: Mechanical inline-vs-monitor routing for sase tool run
-goal: "Every provider adapter that has a hard synchronous-command ceiling exports it as
-  SASE_PROVIDER_SYNC_CEILING_SECONDS. Every tool catalog entry has a Rust-validated
-  duration class (short, long, or unbounded). Before starting anything, sase tool run
-  refuses an agent's inline run of a tool whose class floor meets that ceiling, and
-  prints the exact monitor command to use instead. `check` keeps running inline, no
-  existing definition digest moves, and sase-17e is closed.
+goal: 'Every provider adapter that has a hard synchronous-command ceiling exports
+  it as SASE_PROVIDER_SYNC_CEILING_SECONDS. Every tool catalog entry has a Rust-validated
+  duration class (short, long, or unbounded). Before starting anything, sase tool
+  run refuses an agent''s inline run of a tool whose class floor meets that ceiling,
+  and prints the exact monitor command to use instead. `check` keeps running inline,
+  no existing definition digest moves, and sase-17e is closed.
 
-  "
+  '
 phases:
-  - id: core-duration-class
-    title: Rust duration class, inline fit, and calibration
-    depends_on: []
-    size: medium
-    description:
-      "core-duration-class: in sase-core, add the optional duration_class catalog field
-      (validated, excluded from the definition digest), the class-floor table, and the
-      fit and calibration functions with PyO3 bindings and tests."
-  - id: provider-ceiling
-    title: Provider adapters export their synchronous ceiling
-    depends_on: []
-    size: small
-    description:
-      "provider-ceiling: add an optional provider hook for the hard synchronous-command
-      ceiling (Muse 600 s with the synchronous shell, Claude from BASH_MAX_TIMEOUT_MS),
-      export it around every provider invocation, and scrub it at agent, monitor, and
-      proc boundaries."
-  - id: catalog-duration-class
-    title: Pin the core, declare classes, and show them in sase tool list
-    depends_on:
-      - core-duration-class
-    size: medium
-    description:
-      "catalog-duration-class: ratchet the sase-core pin, add the Python facades,
-      declare check-full as long in sase/sase.yml using corpus evidence, and add a CLASS
-      column plus calibration diagnostics to sase tool list, with docs."
-  - id: ceiling-refusal
-    title: sase tool run refuses inline runs that cannot fit
-    depends_on:
-      - provider-ceiling
-      - catalog-duration-class
-    size: medium
-    description:
-      "ceiling-refusal: before any reconcile, reservation, or spawn, refuse an agent's
-      inline named-tool run whose class floor meets the exported ceiling (exit 2), print
-      the monitor and prepared-completion forms, and update tests, docs, and the
-      sase_monitor skill source."
+- id: core-duration-class
+  title: Rust duration class, inline fit, and calibration
+  depends_on: []
+  size: medium
+  description: 'core-duration-class: in sase-core, add the optional duration_class
+    catalog field (validated, excluded from the definition digest), the class-floor
+    table, and the fit and calibration functions with PyO3 bindings and tests.'
+- id: provider-ceiling
+  title: Provider adapters export their synchronous ceiling
+  depends_on: []
+  size: small
+  description: 'provider-ceiling: add an optional provider hook for the hard synchronous-command
+    ceiling (Muse 600 s with the synchronous shell, Claude from BASH_MAX_TIMEOUT_MS),
+    export it around every provider invocation, and scrub it at agent, monitor, and
+    proc boundaries.'
+- id: catalog-duration-class
+  title: Pin the core, declare classes, and show them in sase tool list
+  depends_on:
+  - core-duration-class
+  size: medium
+  description: 'catalog-duration-class: ratchet the sase-core pin, add the Python
+    facades, declare check-full as long in sase/sase.yml using corpus evidence, and
+    add a CLASS column plus calibration diagnostics to sase tool list, with docs.'
+- id: ceiling-refusal
+  title: sase tool run refuses inline runs that cannot fit
+  depends_on:
+  - provider-ceiling
+  - catalog-duration-class
+  size: medium
+  description: 'ceiling-refusal: before any reconcile, reservation, or spawn, refuse
+    an agent''s inline named-tool run whose class floor meets the exported ceiling
+    (exit 2), print the monitor and prepared-completion forms, and update tests, docs,
+    and the sase_monitor skill source.'
 proposed_by: bbugyi200.athena.0u2
 create_time: 2026-09-29 16:47:55
 status: wip
+bead_id: sase-1cp
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_inline_routing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_inline_routing.md)
+- **PROMPT:** [prompts/202609/tool_inline_routing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_inline_routing.md)
+- **BEAD:** [sase-1cp](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cp/README.md)
 
 <!-- sase:links:start -->
 
