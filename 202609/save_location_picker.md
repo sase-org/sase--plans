@@ -1,49 +1,47 @@
 ---
 tier: epic
 title: Location-first picker for new mini-xprompts and snippets
-goal: "Opening a mini-xprompt (Ctrl+G Ctrl+X, Ctrl+G x, gx) or snippet (Ctrl+G Ctrl+T,
-  Ctrl+G t, gt) target pane first shows a fast location picker. One keypress chooses the
-  file or directory that will store it, and Enter accepts a default whose reason is
-  shown. The name step then shows the chosen location and can go back to change it. Keys
-  typed while the picker is still loading are kept and applied, never dropped or sent to
-  the prompt pane.
+goal: 'Opening a mini-xprompt (Ctrl+G Ctrl+X, Ctrl+G x, gx) or snippet (Ctrl+G Ctrl+T,
+  Ctrl+G t, gt) target pane first shows a fast location picker. One keypress chooses
+  the file or directory that will store it, and Enter accepts a default whose reason
+  is shown. The name step then shows the chosen location and can go back to change
+  it. Keys typed while the picker is still loading are kept and applied, never dropped
+  or sent to the prompt pane.
 
-  "
+  '
 phases:
-  - id: picker
-    title: Shared save-location picker modal and choice model
-    depends_on: []
-    size: medium
-    description:
-      "picker: build the pure choice builders (hotkeys, default rules, badges, previews)
-      and the SaveLocationPickerModal with loading and type-ahead support, CSS, docs
-      section, unit tests, and PNG snapshots."
-  - id: xprompt-flow
-    title: Mini-xprompt location-first flow
-    depends_on:
-      - picker
-    size: medium
-    description:
-      "xprompt-flow: route the mini-xprompt request through the picker, lock the
-      destination in MiniXPromptNameModal with a Shift+Tab back step and namespace
-      seeding, retire the old destination cycling, update tests, snapshots, and the
-      mini-xprompt docs paragraph."
-  - id: snippet-flow
-    title: Snippet location-first flow and Ctrl+G Ctrl+T alias
-    depends_on:
-      - picker
-    size: medium
-    description:
-      "snippet-flow: add the Ctrl+G Ctrl+T alias, route the snippet request through the
-      picker, lock the destination in SnippetNameModal with arrows moving matches and
-      Shift+Tab going back, update tests, snapshots, help, and snippet docs."
+- id: picker
+  title: Shared save-location picker modal and choice model
+  depends_on: []
+  size: medium
+  description: 'picker: build the pure choice builders (hotkeys, default rules, badges,
+    previews) and the SaveLocationPickerModal with loading and type-ahead support,
+    CSS, docs section, unit tests, and PNG snapshots.'
+- id: xprompt-flow
+  title: Mini-xprompt location-first flow
+  depends_on:
+  - picker
+  size: medium
+  description: 'xprompt-flow: route the mini-xprompt request through the picker, lock
+    the destination in MiniXPromptNameModal with a Shift+Tab back step and namespace
+    seeding, retire the old destination cycling, update tests, snapshots, and the
+    mini-xprompt docs paragraph.'
+- id: snippet-flow
+  title: Snippet location-first flow and Ctrl+G Ctrl+T alias
+  depends_on:
+  - picker
+  size: medium
+  description: 'snippet-flow: add the Ctrl+G Ctrl+T alias, route the snippet request
+    through the picker, lock the destination in SnippetNameModal with arrows moving
+    matches and Shift+Tab going back, update tests, snapshots, help, and snippet docs.'
 proposed_by: bbugyi200.athena.0u8
 create_time: 2026-09-29 18:58:43
 status: wip
+bead_id: sase-1cu
 ---
 
-- **PROMPT:**
-  [prompts/202609/save_location_picker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/save_location_picker.md)
+- **PROMPT:** [prompts/202609/save_location_picker.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/save_location_picker.md)
+- **BEAD:** [sase-1cu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cu/README.md)
 
 # Plan: Location-first picker for new mini-xprompts and snippets
 
