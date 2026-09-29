@@ -1,13 +1,22 @@
 ---
 tier: tale
 title: Fix sase-core macOS CI by making goal-ledger id-normalization tests case-portable
-goal: sase-core CI (cargo test on macos-latest) passes again on master and on the
-  release-plz v0.36.1 PR, and the goal-ledger normalization tests prove the same property
-  on case-insensitive and case-sensitive filesystems without weakening any assertion.
+goal:
+  sase-core CI (cargo test on macos-latest) passes again on master and on the
+  release-plz v0.36.1 PR, and the goal-ledger normalization tests prove the same
+  property on case-insensitive and case-sensitive filesystems without weakening any
+  assertion.
 size: small
 proposed_by: bbugyi200.athena.0tw
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0tw](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0tw.md)
+- **COMMITS:**
+  - [05cc860](https://github.com/sase-org/sase-core/commit/05cc860a32c9a13e178a193fd0befb26194db02c)
+    — test(goals): assert canonical goal ids via dir listings so ledger tests pass on
+    macOS
 
 # Plan: Fix sase-core macOS CI by making goal-ledger id-normalization tests case-portable
 
