@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Finish cross-repo landing and close sase-1cq
-goal:
-  Secure revision-pin writes against symlink escapes, finish the landed skill and plan
-  closeout, verify the integrated epic, and close sase-1cq normally.
-status: wip
+goal: Secure revision-pin writes against symlink escapes, finish the landed skill
+  and plan closeout, verify the integrated epic, and close sase-1cq normally.
+status: done
 proposed_by: bbugyi200.athena.sase-1cq.land
 bead: sase-1cq
-create_time: 2026-09-29 18:10:17
 ---
 
 - **PARENT:**
