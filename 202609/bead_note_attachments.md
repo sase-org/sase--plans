@@ -1,119 +1,110 @@
 ---
 tier: epic
 title: Bead note attachments
-goal: "Any file — screenshot, log, trace, archive, or multi-GiB binary — can be attached
-  to a bead note with an inline `@<path>` reference. The bead keeps an immutable
-  snapshot of the bytes that is available on every machine and outlives the source file.
-  Humans see beautiful chips, badges, and optional inline image previews. Agents get
-  plain, extension-preserving file paths.
+goal: 'Any file — screenshot, log, trace, archive, or multi-GiB binary — can be attached
+  to a bead note with an inline `@<path>` reference. The bead keeps an immutable snapshot
+  of the bytes that is available on every machine and outlives the source file. Humans
+  see beautiful chips, badges, and optional inline image previews. Agents get plain,
+  extension-preserving file paths.
 
-  "
+  '
 phases:
-  - id: core_grammar
-    title: Core attachment grammar, names, and media classification (sase-core)
-    depends_on: []
-    size: large
-    description:
-      "core_grammar: add the note-text scanner for @path/@@/@attachment tokens,
-      stored-text composition and its editing inverse, name sanitizing and uniquing,
-      media classification, and the attachment artifact-ref kind in sase-core, with
-      bindings, a corpus golden test, and the sase pin bump."
-  - id: cas
-    title: Local content-addressed attachment store and streaming ingest
-    depends_on: []
-    size: medium
-    description:
-      "cas: build the ~/.sase/attachments content-addressed store, with one-pass
-      streaming ingest (sparse-aware, change-detecting, per-digest locked),
-      extension-preserving views, image probing, and the BlobStore protocol."
-  - id: core_wire
-    title: Attachment wire, reducer, mutation APIs, and policy (sase-core)
-    depends_on:
-      - core_grammar
-    size: medium
-    description:
-      "core_wire: add the optional attachments manifest on note events and BeadNoteWire,
-      token/manifest validation, reducer and mutation API support (append, edit, close,
-      +1), roster and reference queries, placement/fetch/sensitive-path policy, and
-      tombstone wire, with bindings and the pin bump."
-  - id: note_cli
-    title: Author and read attachments from the CLI (beta flag)
-    depends_on:
-      - core_grammar
-      - core_wire
-      - cas
-    size: large
-    description:
-      "note_cli: create the bead_note_attachments beta flag, then build the shared
-      authoring service. Wire it into note, close -n, update -n, +1 -n, and the TUI
-      add-note modal. Add sase bead attach and attachment list/path, text rendering for
-      show/read/JSON, caret diagnostics, and the write echo."
-  - id: shared_store
-    title: Private attachments sidecar, upload outbox, and lazy fetch
-    depends_on:
-      - note_cli
-    size: large
-    description:
-      "shared_store: add the reserved private attachments sidecar role (a hidden bare
-      partial clone), the git BlobStore written with plumbing, and placement with
-      explicit -L local-only. Add pre-publication uploads with an outbox fallback,
-      capped lazy fetch, availability badges, attachment push, and a doctor check."
-  - id: large_files
-    title: Large-file store, background uploads, and progress
-    depends_on:
-      - shared_store
-    size: medium
-    description:
-      "large_files: add the optional rclone large-object store tier, background uploads
-      for big objects, progress UI, and end-to-end large and sparse file acceptance
-      tests."
-  - id: show_images
-    title: Image previews and full-fidelity viewing
-    depends_on:
-      - note_cli
-    size: large
-    description:
-      "show_images: add the show -i/--images auto|cells|kitty|never option and
-      bead.show.images config. Add cell thumbnails, kitty inline pixels, and text
-      previews. Make attachment chips labeled pager links into the existing viewer, add
-      sase bead attachment open, and resolve attachment: artifact refs."
-  - id: tui
-    title: Beads pane attachments and add-note authoring UX
-    depends_on:
-      - show_images
-    size: medium
-    description:
-      "tui: add an attachments block with thumbnails and badges to Beads pane note
-      detail, an open-attachments key, and @ path completion, paste handling, and inline
-      diagnostics in the add-note modal, all off the event loop."
-  - id: lifecycle
-    title: Purge, doctor, cache pruning, and bead pages
-    depends_on:
-      - large_files
-    size: medium
-    description:
-      "lifecycle: add tombstone-based attachment purge, bead doctor attachment checks
-      and repairs, and cache/orphan pruning, and render private attachments on bead
-      pages."
-  - id: ga
-    title: Remove the beta flag and finish docs
-    depends_on:
-      - large_files
-      - show_images
-      - tui
-      - lifecycle
-    size: medium
-    description:
-      "ga: delete the flag's Off branches and close the flag bead. Finish user docs,
-      help, and skill sources, run the end-to-end acceptance sweep, and record the
-      follow-up proposals, including the memory update."
+- id: core_grammar
+  title: Core attachment grammar, names, and media classification (sase-core)
+  depends_on: []
+  size: large
+  description: 'core_grammar: add the note-text scanner for @path/@@/@attachment tokens,
+    stored-text composition and its editing inverse, name sanitizing and uniquing,
+    media classification, and the attachment artifact-ref kind in sase-core, with
+    bindings, a corpus golden test, and the sase pin bump.'
+- id: cas
+  title: Local content-addressed attachment store and streaming ingest
+  depends_on: []
+  size: medium
+  description: 'cas: build the ~/.sase/attachments content-addressed store, with one-pass
+    streaming ingest (sparse-aware, change-detecting, per-digest locked), extension-preserving
+    views, image probing, and the BlobStore protocol.'
+- id: core_wire
+  title: Attachment wire, reducer, mutation APIs, and policy (sase-core)
+  depends_on:
+  - core_grammar
+  size: medium
+  description: 'core_wire: add the optional attachments manifest on note events and
+    BeadNoteWire, token/manifest validation, reducer and mutation API support (append,
+    edit, close, +1), roster and reference queries, placement/fetch/sensitive-path
+    policy, and tombstone wire, with bindings and the pin bump.'
+- id: note_cli
+  title: Author and read attachments from the CLI (beta flag)
+  depends_on:
+  - core_grammar
+  - core_wire
+  - cas
+  size: large
+  description: 'note_cli: create the bead_note_attachments beta flag, then build the
+    shared authoring service. Wire it into note, close -n, update -n, +1 -n, and the
+    TUI add-note modal. Add sase bead attach and attachment list/path, text rendering
+    for show/read/JSON, caret diagnostics, and the write echo.'
+- id: shared_store
+  title: Private attachments sidecar, upload outbox, and lazy fetch
+  depends_on:
+  - note_cli
+  size: large
+  description: 'shared_store: add the reserved private attachments sidecar role (a
+    hidden bare partial clone), the git BlobStore written with plumbing, and placement
+    with explicit -L local-only. Add pre-publication uploads with an outbox fallback,
+    capped lazy fetch, availability badges, attachment push, and a doctor check.'
+- id: large_files
+  title: Large-file store, background uploads, and progress
+  depends_on:
+  - shared_store
+  size: medium
+  description: 'large_files: add the optional rclone large-object store tier, background
+    uploads for big objects, progress UI, and end-to-end large and sparse file acceptance
+    tests.'
+- id: show_images
+  title: Image previews and full-fidelity viewing
+  depends_on:
+  - note_cli
+  size: large
+  description: 'show_images: add the show -i/--images auto|cells|kitty|never option
+    and bead.show.images config. Add cell thumbnails, kitty inline pixels, and text
+    previews. Make attachment chips labeled pager links into the existing viewer,
+    add sase bead attachment open, and resolve attachment: artifact refs.'
+- id: tui
+  title: Beads pane attachments and add-note authoring UX
+  depends_on:
+  - show_images
+  size: medium
+  description: 'tui: add an attachments block with thumbnails and badges to Beads
+    pane note detail, an open-attachments key, and @ path completion, paste handling,
+    and inline diagnostics in the add-note modal, all off the event loop.'
+- id: lifecycle
+  title: Purge, doctor, cache pruning, and bead pages
+  depends_on:
+  - large_files
+  size: medium
+  description: 'lifecycle: add tombstone-based attachment purge, bead doctor attachment
+    checks and repairs, and cache/orphan pruning, and render private attachments on
+    bead pages.'
+- id: ga
+  title: Remove the beta flag and finish docs
+  depends_on:
+  - large_files
+  - show_images
+  - tui
+  - lifecycle
+  size: medium
+  description: 'ga: delete the flag''s Off branches and close the flag bead. Finish
+    user docs, help, and skill sources, run the end-to-end acceptance sweep, and record
+    the follow-up proposals, including the memory update.'
 proposed_by: bbugyi200.athena.0tv
 create_time: 2026-09-29 08:13:33
 status: wip
+bead_id: sase-1ck
 ---
 
-- **PROMPT:**
-  [prompts/202609/bead_note_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_note_attachments.md)
+- **PROMPT:** [prompts/202609/bead_note_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/bead_note_attachments.md)
+- **BEAD:** [sase-1ck](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ck/README.md)
 
 # Plan: Bead note attachments
 
