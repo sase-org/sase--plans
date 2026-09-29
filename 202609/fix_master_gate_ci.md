@@ -1,14 +1,11 @@
 ---
 tier: tale
-title:
-  Fix the red Master Gate CI (core pin, stale tests, Textual drift, import shadowing)
-goal:
-  Master Gate lint and all eight fast-suite shards pass on master, with no production
+title: Fix the red Master Gate CI (core pin, stale tests, Textual drift, import shadowing)
+goal: Master Gate lint and all eight fast-suite shards pass on master, with no production
   behavior changes beyond the core pin bump and one completion hint.
 size: medium
 proposed_by: bbugyi200.athena.0u5
-create_time: 2026-09-29 16:42:32
-status: wip
+status: done
 ---
 
 # Fix the red Master Gate (lint + all 8 fast-suite shards)
