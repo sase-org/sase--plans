@@ -1,12 +1,20 @@
 ---
 tier: tale
-title: Fix the red Master Gate CI (core pin, stale tests, Textual drift, import shadowing)
-goal: Master Gate lint and all eight fast-suite shards pass on master, with no production
+title:
+  Fix the red Master Gate CI (core pin, stale tests, Textual drift, import shadowing)
+goal:
+  Master Gate lint and all eight fast-suite shards pass on master, with no production
   behavior changes beyond the core pin bump and one completion hint.
 size: medium
 proposed_by: bbugyi200.athena.0u5
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0u5](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0u5.md)
+- **COMMITS:**
+  - [8c38eb6](https://github.com/sase-org/sase/commit/8c38eb6a9a1c4089ac1d00ade84f15012a5baf3e)
+    — fix(master-gate): repair red Master Gate CI per 202609/fix_master_gate_ci
 
 # Fix the red Master Gate (lint + all 8 fast-suite shards)
 
