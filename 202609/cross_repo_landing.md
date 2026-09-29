@@ -1,45 +1,43 @@
 ---
 tier: epic
 title: Land cross-repo turns without stranding their epic or core pin
-goal: "A single agent turn that changes both sase and sase-core lands one green commit
+goal: 'A single agent turn that changes both sase and sase-core lands one green commit
   per repo with sase-core-revision.txt already pointing at the new core commit, agents
   know host commits happen after their turn so they close finished work instead of
   deferring it, and the stranded sase-1ck.4.1 landing is finished.
 
-  "
+  '
 phases:
-  - id: stranded_landing
-    title: Move the core pin and finish the stranded sase-1ck.4.1 landing
-    size: small
-    depends_on: []
-    description:
-      "stranded_landing: ratchet sase-core-revision.txt past 0541387 and 1ad57ea, verify
-      the +1 attachment tests, then close epic sase-1ck.4.1 and its parent phase
-      sase-1ck.4 and mark note_cli.md done."
-  - id: pin_follow
-    title:
-      Host moves a linked repo's revision pin when one declaration commits both repos
-    size: medium
-    depends_on: []
-    description:
-      "pin_follow: add a repos.linked[].revision_pin config field, make the builtin
-      commit finalizer commit pinned siblings first and write their pushed SHA into the
-      primary's pin file before the primary commit, with tests and docs."
-  - id: after_turn_messaging
-    title: Tell agents that host commits happen after the turn ends
-    size: small
-    depends_on: []
-    description:
-      "after_turn_messaging: extend sase final submit output, the sase_final skill, and
-      the bd/land_epic tale guidance so agents never defer a closeout waiting for their
-      own host commit."
+- id: stranded_landing
+  title: Move the core pin and finish the stranded sase-1ck.4.1 landing
+  size: small
+  depends_on: []
+  description: 'stranded_landing: ratchet sase-core-revision.txt past 0541387 and
+    1ad57ea, verify the +1 attachment tests, then close epic sase-1ck.4.1 and its
+    parent phase sase-1ck.4 and mark note_cli.md done.'
+- id: pin_follow
+  title: Host moves a linked repo's revision pin when one declaration commits both
+    repos
+  size: medium
+  depends_on: []
+  description: 'pin_follow: add a repos.linked[].revision_pin config field, make the
+    builtin commit finalizer commit pinned siblings first and write their pushed SHA
+    into the primary''s pin file before the primary commit, with tests and docs.'
+- id: after_turn_messaging
+  title: Tell agents that host commits happen after the turn ends
+  size: small
+  depends_on: []
+  description: 'after_turn_messaging: extend sase final submit output, the sase_final
+    skill, and the bd/land_epic tale guidance so agents never defer a closeout waiting
+    for their own host commit.'
 proposed_by: bbugyi200.athena.0u6
 create_time: 2026-09-29 17:21:17
 status: wip
+bead_id: sase-1cq
 ---
 
-- **PROMPT:**
-  [prompts/202609/cross_repo_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/cross_repo_landing.md)
+- **PROMPT:** [prompts/202609/cross_repo_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/cross_repo_landing.md)
+- **BEAD:** [sase-1cq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cq/README.md)
 
 # Land cross-repo turns without stranding their epic or core pin
 
