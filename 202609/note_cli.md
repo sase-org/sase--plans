@@ -1,47 +1,46 @@
 ---
 tier: epic
 title: Bead note attachment CLI
-goal: "With the bead_note_attachments beta flag on, inline @path references in bead note
-  text and sase bead attach snapshot files into the local content-addressed store and
-  persist @attachment tokens plus a manifest. With the flag off, note text keeps today's
-  behavior. show, read, JSON, history, list, and path render those snapshots as text.
-  Bytes never enter the bead store, and this work does not upload, fetch, or draw
-  images.
+goal: 'With the bead_note_attachments beta flag on, inline @path references in bead
+  note text and sase bead attach snapshot files into the local content-addressed store
+  and persist @attachment tokens plus a manifest. With the flag off, note text keeps
+  today''s behavior. show, read, JSON, history, list, and path render those snapshots
+  as text. Bytes never enter the bead store, and this work does not upload, fetch,
+  or draw images.
 
-  "
+  '
 phases:
-  - id: note_authoring
-    title: Flag, authoring service, and note verb
-    depends_on: []
-    size: medium
-    description:
-      "note_authoring: add the beta flag, the note attachment model, and the shared
-      authoring service, and wire them into sase bead note and the TUI add-note modal."
-  - id: attach_verbs
-    title: Close, update, +1, and attach
-    depends_on:
-      - note_authoring
-    size: medium
-    description:
-      "attach_verbs: run the authoring service from close -n, update -n, and +1 -n, and
-      add sase bead attach including stdin."
-  - id: read_surface
-    title: Text rendering, list/path, and beta docs
-    depends_on:
-      - note_authoring
-      - attach_verbs
-    size: medium
-    description:
-      "read_surface: render text chips, the attachments block, history, list, and path,
-      and document the beta commands."
+- id: note_authoring
+  title: Flag, authoring service, and note verb
+  depends_on: []
+  size: medium
+  description: 'note_authoring: add the beta flag, the note attachment model, and
+    the shared authoring service, and wire them into sase bead note and the TUI add-note
+    modal.'
+- id: attach_verbs
+  title: Close, update, +1, and attach
+  depends_on:
+  - note_authoring
+  size: medium
+  description: 'attach_verbs: run the authoring service from close -n, update -n,
+    and +1 -n, and add sase bead attach including stdin.'
+- id: read_surface
+  title: Text rendering, list/path, and beta docs
+  depends_on:
+  - note_authoring
+  - attach_verbs
+  size: medium
+  description: 'read_surface: render text chips, the attachments block, history, list,
+    and path, and document the beta commands.'
 proposed_by: bbugyi200.athena.sase-1ck.4
 parent_bead: sase-1ck.4
 create_time: 2026-09-29 12:24:43
 status: wip
+bead_id: sase-1ck.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/note_cli.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/note_cli.md)
+- **PROMPT:** [prompts/202609/note_cli.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/note_cli.md)
+- **BEAD:** [sase-1ck.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ck/sase-1ck.4.1.md)
 
 # Plan: Bead note attachment CLI
 
