@@ -1,130 +1,120 @@
 ---
 tier: epic
 title: Next-word prediction chains in the prompt input
-goal: "In the prompt input, pressing Ctrl+T repeatedly first completes the current word,
-  then previews and accepts confident guesses for the next words. The guesses come from
-  the user's own typed prompt history (weighted toward the same project, with the
-  cross-machine prompt archive as a low-weight source) and appear as dim inline ghost
-  text before anything is inserted. Predictions come from the Rust core in well under a
-  millisecond and never block typing.
+goal: 'In the prompt input, pressing Ctrl+T repeatedly first completes the current
+  word, then previews and accepts confident guesses for the next words. The guesses
+  come from the user''s own typed prompt history (weighted toward the same project,
+  with the cross-machine prompt archive as a low-weight source) and appear as dim
+  inline ghost text before anything is inserted. Predictions come from the Rust core
+  in well under a millisecond and never block typing.
 
-  "
+  '
 phases:
-  - id: word-menu-ctrl-t
-    title: Ctrl+T accepts the highlighted word-menu row
-    depends_on: []
-    size: small
-    description:
-      "word-menu-ctrl-t: a second Ctrl+T on an open prompt-word or history-word menu
-      accepts the highlighted row instead of re-dispatching and resetting the highlight;
-      loading placeholders still re-dispatch; hints, docs, tests, and goldens are
-      updated."
-  - id: prompt-origin
-    title: Record typed vs generated origin on prompt history rows
-    depends_on: []
-    size: medium
-    description:
-      "prompt-origin: add an optional origin field (typed or generated) to PromptEntry,
-      round-trip it through shard I/O with typed-wins merge rules, and thread it from
-      every launch write site so the prediction corpus can exclude machine-generated
-      prompts."
-  - id: core-engine
-    title: Rust prompt_prediction engine in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-engine: new sase_core::prompt_prediction module with the prose tokenizer and
-      privacy filters, the legacy origin heuristic, the compiled n-gram corpus
-      (recency-weighted mass, distinct support, project partitions), and multi-source
-      stupid-backoff prediction with confidence presets, greedy continuation, and
-      rank_prefix."
-  - id: core-binding
-    title: PyO3 handles, Python facade, and pin for prompt prediction
-    depends_on:
-      - core-engine
-    size: small
-    description:
-      "core-binding: expose frozen PromptPredictionCorpus and PromptPredictionModel
-      pyclasses (compile releases the GIL), add the typed Python facade and wire mirror,
-      the schema-version validator entry, a rust_backend.md section, and move the
-      sase-core-revision pin."
-  - id: prediction-cache
-    title: Off-thread prediction corpus warm cache for the TUI
-    depends_on:
-      - prompt-origin
-      - core-binding
-    size: medium
-    description:
-      "prediction-cache: build history rows (origin, project, cancelled), compile the
-      history and session corpora off-thread next to the history-word warm job, swap
-      them in atomically, compose the model, and give widgets a non-blocking predict
-      accessor that degrades to silence."
-  - id: ghost-chain
-    title: Ghost-text next-word chain on Ctrl+T
-    depends_on:
-      - word-menu-ctrl-t
-      - prediction-cache
-    size: medium
-    description:
-      "ghost-chain: arm the chain after every word commit, show gated predictions as
-      inline ghost text with a border hint, make Ctrl+T/Alt+F take one word and
-      Ctrl+F/Right/Ctrl+L take all, clear the ghost on every exit, add the next_word
-      config keys, CSS, docs, tests, and PNG goldens."
-  - id: next-word-menu
-    title: Explicit next_word menu and word-end fallback
-    depends_on:
-      - ghost-chain
-    size: medium
-    description:
-      "next-word-menu: when a chain is armed but no ghost can be shown, Ctrl+T opens a
-      next_word menu (context title, confidence meter, continuation preview) whose
-      accept continues the chain; add the word-end fallback where current-word
-      completion finds nothing, plus Ctrl+D forget."
-  - id: context-ranking
-    title: Context-aware current-word ranking
-    depends_on:
-      - prediction-cache
-      - next-word-menu
-    size: medium
-    description:
-      "context-ranking: promote prompt-word and history-word candidates that the n-gram
-      model predicts for the preceding words, and render the new sequence signal (violet
-      meter share, dashed-arrow context chip, legend entry)."
-  - id: replay-harness
-    title: Prequential replay harness and preset calibration
-    depends_on:
-      - core-binding
-      - prediction-cache
-    size: medium
-    description:
-      "replay-harness: a Rust prequential replay evaluator plus a
-      tools/prompt_prediction_replay script that prints aggregate-only accuracy,
-      coverage, precision, keystroke-savings, run-length, latency, and memory tables by
-      cohort, then calibrate the confidence presets."
-  - id: archive-source
-    title: Cross-machine prompt archive as a low-weight source
-    depends_on:
-      - prediction-cache
-      - replay-harness
-    size: medium
-    description:
-      "archive-source: extract human-typed prose from the enabled projects' canonical
-      prompt archives, dedup it against local history, compile a pruned low-weight
-      archive corpus off-thread, add the next_word_sources config, and let the replay
-      harness decide the default."
-  - id: auto-mode
-    title: Opt-in automatic ghost at word boundaries
-    depends_on:
-      - next-word-menu
-    size: small
-    description:
-      "auto-mode: add next_word auto, which shows the gated ghost right after a typed
-      space that ends a prose word at end of line, reusing the ghost-chain acceptance
-      and clearing contract."
+- id: word-menu-ctrl-t
+  title: Ctrl+T accepts the highlighted word-menu row
+  depends_on: []
+  size: small
+  description: 'word-menu-ctrl-t: a second Ctrl+T on an open prompt-word or history-word
+    menu accepts the highlighted row instead of re-dispatching and resetting the highlight;
+    loading placeholders still re-dispatch; hints, docs, tests, and goldens are updated.'
+- id: prompt-origin
+  title: Record typed vs generated origin on prompt history rows
+  depends_on: []
+  size: medium
+  description: 'prompt-origin: add an optional origin field (typed or generated) to
+    PromptEntry, round-trip it through shard I/O with typed-wins merge rules, and
+    thread it from every launch write site so the prediction corpus can exclude machine-generated
+    prompts.'
+- id: core-engine
+  title: Rust prompt_prediction engine in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-engine: new sase_core::prompt_prediction module with the prose
+    tokenizer and privacy filters, the legacy origin heuristic, the compiled n-gram
+    corpus (recency-weighted mass, distinct support, project partitions), and multi-source
+    stupid-backoff prediction with confidence presets, greedy continuation, and rank_prefix.'
+- id: core-binding
+  title: PyO3 handles, Python facade, and pin for prompt prediction
+  depends_on:
+  - core-engine
+  size: small
+  description: 'core-binding: expose frozen PromptPredictionCorpus and PromptPredictionModel
+    pyclasses (compile releases the GIL), add the typed Python facade and wire mirror,
+    the schema-version validator entry, a rust_backend.md section, and move the sase-core-revision
+    pin.'
+- id: prediction-cache
+  title: Off-thread prediction corpus warm cache for the TUI
+  depends_on:
+  - prompt-origin
+  - core-binding
+  size: medium
+  description: 'prediction-cache: build history rows (origin, project, cancelled),
+    compile the history and session corpora off-thread next to the history-word warm
+    job, swap them in atomically, compose the model, and give widgets a non-blocking
+    predict accessor that degrades to silence.'
+- id: ghost-chain
+  title: Ghost-text next-word chain on Ctrl+T
+  depends_on:
+  - word-menu-ctrl-t
+  - prediction-cache
+  size: medium
+  description: 'ghost-chain: arm the chain after every word commit, show gated predictions
+    as inline ghost text with a border hint, make Ctrl+T/Alt+F take one word and Ctrl+F/Right/Ctrl+L
+    take all, clear the ghost on every exit, add the next_word config keys, CSS, docs,
+    tests, and PNG goldens.'
+- id: next-word-menu
+  title: Explicit next_word menu and word-end fallback
+  depends_on:
+  - ghost-chain
+  size: medium
+  description: 'next-word-menu: when a chain is armed but no ghost can be shown, Ctrl+T
+    opens a next_word menu (context title, confidence meter, continuation preview)
+    whose accept continues the chain; add the word-end fallback where current-word
+    completion finds nothing, plus Ctrl+D forget.'
+- id: context-ranking
+  title: Context-aware current-word ranking
+  depends_on:
+  - prediction-cache
+  - next-word-menu
+  size: medium
+  description: 'context-ranking: promote prompt-word and history-word candidates that
+    the n-gram model predicts for the preceding words, and render the new sequence
+    signal (violet meter share, dashed-arrow context chip, legend entry).'
+- id: replay-harness
+  title: Prequential replay harness and preset calibration
+  depends_on:
+  - core-binding
+  - prediction-cache
+  size: medium
+  description: 'replay-harness: a Rust prequential replay evaluator plus a tools/prompt_prediction_replay
+    script that prints aggregate-only accuracy, coverage, precision, keystroke-savings,
+    run-length, latency, and memory tables by cohort, then calibrate the confidence
+    presets.'
+- id: archive-source
+  title: Cross-machine prompt archive as a low-weight source
+  depends_on:
+  - prediction-cache
+  - replay-harness
+  size: medium
+  description: 'archive-source: extract human-typed prose from the enabled projects''
+    canonical prompt archives, dedup it against local history, compile a pruned low-weight
+    archive corpus off-thread, add the next_word_sources config, and let the replay
+    harness decide the default.'
+- id: auto-mode
+  title: Opt-in automatic ghost at word boundaries
+  depends_on:
+  - next-word-menu
+  size: small
+  description: 'auto-mode: add next_word auto, which shows the gated ghost right after
+    a typed space that ends a prose word at end of line, reusing the ghost-chain acceptance
+    and clearing contract.'
 proposed_by: bbugyi200.apollo.2x
 create_time: 2026-09-29 07:14:23
 status: wip
+bead_id: sase-1cj
 ---
+
+- **BEAD:** [sase-1cj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cj/README.md)
 
 # Plan: Next-word prediction chains in the prompt input
 
