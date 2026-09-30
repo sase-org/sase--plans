@@ -5,8 +5,7 @@ goal: Close the snippet picker origin-loss race and complete epic sase-1cu.
 size: small
 proposed_by: bbugyi200.athena.sase-1cu.land
 bead: sase-1cu
-create_time: 2026-09-29 22:08:42
-status: wip
+status: done
 ---
 
 - **PARENT:**
