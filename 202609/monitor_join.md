@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Join detached ToolRuns with monitors
-goal:
-  A monitor can join an existing detached ToolRun, stream and settle its outcome, and
-  stop it safely without starting another run.
+goal: A monitor can join an existing detached ToolRun, stream and settle its outcome,
+  and stop it safely without starting another run.
 size: medium
 proposed_by: bbugyi200.athena.sase-1cx.5
 bead: sase-1cx.5
-create_time: 2026-09-30 12:30:00
-status: wip
+status: done
 ---
 
 - **PARENT:**
