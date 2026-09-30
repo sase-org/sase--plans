@@ -1,116 +1,117 @@
 ---
 tier: epic
-title:
-  "Next-word autosuggest: automatic ghosts, mid-word completion, and a mid-sentence peek"
-goal: "Confident next-word guesses appear automatically as you type in the prompt input,
-  with no Ctrl+T needed to see them. They complete the word you are typing, and they
-  appear at line ends, before closing punctuation, and as a calm bordered peek in the
-  middle of a sentence. The prose text never jumps. Ctrl+T after a space asks for the
-  next words, and the recent-files menu moves to Ctrl+G r. The plan and gate feedback
-  note editor gets the same autosuggest.
+title: 'Next-word autosuggest: automatic ghosts, mid-word completion, and a mid-sentence
+  peek'
+goal: 'Confident next-word guesses appear automatically as you type in the prompt
+  input, with no Ctrl+T needed to see them. They complete the word you are typing,
+  and they appear at line ends, before closing punctuation, and as a calm bordered
+  peek in the middle of a sentence. The prose text never jumps. Ctrl+T after a space
+  asks for the next words, and the recent-files menu moves to Ctrl+G r. The plan and
+  gate feedback note editor gets the same autosuggest.
 
-  "
+  '
 phases:
-  - id: core-word-completion
-    title: Gated current-word completion in the sase-core prediction engine
-    depends_on: []
-    size: medium
-    description: "core-word-completion: add an opt-in complete_current_word request and
-      a word_completion result to sase_core::prompt_prediction. It uses a
-      prefix-restricted gate with a conservative denominator, per-preset
-      min_prefix_chars, typed-case suffixes, and gated continuation after the completed
-      word, with no wire schema bump.
+- id: core-word-completion
+  title: Gated current-word completion in the sase-core prediction engine
+  depends_on: []
+  size: medium
+  description: 'core-word-completion: add an opt-in complete_current_word request
+    and a word_completion result to sase_core::prompt_prediction. It uses a prefix-restricted
+    gate with a conservative denominator, per-preset min_prefix_chars, typed-case
+    suffixes, and gated continuation after the completed word, with no wire schema
+    bump.
 
-      "
-  - id: word-completion-calibration
-    title: Replay calibration, Python wire, bench, and core pin for word completion
-    depends_on:
-      - core-word-completion
-    size: medium
-    description: "word-completion-calibration: add a mid-word replay mode and calibrate
-      min_prefix_chars per preset. Mirror the new request/result fields in the Python
-      wire and facade, extend the replay tool with --midword and draft-length --bench
-      buckets to choose the synchronous-draft threshold, move the sase-core pin, and
-      record the results in docs/rust_backend.md.
+    '
+- id: word-completion-calibration
+  title: Replay calibration, Python wire, bench, and core pin for word completion
+  depends_on:
+  - core-word-completion
+  size: medium
+  description: 'word-completion-calibration: add a mid-word replay mode and calibrate
+    min_prefix_chars per preset. Mirror the new request/result fields in the Python
+    wire and facade, extend the replay tool with --midword and draft-length --bench
+    buckets to choose the synchronous-draft threshold, move the sase-core pin, and
+    record the results in docs/rust_backend.md.
 
-      "
-  - id: boundary-ctrl-t
-    title: Ctrl+T at a word boundary requests next words; recent files move to Ctrl+G r
-    depends_on: []
-    size: small
-    description: "boundary-ctrl-t: at a prose boundary with no token, Ctrl+T now runs
-      the explicit next-word request (ghost, menu, or hint) instead of opening file
-      history. Recent files and artifacts move to a new ctrl-g-only `r` continuation.
-      Update the hints, help modal, docs, and tests.
+    '
+- id: boundary-ctrl-t
+  title: Ctrl+T at a word boundary requests next words; recent files move to Ctrl+G
+    r
+  depends_on: []
+  size: small
+  description: 'boundary-ctrl-t: at a prose boundary with no token, Ctrl+T now runs
+    the explicit next-word request (ghost, menu, or hint) instead of opening file
+    history. Recent files and artifacts move to a new ctrl-g-only `r` continuation.
+    Update the hints, help modal, docs, and tests.
 
-      "
-  - id: inline-ghost-placement
-    title:
-      Inline ghost placement before closing punctuation, calmer hints, and module split
-    depends_on:
-      - boundary-ctrl-t
-    size: medium
-    description: "inline-ghost-placement: split the next-word mixin into a host-neutral
-      ghost display layer and pure placement helpers. Add the before-closer inline
-      placement with tail-aware width fitting, and make Ctrl+L accept-all everywhere
-      with fish keys only at true end of line. Typing-triggered hints wait for a 350 ms
-      reveal beat, boundary auto triggers work away from line end, and ghosts are
-      allowed in the legacy feedback mode.
+    '
+- id: inline-ghost-placement
+  title: Inline ghost placement before closing punctuation, calmer hints, and module
+    split
+  depends_on:
+  - boundary-ctrl-t
+  size: medium
+  description: 'inline-ghost-placement: split the next-word mixin into a host-neutral
+    ghost display layer and pure placement helpers. Add the before-closer inline placement
+    with tail-aware width fitting, and make Ctrl+L accept-all everywhere with fish
+    keys only at true end of line. Typing-triggered hints wait for a 350 ms reveal
+    beat, boundary auto triggers work away from line end, and ghosts are allowed in
+    the legacy feedback mode.
 
-      "
-  - id: mid-sentence-peek
-    title: Mid-sentence next-word peek in the prompt border
-    depends_on:
-      - inline-ghost-placement
-    size: medium
-    description: "mid-sentence-peek: where an inline ghost would shift prose, show a
-      styled violet peek in the prompt bar's border subtitle. It trims words the text
-      after the cursor already has, degrades by width, appears after the reveal beat
-      when typing-triggered, and is taken with Ctrl+T (one word) or Ctrl+L (all) using
-      the menu separator rules.
+    '
+- id: mid-sentence-peek
+  title: Mid-sentence next-word peek in the prompt border
+  depends_on:
+  - inline-ghost-placement
+  size: medium
+  description: 'mid-sentence-peek: where an inline ghost would shift prose, show a
+    styled violet peek in the prompt bar''s border subtitle. It trims words the text
+    after the cursor already has, degrades by width, appears after the reveal beat
+    when typing-triggered, and is taken with Ctrl+T (one word) or Ctrl+L (all) using
+    the menu separator rules.
 
-      "
-  - id: midword-autosuggest
-    title: Mid-word autosuggest from the core word completion
-    depends_on:
-      - word-completion-calibration
-      - mid-sentence-peek
-    size: medium
-    description: "midword-autosuggest: in auto mode, each typed word character requests
-      complete_current_word. The UI composes suffix plus continuation as an inline ghost
-      or peek, keeps silent on a core that lacks the field, filters deleted words, and
-      guards keystroke latency with a measured synchronous-draft threshold and an
-      off-pump deferred path.
+    '
+- id: midword-autosuggest
+  title: Mid-word autosuggest from the core word completion
+  depends_on:
+  - word-completion-calibration
+  - mid-sentence-peek
+  size: medium
+  description: 'midword-autosuggest: in auto mode, each typed word character requests
+    complete_current_word. The UI composes suffix plus continuation as an inline ghost
+    or peek, keeps silent on a core that lacks the field, filters deleted words, and
+    guards keystroke latency with a measured synchronous-draft threshold and an off-pump
+    deferred path.
 
-      "
-  - id: gate-note-autosuggest
-    title: Autosuggest in the gate input panel note editor
-    depends_on:
-      - midword-autosuggest
-    size: medium
-    description: "gate-note-autosuggest: host the ghost display layer in the
-      GateInputPanel note editor (plan and epic feedback, gate notes), with a
-      host-neutral prediction accessor, the note editor's own hint surface, and
-      Ctrl+T/Ctrl+L accept keys. There is no menu there; tests and a golden cover it.
+    '
+- id: gate-note-autosuggest
+  title: Autosuggest in the gate input panel note editor
+  depends_on:
+  - midword-autosuggest
+  size: medium
+  description: 'gate-note-autosuggest: host the ghost display layer in the GateInputPanel
+    note editor (plan and epic feedback, gate notes), with a host-neutral prediction
+    accessor, the note editor''s own hint surface, and Ctrl+T/Ctrl+L accept keys.
+    There is no menu there; tests and a golden cover it.
 
-      "
-  - id: autosuggest-default
-    title: Make auto the default and finish docs, help, goldens, and live captures
-    depends_on:
-      - gate-note-autosuggest
-    size: small
-    description:
-      "autosuggest-default: flip ace.prompt_completion.next_word from chain to auto in
-      every config location and the default-contract tests. Consolidate the docs/ace.md
-      next-word narrative and the help modal, rerun the next-word visual goldens, and
-      capture the live screenshot walk."
+    '
+- id: autosuggest-default
+  title: Make auto the default and finish docs, help, goldens, and live captures
+  depends_on:
+  - gate-note-autosuggest
+  size: small
+  description: 'autosuggest-default: flip ace.prompt_completion.next_word from chain
+    to auto in every config location and the default-contract tests. Consolidate the
+    docs/ace.md next-word narrative and the help modal, rerun the next-word visual
+    goldens, and capture the live screenshot walk.'
 proposed_by: bbugyi200.athena.0u0
 create_time: 2026-09-30 16:38:17
 status: wip
+bead_id: sase-1dq
 ---
 
-- **PROMPT:**
-  [prompts/202609/next_word_autosuggest.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/next_word_autosuggest.md)
+- **PROMPT:** [prompts/202609/next_word_autosuggest.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/next_word_autosuggest.md)
+- **BEAD:** [sase-1dq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1dq/README.md)
 
 # Plan: Next-word autosuggest
 
