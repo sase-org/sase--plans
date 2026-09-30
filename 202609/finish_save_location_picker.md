@@ -12,6 +12,11 @@ status: done
   [202609/save_location_picker.md](https://github.com/sase-org/sase--plans/blob/main/202609/save_location_picker.md)
 - **BEAD:**
   [sase-1cu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cu/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1cu.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1cu.land.md)
+- **COMMITS:**
+  - [09fe966](https://github.com/sase-org/sase--plans/commit/09fe9662cd677bb6518ad4910df9f857ba070d09)
+    — docs(plans): mark save_location_picker plan done for sase-1cu
 
 # Finish the location-first picker landing
 
