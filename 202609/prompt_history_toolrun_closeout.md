@@ -2,13 +2,11 @@
 tier: tale
 size: small
 title: Keep nested ToolRun launches out of prompt history and land sase-1d8
-goal:
-  A ToolRun command that invokes sase run creates no prompt-history row, and epic
+goal: A ToolRun command that invokes sase run creates no prompt-history row, and epic
   sase-1d8 is closed with its approved plan marked done.
 proposed_by: bbugyi200.athena.sase-1d8.land
 bead: sase-1d8
-create_time: 2026-09-30 11:58:37
-status: wip
+status: done
 ---
 
 - **PARENT:**
