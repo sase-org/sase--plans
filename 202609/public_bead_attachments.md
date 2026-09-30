@@ -1,109 +1,103 @@
 ---
 tier: epic
 title: Public-by-default bead attachments
-goal: "A bead note attachment is as visible as its bead unless SASE or its author marks
-  it private. On a public project, non-sensitive attachments publish to a dedicated
+goal: 'A bead note attachment is as visible as its bead unless SASE or its author
+  marks it private. On a public project, non-sensitive attachments publish to a dedicated
   public `<project>--attachments` sidecar that anyone who can read the beads can fetch
   without credentials. SASE classifies every file mechanically and resolves uncertainty
-  to private. Agents can only narrow an attachment's audience; only humans widen it.
-  Large files never go public, and `sase--beads` never holds bytes.
+  to private. Agents can only narrow an attachment''s audience; only humans widen
+  it. Large files never go public, and `sase--beads` never holds bytes.
 
-  "
+  '
 phases:
-  - id: core_audience
-    title: Core audience wire, decision table, and secret scanner (sase-core)
-    depends_on: []
-    size: large
-    description:
-      "core_audience: add the optional descriptor visibility field (absent means
-      private), the ordered attachment_audience_decision rule table with SASE zone and
-      secret-file tables, the streaming secret scanner, the canonical MIME extension
-      table and public object layout, and visibility on the roster and reference
-      queries, plus Python bindings and tests that use only synthetic secrets."
-  - id: push_protection
-    title: Secret scanning on newly created public sidecars (sase-github)
-    depends_on: []
-    size: small
-    description:
-      "push_protection: honor a new sdd_secret_scanning provider option by enabling
-      GitHub secret scanning and push protection, best effort, right after sase-github
-      creates a public repo, with tests and docs."
-  - id: audience_cli
-    title: Provenance facts, audience flags, and the beta flag
-    depends_on:
-      - core_audience
-    size: large
-    description:
-      "audience_cli: create the public_bead_attachments beta flag, gather provenance
-      facts in Python (stat mode, git status, anonymous remote-visibility probe with
-      cache, zones, run window, actor), scan ingested bytes, run the core decision, and
-      add -K/--private, -W/--public, and -y/--yes to the five note-bearing verbs. Covers
-      the agent-widening refusal, human confirmation, duplicate-digest intent,
-      local-only reasons, the 🌐/🔒 write echo, the public_max_bytes config, and a
-      count-only scanner run over the published transcripts."
-  - id: public_store
-    title: Public attachments sidecar, routing, and anonymous reads
-    depends_on:
-      - audience_cli
-    size: large
-    description:
-      "public_store: spike the page-embed path, then add the reserved hidden public
-      attachments role (injected only for public beads, with PUBLIC default-yes consent
-      and a beads-visibility guard). Covers the HTTPS-fetch/SSH-push bare clone with
-      read-side auto-materialization, a role-parameterized GitAttachmentStore with
-      extension-preserving layout, placement and outbox by audience with no
-      cross-audience fallback, GH013 handling, fixes to the fetch-miss and
-      lazy-discovery bugs, and purge and doctor coverage."
-  - id: publish_lifecycle
-    title: Publish, unpublish, and audience-aware doctor
-    depends_on:
-      - public_store
-    size: medium
-    description:
-      "publish_lifecycle: add the human-only (gate-compatible) sase bead attachment
-      publish and the narrowing unpublish, both editing manifests through NoteEdited.
-      Add doctor rescans keyed to the scanner rules version, store growth, push access,
-      and a private-store-is-anonymously-readable finding."
-  - id: presentation
-    title: Audience badges, access states, and bead-page embeds
-    depends_on:
-      - public_store
-    size: medium
-    description:
-      "presentation: add 🌐/🔒 audience badges in show, read, history, and attachment
-      list plus JSON visibility. Add the 🔒 no access, ⧉ on origin with dispatch hint,
-      and ⛔ blocked states. Bead pages link public files, embed public images, render
-      tokens as chips, and never show private digests or reasons."
-  - id: tui
-    title: TUI audience chips, add-note toggle, and queued uploads
-    depends_on:
-      - presentation
-    size: medium
-    description:
-      "tui: show 🌐/🔒 on beads-pane chips. In the add-note modal, run the audience
-      decision off the event loop and add a toggle that narrows freely and widens only
-      with confirmation. Queue TUI-authored attachments into the upload outbox instead
-      of stranding them locally."
-  - id: ga
-    title: Remove the beta flag, finish docs, and agent guidance
-    depends_on:
-      - push_protection
-      - publish_lifecycle
-      - presentation
-      - tui
-    size: medium
-    description:
-      "ga: remove public_bead_attachments by deleting its off branches and closing its
-      flag bead. Rewrite the attachment docs around the audience model, put the agent
-      visibility guidance into attach and note help, bead onboard, and the sase_new_task
-      skill source, fix stale GA-era help text, and record the proposed follow-ups."
+- id: core_audience
+  title: Core audience wire, decision table, and secret scanner (sase-core)
+  depends_on: []
+  size: large
+  description: 'core_audience: add the optional descriptor visibility field (absent
+    means private), the ordered attachment_audience_decision rule table with SASE
+    zone and secret-file tables, the streaming secret scanner, the canonical MIME
+    extension table and public object layout, and visibility on the roster and reference
+    queries, plus Python bindings and tests that use only synthetic secrets.'
+- id: push_protection
+  title: Secret scanning on newly created public sidecars (sase-github)
+  depends_on: []
+  size: small
+  description: 'push_protection: honor a new sdd_secret_scanning provider option by
+    enabling GitHub secret scanning and push protection, best effort, right after
+    sase-github creates a public repo, with tests and docs.'
+- id: audience_cli
+  title: Provenance facts, audience flags, and the beta flag
+  depends_on:
+  - core_audience
+  size: large
+  description: 'audience_cli: create the public_bead_attachments beta flag, gather
+    provenance facts in Python (stat mode, git status, anonymous remote-visibility
+    probe with cache, zones, run window, actor), scan ingested bytes, run the core
+    decision, and add -K/--private, -W/--public, and -y/--yes to the five note-bearing
+    verbs. Covers the agent-widening refusal, human confirmation, duplicate-digest
+    intent, local-only reasons, the 🌐/🔒 write echo, the public_max_bytes config, and
+    a count-only scanner run over the published transcripts.'
+- id: public_store
+  title: Public attachments sidecar, routing, and anonymous reads
+  depends_on:
+  - audience_cli
+  size: large
+  description: 'public_store: spike the page-embed path, then add the reserved hidden
+    public attachments role (injected only for public beads, with PUBLIC default-yes
+    consent and a beads-visibility guard). Covers the HTTPS-fetch/SSH-push bare clone
+    with read-side auto-materialization, a role-parameterized GitAttachmentStore with
+    extension-preserving layout, placement and outbox by audience with no cross-audience
+    fallback, GH013 handling, fixes to the fetch-miss and lazy-discovery bugs, and
+    purge and doctor coverage.'
+- id: publish_lifecycle
+  title: Publish, unpublish, and audience-aware doctor
+  depends_on:
+  - public_store
+  size: medium
+  description: 'publish_lifecycle: add the human-only (gate-compatible) sase bead
+    attachment publish and the narrowing unpublish, both editing manifests through
+    NoteEdited. Add doctor rescans keyed to the scanner rules version, store growth,
+    push access, and a private-store-is-anonymously-readable finding.'
+- id: presentation
+  title: Audience badges, access states, and bead-page embeds
+  depends_on:
+  - public_store
+  size: medium
+  description: 'presentation: add 🌐/🔒 audience badges in show, read, history, and
+    attachment list plus JSON visibility. Add the 🔒 no access, ⧉ on origin with dispatch
+    hint, and ⛔ blocked states. Bead pages link public files, embed public images,
+    render tokens as chips, and never show private digests or reasons.'
+- id: tui
+  title: TUI audience chips, add-note toggle, and queued uploads
+  depends_on:
+  - presentation
+  size: medium
+  description: 'tui: show 🌐/🔒 on beads-pane chips. In the add-note modal, run the
+    audience decision off the event loop and add a toggle that narrows freely and
+    widens only with confirmation. Queue TUI-authored attachments into the upload
+    outbox instead of stranding them locally.'
+- id: ga
+  title: Remove the beta flag, finish docs, and agent guidance
+  depends_on:
+  - push_protection
+  - publish_lifecycle
+  - presentation
+  - tui
+  size: medium
+  description: 'ga: remove public_bead_attachments by deleting its off branches and
+    closing its flag bead. Rewrite the attachment docs around the audience model,
+    put the agent visibility guidance into attach and note help, bead onboard, and
+    the sase_new_task skill source, fix stale GA-era help text, and record the proposed
+    follow-ups.'
 proposed_by: bbugyi200.athena.0tz
 create_time: 2026-09-30 01:57:05
 status: wip
+bead_id: sase-1d5
 ---
 
-- **PROMPT:**
-  [prompts/202609/public_bead_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/public_bead_attachments.md)
+- **PROMPT:** [prompts/202609/public_bead_attachments.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/public_bead_attachments.md)
+- **BEAD:** [sase-1d5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d5/README.md)
 
 # Plan: Public-by-default bead attachments
 
