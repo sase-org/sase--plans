@@ -34,7 +34,7 @@ phases:
     the replacement agents exist.'
 proposed_by: bbugyi200.athena.0ua
 create_time: 2026-09-30 06:21:06
-status: wip
+status: done
 bead_id: sase-1d6
 ---
 
