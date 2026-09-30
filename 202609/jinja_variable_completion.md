@@ -1,113 +1,104 @@
 ---
 tier: epic
 title: Jinja2 variable completion in the prompt input and the xprompt LSP
-goal: "Typing `{{` in sase's TUI prompt input, or in any editor that uses
-  `sase-xprompt-lsp`, immediately shows every Jinja2 variable that is valid at that
-  spot. The list covers the current xprompt's or prompt stack's declared `input:`
-  properties, template locals, the variables sase injects into every agent prompt, and
-  Jinja's own globals. Each entry shows its type, source, default, and a description,
-  and the entries are ranked the same way everywhere. Filters after `|`, tests after
-  `is`, members after `wait.`/`loop.`, and statements after `{%` complete the same way.
-  One Rust engine is the source of truth for the completion menu, editor hover, and the
-  TUI's unknown-variable lint.
+goal: 'Typing `{{` in sase''s TUI prompt input, or in any editor that uses `sase-xprompt-lsp`,
+  immediately shows every Jinja2 variable that is valid at that spot. The list covers
+  the current xprompt''s or prompt stack''s declared `input:` properties, template
+  locals, the variables sase injects into every agent prompt, and Jinja''s own globals.
+  Each entry shows its type, source, default, and a description, and the entries are
+  ranked the same way everywhere. Filters after `|`, tests after `is`, members after
+  `wait.`/`loop.`, and statements after `{%` complete the same way. One Rust engine
+  is the source of truth for the completion menu, editor hover, and the TUI''s unknown-variable
+  lint.
 
-  "
+  '
 phases:
-  - id: catalog
-    title: Rust Jinja catalog and wire types
-    depends_on: []
-    size: small
-    description:
-      "catalog: add a static, documented catalog to sase-core covering sase's built-in
-      Jinja variables and their availability rules, Jinja globals, filters, tests,
-      statement keywords, and namespace members, plus the request/response wire types
-      the engine will return."
-  - id: scan
-    title: Rust Jinja tag scanner, slot classifier, and scope analysis
-    depends_on: []
-    size: medium
-    description:
-      "scan: find the Jinja tag at the cursor (respecting literal zones, comments, raw
-      blocks, frontmatter, and string literals), classify the completion slot, and
-      extract the document scope: declared inputs, skill flag, %repeat/%wait directives,
-      and position-aware template locals with the open-block stack."
-  - id: assist
-    title: Rust Jinja completion, ranking, documentation, hover, and scope variables
-    depends_on:
-      - catalog
-      - scan
-    size: medium
-    description:
-      "assist: combine catalog and scope into ranked, fuzzy-matched candidates with
-      availability states, shadowing, and shared markdown documentation. Expose
-      jinja_completion, jinja_hover, jinja_scope_variables, and jinja_catalog as core
-      functions."
-  - id: bindings
-    title: Python bindings for the Jinja engine
-    depends_on:
-      - assist
-    size: small
-    description:
-      "bindings: expose jinja_completion, jinja_scope_variables, and jinja_catalog
-      through the sase_core_rs editor_completion binding domain, with round-trip tests."
-  - id: lsp
-    title: sase-xprompt-lsp Jinja completion and hover
-    depends_on:
-      - assist
-    size: medium
-    description:
-      "lsp: route in-tag positions to the engine ahead of every other completion
-      surface, add `{`/`|` triggers that stay silent outside tags, derive the scope from
-      the document path, render rich CompletionItems and hover, and document it in
-      docs/editor.md."
-  - id: python
-    title: Python adapter, single source of truth, lint, and parity tests
-    depends_on:
-      - bindings
-    size: medium
-    description:
-      "python: add the sase Jinja adapter and move the core pin. Delete the Python
-      builtin-name mirrors in favor of the Rust catalog. Switch the unknown-variable
-      lint and gL/save-as-xprompt input inference to engine scope variables. Add
-      runtime/catalog parity tests and update the docs/xprompt.md template-context
-      reference."
-  - id: tui-menu
-    title: TUI Jinja completion menu redesign
-    depends_on:
-      - python
-    size: medium
-    description:
-      "tui-menu: drive the prompt input's Jinja menu from the engine, using each pane's
-      frontmatter scope. Render aligned, theme-consistent rows with source badges, match
-      highlighting, and a detail subtitle. Give Jinja precedence inside tags, and add
-      dark/light PNG goldens."
-  - id: tui-auto
-    title: Auto-open the Jinja menu while typing
-    depends_on:
-      - tui-menu
-    size: small
-    description:
-      "tui-auto: open the menu the moment `{{`/`{%` auto-pair, on `|` and `.` inside
-      tags, and on identifier typing, behind a new ace.prompt_completion.auto_jinja_menu
-      setting. Keep alternation `|` handling out of tags and document the behavior in
-      docs/ace.md."
-  - id: parity
-    title: TUI and LSP Jinja completion parity suite
-    depends_on:
-      - lsp
-      - python
-    size: small
-    description:
-      "parity: prove the LSP binary and the Python adapter return identical ordered
-      candidates on shared fixtures, including lifted-frontmatter versus
-      inline-frontmatter documents and xprompt-path scope."
+- id: catalog
+  title: Rust Jinja catalog and wire types
+  depends_on: []
+  size: small
+  description: 'catalog: add a static, documented catalog to sase-core covering sase''s
+    built-in Jinja variables and their availability rules, Jinja globals, filters,
+    tests, statement keywords, and namespace members, plus the request/response wire
+    types the engine will return.'
+- id: scan
+  title: Rust Jinja tag scanner, slot classifier, and scope analysis
+  depends_on: []
+  size: medium
+  description: 'scan: find the Jinja tag at the cursor (respecting literal zones,
+    comments, raw blocks, frontmatter, and string literals), classify the completion
+    slot, and extract the document scope: declared inputs, skill flag, %repeat/%wait
+    directives, and position-aware template locals with the open-block stack.'
+- id: assist
+  title: Rust Jinja completion, ranking, documentation, hover, and scope variables
+  depends_on:
+  - catalog
+  - scan
+  size: medium
+  description: 'assist: combine catalog and scope into ranked, fuzzy-matched candidates
+    with availability states, shadowing, and shared markdown documentation. Expose
+    jinja_completion, jinja_hover, jinja_scope_variables, and jinja_catalog as core
+    functions.'
+- id: bindings
+  title: Python bindings for the Jinja engine
+  depends_on:
+  - assist
+  size: small
+  description: 'bindings: expose jinja_completion, jinja_scope_variables, and jinja_catalog
+    through the sase_core_rs editor_completion binding domain, with round-trip tests.'
+- id: lsp
+  title: sase-xprompt-lsp Jinja completion and hover
+  depends_on:
+  - assist
+  size: medium
+  description: 'lsp: route in-tag positions to the engine ahead of every other completion
+    surface, add `{`/`|` triggers that stay silent outside tags, derive the scope
+    from the document path, render rich CompletionItems and hover, and document it
+    in docs/editor.md.'
+- id: python
+  title: Python adapter, single source of truth, lint, and parity tests
+  depends_on:
+  - bindings
+  size: medium
+  description: 'python: add the sase Jinja adapter and move the core pin. Delete the
+    Python builtin-name mirrors in favor of the Rust catalog. Switch the unknown-variable
+    lint and gL/save-as-xprompt input inference to engine scope variables. Add runtime/catalog
+    parity tests and update the docs/xprompt.md template-context reference.'
+- id: tui-menu
+  title: TUI Jinja completion menu redesign
+  depends_on:
+  - python
+  size: medium
+  description: 'tui-menu: drive the prompt input''s Jinja menu from the engine, using
+    each pane''s frontmatter scope. Render aligned, theme-consistent rows with source
+    badges, match highlighting, and a detail subtitle. Give Jinja precedence inside
+    tags, and add dark/light PNG goldens.'
+- id: tui-auto
+  title: Auto-open the Jinja menu while typing
+  depends_on:
+  - tui-menu
+  size: small
+  description: 'tui-auto: open the menu the moment `{{`/`{%` auto-pair, on `|` and
+    `.` inside tags, and on identifier typing, behind a new ace.prompt_completion.auto_jinja_menu
+    setting. Keep alternation `|` handling out of tags and document the behavior in
+    docs/ace.md.'
+- id: parity
+  title: TUI and LSP Jinja completion parity suite
+  depends_on:
+  - lsp
+  - python
+  size: small
+  description: 'parity: prove the LSP binary and the Python adapter return identical
+    ordered candidates on shared fixtures, including lifted-frontmatter versus inline-frontmatter
+    documents and xprompt-path scope.'
 proposed_by: bbugyi200.apollo.3g
 create_time: 2026-09-30 08:47:10
 status: wip
+bead_id: sase-1df
 ---
 
-- **PROMPT:**
-  [prompts/202609/jinja_variable_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/jinja_variable_completion.md)
+- **PROMPT:** [prompts/202609/jinja_variable_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/jinja_variable_completion.md)
+- **BEAD:** [sase-1df](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1df/README.md)
 
 # Plan: Jinja2 Variable Completion in the Prompt Input and the xprompt LSP
 
