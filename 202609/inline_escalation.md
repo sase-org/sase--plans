@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Inline-then-escalate agent tool runs
-goal:
-  An agent's plain sase tool run follows one detached run within the sync budget and
-  escalates without stopping it.
+goal: An agent's plain sase tool run follows one detached run within the sync budget
+  and escalates without stopping it.
 size: medium
 bead_id: sase-1cx.6
 proposed_by: bbugyi200.athena.sase-1cx.6
 bead: sase-1cx.6
-create_time: 2026-09-30 12:38:31
-status: wip
+status: done
 ---
 
 - **PARENT:**
