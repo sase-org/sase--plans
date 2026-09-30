@@ -2,9 +2,11 @@
 tier: tale
 size: medium
 title: Rust ack API, lean unread index, and store generations
-goal: Move completion acks and the unread completion index into sase_core as GIL-released
-  calls that return dismissed ids and a store generation, and replace the Python read-sequence
-  fence with that generation so an ack cannot be resurrected by an older observation.
+goal:
+  Move completion acks and the unread completion index into sase_core as GIL-released
+  calls that return dismissed ids and a store generation, and replace the Python
+  read-sequence fence with that generation so an ack cannot be resurrected by an older
+  observation.
 proposed_by: bbugyi200.athena.sase-1d7.12
 bead: sase-1d7.12
 status: done
@@ -14,6 +16,11 @@ status: done
   [202609/unread_ack_reliability_and_tui_responsiveness.md](https://github.com/sase-org/sase--plans/blob/main/202609/unread_ack_reliability_and_tui_responsiveness.md)
 - **BEAD:**
   [sase-1d7.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d7/sase-1d7.12.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1d7.12](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1d7.12.md)
+- **COMMITS:**
+  - [4d2fa14](https://github.com/sase-org/sase/commit/4d2fa14af32cde79226b678f673863a805a5687c)
+    — feat(notifications): Rust ack API, lean unread index, and store generations
 
 # Rust ack API, lean unread index, and store generations
 
