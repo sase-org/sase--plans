@@ -100,7 +100,7 @@ phases:
     the follow-up proposals, including the memory update.'
 proposed_by: bbugyi200.athena.0tv
 create_time: 2026-09-29 08:13:33
-status: wip
+status: done
 bead_id: sase-1ck
 ---
 
