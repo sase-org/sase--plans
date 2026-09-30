@@ -1,49 +1,45 @@
 ---
 tier: epic
-title:
-  Recover and relaunch the five epics broken by the pinned-sibling commit regression
-goal: "Epics sase-1d5, sase-1cx, sase-1cj.12, sase-1co, and sase-1ck are running again
-  from a correct bead state. The host finalizer can commit sase-core changes for
-  bead-assigned agents again. No verified-but-unlanded work from last night's failed
-  runs is lost.
+title: Recover and relaunch the five epics broken by the pinned-sibling commit regression
+goal: 'Epics sase-1d5, sase-1cx, sase-1cj.12, sase-1co, and sase-1ck are running again
+  from a correct bead state. The host finalizer can commit sase-core changes for bead-assigned
+  agents again. No verified-but-unlanded work from last night''s failed runs is lost.
 
-  "
+  '
 phases:
-  - id: pinned-sibling-bead-action
-    title: Pass -B keep for revision-pinned sibling stitches
-    depends_on: []
-    size: small
-    description:
-      "pinned-sibling-bead-action: stop commit_dispatch from dropping bead_action for
-      revision-pinned siblings (downgrade to keep instead), fix the test that enshrined
-      the bug, and prove keep passes the Rust bead-action policy."
-  - id: salvage
-    title: Preserve each failed run's unlanded diff on its bead
-    depends_on: []
-    size: medium
-    description:
-      "salvage: without touching the five pinned workspaces, export each failed run's
-      uncommitted sase and sase-core changes (including untracked files) as verified
-      patches, and attach them with base SHAs and intended commit messages to
-      sase-1d5.1, sase-1cx.1, sase-1cj.12.1, sase-1co, and sase-1ck."
-  - id: relaunch
-    title: Make the fix live, reopen the early-closed beads, and relaunch
-    depends_on:
-      - pinned-sibling-bead-action
-      - salvage
-    size: small
-    description:
-      "relaunch: make sure the host install runs the fixed finalizer, reopen the five
-      beads that closed before their work landed, dry-run and then run sase bead work -Y
-      for each epic (sase-1d5 waits on bead sase-1ck), and verify that the replacement
-      agents exist."
+- id: pinned-sibling-bead-action
+  title: Pass -B keep for revision-pinned sibling stitches
+  depends_on: []
+  size: small
+  description: 'pinned-sibling-bead-action: stop commit_dispatch from dropping bead_action
+    for revision-pinned siblings (downgrade to keep instead), fix the test that enshrined
+    the bug, and prove keep passes the Rust bead-action policy.'
+- id: salvage
+  title: Preserve each failed run's unlanded diff on its bead
+  depends_on: []
+  size: medium
+  description: 'salvage: without touching the five pinned workspaces, export each
+    failed run''s uncommitted sase and sase-core changes (including untracked files)
+    as verified patches, and attach them with base SHAs and intended commit messages
+    to sase-1d5.1, sase-1cx.1, sase-1cj.12.1, sase-1co, and sase-1ck.'
+- id: relaunch
+  title: Make the fix live, reopen the early-closed beads, and relaunch
+  depends_on:
+  - pinned-sibling-bead-action
+  - salvage
+  size: small
+  description: 'relaunch: make sure the host install runs the fixed finalizer, reopen
+    the five beads that closed before their work landed, dry-run and then run sase
+    bead work -Y for each epic (sase-1d5 waits on bead sase-1ck), and verify that
+    the replacement agents exist.'
 proposed_by: bbugyi200.athena.0ua
 create_time: 2026-09-30 06:21:06
 status: wip
+bead_id: sase-1d6
 ---
 
-- **PROMPT:**
-  [prompts/202609/relaunch_failed_epics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/relaunch_failed_epics.md)
+- **PROMPT:** [prompts/202609/relaunch_failed_epics.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/relaunch_failed_epics.md)
+- **BEAD:** [sase-1d6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d6/README.md)
 
 # Plan: Recover and relaunch the five epics broken by the pinned-sibling commit regression
 
