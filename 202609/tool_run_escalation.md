@@ -1,97 +1,90 @@
 ---
 tier: epic
 title: Inline-then-escalate ToolRuns (sase-17g)
-goal: "An agent's `sase tool run` never loses a run to its provider's synchronous
-  ceiling: every run starts inline from the agent's point of view, and a run still going
-  near the ceiling moves into a monitor under the same ToolRun id without being
+goal: 'An agent''s `sase tool run` never loses a run to its provider''s synchronous
+  ceiling: every run starts inline from the agent''s point of view, and a run still
+  going near the ceiling moves into a monitor under the same ToolRun id without being
   cancelled or rerun, via `sase tool run --detach`, ceiling-bounded `sase tool wait`,
   and `sase monitor start -J/--join`.
 
-  "
+  '
 phases:
-  - id: core-detach-join
-    title: sase-core starter scope, monitor join, and sync wait budget
-    depends_on: []
-    size: large
-    description:
-      "core-detach-join: in the linked sase-core checkout, add the ToolRun `starter`
-      record for detached hand-off runs, the atomic `tool_run_join` /
-      `tool_run_release_join` APIs, `continuation_mode` in the launch envelope, and the
-      `tool_run_sync_wait_budget` policy, with migrations, bindings, fixtures, and
-      tests."
-  - id: soft-ceiling
-    title: Configurable per-provider soft ceiling export
-    depends_on: []
-    size: medium
-    description:
-      "soft-ceiling: add the `tool_runs.soft_ceiling` config and export
-      `SASE_PROVIDER_SYNC_SOFT_CEILING_SECONDS` around each provider invocation,
-      scrubbed at every agent, monitor, and proc boundary. Nothing consumes it yet."
-  - id: detach-run
-    title: Starter-scoped detached runs and sase tool run --detach
-    depends_on:
-      - core-detach-join
-    size: large
-    description:
-      "detach-run: pin the new core, create the `tool_run_escalation` beta flag, and
-      share one hand-off launcher between `-H` and the new agent-only `-d/--detach`.
-      Scope detached runs to their starter runner with a worker watchdog and an
-      end-of-invocation cleanup. Suppress their settlement notification and render
-      `starter`/`join` in `sase tool show`."
-  - id: bounded-wait
-    title: Ceiling-bounded wait, follow, and the escalation block
-    depends_on:
-      - detach-run
-      - soft-ceiling
-    size: medium
-    description:
-      "bounded-wait: extract a shared `follow_run` helper from `show -F` without
-      changing its output. Bound agent `sase tool wait` and `show -F` by the
-      core-computed sync wait budget, and print one shared escalation block (the
-      `-J/--join` form) when a joinable run is still going."
-  - id: monitor-join
-    title: sase monitor start -J/--join and the joiner worker
-    depends_on:
-      - detach-run
-      - bounded-wait
-    size: large
-    description:
-      "monitor-join: add `-J/--join RUN` to `sase monitor start`. It records the join
-      atomically before the proc starts and releases it if the start fails. A hidden
-      `sase tool _join` worker streams the run into the monitor log and mirrors its
-      exit. Monitor stop and timeout, `sase tool stop`, and settlement all route through
-      the join. `-f` is refused with `--join` in v1."
-  - id: inline-escalation
-    title: Agent sase tool run escalates instead of being killed
-    depends_on:
-      - soft-ceiling
-      - detach-run
-      - bounded-wait
-    size: large
-    description:
-      "inline-escalation: when the flag is on and a budget exists, an agent's plain
-      `sase tool run` starts detached and follows the run with inline-identical output.
-      On settlement it returns the run's exit. At the budget or on a signal it prints
-      the escalation block and exits without stopping the run. It falls back to today's
-      inline run whenever detaching is unavailable."
-  - id: guidance-and-flag-removal
-    title: Agent guidance, docs, live harness case, and flag removal
-    depends_on:
-      - monitor-join
-      - inline-escalation
-    size: medium
-    description:
-      "guidance-and-flag-removal: delete the flag's Off branches and close its bead.
-      Rewrite the Muse single-turn directive and the `sase_monitor`/`sase_final` skill
-      sources for inline-then-escalate, finish the cross-cutting docs, and add the live
-      escalate-then-join harness case."
+- id: core-detach-join
+  title: sase-core starter scope, monitor join, and sync wait budget
+  depends_on: []
+  size: large
+  description: 'core-detach-join: in the linked sase-core checkout, add the ToolRun
+    `starter` record for detached hand-off runs, the atomic `tool_run_join` / `tool_run_release_join`
+    APIs, `continuation_mode` in the launch envelope, and the `tool_run_sync_wait_budget`
+    policy, with migrations, bindings, fixtures, and tests.'
+- id: soft-ceiling
+  title: Configurable per-provider soft ceiling export
+  depends_on: []
+  size: medium
+  description: 'soft-ceiling: add the `tool_runs.soft_ceiling` config and export `SASE_PROVIDER_SYNC_SOFT_CEILING_SECONDS`
+    around each provider invocation, scrubbed at every agent, monitor, and proc boundary.
+    Nothing consumes it yet.'
+- id: detach-run
+  title: Starter-scoped detached runs and sase tool run --detach
+  depends_on:
+  - core-detach-join
+  size: large
+  description: 'detach-run: pin the new core, create the `tool_run_escalation` beta
+    flag, and share one hand-off launcher between `-H` and the new agent-only `-d/--detach`.
+    Scope detached runs to their starter runner with a worker watchdog and an end-of-invocation
+    cleanup. Suppress their settlement notification and render `starter`/`join` in
+    `sase tool show`.'
+- id: bounded-wait
+  title: Ceiling-bounded wait, follow, and the escalation block
+  depends_on:
+  - detach-run
+  - soft-ceiling
+  size: medium
+  description: 'bounded-wait: extract a shared `follow_run` helper from `show -F`
+    without changing its output. Bound agent `sase tool wait` and `show -F` by the
+    core-computed sync wait budget, and print one shared escalation block (the `-J/--join`
+    form) when a joinable run is still going.'
+- id: monitor-join
+  title: sase monitor start -J/--join and the joiner worker
+  depends_on:
+  - detach-run
+  - bounded-wait
+  size: large
+  description: 'monitor-join: add `-J/--join RUN` to `sase monitor start`. It records
+    the join atomically before the proc starts and releases it if the start fails.
+    A hidden `sase tool _join` worker streams the run into the monitor log and mirrors
+    its exit. Monitor stop and timeout, `sase tool stop`, and settlement all route
+    through the join. `-f` is refused with `--join` in v1.'
+- id: inline-escalation
+  title: Agent sase tool run escalates instead of being killed
+  depends_on:
+  - soft-ceiling
+  - detach-run
+  - bounded-wait
+  size: large
+  description: 'inline-escalation: when the flag is on and a budget exists, an agent''s
+    plain `sase tool run` starts detached and follows the run with inline-identical
+    output. On settlement it returns the run''s exit. At the budget or on a signal
+    it prints the escalation block and exits without stopping the run. It falls back
+    to today''s inline run whenever detaching is unavailable.'
+- id: guidance-and-flag-removal
+  title: Agent guidance, docs, live harness case, and flag removal
+  depends_on:
+  - monitor-join
+  - inline-escalation
+  size: medium
+  description: 'guidance-and-flag-removal: delete the flag''s Off branches and close
+    its bead. Rewrite the Muse single-turn directive and the `sase_monitor`/`sase_final`
+    skill sources for inline-then-escalate, finish the cross-cutting docs, and add
+    the live escalate-then-join harness case.'
 proposed_by: bbugyi200.athena.0u3
 create_time: 2026-09-29 20:32:10
 status: wip
+bead_id: sase-1cx
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_run_escalation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_run_escalation.md)
+- **PROMPT:** [prompts/202609/tool_run_escalation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_run_escalation.md)
+- **BEAD:** [sase-1cx](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cx/README.md)
 
 # Plan: Inline-then-escalate ToolRuns (sase-17g)
 
