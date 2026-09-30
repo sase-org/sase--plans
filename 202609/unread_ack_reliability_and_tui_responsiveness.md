@@ -1,165 +1,163 @@
 ---
 tier: epic
 title: Make unread acks stick and keep the Agents TUI responsive
-goal: "Unread acknowledgments (`,u`, `,j`/`,J`, row-select) are never reverted by
+goal: 'Unread acknowledgments (`,u`, `,j`/`,J`, row-select) are never reverted by
   another notification-store writer or by an older snapshot, and unread actions paint
   within budget: no UI-thread store reads, no full Agents rebuilds for unread-only
   changes, and no multi-second main-loop freezes from the 1 Hz runtime tick or fleet
   reprojection.
 
-  "
+  '
 phases:
-  - id: reconciler-delta-write
-    title: Remote-attention reconciler writes only the rows it changed
-    depends_on: []
-    size: small
-    description: "reconciler-delta-write: stop reconcile_remote_attention_inbox from
-      handing every store row back to rewrite_notifications, and ignore per-poll
-      observed_at churn in change detection, with a lost-update interleave regression
-      test.
+- id: reconciler-delta-write
+  title: Remote-attention reconciler writes only the rows it changed
+  depends_on: []
+  size: small
+  description: 'reconciler-delta-write: stop reconcile_remote_attention_inbox from
+    handing every store row back to rewrite_notifications, and ignore per-poll observed_at
+    churn in change detection, with a lost-update interleave regression test.
 
-      "
-  - id: core-reconcile-upsert
-    title: Atomic field-scoped reconcile write in sase-core
-    depends_on:
-      - reconciler-delta-write
-    size: medium
-    description: "core-reconcile-upsert: add a lock-held, field-scoped notification
-      reconcile write plus empty raw_suffix matcher parity to sase_core, bind it with
-      the GIL released, switch the attention reconciler to it, and move the core pin.
+    '
+- id: core-reconcile-upsert
+  title: Atomic field-scoped reconcile write in sase-core
+  depends_on:
+  - reconciler-delta-write
+  size: medium
+  description: 'core-reconcile-upsert: add a lock-held, field-scoped notification
+    reconcile write plus empty raw_suffix matcher parity to sase_core, bind it with
+    the GIL released, switch the attention reconciler to it, and move the core pin.
 
-      "
-  - id: unread-instrumentation
-    title: Trace spans, leader-key perf capture, and unread/idle benches
-    depends_on: []
-    size: small
-    description: "unread-instrumentation: add tui_trace spans and SASE_TUI_PERF
-      key-to-paint capture for leader unread keys, plus unread and idle-tick bench
-      scenarios that record the baseline later phases compare against.
+    '
+- id: unread-instrumentation
+  title: Trace spans, leader-key perf capture, and unread/idle benches
+  depends_on: []
+  size: small
+  description: 'unread-instrumentation: add tui_trace spans and SASE_TUI_PERF key-to-paint
+    capture for leader unread keys, plus unread and idle-tick bench scenarios that
+    record the baseline later phases compare against.
 
-      "
-  - id: roster-generation
-    title: Roster generation counter and cached projection index
-    depends_on:
-      - unread-instrumentation
-    size: medium
-    description: "roster-generation: introduce one app-wide roster generation bumped on
-      every roster assignment and in-place status mutation, cache
-      agent_node_projection_index per generation, and remove its quadratic dedupe.
+    '
+- id: roster-generation
+  title: Roster generation counter and cached projection index
+  depends_on:
+  - unread-instrumentation
+  size: medium
+  description: 'roster-generation: introduce one app-wide roster generation bumped
+    on every roster assignment and in-place status mutation, cache agent_node_projection_index
+    per generation, and remove its quadratic dedupe.
 
-      "
-  - id: pending-ack-fence
-    title: Sequence-fenced pending-ack overlay and monotonic snapshot cache
-    depends_on:
-      - roster-generation
-    size: medium
-    description: "pending-ack-fence: stamp snapshot reads with a read sequence, keep
-      in-flight acks as a pending overlay every reconcile path honors, reject stale
-      snapshots in the cache, narrow failure restore to owned identities, and stop
-      re-confirmations from invalidating undo.
+    '
+- id: pending-ack-fence
+  title: Sequence-fenced pending-ack overlay and monotonic snapshot cache
+  depends_on:
+  - roster-generation
+  size: medium
+  description: 'pending-ack-fence: stamp snapshot reads with a read sequence, keep
+    in-flight acks as a pending overlay every reconcile path honors, reject stale
+    snapshots in the cache, narrow failure restore to owned identities, and stop re-confirmations
+    from invalidating undo.
 
-      "
-  - id: unread-chrome-helper
-    title: One batched unread chrome helper with no full rebuilds
-    depends_on:
-      - pending-ack-fence
-    size: medium
-    description: "unread-chrome-helper: route every unread change through one helper
-      that patches only visible changed rows via an identity map, skips collapsed
-      panels, never falls back to a full rebuild, and refreshes titles, info panel,
-      machine chip/tab strip and tribe summary once each.
+    '
+- id: unread-chrome-helper
+  title: One batched unread chrome helper with no full rebuilds
+  depends_on:
+  - pending-ack-fence
+  size: medium
+  description: 'unread-chrome-helper: route every unread change through one helper
+    that patches only visible changed rows via an identity map, skips collapsed panels,
+    never falls back to a full rebuild, and refreshes titles, info panel, machine
+    chip/tab strip and tribe summary once each.
 
-      "
-  - id: bulk-ack-scope-and-undo
-    title: Precise bulk-ack scope and a time-bound explicit undo
-    depends_on:
-      - unread-chrome-helper
-    size: small
-    description: "bulk-ack-scope-and-undo: make the bulk-ack target set share one
-      predicate with the header unread count across tabs, collapsed clans and tribes,
-      and replace the silent toggle with a toast-announced 10 second undo window.
+    '
+- id: bulk-ack-scope-and-undo
+  title: Precise bulk-ack scope and a time-bound explicit undo
+  depends_on:
+  - unread-chrome-helper
+  size: small
+  description: 'bulk-ack-scope-and-undo: make the bulk-ack target set share one predicate
+    with the header unread count across tabs, collapsed clans and tribes, and replace
+    the silent toggle with a toast-announced 10 second undo window.
 
-      "
-  - id: ack-pipeline
-    title: Read-free ack completion and a coalescing ack writer
-    depends_on:
-      - pending-ack-fence
-      - unread-chrome-helper
-      - bulk-ack-scope-and-undo
-    size: medium
-    description: "ack-pipeline: delete the synchronous post-ack store read, apply ack
-      outcomes to the cached snapshot by id, schedule only the guarded async resync, and
-      drain queued acks through one coalescing worker that issues one Rust call per
-      batch.
+    '
+- id: ack-pipeline
+  title: Read-free ack completion and a coalescing ack writer
+  depends_on:
+  - pending-ack-fence
+  - unread-chrome-helper
+  - bulk-ack-scope-and-undo
+  size: medium
+  description: 'ack-pipeline: delete the synchronous post-ack store read, apply ack
+    outcomes to the cached snapshot by id, schedule only the guarded async resync,
+    and drain queued acks through one coalescing worker that issues one Rust call
+    per batch.
 
-      "
-  - id: unread-jump-fast-path
-    title: Cheap unread jumps and footer probe
-    depends_on:
-      - roster-generation
-      - unread-chrome-helper
-      - ack-pipeline
-    size: medium
-    description: "unread-jump-fast-path: drop the unconditional trailing tab refresh
-      from the unread jump keys, keep detail behind the debounce, reveal only the target
-      panel, make the footer probe O(1), and key the jump-candidate cache by generations
-      with remove-on-ack.
+    '
+- id: unread-jump-fast-path
+  title: Cheap unread jumps and footer probe
+  depends_on:
+  - roster-generation
+  - unread-chrome-helper
+  - ack-pipeline
+  size: medium
+  description: 'unread-jump-fast-path: drop the unconditional trailing tab refresh
+    from the unread jump keys, keep detail behind the debounce, reveal only the target
+    panel, make the footer probe O(1), and key the jump-candidate cache by generations
+    with remove-on-ack.
 
-      "
-  - id: runtime-tick-caches
-    title: Cached wait-status maps and change-only runtime patching
-    depends_on:
-      - unread-instrumentation
-      - roster-generation
-    size: medium
-    description: "runtime-tick-caches: cache collect_agent_wait_status_maps per roster
-      generation, patch runtime rows only when their rendered runtime text changes, and
-      cache clan runtime aggregation so the 1 Hz tick stops freezing the loop.
+    '
+- id: runtime-tick-caches
+  title: Cached wait-status maps and change-only runtime patching
+  depends_on:
+  - unread-instrumentation
+  - roster-generation
+  size: medium
+  description: 'runtime-tick-caches: cache collect_agent_wait_status_maps per roster
+    generation, patch runtime rows only when their rendered runtime text changes,
+    and cache clan runtime aggregation so the 1 Hz tick stops freezing the loop.
 
-      "
-  - id: fleet-signature-cheap
-    title: Cheap fleet reprojection signature computed before projection
-    depends_on:
-      - unread-instrumentation
-      - roster-generation
-    size: medium
-    description: "fleet-signature-cheap: replace the recursive deep-freeze projection
-      signature with a structural signature from the roster generation and fleet wire
-      revisions, checked before project_clan_tree runs, with host-level freshness fields
-      patched in the header only.
+    '
+- id: fleet-signature-cheap
+  title: Cheap fleet reprojection signature computed before projection
+  depends_on:
+  - unread-instrumentation
+  - roster-generation
+  size: medium
+  description: 'fleet-signature-cheap: replace the recursive deep-freeze projection
+    signature with a structural signature from the roster generation and fleet wire
+    revisions, checked before project_clan_tree runs, with host-level freshness fields
+    patched in the header only.
 
-      "
-  - id: core-unread-ack-index
-    title: Rust ack API, lean unread index, and store generations
-    depends_on:
-      - core-reconcile-upsert
-      - pending-ack-fence
-      - ack-pipeline
-      - unread-jump-fast-path
-    size: large
-    description: "core-unread-ack-index: move completion acks and the unread completion
-      index into sase_core as lean GIL-released calls that return dismissed ids and a
-      store generation, then replace the Python read-sequence fence with store
-      generations.
+    '
+- id: core-unread-ack-index
+  title: Rust ack API, lean unread index, and store generations
+  depends_on:
+  - core-reconcile-upsert
+  - pending-ack-fence
+  - ack-pipeline
+  - unread-jump-fast-path
+  size: large
+  description: 'core-unread-ack-index: move completion acks and the unread completion
+    index into sase_core as lean GIL-released calls that return dismissed ids and
+    a store generation, then replace the Python read-sequence fence with store generations.
 
-      "
-  - id: notification-store-diet
-    title: Notification store retention and wait-check payload diet
-    depends_on:
-      - core-reconcile-upsert
-      - core-unread-ack-index
-    size: large
-    description:
-      "notification-store-diet: shorten live retention of dismissed rows and bound
-      wait_checks plus_ones and action_data so every full read, rewrite and lock window
-      scales with a much smaller store."
+    '
+- id: notification-store-diet
+  title: Notification store retention and wait-check payload diet
+  depends_on:
+  - core-reconcile-upsert
+  - core-unread-ack-index
+  size: large
+  description: 'notification-store-diet: shorten live retention of dismissed rows
+    and bound wait_checks plus_ones and action_data so every full read, rewrite and
+    lock window scales with a much smaller store.'
 proposed_by: bbugyi200.athena.0uc
 create_time: 2026-09-30 07:18:03
 status: wip
+bead_id: sase-1d7
 ---
 
-- **PROMPT:**
-  [prompts/202609/unread_ack_reliability_and_tui_responsiveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/unread_ack_reliability_and_tui_responsiveness.md)
+- **PROMPT:** [prompts/202609/unread_ack_reliability_and_tui_responsiveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/unread_ack_reliability_and_tui_responsiveness.md)
+- **BEAD:** [sase-1d7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d7/README.md)
 
 <!-- sase:links:start -->
 
