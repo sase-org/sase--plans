@@ -79,7 +79,7 @@ phases:
     the live escalate-then-join harness case.'
 proposed_by: bbugyi200.athena.0u3
 create_time: 2026-09-29 20:32:10
-status: wip
+status: done
 bead_id: sase-1cx
 ---
 
