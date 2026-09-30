@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Join detached ToolRuns with monitors
-goal: A monitor can join an existing detached ToolRun, stream and settle its outcome,
-  and stop it safely without starting another run.
+goal:
+  A monitor can join an existing detached ToolRun, stream and settle its outcome, and
+  stop it safely without starting another run.
 size: medium
 proposed_by: bbugyi200.athena.sase-1cx.5
 bead: sase-1cx.5
@@ -13,6 +14,11 @@ status: done
   [202609/tool_run_escalation.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_run_escalation.md)
 - **BEAD:**
   [sase-1cx.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cx/sase-1cx.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1cx.5](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1cx.5.md)
+- **COMMITS:**
+  - [e032ec4](https://github.com/sase-org/sase/commit/e032ec4d4ac33578f25caf8005140393fab0261e)
+    — feat(tool): join detached ToolRuns with monitors (sase-1cx.5)
 
 # Monitor joins for detached ToolRuns
 
