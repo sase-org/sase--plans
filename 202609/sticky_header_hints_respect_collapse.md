@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Keep the Agents-tab sticky header collapsed in hint mode
-goal:
-  Pressing `v` on the Agents tab never expands the sticky header; header content is
-  hinted only when the header was already expanded, and a collapsed header stays
+goal: Pressing `v` on the Agents tab never expands the sticky header; header content
+  is hinted only when the header was already expanded, and a collapsed header stays
   visually unchanged with no hidden hint numbers.
 size: medium
 proposed_by: bbugyi200.athena.0uh
-create_time: 2026-09-30 14:07:16
-status: wip
+status: done
 ---
 
 # Plan: Keep the Agents-tab sticky header's expand state unchanged by `v` hint mode
