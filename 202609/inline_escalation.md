@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Inline-then-escalate agent tool runs
-goal: An agent's plain sase tool run follows one detached run within the sync budget
-  and escalates without stopping it.
+goal:
+  An agent's plain sase tool run follows one detached run within the sync budget and
+  escalates without stopping it.
 size: medium
 bead_id: sase-1cx.6
 proposed_by: bbugyi200.athena.sase-1cx.6
@@ -14,6 +15,11 @@ status: done
   [202609/tool_run_escalation.md](https://github.com/sase-org/sase--plans/blob/main/202609/tool_run_escalation.md)
 - **BEAD:**
   [sase-1cx.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cx/sase-1cx.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1cx.6](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1cx.6.md)
+- **COMMITS:**
+  - [c68da8c](https://github.com/sase-org/sase/commit/c68da8c475e6fb00403827e0a4926970bc0a1918)
+    — feat(tool): add inline escalation to detached handoff run
 
 # Plan: Inline-then-escalate agent tool runs
 
