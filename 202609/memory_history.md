@@ -1,159 +1,148 @@
 ---
 tier: epic
-title: "Memory history: a time axis for SASE memory and agent instruction files"
-goal: "Every committed version of every SASE memory note, web, strand, and agent
-  instruction file (AGENTS.md plus its provider shims, project and home) can be browsed
-  quickly and understood at a glance. The pager is the single place where history is
-  read, and it can be reached from the Memory panel, a cross-file changes feed, and
-  `sase memory history` (which also has JSON output for agents). Git remains the only
-  store. A disposable, incremental metadata index in sase-core provides the speed.
-  Tracking gaps and dirty states are always visible, never hidden.
+title: 'Memory history: a time axis for SASE memory and agent instruction files'
+goal: 'Every committed version of every SASE memory note, web, strand, and agent instruction
+  file (AGENTS.md plus its provider shims, project and home) can be browsed quickly
+  and understood at a glance. The pager is the single place where history is read,
+  and it can be reached from the Memory panel, a cross-file changes feed, and `sase
+  memory history` (which also has JSON output for agents). Git remains the only store.
+  A disposable, incremental metadata index in sase-core provides the speed. Tracking
+  gaps and dirty states are always visible, never hidden.
 
-  "
+  '
 phases:
-  - id: capture
-    title: Tracking guarantees and as-seen evidence capture
-    depends_on: []
-    size: medium
-    description:
-      "capture: make untracked or ignored managed memory and instruction files a `sase
-      memory init --check` failure, make publish fail loudly when an intended file was
-      not committed, and start recording what each agent saw: the workspace HEAD and
-      instruction blob OIDs at launch, and blob OIDs on audited memory reads."
-  - id: prose-diff
-    title: Prose-aware comparison engine in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "prose-diff: add a pure sase-core `prose_diff` module and binding. Given two
-      Markdown texts, it returns per-line change marks, reflow-insensitive word
-      operations, hunks with heading paths, a bidirectional line map, a YAML-aware
-      frontmatter delta, word stats, and unified diff text."
-  - id: file-history
-    title: Generic git file-history index in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "file-history: add sase-core `file_history`. It runs a bounded, lock-free git
-      runner and parses a first-parent `--raw -M` log over explicit pathspecs. It builds
-      rename-aware lineage and path aliases, updates incrementally by tip ancestry,
-      detects shallow or incomplete history, reads blobs in batches, reports a path's
-      worktree, index, and tracked state, and persists a serializable snapshot."
-  - id: memory-history-core
-    title: Memory history semantics, cache, and query bindings in sase-core
-    depends_on:
-      - prose-diff
-      - file-history
-    size: large
-    description:
-      "memory-history-core: build the semantic layer over file_history. This covers
-      subjects (note, web, strand, instructions, asset), per-version shim aliasing by
-      blob equality, version classes and summaries, commit-footer provenance, cause
-      attribution for instruction renders, changesets and the feed, sparkline volumes,
-      the persisted per-scope snapshot, and the GIL-releasing query bindings. It is
-      tested against a fixture corpus modelled on real SASE history."
-  - id: history-cli
-    title: Python history service and the sase memory history CLI
-    depends_on:
-      - memory-history-core
-    size: medium
-    description:
-      "history-cli: add the thin facade and wire types, a scope builder for project and
-      chezmoi home repos from the agent-docs inventory and generated-note list, a
-      thread-safe history service, and one shared visual-vocabulary table. Ship `sase
-      memory history` with colored text and JSON output for subjects, versions, diffs,
-      and the feed. Measure real-repo performance."
-  - id: pager-axis
-    title: Pager time axis and read view
-    depends_on:
-      - history-cli
-    size: large
-    description:
-      "pager-axis: create the temporary beta flag. Add a generic section-history
-      provider seam to the pager and the memory provider. Add the history mixin with the
-      `(` `)` `{` `}` keys, version-pinned sections and trail entries, scroll anchoring,
-      neighbour prefetch, and generation-guarded workers. Add the read-view change
-      gutter, the subject chip, and the past accent. Links in a past version resolve at
-      that revision. The CLI opens this pager by default on a TTY."
-  - id: time-band
-    title: Time band chrome, sparkline, and honest states
-    depends_on:
-      - pager-axis
-    size: medium
-    description:
-      "time-band: add the time band. At now it is a one-row life strip; in the past it
-      has two rows, a meaning row and a sparkline time row. Its provenance items are
-      label targets. Add the instruction-file cause row, alias and diverged chips,
-      honest state labels (untracked, ignored, no VCS, shallow, template, indexing,
-      unavailable), and the upstream-ahead marker. Degrade by height and width together
-      with the trail band. Add visual goldens."
-  - id: diff-view
-    title: Word-diff view and change navigation
-    depends_on:
-      - pager-axis
-    size: medium
-    description:
-      "diff-view: add the `=` read/diff toggle. The diff view shows inline word
-      insertions and struck-through deletions, a frontmatter semantic block, and folds
-      of unchanged runs that expand in place from a label. `[` and `]` jump between
-      changes in both views. The default view depends on how the user arrived and then
-      sticks for the session. `yy` copies a unified diff, and the CLI `-d` opens this
-      view. Add visual goldens."
-  - id: timeline-picker
-    title: Timeline picker with two-point compare
-    depends_on:
-      - diff-view
-    size: medium
-    description:
-      "timeline-picker: add the `@` modal timeline over all versions, including worktree
-      and staged rows and a hidden-versions summary row. It has vim-style list keys, a
-      `/` filter across section, agent, bead, and words, `⏎` jumps that push a trail
-      entry, `=` to compare the row with the open version, and `.` to toggle hidden
-      versions. It stays fast on timelines with hundreds of versions. Add visual
-      goldens."
-  - id: changes-feed
-    title: Cross-file memory changes feed
-    depends_on:
-      - diff-view
-    size: medium
-    description:
-      "changes-feed: running `sase memory history` with no selector opens a pager feed.
-      It has one section per day. Each changeset lists its authored subjects as labels
-      that open subject@version in the diff view. Generated consequences fold under
-      their cause, regen-only changesets collapse into an expandable count, and home
-      changes interleave with a ⌂ tag. `r` resyncs the feed. Add visual goldens."
-  - id: memory-panel
-    title: Memory panel entry points and History row
-    depends_on:
-      - time-band
-      - changes-feed
-    size: medium
-    description:
-      "memory-panel: add the Memory panel `H` binding, which opens the selected note,
-      web, or strand in the pager at now, and the `C` binding, which opens the changes
-      feed. Add a History card row with a mini sparkline, loaded off-thread after paint.
-      Wire the keymap everywhere the gotchas require, including default_config.yml, and
-      add visual goldens."
-  - id: launch
-    title: Unflag, document, and verify end to end
-    depends_on:
-      - capture
-      - time-band
-      - timeline-picker
-      - memory-panel
-    size: small
-    description:
-      "launch: remove the beta flag by deleting its off branches and closing the flag
-      bead. Write the user guide and link it from the memory and pager docs. Verify the
-      performance budgets with TUI tracing, review the complete visual golden set, and
-      record the listed follow-ups as proposed follow-up notes."
+- id: capture
+  title: Tracking guarantees and as-seen evidence capture
+  depends_on: []
+  size: medium
+  description: 'capture: make untracked or ignored managed memory and instruction
+    files a `sase memory init --check` failure, make publish fail loudly when an intended
+    file was not committed, and start recording what each agent saw: the workspace
+    HEAD and instruction blob OIDs at launch, and blob OIDs on audited memory reads.'
+- id: prose-diff
+  title: Prose-aware comparison engine in sase-core
+  depends_on: []
+  size: medium
+  description: 'prose-diff: add a pure sase-core `prose_diff` module and binding.
+    Given two Markdown texts, it returns per-line change marks, reflow-insensitive
+    word operations, hunks with heading paths, a bidirectional line map, a YAML-aware
+    frontmatter delta, word stats, and unified diff text.'
+- id: file-history
+  title: Generic git file-history index in sase-core
+  depends_on: []
+  size: medium
+  description: 'file-history: add sase-core `file_history`. It runs a bounded, lock-free
+    git runner and parses a first-parent `--raw -M` log over explicit pathspecs. It
+    builds rename-aware lineage and path aliases, updates incrementally by tip ancestry,
+    detects shallow or incomplete history, reads blobs in batches, reports a path''s
+    worktree, index, and tracked state, and persists a serializable snapshot.'
+- id: memory-history-core
+  title: Memory history semantics, cache, and query bindings in sase-core
+  depends_on:
+  - prose-diff
+  - file-history
+  size: large
+  description: 'memory-history-core: build the semantic layer over file_history. This
+    covers subjects (note, web, strand, instructions, asset), per-version shim aliasing
+    by blob equality, version classes and summaries, commit-footer provenance, cause
+    attribution for instruction renders, changesets and the feed, sparkline volumes,
+    the persisted per-scope snapshot, and the GIL-releasing query bindings. It is
+    tested against a fixture corpus modelled on real SASE history.'
+- id: history-cli
+  title: Python history service and the sase memory history CLI
+  depends_on:
+  - memory-history-core
+  size: medium
+  description: 'history-cli: add the thin facade and wire types, a scope builder for
+    project and chezmoi home repos from the agent-docs inventory and generated-note
+    list, a thread-safe history service, and one shared visual-vocabulary table. Ship
+    `sase memory history` with colored text and JSON output for subjects, versions,
+    diffs, and the feed. Measure real-repo performance.'
+- id: pager-axis
+  title: Pager time axis and read view
+  depends_on:
+  - history-cli
+  size: large
+  description: 'pager-axis: create the temporary beta flag. Add a generic section-history
+    provider seam to the pager and the memory provider. Add the history mixin with
+    the `(` `)` `{` `}` keys, version-pinned sections and trail entries, scroll anchoring,
+    neighbour prefetch, and generation-guarded workers. Add the read-view change gutter,
+    the subject chip, and the past accent. Links in a past version resolve at that
+    revision. The CLI opens this pager by default on a TTY.'
+- id: time-band
+  title: Time band chrome, sparkline, and honest states
+  depends_on:
+  - pager-axis
+  size: medium
+  description: 'time-band: add the time band. At now it is a one-row life strip; in
+    the past it has two rows, a meaning row and a sparkline time row. Its provenance
+    items are label targets. Add the instruction-file cause row, alias and diverged
+    chips, honest state labels (untracked, ignored, no VCS, shallow, template, indexing,
+    unavailable), and the upstream-ahead marker. Degrade by height and width together
+    with the trail band. Add visual goldens.'
+- id: diff-view
+  title: Word-diff view and change navigation
+  depends_on:
+  - pager-axis
+  size: medium
+  description: 'diff-view: add the `=` read/diff toggle. The diff view shows inline
+    word insertions and struck-through deletions, a frontmatter semantic block, and
+    folds of unchanged runs that expand in place from a label. `[` and `]` jump between
+    changes in both views. The default view depends on how the user arrived and then
+    sticks for the session. `yy` copies a unified diff, and the CLI `-d` opens this
+    view. Add visual goldens.'
+- id: timeline-picker
+  title: Timeline picker with two-point compare
+  depends_on:
+  - diff-view
+  size: medium
+  description: 'timeline-picker: add the `@` modal timeline over all versions, including
+    worktree and staged rows and a hidden-versions summary row. It has vim-style list
+    keys, a `/` filter across section, agent, bead, and words, `⏎` jumps that push
+    a trail entry, `=` to compare the row with the open version, and `.` to toggle
+    hidden versions. It stays fast on timelines with hundreds of versions. Add visual
+    goldens.'
+- id: changes-feed
+  title: Cross-file memory changes feed
+  depends_on:
+  - diff-view
+  size: medium
+  description: 'changes-feed: running `sase memory history` with no selector opens
+    a pager feed. It has one section per day. Each changeset lists its authored subjects
+    as labels that open subject@version in the diff view. Generated consequences fold
+    under their cause, regen-only changesets collapse into an expandable count, and
+    home changes interleave with a ⌂ tag. `r` resyncs the feed. Add visual goldens.'
+- id: memory-panel
+  title: Memory panel entry points and History row
+  depends_on:
+  - time-band
+  - changes-feed
+  size: medium
+  description: 'memory-panel: add the Memory panel `H` binding, which opens the selected
+    note, web, or strand in the pager at now, and the `C` binding, which opens the
+    changes feed. Add a History card row with a mini sparkline, loaded off-thread
+    after paint. Wire the keymap everywhere the gotchas require, including default_config.yml,
+    and add visual goldens.'
+- id: launch
+  title: Unflag, document, and verify end to end
+  depends_on:
+  - capture
+  - time-band
+  - timeline-picker
+  - memory-panel
+  size: small
+  description: 'launch: remove the beta flag by deleting its off branches and closing
+    the flag bead. Write the user guide and link it from the memory and pager docs.
+    Verify the performance budgets with TUI tracing, review the complete visual golden
+    set, and record the listed follow-ups as proposed follow-up notes.'
 proposed_by: bbugyi200.apollo.3o
 create_time: 2026-09-30 19:09:10
 status: wip
+bead_id: sase-1dr
 ---
 
-- **PROMPT:**
-  [prompts/202609/memory_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/memory_history.md)
+- **PROMPT:** [prompts/202609/memory_history.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/memory_history.md)
+- **BEAD:** [sase-1dr](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1dr/README.md)
 
 # Plan: Memory history, a time axis for SASE memory and agent instruction files
 
