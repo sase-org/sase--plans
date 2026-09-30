@@ -1,68 +1,64 @@
 ---
 tier: epic
 title: sase tool stats and ToolRun demand instrumentation
-goal: "`sase tool stats` turns the ToolRun ledger into routine, read-only readouts (per
-  tool, stage, route, and provider: p50/p90, outcome and censoring mix, ceiling kills
-  and wasted hours, repeats and duplicates, a daily trend, a chronological backtest, and
-  host pressure), and every new run records the demand evidence a future admission
+goal: '`sase tool stats` turns the ToolRun ledger into routine, read-only readouts
+  (per tool, stage, route, and provider: p50/p90, outcome and censoring mix, ceiling
+  kills and wasted hours, repeats and duplicates, a daily trend, a chronological backtest,
+  and host pressure), and every new run records the demand evidence a future admission
   design needs: provider and ceiling context, process-tree CPU and memory, and pytest
   worker grants with token-wait time.
 
-  "
+  '
 phases:
-  - id: core-demand
-    title: Rust demand record, store column, and binding
-    depends_on: []
-    size: small
-    description:
-      "core-demand: in sase-core, add the ToolRunDemandWire family, a demand_json runs
-      column, a merge-on-write record_demand store function with its
-      tool_run_record_demand binding, and expose the record on ToolRunWire."
-  - id: record-demand
-    title: Record context, resource usage, and pytest worker grants
-    depends_on:
-      - core-demand
-    size: medium
-    description:
-      "record-demand: pin the core, capture provider and ceiling context at run start,
-      reap the child with wait4 for CPU and max RSS, sample live tree RSS, add the
-      SASE_TOOL_RUN_DEMAND grant channel written by tools/run_pytest, and render the
-      record in sase tool show."
-  - id: core-stats
-    title: Rust stats report over the runs table
-    depends_on:
-      - core-demand
-    size: medium
-    description:
-      "core-stats: in sase-core, add the read-only tool_run_stats_report function and
-      binding covering outcomes, durations, routes, ceiling kills, waste, reruns,
-      providers, trend, repeats, duplicates, and demand aggregates."
-  - id: core-stats-detail
-    title: Stage, backtest, and pressure sections in the stats report
-    depends_on:
-      - core-stats
-    size: medium
-    description:
-      "core-stats-detail: in sase-core, extend the stats report with per-stage
-      distributions, whole-run and per-stage chronological backtests, and a bucketed
-      host-pressure section read from the stages and samples tables."
-  - id: stats-cli
-    title: sase tool stats command, rendering, and docs
-    depends_on:
-      - record-demand
-      - core-stats-detail
-    size: medium
-    description:
-      "stats-cli: pin the core, add the Python facade and the sase tool stats subcommand
-      with its JSON envelope and human tables, and document stats plus how its fields
-      measure the parked E6, E7, and E8 reconsider conditions."
+- id: core-demand
+  title: Rust demand record, store column, and binding
+  depends_on: []
+  size: small
+  description: 'core-demand: in sase-core, add the ToolRunDemandWire family, a demand_json
+    runs column, a merge-on-write record_demand store function with its tool_run_record_demand
+    binding, and expose the record on ToolRunWire.'
+- id: record-demand
+  title: Record context, resource usage, and pytest worker grants
+  depends_on:
+  - core-demand
+  size: medium
+  description: 'record-demand: pin the core, capture provider and ceiling context
+    at run start, reap the child with wait4 for CPU and max RSS, sample live tree
+    RSS, add the SASE_TOOL_RUN_DEMAND grant channel written by tools/run_pytest, and
+    render the record in sase tool show.'
+- id: core-stats
+  title: Rust stats report over the runs table
+  depends_on:
+  - core-demand
+  size: medium
+  description: 'core-stats: in sase-core, add the read-only tool_run_stats_report
+    function and binding covering outcomes, durations, routes, ceiling kills, waste,
+    reruns, providers, trend, repeats, duplicates, and demand aggregates.'
+- id: core-stats-detail
+  title: Stage, backtest, and pressure sections in the stats report
+  depends_on:
+  - core-stats
+  size: medium
+  description: 'core-stats-detail: in sase-core, extend the stats report with per-stage
+    distributions, whole-run and per-stage chronological backtests, and a bucketed
+    host-pressure section read from the stages and samples tables.'
+- id: stats-cli
+  title: sase tool stats command, rendering, and docs
+  depends_on:
+  - record-demand
+  - core-stats-detail
+  size: medium
+  description: 'stats-cli: pin the core, add the Python facade and the sase tool stats
+    subcommand with its JSON envelope and human tables, and document stats plus how
+    its fields measure the parked E6, E7, and E8 reconsider conditions.'
 proposed_by: bbugyi200.athena.0u4
 create_time: 2026-09-30 16:20:02
 status: wip
+bead_id: sase-1dm
 ---
 
-- **PROMPT:**
-  [prompts/202609/tool_stats_demand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_stats_demand.md)
+- **PROMPT:** [prompts/202609/tool_stats_demand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/tool_stats_demand.md)
+- **BEAD:** [sase-1dm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1dm/README.md)
 
 # Plan: `sase tool stats` and ToolRun demand instrumentation
 
