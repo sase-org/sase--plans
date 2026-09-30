@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Lazy attachment-store discovery on show and read
-goal: Show and read of a bead with no attachments do no attachment-store work, then
-  epic sase-1ck.5.1 and its parent phase sase-1ck.5 are closed.
+goal:
+  Show and read of a bead with no attachments do no attachment-store work, then epic
+  sase-1ck.5.1 and its parent phase sase-1ck.5 are closed.
 size: small
 proposed_by: bbugyi200.athena.sase-1ck.5.1.land
 bead: sase-1ck.5.1
@@ -13,6 +14,11 @@ status: done
   [202609/private_attachment_store.md](https://github.com/sase-org/sase--plans/blob/main/202609/private_attachment_store.md)
 - **BEAD:**
   [sase-1ck.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ck/sase-1ck.5.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ck.5.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ck.5.1.land.md)
+- **COMMITS:**
+  - [5a4b979](https://github.com/sase-org/sase/commit/5a4b979ce89a5c315c8e71520d7306b8a4a8227d)
+    — feat(bead-attachments): lazy attachment-store discovery on show and read
 
 # Plan: Lazy attachment-store discovery on show and read
 
