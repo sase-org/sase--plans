@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Lazy attachment-store discovery on show and read
-goal:
-  Show and read of a bead with no attachments do no attachment-store work, then epic
-  sase-1ck.5.1 and its parent phase sase-1ck.5 are closed.
+goal: Show and read of a bead with no attachments do no attachment-store work, then
+  epic sase-1ck.5.1 and its parent phase sase-1ck.5 are closed.
 size: small
 proposed_by: bbugyi200.athena.sase-1ck.5.1.land
 bead: sase-1ck.5.1
-create_time: 2026-09-29 20:25:17
-status: wip
+status: done
 ---
 
 - **PARENT:**
