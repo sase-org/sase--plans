@@ -36,7 +36,7 @@ phases:
     matches and Shift+Tab going back, update tests, snapshots, help, and snippet docs.'
 proposed_by: bbugyi200.athena.0u8
 create_time: 2026-09-29 18:58:43
-status: wip
+status: done
 bead_id: sase-1cu
 ---
 
