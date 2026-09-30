@@ -1,57 +1,55 @@
 ---
 tier: epic
 title: Prompt history records human submissions only
-goal: "Prompt history holds one row per human submission: the canonical text a person
-  submitted through the TUI prompt bar, `sase run` / `sase prompt run`, or
-  mobile/Telegram. It holds nothing a machine launched: swarm members, routine jobs,
-  bead work, approvals, restarts, relaunched member agents, monitor and gate-command
-  launches. The machine rows already in the store can be pruned safely.
+goal: 'Prompt history holds one row per human submission: the canonical text a person
+  submitted through the TUI prompt bar, `sase run` / `sase prompt run`, or mobile/Telegram.
+  It holds nothing a machine launched: swarm members, routine jobs, bead work, approvals,
+  restarts, relaunched member agents, monitor and gate-command launches. The machine
+  rows already in the store can be pruned safely.
 
-  "
+  '
 phases:
-  - id: gate
-    title: Write gate and sase run ingress provenance
-    depends_on: []
-    size: medium
-    description:
-      "gate: make generated-origin writes a no-op in both history writers (no row, no
-      placeholder, no Stash entry); classify sase run invocations from monitors and gate
-      commands as generated; record the root prompt for direct typed admission and
-      remote dispatch; enforce explicit launcher origins with an AST test."
-  - id: canonical-text
-    title: Record each submission's canonical text once
-    depends_on:
-      - gate
-    size: medium
-    description:
-      "canonical-text: add an ingress-owned history_text to the launcher so single-slot
-      swarms, %r:N, force-reuse and launch_units launches record the submitted text
-      exactly once; teach sase run the history_text and history_origin payload keys."
-  - id: tui-provenance
-    title: TUI submissions carry their history text and origin
-    depends_on:
-      - canonical-text
-    size: medium
-    description:
-      "tui-provenance: keep the pre-remodel prompt on PendingLaunch and send it as
-      history_text; mark member-agent relaunches and mentor-apply launches generated
-      across submit, cancel and failed-launch recovery."
-  - id: prune
-    title: Prune machine rows from the existing store
-    depends_on:
-      - gate
-    size: medium
-    description:
-      "prune: extend sase-core's looks_generated classifier and expose it to Python; add
-      sase prompt prune --generated/--legacy with preview, backup and typed-wins
-      protection; report origin counts in sase prompt doctor."
+- id: gate
+  title: Write gate and sase run ingress provenance
+  depends_on: []
+  size: medium
+  description: 'gate: make generated-origin writes a no-op in both history writers
+    (no row, no placeholder, no Stash entry); classify sase run invocations from monitors
+    and gate commands as generated; record the root prompt for direct typed admission
+    and remote dispatch; enforce explicit launcher origins with an AST test.'
+- id: canonical-text
+  title: Record each submission's canonical text once
+  depends_on:
+  - gate
+  size: medium
+  description: 'canonical-text: add an ingress-owned history_text to the launcher
+    so single-slot swarms, %r:N, force-reuse and launch_units launches record the
+    submitted text exactly once; teach sase run the history_text and history_origin
+    payload keys.'
+- id: tui-provenance
+  title: TUI submissions carry their history text and origin
+  depends_on:
+  - canonical-text
+  size: medium
+  description: 'tui-provenance: keep the pre-remodel prompt on PendingLaunch and send
+    it as history_text; mark member-agent relaunches and mentor-apply launches generated
+    across submit, cancel and failed-launch recovery.'
+- id: prune
+  title: Prune machine rows from the existing store
+  depends_on:
+  - gate
+  size: medium
+  description: 'prune: extend sase-core''s looks_generated classifier and expose it
+    to Python; add sase prompt prune --generated/--legacy with preview, backup and
+    typed-wins protection; report origin counts in sase prompt doctor.'
 proposed_by: bbugyi200.athena.0ud
 create_time: 2026-09-30 07:44:44
 status: wip
+bead_id: sase-1d8
 ---
 
-- **PROMPT:**
-  [prompts/202609/prompt_history_human_only.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_history_human_only.md)
+- **PROMPT:** [prompts/202609/prompt_history_human_only.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/prompt_history_human_only.md)
+- **BEAD:** [sase-1d8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1d8/README.md)
 
 # Plan: Prompt history records human submissions only
 
