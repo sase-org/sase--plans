@@ -12,11 +12,6 @@ status: done
   [202609/save_location_picker.md](https://github.com/sase-org/sase--plans/blob/main/202609/save_location_picker.md)
 - **BEAD:**
   [sase-1cu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1cu/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1cu.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1cu.land.md)
-- **COMMITS:**
-  - [4b89ab8](https://github.com/sase-org/sase/commit/4b89ab8108dedb4db432343761d2147784866867)
-    — fix(ace): close snippet picker on origin loss and surface reload errors
 
 # Finish the location-first picker landing
 
