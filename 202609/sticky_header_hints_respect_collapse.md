@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Keep the Agents-tab sticky header collapsed in hint mode
-goal: Pressing `v` on the Agents tab never expands the sticky header; header content
-  is hinted only when the header was already expanded, and a collapsed header stays
+goal:
+  Pressing `v` on the Agents tab never expands the sticky header; header content is
+  hinted only when the header was already expanded, and a collapsed header stays
   visually unchanged with no hidden hint numbers.
 size: medium
 proposed_by: bbugyi200.athena.0uh
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0uh](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0uh.md)
+- **COMMITS:**
+  - [c6b802a](https://github.com/sase-org/sase/commit/c6b802a647519fa2d03d45ebfa7bd60fa03676de)
+    — feat(agents): keep sticky header collapsed in hint mode
 
 # Plan: Keep the Agents-tab sticky header's expand state unchanged by `v` hint mode
 
