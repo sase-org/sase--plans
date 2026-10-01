@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Turn sase master CI green with one stop-the-line repair commit
-goal:
-  Every deterministic failure currently red on the Master Gate and Full CI (lint,
+goal: Every deterministic failure currently red on the Master Gate and Full CI (lint,
   collection, test, visual-test, and perf-floors jobs) is fixed in one reviewed commit,
   with no long-term process or workflow changes.
 size: medium
 proposed_by: bbugyi200.athena.0uw
-create_time: 2026-10-01 12:51:17
-status: wip
+status: done
 ---
 
 <!-- sase:links:start -->
