@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Turn sase master CI green with one stop-the-line repair commit
-goal: Every deterministic failure currently red on the Master Gate and Full CI (lint,
+goal:
+  Every deterministic failure currently red on the Master Gate and Full CI (lint,
   collection, test, visual-test, and perf-floors jobs) is fixed in one reviewed commit,
   with no long-term process or workflow changes.
 size: medium
 proposed_by: bbugyi200.athena.0uw
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0uw](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0uw.md)
+- **COMMITS:**
+  - [a176e70](https://github.com/sase-org/sase/commit/a176e70328e1d6607aac04fdfa210156225e21ea)
+    — fix(ci): stop-the-line repair for red Master Gate and Full CI
 
 <!-- sase:links:start -->
 
