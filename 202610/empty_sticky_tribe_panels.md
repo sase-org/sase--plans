@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Stop empty tribe panels from lingering on the Agents tab
-goal: 'An Agents-tab tribe panel with zero rendered rows is never left mounted: rows
-  placed elsewhere retire their old panel in the same sync, and unexplained disappearances
+goal:
+  "An Agents-tab tribe panel with zero rendered rows is never left mounted: rows placed
+  elsewhere retire their old panel in the same sync, and unexplained disappearances
   bridge for at most a few seconds before the empty strip unmounts, while the sase-13i
-  anti-flicker guarantee still holds.'
+  anti-flicker guarantee still holds."
 size: medium
 proposed_by: bbugyi200.athena.0us
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0us](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0us.md)
+- **COMMITS:**
+  - [6c88895](https://github.com/sase-org/sase/commit/6c88895a99f7d1696ec0c1983851becbda81d99e)
+    — feat(agents-tui): retire empty sticky tribe panels via placement-aware reconcile
 
 # Stop Empty `@tribe · 0` Panels From Lingering On The Agents Tab
 
