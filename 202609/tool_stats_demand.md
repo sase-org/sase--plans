@@ -53,7 +53,7 @@ phases:
     its fields measure the parked E6, E7, and E8 reconsider conditions.'
 proposed_by: bbugyi200.athena.0u4
 create_time: 2026-09-30 16:20:02
-status: wip
+status: done
 bead_id: sase-1dm
 ---
 
