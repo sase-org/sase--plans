@@ -1,72 +1,68 @@
 ---
 tier: epic
-title: "Pager version clarity: always know which memory version you are reading"
-goal: "Whenever the SASE pager shows a memory or instruction file, one glance tells you
-  exactly which version you are reading: now, uncommitted, a past version (with its
-  number, its date, and where it sits in the file's life), a deletion, or a comparison
+title: 'Pager version clarity: always know which memory version you are reading'
+goal: 'Whenever the SASE pager shows a memory or instruction file, one glance tells
+  you exactly which version you are reading: now, uncommitted, a past version (with
+  its number, its date, and where it sits in the file''s life), a deletion, or a comparison
   between two named versions. Every surface (subject line, time band, body frame,
   footer, timeline picker, trail) tells the same story from one model. History attaches
-  to every memory section no matter how it was opened, and the design is legible in dark
-  and light themes.
+  to every memory section no matter how it was opened, and the design is legible in
+  dark and light themes.
 
-  "
+  '
 phases:
-  - id: identity
-    title: One version identity model, honest numbering, and reliable attachment
-    depends_on: []
-    size: medium
-    description:
-      "identity: add the pure VersionMoment model and step function that every surface
-      reads; number versions as absolute vK of N; treat a clean now as the newest
-      version so the first `(` never shows a byte-identical copy; fix bare-selector and
-      stale-entry-point attachment failures."
-  - id: badge
-    title: State pill, past frame, destination footer, and versioned trail
-    depends_on:
-      - identity
-    size: medium
-    description:
-      "badge: route every history colour through a theme-aware style set; replace the
-      subject chip with a four-state pill; draw a past-accent gutter rail through pinned
-      bodies; make the footer name where each time key goes; suffix trail crumbs with
-      their version; add a pill legend to help."
-  - id: band
-    title:
-      Time band with playhead scrubber, explicit diff endpoints, and tombstone chrome
-    depends_on:
-      - badge
-    size: medium
-    description:
-      "band: rebuild the time band around a playhead scrubber with labelled ends,
-      absolute time, and the commit subject; show the compared range and both endpoints
-      in the diff view; tint the band in the past; move the deletion notice out of the
-      body and into chrome."
-  - id: picker
-    title: Timeline picker as an aligned table with open, now, and cursor markers
-    depends_on:
-      - badge
-    size: medium
-    description:
-      "picker: turn picker rows into structured, column-aligned, never-wrapping rows;
-      always list now; mark the open version separately from the cursor; preview what
-      Enter and = will do; make comparisons always read older to newer."
-  - id: polish
-    title: Documentation, live review, and end-to-end verification
-    depends_on:
-      - band
-      - picker
-    size: small
-    description:
-      "polish: update the memory history and pager docs with the new anatomy, review
-      every state live on real memory files and in the goldens, verify performance
-      budgets, and record follow-ups."
+- id: identity
+  title: One version identity model, honest numbering, and reliable attachment
+  depends_on: []
+  size: medium
+  description: 'identity: add the pure VersionMoment model and step function that
+    every surface reads; number versions as absolute vK of N; treat a clean now as
+    the newest version so the first `(` never shows a byte-identical copy; fix bare-selector
+    and stale-entry-point attachment failures.'
+- id: badge
+  title: State pill, past frame, destination footer, and versioned trail
+  depends_on:
+  - identity
+  size: medium
+  description: 'badge: route every history colour through a theme-aware style set;
+    replace the subject chip with a four-state pill; draw a past-accent gutter rail
+    through pinned bodies; make the footer name where each time key goes; suffix trail
+    crumbs with their version; add a pill legend to help.'
+- id: band
+  title: Time band with playhead scrubber, explicit diff endpoints, and tombstone
+    chrome
+  depends_on:
+  - badge
+  size: medium
+  description: 'band: rebuild the time band around a playhead scrubber with labelled
+    ends, absolute time, and the commit subject; show the compared range and both
+    endpoints in the diff view; tint the band in the past; move the deletion notice
+    out of the body and into chrome.'
+- id: picker
+  title: Timeline picker as an aligned table with open, now, and cursor markers
+  depends_on:
+  - badge
+  size: medium
+  description: 'picker: turn picker rows into structured, column-aligned, never-wrapping
+    rows; always list now; mark the open version separately from the cursor; preview
+    what Enter and = will do; make comparisons always read older to newer.'
+- id: polish
+  title: Documentation, live review, and end-to-end verification
+  depends_on:
+  - band
+  - picker
+  size: small
+  description: 'polish: update the memory history and pager docs with the new anatomy,
+    review every state live on real memory files and in the goldens, verify performance
+    budgets, and record follow-ups.'
 proposed_by: bbugyi200.athena.0v2
 create_time: 2026-10-01 15:29:15
 status: wip
+bead_id: sase-1ee
 ---
 
-- **PROMPT:**
-  [prompts/202610/pager_version_clarity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_version_clarity.md)
+- **PROMPT:** [prompts/202610/pager_version_clarity.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_version_clarity.md)
+- **BEAD:** [sase-1ee](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ee/README.md)
 
 # Plan: Pager version clarity
 
