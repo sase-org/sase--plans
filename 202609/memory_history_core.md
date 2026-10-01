@@ -1,60 +1,56 @@
 ---
 tier: epic
 title: Memory history semantics, cache, and query bindings in sase-core
-goal: "sase-core can answer, from git alone, what each memory note, web, strand,
-  instruction file, and asset was at any committed revision: its subject identity across
-  renames, whether a provider shim aliased or diverged, what kind of change it was, who
-  committed it, and which memory or config edits landed in the same instruction render.
-  A disposable per-scope snapshot makes that answer incremental, and GIL-releasing query
-  bindings expose it to Python without Python reimplementing lineage, classification, or
-  diffing.
+goal: 'sase-core can answer, from git alone, what each memory note, web, strand, instruction
+  file, and asset was at any committed revision: its subject identity across renames,
+  whether a provider shim aliased or diverged, what kind of change it was, who committed
+  it, and which memory or config edits landed in the same instruction render. A disposable
+  per-scope snapshot makes that answer incremental, and GIL-releasing query bindings
+  expose it to Python without Python reimplementing lineage, classification, or diffing.
 
-  "
+  '
 phases:
-  - id: subjects
-    title: Subject identity, shim aliasing, and the fixture corpus
-    depends_on: []
-    size: medium
-    description:
-      "subjects: derive note, web, strand, instructions, and asset identity from
-      file_history lineages, alias each shim version into its instructions subject by
-      blob equality, and build the fixture corpus later phases assert against."
-  - id: classify
-    title: Version classes, summaries, and commit provenance
-    depends_on:
-      - subjects
-    size: medium
-    description:
-      "classify: assign every committed version a class, a hidden-by-default bit, a
-      summary, a sparkline volume, and footer provenance from prose_diff stats and the
-      commit message."
-  - id: causes-feed
-    title: Instruction causes, changesets, and the merged feed
-    depends_on:
-      - classify
-    size: medium
-    description:
-      "causes-feed: attribute instruction versions to co-changed memory, config, and
-      renderer paths, then group versions into changesets and a time-merged feed."
-  - id: cache-queries
-    title: Snapshot cache, upstream marker, and query bindings
-    depends_on:
-      - causes-feed
-    size: medium
-    description:
-      "cache-queries: persist the per-scope snapshot, report how far origin is ahead,
-      and expose sync, subjects, resolve, timeline, version, compare, and feed through
-      GIL-releasing memory_history_ bindings."
+- id: subjects
+  title: Subject identity, shim aliasing, and the fixture corpus
+  depends_on: []
+  size: medium
+  description: 'subjects: derive note, web, strand, instructions, and asset identity
+    from file_history lineages, alias each shim version into its instructions subject
+    by blob equality, and build the fixture corpus later phases assert against.'
+- id: classify
+  title: Version classes, summaries, and commit provenance
+  depends_on:
+  - subjects
+  size: medium
+  description: 'classify: assign every committed version a class, a hidden-by-default
+    bit, a summary, a sparkline volume, and footer provenance from prose_diff stats
+    and the commit message.'
+- id: causes-feed
+  title: Instruction causes, changesets, and the merged feed
+  depends_on:
+  - classify
+  size: medium
+  description: 'causes-feed: attribute instruction versions to co-changed memory,
+    config, and renderer paths, then group versions into changesets and a time-merged
+    feed.'
+- id: cache-queries
+  title: Snapshot cache, upstream marker, and query bindings
+  depends_on:
+  - causes-feed
+  size: medium
+  description: 'cache-queries: persist the per-scope snapshot, report how far origin
+    is ahead, and expose sync, subjects, resolve, timeline, version, compare, and
+    feed through GIL-releasing memory_history_ bindings.'
 proposed_by: bbugyi200.apollo.sase-1dr.4
 parent_bead: sase-1dr.4
 create_time: 2026-09-30 20:38:40
 status: wip
+bead_id: sase-1dr.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202609/memory_history_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/memory_history_core.md)
-- **PARENT:**
-  [202609/memory_history.md](https://github.com/sase-org/sase--plans/blob/main/202609/memory_history.md)
+- **PROMPT:** [prompts/202609/memory_history_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202609/memory_history_core.md)
+- **PARENT:** [202609/memory_history.md](https://github.com/sase-org/sase--plans/blob/main/202609/memory_history.md)
+- **BEAD:** [sase-1dr.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1dr/sase-1dr.4.1.md)
 
 # Plan: Memory history semantics, cache, and query bindings in sase-core
 
