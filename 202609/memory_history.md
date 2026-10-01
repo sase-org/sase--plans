@@ -137,7 +137,7 @@ phases:
     set, and record the listed follow-ups as proposed follow-up notes.'
 proposed_by: bbugyi200.apollo.3o
 create_time: 2026-09-30 19:09:10
-status: wip
+status: done
 bead_id: sase-1dr
 ---
 
