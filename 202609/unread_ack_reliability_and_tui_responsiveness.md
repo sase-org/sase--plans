@@ -152,7 +152,7 @@ phases:
     lock window scales with a much smaller store.'
 proposed_by: bbugyi200.athena.0uc
 create_time: 2026-09-30 07:18:03
-status: wip
+status: done
 bead_id: sase-1d7
 ---
 
