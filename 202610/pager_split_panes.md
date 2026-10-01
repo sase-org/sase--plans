@@ -1,68 +1,64 @@
 ---
 tier: epic
 title: Pager split panes (`\` below, `|` beside)
-goal: 'The SASE pager can show two independent reading panes, split below with `\` or
-  beside with `|`, using Agents-tab-style toggle/rotate/focus semantics, framed
-  accent-colored panes, link labels painted only in the focused pane, ctrl+w to follow a
-  link into the other pane, and a reading position that never jumps. Single-pane
+goal: 'The SASE pager can show two independent reading panes, split below with `\`
+  or beside with `|`, using Agents-tab-style toggle/rotate/focus semantics, framed
+  accent-colored panes, link labels painted only in the focused pane, ctrl+w to follow
+  a link into the other pane, and a reading position that never jumps. Single-pane
   rendering stays pixel-identical to today.
 
   '
 phases:
-  - id: view-extract
-    title: Extract a per-pane PagerView from PagerScreen
-    depends_on: []
-    size: medium
-    description:
-      "view-extract: move all per-document pager state, chrome rows, lifecycle and key
-      handling into a mountable PagerView widget. PagerScreen becomes a thin host that
-      routes bindings to the focused view. No user-visible change, and every existing
-      pager PNG golden stays byte-identical."
-  - id: reading-anchor
-    title: Keep the reading line fixed across width changes
-    depends_on:
-      - view-extract
-    size: small
-    description:
-      "reading-anchor: add a pure (section, line, row-offset) reading anchor. A pane
-      that recomposes at a new width keeps its top logical line, and trail back/forward
-      lands on the recorded line even when the pane width has changed since the visit."
-  - id: split-panes
-    title: Split panes with framed chrome and focus-scoped labels
-    depends_on:
-      - reading-anchor
-    size: medium
-    description:
-      'split-panes: pure split model; `\` / `|` / ctrl+f / `+` / `-` keys; q, Esc and
-      exhausted backspace close a pane; pane clone on split; link labels only in the
-      focused pane; framed panes with the subject in the border title/subtitle and
-      accent focus colors; split footer verbs, small-window guard, help rows, and
-      async-safe pane teardown.'
-  - id: other-pane-follow
-    title: Follow a link into the other pane with ctrl+w
-    depends_on:
-      - split-panes
-    size: small
-    description:
-      "other-pane-follow: ctrl+w arms an 'other pane' follow. A painted label then opens
-      its target in the other pane (opening a split when single) while focus stays put,
-      and doubled ctrl+w focuses the other pane."
-  - id: polish-docs
-    title: Split-view goldens, visual polish, and docs
-    depends_on:
-      - other-pane-follow
-    size: small
-    description:
-      "polish-docs: add split-view PNG goldens, review the result against the look spec
-      and fix visual nits, then document split panes in docs/pager.md and the help
-      sheet."
+- id: view-extract
+  title: Extract a per-pane PagerView from PagerScreen
+  depends_on: []
+  size: medium
+  description: 'view-extract: move all per-document pager state, chrome rows, lifecycle
+    and key handling into a mountable PagerView widget. PagerScreen becomes a thin
+    host that routes bindings to the focused view. No user-visible change, and every
+    existing pager PNG golden stays byte-identical.'
+- id: reading-anchor
+  title: Keep the reading line fixed across width changes
+  depends_on:
+  - view-extract
+  size: small
+  description: 'reading-anchor: add a pure (section, line, row-offset) reading anchor.
+    A pane that recomposes at a new width keeps its top logical line, and trail back/forward
+    lands on the recorded line even when the pane width has changed since the visit.'
+- id: split-panes
+  title: Split panes with framed chrome and focus-scoped labels
+  depends_on:
+  - reading-anchor
+  size: medium
+  description: 'split-panes: pure split model; `\` / `|` / ctrl+f / `+` / `-` keys;
+    q, Esc and exhausted backspace close a pane; pane clone on split; link labels
+    only in the focused pane; framed panes with the subject in the border title/subtitle
+    and accent focus colors; split footer verbs, small-window guard, help rows, and
+    async-safe pane teardown.'
+- id: other-pane-follow
+  title: Follow a link into the other pane with ctrl+w
+  depends_on:
+  - split-panes
+  size: small
+  description: 'other-pane-follow: ctrl+w arms an ''other pane'' follow. A painted
+    label then opens its target in the other pane (opening a split when single) while
+    focus stays put, and doubled ctrl+w focuses the other pane.'
+- id: polish-docs
+  title: Split-view goldens, visual polish, and docs
+  depends_on:
+  - other-pane-follow
+  size: small
+  description: 'polish-docs: add split-view PNG goldens, review the result against
+    the look spec and fix visual nits, then document split panes in docs/pager.md
+    and the help sheet.'
 proposed_by: bbugyi200.athena.0v1
 create_time: 2026-10-01 15:39:28
 status: wip
+bead_id: sase-1eg
 ---
 
-- **PROMPT:**
-  [prompts/202610/pager_split_panes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_split_panes.md)
+- **PROMPT:** [prompts/202610/pager_split_panes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_split_panes.md)
+- **BEAD:** [sase-1eg](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eg/README.md)
 
 # Plan: Pager split panes
 
