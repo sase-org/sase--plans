@@ -1,148 +1,138 @@
 ---
 tier: epic
-title: "sase-listen: narrated, chaptered audio editions of Markdown for the commute"
-goal: "Any SASE research report, or any other Markdown file, becomes a chaptered,
+title: 'sase-listen: narrated, chaptered audio editions of Markdown for the commute'
+goal: 'Any SASE research report, or any other Markdown file, becomes a chaptered,
   loudness-normalized MP3 audio edition from one CLI command or one Telegram message.
-  The episode reaches the phone through Telegram's music player and a private podcast
-  feed. The new public sase-org/sase-listen repo ships with a real description,
-  excellent documentation linked back to the originating research and this plan, CI
-  lint/type/test gates, and automated release-please plus PyPI trusted publishing.
+  The episode reaches the phone through Telegram''s music player and a private podcast
+  feed. The new public sase-org/sase-listen repo ships with a real description, excellent
+  documentation linked back to the originating research and this plan, CI lint/type/test
+  gates, and automated release-please plus PyPI trusted publishing.
 
-  "
+  '
 phases:
-  - id: scaffold
-    title: Repo foundation, packaging, CI, and release automation
-    depends_on: []
-    size: medium
-    description:
-      "scaffold: build the sase-listen package skeleton. That covers every runtime
-      dependency declared up front, the config loader, the CLI command registry with
-      stubs, and the docs site skeleton. Add CI, PR-title, docs-deploy, and
-      release-please plus PyPI publish workflows, then set the GitHub description,
-      topics, homepage, Pages, and workflow permissions."
-  - id: telegram-audio
-    title: sase-telegram delivers MP3s through sendAudio
-    depends_on: []
-    size: small
-    description:
-      "telegram-audio: add send_audio to sase-telegram's client and route .mp3/.m4a
-      attachments to it in the outbound loop. Read title, performer, and duration from
-      ID3, guard the 50 MB limit, fall back to a document send, and add tests and docs."
-  - id: script
-    title: Narration script contract, deterministic normalizer, lexicon, lint, and guide
-    depends_on:
-      - scaffold
-    size: medium
-    description:
-      "script: implement the narration-script v1 model and parser and the markdown-it
-      AST normalizer with an omissions report and golden fixtures. Add the pronunciation
-      lexicon, `lint` (including the --source number-fidelity check), and the packaged
-      authoring guide behind `guide`."
-  - id: audio
-    title: Mastering, MP3 packaging, chapters, and cover art
-    depends_on:
-      - scaffold
-    size: medium
-    description:
-      "audio: resolve ffmpeg (bundled imageio-ffmpeg fallback). Trim silence and
-      assemble PCM with gaps, then run two-pass loudnorm to a 64 kb/s mono MP3. Write
-      ID3v2.3 tags, CHAP/CTOC chapters, and cover art, including the generated
-      title-card design."
-  - id: engines
-    title: TTS engines, narrator profiles, credentials, retries, cache, and pricing
-    depends_on:
-      - scaffold
-    size: medium
-    description:
-      "engines: add the Engine protocol and the Gemini, OpenAI-compatible, and offline
-      tone adapters. Add narrator profiles, secret resolution from env or command, retry
-      with backoff, the content-addressed LRU chunk cache, and dated pricing estimates.
-      Verify Gemini with a single live call."
-  - id: pipeline
-    title: Render orchestration, quality gates, manifest, and episode library
-    depends_on:
-      - script
-      - audio
-      - engines
-    size: medium
-    description:
-      "pipeline: wire `render`, which takes a script, Markdown, or artifact ref and
-      produces an MP3 with chunk planning, concurrency, intro and outro, chunk- and
-      episode-level quality gates with targeted re-synthesis, the manifest, an atomic
-      library commit, locks, `--json`, and exit codes. Prove it end to end with the tone
-      engine."
-  - id: cli
-    title: Beautiful CLI experience and companion commands
-    depends_on:
-      - pipeline
-    size: medium
-    description:
-      "cli: build the rich terminal experience, covering the dry-run plan table, live
-      per-chapter progress, and summary panels. Add the `audition`, `ls`, `doctor`,
-      `cache`, and `config` commands, polished help, NO_COLOR and non-TTY behavior, and
-      SVG terminal captures for the docs."
-  - id: feed
-    title: Private podcast feed for AntennaPod
-    depends_on:
-      - cli
-    size: medium
-    description:
-      "feed: add `feed init`/`feed`/`publish`/`unpublish`. Publishing writes into a
-      served-only feed directory with an RSS 2.0 + iTunes + Podcasting 2.0 feed.xml,
-      per-episode chapters JSON, and generated channel art. Add retention, auto-publish
-      for research episodes, a token-path URL with a QR code, and Tailscale Funnel
-      serving docs."
-  - id: research-audio
-    title: "#research/audio xprompt and research_swarm audio stage"
-    depends_on:
-      - cli
-    size: medium
-    description:
-      "research-audio: in sase-research-artifacts, add the #research/audio xprompt,
-      which writes <stem>_narration.md via `sase-listen guide`/`lint`, renders, and
-      registers the MP3. Add the opt-in research_swarm `audio` stage after the linker,
-      the @audio model alias, the narration companion exclude glob, tests, and docs."
-  - id: docs
-    title: Documentation polish and provenance links
-    depends_on:
-      - feed
-      - research-audio
-      - telegram-audio
-    size: medium
-    description:
-      "docs: finish the README and mkdocs site, covering the hero, quickstart, how it
-      works, narration scripts, CLI reference, configuration, narrators, pronunciation,
-      feed, SASE integration, reliability, and troubleshooting. Include background pages
-      with permalinks to the originating research and this epic plan, plus CONTRIBUTING
-      and AGENTS.md."
-  - id: release
-    title: First releases to PyPI
-    depends_on:
-      - docs
-    size: small
-    description:
-      "release: verify master CI and the built wheel. Propose merging the sase-listen
-      0.1.0 release-please PR, plus the sase-telegram and sase-research-artifacts
-      release PRs, through gates, then confirm that trusted publishing put each version
-      on PyPI."
-  - id: rollout
-    title: Install, configure, field-test, and turn on delivery on apollo
-    depends_on:
-      - release
-    size: medium
-    description:
-      "rollout: install sase-listen and upgrade the plugins on apollo, and add the
-      config through chezmoi. Run doctor, deliver voice auditions and the first real
-      audio edition (the commute-audio research itself) to Telegram, and initialize the
-      feed. Record field notes and a docs sample, then propose Funnel exposure through a
-      gate."
+- id: scaffold
+  title: Repo foundation, packaging, CI, and release automation
+  depends_on: []
+  size: medium
+  description: 'scaffold: build the sase-listen package skeleton. That covers every
+    runtime dependency declared up front, the config loader, the CLI command registry
+    with stubs, and the docs site skeleton. Add CI, PR-title, docs-deploy, and release-please
+    plus PyPI publish workflows, then set the GitHub description, topics, homepage,
+    Pages, and workflow permissions.'
+- id: telegram-audio
+  title: sase-telegram delivers MP3s through sendAudio
+  depends_on: []
+  size: small
+  description: 'telegram-audio: add send_audio to sase-telegram''s client and route
+    .mp3/.m4a attachments to it in the outbound loop. Read title, performer, and duration
+    from ID3, guard the 50 MB limit, fall back to a document send, and add tests and
+    docs.'
+- id: script
+  title: Narration script contract, deterministic normalizer, lexicon, lint, and guide
+  depends_on:
+  - scaffold
+  size: medium
+  description: 'script: implement the narration-script v1 model and parser and the
+    markdown-it AST normalizer with an omissions report and golden fixtures. Add the
+    pronunciation lexicon, `lint` (including the --source number-fidelity check),
+    and the packaged authoring guide behind `guide`.'
+- id: audio
+  title: Mastering, MP3 packaging, chapters, and cover art
+  depends_on:
+  - scaffold
+  size: medium
+  description: 'audio: resolve ffmpeg (bundled imageio-ffmpeg fallback). Trim silence
+    and assemble PCM with gaps, then run two-pass loudnorm to a 64 kb/s mono MP3.
+    Write ID3v2.3 tags, CHAP/CTOC chapters, and cover art, including the generated
+    title-card design.'
+- id: engines
+  title: TTS engines, narrator profiles, credentials, retries, cache, and pricing
+  depends_on:
+  - scaffold
+  size: medium
+  description: 'engines: add the Engine protocol and the Gemini, OpenAI-compatible,
+    and offline tone adapters. Add narrator profiles, secret resolution from env or
+    command, retry with backoff, the content-addressed LRU chunk cache, and dated
+    pricing estimates. Verify Gemini with a single live call.'
+- id: pipeline
+  title: Render orchestration, quality gates, manifest, and episode library
+  depends_on:
+  - script
+  - audio
+  - engines
+  size: medium
+  description: 'pipeline: wire `render`, which takes a script, Markdown, or artifact
+    ref and produces an MP3 with chunk planning, concurrency, intro and outro, chunk-
+    and episode-level quality gates with targeted re-synthesis, the manifest, an atomic
+    library commit, locks, `--json`, and exit codes. Prove it end to end with the
+    tone engine.'
+- id: cli
+  title: Beautiful CLI experience and companion commands
+  depends_on:
+  - pipeline
+  size: medium
+  description: 'cli: build the rich terminal experience, covering the dry-run plan
+    table, live per-chapter progress, and summary panels. Add the `audition`, `ls`,
+    `doctor`, `cache`, and `config` commands, polished help, NO_COLOR and non-TTY
+    behavior, and SVG terminal captures for the docs.'
+- id: feed
+  title: Private podcast feed for AntennaPod
+  depends_on:
+  - cli
+  size: medium
+  description: 'feed: add `feed init`/`feed`/`publish`/`unpublish`. Publishing writes
+    into a served-only feed directory with an RSS 2.0 + iTunes + Podcasting 2.0 feed.xml,
+    per-episode chapters JSON, and generated channel art. Add retention, auto-publish
+    for research episodes, a token-path URL with a QR code, and Tailscale Funnel serving
+    docs.'
+- id: research-audio
+  title: '#research/audio xprompt and research_swarm audio stage'
+  depends_on:
+  - cli
+  size: medium
+  description: 'research-audio: in sase-research-artifacts, add the #research/audio
+    xprompt, which writes <stem>_narration.md via `sase-listen guide`/`lint`, renders,
+    and registers the MP3. Add the opt-in research_swarm `audio` stage after the linker,
+    the @audio model alias, the narration companion exclude glob, tests, and docs.'
+- id: docs
+  title: Documentation polish and provenance links
+  depends_on:
+  - feed
+  - research-audio
+  - telegram-audio
+  size: medium
+  description: 'docs: finish the README and mkdocs site, covering the hero, quickstart,
+    how it works, narration scripts, CLI reference, configuration, narrators, pronunciation,
+    feed, SASE integration, reliability, and troubleshooting. Include background pages
+    with permalinks to the originating research and this epic plan, plus CONTRIBUTING
+    and AGENTS.md.'
+- id: release
+  title: First releases to PyPI
+  depends_on:
+  - docs
+  size: small
+  description: 'release: verify master CI and the built wheel. Propose merging the
+    sase-listen 0.1.0 release-please PR, plus the sase-telegram and sase-research-artifacts
+    release PRs, through gates, then confirm that trusted publishing put each version
+    on PyPI.'
+- id: rollout
+  title: Install, configure, field-test, and turn on delivery on apollo
+  depends_on:
+  - release
+  size: medium
+  description: 'rollout: install sase-listen and upgrade the plugins on apollo, and
+    add the config through chezmoi. Run doctor, deliver voice auditions and the first
+    real audio edition (the commute-audio research itself) to Telegram, and initialize
+    the feed. Record field notes and a docs sample, then propose Funnel exposure through
+    a gate.'
 proposed_by: bbugyi200.apollo.3z
 create_time: 2026-10-01 14:42:34
 status: wip
+bead_id: sase-1e3
 ---
 
-- **PROMPT:**
-  [prompts/202610/sase_listen.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_listen.md)
+- **PROMPT:** [prompts/202610/sase_listen.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_listen.md)
+- **BEAD:** [sase-1e3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1e3/README.md)
 
 # Plan: sase-listen — narrated audio editions of Markdown
 
