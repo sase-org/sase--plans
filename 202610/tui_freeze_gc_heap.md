@@ -1,118 +1,110 @@
 ---
 tier: epic
-title:
-  Stop the ACE TUI's 10% freeze budget (GC off the interactive path, one live snapshot
-  per key)
-goal: "The long-lived ACE TUI stops spending 10-17% of wall time frozen. Full (gen-2)
+title: Stop the ACE TUI's 10% freeze budget (GC off the interactive path, one live
+  snapshot per key)
+goal: 'The long-lived ACE TUI stops spending 10-17% of wall time frozen. Full (gen-2)
   garbage collections no longer start while the user is interacting. The heap stops
   growing about 100 MB/min from superseded snapshot copies. The per-second UI-thread
   residue is gone. Telemetry measures GC pauses, RSS/swap, and the true frozen share
   directly, so the acceptance check is data, not inference.
 
-  "
+  '
 phases:
-  - id: gc-telemetry
-    title: GC pause recorder, memory heartbeat, and app-instance identity
-    depends_on: []
-    size: medium
-    description:
-      "gc-telemetry: add a lock-free gc.callbacks recorder with collection-trigger
-      tagging and a recent-collections ring. A daemon flush thread writes rate-capped
-      tui_gc_pause rows and a 5-minute tui_memory_heartbeat (RSS, VmSwap, major faults,
-      exact per-generation GC totals, pluggable extra fields). Also add a per-instance
-      app ID and an exec-aware startup clock. Telemetry is never auto-installed under
-      the ace testing harness."
-  - id: watchdog-truth
-    title: Make the stall watchdog report whole-process stops and exact totals
-    depends_on:
-      - gc-telemetry
-    size: medium
-    description:
-      "watchdog-truth: detect whole-process stops from the watchdog's own poll lateness,
-      even when the beacon already ran. Add late/poll_lag_s/net_stall_seconds and
-      gc-overlap attribution to hitch and recovery rows, and count rate-limited episodes
-      and seconds into the heartbeat. Ship a tools/tui_freeze_report script that
-      computes the de-duplicated frozen share and the GC share per app instance."
-  - id: snapshot-caches
-    title: One live version per path or scope in the module snapshot caches
-    depends_on: []
-    size: medium
-    description:
-      "snapshot-caches: re-key the artifact-file index cache by resolved path, and the
-      artifact-links and LinkIndex caches by project scope, so a changed stat or
-      signature replaces the entry instead of piling up 32/64 superseded full copies.
-      Add a just-check structural test (N external rewrites leave one entry per key) and
-      audit the remaining token-keyed module caches."
-  - id: idle-gc-policy
-    title: Take automatic gen-2 collection off the interactive path
-    depends_on:
-      - gc-telemetry
-      - snapshot-caches
-    size: medium
-    description:
-      "idle-gc-policy: once startup loads settle and input first goes idle, run
-      gc.collect() then gc.freeze() exactly once. Raise threshold2 to 10_000 on the
-      classic three-generation collector. Run tagged full collections only when input
-      has been quiet for 3 s, no prompt is active, and a collection is due, with
-      5-minute and RSS-growth backstops and an off-thread malloc_trim. Includes an env
-      kill switch, a clean uninstall, and no install under the testing harness."
-  - id: cached-snapshot-sharing
-    title: Share immutable cached snapshots instead of copying them on every hit
-    depends_on: []
-    size: medium
-    description:
-      "cached-snapshot-sharing: stop the notification facade deep-cloning about 1.6k
-      rows on every cache hit. Make shared rows safe through immutability or audited
-      copy-on-write callers. Return the cached frozenset of dismissed bundle identities
-      and the cached artifact-index tuple instead of fresh copies, with guard tests that
-      caller mutation cannot corrupt a cache."
-  - id: tick-compare-skip
-    title:
-      Compare-then-skip on the per-second Agents tick and explicit prompt-active state
-    depends_on: []
-    size: medium
-    description:
-      "tick-compare-skip: key runtime-row patches on (membership, displayed second) and
-      skip the asdict/Rust aggregation when nothing visible changed. Key the info-panel
-      metrics cache on explicit roster/status/unread generations instead of walking
-      bulk_ack_roster_universe each second. Back _prompt_input_active() with explicit
-      app state that mount, detach, and editor-suspend maintain, plus a parity test
-      against the DOM query."
-  - id: off-loop-refresh
-    title:
-      Move fleet projection, digest building, and config-token refresh off the hot path
-    depends_on: []
-    size: medium
-    description:
-      "off-loop-refresh: project fleet clan/tribe trees on the worker from immutable
-      inputs and revalidate generation and selection on apply. Skip the prompt-panel
-      Rich-tree digest on a cheap identity/content token. Replace the per-refresh
-      Thread.start() in current_config_token() with one long-lived revalidator thread so
-      the getter only peeks."
-  - id: acceptance
-    title: Live before/after measurement on athena and follow-up capture
-    depends_on:
-      - gc-telemetry
-      - watchdog-truth
-      - snapshot-caches
-      - idle-gc-policy
-      - cached-snapshot-sharing
-      - tick-compare-skip
-      - off-loop-refresh
-    size: small
-    description:
-      "acceptance: on a TUI restarted onto the landed code, capture a busy hour plus a
-      4-hour RSS window. Use tools/tui_freeze_report to compare the frozen share, GC
-      share, idle-collection pauses, RSS/swap growth, and j/k p95 against the 10.7-12.9%
-      / 16.7%-gen-2 baseline. Record misses and the proposed tui_perf.md rule update as
-      PROPOSED FOLLOW-UP notes."
+- id: gc-telemetry
+  title: GC pause recorder, memory heartbeat, and app-instance identity
+  depends_on: []
+  size: medium
+  description: 'gc-telemetry: add a lock-free gc.callbacks recorder with collection-trigger
+    tagging and a recent-collections ring. A daemon flush thread writes rate-capped
+    tui_gc_pause rows and a 5-minute tui_memory_heartbeat (RSS, VmSwap, major faults,
+    exact per-generation GC totals, pluggable extra fields). Also add a per-instance
+    app ID and an exec-aware startup clock. Telemetry is never auto-installed under
+    the ace testing harness.'
+- id: watchdog-truth
+  title: Make the stall watchdog report whole-process stops and exact totals
+  depends_on:
+  - gc-telemetry
+  size: medium
+  description: 'watchdog-truth: detect whole-process stops from the watchdog''s own
+    poll lateness, even when the beacon already ran. Add late/poll_lag_s/net_stall_seconds
+    and gc-overlap attribution to hitch and recovery rows, and count rate-limited
+    episodes and seconds into the heartbeat. Ship a tools/tui_freeze_report script
+    that computes the de-duplicated frozen share and the GC share per app instance.'
+- id: snapshot-caches
+  title: One live version per path or scope in the module snapshot caches
+  depends_on: []
+  size: medium
+  description: 'snapshot-caches: re-key the artifact-file index cache by resolved
+    path, and the artifact-links and LinkIndex caches by project scope, so a changed
+    stat or signature replaces the entry instead of piling up 32/64 superseded full
+    copies. Add a just-check structural test (N external rewrites leave one entry
+    per key) and audit the remaining token-keyed module caches.'
+- id: idle-gc-policy
+  title: Take automatic gen-2 collection off the interactive path
+  depends_on:
+  - gc-telemetry
+  - snapshot-caches
+  size: medium
+  description: 'idle-gc-policy: once startup loads settle and input first goes idle,
+    run gc.collect() then gc.freeze() exactly once. Raise threshold2 to 10_000 on
+    the classic three-generation collector. Run tagged full collections only when
+    input has been quiet for 3 s, no prompt is active, and a collection is due, with
+    5-minute and RSS-growth backstops and an off-thread malloc_trim. Includes an env
+    kill switch, a clean uninstall, and no install under the testing harness.'
+- id: cached-snapshot-sharing
+  title: Share immutable cached snapshots instead of copying them on every hit
+  depends_on: []
+  size: medium
+  description: 'cached-snapshot-sharing: stop the notification facade deep-cloning
+    about 1.6k rows on every cache hit. Make shared rows safe through immutability
+    or audited copy-on-write callers. Return the cached frozenset of dismissed bundle
+    identities and the cached artifact-index tuple instead of fresh copies, with guard
+    tests that caller mutation cannot corrupt a cache.'
+- id: tick-compare-skip
+  title: Compare-then-skip on the per-second Agents tick and explicit prompt-active
+    state
+  depends_on: []
+  size: medium
+  description: 'tick-compare-skip: key runtime-row patches on (membership, displayed
+    second) and skip the asdict/Rust aggregation when nothing visible changed. Key
+    the info-panel metrics cache on explicit roster/status/unread generations instead
+    of walking bulk_ack_roster_universe each second. Back _prompt_input_active() with
+    explicit app state that mount, detach, and editor-suspend maintain, plus a parity
+    test against the DOM query.'
+- id: off-loop-refresh
+  title: Move fleet projection, digest building, and config-token refresh off the
+    hot path
+  depends_on: []
+  size: medium
+  description: 'off-loop-refresh: project fleet clan/tribe trees on the worker from
+    immutable inputs and revalidate generation and selection on apply. Skip the prompt-panel
+    Rich-tree digest on a cheap identity/content token. Replace the per-refresh Thread.start()
+    in current_config_token() with one long-lived revalidator thread so the getter
+    only peeks.'
+- id: acceptance
+  title: Live before/after measurement on athena and follow-up capture
+  depends_on:
+  - gc-telemetry
+  - watchdog-truth
+  - snapshot-caches
+  - idle-gc-policy
+  - cached-snapshot-sharing
+  - tick-compare-skip
+  - off-loop-refresh
+  size: small
+  description: 'acceptance: on a TUI restarted onto the landed code, capture a busy
+    hour plus a 4-hour RSS window. Use tools/tui_freeze_report to compare the frozen
+    share, GC share, idle-collection pauses, RSS/swap growth, and j/k p95 against
+    the 10.7-12.9% / 16.7%-gen-2 baseline. Record misses and the proposed tui_perf.md
+    rule update as PROPOSED FOLLOW-UP notes.'
 proposed_by: bbugyi200.athena.0vm
 create_time: 2026-10-02 16:44:52
 status: wip
+bead_id: sase-1ez
 ---
 
-- **PROMPT:**
-  [prompts/202610/tui_freeze_gc_heap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_freeze_gc_heap.md)
+- **PROMPT:** [prompts/202610/tui_freeze_gc_heap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_freeze_gc_heap.md)
+- **BEAD:** [sase-1ez](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ez/README.md)
 
 # Plan: Stop the ACE TUI's 10% freeze budget
 
