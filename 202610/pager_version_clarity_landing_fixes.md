@@ -1,10 +1,12 @@
 ---
 tier: tale
-title: 'Finish and land pager version clarity (sase-1ef): epic-caused fixes and closeout'
-goal: 'Every pager version-clarity surface tells one consistent, correct story: the
-  diff body, pill, band, footer, trail, and picker agree, survive syntax highlighting,
-  theme changes, navigation, and narrow widths, and the PNG goldens are regenerated
-  and stable. Then epic sase-1ef is closed and its plan file marked done.'
+title:
+  "Finish and land pager version clarity (sase-1ef): epic-caused fixes and closeout"
+goal:
+  "Every pager version-clarity surface tells one consistent, correct story: the diff
+  body, pill, band, footer, trail, and picker agree, survive syntax highlighting, theme
+  changes, navigation, and narrow widths, and the PNG goldens are regenerated and
+  stable. Then epic sase-1ef is closed and its plan file marked done."
 size: medium
 proposed_by: bbugyi200.athena.sase-1ef.land
 bead: sase-1ef
@@ -15,6 +17,12 @@ status: done
   [202610/pager_version_clarity.md](https://github.com/sase-org/sase--plans/blob/main/202610/pager_version_clarity.md)
 - **BEAD:**
   [sase-1ef](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ef/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ef.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ef.land.md)
+- **COMMITS:**
+  - [2b76fe3](https://github.com/sase-org/sase/commit/2b76fe32bb49accd4c89e8e1461e55e608a110d7)
+    — fix(pager): land version-clarity fixes part 1 (endpoints, moment, chrome, band,
+    picker, trail)
 
 # Plan: Finish and land the pager version-clarity epic (sase-1ef)
 
