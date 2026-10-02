@@ -1,147 +1,137 @@
 ---
 tier: epic
 title: Make the prompt `<space>` and `<ctrl+n/p>` project-cycling keys instant
-goal: "Opening the prompt bar with `<space>` and cycling the current-project stack with
-  `<ctrl+n>` / `<ctrl+p>` become in-memory operations. Neither key path reads or writes
-  the VCS MRU, lists project records, spawns a subprocess, or stops, starts, or joins a
-  watcher on the event loop. Warm `<ctrl+n/p>` key-to-paint p95 is at most 16 ms.
-  `<space>` reveals a pre-built bar with key-to-paint p95 at most 60 ms. There are no
-  multi-hundred-millisecond first-press or first-visit spikes. Launch, prefill, history,
-  and cycling semantics stay unchanged.
+goal: 'Opening the prompt bar with `<space>` and cycling the current-project stack
+  with `<ctrl+n>` / `<ctrl+p>` become in-memory operations. Neither key path reads
+  or writes the VCS MRU, lists project records, spawns a subprocess, or stops, starts,
+  or joins a watcher on the event loop. Warm `<ctrl+n/p>` key-to-paint p95 is at most
+  16 ms. `<space>` reveals a pre-built bar with key-to-paint p95 at most 60 ms. There
+  are no multi-hundred-millisecond first-press or first-visit spikes. Launch, prefill,
+  history, and cycling semantics stay unchanged.
 
-  "
+  '
 phases:
-  - id: key-perf-harness
-    title: Prompt-key perf instrumentation, benchmark, and I/O probes
-    depends_on: []
-    size: small
-    description:
-      "key-perf-harness: record `SASE_TUI_PERF` key-to-paint samples for `<space>`,
-      `ctrl+n`, and `ctrl+p`; add a slow bench plus a non-slow smoke test; add a
-      main-thread I/O probe helper that later phases use for zero-I/O tests; record a
-      baseline."
-  - id: mru-snapshot
-    title: App-owned launchable-MRU snapshot for project cycling
-    depends_on:
-      - key-perf-harness
-    size: medium
-    description:
-      "mru-snapshot: add an immutable launchable-MRU snapshot owned by `AceApp`. A
-      single-flight worker builds it, and peek-token ticks and launch/set-current
-      triggers keep it fresh. `ctrl+n/p` read it only, pin it per prompt session, and
-      show a hint instead of editing when it is cold."
-  - id: space-prefill
-    title: Serve `<space>` and the other MRU-head entry points from the snapshot
-    depends_on:
-      - mru-snapshot
-    size: medium
-    description:
-      "space-prefill: resolve the `<space>` prefill from the snapshot without I/O. A
-      cold or launch-pending snapshot opens a blank bar at once and applies a late
-      prefill only to an untouched session. Move `,.` and the editor entry point to the
-      snapshot, and remove every MRU write from key paths."
-  - id: mru-build-efficiency
-    title: One project-record pass and memoized provider detection per MRU build
-    depends_on:
-      - mru-snapshot
-    size: small
-    description:
-      "mru-build-efficiency: make one launchable-MRU build list project records once and
-      detect each project's provider once, using per-call (never process-global) state,
-      with the pruning semantics unchanged."
-  - id: watcher-growth
-    title:
-      Pure catalog getters, non-blocking watcher growth, and a wakeable watcher stop
-    depends_on:
-      - key-perf-harness
-    size: medium
-    description:
-      "watcher-growth: stop catalog getters from restarting the prompt-source watcher.
-      Grow watches off the pump with `ensure_watches` and reconcile once afterward. Add
-      a self-pipe so `ArtifactWatcher.stop()` never waits out the 0.5 s `select`."
-  - id: mount-dedup
-    title: Run each prompt text-area mount, unmount, and worker hook once
-    depends_on:
-      - key-perf-harness
-    size: medium
-    description:
-      "mount-dedup: replace the mixins' super-chained, Textual-dispatched `on_mount`,
-      `on_unmount`, and `on_worker_state_changed` handlers with cooperative hooks that
-      are dispatched once. Body order and theme layering stay the same, and goldens stay
-      unchanged."
-  - id: cycle-edit-coalesce
-    title: One highlight build and no pump-side Jinja inspect per cycle edit
-    depends_on:
-      - mru-snapshot
-      - mount-dedup
-    size: medium
-    description:
-      "cycle-edit-coalesce: batch highlight-map builds so a cycle edit pays for one.
-      Make the queued Changed/SelectionChanged context refreshes no-ops when nothing
-      changed, skip the needless arg-hint refresh, and move the Jinja diagnostics
-      inspect into a pump-free task."
-  - id: post-open-quiet
-    title: Quiet the work that follows opening or editing the prompt
-    depends_on:
-      - watcher-growth
-    size: small
-    description:
-      "post-open-quiet: repaint the Agents detail only when a warmed context matches the
-      selected agent, and defer that repaint while a prompt is active. Stagger
-      non-essential bar warm-ups by one paint, and hoist the first-mount imports."
-  - id: gc-policy
-    title: Freeze startup objects and log gen-2 GC pauses
-    depends_on:
-      - key-perf-harness
-    size: small
-    description:
-      "gc-policy: once startup loads finish, run `gc.collect(); gc.freeze()` at idle.
-      Register an allocation-light, I/O-free `gc.callbacks` hook whose gen-2 pause
-      records reach the stall/perf logs off the calling thread. Coordinate with the
-      separate TUI-freeze investigation."
-  - id: prompt-active-state
-    title: Explicit prompt-active state and one prompt-bar accessor
-    depends_on:
-      - space-prefill
-    size: medium
-    description:
-      "prompt-active-state: track the active prompt bar explicitly on the app so
-      `_prompt_input_active()` no longer queries the DOM. Route every
-      `#prompt-input-bar` and `PromptInputBar` lookup through one accessor, which is the
-      prerequisite for a hidden spare bar."
-  - id: space-hot-spare
-    title: Make `<space>` reveal a pre-built hidden prompt bar
-    depends_on:
-      - space-prefill
-      - mru-build-efficiency
-      - watcher-growth
-      - mount-dedup
-      - cycle-edit-coalesce
-      - post-open-quiet
-      - gc-policy
-      - prompt-active-state
-    size: large
-    description:
-      "space-hot-spare: after re-measuring, keep one fresh, inert, hidden, id-less
-      prompt bar mounted at idle. `<space>` seeds it, reveals it, and calls a new
-      `activate()`. Other prompt modes keep fresh mounts, and every session still gets a
-      new instance."
-  - id: acceptance
-    title: Final measurements, regression gates, and docs
-    depends_on:
-      - space-hot-spare
-    size: small
-    description:
-      "acceptance: rerun the bench against the baseline and targets, and consolidate the
-      zero-I/O structural tests. Update the perf runbook, leave live-check instructions
-      for the user, and record follow-ups (including the `tui_perf` memory rules)."
+- id: key-perf-harness
+  title: Prompt-key perf instrumentation, benchmark, and I/O probes
+  depends_on: []
+  size: small
+  description: 'key-perf-harness: record `SASE_TUI_PERF` key-to-paint samples for
+    `<space>`, `ctrl+n`, and `ctrl+p`; add a slow bench plus a non-slow smoke test;
+    add a main-thread I/O probe helper that later phases use for zero-I/O tests; record
+    a baseline.'
+- id: mru-snapshot
+  title: App-owned launchable-MRU snapshot for project cycling
+  depends_on:
+  - key-perf-harness
+  size: medium
+  description: 'mru-snapshot: add an immutable launchable-MRU snapshot owned by `AceApp`.
+    A single-flight worker builds it, and peek-token ticks and launch/set-current
+    triggers keep it fresh. `ctrl+n/p` read it only, pin it per prompt session, and
+    show a hint instead of editing when it is cold.'
+- id: space-prefill
+  title: Serve `<space>` and the other MRU-head entry points from the snapshot
+  depends_on:
+  - mru-snapshot
+  size: medium
+  description: 'space-prefill: resolve the `<space>` prefill from the snapshot without
+    I/O. A cold or launch-pending snapshot opens a blank bar at once and applies a
+    late prefill only to an untouched session. Move `,.` and the editor entry point
+    to the snapshot, and remove every MRU write from key paths.'
+- id: mru-build-efficiency
+  title: One project-record pass and memoized provider detection per MRU build
+  depends_on:
+  - mru-snapshot
+  size: small
+  description: 'mru-build-efficiency: make one launchable-MRU build list project records
+    once and detect each project''s provider once, using per-call (never process-global)
+    state, with the pruning semantics unchanged.'
+- id: watcher-growth
+  title: Pure catalog getters, non-blocking watcher growth, and a wakeable watcher
+    stop
+  depends_on:
+  - key-perf-harness
+  size: medium
+  description: 'watcher-growth: stop catalog getters from restarting the prompt-source
+    watcher. Grow watches off the pump with `ensure_watches` and reconcile once afterward.
+    Add a self-pipe so `ArtifactWatcher.stop()` never waits out the 0.5 s `select`.'
+- id: mount-dedup
+  title: Run each prompt text-area mount, unmount, and worker hook once
+  depends_on:
+  - key-perf-harness
+  size: medium
+  description: 'mount-dedup: replace the mixins'' super-chained, Textual-dispatched
+    `on_mount`, `on_unmount`, and `on_worker_state_changed` handlers with cooperative
+    hooks that are dispatched once. Body order and theme layering stay the same, and
+    goldens stay unchanged.'
+- id: cycle-edit-coalesce
+  title: One highlight build and no pump-side Jinja inspect per cycle edit
+  depends_on:
+  - mru-snapshot
+  - mount-dedup
+  size: medium
+  description: 'cycle-edit-coalesce: batch highlight-map builds so a cycle edit pays
+    for one. Make the queued Changed/SelectionChanged context refreshes no-ops when
+    nothing changed, skip the needless arg-hint refresh, and move the Jinja diagnostics
+    inspect into a pump-free task.'
+- id: post-open-quiet
+  title: Quiet the work that follows opening or editing the prompt
+  depends_on:
+  - watcher-growth
+  size: small
+  description: 'post-open-quiet: repaint the Agents detail only when a warmed context
+    matches the selected agent, and defer that repaint while a prompt is active. Stagger
+    non-essential bar warm-ups by one paint, and hoist the first-mount imports.'
+- id: gc-policy
+  title: Freeze startup objects and log gen-2 GC pauses
+  depends_on:
+  - key-perf-harness
+  size: small
+  description: 'gc-policy: once startup loads finish, run `gc.collect(); gc.freeze()`
+    at idle. Register an allocation-light, I/O-free `gc.callbacks` hook whose gen-2
+    pause records reach the stall/perf logs off the calling thread. Coordinate with
+    the separate TUI-freeze investigation.'
+- id: prompt-active-state
+  title: Explicit prompt-active state and one prompt-bar accessor
+  depends_on:
+  - space-prefill
+  size: medium
+  description: 'prompt-active-state: track the active prompt bar explicitly on the
+    app so `_prompt_input_active()` no longer queries the DOM. Route every `#prompt-input-bar`
+    and `PromptInputBar` lookup through one accessor, which is the prerequisite for
+    a hidden spare bar.'
+- id: space-hot-spare
+  title: Make `<space>` reveal a pre-built hidden prompt bar
+  depends_on:
+  - space-prefill
+  - mru-build-efficiency
+  - watcher-growth
+  - mount-dedup
+  - cycle-edit-coalesce
+  - post-open-quiet
+  - gc-policy
+  - prompt-active-state
+  size: large
+  description: 'space-hot-spare: after re-measuring, keep one fresh, inert, hidden,
+    id-less prompt bar mounted at idle. `<space>` seeds it, reveals it, and calls
+    a new `activate()`. Other prompt modes keep fresh mounts, and every session still
+    gets a new instance.'
+- id: acceptance
+  title: Final measurements, regression gates, and docs
+  depends_on:
+  - space-hot-spare
+  size: small
+  description: 'acceptance: rerun the bench against the baseline and targets, and
+    consolidate the zero-I/O structural tests. Update the perf runbook, leave live-check
+    instructions for the user, and record follow-ups (including the `tui_perf` memory
+    rules).'
 proposed_by: bbugyi200.athena.0vk
 create_time: 2026-10-02 14:49:56
 status: wip
+bead_id: sase-1ex
 ---
 
-- **PROMPT:**
-  [prompts/202610/prompt_space_and_project_cycle_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/prompt_space_and_project_cycle_latency.md)
+- **PROMPT:** [prompts/202610/prompt_space_and_project_cycle_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/prompt_space_and_project_cycle_latency.md)
+- **BEAD:** [sase-1ex](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ex/README.md)
 
 # Plan: Make the prompt `<space>` and `<ctrl+n/p>` project-cycling keys instant
 
