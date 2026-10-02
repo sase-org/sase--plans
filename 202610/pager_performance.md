@@ -1,99 +1,91 @@
 ---
 tier: epic
-title:
-  Make the SASE pager much faster with a virtualized body, a light cold path, and
-  bounded memory
-goal: "`sase pager`, `sase bead show`, `sase artifact read`, and every pager embedded in
-  `sase tui` open and respond in time proportional to what is on screen rather than to
-  document size, start without importing the ACE TUI stack, and release their memory
-  when closed. Rendered output, keys, and navigation stay byte-for-byte identical, and
-  the work adds no disk caches or unbounded memory.
+title: Make the SASE pager much faster with a virtualized body, a light cold path,
+  and bounded memory
+goal: '`sase pager`, `sase bead show`, `sase artifact read`, and every pager embedded
+  in `sase tui` open and respond in time proportional to what is on screen rather
+  than to document size, start without importing the ACE TUI stack, and release their
+  memory when closed. Rendered output, keys, and navigation stay byte-for-byte identical,
+  and the work adds no disk caches or unbounded memory.
 
-  "
+  '
 phases:
-  - id: pager-bench
-    title: Pager benchmark and baseline
-    depends_on: []
-    size: small
-    description:
-      "pager-bench: add a subprocess-isolated pager benchmark over a synthetic corpus
-      (open, keys, search, memory, leak, cold import, CLI wall time), a fast smoke test,
-      and recorded baseline numbers."
-  - id: scan-leak-fixes
-    title: Quadratic scans, span memoization, and the dismissed-view leak
-    depends_on:
-      - pager-bench
-    size: medium
-    description:
-      "scan-leak-fixes: fix the theme-watcher leak that keeps every closed pager alive,
-      make link scanning and window-label row lookups near-linear, memoize per-section
-      target spans and live-pin digests, and stop trail entries from retaining search
-      copies."
-  - id: cold-path-diet
-    title: Cold-path import and startup diet
-    depends_on:
-      - pager-bench
-    size: medium
-    description:
-      "cold-path-diet: make `sase.pager` imports lazy, move pure helpers out of
-      `sase.ace.tui` into leaf modules, defer heavy imports to use sites, skip
-      interactive-only work in plain mode, and add import-weight regression tests."
-  - id: inventory-memo
-    title: Repo inventory and config-key memoization
-    depends_on:
-      - pager-bench
-    size: small
-    description:
-      "inventory-memo: memoize `repo_config_cache_key` by config identity and add a
-      scoped per-command `collect_repo_inventory` memo that bead and artifact pager
-      entry points enter, so one command builds the inventory once."
-  - id: body-line-model
-    title: Textual-free virtual body line model with a parity oracle
-    depends_on:
-      - scan-leak-fixes
-      - cold-path-diet
-    size: medium
-    description:
-      "body-line-model: build the pure per-row layout and render model (line index,
-      exact wrap counts, bisect row lookup, per-row gutter/label/mark rendering) and
-      prove it row-for-row identical to the current composer through a reference oracle
-      kept in tests."
-  - id: virtual-body-widget
-    title: Swap the Static body for a Line-API ScrollView
-    depends_on:
-      - body-line-model
-    size: large
-    description:
-      "virtual-body-widget: replace the one-giant-Static body with a ScrollView that
-      renders only visible rows from the line model through a bounded strip cache, split
-      invalidation into paint versus layout, and keep every PNG golden unchanged."
-  - id: virtual-search-overlay
-    title: Viewport-proportional incremental search
-    depends_on:
-      - virtual-body-widget
-    size: medium
-    description:
-      "virtual-search-overlay: add an optional match-painting host hook to
-      `VimSearchController` so the pager renders search rows lazily instead of
-      rebuilding a styled copy of the whole corpus on every keystroke; ACE hosts keep
-      today's path."
-  - id: perf-gates-docs
-    title: Final measurements, regression gates, and docs
-    depends_on:
-      - inventory-memo
-      - virtual-search-overlay
-    size: small
-    description:
-      "perf-gates-docs: rerun the benchmark against the baseline, add the memory-ceiling
-      and leak gates, document the performance model in the pager docs and perf runbook,
-      and record proposed follow-ups."
+- id: pager-bench
+  title: Pager benchmark and baseline
+  depends_on: []
+  size: small
+  description: 'pager-bench: add a subprocess-isolated pager benchmark over a synthetic
+    corpus (open, keys, search, memory, leak, cold import, CLI wall time), a fast
+    smoke test, and recorded baseline numbers.'
+- id: scan-leak-fixes
+  title: Quadratic scans, span memoization, and the dismissed-view leak
+  depends_on:
+  - pager-bench
+  size: medium
+  description: 'scan-leak-fixes: fix the theme-watcher leak that keeps every closed
+    pager alive, make link scanning and window-label row lookups near-linear, memoize
+    per-section target spans and live-pin digests, and stop trail entries from retaining
+    search copies.'
+- id: cold-path-diet
+  title: Cold-path import and startup diet
+  depends_on:
+  - pager-bench
+  size: medium
+  description: 'cold-path-diet: make `sase.pager` imports lazy, move pure helpers
+    out of `sase.ace.tui` into leaf modules, defer heavy imports to use sites, skip
+    interactive-only work in plain mode, and add import-weight regression tests.'
+- id: inventory-memo
+  title: Repo inventory and config-key memoization
+  depends_on:
+  - pager-bench
+  size: small
+  description: 'inventory-memo: memoize `repo_config_cache_key` by config identity
+    and add a scoped per-command `collect_repo_inventory` memo that bead and artifact
+    pager entry points enter, so one command builds the inventory once.'
+- id: body-line-model
+  title: Textual-free virtual body line model with a parity oracle
+  depends_on:
+  - scan-leak-fixes
+  - cold-path-diet
+  size: medium
+  description: 'body-line-model: build the pure per-row layout and render model (line
+    index, exact wrap counts, bisect row lookup, per-row gutter/label/mark rendering)
+    and prove it row-for-row identical to the current composer through a reference
+    oracle kept in tests.'
+- id: virtual-body-widget
+  title: Swap the Static body for a Line-API ScrollView
+  depends_on:
+  - body-line-model
+  size: large
+  description: 'virtual-body-widget: replace the one-giant-Static body with a ScrollView
+    that renders only visible rows from the line model through a bounded strip cache,
+    split invalidation into paint versus layout, and keep every PNG golden unchanged.'
+- id: virtual-search-overlay
+  title: Viewport-proportional incremental search
+  depends_on:
+  - virtual-body-widget
+  size: medium
+  description: 'virtual-search-overlay: add an optional match-painting host hook to
+    `VimSearchController` so the pager renders search rows lazily instead of rebuilding
+    a styled copy of the whole corpus on every keystroke; ACE hosts keep today''s
+    path.'
+- id: perf-gates-docs
+  title: Final measurements, regression gates, and docs
+  depends_on:
+  - inventory-memo
+  - virtual-search-overlay
+  size: small
+  description: 'perf-gates-docs: rerun the benchmark against the baseline, add the
+    memory-ceiling and leak gates, document the performance model in the pager docs
+    and perf runbook, and record proposed follow-ups.'
 proposed_by: bbugyi200.athena.0v9
 create_time: 2026-10-02 08:37:41
 status: wip
+bead_id: sase-1es
 ---
 
-- **PROMPT:**
-  [prompts/202610/pager_performance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_performance.md)
+- **PROMPT:** [prompts/202610/pager_performance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/pager_performance.md)
+- **BEAD:** [sase-1es](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1es/README.md)
 
 # Plan: Make the SASE pager much faster
 
