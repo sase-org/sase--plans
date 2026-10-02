@@ -1,156 +1,144 @@
 ---
 tier: epic
-title: "Memory history in the TUI: a time-aware Memory pane"
-goal: "The ACE Memory pane knows about time. Every memory note, web, strand, and agent
-  instruction file can be stepped through, diffed, and reviewed in place, in the pager's
-  exact visual language. Cross-file memory changes can be reviewed without leaving ACE,
-  agents show which memory version they actually read, and every hand-off to the pager
-  lands on the exact version that was on screen. No key blocks, nothing fails silently,
-  and there is no second history engine.
+title: 'Memory history in the TUI: a time-aware Memory pane'
+goal: 'The ACE Memory pane knows about time. Every memory note, web, strand, and agent
+  instruction file can be stepped through, diffed, and reviewed in place, in the pager''s
+  exact visual language. Cross-file memory changes can be reviewed without leaving
+  ACE, agents show which memory version they actually read, and every hand-off to
+  the pager lands on the exact version that was on screen. No key blocks, nothing
+  fails silently, and there is no second history engine.
 
-  "
+  '
 phases:
-  - id: front-door
-    title: Repair the H and C front door
-    depends_on: []
-    size: small
-    description:
-      "front-door: make H and C actually open the pager from the Admin Center-hosted
-      Memory pane by removing the call_from_thread misuse inside their async workers.
-      Add failure toasts and stale-open guards, an AST guard test against
-      call_from_thread inside async def under src/sase/ace/tui, and headless key-press
-      tests that fail on the old code."
-  - id: history-service
-    title: App-scoped history service and the public history kit
-    depends_on:
-      - front-door
-    size: medium
-    description:
-      "history-service: add one app-scoped AceMemoryHistory over a process-wide shared
-      HistoryService, which the pager provider factory also uses. It provides a
-      stale-while-revalidate timeline memo, content-addressed body and comparison LRUs,
-      single-flight queries, stat-only change tokens, explicit invalidation, and a
-      quiet-time warm-up. Also publish sase.pager.history_kit as the only door ACE uses
-      for history presentation, and migrate the History row onto the service with an
-      honest unavailable state."
-  - id: time-strip
-    title: Pinned card head with the two-row time strip
-    depends_on:
-      - history-service
-    size: medium
-    description:
-      "time-strip: restructure the Memory card into a pinned head (title, path line with
-      the pager pill, a two-row time strip) above a scrolling body. Render every honest
-      state at now from the kit for notes, web descriptors, and strands. Replace the
-      History property row and its goldens."
-  - id: card-stepping
-    title: Step through versions on the card
-    depends_on:
-      - time-strip
-    size: medium
-    description:
-      "card-stepping: add ( ) { } stepping on the card using the pager's moment model,
-      with prefetched bodies and atomic pill/body swaps. Includes the past read view
-      with past frontmatter, the violet past frame, H at the exact pin, mutation and
-      link guards, unaudited strand pasts, arrival rules, the first Esc ladder rung,
-      footer destination verbs, and the help Time group."
-  - id: card-diff
-    title: Word-diff view on the card
-    depends_on:
-      - card-stepping
-    size: medium
-    description:
-      "card-diff: = toggles a sticky read/diff view rendered with build_diff_body. It
-      covers past versions, latest change at clean now, pending edits at dirty now,
-      creations, and tombstones. Includes cached committed comparisons, prefetch, H
-      carrying the view, and the publish-loop test."
-  - id: timeline-lens
-    title: Lens framework and the Timeline lens
-    depends_on:
-      - card-diff
-    size: medium
-    description:
-      "timeline-lens: add the Notes/Timeline/Changes lens framework, which owns the
-      Notes snapshot and restore, per-lens header, footer, filter, and key routing, and
-      the full Esc ladder. @ turns the rail into the subject's timeline: kit picker
-      rows, debounced preview, b compare base, hidden toggle, and pager hand-off at the
-      cursor pin."
-  - id: changes-lens
-    title: Changes lens over a shared feed view-model
-    depends_on:
-      - timeline-lens
-    size: medium
-    description:
-      "changes-lens: extract a pure feed_model shared with the pager feed document. C
-      turns the rail into day-grouped changesets for the current scope or All scopes,
-      with a bounded window, provenance chips, progressive per-subject diff sections,
-      and pager hand-off in diff view."
-  - id: rail-glance
-    title: Rail recency glance and deleted subjects
-    depends_on:
-      - changes-lens
-    size: medium
-    description:
-      "rail-glance: add a right-aligned newest-change glyph and age on every Notes rail
-      row from one subjects() plus feed() per scope. A D toggle lists tombstoned
-      subjects in a DELETED group, each with a read-only tombstone card. Introduces the
-      history-only rail node kind."
-  - id: instructions-group
-    title: Instructions group and instruction cards
-    depends_on:
-      - rail-glance
-    size: medium
-    description:
-      "instructions-group: add a collapsed INSTRUCTIONS rail group for AGENTS.md
-      subjects with shim alias and diverged chips and the TEMPLATE chip for home. Their
-      read-only cards show cause rows and the rendered body at now, and stepping, diff,
-      the Timeline lens, and H all work."
-  - id: agents-bridge
-    title: Memory as seen by the agent in the Agents tab
-    depends_on:
-      - history-service
-    size: medium
-    description:
-      "agents-bridge: add a sase-core blob:OID version selector. The Agents-tab MEMORY
-      lane gets version chips per read (aggregate for batch reads) and an AGENTS.md as
-      launched row resolved from launch evidence, including a not-in-git snapshot
-      pseudo-version. Hints open the pager pinned to the version read."
-  - id: watermark-core
-    title: Core review watermark and the CLI feed header
-    depends_on:
-      - agents-bridge
-    size: medium
-    description:
-      "watermark-core: add a sase-core per-scope review watermark that is shared across
-      workspace clones and only marked explicitly, plus its bindings and N-new
-      semantics. sase memory history feed output shows N new since you last reviewed,
-      and -m/--mark-reviewed advances it."
-  - id: watermark-tui
-    title: Review watermark in the Changes lens
-    depends_on:
-      - instructions-group
-      - watermark-core
-    size: small
-    description:
-      "watermark-tui: show the Changes lens header N-new chip and unreviewed row dots,
-      add m to mark reviewed (optimistic, persisted off-thread), and add the quiet-time
-      MEMORY sub-tab badge."
-  - id: launch
-    title: Document, measure, and review end to end
-    depends_on:
-      - watermark-tui
-    size: small
-    description:
-      "launch: finish the TUI history docs and run the full visual golden review.
-      Measure and record every performance budget, do a live end-to-end walkthrough, and
-      record the absorbed-bead bookkeeping and follow-ups for the land agent."
+- id: front-door
+  title: Repair the H and C front door
+  depends_on: []
+  size: small
+  description: 'front-door: make H and C actually open the pager from the Admin Center-hosted
+    Memory pane by removing the call_from_thread misuse inside their async workers.
+    Add failure toasts and stale-open guards, an AST guard test against call_from_thread
+    inside async def under src/sase/ace/tui, and headless key-press tests that fail
+    on the old code.'
+- id: history-service
+  title: App-scoped history service and the public history kit
+  depends_on:
+  - front-door
+  size: medium
+  description: 'history-service: add one app-scoped AceMemoryHistory over a process-wide
+    shared HistoryService, which the pager provider factory also uses. It provides
+    a stale-while-revalidate timeline memo, content-addressed body and comparison
+    LRUs, single-flight queries, stat-only change tokens, explicit invalidation, and
+    a quiet-time warm-up. Also publish sase.pager.history_kit as the only door ACE
+    uses for history presentation, and migrate the History row onto the service with
+    an honest unavailable state.'
+- id: time-strip
+  title: Pinned card head with the two-row time strip
+  depends_on:
+  - history-service
+  size: medium
+  description: 'time-strip: restructure the Memory card into a pinned head (title,
+    path line with the pager pill, a two-row time strip) above a scrolling body. Render
+    every honest state at now from the kit for notes, web descriptors, and strands.
+    Replace the History property row and its goldens.'
+- id: card-stepping
+  title: Step through versions on the card
+  depends_on:
+  - time-strip
+  size: medium
+  description: 'card-stepping: add ( ) { } stepping on the card using the pager''s
+    moment model, with prefetched bodies and atomic pill/body swaps. Includes the
+    past read view with past frontmatter, the violet past frame, H at the exact pin,
+    mutation and link guards, unaudited strand pasts, arrival rules, the first Esc
+    ladder rung, footer destination verbs, and the help Time group.'
+- id: card-diff
+  title: Word-diff view on the card
+  depends_on:
+  - card-stepping
+  size: medium
+  description: 'card-diff: = toggles a sticky read/diff view rendered with build_diff_body.
+    It covers past versions, latest change at clean now, pending edits at dirty now,
+    creations, and tombstones. Includes cached committed comparisons, prefetch, H
+    carrying the view, and the publish-loop test.'
+- id: timeline-lens
+  title: Lens framework and the Timeline lens
+  depends_on:
+  - card-diff
+  size: medium
+  description: 'timeline-lens: add the Notes/Timeline/Changes lens framework, which
+    owns the Notes snapshot and restore, per-lens header, footer, filter, and key
+    routing, and the full Esc ladder. @ turns the rail into the subject''s timeline:
+    kit picker rows, debounced preview, b compare base, hidden toggle, and pager hand-off
+    at the cursor pin.'
+- id: changes-lens
+  title: Changes lens over a shared feed view-model
+  depends_on:
+  - timeline-lens
+  size: medium
+  description: 'changes-lens: extract a pure feed_model shared with the pager feed
+    document. C turns the rail into day-grouped changesets for the current scope or
+    All scopes, with a bounded window, provenance chips, progressive per-subject diff
+    sections, and pager hand-off in diff view.'
+- id: rail-glance
+  title: Rail recency glance and deleted subjects
+  depends_on:
+  - changes-lens
+  size: medium
+  description: 'rail-glance: add a right-aligned newest-change glyph and age on every
+    Notes rail row from one subjects() plus feed() per scope. A D toggle lists tombstoned
+    subjects in a DELETED group, each with a read-only tombstone card. Introduces
+    the history-only rail node kind.'
+- id: instructions-group
+  title: Instructions group and instruction cards
+  depends_on:
+  - rail-glance
+  size: medium
+  description: 'instructions-group: add a collapsed INSTRUCTIONS rail group for AGENTS.md
+    subjects with shim alias and diverged chips and the TEMPLATE chip for home. Their
+    read-only cards show cause rows and the rendered body at now, and stepping, diff,
+    the Timeline lens, and H all work.'
+- id: agents-bridge
+  title: Memory as seen by the agent in the Agents tab
+  depends_on:
+  - history-service
+  size: medium
+  description: 'agents-bridge: add a sase-core blob:OID version selector. The Agents-tab
+    MEMORY lane gets version chips per read (aggregate for batch reads) and an AGENTS.md
+    as launched row resolved from launch evidence, including a not-in-git snapshot
+    pseudo-version. Hints open the pager pinned to the version read.'
+- id: watermark-core
+  title: Core review watermark and the CLI feed header
+  depends_on:
+  - agents-bridge
+  size: medium
+  description: 'watermark-core: add a sase-core per-scope review watermark that is
+    shared across workspace clones and only marked explicitly, plus its bindings and
+    N-new semantics. sase memory history feed output shows N new since you last reviewed,
+    and -m/--mark-reviewed advances it.'
+- id: watermark-tui
+  title: Review watermark in the Changes lens
+  depends_on:
+  - instructions-group
+  - watermark-core
+  size: small
+  description: 'watermark-tui: show the Changes lens header N-new chip and unreviewed
+    row dots, add m to mark reviewed (optimistic, persisted off-thread), and add the
+    quiet-time MEMORY sub-tab badge.'
+- id: launch
+  title: Document, measure, and review end to end
+  depends_on:
+  - watermark-tui
+  size: small
+  description: 'launch: finish the TUI history docs and run the full visual golden
+    review. Measure and record every performance budget, do a live end-to-end walkthrough,
+    and record the absorbed-bead bookkeeping and follow-ups for the land agent.'
 proposed_by: bbugyi200.athena.0vj
 create_time: 2026-10-02 14:43:00
 status: wip
+bead_id: sase-1ev
 ---
 
-- **PROMPT:**
-  [prompts/202610/memory_history_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/memory_history_tui.md)
+- **PROMPT:** [prompts/202610/memory_history_tui.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/memory_history_tui.md)
+- **BEAD:** [sase-1ev](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ev/README.md)
 
 # Plan: Memory history in the TUI, a time-aware Memory pane
 
