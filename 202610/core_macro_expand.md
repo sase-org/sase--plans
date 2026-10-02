@@ -2,18 +2,17 @@
 tier: tale
 size: medium
 title: Additive macro rename in sase-core for sase-1eq.1
-goal:
-  Complete sase-1eq.1 by accepting macro inputs and bindings in sase-core while
+goal: Complete sase-1eq.1 by accepting macro inputs and bindings in sase-core while
   preserving existing wire output and unchanged sase compatibility.
 proposed_by: bbugyi200.athena.sase-1eq.1
 bead: sase-1eq.1
-create_time: 2026-10-02 07:03:21
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
-- **BEAD:** sase-1eq.1
+- **BEAD:**
+  [sase-1eq.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.1.md)
 
 # Additive macro rename in sase-core
 
