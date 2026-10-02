@@ -53,7 +53,7 @@ phases:
     and the help sheet.'
 proposed_by: bbugyi200.athena.0v1
 create_time: 2026-10-01 15:39:28
-status: wip
+status: done
 bead_id: sase-1eg
 ---
 
