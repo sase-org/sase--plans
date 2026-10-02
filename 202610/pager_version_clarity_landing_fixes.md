@@ -1,17 +1,14 @@
 ---
 tier: tale
-title:
-  "Finish and land pager version clarity (sase-1ef): epic-caused fixes and closeout"
-goal:
-  "Every pager version-clarity surface tells one consistent, correct story: the diff
-  body, pill, band, footer, trail, and picker agree, survive syntax highlighting, theme
-  changes, navigation, and narrow widths, and the PNG goldens are regenerated and
-  stable. Then epic sase-1ef is closed and its plan file marked done."
+title: 'Finish and land pager version clarity (sase-1ef): epic-caused fixes and closeout'
+goal: 'Every pager version-clarity surface tells one consistent, correct story: the
+  diff body, pill, band, footer, trail, and picker agree, survive syntax highlighting,
+  theme changes, navigation, and narrow widths, and the PNG goldens are regenerated
+  and stable. Then epic sase-1ef is closed and its plan file marked done.'
 size: medium
 proposed_by: bbugyi200.athena.sase-1ef.land
 bead: sase-1ef
-create_time: 2026-10-01 21:02:51
-status: wip
+status: done
 ---
 
 - **PARENT:**
