@@ -5,98 +5,92 @@ goal: 'The Agents-tab deck and the sase pager share one closed split model with 
   geometries: single, two two-pane splits, and four three-pane T shapes. The existing
   `\` / `|` keys follow one rule: erase a full-span divider, draw one through the
   focused pane, or turn a three-pane layout. New keys add a focus ring (`ctrl+f` /
-  `ctrl+b`), content swap (`ctrl+shift+f` / `ctrl+shift+b`, aliases `>` / `<`),
-  close-focused (`ctrl+shift+d`, alias `ctrl+x`) and turn (`ctrl+t`). Rendering is
-  spatially stable, shows exactly one full-strength frame, and never remounts a pane.
-  The work lands without colliding with the sase-1es pager performance epic.
+  `ctrl+b`), content swap (`ctrl+shift+f` / `ctrl+shift+b`, aliases `>` / `<`), close-focused
+  (`ctrl+shift+d`, alias `ctrl+x`) and turn (`ctrl+t`). Rendering is spatially stable,
+  shows exactly one full-strength frame, and never remounts a pane. The work lands
+  without colliding with the sase-1es pager performance epic.
 
   '
 phases:
-  - id: terminal-chain
-    title: Deliver the ctrl+shift chords through kitty and tmux
-    depends_on: []
-    size: small
-    description:
-      "terminal-chain: in the linked chezmoi repo, unmap kitty's ctrl+shift+f/b/o window
-      maps and enable tmux CSI-u extended keys so ctrl+shift chords reach Textual, then
-      record a manual verification checklist."
-  - id: pane-grid-model
-    title: Shared pure PaneGrid model and golden transition table
-    depends_on: []
-    size: medium
-    description:
-      "pane-grid-model: add a stdlib-only PaneGrid algebra (split key rule, close, focus
-      ring, swap, turn, resize, MRU target, fit, positions, grid spec). Pin it with a
-      golden transition table, Hypothesis invariants, and an import-weight test."
-  - id: deck-grid-adapter
-    title: Agents deck on PaneGrid with flat grid rendering
-    depends_on:
-      - pane-grid-model
-    size: medium
-    description:
-      "deck-grid-adapter: rebuild DeckAreaState and DeckArea on PaneGrid with
-      pane-ID-keyed panels and a flat CSS grid that never remounts. Remove every
-      two-pane index assumption, keep the focused panel on same-key unsplit, and make
-      split keys while zoomed only restore. Two-pane goldens stay byte-identical."
-  - id: deck-pane-keys
-    title: Agents deck reverse focus, swap, close, and turn keys
-    depends_on:
-      - deck-grid-adapter
-    size: medium
-    description:
-      "deck-pane-keys: add ctrl+b reverse focus, ctrl+shift+f/b swap (aliases > and <),
-      ctrl+shift+d close (alias ctrl+x) and ctrl+t turn on the Agents tab. Wire keymaps,
-      registry pairs, availability, palette, help and docs, and move the debug leak
-      chord to f12."
-  - id: deck-three-panels
-    title: Agents deck three panels behind the three_pane_splits beta flag
-    depends_on:
-      - deck-pane-keys
-    size: medium
-    description:
-      "deck-three-panels: create the three_pane_splits beta flag and, behind it, enable
-      the third deck panel: nest, turn and erase, fit refusal toasts, MRU picker target
-      with position glyphs, 3-of-3 zoom chrome, additive persistence, a three-panel
-      footer, a j/k perf check and T-shape goldens."
-  - id: pager-grid-adapter
-    title: Pager on PaneGrid with grid panes and the new pane keys
-    depends_on:
-      - pane-grid-model
-    size: medium
-    description:
-      "pager-grid-adapter: wait until sase-1es.6 has landed, then port the pager split
-      onto PaneGrid. Use a flat grid #pager-panes with pane-ID-keyed views, close paths
-      that remove only the discarded view (the sase-1er fix), and the ctrl+b, swap,
-      close and turn keys on two panes. All pager goldens stay unchanged."
-  - id: pager-three-panes
-    title: Pager three panes with MRU ctrl+w and a target preview
-    depends_on:
-      - pager-grid-adapter
-      - deck-three-panels
-    size: medium
-    description:
-      "pager-three-panes: behind three_pane_splits, enable pager nest, turn and erase,
-      with transactional third-view mounts and fit refusal. Retarget ctrl+w to the MRU
-      pane with a lifted target frame, show a three-pane footer and help, and add
-      T-shape goldens."
-  - id: unflag-docs
-    title: Remove the flag and finish docs, help, glossary, and release note
-    depends_on:
-      - deck-three-panels
-      - pager-three-panes
-    size: small
-    description:
-      "unflag-docs: delete the three_pane_splits Off branch and close its flag bead,
-      then clear leftover epic-symbol entries. Finish docs/ace.md, docs/pager.md,
-      configuration docs and help sheets, update the Deck Panel glossary strand, and
-      write the changelog-facing commit message."
+- id: terminal-chain
+  title: Deliver the ctrl+shift chords through kitty and tmux
+  depends_on: []
+  size: small
+  description: 'terminal-chain: in the linked chezmoi repo, unmap kitty''s ctrl+shift+f/b/o
+    window maps and enable tmux CSI-u extended keys so ctrl+shift chords reach Textual,
+    then record a manual verification checklist.'
+- id: pane-grid-model
+  title: Shared pure PaneGrid model and golden transition table
+  depends_on: []
+  size: medium
+  description: 'pane-grid-model: add a stdlib-only PaneGrid algebra (split key rule,
+    close, focus ring, swap, turn, resize, MRU target, fit, positions, grid spec).
+    Pin it with a golden transition table, Hypothesis invariants, and an import-weight
+    test.'
+- id: deck-grid-adapter
+  title: Agents deck on PaneGrid with flat grid rendering
+  depends_on:
+  - pane-grid-model
+  size: medium
+  description: 'deck-grid-adapter: rebuild DeckAreaState and DeckArea on PaneGrid
+    with pane-ID-keyed panels and a flat CSS grid that never remounts. Remove every
+    two-pane index assumption, keep the focused panel on same-key unsplit, and make
+    split keys while zoomed only restore. Two-pane goldens stay byte-identical.'
+- id: deck-pane-keys
+  title: Agents deck reverse focus, swap, close, and turn keys
+  depends_on:
+  - deck-grid-adapter
+  size: medium
+  description: 'deck-pane-keys: add ctrl+b reverse focus, ctrl+shift+f/b swap (aliases
+    > and <), ctrl+shift+d close (alias ctrl+x) and ctrl+t turn on the Agents tab.
+    Wire keymaps, registry pairs, availability, palette, help and docs, and move the
+    debug leak chord to f12.'
+- id: deck-three-panels
+  title: Agents deck three panels behind the three_pane_splits beta flag
+  depends_on:
+  - deck-pane-keys
+  size: medium
+  description: 'deck-three-panels: create the three_pane_splits beta flag and, behind
+    it, enable the third deck panel: nest, turn and erase, fit refusal toasts, MRU
+    picker target with position glyphs, 3-of-3 zoom chrome, additive persistence,
+    a three-panel footer, a j/k perf check and T-shape goldens.'
+- id: pager-grid-adapter
+  title: Pager on PaneGrid with grid panes and the new pane keys
+  depends_on:
+  - pane-grid-model
+  size: medium
+  description: 'pager-grid-adapter: wait until sase-1es.6 has landed, then port the
+    pager split onto PaneGrid. Use a flat grid #pager-panes with pane-ID-keyed views,
+    close paths that remove only the discarded view (the sase-1er fix), and the ctrl+b,
+    swap, close and turn keys on two panes. All pager goldens stay unchanged.'
+- id: pager-three-panes
+  title: Pager three panes with MRU ctrl+w and a target preview
+  depends_on:
+  - pager-grid-adapter
+  - deck-three-panels
+  size: medium
+  description: 'pager-three-panes: behind three_pane_splits, enable pager nest, turn
+    and erase, with transactional third-view mounts and fit refusal. Retarget ctrl+w
+    to the MRU pane with a lifted target frame, show a three-pane footer and help,
+    and add T-shape goldens.'
+- id: unflag-docs
+  title: Remove the flag and finish docs, help, glossary, and release note
+  depends_on:
+  - deck-three-panels
+  - pager-three-panes
+  size: small
+  description: 'unflag-docs: delete the three_pane_splits Off branch and close its
+    flag bead, then clear leftover epic-symbol entries. Finish docs/ace.md, docs/pager.md,
+    configuration docs and help sheets, update the Deck Panel glossary strand, and
+    write the changelog-facing commit message.'
 proposed_by: bbugyi200.athena.0ve
 create_time: 2026-10-02 11:33:47
 status: wip
+bead_id: sase-1eu
 ---
 
-- **PROMPT:**
-  [prompts/202610/three_pane_splits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/three_pane_splits.md)
+- **PROMPT:** [prompts/202610/three_pane_splits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/three_pane_splits.md)
+- **BEAD:** [sase-1eu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eu/README.md)
 
 <!-- sase:links:start -->
 
