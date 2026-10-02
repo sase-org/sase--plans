@@ -1,95 +1,88 @@
 ---
 tier: epic
 title: Finish the additive Rust macro rename and close sase-1eq.1
-goal:
-  Complete all remaining core-expand contracts, prove compatibility with unchanged sase,
-  and close only the original phase after its child epic lands.
+goal: Complete all remaining core-expand contracts, prove compatibility with unchanged
+  sase, and close only the original phase after its child epic lands.
 parent_bead: sase-1eq.1
 phases:
-  - id: catalog-editor-names
-    title: Rename catalog and editor internals with pinned legacy output
-    size: medium
-    depends_on: []
-    description:
-      "catalog-editor-names: Complete catalog/editor/content-layout internal identifier
-      renames, update Rust consumers through owning-module imports, preserve all
-      existing serialized values and diagnostics, and register the three macro
-      editor/skill binding aliases. Follow the catalog-editor-names section and shared
-      compatibility rules."
-  - id: runtime-wire-names
-    title: Rename runtime wires and normalize prompt proc aliases
-    size: medium
-    depends_on:
-      - catalog-editor-names
-    description:
-      "runtime-wire-names: Rename scan/statistics/launch/proc and remaining runtime
-      internals with legacy serialization pins and new request aliases. Normalize
-      prompt-proc inputs, add prompt_proc_origin, and complete root/prelude cleanup.
-      Preserve index schemas, contracts, parity expectations, and emitted diagnostics."
-  - id: catalog-sources
-    title: Add canonical macro sources and legacy loading policy
-    size: medium
-    depends_on:
-      - runtime-wire-names
-    description:
-      "catalog-sources: Add canonical macro layouts and source lists beside untouched
-      legacy layouts; load new-first package/plugin/home/project paths and transport
-      variables. Thread default-true accept_legacy_xprompt_names through core and Python
-      catalog entry points, rejecting retired definition sources when false while
-      preserving skills and memory placement. Cover explicit resource precedence and
-      option aliases."
-  - id: authored-inputs
-    title: Accept macro definition keys and permanent directive aliases
-    size: medium
-    depends_on:
-      - catalog-sources
-    description:
-      "authored-inputs: Accept macros keys in all YAML/frontmatter/config loading and
-      editor paths, diagnose duplicate spellings and retired authored keys, support both
-      literal-zone directive families including mixed markers, and emit both
-      local-definition child environment variables. Keep legacy presentation and output
-      unchanged."
-  - id: durable-readers
-    title: Read new artifact filenames with permanent legacy fallbacks
-    size: medium
-    depends_on:
-      - authored-inputs
-    description:
-      "durable-readers: Implement new-first macros.json/raw_prompt.md selection in scans
-      and alias history, preserve indexed storage while invalidating signatures on
-      selection changes, and recognize renamed home state files. Verify cold/indexed
-      scans, capacity-only behavior, and durable compatibility independent of the legacy
-      option."
-  - id: lsp-inputs
-    title: Expose the macro LSP binary, commands, and policy-aware catalogs
-    size: medium
-    depends_on:
-      - durable-readers
-    description:
-      "lsp-inputs: Add sase-macro-lsp to the existing package, new command aliases and
-      document paths, new-first metadata environment variables, and the legacy
-      initialization option throughout refresh/cache/helper behavior. Prevent stale or
-      helper catalogs from restoring retired definitions when false; preserve old
-      protocol output."
-  - id: compatibility-audit
-    title: Verify the combined additive contract against unchanged sase
-    size: medium
-    depends_on:
-      - lsp-inputs
-    description:
-      "compatibility-audit: Audit all residual terminology and protected output against
-      the starting core, fix omissions within core-expand, run the complete core gate,
-      install the combined core into the unchanged sase workspace, and run core health,
-      focused Python compatibility tests, and the sase gate. Record evidence on this
-      phase and sase-1eq.1. Prepare closure evidence; leave ancestor closure to the
-      child land agent."
+- id: catalog-editor-names
+  title: Rename catalog and editor internals with pinned legacy output
+  size: medium
+  depends_on: []
+  description: 'catalog-editor-names: Complete catalog/editor/content-layout internal
+    identifier renames, update Rust consumers through owning-module imports, preserve
+    all existing serialized values and diagnostics, and register the three macro editor/skill
+    binding aliases. Follow the catalog-editor-names section and shared compatibility
+    rules.'
+- id: runtime-wire-names
+  title: Rename runtime wires and normalize prompt proc aliases
+  size: medium
+  depends_on:
+  - catalog-editor-names
+  description: 'runtime-wire-names: Rename scan/statistics/launch/proc and remaining
+    runtime internals with legacy serialization pins and new request aliases. Normalize
+    prompt-proc inputs, add prompt_proc_origin, and complete root/prelude cleanup.
+    Preserve index schemas, contracts, parity expectations, and emitted diagnostics.'
+- id: catalog-sources
+  title: Add canonical macro sources and legacy loading policy
+  size: medium
+  depends_on:
+  - runtime-wire-names
+  description: 'catalog-sources: Add canonical macro layouts and source lists beside
+    untouched legacy layouts; load new-first package/plugin/home/project paths and
+    transport variables. Thread default-true accept_legacy_xprompt_names through core
+    and Python catalog entry points, rejecting retired definition sources when false
+    while preserving skills and memory placement. Cover explicit resource precedence
+    and option aliases.'
+- id: authored-inputs
+  title: Accept macro definition keys and permanent directive aliases
+  size: medium
+  depends_on:
+  - catalog-sources
+  description: 'authored-inputs: Accept macros keys in all YAML/frontmatter/config
+    loading and editor paths, diagnose duplicate spellings and retired authored keys,
+    support both literal-zone directive families including mixed markers, and emit
+    both local-definition child environment variables. Keep legacy presentation and
+    output unchanged.'
+- id: durable-readers
+  title: Read new artifact filenames with permanent legacy fallbacks
+  size: medium
+  depends_on:
+  - authored-inputs
+  description: 'durable-readers: Implement new-first macros.json/raw_prompt.md selection
+    in scans and alias history, preserve indexed storage while invalidating signatures
+    on selection changes, and recognize renamed home state files. Verify cold/indexed
+    scans, capacity-only behavior, and durable compatibility independent of the legacy
+    option.'
+- id: lsp-inputs
+  title: Expose the macro LSP binary, commands, and policy-aware catalogs
+  size: medium
+  depends_on:
+  - durable-readers
+  description: 'lsp-inputs: Add sase-macro-lsp to the existing package, new command
+    aliases and document paths, new-first metadata environment variables, and the
+    legacy initialization option throughout refresh/cache/helper behavior. Prevent
+    stale or helper catalogs from restoring retired definitions when false; preserve
+    old protocol output.'
+- id: compatibility-audit
+  title: Verify the combined additive contract against unchanged sase
+  size: medium
+  depends_on:
+  - lsp-inputs
+  description: 'compatibility-audit: Audit all residual terminology and protected
+    output against the starting core, fix omissions within core-expand, run the complete
+    core gate, install the combined core into the unchanged sase workspace, and run
+    core health, focused Python compatibility tests, and the sase gate. Record evidence
+    on this phase and sase-1eq.1. Prepare closure evidence; leave ancestor closure
+    to the child land agent.'
 proposed_by: bbugyi200.athena.sase-1eq.1.f0
 create_time: 2026-10-02 07:55:43
 status: wip
+bead_id: sase-1eq.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_core_macro_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_core_macro_expand.md)
+- **PROMPT:** [prompts/202610/finish_core_macro_expand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_core_macro_expand.md)
+- **BEAD:** [sase-1eq.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.1.1.md)
 
 # Finish core-expand without changing its output contract
 
