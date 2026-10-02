@@ -8,115 +8,109 @@ goal: 'SASE calls its reusable `#name` prompt definitions "macros" in code, CLI,
 
   '
 phases:
-  - id: core-expand
-    title: sase-core additive macro rename
-    depends_on: []
-    size: large
-    description:
-      "core-expand: rename the concept inside sase-core while serialized output stays
-      byte-identical. Accept every new input spelling, register new binding names next
-      to the legacy ones, and add a sase-macro-lsp binary to the existing LSP crate."
-  - id: sase-durable
-    title: Durable data, core wires, and LSP build tooling
-    depends_on:
-      - core-expand
-    size: medium
-    description:
-      "sase-durable: pin core-expand and call the new bindings. Route every durable
-      sase-written name through permanent legacy readers that have legacy-input tests.
-      Make the LSP build and launch tooling work with either crate name."
-  - id: sase-modules
-    title: Module, package, and identifier rename outside the TUI
-    depends_on:
-      - sase-durable
-    size: large
-    description:
-      "sase-modules: rename query-language macros to shorthands first. Then move the
-      sase.xprompt package and every other xprompt-named module, data dir, and test
-      path. Rewrite identifiers with a token-aware codemod, add a temporary plugin
-      import shim, and start the terminology guard."
-  - id: sase-syntax
-    title: User syntax, CLI, config, discovery, and the sunset flag
-    depends_on:
-      - sase-modules
-    size: large
-    description:
-      "sase-syntax: create the legacy_xprompt_syntax sunset flag. Switch every
-      user-facing string contract outside the TUI to macro spellings with flag-gated
-      aliases: CLI, config and frontmatter keys, directories, plugin groups, env vars,
-      doctor ids, and skill sources."
-  - id: tui
-    title: TUI macro surfaces and goldens
-    depends_on:
-      - sase-syntax
-    size: large
-    description:
-      "tui: rename TUI modules, identifiers, CSS, copy, keymap actions, and Admin Center
-      ids. Apply the raw-prompt wording for the agent prompt tab and headings, and
-      re-baseline the PNG goldens whose pixels change."
-  - id: docs-memory
-    title: Documentation, site redirect, memory, and first skill redeploy
-    depends_on:
-      - sase-syntax
-    size: medium
-    description:
-      "docs-memory: redeploy the generated skills and rewrite docs, README, and blog.
-      Move the docs page with a redirect from the old URL. Rename the xprompts memory
-      note and the five glossary strands, then republish memory."
-  - id: telegram
-    title: sase-telegram cutover
-    depends_on:
-      - sase-syntax
-    size: small
-    description:
-      "telegram: switch sase-telegram to a new-first compatibility import helper and the
-      raw_prompt.md artifact. Rename the bot command to /macros, keeping a flag-gated
-      /xprompts alias, and rename its internals and docs."
-  - id: plugins
-    title: sase-github, sase-research-artifacts, and bugyi-chops cutover
-    depends_on:
-      - sase-syntax
-    size: small
-    description:
-      "plugins: register the sase_macros entry-point group next to the legacy group,
-      keep the packaged xprompts/ directories for now, and use new-first imports in
-      tests. Rename docs and internals in all three plugins."
-  - id: nvim
-    title: sase-nvim cutover
-    depends_on:
-      - sase-syntax
-    size: medium
-    description:
-      "nvim: rename sase-nvim's Lua modules, setup keys, commands, highlight groups,
-      Telescope extension, and LSP client name, with deprecation shims. Talk to sase
-      macro and sase-macro-lsp first, falling back to the legacy CLI and binary names."
-  - id: core-flip
-    title: sase-core contract flip with same-turn pin bump
-    depends_on:
-      - tui
-      - telegram
-      - plugins
-      - nvim
-    size: large
-    description:
-      "core-flip: make sase-core emit only macro spellings and remove the legacy binding
-      names. Rename the LSP crate, bump the index and wire schemas, and add the mobile
-      macros route. In the same declared turn, update sase mirrors and pin, and the
-      chezmoi LSP install script."
-  - id: audit-deploy
-    title: Cross-repo audit, guardrail, chezmoi, and machine migration
-    depends_on:
-      - docs-memory
-      - core-flip
-    size: medium
-    description:
-      "audit-deploy: remove the temporary import shim and widen the guard to the whole
-      repo. Sweep every repo, migrate the chezmoi sources and the live athena state,
-      redeploy skills, annotate open beads, and record deferred follow-ups."
+- id: core-expand
+  title: sase-core additive macro rename
+  depends_on: []
+  size: large
+  description: 'core-expand: rename the concept inside sase-core while serialized
+    output stays byte-identical. Accept every new input spelling, register new binding
+    names next to the legacy ones, and add a sase-macro-lsp binary to the existing
+    LSP crate.'
+- id: sase-durable
+  title: Durable data, core wires, and LSP build tooling
+  depends_on:
+  - core-expand
+  size: medium
+  description: 'sase-durable: pin core-expand and call the new bindings. Route every
+    durable sase-written name through permanent legacy readers that have legacy-input
+    tests. Make the LSP build and launch tooling work with either crate name.'
+- id: sase-modules
+  title: Module, package, and identifier rename outside the TUI
+  depends_on:
+  - sase-durable
+  size: large
+  description: 'sase-modules: rename query-language macros to shorthands first. Then
+    move the sase.xprompt package and every other xprompt-named module, data dir,
+    and test path. Rewrite identifiers with a token-aware codemod, add a temporary
+    plugin import shim, and start the terminology guard.'
+- id: sase-syntax
+  title: User syntax, CLI, config, discovery, and the sunset flag
+  depends_on:
+  - sase-modules
+  size: large
+  description: 'sase-syntax: create the legacy_xprompt_syntax sunset flag. Switch
+    every user-facing string contract outside the TUI to macro spellings with flag-gated
+    aliases: CLI, config and frontmatter keys, directories, plugin groups, env vars,
+    doctor ids, and skill sources.'
+- id: tui
+  title: TUI macro surfaces and goldens
+  depends_on:
+  - sase-syntax
+  size: large
+  description: 'tui: rename TUI modules, identifiers, CSS, copy, keymap actions, and
+    Admin Center ids. Apply the raw-prompt wording for the agent prompt tab and headings,
+    and re-baseline the PNG goldens whose pixels change.'
+- id: docs-memory
+  title: Documentation, site redirect, memory, and first skill redeploy
+  depends_on:
+  - sase-syntax
+  size: medium
+  description: 'docs-memory: redeploy the generated skills and rewrite docs, README,
+    and blog. Move the docs page with a redirect from the old URL. Rename the xprompts
+    memory note and the five glossary strands, then republish memory.'
+- id: telegram
+  title: sase-telegram cutover
+  depends_on:
+  - sase-syntax
+  size: small
+  description: 'telegram: switch sase-telegram to a new-first compatibility import
+    helper and the raw_prompt.md artifact. Rename the bot command to /macros, keeping
+    a flag-gated /xprompts alias, and rename its internals and docs.'
+- id: plugins
+  title: sase-github, sase-research-artifacts, and bugyi-chops cutover
+  depends_on:
+  - sase-syntax
+  size: small
+  description: 'plugins: register the sase_macros entry-point group next to the legacy
+    group, keep the packaged xprompts/ directories for now, and use new-first imports
+    in tests. Rename docs and internals in all three plugins.'
+- id: nvim
+  title: sase-nvim cutover
+  depends_on:
+  - sase-syntax
+  size: medium
+  description: 'nvim: rename sase-nvim''s Lua modules, setup keys, commands, highlight
+    groups, Telescope extension, and LSP client name, with deprecation shims. Talk
+    to sase macro and sase-macro-lsp first, falling back to the legacy CLI and binary
+    names.'
+- id: core-flip
+  title: sase-core contract flip with same-turn pin bump
+  depends_on:
+  - tui
+  - telegram
+  - plugins
+  - nvim
+  size: large
+  description: 'core-flip: make sase-core emit only macro spellings and remove the
+    legacy binding names. Rename the LSP crate, bump the index and wire schemas, and
+    add the mobile macros route. In the same declared turn, update sase mirrors and
+    pin, and the chezmoi LSP install script.'
+- id: audit-deploy
+  title: Cross-repo audit, guardrail, chezmoi, and machine migration
+  depends_on:
+  - docs-memory
+  - core-flip
+  size: medium
+  description: 'audit-deploy: remove the temporary import shim and widen the guard
+    to the whole repo. Sweep every repo, migrate the chezmoi sources and the live
+    athena state, redeploy skills, annotate open beads, and record deferred follow-ups.'
 proposed_by: bbugyi200.athena.0v4
 create_time: 2026-10-02 06:51:18
 status: wip
+bead_id: sase-1eq
 ---
+
+- **BEAD:** [sase-1eq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/README.md)
 
 # Plan: Rename xprompts to macros
 
