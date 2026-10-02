@@ -1,55 +1,51 @@
 ---
 tier: epic
 title: Rename sase modules from xprompt to macro
-goal: "Outside the TUI, query-language status macros are shorthands, the xprompt package
+goal: 'Outside the TUI, query-language status macros are shorthands, the xprompt package
   and sibling modules live on macro paths, identifiers follow a token-aware rename,
-  external plugins still import the old paths through one temporary shim, and a
-  terminology guard holds that boundary.
+  external plugins still import the old paths through one temporary shim, and a terminology
+  guard holds that boundary.
 
-  "
+  '
 phases:
-  - id: shorthands
-    title: Query-language shorthands
-    depends_on: []
-    size: medium
-    description:
-      "shorthands: Rename the query-language status-macro concept to shorthand,
-      including the profile wire key sent to core, before any xprompt rename."
-  - id: paths
-    title: Package and module paths
-    depends_on:
-      - shorthands
-    size: medium
-    description:
-      "paths: Move non-TUI xprompt packages and modules onto macro paths, retarget
-      imports and package resource paths, and add the temporary import shim."
-  - id: identifiers
-    title: Token-aware identifier rename
-    depends_on:
-      - paths
-    size: medium
-    description:
-      "identifiers: Rewrite xprompt identifiers outside the TUI with a token-aware
-      codemod, including Rule 2 names, the catalog template attribute, and the shim's
-      old-name bindings."
-  - id: guard
-    title: Terminology guard
-    depends_on:
-      - identifiers
-    size: small
-    description:
-      "guard: Add the contract test that fails on non-TUI xprompt identifiers and paths,
-      allowlisting the legacy homes and the shim."
+- id: shorthands
+  title: Query-language shorthands
+  depends_on: []
+  size: medium
+  description: 'shorthands: Rename the query-language status-macro concept to shorthand,
+    including the profile wire key sent to core, before any xprompt rename.'
+- id: paths
+  title: Package and module paths
+  depends_on:
+  - shorthands
+  size: medium
+  description: 'paths: Move non-TUI xprompt packages and modules onto macro paths,
+    retarget imports and package resource paths, and add the temporary import shim.'
+- id: identifiers
+  title: Token-aware identifier rename
+  depends_on:
+  - paths
+  size: medium
+  description: 'identifiers: Rewrite xprompt identifiers outside the TUI with a token-aware
+    codemod, including Rule 2 names, the catalog template attribute, and the shim''s
+    old-name bindings.'
+- id: guard
+  title: Terminology guard
+  depends_on:
+  - identifiers
+  size: small
+  description: 'guard: Add the contract test that fails on non-TUI xprompt identifiers
+    and paths, allowlisting the legacy homes and the shim.'
 proposed_by: bbugyi200.athena.sase-1eq.3
 parent_bead: sase-1eq.3
 create_time: 2026-10-02 19:30:19
 status: wip
+bead_id: sase-1eq.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/sase_modules_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_modules_rename.md)
-- **PARENT:**
-  [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **PROMPT:** [prompts/202610/sase_modules_rename.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_modules_rename.md)
+- **PARENT:** [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **BEAD:** [sase-1eq.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.3.1.md)
 
 # Plan: Rename sase modules from xprompt to macro
 
