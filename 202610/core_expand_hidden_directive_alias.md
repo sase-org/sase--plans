@@ -2,10 +2,9 @@
 tier: tale
 size: small
 title: Keep the legacy directive contract byte-identical and land sase-1eq.1.1
-goal:
-  Accept %macros_enabled as a hidden input-only directive alias in sase-core so
-  unchanged sase passes against the combined core, then close epic sase-1eq.1.1 and its
-  parent phase sase-1eq.1.
+goal: Accept %macros_enabled as a hidden input-only directive alias in sase-core so
+  unchanged sase passes against the combined core, then close epic sase-1eq.1.1 and
+  its parent phase sase-1eq.1.
 proposed_by: bbugyi200.athena.sase-1eq.1.1.land
 bead: sase-1eq.1.1
 status: done
@@ -15,12 +14,6 @@ status: done
   [202610/finish_core_macro_expand.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_core_macro_expand.md)
 - **BEAD:**
   [sase-1eq.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.1.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1eq.1.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1eq.1.1.land.md)
-- **COMMITS:**
-  - [f3818f8](https://github.com/sase-org/sase-core/commit/f3818f817c20acc3ddc3955b2548709811dcf71f)
-    — feat(directive): keep legacy directive contract byte-identical with hidden
-    macros_enabled alias
 
 # Hidden `%macros_enabled` alias, then land sase-1eq.1.1
 
