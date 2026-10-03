@@ -1,65 +1,59 @@
 ---
 tier: epic
 title: Complete the non-TUI macro syntax cutover
-goal:
-  Make macro spellings canonical across non-TUI SASE surfaces while preserving
+goal: Make macro spellings canonical across non-TUI SASE surfaces while preserving
   flag-gated authored aliases and unconditional durable readers.
 parent_bead: sase-1eq.4
 phases:
-  - id: compatibility
-    title: Sunset flag and shared compatibility contracts
-    size: medium
-    depends_on: []
-    description:
-      "compatibility: create legacy_xprompt_syntax through sase flag new, add the shared
-      Rust config normalization contract and thin Python compatibility facade, and
-      verify both flag states without flipping existing Rust output contracts."
-  - id: config-frontmatter
-    title: Canonical config and local macro frontmatter
-    size: medium
-    depends_on:
-      - compatibility
-    description:
-      "config-frontmatter: normalize each authored layer before merging, migrate schemas
-      and consumers to macro keys, update local helper parsing and canonical writers,
-      and test collisions and flag-off errors."
-  - id: discovery
-    title: Macro directory, plugin, and LSP discovery
-    size: medium
-    depends_on:
-      - config-frontmatter
-    description:
-      "discovery: use the content-layout macro source order and write paths, share
-      deduplicated plugin discovery, gate legacy directories and public environment
-      aliases, and propagate the policy to Rust and LSP."
-  - id: cli-doctor
-    title: Macro CLI, completion, and retirement diagnostics
-    size: medium
-    depends_on:
-      - discovery
-    description:
-      "cli-doctor: publish canonical macro commands and JSON, hide flag-gated old
-      aliases, repair schema path targets, refresh shell completion, and report every
-      retired authored surface in either flag state."
-  - id: strings-guard
-    title: Remaining strings, skill sources, and terminology guard
-    size: medium
-    depends_on:
-      - cli-doctor
-    description:
-      "strings-guard: finish non-TUI strings and directive writers, update maintained
-      skill sources and smoke/demo scripts, tighten the guard with classified
-      exceptions, and record integration evidence for the assigned parent phase without
-      closing any ancestor."
+- id: compatibility
+  title: Sunset flag and shared compatibility contracts
+  size: medium
+  depends_on: []
+  description: 'compatibility: create legacy_xprompt_syntax through sase flag new,
+    add the shared Rust config normalization contract and thin Python compatibility
+    facade, and verify both flag states without flipping existing Rust output contracts.'
+- id: config-frontmatter
+  title: Canonical config and local macro frontmatter
+  size: medium
+  depends_on:
+  - compatibility
+  description: 'config-frontmatter: normalize each authored layer before merging,
+    migrate schemas and consumers to macro keys, update local helper parsing and canonical
+    writers, and test collisions and flag-off errors.'
+- id: discovery
+  title: Macro directory, plugin, and LSP discovery
+  size: medium
+  depends_on:
+  - config-frontmatter
+  description: 'discovery: use the content-layout macro source order and write paths,
+    share deduplicated plugin discovery, gate legacy directories and public environment
+    aliases, and propagate the policy to Rust and LSP.'
+- id: cli-doctor
+  title: Macro CLI, completion, and retirement diagnostics
+  size: medium
+  depends_on:
+  - discovery
+  description: 'cli-doctor: publish canonical macro commands and JSON, hide flag-gated
+    old aliases, repair schema path targets, refresh shell completion, and report
+    every retired authored surface in either flag state.'
+- id: strings-guard
+  title: Remaining strings, skill sources, and terminology guard
+  size: medium
+  depends_on:
+  - cli-doctor
+  description: 'strings-guard: finish non-TUI strings and directive writers, update
+    maintained skill sources and smoke/demo scripts, tighten the guard with classified
+    exceptions, and record integration evidence for the assigned parent phase without
+    closing any ancestor.'
 proposed_by: bbugyi200.athena.sase-1eq.4
 create_time: 2026-10-03 05:59:52
 status: wip
+bead_id: sase-1eq.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/macro_syntax_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_syntax_cutover.md)
-- **PARENT:**
-  [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **PROMPT:** [prompts/202610/macro_syntax_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_syntax_cutover.md)
+- **PARENT:** [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **BEAD:** [sase-1eq.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.4.1.md)
 
 # Complete the non-TUI macro syntax cutover
 
