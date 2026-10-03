@@ -1,58 +1,57 @@
 ---
 tier: epic
 title: Restore visible Muse reply streaming without fragmenting replies
-goal: "Muse reply deltas reach the selected agent's visible Reply card during
-  generation, before terminal completion, with intact text, responsive navigation, and
-  correctly framed interactive console output.
+goal: 'Muse reply deltas reach the selected agent''s visible Reply card during generation,
+  before terminal completion, with intact text, responsive navigation, and correctly
+  framed interactive console output.
 
-  "
+  '
 phases:
-  - id: live-reply-follow
-    title: Refresh the selected live Reply card
-    depends_on: []
-    size: medium
-    description: "live-reply-follow: route reply-file events to a throttled background
-      snapshot and Reply-card update, with a selected-source polling backstop and
-      lifecycle, scroll, attempt, and navigation guards; keep the Agents loader
-      uninvolved.
+- id: live-reply-follow
+  title: Refresh the selected live Reply card
+  depends_on: []
+  size: medium
+  description: 'live-reply-follow: route reply-file events to a throttled background
+    snapshot and Reply-card update, with a selected-source polling backstop and lifecycle,
+    scroll, attempt, and navigation guards; keep the Agents loader uninvolved.
 
-      "
-  - id: jsonl-reader
-    title: Drain provider JSONL promptly and preserve UTF-8
-    depends_on: []
-    size: medium
-    description: "jsonl-reader: replace buffered text reads in the shared JSONL
-      transport with bounded nonblocking byte reads and incremental decoding, preserving
-      stderr, partial records, EOF, and completion-watchdog semantics across providers.
+    '
+- id: jsonl-reader
+  title: Drain provider JSONL promptly and preserve UTF-8
+  depends_on: []
+  size: medium
+  description: 'jsonl-reader: replace buffered text reads in the shared JSONL transport
+    with bounded nonblocking byte reads and incremental decoding, preserving stderr,
+    partial records, EOF, and completion-watchdog semantics across providers.
 
-      "
-  - id: console-framing
-    title: Preserve complete console lines under the provider timer
-    depends_on: []
-    size: small
-    description: "console-framing: avoid flushing individual fragments through Rich
-      FileProxy while retaining prompt artifact writes, plain-stream flushing, and final
-      chunk closure; verify the real provider timer on a terminal.
+    '
+- id: console-framing
+  title: Preserve complete console lines under the provider timer
+  depends_on: []
+  size: small
+  description: 'console-framing: avoid flushing individual fragments through Rich
+    FileProxy while retaining prompt artifact writes, plain-stream flushing, and final
+    chunk closure; verify the real provider timer on a terminal.
 
-      "
-  - id: streaming-validation
-    title: Verify the complete Muse streaming path and document its behavior
-    depends_on:
-      - live-reply-follow
-      - jsonl-reader
-      - console-framing
-    size: medium
-    description:
-      "streaming-validation: exercise a gated fake Muse through the mounted TUI, capture
-      a real Muse reply with transport-to-paint timing and visual evidence, verify
-      performance and targeted goldens, and document the supported behavior."
+    '
+- id: streaming-validation
+  title: Verify the complete Muse streaming path and document its behavior
+  depends_on:
+  - live-reply-follow
+  - jsonl-reader
+  - console-framing
+  size: medium
+  description: 'streaming-validation: exercise a gated fake Muse through the mounted
+    TUI, capture a real Muse reply with transport-to-paint timing and visual evidence,
+    verify performance and targeted goldens, and document the supported behavior.'
 proposed_by: bbugyi200.athena.0vt
 create_time: 2026-10-03 15:03:48
 status: wip
+bead_id: sase-1fu
 ---
 
-- **PROMPT:**
-  [prompts/202610/muse_reply_streaming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/muse_reply_streaming.md)
+- **PROMPT:** [prompts/202610/muse_reply_streaming.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/muse_reply_streaming.md)
+- **BEAD:** [sase-1fu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1fu/README.md)
 
 # Restore visible Muse reply streaming
 
