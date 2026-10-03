@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Start research swarm audio after the lead completes
-goal:
-  Allow audio narration to proceed alongside image generation and linker publication
+goal: Allow audio narration to proceed alongside image generation and linker publication
   using the completed lead report
 size: small
 proposed_by: bbugyi200.athena.0vy
-create_time: 2026-10-03 17:51:38
-status: wip
+status: done
 ---
 
 # Start research swarm audio after the lead completes
