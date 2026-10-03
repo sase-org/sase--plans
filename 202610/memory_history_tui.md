@@ -133,7 +133,7 @@ phases:
     and record the absorbed-bead bookkeeping and follow-ups for the land agent.'
 proposed_by: bbugyi200.athena.0vj
 create_time: 2026-10-02 14:43:00
-status: wip
+status: done
 bead_id: sase-1ev
 ---
 
