@@ -1,19 +1,12 @@
 ---
 tier: tale
 title: Default research audio to brief and expose the swarm edition
-goal:
-  Newly authored research podcasts default to brief, and audio_edition on research_swarm
+goal: Newly authored research podcasts default to brief, and audio_edition on research_swarm
   controls the narration edition end to end.
 size: small
 proposed_by: bbugyi200.athena.0vo
 status: done
 ---
-
-- **AGENTS:**
-  - [bbugyi200.athena.0vo](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0vo.md)
-- **COMMITS:**
-  - [3037d60](https://github.com/sase-org/sase-listen/commit/3037d60800299eda8d7d43d1da6fcb4cb208779c)
-    — feat(guide): default narration guide to brief edition
 
 # Default research audio to brief and expose the swarm edition
 
