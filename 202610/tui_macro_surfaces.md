@@ -1,75 +1,68 @@
 ---
 tier: epic
 title: TUI macro surfaces and goldens
-goal:
-  Rename the SASE TUI's xprompt modules, identifiers, CSS, copy, keymap actions, and
-  Admin Center ids to macro spellings. The agent prompt tab and headings say raw prompt.
-  Pre-rename resume state still opens, retired keymap actions stay flag-gated aliases,
-  and the PNG goldens match the new pixels.
+goal: Rename the SASE TUI's xprompt modules, identifiers, CSS, copy, keymap actions,
+  and Admin Center ids to macro spellings. The agent prompt tab and headings say raw
+  prompt. Pre-rename resume state still opens, retired keymap actions stay flag-gated
+  aliases, and the PNG goldens match the new pixels.
 parent_bead: sase-1eq.5
 phases:
-  - id: tui-contracts
-    title: Keymap, resume ids, and stats request contracts
-    size: medium
-    depends_on: []
-    description:
-      "tui-contracts: make focus_macro, clear_macro_focus, and
-      start_last_vcs_macro_in_editor the keymap actions, with flag-gated aliases in
-      legacy_xprompt_syntax.py. Resume Admin Center sub-tab and Statistics view id
-      xprompts as macros, and send macro stats request keys."
-  - id: tui-browser
-    title: Macro browser, save flows, and location labels
-    size: medium
-    depends_on:
-      - tui-contracts
-    description:
-      "tui-browser: move the browser, unified-save, mini-macro modal, and agent-workflow
-      save modules to macro names. Rename their identifiers, CSS selectors, and location
-      labels with their tests."
-  - id: tui-completion
-    title: Completion, argument assist, and highlight roles
-    size: medium
-    depends_on:
-      - tui-browser
-    description:
-      "tui-completion: move completion, argument-assist, and syntax modules to macro
-      names. Rename in-process highlight roles to macro.* in the TUI and the CLI render
-      mirror together."
-  - id: tui-prompt-copy
-    title: Prompt panel, raw-prompt headings, and remaining visible copy
-    size: medium
-    depends_on:
-      - tui-completion
-    description:
-      "tui-prompt-copy: rename prompt-panel and mini-bar modules, apply the raw-prompt
-      tab and AGENT RAW PROMPT headings, and update help, keymap descriptions, and
-      command-palette copy."
-  - id: tui-sweep
-    title: Remaining TUI identifiers and assigned mirror files
-    size: medium
-    depends_on:
-      - tui-prompt-copy
-    description:
-      "tui-sweep: finish every remaining in-scope xprompt hit, including statistics
-      identifiers, scattered widgets, and the non-TUI mirror files the terminology guard
-      already assigns to sase-1eq.5."
-  - id: tui-goldens
-    title: PNG goldens, terminology guard, and navigation benchmark
-    size: medium
-    depends_on:
-      - tui-sweep
-    description:
-      "tui-goldens: rename the xprompt PNG goldens, re-baseline changed pixels, widen
-      the terminology guard over the TUI scope, and run the j/k navigation benchmark."
+- id: tui-contracts
+  title: Keymap, resume ids, and stats request contracts
+  size: medium
+  depends_on: []
+  description: 'tui-contracts: make focus_macro, clear_macro_focus, and start_last_vcs_macro_in_editor
+    the keymap actions, with flag-gated aliases in legacy_xprompt_syntax.py. Resume
+    Admin Center sub-tab and Statistics view id xprompts as macros, and send macro
+    stats request keys.'
+- id: tui-browser
+  title: Macro browser, save flows, and location labels
+  size: medium
+  depends_on:
+  - tui-contracts
+  description: 'tui-browser: move the browser, unified-save, mini-macro modal, and
+    agent-workflow save modules to macro names. Rename their identifiers, CSS selectors,
+    and location labels with their tests.'
+- id: tui-completion
+  title: Completion, argument assist, and highlight roles
+  size: medium
+  depends_on:
+  - tui-browser
+  description: 'tui-completion: move completion, argument-assist, and syntax modules
+    to macro names. Rename in-process highlight roles to macro.* in the TUI and the
+    CLI render mirror together.'
+- id: tui-prompt-copy
+  title: Prompt panel, raw-prompt headings, and remaining visible copy
+  size: medium
+  depends_on:
+  - tui-completion
+  description: 'tui-prompt-copy: rename prompt-panel and mini-bar modules, apply the
+    raw-prompt tab and AGENT RAW PROMPT headings, and update help, keymap descriptions,
+    and command-palette copy.'
+- id: tui-sweep
+  title: Remaining TUI identifiers and assigned mirror files
+  size: medium
+  depends_on:
+  - tui-prompt-copy
+  description: 'tui-sweep: finish every remaining in-scope xprompt hit, including
+    statistics identifiers, scattered widgets, and the non-TUI mirror files the terminology
+    guard already assigns to sase-1eq.5.'
+- id: tui-goldens
+  title: PNG goldens, terminology guard, and navigation benchmark
+  size: medium
+  depends_on:
+  - tui-sweep
+  description: 'tui-goldens: rename the xprompt PNG goldens, re-baseline changed pixels,
+    widen the terminology guard over the TUI scope, and run the j/k navigation benchmark.'
 proposed_by: bbugyi200.athena.sase-1eq.5
 create_time: 2026-10-03 13:29:38
 status: wip
+bead_id: sase-1eq.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/tui_macro_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_macro_surfaces.md)
-- **PARENT:**
-  [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **PROMPT:** [prompts/202610/tui_macro_surfaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_macro_surfaces.md)
+- **PARENT:** [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
+- **BEAD:** [sase-1eq.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.5.1.md)
 
 # TUI macro surfaces and goldens
 
