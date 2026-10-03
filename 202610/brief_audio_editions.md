@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Default research audio to brief and expose the swarm edition
-goal:
-  Newly authored research podcasts default to brief, and audio_edition on research_swarm
+goal: Newly authored research podcasts default to brief, and audio_edition on research_swarm
   controls the narration edition end to end.
 size: small
 proposed_by: bbugyi200.athena.0vo
-create_time: 2026-10-03 13:27:53
-status: wip
+status: done
 ---
 
 # Default research audio to brief and expose the swarm edition
