@@ -99,7 +99,7 @@ phases:
     rule update as PROPOSED FOLLOW-UP notes.'
 proposed_by: bbugyi200.athena.0vm
 create_time: 2026-10-02 16:44:52
-status: wip
+status: done
 bead_id: sase-1ez
 ---
 
