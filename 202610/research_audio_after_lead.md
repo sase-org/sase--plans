@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Start research swarm audio after the lead completes
-goal: Allow audio narration to proceed alongside image generation and linker publication
+goal:
+  Allow audio narration to proceed alongside image generation and linker publication
   using the completed lead report
 size: small
 proposed_by: bbugyi200.athena.0vy
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0vy](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0vy.md)
+- **COMMITS:**
+  - [e26ee6a](https://github.com/sase-org/sase-research-artifacts/commit/e26ee6afda1c6c0dc09944e6fd6d46d1b5b9978e)
+    — fix(research-audio): start narration after lead completion
 
 # Start research swarm audio after the lead completes
 
