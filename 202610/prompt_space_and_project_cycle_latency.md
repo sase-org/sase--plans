@@ -126,7 +126,7 @@ phases:
     rules).'
 proposed_by: bbugyi200.athena.0vk
 create_time: 2026-10-02 14:49:56
-status: wip
+status: done
 bead_id: sase-1ex
 ---
 
