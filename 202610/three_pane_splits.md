@@ -85,7 +85,7 @@ phases:
     write the changelog-facing commit message.'
 proposed_by: bbugyi200.athena.0ve
 create_time: 2026-10-02 11:33:47
-status: wip
+status: done
 bead_id: sase-1eu
 ---
 
