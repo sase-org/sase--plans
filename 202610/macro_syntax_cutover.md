@@ -47,7 +47,7 @@ phases:
     closing any ancestor.'
 proposed_by: bbugyi200.athena.sase-1eq.4
 create_time: 2026-10-03 05:59:52
-status: wip
+status: done
 bead_id: sase-1eq.4.1
 ---
 
