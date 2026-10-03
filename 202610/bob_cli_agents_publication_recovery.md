@@ -1,45 +1,42 @@
 ---
 tier: epic
 title: Restore bob-cli agent publication and publish the missed pages
-goal:
-  Restore compatible agent publication and verify that every publication-eligible
+goal: Restore compatible agent publication and verify that every publication-eligible
   bob-cli agent and session available from its publishing machines is present on GitHub,
   with recovered requests and deferred prompts accounted for.
 phases:
-  - id: manifest_compatibility
-    title: Accept intact legacy session manifests through the Rust core
-    size: medium
-    depends_on: []
-    description:
-      "manifest_compatibility: narrowly accept the historical family-only file set,
-      preserve integrity checks, expose the Rust policy to Python, and prove cross-owner
-      publication."
-  - id: publication_recovery
-    title: Add explicit retired-request recovery with correct completion checks
-    size: medium
-    depends_on:
-      - manifest_compatibility
-    description:
-      "publication_recovery: add project-scoped retired-request retry, preserve deferred
-      prompts, recognize session pages, and test acknowledgment only after successful
-      publication."
-  - id: bob_cli_backfill
-    title: Run bob-cli recovery and prove remote completeness
-    size: medium
-    depends_on:
-      - manifest_compatibility
-      - publication_recovery
-    description:
-      "bob_cli_backfill: use the verified host/core versions, recover bob-cli on each
-      relevant owner machine, reconcile missing pages, and record remote and repeat-run
-      evidence."
+- id: manifest_compatibility
+  title: Accept intact legacy session manifests through the Rust core
+  size: medium
+  depends_on: []
+  description: 'manifest_compatibility: narrowly accept the historical family-only
+    file set, preserve integrity checks, expose the Rust policy to Python, and prove
+    cross-owner publication.'
+- id: publication_recovery
+  title: Add explicit retired-request recovery with correct completion checks
+  size: medium
+  depends_on:
+  - manifest_compatibility
+  description: 'publication_recovery: add project-scoped retired-request retry, preserve
+    deferred prompts, recognize session pages, and test acknowledgment only after
+    successful publication.'
+- id: bob_cli_backfill
+  title: Run bob-cli recovery and prove remote completeness
+  size: medium
+  depends_on:
+  - manifest_compatibility
+  - publication_recovery
+  description: 'bob_cli_backfill: use the verified host/core versions, recover bob-cli
+    on each relevant owner machine, reconcile missing pages, and record remote and
+    repeat-run evidence.'
 proposed_by: bbugyi200.apollo.4s.f1
 create_time: 2026-10-03 12:41:58
 status: wip
+bead_id: sase-1fs
 ---
 
-- **PROMPT:**
-  [prompts/202610/bob_cli_agents_publication_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/bob_cli_agents_publication_recovery.md)
+- **PROMPT:** [prompts/202610/bob_cli_agents_publication_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/bob_cli_agents_publication_recovery.md)
+- **BEAD:** [sase-1fs](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1fs/README.md)
 
 # Restore bob-cli agent publication and publish the missed pages
 
