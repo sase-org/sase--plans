@@ -2,59 +2,56 @@
 tier: epic
 title: Listen card for research-swarm reports
 goal: 'When `#research_swarm(..., audio=true)` runs, the canonical `<name>.md` the
-  linker publishes opens with a quiet listen card, its Highlights PDF carries a
-  one-click "▶ Play" button, and its Obsidian reference note embeds a native audio
-  player — with no MP3 in the public research repo, and with a failed TTS render never
-  blocking publication.
+  linker publishes opens with a quiet listen card, its Highlights PDF carries a one-click
+  "▶ Play" button, and its Obsidian reference note embeds a native audio player —
+  with no MP3 in the public research repo, and with a failed TTS render never blocking
+  publication.
 
   '
 phases:
-  - id: swarm-listen-card
-    title: Swarm topology, audio contract, and linker listen card
-    depends_on: []
-    size: medium
-    description:
-      "swarm-listen-card: in sase-research-artifacts make audio imply the linker, have
-      audio wait on image and the linker wait on audio, give the audio agent a
-      complete-on-failure var/artifact contract, teach the linker to write the listen
-      card plus `audio:` frontmatter, flip the locking tests, and fix the docs drift in
-      sase-research-artifacts and sase-listen."
-  - id: bob-audio-companion
-    title: bob highlights create discovers and copies companion audio
-    depends_on: []
-    size: medium
-    description:
-      "bob-audio-companion: add audio discovery (flag, frontmatter episode id,
-      narration-script content hash against the sase-listen library), atomic same-stem
-      MP3 copy beside the intake PDF, collision guards, config, output, tests, and docs
-      to `bob highlights create`."
-  - id: bob-listen-banner
-    title: Listen-card banner and Play button in the Highlights PDF
-    depends_on:
-      - bob-audio-companion
-    size: small
-    description:
-      'bob-listen-banner: render `listen` Divs as a dependency-free LaTeX callout and,
-      when create bound a companion, prepend a "▶ Play" button linking to a
-      configurable `obsidian://open` URI for the vault copy.'
-  - id: bob-scan-audio
-    title: Scan carries audio into the library and embeds the player
-    depends_on:
-      - bob-audio-companion
-      - bob-listen-banner
-    size: medium
-    description:
-      "bob-scan-audio: move same-stem audio with its PDF, late-pair orphan audio to an
-      already-scanned PDF, add bob-managed `audio` frontmatter, insert the
-      `![[lib/<type>/<stem>.mp3]]` player once below the PDF task, report orphans in
-      doctor, and document it."
+- id: swarm-listen-card
+  title: Swarm topology, audio contract, and linker listen card
+  depends_on: []
+  size: medium
+  description: 'swarm-listen-card: in sase-research-artifacts make audio imply the
+    linker, have audio wait on image and the linker wait on audio, give the audio
+    agent a complete-on-failure var/artifact contract, teach the linker to write the
+    listen card plus `audio:` frontmatter, flip the locking tests, and fix the docs
+    drift in sase-research-artifacts and sase-listen.'
+- id: bob-audio-companion
+  title: bob highlights create discovers and copies companion audio
+  depends_on: []
+  size: medium
+  description: 'bob-audio-companion: add audio discovery (flag, frontmatter episode
+    id, narration-script content hash against the sase-listen library), atomic same-stem
+    MP3 copy beside the intake PDF, collision guards, config, output, tests, and docs
+    to `bob highlights create`.'
+- id: bob-listen-banner
+  title: Listen-card banner and Play button in the Highlights PDF
+  depends_on:
+  - bob-audio-companion
+  size: small
+  description: 'bob-listen-banner: render `listen` Divs as a dependency-free LaTeX
+    callout and, when create bound a companion, prepend a "▶ Play" button linking
+    to a configurable `obsidian://open` URI for the vault copy.'
+- id: bob-scan-audio
+  title: Scan carries audio into the library and embeds the player
+  depends_on:
+  - bob-audio-companion
+  - bob-listen-banner
+  size: medium
+  description: 'bob-scan-audio: move same-stem audio with its PDF, late-pair orphan
+    audio to an already-scanned PDF, add bob-managed `audio` frontmatter, insert the
+    `![[lib/<type>/<stem>.mp3]]` player once below the PDF task, report orphans in
+    doctor, and document it.'
 proposed_by: bbugyi200.apollo.research.0b.linker.w0
 create_time: 2026-10-04 18:40:03
 status: wip
+bead_id: sase-1g6
 ---
 
-- **PROMPT:**
-  [prompts/202610/research_swarm_listen_card.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_swarm_listen_card.md)
+- **PROMPT:** [prompts/202610/research_swarm_listen_card.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_swarm_listen_card.md)
+- **BEAD:** [sase-1g6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g6/README.md)
 
 # Plan: Listen card for research-swarm reports
 
