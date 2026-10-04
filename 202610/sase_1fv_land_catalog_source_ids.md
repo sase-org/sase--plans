@@ -1,18 +1,15 @@
 ---
 tier: tale
-title:
-  Finish landing epic sase-1fv by resolving macro-loader source IDs in the mini-macro
+title: Finish landing epic sase-1fv by resolving macro-loader source IDs in the mini-macro
   catalog
-goal:
-  The Ctrl+G x existing-definition finder lists each config, built-in, and plugin macro
-  exactly once with its real path and correct active/shadowed status. Legacy
-  xprompts-keyed config macros are editable in place, the name-step warnings name the
-  real winner, and epic sase-1fv is closed with its plan marked done.
+goal: The Ctrl+G x existing-definition finder lists each config, built-in, and plugin
+  macro exactly once with its real path and correct active/shadowed status. Legacy
+  xprompts-keyed config macros are editable in place, the name-step warnings name
+  the real winner, and epic sase-1fv is closed with its plan marked done.
 size: small
 proposed_by: bbugyi200.athena.sase-1fv.land
 bead: sase-1fv
-create_time: 2026-10-04 15:50:52
-status: wip
+status: done
 ---
 
 - **PARENT:**
