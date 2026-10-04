@@ -1,54 +1,49 @@
 ---
 tier: epic
 title: One input-type vocabulary and strict enum declarations
-goal:
-  "Macro inputs resolve through one sase-core catalog, unknown types and bad enum
-  declarations fail per macro, and #pr status is a real enum."
+goal: 'Macro inputs resolve through one sase-core catalog, unknown types and bad enum
+  declarations fail per macro, and #pr status is a real enum.'
 phases:
-  - id: core
-    title: Rust input-type catalog, resolver, and Python bindings
-    depends_on: []
-    size: medium
-    description:
-      "core: add the macro_input_types catalog, resolver, did-you-mean, choice and
-      PyYAML checks, and Python bindings, leaving the existing parsers in place."
-  - id: rewire
-    title: Route Rust parsers and frontmatter diagnostics through the catalog
-    depends_on:
-      - core
-    size: medium
-    description:
-      "rewire: delete the duplicate Rust type tables, project the frontmatter schema
-      from the catalog, align the path rule, and emit the strict frontmatter
-      diagnostics."
-  - id: loaders
-    title: Python loaders, isolation, handoff, and the sunset flag
-    depends_on:
-      - core
-    size: medium
-    description:
-      "loaders: move every Python type parser onto the resolver, validate choices and
-      defaults at load, isolate a bad macro, round-trip handoff fields, and add the
-      strict_macro_input_types sunset flag."
-  - id: surface
-    title: Schemas, doctor check, dogfood enums, and docs
-    depends_on:
-      - rewire
-      - loaders
-    size: medium
-    description:
-      "surface: generate the macro input JSON schemas, add the config.macro_input_types
-      doctor check, make #pr status an enum, and document the value rules."
+- id: core
+  title: Rust input-type catalog, resolver, and Python bindings
+  depends_on: []
+  size: medium
+  description: 'core: add the macro_input_types catalog, resolver, did-you-mean, choice
+    and PyYAML checks, and Python bindings, leaving the existing parsers in place.'
+- id: rewire
+  title: Route Rust parsers and frontmatter diagnostics through the catalog
+  depends_on:
+  - core
+  size: medium
+  description: 'rewire: delete the duplicate Rust type tables, project the frontmatter
+    schema from the catalog, align the path rule, and emit the strict frontmatter
+    diagnostics.'
+- id: loaders
+  title: Python loaders, isolation, handoff, and the sunset flag
+  depends_on:
+  - core
+  size: medium
+  description: 'loaders: move every Python type parser onto the resolver, validate
+    choices and defaults at load, isolate a bad macro, round-trip handoff fields,
+    and add the strict_macro_input_types sunset flag.'
+- id: surface
+  title: Schemas, doctor check, dogfood enums, and docs
+  depends_on:
+  - rewire
+  - loaders
+  size: medium
+  description: 'surface: generate the macro input JSON schemas, add the config.macro_input_types
+    doctor check, make #pr status an enum, and document the value rules.'
 proposed_by: bbugyi200.athena.sase-1g4.1
 parent_bead: sase-1g4.1
 create_time: 2026-10-04 18:33:10
 status: wip
+bead_id: sase-1g4.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/macro_input_type_vocab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_input_type_vocab.md)
-- **PARENT:**
-  [202610/macro_named_input_types.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_named_input_types.md)
+- **PROMPT:** [prompts/202610/macro_input_type_vocab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_input_type_vocab.md)
+- **PARENT:** [202610/macro_named_input_types.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_named_input_types.md)
+- **BEAD:** [sase-1g4.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g4/sase-1g4.1.1.md)
 
 # Plan: One input-type vocabulary and strict enum declarations
 
