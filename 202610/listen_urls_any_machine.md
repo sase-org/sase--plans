@@ -1,62 +1,59 @@
 ---
 tier: epic
-title: "sase-listen: URL-to-podcast editions, published from any machine"
-goal: "From athena, apollo, or the Mac, `sase-listen render <URL> --edition brief|full`
+title: 'sase-listen: URL-to-podcast editions, published from any machine'
+goal: 'From athena, apollo, or the Mac, `sase-listen render <URL> --edition brief|full`
   fetches a web article, writes a fidelity-checked narration script, renders it, and
-  auto-publishes the episode to the single AntennaPod feed served from apollo. This is
-  proven by a full edition of OpenAI's harness-engineering post, rendered on athena,
+  auto-publishes the episode to the single AntennaPod feed served from apollo. This
+  is proven by a full edition of OpenAI''s harness-engineering post, rendered on athena,
   appearing in the live served feed.
 
-  "
+  '
 phases:
-  - id: feed-host
-    title: Publish to one feed host from any machine
-    depends_on: []
-    size: medium
-    description:
-      "feed-host: add feed.host/feed.host_ssh config, an SSH transport that streams a
-      rendered episode to the host's new `feed receive` endpoint (validated import, then
-      a locked publish), proxy publish/unpublish/feed/doctor in remote mode, keep a
-      retry outbox, and document the model."
-  - id: url-acquire
-    title: Fetch and extract web articles as render sources
-    depends_on: []
-    size: medium
-    description:
-      "url-acquire: fetch pages with curl_cffi browser impersonation, extract with
-      Trafilatura plus HTML outline repair, keep a per-source store, add the `article`
-      kind, and accept http(s) URLs in `script`/`render` for the deterministic verbatim
-      edition."
-  - id: url-editions
-    title: Brief and full article editions with a script writer
-    depends_on:
-      - feed-host
-      - url-acquire
-    size: medium
-    description:
-      "url-editions: add a Gemini script writer, driven by the packaged guide plus
-      article rules, with a lint-and-repair loop and cached scripts. Make brief the URL
-      default and label edition coverage plus the original-article link in titles and
-      feed items."
-  - id: rollout-proof
-    title: Roll out to every machine and publish the harness-engineering full edition
-    depends_on:
-      - feed-host
-      - url-acquire
-      - url-editions
-    size: medium
-    description:
-      "rollout-proof: install the new sase-listen on apollo, then athena (and the Mac if
-      reachable), switch the chezmoi config to `feed.host: apollo`, render the full
-      edition of the OpenAI harness-engineering post on athena with auto-publish, verify
-      it in the served feed, and write field notes."
+- id: feed-host
+  title: Publish to one feed host from any machine
+  depends_on: []
+  size: medium
+  description: 'feed-host: add feed.host/feed.host_ssh config, an SSH transport that
+    streams a rendered episode to the host''s new `feed receive` endpoint (validated
+    import, then a locked publish), proxy publish/unpublish/feed/doctor in remote
+    mode, keep a retry outbox, and document the model.'
+- id: url-acquire
+  title: Fetch and extract web articles as render sources
+  depends_on: []
+  size: medium
+  description: 'url-acquire: fetch pages with curl_cffi browser impersonation, extract
+    with Trafilatura plus HTML outline repair, keep a per-source store, add the `article`
+    kind, and accept http(s) URLs in `script`/`render` for the deterministic verbatim
+    edition.'
+- id: url-editions
+  title: Brief and full article editions with a script writer
+  depends_on:
+  - feed-host
+  - url-acquire
+  size: medium
+  description: 'url-editions: add a Gemini script writer, driven by the packaged guide
+    plus article rules, with a lint-and-repair loop and cached scripts. Make brief
+    the URL default and label edition coverage plus the original-article link in titles
+    and feed items.'
+- id: rollout-proof
+  title: Roll out to every machine and publish the harness-engineering full edition
+  depends_on:
+  - feed-host
+  - url-acquire
+  - url-editions
+  size: medium
+  description: 'rollout-proof: install the new sase-listen on apollo, then athena
+    (and the Mac if reachable), switch the chezmoi config to `feed.host: apollo`,
+    render the full edition of the OpenAI harness-engineering post on athena with
+    auto-publish, verify it in the served feed, and write field notes.'
 proposed_by: bbugyi200.athena.0wl
 create_time: 2026-10-04 19:02:06
 status: wip
+bead_id: sase-1g7
 ---
 
-- **PROMPT:**
-  [prompts/202610/listen_urls_any_machine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/listen_urls_any_machine.md)
+- **PROMPT:** [prompts/202610/listen_urls_any_machine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/listen_urls_any_machine.md)
+- **BEAD:** [sase-1g7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g7/README.md)
 
 # Plan: sase-listen URL-to-podcast editions, published from any machine
 
