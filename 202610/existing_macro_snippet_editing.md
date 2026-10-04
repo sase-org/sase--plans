@@ -1,88 +1,87 @@
 ---
 tier: epic
 title: Edit existing macros and snippets from the Ctrl+G x / Ctrl+G t location picker
-goal: "From the prompt input, `Ctrl+G x` / `Ctrl+G t` (and `gx` / `gt`) offer an `e`
+goal: 'From the prompt input, `Ctrl+G x` / `Ctrl+G t` (and `gx` / `gt`) offer an `e`
   (existing) row in the location picker that opens a beautiful fuzzy finder over every
   macro or snippet definition in every supported file. Picking one opens it in the
   existing mini-macro / snippet pane for in-place editing, or starts a guided override
-  when the definition is read-only. Every path that would redefine an existing macro or
-  snippet, whatever destination the user chose, shows an accurate warning that names
-  where the name already lives and whether the new copy will take effect.
+  when the definition is read-only. Every path that would redefine an existing macro
+  or snippet, whatever destination the user chose, shows an accurate warning that
+  names where the name already lives and whether the new copy will take effect.
 
-  "
+  '
 phases:
-  - id: macro-redefinition
-    title: Accurate macro redefinition analysis and warnings
-    depends_on: []
-    size: medium
-    description: "macro-redefinition: make the mini-macro target catalog see every
-      loader source, use the runtime loader as the oracle for the active definition, add
-      a shared macro redefinition helper, rewrite the name-step verdicts with the shared
-      warning copy (including the shadowed in-place edit case), and refresh the warning
-      at save time.
+- id: macro-redefinition
+  title: Accurate macro redefinition analysis and warnings
+  depends_on: []
+  size: medium
+  description: 'macro-redefinition: make the mini-macro target catalog see every loader
+    source, use the runtime loader as the oracle for the active definition, add a
+    shared macro redefinition helper, rewrite the name-step verdicts with the shared
+    warning copy (including the shadowed in-place edit case), and refresh the warning
+    at save time.
 
-      "
-  - id: snippet-redefinition
-    title: Provenance-accurate snippet redefinition analysis and warnings
-    depends_on: []
-    size: medium
-    description: "snippet-redefinition: replace the inverted, partial
-      `snippet_collision` check with a helper built on the provenance snippet catalog's
-      real layer order (built-in, plugin, user, overlay, project, and macro-derived
-      sources plus aliases), then wire it into the snippet name step, its loaded body,
-      and the save-time warning.
+    '
+- id: snippet-redefinition
+  title: Provenance-accurate snippet redefinition analysis and warnings
+  depends_on: []
+  size: medium
+  description: 'snippet-redefinition: replace the inverted, partial `snippet_collision`
+    check with a helper built on the provenance snippet catalog''s real layer order
+    (built-in, plugin, user, overlay, project, and macro-derived sources plus aliases),
+    then wire it into the snippet name step, its loaded body, and the save-time warning.
 
-      "
-  - id: picker-existing-row
-    title: Existing row and override mode in the save-location picker
-    depends_on: []
-    size: medium
-    description: "picker-existing-row: teach the shared choice builders and picker modal
-      to render an optional `e` Existing action row and an override mode. In override
-      mode, rows are filtered by whether the name fits and badged with an injected
-      after-save outcome. The live flows do not pass these options yet.
+    '
+- id: picker-existing-row
+  title: Existing row and override mode in the save-location picker
+  depends_on: []
+  size: medium
+  description: 'picker-existing-row: teach the shared choice builders and picker modal
+    to render an optional `e` Existing action row and an override mode. In override
+    mode, rows are filtered by whether the name fits and badged with an injected after-save
+    outcome. The live flows do not pass these options yet.
 
-      "
-  - id: existing-finder
-    title: Existing-definition fuzzy finder modal
-    depends_on:
-      - macro-redefinition
-      - snippet-redefinition
-    size: medium
-    description: "existing-finder: build the pure entry model, entry builders, ranking,
-      and verdict copy for macros and snippets, then build the shared presentation-only
-      finder modal with Rust fuzzy highlighting, status chips, a debounced off-thread
-      preview, and back/cancel results.
+    '
+- id: existing-finder
+  title: Existing-definition fuzzy finder modal
+  depends_on:
+  - macro-redefinition
+  - snippet-redefinition
+  size: medium
+  description: 'existing-finder: build the pure entry model, entry builders, ranking,
+    and verdict copy for macros and snippets, then build the shared presentation-only
+    finder modal with Rust fuzzy highlighting, status chips, a debounced off-thread
+    preview, and back/cancel results.
 
-      "
-  - id: wire-macro-existing
-    title: Wire the existing path into the mini-macro flow
-    depends_on:
-      - picker-existing-row
-      - existing-finder
-    size: medium
-    description: "wire-macro-existing: connect the `e` row, the finder, in-place edits,
-      and the read-only override detour into `_MiniMacroLocationFlow`. Add replace-draft
-      and dirty-guard semantics for an already-open pane, refresh the hint label, and
-      update the shared picker docs and the mini-macro docs.
+    '
+- id: wire-macro-existing
+  title: Wire the existing path into the mini-macro flow
+  depends_on:
+  - picker-existing-row
+  - existing-finder
+  size: medium
+  description: 'wire-macro-existing: connect the `e` row, the finder, in-place edits,
+    and the read-only override detour into `_MiniMacroLocationFlow`. Add replace-draft
+    and dirty-guard semantics for an already-open pane, refresh the hint label, and
+    update the shared picker docs and the mini-macro docs.
 
-      "
-  - id: wire-snippet-existing
-    title: Wire the existing path into the snippet flow
-    depends_on:
-      - wire-macro-existing
-    size: medium
-    description:
-      "wire-snippet-existing: mirror the macro wiring in `_SnippetLocationFlow` using
-      the provenance catalog, add replace-draft semantics to the snippet pane, refresh
-      the hint label, and update the snippet authoring docs."
+    '
+- id: wire-snippet-existing
+  title: Wire the existing path into the snippet flow
+  depends_on:
+  - wire-macro-existing
+  size: medium
+  description: 'wire-snippet-existing: mirror the macro wiring in `_SnippetLocationFlow`
+    using the provenance catalog, add replace-draft semantics to the snippet pane,
+    refresh the hint label, and update the snippet authoring docs.'
 proposed_by: bbugyi200.athena.0w7
 create_time: 2026-10-04 06:32:56
 status: wip
+bead_id: sase-1fv
 ---
 
-- **PROMPT:**
-  [prompts/202610/existing_macro_snippet_editing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/existing_macro_snippet_editing.md)
+- **PROMPT:** [prompts/202610/existing_macro_snippet_editing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/existing_macro_snippet_editing.md)
+- **BEAD:** [sase-1fv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1fv/README.md)
 
 # Plan: Edit existing macros and snippets from the Ctrl+G x / Ctrl+G t picker
 
