@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Unstick agent-session waits after monitor host-completion recovery
-goal:
-  Monitor host completion succeeds in the scrubbed supervisor environment, recovery
-  follow-ups record their launch outcome so agent-session name waits resolve, and the
-  currently stranded waiters (sase-1fv.4, sase-1eq.5.1.4,
-  toobig-6y.test_xprompt_completion_spacer.0) start.
+goal: Monitor host completion succeeds in the scrubbed supervisor environment, recovery
+  follow-ups record their launch outcome so agent-session name waits resolve, and
+  the currently stranded waiters (sase-1fv.4, sase-1eq.5.1.4, toobig-6y.test_xprompt_completion_spacer.0)
+  start.
 size: medium
 proposed_by: bbugyi200.athena.0wb
-create_time: 2026-10-04 09:08:49
-status: wip
+status: done
 ---
 
 # Unstick agent-session waits after monitor host-completion recovery
