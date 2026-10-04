@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Show FINALIZING for coder rows working an approved plan or tale
-goal: Coder rows labeled WORKING TALE / WORKING PLAN (and the session and clan rows
-  that mirror them) show the FINALIZING status word and a non-interrupted finalizer
-  chip while host-owned finalizers run, matching plain RUNNING agents.
+goal:
+  Coder rows labeled WORKING TALE / WORKING PLAN (and the session and clan rows that
+  mirror them) show the FINALIZING status word and a non-interrupted finalizer chip
+  while host-owned finalizers run, matching plain RUNNING agents.
 size: small
 proposed_by: bbugyi200.athena.0w9
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0w9](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0w9.md)
+- **COMMITS:**
+  - [2807692](https://github.com/sase-org/sase/commit/2807692dc9553c00b4f594d7ef22642ba910be1f)
+    — fix(tui): show finalizing state for plan handoffs
 
 # Plan: Show `FINALIZING` for coder rows working an approved plan or tale
 
