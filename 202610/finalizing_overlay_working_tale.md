@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Show FINALIZING for coder rows working an approved plan or tale
-goal:
-  Coder rows labeled WORKING TALE / WORKING PLAN (and the session and clan rows that
-  mirror them) show the FINALIZING status word and a non-interrupted finalizer chip
-  while host-owned finalizers run, matching plain RUNNING agents.
+goal: Coder rows labeled WORKING TALE / WORKING PLAN (and the session and clan rows
+  that mirror them) show the FINALIZING status word and a non-interrupted finalizer
+  chip while host-owned finalizers run, matching plain RUNNING agents.
 size: small
 proposed_by: bbugyi200.athena.0w9
-create_time: 2026-10-04 06:41:43
-status: wip
+status: done
 ---
 
 # Plan: Show `FINALIZING` for coder rows working an approved plan or tale
