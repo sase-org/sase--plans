@@ -1,106 +1,104 @@
 ---
 tier: epic
-title: "Named macro input types: finish enum, add model/effort, share plugin enums"
-goal: "A macro input's `type` names what its value is: a scalar keyword, `enum` with
-  inline `choices`, a builtin type (`agent`, `model`, `effort`), or a plugin's shared
-  enum (`<dist>@<id>`). Every such value completes, validates, and explains itself the
-  same way in the TUI prompt bar, the typed launch form, the LSP (Neovim and other
+title: 'Named macro input types: finish enum, add model/effort, share plugin enums'
+goal: 'A macro input''s `type` names what its value is: a scalar keyword, `enum` with
+  inline `choices`, a builtin type (`agent`, `model`, `effort`), or a plugin''s shared
+  enum (`<dist>@<id>`). Every such value completes, validates, and explains itself
+  the same way in the TUI prompt bar, the typed launch form, the LSP (Neovim and other
   editors), `sase macro show`/`types`, and the runtime binder, because sase-core owns
   one type vocabulary, one validator, and one candidate builder.
 
-  "
+  '
 phases:
-  - id: vocab
-    title: One input-type vocabulary and strict enum declarations
-    depends_on: []
-    size: large
-    description: "vocab: add the sase-core macro_input_types module (type catalog,
-      resolver, did-you-mean, choice value rules, PyYAML-parity quoting check, enum
-      value check), move every Rust and Python type parser onto it, fix the seven
-      existing enum defects, isolate bad macros, add the strict_macro_input_types sunset
-      flag, generate the JSON schemas, add the config.macro_input_types doctor check,
-      and make #pr's status a real enum.
+- id: vocab
+  title: One input-type vocabulary and strict enum declarations
+  depends_on: []
+  size: large
+  description: 'vocab: add the sase-core macro_input_types module (type catalog, resolver,
+    did-you-mean, choice value rules, PyYAML-parity quoting check, enum value check),
+    move every Rust and Python type parser onto it, fix the seven existing enum defects,
+    isolate bad macros, add the strict_macro_input_types sunset flag, generate the
+    JSON schemas, add the config.macro_input_types doctor check, and make #pr''s status
+    a real enum.
 
-      "
-  - id: wire-lsp
-    title:
-      Choices, named types, and roles on every wire; enum completion and diagnostics in
-      the LSP
-    depends_on:
-      - vocab
-    size: large
-    description: 'wire-lsp: carry choices/named_type/value_role on every hint, catalog,
-      mobile, and CLI projection; add the shared Rust choice-candidate builder and type
-      label; give the LSP enum completion, invocation diagnostics with "Replace with"
-      quick fixes, rich hover, and frontmatter type completion; add shared golden
-      fixtures.
+    '
+- id: wire-lsp
+  title: Choices, named types, and roles on every wire; enum completion and diagnostics
+    in the LSP
+  depends_on:
+  - vocab
+  size: large
+  description: 'wire-lsp: carry choices/named_type/value_role on every hint, catalog,
+    mobile, and CLI projection; add the shared Rust choice-candidate builder and type
+    label; give the LSP enum completion, invocation diagnostics with "Replace with"
+    quick fixes, rich hover, and frontmatter type completion; add shared golden fixtures.
 
-      '
-  - id: tui-enum
-    title: Enum choice menus in the prompt bar, typed form, and authoring modals
-    depends_on:
-      - wire-lsp
-    size: large
-    description: "tui-enum: route enum and bool arguments through the Rust choice
-      builder in the prompt bar with labelled, described rows; use type labels in hints;
-      add a searchable picker for large sets in the typed form; let authoring modals
-      pick any type and edit choices; drive the shared golden fixtures from Python; add
-      visual snapshots.
+    '
+- id: tui-enum
+  title: Enum choice menus in the prompt bar, typed form, and authoring modals
+  depends_on:
+  - wire-lsp
+  size: large
+  description: 'tui-enum: route enum and bool arguments through the Rust choice builder
+    in the prompt bar with labelled, described rows; use type labels in hints; add
+    a searchable picker for large sets in the typed form; let authoring modals pick
+    any type and edit choices; drive the shared golden fixtures from Python; add visual
+    snapshots.
 
-      "
-  - id: model-core
-    title: Builtin model and effort types with one routing classifier
-    depends_on:
-      - wire-lsp
-    size: large
-    description: "model-core: register builtin effort (closed enum) and model (domain)
-      types; add the Rust model classifier over a model validity snapshot shared by the
-      runtime binder, sase doctor, and the LSP (via a routing block in
-      model_catalog.json); give model arguments the %model completion menu, warnings,
-      quick fixes, and hover in the LSP.
+    '
+- id: model-core
+  title: Builtin model and effort types with one routing classifier
+  depends_on:
+  - wire-lsp
+  size: large
+  description: 'model-core: register builtin effort (closed enum) and model (domain)
+    types; add the Rust model classifier over a model validity snapshot shared by
+    the runtime binder, sase doctor, and the LSP (via a routing block in model_catalog.json);
+    give model arguments the %model completion menu, warnings, quick fixes, and hover
+    in the LSP.
 
-      "
-  - id: plugin-types
-    title: Plugin-shared enums, sase macro types, and plugins.required
-    depends_on:
-      - model-core
-    size: large
-    description: "plugin-types: load plugin input_types.yml files in sase-core, resolve
-      <dist>@<id> with clear missing-plugin errors, discover files with their
-      distributions in Python and export them to the LSP, add the sase macro types
-      command, and extend the doctor check with registry and plugins.required findings.
+    '
+- id: plugin-types
+  title: Plugin-shared enums, sase macro types, and plugins.required
+  depends_on:
+  - model-core
+  size: large
+  description: 'plugin-types: load plugin input_types.yml files in sase-core, resolve
+    <dist>@<id> with clear missing-plugin errors, discover files with their distributions
+    in Python and export them to the LSP, add the sase macro types command, and extend
+    the doctor check with registry and plugins.required findings.
 
-      "
-  - id: model-tui
-    title: Model arguments use the %model menu and model picker in the TUI
-    depends_on:
-      - tui-enum
-      - model-core
-    size: medium
-    description: "model-tui: add the macro_arg_model completion kind that reuses the
-      exact %model directive menu (aliases on @, provider drill-down, effort rows), open
-      the existing ModelPickerModal for model inputs in the typed form, and add a visual
-      snapshot.
+    '
+- id: model-tui
+  title: Model arguments use the %model menu and model picker in the TUI
+  depends_on:
+  - tui-enum
+  - model-core
+  size: medium
+  description: 'model-tui: add the macro_arg_model completion kind that reuses the
+    exact %model directive menu (aliases on @, provider drill-down, effort rows),
+    open the existing ModelPickerModal for model inputs in the typed form, and add
+    a visual snapshot.
 
-      "
-  - id: adopt
-    title: Dogfood, documentation, and memory
-    depends_on:
-      - plugin-types
-      - model-tui
-    size: medium
-    description:
-      "adopt: ship sase-research-artifacts' audio_edition type and move research_swarm's
-      model inputs to type model, type sase's own macros, rewrite the docs input-type
-      section around the one rule, update the macros.md memory Inputs line, and add an
-      end-to-end parity test across runtime, LSP, and TUI."
+    '
+- id: adopt
+  title: Dogfood, documentation, and memory
+  depends_on:
+  - plugin-types
+  - model-tui
+  size: medium
+  description: 'adopt: ship sase-research-artifacts'' audio_edition type and move
+    research_swarm''s model inputs to type model, type sase''s own macros, rewrite
+    the docs input-type section around the one rule, update the macros.md memory Inputs
+    line, and add an end-to-end parity test across runtime, LSP, and TUI.'
 proposed_by: bbugyi200.athena.0wj
 create_time: 2026-10-04 18:19:25
 status: wip
+bead_id: sase-1g4
 ---
 
-- **PROMPT:**
-  [prompts/202610/macro_named_input_types.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_named_input_types.md)
+- **PROMPT:** [prompts/202610/macro_named_input_types.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_named_input_types.md)
+- **BEAD:** [sase-1g4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g4/README.md)
 
 # Plan: Named Macro Input Types
 
