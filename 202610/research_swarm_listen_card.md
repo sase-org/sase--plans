@@ -46,7 +46,7 @@ phases:
     doctor, and document it.'
 proposed_by: bbugyi200.apollo.research.0b.linker.w0
 create_time: 2026-10-04 18:40:03
-status: wip
+status: done
 bead_id: sase-1g6
 ---
 
