@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Fix sase-listen render EXDEV at the master stage
-goal: sase-listen render masters and commits episodes even when the system temp dir
-  is on a different filesystem (tmpfs /tmp on athena), guarded by regression tests,
-  and athena's installed renderer carries the fix so the user's Symphony render succeeds
-  on retry.
+goal:
+  sase-listen render masters and commits episodes even when the system temp dir is on a
+  different filesystem (tmpfs /tmp on athena), guarded by regression tests, and athena's
+  installed renderer carries the fix so the user's Symphony render succeeds on retry.
 size: small
 proposed_by: bbugyi200.athena.0ws.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0ws.f0](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0ws.f0.md)
+- **COMMITS:**
+  - [870e069](https://github.com/sase-org/sase-listen/commit/870e0691e12a1fcdf151ae8fd9fd45d1d4143050)
+    — fix(audio): master the MP3 beside its target so a tmpfs /tmp cannot break the
+    replace
 
 # Plan: Fix sase-listen `render` dying with EXDEV at `stage: master`
 
