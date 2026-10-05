@@ -1,50 +1,46 @@
 ---
 tier: epic
 title: Finish the xprompt-to-macro core flip and land sase-1eq
-goal:
-  sase-core's check is green again after the contract flip, sase-core and sase no longer
-  emit pre-flip xprompt wire spellings outside durable legacy readers and flag-gated
-  sunset inputs, and the macro docs infographic shows macro names, so the sase-1eq land
-  agent can close the rename epic.
+goal: sase-core's check is green again after the contract flip, sase-core and sase
+  no longer emit pre-flip xprompt wire spellings outside durable legacy readers and
+  flag-gated sunset inputs, and the macro docs infographic shows macro names, so the
+  sase-1eq land agent can close the rename epic.
 parent_bead: sase-1eq
 phases:
-  - id: core-green
-    title: Make sase-core green after the macro contract flip
-    size: medium
-    depends_on: []
-    description:
-      "core-green: Repair every sase-core test the 0279de6b contract flip left red,
-      including the corrupted local-helper reader, the hanging stdio diagnostics test,
-      and the env-racing catalog test. Pin the flipped macro output. Keep durable
-      legacy-input tests. Pass sase tool run check in sase-core. Follow the core-green
-      section."
-  - id: key-flip
-    title: Drop leftover pre-flip xprompt wire keys in sase-core and sase
-    size: medium
-    depends_on:
-      - core-green
-    description:
-      "key-flip: Stop emitting the remaining pre-flip xprompt keys and values (content
-      layout, snippet entries, launch units, proc and highlight labels). Rename leftover
-      core identifiers, bump the content-layout schema, and update the sase mirrors,
-      validator, and terminology guard in the same declared turn so the host moves the
-      pin. Follow the key-flip section."
-  - id: infographic
-    title: Relabel the macro-resolution infographic
-    size: small
-    depends_on: []
-    description:
-      "infographic: Replace every retired xprompt label in
-      docs/images/macro-resolution-infographic.png with its macro spelling through a
-      deterministic ImageMagick overlay, then update its prompt record and final SHA.
-      Follow the infographic section."
+- id: core-green
+  title: Make sase-core green after the macro contract flip
+  size: medium
+  depends_on: []
+  description: 'core-green: Repair every sase-core test the 0279de6b contract flip
+    left red, including the corrupted local-helper reader, the hanging stdio diagnostics
+    test, and the env-racing catalog test. Pin the flipped macro output. Keep durable
+    legacy-input tests. Pass sase tool run check in sase-core. Follow the core-green
+    section.'
+- id: key-flip
+  title: Drop leftover pre-flip xprompt wire keys in sase-core and sase
+  size: medium
+  depends_on:
+  - core-green
+  description: 'key-flip: Stop emitting the remaining pre-flip xprompt keys and values
+    (content layout, snippet entries, launch units, proc and highlight labels). Rename
+    leftover core identifiers, bump the content-layout schema, and update the sase
+    mirrors, validator, and terminology guard in the same declared turn so the host
+    moves the pin. Follow the key-flip section.'
+- id: infographic
+  title: Relabel the macro-resolution infographic
+  size: small
+  depends_on: []
+  description: 'infographic: Replace every retired xprompt label in docs/images/macro-resolution-infographic.png
+    with its macro spelling through a deterministic ImageMagick overlay, then update
+    its prompt record and final SHA. Follow the infographic section.'
 proposed_by: bbugyi200.athena.sase-1eq.land
 create_time: 2026-10-05 10:21:49
 status: wip
+bead_id: sase-1eq.12
 ---
 
-- **PROMPT:**
-  [prompts/202610/land_xprompts_to_macros.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/land_xprompts_to_macros.md)
+- **PROMPT:** [prompts/202610/land_xprompts_to_macros.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/land_xprompts_to_macros.md)
+- **BEAD:** [sase-1eq.12](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.12.md)
 
 # Plan: Finish the xprompt-to-macro core flip and land sase-1eq
 
