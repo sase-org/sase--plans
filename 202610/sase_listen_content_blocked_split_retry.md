@@ -1,14 +1,21 @@
 ---
 tier: tale
-title: 'sase-listen: split-and-retry Gemini TTS content_blocked chunks'
-goal: A render whose chunk trips Gemini TTS's context-dependent content_blocked policy
-  filter recovers automatically by synthesizing smaller pieces and stitching them;
-  only a sentence that is blocked on its own fails, with an error naming the chunk,
-  chapter, and sentence and an accurate hint.
+title: "sase-listen: split-and-retry Gemini TTS content_blocked chunks"
+goal:
+  A render whose chunk trips Gemini TTS's context-dependent content_blocked policy
+  filter recovers automatically by synthesizing smaller pieces and stitching them; only
+  a sentence that is blocked on its own fails, with an error naming the chunk, chapter,
+  and sentence and an accurate hint.
 size: medium
 proposed_by: bbugyi200.athena.0wx
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0wx](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0wx.md)
+- **COMMITS:**
+  - [ff7a90f](https://github.com/sase-org/sase-listen/commit/ff7a90f25e2491776413a8d93e6785a70773ebe5)
+    — feat(render): split-and-retry Gemini TTS content_blocked chunks
 
 # Plan: sase-listen: recover from Gemini TTS `content_blocked` by splitting the chunk
 
