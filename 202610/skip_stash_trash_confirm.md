@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Skip the Stash to Trash confirmation
-goal: Sending a stashed prompt to Trash no longer shows a y/n dialog, because the
-  draft stays recoverable from the Trash view.
+goal:
+  Sending a stashed prompt to Trash no longer shows a y/n dialog, because the draft
+  stays recoverable from the Trash view.
 size: small
 proposed_by: bbugyi200.athena.0x0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0x0](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0x0.md)
+- **COMMITS:**
+  - [4fc315e](https://github.com/sase-org/sase/commit/4fc315e9e26ad4f95d19417297b9f0dfba8b7b90)
+    — feat(ace): move Stash rows to Trash with no y/n confirm
 
 # Plan: Skip the Stash to Trash confirmation
 
