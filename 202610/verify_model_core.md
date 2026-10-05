@@ -1,16 +1,15 @@
 ---
 tier: tale
 title: Verify landed model-core and close sase-1g4.4
-goal: "Confirm the landed builtin model and effort types still match the model-core
+goal: 'Confirm the landed builtin model and effort types still match the model-core
   contract, add the missing effort-argument completion test if it is absent, and close
   only bead sase-1g4.4.
 
-  "
+  '
 size: medium
 bead: sase-1g4.4
 proposed_by: bbugyi200.athena.sase-1g4.4
-create_time: 2026-10-05 12:09:18
-status: wip
+status: done
 ---
 
 - **PARENT:**
