@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Stabilize sase-core CI launcher argument recording
-goal: Remove the incomplete-file race that intermittently fails native and Python-hosted
+goal:
+  Remove the incomplete-file race that intermittently fails native and Python-hosted
   sudo launcher tests in GitHub Actions.
 size: small
 proposed_by: bbugyi200.athena.0wy
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0wy](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0wy.md)
+- **COMMITS:**
+  - [c57b662](https://github.com/sase-org/sase-core/commit/c57b662c7e95794520fdb025acd4cb76c90ebc90)
+    — fix(tests): publish complete sudo launcher fixture records atomically
 
 # Stabilize sase-core CI launcher argument recording
 
