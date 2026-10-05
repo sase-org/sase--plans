@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Fix dead editing keys in the Node Finder query input
-goal:
-  Backspace, ctrl+u, and every other Input editing or motion key work in the Node Finder
-  SEARCH-mode query box, and keys still never leak to the host app.
+goal: Backspace, ctrl+u, and every other Input editing or motion key work in the Node
+  Finder SEARCH-mode query box, and keys still never leak to the host app.
 size: small
 proposed_by: bbugyi200.athena.0wm
-create_time: 2026-10-05 07:29:37
-status: wip
+status: done
 ---
 
 # Plan: Fix dead editing keys in the Node Finder query input
