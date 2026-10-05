@@ -1,72 +1,66 @@
 ---
 tier: epic
 title: Carry macro input metadata and finish enum assistance in the LSP
-goal:
-  "Complete the wire-lsp scope of sase-1g4.2: preserve resolved choices, named types,
-  and value roles across catalogs and projections; share Rust choice candidates and type
-  labels; and make enum completion, diagnostics, quick fixes, and hover agree with the
-  runtime binder."
+goal: 'Complete the wire-lsp scope of sase-1g4.2: preserve resolved choices, named
+  types, and value roles across catalogs and projections; share Rust choice candidates
+  and type labels; and make enum completion, diagnostics, quick fixes, and hover agree
+  with the runtime binder.'
 parent_bead: sase-1g4.2
 phases:
-  - id: contracts
-    title: Resolved Rust wires, shared choice candidates, and type labels
-    depends_on: []
-    size: medium
-    description:
-      "contracts: preserve resolved metadata through Rust catalog/editor/mobile wires,
-      implement and bind the shared candidate builder and type label, classify argument
-      contexts using roles and choices, and establish the parser-driven golden corpus
-      and additive wire compatibility tests."
-  - id: completion
-    title: Enum completion and frontmatter type completion in the LSP
-    depends_on:
-      - contracts
-    size: medium
-    description:
-      "completion: consume shared choice candidates in standard LSP responses, replace
-      the bool-only path, implement catalog-backed frontmatter type completion, and
-      verify full-value text edits through JSON-RPC."
-  - id: diagnostics
-    title: Choice diagnostics, diagnostic-driven fixes, and rich argument hover
-    depends_on:
-      - contracts
-      - completion
-    size: medium
-    description:
-      "diagnostics: carry structured suggestions and edits in diagnostics, classify
-      invalid enum arguments with the required error code, implement invocation and
-      frontmatter quick fixes, and render shared type labels, provenance, defaults, and
-      bounded choice tables in hover."
-  - id: projections
-    title: Python catalogs, mobile and highlight wires, and macro show
-    depends_on:
-      - contracts
-    size: medium
-    description:
-      "projections: preserve rich input metadata in Python catalog, mobile, and
-      highlight projections, use Rust type labels in signatures and macro show, mirror
-      the golden corpus, and test candidate edits against the binder."
-  - id: parity
-    title: Cross-surface acceptance and phase closure evidence
-    depends_on:
-      - completion
-      - diagnostics
-      - projections
-    size: small
-    description:
-      "parity: verify real LSP completion and quick-fix edits against the runtime
-      binder, finish editor and macro documentation, run required checks in both
-      repositories, and record symbol and verification evidence for the assigned phase's
-      completion without closing any ancestor."
+- id: contracts
+  title: Resolved Rust wires, shared choice candidates, and type labels
+  depends_on: []
+  size: medium
+  description: 'contracts: preserve resolved metadata through Rust catalog/editor/mobile
+    wires, implement and bind the shared candidate builder and type label, classify
+    argument contexts using roles and choices, and establish the parser-driven golden
+    corpus and additive wire compatibility tests.'
+- id: completion
+  title: Enum completion and frontmatter type completion in the LSP
+  depends_on:
+  - contracts
+  size: medium
+  description: 'completion: consume shared choice candidates in standard LSP responses,
+    replace the bool-only path, implement catalog-backed frontmatter type completion,
+    and verify full-value text edits through JSON-RPC.'
+- id: diagnostics
+  title: Choice diagnostics, diagnostic-driven fixes, and rich argument hover
+  depends_on:
+  - contracts
+  - completion
+  size: medium
+  description: 'diagnostics: carry structured suggestions and edits in diagnostics,
+    classify invalid enum arguments with the required error code, implement invocation
+    and frontmatter quick fixes, and render shared type labels, provenance, defaults,
+    and bounded choice tables in hover.'
+- id: projections
+  title: Python catalogs, mobile and highlight wires, and macro show
+  depends_on:
+  - contracts
+  size: medium
+  description: 'projections: preserve rich input metadata in Python catalog, mobile,
+    and highlight projections, use Rust type labels in signatures and macro show,
+    mirror the golden corpus, and test candidate edits against the binder.'
+- id: parity
+  title: Cross-surface acceptance and phase closure evidence
+  depends_on:
+  - completion
+  - diagnostics
+  - projections
+  size: small
+  description: 'parity: verify real LSP completion and quick-fix edits against the
+    runtime binder, finish editor and macro documentation, run required checks in
+    both repositories, and record symbol and verification evidence for the assigned
+    phase''s completion without closing any ancestor.'
 proposed_by: bbugyi200.athena.sase-1g4.2
 create_time: 2026-10-05 02:19:19
 status: wip
+bead_id: sase-1g4.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/macro_choice_wires_lsp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_choice_wires_lsp.md)
-- **PARENT:**
-  [202610/macro_named_input_types.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_named_input_types.md)
+- **PROMPT:** [prompts/202610/macro_choice_wires_lsp.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/macro_choice_wires_lsp.md)
+- **PARENT:** [202610/macro_named_input_types.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_named_input_types.md)
+- **BEAD:** [sase-1g4.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g4/sase-1g4.2.1.md)
 
 # Plan: Macro Choice Wires and LSP Assistance
 
