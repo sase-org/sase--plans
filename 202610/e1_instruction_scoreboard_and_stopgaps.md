@@ -1,103 +1,97 @@
 ---
 tier: epic
-title: "E1: Instruction scoreboard and stopgaps (memory-built instruction migration)"
-goal:
-  "One read-only command, `sase instructions verify`, shows what each provider's SASE
-  runs and native helpers actually loaded, read from the providers' own session records.
-  It reproduces today's delivery bugs: Claude and Codex load the contract twice, Muse
-  gets no home layer, and Grok gets nothing. The two measured harms stop. Grok root runs
-  get the SASE single-turn directive and the project `AGENTS.md` exactly once through
-  `--rules`. Claude native helpers get a packaged helper template, and a per-run
-  PreToolUse guard denies their root-only operations (`sase final …`, turn-ending
-  skills). Both stopgaps have sunset kill switches. Baseline and after scoreboard JSON
-  plus an acceptance record are attached to this epic, and bead `sase-1gj` is closed as
-  superseded."
+title: 'E1: Instruction scoreboard and stopgaps (memory-built instruction migration)'
+goal: 'One read-only command, `sase instructions verify`, shows what each provider''s
+  SASE runs and native helpers actually loaded, read from the providers'' own session
+  records. It reproduces today''s delivery bugs: Claude and Codex load the contract
+  twice, Muse gets no home layer, and Grok gets nothing. The two measured harms stop.
+  Grok root runs get the SASE single-turn directive and the project `AGENTS.md` exactly
+  once through `--rules`. Claude native helpers get a packaged helper template, and
+  a per-run PreToolUse guard denies their root-only operations (`sase final …`, turn-ending
+  skills). Both stopgaps have sunset kill switches. Baseline and after scoreboard
+  JSON plus an acceptance record are attached to this epic, and bead `sase-1gj` is
+  closed as superseded.'
 phases:
-  - id: cli-group
-    title: The `sase instructions` command group absorbs `sase memory agent-docs`
-    depends_on: []
-    size: small
-    description:
-      "cli-group: add the top-level `sase instructions` group. Its `list` subcommand,
-      also the bare-group default, is today's `sase memory agent-docs list` inventory,
-      unchanged. Delete the `agent-docs` subcommand, then update the parser registries,
-      entry dispatch, completion snapshot, tests, and docs (cli.md, configuration.md,
-      init.md)."
-  - id: scoreboard
-    title: "`sase instructions verify`: observed-mode scoreboard and doctor group"
-    depends_on:
-      - cli-group
-    size: medium
-    description:
-      "scoreboard: build `sase instructions verify`. Pure Python parsers turn Claude
-      transcripts and subagent transcripts, Codex rollouts, Grok `prompt_context.json`
-      and `system_prompt.txt`, and Muse `session.jsonl` into per-session observations.
-      agy is reported as unverifiable. Locate sessions from the newest SASE runs per
-      provider (bounded index query, run cwd and time window, capped reads). Show
-      contract, home, project, directive, native-full, foreign, and helper columns with
-      `-j` JSON, and add the deep-only doctor group `instructions`. Fixture tests must
-      reproduce the baseline table. Attach the live baseline JSON to the epic."
-  - id: grok-root
-    title: Grok root runs receive the directive and project AGENTS.md once via --rules
-    depends_on: []
-    size: small
-    description:
-      "grok-root: absorbs sase-1gj with a corrected fix. On every invocation cycle the
-      Grok adapter passes `--rules` with a new Grok single-turn directive, plus the
-      project root `AGENTS.md` text exactly once in SASE-managed projects (the directive
-      alone elsewhere). Never pass the home layer or `--trust`, and never set
-      GROK_CLAUDE_AGENTS_ENABLED. Add a 120 KiB argv guard, the sunset flag
-      `grok_rules_delivery`, argv tests for both flag states, a live parse probe, a
-      local canary, and Grok docs."
-  - id: claude-helpers
-    title: Claude native helpers get a helper template and a root-only PreToolUse guard
-    depends_on: []
-    size: medium
-    description:
-      "claude-helpers: on every Claude invocation cycle, pass a packaged static helper
-      template through the hidden `--append-subagent-system-prompt-file`, gated by a
-      cached no-API capability probe. Also pass inline `--settings` JSON with a
-      stdlib-only PreToolUse guard on Bash|Skill. When the hook input carries
-      `agent_id`, the guard denies `sase final context|defer|prepare|submit`,
-      turn-ending CLI commands, and root-only skills. Add the sunset flag
-      `claude_helper_channel`, the doctor deep check `providers.claude_helper_channel`,
-      tests, and raw mechanism probes: deny under bypass mode, the Explore and
-      general-purpose markers, and whether forks carry `agent_id`."
-  - id: record
-    title:
-      Root-only contract sentence, decision record, capability docs, ownership inventory
-    depends_on:
-      - scoreboard
-      - grok-root
-      - claude-helpers
-    size: medium
-    description:
-      'record: add the actor-qualified root-only sentence to `memory-sase.template.md`
-      and the `sase_final` skill source, then regenerate the project''s generated
-      instruction files. Write the decision record `helpers-return-roots-declare`
-      ("Native Helpers Return; Only Roots Declare") via /sase_memory_write. Add
-      marker-consistency tests that tie the scoreboard fingerprints to the shipped
-      constants. Document root/helper limits by provider capability, and write
-      `docs/instruction_inventory.md` with a disposition for every instruction surface.'
-  - id: acceptance
-    title: Live probes, after-scoreboard, acceptance record, close sase-1gj
-    depends_on:
-      - record
-    size: small
-    description:
-      "acceptance: once the host runs the landed code, request one Grok probe and one
-      Claude probe through /sase_run LaunchApproval (resume_requester). The Claude probe
-      spawns a general-purpose helper and an Explore helper, and each helper attempts
-      `sase final submit`. Verify both probes with `sase instructions verify`, attach
-      the after JSON and an acceptance record to the epic, and close sase-1gj as
-      superseded."
+- id: cli-group
+  title: The `sase instructions` command group absorbs `sase memory agent-docs`
+  depends_on: []
+  size: small
+  description: 'cli-group: add the top-level `sase instructions` group. Its `list`
+    subcommand, also the bare-group default, is today''s `sase memory agent-docs list`
+    inventory, unchanged. Delete the `agent-docs` subcommand, then update the parser
+    registries, entry dispatch, completion snapshot, tests, and docs (cli.md, configuration.md,
+    init.md).'
+- id: scoreboard
+  title: '`sase instructions verify`: observed-mode scoreboard and doctor group'
+  depends_on:
+  - cli-group
+  size: medium
+  description: 'scoreboard: build `sase instructions verify`. Pure Python parsers
+    turn Claude transcripts and subagent transcripts, Codex rollouts, Grok `prompt_context.json`
+    and `system_prompt.txt`, and Muse `session.jsonl` into per-session observations.
+    agy is reported as unverifiable. Locate sessions from the newest SASE runs per
+    provider (bounded index query, run cwd and time window, capped reads). Show contract,
+    home, project, directive, native-full, foreign, and helper columns with `-j` JSON,
+    and add the deep-only doctor group `instructions`. Fixture tests must reproduce
+    the baseline table. Attach the live baseline JSON to the epic.'
+- id: grok-root
+  title: Grok root runs receive the directive and project AGENTS.md once via --rules
+  depends_on: []
+  size: small
+  description: 'grok-root: absorbs sase-1gj with a corrected fix. On every invocation
+    cycle the Grok adapter passes `--rules` with a new Grok single-turn directive,
+    plus the project root `AGENTS.md` text exactly once in SASE-managed projects (the
+    directive alone elsewhere). Never pass the home layer or `--trust`, and never
+    set GROK_CLAUDE_AGENTS_ENABLED. Add a 120 KiB argv guard, the sunset flag `grok_rules_delivery`,
+    argv tests for both flag states, a live parse probe, a local canary, and Grok
+    docs.'
+- id: claude-helpers
+  title: Claude native helpers get a helper template and a root-only PreToolUse guard
+  depends_on: []
+  size: medium
+  description: 'claude-helpers: on every Claude invocation cycle, pass a packaged
+    static helper template through the hidden `--append-subagent-system-prompt-file`,
+    gated by a cached no-API capability probe. Also pass inline `--settings` JSON
+    with a stdlib-only PreToolUse guard on Bash|Skill. When the hook input carries
+    `agent_id`, the guard denies `sase final context|defer|prepare|submit`, turn-ending
+    CLI commands, and root-only skills. Add the sunset flag `claude_helper_channel`,
+    the doctor deep check `providers.claude_helper_channel`, tests, and raw mechanism
+    probes: deny under bypass mode, the Explore and general-purpose markers, and whether
+    forks carry `agent_id`.'
+- id: record
+  title: Root-only contract sentence, decision record, capability docs, ownership
+    inventory
+  depends_on:
+  - scoreboard
+  - grok-root
+  - claude-helpers
+  size: medium
+  description: 'record: add the actor-qualified root-only sentence to `memory-sase.template.md`
+    and the `sase_final` skill source, then regenerate the project''s generated instruction
+    files. Write the decision record `helpers-return-roots-declare` ("Native Helpers
+    Return; Only Roots Declare") via /sase_memory_write. Add marker-consistency tests
+    that tie the scoreboard fingerprints to the shipped constants. Document root/helper
+    limits by provider capability, and write `docs/instruction_inventory.md` with
+    a disposition for every instruction surface.'
+- id: acceptance
+  title: Live probes, after-scoreboard, acceptance record, close sase-1gj
+  depends_on:
+  - record
+  size: small
+  description: 'acceptance: once the host runs the landed code, request one Grok probe
+    and one Claude probe through /sase_run LaunchApproval (resume_requester). The
+    Claude probe spawns a general-purpose helper and an Explore helper, and each helper
+    attempts `sase final submit`. Verify both probes with `sase instructions verify`,
+    attach the after JSON and an acceptance record to the epic, and close sase-1gj
+    as superseded.'
 proposed_by: bbugyi200.athena.0x2
 create_time: 2026-10-05 15:52:16
 status: wip
+bead_id: sase-1gu
 ---
 
-- **PROMPT:**
-  [prompts/202610/e1_instruction_scoreboard_and_stopgaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e1_instruction_scoreboard_and_stopgaps.md)
+- **PROMPT:** [prompts/202610/e1_instruction_scoreboard_and_stopgaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e1_instruction_scoreboard_and_stopgaps.md)
+- **BEAD:** [sase-1gu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1gu/README.md)
 
 # Plan: E1 — Instruction scoreboard and stopgaps
 
