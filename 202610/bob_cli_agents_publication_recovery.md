@@ -31,7 +31,7 @@ phases:
     repeat-run evidence.'
 proposed_by: bbugyi200.apollo.4s.f1
 create_time: 2026-10-03 12:41:58
-status: wip
+status: done
 bead_id: sase-1fs
 ---
 
