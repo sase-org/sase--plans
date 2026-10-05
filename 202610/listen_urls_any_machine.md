@@ -48,7 +48,7 @@ phases:
     auto-publish, verify it in the served feed, and write field notes.'
 proposed_by: bbugyi200.athena.0wl
 create_time: 2026-10-04 19:02:06
-status: wip
+status: done
 bead_id: sase-1g7
 ---
 
