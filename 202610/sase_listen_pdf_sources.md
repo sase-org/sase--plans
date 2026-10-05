@@ -1,14 +1,21 @@
 ---
 tier: tale
-title: 'sase-listen: render PDF sources (URLs and local files)'
-goal: '`sase-listen render https://arxiv.org/pdf/2608.25174 -e full` extracts the
-  paper locally, writes and narrates a full edition, and publishes a new episode to
-  the private podcast feed the user follows in AntennaPod; local .pdf files work as
-  sources too.'
+title: "sase-listen: render PDF sources (URLs and local files)"
+goal:
+  "`sase-listen render https://arxiv.org/pdf/2608.25174 -e full` extracts the paper
+  locally, writes and narrates a full edition, and publishes a new episode to the
+  private podcast feed the user follows in AntennaPod; local .pdf files work as sources
+  too."
 size: medium
 proposed_by: bbugyi200.athena.0wx.w0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0wx.w0](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0wx.w0.md)
+- **COMMITS:**
+  - [355e649](https://github.com/sase-org/sase-listen/commit/355e64991659068263a5e5bb11ad5ec50a0ee13b)
+    — feat(sase-listen): render PDF sources (URLs and local files)
 
 # Plan: sase-listen PDF sources (URLs and local files)
 
