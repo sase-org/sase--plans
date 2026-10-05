@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Wire Python macro loaders through the input-type catalog
-goal: 'Unknown macro input types follow strict_macro_input_types, bad enum declarations
+goal: "Unknown macro input types follow strict_macro_input_types, bad enum declarations
   skip only their macro, and handoff JSON keeps choices, named_type, and value_role.
   Then close epic sase-1g4.1.1 and phase sase-1g4.1.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-1g4.1.1.land
 bead: sase-1g4.1.1
@@ -16,6 +16,11 @@ status: done
   [202610/macro_input_type_vocab.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_input_type_vocab.md)
 - **BEAD:**
   [sase-1g4.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g4/sase-1g4.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1g4.1.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1g4.1.1.land.md)
+- **COMMITS:**
+  - [95291ab](https://github.com/sase-org/sase/commit/95291ab31a447dcb720dcbdf1b87ae21590f2968)
+    — feat(macros): wire loaders through input type catalog
 
 # Plan: Wire Python macro loaders through the input-type catalog
 
