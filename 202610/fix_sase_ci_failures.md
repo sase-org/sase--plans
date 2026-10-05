@@ -1,60 +1,59 @@
 ---
 tier: epic
 title: Repair failing sase GitHub Actions (Master Gate, Full CI, Publish)
-goal: "Master Gate, the scheduled Full CI lanes, and the scheduled Publish workflow stop
-  failing for reasons this repo owns. The persistent failures get root-cause fixes and
-  the recurring flakes get race-free fixes. The only remaining release-PR blocker is the
-  upstream sase-core 0.36.6 publish.
+goal: 'Master Gate, the scheduled Full CI lanes, and the scheduled Publish workflow
+  stop failing for reasons this repo owns. The persistent failures get root-cause
+  fixes and the recurring flakes get race-free fixes. The only remaining release-PR
+  blocker is the upstream sase-core 0.36.6 publish.
 
-  "
+  '
 phases:
-  - id: release-metadata
-    title: Unblock Publish release-metadata sync
-    depends_on: []
-    size: small
-    description: "release-metadata: make tools/ratchet_core_window ignore the uv
-      lockfile `revision` header that newer uv bumps on every rewrite, add guardrail
-      tests, and commit a refreshed uv.lock so `uv lock --check` passes on master again.
+- id: release-metadata
+  title: Unblock Publish release-metadata sync
+  depends_on: []
+  size: small
+  description: 'release-metadata: make tools/ratchet_core_window ignore the uv lockfile
+    `revision` header that newer uv bumps on every rewrite, add guardrail tests, and
+    commit a refreshed uv.lock so `uv lock --check` passes on master again.
 
-      "
-  - id: gate-deterministic
-    title:
-      Fix Master Gate's persistent textual-ansi failure and the FrontmatterPanel
-      teardown race
-    depends_on: []
-    size: small
-    description: "gate-deterministic: decouple the terminal-native syntax-palette test
-      from Textual's builtin theme catalog, which renamed textual-ansi in 8.2. Make
-      FrontmatterPanel.on_mount tolerate a Mount dispatched while the panel is being
-      pruned, with a regression test.
+    '
+- id: gate-deterministic
+  title: Fix Master Gate's persistent textual-ansi failure and the FrontmatterPanel
+    teardown race
+  depends_on: []
+  size: small
+  description: 'gate-deterministic: decouple the terminal-native syntax-palette test
+    from Textual''s builtin theme catalog, which renamed textual-ansi in 8.2. Make
+    FrontmatterPanel.on_mount tolerate a Mount dispatched while the panel is being
+    pruned, with a regression test.
 
-      "
-  - id: gate-flakes
-    title: Remove recurring Master Gate test races
-    depends_on: []
-    size: medium
-    description: "gate-flakes: fix five recurring order and timing races. They are
-      launch-context rebroadcast identity, the AcePage pump-task drain plus onboarding
-      refresh rescheduling, the non-leader kill wait, the shared aggregate-runtime
-      cache, and the panel-shell semicolon press racing the grammar load.
+    '
+- id: gate-flakes
+  title: Remove recurring Master Gate test races
+  depends_on: []
+  size: medium
+  description: 'gate-flakes: fix five recurring order and timing races. They are launch-context
+    rebroadcast identity, the AcePage pump-task drain plus onboarding refresh rescheduling,
+    the non-leader kill wait, the shared aggregate-runtime cache, and the panel-shell
+    semicolon press racing the grammar load.
 
-      "
-  - id: full-ci
-    title: Fix scheduled Full CI perf-floors, visual-test, and timing flakes
-    depends_on: []
-    size: small
-    description:
-      "full-ci: stop the hermetic tool-runs smoke from requiring the live-only DoD-17 to
-      pass, pin the output-variables PNG snapshot to paged decks and regenerate its
-      stale golden, and make the startup-clock and proc-query budget assertions immune
-      to runner load."
+    '
+- id: full-ci
+  title: Fix scheduled Full CI perf-floors, visual-test, and timing flakes
+  depends_on: []
+  size: small
+  description: 'full-ci: stop the hermetic tool-runs smoke from requiring the live-only
+    DoD-17 to pass, pin the output-variables PNG snapshot to paged decks and regenerate
+    its stale golden, and make the startup-clock and proc-query budget assertions
+    immune to runner load.'
 proposed_by: bbugyi200.athena.0ww
 create_time: 2026-10-05 12:16:18
 status: wip
+bead_id: sase-1gt
 ---
 
-- **PROMPT:**
-  [prompts/202610/fix_sase_ci_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/fix_sase_ci_failures.md)
+- **PROMPT:** [prompts/202610/fix_sase_ci_failures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/fix_sase_ci_failures.md)
+- **BEAD:** [sase-1gt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1gt/README.md)
 
 # Plan: Repair failing sase GitHub Actions
 
