@@ -56,7 +56,7 @@ phases:
     widen the terminology guard over the TUI scope, and run the j/k navigation benchmark.'
 proposed_by: bbugyi200.athena.sase-1eq.5
 create_time: 2026-10-03 13:29:38
-status: wip
+status: done
 bead_id: sase-1eq.5.1
 ---
 
