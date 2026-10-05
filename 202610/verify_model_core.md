@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Verify landed model-core and close sase-1g4.4
-goal: 'Confirm the landed builtin model and effort types still match the model-core
+goal: "Confirm the landed builtin model and effort types still match the model-core
   contract, add the missing effort-argument completion test if it is absent, and close
   only bead sase-1g4.4.
 
-  '
+  "
 size: medium
 bead: sase-1g4.4
 proposed_by: bbugyi200.athena.sase-1g4.4
@@ -16,6 +16,11 @@ status: done
   [202610/macro_named_input_types.md](https://github.com/sase-org/sase--plans/blob/main/202610/macro_named_input_types.md)
 - **BEAD:**
   [sase-1g4.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g4/sase-1g4.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1g4.4](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1g4.4.md)
+- **COMMITS:**
+  - [2fa78ad](https://github.com/sase-org/sase-core/commit/2fa78ad066f4f2c77a1e4ee8c7bd303ac0d01c18)
+    — feat(macros): add builtin effort argument completion test
 
 # Verify landed model-core and close sase-1g4.4
 
