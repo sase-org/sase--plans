@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Land bob highlights create audio discovery and close sase-1g6
-goal:
-  bob highlights create discovers a sase-listen companion and copies it beside the
-  intake PDF before the listen-card Play button is rendered, then close epic sase-1g6.
+goal: bob highlights create discovers a sase-listen companion and copies it beside
+  the intake PDF before the listen-card Play button is rendered, then close epic sase-1g6.
 proposed_by: bbugyi200.apollo.sase-1g6.land
 bead: sase-1g6
-create_time: 2026-10-04 21:04:34
-status: wip
+status: done
 ---
 
 - **PARENT:**
