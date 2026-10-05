@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Skip the Stash to Trash confirmation
-goal:
-  Sending a stashed prompt to Trash no longer shows a y/n dialog, because the draft
-  stays recoverable from the Trash view.
+goal: Sending a stashed prompt to Trash no longer shows a y/n dialog, because the
+  draft stays recoverable from the Trash view.
 size: small
 proposed_by: bbugyi200.athena.0x0
-create_time: 2026-10-05 13:10:42
-status: wip
+status: done
 ---
 
 # Plan: Skip the Stash to Trash confirmation
