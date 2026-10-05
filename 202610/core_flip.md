@@ -1,12 +1,12 @@
 ---
 tier: tale
 title: Flip sase-core onto macro spellings and pin sase in the same turn
-goal: 'sase-core emits only macro spellings, the legacy Python binding names are gone,
-  and the LSP crate is sase_macro_lsp. The same turn updates sase''s mirrors and the
+goal: "sase-core emits only macro spellings, the legacy Python binding names are gone,
+  and the LSP crate is sase_macro_lsp. The same turn updates sase's mirrors and the
   chezmoi LSP installer. The host writes the new core SHA into the sase pin. Durable
   pre-rename data still loads.
 
-  '
+  "
 size: medium
 proposed_by: bbugyi200.athena.sase-1eq.10
 bead: sase-1eq.10
@@ -17,6 +17,11 @@ status: done
   [202610/xprompts_to_macros.md](https://github.com/sase-org/sase--plans/blob/main/202610/xprompts_to_macros.md)
 - **BEAD:**
   [sase-1eq.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1eq/sase-1eq.10.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1eq.10](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1eq.10.md)
+- **COMMITS:**
+  - [50ff3b0](https://github.com/bbugyi200/dotfiles/commit/50ff3b078278e417b8fb9e2a6d7fc3ff73c71273)
+    — feat(macros): install sase-macro-lsp, drop stale xprompt binary
 
 # Plan: Flip sase-core onto macro spellings and pin sase in the same turn
 
