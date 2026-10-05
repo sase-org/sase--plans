@@ -2,9 +2,8 @@
 tier: tale
 size: medium
 title: Land bob highlights create audio discovery and close sase-1g6
-goal:
-  bob highlights create discovers a sase-listen companion and copies it beside the
-  intake PDF before the listen-card Play button is rendered, then close epic sase-1g6.
+goal: bob highlights create discovers a sase-listen companion and copies it beside
+  the intake PDF before the listen-card Play button is rendered, then close epic sase-1g6.
 proposed_by: bbugyi200.apollo.sase-1g6.land
 bead: sase-1g6
 status: done
@@ -14,12 +13,6 @@ status: done
   [202610/research_swarm_listen_card.md](https://github.com/sase-org/sase--plans/blob/main/202610/research_swarm_listen_card.md)
 - **BEAD:**
   [sase-1g6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1g6/README.md)
-- **AGENTS:**
-  - [bbugyi200.apollo.sase-1g6.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1g6.land.md)
-- **COMMITS:**
-  - [2152202](https://github.com/bobs-org/bob-cli/commit/215220232d8a0d7967b1258620ffc641658bfa37)
-    — feat(highlights): discover sase-listen companion audio at create time and bind the
-    Play button
 
 # Land bob highlights create audio discovery and close sase-1g6
 
