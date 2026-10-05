@@ -1,15 +1,22 @@
 ---
 tier: tale
 title: Fix athena research audio Gemini key shadowing and finish research.3n.audio
-goal: research.*.audio agents on athena render with the working pass-managed Gemini
-  key regardless of stale ambient GEMINI_API_KEY values, sase-listen classifies and
-  explains credential failures, and the research.3n.audio episode is rendered, registered,
-  carded in the published report, and verified in the AntennaPod-subscribed apollo
-  feed.
+goal:
+  research.*.audio agents on athena render with the working pass-managed Gemini key
+  regardless of stale ambient GEMINI_API_KEY values, sase-listen classifies and explains
+  credential failures, and the research.3n.audio episode is rendered, registered, carded
+  in the published report, and verified in the AntennaPod-subscribed apollo feed.
 size: medium
 proposed_by: bbugyi200.athena.0wp
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0wp](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0wp.md)
+- **COMMITS:**
+  - [16d2e9b](https://github.com/sase-org/sase--research/commit/16d2e9ba8c6992e35f289933f207f045d3619627)
+    — feat(research): add listen card and audio frontmatter for
+    sase_md_instruction_delivery
 
 # Plan: Fix athena's stale Gemini key shadowing for research audio, then finish research.3n.audio
 
