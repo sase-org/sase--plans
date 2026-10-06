@@ -1,14 +1,12 @@
 ---
 tier: tale
-title: "sase-listen: fetch arXiv paper URLs as their PDF"
-goal:
-  "`sase-listen render`/`script` recognize arXiv paper URLs (/abs/, /html/, /pdf/
-  variants) and fetch the paper's canonical PDF URL, so an /abs/ link narrates the full
-  paper and every URL form for one paper shares one cached source and episode."
+title: 'sase-listen: fetch arXiv paper URLs as their PDF'
+goal: '`sase-listen render`/`script` recognize arXiv paper URLs (/abs/, /html/, /pdf/
+  variants) and fetch the paper''s canonical PDF URL, so an /abs/ link narrates the
+  full paper and every URL form for one paper shares one cached source and episode.'
 size: small
 proposed_by: bbugyi200.athena.0xa
-create_time: 2026-10-06 10:06:56
-status: wip
+status: done
 ---
 
 # Plan: sase-listen fetches arXiv paper URLs as their PDF
