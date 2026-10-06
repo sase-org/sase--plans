@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Repair the duplicated arXiv feed episode and supersede same-title episodes
-goal:
-  apollo's feed holds only the PDF render of the Overseeing Agents paper, publish keeps
-  one feed item per title, and every publish that replaces already-downloadable audio
-  tells the user how to refresh it in AntennaPod.
+goal: apollo's feed holds only the PDF render of the Overseeing Agents paper, publish
+  keeps one feed item per title, and every publish that replaces already-downloadable
+  audio tells the user how to refresh it in AntennaPod.
 size: medium
 proposed_by: bbugyi200.athena.0xa.f0
-create_time: 2026-10-06 10:24:23
-status: wip
+status: done
 ---
 
 # Plan: Repair the duplicated arXiv episode in the AntennaPod feed, and supersede same-title episodes on publish
