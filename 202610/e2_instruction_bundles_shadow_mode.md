@@ -1,89 +1,83 @@
 ---
 tier: epic
-title: "E2: Instruction bundles in shadow mode (memory-built instruction migration)"
-goal: "Every root provider invocation renders the memory-built instruction bundle it
-  would receive and records it with a sase-core-validated instruction manifest, without
-  delivering it; a preview command, legacy parity checks, and scoreboard coverage prove
-  the bundle matches today's files with the contract exactly once, so E3 can switch
-  delivery on a proven renderer.
+title: 'E2: Instruction bundles in shadow mode (memory-built instruction migration)'
+goal: 'Every root provider invocation renders the memory-built instruction bundle
+  it would receive and records it with a sase-core-validated instruction manifest,
+  without delivering it; a preview command, legacy parity checks, and scoreboard coverage
+  prove the bundle matches today''s files with the contract exactly once, so E3 can
+  switch delivery on a proven renderer.
 
-  "
+  '
 phases:
-  - id: memory-units
-    title: Legacy instruction renderer exposes structured, cwd-free memory units
-    size: medium
-    depends_on: []
-    description:
-      "memory-units: refactor the legacy AGENTS.md renderer onto a structured,
-      side-effect-free per-root units API (title, contract inputs, core, reference, and
-      web units with sources), threading the project root through hidden cwd reads;
-      legacy output stays byte-identical."
-  - id: manifest-wire
-    title: Instruction manifest wire schema in sase-core, binding, adapter, and pin move
-    size: medium
-    depends_on: []
-    description:
-      "manifest-wire: add the instruction manifest v1 wire types, closed vocabulary,
-      invariants, and common_digest to sase-core with a dict binding, a golden
-      cross-language fixture, a thin sase adapter, and the sase-core pin move."
-  - id: compiler
-    title:
-      "Python instruction compiler: layers, overlays, facts, manifest assembly, render
-      cache"
-    size: medium
-    depends_on:
-      - memory-units
-      - manifest-wire
-    description:
-      "compiler: compose bundles in Python from the units with fixed layers, section
-      ids, layout, and root/helper/interactive/export overlays; validate facts; assemble
-      normalized manifests; add the content-addressed store and the input-digest render
-      cache with its 250 ms warm budget."
-  - id: render-cli
-    title: "`sase instructions render` preview and legacy parity checks"
-    size: medium
-    depends_on:
-      - compiler
-    description:
-      "render-cli: add the render subcommand (agent, fact, json, no-cache, parity,
-      sections) and the legacy parity checker, with CI parity tests for sase-, bob-cli-,
-      and actstat-shaped fixtures and this repo's committed AGENTS.md."
-  - id: invocation-hook
-    title: Shadow render at every root provider invocation, behind one boundary
-    size: medium
-    depends_on:
-      - compiler
-    description:
-      "invocation-hook: route all three root provider.invoke sites through one fail-open
-      boundary that writes per-invocation bundle and manifest artifacts, the agent_meta
-      summary, and SASE_INSTRUCTIONS_FILE behind the instruction_shadow_render sunset
-      flag, guarded by an architecture test and route tests."
-  - id: scoreboard
-    title: Scoreboard manifest coverage and intended-vs-observed section diff
-    size: medium
-    depends_on:
-      - invocation-hook
-    description:
-      "scoreboard: add the manifest coverage column, the coverage view, the per-section
-      intended-vs-observed diff, and the instructions.coverage doctor check, leaving
-      every E1 column unchanged."
-  - id: acceptance
-    title: Live coverage, parity, latency, budget baseline, and acceptance record
-    size: small
-    depends_on:
-      - render-cli
-      - scoreboard
-    description:
-      "acceptance: confirm live coverage, unchanged observed columns, render and parity
-      checks in all three projects, warm latency, and the budget baseline; attach the
-      acceptance record and JSON to the epic."
+- id: memory-units
+  title: Legacy instruction renderer exposes structured, cwd-free memory units
+  size: medium
+  depends_on: []
+  description: 'memory-units: refactor the legacy AGENTS.md renderer onto a structured,
+    side-effect-free per-root units API (title, contract inputs, core, reference,
+    and web units with sources), threading the project root through hidden cwd reads;
+    legacy output stays byte-identical.'
+- id: manifest-wire
+  title: Instruction manifest wire schema in sase-core, binding, adapter, and pin
+    move
+  size: medium
+  depends_on: []
+  description: 'manifest-wire: add the instruction manifest v1 wire types, closed
+    vocabulary, invariants, and common_digest to sase-core with a dict binding, a
+    golden cross-language fixture, a thin sase adapter, and the sase-core pin move.'
+- id: compiler
+  title: 'Python instruction compiler: layers, overlays, facts, manifest assembly,
+    render cache'
+  size: medium
+  depends_on:
+  - memory-units
+  - manifest-wire
+  description: 'compiler: compose bundles in Python from the units with fixed layers,
+    section ids, layout, and root/helper/interactive/export overlays; validate facts;
+    assemble normalized manifests; add the content-addressed store and the input-digest
+    render cache with its 250 ms warm budget.'
+- id: render-cli
+  title: '`sase instructions render` preview and legacy parity checks'
+  size: medium
+  depends_on:
+  - compiler
+  description: 'render-cli: add the render subcommand (agent, fact, json, no-cache,
+    parity, sections) and the legacy parity checker, with CI parity tests for sase-,
+    bob-cli-, and actstat-shaped fixtures and this repo''s committed AGENTS.md.'
+- id: invocation-hook
+  title: Shadow render at every root provider invocation, behind one boundary
+  size: medium
+  depends_on:
+  - compiler
+  description: 'invocation-hook: route all three root provider.invoke sites through
+    one fail-open boundary that writes per-invocation bundle and manifest artifacts,
+    the agent_meta summary, and SASE_INSTRUCTIONS_FILE behind the instruction_shadow_render
+    sunset flag, guarded by an architecture test and route tests.'
+- id: scoreboard
+  title: Scoreboard manifest coverage and intended-vs-observed section diff
+  size: medium
+  depends_on:
+  - invocation-hook
+  description: 'scoreboard: add the manifest coverage column, the coverage view, the
+    per-section intended-vs-observed diff, and the instructions.coverage doctor check,
+    leaving every E1 column unchanged.'
+- id: acceptance
+  title: Live coverage, parity, latency, budget baseline, and acceptance record
+  size: small
+  depends_on:
+  - render-cli
+  - scoreboard
+  description: 'acceptance: confirm live coverage, unchanged observed columns, render
+    and parity checks in all three projects, warm latency, and the budget baseline;
+    attach the acceptance record and JSON to the epic.'
 proposed_by: bbugyi200.athena.0xc
 create_time: 2026-10-06 12:43:22
 status: wip
+bead_id: sase-1h3
 ---
 
-- **PROMPT:**
-  [prompts/202610/e2_instruction_bundles_shadow_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e2_instruction_bundles_shadow_mode.md)
+- **PROMPT:** [prompts/202610/e2_instruction_bundles_shadow_mode.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e2_instruction_bundles_shadow_mode.md)
+- **BEAD:** [sase-1h3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h3/README.md)
 
 # Plan: E2 — Instruction bundles in shadow mode
 
