@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Restore sase-core CI after plugin input-type registry changes
-goal: Fix the confirmed Rust formatting failures and pass the full required sase-core
+goal:
+  Fix the confirmed Rust formatting failures and pass the full required sase-core
   verification gate.
 size: small
 proposed_by: bbugyi200.athena.0x7
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0x7](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0x7.md)
+- **COMMITS:**
+  - [e08f0c2](https://github.com/sase-org/sase-core/commit/e08f0c2b8b3102231bae5115756d3782580a2e53)
+    — fix(ci): format plugin input type registry changes
 
 # Restore sase-core CI after the plugin input-type registry change
 
