@@ -1,13 +1,21 @@
 ---
 tier: tale
 title: Repair the duplicated arXiv feed episode and supersede same-title episodes
-goal: apollo's feed holds only the PDF render of the Overseeing Agents paper, publish
-  keeps one feed item per title, and every publish that replaces already-downloadable
-  audio tells the user how to refresh it in AntennaPod.
+goal:
+  apollo's feed holds only the PDF render of the Overseeing Agents paper, publish keeps
+  one feed item per title, and every publish that replaces already-downloadable audio
+  tells the user how to refresh it in AntennaPod.
 size: medium
 proposed_by: bbugyi200.athena.0xa.f0
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0xa.f0](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0xa.f0.md)
+- **COMMITS:**
+  - [f8154ad](https://github.com/sase-org/sase-listen/commit/f8154ad0708141e6cb7c674c1130015f262a8a2a)
+    — feat(feed): supersede same-title episodes on publish with AntennaPod refresh
+    notice
 
 # Plan: Repair the duplicated arXiv episode in the AntennaPod feed, and supersede same-title episodes on publish
 
