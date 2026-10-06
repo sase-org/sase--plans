@@ -72,7 +72,7 @@ phases:
     attach the acceptance record and JSON to the epic.'
 proposed_by: bbugyi200.athena.0xc
 create_time: 2026-10-06 12:43:22
-status: wip
+status: done
 bead_id: sase-1h3
 ---
 
