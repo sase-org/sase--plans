@@ -86,7 +86,7 @@ phases:
     as superseded.'
 proposed_by: bbugyi200.athena.0x2
 create_time: 2026-10-05 15:52:16
-status: wip
+status: done
 bead_id: sase-1gu
 ---
 
