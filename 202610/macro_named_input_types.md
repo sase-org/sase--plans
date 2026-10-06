@@ -93,7 +93,7 @@ phases:
     line, and add an end-to-end parity test across runtime, LSP, and TUI.'
 proposed_by: bbugyi200.athena.0wj
 create_time: 2026-10-04 18:19:25
-status: wip
+status: done
 bead_id: sase-1g4
 ---
 
