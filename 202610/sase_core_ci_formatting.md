@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Restore sase-core CI after plugin input-type registry changes
-goal:
-  Fix the confirmed Rust formatting failures and pass the full required sase-core
+goal: Fix the confirmed Rust formatting failures and pass the full required sase-core
   verification gate.
 size: small
 proposed_by: bbugyi200.athena.0x7
-create_time: 2026-10-06 06:30:05
-status: wip
+status: done
 ---
 
 # Restore sase-core CI after the plugin input-type registry change
