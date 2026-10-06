@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix research audio episodes never reaching the podcast feed
-goal:
-  Queued research audio episodes publish to the apollo feed and appear in AntennaPod,
-  and the shell ssh-agent bootstrap can no longer silently strand Codex-run agents on an
-  empty agent.
+goal: Queued research audio episodes publish to the apollo feed and appear in AntennaPod,
+  and the shell ssh-agent bootstrap can no longer silently strand Codex-run agents
+  on an empty agent.
 size: medium
 proposed_by: bbugyi200.athena.0xj
-create_time: 2026-10-06 17:01:39
-status: wip
+status: done
 ---
 
 # Plan: Fix research audio episodes never reaching the podcast feed
