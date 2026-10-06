@@ -1,137 +1,136 @@
 ---
 tier: epic
-title: "%wait(..., for_epic=): a wait that follows its agent into the epic it launches"
-goal: "`%wait:planner` waits for the planner and then for every epic bead the planner
-  (or any member of its session, clan, workflow, or bound tribe) launches, so users can
-  submit follow-up prompts before the epic's ID exists. A per-occurrence
-  `for_epic=true|false` keyword controls the behavior. It defaults to true for
-  user-authored agent targets, and using it without an agent target is a hard error in
-  the launcher and the editor. The hand-off is recorded reliably, never deadlocks the
-  epic machinery, and is clearly visible in the TUI as a teal `↪` hand-off.
+title: '%wait(..., for_epic=): a wait that follows its agent into the epic it launches'
+goal: '`%wait:planner` waits for the planner and then for every epic bead the planner
+  (or any member of its session, clan, workflow, or bound tribe) launches, so users
+  can submit follow-up prompts before the epic''s ID exists. A per-occurrence `for_epic=true|false`
+  keyword controls the behavior. It defaults to true for user-authored agent targets,
+  and using it without an agent target is a hard error in the launcher and the editor.
+  The hand-off is recorded reliably, never deadlocks the epic machinery, and is clearly
+  visible in the TUI as a teal `↪` hand-off.
 
-  "
+  '
 phases:
-  - id: record
-    title: Record the epics a run launched
-    depends_on: []
-    size: medium
-    description: "record: write an authoritative, lock-protected `created_epics` list on
-      the creating run's agent_meta.json when `sase bead work` materializes an epic. Add
-      readers with fallbacks, stop overwriting workers' inherited `epic_bead_id`, and
-      mirror the field in the Rust and Python scan wires.
+- id: record
+  title: Record the epics a run launched
+  depends_on: []
+  size: medium
+  description: 'record: write an authoritative, lock-protected `created_epics` list
+    on the creating run''s agent_meta.json when `sase bead work` materializes an epic.
+    Add readers with fallbacks, stop overwriting workers'' inherited `epic_bead_id`,
+    and mirror the field in the Rust and Python scan wires.
 
-      "
-  - id: links
-    title: Derive produced-by links from recorded epics
-    depends_on:
-      - record
-    size: small
-    description: "links: publish portable `created_epic_ids` and project `bead:<epic>
-      produced-by agent:<creator>` edges, both from published metadata and from
-      bead-store attribution, so unpublished planners also get the edge. Widen the
-      relation guidance in sase-core.
+    '
+- id: links
+  title: Derive produced-by links from recorded epics
+  depends_on:
+  - record
+  size: small
+  description: 'links: publish portable `created_epic_ids` and project `bead:<epic>
+    produced-by agent:<creator>` edges, both from published metadata and from bead-store
+    attribution, so unpublished planners also get the edge. Widen the relation guidance
+    in sase-core.
 
-      "
-  - id: contract
-    title: Grammar, diagnostics, and persisted policy
-    depends_on:
-      - record
-    size: medium
-    description: "contract: accept and strictly validate `for_epic=` on `%wait` with
-      identical launcher and editor errors. Compute the effective positive
-      `wait_for_epics_of` list (default still false), persist it in agent_meta.json and
-      waiting.json and the scan wires, round-trip it through PromptWaitDirective, and
-      add editor completion.
+    '
+- id: contract
+  title: Grammar, diagnostics, and persisted policy
+  depends_on:
+  - record
+  size: medium
+  description: 'contract: accept and strictly validate `for_epic=` on `%wait` with
+    identical launcher and editor errors. Compute the effective positive `wait_for_epics_of`
+    list (default still false), persist it in agent_meta.json and waiting.json and
+    the scan wires, round-trip it through PromptWaitDirective, and add editor completion.
 
-      "
-  - id: reducer
-    title: Epic-follow reducer and fact collector
-    depends_on:
-      - record
-    size: medium
-    description: "reducer: add the pure sase-core reducer that maps per-member facts to
-      AGENT/NONE/LAUNCHING/FOLLOWING/BLOCKED with the deadlock guard and the cycle hook,
-      bind it to Python, and add the Python fact collector over the wait-dependency
-      index. Nothing is wired into release paths yet.
+    '
+- id: reducer
+  title: Epic-follow reducer and fact collector
+  depends_on:
+  - record
+  size: medium
+  description: 'reducer: add the pure sase-core reducer that maps per-member facts
+    to AGENT/NONE/LAUNCHING/FOLLOWING/BLOCKED with the deadlock guard and the cycle
+    hook, bind it to Python, and add the Python fact collector over the wait-dependency
+    index. Nothing is wired into release paths yet.
 
-      "
-  - id: release
-    title: Follow through in every release path
-    depends_on:
-      - contract
-      - reducer
-    size: large
-    description: "release: route every release path (runner initial check, parked-runner
-      fallback, AXE wait_checks chop, kill/dismiss) through one shared decision
-      function. Promote FOLLOWING targets into pinned bead waits under the directive
-      lock with compare-and-set, persist `wait_epic_follows`, fix the two-stage rewrite
-      clobber, and document the opt-in keyword.
+    '
+- id: release
+  title: Follow through in every release path
+  depends_on:
+  - contract
+  - reducer
+  size: large
+  description: 'release: route every release path (runner initial check, parked-runner
+    fallback, AXE wait_checks chop, kill/dismiss) through one shared decision function.
+    Promote FOLLOWING targets into pinned bead waits under the directive lock with
+    compare-and-set, persist `wait_epic_follows`, fix the two-stage rewrite clobber,
+    and document the opt-in keyword.
 
-      "
-  - id: model
-    title: Follow state in the agent model and shared view
-    depends_on:
-      - release
-    size: medium
-    description: "model: load `wait_for_epics_of` and `wait_epic_follows` into the TUI
-      Agent model and render cache key. Make wait-satisfied and status-count logic
-      follow-aware without I/O, and add one shared follow view model plus plain-text
-      phrasing for every surface.
+    '
+- id: model
+  title: Follow state in the agent model and shared view
+  depends_on:
+  - release
+  size: medium
+  description: 'model: load `wait_for_epics_of` and `wait_epic_follows` into the TUI
+    Agent model and render cache key. Make wait-satisfied and status-count logic follow-aware
+    without I/O, and add one shared follow view model plus plain-text phrasing for
+    every surface.
 
-      "
-  - id: safety
-    title: Blocker notifications and the cycle guard
-    depends_on:
-      - release
-    size: medium
-    description: "safety: send one deduplicated inbox notification for a LAUNCHING
-      follow past its grace period, for a BLOCKED follow (with the resume command), and
-      for a followed epic whose land agent failed. Fill the reducer's cycle facts, and
-      document the states in docs/axe.md.
+    '
+- id: safety
+  title: Blocker notifications and the cycle guard
+  depends_on:
+  - release
+  size: medium
+  description: 'safety: send one deduplicated inbox notification for a LAUNCHING follow
+    past its grace period, for a BLOCKED follow (with the resume command), and for
+    a followed epic whose land agent failed. Fill the reducer''s cycle facts, and
+    document the states in docs/axe.md.
 
-      "
-  - id: tui
-    title: The ↪ hand-off in rows, lanes, toasts, and timeline
-    depends_on:
-      - model
-    size: medium
-    description: "tui: render the teal `↪` hand-off in agent rows and in the detail
-      `[agents]` lane. Add one coalesced toast on live transitions, a `↪EPIC` timeline
-      milestone, phase progress, help legend, docs, and visual snapshot goldens.
+    '
+- id: tui
+  title: The ↪ hand-off in rows, lanes, toasts, and timeline
+  depends_on:
+  - model
+  size: medium
+  description: 'tui: render the teal `↪` hand-off in agent rows and in the detail
+    `[agents]` lane. Add one coalesced toast on live transitions, a `↪EPIC` timeline
+    milestone, phase progress, help legend, docs, and visual snapshot goldens.
 
-      "
-  - id: surfaces
-    title: Wait modal toggle, CLI, Jinja, and Telegram parity
-    depends_on:
-      - model
-    size: medium
-    description: 'surfaces: add a tri-state "Follow epics" toggle to the `w` wait modal,
-      filter derived beads out of edits and relaunch rewrites, export the follow state
-      in `sase agent list -j` and `sase agent wait` rows, synthesize
-      `agents["x"].created_epic(s)` for Jinja, and show the hand-off in Telegram status
-      text when waits are shown there.
+    '
+- id: surfaces
+  title: Wait modal toggle, CLI, Jinja, and Telegram parity
+  depends_on:
+  - model
+  size: medium
+  description: 'surfaces: add a tri-state "Follow epics" toggle to the `w` wait modal,
+    filter derived beads out of edits and relaunch rewrites, export the follow state
+    in `sase agent list -j` and `sase agent wait` rows, synthesize `agents["x"].created_epic(s)`
+    for Jinja, and show the hand-off in Telegram status text when waits are shown
+    there.
 
-      '
-  - id: flip
-    title: Flip the default on and finish the docs
-    depends_on:
-      - links
-      - safety
-      - tui
-      - surfaces
-    size: medium
-    description:
-      "flip: make `for_epic` default to true for user-authored agent targets (never
-      `--plan` rows), have `sase bead work` emit `for_epic=false` for intra-epic
-      sequencing waits, and prove with regression tests that epic phases and land agents
-      still release. Update editor docs and user docs, and propose the memory follow-up."
+    '
+- id: flip
+  title: Flip the default on and finish the docs
+  depends_on:
+  - links
+  - safety
+  - tui
+  - surfaces
+  size: medium
+  description: 'flip: make `for_epic` default to true for user-authored agent targets
+    (never `--plan` rows), have `sase bead work` emit `for_epic=false` for intra-epic
+    sequencing waits, and prove with regression tests that epic phases and land agents
+    still release. Update editor docs and user docs, and propose the memory follow-up.'
 proposed_by: bbugyi200.athena.research.3v.linker.w0
 create_time: 2026-10-06 18:17:30
 status: wip
+bead_id: sase-1h7
 ---
 
-- **PROMPT:**
-  [prompts/202610/wait_for_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_for_epic.md)
+- **PROMPT:** [prompts/202610/wait_for_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_for_epic.md)
+- **BEAD:** [sase-1h7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h7/README.md)
 
 # Plan: `%wait(..., for_epic=)`, a Wait That Follows Its Agent Into Its Epic
 
