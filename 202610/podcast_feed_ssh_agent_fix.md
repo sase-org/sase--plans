@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Fix research audio episodes never reaching the podcast feed
-goal: Queued research audio episodes publish to the apollo feed and appear in AntennaPod,
-  and the shell ssh-agent bootstrap can no longer silently strand Codex-run agents
-  on an empty agent.
+goal:
+  Queued research audio episodes publish to the apollo feed and appear in AntennaPod,
+  and the shell ssh-agent bootstrap can no longer silently strand Codex-run agents on an
+  empty agent.
 size: medium
 proposed_by: bbugyi200.athena.0xj
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0xj](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0xj.md)
+- **COMMITS:**
+  - [7d59de1](https://github.com/sase-org/sase-listen/commit/7d59de1adf0e503fe89550d78a252e9433e05b37)
+    — feat(feedhost): name SSH agent state on publickey denials
 
 # Plan: Fix research audio episodes never reaching the podcast feed
 
