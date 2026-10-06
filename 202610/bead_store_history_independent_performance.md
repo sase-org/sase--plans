@@ -1,148 +1,136 @@
 ---
 tier: epic
-title:
-  "Bead store performance: remove replay waste, add a Rust read model, take issues.jsonl
-  off the commit path"
-goal: "Hot-path bead reads and writes stop scaling with closed history. Every
-  recommendation in the bead-history research report is implemented: the measured waste
-  is removed, a Rust-owned, disposable, fingerprint-validated read model serves current
-  state, issues.jsonl leaves the per-mutation commit path, and the physical
-  sealed-archive design sits behind measured triggers. No bead event is ever edited,
-  compressed in place, or deleted.
+title: 'Bead store performance: remove replay waste, add a Rust read model, take issues.jsonl
+  off the commit path'
+goal: 'Hot-path bead reads and writes stop scaling with closed history. Every recommendation
+  in the bead-history research report is implemented: the measured waste is removed,
+  a Rust-owned, disposable, fingerprint-validated read model serves current state,
+  issues.jsonl leaves the per-mutation commit path, and the physical sealed-archive
+  design sits behind measured triggers. No bead event is ever edited, compressed in
+  place, or deleted.
 
-  "
+  '
 phases:
-  - id: bench
-    title: Scaled-corpus bead benchmark harness
-    depends_on: []
-    size: medium
-    description:
-      "bench: add a deterministic realistic-shape synthetic bead corpus at any scale, a
-      local prefix-copy tool for real stores, a scale-aware bead benchmark, and a
-      record-only 4x CI run."
-  - id: outbox
-    title: Constant-cost artifact-link outbox append
-    depends_on: []
-    size: small
-    description:
-      "outbox: stop re-reading and re-canonicalizing every outbox entry on each append
-      (~2.9 s of every audited read) while keeping operation-id collision semantics."
-  - id: maintenance
-    title: Hidden-clone gc and bead push-log retention
-    depends_on: []
-    size: small
-    description:
-      "maintenance: make the sidecar gc pass reach the host-owned hidden beads clone,
-      fix the stale projection-size comment, and add bounded retention for
-      ~/.sase/bead_push_logs."
-  - id: parse-once
-    title: One parse, one validation, no lockless-read deletes
-    depends_on: []
-    size: medium
-    description:
-      "parse-once: in sase-core, move the removed-flag stream prune off the read path,
-      drop the deep clone of every stream, and validate each event and issue once (~480
-      ms to ~290 ms per replay)."
-  - id: fingerprint
-    title: Store fingerprint binding and consumer migration
-    depends_on: []
-    size: medium
-    description:
-      "fingerprint: add an exact stat-only bead_store_fingerprint core binding and move
-      the five issues.jsonl mtime-keyed consumers onto it."
-  - id: tui-board
-    title: TUI Beads and Plans pane refresh
-    depends_on:
-      - fingerprint
-    size: medium
-    description:
-      "tui-board: group phases in one pass, stop forced reloads on auto-refresh ticks,
-      and load list/ready/blocked from one core read via a board-snapshot binding."
-  - id: one-replay
-    title: One store read per CLI command
-    depends_on:
-      - parse-once
-    size: medium
-    description:
-      "one-replay: route targets without a full read, resolve inside the locked mutation
-      load, and collapse the Python lanes' redundant resolve/show calls so each command
-      reads the store once."
-  - id: read-model-store
-    title: Read-model substrate, freshness protocol, and parity harness
-    depends_on:
-      - parse-once
-      - bench
-    size: medium
-    description:
-      "read-model-store: add the versioned SQLite read model under the clone's git dir
-      with an O(1) freshness token, full-rebuild fallback, transparent read integration,
-      doctor --verify-cache, and a cache-vs-replay parity harness."
-  - id: read-model-tail
-    title: Snapshot-plus-tail incremental refresh
-    depends_on:
-      - read-model-store
-    size: medium
-    description:
-      "read-model-tail: apply appended events after the merge frontier instead of
-      rebuilding, falling back to a rebuild on any precondition failure, with randomized
-      parity and outcome telemetry."
-  - id: seal-watch
-    title: Sealed-segment triggers and design
-    depends_on:
-      - read-model-tail
-    size: small
-    description:
-      "seal-watch: report the measurable sealed-archive triggers in bead doctor and
-      document the gated sealed-segment design without building it."
-  - id: projection-off
-    title: issues.jsonl off the per-mutation path
-    depends_on:
-      - fingerprint
-      - read-model-store
-      - one-replay
-    size: medium
-    description:
-      "projection-off: stop rewriting and committing issues.jsonl on every mutation,
-      untrack it with a mixed-version-safe migration, migrate its content consumers, and
-      add on-demand export."
-  - id: read-model-queries
-    title: Indexed queries over the read model
-    depends_on:
-      - read-model-tail
-      - one-replay
-    size: medium
-    description:
-      "read-model-queries: serve detail, ready, blocked, list, stats, resolve, search,
-      and multi-get from indexed read-model tables so hot queries touch only active or
-      requested rows."
-  - id: read-model-mutations
-    title: Mutations load and write through the read model
-    depends_on:
-      - read-model-queries
-      - projection-off
-    size: large
-    description:
-      "read-model-mutations: make MutableStore load only affected rows from the read
-      model and write rows plus frontier through in the same locked critical section."
-  - id: perf-gate
-    title: History-independence acceptance gate
-    depends_on:
-      - read-model-mutations
-      - tui-board
-      - outbox
-      - maintenance
-      - seal-watch
-    size: medium
-    description:
-      "perf-gate: enforce the A1 history-independence criteria on scaled corpora in CI
-      and locally, and record the final before/after results."
+- id: bench
+  title: Scaled-corpus bead benchmark harness
+  depends_on: []
+  size: medium
+  description: 'bench: add a deterministic realistic-shape synthetic bead corpus at
+    any scale, a local prefix-copy tool for real stores, a scale-aware bead benchmark,
+    and a record-only 4x CI run.'
+- id: outbox
+  title: Constant-cost artifact-link outbox append
+  depends_on: []
+  size: small
+  description: 'outbox: stop re-reading and re-canonicalizing every outbox entry on
+    each append (~2.9 s of every audited read) while keeping operation-id collision
+    semantics.'
+- id: maintenance
+  title: Hidden-clone gc and bead push-log retention
+  depends_on: []
+  size: small
+  description: 'maintenance: make the sidecar gc pass reach the host-owned hidden
+    beads clone, fix the stale projection-size comment, and add bounded retention
+    for ~/.sase/bead_push_logs.'
+- id: parse-once
+  title: One parse, one validation, no lockless-read deletes
+  depends_on: []
+  size: medium
+  description: 'parse-once: in sase-core, move the removed-flag stream prune off the
+    read path, drop the deep clone of every stream, and validate each event and issue
+    once (~480 ms to ~290 ms per replay).'
+- id: fingerprint
+  title: Store fingerprint binding and consumer migration
+  depends_on: []
+  size: medium
+  description: 'fingerprint: add an exact stat-only bead_store_fingerprint core binding
+    and move the five issues.jsonl mtime-keyed consumers onto it.'
+- id: tui-board
+  title: TUI Beads and Plans pane refresh
+  depends_on:
+  - fingerprint
+  size: medium
+  description: 'tui-board: group phases in one pass, stop forced reloads on auto-refresh
+    ticks, and load list/ready/blocked from one core read via a board-snapshot binding.'
+- id: one-replay
+  title: One store read per CLI command
+  depends_on:
+  - parse-once
+  size: medium
+  description: 'one-replay: route targets without a full read, resolve inside the
+    locked mutation load, and collapse the Python lanes'' redundant resolve/show calls
+    so each command reads the store once.'
+- id: read-model-store
+  title: Read-model substrate, freshness protocol, and parity harness
+  depends_on:
+  - parse-once
+  - bench
+  size: medium
+  description: 'read-model-store: add the versioned SQLite read model under the clone''s
+    git dir with an O(1) freshness token, full-rebuild fallback, transparent read
+    integration, doctor --verify-cache, and a cache-vs-replay parity harness.'
+- id: read-model-tail
+  title: Snapshot-plus-tail incremental refresh
+  depends_on:
+  - read-model-store
+  size: medium
+  description: 'read-model-tail: apply appended events after the merge frontier instead
+    of rebuilding, falling back to a rebuild on any precondition failure, with randomized
+    parity and outcome telemetry.'
+- id: seal-watch
+  title: Sealed-segment triggers and design
+  depends_on:
+  - read-model-tail
+  size: small
+  description: 'seal-watch: report the measurable sealed-archive triggers in bead
+    doctor and document the gated sealed-segment design without building it.'
+- id: projection-off
+  title: issues.jsonl off the per-mutation path
+  depends_on:
+  - fingerprint
+  - read-model-store
+  - one-replay
+  size: medium
+  description: 'projection-off: stop rewriting and committing issues.jsonl on every
+    mutation, untrack it with a mixed-version-safe migration, migrate its content
+    consumers, and add on-demand export.'
+- id: read-model-queries
+  title: Indexed queries over the read model
+  depends_on:
+  - read-model-tail
+  - one-replay
+  size: medium
+  description: 'read-model-queries: serve detail, ready, blocked, list, stats, resolve,
+    search, and multi-get from indexed read-model tables so hot queries touch only
+    active or requested rows.'
+- id: read-model-mutations
+  title: Mutations load and write through the read model
+  depends_on:
+  - read-model-queries
+  - projection-off
+  size: large
+  description: 'read-model-mutations: make MutableStore load only affected rows from
+    the read model and write rows plus frontier through in the same locked critical
+    section.'
+- id: perf-gate
+  title: History-independence acceptance gate
+  depends_on:
+  - read-model-mutations
+  - tui-board
+  - outbox
+  - maintenance
+  - seal-watch
+  size: medium
+  description: 'perf-gate: enforce the A1 history-independence criteria on scaled
+    corpora in CI and locally, and record the final before/after results.'
 proposed_by: bbugyi200.athena.research.3u.linker.w0
 create_time: 2026-10-06 18:59:25
 status: wip
+bead_id: sase-1h8
 ---
 
-- **PROMPT:**
-  [prompts/202610/bead_store_history_independent_performance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/bead_store_history_independent_performance.md)
+- **PROMPT:** [prompts/202610/bead_store_history_independent_performance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/bead_store_history_independent_performance.md)
+- **BEAD:** [sase-1h8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h8/README.md)
 
 # Plan: Make bead-store latency independent of closed history
 
