@@ -1,14 +1,13 @@
 ---
 tier: tale
 title: Mutations load affected bead rows and write through the read model
-goal:
-  Complete sase-1h8.13 by removing full-store replay and hydration from eligible cached
-  mutations while preserving canonical events, mutation behavior, and replay parity.
+goal: Complete sase-1h8.13 by removing full-store replay and hydration from eligible
+  cached mutations while preserving canonical events, mutation behavior, and replay
+  parity.
 size: medium
 proposed_by: bbugyi200.athena.sase-1h8.13
 bead: sase-1h8.13
-create_time: 2026-10-07 18:12:53
-status: wip
+status: done
 ---
 
 - **PARENT:**
