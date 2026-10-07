@@ -1,62 +1,61 @@
 ---
 tier: epic
 title: Commit finalizer repair hardening after the sase-1h7/sase-1h8 failures
-goal: 'Host-owned commit completion survives a conflict in a revision-pinned sibling, a
-  conflict-repair turn that already ran `sase stitch create --resume`, and a paused
+goal: 'Host-owned commit completion survives a conflict in a revision-pinned sibling,
+  a conflict-repair turn that already ran `sase stitch create --resume`, and a paused
   rebase inherited from an earlier run, without stranding or falsely failing work.
-  Finalizer-owned repair turns can no longer hand off and kill their own finalizer, and
-  wait alerts say "can never self-resolve" only when that is true.
+  Finalizer-owned repair turns can no longer hand off and kill their own finalizer,
+  and wait alerts say "can never self-resolve" only when that is true.
 
   '
 phases:
-  - id: pin-after-handoff
-    title: Revision-pin follow after the repair-handoff check
-    depends_on: []
-    size: medium
-    description: 'pin-after-handoff: move the host revision_pin write for a
-      conflict-repaired pinned sibling to after the repair-remaining handoff validates
-      the main repo obligation, so the host''s own pin write no longer trips "repository
-      obligation changed after submit"; add the missing pin-plus-repair regression
-      tests.
+- id: pin-after-handoff
+  title: Revision-pin follow after the repair-handoff check
+  depends_on: []
+  size: medium
+  description: 'pin-after-handoff: move the host revision_pin write for a conflict-repaired
+    pinned sibling to after the repair-remaining handoff validates the main repo obligation,
+    so the host''s own pin write no longer trips "repository obligation changed after
+    submit"; add the missing pin-plus-repair regression tests.
 
-      '
-  - id: repair-resume
-    title: Conflict-repair resume never strands or falsely fails a commit
-    depends_on: []
-    size: medium
-    description: 'repair-resume: make `sase stitch create --resume` publish an unpushed
-      rebased HEAD instead of reporting "nothing to finish", and make the host
-      conflict-repair path verify repository state (including ahead-of-upstream) when
-      the repair turn already consumed the run-owned checkpoint.
+    '
+- id: repair-resume
+  title: Conflict-repair resume never strands or falsely fails a commit
+  depends_on: []
+  size: medium
+  description: 'repair-resume: make `sase stitch create --resume` publish an unpushed
+    rebased HEAD instead of reporting "nothing to finish", and make the host conflict-repair
+    path verify repository state (including ahead-of-upstream) when the repair turn
+    already consumed the run-owned checkpoint.
 
-      '
-  - id: owned-turn-handoffs
-    title: Finalizer-owned turns refuse turn-ending handoffs
-    depends_on: []
-    size: medium
-    description: "owned-turn-handoffs: share the SASE_FINALIZER_OWNED_TURN guard that
-      gate turns already use, refuse `sase monitor start` and the other turn-ending
-      handoffs inside finalizer-owned turns, stop tool-run escalation from advertising a
-      monitor join there, and stop a handoff from masking a failed finalizer as a
-      completed run.
+    '
+- id: owned-turn-handoffs
+  title: Finalizer-owned turns refuse turn-ending handoffs
+  depends_on: []
+  size: medium
+  description: 'owned-turn-handoffs: share the SASE_FINALIZER_OWNED_TURN guard that
+    gate turns already use, refuse `sase monitor start` and the other turn-ending
+    handoffs inside finalizer-owned turns, stop tool-run escalation from advertising
+    a monitor join there, and stop a handoff from masking a failed finalizer as a
+    completed run.
 
-      "
-  - id: wait-terminal-alerts
-    title: No terminal wait alert for superseded session members
-    depends_on: []
-    size: small
-    description:
-      'wait-terminal-alerts: limit wait_checks terminal-blocker detection to members
-      that are really terminal, so a failed monitor whose follow-up turn launched (or
-      any member superseded by a newer one) no longer raises a false "Wait dependency
-      can never self-resolve" notification.'
+    '
+- id: wait-terminal-alerts
+  title: No terminal wait alert for superseded session members
+  depends_on: []
+  size: small
+  description: 'wait-terminal-alerts: limit wait_checks terminal-blocker detection
+    to members that are really terminal, so a failed monitor whose follow-up turn
+    launched (or any member superseded by a newer one) no longer raises a false "Wait
+    dependency can never self-resolve" notification.'
 proposed_by: bbugyi200.athena.0xo
 create_time: 2026-10-07 07:52:28
 status: wip
+bead_id: sase-1h9
 ---
 
-- **PROMPT:**
-  [prompts/202610/finalizer_repair_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finalizer_repair_hardening.md)
+- **PROMPT:** [prompts/202610/finalizer_repair_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finalizer_repair_hardening.md)
+- **BEAD:** [sase-1h9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h9/README.md)
 
 # Plan: Commit finalizer repair hardening
 
