@@ -1,7 +1,7 @@
 ---
 tier: epic
-title: "Plan Decisions: typed reviewer choices answered inside the plan review"
-goal: "A tale or epic can declare up to five typed, defaulted Plan Decisions (toggles,
+title: 'Plan Decisions: typed reviewer choices answered inside the plan review'
+goal: 'A tale or epic can declare up to five typed, defaulted Plan Decisions (toggles,
   2-5-way choices, and memory consents) in a `decisions:` frontmatter map. The reviewer
   answers them in the same plan review on ACE, Telegram, or the CLI, and the primary
   action always approves exactly the values on display. `%auto` takes verified defaults
@@ -9,114 +9,105 @@ goal: "A tale or epic can declare up to five typed, defaulted Plan Decisions (to
   into the archived plan. Every implementer receives them mechanically, and a plan
   authorizes a memory edit only through an accepted memory decision.
 
-  "
+  '
 phases:
-  - id: core
-    title: sase-core decisions grammar, resolver, quote matcher, and Decision Sheet
-    depends_on: []
-    size: large
-    description:
-      "core: in the linked sase-core repo, add the `decisions:` grammar and diagnostics
-      (including the system-written `answer`/`decided_by`/`decided_via` fields, a new
-      Archived validation mode, branch callouts, and the reserved `phases[].when`), the
-      additive validated-plan wire, the frozen payload definition record, the
-      default/clamp resolver, the human-quote matcher, the Decision Sheet with its
-      summary sentence and implementer prompt block, a definitions digest, and pyo3
-      bindings with tests."
-  - id: provenance
-    title: Durable human-authorship provenance for prompts and gate answers
-    depends_on: []
-    size: medium
-    description:
-      "provenance: record `prompt_origin` on every agent launch and `caller` on every
-      gate response, then add one gatherer that returns only human-written text from a
-      planner's chain (typed root prompt, human feedback bullets, human free-text Q&A
-      answers), failing closed everywhere."
-  - id: gate
-    title: Compile, resolve, freeze, and stamp decisions in the plan gate
-    depends_on:
-      - core
-      - provenance
-    size: large
-    description:
-      "gate: move the sase-core pin, adapt the Python wire and Archived mode, scaffold
-      the `plan_decisions` beta flag, resolve memory scope and verify quotes at
-      validate/propose/gate build, compile `decision_<id>` raw schema properties and
-      `payload.decisions`, pin them in kind validation, normalize inputs before the
-      receipt, bind submissions to the displayed review revision, freeze definitions
-      during review, carry provisional values into feedback replans, and stamp immutable
-      answers into the durable plan on every approval route."
-  - id: handoff
-    title: Deliver accepted decisions to coders, phases, notifications, and receipts
-    depends_on:
-      - gate
-    size: medium
-    description:
-      "handoff: append the host-written Reviewer decisions block to tale coder prompts,
-      show DECISIONS in `sase bead read` and the phase/land macros, carry an epic's
-      accepted decisions into phase sub-plans, post the quiet `%auto` receipt
-      notification, and add the shared Rich decision display builders."
-  - id: cli
-    title: Decision-aware sase plan and sase gate commands
-    depends_on:
-      - handoff
-    size: medium
-    description:
-      "cli: add `sase plan approve -D/--decide ID=VALUE` with live completions, the
-      decision card, dry-run, retry and agent-boundary messages, plus decision output
-      for `plan show`, `plan list`, `plan validate`, `plan propose`, and `gate show`."
-  - id: tui
-    title: ACE Decisions section, compact Verdict, and decision-aware inbox
-    depends_on:
-      - handoff
-    size: large
-    description:
-      "tui: build the ACE Decisions accordion above a compact docked Verdict with the
-      outcome sentence, new gate keys, a document pane that folds the frontmatter and
-      lights the chosen branch, draft persistence, revision-bound submits on every path,
-      a settled-elsewhere state, toast/inbox/gate-card/PLAN-lane decision rendering, and
-      new visual goldens."
-  - id: telegram
-    title: Telegram decision sheet, live keyboard, and settle receipt
-    depends_on:
-      - handoff
-    size: large
-    description:
-      "telegram: in the linked sase-telegram repo, render the static question sheet, the
-      live set-value decision keyboard with choice sub-keyboards and the summarizing
-      primary button, revision-bound submits with a stale-card refresh, the one-time
-      settle edit, quiet `%auto` receipts, the feedback reply fix, decision-aware PDFs,
-      and typed-origin agent launches."
-  - id: guard
-    title: Advisory finalizer memory guard
-    depends_on:
-      - handoff
-    size: medium
-    description:
-      "guard: add a host-side, never-blocking finalizer check that warns when an agent
-      launched from an approved plan changes a memory note no accepted memory decision
-      (its own or inherited from its epic) covers."
-  - id: policy
-    title: Planner and memory-skill policy, authoring docs, and flag removal
-    depends_on:
-      - cli
-      - tui
-      - telegram
-      - guard
-    size: medium
-    description:
-      "policy: teach planners when to embed a decision instead of asking now, rewrite
-      the memory-write authorization routes around memory decisions, document the
-      authoring grammar in `--explain` and the SDD docs, delete the beta flag's Off
-      branch, and record the follow-ups, including the dogfooded memory-decision plan
-      for this feature's own memory notes."
+- id: core
+  title: sase-core decisions grammar, resolver, quote matcher, and Decision Sheet
+  depends_on: []
+  size: large
+  description: 'core: in the linked sase-core repo, add the `decisions:` grammar and
+    diagnostics (including the system-written `answer`/`decided_by`/`decided_via`
+    fields, a new Archived validation mode, branch callouts, and the reserved `phases[].when`),
+    the additive validated-plan wire, the frozen payload definition record, the default/clamp
+    resolver, the human-quote matcher, the Decision Sheet with its summary sentence
+    and implementer prompt block, a definitions digest, and pyo3 bindings with tests.'
+- id: provenance
+  title: Durable human-authorship provenance for prompts and gate answers
+  depends_on: []
+  size: medium
+  description: 'provenance: record `prompt_origin` on every agent launch and `caller`
+    on every gate response, then add one gatherer that returns only human-written
+    text from a planner''s chain (typed root prompt, human feedback bullets, human
+    free-text Q&A answers), failing closed everywhere.'
+- id: gate
+  title: Compile, resolve, freeze, and stamp decisions in the plan gate
+  depends_on:
+  - core
+  - provenance
+  size: large
+  description: 'gate: move the sase-core pin, adapt the Python wire and Archived mode,
+    scaffold the `plan_decisions` beta flag, resolve memory scope and verify quotes
+    at validate/propose/gate build, compile `decision_<id>` raw schema properties
+    and `payload.decisions`, pin them in kind validation, normalize inputs before
+    the receipt, bind submissions to the displayed review revision, freeze definitions
+    during review, carry provisional values into feedback replans, and stamp immutable
+    answers into the durable plan on every approval route.'
+- id: handoff
+  title: Deliver accepted decisions to coders, phases, notifications, and receipts
+  depends_on:
+  - gate
+  size: medium
+  description: 'handoff: append the host-written Reviewer decisions block to tale
+    coder prompts, show DECISIONS in `sase bead read` and the phase/land macros, carry
+    an epic''s accepted decisions into phase sub-plans, post the quiet `%auto` receipt
+    notification, and add the shared Rich decision display builders.'
+- id: cli
+  title: Decision-aware sase plan and sase gate commands
+  depends_on:
+  - handoff
+  size: medium
+  description: 'cli: add `sase plan approve -D/--decide ID=VALUE` with live completions,
+    the decision card, dry-run, retry and agent-boundary messages, plus decision output
+    for `plan show`, `plan list`, `plan validate`, `plan propose`, and `gate show`.'
+- id: tui
+  title: ACE Decisions section, compact Verdict, and decision-aware inbox
+  depends_on:
+  - handoff
+  size: large
+  description: 'tui: build the ACE Decisions accordion above a compact docked Verdict
+    with the outcome sentence, new gate keys, a document pane that folds the frontmatter
+    and lights the chosen branch, draft persistence, revision-bound submits on every
+    path, a settled-elsewhere state, toast/inbox/gate-card/PLAN-lane decision rendering,
+    and new visual goldens.'
+- id: telegram
+  title: Telegram decision sheet, live keyboard, and settle receipt
+  depends_on:
+  - handoff
+  size: large
+  description: 'telegram: in the linked sase-telegram repo, render the static question
+    sheet, the live set-value decision keyboard with choice sub-keyboards and the
+    summarizing primary button, revision-bound submits with a stale-card refresh,
+    the one-time settle edit, quiet `%auto` receipts, the feedback reply fix, decision-aware
+    PDFs, and typed-origin agent launches.'
+- id: guard
+  title: Advisory finalizer memory guard
+  depends_on:
+  - handoff
+  size: medium
+  description: 'guard: add a host-side, never-blocking finalizer check that warns
+    when an agent launched from an approved plan changes a memory note no accepted
+    memory decision (its own or inherited from its epic) covers.'
+- id: policy
+  title: Planner and memory-skill policy, authoring docs, and flag removal
+  depends_on:
+  - cli
+  - tui
+  - telegram
+  - guard
+  size: medium
+  description: 'policy: teach planners when to embed a decision instead of asking
+    now, rewrite the memory-write authorization routes around memory decisions, document
+    the authoring grammar in `--explain` and the SDD docs, delete the beta flag''s
+    Off branch, and record the follow-ups, including the dogfooded memory-decision
+    plan for this feature''s own memory notes.'
 proposed_by: bbugyi200.apollo.5n
 create_time: 2026-10-07 18:48:19
 status: wip
+bead_id: sase-1hi
 ---
 
-- **PROMPT:**
-  [prompts/202610/plan_decisions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions.md)
+- **PROMPT:** [prompts/202610/plan_decisions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions.md)
+- **BEAD:** [sase-1hi](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/README.md)
 
 # Plan: Plan Decisions — typed reviewer choices answered inside the plan review
 
