@@ -1,66 +1,61 @@
 ---
 tier: epic
 title: Repair the wait lane so waiting agents wake on completion, not on the fallback
-goal: "Agent dependency waits are released by wait_checks within seconds of the
-  dependency finishing (instead of by the runner's 60 s fallback), ready.json
-  publication is race-free, every release records its source and latency, and
-  wait_checks runs in its own fast lane resolving only live waiters.
+goal: 'Agent dependency waits are released by wait_checks within seconds of the dependency
+  finishing (instead of by the runner''s 60 s fallback), ready.json publication is
+  race-free, every release records its source and latency, and wait_checks runs in
+  its own fast lane resolving only live waiters.
 
-  "
+  '
 phases:
-  - id: atomic-ready
-    title: Race-free ready.json publication and reading
-    depends_on: []
-    size: small
-    description:
-      "atomic-ready: publish ready.json via temp file plus no-clobber link, skip
-      publishing once the waiter is gone, and make the runner treat unreadable or
-      malformed ready.json as not ready."
-  - id: pulse-trigger
-    title: Point wait_checks and bead_claim_checks at the completion pulse
-    depends_on: []
-    size: small
-    description:
-      "pulse-trigger: replace the blind ace-run/* fs glob with the per-project
-      .ace_refresh_pulse, touch the pulse on dependency waiting-marker writes, audit
-      done.json writers, and rewrite the trigger tests on the real YYYYMM/DD/<run>
-      layout."
-  - id: release-telemetry
-    title: Record wait release source and latency (research Phase 0)
-    depends_on:
-      - atomic-ready
-    size: medium
-    description:
-      "release-telemetry: stamp wait_release_source, dependency-satisfied time, release
-      latency, admission latency, and runner-slot wait into agent_meta.json; wait_checks
-      adds released_by and dependencies_satisfied_at to ready.json."
-  - id: live-waiters
-    title: Resolve only live waiters from a filesystem view
-    depends_on:
-      - release-telemetry
-    size: medium
-    description:
-      "live-waiters: shared waiting-marker walk plus tri-state runner liveness, skip
-      dead waiters and the dependency-view build when no live waiter is pending, build
-      the resolving view from filesystem rows instead of the slow index query, add
-      backlog counters, and reuse the walk in sidecar_auto_sync."
-  - id: lane-split
-    title: Give wait_checks and sidecar_auto_sync their own routines
-    depends_on:
-      - pulse-trigger
-      - live-waiters
-    size: small
-    description:
-      "lane-split: new agent_waits (2 s) and sidecar_sync (30 s) routines, post-sync
-      beads pulse, 0.5 s ready.json poll in the runner, test and docs updates, and the
-      consolidated PROPOSED FOLLOW-UP list."
+- id: atomic-ready
+  title: Race-free ready.json publication and reading
+  depends_on: []
+  size: small
+  description: 'atomic-ready: publish ready.json via temp file plus no-clobber link,
+    skip publishing once the waiter is gone, and make the runner treat unreadable
+    or malformed ready.json as not ready.'
+- id: pulse-trigger
+  title: Point wait_checks and bead_claim_checks at the completion pulse
+  depends_on: []
+  size: small
+  description: 'pulse-trigger: replace the blind ace-run/* fs glob with the per-project
+    .ace_refresh_pulse, touch the pulse on dependency waiting-marker writes, audit
+    done.json writers, and rewrite the trigger tests on the real YYYYMM/DD/<run> layout.'
+- id: release-telemetry
+  title: Record wait release source and latency (research Phase 0)
+  depends_on:
+  - atomic-ready
+  size: medium
+  description: 'release-telemetry: stamp wait_release_source, dependency-satisfied
+    time, release latency, admission latency, and runner-slot wait into agent_meta.json;
+    wait_checks adds released_by and dependencies_satisfied_at to ready.json.'
+- id: live-waiters
+  title: Resolve only live waiters from a filesystem view
+  depends_on:
+  - release-telemetry
+  size: medium
+  description: 'live-waiters: shared waiting-marker walk plus tri-state runner liveness,
+    skip dead waiters and the dependency-view build when no live waiter is pending,
+    build the resolving view from filesystem rows instead of the slow index query,
+    add backlog counters, and reuse the walk in sidecar_auto_sync.'
+- id: lane-split
+  title: Give wait_checks and sidecar_auto_sync their own routines
+  depends_on:
+  - pulse-trigger
+  - live-waiters
+  size: small
+  description: 'lane-split: new agent_waits (2 s) and sidecar_sync (30 s) routines,
+    post-sync beads pulse, 0.5 s ready.json poll in the runner, test and docs updates,
+    and the consolidated PROPOSED FOLLOW-UP list.'
 proposed_by: bbugyi200.athena.0y0
 create_time: 2026-10-07 14:45:40
 status: wip
+bead_id: sase-1hf
 ---
 
-- **PROMPT:**
-  [prompts/202610/wait_lane_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_lane_repair.md)
+- **PROMPT:** [prompts/202610/wait_lane_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_lane_repair.md)
+- **BEAD:** [sase-1hf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hf/README.md)
 
 # Plan: Repair the wait lane (research Phases 0 and 1)
 
