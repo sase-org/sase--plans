@@ -1,53 +1,50 @@
 ---
 tier: epic
 title: Rust core contracts for Plan Decisions
-goal:
-  Complete sase-1hi.1 with typed decision validation, frozen definitions, deterministic
+goal: Complete sase-1hi.1 with typed decision validation, frozen definitions, deterministic
   resolution, human-quote matching, and shared reviewer and implementer output exposed
   through tested Python bindings.
 phases:
-  - id: grammar
-    title: Validate decisions and preserve additive plan wire compatibility
-    depends_on: []
-    size: medium
-    description:
-      "grammar: implement all decisions diagnostics, source lines, Archived mode, branch
-      callouts, the additive validated wire, and schema and binding parity tests."
-  - id: resolve
-    title: Freeze definitions and resolve one accepted answer vector
-    depends_on:
-      - grammar
-    size: medium
-    description:
-      "resolve: define host facts, effective defaults, the definitions digest, strict
-      value resolution and the agent memory boundary, with bindings and tests."
-  - id: quotes
-    title: Match human quotes with Unicode normalization and useful suggestions
-    depends_on:
-      - resolve
-    size: small
-    description:
-      "quotes: implement the normalized three-word contiguous matcher, deterministic
-      closest-sentence suggestions, dependency integration, and the Python binding and
-      tests."
-  - id: sheet
-    title: Build the Decision Sheet, summaries, and implementer instructions
-    depends_on:
-      - quotes
-    size: medium
-    description:
-      "sheet: build the shared sheet, both summary forms, all implementer audiences and
-      inherited instructions, and complete the seven-binding integration coverage."
+- id: grammar
+  title: Validate decisions and preserve additive plan wire compatibility
+  depends_on: []
+  size: medium
+  description: 'grammar: implement all decisions diagnostics, source lines, Archived
+    mode, branch callouts, the additive validated wire, and schema and binding parity
+    tests.'
+- id: resolve
+  title: Freeze definitions and resolve one accepted answer vector
+  depends_on:
+  - grammar
+  size: medium
+  description: 'resolve: define host facts, effective defaults, the definitions digest,
+    strict value resolution and the agent memory boundary, with bindings and tests.'
+- id: quotes
+  title: Match human quotes with Unicode normalization and useful suggestions
+  depends_on:
+  - resolve
+  size: small
+  description: 'quotes: implement the normalized three-word contiguous matcher, deterministic
+    closest-sentence suggestions, dependency integration, and the Python binding and
+    tests.'
+- id: sheet
+  title: Build the Decision Sheet, summaries, and implementer instructions
+  depends_on:
+  - quotes
+  size: medium
+  description: 'sheet: build the shared sheet, both summary forms, all implementer
+    audiences and inherited instructions, and complete the seven-binding integration
+    coverage.'
 proposed_by: bbugyi200.apollo.sase-1hi.1
 parent_bead: sase-1hi.1
 create_time: 2026-10-07 19:00:02
 status: wip
+bead_id: sase-1hi.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/core_plan_decisions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/core_plan_decisions.md)
-- **PARENT:**
-  [202610/plan_decisions.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions.md)
+- **PROMPT:** [prompts/202610/core_plan_decisions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/core_plan_decisions.md)
+- **PARENT:** [202610/plan_decisions.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions.md)
+- **BEAD:** [sase-1hi.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/sase-1hi.1.1.md)
 
 # Rust core contracts for Plan Decisions
 
