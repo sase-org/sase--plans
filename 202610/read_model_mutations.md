@@ -1,9 +1,9 @@
 ---
 tier: tale
 title: Mutations load affected bead rows and write through the read model
-goal: Complete sase-1h8.13 by removing full-store replay and hydration from eligible
-  cached mutations while preserving canonical events, mutation behavior, and replay
-  parity.
+goal:
+  Complete sase-1h8.13 by removing full-store replay and hydration from eligible cached
+  mutations while preserving canonical events, mutation behavior, and replay parity.
 size: medium
 proposed_by: bbugyi200.athena.sase-1h8.13
 bead: sase-1h8.13
@@ -14,6 +14,11 @@ status: done
   [202610/bead_store_history_independent_performance.md](https://github.com/sase-org/sase--plans/blob/main/202610/bead_store_history_independent_performance.md)
 - **BEAD:**
   [sase-1h8.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h8/sase-1h8.13.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1h8.13](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1h8.13.md)
+- **COMMITS:**
+  - [4d5cf65](https://github.com/sase-org/sase-core/commit/4d5cf6502324a5928a285861b099be393b26de91)
+    — feat(bead): read-model mutation groundwork for sase-1h8.13
 
 # Scope and ownership
 
