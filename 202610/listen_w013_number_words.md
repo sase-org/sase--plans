@@ -1,14 +1,21 @@
 ---
 tier: tale
 title: Fix sase-listen W013 false positives on spelled-out source numbers
-goal: sase-listen render of the-dot-and-the-swarm (and any article that spells multi-digit
-  numbers in words) no longer fails the writer's W013 number-fidelity lint; already-saved
-  scripts that now lint clean are reused, and a writer failure no longer marks the
-  fetch stage failed.
+goal:
+  sase-listen render of the-dot-and-the-swarm (and any article that spells multi-digit
+  numbers in words) no longer fails the writer's W013 number-fidelity lint;
+  already-saved scripts that now lint clean are reused, and a writer failure no longer
+  marks the fetch stage failed.
 size: medium
 proposed_by: bbugyi200.athena.0xn
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0xn](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0xn.md)
+- **COMMITS:**
+  - [f64bc6c](https://github.com/sase-org/sase-listen/commit/f64bc6c5c74f6267d371e5ab3cb3fb55000ca68d)
+    — fix(lint): match spelled-out source numbers in W013 number fidelity
 
 # Plan: Fix sase-listen W013 false positives on spelled-out source numbers
 
