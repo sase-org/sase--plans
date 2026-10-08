@@ -2,8 +2,9 @@
 tier: tale
 size: medium
 title: Repair remaining Plan Decisions contracts and finish the core epic landing
-goal: Preserve all valid decisions, reject incomplete or malformed review state, and
-  close sase-1hi.1.1 and its parent phase after verification.
+goal:
+  Preserve all valid decisions, reject incomplete or malformed review state, and close
+  sase-1hi.1.1 and its parent phase after verification.
 proposed_by: bbugyi200.apollo.sase-1hi.1.1.land
 bead: sase-1hi.1.1
 status: done
@@ -13,6 +14,11 @@ status: done
   [202610/core_plan_decisions.md](https://github.com/sase-org/sase--plans/blob/main/202610/core_plan_decisions.md)
 - **BEAD:**
   [sase-1hi.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/sase-1hi.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-1hi.1.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1hi.1.1.land.md)
+- **COMMITS:**
+  - [def5ad5](https://github.com/sase-org/sase-core/commit/def5ad5b50f2a28ad4f9ed52fd4e6cd272a716f5)
+    — feat(plan): repair decision warning, archive, unicode, fence, and sheet contracts
 
 # Remaining work and ownership
 
