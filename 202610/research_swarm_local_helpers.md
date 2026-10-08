@@ -1,13 +1,21 @@
 ---
 tier: tale
 title: De-duplicate
-goal: The research_swarm macro is about 30% shorter, authors its queue directive,
+goal:
+  The research_swarm macro is about 30% shorter, authors its queue directive,
   research-report loop, and researcher segment once each, and renders byte-identical
   prompts except a fixed solo-lead layout.
 size: medium
 proposed_by: bbugyi200.athena.0yh
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0yh](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0yh.md)
+- **COMMITS:**
+  - [94938a9](https://github.com/sase-org/sase-research-artifacts/commit/94938a91df0f4673540744d718cb3bda5b76830f)
+    — refactor(research-swarm): de-duplicate swarm with local helpers and a researcher
+    loop
 
 # De-duplicate `#research_swarm` with local helpers and a researcher loop
 
