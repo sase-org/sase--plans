@@ -50,7 +50,7 @@ phases:
     and the consolidated PROPOSED FOLLOW-UP list.'
 proposed_by: bbugyi200.athena.0y0
 create_time: 2026-10-07 14:45:40
-status: wip
+status: done
 bead_id: sase-1hf
 ---
 
