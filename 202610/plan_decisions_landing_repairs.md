@@ -1,97 +1,84 @@
 ---
 tier: epic
-title: "Plan Decisions landing repairs: make every surface honor the accepted vector"
-goal:
-  "Finish epic sase-1hi so Plan Decisions match plan:202610/plan_decisions.md
-  everywhere. Stamps keep author order and the true surface. Revisions are checked on
-  every submit route. Accepted decisions read the same in any environment. bead read and
-  epic inheritance resolve plan: refs. The CLI card and validate JSON are correct. ACE
-  has the compact docked Verdict, branch tinting, the edit freeze, and stale handling,
-  plus its goldens. Telegram submits, refreshes, and settles correctly for every option.
-  The epic-owned Symvision and test regressions are cleared."
+title: 'Plan Decisions landing repairs: make every surface honor the accepted vector'
+goal: 'Finish epic sase-1hi so Plan Decisions match plan:202610/plan_decisions.md
+  everywhere. Stamps keep author order and the true surface. Revisions are checked
+  on every submit route. Accepted decisions read the same in any environment. bead
+  read and epic inheritance resolve plan: refs. The CLI card and validate JSON are
+  correct. ACE has the compact docked Verdict, branch tinting, the edit freeze, and
+  stale handling, plus its goldens. Telegram submits, refreshes, and settles correctly
+  for every option. The epic-owned Symvision and test regressions are cleared.'
 phases:
-  - id: gate
-    title:
-      Stamp order and surface, revision binding on every route, kind validation, and
-      new-note grants
-    depends_on: []
-    size: large
-    description:
-      "gate: keep author order and the true decided_via in stamps, re-stamp from
-      response.json on retry, carry review_revision through detached gate answers, make
-      kind validation real, fail closed on callers and host checks, let memory grants
-      name notes that do not exist yet, and add the missing stamping, stale_review, and
-      agent-refusal tests."
-  - id: handoff
-    title:
-      Environment-independent accepted sheets, bead read DECISIONS, epic inheritance,
-      guard coverage, and provenance repairs
-    depends_on:
-      - gate
-    size: large
-    description:
-      "handoff: render accepted decisions from frozen definitions instead of the
-      reader's environment, resolve plan: refs for bead read and epic inheritance, make
-      guard coverage cwd-independent without false generated-file matches, reach every
-      question round in plan_human_text, re-export the helpers Telegram needs, and clear
-      the provenance test and Symvision regressions."
-  - id: cli
-    title:
-      Decision card labels, pure validate JSON, scoped completions, CLI tests, and beta
-      doc leftovers
-    depends_on:
-      - handoff
-    size: medium
-    description:
-      "cli: fix the card's clamped-as--D label, duplicate memory chips, and missing
-      default stars, keep sase plan validate --json one JSON document, scope -D
-      completions to the selected proposal, add the missing plan show/help/handler
-      tests, and remove stale beta wording from the docs and README."
-  - id: tui
-    title:
-      ACE compact docked Verdict, branch tinting, edit freeze, carries line, settled and
-      stale states
-    depends_on:
-      - handoff
-    size: large
-    description:
-      "tui: build the compact three-line docked Verdict, tint the chosen branch with a
-      fixed classify_callout, show the real Draft not accepted banner, render the
-      Carries line, handle settled-elsewhere on refresh and stale_review with a reload,
-      fix row text bugs and render-path perf, and clear the four epic-owned Symvision
-      symbols."
-  - id: goldens
-    title: Plan Decisions visual goldens and the compact-Verdict update group
-    depends_on:
-      - tui
-    size: medium
-    description:
-      "goldens: add the nine Plan Decisions PNG goldens with real gate data and refresh
-      the existing plan_gate_* goldens once for the compact Verdict through just
-      fix-tui-screenshots under /sase_monitor, inspecting every image."
-  - id: telegram
-    title:
-      Telegram submits every option, refreshes stale cards, and settles with true
-      receipts
-    depends_on:
-      - handoff
-    size: large
-    description:
-      "telegram: send inputs only for selected options, fix the refresh loop and
-      stale-after-submit, make settle receipts name the true verdict, decider, surface,
-      and defaults, honor the sheet budget, route PDF and receipts through
-      sase.sdd.plan_decisions, and repair the nine failing tests plus the missing
-      coverage."
+- id: gate
+  title: Stamp order and surface, revision binding on every route, kind validation,
+    and new-note grants
+  depends_on: []
+  size: large
+  description: 'gate: keep author order and the true decided_via in stamps, re-stamp
+    from response.json on retry, carry review_revision through detached gate answers,
+    make kind validation real, fail closed on callers and host checks, let memory
+    grants name notes that do not exist yet, and add the missing stamping, stale_review,
+    and agent-refusal tests.'
+- id: handoff
+  title: Environment-independent accepted sheets, bead read DECISIONS, epic inheritance,
+    guard coverage, and provenance repairs
+  depends_on:
+  - gate
+  size: large
+  description: 'handoff: render accepted decisions from frozen definitions instead
+    of the reader''s environment, resolve plan: refs for bead read and epic inheritance,
+    make guard coverage cwd-independent without false generated-file matches, reach
+    every question round in plan_human_text, re-export the helpers Telegram needs,
+    and clear the provenance test and Symvision regressions.'
+- id: cli
+  title: Decision card labels, pure validate JSON, scoped completions, CLI tests,
+    and beta doc leftovers
+  depends_on:
+  - handoff
+  size: medium
+  description: 'cli: fix the card''s clamped-as--D label, duplicate memory chips,
+    and missing default stars, keep sase plan validate --json one JSON document, scope
+    -D completions to the selected proposal, add the missing plan show/help/handler
+    tests, and remove stale beta wording from the docs and README.'
+- id: tui
+  title: ACE compact docked Verdict, branch tinting, edit freeze, carries line, settled
+    and stale states
+  depends_on:
+  - handoff
+  size: large
+  description: 'tui: build the compact three-line docked Verdict, tint the chosen
+    branch with a fixed classify_callout, show the real Draft not accepted banner,
+    render the Carries line, handle settled-elsewhere on refresh and stale_review
+    with a reload, fix row text bugs and render-path perf, and clear the four epic-owned
+    Symvision symbols.'
+- id: goldens
+  title: Plan Decisions visual goldens and the compact-Verdict update group
+  depends_on:
+  - tui
+  size: medium
+  description: 'goldens: add the nine Plan Decisions PNG goldens with real gate data
+    and refresh the existing plan_gate_* goldens once for the compact Verdict through
+    just fix-tui-screenshots under /sase_monitor, inspecting every image.'
+- id: telegram
+  title: Telegram submits every option, refreshes stale cards, and settles with true
+    receipts
+  depends_on:
+  - handoff
+  size: large
+  description: 'telegram: send inputs only for selected options, fix the refresh loop
+    and stale-after-submit, make settle receipts name the true verdict, decider, surface,
+    and defaults, honor the sheet budget, route PDF and receipts through sase.sdd.plan_decisions,
+    and repair the nine failing tests plus the missing coverage.'
 proposed_by: bbugyi200.apollo.sase-1hi.land
 parent_bead: sase-1hi
 create_time: 2026-10-08 05:26:38
 status: wip
+bead_id: sase-1hi.10
 ---
 
-- **PROMPT:**
-  [prompts/202610/plan_decisions_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_landing_repairs.md)
-- **PARENT:**
-  [202610/plan_decisions.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions.md)
+- **PROMPT:** [prompts/202610/plan_decisions_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_landing_repairs.md)
+- **PARENT:** [202610/plan_decisions.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions.md)
+- **BEAD:** [sase-1hi.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/sase-1hi.10.md)
 
 # Plan Decisions landing repairs
 
