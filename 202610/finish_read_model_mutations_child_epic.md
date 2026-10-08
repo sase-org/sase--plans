@@ -1,111 +1,104 @@
 ---
 tier: epic
 title: Finish read-model mutations so sase-1h8.13 can close
-goal: "Every ordinary bead mutation runs one shared algorithm on an indexed mutation
+goal: 'Every ordinary bead mutation runs one shared algorithm on an indexed mutation
   view. On a warm cache it loads only the rows and streams it affects. It writes its
-  delta through to the read model inside the same beads.db critical section, with no
-  second sweep and no full-snapshot load. Randomized parity shows cache equals full
-  replay after every operation. Matched 1x/8x note/update evidence is recorded.
+  delta through to the read model inside the same beads.db critical section, with
+  no second sweep and no full-snapshot load. Randomized parity shows cache equals
+  full replay after every operation. Matched 1x/8x note/update evidence is recorded.
   sase-1h8.13 then closes and the waiting acceptance gate sase-1h8.14 can start. Phase
-  planners also stop re-planning a phase that was left unfinished as another
-  single-agent tale.
+  planners also stop re-planning a phase that was left unfinished as another single-agent
+  tale.
 
-  "
+  '
 parent_bead: sase-1h8.13
 phases:
-  - id: publish-direct
-    title: Direct write-through publication without a second sweep or full snapshot
-    depends_on: []
-    size: medium
-    description:
-      "publish-direct: capture the epic-start note/update baseline; fix the stale
-      bead_read_parity expectation so check reaches every crate; add a snapshot-free
-      read-model publication API with writer-captured signatures and a
-      content-generation CAS against the admission witness; route create/note/update
-      publication through it; fix the forced-freshness token shortcut; prove one sweep,
-      zero snapshot loads and token-only next reads."
-  - id: dual-mode-tests
-    title: Run every mutation suite in cached and replay modes
-    depends_on:
-      - publish-direct
-    size: medium
-    description:
-      "dual-mode-tests: add fixture support so the existing mutation suites run against
-      a git-backed cached store and a plain replay store without macro_rules, check
-      cache-equals-replay after cached-mode tests, split over-cap test files, and fix
-      any parity defects the cached runs expose in the already-cached create/note/update
-      paths."
-  - id: view-core
-    title: One mutation view with shared algorithms, and the full notes family on it
-    depends_on:
-      - dual-mode-tests
-    size: medium
-    description:
-      "view-core: fold indexed.rs into MutationView with cached and replay backings,
-      staged events and a single commit; share event minting, lazy stream loading and
-      manifest totals; rewrite create and the whole notes family (update batches with
-      external-ref changes, reopen, append/edit/retract notes, attachments) as single
-      algorithms; fix allocation range queries and oracle parity; close the io-stats
-      counting gaps."
-  - id: port-lifecycle
-    title: Port open, close and remove onto the mutation view
-    depends_on:
-      - view-core
-    size: medium
-    description:
-      "port-lifecycle: move close_remove.rs (open, close, close with note, descendant
-      guards, delegated-parent completion, ancestor reopening, removal cascades and
-      survivor dependency cleanup) onto the view with affected-row-only work, dual-mode
-      tests and cached-path counters."
-  - id: port-claims-deps
-    title: Port claims, ready marking and dependencies onto the mutation view
-    depends_on:
-      - view-core
-    size: medium
-    description:
-      "port-claims-deps: move claims.rs (wait and launch claims, release, all-or-nothing
-      epic preclaim), ready marking in store.rs, and dependencies.rs (dependency and
-      reference add/remove, blocker status) onto the view with affected-row-only work,
-      dual-mode tests and cached-path counters."
-  - id: port-links-evidence
-    title: Port links, +1 and snooze onto the mutation view
-    depends_on:
-      - view-core
-    size: medium
-    description:
-      "port-links-evidence: move links.rs (canonical targets, undirected holders,
-      projections, receipts, provenance) and plus_one_snooze.rs (+1 evidence,
-      promotions, snooze, cancel) onto the view with affected-row-only work, dual-mode
-      tests and cached-path counters."
-  - id: proof
-    title: Parity, affected-row and failure-recovery proof plus matched 1x/8x evidence
-    depends_on:
-      - port-lifecycle
-      - port-claims-deps
-      - port-links-evidence
-    size: medium
-    description:
-      "proof: clean up after the parallel ports, prove no ordinary mutation still
-      replays, extend the randomized production-mutation parity harness to every family,
-      cover the remaining failure and edge cases, assert bounded work on a
-      history-shaped fixture, run sampled corpus parity, rerun the matched 1x/8x
-      benchmark, and record phase-acceptance evidence for sase-1h8.13."
-  - id: planner-guard
-    title: Steer re-planned unfinished phases toward a child epic
-    depends_on: []
-    size: small
-    description:
-      "planner-guard: extend the built-in work_phase_bead prompt so a planner whose
-      phase already holds an earlier agent's unfinished increment authors a child epic
-      instead of another single-agent tale; pin the prose with a test and update the
-      bead-work docs."
+- id: publish-direct
+  title: Direct write-through publication without a second sweep or full snapshot
+  depends_on: []
+  size: medium
+  description: 'publish-direct: capture the epic-start note/update baseline; fix the
+    stale bead_read_parity expectation so check reaches every crate; add a snapshot-free
+    read-model publication API with writer-captured signatures and a content-generation
+    CAS against the admission witness; route create/note/update publication through
+    it; fix the forced-freshness token shortcut; prove one sweep, zero snapshot loads
+    and token-only next reads.'
+- id: dual-mode-tests
+  title: Run every mutation suite in cached and replay modes
+  depends_on:
+  - publish-direct
+  size: medium
+  description: 'dual-mode-tests: add fixture support so the existing mutation suites
+    run against a git-backed cached store and a plain replay store without macro_rules,
+    check cache-equals-replay after cached-mode tests, split over-cap test files,
+    and fix any parity defects the cached runs expose in the already-cached create/note/update
+    paths.'
+- id: view-core
+  title: One mutation view with shared algorithms, and the full notes family on it
+  depends_on:
+  - dual-mode-tests
+  size: medium
+  description: 'view-core: fold indexed.rs into MutationView with cached and replay
+    backings, staged events and a single commit; share event minting, lazy stream
+    loading and manifest totals; rewrite create and the whole notes family (update
+    batches with external-ref changes, reopen, append/edit/retract notes, attachments)
+    as single algorithms; fix allocation range queries and oracle parity; close the
+    io-stats counting gaps.'
+- id: port-lifecycle
+  title: Port open, close and remove onto the mutation view
+  depends_on:
+  - view-core
+  size: medium
+  description: 'port-lifecycle: move close_remove.rs (open, close, close with note,
+    descendant guards, delegated-parent completion, ancestor reopening, removal cascades
+    and survivor dependency cleanup) onto the view with affected-row-only work, dual-mode
+    tests and cached-path counters.'
+- id: port-claims-deps
+  title: Port claims, ready marking and dependencies onto the mutation view
+  depends_on:
+  - view-core
+  size: medium
+  description: 'port-claims-deps: move claims.rs (wait and launch claims, release,
+    all-or-nothing epic preclaim), ready marking in store.rs, and dependencies.rs
+    (dependency and reference add/remove, blocker status) onto the view with affected-row-only
+    work, dual-mode tests and cached-path counters.'
+- id: port-links-evidence
+  title: Port links, +1 and snooze onto the mutation view
+  depends_on:
+  - view-core
+  size: medium
+  description: 'port-links-evidence: move links.rs (canonical targets, undirected
+    holders, projections, receipts, provenance) and plus_one_snooze.rs (+1 evidence,
+    promotions, snooze, cancel) onto the view with affected-row-only work, dual-mode
+    tests and cached-path counters.'
+- id: proof
+  title: Parity, affected-row and failure-recovery proof plus matched 1x/8x evidence
+  depends_on:
+  - port-lifecycle
+  - port-claims-deps
+  - port-links-evidence
+  size: medium
+  description: 'proof: clean up after the parallel ports, prove no ordinary mutation
+    still replays, extend the randomized production-mutation parity harness to every
+    family, cover the remaining failure and edge cases, assert bounded work on a history-shaped
+    fixture, run sampled corpus parity, rerun the matched 1x/8x benchmark, and record
+    phase-acceptance evidence for sase-1h8.13.'
+- id: planner-guard
+  title: Steer re-planned unfinished phases toward a child epic
+  depends_on: []
+  size: small
+  description: 'planner-guard: extend the built-in work_phase_bead prompt so a planner
+    whose phase already holds an earlier agent''s unfinished increment authors a child
+    epic instead of another single-agent tale; pin the prose with a test and update
+    the bead-work docs.'
 proposed_by: bbugyi200.athena.0yi
 create_time: 2026-10-08 14:46:00
 status: wip
+bead_id: sase-1h8.13.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_read_model_mutations_child_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_read_model_mutations_child_epic.md)
+- **PROMPT:** [prompts/202610/finish_read_model_mutations_child_epic.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_read_model_mutations_child_epic.md)
+- **BEAD:** [sase-1h8.13.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h8/sase-1h8.13.1.md)
 
 # Plan: Finish the read-model-mutations phase (sase-1h8.13) as a child epic
 
