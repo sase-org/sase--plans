@@ -1,89 +1,80 @@
 ---
 tier: epic
 title: Repair sase release gates and prove a fresh green tip
-goal:
-  Master Gate is green on the release tip and Full CI is green on the same SHA within
-  six hours.
+goal: Master Gate is green on the release tip and Full CI is green on the same SHA
+  within six hours.
 parent_bead: sase-1i5.9.1.2
 phases:
-  - id: cli-beads
-    title: Repair CLI contracts, completion drift, terminology, and bead test doubles
-    size: medium
-    depends_on: []
-    description:
-      "cli-beads: repair live CLI and bead failures against landed contracts, preserve
-      write guards and read-only resolution, and regenerate the completion snapshot
-      after checking the active owner."
-  - id: host-contracts
-    title:
-      Repair host provenance fixtures, foreign-commit recovery, and detached-run
-      isolation
-    size: medium
-    depends_on: []
-    description:
-      "host-contracts: make gate and launch provenance assertions exact, resolve
-      foreign-commit recovery without relaxing publication guards, and investigate the
-      detached-run database lock with isolated evidence."
-  - id: plan-tui
-    title: Restore associated-plan cache guarantees and current Verdict copy
-    size: small
-    depends_on: []
-    description:
-      "plan-tui: apply the active Plan Decisions epic's recorded signature-cache and
-      short-label fixes where still missing, preserve tooltip and invalidation coverage,
-      and note the owner."
-  - id: tui-functional
-    title: Repair timezone-dependent and asynchronous TUI failures
-    size: medium
-    depends_on: []
-    description:
-      "tui-functional: make wait-lane clocks timezone-stable and fix reproducible
-      prompt, context-bar, archived-plan, and deck readiness failures from Full CI
-      without longer waits or weaker assertions."
-  - id: symvision
-    title: Resolve the live unused-public backlog and any newly exposed lint failures
-    size: medium
-    depends_on:
-      - cli-beads
-      - host-contracts
-      - plan-tui
-      - tui-functional
-    description:
-      "symvision: re-inventory lint after functional repairs, privatize in-file-only
-      definitions, remove dead definitions, preserve real external consumers, and
-      resolve every release-blocking lint error without new pragmas or suppressions."
-  - id: visual
-    title: Repair visual state failures and inspect complete screenshot verification
-    size: medium
-    depends_on:
-      - symvision
-    description:
-      "visual: fix the four Reply-card navigation failures and snippet finder failure,
-      reconcile active Plan Decisions golden work, and verify the full visual lane with
-      every changed image inspected."
-  - id: ci-proof
-    title: Prove Master Gate and a fresh Full CI on the release tip
-    size: medium
-    depends_on:
-      - cli-beads
-      - host-contracts
-      - plan-tui
-      - tui-functional
-      - symvision
-      - visual
-    description:
-      "ci-proof: observe the integrated master SHA, repair remaining deterministic CI
-      failures, dispatch and monitor Full CI, and record successful same-SHA run URLs
-      and freshness for the assigned phase's resumed owner."
+- id: cli-beads
+  title: Repair CLI contracts, completion drift, terminology, and bead test doubles
+  size: medium
+  depends_on: []
+  description: 'cli-beads: repair live CLI and bead failures against landed contracts,
+    preserve write guards and read-only resolution, and regenerate the completion
+    snapshot after checking the active owner.'
+- id: host-contracts
+  title: Repair host provenance fixtures, foreign-commit recovery, and detached-run
+    isolation
+  size: medium
+  depends_on: []
+  description: 'host-contracts: make gate and launch provenance assertions exact,
+    resolve foreign-commit recovery without relaxing publication guards, and investigate
+    the detached-run database lock with isolated evidence.'
+- id: plan-tui
+  title: Restore associated-plan cache guarantees and current Verdict copy
+  size: small
+  depends_on: []
+  description: 'plan-tui: apply the active Plan Decisions epic''s recorded signature-cache
+    and short-label fixes where still missing, preserve tooltip and invalidation coverage,
+    and note the owner.'
+- id: tui-functional
+  title: Repair timezone-dependent and asynchronous TUI failures
+  size: medium
+  depends_on: []
+  description: 'tui-functional: make wait-lane clocks timezone-stable and fix reproducible
+    prompt, context-bar, archived-plan, and deck readiness failures from Full CI without
+    longer waits or weaker assertions.'
+- id: symvision
+  title: Resolve the live unused-public backlog and any newly exposed lint failures
+  size: medium
+  depends_on:
+  - cli-beads
+  - host-contracts
+  - plan-tui
+  - tui-functional
+  description: 'symvision: re-inventory lint after functional repairs, privatize in-file-only
+    definitions, remove dead definitions, preserve real external consumers, and resolve
+    every release-blocking lint error without new pragmas or suppressions.'
+- id: visual
+  title: Repair visual state failures and inspect complete screenshot verification
+  size: medium
+  depends_on:
+  - symvision
+  description: 'visual: fix the four Reply-card navigation failures and snippet finder
+    failure, reconcile active Plan Decisions golden work, and verify the full visual
+    lane with every changed image inspected.'
+- id: ci-proof
+  title: Prove Master Gate and a fresh Full CI on the release tip
+  size: medium
+  depends_on:
+  - cli-beads
+  - host-contracts
+  - plan-tui
+  - tui-functional
+  - symvision
+  - visual
+  description: 'ci-proof: observe the integrated master SHA, repair remaining deterministic
+    CI failures, dispatch and monitor Full CI, and record successful same-SHA run
+    URLs and freshness for the assigned phase''s resumed owner.'
 proposed_by: bbugyi200.athena.sase-1i5.9.1.2
 create_time: 2026-10-08 14:54:10
 status: wip
+bead_id: sase-1i5.9.1.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/release_master_and_full_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_master_and_full_ci.md)
-- **PARENT:**
-  [202610/release_sase_core_and_plugin_floors.md](https://github.com/sase-org/sase--plans/blob/main/202610/release_sase_core_and_plugin_floors.md)
+- **PROMPT:** [prompts/202610/release_master_and_full_ci.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_master_and_full_ci.md)
+- **PARENT:** [202610/release_sase_core_and_plugin_floors.md](https://github.com/sase-org/sase--plans/blob/main/202610/release_sase_core_and_plugin_floors.md)
+- **BEAD:** [sase-1i5.9.1.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1i5/sase-1i5.9.1.2.1.md)
 
 # Repair the release gates for sase-1i5.9.1.2
 
