@@ -1,110 +1,102 @@
 ---
 tier: epic
-title: "Truthful %auto: P0 autonomy safety tales"
-goal: "No %auto spelling silently grants more than it says, pressing A to turn auto off
-  really turns it off, epic phase and land workers park nested epic plans for a human
-  instead of launching them, and the docs, the macros.md memory row, and /sase_questions
-  describe the behavior that actually ships. The three P0 task beads (sase-1hg,
-  sase-15s, sase-1hh) are closed when the epic lands.
+title: 'Truthful %auto: P0 autonomy safety tales'
+goal: 'No %auto spelling silently grants more than it says, pressing A to turn auto
+  off really turns it off, epic phase and land workers park nested epic plans for
+  a human instead of launching them, and the docs, the macros.md memory row, and /sase_questions
+  describe the behavior that actually ships. The three P0 task beads (sase-1hg, sase-15s,
+  sase-1hh) are closed when the epic lands.
 
-  "
+  '
 decisions:
   inherit_mode:
-    ask:
-      Should in-process coder and replan successors keep the planner's %auto:tale or
-      %auto:epic mode?
+    ask: Should in-process coder and replan successors keep the planner's %auto:tale
+      or %auto:epic mode?
     default: true
-    why:
-      Otherwise epic workers' coders lose question auto-answers once workers emit
+    why: Otherwise epic workers' coders lose question auto-answers once workers emit
       %auto:tale
     answer: true
   deploy_skill:
-    ask:
-      Should the land agent deploy the updated /sase_questions skill with sase skill
-      init?
+    ask: Should the land agent deploy the updated /sase_questions skill with sase
+      skill init?
     default: true
     answer: true
   macros_row:
-    ask:
-      Rewrite the %auto directive row in the macros.md memory note to describe the
-      shipped behavior?
+    ask: Rewrite the %auto directive row in the macros.md memory note to describe
+      the shipped behavior?
     memory:
-      - macros.md
+    - macros.md
     default: true
-    requested:
-      Can you help me implement all of "safety tales" (i.e. P0) recommended by the
+    requested: Can you help me implement all of "safety tales" (i.e. P0) recommended
+      by the
     answer: true
 phases:
-  - id: grammar
-    title: Fail-closed %auto grammar in sase-core and Python
-    depends_on: []
-    size: medium
-    description:
-      "grammar: add one sase-core classifier for %auto spellings and use it in the Rust
-      typed launch extractor, editor metadata, editor/LSP diagnostics, and the Python
-      extractor, so named arguments, parenthesized forms, extra positionals, and unknown
-      colon values fail at launch, and :manual/:off mean Manual. Commit sase-core and
-      sase in the same turn so the host moves the core pin. Close task bead sase-1hg
-      when done."
-  - id: live_meta
-    title: Live agent meta is the only %auto source
-    depends_on: []
-    size: medium
-    description:
-      "live_meta: make the plan and question auto readers consult only the live
-      agent_meta.json, never the SASE_AGENT_AUTO_* env snapshot, and stop runner
-      write-backs of stale in-memory meta from undoing an A toggle. Update the env rows
-      in docs/configuration.md. Close task bead sase-15s when done."
-  - id: tier_mismatch
-    title: A plan-tier mismatch asks instead of erroring
-    depends_on:
-      - live_meta
-    size: medium
-    description:
-      'tier_mismatch: treat :tale/:plan on an epic plan and :epic on a tale plan as "not
-      covered", so the plan parks for a human. Apply this at propose, gate-spec build,
-      and gate creation. Fix the auto-handled dismissal and the "auto-approved" notes so
-      a parked gate stays visible.'
-  - id: epic_workers
-    title: Epic phase and land workers run under %auto:tale
-    depends_on:
-      - tier_mismatch
-    size: medium
-    description:
-      "epic_workers: emit %auto:tale instead of bare %auto for every phase and land
-      segment. Seed in-process coder and replan successors from the planner's live auto
-      state (per inherit_mode). Flip the bead-work rendering tests and update
-      docs/beads.md."
-  - id: prompt_bar
-    title: Prompt bar shows %auto grammar errors
-    depends_on:
-      - grammar
-    size: small
-    description:
-      "prompt_bar: show an invalid %auto spelling inline in the ACE prompt input bar's
-      context line, and block submit with the same message the launch path raises."
-  - id: docs_truth
-    title: Docs, memory, and /sase_questions describe shipped behavior
-    depends_on:
-      - grammar
-      - live_meta
-      - tier_mismatch
-      - epic_workers
-      - prompt_bar
-    size: medium
-    description:
-      "docs_truth: rewrite the %auto passages in docs/macros.md and docs/ace.md to match
-      the landed behavior. Rewrite the macros.md memory %auto row (macros_row). Add the
-      recommended-option-first guidance to the /sase_questions skill source with a test.
-      Close task bead sase-1hh when done."
+- id: grammar
+  title: Fail-closed %auto grammar in sase-core and Python
+  depends_on: []
+  size: medium
+  description: 'grammar: add one sase-core classifier for %auto spellings and use
+    it in the Rust typed launch extractor, editor metadata, editor/LSP diagnostics,
+    and the Python extractor, so named arguments, parenthesized forms, extra positionals,
+    and unknown colon values fail at launch, and :manual/:off mean Manual. Commit
+    sase-core and sase in the same turn so the host moves the core pin. Close task
+    bead sase-1hg when done.'
+- id: live_meta
+  title: Live agent meta is the only %auto source
+  depends_on: []
+  size: medium
+  description: 'live_meta: make the plan and question auto readers consult only the
+    live agent_meta.json, never the SASE_AGENT_AUTO_* env snapshot, and stop runner
+    write-backs of stale in-memory meta from undoing an A toggle. Update the env rows
+    in docs/configuration.md. Close task bead sase-15s when done.'
+- id: tier_mismatch
+  title: A plan-tier mismatch asks instead of erroring
+  depends_on:
+  - live_meta
+  size: medium
+  description: 'tier_mismatch: treat :tale/:plan on an epic plan and :epic on a tale
+    plan as "not covered", so the plan parks for a human. Apply this at propose, gate-spec
+    build, and gate creation. Fix the auto-handled dismissal and the "auto-approved"
+    notes so a parked gate stays visible.'
+- id: epic_workers
+  title: Epic phase and land workers run under %auto:tale
+  depends_on:
+  - tier_mismatch
+  size: medium
+  description: 'epic_workers: emit %auto:tale instead of bare %auto for every phase
+    and land segment. Seed in-process coder and replan successors from the planner''s
+    live auto state (per inherit_mode). Flip the bead-work rendering tests and update
+    docs/beads.md.'
+- id: prompt_bar
+  title: Prompt bar shows %auto grammar errors
+  depends_on:
+  - grammar
+  size: small
+  description: 'prompt_bar: show an invalid %auto spelling inline in the ACE prompt
+    input bar''s context line, and block submit with the same message the launch path
+    raises.'
+- id: docs_truth
+  title: Docs, memory, and /sase_questions describe shipped behavior
+  depends_on:
+  - grammar
+  - live_meta
+  - tier_mismatch
+  - epic_workers
+  - prompt_bar
+  size: medium
+  description: 'docs_truth: rewrite the %auto passages in docs/macros.md and docs/ace.md
+    to match the landed behavior. Rewrite the macros.md memory %auto row (macros_row).
+    Add the recommended-option-first guidance to the /sase_questions skill source
+    with a test. Close task bead sase-1hh when done.'
 proposed_by: bbugyi200.athena.0yg
 decided_by: auto
 create_time: 2026-10-08 13:39:25
 status: wip
+bead_id: sase-1id
 ---
 
-- **PROMPT:**
-  [prompts/202610/auto_p0_safety_tales.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/auto_p0_safety_tales.md)
+- **PROMPT:** [prompts/202610/auto_p0_safety_tales.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/auto_p0_safety_tales.md)
+- **BEAD:** [sase-1id](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1id/README.md)
 
 <!-- sase:links:start -->
 
