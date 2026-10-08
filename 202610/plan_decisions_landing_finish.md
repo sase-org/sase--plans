@@ -1,90 +1,78 @@
 ---
 tier: epic
-title:
-  "Plan Decisions landing finish: fix the broken Verdict, tint, receipts, and the
-  missing route coverage"
-goal:
-  Finish the work the sase-1hi.10 land audit found incomplete or broken. ACE shows every
-  Verdict control and tints the chosen branch from the first frame. The epic-caused red
-  tests on master pass. sase bead work reuses accepted answers without re-resolving
-  them. Stale reviews leave a durable record that every surface can recover from. The
-  %auto receipt reaches the ACE inbox. Shell completion scopes -D ids to the named
+title: 'Plan Decisions landing finish: fix the broken Verdict, tint, receipts, and
+  the missing route coverage'
+goal: Finish the work the sase-1hi.10 land audit found incomplete or broken. ACE shows
+  every Verdict control and tints the chosen branch from the first frame. The epic-caused
+  red tests on master pass. sase bead work reuses accepted answers without re-resolving
+  them. Stale reviews leave a durable record that every surface can recover from.
+  The %auto receipt reaches the ACE inbox. Shell completion scopes -D ids to the named
   proposal. Telegram receipts, stale recovery, and the sheet budget match the parent
   plan. The goldens show all of this.
 phases:
-  - id: gate
-    title:
-      Bead-work answer reuse, durable stale_review records, one direct resolver, receipt
-      inbox, guard strands, and the owed route tests
-    depends_on: []
-    size: large
-    description:
-      "gate: stop sase bead work from re-resolving accepted plans, record stale_review
-      and other pre-acceptance rejections durably, surface swallowed re-stamp failures,
-      keep one direct resolver, strip private gate keys, cover new strands in the memory
-      guard, show the %auto receipt in the ACE inbox, clear write_acceptance_meta, and
-      add the stamping, stale_review, refusal, and writer-side tests the first pass
-      skipped."
-  - id: cli
-    title:
-      Completion snapshot, shell-scoped -D completions, consistent memory chips, and
-      handler-level CLI tests
-    depends_on:
-      - gate
-    size: medium
-    description:
-      "cli: regenerate the completion spec snapshot, make the zsh/bash/fish helpers pass
-      the named proposal to plan-decision completions, document -S, make the card and
-      pending sheet show one consistent provenance chip, and replace helper-level CLI
-      tests with handler and rendered-output tests."
-  - id: tui
-    title:
-      ACE Verdict that fits the rail, first-frame tint with syntax kept, cheap settle
-      polling, real stale reload, and the epic-caused red tests
-    depends_on: []
-    size: large
-    description:
-      "tui: scope Verdict CSS so all five tale controls and every epic control sit
-      inside the rail, keep Decisions visible at 90 columns, tint on first display while
-      keeping syntax colours, poll only the open modal's bundle, reopen or rebuild on
-      stale_review with values kept, fix the four tests the first pass broke, and clean
-      up dead caches."
-  - id: goldens
-    title:
-      Regenerate and inspect the Plan Decisions and plan_gate goldens after the Verdict
-      and tint fixes
-    depends_on:
-      - gate
-      - tui
-    size: medium
-    description:
-      "goldens: run the full just fix-tui-screenshots under /sase_monitor after tui and
-      gate land, inspect every created or updated PNG, and confirm every Verdict
-      control, the 90-column Decisions panel, chosen-branch tint, and unchanged generic
-      gate goldens."
-  - id: telegram
-    title:
-      Telegram receipts without doubled words, stale recovery that keeps the card and
-      draft, budget order per the parent plan, and flow-level tests
-    depends_on:
-      - gate
-    size: large
-    description:
-      'telegram: fix the doubled "via" and "auto auto" receipt headers, recover
-      stale_review and pre-response errors from the durable gate record while keeping
-      the card, the refresh button, and the draft, edit the original card after feedback
-      replies, follow the parent plan''s three-step sheet budget, pin the keyboard, and
-      add flow-level settle and submit tests.'
+- id: gate
+  title: Bead-work answer reuse, durable stale_review records, one direct resolver,
+    receipt inbox, guard strands, and the owed route tests
+  depends_on: []
+  size: large
+  description: 'gate: stop sase bead work from re-resolving accepted plans, record
+    stale_review and other pre-acceptance rejections durably, surface swallowed re-stamp
+    failures, keep one direct resolver, strip private gate keys, cover new strands
+    in the memory guard, show the %auto receipt in the ACE inbox, clear write_acceptance_meta,
+    and add the stamping, stale_review, refusal, and writer-side tests the first pass
+    skipped.'
+- id: cli
+  title: Completion snapshot, shell-scoped -D completions, consistent memory chips,
+    and handler-level CLI tests
+  depends_on:
+  - gate
+  size: medium
+  description: 'cli: regenerate the completion spec snapshot, make the zsh/bash/fish
+    helpers pass the named proposal to plan-decision completions, document -S, make
+    the card and pending sheet show one consistent provenance chip, and replace helper-level
+    CLI tests with handler and rendered-output tests.'
+- id: tui
+  title: ACE Verdict that fits the rail, first-frame tint with syntax kept, cheap
+    settle polling, real stale reload, and the epic-caused red tests
+  depends_on: []
+  size: large
+  description: 'tui: scope Verdict CSS so all five tale controls and every epic control
+    sit inside the rail, keep Decisions visible at 90 columns, tint on first display
+    while keeping syntax colours, poll only the open modal''s bundle, reopen or rebuild
+    on stale_review with values kept, fix the four tests the first pass broke, and
+    clean up dead caches.'
+- id: goldens
+  title: Regenerate and inspect the Plan Decisions and plan_gate goldens after the
+    Verdict and tint fixes
+  depends_on:
+  - gate
+  - tui
+  size: medium
+  description: 'goldens: run the full just fix-tui-screenshots under /sase_monitor
+    after tui and gate land, inspect every created or updated PNG, and confirm every
+    Verdict control, the 90-column Decisions panel, chosen-branch tint, and unchanged
+    generic gate goldens.'
+- id: telegram
+  title: Telegram receipts without doubled words, stale recovery that keeps the card
+    and draft, budget order per the parent plan, and flow-level tests
+  depends_on:
+  - gate
+  size: large
+  description: 'telegram: fix the doubled "via" and "auto auto" receipt headers, recover
+    stale_review and pre-response errors from the durable gate record while keeping
+    the card, the refresh button, and the draft, edit the original card after feedback
+    replies, follow the parent plan''s three-step sheet budget, pin the keyboard,
+    and add flow-level settle and submit tests.'
 parent_bead: sase-1hi.10
 proposed_by: bbugyi200.apollo.sase-1hi.10.land
 create_time: 2026-10-08 13:17:00
 status: wip
+bead_id: sase-1hi.10.7
 ---
 
-- **PROMPT:**
-  [prompts/202610/plan_decisions_landing_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_landing_finish.md)
-- **PARENT:**
-  [202610/plan_decisions_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions_landing_repairs.md)
+- **PROMPT:** [prompts/202610/plan_decisions_landing_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_landing_finish.md)
+- **PARENT:** [202610/plan_decisions_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions_landing_repairs.md)
+- **BEAD:** [sase-1hi.10.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/sase-1hi.10.7.md)
 
 # Plan Decisions landing finish
 
