@@ -1,68 +1,63 @@
 ---
 tier: epic
 title: Agent scopes reap every process an agent leaks
-goal: "No process an agent starts outlives its agent runner unless SASE deliberately
+goal: 'No process an agent starts outlives its agent runner unless SASE deliberately
   escaped it into its own systemd scope. Leftovers die when the runner exits (and
   between in-process successor turns), and a five-minute backstop reaps sase-agent
   scopes whose runner died without cleaning up, while shared user daemons (ssh-agent,
   gpg-agent, ssh ControlMaster, tmux server) are never killed.
 
-  "
+  '
 decisions:
   scope_decision_record:
-    ask:
-      Add a decisions-web record stating that an agent's scope bounds every process the
-      agent starts?
+    ask: Add a decisions-web record stating that an agent's scope bounds every process
+      the agent starts?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
   turn_sweep:
-    ask:
-      Also sweep leaked processes between in-process successor turns (plan to coder,
+    ask: Also sweep leaked processes between in-process successor turns (plan to coder,
       pipe handoff)?
     default: true
-    why:
-      Otherwise a planner's leaked loop keeps spinning through an hours-long %auto coder
-      turn
+    why: Otherwise a planner's leaked loop keeps spinning through an hours-long %auto
+      coder turn
     answer: true
 phases:
-  - id: escape-helpers
-    title: Escape long-lived SASE helpers from the agent scope
-    depends_on: []
-    size: small
-    description:
-      "escape-helpers: route the four fire-and-forget spawns reachable from an agent
-      (background trash delete, goals fetch worker, federation worker daemon, tmux
-      session bootstrap) through detach_scope so the new sweep can never kill them, with
-      detach-scope worker tests."
-  - id: runner-teardown
-    title: Agent runner sweeps its own scope
-    depends_on:
-      - escape-helpers
-    size: medium
-    description:
-      "runner-teardown: add the shared scope-sweep module, the agent_scope_teardown
-      config block, and the runner hooks that kill non-descendant, non-spared processes
-      in the runner's own sase-agent scope before shutdown finalization and between
-      in-process successor turns."
-  - id: scope-reaper
-    title: Orphaned agent scope reaper job
-    depends_on:
-      - runner-teardown
-    size: medium
-    description:
-      "scope-reaper: add a checks-routine job that discovers sase-agent scopes with no
-      live runner and sweeps their non-spared processes, with a dry-run core API, docs,
-      and a live systemd test."
+- id: escape-helpers
+  title: Escape long-lived SASE helpers from the agent scope
+  depends_on: []
+  size: small
+  description: 'escape-helpers: route the four fire-and-forget spawns reachable from
+    an agent (background trash delete, goals fetch worker, federation worker daemon,
+    tmux session bootstrap) through detach_scope so the new sweep can never kill them,
+    with detach-scope worker tests.'
+- id: runner-teardown
+  title: Agent runner sweeps its own scope
+  depends_on:
+  - escape-helpers
+  size: medium
+  description: 'runner-teardown: add the shared scope-sweep module, the agent_scope_teardown
+    config block, and the runner hooks that kill non-descendant, non-spared processes
+    in the runner''s own sase-agent scope before shutdown finalization and between
+    in-process successor turns.'
+- id: scope-reaper
+  title: Orphaned agent scope reaper job
+  depends_on:
+  - runner-teardown
+  size: medium
+  description: 'scope-reaper: add a checks-routine job that discovers sase-agent scopes
+    with no live runner and sweeps their non-spared processes, with a dry-run core
+    API, docs, and a live systemd test.'
 proposed_by: bbugyi200.apollo.5s
 decided_by: auto
 create_time: 2026-10-08 06:37:31
 status: wip
+bead_id: sase-1i4
 ---
 
-- **PROMPT:**
-  [prompts/202610/agent_scope_leak_reaping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agent_scope_leak_reaping.md)
+- **PROMPT:** [prompts/202610/agent_scope_leak_reaping.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agent_scope_leak_reaping.md)
+- **BEAD:** [sase-1i4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1i4/README.md)
 
 # Plan: Agent scopes reap every process an agent leaks
 
