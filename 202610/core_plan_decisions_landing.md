@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Repair remaining Plan Decisions contracts and finish the core epic landing
-goal:
-  Preserve all valid decisions, reject incomplete or malformed review state, and close
-  sase-1hi.1.1 and its parent phase after verification.
+goal: Preserve all valid decisions, reject incomplete or malformed review state, and
+  close sase-1hi.1.1 and its parent phase after verification.
 proposed_by: bbugyi200.apollo.sase-1hi.1.1.land
 bead: sase-1hi.1.1
-create_time: 2026-10-07 22:05:34
-status: wip
+status: done
 ---
 
 - **PARENT:**
