@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: De-duplicate
-goal:
-  The research_swarm macro is about 30% shorter, authors its queue directive,
+goal: The research_swarm macro is about 30% shorter, authors its queue directive,
   research-report loop, and researcher segment once each, and renders byte-identical
   prompts except a fixed solo-lead layout.
 size: medium
 proposed_by: bbugyi200.athena.0yh
-create_time: 2026-10-08 14:41:31
-status: wip
+status: done
 ---
 
 # De-duplicate `#research_swarm` with local helpers and a researcher loop
