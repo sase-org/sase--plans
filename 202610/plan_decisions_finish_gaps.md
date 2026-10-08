@@ -1,67 +1,61 @@
 ---
 tier: epic
-title:
-  "Plan Decisions finish gaps: visible chosen-branch tint, a stale reopen that can
-  submit, generic rails back to 42, the owed gate tests, and a real Telegram
-  launch-failure signal"
-goal:
-  Close the gaps the sase-1hi.10.7 land audit found in its own phases. ACE shows the
-  chosen branch green and bold on screen. A stale review reopened after the modal closed
-  can still submit. Generic gates keep their old rail width. The gate route tests the
-  repair plans required exist and assert behaviour. Telegram says "coder could not
-  start" only when sase recorded a real coder launch failure, and keeps each decision's
-  choices next to its question.
+title: 'Plan Decisions finish gaps: visible chosen-branch tint, a stale reopen that
+  can submit, generic rails back to 42, the owed gate tests, and a real Telegram launch-failure
+  signal'
+goal: Close the gaps the sase-1hi.10.7 land audit found in its own phases. ACE shows
+  the chosen branch green and bold on screen. A stale review reopened after the modal
+  closed can still submit. Generic gates keep their old rail width. The gate route
+  tests the repair plans required exist and assert behaviour. Telegram says "coder
+  could not start" only when sase recorded a real coder launch failure, and keeps
+  each decision's choices next to its question.
 phases:
-  - id: ace
-    title:
-      Rendered chosen-branch tint, stale reopen through the real open path, and generic
-      rails back to 42
-    depends_on: []
-    size: medium
-    description:
-      "ace: make the chosen-branch green/bold tint survive Textual rendering and test it
-      on rendered output, reopen a closed stale review through handle_plan_approval so
-      its submit is handled, load the stale bundle off the UI thread, and scope the rail
-      width change so generic gates and decision-free plans return to 42 cells."
-  - id: goldens
-    title: Refresh and inspect the plan and generic gate goldens after the ace fixes
-    depends_on:
-      - ace
-    size: small
-    description:
-      "goldens: run targeted just fix-tui-screenshots for the plan gate, custom gate,
-      sudo request, and plan decisions inbox/toast goldens under /sase_monitor, inspect
-      every update, and confirm the green chosen branch and the 42-cell generic rails."
-  - id: gate_tests
-    title: The gate route tests the first two passes skipped, plus one restamp record
-    depends_on: []
-    size: medium
-    description:
-      "gate_tests: add the missing stale_review, authored-order stamping, agent memory
-      refusal, new-strand grant, decision-host-check-failed, caller classification,
-      handoff writer, restamp, memory guard, and receipt inbox tests, and record a
-      restamp failure inside side effects exactly once."
-  - id: telegram
-    title:
-      Real coder launch-failure signal, per-decision blockquotes, and the missing
-      keyboard, settle, PDF, and retry tests
-    depends_on: []
-    size: medium
-    description:
-      "telegram: read sase's gate-turn followup_error as the only coder launch-failure
-      signal, stop treating any side_effects error as a failed launch, keep each
-      decision's choice lines next to its ask in the expandable stage, and add the
-      keyboard, external settle, PDF, stale refresh, and keyboard-removal retry tests."
+- id: ace
+  title: Rendered chosen-branch tint, stale reopen through the real open path, and
+    generic rails back to 42
+  depends_on: []
+  size: medium
+  description: 'ace: make the chosen-branch green/bold tint survive Textual rendering
+    and test it on rendered output, reopen a closed stale review through handle_plan_approval
+    so its submit is handled, load the stale bundle off the UI thread, and scope the
+    rail width change so generic gates and decision-free plans return to 42 cells.'
+- id: goldens
+  title: Refresh and inspect the plan and generic gate goldens after the ace fixes
+  depends_on:
+  - ace
+  size: small
+  description: 'goldens: run targeted just fix-tui-screenshots for the plan gate,
+    custom gate, sudo request, and plan decisions inbox/toast goldens under /sase_monitor,
+    inspect every update, and confirm the green chosen branch and the 42-cell generic
+    rails.'
+- id: gate_tests
+  title: The gate route tests the first two passes skipped, plus one restamp record
+  depends_on: []
+  size: medium
+  description: 'gate_tests: add the missing stale_review, authored-order stamping,
+    agent memory refusal, new-strand grant, decision-host-check-failed, caller classification,
+    handoff writer, restamp, memory guard, and receipt inbox tests, and record a restamp
+    failure inside side effects exactly once.'
+- id: telegram
+  title: Real coder launch-failure signal, per-decision blockquotes, and the missing
+    keyboard, settle, PDF, and retry tests
+  depends_on: []
+  size: medium
+  description: 'telegram: read sase''s gate-turn followup_error as the only coder
+    launch-failure signal, stop treating any side_effects error as a failed launch,
+    keep each decision''s choice lines next to its ask in the expandable stage, and
+    add the keyboard, external settle, PDF, stale refresh, and keyboard-removal retry
+    tests.'
 parent_bead: sase-1hi.10.7
 proposed_by: bbugyi200.apollo.sase-1hi.10.7.land
 create_time: 2026-10-08 19:15:57
 status: wip
+bead_id: sase-1hi.10.7.6
 ---
 
-- **PROMPT:**
-  [prompts/202610/plan_decisions_finish_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_finish_gaps.md)
-- **PARENT:**
-  [202610/plan_decisions_landing_finish.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions_landing_finish.md)
+- **PROMPT:** [prompts/202610/plan_decisions_finish_gaps.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_decisions_finish_gaps.md)
+- **PARENT:** [202610/plan_decisions_landing_finish.md](https://github.com/sase-org/sase--plans/blob/main/202610/plan_decisions_landing_finish.md)
+- **BEAD:** [sase-1hi.10.7.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1hi/sase-1hi.10.7.6.md)
 
 # Plan Decisions finish gaps
 
