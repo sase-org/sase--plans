@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "How group?",
+      "choices": [
+        {
+          "key": "pane",
+          "label": "By pane"
+        },
+        {
+          "key": "mode",
+          "label": "By mode"
+        }
+      ],
+      "default": "pane",
+      "effective_default": "pane",
+      "id": "grouping",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "why pane"
+    },
+    {
+      "ask": "Terse?",
+      "default": true,
+      "effective_default": true,
+      "id": "terse",
+      "kind": "toggle",
+      "requested_verified": false
+    }
+  ]
+}
