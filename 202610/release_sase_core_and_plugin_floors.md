@@ -1,59 +1,55 @@
 ---
 tier: epic
 title: Publish sase-core and sase, then raise plugin floors
-goal: "A complete sase-core-rs release whose tag contains the commit in sase
-  sase-core-revision.txt is on PyPI, sase master Master Gate is green and Full CI is
-  fresh-green, ci_watch publishes sase against that floor, plugin floors that do not
-  resolve are raised and published, and sase-10d plus phase bead sase-1i5.9 are closed
-  done. Parent epic sase-1i5 stays open for its land agent.
+goal: 'A complete sase-core-rs release whose tag contains the commit in sase sase-core-revision.txt
+  is on PyPI, sase master Master Gate is green and Full CI is fresh-green, ci_watch
+  publishes sase against that floor, plugin floors that do not resolve are raised
+  and published, and sase-10d plus phase bead sase-1i5.9 are closed done. Parent epic
+  sase-1i5 stays open for its land agent.
 
-  "
+  '
 phases:
-  - id: core-release
-    title: Publish a complete sase-core-rs release that contains sase's pin
-    depends_on: []
-    size: medium
-    description:
-      "core-release: make sase-core master CI green by applying the recorded event-store
-      doctor expectation fix, cut the release with the documented dry_run=false
-      dispatch, and prove the published tag contains the pin and is complete on PyPI."
-  - id: sase-gates
-    title: Make sase Master Gate and a fresh Full CI green
-    depends_on: []
-    size: large
-    description:
-      "sase-gates: inventory live Master Gate and Full CI failures, fix every
-      deterministic red under the fix_master decision, and leave a green Master Gate on
-      the tip plus a green Full CI inside the six-hour window."
-  - id: publish-sase
-    title: Ratchet the release branch and let ci_watch publish sase
-    depends_on:
-      - core-release
-      - sase-gates
-    size: medium
-    description:
-      "publish-sase: dispatch publish.yml so sync-release-metadata ratchets the
-      release-please branch onto the new core, prove release-core-floor-smoke and
-      probe_core_floor, and let ci_watch merge and publish sase. Do not hand-merge."
-  - id: plugin-floors
-    title: Raise plugin floors, prove fresh installs, and close sase-10d
-    depends_on:
-      - publish-sase
-    size: medium
-    description:
-      "plugin-floors: raise sase-research-artifacts to the new core floor where it needs
-      it, raise sase-telegram and sase-github sase floors where they do not resolve,
-      prove fresh installs, and close sase-10d and sase-1i5.9 with evidence."
+- id: core-release
+  title: Publish a complete sase-core-rs release that contains sase's pin
+  depends_on: []
+  size: medium
+  description: 'core-release: make sase-core master CI green by applying the recorded
+    event-store doctor expectation fix, cut the release with the documented dry_run=false
+    dispatch, and prove the published tag contains the pin and is complete on PyPI.'
+- id: sase-gates
+  title: Make sase Master Gate and a fresh Full CI green
+  depends_on: []
+  size: large
+  description: 'sase-gates: inventory live Master Gate and Full CI failures, fix every
+    deterministic red under the fix_master decision, and leave a green Master Gate
+    on the tip plus a green Full CI inside the six-hour window.'
+- id: publish-sase
+  title: Ratchet the release branch and let ci_watch publish sase
+  depends_on:
+  - core-release
+  - sase-gates
+  size: medium
+  description: 'publish-sase: dispatch publish.yml so sync-release-metadata ratchets
+    the release-please branch onto the new core, prove release-core-floor-smoke and
+    probe_core_floor, and let ci_watch merge and publish sase. Do not hand-merge.'
+- id: plugin-floors
+  title: Raise plugin floors, prove fresh installs, and close sase-10d
+  depends_on:
+  - publish-sase
+  size: medium
+  description: 'plugin-floors: raise sase-research-artifacts to the new core floor
+    where it needs it, raise sase-telegram and sase-github sase floors where they
+    do not resolve, prove fresh installs, and close sase-10d and sase-1i5.9 with evidence.'
 proposed_by: bbugyi200.athena.sase-1i5.9
 parent_bead: sase-1i5.9
 create_time: 2026-10-08 14:37:01
 status: wip
+bead_id: sase-1i5.9.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/release_sase_core_and_plugin_floors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_sase_core_and_plugin_floors.md)
-- **PARENT:**
-  [202610/close_top_ten_impact_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/close_top_ten_impact_task_beads.md)
+- **PROMPT:** [prompts/202610/release_sase_core_and_plugin_floors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_sase_core_and_plugin_floors.md)
+- **PARENT:** [202610/close_top_ten_impact_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/close_top_ten_impact_task_beads.md)
+- **BEAD:** [sase-1i5.9.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1i5/sase-1i5.9.1.md)
 
 # Plan: Publish sase-core and sase, then raise plugin floors
 
