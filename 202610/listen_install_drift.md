@@ -1,41 +1,37 @@
 ---
 tier: tale
 title: Make sase-listen multi-machine installs self-diagnosing
-goal:
-  Every sase-listen install reports exactly which build it runs, a stale install fails
-  with the one command that repairs it instead of a traceback, and doctor and publish
-  flag renderer/feed-host drift, so publishing from any machine (the user's MacBook, or
-  another user's laptop) fails loudly and fixably rather than silently or confusingly.
+goal: Every sase-listen install reports exactly which build it runs, a stale install
+  fails with the one command that repairs it instead of a traceback, and doctor and
+  publish flag renderer/feed-host drift, so publishing from any machine (the user's
+  MacBook, or another user's laptop) fails loudly and fixably rather than silently
+  or confusingly.
 size: medium
 decisions:
   doctor_skew:
     ask: How should `sase-listen doctor` treat a renderer/feed-host build mismatch?
     choices:
-      fail: "`feed:host-build` FAILs (doctor exits 3) on any known build mismatch"
-      warn: "`feed:host-build` stays ok but its detail names both builds and the fix"
+      fail: '`feed:host-build` FAILs (doctor exits 3) on any known build mismatch'
+      warn: '`feed:host-build` stays ok but its detail names both builds and the fix'
     default: fail
-    why:
-      Drift is the failure class we hit; doctor is diagnostic-only and nothing gates on
-      it.
+    why: Drift is the failure class we hit; doctor is diagnostic-only and nothing
+      gates on it.
     answer: fail
   publish_skew_warning:
-    ask:
-      Should a successful remote publish add a warning when the feed host's build
+    ask: Should a successful remote publish add a warning when the feed host's build
       differs?
     default: true
     why: Users rarely run doctor; the publish/render output is where drift must surface.
     answer: true
   rollout_installs:
-    ask:
-      Refresh the apollo, athena, and mac sase-listen installs to origin/master as part
-      of this work?
+    ask: Refresh the apollo, athena, and mac sase-listen installs to origin/master
+      as part of this work?
     default: true
     why: All three run different stale commits today; the mac is 10 commits behind.
     answer: true
 proposed_by: bbugyi200.apollo.5w
 decided_by: auto
-create_time: 2026-10-08 13:48:37
-status: wip
+status: done
 ---
 
 # Plan: Make sase-listen multi-machine installs self-diagnosing
