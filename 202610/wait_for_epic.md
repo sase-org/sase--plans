@@ -125,7 +125,7 @@ phases:
     still release. Update editor docs and user docs, and propose the memory follow-up.'
 proposed_by: bbugyi200.athena.research.3v.linker.w0
 create_time: 2026-10-06 18:17:30
-status: wip
+status: done
 bead_id: sase-1h7
 ---
 
