@@ -1,152 +1,148 @@
 ---
 tier: epic
 title: Plugin commands — sase listen as the first first-class command plugin
-goal: "Plugins can mount top-level `sase <name>` commands through a metadata-declared
+goal: 'Plugins can mount top-level `sase <name>` commands through a metadata-declared
   `sase_commands` entry point. sase-listen uses it to ship `sase listen`, which behaves
   exactly like `sase-listen`, completes in bash/zsh/fish and the TUI `:` line, refreshes
-  completion automatically on every plugin change, and is installed and managed from the
-  Admin Center's Updates tab. Every moment a plugin adds or removes a command is
-  announced clearly and consistently.
+  completion automatically on every plugin change, and is installed and managed from
+  the Admin Center''s Updates tab. Every moment a plugin adds or removes a command
+  is announced clearly and consistently.
 
-  "
+  '
 decisions:
   compact_help:
     ask: Should compact `sase -h` list installed plugin commands in their own group?
     default: true
-    why:
-      Users look in `sase -h` first; the group only appears when a plugin command
+    why: Users look in `sase -h` first; the group only appears when a plugin command
       exists.
     answer: true
   memory_decision_record:
-    ask:
-      Add a decisions record that plugins may mount top-level commands, superseding
+    ask: Add a decisions record that plugins may mount top-level commands, superseding
       listen's standalone stance?
     memory:
-      - decisions
+    - decisions
     requested: I agree with all of the requirements recommended in that research file.
     default: true
     answer: true
   memory_cli_rules:
-    ask:
-      Add a cli_rules.md note that plugin-mounted command subtrees are exempt from
+    ask: Add a cli_rules.md note that plugin-mounted command subtrees are exempt from
       sase's CLI rules?
     memory:
-      - cli_rules.md
+    - cli_rules.md
     requested: I agree with all of the requirements recommended in that research file.
     default: true
     answer: true
 phases:
-  - id: mount
-    title: Plugin command contract, discovery, and dispatch
-    depends_on: []
-    size: medium
-    description: "mount: add the generic sase_commands contract, metadata-only discovery
-      and validation, the pre-argparse dispatch fast path, helpful misses, the shared
-      command chip, a fake-distribution test harness, and the hermetic test guard.
+- id: mount
+  title: Plugin command contract, discovery, and dispatch
+  depends_on: []
+  size: medium
+  description: 'mount: add the generic sase_commands contract, metadata-only discovery
+    and validation, the pre-argparse dispatch fast path, helpful misses, the shared
+    command chip, a fake-distribution test harness, and the hermetic test guard.
 
-      "
-  - id: listen-adapter
-    title: sase-listen becomes a command plugin
-    depends_on: []
-    size: medium
-    description: "listen-adapter: in the sase-listen repo, add the sase_command adapter
-      and entry point, thread the program name through the CLI and hints, fix buildinfo
-      and the feed-host remote command for plugin-only hosts, and rewrite the standalone
-      stance.
+    '
+- id: listen-adapter
+  title: sase-listen becomes a command plugin
+  depends_on: []
+  size: medium
+  description: 'listen-adapter: in the sase-listen repo, add the sase_command adapter
+    and entry point, thread the program name through the CLI and hints, fix buildinfo
+    and the feed-host remote command for plugin-only hosts, and rewrite the standalone
+    stance.
 
-      "
-  - id: help-doctor
-    title: Plugin commands in root help and sase doctor
-    depends_on:
-      - mount
-    size: small
-    description: "help-doctor: list plugin commands in sase -H (and sase -h per
-      decision) with provenance and problem states, and add the plugins.commands doctor
-      check.
+    '
+- id: help-doctor
+  title: Plugin commands in root help and sase doctor
+  depends_on:
+  - mount
+  size: small
+  description: 'help-doctor: list plugin commands in sase -H (and sase -h per decision)
+    with provenance and problem states, and add the plugins.commands doctor check.
 
-      "
-  - id: completion
-    title: Plugin subtrees in completion with plugin-aware cache identity
-    depends_on:
-      - mount
-    size: medium
-    description: "completion: merge separately walked plugin parsers into a runtime
-      completion spec, make the grammar and TUI spec caches key on the plugin command
-      set and editable sources, and record omitted subtrees.
+    '
+- id: completion
+  title: Plugin subtrees in completion with plugin-aware cache identity
+  depends_on:
+  - mount
+  size: medium
+  description: 'completion: merge separately walked plugin parsers into a runtime
+    completion spec, make the grammar and TUI spec caches key on the plugin command
+    set and editable sources, and record omitted subtrees.
 
-      "
-  - id: lifecycle
-    title: Command-aware plugin install, update, and uninstall
-    depends_on:
-      - mount
-      - completion
-    size: medium
-    description: "lifecycle: fix the inventory groups, carry command names in the
-      installed index, diff the command set around every plugin mutation, refresh
-      completion in a fresh child process, and announce added or removed commands in CLI
-      results and JSON.
+    '
+- id: lifecycle
+  title: Command-aware plugin install, update, and uninstall
+  depends_on:
+  - mount
+  - completion
+  size: medium
+  description: 'lifecycle: fix the inventory groups, carry command names in the installed
+    index, diff the command set around every plugin mutation, refresh completion in
+    a fresh child process, and announce added or removed commands in CLI results and
+    JSON.
 
-      "
-  - id: command-preview
-    title: Pre-install command preview
-    depends_on:
-      - lifecycle
-    size: small
-    description: "command-preview: read an uninstalled plugin's declared sase_commands
-      from its upstream pyproject.toml with a cache, expose it in plugin JSON and the
-      install dry run, and flag collisions before install.
+    '
+- id: command-preview
+  title: Pre-install command preview
+  depends_on:
+  - lifecycle
+  size: small
+  description: 'command-preview: read an uninstalled plugin''s declared sase_commands
+    from its upstream pyproject.toml with a cache, expose it in plugin JSON and the
+    install dry run, and flag collisions before install.
 
-      "
-  - id: updates-tab
-    title: Commands in the Updates tab and plugin detail
-    depends_on:
-      - command-preview
-    size: medium
-    description: "updates-tab: render the command chip in Updates rows, the shared
-      detail panel, install and uninstall confirmations, and the post-install toast
-      receipt, then refresh the affected PNG goldens.
+    '
+- id: updates-tab
+  title: Commands in the Updates tab and plugin detail
+  depends_on:
+  - command-preview
+  size: medium
+  description: 'updates-tab: render the command chip in Updates rows, the shared detail
+    panel, install and uninstall confirmations, and the post-install toast receipt,
+    then refresh the affected PNG goldens.
 
-      "
-  - id: listen-fast-start
-    title: Lazy sase-listen command imports
-    depends_on:
-      - listen-adapter
-    size: small
-    description: "listen-fast-start: in the sase-listen repo, defer heavy imports into
-      command handlers so building the parser and rendering help stay fast, guarded by
-      an import-isolation test.
+    '
+- id: listen-fast-start
+  title: Lazy sase-listen command imports
+  depends_on:
+  - listen-adapter
+  size: small
+  description: 'listen-fast-start: in the sase-listen repo, defer heavy imports into
+    command handlers so building the parser and rendering help stay fast, guarded
+    by an import-isolation test.
 
-      "
-  - id: research-macros
-    title: Research macros prefer sase listen
-    depends_on:
-      - listen-adapter
-    size: small
-    description: "research-macros: in the sase-research-artifacts repo, make the audio
-      macros select sase listen first, then sase-listen, then uvx sase-listen, and
-      update docs and pinned-string tests.
+    '
+- id: research-macros
+  title: Research macros prefer sase listen
+  depends_on:
+  - listen-adapter
+  size: small
+  description: 'research-macros: in the sase-research-artifacts repo, make the audio
+    macros select sase listen first, then sase-listen, then uvx sase-listen, and update
+    docs and pinned-string tests.
 
-      "
-  - id: acceptance
-    title: End-to-end acceptance, records, and docs
-    depends_on:
-      - help-doctor
-      - updates-tab
-      - listen-fast-start
-      - research-macros
-    size: medium
-    description:
-      "acceptance: verify parity, completion, freshness, Updates flows, and performance
-      end to end with a real editable sase-listen, fix what breaks, and land the records
-      and remaining docs."
+    '
+- id: acceptance
+  title: End-to-end acceptance, records, and docs
+  depends_on:
+  - help-doctor
+  - updates-tab
+  - listen-fast-start
+  - research-macros
+  size: medium
+  description: 'acceptance: verify parity, completion, freshness, Updates flows, and
+    performance end to end with a real editable sase-listen, fix what breaks, and
+    land the records and remaining docs.'
 proposed_by: bbugyi200.apollo.research.0n.linker.w0
 decided_by: auto
 create_time: 2026-10-08 15:26:15
 status: wip
+bead_id: sase-1if
 ---
 
-- **PROMPT:**
-  [prompts/202610/plugin_commands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plugin_commands.md)
+- **PROMPT:** [prompts/202610/plugin_commands.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plugin_commands.md)
+- **BEAD:** [sase-1if](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1if/README.md)
 
 # Plan: Plugin commands, with `sase listen` as the first command plugin
 
