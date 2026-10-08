@@ -1,11 +1,11 @@
 ---
 tier: tale
 title: Complete indexed bead mutations and transactional read-model publication
-goal: 'Complete sase-1h8.13 so every ordinary git-backed bead mutation loads affected
-  rows and streams, preserves replay semantics and historical bytes, and publishes
-  its read-model changes before releasing the mutation flock.
+goal: "Complete sase-1h8.13 so every ordinary git-backed bead mutation loads affected
+  rows and streams, preserves replay semantics and historical bytes, and publishes its
+  read-model changes before releasing the mutation flock.
 
-  '
+  "
 size: medium
 bead: sase-1h8.13
 proposed_by: bbugyi200.athena.sase-1h8.13
@@ -16,6 +16,12 @@ status: done
   [202610/bead_store_history_independent_performance.md](https://github.com/sase-org/sase--plans/blob/main/202610/bead_store_history_independent_performance.md)
 - **BEAD:**
   [sase-1h8.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h8/sase-1h8.13.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1h8.13](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1h8.13.md)
+- **COMMITS:**
+  - [1ff4360](https://github.com/sase-org/sase-core/commit/1ff436055b128f21349e0f8d1136020e0a4cb079)
+    — feat(beads): indexed allocation metadata, shared mutation view/publish, cached
+    create port
 
 # Complete the read-model-mutations phase
 
