@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Fix sase-listen release PR CI and publish v0.1.1 to PyPI
-goal: 'sase-listen release PR #2 is green and merged, master CI is green, and sase-listen
-  0.1.1 (wheel and sdist) is installable from PyPI.'
+goal:
+  "sase-listen release PR #2 is green and merged, master CI is green, and sase-listen
+  0.1.1 (wheel and sdist) is installable from PyPI."
 size: medium
 proposed_by: bbugyi200.athena.0y7
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.0y7](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.0y7.md)
+- **COMMITS:**
+  - [8a7bd64](https://github.com/sase-org/sase-listen/commit/8a7bd6436551e4200a3d0cfd064b40e060f81990)
+    — build(release): keep uv.lock in step with release-please version bumps
 
 # Fix sase-listen release PR #2 CI and ship v0.1.1 to PyPI
 
