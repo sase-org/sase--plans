@@ -1,128 +1,114 @@
 ---
 tier: epic
 title: Implement and close the ten highest-impact recent task beads
-goal: "All ten beads ranked in the 48-hour task-bead impact report are fixed on master
+goal: 'All ten beads ranked in the 48-hour task-bead impact report are fixed on master
   and closed with resolution done and recorded evidence: sase-1h6, sase-1h2, sase-10d,
-  sase-13p, sase-1gx, sase-14o, sase-1h1, sase-1f0, sase-1br and sase-18v. The epic does
-  not land while any of them is open or unverified.
+  sase-13p, sase-1gx, sase-14o, sase-1h1, sase-1f0, sase-1br and sase-18v. The epic
+  does not land while any of them is open or unverified.
 
-  "
+  '
 decisions:
   release_red_master:
-    ask:
-      If master CI is still red for unrelated reasons at release time, how should the
-      release phase proceed?
+    ask: If master CI is still red for unrelated reasons at release time, how should
+      the release phase proceed?
     default: fix_master
     choices:
-      fix_master:
-        The release phase makes Master Gate and Full CI green itself, then ci_watch
-        merges.
-      ask_bypass:
-        After release-specific checks pass, a gate asks you to approve hand-merging the
-        release PR.
-    why:
-      ci_watch's green-master release gate is a deliberate safety check; keep it unless
-      you waive it.
+      fix_master: The release phase makes Master Gate and Full CI green itself, then
+        ci_watch merges.
+      ask_bypass: After release-specific checks pass, a gate asks you to approve hand-merging
+        the release PR.
+    why: ci_watch's green-master release gate is a deliberate safety check; keep it
+      unless you waive it.
     answer: fix_master
   plugin_floors:
-    ask:
-      Also raise and republish the sase floors of sase-telegram and sase-github if they
-      don't resolve?
+    ask: Also raise and republish the sase floors of sase-telegram and sase-github
+      if they don't resolve?
     default: true
     why: Today their published versions silently fall back to sase 0.1.0.
     answer: true
 phases:
-  - id: runs-public
-    title: Make the instructions run-index module public (sase-1h6)
-    depends_on: []
-    size: small
-    description:
-      "runs-public: rename src/sase/instructions/_runs.py to a public module, update
-      every importer, verify symvision has no _runs private-import findings, and close
-      sase-1h6."
-  - id: prompt-store-cycle
-    title: Break the prompt_store_mutations import cycle (sase-1h2)
-    depends_on: []
-    size: small
-    description:
-      "prompt-store-cycle: make importing sase.history.prompt_store_mutations
-      order-independent, add fresh-interpreter regression tests for it and its lazy
-      launch callers, and close sase-1h2."
-  - id: readonly-bead-store
-    title: Read-only bead resolution never initializes or commits (sase-1gx)
-    depends_on: []
-    size: medium
-    description:
-      "readonly-bead-store: make get_read_view open an existing store or raise a typed
-      unavailable error, move genuine writers to get_project, add no-write regression
-      tests, and close sase-1gx."
-  - id: test-host-leaks
-    title:
-      Isolate tests from the live bead store and long basetemps (sase-14o, sase-18v)
-    depends_on: []
-    size: small
-    description:
-      "test-host-leaks: isolate the bead and plan resolvers in the absent-store and
-      plan-candidate tests, make the three Rich path assertions basetemp-independent,
-      and close sase-14o and sase-18v."
-  - id: macro-arg-spans
-    title: TUI macro-arg detection uses sase-core structural spans (sase-1h1)
-    depends_on: []
-    size: medium
-    description:
-      "macro-arg-spans: replace raw comma and paren splitting in the TUI macro-arg
-      detector with sase-core argument spans, add quoted-comma and quoted-paren golden
-      fixtures in both repos, and close sase-1h1."
-  - id: demand-rss-flake
-    title: Guarantee a nonzero peak RSS for every recorded run (sase-1f0)
-    depends_on: []
-    size: medium
-    description:
-      "demand-rss-flake: make the tree-RSS sampler record a real peak even for children
-      that exit before the first sample, prove the node is stable under repetition and
-      load, and close sase-1f0."
-  - id: deck-scroll-settle
-    title: Deterministic deck anchor-scroll settling (sase-1br)
-    depends_on: []
-    size: medium
-    description:
-      "deck-scroll-settle: root-cause and fix the deck anchor-scroll settle race behind
-      the block-spread pilot timeout, share one settle wait across deck pilots, prove
-      stability by repetition, and close sase-1br."
-  - id: import-budget
-    title: Get under the TUI import budget and make it a ratchet (sase-13p)
-    depends_on:
-      - macro-arg-spans
-      - deck-scroll-settle
-    size: medium
-    description:
-      "import-budget: defer eager TUI startup imports to at least 30 modules under the
-      cap, lower the cap to measured plus 20, add an attribution tool, document the
-      ratchet policy, and close sase-13p."
-  - id: release
-    title: Release sase-core and sase, then move plugin floors (sase-10d)
-    depends_on:
-      - runs-public
-      - prompt-store-cycle
-      - readonly-bead-store
-      - test-host-leaks
-      - macro-arg-spans
-      - demand-rss-flake
-      - deck-scroll-settle
-      - import-budget
-    size: large
-    description:
-      "release: publish a sase-core release containing sase's pin, ratchet the release
-      branch, get the sase release gates green and publish sase, raise plugin floors,
-      verify fresh installs, and close sase-10d."
+- id: runs-public
+  title: Make the instructions run-index module public (sase-1h6)
+  depends_on: []
+  size: small
+  description: 'runs-public: rename src/sase/instructions/_runs.py to a public module,
+    update every importer, verify symvision has no _runs private-import findings,
+    and close sase-1h6.'
+- id: prompt-store-cycle
+  title: Break the prompt_store_mutations import cycle (sase-1h2)
+  depends_on: []
+  size: small
+  description: 'prompt-store-cycle: make importing sase.history.prompt_store_mutations
+    order-independent, add fresh-interpreter regression tests for it and its lazy
+    launch callers, and close sase-1h2.'
+- id: readonly-bead-store
+  title: Read-only bead resolution never initializes or commits (sase-1gx)
+  depends_on: []
+  size: medium
+  description: 'readonly-bead-store: make get_read_view open an existing store or
+    raise a typed unavailable error, move genuine writers to get_project, add no-write
+    regression tests, and close sase-1gx.'
+- id: test-host-leaks
+  title: Isolate tests from the live bead store and long basetemps (sase-14o, sase-18v)
+  depends_on: []
+  size: small
+  description: 'test-host-leaks: isolate the bead and plan resolvers in the absent-store
+    and plan-candidate tests, make the three Rich path assertions basetemp-independent,
+    and close sase-14o and sase-18v.'
+- id: macro-arg-spans
+  title: TUI macro-arg detection uses sase-core structural spans (sase-1h1)
+  depends_on: []
+  size: medium
+  description: 'macro-arg-spans: replace raw comma and paren splitting in the TUI
+    macro-arg detector with sase-core argument spans, add quoted-comma and quoted-paren
+    golden fixtures in both repos, and close sase-1h1.'
+- id: demand-rss-flake
+  title: Guarantee a nonzero peak RSS for every recorded run (sase-1f0)
+  depends_on: []
+  size: medium
+  description: 'demand-rss-flake: make the tree-RSS sampler record a real peak even
+    for children that exit before the first sample, prove the node is stable under
+    repetition and load, and close sase-1f0.'
+- id: deck-scroll-settle
+  title: Deterministic deck anchor-scroll settling (sase-1br)
+  depends_on: []
+  size: medium
+  description: 'deck-scroll-settle: root-cause and fix the deck anchor-scroll settle
+    race behind the block-spread pilot timeout, share one settle wait across deck
+    pilots, prove stability by repetition, and close sase-1br.'
+- id: import-budget
+  title: Get under the TUI import budget and make it a ratchet (sase-13p)
+  depends_on:
+  - macro-arg-spans
+  - deck-scroll-settle
+  size: medium
+  description: 'import-budget: defer eager TUI startup imports to at least 30 modules
+    under the cap, lower the cap to measured plus 20, add an attribution tool, document
+    the ratchet policy, and close sase-13p.'
+- id: release
+  title: Release sase-core and sase, then move plugin floors (sase-10d)
+  depends_on:
+  - runs-public
+  - prompt-store-cycle
+  - readonly-bead-store
+  - test-host-leaks
+  - macro-arg-spans
+  - demand-rss-flake
+  - deck-scroll-settle
+  - import-budget
+  size: large
+  description: 'release: publish a sase-core release containing sase''s pin, ratchet
+    the release branch, get the sase release gates green and publish sase, raise plugin
+    floors, verify fresh installs, and close sase-10d.'
 proposed_by: bbugyi200.athena.0y8
 decided_by: auto
 create_time: 2026-10-08 09:47:14
 status: wip
+bead_id: sase-1i5
 ---
 
-- **PROMPT:**
-  [prompts/202610/close_top_ten_impact_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/close_top_ten_impact_task_beads.md)
+- **PROMPT:** [prompts/202610/close_top_ten_impact_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/close_top_ten_impact_task_beads.md)
+- **BEAD:** [sase-1i5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1i5/README.md)
 
 <!-- sase:links:start -->
 
