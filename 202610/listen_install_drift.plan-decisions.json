@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "How should `sase-listen doctor` treat a renderer/feed-host build mismatch?",
+      "choices": [
+        {
+          "key": "fail",
+          "label": "`feed:host-build` FAILs (doctor exits 3) on any known build mismatch"
+        },
+        {
+          "key": "warn",
+          "label": "`feed:host-build` stays ok but its detail names both builds and the fix"
+        }
+      ],
+      "default": "fail",
+      "effective_default": "fail",
+      "id": "doctor_skew",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Drift is the failure class we hit; doctor is diagnostic-only and nothing gates on it."
+    },
+    {
+      "ask": "Should a successful remote publish add a warning when the feed host's build differs?",
+      "default": true,
+      "effective_default": true,
+      "id": "publish_skew_warning",
+      "kind": "toggle",
+      "requested_verified": false,
+      "why": "Users rarely run doctor; the publish/render output is where drift must surface."
+    },
+    {
+      "ask": "Refresh the apollo, athena, and mac sase-listen installs to origin/master as part of this work?",
+      "default": true,
+      "effective_default": true,
+      "id": "rollout_installs",
+      "kind": "toggle",
+      "requested_verified": false,
+      "why": "All three run different stale commits today; the mac is 10 commits behind."
+    }
+  ]
+}
