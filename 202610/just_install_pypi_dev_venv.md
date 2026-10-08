@@ -1,170 +1,154 @@
 ---
 tier: epic
-title: "just install / install-dev / install-venv: three honest install commands"
-goal: "`just install` installs the latest sase release from PyPI as the user's `sase`
+title: 'just install / install-dev / install-venv: three honest install commands'
+goal: '`just install` installs the latest sase release from PyPI as the user''s `sase`
   command, `just install-dev` installs this checkout plus its pin-paired sase-core
-  (editable) in exactly the shape `sase update` maintains, and today's venv recipes live
-  on as `just install-venv*`. Every consumer is migrated: CI, the tool catalog, runtime
-  remedies, docs, memory, sase-core strings, the plugin repos, and the chezmoi
+  (editable) in exactly the shape `sase update` maintains, and today''s venv recipes
+  live on as `just install-venv*`. Every consumer is migrated: CI, the tool catalog,
+  runtime remedies, docs, memory, sase-core strings, the plugin repos, and the chezmoi
   `acei`/`aceii` installers.
 
-  "
+  '
 decisions:
   lint_and_test_note:
-    ask:
-      Update lint_and_test.md to name `just install-venv` wherever it says `just
+    ask: Update lint_and_test.md to name `just install-venv` wherever it says `just
       install`?
     memory:
-      - lint_and_test.md
+    - lint_and_test.md
     default: true
-    requested:
-      These commands are necessary but their names are not intuitive. Can we rename them
-      to `just install-venv` / `just install-venv-*`? This will likely require updating
-      some memory files.
+    requested: These commands are necessary but their names are not intuitive. Can
+      we rename them to `just install-venv` / `just install-venv-*`? This will likely
+      require updating some memory files.
     answer: true
   symvision_note:
     ask: Update symvision.md's verify step to run `just install-venv`?
     memory:
-      - symvision.md
+    - symvision.md
     default: true
-    requested:
-      These commands are necessary but their names are not intuitive. Can we rename them
-      to `just install-venv` / `just install-venv-*`? This will likely require updating
-      some memory files.
+    requested: These commands are necessary but their names are not intuitive. Can
+      we rename them to `just install-venv` / `just install-venv-*`? This will likely
+      require updating some memory files.
     answer: true
   human_only_record:
-    ask:
-      Add a decisions record that the global installers are human-only (agent refusal
+    ask: Add a decisions record that the global installers are human-only (agent refusal
       plus explicit bypass)?
     memory:
-      - decisions
+    - decisions
     default: true
-    requested:
-      Review the just_install_pypi_dev_venv_split.md file in the research sidecar repo
-      for context and inspiration before planning. I agree with all of the requirements
-      recommended in that research file.
+    requested: Review the just_install_pypi_dev_venv_split.md file in the research
+      sidecar repo for context and inspiration before planning. I agree with all of
+      the requirements recommended in that research file.
     answer: true
 phases:
-  - id: venv-rename
-    title: Rename the venv recipes to install-venv and park bare install
-    depends_on: []
-    size: medium
-    description:
-      "venv-rename: consolidate the three copy-pasted venv recipes into `_install-venv
-      EXTRAS`, expose them as the `[install]` group's `install-venv*`, park bare
-      `install` behind a loud exit-2 placeholder, and migrate CI, the tool catalog,
-      tests, docs, tools/ strings, the sase_monitor skill source, and the
-      lint_and_test/symvision memory notes."
-  - id: engine-core
-    title: Installer engine foundation and dry-run planning
-    depends_on: []
-    size: medium
-    description:
-      "engine-core: create the stdlib-only `tools/sase_install` engine with its CLI,
-      agent and durable-source guards, receipt/env snapshot, plugin source policy,
-      consequential-change classification, argv/overrides parity with `sase.uv_tool`,
-      the plan panel and JSON renderers, and the confirmation policy, with `-n` working
-      for both modes."
-  - id: remedies
-    title: Context-aware reinstall remedies in runtime code
-    depends_on:
-      - venv-rename
-    size: small
-    description:
-      "remedies: add one install-context helper that picks `sase update`, `just
-      install-dev`, or `just install-venv` and route every src/ reinstall hint
-      (core/rust.py, query facades, doctor, completion finalizer) through it; doctor's
-      import-root-drift warning stops suggesting a global reinstall."
-  - id: rust-recipes
-    title: Make the Rust dev-install recipes honest
-    depends_on:
-      - venv-rename
-    size: small
-    description:
-      "rust-recipes: make `rust-dev-install` write the core source stamp, make the
-      `*-uv-tool` recipes fail when uv or the tool env is missing, give the rust recipes
-      `[group('rust')]` and `[doc]`, and align `sase update --to dev`'s core step with
-      the dev-update `rust-dev-install-uv-tool` shape."
-  - id: engine-pypi
-    title: Execution pipeline and the live `just install`
-    depends_on:
-      - venv-rename
-      - engine-core
-    size: medium
-    description:
-      "engine-pypi: build the shared pipeline (progress renderer, log, code-swap lock,
-      backup and restore command, uv swap, verification, scheduler restart, summary) and
-      ship PyPI mode end to end by replacing the bare `install` placeholder."
-  - id: dev-core-prep
-    title: sase-core pairing and pre-swap preparation
-    depends_on:
-      - engine-core
-    size: medium
-    description:
-      "dev-core-prep: implement the core pairing rule (resolve, clone, fetch,
-      fast-forward, pin containment), the `--sync` fatal sync gate, the version-window
-      check, the SASE_ALLOW_STALE_CORE escape hatch, and the pre-swap build check, all
-      surfaced as dev plan rows."
-  - id: plugin-repos
-    title: Rename install to install-venv in the plugin repos
-    depends_on:
-      - venv-rename
-    size: medium
-    description:
-      "plugin-repos: in sase-github, sase-telegram, sase-research-artifacts, and
-      sase-listen, rename the venv recipe to a grouped, documented `install-venv`, keep
-      `install` as a private forwarding alias that names the new recipe, and migrate
-      each repo's CI, tests, and docs."
-  - id: engine-dev
-    title: The live `just install-dev`
-    depends_on:
-      - engine-pypi
-      - dev-core-prep
-      - rust-recipes
-    size: medium
-    description:
-      "engine-dev: wire dev mode through the pipeline (dev swap argv and overrides, core
-      plus LSP re-apply via `rust-dev-install-uv-tool`, stamp check, dev verification
-      including `sase update -n -j` agreement, repeat-run no-op) and add the
-      `install-dev` recipe."
-  - id: core-strings
-    title: Point sase-core's remedies at the new names
-    depends_on:
-      - engine-dev
-      - plugin-repos
-    size: small
-    description:
-      "core-strings: in linked sase-core, change the triage environment remedies and
-      verdict remedy to `just install-venv`, change the bead JSONL unknown-operation
-      remedy to `sase update` / `just install-dev`, regenerate goldens and tests, and
-      let the dual-repo commit move sase's core pin."
-  - id: chezmoi-acei
-    title: Retire the chezmoi installers into install-dev
-    depends_on:
-      - engine-dev
-    size: small
-    description:
-      "chezmoi-acei: point `acei`/`aceii` at `just install-dev --sync -y` on the durable
-      sase checkout and delete the drifted install_sase_github/install_sase_google
-      scripts and their bash test."
-  - id: install-docs
-    title: Document the three commands and record the human-only rule
-    depends_on:
-      - engine-dev
-    size: small
-    description:
-      "install-docs: add INSTALL.md's checkout section, a
-      your-sase-versus-the-checkout's-venv guide in docs/development.md,
-      README/CONTRIBUTING pointers, and the new `global-install-is-human-only` decisions
-      strand."
+- id: venv-rename
+  title: Rename the venv recipes to install-venv and park bare install
+  depends_on: []
+  size: medium
+  description: 'venv-rename: consolidate the three copy-pasted venv recipes into `_install-venv
+    EXTRAS`, expose them as the `[install]` group''s `install-venv*`, park bare `install`
+    behind a loud exit-2 placeholder, and migrate CI, the tool catalog, tests, docs,
+    tools/ strings, the sase_monitor skill source, and the lint_and_test/symvision
+    memory notes.'
+- id: engine-core
+  title: Installer engine foundation and dry-run planning
+  depends_on: []
+  size: medium
+  description: 'engine-core: create the stdlib-only `tools/sase_install` engine with
+    its CLI, agent and durable-source guards, receipt/env snapshot, plugin source
+    policy, consequential-change classification, argv/overrides parity with `sase.uv_tool`,
+    the plan panel and JSON renderers, and the confirmation policy, with `-n` working
+    for both modes.'
+- id: remedies
+  title: Context-aware reinstall remedies in runtime code
+  depends_on:
+  - venv-rename
+  size: small
+  description: 'remedies: add one install-context helper that picks `sase update`,
+    `just install-dev`, or `just install-venv` and route every src/ reinstall hint
+    (core/rust.py, query facades, doctor, completion finalizer) through it; doctor''s
+    import-root-drift warning stops suggesting a global reinstall.'
+- id: rust-recipes
+  title: Make the Rust dev-install recipes honest
+  depends_on:
+  - venv-rename
+  size: small
+  description: 'rust-recipes: make `rust-dev-install` write the core source stamp,
+    make the `*-uv-tool` recipes fail when uv or the tool env is missing, give the
+    rust recipes `[group(''rust'')]` and `[doc]`, and align `sase update --to dev`''s
+    core step with the dev-update `rust-dev-install-uv-tool` shape.'
+- id: engine-pypi
+  title: Execution pipeline and the live `just install`
+  depends_on:
+  - venv-rename
+  - engine-core
+  size: medium
+  description: 'engine-pypi: build the shared pipeline (progress renderer, log, code-swap
+    lock, backup and restore command, uv swap, verification, scheduler restart, summary)
+    and ship PyPI mode end to end by replacing the bare `install` placeholder.'
+- id: dev-core-prep
+  title: sase-core pairing and pre-swap preparation
+  depends_on:
+  - engine-core
+  size: medium
+  description: 'dev-core-prep: implement the core pairing rule (resolve, clone, fetch,
+    fast-forward, pin containment), the `--sync` fatal sync gate, the version-window
+    check, the SASE_ALLOW_STALE_CORE escape hatch, and the pre-swap build check, all
+    surfaced as dev plan rows.'
+- id: plugin-repos
+  title: Rename install to install-venv in the plugin repos
+  depends_on:
+  - venv-rename
+  size: medium
+  description: 'plugin-repos: in sase-github, sase-telegram, sase-research-artifacts,
+    and sase-listen, rename the venv recipe to a grouped, documented `install-venv`,
+    keep `install` as a private forwarding alias that names the new recipe, and migrate
+    each repo''s CI, tests, and docs.'
+- id: engine-dev
+  title: The live `just install-dev`
+  depends_on:
+  - engine-pypi
+  - dev-core-prep
+  - rust-recipes
+  size: medium
+  description: 'engine-dev: wire dev mode through the pipeline (dev swap argv and
+    overrides, core plus LSP re-apply via `rust-dev-install-uv-tool`, stamp check,
+    dev verification including `sase update -n -j` agreement, repeat-run no-op) and
+    add the `install-dev` recipe.'
+- id: core-strings
+  title: Point sase-core's remedies at the new names
+  depends_on:
+  - engine-dev
+  - plugin-repos
+  size: small
+  description: 'core-strings: in linked sase-core, change the triage environment remedies
+    and verdict remedy to `just install-venv`, change the bead JSONL unknown-operation
+    remedy to `sase update` / `just install-dev`, regenerate goldens and tests, and
+    let the dual-repo commit move sase''s core pin.'
+- id: chezmoi-acei
+  title: Retire the chezmoi installers into install-dev
+  depends_on:
+  - engine-dev
+  size: small
+  description: 'chezmoi-acei: point `acei`/`aceii` at `just install-dev --sync -y`
+    on the durable sase checkout and delete the drifted install_sase_github/install_sase_google
+    scripts and their bash test.'
+- id: install-docs
+  title: Document the three commands and record the human-only rule
+  depends_on:
+  - engine-dev
+  size: small
+  description: 'install-docs: add INSTALL.md''s checkout section, a your-sase-versus-the-checkout''s-venv
+    guide in docs/development.md, README/CONTRIBUTING pointers, and the new `global-install-is-human-only`
+    decisions strand.'
 proposed_by: bbugyi200.athena.0ym
 decided_by: auto
 create_time: 2026-10-08 18:23:25
 status: wip
+bead_id: sase-1ig
 ---
 
-- **PROMPT:**
-  [prompts/202610/just_install_pypi_dev_venv.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/just_install_pypi_dev_venv.md)
+- **PROMPT:** [prompts/202610/just_install_pypi_dev_venv.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/just_install_pypi_dev_venv.md)
+- **BEAD:** [sase-1ig](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ig/README.md)
 
 # Plan: three honest install commands
 
