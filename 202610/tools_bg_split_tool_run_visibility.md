@@ -1,69 +1,65 @@
 ---
 tier: epic
-title: "tools: / bg: top-bar split and ⚒ tool-run visibility in tribes and clans"
-goal: "The top bar tells the truth: a `tools:` group shows every live `sase tool` run on
-  the machine with the ⚒ identity (ledger-sourced, fresh on every tab, never a false
-  zero), and `bg:` shows only the TUI's own background procs. Each run is drawn exactly
-  once. Every Agents-tab surface (concrete rows, session containers, local clan rows,
-  tribe titles including rail and collapsed titles, and selection headers) shows ⚒ where
-  the work is happening.
+title: 'tools: / bg: top-bar split and ⚒ tool-run visibility in tribes and clans'
+goal: 'The top bar tells the truth: a `tools:` group shows every live `sase tool`
+  run on the machine with the ⚒ identity (ledger-sourced, fresh on every tab, never
+  a false zero), and `bg:` shows only the TUI''s own background procs. Each run is
+  drawn exactly once. Every Agents-tab surface (concrete rows, session containers,
+  local clan rows, tribe titles including rail and collapsed titles, and selection
+  headers) shows ⚒ where the work is happening.
 
-  "
+  '
 phases:
-  - id: tool-proc-facts
-    title: Tool-run proc facts (session stamping and join tags)
-    depends_on: []
-    size: small
-    description:
-      "tool-proc-facts: stamp a tool-run proc's session only when a live TUI submitted
-      it; tag join monitors `tool-run-join:<id>` and teach the Procs pane to follow that
-      tag."
-  - id: core-glance-join
-    title: Join fact on the ToolRun live glance (sase-core plus mirror)
-    depends_on: []
-    size: medium
-    description:
-      "core-glance-join: add optional `join_kind`/`join_id` to the sase-core live-glance
-      wire (batch-loaded), cover it with binding tests, and mirror it on Python
-      `ToolRunGlance`. Commit both repos in one declaration so the pin moves."
-  - id: top-bar-tools-bg
-    title: Top-bar tools and bg split with tab-independent glance refresh
-    depends_on:
-      - tool-proc-facts
-    size: medium
-    description:
-      "top-bar-tools-bg: carrier classifier and the bg/tool/monitor/update partition;
-      new ToolsIndicator (live, silent, bare-monitor chips, tooltip, all-projects
-      click); ProcIndicator becomes `bg:`; the glance probe runs on every tab with stale
-      and fallback states; Procs header ⚒ chip; top-bar docs, tests and goldens."
-  - id: agents-tool-attribution
-    title: Agents-tab attribution index and container rollups
-    depends_on:
-      - core-glance-join
-      - top-bar-tools-bg
-    size: medium
-    description:
-      "agents-tool-attribution: build the run-to-node index once per generation (owner,
-      joiner, starter, reused-name guard); roll runs up into session-container and local
-      clan rows in one container badge slot; patch changed container rows; attribution
-      matrix tests and row goldens."
-  - id: tribe-titles-headers
-    title: Tribe titles, rail titles, clan and tribe headers, docs and help
-    depends_on:
-      - agents-tool-attribution
-    size: medium
-    description:
-      "tribe-titles-headers: ⚒N/⚒⚠M on tribe border, collapsed and rail titles with
-      targeted title refresh; clan header chip and Tool runs field through a union
-      selector; tribe detail header and Summary card line; Agents-tab docs, help glyph
-      rows and goldens; record follow-ups."
+- id: tool-proc-facts
+  title: Tool-run proc facts (session stamping and join tags)
+  depends_on: []
+  size: small
+  description: 'tool-proc-facts: stamp a tool-run proc''s session only when a live
+    TUI submitted it; tag join monitors `tool-run-join:<id>` and teach the Procs pane
+    to follow that tag.'
+- id: core-glance-join
+  title: Join fact on the ToolRun live glance (sase-core plus mirror)
+  depends_on: []
+  size: medium
+  description: 'core-glance-join: add optional `join_kind`/`join_id` to the sase-core
+    live-glance wire (batch-loaded), cover it with binding tests, and mirror it on
+    Python `ToolRunGlance`. Commit both repos in one declaration so the pin moves.'
+- id: top-bar-tools-bg
+  title: Top-bar tools and bg split with tab-independent glance refresh
+  depends_on:
+  - tool-proc-facts
+  size: medium
+  description: 'top-bar-tools-bg: carrier classifier and the bg/tool/monitor/update
+    partition; new ToolsIndicator (live, silent, bare-monitor chips, tooltip, all-projects
+    click); ProcIndicator becomes `bg:`; the glance probe runs on every tab with stale
+    and fallback states; Procs header ⚒ chip; top-bar docs, tests and goldens.'
+- id: agents-tool-attribution
+  title: Agents-tab attribution index and container rollups
+  depends_on:
+  - core-glance-join
+  - top-bar-tools-bg
+  size: medium
+  description: 'agents-tool-attribution: build the run-to-node index once per generation
+    (owner, joiner, starter, reused-name guard); roll runs up into session-container
+    and local clan rows in one container badge slot; patch changed container rows;
+    attribution matrix tests and row goldens.'
+- id: tribe-titles-headers
+  title: Tribe titles, rail titles, clan and tribe headers, docs and help
+  depends_on:
+  - agents-tool-attribution
+  size: medium
+  description: 'tribe-titles-headers: ⚒N/⚒⚠M on tribe border, collapsed and rail titles
+    with targeted title refresh; clan header chip and Tool runs field through a union
+    selector; tribe detail header and Summary card line; Agents-tab docs, help glyph
+    rows and goldens; record follow-ups.'
 proposed_by: bbugyi200.athena.research.43.linker.w0
 create_time: 2026-10-08 18:31:51
 status: wip
+bead_id: sase-1ih
 ---
 
-- **PROMPT:**
-  [prompts/202610/tools_bg_split_tool_run_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tools_bg_split_tool_run_visibility.md)
+- **PROMPT:** [prompts/202610/tools_bg_split_tool_run_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tools_bg_split_tool_run_visibility.md)
+- **BEAD:** [sase-1ih](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ih/README.md)
 
 # Plan: `tools:` / `bg:` split and ⚒ tool-run visibility
 
