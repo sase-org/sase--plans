@@ -1,118 +1,108 @@
 ---
 tier: epic
 title: Update-Skew Agent Auto-Restart
-goal:
-  When a live sase update breaks a running agent before its model turn, sase puts it
-  back once, under the same name, exactly as `,x` plus an unmodified submit would, and
-  tells the user what it did and why in one calm amber ↻ story. Every other
-  update-shaped failure is surfaced with its reason and never silently swallowed. The
-  refresh-path bug behind the 2026-10-09 incident can no longer recur.
+goal: When a live sase update breaks a running agent before its model turn, sase puts
+  it back once, under the same name, exactly as `,x` plus an unmodified submit would,
+  and tells the user what it did and why in one calm amber ↻ story. Every other update-shaped
+  failure is surfaced with its reason and never silently swallowed. The refresh-path
+  bug behind the 2026-10-09 incident can no longer recur.
 decisions:
   decision_record:
-    ask:
-      Add a decisions-web record for this design (update-skew restarts are at most once
-      per lineage, pre-provider only)?
+    ask: Add a decisions-web record for this design (update-skew restarts are at most
+      once per lineage, pre-provider only)?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 phases:
-  - id: refresh-exec-first
-    title: Exec-first runner refresh and import firewall
-    depends_on: []
-    size: small
-    description:
-      "refresh-exec-first: remove every lazy sase import between the HEAD-moved check
-      and os.execv in refresh_runner_code_after_wait, move the %auto reconcile into the
-      refreshed process, and add an import-firewall test."
-  - id: failure-facts
-    title: Runner boot identity, lifecycle breadcrumbs, and failure facts
-    depends_on: []
-    size: medium
-    description:
-      "failure-facts: persist the runner's boot code identity and lifecycle-phase
-      breadcrumbs in agent_meta, and record stdlib-only structured failure facts plus a
-      skew-suspect prefilter in done.json at every runner failure writer."
-  - id: core-verdict
-    title: sase-core failure classifier, ledger state machine, and recovery wire
-    depends_on:
-      - failure-facts
-    size: medium
-    description:
-      "core-verdict: add the agent_auto_restart domain to sase-core (facts, witness, and
-      verdict wires, the family-based classifier, ledger transitions, episode ids, the
-      done-marker recovery field and status bucket, and the ↻ report glyph), then the
-      Python adapter and the core pin bump."
-  - id: witness-scan
-    title: Skew witnesses and the read-only scan command
-    depends_on:
-      - core-verdict
-    size: medium
-    description:
-      "witness-scan: collect managed roots and the W1-W3 witnesses (boot identity drift,
-      update journal, file-level proof with the culprit commit), build legacy inputs
-      from logs, and ship `sase agent auto-restart scan` for corpus replay."
-  - id: healer
-    title: The healer, at-most-once ledger, and auto-restart CLI
-    depends_on:
-      - witness-scan
-    size: medium
-    description:
-      "healer: implement `sase agent auto-restart run`, which claims the ledger,
-      classifies the failure, checks quiescence, runs the fresh-interpreter probe,
-      applies the skip rules and storm breaker, preserves evidence, and relaunches
-      headlessly through plan/execute_agent_restart with provenance. Also adds the
-      config block, the beta flag, and the list/show/resume commands."
-  - id: trigger
-    title: Runner doorbell, scheduler job, and waiter safety
-    depends_on:
-      - healer
-    size: medium
-    description:
-      "trigger: have the dying runner drop a stdlib doorbell, mark recovery pending, and
-      silence its failure notification. Add the fs-triggered scheduler job that sweeps
-      and submits the healer as a durable proc. Keep waiters and wait_checks correct
-      while a recovery is in flight."
-  - id: episode-notify
-    title: One upserted ↻ notification and live report per update episode
-    depends_on:
-      - healer
-    size: medium
-    description:
-      "episode-notify: replace the healer's minimal notifications with the designed
-      experience: one upserted amber ↻ episode notification with a live ChopReport,
-      title refresh without re-toasting, exactly one information toast, and the loud
-      escalation copy."
-  - id: ux-surfaces
-    title: Agents-tab ↻ RESTARTING state, provenance line, help, and update hint
-    depends_on:
-      - healer
-    size: medium
-    description:
-      "ux-surfaces: render in-flight recoveries as amber ↻ RESTARTING with a dim reason,
-      add decline hints and the replacement's ↻ provenance line with its preserved error
-      report as a `v` file hint, and update the help modal and the `sase update`
-      advisory hint, with visual snapshots."
-  - id: land
-    title: Remove the beta flag, document, and replay the incident end to end
-    depends_on:
-      - refresh-exec-first
-      - trigger
-      - episode-notify
-      - ux-surfaces
-    size: small
-    description:
-      "land: delete the agent_auto_restart flag's Off branches and close its bead, write
-      the user-facing doc, add the end-to-end incident replay acceptance test, and
-      record the deferred follow-ups."
+- id: refresh-exec-first
+  title: Exec-first runner refresh and import firewall
+  depends_on: []
+  size: small
+  description: 'refresh-exec-first: remove every lazy sase import between the HEAD-moved
+    check and os.execv in refresh_runner_code_after_wait, move the %auto reconcile
+    into the refreshed process, and add an import-firewall test.'
+- id: failure-facts
+  title: Runner boot identity, lifecycle breadcrumbs, and failure facts
+  depends_on: []
+  size: medium
+  description: 'failure-facts: persist the runner''s boot code identity and lifecycle-phase
+    breadcrumbs in agent_meta, and record stdlib-only structured failure facts plus
+    a skew-suspect prefilter in done.json at every runner failure writer.'
+- id: core-verdict
+  title: sase-core failure classifier, ledger state machine, and recovery wire
+  depends_on:
+  - failure-facts
+  size: medium
+  description: 'core-verdict: add the agent_auto_restart domain to sase-core (facts,
+    witness, and verdict wires, the family-based classifier, ledger transitions, episode
+    ids, the done-marker recovery field and status bucket, and the ↻ report glyph),
+    then the Python adapter and the core pin bump.'
+- id: witness-scan
+  title: Skew witnesses and the read-only scan command
+  depends_on:
+  - core-verdict
+  size: medium
+  description: 'witness-scan: collect managed roots and the W1-W3 witnesses (boot
+    identity drift, update journal, file-level proof with the culprit commit), build
+    legacy inputs from logs, and ship `sase agent auto-restart scan` for corpus replay.'
+- id: healer
+  title: The healer, at-most-once ledger, and auto-restart CLI
+  depends_on:
+  - witness-scan
+  size: medium
+  description: 'healer: implement `sase agent auto-restart run`, which claims the
+    ledger, classifies the failure, checks quiescence, runs the fresh-interpreter
+    probe, applies the skip rules and storm breaker, preserves evidence, and relaunches
+    headlessly through plan/execute_agent_restart with provenance. Also adds the config
+    block, the beta flag, and the list/show/resume commands.'
+- id: trigger
+  title: Runner doorbell, scheduler job, and waiter safety
+  depends_on:
+  - healer
+  size: medium
+  description: 'trigger: have the dying runner drop a stdlib doorbell, mark recovery
+    pending, and silence its failure notification. Add the fs-triggered scheduler
+    job that sweeps and submits the healer as a durable proc. Keep waiters and wait_checks
+    correct while a recovery is in flight.'
+- id: episode-notify
+  title: One upserted ↻ notification and live report per update episode
+  depends_on:
+  - healer
+  size: medium
+  description: 'episode-notify: replace the healer''s minimal notifications with the
+    designed experience: one upserted amber ↻ episode notification with a live ChopReport,
+    title refresh without re-toasting, exactly one information toast, and the loud
+    escalation copy.'
+- id: ux-surfaces
+  title: Agents-tab ↻ RESTARTING state, provenance line, help, and update hint
+  depends_on:
+  - healer
+  size: medium
+  description: 'ux-surfaces: render in-flight recoveries as amber ↻ RESTARTING with
+    a dim reason, add decline hints and the replacement''s ↻ provenance line with
+    its preserved error report as a `v` file hint, and update the help modal and the
+    `sase update` advisory hint, with visual snapshots.'
+- id: land
+  title: Remove the beta flag, document, and replay the incident end to end
+  depends_on:
+  - refresh-exec-first
+  - trigger
+  - episode-notify
+  - ux-surfaces
+  size: small
+  description: 'land: delete the agent_auto_restart flag''s Off branches and close
+    its bead, write the user-facing doc, add the end-to-end incident replay acceptance
+    test, and record the deferred follow-ups.'
 proposed_by: bbugyi200.athena.research.47.linker.w0
 decided_by: auto
 create_time: 2026-10-09 15:02:02
 status: wip
+bead_id: sase-1j6
 ---
 
-- **PROMPT:**
-  [prompts/202610/update_skew_agent_auto_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/update_skew_agent_auto_restart.md)
+- **PROMPT:** [prompts/202610/update_skew_agent_auto_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/update_skew_agent_auto_restart.md)
+- **BEAD:** [sase-1j6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1j6/README.md)
 
 # Plan: Update-Skew Agent Auto-Restart
 
