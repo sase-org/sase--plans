@@ -1,18 +1,15 @@
 ---
 tier: tale
 size: small
-title:
-  Fix the replay-golden cap and lock_wait_ms flake, then land sase-1h8.13.1.9,
+title: Fix the replay-golden cap and lock_wait_ms flake, then land sase-1h8.13.1.9,
   sase-1h8.13.1 and sase-1h8.13
-goal:
-  The epic's replay-golden test file is back under the 1,500-line cap, and its goldens
-  no longer flake on wall-clock lock_wait_ms. Then epic sase-1h8.13.1.9, its parent plan
-  sase-1h8.13.1 and phase sase-1h8.13 close with verified evidence, and their plan files
-  are marked done.
+goal: The epic's replay-golden test file is back under the 1,500-line cap, and its
+  goldens no longer flake on wall-clock lock_wait_ms. Then epic sase-1h8.13.1.9, its
+  parent plan sase-1h8.13.1 and phase sase-1h8.13 close with verified evidence, and
+  their plan files are marked done.
 proposed_by: bbugyi200.athena.sase-1h8.13.1.9.land
 bead: sase-1h8.13.1.9
-create_time: 2026-10-09 03:56:35
-status: wip
+status: done
 ---
 
 - **PARENT:**
