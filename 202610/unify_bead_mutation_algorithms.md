@@ -1,108 +1,100 @@
 ---
 tier: epic
 title: One mutation algorithm per entry point, with every suite in both modes
-goal: "Every ordinary bead mutation runs one algorithm over MutationView, on both the
-  cached and the replay backing. The parallel MutableStore replay copies are deleted.
+goal: 'Every ordinary bead mutation runs one algorithm over MutationView, on both
+  the cached and the replay backing. The parallel MutableStore replay copies are deleted.
   The nine existing mutation suites run in cached and replay modes. Legacy and no-git
-  stores keep their bytes, proven by goldens. The over-cap read-model files return to
-  their pre-epic sizes. The landing of sase-1h8.13.1, and then of sase-1h8.13, can then
-  resume.
+  stores keep their bytes, proven by goldens. The over-cap read-model files return
+  to their pre-epic sizes. The landing of sase-1h8.13.1, and then of sase-1h8.13,
+  can then resume.
 
-  "
+  '
 parent_bead: sase-1h8.13.1
 phases:
-  - id: suite-modes
-    title: Run the nine existing mutation suites in cached and replay modes
-    depends_on: []
-    size: medium
-    description:
-      "suite-modes: make every test in the nine existing mutation suites run against
-      both a git-backed cached store and a plain replay store, without macro_rules;
-      assert cache equals replay after each cached mutating test; fix every parity
-      defect this exposes in the try_cached_* algorithms with a regression test."
-  - id: replay-goldens
-    title: Byte goldens for replay-backed mutations before any replay code is deleted
-    depends_on: []
-    size: medium
-    description:
-      "replay-goldens: generate committed byte-level goldens from the current replay
-      code for every ordinary mutation entry point, covering success and rejection on a
-      no-git event store and on a legacy issues.jsonl store, with an UPDATE_ env
-      regenerator. Later phases must keep them byte-identical."
-  - id: view-commit
-    title: View-owned staging and one commit on both backings; create and notes unified
-    depends_on:
-      - suite-modes
-      - replay-goldens
-    size: medium
-    description:
-      "view-commit: give MutationView config and event staging, lazy stream loading and
-      a single commit on both backings (the replay commit keeps MutableStore::save
-      semantics exactly), plus one runner that retries the same algorithm on the replay
-      backing when the cached path declines before any append; run create and the notes
-      family as single algorithms through it and delete their replay copies."
-  - id: unify-lifecycle
-    title: Open, close and remove as single view algorithms
-    depends_on:
-      - view-commit
-    size: medium
-    description:
-      "unify-lifecycle: run open, close, close-with-note and remove through the
-      view-commit runner on both backings, and delete the close_remove.rs replay copies
-      and its family stream-slot helper; suites and goldens stay green."
-  - id: unify-claims-deps
-    title: Claims, ready marking and dependencies as single view algorithms
-    depends_on:
-      - view-commit
-    size: medium
-    description:
-      "unify-claims-deps: run launch/wait claims, release, epic preclaim, mark/unmark
-      ready, and dependency and reference add/remove through the view-commit runner on
-      both backings, and delete their replay copies; suites and goldens stay green."
-  - id: unify-links-evidence
-    title: Links, +1 and snooze as single view algorithms
-    depends_on:
-      - view-commit
-    size: medium
-    description:
-      "unify-links-evidence: run link add/projections/remove, +1, snooze and cancel
-      through the view-commit runner on both backings, and delete their replay copies,
-      including apply_prepared_link_projections; suites and goldens stay green."
-  - id: caps-docs
-    title: Shrink the over-cap read-model files and fix the stale phase-approval docs
-    depends_on: []
-    size: small
-    description:
-      "caps-docs: move the read-model functions that publish-direct changed out of
-      read_model/store.rs (2,174 lines, 2,099 before the epic) and read_model/tail.rs
-      (1,554, 1,519 before) into new files, so tail.rs is at or under 1,500 and store.rs
-      at or under 2,099; in sase, fix the docs/beads.md sentence that still says phase
-      agents auto-approve epic-tier plans."
-  - id: proof
-    title:
-      Cleanup, single-algorithm audit, cached-equals-golden bytes, and acceptance
-      evidence
-    depends_on:
-      - unify-lifecycle
-      - unify-claims-deps
-      - unify-links-evidence
-      - caps-docs
-    size: medium
-    description:
-      "proof: delete what the unification left unused, including the view's
-      allow(dead_code); prove by search that MutableStore::load is reached only by the
-      view's replay backing and export_jsonl; assert that cached-mode golden scenarios
-      produce the golden bytes; rerun the parity and proof suites and the matched 1x/8x
-      bench; record acceptance evidence for the sase-1h8.13.1 and sase-1h8.13 landings."
+- id: suite-modes
+  title: Run the nine existing mutation suites in cached and replay modes
+  depends_on: []
+  size: medium
+  description: 'suite-modes: make every test in the nine existing mutation suites
+    run against both a git-backed cached store and a plain replay store, without macro_rules;
+    assert cache equals replay after each cached mutating test; fix every parity defect
+    this exposes in the try_cached_* algorithms with a regression test.'
+- id: replay-goldens
+  title: Byte goldens for replay-backed mutations before any replay code is deleted
+  depends_on: []
+  size: medium
+  description: 'replay-goldens: generate committed byte-level goldens from the current
+    replay code for every ordinary mutation entry point, covering success and rejection
+    on a no-git event store and on a legacy issues.jsonl store, with an UPDATE_ env
+    regenerator. Later phases must keep them byte-identical.'
+- id: view-commit
+  title: View-owned staging and one commit on both backings; create and notes unified
+  depends_on:
+  - suite-modes
+  - replay-goldens
+  size: medium
+  description: 'view-commit: give MutationView config and event staging, lazy stream
+    loading and a single commit on both backings (the replay commit keeps MutableStore::save
+    semantics exactly), plus one runner that retries the same algorithm on the replay
+    backing when the cached path declines before any append; run create and the notes
+    family as single algorithms through it and delete their replay copies.'
+- id: unify-lifecycle
+  title: Open, close and remove as single view algorithms
+  depends_on:
+  - view-commit
+  size: medium
+  description: 'unify-lifecycle: run open, close, close-with-note and remove through
+    the view-commit runner on both backings, and delete the close_remove.rs replay
+    copies and its family stream-slot helper; suites and goldens stay green.'
+- id: unify-claims-deps
+  title: Claims, ready marking and dependencies as single view algorithms
+  depends_on:
+  - view-commit
+  size: medium
+  description: 'unify-claims-deps: run launch/wait claims, release, epic preclaim,
+    mark/unmark ready, and dependency and reference add/remove through the view-commit
+    runner on both backings, and delete their replay copies; suites and goldens stay
+    green.'
+- id: unify-links-evidence
+  title: Links, +1 and snooze as single view algorithms
+  depends_on:
+  - view-commit
+  size: medium
+  description: 'unify-links-evidence: run link add/projections/remove, +1, snooze
+    and cancel through the view-commit runner on both backings, and delete their replay
+    copies, including apply_prepared_link_projections; suites and goldens stay green.'
+- id: caps-docs
+  title: Shrink the over-cap read-model files and fix the stale phase-approval docs
+  depends_on: []
+  size: small
+  description: 'caps-docs: move the read-model functions that publish-direct changed
+    out of read_model/store.rs (2,174 lines, 2,099 before the epic) and read_model/tail.rs
+    (1,554, 1,519 before) into new files, so tail.rs is at or under 1,500 and store.rs
+    at or under 2,099; in sase, fix the docs/beads.md sentence that still says phase
+    agents auto-approve epic-tier plans.'
+- id: proof
+  title: Cleanup, single-algorithm audit, cached-equals-golden bytes, and acceptance
+    evidence
+  depends_on:
+  - unify-lifecycle
+  - unify-claims-deps
+  - unify-links-evidence
+  - caps-docs
+  size: medium
+  description: 'proof: delete what the unification left unused, including the view''s
+    allow(dead_code); prove by search that MutableStore::load is reached only by the
+    view''s replay backing and export_jsonl; assert that cached-mode golden scenarios
+    produce the golden bytes; rerun the parity and proof suites and the matched 1x/8x
+    bench; record acceptance evidence for the sase-1h8.13.1 and sase-1h8.13 landings.'
 proposed_by: bbugyi200.athena.sase-1h8.13.1.land
 create_time: 2026-10-08 21:24:11
 status: wip
+bead_id: sase-1h8.13.1.9
 ---
 
-- **PROMPT:**
-  [prompts/202610/unify_bead_mutation_algorithms.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unify_bead_mutation_algorithms.md)
-- **PARENT:**
-  [202610/finish_read_model_mutations_child_epic.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_read_model_mutations_child_epic.md)
+- **PROMPT:** [prompts/202610/unify_bead_mutation_algorithms.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unify_bead_mutation_algorithms.md)
+- **PARENT:** [202610/finish_read_model_mutations_child_epic.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_read_model_mutations_child_epic.md)
+- **BEAD:** [sase-1h8.13.1.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1h8/sase-1h8.13.1.9.md)
 
 # Plan: One mutation algorithm per entry point, with every suite in both modes
 
