@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should claude-haiku-4-5 also be removed from the built-in Claude catalog?",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Keep it pickable by name with its haiku45 short alias; only @xsmall moves to Haiku 5.5"
+        },
+        {
+          "key": "retire",
+          "label": "Drop it from the catalog and usage labels; pinned configs lose picker/completion rows"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "id": "retire_haiku_45",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Haiku 4.5 is still served; keeping it costs one picker row and protects configs that pin it"
+    }
+  ]
+}
