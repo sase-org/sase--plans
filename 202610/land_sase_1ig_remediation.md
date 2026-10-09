@@ -1,18 +1,15 @@
 ---
 tier: tale
 size: small
-title:
-  "Finish landing sase-1ig: docs link, mixed-mode agreement, build-check interpreter,
-  then close the epic"
-goal:
-  "Fix the three defects the sase-1ig landing found: the Deploy Docs build broken by a
-  link to a file outside docs/, `just install-dev` failing verification when a plugin
-  comes from PyPI, and the pre-swap build check compiling against the wrong interpreter.
-  Then close epic sase-1ig."
+title: 'Finish landing sase-1ig: docs link, mixed-mode agreement, build-check interpreter,
+  then close the epic'
+goal: 'Fix the three defects the sase-1ig landing found: the Deploy Docs build broken
+  by a link to a file outside docs/, `just install-dev` failing verification when
+  a plugin comes from PyPI, and the pre-swap build check compiling against the wrong
+  interpreter. Then close epic sase-1ig.'
 proposed_by: bbugyi200.athena.sase-1ig.land
 bead: sase-1ig
-create_time: 2026-10-09 02:41:03
-status: wip
+status: done
 ---
 
 - **PARENT:**
