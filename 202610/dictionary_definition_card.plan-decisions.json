@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the highlighted first definition come from WordNet whenever dict returns a WordNet entry?",
+      "choices": [
+        {
+          "key": "wordnet",
+          "label": "WordNet's modern one-line sense first, then Webster's 1913, then other sources"
+        },
+        {
+          "key": "server_order",
+          "label": "First definition dict returns (Webster's 1913 on dict.org; older, wordier)"
+        }
+      ],
+      "default": "wordnet",
+      "effective_default": "wordnet",
+      "id": "lead_source",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "WordNet glosses are modern one-liners; Webster's 1913 often leads with archaic senses"
+    }
+  ]
+}
