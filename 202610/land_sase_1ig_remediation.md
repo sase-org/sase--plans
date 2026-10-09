@@ -1,14 +1,12 @@
 ---
 tier: tale
 size: small
-title:
-  "Finish landing sase-1ig: docs link, mixed-mode agreement, build-check interpreter,
-  then close the epic"
-goal:
-  "Fix the three defects the sase-1ig landing found: the Deploy Docs build broken by a
-  link to a file outside docs/, `just install-dev` failing verification when a plugin
-  comes from PyPI, and the pre-swap build check compiling against the wrong interpreter.
-  Then close epic sase-1ig."
+title: 'Finish landing sase-1ig: docs link, mixed-mode agreement, build-check interpreter,
+  then close the epic'
+goal: 'Fix the three defects the sase-1ig landing found: the Deploy Docs build broken
+  by a link to a file outside docs/, `just install-dev` failing verification when
+  a plugin comes from PyPI, and the pre-swap build check compiling against the wrong
+  interpreter. Then close epic sase-1ig.'
 proposed_by: bbugyi200.athena.sase-1ig.land
 bead: sase-1ig
 status: done
@@ -18,12 +16,6 @@ status: done
   [202610/just_install_pypi_dev_venv.md](https://github.com/sase-org/sase--plans/blob/main/202610/just_install_pypi_dev_venv.md)
 - **BEAD:**
   [sase-1ig](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ig/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1ig.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ig.land.md)
-- **COMMITS:**
-  - [bd83006](https://github.com/sase-org/sase/commit/bd830064cadc9b9b2b18c9a3b5d486352bfecc23)
-    — fix(sase-1ig): finish landing with docs link, mixed-mode agreement, interpreter
-    pin
 
 # Plan: finish landing sase-1ig
 
