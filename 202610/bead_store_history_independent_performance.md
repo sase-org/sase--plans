@@ -125,7 +125,7 @@ phases:
     corpora in CI and locally, and record the final before/after results.'
 proposed_by: bbugyi200.athena.research.3u.linker.w0
 create_time: 2026-10-06 18:59:25
-status: wip
+status: done
 bead_id: sase-1h8
 ---
 
