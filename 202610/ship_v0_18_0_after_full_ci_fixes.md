@@ -1,61 +1,57 @@
 ---
 tier: epic
 title: Clear the last Full CI reds and ship sase v0.18.0
-goal: "Full CI is green on a sase master tip that also has a green Master Gate, release
+goal: 'Full CI is green on a sase master tip that also has a green Master Gate, release
   PR 299 merges, and `pip install sase==0.18.0` works from PyPI, so the interrupted
   landing of epic sase-1io.7 can close.
 
-  "
+  '
 parent_bead: sase-1io.7
 decisions:
   ready_gate:
     ask: How should the bead-scale gate stop failing Full CI on ratio:ready?
     choices:
-      known_miss:
-        Record ratio:ready as a known miss owned by sase-1j5; quick and unblocks the
-        release
-      fix_measure:
-        Hold the active set fixed in the gate corpora so ready stays blocking; more work
+      known_miss: Record ratio:ready as a known miss owned by sase-1j5; quick and
+        unblocks the release
+      fix_measure: Hold the active set fixed in the gate corpora so ready stays blocking;
+        more work
     default: known_miss
-    why:
-      The gate never passed on CI; sase-1j5 owns the measurement fix without blocking
+    why: The gate never passed on CI; sase-1j5 owns the measurement fix without blocking
       the release
     answer: known_miss
 phases:
-  - id: ready-gate
-    title: Make the bead-scale perf gate measure what it claims
-    depends_on: []
-    size: small
-    description:
-      "ready-gate: stop Full CI perf-floors failing on the bead-scale gate's ratio:ready
-      criterion, which measures active-set growth rather than closed history, and
-      correct the false pass verdict in the perf runbook."
-  - id: reply-card-race
-    title: Fix the dropped Reply-card switch in the Agents deck visual tests
-    depends_on: []
-    size: medium
-    description:
-      "reply-card-race: find and fix why ctrl+j sometimes never switches the Agents deck
-      Main panel to the Reply card under parallel load, and fix any other Full CI-only
-      or Master Gate red on the starting tip."
-  - id: ship
-    title: Prove the release gates green, merge PR 299, and publish v0.18.0
-    depends_on:
-      - ready-gate
-      - reply-card-race
-    size: medium
-    description:
-      "ship: drive Master Gate, a fresh Full CI, and PR 299's checks green on a tip with
-      both fixes, merge PR 299, publish, and verify the PyPI install."
+- id: ready-gate
+  title: Make the bead-scale perf gate measure what it claims
+  depends_on: []
+  size: small
+  description: 'ready-gate: stop Full CI perf-floors failing on the bead-scale gate''s
+    ratio:ready criterion, which measures active-set growth rather than closed history,
+    and correct the false pass verdict in the perf runbook.'
+- id: reply-card-race
+  title: Fix the dropped Reply-card switch in the Agents deck visual tests
+  depends_on: []
+  size: medium
+  description: 'reply-card-race: find and fix why ctrl+j sometimes never switches
+    the Agents deck Main panel to the Reply card under parallel load, and fix any
+    other Full CI-only or Master Gate red on the starting tip.'
+- id: ship
+  title: Prove the release gates green, merge PR 299, and publish v0.18.0
+  depends_on:
+  - ready-gate
+  - reply-card-race
+  size: medium
+  description: 'ship: drive Master Gate, a fresh Full CI, and PR 299''s checks green
+    on a tip with both fixes, merge PR 299, publish, and verify the PyPI install.'
 proposed_by: bbugyi200.athena.sase-1io.7.land
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-09 14:56:39
 status: wip
+bead_id: sase-1io.7.6
 ---
 
-- **PROMPT:**
-  [prompts/202610/ship_v0_18_0_after_full_ci_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_after_full_ci_fixes.md)
+- **PROMPT:** [prompts/202610/ship_v0_18_0_after_full_ci_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_after_full_ci_fixes.md)
+- **BEAD:** [sase-1io.7.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1io/sase-1io.7.6.md)
 
 # Plan: Clear the last Full CI reds and ship sase v0.18.0
 
