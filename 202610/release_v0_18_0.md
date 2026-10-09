@@ -1,66 +1,61 @@
 ---
 tier: epic
 title: Turn CI green and ship sase v0.18.0 to PyPI
-goal: "Every sase and sase-core CI lane is green, a sase-core-rs release carrying every
-  binding sase needs is on PyPI, the release-please PR merges, and `pip install
+goal: 'Every sase and sase-core CI lane is green, a sase-core-rs release carrying
+  every binding sase needs is on PyPI, the release-please PR merges, and `pip install
   sase==0.18.0` works from PyPI by morning.
 
-  "
+  '
 phases:
-  - id: core-ci
-    title: Fix the red sase-core master CI
-    depends_on: []
-    size: medium
-    description:
-      "core-ci: fix the macOS replay-golden test failure (and any other red job) on
-      sase-core master so its release PR can merge."
-  - id: core-release
-    title: Cut and publish the sase-core-rs release
-    depends_on:
-      - core-ci
-    size: medium
-    description:
-      "core-release: confirm sase-core CI is green, dispatch the urgent release-plz cut,
-      and wait until the new sase-core-rs is fully on PyPI."
-  - id: gate-fixes
-    title: Fix the sase Master Gate failures
-    depends_on: []
-    size: medium
-    description:
-      "gate-fixes: fix the lint and eight fast-suite failures that turn every Master
-      Gate run red, including the memory README drift."
-  - id: full-ci-fixes
-    title: Fix the Full CI-only failures
-    depends_on: []
-    size: medium
-    description:
-      "full-ci-fixes: fix the two coverage-leg-only test failures and the two drifted
-      visual PNG goldens that keep Full CI red."
-  - id: release-gates
-    title: Prove every release gate green
-    depends_on:
-      - core-release
-      - gate-fixes
-      - full-ci-fixes
-    size: medium
-    description:
-      "release-gates: regenerate the release PR onto the new core floor, then drive
-      Master Gate, Full CI, and the release PR checks to green."
-  - id: ship
-    title: Merge the release PR and publish v0.18.0
-    depends_on:
-      - release-gates
-    size: medium
-    description:
-      "ship: merge the 0.18.0 release PR once its gates hold, run the publish workflow,
-      and verify the release installs from PyPI."
+- id: core-ci
+  title: Fix the red sase-core master CI
+  depends_on: []
+  size: medium
+  description: 'core-ci: fix the macOS replay-golden test failure (and any other red
+    job) on sase-core master so its release PR can merge.'
+- id: core-release
+  title: Cut and publish the sase-core-rs release
+  depends_on:
+  - core-ci
+  size: medium
+  description: 'core-release: confirm sase-core CI is green, dispatch the urgent release-plz
+    cut, and wait until the new sase-core-rs is fully on PyPI.'
+- id: gate-fixes
+  title: Fix the sase Master Gate failures
+  depends_on: []
+  size: medium
+  description: 'gate-fixes: fix the lint and eight fast-suite failures that turn every
+    Master Gate run red, including the memory README drift.'
+- id: full-ci-fixes
+  title: Fix the Full CI-only failures
+  depends_on: []
+  size: medium
+  description: 'full-ci-fixes: fix the two coverage-leg-only test failures and the
+    two drifted visual PNG goldens that keep Full CI red.'
+- id: release-gates
+  title: Prove every release gate green
+  depends_on:
+  - core-release
+  - gate-fixes
+  - full-ci-fixes
+  size: medium
+  description: 'release-gates: regenerate the release PR onto the new core floor,
+    then drive Master Gate, Full CI, and the release PR checks to green.'
+- id: ship
+  title: Merge the release PR and publish v0.18.0
+  depends_on:
+  - release-gates
+  size: medium
+  description: 'ship: merge the 0.18.0 release PR once its gates hold, run the publish
+    workflow, and verify the release installs from PyPI.'
 proposed_by: bbugyi200.athena.0ys
 create_time: 2026-10-09 03:55:07
 status: wip
+bead_id: sase-1io
 ---
 
-- **PROMPT:**
-  [prompts/202610/release_v0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_v0_18_0.md)
+- **PROMPT:** [prompts/202610/release_v0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_v0_18_0.md)
+- **BEAD:** [sase-1io](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1io/README.md)
 
 # Plan: Turn CI green and ship sase v0.18.0 to PyPI
 
