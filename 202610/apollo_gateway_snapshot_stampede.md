@@ -1,88 +1,83 @@
 ---
 tier: epic
 title: Stop the fleet gateway snapshot stampede that melted apollo
-goal: "A slow fleet snapshot rebuild can no longer multiply into hundreds of concurrent
+goal: 'A slow fleet snapshot rebuild can no longer multiply into hundreds of concurrent
   index-scanning threads. The gateway runs at most one rebuild per scope, always keeps
-  late results, backs off after failures, bounds its artifact-index work, and logs every
-  build. The artifact index keeps its WAL bounded. Remote clients stop amplifying a slow
-  host. apollo's gateway is restarted only after measurements show it stays healthy
-  under athena's real polling.
+  late results, backs off after failures, bounds its artifact-index work, and logs
+  every build. The artifact index keeps its WAL bounded. Remote clients stop amplifying
+  a slow host. apollo''s gateway is restarted only after measurements show it stays
+  healthy under athena''s real polling.
 
-  "
+  '
 phases:
-  - id: gateway-single-flight
-    title: Single-flight, back-off, and bounded index work in FleetReadService
-    depends_on: []
-    size: medium
-    description:
-      "gateway-single-flight: in sase-core, rewrite the FleetReadService snapshot
-      refresh. Each scope gets one detached in-flight build that always fills the cache
-      when it finishes. Callers wait up to the timeout. Failures back off exponentially.
-      A shared semaphore bounds index work, the overlay pass is coalesced and
-      best-effort, and the gateway runtime caps blocking threads. Includes a slow-build
-      stampede regression test."
-  - id: index-sqlite-hygiene
-    title: Artifact index WAL bounds and write batching
-    depends_on: []
-    size: medium
-    description:
-      "index-sqlite-hygiene: in sase-core agent_scan/index, set journal_size_limit and
-      synchronous=NORMAL on every read-write open, and add a WAL checkpoint helper for
-      oversized WALs that background maintenance calls. Batch revalidation writes into
-      one transaction per pass, and skip unchanged reconcile-watermark meta writes."
-  - id: worker-host-backoff
-    title: Federation worker keeps host state and backs off slow hosts
-    depends_on: []
-    size: medium
-    description:
-      "worker-host-backoff: in the sase-core federation worker, reuse unchanged
-      RemoteHost instances across replace_config. That keeps the HTTP client, hello
-      verification, per-host permits and back-off state alive across TUI refreshes. Add
-      exponential per-host back-off that serves cached data instead of calling a host
-      that just timed out or failed."
-  - id: gateway-observability
-    title: Gateway refresh telemetry and WAL housekeeping
-    depends_on:
-      - gateway-single-flight
-      - index-sqlite-hygiene
-    size: small
-    description:
-      "gateway-observability: install a tracing subscriber in the sase_gateway binary.
-      Emit events for every snapshot build, back-off engagement, overlay skip, and
-      long-running build. Call the new WAL checkpoint helper after successful
-      Presentation builds while holding the index permit."
-  - id: fleet-client-hardening
-    title: sase fleet client stops amplifying slow hosts
-    depends_on: []
-    size: medium
-    description:
-      "fleet-client-hardening: in sase Python, give the IPC socket a grace period beyond
-      the worker deadline, classify socket timeouts separately, and stop respawning and
-      resending on a slow-but-alive worker. Make the TUI fleet refresh single-flight
-      with one pending rerun. Add schema_version to the fallback diagnostics, and
-      degrade normalization failures to a visible fleet error."
-  - id: apollo-rollout-verify
-    title: Gated apollo gateway restart and measured verification
-    depends_on:
-      - gateway-single-flight
-      - index-sqlite-hygiene
-      - worker-host-backoff
-      - gateway-observability
-      - fleet-client-hardening
-    size: small
-    description:
-      "apollo-rollout-verify: confirm the fixes have landed and that apollo's install
-      contains them. Probe apollo read-only. Propose the update and gateway restart only
-      through a sase gate whose follow-up measures threads, index handles, CPU, RSS, WAL
-      size and build logs against the pass criteria, and stops the gateway again if any
-      criterion fails."
+- id: gateway-single-flight
+  title: Single-flight, back-off, and bounded index work in FleetReadService
+  depends_on: []
+  size: medium
+  description: 'gateway-single-flight: in sase-core, rewrite the FleetReadService
+    snapshot refresh. Each scope gets one detached in-flight build that always fills
+    the cache when it finishes. Callers wait up to the timeout. Failures back off
+    exponentially. A shared semaphore bounds index work, the overlay pass is coalesced
+    and best-effort, and the gateway runtime caps blocking threads. Includes a slow-build
+    stampede regression test.'
+- id: index-sqlite-hygiene
+  title: Artifact index WAL bounds and write batching
+  depends_on: []
+  size: medium
+  description: 'index-sqlite-hygiene: in sase-core agent_scan/index, set journal_size_limit
+    and synchronous=NORMAL on every read-write open, and add a WAL checkpoint helper
+    for oversized WALs that background maintenance calls. Batch revalidation writes
+    into one transaction per pass, and skip unchanged reconcile-watermark meta writes.'
+- id: worker-host-backoff
+  title: Federation worker keeps host state and backs off slow hosts
+  depends_on: []
+  size: medium
+  description: 'worker-host-backoff: in the sase-core federation worker, reuse unchanged
+    RemoteHost instances across replace_config. That keeps the HTTP client, hello
+    verification, per-host permits and back-off state alive across TUI refreshes.
+    Add exponential per-host back-off that serves cached data instead of calling a
+    host that just timed out or failed.'
+- id: gateway-observability
+  title: Gateway refresh telemetry and WAL housekeeping
+  depends_on:
+  - gateway-single-flight
+  - index-sqlite-hygiene
+  size: small
+  description: 'gateway-observability: install a tracing subscriber in the sase_gateway
+    binary. Emit events for every snapshot build, back-off engagement, overlay skip,
+    and long-running build. Call the new WAL checkpoint helper after successful Presentation
+    builds while holding the index permit.'
+- id: fleet-client-hardening
+  title: sase fleet client stops amplifying slow hosts
+  depends_on: []
+  size: medium
+  description: 'fleet-client-hardening: in sase Python, give the IPC socket a grace
+    period beyond the worker deadline, classify socket timeouts separately, and stop
+    respawning and resending on a slow-but-alive worker. Make the TUI fleet refresh
+    single-flight with one pending rerun. Add schema_version to the fallback diagnostics,
+    and degrade normalization failures to a visible fleet error.'
+- id: apollo-rollout-verify
+  title: Gated apollo gateway restart and measured verification
+  depends_on:
+  - gateway-single-flight
+  - index-sqlite-hygiene
+  - worker-host-backoff
+  - gateway-observability
+  - fleet-client-hardening
+  size: small
+  description: 'apollo-rollout-verify: confirm the fixes have landed and that apollo''s
+    install contains them. Probe apollo read-only. Propose the update and gateway
+    restart only through a sase gate whose follow-up measures threads, index handles,
+    CPU, RSS, WAL size and build logs against the pass criteria, and stops the gateway
+    again if any criterion fails.'
 proposed_by: bbugyi200.athena.0yx
 create_time: 2026-10-09 09:31:09
 status: wip
+bead_id: sase-1j1
 ---
 
-- **PROMPT:**
-  [prompts/202610/apollo_gateway_snapshot_stampede.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/apollo_gateway_snapshot_stampede.md)
+- **PROMPT:** [prompts/202610/apollo_gateway_snapshot_stampede.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/apollo_gateway_snapshot_stampede.md)
+- **BEAD:** [sase-1j1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1j1/README.md)
 
 # Plan: Stop the fleet gateway snapshot stampede that melted apollo
 
