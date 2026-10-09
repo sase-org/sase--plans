@@ -2,14 +2,12 @@
 tier: tale
 size: small
 title: Finish landing epic sase-1h8 (bead store performance)
-goal:
-  The last caller that hydrates every closed bead uses point reads instead. The
-  perf-gate docs name the follow-up tasks that own each known miss. Epic sase-1h8 and
-  its nested child-epic plan files are closed out.
+goal: The last caller that hydrates every closed bead uses point reads instead. The
+  perf-gate docs name the follow-up tasks that own each known miss. Epic sase-1h8
+  and its nested child-epic plan files are closed out.
 proposed_by: bbugyi200.athena.sase-1h8.land
 bead: sase-1h8
-create_time: 2026-10-09 06:18:32
-status: wip
+status: done
 ---
 
 - **PARENT:**
