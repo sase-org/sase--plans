@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should every session-attach launch relocate off an occupied pinned workspace, not just plan coders?",
+      "choices": [
+        {
+          "key": "plan_coders",
+          "label": "Only plan-approve coders relocate; other session launches still fail, now naming the occupant"
+        },
+        {
+          "key": "all_session_launches",
+          "label": "Every pinned session launch relocates; changes the 2026-08 single-shot pin contract"
+        }
+      ],
+      "default": "plan_coders",
+      "effective_default": "plan_coders",
+      "id": "relocation_scope",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Generic session members may need the parent's checkout; plan coders never do"
+    }
+  ]
+}
