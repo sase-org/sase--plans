@@ -1,64 +1,60 @@
 ---
 tier: epic
 title: Fix the read-model cache race, cut sase-core-rs, and ship sase v0.18.0
-goal: "The sase-core read-model cache survives concurrent readers and writers on every
+goal: 'The sase-core read-model cache survives concurrent readers and writers on every
   platform, a sase-core-rs release carrying every binding sase needs is complete on
   PyPI, Master Gate and Full CI are green on the sase master tip, release PR 299 merges,
   and `pip install sase==0.18.0` works from PyPI.
 
-  "
+  '
 phases:
-  - id: core-cache-race
-    title: Make the sase-core read-model cache safe under concurrent access
-    depends_on: []
-    size: medium
-    description:
-      "core-cache-race: stop unlinking or implicitly recreating a live SQLite read-model
-      cache, keep cache faults from failing mutations, prove it with a stress run, and
-      drop the now-redundant lock_wait_ms golden helper."
-  - id: sase-gate-fixes
-    title: Clear the remaining sase Master Gate failures
-    depends_on: []
-    size: medium
-    description:
-      "sase-gate-fixes: fix the CI-only prompt-key perf smoke failure, resolve the
-      declared_commands Symvision residual unless sase-1if already has, and fix any
-      other Master Gate red on the tip."
-  - id: full-ci-fixes
-    title: Clear the Full CI-only failures
-    depends_on: []
-    size: medium
-    description:
-      "full-ci-fixes: triage and regenerate or repair the drifted PNG goldens that keep
-      the visual-test lane red, and fix any other Full CI-only red on the tip."
-  - id: core-release
-    title: Cut and publish the sase-core-rs release
-    depends_on:
-      - core-cache-race
-    size: medium
-    description:
-      "core-release: wait for green sase-core CI on the race fix, dispatch the urgent
-      release-plz cut, and verify the new sase-core-rs is complete on PyPI."
-  - id: ship
-    title: Prove the release gates green, merge PR 299, and publish v0.18.0
-    depends_on:
-      - core-release
-      - sase-gate-fixes
-      - full-ci-fixes
-    size: medium
-    description:
-      "ship: ratchet PR 299 onto the new core floor, drive Master Gate, Full CI, and the
-      PR checks green, merge it, publish, and verify the PyPI install."
+- id: core-cache-race
+  title: Make the sase-core read-model cache safe under concurrent access
+  depends_on: []
+  size: medium
+  description: 'core-cache-race: stop unlinking or implicitly recreating a live SQLite
+    read-model cache, keep cache faults from failing mutations, prove it with a stress
+    run, and drop the now-redundant lock_wait_ms golden helper.'
+- id: sase-gate-fixes
+  title: Clear the remaining sase Master Gate failures
+  depends_on: []
+  size: medium
+  description: 'sase-gate-fixes: fix the CI-only prompt-key perf smoke failure, resolve
+    the declared_commands Symvision residual unless sase-1if already has, and fix
+    any other Master Gate red on the tip.'
+- id: full-ci-fixes
+  title: Clear the Full CI-only failures
+  depends_on: []
+  size: medium
+  description: 'full-ci-fixes: triage and regenerate or repair the drifted PNG goldens
+    that keep the visual-test lane red, and fix any other Full CI-only red on the
+    tip.'
+- id: core-release
+  title: Cut and publish the sase-core-rs release
+  depends_on:
+  - core-cache-race
+  size: medium
+  description: 'core-release: wait for green sase-core CI on the race fix, dispatch
+    the urgent release-plz cut, and verify the new sase-core-rs is complete on PyPI.'
+- id: ship
+  title: Prove the release gates green, merge PR 299, and publish v0.18.0
+  depends_on:
+  - core-release
+  - sase-gate-fixes
+  - full-ci-fixes
+  size: medium
+  description: 'ship: ratchet PR 299 onto the new core floor, drive Master Gate, Full
+    CI, and the PR checks green, merge it, publish, and verify the PyPI install.'
 proposed_by: bbugyi200.athena.sase-1io.land
 parent_bead: sase-1io
 create_time: 2026-10-09 06:48:47
 status: wip
+bead_id: sase-1io.7
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_release_v0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_release_v0_18_0.md)
-- **PARENT:**
-  [202610/release_v0_18_0.md](https://github.com/sase-org/sase--plans/blob/main/202610/release_v0_18_0.md)
+- **PROMPT:** [prompts/202610/finish_release_v0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_release_v0_18_0.md)
+- **PARENT:** [202610/release_v0_18_0.md](https://github.com/sase-org/sase--plans/blob/main/202610/release_v0_18_0.md)
+- **BEAD:** [sase-1io.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1io/sase-1io.7.md)
 
 # Plan: Fix the read-model cache race, cut sase-core-rs, and ship sase v0.18.0
 
