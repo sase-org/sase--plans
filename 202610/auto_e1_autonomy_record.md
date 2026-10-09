@@ -1,96 +1,89 @@
 ---
 tier: epic
-title: "%auto E1: one autonomy record"
-goal: "Every automatic gate outcome comes from one Rust evaluate() applied to one
+title: '%auto E1: one autonomy record'
+goal: 'Every automatic gate outcome comes from one Rust evaluate() applied to one
   persisted, revisioned agent_meta.autonomy record that every agent-session member
-  inherits. `sase autonomy explain` predicts each decision exactly, every decision is
-  logged, the agent is told its policy, and `%auto` otherwise behaves exactly as it does
-  today.
+  inherits. `sase autonomy explain` predicts each decision exactly, every decision
+  is logged, the agent is told its policy, and `%auto` otherwise behaves exactly as
+  it does today.
 
-  "
+  '
 decisions:
   decision_record:
-    ask:
-      Add a decisions memory record that autonomy is one record evaluated in core, not
-      gate UI defaults?
+    ask: Add a decisions memory record that autonomy is one record evaluated in core,
+      not gate UI defaults?
     memory:
-      - decisions:autonomy-one-record
+    - decisions:autonomy-one-record
     default: false
     answer: false
 phases:
-  - id: contract
-    title: Autonomy behavior contract suite
-    depends_on: []
-    size: medium
-    description:
-      "contract: table-driven %auto behavior contract that runs every spelling and state
-      through real launch, successor, and gate code, with Python/Rust/LSP parity and
-      strict-xfail rows for the deliberate E1 changes."
-  - id: core_policy
-    title: Core autonomy record, compatibility profiles, and evaluate()
-    depends_on: []
-    size: medium
-    description:
-      "core_policy: sase-core autonomy module with the v1 record, policy, request, and
-      decision wires, the %auto compatibility translation, evaluate() over explicit
-      option IDs, the agent-scan field, and the Python bindings."
-  - id: core_summary
-    title: Core summary, sentences, mutation, and decision log
-    depends_on:
-      - core_policy
-    size: medium
-    description:
-      "core_summary: sase-core summary wire, decision and awareness sentences, revision-
-      checked mutate_autonomy and inherit with tighten-only agent actors, the built-in
-      profile catalog, and the host decision log store."
-  - id: record
-    title: Persist the record and read it everywhere
-    depends_on:
-      - contract
-      - core_policy
-    size: medium
-    description:
-      "record: resolve and persist agent_meta.autonomy at every launch behind the
-      autonomy_record_only sunset flag, and move every Python, TUI, listing, and scan
-      reader of %auto state onto it."
-  - id: inherit
-    title: Structural inheritance and a truthful A toggle
-    depends_on:
-      - record
-      - core_summary
-    size: medium
-    description:
-      "inherit: every host-composed session successor inherits the live record
-      structurally, auto_launch_prefix goes away, retries cannot resurrect a toggled-off
-      auto, and A writes through mutate_autonomy and restores the last profile."
-  - id: gates
-    title: Gates decide through evaluate()
-    depends_on:
-      - record
-      - core_summary
-    size: medium
-    description:
-      "gates: adapters declare capability sets, plan, epic, and question gates resolve
-      through core evaluate() with a policy block and a decision-log row, and the agent
-      receives the awareness block."
-  - id: cli
-    title: sase autonomy CLI, inspect surfaces, and acceptance
-    depends_on:
-      - inherit
-      - gates
-    size: medium
-    description:
-      "cli: sase autonomy explain, list, log, and show; autonomy in agent list, agent
-      show, and gate show; the explain-equals-runtime property test; a fakey lifecycle
-      e2e; and the docs."
+- id: contract
+  title: Autonomy behavior contract suite
+  depends_on: []
+  size: medium
+  description: 'contract: table-driven %auto behavior contract that runs every spelling
+    and state through real launch, successor, and gate code, with Python/Rust/LSP
+    parity and strict-xfail rows for the deliberate E1 changes.'
+- id: core_policy
+  title: Core autonomy record, compatibility profiles, and evaluate()
+  depends_on: []
+  size: medium
+  description: 'core_policy: sase-core autonomy module with the v1 record, policy,
+    request, and decision wires, the %auto compatibility translation, evaluate() over
+    explicit option IDs, the agent-scan field, and the Python bindings.'
+- id: core_summary
+  title: Core summary, sentences, mutation, and decision log
+  depends_on:
+  - core_policy
+  size: medium
+  description: 'core_summary: sase-core summary wire, decision and awareness sentences,
+    revision- checked mutate_autonomy and inherit with tighten-only agent actors,
+    the built-in profile catalog, and the host decision log store.'
+- id: record
+  title: Persist the record and read it everywhere
+  depends_on:
+  - contract
+  - core_policy
+  size: medium
+  description: 'record: resolve and persist agent_meta.autonomy at every launch behind
+    the autonomy_record_only sunset flag, and move every Python, TUI, listing, and
+    scan reader of %auto state onto it.'
+- id: inherit
+  title: Structural inheritance and a truthful A toggle
+  depends_on:
+  - record
+  - core_summary
+  size: medium
+  description: 'inherit: every host-composed session successor inherits the live record
+    structurally, auto_launch_prefix goes away, retries cannot resurrect a toggled-off
+    auto, and A writes through mutate_autonomy and restores the last profile.'
+- id: gates
+  title: Gates decide through evaluate()
+  depends_on:
+  - record
+  - core_summary
+  size: medium
+  description: 'gates: adapters declare capability sets, plan, epic, and question
+    gates resolve through core evaluate() with a policy block and a decision-log row,
+    and the agent receives the awareness block.'
+- id: cli
+  title: sase autonomy CLI, inspect surfaces, and acceptance
+  depends_on:
+  - inherit
+  - gates
+  size: medium
+  description: 'cli: sase autonomy explain, list, log, and show; autonomy in agent
+    list, agent show, and gate show; the explain-equals-runtime property test; a fakey
+    lifecycle e2e; and the docs.'
 proposed_by: bbugyi200.athena.0yj
 decided_by: auto
 create_time: 2026-10-09 05:12:49
 status: wip
+bead_id: sase-1ip
 ---
 
-- **PROMPT:**
-  [prompts/202610/auto_e1_autonomy_record.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/auto_e1_autonomy_record.md)
+- **PROMPT:** [prompts/202610/auto_e1_autonomy_record.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/auto_e1_autonomy_record.md)
+- **BEAD:** [sase-1ip](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ip/README.md)
 
 # Plan: `%auto` E1 — one autonomy record
 
