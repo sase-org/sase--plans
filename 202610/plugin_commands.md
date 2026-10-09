@@ -137,7 +137,7 @@ phases:
 proposed_by: bbugyi200.apollo.research.0n.linker.w0
 decided_by: auto
 create_time: 2026-10-08 15:26:15
-status: wip
+status: done
 bead_id: sase-1if
 ---
 
