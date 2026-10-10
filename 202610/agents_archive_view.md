@@ -1,154 +1,145 @@
 ---
 tier: epic
 title: Agents tab Archive view retires Artifacts ▸ Agent
-goal: "Every agent that ran on this machine can be found and read on the Agents tab. The
-  Inbox stays exactly as it is today. A new Archive view (`,a`) lists dismissed runs by
-  day and opens any of them read-only in the real decks. Restoring is one deliberate
-  `⏎`. Every `agent:` route lands on the Agents tab. The Artifacts ▸ Agent sub-tab is
-  retired behind a sunset flag.
+goal: 'Every agent that ran on this machine can be found and read on the Agents tab.
+  The Inbox stays exactly as it is today. A new Archive view (`,a`) lists dismissed
+  runs by day and opens any of them read-only in the real decks. Restoring is one
+  deliberate `⏎`. Every `agent:` route lands on the Agents tab. The Artifacts ▸ Agent
+  sub-tab is retired behind a sunset flag.
 
-  "
+  '
 decisions:
   view_name:
     ask: What should the Agents tab's view of dismissed runs be called?
     choices:
-      archive:
-        Archive, in:archive; matches the agent_archive store and dismiss → archive
-      history:
-        History, in:history; matches the research wording, collides with ,y full-history
+      archive: Archive, in:archive; matches the agent_archive store and dismiss →
+        archive
+      history: History, in:history; matches the research wording, collides with ,y
+        full-history
     default: archive
-    why:
-      Every agent sits in exactly one view, so Archive is exact; history already names
-      inbox reloads
+    why: Every agent sits in exactly one view, so Archive is exact; history already
+      names inbox reloads
     answer: archive
   toggle_filter:
     ask: How should ,a treat the committed Inbox filter when it opens the Archive?
     choices:
       restore: Pure toggle; each view returns as left, shelf/bridge ⏎ carries a filter
-      carry:
-        Carry the Inbox filter when one is committed, else restore the parked Archive
+      carry: Carry the Inbox filter when one is committed, else restore the parked
+        Archive
     default: restore
-    why:
-      A toggle that always returns exactly where you were is predictable in both
+    why: A toggle that always returns exactly where you were is predictable in both
       directions
     answer: restore
   jump_opens_archive:
-    ask:
-      Should Jump-panel digits open a dismissed target read-only in the Archive instead
-      of reviving it?
+    ask: Should Jump-panel digits open a dismissed target read-only in the Archive
+      instead of reviving it?
     default: true
     why: Reading should never restore; restoring stays one deliberate ⏎ away
     answer: true
   glossary_archive_term:
-    ask:
-      Add a glossary strand defining the Archive view, the in:archive scope, and Restore
-      to inbox?
+    ask: Add a glossary strand defining the Archive view, the in:archive scope, and
+      Restore to inbox?
     memory:
-      - glossary:agent-archive
+    - glossary:agent-archive
     default: false
     answer: false
   glossary_strand_updates:
-    ask:
-      Update the Nav Section, Nav Item, Agent Data Deck, and Agent Relation Jump Target
-      glossary strands?
+    ask: Update the Nav Section, Nav Item, Agent Data Deck, and Agent Relation Jump
+      Target glossary strands?
     memory:
-      - glossary:nav-section
-      - glossary:nav-item
-      - glossary:agent-data-deck
-      - glossary:agent-relation-jump-target
+    - glossary:nav-section
+    - glossary:nav-item
+    - glossary:agent-data-deck
+    - glossary:agent-relation-jump-target
     default: false
     answer: false
 phases:
-  - id: archive-index
-    title: Archive index v3 and honest timestamps
-    depends_on: []
-    size: medium
-    description:
-      "archive-index: bump the dismissed-bundle summary index to v3. Add the session,
-      clan, agent-tab, and tribe columns the Archive groups and filters on. Record a
-      real dismissed_at on every new bundle. Rebuild newest shard first, off the startup
-      path, with cheap progress. Make the catalog accept every supported artifact-index
-      schema version instead of one exact match."
-  - id: archive-projection
-    title: Core archive corpus, in scope token, and CLI parity
-    depends_on:
-      - archive-index
-    size: large
-    description:
-      "archive-projection: build a cached sase-core archive corpus over the v3 index. It
-      owns outcome, last activity, container, and restorable derivation, query
-      evaluation, group summaries, windowed pages, and exact lookup. Add the
-      agents-archive query profile and the host-owned in: token, then give sase agent
-      search the same scope so the CLI is the parity oracle."
-  - id: archive-view
-    title: Archive view on the Agents tab
-    depends_on:
-      - archive-projection
-    size: large
-    description:
-      "archive-view: add the beta-flagged ,a toggle and per-view parking. In the
-      Archive, the node column becomes an Inbox pulse plus a day-grouped Archive list,
-      with an archive info row, a filter bar driven by in:archive, a grouping picker,
-      and read-only deck hydration from the bundle. Add the detail-ownership guard,
-      live-only key toasts, the tab-label marker, the footer, and the help box."
-  - id: record-deck
-    title: Record deck for every agent
-    depends_on:
-      - archive-projection
-    size: medium
-    description:
-      "record-deck: add a fifth agent data deck (picker key r) with Lifecycle,
-      Provenance, Relations, and Links cards for inbox and archived agents alike. It
-      absorbs the retiring pane's Details panel and relation rail."
-  - id: archive-actions
-    title: Restore, fork, and copy from the Archive
-    depends_on:
-      - archive-view
-    size: medium
-    description:
-      "archive-actions: add the ⏎ chooser's ARCHIVE section (Restore to inbox by
-      default, Restore and show, Fork, Open chat, Copy). Support container and marked
-      bulk restore with skip reasons, and keep restored rows in place. Add y to copy the
-      @agent reference on the Agents tab, plus the % copy-palette targets ported from
-      the pane."
-  - id: archive-arrivals
-    title: Every agent route lands on the Agents tab
-    depends_on:
-      - archive-view
-    size: medium
-    description:
-      "archive-arrivals: retarget agent: link follow, the !R custom search row, Files a,
-      Jump-panel dismissed targets, the palette, and ,a from other tabs to the Inbox or
-      the Archive. Each arrival gets a toast explaining why and one Ctrl+O hop back.
-      Delete the Artifacts fallback route when the flag is on."
-  - id: archive-bridges
-    title: Inbox shelf, zero-result bridge, and Node Finder matches
-    depends_on:
-      - archive-view
-    size: medium
-    description:
-      "archive-bridges: add the one-line Archive shelf docked under the Inbox node
-      column, the zero-result bridge in the empty-state card, the dismiss toast's
-      Archive pointer, and the Node Finder's In Archive section. All counts are computed
-      off-thread on commit from the warm corpus."
-  - id: retire-pane
-    title: Retire Artifacts ▸ Agent and make the Archive unconditional
-    depends_on:
-      - record-deck
-      - archive-actions
-      - archive-arrivals
-      - archive-bridges
-    size: medium
-    description:
-      "retire-pane: delete the agents_archive_view beta flag's Off branches. Hide the
-      Artifacts Agent sub-tab behind a new sunset flag, renumbering Stitch to 1, with a
-      legacy mapping, a one-time toast, and the explicit-command redirect. Migrate pane
-      saved queries, then update docs, help, goldens, and (if accepted) the glossary."
+- id: archive-index
+  title: Archive index v3 and honest timestamps
+  depends_on: []
+  size: medium
+  description: 'archive-index: bump the dismissed-bundle summary index to v3. Add
+    the session, clan, agent-tab, and tribe columns the Archive groups and filters
+    on. Record a real dismissed_at on every new bundle. Rebuild newest shard first,
+    off the startup path, with cheap progress. Make the catalog accept every supported
+    artifact-index schema version instead of one exact match.'
+- id: archive-projection
+  title: Core archive corpus, in scope token, and CLI parity
+  depends_on:
+  - archive-index
+  size: large
+  description: 'archive-projection: build a cached sase-core archive corpus over the
+    v3 index. It owns outcome, last activity, container, and restorable derivation,
+    query evaluation, group summaries, windowed pages, and exact lookup. Add the agents-archive
+    query profile and the host-owned in: token, then give sase agent search the same
+    scope so the CLI is the parity oracle.'
+- id: archive-view
+  title: Archive view on the Agents tab
+  depends_on:
+  - archive-projection
+  size: large
+  description: 'archive-view: add the beta-flagged ,a toggle and per-view parking.
+    In the Archive, the node column becomes an Inbox pulse plus a day-grouped Archive
+    list, with an archive info row, a filter bar driven by in:archive, a grouping
+    picker, and read-only deck hydration from the bundle. Add the detail-ownership
+    guard, live-only key toasts, the tab-label marker, the footer, and the help box.'
+- id: record-deck
+  title: Record deck for every agent
+  depends_on:
+  - archive-projection
+  size: medium
+  description: 'record-deck: add a fifth agent data deck (picker key r) with Lifecycle,
+    Provenance, Relations, and Links cards for inbox and archived agents alike. It
+    absorbs the retiring pane''s Details panel and relation rail.'
+- id: archive-actions
+  title: Restore, fork, and copy from the Archive
+  depends_on:
+  - archive-view
+  size: medium
+  description: 'archive-actions: add the ⏎ chooser''s ARCHIVE section (Restore to
+    inbox by default, Restore and show, Fork, Open chat, Copy). Support container
+    and marked bulk restore with skip reasons, and keep restored rows in place. Add
+    y to copy the @agent reference on the Agents tab, plus the % copy-palette targets
+    ported from the pane.'
+- id: archive-arrivals
+  title: Every agent route lands on the Agents tab
+  depends_on:
+  - archive-view
+  size: medium
+  description: 'archive-arrivals: retarget agent: link follow, the !R custom search
+    row, Files a, Jump-panel dismissed targets, the palette, and ,a from other tabs
+    to the Inbox or the Archive. Each arrival gets a toast explaining why and one
+    Ctrl+O hop back. Delete the Artifacts fallback route when the flag is on.'
+- id: archive-bridges
+  title: Inbox shelf, zero-result bridge, and Node Finder matches
+  depends_on:
+  - archive-view
+  size: medium
+  description: 'archive-bridges: add the one-line Archive shelf docked under the Inbox
+    node column, the zero-result bridge in the empty-state card, the dismiss toast''s
+    Archive pointer, and the Node Finder''s In Archive section. All counts are computed
+    off-thread on commit from the warm corpus.'
+- id: retire-pane
+  title: Retire Artifacts ▸ Agent and make the Archive unconditional
+  depends_on:
+  - record-deck
+  - archive-actions
+  - archive-arrivals
+  - archive-bridges
+  size: medium
+  description: 'retire-pane: delete the agents_archive_view beta flag''s Off branches.
+    Hide the Artifacts Agent sub-tab behind a new sunset flag, renumbering Stitch
+    to 1, with a legacy mapping, a one-time toast, and the explicit-command redirect.
+    Migrate pane saved queries, then update docs, help, goldens, and (if accepted)
+    the glossary.'
 proposed_by: bbugyi200.athena.research.45.linker.w0
 decided_by: auto
 create_time: 2026-10-10 06:41:05
 status: wip
+bead_id: sase-1jm
 ---
+
+- **BEAD:** [sase-1jm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/README.md)
 
 # Plan: Agents tab Archive view retires Artifacts ▸ Agent
 
