@@ -1,12 +1,19 @@
 ---
 tier: tale
 title: Make the research filename example respect disabled suffixes
-goal: Render research:202609/topic.md when suffixes are disabled and retain research:202609/topic__a.md
-  when enabled, with consistent filename instructions.
+goal:
+  Render research:202609/topic.md when suffixes are disabled and retain
+  research:202609/topic__a.md when enabled, with consistent filename instructions.
 size: small
 proposed_by: bbugyi200.apollo.6f
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.6f](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.6f.md)
+- **COMMITS:**
+  - [9aa837f](https://github.com/sase-org/sase-research-artifacts/commit/9aa837f4832aceaaaf790874a1a6224c9c44fa0e)
+    — fix(research): respect disabled suffixes in filename example
 
 # Plan: Make the research filename example respect disabled suffixes
 
