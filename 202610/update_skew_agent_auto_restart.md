@@ -97,7 +97,7 @@ phases:
 proposed_by: bbugyi200.athena.research.47.linker.w0
 decided_by: auto
 create_time: 2026-10-09 15:02:02
-status: wip
+status: done
 bead_id: sase-1j6
 ---
 
