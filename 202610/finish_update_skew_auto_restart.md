@@ -1,118 +1,107 @@
 ---
 tier: epic
 title: Finish update-skew agent auto-restart so it is safe and actually relaunches
-goal:
-  "Complete epic sase-1j6: the update-skew healer really relaunches pre-provider skew
-  deaths once under the same name, touches nothing but skew-shaped failures, never spams
-  or resurrects rows, records honest timestamps and provenance, keeps the episode report
-  live, and leaves just check free of epic-caused failures."
+goal: 'Complete epic sase-1j6: the update-skew healer really relaunches pre-provider
+  skew deaths once under the same name, touches nothing but skew-shaped failures,
+  never spams or resurrects rows, records honest timestamps and provenance, keeps
+  the episode report live, and leaves just check free of epic-caused failures.'
 parent_bead: sase-1j6
 decisions:
   quiet_declines:
-    ask:
-      Should a declined skew-shaped failure that its runner did not silence also get a
-      loud second notification?
+    ask: Should a declined skew-shaped failure that its runner did not silence also
+      get a loud second notification?
     choices:
-      quiet:
-        No - dim TUI decline hint only; the user already got the normal failure notice
+      quiet: No - dim TUI decline hint only; the user already got the normal failure
+        notice
       loud: Yes - re-surface it loudly; one extra notification per such declined failure
     default: quiet
     why: a runner that did not silence its failure already notified the user
     answer: quiet
 phases:
-  - id: sweep-safety
-    title:
-      Restrict healer targets to skew-shaped failures and stop loud or phantom side
-      effects
-    depends_on: []
-    size: medium
-    description:
-      "sweep-safety: make the scheduler job and `run -p` consider only doorbells,
-      in-flight recovery rows, skew-suspect rows, and recent legacy skew-shaped rows;
-      never claim, write, or notify for any other failure; stop write_recovery from
-      recreating missing or wiped artifacts dirs; delete doorbells once owned; make the
-      disabled and paused paths resurface each silenced failure exactly once; trip the
-      storm breaker once; keep idle ticks cheap."
-  - id: core-fixes
-    title: sase-core classifier, ledger timestamp, meta wire, and notification fixes
-    depends_on: []
-    size: medium
-    description:
-      "core-fixes: in sase-core, fix workspace scoping with trailing slashes, stop
-      log-tail substrings from proving managed origin, never relaunch an unknown phase,
-      extract the missing symbol from the error line, stamp claimed_at and history
-      times, carry agent_meta.auto_restart on AgentMetaWire through the scanner and
-      index, route agent.auto-restart error rows to the Errors tab, and let notification
-      reconcile refresh files."
-  - id: probe-quiescence
-    title: Correct probe module names and quiescence code-change times
-    depends_on: []
-    size: small
-    description:
-      "probe-quiescence: map frame paths in src-layout editable checkouts to importable
-      module names so the W4 probe can pass, and measure managed-root code changes from
-      ref and reflog mtimes instead of commit times."
-  - id: runner-ux-fixes
-    title:
-      Runner refresh imports, lifecycle facts, config, UX polish, and epic-caused test
-      failures
-    depends_on: []
-    size: medium
-    description:
-      "runner-ux-fixes: remove the remaining late imports before os.execv, fix
-      lifecycle-phase and failure-facts capture gaps, move spare_process_patterns back
-      under agent_scope_teardown, use UPDATE_RECOVERY_GLYPH everywhere, and fix the
-      epic-caused completion, parser, schema, vocabulary, wire, timezone, lock-path, and
-      import-budget test failures."
-  - id: healer-relaunch
-    title: Make the healer relaunch, settle, and escalate correctly end to end
-    depends_on:
-      - sweep-safety
-      - core-fixes
-      - probe-quiescence
-    size: medium
-    description:
-      "healer-relaunch: move the sase-core pin past core-fixes, re-classify with the
-      probe witness so a passing probe relaunches, pass real timestamps, escalate
-      expired deferrals, take over stale claims properly, escalate a replacement's
-      second failure as already_restarted, write in-flight recovery states with
-      ledger_key and episode_id, record real from/to revisions in provenance, scrub the
-      provenance env, order -p targets topologically, and prove it with an un-mocked
-      classifier test."
-  - id: episode-polish
-    title:
-      Live episode report on settlement, honest titles, and per-death escalation keys
-    depends_on:
-      - healer-relaunch
-    size: medium
-    description:
-      "episode-polish: refresh the live report and the row's inline snapshot on every
-      job settlement (consuming refresh_episode_report and dropping its epic-symbol
-      row), map every terminal outcome in the Now column, fix episode titles and the
-      unknown-episode fallback, key escalations per death, carry every relaunched
-      agent's evidence files, and apply the quiet_declines decision."
-  - id: acceptance
-    title: Real end-to-end incident replay, host dry run, audits, and docs
-    depends_on:
-      - runner-ux-fixes
-      - episode-polish
-    size: medium
-    description:
-      "acceptance: rewrite the incident replay so doorbell, job tick, healer,
-      classifier, settlement, report, and escalation all run through real code, dry-run
-      the healer over the host corpus, review the new marker audit sites, update
-      docs/agent_auto_restart.md, and leave just check with no epic-caused failures."
+- id: sweep-safety
+  title: Restrict healer targets to skew-shaped failures and stop loud or phantom
+    side effects
+  depends_on: []
+  size: medium
+  description: 'sweep-safety: make the scheduler job and `run -p` consider only doorbells,
+    in-flight recovery rows, skew-suspect rows, and recent legacy skew-shaped rows;
+    never claim, write, or notify for any other failure; stop write_recovery from
+    recreating missing or wiped artifacts dirs; delete doorbells once owned; make
+    the disabled and paused paths resurface each silenced failure exactly once; trip
+    the storm breaker once; keep idle ticks cheap.'
+- id: core-fixes
+  title: sase-core classifier, ledger timestamp, meta wire, and notification fixes
+  depends_on: []
+  size: medium
+  description: 'core-fixes: in sase-core, fix workspace scoping with trailing slashes,
+    stop log-tail substrings from proving managed origin, never relaunch an unknown
+    phase, extract the missing symbol from the error line, stamp claimed_at and history
+    times, carry agent_meta.auto_restart on AgentMetaWire through the scanner and
+    index, route agent.auto-restart error rows to the Errors tab, and let notification
+    reconcile refresh files.'
+- id: probe-quiescence
+  title: Correct probe module names and quiescence code-change times
+  depends_on: []
+  size: small
+  description: 'probe-quiescence: map frame paths in src-layout editable checkouts
+    to importable module names so the W4 probe can pass, and measure managed-root
+    code changes from ref and reflog mtimes instead of commit times.'
+- id: runner-ux-fixes
+  title: Runner refresh imports, lifecycle facts, config, UX polish, and epic-caused
+    test failures
+  depends_on: []
+  size: medium
+  description: 'runner-ux-fixes: remove the remaining late imports before os.execv,
+    fix lifecycle-phase and failure-facts capture gaps, move spare_process_patterns
+    back under agent_scope_teardown, use UPDATE_RECOVERY_GLYPH everywhere, and fix
+    the epic-caused completion, parser, schema, vocabulary, wire, timezone, lock-path,
+    and import-budget test failures.'
+- id: healer-relaunch
+  title: Make the healer relaunch, settle, and escalate correctly end to end
+  depends_on:
+  - sweep-safety
+  - core-fixes
+  - probe-quiescence
+  size: medium
+  description: 'healer-relaunch: move the sase-core pin past core-fixes, re-classify
+    with the probe witness so a passing probe relaunches, pass real timestamps, escalate
+    expired deferrals, take over stale claims properly, escalate a replacement''s
+    second failure as already_restarted, write in-flight recovery states with ledger_key
+    and episode_id, record real from/to revisions in provenance, scrub the provenance
+    env, order -p targets topologically, and prove it with an un-mocked classifier
+    test.'
+- id: episode-polish
+  title: Live episode report on settlement, honest titles, and per-death escalation
+    keys
+  depends_on:
+  - healer-relaunch
+  size: medium
+  description: 'episode-polish: refresh the live report and the row''s inline snapshot
+    on every job settlement (consuming refresh_episode_report and dropping its epic-symbol
+    row), map every terminal outcome in the Now column, fix episode titles and the
+    unknown-episode fallback, key escalations per death, carry every relaunched agent''s
+    evidence files, and apply the quiet_declines decision.'
+- id: acceptance
+  title: Real end-to-end incident replay, host dry run, audits, and docs
+  depends_on:
+  - runner-ux-fixes
+  - episode-polish
+  size: medium
+  description: 'acceptance: rewrite the incident replay so doorbell, job tick, healer,
+    classifier, settlement, report, and escalation all run through real code, dry-run
+    the healer over the host corpus, review the new marker audit sites, update docs/agent_auto_restart.md,
+    and leave just check with no epic-caused failures.'
 proposed_by: bbugyi200.athena.sase-1j6.land
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-10 08:09:03
 status: wip
+bead_id: sase-1j6.10
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_update_skew_auto_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_update_skew_auto_restart.md)
-- **PARENT:**
-  [202610/update_skew_agent_auto_restart.md](https://github.com/sase-org/sase--plans/blob/main/202610/update_skew_agent_auto_restart.md)
+- **PROMPT:** [prompts/202610/finish_update_skew_auto_restart.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_update_skew_auto_restart.md)
+- **PARENT:** [202610/update_skew_agent_auto_restart.md](https://github.com/sase-org/sase--plans/blob/main/202610/update_skew_agent_auto_restart.md)
+- **BEAD:** [sase-1j6.10](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1j6/sase-1j6.10.md)
 
 # Plan: Finish update-skew agent auto-restart
 
