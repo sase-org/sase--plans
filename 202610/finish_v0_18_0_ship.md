@@ -1,34 +1,34 @@
 ---
 tier: epic
 title: Fix the popped-pane catalog reload and ship sase v0.18.0
-goal:
-  The plugins pane does not start a catalog load after it has been popped, Master Gate
-  and Full CI are green on a master tip that contains that fix, release PR 299 merges,
-  and `pip install sase==0.18.0` works from PyPI.
+goal: The plugins pane does not start a catalog load after it has been popped, Master
+  Gate and Full CI are green on a master tip that contains that fix, release PR 299
+  merges, and `pip install sase==0.18.0` works from PyPI.
 parent_bead: sase-1io.7.6
 phases:
-  - id: mount-race
-    title: Stop a popped plugins pane from reloading its catalog
-    depends_on: []
-    size: small
-    description:
-      "mount-race: stop the unchanged update-completion path from starting a catalog
-      load when the plugins pane has already been popped, and note the fix on sase-1ja."
-  - id: ship
-    title: Ship sase v0.18.0 once the blocking epics have landed
-    depends_on:
-      - mount-race
-    size: medium
-    description:
-      "ship: after sase-1j6.10 and sase-1jc have closed, prove Master Gate and Full CI
-      green on the tip, merge PR 299, publish v0.18.0, and verify the PyPI install."
+- id: mount-race
+  title: Stop a popped plugins pane from reloading its catalog
+  depends_on: []
+  size: small
+  description: 'mount-race: stop the unchanged update-completion path from starting
+    a catalog load when the plugins pane has already been popped, and note the fix
+    on sase-1ja.'
+- id: ship
+  title: Ship sase v0.18.0 once the blocking epics have landed
+  depends_on:
+  - mount-race
+  size: medium
+  description: 'ship: after sase-1j6.10 and sase-1jc have closed, prove Master Gate
+    and Full CI green on the tip, merge PR 299, publish v0.18.0, and verify the PyPI
+    install.'
 proposed_by: bbugyi200.athena.sase-1io.7.6.land
 create_time: 2026-10-10 09:29:16
 status: wip
+bead_id: sase-1io.7.6.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_v0_18_0_ship.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_v0_18_0_ship.md)
+- **PROMPT:** [prompts/202610/finish_v0_18_0_ship.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_v0_18_0_ship.md)
+- **BEAD:** [sase-1io.7.6.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1io/sase-1io.7.6.4.md)
 
 # Plan: Fix the popped-pane catalog reload and ship sase v0.18.0
 
