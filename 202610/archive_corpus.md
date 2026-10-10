@@ -1,68 +1,62 @@
 ---
 tier: epic
 title: Archive corpus, in:archive scope, and CLI parity
-goal: "sase-core answers which hidden archived runs match a query, in what order, and
-  grouped how, and sase agent search in:archive returns that same answer.
+goal: 'sase-core answers which hidden archived runs match a query, in what order,
+  and grouped how, and sase agent search in:archive returns that same answer.
 
-  "
+  '
 phases:
-  - id: outcome-map
-    title: One status table for archive outcome
-    depends_on: []
-    size: medium
-    description:
-      "outcome-map: move the live status-bucket match into sase-core and derive archive
-      outcome from that bucket."
-  - id: corpus-compile
-    title: Compiled archive corpus and derived fields
-    depends_on:
-      - outcome-map
-    size: medium
-    description:
-      "corpus-compile: compile a cached-ready in-memory corpus from the v3 index, with
-      derived fields and index status."
-  - id: corpus-query
-    title: Group summaries, windows, and exact lookup
-    depends_on:
-      - corpus-compile
-    size: medium
-    description:
-      "corpus-query: evaluate agents-archive queries into summaries, windowed rows,
-      counts, and exact lookup."
-  - id: profile-token
-    title: agents-archive profile and the in token
-    depends_on: []
-    size: medium
-    description:
-      "profile-token: add the agents-archive query profile and the host-owned in: token,
-      without switching views."
-  - id: bindings-cache
-    title: Bindings, facade, and shared corpus cache
-    depends_on:
-      - corpus-query
-      - profile-token
-    size: medium
-    description:
-      "bindings-cache: expose the corpus through PyO3 and one off-thread cache shared by
-      the TUI and the CLI."
-  - id: cli-parity
-    title: sase agent search parity and the bench
-    depends_on:
-      - bindings-cache
-    size: medium
-    description:
-      "cli-parity: route in:archive and in:inbox through the corpus and catalog, and
-      prove CLI order matches rows()."
+- id: outcome-map
+  title: One status table for archive outcome
+  depends_on: []
+  size: medium
+  description: 'outcome-map: move the live status-bucket match into sase-core and
+    derive archive outcome from that bucket.'
+- id: corpus-compile
+  title: Compiled archive corpus and derived fields
+  depends_on:
+  - outcome-map
+  size: medium
+  description: 'corpus-compile: compile a cached-ready in-memory corpus from the v3
+    index, with derived fields and index status.'
+- id: corpus-query
+  title: Group summaries, windows, and exact lookup
+  depends_on:
+  - corpus-compile
+  size: medium
+  description: 'corpus-query: evaluate agents-archive queries into summaries, windowed
+    rows, counts, and exact lookup.'
+- id: profile-token
+  title: agents-archive profile and the in token
+  depends_on: []
+  size: medium
+  description: 'profile-token: add the agents-archive query profile and the host-owned
+    in: token, without switching views.'
+- id: bindings-cache
+  title: Bindings, facade, and shared corpus cache
+  depends_on:
+  - corpus-query
+  - profile-token
+  size: medium
+  description: 'bindings-cache: expose the corpus through PyO3 and one off-thread
+    cache shared by the TUI and the CLI.'
+- id: cli-parity
+  title: sase agent search parity and the bench
+  depends_on:
+  - bindings-cache
+  size: medium
+  description: 'cli-parity: route in:archive and in:inbox through the corpus and catalog,
+    and prove CLI order matches rows().'
 proposed_by: bbugyi200.athena.sase-1jm.2
 parent_bead: sase-1jm.2
 create_time: 2026-10-10 07:31:46
 status: wip
+bead_id: sase-1jm.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/archive_corpus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/archive_corpus.md)
-- **PARENT:**
-  [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **PROMPT:** [prompts/202610/archive_corpus.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/archive_corpus.md)
+- **PARENT:** [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **BEAD:** [sase-1jm.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.2.1.md)
 
 # Plan: Archive corpus, in:archive scope, and CLI parity
 
