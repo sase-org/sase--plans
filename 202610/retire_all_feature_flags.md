@@ -1,178 +1,164 @@
 ---
 tier: epic
 title: Retire every current feature flag while preserving enabled behavior
-goal:
-  Remove all 23 registered feature flags and their disabled implementations across sase
-  and sase-core, preserve today's all-enabled behavior, and leave an empty, usable flag
-  registry through strictly sequential implementation phases.
+goal: Remove all 23 registered feature flags and their disabled implementations across
+  sase and sase-core, preserve today's all-enabled behavior, and leave an empty, usable
+  flag registry through strictly sequential implementation phases.
 decisions:
   macro_memory:
     ask: Update the macro memory note to describe typed Proc launches as unconditional?
     memory:
-      - macros.md
+    - macros.md
     default: false
     answer: false
   refresh_memory:
-    ask:
-      Update the TUI performance memory note to describe refresh tokens as
-      unconditional?
+    ask: Update the TUI performance memory note to describe refresh tokens as unconditional?
     memory:
-      - tui_perf.md
+    - tui_perf.md
     default: false
     answer: false
 phases:
-  - id: fixture-foundation
-    title: Make flag infrastructure tests independent of production flags
-    size: medium
-    depends_on: []
-    description:
-      "fixture-foundation: Follow the shared contracts and phase 1 below. Replace real
-      rollout keys in generic feature-flag framework, CLI, state, doctor, checker, and
-      Flags-pane fixtures with test-only beta/sunset definitions. Cover an empty
-      registry and stale saved/environment overrides. Preserve product behavior and the
-      current registry in this phase. Run focused tests and the required check before
-      completion; do not launch helpers."
-  - id: typed-launch
-    title: Make typed Agent and Proc launches unconditional
-    size: medium
-    depends_on:
-      - fixture-foundation
-    description:
-      "typed-launch: Follow phase 2 and the shared removal checklist. Retire
-      typed_launch_units and close sase-s7. Remove Python and Rust/LSP opt-in checks,
-      disabled diagnostics, hidden-completion paths, and obsolete environment transport
-      while preserving mixed-unit dispatch, static and script conditions, recovery, and
-      code-fence safety. Keep queue_capacity_budget functional for phase 3. Verify both
-      repositories sequentially and include the core revision pin in host finalization."
-  - id: queue-budget
-    title: Make queue capacity budgets unconditional
-    size: medium
-    depends_on:
-      - typed-launch
-    description:
-      "queue-budget: Follow phase 3 and the shared removal checklist. Retire
-      queue_capacity_budget and close sase-zv across Rust parsing/admission/editor
-      behavior and Python launch, bead, and TUI adapters. Delete the Off threshold
-      semantics and finished launch/editor flag plumbing, including already-retired
-      constant shims where proven unused. Preserve supported persisted queue records and
-      percent-hold behavior. Verify the Rust core and Python checkout sequentially."
-  - id: macro-contracts
-    title: Stabilize macro aliases and strict input types
-    size: medium
-    depends_on:
-      - queue-budget
-    description:
-      "macro-contracts: Follow phase 4 and the shared removal checklist. Retire
-      legacy_xprompt_syntax and strict_macro_input_types; close sase-1fj and sase-1g9.
-      Preserve the On branch accepting xprompt aliases, legacy discovery and plugin
-      names, while removing rollout rejection policy and unknown-type-to-line fallback.
-      Make Rust config and LSP normalization follow the same unconditional semantics.
-      Keep duplicate-name and malformed-input errors and durable readers."
-  - id: identity-aliases
-    title: Stabilize agent-session and turn compatibility aliases
-    size: medium
-    depends_on:
-      - macro-contracts
-    description:
-      "identity-aliases: Follow phase 5 and the shared removal checklist. Retire
-      legacy_agent_family_syntax and legacy_sase_shell_syntax; close sase-18l and
-      sase-1ar. Keep all currently enabled alias normalization, including Rust's family
-      keyword alias, and delete the flag-off rejection branches. Preserve canonical
-      output, conflict validation, and old durable records. Do not interpret legacy flag
-      names as permission to remove their enabled compatibility behavior."
-  - id: agents-query
-    title: Remove the legacy live Agents query implementation
-    size: medium
-    depends_on:
-      - identity-aliases
-    description:
-      "agents-query: Follow phase 6 and the shared removal checklist. Retire
-      agents_unified_query and close sase-zg. Make the Rust agents-live profile and
-      FilterBar unconditional. Delete the legacy live parser/evaluator, QueryEditModal,
-      and dependent dead state after checking every consumer. Preserve current
-      saved-query compatibility, history scoping, Rust pushdown, and asynchronous
-      refresh performance. Verify behavior and affected visual fixtures."
-  - id: tui-refresh
-    title: Stabilize refresh tokens, refresh gestures, and the Flags pane
-    size: medium
-    depends_on:
-      - agents-query
-    description:
-      "tui-refresh: Follow phase 7 and the shared removal checklist. Retire
-      ace_refresh_tokens, admin_center_flags, ref_sync_gesture, and refresh_panel; close
-      sase-wr, sase-rx, sase-qu, and sase-105. Preserve token-based refresh, Flags-pane
-      availability, the reference-sync gesture, and Refresh-panel key behavior. Delete
-      disabled paths and special rollout self-disable UI. Keep dirty/sanity recovery and
-      perform targeted TUI verification without parallel workloads."
-  - id: publication-services
-    title: Stabilize publication formats and service contracts
-    size: medium
-    depends_on:
-      - tui-refresh
-    description:
-      "publication-services: Follow phase 8 and the shared removal checklist. Retire
-      slim_agents_manifest, agents_session_manifest_compat, bgcmd_legacy_slots, and
-      axe_routine_job_contract; close sase-11p, sase-1ft, sase-13w, and sase-11f. Write
-      only slim manifests and canonical routine/job output; retain enabled
-      explicit-file-set compatibility and legacy slot reading/actions. Preserve
-      data-integrity checks and existing accepted input normalization."
-  - id: monitor-records
-    title: Remove legacy monitor-start rollout paths
-    size: medium
-    depends_on:
-      - publication-services
-    description:
-      "monitor-records: Follow phase 9 and the shared removal checklist. Retire
-      monitor_continuation_records and close sase-102. Every new monitor uses versioned
-      records and capture. Remove the selectable legacy writer/start path, while keeping
-      existing monitor settlement and recovery governed by persisted protocol and
-      sentinel fields. Exercise success/failure delivery, idempotency, recovery, and
-      older persisted monitor records."
-  - id: provider-instructions
-    title: Stabilize provider instruction and execution channels
-    size: medium
-    depends_on:
-      - monitor-records
-    description:
-      "provider-instructions: Follow phase 10 and the shared removal checklist. Retire
-      muse_synchronous_shell, grok_rules_delivery, claude_helper_channel, and
-      instruction_shadow_render; close sase-178, sase-1gv, sase-1gw, and sase-1h4. Keep
-      synchronous Muse execution, root Grok rules, supported Claude helper
-      channels/guards, and fail-open shadow rendering. Delete flag resolution and
-      disabled variants without converting shadow rendering into a new delivery cutover."
-  - id: runtime-controls
-    title: Stabilize sudo requests, provider drains, and autonomy records
-    size: medium
-    depends_on:
-      - provider-instructions
-    description:
-      "runtime-controls: Follow phase 11 and the shared removal checklist. Retire
-      agent_sudo_requests, provider_drain, and autonomy_record_only; close sase-111,
-      sase-sx, and sase-1j0. Remove beta refusal/no-drain/legacy-write branches.
-      Preserve typed sudo review safeguards, automatic durable drains and current
-      toasts, canonical autonomy writes, legacy read projection, and the plan-flow
-      marker. Finish with an empty production registry."
-  - id: clean-slate
-    title: Verify the empty registry and complete retirement cleanup
-    size: medium
-    depends_on:
-      - runtime-controls
-    description:
-      "clean-slate: Follow phase 12. Audit all 23 flags, closure evidence, residual
-      wrappers and literal-key checks across the changed repositories. Finish docs,
-      synthetic examples, empty-state visuals, schema and managed config cleanup; verify
-      upgrade startup with stale overrides. Apply each memory edit only if its
-      corresponding decision is accepted, otherwise record the prescribed proposed
-      follow-up. Run final verification sequentially and supply the land agent a
-      complete flag-to-evidence ledger."
+- id: fixture-foundation
+  title: Make flag infrastructure tests independent of production flags
+  size: medium
+  depends_on: []
+  description: 'fixture-foundation: Follow the shared contracts and phase 1 below.
+    Replace real rollout keys in generic feature-flag framework, CLI, state, doctor,
+    checker, and Flags-pane fixtures with test-only beta/sunset definitions. Cover
+    an empty registry and stale saved/environment overrides. Preserve product behavior
+    and the current registry in this phase. Run focused tests and the required check
+    before completion; do not launch helpers.'
+- id: typed-launch
+  title: Make typed Agent and Proc launches unconditional
+  size: medium
+  depends_on:
+  - fixture-foundation
+  description: 'typed-launch: Follow phase 2 and the shared removal checklist. Retire
+    typed_launch_units and close sase-s7. Remove Python and Rust/LSP opt-in checks,
+    disabled diagnostics, hidden-completion paths, and obsolete environment transport
+    while preserving mixed-unit dispatch, static and script conditions, recovery,
+    and code-fence safety. Keep queue_capacity_budget functional for phase 3. Verify
+    both repositories sequentially and include the core revision pin in host finalization.'
+- id: queue-budget
+  title: Make queue capacity budgets unconditional
+  size: medium
+  depends_on:
+  - typed-launch
+  description: 'queue-budget: Follow phase 3 and the shared removal checklist. Retire
+    queue_capacity_budget and close sase-zv across Rust parsing/admission/editor behavior
+    and Python launch, bead, and TUI adapters. Delete the Off threshold semantics
+    and finished launch/editor flag plumbing, including already-retired constant shims
+    where proven unused. Preserve supported persisted queue records and percent-hold
+    behavior. Verify the Rust core and Python checkout sequentially.'
+- id: macro-contracts
+  title: Stabilize macro aliases and strict input types
+  size: medium
+  depends_on:
+  - queue-budget
+  description: 'macro-contracts: Follow phase 4 and the shared removal checklist.
+    Retire legacy_xprompt_syntax and strict_macro_input_types; close sase-1fj and
+    sase-1g9. Preserve the On branch accepting xprompt aliases, legacy discovery and
+    plugin names, while removing rollout rejection policy and unknown-type-to-line
+    fallback. Make Rust config and LSP normalization follow the same unconditional
+    semantics. Keep duplicate-name and malformed-input errors and durable readers.'
+- id: identity-aliases
+  title: Stabilize agent-session and turn compatibility aliases
+  size: medium
+  depends_on:
+  - macro-contracts
+  description: 'identity-aliases: Follow phase 5 and the shared removal checklist.
+    Retire legacy_agent_family_syntax and legacy_sase_shell_syntax; close sase-18l
+    and sase-1ar. Keep all currently enabled alias normalization, including Rust''s
+    family keyword alias, and delete the flag-off rejection branches. Preserve canonical
+    output, conflict validation, and old durable records. Do not interpret legacy
+    flag names as permission to remove their enabled compatibility behavior.'
+- id: agents-query
+  title: Remove the legacy live Agents query implementation
+  size: medium
+  depends_on:
+  - identity-aliases
+  description: 'agents-query: Follow phase 6 and the shared removal checklist. Retire
+    agents_unified_query and close sase-zg. Make the Rust agents-live profile and
+    FilterBar unconditional. Delete the legacy live parser/evaluator, QueryEditModal,
+    and dependent dead state after checking every consumer. Preserve current saved-query
+    compatibility, history scoping, Rust pushdown, and asynchronous refresh performance.
+    Verify behavior and affected visual fixtures.'
+- id: tui-refresh
+  title: Stabilize refresh tokens, refresh gestures, and the Flags pane
+  size: medium
+  depends_on:
+  - agents-query
+  description: 'tui-refresh: Follow phase 7 and the shared removal checklist. Retire
+    ace_refresh_tokens, admin_center_flags, ref_sync_gesture, and refresh_panel; close
+    sase-wr, sase-rx, sase-qu, and sase-105. Preserve token-based refresh, Flags-pane
+    availability, the reference-sync gesture, and Refresh-panel key behavior. Delete
+    disabled paths and special rollout self-disable UI. Keep dirty/sanity recovery
+    and perform targeted TUI verification without parallel workloads.'
+- id: publication-services
+  title: Stabilize publication formats and service contracts
+  size: medium
+  depends_on:
+  - tui-refresh
+  description: 'publication-services: Follow phase 8 and the shared removal checklist.
+    Retire slim_agents_manifest, agents_session_manifest_compat, bgcmd_legacy_slots,
+    and axe_routine_job_contract; close sase-11p, sase-1ft, sase-13w, and sase-11f.
+    Write only slim manifests and canonical routine/job output; retain enabled explicit-file-set
+    compatibility and legacy slot reading/actions. Preserve data-integrity checks
+    and existing accepted input normalization.'
+- id: monitor-records
+  title: Remove legacy monitor-start rollout paths
+  size: medium
+  depends_on:
+  - publication-services
+  description: 'monitor-records: Follow phase 9 and the shared removal checklist.
+    Retire monitor_continuation_records and close sase-102. Every new monitor uses
+    versioned records and capture. Remove the selectable legacy writer/start path,
+    while keeping existing monitor settlement and recovery governed by persisted protocol
+    and sentinel fields. Exercise success/failure delivery, idempotency, recovery,
+    and older persisted monitor records.'
+- id: provider-instructions
+  title: Stabilize provider instruction and execution channels
+  size: medium
+  depends_on:
+  - monitor-records
+  description: 'provider-instructions: Follow phase 10 and the shared removal checklist.
+    Retire muse_synchronous_shell, grok_rules_delivery, claude_helper_channel, and
+    instruction_shadow_render; close sase-178, sase-1gv, sase-1gw, and sase-1h4. Keep
+    synchronous Muse execution, root Grok rules, supported Claude helper channels/guards,
+    and fail-open shadow rendering. Delete flag resolution and disabled variants without
+    converting shadow rendering into a new delivery cutover.'
+- id: runtime-controls
+  title: Stabilize sudo requests, provider drains, and autonomy records
+  size: medium
+  depends_on:
+  - provider-instructions
+  description: 'runtime-controls: Follow phase 11 and the shared removal checklist.
+    Retire agent_sudo_requests, provider_drain, and autonomy_record_only; close sase-111,
+    sase-sx, and sase-1j0. Remove beta refusal/no-drain/legacy-write branches. Preserve
+    typed sudo review safeguards, automatic durable drains and current toasts, canonical
+    autonomy writes, legacy read projection, and the plan-flow marker. Finish with
+    an empty production registry.'
+- id: clean-slate
+  title: Verify the empty registry and complete retirement cleanup
+  size: medium
+  depends_on:
+  - runtime-controls
+  description: 'clean-slate: Follow phase 12. Audit all 23 flags, closure evidence,
+    residual wrappers and literal-key checks across the changed repositories. Finish
+    docs, synthetic examples, empty-state visuals, schema and managed config cleanup;
+    verify upgrade startup with stale overrides. Apply each memory edit only if its
+    corresponding decision is accepted, otherwise record the prescribed proposed follow-up.
+    Run final verification sequentially and supply the land agent a complete flag-to-evidence
+    ledger.'
 proposed_by: bbugyi200.athena.0zb
 decided_by: auto
 create_time: 2026-10-09 22:28:21
 status: wip
+bead_id: sase-1jc
 ---
 
-- **PROMPT:**
-  [prompts/202610/retire_all_feature_flags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/retire_all_feature_flags.md)
+- **PROMPT:** [prompts/202610/retire_all_feature_flags.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/retire_all_feature_flags.md)
+- **BEAD:** [sase-1jc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jc/README.md)
 
 # Retire the current feature flags
 
