@@ -1,13 +1,11 @@
 ---
 tier: tale
 title: Make the research filename example respect disabled suffixes
-goal:
-  Render research:202609/topic.md when suffixes are disabled and retain
-  research:202609/topic__a.md when enabled, with consistent filename instructions.
+goal: Render research:202609/topic.md when suffixes are disabled and retain research:202609/topic__a.md
+  when enabled, with consistent filename instructions.
 size: small
 proposed_by: bbugyi200.apollo.6f
-create_time: 2026-10-10 12:29:13
-status: wip
+status: done
 ---
 
 # Plan: Make the research filename example respect disabled suffixes
