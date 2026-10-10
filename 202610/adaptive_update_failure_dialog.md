@@ -2,12 +2,19 @@
 tier: tale
 size: medium
 title: Fit update failure reports to their content and terminal
-goal: Update failure reports automatically use the space needed to minimize wrapping
-  and scrolling, up to nearly the whole terminal, while staying readable, navigable,
-  and visually calm at small sizes.
+goal:
+  Update failure reports automatically use the space needed to minimize wrapping and
+  scrolling, up to nearly the whole terminal, while staying readable, navigable, and
+  visually calm at small sizes.
 proposed_by: bbugyi200.apollo.69
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.69](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.69.md)
+- **COMMITS:**
+  - [217a543](https://github.com/sase-org/sase/commit/217a5439f563d5f0ddf0ead6976d78695cd44178)
+    — feat(ace): adapt update failure dialog to content and terminal size
 
 # Adaptive update failure dialog
 
