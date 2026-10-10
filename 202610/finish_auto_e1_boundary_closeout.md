@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish autonomy target-project inheritance and verified epic closeout
-goal:
-  Direct-approved session coders inherit live autonomy regardless of shell CWD,
+goal: Direct-approved session coders inherit live autonomy regardless of shell CWD,
   meaningful boundary tests prove the remaining E1 acceptance, and sase-1ip is closed
   normally.
 size: medium
 proposed_by: bbugyi200.athena.sase-1ip.land
 bead: sase-1ip
-create_time: 2026-10-10 07:02:18
-status: wip
+status: done
 ---
 
 - **BEAD:**
