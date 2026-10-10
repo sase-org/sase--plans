@@ -2,8 +2,9 @@
 tier: tale
 size: small
 title: Finish the Databricks v2 report and close sase-1jo
-goal: Bring databricks_nyc_cv_and_role_pitches_v2.md up to the epic's v2 spec, then
-  close epic sase-1jo, run symvision, and mark its plan file done.
+goal:
+  Bring databricks_nyc_cv_and_role_pitches_v2.md up to the epic's v2 spec, then close
+  epic sase-1jo, run symvision, and mark its plan file done.
 bead: sase-1jo
 proposed_by: bbugyi200.apollo.sase-1jo.land
 status: done
@@ -13,6 +14,11 @@ status: done
   [202610/databricks_followups.md](https://github.com/sase-org/sase--plans/blob/main/202610/databricks_followups.md)
 - **BEAD:**
   [sase-1jo](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jo/README.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-1jo.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1jo.land.md)
+- **COMMITS:**
+  - [9227d14](https://github.com/sase-org/sase--research/commit/9227d141b8afedc27e2b7690a5c55fe977d30bb5)
+    — docs(research): bring databricks v2 report up to closeout spec
 
 # Finish the Databricks v2 report and close epic sase-1jo
 
