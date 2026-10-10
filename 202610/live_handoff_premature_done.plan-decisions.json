@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should live plan handoffs show the gate's upcoming label (TALE APPROVED, ...) instead of RUNNING?",
+      "choices": [
+        {
+          "key": "running",
+          "label": "No: every live handoff shows RUNNING; uniform, no plan-file reads"
+        },
+        {
+          "key": "plan_aware",
+          "label": "Yes: plan handoffs show the upcoming gate label; question/pipe handoffs show RUNNING"
+        }
+      ],
+      "default": "running",
+      "effective_default": "running",
+      "id": "handoff_label",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "RUNNING is accurate for every handoff kind; the gate shows its own label seconds later"
+    }
+  ]
+}
