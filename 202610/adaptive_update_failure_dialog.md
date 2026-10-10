@@ -2,13 +2,11 @@
 tier: tale
 size: medium
 title: Fit update failure reports to their content and terminal
-goal:
-  Update failure reports automatically use the space needed to minimize wrapping and
-  scrolling, up to nearly the whole terminal, while staying readable, navigable, and
-  visually calm at small sizes.
+goal: Update failure reports automatically use the space needed to minimize wrapping
+  and scrolling, up to nearly the whole terminal, while staying readable, navigable,
+  and visually calm at small sizes.
 proposed_by: bbugyi200.apollo.69
-create_time: 2026-10-10 12:14:58
-status: wip
+status: done
 ---
 
 # Adaptive update failure dialog
