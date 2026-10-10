@@ -1,85 +1,77 @@
 ---
 tier: epic
 title: Databricks NYC application follow-ups
-goal: "Every recommendation in the research report databricks_nyc_cv_and_role_pitches.md
+goal: 'Every recommendation in the research report databricks_nyc_cv_and_role_pitches.md
   that an agent can safely finish is done: the public CV repo is free of stale claims
   with all five PDFs rebuilt, the interview-prep material exists, and the eval-pilot
-  harness is built. A concise databricks_nyc_cv_and_role_pitches_v2.md report next to
-  the original lists exactly what Bryan still has to do himself.
+  harness is built. A concise databricks_nyc_cv_and_role_pitches_v2.md report next
+  to the original lists exactly what Bryan still has to do himself.
 
-  "
+  '
 decisions:
   eval_pilot:
-    ask:
-      Should this epic build the SASE agent-eval pilot that the report recommends before
-      the onsite?
+    ask: Should this epic build the SASE agent-eval pilot that the report recommends
+      before the onsite?
     choices:
-      harness:
-        Build harness, task set, and stub/fakey smoke tests; Bryan launches real runs
-        later
-      harness_and_runs:
-        Also launch the real-agent pilot (about 24-36 agent runs of quota) and write
-        results
+      harness: Build harness, task set, and stub/fakey smoke tests; Bryan launches
+        real runs later
+      harness_and_runs: Also launch the real-agent pilot (about 24-36 agent runs of
+        quota) and write results
       skip: Build nothing; the v2 report carries the pilot spec as Bryan's work
     default: harness
-    why:
-      Real runs spend model quota and host capacity, and the pilot must not delay
+    why: Real runs spend model quota and host capacity, and the pilot must not delay
       applying
     answer: skip
   base_cv_sase:
-    ask:
-      Should the base CV (the PDF bryanbugyi.com links to) gain a SASE entry for May
-      2026 to present?
+    ask: Should the base CV (the PDF bryanbugyi.com links to) gain a SASE entry for
+      May 2026 to present?
     choices:
       add: Add a three-bullet SASE entry reusing the Databricks CV's verified wording
-      dates_only:
-        Keep base CV content; fix only tense and rebuild so Google ends May 2026
+      dates_only: Keep base CV content; fix only tense and rebuild so Google ends
+        May 2026
     default: add
     why: The site links this PDF publicly; without SASE it shows an unexplained gap
     answer: add
 phases:
-  - id: cv
-    title: CV repo cleanup and PDF rebuilds
-    depends_on: []
-    size: medium
-    description:
-      "cv: make the base and Batman CVs build without gutils.tex, remove stale SASE
-      claims from the older variants, update the base CV, and rebuild and verify every
-      changed PDF."
-  - id: prep
-    title: Interview-prep pack
-    depends_on: []
-    size: medium
-    description:
-      "prep: write SASE design-story cards and a short Agent Quality topic brief into
-      the research sidecar, next to the original report."
-  - id: evalpilot
-    title: SASE agent-eval pilot harness
-    depends_on: []
-    size: large
-    description:
-      "evalpilot: plan and build the small task-success eval over real SASE runs
-      described in the report, kept separate from fakey conformance, with real runs
-      gated by the eval_pilot decision."
-  - id: v2
-    title: Remaining-work report (v2)
-    depends_on:
-      - cv
-      - prep
-      - evalpilot
-    size: small
-    description:
-      "v2: re-verify both postings and write the concise v2 report of what was done and
-      what only Bryan can still do."
+- id: cv
+  title: CV repo cleanup and PDF rebuilds
+  depends_on: []
+  size: medium
+  description: 'cv: make the base and Batman CVs build without gutils.tex, remove
+    stale SASE claims from the older variants, update the base CV, and rebuild and
+    verify every changed PDF.'
+- id: prep
+  title: Interview-prep pack
+  depends_on: []
+  size: medium
+  description: 'prep: write SASE design-story cards and a short Agent Quality topic
+    brief into the research sidecar, next to the original report.'
+- id: evalpilot
+  title: SASE agent-eval pilot harness
+  depends_on: []
+  size: large
+  description: 'evalpilot: plan and build the small task-success eval over real SASE
+    runs described in the report, kept separate from fakey conformance, with real
+    runs gated by the eval_pilot decision.'
+- id: v2
+  title: Remaining-work report (v2)
+  depends_on:
+  - cv
+  - prep
+  - evalpilot
+  size: small
+  description: 'v2: re-verify both postings and write the concise v2 report of what
+    was done and what only Bryan can still do.'
 proposed_by: bbugyi200.apollo.6k
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-10 15:45:38
 status: wip
+bead_id: sase-1jo
 ---
 
-- **PROMPT:**
-  [prompts/202610/databricks_followups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/databricks_followups.md)
+- **PROMPT:** [prompts/202610/databricks_followups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/databricks_followups.md)
+- **BEAD:** [sase-1jo](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jo/README.md)
 
 # Plan: Databricks NYC application follow-ups
 
