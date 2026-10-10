@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Add a decision record \"Agents Are Not Told Their Autonomy\" to the decisions memory web?",
+      "default": false,
+      "effective_default": false,
+      "id": "memory_record",
+      "kind": "toggle",
+      "memory": {
+        "selectors": [
+          "decisions:agents-unaware-of-autonomy"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "exists": false,
+          "kind": "strand",
+          "path": "sase/memory/decisions/agents-unaware-of-autonomy.md",
+          "scope": "project",
+          "selector": "decisions:agents-unaware-of-autonomy",
+          "type": "strand"
+        }
+      ]
+    }
+  ]
+}
