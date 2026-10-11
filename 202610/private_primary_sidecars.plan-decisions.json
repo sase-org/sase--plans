@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should `sase doctor` also warn when a private primary already has public sidecars?",
+      "choices": [
+        {
+          "key": "add",
+          "label": "New doctor WARN check probes recorded sidecar remotes; one more module plus tests"
+        },
+        {
+          "key": "skip",
+          "label": "Fix init only; sidecars that are already public stay undetected"
+        }
+      ],
+      "default": "add",
+      "effective_default": "add",
+      "id": "doctor_check",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Init never re-checks existing remotes, so a sidecar made public earlier leaks silently"
+    }
+  ]
+}
