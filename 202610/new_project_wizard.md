@@ -1,158 +1,146 @@
 ---
 tier: epic
 title: New Project wizard — add or create projects from Admin Center ▸ Projects
-goal: "Pressing `n` on Admin Center ▸ Projects opens a beautiful three-stage New Project
-  wizard (Source › Configure › Review). The user picks a provider, then either adds a
-  repository SASE ranks as likely (local clones, unregistered repos in their GitHub
-  owners, linked repos, disabled projects) or creates a brand-new repository through the
-  provider plugin with every `gh repo create` option reachable. The project is
-  registered enabled, set up so agents can launch in it, and ends on a Ready screen. The
-  same behavior ships as `sase project suggest | add | create`, the CLI every frontend
-  shares.
+goal: 'Pressing `n` on Admin Center ▸ Projects opens a beautiful three-stage New Project
+  wizard (Source › Configure › Review). The user picks a provider, then either adds
+  a repository SASE ranks as likely (local clones, unregistered repos in their GitHub
+  owners, linked repos, disabled projects) or creates a brand-new repository through
+  the provider plugin with every `gh repo create` option reachable. The project is
+  registered enabled, set up so agents can launch in it, and ends on a Ready screen.
+  The same behavior ships as `sase project suggest | add | create`, the CLI every
+  frontend shares.
 
-  "
+  '
 decisions:
   human_only_record:
-    ask:
-      Add a decisions record that remote repository creation (sase project create) is
-      human-only?
+    ask: Add a decisions record that remote repository creation (sase project create)
+      is human-only?
     memory:
-      - decisions:project-create-human-only
+    - decisions:project-create-human-only
     default: false
     answer: false
   glossary_project:
-    ask:
-      Update the Sase Project glossary strand to say sase project add/create and the
-      wizard also create projects?
+    ask: Update the Sase Project glossary strand to say sase project add/create and
+      the wizard also create projects?
     memory:
-      - glossary:sase-project
+    - glossary:sase-project
     default: false
     answer: true
 phases:
-  - id: gh-hygiene
-    title: sase-github traps the wizard would hit
-    size: small
-    depends_on: []
-    description:
-      "gh-hygiene: in sase-github, bound `git clone` with a timeout, make
-      `projects_base()` honor SASE_HOME, stop `ws_detect_workflow_type` from claiming
-      non-GitHub hosts, and correct the stale `github_orgs` SSH/HTTPS docs."
-  - id: provider-hooks
-    title: Additive workspace-provider hooks and bare-git implementations
-    size: medium
-    depends_on: []
-    description:
-      "provider-hooks: add the five onboarding hookspecs (parse, local candidates,
-      probe, describe creation, create) with their frozen dataclasses, manager methods,
-      registry wrappers and argument pins; extend the repo-candidate dataclasses and
-      cache (host, truncated, remedy, repo id, push permission); implement every new
-      hook for built-in bare git."
-  - id: core-classify
-    title: sase-core candidate classification and creation-form evaluation
-    size: medium
-    depends_on: []
-    description:
-      "core-classify: add the sase-core `project_onboarding` module with
-      `classify_project_candidates` and `evaluate_repo_creation_form`, their PyO3
-      bindings, table tests, a thin Python facade in sase, and the revision-pin bump."
-  - id: core-plan
-    title: sase-core onboarding plan derivation
-    size: medium
-    depends_on:
-      - core-classify
-    description:
-      "core-plan: add `plan_project_onboarding` (facts in, ordered steps, identity
-      preview, setup resolution, blockers, warnings and intent fingerprint out) to the
-      same module, with binding, exhaustive table tests, facade, and pin bump."
-  - id: gh-provider
-    title: sase-github implements the onboarding hooks
-    size: medium
-    depends_on:
-      - gh-hygiene
-      - provider-hooks
-    description:
-      "gh-provider: implement parse, local candidates, probe, describe creation and
-      create for GitHub, encoding the verified `gh repo create` rules exactly; enrich
-      `gh repo list` fields, report truncation, remedies and the signed-in account."
-  - id: cli-suggest
-    title: Candidate discovery engine and `sase project suggest`
-    size: medium
-    depends_on:
-      - provider-hooks
-      - core-classify
-    description:
-      "cli-suggest: create the `sase.project_onboarding` package with provider-neutral
-      ref parsing and cache-first, per-owner discovery feeding core classification, plus
-      the colored and JSON `sase project suggest` command."
-  - id: cli-add
-    title: Onboarding engine and `sase project add`
-    size: large
-    depends_on:
-      - core-plan
-      - gh-provider
-      - cli-suggest
-    description:
-      "cli-add: build facts gathering, plan documents, the convergent step executor with
-      ownership journal and NDJSON events, the manage step, and the `sase project add`
-      command with check, TTY confirm, durable-operation IO, init chaining, docs and
-      skill updates."
-  - id: cli-create
-    title: "`sase project create` and the human-only guard"
-    size: medium
-    depends_on:
-      - cli-add
-    description:
-      "cli-create: add `sase project create` with strict provider-option validation,
-      journaled remote creation and adoption, and the agent refusal with bypass and
-      gate-option allowance; update docs and skill."
-  - id: tui-source
-    title: Wizard shell and the Source stage
-    size: medium
-    depends_on:
-      - cli-suggest
-    description:
-      "tui-source: build the NewProjectModal shell (stepper, provider strip with health
-      chips, stage machine) and the Source stage (paste-anything filter, streamed
-      classified groups, hidden-count footer, resume rows, live detail card), pushed
-      directly in tests only."
-  - id: tui-add
-    title: Configure, Review, Progress, init hand-off and Ready for existing repos
-    size: large
-    depends_on:
-      - tui-source
-      - cli-add
-    description:
-      "tui-add: complete the add-existing journey: identity and setup card, Review
-      rendered from the CLI plan, durable apply with a live checklist, the reused init
-      preview with its terminal valve, Ready, and recoverable failure."
-  - id: tui-entry
-    title: Projects-tab entry points and integration
-    size: medium
-    depends_on:
-      - tui-add
-    description:
-      "tui-entry: wire `n` (keymaps, default_config, schema, help), the palette entry
-      and empty-state card, priority-truncated hints, and post-completion reload,
-      selection and launch integration; document the wizard."
-  - id: tui-create
-    title: Create a new repository from the wizard
-    size: large
-    depends_on:
-      - tui-entry
-      - cli-create
-    description:
-      "tui-create: show the pinned Create row, render the provider form with disclosure
-      and live constraint greying, live name, availability and collision checks,
-      danger-styled Review, create progress and the created-but-incomplete recovery."
+- id: gh-hygiene
+  title: sase-github traps the wizard would hit
+  size: small
+  depends_on: []
+  description: 'gh-hygiene: in sase-github, bound `git clone` with a timeout, make
+    `projects_base()` honor SASE_HOME, stop `ws_detect_workflow_type` from claiming
+    non-GitHub hosts, and correct the stale `github_orgs` SSH/HTTPS docs.'
+- id: provider-hooks
+  title: Additive workspace-provider hooks and bare-git implementations
+  size: medium
+  depends_on: []
+  description: 'provider-hooks: add the five onboarding hookspecs (parse, local candidates,
+    probe, describe creation, create) with their frozen dataclasses, manager methods,
+    registry wrappers and argument pins; extend the repo-candidate dataclasses and
+    cache (host, truncated, remedy, repo id, push permission); implement every new
+    hook for built-in bare git.'
+- id: core-classify
+  title: sase-core candidate classification and creation-form evaluation
+  size: medium
+  depends_on: []
+  description: 'core-classify: add the sase-core `project_onboarding` module with
+    `classify_project_candidates` and `evaluate_repo_creation_form`, their PyO3 bindings,
+    table tests, a thin Python facade in sase, and the revision-pin bump.'
+- id: core-plan
+  title: sase-core onboarding plan derivation
+  size: medium
+  depends_on:
+  - core-classify
+  description: 'core-plan: add `plan_project_onboarding` (facts in, ordered steps,
+    identity preview, setup resolution, blockers, warnings and intent fingerprint
+    out) to the same module, with binding, exhaustive table tests, facade, and pin
+    bump.'
+- id: gh-provider
+  title: sase-github implements the onboarding hooks
+  size: medium
+  depends_on:
+  - gh-hygiene
+  - provider-hooks
+  description: 'gh-provider: implement parse, local candidates, probe, describe creation
+    and create for GitHub, encoding the verified `gh repo create` rules exactly; enrich
+    `gh repo list` fields, report truncation, remedies and the signed-in account.'
+- id: cli-suggest
+  title: Candidate discovery engine and `sase project suggest`
+  size: medium
+  depends_on:
+  - provider-hooks
+  - core-classify
+  description: 'cli-suggest: create the `sase.project_onboarding` package with provider-neutral
+    ref parsing and cache-first, per-owner discovery feeding core classification,
+    plus the colored and JSON `sase project suggest` command.'
+- id: cli-add
+  title: Onboarding engine and `sase project add`
+  size: large
+  depends_on:
+  - core-plan
+  - gh-provider
+  - cli-suggest
+  description: 'cli-add: build facts gathering, plan documents, the convergent step
+    executor with ownership journal and NDJSON events, the manage step, and the `sase
+    project add` command with check, TTY confirm, durable-operation IO, init chaining,
+    docs and skill updates.'
+- id: cli-create
+  title: '`sase project create` and the human-only guard'
+  size: medium
+  depends_on:
+  - cli-add
+  description: 'cli-create: add `sase project create` with strict provider-option
+    validation, journaled remote creation and adoption, and the agent refusal with
+    bypass and gate-option allowance; update docs and skill.'
+- id: tui-source
+  title: Wizard shell and the Source stage
+  size: medium
+  depends_on:
+  - cli-suggest
+  description: 'tui-source: build the NewProjectModal shell (stepper, provider strip
+    with health chips, stage machine) and the Source stage (paste-anything filter,
+    streamed classified groups, hidden-count footer, resume rows, live detail card),
+    pushed directly in tests only.'
+- id: tui-add
+  title: Configure, Review, Progress, init hand-off and Ready for existing repos
+  size: large
+  depends_on:
+  - tui-source
+  - cli-add
+  description: 'tui-add: complete the add-existing journey: identity and setup card,
+    Review rendered from the CLI plan, durable apply with a live checklist, the reused
+    init preview with its terminal valve, Ready, and recoverable failure.'
+- id: tui-entry
+  title: Projects-tab entry points and integration
+  size: medium
+  depends_on:
+  - tui-add
+  description: 'tui-entry: wire `n` (keymaps, default_config, schema, help), the palette
+    entry and empty-state card, priority-truncated hints, and post-completion reload,
+    selection and launch integration; document the wizard.'
+- id: tui-create
+  title: Create a new repository from the wizard
+  size: large
+  depends_on:
+  - tui-entry
+  - cli-create
+  description: 'tui-create: show the pinned Create row, render the provider form with
+    disclosure and live constraint greying, live name, availability and collision
+    checks, danger-styled Review, create progress and the created-but-incomplete recovery.'
 proposed_by: bbugyi200.athena.research.49.linker.w1
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-11 11:13:39
 status: wip
+bead_id: sase-1jx
 ---
 
-- **PROMPT:**
-  [prompts/202610/new_project_wizard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard.md)
+- **PROMPT:** [prompts/202610/new_project_wizard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard.md)
+- **BEAD:** [sase-1jx](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/README.md)
 
 # Plan: New Project wizard for Admin Center ▸ Projects
 
