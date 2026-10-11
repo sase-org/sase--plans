@@ -1,16 +1,16 @@
 ---
 tier: epic
 title: Record each local plan's SASE project in its frontmatter
-goal:
-  "`sase plan propose` stamps the owning SASE project into every machine-local plan
-  under `~/.sase/plans/`. `sase plan approve <plan-file>` and `sase bead work
-  <plan-file>` use that field to pick the right project, so both work from any
-  directory. The field never reaches a project's plan store."
+goal: '`sase plan propose` stamps the owning SASE project into every machine-local
+  plan under `~/.sase/plans/`. `sase plan approve <plan-file>` and `sase bead work
+  <plan-file>` use that field to pick the right project, so both work from any directory.
+  The field never reaches a project''s plan store.'
 decisions:
   project_value:
     ask: How should the stamped `project` value be spelled?
     choices:
-      display: Display name such as `sase`; readable, mapped to the key by the alias map
+      display: Display name such as `sase`; readable, mapped to the key by the alias
+        map
       key: Project key such as `gh_sase-org__sase`; exact, but opaque to humans
     default: display
     why: Matches the `+sase` tag and `sase project list`; readers accept both spellings
@@ -21,43 +21,41 @@ decisions:
     why: The frontmatter covers new plans; `-P` is already `--no-push`
     answer: false
 phases:
-  - id: field
-    title: Accept, stamp, and strip the plan `project` field
-    size: medium
-    depends_on: []
-    description:
-      "field: sase-core accepts an optional `project` frontmatter field. `sase plan
-      propose` stamps the planner's project into the local plan. A shared Python helper
-      reads and strips the field, and every writer that copies a plan into a project
-      plan store strips it."
-  - id: approve
-    title: "`sase plan approve` resolves the project from frontmatter"
-    size: small
-    depends_on:
-      - field
-    description:
-      "approve: gateless `sase plan approve` reads the plan's `project` field right
-      after `-P`. Its already-done recovery check and dry-run preview use the resolved
-      project instead of the working directory."
-  - id: bead-work
-    title: "`sase bead work <plan-file>` routes by frontmatter project"
-    size: medium
-    depends_on:
-      - field
-    description:
-      "bead-work: plan-file mode reads the `project` field. When the working directory
-      is not inside that project, it runs in a write-capable operation context at that
-      project's primary checkout. That context covers the lock, stores, archive links,
-      parent routing, and launch."
+- id: field
+  title: Accept, stamp, and strip the plan `project` field
+  size: medium
+  depends_on: []
+  description: 'field: sase-core accepts an optional `project` frontmatter field.
+    `sase plan propose` stamps the planner''s project into the local plan. A shared
+    Python helper reads and strips the field, and every writer that copies a plan
+    into a project plan store strips it.'
+- id: approve
+  title: '`sase plan approve` resolves the project from frontmatter'
+  size: small
+  depends_on:
+  - field
+  description: 'approve: gateless `sase plan approve` reads the plan''s `project`
+    field right after `-P`. Its already-done recovery check and dry-run preview use
+    the resolved project instead of the working directory.'
+- id: bead-work
+  title: '`sase bead work <plan-file>` routes by frontmatter project'
+  size: medium
+  depends_on:
+  - field
+  description: 'bead-work: plan-file mode reads the `project` field. When the working
+    directory is not inside that project, it runs in a write-capable operation context
+    at that project''s primary checkout. That context covers the lock, stores, archive
+    links, parent routing, and launch.'
 proposed_by: bbugyi200.athena.0zl
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-11 07:37:53
 status: wip
+bead_id: sase-1jw
 ---
 
-- **PROMPT:**
-  [prompts/202610/plan_project_frontmatter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_project_frontmatter.md)
+- **PROMPT:** [prompts/202610/plan_project_frontmatter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/plan_project_frontmatter.md)
+- **BEAD:** [sase-1jw](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jw/README.md)
 
 # Record each local plan's SASE project in its frontmatter
 
