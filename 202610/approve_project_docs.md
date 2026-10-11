@@ -1,15 +1,14 @@
 ---
 tier: tale
 title: Document gateless approve project frontmatter and close sase-1jw
-goal: "Say in the gateless-approval docs that a proposal's frontmatter project supplies
+goal: 'Say in the gateless-approval docs that a proposal''s frontmatter project supplies
   the project when --project is omitted, then close epic sase-1jw.
 
-  "
+  '
 size: small
 proposed_by: bbugyi200.athena.sase-1jw.land
 bead: sase-1jw
-create_time: 2026-10-11 16:27:27
-status: wip
+status: done
 ---
 
 - **PARENT:**
