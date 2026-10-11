@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Also privatize the unflagged count_wrapped_rows geometry helper for consistency?",
+      "default": true,
+      "effective_default": true,
+      "id": "privatize_count_rows",
+      "kind": "toggle",
+      "requested_verified": false,
+      "why": "Same in-module-only shape; symvision misses it only through a name collision"
+    }
+  ]
+}
