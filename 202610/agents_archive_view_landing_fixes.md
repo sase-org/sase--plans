@@ -1,84 +1,78 @@
 ---
 tier: epic
 title: Finish the read-only Agents Archive view before sase-1jm.3.1 lands
-goal:
-  The beta-flagged Agents Archive is correct and complete. Detail ownership never
+goal: The beta-flagged Agents Archive is correct and complete. Detail ownership never
   strands the Inbox or the Archive, live-only keys explain themselves, read callers
   never fall back to the parked Inbox, every promised parking and parent seam exists,
-  project banners show names, the TUI import closure is back to its pre-epic size, and
-  the Archive goldens are stable and current.
+  project banners show names, the TUI import closure is back to its pre-epic size,
+  and the Archive goldens are stable and current.
 phases:
-  - id: detail-ownership
-    title: Detail ownership, stuck placeholders, and reader guards
-    size: medium
-    depends_on: []
-    description:
-      "detail-ownership: record a fresh owner token at every debounced Inbox detail
-      schedule so Inbox detail repaints after an Archive round trip. Keep hidden Inbox
-      paths from cancelling or replacing the Archive's pending hydration on the shared
-      debouncer. Repaint Archive detail when the controller moves the selection. Clear
-      the stuck titled loading card when the cursor leaves a run, and drop hydration
-      while the pulse is focused. Stop FINAL and tool-run live ticks for archived
-      agents, and label partial replies as partial."
-  - id: controller-seams
-    title: Controller robustness, parent seams, and project display names
-    size: medium
-    depends_on:
-      - detail-ownership
-    description:
-      "controller-seams: stop off-thread probe errors from wedging the Archive
-      controller. Drain a queued explicit open on idle, and coalesce overlapping idle
-      rebuilds. Publish a typed found/owner/missing arrival outcome and clear unmatched
-      exact names. Add the restored-row overlay seam with invalidation, and keep list
-      option IDs unique. Show PROJECT_NAME on project banners through the project
-      display snapshot."
-  - id: action-boundary-fixes
-    title: Live-key toasts, read isolation, marks, footer, help, and info row
-    size: medium
-    depends_on:
-      - controller-seams
-    description:
-      "action-boundary-fixes: make live-only keys reach their Archive guards so they
-      toast instead of being silently swallowed. Stop copy readers from falling back to
-      the parked Inbox agent, and guard or route the remaining unaudited Inbox actions.
-      Render Archive marks and refresh the footer after mark and cursor changes. Remove
-      the nonfunctional Enter read hint, fix the overflowing help row, and gate help and
-      leader chrome on the beta. Fix the info row's color, key label, and resize
-      alignment (the cause of the flaky missing-index golden), and the exception chip
-      drop order."
-  - id: parking-and-import
-    title: Complete per-view parking, scope chip, and import deferral
-    size: medium
-    depends_on:
-      - action-boundary-fixes
-    description:
-      "parking-and-import: restore deck card choices without reverting the shared deck
-      splits, and park the Archive's per-panel deck, card, and scroll. Close any open
-      FilterBar session before a view change, render the amber in: scope chip, and fix
-      early-toggle query parking. Add the missing round-trip, tab-marker, and
-      quit-persistence tests. Defer the two Archive modules out of the TUI app import
-      closure."
-  - id: remaining-proof
-    title: Regression proof, golden recapture, and performance evidence
-    size: medium
-    depends_on:
-      - parking-and-import
-    description:
-      "remaining-proof: add mounted-app regressions for every defect fixed by this epic
-      in both flag states. Recapture the affected Archive PNG goldens through sase
-      monitor, inspect each one, and prove the missing-index golden is stable.
-      Re-measure Archive j/k and warm open against a same-host control. Run sase tool
-      run check, and record the evidence for this child epic's land agent."
+- id: detail-ownership
+  title: Detail ownership, stuck placeholders, and reader guards
+  size: medium
+  depends_on: []
+  description: 'detail-ownership: record a fresh owner token at every debounced Inbox
+    detail schedule so Inbox detail repaints after an Archive round trip. Keep hidden
+    Inbox paths from cancelling or replacing the Archive''s pending hydration on the
+    shared debouncer. Repaint Archive detail when the controller moves the selection.
+    Clear the stuck titled loading card when the cursor leaves a run, and drop hydration
+    while the pulse is focused. Stop FINAL and tool-run live ticks for archived agents,
+    and label partial replies as partial.'
+- id: controller-seams
+  title: Controller robustness, parent seams, and project display names
+  size: medium
+  depends_on:
+  - detail-ownership
+  description: 'controller-seams: stop off-thread probe errors from wedging the Archive
+    controller. Drain a queued explicit open on idle, and coalesce overlapping idle
+    rebuilds. Publish a typed found/owner/missing arrival outcome and clear unmatched
+    exact names. Add the restored-row overlay seam with invalidation, and keep list
+    option IDs unique. Show PROJECT_NAME on project banners through the project display
+    snapshot.'
+- id: action-boundary-fixes
+  title: Live-key toasts, read isolation, marks, footer, help, and info row
+  size: medium
+  depends_on:
+  - controller-seams
+  description: 'action-boundary-fixes: make live-only keys reach their Archive guards
+    so they toast instead of being silently swallowed. Stop copy readers from falling
+    back to the parked Inbox agent, and guard or route the remaining unaudited Inbox
+    actions. Render Archive marks and refresh the footer after mark and cursor changes.
+    Remove the nonfunctional Enter read hint, fix the overflowing help row, and gate
+    help and leader chrome on the beta. Fix the info row''s color, key label, and
+    resize alignment (the cause of the flaky missing-index golden), and the exception
+    chip drop order.'
+- id: parking-and-import
+  title: Complete per-view parking, scope chip, and import deferral
+  size: medium
+  depends_on:
+  - action-boundary-fixes
+  description: 'parking-and-import: restore deck card choices without reverting the
+    shared deck splits, and park the Archive''s per-panel deck, card, and scroll.
+    Close any open FilterBar session before a view change, render the amber in: scope
+    chip, and fix early-toggle query parking. Add the missing round-trip, tab-marker,
+    and quit-persistence tests. Defer the two Archive modules out of the TUI app import
+    closure.'
+- id: remaining-proof
+  title: Regression proof, golden recapture, and performance evidence
+  size: medium
+  depends_on:
+  - parking-and-import
+  description: 'remaining-proof: add mounted-app regressions for every defect fixed
+    by this epic in both flag states. Recapture the affected Archive PNG goldens through
+    sase monitor, inspect each one, and prove the missing-index golden is stable.
+    Re-measure Archive j/k and warm open against a same-host control. Run sase tool
+    run check, and record the evidence for this child epic''s land agent.'
 proposed_by: bbugyi200.athena.sase-1jm.3.1.land
 parent_bead: sase-1jm.3.1
 create_time: 2026-10-11 19:18:48
 status: wip
+bead_id: sase-1jm.3.1.8
 ---
 
-- **PROMPT:**
-  [prompts/202610/agents_archive_view_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_view_landing_fixes.md)
-- **PARENT:**
-  [202610/agents_archive_view_phase.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view_phase.md)
+- **PROMPT:** [prompts/202610/agents_archive_view_landing_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_view_landing_fixes.md)
+- **PARENT:** [202610/agents_archive_view_phase.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view_phase.md)
+- **BEAD:** [sase-1jm.3.1.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.3.1.8.md)
 
 # Finish the read-only Agents Archive view
 
