@@ -1,75 +1,70 @@
 ---
 tier: epic
 title: Green Master Gate and Full CI with host-independent TUI goldens
-goal: "Master Gate stays green on master, and a fresh Full CI on the landed tip passes
-  every job, including visual-test on GitHub's UTC runners, without raised timeouts,
+goal: 'Master Gate stays green on master, and a fresh Full CI on the landed tip passes
+  every job, including visual-test on GitHub''s UTC runners, without raised timeouts,
   skips, or goldens copied from CI.
 
-  "
+  '
 decisions:
   tui_screenshot_rule:
-    ask:
-      Add a host-independent golden rule (clock, zone, hostname, HOME, loaded state) to
-      tui_screenshot.md?
+    ask: Add a host-independent golden rule (clock, zone, hostname, HOME, loaded state)
+      to tui_screenshot.md?
     memory:
-      - tui_screenshot.md
+    - tui_screenshot.md
     default: false
     answer: true
 phases:
-  - id: picker-race
-    title: Save-location picker mount race and host-isolated mini-macro location goldens
-    depends_on: []
-    size: small
-    description:
-      "picker-race: render choices delivered before mount in SaveLocationPickerModal,
-      add a regression test, isolate the mini-macro location PNG tests from the host
-      config, and wait for loaded state before capture."
-  - id: clock-seams
-    title: Pin every clock, zone, and hostname the visual fixtures observe
-    depends_on: []
-    size: medium
-    description:
-      "clock-seams: make the FINAL and epic-follow fixture epochs zone-explicit, route
-      every pager age through the pinned time-band epoch, pin the memory pane clock, pin
-      the retry harness hostname, and refresh only the goldens those fixes move."
-  - id: deck-races
-    title: Agents-deck capture races and the sase-1ii deck-state timeouts
-    depends_on: []
-    size: medium
-    description:
-      "deck-races: fix the Tool Runs deck fast-path detail race and its fixture, wait on
-      semantic state for the gate footer and session runtime captures, and root-cause
-      the spread_deck_sticky and left_right_search_committed timeouts tracked by
-      sase-1ii."
-  - id: rebaseline
-    title:
-      Full visual-lane rebaseline for the intended Models and dictionary-card changes
-    depends_on:
-      - picker-race
-      - clock-seams
-      - deck-races
-    size: medium
-    description:
-      "rebaseline: on the integrated tip, regenerate the remaining legitimately stale
-      goldens (Models summary line, dictionary card), inspect every change, and prove a
-      clean full check under TZ=UTC."
-  - id: ci-proof
-    title: Prove Master Gate and a fresh Full CI green on one SHA
-    depends_on:
-      - rebaseline
-    size: small
-    description:
-      "ci-proof: wait for Master Gate on the landed tip, dispatch and monitor Full CI,
-      triage any red against existing flake owners, and record same-SHA run evidence."
+- id: picker-race
+  title: Save-location picker mount race and host-isolated mini-macro location goldens
+  depends_on: []
+  size: small
+  description: 'picker-race: render choices delivered before mount in SaveLocationPickerModal,
+    add a regression test, isolate the mini-macro location PNG tests from the host
+    config, and wait for loaded state before capture.'
+- id: clock-seams
+  title: Pin every clock, zone, and hostname the visual fixtures observe
+  depends_on: []
+  size: medium
+  description: 'clock-seams: make the FINAL and epic-follow fixture epochs zone-explicit,
+    route every pager age through the pinned time-band epoch, pin the memory pane
+    clock, pin the retry harness hostname, and refresh only the goldens those fixes
+    move.'
+- id: deck-races
+  title: Agents-deck capture races and the sase-1ii deck-state timeouts
+  depends_on: []
+  size: medium
+  description: 'deck-races: fix the Tool Runs deck fast-path detail race and its fixture,
+    wait on semantic state for the gate footer and session runtime captures, and root-cause
+    the spread_deck_sticky and left_right_search_committed timeouts tracked by sase-1ii.'
+- id: rebaseline
+  title: Full visual-lane rebaseline for the intended Models and dictionary-card changes
+  depends_on:
+  - picker-race
+  - clock-seams
+  - deck-races
+  size: medium
+  description: 'rebaseline: on the integrated tip, regenerate the remaining legitimately
+    stale goldens (Models summary line, dictionary card), inspect every change, and
+    prove a clean full check under TZ=UTC.'
+- id: ci-proof
+  title: Prove Master Gate and a fresh Full CI green on one SHA
+  depends_on:
+  - rebaseline
+  size: small
+  description: 'ci-proof: wait for Master Gate on the landed tip, dispatch and monitor
+    Full CI, triage any red against existing flake owners, and record same-SHA run
+    evidence.'
 proposed_by: bbugyi200.athena.0zp
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-11 13:15:11
 status: wip
+bead_id: sase-1jz
 ---
 
-- **PROMPT:**
-  [prompts/202610/ci_green_visual_lane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ci_green_visual_lane.md)
+- **PROMPT:** [prompts/202610/ci_green_visual_lane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ci_green_visual_lane.md)
+- **BEAD:** [sase-1jz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jz/README.md)
 
 # Green Master Gate and Full CI with host-independent TUI goldens
 
