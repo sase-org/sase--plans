@@ -1,107 +1,98 @@
 ---
 tier: epic
 title: Implement the read-only Agents Archive view for sase-1jm.3
-goal:
-  The Agents tab can browse this machine's dismissed runs through a beta-flagged Archive
-  view, preserve each view's state, and render retained decks without restoring runs or
-  disturbing Inbox state.
+goal: The Agents tab can browse this machine's dismissed runs through a beta-flagged
+  Archive view, preserve each view's state, and render retained decks without restoring
+  runs or disturbing Inbox state.
 phases:
-  - id: view-foundation
-    title: Archive view state, flag, and selection ownership
-    size: medium
-    depends_on: []
-    description:
-      "view-foundation: create the agents_archive_view beta flag through sase flag new.
-      Add typed Archive presentation state, a view-aware selection API, read-only detail
-      context, and centralized detail-ownership guards while leaving the Inbox
-      collection and existing live selection semantics intact. Define the entry and
-      selection seams for the remaining child phases and parent epic consumers. Test
-      both flag states and refresh ownership."
-  - id: corpus-controller
-    title: Off-thread Archive loading, prewarm, and revalidation
-    size: medium
-    depends_on:
-      - view-foundation
-    description:
-      "corpus-controller: add a coalesced Archive controller around the existing core
-      corpus cache and summary, rows, lookup, and count methods. Build and query
-      off-thread, publish only current generations, gate prewarm on the first complete
-      Inbox load and idle UI, and revalidate index and link signatures without archive
-      scans on idle ticks. Preserve selection and page requests across rebuilds. Test
-      cold, warm, missing, rebuilding, and stale-result paths."
-  - id: archive-column
-    title: Paged Archive list and live Inbox pulse
-    size: medium
-    depends_on:
-      - corpus-controller
-    description:
-      "archive-column: lazily mount an Archive column beside the mounted Inbox column,
-      containing a selectable Inbox pulse and an OptionList-style Archive list. Render
-      core light rows, date banners, containers, and banner-local pages of 100 rows; add
-      j/k/g/G/h/l and J/K navigation, echo guards, responsive columns, and truthful
-      past-tense outcomes and time chips. Keep all Archive navigation state separate
-      from Inbox state."
-  - id: query-parking
-    title: View toggles, scoped filters, parking, and Archive chrome
-    size: medium
-    depends_on:
-      - archive-column
-    description:
-      "query-parking: implement the pure ,a toggle, Open Archive and Back to Inbox
-      palette actions, complete per-view parking, scoped FilterBar completion and
-      preview, query-history and saved-slot routing, Inbox-only last-query persistence,
-      and the persisted Archive grouping picker. Add the Archive info row and Agents
-      marker, hide the Inbox header in Archive, and test startup, toggle, edit
-      cancellation, scope errors, history, slots, and both agents_unified_query states."
-  - id: archive-reader
-    title: Retained read-only decks and archived identity header
-    size: medium
-    depends_on:
-      - query-parking
-    description:
-      "archive-reader: hydrate a selected individual bundle off-thread through the
-      existing 150 ms detail debouncer and recheck view, identity, and generation after
-      awaits. Paint the new archived identity and placeholder immediately; reuse Main,
-      Files, Tools, FINAL, and the independently supplied Record deck with static
-      read-only guards and titled missing-content cards. Render container summaries from
-      light rows only and prove selecting archived RUNNING entries never tails logs,
-      refreshes workspaces, clears unread, writes archive state, or revives agents."
-  - id: action-boundary
-    title: Archive action isolation, caller audit, footer, and help
-    size: medium
-    depends_on:
-      - archive-reader
-    description:
-      "action-boundary: audit every Agents selected-agent caller and route read
-      operations through the typed view-aware selection while live actions use
-      Inbox-only selection. Add explanatory guards for live-only keys and tab or tribe
-      moves, independent Archive marks, a view-specific conditional footer, and the
-      Archive help box. Preserve deck keys and the parent's later restore, route,
-      bridge, and Record extension seams. Verify Archive rows do not enter Inbox
-      accounting or bulk actions."
-  - id: archive-proof
-    title: Archive workflow regressions, performance evidence, and PNGs
-    size: medium
-    depends_on:
-      - action-boundary
-    description:
-      "archive-proof: complete cross-phase regression coverage and deterministic Archive
-      PNG fixtures, benchmark warm opening and j/k at archive scale, and capture
-      targeted goldens through sase monitor. Inspect all golden changes and resolve
-      implementation regressions. Verify both flag states, parking, detail ownership,
-      no-write reading, isolation, query parity, and unaffected Inbox first paint;
-      record evidence for the child epic land agent, without closing sase-1jm.3 or any
-      ancestor."
+- id: view-foundation
+  title: Archive view state, flag, and selection ownership
+  size: medium
+  depends_on: []
+  description: 'view-foundation: create the agents_archive_view beta flag through
+    sase flag new. Add typed Archive presentation state, a view-aware selection API,
+    read-only detail context, and centralized detail-ownership guards while leaving
+    the Inbox collection and existing live selection semantics intact. Define the
+    entry and selection seams for the remaining child phases and parent epic consumers.
+    Test both flag states and refresh ownership.'
+- id: corpus-controller
+  title: Off-thread Archive loading, prewarm, and revalidation
+  size: medium
+  depends_on:
+  - view-foundation
+  description: 'corpus-controller: add a coalesced Archive controller around the existing
+    core corpus cache and summary, rows, lookup, and count methods. Build and query
+    off-thread, publish only current generations, gate prewarm on the first complete
+    Inbox load and idle UI, and revalidate index and link signatures without archive
+    scans on idle ticks. Preserve selection and page requests across rebuilds. Test
+    cold, warm, missing, rebuilding, and stale-result paths.'
+- id: archive-column
+  title: Paged Archive list and live Inbox pulse
+  size: medium
+  depends_on:
+  - corpus-controller
+  description: 'archive-column: lazily mount an Archive column beside the mounted
+    Inbox column, containing a selectable Inbox pulse and an OptionList-style Archive
+    list. Render core light rows, date banners, containers, and banner-local pages
+    of 100 rows; add j/k/g/G/h/l and J/K navigation, echo guards, responsive columns,
+    and truthful past-tense outcomes and time chips. Keep all Archive navigation state
+    separate from Inbox state.'
+- id: query-parking
+  title: View toggles, scoped filters, parking, and Archive chrome
+  size: medium
+  depends_on:
+  - archive-column
+  description: 'query-parking: implement the pure ,a toggle, Open Archive and Back
+    to Inbox palette actions, complete per-view parking, scoped FilterBar completion
+    and preview, query-history and saved-slot routing, Inbox-only last-query persistence,
+    and the persisted Archive grouping picker. Add the Archive info row and Agents
+    marker, hide the Inbox header in Archive, and test startup, toggle, edit cancellation,
+    scope errors, history, slots, and both agents_unified_query states.'
+- id: archive-reader
+  title: Retained read-only decks and archived identity header
+  size: medium
+  depends_on:
+  - query-parking
+  description: 'archive-reader: hydrate a selected individual bundle off-thread through
+    the existing 150 ms detail debouncer and recheck view, identity, and generation
+    after awaits. Paint the new archived identity and placeholder immediately; reuse
+    Main, Files, Tools, FINAL, and the independently supplied Record deck with static
+    read-only guards and titled missing-content cards. Render container summaries
+    from light rows only and prove selecting archived RUNNING entries never tails
+    logs, refreshes workspaces, clears unread, writes archive state, or revives agents.'
+- id: action-boundary
+  title: Archive action isolation, caller audit, footer, and help
+  size: medium
+  depends_on:
+  - archive-reader
+  description: 'action-boundary: audit every Agents selected-agent caller and route
+    read operations through the typed view-aware selection while live actions use
+    Inbox-only selection. Add explanatory guards for live-only keys and tab or tribe
+    moves, independent Archive marks, a view-specific conditional footer, and the
+    Archive help box. Preserve deck keys and the parent''s later restore, route, bridge,
+    and Record extension seams. Verify Archive rows do not enter Inbox accounting
+    or bulk actions.'
+- id: archive-proof
+  title: Archive workflow regressions, performance evidence, and PNGs
+  size: medium
+  depends_on:
+  - action-boundary
+  description: 'archive-proof: complete cross-phase regression coverage and deterministic
+    Archive PNG fixtures, benchmark warm opening and j/k at archive scale, and capture
+    targeted goldens through sase monitor. Inspect all golden changes and resolve
+    implementation regressions. Verify both flag states, parking, detail ownership,
+    no-write reading, isolation, query parity, and unaffected Inbox first paint; record
+    evidence for the child epic land agent, without closing sase-1jm.3 or any ancestor.'
 proposed_by: bbugyi200.athena.sase-1jm.3
 parent_bead: sase-1jm.3
 create_time: 2026-10-10 20:21:17
 status: wip
+bead_id: sase-1jm.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/agents_archive_view_phase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_view_phase.md)
-- **PARENT:**
-  [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **PROMPT:** [prompts/202610/agents_archive_view_phase.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_view_phase.md)
+- **PARENT:** [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **BEAD:** [sase-1jm.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.3.1.md)
 
 # Implement the Agents Archive view
 
