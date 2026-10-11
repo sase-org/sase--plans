@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "ref_in_done",
+      "kind": "toggle",
+      "ask": "Count #ref reading tasks in Done, Created, and Dropped, shown as their own `ref` part?",
+      "why": "Reading is real output; a visible part keeps it separable without hiding it",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "stats_chip",
+      "kind": "toggle",
+      "ask": "Add a label-only STATS \u2197 link chip to the end of the dash Browse row?",
+      "why": "One discoverable entry point; it carries no number, so the dash never becomes a scoreboard",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "memory_stats_record",
+      "kind": "toggle",
+      "ask": "Add decision record stats-mirror-the-vault (derive at read time, journal answers, bob owns metrics)?",
+      "default": false,
+      "effective_default": false,
+      "memory": {
+        "selectors": [
+          "decisions:stats-mirror-the-vault"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "selector": "decisions:stats-mirror-the-vault",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/decisions/stats-mirror-the-vault.md",
+          "type": "strand",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "id": "memory_journal_term",
+      "kind": "toggle",
+      "ask": "Add a Review Journal glossary term?",
+      "default": false,
+      "effective_default": false,
+      "memory": {
+        "selectors": [
+          "glossary:review-journal"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "selector": "glossary:review-journal",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/glossary/review-journal.md",
+          "type": "strand",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}
