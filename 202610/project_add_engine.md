@@ -1,57 +1,52 @@
 ---
 tier: epic
 title: Complete project onboarding and sase project add
-goal:
-  Deliver the convergent add-existing CLI and reusable onboarding engine required by
-  sase-1jx.7, then close that phase with verified evidence.
+goal: Deliver the convergent add-existing CLI and reusable onboarding engine required
+  by sase-1jx.7, then close that phase with verified evidence.
 parent_bead: sase-1jx.7
 phases:
-  - id: plan-documents
-    title: Observed facts, ownership journals, and onboarding documents
-    depends_on: []
-    size: medium
-    description:
-      "plan-documents: implement actor detection, read-only facts, atomic journals,
-      versioned events, and plan documents over the existing Rust planner; define and
-      test the reusable engine interfaces."
-  - id: managed-recovery
-    title: Commit-and-push setup with recoverable postconditions
-    depends_on:
-      - plan-documents
-    size: medium
-    description:
-      "managed-recovery: implement the management effect and its journal evidence;
-      extend Rust onboarding facts and planning only where necessary to preserve setup
-      obligations and resume after marker-write, commit, or push failures, with binding
-      tests and a pin update."
-  - id: convergent-apply
-    title: Serialize and execute project onboarding
-    depends_on:
-      - managed-recovery
-    size: medium
-    description:
-      "convergent-apply: implement identity and checkout locking, revalidation, ordered
-      add-mode step effects, postcondition checks, truthful result events, and failure
-      recovery without duplicate effects."
-  - id: add-command
-    title: CLI, progress rendering, documentation, and end-to-end verification
-    depends_on:
-      - convergent-apply
-    size: medium
-    description:
-      "add-command: expose sase project add with preview, confirmation, NDJSON,
-      durable-operation IO and interactive init chaining; update docs and the generated
-      skill source, verify the inherited glossary decision, and run scenario and
-      fake-provider CLI tests."
+- id: plan-documents
+  title: Observed facts, ownership journals, and onboarding documents
+  depends_on: []
+  size: medium
+  description: 'plan-documents: implement actor detection, read-only facts, atomic
+    journals, versioned events, and plan documents over the existing Rust planner;
+    define and test the reusable engine interfaces.'
+- id: managed-recovery
+  title: Commit-and-push setup with recoverable postconditions
+  depends_on:
+  - plan-documents
+  size: medium
+  description: 'managed-recovery: implement the management effect and its journal
+    evidence; extend Rust onboarding facts and planning only where necessary to preserve
+    setup obligations and resume after marker-write, commit, or push failures, with
+    binding tests and a pin update.'
+- id: convergent-apply
+  title: Serialize and execute project onboarding
+  depends_on:
+  - managed-recovery
+  size: medium
+  description: 'convergent-apply: implement identity and checkout locking, revalidation,
+    ordered add-mode step effects, postcondition checks, truthful result events, and
+    failure recovery without duplicate effects.'
+- id: add-command
+  title: CLI, progress rendering, documentation, and end-to-end verification
+  depends_on:
+  - convergent-apply
+  size: medium
+  description: 'add-command: expose sase project add with preview, confirmation, NDJSON,
+    durable-operation IO and interactive init chaining; update docs and the generated
+    skill source, verify the inherited glossary decision, and run scenario and fake-provider
+    CLI tests.'
 proposed_by: bbugyi200.athena.sase-1jx.7
 create_time: 2026-10-11 19:14:20
 status: wip
+bead_id: sase-1jx.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/project_add_engine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_add_engine.md)
-- **PARENT:**
-  [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **PROMPT:** [prompts/202610/project_add_engine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_add_engine.md)
+- **PARENT:** [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **BEAD:** [sase-1jx.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.7.1.md)
 
 # Complete phase sase-1jx.7
 
