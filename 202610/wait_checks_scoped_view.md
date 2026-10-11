@@ -1,76 +1,72 @@
 ---
 tier: epic
 title: Scope wait resolution to live waiters so wait_checks stops timing out
-goal: "A wait_checks tick with live named-agent waiters loads only the artifact rows
+goal: 'A wait_checks tick with live named-agent waiters loads only the artifact rows
   those waiters can depend on instead of the whole artifact history. Ticks stay far
-  below the 2-minute job timeout under host load, release latency moves toward
-  sase-1hn's p50 <= 5 s / p95 <= 15 s target, and parked runners' 60 s fallback stops
-  rebuilding the full project history. Release decisions stay exactly what the full view
-  would decide.
+  below the 2-minute job timeout under host load, release latency moves toward sase-1hn''s
+  p50 <= 5 s / p95 <= 15 s target, and parked runners'' 60 s fallback stops rebuilding
+  the full project history. Release decisions stay exactly what the full view would
+  decide.
 
-  "
+  '
 phases:
-  - id: tick-diagnostics
-    title: Make wait_checks timeouts diagnosable
-    depends_on: []
-    size: small
-    description:
-      "tick-diagnostics: flush chop log lines so a SIGKILLed job keeps its output, and
-      add per-stage progress lines plus integer timing and view-size counters to the
-      wait_checks summary."
-  - id: batch-index-build
-    title: Remove superlinear and redundant work from WaitDependencyIndex.add_many
-    depends_on: []
-    size: medium
-    description:
-      "batch-index-build: refresh effective clan tribes once per touched clan
-      generation, invalidate query caches once per batch, and skip plan_path.json reads
-      that cannot matter, with a parity test proving batch and sequential adds build
-      identical indexes."
-  - id: scope-keys
-    title: Shared scope keys and scoped row selection for named waits
-    depends_on:
-      - batch-index-build
-    size: medium
-    description:
-      "scope-keys: factor the identity keys _add_prepared files a row under into one
-      helper, add marker scope keys (None for unscopable shapes) and row selection, and
-      prove scoped and full views give identical decisions for named waits."
-  - id: scoped-wait-checks
-    title: Resolve scopable waiters from a scoped view in wait_checks
-    depends_on:
-      - tick-diagnostics
-      - scope-keys
-    size: medium
-    description:
-      "scoped-wait-checks: build the resolving and confirmation views from scoped rows
-      for scopable live waiters, build the full view lazily only for unscopable ones,
-      and require a read-only host parity sweep over every waiting marker."
-  - id: scoped-runner-fallback
-    title: Scope the runner's startup and 60 s fallback resolution
-    depends_on:
-      - scope-keys
-    size: small
-    description:
-      "scoped-runner-fallback: make _resolve_marker_release build scoped project indexes
-      for scopable markers, keeping the full project build for every other shape."
-  - id: scope-key-cache
-    title: Persistent scope-key cache so live ticks stat instead of read
-    depends_on:
-      - scoped-wait-checks
-      - scoped-runner-fallback
-    size: medium
-    description:
-      "scope-key-cache: persist per-artifact scope keys fingerprinted by agent_meta.json
-      stat data, written only by wait_checks and read by runners, so selection costs one
-      stat per artifact instead of one JSON read."
+- id: tick-diagnostics
+  title: Make wait_checks timeouts diagnosable
+  depends_on: []
+  size: small
+  description: 'tick-diagnostics: flush chop log lines so a SIGKILLed job keeps its
+    output, and add per-stage progress lines plus integer timing and view-size counters
+    to the wait_checks summary.'
+- id: batch-index-build
+  title: Remove superlinear and redundant work from WaitDependencyIndex.add_many
+  depends_on: []
+  size: medium
+  description: 'batch-index-build: refresh effective clan tribes once per touched
+    clan generation, invalidate query caches once per batch, and skip plan_path.json
+    reads that cannot matter, with a parity test proving batch and sequential adds
+    build identical indexes.'
+- id: scope-keys
+  title: Shared scope keys and scoped row selection for named waits
+  depends_on:
+  - batch-index-build
+  size: medium
+  description: 'scope-keys: factor the identity keys _add_prepared files a row under
+    into one helper, add marker scope keys (None for unscopable shapes) and row selection,
+    and prove scoped and full views give identical decisions for named waits.'
+- id: scoped-wait-checks
+  title: Resolve scopable waiters from a scoped view in wait_checks
+  depends_on:
+  - tick-diagnostics
+  - scope-keys
+  size: medium
+  description: 'scoped-wait-checks: build the resolving and confirmation views from
+    scoped rows for scopable live waiters, build the full view lazily only for unscopable
+    ones, and require a read-only host parity sweep over every waiting marker.'
+- id: scoped-runner-fallback
+  title: Scope the runner's startup and 60 s fallback resolution
+  depends_on:
+  - scope-keys
+  size: small
+  description: 'scoped-runner-fallback: make _resolve_marker_release build scoped
+    project indexes for scopable markers, keeping the full project build for every
+    other shape.'
+- id: scope-key-cache
+  title: Persistent scope-key cache so live ticks stat instead of read
+  depends_on:
+  - scoped-wait-checks
+  - scoped-runner-fallback
+  size: medium
+  description: 'scope-key-cache: persist per-artifact scope keys fingerprinted by
+    agent_meta.json stat data, written only by wait_checks and read by runners, so
+    selection costs one stat per artifact instead of one JSON read.'
 proposed_by: bbugyi200.athena.0zo
 create_time: 2026-10-11 11:18:14
 status: wip
+bead_id: sase-1jy
 ---
 
-- **PROMPT:**
-  [prompts/202610/wait_checks_scoped_view.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_checks_scoped_view.md)
+- **PROMPT:** [prompts/202610/wait_checks_scoped_view.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/wait_checks_scoped_view.md)
+- **BEAD:** [sase-1jy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jy/README.md)
 
 # Plan: Scope wait resolution to live waiters so wait_checks stops timing out
 
