@@ -1,107 +1,101 @@
 ---
 tier: epic
-title:
-  Daily Stats — derived daily metrics, a review journal, bob stats, and an Obsidian
+title: Daily Stats — derived daily metrics, a review journal, bob stats, and an Obsidian
   Stats page
-goal: "Bryan can open Stats (Obsidian) or run `bob stats` (terminal) during the weekly
+goal: 'Bryan can open Stats (Obsidian) or run `bob stats` (terminal) during the weekly
   prune, understand how the last weeks went in about a minute, trust where every number
   came from, and add a new daily metric with a few lines of config — with no daily
   logging habit and no data written that the vault already keeps.
 
-  "
+  '
 decisions:
   ref_in_done:
-    ask:
-      "Count #ref reading tasks in Done, Created, and Dropped, shown as their own `ref`
-      part?"
+    ask: 'Count #ref reading tasks in Done, Created, and Dropped, shown as their own
+      `ref` part?'
     default: true
-    why: Reading is real output; a visible part keeps it separable without hiding it
+    why: Reading is real output; a visible part keeps it separable without hiding
+      it
     answer: true
   stats_chip:
     ask: Add a label-only STATS ↗ link chip to the end of the dash Browse row?
     default: true
-    why:
-      One discoverable entry point; it carries no number, so the dash never becomes a
-      scoreboard
+    why: One discoverable entry point; it carries no number, so the dash never becomes
+      a scoreboard
     answer: true
   memory_stats_record:
-    ask:
-      Add decision record stats-mirror-the-vault (derive at read time, journal answers,
-      bob owns metrics)?
+    ask: Add decision record stats-mirror-the-vault (derive at read time, journal
+      answers, bob owns metrics)?
     memory:
-      - decisions:stats-mirror-the-vault
+    - decisions:stats-mirror-the-vault
     default: false
     answer: false
   memory_journal_term:
     ask: Add a Review Journal glossary term?
     memory:
-      - glossary:review-journal
+    - glossary:review-journal
     default: false
     answer: false
 phases:
-  - id: journal
-    title: Start the clock — the review journal writer
-    depends_on: []
-    size: medium
-    description:
-      "journal: bob-ledger-tools gains api.stats v1 (serialized append queue) and
-      bob-navigation-hotkeys journals every counted ]s answer to per-host monthly JSONL
-      under .bob/stats/review/; the vault allowlists the files; bob-cli gains
-      docs/stats.md with the journal contract and shared vectors."
-  - id: engine
-    title: The stats engine in bob-cli
-    depends_on:
-      - journal
-    size: large
-    description:
-      "engine: single-pass stats index, metric registry with built-ins written as config
-      entries, the stats: config section, six metric kinds,
-      ranges/grouping/summaries/display strings, and a golden fixture vault, exposed as
-      one compute() returning the schema-1 JSON model."
-  - id: cli
-    title: The bob stats command
-    depends_on:
-      - engine
-    size: medium
-    description:
-      "cli: register bob stats (overview default, show, metrics) in Daily workflow with
-      human, json, and csv output, the colored terminal glance and detail charts,
-      help/completion/README wiring, and real-vault parity tests."
-  - id: page
-    title: Obsidian Stats page — data path, tiles, and table
-    depends_on:
-      - cli
-    size: medium
-    description:
-      "page: bob-ledger-tools api.stats v2 spawns bob stats with stale-while-revalidate
-      caching, the bob-stats block renders the header, range controls, tile row, table
-      view, and every honest state; the vault gains dash_stats.md, the dash entry point,
-      the weekly-prune link, and Open Stats."
-  - id: charts
-    title: Obsidian Stats page — focus chart, context panels, and interaction
-    depends_on:
-      - page
-    size: large
-    description:
-      "charts: hand-rolled SVG focus chart with rolling median, normal band,
-      today/missing marks and prior ticks; per-family context panels (themes, flow,
-      review, calendar and chore grids); day drill-down, tooltips, keyboard, definition
-      popover, and a rendered light/dark preview check."
-  - id: rollout
-    title: Rollout — real-vault verification, docs, and memory
-    depends_on:
-      - charts
-    size: small
-    description:
-      "rollout: verify end to end on the live vault and every installed surface, record
-      measured performance, finish docs and README cross-links, apply only the accepted
-      memory decisions, and record follow-ups."
+- id: journal
+  title: Start the clock — the review journal writer
+  depends_on: []
+  size: medium
+  description: 'journal: bob-ledger-tools gains api.stats v1 (serialized append queue)
+    and bob-navigation-hotkeys journals every counted ]s answer to per-host monthly
+    JSONL under .bob/stats/review/; the vault allowlists the files; bob-cli gains
+    docs/stats.md with the journal contract and shared vectors.'
+- id: engine
+  title: The stats engine in bob-cli
+  depends_on:
+  - journal
+  size: large
+  description: 'engine: single-pass stats index, metric registry with built-ins written
+    as config entries, the stats: config section, six metric kinds, ranges/grouping/summaries/display
+    strings, and a golden fixture vault, exposed as one compute() returning the schema-1
+    JSON model.'
+- id: cli
+  title: The bob stats command
+  depends_on:
+  - engine
+  size: medium
+  description: 'cli: register bob stats (overview default, show, metrics) in Daily
+    workflow with human, json, and csv output, the colored terminal glance and detail
+    charts, help/completion/README wiring, and real-vault parity tests.'
+- id: page
+  title: Obsidian Stats page — data path, tiles, and table
+  depends_on:
+  - cli
+  size: medium
+  description: 'page: bob-ledger-tools api.stats v2 spawns bob stats with stale-while-revalidate
+    caching, the bob-stats block renders the header, range controls, tile row, table
+    view, and every honest state; the vault gains dash_stats.md, the dash entry point,
+    the weekly-prune link, and Open Stats.'
+- id: charts
+  title: Obsidian Stats page — focus chart, context panels, and interaction
+  depends_on:
+  - page
+  size: large
+  description: 'charts: hand-rolled SVG focus chart with rolling median, normal band,
+    today/missing marks and prior ticks; per-family context panels (themes, flow,
+    review, calendar and chore grids); day drill-down, tooltips, keyboard, definition
+    popover, and a rendered light/dark preview check.'
+- id: rollout
+  title: Rollout — real-vault verification, docs, and memory
+  depends_on:
+  - charts
+  size: small
+  description: 'rollout: verify end to end on the live vault and every installed surface,
+    record measured performance, finish docs and README cross-links, apply only the
+    accepted memory decisions, and record follow-ups.'
 proposed_by: bbugyi200.apollo.research.0u.linker.w0
 decided_by: agent
 decided_via: cli
 create_time: 2026-10-11 06:56:13
 status: wip
+bead_id: sase-1jv
 ---
+
+- **BEAD:** [sase-1jv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jv/README.md)
 
 # Plan: Daily Stats
 
