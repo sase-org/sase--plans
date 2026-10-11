@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Also fix the two intermittent test-job races (terminate escalation, oracle mtime) and close their flake beads?",
+      "choices": [
+        {
+          "key": "include",
+          "label": "Fix both races with deterministic regression tests; close sase-1hx and sase-10g"
+        },
+        {
+          "key": "skip",
+          "label": "Fix only the five deterministic failures; leave both flake beads open"
+        }
+      ],
+      "default": "include",
+      "effective_default": "include",
+      "id": "flakes",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "both races reproduce deterministically and each fix is a few lines"
+    }
+  ]
+}
