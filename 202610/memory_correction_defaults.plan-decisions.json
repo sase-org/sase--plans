@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Also add one sentence to /sase_plan telling planners to plan memory corrections their work requires?",
+      "default": true,
+      "effective_default": true,
+      "id": "plan_skill_hint",
+      "kind": "toggle",
+      "requested_verified": false,
+      "why": "Planners rarely load /sase_memory_write unless they already noticed the stale note"
+    }
+  ]
+}
