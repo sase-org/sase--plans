@@ -17,6 +17,11 @@ status: wip
   [202610/archive_corpus.md](https://github.com/sase-org/sase--plans/blob/main/202610/archive_corpus.md)
 - **BEAD:**
   [sase-1jm.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.2.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1jm.2.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1jm.2.1.land.md)
+- **COMMITS:**
+  - [04ed4b3](https://github.com/sase-org/sase/commit/04ed4b33cbd426c34c8282aef702dc261e6bee45)
+    — feat(archive): query the Rust-held corpus handle from the facade and CLI
 
 # Plan: Finish and land the archive corpus epic (sase-1jm.2.1)
 
