@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should `sase project list`/`show` keep the directory key and spec path as labeled identity fields?",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Keep them only as labeled identity fields; never use them as a project's name"
+        },
+        {
+          "key": "hide",
+          "label": "Drop them from human project list/show output too; JSON keeps them"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "id": "admin_identity_fields",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Only place users learn which directory/spec backs a project; labeled as identity"
+    },
+    {
+      "ask": "Add a decisions strand recording that projects show PROJECT_NAME, never the directory key?",
+      "default": true,
+      "effective_default": true,
+      "id": "decision_strand",
+      "kind": "toggle",
+      "memory": {
+        "selectors": [
+          "decisions:project-labels-never-keys"
+        ]
+      },
+      "provenance": "asked",
+      "requested": "Think hard about your fix, add validation to make sure that the raw project direction / `*.sase` filename is never shown to a user, and then add an appropriate decision memory web strand that records this decision.",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "exists": false,
+          "kind": "strand",
+          "path": "sase/memory/decisions/project-labels-never-keys.md",
+          "scope": "project",
+          "selector": "decisions:project-labels-never-keys",
+          "type": "strand"
+        }
+      ]
+    }
+  ]
+}
