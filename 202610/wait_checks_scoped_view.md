@@ -61,7 +61,7 @@ phases:
     selection costs one stat per artifact instead of one JSON read.'
 proposed_by: bbugyi200.athena.0zo
 create_time: 2026-10-11 11:18:14
-status: wip
+status: done
 bead_id: sase-1jy
 ---
 
