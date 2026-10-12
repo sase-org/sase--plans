@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Finish the add-existing wizard and land sase-1jx.10.1
-goal: The add-existing wizard handles observed Configure facts, resume and asynchronous
+goal:
+  The add-existing wizard handles observed Configure facts, resume and asynchronous
   failures correctly, and sase-1jx.10.1 and parent phase sase-1jx.10 close normally.
 size: medium
 proposed_by: bbugyi200.athena.sase-1jx.10.1.land
@@ -13,6 +14,11 @@ status: done
   [202610/new_project_add_existing.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_add_existing.md)
 - **BEAD:**
   [sase-1jx.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.10.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1jx.10.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1jx.10.1.land.md)
+- **COMMITS:**
+  - [81377d5](https://github.com/sase-org/sase--plans/commit/81377d5c33d16e1bfa7bc40a23719d81ecdc5e98)
+    — docs(plans): mark add-existing New Project epic plan done
 
 # Finish the add-existing wizard and land sase-1jx.10.1
 
