@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should gate cancellation check only bundle integrity so contract-drifted legacy gates can be retired?",
+      "choices": [
+        {
+          "key": "retire",
+          "label": "Cancel checks identity and hashes only; the stuck sase-cj gate is canceled next tick"
+        },
+        {
+          "key": "skip",
+          "label": "Leave cancel_gate as is; the sase-cj cancel warning keeps repeating every tick"
+        }
+      ],
+      "default": "retire",
+      "effective_default": "retire",
+      "id": "retire_drifted_gates",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Cancel runs no option commands and still checks integrity; it only tolerates contract drift"
+    }
+  ]
+}
