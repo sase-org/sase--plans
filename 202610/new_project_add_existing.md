@@ -1,54 +1,50 @@
 ---
 tier: epic
 title: Add an existing repository from the New Project wizard
-goal: "Configure, Review, durable apply, live progress, the shared init hand-off, and
-  Ready or Failed work for an existing repository, and the Projects pane init flow keeps
-  its current behavior. The land agent closes phase bead sase-1jx.10 and does not close
-  epic sase-1jx.
+goal: 'Configure, Review, durable apply, live progress, the shared init hand-off,
+  and Ready or Failed work for an existing repository, and the Projects pane init
+  flow keeps its current behavior. The land agent closes phase bead sase-1jx.10 and
+  does not close epic sase-1jx.
 
-  "
+  '
 phases:
-  - id: models
-    title: Textual-free add-existing models
-    depends_on: []
-    size: small
-    description:
-      "models: add Textual-free configure, review, and progress models and the stage
-      transitions they drive."
-  - id: init-flow
-    title: Shared Projects init controller
-    depends_on: []
-    size: medium
-    description:
-      "init-flow: extract the Projects init check, preview, apply, and terminal flow
-      into a controller the pane and the wizard share."
-  - id: configure-review
-    title: Configure and Review for existing repos
-    depends_on:
-      - models
-    size: medium
-    description:
-      "configure-review: replace the Configure and Review placeholders with the
-      existing-repo cards and the add-plan review."
-  - id: apply-ready
-    title: Apply, progress, Ready, and Failed
-    depends_on:
-      - configure-review
-      - init-flow
-    size: medium
-    description:
-      "apply-ready: submit durable project add, tail its checklist, and finish on Ready
-      or Failed including the init hand-off."
+- id: models
+  title: Textual-free add-existing models
+  depends_on: []
+  size: small
+  description: 'models: add Textual-free configure, review, and progress models and
+    the stage transitions they drive.'
+- id: init-flow
+  title: Shared Projects init controller
+  depends_on: []
+  size: medium
+  description: 'init-flow: extract the Projects init check, preview, apply, and terminal
+    flow into a controller the pane and the wizard share.'
+- id: configure-review
+  title: Configure and Review for existing repos
+  depends_on:
+  - models
+  size: medium
+  description: 'configure-review: replace the Configure and Review placeholders with
+    the existing-repo cards and the add-plan review.'
+- id: apply-ready
+  title: Apply, progress, Ready, and Failed
+  depends_on:
+  - configure-review
+  - init-flow
+  size: medium
+  description: 'apply-ready: submit durable project add, tail its checklist, and finish
+    on Ready or Failed including the init hand-off.'
 proposed_by: bbugyi200.athena.sase-1jx.10
 parent_bead: sase-1jx.10
 create_time: 2026-10-12 04:39:44
 status: wip
+bead_id: sase-1jx.10.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/new_project_add_existing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_add_existing.md)
-- **PARENT:**
-  [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **PROMPT:** [prompts/202610/new_project_add_existing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_add_existing.md)
+- **PARENT:** [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **BEAD:** [sase-1jx.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.10.1.md)
 
 # Plan: Add an existing repository from the New Project wizard
 
