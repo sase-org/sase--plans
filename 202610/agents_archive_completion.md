@@ -1,112 +1,104 @@
 ---
 tier: epic
 title: Finish the Agents Archive epic before sase-1jm lands
-goal: "Every promise of plan:202610/agents_archive_view.md holds on master with no flag
-  residue. The retired Artifacts strip, the saved-query migration, the Archive chooser,
-  restore, link arrivals, the shelf and bridge, and light-row Record behave as the plan
-  says, with tests, goldens, and benches as proof, so the sase-1jm land agent can close
-  the epic.
+goal: 'Every promise of plan:202610/agents_archive_view.md holds on master with no
+  flag residue. The retired Artifacts strip, the saved-query migration, the Archive
+  chooser, restore, link arrivals, the shelf and bridge, and light-row Record behave
+  as the plan says, with tests, goldens, and benches as proof, so the sase-1jm land
+  agent can close the epic.
 
-  "
+  '
 phases:
-  - id: flag-residue
-    title: Flag residue, dead code, symvision, and lazy startup
-    depends_on: []
-    size: medium
-    description:
-      "flag-residue: strip every override_flags(agents_archive_view=...) and flag-era
-      duplicate test, delete stale beta comments, vestigial parameters, and the dead
-      custom-search revival path, resolve all six epic-caused symvision symbols plus the
-      Justfile epic-symbol row, and stop reading the Archive grouping file in
-      AceApp.__init__."
-  - id: retire-pane-finish
-    title: Retired Artifacts strip, migration correctness, docs, and goldens
-    depends_on:
-      - flag-residue
-    size: medium
-    description:
-      "retire-pane-finish: make the test and visual startup fixtures follow the
-      production artifacts_agent_pane_retired state, fix the Help Guide digits, pane
-      show -j, global show_artifacts_agents redirect, and the toast marker. Validate
-      migrated saved queries against the archive profile, sweep the stale docs, and
-      capture the renumbered-strip and toast goldens."
-  - id: archive-chooser-copy
-    title: Archive chooser sections, container restore, and copy keys
-    depends_on:
-      - flag-residue
-    size: medium
-    description:
-      "archive-chooser-copy: add the READ section, open the chooser on container rows
-      with Restore clan, keep marked restore reachable, gate Fork on a retained chat,
-      hydrate off the event loop, add the dedicated agents_copy_reference y action, fix
-      the doubled %l prefix, make %j copy the bundle JSON, update help and docs, and
-      capture chooser goldens."
-  - id: arrivals-finish
-    title: Lookup-first link arrivals and selection that survives clearing
-    depends_on:
-      - flag-residue
-    size: medium
-    description:
-      "arrivals-finish: look up before opening the Archive so a miss keeps context,
-      reveal filter-hidden agents across agent tabs and folds, keep the Archive
-      selection when name: is cleared, point target_for_ref_kind agent at the Agents
-      tab, test ,a from another tab, and fix the link-follow docs."
-  - id: archive-restore-run
-    title: Restore execution, single toast, and restore-and-show reveal
-    depends_on:
-      - archive-chooser-copy
-      - arrivals-finish
-    size: medium
-    description:
-      "archive-restore-run: emit one toast with failure reasons, keep the parked Inbox
-      untouched by a plain restore, dim restored rows, bump the pulse at once, make
-      Restore and show wait for the revive refresh and apply the filtered- target rule,
-      move submit-time re-checks off the loop, and prove it through the real revive path
-      plus a restored-row golden."
-  - id: bridges-finish
-    title: Shelf, zero-result bridge, and Node Finder correctness
-    depends_on:
-      - flag-residue
-    size: medium
-    description:
-      "bridges-finish: use the restore-decision shelf hint and consistent plurals, stop
-      recount flicker, keep the lit state and focus flag current, match in:inbox
-      queries, show the bridge only for true zero results with time columns, keep the
-      Node Finder open on a cold Archive, and add the plain-shelf golden and the missing
-      bridge and navigation tests."
-  - id: record-light-rows
-    title: Light rows carry bundle path and times, and labels show names
-    depends_on:
-      - flag-residue
-    size: medium
-    description:
-      "record-light-rows: carry bundle_path, stop_time, and dismissed_at on the
-      sase-core archive light row, move the core revision pin, let bundle resolution and
-      light-row Record use them, and show project display names instead of directory
-      keys on light-row surfaces."
-  - id: land-proof
-    title: Help goldens, visual sweep, benches, and acceptance evidence
-    depends_on:
-      - retire-pane-finish
-      - archive-restore-run
-      - bridges-finish
-      - record-light-rows
-    size: medium
-    description:
-      "land-proof: fix the Archive help PNG scroll stop, regenerate help-modal goldens
-      once, run the targeted Archive, Record, Artifacts, saved-group, and help visual
-      checks, measure the Archive and Inbox j/k and warm ,a benches back to back, walk
-      every epic acceptance gate, and record evidence for the sase-1jm land agent."
+- id: flag-residue
+  title: Flag residue, dead code, symvision, and lazy startup
+  depends_on: []
+  size: medium
+  description: 'flag-residue: strip every override_flags(agents_archive_view=...)
+    and flag-era duplicate test, delete stale beta comments, vestigial parameters,
+    and the dead custom-search revival path, resolve all six epic-caused symvision
+    symbols plus the Justfile epic-symbol row, and stop reading the Archive grouping
+    file in AceApp.__init__.'
+- id: retire-pane-finish
+  title: Retired Artifacts strip, migration correctness, docs, and goldens
+  depends_on:
+  - flag-residue
+  size: medium
+  description: 'retire-pane-finish: make the test and visual startup fixtures follow
+    the production artifacts_agent_pane_retired state, fix the Help Guide digits,
+    pane show -j, global show_artifacts_agents redirect, and the toast marker. Validate
+    migrated saved queries against the archive profile, sweep the stale docs, and
+    capture the renumbered-strip and toast goldens.'
+- id: archive-chooser-copy
+  title: Archive chooser sections, container restore, and copy keys
+  depends_on:
+  - flag-residue
+  size: medium
+  description: 'archive-chooser-copy: add the READ section, open the chooser on container
+    rows with Restore clan, keep marked restore reachable, gate Fork on a retained
+    chat, hydrate off the event loop, add the dedicated agents_copy_reference y action,
+    fix the doubled %l prefix, make %j copy the bundle JSON, update help and docs,
+    and capture chooser goldens.'
+- id: arrivals-finish
+  title: Lookup-first link arrivals and selection that survives clearing
+  depends_on:
+  - flag-residue
+  size: medium
+  description: 'arrivals-finish: look up before opening the Archive so a miss keeps
+    context, reveal filter-hidden agents across agent tabs and folds, keep the Archive
+    selection when name: is cleared, point target_for_ref_kind agent at the Agents
+    tab, test ,a from another tab, and fix the link-follow docs.'
+- id: archive-restore-run
+  title: Restore execution, single toast, and restore-and-show reveal
+  depends_on:
+  - archive-chooser-copy
+  - arrivals-finish
+  size: medium
+  description: 'archive-restore-run: emit one toast with failure reasons, keep the
+    parked Inbox untouched by a plain restore, dim restored rows, bump the pulse at
+    once, make Restore and show wait for the revive refresh and apply the filtered-
+    target rule, move submit-time re-checks off the loop, and prove it through the
+    real revive path plus a restored-row golden.'
+- id: bridges-finish
+  title: Shelf, zero-result bridge, and Node Finder correctness
+  depends_on:
+  - flag-residue
+  size: medium
+  description: 'bridges-finish: use the restore-decision shelf hint and consistent
+    plurals, stop recount flicker, keep the lit state and focus flag current, match
+    in:inbox queries, show the bridge only for true zero results with time columns,
+    keep the Node Finder open on a cold Archive, and add the plain-shelf golden and
+    the missing bridge and navigation tests.'
+- id: record-light-rows
+  title: Light rows carry bundle path and times, and labels show names
+  depends_on:
+  - flag-residue
+  size: medium
+  description: 'record-light-rows: carry bundle_path, stop_time, and dismissed_at
+    on the sase-core archive light row, move the core revision pin, let bundle resolution
+    and light-row Record use them, and show project display names instead of directory
+    keys on light-row surfaces.'
+- id: land-proof
+  title: Help goldens, visual sweep, benches, and acceptance evidence
+  depends_on:
+  - retire-pane-finish
+  - archive-restore-run
+  - bridges-finish
+  - record-light-rows
+  size: medium
+  description: 'land-proof: fix the Archive help PNG scroll stop, regenerate help-modal
+    goldens once, run the targeted Archive, Record, Artifacts, saved-group, and help
+    visual checks, measure the Archive and Inbox j/k and warm ,a benches back to back,
+    walk every epic acceptance gate, and record evidence for the sase-1jm land agent.'
 proposed_by: bbugyi200.athena.sase-1jm.land
 parent_bead: sase-1jm
 create_time: 2026-10-12 14:50:47
 status: wip
+bead_id: sase-1jm.9
 ---
 
-- **PROMPT:**
-  [prompts/202610/agents_archive_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_completion.md)
-- **PARENT:**
-  [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **PROMPT:** [prompts/202610/agents_archive_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_archive_completion.md)
+- **PARENT:** [202610/agents_archive_view.md](https://github.com/sase-org/sase--plans/blob/main/202610/agents_archive_view.md)
+- **BEAD:** [sase-1jm.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.9.md)
 
 # Plan: Finish the Agents Archive epic before sase-1jm lands
 
