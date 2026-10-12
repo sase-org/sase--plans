@@ -1,61 +1,56 @@
 ---
 tier: epic
 title: Finish New Project wizard repairs before sase-1jx.13 lands
-goal:
-  Fix the epic-caused defects that the sase-1jx.13 land audit still found after its five
-  phases closed, so that wizard creates work for every provider, the Projects pane
-  integrates every outcome in the real app, the Source stage tears down cleanly and
-  meets its spec, and Master Gate has no New Project failures. After this child epic
-  lands, its land agent resumes the sase-1jx.13 landing, which then resumes the sase-1jx
-  landing.
+goal: Fix the epic-caused defects that the sase-1jx.13 land audit still found after
+  its five phases closed, so that wizard creates work for every provider, the Projects
+  pane integrates every outcome in the real app, the Source stage tears down cleanly
+  and meets its spec, and Master Gate has no New Project failures. After this child
+  epic lands, its land agent resumes the sase-1jx.13 landing, which then resumes the
+  sase-1jx landing.
 parent_bead: sase-1jx.13
 phases:
-  - id: provider-gaps
-    title: Close the strict-mode and provider test gaps in sase-core and sase-github
-    depends_on: []
-    size: small
-    description:
-      "provider-gaps: in sase-core, make an explicit request for an excluded field's
-      behavior a strict-mode conflict even when it equals the field default; in
-      sase-github, add the missing add_readme argv tests."
-  - id: create-path
-    title: Make wizard creates runnable for every provider
-    depends_on: []
-    size: medium
-    description:
-      "create-path: give the TUI create submission a parse_create_ref-valid ref, hide
-      visibility for forms without it, remove dead checkout_dir paths, keep custom
-      bare_dir creates resumable, fix the agent refusal wording, and make the project
-      help tests pass on Python 3.12."
-  - id: projects-pane
-    title: Integrate wizard outcomes with the real Projects pane
-    depends_on: []
-    size: medium
-    description:
-      "projects-pane: find the Projects pane through the screen stack, stop the double
-      filter pass, fix show-project status copy, make ? help and Show new project
-      keyboard-usable, fix the stale create docstring, restore lost tests, make the
-      Failed t test hermetic, and capture a narrow hints golden that shows the hints."
-  - id: source-stage
-    title: Finish Source stage teardown, layout, and spec states
-    depends_on:
-      - projects-pane
-    size: medium
-    description:
-      "source-stage: stop cancelled owner refreshes from touching an unmounted modal,
-      keep automatic provider fallback out of preferences, restore account sanitizing,
-      show real cache age, collapse every detail card below 30 rows, make the no-owners
-      card reachable, fix ref-less disabled rows, keep remedy refreshes, serialize
-      preference writes, and tighten the Source tests."
+- id: provider-gaps
+  title: Close the strict-mode and provider test gaps in sase-core and sase-github
+  depends_on: []
+  size: small
+  description: 'provider-gaps: in sase-core, make an explicit request for an excluded
+    field''s behavior a strict-mode conflict even when it equals the field default;
+    in sase-github, add the missing add_readme argv tests.'
+- id: create-path
+  title: Make wizard creates runnable for every provider
+  depends_on: []
+  size: medium
+  description: 'create-path: give the TUI create submission a parse_create_ref-valid
+    ref, hide visibility for forms without it, remove dead checkout_dir paths, keep
+    custom bare_dir creates resumable, fix the agent refusal wording, and make the
+    project help tests pass on Python 3.12.'
+- id: projects-pane
+  title: Integrate wizard outcomes with the real Projects pane
+  depends_on: []
+  size: medium
+  description: 'projects-pane: find the Projects pane through the screen stack, stop
+    the double filter pass, fix show-project status copy, make ? help and Show new
+    project keyboard-usable, fix the stale create docstring, restore lost tests, make
+    the Failed t test hermetic, and capture a narrow hints golden that shows the hints.'
+- id: source-stage
+  title: Finish Source stage teardown, layout, and spec states
+  depends_on:
+  - projects-pane
+  size: medium
+  description: 'source-stage: stop cancelled owner refreshes from touching an unmounted
+    modal, keep automatic provider fallback out of preferences, restore account sanitizing,
+    show real cache age, collapse every detail card below 30 rows, make the no-owners
+    card reachable, fix ref-less disabled rows, keep remedy refreshes, serialize preference
+    writes, and tighten the Source tests.'
 proposed_by: bbugyi200.athena.sase-1jx.13.land
 create_time: 2026-10-12 19:35:31
 status: wip
+bead_id: sase-1jx.13.6
 ---
 
-- **PROMPT:**
-  [prompts/202610/new_project_wizard_final_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard_final_repairs.md)
-- **PARENT:**
-  [202610/new_project_wizard_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard_landing_repairs.md)
+- **PROMPT:** [prompts/202610/new_project_wizard_final_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard_final_repairs.md)
+- **PARENT:** [202610/new_project_wizard_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard_landing_repairs.md)
+- **BEAD:** [sase-1jx.13.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.13.6.md)
 
 # Finish New Project wizard repairs before sase-1jx.13 lands
 
