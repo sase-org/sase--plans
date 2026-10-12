@@ -1,18 +1,15 @@
 ---
 tier: tale
 size: medium
-title:
-  Finish landing the Agents Archive view (sase-1jm.3.1.8) and close sase-1jm.3.1 and
-  sase-1jm.3
-goal:
-  The beta-flagged Agents Archive never acts on the parked Inbox, parks and restores
+title: Finish landing the Agents Archive view (sase-1jm.3.1.8) and close sase-1jm.3.1
+  and sase-1jm.3
+goal: The beta-flagged Agents Archive never acts on the parked Inbox, parks and restores
   decks, cards, and scroll per pane, reports exact-name arrivals honestly, adds no
-  module to the TUI app import closure, and epics sase-1jm.3.1.8 and sase-1jm.3.1 plus
-  phase sase-1jm.3 are verified and closed.
+  module to the TUI app import closure, and epics sase-1jm.3.1.8 and sase-1jm.3.1
+  plus phase sase-1jm.3 are verified and closed.
 proposed_by: bbugyi200.athena.sase-1jm.3.1.8.land
 bead: sase-1jm.3.1.8
-create_time: 2026-10-12 02:41:55
-status: wip
+status: done
 ---
 
 - **PARENT:**
