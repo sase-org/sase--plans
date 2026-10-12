@@ -1,72 +1,68 @@
 ---
 tier: epic
 title: Finish the Record deck and close sase-1jm.4
-goal: "Every agent the Agents tab can select (an inbox agent, a hydrated archived run,
-  an unreadable archive entry, and an archive container row) gets a fifth RECORD agent
-  data deck (glyph ≡, picker key r, slate #87AFAF). It has Lifecycle, Provenance,
+goal: 'Every agent the Agents tab can select (an inbox agent, a hydrated archived
+  run, an unreadable archive entry, and an archive container row) gets a fifth RECORD
+  agent data deck (glyph ≡, picker key r, slate #87AFAF). It has Lifecycle, Provenance,
   Relations, and Links cards, all built off the message pump and proven by unit tests
   and PNG goldens, so sase-1jm.4 closes and unblocks sase-1jm.8.
 
-  "
+  '
 parent_bead: sase-1jm.4
 phases:
-  - id: shell
-    title: RECORD registry, record package contract, and every explicit deck call site
-    depends_on: []
-    size: medium
-    description:
-      "shell: close the stale sase-1jm.4.1 as superseded. Register RECORD last in the
-      deck cycle. Create the record package contract with stub cards and an off-thread
-      loader. Give every explicit deck call site a RECORD arm and keep new panels from
-      auto-choosing RECORD. Update the unit tests and rebaseline the existing PNG
-      goldens that the fifth deck changes."
-  - id: facts
-    title: Lifecycle and Provenance cards
-    depends_on:
-      - shell
-    size: medium
-    description:
-      "facts: fill record/facts.py with the Lifecycle and Provenance builders and their
-      off-thread extras. Cover inbox agents, clan containers, thin agents, and hydrated
-      archived agents; archived facts come from the Rust light row and the
-      dismissed-bundle index."
-  - id: relations
-    title: Relations and Links cards
-    depends_on:
-      - shell
-    size: medium
-    description:
-      "relations: fill record/relations.py with the Relations card and the Links card.
-      Relations shows resolved, copyable session, clan, parent, workflow, and retry
-      references. Links shows artifact-link chips grouped by relation and direction,
-      read off-thread from the shared cached link index."
-  - id: archive-rows
-    title: Light-row Record for unreadable archive entries and container rows
-    depends_on:
-      - facts
-      - relations
-    size: medium
-    description:
-      "archive-rows: build a RecordSubject from an Archive light row so unreadable
-      entries and container rows render a Record deck. Make the archived identity
-      header's time-basis label agree with the Lifecycle card. Rebaseline the affected
-      Archive goldens."
-  - id: proof
-    title: Record goldens, docs, performance evidence, and land evidence
-    depends_on:
-      - archive-rows
-    size: medium
-    description:
-      "proof: add Record PNG goldens for inbox, archived, unreadable, and linked
-      selections. Update docs/ace.md, confirm j/k performance with Record visible, and
-      record the verification evidence on this epic's bead for the land agent."
+- id: shell
+  title: RECORD registry, record package contract, and every explicit deck call site
+  depends_on: []
+  size: medium
+  description: 'shell: close the stale sase-1jm.4.1 as superseded. Register RECORD
+    last in the deck cycle. Create the record package contract with stub cards and
+    an off-thread loader. Give every explicit deck call site a RECORD arm and keep
+    new panels from auto-choosing RECORD. Update the unit tests and rebaseline the
+    existing PNG goldens that the fifth deck changes.'
+- id: facts
+  title: Lifecycle and Provenance cards
+  depends_on:
+  - shell
+  size: medium
+  description: 'facts: fill record/facts.py with the Lifecycle and Provenance builders
+    and their off-thread extras. Cover inbox agents, clan containers, thin agents,
+    and hydrated archived agents; archived facts come from the Rust light row and
+    the dismissed-bundle index.'
+- id: relations
+  title: Relations and Links cards
+  depends_on:
+  - shell
+  size: medium
+  description: 'relations: fill record/relations.py with the Relations card and the
+    Links card. Relations shows resolved, copyable session, clan, parent, workflow,
+    and retry references. Links shows artifact-link chips grouped by relation and
+    direction, read off-thread from the shared cached link index.'
+- id: archive-rows
+  title: Light-row Record for unreadable archive entries and container rows
+  depends_on:
+  - facts
+  - relations
+  size: medium
+  description: 'archive-rows: build a RecordSubject from an Archive light row so unreadable
+    entries and container rows render a Record deck. Make the archived identity header''s
+    time-basis label agree with the Lifecycle card. Rebaseline the affected Archive
+    goldens.'
+- id: proof
+  title: Record goldens, docs, performance evidence, and land evidence
+  depends_on:
+  - archive-rows
+  size: medium
+  description: 'proof: add Record PNG goldens for inbox, archived, unreadable, and
+    linked selections. Update docs/ace.md, confirm j/k performance with Record visible,
+    and record the verification evidence on this epic''s bead for the land agent.'
 proposed_by: bbugyi200.athena.0zs
 create_time: 2026-10-12 06:48:31
 status: wip
+bead_id: sase-1jm.4.2
 ---
 
-- **PROMPT:**
-  [prompts/202610/record_deck_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/record_deck_refresh.md)
+- **PROMPT:** [prompts/202610/record_deck_refresh.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/record_deck_refresh.md)
+- **BEAD:** [sase-1jm.4.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jm/sase-1jm.4.2.md)
 
 # Finish the Record deck and close sase-1jm.4
 
