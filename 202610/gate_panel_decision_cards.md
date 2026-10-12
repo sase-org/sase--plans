@@ -79,7 +79,7 @@ proposed_by: bbugyi200.athena.research.4a.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-12 09:11:06
-status: wip
+status: done
 bead_id: sase-1ka
 ---
 
