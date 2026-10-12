@@ -1,73 +1,67 @@
 ---
 tier: epic
 title: Repair New Project wizard defects found while landing sase-1jx
-goal:
-  Fix every epic-caused defect the sase-1jx land audit confirmed across sase-core,
+goal: Fix every epic-caused defect the sase-1jx land audit confirmed across sase-core,
   sase-github, and sase, so that `sase project suggest | add | create` and the Admin
-  Center New Project wizard behave as plan:202610/new_project_wizard.md specifies. After
-  this child epic lands, its land agent resumes and finishes the sase-1jx landing.
+  Center New Project wizard behave as plan:202610/new_project_wizard.md specifies.
+  After this child epic lands, its land agent resumes and finishes the sase-1jx landing.
 parent_bead: sase-1jx
 phases:
-  - id: core-repairs
-    title: Keep explicit create settings and fix candidate classification
-    depends_on: []
-    size: medium
-    description:
-      "core-repairs: in sase-core project_onboarding, keep explicitly-off bool fields in
-      effective_options, stop strict mode from flagging harmless off values of excluded
-      fields, stop a numbered sibling from hiding its primary checkout, stop inventory
-      seeding from creating ref-less rows, and move sase's core pin."
-  - id: gh-repairs
-    title: Make GitHub create and discovery correct
-    depends_on: []
-    size: medium
-    description:
-      "gh-repairs: in sase-github, stop template creates from passing flags gh rejects,
-      verify every requested setting after create, re-probe after a create timeout,
-      paginate team and org lists, strip ports when matching hosts, fix numbered-copy
-      and two-level host detection, keep Enterprise hosts in canonical refs, and
-      document SASE_GITHUB_CLONE_TIMEOUT."
-  - id: cli-repairs
-    title: Fix CLI create and suggest gaps
-    depends_on:
-      - core-repairs
-    size: medium
-    description:
-      "cli-repairs: in sase, make create apply_argv round-trip for every provider
-      (prefixed bare-git refs, visibility only when the form has it), honor bare-git
-      custom directories, report exists-without-evidence as a remote_exists blocker,
-      stop suggest -o from failing providers without owners, make suggest and create
-      tests hermetic, and fix the skill and workspace docs."
-  - id: tui-entry-repairs
-    title: Finish Projects-tab entry and post-completion integration
-    depends_on: []
-    size: medium
-    description:
-      "tui-entry-repairs: make the palette wizard opener one-shot, implement width-aware
-      priority hints, pass current-project context into the wizard, share one post-add
-      sequence (reload, select, MRU, lifecycle, tag catalog, Show new project when
-      filtered), handle added outcomes, fix Ready + and c, record preferences after a
-      mid-run close, and add the missing tests, goldens, and docs."
-  - id: tui-source-repairs
-    title: Meet the Source stage spec and add its missing guards
-    depends_on:
-      - tui-entry-repairs
-    size: medium
-    description:
-      "tui-source-repairs: make loading rows unselectable, guard the t remedy, collapse
-      the detail card at 80x24, implement the missing Source copy and health-chip
-      states, cancel per-owner tasks at teardown, stop provider-preference clobbering,
-      and add the planned perf, debounce, paste, and health-chip tests plus an 80x24
-      golden."
+- id: core-repairs
+  title: Keep explicit create settings and fix candidate classification
+  depends_on: []
+  size: medium
+  description: 'core-repairs: in sase-core project_onboarding, keep explicitly-off
+    bool fields in effective_options, stop strict mode from flagging harmless off
+    values of excluded fields, stop a numbered sibling from hiding its primary checkout,
+    stop inventory seeding from creating ref-less rows, and move sase''s core pin.'
+- id: gh-repairs
+  title: Make GitHub create and discovery correct
+  depends_on: []
+  size: medium
+  description: 'gh-repairs: in sase-github, stop template creates from passing flags
+    gh rejects, verify every requested setting after create, re-probe after a create
+    timeout, paginate team and org lists, strip ports when matching hosts, fix numbered-copy
+    and two-level host detection, keep Enterprise hosts in canonical refs, and document
+    SASE_GITHUB_CLONE_TIMEOUT.'
+- id: cli-repairs
+  title: Fix CLI create and suggest gaps
+  depends_on:
+  - core-repairs
+  size: medium
+  description: 'cli-repairs: in sase, make create apply_argv round-trip for every
+    provider (prefixed bare-git refs, visibility only when the form has it), honor
+    bare-git custom directories, report exists-without-evidence as a remote_exists
+    blocker, stop suggest -o from failing providers without owners, make suggest and
+    create tests hermetic, and fix the skill and workspace docs.'
+- id: tui-entry-repairs
+  title: Finish Projects-tab entry and post-completion integration
+  depends_on: []
+  size: medium
+  description: 'tui-entry-repairs: make the palette wizard opener one-shot, implement
+    width-aware priority hints, pass current-project context into the wizard, share
+    one post-add sequence (reload, select, MRU, lifecycle, tag catalog, Show new project
+    when filtered), handle added outcomes, fix Ready + and c, record preferences after
+    a mid-run close, and add the missing tests, goldens, and docs.'
+- id: tui-source-repairs
+  title: Meet the Source stage spec and add its missing guards
+  depends_on:
+  - tui-entry-repairs
+  size: medium
+  description: 'tui-source-repairs: make loading rows unselectable, guard the t remedy,
+    collapse the detail card at 80x24, implement the missing Source copy and health-chip
+    states, cancel per-owner tasks at teardown, stop provider-preference clobbering,
+    and add the planned perf, debounce, paste, and health-chip tests plus an 80x24
+    golden.'
 proposed_by: bbugyi200.athena.sase-1jx.land
 create_time: 2026-10-12 14:55:54
 status: wip
+bead_id: sase-1jx.13
 ---
 
-- **PROMPT:**
-  [prompts/202610/new_project_wizard_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard_landing_repairs.md)
-- **PARENT:**
-  [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **PROMPT:** [prompts/202610/new_project_wizard_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/new_project_wizard_landing_repairs.md)
+- **PARENT:** [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **BEAD:** [sase-1jx.13](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.13.md)
 
 # Repair New Project wizard defects found while landing sase-1jx
 
