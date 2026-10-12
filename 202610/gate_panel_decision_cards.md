@@ -1,27 +1,26 @@
 ---
 tier: epic
 title: Pinned decision cards for the Plan Review gate panel
-goal: "Plan and epic review modals render decisions as readable cards that never clip:
-  every decision stays on screen, the current card shows its full question, options, and
-  rationale, the rail grows with the terminal, a z sheet gives a full-width reading
+goal: 'Plan and epic review modals render decisions as readable cards that never clip:
+  every decision stays on screen, the current card shows its full question, options,
+  and rationale, the rail grows with the terminal, a z sheet gives a full-width reading
   view, and the inbox gate card matches, with no changed keys and no sase-core change.
 
-  "
+  '
 decisions:
   rail_cap:
     ask: How wide may the decisions rail grow on very wide terminals?
     choices:
-      cap84:
-        Cap at 84 cells; prose lines stay readable and the plan pane keeps room for code
-      cap100:
-        Cap at 100 cells; the rail fills more of a ~265-column terminal, the plan pane
-        less
+      cap84: Cap at 84 cells; prose lines stay readable and the plan pane keeps room
+        for code
+      cap100: Cap at 100 cells; the rail fills more of a ~265-column terminal, the
+        plan pane less
     default: cap84
     why: past ~76 inner cells prose lines get too long to read comfortably
     answer: cap84
   narrow_sheet:
-    ask:
-      Below 100 columns, should plans with 3+ decisions open straight into the z sheet?
+    ask: Below 100 columns, should plans with 3+ decisions open straight into the
+      z sheet?
     default: false
     why: starting docked keeps the plan visible on open, and z is one key away
     answer: false
@@ -34,62 +33,58 @@ decisions:
     why: it is the prototyped, screenshot-verified colour and matches the modal title
     answer: cyan
 phases:
-  - id: cards
-    title: Decision cards replace the Button accordion
-    depends_on: []
-    size: medium
-    description:
-      "cards: replace each decision Button with a wrapping DecisionCard built from pure
-      Rich card builders, make the decisions rail a plain Vertical whose list fills to
-      the Verdict, add the focus bar, answer chips, new header copy, mouse selection,
-      once-per-keypress sheet computation, the syncthing and max-copy fixtures, the
-      no-clip pilot invariant, and the regenerated decision goldens."
-  - id: rail
-    title: Responsive rail, one-line Actions, and pinned density
-    depends_on:
-      - cards
-    size: medium
-    description:
-      "rail: size the decisions rail at 40% (min 50, capped per rail_cap), dock it at
-      62% below 100 columns, collapse Actions to one line, drop reverse-video focus from
-      one-line rail controls, and implement the density and pinning rule so every
-      decision stays visible and the current card scrolls inside its own slot."
-  - id: sheet
-    title: z decision sheet, keymap, and footer
-    depends_on:
-      - rail
-    size: medium
-    description:
-      "sheet: add the decision_zoom keymap (z) end to end, the full-width decision sheet
-      with every card expanded and Esc-leaves-sheet, the narrow_sheet auto-open rule,
-      the merged and focus-conditional footer hints, docs, and the final large-terminal
-      acceptance renders."
-  - id: inbox
-    title: Inbox gate card reuses the collapsed card
-    depends_on:
-      - cards
-    size: small
-    description:
-      "inbox: render the notification inbox plan-gate Decisions block with the read-only
-      collapsed card builder (name left, answer chip right, dim question line, width-1
-      toggle glyphs) and regenerate its two goldens."
-  - id: nudge
-    title: Planner guidance against restating choice keys
-    depends_on: []
-    size: xsmall
-    description:
-      "nudge: tell planners not to restate a choice key at the start of its label in the
-      sase_plan skill source, the plan validate explain text, and the decision grammar
-      docs; preview the generated skill without deploying it."
+- id: cards
+  title: Decision cards replace the Button accordion
+  depends_on: []
+  size: medium
+  description: 'cards: replace each decision Button with a wrapping DecisionCard built
+    from pure Rich card builders, make the decisions rail a plain Vertical whose list
+    fills to the Verdict, add the focus bar, answer chips, new header copy, mouse
+    selection, once-per-keypress sheet computation, the syncthing and max-copy fixtures,
+    the no-clip pilot invariant, and the regenerated decision goldens.'
+- id: rail
+  title: Responsive rail, one-line Actions, and pinned density
+  depends_on:
+  - cards
+  size: medium
+  description: 'rail: size the decisions rail at 40% (min 50, capped per rail_cap),
+    dock it at 62% below 100 columns, collapse Actions to one line, drop reverse-video
+    focus from one-line rail controls, and implement the density and pinning rule
+    so every decision stays visible and the current card scrolls inside its own slot.'
+- id: sheet
+  title: z decision sheet, keymap, and footer
+  depends_on:
+  - rail
+  size: medium
+  description: 'sheet: add the decision_zoom keymap (z) end to end, the full-width
+    decision sheet with every card expanded and Esc-leaves-sheet, the narrow_sheet
+    auto-open rule, the merged and focus-conditional footer hints, docs, and the final
+    large-terminal acceptance renders.'
+- id: inbox
+  title: Inbox gate card reuses the collapsed card
+  depends_on:
+  - cards
+  size: small
+  description: 'inbox: render the notification inbox plan-gate Decisions block with
+    the read-only collapsed card builder (name left, answer chip right, dim question
+    line, width-1 toggle glyphs) and regenerate its two goldens.'
+- id: nudge
+  title: Planner guidance against restating choice keys
+  depends_on: []
+  size: xsmall
+  description: 'nudge: tell planners not to restate a choice key at the start of its
+    label in the sase_plan skill source, the plan validate explain text, and the decision
+    grammar docs; preview the generated skill without deploying it.'
 proposed_by: bbugyi200.athena.research.4a.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-12 09:11:06
 status: wip
+bead_id: sase-1ka
 ---
 
-- **PROMPT:**
-  [prompts/202610/gate_panel_decision_cards.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/gate_panel_decision_cards.md)
+- **PROMPT:** [prompts/202610/gate_panel_decision_cards.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/gate_panel_decision_cards.md)
+- **BEAD:** [sase-1ka](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ka/README.md)
 
 # Plan: Pinned decision cards for the Plan Review gate panel
 
