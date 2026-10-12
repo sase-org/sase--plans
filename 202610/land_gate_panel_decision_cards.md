@@ -1,12 +1,12 @@
 ---
 tier: tale
 title: Finish and land the Plan Review decision cards epic (sase-1ka)
-goal: "Decision card headers style the right characters and render without letter-spaced
+goal: 'Decision card headers style the right characters and render without letter-spaced
   chips, memory cards never clip their edits line, the two-column layout matches the
   accepted spec, the decision goldens are regenerated and inspected, and epic sase-1ka
   is closed with its plan file marked done.
 
-  "
+  '
 size: medium
 proposed_by: bbugyi200.athena.sase-1ka.land
 bead: sase-1ka
@@ -17,11 +17,6 @@ status: done
   [202610/gate_panel_decision_cards.md](https://github.com/sase-org/sase--plans/blob/main/202610/gate_panel_decision_cards.md)
 - **BEAD:**
   [sase-1ka](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ka/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1ka.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ka.land.md)
-- **COMMITS:**
-  - [993f72c](https://github.com/sase-org/sase/commit/993f72c2c330bc0dd044952841ee18c22f06aa18)
-    — fix(ace): land Plan Review decision-card builder defects
 
 # Plan: Finish and land the Plan Review decision cards epic (sase-1ka)
 
