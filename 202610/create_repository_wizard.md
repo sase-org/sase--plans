@@ -43,7 +43,7 @@ phases:
     reopened-TUI recovery, keyboard flows, and required wide/narrow snapshots.'
 proposed_by: bbugyi200.athena.sase-1jx.12
 create_time: 2026-10-12 10:07:49
-status: wip
+status: done
 bead_id: sase-1jx.12.1
 ---
 
