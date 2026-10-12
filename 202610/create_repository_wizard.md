@@ -1,61 +1,55 @@
 ---
 tier: epic
 title: Complete repository creation in the New Project wizard
-goal:
-  Deliver the provider form, live create checks, danger Review, durable apply, and
-  journal-backed recovery required by sase-1jx.12, then have this child epic's land
-  agent close that phase.
+goal: Deliver the provider form, live create checks, danger Review, durable apply,
+  and journal-backed recovery required by sase-1jx.12, then have this child epic's
+  land agent close that phase.
 parent_bead: sase-1jx.12
 phases:
-  - id: provider-form
-    title: Render provider creation fields and constraints
-    depends_on: []
-    size: medium
-    description:
-      "provider-form: implement the standalone RepoCreationForm widget with all five
-      field kinds, searchable typed choices, Advanced disclosure, and Rust lenient
-      evaluation; verify constraints and deterministic widget snapshots without exposing
-      a new production entry point."
-  - id: create-configure
-    title: Configure new repositories with live checks
-    depends_on:
-      - provider-form
-    size: medium
-    description:
-      "create-configure: implement the create draft and Configure stage, owner and
-      visibility defaults, pure name normalization, debounced off-thread availability
-      and checkout checks, Rust identity previews, and explicit add-instead transition;
-      keep production Create affordances deferred until the complete path lands."
-  - id: create-execution
-    title: Review and apply the exact create intent
-    depends_on:
-      - create-configure
-    size: medium
-    description:
-      "create-execution: make shared Review and durable submission support
-      project.create with exact provider options, visibility and danger styling; reuse
-      Progress/init/Ready, persist successful per-owner visibility, register proc
-      producers, and remove the consumed record_visibility_selection epic-symbol
-      exception."
-  - id: recovery-entry
-    title: Recover incomplete creates and expose the complete wizard
-    depends_on:
-      - create-execution
-    size: medium
-    description:
-      "recovery-entry: recover create intent from durable evidence, retain created
-      repositories and resume through checked journal-backed plans, then expose the
-      capability-gated pinned Create row and Source n action; verify create-to-Ready,
-      reopened-TUI recovery, keyboard flows, and required wide/narrow snapshots."
+- id: provider-form
+  title: Render provider creation fields and constraints
+  depends_on: []
+  size: medium
+  description: 'provider-form: implement the standalone RepoCreationForm widget with
+    all five field kinds, searchable typed choices, Advanced disclosure, and Rust
+    lenient evaluation; verify constraints and deterministic widget snapshots without
+    exposing a new production entry point.'
+- id: create-configure
+  title: Configure new repositories with live checks
+  depends_on:
+  - provider-form
+  size: medium
+  description: 'create-configure: implement the create draft and Configure stage,
+    owner and visibility defaults, pure name normalization, debounced off-thread availability
+    and checkout checks, Rust identity previews, and explicit add-instead transition;
+    keep production Create affordances deferred until the complete path lands.'
+- id: create-execution
+  title: Review and apply the exact create intent
+  depends_on:
+  - create-configure
+  size: medium
+  description: 'create-execution: make shared Review and durable submission support
+    project.create with exact provider options, visibility and danger styling; reuse
+    Progress/init/Ready, persist successful per-owner visibility, register proc producers,
+    and remove the consumed record_visibility_selection epic-symbol exception.'
+- id: recovery-entry
+  title: Recover incomplete creates and expose the complete wizard
+  depends_on:
+  - create-execution
+  size: medium
+  description: 'recovery-entry: recover create intent from durable evidence, retain
+    created repositories and resume through checked journal-backed plans, then expose
+    the capability-gated pinned Create row and Source n action; verify create-to-Ready,
+    reopened-TUI recovery, keyboard flows, and required wide/narrow snapshots.'
 proposed_by: bbugyi200.athena.sase-1jx.12
 create_time: 2026-10-12 10:07:49
 status: wip
+bead_id: sase-1jx.12.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/create_repository_wizard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/create_repository_wizard.md)
-- **PARENT:**
-  [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **PROMPT:** [prompts/202610/create_repository_wizard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/create_repository_wizard.md)
+- **PARENT:** [202610/new_project_wizard.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard.md)
+- **BEAD:** [sase-1jx.12.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.12.1.md)
 
 # Complete repository creation in the New Project wizard
 
