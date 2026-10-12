@@ -40,7 +40,7 @@ phases:
     CLI tests.'
 proposed_by: bbugyi200.athena.sase-1jx.7
 create_time: 2026-10-11 19:14:20
-status: wip
+status: done
 bead_id: sase-1jx.7.1
 ---
 
