@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Finish the last New Project wizard landing gaps
-goal:
-  Pin the committed core repair, scope Projects completion dedupe to each operation,
+goal: Pin the committed core repair, scope Projects completion dedupe to each operation,
   prove narrow hints visibility, and close the verified epic and ready plan ancestors.
 size: medium
 proposed_by: bbugyi200.athena.sase-1jx.13.6.land
 bead: sase-1jx.13.6
-create_time: 2026-10-12 23:16:46
-status: wip
+status: done
 ---
 
 - **PARENT:**
