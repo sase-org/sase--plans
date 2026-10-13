@@ -135,7 +135,7 @@ proposed_by: bbugyi200.athena.research.49.linker.w1
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-11 11:13:39
-status: wip
+status: done
 bead_id: sase-1jx
 ---
 
