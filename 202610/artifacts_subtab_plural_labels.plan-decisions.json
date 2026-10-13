@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "What should the `stitches` sub-tab be labeled?",
+      "choices": [
+        {
+          "key": "commits",
+          "label": "Commits; the rows are VCS commits and \u2726 marks the stitch-landed ones"
+        },
+        {
+          "key": "stitches",
+          "label": "Stitches; keeps the SASE word in case this pane later lists commit-less stitches"
+        }
+      ],
+      "default": "commits",
+      "effective_default": "commits",
+      "id": "stitches_label",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "The report's pick; with sidecars shown ~80% of rows are auto commits, not stitches"
+    },
+    {
+      "ask": "Should the coder write a decisions:artifacts-tab-labels record with the label rule and reopen conditions?",
+      "default": false,
+      "effective_default": false,
+      "id": "decision_record",
+      "kind": "toggle",
+      "memory": {
+        "selectors": [
+          "decisions:artifacts-tab-labels"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "exists": false,
+          "kind": "strand",
+          "path": "sase/memory/decisions/artifacts-tab-labels.md",
+          "scope": "project",
+          "selector": "decisions:artifacts-tab-labels",
+          "type": "strand"
+        }
+      ]
+    },
+    {
+      "ask": "Should glossary:nav-section name the Artifacts panes by their new labels?",
+      "corrects": "each pane's entry list (Agent, Stitch, Patch, Bead, a document provider such as Plan, or File) is one",
+      "default": true,
+      "effective_default": true,
+      "id": "nav_section_glossary",
+      "kind": "toggle",
+      "memory": {
+        "selectors": [
+          "glossary:nav-section"
+        ]
+      },
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "exists": true,
+          "kind": "web",
+          "path": "sase/memory/glossary.md",
+          "scope": "project",
+          "selector": "glossary:nav-section",
+          "strands": [
+            "Nav Section",
+            "Nav Item",
+            "Sase Agent",
+            "Agent Tribe",
+            "Service Proc",
+            "Routine",
+            "Artifact",
+            "Stitch",
+            "Patch",
+            "Sase Node",
+            "Oneshot Service Proc",
+            "Job",
+            "Sase Agent Session",
+            "Sase Turn",
+            "Agent Turn",
+            "Named Proc",
+            "Sase Service",
+            "Proc",
+            "Sase Scheduler",
+            "Artifact Reference",
+            "Goal",
+            "Artifact Markdown File",
+            "Sase Workspace",
+            "Agent Clan",
+            "Agent Node",
+            "Sase Monitor",
+            "Gate Turn",
+            "Required Plugin",
+            "Agent Hood",
+            "Sase Gate",
+            "Task Type"
+          ],
+          "type": "web"
+        },
+        {
+          "exists": true,
+          "kind": "web",
+          "path": "sase/memory/decisions.md",
+          "scope": "project",
+          "selector": "glossary:nav-section",
+          "strands": [
+            "Goal Ledger"
+          ],
+          "type": "web"
+        }
+      ]
+    }
+  ]
+}
