@@ -1,73 +1,68 @@
 ---
 tier: epic
-title: Unblock the sase v0.18.0 PyPI release and give Full CI a reliable two-hour clock
-goal: "sase v0.18.0 is on PyPI and `pip install sase` works again. It ships through the
-  normal `ci_watch` path: a green Full CI no more than 6h old, plus a green Master Gate
-  at master HEAD. Full CI on sase master starts about every two hours, driven by a clock
-  that GitHub's backlogged cron scheduler cannot drop.
+title: Unblock the sase v0.18.0 PyPI release and give Full CI a reliable two-hour
+  clock
+goal: 'sase v0.18.0 is on PyPI and `pip install sase` works again. It ships through
+  the normal `ci_watch` path: a green Full CI no more than 6h old, plus a green Master
+  Gate at master HEAD. Full CI on sase master starts about every two hours, driven
+  by a clock that GitHub''s backlogged cron scheduler cannot drop.
 
-  "
+  '
 decisions:
   cadence_driver:
     ask: Which clock should start Full CI every two hours?
     choices:
-      athena:
-        ci_watch on athena dispatches it; reliable 5-min clock, needs a one-time
+      athena: ci_watch on athena dispatches it; reliable 5-min clock, needs a one-time
         checkout pull
-      github:
-        A relay workflow in sase re-dispatches it on completion; self-contained but
-        unproven
+      github: A relay workflow in sase re-dispatches it on completion; self-contained
+        but unproven
     default: athena
-    why:
-      GitHub delivers this repo's crons hours late; an outside clock is GitHub's own
-      remedy
+    why: GitHub delivers this repo's crons hours late; an outside clock is GitHub's
+      own remedy
     answer: athena
 phases:
-  - id: test-flakes
-    title: Fix the test-lane failures blocking Full CI and Master Gate
-    depends_on: []
-    size: medium
-    description:
-      "test-flakes: fix the New Project source/create debounce races and the sudo canary
-      length false positive that redden today's Full CI test lanes, re-inventory newer
-      red runs, and root-cause the recent Master Gate tip flakes where the cause is a
-      test wait or fixture."
-  - id: visual-lane
-    title: Deterministic captures, then rebaseline the Artifacts-strip goldens
-    depends_on: []
-    size: medium
-    description:
-      "visual-lane: fix the capture races and host differences behind 5 of the 57
-      drifted goldens, regenerate the rest for the intended retired-Agent Artifacts
-      strip, and prove a clean full visual check under TZ=UTC."
-  - id: full-ci-clock
-    title: Dispatch Full CI on a reliable two-hour clock
-    depends_on: []
-    size: medium
-    description:
-      "full-ci-clock: replace GitHub's dropped `17 */2` cron with a guarded dispatcher
-      that starts Full CI on master when the newest run is at least 2h old and none is
-      in flight."
-  - id: release
-    title: Prove Full CI green, let ci_watch merge PR 299, and verify v0.18.0 on PyPI
-    depends_on:
-      - test-flakes
-      - visual-lane
-      - full-ci-clock
-    size: medium
-    description:
-      "release: deploy the clock, drive Full CI to green on a tip with the fixes, triage
-      any new reds, confirm ci_watch merges #299, dispatch Publish, verify the PyPI
-      install, and prove the two-hour cadence."
+- id: test-flakes
+  title: Fix the test-lane failures blocking Full CI and Master Gate
+  depends_on: []
+  size: medium
+  description: 'test-flakes: fix the New Project source/create debounce races and
+    the sudo canary length false positive that redden today''s Full CI test lanes,
+    re-inventory newer red runs, and root-cause the recent Master Gate tip flakes
+    where the cause is a test wait or fixture.'
+- id: visual-lane
+  title: Deterministic captures, then rebaseline the Artifacts-strip goldens
+  depends_on: []
+  size: medium
+  description: 'visual-lane: fix the capture races and host differences behind 5 of
+    the 57 drifted goldens, regenerate the rest for the intended retired-Agent Artifacts
+    strip, and prove a clean full visual check under TZ=UTC.'
+- id: full-ci-clock
+  title: Dispatch Full CI on a reliable two-hour clock
+  depends_on: []
+  size: medium
+  description: 'full-ci-clock: replace GitHub''s dropped `17 */2` cron with a guarded
+    dispatcher that starts Full CI on master when the newest run is at least 2h old
+    and none is in flight.'
+- id: release
+  title: Prove Full CI green, let ci_watch merge PR 299, and verify v0.18.0 on PyPI
+  depends_on:
+  - test-flakes
+  - visual-lane
+  - full-ci-clock
+  size: medium
+  description: 'release: deploy the clock, drive Full CI to green on a tip with the
+    fixes, triage any new reds, confirm ci_watch merges #299, dispatch Publish, verify
+    the PyPI install, and prove the two-hour cadence.'
 proposed_by: bbugyi200.athena.106
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 14:15:34
 status: wip
+bead_id: sase-1kl
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_release_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release_unblock.md)
+- **PROMPT:** [prompts/202610/v0_18_0_release_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release_unblock.md)
+- **BEAD:** [sase-1kl](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kl/README.md)
 
 # Unblock the sase v0.18.0 PyPI release
 
