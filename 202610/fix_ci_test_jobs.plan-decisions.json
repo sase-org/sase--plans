@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Also fix the two stale \"revive\" jump-legend passages in docs/ace.md?",
+      "default": true,
+      "effective_default": true,
+      "id": "docs_revive_wording",
+      "kind": "toggle",
+      "requested_verified": false,
+      "why": "The fixed test pins Archive wording; the guide sentences are now visibly wrong"
+    },
+    {
+      "ask": "Correct the agent-relation-jump-target glossary strand's stale \"revived\" wording?",
+      "corrects": "dismissed target is revived instead.",
+      "default": true,
+      "effective_default": true,
+      "id": "glossary_jump_target",
+      "kind": "toggle",
+      "memory": {
+        "selectors": [
+          "glossary:agent-relation-jump-target"
+        ]
+      },
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "exists": true,
+          "kind": "web",
+          "path": "sase/memory/glossary.md",
+          "scope": "project",
+          "selector": "glossary:agent-relation-jump-target",
+          "strands": [
+            "Agent Relation Jump Target",
+            "Sase Node",
+            "Sase Agent",
+            "Sase Agent Session",
+            "Sase Turn",
+            "Sase Monitor",
+            "Gate Turn",
+            "Agent Neighbor",
+            "Agent Clan",
+            "Agent Tribe",
+            "Deck Panel",
+            "Artifact",
+            "Agent Node",
+            "Named Proc",
+            "Nav Item",
+            "Agent Turn",
+            "Sase Gate",
+            "Agent Hood",
+            "Agent Data Deck",
+            "Agent Data Card",
+            "Artifact Reference",
+            "Patch",
+            "Stitch",
+            "Goal",
+            "Artifact Markdown File",
+            "Proc",
+            "Nav Section",
+            "Service Proc",
+            "Oneshot Service Proc",
+            "Routine",
+            "Job",
+            "Sase Workspace",
+            "LLM Calls",
+            "Agent Data Card Block",
+            "Required Plugin",
+            "Sase Service",
+            "Sase Scheduler",
+            "Task Type"
+          ],
+          "type": "web"
+        },
+        {
+          "exists": true,
+          "kind": "web",
+          "path": "sase/memory/decisions.md",
+          "scope": "project",
+          "selector": "glossary:agent-relation-jump-target",
+          "strands": [
+            "Goal Ledger"
+          ],
+          "type": "web"
+        }
+      ]
+    }
+  ]
+}
