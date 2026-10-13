@@ -44,7 +44,7 @@ proposed_by: bbugyi200.apollo.7c.f0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 08:22:32
-status: wip
+status: done
 bead_id: sase-1kh
 ---
 
