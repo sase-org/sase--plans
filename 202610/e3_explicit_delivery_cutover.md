@@ -1,14 +1,14 @@
 ---
 tier: epic
-title: "E3 (instruction migration): Explicit instruction delivery cutover"
-goal: "Every SASE root agent on Claude, Codex, Grok, and Muse (unless its trust spike
+title: 'E3 (instruction migration): Explicit instruction delivery cutover'
+goal: 'Every SASE root agent on Claude, Codex, Grok, and Muse (unless its trust spike
   fails) gets its memory-built instruction bundle exactly once through an explicit
   adapter channel, with SASE-owned native instruction files suppressed. Claude helpers
-  get the helper bundle. Each provider switch has a per-provider sunset kill switch and
-  an atomic per-invocation legacy fallback. A trustworthy scoreboard, `sase instructions
+  get the helper bundle. Each provider switch has a per-provider sunset kill switch
+  and an atomic per-invocation legacy fallback. A trustworthy scoreboard, `sase instructions
   show`, and a handoff-aware readout prove the result and support the soak.
 
-  "
+  '
 decisions:
   foreign_memory:
     ask: Turn off Claude auto-memory, Codex memories, and Grok memory v2 in SASE runs?
@@ -16,176 +16,154 @@ decisions:
     why: They vary by workspace and provider, and memory review never sees them
     answer: true
   home_layer:
-    ask:
-      Deliver the home memory layer to Grok and Muse too, not only to Claude and Codex?
+    ask: Deliver the home memory layer to Grok and Muse too, not only to Claude and
+      Codex?
     default: true
-    why:
-      Parity is the point of E3; the home layer is about 246 B of machine and vault
+    why: Parity is the point of E3; the home layer is about 246 B of machine and vault
       pointers
     answer: true
   flag_soak:
-    ask:
-      How long must a provider's explicit delivery soak before its sunset flag may be
-      removed?
+    ask: How long must a provider's explicit delivery soak before its sunset flag
+      may be removed?
     choices:
-      seven_days:
-        At least 7 days of clean readout and conformance; E4 can start about a week
-        after E3
-      fourteen_days:
-        At least 14 days; more Grok and Muse samples, and E4 starts about two weeks
-        later
+      seven_days: At least 7 days of clean readout and conformance; E4 can start about
+        a week after E3
+      fourteen_days: At least 14 days; more Grok and Muse samples, and E4 starts about
+        two weeks later
     default: seven_days
-    why:
-      Matches the epics report; the readout shows each provider's explicit runs
+    why: Matches the epics report; the readout shows each provider's explicit runs
       separately
     answer: seven_days
   decision_record:
-    ask:
-      Add the decisions:instructions-per-invocation record for this delivery
-      architecture?
+    ask: Add the decisions:instructions-per-invocation record for this delivery architecture?
     memory:
-      - decisions:instructions-per-invocation
-    requested:
-      I would like to implement the E3 epic described by the
-      memory_built_instruction_migration_epics.md file in the research sidecar repo.
+    - decisions:instructions-per-invocation
+    requested: I would like to implement the E3 epic described by the memory_built_instruction_migration_epics.md
+      file in the research sidecar repo.
     default: true
     answer: true
 phases:
-  - id: spikes
-    title: Provider channel and suppression spikes, with outcomes recorded on the epic
-    depends_on: []
-    size: small
-    description:
-      "spikes: run cheap direct CLI probes for Claude native exclusion, auto-memory, and
-      the system-prompt files; Codex project-doc suppression, fresh shadow state, and
-      fork children; Muse without workspace trust; and Grok memory v2. Record each
-      outcome and CLI version as a structured note on the epic bead."
-  - id: delivery-wire
-    title:
-      Instruction manifest wire v2 in sase-core (delivery slots and fallback), binding,
-      adapter, pin move
-    depends_on: []
-    size: medium
-    description:
-      "delivery-wire: bump the instruction manifest wire to v2. Add the subagent
-      delivery slot, the delivery fallback block, and the channel and slot invariants.
-      Keep v1 manifests readable. Update the binding, the Python adapter constants, the
-      golden fixtures in both repos, and the sase-core pin."
-  - id: run-discovery
-    title: Scoreboard sees dismissed agents, and the new sase instructions show command
-    depends_on: []
-    size: medium
-    description:
-      "run-discovery: make verify and render enumerate and resolve hidden (dismissed)
-      agents. Fail loudly when an agent name resolves to nothing. Teach the manifest
-      reader about helper manifests, and fix the per-purpose coverage denominator. Add
-      `sase instructions show NAME`, which prints an agent's recorded bundle and
-      manifest and checks the stored bytes against the manifest digest."
-  - id: readout
-    title:
-      Handoff-aware declaration and memory-read readout, with the pre-cutover baseline
-      attached
-    depends_on:
-      - run-discovery
-    size: medium
-    description:
-      "readout: add `sase instructions readout`. Per provider and delivery mode, it
-      classifies finished root runs as accepted, plan handoff, monitor handoff, not
-      required, or miss, and joins memory reads per run. Reproduce the planning-time
-      baseline, and attach the pre-cutover baseline JSON to the epic."
-  - id: delivery-plan
-    title:
-      Delivery-plan hook, active delivery, atomic legacy fallback, and helper manifests
-      at the boundary
-    depends_on:
-      - delivery-wire
-    size: medium
-    description:
-      "delivery-plan: add the `llm_instruction_delivery` hookspec and the DeliveryPlan
-      model, with declared-legacy built-ins. The boundary resolves the plan, renders the
-      root bundle and (when declared) the helper bundle, validates transport, writes v2
-      manifests, and exposes the active delivery to adapters. It records session ids and
-      falls back atomically to legacy delivery with a deduplicated notification. Bundle
-      files become 0644."
-  - id: channel-counting
-    title: Channel-aware, occurrence-exact scoreboard counting and the conformance check
-    depends_on:
-      - run-discovery
-      - delivery-plan
-    size: medium
-    description:
-      "channel-counting: count layers across native and explicit channels by occurrence,
-      not containment. Use what partial transcripts show. Add the bundle-marker column
-      and helper marker checks, and associate sessions by marker and session id. Fix the
-      Claude auto-memory and Muse double-attribution misreads. Add the
-      `instructions.conformance` doctor check."
-  - id: claude
-    title:
-      Claude root bundle via system-prompt file, helper bundle, exact-path native
-      exclusion
-    depends_on:
-      - spikes
-      - delivery-plan
-      - channel-counting
-    size: medium
-    description:
-      "claude: create the `claude_explicit_instructions` sunset flag. When it is on,
-      deliver the root bundle with `--append-system-prompt-file` and the helper bundle
-      with `--append-subagent-system-prompt-file`. Exclude SASE-owned root and home
-      instruction files by exact path, and turn auto-memory off per decision. Flag off
-      restores E1's after-state exactly."
-  - id: codex
-    title:
-      Codex developer-instructions delivery, project-doc suppression, and shadow-home
-      hygiene (folds sase-11s)
-    depends_on:
-      - spikes
-      - delivery-plan
-      - channel-counting
-    size: medium
-    description:
-      "codex: create the `codex_explicit_instructions` sunset flag. When it is on,
-      deliver the whole root bundle through `developer_instructions`, add
-      `project_doc_max_bytes=0` in SASE-managed projects only, and leave the shadow home
-      without any SASE AGENTS.md. Rebuild the shadow home from an allowlist so shared
-      sqlite state is never linked (closes sase-11s), and declare the subagent slot
-      inherits_root."
-  - id: grok-muse
-    title: Grok full-bundle rules and Muse prompt-prefix delivery
-    depends_on:
-      - spikes
-      - delivery-plan
-      - channel-counting
-    size: medium
-    description:
-      "grok-muse: create the `grok_explicit_instructions` sunset flag, plus
-      `muse_explicit_instructions` if the Muse spike passed. Grok's `--rules` carries
-      the full root bundle, and memory v2 is set per decision. Muse gets the bundle as
-      its prompt prefix without `--trust-workspace`, or is declared legacy with no flag.
-      Interrupt and wait reconstruction never nests a second bundle."
-  - id: record
-    title: Live acceptance probes, decision record, docs, and acceptance record
-    depends_on:
-      - readout
-      - claude
-      - codex
-      - grok-muse
-    size: medium
-    description:
-      "record: prove every exit criterion with harness probes in both flag states (plus
-      launch probes once the installed code has E3), the Claude helper probe, readout
-      JSON, and parity in all four projects. Write the decision record, the docs, and
-      the inventory update. Attach the acceptance record, with its notes for E4, to the
-      epic."
+- id: spikes
+  title: Provider channel and suppression spikes, with outcomes recorded on the epic
+  depends_on: []
+  size: small
+  description: 'spikes: run cheap direct CLI probes for Claude native exclusion, auto-memory,
+    and the system-prompt files; Codex project-doc suppression, fresh shadow state,
+    and fork children; Muse without workspace trust; and Grok memory v2. Record each
+    outcome and CLI version as a structured note on the epic bead.'
+- id: delivery-wire
+  title: Instruction manifest wire v2 in sase-core (delivery slots and fallback),
+    binding, adapter, pin move
+  depends_on: []
+  size: medium
+  description: 'delivery-wire: bump the instruction manifest wire to v2. Add the subagent
+    delivery slot, the delivery fallback block, and the channel and slot invariants.
+    Keep v1 manifests readable. Update the binding, the Python adapter constants,
+    the golden fixtures in both repos, and the sase-core pin.'
+- id: run-discovery
+  title: Scoreboard sees dismissed agents, and the new sase instructions show command
+  depends_on: []
+  size: medium
+  description: 'run-discovery: make verify and render enumerate and resolve hidden
+    (dismissed) agents. Fail loudly when an agent name resolves to nothing. Teach
+    the manifest reader about helper manifests, and fix the per-purpose coverage denominator.
+    Add `sase instructions show NAME`, which prints an agent''s recorded bundle and
+    manifest and checks the stored bytes against the manifest digest.'
+- id: readout
+  title: Handoff-aware declaration and memory-read readout, with the pre-cutover baseline
+    attached
+  depends_on:
+  - run-discovery
+  size: medium
+  description: 'readout: add `sase instructions readout`. Per provider and delivery
+    mode, it classifies finished root runs as accepted, plan handoff, monitor handoff,
+    not required, or miss, and joins memory reads per run. Reproduce the planning-time
+    baseline, and attach the pre-cutover baseline JSON to the epic.'
+- id: delivery-plan
+  title: Delivery-plan hook, active delivery, atomic legacy fallback, and helper manifests
+    at the boundary
+  depends_on:
+  - delivery-wire
+  size: medium
+  description: 'delivery-plan: add the `llm_instruction_delivery` hookspec and the
+    DeliveryPlan model, with declared-legacy built-ins. The boundary resolves the
+    plan, renders the root bundle and (when declared) the helper bundle, validates
+    transport, writes v2 manifests, and exposes the active delivery to adapters. It
+    records session ids and falls back atomically to legacy delivery with a deduplicated
+    notification. Bundle files become 0644.'
+- id: channel-counting
+  title: Channel-aware, occurrence-exact scoreboard counting and the conformance check
+  depends_on:
+  - run-discovery
+  - delivery-plan
+  size: medium
+  description: 'channel-counting: count layers across native and explicit channels
+    by occurrence, not containment. Use what partial transcripts show. Add the bundle-marker
+    column and helper marker checks, and associate sessions by marker and session
+    id. Fix the Claude auto-memory and Muse double-attribution misreads. Add the `instructions.conformance`
+    doctor check.'
+- id: claude
+  title: Claude root bundle via system-prompt file, helper bundle, exact-path native
+    exclusion
+  depends_on:
+  - spikes
+  - delivery-plan
+  - channel-counting
+  size: medium
+  description: 'claude: create the `claude_explicit_instructions` sunset flag. When
+    it is on, deliver the root bundle with `--append-system-prompt-file` and the helper
+    bundle with `--append-subagent-system-prompt-file`. Exclude SASE-owned root and
+    home instruction files by exact path, and turn auto-memory off per decision. Flag
+    off restores E1''s after-state exactly.'
+- id: codex
+  title: Codex developer-instructions delivery, project-doc suppression, and shadow-home
+    hygiene (folds sase-11s)
+  depends_on:
+  - spikes
+  - delivery-plan
+  - channel-counting
+  size: medium
+  description: 'codex: create the `codex_explicit_instructions` sunset flag. When
+    it is on, deliver the whole root bundle through `developer_instructions`, add
+    `project_doc_max_bytes=0` in SASE-managed projects only, and leave the shadow
+    home without any SASE AGENTS.md. Rebuild the shadow home from an allowlist so
+    shared sqlite state is never linked (closes sase-11s), and declare the subagent
+    slot inherits_root.'
+- id: grok-muse
+  title: Grok full-bundle rules and Muse prompt-prefix delivery
+  depends_on:
+  - spikes
+  - delivery-plan
+  - channel-counting
+  size: medium
+  description: 'grok-muse: create the `grok_explicit_instructions` sunset flag, plus
+    `muse_explicit_instructions` if the Muse spike passed. Grok''s `--rules` carries
+    the full root bundle, and memory v2 is set per decision. Muse gets the bundle
+    as its prompt prefix without `--trust-workspace`, or is declared legacy with no
+    flag. Interrupt and wait reconstruction never nests a second bundle.'
+- id: record
+  title: Live acceptance probes, decision record, docs, and acceptance record
+  depends_on:
+  - readout
+  - claude
+  - codex
+  - grok-muse
+  size: medium
+  description: 'record: prove every exit criterion with harness probes in both flag
+    states (plus launch probes once the installed code has E3), the Claude helper
+    probe, readout JSON, and parity in all four projects. Write the decision record,
+    the docs, and the inventory update. Attach the acceptance record, with its notes
+    for E4, to the epic.'
 proposed_by: bbugyi200.apollo.research.13.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 18:10:29
 status: wip
+bead_id: sase-1ko
 ---
 
-- **PROMPT:**
-  [prompts/202610/e3_explicit_delivery_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e3_explicit_delivery_cutover.md)
+- **PROMPT:** [prompts/202610/e3_explicit_delivery_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e3_explicit_delivery_cutover.md)
+- **BEAD:** [sase-1ko](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ko/README.md)
 
 # Plan: E3 — Explicit instruction delivery cutover
 
