@@ -1,108 +1,102 @@
 ---
 tier: epic
 title: Stop sase TUI startup starvation on loaded hosts
-goal: "On a loaded host such as apollo, the Agents roster is usable soon after first
+goal: 'On a loaded host such as apollo, the Agents roster is usable soon after first
   paint. Hidden-surface and maintenance work no longer competes with the Agents loader
   through the GIL. The verified CPU hogs (plugin rescans, the Patch relation treadmill,
   and the app-wide link walk) are fixed. Startup cliffs can be diagnosed from telemetry
   alone.
 
-  "
+  '
 decisions:
   fallback_seconds:
-    ask:
-      How long should the startup safety timeout wait for Agents before releasing hidden
-      work?
+    ask: How long should the startup safety timeout wait for Agents before releasing
+      hidden work?
     choices:
-      sec_30:
-        A stuck Agents load delays hidden work 30 s; very slow loads may still release
-        early
-      sec_45:
-        A stuck Agents load delays hidden work 45 s; covers today's slow apollo loads
-      sec_60:
-        A stuck Agents load delays hidden work a full minute; rarely releases mid-load
+      sec_30: A stuck Agents load delays hidden work 30 s; very slow loads may still
+        release early
+      sec_45: A stuck Agents load delays hidden work 45 s; covers today's slow apollo
+        loads
+      sec_60: A stuck Agents load delays hidden work a full minute; rarely releases
+        mid-load
     default: sec_45
-    why:
-      Leaves headroom over apollo's 11–14 s post-fix loads and still bounds a stuck load
+    why: Leaves headroom over apollo's 11–14 s post-fix loads and still bounds a stuck
+      load
     answer: sec_45
 phases:
-  - id: plugin-discovery-memo
-    title: Memoize macro-plugin entry-point discovery
-    depends_on: []
-    size: small
-    description:
-      "plugin-discovery-memo: memoize macro-plugin entry-point discovery per process,
-      keyed by a cheap install signature, so get_plugin_input_type_registry stops
-      rescanning every entry point on every macro input it parses."
-  - id: toolrun-glance-coalesce
-    title: Coalesce deferred ToolRun glance refreshes
-    depends_on: []
-    size: small
-    description:
-      "toolrun-glance-coalesce: keep the ToolRun refresh marked scheduled while it waits
-      behind an Agents load, so only one deferred chain and one glance load can exist."
-  - id: loader-path-trims
-    title: Trim self-inflicted Agents-loader critical-path costs
-    depends_on: []
-    size: small
-    description:
-      "loader-path-trims: read the dismissed index without write transactions (which
-      fixes its never-hitting cache), skip the repro-capture and update-receipt imports
-      unless needed, and resolve artifact dirs only for running agents."
-  - id: tool-wait-polling
-    title: Back off sase tool wait and join polling
-    depends_on: []
-    size: small
-    description:
-      "tool-wait-polling: carry poll backoff across follow slices, throttle the
-      store-wide reconcile inside waiters, and skip re-ingesting unchanged event files."
-  - id: patch-relation-index
-    title: Stop the Patch relation-index treadmill
-    depends_on: []
-    size: medium
-    description:
-      "patch-relation-index: memoize the Patch relation index, build its edges only when
-      the Patches pane is visible (keeping a cheap targets-only index for link-follow),
-      take the startup build off the event loop, and debounce visible reloads
-      adaptively."
-  - id: startup-readiness-gate
-    title: Gate hidden startup work on Agents readiness
-    depends_on:
-      - patch-relation-index
-    size: medium
-    description:
-      "startup-readiness-gate: replace the 3 s release with a long safety timeout, keep
-      auto-refresh ticks from collecting axe or reloading before release (fixing the
-      skipped axe auto-start), and run heavy maintenance jobs one at a time."
-  - id: startup-telemetry
-    title: Make startup cliffs diagnosable from telemetry
-    depends_on:
-      - loader-path-trims
-      - patch-relation-index
-      - startup-readiness-gate
-    size: small
-    description:
-      "startup-telemetry: always-on loader disk substage timings, plus release reason
-      and time, host load, and relation-index build counts on tui_startup rows."
-  - id: core-link-index
-    title: Move the artifact-link walks into sase-core
-    depends_on:
-      - patch-relation-index
-      - startup-readiness-gate
-    size: large
-    description:
-      "core-link-index: replace the Python per-row walks behind the app-wide LinkIndex
-      and the Patch relation projection with a sase-core inverted index memoized by the
-      aggregate signature, with single-flight Python adapters and a sase-core pin move."
+- id: plugin-discovery-memo
+  title: Memoize macro-plugin entry-point discovery
+  depends_on: []
+  size: small
+  description: 'plugin-discovery-memo: memoize macro-plugin entry-point discovery
+    per process, keyed by a cheap install signature, so get_plugin_input_type_registry
+    stops rescanning every entry point on every macro input it parses.'
+- id: toolrun-glance-coalesce
+  title: Coalesce deferred ToolRun glance refreshes
+  depends_on: []
+  size: small
+  description: 'toolrun-glance-coalesce: keep the ToolRun refresh marked scheduled
+    while it waits behind an Agents load, so only one deferred chain and one glance
+    load can exist.'
+- id: loader-path-trims
+  title: Trim self-inflicted Agents-loader critical-path costs
+  depends_on: []
+  size: small
+  description: 'loader-path-trims: read the dismissed index without write transactions
+    (which fixes its never-hitting cache), skip the repro-capture and update-receipt
+    imports unless needed, and resolve artifact dirs only for running agents.'
+- id: tool-wait-polling
+  title: Back off sase tool wait and join polling
+  depends_on: []
+  size: small
+  description: 'tool-wait-polling: carry poll backoff across follow slices, throttle
+    the store-wide reconcile inside waiters, and skip re-ingesting unchanged event
+    files.'
+- id: patch-relation-index
+  title: Stop the Patch relation-index treadmill
+  depends_on: []
+  size: medium
+  description: 'patch-relation-index: memoize the Patch relation index, build its
+    edges only when the Patches pane is visible (keeping a cheap targets-only index
+    for link-follow), take the startup build off the event loop, and debounce visible
+    reloads adaptively.'
+- id: startup-readiness-gate
+  title: Gate hidden startup work on Agents readiness
+  depends_on:
+  - patch-relation-index
+  size: medium
+  description: 'startup-readiness-gate: replace the 3 s release with a long safety
+    timeout, keep auto-refresh ticks from collecting axe or reloading before release
+    (fixing the skipped axe auto-start), and run heavy maintenance jobs one at a time.'
+- id: startup-telemetry
+  title: Make startup cliffs diagnosable from telemetry
+  depends_on:
+  - loader-path-trims
+  - patch-relation-index
+  - startup-readiness-gate
+  size: small
+  description: 'startup-telemetry: always-on loader disk substage timings, plus release
+    reason and time, host load, and relation-index build counts on tui_startup rows.'
+- id: core-link-index
+  title: Move the artifact-link walks into sase-core
+  depends_on:
+  - patch-relation-index
+  - startup-readiness-gate
+  size: large
+  description: 'core-link-index: replace the Python per-row walks behind the app-wide
+    LinkIndex and the Patch relation projection with a sase-core inverted index memoized
+    by the aggregate signature, with single-flight Python adapters and a sase-core
+    pin move.'
 proposed_by: bbugyi200.athena.102
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 11:47:14
 status: wip
+bead_id: sase-1kj
 ---
 
-- **PROMPT:**
-  [prompts/202610/apollo_tui_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/apollo_tui_startup.md)
+- **PROMPT:** [prompts/202610/apollo_tui_startup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/apollo_tui_startup.md)
+- **BEAD:** [sase-1kj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kj/README.md)
 
 # Stop sase TUI startup starvation on loaded hosts
 
