@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Finish the last New Project wizard landing gaps
-goal: Pin the committed core repair, scope Projects completion dedupe to each operation,
+goal:
+  Pin the committed core repair, scope Projects completion dedupe to each operation,
   prove narrow hints visibility, and close the verified epic and ready plan ancestors.
 size: medium
 proposed_by: bbugyi200.athena.sase-1jx.13.6.land
@@ -13,6 +14,11 @@ status: done
   [202610/new_project_wizard_final_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202610/new_project_wizard_final_repairs.md)
 - **BEAD:**
   [sase-1jx.13.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1jx/sase-1jx.13.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1jx.13.6.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1jx.13.6.land.md)
+- **COMMITS:**
+  - [41894c0](https://github.com/sase-org/sase--plans/commit/41894c05515bb4b916b963f2d9571b9db9885759)
+    — docs: mark New Project wizard plans done after sase-1jx close
 
 # Finish the last New Project wizard landing gaps
 
