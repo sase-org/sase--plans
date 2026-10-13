@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the implementer also delete the existing false-positive linked-sase-core rescue entries?",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Leave them alone; the rescue reaper deletes them within 30 days"
+        },
+        {
+          "key": "delete",
+          "label": "Delete only entries proven to hold nothing but pushed tags; irreversible"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "id": "cleanup",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "They hold nothing worth keeping and use about 1 MB; deleting from the rescue store gains little"
+    }
+  ]
+}
