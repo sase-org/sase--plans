@@ -2,7 +2,8 @@
 tier: tale
 size: medium
 title: Finish linked-repository absorption safeguards and land sase-1kh
-goal: Raw-commit absorption preserves baseline dirt and host or foreign commits, regression
+goal:
+  Raw-commit absorption preserves baseline dirt and host or foreign commits, regression
   coverage proves the contract, and epic sase-1kh closes normally with its plan marked
   done.
 proposed_by: bbugyi200.apollo.sase-1kh.land
@@ -14,6 +15,11 @@ status: done
   [202610/protect_linked_repo_work.md](https://github.com/sase-org/sase--plans/blob/main/202610/protect_linked_repo_work.md)
 - **BEAD:**
   [sase-1kh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kh/README.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-1kh.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1kh.land.md)
+- **COMMITS:**
+  - [c3d7a7e](https://github.com/sase-org/sase/commit/c3d7a7e9b5bd4a5ef9697b3411a97a7a8f01c10e)
+    — fix(finalizer): restrict raw commit absorption to owned suffixes
 
 # Finish linked-repository absorption safeguards and land sase-1kh
 
