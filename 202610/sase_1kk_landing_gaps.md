@@ -2,15 +2,13 @@
 tier: tale
 size: small
 title: Finish the sase-1kk SQLite single-owner landing gaps and close the epic
-goal:
-  "Epic sase-1kk's remaining verification gaps are closed: the TUI faulthandler setup
-  has its required unit test, docs no longer call the dismissed-bundle summary index
-  Python-owned, no test or benchmark opens the Rust-owned artifact index through
-  in-process stdlib sqlite3, and epic sase-1kk is closed with its plan marked done."
+goal: 'Epic sase-1kk''s remaining verification gaps are closed: the TUI faulthandler
+  setup has its required unit test, docs no longer call the dismissed-bundle summary
+  index Python-owned, no test or benchmark opens the Rust-owned artifact index through
+  in-process stdlib sqlite3, and epic sase-1kk is closed with its plan marked done.'
 proposed_by: bbugyi200.athena.sase-1kk.land
 bead: sase-1kk
-create_time: 2026-10-13 18:44:02
-status: wip
+status: done
 ---
 
 - **PARENT:**
