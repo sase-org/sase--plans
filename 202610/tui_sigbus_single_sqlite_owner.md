@@ -1,75 +1,69 @@
 ---
 tier: epic
-title:
-  Stop TUI SIGBUS crashes by giving every SQLite file one SQLite library per process
-goal: "The sase TUI no longer dies with `bus error (core dumped)` or corrupts its SQLite
-  indexes, because no process ever opens the same SQLite database file through both
-  Python's stdlib `sqlite3` and the Rust core's bundled SQLite; the existing corrupt
-  dismissed-bundle index heals itself, future fatal signals leave Python stacks behind,
-  and a regression guard keeps the invariant from silently returning.
+title: Stop TUI SIGBUS crashes by giving every SQLite file one SQLite library per
+  process
+goal: 'The sase TUI no longer dies with `bus error (core dumped)` or corrupts its
+  SQLite indexes, because no process ever opens the same SQLite database file through
+  both Python''s stdlib `sqlite3` and the Rust core''s bundled SQLite; the existing
+  corrupt dismissed-bundle index heals itself, future fatal signals leave Python stacks
+  behind, and a regression guard keeps the invariant from silently returning.
 
-  "
+  '
 phases:
-  - id: stopgap
-    title: Stop the crash now with in-process serialization, self-heal, and fault logs
-    depends_on: []
-    size: small
-    description:
-      "stopgap: serialize every Python-sqlite3 connection and Rust call on the
-      dismissed-bundle index and artifact index inside one process, quarantine and
-      rebuild a corrupt dismissed index, and enable faulthandler logging in the TUI."
-  - id: core-archive-store
-    title: sase-core owns the dismissed-bundle archive index store
-    depends_on: []
-    size: medium
-    description:
-      "core-archive-store: port the dismissed-bundle index schema, writes, queries,
-      rebuild, signature, and corrupt-file quarantine from Python into
-      sase_core::agent_archive with PyO3 bindings and Rust tests."
-  - id: core-index-readers
-    title:
-      sase-core bindings for the remaining Python artifact-index reads and alias writes
-    depends_on: []
-    size: small
-    description:
-      "core-index-readers: add read-only no-migrate schema-version and column-projection
-      bindings plus alias upsert/delete/list bindings for agent_artifact_index.sqlite."
-  - id: py-archive-adapter
-    title: Python dismissed-bundle index becomes a thin adapter over Rust
-    depends_on:
-      - stopgap
-      - core-archive-store
-    size: medium
-    description:
-      "py-archive-adapter: move the sase-core pin, replace all stdlib sqlite3 use in
-      ace/dismissed_bundle_index with the new bindings while keeping public signatures
-      and degrade semantics, and drop the stopgap dismissed-index lock."
-  - id: py-index-readers
-    title: Route Python artifact-index readers and alias writes through Rust
-    depends_on:
-      - stopgap
-      - core-index-readers
-    size: small
-    description:
-      "py-index-readers: move the sase-core pin and switch the lifecycle schema check,
-      catalog projection, chat provenance reader, and layout alias CLI to the new
-      bindings."
-  - id: guard
-    title: Regression guard, ownership docs, and follow-ups
-    depends_on:
-      - py-archive-adapter
-      - py-index-readers
-    size: small
-    description:
-      "guard: add a static test that forbids stdlib sqlite3 connections outside an
-      allowlist of Python-owned databases, document SQLite ownership, and record
-      follow-ups for the remaining CLI-only hazards."
+- id: stopgap
+  title: Stop the crash now with in-process serialization, self-heal, and fault logs
+  depends_on: []
+  size: small
+  description: 'stopgap: serialize every Python-sqlite3 connection and Rust call on
+    the dismissed-bundle index and artifact index inside one process, quarantine and
+    rebuild a corrupt dismissed index, and enable faulthandler logging in the TUI.'
+- id: core-archive-store
+  title: sase-core owns the dismissed-bundle archive index store
+  depends_on: []
+  size: medium
+  description: 'core-archive-store: port the dismissed-bundle index schema, writes,
+    queries, rebuild, signature, and corrupt-file quarantine from Python into sase_core::agent_archive
+    with PyO3 bindings and Rust tests.'
+- id: core-index-readers
+  title: sase-core bindings for the remaining Python artifact-index reads and alias
+    writes
+  depends_on: []
+  size: small
+  description: 'core-index-readers: add read-only no-migrate schema-version and column-projection
+    bindings plus alias upsert/delete/list bindings for agent_artifact_index.sqlite.'
+- id: py-archive-adapter
+  title: Python dismissed-bundle index becomes a thin adapter over Rust
+  depends_on:
+  - stopgap
+  - core-archive-store
+  size: medium
+  description: 'py-archive-adapter: move the sase-core pin, replace all stdlib sqlite3
+    use in ace/dismissed_bundle_index with the new bindings while keeping public signatures
+    and degrade semantics, and drop the stopgap dismissed-index lock.'
+- id: py-index-readers
+  title: Route Python artifact-index readers and alias writes through Rust
+  depends_on:
+  - stopgap
+  - core-index-readers
+  size: small
+  description: 'py-index-readers: move the sase-core pin and switch the lifecycle
+    schema check, catalog projection, chat provenance reader, and layout alias CLI
+    to the new bindings.'
+- id: guard
+  title: Regression guard, ownership docs, and follow-ups
+  depends_on:
+  - py-archive-adapter
+  - py-index-readers
+  size: small
+  description: 'guard: add a static test that forbids stdlib sqlite3 connections outside
+    an allowlist of Python-owned databases, document SQLite ownership, and record
+    follow-ups for the remaining CLI-only hazards.'
 decisions:
   memory_sqlite_owner:
-    ask:
-      Add a decisions-web record stating the one-SQLite-library-per-database-file rule?
+    ask: Add a decisions-web record stating the one-SQLite-library-per-database-file
+      rule?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 proposed_by: bbugyi200.athena.104
@@ -77,10 +71,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 12:24:21
 status: wip
+bead_id: sase-1kk
 ---
 
-- **PROMPT:**
-  [prompts/202610/tui_sigbus_single_sqlite_owner.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_sigbus_single_sqlite_owner.md)
+- **PROMPT:** [prompts/202610/tui_sigbus_single_sqlite_owner.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_sigbus_single_sqlite_owner.md)
+- **BEAD:** [sase-1kk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kk/README.md)
 
 # Plan: Stop TUI SIGBUS crashes by giving every SQLite file one SQLite library per process
 
