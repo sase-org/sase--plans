@@ -1,46 +1,42 @@
 ---
 tier: epic
 title: Move artifact-link indexing into the Rust core
-goal:
-  Complete sase-1kj.8 with one shared native index, lazy link chips, and indexed Patch
-  projections while preserving current behavior
+goal: Complete sase-1kj.8 with one shared native index, lazy link chips, and indexed
+  Patch projections while preserving current behavior
 phases:
-  - id: parity-baseline
-    title: Capture artifact-link parity and performance baselines
-    depends_on: []
-    size: small
-    description:
-      "parity-baseline: freeze current chips, targets, and Patch-edge outputs in
-      fixtures and record reproducible CPU and wall-time baselines on a saved real
-      aggregate before either implementation changes."
-  - id: native-index
-    title: Build the shared Rust artifact-link index and opaque binding
-    depends_on:
-      - parity-baseline
-    size: medium
-    description:
-      "native-index: implement the immutable core index, indexed row and projection
-      queries, and GIL-releasing opaque Python handle against the captured parity
-      fixtures."
-  - id: python-integration
-    title: Route link chips and Patch projections through the shared native handle
-    depends_on:
-      - native-index
-    size: medium
-    description:
-      "python-integration: install the thin single-flight adapters, preserve Patch
-      deferral, remove the Python aggregate walks, verify the source pin and parity, and
-      measure the improvement."
+- id: parity-baseline
+  title: Capture artifact-link parity and performance baselines
+  depends_on: []
+  size: small
+  description: 'parity-baseline: freeze current chips, targets, and Patch-edge outputs
+    in fixtures and record reproducible CPU and wall-time baselines on a saved real
+    aggregate before either implementation changes.'
+- id: native-index
+  title: Build the shared Rust artifact-link index and opaque binding
+  depends_on:
+  - parity-baseline
+  size: medium
+  description: 'native-index: implement the immutable core index, indexed row and
+    projection queries, and GIL-releasing opaque Python handle against the captured
+    parity fixtures.'
+- id: python-integration
+  title: Route link chips and Patch projections through the shared native handle
+  depends_on:
+  - native-index
+  size: medium
+  description: 'python-integration: install the thin single-flight adapters, preserve
+    Patch deferral, remove the Python aggregate walks, verify the source pin and parity,
+    and measure the improvement.'
 proposed_by: bbugyi200.athena.sase-1kj.8
 parent_bead: sase-1kj.8
 create_time: 2026-10-13 17:50:20
 status: wip
+bead_id: sase-1kj.8.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/artifact_link_inverted_index.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/artifact_link_inverted_index.md)
-- **PARENT:**
-  [202610/apollo_tui_startup.md](https://github.com/sase-org/sase--plans/blob/main/202610/apollo_tui_startup.md)
+- **PROMPT:** [prompts/202610/artifact_link_inverted_index.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/artifact_link_inverted_index.md)
+- **PARENT:** [202610/apollo_tui_startup.md](https://github.com/sase-org/sase--plans/blob/main/202610/apollo_tui_startup.md)
+- **BEAD:** [sase-1kj.8.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kj/sase-1kj.8.1.md)
 
 # Artifact-link inverted index
 
