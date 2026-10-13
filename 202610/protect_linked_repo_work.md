@@ -1,61 +1,55 @@
 ---
 tier: epic
 title: Stop losing agent work in linked-repo checkouts
-goal: "Agent work in linked and external repo checkouts survives workspace reuse, raw
-  local commits can never end a turn as a silent finalizer success, and monitors started
-  inside an opened repo run there.
+goal: 'Agent work in linked and external repo checkouts survives workspace reuse,
+  raw local commits can never end a turn as a silent finalizer success, and monitors
+  started inside an opened repo run there.
 
-  "
+  '
 decisions:
   raw_commit_policy:
-    ask:
-      Should the host unwind an agent's raw local commits into the turn's normal host
-      commit?
+    ask: Should the host unwind an agent's raw local commits into the turn's normal
+      host commit?
     choices:
-      absorb:
-        Host soft-resets eligible raw commits so the normal declaration commits and
-        pushes them
-      fail:
-        Host never rewrites history; any raw local commit fails the run with restore
+      absorb: Host soft-resets eligible raw commits so the normal declaration commits
+        and pushes them
+      fail: Host never rewrites history; any raw local commit fails the run with restore
         steps
     default: absorb
-    why:
-      Unattended %auto runs finish their work instead of stranding it behind a failed
-      run.
+    why: Unattended %auto runs finish their work instead of stranding it behind a
+      failed run.
     answer: absorb
 phases:
-  - id: linked-rescue
-    title: Rescue linked and external clones before any eviction
-    depends_on: []
-    size: medium
-    description:
-      "linked-rescue: rescue_git_repo every sase/repos/linked and external clone before
-      launch eviction, re-creation, and corrupt-checkout replacement; tests and
-      docs/workspace.md."
-  - id: raw-commit-adopt
-    title: Make the commit finalizer see raw local commits
-    depends_on: []
-    size: medium
-    description:
-      "raw-commit-adopt: record baseline HEAD, detect unrecorded local-only commits,
-      fail the commit finalizer instead of succeeding, and apply the raw_commit_policy
-      branch."
-  - id: monitor-linked-cwd
-    title: Monitors started inside an opened repo run there
-    depends_on: []
-    size: small
-    description:
-      "monitor-linked-cwd: default sase monitor start cwd to the caller's directory
-      inside sase/repos/, plus help, docs, and skill source updates."
+- id: linked-rescue
+  title: Rescue linked and external clones before any eviction
+  depends_on: []
+  size: medium
+  description: 'linked-rescue: rescue_git_repo every sase/repos/linked and external
+    clone before launch eviction, re-creation, and corrupt-checkout replacement; tests
+    and docs/workspace.md.'
+- id: raw-commit-adopt
+  title: Make the commit finalizer see raw local commits
+  depends_on: []
+  size: medium
+  description: 'raw-commit-adopt: record baseline HEAD, detect unrecorded local-only
+    commits, fail the commit finalizer instead of succeeding, and apply the raw_commit_policy
+    branch.'
+- id: monitor-linked-cwd
+  title: Monitors started inside an opened repo run there
+  depends_on: []
+  size: small
+  description: 'monitor-linked-cwd: default sase monitor start cwd to the caller''s
+    directory inside sase/repos/, plus help, docs, and skill source updates.'
 proposed_by: bbugyi200.apollo.7c.f0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 08:22:32
 status: wip
+bead_id: sase-1kh
 ---
 
-- **PROMPT:**
-  [prompts/202610/protect_linked_repo_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/protect_linked_repo_work.md)
+- **PROMPT:** [prompts/202610/protect_linked_repo_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/protect_linked_repo_work.md)
+- **BEAD:** [sase-1kh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kh/README.md)
 
 # Stop losing agent work in linked-repo checkouts
 
