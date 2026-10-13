@@ -2,10 +2,11 @@
 tier: tale
 size: small
 title: Finish the sase-1kk SQLite single-owner landing gaps and close the epic
-goal: 'Epic sase-1kk''s remaining verification gaps are closed: the TUI faulthandler
-  setup has its required unit test, docs no longer call the dismissed-bundle summary
-  index Python-owned, no test or benchmark opens the Rust-owned artifact index through
-  in-process stdlib sqlite3, and epic sase-1kk is closed with its plan marked done.'
+goal:
+  "Epic sase-1kk's remaining verification gaps are closed: the TUI faulthandler setup
+  has its required unit test, docs no longer call the dismissed-bundle summary index
+  Python-owned, no test or benchmark opens the Rust-owned artifact index through
+  in-process stdlib sqlite3, and epic sase-1kk is closed with its plan marked done."
 proposed_by: bbugyi200.athena.sase-1kk.land
 bead: sase-1kk
 status: done
@@ -15,6 +16,11 @@ status: done
   [202610/tui_sigbus_single_sqlite_owner.md](https://github.com/sase-org/sase--plans/blob/main/202610/tui_sigbus_single_sqlite_owner.md)
 - **BEAD:**
   [sase-1kk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kk/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1kk.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1kk.land.md)
+- **COMMITS:**
+  - [3d6f6a1](https://github.com/sase-org/sase--plans/commit/3d6f6a1169621cb598cd738b105b1cb9fa027963)
+    — docs(plan): mark single-owner epic plan done
 
 # Plan: Finish the sase-1kk SQLite single-owner landing gaps and close the epic
 
