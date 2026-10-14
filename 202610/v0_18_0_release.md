@@ -1,93 +1,83 @@
 ---
 tier: epic
-title:
-  "Ship sase v0.18.0: green CI, a floor-satisfying core, and a release wait that always
-  closes"
-goal: "sase 0.18.0 is on PyPI and `pip install sase` works again. It ships through
-  ci_watch's guarded merge of release PR #299, after Master Gate and Full CI go green on
-  master. The release-wait phase always closes its bead, whatever happens, so the land
-  agent always runs. The land agent confirms the release before it lands the epic, and
-  finishes the release itself when something unexpected blocks it.
+title: 'Ship sase v0.18.0: green CI, a floor-satisfying core, and a release wait that
+  always closes'
+goal: 'sase 0.18.0 is on PyPI and `pip install sase` works again. It ships through
+  ci_watch''s guarded merge of release PR #299, after Master Gate and Full CI go green
+  on master. The release-wait phase always closes its bead, whatever happens, so the
+  land agent always runs. The land agent confirms the release before it lands the
+  epic, and finishes the release itself when something unexpected blocks it.
 
-  "
+  '
 decisions:
   core_release:
-    ask:
-      Should the wait phase cut sase-core v0.40.0 now through release-plz's documented
+    ask: Should the wait phase cut sase-core v0.40.0 now through release-plz's documented
       urgent dispatch?
     choices:
-      dispatch:
-        Dispatch release-plz dry_run=false at once; core 0.40.0 reaches PyPI in about 30
-        min
-      daily_cut:
-        Wait for release-plz's daily cron (lands ~15-17Z); can add most of a day of
-        latency
+      dispatch: Dispatch release-plz dry_run=false at once; core 0.40.0 reaches PyPI
+        in about 30 min
+      daily_cut: Wait for release-plz's daily cron (lands ~15-17Z); can add most of
+        a day of latency
     default: dispatch
-    why:
-      "PR #299 cannot pass release-core-floor-smoke until a core >= 0.40.0 is on PyPI"
+    why: 'PR #299 cannot pass release-core-floor-smoke until a core >= 0.40.0 is on
+      PyPI'
     answer: dispatch
   stale_epic_1jz:
-    ask:
-      How should landing release the stalled sase-1jz epic, whose .4/.5/.land agents
+    ask: How should landing release the stalled sase-1jz epic, whose .4/.5/.land agents
       still wait on .3?
     choices:
-      notes:
-        Close sase-1jz.3 and note .4/.5 with this epic's evidence; sase-1jz's own agents
-        finish
-      retire:
-        Kill sase-1jz's 3 waiting agents and force-close the epic as superseded by this
-        one
+      notes: Close sase-1jz.3 and note .4/.5 with this epic's evidence; sase-1jz's
+        own agents finish
+      retire: Kill sase-1jz's 3 waiting agents and force-close the epic as superseded
+        by this one
     default: notes
     why: notes lets sase-1jz's waiting agents finish themselves; it kills no agents
     answer: notes
 phases:
-  - id: gate-reds
-    title: Fix the Master Gate test reds at master HEAD
-    depends_on: []
-    size: medium
-    description:
-      "gate-reds: delete the stale _RunManifest import, fix the lazy-export monkeypatch
-      pollution that empties the bare-git provider registry, chase the archive-column
-      flake, and fix every other deterministic red on the current tip."
-  - id: visual-lane
-    title: Make the Full CI visual lane pass and stay clean
-    depends_on: []
-    size: medium
-    description:
-      "visual-lane: fix the three deterministic visual failure classes (fast-startup
-      stub vs real loader, remote rows seeded through the local loader, stale Commits
-      description wait), regenerate only the goldens those fixes change, then prove a
-      clean TZ=UTC full check."
-  - id: release-watch-tool
-    title: A tested release watcher that always reports and can close its bead
-    depends_on: []
-    size: medium
-    description:
-      "release-watch-tool: add tools/release_watch, a stdlib-only, unit-tested poller.
-      It waits on PyPI, the release PR, Full CI, Master Gate, Publish, and sase-core-rs;
-      dispatches Full CI or Publish only by fixed rules; fails fast on unparseable
-      reads; and on every exit path writes a verdict and can close a bead."
-  - id: release-wait
-    title: Watch v0.18.0 to PyPI without editing code, then hand off
-    depends_on:
-      - gate-reds
-      - visual-lane
-      - release-watch-tool
-    size: small
-    description:
-      "release-wait: make no edits. Optionally cut sase-core, preflight the watcher
-      inline, and start one monitor whose command runs tools/release_watch with
-      --close-bead. Every outcome then closes this bead without a model turn, and the
-      trivial follow-up only confirms the close."
+- id: gate-reds
+  title: Fix the Master Gate test reds at master HEAD
+  depends_on: []
+  size: medium
+  description: 'gate-reds: delete the stale _RunManifest import, fix the lazy-export
+    monkeypatch pollution that empties the bare-git provider registry, chase the archive-column
+    flake, and fix every other deterministic red on the current tip.'
+- id: visual-lane
+  title: Make the Full CI visual lane pass and stay clean
+  depends_on: []
+  size: medium
+  description: 'visual-lane: fix the three deterministic visual failure classes (fast-startup
+    stub vs real loader, remote rows seeded through the local loader, stale Commits
+    description wait), regenerate only the goldens those fixes change, then prove
+    a clean TZ=UTC full check.'
+- id: release-watch-tool
+  title: A tested release watcher that always reports and can close its bead
+  depends_on: []
+  size: medium
+  description: 'release-watch-tool: add tools/release_watch, a stdlib-only, unit-tested
+    poller. It waits on PyPI, the release PR, Full CI, Master Gate, Publish, and sase-core-rs;
+    dispatches Full CI or Publish only by fixed rules; fails fast on unparseable reads;
+    and on every exit path writes a verdict and can close a bead.'
+- id: release-wait
+  title: Watch v0.18.0 to PyPI without editing code, then hand off
+  depends_on:
+  - gate-reds
+  - visual-lane
+  - release-watch-tool
+  size: small
+  description: 'release-wait: make no edits. Optionally cut sase-core, preflight the
+    watcher inline, and start one monitor whose command runs tools/release_watch with
+    --close-bead. Every outcome then closes this bead without a model turn, and the
+    trivial follow-up only confirms the close.'
 proposed_by: bbugyi200.athena.10b
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-14 07:18:01
 status: wip
+bead_id: sase-1kx
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release.md)
+- **PROMPT:** [prompts/202610/v0_18_0_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release.md)
+- **BEAD:** [sase-1kx](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kx/README.md)
 
 # Ship sase v0.18.0
 
