@@ -2,34 +2,33 @@
 tier: epic
 title: Finish v0.18.0 watcher correctness, visual proof, and publication
 parent_bead: sase-1kx
-goal:
-  The remaining release watcher defects are fixed, the complete visual lane is clean,
-  and sase 0.18.0 is published and installable through the guarded release flow.
+goal: The remaining release watcher defects are fixed, the complete visual lane is
+  clean, and sase 0.18.0 is published and installable through the guarded release
+  flow.
 phases:
-  - id: remaining-fixes
-    title: Repair the watcher edge cases and finish the clean visual proof
-    description:
-      "remaining-fixes: fix the three watcher defects, await the requested core release,
-      resolve the remaining visual mismatches, and verify the integrated tree."
-    depends_on: []
-    size: medium
-  - id: release-wait
-    title: Watch the committed fixes through core publication, CI, and sase publication
-    description:
-      "release-wait: make no edits; preflight and monitor the corrected watcher on
-      committed fixes, then close this phase on every outcome."
-    depends_on:
-      - remaining-fixes
-    size: small
+- id: remaining-fixes
+  title: Repair the watcher edge cases and finish the clean visual proof
+  description: 'remaining-fixes: fix the three watcher defects, await the requested
+    core release, resolve the remaining visual mismatches, and verify the integrated
+    tree.'
+  depends_on: []
+  size: medium
+- id: release-wait
+  title: Watch the committed fixes through core publication, CI, and sase publication
+  description: 'release-wait: make no edits; preflight and monitor the corrected watcher
+    on committed fixes, then close this phase on every outcome.'
+  depends_on:
+  - remaining-fixes
+  size: small
 proposed_by: bbugyi200.athena.sase-1kx.land
 create_time: 2026-10-14 09:33:38
 status: wip
+bead_id: sase-1kx.5
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_release_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release_finish.md)
-- **PARENT:**
-  [202610/v0_18_0_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_release.md)
+- **PROMPT:** [prompts/202610/v0_18_0_release_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_release_finish.md)
+- **PARENT:** [202610/v0_18_0_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_release.md)
+- **BEAD:** [sase-1kx.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kx/sase-1kx.5.md)
 
 # Finish the remaining v0.18.0 release work
 
