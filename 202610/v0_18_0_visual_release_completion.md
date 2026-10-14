@@ -2,35 +2,32 @@
 tier: epic
 title: Finish the five release-blocking visual drifts and prove v0.18.0 publication
 parent_bead: sase-1kx.5
-goal:
-  The five observed visual drifts and remaining watcher parsing defects are repaired,
-  and committed fixes pass the guarded release path through a confirmed installable sase
-  0.18.0.
+goal: The five observed visual drifts and remaining watcher parsing defects are repaired,
+  and committed fixes pass the guarded release path through a confirmed installable
+  sase 0.18.0.
 phases:
-  - id: deterministic-captures
-    title: Repair the five capture states and remaining watcher parsing gaps
-    description:
-      "deterministic-captures: pin the observed footer, archive, deck, and scrollbar
-      states; harden watcher input parsing; verify the integrated changes."
-    depends_on: []
-    size: medium
-  - id: publication-proof
-    title: Observe committed fixes through CI and publication without editing files
-    description:
-      "publication-proof: preflight and monitor the release on the repair commit, always
-      close the phase with an honest verdict, and hand evidence to landing."
-    depends_on:
-      - deterministic-captures
-    size: small
+- id: deterministic-captures
+  title: Repair the five capture states and remaining watcher parsing gaps
+  description: 'deterministic-captures: pin the observed footer, archive, deck, and
+    scrollbar states; harden watcher input parsing; verify the integrated changes.'
+  depends_on: []
+  size: medium
+- id: publication-proof
+  title: Observe committed fixes through CI and publication without editing files
+  description: 'publication-proof: preflight and monitor the release on the repair
+    commit, always close the phase with an honest verdict, and hand evidence to landing.'
+  depends_on:
+  - deterministic-captures
+  size: small
 proposed_by: bbugyi200.athena.sase-1kx.5.land
 create_time: 2026-10-14 15:28:09
 status: wip
+bead_id: sase-1kx.5.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_visual_release_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_visual_release_completion.md)
-- **PARENT:**
-  [202610/v0_18_0_release_finish.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_release_finish.md)
+- **PROMPT:** [prompts/202610/v0_18_0_visual_release_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_visual_release_completion.md)
+- **PARENT:** [202610/v0_18_0_release_finish.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_release_finish.md)
+- **BEAD:** [sase-1kx.5.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kx/sase-1kx.5.3.md)
 
 # Complete the remaining v0.18.0 release acceptance
 
