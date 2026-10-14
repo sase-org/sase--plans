@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the Argon slugs carry an info model advisory saying they need Google AI Ultra?",
+      "choices": [
+        {
+          "key": "info",
+          "label": "Picker, completion, and run labels show \u24d8 needs Google AI Ultra; doctor warns on routes to Argon"
+        },
+        {
+          "key": "none",
+          "label": "No marker on any surface; the AI Ultra gate is documented only in docs/llms.md"
+        }
+      ],
+      "default": "info",
+      "effective_default": "info",
+      "id": "ultra_advisory",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Argon fails outright for most plans, and these surfaces are where users pick it"
+    },
+    {
+      "ask": "Should Gemini 4 Argon join a shipped size alias?",
+      "choices": [
+        {
+          "key": "catalog_only",
+          "label": "Reachable by name, picker, and completion only; no size alias routes to it automatically"
+        },
+        {
+          "key": "large_pool",
+          "label": "Adds agy/gemini-4-argon-high to @large; non-Ultra agy users get some failed @large launches"
+        }
+      ],
+      "default": "catalog_only",
+      "effective_default": "catalog_only",
+      "id": "size_alias",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "agy exits 1 on models the account can't use, and aliases auto-route whenever agy is on PATH"
+    }
+  ]
+}
