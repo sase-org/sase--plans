@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should running blocks switch to a minutes format once they pass 60 seconds?",
+      "choices": [
+        {
+          "key": "seconds",
+          "label": "Keep plain whole seconds (\"running 547s\"), matching the finished-block \"547.3s\" style"
+        },
+        {
+          "key": "minutes",
+          "label": "Show \"running 9m07s\" past 60 s and \"running 1h02m\" past an hour; finished blocks keep \"547.3s\""
+        }
+      ],
+      "default": "seconds",
+      "effective_default": "seconds",
+      "id": "long_runs",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Seconds is today's running format and stays consistent with settled blocks"
+    }
+  ]
+}
