@@ -1,12 +1,14 @@
 ---
 tier: tale
 size: medium
-title: Finish the sase-1kj landing - readiness-gate repairs, read-only dismissed-index
+title:
+  Finish the sase-1kj landing - readiness-gate repairs, read-only dismissed-index
   queries, and closeout
-goal: 'Epic sase-1kj lands complete: dismissed-index reads stay read-only after the
-  move to sase-core, the startup readiness gate never loses Agents updates or shows
-  a false axe STOPPED, failed ToolRun ingests are retried, the AcePage startup test
-  is deterministic, and the epic is closed with its plan marked done.'
+goal:
+  "Epic sase-1kj lands complete: dismissed-index reads stay read-only after the move to
+  sase-core, the startup readiness gate never loses Agents updates or shows a false axe
+  STOPPED, failed ToolRun ingests are retried, the AcePage startup test is
+  deterministic, and the epic is closed with its plan marked done."
 proposed_by: bbugyi200.athena.sase-1kj.land
 bead: sase-1kj
 status: done
@@ -16,6 +18,11 @@ status: done
   [202610/apollo_tui_startup.md](https://github.com/sase-org/sase--plans/blob/main/202610/apollo_tui_startup.md)
 - **BEAD:**
   [sase-1kj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kj/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1kj.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1kj.land.md)
+- **COMMITS:**
+  - [7764903](https://github.com/sase-org/sase--plans/commit/77649035a56177f15561adf8fafa1ba31fa84d8a)
+    — docs(plans): mark sase-1kj epic and landing tale done
 
 # Finish the sase-1kj landing
 
