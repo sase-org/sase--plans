@@ -158,7 +158,7 @@ proposed_by: bbugyi200.apollo.research.13.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-13 18:10:29
-status: wip
+status: done
 bead_id: sase-1ko
 ---
 
