@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Research-swarm linker replaces tables with PDF-friendly record lists
-goal:
-  The research-swarm linker converts every table in the lead's report into a list before
-  publishing `<name>.md`, and checks that none survives, so Highlights PDFs no longer
-  contain cramped equal-width pandoc tables.
+goal: The research-swarm linker converts every table in the lead's report into a list
+  before publishing `<name>.md`, and checks that none survives, so Highlights PDFs
+  no longer contain cramped equal-width pandoc tables.
 size: small
 proposed_by: bbugyi200.athena.10g
-create_time: 2026-10-14 14:44:59
-status: wip
+status: done
 ---
 
 # Plan: Research-swarm linker replaces tables with PDF-friendly record lists
