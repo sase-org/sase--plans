@@ -1,13 +1,20 @@
 ---
 tier: tale
 title: Research-swarm linker replaces tables with PDF-friendly record lists
-goal: The research-swarm linker converts every table in the lead's report into a list
-  before publishing `<name>.md`, and checks that none survives, so Highlights PDFs
-  no longer contain cramped equal-width pandoc tables.
+goal:
+  The research-swarm linker converts every table in the lead's report into a list before
+  publishing `<name>.md`, and checks that none survives, so Highlights PDFs no longer
+  contain cramped equal-width pandoc tables.
 size: small
 proposed_by: bbugyi200.athena.10g
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.10g](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.10g.md)
+- **COMMITS:**
+  - [c787c88](https://github.com/sase-org/sase-research-artifacts/commit/c787c88cf0a27e8390a99d92d2ceaf350c91b7d5)
+    — feat(research-swarm): have the linker convert tables into PDF-friendly lists
 
 # Plan: Research-swarm linker replaces tables with PDF-friendly record lists
 
