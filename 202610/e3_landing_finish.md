@@ -1,18 +1,16 @@
 ---
 tier: tale
 size: medium
-title:
-  "E3 landing finish: Codex fallback home discovery, honest conformance, epic closeout"
-goal:
-  Codex keeps native home discovery whenever it has no active explicit delivery. The
-  scoreboard, coverage, and instructions.conformance attribute each session only to its
-  own invocation, count Muse deliveries once, see render failures, and come back clean
-  on the live corpus apart from genuine fallbacks. Epic sase-1ko is closed with its plan
-  marked done.
+title: 'E3 landing finish: Codex fallback home discovery, honest conformance, epic
+  closeout'
+goal: Codex keeps native home discovery whenever it has no active explicit delivery.
+  The scoreboard, coverage, and instructions.conformance attribute each session only
+  to its own invocation, count Muse deliveries once, see render failures, and come
+  back clean on the live corpus apart from genuine fallbacks. Epic sase-1ko is closed
+  with its plan marked done.
 proposed_by: bbugyi200.apollo.sase-1ko.land
 bead: sase-1ko
-create_time: 2026-10-14 10:07:41
-status: wip
+status: done
 ---
 
 - **PARENT:**
