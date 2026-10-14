@@ -1,18 +1,15 @@
 ---
 tier: tale
 size: medium
-title:
-  Finish the sase-1kj landing - readiness-gate repairs, read-only dismissed-index
+title: Finish the sase-1kj landing - readiness-gate repairs, read-only dismissed-index
   queries, and closeout
-goal:
-  "Epic sase-1kj lands complete: dismissed-index reads stay read-only after the move to
-  sase-core, the startup readiness gate never loses Agents updates or shows a false axe
-  STOPPED, failed ToolRun ingests are retried, the AcePage startup test is
-  deterministic, and the epic is closed with its plan marked done."
+goal: 'Epic sase-1kj lands complete: dismissed-index reads stay read-only after the
+  move to sase-core, the startup readiness gate never loses Agents updates or shows
+  a false axe STOPPED, failed ToolRun ingests are retried, the AcePage startup test
+  is deterministic, and the epic is closed with its plan marked done.'
 proposed_by: bbugyi200.athena.sase-1kj.land
 bead: sase-1kj
-create_time: 2026-10-14 00:54:50
-status: wip
+status: done
 ---
 
 - **PARENT:**
