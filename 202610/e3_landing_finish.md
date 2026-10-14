@@ -1,13 +1,14 @@
 ---
 tier: tale
 size: medium
-title: 'E3 landing finish: Codex fallback home discovery, honest conformance, epic
-  closeout'
-goal: Codex keeps native home discovery whenever it has no active explicit delivery.
-  The scoreboard, coverage, and instructions.conformance attribute each session only
-  to its own invocation, count Muse deliveries once, see render failures, and come
-  back clean on the live corpus apart from genuine fallbacks. Epic sase-1ko is closed
-  with its plan marked done.
+title:
+  "E3 landing finish: Codex fallback home discovery, honest conformance, epic closeout"
+goal:
+  Codex keeps native home discovery whenever it has no active explicit delivery. The
+  scoreboard, coverage, and instructions.conformance attribute each session only to its
+  own invocation, count Muse deliveries once, see render failures, and come back clean
+  on the live corpus apart from genuine fallbacks. Epic sase-1ko is closed with its plan
+  marked done.
 proposed_by: bbugyi200.apollo.sase-1ko.land
 bead: sase-1ko
 status: done
@@ -17,6 +18,11 @@ status: done
   [202610/e3_explicit_delivery_cutover.md](https://github.com/sase-org/sase--plans/blob/main/202610/e3_explicit_delivery_cutover.md)
 - **BEAD:**
   [sase-1ko](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ko/README.md)
+- **AGENTS:**
+  - [bbugyi200.apollo.sase-1ko.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.sase-1ko.land.md)
+- **COMMITS:**
+  - [01b43c2](https://github.com/sase-org/sase--plans/commit/01b43c257e7d65ec816036bf29ad1d4ca79340b6)
+    — docs(e3): mark explicit delivery cutover plan done
 
 # Plan: finish landing E3 (epic `sase-1ko`)
 
