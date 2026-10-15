@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the agent panel's raw-prompt header highlight placeholders too, not just the stash previews?",
+      "choices": [
+        {
+          "key": "prompt_text",
+          "label": "All highlight_prompt_text views, including the agent raw-prompt header, highlight placeholders"
+        },
+        {
+          "key": "stash",
+          "label": "Only stash, trash, and pinned-stash previews opt in via a flag; agent header stays unchanged"
+        }
+      ],
+      "default": "prompt_text",
+      "effective_default": "prompt_text",
+      "id": "scope",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "The raw agent prompt is the same authored text; one renderer keeps every view matching the editor"
+    }
+  ]
+}
