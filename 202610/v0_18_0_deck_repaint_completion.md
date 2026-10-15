@@ -1,35 +1,32 @@
 ---
 tier: epic
 title: Finish deck repaint and scroll convergence, then confirm sase 0.18.0
-goal:
-  The remaining deck state defects are repaired, and the landed repairs pass the guarded
-  release path through an installable sase 0.18.0.
+goal: The remaining deck state defects are repaired, and the landed repairs pass the
+  guarded release path through an installable sase 0.18.0.
 parent_bead: sase-1kx.5.3.3
 phases:
-  - id: deck-convergence
-    title: Repair the remaining Tool Runs and Main deck state transitions
-    size: medium
-    depends_on: []
-    description:
-      "deck-convergence: repair loaded-detail repaint and Main card/layout convergence
-      with behavioral regressions and clean visual proof."
-  - id: publication-proof
-    title: Observe the committed repairs through guarded publication
-    size: small
-    depends_on:
-      - deck-convergence
-    description:
-      "publication-proof: make no edits, observe CI and publication on the repair
-      commit, and always close with an honest release verdict."
+- id: deck-convergence
+  title: Repair the remaining Tool Runs and Main deck state transitions
+  size: medium
+  depends_on: []
+  description: 'deck-convergence: repair loaded-detail repaint and Main card/layout
+    convergence with behavioral regressions and clean visual proof.'
+- id: publication-proof
+  title: Observe the committed repairs through guarded publication
+  size: small
+  depends_on:
+  - deck-convergence
+  description: 'publication-proof: make no edits, observe CI and publication on the
+    repair commit, and always close with an honest release verdict.'
 proposed_by: bbugyi200.athena.sase-1kx.5.3.3.land
 create_time: 2026-10-15 05:53:51
 status: wip
+bead_id: sase-1kx.5.3.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_deck_repaint_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_deck_repaint_completion.md)
-- **PARENT:**
-  [202610/v0_18_0_capture_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_capture_convergence.md)
+- **PROMPT:** [prompts/202610/v0_18_0_deck_repaint_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_deck_repaint_completion.md)
+- **PARENT:** [202610/v0_18_0_capture_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_capture_convergence.md)
+- **BEAD:** [sase-1kx.5.3.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kx/sase-1kx.5.3.3.3.md)
 
 # Finish the remaining deck and release acceptance
 
