@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the smoke derive its core version from sase 0.18.0's own core floor instead of hard-coding it?",
+      "choices": [
+        {
+          "key": "derived",
+          "label": "lowest-direct resolve, assert core equals sase's floor; survives the core-window ratchet"
+        },
+        {
+          "key": "pin",
+          "label": "Hard-code sase-core-rs==0.40.0; explicit, but stale if sase ratchets before 0.18.0 ships"
+        }
+      ],
+      "default": "derived",
+      "effective_default": "derived",
+      "id": "core_pairing",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "sase owns the core window and has already ratcheted it from 0.34.71 to 0.40.0"
+    },
+    {
+      "ask": "Should the coder close bug bead sase-1ei once the fix lands?",
+      "choices": [
+        {
+          "key": "close",
+          "label": "Close as done; publish then waits only on sase 0.18.0 (sase-1kx) plus a release-PR merge"
+        },
+        {
+          "key": "keep",
+          "label": "Leave it ready with a progress note until a 0.3.x release reaches PyPI"
+        }
+      ],
+      "default": "close",
+      "effective_default": "close",
+      "id": "bead",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "the defect it names is fixed; the remaining wait is already tracked by sase-1kx"
+    }
+  ]
+}
