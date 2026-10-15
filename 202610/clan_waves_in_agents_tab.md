@@ -1,106 +1,99 @@
 ---
 tier: epic
 title: Clan waves in the Agents tab
-goal: "Every agent clan with two or more dependency layers (epics, research swarms,
-  toobig chains, custom clans) reads top to bottom in execution order. The Agents tab
-  derives clan waves from declared waits in sase-core and shows them through a zero-row
-  wave gutter, per-wave progress pips, a live WAVES ladder, and a wave-divided JUMP
-  legend. One-wave clans look exactly as they do today.
+goal: 'Every agent clan with two or more dependency layers (epics, research swarms,
+  toobig chains, custom clans) reads top to bottom in execution order. The Agents
+  tab derives clan waves from declared waits in sase-core and shows them through a
+  zero-row wave gutter, per-wave progress pips, a live WAVES ladder, and a wave-divided
+  JUMP legend. One-wave clans look exactly as they do today.
 
-  "
+  '
 decisions:
   glossary_agent_clan:
-    ask:
-      Correct the glossary's Agent Clan definition, which says clan members run in
-      parallel?
+    ask: Correct the glossary's Agent Clan definition, which says clan members run
+      in parallel?
     memory:
-      - glossary:agent-clan
+    - glossary:agent-clan
     default: true
-    corrects:
-      An agent clan is a named, rootless container for agents that run in parallel.
+    corrects: An agent clan is a named, rootless container for agents that run in
+      parallel.
     answer: true
   glossary_clan_wave:
-    ask:
-      Add a Clan Wave glossary term for the derived dependency layers the TUI now shows?
+    ask: Add a Clan Wave glossary term for the derived dependency layers the TUI now
+      shows?
     memory:
-      - glossary:clan-wave
+    - glossary:clan-wave
     default: true
-    requested:
-      I agree with all of the requirements recommended in that research file (but keep
-      in mind that you are responsible for planning and splitting up this work
-      appropriately).
+    requested: I agree with all of the requirements recommended in that research file
+      (but keep in mind that you are responsible for planning and splitting up this
+      work appropriately).
     answer: true
 phases:
-  - id: core
-    title: sase-core clan wave layering and binding
-    depends_on: []
-    size: medium
-    description:
-      "core: extract a total dependency-layering kernel from the epic work planner and
-      add project_clan_waves with its edge rules, wire types, sase_core_rs binding, and
-      Rust tests on real clan shapes."
-  - id: model
-    title: Python facade and clan wave model adapter
-    depends_on:
-      - core
-    size: medium
-    description:
-      "model: ratchet the core pin, add the Python facade, and attach memoized wave
-      layouts plus folded wave states to clan containers and member rows in
-      project_clan_tree, with no visible change yet."
-  - id: list
-    title: Wave order and wave gutter in the agent list
-    depends_on:
-      - model
-    size: medium
-    description:
-      "list: order layered clans by (wave, launch), draw the five-cell wave gutter and
-      lanes, switch the clan patch guard and roster numbering to wave order, and update
-      docs, help, and goldens."
-  - id: pips
-    title: Wave pips on clan rows, tribe rosters, and the clan header
-    depends_on:
-      - list
-    size: small
-    description:
-      "pips: add the shared wave-pip renderer with its 12-wave overflow form and show it
-      on clan rows, tribe Summary clan units, and the compact clan identity header."
-  - id: ladder
-    title: Live WAVES ladder in the clan Summary card
-    depends_on:
-      - pips
-    size: medium
-    description:
-      "ladder: add the foldable in-memory WAVES section at the top of the clan Summary
-      card, sharing the JUMP legend's cell builder, with fold-level detail and
-      hint-cache coverage."
-  - id: jump
-    title: Wave-divided JUMP legend and roster group labels
-    depends_on:
-      - ladder
-    size: medium
-    description:
-      "jump: draw dim wave dividers and a waves title suffix in the collapsed JUMP
-      legend and label wave groups in the expanded roster, keeping the packer's fit and
-      overflow rules."
-  - id: verify
-    title: Live verification, golden sweep, and glossary
-    depends_on:
-      - jump
-    size: small
-    description:
-      "verify: review live screenshots of real clans, run the full visual golden sweep
-      and perf checks, fix polish issues, apply the glossary decisions, and record v2
-      follow-ups."
+- id: core
+  title: sase-core clan wave layering and binding
+  depends_on: []
+  size: medium
+  description: 'core: extract a total dependency-layering kernel from the epic work
+    planner and add project_clan_waves with its edge rules, wire types, sase_core_rs
+    binding, and Rust tests on real clan shapes.'
+- id: model
+  title: Python facade and clan wave model adapter
+  depends_on:
+  - core
+  size: medium
+  description: 'model: ratchet the core pin, add the Python facade, and attach memoized
+    wave layouts plus folded wave states to clan containers and member rows in project_clan_tree,
+    with no visible change yet.'
+- id: list
+  title: Wave order and wave gutter in the agent list
+  depends_on:
+  - model
+  size: medium
+  description: 'list: order layered clans by (wave, launch), draw the five-cell wave
+    gutter and lanes, switch the clan patch guard and roster numbering to wave order,
+    and update docs, help, and goldens.'
+- id: pips
+  title: Wave pips on clan rows, tribe rosters, and the clan header
+  depends_on:
+  - list
+  size: small
+  description: 'pips: add the shared wave-pip renderer with its 12-wave overflow form
+    and show it on clan rows, tribe Summary clan units, and the compact clan identity
+    header.'
+- id: ladder
+  title: Live WAVES ladder in the clan Summary card
+  depends_on:
+  - pips
+  size: medium
+  description: 'ladder: add the foldable in-memory WAVES section at the top of the
+    clan Summary card, sharing the JUMP legend''s cell builder, with fold-level detail
+    and hint-cache coverage.'
+- id: jump
+  title: Wave-divided JUMP legend and roster group labels
+  depends_on:
+  - ladder
+  size: medium
+  description: 'jump: draw dim wave dividers and a waves title suffix in the collapsed
+    JUMP legend and label wave groups in the expanded roster, keeping the packer''s
+    fit and overflow rules.'
+- id: verify
+  title: Live verification, golden sweep, and glossary
+  depends_on:
+  - jump
+  size: small
+  description: 'verify: review live screenshots of real clans, run the full visual
+    golden sweep and perf checks, fix polish issues, apply the glossary decisions,
+    and record v2 follow-ups.'
 proposed_by: bbugyi200.athena.research.4j.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-15 15:02:45
 status: wip
+bead_id: sase-1lc
 ---
 
-- **PROMPT:**
-  [prompts/202610/clan_waves_in_agents_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/clan_waves_in_agents_tab.md)
+- **PROMPT:** [prompts/202610/clan_waves_in_agents_tab.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/clan_waves_in_agents_tab.md)
+- **BEAD:** [sase-1lc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lc/README.md)
 
 # Plan: Clan waves in the Agents tab
 
