@@ -1,17 +1,21 @@
 ---
 tier: tale
 title: Unblock sase-research-artifacts Publish
-goal: The plugin's Publish lane targets the real sase 0.18.0 floor and one shared
-  wheel smoke, so it publishes once sase 0.18.0 ships.
+goal:
+  The plugin's Publish lane targets the real sase 0.18.0 floor and one shared wheel
+  smoke, so it publishes once sase 0.18.0 ships.
 size: medium
 decisions:
   core_pairing:
-    ask: Should the smoke derive its core version from sase 0.18.0's own core floor
-      instead of hard-coding it?
+    ask:
+      Should the smoke derive its core version from sase 0.18.0's own core floor instead
+      of hard-coding it?
     choices:
-      derived: lowest-direct resolve, assert core equals sase's floor; survives the
-        core-window ratchet
-      pin: Hard-code sase-core-rs==0.40.0; explicit, but stale if sase ratchets before
+      derived:
+        lowest-direct resolve, assert core equals sase's floor; survives the core-window
+        ratchet
+      pin:
+        Hard-code sase-core-rs==0.40.0; explicit, but stale if sase ratchets before
         0.18.0 ships
     default: derived
     why: sase owns the core window and has already ratcheted it from 0.34.71 to 0.40.0
@@ -19,8 +23,9 @@ decisions:
   bead:
     ask: Should the coder close bug bead sase-1ei once the fix lands?
     choices:
-      close: Close as done; publish then waits only on sase 0.18.0 (sase-1kx) plus
-        a release-PR merge
+      close:
+        Close as done; publish then waits only on sase 0.18.0 (sase-1kx) plus a
+        release-PR merge
       keep: Leave it ready with a progress note until a 0.3.x release reaches PyPI
     default: close
     why: the defect it names is fixed; the remaining wait is already tracked by sase-1kx
@@ -29,6 +34,12 @@ proposed_by: bbugyi200.apollo.7t
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.apollo.7t](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.apollo.7t.md)
+- **COMMITS:**
+  - [1762395](https://github.com/sase-org/sase-research-artifacts/commit/17623956c379f580ad1931c927df0093d51feb91)
+    — fix(release): retarget published-minimum smoke to sase 0.18.0
 
 # Plan: Unblock sase-research-artifacts Publish: real sase floor, derived core pairing, one shared wheel smoke
 
