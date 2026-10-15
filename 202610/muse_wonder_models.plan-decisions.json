@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should Muse's large tier default move from muse-spark-1.3 to muse-wonder-1.0?",
+      "choices": [
+        {
+          "key": "wonder",
+          "label": "Unpinned Muse launches run Wonder, Muse Code's default; API tokens cost ~3-5x Spark's"
+        },
+        {
+          "key": "spark",
+          "label": "Both tiers stay on muse-spark-1.3; Wonder runs only when named or picked by alias"
+        }
+      ],
+      "default": "wonder",
+      "effective_default": "wonder",
+      "id": "large_tier",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Wonder is on every Muse Code plan and the API; SASE large tiers follow each flagship"
+    },
+    {
+      "ask": "Should the shipped @large size alias also load-balance onto Muse Wonder?",
+      "choices": [
+        {
+          "key": "none",
+          "label": "All size-alias pools stay as they are; @large never picks Wonder on its own"
+        },
+        {
+          "key": "wonder",
+          "label": "Add muse/muse-wonder-1.0@xhigh to @large; about 1/4 of @large launches run Wonder"
+        },
+        {
+          "key": "wonder_contributor",
+          "label": "Add muse/muse-wonder-1.0-contributor@xhigh to @large; cheaper, but Meta trains on it"
+        }
+      ],
+      "default": "none",
+      "effective_default": "none",
+      "id": "alias_pools",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Wonder is a days-old preview with self-reported benchmarks; try it by name first"
+    }
+  ]
+}
