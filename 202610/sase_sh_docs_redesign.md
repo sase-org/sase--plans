@@ -1,261 +1,235 @@
 ---
 tier: epic
-title: "sase.sh: a small Diátaxis-typed Guide in front of a generated Reference"
-goal: "A newcomer on sase.sh meets one walked path: a one-screen homepage, two tested
+title: 'sase.sh: a small Diátaxis-typed Guide in front of a generated Reference'
+goal: 'A newcomer on sase.sh meets one walked path: a one-screen homepage, two tested
   tutorials, about eight concept pages, and about fifteen goal-titled guides (~30K
   words). These sit in front of a lookup-sized Reference generated from the code that
   owns each fact. A lint-enforced documentation contract keeps the site from growing
   back.
 
-  "
+  '
 decisions:
   pdf_scope:
     ask: Which handbook PDF should sase.sh publish after the Guide/Reference split?
     choices:
-      curate:
-        Same URL, Guide tier plus the launch essay; Reference stays web-only; much
-        faster deploys
-      retire:
-        Drop the PDF; the handbook URL redirects home and the PDF toolchain is deleted
-      full:
-        Keep the full-corpus PDF; deploys stay ~9 min and the 22 MiB gate likely
+      curate: Same URL, Guide tier plus the launch essay; Reference stays web-only;
+        much faster deploys
+      retire: Drop the PDF; the handbook URL redirects home and the PDF toolchain
+        is deleted
+      full: Keep the full-corpus PDF; deploys stay ~9 min and the 22 MiB gate likely
         re-breaches
     default: curate
-    why:
-      The full corpus nears the asset cap, dominates deploy time, and has no Zensical
+    why: The full corpus nears the asset cap, dominates deploy time, and has no Zensical
       path
     answer: curate
   install_command:
-    ask:
-      Should documented install commands carry a version floor so a broken PyPI resolve
-      fails loudly?
+    ask: Should documented install commands carry a version floor so a broken PyPI
+      resolve fails loudly?
     choices:
-      floor:
-        Docs say uv tool install "sase>=0.18"; a bad resolve errors instead of
+      floor: Docs say uv tool install "sase>=0.18"; a bad resolve errors instead of
         installing 0.1.0
-      bare:
-        Docs say uv tool install sase; right only once 0.18.0 is on PyPI and the smoke
-        stays green
+      bare: Docs say uv tool install sase; right only once 0.18.0 is on PyPI and the
+        smoke stays green
     default: floor
     why: Truthful whether or not 0.18.0 (sase-1c1.14) ships before the new front door
     answer: floor
   docs_routing_note:
-    ask:
-      Add a docs_writing.md reference memory note that routes feature agents' doc
+    ask: Add a docs_writing.md reference memory note that routes feature agents' doc
       changes to the right tier?
     memory:
-      - docs_writing.md
+    - docs_writing.md
     default: true
-    requested:
-      I agree with all of the requirements recommended in that research file (but keep
-      in mind that you are responsible for planning and splitting up this work
-      appropriately).
+    requested: I agree with all of the requirements recommended in that research file
+      (but keep in mind that you are responsible for planning and splitting up this
+      work appropriately).
     answer: true
   docs_pointer_notes:
-    ask:
-      Update the docs/ path pointers in four memory notes when the decompose phase moves
-      those pages?
+    ask: Update the docs/ path pointers in four memory notes when the decompose phase
+      moves those pages?
     memory:
-      - tui_perf.md
-      - dispatch.md
-      - macros.md
-      - cli_rules.md
+    - tui_perf.md
+    - dispatch.md
+    - macros.md
+    - cli_rules.md
     default: true
     corrects: Command plugins section in `docs/plugins.md`.
     answer: true
 phases:
-  - id: nav-tabs
-    title: Six tabs over the existing pages, site UX features, analytics hook
-    depends_on: []
-    size: small
-    description:
-      "nav-tabs: turn on Material tabs, breadcrumbs, and footer navigation, regroup
-      today's pages into the six tabs without moving files, and add the cookie-less
-      analytics hook."
-  - id: links
-    title: Strict link validation, URL contract test, and docs checks in the gates
-    depends_on: []
-    size: medium
-    description:
-      "links: add MkDocs validation, a sase.sh URL and anchor contract test, fix the two
-      404 onboarding links, and run the docs build in Master Gate and in just check."
-  - id: applicability
-    title: Declare which version the docs describe and smoke the documented install
-    depends_on: []
-    size: small
-    description:
-      "applicability: add a generated latest-release line to the site header,
-      single-source the documented install command, and schedule a clean PyPI install
-      smoke."
-  - id: pdf-handbook
-    title: Execute the handbook PDF scope decision
-    depends_on: []
-    size: small
-    description:
-      "pdf-handbook: make the PDF build follow pdf_scope, selecting pages by directory
-      so later phases need no PDF edits."
-  - id: contract
-    title: Documentation contract lint, templates, and the Writing docs page
-    depends_on:
-      - nav-tabs
-    size: medium
-    description:
-      "contract: add tools/check_docs (directory typing, frontmatter, word budgets with
-      a shrinking legacy allowlist, Guide hygiene, test-pin and portability rules), page
-      templates, and the Contribute hub and Writing docs page."
-  - id: routing
-    title: Change-to-docs routing rule for agents and a constrained refresh_docs chop
-    depends_on:
-      - contract
-    size: small
-    description:
-      "routing: add the docs_writing.md reference memory note and constrain the
-      refresh_docs chop prompts to page types, budgets, and the Guide tier's fix-only
-      rule."
-  - id: moves
-    title: Page-move machinery, docs map, and llms.txt
-    depends_on:
-      - links
-      - contract
-    size: medium
-    description:
-      "moves: add docs/_meta/moves.yml as the single source for redirects and anchor
-      stubs, the tools/render_docs framework, tools/docs_split, and a generated docs map
-      plus llms.txt; pilot by taking Instruction Inventory off the site."
-  - id: glossary
-    title: Generated glossary, design-decision roster, tooltips, and the Reference hub
-    depends_on:
-      - moves
-    size: medium
-    description:
-      "glossary: generate the glossary and design-decision pages from the memory webs,
-      add hover tooltips for about 15 core terms, and create the reference/index.md hub."
-  - id: start
-    title: Get started tier with two tutorials
-    depends_on:
-      - moves
-      - applicability
-    size: medium
-    description:
-      "start: write start/index, install, first-run, and first-change from
-      getting_started.md, then move the old page and its draft blog duplicate behind
-      redirects."
-  - id: tutorial-tests
-    title: Executable tutorial tests on fakey
-    depends_on:
-      - start
-    size: medium
-    description:
-      "tutorial-tests: run every marked shell block in start/ against fakey in a
-      temporary HOME, and add the runner to the scheduled Full CI lane."
-  - id: concepts-model
-    title: How SASE works plus the agents, work-units, and landing concepts
-    depends_on:
-      - glossary
-    size: medium
-    description:
-      "concepts-model: write concepts/index.md (one diagram, seven nouns) plus agents,
-      work-units, and landing concept hubs, and move architecture.md's internals to
-      Contribute."
-  - id: concepts-system
-    title: Prompts, memory, automation, and providers concepts
-    depends_on:
-      - concepts-model
-    size: medium
-    description:
-      "concepts-system: write the remaining four concept hubs, each ending in Do it and
-      Look it up links."
-  - id: guides-setup
-    title: Guides hub plus the Set up and Fix problems guides
-    depends_on:
-      - start
-      - concepts-model
-    size: medium
-    description:
-      "guides-setup: create guides/index.md and seven goal-titled guides, folding
-      troubleshooting/* and agent_auto_restart.md into them."
-  - id: guides-daily
-    title: Daily work guides
-    depends_on:
-      - guides-setup
-      - concepts-system
-    size: medium
-    description:
-      "guides-daily: write the five daily-work guides, extracting how-to narrative from
-      ace.md, macros.md, prompt.md, and related pages."
-  - id: guides-automate
-    title: Plan and automate guides
-    depends_on:
-      - guides-setup
-      - concepts-system
-    size: medium
-    description:
-      "guides-automate: write the three plan-and-automate guides from sdd.md, beads.md,
-      axe.md, and mentors.md."
-  - id: cli-registry
-    title: Generated CLI reference
-    depends_on:
-      - glossary
-    size: medium
-    description:
-      "cli-registry: generate one reference page per command group from the argparse
-      tree and replace cli.md's hand-written tables with links."
-  - id: config-registry
-    title: Generated configuration reference
-    depends_on:
-      - glossary
-      - guides-setup
-    size: medium
-    description:
-      "config-registry: generate one reference page per config key family from
-      sase.schema.json and default_config.yml, and delete the configuration.md text it
-      duplicates."
-  - id: keymap-directives
-    title: Generated TUI keymap, directive, and macro discovery-order references
-    depends_on:
-      - glossary
-      - guides-daily
-    size: medium
-    description:
-      "keymap-directives: generate the TUI keymap tables, the directive catalog, and
-      macro discovery order, deleting the hand-written rows in ace.md and macros.md
-      (fixes sase-1la)."
-  - id: homepage
-    title: One-screen homepage, front-door link retargeting, and reader-testing kit
-    depends_on:
-      - start
-      - concepts-system
-      - guides-setup
-      - applicability
-    size: medium
-    description:
-      "homepage: rebuild index.md around one primary CTA, install, one demo, four
-      capability cards, and four doors; retarget README and TUI onboarding links; add
-      the observed-reader kit."
-  - id: decompose
-    title: Decompose the monoliths and empty the legacy allowlist
-    depends_on:
-      - routing
-      - tutorial-tests
-      - guides-automate
-      - cli-registry
-      - config-registry
-      - keymap-directives
-      - homepage
-    size: xlarge
-    description:
-      "decompose: author and run a sub-epic that moves every remaining root page into
-      reference/ or contribute/ with move-only commits, redirects, and anchor stubs;
-      strips history into upgrading.md; and updates memory pointers."
+- id: nav-tabs
+  title: Six tabs over the existing pages, site UX features, analytics hook
+  depends_on: []
+  size: small
+  description: 'nav-tabs: turn on Material tabs, breadcrumbs, and footer navigation,
+    regroup today''s pages into the six tabs without moving files, and add the cookie-less
+    analytics hook.'
+- id: links
+  title: Strict link validation, URL contract test, and docs checks in the gates
+  depends_on: []
+  size: medium
+  description: 'links: add MkDocs validation, a sase.sh URL and anchor contract test,
+    fix the two 404 onboarding links, and run the docs build in Master Gate and in
+    just check.'
+- id: applicability
+  title: Declare which version the docs describe and smoke the documented install
+  depends_on: []
+  size: small
+  description: 'applicability: add a generated latest-release line to the site header,
+    single-source the documented install command, and schedule a clean PyPI install
+    smoke.'
+- id: pdf-handbook
+  title: Execute the handbook PDF scope decision
+  depends_on: []
+  size: small
+  description: 'pdf-handbook: make the PDF build follow pdf_scope, selecting pages
+    by directory so later phases need no PDF edits.'
+- id: contract
+  title: Documentation contract lint, templates, and the Writing docs page
+  depends_on:
+  - nav-tabs
+  size: medium
+  description: 'contract: add tools/check_docs (directory typing, frontmatter, word
+    budgets with a shrinking legacy allowlist, Guide hygiene, test-pin and portability
+    rules), page templates, and the Contribute hub and Writing docs page.'
+- id: routing
+  title: Change-to-docs routing rule for agents and a constrained refresh_docs chop
+  depends_on:
+  - contract
+  size: small
+  description: 'routing: add the docs_writing.md reference memory note and constrain
+    the refresh_docs chop prompts to page types, budgets, and the Guide tier''s fix-only
+    rule.'
+- id: moves
+  title: Page-move machinery, docs map, and llms.txt
+  depends_on:
+  - links
+  - contract
+  size: medium
+  description: 'moves: add docs/_meta/moves.yml as the single source for redirects
+    and anchor stubs, the tools/render_docs framework, tools/docs_split, and a generated
+    docs map plus llms.txt; pilot by taking Instruction Inventory off the site.'
+- id: glossary
+  title: Generated glossary, design-decision roster, tooltips, and the Reference hub
+  depends_on:
+  - moves
+  size: medium
+  description: 'glossary: generate the glossary and design-decision pages from the
+    memory webs, add hover tooltips for about 15 core terms, and create the reference/index.md
+    hub.'
+- id: start
+  title: Get started tier with two tutorials
+  depends_on:
+  - moves
+  - applicability
+  size: medium
+  description: 'start: write start/index, install, first-run, and first-change from
+    getting_started.md, then move the old page and its draft blog duplicate behind
+    redirects.'
+- id: tutorial-tests
+  title: Executable tutorial tests on fakey
+  depends_on:
+  - start
+  size: medium
+  description: 'tutorial-tests: run every marked shell block in start/ against fakey
+    in a temporary HOME, and add the runner to the scheduled Full CI lane.'
+- id: concepts-model
+  title: How SASE works plus the agents, work-units, and landing concepts
+  depends_on:
+  - glossary
+  size: medium
+  description: 'concepts-model: write concepts/index.md (one diagram, seven nouns)
+    plus agents, work-units, and landing concept hubs, and move architecture.md''s
+    internals to Contribute.'
+- id: concepts-system
+  title: Prompts, memory, automation, and providers concepts
+  depends_on:
+  - concepts-model
+  size: medium
+  description: 'concepts-system: write the remaining four concept hubs, each ending
+    in Do it and Look it up links.'
+- id: guides-setup
+  title: Guides hub plus the Set up and Fix problems guides
+  depends_on:
+  - start
+  - concepts-model
+  size: medium
+  description: 'guides-setup: create guides/index.md and seven goal-titled guides,
+    folding troubleshooting/* and agent_auto_restart.md into them.'
+- id: guides-daily
+  title: Daily work guides
+  depends_on:
+  - guides-setup
+  - concepts-system
+  size: medium
+  description: 'guides-daily: write the five daily-work guides, extracting how-to
+    narrative from ace.md, macros.md, prompt.md, and related pages.'
+- id: guides-automate
+  title: Plan and automate guides
+  depends_on:
+  - guides-setup
+  - concepts-system
+  size: medium
+  description: 'guides-automate: write the three plan-and-automate guides from sdd.md,
+    beads.md, axe.md, and mentors.md.'
+- id: cli-registry
+  title: Generated CLI reference
+  depends_on:
+  - glossary
+  size: medium
+  description: 'cli-registry: generate one reference page per command group from the
+    argparse tree and replace cli.md''s hand-written tables with links.'
+- id: config-registry
+  title: Generated configuration reference
+  depends_on:
+  - glossary
+  - guides-setup
+  size: medium
+  description: 'config-registry: generate one reference page per config key family
+    from sase.schema.json and default_config.yml, and delete the configuration.md
+    text it duplicates.'
+- id: keymap-directives
+  title: Generated TUI keymap, directive, and macro discovery-order references
+  depends_on:
+  - glossary
+  - guides-daily
+  size: medium
+  description: 'keymap-directives: generate the TUI keymap tables, the directive catalog,
+    and macro discovery order, deleting the hand-written rows in ace.md and macros.md
+    (fixes sase-1la).'
+- id: homepage
+  title: One-screen homepage, front-door link retargeting, and reader-testing kit
+  depends_on:
+  - start
+  - concepts-system
+  - guides-setup
+  - applicability
+  size: medium
+  description: 'homepage: rebuild index.md around one primary CTA, install, one demo,
+    four capability cards, and four doors; retarget README and TUI onboarding links;
+    add the observed-reader kit.'
+- id: decompose
+  title: Decompose the monoliths and empty the legacy allowlist
+  depends_on:
+  - routing
+  - tutorial-tests
+  - guides-automate
+  - cli-registry
+  - config-registry
+  - keymap-directives
+  - homepage
+  size: xlarge
+  description: 'decompose: author and run a sub-epic that moves every remaining root
+    page into reference/ or contribute/ with move-only commits, redirects, and anchor
+    stubs; strips history into upgrading.md; and updates memory pointers.'
 proposed_by: bbugyi200.athena.research.4l.linker.w0
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-15 18:11:07
 status: wip
+bead_id: sase-1le
 ---
 
-- **PROMPT:**
-  [prompts/202610/sase_sh_docs_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_sh_docs_redesign.md)
+- **PROMPT:** [prompts/202610/sase_sh_docs_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_sh_docs_redesign.md)
+- **BEAD:** [sase-1le](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1le/README.md)
 
 # sase.sh: a small Diátaxis-typed Guide in front of a generated Reference
 
