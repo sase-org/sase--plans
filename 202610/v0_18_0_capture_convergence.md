@@ -1,36 +1,34 @@
 ---
 tier: epic
 title: Finish the remaining capture races and confirm sase 0.18.0 publication
-goal:
-  The remaining visual capture defects are repaired, the full visual lane is clean, and
-  the committed repairs ship in an installable sase 0.18.0 through the guarded release
-  path.
+goal: The remaining visual capture defects are repaired, the full visual lane is clean,
+  and the committed repairs ship in an installable sase 0.18.0 through the guarded
+  release path.
 parent_bead: sase-1kx.5.3
 phases:
-  - id: capture-convergence
-    title: Finish the five observed capture states and prove the full visual lane
-    depends_on: []
-    size: medium
-    description:
-      "capture-convergence: settle the visible deck and top-bar state, isolate Logs
-      telemetry, and await complete Tool Runs detail; verify the repaired fixtures."
-  - id: publication-proof
-    title: Observe the committed repairs through guarded publication
-    depends_on:
-      - capture-convergence
-    size: small
-    description:
-      "publication-proof: make no file changes, observe CI and publication on the landed
-      repair commit, and always close this phase with an honest release verdict."
+- id: capture-convergence
+  title: Finish the five observed capture states and prove the full visual lane
+  depends_on: []
+  size: medium
+  description: 'capture-convergence: settle the visible deck and top-bar state, isolate
+    Logs telemetry, and await complete Tool Runs detail; verify the repaired fixtures.'
+- id: publication-proof
+  title: Observe the committed repairs through guarded publication
+  depends_on:
+  - capture-convergence
+  size: small
+  description: 'publication-proof: make no file changes, observe CI and publication
+    on the landed repair commit, and always close this phase with an honest release
+    verdict.'
 proposed_by: bbugyi200.athena.sase-1kx.5.3.land
 create_time: 2026-10-14 22:37:08
 status: wip
+bead_id: sase-1kx.5.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_capture_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_capture_convergence.md)
-- **PARENT:**
-  [202610/v0_18_0_visual_release_completion.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_visual_release_completion.md)
+- **PROMPT:** [prompts/202610/v0_18_0_capture_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_capture_convergence.md)
+- **PARENT:** [202610/v0_18_0_visual_release_completion.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_visual_release_completion.md)
+- **BEAD:** [sase-1kx.5.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1kx/sase-1kx.5.3.3.md)
 
 # Finish the remaining release acceptance
 
