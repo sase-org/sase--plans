@@ -1,27 +1,33 @@
 ---
 tier: tale
 title: Make v resolve logical plan references reliably
-goal: Picking a `v` hint on any `plan:` reference opens the real archived plan, with
-  no new render-path I/O.
+goal:
+  Picking a `v` hint on any `plan:` reference opens the real archived plan, with no new
+  render-path I/O.
 size: medium
 decisions:
   agent_text:
-    ask: Should ordinary agent prompt/reply text also hint `plan:` refs as whole tokens
+    ask:
+      Should ordinary agent prompt/reply text also hint `plan:` refs as whole tokens
       resolved on pick?
     choices:
-      include: Marker sits before `plan:` in all agent bodies and opens the plan;
-        may regen a hint golden
-      clan_only: Only clan/session text changes; agent bodies keep splitting `plan:`
-        refs into dead paths
+      include:
+        Marker sits before `plan:` in all agent bodies and opens the plan; may regen a
+        hint golden
+      clan_only:
+        Only clan/session text changes; agent bodies keep splitting `plan:` refs into
+        dead paths
     default: include
     why: Same defect class and mechanism, with no added render-path cost
     answer: include
   prompt_repair:
-    ask: Should a missing archived-prompt hint be retried in the project's agents
-      sidecar on pick?
+    ask:
+      Should a missing archived-prompt hint be retried in the project's agents sidecar
+      on pick?
     choices:
-      repair: Summary Prompt row opens even before clan enrichment lands; one off-thread
-        stat on a miss
+      repair:
+        Summary Prompt row opens even before clan enrichment lands; one off-thread stat
+        on a miss
       skip: Prompt row stays dead until enrichment lands and hints are re-published
     default: repair
     why: Second row of the same summary block, with the same race; tiny fix
@@ -30,6 +36,12 @@ proposed_by: bbugyi200.athena.10s
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.10s](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.10s.md)
+- **COMMITS:**
+  - [a9701c3](https://github.com/sase-org/sase/commit/a9701c36e6cd7f251f3d0b1308eaf22156a12c7e)
+    — feat(ace): resolve logical plan hint targets
 
 # Plan: Make `v` resolve logical `plan:` references reliably
 
