@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix closed-bead submission time and finish sase-1li landing
-goal:
-  Launch claims use the real submission instant, preserve queued-close refusal, and epic
-  sase-1li is verified and closed with its original plan marked done.
+goal: Launch claims use the real submission instant, preserve queued-close refusal,
+  and epic sase-1li is verified and closed with its original plan marked done.
 size: medium
 proposed_by: bbugyi200.athena.sase-1li.land
 bead: sase-1li
-create_time: 2026-10-16 18:23:13
-status: wip
+status: done
 ---
 
 - **PARENT:**
