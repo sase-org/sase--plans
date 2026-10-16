@@ -1,139 +1,122 @@
 ---
 tier: epic
-title:
-  "E4 (instruction migration): Keep a readable AGENTS.md and retire redundant
-  instruction copies"
-goal: "The sase repo keeps one full, CI-checked AGENTS.md (plus its CLAUDE.md copy) that
-  people, GitHub readers, and non-SASE tools can read. That file names where it comes
-  from and how to see an agent's real bundle. The GEMINI.md, QWEN.md, and OPENCODE.md
-  copies are retired, and the nested guides reach every provider. The TUI opens the
-  bundle an agent actually received. A new decision record makes this the durable shape
-  of E4.
+title: 'E4 (instruction migration): Keep a readable AGENTS.md and retire redundant
+  instruction copies'
+goal: 'The sase repo keeps one full, CI-checked AGENTS.md (plus its CLAUDE.md copy)
+  that people, GitHub readers, and non-SASE tools can read. That file names where
+  it comes from and how to see an agent''s real bundle. The GEMINI.md, QWEN.md, and
+  OPENCODE.md copies are retired, and the nested guides reach every provider. The
+  TUI opens the bundle an agent actually received. A new decision record makes this
+  the durable shape of E4.
 
-  "
+  '
 decisions:
   nested_guides:
-    ask:
-      Should the hand-written tools/, src/sase/ace/, and demos/tapes/ guides move into
-      memory reference notes?
+    ask: Should the hand-written tools/, src/sase/ace/, and demos/tapes/ guides move
+      into memory reference notes?
     choices:
-      fold:
-        Every provider sees their rules through the bundle; six nested files go and the
-        repo tracks 2
-      keep:
-        The nested guides stay as files; Codex, Grok, and Muse still never see them; the
-        repo tracks 8
+      fold: Every provider sees their rules through the bundle; six nested files go
+        and the repo tracks 2
+      keep: The nested guides stay as files; Codex, Grok, and Muse still never see
+        them; the repo tracks 8
     default: fold
     why: About 78% of runs (Codex, Grok, Muse) never load the nested files today
     answer: fold
   files_deck:
-    ask:
-      Should E4 also list each run's bundles in the Agents-tab Files deck and add the
-      inspection commands to help?
+    ask: Should E4 also list each run's bundles in the Agents-tab Files deck and add
+      the inspection commands to help?
     default: true
-    why:
-      It is the cheap in-product transparency fix the research recommends, on the same
-      helper
+    why: It is the cheap in-product transparency fix the research recommends, on the
+      same helper
     answer: true
   memory_decision_records:
-    ask:
-      Should E4 add the readable-AGENTS.md decision record and mark
-      instructions-per-invocation superseded in part?
+    ask: Should E4 add the readable-AGENTS.md decision record and mark instructions-per-invocation
+      superseded in part?
     memory:
-      - decisions:readable-agents-md
-      - decisions:instructions-per-invocation
+    - decisions:readable-agents-md
+    - decisions:instructions-per-invocation
     corrects: Native files remain committed until E4/E5
     default: true
     answer: true
   memory_vocabulary:
-    ask:
-      Should E4 rewrite the agent-instruction-file glossary term and add Instruction
+    ask: Should E4 rewrite the agent-instruction-file glossary term and add Instruction
       Bundle and Manifest terms?
     memory:
-      - glossary:agent-instruction-file
-      - glossary:instruction-bundle
-      - glossary:instruction-manifest
-    corrects:
-      "sase supports one agent instruction file per supported agent CLI (ex: `CLAUDE.md`
-      for claude, `GEMINI.md` for antigravity, etc...)"
+    - glossary:agent-instruction-file
+    - glossary:instruction-bundle
+    - glossary:instruction-manifest
+    corrects: 'sase supports one agent instruction file per supported agent CLI (ex:
+      `CLAUDE.md` for claude, `GEMINI.md` for antigravity, etc...)'
     default: true
     answer: true
   memory_nested_notes:
-    ask:
-      If nested_guides is fold, should E4 add the tools, ace, and demos reference notes
-      and merge Symvision text?
+    ask: If nested_guides is fold, should E4 add the tools, ace, and demos reference
+      notes and merge Symvision text?
     memory:
-      - tools.md
-      - ace.md
-      - demos.md
-      - symvision.md
-    requested:
-      Can you help me implement the E4 epic for the "Memory-Built Instruction" work that
-      is described in the memory_built_instruction_migration_epics.md and
+    - tools.md
+    - ace.md
+    - demos.md
+    - symvision.md
+    requested: Can you help me implement the E4 epic for the "Memory-Built Instruction"
+      work that is described in the memory_built_instruction_migration_epics.md and
       instruction_bundles_vs_readable_agents_md.md files?
     default: true
     answer: true
 phases:
-  - id: readable-projection
-    title:
-      Projection header, neutral contract wording, parity repo check, and a CI drift
-      gate
-    depends_on: []
-    size: medium
-    description:
-      "readable-projection: add a short project-only header to the generated AGENTS.md,
-      make the packaged contract wording true for files and bundles, make the parity
-      repository check run on numbered headings, and stop CI regenerating committed
-      instruction files before it checks them."
-  - id: shim-retirement
-    title: Retire the GEMINI.md, QWEN.md, and OPENCODE.md copies at project roots
-    depends_on:
-      - readable-projection
-    size: medium
-    description:
-      "shim-retirement: canary-probe agy, Qwen, and OpenCode on AGENTS.md alone, shrink
-      project and nested provider copies to CLAUDE.md with safe retirement in sase
-      memory init, update every validator, inventory, history, snapshot, and Rust
-      content-layout consumer (with the sase-core pin move), and delete the twelve
-      copies."
-  - id: nested-guides
-    title: Nested tools/, ace/, and tapes/ guides reach every provider
-    depends_on:
-      - shim-retirement
-    size: medium
-    description:
-      "nested-guides: per decision nested_guides, either fold the three hand-written
-      nested guides into reference notes and delete the six nested files, or keep them
-      with stale lines fixed."
-  - id: launch-row
-    title: The TUI opens the instruction bundle an agent received
-    depends_on: []
-    size: medium
-    description:
-      "launch-row: add a public launch-bundle locator, point the Memory lane's
-      as-launched row at the recorded root bundle for explicit runs while old and native
-      runs keep the AGENTS.md snapshot, and (decision files_deck) list bundles in the
-      Files deck with help-text commands."
-  - id: record
-    title: Decision record, glossary, docs sweep, and acceptance record
-    depends_on:
-      - nested-guides
-      - launch-row
-    size: medium
-    description:
-      "record: write the readable-agents-md decision record and mark
-      instructions-per-invocation superseded in part, rewrite and add glossary terms,
-      correct the remaining E3-era docs, verify every exit criterion, and attach the
-      acceptance record to the epic."
+- id: readable-projection
+  title: Projection header, neutral contract wording, parity repo check, and a CI
+    drift gate
+  depends_on: []
+  size: medium
+  description: 'readable-projection: add a short project-only header to the generated
+    AGENTS.md, make the packaged contract wording true for files and bundles, make
+    the parity repository check run on numbered headings, and stop CI regenerating
+    committed instruction files before it checks them.'
+- id: shim-retirement
+  title: Retire the GEMINI.md, QWEN.md, and OPENCODE.md copies at project roots
+  depends_on:
+  - readable-projection
+  size: medium
+  description: 'shim-retirement: canary-probe agy, Qwen, and OpenCode on AGENTS.md
+    alone, shrink project and nested provider copies to CLAUDE.md with safe retirement
+    in sase memory init, update every validator, inventory, history, snapshot, and
+    Rust content-layout consumer (with the sase-core pin move), and delete the twelve
+    copies.'
+- id: nested-guides
+  title: Nested tools/, ace/, and tapes/ guides reach every provider
+  depends_on:
+  - shim-retirement
+  size: medium
+  description: 'nested-guides: per decision nested_guides, either fold the three hand-written
+    nested guides into reference notes and delete the six nested files, or keep them
+    with stale lines fixed.'
+- id: launch-row
+  title: The TUI opens the instruction bundle an agent received
+  depends_on: []
+  size: medium
+  description: 'launch-row: add a public launch-bundle locator, point the Memory lane''s
+    as-launched row at the recorded root bundle for explicit runs while old and native
+    runs keep the AGENTS.md snapshot, and (decision files_deck) list bundles in the
+    Files deck with help-text commands.'
+- id: record
+  title: Decision record, glossary, docs sweep, and acceptance record
+  depends_on:
+  - nested-guides
+  - launch-row
+  size: medium
+  description: 'record: write the readable-agents-md decision record and mark instructions-per-invocation
+    superseded in part, rewrite and add glossary terms, correct the remaining E3-era
+    docs, verify every exit criterion, and attach the acceptance record to the epic.'
 proposed_by: bbugyi200.athena.10r
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-16 15:15:51
 status: wip
+bead_id: sase-1lj
 ---
 
-- **PROMPT:**
-  [prompts/202610/e4_readable_agents_md.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e4_readable_agents_md.md)
+- **PROMPT:** [prompts/202610/e4_readable_agents_md.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e4_readable_agents_md.md)
+- **BEAD:** [sase-1lj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lj/README.md)
 
 # Plan: E4 — Keep a readable AGENTS.md and retire redundant instruction copies
 
