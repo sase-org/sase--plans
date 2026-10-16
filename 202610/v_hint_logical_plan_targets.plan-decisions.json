@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should ordinary agent prompt/reply text also hint `plan:` refs as whole tokens resolved on pick?",
+      "choices": [
+        {
+          "key": "include",
+          "label": "Marker sits before `plan:` in all agent bodies and opens the plan; may regen a hint golden"
+        },
+        {
+          "key": "clan_only",
+          "label": "Only clan/session text changes; agent bodies keep splitting `plan:` refs into dead paths"
+        }
+      ],
+      "default": "include",
+      "effective_default": "include",
+      "id": "agent_text",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Same defect class and mechanism, with no added render-path cost"
+    },
+    {
+      "ask": "Should a missing archived-prompt hint be retried in the project's agents sidecar on pick?",
+      "choices": [
+        {
+          "key": "repair",
+          "label": "Summary Prompt row opens even before clan enrichment lands; one off-thread stat on a miss"
+        },
+        {
+          "key": "skip",
+          "label": "Prompt row stays dead until enrichment lands and hints are re-published"
+        }
+      ],
+      "default": "repair",
+      "effective_default": "repair",
+      "id": "prompt_repair",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "Second row of the same summary block, with the same race; tiny fix"
+    }
+  ]
+}
