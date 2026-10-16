@@ -1,0 +1,434 @@
+---
+tier: epic
+title: Repair the release watcher and check-mode recapture, then ship sase v0.18.0
+goal: "The defects that the sase-1lh landing review found in its own watcher, check-mode
+  recapture, and docs_split work are fixed. The watcher treats a stale release-PR head
+  as something to refresh, not as CORE_FLOOR_BLOCKED. A fresh release watch sees sase
+  0.18.0 install from PyPI. This epic's land agent confirms the release, then resumes
+  the interrupted sase-1lh landing through parent_bead.
+
+  "
+parent_bead: sase-1lh
+decisions:
+  memory_host_proof:
+    ask:
+      Make tui_screenshot.md's host-independence proof also require zero unstable nodes?
+    memory:
+      - tui_screenshot.md
+    corrects:
+      Prove host-independence with a targeted `just fix-tui-screenshots --check` run
+      twice, once with `TZ=UTC` exported, before committing images.
+    default: true
+    answer: true
+phases:
+  - id: watcher-repair
+    title: Refresh stale release-PR heads instead of declaring CORE_FLOOR_BLOCKED
+    depends_on: []
+    size: medium
+    description:
+      "watcher-repair: make tools/release_watch tell a stale release-PR head from a real
+      core-floor block, refresh the stale head through one Publish dispatch per master
+      HEAD, and fix the dispatch red-budget and close-during-signal gaps."
+  - id: recapture-repair
+    title: Make check-mode recapture report failures honestly and fit the job budget
+    depends_on: []
+    size: medium
+    description:
+      "recapture-repair: keep test failures and incomplete runs out of the recapture
+      pass path, bound retries by the job's time budget, and clear any visual node that
+      still fails at HEAD in Full CI."
+  - id: docs-split-anchor
+    title:
+      Fix nested drop pointers that resolve anchor_target through the source anchor map
+    depends_on: []
+    size: small
+    description:
+      "docs-split-anchor: stop tools/docs_split from rewriting a dropped nested
+      section's explicit anchor_target through the source page's anchor map, and pin it
+      with a regression test."
+  - id: release-watch
+    title: Watch v0.18.0 to PyPI without editing files
+    depends_on:
+      - watcher-repair
+      - recapture-repair
+      - docs-split-anchor
+    size: small
+    description:
+      "release-watch: make no edits, preflight the repaired watcher, monitor it until a
+      verdict, and always close with an honest verdict."
+proposed_by: bbugyi200.athena.sase-1lh.land
+decided_by: auto
+create_time: 2026-10-16 16:46:16
+status: wip
+---
+
+- **PROMPT:**
+  [prompts/202610/sase_1lh_landing_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_1lh_landing_repair.md)
+- **PARENT:**
+  [202610/v0_18_0_green_ci_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_green_ci_release.md)
+
+# Plan: Repair the release watcher and check-mode recapture, then ship sase v0.18.0
+
+## Why this epic exists
+
+Epic **sase-1lh** ("Green Master Gate and Full CI, then ship sase v0.18.0 through
+ci_watch") closed all six phases. The release is still not confirmed. Its land agent
+verified the work against current master and found these problems, all caused by
+sase-1lh's own phases. A tale cannot wait for the release and then resume a landing, so
+this child epic finishes the work. Its `parent_bead` link hands the landing back to
+sase-1lh.
+
+sase-1lh's accepted decisions stay in force and are not asked again:
+
+- **dispatch = yes:** the watcher may dispatch Full CI, Publish, and one Master Gate
+  rerun.
+- **visual_flakes = recapture**
+- **stale_epics = supersede:** sase-1lh's own landing step after the release.
+
+### Evidence (2026-10-16, ~20:40Z, master 97825eee1d)
+
+- **The release-watch verdict was a misdiagnosis.**
+  - Phase sase-1lh.6 closed `canceled` with `CORE_FLOOR_BLOCKED` (exit 12).
+  - Release PR #299's head `ccec317e72` comes from Publish run 38933702282 on master
+    `558e075a4d`, created 16:44Z, after sase-core-rs 0.40.1 was uploaded.
+  - That head's `release-core-floor-smoke` (Actions run 38934272211) ran 831 tests
+    against the core floor. Only two failed, both docs tests that were red on master at
+    `558e075a4d` and later fixed by sase-1lh.1's `c0ac5e5f56`:
+    - `tests/test_macro_terminology.py::test_macro_docs_and_memory_avoid_xprompt_terms`
+    - `tests/test_sdd_canonical_layout.py::test_active_sources_and_docs_use_only_canonical_plan_paths`
+  - The floor itself was fine; the PR head was simply stale.
+  - `_floor_blocked` in `tools/_release_watch_engine.py` sees only a pass/fail bit per
+    check. Its `floor_ratchet` dispatch stops once any post-upload Publish exists, so
+    the watcher can never recover from a stale head.
+- **No Full CI run contains every sase-1lh fix yet.**
+  - Run 38944787812 at `6a26d90945` predates gate-fix and the visual fixes. Its test
+    legs failed only on the four docs regressions `c0ac5e5f56` fixed.
+  - Its visual lane drifted on ten goldens. Three were regenerated by `2e94255b21`.
+    Seven were never updated:
+    - `artifacts_files_empty_120x40`
+    - `agents_clan_panel_swarm_120x40`, `_level_2`, `_level_3`
+    - `agents_clan_tree_collapsed_120x40`
+    - `agents_clan_tree_expanded_120x40`
+    - `agents_jump_panel_layered_wave_dividers_120x40`
+  - Scheduled run 38960097707 at `97825eee1d` was in progress at planning time and is
+    the first one with recapture and every fix.
+  - `a9701c36e6` changed hint-mode rendering without touching goldens.
+- **Watcher defects from sase-1lh.5 (`909d55df5e`):**
+  - `dispatch_due` counts every red fixed-SHA Full CI run (`fixed_red`) against
+    `--max-red-full-ci`, while `evaluate` counts only runs created after the watch
+    started.
+    - Scenario: a watch starts after two older reds with `max_red_full_ci=2`.
+    - Result: `evaluate` returns no verdict, but `dispatch_due` never dispatches Full
+      CI, so the watch idles to `DEADLINE`.
+  - A signal that arrives during the normal-path close's retry sleep is only recorded. A
+    supervisor's group SIGKILL then loses the close, though the verdict file survives.
+- **Recapture defects from sase-1lh.3 (`ae7f9dc91a`):**
+  - **A test failure is reported as drift.** Take a visual test that raises on the first
+    pass and both retries without changing an image. Today it ends with status `drift`,
+    exit 1, zero counts, and no failing node IDs in the manifest. The CI "not golden
+    drift" message is skipped. Before recapture this was exit 3 / `failed`, which
+    `docs/contribute/development.md` and the CLI help still promise.
+    `test_check_mode_ignores_salvage` was flipped to `EXIT_DRIFT` to match the
+    regression.
+  - **A successful retry can hide an incomplete run.** When any node fails the first
+    pass, the strict post-run checks in `_visual_maintenance_run.py` (~314–331) are
+    skipped: pytest exit code, session exit status, `full_inventory`, `complete`, and
+    protocol errors. So a newly skipped test plus another node that flakes and then
+    matches gives `clean`, exit 0.
+  - **The retries have no time guard.** The first pass takes about 30.5 minutes of the
+    45-minute visual-test job. 25 nodes times 2 serial attempts can overrun it, and a
+    timeout kill loses the manifest.
+  - **A second retry loop.** `run_check_recapture` adds its own attempt loop beside
+    update mode's, which the sase-1lh plan asked it not to do.
+- **docs_split regression from sase-1lh.1 (`c0ac5e5f56`):**
+  - `plan_split` (`tools/docs_split` ~740) resolves every generated nested pointer
+    through `anchor_map.get(pointer.anchor, ...)`. That includes a dropped nested
+    section with an explicit `anchor_target: X#name`, whose anchor belongs to the
+    destination page.
+  - Reproduction: move `Overview` to `reference/overview.md` and drop
+    `Parent > Contents` with `anchor_target: reference/index.md#overview`.
+  - Result: `parent.md` gets `Moved to [Reference](overview.md#overview-1).` instead of
+    `index.md#overview`.
+  - Top-level drop pointers (~796) are unaffected.
+
+## Rules for every phase
+
+- Start from a fetched, fast-forwarded `origin/master`, and re-read current CI before
+  editing.
+- Fix root causes. Do not add skips, xfails, raised test-wait timeouts, or goldens
+  copied from CI, and do not loosen exact pixel comparison.
+- Verify through `sase tool run check` (run `just fix` inline first), plus the
+  phase-specific commands below. Do not run `just check-full`.
+- Never merge PR #299 by hand, never push to its branch, and never dispatch workflows
+  from a repair phase. Only the watcher in phase release-watch dispatches.
+- Read `docs_writing.md` with `/sase_memory_read` before editing anything under `docs/`.
+- Phase workers create no beads. Record discovered work as `PROPOSED FOLLOW-UP:` notes
+  on your own phase bead.
+
+## Phase watcher-repair
+
+All changes go in `tools/_release_watch*.py`, with tests in
+`tests/test_release_watch*.py` and helpers in `tests/_release_watch_helpers.py`.
+
+1. **Know what the PR head was built on.** For an open release PR whose floor check
+   failed:
+   - Record how far the head is behind current master and its merge-base SHA with
+     master. Use `gh api repos/{repo}/compare/{master_sha}...{head_sha}`, the same
+     pattern `_release_watch_api.py` already uses for fixed-SHA runs.
+   - Record the Master Gate conclusion at that merge-base, taken from the Master Gate
+     run list `read_signals` already fetches.
+   - Add any new `ReleasePullRequest` fields at the end, with defaults, because tests
+     and `tools/_release_watch.py` build it positionally.
+   - Skip the extra call when the floor check did not fail.
+2. **Stale head means refresh, not verdict.** A floor-failed head is _stale_ when both
+   hold:
+   - its merge-base is not master HEAD;
+   - the Master Gate at that merge-base is not green.
+
+   For a stale head, `evaluate` returns no verdict. `CORE_FLOOR_BLOCKED` keeps its
+   current conditions and additionally requires that the head is not stale, so a floor
+   smoke that fails on code Master Gate already passed still verdicts.
+
+3. **`pr_refresh` dispatch.** While a stale head persists, `dispatch_due` dispatches
+   `publish.yml -f publish_existing=false` under these rules:
+   - **When:** the Master Gate at HEAD is green and no Publish run is in flight.
+   - **How often:** at most once per master HEAD SHA, tracked like `_gate_rerun_shas`,
+     with a cooldown of at least 30 minutes.
+   - **Dedup:** it joins the existing `floor_ratchet` / `release_publish` dedup so one
+     Publish dispatch serves every reason.
+   - **Modes:** `--no-dispatch`, `--dry-run`, and `--once` behave as they do for the
+     other dispatches.
+4. **No-op guard.** release-please only pushes when the generated PR changes.
+   - If a Publish run created after a `pr_refresh` dispatch for SHA X finishes and the
+     head is still stale, do not dispatch again for X.
+   - Show `release_pr=...:stale` in the state line and name the stale head, its
+     merge-base, and the merge-base gate result in the `DEADLINE` detail.
+5. **Fresh red budget in dispatch.** Filter `fixed_red` in `dispatch_due` by
+   `created_at >= _watch_started_at` exactly as `evaluate` does.
+6. **Signal during the normal close.**
+   - If SIGTERM, SIGINT, or SIGHUP arrives while the normal-path close is retrying or
+     sleeping between retries, hand the close to the existing detached new-session
+     closer right away. The verdict file is already written. The exit code stays the
+     verdict that was being closed.
+   - The detached path deliberately skips the pre-close bead read, so it can exit at
+     once. A redundant close is recorded as redundant and is harmless. Keep that.
+7. **Tests.** Update the floor-block tests that assume no base information:
+   `tests/test_release_watch_decisions.py`
+   `test_floor_blocked_requires_failed_floor_after_publish_after_core`,
+   `test_all_signal_verdicts[core_floor]`, and
+   `test_reached_or_newer_core_restores_floor_blocked`. Add tests for:
+   - a stale head giving no verdict and one `pr_refresh` per HEAD SHA;
+   - `--no-dispatch` suppressing it;
+   - the no-op guard;
+   - a current head with a red floor still giving `CORE_FLOOR_BLOCKED`;
+   - parsing the compare payload;
+   - the fresh red budget in `dispatch_due`, using the two-old-reds scenario above;
+   - a signal during a close retry starting the detached closer.
+8. **Docs.** Update the exit-code table and the "Watching a release" section in
+   `docs/contribute/rust-backend.md`: narrow `CORE_FLOOR_BLOCKED` and describe
+   stale-head refresh.
+9. **Prove it.** Run `.venv/bin/pytest tests/test_release_watch*.py`, then a read-only
+   live preflight against the real repo with `--once --dry-run`, and
+   `sase tool run check`. Against today's PR #299 the preflight should print a fully
+   parsed state line with no `CORE_FLOOR_BLOCKED` verdict and a
+   `would dispatch:pr_refresh` action (unless master has meanwhile refreshed the PR):
+
+   ```sh
+   PYTHONUNBUFFERED=1 NO_COLOR=1 GH_FORCE_TTY=0 tools/release_watch --repo sase-org/sase --version 0.18.0 --fixed-sha <origin/master SHA> --await-core-version 0.40.1 --once --dry-run
+   ```
+
+## Phase recapture-repair
+
+All changes go in `tests/ace/tui/visual/_visual_maintenance_*.py`, its tests
+(`tests/test_fix_tui_screenshots_*.py`), `.github/workflows/ci.yml` if needed, and docs.
+Read `tui_screenshot.md` and `tui_perf.md` with `/sase_memory_read` first.
+
+1. **Failures stay failures.**
+   - A node whose attempts end with a test failure and no golden change is an execution
+     failure: status `failed`, exit 3.
+   - Its node IDs go into the manifest's errors and the printed summary, so the CI "not
+     golden drift … do not accept goldens" message fires.
+   - Mixed results exit 3, as before recapture.
+   - Restore `test_check_mode_ignores_salvage` to the failure expectation, or replace it
+     with an equivalent test.
+2. **Recovered nodes cannot hide an incomplete run.** After recapture, re-apply the
+   strict post-run checks that are skipped today:
+   - pytest and session exit status, ignoring only failures of nodes that later matched;
+   - `full_inventory` / `complete`;
+   - protocol errors.
+
+   A run that would have been `failed` or incomplete without any recapture must still
+   fail.
+
+3. **Time budget.**
+   - Bound the recapture phase by remaining wall-clock time. Use an explicit option or
+     environment value, with the CI workflow passing a budget derived from the job's
+     `timeout-minutes` minus measured first-pass time and a safety margin. Measure the
+     first pass from recent visual-test jobs; it is about 30.5 minutes.
+   - When the budget runs out, skip the remaining attempts. Those nodes keep their
+     first-pass outcome, and the manifest and report are still written.
+   - Cite the measured durations in the commit message.
+4. **One retry loop.** Drive check-mode attempts through the same attempt driver that
+   update mode uses in `_visual_maintenance_verify.py`, so there is one loop.
+   Update-mode behavior must not change.
+5. **Tests.** Add or extend tests for:
+   - a persistent test failure giving `failed` / exit 3;
+   - a retry-recovered node alongside a skipped or uninventoried node still failing;
+   - budget exhaustion leaving remaining nodes failed with the manifest written.
+
+   Keep the existing first-attempt pass, retry-unstable, fail-every-attempt, and
+   over-cap tests green.
+
+6. **Docs.**
+   - `docs/contribute/development.md` (~1148–1149): the renderer-upgrade procedure must
+     require a `--check` run with no `unstable` entries, as well as an unchanged golden
+     tree.
+   - Check that the exit-code paragraph (~1081) and the `--check` prose (~1018, 1067,
+     1166, 1197) match the restored semantics.
+7. **Clear what is red at HEAD.**
+   - Read the newest completed Full CI `visual-test` job that includes `ae7f9dc91a`, at
+     planning time run 38960097707. Use its report and manifest artifacts, including any
+     `unstable` table.
+   - Root-cause and fix every node that still fails after recapture, the way sase-1lh.2
+     did. Candidates include the seven un-updated goldens above and hint-mode shots
+     touched by `a9701c36e6`.
+   - Regenerate a golden only for an intended change, after inspecting the actual image,
+     and explain the call in the commit message.
+   - Prove each changed node with the targeted `just fix-tui-screenshots --check` run
+     twice, once with `TZ=UTC`, and no `unstable` entries.
+   - Record the node table, including nodes that passed only on retry, as a note on this
+     phase bead.
+8. Run the targeted recapture tests, then `sase tool run check`.
+
+> [!decision] memory_host_proof
+
+Use `/sase_memory_write`, then edit only the `tui_screenshot.md` sentence that says to
+prove host-independence with a targeted `--check` run twice. It must also require that
+neither run reports an `unstable` node. Then run `sase memory init`. `lint_and_test.md`
+stays accurate and is not edited.
+
+## Phase docs-split-anchor
+
+1. In `tools/docs_split` `plan_split` (~724–764), resolve a generated nested pointer
+   through the source `anchor_map` only when its anchor is a source-page anchor. A
+   pointer for a dropped section with an explicit `anchor_target` keeps that target's
+   page and anchor unchanged, as top-level drop pointers already do (~796).
+2. Add a regression test to `tests/test_docs_moves.py` for the reproduction above. It
+   must fail on current master and assert `Moved to [Reference](index.md#overview).`
+3. Strengthen the existing multi-target nested regression test so its targets sit in
+   different directories, and assert each relative link, so a wrong relative base fails.
+4. Run `.venv/bin/pytest tests/test_docs_moves.py`,
+   `tools/typecheck_extensionless_tools` (or `just lint`), and `sase tool run check`.
+
+## Phase release-watch
+
+This phase makes no file edits and always closes its bead with an honest verdict.
+
+1. **Idempotent start.** Read this phase bead. If it is already closed, because this is
+   a relaunch after recovery, run `/sase_final` and stop.
+2. Fetch and fast-forward. Confirm that every sibling phase's commit is on
+   `origin/master`, and use the newest `origin/master` SHA as FIXED_SHA. Pick CORE as
+   the newest sase-core-rs on PyPI that passes `tools/check_sase_core_rs_bindings`
+   against FIXED_SHA (0.40.1 at planning time). Inspect current Full CI, Master Gate,
+   and PR #299, and do not duplicate an in-flight workflow.
+3. **Preflight inline.** Append `--no-dispatch` to both commands when
+   `dispatch = false`.
+
+   ```sh
+   PYTHONUNBUFFERED=1 NO_COLOR=1 GH_FORCE_TTY=0 tools/release_watch --repo sase-org/sase --version 0.18.0 --fixed-sha <FIXED_SHA> --await-core-version <CORE> --once --dry-run --close-bead <phase-id>
+   ```
+
+   It must exit 0 and print a fully parsed state line. On failure, close this phase with
+   `-R canceled -r "release not confirmed: WATCHER_BROKEN (preflight)"` and the output,
+   then run `/sase_final`. Do not repair code in this phase.
+
+4. **Start one `/sase_monitor`.** Use timeout `14h`, statuses `WATCHING RELEASE` /
+   `RELEASE WATCHED`, and `--tail-lines 200`, around:
+
+   ```sh
+   PYTHONUNBUFFERED=1 NO_COLOR=1 GH_FORCE_TTY=0 timeout -k 10m 750m tools/release_watch --repo sase-org/sase --version 0.18.0 --fixed-sha <FIXED_SHA> --await-core-version <CORE> --deadline 12h --close-bead <phase-id>
+   ```
+
+   The `--next` follow-up instruction must say all of the following:
+   - Make no edits.
+   - Read `sase monitor show <id>`, the verdict file, and the phase bead.
+   - If the bead is still open, close it. Use `--note @<verdict file>` for `RELEASED`.
+     Otherwise use `-R canceled -r "release not confirmed: <VERDICT>"`, or
+     `UNKNOWN (<monitor state>, exit <code>)` when no verdict exists.
+   - Never reopen the bead, restart the watch, merge, dispatch, or create beads.
+   - Finish with `/sase_final`.
+
+   If `sase monitor start` exits nonzero twice, close canceled with
+   `release not confirmed: WATCHER_NOT_STARTED` and both errors, then run `/sase_final`.
+   Run the start command in the foreground until it exits.
+
+### Why this bead always closes
+
+Each layer has its own deadline, and each deadline finishes inside the next layer out:
+the watcher stops at 12 h, the outer `timeout` at 12.5 h (plus a 10-minute SIGTERM
+grace), and the monitor at 14 h.
+
+| Path                                                 | Who closes the bead                                               | What releases the land agent              |
+| ---------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| Any verdict, including the watcher's 12 h `DEADLINE` | Watcher, in-process retries                                       | Monitor follow-up runs `/sase_final`      |
+| Outer `timeout` at 12.5 h                            | Watcher's signal path, a detached closer, inside the 10 min grace | Follow-up (monitor `failed`)              |
+| Monitor timeout at 14 h (SIGTERM, then SIGKILL)      | Detached closer, or the follow-up if the close never ran          | Follow-up (monitor `timeout`)             |
+| Watcher crash or hang                                | Outer `timeout` path above, or the follow-up                      | Follow-up                                 |
+| Preflight or monitor-start failure                   | The phase agent, inline                                           | The phase agent's own `/sase_final`       |
+| A human stops the monitor                            | Detached closer (`STOPPED`)                                       | Needs a human: `sase bead work <epic-id>` |
+| Reboot (monitor `lost`) or a SIGKILL from outside    | Nobody; the bead stays open                                       | Needs a human: `sase bead work <epic-id>` |
+
+The last two rows can only come from a human or the host, and SASE surfaces both.
+`wait_checks` raises "Wait dependency can never self-resolve" for the parked land agent.
+The recovery is safe because of step 1:
+
+- `sase bead work <epic-id>` relaunches only the land agent when this bead is closed.
+- It relaunches this phase when the bead is open, and the phase then watches again with
+  a fresh preflight.
+
+## Landing
+
+The land agent confirms the release before landing. Closed phases are not proof.
+
+1. **Confirm the release.** All of the following must hold:
+   - PR #299 is merged by ci_watch.
+   - The GitHub release v0.18.0 exists.
+   - The Publish run's build and publish jobs succeeded.
+   - `https://pypi.org/pypi/sase/json` lists 0.18.0.
+   - In a fresh temporary environment outside the repo, unpinned `pip install sase`
+     resolves 0.18.0, and `sase --version` prints it. Record the resolved sase-core-rs
+     version.
+   - Master Gate is green at the tip that ci_watch merged, and the Full CI run it relied
+     on is green.
+2. **Release not confirmed.** Read the release-watch verdict and evidence.
+   - If only external waiting remains, start your own `/sase_monitor` running the
+     watcher without `--close-bead`. Examples: ci_watch is merely waiting on an
+     in-flight Full CI, or Publish has not run yet. Continue landing in the follow-up.
+   - If repair is needed (`FULL_CI_RED`, `MASTER_GATE_RED`, `CORE_FLOOR_BLOCKED`,
+     `INSTALL_FAILED`, or `PUBLISH_FAILED`), fix it in a child epic. It has a repair
+     phase and a fresh release-watch phase that copies this plan's release-watch section
+     and its close table verbatim. The child's land agent confirms the release and
+     resumes this landing through `parent_bead`. A child epic is required because a tale
+     cannot wait for the release and then resume this landing.
+   - If ci_watch itself is not ticking or its merge path is broken, ask through
+     `/sase_questions` rather than merging by hand.
+   - Never land, or force-close this epic, without a confirmed release.
+3. **Follow-ups.** Triage every `PROPOSED FOLLOW-UP:` note from this epic's phases
+   through `/sase_new_task`, and record each outcome in your close note.
+4. **Resume sase-1lh.** After this epic closes, its `parent_bead` is the plan bead
+   sase-1lh. Its remaining landing duties are listed in its latest lander note and in
+   its plan's Landing section:
+   - post-release triage: Install smoke healed, and every node recapture reported
+     `unstable` in the Full CI run that ci_watch relied on;
+   - the `stale_epics = supersede` closeout of the sase-1kx tree (including the
+     sase-16p, sase-1gh, sase-19d, sase-1kg, and sase-1ii evidence closeout) and of
+     sase-1jz;
+   - its epic-symbols check and close, `just symvision`, and marking its plan file done.
+
+## Out of scope
+
+- Deploy Docs (`covers:` / mkdocs-exporter): the docs epic owns it.
+- CI Telemetry (task sase-1lt), and the follow-up tasks sase-1ll, sase-1lm, sase-1ln,
+  sase-1lo, sase-1lp, sase-1lq, sase-1lr, and sase-1ls, which sase-1lh's lander has
+  already filed.
+- Changing ci_watch's gates or config, and releases of sase-github and sase-telegram.
