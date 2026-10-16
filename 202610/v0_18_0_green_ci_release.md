@@ -1,37 +1,33 @@
 ---
 tier: epic
 title: Green Master Gate and Full CI, then ship sase v0.18.0 through ci_watch
-goal: "Master Gate is green at master HEAD and a fresh Full CI run passes every job, so
-  ci_watch merges release-please PR #299 and sase 0.18.0 installs from PyPI. The
-  release-wait phase closes its bead on every path that does not need a human. The land
-  agent confirms the release before it lands, and repairs the release itself when
-  something unexpected blocks it.
+goal: 'Master Gate is green at master HEAD and a fresh Full CI run passes every job,
+  so ci_watch merges release-please PR #299 and sase 0.18.0 installs from PyPI. The
+  release-wait phase closes its bead on every path that does not need a human. The
+  land agent confirms the release before it lands, and repairs the release itself
+  when something unexpected blocks it.
 
-  "
+  '
 decisions:
   visual_flakes:
-    ask:
-      How should the Full CI visual lane handle captures that drift once and then match?
+    ask: How should the Full CI visual lane handle captures that drift once and then
+      match?
     choices:
-      recapture:
-        Re-capture failed nodes serially; only exact matches pass; one-off drift is
-        reported
+      recapture: Re-capture failed nodes serially; only exact matches pass; one-off
+        drift is reported
       strict: Keep one strict pass; root-cause each nondeterministic node before release
     default: recapture
-    why:
-      Five capture-race repair epics did not converge; recapture still requires exact
-      pixels
+    why: Five capture-race repair epics did not converge; recapture still requires
+      exact pixels
     answer: recapture
   dispatch:
-    ask:
-      Let the release watcher dispatch Full CI, Publish, and one Master Gate rerun when
-      due?
+    ask: Let the release watcher dispatch Full CI, Publish, and one Master Gate rerun
+      when due?
     default: true
     why: Publish only runs every 3h on its own, so dispatch cuts hours off the wait
     answer: true
   stale_epics:
-    ask:
-      Once v0.18.0 is confirmed, what should the lander do with the stalled sase-1kx
+    ask: Once v0.18.0 is confirmed, what should the lander do with the stalled sase-1kx
       tree and sase-1jz?
     choices:
       supersede: Close both as superseded, with this epic's release evidence attached
@@ -40,71 +36,65 @@ decisions:
     why: A later bead-work retry would relaunch a zombie lander that re-chases 0.18.0
     answer: supersede
   memory_visual_check:
-    ask:
-      Update lint_and_test.md's visual --check sentence to describe serial re-capture
+    ask: Update lint_and_test.md's visual --check sentence to describe serial re-capture
       (recapture only)?
     memory:
-      - lint_and_test.md
-    corrects: "`--check` stays strict: it never writes and exits 1 on required drift."
+    - lint_and_test.md
+    corrects: '`--check` stays strict: it never writes and exits 1 on required drift.'
     default: true
     answer: true
 phases:
-  - id: gate-fix
-    title: Fix every Master Gate red at master HEAD
-    depends_on: []
-    size: medium
-    description:
-      "gate-fix: clear the mypy, docs-test, and docs-lint reds the docs restructuring
-      left on master, then prove every lint-job step locally."
-  - id: visual-drift
-    title: Fix the deterministic visual-test failures
-    depends_on: []
-    size: medium
-    description:
-      "visual-drift: repair the two goldens that fail on every run and the CI-only
-      agents-deck readiness timeouts."
-  - id: visual-stability
-    title: Stop one-off capture drift from failing the visual lane
-    depends_on: []
-    size: medium
-    description:
-      "visual-stability: apply the accepted visual_flakes policy so a capture race no
-      longer reds Full CI by itself."
-  - id: ci-budget
-    title: Fix the perf-floor flake and the Full CI time budget
-    depends_on: []
-    size: small
-    description:
-      "ci-budget: recalibrate the Phase 7E perf ceiling that fails about 30% of runs,
-      and check every Full CI job's headroom against its timeout."
-  - id: watcher
-    title: Harden tools/release_watch so its bead close is guaranteed
-    depends_on: []
-    size: medium
-    description:
-      "watcher: make every exit path close the bead even under a process-group kill, and
-      end the watch early on a stuck red Master Gate."
-  - id: release-watch
-    title: Watch v0.18.0 to PyPI without editing files
-    depends_on:
-      - gate-fix
-      - visual-drift
-      - visual-stability
-      - ci-budget
-      - watcher
-    size: small
-    description:
-      "release-watch: make no edits, preflight the hardened watcher, monitor it until a
-      verdict, and always close with an honest verdict."
+- id: gate-fix
+  title: Fix every Master Gate red at master HEAD
+  depends_on: []
+  size: medium
+  description: 'gate-fix: clear the mypy, docs-test, and docs-lint reds the docs restructuring
+    left on master, then prove every lint-job step locally.'
+- id: visual-drift
+  title: Fix the deterministic visual-test failures
+  depends_on: []
+  size: medium
+  description: 'visual-drift: repair the two goldens that fail on every run and the
+    CI-only agents-deck readiness timeouts.'
+- id: visual-stability
+  title: Stop one-off capture drift from failing the visual lane
+  depends_on: []
+  size: medium
+  description: 'visual-stability: apply the accepted visual_flakes policy so a capture
+    race no longer reds Full CI by itself.'
+- id: ci-budget
+  title: Fix the perf-floor flake and the Full CI time budget
+  depends_on: []
+  size: small
+  description: 'ci-budget: recalibrate the Phase 7E perf ceiling that fails about
+    30% of runs, and check every Full CI job''s headroom against its timeout.'
+- id: watcher
+  title: Harden tools/release_watch so its bead close is guaranteed
+  depends_on: []
+  size: medium
+  description: 'watcher: make every exit path close the bead even under a process-group
+    kill, and end the watch early on a stuck red Master Gate.'
+- id: release-watch
+  title: Watch v0.18.0 to PyPI without editing files
+  depends_on:
+  - gate-fix
+  - visual-drift
+  - visual-stability
+  - ci-budget
+  - watcher
+  size: small
+  description: 'release-watch: make no edits, preflight the hardened watcher, monitor
+    it until a verdict, and always close with an honest verdict.'
 proposed_by: bbugyi200.athena.10q
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-16 13:00:17
 status: wip
+bead_id: sase-1lh
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_0_green_ci_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_green_ci_release.md)
+- **PROMPT:** [prompts/202610/v0_18_0_green_ci_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_0_green_ci_release.md)
+- **BEAD:** [sase-1lh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/README.md)
 
 # Plan: Green Master Gate and Full CI, then ship sase v0.18.0 through ci_watch
 
