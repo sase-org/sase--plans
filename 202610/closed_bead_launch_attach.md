@@ -1,72 +1,69 @@
 ---
 tier: epic
 title: Attach agent launches to beads that were already closed
-goal: "An agent launched with `%id(..., bead=<id>)` against a bead that was already
+goal: 'An agent launched with `%id(..., bead=<id>)` against a bead that was already
   closed when the launch was submitted (the common `,x` / `sase agent restart` recovery
-  case) runs attached to that closed bead instead of failing: the bead stays closed with
-  its close metadata and ancestors untouched, the host appends one timestamped
-  `CLOSED-BEAD LAUNCH:` audit note authored by the launching agent, and the agent is
-  told its bead is already closed. A bead closed after the launch was submitted still
-  refuses the launch, now with a clear `closed_while_queued` error.
+  case) runs attached to that closed bead instead of failing: the bead stays closed
+  with its close metadata and ancestors untouched, the host appends one timestamped
+  `CLOSED-BEAD LAUNCH:` audit note authored by the launching agent, and the agent
+  is told its bead is already closed. A bead closed after the launch was submitted
+  still refuses the launch, now with a clear `closed_while_queued` error.
 
-  "
+  '
 decisions:
   healer_done_only:
-    ask:
-      Should update-skew auto-restarts refuse to attach to beads closed as canceled or
-      superseded?
+    ask: Should update-skew auto-restarts refuse to attach to beads closed as canceled
+      or superseded?
     default: false
-    why:
-      every launch path behaves alike; the host notice already says not to redo canceled
-      work
+    why: every launch path behaves alike; the host notice already says not to redo
+      canceled work
     answer: false
   beads_memory:
-    ask:
-      Update the generated sase_beads memory so it no longer promises every launched
+    ask: Update the generated sase_beads memory so it no longer promises every launched
       bead is in_progress?
     memory:
-      - sase_beads.md
-    corrects:
-      A bead you were launched to work on is already `in_progress` before you read your
-      prompt, because an epic launch preassigns every phase bead and the land bead.
+    - sase_beads.md
+    corrects: A bead you were launched to work on is already `in_progress` before
+      you read your prompt, because an epic launch preassigns every phase bead and
+      the land bead.
     default: true
     answer: true
 phases:
-  - id: core
-    title: sase-core launch claim attaches to visibly closed beads
-    depends_on: []
-    size: medium
-    description:
-      "core: teach sase-core's run_claim_launch an optional submission time and run ID;
-      attach to a bead closed at or before submission (status untouched, one CLOSED-BEAD
-      LAUNCH: note by the launching agent, same mutation), refuse later closes as
-      closed_while_queued, keep the legacy error when no submission time is given, and
-      expose the new kwargs on the Python binding with tests."
-  - id: runner
-    title: Runner wiring, agent metadata, and the host notice
-    depends_on:
-      - core
-    size: medium
-    description:
-      "runner: move sase's sase-core CI pin, pass the UTC submission time and run ID
-      from the runner's single launch-claim checkpoint through the facade, use a
-      distinct SDD commit subject, record the attach in agent_meta, prepend a host
-      notice telling the agent its bead is already closed, and invert/add tests."
-  - id: guidance
-    title: Prompt templates, docs, and memory
-    depends_on:
-      - runner
-    size: small
-    description:
-      "guidance: add the closed-bead sentence to the bd/work_phase_bead and bd/work_task
-      prompts, document the attach and closed_while_queued rules in the bead claim
-      lifecycle, %id, and ,x docs, correct the generated sase_beads memory, and record
-      the out-of-scope follow-ups for the land agent."
+- id: core
+  title: sase-core launch claim attaches to visibly closed beads
+  depends_on: []
+  size: medium
+  description: 'core: teach sase-core''s run_claim_launch an optional submission time
+    and run ID; attach to a bead closed at or before submission (status untouched,
+    one CLOSED-BEAD LAUNCH: note by the launching agent, same mutation), refuse later
+    closes as closed_while_queued, keep the legacy error when no submission time is
+    given, and expose the new kwargs on the Python binding with tests.'
+- id: runner
+  title: Runner wiring, agent metadata, and the host notice
+  depends_on:
+  - core
+  size: medium
+  description: 'runner: move sase''s sase-core CI pin, pass the UTC submission time
+    and run ID from the runner''s single launch-claim checkpoint through the facade,
+    use a distinct SDD commit subject, record the attach in agent_meta, prepend a
+    host notice telling the agent its bead is already closed, and invert/add tests.'
+- id: guidance
+  title: Prompt templates, docs, and memory
+  depends_on:
+  - runner
+  size: small
+  description: 'guidance: add the closed-bead sentence to the bd/work_phase_bead and
+    bd/work_task prompts, document the attach and closed_while_queued rules in the
+    bead claim lifecycle, %id, and ,x docs, correct the generated sase_beads memory,
+    and record the out-of-scope follow-ups for the land agent.'
 proposed_by: bbugyi200.athena.research.4n.linker.w0
 decided_by: auto
 create_time: 2026-10-16 13:03:44
 status: wip
+bead_id: sase-1li
 ---
+
+- **BEAD:** [sase-1li](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1li/README.md)
 
 # Plan: Attach agent launches to beads that were already closed
 
