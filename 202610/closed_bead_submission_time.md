@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Fix closed-bead submission time and finish sase-1li landing
-goal: Launch claims use the real submission instant, preserve queued-close refusal,
-  and epic sase-1li is verified and closed with its original plan marked done.
+goal:
+  Launch claims use the real submission instant, preserve queued-close refusal, and epic
+  sase-1li is verified and closed with its original plan marked done.
 size: medium
 proposed_by: bbugyi200.athena.sase-1li.land
 bead: sase-1li
@@ -13,6 +14,11 @@ status: done
   [202610/closed_bead_launch_attach.md](https://github.com/sase-org/sase--plans/blob/main/202610/closed_bead_launch_attach.md)
 - **BEAD:**
   [sase-1li](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1li/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1li.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1li.land.md)
+- **COMMITS:**
+  - [fd864be](https://github.com/sase-org/sase--plans/commit/fd864be1fa29e0f9856d3e4e94567ba92d51df78)
+    — docs(plans): complete closed-bead timestamp landing
 
 # Finish the closed-bead launch landing
 
