@@ -1,71 +1,66 @@
 ---
 tier: epic
 title: Repair the release watcher and check-mode recapture, then ship sase v0.18.0
-goal: "The defects that the sase-1lh landing review found in its own watcher, check-mode
-  recapture, and docs_split work are fixed. The watcher treats a stale release-PR head
-  as something to refresh, not as CORE_FLOOR_BLOCKED. A fresh release watch sees sase
-  0.18.0 install from PyPI. This epic's land agent confirms the release, then resumes
-  the interrupted sase-1lh landing through parent_bead.
+goal: 'The defects that the sase-1lh landing review found in its own watcher, check-mode
+  recapture, and docs_split work are fixed. The watcher treats a stale release-PR
+  head as something to refresh, not as CORE_FLOOR_BLOCKED. A fresh release watch sees
+  sase 0.18.0 install from PyPI. This epic''s land agent confirms the release, then
+  resumes the interrupted sase-1lh landing through parent_bead.
 
-  "
+  '
 parent_bead: sase-1lh
 decisions:
   memory_host_proof:
-    ask:
-      Make tui_screenshot.md's host-independence proof also require zero unstable nodes?
+    ask: Make tui_screenshot.md's host-independence proof also require zero unstable
+      nodes?
     memory:
-      - tui_screenshot.md
-    corrects:
-      Prove host-independence with a targeted `just fix-tui-screenshots --check` run
-      twice, once with `TZ=UTC` exported, before committing images.
+    - tui_screenshot.md
+    corrects: Prove host-independence with a targeted `just fix-tui-screenshots --check`
+      run twice, once with `TZ=UTC` exported, before committing images.
     default: true
     answer: true
 phases:
-  - id: watcher-repair
-    title: Refresh stale release-PR heads instead of declaring CORE_FLOOR_BLOCKED
-    depends_on: []
-    size: medium
-    description:
-      "watcher-repair: make tools/release_watch tell a stale release-PR head from a real
-      core-floor block, refresh the stale head through one Publish dispatch per master
-      HEAD, and fix the dispatch red-budget and close-during-signal gaps."
-  - id: recapture-repair
-    title: Make check-mode recapture report failures honestly and fit the job budget
-    depends_on: []
-    size: medium
-    description:
-      "recapture-repair: keep test failures and incomplete runs out of the recapture
-      pass path, bound retries by the job's time budget, and clear any visual node that
-      still fails at HEAD in Full CI."
-  - id: docs-split-anchor
-    title:
-      Fix nested drop pointers that resolve anchor_target through the source anchor map
-    depends_on: []
-    size: small
-    description:
-      "docs-split-anchor: stop tools/docs_split from rewriting a dropped nested
-      section's explicit anchor_target through the source page's anchor map, and pin it
-      with a regression test."
-  - id: release-watch
-    title: Watch v0.18.0 to PyPI without editing files
-    depends_on:
-      - watcher-repair
-      - recapture-repair
-      - docs-split-anchor
-    size: small
-    description:
-      "release-watch: make no edits, preflight the repaired watcher, monitor it until a
-      verdict, and always close with an honest verdict."
+- id: watcher-repair
+  title: Refresh stale release-PR heads instead of declaring CORE_FLOOR_BLOCKED
+  depends_on: []
+  size: medium
+  description: 'watcher-repair: make tools/release_watch tell a stale release-PR head
+    from a real core-floor block, refresh the stale head through one Publish dispatch
+    per master HEAD, and fix the dispatch red-budget and close-during-signal gaps.'
+- id: recapture-repair
+  title: Make check-mode recapture report failures honestly and fit the job budget
+  depends_on: []
+  size: medium
+  description: 'recapture-repair: keep test failures and incomplete runs out of the
+    recapture pass path, bound retries by the job''s time budget, and clear any visual
+    node that still fails at HEAD in Full CI.'
+- id: docs-split-anchor
+  title: Fix nested drop pointers that resolve anchor_target through the source anchor
+    map
+  depends_on: []
+  size: small
+  description: 'docs-split-anchor: stop tools/docs_split from rewriting a dropped
+    nested section''s explicit anchor_target through the source page''s anchor map,
+    and pin it with a regression test.'
+- id: release-watch
+  title: Watch v0.18.0 to PyPI without editing files
+  depends_on:
+  - watcher-repair
+  - recapture-repair
+  - docs-split-anchor
+  size: small
+  description: 'release-watch: make no edits, preflight the repaired watcher, monitor
+    it until a verdict, and always close with an honest verdict.'
 proposed_by: bbugyi200.athena.sase-1lh.land
 decided_by: auto
 create_time: 2026-10-16 16:46:16
 status: wip
+bead_id: sase-1lh.7
 ---
 
-- **PROMPT:**
-  [prompts/202610/sase_1lh_landing_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_1lh_landing_repair.md)
-- **PARENT:**
-  [202610/v0_18_0_green_ci_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_green_ci_release.md)
+- **PROMPT:** [prompts/202610/sase_1lh_landing_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_1lh_landing_repair.md)
+- **PARENT:** [202610/v0_18_0_green_ci_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_0_green_ci_release.md)
+- **BEAD:** [sase-1lh.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.md)
 
 # Plan: Repair the release watcher and check-mode recapture, then ship sase v0.18.0
 
