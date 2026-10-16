@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "ask": "Should the raw-commit backstop ignore SASE tool commits that carry no agent trailer?",
+      "choices": [
+        {
+          "key": "exempt",
+          "label": "Human SASE tool commits in shared siblings stop failing running agents"
+        },
+        {
+          "key": "count",
+          "label": "Every human home-memory refresh during agent runs keeps failing running agents"
+        }
+      ],
+      "default": "exempt",
+      "effective_default": "exempt",
+      "id": "tool_commit_exemption",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "raw git commit never writes SASE_TYPE, and change 3 makes in-agent tool commits name their agent"
+    },
+    {
+      "ask": "Should --check report home-memory drift as a deferred warning for humans too, not only in agents?",
+      "choices": [
+        {
+          "key": "always",
+          "label": "Home drift warns everywhere like init skills --check; stale home deploys stop failing validate"
+        },
+        {
+          "key": "agents_only",
+          "label": "Only agent and monitor runs demote home drift; humans keep the hard check failure"
+        }
+      ],
+      "default": "always",
+      "effective_default": "always",
+      "id": "check_drift_scope",
+      "kind": "choice",
+      "requested_verified": false,
+      "why": "matches the existing init skills --check precedent for home-deploy drift"
+    }
+  ]
+}
