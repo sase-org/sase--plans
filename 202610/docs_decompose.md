@@ -1,255 +1,227 @@
 ---
 tier: epic
 title: Decompose the legacy root docs pages into Reference and Contribute
-goal: "Every legacy root page under docs/ lives in reference/ or contribute/ as a
-  lookup-sized, template-shaped page. Old URLs keep working through redirects and anchor
-  stubs, history lives only under reference/upgrading/, the legacy allowlist in
-  docs/_meta/budgets.yml is empty, and the URL contract stays green throughout.
+goal: 'Every legacy root page under docs/ lives in reference/ or contribute/ as a
+  lookup-sized, template-shaped page. Old URLs keep working through redirects and
+  anchor stubs, history lives only under reference/upgrading/, the legacy allowlist
+  in docs/_meta/budgets.yml is empty, and the URL contract stays green throughout.
 
-  "
+  '
 decisions:
   reference_hygiene:
-    ask:
-      Lint hand-written reference/ pages for bead IDs and epic labels once the edit
-      phases clear them?
+    ask: Lint hand-written reference/ pages for bead IDs and epic labels once the
+      edit phases clear them?
     default: true
     why: About 340 bead IDs grew into the legacy pages; without a rule they grow back
     answer: true
   docs_pointer_notes:
-    ask:
-      Update the docs/ path pointers in the tui_perf, dispatch, macros, and cli_rules
+    ask: Update the docs/ path pointers in the tui_perf, dispatch, macros, and cli_rules
       notes when their pages move?
     memory:
-      - tui_perf.md
-      - dispatch.md
-      - macros.md
-      - cli_rules.md
+    - tui_perf.md
+    - dispatch.md
+    - macros.md
+    - cli_rules.md
     default: true
     corrects: Command plugins section in `docs/plugins.md`.
     answer: true
   docs_routing_note:
-    ask:
-      Drop the legacy-root-page wording from docs_writing.md once no legacy root pages
-      remain?
+    ask: Drop the legacy-root-page wording from docs_writing.md once no legacy root
+      pages remain?
     memory:
-      - docs_writing.md
+    - docs_writing.md
     default: true
-    corrects: update its Reference page (today, the legacy root page that owns the fact)
+    corrects: update its Reference page (today, the legacy root page that owns the
+      fact)
     answer: true
 phases:
-  - id: gates
-    title: Restore the green docs gates this epic owns
-    depends_on: []
-    size: medium
-    description:
-      "gates: fix the clean-base docs failures recorded on epic sase-1le
-      (renderer/Prettier drift, the over-budget Reference hub, render_cli mypy errors,
-      PDF/RSS and generated-page terminology tests) so every later phase verifies
-      against a green check."
-  - id: split-tool
-    title: Make docs_split, render_moves, and check_docs safe for monolith splits
-    depends_on: []
-    size: medium
-    description:
-      "split-tool: add H4 and nested selections, drop mappings, intro handling, anchor
-      recording in target context, partial-split pointers, a dry-run budget report, and
-      --finish to docs_split; stop render_moves clobbering hand-written pages; let
-      check_docs accept root stubs and a homepage rule."
-  - id: move-tool
-    title: Whole-page move tool and the upgrading history home
-    depends_on:
-      - gates
-      - split-tool
-    size: medium
-    description:
-      "move-tool: add tools/docs_move for whole-page moves, pilot it on
-      acknowledgements.md, and pilot the hardened docs_split by splitting
-      content_layout.md into Reference and the new reference/upgrading/ hub."
-  - id: tui-agents-move
-    title: Move the Agents tab sections of ace.md to reference/tui/
-    depends_on:
-      - move-tool
-    size: medium
-    description:
-      "tui-agents-move: move-only partial split of the Agents tab cluster of ace.md
-      (about 35K words) into budget-sized reference/tui/ pages."
-  - id: tui-prompt-move
-    title: Move the prompt, snippet, and Launch Control sections of ace.md
-    depends_on:
-      - tui-agents-move
-    size: medium
-    description:
-      "tui-prompt-move: move-only partial split of the prompt input, prompt completion,
-      prompts overlay, snippets, macro browser, and Launch Control sections of ace.md
-      (about 33K words)."
-  - id: tui-move
-    title: Finish ace.md and move pager.md into reference/tui/
-    depends_on:
-      - tui-prompt-move
-    size: medium
-    description:
-      "tui-move: move the remaining tab, pane, and global-control sections of ace.md,
-      move visual-grammar remnants to contribute/, move pager.md, add the reference/tui/
-      hub, and finish ace.md as an anchor stub."
-  - id: config-move
-    title: Move configuration.md prose except its CLI flag tables
-    depends_on:
-      - move-tool
-    size: medium
-    description:
-      "config-move: move-only partial split of configuration.md into hand-written
-      reference/config/ companion pages, reference/environment-variables.md, the Admin
-      Center TUI page, and upgrading notes, leaving the CLI Flags section for the cli
-      phase."
-  - id: macros-move
-    title: Move macros.md and workflow_spec.md into reference/macros/
-    depends_on:
-      - config-move
-    size: medium
-    description:
-      "macros-move: split macros.md into reference/macros/ pages beside the generated
-      catalogs, move workflow_spec.md to reference/workflows.md, keep the decision-cited
-      macros.md stub, and update the macros.md memory pointer."
-  - id: work-units-move
-    title: Move beads, plans, goals, Patches, and ProjectSpec into reference/work-units/
-    depends_on:
-      - macros-move
-    size: medium
-    description:
-      "work-units-move: split beads.md and sdd.md and move goals.md, change_spec.md, and
-      project_spec.md into reference/work-units/ with a hub."
-  - id: providers-move
-    title:
-      Move provider and memory pages into reference/providers/ and reference/memory/
-    depends_on:
-      - move-tool
-    size: medium
-    description:
-      "providers-move: split llms.md (retargeting render_model_docs),
-      agent_providers.md, instruction_bundles.md, memory.md, and memory_history.md into
-      reference/providers/ and reference/memory/, with invocation internals going to
-      contribute/."
-  - id: automation-move
-    title: Move scheduler, notifications, monitors, tools, mentors, and sudo pages
-    depends_on:
-      - providers-move
-    size: medium
-    description:
-      "automation-move: split notifications.md, axe.md, monitors.md, and the
-      decision-cited tool.md, and move mentors.md and sudo.md into
-      reference/automation/, with epic-labelled internals going to contribute/."
-  - id: contribute-move
-    title: Move the contributor pages into contribute/
-    depends_on:
-      - move-tool
-    size: medium
-    description:
-      "contribute-move: whole-page moves of development, rust_backend (stub), fakey,
-      telemetry, perf_runbook, mobile_mvp_runbook, integrations, the two artifacts-pane
-      pages, and sdd_storage into contribute/, and update the tui_perf.md memory
-      pointer."
-  - id: agents-vcs-move
-    title:
-      Move agent, workspace, init, and VCS pages into reference/agents/ and
-      reference/vcs/
-    depends_on:
-      - contribute-move
-    size: medium
-    description:
-      "agents-vcs-move: split or move agent_sessions, workspace, agents_sidecar, init,
-      vcs, and commit_workflows into reference/agents/ and reference/vcs/, with provider
-      APIs, orchestrator, and sync internals going to contribute/."
-  - id: integrations-move
-    title: Move integration pages and the single-topic reference pages
-    depends_on:
-      - agents-vcs-move
-    size: medium
-    description:
-      "integrations-move: move plugins, editor, completion, mobile_gateway, and
-      remote_dispatch into reference/integrations/ and the six single-topic pages into
-      reference/, then update the cli_rules.md and dispatch.md memory pointers."
-  - id: cli
-    title: Retire the hand-maintained CLI flag tables and cli.md
-    depends_on:
-      - config-move
-      - tui-move
-      - work-units-move
-      - automation-move
-      - integrations-move
-    size: medium
-    description:
-      "cli: compare configuration.md CLI Flags and cli.md against the generated CLI
-      pages, port missing facts into argparse help or subsystem pages, delete the tables
-      with anchor targets, and finish both pages as stubs."
-  - id: tui-edit
-    title: History and duplicate sweep for reference/tui/
-    depends_on:
-      - tui-move
-    size: medium
-    description:
-      "tui-edit: strip history, bead IDs, and epic labels from the TUI reference pages
-      into reference/upgrading/, replace keymap and registry restatements with generated
-      links, and confirm template shape."
-  - id: config-macros-edit
-    title: History and duplicate sweep for configuration, macros, and workflows pages
-    depends_on:
-      - config-move
-      - macros-move
-    size: medium
-    description:
-      "config-macros-edit: run the edit checklist on the config companion pages,
-      environment variables, Admin Center, reference/macros/, and
-      reference/workflows.md."
-  - id: work-units-providers-edit
-    title: History and duplicate sweep for work-units, providers, and memory pages
-    depends_on:
-      - work-units-move
-      - providers-move
-    size: medium
-    description:
-      "work-units-providers-edit: run the edit checklist on reference/work-units/,
-      reference/providers/, and reference/memory/."
-  - id: automation-edit
-    title: History and duplicate sweep for automation pages
-    depends_on:
-      - automation-move
-    size: medium
-    description: "automation-edit: run the edit checklist on reference/automation/."
-  - id: agents-integrations-edit
-    title: History and duplicate sweep for agents, VCS, integrations, and single pages
-    depends_on:
-      - agents-vcs-move
-      - integrations-move
-    size: medium
-    description:
-      "agents-integrations-edit: run the edit checklist on reference/agents/,
-      reference/vcs/, reference/integrations/, and the single-topic reference pages."
-  - id: finish
-    title: Final hubs, empty allowlist, repo-wide pointer sweep, and success metrics
-    depends_on:
-      - cli
-      - tui-edit
-      - config-macros-edit
-      - work-units-providers-edit
-      - automation-edit
-      - agents-integrations-edit
-      - contribute-move
-    size: medium
-    description:
-      "finish: finalize the Reference and Contribute hubs and nav, empty budgets.yml,
-      sweep remaining docs path references, refresh docs_writing.md, apply the
-      reference_hygiene decision, and record the success metrics."
+- id: gates
+  title: Restore the green docs gates this epic owns
+  depends_on: []
+  size: medium
+  description: 'gates: fix the clean-base docs failures recorded on epic sase-1le
+    (renderer/Prettier drift, the over-budget Reference hub, render_cli mypy errors,
+    PDF/RSS and generated-page terminology tests) so every later phase verifies against
+    a green check.'
+- id: split-tool
+  title: Make docs_split, render_moves, and check_docs safe for monolith splits
+  depends_on: []
+  size: medium
+  description: 'split-tool: add H4 and nested selections, drop mappings, intro handling,
+    anchor recording in target context, partial-split pointers, a dry-run budget report,
+    and --finish to docs_split; stop render_moves clobbering hand-written pages; let
+    check_docs accept root stubs and a homepage rule.'
+- id: move-tool
+  title: Whole-page move tool and the upgrading history home
+  depends_on:
+  - gates
+  - split-tool
+  size: medium
+  description: 'move-tool: add tools/docs_move for whole-page moves, pilot it on acknowledgements.md,
+    and pilot the hardened docs_split by splitting content_layout.md into Reference
+    and the new reference/upgrading/ hub.'
+- id: tui-agents-move
+  title: Move the Agents tab sections of ace.md to reference/tui/
+  depends_on:
+  - move-tool
+  size: medium
+  description: 'tui-agents-move: move-only partial split of the Agents tab cluster
+    of ace.md (about 35K words) into budget-sized reference/tui/ pages.'
+- id: tui-prompt-move
+  title: Move the prompt, snippet, and Launch Control sections of ace.md
+  depends_on:
+  - tui-agents-move
+  size: medium
+  description: 'tui-prompt-move: move-only partial split of the prompt input, prompt
+    completion, prompts overlay, snippets, macro browser, and Launch Control sections
+    of ace.md (about 33K words).'
+- id: tui-move
+  title: Finish ace.md and move pager.md into reference/tui/
+  depends_on:
+  - tui-prompt-move
+  size: medium
+  description: 'tui-move: move the remaining tab, pane, and global-control sections
+    of ace.md, move visual-grammar remnants to contribute/, move pager.md, add the
+    reference/tui/ hub, and finish ace.md as an anchor stub.'
+- id: config-move
+  title: Move configuration.md prose except its CLI flag tables
+  depends_on:
+  - move-tool
+  size: medium
+  description: 'config-move: move-only partial split of configuration.md into hand-written
+    reference/config/ companion pages, reference/environment-variables.md, the Admin
+    Center TUI page, and upgrading notes, leaving the CLI Flags section for the cli
+    phase.'
+- id: macros-move
+  title: Move macros.md and workflow_spec.md into reference/macros/
+  depends_on:
+  - config-move
+  size: medium
+  description: 'macros-move: split macros.md into reference/macros/ pages beside the
+    generated catalogs, move workflow_spec.md to reference/workflows.md, keep the
+    decision-cited macros.md stub, and update the macros.md memory pointer.'
+- id: work-units-move
+  title: Move beads, plans, goals, Patches, and ProjectSpec into reference/work-units/
+  depends_on:
+  - macros-move
+  size: medium
+  description: 'work-units-move: split beads.md and sdd.md and move goals.md, change_spec.md,
+    and project_spec.md into reference/work-units/ with a hub.'
+- id: providers-move
+  title: Move provider and memory pages into reference/providers/ and reference/memory/
+  depends_on:
+  - move-tool
+  size: medium
+  description: 'providers-move: split llms.md (retargeting render_model_docs), agent_providers.md,
+    instruction_bundles.md, memory.md, and memory_history.md into reference/providers/
+    and reference/memory/, with invocation internals going to contribute/.'
+- id: automation-move
+  title: Move scheduler, notifications, monitors, tools, mentors, and sudo pages
+  depends_on:
+  - providers-move
+  size: medium
+  description: 'automation-move: split notifications.md, axe.md, monitors.md, and
+    the decision-cited tool.md, and move mentors.md and sudo.md into reference/automation/,
+    with epic-labelled internals going to contribute/.'
+- id: contribute-move
+  title: Move the contributor pages into contribute/
+  depends_on:
+  - move-tool
+  size: medium
+  description: 'contribute-move: whole-page moves of development, rust_backend (stub),
+    fakey, telemetry, perf_runbook, mobile_mvp_runbook, integrations, the two artifacts-pane
+    pages, and sdd_storage into contribute/, and update the tui_perf.md memory pointer.'
+- id: agents-vcs-move
+  title: Move agent, workspace, init, and VCS pages into reference/agents/ and reference/vcs/
+  depends_on:
+  - contribute-move
+  size: medium
+  description: 'agents-vcs-move: split or move agent_sessions, workspace, agents_sidecar,
+    init, vcs, and commit_workflows into reference/agents/ and reference/vcs/, with
+    provider APIs, orchestrator, and sync internals going to contribute/.'
+- id: integrations-move
+  title: Move integration pages and the single-topic reference pages
+  depends_on:
+  - agents-vcs-move
+  size: medium
+  description: 'integrations-move: move plugins, editor, completion, mobile_gateway,
+    and remote_dispatch into reference/integrations/ and the six single-topic pages
+    into reference/, then update the cli_rules.md and dispatch.md memory pointers.'
+- id: cli
+  title: Retire the hand-maintained CLI flag tables and cli.md
+  depends_on:
+  - config-move
+  - tui-move
+  - work-units-move
+  - automation-move
+  - integrations-move
+  size: medium
+  description: 'cli: compare configuration.md CLI Flags and cli.md against the generated
+    CLI pages, port missing facts into argparse help or subsystem pages, delete the
+    tables with anchor targets, and finish both pages as stubs.'
+- id: tui-edit
+  title: History and duplicate sweep for reference/tui/
+  depends_on:
+  - tui-move
+  size: medium
+  description: 'tui-edit: strip history, bead IDs, and epic labels from the TUI reference
+    pages into reference/upgrading/, replace keymap and registry restatements with
+    generated links, and confirm template shape.'
+- id: config-macros-edit
+  title: History and duplicate sweep for configuration, macros, and workflows pages
+  depends_on:
+  - config-move
+  - macros-move
+  size: medium
+  description: 'config-macros-edit: run the edit checklist on the config companion
+    pages, environment variables, Admin Center, reference/macros/, and reference/workflows.md.'
+- id: work-units-providers-edit
+  title: History and duplicate sweep for work-units, providers, and memory pages
+  depends_on:
+  - work-units-move
+  - providers-move
+  size: medium
+  description: 'work-units-providers-edit: run the edit checklist on reference/work-units/,
+    reference/providers/, and reference/memory/.'
+- id: automation-edit
+  title: History and duplicate sweep for automation pages
+  depends_on:
+  - automation-move
+  size: medium
+  description: 'automation-edit: run the edit checklist on reference/automation/.'
+- id: agents-integrations-edit
+  title: History and duplicate sweep for agents, VCS, integrations, and single pages
+  depends_on:
+  - agents-vcs-move
+  - integrations-move
+  size: medium
+  description: 'agents-integrations-edit: run the edit checklist on reference/agents/,
+    reference/vcs/, reference/integrations/, and the single-topic reference pages.'
+- id: finish
+  title: Final hubs, empty allowlist, repo-wide pointer sweep, and success metrics
+  depends_on:
+  - cli
+  - tui-edit
+  - config-macros-edit
+  - work-units-providers-edit
+  - automation-edit
+  - agents-integrations-edit
+  - contribute-move
+  size: medium
+  description: 'finish: finalize the Reference and Contribute hubs and nav, empty
+    budgets.yml, sweep remaining docs path references, refresh docs_writing.md, apply
+    the reference_hygiene decision, and record the success metrics.'
 proposed_by: bbugyi200.athena.sase-1le.20
 parent_bead: sase-1le.20
 decided_by: auto
 create_time: 2026-10-16 08:04:32
 status: wip
+bead_id: sase-1le.20.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/docs_decompose.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/docs_decompose.md)
-- **PARENT:**
-  [202610/sase_sh_docs_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_sh_docs_redesign.md)
+- **PROMPT:** [prompts/202610/docs_decompose.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/docs_decompose.md)
+- **PARENT:** [202610/sase_sh_docs_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_sh_docs_redesign.md)
+- **BEAD:** [sase-1le.20.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1le/sase-1le.20.1.md)
 
 # Decompose the legacy root docs pages into Reference and Contribute
 
