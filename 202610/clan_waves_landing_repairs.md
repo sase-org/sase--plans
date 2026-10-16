@@ -1,62 +1,59 @@
 ---
 tier: epic
 title: Finish the clan waves landing
-goal: "The clan wave feature matches its approved design end to end. sase-core owns the
-  whole wave layout through the planned wire, and the Python adapter only consumes it.
-  Wave states, the gutter, the WAVES ladder, and the JUMP legend behave as specified.
+goal: 'The clan wave feature matches its approved design end to end. sase-core owns
+  the whole wave layout through the planned wire, and the Python adapter only consumes
+  it. Wave states, the gutter, the WAVES ladder, and the JUMP legend behave as specified.
   The TUI import budget passes again, and the clan-wave glossary term renders correctly.
 
-  "
+  '
 decisions:
   glossary_clan_wave_strand:
-    ask:
-      Fix the clan-wave glossary strand's keyword, stray heading, and layered-clan rule?
+    ask: Fix the clan-wave glossary strand's keyword, stray heading, and layered-clan
+      rule?
     memory:
-      - glossary:clan-wave
+    - glossary:clan-wave
     default: true
     corrects: The Agents tab shows waves only for clans with two or more layers.
     answer: true
 phases:
-  - id: wire
-    title: Realign the sase-core clan wave wire and switch the adapter to it
-    depends_on: []
-    size: medium
-    description:
-      "wire: replace project_clan_waves' partial wire with the planned key-based layout
-      wire in sase-core (allow_threads, serde defaults, the missing tests). Make the
-      Python facade and adapter consume it and delete the Python-side rank, layered,
-      ghost-split, and ordering derivations, with no visible change."
-  - id: states
-    title: Wave states, gutter lanes, the WAVES ladder, and the glossary strand
-    depends_on:
-      - wire
-    size: medium
-    description:
-      "states: fold wave state over anchors and loaded members only, fix the
-      workflow-step lane, show ladder rows at COLLAPSED, share one after-phrase helper
-      between the ladder and roster, fix singular and zero wave wording, prove fleet-row
-      repaint, fix the clan-wave strand, and regenerate the affected goldens."
-  - id: legend
-    title: JUMP legend dividers, legend performance, and the TUI import budget
-    depends_on:
-      - states
-    size: medium
-    description:
-      "legend: scope dividers to layered clan rosters and draw them only between
-      same-row neighbors, restore pre-epic legend layout cost, fix the title suffix
-      budget, and take the five clan-wave modules off the TUI startup import path. Then
-      regenerate and inspect the jump-panel goldens."
+- id: wire
+  title: Realign the sase-core clan wave wire and switch the adapter to it
+  depends_on: []
+  size: medium
+  description: 'wire: replace project_clan_waves'' partial wire with the planned key-based
+    layout wire in sase-core (allow_threads, serde defaults, the missing tests). Make
+    the Python facade and adapter consume it and delete the Python-side rank, layered,
+    ghost-split, and ordering derivations, with no visible change.'
+- id: states
+  title: Wave states, gutter lanes, the WAVES ladder, and the glossary strand
+  depends_on:
+  - wire
+  size: medium
+  description: 'states: fold wave state over anchors and loaded members only, fix
+    the workflow-step lane, show ladder rows at COLLAPSED, share one after-phrase
+    helper between the ladder and roster, fix singular and zero wave wording, prove
+    fleet-row repaint, fix the clan-wave strand, and regenerate the affected goldens.'
+- id: legend
+  title: JUMP legend dividers, legend performance, and the TUI import budget
+  depends_on:
+  - states
+  size: medium
+  description: 'legend: scope dividers to layered clan rosters and draw them only
+    between same-row neighbors, restore pre-epic legend layout cost, fix the title
+    suffix budget, and take the five clan-wave modules off the TUI startup import
+    path. Then regenerate and inspect the jump-panel goldens.'
 proposed_by: bbugyi200.athena.sase-1lc.land
 parent_bead: sase-1lc
 decided_by: auto
 create_time: 2026-10-15 23:30:14
 status: wip
+bead_id: sase-1lc.8
 ---
 
-- **PROMPT:**
-  [prompts/202610/clan_waves_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/clan_waves_landing_repairs.md)
-- **PARENT:**
-  [202610/clan_waves_in_agents_tab.md](https://github.com/sase-org/sase--plans/blob/main/202610/clan_waves_in_agents_tab.md)
+- **PROMPT:** [prompts/202610/clan_waves_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/clan_waves_landing_repairs.md)
+- **PARENT:** [202610/clan_waves_in_agents_tab.md](https://github.com/sase-org/sase--plans/blob/main/202610/clan_waves_in_agents_tab.md)
+- **BEAD:** [sase-1lc.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lc/sase-1lc.8.md)
 
 # Plan: Finish the clan waves landing
 
