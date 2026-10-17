@@ -1,12 +1,10 @@
 ---
 tier: tale
 size: medium
-title:
-  "Land E4: finish project-root shim retirement and the sase-core pin, then close
-  sase-1lj"
-goal:
-  Project roots keep only AGENTS.md and CLAUDE.md (instruction-file count 2), sase
-  memory init retires identical GEMINI.md/QWEN.md/OPENCODE.md copies safely and
+title: 'Land E4: finish project-root shim retirement and the sase-core pin, then close
+  sase-1lj'
+goal: Project roots keep only AGENTS.md and CLAUDE.md (instruction-file count 2),
+  sase memory init retires identical GEMINI.md/QWEN.md/OPENCODE.md copies safely and
   idempotently while home roots keep four, sase pins sase-core 181072b5, and epic
   sase-1lj is closed with its plan file marked done.
 proposed_by: bbugyi200.athena.sase-1lj.land
@@ -18,11 +16,6 @@ status: done
   [202610/e4_readable_agents_md.md](https://github.com/sase-org/sase--plans/blob/main/202610/e4_readable_agents_md.md)
 - **BEAD:**
   [sase-1lj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lj/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1lj.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1lj.land.md)
-- **COMMITS:**
-  - [ea84bd8](https://github.com/sase-org/sase/commit/ea84bd8786dddecc971c46717c5c70edc8771ca5)
-    — feat(amd): retire project-root GEMINI, QWEN, and OPENCODE shims
 
 # Land E4: finish project-root shim retirement, then close epic sase-1lj
 
