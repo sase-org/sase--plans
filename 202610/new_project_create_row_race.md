@@ -1,30 +1,25 @@
 ---
 tier: tale
 title: Fix New Project wizard never offering GitHub Create
-goal:
-  The New Project Source stage pins the Create row for GitHub on open, so `n` starts
-  repository creation.
+goal: The New Project Source stage pins the Create row for GitHub on open, so `n`
+  starts repository creation.
 size: small
 decisions:
   explain_n:
-    ask:
-      When `n` finds no pinned Create row, should it show a toast explaining why instead
-      of doing nothing?
+    ask: When `n` finds no pinned Create row, should it show a toast explaining why
+      instead of doing nothing?
     choices:
-      notify:
-        Toast why `n` can't create yet (checking, or unsupported, press R); adds one
-        docs sentence
-      silent:
-        Keep `n` a silent no-op without a Create row; only the race fix and its tests
-        land
+      notify: Toast why `n` can't create yet (checking, or unsupported, press R);
+        adds one docs sentence
+      silent: Keep `n` a silent no-op without a Create row; only the race fix and
+        its tests land
     default: notify
     why: the silent no-op is why this race was hard to diagnose
     answer: notify
 proposed_by: bbugyi200.athena.10y
 proposed_with: claude/opus
 decided_by: auto
-create_time: 2026-10-17 10:41:53
-status: wip
+status: done
 ---
 
 # Fix: New Project wizard never offers GitHub "Create", so `n` does nothing
