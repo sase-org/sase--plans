@@ -1,17 +1,15 @@
 ---
 tier: tale
 size: medium
-title:
-  Finish landing docs epic sase-1le.20.1 with MkDocs-accurate anchors, then close it out
-goal:
-  Every pre-epic sase.sh deep link into the decomposed legacy docs pages resolves again,
-  the docs split and move tools record the anchor ids MkDocs actually renders, Deploy
-  Docs builds and validates its handbook PDF, and epic sase-1le.20.1 plus its parent
-  phase sase-1le.20 are closed with verified notes.
+title: Finish landing docs epic sase-1le.20.1 with MkDocs-accurate anchors, then close
+  it out
+goal: Every pre-epic sase.sh deep link into the decomposed legacy docs pages resolves
+  again, the docs split and move tools record the anchor ids MkDocs actually renders,
+  Deploy Docs builds and validates its handbook PDF, and epic sase-1le.20.1 plus its
+  parent phase sase-1le.20 are closed with verified notes.
 proposed_by: bbugyi200.athena.sase-1le.20.1.land
 bead: sase-1le.20.1
-create_time: 2026-10-16 21:53:09
-status: wip
+status: done
 ---
 
 - **PARENT:**
