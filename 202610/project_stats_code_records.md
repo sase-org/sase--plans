@@ -1,63 +1,58 @@
 ---
 tier: epic
 title: Committed code snapshots and records for project statistics
-goal:
-  Complete sase-1m3.7 with accurate cached code snapshots, an evidenced line-counter
+goal: Complete sase-1m3.7 with accurate cached code snapshots, an evidenced line-counter
   choice, and metadata-only records summaries exposed by project_stats_query.
 parent_bead: sase-1m3.7
 phases:
-  - id: counter-policy
-    title: Role policy, nonblank counter, and measurement contracts
-    depends_on: []
-    size: medium
-    description:
-      "counter-policy: implement pure nonblank counting and role classification, and
-      finish the wire contracts needed by code and records snapshots."
-  - id: code-snapshot
-    title: Committed-tree snapshots and incremental blob cache
-    depends_on:
-      - counter-policy
-    size: medium
-    description:
-      "code-snapshot: enumerate committed trees, resolve committed attributes, measure
-      bounded blob batches, and cache per-path results with correct attribute and
-      classifier invalidation."
-  - id: records-snapshot
-    title: Metadata-only records summaries
-    depends_on:
-      - counter-policy
-    size: small
-    description:
-      "records-snapshot: count record-repository commits and tracked files, measure
-      author-time bounds without reading content, and cache complete results by tip."
-  - id: query-integration
-    title: Code facet dispatch, coverage, and deduplicated aggregates
-    depends_on:
-      - code-snapshot
-      - records-snapshot
-    size: medium
-    description:
-      "query-integration: populate project, repository, and portfolio code results,
-      attach records summaries, avoid unrelated facet work, and verify the public Python
-      binding."
-  - id: measurement
-    title: Tokei dependency gate and performance evidence
-    depends_on:
-      - query-integration
-    size: medium
-    description:
-      "measurement: evaluate tokei against the integrated nonblank baseline, measure
-      cold and incremental snapshots on sase, and assemble compatibility and completion
-      evidence for sase-1m3.7."
+- id: counter-policy
+  title: Role policy, nonblank counter, and measurement contracts
+  depends_on: []
+  size: medium
+  description: 'counter-policy: implement pure nonblank counting and role classification,
+    and finish the wire contracts needed by code and records snapshots.'
+- id: code-snapshot
+  title: Committed-tree snapshots and incremental blob cache
+  depends_on:
+  - counter-policy
+  size: medium
+  description: 'code-snapshot: enumerate committed trees, resolve committed attributes,
+    measure bounded blob batches, and cache per-path results with correct attribute
+    and classifier invalidation.'
+- id: records-snapshot
+  title: Metadata-only records summaries
+  depends_on:
+  - counter-policy
+  size: small
+  description: 'records-snapshot: count record-repository commits and tracked files,
+    measure author-time bounds without reading content, and cache complete results
+    by tip.'
+- id: query-integration
+  title: Code facet dispatch, coverage, and deduplicated aggregates
+  depends_on:
+  - code-snapshot
+  - records-snapshot
+  size: medium
+  description: 'query-integration: populate project, repository, and portfolio code
+    results, attach records summaries, avoid unrelated facet work, and verify the
+    public Python binding.'
+- id: measurement
+  title: Tokei dependency gate and performance evidence
+  depends_on:
+  - query-integration
+  size: medium
+  description: 'measurement: evaluate tokei against the integrated nonblank baseline,
+    measure cold and incremental snapshots on sase, and assemble compatibility and
+    completion evidence for sase-1m3.7.'
 proposed_by: bbugyi200.apollo.sase-1m3.7
 create_time: 2026-10-17 02:56:45
 status: wip
+bead_id: sase-1m3.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/project_stats_code_records.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_stats_code_records.md)
-- **PARENT:**
-  [202610/sase_stats_project.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_stats_project.md)
+- **PROMPT:** [prompts/202610/project_stats_code_records.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_stats_code_records.md)
+- **PARENT:** [202610/sase_stats_project.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_stats_project.md)
+- **BEAD:** [sase-1m3.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1m3/sase-1m3.7.1.md)
 
 # Plan: Committed code snapshots and records for project statistics
 
