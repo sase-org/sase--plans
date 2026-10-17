@@ -2,34 +2,31 @@
 tier: epic
 title: Restore the parsed release declaration and reconcile current release gates
 parent_bead: sase-1lh.7.5.4
-goal:
-  The pending release targets 0.18.0, current release gates pass, and ci_watch publishes
-  an installable sase 0.18.0 so the interrupted landing can finish.
+goal: The pending release targets 0.18.0, current release gates pass, and ci_watch
+  publishes an installable sase 0.18.0 so the interrupted landing can finish.
 phases:
-  - id: release-integration
-    title: Reconcile concurrent gate changes and issue a parseable release declaration
-    description:
-      "release-integration: reconcile the current gate contracts and readiness races,
-      then declare 0.18.0 using a parser-verified nested commit."
-    size: medium
-    depends_on: []
-  - id: release-watch
-    title: Verify the committed declaration and observe guarded publication
-    description:
-      "release-watch: verify the actual committed declaration, regenerate the target
-      once when needed, and observe publication with an honest bounded verdict."
-    size: small
-    depends_on:
-      - release-integration
+- id: release-integration
+  title: Reconcile concurrent gate changes and issue a parseable release declaration
+  description: 'release-integration: reconcile the current gate contracts and readiness
+    races, then declare 0.18.0 using a parser-verified nested commit.'
+  size: medium
+  depends_on: []
+- id: release-watch
+  title: Verify the committed declaration and observe guarded publication
+  description: 'release-watch: verify the actual committed declaration, regenerate
+    the target once when needed, and observe publication with an honest bounded verdict.'
+  size: small
+  depends_on:
+  - release-integration
 proposed_by: bbugyi200.athena.sase-1lh.7.5.4.land
 create_time: 2026-10-17 00:23:05
 status: wip
+bead_id: sase-1lh.7.5.4.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/restore_release_declaration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/restore_release_declaration.md)
-- **PARENT:**
-  [202610/finish_deadline_release_target.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_deadline_release_target.md)
+- **PROMPT:** [prompts/202610/restore_release_declaration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/restore_release_declaration.md)
+- **PARENT:** [202610/finish_deadline_release_target.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_deadline_release_target.md)
+- **BEAD:** [sase-1lh.7.5.4.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.4.3.md)
 
 # Finish the remaining release integration
 
