@@ -2,18 +2,17 @@
 tier: tale
 title: Finish the project statistics core landing
 size: medium
-goal:
-  Repair project statistics source aggregation and unavailable values, prove the sase
-  history budget, and finish the sase-1m3.4.1 landing.
+goal: Repair project statistics source aggregation and unavailable values, prove the
+  sase history budget, and finish the sase-1m3.4.1 landing.
 proposed_by: bbugyi200.apollo.sase-1m3.4.1.land
 bead: sase-1m3.4.1
-create_time: 2026-10-17 01:53:45
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202610/project_stats_core_engine.md](https://github.com/sase-org/sase--plans/blob/main/202610/project_stats_core_engine.md)
-- **BEAD:** sase-1m3.4.1
+- **BEAD:**
+  [sase-1m3.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1m3/sase-1m3.4.1.md)
 
 # Finish the project statistics core landing
 
