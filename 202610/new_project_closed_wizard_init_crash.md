@@ -1,14 +1,12 @@
 ---
 tier: tale
 title: Fix New Project wizard crash on late sase init outcome
-goal:
-  A sase init hand-off that finishes after the New Project wizard closed never touches
-  the dismissed wizard, so the TUI no longer crashes with NoMatches.
+goal: A sase init hand-off that finishes after the New Project wizard closed never
+  touches the dismissed wizard, so the TUI no longer crashes with NoMatches.
 size: small
 proposed_by: bbugyi200.athena.10z
 proposed_with: claude/opus
-create_time: 2026-10-17 11:31:14
-status: wip
+status: done
 ---
 
 # Plan: Fix the TUI crash when the `sase init` hand-off finishes after the New Project wizard closed
