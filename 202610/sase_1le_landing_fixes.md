@@ -2,11 +2,10 @@
 tier: tale
 size: medium
 title: Finish the sase.sh docs-redesign landing and close epic sase-1le
-goal:
-  Every sase.sh page shows working glossary tooltips, just check really runs the docs
-  build, the docs hygiene lint ignores link destinations, generated CLI pages are
-  identical on every supported Python, and epic sase-1le is closed with its plan marked
-  done.
+goal: Every sase.sh page shows working glossary tooltips, just check really runs the
+  docs build, the docs hygiene lint ignores link destinations, generated CLI pages
+  are identical on every supported Python, and epic sase-1le is closed with its plan
+  marked done.
 proposed_by: bbugyi200.athena.sase-1le.land
 bead: sase-1le
 status: done
@@ -16,11 +15,6 @@ status: done
   [202610/sase_sh_docs_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_sh_docs_redesign.md)
 - **BEAD:**
   [sase-1le](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1le/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1le.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1le.land.md)
-- **COMMITS:**
-  - [04490ca](https://github.com/sase-org/sase/commit/04490cabb19b0e4c2eb27e3b29864af58df12936)
-    — fix(docs): land sase-1le check, glossary, hygiene, and CLI usage defects
 
 # Finish the sase.sh docs-redesign landing and close epic sase-1le
 
