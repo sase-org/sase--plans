@@ -1,50 +1,46 @@
 ---
 tier: epic
-title:
-  Finish recapture correctness and release gate integration, then confirm sase v0.18.0
-goal:
-  Check-mode recapture preserves execution and completeness failures and obeys its
-  wall-clock budget. Current release gates and visual checks pass, ci_watch merges PR
-  299, and sase 0.18.0 installs from PyPI, allowing sase-1lh.7 and its parent sase-1lh
+title: Finish recapture correctness and release gate integration, then confirm sase
+  v0.18.0
+goal: Check-mode recapture preserves execution and completeness failures and obeys
+  its wall-clock budget. Current release gates and visual checks pass, ci_watch merges
+  PR 299, and sase 0.18.0 installs from PyPI, allowing sase-1lh.7 and its parent sase-1lh
   to finish their landing audits.
 parent_bead: sase-1lh.7
 phases:
-  - id: recapture-contract
-    title: Finish strict check-mode recovery and enforce the retry deadline
-    size: medium
-    depends_on: []
-    description:
-      "recapture-contract: repair internal-error masking, targeted-run false failures,
-      unbounded retry subprocesses, and the Python 3.12 help assertion without changing
-      update-mode salvage or exact golden matching."
-  - id: release-integration
-    title: Reconcile current release-blocking tests, docs anchors, and four visual diffs
-    size: medium
-    depends_on:
-      - recapture-contract
-    description:
-      "release-integration: integrate the launch submission timestamp and logical-plan
-      repair changes with their audits, reconcile docs-owned gate drift, inspect and
-      repair the four persistent visual differences, and verify the release floor
-      contract."
-  - id: release-watch
-    title: Watch v0.18.0 to PyPI after the repair commits land
-    size: small
-    depends_on:
-      - release-integration
-    description:
-      "release-watch: make no file edits, verify the committed repair baseline,
-      preflight the watcher, monitor one bounded watch, and always close with an honest
-      verdict."
+- id: recapture-contract
+  title: Finish strict check-mode recovery and enforce the retry deadline
+  size: medium
+  depends_on: []
+  description: 'recapture-contract: repair internal-error masking, targeted-run false
+    failures, unbounded retry subprocesses, and the Python 3.12 help assertion without
+    changing update-mode salvage or exact golden matching.'
+- id: release-integration
+  title: Reconcile current release-blocking tests, docs anchors, and four visual diffs
+  size: medium
+  depends_on:
+  - recapture-contract
+  description: 'release-integration: integrate the launch submission timestamp and
+    logical-plan repair changes with their audits, reconcile docs-owned gate drift,
+    inspect and repair the four persistent visual differences, and verify the release
+    floor contract.'
+- id: release-watch
+  title: Watch v0.18.0 to PyPI after the repair commits land
+  size: small
+  depends_on:
+  - release-integration
+  description: 'release-watch: make no file edits, verify the committed repair baseline,
+    preflight the watcher, monitor one bounded watch, and always close with an honest
+    verdict.'
 proposed_by: bbugyi200.athena.sase-1lh.7.land
 create_time: 2026-10-16 20:23:03
 status: wip
+bead_id: sase-1lh.7.5
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_recapture_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_recapture_release.md)
-- **PARENT:**
-  [202610/sase_1lh_landing_repair.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_1lh_landing_repair.md)
+- **PROMPT:** [prompts/202610/finish_recapture_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_recapture_release.md)
+- **PARENT:** [202610/sase_1lh_landing_repair.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_1lh_landing_repair.md)
+- **BEAD:** [sase-1lh.7.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.md)
 
 # Finish only the remaining release work
 
