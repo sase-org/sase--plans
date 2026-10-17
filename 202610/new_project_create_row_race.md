@@ -1,18 +1,22 @@
 ---
 tier: tale
 title: Fix New Project wizard never offering GitHub Create
-goal: The New Project Source stage pins the Create row for GitHub on open, so `n`
-  starts repository creation.
+goal:
+  The New Project Source stage pins the Create row for GitHub on open, so `n` starts
+  repository creation.
 size: small
 decisions:
   explain_n:
-    ask: When `n` finds no pinned Create row, should it show a toast explaining why
-      instead of doing nothing?
+    ask:
+      When `n` finds no pinned Create row, should it show a toast explaining why instead
+      of doing nothing?
     choices:
-      notify: Toast why `n` can't create yet (checking, or unsupported, press R);
-        adds one docs sentence
-      silent: Keep `n` a silent no-op without a Create row; only the race fix and
-        its tests land
+      notify:
+        Toast why `n` can't create yet (checking, or unsupported, press R); adds one
+        docs sentence
+      silent:
+        Keep `n` a silent no-op without a Create row; only the race fix and its tests
+        land
     default: notify
     why: the silent no-op is why this race was hard to diagnose
     answer: notify
@@ -21,6 +25,12 @@ proposed_with: claude/opus
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.10y](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.10y.md)
+- **COMMITS:**
+  - [1c1b5d5](https://github.com/sase-org/sase/commit/1c1b5d53d380697fbd68b644a42fcc6e18558842)
+    — fix(tui): repair new project create discovery race
 
 # Fix: New Project wizard never offers GitHub "Create", so `n` does nothing
 
