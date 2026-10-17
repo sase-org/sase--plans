@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "dedupe_sigterm",
+      "kind": "choice",
+      "ask": "Should the verified terminator skip its direct SIGTERM to processes its group SIGTERM already reached?",
+      "why": "Duplicate SIGTERMs can cut short a provider CLI's graceful shutdown.",
+      "choices": [
+        {
+          "key": "dedupe",
+          "label": "In-group processes get one graceful SIGTERM per pass; out-of-group ones are still signalled"
+        },
+        {
+          "key": "keep",
+          "label": "Every pinned pid still gets a direct SIGTERM on top of the group signal"
+        }
+      ],
+      "default": "dedupe",
+      "effective_default": "dedupe",
+      "requested_verified": false
+    }
+  ]
+}
