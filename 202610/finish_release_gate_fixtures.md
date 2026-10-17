@@ -1,47 +1,43 @@
 ---
 tier: epic
 title: Repair portable core publication and the remaining sase release gates
-goal:
-  Repair the core macOS compile failure and two Master Gate blockers, observe a
-  compatible published core and sase 0.18.0, and return the incomplete landing to
+goal: Repair the core macOS compile failure and two Master Gate blockers, observe
+  a compatible published core and sase 0.18.0, and return the incomplete landing to
   sase-1lh.7.5.4.3.3.
 parent_bead: sase-1lh.7.5.4.3.3
 phases:
-  - id: core
-    title: Make mobile pairing file modes portable to macOS
-    description:
-      "core: repair the two libc mode_t boundary mismatches blocking core 0.42.0,
-      preserve permission protections, and verify the linked core."
-    depends_on: []
-    size: small
-  - id: gates
-    title: Repair the launch timestamp fixture and rescue audit integration
-    description:
-      "gates: make the deferred-workspace test independent of ambient launch timestamps,
-      review the renamed rescue deletion site, finish the prior bounded fixture sweep
-      and tutorial proof, and verify current gates."
-    depends_on:
-      - core
-    size: medium
-  - id: watch
-    title: Observe the compatible core and guarded sase 0.18.0 publication
-    description:
-      "watch: verify the committed fixes, choose a containing core release target, and
-      run one self-closing release watch whose monitor has no follow-up and always
-      settles."
-    depends_on:
-      - gates
-    size: small
+- id: core
+  title: Make mobile pairing file modes portable to macOS
+  description: 'core: repair the two libc mode_t boundary mismatches blocking core
+    0.42.0, preserve permission protections, and verify the linked core.'
+  depends_on: []
+  size: small
+- id: gates
+  title: Repair the launch timestamp fixture and rescue audit integration
+  description: 'gates: make the deferred-workspace test independent of ambient launch
+    timestamps, review the renamed rescue deletion site, finish the prior bounded
+    fixture sweep and tutorial proof, and verify current gates.'
+  depends_on:
+  - core
+  size: medium
+- id: watch
+  title: Observe the compatible core and guarded sase 0.18.0 publication
+  description: 'watch: verify the committed fixes, choose a containing core release
+    target, and run one self-closing release watch whose monitor has no follow-up
+    and always settles.'
+  depends_on:
+  - gates
+  size: small
 proposed_by: bbugyi200.athena.sase-1lh.7.5.4.3.3.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-17 17:10:43
 status: wip
+bead_id: sase-1lh.7.5.4.3.3.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_release_gate_fixtures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_release_gate_fixtures.md)
-- **PARENT:**
-  [202610/green_gates_ship_0_18_0.md](https://github.com/sase-org/sase--plans/blob/main/202610/green_gates_ship_0_18_0.md)
+- **PROMPT:** [prompts/202610/finish_release_gate_fixtures.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_release_gate_fixtures.md)
+- **PARENT:** [202610/green_gates_ship_0_18_0.md](https://github.com/sase-org/sase--plans/blob/main/202610/green_gates_ship_0_18_0.md)
+- **BEAD:** [sase-1lh.7.5.4.3.3.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.4.3.3.4.md)
 
 # Finish the remaining release work
 
