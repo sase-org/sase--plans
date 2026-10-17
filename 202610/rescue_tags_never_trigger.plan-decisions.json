@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "detached_tag_checkout",
+      "kind": "toggle",
+      "ask": "Should a detached HEAD resting on a tag (git checkout <tag>) stop counting as local work?",
+      "why": "Agents check out old tags to research versions; same false-positive class as tag bundles",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
