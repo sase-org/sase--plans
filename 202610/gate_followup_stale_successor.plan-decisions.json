@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "rust_guard",
+      "kind": "toggle",
+      "ask": "Should sase-core also refuse to adopt on a first-pass settle that has no recorded launch attempt?",
+      "why": "Puts the invariant in the Rust decision layer, guarding against future evidence bugs",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
