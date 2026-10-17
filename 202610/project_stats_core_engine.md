@@ -1,56 +1,51 @@
 ---
 tier: epic
 title: Project statistics core engine for sase-1m3.4
-goal:
-  Complete the Rust project_stats API, hardened Git execution, cached full-DAG history,
-  Output and lifetime aggregation, and Python binding required by sase-1m3.4, leaving
-  stable extension points for its sibling facets.
+goal: Complete the Rust project_stats API, hardened Git execution, cached full-DAG
+  history, Output and lifetime aggregation, and Python binding required by sase-1m3.4,
+  leaving stable extension points for its sibling facets.
 phases:
-  - id: wire-seams
-    title: Complete wire types and facet extension points
-    depends_on: []
-    size: medium
-    description:
-      "wire-seams: define the complete project_stats request and response contracts,
-      internal history and directory types, validation, and empty facet seams without
-      adding user-facing callers."
-  - id: git-runner
-    title: Harden shared Git execution and add bounded batch input
-    depends_on: []
-    size: medium
-    description:
-      "git-runner: scrub repository-routing environment variables in
-      file_history::runner and add concurrent stdin and stdout handling with timeout,
-      output-cap, and cleanup tests."
-  - id: history-cache
-    title: Resolve repositories and cache complete commit history
-    depends_on:
-      - wire-seams
-      - git-runner
-    size: medium
-    description:
-      "history-cache: implement repository identity and ref validation, full-DAG footer
-      parsing, incremental history folding, atomic cache persistence, and repository and
-      cache regression fixtures."
-  - id: query-binding
-    title: Aggregate Output and lifetime statistics and expose the binding
-    depends_on:
-      - history-cache
-    size: medium
-    description:
-      "query-binding: implement footer attribution, deduplicated project and portfolio
-      aggregates, coverage and fingerprints, query dispatch, the project_stats_query
-      binding, and measured cold and warm history acceptance."
+- id: wire-seams
+  title: Complete wire types and facet extension points
+  depends_on: []
+  size: medium
+  description: 'wire-seams: define the complete project_stats request and response
+    contracts, internal history and directory types, validation, and empty facet seams
+    without adding user-facing callers.'
+- id: git-runner
+  title: Harden shared Git execution and add bounded batch input
+  depends_on: []
+  size: medium
+  description: 'git-runner: scrub repository-routing environment variables in file_history::runner
+    and add concurrent stdin and stdout handling with timeout, output-cap, and cleanup
+    tests.'
+- id: history-cache
+  title: Resolve repositories and cache complete commit history
+  depends_on:
+  - wire-seams
+  - git-runner
+  size: medium
+  description: 'history-cache: implement repository identity and ref validation, full-DAG
+    footer parsing, incremental history folding, atomic cache persistence, and repository
+    and cache regression fixtures.'
+- id: query-binding
+  title: Aggregate Output and lifetime statistics and expose the binding
+  depends_on:
+  - history-cache
+  size: medium
+  description: 'query-binding: implement footer attribution, deduplicated project
+    and portfolio aggregates, coverage and fingerprints, query dispatch, the project_stats_query
+    binding, and measured cold and warm history acceptance.'
 proposed_by: bbugyi200.apollo.sase-1m3.4
 parent_bead: sase-1m3.4
 create_time: 2026-10-16 22:15:58
 status: wip
+bead_id: sase-1m3.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/project_stats_core_engine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_stats_core_engine.md)
-- **PARENT:**
-  [202610/sase_stats_project.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_stats_project.md)
+- **PROMPT:** [prompts/202610/project_stats_core_engine.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/project_stats_core_engine.md)
+- **PARENT:** [202610/sase_stats_project.md](https://github.com/sase-org/sase--plans/blob/main/202610/sase_stats_project.md)
+- **BEAD:** [sase-1m3.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1m3/sase-1m3.4.1.md)
 
 # Project statistics core engine for sase-1m3.4
 
