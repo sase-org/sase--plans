@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "first_branch",
+      "kind": "choice",
+      "ask": "Which branch should setup create when it pushes the first commit to an empty GitHub repository?",
+      "why": "Matches the clone and your git default, works for bare git, needs no extra API call",
+      "choices": [
+        {
+          "key": "local",
+          "label": "The clone's own branch (your git default, master here); GitHub adopts it; sase-only"
+        },
+        {
+          "key": "provider",
+          "label": "GitHub's configured default (main here) via a new sase-github REST probe fallback"
+        }
+      ],
+      "default": "local",
+      "effective_default": "local",
+      "requested_verified": false
+    }
+  ]
+}
