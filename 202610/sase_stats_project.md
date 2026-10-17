@@ -1,149 +1,138 @@
 ---
 tier: epic
-title: "sase stats project: one shared Projects report with honest model attribution"
-goal: "`sase stats project` and the Admin Center's Statistics → Projects tab render one
-  Rust-backed report through the same loader, view model, legends, and section
-  renderers. The report shows landed commits and committed plans attributed to a
-  provider/model with visible coverage, a lifetime code snapshot, and this machine's
-  agent runs. Every new agent commit and proposed plan records its model at write time.
+title: 'sase stats project: one shared Projects report with honest model attribution'
+goal: '`sase stats project` and the Admin Center''s Statistics → Projects tab render
+  one Rust-backed report through the same loader, view model, legends, and section
+  renderers. The report shows landed commits and committed plans attributed to a provider/model
+  with visible coverage, a lifetime code snapshot, and this machine''s agent runs.
+  Every new agent commit and proposed plan records its model at write time.
 
-  "
+  '
 decisions:
   stats_decision_record:
-    ask:
-      "Add a decisions-web record: stats count each fact at its durable source, and
-      footers stamp only underivable facts?"
+    ask: 'Add a decisions-web record: stats count each fact at its durable source,
+      and footers stamp only underivable facts?'
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 phases:
-  - id: provenance
-    title: Write-time model provenance and the commit-record projection fix
-    depends_on: []
-    size: medium
-    description:
-      "provenance: stamp `SASE_MODEL=<provider>/<model>` on agent commits and
-      `proposed_with` on proposed plans (including the sase-core plan-schema change),
-      and stop projecting PR URLs into commit records' `sha`."
-  - id: inventory
-    title: Per-project linked-repo resolution and declared-by provenance
-    depends_on: []
-    size: medium
-    description:
-      "inventory: fix sase-1lk so another project's linked repos never absorb the cwd
-      project's entries, and record whether each linked repo was declared by the project
-      or by user-wide config."
-  - id: foundation
-    title: Statistics registry, neutral render primitives, palette, and range grammar
-    depends_on: []
-    size: medium
-    description:
-      "foundation: a zero-visual-diff refactor that promotes the view specs and legends
-      into `sase.stats.registry`, moves the loader out of the TUI package, extracts
-      Textual-free render primitives and the provider palette, and adds one shared range
-      parser."
-  - id: core-engine
-    title: sase-core project_stats wire, git history walk, cache, and footer attribution
-    depends_on: []
-    size: large
-    description:
-      "core-engine: add `sase_core::project_stats` with the full request/response wire,
-      a hardened git runner, the cached incremental history walk, the Output and
-      lifetime aggregates with footer attribution, per-facet seams, and the
-      `project_stats_query` binding."
-  - id: core-runs
-    title: Runs facet over the existing agent_stats fold
-    depends_on:
-      - core-engine
-    size: small
-    description:
-      "core-runs: fill the Runs facet and Patch rows by calling
-      `agent_stats::query_run_stats` once, adding a code-repos-only run-commit count,
-      and prove the numbers match today's Projects tab."
-  - id: core-attribution
-    title: Agent directory join and the committed-plans facet
-    depends_on:
-      - core-engine
-    size: medium
-    description:
-      "core-attribution: build the read-only agent directory from agents-sidecar pages
-      and the local run index for attribution steps 2-4, and count committed plans
-      (rename-aware first adds) credited to the proposing model."
-  - id: core-code
-    title: Code snapshot, role classifier, tokei gate, and records tier
-    depends_on:
-      - core-engine
-    size: large
-    description:
-      "core-code: measure role-classified lines over each code repo's committed tree
-      with a per-blob incremental cache, run the tokei dependency gate (falling back to
-      non-blank lines), and summarize the records tier."
-  - id: loader
-    title: Python project-stats loader, facade, and view model
-    depends_on:
-      - foundation
-      - inventory
-      - core-engine
-    size: medium
-    description:
-      "loader: add `sase.stats.project.load_project_stats`, which resolves projects,
-      tiers their repos, builds the request, calls the binding, and returns a frozen
-      `ProjectStatsView`, plus the facade, pin bump, and the `sase disk` cache row."
-  - id: render
-    title: Shared Rich and Markdown section renderers
-    depends_on:
-      - loader
-    size: medium
-    description:
-      "render: add the shared report groupings and legends to the registry, and build
-      pure section renderers (card, project, repo, model, and patch tables, legend,
-      coverage) and the Markdown renderer over `ProjectStatsView` and a `RenderContext`,
-      with width-pinned goldens."
-  - id: cli
-    title: The sase stats group and the project command
-    depends_on:
-      - render
-      - core-runs
-      - core-attribution
-      - core-code
-    size: medium
-    description:
-      "cli: register `sase stats` and `sase stats project` with rich/markdown/json
-      output, the versioned JSON envelope, fetch, exit codes, root help, completion
-      snapshot, and the generated CLI reference page."
-  - id: tui
-    title: Statistics → Projects tab migration
-    depends_on:
-      - render
-      - core-runs
-      - core-attribution
-      - core-code
-    size: large
-    description:
-      "tui: route the Projects tab through `load_project_stats` with progressive paint
-      and revalidating ticks, render it with the shared renderers and the new
-      project/repo/model/patch groupings, relabel Overview's tile, and update help,
-      legends, goldens, and docs."
-  - id: acceptance
-    title: Cross-surface parity, budgets, and real-data verification
-    depends_on:
-      - provenance
-      - cli
-      - tui
-    size: small
-    description:
-      "acceptance: add the CLI-to-TUI parity and registry option-map tests, verify
-      invariants and coverage on this machine's real data, measure the performance
-      budgets, run the full visual suite, and record follow-ups."
+- id: provenance
+  title: Write-time model provenance and the commit-record projection fix
+  depends_on: []
+  size: medium
+  description: 'provenance: stamp `SASE_MODEL=<provider>/<model>` on agent commits
+    and `proposed_with` on proposed plans (including the sase-core plan-schema change),
+    and stop projecting PR URLs into commit records'' `sha`.'
+- id: inventory
+  title: Per-project linked-repo resolution and declared-by provenance
+  depends_on: []
+  size: medium
+  description: 'inventory: fix sase-1lk so another project''s linked repos never absorb
+    the cwd project''s entries, and record whether each linked repo was declared by
+    the project or by user-wide config.'
+- id: foundation
+  title: Statistics registry, neutral render primitives, palette, and range grammar
+  depends_on: []
+  size: medium
+  description: 'foundation: a zero-visual-diff refactor that promotes the view specs
+    and legends into `sase.stats.registry`, moves the loader out of the TUI package,
+    extracts Textual-free render primitives and the provider palette, and adds one
+    shared range parser.'
+- id: core-engine
+  title: sase-core project_stats wire, git history walk, cache, and footer attribution
+  depends_on: []
+  size: large
+  description: 'core-engine: add `sase_core::project_stats` with the full request/response
+    wire, a hardened git runner, the cached incremental history walk, the Output and
+    lifetime aggregates with footer attribution, per-facet seams, and the `project_stats_query`
+    binding.'
+- id: core-runs
+  title: Runs facet over the existing agent_stats fold
+  depends_on:
+  - core-engine
+  size: small
+  description: 'core-runs: fill the Runs facet and Patch rows by calling `agent_stats::query_run_stats`
+    once, adding a code-repos-only run-commit count, and prove the numbers match today''s
+    Projects tab.'
+- id: core-attribution
+  title: Agent directory join and the committed-plans facet
+  depends_on:
+  - core-engine
+  size: medium
+  description: 'core-attribution: build the read-only agent directory from agents-sidecar
+    pages and the local run index for attribution steps 2-4, and count committed plans
+    (rename-aware first adds) credited to the proposing model.'
+- id: core-code
+  title: Code snapshot, role classifier, tokei gate, and records tier
+  depends_on:
+  - core-engine
+  size: large
+  description: 'core-code: measure role-classified lines over each code repo''s committed
+    tree with a per-blob incremental cache, run the tokei dependency gate (falling
+    back to non-blank lines), and summarize the records tier.'
+- id: loader
+  title: Python project-stats loader, facade, and view model
+  depends_on:
+  - foundation
+  - inventory
+  - core-engine
+  size: medium
+  description: 'loader: add `sase.stats.project.load_project_stats`, which resolves
+    projects, tiers their repos, builds the request, calls the binding, and returns
+    a frozen `ProjectStatsView`, plus the facade, pin bump, and the `sase disk` cache
+    row.'
+- id: render
+  title: Shared Rich and Markdown section renderers
+  depends_on:
+  - loader
+  size: medium
+  description: 'render: add the shared report groupings and legends to the registry,
+    and build pure section renderers (card, project, repo, model, and patch tables,
+    legend, coverage) and the Markdown renderer over `ProjectStatsView` and a `RenderContext`,
+    with width-pinned goldens.'
+- id: cli
+  title: The sase stats group and the project command
+  depends_on:
+  - render
+  - core-runs
+  - core-attribution
+  - core-code
+  size: medium
+  description: 'cli: register `sase stats` and `sase stats project` with rich/markdown/json
+    output, the versioned JSON envelope, fetch, exit codes, root help, completion
+    snapshot, and the generated CLI reference page.'
+- id: tui
+  title: Statistics → Projects tab migration
+  depends_on:
+  - render
+  - core-runs
+  - core-attribution
+  - core-code
+  size: large
+  description: 'tui: route the Projects tab through `load_project_stats` with progressive
+    paint and revalidating ticks, render it with the shared renderers and the new
+    project/repo/model/patch groupings, relabel Overview''s tile, and update help,
+    legends, goldens, and docs.'
+- id: acceptance
+  title: Cross-surface parity, budgets, and real-data verification
+  depends_on:
+  - provenance
+  - cli
+  - tui
+  size: small
+  description: 'acceptance: add the CLI-to-TUI parity and registry option-map tests,
+    verify invariants and coverage on this machine''s real data, measure the performance
+    budgets, run the full visual suite, and record follow-ups.'
 proposed_by: bbugyi200.apollo.research.1s.linker.w0
 decided_by: auto
 create_time: 2026-10-16 22:05:14
 status: wip
+bead_id: sase-1m3
 ---
 
-- **PROMPT:**
-  [prompts/202610/sase_stats_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_stats_project.md)
+- **PROMPT:** [prompts/202610/sase_stats_project.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/sase_stats_project.md)
+- **BEAD:** [sase-1m3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1m3/README.md)
 
 # Plan: `sase stats project`, one shared Projects report with honest model attribution
 
