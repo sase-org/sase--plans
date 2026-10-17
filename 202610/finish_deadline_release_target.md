@@ -1,36 +1,33 @@
 ---
 tier: epic
 title: Finish visual subprocess deadlines and restore the 0.18.0 release target
-goal:
-  Visual retries cannot escape their wall-clock deadline, and the approved sase 0.18.0
-  release is published and verified through ci_watch.
+goal: Visual retries cannot escape their wall-clock deadline, and the approved sase
+  0.18.0 release is published and verified through ci_watch.
 parent_bead: sase-1lh.7.5
 phases:
-  - id: deadline-repair
-    title: Bound every subprocess exit path and declare the intended release version
-    depends_on: []
-    description:
-      "deadline-repair: fix early-EOF waits and surviving descendants, add bounded
-      regressions, and include Release-As: 0.18.0 in the host commit declaration."
-    size: medium
-  - id: release-watch
-    title: Restore the generated release PR target and verify publication
-    depends_on:
-      - deadline-repair
-    description:
-      "release-watch: make no file edits, verify the committed repair and Release-As
-      trailer, regenerate the release PR through Publish, then run a bounded watch with
-      an honest close."
-    size: small
+- id: deadline-repair
+  title: Bound every subprocess exit path and declare the intended release version
+  depends_on: []
+  description: 'deadline-repair: fix early-EOF waits and surviving descendants, add
+    bounded regressions, and include Release-As: 0.18.0 in the host commit declaration.'
+  size: medium
+- id: release-watch
+  title: Restore the generated release PR target and verify publication
+  depends_on:
+  - deadline-repair
+  description: 'release-watch: make no file edits, verify the committed repair and
+    Release-As trailer, regenerate the release PR through Publish, then run a bounded
+    watch with an honest close.'
+  size: small
 proposed_by: bbugyi200.athena.sase-1lh.7.5.land
 create_time: 2026-10-16 23:11:53
 status: wip
+bead_id: sase-1lh.7.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_deadline_release_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_deadline_release_target.md)
-- **PARENT:**
-  [202610/finish_recapture_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_recapture_release.md)
+- **PROMPT:** [prompts/202610/finish_deadline_release_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_deadline_release_target.md)
+- **PARENT:** [202610/finish_recapture_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_recapture_release.md)
+- **BEAD:** [sase-1lh.7.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.4.md)
 
 # Finish the remaining deadline and release work
 
