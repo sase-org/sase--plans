@@ -1,51 +1,49 @@
 ---
 tier: epic
-title:
-  Green master's release gates and ship sase v0.18.0 through a watch that always
+title: Green master's release gates and ship sase v0.18.0 through a watch that always
   releases its lander
-goal: "Master Gate and Full CI are green on master, ci_watch merges release-please PR
-  #299, and sase 0.18.0 installs from PyPI. The release-watch phase's bead and agent
-  session both settle without any LLM follow-up turn, so the land agent always runs,
-  confirms the release before landing, and then resumes the stalled sase-1lh landing
-  chain.
+goal: 'Master Gate and Full CI are green on master, ci_watch merges release-please
+  PR #299, and sase 0.18.0 installs from PyPI. The release-watch phase''s bead and
+  agent session both settle without any LLM follow-up turn, so the land agent always
+  runs, confirms the release before landing, and then resumes the stalled sase-1lh
+  landing chain.
 
-  "
+  '
 parent_bead: sase-1lh.7.5.4.3
 phases:
-  - id: clock
-    title: Fix the aged-out auto-restart fixture stamps (sase-1ma)
-    depends_on: []
-    size: small
-    description:
-      "clock: stop the hung previous watch turn and its parked lander, derive the
-      sweep-safety fixture row stamps from the test clock, and sweep for other aged-out
-      calendar fixtures."
-  - id: ci-reds
-    title: Fix the intermittent tutorial gate and any other current gate red
-    depends_on: []
-    size: medium
-    description:
-      'ci-reds: root-cause and fix the intermittent "no agents appeared after sase run"
-      tutorial failure, make that failure self-diagnosing, and fix any other
-      deterministic Master Gate or Full CI red except the clock phase''s test.'
-  - id: watch
-    title: Watch v0.18.0 to PyPI with a self-closing, follow-up-free monitor
-    depends_on:
-      - clock
-      - ci-reds
-    size: small
-    model: claude/sonnet
-    description:
-      "watch: make no edits; preflight tools/release_watch, then start one monitor with
-      no follow-up whose watcher closes this bead and whose command always exits 0."
+- id: clock
+  title: Fix the aged-out auto-restart fixture stamps (sase-1ma)
+  depends_on: []
+  size: small
+  description: 'clock: stop the hung previous watch turn and its parked lander, derive
+    the sweep-safety fixture row stamps from the test clock, and sweep for other aged-out
+    calendar fixtures.'
+- id: ci-reds
+  title: Fix the intermittent tutorial gate and any other current gate red
+  depends_on: []
+  size: medium
+  description: 'ci-reds: root-cause and fix the intermittent "no agents appeared after
+    sase run" tutorial failure, make that failure self-diagnosing, and fix any other
+    deterministic Master Gate or Full CI red except the clock phase''s test.'
+- id: watch
+  title: Watch v0.18.0 to PyPI with a self-closing, follow-up-free monitor
+  depends_on:
+  - clock
+  - ci-reds
+  size: small
+  model: claude/sonnet
+  description: 'watch: make no edits; preflight tools/release_watch, then start one
+    monitor with no follow-up whose watcher closes this bead and whose command always
+    exits 0.'
 proposed_by: bbugyi200.athena.113
 proposed_with: claude/opus
 create_time: 2026-10-17 14:27:18
 status: wip
+bead_id: sase-1lh.7.5.4.3.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/green_gates_ship_0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/green_gates_ship_0_18_0.md)
+- **PROMPT:** [prompts/202610/green_gates_ship_0_18_0.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/green_gates_ship_0_18_0.md)
+- **BEAD:** [sase-1lh.7.5.4.3.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.4.3.3.md)
 
 # Green master's release gates and ship sase v0.18.0
 
