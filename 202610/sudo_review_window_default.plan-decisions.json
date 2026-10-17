@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "review_window",
+      "kind": "choice",
+      "ask": "How long should an unanswered sudo request stay open by default?",
+      "why": "Approval already needs Bryan at a PAM terminal, so the window must outlast an absence",
+      "choices": [
+        {
+          "key": "day",
+          "label": "One day (86400s), matching every other gate-turn gate and the sudo cap"
+        },
+        {
+          "key": "four_hours",
+          "label": "Four hours (14400s); stale root commands expire sooner, but overnight phases still die"
+        }
+      ],
+      "default": "day",
+      "effective_default": "day",
+      "requested_verified": false
+    }
+  ]
+}
