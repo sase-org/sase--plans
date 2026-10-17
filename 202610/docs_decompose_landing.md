@@ -1,12 +1,13 @@
 ---
 tier: tale
 size: medium
-title: Finish landing docs epic sase-1le.20.1 with MkDocs-accurate anchors, then close
-  it out
-goal: Every pre-epic sase.sh deep link into the decomposed legacy docs pages resolves
-  again, the docs split and move tools record the anchor ids MkDocs actually renders,
-  Deploy Docs builds and validates its handbook PDF, and epic sase-1le.20.1 plus its
-  parent phase sase-1le.20 are closed with verified notes.
+title:
+  Finish landing docs epic sase-1le.20.1 with MkDocs-accurate anchors, then close it out
+goal:
+  Every pre-epic sase.sh deep link into the decomposed legacy docs pages resolves again,
+  the docs split and move tools record the anchor ids MkDocs actually renders, Deploy
+  Docs builds and validates its handbook PDF, and epic sase-1le.20.1 plus its parent
+  phase sase-1le.20 are closed with verified notes.
 proposed_by: bbugyi200.athena.sase-1le.20.1.land
 bead: sase-1le.20.1
 status: done
@@ -16,6 +17,11 @@ status: done
   [202610/docs_decompose.md](https://github.com/sase-org/sase--plans/blob/main/202610/docs_decompose.md)
 - **BEAD:**
   [sase-1le.20.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1le/sase-1le.20.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1le.20.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1le.20.1.land.md)
+- **COMMITS:**
+  - [08d9b66](https://github.com/sase-org/sase/commit/08d9b66154cff1810d95a013e7567c6285c214b4)
+    — fix(docs): match split anchors to MkDocs output
 
 # Finish landing docs epic sase-1le.20.1
 
