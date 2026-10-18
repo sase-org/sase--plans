@@ -1,24 +1,35 @@
 ---
 tier: tale
 title: Fix the sase-core CI flakes in the bead read model and tool_run tests
-goal: sase-core master CI goes green and stays green; the two recurring flakes are
-  fixed at the root.
+goal:
+  sase-core master CI goes green and stays green; the two recurring flakes are fixed at
+  the root.
 size: medium
 decisions:
   cas_loss:
     ask: Should a stamp or sweep refresh that loses its CAS make that one read replay?
     choices:
       replay: This read replays; never serves rows the probe did not validate
-      serve_winner: Serve the winner via open_and_serve like commit_tail; may serve
-        just-invalidated rows
+      serve_winner:
+        Serve the winner via open_and_serve like commit_tail; may serve just-invalidated
+        rows
     default: replay
-    why: The race is rare, a replay is always correct, and the winner may be an invalidation
+    why:
+      The race is rare, a replay is always correct, and the winner may be an
+      invalidation
     answer: replay
 proposed_by: bbugyi200.athena.11f
 proposed_with: claude/opus
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.11f](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.11f.md)
+- **COMMITS:**
+  - [0834d84](https://github.com/sase-org/sase-core/commit/0834d8446a6baf62ef76208e134bc220a7f4a07e)
+    — fix(bead-read-model): guard freshness stamps and sweep refreshes with the
+    generation CAS
 
 # Plan: Fix the sase-core CI flakes: unguarded read-model freshness stamps, and a hex-collision test
 
