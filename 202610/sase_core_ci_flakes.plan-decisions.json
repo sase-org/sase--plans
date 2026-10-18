@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "cas_loss",
+      "kind": "choice",
+      "ask": "Should a stamp or sweep refresh that loses its CAS make that one read replay?",
+      "why": "The race is rare, a replay is always correct, and the winner may be an invalidation",
+      "choices": [
+        {
+          "key": "replay",
+          "label": "This read replays; never serves rows the probe did not validate"
+        },
+        {
+          "key": "serve_winner",
+          "label": "Serve the winner via open_and_serve like commit_tail; may serve just-invalidated rows"
+        }
+      ],
+      "default": "replay",
+      "effective_default": "replay",
+      "requested_verified": false
+    }
+  ]
+}
