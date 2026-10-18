@@ -1,74 +1,68 @@
 ---
 tier: epic
-title:
-  Clear the post-repair Master Gate and Full CI reds and ship sase v0.18.0 through
+title: Clear the post-repair Master Gate and Full CI reds and ship sase v0.18.0 through
   ci_watch
-goal: "sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
+goal: 'sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
   merged it on a green Master Gate and a fresh green Full CI, with sase-core-rs 0.42.0
-  published as its core floor. The release is confirmed before landing and recorded in
-  an evidence artifact by the final epic lander, and parent epic sase-1mk is resumed and
-  closed.
+  published as its core floor. The release is confirmed before landing and recorded
+  in an evidence artifact by the final epic lander, and parent epic sase-1mk is resumed
+  and closed.
 
-  "
+  '
 parent_bead: sase-1mk
 phases:
-  - id: research-readme
-    title: Restore the generated research sidecar README
-    depends_on: []
-    size: small
-    description:
-      "research-readme: regenerate the research sidecar README that commit dcbfd0dc
-      hand-edited (sase-1mm), so init repo --check and both lint lanes pass."
-  - id: jump-golden
-    title: Resolve the agents JUMP panel golden drift from the clan Enter change
-    depends_on: []
-    size: medium
-    description:
-      "jump-golden: decide whether the db14df00e6 JUMP title change is intended, then
-      fix the product or update the golden so Full CI visual-test passes."
-  - id: link-follow-kind
-    title: Stop inventory-miss completion from overriding kind-corrected link follows
-    depends_on: []
-    size: medium
-    description:
-      "link-follow-kind: fix the sase-1mk.7 regression that completes a kind-mismatched
-      follow as MISSING during a pending query, keeping sase-1lr fixed."
-  - id: new-project-owner
-    title: Fix the New Project create-form readiness regression on owner switch
-    depends_on: []
-    size: medium
-    description:
-      "new-project-owner: fix the sase-1mk.6 RepoCreationFormWidget readiness regression
-      that strands the create form after an owner switch in every Full CI leg."
-  - id: runtime-flakes
-    title: Fix the known-continuation and provider-drain flakes
-    depends_on: []
-    size: medium
-    description:
-      "runtime-flakes: root-cause test_agent_run_stops_on_generic_output and the
-      provider-drain JSONDecodeError (sase-1k2) outside the TUI."
-  - id: watch
-    title: Watch sase 0.18.0 to PyPI and always close
-    depends_on:
-      - research-readme
-      - jump-golden
-      - link-follow-kind
-      - new-project-owner
-      - runtime-flakes
-    size: small
-    description:
-      "watch: run one bounded tools/release_watch monitor that closes this phase bead on
-      every outcome, so the lander always runs."
+- id: research-readme
+  title: Restore the generated research sidecar README
+  depends_on: []
+  size: small
+  description: 'research-readme: regenerate the research sidecar README that commit
+    dcbfd0dc hand-edited (sase-1mm), so init repo --check and both lint lanes pass.'
+- id: jump-golden
+  title: Resolve the agents JUMP panel golden drift from the clan Enter change
+  depends_on: []
+  size: medium
+  description: 'jump-golden: decide whether the db14df00e6 JUMP title change is intended,
+    then fix the product or update the golden so Full CI visual-test passes.'
+- id: link-follow-kind
+  title: Stop inventory-miss completion from overriding kind-corrected link follows
+  depends_on: []
+  size: medium
+  description: 'link-follow-kind: fix the sase-1mk.7 regression that completes a kind-mismatched
+    follow as MISSING during a pending query, keeping sase-1lr fixed.'
+- id: new-project-owner
+  title: Fix the New Project create-form readiness regression on owner switch
+  depends_on: []
+  size: medium
+  description: 'new-project-owner: fix the sase-1mk.6 RepoCreationFormWidget readiness
+    regression that strands the create form after an owner switch in every Full CI
+    leg.'
+- id: runtime-flakes
+  title: Fix the known-continuation and provider-drain flakes
+  depends_on: []
+  size: medium
+  description: 'runtime-flakes: root-cause test_agent_run_stops_on_generic_output
+    and the provider-drain JSONDecodeError (sase-1k2) outside the TUI.'
+- id: watch
+  title: Watch sase 0.18.0 to PyPI and always close
+  depends_on:
+  - research-readme
+  - jump-golden
+  - link-follow-kind
+  - new-project-owner
+  - runtime-flakes
+  size: small
+  description: 'watch: run one bounded tools/release_watch monitor that closes this
+    phase bead on every outcome, so the lander always runs.'
 proposed_by: bbugyi200.athena.sase-1mk.land
 proposed_with: claude/opus
 create_time: 2026-10-18 16:47:56
 status: wip
+bead_id: sase-1mk.9
 ---
 
-- **PROMPT:**
-  [prompts/202610/ship_v0_18_0_post_repair_reds.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_post_repair_reds.md)
-- **PARENT:**
-  [202610/ship_v0_18_0_owned_blockers.md](https://github.com/sase-org/sase--plans/blob/main/202610/ship_v0_18_0_owned_blockers.md)
+- **PROMPT:** [prompts/202610/ship_v0_18_0_post_repair_reds.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_post_repair_reds.md)
+- **PARENT:** [202610/ship_v0_18_0_owned_blockers.md](https://github.com/sase-org/sase--plans/blob/main/202610/ship_v0_18_0_owned_blockers.md)
+- **BEAD:** [sase-1mk.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1mk/sase-1mk.9.md)
 
 # Plan: Clear the post-repair Master Gate and Full CI reds and ship sase v0.18.0 through ci_watch
 
