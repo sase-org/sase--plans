@@ -1,41 +1,40 @@
 ---
 tier: epic
 title: Mermaid diagram handoff from the research_swarm image agent to the linker
-goal: "A `#research_swarm` run with image or diagram work enabled gets zero to three
-  validated Mermaid diagrams. The image agent proposes them in a companion manifest that
-  binds each one to a passage of the lead's report, and the linker places them verbatim
-  next to those passages in the published `<name>.md`. The lead's report is never
-  edited, and no diagram failure ever blocks publication.
+goal: 'A `#research_swarm` run with image or diagram work enabled gets zero to three
+  validated Mermaid diagrams. The image agent proposes them in a companion manifest
+  that binds each one to a passage of the lead''s report, and the linker places them
+  verbatim next to those passages in the published `<name>.md`. The lead''s report
+  is never edited, and no diagram failure ever blocks publication.
 
-  "
+  '
 phases:
-  - id: manifest-producer
-    title: Diagram manifest producer and companion exclusion
-    depends_on: []
-    size: medium
-    description:
-      "manifest-producer: add the `!20*/**/*.diagrams.md` companion exclusion to the
-      provider globs and ship the new `#research/diagrams` macro that decides, draws,
-      render-checks, anchors, writes, and registers a `<stem>.diagrams.md` manifest and
-      always sets the `diagrams` status variable, with tests and docs."
-  - id: swarm-diagram-handoff
-    title: Swarm diagrams flag and linker placement
-    depends_on:
-      - manifest-producer
-    size: medium
-    description:
-      "swarm-diagram-handoff: add the nullable `diagrams` swarm input, run
-      `#research/diagrams` after `#research/image` in the image segment, and teach the
-      linker to read, bind before restructuring, place verbatim, gate, and report
-      diagram proposals, with the render matrix tests and docs."
+- id: manifest-producer
+  title: Diagram manifest producer and companion exclusion
+  depends_on: []
+  size: medium
+  description: 'manifest-producer: add the `!20*/**/*.diagrams.md` companion exclusion
+    to the provider globs and ship the new `#research/diagrams` macro that decides,
+    draws, render-checks, anchors, writes, and registers a `<stem>.diagrams.md` manifest
+    and always sets the `diagrams` status variable, with tests and docs.'
+- id: swarm-diagram-handoff
+  title: Swarm diagrams flag and linker placement
+  depends_on:
+  - manifest-producer
+  size: medium
+  description: 'swarm-diagram-handoff: add the nullable `diagrams` swarm input, run
+    `#research/diagrams` after `#research/image` in the image segment, and teach the
+    linker to read, bind before restructuring, place verbatim, gate, and report diagram
+    proposals, with the render matrix tests and docs.'
 proposed_by: bbugyi200.apollo.research.21.linker.w0
 proposed_with: claude/opus
 create_time: 2026-10-18 11:53:24
 status: wip
+bead_id: sase-1ml
 ---
 
-- **PROMPT:**
-  [prompts/202610/research_swarm_mermaid_diagrams.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_swarm_mermaid_diagrams.md)
+- **PROMPT:** [prompts/202610/research_swarm_mermaid_diagrams.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_swarm_mermaid_diagrams.md)
+- **BEAD:** [sase-1ml](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ml/README.md)
 
 # Plan: Mermaid diagram handoff from the research_swarm image agent to the linker
 
