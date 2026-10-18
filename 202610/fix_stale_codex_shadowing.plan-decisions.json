@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "stale_installs",
+      "kind": "choice",
+      "ask": "How should the stale root-owned codex and claude installs under /usr/local be fixed?",
+      "why": "One install per CLI removes the PATH-order hazard instead of resetting the drift clock",
+      "choices": [
+        {
+          "key": "remove",
+          "label": "Delete the stale /usr/local copies; nvm installs become the only copies and cannot drift"
+        },
+        {
+          "key": "upgrade",
+          "label": "Upgrade the /usr/local copies in place; two installs per CLI can drift again later"
+        }
+      ],
+      "default": "remove",
+      "effective_default": "remove",
+      "requested_verified": false
+    },
+    {
+      "id": "shadow_detection",
+      "kind": "choice",
+      "ask": "Should SASE detect shadowed agent CLI installs and name the binary when Codex rejects its version?",
+      "why": "Shell and agent runners resolve different binaries, so tooling said current while agents ran stale",
+      "choices": [
+        {
+          "key": "add",
+          "label": "Report skew in agent-cli list and doctor, plus an actionable Codex version-rejection error"
+        },
+        {
+          "key": "skip",
+          "label": "Fix only the machine and file a task bead; the failure can silently recur after updates"
+        }
+      ],
+      "default": "add",
+      "effective_default": "add",
+      "requested_verified": false
+    }
+  ]
+}
