@@ -1,43 +1,40 @@
 ---
 tier: epic
 title: Finish core variadic portability and observe the compatible release
-goal:
-  Repair the introduced macOS openat regression, consume its committed core, and
+goal: Repair the introduced macOS openat regression, consume its committed core, and
   establish the required sase 0.18.0 publication proof.
 parent_bead: sase-1lh.7.5.4.3.3.4
 phases:
-  - id: core
-    title: Promote variadic openat modes without changing permissions
-    size: small
-    description:
-      "core: repair the macOS E0617 regression in mobile pairing and verify the core."
-    depends_on: []
-  - id: pin
-    title: Pin the committed portable core and verify the consumer
-    size: small
-    description:
-      "pin: ratchet the sase core pin past the completed portability fix and verify
-      compatibility."
-    depends_on:
-      - core
-  - id: watch
-    title: Observe the containing core release and sase 0.18.0
-    size: small
-    description:
-      "watch: verify committed prerequisites and run one self-closing publication watch
-      with no successor."
-    depends_on:
-      - pin
+- id: core
+  title: Promote variadic openat modes without changing permissions
+  size: small
+  description: 'core: repair the macOS E0617 regression in mobile pairing and verify
+    the core.'
+  depends_on: []
+- id: pin
+  title: Pin the committed portable core and verify the consumer
+  size: small
+  description: 'pin: ratchet the sase core pin past the completed portability fix
+    and verify compatibility.'
+  depends_on:
+  - core
+- id: watch
+  title: Observe the containing core release and sase 0.18.0
+  size: small
+  description: 'watch: verify committed prerequisites and run one self-closing publication
+    watch with no successor.'
+  depends_on:
+  - pin
 proposed_by: bbugyi200.athena.sase-1lh.7.5.4.3.3.4.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-17 21:56:51
 status: wip
+bead_id: sase-1lh.7.5.4.3.3.4.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_portable_core_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_portable_core_release.md)
-- **PARENT:**
-  [202610/finish_release_gate_fixtures.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_release_gate_fixtures.md)
+- **PROMPT:** [prompts/202610/finish_portable_core_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_portable_core_release.md)
+- **PARENT:** [202610/finish_release_gate_fixtures.md](https://github.com/sase-org/sase--plans/blob/main/202610/finish_release_gate_fixtures.md)
+- **BEAD:** [sase-1lh.7.5.4.3.3.4.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1lh/sase-1lh.7.5.4.3.3.4.4.md)
 
 # Finish the portable core release
 
