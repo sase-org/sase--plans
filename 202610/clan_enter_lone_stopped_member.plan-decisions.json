@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "siblings",
+      "kind": "choice",
+      "ask": "Should Enter still act on the lone stopped member while other clan members are running or failed?",
+      "why": "The S1 chip already promises one member needs you; running siblings never own a pending gate",
+      "choices": [
+        {
+          "key": "any_siblings",
+          "label": "Act whenever exactly one member is stopped (matches the S1 chip), whatever the others do"
+        },
+        {
+          "key": "mirrored_only",
+          "label": "Act only when the clan row mirrors that member (no running or failed sibling); else toast"
+        }
+      ],
+      "default": "any_siblings",
+      "effective_default": "any_siblings",
+      "requested_verified": false
+    }
+  ]
+}
