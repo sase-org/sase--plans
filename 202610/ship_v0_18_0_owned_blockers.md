@@ -1,106 +1,96 @@
 ---
 tier: epic
 title: Own every release blocker, green Full CI, and ship sase v0.18.0 through ci_watch
-goal: "sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
+goal: 'sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
   merged it on a green Master Gate and a fresh green Full CI, with sase-core-rs 0.42.0
-  published as its core floor. The release is confirmed before landing and recorded in
-  an evidence artifact by the final epic lander.
+  published as its core floor. The release is confirmed before landing and recorded
+  in an evidence artifact by the final epic lander.
 
-  "
+  '
 decisions:
   core_cut:
-    ask:
-      Let the release watcher dispatch sase-core's release-plz cut once the core release
-      PR is green?
+    ask: Let the release watcher dispatch sase-core's release-plz cut once the core
+      release PR is green?
     default: true
-    why:
-      Core's release docs name dispatch as the urgent-fix path; the daily cut adds up to
-      24 h
+    why: Core's release docs name dispatch as the urgent-fix path; the daily cut adds
+      up to 24 h
     answer: true
   stale_epics:
-    ask:
-      After the release is confirmed, how should the final lander treat the stale
+    ask: After the release is confirmed, how should the final lander treat the stale
       v0.18.0 release epics?
     choices:
-      supersede:
-        Close the sase-1lh, sase-1kx and sase-1c1 chains as superseded, citing the
-        evidence
-      notes:
-        Append the release evidence as notes and close nothing outside this epic chain
+      supersede: Close the sase-1lh, sase-1kx and sase-1c1 chains as superseded, citing
+        the evidence
+      notes: Append the release evidence as notes and close nothing outside this epic
+        chain
     default: supersede
     why: They have no live agents and exist only to ship v0.18.0
     answer: supersede
 phases:
-  - id: core-fixture
-    title: Make the core non-UTF-8 snapshot fixture filesystem-independent
-    depends_on: []
-    size: small
-    description:
-      "core-fixture: build the non-UTF-8 path into the Git index without writing it to
-      disk, so sase-core's macOS CI and the 0.42.0 cut go green."
-  - id: watcher-core
-    title: Teach the release watcher about the core release PR
-    depends_on: []
-    size: medium
-    description:
-      "watcher-core: read the sase-core release-plz PR, stop with CORE_CI_RED when it is
-      red, and optionally dispatch the core release cut."
-  - id: deck-scroll
-    title: Fix the files Ctrl-J anchor-scroll Full CI flake at its root
-    depends_on: []
-    size: medium
-    description:
-      "deck-scroll: make test_files_ctrl_j_scrolls_page_anchor_to_top (sase-1a7)
-      deterministic under Full CI load."
-  - id: tui-pilots
-    title: Fix the archive, screenshot-export and statistics Full CI flakes
-    depends_on: []
-    size: medium
-    description:
-      "tui-pilots: root-cause sase-1mj, the screenshot frame-convergence timeout, and
-      sase-1a2."
-  - id: runtime
-    title: Fix the usage-probe, git-maintenance and stderr-burst Full CI flakes
-    depends_on: []
-    size: medium
-    description: "runtime: root-cause sase-1k9, sase-1j4 and sase-1ht outside the TUI."
-  - id: new-project
-    title: Fix the New Project create and configure Master Gate races
-    depends_on: []
-    size: medium
-    description:
-      "new-project: make the create-collision, configure-review and late-form New
-      Project tests (sase-1mi, sase-1m9) settle deterministically."
-  - id: gate-pilots
-    title: Fix the link-follow and prompt mid-word Master Gate flakes
-    depends_on: []
-    size: medium
-    description:
-      "gate-pilots: root-cause sase-1lr, the bounded-panes scan one-off, and the
-      mid-word peek family including sase-1l7."
-  - id: watch
-    title: Watch sase-core 0.42.0 and sase 0.18.0 to PyPI and always close
-    depends_on:
-      - core-fixture
-      - watcher-core
-      - deck-scroll
-      - tui-pilots
-      - runtime
-      - new-project
-      - gate-pilots
-    size: small
-    description:
-      "watch: run one bounded tools/release_watch monitor that closes this phase bead on
-      every outcome, so the lander always runs."
+- id: core-fixture
+  title: Make the core non-UTF-8 snapshot fixture filesystem-independent
+  depends_on: []
+  size: small
+  description: 'core-fixture: build the non-UTF-8 path into the Git index without
+    writing it to disk, so sase-core''s macOS CI and the 0.42.0 cut go green.'
+- id: watcher-core
+  title: Teach the release watcher about the core release PR
+  depends_on: []
+  size: medium
+  description: 'watcher-core: read the sase-core release-plz PR, stop with CORE_CI_RED
+    when it is red, and optionally dispatch the core release cut.'
+- id: deck-scroll
+  title: Fix the files Ctrl-J anchor-scroll Full CI flake at its root
+  depends_on: []
+  size: medium
+  description: 'deck-scroll: make test_files_ctrl_j_scrolls_page_anchor_to_top (sase-1a7)
+    deterministic under Full CI load.'
+- id: tui-pilots
+  title: Fix the archive, screenshot-export and statistics Full CI flakes
+  depends_on: []
+  size: medium
+  description: 'tui-pilots: root-cause sase-1mj, the screenshot frame-convergence
+    timeout, and sase-1a2.'
+- id: runtime
+  title: Fix the usage-probe, git-maintenance and stderr-burst Full CI flakes
+  depends_on: []
+  size: medium
+  description: 'runtime: root-cause sase-1k9, sase-1j4 and sase-1ht outside the TUI.'
+- id: new-project
+  title: Fix the New Project create and configure Master Gate races
+  depends_on: []
+  size: medium
+  description: 'new-project: make the create-collision, configure-review and late-form
+    New Project tests (sase-1mi, sase-1m9) settle deterministically.'
+- id: gate-pilots
+  title: Fix the link-follow and prompt mid-word Master Gate flakes
+  depends_on: []
+  size: medium
+  description: 'gate-pilots: root-cause sase-1lr, the bounded-panes scan one-off,
+    and the mid-word peek family including sase-1l7.'
+- id: watch
+  title: Watch sase-core 0.42.0 and sase 0.18.0 to PyPI and always close
+  depends_on:
+  - core-fixture
+  - watcher-core
+  - deck-scroll
+  - tui-pilots
+  - runtime
+  - new-project
+  - gate-pilots
+  size: small
+  description: 'watch: run one bounded tools/release_watch monitor that closes this
+    phase bead on every outcome, so the lander always runs.'
 proposed_by: bbugyi200.athena.11b
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-18 09:58:26
 status: wip
+bead_id: sase-1mk
 ---
 
-- **PROMPT:**
-  [prompts/202610/ship_v0_18_0_owned_blockers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_owned_blockers.md)
+- **PROMPT:** [prompts/202610/ship_v0_18_0_owned_blockers.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_owned_blockers.md)
+- **BEAD:** [sase-1mk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1mk/README.md)
 
 # Plan: Own every release blocker, green Full CI, and ship sase v0.18.0 through ci_watch
 
