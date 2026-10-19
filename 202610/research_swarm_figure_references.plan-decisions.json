@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "lead_diagrams",
+      "kind": "choice",
+      "ask": "Should Mermaid diagrams the lead drew itself also get a figure anchor and a reference sentence?",
+      "why": "Matches \"diagrams the linker adds\"; lead diagrams are rare and already sit in lead prose",
+      "choices": [
+        {
+          "key": "proposed",
+          "label": "Only figures placed from the image agent's manifest; runs without diagrams stay unchanged"
+        },
+        {
+          "key": "all",
+          "label": "Every Mermaid figure in the published file, including the lead's own, in every linker run"
+        }
+      ],
+      "default": "proposed",
+      "effective_default": "proposed",
+      "requested_verified": false
+    },
+    {
+      "id": "placement",
+      "kind": "choice",
+      "ask": "Should the reference sentence end the paragraph the figure illustrates?",
+      "why": "Reads like a paper's in-text figure reference; the caption below already labels the figure",
+      "choices": [
+        {
+          "key": "inline",
+          "label": "Appended to the anchor paragraph; its own paragraph only after lists and the bottom line"
+        },
+        {
+          "key": "lead_in",
+          "label": "Always a one-sentence paragraph above the figure; simpler, but reads like a 2nd caption"
+        }
+      ],
+      "default": "inline",
+      "effective_default": "inline",
+      "requested_verified": false
+    }
+  ]
+}
