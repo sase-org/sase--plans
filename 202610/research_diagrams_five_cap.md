@@ -1,29 +1,34 @@
 ---
 tier: tale
 title: Let the research swarm image agent propose up to five Mermaid diagrams
-goal: The research swarm image agent may propose up to five validated Mermaid diagrams
-  for complex research reports that warrant them, while ordinary reports keep the
+goal:
+  The research swarm image agent may propose up to five validated Mermaid diagrams for
+  complex research reports that warrant them, while ordinary reports keep the
   three-diagram ceiling.
 size: small
 decisions:
   cap_rule:
-    ask: Should diagrams four and five require a complex report, a distinct subject,
-      and their own `##` section?
+    ask:
+      Should diagrams four and five require a complex report, a distinct subject, and
+      their own `##` section?
     choices:
-      gated: Three stays the norm; a 4th or 5th needs a complex report, a new subject,
-        and its own section
-      flat: One flat cap of five under the existing pass tests; ordinary reports may
-        drift above three
+      gated:
+        Three stays the norm; a 4th or 5th needs a complex report, a new subject, and
+        its own section
+      flat:
+        One flat cap of five under the existing pass tests; ordinary reports may drift
+        above three
     default: gated
-    why: You asked for five only on complicated reports; a flat cap invites quota-filling.
+    why:
+      You asked for five only on complicated reports; a flat cap invites quota-filling.
     answer: gated
   linker_cap:
     ask: Should the swarm linker also enforce the five-diagram ceiling?
     choices:
-      enforce: The linker omits every manifest diagram after the fifth as over the
+      enforce: The linker omits every manifest diagram after the fifth as over the cap
+      trust:
+        The linker places every valid proposal; only the image agent's prompt holds the
         cap
-      trust: The linker places every valid proposal; only the image agent's prompt
-        holds the cap
     default: enforce
     why: The linker is the only publisher and already gates every proposal.
     answer: enforce
@@ -32,6 +37,13 @@ proposed_with: claude/opus
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.125](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.125.md)
+- **COMMITS:**
+  - [cb95f3d](https://github.com/sase-org/sase-research-artifacts/commit/cb95f3d4135db788f7d5b9e77affb4432843f77a)
+    — feat(research-diagrams): let image agent propose up to five diagrams for complex
+    reports
 
 # Let the `#research_swarm` image agent propose up to five Mermaid diagrams
 
