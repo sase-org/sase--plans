@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "cap_rule",
+      "kind": "choice",
+      "ask": "Should diagrams four and five require a complex report, a distinct subject, and their own `##` section?",
+      "why": "You asked for five only on complicated reports; a flat cap invites quota-filling.",
+      "choices": [
+        {
+          "key": "gated",
+          "label": "Three stays the norm; a 4th or 5th needs a complex report, a new subject, and its own section"
+        },
+        {
+          "key": "flat",
+          "label": "One flat cap of five under the existing pass tests; ordinary reports may drift above three"
+        }
+      ],
+      "default": "gated",
+      "effective_default": "gated",
+      "requested_verified": false
+    },
+    {
+      "id": "linker_cap",
+      "kind": "choice",
+      "ask": "Should the swarm linker also enforce the five-diagram ceiling?",
+      "why": "The linker is the only publisher and already gates every proposal.",
+      "choices": [
+        {
+          "key": "enforce",
+          "label": "The linker omits every manifest diagram after the fifth as over the cap"
+        },
+        {
+          "key": "trust",
+          "label": "The linker places every valid proposal; only the image agent's prompt holds the cap"
+        }
+      ],
+      "default": "enforce",
+      "effective_default": "enforce",
+      "requested_verified": false
+    }
+  ]
+}
