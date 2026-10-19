@@ -1,124 +1,114 @@
 ---
 tier: epic
-title: "E1: Installable family — retention by need, published floors, family canary"
-goal: "A clean `uv tool install` of sase, alone or with the family plugins, installs the
-  newest family release on Linux and macOS, and that release works. Retention can never
-  delete, and no family release can declare, a dependency that a supported release
-  cannot resolve. A broken install is caught within a day and reaches an owner.
+title: 'E1: Installable family — retention by need, published floors, family canary'
+goal: 'A clean `uv tool install` of sase, alone or with the family plugins, installs
+  the newest family release on Linux and macOS, and that release works. Retention
+  can never delete, and no family release can declare, a dependency that a supported
+  release cannot resolve. A broken install is caught within a day and reaches an owner.
 
-  "
+  '
 decisions:
   floor_check_home:
     ask: Where should the release-dependency-floor check logic live?
     choices:
       shared: One script and reusable workflow in sase; each plugin calls it at @master
-      vendored:
-        Each plugin carries its own copy and tests; no cross-repo workflow coupling
+      vendored: Each plugin carries its own copy and tests; no cross-repo workflow
+        coupling
     default: shared
     why: One implementation to fix, and plugin CI already checks out sase master
     answer: shared
   research_artifacts:
     ask: Should the family canary and floor check also cover sase-research-artifacts?
     default: true
-    why:
-      It is on PyPI with a sase floor, and its master adds a direct sase-core-rs floor
+    why: It is on PyPI with a sase floor, and its master adds a direct sase-core-rs
+      floor
     answer: true
   yank_0_1_0:
-    ask:
-      How should E1 handle sase 0.1.0, the silent resolver fallback when every newer
-      window breaks?
+    ask: How should E1 handle sase 0.1.0, the silent resolver fallback when every
+      newer window breaks?
     choices:
-      propose:
-        The runbook phase raises a gate with the exact PyPI yank steps for you to
-        perform
+      propose: The runbook phase raises a gate with the exact PyPI yank steps for
+        you to perform
       document: The runbook records the trade-off only; 0.1.0 stays the silent fallback
     default: propose
     why: A broken window then fails loudly instead of installing February's build
     answer: propose
   testpypi_drill:
-    ask:
-      Should E1 run a TestPyPI yank-and-fix-forward drill (you create one project and
-      publisher)?
+    ask: Should E1 run a TestPyPI yank-and-fix-forward drill (you create one project
+      and publisher)?
     default: true
     why: It rehearses the human-only recovery steps before a real outage needs them
     answer: true
   decision_record:
     ask: Add the "a published release stays installable" record to the decisions web?
     memory:
-      - decisions:installable-releases
-    requested:
-      Can you now help me implement the E1 epic described by the
-      pypi_release_reliability_design_and_work_split.md file in the research sidecar
-      repo?
+    - decisions:installable-releases
+    requested: Can you now help me implement the E1 epic described by the pypi_release_reliability_design_and_work_split.md
+      file in the research sidecar repo?
     default: true
     answer: false
 phases:
-  - id: retention
-    title: Protected-set retention in sase-core, failing closed
-    depends_on: []
-    size: medium
-    description:
-      "retention: derive a consumer-driven protected set in pypi_retention.py, add a
-      delete-list validator, enforce it in pypi_delete.py before any login, and make the
-      script tests run with packaging."
-  - id: canary
-    title: Family install canary on Linux and macOS
-    depends_on: []
-    size: medium
-    description:
-      "canary: extend install-smoke.yml to install sase plus the plugins on ubuntu and
-      macOS, assert newest and exact versions, run the first commands, publish a result
-      artifact, and open or close one alert issue."
-  - id: floor-check
-    title: release-dependency-floor check on plugin release PRs
-    depends_on: []
-    size: medium
-    description:
-      "floor-check: add a sibling-floor satisfiability and joint-resolve check, wire it
-      into each plugin's release PRs so it is never skipped, and rerun it on a schedule
-      so it clears once the sibling publishes."
-  - id: headroom
-    title: Core storage runway line and headroom alert
-    depends_on:
-      - retention
-    size: small
-    description:
-      "headroom: record the measured runway and the open size request in
-      docs/pypi-retention.md, add a runway threshold to verify, and alert weekly when it
-      is breached."
-  - id: runbook
-    title: Recovery runbook, release-safety docs, and the TestPyPI drill
-    depends_on:
-      - canary
-      - floor-check
-      - headroom
-    size: medium
-    description:
-      "runbook: document yank and fix-forward, core backfill, and the sase-side safety
-      nets, prepare the drill, and raise one gate for the human-only steps."
-  - id: exit
-    title: Live acceptance, decision record, and seven-day soak
-    depends_on:
-      - retention
-      - canary
-      - floor-check
-      - headroom
-      - runbook
-    size: small
-    description:
-      "exit: prove V-E1a to V-E1c live, run the drill if it is set up, write the
-      decision record, and hold the epic open until the canary has been green for seven
-      consecutive days."
+- id: retention
+  title: Protected-set retention in sase-core, failing closed
+  depends_on: []
+  size: medium
+  description: 'retention: derive a consumer-driven protected set in pypi_retention.py,
+    add a delete-list validator, enforce it in pypi_delete.py before any login, and
+    make the script tests run with packaging.'
+- id: canary
+  title: Family install canary on Linux and macOS
+  depends_on: []
+  size: medium
+  description: 'canary: extend install-smoke.yml to install sase plus the plugins
+    on ubuntu and macOS, assert newest and exact versions, run the first commands,
+    publish a result artifact, and open or close one alert issue.'
+- id: floor-check
+  title: release-dependency-floor check on plugin release PRs
+  depends_on: []
+  size: medium
+  description: 'floor-check: add a sibling-floor satisfiability and joint-resolve
+    check, wire it into each plugin''s release PRs so it is never skipped, and rerun
+    it on a schedule so it clears once the sibling publishes.'
+- id: headroom
+  title: Core storage runway line and headroom alert
+  depends_on:
+  - retention
+  size: small
+  description: 'headroom: record the measured runway and the open size request in
+    docs/pypi-retention.md, add a runway threshold to verify, and alert weekly when
+    it is breached.'
+- id: runbook
+  title: Recovery runbook, release-safety docs, and the TestPyPI drill
+  depends_on:
+  - canary
+  - floor-check
+  - headroom
+  size: medium
+  description: 'runbook: document yank and fix-forward, core backfill, and the sase-side
+    safety nets, prepare the drill, and raise one gate for the human-only steps.'
+- id: exit
+  title: Live acceptance, decision record, and seven-day soak
+  depends_on:
+  - retention
+  - canary
+  - floor-check
+  - headroom
+  - runbook
+  size: small
+  description: 'exit: prove V-E1a to V-E1c live, run the drill if it is set up, write
+    the decision record, and hold the epic open until the canary has been green for
+    seven consecutive days.'
 proposed_by: bbugyi200.athena.11s
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-19 10:16:24
 status: wip
+bead_id: sase-1my
 ---
 
-- **PROMPT:**
-  [prompts/202610/e1_installable_family.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e1_installable_family.md)
+- **PROMPT:** [prompts/202610/e1_installable_family.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e1_installable_family.md)
+- **BEAD:** [sase-1my](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1my/README.md)
 
 # Plan: E1 Installable family
 
