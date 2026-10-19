@@ -34,6 +34,11 @@ status: wip
   [202610/e1_installable_family.md](https://github.com/sase-org/sase--plans/blob/main/202610/e1_installable_family.md)
 - **BEAD:**
   [sase-1my](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1my/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1my.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1my.land.md)
+- **COMMITS:**
+  - [e0ddc10](https://github.com/sase-org/sase-core/commit/e0ddc100eb32097393daa0fd099b3017b1b1cfee)
+    — fix(pypi): pin setup-uv v4 and canonicalize the delete guard
 
 # Land epic sase-1my (E1 Installable family): fix what the epic broke, then close it
 
