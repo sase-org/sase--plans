@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "drill_tooling",
+      "kind": "choice",
+      "ask": "Should the landed TestPyPI drill tooling stay in the repo, dormant?",
+      "why": "It is already built and tested, and it costs nothing until someone sets up the TestPyPI project",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Keep the dispatch-only workflow, checker and tests; the doc marks the drill optional and not run"
+        },
+        {
+          "key": "remove",
+          "label": "Delete the drill workflow, checker, their tests and the doc section; the drill is gone for good"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
