@@ -1,160 +1,144 @@
 ---
 tier: epic
-title: "E2: Exact-candidate release train and steward"
-goal: "Every sase release is a sealed candidate built once at its tag: the wheel and
-  sdist plus an exact `sase-core-rs==X.Y.Z` with its full file set and digests. It is
-  qualified against the published core, exercised on Linux and macOS, published from the
-  retained bytes with digest-checked resume, and confirmed from PyPI before it is
-  un-drafted. One stateless steward decides release merges and the core cut, and every
-  blocked release names a typed reason and its owner.
+title: 'E2: Exact-candidate release train and steward'
+goal: 'Every sase release is a sealed candidate built once at its tag: the wheel and
+  sdist plus an exact `sase-core-rs==X.Y.Z` with its full file set and digests. It
+  is qualified against the published core, exercised on Linux and macOS, published
+  from the retained bytes with digest-checked resume, and confirmed from PyPI before
+  it is un-drafted. One stateless steward decides release merges and the core cut,
+  and every blocked release names a typed reason and its owner.
 
-  "
+  '
 decisions:
   steward_host:
     ask: Where should the release steward's loop run?
     choices:
-      workflow:
-        A scheduled sase workflow runs master's steward; escalations become mirrored
-        issues
-      chop:
-        An athena axe chop runs it via a chezmoi wrapper; escalations become beads and
-        notifications
+      workflow: A scheduled sase workflow runs master's steward; escalations become
+        mirrored issues
+      chop: An athena axe chop runs it via a chezmoi wrapper; escalations become beads
+        and notifications
     default: workflow
-    why:
-      Always runs master's own steward code, needs no athena checkout, and survives
+    why: Always runs master's own steward code, needs no athena checkout, and survives
       athena downtime
     answer: workflow
   release_cadence:
     ask: How often may the steward merge a sase release PR?
     choices:
-      daily:
-        At most one release per UTC day, after the daily core cut; a burned candidate
+      daily: At most one release per UTC day, after the daily core cut; a burned candidate
         frees the slot
-      eligible:
-        Whenever eligible and no train is in flight; several releases a day are possible
+      eligible: Whenever eligible and no train is in flight; several releases a day
+        are possible
     default: daily
-    why:
-      Matches the daily core cut and keeps the ten supported releases spanning about ten
-      days
+    why: Matches the daily core cut and keeps the ten supported releases spanning
+      about ten days
     answer: daily
   memory_release_record:
-    ask:
-      Add decisions:exact-release-pair and mark ci-two-speed-split and
-      rust-core-required superseded in part?
+    ask: Add decisions:exact-release-pair and mark ci-two-speed-split and rust-core-required
+      superseded in part?
     memory:
-      - decisions:exact-release-pair
-      - decisions:ci-two-speed-split
-      - decisions:rust-core-required
+    - decisions:exact-release-pair
+    - decisions:ci-two-speed-split
+    - decisions:rust-core-required
     default: true
-    corrects:
-      "`ci_watch` gates release on both signals: `gating_workflows` proves this commit's
-      fast gate is green, and `heavy_max_age_hours` requires a recent green `Full CI`
-      run."
+    corrects: '`ci_watch` gates release on both signals: `gating_workflows` proves
+      this commit''s fast gate is green, and `heavy_max_age_hours` requires a recent
+      green `Full CI` run.'
     answer: true
 phases:
-  - id: core-release
-    title: Core-cut resilience and the in-flight retention source
-    depends_on: []
-    size: medium
-    description:
-      "core-release: in sase-core, the release-plz merge job reruns failed checks once
-      and emits a typed CORE_CUT_RED, and retention also protects the exact core pins of
-      sase tags not yet on PyPI."
-  - id: exact-build
-    title: release.yml builds once at the tag and seals the candidate manifest
-    depends_on: []
-    size: medium
-    description:
-      "exact-build: a new tag-dispatched release.yml with an identity assertion, one
-      build, a sealed candidate manifest stashed on the draft release, a rehearse mode,
-      and the gate for the PyPI publisher and tag policy."
-  - id: core-pin
-    title: Exact core pin and the shared core-ensure rule
-    depends_on: []
-    size: medium
-    description:
-      "core-pin: ratchet_core_pin writes sase-core-rs==X.Y.Z chosen by one shared
-      core-ensure rule, master converts to the exact form, and every tool that assumed a
-      window accepts the pin."
-  - id: exercise
-    title: Exercise the exact files on Linux and macOS
-    depends_on:
-      - exact-build
-    size: medium
-    description:
-      "exercise: release.yml installs the stashed wheel and sdist into clean
-      environments on Linux and macOS and runs a no-LLM fakey workflow, an upgrade from
-      N-1, and pip check."
-  - id: qualify
-    title: Qualify the candidate against the published core
-    depends_on:
-      - exact-build
-      - core-pin
-      - exercise
-    size: large
-    description:
-      "qualify: ci.yml gains ref and core-source inputs, a versioned N1 inventory
-      decides what blocks, and release.yml qualifies against the exact published core
-      with fail-closed evidence."
-  - id: publish
-    title: Digest-checked publish, PyPI confirmation, and un-draft
-    depends_on:
-      - qualify
-    size: medium
-    description:
-      "publish: release.yml uploads only missing files after digest checks, confirms
-      every file and an exact install from PyPI, runs the family canary, then un-drafts;
-      a resume mode re-enters at publish."
-  - id: steward
-    title: Stateless release steward in observe mode
-    depends_on:
-      - exact-build
-      - core-pin
-      - core-release
-    size: large
-    description:
-      "steward: tools/release_watch becomes a stateless reconciler with typed states,
-      one idempotent action per tick, core-ensure, bounded reruns, abandonment, and 24h
-      escalation, running observe-only."
-  - id: metrics
-    title: Release-green record and release metrics
-    depends_on:
-      - steward
-    size: medium
-    description:
-      "metrics: a read-only tools/release_metrics derives release-green per SHA and the
-      release figures, each with numerator, denominator and window, and publishes a
-      pre-train baseline."
-  - id: handover
-    title: Cut releases over to release.yml and hand merges to the steward
-    depends_on:
-      - publish
-      - steward
-      - metrics
-    size: medium
-    description:
-      "handover: release-please goes draft with forced tags, publish.yml keeps only
-      release-please and metadata sync, the steward goes live, ci_watch drops sase
-      releases, and a gate hands over merge authority."
-  - id: exit
-    title: First steward release, acceptance evidence, and the decision record
-    depends_on:
-      - handover
-    size: medium
-    description:
-      "exit: confirm the human handover steps, watch the first real release through the
-      steward, prove digests and attestation match the manifest, record acceptance
-      evidence, and apply the memory decisions."
+- id: core-release
+  title: Core-cut resilience and the in-flight retention source
+  depends_on: []
+  size: medium
+  description: 'core-release: in sase-core, the release-plz merge job reruns failed
+    checks once and emits a typed CORE_CUT_RED, and retention also protects the exact
+    core pins of sase tags not yet on PyPI.'
+- id: exact-build
+  title: release.yml builds once at the tag and seals the candidate manifest
+  depends_on: []
+  size: medium
+  description: 'exact-build: a new tag-dispatched release.yml with an identity assertion,
+    one build, a sealed candidate manifest stashed on the draft release, a rehearse
+    mode, and the gate for the PyPI publisher and tag policy.'
+- id: core-pin
+  title: Exact core pin and the shared core-ensure rule
+  depends_on: []
+  size: medium
+  description: 'core-pin: ratchet_core_pin writes sase-core-rs==X.Y.Z chosen by one
+    shared core-ensure rule, master converts to the exact form, and every tool that
+    assumed a window accepts the pin.'
+- id: exercise
+  title: Exercise the exact files on Linux and macOS
+  depends_on:
+  - exact-build
+  size: medium
+  description: 'exercise: release.yml installs the stashed wheel and sdist into clean
+    environments on Linux and macOS and runs a no-LLM fakey workflow, an upgrade from
+    N-1, and pip check.'
+- id: qualify
+  title: Qualify the candidate against the published core
+  depends_on:
+  - exact-build
+  - core-pin
+  - exercise
+  size: large
+  description: 'qualify: ci.yml gains ref and core-source inputs, a versioned N1 inventory
+    decides what blocks, and release.yml qualifies against the exact published core
+    with fail-closed evidence.'
+- id: publish
+  title: Digest-checked publish, PyPI confirmation, and un-draft
+  depends_on:
+  - qualify
+  size: medium
+  description: 'publish: release.yml uploads only missing files after digest checks,
+    confirms every file and an exact install from PyPI, runs the family canary, then
+    un-drafts; a resume mode re-enters at publish.'
+- id: steward
+  title: Stateless release steward in observe mode
+  depends_on:
+  - exact-build
+  - core-pin
+  - core-release
+  size: large
+  description: 'steward: tools/release_watch becomes a stateless reconciler with typed
+    states, one idempotent action per tick, core-ensure, bounded reruns, abandonment,
+    and 24h escalation, running observe-only.'
+- id: metrics
+  title: Release-green record and release metrics
+  depends_on:
+  - steward
+  size: medium
+  description: 'metrics: a read-only tools/release_metrics derives release-green per
+    SHA and the release figures, each with numerator, denominator and window, and
+    publishes a pre-train baseline.'
+- id: handover
+  title: Cut releases over to release.yml and hand merges to the steward
+  depends_on:
+  - publish
+  - steward
+  - metrics
+  size: medium
+  description: 'handover: release-please goes draft with forced tags, publish.yml
+    keeps only release-please and metadata sync, the steward goes live, ci_watch drops
+    sase releases, and a gate hands over merge authority.'
+- id: exit
+  title: First steward release, acceptance evidence, and the decision record
+  depends_on:
+  - handover
+  size: medium
+  description: 'exit: confirm the human handover steps, watch the first real release
+    through the steward, prove digests and attestation match the manifest, record
+    acceptance evidence, and apply the memory decisions.'
 proposed_by: bbugyi200.athena.11y
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-19 16:40:05
 status: wip
+bead_id: sase-1n6
 ---
 
-- **PROMPT:**
-  [prompts/202610/e2_release_train_steward.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e2_release_train_steward.md)
+- **PROMPT:** [prompts/202610/e2_release_train_steward.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/e2_release_train_steward.md)
+- **BEAD:** [sase-1n6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/README.md)
 
 # Plan: E2 Exact-candidate release train and steward
 
