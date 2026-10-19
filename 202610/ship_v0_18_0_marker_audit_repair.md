@@ -1,44 +1,41 @@
 ---
 tier: epic
-title:
-  Repair the marker-audit catalog drift from e5c02dc8a4 and ship sase v0.18.0 through
-  ci_watch
-goal: "sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
+title: Repair the marker-audit catalog drift from e5c02dc8a4 and ship sase v0.18.0
+  through ci_watch
+goal: 'sase 0.18.0 is on PyPI, published from release-please PR #299 after ci_watch
   merged it on a green Master Gate and a fresh green Full CI, with sase-core-rs 0.42.0
-  published as its core floor. The release is confirmed before landing and recorded in
-  an evidence artifact by the final epic lander, and ancestor epics sase-1mk.9 and
-  sase-1mk are resumed and closed.
+  published as its core floor. The release is confirmed before landing and recorded
+  in an evidence artifact by the final epic lander, and ancestor epics sase-1mk.9
+  and sase-1mk are resumed and closed.
 
-  "
+  '
 parent_bead: sase-1mk.9
 phases:
-  - id: marker-audit
-    title:
-      Bring the agent-artifact marker audits in line with the atomic done.json writers
-    depends_on: []
-    size: small
-    description:
-      "marker-audit: teach the marker mutation and path-passing audits about
-      write_json_marker_atomic and review the two done.json writers e5c02dc8a4 moved
-      onto it (task sase-1mt), so all four audit nodes pass."
-  - id: watch
-    title: Watch sase 0.18.0 to PyPI and always close
-    depends_on:
-      - marker-audit
-    size: small
-    description:
-      "watch: run one bounded tools/release_watch monitor that closes this phase bead on
-      every outcome, so the lander always runs."
+- id: marker-audit
+  title: Bring the agent-artifact marker audits in line with the atomic done.json
+    writers
+  depends_on: []
+  size: small
+  description: 'marker-audit: teach the marker mutation and path-passing audits about
+    write_json_marker_atomic and review the two done.json writers e5c02dc8a4 moved
+    onto it (task sase-1mt), so all four audit nodes pass.'
+- id: watch
+  title: Watch sase 0.18.0 to PyPI and always close
+  depends_on:
+  - marker-audit
+  size: small
+  description: 'watch: run one bounded tools/release_watch monitor that closes this
+    phase bead on every outcome, so the lander always runs.'
 proposed_by: bbugyi200.athena.sase-1mk.9.land
 proposed_with: claude/opus
 create_time: 2026-10-19 00:00:07
 status: wip
+bead_id: sase-1mk.9.7
 ---
 
-- **PROMPT:**
-  [prompts/202610/ship_v0_18_0_marker_audit_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_marker_audit_repair.md)
-- **PARENT:**
-  [202610/ship_v0_18_0_post_repair_reds.md](https://github.com/sase-org/sase--plans/blob/main/202610/ship_v0_18_0_post_repair_reds.md)
+- **PROMPT:** [prompts/202610/ship_v0_18_0_marker_audit_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/ship_v0_18_0_marker_audit_repair.md)
+- **PARENT:** [202610/ship_v0_18_0_post_repair_reds.md](https://github.com/sase-org/sase--plans/blob/main/202610/ship_v0_18_0_post_repair_reds.md)
+- **BEAD:** [sase-1mk.9.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1mk/sase-1mk.9.7.md)
 
 # Plan: Repair the marker-audit catalog drift from e5c02dc8a4 and ship sase v0.18.0 through ci_watch
 
