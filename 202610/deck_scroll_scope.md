@@ -1,85 +1,78 @@
 ---
 tier: epic
-title: "Deck scroll scope: tabs mean pages, a view chip, and a layout lock"
-goal: "From the deck panel's chrome alone, a user can tell whether the focused deck is
-  one scrollable document or split into pages, which way the rest of it lies, and
-  whether its layout is locked; the auto/fixed words give way to a lock icon with a real
-  lock/unlock key.
+title: 'Deck scroll scope: tabs mean pages, a view chip, and a layout lock'
+goal: 'From the deck panel''s chrome alone, a user can tell whether the focused deck
+  is one scrollable document or split into pages, which way the rest of it lies, and
+  whether its layout is locked; the auto/fixed words give way to a lock icon with
+  a real lock/unlock key.
 
-  "
+  '
 decisions:
   lock_key:
-    ask:
-      Which default key should toggle the deck view lock (lock what auto chose / return
-      to auto)?
+    ask: Which default key should toggle the deck view lock (lock what auto chose
+      / return to auto)?
     choices:
       shift_b: Free on every tab today and one Shift press away, but not mnemonic
-      ctrl_shift_l:
-        Mnemonic, but terminals without kitty key reporting send Ctrl+L (dismiss toasts)
-      p_wraps:
-        No new key; P gains automatic as a fourth stop, so unlocking can take three
-        presses
+      ctrl_shift_l: Mnemonic, but terminals without kitty key reporting send Ctrl+L
+        (dismiss toasts)
+      p_wraps: No new key; P gains automatic as a fourth stop, so unlocking can take
+        three presses
     default: shift_b
     why: Every mnemonic letter is taken on the Agents tab; B is the only unbound letter
     answer: shift_b
   glossary_tabs_mean_pages:
-    ask:
-      Should the docs phase add the "tabs mean pages" rule to the Agent Data Card
+    ask: Should the docs phase add the "tabs mean pages" rule to the Agent Data Card
       glossary strand?
     memory:
-      - glossary:agent-data-card
-    requested:
-      Review the deck_scroll_scope_tabs_and_layout_lock.md file in the research sidecar
-      repo for context and inspiration before planning. I agree with all of the
-      requirements recommended in that research file
+    - glossary:agent-data-card
+    requested: Review the deck_scroll_scope_tabs_and_layout_lock.md file in the research
+      sidecar repo for context and inspiration before planning. I agree with all of
+      the requirements recommended in that research file
     default: true
     answer: true
 phases:
-  - id: tabs-chip
-    title: Tabs mean pages, the view chip, and the lock
-    depends_on: []
-    size: medium
-    description:
-      'tabs-chip: card tabs only for paged multi-card decks, a solid view chip with a
-      lock replacing auto/fixed, a spread you-are-here title with structural ▴/▾ cues,
-      the jump/cards footer label, and the "locked" vocabulary.'
-  - id: lock-key
-    title: Lock-toggle key and lock copy
-    depends_on:
-      - tabs-chip
-    size: medium
-    description:
-      "lock-key: an Agents-only action that locks the layout auto chose or returns to
-      automatic, wired through keymaps, availability, palette, footer, help, the
-      first-lock toast, and generated keymap docs."
-  - id: viewport-cues
-    title: Viewport-precise spread cues and the paged continuation cue
-    depends_on:
-      - lock-key
-    size: medium
-    description:
-      'viewport-cues: one refresh-on-change scope key per panel drives in-view-aware
-      spread cues, the "all in view" state, and a bottom-border +N cue for paged decks
-      that turns bold at the bottom.'
-  - id: docs-acceptance
-    title: Docs, glossary, and acceptance review
-    depends_on:
-      - viewport-cues
-    size: small
-    description:
-      "docs-acceptance: rewrite the Deck Views reference and the Ctrl+J/K paragraph,
-      apply the glossary decision, and verify the five acceptance criteria with live
-      screenshots and goldens."
+- id: tabs-chip
+  title: Tabs mean pages, the view chip, and the lock
+  depends_on: []
+  size: medium
+  description: 'tabs-chip: card tabs only for paged multi-card decks, a solid view
+    chip with a lock replacing auto/fixed, a spread you-are-here title with structural
+    ▴/▾ cues, the jump/cards footer label, and the "locked" vocabulary.'
+- id: lock-key
+  title: Lock-toggle key and lock copy
+  depends_on:
+  - tabs-chip
+  size: medium
+  description: 'lock-key: an Agents-only action that locks the layout auto chose or
+    returns to automatic, wired through keymaps, availability, palette, footer, help,
+    the first-lock toast, and generated keymap docs.'
+- id: viewport-cues
+  title: Viewport-precise spread cues and the paged continuation cue
+  depends_on:
+  - lock-key
+  size: medium
+  description: 'viewport-cues: one refresh-on-change scope key per panel drives in-view-aware
+    spread cues, the "all in view" state, and a bottom-border +N cue for paged decks
+    that turns bold at the bottom.'
+- id: docs-acceptance
+  title: Docs, glossary, and acceptance review
+  depends_on:
+  - viewport-cues
+  size: small
+  description: 'docs-acceptance: rewrite the Deck Views reference and the Ctrl+J/K
+    paragraph, apply the glossary decision, and verify the five acceptance criteria
+    with live screenshots and goldens.'
 proposed_by: bbugyi200.athena.research.52.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-19 17:07:58
 status: wip
+bead_id: sase-1n7
 ---
 
-- **PROMPT:**
-  [prompts/202610/deck_scroll_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/deck_scroll_scope.md)
+- **PROMPT:** [prompts/202610/deck_scroll_scope.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/deck_scroll_scope.md)
+- **BEAD:** [sase-1n7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n7/README.md)
 
 # Plan: Deck scroll scope — tabs mean pages, a view chip, and a layout lock
 
