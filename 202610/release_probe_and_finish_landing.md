@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Repair the release install probe and finish the sase-1mk landing
-goal: The release watcher verifies the real sase version command, sase 0.18.0 has
-  audited installation and release evidence, and sase-1mk.9.7 plus every fully complete
-  directly parented plan ancestor are closed normally.
+goal:
+  The release watcher verifies the real sase version command, sase 0.18.0 has audited
+  installation and release evidence, and sase-1mk.9.7 plus every fully complete directly
+  parented plan ancestor are closed normally.
 size: medium
 proposed_by: bbugyi200.athena.sase-1mk.9.7.land
 proposed_with: codex/gpt-6-astra
@@ -15,6 +16,11 @@ status: done
   [202610/ship_v0_18_0_marker_audit_repair.md](https://github.com/sase-org/sase--plans/blob/main/202610/ship_v0_18_0_marker_audit_repair.md)
 - **BEAD:**
   [sase-1mk.9.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1mk/sase-1mk.9.7.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1mk.9.7.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1mk.9.7.land.md)
+- **COMMITS:**
+  - [8b79b1a](https://github.com/sase-org/sase--plans/commit/8b79b1ada8e688254333e01c7ff8a7ca599edb4d)
+    — docs(plans): mark release landing plans complete
 
 # Repair the release install probe and finish the sase-1mk landing
 
