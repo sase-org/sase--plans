@@ -1,31 +1,27 @@
 ---
 tier: tale
 size: small
-title: Stop the Main deck spread from yanking a parked reader to the newest Reply block
-goal:
-  A reader who scrolls away from the newest Reply block in a deck-spread Main panel
-  keeps their scroll position across same-agent refreshes, while a reader still at the
-  follow landing keeps following new turns.
+title: Stop the Main deck spread from yanking a parked reader to the newest Reply
+  block
+goal: A reader who scrolls away from the newest Reply block in a deck-spread Main
+  panel keeps their scroll position across same-agent refreshes, while a reader still
+  at the follow landing keeps following new turns.
 decisions:
   bottom_reader:
-    ask:
-      Should a reader parked at the real bottom of a tall newest Reply block still
+    ask: Should a reader parked at the real bottom of a tall newest Reply block still
       auto-land on newly arrived turns?
     choices:
-      land_new_turns:
-        Lands on each newly arrived turn, but stays put on in-place refreshes (chat-log
-        behavior)
+      land_new_turns: Lands on each newly arrived turn, but stays put on in-place
+        refreshes (chat-log behavior)
       stay_put: Never moves; new turns only announce through block-rail arrival dots
     default: land_new_turns
-    why:
-      Keeps today's new-turn landing at the bottom; only the per-refresh yank to the
-      header goes
+    why: Keeps today's new-turn landing at the bottom; only the per-refresh yank to
+      the header goes
     answer: land_new_turns
 proposed_by: bbugyi200.athena.11w
 proposed_with: claude/opus
 decided_by: auto
-create_time: 2026-10-19 11:04:36
-status: wip
+status: done
 ---
 
 # Stop the Main deck spread from yanking a parked reader to the newest Reply block
