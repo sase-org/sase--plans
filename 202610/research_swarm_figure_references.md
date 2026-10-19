@@ -1,47 +1,38 @@
 ---
 tier: tale
 title: The research_swarm linker references every Mermaid figure it places
-goal:
-  Every Mermaid diagram the research_swarm linker places in the published report has a
-  figure-<id> anchor and is introduced by one thoughtful sentence that links to it with
-  a local link, on both GitHub and the Highlights PDF.
+goal: Every Mermaid diagram the research_swarm linker places in the published report
+  has a figure-<id> anchor and is introduced by one thoughtful sentence that links
+  to it with a local link, on both GitHub and the Highlights PDF.
 size: medium
 decisions:
   lead_diagrams:
-    ask:
-      Should Mermaid diagrams the lead drew itself also get a figure anchor and a
-      reference sentence?
+    ask: Should Mermaid diagrams the lead drew itself also get a figure anchor and
+      a reference sentence?
     choices:
-      proposed:
-        Only figures placed from the image agent's manifest; runs without diagrams stay
-        unchanged
-      all:
-        Every Mermaid figure in the published file, including the lead's own, in every
-        linker run
+      proposed: Only figures placed from the image agent's manifest; runs without
+        diagrams stay unchanged
+      all: Every Mermaid figure in the published file, including the lead's own, in
+        every linker run
     default: proposed
-    why:
-      Matches "diagrams the linker adds"; lead diagrams are rare and already sit in lead
-      prose
+    why: Matches "diagrams the linker adds"; lead diagrams are rare and already sit
+      in lead prose
     answer: proposed
   placement:
     ask: Should the reference sentence end the paragraph the figure illustrates?
     choices:
-      inline:
-        Appended to the anchor paragraph; its own paragraph only after lists and the
-        bottom line
-      lead_in:
-        Always a one-sentence paragraph above the figure; simpler, but reads like a 2nd
-        caption
+      inline: Appended to the anchor paragraph; its own paragraph only after lists
+        and the bottom line
+      lead_in: Always a one-sentence paragraph above the figure; simpler, but reads
+        like a 2nd caption
     default: inline
-    why:
-      Reads like a paper's in-text figure reference; the caption below already labels
-      the figure
+    why: Reads like a paper's in-text figure reference; the caption below already
+      labels the figure
     answer: inline
 proposed_by: bbugyi200.apollo.94
 proposed_with: claude/opus
 decided_by: auto
-create_time: 2026-10-19 17:00:29
-status: wip
+status: done
 ---
 
 # Plan: The research_swarm linker references every Mermaid figure it places
