@@ -1,44 +1,33 @@
 ---
 tier: tale
-title:
-  "Land E1 Installable family: fix epic-caused canary, sase-core CI and doc defects,
-  then close sase-1my"
-goal:
-  The canary alert fails closed and reaches an owner, sase-core CI is green, the safety
-  docs are accurate, and epic sase-1my is closed.
+title: 'Land E1 Installable family: fix epic-caused canary, sase-core CI and doc defects,
+  then close sase-1my'
+goal: The canary alert fails closed and reaches an owner, sase-core CI is green, the
+  safety docs are accurate, and epic sase-1my is closed.
 size: medium
 decisions:
   drill_tooling:
     ask: Should the landed TestPyPI drill tooling stay in the repo, dormant?
     choices:
-      keep:
-        Keep the dispatch-only workflow, checker and tests; the doc marks the drill
-        optional and not run
-      remove:
-        Delete the drill workflow, checker, their tests and the doc section; the drill
-        is gone for good
+      keep: Keep the dispatch-only workflow, checker and tests; the doc marks the
+        drill optional and not run
+      remove: Delete the drill workflow, checker, their tests and the doc section;
+        the drill is gone for good
     default: keep
-    why:
-      It is already built and tested, and it costs nothing until someone sets up the
-      TestPyPI project
+    why: It is already built and tested, and it costs nothing until someone sets up
+      the TestPyPI project
     answer: keep
 proposed_by: bbugyi200.athena.sase-1my.land
 proposed_with: claude/opus
 bead: sase-1my
 decided_by: auto
-create_time: 2026-10-19 14:15:43
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202610/e1_installable_family.md](https://github.com/sase-org/sase--plans/blob/main/202610/e1_installable_family.md)
 - **BEAD:**
   [sase-1my](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1my/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1my.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1my.land.md)
-- **COMMITS:**
-  - [e0ddc10](https://github.com/sase-org/sase-core/commit/e0ddc100eb32097393daa0fd099b3017b1b1cfee)
-    — fix(pypi): pin setup-uv v4 and canonicalize the delete guard
 
 # Land epic sase-1my (E1 Installable family): fix what the epic broke, then close it
 
