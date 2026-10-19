@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "bottom_reader",
+      "kind": "choice",
+      "ask": "Should a reader parked at the real bottom of a tall newest Reply block still auto-land on newly arrived turns?",
+      "why": "Keeps today's new-turn landing at the bottom; only the per-refresh yank to the header goes",
+      "choices": [
+        {
+          "key": "land_new_turns",
+          "label": "Lands on each newly arrived turn, but stays put on in-place refreshes (chat-log behavior)"
+        },
+        {
+          "key": "stay_put",
+          "label": "Never moves; new turns only announce through block-rail arrival dots"
+        }
+      ],
+      "default": "land_new_turns",
+      "effective_default": "land_new_turns",
+      "requested_verified": false
+    }
+  ]
+}
