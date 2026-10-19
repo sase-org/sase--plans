@@ -1,69 +1,63 @@
 ---
 tier: epic
 title: Stateless release steward with an observe-only workflow
-goal:
-  Complete sase-1n6.7 with a restart-safe release reconciler, durable escalation, and a
-  verified observe-only GitHub Actions host.
+goal: Complete sase-1n6.7 with a restart-safe release reconciler, durable escalation,
+  and a verified observe-only GitHub Actions host.
 parent_bead: sase-1n6.7
 phases:
-  - id: policy
-    title: Typed release decisions in the Rust core
-    size: medium
-    depends_on: []
-    description:
-      "policy: define the fact and decision wire contracts and implement the pure
-      release state machine, daily cadence, bounded recovery, and escalation policy in
-      sase-core."
-  - id: train-facts
-    title: Read release trains and publication evidence
-    size: medium
-    depends_on:
-      - policy
-    description:
-      "train-facts: read PyPI, tags, draft releases, manifests, release PR checks, and
-      workflow history; reuse the candidate evaluator and expose a reusable read-only
-      reader."
-  - id: health-facts
-    title: Read core, canary, and escalation evidence
-    size: medium
-    depends_on:
-      - policy
-      - train-facts
-    description:
-      "health-facts: compose core-ensure, typed core-cut outcomes, scheduled
-      install-canary results, and issue history into the complete per-tick snapshot."
-  - id: effects
-    title: Execute idempotent train and escalation actions
-    size: medium
-    depends_on:
-      - policy
-      - train-facts
-      - health-facts
-    description:
-      "effects: add precondition-checked action execution and issue sinks, proving one
-      train action and one escalation operation per tick across restarts."
-  - id: cli-host
-    title: Replace the watcher CLI and install the observe-only host
-    size: medium
-    depends_on:
-      - policy
-      - train-facts
-      - health-facts
-      - effects
-    description:
-      "cli-host: switch release_watch to the new reconciler, migrate legacy tests, and
-      add the scheduled observe-only workflow with pinned Rust runtime and structured
-      output."
+- id: policy
+  title: Typed release decisions in the Rust core
+  size: medium
+  depends_on: []
+  description: 'policy: define the fact and decision wire contracts and implement
+    the pure release state machine, daily cadence, bounded recovery, and escalation
+    policy in sase-core.'
+- id: train-facts
+  title: Read release trains and publication evidence
+  size: medium
+  depends_on:
+  - policy
+  description: 'train-facts: read PyPI, tags, draft releases, manifests, release PR
+    checks, and workflow history; reuse the candidate evaluator and expose a reusable
+    read-only reader.'
+- id: health-facts
+  title: Read core, canary, and escalation evidence
+  size: medium
+  depends_on:
+  - policy
+  - train-facts
+  description: 'health-facts: compose core-ensure, typed core-cut outcomes, scheduled
+    install-canary results, and issue history into the complete per-tick snapshot.'
+- id: effects
+  title: Execute idempotent train and escalation actions
+  size: medium
+  depends_on:
+  - policy
+  - train-facts
+  - health-facts
+  description: 'effects: add precondition-checked action execution and issue sinks,
+    proving one train action and one escalation operation per tick across restarts.'
+- id: cli-host
+  title: Replace the watcher CLI and install the observe-only host
+  size: medium
+  depends_on:
+  - policy
+  - train-facts
+  - health-facts
+  - effects
+  description: 'cli-host: switch release_watch to the new reconciler, migrate legacy
+    tests, and add the scheduled observe-only workflow with pinned Rust runtime and
+    structured output.'
 proposed_by: bbugyi200.athena.sase-1n6.7
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-19 19:56:20
 status: wip
+bead_id: sase-1n6.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/release_steward_observe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_steward_observe.md)
-- **PARENT:**
-  [202610/e2_release_train_steward.md](https://github.com/sase-org/sase--plans/blob/main/202610/e2_release_train_steward.md)
+- **PROMPT:** [prompts/202610/release_steward_observe.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/release_steward_observe.md)
+- **PARENT:** [202610/e2_release_train_steward.md](https://github.com/sase-org/sase--plans/blob/main/202610/e2_release_train_steward.md)
+- **BEAD:** [sase-1n6.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.7.1.md)
 
 # Stateless release steward
 
