@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "cap",
+      "kind": "choice",
+      "ask": "Should the per-report diagram cap rise from three to four?",
+      "why": "The failure is zero diagrams, not too few slots. Raise the cap only after the pilot shows demand.",
+      "choices": [
+        {
+          "key": "three",
+          "label": "Keep at most three diagrams; the PDF length budget stays as agreed in the original design"
+        },
+        {
+          "key": "four",
+          "label": "Allow up to four diagrams; panel-rich reports get one more drill-down, but the PDF gets longer"
+        }
+      ],
+      "default": "three",
+      "effective_default": "three",
+      "requested_verified": false
+    },
+    {
+      "id": "considered_count",
+      "kind": "choice",
+      "ask": "Should the `diagrams` output variable record how many drill-down candidates were considered?",
+      "why": "Additive and free; lets the sase-1mo pilot tell a considered zero from a reflexive one",
+      "choices": [
+        {
+          "key": "record",
+          "label": "Add a `considered` count to `ready`/`none` variables so the pilot can measure it"
+        },
+        {
+          "key": "response_only",
+          "label": "Keep the variable schema; candidates and verdicts appear only in the final response"
+        }
+      ],
+      "default": "record",
+      "effective_default": "record",
+      "requested_verified": false
+    }
+  ]
+}
