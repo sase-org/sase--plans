@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "missing_paint",
+      "kind": "choice",
+      "ask": "Should same-document links with no matching heading show as (missing) as soon as the page opens?",
+      "why": "The check is a pure, I/O-free lookup, so you see a broken anchor before you press it",
+      "choices": [
+        {
+          "key": "eager",
+          "label": "They show \u2298 (missing) right away, checked against the section text before any press"
+        },
+        {
+          "key": "on_press",
+          "label": "They look like normal links until pressed, then turn \u2298 like other dead links"
+        }
+      ],
+      "default": "eager",
+      "effective_default": "eager",
+      "requested_verified": false
+    }
+  ]
+}
