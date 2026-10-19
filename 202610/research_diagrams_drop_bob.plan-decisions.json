@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "npx_fallback",
+      "kind": "choice",
+      "ask": "With no working mmdc installed, should the check fall back to `npx -y -p @mermaid-js/mermaid-cli mmdc`?",
+      "why": "Mirrors the audio macro's `uvx sase-listen` fallback, so diagrams need no setup",
+      "choices": [
+        {
+          "key": "allow",
+          "label": "Works for anyone with Node 22.13+; first run downloads mermaid-cli and Chrome (~150 MB)"
+        },
+        {
+          "key": "installed_only",
+          "label": "Uses only a pre-installed working mmdc; never downloads, otherwise diagrams fail"
+        }
+      ],
+      "default": "allow",
+      "effective_default": "allow",
+      "requested_verified": false
+    }
+  ]
+}
