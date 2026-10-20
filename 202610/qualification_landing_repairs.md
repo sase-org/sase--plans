@@ -1,36 +1,33 @@
 ---
 tier: epic
 title: Repair qualification evidence transport and prove the deployed workflow
-goal:
-  Qualification produces verifiable candidate-bound evidence from real Actions jobs,
-  persists every attempt, and has retained green and wrong-core rehearsal proofs.
+goal: Qualification produces verifiable candidate-bound evidence from real Actions
+  jobs, persists every attempt, and has retained green and wrong-core rehearsal proofs.
 parent_bead: sase-1n6.5.1
 phases:
-  - id: repair
-    title: Repair qualification producer and consumer integration
-    size: medium
-    description:
-      "repair: fix authoritative job identity, paginated artifact transport, observation
-      persistence, and refusal diagnostics with executable integration tests."
-    depends_on: []
-  - id: deployed-proof
-    title: Retain green and wrong-core rehearsal proofs
-    size: medium
-    description:
-      "deployed-proof: exercise the host-landed repair through release rehearsals and
-      retain the exact-SHA source-CI comparison and candidate observations."
-    depends_on:
-      - repair
+- id: repair
+  title: Repair qualification producer and consumer integration
+  size: medium
+  description: 'repair: fix authoritative job identity, paginated artifact transport,
+    observation persistence, and refusal diagnostics with executable integration tests.'
+  depends_on: []
+- id: deployed-proof
+  title: Retain green and wrong-core rehearsal proofs
+  size: medium
+  description: 'deployed-proof: exercise the host-landed repair through release rehearsals
+    and retain the exact-SHA source-CI comparison and candidate observations.'
+  depends_on:
+  - repair
 proposed_by: bbugyi200.athena.sase-1n6.5.1.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-20 00:28:13
 status: wip
+bead_id: sase-1n6.5.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202610/qualification_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/qualification_landing_repairs.md)
-- **PARENT:**
-  [202610/published_core_qualification.md](https://github.com/sase-org/sase--plans/blob/main/202610/published_core_qualification.md)
+- **PROMPT:** [prompts/202610/qualification_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/qualification_landing_repairs.md)
+- **PARENT:** [202610/published_core_qualification.md](https://github.com/sase-org/sase--plans/blob/main/202610/published_core_qualification.md)
+- **BEAD:** [sase-1n6.5.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.5.1.5.md)
 
 # Qualification landing repairs
 
