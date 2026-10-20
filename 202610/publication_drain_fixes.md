@@ -1,102 +1,92 @@
 ---
 tier: epic
 title: Make publication drains bounded and recoverable
-goal:
-  Fix the measured publication failures and prove safe recovery before bulk backlog
+goal: Fix the measured publication failures and prove safe recovery before bulk backlog
   draining
 parent_bead: sase-1nf.10
 phases:
-  - id: retry-policy
-    title: Put failure accounting and bounded selection policy in Rust
-    depends_on: []
-    description:
-      "retry-policy: extend publication recovery wire types, centralize error classes
-      and attempt charging, and implement deterministic bounded request selection with
-      binding tests."
-    size: medium
-  - id: timeout-cleanup
-    title: Terminate interrupted Git transfers and restore publication paths
-    depends_on: []
-    description:
-      "timeout-cleanup: make streaming Git cancellation kill and reap its process group,
-      let the drain alarm escape broad handlers, clean prompts and artifacts, and verify
-      existing stale-lock recovery."
-    size: medium
-  - id: drain-accounting
-    title: Apply failure scope and bounded selection to commit drains
-    depends_on:
-      - retry-policy
-      - timeout-cleanup
-    description:
-      "drain-accounting: thread structured failure provenance and selected logical keys
-      through the transaction, charge only attempted hood requests, preserve timeout
-      stage, and cap background drain batches."
-    size: medium
-  - id: inventory-scope
-    title: Load expensive inventory data only for requested hoods
-    depends_on:
-      - drain-accounting
-    description:
-      "inventory-scope: filter indexed, dismissed, and historical records before payload
-      hydration or per-commit Git calls, reuse commit records within a drain, and prove
-      selected-hood equivalence."
-    size: medium
-  - id: payload-scope
-    title: Render selected hoods and their affected browsing indexes
-    depends_on:
-      - inventory-scope
-    description:
-      "payload-scope: produce targeted page payloads while preserving complete manifests
-      and indexes, keep strict validation, reuse unchanged validated metadata within a
-      transaction, and extend the read-only profiler."
-    size: medium
-  - id: bounded-cli
-    title: Expose bounded retries without full reconciliation
-    depends_on:
-      - payload-scope
-    description:
-      "bounded-cli: add retry limit and error-class options, use Rust selection under
-      the outbox lock, drain only the bounded request set, and document queue isolation
-      and resume behavior."
-    size: medium
-  - id: manifest-repair
-    title: Repair verified stale explicit manifest entries
-    depends_on:
-      - retry-policy
-    description:
-      "manifest-repair: extend explicit local-owner manifest repair to verified stale
-      file lists, retain corrupt-candidate diagnostics, and prove idempotence and owner
-      isolation."
-    size: medium
-  - id: replay-recovery
-    title: Build and prove the backup-first stale-replay recovery procedure
-    depends_on:
-      - bounded-cli
-      - manifest-repair
-    description:
-      "replay-recovery: add an explicit resumable recovery helper that preserves
-      unpublished owner data and objects, regenerates conflicting browsing pages over
-      upstream, and proves lossless replay in real-Git fixtures."
-    size: medium
-  - id: recovery-proof
-    title: Repair Apollo and prove bounded publication on both hosts
-    depends_on:
-      - replay-recovery
-    description:
-      "recovery-proof: verify installed revisions, preserve unique Apollo content before
-      repairing the stale replay and manifest mismatch, run small publication canaries
-      on both hosts, and publish acceptance evidence for the land agent."
-    size: medium
+- id: retry-policy
+  title: Put failure accounting and bounded selection policy in Rust
+  depends_on: []
+  description: 'retry-policy: extend publication recovery wire types, centralize error
+    classes and attempt charging, and implement deterministic bounded request selection
+    with binding tests.'
+  size: medium
+- id: timeout-cleanup
+  title: Terminate interrupted Git transfers and restore publication paths
+  depends_on: []
+  description: 'timeout-cleanup: make streaming Git cancellation kill and reap its
+    process group, let the drain alarm escape broad handlers, clean prompts and artifacts,
+    and verify existing stale-lock recovery.'
+  size: medium
+- id: drain-accounting
+  title: Apply failure scope and bounded selection to commit drains
+  depends_on:
+  - retry-policy
+  - timeout-cleanup
+  description: 'drain-accounting: thread structured failure provenance and selected
+    logical keys through the transaction, charge only attempted hood requests, preserve
+    timeout stage, and cap background drain batches.'
+  size: medium
+- id: inventory-scope
+  title: Load expensive inventory data only for requested hoods
+  depends_on:
+  - drain-accounting
+  description: 'inventory-scope: filter indexed, dismissed, and historical records
+    before payload hydration or per-commit Git calls, reuse commit records within
+    a drain, and prove selected-hood equivalence.'
+  size: medium
+- id: payload-scope
+  title: Render selected hoods and their affected browsing indexes
+  depends_on:
+  - inventory-scope
+  description: 'payload-scope: produce targeted page payloads while preserving complete
+    manifests and indexes, keep strict validation, reuse unchanged validated metadata
+    within a transaction, and extend the read-only profiler.'
+  size: medium
+- id: bounded-cli
+  title: Expose bounded retries without full reconciliation
+  depends_on:
+  - payload-scope
+  description: 'bounded-cli: add retry limit and error-class options, use Rust selection
+    under the outbox lock, drain only the bounded request set, and document queue
+    isolation and resume behavior.'
+  size: medium
+- id: manifest-repair
+  title: Repair verified stale explicit manifest entries
+  depends_on:
+  - retry-policy
+  description: 'manifest-repair: extend explicit local-owner manifest repair to verified
+    stale file lists, retain corrupt-candidate diagnostics, and prove idempotence
+    and owner isolation.'
+  size: medium
+- id: replay-recovery
+  title: Build and prove the backup-first stale-replay recovery procedure
+  depends_on:
+  - bounded-cli
+  - manifest-repair
+  description: 'replay-recovery: add an explicit resumable recovery helper that preserves
+    unpublished owner data and objects, regenerates conflicting browsing pages over
+    upstream, and proves lossless replay in real-Git fixtures.'
+  size: medium
+- id: recovery-proof
+  title: Repair Apollo and prove bounded publication on both hosts
+  depends_on:
+  - replay-recovery
+  description: 'recovery-proof: verify installed revisions, preserve unique Apollo
+    content before repairing the stale replay and manifest mismatch, run small publication
+    canaries on both hosts, and publish acceptance evidence for the land agent.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1nf.10
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-20 15:40:49
 status: wip
+bead_id: sase-1nf.10.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/publication_drain_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_drain_fixes.md)
-- **PARENT:**
-  [202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202610/athena_apollo_audit_fixes.md)
+- **PROMPT:** [prompts/202610/publication_drain_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_drain_fixes.md)
+- **PARENT:** [202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202610/athena_apollo_audit_fixes.md)
+- **BEAD:** [sase-1nf.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nf/sase-1nf.10.1.md)
 
 # Make publication drains bounded and recoverable
 
