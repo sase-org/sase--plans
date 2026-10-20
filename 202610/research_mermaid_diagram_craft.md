@@ -1,54 +1,54 @@
 ---
 tier: epic
 title: Mermaid diagram craft for the research swarm
-goal: "The research swarm's diagrams agent proposes fewer, better Mermaid figures. Each
-  one answers a named reader question, reads on its own from figure, in-figure title,
-  and caption, uses a small semantic palette, and passes a look at a PDF-settings render
-  that prints at 75% scale or more. The craft lives in one shared `mermaid_diagrams`
+goal: 'The research swarm''s diagrams agent proposes fewer, better Mermaid figures.
+  Each one answers a named reader question, reads on its own from figure, in-figure
+  title, and caption, uses a small semantic palette, and passes a look at a PDF-settings
+  render that prints at 75% scale or more. The craft lives in one shared `mermaid_diagrams`
   plugin skill. `#research/diagrams` inlines it, and the swarm lead loads it on demand.
 
-  "
+  '
 decisions:
   lead_reach:
-    ask: Should `#research` also tell standalone and swarm researchers to use the skill?
+    ask: Should `#research` also tell standalone and swarm researchers to use the
+      skill?
     choices:
       lead: Only the swarm lead gets the pointer; researcher drafts skip render time
-      all:
-        Also add it to `#research`; reaches standalone reports, slows unpublished drafts
+      all: Also add it to `#research`; reaches standalone reports, slows unpublished
+        drafts
     default: lead
     why: The research's Adjustment 7 names the lead, which writes most published figures
     answer: lead
 phases:
-  - id: skill
-    title: Ship the mermaid_diagrams plugin skill and point the lead at it
-    depends_on: []
-    size: medium
-    description:
-      "skill: add `skills/mermaid_diagrams.md` to sase-research-artifacts. It holds
-      positive rules with reasons, a verified classDef palette, the PDF-mirroring
-      render, look, and revise loop, and two or three rendered worked examples. Point
-      the swarm lead at the skill. Add load, expansion, and wheel tests, and list the
-      skill in the README and architecture docs."
-  - id: diagrams
-    title: Rewire research/diagrams around reader questions and the skill
-    depends_on:
-      - skill
-    size: medium
-    description:
-      "diagrams: retarget candidate selection to named reader questions. Replace the
-      drawing bans with an inlined `#skill/mermaid_diagrams`. Swap the max-width grep
-      for root-SVG fit-scale validation under the PDF config. Redraw the manifest
-      example and add `question`/`review` fields. Update tests and docs."
+- id: skill
+  title: Ship the mermaid_diagrams plugin skill and point the lead at it
+  depends_on: []
+  size: medium
+  description: 'skill: add `skills/mermaid_diagrams.md` to sase-research-artifacts.
+    It holds positive rules with reasons, a verified classDef palette, the PDF-mirroring
+    render, look, and revise loop, and two or three rendered worked examples. Point
+    the swarm lead at the skill. Add load, expansion, and wheel tests, and list the
+    skill in the README and architecture docs.'
+- id: diagrams
+  title: Rewire research/diagrams around reader questions and the skill
+  depends_on:
+  - skill
+  size: medium
+  description: 'diagrams: retarget candidate selection to named reader questions.
+    Replace the drawing bans with an inlined `#skill/mermaid_diagrams`. Swap the max-width
+    grep for root-SVG fit-scale validation under the PDF config. Redraw the manifest
+    example and add `question`/`review` fields. Update tests and docs.'
 proposed_by: bbugyi200.athena.research.54.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-20 11:52:07
 status: wip
+bead_id: sase-1nd
 ---
 
-- **PROMPT:**
-  [prompts/202610/research_mermaid_diagram_craft.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_mermaid_diagram_craft.md)
+- **PROMPT:** [prompts/202610/research_mermaid_diagram_craft.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/research_mermaid_diagram_craft.md)
+- **BEAD:** [sase-1nd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nd/README.md)
 
 # Plan: Mermaid diagram craft for the research swarm
 
