@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "doctor_probe",
+      "kind": "choice",
+      "ask": "Should `bob ref doctor` do a one-diagram test render so its mermaid row proves the browser launches?",
+      "why": "doctor printed \"mermaid ok\" on apollo while every render there failed",
+      "choices": [
+        {
+          "key": "probe",
+          "label": "Doctor launches the browser once (a few seconds slower) and warns with the real launch error"
+        },
+        {
+          "key": "skip",
+          "label": "Doctor keeps its fast version-only ping; launch-time failures stay invisible to it"
+        }
+      ],
+      "default": "probe",
+      "effective_default": "probe",
+      "requested_verified": false
+    }
+  ]
+}
