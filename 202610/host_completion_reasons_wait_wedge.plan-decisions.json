@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "apollo_unblock",
+      "kind": "choice",
+      "ask": "Should the implementing agent unblock apollo's parked waiters through a /sase_gate after the fix is verified?",
+      "why": "the fix can't reach runners that already imported the broken module; the marker must be cleared",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "Propose the apollo marker scrub (plus any kill) as a gate you confirm; 9m--1 resumes on approval"
+        },
+        {
+          "key": "manual",
+          "label": "Leave apollo alone; you run the unblock steps listed in this plan yourself"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    },
+    {
+      "id": "stale_a013_followup",
+      "kind": "choice",
+      "ask": "Should bob-cli-a0.13--1 be stopped before apollo is unblocked?",
+      "why": "9m's own next-action prompt treats bob-cli-a0.13--1 as stranded and finishes its work itself",
+      "choices": [
+        {
+          "key": "kill",
+          "label": "Stop it first; 9m--1 already owns bob-cli-a0.13's reader sweep and closeout"
+        },
+        {
+          "key": "release",
+          "label": "Let it resume alongside 9m--1; its 16:04Z reader-launch follow-up will likely duplicate 9m's work"
+        }
+      ],
+      "default": "kill",
+      "effective_default": "kill",
+      "requested_verified": false
+    }
+  ]
+}
