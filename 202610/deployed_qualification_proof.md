@@ -1,56 +1,51 @@
 ---
 tier: epic
 title: Unblock and retain the deployed qualification proofs
-goal:
-  A live release.yml rehearsal at master passes qualification against the published
-  core, a wrong-core probe rehearsal at the same SHA is a typed QUALIFY_RED naming lint
-  and the missing binding, exact-SHA source-built Full CI passes the blocking checks,
-  and the retained evidence lets sase-1n6.5.1.5.2 close.
+goal: A live release.yml rehearsal at master passes qualification against the published
+  core, a wrong-core probe rehearsal at the same SHA is a typed QUALIFY_RED naming
+  lint and the missing binding, exact-SHA source-built Full CI passes the blocking
+  checks, and the retained evidence lets sase-1n6.5.1.5.2 close.
 parent_bead: sase-1n6.5.1.5.2
 decisions:
   rerun_once:
-    ask:
-      May the live-proof worker rerun failed jobs once when a required rehearsal or Full
-      CI job flakes?
+    ask: May the live-proof worker rerun failed jobs once when a required rehearsal
+      or Full CI job flakes?
     choices:
-      once:
-        One `gh run rerun --failed` per run on a test-only first-attempt red; keeps both
-        attempts
+      once: One `gh run rerun --failed` per run on a test-only first-attempt red;
+        keeps both attempts
       never: No reruns; dispatch fresh runs instead, which can move the compared SHA
     default: once
-    why:
-      Keeps the exact SHA and exercises attempt-aware carry-forward live, as the steward
-      would
+    why: Keeps the exact SHA and exercises attempt-aware carry-forward live, as the
+      steward would
     answer: once
 phases:
-  - id: unblock
-    title: Clear the three blockers between master and a live rehearsal
-    depends_on: []
-    size: medium
-    description:
-      "unblock: grant actions:read to Full CI's reusable call behind a caller/callee
-      permission contract test, parse sase-core's block-form EXPECTED_DIST_SUFFIXES
-      through the shared _release_core parser, refresh the stale contract manifest, and
-      replay the rehearse build and published-core steps locally against real inputs."
-  - id: live-proof
-    title: Dispatch and retain the green, probe and exact-SHA source proofs
-    depends_on:
-      - unblock
-    size: medium
-    description:
-      "live-proof: once unblock is on remote master, dispatch the green rehearsal, the
-      0.41.0 probe rehearsal and Full CI at one SHA, monitor them, re-evaluate archived
-      inputs through release_candidate evaluate, register durable evidence and record
-      the acceptance mapping."
+- id: unblock
+  title: Clear the three blockers between master and a live rehearsal
+  depends_on: []
+  size: medium
+  description: 'unblock: grant actions:read to Full CI''s reusable call behind a caller/callee
+    permission contract test, parse sase-core''s block-form EXPECTED_DIST_SUFFIXES
+    through the shared _release_core parser, refresh the stale contract manifest,
+    and replay the rehearse build and published-core steps locally against real inputs.'
+- id: live-proof
+  title: Dispatch and retain the green, probe and exact-SHA source proofs
+  depends_on:
+  - unblock
+  size: medium
+  description: 'live-proof: once unblock is on remote master, dispatch the green rehearsal,
+    the 0.41.0 probe rehearsal and Full CI at one SHA, monitor them, re-evaluate archived
+    inputs through release_candidate evaluate, register durable evidence and record
+    the acceptance mapping.'
 proposed_by: bbugyi200.athena.12n
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-20 15:25:36
 status: wip
+bead_id: sase-1n6.5.1.5.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/deployed_qualification_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/deployed_qualification_proof.md)
+- **PROMPT:** [prompts/202610/deployed_qualification_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/deployed_qualification_proof.md)
+- **BEAD:** [sase-1n6.5.1.5.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.5.1.5.2.1.md)
 
 # Unblock and retain the deployed qualification proofs
 
