@@ -1,166 +1,152 @@
 ---
 tier: epic
 title: Fix the athena/apollo audit findings the triage ranked worth fixing
-goal: "Apollo's and athena's managed-tmp reaper reclaims dead scratch even with SSH
-  sessions open and read-only test trees present, and its jobs report failures
+goal: 'Apollo''s and athena''s managed-tmp reaper reclaims dead scratch even with
+  SSH sessions open and read-only test trees present, and its jobs report failures
   truthfully. Agent cleanup works while any agent waits on an epic. `sase doctor -j`
   always prints JSON. Artifact-link projection converges past missing or foreign bead
-  endpoints. Agent-hood publication drains its quarantine backlog through measured fixes
-  and bounded retries. The TUI's multi-second GC freezes are attributed and fixed
-  against sase-1f3's targets. Task beads sase-1bw, sase-1ne, sase-1nb, sase-1na,
-  sase-1c5, sase-1f4, sase-1f3, sase-10x, and sase-1nc are closed with evidence, and the
-  stalled epic sase-11o is superseded.
+  endpoints. Agent-hood publication drains its quarantine backlog through measured
+  fixes and bounded retries. The TUI''s multi-second GC freezes are attributed and
+  fixed against sase-1f3''s targets. Task beads sase-1bw, sase-1ne, sase-1nb, sase-1na,
+  sase-1c5, sase-1f4, sase-1f3, sase-10x, and sase-1nc are closed with evidence, and
+  the stalled epic sase-11o is superseded.
 
-  "
+  '
 decisions:
   gc_soak:
     ask: Should gc-measure wait out sase-1f3's 24-hour soak before gc-fix starts?
     default: false
-    why:
-      Busy-hour and 4-hour windows suffice to attribute; gc-fix's acceptance reruns the
-      soak
+    why: Busy-hour and 4-hour windows suffice to attribute; gc-fix's acceptance reruns
+      the soak
     answer: false
 phases:
-  - id: reap-core
-    title: sase-core reaper removes read-only trees and exempts system-service sessions
-    depends_on: []
-    size: medium
-    description:
-      "reap-core: in sase-core, make managed-tmp removal repair owner write permission
-      inside the candidate tree and retry once, add the system-service ancestry
-      exemption to the launch-scratch liveness observer, and surface the blocking
-      process in dead-launch and pressure skip reasons."
-  - id: reap-sase
-    title: Truthful managed_tmp_reap and disk_pressure jobs on the new core
-    depends_on:
-      - reap-core
-    size: medium
-    description:
-      "reap-sase: move the core pin, log removal errors and blocking processes, make
-      managed_tmp_reap report check_error on removal failures, make disk_pressure reap
-      before notifying with an explicit status table, and update the housekeeping and
-      runtime docs."
-  - id: bobcli-vault
-    title: bob-cli tests stop leaking read-only vault fixtures
-    depends_on: []
-    size: small
-    description:
-      "bobcli-vault: in the bob-cli repo, restore write permission after the read-only
-      completion test locks its fixture vault, and make the test TempDir removal repair
-      owner write permission inside its own tree."
-  - id: cleanup-encoding
-    title: Lossless EpicFollowView encoding for bundles and cleanup payloads
-    depends_on: []
-    size: medium
-    description:
-      "cleanup-encoding: encode wait_epic_follows explicitly in the shared agent bundle
-      encoder, decode it back into EpicFollowView, guard against the next non-JSON
-      field, and make the cleanup test harness round-trip payloads through JSON. Closes
-      sase-1nb."
-  - id: doctor-macros
-    title: sase doctor survives unbound macro templates
-    depends_on: []
-    size: small
-    description:
-      "doctor-macros: expand macros with raise_on_error in the model-macro check, skip
-      parameterized macros explicitly while still reporting concrete broken presets, and
-      make the diagnostics registry convert SystemExit into an ERROR check. Closes
-      sase-1na."
-  - id: links-core
-    title: sase-core partial bead link projection and per-endpoint receipts
-    depends_on: []
-    size: medium
-    description:
-      "links-core: add a skip mode to bead link projections that applies valid requests
-      and reports missing holders per request, and extend the artifact-link publication
-      receipt with per-endpoint outcomes and an acknowledged, parked, or pending
-      disposition."
-  - id: links-project
-    title: Route, isolate, and commit artifact-link bead endpoints per operation
-    depends_on:
-      - links-core
-    size: medium
-    description:
-      "links-project: move the core pin, classify every bead endpoint by owning store,
-      project only local endpoints in skip mode, commit chunks that already applied when
-      a later chunk fails, and give each operation its own endpoint evidence."
-  - id: links-converge
-    title: Parked endpoints leave the retry loop and the sweep converges
-    depends_on:
-      - links-project
-    size: medium
-    description:
-      "links-converge: move parked operations into a replayable parked ledger, make
-      outbox appends idempotent, sweep per document, report projection failures and
-      parked counts in the artifact_link_backfill job status, and expose parked counts
-      in doctor."
-  - id: pub-measure
-    title: Instrument and measure agent-hood publication drains
-    depends_on: []
-    size: medium
-    description:
-      "pub-measure: supersede the stalled sase-11o epic, add permanent stage timing, a
-      sync-lock holder record, and richer outbox doctor output, then measure one
-      representative drain on athena and inspect apollo's wedged clone read-only, and
-      publish the findings as a research report."
-  - id: pub-fix
-    title: Fix the measured publication failure causes
-    depends_on:
-      - pub-measure
-    size: large
-    description:
-      "pub-fix: plan from the measurement report, then stop repo-wide failures from
-      charging every request's attempt budget, harden the drain timeout, bound the
-      measured per-drain cost, resolve the stale-commit conflicts, and add a bounded
-      retry selector."
-  - id: pub-recover
-    title: Drain the publication backlog on athena and apollo in bounded batches
-    depends_on:
-      - pub-fix
-    size: medium
-    description:
-      "pub-recover: on both hosts, back up unique unpublished content, retry quarantined
-      requests in bounded batches while verifying remote publication and a falling
-      backlog, confirm new agents publish, and close sase-10x."
-  - id: gc-instrument
-    title: GC attribution telemetry and an acceptance-grade freeze report
-    depends_on: []
-    size: medium
-    description:
-      "gc-instrument: fix tui_freeze_report's startup-row, rotation, and trigger
-      handling and add an acceptance mode, add collection start, input age, fault
-      deltas, source revision, and allocator stats to TUI telemetry, and add an opt-in
-      GC census. Closes sase-1f4."
-  - id: gc-measure
-    title: Measure and attribute the TUI GC freezes on restarted TUIs
-    depends_on:
-      - gc-instrument
-    size: medium
-    description:
-      "gc-measure: have the user restart their TUIs onto the instrumented code, capture
-      busy-hour and 4-hour windows on both Python versions, attribute garbage and
-      survivors by type and producer, correlate long pauses with swap, and report
-      against sase-1f3's targets."
-  - id: gc-fix
-    title: Fix the measured GC freeze causes
-    depends_on:
-      - gc-measure
-    size: large
-    description:
-      "gc-fix: plan from the measurement report, reduce allocation and retention at the
-      measured producers before touching collector policy, resolve the backstop
-      quiet-window conflict, and prove sase-1f3's targets on restarted TUIs. Closes
-      sase-1nc."
+- id: reap-core
+  title: sase-core reaper removes read-only trees and exempts system-service sessions
+  depends_on: []
+  size: medium
+  description: 'reap-core: in sase-core, make managed-tmp removal repair owner write
+    permission inside the candidate tree and retry once, add the system-service ancestry
+    exemption to the launch-scratch liveness observer, and surface the blocking process
+    in dead-launch and pressure skip reasons.'
+- id: reap-sase
+  title: Truthful managed_tmp_reap and disk_pressure jobs on the new core
+  depends_on:
+  - reap-core
+  size: medium
+  description: 'reap-sase: move the core pin, log removal errors and blocking processes,
+    make managed_tmp_reap report check_error on removal failures, make disk_pressure
+    reap before notifying with an explicit status table, and update the housekeeping
+    and runtime docs.'
+- id: bobcli-vault
+  title: bob-cli tests stop leaking read-only vault fixtures
+  depends_on: []
+  size: small
+  description: 'bobcli-vault: in the bob-cli repo, restore write permission after
+    the read-only completion test locks its fixture vault, and make the test TempDir
+    removal repair owner write permission inside its own tree.'
+- id: cleanup-encoding
+  title: Lossless EpicFollowView encoding for bundles and cleanup payloads
+  depends_on: []
+  size: medium
+  description: 'cleanup-encoding: encode wait_epic_follows explicitly in the shared
+    agent bundle encoder, decode it back into EpicFollowView, guard against the next
+    non-JSON field, and make the cleanup test harness round-trip payloads through
+    JSON. Closes sase-1nb.'
+- id: doctor-macros
+  title: sase doctor survives unbound macro templates
+  depends_on: []
+  size: small
+  description: 'doctor-macros: expand macros with raise_on_error in the model-macro
+    check, skip parameterized macros explicitly while still reporting concrete broken
+    presets, and make the diagnostics registry convert SystemExit into an ERROR check.
+    Closes sase-1na.'
+- id: links-core
+  title: sase-core partial bead link projection and per-endpoint receipts
+  depends_on: []
+  size: medium
+  description: 'links-core: add a skip mode to bead link projections that applies
+    valid requests and reports missing holders per request, and extend the artifact-link
+    publication receipt with per-endpoint outcomes and an acknowledged, parked, or
+    pending disposition.'
+- id: links-project
+  title: Route, isolate, and commit artifact-link bead endpoints per operation
+  depends_on:
+  - links-core
+  size: medium
+  description: 'links-project: move the core pin, classify every bead endpoint by
+    owning store, project only local endpoints in skip mode, commit chunks that already
+    applied when a later chunk fails, and give each operation its own endpoint evidence.'
+- id: links-converge
+  title: Parked endpoints leave the retry loop and the sweep converges
+  depends_on:
+  - links-project
+  size: medium
+  description: 'links-converge: move parked operations into a replayable parked ledger,
+    make outbox appends idempotent, sweep per document, report projection failures
+    and parked counts in the artifact_link_backfill job status, and expose parked
+    counts in doctor.'
+- id: pub-measure
+  title: Instrument and measure agent-hood publication drains
+  depends_on: []
+  size: medium
+  description: 'pub-measure: supersede the stalled sase-11o epic, add permanent stage
+    timing, a sync-lock holder record, and richer outbox doctor output, then measure
+    one representative drain on athena and inspect apollo''s wedged clone read-only,
+    and publish the findings as a research report.'
+- id: pub-fix
+  title: Fix the measured publication failure causes
+  depends_on:
+  - pub-measure
+  size: large
+  description: 'pub-fix: plan from the measurement report, then stop repo-wide failures
+    from charging every request''s attempt budget, harden the drain timeout, bound
+    the measured per-drain cost, resolve the stale-commit conflicts, and add a bounded
+    retry selector.'
+- id: pub-recover
+  title: Drain the publication backlog on athena and apollo in bounded batches
+  depends_on:
+  - pub-fix
+  size: medium
+  description: 'pub-recover: on both hosts, back up unique unpublished content, retry
+    quarantined requests in bounded batches while verifying remote publication and
+    a falling backlog, confirm new agents publish, and close sase-10x.'
+- id: gc-instrument
+  title: GC attribution telemetry and an acceptance-grade freeze report
+  depends_on: []
+  size: medium
+  description: 'gc-instrument: fix tui_freeze_report''s startup-row, rotation, and
+    trigger handling and add an acceptance mode, add collection start, input age,
+    fault deltas, source revision, and allocator stats to TUI telemetry, and add an
+    opt-in GC census. Closes sase-1f4.'
+- id: gc-measure
+  title: Measure and attribute the TUI GC freezes on restarted TUIs
+  depends_on:
+  - gc-instrument
+  size: medium
+  description: 'gc-measure: have the user restart their TUIs onto the instrumented
+    code, capture busy-hour and 4-hour windows on both Python versions, attribute
+    garbage and survivors by type and producer, correlate long pauses with swap, and
+    report against sase-1f3''s targets.'
+- id: gc-fix
+  title: Fix the measured GC freeze causes
+  depends_on:
+  - gc-measure
+  size: large
+  description: 'gc-fix: plan from the measurement report, reduce allocation and retention
+    at the measured producers before touching collector policy, resolve the backstop
+    quiet-window conflict, and prove sase-1f3''s targets on restarted TUIs. Closes
+    sase-1nc.'
 proposed_by: bbugyi200.athena.12i
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-20 13:36:11
 status: wip
+bead_id: sase-1nf
 ---
 
-- **PROMPT:**
-  [prompts/202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/athena_apollo_audit_fixes.md)
+- **PROMPT:** [prompts/202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/athena_apollo_audit_fixes.md)
+- **BEAD:** [sase-1nf](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nf/README.md)
 
 # Plan: Fix the athena/apollo audit findings the triage ranked worth fixing
 
