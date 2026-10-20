@@ -1,9 +1,10 @@
 ---
 tier: tale
 size: small
-title: Finish landing epic sase-1n8 (controller test fixtures, TUI import budget,
-  closeout)
-goal: The two regressions epic sase-1n8 introduced are fixed, `just check` shows no
+title:
+  Finish landing epic sase-1n8 (controller test fixtures, TUI import budget, closeout)
+goal:
+  The two regressions epic sase-1n8 introduced are fixed, `just check` shows no
   epic-caused failures, and epic sase-1n8 is closed with its plan file marked done.
 proposed_by: bbugyi200.athena.sase-1n8.land
 proposed_with: claude/opus
@@ -15,6 +16,11 @@ status: done
   [202610/host_completion_loop_and_disk_churn.md](https://github.com/sase-org/sase--plans/blob/main/202610/host_completion_loop_and_disk_churn.md)
 - **BEAD:**
   [sase-1n8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n8/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1n8.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1n8.land.md)
+- **COMMITS:**
+  - [a193822](https://github.com/sase-org/sase--plans/commit/a19382246eac85100b4d151c2d8c35e506a82891)
+    — docs(plans): mark sase-1n8 epic plan done
 
 # Finish landing epic sase-1n8
 
