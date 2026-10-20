@@ -1,53 +1,48 @@
 ---
 tier: epic
 title: Qualify release candidates against their exact published core
-goal:
-  Complete sase-1n6.5 with candidate-bound qualification evidence, published-core CI,
-  and green and deliberately red rehearsal proofs.
+goal: Complete sase-1n6.5 with candidate-bound qualification evidence, published-core
+  CI, and green and deliberately red rehearsal proofs.
 parent_bead: sase-1n6.5
 phases:
-  - id: evidence
-    title: Define the qualification inventory and fail-closed evaluator
-    depends_on: []
-    size: medium
-    description:
-      "evidence: add the versioned N1 inventory, typed evidence schema, qualification
-      evaluation and bounded-rerun decision, with adversarial fixtures."
-  - id: published-core
-    title: Supply verified published core artifacts to the CI setup action
-    depends_on:
-      - evidence
-    size: medium
-    description:
-      "published-core: extend build-core and setup-sase to use the manifest's hashed
-      PyPI wheel and tag-built LSP while preserving default source builds."
-  - id: ci-evidence
-    title: Run reusable CI at an explicit ref and report qualification evidence
-    depends_on:
-      - published-core
-    size: medium
-    description:
-      "ci-evidence: thread qualification inputs and concurrency through ci.yml, collect
-      real pytest evidence without changing test commands, and retain job diagnostics."
-  - id: release-wiring
-    title: Integrate qualification, negative probes and durable observations
-    depends_on:
-      - ci-evidence
-    size: medium
-    description:
-      "release-wiring: wire release.yml to published-core CI and the authoritative
-      qualification verdict, preserve red observations, and document the qualification
-      contract."
+- id: evidence
+  title: Define the qualification inventory and fail-closed evaluator
+  depends_on: []
+  size: medium
+  description: 'evidence: add the versioned N1 inventory, typed evidence schema, qualification
+    evaluation and bounded-rerun decision, with adversarial fixtures.'
+- id: published-core
+  title: Supply verified published core artifacts to the CI setup action
+  depends_on:
+  - evidence
+  size: medium
+  description: 'published-core: extend build-core and setup-sase to use the manifest''s
+    hashed PyPI wheel and tag-built LSP while preserving default source builds.'
+- id: ci-evidence
+  title: Run reusable CI at an explicit ref and report qualification evidence
+  depends_on:
+  - published-core
+  size: medium
+  description: 'ci-evidence: thread qualification inputs and concurrency through ci.yml,
+    collect real pytest evidence without changing test commands, and retain job diagnostics.'
+- id: release-wiring
+  title: Integrate qualification, negative probes and durable observations
+  depends_on:
+  - ci-evidence
+  size: medium
+  description: 'release-wiring: wire release.yml to published-core CI and the authoritative
+    qualification verdict, preserve red observations, and document the qualification
+    contract.'
 proposed_by: bbugyi200.athena.sase-1n6.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-19 20:21:14
 status: wip
+bead_id: sase-1n6.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/published_core_qualification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/published_core_qualification.md)
-- **PARENT:**
-  [202610/e2_release_train_steward.md](https://github.com/sase-org/sase--plans/blob/main/202610/e2_release_train_steward.md)
+- **PROMPT:** [prompts/202610/published_core_qualification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/published_core_qualification.md)
+- **PARENT:** [202610/e2_release_train_steward.md](https://github.com/sase-org/sase--plans/blob/main/202610/e2_release_train_steward.md)
+- **BEAD:** [sase-1n6.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.5.1.md)
 
 # Published-core qualification
 
