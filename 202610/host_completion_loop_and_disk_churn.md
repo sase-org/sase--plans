@@ -1,93 +1,86 @@
 ---
 tier: epic
 title: Stop unsatisfiable host-completion loops and the disk churn they caused
-goal: "A verified agent can never loop on a host completion that cannot succeed, its
+goal: 'A verified agent can never loop on a host completion that cannot succeed, its
   recovery prompts say why completion refused, monitor cycles no longer pile up cargo
-  targets, and a full disk yields a truthful, recoverable monitor outcome instead of a
-  silent lost turn.
+  targets, and a full disk yields a truthful, recoverable monitor outcome instead
+  of a silent lost turn.
 
-  "
+  '
 decisions:
   no_stage_source:
-    ask:
-      How should `sase final prepare` treat a `just check` that reports no stage
+    ask: How should `sase final prepare` treat a `just check` that reports no stage
       evidence?
     choices:
-      refuse:
-        Refuse at prepare with the inline-verify fallback; stage-reporting checks only
-      exit_code:
-        Seal an exit-code-only contract; a zero exit lands the work with no stage
-        evidence
+      refuse: Refuse at prepare with the inline-verify fallback; stage-reporting checks
+        only
+      exit_code: Seal an exit-code-only contract; a zero exit lands the work with
+        no stage evidence
     default: refuse
     why: Refusing fails closed and keeps the evidence bar the verify contract enforces.
     answer: refuse
   repeat_guard:
-    ask:
-      Should prepare refuse to re-seal an unchanged tree whose passing check was already
-      refused?
+    ask: Should prepare refuse to re-seal an unchanged tree whose passing check was
+      already refused?
     choices:
-      guard:
-        Add the guard, so an identical refused cycle costs at most one extra check run
+      guard: Add the guard, so an identical refused cycle costs at most one extra
+        check run
       skip: Skip the guard and rely on the surfaced recovery reason alone
     default: guard
     why: Only a mechanical guard bounds the loop when a model ignores the reason text.
     answer: guard
 phases:
-  - id: core-completion-seal-guards
-    title: "sase-core: seal-time guards for conditional completion"
-    depends_on: []
-    size: medium
-    description:
-      "core-completion-seal-guards: in sase-core, refuse to seal a just check contract
-      whose stages the project cannot report, and refuse re-sealing an identical tree
-      whose passing check was already refused."
-  - id: prepare-stage-guard
-    title: "sase: feed the seal guards from sase final prepare"
-    depends_on:
-      - core-completion-seal-guards
-    size: medium
-    description:
-      "prepare-stage-guard: resolve the check's stage source from the tool catalog, pass
-      the predecessor's refusal, fix creator.project, move the core pin, and update docs
-      and skills."
-  - id: recovery-reason-prompt
-    title: "sase: show the host-completion recovery reason to the follow-up agent"
-    depends_on: []
-    size: small
-    description:
-      "recovery-reason-prompt: persist every recovery reason and render a Host
-      completion section with glosses in monitor follow-up prompts."
-  - id: monitor-scratch-reclaim
-    title: "sase: reclaim the starter's cargo target when its monitor settles"
-    depends_on: []
-    size: medium
-    description:
-      "monitor-scratch-reclaim: during monitor settlement, remove the unheld starter
-      cargo-targets dir through the Rust-owned reaper, leaving agent-tmp to the
-      backstop."
-  - id: core-pressure-emergency-age
-    title: "sase-core: honor the low-free-space pressure age for unheld entries"
-    depends_on: []
-    size: small
-    description:
-      "core-pressure-emergency-age: let observed-unheld pressure candidates use the
-      shorter of the dead-launch grace and the emergency min age."
-  - id: supervisor-enospc-resilience
-    title: "sase: make the proc supervisor survive a full disk truthfully"
-    depends_on: []
-    size: medium
-    description:
-      "supervisor-enospc-resilience: keep draining after log write errors, keep known
-      exits, retry settlement on ENOSPC, and name the last supervisor error on loss."
+- id: core-completion-seal-guards
+  title: 'sase-core: seal-time guards for conditional completion'
+  depends_on: []
+  size: medium
+  description: 'core-completion-seal-guards: in sase-core, refuse to seal a just check
+    contract whose stages the project cannot report, and refuse re-sealing an identical
+    tree whose passing check was already refused.'
+- id: prepare-stage-guard
+  title: 'sase: feed the seal guards from sase final prepare'
+  depends_on:
+  - core-completion-seal-guards
+  size: medium
+  description: 'prepare-stage-guard: resolve the check''s stage source from the tool
+    catalog, pass the predecessor''s refusal, fix creator.project, move the core pin,
+    and update docs and skills.'
+- id: recovery-reason-prompt
+  title: 'sase: show the host-completion recovery reason to the follow-up agent'
+  depends_on: []
+  size: small
+  description: 'recovery-reason-prompt: persist every recovery reason and render a
+    Host completion section with glosses in monitor follow-up prompts.'
+- id: monitor-scratch-reclaim
+  title: 'sase: reclaim the starter''s cargo target when its monitor settles'
+  depends_on: []
+  size: medium
+  description: 'monitor-scratch-reclaim: during monitor settlement, remove the unheld
+    starter cargo-targets dir through the Rust-owned reaper, leaving agent-tmp to
+    the backstop.'
+- id: core-pressure-emergency-age
+  title: 'sase-core: honor the low-free-space pressure age for unheld entries'
+  depends_on: []
+  size: small
+  description: 'core-pressure-emergency-age: let observed-unheld pressure candidates
+    use the shorter of the dead-launch grace and the emergency min age.'
+- id: supervisor-enospc-resilience
+  title: 'sase: make the proc supervisor survive a full disk truthfully'
+  depends_on: []
+  size: medium
+  description: 'supervisor-enospc-resilience: keep draining after log write errors,
+    keep known exits, retry settlement on ENOSPC, and name the last supervisor error
+    on loss.'
 proposed_by: bbugyi200.apollo.96
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-20 06:52:53
 status: wip
+bead_id: sase-1n8
 ---
 
-- **PROMPT:**
-  [prompts/202610/host_completion_loop_and_disk_churn.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/host_completion_loop_and_disk_churn.md)
+- **PROMPT:** [prompts/202610/host_completion_loop_and_disk_churn.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/host_completion_loop_and_disk_churn.md)
+- **BEAD:** [sase-1n8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n8/README.md)
 
 # Stop unsatisfiable host-completion loops and the disk churn they caused
 
