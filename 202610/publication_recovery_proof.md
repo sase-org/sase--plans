@@ -1,59 +1,55 @@
 ---
 tier: epic
 title: Finish Apollo recovery and prove bounded publication
-goal:
-  Complete the outstanding operational acceptance for sase-1nf.10.1.9 without bulk
-  backlog draining or losing unpublished content.
+goal: Complete the outstanding operational acceptance for sase-1nf.10.1.9 without
+  bulk backlog draining or losing unpublished content.
 parent_bead: sase-1nf.10.1.9
 phases:
-  - id: apollo-replay
-    title: Recover Apollo bob-cli unpublished owner content
-    depends_on: []
-    description:
-      "apollo-replay: execute the backup-first stale-replay helper, prove unique content
-      reached the remote, and verify repeat apply is a no-op."
-    size: medium
-  - id: apollo-manifest
-    title: Repair and verify Apollo's stale owner manifest
-    depends_on:
-      - apollo-replay
-    description:
-      "apollo-manifest: repair the verified local-owner explicit-list mismatch through
-      the normal transaction, verify remote payload references, and prove repeat repair
-      is a no-op."
-    size: small
-  - id: athena-canary
-    title: Measure and publish a formerly failing Athena request
-    depends_on:
-      - apollo-manifest
-    description:
-      "athena-canary: profile the selected timeout hood, run the bounded production
-      canary, and record exact queue, timing, payload, and remote evidence."
-    size: medium
-  - id: apollo-canaries
-    title: Prove bounded publication for Apollo's repaired classes
-    depends_on:
-      - athena-canary
-    description:
-      "apollo-canaries: run bounded canaries for bob-cli replay and sase manifest
-      failures, preserving unrelated stopped requests and validating remote results."
-    size: medium
-  - id: completion-proof
-    title: Prove fixture recovery and automatic publication after installation
-    depends_on:
-      - apollo-canaries
-    description:
-      "completion-proof: run the existing real-Git recovery fixtures and verify a newly
-      completed agent published automatically after installation."
-    size: medium
+- id: apollo-replay
+  title: Recover Apollo bob-cli unpublished owner content
+  depends_on: []
+  description: 'apollo-replay: execute the backup-first stale-replay helper, prove
+    unique content reached the remote, and verify repeat apply is a no-op.'
+  size: medium
+- id: apollo-manifest
+  title: Repair and verify Apollo's stale owner manifest
+  depends_on:
+  - apollo-replay
+  description: 'apollo-manifest: repair the verified local-owner explicit-list mismatch
+    through the normal transaction, verify remote payload references, and prove repeat
+    repair is a no-op.'
+  size: small
+- id: athena-canary
+  title: Measure and publish a formerly failing Athena request
+  depends_on:
+  - apollo-manifest
+  description: 'athena-canary: profile the selected timeout hood, run the bounded
+    production canary, and record exact queue, timing, payload, and remote evidence.'
+  size: medium
+- id: apollo-canaries
+  title: Prove bounded publication for Apollo's repaired classes
+  depends_on:
+  - athena-canary
+  description: 'apollo-canaries: run bounded canaries for bob-cli replay and sase
+    manifest failures, preserving unrelated stopped requests and validating remote
+    results.'
+  size: medium
+- id: completion-proof
+  title: Prove fixture recovery and automatic publication after installation
+  depends_on:
+  - apollo-canaries
+  description: 'completion-proof: run the existing real-Git recovery fixtures and
+    verify a newly completed agent published automatically after installation.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1nf.10.1.9
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-21 07:38:41
 status: wip
+bead_id: sase-1nf.10.1.9.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/publication_recovery_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_recovery_proof.md)
+- **PROMPT:** [prompts/202610/publication_recovery_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_recovery_proof.md)
+- **BEAD:** [sase-1nf.10.1.9.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nf/sase-1nf.10.1.9.1.md)
 
 # Finish the recovery-proof phase
 
