@@ -1,82 +1,74 @@
 ---
 tier: epic
 title: Fix the confirmed publication blockers and finish recovery acceptance
-goal:
-  Remove the three confirmed publication blockers, install the fixes on both hosts,
-  recover Apollo's unpublished bob-cli content, and prove all five recovery checks with
-  bounded canaries and a natural automatic publication.
+goal: Remove the three confirmed publication blockers, install the fixes on both hosts,
+  recover Apollo's unpublished bob-cli content, and prove all five recovery checks
+  with bounded canaries and a natural automatic publication.
 parent_bead: sase-1nf.10.1.9.1
 decisions:
   canary_budget:
-    ask:
-      After install, should each host/project get a fresh limit-1 canary plus one batch
-      of at most 25?
+    ask: After install, should each host/project get a fresh limit-1 canary plus one
+      batch of at most 25?
     choices:
-      fresh:
-        Every host/project restarts at limit 1, then may run one batch of at most 25
-      remaining:
-        Only unspent budget remains; athena and bob-cli go straight to one batch of 25
+      fresh: Every host/project restarts at limit 1, then may run one batch of at
+        most 25
+      remaining: Only unspent budget remains; athena and bob-cli go straight to one
+        batch of 25
     default: fresh
-    why:
-      Earlier canaries ran on defective code, and a limit-1 probe is the safer first
-      step
+    why: Earlier canaries ran on defective code, and a limit-1 probe is the safer
+      first step
     answer: fresh
 phases:
-  - id: drain-bound
-    title: Remove the quadratic name scan and the cached-snapshot digest regression
-    depends_on: []
-    description:
-      "drain-bound: compute reserved agent-session names once per registry snapshot
-      during inventory builds, digest reused validation snapshots by their on-disk
-      bytes, add regressions, and measure scoped drains on athena."
-    size: medium
-  - id: replay-policy
-    title: Make stale-replay recovery binary-safe and merge-base aware
-    depends_on: []
-    description:
-      "replay-policy: read upstream blobs as bytes in the stale-replay helper, add an
-      optional merge-base keep-one-side rule to the sase-core replay byte policy, wire
-      it through report and apply, add fixtures, and bump the core pin."
-    size: medium
-  - id: install-replay
-    title: Install the fixes on both hosts and recover Apollo bob-cli content
-    depends_on:
-      - drain-bound
-      - replay-policy
-    description:
-      "install-replay: confirm both fixes landed, gate sase update on athena and apollo,
-      then run the backup-first replay report, apply, and repeat apply on Apollo bob-cli
-      with content and remote proof."
-    size: medium
-  - id: canaries
-    title: Prove bounded publication for each repaired class on both hosts
-    depends_on:
-      - install-replay
-    description:
-      "canaries: run the bounded athena timeout, apollo bob-cli rebase-conflict, and
-      apollo sase manifest-mismatch canaries on the installed fixes with full evidence
-      and remote validation."
-    size: medium
-  - id: acceptance
-    title: Prove fixtures and automatic publication, and publish the acceptance report
-    depends_on:
-      - canaries
-    description:
-      "acceptance: rerun the real-Git recovery fixtures, correlate a natural
-      post-install automatic publication, and publish the five-check research report
-      attached to sase-1nf.10.1.9."
-    size: medium
+- id: drain-bound
+  title: Remove the quadratic name scan and the cached-snapshot digest regression
+  depends_on: []
+  description: 'drain-bound: compute reserved agent-session names once per registry
+    snapshot during inventory builds, digest reused validation snapshots by their
+    on-disk bytes, add regressions, and measure scoped drains on athena.'
+  size: medium
+- id: replay-policy
+  title: Make stale-replay recovery binary-safe and merge-base aware
+  depends_on: []
+  description: 'replay-policy: read upstream blobs as bytes in the stale-replay helper,
+    add an optional merge-base keep-one-side rule to the sase-core replay byte policy,
+    wire it through report and apply, add fixtures, and bump the core pin.'
+  size: medium
+- id: install-replay
+  title: Install the fixes on both hosts and recover Apollo bob-cli content
+  depends_on:
+  - drain-bound
+  - replay-policy
+  description: 'install-replay: confirm both fixes landed, gate sase update on athena
+    and apollo, then run the backup-first replay report, apply, and repeat apply on
+    Apollo bob-cli with content and remote proof.'
+  size: medium
+- id: canaries
+  title: Prove bounded publication for each repaired class on both hosts
+  depends_on:
+  - install-replay
+  description: 'canaries: run the bounded athena timeout, apollo bob-cli rebase-conflict,
+    and apollo sase manifest-mismatch canaries on the installed fixes with full evidence
+    and remote validation.'
+  size: medium
+- id: acceptance
+  title: Prove fixtures and automatic publication, and publish the acceptance report
+  depends_on:
+  - canaries
+  description: 'acceptance: rerun the real-Git recovery fixtures, correlate a natural
+    post-install automatic publication, and publish the five-check research report
+    attached to sase-1nf.10.1.9.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1nf.10.1.9.1.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-21 10:45:29
 status: wip
+bead_id: sase-1nf.10.1.9.1.6
 ---
 
-- **PROMPT:**
-  [prompts/202610/publication_blockers_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_blockers_acceptance.md)
-- **PARENT:**
-  [202610/publication_recovery_proof.md](https://github.com/sase-org/sase--plans/blob/main/202610/publication_recovery_proof.md)
+- **PROMPT:** [prompts/202610/publication_blockers_acceptance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/publication_blockers_acceptance.md)
+- **PARENT:** [202610/publication_recovery_proof.md](https://github.com/sase-org/sase--plans/blob/main/202610/publication_recovery_proof.md)
+- **BEAD:** [sase-1nf.10.1.9.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nf/sase-1nf.10.1.9.1.6.md)
 
 # Fix the confirmed publication blockers and finish recovery acceptance
 
