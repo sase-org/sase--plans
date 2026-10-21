@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "compact_width_cap",
+      "kind": "choice",
+      "ask": "How wide should a preview-less custom gate get on a wide terminal?",
+      "why": "Doubles the readable line length but stays under half of a very wide screen",
+      "choices": [
+        {
+          "key": "cap_120",
+          "label": "Up to 120 columns, twice today's 60 on a ~264-column screen"
+        },
+        {
+          "key": "cap_100",
+          "label": "Up to 100 columns; shorter lines but more wrapping and scrolling"
+        },
+        {
+          "key": "cap_140",
+          "label": "Up to 140 columns; least wrapping, but long prose lines on very wide screens"
+        }
+      ],
+      "default": "cap_120",
+      "effective_default": "cap_120",
+      "requested_verified": false
+    },
+    {
+      "id": "preview_rail",
+      "kind": "choice",
+      "ask": "Should custom and sudo gates with a preview also widen their left Context/Decision rail on wide terminals?",
+      "why": "Preview gates have the same cramped 42-column notes column; one CSS rule fixes it",
+      "choices": [
+        {
+          "key": "grow",
+          "label": "Rail takes 35% of the body (42-72 columns); 120-column goldens stay unchanged"
+        },
+        {
+          "key": "keep",
+          "label": "Rail stays fixed at 42 columns; only preview-less gates change"
+        }
+      ],
+      "default": "grow",
+      "effective_default": "grow",
+      "requested_verified": false
+    }
+  ]
+}
