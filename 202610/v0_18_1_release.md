@@ -1,98 +1,92 @@
 ---
 tier: epic
 title: Green master's release gates and ship sase v0.18.1 to PyPI through ci_watch
-goal: "Master Gate is green at master HEAD, a fresh Full CI run on master is green,
-  ci_watch merges the release-please PR for 0.18.1, Publish uploads sase 0.18.1 to PyPI,
-  a clean install of it works, and the final lander records that evidence as an
-  artifact.
+goal: 'Master Gate is green at master HEAD, a fresh Full CI run on master is green,
+  ci_watch merges the release-please PR for 0.18.1, Publish uploads sase 0.18.1 to
+  PyPI, a clean install of it works, and the final lander records that evidence as
+  an artifact.
 
-  "
+  '
 decisions:
   publish_dispatch:
-    ask:
-      Should the watch dispatch Publish to refresh the release PR and to publish right
-      after ci_watch merges?
+    ask: Should the watch dispatch Publish to refresh the release PR and to publish
+      right after ci_watch merges?
     default: true
-    why: Publish's 3-hourly cron has been firing 4-7h apart, which can outlast the watch
+    why: Publish's 3-hourly cron has been firing 4-7h apart, which can outlast the
+      watch
     answer: true
   gate_rerun:
-    ask:
-      Should the watcher rerun a failed Master Gate at master HEAD once per run to
-      absorb a flake?
+    ask: Should the watcher rerun a failed Master Gate at master HEAD once per run
+      to absorb a flake?
     default: true
-    why:
-      ci_watch needs green at the exact HEAD; one flake otherwise stalls until the next
-      push
+    why: ci_watch needs green at the exact HEAD; one flake otherwise stalls until
+      the next push
     answer: true
 phases:
-  - id: core-merge
-    title: Repair sase-core's release-plz merge filter
-    depends_on: []
-    size: small
-    description:
-      "core-merge: fix the invalid jq escape in sase-core's release_plz_merge.py PR
-      filter and pin it with a jq-backed regression test."
-  - id: core-pin
-    title: Cut sase-core-rs 0.42.2 and raise sase's exact core pin
-    depends_on:
-      - core-merge
-    size: medium
-    description:
-      "core-pin: dispatch the guarded sase-core release cut, wait for a complete
-      sase-core-rs 0.42.2 on PyPI, then ratchet sase's ==0.42.0 pin and prove the floor
-      smoke locally."
-  - id: ci-workflows
-    title: Restore Full CI's build-core job and authenticate release metadata sync
-    depends_on: []
-    size: small
-    description:
-      "ci-workflows: move build-core's setup-uv step after the sase-core checkouts, give
-      Publish's ratchet step a GitHub token, and pin both with workflow tests."
-  - id: modal-sizing
-    title: Make the custom gate modal sizing tests deterministic
-    depends_on: []
-    size: small
-    description:
-      "modal-sizing: replace pause-then-assert resize checks in
-      test_custom_gate_modal_sizing.py with waits on the settled layout so Master Gate
-      shard 8 goes green."
-  - id: visual-lane
-    title: Make the visual screenshot check clean on UTC runners
-    depends_on:
-      - modal-sizing
-    size: medium
-    description:
-      "visual-lane: inventory golden drift with a full TZ=UTC screenshot check, fix
-      nondeterminism, regenerate only intended goldens, and prove the check clean."
-  - id: full-ci
-    title: Run Full CI on the repaired tip and fix every other red
-    depends_on:
-      - ci-workflows
-    size: medium
-    description:
-      "full-ci: get a Full CI run on a tip containing the build-core fix, triage every
-      non-visual red job plus any other Master Gate red, and fix what is deterministic."
-  - id: watch
-    title: Watch v0.18.1 through ci_watch, Publish, and PyPI with a self-closing monitor
-    depends_on:
-      - core-pin
-      - ci-workflows
-      - modal-sizing
-      - visual-lane
-      - full-ci
-    size: small
-    description:
-      "watch: make no repo edits; verify prerequisites, then start one no-follow-up
-      monitor whose watcher script always closes this bead and exits 0."
+- id: core-merge
+  title: Repair sase-core's release-plz merge filter
+  depends_on: []
+  size: small
+  description: 'core-merge: fix the invalid jq escape in sase-core''s release_plz_merge.py
+    PR filter and pin it with a jq-backed regression test.'
+- id: core-pin
+  title: Cut sase-core-rs 0.42.2 and raise sase's exact core pin
+  depends_on:
+  - core-merge
+  size: medium
+  description: 'core-pin: dispatch the guarded sase-core release cut, wait for a complete
+    sase-core-rs 0.42.2 on PyPI, then ratchet sase''s ==0.42.0 pin and prove the floor
+    smoke locally.'
+- id: ci-workflows
+  title: Restore Full CI's build-core job and authenticate release metadata sync
+  depends_on: []
+  size: small
+  description: 'ci-workflows: move build-core''s setup-uv step after the sase-core
+    checkouts, give Publish''s ratchet step a GitHub token, and pin both with workflow
+    tests.'
+- id: modal-sizing
+  title: Make the custom gate modal sizing tests deterministic
+  depends_on: []
+  size: small
+  description: 'modal-sizing: replace pause-then-assert resize checks in test_custom_gate_modal_sizing.py
+    with waits on the settled layout so Master Gate shard 8 goes green.'
+- id: visual-lane
+  title: Make the visual screenshot check clean on UTC runners
+  depends_on:
+  - modal-sizing
+  size: medium
+  description: 'visual-lane: inventory golden drift with a full TZ=UTC screenshot
+    check, fix nondeterminism, regenerate only intended goldens, and prove the check
+    clean.'
+- id: full-ci
+  title: Run Full CI on the repaired tip and fix every other red
+  depends_on:
+  - ci-workflows
+  size: medium
+  description: 'full-ci: get a Full CI run on a tip containing the build-core fix,
+    triage every non-visual red job plus any other Master Gate red, and fix what is
+    deterministic.'
+- id: watch
+  title: Watch v0.18.1 through ci_watch, Publish, and PyPI with a self-closing monitor
+  depends_on:
+  - core-pin
+  - ci-workflows
+  - modal-sizing
+  - visual-lane
+  - full-ci
+  size: small
+  description: 'watch: make no repo edits; verify prerequisites, then start one no-follow-up
+    monitor whose watcher script always closes this bead and exits 0.'
 proposed_by: bbugyi200.athena.137
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-23 11:30:03
 status: wip
+bead_id: sase-1nn
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release.md)
+- **PROMPT:** [prompts/202610/v0_18_1_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release.md)
+- **BEAD:** [sase-1nn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/README.md)
 
 # Green master's release gates and ship sase v0.18.1
 
