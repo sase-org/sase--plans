@@ -1,96 +1,91 @@
 ---
 tier: epic
 title: Flag stranded epic work in ACE
-goal: "An in_progress phase or epic bead that nothing will ever resume can no longer sit
-  unnoticed. sase-core classifies it once. ACE flags it with a single amber ⚐ vocabulary
-  on the stuck row, on everything waiting on it, on its epic clans, and in the Beads
-  pane, and any flagged row resolves it with one keystroke.
+goal: 'An in_progress phase or epic bead that nothing will ever resume can no longer
+  sit unnoticed. sase-core classifies it once. ACE flags it with a single amber ⚐
+  vocabulary on the stuck row, on everything waiting on it, on its epic clans, and
+  in the Beads pane, and any flagged row resolves it with one keystroke.
 
-  "
+  '
 decisions:
   flag_tasks:
-    ask:
-      Also flag in_progress task beads whose `sase bead work` worker ended without
+    ask: Also flag in_progress task beads whose `sase bead work` worker ended without
       closing them?
     default: false
-    why: The request targets epic phases; a stranded task blocks no waiter or land agent
+    why: The request targets epic phases; a stranded task blocks no waiter or land
+      agent
     answer: true
   doctor_report:
-    ask:
-      Make `sase doctor` report stranded beads through the shared classifier, replacing
+    ask: Make `sase doctor` report stranded beads through the shared classifier, replacing
       its in_progress-gone warning?
     default: true
-    why:
-      One definition everywhere; the old check misfires during follow-up turns and
-      ignores successors
+    why: One definition everywhere; the old check misfires during follow-up turns
+      and ignores successors
     answer: true
 phases:
-  - id: core
-    title: Stranded-work reducer in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core: add the pure Rust reducer that maps bead and session-member facts to
-      owned/delegated/settling/stranded/blocked/unknown verdicts. It includes causes,
-      ancestor propagation, wires, unit tests, and the `stranded_work_reduce` PyO3
-      binding."
-  - id: collect
-    title: Python fact collector, facade, presentation vocabulary, and doctor
-    depends_on:
-      - core
-    size: medium
-    description:
-      "collect: move the core pin. Add the binding facade and the cheap, dismissal-proof
-      fact collector, and the shared ⚐ presentation vocabulary that ACE and doctor both
-      use. Add the doctor report and the bead-lifecycle reference docs."
-  - id: agents-rows
-    title: Agents tab rows, clans, waiters, and info strip
-    depends_on:
-      - collect
-    size: medium
-    description:
-      "agents-rows: add the off-thread stranded-view cache and its warmup lane. Render
-      the STRANDED overlay, waiter and clan ⚐ tokens, breadcrumbs, the ▲ wave fold, and
-      the info-strip count, with row-glyph docs, help legend, and PNG goldens."
-  - id: agents-detail
-    title: Agents detail callouts, toast, and query field
-    depends_on:
-      - agents-rows
-    size: small
-    description:
-      "agents-detail: add the AGENT TURN header callout, the [beads] wait-lane and WAVES
-      markers, a transition toast that never fires at startup, and the `stranded`
-      live-query field, with docs and PNG goldens."
-  - id: beads-pane
-    title: Beads pane stranded badges
-    depends_on:
-      - collect
-    size: small
-    description:
-      "beads-pane: add a deferred stranded pass and the phase/epic ⚐ badges, the legend
-      entry, the status-bar count, and the detail property row, with docs and a PNG
-      golden."
-  - id: resolve
-    title: One-keystroke resolution from any flagged row
-    depends_on:
-      - agents-detail
-      - beads-pane
-    size: medium
-    description:
-      "resolve: add a `stranded` Enter target and a resolve modal offering Continue (a
-      prefilled `%id(bead=…) #fork:<last turn>` takeover) or Close bead (the shared
-      BeadCloseModal). Wire it to `w` on Beads-pane rows, with help, docs, and a PNG
-      golden."
+- id: core
+  title: Stranded-work reducer in sase-core
+  depends_on: []
+  size: medium
+  description: 'core: add the pure Rust reducer that maps bead and session-member
+    facts to owned/delegated/settling/stranded/blocked/unknown verdicts. It includes
+    causes, ancestor propagation, wires, unit tests, and the `stranded_work_reduce`
+    PyO3 binding.'
+- id: collect
+  title: Python fact collector, facade, presentation vocabulary, and doctor
+  depends_on:
+  - core
+  size: medium
+  description: 'collect: move the core pin. Add the binding facade and the cheap,
+    dismissal-proof fact collector, and the shared ⚐ presentation vocabulary that
+    ACE and doctor both use. Add the doctor report and the bead-lifecycle reference
+    docs.'
+- id: agents-rows
+  title: Agents tab rows, clans, waiters, and info strip
+  depends_on:
+  - collect
+  size: medium
+  description: 'agents-rows: add the off-thread stranded-view cache and its warmup
+    lane. Render the STRANDED overlay, waiter and clan ⚐ tokens, breadcrumbs, the
+    ▲ wave fold, and the info-strip count, with row-glyph docs, help legend, and PNG
+    goldens.'
+- id: agents-detail
+  title: Agents detail callouts, toast, and query field
+  depends_on:
+  - agents-rows
+  size: small
+  description: 'agents-detail: add the AGENT TURN header callout, the [beads] wait-lane
+    and WAVES markers, a transition toast that never fires at startup, and the `stranded`
+    live-query field, with docs and PNG goldens.'
+- id: beads-pane
+  title: Beads pane stranded badges
+  depends_on:
+  - collect
+  size: small
+  description: 'beads-pane: add a deferred stranded pass and the phase/epic ⚐ badges,
+    the legend entry, the status-bar count, and the detail property row, with docs
+    and a PNG golden.'
+- id: resolve
+  title: One-keystroke resolution from any flagged row
+  depends_on:
+  - agents-detail
+  - beads-pane
+  size: medium
+  description: 'resolve: add a `stranded` Enter target and a resolve modal offering
+    Continue (a prefilled `%id(bead=…) #fork:<last turn>` takeover) or Close bead
+    (the shared BeadCloseModal). Wire it to `w` on Beads-pane rows, with help, docs,
+    and a PNG golden.'
 proposed_by: bbugyi200.athena.13e
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-23 14:22:46
 status: wip
+bead_id: sase-1no
 ---
 
-- **PROMPT:**
-  [prompts/202610/stranded_epic_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/stranded_epic_work.md)
+- **PROMPT:** [prompts/202610/stranded_epic_work.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/stranded_epic_work.md)
+- **BEAD:** [sase-1no](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1no/README.md)
 
 # Plan: Flag stranded epic work in ACE
 
