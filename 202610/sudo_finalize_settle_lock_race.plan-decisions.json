@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "gate_cli_scope",
+      "kind": "choice",
+      "ask": "Should `sase gate answer` (fresh and --resume) also wait out follow-up lock contention?",
+      "why": "Both run as CLI procs after the answer is durable, so the same race and fix apply",
+      "choices": [
+        {
+          "key": "sudo_and_gate_cli",
+          "label": "Closes the same reclaim race for every gate kind answered via the CLI or TUI proc"
+        },
+        {
+          "key": "sudo_only",
+          "label": "Only sudo changes; other gate kinds keep the 5s wait and can still fail this race"
+        }
+      ],
+      "default": "sudo_and_gate_cli",
+      "effective_default": "sudo_and_gate_cli",
+      "requested_verified": false
+    }
+  ]
+}
