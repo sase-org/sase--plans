@@ -1,48 +1,46 @@
 ---
 tier: epic
 title: Finish the sase v0.18.1 release blockers left by sase-1nn and watch it to PyPI
-goal: "Master Gate and Full CI are green on a tip that contains the custom-gate resize
+goal: 'Master Gate and Full CI are green on a tip that contains the custom-gate resize
   wait fix, the hermetic TUI profiling env, and an exact sase-core-rs 0.42.3 pin;
   ci_watch merges release PR #321; Publish uploads sase 0.18.1 to PyPI; and the lander
   that observes it records the evidence artifact and closes this epic and sase-1nn.
 
-  "
+  '
 parent_bead: sase-1nn
 phases:
-  - id: ci-reds
-    title: Fix the CI-only modal resize wait and the env-dependent perf golden
-    depends_on: []
-    size: medium
-    description:
-      "ci-reds: make the custom-gate sizing resize wait prove the screen reflowed under
-      Textual 8.2, scrub ambient TUI profiling env in tests, and regenerate the one perf
-      golden captured under the leaked env."
-  - id: core-cut
-    title: Cut sase-core-rs 0.42.3 and raise sase's exact core pin
-    depends_on: []
-    size: medium
-    description:
-      "core-cut: dispatch the guarded sase-core cut for v0.42.3, wait for a complete
-      0.42.3 on PyPI, ratchet sase's ==0.42.2 pin, and prove the floor smoke locally."
-  - id: watch
-    title: Watch v0.18.1 through ci_watch, Publish, and PyPI with a self-closing monitor
-    depends_on:
-      - ci-reds
-      - core-cut
-    size: small
-    description:
-      "watch: make no repo edits; verify prerequisites, then start one no-follow-up
-      monitor whose watcher script always closes this bead and exits 0."
+- id: ci-reds
+  title: Fix the CI-only modal resize wait and the env-dependent perf golden
+  depends_on: []
+  size: medium
+  description: 'ci-reds: make the custom-gate sizing resize wait prove the screen
+    reflowed under Textual 8.2, scrub ambient TUI profiling env in tests, and regenerate
+    the one perf golden captured under the leaked env.'
+- id: core-cut
+  title: Cut sase-core-rs 0.42.3 and raise sase's exact core pin
+  depends_on: []
+  size: medium
+  description: 'core-cut: dispatch the guarded sase-core cut for v0.42.3, wait for
+    a complete 0.42.3 on PyPI, ratchet sase''s ==0.42.2 pin, and prove the floor smoke
+    locally.'
+- id: watch
+  title: Watch v0.18.1 through ci_watch, Publish, and PyPI with a self-closing monitor
+  depends_on:
+  - ci-reds
+  - core-cut
+  size: small
+  description: 'watch: make no repo edits; verify prerequisites, then start one no-follow-up
+    monitor whose watcher script always closes this bead and exits 0.'
 proposed_by: bbugyi200.athena.sase-1nn.land
 proposed_with: claude/opus
 create_time: 2026-10-23 18:32:20
 status: wip
+bead_id: sase-1nn.8
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_release_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_landing.md)
-- **PARENT:**
-  [202610/v0_18_1_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release.md)
+- **PROMPT:** [prompts/202610/v0_18_1_release_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_landing.md)
+- **PARENT:** [202610/v0_18_1_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release.md)
+- **BEAD:** [sase-1nn.8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.md)
 
 # Finish the sase v0.18.1 release blockers left by sase-1nn
 
