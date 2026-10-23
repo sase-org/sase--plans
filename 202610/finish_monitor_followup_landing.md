@@ -1,15 +1,13 @@
 ---
 title: Prove proc-backed monitor output delivery and finish sase-1nk
 tier: tale
-goal:
-  A proc settlement regression proves the real final output reaches the follow-up
+goal: A proc settlement regression proves the real final output reaches the follow-up
   prompt, and sase-1nk is verified and closed with its original plan marked done.
 size: small
 proposed_by: bbugyi200.athena.sase-1nk.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1nk
-create_time: 2026-10-23 10:22:20
-status: wip
+status: done
 ---
 
 - **PARENT:**
