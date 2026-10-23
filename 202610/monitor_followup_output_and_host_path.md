@@ -1,49 +1,43 @@
 ---
 tier: epic
 title: Fix monitor follow-up output excerpts and host PATH loss in agent-shell launches
-goal: "Monitor follow-up prompts show the real tail of the monitored command's output,
-  and agents launched from inside an agent's harness shell (monitor follow-ups,
-  handoffs, nested launches) resolve provider CLIs with the same PATH a host launch
-  would have.
+goal: 'Monitor follow-up prompts show the real tail of the monitored command''s output,
+  and agents launched from inside an agent''s harness shell (monitor follow-ups, handoffs,
+  nested launches) resolve provider CLIs with the same PATH a host launch would have.
 
-  "
+  '
 phases:
-  - id: monitor-output-tail
-    title: Show the real output tail in monitor follow-up prompts
-    depends_on: []
-    size: small
-    description:
-      "monitor-output-tail: populate retained-log segment ranges when no retention
-      snapshot exists, read legacy null-range metadata, and excerpt the tail rather than
-      the head."
-  - id: host-path-launch-env
-    title: Restore the host PATH for agent launches made from agent shells
-    depends_on: []
-    size: medium
-    description:
-      "host-path-launch-env: runners stamp a SASE_HOST_PATH_SNAPSHOT of their PATH and
-      spawn_agent_subprocess restores it, so login-shell PATH resets cannot hide
-      provider CLIs."
+- id: monitor-output-tail
+  title: Show the real output tail in monitor follow-up prompts
+  depends_on: []
+  size: small
+  description: 'monitor-output-tail: populate retained-log segment ranges when no
+    retention snapshot exists, read legacy null-range metadata, and excerpt the tail
+    rather than the head.'
+- id: host-path-launch-env
+  title: Restore the host PATH for agent launches made from agent shells
+  depends_on: []
+  size: medium
+  description: 'host-path-launch-env: runners stamp a SASE_HOST_PATH_SNAPSHOT of their
+    PATH and spawn_agent_subprocess restores it, so login-shell PATH resets cannot
+    hide provider CLIs.'
 decisions:
   path_merge_order:
-    ask:
-      Should restored host PATH entries take precedence over the spawning shell's PATH
-      entries?
+    ask: Should restored host PATH entries take precedence over the spawning shell's
+      PATH entries?
     choices:
-      host_first:
-        Agent-shell launches get the host's PATH order; shell-only dirs are appended
+      host_first: Agent-shell launches get the host's PATH order; shell-only dirs
+        are appended
       shell_first: Shell PATH keeps precedence; only missing host dirs are appended
     default: host_first
-    why:
-      An agent launched from an agent shell should be indistinguishable from a host
-      launch
+    why: An agent launched from an agent shell should be indistinguishable from a
+      host launch
     answer: host_first
   monitored_command_path:
     ask: Should the monitored command itself also run with the restored host PATH?
     default: false
-    why:
-      A monitor stands in for the agent running the command, so it keeps the agent shell
-      env
+    why: A monitor stands in for the agent running the command, so it keeps the agent
+      shell env
     answer: false
 proposed_by: bbugyi200.athena.133
 proposed_with: claude/opus
@@ -51,10 +45,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-23 09:29:08
 status: wip
+bead_id: sase-1nk
 ---
 
-- **PROMPT:**
-  [prompts/202610/monitor_followup_output_and_host_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/monitor_followup_output_and_host_path.md)
+- **PROMPT:** [prompts/202610/monitor_followup_output_and_host_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/monitor_followup_output_and_host_path.md)
+- **BEAD:** [sase-1nk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nk/README.md)
 
 # Fix monitor follow-up output excerpts and host PATH loss in agent-shell launches
 
