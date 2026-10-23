@@ -1,8 +1,7 @@
 ---
 title: Prove proc-backed monitor output delivery and finish sase-1nk
 tier: tale
-goal:
-  A proc settlement regression proves the real final output reaches the follow-up
+goal: A proc settlement regression proves the real final output reaches the follow-up
   prompt, and sase-1nk is verified and closed with its original plan marked done.
 size: small
 proposed_by: bbugyi200.athena.sase-1nk.land
@@ -15,11 +14,6 @@ status: done
   [202610/monitor_followup_output_and_host_path.md](https://github.com/sase-org/sase--plans/blob/main/202610/monitor_followup_output_and_host_path.md)
 - **BEAD:**
   [sase-1nk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nk/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1nk.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1nk.land.md)
-- **COMMITS:**
-  - [7552ebe](https://github.com/sase-org/sase/commit/7552ebe590c07d4f9bf5fd62bf583a30d79c31b3)
-    — test(monitor): prove proc-backed follow-up prompts show the output tail
 
 # Prove proc-backed monitor output delivery and finish sase-1nk
 
