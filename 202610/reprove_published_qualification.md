@@ -1,38 +1,36 @@
 ---
 tier: epic
 title: Integrate the new core binding and retain deployed qualification proof
-goal:
-  A containing published core is pinned on master and retained aligned runs prove
+goal: A containing published core is pinned on master and retained aligned runs prove
   passing published qualification, a typed wrong-core refusal, and passing source
   blocking checks.
 parent_bead: sase-1n6.5.1.5.2.1
 phases:
-  - id: published-pin
-    title: Integrate a complete published core containing the current source pin
-    depends_on: []
-    description:
-      "published-pin: wait for the authorized daily core release, integrate its exact
-      dependency pin, and verify all current required bindings before deployed proof."
-    size: medium
-  - id: deployed-reproof
-    title: Retain aligned green, incompatible-core, and source proofs
-    depends_on:
-      - published-pin
-    description:
-      "deployed-reproof: exercise the host-landed pin and observation repair, retain
-      actual workflow observations, and prove the exact-SHA source comparison with
-      bounded retries."
-    size: medium
+- id: published-pin
+  title: Integrate a complete published core containing the current source pin
+  depends_on: []
+  description: 'published-pin: wait for the authorized daily core release, integrate
+    its exact dependency pin, and verify all current required bindings before deployed
+    proof.'
+  size: medium
+- id: deployed-reproof
+  title: Retain aligned green, incompatible-core, and source proofs
+  depends_on:
+  - published-pin
+  description: 'deployed-reproof: exercise the host-landed pin and observation repair,
+    retain actual workflow observations, and prove the exact-SHA source comparison
+    with bounded retries.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1n6.5.1.5.2.1.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-23 18:27:25
 status: wip
+bead_id: sase-1n6.5.1.5.2.1.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/reprove_published_qualification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/reprove_published_qualification.md)
-- **PARENT:**
-  [202610/deployed_qualification_proof.md](https://github.com/sase-org/sase--plans/blob/main/202610/deployed_qualification_proof.md)
+- **PROMPT:** [prompts/202610/reprove_published_qualification.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/reprove_published_qualification.md)
+- **PARENT:** [202610/deployed_qualification_proof.md](https://github.com/sase-org/sase--plans/blob/main/202610/deployed_qualification_proof.md)
+- **BEAD:** [sase-1n6.5.1.5.2.1.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.5.1.5.2.1.3.md)
 
 # Finish the deployed qualification proof
 
