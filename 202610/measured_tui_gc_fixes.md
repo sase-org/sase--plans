@@ -1,86 +1,79 @@
 ---
 tier: epic
 title: Reduce measured TUI GC producers and verify both hosts
-goal:
-  Reduce graph and render churn and retained UI caches, preserve quiet-time memory
+goal: Reduce graph and render churn and retained UI caches, preserve quiet-time memory
   backstops, and establish the GC and navigation targets on restarted Athena and Apollo
   TUIs.
 parent_bead: sase-1nf.14
 phases:
-  - id: report-windows
-    title: Make GC acceptance calculations trustworthy
-    depends_on: []
-    size: medium
-    description:
-      "report-windows: repair percentile, heartbeat coverage, boundary, swap, and
-      late-hitch accounting; missing evidence must never pass."
-  - id: interaction-evidence
-    title: Attribute navigation and prompt activity to an instance
-    depends_on:
-      - report-windows
-    size: medium
-    description:
-      "interaction-evidence: add attributable perf and prompt-state evidence, consume
-      actual next/prev samples in acceptance, and document capture preflight."
-  - id: graph-allocation
-    title: Avoid copying Agent graphs that a load will discard
-    depends_on: []
-    size: medium
-    description:
-      "graph-allocation: classify cached-row use before detaching graphs, copy only
-      required ownership closures, and preserve worker isolation and aliases."
-  - id: render-allocation
-    title: Skip unchanged row rendering and Option replacement
-    depends_on: []
-    size: medium
-    description:
-      "render-allocation: remove unconditional AgentList row invalidation when complete
-      render inputs are unchanged, preserve visual updates, and measure Strip churn."
-  - id: snapshot-retention
-    title: Bound retained event and completion cache ownership
-    depends_on: []
-    size: medium
-    description:
-      "snapshot-retention: bound per-agent and context event caches and completion index
-      ownership, preserving result semantics and invalidation."
-  - id: quiet-policy
-    title: Resolve the backstop quiet-window conflict
-    depends_on:
-      - interaction-evidence
-      - graph-allocation
-      - render-allocation
-      - snapshot-retention
-    size: small
-    description:
-      "quiet-policy: require three quiet seconds for backstops, retain their due
-      conditions and activity gates, and consistently attribute census collections."
-  - id: fixed-capture
-    title: Verify busy-hour and four-hour acceptance on fixed code
-    depends_on:
-      - quiet-policy
-    size: medium
-    description:
-      "fixed-capture: verify installed revisions and user restarts, preflight real
-      navigation, capture representative interaction and four-hour coverage on both
-      hosts, and publish results."
-  - id: fixed-soak
-    title: Complete the same-instance 24-hour soak
-    depends_on:
-      - fixed-capture
-    size: small
-    description:
-      "fixed-soak: continue the retained fixed-code instances through 24 post-warmup
-      hours, verify coverage and targets, and publish the final acceptance matrix."
+- id: report-windows
+  title: Make GC acceptance calculations trustworthy
+  depends_on: []
+  size: medium
+  description: 'report-windows: repair percentile, heartbeat coverage, boundary, swap,
+    and late-hitch accounting; missing evidence must never pass.'
+- id: interaction-evidence
+  title: Attribute navigation and prompt activity to an instance
+  depends_on:
+  - report-windows
+  size: medium
+  description: 'interaction-evidence: add attributable perf and prompt-state evidence,
+    consume actual next/prev samples in acceptance, and document capture preflight.'
+- id: graph-allocation
+  title: Avoid copying Agent graphs that a load will discard
+  depends_on: []
+  size: medium
+  description: 'graph-allocation: classify cached-row use before detaching graphs,
+    copy only required ownership closures, and preserve worker isolation and aliases.'
+- id: render-allocation
+  title: Skip unchanged row rendering and Option replacement
+  depends_on: []
+  size: medium
+  description: 'render-allocation: remove unconditional AgentList row invalidation
+    when complete render inputs are unchanged, preserve visual updates, and measure
+    Strip churn.'
+- id: snapshot-retention
+  title: Bound retained event and completion cache ownership
+  depends_on: []
+  size: medium
+  description: 'snapshot-retention: bound per-agent and context event caches and completion
+    index ownership, preserving result semantics and invalidation.'
+- id: quiet-policy
+  title: Resolve the backstop quiet-window conflict
+  depends_on:
+  - interaction-evidence
+  - graph-allocation
+  - render-allocation
+  - snapshot-retention
+  size: small
+  description: 'quiet-policy: require three quiet seconds for backstops, retain their
+    due conditions and activity gates, and consistently attribute census collections.'
+- id: fixed-capture
+  title: Verify busy-hour and four-hour acceptance on fixed code
+  depends_on:
+  - quiet-policy
+  size: medium
+  description: 'fixed-capture: verify installed revisions and user restarts, preflight
+    real navigation, capture representative interaction and four-hour coverage on
+    both hosts, and publish results.'
+- id: fixed-soak
+  title: Complete the same-instance 24-hour soak
+  depends_on:
+  - fixed-capture
+  size: small
+  description: 'fixed-soak: continue the retained fixed-code instances through 24
+    post-warmup hours, verify coverage and targets, and publish the final acceptance
+    matrix.'
 proposed_by: bbugyi200.athena.sase-1nf.14
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-24 13:37:41
 status: wip
+bead_id: sase-1nf.14.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/measured_tui_gc_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/measured_tui_gc_fixes.md)
-- **PARENT:**
-  [202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202610/athena_apollo_audit_fixes.md)
+- **PROMPT:** [prompts/202610/measured_tui_gc_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/measured_tui_gc_fixes.md)
+- **PARENT:** [202610/athena_apollo_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202610/athena_apollo_audit_fixes.md)
+- **BEAD:** [sase-1nf.14.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nf/sase-1nf.14.1.md)
 
 # Plan: Reduce measured TUI GC producers and verify both hosts
 
