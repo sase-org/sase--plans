@@ -1,69 +1,63 @@
 ---
 tier: epic
 title: Unblock both release gates, cut sase-core 0.42.5, and ship sase v0.18.1
-goal:
-  Master Gate and Full CI are green on master, a complete sase-core-rs release contains
-  sase's source pin, ci_watch merges release PR 321, Publish uploads sase 0.18.1 to
-  PyPI, and the lander that observes it retains clean-install evidence as an artifact
-  before landing.
+goal: Master Gate and Full CI are green on master, a complete sase-core-rs release
+  contains sase's source pin, ci_watch merges release PR 321, Publish uploads sase
+  0.18.1 to PyPI, and the lander that observes it retains clean-install evidence as
+  an artifact before landing.
 parent_bead: sase-1nn.8.4
 decisions:
   full_ci_rerun:
-    ask:
-      Should the release watcher rerun a failed Full CI run's failed jobs once before
-      counting it red?
+    ask: Should the release watcher rerun a failed Full CI run's failed jobs once
+      before counting it red?
     default: true
-    why:
-      Most recent Full CI reds are one-off flakes; a rerun cannot turn a deterministic
+    why: Most recent Full CI reds are one-off flakes; a rerun cannot turn a deterministic
       failure green
     answer: true
 phases:
-  - id: core-cut
-    title: Start the sase-core-rs release that contains sase's source pin
-    description:
-      "core-cut: confirm no complete sase-core-rs release contains the current source
-      pin, then dispatch the guarded sase-core release cut once and record the run,
-      without waiting for it."
-    depends_on: []
-    size: small
-  - id: gate-tests
-    title: Repair the Master Gate and Full CI test-lane reds
-    description:
-      "gate-tests: add the missing monitor --weight completion metadata and regenerate
-      the CLI completion snapshot, verify the autonomy contract cluster is resolved, and
-      fix every deterministic or recurring non-visual Full CI failure."
-    depends_on: []
-    size: medium
-  - id: visual
-    title: Repair the Full CI visual-test reds
-    description:
-      "visual: find out why the stranded Beads PNG and any other drifting goldens differ
-      on CI, make their renders deterministic, regenerate them after semantic review,
-      and prove the full screenshot check is clean."
-    depends_on: []
-    size: medium
-  - id: watch
-    title:
-      Watch core, release gates, ci_watch, Publish, and PyPI with a self-closing monitor
-    description:
-      "watch: verify the three sibling phases landed, then start one bounded watcher
-      monitor with no follow-up that waits for the core release, refreshes the release
-      PR, reruns flaky gates once, and always closes this bead."
-    depends_on:
-      - core-cut
-      - gate-tests
-      - visual
-    size: small
+- id: core-cut
+  title: Start the sase-core-rs release that contains sase's source pin
+  description: 'core-cut: confirm no complete sase-core-rs release contains the current
+    source pin, then dispatch the guarded sase-core release cut once and record the
+    run, without waiting for it.'
+  depends_on: []
+  size: small
+- id: gate-tests
+  title: Repair the Master Gate and Full CI test-lane reds
+  description: 'gate-tests: add the missing monitor --weight completion metadata and
+    regenerate the CLI completion snapshot, verify the autonomy contract cluster is
+    resolved, and fix every deterministic or recurring non-visual Full CI failure.'
+  depends_on: []
+  size: medium
+- id: visual
+  title: Repair the Full CI visual-test reds
+  description: 'visual: find out why the stranded Beads PNG and any other drifting
+    goldens differ on CI, make their renders deterministic, regenerate them after
+    semantic review, and prove the full screenshot check is clean.'
+  depends_on: []
+  size: medium
+- id: watch
+  title: Watch core, release gates, ci_watch, Publish, and PyPI with a self-closing
+    monitor
+  description: 'watch: verify the three sibling phases landed, then start one bounded
+    watcher monitor with no follow-up that waits for the core release, refreshes the
+    release PR, reruns flaky gates once, and always closes this bead.'
+  depends_on:
+  - core-cut
+  - gate-tests
+  - visual
+  size: small
 proposed_by: bbugyi200.athena.13x
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-24 16:37:45
 status: wip
+bead_id: sase-1nn.8.4.3
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_release_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_unblock.md)
+- **PROMPT:** [prompts/202610/v0_18_1_release_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_unblock.md)
+- **BEAD:** [sase-1nn.8.4.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.4.3.md)
 
 # Unblock both release gates, cut sase-core 0.42.5, and ship sase v0.18.1
 
