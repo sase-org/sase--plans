@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "minimum",
+      "kind": "choice",
+      "ask": "Should `diagrams=true` require at least one diagram in every report?",
+      "why": "The caller asked for one or more; the skill's zero-figure rule targets the swarm companion",
+      "choices": [
+        {
+          "key": "at_least_one",
+          "label": "Every report gets a figure; only a Mermaid CLI that will not render excuses none"
+        },
+        {
+          "key": "allow_zero",
+          "label": "Surveys and other mechanism-free reports may ship with no figure, and the final response says why"
+        }
+      ],
+      "default": "at_least_one",
+      "effective_default": "at_least_one",
+      "requested_verified": false
+    }
+  ]
+}
