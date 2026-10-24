@@ -1,102 +1,95 @@
 ---
 tier: epic
 title: Unblock the stalled sase-1nf epic
-goal: "Both stalled sase-1nf tracks move again without anyone waiting on a question.
-  gc-measure closes, so the waiting gc-fix agent starts. Agent-run Apollo pushes
-  authenticate as bbugyi200. Publication requests name the commit their agent actually
-  created, and existing stale-revision rows are repaired explicitly. recovery-proof
-  (sase-1nf.10.1.9) closes with evidence, so the waiting sase-1nf.10.1 land agent and
-  then pub-recover (sase-1nf.11) resume on a backlog that can drain.
+goal: 'Both stalled sase-1nf tracks move again without anyone waiting on a question.
+  gc-measure closes, so the waiting gc-fix agent starts. Agent-run Apollo pushes authenticate
+  as bbugyi200. Publication requests name the commit their agent actually created,
+  and existing stale-revision rows are repaired explicitly. recovery-proof (sase-1nf.10.1.9)
+  closes with evidence, so the waiting sase-1nf.10.1 land agent and then pub-recover
+  (sase-1nf.11) resume on a backlog that can drain.
 
-  "
+  '
 decisions:
   check1_canary:
-    ask:
-      How should recovery-proof prove acceptance check 1 once the fixes are installed?
+    ask: How should recovery-proof prove acceptance check 1 once the fixes are installed?
     choices:
-      fresh_canary:
-        One new limit-1 canary per host/project proves it before recovery-proof closes
-      defer:
-        recovery-proof closes without canaries; sase-1nf.11's first bounded batch proves
-        it
+      fresh_canary: One new limit-1 canary per host/project proves it before recovery-proof
+        closes
+      defer: recovery-proof closes without canaries; sase-1nf.11's first bounded batch
+        proves it
     default: fresh_canary
     why: Three limit-1 calls give sase-1nf.10.1's land agent real check-1 evidence
     answer: fresh_canary
   gc_measure_scope:
     ask: How should gc-measure resolve its missing busy-hour workload evidence?
     choices:
-      close_now:
-        Close on the r5 four-hour evidence; gc-fix acceptance measures busy-hour j/k
-      active_hour:
-        You relaunch both TUIs with flags and use them for an hour before gc-measure
-        closes
+      close_now: Close on the r5 four-hour evidence; gc-fix acceptance measures busy-hour
+        j/k
+      active_hour: You relaunch both TUIs with flags and use them for an hour before
+        gc-measure closes
     default: close_now
-    why:
-      gc-fix must measure busy-hour j/k on fixed code anyway; Athena fails targets even
-      idle
+    why: gc-fix must measure busy-hour j/k on fixed code anyway; Athena fails targets
+      even idle
     answer: close_now
   ssh_fix:
     ask: How should Apollo stop pushing to GitHub with Athena's forwarded deploy key?
     choices:
-      apollo_identity:
-        Apollo's github.com uses only Apollo's own key; agent forwarding stays on
+      apollo_identity: Apollo's github.com uses only Apollo's own key; agent forwarding
+        stays on
       no_forward: Athena stops forwarding its ssh-agent to tailnet hosts
     default: apollo_identity
     why: Fixes the push identity without changing forwarding for anything else
     answer: apollo_identity
 phases:
-  - id: gc-closeout
-    title: Close gc-measure and hand its findings to gc-fix
-    depends_on: []
-    size: medium
-    description:
-      "gc-closeout: finish sase-1nf.13 under the chosen scope, append the closure and
-      handoff to the GC research report, leave a handoff note for sase-1nf.14, and close
-      only sase-1nf.13."
-  - id: ssh-identity
-    title: Apollo GitHub pushes authenticate as bbugyi200
-    depends_on: []
-    size: small
-    description:
-      "ssh-identity: change the chezmoi-managed tailnet SSH config, get it applied on
-      athena and apollo through a gate, verify the GitHub identity, and close sase-1ni."
-  - id: request-revision
-    title: Publication requests name the committed revision
-    depends_on: []
-    size: medium
-    description:
-      "request-revision: record the pre-dispatch HEAD separately, publish with the
-      post-commit SHA, give linked-repo rows page-only fulfillment in sase-core, and add
-      regression tests that fail on the old code."
-  - id: stale-row-repair
-    title: Explicit repair for existing stale-revision outbox rows
-    depends_on:
-      - request-revision
-    size: medium
-    description:
-      "stale-row-repair: add a report-first, audited `sase agent sync` repair that maps
-      each stale requested revision to the agent's committed revision, or to linked
-      scope, without dropping any request."
-  - id: pub-closeout
-    title: Prove recovery on both hosts and close recovery-proof
-    depends_on:
-      - ssh-identity
-      - stale-row-repair
-    size: medium
-    description:
-      "pub-closeout: install the fixes on both hosts, run the repair, prove checks 1 and
-      5 under the chosen canary policy, update the acceptance report, then close
-      sase-1nf.10.1.9.1 and sase-1nf.10.1.9."
+- id: gc-closeout
+  title: Close gc-measure and hand its findings to gc-fix
+  depends_on: []
+  size: medium
+  description: 'gc-closeout: finish sase-1nf.13 under the chosen scope, append the
+    closure and handoff to the GC research report, leave a handoff note for sase-1nf.14,
+    and close only sase-1nf.13.'
+- id: ssh-identity
+  title: Apollo GitHub pushes authenticate as bbugyi200
+  depends_on: []
+  size: small
+  description: 'ssh-identity: change the chezmoi-managed tailnet SSH config, get it
+    applied on athena and apollo through a gate, verify the GitHub identity, and close
+    sase-1ni.'
+- id: request-revision
+  title: Publication requests name the committed revision
+  depends_on: []
+  size: medium
+  description: 'request-revision: record the pre-dispatch HEAD separately, publish
+    with the post-commit SHA, give linked-repo rows page-only fulfillment in sase-core,
+    and add regression tests that fail on the old code.'
+- id: stale-row-repair
+  title: Explicit repair for existing stale-revision outbox rows
+  depends_on:
+  - request-revision
+  size: medium
+  description: 'stale-row-repair: add a report-first, audited `sase agent sync` repair
+    that maps each stale requested revision to the agent''s committed revision, or
+    to linked scope, without dropping any request.'
+- id: pub-closeout
+  title: Prove recovery on both hosts and close recovery-proof
+  depends_on:
+  - ssh-identity
+  - stale-row-repair
+  size: medium
+  description: 'pub-closeout: install the fixes on both hosts, run the repair, prove
+    checks 1 and 5 under the chosen canary policy, update the acceptance report, then
+    close sase-1nf.10.1.9.1 and sase-1nf.10.1.9.'
 proposed_by: bbugyi200.athena.13m
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-24 07:01:31
 status: wip
+bead_id: sase-1nv
 ---
 
-- **PROMPT:**
-  [prompts/202610/unblock_sase_1nf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_sase_1nf.md)
+- **PROMPT:** [prompts/202610/unblock_sase_1nf.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_sase_1nf.md)
+- **BEAD:** [sase-1nv](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nv/README.md)
 
 # Plan: Unblock the stalled sase-1nf epic
 
