@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "macros_md_auto_row",
+      "kind": "toggle",
+      "ask": "Correct the macros.md %auto row to say questions always wait for a human?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "macros.md"
+        ]
+      },
+      "corrects": "Auto-resolves plan, epic, and question gates; bare approves and archives tales, launches epics, and answers questions with the first option",
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "macros.md",
+          "kind": "note",
+          "scope": "project",
+          "path": "macros.md",
+          "type": "reference",
+          "exists": true
+        }
+      ]
+    }
+  ]
+}
