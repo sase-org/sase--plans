@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "rescue_failure",
+      "kind": "choice",
+      "ask": "When a dirty leased checkout cannot be rescued, should the lease refuse to reset it?",
+      "why": "Rescue failures are rare IO errors, and a wedged lease chop retries every ~40s",
+      "choices": [
+        {
+          "key": "proceed",
+          "label": "Warn and reset anyway, as agent prep does; the lease stays available"
+        },
+        {
+          "key": "refuse",
+          "label": "Raise and leave the tree; leases of that workspace fail until it is cleaned"
+        }
+      ],
+      "default": "proceed",
+      "effective_default": "proceed",
+      "requested_verified": false
+    }
+  ]
+}
