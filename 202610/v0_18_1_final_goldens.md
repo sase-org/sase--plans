@@ -1,38 +1,35 @@
 ---
 tier: epic
 title: Repair the remaining release goldens and publish sase 0.18.1
-goal:
-  The Python 3.12 help and Archive help goldens match current behavior, ci_watch merges
-  release PR 321 after green release gates, and Publish uploads sase 0.18.1 with
-  retained clean-install evidence.
+goal: The Python 3.12 help and Archive help goldens match current behavior, ci_watch
+  merges release PR 321 after green release gates, and Publish uploads sase 0.18.1
+  with retained clean-install evidence.
 parent_bead: sase-1nn.8
 phases:
-  - id: goldens
-    title: Repair the Python 3.12 CLI and Archive help goldens
-    description:
-      "goldens: integrate the stats and stranded-work changes by repairing their two
-      deterministic golden failures, then verify and land the repair."
-    depends_on: []
-    size: medium
-  - id: watch
-    title: Watch the committed repairs through release gates and PyPI
-    description:
-      "watch: verify the repair commit reached master, refresh the release PR when
-      needed, and start a bounded self-closing monitor that releases the land agent on
-      success or failure."
-    depends_on:
-      - goldens
-    size: small
+- id: goldens
+  title: Repair the Python 3.12 CLI and Archive help goldens
+  description: 'goldens: integrate the stats and stranded-work changes by repairing
+    their two deterministic golden failures, then verify and land the repair.'
+  depends_on: []
+  size: medium
+- id: watch
+  title: Watch the committed repairs through release gates and PyPI
+  description: 'watch: verify the repair commit reached master, refresh the release
+    PR when needed, and start a bounded self-closing monitor that releases the land
+    agent on success or failure.'
+  depends_on:
+  - goldens
+  size: small
 proposed_by: bbugyi200.athena.sase-1nn.8.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-24 02:46:43
 status: wip
+bead_id: sase-1nn.8.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_final_goldens.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_final_goldens.md)
-- **PARENT:**
-  [202610/v0_18_1_release_landing.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_landing.md)
+- **PROMPT:** [prompts/202610/v0_18_1_final_goldens.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_final_goldens.md)
+- **PARENT:** [202610/v0_18_1_release_landing.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_landing.md)
+- **BEAD:** [sase-1nn.8.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.4.md)
 
 # Repair the remaining release goldens and publish sase 0.18.1
 
