@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "portfolio_repo_rows",
+      "kind": "choice",
+      "ask": "Should the default all-projects table also nest each multi-repo project's code repos under its row?",
+      "why": "That table compares projects; the -g repo tree already answers per-repo at that scope",
+      "choices": [
+        {
+          "key": "compact",
+          "label": "One row per project; per-repo counts live in the one-project card and the -g repo tree"
+        },
+        {
+          "key": "nested",
+          "label": "Dim repo sub-rows under each multi-repo project; the all-projects table roughly triples in height"
+        }
+      ],
+      "default": "compact",
+      "effective_default": "compact",
+      "requested_verified": false
+    }
+  ]
+}
