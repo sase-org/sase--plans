@@ -1,90 +1,86 @@
 ---
 tier: epic
 title: Questions and answers on the Agents Main deck
-goal: "Selecting an agent session, the turn that asked, or a question gate turn on the
-  Agents tab shows that session's /sase_questions rounds in a QUESTIONS section on the
-  Main deck's Context card: each question, its recommended (first-listed) option, the
-  actual answer when one exists, and how the round was answered (human via TUI,
-  Telegram, mobile, or CLI; automatic policy; agent; unknown). Data is projected from
-  the existing question gate bundles, nothing new is written at settlement, and it works
-  for every past gate-turn round with no backfill.
+goal: 'Selecting an agent session, the turn that asked, or a question gate turn on
+  the Agents tab shows that session''s /sase_questions rounds in a QUESTIONS section
+  on the Main deck''s Context card: each question, its recommended (first-listed)
+  option, the actual answer when one exists, and how the round was answered (human
+  via TUI, Telegram, mobile, or CLI; automatic policy; agent; unknown). Data is projected
+  from the existing question gate bundles, nothing new is written at settlement, and
+  it works for every past gate-turn round with no backfill.
 
-  "
+  '
 decisions:
   placement:
     ask: Where should the new QUESTIONS section sit on the Context card?
     choices:
-      before_vars: QUESTIONS renders first, so the human's move leads the Context card
-      after_vars:
-        Existing sections keep their order and QUESTIONS follows OUTPUT VARIABLES
+      before_vars: QUESTIONS renders first, so the human's move leads the Context
+        card
+      after_vars: Existing sections keep their order and QUESTIONS follows OUTPUT
+        VARIABLES
     default: before_vars
-    why:
-      The research recommends leading with it; it is usually what you selected the row
-      to check
+    why: The research recommends leading with it; it is usually what you selected
+      the row to check
     answer: before_vars
 phases:
-  - id: qa-bugs
-    title: Fix the two latent shared question bugs
-    depends_on: []
-    size: small
-    description:
-      "qa-bugs: stop build_merged_qa_markdown from dropping free-text answers and
-      comments, and make option-less question rounds park for a human instead of
-      crashing auto-resolution."
-  - id: core-projection
-    title: Core question-round projection, binding, and Python read model
-    depends_on: []
-    size: medium
-    description:
-      "core-projection: add the pure sase_core question_round projection and its
-      project_question_round binding in sase-core, then the sase facade, typed view
-      dataclasses, and a cached single-bundle loader, committing both repos in one turn."
-  - id: presenter
-    title: Rich presenter and GATE-phase swap for question gates
-    depends_on:
-      - core-projection
-    size: medium
-    description:
-      "presenter: build the pure Rich Text presenter for question rounds and replace the
-      raw Option JSON dump in question gates' GATE section and session Reply phases with
-      it."
-  - id: lane
-    title: Question-round scoping and the questions summary lane
-    depends_on:
-      - core-projection
-    size: medium
-    description:
-      "lane: add in-memory scoping of question gate rows for container, asking turn, and
-      gate row, zero-I/O first-paint stubs, and a new questions DetailHeaderSummary lane
-      with gate-state-keyed invalidation."
-  - id: context-section
-    title: Mount the QUESTIONS section on the Context card
-    depends_on:
-      - presenter
-      - lane
-    size: medium
-    description:
-      "context-section: render QUESTIONS on the Context card from stubs then lane data,
-      with the session fold heading, de-duplicate the gate row's GATE section, and add
-      header tests, a PNG snapshot, and a j/k perf check."
-  - id: docs
-    title: Reference docs and the questions skill sentence
-    depends_on:
-      - context-section
-    size: small
-    description:
-      "docs: document the QUESTIONS section and the question GATE phase in the Agents
-      reference pages, and add one informational sentence to the sase_questions skill
-      source without deploying it."
+- id: qa-bugs
+  title: Fix the two latent shared question bugs
+  depends_on: []
+  size: small
+  description: 'qa-bugs: stop build_merged_qa_markdown from dropping free-text answers
+    and comments, and make option-less question rounds park for a human instead of
+    crashing auto-resolution.'
+- id: core-projection
+  title: Core question-round projection, binding, and Python read model
+  depends_on: []
+  size: medium
+  description: 'core-projection: add the pure sase_core question_round projection
+    and its project_question_round binding in sase-core, then the sase facade, typed
+    view dataclasses, and a cached single-bundle loader, committing both repos in
+    one turn.'
+- id: presenter
+  title: Rich presenter and GATE-phase swap for question gates
+  depends_on:
+  - core-projection
+  size: medium
+  description: 'presenter: build the pure Rich Text presenter for question rounds
+    and replace the raw Option JSON dump in question gates'' GATE section and session
+    Reply phases with it.'
+- id: lane
+  title: Question-round scoping and the questions summary lane
+  depends_on:
+  - core-projection
+  size: medium
+  description: 'lane: add in-memory scoping of question gate rows for container, asking
+    turn, and gate row, zero-I/O first-paint stubs, and a new questions DetailHeaderSummary
+    lane with gate-state-keyed invalidation.'
+- id: context-section
+  title: Mount the QUESTIONS section on the Context card
+  depends_on:
+  - presenter
+  - lane
+  size: medium
+  description: 'context-section: render QUESTIONS on the Context card from stubs then
+    lane data, with the session fold heading, de-duplicate the gate row''s GATE section,
+    and add header tests, a PNG snapshot, and a j/k perf check.'
+- id: docs
+  title: Reference docs and the questions skill sentence
+  depends_on:
+  - context-section
+  size: small
+  description: 'docs: document the QUESTIONS section and the question GATE phase in
+    the Agents reference pages, and add one informational sentence to the sase_questions
+    skill source without deploying it.'
 proposed_by: bbugyi200.athena.research.58.linker.w0
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-24 19:29:27
 status: wip
+bead_id: sase-1o5
 ---
 
-- **PROMPT:**
-  [prompts/202610/questions_main_deck.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/questions_main_deck.md)
+- **PROMPT:** [prompts/202610/questions_main_deck.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/questions_main_deck.md)
+- **BEAD:** [sase-1o5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1o5/README.md)
 
 # Plan: Questions and answers on the Agents Main deck
 
