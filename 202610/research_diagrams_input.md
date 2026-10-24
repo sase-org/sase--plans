@@ -1,29 +1,25 @@
 ---
 tier: tale
 title: Add a diagrams input to the
-goal:
-  "#research(diagrams=true) has the writer add skill-guided Mermaid diagrams; the
-  default stays unchanged."
+goal: '#research(diagrams=true) has the writer add skill-guided Mermaid diagrams;
+  the default stays unchanged.'
 size: small
 decisions:
   minimum:
     ask: Should `diagrams=true` require at least one diagram in every report?
     choices:
-      at_least_one:
-        Every report gets a figure; only a Mermaid CLI that will not render excuses none
-      allow_zero:
-        Surveys and other mechanism-free reports may ship with no figure, and the final
-        response says why
+      at_least_one: Every report gets a figure; only a Mermaid CLI that will not render
+        excuses none
+      allow_zero: Surveys and other mechanism-free reports may ship with no figure,
+        and the final response says why
     default: at_least_one
-    why:
-      The caller asked for one or more; the skill's zero-figure rule targets the swarm
-      companion
+    why: The caller asked for one or more; the skill's zero-figure rule targets the
+      swarm companion
     answer: at_least_one
 proposed_by: bbugyi200.athena.13p
 proposed_with: claude/opus
 decided_by: auto
-create_time: 2026-10-24 11:47:21
-status: wip
+status: done
 ---
 
 # Add a `diagrams=true|false` input to `#research`
