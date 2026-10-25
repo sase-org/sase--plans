@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "unclassified_note",
+      "kind": "choice",
+      "ask": "Flag large buckets of unrecognized, uncounted files so the next missing language is visible?",
+      "why": "The bug hid 165k lines without a trace; on today's data the threshold fires only for it",
+      "choices": [
+        {
+          "key": "add",
+          "label": "Show a dim \"not counted\" card row and table note when a repo's unrecognized lines pass a threshold"
+        },
+        {
+          "key": "skip",
+          "label": "Fix recognition only; unrecognized files stay invisible, as today"
+        }
+      ],
+      "default": "add",
+      "effective_default": "add",
+      "requested_verified": false
+    }
+  ]
+}
