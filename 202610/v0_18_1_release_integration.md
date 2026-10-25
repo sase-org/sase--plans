@@ -2,44 +2,40 @@
 tier: epic
 title: Integrate the remaining release blockers and publish sase 0.18.1
 parent_bead: sase-1nn.8.4.3
-goal:
-  Repair the newly diagnosed release gates, publish a core containing the current source
-  pin, and confirm sase 0.18.1 on PyPI with clean-install evidence.
+goal: Repair the newly diagnosed release gates, publish a core containing the current
+  source pin, and confirm sase 0.18.1 on PyPI with clean-install evidence.
 phases:
-  - id: integrate
-    title: Repair the current release gate integration failures
-    size: medium
-    depends_on: []
-    description:
-      "integrate: preserve recovery evidence outside tracked source, remove stale
-      Symvision exemptions, and repair recurring UI readiness blockers without weakening
-      checks."
-  - id: core-cut
-    title: Start a containing core release for the current source pin
-    size: small
-    depends_on: []
-    description:
-      "core-cut: re-inventory published core and active cuts, dispatch the guarded
-      release-plz cut only when needed, and record its identity without waiting."
-  - id: watch
-    title: Observe the committed repairs through publication
-    size: small
-    depends_on:
-      - integrate
-      - core-cut
-    description:
-      "watch: run a bounded, self-closing monitor that respects the existing merge
-      authority, handles source-pin drift, and records the actual release outcome."
+- id: integrate
+  title: Repair the current release gate integration failures
+  size: medium
+  depends_on: []
+  description: 'integrate: preserve recovery evidence outside tracked source, remove
+    stale Symvision exemptions, and repair recurring UI readiness blockers without
+    weakening checks.'
+- id: core-cut
+  title: Start a containing core release for the current source pin
+  size: small
+  depends_on: []
+  description: 'core-cut: re-inventory published core and active cuts, dispatch the
+    guarded release-plz cut only when needed, and record its identity without waiting.'
+- id: watch
+  title: Observe the committed repairs through publication
+  size: small
+  depends_on:
+  - integrate
+  - core-cut
+  description: 'watch: run a bounded, self-closing monitor that respects the existing
+    merge authority, handles source-pin drift, and records the actual release outcome.'
 proposed_by: bbugyi200.athena.sase-1nn.8.4.3.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-24 22:21:49
 status: wip
+bead_id: sase-1nn.8.4.3.5
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_release_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_integration.md)
-- **PARENT:**
-  [202610/v0_18_1_release_unblock.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_unblock.md)
+- **PROMPT:** [prompts/202610/v0_18_1_release_integration.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_release_integration.md)
+- **PARENT:** [202610/v0_18_1_release_unblock.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_unblock.md)
+- **BEAD:** [sase-1nn.8.4.3.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.4.3.5.md)
 
 # Finish the sase 0.18.1 release after the landing audit
 
