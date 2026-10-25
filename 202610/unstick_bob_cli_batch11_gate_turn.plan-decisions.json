@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "phase_size",
+      "kind": "toggle",
+      "ask": "Should the relaunched ref-id phase run at size medium (the @medium model) instead of its original small?",
+      "why": "The small first run missed the answer-time environment; a stronger rerun is cheaper than a stall",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "gate_env_doc",
+      "kind": "toggle",
+      "ask": "Should the sase_gate skill source document the cwd and environment that gate option commands run in?",
+      "why": "The second failure came from assuming commands inherit the creating agent's environment",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
