@@ -1,38 +1,34 @@
 ---
 tier: epic
 title: Repair question timezone conversions and finish the 0.18.1 publication watch
-goal:
-  Question timestamp fallbacks and their tests honor the configured timezone even when
-  the system differs, a complete published core contains the current source pin, and
-  sase 0.18.1 is published with retained release and clean-install evidence.
+goal: Question timestamp fallbacks and their tests honor the configured timezone even
+  when the system differs, a complete published core contains the current source pin,
+  and sase 0.18.1 is published with retained release and clean-install evidence.
 parent_bead: sase-1nn.8.4.3.5
 phases:
-  - id: timezone
-    title: Correct question timestamp fallbacks and fixtures under timezone divergence
-    size: medium
-    depends_on: []
-    description:
-      "timezone: normalize question model timestamps through the existing
-      configured-time adapter, repair fixtures, and verify divergent clocks."
-  - id: publish-watch
-    title:
-      Correct the release watcher and observe the committed repair through publication
-    size: medium
-    depends_on:
-      - timezone
-    description:
-      "publish-watch: correct cut eligibility and terminal closure, prove the
-      transitions, and monitor publication with bounded phase closure."
+- id: timezone
+  title: Correct question timestamp fallbacks and fixtures under timezone divergence
+  size: medium
+  depends_on: []
+  description: 'timezone: normalize question model timestamps through the existing
+    configured-time adapter, repair fixtures, and verify divergent clocks.'
+- id: publish-watch
+  title: Correct the release watcher and observe the committed repair through publication
+  size: medium
+  depends_on:
+  - timezone
+  description: 'publish-watch: correct cut eligibility and terminal closure, prove
+    the transitions, and monitor publication with bounded phase closure.'
 proposed_by: bbugyi200.athena.sase-1nn.8.4.3.5.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-25 03:37:11
 status: wip
+bead_id: sase-1nn.8.4.3.5.4
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_18_1_timezone_and_watch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_timezone_and_watch.md)
-- **PARENT:**
-  [202610/v0_18_1_release_integration.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_integration.md)
+- **PROMPT:** [prompts/202610/v0_18_1_timezone_and_watch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_18_1_timezone_and_watch.md)
+- **PARENT:** [202610/v0_18_1_release_integration.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_release_integration.md)
+- **BEAD:** [sase-1nn.8.4.3.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.4.3.5.4.md)
 
 # Finish the remaining release work from sase-1nn.8.4.3.5
 
