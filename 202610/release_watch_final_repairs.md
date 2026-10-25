@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish watcher error handling and land the published 0.18.1 release
-goal:
-  Correct and prove the remaining one-off watcher requirements, then close the verified
-  release epic and every ready plan ancestor.
+goal: Correct and prove the remaining one-off watcher requirements, then close the
+  verified release epic and every ready plan ancestor.
 size: medium
 proposed_by: bbugyi200.athena.sase-1nn.8.4.3.5.4.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1nn.8.4.3.5.4
-create_time: 2026-10-25 12:36:39
-status: wip
+status: done
 ---
 
 - **PARENT:**
