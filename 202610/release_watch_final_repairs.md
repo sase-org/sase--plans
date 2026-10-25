@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish watcher error handling and land the published 0.18.1 release
-goal: Correct and prove the remaining one-off watcher requirements, then close the
-  verified release epic and every ready plan ancestor.
+goal:
+  Correct and prove the remaining one-off watcher requirements, then close the verified
+  release epic and every ready plan ancestor.
 size: medium
 proposed_by: bbugyi200.athena.sase-1nn.8.4.3.5.4.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202610/v0_18_1_timezone_and_watch.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_18_1_timezone_and_watch.md)
 - **BEAD:**
   [sase-1nn.8.4.3.5.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nn/sase-1nn.8.4.3.5.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1nn.8.4.3.5.4.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1nn.8.4.3.5.4.land.md)
+- **COMMITS:**
+  - [3282b15](https://github.com/sase-org/sase--plans/commit/3282b155dce7c6535cb01ea5a4472e8483719588)
+    — feat(release): land corrected watcher and published 0.18.1 release chain
 
 # Finish the watcher contract and land the published 0.18.1 release
 
