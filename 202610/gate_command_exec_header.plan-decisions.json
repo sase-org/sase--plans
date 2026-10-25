@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "unstartable_recovery",
+      "kind": "choice",
+      "ask": "Should a gate command that can never start (ENOEXEC) get its own failure code whose recovery offers only cancel?",
+      "why": "resume/restart re-run the same hash-locked bytes, so they are certain to fail again",
+      "choices": [
+        {
+          "key": "narrow",
+          "label": "New `command_not_executable` code; the recovery notification and TUI modal offer only cancel"
+        },
+        {
+          "key": "keep",
+          "label": "Keep `command_start_failed` with resume/restart/cancel; only the error message gets clearer"
+        }
+      ],
+      "default": "narrow",
+      "effective_default": "narrow",
+      "requested_verified": false
+    }
+  ]
+}
