@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "card_block",
+      "kind": "choice",
+      "ask": "How should the summary card's CODE section show the language breakdown?",
+      "why": "Rows answer which language and which repo in the default view, matching the by-repo block",
+      "choices": [
+        {
+          "key": "rows",
+          "label": "Up to 4 bar rows under CODE, each naming the repos that hold it; card grows by at most 5 lines"
+        },
+        {
+          "key": "strip",
+          "label": "One stacked language bar plus chips under CODE; repos appear only under g \u2192 language"
+        }
+      ],
+      "default": "rows",
+      "effective_default": "rows",
+      "requested_verified": false
+    },
+    {
+      "id": "repo_language_column",
+      "kind": "choice",
+      "ask": "Should the repo grouping (-g repo / TUI By Repo) also gain a LANGUAGE column with each repo's top language?",
+      "why": "Gives the repo view the inverse repo \u2192 language lookup for one extra column",
+      "choices": [
+        {
+          "key": "add",
+          "label": "Wide layouts (\u2265100 cols) add '\u25cf Python 99%' after TESTS; it is the last detail column dropped"
+        },
+        {
+          "key": "skip",
+          "label": "Repo table keeps its columns; language-per-repo lives on the card and under g \u2192 language"
+        }
+      ],
+      "default": "add",
+      "effective_default": "add",
+      "requested_verified": false
+    }
+  ]
+}
