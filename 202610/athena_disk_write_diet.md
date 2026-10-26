@@ -1,93 +1,86 @@
 ---
 tier: epic
 title: Cut athena's SSD writes from SASE's own churn
-goal: "SASE stops rewriting large derived state on athena's root NVMe. The runner-slot
-  capacity cache shrinks from ~104 MB to under ~1 MB. Codex launches stop rebuilding a
-  347 MB thread index (and start ~3 minutes sooner). The corrupt bead read-model cache
-  heals itself instead of rebuilding and rolling back on every read. sase-core test
-  builds link ~2.9 GB less per cycle. No admission decision, Codex transcript, or bead
-  read result changes.
+goal: 'SASE stops rewriting large derived state on athena''s root NVMe. The runner-slot
+  capacity cache shrinks from ~104 MB to under ~1 MB. Codex launches stop rebuilding
+  a 347 MB thread index (and start ~3 minutes sooner). The corrupt bead read-model
+  cache heals itself instead of rebuilding and rolling back on every read. sase-core
+  test builds link ~2.9 GB less per cycle. No admission decision, Codex transcript,
+  or bead read result changes.
 
-  "
+  '
 decisions:
   prune_dead_pids:
-    ask:
-      Also prune capacity-scan records whose recorded runner pid is provably dead, not
-      only stopped ones?
+    ask: Also prune capacity-scan records whose recorded runner pid is provably dead,
+      not only stopped ones?
     default: true
-    why:
-      Shrinks athena's cache from ~9 MB to under 1 MB; sase's probe already treats them
-      as never live
+    why: Shrinks athena's cache from ~9 MB to under 1 MB; sase's probe already treats
+      them as never live
     answer: true
 phases:
-  - id: core-capacity-prune
-    title: Prune never-live dirs from the capacity_only scan
-    depends_on: []
-    size: medium
-    description:
-      "core-capacity-prune: in sase-core's agent_scan scanner, extend the capacity_only
-      skip to drop stopped (and, per the decision, dead-pid) artifact dirs. A neutrality
-      post-pass re-admits lineage, owner-key, and clan-tribe neighbours, and
-      differential tests prove admission decisions are unchanged."
-  - id: core-read-model-heal
-    title: Self-heal the corrupt bead read-model cache
-    depends_on: []
-    size: medium
-    description:
-      "core-read-model-heal: in sase-core's bead read model, classify SQLITE_CORRUPT
-      write faults and repair them by REINDEX or an in-place table recreate. Stop
-      swallowing invalidation failures, back off after failed rebuilds, never downgrade
-      a newer cache, and add a regression test that reproduces athena's corrupt meta
-      index."
-  - id: core-test-binaries
-    title: Consolidate sase-core integration-test binaries
-    depends_on:
-      - core-capacity-prune
-      - core-read-model-heal
-    size: medium
-    description:
-      "core-test-binaries: merge sase_core's 23 and sase_macro_lsp's 10 integration-test
-      files into one binary per crate. Isolate tests that mutate process-global state,
-      update every --test reference, and record the before/after link bytes."
-  - id: sase-capacity-adopt
-    title: Adopt the pruned capacity scan in sase
-    depends_on:
-      - core-capacity-prune
-      - core-read-model-heal
-    size: small
-    description:
-      "sase-capacity-adopt: ratchet sase-core-revision.txt past both core phases, add a
-      Python differential admission test through the real binding, sweep stale
-      scan-cache temp files, and update the capacity_only docstring and runner-slot
-      docs."
-  - id: codex-private-sessions
-    title: Stop per-launch Codex thread backfill
-    depends_on: []
-    size: medium
-    description:
-      "codex-private-sessions: give each shadow CODEX_HOME a private sessions tree whose
-      today/tomorrow day dirs link to the real rollout store. Rescue stray rollouts at
-      teardown, sweep orphaned shadow homes safely, and update the Codex provider docs."
-  - id: verify-athena
-    title: Measure the write reduction on athena
-    depends_on:
-      - core-test-binaries
-      - sase-capacity-adopt
-      - codex-private-sessions
-    size: small
-    description:
-      "verify-athena: once the host runs the landed code (propose the reinstall through
-      a gate if not), re-measure each source and athena's daily root-NVMe writes against
-      the baseline, record the results, and file follow-ups for any missed target."
+- id: core-capacity-prune
+  title: Prune never-live dirs from the capacity_only scan
+  depends_on: []
+  size: medium
+  description: 'core-capacity-prune: in sase-core''s agent_scan scanner, extend the
+    capacity_only skip to drop stopped (and, per the decision, dead-pid) artifact
+    dirs. A neutrality post-pass re-admits lineage, owner-key, and clan-tribe neighbours,
+    and differential tests prove admission decisions are unchanged.'
+- id: core-read-model-heal
+  title: Self-heal the corrupt bead read-model cache
+  depends_on: []
+  size: medium
+  description: 'core-read-model-heal: in sase-core''s bead read model, classify SQLITE_CORRUPT
+    write faults and repair them by REINDEX or an in-place table recreate. Stop swallowing
+    invalidation failures, back off after failed rebuilds, never downgrade a newer
+    cache, and add a regression test that reproduces athena''s corrupt meta index.'
+- id: core-test-binaries
+  title: Consolidate sase-core integration-test binaries
+  depends_on:
+  - core-capacity-prune
+  - core-read-model-heal
+  size: medium
+  description: 'core-test-binaries: merge sase_core''s 23 and sase_macro_lsp''s 10
+    integration-test files into one binary per crate. Isolate tests that mutate process-global
+    state, update every --test reference, and record the before/after link bytes.'
+- id: sase-capacity-adopt
+  title: Adopt the pruned capacity scan in sase
+  depends_on:
+  - core-capacity-prune
+  - core-read-model-heal
+  size: small
+  description: 'sase-capacity-adopt: ratchet sase-core-revision.txt past both core
+    phases, add a Python differential admission test through the real binding, sweep
+    stale scan-cache temp files, and update the capacity_only docstring and runner-slot
+    docs.'
+- id: codex-private-sessions
+  title: Stop per-launch Codex thread backfill
+  depends_on: []
+  size: medium
+  description: 'codex-private-sessions: give each shadow CODEX_HOME a private sessions
+    tree whose today/tomorrow day dirs link to the real rollout store. Rescue stray
+    rollouts at teardown, sweep orphaned shadow homes safely, and update the Codex
+    provider docs.'
+- id: verify-athena
+  title: Measure the write reduction on athena
+  depends_on:
+  - core-test-binaries
+  - sase-capacity-adopt
+  - codex-private-sessions
+  size: small
+  description: 'verify-athena: once the host runs the landed code (propose the reinstall
+    through a gate if not), re-measure each source and athena''s daily root-NVMe writes
+    against the baseline, record the results, and file follow-ups for any missed target.'
 proposed_by: bbugyi200.apollo.ae
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-26 16:07:21
 status: wip
+bead_id: sase-1oj
 ---
 
-- **PROMPT:**
-  [prompts/202610/athena_disk_write_diet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/athena_disk_write_diet.md)
+- **PROMPT:** [prompts/202610/athena_disk_write_diet.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/athena_disk_write_diet.md)
+- **BEAD:** [sase-1oj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oj/README.md)
 
 # Plan: Cut athena's SSD writes from SASE's own churn
 
