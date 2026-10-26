@@ -1,51 +1,47 @@
 ---
 tier: epic
 title: Reopen beads whose completed work fails host finalization
-goal:
-  A failed host commit cannot leave this run's unlanded work marked done, and recovery
-  evidence remains visible through beads, doctor, and ACE.
+goal: A failed host commit cannot leave this run's unlanded work marked done, and
+  recovery evidence remains visible through beads, doctor, and ACE.
 parent_bead: sase-1oh.4
 phases:
-  - id: recovery-core
-    title: Add atomic Rust recovery of closes owned by a failed run
-    depends_on: []
-    size: medium
-    description:
-      "recovery-core: add close provenance, durable completion-failure facts, and an
-      idempotent Rust mutation that conditionally reopens this run's standing done
-      closes with their ancestors and a STITCH FAILED note. Expose tested bindings;
-      implement the failure-fact classification in the Rust stranded-work reducer."
-  - id: host-recovery
-    title: Connect terminal finalizer failures to durable bead recovery
-    depends_on:
-      - recovery-core
-    size: medium
-    description:
-      "host-recovery: pin the landed core API, carry close provenance through Python,
-      and invoke recovery after terminal commit or declaration-recovery failure. Publish
-      the bead mutation through the machine write lane, retain failure evidence, and
-      cover success, partial landing, retries, and publication errors."
-  - id: recovery-surfaces
-    title: Verify reopened work blocks progress and appears in stranded surfaces
-    depends_on:
-      - recovery-core
-      - host-recovery
-    size: medium
-    description:
-      "recovery-surfaces: feed reopened completion failures into the stranded-work
-      collector, verify doctor and ACE plus epic dependency blocking with integration
-      tests, and update the bead lifecycle reference. Record full acceptance evidence
-      for the child land agent; do not close ancestor or source-task beads."
+- id: recovery-core
+  title: Add atomic Rust recovery of closes owned by a failed run
+  depends_on: []
+  size: medium
+  description: 'recovery-core: add close provenance, durable completion-failure facts,
+    and an idempotent Rust mutation that conditionally reopens this run''s standing
+    done closes with their ancestors and a STITCH FAILED note. Expose tested bindings;
+    implement the failure-fact classification in the Rust stranded-work reducer.'
+- id: host-recovery
+  title: Connect terminal finalizer failures to durable bead recovery
+  depends_on:
+  - recovery-core
+  size: medium
+  description: 'host-recovery: pin the landed core API, carry close provenance through
+    Python, and invoke recovery after terminal commit or declaration-recovery failure.
+    Publish the bead mutation through the machine write lane, retain failure evidence,
+    and cover success, partial landing, retries, and publication errors.'
+- id: recovery-surfaces
+  title: Verify reopened work blocks progress and appears in stranded surfaces
+  depends_on:
+  - recovery-core
+  - host-recovery
+  size: medium
+  description: 'recovery-surfaces: feed reopened completion failures into the stranded-work
+    collector, verify doctor and ACE plus epic dependency blocking with integration
+    tests, and update the bead lifecycle reference. Record full acceptance evidence
+    for the child land agent; do not close ancestor or source-task beads.'
 proposed_by: bbugyi200.athena.sase-1oh.4
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-26 14:34:45
 status: wip
+bead_id: sase-1oh.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/failed_stitch_bead_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/failed_stitch_bead_recovery.md)
-- **PARENT:**
-  [202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/failed_stitch_bead_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/failed_stitch_bead_recovery.md)
+- **PARENT:** [202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_top_five_task_beads.md)
+- **BEAD:** [sase-1oh.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oh/sase-1oh.4.1.md)
 
 # Reopen beads after failed host commits
 
