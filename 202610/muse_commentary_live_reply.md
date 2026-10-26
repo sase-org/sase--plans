@@ -1,50 +1,47 @@
 ---
 tier: epic
 title: Stream Muse commentary into the live Reply card
-goal: "While a Muse agent runs, each commentary message Muse commits to its session log
-  appears in live_reply.md, and so in the main deck's Reply card, within about a second.
-  The returned reply, token usage, final-answer streaming, and host finalizers are
-  unchanged, and tests exercise the real Muse 1.4.13 stream shape so this gap cannot
-  hide again.
+goal: 'While a Muse agent runs, each commentary message Muse commits to its session
+  log appears in live_reply.md, and so in the main deck''s Reply card, within about
+  a second. The returned reply, token usage, final-answer streaming, and host finalizers
+  are unchanged, and tests exercise the real Muse 1.4.13 stream shape so this gap
+  cannot hide again.
 
-  "
+  '
 phases:
-  - id: commentary-tail
-    title: Commentary tail in the Muse adapter
-    depends_on: []
-    size: medium
-    description:
-      "commentary-tail: add a fail-soft session-log tail driven by a new on_tick hook in
-      stream_json_lines, write each root-run commentary message as its own live_reply.md
-      chunk, record muse_session_id at launch, add the terminal-text fallback, cover it
-      with unit and temporal tests, and update the Muse provider docs."
-  - id: mounted-fixture
-    title: Production-shaped mounted TUI fixture
-    depends_on:
-      - commentary-tail
-    size: medium
-    description:
-      "mounted-fixture: rewrite gated_muse_script so stdout carries no mid-run deltas
-      and commentary arrives only through a session log, then update the four mounted
-      live-reply follow tests to assert commentary reaches the Reply card before the
-      terminal event."
-  - id: live-capture
-    title: Muse 1.4.13 capture and end-to-end check
-    depends_on:
-      - commentary-tail
-    size: medium
-    description:
-      "live-capture: record sanitized 1.4.13 stdout and session-log fixtures from a real
-      tool-using run, add a replay test through the real parser and tail, run one live
-      end-to-end check through MuseProvider, and update the fixture-release note in the
-      docs."
+- id: commentary-tail
+  title: Commentary tail in the Muse adapter
+  depends_on: []
+  size: medium
+  description: 'commentary-tail: add a fail-soft session-log tail driven by a new
+    on_tick hook in stream_json_lines, write each root-run commentary message as its
+    own live_reply.md chunk, record muse_session_id at launch, add the terminal-text
+    fallback, cover it with unit and temporal tests, and update the Muse provider
+    docs.'
+- id: mounted-fixture
+  title: Production-shaped mounted TUI fixture
+  depends_on:
+  - commentary-tail
+  size: medium
+  description: 'mounted-fixture: rewrite gated_muse_script so stdout carries no mid-run
+    deltas and commentary arrives only through a session log, then update the four
+    mounted live-reply follow tests to assert commentary reaches the Reply card before
+    the terminal event.'
+- id: live-capture
+  title: Muse 1.4.13 capture and end-to-end check
+  depends_on:
+  - commentary-tail
+  size: medium
+  description: 'live-capture: record sanitized 1.4.13 stdout and session-log fixtures
+    from a real tool-using run, add a replay test through the real parser and tail,
+    run one live end-to-end check through MuseProvider, and update the fixture-release
+    note in the docs.'
 decisions:
   decision_record:
-    ask:
-      Record a decision that private provider logs may feed display-only surfaces, never
-      control flow?
+    ask: Record a decision that private provider logs may feed display-only surfaces,
+      never control flow?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 proposed_by: bbugyi200.apollo.research.2i.linker.w0
@@ -52,10 +49,11 @@ proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-26 15:05:42
 status: wip
+bead_id: sase-1oi
 ---
 
-- **PROMPT:**
-  [prompts/202610/muse_commentary_live_reply.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/muse_commentary_live_reply.md)
+- **PROMPT:** [prompts/202610/muse_commentary_live_reply.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/muse_commentary_live_reply.md)
+- **BEAD:** [sase-1oi](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oi/README.md)
 
 # Plan: Stream Muse commentary into the live Reply card
 
