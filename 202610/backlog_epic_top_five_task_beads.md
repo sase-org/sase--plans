@@ -1,95 +1,85 @@
 ---
 tier: epic
-title: "Task-bead backlog, epic 1: fix the five most important open task beads"
-goal: "The five most important open task beads in the sase project are resolved on
+title: 'Task-bead backlog, epic 1: fix the five most important open task beads'
+goal: 'The five most important open task beads in the sase project are resolved on
   master and closed with recorded evidence: sase-1of (Full CI visual-test red), sase-14r
-  (the shard-timings table is about to turn Master Gate red), sase-1nw (the stuck bead
-  read model burns CPU and disk on athena), sase-yo (closed-as-done beads strand
+  (the shard-timings table is about to turn Master Gate red), sase-1nw (the stuck
+  bead read model burns CPU and disk on athena), sase-yo (closed-as-done beads strand
   unlanded work), and sase-1dp (agent transcripts reach the public sidecar unscanned).
   The land agent then starts the next backlog epic, five beads at a time, until no
   workable task bead remains.
 
-  "
+  '
 decisions:
   secret_scan:
-    ask:
-      Build the pre-publish secret scan for agent transcripts and prompt files
+    ask: Build the pre-publish secret scan for agent transcripts and prompt files
       (sase-1dp)?
     default: build
     choices:
       build: Withhold scanner hits, handle GH013, and gate a push-protection change
       cancel: No code change; sase-1dp is closed as canceled with your opt-out recorded
-    why:
-      17 of 21,467 published sidecar files had scanner hits; new transcripts go public
-      unscanned
+    why: 17 of 21,467 published sidecar files had scanner hits; new transcripts go
+      public unscanned
     answer: build
   dormant_flakes:
-    ask:
-      Should the lander close flakes with zero failures in the last 30 days as canceled?
+    ask: Should the lander close flakes with zero failures in the last 30 days as
+      canceled?
     default: close
     choices:
-      close:
-        Lander re-checks the 30-day store and closes still-quiet flakes; a later +1
-        reopens them
+      close: Lander re-checks the 30-day store and closes still-quiet flakes; a later
+        +1 reopens them
       keep: Dormant flakes stay open and compete for later epics like any other bead
     why: About 28 flakes show no failure in 1,037 runs, and +1 reopens any that recur
     answer: close
 phases:
-  - id: stats-goldens
-    title:
-      Green Full CI's visual-test after the Statistics language breakdown (sase-1of)
-    depends_on: []
-    size: small
-    description:
-      "stats-goldens: confirm the 7 drifting config_center_statistics PNG goldens
-      reflect the intended language-breakdown change, regenerate only those, prove the
-      visual check is clean, and close sase-1of."
-  - id: shard-drift
-    title: Refresh the shard-timings table and make the ratchet catch drift (sase-14r)
-    depends_on: []
-    size: medium
-    description:
-      "shard-drift: find why the weekly shard-timings ratchet never refreshed the
-      23-day-old table, fix it, add a file-count drift trigger well below the 20% test
-      limit, refresh tests/shard_timings.json, and close sase-14r."
-  - id: read-model
-    title: Make a crate-version mismatch converge in the bead read model (sase-1nw)
-    depends_on: []
-    size: large
-    description:
-      "read-model: reproduce the stale crate_version read-model cache that every reader
-      rebuilds and rolls back, fix the sase-core rebuild/commit path so it converges,
-      move the sase core pin, and close sase-1nw."
-  - id: stranded-close
-    title:
-      Never leave a bead closed as done when its turn's commit never lands (sase-yo)
-    depends_on: []
-    size: large
-    description:
-      "stranded-close: when the host commit finalizer fails to land the work of a turn
-      whose bead closed in that turn, reopen the bead with a durable STITCH FAILED note
-      naming the stranded workspace, so epics stop advancing past unlanded phases; close
-      sase-yo."
-  - id: sidecar-secret-scan
-    title:
-      Scan agents-sidecar transcripts before publication and survive GH013 (sase-1dp)
-    depends_on: []
-    size: large
-    description:
-      "sidecar-secret-scan: run the core attachment secret scanner over agent
-      transcripts and prompt files before they reach the public sase--agents sidecar,
-      withhold hits, add GH013 handling, propose push protection through a gate, and
-      close sase-1dp (or close it canceled if the owner opted out)."
+- id: stats-goldens
+  title: Green Full CI's visual-test after the Statistics language breakdown (sase-1of)
+  depends_on: []
+  size: small
+  description: 'stats-goldens: confirm the 7 drifting config_center_statistics PNG
+    goldens reflect the intended language-breakdown change, regenerate only those,
+    prove the visual check is clean, and close sase-1of.'
+- id: shard-drift
+  title: Refresh the shard-timings table and make the ratchet catch drift (sase-14r)
+  depends_on: []
+  size: medium
+  description: 'shard-drift: find why the weekly shard-timings ratchet never refreshed
+    the 23-day-old table, fix it, add a file-count drift trigger well below the 20%
+    test limit, refresh tests/shard_timings.json, and close sase-14r.'
+- id: read-model
+  title: Make a crate-version mismatch converge in the bead read model (sase-1nw)
+  depends_on: []
+  size: large
+  description: 'read-model: reproduce the stale crate_version read-model cache that
+    every reader rebuilds and rolls back, fix the sase-core rebuild/commit path so
+    it converges, move the sase core pin, and close sase-1nw.'
+- id: stranded-close
+  title: Never leave a bead closed as done when its turn's commit never lands (sase-yo)
+  depends_on: []
+  size: large
+  description: 'stranded-close: when the host commit finalizer fails to land the work
+    of a turn whose bead closed in that turn, reopen the bead with a durable STITCH
+    FAILED note naming the stranded workspace, so epics stop advancing past unlanded
+    phases; close sase-yo.'
+- id: sidecar-secret-scan
+  title: Scan agents-sidecar transcripts before publication and survive GH013 (sase-1dp)
+  depends_on: []
+  size: large
+  description: 'sidecar-secret-scan: run the core attachment secret scanner over agent
+    transcripts and prompt files before they reach the public sase--agents sidecar,
+    withhold hits, add GH013 handling, propose push protection through a gate, and
+    close sase-1dp (or close it canceled if the owner opted out).'
 proposed_by: bbugyi200.athena.14m
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-26 14:14:57
 status: wip
+bead_id: sase-1oh
 ---
 
-- **PROMPT:**
-  [prompts/202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/backlog_epic_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/backlog_epic_top_five_task_beads.md)
+- **BEAD:** [sase-1oh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oh/README.md)
 
 # Plan: Task-bead backlog, epic 1: the five most important open task beads
 
