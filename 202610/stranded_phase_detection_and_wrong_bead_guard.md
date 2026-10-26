@@ -1,76 +1,68 @@
 ---
 tier: epic
-title:
-  Catch phases that end without closing their bead, and stop agents from working the
-  wrong bead
-goal:
-  A phase agent that misreads its own bead ID is warned or refused at the CLI. A
-  single-turn phase that ends with its bead still open is classified stranded and raises
-  one wait alert. A follow-on epic proposed after its bead closed no longer nests under
-  it.
+title: Catch phases that end without closing their bead, and stop agents from working
+  the wrong bead
+goal: A phase agent that misreads its own bead ID is warned or refused at the CLI.
+  A single-turn phase that ends with its bead still open is classified stranded and
+  raises one wait alert. A follow-on epic proposed after its bead closed no longer
+  nests under it.
 decisions:
   near_miss_mutation:
-    ask:
-      Should bead close/open refuse a target that is a one-segment near-miss of the
-      agent's assigned bead?
+    ask: Should bead close/open refuse a target that is a one-segment near-miss of
+      the agent's assigned bead?
     choices:
-      refuse:
-        Close and open exit non-zero before writing; read, note, update, and
+      refuse: Close and open exit non-zero before writing; read, note, update, and
         epic-symbols warn
       warn: Every command only warns; a miscopied close still goes through
     default: refuse
-    why:
-      No workflow legitimately mutates such a bead, and a wrong close is worse than a
-      stall
+    why: No workflow legitimately mutates such a bead, and a wrong close is worse
+      than a stall
     answer: refuse
 phases:
-  - id: stranded-root-members
-    title: Let the stranded-work collector see single-turn sessions
-    size: medium
-    depends_on: []
-    description:
-      "stranded-root-members: add an agent_name candidate-filter field to the sase-core
-      artifact index and query agent_session OR agent_name from the stranded collector,
-      so a session's root member (agent_session null) is no longer reported
-      unknown/no_records."
-  - id: stranded-bead-wait-alert
-    title: Raise one wait alert per stranded bead a live waiter is blocked on
-    size: medium
-    depends_on:
-      - stranded-root-members
-    description:
-      "stranded-bead-wait-alert: make wait_checks classify the unclosed beads that live
-      waiters block on through a targeted, TTL-cached stranded-work collection, and
-      upsert one deduplicated, self-dismissing notification per stranded bead with its
-      cause and relaunch command."
-  - id: assigned-bead-near-miss
-    title:
-      Warn or refuse when an agent targets a one-segment near-miss of its assigned bead
-    size: medium
-    depends_on: []
-    description:
-      "assigned-bead-near-miss: detect, inside SASE agents, bead IDs that differ from
-      the assigned bead by one inserted or deleted non-trailing segment; banner the read
-      output, refuse close/open per the near_miss_mutation decision, and tighten the
-      phase and task work prompts."
-  - id: closed-parent-stamp
-    title: Stop plan propose from parenting new epics under an already-closed bead
-    size: small
-    depends_on: []
-    description:
-      "closed-parent-stamp: skip the automatic parent_bead stamp in sase plan propose
-      when the proposing agent's active bead is already closed, so follow-on campaign
-      epics are top-level instead of growing the ID one segment per batch."
+- id: stranded-root-members
+  title: Let the stranded-work collector see single-turn sessions
+  size: medium
+  depends_on: []
+  description: 'stranded-root-members: add an agent_name candidate-filter field to
+    the sase-core artifact index and query agent_session OR agent_name from the stranded
+    collector, so a session''s root member (agent_session null) is no longer reported
+    unknown/no_records.'
+- id: stranded-bead-wait-alert
+  title: Raise one wait alert per stranded bead a live waiter is blocked on
+  size: medium
+  depends_on:
+  - stranded-root-members
+  description: 'stranded-bead-wait-alert: make wait_checks classify the unclosed beads
+    that live waiters block on through a targeted, TTL-cached stranded-work collection,
+    and upsert one deduplicated, self-dismissing notification per stranded bead with
+    its cause and relaunch command.'
+- id: assigned-bead-near-miss
+  title: Warn or refuse when an agent targets a one-segment near-miss of its assigned
+    bead
+  size: medium
+  depends_on: []
+  description: 'assigned-bead-near-miss: detect, inside SASE agents, bead IDs that
+    differ from the assigned bead by one inserted or deleted non-trailing segment;
+    banner the read output, refuse close/open per the near_miss_mutation decision,
+    and tighten the phase and task work prompts.'
+- id: closed-parent-stamp
+  title: Stop plan propose from parenting new epics under an already-closed bead
+  size: small
+  depends_on: []
+  description: 'closed-parent-stamp: skip the automatic parent_bead stamp in sase
+    plan propose when the proposing agent''s active bead is already closed, so follow-on
+    campaign epics are top-level instead of growing the ID one segment per batch.'
 proposed_by: bbugyi200.athena.14p
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-26 18:10:47
 status: wip
+bead_id: sase-1ok
 ---
 
-- **PROMPT:**
-  [prompts/202610/stranded_phase_detection_and_wrong_bead_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/stranded_phase_detection_and_wrong_bead_guard.md)
+- **PROMPT:** [prompts/202610/stranded_phase_detection_and_wrong_bead_guard.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/stranded_phase_detection_and_wrong_bead_guard.md)
+- **BEAD:** [sase-1ok](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ok/README.md)
 
 # Catch phases that end without closing their bead, and stop agents from working the wrong bead
 
