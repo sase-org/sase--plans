@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Make bead read-model version recovery converge
-goal:
-  Recover an old-version bead cache durably, preserve concurrent updates, and serve
-  subsequent reads without repeated rebuilds.
+goal: Recover an old-version bead cache durably, preserve concurrent updates, and
+  serve subsequent reads without repeated rebuilds.
 size: medium
 proposed_by: bbugyi200.athena.sase-1oh.3
 proposed_with: codex/gpt-6-astra
 bead: sase-1oh.3
-create_time: 2026-10-26 14:29:30
-status: wip
+status: done
 ---
 
 - **PARENT:**
