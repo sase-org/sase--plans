@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "scope",
+      "kind": "choice",
+      "ask": "Should the automatic rerun also watch the CI workflow, not just Release-plz?",
+      "why": "CI's macos-latest leg has the same exposure, and the detector is identical",
+      "choices": [
+        {
+          "key": "both",
+          "label": "Watch Release-plz and CI, so a starved macos-latest CI leg on master or a release PR is rerun too"
+        },
+        {
+          "key": "release",
+          "label": "Watch Release-plz only, so a starved CI leg stays red until someone reruns it by hand"
+        }
+      ],
+      "default": "both",
+      "effective_default": "both",
+      "requested_verified": false
+    },
+    {
+      "id": "retries",
+      "kind": "choice",
+      "ask": "Should a run get a second automatic rerun when the first rerun is also starved?",
+      "why": "matches release_plz_merge.py's rerun-once rule and keeps the PAT out of a workflow_run job",
+      "choices": [
+        {
+          "key": "two",
+          "label": "Rerun attempts 1 and 2; needs SASE_RELEASE_TOKEN so a rerun can re-trigger the retry workflow"
+        },
+        {
+          "key": "one",
+          "label": "Rerun attempt 1 only, with least-privilege GITHUB_TOKEN; the scheduled heal stays the backstop"
+        }
+      ],
+      "default": "one",
+      "effective_default": "one",
+      "requested_verified": false
+    }
+  ]
+}
