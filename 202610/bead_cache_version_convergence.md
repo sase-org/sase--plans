@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Make bead read-model version recovery converge
-goal: Recover an old-version bead cache durably, preserve concurrent updates, and
-  serve subsequent reads without repeated rebuilds.
+goal:
+  Recover an old-version bead cache durably, preserve concurrent updates, and serve
+  subsequent reads without repeated rebuilds.
 size: medium
 proposed_by: bbugyi200.athena.sase-1oh.3
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_top_five_task_beads.md)
 - **BEAD:**
   [sase-1oh.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oh/sase-1oh.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1oh.3](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1oh.3.md)
+- **COMMITS:**
+  - [7b88b98](https://github.com/sase-org/sase-core/commit/7b88b98d40162590c4226192fa27993f08d024a5)
+    — fix(bead-read-model): converge crate-version mismatch recovery
 
 # Make bead read-model version recovery converge
 
