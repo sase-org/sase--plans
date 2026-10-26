@@ -1,86 +1,75 @@
 ---
 tier: epic
-title:
-  "Unblock E2 (sase-1n6): green exercise legs, a current steward verdict, a published
-  core pin, and an executing handover gate"
-goal: "sase-1n6.10 can watch and prove the first steward release. A master rehearsal of
-  release.yml is green end to end, including both wheel exercise legs. Master pins a
-  complete published sase-core-rs whose tag contains its source revision. A failed core
-  cut that a newer green cut superseded no longer stops the steward. One human approval
-  turns on merge authority, leaves the pypi environment tag-only, and relaunches
+title: 'Unblock E2 (sase-1n6): green exercise legs, a current steward verdict, a published
+  core pin, and an executing handover gate'
+goal: 'sase-1n6.10 can watch and prove the first steward release. A master rehearsal
+  of release.yml is green end to end, including both wheel exercise legs. Master pins
+  a complete published sase-core-rs whose tag contains its source revision. A failed
+  core cut that a newer green cut superseded no longer stops the steward. One human
+  approval turns on merge authority, leaves the pypi environment tag-only, and relaunches
   sase-1n6.10 with corrected instructions.
 
-  "
+  '
 decisions:
   core_cut:
-    ask:
-      If no published core contains sase's core revision when core-pin starts, how
-      should it get one published?
+    ask: If no published core contains sase's core revision when core-pin starts,
+      how should it get one published?
     choices:
-      wait:
-        Core-pin idles up to ~36h for the 07:41 UTC daily cut; sase-core keeps one
-        release a day
-      dispatch:
-        Core-pin starts one release-plz cut (dry_run=false) now; PyPI gets an extra
-        sase-core release
+      wait: Core-pin idles up to ~36h for the 07:41 UTC daily cut; sase-core keeps
+        one release a day
+      dispatch: Core-pin starts one release-plz cut (dry_run=false) now; PyPI gets
+        an extra sase-core release
     default: wait
-    why:
-      The human gate paces the cutover anyway; sase-core reserves extra cuts for urgent
-      fixes
+    why: The human gate paces the cutover anyway; sase-core reserves extra cuts for
+      urgent fixes
     answer: wait
 phases:
-  - id: resolver
-    title:
-      release.yml finds the previous release in a throwaway venv and fails loudly on
-      real errors
-    depends_on: []
-    size: medium
-    description:
-      "resolver: release.yml's previous-release resolver moves into
-      tools/exercise_release, dry-runs each candidate in a throwaway uv venv instead of
-      the externally managed --system interpreter, shows uv's stderr, and stops on
-      errors that are not resolution failures. The SC2012 dist counts in the build step
-      are replaced too."
-  - id: cut-red
-    title: A failed core cut stops counting as red once a newer cut succeeds
-    depends_on: []
-    size: small
-    description:
-      "cut-red: in sase-core, handle_no_train reports CoreCutRed only when the newest
-      decisive completed cut is a typed failure. A later successful cut supersedes a
-      stale red cut. Rust state tests and the steward state docs row are updated."
-  - id: core-pin
-    title: Master pins the published core that contains its source revision
-    depends_on:
-      - cut-red
-    size: small
-    description:
-      "core-pin: once a complete published sase-core-rs (expected 0.42.7) contains
-      sase-core-revision.txt, ratchet master's exact pin and uv.lock to it. If that tag
-      also carries the cut-red fix, move the revision pin to the tag commit so the
-      steward builds the fixed policy."
-  - id: cutover
-    title:
-      Prove a green master rehearsal, then raise a handover gate that really executes
-    depends_on:
-      - resolver
-      - core-pin
-    size: medium
-    description:
-      "cutover: prove a green master rehearsal of release.yml and a steward verdict past
-      every core check, write corrected handover notes on sase-1n6.10 and sase-1n6,
-      close this phase, then raise one gate whose options flip merge authority and the
-      tag-only pypi rule and relaunch sase-1n6.10 fresh."
+- id: resolver
+  title: release.yml finds the previous release in a throwaway venv and fails loudly
+    on real errors
+  depends_on: []
+  size: medium
+  description: 'resolver: release.yml''s previous-release resolver moves into tools/exercise_release,
+    dry-runs each candidate in a throwaway uv venv instead of the externally managed
+    --system interpreter, shows uv''s stderr, and stops on errors that are not resolution
+    failures. The SC2012 dist counts in the build step are replaced too.'
+- id: cut-red
+  title: A failed core cut stops counting as red once a newer cut succeeds
+  depends_on: []
+  size: small
+  description: 'cut-red: in sase-core, handle_no_train reports CoreCutRed only when
+    the newest decisive completed cut is a typed failure. A later successful cut supersedes
+    a stale red cut. Rust state tests and the steward state docs row are updated.'
+- id: core-pin
+  title: Master pins the published core that contains its source revision
+  depends_on:
+  - cut-red
+  size: small
+  description: 'core-pin: once a complete published sase-core-rs (expected 0.42.7)
+    contains sase-core-revision.txt, ratchet master''s exact pin and uv.lock to it.
+    If that tag also carries the cut-red fix, move the revision pin to the tag commit
+    so the steward builds the fixed policy.'
+- id: cutover
+  title: Prove a green master rehearsal, then raise a handover gate that really executes
+  depends_on:
+  - resolver
+  - core-pin
+  size: medium
+  description: 'cutover: prove a green master rehearsal of release.yml and a steward
+    verdict past every core check, write corrected handover notes on sase-1n6.10 and
+    sase-1n6, close this phase, then raise one gate whose options flip merge authority
+    and the tag-only pypi rule and relaunch sase-1n6.10 fresh.'
 proposed_by: bbugyi200.athena.14h
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-26 08:35:09
 status: wip
+bead_id: sase-1oe
 ---
 
-- **PROMPT:**
-  [prompts/202610/unblock_e2_release_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_e2_release_cutover.md)
+- **PROMPT:** [prompts/202610/unblock_e2_release_cutover.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_e2_release_cutover.md)
+- **BEAD:** [sase-1oe](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oe/README.md)
 
 # Plan: Unblock E2 (`sase-1n6`)
 
