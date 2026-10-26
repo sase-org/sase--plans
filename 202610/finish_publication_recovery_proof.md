@@ -1,80 +1,74 @@
 ---
 tier: epic
 title: Finish the remaining publication recovery proof
-goal:
-  Prove named historical publication requests on Athena and Apollo and close only the
-  enclosing phase sase-1nv.5.
+goal: Prove named historical publication requests on Athena and Apollo and close only
+  the enclosing phase sase-1nv.5.
 parent_bead: sase-1nv.5
 phases:
-  - id: exact-selection
-    title: Add exact-request selection to the Rust publication policy
-    depends_on: []
-    description:
-      "exact-selection: add an optional exact logical key to bounded drain selection,
-      preserve existing default selection, and prove that missing or ineligible keys
-      never fall through to unrelated work."
-    size: medium
-  - id: targeted-cli
-    title: Expose exact publication retries through the existing CLI
-    depends_on:
-      - exact-selection
-    description:
-      "targeted-cli: wire the landed Rust selection into sase agent sync, add parser and
-      real-outbox regression coverage, document the option, and ratchet the core pin."
-    size: medium
-  - id: readiness
-    title: Verify host readiness and identify three publishable stopped requests
-    depends_on:
-      - targeted-cli
-    description:
-      "readiness: install only missing landed fixes through the approved update gate,
-      recover Apollo replay only if still necessary, and publish a read-only preflight
-      ledger naming one eligible stopped request per host/project."
-    size: medium
-  - id: athena-proof
-    title: Prove one formerly failing Athena timeout request
-    depends_on:
-      - readiness
-    description:
-      "athena-proof: spend the single exact-request Athena/sase canary, prove
-      publication within 120 seconds with revision/page/prompt and fetched-remote
-      validation, and preserve unselected rows."
-    size: medium
-  - id: bob-proof
-    title: Prove one formerly failing Apollo bob-cli request
-    depends_on:
-      - athena-proof
-    description:
-      "bob-proof: spend the single exact-request Apollo/bob-cli rebase-conflict canary
-      and prove bounded publication, remote validity, and preservation of recovered
-      unique content."
-    size: medium
-  - id: apollo-proof
-    title: Prove one formerly failing Apollo SASE request
-    depends_on:
-      - bob-proof
-    description:
-      "apollo-proof: spend the single exact-request Apollo/sase manifest-mismatch
-      canary, including retired eligibility when needed, and prove bounded publication
-      without revising unrelated requests."
-    size: medium
-  - id: acceptance
-    title: Publish the final recovery acceptance and downstream handoff
-    depends_on:
-      - apollo-proof
-    description:
-      "acceptance: consolidate the three canaries with existing checks 2-5, publish the
-      updated report and remaining-backlog commands, and prepare closure evidence for
-      the child land agent."
-    size: small
+- id: exact-selection
+  title: Add exact-request selection to the Rust publication policy
+  depends_on: []
+  description: 'exact-selection: add an optional exact logical key to bounded drain
+    selection, preserve existing default selection, and prove that missing or ineligible
+    keys never fall through to unrelated work.'
+  size: medium
+- id: targeted-cli
+  title: Expose exact publication retries through the existing CLI
+  depends_on:
+  - exact-selection
+  description: 'targeted-cli: wire the landed Rust selection into sase agent sync,
+    add parser and real-outbox regression coverage, document the option, and ratchet
+    the core pin.'
+  size: medium
+- id: readiness
+  title: Verify host readiness and identify three publishable stopped requests
+  depends_on:
+  - targeted-cli
+  description: 'readiness: install only missing landed fixes through the approved
+    update gate, recover Apollo replay only if still necessary, and publish a read-only
+    preflight ledger naming one eligible stopped request per host/project.'
+  size: medium
+- id: athena-proof
+  title: Prove one formerly failing Athena timeout request
+  depends_on:
+  - readiness
+  description: 'athena-proof: spend the single exact-request Athena/sase canary, prove
+    publication within 120 seconds with revision/page/prompt and fetched-remote validation,
+    and preserve unselected rows.'
+  size: medium
+- id: bob-proof
+  title: Prove one formerly failing Apollo bob-cli request
+  depends_on:
+  - athena-proof
+  description: 'bob-proof: spend the single exact-request Apollo/bob-cli rebase-conflict
+    canary and prove bounded publication, remote validity, and preservation of recovered
+    unique content.'
+  size: medium
+- id: apollo-proof
+  title: Prove one formerly failing Apollo SASE request
+  depends_on:
+  - bob-proof
+  description: 'apollo-proof: spend the single exact-request Apollo/sase manifest-mismatch
+    canary, including retired eligibility when needed, and prove bounded publication
+    without revising unrelated requests.'
+  size: medium
+- id: acceptance
+  title: Publish the final recovery acceptance and downstream handoff
+  depends_on:
+  - apollo-proof
+  description: 'acceptance: consolidate the three canaries with existing checks 2-5,
+    publish the updated report and remaining-backlog commands, and prepare closure
+    evidence for the child land agent.'
+  size: small
 proposed_by: bbugyi200.athena.sase-1nv.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-26 18:04:36
 status: wip
+bead_id: sase-1nv.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/finish_publication_recovery_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_publication_recovery_proof.md)
+- **PROMPT:** [prompts/202610/finish_publication_recovery_proof.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/finish_publication_recovery_proof.md)
+- **BEAD:** [sase-1nv.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1nv/sase-1nv.5.1.md)
 
 # Finish the remaining publication recovery proof
 
