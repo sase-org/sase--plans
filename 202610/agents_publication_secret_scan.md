@@ -1,68 +1,62 @@
 ---
 tier: epic
 title: Protect agents-sidecar publication from secrets and recover from GH013
-goal:
-  Withhold unsafe transcript and prompt bytes, keep clean publications moving, and
-  provide private audit evidence and reviewed rollout gates.
+goal: Withhold unsafe transcript and prompt bytes, keep clean publications moving,
+  and provide private audit evidence and reviewed rollout gates.
 parent_bead: sase-1oh.5
 phases:
-  - id: protection-policy
-    title: Define core publication protection and durable blocked-content state
-    size: medium
-    depends_on: []
-    description:
-      "protection-policy: reuse the attachment scanner, implement Rust-owned publication
-      protection and rejection classification, expose tested bindings, and add private
-      durable state plus doctor reporting."
-  - id: transcript-publication
-    title: Withhold unsafe run files without breaking snapshots or clean runs
-    size: medium
-    depends_on:
-      - protection-policy
-    description:
-      "transcript-publication: enforce the protection contract in full and targeted hood
-      publication, including richer-file fallback, rendering, manifests, and staging;
-      prove clean runs still publish."
-  - id: prompt-publication
-    title: Protect prompt documents, captured objects, and deferred restoration
-    size: medium
-    depends_on:
-      - protection-policy
-      - transcript-publication
-    description:
-      "prompt-publication: protect direct and deferred prompt archives and pending text
-      objects before staging, preserve private recoverable copies, and keep blocked
-      obligations out of retry and acknowledgment loops."
-  - id: rejection-recovery
-    title: Recover all publisher paths from GH013 without replaying blocked bytes
-    size: medium
-    depends_on:
-      - transcript-publication
-      - prompt-publication
-    description:
-      "rejection-recovery: wire core rejection classification into all pushes, isolate
-      offending publications, preserve local-only objects, reset only the managed
-      publication clone, and prove unrelated publication continues."
-  - id: private-audit
-    title: Audit published content privately and prepare reviewed rollout actions
-    size: medium
-    depends_on:
-      - rejection-recovery
-    description:
-      "private-audit: scan the current agents sidecar through the core scanner, attach a
-      paths-and-rule-ids report privately to sase-1oh.5, and prepare exact remediation
-      and repository-setting gate material for the child land agent. Do not change
-      GitHub settings or rewrite history."
+- id: protection-policy
+  title: Define core publication protection and durable blocked-content state
+  size: medium
+  depends_on: []
+  description: 'protection-policy: reuse the attachment scanner, implement Rust-owned
+    publication protection and rejection classification, expose tested bindings, and
+    add private durable state plus doctor reporting.'
+- id: transcript-publication
+  title: Withhold unsafe run files without breaking snapshots or clean runs
+  size: medium
+  depends_on:
+  - protection-policy
+  description: 'transcript-publication: enforce the protection contract in full and
+    targeted hood publication, including richer-file fallback, rendering, manifests,
+    and staging; prove clean runs still publish.'
+- id: prompt-publication
+  title: Protect prompt documents, captured objects, and deferred restoration
+  size: medium
+  depends_on:
+  - protection-policy
+  - transcript-publication
+  description: 'prompt-publication: protect direct and deferred prompt archives and
+    pending text objects before staging, preserve private recoverable copies, and
+    keep blocked obligations out of retry and acknowledgment loops.'
+- id: rejection-recovery
+  title: Recover all publisher paths from GH013 without replaying blocked bytes
+  size: medium
+  depends_on:
+  - transcript-publication
+  - prompt-publication
+  description: 'rejection-recovery: wire core rejection classification into all pushes,
+    isolate offending publications, preserve local-only objects, reset only the managed
+    publication clone, and prove unrelated publication continues.'
+- id: private-audit
+  title: Audit published content privately and prepare reviewed rollout actions
+  size: medium
+  depends_on:
+  - rejection-recovery
+  description: 'private-audit: scan the current agents sidecar through the core scanner,
+    attach a paths-and-rule-ids report privately to sase-1oh.5, and prepare exact
+    remediation and repository-setting gate material for the child land agent. Do
+    not change GitHub settings or rewrite history.'
 proposed_by: bbugyi200.athena.sase-1oh.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-26 14:45:01
 status: wip
+bead_id: sase-1oh.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/agents_publication_secret_scan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_publication_secret_scan.md)
-- **PARENT:**
-  [202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/agents_publication_secret_scan.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_publication_secret_scan.md)
+- **PARENT:** [202610/backlog_epic_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_top_five_task_beads.md)
+- **BEAD:** [sase-1oh.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oh/sase-1oh.5.1.md)
 
 # Protect agents-sidecar publication
 
