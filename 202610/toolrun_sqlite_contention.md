@@ -1,38 +1,35 @@
 ---
 tier: epic
 title: Fix ToolRun SQLite contention at the store boundary
-goal:
-  ToolRun launch, settlement, and queries survive ordinary parallel contention with
-  bounded waits and no duplicate writes.
+goal: ToolRun launch, settlement, and queries survive ordinary parallel contention
+  with bounded waits and no duplicate writes.
 parent_bead: sase-1ou.2
 phases:
-  - id: core-contention
-    title: Diagnose and fix the Rust store contention policy
-    size: medium
-    depends_on: []
-    description:
-      "core-contention: capture the clean-base failure and lock timeline, fix the
-      responsible connection or transaction paths in sase-core, and test bounded
-      contention and safe replay through the bindings."
-  - id: caller-integration
-    title: Adopt the core policy and prove the affected ToolRun flows
-    size: medium
-    depends_on:
-      - core-contention
-    description:
-      "caller-integration: consume the landed core policy in Python, preserve explicit
-      latency deadlines, ratchet the core pin, repeat the same isolated and loaded
-      stress runs, and retire only proven fixed baseline nodes."
+- id: core-contention
+  title: Diagnose and fix the Rust store contention policy
+  size: medium
+  depends_on: []
+  description: 'core-contention: capture the clean-base failure and lock timeline,
+    fix the responsible connection or transaction paths in sase-core, and test bounded
+    contention and safe replay through the bindings.'
+- id: caller-integration
+  title: Adopt the core policy and prove the affected ToolRun flows
+  size: medium
+  depends_on:
+  - core-contention
+  description: 'caller-integration: consume the landed core policy in Python, preserve
+    explicit latency deadlines, ratchet the core pin, repeat the same isolated and
+    loaded stress runs, and retire only proven fixed baseline nodes.'
 proposed_by: bbugyi200.athena.sase-1ou.2
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-27 10:41:24
 status: wip
+bead_id: sase-1ou.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/toolrun_sqlite_contention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/toolrun_sqlite_contention.md)
-- **PARENT:**
-  [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/toolrun_sqlite_contention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/toolrun_sqlite_contention.md)
+- **PARENT:** [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **BEAD:** [sase-1ou.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ou/sase-1ou.2.1.md)
 
 # Fix ToolRun SQLite contention at the store boundary
 
