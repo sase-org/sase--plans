@@ -1,77 +1,72 @@
 ---
 tier: epic
-title:
-  Capacity inspector redesign — answer "can new work start, and who is using it?" at a
-  glance
-goal: "Opening the capacity inspector (`,l`) answers three questions in under a second:
-  can a new agent start right now, who is using the capacity, and who is waiting for it
-  and why. A slot gauge, a plain-English verdict, tiered sections, and a detail strip
-  replace the flat wall of dim text. The noise of inactive records is folded away. Every
-  number still comes straight from the authoritative report, so nothing is estimated and
-  nothing unknown ever reads as free.
+title: Capacity inspector redesign — answer "can new work start, and who is using
+  it?" at a glance
+goal: 'Opening the capacity inspector (`,l`) answers three questions in under a second:
+  can a new agent start right now, who is using the capacity, and who is waiting for
+  it and why. A slot gauge, a plain-English verdict, tiered sections, and a detail
+  strip replace the flat wall of dim text. The noise of inactive records is folded
+  away. Every number still comes straight from the authoritative report, so nothing
+  is estimated and nothing unknown ever reads as free.
 
-  "
+  '
 decisions:
   cli_parity:
-    ask:
-      Should `sase agent load` adopt the same verdict, gauge, and section order as the
-      inspector?
+    ask: Should `sase agent load` adopt the same verdict, gauge, and section order
+      as the inspector?
     choices:
-      adopt:
-        CLI gets the verdict line, a text gauge, and the inspector's tiered sections
-      minimal:
-        CLI keeps today's layout; only its mislabeled idle section is split correctly
+      adopt: CLI gets the verdict line, a text gauge, and the inspector's tiered sections
+      minimal: CLI keeps today's layout; only its mislabeled idle section is split
+        correctly
     default: adopt
     why: The view model is shared, and the CLI, chip, and inspector promise to agree
     answer: adopt
   inactive_records:
-    ask:
-      How should the inspector show inactive records (not live, done, not agent
+    ask: How should the inspector show inactive records (not live, done, not agent
       records)?
     choices:
-      collapsed: One dim, collapsed row per reason under Not running; Enter expands it
-      hidden:
-        No rows; counts appear only in the Not running header; `y` JSON still has them
+      collapsed: One dim, collapsed row per reason under Not running; Enter expands
+        it
+      hidden: No rows; counts appear only in the Not running header; `y` JSON still
+        has them
     default: collapsed
     why: Keeps the list one keypress away without letting 65 dead rows bury live ones
     answer: collapsed
 phases:
-  - id: view-model
-    title: "Phase view-model: tiered capacity view, verdict, and gauge geometry"
-    depends_on: []
-    size: medium
-    description:
-      "view-model: additively extend the shared stdlib-only capacity view with a
-      verdict, limit provenance, tiered sections, queue tones, durations, and gauge cell
-      geometry. Existing renderers keep their output."
-  - id: inspector
-    title: "Phase inspector: redesigned TUI capacity inspector"
-    depends_on:
-      - view-model
-    size: medium
-    description:
-      "inspector: rebuild the modal around the gauge, verdict, tiered sections, and
-      detail strip, with stable selection, h/l folding, a freshness ticker, and a
-      verdict-first chip tooltip. Update goldens and TUI docs."
-  - id: cli
-    title: "Phase cli: `sase agent load` parity and legacy view cleanup"
-    depends_on:
-      - inspector
-    size: small
-    description:
-      "cli: move `sase agent load` onto the tiered view per the cli_parity decision,
-      delete legacy view fields with no remaining consumer, and update the runner-slots
-      docs."
+- id: view-model
+  title: 'Phase view-model: tiered capacity view, verdict, and gauge geometry'
+  depends_on: []
+  size: medium
+  description: 'view-model: additively extend the shared stdlib-only capacity view
+    with a verdict, limit provenance, tiered sections, queue tones, durations, and
+    gauge cell geometry. Existing renderers keep their output.'
+- id: inspector
+  title: 'Phase inspector: redesigned TUI capacity inspector'
+  depends_on:
+  - view-model
+  size: medium
+  description: 'inspector: rebuild the modal around the gauge, verdict, tiered sections,
+    and detail strip, with stable selection, h/l folding, a freshness ticker, and
+    a verdict-first chip tooltip. Update goldens and TUI docs.'
+- id: cli
+  title: 'Phase cli: `sase agent load` parity and legacy view cleanup'
+  depends_on:
+  - inspector
+  size: small
+  description: 'cli: move `sase agent load` onto the tiered view per the cli_parity
+    decision, delete legacy view fields with no remaining consumer, and update the
+    runner-slots docs.'
 proposed_by: bbugyi200.athena.14s
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-27 10:48:19
 status: wip
+bead_id: sase-1ox
 ---
 
-- **PROMPT:**
-  [prompts/202610/capacity_inspector_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/capacity_inspector_redesign.md)
+- **PROMPT:** [prompts/202610/capacity_inspector_redesign.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/capacity_inspector_redesign.md)
+- **BEAD:** [sase-1ox](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ox/README.md)
 
 # Plan: Capacity inspector redesign
 
