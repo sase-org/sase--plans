@@ -2,32 +2,26 @@
 tier: tale
 size: medium
 title: Finish agents-publication protection gaps and land sase-1oh.5.1
-goal:
-  Withheld hoods and runs no longer abort sync or get retired or charged as failures,
-  agents git telemetry stops logging remote output, recovered objects are restored for
-  the clean rebuild, and epic sase-1oh.5.1 and phase sase-1oh.5 close.
+goal: Withheld hoods and runs no longer abort sync or get retired or charged as failures,
+  agents git telemetry stops logging remote output, recovered objects are restored
+  for the clean rebuild, and epic sase-1oh.5.1 and phase sase-1oh.5 close.
 decisions:
   unverified_runs:
-    ask:
-      Should unverified runs and prompts retry every drain without being charged toward
-      quarantine?
+    ask: Should unverified runs and prompts retry every drain without being charged
+      toward quarantine?
     choices:
-      retry:
-        Unverified runs and prompts stay pending uncharged, so a scanner outage never
-        quarantines them
-      charge:
-        Unverified transcript runs are charged toward retryable quarantine, like today's
-        prompt rule
+      retry: Unverified runs and prompts stay pending uncharged, so a scanner outage
+        never quarantines them
+      charge: Unverified transcript runs are charged toward retryable quarantine,
+        like today's prompt rule
     default: retry
-    why:
-      The contract says an inability to scan may be retried safely; quarantine needs a
-      manual revive
+    why: The contract says an inability to scan may be retried safely; quarantine
+      needs a manual revive
     answer: retry
 proposed_by: bbugyi200.athena.sase-1oh.5.1.land--3
 proposed_with: claude/opus
 decided_by: auto
-create_time: 2026-10-27 06:06:36
-status: wip
+status: done
 ---
 
 # Finish agents-publication protection gaps and land sase-1oh.5.1
