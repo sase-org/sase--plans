@@ -1,57 +1,52 @@
 ---
 tier: epic
 title: Rotate exposed credentials and purge agents-sidecar history
-goal:
-  Resolve the historical exposure tracked by sase-1ou.5 with private triage,
-  owner-confirmed credential rotation, a rehearsed and explicitly approved purge, and
-  evidence that all three hosts resume publication without restoring old history.
+goal: Resolve the historical exposure tracked by sase-1ou.5 with private triage, owner-confirmed
+  credential rotation, a rehearsed and explicitly approved purge, and evidence that
+  all three hosts resume publication without restoring old history.
 parent_bead: sase-1ou.5
 phases:
-  - id: private-triage
-    title: Classify findings and prepare the rotation checklist
-    depends_on: []
-    size: medium
-    description:
-      "private-triage: account for every original finding and reachable historical
-      variant without exposing values, prepare private purge inputs and a human rotation
-      checklist, and preserve value-free evidence across credential rotation."
-  - id: fleet-protocol
-    title: Prepare and test the three-host maintenance procedure
-    depends_on: []
-    size: medium
-    description:
-      "fleet-protocol: inventory every agents-sidecar writer and clone on athena, apollo
-      and mac, implement a private command bundle for quiescence and clone recovery, and
-      verify it on disposable fixtures without production mutations."
-  - id: purge-rehearsal
-    title: Rehearse the purge and assemble the execution package
-    depends_on:
-      - private-triage
-      - fleet-protocol
-    size: medium
-    description:
-      "purge-rehearsal: bind the private removal manifest to frozen refs, rehearse the
-      history transformation and fleet recovery on isolated copies, and prepare exact
-      commands, count comparisons and stop conditions for human review."
-  - id: review-execute
-    title: Gate execution and verify the published result
-    depends_on:
-      - purge-rehearsal
-    size: medium
-    description:
-      "review-execute: obtain rotation confirmation and explicit approval of the
-      concrete purge, execute through a durable gate turn, verify rewritten remote refs
-      and every host, and record either completion or the owner's deferral."
+- id: private-triage
+  title: Classify findings and prepare the rotation checklist
+  depends_on: []
+  size: medium
+  description: 'private-triage: account for every original finding and reachable historical
+    variant without exposing values, prepare private purge inputs and a human rotation
+    checklist, and preserve value-free evidence across credential rotation.'
+- id: fleet-protocol
+  title: Prepare and test the three-host maintenance procedure
+  depends_on: []
+  size: medium
+  description: 'fleet-protocol: inventory every agents-sidecar writer and clone on
+    athena, apollo and mac, implement a private command bundle for quiescence and
+    clone recovery, and verify it on disposable fixtures without production mutations.'
+- id: purge-rehearsal
+  title: Rehearse the purge and assemble the execution package
+  depends_on:
+  - private-triage
+  - fleet-protocol
+  size: medium
+  description: 'purge-rehearsal: bind the private removal manifest to frozen refs,
+    rehearse the history transformation and fleet recovery on isolated copies, and
+    prepare exact commands, count comparisons and stop conditions for human review.'
+- id: review-execute
+  title: Gate execution and verify the published result
+  depends_on:
+  - purge-rehearsal
+  size: medium
+  description: 'review-execute: obtain rotation confirmation and explicit approval
+    of the concrete purge, execute through a durable gate turn, verify rewritten remote
+    refs and every host, and record either completion or the owner''s deferral.'
 proposed_by: bbugyi200.athena.sase-1ou.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-27 09:36:42
 status: wip
+bead_id: sase-1ou.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/agents_history_remediation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_history_remediation.md)
-- **PARENT:**
-  [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/agents_history_remediation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agents_history_remediation.md)
+- **PARENT:** [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **BEAD:** [sase-1ou.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ou/sase-1ou.5.1.md)
 
 # Plan: Complete the historical agents-sidecar remediation
 
