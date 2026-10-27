@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Finish stranded-wait alert reconciliation and land sase-1ok
-goal: Resolved stranded-bead alerts dismiss after every waiter release path, and sase-1ok
+goal:
+  Resolved stranded-bead alerts dismiss after every waiter release path, and sase-1ok
   closes with verified integration and follow-up dispositions.
 size: medium
 proposed_by: bbugyi200.athena.sase-1ok.land
@@ -14,6 +15,11 @@ status: done
   [202610/stranded_phase_detection_and_wrong_bead_guard.md](https://github.com/sase-org/sase--plans/blob/main/202610/stranded_phase_detection_and_wrong_bead_guard.md)
 - **BEAD:**
   [sase-1ok](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ok/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ok.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ok.land.md)
+- **COMMITS:**
+  - [c74a32c](https://github.com/sase-org/sase/commit/c74a32c5c46afb1687751df2d0e0068dc6353596)
+    — fix(wait-checks): dismiss stranded-bead alerts after external waiter release
 
 # Finish stranded-wait notification reconciliation and land sase-1ok
 
