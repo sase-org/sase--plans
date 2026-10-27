@@ -2,27 +2,38 @@
 tier: tale
 size: medium
 title: Finish agents-publication protection gaps and land sase-1oh.5.1
-goal: Withheld hoods and runs no longer abort sync or get retired or charged as failures,
-  agents git telemetry stops logging remote output, recovered objects are restored
-  for the clean rebuild, and epic sase-1oh.5.1 and phase sase-1oh.5 close.
+goal:
+  Withheld hoods and runs no longer abort sync or get retired or charged as failures,
+  agents git telemetry stops logging remote output, recovered objects are restored for
+  the clean rebuild, and epic sase-1oh.5.1 and phase sase-1oh.5 close.
 decisions:
   unverified_runs:
-    ask: Should unverified runs and prompts retry every drain without being charged
-      toward quarantine?
+    ask:
+      Should unverified runs and prompts retry every drain without being charged toward
+      quarantine?
     choices:
-      retry: Unverified runs and prompts stay pending uncharged, so a scanner outage
-        never quarantines them
-      charge: Unverified transcript runs are charged toward retryable quarantine,
-        like today's prompt rule
+      retry:
+        Unverified runs and prompts stay pending uncharged, so a scanner outage never
+        quarantines them
+      charge:
+        Unverified transcript runs are charged toward retryable quarantine, like today's
+        prompt rule
     default: retry
-    why: The contract says an inability to scan may be retried safely; quarantine
-      needs a manual revive
+    why:
+      The contract says an inability to scan may be retried safely; quarantine needs a
+      manual revive
     answer: retry
 proposed_by: bbugyi200.athena.sase-1oh.5.1.land--3
 proposed_with: claude/opus
 decided_by: auto
 status: done
 ---
+
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1oh.5.1.land--3--code](https://github.com/sase-org/sase--agents/blob/main/agents/bbugyi200.athena.sase-1oh.5.1.land--3--code/README.md)
+- **COMMITS:**
+  - [5dd37a0](https://github.com/sase-org/sase--plans/commit/5dd37a0c2967a5e704258e11b6986aba67bb4ea4)
+    — docs(plans): mark secret-scan epic done after withheld-publication landing
 
 # Finish agents-publication protection gaps and land sase-1oh.5.1
 
