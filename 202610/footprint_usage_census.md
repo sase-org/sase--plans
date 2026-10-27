@@ -1,175 +1,160 @@
 ---
 tier: epic
-title: "Footprint: a local usage census for finding what sase should delete"
-goal: "sase keeps an always-on, privacy-by-construction census of which of its surfaces
+title: 'Footprint: a local usage census for finding what sase should delete'
+goal: 'sase keeps an always-on, privacy-by-construction census of which of its surfaces
   (CLI commands and options, TUI actions and keys, views and modals, macros, skills,
-  config leaves, automation) are used, by whom, and how. The census costs at most one
-  appended line per CLI process and one in-memory counter bump per TUI action. A
-  Statistics → Footprint view and a `sase footprint` command turn it into a review
+  config leaves, automation) are used, by whom, and how. The census costs at most
+  one appended line per CLI process and one in-memory counter bump per TUI action.
+  A Statistics → Footprint view and a `sase footprint` command turn it into a review
   workflow that ends in keep reasons and deletion task beads. The local data contains
   only allowlisted IDs and enum values, so it can later be exported, and export packs
   carry no identity.
 
-  "
+  '
 decisions:
   shell_history_backfill:
-    ask:
-      Add a one-shot `sase footprint backfill` that imports timestamped sase lines from
-      zsh history?
+    ask: Add a one-shot `sase footprint backfill` that imports timestamped sase lines
+      from zsh history?
     default: true
-    why:
-      Gives the first review months of human CLI evidence; it keeps only lines that
-      start with sase
+    why: Gives the first review months of human CLI evidence; it keeps only lines
+      that start with sase
     answer: true
   memory_census_decision:
-    ask:
-      Record a decision that Footprint is an allowlisted census whose exports carry no
-      identity?
+    ask: Record a decision that Footprint is an allowlisted census whose exports carry
+      no identity?
     memory:
-      - decisions:footprint-census
+    - decisions:footprint-census
     default: false
     answer: false
   memory_glossary_footprint:
-    ask:
-      Add a Footprint glossary term covering feature IDs, the catalog, and observed
+    ask: Add a Footprint glossary term covering feature IDs, the catalog, and observed
       active days?
     memory:
-      - glossary:footprint
+    - glossary:footprint
     default: false
     answer: false
 phases:
-  - id: catalog
-    title: Feature catalog, ID scheme, overlay, and drift guard
-    depends_on: []
-    size: medium
-    description:
-      "catalog: create the stdlib-only footprint package foundation (ids, paths), the
-      generator that walks every sase registry into a checked-in catalog.jsonl, the
-      protected/keep overlay, the sync tool wired into just fix/lint, and `sase
-      footprint catalog`."
-  - id: ledger
-    title: Rust ledger, spool fold, and status (sase-core)
-    depends_on: []
-    size: medium
-    description:
-      "ledger: add the sase-core `footprint` domain (spool line validation, catalog
-      ingest, checkpointed fold into the daily ledger, coverage, derived-row upsert,
-      status, prune, clear), its PyO3 bindings, the Python facade, and the CI pin move."
-  - id: cli_recording
-    title: CLI recorder, spool writer, and mode switch
-    depends_on:
-      - catalog
-    size: medium
-    description:
-      "cli_recording: record one spool line per CLI process from a single try/finally in
-      entry.py (fast paths, help, usage errors, cancels, option dest names), classify
-      the actor from env markers, add `sase footprint mode`, exclude pytest, and prove
-      the 100 µs budget."
-  - id: tui_recording
-    title: TUI counters, dispatch seams, and flush thread
-    depends_on:
-      - cli_recording
-    size: medium
-    description:
-      "tui_recording: count TUI actions at the run_action, palette, prefix-mode,
-      view-entry, and modal seams with an in-memory counter that a daemon thread flushes
-      every 60 s, add the Textual contract test, and prove zero event-loop I/O."
-  - id: fold_status
-    title: Fold driver, hourly job, status, clear, and disclosure
-    depends_on:
-      - ledger
-      - cli_recording
-    size: medium
-    description:
-      "fold_status: add the Python fold driver (catalog ingest with LOC enrichment,
-      fold-if-stale), the hourly AXE job, the `footprint:` config section, `sase
-      footprint status` and `clear`, the one-time disclosure notification, and a doctor
-      check."
-  - id: queries
-    title: Rust lens engine, evidence states, and review decisions
-    depends_on:
-      - ledger
-    size: medium
-    description:
-      "queries: add the sase-core report/card queries (map, eight lenses, tiles, trust
-      header, candidate gate, evidence states) and the local review-decision table, with
-      bindings, facade functions, and the pin move."
-  - id: derived_sources
-    title: Derived sources and history backfill
-    depends_on:
-      - fold_status
-    size: medium
-    description:
-      "derived_sources: fold usage that already exists elsewhere into the ledger as
-      derived rows: macro launch history, skill counts, config overrides, and
-      automation. Also add the opt-in zsh-history backfill command."
-  - id: cli_report
-    title: Shared renderers and the `sase footprint` report commands
-    depends_on:
-      - fold_status
-      - queries
-    size: medium
-    description:
-      "cli_report: build the shared Rich render layer (heat strips, tiles, rows,
-      evidence card, evidence sentence) and add `sase footprint list`, `show`, and
-      `decide` in rich, JSON, and agent-ready Markdown."
-  - id: tui_view
-    title: Statistics view 09 Footprint (map, lenses, drill-down)
-    depends_on:
-      - tui_recording
-      - cli_report
-    size: medium
-    description:
-      "tui_view: register Statistics view 09 with lenses as groupings, an interactive
-      row list with area drill-down, the trust header and tiles, actor and range
-      cycling, honest empty and preview states, keymaps, help, tests, and goldens."
-  - id: tui_card
-    title: Evidence card panel and feature finder
-    depends_on:
-      - tui_view
-    size: medium
-    description:
-      "tui_card: add the responsive evidence card beside or below the list (debounced),
-      the area summary card, the `/` feature finder modal, copy-id, and their goldens."
-  - id: review_loop
-    title: Decide picker, finish review, and the
-    depends_on:
-      - tui_card
-    size: medium
-    description:
-      "review_loop: add the TUI decide picker, the finish-review confirm-and-launch
-      flow, the bundled #footprint_review macro that turns decisions into overlay keep
-      reasons and task beads, and the one-time review-ready notification."
-  - id: export_import
-    title: Identity-free export packs and multi-machine merge
-    depends_on:
-      - cli_report
-    size: medium
-    description:
-      "export_import: add the Rust weekly export projection (buckets, no identity,
-      byte-exact preview) and replace-all import merge, `sase footprint export` and
-      `import`, and merged figures in reports and the card."
-  - id: closeout
-    title: Docs reconciliation, end-to-end smoke, and memory
-    depends_on:
-      - derived_sources
-      - review_loop
-      - export_import
-    size: small
-    description:
-      "closeout: reconcile the reference and contribute docs, point the telemetry docs
-      at Footprint, run an end-to-end smoke from CLI and TUI hits to the review
-      markdown, apply the accepted memory decisions, and record follow-ups."
+- id: catalog
+  title: Feature catalog, ID scheme, overlay, and drift guard
+  depends_on: []
+  size: medium
+  description: 'catalog: create the stdlib-only footprint package foundation (ids,
+    paths), the generator that walks every sase registry into a checked-in catalog.jsonl,
+    the protected/keep overlay, the sync tool wired into just fix/lint, and `sase
+    footprint catalog`.'
+- id: ledger
+  title: Rust ledger, spool fold, and status (sase-core)
+  depends_on: []
+  size: medium
+  description: 'ledger: add the sase-core `footprint` domain (spool line validation,
+    catalog ingest, checkpointed fold into the daily ledger, coverage, derived-row
+    upsert, status, prune, clear), its PyO3 bindings, the Python facade, and the CI
+    pin move.'
+- id: cli_recording
+  title: CLI recorder, spool writer, and mode switch
+  depends_on:
+  - catalog
+  size: medium
+  description: 'cli_recording: record one spool line per CLI process from a single
+    try/finally in entry.py (fast paths, help, usage errors, cancels, option dest
+    names), classify the actor from env markers, add `sase footprint mode`, exclude
+    pytest, and prove the 100 µs budget.'
+- id: tui_recording
+  title: TUI counters, dispatch seams, and flush thread
+  depends_on:
+  - cli_recording
+  size: medium
+  description: 'tui_recording: count TUI actions at the run_action, palette, prefix-mode,
+    view-entry, and modal seams with an in-memory counter that a daemon thread flushes
+    every 60 s, add the Textual contract test, and prove zero event-loop I/O.'
+- id: fold_status
+  title: Fold driver, hourly job, status, clear, and disclosure
+  depends_on:
+  - ledger
+  - cli_recording
+  size: medium
+  description: 'fold_status: add the Python fold driver (catalog ingest with LOC enrichment,
+    fold-if-stale), the hourly AXE job, the `footprint:` config section, `sase footprint
+    status` and `clear`, the one-time disclosure notification, and a doctor check.'
+- id: queries
+  title: Rust lens engine, evidence states, and review decisions
+  depends_on:
+  - ledger
+  size: medium
+  description: 'queries: add the sase-core report/card queries (map, eight lenses,
+    tiles, trust header, candidate gate, evidence states) and the local review-decision
+    table, with bindings, facade functions, and the pin move.'
+- id: derived_sources
+  title: Derived sources and history backfill
+  depends_on:
+  - fold_status
+  size: medium
+  description: 'derived_sources: fold usage that already exists elsewhere into the
+    ledger as derived rows: macro launch history, skill counts, config overrides,
+    and automation. Also add the opt-in zsh-history backfill command.'
+- id: cli_report
+  title: Shared renderers and the `sase footprint` report commands
+  depends_on:
+  - fold_status
+  - queries
+  size: medium
+  description: 'cli_report: build the shared Rich render layer (heat strips, tiles,
+    rows, evidence card, evidence sentence) and add `sase footprint list`, `show`,
+    and `decide` in rich, JSON, and agent-ready Markdown.'
+- id: tui_view
+  title: Statistics view 09 Footprint (map, lenses, drill-down)
+  depends_on:
+  - tui_recording
+  - cli_report
+  size: medium
+  description: 'tui_view: register Statistics view 09 with lenses as groupings, an
+    interactive row list with area drill-down, the trust header and tiles, actor and
+    range cycling, honest empty and preview states, keymaps, help, tests, and goldens.'
+- id: tui_card
+  title: Evidence card panel and feature finder
+  depends_on:
+  - tui_view
+  size: medium
+  description: 'tui_card: add the responsive evidence card beside or below the list
+    (debounced), the area summary card, the `/` feature finder modal, copy-id, and
+    their goldens.'
+- id: review_loop
+  title: Decide picker, finish review, and the
+  depends_on:
+  - tui_card
+  size: medium
+  description: 'review_loop: add the TUI decide picker, the finish-review confirm-and-launch
+    flow, the bundled #footprint_review macro that turns decisions into overlay keep
+    reasons and task beads, and the one-time review-ready notification.'
+- id: export_import
+  title: Identity-free export packs and multi-machine merge
+  depends_on:
+  - cli_report
+  size: medium
+  description: 'export_import: add the Rust weekly export projection (buckets, no
+    identity, byte-exact preview) and replace-all import merge, `sase footprint export`
+    and `import`, and merged figures in reports and the card.'
+- id: closeout
+  title: Docs reconciliation, end-to-end smoke, and memory
+  depends_on:
+  - derived_sources
+  - review_loop
+  - export_import
+  size: small
+  description: 'closeout: reconcile the reference and contribute docs, point the telemetry
+    docs at Footprint, run an end-to-end smoke from CLI and TUI hits to the review
+    markdown, apply the accepted memory decisions, and record follow-ups.'
 proposed_by: bbugyi200.athena.14w
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-27 15:21:45
 status: wip
+bead_id: sase-1p1
 ---
 
-- **PROMPT:**
-  [prompts/202610/footprint_usage_census.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/footprint_usage_census.md)
+- **PROMPT:** [prompts/202610/footprint_usage_census.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/footprint_usage_census.md)
+- **BEAD:** [sase-1p1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1p1/README.md)
 
 # Plan: Footprint — a local usage census for finding what sase should delete
 
