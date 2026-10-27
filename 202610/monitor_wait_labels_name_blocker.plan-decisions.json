@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "dep_edge",
+      "kind": "choice",
+      "ask": "Should the monitor skill tell an agent to record its prerequisite on its own bead before it polls another bead?",
+      "why": "The root gap was a missing edge; a relaunched phase then waits natively on the bead.",
+      "choices": [
+        {
+          "key": "record",
+          "label": "Agents add the dep edge first, so bead views and any relaunch see the prerequisite"
+        },
+        {
+          "key": "label_only",
+          "label": "Only the monitor label names the blocker; the bead graph stays as authored"
+        }
+      ],
+      "default": "record",
+      "effective_default": "record",
+      "requested_verified": false
+    }
+  ]
+}
