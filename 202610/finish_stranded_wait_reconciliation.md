@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish stranded-wait alert reconciliation and land sase-1ok
-goal:
-  Resolved stranded-bead alerts dismiss after every waiter release path, and sase-1ok
+goal: Resolved stranded-bead alerts dismiss after every waiter release path, and sase-1ok
   closes with verified integration and follow-up dispositions.
 size: medium
 proposed_by: bbugyi200.athena.sase-1ok.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1ok
-create_time: 2026-10-26 22:13:45
-status: wip
+status: done
 ---
 
 - **PARENT:**
