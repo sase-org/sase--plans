@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "unverified_runs",
+      "kind": "choice",
+      "ask": "Should unverified runs and prompts retry every drain without being charged toward quarantine?",
+      "why": "The contract says an inability to scan may be retried safely; quarantine needs a manual revive",
+      "choices": [
+        {
+          "key": "retry",
+          "label": "Unverified runs and prompts stay pending uncharged, so a scanner outage never quarantines them"
+        },
+        {
+          "key": "charge",
+          "label": "Unverified transcript runs are charged toward retryable quarantine, like today's prompt rule"
+        }
+      ],
+      "default": "retry",
+      "effective_default": "retry",
+      "requested_verified": false
+    }
+  ]
+}
