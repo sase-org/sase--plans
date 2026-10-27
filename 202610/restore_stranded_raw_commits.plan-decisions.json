@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "monitor_next_wording",
+      "kind": "toggle",
+      "ask": "Should the /sase_monitor skill also warn starters never to phrase a `--next` action as \"commit <repo>\"?",
+      "why": "The stranded commits began with a `--next` saying \"commit bob-mac-capture with message \u2026\"",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
