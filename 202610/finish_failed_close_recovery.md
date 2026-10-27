@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish failed-close recovery and land its epic
-goal:
-  Recovery preserves every eligible close episode, proves publication and landing
+goal: Recovery preserves every eligible close episode, proves publication and landing
   accurately, and safely closes sase-1oh.4.1 and its parent phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1oh.4.1.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1oh.4.1
-create_time: 2026-10-26 23:25:07
-status: wip
+status: done
 ---
 
 - **PARENT:**
