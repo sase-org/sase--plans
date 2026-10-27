@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish capacity inspector correctness and land sase-1ox
-goal: Correct the remaining capacity presentation defects, verify integration, and
-  close sase-1ox with its plan marked done.
+goal:
+  Correct the remaining capacity presentation defects, verify integration, and close
+  sase-1ox with its plan marked done.
 size: medium
 proposed_by: bbugyi200.athena.sase-1ox.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202610/capacity_inspector_redesign.md](https://github.com/sase-org/sase--plans/blob/main/202610/capacity_inspector_redesign.md)
 - **BEAD:**
   [sase-1ox](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ox/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ox.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ox.land.md)
+- **COMMITS:**
+  - [f5058ac](https://github.com/sase-org/sase--plans/commit/f5058ac2cd176a94b6e2a458f5b04027b29aa74a)
+    — docs(plans): mark capacity inspector redesign and landing tale done
 
 # Finish the capacity inspector and close sase-1ox
 
