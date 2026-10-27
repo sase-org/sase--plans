@@ -1,91 +1,85 @@
 ---
 tier: epic
-title: "Task-bead backlog, epic 2: fix the five most important open task beads"
-goal: 'The five most important workable task beads in the sase project are resolved on
-  master and closed with recorded evidence: sase-1og (the check-full flake-baseline gate
-  exits 2 before judging anything), sase-18t (ToolRun store "database is locked" under
-  parallel load), sase-1a7 (the Files ctrl+j anchor-scroll node that keeps Full CI red),
-  sase-12f (the monitor-capacity fakey e2e that exits 124 under load), and sase-1ot
-  (owner-approved rotation and purge of 27 historical secret-scanner hits in public
-  sase--agents history). The land agent then starts the next backlog epic, five beads at
-  a time, until no workable task bead remains.
+title: 'Task-bead backlog, epic 2: fix the five most important open task beads'
+goal: 'The five most important workable task beads in the sase project are resolved
+  on master and closed with recorded evidence: sase-1og (the check-full flake-baseline
+  gate exits 2 before judging anything), sase-18t (ToolRun store "database is locked"
+  under parallel load), sase-1a7 (the Files ctrl+j anchor-scroll node that keeps Full
+  CI red), sase-12f (the monitor-capacity fakey e2e that exits 124 under load), and
+  sase-1ot (owner-approved rotation and purge of 27 historical secret-scanner hits
+  in public sase--agents history). The land agent then starts the next backlog epic,
+  five beads at a time, until no workable task bead remains.
 
   '
 decisions:
   dormant_flakes:
-    ask:
-      Should the lander close flakes with zero failures in the last 30 days as canceled?
+    ask: Should the lander close flakes with zero failures in the last 30 days as
+      canceled?
     default: close
     choices:
-      close:
-        Lander re-checks every evidence source and closes still-quiet flakes; a later +1
-        reopens them
+      close: Lander re-checks every evidence source and closes still-quiet flakes;
+        a later +1 reopens them
       keep: Dormant flakes stay open and compete for later epics like any other bead
     why: Single-sighting flakes like sase-1ax and sase-1f5 are near 30 quiet days
     answer: close
 phases:
-  - id: flake-baseline
-    title: Make the flake-baseline gate reach a truthful verdict again (sase-1og)
-    depends_on: []
-    size: medium
-    description:
-      "flake-baseline: drop the duplicate fixed-at directive that makes
-      tools/selection_health --fail-on-new-flake exit 2, add a regression test that
-      parses the committed baseline, then reconcile the 64 exceedances the unmasked gate
-      reports (fixed-at for verified fixes, baseline entries only under existing open
-      beads, follow-ups for the rest), and close sase-1og."
-  - id: toolrun-busy
-    title:
-      Stop the ToolRun store failing with "database is locked" under parallel load
-      (sase-18t)
-    depends_on:
-      - flake-baseline
-    size: large
-    description:
-      "toolrun-busy: identify which sase-core ToolRun store transactions hold the SQLite
-      write lock while launcher, settle and show paths read it, fix the contention at
-      its source in sase-core with a principled busy policy, move the core pin, retire
-      the tests/tool/ baseline entries with fixed-at, and close sase-18t."
-  - id: capacity-e2e
-    title: Make the weight-two land-agent-session capacity e2e load-robust (sase-12f)
-    depends_on:
-      - flake-baseline
-    size: large
-    description:
-      "capacity-e2e: find what consumes the fakey land agent's 5 s budget under load in
-      tests/fakey/test_monitor_capacity_e2e.py (delayed child bootstrap, capacity scan
-      under the host-wide slot lock, or harness polling), fix the cause instead of the
-      timeout, prove it with a loaded stress loop, and close sase-12f."
-  - id: deck-anchor
-    title: Fix the Files ctrl+j page-anchor scroll race (sase-1a7)
-    depends_on:
-      - flake-baseline
-    size: large
-    description:
-      "deck-anchor: reproduce the intermittent wait_for_anchor_scroll timeout in
-      test_files_ctrl_j_scrolls_page_anchor_to_top (it fails about 1 in 4 even in
-      isolation), fix the Files spread scroll/anchor race in production code, prove it
-      with isolated and loaded stress loops, and close sase-1a7."
-  - id: agents-secret-purge
-    title:
-      Rotate and purge the historical secret-scanner hits in public sase--agents history
-      (sase-1ot)
-    depends_on: []
-    size: large
-    description:
-      "agents-secret-purge: triage the 27 private-audit findings without printing
-      values, hand the owner a rotation checklist, design and gate a reviewed history
-      purge of sase-org/sase--agents that quiesces publication and resets every clone,
-      re-audit the purged tip, and close sase-1ot."
+- id: flake-baseline
+  title: Make the flake-baseline gate reach a truthful verdict again (sase-1og)
+  depends_on: []
+  size: medium
+  description: 'flake-baseline: drop the duplicate fixed-at directive that makes tools/selection_health
+    --fail-on-new-flake exit 2, add a regression test that parses the committed baseline,
+    then reconcile the 64 exceedances the unmasked gate reports (fixed-at for verified
+    fixes, baseline entries only under existing open beads, follow-ups for the rest),
+    and close sase-1og.'
+- id: toolrun-busy
+  title: Stop the ToolRun store failing with "database is locked" under parallel load
+    (sase-18t)
+  depends_on:
+  - flake-baseline
+  size: large
+  description: 'toolrun-busy: identify which sase-core ToolRun store transactions
+    hold the SQLite write lock while launcher, settle and show paths read it, fix
+    the contention at its source in sase-core with a principled busy policy, move
+    the core pin, retire the tests/tool/ baseline entries with fixed-at, and close
+    sase-18t.'
+- id: capacity-e2e
+  title: Make the weight-two land-agent-session capacity e2e load-robust (sase-12f)
+  depends_on:
+  - flake-baseline
+  size: large
+  description: 'capacity-e2e: find what consumes the fakey land agent''s 5 s budget
+    under load in tests/fakey/test_monitor_capacity_e2e.py (delayed child bootstrap,
+    capacity scan under the host-wide slot lock, or harness polling), fix the cause
+    instead of the timeout, prove it with a loaded stress loop, and close sase-12f.'
+- id: deck-anchor
+  title: Fix the Files ctrl+j page-anchor scroll race (sase-1a7)
+  depends_on:
+  - flake-baseline
+  size: large
+  description: 'deck-anchor: reproduce the intermittent wait_for_anchor_scroll timeout
+    in test_files_ctrl_j_scrolls_page_anchor_to_top (it fails about 1 in 4 even in
+    isolation), fix the Files spread scroll/anchor race in production code, prove
+    it with isolated and loaded stress loops, and close sase-1a7.'
+- id: agents-secret-purge
+  title: Rotate and purge the historical secret-scanner hits in public sase--agents
+    history (sase-1ot)
+  depends_on: []
+  size: large
+  description: 'agents-secret-purge: triage the 27 private-audit findings without
+    printing values, hand the owner a rotation checklist, design and gate a reviewed
+    history purge of sase-org/sase--agents that quiesces publication and resets every
+    clone, re-audit the purged tip, and close sase-1ot.'
 proposed_by: bbugyi200.athena.sase-1oh.land--1
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-27 09:20:57
 status: wip
+bead_id: sase-1ou
 ---
 
-- **PROMPT:**
-  [prompts/202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/backlog_epic_2_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/backlog_epic_2_top_five_task_beads.md)
+- **BEAD:** [sase-1ou](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ou/README.md)
 
 # Plan: Task-bead backlog, epic 2: the five most important open task beads
 
