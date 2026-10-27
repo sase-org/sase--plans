@@ -1,137 +1,130 @@
 ---
 tier: epic
 title: Make machine capacity legible and correct
-goal: "The header capacity chip always matches what runner admission sees on this
+goal: 'The header capacity chip always matches what runner admission sees on this
   machine, and every unit (or zero) can be traced to a named agent and a stated reason:
-  on the chip, on every Running-bucket row, in a keyboard-reachable inspector, and from
-  `sase agent load`. The athena screenshot case (6 running, 5.0 occupied) reads `5/8`,
-  not `3/8`.
+  on the chip, on every Running-bucket row, in a keyboard-reachable inspector, and
+  from `sase agent load`. The athena screenshot case (6 running, 5.0 occupied) reads
+  `5/8`, not `3/8`.
 
-  "
+  '
 decisions:
   mark_style:
     ask: How should the per-row occupancy mark be drawn?
     choices:
-      glyph:
-        One verified glyph plus the number (2-3 cells); the phase picks and proves the
-        glyph
-      text: Plain cap1 / cap0 / cap- / cap? tokens; 4-5 cells, no font or collision risk
+      glyph: One verified glyph plus the number (2-3 cells); the phase picks and proves
+        the glyph
+      text: Plain cap1 / cap0 / cap- / cap? tokens; 4-5 cells, no font or collision
+        risk
     default: glyph
     why: Agent rows are already dense; a glyph plus a number keeps the mark short
     answer: glyph
   publish_snapshot_file:
-    ask:
-      Also write each computed capacity report to a published snapshot file for
+    ask: Also write each computed capacity report to a published snapshot file for
       non-Python readers?
     default: false
-    why: The token-keyed scan cache already aligns readers; another file adds SSD churn
+    why: The token-keyed scan cache already aligns readers; another file adds SSD
+      churn
     answer: false
   capacity_decision_record:
-    ask:
-      Add a decisions strand saying capacity displays read admission's snapshot, never a
-      display roster?
+    ask: Add a decisions strand saying capacity displays read admission's snapshot,
+      never a display roster?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 phases:
-  - id: roster-fixes
-    title: Stop the TUI roster from dropping monitors and mislabelling holders
-    depends_on: []
-    size: medium
-    description:
-      "roster-fixes: give monitor rows their supervisor PID from agent_meta (then the
-      running marker) on every loader path, index holders by agent row instead of
-      workflow-step rows (closing task bead sase-1ol), and carry runner_claim_owner_key
-      through the roster projection, with loader-level regression tests."
-  - id: core-accounting
-    title: Per-record capacity accounting in the Rust snapshot
-    depends_on: []
-    size: medium
-    description:
-      "core-accounting: in sase-core, add an accounting list (state, charged weight,
-      weight source, claim, reason code) covering every request record, a top-level
-      validity flag, and a monitor-inherited weight input; bump the schema version,
-      update the binding, and adapt sase's record builders and legacy fallback."
-  - id: machine-report
-    title: Shared authoritative machine capacity report
-    depends_on:
-      - core-accounting
-    size: medium
-    description:
-      "machine-report: one read-only Python adapter that builds the machine's capacity
-      report from admission's shared scan cache, a fresh liveness probe, active holds,
-      and the Rust snapshot, plus limit provenance, machine label, age, and a bounded
-      rescan policy."
-  - id: load-cli
-    title: The sase agent load command and shared capacity view model
-    depends_on:
-      - machine-report
-    size: medium
-    description:
-      "load-cli: a TUI-free view model (holders, live rows holding nothing grouped by
-      reason, queued rows with real blockers, diagnostics) rendered by a new `sase agent
-      load [-j]` command, plus a Reference section listing what holds capacity."
-  - id: list-holder-parity
-    title: Retire the Python holder predicate behind sase agent list
-    depends_on:
-      - machine-report
-    size: small
-    description:
-      'list-holder-parity: source `holds_runner_slot`, `runner_slot_holders`, and
-      `runner_slots_in_use` in `sase agent list -j` from Rust accounting, delete
-      `runner_slot_holder_dirs` and the `status == "RUNNING"` fallback, and add
-      per-entry capacity fields.'
-  - id: tui-report-feed
-    title: Feed the TUI from the authoritative report
-    depends_on:
-      - roster-fixes
-      - machine-report
-    size: medium
-    description:
-      "tui-report-feed: compute the machine report off the event loop on token change
-      plus a 10 s poll, drive the chip values and row queue context from it, keep the
-      roster projection only as a pre-first-report estimate and drift witness, and log
-      capacity_gauge/capacity_drift telemetry."
-  - id: cap-chip
-    title: Machine-labelled cap chip with provenance, staleness, fault, and overage
-    depends_on:
-      - tui-report-feed
-    size: medium
-    description:
-      "cap-chip: rename the gauge to a machine-labelled `cap` chip that keeps its label
-      in compact density, marks overrides, staleness, invalid accounting, and over-limit
-      load, teaches running-versus-cap in the tooltip and `?` help, and fixes the
-      misleading docs example."
-  - id: occupancy-marks
-    title: Occupancy marks on Running rows and a Capacity detail line
-    depends_on:
-      - tui-report-feed
-    size: medium
-    description:
-      "occupancy-marks: attach accounting entries to Agent rows, draw a charged-now mark
-      on every Running-bucket agent node and clan container (including collapsed clans),
-      and add a never-suppressed `Capacity:` line to agent and clan detail cards."
-  - id: capacity-inspector
-    title: Keyboard-first capacity inspector
-    depends_on:
-      - load-cli
-      - cap-chip
-    size: medium
-    description:
-      "capacity-inspector: a modal rendering the shared view model, opened from a chip
-      click, leader `,l`, and the command palette, with jump-to-agent rows, complete or
-      explicitly truncated lists, real queue blockers, and a copy-snapshot action."
+- id: roster-fixes
+  title: Stop the TUI roster from dropping monitors and mislabelling holders
+  depends_on: []
+  size: medium
+  description: 'roster-fixes: give monitor rows their supervisor PID from agent_meta
+    (then the running marker) on every loader path, index holders by agent row instead
+    of workflow-step rows (closing task bead sase-1ol), and carry runner_claim_owner_key
+    through the roster projection, with loader-level regression tests.'
+- id: core-accounting
+  title: Per-record capacity accounting in the Rust snapshot
+  depends_on: []
+  size: medium
+  description: 'core-accounting: in sase-core, add an accounting list (state, charged
+    weight, weight source, claim, reason code) covering every request record, a top-level
+    validity flag, and a monitor-inherited weight input; bump the schema version,
+    update the binding, and adapt sase''s record builders and legacy fallback.'
+- id: machine-report
+  title: Shared authoritative machine capacity report
+  depends_on:
+  - core-accounting
+  size: medium
+  description: 'machine-report: one read-only Python adapter that builds the machine''s
+    capacity report from admission''s shared scan cache, a fresh liveness probe, active
+    holds, and the Rust snapshot, plus limit provenance, machine label, age, and a
+    bounded rescan policy.'
+- id: load-cli
+  title: The sase agent load command and shared capacity view model
+  depends_on:
+  - machine-report
+  size: medium
+  description: 'load-cli: a TUI-free view model (holders, live rows holding nothing
+    grouped by reason, queued rows with real blockers, diagnostics) rendered by a
+    new `sase agent load [-j]` command, plus a Reference section listing what holds
+    capacity.'
+- id: list-holder-parity
+  title: Retire the Python holder predicate behind sase agent list
+  depends_on:
+  - machine-report
+  size: small
+  description: 'list-holder-parity: source `holds_runner_slot`, `runner_slot_holders`,
+    and `runner_slots_in_use` in `sase agent list -j` from Rust accounting, delete
+    `runner_slot_holder_dirs` and the `status == "RUNNING"` fallback, and add per-entry
+    capacity fields.'
+- id: tui-report-feed
+  title: Feed the TUI from the authoritative report
+  depends_on:
+  - roster-fixes
+  - machine-report
+  size: medium
+  description: 'tui-report-feed: compute the machine report off the event loop on
+    token change plus a 10 s poll, drive the chip values and row queue context from
+    it, keep the roster projection only as a pre-first-report estimate and drift witness,
+    and log capacity_gauge/capacity_drift telemetry.'
+- id: cap-chip
+  title: Machine-labelled cap chip with provenance, staleness, fault, and overage
+  depends_on:
+  - tui-report-feed
+  size: medium
+  description: 'cap-chip: rename the gauge to a machine-labelled `cap` chip that keeps
+    its label in compact density, marks overrides, staleness, invalid accounting,
+    and over-limit load, teaches running-versus-cap in the tooltip and `?` help, and
+    fixes the misleading docs example.'
+- id: occupancy-marks
+  title: Occupancy marks on Running rows and a Capacity detail line
+  depends_on:
+  - tui-report-feed
+  size: medium
+  description: 'occupancy-marks: attach accounting entries to Agent rows, draw a charged-now
+    mark on every Running-bucket agent node and clan container (including collapsed
+    clans), and add a never-suppressed `Capacity:` line to agent and clan detail cards.'
+- id: capacity-inspector
+  title: Keyboard-first capacity inspector
+  depends_on:
+  - load-cli
+  - cap-chip
+  size: medium
+  description: 'capacity-inspector: a modal rendering the shared view model, opened
+    from a chip click, leader `,l`, and the command palette, with jump-to-agent rows,
+    complete or explicitly truncated lists, real queue blockers, and a copy-snapshot
+    action.'
 proposed_by: bbugyi200.athena.research.5e.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-26 20:19:41
 status: wip
+bead_id: sase-1om
 ---
 
-- **PROMPT:**
-  [prompts/202610/machine_capacity_transparency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/machine_capacity_transparency.md)
+- **PROMPT:** [prompts/202610/machine_capacity_transparency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/machine_capacity_transparency.md)
+- **BEAD:** [sase-1om](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1om/README.md)
 
 # Plan: Make machine capacity legible and correct
 
