@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish capacity inspector correctness and land sase-1ox
-goal:
-  Correct the remaining capacity presentation defects, verify integration, and close
-  sase-1ox with its plan marked done.
+goal: Correct the remaining capacity presentation defects, verify integration, and
+  close sase-1ox with its plan marked done.
 size: medium
 proposed_by: bbugyi200.athena.sase-1ox.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1ox
-create_time: 2026-10-27 15:44:14
-status: wip
+status: done
 ---
 
 - **PARENT:**
