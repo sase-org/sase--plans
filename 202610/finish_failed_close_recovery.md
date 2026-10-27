@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Finish failed-close recovery and land its epic
-goal: Recovery preserves every eligible close episode, proves publication and landing
+goal:
+  Recovery preserves every eligible close episode, proves publication and landing
   accurately, and safely closes sase-1oh.4.1 and its parent phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1oh.4.1.land
@@ -14,6 +15,11 @@ status: done
   [202610/failed_stitch_bead_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202610/failed_stitch_bead_recovery.md)
 - **BEAD:**
   [sase-1oh.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1oh/sase-1oh.4.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1oh.4.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1oh.4.1.land.md)
+- **COMMITS:**
+  - [d940a57](https://github.com/sase-org/sase--plans/commit/d940a57a9479d74d4d956bcb429a94ee2970b733)
+    — docs(plans): mark failed-close recovery plans done after landing
 
 # Finish failed-close recovery and land its epic
 
