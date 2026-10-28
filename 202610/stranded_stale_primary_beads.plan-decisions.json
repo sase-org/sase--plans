@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "managed_auto_sync_default",
+      "kind": "choice",
+      "ask": "Should a managed project's declared builtin plans or beads sidecar that omits auto_sync default to auto_sync true?",
+      "why": "Every other path that creates these entries already enables auto_sync",
+      "choices": [
+        {
+          "key": "inherit",
+          "label": "Managed builtin plans/beads omitting auto_sync get true, like injected defaults; false still wins"
+        },
+        {
+          "key": "bob_cli_only",
+          "label": "Keep the false default; set auto_sync true on bob-cli's plans and beads in its sase.yml"
+        },
+        {
+          "key": "neither",
+          "label": "No backstop for bob-cli; bead edits from other machines stay unseen there until a manual pull"
+        }
+      ],
+      "default": "inherit",
+      "effective_default": "inherit",
+      "requested_verified": false
+    }
+  ]
+}
