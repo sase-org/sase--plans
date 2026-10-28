@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "decision_record",
+      "kind": "toggle",
+      "ask": "Add a decisions-web record saying verified snapshots treat published remote history as durable base?",
+      "default": false,
+      "effective_default": false,
+      "memory": {
+        "selectors": [
+          "decisions"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "selector": "decisions",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "A Gate Never Blocks An Agent",
+            "Adapters Normalize Harnesses",
+            "Agents Are Single-Turn",
+            "Agents-Sync Is Publish-Only, The Import Leg Is Deleted",
+            "Check-Full Is Explicit-Only",
+            "CI Is Two-Speed",
+            "Completion Is Host-Owned",
+            "Expensive Commands Are Recorded Before They Are Admitted",
+            "Explicit Handoff Fails Closed",
+            "Global Install Is Human-Only",
+            "Goal Ledger",
+            "Goals Host Binds",
+            "Guarded Recipes Refuse Raw Agent Runs",
+            "Hold Admission Uses Pull Evaluation With Fail-Open TTL",
+            "Instructions Are Rendered Per Invocation And Delivered By Adapters",
+            "Legacy V1 Agent Transport Is Read-Only History, Not An Import Source",
+            "Machine Artifact-Link Writes Stay Off the Primary",
+            "Memory Links Are Authored",
+            "Memory Webs",
+            "Memory Webs Render In Their Own Section",
+            "Native Helpers Return; Only Roots Declare",
+            "No Retrieval Mechanism Before Its Corpus",
+            "Plugins May Mount Top-Level Commands",
+            "Projects Are Shown By Name, Never By Directory Key",
+            "Receipts Prove Before They Skip",
+            "Size Aliases Descend The Effort Ladder",
+            "The Committed AGENTS.md Stays A Readable Projection",
+            "The Rust Core Is Required",
+            "Triage Annotates; It Never Changes an Exit Code",
+            "Verification Is Two-Speed"
+          ]
+        }
+      ]
+    }
+  ]
+}
