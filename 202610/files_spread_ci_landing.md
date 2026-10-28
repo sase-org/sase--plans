@@ -1,49 +1,44 @@
 ---
 tier: epic
 title: Make Files spread page-anchor navigation converge on CI (finish sase-1a7)
-goal:
-  Files spread ctrl+j and cycle_card navigation always converges on the live page
-  anchor, including on CI's Python 3.12 runner with Textual 8.2.8. The
-  test_deck_spread_pilot ctrl+j node and every test_files_anchor_ownership node stay
-  green in scheduled Full CI. sase-1a7 closes done, and the interrupted sase-1ou landing
-  resumes.
+goal: Files spread ctrl+j and cycle_card navigation always converges on the live page
+  anchor, including on CI's Python 3.12 runner with Textual 8.2.8. The test_deck_spread_pilot
+  ctrl+j node and every test_files_anchor_ownership node stay green in scheduled Full
+  CI. sase-1a7 closes done, and the interrupted sase-1ou landing resumes.
 parent_bead: sase-1ou
 decisions:
   ci_proof_runs:
-    ask:
-      Should the land agent require two post-fix scheduled Full CI runs, not one, before
-      closing sase-1a7?
+    ask: Should the land agent require two post-fix scheduled Full CI runs, not one,
+      before closing sase-1a7?
     choices:
-      two:
-        Waits about 12 hours; a surviving 25%-per-run race passes about 56% of the time
-      one:
-        Waits about 6 hours; a surviving 25%-per-run race passes about 75% of the time
+      two: Waits about 12 hours; a surviving 25%-per-run race passes about 56% of
+        the time
+      one: Waits about 6 hours; a surviving 25%-per-run race passes about 75% of the
+        time
     default: two
     why: One green run already failed to distinguish fixed from unfixed after 691ef46153
     answer: two
 phases:
-  - id: files-landing
-    title: Remove the stall in Files spread navigation and make CI timeouts diagnosable
-    size: medium
-    depends_on: []
-    description:
-      "files-landing: rebuild the CI-like Python 3.12 / Textual 8.2.8 environment, prove
-      with a deterministic real-widget test that pending Files navigation stalls once
-      its bounded refresh-retry chain runs out after the last layout publish, make
-      navigation resume on scroll-extent change instead, add state to the anchor-wait
-      timeout message, and prove it with isolated and loaded loops in both Textual
-      versions."
+- id: files-landing
+  title: Remove the stall in Files spread navigation and make CI timeouts diagnosable
+  size: medium
+  depends_on: []
+  description: 'files-landing: rebuild the CI-like Python 3.12 / Textual 8.2.8 environment,
+    prove with a deterministic real-widget test that pending Files navigation stalls
+    once its bounded refresh-retry chain runs out after the last layout publish, make
+    navigation resume on scroll-extent change instead, add state to the anchor-wait
+    timeout message, and prove it with isolated and loaded loops in both Textual versions.'
 proposed_by: bbugyi200.athena.sase-1ou.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-28 17:04:13
 status: wip
+bead_id: sase-1ou.6
 ---
 
-- **PROMPT:**
-  [prompts/202610/files_spread_ci_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/files_spread_ci_landing.md)
-- **PARENT:**
-  [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **PROMPT:** [prompts/202610/files_spread_ci_landing.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/files_spread_ci_landing.md)
+- **PARENT:** [202610/backlog_epic_2_top_five_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202610/backlog_epic_2_top_five_task_beads.md)
+- **BEAD:** [sase-1ou.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ou/sase-1ou.6.md)
 
 # Make Files spread page-anchor navigation converge on CI (finish sase-1a7)
 
