@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "body_fit",
+      "kind": "choice",
+      "ask": "Grow the gate input panel body to fit the shell instead of the fixed 32-row cap?",
+      "why": "The reported 80-row terminal left half the modal unused; the cap clips short ones",
+      "choices": [
+        {
+          "key": "fit",
+          "label": "Fit body to shell on mount and resize; tall terminals show more fields, footer never clips"
+        },
+        {
+          "key": "cap",
+          "label": "Keep the fixed 32-row cap; smallest diff, but the footer still clips under ~46 rows"
+        }
+      ],
+      "default": "fit",
+      "effective_default": "fit",
+      "requested_verified": false
+    }
+  ]
+}
