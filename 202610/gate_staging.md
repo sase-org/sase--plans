@@ -1,68 +1,63 @@
 ---
 tier: epic
 title: Stage gate requests before host publication
-goal:
-  Complete sase-1pj.4 so agent-created gates publish only after host completion, with
-  synchronous auto gates and preserved legacy behavior.
+goal: Complete sase-1pj.4 so agent-created gates publish only after host completion,
+  with synchronous auto gates and preserved legacy behavior.
 parent_bead: sase-1pj.4
 phases:
-  - id: gate-contract
-    title: Durable gate staging contract
-    depends_on: []
-    size: medium
-    description:
-      "gate-contract: define the Rust-owned staged gate payload and workspace
-      disposition, with Python projection and resource snapshot support."
-  - id: gate-publisher
-    title: Publish staged gates from persisted creator context
-    depends_on:
-      - gate-contract
-    size: medium
-    description:
-      "gate-publisher: split gate publication from preparation and register the
-      post-finalizer gate adopter with replay and explicit custody."
-  - id: gate-cli
-    title: Stage custom and sudo gates through one entry helper
-    depends_on:
-      - gate-publisher
-    size: medium
-    description:
-      "gate-cli: activate the shared staged entry helper for custom and sudo gates,
-      protect own-gate waits, and update their skill sources."
-  - id: launch-cli
-    title: Stage launch requests and agent-origin run requests
-    depends_on:
-      - gate-cli
-    size: medium
-    description:
-      "launch-cli: retain launch preview and continuation validation while returning
-      staged descriptors from launch request and agent-origin run."
-  - id: workflow-completion
-    title: Bring workflow review into host completion
-    depends_on:
-      - gate-cli
-    size: medium
-    description:
-      "workflow-completion: provide a host-owned completion boundary for workflow HITL
-      so review staging precedes finalizer settlement without relaxing CLI admission."
-  - id: workflow-hitl
-    title: Suspend workflow execution on staged review
-    depends_on:
-      - workflow-completion
-    size: medium
-    description:
-      "workflow-hitl: route agent, bash, and Python HITL reviews through staging,
-      preserve waiting state, and prove publication ordering and follow-up behavior."
+- id: gate-contract
+  title: Durable gate staging contract
+  depends_on: []
+  size: medium
+  description: 'gate-contract: define the Rust-owned staged gate payload and workspace
+    disposition, with Python projection and resource snapshot support.'
+- id: gate-publisher
+  title: Publish staged gates from persisted creator context
+  depends_on:
+  - gate-contract
+  size: medium
+  description: 'gate-publisher: split gate publication from preparation and register
+    the post-finalizer gate adopter with replay and explicit custody.'
+- id: gate-cli
+  title: Stage custom and sudo gates through one entry helper
+  depends_on:
+  - gate-publisher
+  size: medium
+  description: 'gate-cli: activate the shared staged entry helper for custom and sudo
+    gates, protect own-gate waits, and update their skill sources.'
+- id: launch-cli
+  title: Stage launch requests and agent-origin run requests
+  depends_on:
+  - gate-cli
+  size: medium
+  description: 'launch-cli: retain launch preview and continuation validation while
+    returning staged descriptors from launch request and agent-origin run.'
+- id: workflow-completion
+  title: Bring workflow review into host completion
+  depends_on:
+  - gate-cli
+  size: medium
+  description: 'workflow-completion: provide a host-owned completion boundary for
+    workflow HITL so review staging precedes finalizer settlement without relaxing
+    CLI admission.'
+- id: workflow-hitl
+  title: Suspend workflow execution on staged review
+  depends_on:
+  - workflow-completion
+  size: medium
+  description: 'workflow-hitl: route agent, bash, and Python HITL reviews through
+    staging, preserve waiting state, and prove publication ordering and follow-up
+    behavior.'
 proposed_by: bbugyi200.athena.sase-1pj.4
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-29 14:37:27
 status: wip
+bead_id: sase-1pj.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/gate_staging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/gate_staging.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/gate_staging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/gate_staging.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.4.1.md)
 
 # Stage gate requests before host publication
 
