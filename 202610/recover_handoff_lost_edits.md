@@ -67,7 +67,7 @@ proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-28 20:02:57
-status: wip
+status: done
 bead_id: sase-1ph
 ---
 
