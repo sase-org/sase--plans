@@ -1,65 +1,59 @@
 ---
 tier: epic
 title: Stage plan handoffs after host finalization
-goal:
-  Complete sase-1pj.1 so flag-enabled plan proposals preserve edits and publish approval
-  only after host finalization succeeds.
+goal: Complete sase-1pj.1 so flag-enabled plan proposals preserve edits and publish
+  approval only after host finalization succeeds.
 parent_bead: sase-1pj.1
 phases:
-  - id: record-contract
-    title: Staged record contract, storage, guards, and rollout flag
-    size: medium
-    depends_on: []
-    description:
-      "record-contract: implement Rust-owned staged-handoff contracts and guards, a thin
-      Python storage adapter, reciprocal legacy-marker exclusion, and the
-      staged_handoffs beta flag."
-  - id: adoption-epilogue
-    title: Normal completion adoption and authentic planner chats
-    size: medium
-    depends_on:
-      - record-contract
-    description:
-      "adoption-epilogue: adopt staged plans after successful finalizer convergence
-      through a persisted-context adopter API, preserve inline continuation outcomes,
-      and retain the model's real final response."
-  - id: failure-boundaries
-    title: Provider failure, failed finalization, and lifecycle boundaries
-    size: medium
-    depends_on:
-      - adoption-epilogue
-    description:
-      "failure-boundaries: finalize staged turns after provider failures without
-      retrying ordinary work, hold failed handoffs, discard on explicit user kill, and
-      audit marker readers and workspace release."
-  - id: proposal-command
-    title: Enable staged plan proposals and dual-state instructions
-    size: medium
-    depends_on:
-      - failure-boundaries
-    description:
-      "proposal-command: route flag-enabled plan proposals through staging, preserve
-      archival and legacy behavior, and update plan/final skill sources and the
-      inherited authorized macros.md guidance."
-  - id: acceptance-matrix
-    title: Verify commit-before-approval and failure isolation
-    size: medium
-    depends_on:
-      - proposal-command
-    description:
-      "acceptance-matrix: prove primary-plus-linked repository ordering, declaration
-      recovery, finalizer convergence, clean final:none, protocol pinning, and legacy
-      compatibility in integration tests."
+- id: record-contract
+  title: Staged record contract, storage, guards, and rollout flag
+  size: medium
+  depends_on: []
+  description: 'record-contract: implement Rust-owned staged-handoff contracts and
+    guards, a thin Python storage adapter, reciprocal legacy-marker exclusion, and
+    the staged_handoffs beta flag.'
+- id: adoption-epilogue
+  title: Normal completion adoption and authentic planner chats
+  size: medium
+  depends_on:
+  - record-contract
+  description: 'adoption-epilogue: adopt staged plans after successful finalizer convergence
+    through a persisted-context adopter API, preserve inline continuation outcomes,
+    and retain the model''s real final response.'
+- id: failure-boundaries
+  title: Provider failure, failed finalization, and lifecycle boundaries
+  size: medium
+  depends_on:
+  - adoption-epilogue
+  description: 'failure-boundaries: finalize staged turns after provider failures
+    without retrying ordinary work, hold failed handoffs, discard on explicit user
+    kill, and audit marker readers and workspace release.'
+- id: proposal-command
+  title: Enable staged plan proposals and dual-state instructions
+  size: medium
+  depends_on:
+  - failure-boundaries
+  description: 'proposal-command: route flag-enabled plan proposals through staging,
+    preserve archival and legacy behavior, and update plan/final skill sources and
+    the inherited authorized macros.md guidance.'
+- id: acceptance-matrix
+  title: Verify commit-before-approval and failure isolation
+  size: medium
+  depends_on:
+  - proposal-command
+  description: 'acceptance-matrix: prove primary-plus-linked repository ordering,
+    declaration recovery, finalizer convergence, clean final:none, protocol pinning,
+    and legacy compatibility in integration tests.'
 proposed_by: bbugyi200.athena.sase-1pj.1
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-28 20:47:02
 status: wip
+bead_id: sase-1pj.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/staged_plan_foundation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_plan_foundation.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/staged_plan_foundation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_plan_foundation.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.1.1.md)
 
 # Scope and completion ownership
 
