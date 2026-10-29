@@ -1,92 +1,80 @@
 ---
 tier: epic
-title:
-  "Task backlog epic 3: publication safety, handoffs, check coverage, and state
-  freshness"
-goal:
-  Fix and close the five selected fleet-costly task beads, then continue the backlog
+title: 'Task backlog epic 3: publication safety, handoffs, check coverage, and state
+  freshness'
+goal: Fix and close the five selected fleet-costly task beads, then continue the backlog
   chain under the same ranking and closeout rules.
 decisions:
   optional_scope:
-    ask:
-      Should the lander include adjacent feature or memory changes discovered while
+    ask: Should the lander include adjacent feature or memory changes discovered while
       fixing these five bug and flake tasks?
     choices:
-      keep_five_seeds:
-        Limit work to the five bug/flake beads; defer adjacent feature or memory work
-      required_scope_only:
-        Include feature or memory changes only when required by a selected bead's
-        acceptance
+      keep_five_seeds: Limit work to the five bug/flake beads; defer adjacent feature
+        or memory work
+      required_scope_only: Include feature or memory changes only when required by
+        a selected bead's acceptance
     default: keep_five_seeds
-    why:
-      The selected beads are defect work, so optional scope should remain under owner
-      control.
+    why: The selected beads are defect work, so optional scope should remain under
+      owner control.
     answer: keep_five_seeds
 phases:
-  - id: prompt-migration-protection
-    title: Scan and safely recover prompt migrations into the agents sidecar (sase-1os)
-    depends_on: []
-    size: medium
-    description:
-      "prompt-migration-protection: route the one-time legacy prompt migration through
-      the shared publication-protection scanner before staging, and stop recommending a
-      raw push after a GH013 rejection. Preserve the existing private/quarantine
-      behavior and sanitized diagnostics. Add regression coverage for clean migration, a
-      detected secret, and a rejected push; ensure no secret value is emitted or
-      replayed."
-  - id: waiter-wake-recovery
-    title: Keep long-waiting bead agents alive when their dependency wakes (sase-12v)
-    depends_on: []
-    size: large
-    description:
-      "waiter-wake-recovery: reproduce the wake-time NameCollisionError after a long
-      wait, identify the reservation or retry failure, and make the wake path recover or
-      retry safely without launching duplicate successors. Preserve the original
-      dependency and workspace state. Review the related sase-1el monitor-start report,
-      but do not assume a shared root cause from the exception class alone."
-  - id: marker-audit-selection
-    title: Select agent-artifact marker audits for marker-writer changes (sase-1mv)
-    depends_on: []
-    size: medium
-    description:
-      "marker-audit-selection: make scoped test selection include both AST audit modules
-      when a changed source file writes a tracked agent-artifact marker, without
-      exceeding the contract-set serial budget or weakening the audits. Add selector
-      regression tests and show that a marker-writer change selects both audits."
-  - id: sdd-identity-check-flake
-    title: Remove the full-check timeout for the empty-home SDD identity test (sase-120)
-    depends_on: []
-    size: large
-    description:
-      "sdd-identity-check-flake: reproduce the repeated full-lane timeout and passing
-      isolated run for test_sdd_git_identity_survives_empty_home_subprocess. Determine
-      whether the nested subprocess or the temporary-directory leak guard causes the
-      slow/failing result, then fix isolation or cleanup without weakening the test or
-      simply extending its timeout. Verify the node, its file, and the scoped/full
-      check."
-  - id: published-run-state-freshness
-    title:
-      Publish terminal agent-run state instead of leaving thousands of rows active
-      (sase-1cc)
-    depends_on: []
-    size: large
-    description:
-      "published-run-state-freshness: ensure a completed or failed run in a published
-      hood eventually updates the agents-sidecar state snapshot. Choose a reliable
-      terminal-publication or reconciliation path, account for concurrent hood
-      publication, and provide a safe bounded backfill plan for existing stale rows.
-      Verify terminal-state convergence and that live runs are not marked terminal."
+- id: prompt-migration-protection
+  title: Scan and safely recover prompt migrations into the agents sidecar (sase-1os)
+  depends_on: []
+  size: medium
+  description: 'prompt-migration-protection: route the one-time legacy prompt migration
+    through the shared publication-protection scanner before staging, and stop recommending
+    a raw push after a GH013 rejection. Preserve the existing private/quarantine behavior
+    and sanitized diagnostics. Add regression coverage for clean migration, a detected
+    secret, and a rejected push; ensure no secret value is emitted or replayed.'
+- id: waiter-wake-recovery
+  title: Keep long-waiting bead agents alive when their dependency wakes (sase-12v)
+  depends_on: []
+  size: large
+  description: 'waiter-wake-recovery: reproduce the wake-time NameCollisionError after
+    a long wait, identify the reservation or retry failure, and make the wake path
+    recover or retry safely without launching duplicate successors. Preserve the original
+    dependency and workspace state. Review the related sase-1el monitor-start report,
+    but do not assume a shared root cause from the exception class alone.'
+- id: marker-audit-selection
+  title: Select agent-artifact marker audits for marker-writer changes (sase-1mv)
+  depends_on: []
+  size: medium
+  description: 'marker-audit-selection: make scoped test selection include both AST
+    audit modules when a changed source file writes a tracked agent-artifact marker,
+    without exceeding the contract-set serial budget or weakening the audits. Add
+    selector regression tests and show that a marker-writer change selects both audits.'
+- id: sdd-identity-check-flake
+  title: Remove the full-check timeout for the empty-home SDD identity test (sase-120)
+  depends_on: []
+  size: large
+  description: 'sdd-identity-check-flake: reproduce the repeated full-lane timeout
+    and passing isolated run for test_sdd_git_identity_survives_empty_home_subprocess.
+    Determine whether the nested subprocess or the temporary-directory leak guard
+    causes the slow/failing result, then fix isolation or cleanup without weakening
+    the test or simply extending its timeout. Verify the node, its file, and the scoped/full
+    check.'
+- id: published-run-state-freshness
+  title: Publish terminal agent-run state instead of leaving thousands of rows active
+    (sase-1cc)
+  depends_on: []
+  size: large
+  description: 'published-run-state-freshness: ensure a completed or failed run in
+    a published hood eventually updates the agents-sidecar state snapshot. Choose
+    a reliable terminal-publication or reconciliation path, account for concurrent
+    hood publication, and provide a safe bounded backfill plan for existing stale
+    rows. Verify terminal-state convergence and that live runs are not marked terminal.'
 status: wip
 proposed_by: bbugyi200.athena.sase-1pn.land
 proposed_with: codex/gpt-6-luna
 decided_by: auto
 create_time: 2026-10-29 19:18:57
+bead_id: sase-1pu
 ---
 
-- **PROMPT:**
-  [prompts/202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_3.md)
-- **PARENT:**
-  [202610/task_backlog_epic_2.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_2.md)
+- **PROMPT:** [prompts/202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_3.md)
+- **PARENT:** [202610/task_backlog_epic_2.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_2.md)
+- **BEAD:** [sase-1pu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pu/README.md)
 
 # Task Backlog Epic 3: Publication Safety, Handoffs, Check Coverage, and State Freshness
 
