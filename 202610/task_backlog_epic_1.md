@@ -1,25 +1,25 @@
 ---
 tier: epic
-title: "Task-bead backlog epic 1: fleet-wide check and landing breakage"
-goal: "The five costliest open task beads (sase-1nh, sase-1ll, sase-1p5, sase-1ic,
+title: 'Task-bead backlog epic 1: fleet-wide check and landing breakage'
+goal: 'The five costliest open task beads (sase-1nh, sase-1ll, sase-1p5, sase-1ic,
   sase-1cb) are fixed on master and closed. The land agent then proposes the next
   five-bead backlog epic under the same rules.
 
-  "
+  '
 decisions:
   import_budget:
     ask: How should the TUI import-budget guard count modules?
     choices:
-      first_party:
-        Budget only sase.* modules; dependency and stdlib drift stop failing the guard
-      total_headroom:
-        Keep the total count with ~40 modules of headroom; drift re-breaks it later
+      first_party: Budget only sase.* modules; dependency and stdlib drift stop failing
+        the guard
+      total_headroom: Keep the total count with ~40 modules of headroom; drift re-breaks
+        it later
     default: first_party
     why: Every October re-break had no sase.* growth, which a first-party count ignores
     answer: first_party
   rebase_gate:
-    ask:
-      What should this repo's pre-push check run after a stitch rebase moves the base?
+    ask: What should this repo's pre-push check run after a stitch rebase moves the
+      base?
     choices:
       imports: AST import resolver only; seconds, catches 3 of the 4 past master breaks
       imports_and_mypy: Adds scoped mypy; catches all 4 past breaks, slower per landing
@@ -28,55 +28,51 @@ decisions:
     why: Import breaks crash master for everyone, and the resolver costs only seconds
     answer: imports
 phases:
-  - id: receipt
-    title: Count stitch SHA receipts as successful commits (sase-1nh)
-    depends_on: []
-    size: small
-    description:
-      "receipt: accept the SHA results write_result_marker actually writes, so passing
-      prepared-completion monitors stop launching recovery successors; make the tests
-      use production-shaped markers."
-  - id: term
-    title: Make rendering tests hermetic against the ambient terminal (sase-1ll)
-    depends_on: []
-    size: small
-    description:
-      "term: add a session autouse conftest fixture that pins TERM and clears
-      NO_COLOR/FORCE_COLOR, so the 16 TERM=dumb rendering nodes pass in agent shells."
-  - id: audit
-    title: Review the five workspace snapshot directory-operation sites (sase-1p5)
-    depends_on: []
-    size: small
-    description:
-      "audit: review the five unreviewed workspace snapshot directory-operation sites,
-      drop the stale sase-n1 baseline entry, and retire sase-p9's baseline node with a
-      fixed-at line."
-  - id: import-budget
-    title: Stop the TUI import-budget guard from re-breaking weekly (sase-1ic)
-    depends_on: []
-    size: medium
-    description:
-      "import-budget: change what the module-count guard measures per the import_budget
-      decision, align tools/tui_import_closure and the perf runbook, and keep the
-      deferred probe intact."
-  - id: rebase-gate
-    title: Check the combined tree before pushing a rebased stitch (sase-1cb)
-    depends_on: []
-    size: large
-    description:
-      "rebase-gate: add a project-configurable commit hook that runs only when a stitch
-      rebase moved the base, blocks the push on real findings, and fails open on gate
-      errors."
+- id: receipt
+  title: Count stitch SHA receipts as successful commits (sase-1nh)
+  depends_on: []
+  size: small
+  description: 'receipt: accept the SHA results write_result_marker actually writes,
+    so passing prepared-completion monitors stop launching recovery successors; make
+    the tests use production-shaped markers.'
+- id: term
+  title: Make rendering tests hermetic against the ambient terminal (sase-1ll)
+  depends_on: []
+  size: small
+  description: 'term: add a session autouse conftest fixture that pins TERM and clears
+    NO_COLOR/FORCE_COLOR, so the 16 TERM=dumb rendering nodes pass in agent shells.'
+- id: audit
+  title: Review the five workspace snapshot directory-operation sites (sase-1p5)
+  depends_on: []
+  size: small
+  description: 'audit: review the five unreviewed workspace snapshot directory-operation
+    sites, drop the stale sase-n1 baseline entry, and retire sase-p9''s baseline node
+    with a fixed-at line.'
+- id: import-budget
+  title: Stop the TUI import-budget guard from re-breaking weekly (sase-1ic)
+  depends_on: []
+  size: medium
+  description: 'import-budget: change what the module-count guard measures per the
+    import_budget decision, align tools/tui_import_closure and the perf runbook, and
+    keep the deferred probe intact.'
+- id: rebase-gate
+  title: Check the combined tree before pushing a rebased stitch (sase-1cb)
+  depends_on: []
+  size: large
+  description: 'rebase-gate: add a project-configurable commit hook that runs only
+    when a stitch rebase moved the base, blocks the push on real findings, and fails
+    open on gate errors.'
 proposed_by: bbugyi200.athena.15r
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-29 01:44:33
 status: wip
+bead_id: sase-1pm
 ---
 
-- **PROMPT:**
-  [prompts/202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_1.md)
+- **PROMPT:** [prompts/202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_1.md)
+- **BEAD:** [sase-1pm](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pm/README.md)
 
 # Task-Bead Backlog Epic 1: Fleet-Wide Check and Landing Breakage
 
