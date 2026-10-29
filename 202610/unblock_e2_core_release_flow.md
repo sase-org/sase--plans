@@ -1,78 +1,73 @@
 ---
 tier: epic
-title:
-  "Unblock E2 again: a green macOS core, core cuts the steward really dispatches, and a
-  cutover wait that tracks master"
-goal: "sase-core master CI is green on macOS again, so the daily cut can merge and
-  publish a core. The release steward counts only merge-capable release-plz runs as core
-  cuts, so its CORE_LAG action proposes a real cut and a heal run never hides a failed
-  cut. sase-1oe.4 waits on the core pin that origin/master names now, not on a frozen
-  workspace pin, so it can rehearse and raise the E2 handover gate.
+title: 'Unblock E2 again: a green macOS core, core cuts the steward really dispatches,
+  and a cutover wait that tracks master'
+goal: 'sase-core master CI is green on macOS again, so the daily cut can merge and
+  publish a core. The release steward counts only merge-capable release-plz runs as
+  core cuts, so its CORE_LAG action proposes a real cut and a heal run never hides
+  a failed cut. sase-1oe.4 waits on the core pin that origin/master names now, not
+  on a frozen workspace pin, so it can rehearse and raise the E2 handover gate.
 
-  "
+  '
 decisions:
   cut_budget:
-    ask:
-      When master's core pin lags, may the steward dispatch extra sase-core cuts beyond
-      the daily 07:41 UTC cut?
+    ask: When master's core pin lags, may the steward dispatch extra sase-core cuts
+      beyond the daily 07:41 UTC cut?
     choices:
       daily: Steward cuts only with merge authority on, at most one per UTC day
-      per_pin:
-        One cut per lagging pin, even pre-handover; may exceed the PyPI quota cadence
+      per_pin: One cut per lagging pin, even pre-handover; may exceed the PyPI quota
+        cadence
     default: daily
     why: Bounds PyPI quota use, and adds no autonomous action before the human handover
     answer: daily
   core_cut:
-    ask:
-      Once the macOS fix lands, should macos-core dispatch one sase-core cut instead of
-      waiting for the daily cut?
+    ask: Once the macOS fix lands, should macos-core dispatch one sase-core cut instead
+      of waiting for the daily cut?
     choices:
       wait: Wait up to ~36h for the 07:41 UTC cut; sase-core keeps one release a day
-      dispatch:
-        Dispatch one cut once master CI is green; PyPI gets an extra core release
+      dispatch: Dispatch one cut once master CI is green; PyPI gets an extra core
+        release
     default: wait
-    why:
-      Matches the earlier core_cut=wait answer; the human handover gate paces E2 anyway
+    why: Matches the earlier core_cut=wait answer; the human handover gate paces E2
+      anyway
     answer: wait
 phases:
-  - id: macos-core
-    title: sase-core master CI passes on macOS, and a core containing the fix publishes
-    depends_on: []
-    size: medium
-    description:
-      "macos-core: find why wal_mode_probe_consumes_conversion_budget spends 750 ms to
-      1.2 s of a 250 ms budget on macos-latest. Fix the product if it overshoots its
-      wall-clock budget, or fix the oracle if the overshoot is outside the budget's
-      control, without loosening the bound. Prove that master CI is green on both OSes
-      and that a merge-capable cut publishes a complete core after the fix."
-  - id: real-cuts
-    title: Only merge-capable release-plz runs count as core cuts for the steward
-    depends_on: []
-    size: medium
-    description:
-      "real-cuts: the steward's cut facts drop push and six-hourly heal runs, which
-      never merge the release PR. CORE_LAG then proposes a real cut, and a non-merging
-      success no longer supersedes a failed cut. The cut_budget decision bounds how
-      often the steward dispatches. Prove it with a live read-only --once."
-  - id: master-wait
-    title: The cutover wait follows origin/master's current pin
-    depends_on: []
-    size: small
-    description:
-      "master-wait: give tools/ratchet_core_pin a read-only --ref mode that checks the
-      pins a git ref names. Write a corrected wait procedure on sase-1oe.4. If its
-      running monitor polls a frozen workspace pin and can be resumed safely, restart it
-      so its continuation starts now."
+- id: macos-core
+  title: sase-core master CI passes on macOS, and a core containing the fix publishes
+  depends_on: []
+  size: medium
+  description: 'macos-core: find why wal_mode_probe_consumes_conversion_budget spends
+    750 ms to 1.2 s of a 250 ms budget on macos-latest. Fix the product if it overshoots
+    its wall-clock budget, or fix the oracle if the overshoot is outside the budget''s
+    control, without loosening the bound. Prove that master CI is green on both OSes
+    and that a merge-capable cut publishes a complete core after the fix.'
+- id: real-cuts
+  title: Only merge-capable release-plz runs count as core cuts for the steward
+  depends_on: []
+  size: medium
+  description: 'real-cuts: the steward''s cut facts drop push and six-hourly heal
+    runs, which never merge the release PR. CORE_LAG then proposes a real cut, and
+    a non-merging success no longer supersedes a failed cut. The cut_budget decision
+    bounds how often the steward dispatches. Prove it with a live read-only --once.'
+- id: master-wait
+  title: The cutover wait follows origin/master's current pin
+  depends_on: []
+  size: small
+  description: 'master-wait: give tools/ratchet_core_pin a read-only --ref mode that
+    checks the pins a git ref names. Write a corrected wait procedure on sase-1oe.4.
+    If its running monitor polls a frozen workspace pin and can be resumed safely,
+    restart it so its continuation starts now.'
 proposed_by: bbugyi200.athena.15m
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-28 20:07:10
 status: wip
+bead_id: sase-1pi
 ---
 
-- **PROMPT:**
-  [prompts/202610/unblock_e2_core_release_flow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_e2_core_release_flow.md)
+- **PROMPT:** [prompts/202610/unblock_e2_core_release_flow.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/unblock_e2_core_release_flow.md)
+- **BEAD:** [sase-1pi](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pi/README.md)
 
 # Plan: Unblock E2 (`sase-1n6`) again
 
