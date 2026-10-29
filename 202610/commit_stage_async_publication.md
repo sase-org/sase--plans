@@ -1,111 +1,103 @@
 ---
 tier: epic
 title: End agent commit stages at a durable publication enqueue
-goal: "A no-conflict sase agent commit stage (provider done to done.json) drops from a
-  median of about four minutes to about one, and sase-core pin-only rebase conflicts
-  stop costing an LLM repair turn, while every sidecar write the commit path owes today
-  is still made. The agent's own declared commits stay synchronous and host-verified.
+goal: 'A no-conflict sase agent commit stage (provider done to done.json) drops from
+  a median of about four minutes to about one, and sase-core pin-only rebase conflicts
+  stop costing an LLM repair turn, while every sidecar write the commit path owes
+  today is still made. The agent''s own declared commits stay synchronous and host-verified.
   Prompt-archive, agent-hood, Referenced By, and artifact-link publication is durably
-  queued before the stage ends, then drained by a host-owned background publisher, with
-  today's inline drain as an automatic fallback.
+  queued before the stage ends, then drained by a host-owned background publisher,
+  with today''s inline drain as an automatic fallback.
 
-  "
+  '
 decisions:
   convert_backlog:
-    ask:
-      Should the queued legacy Referenced By requests be replayed as cites link events?
+    ask: Should the queued legacy Referenced By requests be replayed as cites link
+      events?
     default: true
-    why:
-      They are real prompt citations that the link-v2 fence has dropped since September
+    why: They are real prompt citations that the link-v2 fence has dropped since September
     answer: true
   decision_record:
-    ask:
-      Should the prove phase add a decision record for ending commits at durable
+    ask: Should the prove phase add a decision record for ending commits at durable
       enqueue?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 phases:
-  - id: refby-events
-    title: Stop the fenced Referenced By loop and carry prompt citations as link events
-    depends_on: []
-    size: medium
-    description:
-      "refby-events: check the link-v2 fence before the lock, pull, and snapshot, emit
-      prompt cites rows as publishable link events in fenced projects, make
-      referenced-by failures charge attempts, and handle the existing queued backlog."
-  - id: measure
-    title: Truthful commit-stage timing
-    depends_on: []
-    size: small
-    description:
-      "measure: emit stitch op_started before the subprocess runs and add per-substep
-      publication timing on the finalizer step channel."
-  - id: retention
-    title: Move artifact retention off the per-run tail
-    depends_on: []
-    size: small
-    description:
-      "retention: run enforce_artifact_retention from an hourly housekeeping job and
-      keep only a throttled inline fallback in the runner's exec-finalize tail."
-  - id: pin-resolver
-    title: Resolve revision-pin rebase conflicts mechanically
-    depends_on: []
-    size: medium
-    description:
-      "pin-resolver: add a revision-pin resolver to the semantic rebase conflict chain
-      that takes the descendant SHA when ancestry proves it, falling back to model
-      repair otherwise."
-  - id: deferred-parity
-    title: Make queued prompt-archive publication equivalent and protected
-    depends_on:
-      - refby-events
-    size: medium
-    description:
-      "deferred-parity: record the commit context on outbox rows, render deferred prompt
-      archives exactly like the synchronous path including its side effects, and stop
-      pruning pool files that a pending request still needs."
-  - id: publisher
-    title: Host-owned background publication job
-    depends_on:
-      - refby-events
-    size: medium
-    description:
-      "publisher: add a doorbell-triggered scheduler job that drains agent-hood
-      requests, hinted link-outbox agents, and unfenced referenced-by requests under the
-      existing lock, plus a heartbeat and a real drain bound in the secret scanner."
-  - id: enqueue-only
-    title: End the commit stage at the durable enqueue
-    depends_on:
-      - measure
-      - deferred-parity
-      - publisher
-    size: medium
-    description:
-      "enqueue-only: replace the commit path's prompt-archive publish and both drains
-      with a durable enqueue plus publisher hints, ring the doorbell after done.json,
-      and keep the inline path as a config- and liveness-gated fallback."
-  - id: prove
-    title: Prove latency and sidecar reliability on athena
-    depends_on:
-      - retention
-      - pin-resolver
-      - enqueue-only
-    size: medium
-    description:
-      "prove: after the installed sase includes the epic, measure commit-stage latency
-      against the baseline and audit every sampled run's sidecar obligations end to end."
+- id: refby-events
+  title: Stop the fenced Referenced By loop and carry prompt citations as link events
+  depends_on: []
+  size: medium
+  description: 'refby-events: check the link-v2 fence before the lock, pull, and snapshot,
+    emit prompt cites rows as publishable link events in fenced projects, make referenced-by
+    failures charge attempts, and handle the existing queued backlog.'
+- id: measure
+  title: Truthful commit-stage timing
+  depends_on: []
+  size: small
+  description: 'measure: emit stitch op_started before the subprocess runs and add
+    per-substep publication timing on the finalizer step channel.'
+- id: retention
+  title: Move artifact retention off the per-run tail
+  depends_on: []
+  size: small
+  description: 'retention: run enforce_artifact_retention from an hourly housekeeping
+    job and keep only a throttled inline fallback in the runner''s exec-finalize tail.'
+- id: pin-resolver
+  title: Resolve revision-pin rebase conflicts mechanically
+  depends_on: []
+  size: medium
+  description: 'pin-resolver: add a revision-pin resolver to the semantic rebase conflict
+    chain that takes the descendant SHA when ancestry proves it, falling back to model
+    repair otherwise.'
+- id: deferred-parity
+  title: Make queued prompt-archive publication equivalent and protected
+  depends_on:
+  - refby-events
+  size: medium
+  description: 'deferred-parity: record the commit context on outbox rows, render
+    deferred prompt archives exactly like the synchronous path including its side
+    effects, and stop pruning pool files that a pending request still needs.'
+- id: publisher
+  title: Host-owned background publication job
+  depends_on:
+  - refby-events
+  size: medium
+  description: 'publisher: add a doorbell-triggered scheduler job that drains agent-hood
+    requests, hinted link-outbox agents, and unfenced referenced-by requests under
+    the existing lock, plus a heartbeat and a real drain bound in the secret scanner.'
+- id: enqueue-only
+  title: End the commit stage at the durable enqueue
+  depends_on:
+  - measure
+  - deferred-parity
+  - publisher
+  size: medium
+  description: 'enqueue-only: replace the commit path''s prompt-archive publish and
+    both drains with a durable enqueue plus publisher hints, ring the doorbell after
+    done.json, and keep the inline path as a config- and liveness-gated fallback.'
+- id: prove
+  title: Prove latency and sidecar reliability on athena
+  depends_on:
+  - retention
+  - pin-resolver
+  - enqueue-only
+  size: medium
+  description: 'prove: after the installed sase includes the epic, measure commit-stage
+    latency against the baseline and audit every sampled run''s sidecar obligations
+    end to end.'
 proposed_by: bbugyi200.athena.15z
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-29 18:11:04
 status: wip
+bead_id: sase-1pt
 ---
 
-- **PROMPT:**
-  [prompts/202610/commit_stage_async_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/commit_stage_async_publication.md)
+- **PROMPT:** [prompts/202610/commit_stage_async_publication.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/commit_stage_async_publication.md)
+- **BEAD:** [sase-1pt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pt/README.md)
 
 # End agent commit stages at a durable publication enqueue
 
