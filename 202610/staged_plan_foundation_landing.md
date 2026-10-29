@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Finish landing the staged plan-handoff foundation
-goal: A held staged handoff tells the user which handoff was held and why, staged
-  stranded facts are proven against the pinned Rust reducer, and epic sase-1pj.1.1
-  and its parent phase sase-1pj.1 are closed with verified evidence.
+goal:
+  A held staged handoff tells the user which handoff was held and why, staged stranded
+  facts are proven against the pinned Rust reducer, and epic sase-1pj.1.1 and its parent
+  phase sase-1pj.1 are closed with verified evidence.
 size: small
 proposed_by: bbugyi200.athena.sase-1pj.1.1.land
 proposed_with: claude/opus
@@ -15,6 +16,11 @@ status: done
   [202610/staged_plan_foundation.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_plan_foundation.md)
 - **BEAD:**
   [sase-1pj.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.1.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1pj.1.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pj.1.1.land.md)
+- **COMMITS:**
+  - [894317d](https://github.com/sase-org/sase/commit/894317dccd7214c99e7440f6653789f4b97fa5e4)
+    — feat(plan): land staged plan-handoff foundation (sase-1pj.1.1)
 
 # Plan: Finish landing the staged plan-handoff foundation
 
