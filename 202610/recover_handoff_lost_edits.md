@@ -1,84 +1,78 @@
 ---
 tier: epic
 title: Recover the edits lost across epic-plan handoffs on 2026-10-27/28
-goal:
-  Every source change that a land or closeout agent made and then lost by ending its
-  turn with an epic `sase plan propose` is either on master in its repository or
-  verified as no longer needed. Every bead and plan that cited the lost work as landed
-  tells the truth again.
+goal: Every source change that a land or closeout agent made and then lost by ending
+  its turn with an epic `sase plan propose` is either on master in its repository
+  or verified as no longer needed. Every bead and plan that cited the lost work as
+  landed tells the truth again.
 decisions:
   core_stress:
     ask: Rerun the full 200-run tool_run::store stress loop before closing sase-1p6?
     choices:
-      reuse:
-        Rely on the governed check and focused tests; restored code matches the
+      reuse: Rely on the governed check and focused tests; restored code matches the
         stress-tested copy
-      rerun:
-        Rerun the loaded 200-run stress loop; stronger evidence, but it saturates athena
+      rerun: Rerun the loaded 200-run stress loop; stronger evidence, but it saturates
+        athena
     default: reuse
     why: The restored connection.rs is byte-identical to the stress-tested version
     answer: reuse
   tale_status:
     ask: Mark the four stranded closeout tale plans done once their work lands?
     choices:
-      mark:
-        Set them done in the bob-cli plans sidecar, as bob-cli-dw.land did for epic
-        plans
+      mark: Set them done in the bob-cli plans sidecar, as bob-cli-dw.land did for
+        epic plans
       leave: Leave them wip; the bead notes alone record that the work landed
     default: mark
-    why: Their beads are closed and their work will be on master, so wip would be false
+    why: Their beads are closed and their work will be on master, so wip would be
+      false
     answer: mark
 phases:
-  - id: core-contention
-    title: Restore the lost sase-core ToolRun contention and quarantine fix (sase-1p6)
-    depends_on: []
-    size: small
-    description:
-      "core-contention: apply the replayed sase-1ou.land patch to sase-core
-      (contention.rs test budgets plus the connection.rs open/quarantine fix), verify it
-      with the governed sase-core check, and close sase-1p6 with fresh evidence."
-  - id: flake-baseline
-    title: Restore the lost sase flake-baseline reconciliation
-    depends_on: []
-    size: medium
-    description:
-      "flake-baseline: apply the replayed sase-1ou.land edit to
-      tests/reproducible_flake_baseline.txt, rerun the selection-health flake gate, and
-      reconcile any drift since 2026-10-28 20:14Z."
-  - id: nested-plans-validation
-    title: Re-implement nested committed-plan validation read context in sase
-    depends_on: []
-    size: medium
-    description:
-      "nested-plans-validation: make validate_committed_plans resolve a repo-open nested
-      checkout's own plans before the inherited SASE_SDD_PLANS_DIR, re-implementing the
-      change bob-cli-dp.land--code made and lost."
-  - id: heading-predicate
-    title: Restore bob-cli's manual-heading-number predicate fix
-    depends_on: []
-    size: small
-    description:
-      "heading-predicate: apply the recovered bob-cli-d7.land--code patch to bob-cli
-      src/native/highlights_ref/create.rs (has_manual_number plus pandoc-backed
-      regressions) and verify it."
-  - id: rename-verifier
-    title: Port bob-cli's lost theme-rename trailing-whitespace verifier fix
-    depends_on: []
-    size: medium
-    description:
-      "rename-verifier: reproduce, then port onto current master, the lost
-      bob-cli-dd.land--code fix that lets verify_renamed accept byte-preserved trailing
-      whitespace after a Pomodoro name while still rejecting collateral edits."
+- id: core-contention
+  title: Restore the lost sase-core ToolRun contention and quarantine fix (sase-1p6)
+  depends_on: []
+  size: small
+  description: 'core-contention: apply the replayed sase-1ou.land patch to sase-core
+    (contention.rs test budgets plus the connection.rs open/quarantine fix), verify
+    it with the governed sase-core check, and close sase-1p6 with fresh evidence.'
+- id: flake-baseline
+  title: Restore the lost sase flake-baseline reconciliation
+  depends_on: []
+  size: medium
+  description: 'flake-baseline: apply the replayed sase-1ou.land edit to tests/reproducible_flake_baseline.txt,
+    rerun the selection-health flake gate, and reconcile any drift since 2026-10-28
+    20:14Z.'
+- id: nested-plans-validation
+  title: Re-implement nested committed-plan validation read context in sase
+  depends_on: []
+  size: medium
+  description: 'nested-plans-validation: make validate_committed_plans resolve a repo-open
+    nested checkout''s own plans before the inherited SASE_SDD_PLANS_DIR, re-implementing
+    the change bob-cli-dp.land--code made and lost.'
+- id: heading-predicate
+  title: Restore bob-cli's manual-heading-number predicate fix
+  depends_on: []
+  size: small
+  description: 'heading-predicate: apply the recovered bob-cli-d7.land--code patch
+    to bob-cli src/native/highlights_ref/create.rs (has_manual_number plus pandoc-backed
+    regressions) and verify it.'
+- id: rename-verifier
+  title: Port bob-cli's lost theme-rename trailing-whitespace verifier fix
+  depends_on: []
+  size: medium
+  description: 'rename-verifier: reproduce, then port onto current master, the lost
+    bob-cli-dd.land--code fix that lets verify_renamed accept byte-preserved trailing
+    whitespace after a Pomodoro name while still rejecting collateral edits.'
 proposed_by: bbugyi200.athena.research.5f.final.f0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-28 20:02:57
 status: wip
+bead_id: sase-1ph
 ---
 
-- **PROMPT:**
-  [prompts/202610/recover_handoff_lost_edits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/recover_handoff_lost_edits.md)
+- **PROMPT:** [prompts/202610/recover_handoff_lost_edits.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/recover_handoff_lost_edits.md)
+- **BEAD:** [sase-1ph](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ph/README.md)
 
 # Recover the edits lost across epic-plan handoffs
 
