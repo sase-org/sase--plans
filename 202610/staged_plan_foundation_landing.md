@@ -1,16 +1,14 @@
 ---
 tier: tale
 title: Finish landing the staged plan-handoff foundation
-goal:
-  A held staged handoff tells the user which handoff was held and why, staged stranded
-  facts are proven against the pinned Rust reducer, and epic sase-1pj.1.1 and its parent
-  phase sase-1pj.1 are closed with verified evidence.
+goal: A held staged handoff tells the user which handoff was held and why, staged
+  stranded facts are proven against the pinned Rust reducer, and epic sase-1pj.1.1
+  and its parent phase sase-1pj.1 are closed with verified evidence.
 size: small
 proposed_by: bbugyi200.athena.sase-1pj.1.1.land
 proposed_with: claude/opus
 bead: sase-1pj.1.1
-create_time: 2026-10-29 05:02:26
-status: wip
+status: done
 ---
 
 - **PARENT:**
