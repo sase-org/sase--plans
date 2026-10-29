@@ -1,63 +1,58 @@
 ---
 tier: epic
 title: Stage monitor starts and launch after finalization
-goal:
-  Complete sase-1pj.5 so in-agent monitor starts stage durable work and launch only
-  after host finalization, preserving prepared completion and existing ToolRun joins.
+goal: Complete sase-1pj.5 so in-agent monitor starts stage durable work and launch
+  only after host finalization, preserving prepared completion and existing ToolRun
+  joins.
 parent_bead: sase-1pj.5
 phases:
-  - id: contracts
-    title: Define staged monitor and ToolRun reservation contracts
-    size: medium
-    depends_on: []
-    description:
-      "contracts: implement Rust-owned staged monitor payload validation, staged-owner
-      liveness and self-wait decisions, and atomic ToolRun join
-      reservation/activation/release. Add bindings, contract tests, thin Python
-      adapters, and the required core revision pin. Keep public monitor starts on their
-      existing path until activation."
-  - id: start-transaction
-    title: Split monitor preparation from process launch
-    size: medium
-    depends_on:
-      - contracts
-    description:
-      "start-transaction: persist a reconstructible staged member, reserve ordinary
-      ToolRuns, launch from persisted inputs after finalization, and clean up unstarted
-      resources on failure or discard. Preserve the existing public start path until
-      activation. Integrate staged member reads, lane exclusion, and ToolRun owner
-      observations."
-  - id: prepared-joins
-    title: Preserve prepared completion and joins across staging
-    size: medium
-    depends_on:
-      - start-transaction
-    description:
-      "prepared-joins: reserve sealed intents without binding, bind only at spawn, use
-      the landed prepared-starter coverage contract, activate reserved joins even when
-      the original run settles before adoption, and test green/red completion and
-      resource rollback. Do not enable the CLI staging branch yet."
-  - id: activation
-    title: Connect staged starts to runner adoption and document the protocol
-    size: medium
-    depends_on:
-      - prepared-joins
-    description:
-      "activation: switch in-agent flag-on starts to staging, register the
-      post-finalizer monitor adopter, preserve real final responses and transferred
-      claims, connect held/discard cleanup, refuse self-waits, update the two generated
-      skill sources, and prove the finalizer/check ordering and both flag states end to
-      end."
+- id: contracts
+  title: Define staged monitor and ToolRun reservation contracts
+  size: medium
+  depends_on: []
+  description: 'contracts: implement Rust-owned staged monitor payload validation,
+    staged-owner liveness and self-wait decisions, and atomic ToolRun join reservation/activation/release.
+    Add bindings, contract tests, thin Python adapters, and the required core revision
+    pin. Keep public monitor starts on their existing path until activation.'
+- id: start-transaction
+  title: Split monitor preparation from process launch
+  size: medium
+  depends_on:
+  - contracts
+  description: 'start-transaction: persist a reconstructible staged member, reserve
+    ordinary ToolRuns, launch from persisted inputs after finalization, and clean
+    up unstarted resources on failure or discard. Preserve the existing public start
+    path until activation. Integrate staged member reads, lane exclusion, and ToolRun
+    owner observations.'
+- id: prepared-joins
+  title: Preserve prepared completion and joins across staging
+  size: medium
+  depends_on:
+  - start-transaction
+  description: 'prepared-joins: reserve sealed intents without binding, bind only
+    at spawn, use the landed prepared-starter coverage contract, activate reserved
+    joins even when the original run settles before adoption, and test green/red completion
+    and resource rollback. Do not enable the CLI staging branch yet.'
+- id: activation
+  title: Connect staged starts to runner adoption and document the protocol
+  size: medium
+  depends_on:
+  - prepared-joins
+  description: 'activation: switch in-agent flag-on starts to staging, register the
+    post-finalizer monitor adopter, preserve real final responses and transferred
+    claims, connect held/discard cleanup, refuse self-waits, update the two generated
+    skill sources, and prove the finalizer/check ordering and both flag states end
+    to end.'
 proposed_by: bbugyi200.athena.sase-1pj.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-29 14:48:29
 status: wip
+bead_id: sase-1pj.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/monitor_staging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/monitor_staging.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/monitor_staging.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/monitor_staging.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.5.1.md)
 
 # Stage monitor starts and launch after finalization
 
