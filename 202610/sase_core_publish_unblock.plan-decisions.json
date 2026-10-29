@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "maturin_pin",
+      "kind": "choice",
+      "ask": "Should the release workflow pin maturin to 1.16.0, the version that built the 0.43.1 artifacts?",
+      "why": "The tag-order-independent matcher removes this failure class; a pin is one more manual bump",
+      "choices": [
+        {
+          "key": "float",
+          "label": "Builds keep the newest maturin 1.x from pyproject; the unused MATURIN_VERSION line is deleted"
+        },
+        {
+          "key": "pin",
+          "label": "Release builds stay on maturin 1.16.0 until someone bumps MATURIN_VERSION by hand"
+        }
+      ],
+      "default": "float",
+      "effective_default": "float",
+      "requested_verified": false
+    }
+  ]
+}
