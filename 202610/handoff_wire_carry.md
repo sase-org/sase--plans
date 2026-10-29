@@ -1,65 +1,59 @@
 ---
 tier: epic
 title: Handoff context and carried repository completion
-goal:
-  Complete sase-1pj.2 with validated carry dispositions, prepared-monitor protection,
+goal: Complete sase-1pj.2 with validated carry dispositions, prepared-monitor protection,
   and auditable successor custody.
 parent_bead: sase-1pj.2
 phases:
-  - id: core-policy
-    title: Rust handoff and repository disposition contracts
-    size: medium
-    depends_on: []
-    description:
-      "core-policy: add the optional finalizer handoff wire, Rust disposition and
-      prepared-intent predicates, bindings, Python wire/facade mirrors, and paired
-      revision pin. Keep live context publication unchanged."
-  - id: carry-execution
-    title: Execute explicit carry decisions and reach a fixed point
-    size: medium
-    depends_on:
-      - core-policy
-    description:
-      "carry-execution: validate carry through Rust, satisfy carried repository
-      obligations without commits or deferrals, and make controller convergence and
-      failed-close assessment recognize current carry evidence."
-  - id: live-declarations
-    title: Publish staged context and synthesize default carry
-    size: medium
-    depends_on:
-      - carry-execution
-    description:
-      "live-declarations: project staged handoffs into final context and human output,
-      retain optional commit templates, and install authenticated host-synthesized carry
-      when an unprepared same-workspace handoff has no submission."
-  - id: prepared-bridge
-    title: Protect prepared monitor work through starter finalization
-    size: medium
-    depends_on:
-      - live-declarations
-    description:
-      "prepared-bridge: connect staged monitor intent reservation/binding facts to the
-      Rust predicate, satisfy only its covered starter obligations, and preserve sealed
-      observations and commit-on-green host completion."
-  - id: custody-adoption
-    title: Adopt carried work with durable successor custody
-    size: medium
-    depends_on:
-      - prepared-bridge
-    description:
-      "custody-adoption: accept proven carry/prepared coverage in staged adoption,
-      persist carried repository and successor evidence, and prove inherited primary and
-      linked work becomes the successor's commit obligation."
+- id: core-policy
+  title: Rust handoff and repository disposition contracts
+  size: medium
+  depends_on: []
+  description: 'core-policy: add the optional finalizer handoff wire, Rust disposition
+    and prepared-intent predicates, bindings, Python wire/facade mirrors, and paired
+    revision pin. Keep live context publication unchanged.'
+- id: carry-execution
+  title: Execute explicit carry decisions and reach a fixed point
+  size: medium
+  depends_on:
+  - core-policy
+  description: 'carry-execution: validate carry through Rust, satisfy carried repository
+    obligations without commits or deferrals, and make controller convergence and
+    failed-close assessment recognize current carry evidence.'
+- id: live-declarations
+  title: Publish staged context and synthesize default carry
+  size: medium
+  depends_on:
+  - carry-execution
+  description: 'live-declarations: project staged handoffs into final context and
+    human output, retain optional commit templates, and install authenticated host-synthesized
+    carry when an unprepared same-workspace handoff has no submission.'
+- id: prepared-bridge
+  title: Protect prepared monitor work through starter finalization
+  size: medium
+  depends_on:
+  - live-declarations
+  description: 'prepared-bridge: connect staged monitor intent reservation/binding
+    facts to the Rust predicate, satisfy only its covered starter obligations, and
+    preserve sealed observations and commit-on-green host completion.'
+- id: custody-adoption
+  title: Adopt carried work with durable successor custody
+  size: medium
+  depends_on:
+  - prepared-bridge
+  description: 'custody-adoption: accept proven carry/prepared coverage in staged
+    adoption, persist carried repository and successor evidence, and prove inherited
+    primary and linked work becomes the successor''s commit obligation.'
 proposed_by: bbugyi200.athena.sase-1pj.2
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-29 05:51:45
 status: wip
+bead_id: sase-1pj.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/handoff_wire_carry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/handoff_wire_carry.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/handoff_wire_carry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/handoff_wire_carry.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.2.1.md)
 
 # Handoff context and carried repository completion
 
