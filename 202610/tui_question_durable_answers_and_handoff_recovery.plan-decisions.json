@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "auto_resume",
+      "kind": "choice",
+      "ask": "Should the gate-turn reclaim routine resume an interrupted follow-up launch on its own, once, before asking a human?",
+      "why": "Interrupted launches with no successor are what --resume is for; sessions must not stall silently",
+      "choices": [
+        {
+          "key": "once",
+          "label": "Routine submits one supervised --resume proc per gate; notifies if impossible or already tried"
+        },
+        {
+          "key": "notify",
+          "label": "Routine never launches; it sends one notification with the resume command for a human"
+        }
+      ],
+      "default": "once",
+      "effective_default": "once",
+      "requested_verified": false
+    }
+  ]
+}
