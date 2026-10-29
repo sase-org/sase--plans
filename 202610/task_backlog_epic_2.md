@@ -1,105 +1,90 @@
 ---
 tier: epic
-title:
-  "Task-bead backlog epic 2: agent isolation, poisoned slots, close guards, and
-  toolchain drift"
-goal: "The five next-costliest open task beads (sase-163, sase-1p9, sase-o7, sase-1cs,
-  sase-vr) are fixed on master and closed. The land agent then proposes the next
-  five-bead backlog epic under the same rules.
+title: 'Task-bead backlog epic 2: agent isolation, poisoned slots, close guards, and
+  toolchain drift'
+goal: 'The five next-costliest open task beads (sase-163, sase-1p9, sase-o7, sase-1cs,
+  sase-vr) are fixed on master and closed. The land agent then proposes the next five-bead
+  backlog epic under the same rules.
 
-  "
+  '
 decisions:
   claude_tools:
-    ask:
-      Should SASE Claude agents lose the vendor async and peer-discovery tools as well
-      as cross-session inbound messages?
+    ask: Should SASE Claude agents lose the vendor async and peer-discovery tools
+      as well as cross-session inbound messages?
     choices:
-      inbound_and_async:
-        Also deny ListAgents, Workflow, Monitor, Cron* and RemoteTrigger; SendMessage
-        stays
-      inbound_only:
-        Only refuse peer messages; async tools stay and keep losing results at turn end
+      inbound_and_async: Also deny ListAgents, Workflow, Monitor, Cron* and RemoteTrigger;
+        SendMessage stays
+      inbound_only: Only refuse peer messages; async tools stay and keep losing results
+        at turn end
     default: inbound_and_async
-    why:
-      Their results die at SASE's declaration teardown; /sase_monitor and /sase_run do
-      those jobs
+    why: Their results die at SASE's declaration teardown; /sase_monitor and /sase_run
+      do those jobs
     answer: inbound_and_async
   slot_refusal:
-    ask:
-      Should a workspace whose nested-preservation refusal failed a launch stop
+    ask: Should a workspace whose nested-preservation refusal failed a launch stop
       receiving new launches until it is clean?
     choices:
-      quarantine:
-        New launches skip the slot until its refusal clears; one notification names the
-        repo
-      notify_only:
-        The slot stays assignable with one notification; later launches there still fail
+      quarantine: New launches skip the slot until its refusal clears; one notification
+        names the repo
+      notify_only: The slot stays assignable with one notification; later launches
+        there still fail
     default: quarantine
-    why:
-      Fail-closed preservation is right, but failing every queued agent on it is pure
-      waste
+    why: Fail-closed preservation is right, but failing every queued agent on it is
+      pure waste
     answer: quarantine
   toolchain_source:
-    ask:
-      Should the dev extra pin Textual, ruff and mypy exactly, so CI and every workspace
-      venv resolve the same versions?
+    ask: Should the dev extra pin Textual, ruff and mypy exactly, so CI and every
+      workspace venv resolve the same versions?
     choices:
-      pin_extras:
-        Pin the three tools exactly in the dev extra and add a test that keeps those
-        pins equal to uv.lock
-      lock_install:
-        Leave the extra floating and install the dev toolchain from uv.lock in just
-        install and CI
+      pin_extras: Pin the three tools exactly in the dev extra and add a test that
+        keeps those pins equal to uv.lock
+      lock_install: Leave the extra floating and install the dev toolchain from uv.lock
+        in just install and CI
     default: pin_extras
-    why:
-      One pyproject edit fixes both install paths, and a guard test keeps the lock in
-      step
+    why: One pyproject edit fixes both install paths, and a guard test keeps the lock
+      in step
     answer: pin_extras
 phases:
-  - id: claude-isolation
-    title: Refuse cross-session messages into SASE Claude agents (sase-163)
-    depends_on: []
-    size: small
-    description:
-      "claude-isolation: make ClaudeCodeProvider launches refuse cross-session inbound
-      messages and apply the claude_tools decision to the vendor async tools, with a
-      provider-args regression test."
-  - id: slot-refusal
-    title: Stop a preservation refusal from poisoning its workspace slot (sase-1p9)
-    depends_on: []
-    size: medium
-    description:
-      "slot-refusal: remember launch-time nested-preservation refusals per workspace,
-      apply the slot_refusal decision, and raise one actionable notification instead of
-      failing every later launch there."
-  - id: close-guard
-    title: Make the epic close guard see upstream --epic-symbol rows (sase-o7)
-    depends_on: []
-    size: medium
-    description:
-      "close-guard: have sase bead close and sase bead epic-symbols read the fetched
-      default branch's Justfile as well as the local one, so sibling-phase whitelist
-      rows cannot escape the close."
-  - id: dev-toolchain
-    title:
-      Make the dev toolchain deterministic across CI and workspaces (sase-1cs, sase-vr)
-    depends_on: []
-    size: medium
-    description:
-      "dev-toolchain: apply the toolchain_source decision so Textual, ruff and mypy
-      resolve to one declared version everywhere, refresh uv.lock, and fix any lint
-      findings the chosen versions report."
+- id: claude-isolation
+  title: Refuse cross-session messages into SASE Claude agents (sase-163)
+  depends_on: []
+  size: small
+  description: 'claude-isolation: make ClaudeCodeProvider launches refuse cross-session
+    inbound messages and apply the claude_tools decision to the vendor async tools,
+    with a provider-args regression test.'
+- id: slot-refusal
+  title: Stop a preservation refusal from poisoning its workspace slot (sase-1p9)
+  depends_on: []
+  size: medium
+  description: 'slot-refusal: remember launch-time nested-preservation refusals per
+    workspace, apply the slot_refusal decision, and raise one actionable notification
+    instead of failing every later launch there.'
+- id: close-guard
+  title: Make the epic close guard see upstream --epic-symbol rows (sase-o7)
+  depends_on: []
+  size: medium
+  description: 'close-guard: have sase bead close and sase bead epic-symbols read
+    the fetched default branch''s Justfile as well as the local one, so sibling-phase
+    whitelist rows cannot escape the close.'
+- id: dev-toolchain
+  title: Make the dev toolchain deterministic across CI and workspaces (sase-1cs,
+    sase-vr)
+  depends_on: []
+  size: medium
+  description: 'dev-toolchain: apply the toolchain_source decision so Textual, ruff
+    and mypy resolve to one declared version everywhere, refresh uv.lock, and fix
+    any lint findings the chosen versions report.'
 proposed_by: bbugyi200.athena.sase-1pm.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-10-29 10:44:06
 status: wip
+bead_id: sase-1pn
 ---
 
-- **PROMPT:**
-  [prompts/202610/task_backlog_epic_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_2.md)
-- **PARENT:**
-  [202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_1.md)
+- **PROMPT:** [prompts/202610/task_backlog_epic_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/task_backlog_epic_2.md)
+- **PARENT:** [202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_1.md)
+- **BEAD:** [sase-1pn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pn/README.md)
 
 # Task-Bead Backlog Epic 2: Agent Isolation, Poisoned Slots, Close Guards, and Toolchain Drift
 
