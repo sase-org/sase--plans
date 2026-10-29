@@ -1,59 +1,54 @@
 ---
 tier: epic
 title: Check rebased stitches before publication
-goal:
-  Block publication of confirmed broken first-party imports introduced by combining
+goal: Block publication of confirmed broken first-party imports introduced by combining
   concurrent commits, while keeping unchanged-base landings cheap and checker failures
   bounded and fail-open.
 parent_bead: sase-1pm.5
 phases:
-  - id: gate-policy
-    title: Define the shared rebase gate contract in Rust
-    depends_on: []
-    size: medium
-    description:
-      "gate-policy: implement shared gate policy in sase-core, expose and test its
-      Python bindings, and add the thin sase adapter. Own eligibility, changed-path
-      union, pending-context merging, and verdict validation. Keep the gate disabled."
-  - id: gate-runner
-    title: Execute configurable rebase hooks with a hard deadline
-    depends_on:
-      - gate-policy
-    size: medium
-    description:
-      "gate-runner: implement project-scoped configuration, bounded process execution
-      and evidence, fail-open errors, default configuration, schema, and hook
-      documentation. Do not wire publication or enable the repo hook yet."
-  - id: import-checker
-    title: Resolve changed-file first-party imports on the rebased tree
-    depends_on:
-      - gate-policy
-    size: medium
-    description:
-      "import-checker: implement repo tooling using Python AST and importlib, with exact
-      TYPE_CHECKING alias exceptions and subprocess fixtures. Follow the gate wire
-      contract; do not modify commit dispatch or enable config."
-  - id: publication
-    title: Gate initial rebases, push retries, and checkpoint resumes
-    depends_on:
-      - gate-runner
-      - import-checker
-    size: medium
-    description:
-      "publication: wire the shared git dispatch and resume paths, enable this repo's
-      import gate, add temporary-repository integration coverage, and measure complete
-      gate latency. Preserve markers and return the recoverable conflict result for
-      confirmed findings."
+- id: gate-policy
+  title: Define the shared rebase gate contract in Rust
+  depends_on: []
+  size: medium
+  description: 'gate-policy: implement shared gate policy in sase-core, expose and
+    test its Python bindings, and add the thin sase adapter. Own eligibility, changed-path
+    union, pending-context merging, and verdict validation. Keep the gate disabled.'
+- id: gate-runner
+  title: Execute configurable rebase hooks with a hard deadline
+  depends_on:
+  - gate-policy
+  size: medium
+  description: 'gate-runner: implement project-scoped configuration, bounded process
+    execution and evidence, fail-open errors, default configuration, schema, and hook
+    documentation. Do not wire publication or enable the repo hook yet.'
+- id: import-checker
+  title: Resolve changed-file first-party imports on the rebased tree
+  depends_on:
+  - gate-policy
+  size: medium
+  description: 'import-checker: implement repo tooling using Python AST and importlib,
+    with exact TYPE_CHECKING alias exceptions and subprocess fixtures. Follow the
+    gate wire contract; do not modify commit dispatch or enable config.'
+- id: publication
+  title: Gate initial rebases, push retries, and checkpoint resumes
+  depends_on:
+  - gate-runner
+  - import-checker
+  size: medium
+  description: 'publication: wire the shared git dispatch and resume paths, enable
+    this repo''s import gate, add temporary-repository integration coverage, and measure
+    complete gate latency. Preserve markers and return the recoverable conflict result
+    for confirmed findings.'
 proposed_by: bbugyi200.athena.sase-1pm.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-29 02:12:55
 status: wip
+bead_id: sase-1pm.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/rebased_stitch_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/rebased_stitch_gate.md)
-- **PARENT:**
-  [202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_1.md)
+- **PROMPT:** [prompts/202610/rebased_stitch_gate.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/rebased_stitch_gate.md)
+- **PARENT:** [202610/task_backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_1.md)
+- **BEAD:** [sase-1pm.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pm/sase-1pm.5.1.md)
 
 # Check rebased stitches before publication
 
