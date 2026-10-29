@@ -1,152 +1,140 @@
 ---
 tier: epic
 title: Staged handoffs end through host completion
-goal: "Turn-ending commands (plan propose, questions, pipe, gate create, sudo request,
+goal: 'Turn-ending commands (plan propose, questions, pipe, gate create, sudo request,
   launch request, run, monitor start) stage their handoff instead of killing the agent
   runner. Every root turn ends normally through /sase_final, the host runs the selected
-  finalizers to their fixed point, and only then does a fixed host-owned step adopt the
-  staged handoff. Agents can commit file changes and propose a plan (or start a monitor)
-  in the same turn, and no handoff ever silently drops uncommitted work.
+  finalizers to their fixed point, and only then does a fixed host-owned step adopt
+  the staged handoff. Agents can commit file changes and propose a plan (or start
+  a monitor) in the same turn, and no handoff ever silently drops uncommitted work.
 
-  "
+  '
 decisions:
   memory_decision_records:
-    ask:
-      Record the change as a new decision record that partly supersedes the three
+    ask: Record the change as a new decision record that partly supersedes the three
       kill-era records?
     memory:
-      - decisions
-      - decisions:gates-never-block
-      - decisions:single-turn-agents
-      - decisions:host-owned-completion
+    - decisions
+    - decisions:gates-never-block
+    - decisions:single-turn-agents
+    - decisions:host-owned-completion
     default: true
-    requested:
-      I agree with all of the requirements recommended in that research file (but keep
-      in mind that you are responsible for planning and splitting up this work
-      appropriately).
+    requested: I agree with all of the requirements recommended in that research file
+      (but keep in mind that you are responsible for planning and splitting up this
+      work appropriately).
     answer: true
   memory_final_exemption:
-    ask:
-      Rewrite the core final-declaration text and macros.md so handoff turns no longer
-      skip /sase_final?
+    ask: Rewrite the core final-declaration text and macros.md so handoff turns no
+      longer skip /sase_final?
     memory:
-      - macros.md
+    - macros.md
     default: true
     corrects: Intentional plan/monitor/pipe/questions handoffs skip declaration.
     answer: true
   memory_glossary_kill:
-    ask:
-      Update the gate turn and monitor glossary strands that say starting one kills the
-      agent?
+    ask: Update the gate turn and monitor glossary strands that say starting one kills
+      the agent?
     memory:
-      - glossary:gate_turn
-      - glossary:sase_monitor
+    - glossary:gate_turn
+    - glossary:sase_monitor
     default: true
-    corrects:
-      Creating a gate turn from inside an agent hands off and kills that agent's turn
+    corrects: Creating a gate turn from inside an agent hands off and kills that agent's
+      turn
     answer: true
 phases:
-  - id: plan-staging
-    title: Staged-handoff foundation and plan proposals
-    depends_on: []
-    size: large
-    description:
-      "plan-staging: create the staged_handoffs beta flag, the staged-handoff record and
-      its guards, the runner's post-finalizer adoption epilogue with fail-closed
-      semantics, and make `sase plan propose` stage instead of killing the runner."
-  - id: handoff-wire
-    title: Handoff descriptor and carry disposition in the finalizer wire
-    depends_on:
-      - plan-staging
-    size: large
-    description:
-      "handoff-wire: add a handoff descriptor to the sase-core finalizer context, a
-      carry repository decision legal only for same-workspace handoffs, the
-      prepared-intent rule, host-synthesized carry, commit-finalizer support, and the
-      revision pin move."
-  - id: questions-pipe
-    title: Stage questions and pipe handoffs
-    depends_on:
-      - plan-staging
-      - handoff-wire
-    size: medium
-    description:
-      "questions-pipe: make `sase questions` and `sase pipe` stage with carry allowed,
-      adopt them through the existing runner handlers with the real final response, and
-      update their skills."
-  - id: gate-staging
-    title: Stage gate, sudo, launch, run, and workflow HITL gates
-    depends_on:
-      - plan-staging
-      - handoff-wire
-    size: large
-    description:
-      "gate-staging: split gate-turn creation into CLI-time validate/stage and
-      post-finalizer publish for every gate entry point, keeping %auto gates inline and
-      moving the one-handoff guard ahead of publication."
-  - id: monitor-staging
-    title: Stage monitor starts and spawn after finalization
-    depends_on:
-      - plan-staging
-      - handoff-wire
-    size: large
-    description:
-      "monitor-staging: split monitor start into CLI-time preflight/stage and
-      post-finalizer spawn, integrate prepared (-f) completion and -J joins, and close
-      the just-fix race between monitor checks and the commit finalizer."
-  - id: adoption-recovery
-    title: Idempotent adoption, crash reconciliation, and re-adopt
-    depends_on:
-      - plan-staging
-      - questions-pipe
-      - gate-staging
-      - monitor-staging
-    size: large
-    description:
-      "adoption-recovery: make adoption idempotent for every kind, reconcile staged
-      handoffs whose runner died after finalization, and add a re-adopt command for
-      handoffs held by failed finalization."
-  - id: carry-hardening
-    title: Hold workspaces whose carried work has no successor
-    depends_on:
-      - handoff-wire
-      - questions-pipe
-      - gate-staging
-      - monitor-staging
-    size: large
-    description:
-      "carry-hardening: when carried work reaches a branch with no successor (stopped or
-      lost monitor, cancelled question, terminal gate branch, failed adoption), hold the
-      workspace and surface it as stranded instead of releasing it."
-  - id: retire-kill-path
-    title: Remove the flag and the kill-path machinery
-    depends_on:
-      - adoption-recovery
-      - carry-hardening
-    size: large
-    description:
-      "retire-kill-path: delete the staged_handoffs Off branch and close its flag bead,
-      remove the runner kill and its coping code, update provider adapter text, and
-      teach the instruction readout classifier the new protocol."
-  - id: docs-memory
-    title: Final skills, docs, and memory
-    depends_on:
-      - retire-kill-path
-    size: medium
-    description:
-      "docs-memory: rewrite the generated skills and user docs for the single
-      end-of-turn protocol, review the epic land prompt, and land the decision record,
-      glossary, and final-declaration memory changes."
+- id: plan-staging
+  title: Staged-handoff foundation and plan proposals
+  depends_on: []
+  size: large
+  description: 'plan-staging: create the staged_handoffs beta flag, the staged-handoff
+    record and its guards, the runner''s post-finalizer adoption epilogue with fail-closed
+    semantics, and make `sase plan propose` stage instead of killing the runner.'
+- id: handoff-wire
+  title: Handoff descriptor and carry disposition in the finalizer wire
+  depends_on:
+  - plan-staging
+  size: large
+  description: 'handoff-wire: add a handoff descriptor to the sase-core finalizer
+    context, a carry repository decision legal only for same-workspace handoffs, the
+    prepared-intent rule, host-synthesized carry, commit-finalizer support, and the
+    revision pin move.'
+- id: questions-pipe
+  title: Stage questions and pipe handoffs
+  depends_on:
+  - plan-staging
+  - handoff-wire
+  size: medium
+  description: 'questions-pipe: make `sase questions` and `sase pipe` stage with carry
+    allowed, adopt them through the existing runner handlers with the real final response,
+    and update their skills.'
+- id: gate-staging
+  title: Stage gate, sudo, launch, run, and workflow HITL gates
+  depends_on:
+  - plan-staging
+  - handoff-wire
+  size: large
+  description: 'gate-staging: split gate-turn creation into CLI-time validate/stage
+    and post-finalizer publish for every gate entry point, keeping %auto gates inline
+    and moving the one-handoff guard ahead of publication.'
+- id: monitor-staging
+  title: Stage monitor starts and spawn after finalization
+  depends_on:
+  - plan-staging
+  - handoff-wire
+  size: large
+  description: 'monitor-staging: split monitor start into CLI-time preflight/stage
+    and post-finalizer spawn, integrate prepared (-f) completion and -J joins, and
+    close the just-fix race between monitor checks and the commit finalizer.'
+- id: adoption-recovery
+  title: Idempotent adoption, crash reconciliation, and re-adopt
+  depends_on:
+  - plan-staging
+  - questions-pipe
+  - gate-staging
+  - monitor-staging
+  size: large
+  description: 'adoption-recovery: make adoption idempotent for every kind, reconcile
+    staged handoffs whose runner died after finalization, and add a re-adopt command
+    for handoffs held by failed finalization.'
+- id: carry-hardening
+  title: Hold workspaces whose carried work has no successor
+  depends_on:
+  - handoff-wire
+  - questions-pipe
+  - gate-staging
+  - monitor-staging
+  size: large
+  description: 'carry-hardening: when carried work reaches a branch with no successor
+    (stopped or lost monitor, cancelled question, terminal gate branch, failed adoption),
+    hold the workspace and surface it as stranded instead of releasing it.'
+- id: retire-kill-path
+  title: Remove the flag and the kill-path machinery
+  depends_on:
+  - adoption-recovery
+  - carry-hardening
+  size: large
+  description: 'retire-kill-path: delete the staged_handoffs Off branch and close
+    its flag bead, remove the runner kill and its coping code, update provider adapter
+    text, and teach the instruction readout classifier the new protocol.'
+- id: docs-memory
+  title: Final skills, docs, and memory
+  depends_on:
+  - retire-kill-path
+  size: medium
+  description: 'docs-memory: rewrite the generated skills and user docs for the single
+    end-of-turn protocol, review the epic land prompt, and land the decision record,
+    glossary, and final-declaration memory changes.'
 proposed_by: bbugyi200.athena.research.5f.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-10-28 20:28:55
 status: wip
+bead_id: sase-1pj
 ---
 
-- **PROMPT:**
-  [prompts/202610/staged_handoffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/staged_handoffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/README.md)
 
 # Plan: Staged handoffs end through host completion
 
