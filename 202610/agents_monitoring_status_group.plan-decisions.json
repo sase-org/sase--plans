@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "machine_subgroups",
+      "kind": "choice",
+      "ask": "Should BY_MACHINE status subgroups also split out a Monitoring subgroup?",
+      "why": "Docs say BY_MACHINE reuses the BY_STATUS groups, and one helper keeps patch signatures simple",
+      "choices": [
+        {
+          "key": "include",
+          "label": "BY_MACHINE status subgroups gain Monitoring too, via the shared status_bucket_for helper"
+        },
+        {
+          "key": "status_only",
+          "label": "Only BY_STATUS splits out Monitoring; BY_MACHINE keeps it under Running via a second helper"
+        }
+      ],
+      "default": "include",
+      "effective_default": "include",
+      "requested_verified": false
+    },
+    {
+      "id": "clans",
+      "kind": "choice",
+      "ask": "Should a clan row that mirrors its lone monitoring member also move into Monitoring?",
+      "why": "The group then always matches the status word the clan row already shows",
+      "choices": [
+        {
+          "key": "include",
+          "label": "A clan row joins Monitoring whenever it shows its lone member's live monitor label"
+        },
+        {
+          "key": "sessions_only",
+          "label": "Clan rows stay in Running, so monitoring sessions inside clans never appear there"
+        }
+      ],
+      "default": "include",
+      "effective_default": "include",
+      "requested_verified": false
+    },
+    {
+      "id": "position",
+      "kind": "choice",
+      "ask": "Should Monitoring sit directly after Running in the BY_STATUS order?",
+      "why": "A running monitor is live work, so it sits beside Running, above not-yet-started work",
+      "choices": [
+        {
+          "key": "after_running",
+          "label": "Order becomes Stopped, Failed, Running, Monitoring, Queued, Waiting, Done, Starting"
+        },
+        {
+          "key": "after_waiting",
+          "label": "Order becomes Stopped, Failed, Running, Queued, Waiting, Monitoring, Done, Starting"
+        }
+      ],
+      "default": "after_running",
+      "effective_default": "after_running",
+      "requested_verified": false
+    }
+  ]
+}
