@@ -1,115 +1,112 @@
 ---
 tier: epic
 title: Fix every release blocker and ship sase v0.19.0 through the release steward
-goal: "Master Gate, Full CI, and a release.yml rehearsal are green on master; the
+goal: 'Master Gate, Full CI, and a release.yml rehearsal are green on master; the
   release steward merges release-please PR #322; sase 0.19.0 is on PyPI; and the final
   lander records the release evidence as an artifact.
 
-  "
+  '
 decisions:
   wake_cutover:
     ask: Wake sase-1oe.4's stale poll early once this epic's master rehearsal is green?
     choices:
-      wake:
-        Stop and resume its monitor, so the E2 cutover gate can come up to ~30h sooner
-      leave: Only note it; sase-1oe.4 wakes at its poll timeout, ~2026-11-01 02:40 UTC
+      wake: Stop and resume its monitor, so the E2 cutover gate can come up to ~30h
+        sooner
+      leave: Only note it; sase-1oe.4 wakes at its poll timeout, ~2026-11-01 02:40
+        UTC
     default: wake
-    why:
-      Its poll runs a pre-fix matcher that cannot see the fixed core, so waiting burns
-      time
+    why: Its poll runs a pre-fix matcher that cannot see the fixed core, so waiting
+      burns time
     answer: wake
 phases:
-  - id: core-match
-    title: sase recognizes complete sase-core releases with compressed macOS wheel tags
-    size: small
-    depends_on: []
-    description: "core-match: port sase-core's compressed-tag wheel matcher into
-      tools/_release_core.py and tools/release_candidate, with tests on the live 0.43.0
-      and 0.43.1 macOS filenames.
+- id: core-match
+  title: sase recognizes complete sase-core releases with compressed macOS wheel tags
+  size: small
+  depends_on: []
+  description: 'core-match: port sase-core''s compressed-tag wheel matcher into tools/_release_core.py
+    and tools/release_candidate, with tests on the live 0.43.0 and 0.43.1 macOS filenames.
 
-      "
-  - id: core-publish
-    title:
-      A complete published sase-core-rs contains master's core revision, and master pins
-      it
-    size: medium
-    depends_on:
-      - core-match
-    description: "core-publish: get a complete sase-core-rs that contains the source pin
-      onto PyPI (one rerun of the failed 0.43.2 upload, or a wait for the daily cut),
-      then ratchet master's exact pin and prove the bindings.
+    '
+- id: core-publish
+  title: A complete published sase-core-rs contains master's core revision, and master
+    pins it
+  size: medium
+  depends_on:
+  - core-match
+  description: 'core-publish: get a complete sase-core-rs that contains the source
+    pin onto PyPI (one rerun of the failed 0.43.2 upload, or a wait for the daily
+    cut), then ratchet master''s exact pin and prove the bindings.
 
-      "
-  - id: cli-reds
-    title: Fix the agent sync help, completion snapshot, and agent load CLI reds
-    size: small
-    depends_on: []
-    description: "cli-reds: make the sync help assertion hold on Python 3.12 through
-      3.14, caption the two agent sync completion slots and refresh the snapshot, and
-      stop the agent load tests from assuming the athena hostname (sase-1ov).
+    '
+- id: cli-reds
+  title: Fix the agent sync help, completion snapshot, and agent load CLI reds
+  size: small
+  depends_on: []
+  description: 'cli-reds: make the sync help assertion hold on Python 3.12 through
+    3.14, caption the two agent sync completion slots and refresh the snapshot, and
+    stop the agent load tests from assuming the athena hostname (sase-1ov).
 
-      "
-  - id: tui-reds
-    title: Fix the pager, footprint, import-budget, and visual-lane reds
-    size: medium
-    depends_on: []
-    description: "tui-reds: fix the pager notify teardown errors, the footprint
-      microbench, the TUI import budget, and the tool-runs visual sentinel, then clear
-      any other visual drift.
+    '
+- id: tui-reds
+  title: Fix the pager, footprint, import-budget, and visual-lane reds
+  size: medium
+  depends_on: []
+  description: 'tui-reds: fix the pager notify teardown errors, the footprint microbench,
+    the TUI import budget, and the tool-runs visual sentinel, then clear any other
+    visual drift.
 
-      "
-  - id: harness-reds
-    title: Fix the suite-gate, nested-preservation, and remaining non-TUI reds
-    size: medium
-    depends_on: []
-    description: "harness-reds: fix the suite-gate scratch repo's import closure and the
-      nested-preservation error wrapping, then every other non-TUI red at the tip.
+    '
+- id: harness-reds
+  title: Fix the suite-gate, nested-preservation, and remaining non-TUI reds
+  size: medium
+  depends_on: []
+  description: 'harness-reds: fix the suite-gate scratch repo''s import closure and
+    the nested-preservation error wrapping, then every other non-TUI red at the tip.
 
-      "
-  - id: full-ci
-    title: Run Full CI on a tip with every fix and repair what is still red
-    size: medium
-    depends_on:
-      - core-match
-      - cli-reds
-      - tui-reds
-      - harness-reds
-    description: "full-ci: run Full CI on a tip containing every sibling fix, then fix
-      each remaining deterministic red, including the toobig split if its routine has
-      not landed it.
+    '
+- id: full-ci
+  title: Run Full CI on a tip with every fix and repair what is still red
+  size: medium
+  depends_on:
+  - core-match
+  - cli-reds
+  - tui-reds
+  - harness-reds
+  description: 'full-ci: run Full CI on a tip containing every sibling fix, then fix
+    each remaining deterministic red, including the toobig split if its routine has
+    not landed it.
 
-      "
-  - id: rehearse
-    title: Prove a green release.yml rehearsal at master
-    size: small
-    depends_on:
-      - core-publish
-      - full-ci
-    description: "rehearse: dispatch a release.yml rehearsal at master, judge it job by
-      job, note the result on sase-1oe.4, and wake its cutover per wake_cutover.
+    '
+- id: rehearse
+  title: Prove a green release.yml rehearsal at master
+  size: small
+  depends_on:
+  - core-publish
+  - full-ci
+  description: 'rehearse: dispatch a release.yml rehearsal at master, judge it job
+    by job, note the result on sase-1oe.4, and wake its cutover per wake_cutover.
 
-      "
-  - id: watch
-    title:
-      Watch sase v0.19.0 through the steward, release.yml, and PyPI with a self-closing
-      monitor
-    size: small
-    depends_on:
-      - rehearse
-    description:
-      "watch: after prerequisite and preflight checks, start a no-follow-up monitor
-      whose watcher observes the steward, release.yml, and PyPI for up to 48h and always
-      closes this bead."
+    '
+- id: watch
+  title: Watch sase v0.19.0 through the steward, release.yml, and PyPI with a self-closing
+    monitor
+  size: small
+  depends_on:
+  - rehearse
+  description: 'watch: after prerequisite and preflight checks, start a no-follow-up
+    monitor whose watcher observes the steward, release.yml, and PyPI for up to 48h
+    and always closes this bead.'
 proposed_by: bbugyi200.athena.16e
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-30 12:37:04
 status: wip
+bead_id: sase-1q2
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_19_0_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_19_0_release.md)
+- **PROMPT:** [prompts/202610/v0_19_0_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_19_0_release.md)
+- **BEAD:** [sase-1q2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q2/README.md)
 
 # Fix every release blocker and ship sase v0.19.0 through the release steward
 
