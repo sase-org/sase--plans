@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "context_scope",
+      "kind": "choice",
+      "ask": "Should `,J` also make Context the sticky Main card for later selections?",
+      "why": "`,J` is a gate-review jump, so ordinary j/k browsing should keep the reader's chosen card",
+      "choices": [
+        {
+          "key": "scoped",
+          "label": "Context holds only while the `,J` target stays selected; other nodes keep your chosen card"
+        },
+        {
+          "key": "sticky",
+          "label": "Later selections also open on Context until you pick another card; simpler but alters j/k"
+        }
+      ],
+      "default": "scoped",
+      "effective_default": "scoped",
+      "requested_verified": false
+    }
+  ]
+}
