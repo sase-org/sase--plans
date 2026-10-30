@@ -1,130 +1,118 @@
 ---
 tier: epic
 title: Explicit session/turn targets for fork and agent waits
-goal: "`#fork:<name>` reliably waits for the whole agent session, even when the parent
+goal: '`#fork:<name>` reliably waits for the whole agent session, even when the parent
   is promoted into a session after the fork launched. Users can explicitly choose
-  `session` or `turn` with `#fork(<name>, target=session|turn)`, `%wait(<name>,
-  target=session|turn)`, `sase agent wait -T`, and the plan-gate coder options.
-  Admission and injected fork history agree on the same bound target.
+  `session` or `turn` with `#fork(<name>, target=session|turn)`, `%wait(<name>, target=session|turn)`,
+  `sase agent wait -T`, and the plan-gate coder options. Admission and injected fork
+  history agree on the same bound target.
 
-  "
+  '
 decisions:
   macros_memory:
-    ask:
-      Update macros.md for the wait_target type, keyword-only inputs, and the %wait
+    ask: Update macros.md for the wait_target type, keyword-only inputs, and the %wait
       target= keyword?
     memory:
-      - macros.md
+    - macros.md
     default: true
-    corrects:
-      "`agent`/`model`/`effort`, plugin `<dist>@<id>`; defaultless means required."
+    corrects: '`agent`/`model`/`effort`, plugin `<dist>@<id>`; defaultless means required.'
     answer: true
 phases:
-  - id: promotion
-    title: Promotion-aware bare-name fork waits
-    depends_on: []
-    size: medium
-    description:
-      "promotion: bind bare-name forks as session seeds, heal queued legacy kind=agent
-      records whose parent was promoted, keep exact members single-turn, pin the 16h
-      replay and continuation regressions."
-  - id: vocab
-    title: Rust wait-target vocabulary and pure rules
-    depends_on: []
-    size: medium
-    description:
-      "vocab: add sase-core wait_target module (parse, effective-target rules,
-      current-turn selection), the wait_target NamedEnum, pyo3 bindings, and a thin
-      Python facade."
-  - id: kwonly_core
-    title: Keyword-only macro inputs in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "kwonly_core: add keyword_only to the Rust macro input contract (catalog, wires,
-      frontmatter rules, positional mapping, signatures, gateway contract)."
-  - id: wait_runtime
-    title: Turn-pinned wait records and evaluation
-    depends_on:
-      - promotion
-      - vocab
-    size: medium
-    description:
-      "wait_runtime: add the shared Python binder that pins a session's current turn
-      into v2 identity records, evaluate turn-scoped records, and keep persistence,
-      member dirs, and confirmation consistent."
-  - id: wait_directive
-    title: The %wait target= keyword end to end
-    depends_on:
-      - wait_runtime
-    size: medium
-    description:
-      "wait_directive: accept and validate %wait(..., target=) in the Python collector
-      and Rust editor/typed parsers, feed the binder, round-trip it through
-      PromptWaitDirective edits, and update docs."
-  - id: agent_wait_cli
-    title: sase agent wait --target
-    depends_on:
-      - wait_runtime
-    size: small
-    description:
-      "agent_wait_cli: add -T/--target session|turn to sase agent wait, using the shared
-      binder to wait on one pinned turn."
-  - id: coder_options
-    title: Turn targets in plan-gate coder options
-    depends_on:
-      - wait_directive
-    size: medium
-    description:
-      "coder_options: add turn=<agent> to the wait-spec grammar and carry it through the
-      approval response, gateless approve, coder prompts, and epic launches as
-      %wait(..., target=turn)."
-  - id: wait_tui
-    title: Show and edit bound turns in the TUI
-    depends_on:
-      - coder_options
-    size: medium
-    description:
-      "wait_tui: surface bound turns via an additive scan-wire field, accept turn=
-      entries in the agent Wait modal, and disable follow-epics for turn targets."
-  - id: kwonly_python
-    title: Keyword-only macro inputs in sase
-    depends_on:
-      - kwonly_core
-    size: medium
-    description:
-      "kwonly_python: mirror keyword_only in InputArg, loaders, binder, validators,
-      serializers, schemas, macro show/explain, TUI arg assist, and docs."
-  - id: fork_history
-    title: Fork history follows the bound wait record
-    depends_on:
-      - promotion
-    size: medium
-    description:
-      "fork_history: have the fork resolve step read the launching agent's bound fork
-      records, select sessions by identity, and cut turn-targeted history at the bound
-      turn."
-  - id: fork_binding
-    title: The
-    depends_on:
-      - wait_directive
-      - kwonly_python
-      - fork_history
-    size: medium
-    description:
-      "fork_binding: add the keyword-only wait_target input to fork.yml, return
-      structured fork references from the launch scan, bind v2 fork records with
-      (identity, target) dedupe, and update docs, skills, and memory."
+- id: promotion
+  title: Promotion-aware bare-name fork waits
+  depends_on: []
+  size: medium
+  description: 'promotion: bind bare-name forks as session seeds, heal queued legacy
+    kind=agent records whose parent was promoted, keep exact members single-turn,
+    pin the 16h replay and continuation regressions.'
+- id: vocab
+  title: Rust wait-target vocabulary and pure rules
+  depends_on: []
+  size: medium
+  description: 'vocab: add sase-core wait_target module (parse, effective-target rules,
+    current-turn selection), the wait_target NamedEnum, pyo3 bindings, and a thin
+    Python facade.'
+- id: kwonly_core
+  title: Keyword-only macro inputs in sase-core
+  depends_on: []
+  size: medium
+  description: 'kwonly_core: add keyword_only to the Rust macro input contract (catalog,
+    wires, frontmatter rules, positional mapping, signatures, gateway contract).'
+- id: wait_runtime
+  title: Turn-pinned wait records and evaluation
+  depends_on:
+  - promotion
+  - vocab
+  size: medium
+  description: 'wait_runtime: add the shared Python binder that pins a session''s
+    current turn into v2 identity records, evaluate turn-scoped records, and keep
+    persistence, member dirs, and confirmation consistent.'
+- id: wait_directive
+  title: The %wait target= keyword end to end
+  depends_on:
+  - wait_runtime
+  size: medium
+  description: 'wait_directive: accept and validate %wait(..., target=) in the Python
+    collector and Rust editor/typed parsers, feed the binder, round-trip it through
+    PromptWaitDirective edits, and update docs.'
+- id: agent_wait_cli
+  title: sase agent wait --target
+  depends_on:
+  - wait_runtime
+  size: small
+  description: 'agent_wait_cli: add -T/--target session|turn to sase agent wait, using
+    the shared binder to wait on one pinned turn.'
+- id: coder_options
+  title: Turn targets in plan-gate coder options
+  depends_on:
+  - wait_directive
+  size: medium
+  description: 'coder_options: add turn=<agent> to the wait-spec grammar and carry
+    it through the approval response, gateless approve, coder prompts, and epic launches
+    as %wait(..., target=turn).'
+- id: wait_tui
+  title: Show and edit bound turns in the TUI
+  depends_on:
+  - coder_options
+  size: medium
+  description: 'wait_tui: surface bound turns via an additive scan-wire field, accept
+    turn= entries in the agent Wait modal, and disable follow-epics for turn targets.'
+- id: kwonly_python
+  title: Keyword-only macro inputs in sase
+  depends_on:
+  - kwonly_core
+  size: medium
+  description: 'kwonly_python: mirror keyword_only in InputArg, loaders, binder, validators,
+    serializers, schemas, macro show/explain, TUI arg assist, and docs.'
+- id: fork_history
+  title: Fork history follows the bound wait record
+  depends_on:
+  - promotion
+  size: medium
+  description: 'fork_history: have the fork resolve step read the launching agent''s
+    bound fork records, select sessions by identity, and cut turn-targeted history
+    at the bound turn.'
+- id: fork_binding
+  title: The
+  depends_on:
+  - wait_directive
+  - kwonly_python
+  - fork_history
+  size: medium
+  description: 'fork_binding: add the keyword-only wait_target input to fork.yml,
+    return structured fork references from the launch scan, bind v2 fork records with
+    (identity, target) dedupe, and update docs, skills, and memory.'
 proposed_by: bbugyi200.athena.research.5j.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-30 17:43:10
 status: wip
+bead_id: sase-1q4
 ---
 
-- **PROMPT:**
-  [prompts/202610/fork_wait_session_turn_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/fork_wait_session_turn_target.md)
+- **PROMPT:** [prompts/202610/fork_wait_session_turn_target.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/fork_wait_session_turn_target.md)
+- **BEAD:** [sase-1q4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q4/README.md)
 
 # Explicit session/turn targets for fork and agent waits
 
