@@ -1,66 +1,61 @@
 ---
 tier: epic
 title: Published agent run state convergence
-goal:
-  Make published agent runs converge to verified terminal state without regressing newer
-  snapshots or treating live runs as finished.
+goal: Make published agent runs converge to verified terminal state without regressing
+  newer snapshots or treating live runs as finished.
 parent_bead: sase-1pu.5
 phases:
-  - id: state-policy
-    title: Define shared terminal-state evidence and reconciliation rules
-    size: medium
-    depends_on: []
-    description:
-      "state-policy: implement the Rust state-evidence, merge, and bounded selection
-      contracts and Python bindings described in Phase state-policy. Cover identity,
-      terminal precedence, conflicting evidence, and cursor progress with core and
-      binding tests. Keep domain decisions in sase-core; report its host-created commit
-      for the next phase's sase-core-revision.txt update."
-  - id: publication-safeguards
-    title: Preserve terminal state in every existing hood publisher
-    size: medium
-    depends_on:
-      - state-policy
-    description:
-      "publication-safeguards: integrate the state-policy bindings into inventory
-      projection and snapshot merging, update the core revision pin, and prove that
-      targeted and full publication cannot replace verified terminal state with an older
-      active or waiting observation. Keep state payloads, snapshot fields, digests, and
-      pages consistent; preserve the publication-protection boundary."
-  - id: bounded-repair
-    title: Add bounded report-and-apply repair for already-published runs
-    size: medium
-    depends_on:
-      - publication-safeguards
-    description:
-      "bounded-repair: implement the bounded state-reconciliation service and sase agent
-      sync --repair-states mode specified below. Resolve exact local evidence for
-      already-published runs, update only their state and derived projections,
-      re-evaluate after upstream changes, and expose a resumable report cursor. Test
-      read-only preview, bounds, hidden-clone ownership, publication races, failure
-      recovery, and idempotence with temporary repositories."
-  - id: scheduled-convergence
-    title: Schedule bounded reconciliation and document owner-local backfill
-    size: medium
-    depends_on:
-      - bounded-repair
-    description:
-      "scheduled-convergence: add the periodic agent_state_refresh job using the bounded
-      repair service, durable fair cursors and retry backoff. Wire its entry point and
-      default configuration, document the bounded owner-local backfill procedure, and
-      verify active-to-completed and active-to-failed convergence through the scheduled
-      path without another commit. Record evidence for the child lander to close
-      sase-1pu.5; do not close ancestors or seed task sase-1cc yourself."
+- id: state-policy
+  title: Define shared terminal-state evidence and reconciliation rules
+  size: medium
+  depends_on: []
+  description: 'state-policy: implement the Rust state-evidence, merge, and bounded
+    selection contracts and Python bindings described in Phase state-policy. Cover
+    identity, terminal precedence, conflicting evidence, and cursor progress with
+    core and binding tests. Keep domain decisions in sase-core; report its host-created
+    commit for the next phase''s sase-core-revision.txt update.'
+- id: publication-safeguards
+  title: Preserve terminal state in every existing hood publisher
+  size: medium
+  depends_on:
+  - state-policy
+  description: 'publication-safeguards: integrate the state-policy bindings into inventory
+    projection and snapshot merging, update the core revision pin, and prove that
+    targeted and full publication cannot replace verified terminal state with an older
+    active or waiting observation. Keep state payloads, snapshot fields, digests,
+    and pages consistent; preserve the publication-protection boundary.'
+- id: bounded-repair
+  title: Add bounded report-and-apply repair for already-published runs
+  size: medium
+  depends_on:
+  - publication-safeguards
+  description: 'bounded-repair: implement the bounded state-reconciliation service
+    and sase agent sync --repair-states mode specified below. Resolve exact local
+    evidence for already-published runs, update only their state and derived projections,
+    re-evaluate after upstream changes, and expose a resumable report cursor. Test
+    read-only preview, bounds, hidden-clone ownership, publication races, failure
+    recovery, and idempotence with temporary repositories.'
+- id: scheduled-convergence
+  title: Schedule bounded reconciliation and document owner-local backfill
+  size: medium
+  depends_on:
+  - bounded-repair
+  description: 'scheduled-convergence: add the periodic agent_state_refresh job using
+    the bounded repair service, durable fair cursors and retry backoff. Wire its entry
+    point and default configuration, document the bounded owner-local backfill procedure,
+    and verify active-to-completed and active-to-failed convergence through the scheduled
+    path without another commit. Record evidence for the child lander to close sase-1pu.5;
+    do not close ancestors or seed task sase-1cc yourself.'
 proposed_by: bbugyi200.athena.sase-1pu.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-29 20:35:09
 status: wip
+bead_id: sase-1pu.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/published_run_state_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/published_run_state_convergence.md)
-- **PARENT:**
-  [202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_3.md)
+- **PROMPT:** [prompts/202610/published_run_state_convergence.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/published_run_state_convergence.md)
+- **PARENT:** [202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_3.md)
+- **BEAD:** [sase-1pu.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pu/sase-1pu.5.1.md)
 
 # Published Agent Run State Convergence
 
