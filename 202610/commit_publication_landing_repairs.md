@@ -1,44 +1,41 @@
 ---
 tier: epic
-title:
-  Finish the durable-publication-enqueue landing (publisher repairs and an installed
+title: Finish the durable-publication-enqueue landing (publisher repairs and an installed
   re-prove)
-goal: "The background publisher from epic sase-1pt idles when it has no work. It
-  converts the fenced Referenced By backlog itself and never holds a hood acknowledgment
-  hostage to an unrelated drain. The epic's latency and sidecar reliability claims are
-  then measured on an athena install that actually contains the epic.
+goal: 'The background publisher from epic sase-1pt idles when it has no work. It converts
+  the fenced Referenced By backlog itself and never holds a hood acknowledgment hostage
+  to an unrelated drain. The epic''s latency and sidecar reliability claims are then
+  measured on an athena install that actually contains the epic.
 
-  "
+  '
 parent_bead: sase-1pt
 phases:
-  - id: publisher-repairs
-    title: Stop publisher busy-loops and keep hood acknowledgment request-local
-    depends_on: []
-    size: medium
-    description:
-      "publisher-repairs: stop keeping hints and re-ringing for link rows the drain
-      cannot publish, convert the fenced Referenced By backlog in the publisher, and
-      move the project-wide Referenced By drain out of the shared prompt-archive
-      side-effect helper."
-  - id: installed-reprove
-    title: Re-prove commit-stage latency and sidecar obligations on the new install
-    depends_on:
-      - publisher-repairs
-    size: medium
-    description:
-      "installed-reprove: get a human-approved athena reinstall that contains
-      publisher-repairs, then measure commit-stage latency and audit every sampled run's
-      sidecar obligations end to end."
+- id: publisher-repairs
+  title: Stop publisher busy-loops and keep hood acknowledgment request-local
+  depends_on: []
+  size: medium
+  description: 'publisher-repairs: stop keeping hints and re-ringing for link rows
+    the drain cannot publish, convert the fenced Referenced By backlog in the publisher,
+    and move the project-wide Referenced By drain out of the shared prompt-archive
+    side-effect helper.'
+- id: installed-reprove
+  title: Re-prove commit-stage latency and sidecar obligations on the new install
+  depends_on:
+  - publisher-repairs
+  size: medium
+  description: 'installed-reprove: get a human-approved athena reinstall that contains
+    publisher-repairs, then measure commit-stage latency and audit every sampled run''s
+    sidecar obligations end to end.'
 proposed_by: bbugyi200.athena.sase-1pt.land
 proposed_with: claude/opus
 create_time: 2026-10-30 03:24:13
 status: wip
+bead_id: sase-1pt.9
 ---
 
-- **PROMPT:**
-  [prompts/202610/commit_publication_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/commit_publication_landing_repairs.md)
-- **PARENT:**
-  [202610/commit_stage_async_publication.md](https://github.com/sase-org/sase--plans/blob/main/202610/commit_stage_async_publication.md)
+- **PROMPT:** [prompts/202610/commit_publication_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/commit_publication_landing_repairs.md)
+- **PARENT:** [202610/commit_stage_async_publication.md](https://github.com/sase-org/sase--plans/blob/main/202610/commit_stage_async_publication.md)
+- **BEAD:** [sase-1pt.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pt/sase-1pt.9.md)
 
 # Finish the durable-publication-enqueue landing
 
