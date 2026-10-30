@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "topic_dir_scope",
+      "kind": "choice",
+      "ask": "Should bob_research_capture also skip topic-dir Markdown other than <name>/<name>.md?",
+      "why": "The research layout publishes one reader-facing file per topic dir: <name>/<name>.md",
+      "choices": [
+        {
+          "key": "canonical",
+          "label": "Notes like acceptance.md and epic-agent drafts never become refs"
+        },
+        {
+          "key": "depth_only",
+          "label": "Only asset folders and deeper files are blocked; acceptance.md-style notes still become refs"
+        }
+      ],
+      "default": "canonical",
+      "effective_default": "canonical",
+      "requested_verified": false
+    },
+    {
+      "id": "vault_cleanup",
+      "kind": "choice",
+      "ask": "Should the implementer propose removing the junk refs already in the Bob vault?",
+      "why": "Vault edits sync to three machines; you already abandoned the Oct 7 README by hand",
+      "choices": [
+        {
+          "key": "report",
+          "label": "Vault untouched; the final summary lists each junk ref and task anchor to abandon"
+        },
+        {
+          "key": "gate",
+          "label": "One /sase_gate proposes removing each junk ref's note, PDF, source, and task for approval"
+        }
+      ],
+      "default": "report",
+      "effective_default": "report",
+      "requested_verified": false
+    }
+  ]
+}
