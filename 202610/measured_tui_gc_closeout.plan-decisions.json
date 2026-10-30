@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "heartbeat_delay",
+      "kind": "choice",
+      "ask": "Should the reporter count a late heartbeat as covered when window_s and uptime still match?",
+      "why": "window_s/uptime agreement detects lost accounting; a skipped beat (600 s+) cannot fit 450 s",
+      "choices": [
+        {
+          "key": "accept",
+          "label": "Late but fully accounted intervals up to 450 s count as covered and are reported as delayed"
+        },
+        {
+          "key": "keep",
+          "label": "The 302 s cap stays, so one late heartbeat on a loaded host leaves coverage INCOMPLETE"
+        }
+      ],
+      "default": "accept",
+      "effective_default": "accept",
+      "requested_verified": false
+    }
+  ]
+}
