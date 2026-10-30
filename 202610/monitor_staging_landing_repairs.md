@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Repair monitor adoption and finish the monitor-staging landing
-goal: Staged monitors preserve starter identity, response, and checkpoint content;
-  epic sase-1pj.5.1 and parent phase sase-1pj.5 close with integrated verification.
+goal:
+  Staged monitors preserve starter identity, response, and checkpoint content; epic
+  sase-1pj.5.1 and parent phase sase-1pj.5 close with integrated verification.
 size: medium
 proposed_by: bbugyi200.athena.sase-1pj.5.1.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202610/monitor_staging.md](https://github.com/sase-org/sase--plans/blob/main/202610/monitor_staging.md)
 - **BEAD:**
   [sase-1pj.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.5.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1pj.5.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pj.5.1.land.md)
+- **COMMITS:**
+  - [feae9c8](https://github.com/sase-org/sase/commit/feae9c8777948bf0984ccb26be63c1167998cfd6)
+    — fix(monitor): preserve staged adoption context
 
 # Repair monitor adoption and finish the monitor-staging landing
 
