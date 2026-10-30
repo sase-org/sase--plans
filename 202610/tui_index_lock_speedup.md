@@ -1,127 +1,118 @@
 ---
 tier: epic
 title: Restore TUI speed by ending artifact-index lock starvation
-goal: "The TUI stops falling into 24–30 s O(archive) fallback scans. The stranded-work
-  collector holds the artifact-index lock for seconds instead of minutes. A busy lock is
-  answered from the last good snapshot, never a filesystem scan. The smaller UI-thread
+goal: 'The TUI stops falling into 24–30 s O(archive) fallback scans. The stranded-work
+  collector holds the artifact-index lock for seconds instead of minutes. A busy lock
+  is answered from the last good snapshot, never a filesystem scan. The smaller UI-thread
   hitch sources the research found are trimmed. A restarted TUI can then be re-measured
   mechanically before any GC-policy change.
 
-  "
+  '
 decisions:
   core_lookup:
-    ask:
-      How should sase-core make the stranded session lookup proportional to its matches?
+    ask: How should sase-core make the stranded session lookup proportional to its
+      matches?
     choices:
-      pushdown:
-        Push session/name equality filters into SQL for every caller; no new binding
-      binding:
-        Also add a dedicated stranded-records binding; more API surface and pin gating
+      pushdown: Push session/name equality filters into SQL for every caller; no new
+        binding
+      binding: Also add a dedicated stranded-records binding; more API surface and
+        pin gating
     default: pushdown
-    why:
-      Speeds every session/name filter caller and leaves the binding surface unchanged
+    why: Speeds every session/name filter caller and leaves the binding surface unchanged
     answer: pushdown
   rollback_flag:
-    ask:
-      Keep the old lock-busy source-scan branch reachable behind a sunset feature flag?
+    ask: Keep the old lock-busy source-scan branch reachable behind a sunset feature
+      flag?
     default: false
-    why:
-      Each phase is one revertible commit; a flag adds both-state tests and a removal
+    why: Each phase is one revertible commit; a flag adds both-state tests and a removal
       bead
     answer: false
   tui_perf_rule:
-    ask:
-      Add a tui_perf rule that a busy index lock is answered from cache, never a source
-      scan?
+    ask: Add a tui_perf rule that a busy index lock is answered from cache, never
+      a source scan?
     memory:
-      - tui_perf.md
+    - tui_perf.md
     default: false
     answer: false
 phases:
-  - id: stranded-batch
-    title: Batch the stranded-work session query per project
-    depends_on: []
-    size: small
-    description:
-      "stranded-batch: replace the per-assignee index query loop with one batched,
-      chunked query per project, keeping the exact recheck and dedupe, with parity tests
-      and a before/after timing."
-  - id: stranded-cadence
-    title: Throttle and memoize stranded reports
-    depends_on: []
-    size: medium
-    description:
-      "stranded-cadence: raise the stranded report TTL to 60 s, floor forced recomputes,
-      drop the dead beads_watcher force source, and memoize per-tick stranded project
-      keys, verdict indexes, and counts."
-  - id: loader-lock-busy
-    title: Never answer a busy index lock with a source scan
-    depends_on: []
-    size: medium
-    description:
-      "loader-lock-busy: serve the last good tier-1 snapshot or keep the current roster
-      when the index lock is busy, retry through existing flags, log artifact_source and
-      repair_reason on slow loads, and document the lock's invariants."
-  - id: core-session-lookup
-    title: Indexed session lookup in sase-core
-    depends_on:
-      - stranded-batch
-    size: medium
-    description:
-      "core-session-lookup: push agent_session/agent_name equality filters into SQL with
-      NOCASE indexes, fix the workflow-scoped reconcile deletion bug, keep the Rust
-      post-filter, and move the sase-core pin."
-  - id: agents-tick-trims
-    title: Trim Agents-tab tick and capacity patch work
-    depends_on:
-      - stranded-cadence
-      - loader-lock-busy
-    size: medium
-    description:
-      "agents-tick-trims: stop capacity patches from rebuilding panel titles, skip
-      unchanged capacity applies, and check a cheap revision key before fingerprinting
-      clan members for runtime aggregation."
-  - id: pump-probe-trims
-    title: Move small synchronous work off the UI pump
-    depends_on: []
-    size: small
-    description:
-      "pump-probe-trims: use one persistent malloc_trim worker, move the tool-runs token
-      probe off the countdown tick, and debounce the prompt subtitle restyle while
-      keeping typing and the caret immediate."
-  - id: capacity-feed
-    title: Calm the machine-capacity feed
-    depends_on:
-      - pump-probe-trims
-    size: small
-    description:
-      "capacity-feed: lengthen the display rescan interval, reuse the parsed slot-scan
-      cache while unchanged, and move the capacity token probe off the UI timer."
-  - id: remeasure-kit
-    title: Mechanical re-measurement and follow-up handoff
-    depends_on:
-      - stranded-batch
-      - stranded-cadence
-      - loader-lock-busy
-      - core-session-lookup
-      - agents-tick-trims
-      - pump-probe-trims
-      - capacity-feed
-    size: small
-    description:
-      "remeasure-kit: teach tui_freeze_report to summarize slow agent loads by
-      index-stage bucket and fallback reason, document the post-fix remeasure and GC
-      decision recipe, and record the evidence-gated follow-ups."
+- id: stranded-batch
+  title: Batch the stranded-work session query per project
+  depends_on: []
+  size: small
+  description: 'stranded-batch: replace the per-assignee index query loop with one
+    batched, chunked query per project, keeping the exact recheck and dedupe, with
+    parity tests and a before/after timing.'
+- id: stranded-cadence
+  title: Throttle and memoize stranded reports
+  depends_on: []
+  size: medium
+  description: 'stranded-cadence: raise the stranded report TTL to 60 s, floor forced
+    recomputes, drop the dead beads_watcher force source, and memoize per-tick stranded
+    project keys, verdict indexes, and counts.'
+- id: loader-lock-busy
+  title: Never answer a busy index lock with a source scan
+  depends_on: []
+  size: medium
+  description: 'loader-lock-busy: serve the last good tier-1 snapshot or keep the
+    current roster when the index lock is busy, retry through existing flags, log
+    artifact_source and repair_reason on slow loads, and document the lock''s invariants.'
+- id: core-session-lookup
+  title: Indexed session lookup in sase-core
+  depends_on:
+  - stranded-batch
+  size: medium
+  description: 'core-session-lookup: push agent_session/agent_name equality filters
+    into SQL with NOCASE indexes, fix the workflow-scoped reconcile deletion bug,
+    keep the Rust post-filter, and move the sase-core pin.'
+- id: agents-tick-trims
+  title: Trim Agents-tab tick and capacity patch work
+  depends_on:
+  - stranded-cadence
+  - loader-lock-busy
+  size: medium
+  description: 'agents-tick-trims: stop capacity patches from rebuilding panel titles,
+    skip unchanged capacity applies, and check a cheap revision key before fingerprinting
+    clan members for runtime aggregation.'
+- id: pump-probe-trims
+  title: Move small synchronous work off the UI pump
+  depends_on: []
+  size: small
+  description: 'pump-probe-trims: use one persistent malloc_trim worker, move the
+    tool-runs token probe off the countdown tick, and debounce the prompt subtitle
+    restyle while keeping typing and the caret immediate.'
+- id: capacity-feed
+  title: Calm the machine-capacity feed
+  depends_on:
+  - pump-probe-trims
+  size: small
+  description: 'capacity-feed: lengthen the display rescan interval, reuse the parsed
+    slot-scan cache while unchanged, and move the capacity token probe off the UI
+    timer.'
+- id: remeasure-kit
+  title: Mechanical re-measurement and follow-up handoff
+  depends_on:
+  - stranded-batch
+  - stranded-cadence
+  - loader-lock-busy
+  - core-session-lookup
+  - agents-tick-trims
+  - pump-probe-trims
+  - capacity-feed
+  size: small
+  description: 'remeasure-kit: teach tui_freeze_report to summarize slow agent loads
+    by index-stage bucket and fallback reason, document the post-fix remeasure and
+    GC decision recipe, and record the evidence-gated follow-ups.'
 proposed_by: bbugyi200.athena.research.5k.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-30 18:38:06
 status: wip
+bead_id: sase-1q5
 ---
 
-- **PROMPT:**
-  [prompts/202610/tui_index_lock_speedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_index_lock_speedup.md)
+- **PROMPT:** [prompts/202610/tui_index_lock_speedup.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/tui_index_lock_speedup.md)
+- **BEAD:** [sase-1q5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q5/README.md)
 
 # Plan: Restore TUI speed by ending artifact-index lock starvation
 
