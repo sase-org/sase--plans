@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "ink",
+      "kind": "choice",
+      "ask": "Which ink should exempt types like PLAN use for their #TYPE mark?",
+      "why": "Stays in the exempt gray family and still differs from every other type state",
+      "choices": [
+        {
+          "key": "slate",
+          "label": "Blue-gray: in the exempt gray family, yet apart from unconfigured names and body text"
+        },
+        {
+          "key": "graphite",
+          "label": "Neutral gray: matches exempt pills, but only a dotted underline sets unconfigured names apart"
+        }
+      ],
+      "default": "slate",
+      "effective_default": "slate",
+      "requested_verified": false
+    }
+  ]
+}
