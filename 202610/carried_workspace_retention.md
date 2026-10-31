@@ -1,54 +1,49 @@
 ---
 tier: epic
 title: Retain stranded handoff workspaces
-goal:
-  A terminal handoff that leaves session-owned uncommitted work without a same-workspace
+goal: A terminal handoff that leaves session-owned uncommitted work without a same-workspace
   successor retains its claim and recovery evidence, shows why it is stranded, and
   supports explicit recovery or release.
 parent_bead: sase-1pj.7
 phases:
-  - id: retention-core
-    title: Shared retention policy and guarded claim settlement
-    depends_on: []
-    size: medium
-    description:
-      "retention-core: add the Rust retention decision and Python evidence/effect
-      adapter, preserving exact claim ownership and snapshotting held work."
-  - id: monitor-retention
-    title: Retain stopped and unlaunchable monitor work
-    depends_on:
-      - retention-core
-    size: medium
-    description:
-      "monitor-retention: apply guarded settlement to stopped, lost, terminal, degraded,
-      and failed-follow-up monitors in both handoff protocols."
-  - id: gate-adoption-retention
-    title: Retain cancelled questions and failed handoffs
-    depends_on:
-      - retention-core
-    size: medium
-    description:
-      "gate-adoption-retention: integrate retention into terminal gate and question
-      branches and failed staged adoption, without disturbing a real successor."
-  - id: recovery-surfaces
-    title: Surface held work and complete its recovery lifecycle
-    depends_on:
-      - monitor-retention
-      - gate-adoption-retention
-    size: medium
-    description:
-      "recovery-surfaces: expose stranded workspace evidence, support safe resume and
-      explicit dismissal, and verify stale cleanup respects terminal holds."
+- id: retention-core
+  title: Shared retention policy and guarded claim settlement
+  depends_on: []
+  size: medium
+  description: 'retention-core: add the Rust retention decision and Python evidence/effect
+    adapter, preserving exact claim ownership and snapshotting held work.'
+- id: monitor-retention
+  title: Retain stopped and unlaunchable monitor work
+  depends_on:
+  - retention-core
+  size: medium
+  description: 'monitor-retention: apply guarded settlement to stopped, lost, terminal,
+    degraded, and failed-follow-up monitors in both handoff protocols.'
+- id: gate-adoption-retention
+  title: Retain cancelled questions and failed handoffs
+  depends_on:
+  - retention-core
+  size: medium
+  description: 'gate-adoption-retention: integrate retention into terminal gate and
+    question branches and failed staged adoption, without disturbing a real successor.'
+- id: recovery-surfaces
+  title: Surface held work and complete its recovery lifecycle
+  depends_on:
+  - monitor-retention
+  - gate-adoption-retention
+  size: medium
+  description: 'recovery-surfaces: expose stranded workspace evidence, support safe
+    resume and explicit dismissal, and verify stale cleanup respects terminal holds.'
 proposed_by: bbugyi200.athena.sase-1pj.7
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-31 08:52:37
 status: wip
+bead_id: sase-1pj.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/carried_workspace_retention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/carried_workspace_retention.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/carried_workspace_retention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/carried_workspace_retention.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.7.1.md)
 
 # Retain stranded handoff workspaces
 
