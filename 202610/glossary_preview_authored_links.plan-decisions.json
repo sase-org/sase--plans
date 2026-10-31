@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "see_also_order",
+      "kind": "choice",
+      "ask": "Should authored [[links]] take the first SEE ALSO chips, ahead of phrase mentions?",
+      "why": "Deliberate links should not be crowded out of the 1-9 keys by incidental phrase matches",
+      "choices": [
+        {
+          "key": "links_first",
+          "label": "Link targets fill chips first and never fall past the 9-chip cap; mentions follow"
+        },
+        {
+          "key": "position",
+          "label": "One first-occurrence order across links and mentions, like the Memory panel strand card"
+        }
+      ],
+      "default": "links_first",
+      "effective_default": "links_first",
+      "requested_verified": false
+    },
+    {
+      "id": "foreign_links",
+      "kind": "choice",
+      "ask": "Should the card also list links that leave the glossary (e.g. [[decisions/x]]) or do not resolve?",
+      "why": "SEE ALSO numbers are follow keys, and the card can only follow glossary terms",
+      "choices": [
+        {
+          "key": "skip",
+          "label": "The card lists glossary terms only; those links stay as authored text in the definition"
+        },
+        {
+          "key": "list",
+          "label": "Adds an unnumbered display-only LINKS row naming each non-glossary or unresolved target"
+        }
+      ],
+      "default": "skip",
+      "effective_default": "skip",
+      "requested_verified": false
+    }
+  ]
+}
