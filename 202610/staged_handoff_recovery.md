@@ -1,98 +1,90 @@
 ---
 tier: epic
 title: Recover staged handoffs without repeating adoption
-goal:
-  Make every staged handoff replayable after runner death, reconcile completed turns,
-  and let held handoffs be explicitly re-adopted after their obligations are satisfied.
+goal: Make every staged handoff replayable after runner death, reconcile completed
+  turns, and let held handoffs be explicitly re-adopted after their obligations are
+  satisfied.
 parent_bead: sase-1pj.6
 phases:
-  - id: recovery-contract
-    title: Define durable recovery identity and replay decisions
-    depends_on: []
-    size: medium
-    description:
-      "recovery-contract: add Rust-owned recovery contracts and replay decisions,
-      persist the original execution context, and serialize adoption across runner,
-      manual recovery, and housekeeping callers. Preserve existing receipt formats."
-  - id: successor-replay
-    title: Recover pipe and inline successors exactly once
-    depends_on:
-      - recovery-contract
-    size: medium
-    description:
-      "successor-replay: persist successor identity before continuation side effects,
-      replay pipe adoption without allocating another successor, and provide the common
-      detached continuation path used when the original runner is gone."
-  - id: approval-replay
-    title: Replay plan and question approval handoffs
-    depends_on:
-      - recovery-contract
-      - successor-replay
-    size: medium
-    description:
-      "approval-replay: bind plan and question gates to staged identity, recover
-      original creator and approval context without ambient agent variables, and replay
-      both human-gated and auto-resolved continuations."
-  - id: gate-replay
-    title: Complete partially published gates on replay
-    depends_on:
-      - recovery-contract
-    size: medium
-    description:
-      "gate-replay: resume partial gate publication under its existing request and
-      member identities, repairing claim and notification effects without duplicating
-      the gate or changing its frozen creator and policy."
-  - id: monitor-replay
-    title: Close monitor spawn and held-reservation crash windows
-    depends_on:
-      - recovery-contract
-    size: medium
-    description:
-      "monitor-replay: recover monitor launch from existing fingerprint and proc
-      identities, including completed commands, and retain or safely restore held
-      reservations and prepared completion evidence across retries."
-  - id: recovery-service
-    title: Adopt from persisted state and preserve finalizer progress
-    depends_on:
-      - recovery-contract
-      - successor-replay
-      - approval-replay
-      - gate-replay
-      - monitor-replay
-    size: medium
-    description:
-      "recovery-service: expose one host recovery entry point for all kinds, prove
-      settlement from the original run and current obligations, preserve successful
-      multi-repository commit receipts, and replay held handoffs after valid repair."
-  - id: readopt-cli
-    title: Expose re-adoption and actionable held notifications
-    depends_on:
-      - recovery-service
-    size: small
-    description:
-      "readopt-cli: add sase agent readopt for one unambiguous originating turn, render
-      recovery results and refusals, and include the exact command in held handoff
-      notifications and focused user documentation."
-  - id: reconcile-stages
-    title: Reconcile abandoned finalized stages and verify crash recovery
-    depends_on:
-      - recovery-service
-      - readopt-cli
-    size: medium
-    description:
-      "reconcile-stages: add bounded scheduler housekeeping for finalized staged turns
-      whose runner is gone, coordinate it with claim cleanup, and verify concurrent
-      recovery and crash boundaries across all handoff kinds."
+- id: recovery-contract
+  title: Define durable recovery identity and replay decisions
+  depends_on: []
+  size: medium
+  description: 'recovery-contract: add Rust-owned recovery contracts and replay decisions,
+    persist the original execution context, and serialize adoption across runner,
+    manual recovery, and housekeeping callers. Preserve existing receipt formats.'
+- id: successor-replay
+  title: Recover pipe and inline successors exactly once
+  depends_on:
+  - recovery-contract
+  size: medium
+  description: 'successor-replay: persist successor identity before continuation side
+    effects, replay pipe adoption without allocating another successor, and provide
+    the common detached continuation path used when the original runner is gone.'
+- id: approval-replay
+  title: Replay plan and question approval handoffs
+  depends_on:
+  - recovery-contract
+  - successor-replay
+  size: medium
+  description: 'approval-replay: bind plan and question gates to staged identity,
+    recover original creator and approval context without ambient agent variables,
+    and replay both human-gated and auto-resolved continuations.'
+- id: gate-replay
+  title: Complete partially published gates on replay
+  depends_on:
+  - recovery-contract
+  size: medium
+  description: 'gate-replay: resume partial gate publication under its existing request
+    and member identities, repairing claim and notification effects without duplicating
+    the gate or changing its frozen creator and policy.'
+- id: monitor-replay
+  title: Close monitor spawn and held-reservation crash windows
+  depends_on:
+  - recovery-contract
+  size: medium
+  description: 'monitor-replay: recover monitor launch from existing fingerprint and
+    proc identities, including completed commands, and retain or safely restore held
+    reservations and prepared completion evidence across retries.'
+- id: recovery-service
+  title: Adopt from persisted state and preserve finalizer progress
+  depends_on:
+  - recovery-contract
+  - successor-replay
+  - approval-replay
+  - gate-replay
+  - monitor-replay
+  size: medium
+  description: 'recovery-service: expose one host recovery entry point for all kinds,
+    prove settlement from the original run and current obligations, preserve successful
+    multi-repository commit receipts, and replay held handoffs after valid repair.'
+- id: readopt-cli
+  title: Expose re-adoption and actionable held notifications
+  depends_on:
+  - recovery-service
+  size: small
+  description: 'readopt-cli: add sase agent readopt for one unambiguous originating
+    turn, render recovery results and refusals, and include the exact command in held
+    handoff notifications and focused user documentation.'
+- id: reconcile-stages
+  title: Reconcile abandoned finalized stages and verify crash recovery
+  depends_on:
+  - recovery-service
+  - readopt-cli
+  size: medium
+  description: 'reconcile-stages: add bounded scheduler housekeeping for finalized
+    staged turns whose runner is gone, coordinate it with claim cleanup, and verify
+    concurrent recovery and crash boundaries across all handoff kinds.'
 proposed_by: bbugyi200.athena.sase-1pj.6
 proposed_with: codex/gpt-6-astra
 create_time: 2026-10-31 08:56:17
 status: wip
+bead_id: sase-1pj.6.1
 ---
 
-- **PROMPT:**
-  [prompts/202610/staged_handoff_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_handoff_recovery.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202610/staged_handoff_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/staged_handoff_recovery.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.6.1.md)
 
 # Recover staged handoffs without repeating adoption
 
