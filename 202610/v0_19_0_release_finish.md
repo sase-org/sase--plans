@@ -1,66 +1,59 @@
 ---
 tier: epic
-title:
-  Finish sase v0.19.0 by clearing the last blocking reds, pinning a published containing
-  core, rehearsing, and watching the steward release
-goal: "Master Gate is green at master HEAD; a complete published sase-core-rs contains
-  master's core revision and master pins it exactly; a release.yml rehearsal at master
+title: Finish sase v0.19.0 by clearing the last blocking reds, pinning a published
+  containing core, rehearsing, and watching the steward release
+goal: 'Master Gate is green at master HEAD; a complete published sase-core-rs contains
+  master''s core revision and master pins it exactly; a release.yml rehearsal at master
   is accepted; the release steward merges release-please PR #322; sase 0.19.0 is on
   PyPI; and the final lander records the release evidence as an artifact.
 
-  "
+  '
 phases:
-  - id: gate-reds
-    title:
-      Clear the footprint microbench, prompt-bar reveal, and any other blocking-lane red
-      at the tip
-    size: medium
-    depends_on: []
-    description:
-      "gate-reds: make Footprint bump() meet its 2 µs budget, measure it untraced, fix
-      the hot-spare reveal subtitle race, then fix every other deterministic Master Gate
-      or blocking Full CI red."
-  - id: core-pin
-    title:
-      A complete published sase-core-rs contains master's source pin, and master pins it
-    size: medium
-    depends_on: []
-    description:
-      "core-pin: wait for the sase-core daily cut (v0.43.3, PR #342) to publish a
-      complete core containing pin 80f5af40 or later, then ratchet master's exact pin
-      and prove the bindings."
-  - id: rehearse
-    title: Prove a green release.yml rehearsal at master
-    size: small
-    depends_on:
-      - gate-reds
-      - core-pin
-    description:
-      "rehearse: dispatch a release.yml rehearsal at master, judge it job by job, note
-      the result on sase-1oe.4, and wake its cutover per the parent's wake_cutover =
-      wake."
-  - id: watch
-    title:
-      Watch sase v0.19.0 through the steward, release.yml, and PyPI with a self-closing
-      monitor
-    size: small
-    depends_on:
-      - rehearse
-    description:
-      "watch: after prerequisite and preflight checks, start a no-follow-up monitor
-      whose watcher observes the steward, release.yml, and PyPI for up to 48h and always
-      closes this bead."
+- id: gate-reds
+  title: Clear the footprint microbench, prompt-bar reveal, and any other blocking-lane
+    red at the tip
+  size: medium
+  depends_on: []
+  description: 'gate-reds: make Footprint bump() meet its 2 µs budget, measure it
+    untraced, fix the hot-spare reveal subtitle race, then fix every other deterministic
+    Master Gate or blocking Full CI red.'
+- id: core-pin
+  title: A complete published sase-core-rs contains master's source pin, and master
+    pins it
+  size: medium
+  depends_on: []
+  description: 'core-pin: wait for the sase-core daily cut (v0.43.3, PR #342) to publish
+    a complete core containing pin 80f5af40 or later, then ratchet master''s exact
+    pin and prove the bindings.'
+- id: rehearse
+  title: Prove a green release.yml rehearsal at master
+  size: small
+  depends_on:
+  - gate-reds
+  - core-pin
+  description: 'rehearse: dispatch a release.yml rehearsal at master, judge it job
+    by job, note the result on sase-1oe.4, and wake its cutover per the parent''s
+    wake_cutover = wake.'
+- id: watch
+  title: Watch sase v0.19.0 through the steward, release.yml, and PyPI with a self-closing
+    monitor
+  size: small
+  depends_on:
+  - rehearse
+  description: 'watch: after prerequisite and preflight checks, start a no-follow-up
+    monitor whose watcher observes the steward, release.yml, and PyPI for up to 48h
+    and always closes this bead.'
 proposed_by: bbugyi200.athena.sase-1q2.land
 proposed_with: claude/opus
 parent_bead: sase-1q2
 create_time: 2026-10-31 05:23:20
 status: wip
+bead_id: sase-1q2.9
 ---
 
-- **PROMPT:**
-  [prompts/202610/v0_19_0_release_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_19_0_release_finish.md)
-- **PARENT:**
-  [202610/v0_19_0_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_19_0_release.md)
+- **PROMPT:** [prompts/202610/v0_19_0_release_finish.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/v0_19_0_release_finish.md)
+- **PARENT:** [202610/v0_19_0_release.md](https://github.com/sase-org/sase--plans/blob/main/202610/v0_19_0_release.md)
+- **BEAD:** [sase-1q2.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q2/sase-1q2.9.md)
 
 # Finish sase v0.19.0 by clearing the last blocking reds, pinning a published containing core, rehearsing, and watching the steward release
 
