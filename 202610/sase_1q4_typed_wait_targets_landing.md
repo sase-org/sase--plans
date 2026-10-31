@@ -2,11 +2,10 @@
 tier: tale
 size: medium
 title: Finish landing sase-1q4 - keep explicit %wait targets through typed admission
-goal:
-  An explicit `%wait(..., target=session|turn)` in an agent-initiated or typed launch is
-  bound by the launched agent's runner instead of being silently dropped, the last
-  sase-1q4 epic symbol is retired, and epic sase-1q4 is closed with its plan marked
-  done.
+goal: An explicit `%wait(..., target=session|turn)` in an agent-initiated or typed
+  launch is bound by the launched agent's runner instead of being silently dropped,
+  the last sase-1q4 epic symbol is retired, and epic sase-1q4 is closed with its plan
+  marked done.
 proposed_by: bbugyi200.athena.sase-1q4.land
 proposed_with: claude/opus
 bead: sase-1q4
@@ -17,11 +16,6 @@ status: done
   [202610/fork_wait_session_turn_target.md](https://github.com/sase-org/sase--plans/blob/main/202610/fork_wait_session_turn_target.md)
 - **BEAD:**
   [sase-1q4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1q4/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1q4.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1q4.land.md)
-- **COMMITS:**
-  - [32c66dd](https://github.com/sase-org/sase-core/commit/32c66ddf2b8b0cc1456cdea79a36dcd8202cd24d)
-    — feat(agent-launch): forward explicit %wait targets through typed admission
 
 # Finish landing sase-1q4: keep explicit `%wait` targets through typed admission
 
