@@ -2,16 +2,14 @@
 tier: tale
 size: medium
 title: Finish landing sase-1q4 - keep explicit %wait targets through typed admission
-goal:
-  An explicit `%wait(..., target=session|turn)` in an agent-initiated or typed launch is
-  bound by the launched agent's runner instead of being silently dropped, the last
-  sase-1q4 epic symbol is retired, and epic sase-1q4 is closed with its plan marked
-  done.
+goal: An explicit `%wait(..., target=session|turn)` in an agent-initiated or typed
+  launch is bound by the launched agent's runner instead of being silently dropped,
+  the last sase-1q4 epic symbol is retired, and epic sase-1q4 is closed with its plan
+  marked done.
 proposed_by: bbugyi200.athena.sase-1q4.land
 proposed_with: claude/opus
 bead: sase-1q4
-create_time: 2026-10-31 07:39:08
-status: wip
+status: done
 ---
 
 - **PARENT:**
