@@ -1,99 +1,91 @@
 ---
 tier: epic
 title: Stop recurring agent_publication error notifications
-goal: "Approving a plan and running research agents no longer produce
-  `agent_publication` error notifications. Any refusal that remains states its real
-  reason and retires instead of repeating. Rows already stuck by these bugs clear
-  through verified acknowledgment, not by being dropped.
+goal: 'Approving a plan and running research agents no longer produce `agent_publication`
+  error notifications. Any refusal that remains states its real reason and retires
+  instead of repeating. Rows already stuck by these bugs clear through verified acknowledgment,
+  not by being dropped.
 
-  "
+  '
 decisions:
   cleanup_apply:
-    ask:
-      Should the cleanup phase re-scope and retry the stuck rows itself instead of
-      asking you first?
+    ask: Should the cleanup phase re-scope and retry the stuck rows itself instead
+      of asking you first?
     choices:
-      gate:
-        Phase stops at a confirmation gate; nothing changes until you approve the
-        commands
-      direct:
-        Phase applies the audited re-scope and per-key retries itself; rows clear
-        unattended
+      gate: Phase stops at a confirmation gate; nothing changes until you approve
+        the commands
+      direct: Phase applies the audited re-scope and per-key retries itself; rows
+        clear unattended
     default: gate
     why: Applying edits the live outbox and pushes to the sase--agents remote
     answer: direct
 phases:
-  - id: planner-scope
-    title: Planner prompt-archive rows use linked (page-only) scope
-    depends_on: []
-    size: medium
-    description:
-      "planner-scope: planner approvals enqueue their prompt-archive row with linked
-      scope, and enqueue merges keep revision scope when either side has it, so the
-      revision gate stops refusing rows for commits the planner never made."
-  - id: honest-errors
-    title: Report the real refusal reason and retire repeated refusals
-    depends_on:
-      - planner-scope
-    size: medium
-    description:
-      'honest-errors: gate refusals record the Rust completion decision''s reason
-      instead of "did not materialize", the dead retire-on-repeat path works again, and
-      the stale-revision doctor hint stops recommending a repair that cannot apply.'
-  - id: hood-scan-reuse
-    title: Stop re-scanning already-published bytes on every hood publish
-    depends_on: []
-    size: medium
-    description:
-      "hood-scan-reuse: targeted hood publication skips the protection scan for bytes
-      identical to the previously published file reference, which brings the research
-      hood back under the 120s drain budget."
-  - id: planner-restore
-    title: Deferred restore rebuilds the plan-named planner archive (sase-1c0)
-    depends_on:
-      - planner-scope
-    size: medium
-    description:
-      "planner-restore: persist the planner archive inputs in the planner's artifacts
-      directory so a deferred restore rebuilds the same plan-named archive with its PLAN
-      link, then close sase-1c0."
-  - id: footer-brackets
-    title: Parse bracketed footer values that lack a link definition
-    depends_on: []
-    size: small
-    description:
-      "footer-brackets: the sase-core commit-footer parser unwraps `SASE_BEAD=[id]`
-      values that have no reference definition, and sase rebuilds the cached stitch-rule
-      rows, so the `bead:[...]` warning stops appearing in digests."
-  - id: planner-repair
-    title: Report-first re-scope repair for proven planner rows
-    depends_on:
-      - honest-errors
-    size: medium
-    description:
-      "planner-repair: add a report-first `sase agent sync --repair-planner-scopes` mode
-      that re-scopes only evidence-proven planner rows to linked through the outbox
-      mutation API, with an audit record."
-  - id: stuck-row-cleanup
-    title: Clear the already-stuck planner and research rows
-    depends_on:
-      - hood-scan-reuse
-      - planner-repair
-    size: small
-    description:
-      "stuck-row-cleanup: once the fixes are live, re-scope proven planner rows and
-      retry each targeted row by key, then verify that every one cleared through
-      acknowledgment with its pages and archives intact."
+- id: planner-scope
+  title: Planner prompt-archive rows use linked (page-only) scope
+  depends_on: []
+  size: medium
+  description: 'planner-scope: planner approvals enqueue their prompt-archive row
+    with linked scope, and enqueue merges keep revision scope when either side has
+    it, so the revision gate stops refusing rows for commits the planner never made.'
+- id: honest-errors
+  title: Report the real refusal reason and retire repeated refusals
+  depends_on:
+  - planner-scope
+  size: medium
+  description: 'honest-errors: gate refusals record the Rust completion decision''s
+    reason instead of "did not materialize", the dead retire-on-repeat path works
+    again, and the stale-revision doctor hint stops recommending a repair that cannot
+    apply.'
+- id: hood-scan-reuse
+  title: Stop re-scanning already-published bytes on every hood publish
+  depends_on: []
+  size: medium
+  description: 'hood-scan-reuse: targeted hood publication skips the protection scan
+    for bytes identical to the previously published file reference, which brings the
+    research hood back under the 120s drain budget.'
+- id: planner-restore
+  title: Deferred restore rebuilds the plan-named planner archive (sase-1c0)
+  depends_on:
+  - planner-scope
+  size: medium
+  description: 'planner-restore: persist the planner archive inputs in the planner''s
+    artifacts directory so a deferred restore rebuilds the same plan-named archive
+    with its PLAN link, then close sase-1c0.'
+- id: footer-brackets
+  title: Parse bracketed footer values that lack a link definition
+  depends_on: []
+  size: small
+  description: 'footer-brackets: the sase-core commit-footer parser unwraps `SASE_BEAD=[id]`
+    values that have no reference definition, and sase rebuilds the cached stitch-rule
+    rows, so the `bead:[...]` warning stops appearing in digests.'
+- id: planner-repair
+  title: Report-first re-scope repair for proven planner rows
+  depends_on:
+  - honest-errors
+  size: medium
+  description: 'planner-repair: add a report-first `sase agent sync --repair-planner-scopes`
+    mode that re-scopes only evidence-proven planner rows to linked through the outbox
+    mutation API, with an audit record.'
+- id: stuck-row-cleanup
+  title: Clear the already-stuck planner and research rows
+  depends_on:
+  - hood-scan-reuse
+  - planner-repair
+  size: small
+  description: 'stuck-row-cleanup: once the fixes are live, re-scope proven planner
+    rows and retry each targeted row by key, then verify that every one cleared through
+    acknowledgment with its pages and archives intact.'
 proposed_by: bbugyi200.athena.research.5l.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-10-31 12:01:46
 status: wip
+bead_id: sase-1qh
 ---
 
-- **PROMPT:**
-  [prompts/202610/agent_publication_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agent_publication_notifications.md)
+- **PROMPT:** [prompts/202610/agent_publication_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202610/agent_publication_notifications.md)
+- **BEAD:** [sase-1qh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qh/README.md)
 
 # Plan: Stop recurring agent_publication error notifications
 
