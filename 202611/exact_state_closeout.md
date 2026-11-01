@@ -1,20 +1,19 @@
 ---
 tier: tale
 title: Finish exact-run reads and land published-state repair
-goal:
-  Published-state repair validates current run identity, bounds all reads, preserves
+goal: Published-state repair validates current run identity, bounds all reads, preserves
   retry progress, and closes sase-1pu.5.1.5 and its ready parent chain.
 size: medium
 proposed_by: bbugyi200.athena.sase-1pu.5.1.5.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1pu.5.1.5
-create_time: 2026-11-01 13:00:34
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202611/published_state_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202611/published_state_landing_repairs.md)
-- **BEAD:** sase-1pu.5.1.5
+- **BEAD:**
+  [sase-1pu.5.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pu/sase-1pu.5.1.5.md)
 
 # Finish exact-run reads and land published-state repair
 
