@@ -1,20 +1,19 @@
 ---
 tier: tale
 title: Make the TUI import budget tolerate mechanical module splits
-goal:
-  Catch new eager implementation imports while keeping mechanical module splits within
-  an unchanged startup budget.
+goal: Catch new eager implementation imports while keeping mechanical module splits
+  within an unchanged startup budget.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qn.2
 proposed_with: codex/gpt-6-astra
 bead: sase-1qn.2
-create_time: 2026-11-01 14:49:49
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--plans/blob/main/202611/task_backlog_epic_4.md)
-- **BEAD:** sase-1qn.2
+- **BEAD:**
+  [sase-1qn.2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qn/sase-1qn.2.md)
 
 # Make the TUI import budget tolerate mechanical module splits
 
