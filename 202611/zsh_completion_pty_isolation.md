@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Isolate zsh PTY completion tests from the live candidate backend
-goal: Resolve sase-13a for phase sase-1qn.4 while preserving real-shell assertions
-  and timeout budgets.
+goal:
+  Resolve sase-13a for phase sase-1qn.4 while preserving real-shell assertions and
+  timeout budgets.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qn.4
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--plans/blob/main/202611/task_backlog_epic_4.md)
 - **BEAD:**
   [sase-1qn.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qn/sase-1qn.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1qn.4](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1qn.4.md)
+- **COMMITS:**
+  - [0760eb0](https://github.com/sase-org/sase/commit/0760eb0100e6df72ca78c4cc317b48d824ceb309)
+    — test(completion): isolate zsh PTY smoke tests from live sase
 
 # Isolate the zsh completion PTY smoke tests from the live candidate backend
 
