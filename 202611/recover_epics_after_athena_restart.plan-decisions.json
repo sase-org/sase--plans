@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "core_fmt",
+      "kind": "choice",
+      "ask": "Should the recovery agent land a rustfmt-only fix to sase-core so its master CI turns green again?",
+      "why": "core CI is red on formatting alone since 73ec04a02e, blocking the core cut 3 epics wait on",
+      "choices": [
+        {
+          "key": "fix",
+          "label": "Land the formatting-only fix and record it on sase-1pj.6.1; the daily core cut can publish again"
+        },
+        {
+          "key": "note",
+          "label": "Only note it on sase-1pj.6.1; release-chain waits stay blocked until that epic fixes it"
+        }
+      ],
+      "default": "fix",
+      "effective_default": "fix",
+      "requested_verified": false
+    },
+    {
+      "id": "gc_fix",
+      "kind": "choice",
+      "ask": "Should gc-fix (sase-1nf.14) be relaunched instead of closed as superseded?",
+      "why": "sase-1f3 and sase-1nc already own the remaining capture and producer work",
+      "choices": [
+        {
+          "key": "relaunch",
+          "label": "A fresh gc-fix worker replaces its run history and re-plans the remaining GC work"
+        },
+        {
+          "key": "settle",
+          "label": "Close sase-1nf.14 as superseded by ready tasks sase-1f3 and sase-1nc; sase-1nf can land"
+        }
+      ],
+      "default": "settle",
+      "effective_default": "settle",
+      "requested_verified": false
+    }
+  ]
+}
