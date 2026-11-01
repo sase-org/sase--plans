@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Diagnose stale epic-symbol rows before expensive verification
-goal: Distinguish obsolete checkout rows from live whitelist defects and provide an
-  early actionable refusal while preserving close and Symvision enforcement.
+goal:
+  Distinguish obsolete checkout rows from live whitelist defects and provide an early
+  actionable refusal while preserving close and Symvision enforcement.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qn.1
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--plans/blob/main/202611/task_backlog_epic_4.md)
 - **BEAD:**
   [sase-1qn.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qn/sase-1qn.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1qn.1](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1qn.1.md)
+- **COMMITS:**
+  - [5585fad](https://github.com/sase-org/sase/commit/5585fadefdbe1d82bb806bb1fde77362f5c8ffb9)
+    — fix(bead): preflight stale epic symbol rows
 
 # Diagnose closed epic-symbol rows against the checkout being verified
 
