@@ -2,40 +2,36 @@
 tier: epic
 title: Finish exact evidence and bounded published-state repair
 parent_bead: sase-1pu.5.1
-goal:
-  Published run repair reads only bounded exact-run evidence, preserves state on
-  uncertainty, and advances checkpoints only on verified progress.
+goal: Published run repair reads only bounded exact-run evidence, preserves state
+  on uncertainty, and advances checkpoints only on verified progress.
 phases:
-  - id: evidence-policy
-    title: Complete raw-evidence and bounded-discovery contracts in Rust
-    size: medium
-    depends_on: []
-    description:
-      "evidence-policy: implement shared raw-marker classification and bounded
-      hood-discovery contracts described below in sase-core, including registered
-      bindings and tests. Reuse the existing terminal precedence and scheduler policy.
-      Record the host-created core commit for the dependent Python phase."
-  - id: repair-integration
-    title: Integrate exact evidence, honest repair progress, and current publishers
-    size: medium
-    depends_on:
-      - evidence-policy
-    description:
-      "repair-integration: consume the preceding core commit, replace
-      publication-inventory hydration in state repair with bounded exact-run
-      observations, fix failure reporting and terminal preservation, integrate later
-      publication changes, retire the parent checkpoint symbol exemption, and prove the
-      real CLI and scheduler paths."
+- id: evidence-policy
+  title: Complete raw-evidence and bounded-discovery contracts in Rust
+  size: medium
+  depends_on: []
+  description: 'evidence-policy: implement shared raw-marker classification and bounded
+    hood-discovery contracts described below in sase-core, including registered bindings
+    and tests. Reuse the existing terminal precedence and scheduler policy. Record
+    the host-created core commit for the dependent Python phase.'
+- id: repair-integration
+  title: Integrate exact evidence, honest repair progress, and current publishers
+  size: medium
+  depends_on:
+  - evidence-policy
+  description: 'repair-integration: consume the preceding core commit, replace publication-inventory
+    hydration in state repair with bounded exact-run observations, fix failure reporting
+    and terminal preservation, integrate later publication changes, retire the parent
+    checkpoint symbol exemption, and prove the real CLI and scheduler paths.'
 proposed_by: bbugyi200.athena.sase-1pu.5.1.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-01 10:17:37
 status: wip
+bead_id: sase-1pu.5.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202611/published_state_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/published_state_landing_repairs.md)
-- **PARENT:**
-  [202610/published_run_state_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202610/published_run_state_convergence.md)
+- **PROMPT:** [prompts/202611/published_state_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/published_state_landing_repairs.md)
+- **PARENT:** [202610/published_run_state_convergence.md](https://github.com/sase-org/sase--plans/blob/main/202610/published_run_state_convergence.md)
+- **BEAD:** [sase-1pu.5.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pu/sase-1pu.5.1.5.md)
 
 # Finish exact evidence and bounded published-state repair
 
