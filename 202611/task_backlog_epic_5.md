@@ -1,75 +1,64 @@
 ---
 tier: epic
-title:
-  "Task backlog epic 5: apollo-only prompt-render red, agents-sync drain flake, and the
-  sase-core sudo_runner ETXTBSY flake"
-goal:
-  Fix and close the five next-costliest open task beads, then continue the backlog chain
-  under the same ranking and closeout rules.
+title: 'Task backlog epic 5: apollo-only prompt-render red, agents-sync drain flake,
+  and the sase-core sudo_runner ETXTBSY flake'
+goal: Fix and close the five next-costliest open task beads, then continue the backlog
+  chain under the same ranking and closeout rules.
 decisions:
   optional_scope:
-    ask:
-      Should phase workers include adjacent feature or memory changes discovered while
-      fixing these five bug and flake tasks?
+    ask: Should phase workers include adjacent feature or memory changes discovered
+      while fixing these five bug and flake tasks?
     choices:
-      keep_five_seeds:
-        Limit work to the five selected task beads; defer adjacent feature or memory
-        work to owner review
-      required_scope_only:
-        Include a feature or memory change only when a selected bead's acceptance
-        requires it
+      keep_five_seeds: Limit work to the five selected task beads; defer adjacent
+        feature or memory work to owner review
+      required_scope_only: Include a feature or memory change only when a selected
+        bead's acceptance requires it
     default: keep_five_seeds
-    why:
-      The selected beads are defect and flake work, so optional scope should stay under
-      owner control.
+    why: The selected beads are defect and flake work, so optional scope should stay
+      under owner control.
     answer: keep_five_seeds
 phases:
-  - id: apollo-prompt-render
-    title:
-      Fix the apollo-only ACE prompt-render and hint failures (sase-1ia, sase-1l3,
-      sase-1hy)
-    depends_on: []
-    size: large
-    description:
-      "apollo-prompt-render: the ACE prompt-render and hint widget tests behind
-      sase-1ia, sase-1l3 and sase-1hy fail deterministically on apollo (7-9 failed of 30
-      across four files at sase 31a28d9618) and pass 30/30 on athena. Bisect the apollo
-      host input that changes the result, fix it where it is owned (test isolation or
-      product code), and prove the four files pass on both hosts without weakening an
-      assertion."
-  - id: agents-sync-drain-flake
-    title: Fix the agents-sync bounded-drain publication flake (sase-xo)
-    depends_on: []
-    size: large
-    description:
-      "agents-sync-drain-flake:
-      tests/agents_sync/test_commit_publication_bounded_drain.py::test_blocked_render_is_bounded_and_leaves_the_request_queued
-      still fails in loaded full lanes after the 1a69c8947d/4adee846d3 fix (recurrences
-      2026-10-27 and 2026-10-31; one report measured 15.63s after git index-lock
-      backoff). Find what still consumes the wall-clock budget under load and fix it
-      without raising the elapsed bound or dropping the queued-request assertion."
-  - id: core-sudo-runner-etxtbsy
-    title: Fix the sase-core sudo_runner ETXTBSY fixture flake (sase-15h)
-    depends_on: []
-    size: medium
-    description:
-      "core-sudo-runner-etxtbsy: in sase-core, sase_gateway sudo_runner tests
-      intermittently fail with ETXTBSY (os error 26) when exec'ing fixture scripts under
-      the parallel core check (+7, latest 2026-10-31). Confirm the fork-inherited
-      write-fd race on freshly written fixture executables and fix the fixture so no
-      test can exec a script while any process still holds it open for writing, keeping
-      every sudo_runner assertion."
+- id: apollo-prompt-render
+  title: Fix the apollo-only ACE prompt-render and hint failures (sase-1ia, sase-1l3,
+    sase-1hy)
+  depends_on: []
+  size: large
+  description: 'apollo-prompt-render: the ACE prompt-render and hint widget tests
+    behind sase-1ia, sase-1l3 and sase-1hy fail deterministically on apollo (7-9 failed
+    of 30 across four files at sase 31a28d9618) and pass 30/30 on athena. Bisect the
+    apollo host input that changes the result, fix it where it is owned (test isolation
+    or product code), and prove the four files pass on both hosts without weakening
+    an assertion.'
+- id: agents-sync-drain-flake
+  title: Fix the agents-sync bounded-drain publication flake (sase-xo)
+  depends_on: []
+  size: large
+  description: 'agents-sync-drain-flake: tests/agents_sync/test_commit_publication_bounded_drain.py::test_blocked_render_is_bounded_and_leaves_the_request_queued
+    still fails in loaded full lanes after the 1a69c8947d/4adee846d3 fix (recurrences
+    2026-10-27 and 2026-10-31; one report measured 15.63s after git index-lock backoff).
+    Find what still consumes the wall-clock budget under load and fix it without raising
+    the elapsed bound or dropping the queued-request assertion.'
+- id: core-sudo-runner-etxtbsy
+  title: Fix the sase-core sudo_runner ETXTBSY fixture flake (sase-15h)
+  depends_on: []
+  size: medium
+  description: 'core-sudo-runner-etxtbsy: in sase-core, sase_gateway sudo_runner tests
+    intermittently fail with ETXTBSY (os error 26) when exec''ing fixture scripts
+    under the parallel core check (+7, latest 2026-10-31). Confirm the fork-inherited
+    write-fd race on freshly written fixture executables and fix the fixture so no
+    test can exec a script while any process still holds it open for writing, keeping
+    every sudo_runner assertion.'
 proposed_by: bbugyi200.athena.sase-1qn.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-11-01 18:08:16
 status: wip
+bead_id: sase-1qt
 ---
 
-- **PROMPT:**
-  [prompts/202611/task_backlog_epic_5.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/task_backlog_epic_5.md)
-- **PARENT:**
-  [202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--plans/blob/main/202611/task_backlog_epic_4.md)
+- **PROMPT:** [prompts/202611/task_backlog_epic_5.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/task_backlog_epic_5.md)
+- **PARENT:** [202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--plans/blob/main/202611/task_backlog_epic_4.md)
+- **BEAD:** [sase-1qt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qt/README.md)
 
 # Task Backlog Epic 5: Apollo-Only Prompt-Render Red, Agents-Sync Drain Flake, and the sase-core sudo_runner ETXTBSY Flake
 
