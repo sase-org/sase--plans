@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "footer_hint",
+      "kind": "choice",
+      "ask": "Should the Agents footer show `l running member` whenever the selected clan has exactly one running member?",
+      "why": "Mirrors the `h parent clan` chip, so the jump is discoverable where it applies",
+      "choices": [
+        {
+          "key": "show",
+          "label": "Footer gets an `l running member` chip there; every golden selecting such a clan is regenerated"
+        },
+        {
+          "key": "omit",
+          "label": "`l` stays documented only in help and docs; fewer PNG goldens change"
+        }
+      ],
+      "default": "show",
+      "effective_default": "show",
+      "requested_verified": false
+    }
+  ]
+}
