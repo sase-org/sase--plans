@@ -1,97 +1,82 @@
 ---
 tier: epic
-title:
-  "Task backlog epic 4: stale whitelist rows, import-budget churn, and recurring check
-  flakes"
-goal:
-  Fix and close the five next-costliest open task beads, then continue the backlog chain
-  under the same ranking and closeout rules.
+title: 'Task backlog epic 4: stale whitelist rows, import-budget churn, and recurring
+  check flakes'
+goal: Fix and close the five next-costliest open task beads, then continue the backlog
+  chain under the same ranking and closeout rules.
 decisions:
   optional_scope:
-    ask:
-      Should phase workers include adjacent feature or memory changes discovered while
-      fixing these five bug and flake tasks?
+    ask: Should phase workers include adjacent feature or memory changes discovered
+      while fixing these five bug and flake tasks?
     choices:
-      keep_five_seeds:
-        Limit work to the five selected task beads; defer adjacent feature or memory
-        work to owner review
-      required_scope_only:
-        Include a feature or memory change only when a selected bead's acceptance
-        requires it
+      keep_five_seeds: Limit work to the five selected task beads; defer adjacent
+        feature or memory work to owner review
+      required_scope_only: Include a feature or memory change only when a selected
+        bead's acceptance requires it
     default: keep_five_seeds
-    why:
-      The selected beads are defect and flake work, so optional scope should stay under
-      owner control.
+    why: The selected beads are defect and flake work, so optional scope should stay
+      under owner control.
     answer: keep_five_seeds
 phases:
-  - id: epic-symbol-lifecycle
-    title: Stop --epic-symbol rows from outliving their bead (sase-o7)
-    depends_on: []
-    size: large
-    description:
-      "epic-symbol-lifecycle: find why Justfile --epic-symbol rows keyed to a closed
-      bead still reach master after the 8bea2e8414 close guard (2026-10-30 recurrences
-      for sase-1pj.4.1, sase-1pj.5.1.3, sase-1pj.5.1.4), and close that gap at the
-      lifecycle point that actually creates it, so unrelated agents stop discovering
-      stale rows at the symvision lint gate. Keep the closed-bead symvision refusal and
-      the epic-whitelist policy. Add regression coverage for the reproduced path."
-  - id: import-budget-churn
-    title:
-      Stop behavior-neutral module splits from turning the TUI import budget red
-      (sase-1ic)
-    depends_on: []
-    size: large
-    description:
-      "import-budget-churn: the first-party TUI import-count guard in
-      tests/ace/tui/test_app_import_budget.py has been re-raised after toobig splits and
-      reopened twice (+35). Make the guard catch genuine new import-path work while
-      staying neutral to mechanical splits of modules already on the path, without
-      weakening the deferred-module list or just raising the cap again. Verify against
-      recent split commits and a synthetic new eager import."
-  - id: core-federation-socket-flake
-    title: Fix the sase-core federation_worker socket test flake (sase-1gz)
-    depends_on: []
-    size: large
-    description:
-      "core-federation-socket-flake: in sase-core, reproduce
-      federation_worker::imp::tests::ipc::listener_creates_private_socket_and_rejects_symlink
-      failing under the parallel sase_gateway gate (+15, ten recurrences since
-      2026-10-18, latest 2026-11-01). Find the shared-state or timing cause (for example
-      temp-dir or socket-path races in listener recovery) and fix it without weakening
-      the private-socket or symlink-rejection assertions. Prove it with a loaded loop."
-  - id: zsh-completion-pty-flake
-    title: Fix the zsh sbd alias completion PTY flake (sase-13a)
-    depends_on: []
-    size: large
-    description:
-      "zsh-completion-pty-flake: reproduce
-      tests/completion/test_zsh_smoke.py::test_alias_sbd_completes_static_bead_tree
-      timing out in loaded full lanes (+15, latest 2026-10-31). Identify whether PTY
-      startup, completion-cache warmup, or shared state causes the stall, and fix the
-      cause without dropping the alias completion assertion or simply raising its
-      timeout."
-  - id: agy-probe-timeout-flake
-    title: Fix the AGY usage-probe rate-limit timeout flake (sase-19m)
-    depends_on: []
-    size: medium
-    description:
-      "agy-probe-timeout-flake:
-      tests/llm_provider/test_agy_usage_probe.py::test_agy_usage_probe_timeout_with_rate_limit_stderr_is_rate_limited
-      fails under the loaded diff-scoped lane (timeout classified instead of
-      rate_limited; latest +1 2026-11-01) and passes alone. Make the test and, if
-      needed, the probe classification deterministic under load while keeping the
-      rate-limit-wins-over-timeout contract."
+- id: epic-symbol-lifecycle
+  title: Stop --epic-symbol rows from outliving their bead (sase-o7)
+  depends_on: []
+  size: large
+  description: 'epic-symbol-lifecycle: find why Justfile --epic-symbol rows keyed
+    to a closed bead still reach master after the 8bea2e8414 close guard (2026-10-30
+    recurrences for sase-1pj.4.1, sase-1pj.5.1.3, sase-1pj.5.1.4), and close that
+    gap at the lifecycle point that actually creates it, so unrelated agents stop
+    discovering stale rows at the symvision lint gate. Keep the closed-bead symvision
+    refusal and the epic-whitelist policy. Add regression coverage for the reproduced
+    path.'
+- id: import-budget-churn
+  title: Stop behavior-neutral module splits from turning the TUI import budget red
+    (sase-1ic)
+  depends_on: []
+  size: large
+  description: 'import-budget-churn: the first-party TUI import-count guard in tests/ace/tui/test_app_import_budget.py
+    has been re-raised after toobig splits and reopened twice (+35). Make the guard
+    catch genuine new import-path work while staying neutral to mechanical splits
+    of modules already on the path, without weakening the deferred-module list or
+    just raising the cap again. Verify against recent split commits and a synthetic
+    new eager import.'
+- id: core-federation-socket-flake
+  title: Fix the sase-core federation_worker socket test flake (sase-1gz)
+  depends_on: []
+  size: large
+  description: 'core-federation-socket-flake: in sase-core, reproduce federation_worker::imp::tests::ipc::listener_creates_private_socket_and_rejects_symlink
+    failing under the parallel sase_gateway gate (+15, ten recurrences since 2026-10-18,
+    latest 2026-11-01). Find the shared-state or timing cause (for example temp-dir
+    or socket-path races in listener recovery) and fix it without weakening the private-socket
+    or symlink-rejection assertions. Prove it with a loaded loop.'
+- id: zsh-completion-pty-flake
+  title: Fix the zsh sbd alias completion PTY flake (sase-13a)
+  depends_on: []
+  size: large
+  description: 'zsh-completion-pty-flake: reproduce tests/completion/test_zsh_smoke.py::test_alias_sbd_completes_static_bead_tree
+    timing out in loaded full lanes (+15, latest 2026-10-31). Identify whether PTY
+    startup, completion-cache warmup, or shared state causes the stall, and fix the
+    cause without dropping the alias completion assertion or simply raising its timeout.'
+- id: agy-probe-timeout-flake
+  title: Fix the AGY usage-probe rate-limit timeout flake (sase-19m)
+  depends_on: []
+  size: medium
+  description: 'agy-probe-timeout-flake: tests/llm_provider/test_agy_usage_probe.py::test_agy_usage_probe_timeout_with_rate_limit_stderr_is_rate_limited
+    fails under the loaded diff-scoped lane (timeout classified instead of rate_limited;
+    latest +1 2026-11-01) and passes alone. Make the test and, if needed, the probe
+    classification deterministic under load while keeping the rate-limit-wins-over-timeout
+    contract.'
 proposed_by: bbugyi200.athena.sase-1pu.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-11-01 14:34:46
 status: wip
+bead_id: sase-1qn
 ---
 
-- **PROMPT:**
-  [prompts/202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/task_backlog_epic_4.md)
-- **PARENT:**
-  [202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_3.md)
+- **PROMPT:** [prompts/202611/task_backlog_epic_4.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/task_backlog_epic_4.md)
+- **PARENT:** [202610/task_backlog_epic_3.md](https://github.com/sase-org/sase--plans/blob/main/202610/task_backlog_epic_3.md)
+- **BEAD:** [sase-1qn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qn/README.md)
 
 # Task Backlog Epic 4: Stale Whitelist Rows, Import-Budget Churn, and Recurring Check Flakes
 
