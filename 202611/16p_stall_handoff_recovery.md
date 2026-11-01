@@ -1,93 +1,84 @@
 ---
 tier: epic
 title: Unstick the 16p session and close its handoff-slot failure chain
-goal:
-  The 16p recovery work is finished (sase-core rustfmt fix landed, broken LaunchApproval
-  withdrawn, remaining epics relaunched), and one interrupted gate command can no longer
-  block later handoffs, orphan a monitor, leave an actionable lost gate, or discard an
-  accepted final declaration.
+goal: The 16p recovery work is finished (sase-core rustfmt fix landed, broken LaunchApproval
+  withdrawn, remaining epics relaunched), and one interrupted gate command can no
+  longer block later handoffs, orphan a monitor, leave an actionable lost gate, or
+  discard an accepted final declaration.
 decisions:
   lost_intent_outcome:
-    ask:
-      Should a turn whose accepted declaration postdates its lost gate intent end DONE
-      after finalizers?
+    ask: Should a turn whose accepted declaration postdates its lost gate intent end
+      DONE after finalizers?
     choices:
       complete: Finalizers run; the turn ends DONE with a lost-gate warning notification
-      fail_after_finalize:
-        Finalizers run; the run still ends FAILED with the lost-gate error
+      fail_after_finalize: Finalizers run; the run still ends FAILED with the lost-gate
+        error
     default: complete
-    why:
-      The agent saw the failed gate itself, and FAILED invites retries of finished work
+    why: The agent saw the failed gate itself, and FAILED invites retries of finished
+      work
     answer: complete
   prune_window:
-    ask:
-      How long should already-handled pending actions stay in the store before writes
-      prune them?
+    ask: How long should already-handled pending actions stay in the store before
+      writes prune them?
     choices:
-      week:
-        Prune handled entries after 7 days; the 13 MB store drops below 1,000 entries
-      month:
-        Prune handled entries after 30 days; about 2,250 handled entries (~5 MB) remain
+      week: Prune handled entries after 7 days; the 13 MB store drops below 1,000
+        entries
+      month: Prune handled entries after 30 days; about 2,250 handled entries (~5
+        MB) remain
     default: week
-    why:
-      Notification rows compact after 3 days, so week-old handled entries annotate
+    why: Notification rows compact after 3 days, so week-old handled entries annotate
       nothing
     answer: week
 phases:
-  - id: core-fmt
-    title: Land the lost sase-core rustfmt fix
-    depends_on: []
-    size: small
-    description:
-      "core-fmt: re-run sase-core's pinned formatter on the staged_handoff modules, pass
-      its check gate, and commit."
-  - id: recover-epics
-    title: Finish the recovery plan 16p abandoned
-    depends_on: []
-    size: medium
-    description:
-      "recover-epics: withdraw launch-de85665f, re-inventory, then redo steps 4, 5, and
-      7 of the athena-restart recovery plan."
-  - id: handoff-slot
-    title: Reclaim dead-owner reservations and admit monitors before spawning
-    depends_on: []
-    size: medium
-    description:
-      "handoff-slot: reclaim staging reservations whose owner died; run handoff
-      admission before legacy monitor start spawns."
-  - id: gate-entry-atomic
-    title: Make gate entry signal-safe and withdraw lost gates
-    depends_on: []
-    size: medium
-    description:
-      "gate-entry-atomic: turn termination signals into compensation during gate entry;
-      withdraw notifications of lost gate turns; fix wording."
-  - id: intent-lost-finalize
-    title: Honor accepted declarations made after a lost gate intent
-    depends_on:
-      - gate-entry-atomic
-    size: medium
-    description:
-      "intent-lost-finalize: let a later accepted final declaration supersede a lost
-      gate intent so finalizers still run."
-  - id: pending-action-prune
-    title: Bound the shared pending-action store
-    depends_on:
-      - core-fmt
-    size: medium
-    description:
-      "pending-action-prune: prune old already-handled entries in sase-core's
-      pending-action store without reviving handled notifications."
+- id: core-fmt
+  title: Land the lost sase-core rustfmt fix
+  depends_on: []
+  size: small
+  description: 'core-fmt: re-run sase-core''s pinned formatter on the staged_handoff
+    modules, pass its check gate, and commit.'
+- id: recover-epics
+  title: Finish the recovery plan 16p abandoned
+  depends_on: []
+  size: medium
+  description: 'recover-epics: withdraw launch-de85665f, re-inventory, then redo steps
+    4, 5, and 7 of the athena-restart recovery plan.'
+- id: handoff-slot
+  title: Reclaim dead-owner reservations and admit monitors before spawning
+  depends_on: []
+  size: medium
+  description: 'handoff-slot: reclaim staging reservations whose owner died; run handoff
+    admission before legacy monitor start spawns.'
+- id: gate-entry-atomic
+  title: Make gate entry signal-safe and withdraw lost gates
+  depends_on: []
+  size: medium
+  description: 'gate-entry-atomic: turn termination signals into compensation during
+    gate entry; withdraw notifications of lost gate turns; fix wording.'
+- id: intent-lost-finalize
+  title: Honor accepted declarations made after a lost gate intent
+  depends_on:
+  - gate-entry-atomic
+  size: medium
+  description: 'intent-lost-finalize: let a later accepted final declaration supersede
+    a lost gate intent so finalizers still run.'
+- id: pending-action-prune
+  title: Bound the shared pending-action store
+  depends_on:
+  - core-fmt
+  size: medium
+  description: 'pending-action-prune: prune old already-handled entries in sase-core''s
+    pending-action store without reviving handled notifications.'
 proposed_by: bbugyi200.athena.16r
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-01 12:02:51
 status: wip
+bead_id: sase-1qk
 ---
 
-- **PROMPT:**
-  [prompts/202611/16p_stall_handoff_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/16p_stall_handoff_recovery.md)
+- **PROMPT:** [prompts/202611/16p_stall_handoff_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/16p_stall_handoff_recovery.md)
+- **BEAD:** [sase-1qk](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qk/README.md)
 
 # Unstick the 16p session and close the handoff-slot failure chain behind it
 
