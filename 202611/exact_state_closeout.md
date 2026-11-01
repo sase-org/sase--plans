@@ -1,8 +1,7 @@
 ---
 tier: tale
 title: Finish exact-run reads and land published-state repair
-goal:
-  Published-state repair validates current run identity, bounds all reads, preserves
+goal: Published-state repair validates current run identity, bounds all reads, preserves
   retry progress, and closes sase-1pu.5.1.5 and its ready parent chain.
 size: medium
 proposed_by: bbugyi200.athena.sase-1pu.5.1.5.land
@@ -15,11 +14,6 @@ status: done
   [202611/published_state_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202611/published_state_landing_repairs.md)
 - **BEAD:**
   [sase-1pu.5.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pu/sase-1pu.5.1.5.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1pu.5.1.5.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pu.5.1.5.land.md)
-- **COMMITS:**
-  - [0547d23](https://github.com/sase-org/sase/commit/0547d23ce368aa28e6c028a0335169fd8019d82d)
-    — fix(agents-sync): bound exact-run identity and repair deadlines
 
 # Finish exact-run reads and land published-state repair
 
