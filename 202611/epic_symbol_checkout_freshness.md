@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Diagnose stale epic-symbol rows before expensive verification
-goal:
-  Distinguish obsolete checkout rows from live whitelist defects and provide an early
-  actionable refusal while preserving close and Symvision enforcement.
+goal: Distinguish obsolete checkout rows from live whitelist defects and provide an
+  early actionable refusal while preserving close and Symvision enforcement.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qn.1
 proposed_with: codex/gpt-6-astra
 bead: sase-1qn.1
-create_time: 2026-11-01 14:54:40
-status: wip
+status: done
 ---
 
 - **PARENT:**
