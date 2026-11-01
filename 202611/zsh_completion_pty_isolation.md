@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Isolate zsh PTY completion tests from the live candidate backend
-goal:
-  Resolve sase-13a for phase sase-1qn.4 while preserving real-shell assertions and
-  timeout budgets.
+goal: Resolve sase-13a for phase sase-1qn.4 while preserving real-shell assertions
+  and timeout budgets.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qn.4
 proposed_with: codex/gpt-6-astra
 bead: sase-1qn.4
-create_time: 2026-11-01 15:15:28
-status: wip
+status: done
 ---
 
 - **PARENT:**
