@@ -1,184 +1,170 @@
 ---
 tier: epic
-title: "Agent Hijack: stop a stalled agent, keep its work, recover in one keypress"
-goal: "A user can hijack a stalled sase agent (,k, the kill dialog's h, or `sase agent
-  hijack NAME`). Its process tree stops, but its workspace claim, Agents-tab node, and
-  evidence stay. The node shows a ⏏ HIJACKED status, and <enter> opens a
-  single-keypress recovery panel: escalate to a smarter model, continue, or instruct in
-  the same workspace; restart or edit from a fresh workspace after a verified snapshot;
+title: 'Agent Hijack: stop a stalled agent, keep its work, recover in one keypress'
+goal: 'A user can hijack a stalled sase agent (,k, the kill dialog''s h, or `sase
+  agent hijack NAME`). Its process tree stops, but its workspace claim, Agents-tab
+  node, and evidence stay. The node shows a ⏏ HIJACKED status, and <enter> opens a
+  single-keypress recovery panel: escalate to a smarter model, continue, or instruct
+  in the same workspace; restart or edit from a fresh workspace after a verified snapshot;
   view the diff, open a shell, or dismiss. Every path is durable, exactly-once, and
   fails closed so work is never silently lost.
 
-  "
+  '
 decisions:
   enter_default:
     ask: Which keep-work action should a second Enter (⏎⏎) run in the recovery panel?
     choices:
-      escalate:
-        Escalate (or Switch at the top rung); Continue only when no other model exists
-      continue: Continue on the same model; climbing to a bigger model always needs u
+      escalate: Escalate (or Switch at the top rung); Continue only when no other
+        model exists
+      continue: Continue on the same model; climbing to a bigger model always needs
+        u
     default: escalate
-    why:
-      Escalate is the feature's headline, and like Continue it never releases the
+    why: Escalate is the feature's headline, and like Continue it never releases the
       workspace
     answer: escalate
   successor_context:
-    ask:
-      How much of the hijacked transcript should keep-work successors receive by
+    ask: How much of the hijacked transcript should keep-work successors receive by
       default?
     choices:
-      fork:
-        "Inline the transcript via #fork; fall back to the brief when over the
-        continuation budget"
-      brief:
-        Send only the bounded evidence brief plus the transcript path; cheaper, more
-        re-exploration
+      fork: 'Inline the transcript via #fork; fall back to the brief when over the
+        continuation budget'
+      brief: Send only the bounded evidence brief plus the transcript path; cheaper,
+        more re-exploration
     default: fork
     why: The successor re-explores least, and the budget fallback caps the cost
     answer: fork
   glossary_term:
     ask: Publish an Agent Hijack glossary strand when the feature lands?
     memory:
-      - glossary:agent-hijack
-    requested:
-      An "agent hijack" (aka "hijack"--we should add a good new glossary term for this)
-      is meant to describe the process of killing a sase agent without releasing its
-      workspace or dismissing it.
+    - glossary:agent-hijack
+    requested: An "agent hijack" (aka "hijack"--we should add a good new glossary
+      term for this) is meant to describe the process of killing a sase agent without
+      releasing its workspace or dismissing it.
     default: true
     answer: true
   decision_records:
-    ask:
-      Record the two hijack design decisions (never downgrade; custody held until
+    ask: Record the two hijack design decisions (never downgrade; custody held until
       resolved) as decision records?
     memory:
-      - decisions:hijack-escalation-never-downgrades
-      - decisions:hijack-holds-custody-until-resolved
-    requested:
-      Review the agent_hijack_held_workspace_recovery.md file in the research sidecar
-      repo for context and inspiration before planning. I agree with all of the
-      requirements recommended in that research file
+    - decisions:hijack-escalation-never-downgrades
+    - decisions:hijack-holds-custody-until-resolved
+    requested: Review the agent_hijack_held_workspace_recovery.md file in the research
+      sidecar repo for context and inspiration before planning. I agree with all of
+      the requirements recommended in that research file
     default: true
     answer: false
 phases:
-  - id: core_ledger
-    title: "sase-core: hijack statuses, ledger wire, and eligibility"
-    depends_on: []
-    size: medium
-    description:
-      "core_ledger: in sase-core, add the HIJACKED/ESCALATED/CONTINUED status rows and
-      the done-marker-to-status mapping, the AgentHijackRecordWire v1 state machine, the
-      eligibility function, and the auto-restart exclusion. Then expose PyO3 bindings,
-      bump sase's pin, and add the thin Python wrappers."
-  - id: core_escalation
-    title: "sase-core: escalation policy, continuation prompt, and config"
-    depends_on: []
-    size: medium
-    description:
-      "core_escalation: add the never-downgrade escalation_target function and the
-      continuation-prompt builder in sase-core with bindings and a pin bump, plus the
-      agent_hijack config section (escalation_ladder, successor_context), its schema,
-      and its accessor in sase."
-  - id: settle
-    title: Runner settlement that keeps custody
-    depends_on:
-      - core_ledger
-    size: medium
-    description:
-      "settle: add the Python ledger store, the hijack-mode user-kill intent, and the
-      runner capability stamp. The runner learns to settle `outcome: hijacked` while
-      holding its workspace claim: the SIGTERM handler, the killed iteration, the
-      shutdown hold, done.json, and the finalize boundary."
-  - id: stop
-    title: The stop protocol and `sase agent hijack`
-    depends_on:
-      - settle
-    size: medium
-    description:
-      "stop: create the agent_hijack beta flag. Implement the ordered stop orchestrator:
-      eligibility, record and intent, pin, durable signal, fallback settlement,
-      survivors, lost race, then evidence and a strict snapshot before `held`. Expose it
-      through `sase ops agent persist-hijack` and `sase agent hijack`."
-  - id: custody
-    title: Every release path respects a hijack
-    depends_on:
-      - stop
-    size: medium
-    description:
-      "custody: teach stale cleanup (with a TTL measured from hijacked_at and a snapshot
-      before expiry release), kill persistence, auto-restart, late runner callbacks,
-      waits, the stranded detector, and `sase agent list/show` about hijacked turns."
-  - id: recover_keep
-    title: Keep-the-work recovery (Escalate, Switch, Continue, Instruct)
-    depends_on:
-      - custody
-      - core_escalation
-    size: large
-    description:
-      "recover_keep: add the exactly-once resolution transaction, strict same-workspace
-      successor launches with required inheritance, the hijack #fork frame, predecessor
-      ESCALATED/CONTINUED settlement, crash reconciliation, the recovery preview API,
-      and `sase agent recover` for escalate and continue."
-  - id: recover_release
-    title: Start-over and leave recovery (Restart, Edit backend, Dismiss)
-    depends_on:
-      - recover_keep
-    size: medium
-    description:
-      "recover_release: add snapshot-verified restart and dismiss resolutions, restart
-      with a replacement prompt for Edit, `sase agent restart` and `sase agent kill`
-      awareness of HIJACKED targets, and preview availability reasons for those actions."
-  - id: tui_render
-    title: Agents-tab rendering and the ,k way in
-    depends_on:
-      - stop
-    size: medium
-    description:
-      "tui_render: add the ⏏ HIJACKED row styling, the HIJACKING…/RECOVERING… overlays,
-      the stop-failed badge, the workspace-held detail line, and footer chips. Add the
-      flag-gated ,k leader key and the kill dialog's h choice, the hijack_agent keymap
-      config, help entries, and visual snapshots."
-  - id: tui_panel
-    title: The recovery panel
-    depends_on:
-      - tui_render
-      - recover_release
-    size: medium
-    description:
-      "tui_panel: extend AgentActionChooserModal with a header, single-line sectioned
-      rows, disabled rows with reasons, a pending preview state, and an Enter arming
-      delay. Route Enter on HIJACKED to the panel and wire u/c/r/v/t/d plus x-to-dismiss
-      through durable procs, with 80x24 visual snapshots."
-  - id: tui_prompt
-    title: Instruct and Edit through the prompt bar
-    depends_on:
-      - tui_panel
-    size: medium
-    description:
-      "tui_prompt: wire panel keys i and e to the prompt bar. Instruct pre-fills the
-      continuation prompt and submits through recover. Edit pre-fills the original
-      prompt and releases nothing until submit, so cancelling either leaves the agent
-      HIJACKED."
-  - id: land
-    title: Remove the flag, document, and prove it end to end
-    depends_on:
-      - custody
-      - tui_prompt
-    size: medium
-    description:
-      "land: run an end-to-end hijack-and-escalate test across primary and linked repos,
-      delete the agent_hijack flag's Off branch and close its bead, update the reference
-      docs, and publish the glossary strand and decision records per the memory
-      decisions."
+- id: core_ledger
+  title: 'sase-core: hijack statuses, ledger wire, and eligibility'
+  depends_on: []
+  size: medium
+  description: 'core_ledger: in sase-core, add the HIJACKED/ESCALATED/CONTINUED status
+    rows and the done-marker-to-status mapping, the AgentHijackRecordWire v1 state
+    machine, the eligibility function, and the auto-restart exclusion. Then expose
+    PyO3 bindings, bump sase''s pin, and add the thin Python wrappers.'
+- id: core_escalation
+  title: 'sase-core: escalation policy, continuation prompt, and config'
+  depends_on: []
+  size: medium
+  description: 'core_escalation: add the never-downgrade escalation_target function
+    and the continuation-prompt builder in sase-core with bindings and a pin bump,
+    plus the agent_hijack config section (escalation_ladder, successor_context), its
+    schema, and its accessor in sase.'
+- id: settle
+  title: Runner settlement that keeps custody
+  depends_on:
+  - core_ledger
+  size: medium
+  description: 'settle: add the Python ledger store, the hijack-mode user-kill intent,
+    and the runner capability stamp. The runner learns to settle `outcome: hijacked`
+    while holding its workspace claim: the SIGTERM handler, the killed iteration,
+    the shutdown hold, done.json, and the finalize boundary.'
+- id: stop
+  title: The stop protocol and `sase agent hijack`
+  depends_on:
+  - settle
+  size: medium
+  description: 'stop: create the agent_hijack beta flag. Implement the ordered stop
+    orchestrator: eligibility, record and intent, pin, durable signal, fallback settlement,
+    survivors, lost race, then evidence and a strict snapshot before `held`. Expose
+    it through `sase ops agent persist-hijack` and `sase agent hijack`.'
+- id: custody
+  title: Every release path respects a hijack
+  depends_on:
+  - stop
+  size: medium
+  description: 'custody: teach stale cleanup (with a TTL measured from hijacked_at
+    and a snapshot before expiry release), kill persistence, auto-restart, late runner
+    callbacks, waits, the stranded detector, and `sase agent list/show` about hijacked
+    turns.'
+- id: recover_keep
+  title: Keep-the-work recovery (Escalate, Switch, Continue, Instruct)
+  depends_on:
+  - custody
+  - core_escalation
+  size: large
+  description: 'recover_keep: add the exactly-once resolution transaction, strict
+    same-workspace successor launches with required inheritance, the hijack #fork
+    frame, predecessor ESCALATED/CONTINUED settlement, crash reconciliation, the recovery
+    preview API, and `sase agent recover` for escalate and continue.'
+- id: recover_release
+  title: Start-over and leave recovery (Restart, Edit backend, Dismiss)
+  depends_on:
+  - recover_keep
+  size: medium
+  description: 'recover_release: add snapshot-verified restart and dismiss resolutions,
+    restart with a replacement prompt for Edit, `sase agent restart` and `sase agent
+    kill` awareness of HIJACKED targets, and preview availability reasons for those
+    actions.'
+- id: tui_render
+  title: Agents-tab rendering and the ,k way in
+  depends_on:
+  - stop
+  size: medium
+  description: 'tui_render: add the ⏏ HIJACKED row styling, the HIJACKING…/RECOVERING…
+    overlays, the stop-failed badge, the workspace-held detail line, and footer chips.
+    Add the flag-gated ,k leader key and the kill dialog''s h choice, the hijack_agent
+    keymap config, help entries, and visual snapshots.'
+- id: tui_panel
+  title: The recovery panel
+  depends_on:
+  - tui_render
+  - recover_release
+  size: medium
+  description: 'tui_panel: extend AgentActionChooserModal with a header, single-line
+    sectioned rows, disabled rows with reasons, a pending preview state, and an Enter
+    arming delay. Route Enter on HIJACKED to the panel and wire u/c/r/v/t/d plus x-to-dismiss
+    through durable procs, with 80x24 visual snapshots.'
+- id: tui_prompt
+  title: Instruct and Edit through the prompt bar
+  depends_on:
+  - tui_panel
+  size: medium
+  description: 'tui_prompt: wire panel keys i and e to the prompt bar. Instruct pre-fills
+    the continuation prompt and submits through recover. Edit pre-fills the original
+    prompt and releases nothing until submit, so cancelling either leaves the agent
+    HIJACKED.'
+- id: land
+  title: Remove the flag, document, and prove it end to end
+  depends_on:
+  - custody
+  - tui_prompt
+  size: medium
+  description: 'land: run an end-to-end hijack-and-escalate test across primary and
+    linked repos, delete the agent_hijack flag''s Off branch and close its bead, update
+    the reference docs, and publish the glossary strand and decision records per the
+    memory decisions.'
 proposed_by: bbugyi200.apollo.research.33.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-02 17:42:06
 status: wip
+bead_id: sase-1qz
 ---
 
-- **PROMPT:**
-  [prompts/202611/agent_hijack.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_hijack.md)
+- **PROMPT:** [prompts/202611/agent_hijack.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_hijack.md)
+- **BEAD:** [sase-1qz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qz/README.md)
 
 # Plan: Agent Hijack
 
