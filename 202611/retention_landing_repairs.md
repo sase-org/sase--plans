@@ -1,46 +1,42 @@
 ---
 tier: epic
 title: Finish stranded workspace retention after the landing audit
-goal:
-  Terminal handoffs retain the exact dirty workspace through settlement failures, use
-  real custody evidence, and converge recovery state after transfer or release.
+goal: Terminal handoffs retain the exact dirty workspace through settlement failures,
+  use real custody evidence, and converge recovery state after transfer or release.
 parent_bead: sase-1pj.7.1
 phases:
-  - id: settlement-evidence
-    title: Make retention evidence and failure settlement safe
-    size: medium
-    depends_on: []
-    description:
-      "settlement-evidence: unify monitor repository evidence, require actual successor
-      custody, and preserve exact claims when retention cannot complete."
-  - id: gate-origin
-    title: Preserve the actual origin across failed gate creation
-    size: medium
-    depends_on:
-      - settlement-evidence
-    description:
-      "gate-origin: repair session-member creator identity and retain dirty origin work
-      when detached gate publication fails."
-  - id: recovery-convergence
-    title: Converge recovery records and verify the combined lifecycle
-    size: medium
-    depends_on:
-      - settlement-evidence
-      - gate-origin
-    description:
-      "recovery-convergence: settle records through one contract after real transfer or
-      release, give truthful recovery guidance, and verify the integrated acceptance
-      matrix."
+- id: settlement-evidence
+  title: Make retention evidence and failure settlement safe
+  size: medium
+  depends_on: []
+  description: 'settlement-evidence: unify monitor repository evidence, require actual
+    successor custody, and preserve exact claims when retention cannot complete.'
+- id: gate-origin
+  title: Preserve the actual origin across failed gate creation
+  size: medium
+  depends_on:
+  - settlement-evidence
+  description: 'gate-origin: repair session-member creator identity and retain dirty
+    origin work when detached gate publication fails.'
+- id: recovery-convergence
+  title: Converge recovery records and verify the combined lifecycle
+  size: medium
+  depends_on:
+  - settlement-evidence
+  - gate-origin
+  description: 'recovery-convergence: settle records through one contract after real
+    transfer or release, give truthful recovery guidance, and verify the integrated
+    acceptance matrix.'
 proposed_by: bbugyi200.athena.sase-1pj.7.1.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-02 16:57:19
 status: wip
+bead_id: sase-1pj.7.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202611/retention_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/retention_landing_repairs.md)
-- **PARENT:**
-  [202610/carried_workspace_retention.md](https://github.com/sase-org/sase--plans/blob/main/202610/carried_workspace_retention.md)
+- **PROMPT:** [prompts/202611/retention_landing_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/retention_landing_repairs.md)
+- **PARENT:** [202610/carried_workspace_retention.md](https://github.com/sase-org/sase--plans/blob/main/202610/carried_workspace_retention.md)
+- **BEAD:** [sase-1pj.7.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.7.1.5.md)
 
 # Finish stranded workspace retention
 
