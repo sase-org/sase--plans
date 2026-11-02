@@ -1,14 +1,12 @@
 ---
 tier: tale
 size: medium
-title:
-  Measure and audit the installed publication re-prove, then land sase-1pt.9 and
-  sase-1pt
-goal:
-  The 73-run installed re-prove sample is measured against the pre-epic baseline, and
-  every sampled run's sidecar obligations are audited and reported. The stale Justfile
-  comment is gone. Epic sase-1pt.9 and its parent sase-1pt are closed, with their plan
-  files marked done.
+title: Measure and audit the installed publication re-prove, then land sase-1pt.9
+  and sase-1pt
+goal: The 73-run installed re-prove sample is measured against the pre-epic baseline,
+  and every sampled run's sidecar obligations are audited and reported. The stale
+  Justfile comment is gone. Epic sase-1pt.9 and its parent sase-1pt are closed, with
+  their plan files marked done.
 proposed_by: bbugyi200.athena.sase-1pt.9.land
 proposed_with: claude/opus
 bead: sase-1pt.9
@@ -17,11 +15,6 @@ status: done
 
 - **BEAD:**
   [sase-1pt.9](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pt/sase-1pt.9.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1pt.9.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pt.9.land.md)
-- **COMMITS:**
-  - [ce7d60a](https://github.com/sase-org/sase/commit/ce7d60a6666401567a0071945070c6f8c844031e)
-    — chore(justfile): drop stale sase-1pt.6 publisher_is_live comment
 
 # Measure and audit the installed publication re-prove, then land sase-1pt.9 and sase-1pt
 
