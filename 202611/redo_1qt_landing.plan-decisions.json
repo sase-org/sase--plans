@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "chain_continuation",
+      "kind": "choice",
+      "ask": "Should this tale propose the next backlog epic from its code step, as the backlog contract asks?",
+      "why": "The gate bug that destroyed the last tale's work (sase-1pj.7.1) is still unfixed",
+      "choices": [
+        {
+          "key": "defer_to_owner",
+          "label": "Repairs land safely; tale only refreshes the epic-6 draft and the owner proposes it"
+        },
+        {
+          "key": "propose_after_backup",
+          "label": "Chain keeps moving; tale backs up diffs then proposes, the step that lost work last time"
+        }
+      ],
+      "default": "defer_to_owner",
+      "effective_default": "defer_to_owner",
+      "requested_verified": false
+    }
+  ]
+}
