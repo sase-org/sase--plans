@@ -1,111 +1,99 @@
 ---
 tier: epic
-title:
-  Green Full CI on master, a containing published core, and sase v0.19.0 confirmed on
-  PyPI
-goal: "Full CI is green in every job on master. sase-core's master CI is green, and a
-  complete published sase-core-rs contains master's source pin. A release.yml rehearsal
-  at master is accepted. Release-please PR #322 merges, and sase 0.19.0 is confirmed on
-  PyPI. The lander that observes the release records the evidence as an artifact.
+title: Green Full CI on master, a containing published core, and sase v0.19.0 confirmed
+  on PyPI
+goal: 'Full CI is green in every job on master. sase-core''s master CI is green, and
+  a complete published sase-core-rs contains master''s source pin. A release.yml rehearsal
+  at master is accepted. Release-please PR #322 merges, and sase 0.19.0 is confirmed
+  on PyPI. The lander that observes the release records the evidence as an artifact.
 
-  "
+  '
 decisions:
   merge_path:
-    ask: "Who should merge release PR #322 and start release.yml at the v0.19.0 tag?"
+    ask: 'Who should merge release PR #322 and start release.yml at the v0.19.0 tag?'
     choices:
-      steward:
-        The release steward, after E2's steward fixes land and you enable merge
+      steward: The release steward, after E2's steward fixes land and you enable merge
         authority; slower
-      agent:
-        This epic's release phase, using the steward's own merge argv; faster, bypasses
-        the steward
+      agent: This epic's release phase, using the steward's own merge argv; faster,
+        bypasses the steward
     default: steward
-    why:
-      The steward is the designed single decider, and E2's exit wants a steward release
+    why: The steward is the designed single decider, and E2's exit wants a steward
+      release
     answer: steward
   reboot_watchdog:
-    ask:
-      Install a self-removing hourly crontab watchdog that relaunches this epic after a
-      reboot strands it?
+    ask: Install a self-removing hourly crontab watchdog that relaunches this epic
+      after a reboot strands it?
     default: true
-    why:
-      The 2026-11-01 reboot stranded the last v0.19.0 epic's agents and monitors for
-      days
+    why: The 2026-11-01 reboot stranded the last v0.19.0 epic's agents and monitors
+      for days
     answer: true
 phases:
-  - id: watchdog
-    title: A reboot cannot strand this epic
-    depends_on: []
-    size: small
-    description:
-      "watchdog: install a self-removing hourly crontab watchdog that relaunches this
-      epic's agents after a reboot, or close at once when declined."
-  - id: gate-red
-    title: Master Gate is green at master HEAD
-    depends_on: []
-    size: small
-    description:
-      "gate-red: fix the marker-path audit red left by the readout split, plus any other
-      deterministic Master Gate red at the tip."
-  - id: blocking-flakes
-    title: The blocking test lanes stop flaking
-    depends_on: []
-    size: medium
-    description:
-      "blocking-flakes: fix the races behind intermittent reds in Master Gate's jobs and
-      in Full CI's lint and test (3.12|3.13|3.14) jobs."
-  - id: advisory-lanes
-    title: Full CI's advisory jobs pass
-    depends_on: []
-    size: medium
-    description:
-      "advisory-lanes: make visual-test, perf-floors, tutorial-tests, and
-      ace-page-group-isolation pass on Full CI."
-  - id: core
-    title: A complete published sase-core-rs contains master's source pin
-    depends_on: []
-    size: medium
-    description:
-      "core: turn sase-core's macOS CI green, wait for the daily core cut, and ratchet
-      master's exact core pin to it."
-  - id: full-ci
-    title: One Full CI run on master is green in every job
-    depends_on:
-      - gate-red
-      - blocking-flakes
-      - advisory-lanes
-    size: medium
-    description:
-      "full-ci: dispatch Full CI on a tip holding every fix, repair what is still red,
-      and repeat until a first attempt is green."
-  - id: rehearse
-    title: An accepted release.yml rehearsal at master
-    depends_on:
-      - gate-red
-      - blocking-flakes
-      - core
-    size: small
-    description:
-      "rehearse: dispatch and accept a rehearse-mode release.yml run at master, then
-      make sure the human merge-authority step is covered."
-  - id: release
-    title: sase v0.19.0 reaches PyPI under a self-closing watcher
-    depends_on:
-      - rehearse
-    size: small
-    description:
-      "release: drive or watch release PR #322 through release.yml to PyPI, with a
-      watcher that always closes this bead."
+- id: watchdog
+  title: A reboot cannot strand this epic
+  depends_on: []
+  size: small
+  description: 'watchdog: install a self-removing hourly crontab watchdog that relaunches
+    this epic''s agents after a reboot, or close at once when declined.'
+- id: gate-red
+  title: Master Gate is green at master HEAD
+  depends_on: []
+  size: small
+  description: 'gate-red: fix the marker-path audit red left by the readout split,
+    plus any other deterministic Master Gate red at the tip.'
+- id: blocking-flakes
+  title: The blocking test lanes stop flaking
+  depends_on: []
+  size: medium
+  description: 'blocking-flakes: fix the races behind intermittent reds in Master
+    Gate''s jobs and in Full CI''s lint and test (3.12|3.13|3.14) jobs.'
+- id: advisory-lanes
+  title: Full CI's advisory jobs pass
+  depends_on: []
+  size: medium
+  description: 'advisory-lanes: make visual-test, perf-floors, tutorial-tests, and
+    ace-page-group-isolation pass on Full CI.'
+- id: core
+  title: A complete published sase-core-rs contains master's source pin
+  depends_on: []
+  size: medium
+  description: 'core: turn sase-core''s macOS CI green, wait for the daily core cut,
+    and ratchet master''s exact core pin to it.'
+- id: full-ci
+  title: One Full CI run on master is green in every job
+  depends_on:
+  - gate-red
+  - blocking-flakes
+  - advisory-lanes
+  size: medium
+  description: 'full-ci: dispatch Full CI on a tip holding every fix, repair what
+    is still red, and repeat until a first attempt is green.'
+- id: rehearse
+  title: An accepted release.yml rehearsal at master
+  depends_on:
+  - gate-red
+  - blocking-flakes
+  - core
+  size: small
+  description: 'rehearse: dispatch and accept a rehearse-mode release.yml run at master,
+    then make sure the human merge-authority step is covered.'
+- id: release
+  title: sase v0.19.0 reaches PyPI under a self-closing watcher
+  depends_on:
+  - rehearse
+  size: small
+  description: 'release: drive or watch release PR #322 through release.yml to PyPI,
+    with a watcher that always closes this bead.'
 proposed_by: bbugyi200.athena.178.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-03 11:09:28
 status: wip
+bead_id: sase-1r2
 ---
 
-- **PROMPT:**
-  [prompts/202611/v0_19_0_green_full_ci_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/v0_19_0_green_full_ci_release.md)
+- **PROMPT:** [prompts/202611/v0_19_0_green_full_ci_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/v0_19_0_green_full_ci_release.md)
+- **BEAD:** [sase-1r2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1r2/README.md)
 
 # Plan: Green Full CI on master, a containing published core, and sase v0.19.0 on PyPI
 
