@@ -1,81 +1,73 @@
 ---
 tier: epic
 title: Retire the staged-handoff kill protocol
-goal:
-  Make every in-agent handoff stage for host completion, remove obsolete kill recovery,
-  and score declarations correctly without losing historical evidence.
+goal: Make every in-agent handoff stage for host completion, remove obsolete kill
+  recovery, and score declarations correctly without losing historical evidence.
 parent_bead: sase-1pj.8
 phases:
-  - id: command-staging
-    title: Make plan, questions, and pipe commands stage unconditionally
-    depends_on: []
-    size: medium
-    description:
-      "command-staging: remove legacy branches from plan, questions, and pipe entry
-      points and migrate their command tests."
-  - id: gate-staging
-    title: Make pending agent gates stage unconditionally
-    depends_on: []
-    size: medium
-    description:
-      "gate-staging: remove legacy agent publication and handoff branches from shared
-      gate entry, sudo, launch, run, and HITL while retaining synchronous auto and
-      outside-agent behavior."
-  - id: monitor-staging
-    title: Make agent monitor starts stage unconditionally
-    depends_on: []
-    size: medium
-    description:
-      "monitor-staging: remove the agent monitor kill branch and print-before-kill
-      workarounds while preserving prepared completion, ToolRun joins, replay, and
-      outside-agent starts."
-  - id: runtime-retirement
-    title: Delete kill-only adoption and recovery machinery
-    depends_on:
-      - command-staging
-      - gate-staging
-      - monitor-staging
-    size: medium
-    description:
-      "runtime-retirement: remove dead marker writers, handoff SIGTERM adoption,
-      gate-intent and in-flight recovery, and synthetic chat paths while retaining
-      staged custody and archived evidence readers."
-  - id: readout-core
-    title: Define handoff declaration scoring in Rust core
-    depends_on: []
-    size: small
-    description:
-      "readout-core: add a pure typed classifier and registered Python binding for
-      staged and legacy declaration evidence, with Rust and binding tests."
-  - id: readout-adapter
-    title: Connect instruction readout to the core policy
-    depends_on:
-      - readout-core
-    size: medium
-    description:
-      "readout-adapter: gather staged, receipt, declaration, and historical facts in
-      Python, use the Rust classifier, advance the core revision pin, and cover the
-      scoring matrix."
-  - id: flag-provider-cleanup
-    title: Remove the flag and teach providers the final protocol
-    depends_on:
-      - runtime-retirement
-      - readout-adapter
-    size: medium
-    description:
-      "flag-provider-cleanup: remove staged_handoffs registry and schema entries and
-      flag test scaffolding, update provider handoff instructions and continuation
-      safeguards, and verify the integrated unconditional protocol."
+- id: command-staging
+  title: Make plan, questions, and pipe commands stage unconditionally
+  depends_on: []
+  size: medium
+  description: 'command-staging: remove legacy branches from plan, questions, and
+    pipe entry points and migrate their command tests.'
+- id: gate-staging
+  title: Make pending agent gates stage unconditionally
+  depends_on: []
+  size: medium
+  description: 'gate-staging: remove legacy agent publication and handoff branches
+    from shared gate entry, sudo, launch, run, and HITL while retaining synchronous
+    auto and outside-agent behavior.'
+- id: monitor-staging
+  title: Make agent monitor starts stage unconditionally
+  depends_on: []
+  size: medium
+  description: 'monitor-staging: remove the agent monitor kill branch and print-before-kill
+    workarounds while preserving prepared completion, ToolRun joins, replay, and outside-agent
+    starts.'
+- id: runtime-retirement
+  title: Delete kill-only adoption and recovery machinery
+  depends_on:
+  - command-staging
+  - gate-staging
+  - monitor-staging
+  size: medium
+  description: 'runtime-retirement: remove dead marker writers, handoff SIGTERM adoption,
+    gate-intent and in-flight recovery, and synthetic chat paths while retaining staged
+    custody and archived evidence readers.'
+- id: readout-core
+  title: Define handoff declaration scoring in Rust core
+  depends_on: []
+  size: small
+  description: 'readout-core: add a pure typed classifier and registered Python binding
+    for staged and legacy declaration evidence, with Rust and binding tests.'
+- id: readout-adapter
+  title: Connect instruction readout to the core policy
+  depends_on:
+  - readout-core
+  size: medium
+  description: 'readout-adapter: gather staged, receipt, declaration, and historical
+    facts in Python, use the Rust classifier, advance the core revision pin, and cover
+    the scoring matrix.'
+- id: flag-provider-cleanup
+  title: Remove the flag and teach providers the final protocol
+  depends_on:
+  - runtime-retirement
+  - readout-adapter
+  size: medium
+  description: 'flag-provider-cleanup: remove staged_handoffs registry and schema
+    entries and flag test scaffolding, update provider handoff instructions and continuation
+    safeguards, and verify the integrated unconditional protocol.'
 proposed_by: bbugyi200.athena.sase-1pj.8
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-02 20:59:29
 status: wip
+bead_id: sase-1pj.8.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/retire_staged_handoff_kill_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/retire_staged_handoff_kill_path.md)
-- **PARENT:**
-  [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **PROMPT:** [prompts/202611/retire_staged_handoff_kill_path.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/retire_staged_handoff_kill_path.md)
+- **PARENT:** [202610/staged_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202610/staged_handoffs.md)
+- **BEAD:** [sase-1pj.8.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.8.1.md)
 
 # Retire the staged-handoff kill protocol
 
