@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Prove monitor workspace custody and finish the retention landing
-goal:
-  Preserve dirty work through unproven monitor delivery and settlement failures, then
-  close the retention epics and carry-hardening phase.
+goal: Preserve dirty work through unproven monitor delivery and settlement failures,
+  then close the retention epics and carry-hardening phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1pj.7.1.5.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1pj.7.1.5
-create_time: 2026-11-02 19:48:50
-status: wip
+status: done
 ---
 
 - **PARENT:**
