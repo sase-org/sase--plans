@@ -1,83 +1,75 @@
 ---
 tier: epic
 title: Complete keep-work recovery for hijacked agents
-goal:
-  Recover a hijacked agent exactly once in its held workspace while preserving its work
-  and obligations.
+goal: Recover a hijacked agent exactly once in its held workspace while preserving
+  its work and obligations.
 parent_bead: sase-1qz.6
 phases:
-  - id: recovery_contract
-    title: Rust recovery transaction and preview contracts
-    size: medium
-    depends_on: []
-    description:
-      "recovery_contract: extend Rust hijack wires and policy for durable
-      resolver/launch identity, preview decisions, and reconciliation; expose bindings
-      and update the Python adapter and core pin."
-  - id: recovery_context
-    title: Read-only recovery preview and continuation context
-    size: medium
-    depends_on:
-      - recovery_contract
-    description:
-      "recovery_context: implement the shared preview adapter, pinned continuation
-      prompts, budget-aware fork fallback, and hijack transcript framing."
-  - id: strict_successor
-    title: Same-workspace launch with mandatory inheritance
-    size: medium
-    depends_on:
-      - recovery_contract
-    description:
-      "strict_successor: add strict follow-up workspace handling and a recovery
-      successor preparation path that requires goal, bead, finalizer baseline,
-      repository obligations, and permission inheritance before provider execution."
-  - id: resolution_launch
-    title: Exactly-once recovery launch and settlement
-    size: medium
-    depends_on:
-      - recovery_context
-      - strict_successor
-    description:
-      "resolution_launch: compose the CAS resolution transaction with normal admission,
-      reserved successor identity, strict spawning, rollback, lineage, and predecessor
-      settlement."
-  - id: reconcile_wait
-    title: Crash repair and successor-following waits
-    size: medium
-    depends_on:
-      - resolution_launch
-    description:
-      "reconcile_wait: reconcile abandoned resolutions and interrupted settlement from
-      durable launch evidence, integrate stale cleanup, and make predecessor waits
-      follow the recovery successor."
-  - id: recovery_cli
-    title: Recovery command, durable operation, and integration coverage
-    size: medium
-    depends_on:
-      - reconcile_wait
-    description:
-      "recovery_cli: expose recover menu, escalate/continue/Instruct, dry-run and JSON,
-      add persist-recover, and prove both-repository work ownership with the fake
-      provider."
-  - id: land
-    title: Verify and complete the assigned recovery phase
-    size: small
-    depends_on:
-      - recovery_cli
-    description:
-      "land: verify this child epic, remove or re-key every sase-1qz.6 epic-symbol
-      exemption, and supply completion evidence for closing only the assigned original
-      phase sase-1qz.6."
+- id: recovery_contract
+  title: Rust recovery transaction and preview contracts
+  size: medium
+  depends_on: []
+  description: 'recovery_contract: extend Rust hijack wires and policy for durable
+    resolver/launch identity, preview decisions, and reconciliation; expose bindings
+    and update the Python adapter and core pin.'
+- id: recovery_context
+  title: Read-only recovery preview and continuation context
+  size: medium
+  depends_on:
+  - recovery_contract
+  description: 'recovery_context: implement the shared preview adapter, pinned continuation
+    prompts, budget-aware fork fallback, and hijack transcript framing.'
+- id: strict_successor
+  title: Same-workspace launch with mandatory inheritance
+  size: medium
+  depends_on:
+  - recovery_contract
+  description: 'strict_successor: add strict follow-up workspace handling and a recovery
+    successor preparation path that requires goal, bead, finalizer baseline, repository
+    obligations, and permission inheritance before provider execution.'
+- id: resolution_launch
+  title: Exactly-once recovery launch and settlement
+  size: medium
+  depends_on:
+  - recovery_context
+  - strict_successor
+  description: 'resolution_launch: compose the CAS resolution transaction with normal
+    admission, reserved successor identity, strict spawning, rollback, lineage, and
+    predecessor settlement.'
+- id: reconcile_wait
+  title: Crash repair and successor-following waits
+  size: medium
+  depends_on:
+  - resolution_launch
+  description: 'reconcile_wait: reconcile abandoned resolutions and interrupted settlement
+    from durable launch evidence, integrate stale cleanup, and make predecessor waits
+    follow the recovery successor.'
+- id: recovery_cli
+  title: Recovery command, durable operation, and integration coverage
+  size: medium
+  depends_on:
+  - reconcile_wait
+  description: 'recovery_cli: expose recover menu, escalate/continue/Instruct, dry-run
+    and JSON, add persist-recover, and prove both-repository work ownership with the
+    fake provider.'
+- id: land
+  title: Verify and complete the assigned recovery phase
+  size: small
+  depends_on:
+  - recovery_cli
+  description: 'land: verify this child epic, remove or re-key every sase-1qz.6 epic-symbol
+    exemption, and supply completion evidence for closing only the assigned original
+    phase sase-1qz.6.'
 proposed_by: bbugyi200.apollo.sase-1qz.6
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-03 08:05:20
 status: wip
+bead_id: sase-1qz.6.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/hijack_keep_work_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hijack_keep_work_recovery.md)
-- **PARENT:**
-  [202611/agent_hijack.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack.md)
+- **PROMPT:** [prompts/202611/hijack_keep_work_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hijack_keep_work_recovery.md)
+- **PARENT:** [202611/agent_hijack.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack.md)
+- **BEAD:** [sase-1qz.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qz/sase-1qz.6.1.md)
 
 # Complete keep-work recovery
 
