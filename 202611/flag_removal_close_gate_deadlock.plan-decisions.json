@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "gate_checkout",
+      "kind": "choice",
+      "ask": "Should a gate command's `sase bead close` automatically run its guards against the checkout its gate turn inherits?",
+      "why": "two gate cycles were lost to a close that can never succeed; authors will hit it again",
+      "choices": [
+        {
+          "key": "auto",
+          "label": "Gate runner exports the inherited workspace; gated bead closes guard against it"
+        },
+        {
+          "key": "message_only",
+          "label": "No runtime change; refusal only names the scanned checkout and the remedy"
+        }
+      ],
+      "default": "auto",
+      "effective_default": "auto",
+      "requested_verified": false
+    }
+  ]
+}
