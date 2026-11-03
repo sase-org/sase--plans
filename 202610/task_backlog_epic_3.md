@@ -64,7 +64,7 @@ phases:
     a reliable terminal-publication or reconciliation path, account for concurrent
     hood publication, and provide a safe bounded backfill plan for existing stale
     rows. Verify terminal-state convergence and that live runs are not marked terminal.'
-status: wip
+status: done
 proposed_by: bbugyi200.athena.sase-1pn.land
 proposed_with: codex/gpt-6-luna
 decided_by: auto
