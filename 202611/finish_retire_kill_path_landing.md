@@ -2,9 +2,10 @@
 tier: tale
 size: medium
 title: Finish the staged-handoff kill-path retirement landing
-goal: Make staged handoffs from in-process agent-session successors adopt correctly,
-  retire the dead kill-only adopter branches, and close sase-1pj.8.1 and its parent
-  phase sase-1pj.8.
+goal:
+  Make staged handoffs from in-process agent-session successors adopt correctly, retire
+  the dead kill-only adopter branches, and close sase-1pj.8.1 and its parent phase
+  sase-1pj.8.
 proposed_by: bbugyi200.athena.sase-1pj.8.1.land
 proposed_with: claude/opus
 bead: sase-1pj.8.1
@@ -15,6 +16,11 @@ status: done
   [202611/retire_staged_handoff_kill_path.md](https://github.com/sase-org/sase--plans/blob/main/202611/retire_staged_handoff_kill_path.md)
 - **BEAD:**
   [sase-1pj.8.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.8.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1pj.8.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pj.8.1.land.md)
+- **COMMITS:**
+  - [ced5901](https://github.com/sase-org/sase/commit/ced5901dd5612f00f767b3e7bc695a0936bdc14f)
+    — feat(axe): finish staged-handoff kill-path landing
 
 # Finish the staged-handoff kill-path retirement landing
 
