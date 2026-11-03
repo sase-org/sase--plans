@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Prove monitor workspace custody and finish the retention landing
-goal: Preserve dirty work through unproven monitor delivery and settlement failures,
-  then close the retention epics and carry-hardening phase.
+goal:
+  Preserve dirty work through unproven monitor delivery and settlement failures, then
+  close the retention epics and carry-hardening phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1pj.7.1.5.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/retention_landing_repairs.md](https://github.com/sase-org/sase--plans/blob/main/202611/retention_landing_repairs.md)
 - **BEAD:**
   [sase-1pj.7.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1pj/sase-1pj.7.1.5.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1pj.7.1.5.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1pj.7.1.5.land.md)
+- **COMMITS:**
+  - [047e3b7](https://github.com/sase-org/sase--plans/commit/047e3b7710c9d591a2bb940c2af391ad7675fcec)
+    — docs(plans): mark retention closeout plans done
 
 # Prove monitor workspace custody and finish the retention landing
 
