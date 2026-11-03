@@ -2,15 +2,13 @@
 tier: tale
 size: medium
 title: Finish the staged-handoffs landing with prepared-monitor completion fixes
-goal:
-  A prepared (-f) monitor started by a bare root agent completes commit-on-green under
-  staged handoffs, the four lost task-backlog plan statuses read done, and epic sase-1pj
-  is closed with a clean Symvision whitelist and its plan marked done.
+goal: A prepared (-f) monitor started by a bare root agent completes commit-on-green
+  under staged handoffs, the four lost task-backlog plan statuses read done, and epic
+  sase-1pj is closed with a clean Symvision whitelist and its plan marked done.
 proposed_by: bbugyi200.athena.sase-1pj.land
 proposed_with: claude/opus
 bead: sase-1pj
-create_time: 2026-11-03 12:18:12
-status: wip
+status: done
 ---
 
 - **PARENT:**
