@@ -2,15 +2,13 @@
 tier: tale
 size: medium
 title: Finish the staged-handoff kill-path retirement landing
-goal:
-  Make staged handoffs from in-process agent-session successors adopt correctly, retire
-  the dead kill-only adopter branches, and close sase-1pj.8.1 and its parent phase
-  sase-1pj.8.
+goal: Make staged handoffs from in-process agent-session successors adopt correctly,
+  retire the dead kill-only adopter branches, and close sase-1pj.8.1 and its parent
+  phase sase-1pj.8.
 proposed_by: bbugyi200.athena.sase-1pj.8.1.land
 proposed_with: claude/opus
 bead: sase-1pj.8.1
-create_time: 2026-11-03 10:17:40
-status: wip
+status: done
 ---
 
 - **PARENT:**
