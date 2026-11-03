@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "keep_tables_rule",
+      "kind": "choice",
+      "ask": "When `tables_to_lists=false`, should the linker get an explicit rule to keep the lead's tables as tables?",
+      "why": "The off default exists to show real tables in the PDF; a free linker may convert some",
+      "choices": [
+        {
+          "key": "explicit",
+          "label": "Add a short \"Keep tables as tables\" bullet so default runs reliably publish real tables"
+        },
+        {
+          "key": "silent",
+          "label": "Restore the pre-conversion wording; the linker may still turn some tables into lists"
+        }
+      ],
+      "default": "explicit",
+      "effective_default": "explicit",
+      "requested_verified": false
+    }
+  ]
+}
