@@ -1,76 +1,72 @@
 ---
 tier: epic
-title:
-  "E2 completion: a steward that can merge and start a train, contained core pins, and
-  the first steward release"
-goal: "The release steward can actually merge a release PR and start release.yml at the
-  fresh tag. Every sealed candidate proves its core tag contains sase's core source pin.
-  One real sase release goes through the steward and is proven against its sealed
-  manifest. The E2 decision record is written.
+title: 'E2 completion: a steward that can merge and start a train, contained core
+  pins, and the first steward release'
+goal: 'The release steward can actually merge a release PR and start release.yml at
+  the fresh tag. Every sealed candidate proves its core tag contains sase''s core
+  source pin. One real sase release goes through the steward and is proven against
+  its sealed manifest. The E2 decision record is written.
 
-  "
+  '
 parent_bead: sase-1n6
 phases:
-  - id: merge-checks
-    title: The steward reads a real merge gate from the N1 inventory
-    size: medium
-    depends_on: []
-    description:
-      "merge-checks: the steward's expected release-PR checks come from the versioned N1
-      inventory instead of absent branch protection, and Master Gate is judged on its
-      own jobs rather than on the PR's check list (sase-core plus sase)."
-  - id: containment
-    title: Seal and enforce the core source-pin containment
-    size: medium
-    depends_on: []
-    description:
-      "containment: release.yml seals sase-core-revision.txt as the core source pin with
-      a containment proof for tag v<core>, seal and evaluate refuse without it, and the
-      stale rust-backend doc sentence and ratchet test names are fixed."
-  - id: train-start
-    title: The steward starts and resumes a train at a fresh tag
-    size: medium
-    depends_on:
-      - merge-checks
-      - containment
-    description:
-      "train-start: a fresh tag with an unsealed draft dispatches release.yml
-      mode=release once instead of reading as WATCHER_BROKEN. A sealed, publishable
-      generation with no PyPI files resumes. A fixture walk drives one train from
-      releasable to released."
-  - id: exit
-    title: First steward release, acceptance evidence, and the E2 decision record
-    size: medium
-    depends_on:
-      - train-start
-    description:
-      "exit: confirm the human cutover, watch the first real release through the
-      steward, prove digests, attestation and containment against the manifest, record
-      acceptance evidence, and write the E2 decision record."
+- id: merge-checks
+  title: The steward reads a real merge gate from the N1 inventory
+  size: medium
+  depends_on: []
+  description: 'merge-checks: the steward''s expected release-PR checks come from
+    the versioned N1 inventory instead of absent branch protection, and Master Gate
+    is judged on its own jobs rather than on the PR''s check list (sase-core plus
+    sase).'
+- id: containment
+  title: Seal and enforce the core source-pin containment
+  size: medium
+  depends_on: []
+  description: 'containment: release.yml seals sase-core-revision.txt as the core
+    source pin with a containment proof for tag v<core>, seal and evaluate refuse
+    without it, and the stale rust-backend doc sentence and ratchet test names are
+    fixed.'
+- id: train-start
+  title: The steward starts and resumes a train at a fresh tag
+  size: medium
+  depends_on:
+  - merge-checks
+  - containment
+  description: 'train-start: a fresh tag with an unsealed draft dispatches release.yml
+    mode=release once instead of reading as WATCHER_BROKEN. A sealed, publishable
+    generation with no PyPI files resumes. A fixture walk drives one train from releasable
+    to released.'
+- id: exit
+  title: First steward release, acceptance evidence, and the E2 decision record
+  size: medium
+  depends_on:
+  - train-start
+  description: 'exit: confirm the human cutover, watch the first real release through
+    the steward, prove digests, attestation and containment against the manifest,
+    record acceptance evidence, and write the E2 decision record.'
 decisions:
   memory_release_record:
-    ask:
-      Add decisions:exact-release-pair and mark ci-two-speed-split and
-      rust-core-required superseded in part?
+    ask: Add decisions:exact-release-pair and mark ci-two-speed-split and rust-core-required
+      superseded in part?
     default: true
     memory:
-      - decisions:exact-release-pair
-      - decisions:ci-two-speed-split
-      - decisions:rust-core-required
-    corrects:
-      "`ci_watch` gates release on both signals: `gating_workflows` proves this commit's
-      fast gate is green, and `heavy_max_age_hours` requires a recent green `Full CI`
-      run."
+    - decisions:exact-release-pair
+    - decisions:ci-two-speed-split
+    - decisions:rust-core-required
+    corrects: '`ci_watch` gates release on both signals: `gating_workflows` proves
+      this commit''s fast gate is green, and `heavy_max_age_hours` requires a recent
+      green `Full CI` run.'
     answer: true
 proposed_by: bbugyi200.athena.sase-1n6.land
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-11-03 09:51:11
 status: wip
+bead_id: sase-1n6.11
 ---
 
-- **PROMPT:**
-  [prompts/202611/e2_steward_train_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/e2_steward_train_completion.md)
+- **PROMPT:** [prompts/202611/e2_steward_train_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/e2_steward_train_completion.md)
+- **BEAD:** [sase-1n6.11](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1n6/sase-1n6.11.md)
 
 # Plan: E2 completion — a working steward train, contained core pins, and the first steward release
 
