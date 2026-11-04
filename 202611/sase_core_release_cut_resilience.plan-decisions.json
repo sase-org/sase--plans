@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "dispatch_cut",
+      "kind": "choice",
+      "ask": "Should the agent propose one live sase-core release cut after the fix lands, instead of awaiting the daily cut?",
+      "why": "Matches the approved core_cut=wait precedent on sase-1pi; the daily cut verifies it for free",
+      "choices": [
+        {
+          "key": "daily_cut",
+          "label": "The next scheduled cut proves the fix; no off-schedule release or extra PyPI quota"
+        },
+        {
+          "key": "dispatch",
+          "label": "Agent files a /sase_gate for one live cut; v0.44.0 ships ~1 day sooner for ~75 MB of quota"
+        }
+      ],
+      "default": "daily_cut",
+      "effective_default": "daily_cut",
+      "requested_verified": false
+    },
+    {
+      "id": "changelog_date",
+      "kind": "choice",
+      "ask": "Should a heal run still refresh a current release PR once per UTC day so its changelog date tracks the cut day?",
+      "why": "The date names the newest change the release holds, and each skipped refresh saves a macOS run",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Never refresh a current PR; the date marks the last master change; no extra CI runs"
+        },
+        {
+          "key": "daily",
+          "label": "First heal run of each UTC day refreshes a current PR (one extra CI run a day); cuts never do"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
