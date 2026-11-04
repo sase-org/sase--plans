@@ -1,66 +1,60 @@
 ---
 tier: epic
 title: Recover reboot-stranded epic work once per boot
-goal:
-  Recover prior-boot dead epic waiters and land agents automatically, without duplicate
-  launches, stale-owner claim failures, or interference with live agents and hijack
-  custody.
+goal: Recover prior-boot dead epic waiters and land agents automatically, without
+  duplicate launches, stale-owner claim failures, or interference with live agents
+  and hijack custody.
 parent_bead: sase-1ra.11
 phases:
-  - id: core_policy
-    title: Rust boot-recovery policy and durable attempt contract
-    size: medium
-    depends_on: []
-    description:
-      "core_policy: first wait for all four external implementation gates; add the pure
-      Rust eligibility and attempt-state contract, Python bindings, adapter, and policy
-      tests."
-  - id: owner_claims
-    title: Safely replace claims held by proven prior-boot dead owners
-    size: medium
-    depends_on:
-      - core_policy
-    description:
-      "owner_claims: collect authoritative owner evidence and implement Rust-guarded
-      claim replacement for reboot-dead owners in the runner and waiting-claim paths,
-      retaining live-owner protection."
-  - id: recovery_worker
-    title: Durable per-epic recovery execution and deduplicated notices
-    size: medium
-    depends_on:
-      - owner_claims
-    description:
-      "recovery_worker: implement the locked per-boot ledger and durable worker, fresh
-      safety checks, safe epic-launch preview, admission-aware execution, and one notice
-      per recovery attempt."
-  - id: scheduler
-    title: AXE startup reconciliation with bounded recovery admission
-    size: medium
-    depends_on:
-      - recovery_worker
-    description:
-      "scheduler: register the boot-recovery job and durable proc submission, retain
-      pending deferrals across ticks, and prove repeated starts and concurrent
-      schedulers do not duplicate recovery."
-  - id: acceptance_docs
-    title: Verify the reboot incident and document watchdog replacement
-    size: medium
-    depends_on:
-      - scheduler
-    description:
-      "acceptance_docs: exercise the full simulated-reboot fixture, document the
-      reconciler and watchdog retirement, and leave complete verification evidence for
-      the child epic lander."
+- id: core_policy
+  title: Rust boot-recovery policy and durable attempt contract
+  size: medium
+  depends_on: []
+  description: 'core_policy: first wait for all four external implementation gates;
+    add the pure Rust eligibility and attempt-state contract, Python bindings, adapter,
+    and policy tests.'
+- id: owner_claims
+  title: Safely replace claims held by proven prior-boot dead owners
+  size: medium
+  depends_on:
+  - core_policy
+  description: 'owner_claims: collect authoritative owner evidence and implement Rust-guarded
+    claim replacement for reboot-dead owners in the runner and waiting-claim paths,
+    retaining live-owner protection.'
+- id: recovery_worker
+  title: Durable per-epic recovery execution and deduplicated notices
+  size: medium
+  depends_on:
+  - owner_claims
+  description: 'recovery_worker: implement the locked per-boot ledger and durable
+    worker, fresh safety checks, safe epic-launch preview, admission-aware execution,
+    and one notice per recovery attempt.'
+- id: scheduler
+  title: AXE startup reconciliation with bounded recovery admission
+  size: medium
+  depends_on:
+  - recovery_worker
+  description: 'scheduler: register the boot-recovery job and durable proc submission,
+    retain pending deferrals across ticks, and prove repeated starts and concurrent
+    schedulers do not duplicate recovery.'
+- id: acceptance_docs
+  title: Verify the reboot incident and document watchdog replacement
+  size: medium
+  depends_on:
+  - scheduler
+  description: 'acceptance_docs: exercise the full simulated-reboot fixture, document
+    the reconciler and watchdog retirement, and leave complete verification evidence
+    for the child epic lander.'
 proposed_by: bbugyi200.athena.sase-1ra.11
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-04 18:37:26
 status: wip
+bead_id: sase-1ra.11.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/boot_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/boot_recovery.md)
-- **PARENT:**
-  [202611/next_ten_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202611/next_ten_task_beads.md)
+- **PROMPT:** [prompts/202611/boot_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/boot_recovery.md)
+- **PARENT:** [202611/next_ten_task_beads.md](https://github.com/sase-org/sase--plans/blob/main/202611/next_ten_task_beads.md)
+- **BEAD:** [sase-1ra.11.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ra/sase-1ra.11.1.md)
 
 # Recover reboot-stranded epic work once per boot
 
