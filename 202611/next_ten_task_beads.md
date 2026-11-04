@@ -1,157 +1,135 @@
 ---
 tier: epic
-title:
-  "Next-ten task beads: honest update-skew failures, reboot recovery, and the false-red
-  test backlog"
-goal: "The ten task beads ranked by the 2026-11-04 next-ten research report are fixed,
+title: 'Next-ten task beads: honest update-skew failures, reboot recovery, and the
+  false-red test backlog'
+goal: 'The ten task beads ranked by the 2026-11-04 next-ten research report are fixed,
   verified, and closed, together with the three beads the report attached to them
   (sase-1i6, sase-1jd, sase-12u). None of this work collides with the live Agent Hijack
   (sase-1qz), publication (sase-1r8), or v0.19.0 release (sase-1r2) epics.
 
-  "
+  '
 decisions:
   auto_relaunch:
-    ask:
-      Should reboot and zombie-epic recovery relaunch agents automatically, not just
-      notify?
+    ask: Should reboot and zombie-epic recovery relaunch agents automatically, not
+      just notify?
     default: true
     why: A manual step left 27 waiters stranded for 2.5 days after the 11-01 reboot
     answer: true
   next_epic:
-    ask:
-      After landing, should the lander propose the next backlog epic from the remaining
+    ask: After landing, should the lander propose the next backlog epic from the remaining
       task beads?
     default: true
-    why:
-      You are starting to work through the backlog, and the proposal still waits for
-      your approval
+    why: You are starting to work through the backlog, and the proposal still waits
+      for your approval
     answer: true
 phases:
-  - id: project_names
-    title: -p accepts a project's display name, alias, or key (sase-zo)
-    depends_on: []
-    size: small
-    description:
-      "project_names: canonicalize -p/--project through the project registry in
-      resolve_project_context, list candidates on ambiguity, and add
-      display-name-differs-from-key regressions (sase-zo)."
-  - id: editor_drafts
-    title: A failed $EDITOR never deletes the typed draft (sase-1ce)
-    depends_on: []
-    size: small
-    description:
-      "editor_drafts: on a non-zero editor exit or read failure, keep and recover
-      changed prompt and workflow-YAML drafts instead of unlinking them (sase-1ce)."
-  - id: pytest_env
-    title:
-      "Pytest isolation: scrub SASE_MODEL_OVERRIDE and O(1) per-test homes (sase-1q3,
-      sase-1qe)"
-    depends_on: []
-    size: small
-    description:
-      "pytest_env: add SASE_MODEL_OVERRIDE to the autouse env scrub and replace the
-      per-test mktemp home allocation with a per-worker parent plus mkdtemp, both in
-      tests/_conftest_environment.py (sase-1q3, sase-1qe)."
-  - id: token_fifo
-    title: FIFO fairness for pytest worker-token waiters (sase-1pw)
-    depends_on:
-      - pytest_env
-    size: medium
-    description:
-      "token_fifo: give WorkerTokenLease waiters cross-process FIFO arrival tickets with
-      bounded backfill and dead-waiter reclamation, proven by a fake-clock starvation
-      test (sase-1pw)."
-  - id: false_red
-    title:
-      "False-red batch: cold keymap test, MRU provider pruning, AF_UNIX path length
-      (sase-1qu, sase-172, sase-1i6)"
-    depends_on: []
-    size: medium
-    description:
-      "false_red: fix three tests that fail deterministically when run cold or alone,
-      repairing product behavior where the root cause is a product bug (sase-1qu,
-      sase-172, sase-1i6)."
-  - id: panel_pilot
-    title: Command-line panel pilot trio passes on apollo (sase-1al)
-    depends_on: []
-    size: medium
-    description:
-      "panel_pilot: remove the grammar-load race from the three
-      test_panel_shell_pilot.py nodes without raising timeouts, and verify 20x serial
-      plus 3x -n 8 on apollo (sase-1al)."
-  - id: skew_label
-    title:
-      Signature-skew TypeErrors are classified and explained as update skew (sase-1r4,
-      Python half)
-    depends_on: []
-    size: medium
-    description:
-      "skew_label: teach runner_failure_facts and code_swap_explanation the
-      signature-mismatch TypeError shapes, gated on a proven code-identity move, without
-      silencing failure notifications (sase-1r4 part 1)."
-  - id: staged_zombie
-    title:
-      Orphaned staged monitors settle and crashed members stay listed (sase-1r4, zombie
-      half)
-    depends_on:
-      - skew_label
-    size: medium
-    description:
-      "staged_zombie: settle a staged monitor whose adopter died into a terminal held or
-      failed state within one reconcile pass, and keep the crashed member row visible in
-      sase agent list -a (sase-1r4 part 2)."
-  - id: skew_core
-    title:
-      sase-core auto-restart classifier gives signature skew an honest verdict
-      (sase-1r4, core half)
-    depends_on:
-      - skew_label
-    size: medium
-    description:
-      "skew_core: after sase-1r2 closes, make the Rust agent_auto_restart catalog
-      classify W1-witnessed signature TypeErrors as update skew and stop the bare
-      provider marker from declining adoption tracebacks; move the core pin (sase-1r4
-      part 3)."
-  - id: import_ratchet
-    title: CI ratchet against post-provider first imports (sase-1jd)
-    depends_on:
-      - staged_zombie
-    size: large
-    description:
-      "import_ratchet: preload the staged-adoption import closure and add a subprocess
-      import-recording test that fails on any new sase module first imported after
-      provider_running, with a shrink-only allowlist (sase-1jd)."
-  - id: boot_recovery
-    title:
-      Host-owned boot reconciler relaunches reboot-stranded epics once per boot
-      (sase-1qj)
-    depends_on: []
-    size: large
-    description:
-      "boot_recovery: plan now, then implement after sase-1qz.6.1, sase-1qz.7, sase-1r2,
-      and this epic's skew_core close; a sase-core policy plus an AXE job finds
-      prior-boot dead waiters and land agents, clears dead-owner claims, and recovers
-      each epic once per boot (sase-1qj)."
-  - id: zombie_epics
-    title: Zombie-epic report and host-owned land-agent liveness invariant (sase-12u)
-    depends_on:
-      - boot_recovery
-    size: large
-    description:
-      "zombie_epics: let sase-core see closed children, ship a report-only zombie-epic
-      listing for owner triage, and add a watermarked, rate-limited invariant that
-      recovers a parent's land agent when every child is closed and none is live
-      (sase-12u)."
+- id: project_names
+  title: -p accepts a project's display name, alias, or key (sase-zo)
+  depends_on: []
+  size: small
+  description: 'project_names: canonicalize -p/--project through the project registry
+    in resolve_project_context, list candidates on ambiguity, and add display-name-differs-from-key
+    regressions (sase-zo).'
+- id: editor_drafts
+  title: A failed $EDITOR never deletes the typed draft (sase-1ce)
+  depends_on: []
+  size: small
+  description: 'editor_drafts: on a non-zero editor exit or read failure, keep and
+    recover changed prompt and workflow-YAML drafts instead of unlinking them (sase-1ce).'
+- id: pytest_env
+  title: 'Pytest isolation: scrub SASE_MODEL_OVERRIDE and O(1) per-test homes (sase-1q3,
+    sase-1qe)'
+  depends_on: []
+  size: small
+  description: 'pytest_env: add SASE_MODEL_OVERRIDE to the autouse env scrub and replace
+    the per-test mktemp home allocation with a per-worker parent plus mkdtemp, both
+    in tests/_conftest_environment.py (sase-1q3, sase-1qe).'
+- id: token_fifo
+  title: FIFO fairness for pytest worker-token waiters (sase-1pw)
+  depends_on:
+  - pytest_env
+  size: medium
+  description: 'token_fifo: give WorkerTokenLease waiters cross-process FIFO arrival
+    tickets with bounded backfill and dead-waiter reclamation, proven by a fake-clock
+    starvation test (sase-1pw).'
+- id: false_red
+  title: 'False-red batch: cold keymap test, MRU provider pruning, AF_UNIX path length
+    (sase-1qu, sase-172, sase-1i6)'
+  depends_on: []
+  size: medium
+  description: 'false_red: fix three tests that fail deterministically when run cold
+    or alone, repairing product behavior where the root cause is a product bug (sase-1qu,
+    sase-172, sase-1i6).'
+- id: panel_pilot
+  title: Command-line panel pilot trio passes on apollo (sase-1al)
+  depends_on: []
+  size: medium
+  description: 'panel_pilot: remove the grammar-load race from the three test_panel_shell_pilot.py
+    nodes without raising timeouts, and verify 20x serial plus 3x -n 8 on apollo (sase-1al).'
+- id: skew_label
+  title: Signature-skew TypeErrors are classified and explained as update skew (sase-1r4,
+    Python half)
+  depends_on: []
+  size: medium
+  description: 'skew_label: teach runner_failure_facts and code_swap_explanation the
+    signature-mismatch TypeError shapes, gated on a proven code-identity move, without
+    silencing failure notifications (sase-1r4 part 1).'
+- id: staged_zombie
+  title: Orphaned staged monitors settle and crashed members stay listed (sase-1r4,
+    zombie half)
+  depends_on:
+  - skew_label
+  size: medium
+  description: 'staged_zombie: settle a staged monitor whose adopter died into a terminal
+    held or failed state within one reconcile pass, and keep the crashed member row
+    visible in sase agent list -a (sase-1r4 part 2).'
+- id: skew_core
+  title: sase-core auto-restart classifier gives signature skew an honest verdict
+    (sase-1r4, core half)
+  depends_on:
+  - skew_label
+  size: medium
+  description: 'skew_core: after sase-1r2 closes, make the Rust agent_auto_restart
+    catalog classify W1-witnessed signature TypeErrors as update skew and stop the
+    bare provider marker from declining adoption tracebacks; move the core pin (sase-1r4
+    part 3).'
+- id: import_ratchet
+  title: CI ratchet against post-provider first imports (sase-1jd)
+  depends_on:
+  - staged_zombie
+  size: large
+  description: 'import_ratchet: preload the staged-adoption import closure and add
+    a subprocess import-recording test that fails on any new sase module first imported
+    after provider_running, with a shrink-only allowlist (sase-1jd).'
+- id: boot_recovery
+  title: Host-owned boot reconciler relaunches reboot-stranded epics once per boot
+    (sase-1qj)
+  depends_on: []
+  size: large
+  description: 'boot_recovery: plan now, then implement after sase-1qz.6.1, sase-1qz.7,
+    sase-1r2, and this epic''s skew_core close; a sase-core policy plus an AXE job
+    finds prior-boot dead waiters and land agents, clears dead-owner claims, and recovers
+    each epic once per boot (sase-1qj).'
+- id: zombie_epics
+  title: Zombie-epic report and host-owned land-agent liveness invariant (sase-12u)
+  depends_on:
+  - boot_recovery
+  size: large
+  description: 'zombie_epics: let sase-core see closed children, ship a report-only
+    zombie-epic listing for owner triage, and add a watermarked, rate-limited invariant
+    that recovers a parent''s land agent when every child is closed and none is live
+    (sase-12u).'
 proposed_by: bbugyi200.athena.18d
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-04 17:59:09
 status: wip
+bead_id: sase-1ra
 ---
 
-- **PROMPT:**
-  [prompts/202611/next_ten_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/next_ten_task_beads.md)
+- **PROMPT:** [prompts/202611/next_ten_task_beads.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/next_ten_task_beads.md)
+- **BEAD:** [sase-1ra](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ra/README.md)
 
 # Next-Ten Task Beads: Honest Update-Skew Failures, Reboot Recovery, and the False-Red Test Backlog
 
