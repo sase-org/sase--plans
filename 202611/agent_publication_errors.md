@@ -1,149 +1,134 @@
 ---
 tier: epic
 title: Stop agent publication false blocks, parked-row floods, and drain starvation
-goal: "The background agent_publication job stops reporting scanner false positives
-  every pass. bob-cli's stuck and starved rows publish. A request withheld by
-  publication protection can no longer starve its project or flood the error digest. A
-  future scanner-rule correction releases its own stale false blocks with provenance,
-  and .land coder rows stop quarantining over a prompt archive that already exists.
+goal: 'The background agent_publication job stops reporting scanner false positives
+  every pass. bob-cli''s stuck and starved rows publish. A request withheld by publication
+  protection can no longer starve its project or flood the error digest. A future
+  scanner-rule correction releases its own stale false blocks with provenance, and
+  .land coder rows stop quarantining over a prompt archive that already exists.
 
-  "
+  '
 decisions:
   revalidation:
-    ask:
-      How should blocks recorded under older scanner rules be re-evaluated after the
-      rules change?
+    ask: How should blocks recorded under older scanner rules be re-evaluated after
+      the rules change?
     choices:
-      automatic:
-        The next publish attempt rescans under current rules and supersedes clean blocks
-      command:
-        Stale blocks stay enforced until a human runs a new report-first revalidate
+      automatic: The next publish attempt rescans under current rules and supersedes
+        clean blocks
+      command: Stale blocks stay enforced until a human runs a new report-first revalidate
         command
     default: automatic
-    why:
-      A scanner-hit block is a verdict on (bytes, rules); new rules should re-decide it
+    why: A scanner-hit block is a verdict on (bytes, rules); new rules should re-decide
+      it
     answer: automatic
   rule_scope:
     ask: Which scanner rules should get the left word-boundary fix?
     choices:
-      all_prefix:
-        Every prefix-literal token rule, plus a digit-or-capital body check for sk- keys
-      openai_only:
-        Only openai-key, as the research proposed; sibling rules still match inside
-        words
+      all_prefix: Every prefix-literal token rule, plus a digit-or-capital body check
+        for sk- keys
+      openai_only: Only openai-key, as the research proposed; sibling rules still
+        match inside words
     default: all_prefix
-    why:
-      The Stripe, Slack, GitHub, and Anthropic rules share the same unanchored-prefix
+    why: The Stripe, Slack, GitHub, and Anthropic rules share the same unanchored-prefix
       defect
     answer: all_prefix
   park_notice:
     ask: How should the job report a request that publication protection newly parks?
     choices:
-      once:
-        The pass that first parks a request reports one error; later rechecks stay
-        silent
-      silent:
-        Never a job error; parked rows appear only in doctor and the publisher heartbeat
+      once: The pass that first parks a request reports one error; later rechecks
+        stay silent
+      silent: Never a job error; parked rows appear only in doctor and the publisher
+        heartbeat
     default: once
-    why:
-      A real secret in an agent transcript deserves one digest entry, not zero or one
-      per pass
+    why: A real secret in an agent transcript deserves one digest entry, not zero
+      or one per pass
     answer: once
   historic_quarantines:
-    ask:
-      Should the 233 bob-cli rows quarantined by the .land prompt-archive bug be
+    ask: Should the 233 bob-cli rows quarantined by the .land prompt-archive bug be
       revived?
     choices:
-      leave:
-        They stay quarantined; most of their pages were pushed before the ack check
-        refused
-      recheck:
-        The verify phase gates a bounded revival of only those rows to prove the fix
+      leave: They stay quarantined; most of their pages were pushed before the ack
+        check refused
+      recheck: The verify phase gates a bounded revival of only those rows to prove
+        the fix
     default: leave
-    why:
-      Reviving mostly re-publishes identical pages; the fix is proven by new .land rows
+    why: Reviving mostly re-publishes identical pages; the fix is proven by new .land
+      rows
     answer: leave
   planner_hints:
-    ask:
-      Should planner prompt-archive rows also append a doorbell hint, as the research
+    ask: Should planner prompt-archive rows also append a doorbell hint, as the research
       proposed?
     default: false
-    why:
-      The unified drain loop reaches hint-less rows in the same pass; a hint only
+    why: The unified drain loop reaches hint-less rows in the same pass; a hint only
       reorders them
     answer: false
 phases:
-  - id: core
-    title:
-      Anchor the scanner rules and make scanner-hit blocks rules-versioned (sase-core)
-    depends_on: []
-    size: medium
-    description:
-      "core: in sase-core, add a left token boundary to the prefix credential rules,
-      bump the scanner rules version to 2, make a scanner-hit block enforced only while
-      its evidence is current, supersede stale blocks with provenance on a clean rescan,
-      add a parked-recheck predicate, and expose all of it through bindings with tests."
-  - id: drain
-    title: One drain loop that never lets a failing row starve its project
-    depends_on: []
-    size: medium
-    description:
-      "drain: replace the hinted-then-fallback loops in publication_job with one loop
-      that excludes keys already attempted this pass, stops only on repository-scope
-      failures, reports failure scope on the drain outcome, and compacts claimed hint
-      files to at most one per project."
-  - id: land_prompt
-    title: Recognize a session member's prompt archive for .land coder rows
-    depends_on: []
-    size: small
-    description:
-      "land_prompt: make the deferred-restore archive check accept an archive whose
-      AGENTS label is a member of the request's own agent session (for example the
-      --plan member), indexed once per restore call, so .land coder rows acknowledge
-      instead of quarantining."
-  - id: protection
-    title: Consume the rules-versioned protection policy in sase
-    depends_on:
-      - core
-    size: medium
-    description:
-      "protection: move the sase-core pin, route every ledger lookup through the
-      enforced-lookup binding so stale blocks are rescanned, pass the clean rules
-      version into resolve so stale blocks are superseded, keep superseded history on
-      disk, and teach doctor to separate enforced, stale, and superseded records."
-  - id: parking
-    title: Park protection-withheld requests instead of retrying them every pass
-    depends_on:
-      - drain
-      - protection
-    size: medium
-    description:
-      "parking: add parked fields to the outbox (schema 8), park withheld and
-      prompt-protection rows at settlement, keep parked rows out of selection and the
-      self-ring until the Rust recheck predicate says they are due, stop counting parks
-      as job errors (except per park_notice), and surface parked counts in the
-      heartbeat, chop summary, and doctor."
-  - id: verify
-    title: Install, verify live on athena, and hand off follow-ups
-    depends_on:
-      - land_prompt
-      - parking
-    size: small
-    description:
-      "verify: propose the human-only reinstall through a gate if the installed build
-      predates the fix, then confirm on athena that bob-cli's stuck and starved rows
-      drain, claim files compact, stale blocks are superseded, and the digest goes
-      quiet; record follow-ups for sase-1ot and sase-1r7."
+- id: core
+  title: Anchor the scanner rules and make scanner-hit blocks rules-versioned (sase-core)
+  depends_on: []
+  size: medium
+  description: 'core: in sase-core, add a left token boundary to the prefix credential
+    rules, bump the scanner rules version to 2, make a scanner-hit block enforced
+    only while its evidence is current, supersede stale blocks with provenance on
+    a clean rescan, add a parked-recheck predicate, and expose all of it through bindings
+    with tests.'
+- id: drain
+  title: One drain loop that never lets a failing row starve its project
+  depends_on: []
+  size: medium
+  description: 'drain: replace the hinted-then-fallback loops in publication_job with
+    one loop that excludes keys already attempted this pass, stops only on repository-scope
+    failures, reports failure scope on the drain outcome, and compacts claimed hint
+    files to at most one per project.'
+- id: land_prompt
+  title: Recognize a session member's prompt archive for .land coder rows
+  depends_on: []
+  size: small
+  description: 'land_prompt: make the deferred-restore archive check accept an archive
+    whose AGENTS label is a member of the request''s own agent session (for example
+    the --plan member), indexed once per restore call, so .land coder rows acknowledge
+    instead of quarantining.'
+- id: protection
+  title: Consume the rules-versioned protection policy in sase
+  depends_on:
+  - core
+  size: medium
+  description: 'protection: move the sase-core pin, route every ledger lookup through
+    the enforced-lookup binding so stale blocks are rescanned, pass the clean rules
+    version into resolve so stale blocks are superseded, keep superseded history on
+    disk, and teach doctor to separate enforced, stale, and superseded records.'
+- id: parking
+  title: Park protection-withheld requests instead of retrying them every pass
+  depends_on:
+  - drain
+  - protection
+  size: medium
+  description: 'parking: add parked fields to the outbox (schema 8), park withheld
+    and prompt-protection rows at settlement, keep parked rows out of selection and
+    the self-ring until the Rust recheck predicate says they are due, stop counting
+    parks as job errors (except per park_notice), and surface parked counts in the
+    heartbeat, chop summary, and doctor.'
+- id: verify
+  title: Install, verify live on athena, and hand off follow-ups
+  depends_on:
+  - land_prompt
+  - parking
+  size: small
+  description: 'verify: propose the human-only reinstall through a gate if the installed
+    build predates the fix, then confirm on athena that bob-cli''s stuck and starved
+    rows drain, claim files compact, stale blocks are superseded, and the digest goes
+    quiet; record follow-ups for sase-1ot and sase-1r7.'
 proposed_by: bbugyi200.athena.184
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-04 13:54:34
 status: wip
+bead_id: sase-1r8
 ---
 
-- **PROMPT:**
-  [prompts/202611/agent_publication_errors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_publication_errors.md)
+- **PROMPT:** [prompts/202611/agent_publication_errors.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_publication_errors.md)
+- **BEAD:** [sase-1r8](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1r8/README.md)
 
 # Plan: Stop agent publication false blocks, parked-row floods, and drain starvation
 
