@@ -1,95 +1,84 @@
 ---
 tier: epic
 title: Retry transient GitHub SSH publickey denials on git network operations
-goal: "A GitHub-side burst of `Permission denied (publickey)` rejections of valid SSH
-  keys no longer aborts agent launches or background git jobs. Launch-blocking and
-  background git network operations retry such denials within a bounded, deadline-aware
+goal: 'A GitHub-side burst of `Permission denied (publickey)` rejections of valid
+  SSH keys no longer aborts agent launches or background git jobs. Launch-blocking
+  and background git network operations retry such denials within a bounded, deadline-aware
   budget. Genuine credential failures still surface promptly as permanent authentication
-  errors that keep the original stderr: deploy-key refusals, a host with no local SSH
-  credential at all, and a denial that outlasts the budget.
+  errors that keep the original stderr: deploy-key refusals, a host with no local
+  SSH credential at all, and a denial that outlasts the budget.
 
-  "
+  '
 decisions:
   launch_budget:
-    ask:
-      How long should a launch-blocking git operation keep retrying SSH publickey
+    ask: How long should a launch-blocking git operation keep retrying SSH publickey
       denials?
     choices:
-      two_minutes:
-        ~110s over 6 attempts (5/10/20/30/45s); a wrong key fails a launch ~2 min late
-      five_minutes:
-        ~5 min over 9 attempts (up to 60s apart); rides out longer clusters, slower real
-        failures
-      thirty_seconds:
-        ~30s over 4 attempts (5/10/15s); fails fast, but 7-denial clusters still kill
-        launches
+      two_minutes: ~110s over 6 attempts (5/10/20/30/45s); a wrong key fails a launch
+        ~2 min late
+      five_minutes: ~5 min over 9 attempts (up to 60s apart); rides out longer clusters,
+        slower real failures
+      thirty_seconds: ~30s over 4 attempts (5/10/15s); fails fast, but 7-denial clusters
+        still kill launches
     default: two_minutes
-    why:
-      2026-11-04 clusters cleared within minutes; 6 tries at ~50% denial fail under 2%
-      of launches
+    why: 2026-11-04 clusters cleared within minutes; 6 tries at ~50% denial fail under
+      2% of launches
     answer: two_minutes
   deploy_key_marker:
-    ask:
-      Also classify `denied to deploy key` refusals as permanent authentication
+    ask: Also classify `denied to deploy key` refusals as permanent authentication
       (sase-167's classifier half)?
     default: true
-    why:
-      same marker table; the precedence test needs a defined verdict for deploy-key text
+    why: same marker table; the precedence test needs a defined verdict for deploy-key
+      text
     answer: true
 phases:
-  - id: core-verdict
-    title: sase-core credential_unconfirmed verdict for SSH publickey denials
-    depends_on: []
-    size: medium
-    description:
-      "core-verdict: in sase-core, classify SSH publickey denials on git and git_clone
-      operations as a new non-retryable `credential_unconfirmed` verdict whose reason
-      keeps the `authentication` category. Deploy-key refusals stay permanent, the
-      retryability module becomes a facade, and table and parity tests cover the new
-      verdict."
-  - id: credential-retry-policy
-    title: sase pin bump and shared credential-confirmation retry policy
-    depends_on:
-      - core-verdict
-    size: medium
-    description:
-      "credential-retry-policy: move sase's sase-core CI pin past the classifier change
-      and add the Python wire constant. Add a shared, deadline-aware credential-retry
-      tracker with launch and background budgets, an env kill switch, a per-host
-      exhaustion memo, and a conservative local-SSH-credential precheck that fails fast
-      when no credential exists."
-  - id: sdd-clone-adopt
-    title: Adopt credential retries in the SDD store clone
-    depends_on:
-      - credential-retry-policy
-    size: medium
-    description:
-      "sdd-clone-adopt: give `clone_sdd_store_to_path` a credential-retry budget
-      separate from its transient schedule, using the launch budget, never holding the
-      clone admission permit while sleeping. Prove it with an SSH-shim fake GitHub
-      remote that denies N times and then serves a real bare repo."
-  - id: network-git-and-lease-adopt
-    title: Adopt credential retries in SDD network git and workspace lease fetch
-    depends_on:
-      - credential-retry-policy
-    size: medium
-    description:
-      "network-git-and-lease-adopt: route publickey denials in
-      `run_sdd_network_git_with_retries` (agent publication) and the operational-lease
-      `git fetch` through the shared tracker, replacing the lease's bespoke one-shot
-      confirmation. Keep `is_credential_failure`, the ssh-agent hint, and the external
-      mirror's `auth_error` label intact."
-  - id: docs-and-followups
-    title: Document the auth-retry behavior and record follow-ups
-    depends_on:
-      - sdd-clone-adopt
-      - network-git-and-lease-adopt
-    size: small
-    description:
-      "docs-and-followups: document the retry budgets, kill switch, and fast-fail cases
-      in the service-host and SDD docs. Note the deploy-key marker on sase-167, record
-      proposed follow-ups for network git sites that never consult the classifier, and
-      run the shim end to end against both adopted paths."
+- id: core-verdict
+  title: sase-core credential_unconfirmed verdict for SSH publickey denials
+  depends_on: []
+  size: medium
+  description: 'core-verdict: in sase-core, classify SSH publickey denials on git
+    and git_clone operations as a new non-retryable `credential_unconfirmed` verdict
+    whose reason keeps the `authentication` category. Deploy-key refusals stay permanent,
+    the retryability module becomes a facade, and table and parity tests cover the
+    new verdict.'
+- id: credential-retry-policy
+  title: sase pin bump and shared credential-confirmation retry policy
+  depends_on:
+  - core-verdict
+  size: medium
+  description: 'credential-retry-policy: move sase''s sase-core CI pin past the classifier
+    change and add the Python wire constant. Add a shared, deadline-aware credential-retry
+    tracker with launch and background budgets, an env kill switch, a per-host exhaustion
+    memo, and a conservative local-SSH-credential precheck that fails fast when no
+    credential exists.'
+- id: sdd-clone-adopt
+  title: Adopt credential retries in the SDD store clone
+  depends_on:
+  - credential-retry-policy
+  size: medium
+  description: 'sdd-clone-adopt: give `clone_sdd_store_to_path` a credential-retry
+    budget separate from its transient schedule, using the launch budget, never holding
+    the clone admission permit while sleeping. Prove it with an SSH-shim fake GitHub
+    remote that denies N times and then serves a real bare repo.'
+- id: network-git-and-lease-adopt
+  title: Adopt credential retries in SDD network git and workspace lease fetch
+  depends_on:
+  - credential-retry-policy
+  size: medium
+  description: 'network-git-and-lease-adopt: route publickey denials in `run_sdd_network_git_with_retries`
+    (agent publication) and the operational-lease `git fetch` through the shared tracker,
+    replacing the lease''s bespoke one-shot confirmation. Keep `is_credential_failure`,
+    the ssh-agent hint, and the external mirror''s `auth_error` label intact.'
+- id: docs-and-followups
+  title: Document the auth-retry behavior and record follow-ups
+  depends_on:
+  - sdd-clone-adopt
+  - network-git-and-lease-adopt
+  size: small
+  description: 'docs-and-followups: document the retry budgets, kill switch, and fast-fail
+    cases in the service-host and SDD docs. Note the deploy-key marker on sase-167,
+    record proposed follow-ups for network git sites that never consult the classifier,
+    and run the shim end to end against both adopted paths.'
 proposed_by: bbugyi200.athena.sase-1r5
 proposed_with: claude/opus
 parent_bead: sase-1r5
@@ -97,10 +86,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-04 06:54:51
 status: wip
+bead_id: sase-1r5.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/github_publickey_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/github_publickey_retry.md)
+- **PROMPT:** [prompts/202611/github_publickey_retry.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/github_publickey_retry.md)
+- **BEAD:** [sase-1r5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1r5/sase-1r5.1.md)
 
 # Plan: Retry transient GitHub SSH publickey denials
 
