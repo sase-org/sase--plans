@@ -85,7 +85,7 @@ parent_bead: sase-1r5
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-04 06:54:51
-status: wip
+status: done
 bead_id: sase-1r5.1
 ---
 
