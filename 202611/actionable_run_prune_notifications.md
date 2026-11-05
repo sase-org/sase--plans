@@ -1,81 +1,75 @@
 ---
 tier: epic
 title: Actionable ACE-run pruning notifications with a restorable prune review
-goal: "Pressing Enter on an ACE-run pruning notification opens a polished review that,
+goal: 'Pressing Enter on an ACE-run pruning notification opens a polished review that,
   once confirmed, moves exactly the reviewed and still-eligible runs into a restorable
   trash in the background. Protections are re-verified before every move and again
   before any permanent purge.
 
-  "
+  '
 decisions:
   auto_purge:
-    ask:
-      Should the hourly preview job permanently purge confirmed run batches after the
-      trash grace period?
+    ask: Should the hourly preview job permanently purge confirmed run batches after
+      the trash grace period?
     default: true
-    why:
-      Your confirmation authorizes the prune, and a second manual step would never
+    why: Your confirmation authorizes the prune, and a second manual step would never
       reclaim the space
     answer: true
   decision_record:
-    ask:
-      Add a decisions memory record saying ACE-run pruning is a user-confirmed,
+    ask: Add a decisions memory record saying ACE-run pruning is a user-confirmed,
       restorable quarantine?
     memory:
-      - decisions
+    - decisions
     default: false
     answer: false
 phases:
-  - id: core_quarantine
-    title: Rust run-trash contract in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core_quarantine: add a sase-core module that quarantines confirmed ACE-run dirs
-      into a journaled, restorable trash by atomic rename, re-checking every protection
-      first. It also lists, restores, and protection-verifies purges, with PyO3 bindings
-      and tests. The unattended apply refusal stays."
-  - id: trash_callers
-    title: Python facade, review snapshots, and CLI apply/restore
-    depends_on:
-      - core_quarantine
-    size: medium
-    description:
-      "trash_callers: ratchet the core pin, add the Python facade and the
-      review-snapshot payload module, make `prune-runs --apply` quarantine
-      fresh-intersect-reviewed runs, and post a result notification. `artifact trash`
-      gains run batches, and the artifact index stays consistent."
-  - id: preview_notification
-    title: Hourly preview emits an actionable, beautiful notification
-    depends_on:
-      - trash_callers
-    size: small
-    description:
-      'preview_notification: the chop purges expired batches, writes a review snapshot,
-      and attaches the review payload. It redesigns the report with project display
-      names and per-project rows, supersedes stale previews, and drops the
-      "preview-only" copy.'
-  - id: review_modal
-    title: TUI prune review modal behind notification Enter
-    depends_on:
-      - trash_callers
-      - preview_notification
-    size: medium
-    description:
-      "review_modal: route Enter on payload-bearing report notifications to a new prune
-      review modal with ready, blocked, missing, and running states. On confirm it
-      submits the CLI apply as a durable proc and reports completion. Includes badges,
-      footer, help, visual snapshots, and an end-to-end fixture test."
+- id: core_quarantine
+  title: Rust run-trash contract in sase-core
+  depends_on: []
+  size: medium
+  description: 'core_quarantine: add a sase-core module that quarantines confirmed
+    ACE-run dirs into a journaled, restorable trash by atomic rename, re-checking
+    every protection first. It also lists, restores, and protection-verifies purges,
+    with PyO3 bindings and tests. The unattended apply refusal stays.'
+- id: trash_callers
+  title: Python facade, review snapshots, and CLI apply/restore
+  depends_on:
+  - core_quarantine
+  size: medium
+  description: 'trash_callers: ratchet the core pin, add the Python facade and the
+    review-snapshot payload module, make `prune-runs --apply` quarantine fresh-intersect-reviewed
+    runs, and post a result notification. `artifact trash` gains run batches, and
+    the artifact index stays consistent.'
+- id: preview_notification
+  title: Hourly preview emits an actionable, beautiful notification
+  depends_on:
+  - trash_callers
+  size: small
+  description: 'preview_notification: the chop purges expired batches, writes a review
+    snapshot, and attaches the review payload. It redesigns the report with project
+    display names and per-project rows, supersedes stale previews, and drops the "preview-only"
+    copy.'
+- id: review_modal
+  title: TUI prune review modal behind notification Enter
+  depends_on:
+  - trash_callers
+  - preview_notification
+  size: medium
+  description: 'review_modal: route Enter on payload-bearing report notifications
+    to a new prune review modal with ready, blocked, missing, and running states.
+    On confirm it submits the CLI apply as a durable proc and reports completion.
+    Includes badges, footer, help, visual snapshots, and an end-to-end fixture test.'
 proposed_by: bbugyi200.athena.18e
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-05 06:20:11
 status: wip
+bead_id: sase-1rd
 ---
 
-- **PROMPT:**
-  [prompts/202611/actionable_run_prune_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/actionable_run_prune_notifications.md)
+- **PROMPT:** [prompts/202611/actionable_run_prune_notifications.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/actionable_run_prune_notifications.md)
+- **BEAD:** [sase-1rd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rd/README.md)
 
 # Actionable ACE-run pruning notifications
 
