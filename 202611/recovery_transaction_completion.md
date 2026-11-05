@@ -2,73 +2,67 @@
 tier: epic
 title: Complete the production keep-work recovery transaction
 parent_bead: sase-1qz.6.1.4
-goal: "Recover held work through one durable admitted launch, validate the successor
-  before provider execution, and settle or roll back only from proven ownership
-  evidence.
+goal: 'Recover held work through one durable admitted launch, validate the successor
+  before provider execution, and settle or roll back only from proven ownership evidence.
 
-  "
+  '
 phases:
-  - id: execution_policy
-    title: Rust execution validation and confirmation contract
-    depends_on: []
-    size: medium
-    description:
-      "execution_policy: implement reservation-aware target validation and
-      confirmation/rollback decisions in sase-core, with registered bindings and
-      compatibility tests."
-  - id: prompt_preparation
-    title: Prepare and pin the real recovery prompt
-    depends_on:
-      - execution_policy
-    size: medium
-    description:
-      "prompt_preparation: replace held-only post-CAS preview calls, preserve effective
-      model overrides, and exercise the real preview and continuation adapters."
-  - id: durable_admission
-    title: Submit and resume the pinned recovery request
-    depends_on:
-      - prompt_preparation
-    size: medium
-    description:
-      "durable_admission: connect the winning reservation to durable typed admission and
-      a reconstructible strict-workspace dispatcher, including cancellation and retry
-      evidence."
-  - id: bootstrap_ack
-    title: Prove required inheritance before provider execution
-    depends_on:
-      - execution_policy
-    size: medium
-    description:
-      "bootstrap_ack: validate goal, bead, permission scope and original repository
-      baselines before provider execution, then persist identity-bound bootstrap
-      evidence."
-  - id: settlement_rollback
-    title: Confirm the actual successor and fail safely
-    depends_on:
-      - durable_admission
-      - bootstrap_ack
-    size: medium
-    description:
-      "settlement_rollback: consume bootstrap evidence, verify identity and model, and
-      return to held only after cancellation, verified termination and safe custody
-      restoration."
-  - id: integration
-    title: Verify the production transaction and closure evidence
-    depends_on:
-      - settlement_rollback
-    size: medium
-    description:
-      "integration: cover immediate and queued recovery with real policy and isolated
-      fake providers, run required checks, and prepare evidence for the land agent to
-      close sase-1qz.6.1.4."
+- id: execution_policy
+  title: Rust execution validation and confirmation contract
+  depends_on: []
+  size: medium
+  description: 'execution_policy: implement reservation-aware target validation and
+    confirmation/rollback decisions in sase-core, with registered bindings and compatibility
+    tests.'
+- id: prompt_preparation
+  title: Prepare and pin the real recovery prompt
+  depends_on:
+  - execution_policy
+  size: medium
+  description: 'prompt_preparation: replace held-only post-CAS preview calls, preserve
+    effective model overrides, and exercise the real preview and continuation adapters.'
+- id: durable_admission
+  title: Submit and resume the pinned recovery request
+  depends_on:
+  - prompt_preparation
+  size: medium
+  description: 'durable_admission: connect the winning reservation to durable typed
+    admission and a reconstructible strict-workspace dispatcher, including cancellation
+    and retry evidence.'
+- id: bootstrap_ack
+  title: Prove required inheritance before provider execution
+  depends_on:
+  - execution_policy
+  size: medium
+  description: 'bootstrap_ack: validate goal, bead, permission scope and original
+    repository baselines before provider execution, then persist identity-bound bootstrap
+    evidence.'
+- id: settlement_rollback
+  title: Confirm the actual successor and fail safely
+  depends_on:
+  - durable_admission
+  - bootstrap_ack
+  size: medium
+  description: 'settlement_rollback: consume bootstrap evidence, verify identity and
+    model, and return to held only after cancellation, verified termination and safe
+    custody restoration.'
+- id: integration
+  title: Verify the production transaction and closure evidence
+  depends_on:
+  - settlement_rollback
+  size: medium
+  description: 'integration: cover immediate and queued recovery with real policy
+    and isolated fake providers, run required checks, and prepare evidence for the
+    land agent to close sase-1qz.6.1.4.'
 proposed_by: bbugyi200.athena.sase-1qz.6.1.4
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-05 10:12:01
 status: wip
+bead_id: sase-1qz.6.1.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/recovery_transaction_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/recovery_transaction_completion.md)
+- **PROMPT:** [prompts/202611/recovery_transaction_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/recovery_transaction_completion.md)
+- **BEAD:** [sase-1qz.6.1.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qz/sase-1qz.6.1.4.1.md)
 
 # Complete the production keep-work recovery transaction
 
