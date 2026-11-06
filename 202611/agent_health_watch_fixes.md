@@ -1,108 +1,99 @@
 ---
 tier: epic
-title:
-  Agent health watch fixes — publication wedge, leaked claims, stranded handoffs, bead
-  open misuse
-goal: "Agent publication heals itself from conflicts on regenerable index pages and
+title: Agent health watch fixes — publication wedge, leaked claims, stranded handoffs,
+  bead open misuse
+goal: 'Agent publication heals itself from conflicts on regenerable index pages and
   escalates once otherwise; finished monitors and failed staged handoffs stop leaking
-  workspace claims and can be re-adopted; agents can no longer demote their own beads by
-  running `sase bead open` to view them.
+  workspace claims and can be re-adopted; agents can no longer demote their own beads
+  by running `sase bead open` to view them.
 
-  "
+  '
 phases:
-  - id: pub-policy
-    title: Core rebase-conflict policy for agent publication
-    depends_on: []
-    size: small
-    description:
-      "pub-policy: add a sase-core decision that says whether a publication rebase's
-      conflicted paths are regenerable index pages that can take the upstream side, or
-      must escalate, and expose it through the Python binding."
-  - id: pub-heal
-    title: Self-healing and one-shot escalation in the publication job
-    depends_on:
-      - pub-policy
-    size: medium
-    description:
-      "pub-heal: resolve index-page rebase conflicts in the agents clone automatically,
-      otherwise park the project with one deduplicated notification and a doctor
-      warning, and stop leaving unpushed commits behind."
-  - id: retain-scope
-    title: Scope monitor retention evidence to the monitor's own workspace
-    depends_on: []
-    size: medium
-    description:
-      "retain-scope: stop epic-launch monitors from probing the plan agent's former
-      workspace during terminal retention, and fix the swallowed Workspace held
-      notification."
-  - id: decisions-commit
-    title: Commit the Decision Sheet sibling on bead-work plan launches
-    depends_on: []
-    size: small
-    description:
-      "decisions-commit: make `sase bead work <plan>` commit the archived plan-decisions
-      sheet together with the plan, as plan approval already does."
-  - id: stale-claims
-    title: Release leaked and dead claims in stale-running cleanup
-    depends_on:
-      - retain-scope
-      - decisions-commit
-    size: medium
-    description:
-      "stale-claims: re-settle already-leaked epic-launch monitor claims with the
-      corrected scope after publishing their stray decision sheets, and apply the
-      held-claim TTL to dead gate claims stuck in a non-terminal state."
-  - id: staged-join
-    title: Keep reserved joined runs alive through staged adoption
-    depends_on: []
-    size: medium
-    description:
-      "staged-join: stop the end-of-turn cleanup and starter watchdog from stopping tool
-      runs that a staged monitor has reserved, and fall back to a fresh owned run when a
-      joined run is gone at adoption."
-  - id: staged-response
-    title: Make settled stages adoptable after a provider error, with muse parity
-    depends_on: []
-    size: medium
-    description:
-      "staged-response: persist a staged response when the provider fails after a valid
-      stage, let adopters fall back to the provider failure record, and give muse the
-      staged-handoff wait guard and directive Claude and Codex already have."
-  - id: staged-readopt
-    title: Make sase agent readopt work for held monitor handoffs
-    depends_on:
-      - staged-join
-      - staged-response
-    size: medium
-    description:
-      "staged-readopt: keep the staged monitor's owner lookup alive across held cleanup
-      so explicit re-adoption can find the member, and make failed-adoption notices name
-      the remedy that actually works."
-  - id: open-guard
-    title: Stop agents from demoting beads with sase bead open
-    depends_on: []
-    size: small
-    description:
-      "open-guard: fix the worker prompts that tell agents to run `sase bead open` on
-      their own bead, refuse agent reopen of non-closed beads with a `sase bead read`
-      hint, and clarify help text."
-  - id: open-actor
-    title: Record the real actor and skip no-op reopen events in sase-core
-    depends_on:
-      - open-guard
-    size: medium
-    description:
-      "open-actor: thread the mutating actor through the core reopen mutation instead of
-      the bead creator, make reopening an already-open bead a no-op, and move the
-      sase-core pin."
+- id: pub-policy
+  title: Core rebase-conflict policy for agent publication
+  depends_on: []
+  size: small
+  description: 'pub-policy: add a sase-core decision that says whether a publication
+    rebase''s conflicted paths are regenerable index pages that can take the upstream
+    side, or must escalate, and expose it through the Python binding.'
+- id: pub-heal
+  title: Self-healing and one-shot escalation in the publication job
+  depends_on:
+  - pub-policy
+  size: medium
+  description: 'pub-heal: resolve index-page rebase conflicts in the agents clone
+    automatically, otherwise park the project with one deduplicated notification and
+    a doctor warning, and stop leaving unpushed commits behind.'
+- id: retain-scope
+  title: Scope monitor retention evidence to the monitor's own workspace
+  depends_on: []
+  size: medium
+  description: 'retain-scope: stop epic-launch monitors from probing the plan agent''s
+    former workspace during terminal retention, and fix the swallowed Workspace held
+    notification.'
+- id: decisions-commit
+  title: Commit the Decision Sheet sibling on bead-work plan launches
+  depends_on: []
+  size: small
+  description: 'decisions-commit: make `sase bead work <plan>` commit the archived
+    plan-decisions sheet together with the plan, as plan approval already does.'
+- id: stale-claims
+  title: Release leaked and dead claims in stale-running cleanup
+  depends_on:
+  - retain-scope
+  - decisions-commit
+  size: medium
+  description: 'stale-claims: re-settle already-leaked epic-launch monitor claims
+    with the corrected scope after publishing their stray decision sheets, and apply
+    the held-claim TTL to dead gate claims stuck in a non-terminal state.'
+- id: staged-join
+  title: Keep reserved joined runs alive through staged adoption
+  depends_on: []
+  size: medium
+  description: 'staged-join: stop the end-of-turn cleanup and starter watchdog from
+    stopping tool runs that a staged monitor has reserved, and fall back to a fresh
+    owned run when a joined run is gone at adoption.'
+- id: staged-response
+  title: Make settled stages adoptable after a provider error, with muse parity
+  depends_on: []
+  size: medium
+  description: 'staged-response: persist a staged response when the provider fails
+    after a valid stage, let adopters fall back to the provider failure record, and
+    give muse the staged-handoff wait guard and directive Claude and Codex already
+    have.'
+- id: staged-readopt
+  title: Make sase agent readopt work for held monitor handoffs
+  depends_on:
+  - staged-join
+  - staged-response
+  size: medium
+  description: 'staged-readopt: keep the staged monitor''s owner lookup alive across
+    held cleanup so explicit re-adoption can find the member, and make failed-adoption
+    notices name the remedy that actually works.'
+- id: open-guard
+  title: Stop agents from demoting beads with sase bead open
+  depends_on: []
+  size: small
+  description: 'open-guard: fix the worker prompts that tell agents to run `sase bead
+    open` on their own bead, refuse agent reopen of non-closed beads with a `sase
+    bead read` hint, and clarify help text.'
+- id: open-actor
+  title: Record the real actor and skip no-op reopen events in sase-core
+  depends_on:
+  - open-guard
+  size: medium
+  description: 'open-actor: thread the mutating actor through the core reopen mutation
+    instead of the bead creator, make reopening an already-open bead a no-op, and
+    move the sase-core pin.'
 proposed_by: bbugyi200.apollo.cp--5
 proposed_with: claude/opus
 create_time: 2026-11-06 05:46:42
 status: wip
+bead_id: sase-1rg
 ---
 
-- **PROMPT:**
-  [prompts/202611/agent_health_watch_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_health_watch_fixes.md)
+- **PROMPT:** [prompts/202611/agent_health_watch_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_health_watch_fixes.md)
+- **BEAD:** [sase-1rg](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rg/README.md)
 
 # Plan: Agent health watch fixes
 
