@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "enter_default",
+      "kind": "choice",
+      "ask": "Which keep-work action should a second Enter (\u23ce\u23ce) run in the recovery panel?",
+      "why": "Escalate is the feature's headline, and like Continue it never releases the workspace",
+      "choices": [
+        {
+          "key": "escalate",
+          "label": "Escalate (or Switch at the top rung); Continue only when no other model exists"
+        },
+        {
+          "key": "continue",
+          "label": "Continue on the same model; climbing to a bigger model always needs u"
+        }
+      ],
+      "default": "escalate",
+      "effective_default": "escalate",
+      "requested_verified": false
+    },
+    {
+      "id": "successor_context",
+      "kind": "choice",
+      "ask": "How much of the hijacked transcript should keep-work successors receive by default?",
+      "why": "The successor re-explores least, and the budget fallback caps the cost",
+      "choices": [
+        {
+          "key": "fork",
+          "label": "Inline the transcript via #fork; fall back to the brief when over the continuation budget"
+        },
+        {
+          "key": "brief",
+          "label": "Send only the bounded evidence brief plus the transcript path; cheaper, more re-exploration"
+        }
+      ],
+      "default": "fork",
+      "effective_default": "fork",
+      "requested_verified": false
+    },
+    {
+      "id": "glossary_term",
+      "kind": "toggle",
+      "ask": "Publish an Agent Hijack glossary strand when the feature lands?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "glossary:agent-hijack"
+        ]
+      },
+      "requested": "An \"agent hijack\" (aka \"hijack\"--we should add a good new glossary term for this) is meant to describe the process of killing a sase agent without releasing its workspace or dismissing it.",
+      "provenance": "asked",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "glossary:agent-hijack",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/glossary/agent-hijack.md",
+          "type": "strand",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "id": "decision_records",
+      "kind": "toggle",
+      "ask": "Record the two hijack design decisions (never downgrade; custody held until resolved) as decision records?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "decisions:hijack-escalation-never-downgrades",
+          "decisions:hijack-holds-custody-until-resolved"
+        ]
+      },
+      "requested": "Review the agent_hijack_held_workspace_recovery.md file in the research sidecar repo for context and inspiration before planning. I agree with all of the requirements recommended in that research file",
+      "provenance": "asked",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "decisions:hijack-escalation-never-downgrades",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/decisions/hijack-escalation-never-downgrades.md",
+          "type": "strand",
+          "exists": false
+        },
+        {
+          "selector": "decisions:hijack-holds-custody-until-resolved",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/decisions/hijack-holds-custody-until-resolved.md",
+          "type": "strand",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}
