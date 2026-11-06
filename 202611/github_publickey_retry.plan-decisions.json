@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "launch_budget",
+      "kind": "choice",
+      "ask": "How long should a launch-blocking git operation keep retrying SSH publickey denials?",
+      "why": "2026-11-04 clusters cleared within minutes; 6 tries at ~50% denial fail under 2% of launches",
+      "choices": [
+        {
+          "key": "two_minutes",
+          "label": "~110s over 6 attempts (5/10/20/30/45s); a wrong key fails a launch ~2 min late"
+        },
+        {
+          "key": "five_minutes",
+          "label": "~5 min over 9 attempts (up to 60s apart); rides out longer clusters, slower real failures"
+        },
+        {
+          "key": "thirty_seconds",
+          "label": "~30s over 4 attempts (5/10/15s); fails fast, but 7-denial clusters still kill launches"
+        }
+      ],
+      "default": "two_minutes",
+      "effective_default": "two_minutes",
+      "requested_verified": false
+    },
+    {
+      "id": "deploy_key_marker",
+      "kind": "toggle",
+      "ask": "Also classify `denied to deploy key` refusals as permanent authentication (sase-167's classifier half)?",
+      "why": "same marker table; the precedence test needs a defined verdict for deploy-key text",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
