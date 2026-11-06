@@ -16,6 +16,8 @@ status: wip
   [202611/actionable_run_prune_notifications.md](https://github.com/sase-org/sase--plans/blob/main/202611/actionable_run_prune_notifications.md)
 - **BEAD:**
   [sase-1rd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rd/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1rd.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1rd.land.md)
 
 # Repair run-trash preservation and finish sase-1rd
 
