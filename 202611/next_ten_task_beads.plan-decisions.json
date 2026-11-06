@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "auto_relaunch",
+      "kind": "toggle",
+      "ask": "Should reboot and zombie-epic recovery relaunch agents automatically, not just notify?",
+      "why": "A manual step left 27 waiters stranded for 2.5 days after the 11-01 reboot",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "next_epic",
+      "kind": "toggle",
+      "ask": "After landing, should the lander propose the next backlog epic from the remaining task beads?",
+      "why": "You are starting to work through the backlog, and the proposal still waits for your approval",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
