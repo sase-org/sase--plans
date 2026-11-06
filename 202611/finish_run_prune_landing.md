@@ -1,23 +1,19 @@
 ---
 tier: tale
 title: Repair run-trash preservation and finish sase-1rd
-goal:
-  Purge honors every fresh protection, kept runs remain intact, notifications report the
-  actual result, and sase-1rd closes after verification.
+goal: Purge honors every fresh protection, kept runs remain intact, notifications
+  report the actual result, and sase-1rd closes after verification.
 size: medium
 proposed_by: bbugyi200.athena.sase-1rd.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1rd
-create_time: 2026-11-06 13:19:50
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202611/actionable_run_prune_notifications.md](https://github.com/sase-org/sase--plans/blob/main/202611/actionable_run_prune_notifications.md)
 - **BEAD:**
   [sase-1rd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rd/README.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1rd.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1rd.land.md)
 
 # Repair run-trash preservation and finish sase-1rd
 
