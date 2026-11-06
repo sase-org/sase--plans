@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "triage_views",
+      "kind": "choice",
+      "ask": "Should the clan and tribe SLOW TOOL CALLS triage lists also switch to running-first, newest-first order?",
+      "why": "Those lists are deliberate cross-member slowest-call rankings, not the chronological list",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Clan and tribe lists stay slowest-first; only the per-agent/session section changes"
+        },
+        {
+          "key": "match",
+          "label": "Clan and tribe top-5 lists show running and newest calls instead of the slowest"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
