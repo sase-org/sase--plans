@@ -1,10 +1,9 @@
 ---
 tier: tale
 title: Finish hijack recovery settlement and close the keep-work epic
-goal:
-  Every keep-work recovery reaches a settled predecessor without user action,
-  interrupted settlement is repaired, proven-absent launches return to held through Rust
-  policy, and epic sase-1qz.6.1 plus its parent phase sase-1qz.6 close with verified
+goal: Every keep-work recovery reaches a settled predecessor without user action,
+  interrupted settlement is repaired, proven-absent launches return to held through
+  Rust policy, and epic sase-1qz.6.1 plus its parent phase sase-1qz.6 close with verified
   evidence.
 size: medium
 proposed_by: bbugyi200.athena.sase-1qz.6.1.land
@@ -17,11 +16,6 @@ status: done
   [202611/hijack_keep_work_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/hijack_keep_work_recovery.md)
 - **BEAD:**
   [sase-1qz.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1qz/sase-1qz.6.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1qz.6.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1qz.6.1.land.md)
-- **COMMITS:**
-  - [71011e1](https://github.com/sase-org/sase/commit/71011e1e10771c589e2c6dd8219dd6a3d32a1040)
-    — feat(hijack-recovery): finish keep-work settlement without user action
 
 # Plan: Finish hijack recovery settlement and close the keep-work epic
 
