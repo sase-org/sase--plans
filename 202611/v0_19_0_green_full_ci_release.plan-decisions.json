@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "merge_path",
+      "kind": "choice",
+      "ask": "Who should merge release PR #322 and start release.yml at the v0.19.0 tag?",
+      "why": "The steward is the designed single decider, and E2's exit wants a steward release",
+      "choices": [
+        {
+          "key": "steward",
+          "label": "The release steward, after E2's steward fixes land and you enable merge authority; slower"
+        },
+        {
+          "key": "agent",
+          "label": "This epic's release phase, using the steward's own merge argv; faster, bypasses the steward"
+        }
+      ],
+      "default": "steward",
+      "effective_default": "steward",
+      "requested_verified": false
+    },
+    {
+      "id": "reboot_watchdog",
+      "kind": "toggle",
+      "ask": "Install a self-removing hourly crontab watchdog that relaunches this epic after a reboot strands it?",
+      "why": "The 2026-11-01 reboot stranded the last v0.19.0 epic's agents and monitors for days",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
