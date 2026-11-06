@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "revalidation",
+      "kind": "choice",
+      "ask": "How should blocks recorded under older scanner rules be re-evaluated after the rules change?",
+      "why": "A scanner-hit block is a verdict on (bytes, rules); new rules should re-decide it",
+      "choices": [
+        {
+          "key": "automatic",
+          "label": "The next publish attempt rescans under current rules and supersedes clean blocks"
+        },
+        {
+          "key": "command",
+          "label": "Stale blocks stay enforced until a human runs a new report-first revalidate command"
+        }
+      ],
+      "default": "automatic",
+      "effective_default": "automatic",
+      "requested_verified": false
+    },
+    {
+      "id": "rule_scope",
+      "kind": "choice",
+      "ask": "Which scanner rules should get the left word-boundary fix?",
+      "why": "The Stripe, Slack, GitHub, and Anthropic rules share the same unanchored-prefix defect",
+      "choices": [
+        {
+          "key": "all_prefix",
+          "label": "Every prefix-literal token rule, plus a digit-or-capital body check for sk- keys"
+        },
+        {
+          "key": "openai_only",
+          "label": "Only openai-key, as the research proposed; sibling rules still match inside words"
+        }
+      ],
+      "default": "all_prefix",
+      "effective_default": "all_prefix",
+      "requested_verified": false
+    },
+    {
+      "id": "park_notice",
+      "kind": "choice",
+      "ask": "How should the job report a request that publication protection newly parks?",
+      "why": "A real secret in an agent transcript deserves one digest entry, not zero or one per pass",
+      "choices": [
+        {
+          "key": "once",
+          "label": "The pass that first parks a request reports one error; later rechecks stay silent"
+        },
+        {
+          "key": "silent",
+          "label": "Never a job error; parked rows appear only in doctor and the publisher heartbeat"
+        }
+      ],
+      "default": "once",
+      "effective_default": "once",
+      "requested_verified": false
+    },
+    {
+      "id": "historic_quarantines",
+      "kind": "choice",
+      "ask": "Should the 233 bob-cli rows quarantined by the .land prompt-archive bug be revived?",
+      "why": "Reviving mostly re-publishes identical pages; the fix is proven by new .land rows",
+      "choices": [
+        {
+          "key": "leave",
+          "label": "They stay quarantined; most of their pages were pushed before the ack check refused"
+        },
+        {
+          "key": "recheck",
+          "label": "The verify phase gates a bounded revival of only those rows to prove the fix"
+        }
+      ],
+      "default": "leave",
+      "effective_default": "leave",
+      "requested_verified": false
+    },
+    {
+      "id": "planner_hints",
+      "kind": "toggle",
+      "ask": "Should planner prompt-archive rows also append a doorbell hint, as the research proposed?",
+      "why": "The unified drain loop reaches hint-less rows in the same pass; a hint only reorders them",
+      "default": false,
+      "effective_default": false,
+      "requested_verified": false
+    }
+  ]
+}
