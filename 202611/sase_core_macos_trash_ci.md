@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Turn sase-core CI green and publish the v0.44.0 core
-goal: sase-core CI is green at its master tip and on the release-plz PR head. After
-  a /sase_gate-approved merge, a complete sase-core-rs release containing sase's core
-  pin is on PyPI, and ci_evidence names the version that unblocks the sase phase.
+goal:
+  sase-core CI is green at its master tip and on the release-plz PR head. After a
+  /sase_gate-approved merge, a complete sase-core-rs release containing sase's core pin
+  is on PyPI, and ci_evidence names the version that unblocks the sase phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1rq.1
 proposed_with: claude/opus
@@ -15,6 +16,12 @@ status: done
   [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
 - **BEAD:**
   [sase-1rq.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1rq.1](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1rq.1.md)
+- **COMMITS:**
+  - [dec432c](https://github.com/sase-org/sase-core/commit/dec432cadda83cb44f4f7a0ae8d12b233c5a2764)
+    — test(agent-artifact-run-trash): compare journal path against the canonical trash
+    root
 
 # Plan: Turn sase-core CI green and publish the v0.44.0 core (bead sase-1rq.1)
 
