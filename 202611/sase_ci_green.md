@@ -1,123 +1,119 @@
 ---
 tier: epic
 title: Turn every red sase workflow green
-goal: "On sase-org/sase, Master Gate, Full CI, CI Telemetry, and Publish are green at
-  the master tip, and CI on the open release-please PR is green at its head. Each one is
-  the latest run of its workflow, completed with success on a SHA at or after the last
-  fix, with no in-scope job cancelled or skipped. Green evidence is published as
-  ci_evidence. Otherwise, after a very large and documented effort, a research-sidecar
+goal: 'On sase-org/sase, Master Gate, Full CI, CI Telemetry, and Publish are green
+  at the master tip, and CI on the open release-please PR is green at its head. Each
+  one is the latest run of its workflow, completed with success on a SHA at or after
+  the last fix, with no in-scope job cancelled or skipped. Green evidence is published
+  as ci_evidence. Otherwise, after a very large and documented effort, a research-sidecar
   report says exactly what is still needed. Then the land agent closes phase sase-1rq.2
   of epic sase-1rq.
 
-  "
+  '
 phases:
-  - id: master-gate
-    title: Keep Master Gate green at the master tip
-    depends_on: []
-    size: medium
-    description: "master-gate: Master Gate is red at tip 0ba9cfc9 (run 42373447720). Its
-      only failure is test (3) at
-      tests/ace/tui/test_epic_panel_arrival_frames.py::test_selection_stays_highlighted_and_scrolled_into_view
-      ('frame 11: row 14 outside scroll 2+12'). Prove whether it is deterministic or
-      flaky on an unchanged tree. Root-cause it if you can; otherwise quarantine it with
-      a flake follow-up. Then fix any other Master Gate red at the current tip.
+- id: master-gate
+  title: Keep Master Gate green at the master tip
+  depends_on: []
+  size: medium
+  description: 'master-gate: Master Gate is red at tip 0ba9cfc9 (run 42373447720).
+    Its only failure is test (3) at tests/ace/tui/test_epic_panel_arrival_frames.py::test_selection_stays_highlighted_and_scrolled_into_view
+    (''frame 11: row 14 outside scroll 2+12''). Prove whether it is deterministic
+    or flaky on an unchanged tree. Root-cause it if you can; otherwise quarantine
+    it with a flake follow-up. Then fix any other Master Gate red at the current tip.
 
-      "
-  - id: coverage-contexts
-    title: Stop the coverage-contexts lane crashing on global disk patches
-    depends_on: []
-    size: medium
-    description: "coverage-contexts: CI Telemetry's coverage-contexts job dies in a
-      pytest-xdist INTERNALERROR.
-      test_inflight_handler_does_no_synchronous_disk_or_proc_store_work patches os.stat
-      and pathlib.Path methods globally with a raising stub. Coverage's ctrace tracer
-      then calls os.path.exists while the patch is active and hits the assertion inside
-      the tracer. Scope that guard so it only sees the code under test. Audit the other
-      tests that globally patch os, os.path, or pathlib with raising stubs for the same
-      hazard, and prove the cov-contexts lane passes on the affected modules.
+    '
+- id: coverage-contexts
+  title: Stop the coverage-contexts lane crashing on global disk patches
+  depends_on: []
+  size: medium
+  description: 'coverage-contexts: CI Telemetry''s coverage-contexts job dies in a
+    pytest-xdist INTERNALERROR. test_inflight_handler_does_no_synchronous_disk_or_proc_store_work
+    patches os.stat and pathlib.Path methods globally with a raising stub. Coverage''s
+    ctrace tracer then calls os.path.exists while the patch is active and hits the
+    assertion inside the tracer. Scope that guard so it only sees the code under test.
+    Audit the other tests that globally patch os, os.path, or pathlib with raising
+    stubs for the same hazard, and prove the cov-contexts lane passes on the affected
+    modules.
 
-      "
-  - id: test-cost
-    title: Make the test-cost lane finish inside its 180-minute timeout
-    depends_on: []
-    size: large
-    description: "test-cost: CI Telemetry's test-cost job is cancelled at its unchanged
-      180-minute timeout, about 93% through 60,399 items on 3 workers (run 42347892210).
-      Full CI's test (3.12) runs the same items on the same 3 workers in about 61
-      minutes, so the cost lane's own plugins (cost recorder plus
-      --sase-detect-global-leaks / --sase-fail-on-global-leaks) add roughly 3x overhead.
-      Find and remove that overhead. Then make the whole recipe pass: the run,
-      test_cost_report, and check_test_cost_budgets. Change no timeouts, budgets, or
-      leak gates.
+    '
+- id: test-cost
+  title: Make the test-cost lane finish inside its 180-minute timeout
+  depends_on: []
+  size: large
+  description: 'test-cost: CI Telemetry''s test-cost job is cancelled at its unchanged
+    180-minute timeout, about 93% through 60,399 items on 3 workers (run 42347892210).
+    Full CI''s test (3.12) runs the same items on the same 3 workers in about 61 minutes,
+    so the cost lane''s own plugins (cost recorder plus --sase-detect-global-leaks
+    / --sase-fail-on-global-leaks) add roughly 3x overhead. Find and remove that overhead.
+    Then make the whole recipe pass: the run, test_cost_report, and check_test_cost_budgets.
+    Change no timeouts, budgets, or leak gates.
 
-      "
-  - id: contention
-    title: Make the contention-test lane survive and pass
-    depends_on: []
-    size: large
-    description: "contention: CI Telemetry's contention-test job
-      (SASE_CONTENTION_REPEAT=1 just test-contention, 26 workers on 2 pinned CPUs)
-      prints nothing for about 20 minutes. Then the runner gets a shutdown signal, on
-      both the 06:54 and 13:48 UTC runs on 2026-11-07. The lane has never produced a
-      tally in CI. Find out why the runner dies (memory or disk exhaustion is the lead)
-      and fix it without changing the width, repeat count, CPU pinning, or timeout. Then
-      make the single repeat pass: root-cause each failure under contention, or
-      quarantine proven flakes.
+    '
+- id: contention
+  title: Make the contention-test lane survive and pass
+  depends_on: []
+  size: large
+  description: 'contention: CI Telemetry''s contention-test job (SASE_CONTENTION_REPEAT=1
+    just test-contention, 26 workers on 2 pinned CPUs) prints nothing for about 20
+    minutes. Then the runner gets a shutdown signal, on both the 06:54 and 13:48 UTC
+    runs on 2026-11-07. The lane has never produced a tally in CI. Find out why the
+    runner dies (memory or disk exhaustion is the lead) and fix it without changing
+    the width, repeat count, CPU pinning, or timeout. Then make the single repeat
+    pass: root-cause each failure under contention, or quarantine proven flakes.
 
-      "
-  - id: full-ci
-    title: Turn Full CI green alongside the sase-1r2.6 repair
-    depends_on: []
-    size: large
-    description: "full-ci: Full CI on d2aa3ef8 (run 42370668331) failed in visual-test
-      (107 first-pass drifts over the 25-node recapture cap) and test (3.12)
-      (test_trailing_reserve_remeasures_when_flag_already_enabled wait_for timeout, task
-      bead sase-1qd). Phase sase-1r2.6 of epic sase-1r2 is live and recapturing the bulk
-      golden drift. Coordinate with it rather than duplicating it. Own whatever it
-      leaves: the CI-only visual drifts it recorded as follow-ups, the sase-1qd flake,
-      and any other red. Repeat until a dispatched Full CI is green on its first
-      attempt.
+    '
+- id: full-ci
+  title: Turn Full CI green alongside the sase-1r2.6 repair
+  depends_on: []
+  size: large
+  description: 'full-ci: Full CI on d2aa3ef8 (run 42370668331) failed in visual-test
+    (107 first-pass drifts over the 25-node recapture cap) and test (3.12) (test_trailing_reserve_remeasures_when_flag_already_enabled
+    wait_for timeout, task bead sase-1qd). Phase sase-1r2.6 of epic sase-1r2 is live
+    and recapturing the bulk golden drift. Coordinate with it rather than duplicating
+    it. Own whatever it leaves: the CI-only visual drifts it recorded as follow-ups,
+    the sase-1qd flake, and any other red. Repeat until a dispatched Full CI is green
+    on its first attempt.
 
-      "
-  - id: release-path
-    title: Clear CORE_LAG from Publish and the release PR floor smoke
-    depends_on: []
-    size: small
-    description: "release-path: Publish's sync-release-metadata (run 42375016682) and
-      the release PR #322 CI's release-core-floor-smoke (run 42375244107) both failed on
-      CORE_LAG with floor 0.43.3. sase-core-rs 0.44.0, which contains sase's pin
-      c8adc878, has been on PyPI since 2026-11-07 14:58 UTC. Confirm that a Publish run
-      after that time ratchets the release branch's floor and goes green, and that the
-      floor smoke then passes. Fix the ratchet or smoke tooling only if it still fails.
+    '
+- id: release-path
+  title: Clear CORE_LAG from Publish and the release PR floor smoke
+  depends_on: []
+  size: small
+  description: 'release-path: Publish''s sync-release-metadata (run 42375016682) and
+    the release PR #322 CI''s release-core-floor-smoke (run 42375244107) both failed
+    on CORE_LAG with floor 0.43.3. sase-core-rs 0.44.0, which contains sase''s pin
+    c8adc878, has been on PyPI since 2026-11-07 14:58 UTC. Confirm that a Publish
+    run after that time ratchets the release branch''s floor and goes green, and that
+    the floor smoke then passes. Fix the ratchet or smoke tooling only if it still
+    fails.
 
-      "
-  - id: verify
-    title: Confirm every in-scope workflow green and publish evidence
-    depends_on:
-      - master-gate
-      - coverage-contexts
-      - test-cost
-      - contention
-      - full-ci
-      - release-path
-    size: medium
-    description:
-      "verify: with every phase's fixes on master, dispatch or await Full CI, CI
-      Telemetry, and Publish on the tip. Watch Master Gate and the release PR's CI.
-      Repair any residual red across monitor turns. Then publish ci_evidence plus the
-      Markdown table, or the research report under the parent contract's
-      very-large-effort rule."
+    '
+- id: verify
+  title: Confirm every in-scope workflow green and publish evidence
+  depends_on:
+  - master-gate
+  - coverage-contexts
+  - test-cost
+  - contention
+  - full-ci
+  - release-path
+  size: medium
+  description: 'verify: with every phase''s fixes on master, dispatch or await Full
+    CI, CI Telemetry, and Publish on the tip. Watch Master Gate and the release PR''s
+    CI. Repair any residual red across monitor turns. Then publish ci_evidence plus
+    the Markdown table, or the research report under the parent contract''s very-large-effort
+    rule.'
 proposed_by: bbugyi200.athena.sase-1rq.2
 proposed_with: claude/opus
 parent_bead: sase-1rq.2
 create_time: 2026-11-07 10:24:43
 status: wip
+bead_id: sase-1rq.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/sase_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/sase_ci_green.md)
-- **PARENT:**
-  [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **PROMPT:** [prompts/202611/sase_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/sase_ci_green.md)
+- **PARENT:** [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **BEAD:** [sase-1rq.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.md)
 
 # Plan: Turn every red sase workflow green
 
