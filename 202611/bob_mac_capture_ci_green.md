@@ -1,66 +1,61 @@
 ---
 tier: epic
 title: Turn bob-mac-capture master CI green
-goal: "The `CI` workflow (job `macOS 26 SwiftPM`) on `bobs-org/bob-mac-capture` master
-  is `completed` / `success` at a head SHA at or after the last fix commit of this epic,
-  with `ci_evidence` published. Or, after a very large, well-documented effort, a
-  research-sidecar report tells Bryan exactly what is still needed. When either is done,
-  the land agent closes phase bead sase-1rq.4 of epic sase-1rq.
+goal: 'The `CI` workflow (job `macOS 26 SwiftPM`) on `bobs-org/bob-mac-capture` master
+  is `completed` / `success` at a head SHA at or after the last fix commit of this
+  epic, with `ci_evidence` published. Or, after a very large, well-documented effort,
+  a research-sidecar report tells Bryan exactly what is still needed. When either
+  is done, the land agent closes phase bead sase-1rq.4 of epic sase-1rq.
 
-  "
+  '
 phases:
-  - id: alias-lane
-    title: Fix the eleven sigil-alias rewrite-lane tests that have never passed on CI
-    depends_on: []
-    size: large
-    description:
-      'alias-lane: fix the 11 deterministic CaptureSeparatorToggleTests /
-      CapturePanelModelTests sigil-alias failures (`.`, `;`, `,`, `\`, `/` aliases) that
-      fail on every macOS 26 CI run. Find the shared root cause in the Swift rewrite
-      lane or the test harness, fix it, and prove it with Scripts/macos-ci-check before
-      landing.'
-  - id: word-motion
-    title: Fix the Ctrl-H/L word-motion undo test
-    depends_on: []
-    size: small
-    description:
-      "word-motion: fix
-      CaptureEditorWordMotionTests.testMotionsLeaveTextAndUndoUntouched (XCTAssertFalse
-      at line 67: the undo manager can undo after Ctrl-L then Ctrl-H). It has failed on
-      every CI run since edb2f48."
-  - id: flakes
-    title: Harden or quarantine the intermittent alias and card tests
-    depends_on:
-      - alias-lane
-    size: medium
-    description:
-      "flakes: after alias-lane lands, classify each intermittently failing test: still
-      failing, timing-sensitive (harden it), or a proven flake on an unchanged tree
-      (quarantine it under the parent test_quarantine decision). Leave the suite with no
-      known intermittent failures."
-  - id: master-green
-    title: Drive master CI green and publish evidence
-    depends_on:
-      - alias-lane
-      - word-motion
-      - flakes
-    size: medium
-    description:
-      "master-green: watch bob-mac-capture master CI after every fix phase has landed.
-      Repair any quick new regression that concurrent bob-cli agents landed, get a green
-      first-attempt run at or after the last fix commit, and publish `ci_evidence` (or
-      the fallback research report) for the parent phase sase-1rq.4."
+- id: alias-lane
+  title: Fix the eleven sigil-alias rewrite-lane tests that have never passed on CI
+  depends_on: []
+  size: large
+  description: 'alias-lane: fix the 11 deterministic CaptureSeparatorToggleTests /
+    CapturePanelModelTests sigil-alias failures (`.`, `;`, `,`, `\`, `/` aliases)
+    that fail on every macOS 26 CI run. Find the shared root cause in the Swift rewrite
+    lane or the test harness, fix it, and prove it with Scripts/macos-ci-check before
+    landing.'
+- id: word-motion
+  title: Fix the Ctrl-H/L word-motion undo test
+  depends_on: []
+  size: small
+  description: 'word-motion: fix CaptureEditorWordMotionTests.testMotionsLeaveTextAndUndoUntouched
+    (XCTAssertFalse at line 67: the undo manager can undo after Ctrl-L then Ctrl-H).
+    It has failed on every CI run since edb2f48.'
+- id: flakes
+  title: Harden or quarantine the intermittent alias and card tests
+  depends_on:
+  - alias-lane
+  size: medium
+  description: 'flakes: after alias-lane lands, classify each intermittently failing
+    test: still failing, timing-sensitive (harden it), or a proven flake on an unchanged
+    tree (quarantine it under the parent test_quarantine decision). Leave the suite
+    with no known intermittent failures.'
+- id: master-green
+  title: Drive master CI green and publish evidence
+  depends_on:
+  - alias-lane
+  - word-motion
+  - flakes
+  size: medium
+  description: 'master-green: watch bob-mac-capture master CI after every fix phase
+    has landed. Repair any quick new regression that concurrent bob-cli agents landed,
+    get a green first-attempt run at or after the last fix commit, and publish `ci_evidence`
+    (or the fallback research report) for the parent phase sase-1rq.4.'
 proposed_by: bbugyi200.athena.sase-1rq.4
 proposed_with: claude/opus
 parent_bead: sase-1rq.4
 create_time: 2026-11-07 08:03:35
 status: wip
+bead_id: sase-1rq.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/bob_mac_capture_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bob_mac_capture_ci_green.md)
-- **PARENT:**
-  [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **PROMPT:** [prompts/202611/bob_mac_capture_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bob_mac_capture_ci_green.md)
+- **PARENT:** [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **BEAD:** [sase-1rq.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.4.1.md)
 
 # Plan: Turn bob-mac-capture master CI green
 
