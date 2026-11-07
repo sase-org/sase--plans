@@ -1,97 +1,89 @@
 ---
 tier: epic
 title: Repair red GitHub Actions CI across five projects
-goal: "Every project whose GitHub Actions CI went red in the ~12 hours before 2026-11-07
+goal: 'Every project whose GitHub Actions CI went red in the ~12 hours before 2026-11-07
   07:30 EST (sase-core, sase, bob-cli, bob-mac-capture, dotfiles) is green at its
-  default-branch tip, with machine-readable green evidence attached to the phase's final
-  turn, or, after a very large and well-documented effort, carries a research-sidecar
+  default-branch tip, with machine-readable green evidence attached to the phase''s
+  final turn, or, after a very large and well-documented effort, carries a research-sidecar
   report that tells Bryan exactly what is still needed to finish.
 
-  "
+  '
 decisions:
   test_quarantine:
-    ask:
-      May a phase skip a failing test or relax a CI gate when that is the only way to
-      reach green?
+    ask: May a phase skip a failing test or relax a CI gate when that is the only
+      way to reach green?
     choices:
-      root_cause_only:
-        Real fixes only; anything unfixable goes into the report and stays red
-      quarantine_flakes:
-        Proven flakes may be skipped, each with a flake bead; gates stay as they are
-      relax_gates:
-        Also allows raising timeouts or dropping a job, each with a tracking task bead
+      root_cause_only: Real fixes only; anything unfixable goes into the report and
+        stays red
+      quarantine_flakes: Proven flakes may be skipped, each with a flake bead; gates
+        stay as they are
+      relax_gates: Also allows raising timeouts or dropping a job, each with a tracking
+        task bead
     default: quarantine_flakes
-    why:
-      Runner noise shouldn't block green, but deterministic failures must not be hidden
+    why: Runner noise shouldn't block green, but deterministic failures must not be
+      hidden
     answer: quarantine_flakes
   release_merge:
     ask: When downstream CI needs a release PR merged and published, who merges it?
     choices:
-      gate:
-        The phase proposes the merge through /sase_gate and you approve before it
-        publishes
-      agent:
-        The phase merges the release PR itself once its CI is green, publishing the
-        release
-      human:
-        The phase stops at a green release PR and lists the merge as your manual step
+      gate: The phase proposes the merge through /sase_gate and you approve before
+        it publishes
+      agent: The phase merges the release PR itself once its CI is green, publishing
+        the release
+      human: The phase stops at a green release PR and lists the merge as your manual
+        step
     default: gate
-    why:
-      Publishing can't be undone; a gate keeps you in the loop without a report
+    why: Publishing can't be undone; a gate keeps you in the loop without a report
       round-trip
     answer: gate
 phases:
-  - id: sase-core
-    title: Turn sase-core CI green and unblock its release
-    depends_on: []
-    size: xlarge
-    description:
-      "sase-core: fix the macOS-only agent_artifact_run_trash test failure that keeps
-      master CI and the v0.44.0 release-plz PR red, then get a sase-core-rs release
-      containing sase's core pin published under the release_merge decision."
-  - id: sase
-    title: Turn every red sase workflow green
-    depends_on:
-      - sase-core
-    size: xlarge
-    description:
-      "sase: keep Master Gate green and repair Full CI, CI Telemetry, Publish
-      (CORE_LAG), and the release-please PR's release-core-floor-smoke, starting from
-      the in-flight d2aa3ef Full CI result."
-  - id: bob-cli
-    title: Turn bob-cli CI green
-    depends_on: []
-    size: xlarge
-    description:
-      "bob-cli: clear the clippy lint failure around the oversized CaptureError result
-      type and the macOS test job that is cancelled at its ~45 minute limit on every
-      master push."
-  - id: bob-mac-capture
-    title: Turn bob-mac-capture CI green
-    depends_on: []
-    size: xlarge
-    description:
-      "bob-mac-capture: find and fix the hang that trips the 15 minute swift test
-      watchdog in the macOS 26 SwiftPM job on master and on the ci/precommit snapshot
-      branches."
-  - id: dotfiles
-    title: Turn dotfiles CI green
-    depends_on: []
-    size: xlarge
-    description:
-      'dotfiles: remove the ripgrep dependency (or provision it) behind the "rg: command
-      not found" failure in tests/bash/doctl_login_test.sh that has kept the test job
-      red since 2026-11-05.'
+- id: sase-core
+  title: Turn sase-core CI green and unblock its release
+  depends_on: []
+  size: xlarge
+  description: 'sase-core: fix the macOS-only agent_artifact_run_trash test failure
+    that keeps master CI and the v0.44.0 release-plz PR red, then get a sase-core-rs
+    release containing sase''s core pin published under the release_merge decision.'
+- id: sase
+  title: Turn every red sase workflow green
+  depends_on:
+  - sase-core
+  size: xlarge
+  description: 'sase: keep Master Gate green and repair Full CI, CI Telemetry, Publish
+    (CORE_LAG), and the release-please PR''s release-core-floor-smoke, starting from
+    the in-flight d2aa3ef Full CI result.'
+- id: bob-cli
+  title: Turn bob-cli CI green
+  depends_on: []
+  size: xlarge
+  description: 'bob-cli: clear the clippy lint failure around the oversized CaptureError
+    result type and the macOS test job that is cancelled at its ~45 minute limit on
+    every master push.'
+- id: bob-mac-capture
+  title: Turn bob-mac-capture CI green
+  depends_on: []
+  size: xlarge
+  description: 'bob-mac-capture: find and fix the hang that trips the 15 minute swift
+    test watchdog in the macOS 26 SwiftPM job on master and on the ci/precommit snapshot
+    branches.'
+- id: dotfiles
+  title: Turn dotfiles CI green
+  depends_on: []
+  size: xlarge
+  description: 'dotfiles: remove the ripgrep dependency (or provision it) behind the
+    "rg: command not found" failure in tests/bash/doctl_login_test.sh that has kept
+    the test job red since 2026-11-05.'
 proposed_by: bbugyi200.athena.19h
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-07 07:46:40
 status: wip
+bead_id: sase-1rq
 ---
 
-- **PROMPT:**
-  [prompts/202611/red_ci_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/red_ci_repair.md)
+- **PROMPT:** [prompts/202611/red_ci_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/red_ci_repair.md)
+- **BEAD:** [sase-1rq](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/README.md)
 
 # Plan: Repair red GitHub Actions CI across five projects
 
