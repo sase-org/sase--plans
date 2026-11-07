@@ -1,61 +1,56 @@
 ---
 tier: epic
 title: Finish the remaining Full CI repairs
-goal:
-  Repair the remaining Files and Main deck races and CI-only snapshot differences,
+goal: Repair the remaining Files and Main deck races and CI-only snapshot differences,
   integrate the separately owned bulk golden repair, and prove a first-attempt green
   Full CI run on master containing every fix.
 parent_bead: sase-1rq.2.1.5
 phases:
-  - id: files-reserve
-    title: Make the Files reserve regression deterministic
-    depends_on: []
-    size: medium
-    description:
-      "files-reserve: resolve sase-1qd by diagnosing the initial short-extent setup
-      timeout in test_trailing_reserve_remeasures_when_flag_already_enabled; preserve
-      the real remeasurement regression and verify under coverage/load without raising
-      timeouts. Coordinate with contention phase sase-1rq.2.1.4."
-  - id: reply-preservation
-    title: Preserve Reply selection across same-subject delivery
-    depends_on: []
-    size: medium
-    description:
-      "reply-preservation: fix the bounded Main-deck scroll ownership defect tracked by
-      sase-1ln, add a real same-subject delivery regression, and stabilize
-      agents_renamed_generic_session_root_120x40 without hiding user scroll changes or
-      accepting the clamped frame as the golden."
-  - id: visual-fixtures
-    title: Stabilize the stranded modal and empty Beads captures
-    depends_on: []
-    size: medium
-    description:
-      "visual-fixtures: identify and fix the state leaking into
-      agents_stranded_resolve_modal_120x40 and artifacts_beads_empty_120x40; compare CI
-      actuals with local captures, control the specific focus/layout or inbox seam, and
-      prove exact matching with the normal and UTC environments."
-  - id: verify-full-ci
-    title: Integrate the repairs and prove Full CI green
-    depends_on:
-      - files-reserve
-      - reply-preservation
-      - visual-fixtures
-    size: medium
-    description:
-      "verify-full-ci: confirm all child fixes and sase-1r2.6's bulk golden repair
-      landed, reuse or dispatch one qualifying Full CI run, monitor it across turns,
-      repair remaining in-scope reds, and publish exact first-attempt job evidence for
-      the land agent. Never close the parent phase from this worker."
+- id: files-reserve
+  title: Make the Files reserve regression deterministic
+  depends_on: []
+  size: medium
+  description: 'files-reserve: resolve sase-1qd by diagnosing the initial short-extent
+    setup timeout in test_trailing_reserve_remeasures_when_flag_already_enabled; preserve
+    the real remeasurement regression and verify under coverage/load without raising
+    timeouts. Coordinate with contention phase sase-1rq.2.1.4.'
+- id: reply-preservation
+  title: Preserve Reply selection across same-subject delivery
+  depends_on: []
+  size: medium
+  description: 'reply-preservation: fix the bounded Main-deck scroll ownership defect
+    tracked by sase-1ln, add a real same-subject delivery regression, and stabilize
+    agents_renamed_generic_session_root_120x40 without hiding user scroll changes
+    or accepting the clamped frame as the golden.'
+- id: visual-fixtures
+  title: Stabilize the stranded modal and empty Beads captures
+  depends_on: []
+  size: medium
+  description: 'visual-fixtures: identify and fix the state leaking into agents_stranded_resolve_modal_120x40
+    and artifacts_beads_empty_120x40; compare CI actuals with local captures, control
+    the specific focus/layout or inbox seam, and prove exact matching with the normal
+    and UTC environments.'
+- id: verify-full-ci
+  title: Integrate the repairs and prove Full CI green
+  depends_on:
+  - files-reserve
+  - reply-preservation
+  - visual-fixtures
+  size: medium
+  description: 'verify-full-ci: confirm all child fixes and sase-1r2.6''s bulk golden
+    repair landed, reuse or dispatch one qualifying Full CI run, monitor it across
+    turns, repair remaining in-scope reds, and publish exact first-attempt job evidence
+    for the land agent. Never close the parent phase from this worker.'
 proposed_by: bbugyi200.athena.sase-1rq.2.1.5
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-07 11:09:13
 status: wip
+bead_id: sase-1rq.2.1.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/full_ci_remaining_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/full_ci_remaining_repairs.md)
-- **PARENT:**
-  [202611/sase_ci_green.md](https://github.com/sase-org/sase--plans/blob/main/202611/sase_ci_green.md)
+- **PROMPT:** [prompts/202611/full_ci_remaining_repairs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/full_ci_remaining_repairs.md)
+- **PARENT:** [202611/sase_ci_green.md](https://github.com/sase-org/sase--plans/blob/main/202611/sase_ci_green.md)
+- **BEAD:** [sase-1rq.2.1.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.5.1.md)
 
 # Plan: Finish the remaining Full CI repairs
 
