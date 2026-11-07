@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "y_key",
+      "kind": "choice",
+      "ask": "When a plan has terminal-only steps, should `y` still run the non-interactive `--yes` apply?",
+      "why": "Keeps the one-`--yes`-proc contract and avoids suspending the TUI for mixed `I` scopes",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "`y` runs `--yes` and skips terminal steps; terminal is the focused primary; skips need attention"
+        },
+        {
+          "key": "terminal",
+          "label": "`y` hands projects needing a terminal to interactive `sase init`, then plans the rest again"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
