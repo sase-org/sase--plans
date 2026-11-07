@@ -1,61 +1,56 @@
 ---
 tier: epic
 title: Make the default contention lane finish and pass
-goal:
-  Complete sase-1rq.2.1.4 by identifying and fixing the contention runner shutdown,
-  repairing the failures exposed by a complete run, and recording a successful
-  contention-test job on landed code without relaxing its workload or gates.
+goal: Complete sase-1rq.2.1.4 by identifying and fixing the contention runner shutdown,
+  repairing the failures exposed by a complete run, and recording a successful contention-test
+  job on landed code without relaxing its workload or gates.
 phases:
-  - id: evidence
-    title: Capture resource and progress evidence for the runner shutdown
-    size: medium
-    depends_on: []
-    description:
-      "evidence: Add bounded, outcome-neutral contention diagnostics and obtain a
-      monitored reproduction that distinguishes collection pressure, runtime leaks, disk
-      exhaustion, and process termination. Publish the measurements and the narrowest
-      supported failure mechanism for the survival phase."
-  - id: survival
-    title: Fix the measured cause of contention runner death
-    size: medium
-    depends_on:
-      - evidence
-    description:
-      "survival: Use the evidence phase's measurements to fix the dominant resource or
-      process-lifecycle defect. Keep the full default selection, 26 workers, two pinned
-      CPUs, one CI repeat, and 90-minute timeout. Produce a completed full repeat and
-      failure inventory with before/after resource evidence."
-  - id: failures
-    title: Repair the failures exposed by the completed contention repeat
-    size: medium
-    depends_on:
-      - survival
-    description:
-      "failures: Group the complete repeat's failing nodes by cause, repair timing and
-      isolation defects, and quarantine only unchanged-tree proven flakes under the
-      inherited decision. Verify on affected subsets, then run the full unchanged
-      contention shape. Record every fix and any authorized remainder."
-  - id: confirmation
-    title: Confirm the contention job on landed master code
-    size: small
-    depends_on:
-      - failures
-    description:
-      "confirmation: Confirm landed fix ancestry, reuse or dispatch a qualifying CI
-      Telemetry run, and watch it through a zero-weight monitor. Record the
-      contention-test result, complete tally, elapsed time, resource evidence, run
-      attempt, and quarantine evidence for this child epic's land agent."
+- id: evidence
+  title: Capture resource and progress evidence for the runner shutdown
+  size: medium
+  depends_on: []
+  description: 'evidence: Add bounded, outcome-neutral contention diagnostics and
+    obtain a monitored reproduction that distinguishes collection pressure, runtime
+    leaks, disk exhaustion, and process termination. Publish the measurements and
+    the narrowest supported failure mechanism for the survival phase.'
+- id: survival
+  title: Fix the measured cause of contention runner death
+  size: medium
+  depends_on:
+  - evidence
+  description: 'survival: Use the evidence phase''s measurements to fix the dominant
+    resource or process-lifecycle defect. Keep the full default selection, 26 workers,
+    two pinned CPUs, one CI repeat, and 90-minute timeout. Produce a completed full
+    repeat and failure inventory with before/after resource evidence.'
+- id: failures
+  title: Repair the failures exposed by the completed contention repeat
+  size: medium
+  depends_on:
+  - survival
+  description: 'failures: Group the complete repeat''s failing nodes by cause, repair
+    timing and isolation defects, and quarantine only unchanged-tree proven flakes
+    under the inherited decision. Verify on affected subsets, then run the full unchanged
+    contention shape. Record every fix and any authorized remainder.'
+- id: confirmation
+  title: Confirm the contention job on landed master code
+  size: small
+  depends_on:
+  - failures
+  description: 'confirmation: Confirm landed fix ancestry, reuse or dispatch a qualifying
+    CI Telemetry run, and watch it through a zero-weight monitor. Record the contention-test
+    result, complete tally, elapsed time, resource evidence, run attempt, and quarantine
+    evidence for this child epic''s land agent.'
 proposed_by: bbugyi200.athena.sase-1rq.2.1.4
 proposed_with: codex/gpt-6-astra
 parent_bead: sase-1rq.2.1.4
 create_time: 2026-11-07 11:03:21
 status: wip
+bead_id: sase-1rq.2.1.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/contention_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/contention_repair.md)
-- **PARENT:**
-  [202611/sase_ci_green.md](https://github.com/sase-org/sase--plans/blob/main/202611/sase_ci_green.md)
+- **PROMPT:** [prompts/202611/contention_repair.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/contention_repair.md)
+- **PARENT:** [202611/sase_ci_green.md](https://github.com/sase-org/sase--plans/blob/main/202611/sase_ci_green.md)
+- **BEAD:** [sase-1rq.2.1.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.4.1.md)
 
 # Make the default contention lane finish and pass
 
