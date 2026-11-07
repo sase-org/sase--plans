@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "blocked_y",
+      "kind": "choice",
+      "ask": "On a blocked or missing preview, should `y` start a durable re-check proc that republishes the preview?",
+      "why": "You expected a proc; transient gaps like project onboarding otherwise block pruning up to 1h",
+      "choices": [
+        {
+          "key": "recheck",
+          "label": "y runs a re-check proc; adds `prune-runs --publish-preview` and one durable op"
+        },
+        {
+          "key": "explain",
+          "label": "y only explains via toast; recovery waits for the next hourly preview"
+        }
+      ],
+      "default": "recheck",
+      "effective_default": "recheck",
+      "requested_verified": false
+    }
+  ]
+}
