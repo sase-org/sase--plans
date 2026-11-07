@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Remove test-cost snapshot overhead without weakening leak detection
-goal:
-  Make the complete test-cost recipe finish within its existing CI timeout while
+goal: Make the complete test-cost recipe finish within its existing CI timeout while
   preserving leak detection, attribution, and budgets.
 size: medium
 proposed_by: bbugyi200.athena.sase-1rq.2.1.3
 proposed_with: codex/gpt-6-astra
 bead: sase-1rq.2.1.3
-create_time: 2026-11-07 10:51:28
-status: wip
+status: done
 ---
 
 - **PARENT:**
