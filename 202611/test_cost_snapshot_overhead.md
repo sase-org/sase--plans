@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Remove test-cost snapshot overhead without weakening leak detection
-goal: Make the complete test-cost recipe finish within its existing CI timeout while
+goal:
+  Make the complete test-cost recipe finish within its existing CI timeout while
   preserving leak detection, attribution, and budgets.
 size: medium
 proposed_by: bbugyi200.athena.sase-1rq.2.1.3
@@ -14,6 +15,12 @@ status: done
   [202611/sase_ci_green.md](https://github.com/sase-org/sase--plans/blob/main/202611/sase_ci_green.md)
 - **BEAD:**
   [sase-1rq.2.1.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1rq.2.1.3](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1rq.2.1.3.md)
+- **COMMITS:**
+  - [578a317](https://github.com/sase-org/sase/commit/578a317bcf98a383fbd6adf2d96a1f1e4bae2648)
+    — perf(tests): cut test-cost leak-detector overhead about 3x without weakening the
+    gate
 
 # Make the test-cost lane finish without weakening its gates
 
