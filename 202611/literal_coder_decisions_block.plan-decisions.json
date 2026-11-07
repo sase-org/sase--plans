@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "vcs_error_detail",
+      "kind": "toggle",
+      "ask": "Should the multiple-VCS-workflow error name each full ref and explain project-tag expansion?",
+      "why": "The terse error hid this failure's cause; prompts naming two projects hit it too",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
