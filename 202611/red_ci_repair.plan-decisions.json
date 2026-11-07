@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "test_quarantine",
+      "kind": "choice",
+      "ask": "May a phase skip a failing test or relax a CI gate when that is the only way to reach green?",
+      "why": "Runner noise shouldn't block green, but deterministic failures must not be hidden",
+      "choices": [
+        {
+          "key": "root_cause_only",
+          "label": "Real fixes only; anything unfixable goes into the report and stays red"
+        },
+        {
+          "key": "quarantine_flakes",
+          "label": "Proven flakes may be skipped, each with a flake bead; gates stay as they are"
+        },
+        {
+          "key": "relax_gates",
+          "label": "Also allows raising timeouts or dropping a job, each with a tracking task bead"
+        }
+      ],
+      "default": "quarantine_flakes",
+      "effective_default": "quarantine_flakes",
+      "requested_verified": false
+    },
+    {
+      "id": "release_merge",
+      "kind": "choice",
+      "ask": "When downstream CI needs a release PR merged and published, who merges it?",
+      "why": "Publishing can't be undone; a gate keeps you in the loop without a report round-trip",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "The phase proposes the merge through /sase_gate and you approve before it publishes"
+        },
+        {
+          "key": "agent",
+          "label": "The phase merges the release PR itself once its CI is green, publishing the release"
+        },
+        {
+          "key": "human",
+          "label": "The phase stops at a green release PR and lists the merge as your manual step"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    }
+  ]
+}
