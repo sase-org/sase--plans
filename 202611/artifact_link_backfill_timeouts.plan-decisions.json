@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "outbox_retention",
+      "kind": "choice",
+      "ask": "Should a terminal agent's never-publishable outbox rows leave the live queue 14 days after it finishes, instead of 90?",
+      "why": "The required fixes bound the job on their own, without changing what users see locally",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "No visible change; sase's queue still levels off near 30,600 rows that reconcile must overlay"
+        },
+        {
+          "key": "days14",
+          "label": "Hot queue shrinks ~6x, reconcile gets faster; read-only agents' reads leave local view at 14 days"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
