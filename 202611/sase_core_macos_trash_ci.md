@@ -1,21 +1,20 @@
 ---
 tier: tale
 title: Turn sase-core CI green and publish the v0.44.0 core
-goal:
-  sase-core CI is green at its master tip and on the release-plz PR head. After a
-  /sase_gate-approved merge, a complete sase-core-rs release containing sase's core pin
-  is on PyPI, and ci_evidence names the version that unblocks the sase phase.
+goal: sase-core CI is green at its master tip and on the release-plz PR head. After
+  a /sase_gate-approved merge, a complete sase-core-rs release containing sase's core
+  pin is on PyPI, and ci_evidence names the version that unblocks the sase phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1rq.1
 proposed_with: claude/opus
 bead: sase-1rq.1
-create_time: 2026-11-07 08:01:33
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
-- **BEAD:** sase-1rq.1
+- **BEAD:**
+  [sase-1rq.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.1.md)
 
 # Plan: Turn sase-core CI green and publish the v0.44.0 core (bead sase-1rq.1)
 
