@@ -1,21 +1,20 @@
 ---
 tier: tale
 title: Turn dotfiles CI green by dropping the test-only ripgrep dependency
-goal:
-  bbugyi200/dotfiles CI (lint and test (ubuntu-latest)) is green at the master tip after
-  the test-only rg call in tests/bash/doctl_login_test.sh is replaced with portable
-  grep, with ci_evidence attached and phase bead sase-1rq.5 closed.
+goal: bbugyi200/dotfiles CI (lint and test (ubuntu-latest)) is green at the master
+  tip after the test-only rg call in tests/bash/doctl_login_test.sh is replaced with
+  portable grep, with ci_evidence attached and phase bead sase-1rq.5 closed.
 size: small
 proposed_by: bbugyi200.athena.sase-1rq.5
 proposed_with: claude/opus
 bead: sase-1rq.5
-create_time: 2026-11-07 07:57:46
-status: wip
+status: done
 ---
 
 - **PARENT:**
   [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
-- **BEAD:** sase-1rq.5
+- **BEAD:**
+  [sase-1rq.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.5.md)
 
 # Plan: Turn dotfiles CI green by dropping the test-only ripgrep dependency
 
