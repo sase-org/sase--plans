@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "agent_projects",
+      "kind": "choice",
+      "ask": "Which SASE projects may run agents that read Spotify data?",
+      "why": "Lets home/love agents use music context; the guard still fails closed on public chats",
+      "choices": [
+        {
+          "key": "any_private",
+          "label": "Any project whose agent chats stay private or unpublished; public ones are refused"
+        },
+        {
+          "key": "spotify_only",
+          "label": "Only the private sase-spotify project (+spotify); every other project is refused"
+        }
+      ],
+      "default": "any_private",
+      "effective_default": "any_private",
+      "requested_verified": false
+    },
+    {
+      "id": "phone_renewal",
+      "kind": "toggle",
+      "ask": "Should Spotify re-login be doable from the phone through a renewal gate?",
+      "why": "Six-month expiry is the most likely failure, and one tap from Telegram keeps it reliable",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
