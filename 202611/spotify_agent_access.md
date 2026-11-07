@@ -1,153 +1,143 @@
 ---
 tier: epic
-title: "sase-spotify: Spotify library reads and gated playlist changes for SASE agents"
-goal: "SASE agents of any provider can read Bryan's Spotify library through `sase
-  spotify` and a `/sase_spotify` skill: every playlist, the songs in owned and
-  collaborative playlists and Liked Songs, followed podcasts, and their recent episodes.
-  Library data never reaches a publicly published agent chat, because the CLI enforces
-  that boundary itself. Agents change playlists only by proposing one declarative
-  changeset per task. Bryan reviews it as a PR-style SASE gate in the TUI or on
-  Telegram, and only the option he approves writes to Spotify; that write is re-checked,
-  journaled, reconciled, and verified. The new private sase-org/sase-spotify plugin
-  ships with excellent docs, a strict test suite, and CI. It is installed and accepted
-  end to end on athena.
+title: 'sase-spotify: Spotify library reads and gated playlist changes for SASE agents'
+goal: 'SASE agents of any provider can read Bryan''s Spotify library through `sase
+  spotify` and a `/sase_spotify` skill: every playlist, the songs in owned and collaborative
+  playlists and Liked Songs, followed podcasts, and their recent episodes. Library
+  data never reaches a publicly published agent chat, because the CLI enforces that
+  boundary itself. Agents change playlists only by proposing one declarative changeset
+  per task. Bryan reviews it as a PR-style SASE gate in the TUI or on Telegram, and
+  only the option he approves writes to Spotify; that write is re-checked, journaled,
+  reconciled, and verified. The new private sase-org/sase-spotify plugin ships with
+  excellent docs, a strict test suite, and CI. It is installed and accepted end to
+  end on athena.
 
-  "
+  '
 decisions:
   agent_projects:
     ask: Which SASE projects may run agents that read Spotify data?
     choices:
-      any_private:
-        Any project whose agent chats stay private or unpublished; public ones are
-        refused
-      spotify_only:
-        Only the private sase-spotify project (+spotify); every other project is refused
+      any_private: Any project whose agent chats stay private or unpublished; public
+        ones are refused
+      spotify_only: Only the private sase-spotify project (+spotify); every other
+        project is refused
     default: any_private
-    why:
-      Lets home/love agents use music context; the guard still fails closed on public
-      chats
+    why: Lets home/love agents use music context; the guard still fails closed on
+      public chats
     answer: any_private
   phone_renewal:
     ask: Should Spotify re-login be doable from the phone through a renewal gate?
     default: true
-    why:
-      Six-month expiry is the most likely failure, and one tap from Telegram keeps it
-      reliable
+    why: Six-month expiry is the most likely failure, and one tap from Telegram keeps
+      it reliable
     answer: true
 phases:
-  - id: repo
-    title: Private repository and SASE project, created through a gate
-    depends_on: []
-    size: small
-    description:
-      "repo: propose creating the private sase-org/sase-spotify GitHub repo and SASE
-      project through a gate. After approval, verify that the repo is private and that
-      its agent-chat sidecar is private or absent."
-  - id: scaffold
-    title: Package skeleton, shared foundation, tooling, and CI
-    depends_on:
-      - repo
-    size: medium
-    description:
-      "scaffold: build the package skeleton with every dependency declared, and
-      implement the shared foundation modules: paths, config, errors, the JSON envelope,
-      the UI kit, actor detection, and the SASE bridge. Add CLI stubs, guarded tooling,
-      CI, and doc stubs, then set the GitHub metadata."
-  - id: auth
-    title: Setup wizard, PKCE login, and the token broker
-    depends_on:
-      - scaffold
-    size: medium
-    description:
-      "auth: implement the setup wizard and a PKCE login that accepts either a loopback
-      callback or a pasted redirect. Add the locked, rotation-safe token broker with
-      six-month expiry tracking, plus status and logout."
-  - id: api
-    title: Web API client, cache, library service, privacy guard, and fake Spotify
-    depends_on:
-      - scaffold
-    size: medium
-    description:
-      "api: implement the thin Web API client, with typed models for both item shapes,
-      pagination, and rate-limit, quota, and budget handling. Add the snapshot-keyed
-      cache, the library service with reference resolution, the privacy guard, and the
-      stateful fake Spotify that every test uses."
-  - id: reads
-    title: Dashboard, playlists, podcasts, search, and doctor
-    depends_on:
-      - auth
-      - api
-    size: medium
-    description:
-      "reads: ship the dashboard, playlists, podcasts, search, and doctor commands with
-      quiet terminal output and the versioned JSON contract, plus read-side live tests."
-  - id: changesets
-    title: Changeset document, resolution, diffs, and preview renderers
-    depends_on:
-      - api
-    size: medium
-    description:
-      "changesets: implement the changeset v1 document and its validation with precise
-      errors. Add playlist and track resolution, grouping, snapshot pinning, diffs, the
-      frozen-changeset store, and the plain-text, Markdown, and terminal preview
-      renderers."
-  - id: lifecycle
-    title: Login-expiry watcher, reminders, and phone renewal
-    depends_on:
-      - auth
-    size: small
-    description:
-      "lifecycle: add the scheduler job that watches login expiry and the needs-reauth
-      state, sends deduplicated reminders, and raises the phone renewal gate."
-  - id: apply
-    title: Gate-only apply executor
-    depends_on:
-      - auth
-      - changesets
-    size: medium
-    description:
-      "apply: implement the gate-only executor: re-checks, journaling, chunks of at most
-      100 URIs, reconciliation of ambiguous writes, verification, outcome notifications,
-      and the drift check. Add write-side live tests and Spotify-semantics probes."
-  - id: propose
-    title: Changeset gate, propose and history commands
-    depends_on:
-      - apply
-      - reads
-    size: medium
-    description:
-      "propose: build the custom gate turn from a frozen changeset. Add the propose,
-      repropose, list, and show commands and the dashboard changes line, plus golden
-      gate tests and an end-to-end contract test against a real sase."
-  - id: skill-docs
-    title: The /sase_spotify skill, README, and documentation
-    depends_on:
-      - reads
-      - lifecycle
-      - propose
-    size: medium
-    description:
-      "skill-docs: write the /sase_spotify skill, the README, and the docs pages, with
-      generated terminal screenshots. Then finalize AGENTS.md and CONTRIBUTING."
-  - id: rollout
-    title: Install on athena and end-to-end acceptance
-    depends_on:
-      - skill-docs
-    size: small
-    description:
-      "rollout: install the plugin and its skill on athena through a gate, verify the
-      install, and request an acceptance-agent launch in the private project for after
-      Bryan has logged in."
+- id: repo
+  title: Private repository and SASE project, created through a gate
+  depends_on: []
+  size: small
+  description: 'repo: propose creating the private sase-org/sase-spotify GitHub repo
+    and SASE project through a gate. After approval, verify that the repo is private
+    and that its agent-chat sidecar is private or absent.'
+- id: scaffold
+  title: Package skeleton, shared foundation, tooling, and CI
+  depends_on:
+  - repo
+  size: medium
+  description: 'scaffold: build the package skeleton with every dependency declared,
+    and implement the shared foundation modules: paths, config, errors, the JSON envelope,
+    the UI kit, actor detection, and the SASE bridge. Add CLI stubs, guarded tooling,
+    CI, and doc stubs, then set the GitHub metadata.'
+- id: auth
+  title: Setup wizard, PKCE login, and the token broker
+  depends_on:
+  - scaffold
+  size: medium
+  description: 'auth: implement the setup wizard and a PKCE login that accepts either
+    a loopback callback or a pasted redirect. Add the locked, rotation-safe token
+    broker with six-month expiry tracking, plus status and logout.'
+- id: api
+  title: Web API client, cache, library service, privacy guard, and fake Spotify
+  depends_on:
+  - scaffold
+  size: medium
+  description: 'api: implement the thin Web API client, with typed models for both
+    item shapes, pagination, and rate-limit, quota, and budget handling. Add the snapshot-keyed
+    cache, the library service with reference resolution, the privacy guard, and the
+    stateful fake Spotify that every test uses.'
+- id: reads
+  title: Dashboard, playlists, podcasts, search, and doctor
+  depends_on:
+  - auth
+  - api
+  size: medium
+  description: 'reads: ship the dashboard, playlists, podcasts, search, and doctor
+    commands with quiet terminal output and the versioned JSON contract, plus read-side
+    live tests.'
+- id: changesets
+  title: Changeset document, resolution, diffs, and preview renderers
+  depends_on:
+  - api
+  size: medium
+  description: 'changesets: implement the changeset v1 document and its validation
+    with precise errors. Add playlist and track resolution, grouping, snapshot pinning,
+    diffs, the frozen-changeset store, and the plain-text, Markdown, and terminal
+    preview renderers.'
+- id: lifecycle
+  title: Login-expiry watcher, reminders, and phone renewal
+  depends_on:
+  - auth
+  size: small
+  description: 'lifecycle: add the scheduler job that watches login expiry and the
+    needs-reauth state, sends deduplicated reminders, and raises the phone renewal
+    gate.'
+- id: apply
+  title: Gate-only apply executor
+  depends_on:
+  - auth
+  - changesets
+  size: medium
+  description: 'apply: implement the gate-only executor: re-checks, journaling, chunks
+    of at most 100 URIs, reconciliation of ambiguous writes, verification, outcome
+    notifications, and the drift check. Add write-side live tests and Spotify-semantics
+    probes.'
+- id: propose
+  title: Changeset gate, propose and history commands
+  depends_on:
+  - apply
+  - reads
+  size: medium
+  description: 'propose: build the custom gate turn from a frozen changeset. Add the
+    propose, repropose, list, and show commands and the dashboard changes line, plus
+    golden gate tests and an end-to-end contract test against a real sase.'
+- id: skill-docs
+  title: The /sase_spotify skill, README, and documentation
+  depends_on:
+  - reads
+  - lifecycle
+  - propose
+  size: medium
+  description: 'skill-docs: write the /sase_spotify skill, the README, and the docs
+    pages, with generated terminal screenshots. Then finalize AGENTS.md and CONTRIBUTING.'
+- id: rollout
+  title: Install on athena and end-to-end acceptance
+  depends_on:
+  - skill-docs
+  size: small
+  description: 'rollout: install the plugin and its skill on athena through a gate,
+    verify the install, and request an acceptance-agent launch in the private project
+    for after Bryan has logged in.'
 proposed_by: bbugyi200.athena.19n
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: telegram
 create_time: 2026-11-07 10:55:57
 status: wip
+bead_id: sase-1rs
 ---
 
-- **PROMPT:**
-  [prompts/202611/spotify_agent_access.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/spotify_agent_access.md)
+- **PROMPT:** [prompts/202611/spotify_agent_access.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/spotify_agent_access.md)
+- **BEAD:** [sase-1rs](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rs/README.md)
 
 # Plan: sase-spotify — Spotify library access for SASE agents
 
