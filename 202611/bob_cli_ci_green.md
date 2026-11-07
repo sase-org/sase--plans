@@ -1,75 +1,74 @@
 ---
 tier: epic
 title: Turn bob-cli CI green on master
-goal: "bob-cli's `CI` workflow on master is green at the tip, with lint, test
-  (ubuntu-latest), test (macos-latest), and package all succeeded and none cancelled.
-  Green evidence is published as `ci_evidence`, or, after a very large and documented
-  effort, a research report says exactly what is still needed. The land agent then
-  closes phase sase-1rq.3 of epic sase-1rq.
+goal: 'bob-cli''s `CI` workflow on master is green at the tip, with lint, test (ubuntu-latest),
+  test (macos-latest), and package all succeeded and none cancelled. Green evidence
+  is published as `ci_evidence`, or, after a very large and documented effort, a research
+  report says exactly what is still needed. The land agent then closes phase sase-1rq.3
+  of epic sase-1rq.
 
-  "
+  '
 phases:
-  - id: lint-incremental
-    title: Make the install_ui EarnedEta test hermetic to CARGO_INCREMENTAL
-    depends_on: []
-    size: small
-    description: 'lint-incremental: fix the one deterministic lint-job failure. In the
-      check-scripts step,
-      EarnedEtaTests.test_seeded_history_shows_bar_range_plan_and_summary seeds history
-      rows with incremental=True, but CI''s rust-cache sets CARGO_INCREMENTAL=0, so no
-      row matches and the "usually" ETA text never renders. Make the test independent of
-      the caller''s CARGO_INCREMENTAL, then prove it with and without the variable.
+- id: lint-incremental
+  title: Make the install_ui EarnedEta test hermetic to CARGO_INCREMENTAL
+  depends_on: []
+  size: small
+  description: 'lint-incremental: fix the one deterministic lint-job failure. In the
+    check-scripts step, EarnedEtaTests.test_seeded_history_shows_bar_range_plan_and_summary
+    seeds history rows with incremental=True, but CI''s rust-cache sets CARGO_INCREMENTAL=0,
+    so no row matches and the "usually" ETA text never renders. Make the test independent
+    of the caller''s CARGO_INCREMENTAL, then prove it with and without the variable.
 
-      '
-  - id: mac-known-failures
-    title: Fix the known macOS-only test failures and the Google sign-in hang
-    depends_on: []
-    size: medium
-    description: "mac-known-failures: on the mac host, reproduce and fix the macOS-only
-      failures already seen in CI. Lib: one case-insensitive-APFS test and three /var vs
-      /private/var path tests. CLI: clipboard_status picking Alfred over the command
-      provider. gcal_auth: 11 login tests each stall about 600 s because choose_flow
-      picks the browser flow on macOS, so the paste-scripted tests wait out
-      CONSENT_WINDOW. Make every Google login test family (gcal_auth, gmail_shell, and
-      gkeep_auth if affected) select its flow deterministically on every OS.
+    '
+- id: mac-known-failures
+  title: Fix the known macOS-only test failures and the Google sign-in hang
+  depends_on: []
+  size: medium
+  description: 'mac-known-failures: on the mac host, reproduce and fix the macOS-only
+    failures already seen in CI. Lib: one case-insensitive-APFS test and three /var
+    vs /private/var path tests. CLI: clipboard_status picking Alfred over the command
+    provider. gcal_auth: 11 login tests each stall about 600 s because choose_flow
+    picks the browser flow on macOS, so the paste-scripted tests wait out CONSENT_WINDOW.
+    Make every Google login test family (gcal_auth, gmail_shell, and gkeep_auth if
+    affected) select its flow deterministically on every OS.
 
-      "
-  - id: mac-full-suite
-    title: Run the full macOS CI test set to green on the mac host
-    depends_on:
-      - mac-known-failures
-    size: large
-    description: "mac-full-suite: on a tree that contains the mac-known-failures fixes,
-      run every command CI's macOS job runs on the mac host, with a per-binary watchdog.
-      Every test binary after gcal_auth (all gmail_* suites, gcal_*, gkeep_*, randomize,
-      tasks_parity, tasks_real_vault_parity, doctests) has not run on macOS since about
-      2026-11-02. Fix every remaining failure or hang, and show that the macOS test step
-      fits well inside its unchanged 45-minute job timeout.
+    '
+- id: mac-full-suite
+  title: Run the full macOS CI test set to green on the mac host
+  depends_on:
+  - mac-known-failures
+  size: large
+  description: 'mac-full-suite: on a tree that contains the mac-known-failures fixes,
+    run every command CI''s macOS job runs on the mac host, with a per-binary watchdog.
+    Every test binary after gcal_auth (all gmail_* suites, gcal_*, gkeep_*, randomize,
+    tasks_parity, tasks_real_vault_parity, doctests) has not run on macOS since about
+    2026-11-02. Fix every remaining failure or hang, and show that the macOS test
+    step fits well inside its unchanged 45-minute job timeout.
 
-      "
-  - id: ci-green
-    title: Confirm green CI on the master tip and publish evidence
-    depends_on:
-      - lint-incremental
-      - mac-known-failures
-      - mac-full-suite
-    size: medium
-    description:
-      "ci-green: with every fix landed, dispatch and watch CI on the master tip through
-      /sase_monitor, and fix any residual red job (iterating across monitor turns). Then
-      publish the ci_evidence variable and the Markdown evidence table. Fall back to the
-      research report only under the parent contract's very-large-effort rule."
+    '
+- id: ci-green
+  title: Confirm green CI on the master tip and publish evidence
+  depends_on:
+  - lint-incremental
+  - mac-known-failures
+  - mac-full-suite
+  size: medium
+  description: 'ci-green: with every fix landed, dispatch and watch CI on the master
+    tip through /sase_monitor, and fix any residual red job (iterating across monitor
+    turns). Then publish the ci_evidence variable and the Markdown evidence table.
+    Fall back to the research report only under the parent contract''s very-large-effort
+    rule.'
 proposed_by: bbugyi200.athena.sase-1rq.3
 proposed_with: claude/opus
 parent_bead: sase-1rq.3
 create_time: 2026-11-07 08:10:10
 status: wip
+bead_id: sase-1rq.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/bob_cli_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bob_cli_ci_green.md)
-- **PARENT:**
-  [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **PROMPT:** [prompts/202611/bob_cli_ci_green.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bob_cli_ci_green.md)
+- **PARENT:** [202611/red_ci_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/red_ci_repair.md)
+- **BEAD:** [sase-1rq.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.3.1.md)
 
 # Plan: Turn bob-cli CI green on master
 
