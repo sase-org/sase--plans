@@ -1,46 +1,42 @@
 ---
 tier: epic
 title: Finish hosted contention runtime and failure repair
-goal:
-  The unchanged full default contention job completes within 90 minutes with zero
+goal: The unchanged full default contention job completes within 90 minutes with zero
   failures on landed master, and interrupted runs retain actionable diagnostics.
 parent_bead: sase-1rq.2.1.4.1
 phases:
-  - id: runtime
-    title: Reduce measured hosted runtime and preserve interruption evidence
-    depends_on: []
-    description:
-      "runtime: profile the Python 3.12 contention workload, repair the dominant
-      measured overhead and interrupted-run diagnostics, and produce a completed full
-      repeat with resource and failure evidence."
-    size: medium
-  - id: failures
-    title: Repair the remaining failures under the real contention shape
-    depends_on:
-      - runtime
-    description:
-      "failures: repair every failure family from the completed repeat without weakening
-      workload or gates, and prove a complete zero-failure contention repeat."
-    size: medium
-  - id: confirmation
-    title: Confirm the full contention job on landed master
-    depends_on:
-      - failures
-    description:
-      "confirmation: reuse or dispatch Telemetry on landed master containing the
-      repairs, verify an unchanged-shape successful contention job, and publish complete
-      evidence for nested landing."
-    size: small
+- id: runtime
+  title: Reduce measured hosted runtime and preserve interruption evidence
+  depends_on: []
+  description: 'runtime: profile the Python 3.12 contention workload, repair the dominant
+    measured overhead and interrupted-run diagnostics, and produce a completed full
+    repeat with resource and failure evidence.'
+  size: medium
+- id: failures
+  title: Repair the remaining failures under the real contention shape
+  depends_on:
+  - runtime
+  description: 'failures: repair every failure family from the completed repeat without
+    weakening workload or gates, and prove a complete zero-failure contention repeat.'
+  size: medium
+- id: confirmation
+  title: Confirm the full contention job on landed master
+  depends_on:
+  - failures
+  description: 'confirmation: reuse or dispatch Telemetry on landed master containing
+    the repairs, verify an unchanged-shape successful contention job, and publish
+    complete evidence for nested landing.'
+  size: small
 proposed_by: bbugyi200.athena.sase-1rq.2.1.4.1.land
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-07 23:46:17
 status: wip
+bead_id: sase-1rq.2.1.4.1.5
 ---
 
-- **PROMPT:**
-  [prompts/202611/contention_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/contention_completion.md)
-- **PARENT:**
-  [202611/contention_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/contention_repair.md)
+- **PROMPT:** [prompts/202611/contention_completion.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/contention_completion.md)
+- **PARENT:** [202611/contention_repair.md](https://github.com/sase-org/sase--plans/blob/main/202611/contention_repair.md)
+- **BEAD:** [sase-1rq.2.1.4.1.5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.4.1.5.md)
 
 # Finish hosted contention runtime and failure repair
 
