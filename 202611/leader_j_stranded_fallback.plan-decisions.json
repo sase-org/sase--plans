@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "repeat_press",
+      "kind": "choice",
+      "ask": "Should repeated `,j` presses in the new stranded tier cycle on to older stranded nodes?",
+      "why": "The first press still lands on the newest stranded node; cycling matches the other two tiers",
+      "choices": [
+        {
+          "key": "cycle",
+          "label": "Each press moves to the next older stranded node and wraps, like the unread and stopped tiers"
+        },
+        {
+          "key": "most_recent",
+          "label": "Every press lands on the single most recently stranded node; repeat presses stay put"
+        }
+      ],
+      "default": "cycle",
+      "effective_default": "cycle",
+      "requested_verified": false
+    }
+  ]
+}
