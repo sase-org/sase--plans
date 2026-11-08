@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "covering_index",
+      "kind": "toggle",
+      "ask": "Also add a covering lineage index so single-agent related-artifact lookups get faster?",
+      "why": "batching alone removes the measured build cost without an index schema migration",
+      "default": false,
+      "effective_default": false,
+      "requested_verified": false
+    }
+  ]
+}
