@@ -1,72 +1,64 @@
 ---
 tier: epic
-title:
-  "Health-watch fixes: wait notices name their waiter, failed staged-monitor sessions
-  never park waiters silently, fleet snapshots build within their refresh timeout, and
-  dismissed runs converge in the published agents sidecar"
-goal:
-  Every "Wait dependency can never self-resolve" notice names the blocked agent (never a
-  project key). An agent waiting on a session whose root turn and monitor both failed is
-  flagged within one wait_checks pass instead of waiting silently. apollo's presentation
-  fleet snapshot builds in well under the gateway's 4 s refresh timeout, so remote fleet
-  readers stop receiving stale "timeout" snapshots every minute. agent_state_refresh
-  finds each run's dismissed bundle by exact identity, so dismissed runs stop being
-  published as active or waiting forever, and an incomplete dismissal lookup is never
-  reported as live.
+title: 'Health-watch fixes: wait notices name their waiter, failed staged-monitor
+  sessions never park waiters silently, fleet snapshots build within their refresh
+  timeout, and dismissed runs converge in the published agents sidecar'
+goal: Every "Wait dependency can never self-resolve" notice names the blocked agent
+  (never a project key). An agent waiting on a session whose root turn and monitor
+  both failed is flagged within one wait_checks pass instead of waiting silently.
+  apollo's presentation fleet snapshot builds in well under the gateway's 4 s refresh
+  timeout, so remote fleet readers stop receiving stale "timeout" snapshots every
+  minute. agent_state_refresh finds each run's dismissed bundle by exact identity,
+  so dismissed runs stop being published as active or waiting forever, and an incomplete
+  dismissal lookup is never reported as live.
 decisions:
   covering_index:
-    ask:
-      Also add a covering lineage index so single-agent related-artifact lookups get
-      faster?
+    ask: Also add a covering lineage index so single-agent related-artifact lookups
+      get faster?
     default: false
-    why:
-      batching alone removes the measured build cost without an index schema migration
+    why: batching alone removes the measured build cost without an index schema migration
     answer: false
 phases:
-  - id: wait-notice-fixes
-    title:
-      Terminal-blocked wait notices name their waiter, and the silent-waiter case is
-      reproduced and closed
-    depends_on: []
-    size: medium
-    description:
-      "wait-notice-fixes: resolve the Waiter label from the waiter's agent_meta.json
-      instead of waiting.json's cl_name (F8), then reproduce the athena sase-1ra.7
-      session shape (failed root turn plus failed staged monitor) in a wait_checks test
-      and fix wherever its terminal blocker is dropped (F9)."
-  - id: fleet-lineage-batch
-    title: Batched dismissal-lineage resolution makes fleet snapshot builds fast
-    depends_on: []
-    size: medium
-    description:
-      "fleet-lineage-batch: in sase-core, replace the per-candidate SQL lineage walk in
-      resolve_agent_session_dismissal_lineage with one lineage-column load per (project,
-      workflow dir) pair and an in-memory walk with identical results, prove equivalence
-      and O(pairs) query count in tests, move sase's sase-core pin, and verify on apollo
-      (F10)."
-  - id: dismissal-evidence-lookup
-    title:
-      State repair finds dismissed bundles by exact run identity and never reads an
-      incomplete lookup as live
-    depends_on: []
-    size: medium
-    description:
-      "dismissal-evidence-lookup: add exact agent-name/source-run-id filters (with
-      supporting indexes) to sase-core's dismissed-bundle summary query, make sase's
-      _locate_dismissed_bundles_for_run use them, stop filesystem_observations_for_run
-      from silently dropping a failed dismissal lookup, move sase's sase-core pin, and
-      verify that apollo's published active/waiting rows for dismissed runs converge
-      (F11)."
+- id: wait-notice-fixes
+  title: Terminal-blocked wait notices name their waiter, and the silent-waiter case
+    is reproduced and closed
+  depends_on: []
+  size: medium
+  description: 'wait-notice-fixes: resolve the Waiter label from the waiter''s agent_meta.json
+    instead of waiting.json''s cl_name (F8), then reproduce the athena sase-1ra.7
+    session shape (failed root turn plus failed staged monitor) in a wait_checks test
+    and fix wherever its terminal blocker is dropped (F9).'
+- id: fleet-lineage-batch
+  title: Batched dismissal-lineage resolution makes fleet snapshot builds fast
+  depends_on: []
+  size: medium
+  description: 'fleet-lineage-batch: in sase-core, replace the per-candidate SQL lineage
+    walk in resolve_agent_session_dismissal_lineage with one lineage-column load per
+    (project, workflow dir) pair and an in-memory walk with identical results, prove
+    equivalence and O(pairs) query count in tests, move sase''s sase-core pin, and
+    verify on apollo (F10).'
+- id: dismissal-evidence-lookup
+  title: State repair finds dismissed bundles by exact run identity and never reads
+    an incomplete lookup as live
+  depends_on: []
+  size: medium
+  description: 'dismissal-evidence-lookup: add exact agent-name/source-run-id filters
+    (with supporting indexes) to sase-core''s dismissed-bundle summary query, make
+    sase''s _locate_dismissed_bundles_for_run use them, stop filesystem_observations_for_run
+    from silently dropping a failed dismissal lookup, move sase''s sase-core pin,
+    and verify that apollo''s published active/waiting rows for dismissed runs converge
+    (F11).'
 proposed_by: bbugyi200.apollo.cy--6
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-08 06:51:21
 status: wip
+bead_id: sase-1s5
 ---
 
-- **PROMPT:**
-  [prompts/202611/health_watch_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/health_watch_fixes.md)
+- **PROMPT:** [prompts/202611/health_watch_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/health_watch_fixes.md)
+- **BEAD:** [sase-1s5](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1s5/README.md)
 
 # Health-watch fixes: wait notices, silent waiters, slow fleet snapshot builds, and stuck dismissed runs
 
