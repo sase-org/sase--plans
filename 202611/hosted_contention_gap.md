@@ -1,46 +1,43 @@
 ---
 tier: epic
 title: Close the hosted contention runtime gap and confirm on master
-goal:
-  A successful hosted contention-test on landed master finishes the full default job
-  within 90 minutes with a complete zero-failure pytest tally, and confirmation evidence
-  is published for nested landing of sase-1rq.2.1.4.1.5.3.
+goal: A successful hosted contention-test on landed master finishes the full default
+  job within 90 minutes with a complete zero-failure pytest tally, and confirmation
+  evidence is published for nested landing of sase-1rq.2.1.4.1.5.3.
 parent_bead: sase-1rq.2.1.4.1.5.3
 phases:
-  - id: hosted-runtime
-    title: Make the hosted default contention job finish within 90 minutes
-    depends_on: []
-    description:
-      "hosted-runtime: profile the GitHub two-CPU Python 3.12 gap against the local
-      green tally, remove the dominant hosted overhead without weakening the workload,
-      and prove a complete hosted contention tally inside 90 minutes."
-    size: medium
-  - id: hosted-failures
-    title: Repair remaining failures from a complete hosted tally
-    depends_on:
-      - hosted-runtime
-    description:
-      "hosted-failures: repair every failure family from the completed hosted tally
-      without weakening workload or gates, and prove a complete zero-failure
-      hosted-shape repeat."
-    size: medium
-  - id: hosted-confirmation
-    title: Confirm hosted contention-test on landed master
-    depends_on:
-      - hosted-failures
-    description:
-      "hosted-confirmation: reuse or dispatch Telemetry on landed master containing the
-      hosted repairs, verify an unchanged-shape successful contention job, and publish
-      complete evidence for nested landing."
-    size: small
+- id: hosted-runtime
+  title: Make the hosted default contention job finish within 90 minutes
+  depends_on: []
+  description: 'hosted-runtime: profile the GitHub two-CPU Python 3.12 gap against
+    the local green tally, remove the dominant hosted overhead without weakening the
+    workload, and prove a complete hosted contention tally inside 90 minutes.'
+  size: medium
+- id: hosted-failures
+  title: Repair remaining failures from a complete hosted tally
+  depends_on:
+  - hosted-runtime
+  description: 'hosted-failures: repair every failure family from the completed hosted
+    tally without weakening workload or gates, and prove a complete zero-failure hosted-shape
+    repeat.'
+  size: medium
+- id: hosted-confirmation
+  title: Confirm hosted contention-test on landed master
+  depends_on:
+  - hosted-failures
+  description: 'hosted-confirmation: reuse or dispatch Telemetry on landed master
+    containing the hosted repairs, verify an unchanged-shape successful contention
+    job, and publish complete evidence for nested landing.'
+  size: small
 proposed_by: bbugyi200.athena.sase-1rq.2.1.4.1.5.3--1
 proposed_with: grok/grok-4.6
 create_time: 2026-11-09 04:31:21
 status: wip
+bead_id: sase-1rq.2.1.4.1.5.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/hosted_contention_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hosted_contention_gap.md)
+- **PROMPT:** [prompts/202611/hosted_contention_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hosted_contention_gap.md)
+- **BEAD:** [sase-1rq.2.1.4.1.5.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1rq/sase-1rq.2.1.4.1.5.3.1.md)
 
 # Close the hosted contention runtime gap and confirm on master
 
