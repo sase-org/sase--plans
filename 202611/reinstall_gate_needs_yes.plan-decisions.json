@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "regate",
+      "kind": "toggle",
+      "ask": "Also stage a corrected apollo reinstall gate (with -y) that carries the original F11 follow-up?",
+      "why": "The failed gate is hash-pinned, so retrying it would be refused again",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
