@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "f11_followup",
+      "kind": "choice",
+      "ask": "How should the apollo F11 measurement resume, given that the reinstall already succeeded?",
+      "why": "apollo is already installed; restart repeats a 13-minute install to get one JSON line",
+      "choices": [
+        {
+          "key": "launch",
+          "label": "The implementer requests a fresh F11 agent via /sase_run; you cancel both failed gates"
+        },
+        {
+          "key": "restart",
+          "label": "After landing you pull athena's checkout and press R, rerunning the full apollo install"
+        }
+      ],
+      "default": "launch",
+      "effective_default": "launch",
+      "requested_verified": false
+    }
+  ]
+}
