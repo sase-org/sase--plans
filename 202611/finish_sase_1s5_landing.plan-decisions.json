@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "apollo_rollout",
+      "kind": "choice",
+      "ask": "Stage a human-approved apollo reinstall gate whose follow-up measures F11 convergence in production?",
+      "why": "F11's goal is apollo convergence; the gate's guard now runs after the commits are pushed",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "Gate the apollo reinstall; its follow-up records apollo's F11 after-numbers on sase-1s5.3"
+        },
+        {
+          "key": "manual",
+          "label": "No gate; the reply gives the reinstall command and no agent records apollo F11 numbers"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    }
+  ]
+}
