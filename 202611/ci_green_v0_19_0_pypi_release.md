@@ -1,108 +1,95 @@
 ---
 tier: epic
-title:
-  "Every sase workflow green, release PR #322 merged, and sase 0.19.0 proven on PyPI
-  with evidence artifacts"
-goal:
-  Master Gate, Full CI, CI Telemetry, and the Release steward are green on a master tip
-  that holds every fix, and sase-core's master CI is green. The release steward reports
-  the open release-please PR as releasable, the PR is merged, the steward's release.yml
-  train publishes the version to PyPI, and the published files are verified against the
-  sealed manifest, attested, and installable. The proof is registered as SASE artifacts.
+title: 'Every sase workflow green, release PR #322 merged, and sase 0.19.0 proven
+  on PyPI with evidence artifacts'
+goal: Master Gate, Full CI, CI Telemetry, and the Release steward are green on a master
+  tip that holds every fix, and sase-core's master CI is green. The release steward
+  reports the open release-please PR as releasable, the PR is merged, the steward's
+  release.yml train publishes the version to PyPI, and the published files are verified
+  against the sealed manifest, attested, and installable. The proof is registered
+  as SASE artifacts.
 decisions:
   merge_prompt:
-    ask:
-      "Once #322 is releasable, raise a gate whose approval runs the steward's own merge
-      command?"
+    ask: 'Once #322 is releasable, raise a gate whose approval runs the steward''s
+      own merge command?'
     choices:
-      gate:
-        One gate runs the steward's exact merge argv; a hand merge or enabling steward
-        merges also works
-      poll:
-        No gate; only poll up to 72h for you or the steward to merge, else the phase
-        ends canceled
+      gate: One gate runs the steward's exact merge argv; a hand merge or enabling
+        steward merges also works
+      poll: No gate; only poll up to 72h for you or the steward to merge, else the
+        phase ends canceled
     default: gate
-    why:
-      Merge authority is off, so a human must act; the gate hands you that one exact
-      command
+    why: Merge authority is off, so a human must act; the gate hands you that one
+      exact command
     answer: gate
   rehearsal:
-    ask:
-      Rehearse release.yml on the refreshed release PR branch before the version is
-      tagged?
+    ask: Rehearse release.yml on the refreshed release PR branch before the version
+      is tagged?
     choices:
-      release_branch:
-        One rehearse-mode run (about 2h of Actions) proves the train before a break can
-        burn 0.19.0
-      skip:
-        Go straight to the real release; faster, but a train break at the tag burns
-        0.19.0
+      release_branch: One rehearse-mode run (about 2h of Actions) proves the train
+        before a break can burn 0.19.0
+      skip: Go straight to the real release; faster, but a train break at the tag
+        burns 0.19.0
     default: release_branch
     why: The train has never finished a run; its last rehearsal (2026-10-25) was red
     answer: release_branch
 phases:
-  - id: master-reds
-    title: The deterministic reds on master are fixed
-    depends_on: []
-    size: medium
-    description:
-      "master-reds: fix the test_core_rust monkeypatch ordering, the coverage-contexts
-      crash from a global os.stat patch, and the Archive golden drift from the focus
-      change, plus any other deterministic red at the tip."
-  - id: steward-retry
-    title: The release steward survives transient GitHub 5xx reads
-    depends_on: []
-    size: small
-    description:
-      "steward-retry: give tools/_release_watch_transport.py GithubTransport a bounded
-      retry for transient HTTP 5xx and timeouts, with tests and a docs sentence."
-  - id: core-ci
-    title: sase-core's master CI is green and the steward stops reporting core_ci_red
-    depends_on: []
-    size: small
-    description:
-      "core-ci: rerun or repair sase-core's red master CI run 42673707335 so
-      tools/release_watch no longer reports core_ci_red."
-  - id: rehearse
-    title: An accepted release.yml rehearsal on the refreshed release PR branch
-    depends_on:
-      - master-reds
-    size: small
-    description:
-      "rehearse: refresh the release-please branch onto the fixed master, dispatch one
-      rehearse-mode release.yml run there, and accept it job by job (or skip per the
-      rehearsal decision)."
-  - id: ci-green
-    title: Every workflow that runs on master is green on a tip holding every fix
-    depends_on:
-      - master-reds
-      - steward-retry
-      - core-ci
-    size: medium
-    description:
-      "ci-green: drive Master Gate, Full CI, CI Telemetry, and the Release steward green
-      on a tip holding every phase commit, repair what is still red, and confirm the
-      steward reports the release PR releasable."
-  - id: release
-    title: sase 0.19.0 is merged, published, verified on PyPI, and recorded as artifacts
-    depends_on:
-      - ci-green
-      - rehearse
-    size: small
-    description:
-      "release: get the release PR merged per the merge_prompt decision, watch the
-      steward's train to PyPI, verify the published files, and register the evidence as
-      SASE artifacts."
+- id: master-reds
+  title: The deterministic reds on master are fixed
+  depends_on: []
+  size: medium
+  description: 'master-reds: fix the test_core_rust monkeypatch ordering, the coverage-contexts
+    crash from a global os.stat patch, and the Archive golden drift from the focus
+    change, plus any other deterministic red at the tip.'
+- id: steward-retry
+  title: The release steward survives transient GitHub 5xx reads
+  depends_on: []
+  size: small
+  description: 'steward-retry: give tools/_release_watch_transport.py GithubTransport
+    a bounded retry for transient HTTP 5xx and timeouts, with tests and a docs sentence.'
+- id: core-ci
+  title: sase-core's master CI is green and the steward stops reporting core_ci_red
+  depends_on: []
+  size: small
+  description: 'core-ci: rerun or repair sase-core''s red master CI run 42673707335
+    so tools/release_watch no longer reports core_ci_red.'
+- id: rehearse
+  title: An accepted release.yml rehearsal on the refreshed release PR branch
+  depends_on:
+  - master-reds
+  size: small
+  description: 'rehearse: refresh the release-please branch onto the fixed master,
+    dispatch one rehearse-mode release.yml run there, and accept it job by job (or
+    skip per the rehearsal decision).'
+- id: ci-green
+  title: Every workflow that runs on master is green on a tip holding every fix
+  depends_on:
+  - master-reds
+  - steward-retry
+  - core-ci
+  size: medium
+  description: 'ci-green: drive Master Gate, Full CI, CI Telemetry, and the Release
+    steward green on a tip holding every phase commit, repair what is still red, and
+    confirm the steward reports the release PR releasable.'
+- id: release
+  title: sase 0.19.0 is merged, published, verified on PyPI, and recorded as artifacts
+  depends_on:
+  - ci-green
+  - rehearse
+  size: small
+  description: 'release: get the release PR merged per the merge_prompt decision,
+    watch the steward''s train to PyPI, verify the published files, and register the
+    evidence as SASE artifacts.'
 proposed_by: bbugyi200.athena.1b0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-10 14:38:12
 status: wip
+bead_id: sase-1s7
 ---
 
-- **PROMPT:**
-  [prompts/202611/ci_green_v0_19_0_pypi_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/ci_green_v0_19_0_pypi_release.md)
+- **PROMPT:** [prompts/202611/ci_green_v0_19_0_pypi_release.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/ci_green_v0_19_0_pypi_release.md)
+- **BEAD:** [sase-1s7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1s7/README.md)
 
 # Every sase workflow green, release PR #322 merged, and sase 0.19.0 proven on PyPI
 
