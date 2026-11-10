@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "merge_prompt",
+      "kind": "choice",
+      "ask": "Once #322 is releasable, raise a gate whose approval runs the steward's own merge command?",
+      "why": "Merge authority is off, so a human must act; the gate hands you that one exact command",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "One gate runs the steward's exact merge argv; a hand merge or enabling steward merges also works"
+        },
+        {
+          "key": "poll",
+          "label": "No gate; only poll up to 72h for you or the steward to merge, else the phase ends canceled"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    },
+    {
+      "id": "rehearsal",
+      "kind": "choice",
+      "ask": "Rehearse release.yml on the refreshed release PR branch before the version is tagged?",
+      "why": "The train has never finished a run; its last rehearsal (2026-10-25) was red",
+      "choices": [
+        {
+          "key": "release_branch",
+          "label": "One rehearse-mode run (about 2h of Actions) proves the train before a break can burn 0.19.0"
+        },
+        {
+          "key": "skip",
+          "label": "Go straight to the real release; faster, but a train break at the tag burns 0.19.0"
+        }
+      ],
+      "default": "release_branch",
+      "effective_default": "release_branch",
+      "requested_verified": false
+    }
+  ]
+}
