@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "unreachable_target",
+      "kind": "choice",
+      "ask": "Should `sase sudo request` fail when it cannot snapshot executables on the remote target?",
+      "why": "approval needs the target online anyway; unverified snapshots bring back the false assurance",
+      "choices": [
+        {
+          "key": "fail",
+          "label": "Refuse to create the request; the agent retries once the target is online with upgraded sase"
+        },
+        {
+          "key": "unverified",
+          "label": "Create it with null hashes marked unverified; reviewers approve without a target snapshot"
+        }
+      ],
+      "default": "fail",
+      "effective_default": "fail",
+      "requested_verified": false
+    },
+    {
+      "id": "tcc_surfaces",
+      "kind": "choice",
+      "ask": "Should sase show macOS Full Disk Access warnings and failure hints, not just document them?",
+      "why": "1ar's successor blamed SIP; only an automatic signal reaches reviewer and successor",
+      "choices": [
+        {
+          "key": "full",
+          "label": "Probe FDA, warn in preview and review modal, and hint the successor in the approve result"
+        },
+        {
+          "key": "docs_only",
+          "label": "Only update the /sase_sudo skill and sudo docs; no automatic reviewer or successor signal"
+        }
+      ],
+      "default": "full",
+      "effective_default": "full",
+      "requested_verified": false
+    }
+  ]
+}
