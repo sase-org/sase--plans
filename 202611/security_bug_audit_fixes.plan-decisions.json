@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "agent_cmdsub",
+      "kind": "choice",
+      "ask": "Should $(cmd) substitution be provenance-gated so agent-authored prompt text never executes it?",
+      "why": "Handoff and launch prompts legitimately carry macros; wholesale wrapping would break that",
+      "choices": [
+        {
+          "key": "provenance",
+          "label": "Thread an authorship flag from launch paths; agent prompts skip $(cmd) but macros still expand"
+        },
+        {
+          "key": "wrap",
+          "label": "Wrap agent-authored prompt text in disabled regions, which also disables macro expansion there"
+        }
+      ],
+      "default": "provenance",
+      "effective_default": "provenance",
+      "requested_verified": false
+    },
+    {
+      "id": "local_config_commands",
+      "kind": "choice",
+      "ask": "How should command-bearing keys in project-local sase/sase.yml be trust-gated?",
+      "why": "Preserves per-project hooks while blocking repo-supplied command execution",
+      "choices": [
+        {
+          "key": "digest_trust",
+          "label": "Execute local-layer commands only after a per-project, digest-pinned user acknowledgment"
+        },
+        {
+          "key": "user_layers_only",
+          "label": "Ignore command-bearing keys from the project-local layer; hooks move to user/overlay config"
+        }
+      ],
+      "default": "digest_trust",
+      "effective_default": "digest_trust",
+      "requested_verified": false
+    },
+    {
+      "id": "bash_autoquote",
+      "kind": "choice",
+      "ask": "Should Jinja interpolations in workflow bash steps be shell-quoted by default?",
+      "why": "Charset validation alone cannot protect line/text inputs interpolated into shell",
+      "choices": [
+        {
+          "key": "autoquote",
+          "label": "shlex.quote every interpolation with an explicit raw opt-out filter; update shipped macros"
+        },
+        {
+          "key": "tighten_only",
+          "label": "Only tighten macro input-type charsets; bash templates keep raw interpolation"
+        }
+      ],
+      "default": "autoquote",
+      "effective_default": "autoquote",
+      "requested_verified": false
+    }
+  ]
+}
