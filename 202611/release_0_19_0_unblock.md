@@ -1,57 +1,51 @@
 ---
 tier: epic
-title:
-  "Unblock and ship sase 0.19.0: three train defects fixed, a green rehearsal, PR #322
-  merged, and the release proven on PyPI"
-goal:
-  "The release steward reports release PR #322 releasable instead of looping on metadata
-  refresh. The release-please branch passes blocking lint. release.yml's publish and
-  confirm jobs have uv. One rehearse-mode release.yml run on the refreshed release
-  branch meets every acceptance criterion. #322 is merged through a human-approved gate,
-  the steward's train publishes sase 0.19.0, and the published files are verified
-  against the sealed manifest, attested, installable, and registered as SASE artifacts."
+title: 'Unblock and ship sase 0.19.0: three train defects fixed, a green rehearsal,
+  PR #322 merged, and the release proven on PyPI'
+goal: 'The release steward reports release PR #322 releasable instead of looping on
+  metadata refresh. The release-please branch passes blocking lint. release.yml''s
+  publish and confirm jobs have uv. One rehearse-mode release.yml run on the refreshed
+  release branch meets every acceptance criterion. #322 is merged through a human-approved
+  gate, the steward''s train publishes sase 0.19.0, and the published files are verified
+  against the sealed manifest, attested, installable, and registered as SASE artifacts.'
 parent_bead: sase-1s7
 phases:
-  - id: train-fixes
-    title:
-      The steward, the release branch's generated docs, and the publish jobs no longer
-      block the release
-    depends_on: []
-    size: medium
-    description:
-      "train-fixes: stop pin_changed comparing exact core pins, regenerate
-      release_announce.html in publish.yml's sync-release-metadata job, and give
-      release.yml's publish and confirm jobs a setup-uv step, with tests and docs."
-  - id: rehearse
-    title:
-      An accepted release.yml rehearsal on the release branch refreshed onto the fixes
-    depends_on:
-      - train-fixes
-    size: small
-    description:
-      "rehearse: confirm the fixes are on master with a green Master Gate, refresh #322
-      with a bare publish.yml run, prove the steward no longer asks for a metadata
-      refresh, dispatch at most two rehearse-mode release.yml runs, and accept one job
-      by job."
-  - id: release
-    title: sase 0.19.0 is merged, published, verified on PyPI, and recorded as artifacts
-    depends_on:
-      - rehearse
-    size: small
-    description:
-      "release: merge #322 through one human-approved gate running the steward's merge
-      argv, watch the steward's train to PyPI, verify the published files, and register
-      the evidence as SASE artifacts."
+- id: train-fixes
+  title: The steward, the release branch's generated docs, and the publish jobs no
+    longer block the release
+  depends_on: []
+  size: medium
+  description: 'train-fixes: stop pin_changed comparing exact core pins, regenerate
+    release_announce.html in publish.yml''s sync-release-metadata job, and give release.yml''s
+    publish and confirm jobs a setup-uv step, with tests and docs.'
+- id: rehearse
+  title: An accepted release.yml rehearsal on the release branch refreshed onto the
+    fixes
+  depends_on:
+  - train-fixes
+  size: small
+  description: 'rehearse: confirm the fixes are on master with a green Master Gate,
+    refresh #322 with a bare publish.yml run, prove the steward no longer asks for
+    a metadata refresh, dispatch at most two rehearse-mode release.yml runs, and accept
+    one job by job.'
+- id: release
+  title: sase 0.19.0 is merged, published, verified on PyPI, and recorded as artifacts
+  depends_on:
+  - rehearse
+  size: small
+  description: 'release: merge #322 through one human-approved gate running the steward''s
+    merge argv, watch the steward''s train to PyPI, verify the published files, and
+    register the evidence as SASE artifacts.'
 proposed_by: bbugyi200.athena.sase-1s7.land
 proposed_with: claude/opus
 create_time: 2026-11-11 03:22:27
 status: wip
+bead_id: sase-1s7.7
 ---
 
-- **PROMPT:**
-  [prompts/202611/release_0_19_0_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/release_0_19_0_unblock.md)
-- **PARENT:**
-  [202611/ci_green_v0_19_0_pypi_release.md](https://github.com/sase-org/sase--plans/blob/main/202611/ci_green_v0_19_0_pypi_release.md)
+- **PROMPT:** [prompts/202611/release_0_19_0_unblock.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/release_0_19_0_unblock.md)
+- **PARENT:** [202611/ci_green_v0_19_0_pypi_release.md](https://github.com/sase-org/sase--plans/blob/main/202611/ci_green_v0_19_0_pypi_release.md)
+- **BEAD:** [sase-1s7.7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1s7/sase-1s7.7.md)
 
 # Unblock and ship sase 0.19.0
 
