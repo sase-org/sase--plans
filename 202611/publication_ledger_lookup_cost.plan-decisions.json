@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "quiet_retryable_timeouts",
+      "kind": "choice",
+      "ask": "Should a drain timeout that leaves its requests retryable stop marking the publication tick an error?",
+      "why": "After the fix a timeout signals a real regression and still spends one of three attempts",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Every drain timeout still marks the tick check_error and lands in the error digest"
+        },
+        {
+          "key": "quiet",
+          "label": "Retryable hood timeouts log a warning; only ones that quarantine or retire a request are errors"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
