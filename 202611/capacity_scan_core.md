@@ -1,51 +1,47 @@
 ---
 tier: epic
 title: Bound Rust capacity scans while preserving admission records
-goal:
-  Complete sase-1sl.1 with a metadata-light capacity scanner, a persistent never-live
+goal: Complete sase-1sl.1 with a metadata-light capacity scanner, a persistent never-live
   cache, and measured parity and scan-cost evidence.
 parent_bead: sase-1sl.1
 phases:
-  - id: capacity-projection
-    title: Classify capacity candidates before constructing full records
-    size: medium
-    depends_on: []
-    description:
-      "capacity-projection: in linked sase-core, implement the marker precheck and
-      compact metadata classification for both capacity scan entry points; preserve
-      retention closure and pre-retention clan context, remove repeated archive-wide
-      clan-member cloning, and add an independent legacy-path parity oracle."
-  - id: capacity-verdict-cache
-    title: Persist validated never-live classifications across processes
-    size: medium
-    depends_on:
-      - capacity-projection
-    description:
-      "capacity-verdict-cache: persist the compact classification and closure/context
-      keys for safely cacheable never-live candidates, invalidate changed metadata and
-      directories, keep live-marker and PID uncertainty conservative, and prove
-      corrupt-cache, concurrent-writer, and fresh-process behavior."
-  - id: capacity-cost-proof
-    title: Prove archive-scale scan budgets and complete the Rust change
-    size: medium
-    depends_on:
-      - capacity-projection
-      - capacity-verdict-cache
-    description:
-      "capacity-cost-proof: add and run a reproducible 20k-directory release-mode
-      benchmark against the preserved legacy path, enforce cold and warm budgets with
-      identical records and clan context, add deterministic work-count guards, and
-      record the completed core revision and check evidence for adoption."
+- id: capacity-projection
+  title: Classify capacity candidates before constructing full records
+  size: medium
+  depends_on: []
+  description: 'capacity-projection: in linked sase-core, implement the marker precheck
+    and compact metadata classification for both capacity scan entry points; preserve
+    retention closure and pre-retention clan context, remove repeated archive-wide
+    clan-member cloning, and add an independent legacy-path parity oracle.'
+- id: capacity-verdict-cache
+  title: Persist validated never-live classifications across processes
+  size: medium
+  depends_on:
+  - capacity-projection
+  description: 'capacity-verdict-cache: persist the compact classification and closure/context
+    keys for safely cacheable never-live candidates, invalidate changed metadata and
+    directories, keep live-marker and PID uncertainty conservative, and prove corrupt-cache,
+    concurrent-writer, and fresh-process behavior.'
+- id: capacity-cost-proof
+  title: Prove archive-scale scan budgets and complete the Rust change
+  size: medium
+  depends_on:
+  - capacity-projection
+  - capacity-verdict-cache
+  description: 'capacity-cost-proof: add and run a reproducible 20k-directory release-mode
+    benchmark against the preserved legacy path, enforce cold and warm budgets with
+    identical records and clan context, add deterministic work-count guards, and record
+    the completed core revision and check evidence for adoption.'
 proposed_by: bbugyi200.athena.sase-1sl.1
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-12 17:02:07
 status: wip
+bead_id: sase-1sl.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/capacity_scan_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/capacity_scan_core.md)
-- **PARENT:**
-  [202611/capacity_scan_tui_runaway.md](https://github.com/sase-org/sase--plans/blob/main/202611/capacity_scan_tui_runaway.md)
+- **PROMPT:** [prompts/202611/capacity_scan_core.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/capacity_scan_core.md)
+- **PARENT:** [202611/capacity_scan_tui_runaway.md](https://github.com/sase-org/sase--plans/blob/main/202611/capacity_scan_tui_runaway.md)
+- **BEAD:** [sase-1sl.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sl/sase-1sl.1.1.md)
 
 # Rust capacity scan implementation for sase-1sl.1
 
