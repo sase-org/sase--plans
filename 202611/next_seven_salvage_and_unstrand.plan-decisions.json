@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "qr_ride_along",
+      "kind": "choice",
+      "ask": "Should the agent-identity phase also fix sase-1qr (Rust scans drop process_identity)?",
+      "why": "Three researchers flagged it, and it is the other half of agent-identity correctness.",
+      "choices": [
+        {
+          "key": "include",
+          "label": "The agent-identity phase fixes sase-1qi and sase-1qr together; the epic closes both beads"
+        },
+        {
+          "key": "defer",
+          "label": "The phase fixes only sase-1qi; sase-1qr stays ready for a later ranking"
+        }
+      ],
+      "default": "include",
+      "effective_default": "include",
+      "requested_verified": false
+    },
+    {
+      "id": "sase29_salvage",
+      "kind": "choice",
+      "ask": "Should the salvage phase also rebase and land the stranded sase_29 signature-skew diff?",
+      "why": "sase-1ra.7 owns the sase_29 diff and resuming that epic is the report's own recommendation.",
+      "choices": [
+        {
+          "key": "sase21_only",
+          "label": "Salvage only the sase_21 fix sase-zo needs; record sase_29's state for the owner"
+        },
+        {
+          "key": "both_workspaces",
+          "label": "Salvage the sase_29 diff too, before workspace retention reclaims it"
+        }
+      ],
+      "default": "sase21_only",
+      "effective_default": "sase21_only",
+      "requested_verified": false
+    },
+    {
+      "id": "reopen_guard",
+      "kind": "choice",
+      "ask": "Should the salvage phase extend the carried_repo guard to reopen beads whose successor never adopts?",
+      "why": "sase-zo closes on the -p fix alone; sase-1ra.8 owns the structural reopen repair.",
+      "choices": [
+        {
+          "key": "include",
+          "label": "The salvage phase lands the reopen guard (mirroring sase-1oh.4) alongside the -p fix"
+        },
+        {
+          "key": "defer",
+          "label": "Leave the guard to epic sase-1ra phase .8, which owns the adjacent staged-monitor surface"
+        }
+      ],
+      "default": "defer",
+      "effective_default": "defer",
+      "requested_verified": false
+    }
+  ]
+}
