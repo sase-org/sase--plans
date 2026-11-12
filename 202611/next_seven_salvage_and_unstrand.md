@@ -1,164 +1,141 @@
 ---
 tier: epic
-title:
-  "Next seven: salvage the display-name fix, then unstrand the fleet (sase-zo, sase-1s2,
-  sase-1re, sase-1o1, sase-1qm, sase-1qi, sase-1db)"
-goal:
-  Complete and close the seven ready task beads ranked by the 202611 next-seven research
-  report, running the phases strictly one at a time.
+title: 'Next seven: salvage the display-name fix, then unstrand the fleet (sase-zo,
+  sase-1s2, sase-1re, sase-1o1, sase-1qm, sase-1qi, sase-1db)'
+goal: Complete and close the seven ready task beads ranked by the 202611 next-seven
+  research report, running the phases strictly one at a time.
 decisions:
   qr_ride_along:
-    ask:
-      Should the agent-identity phase also fix sase-1qr (Rust scans drop
-      process_identity)?
+    ask: Should the agent-identity phase also fix sase-1qr (Rust scans drop process_identity)?
     choices:
-      include:
-        The agent-identity phase fixes sase-1qi and sase-1qr together; the epic closes
-        both beads
+      include: The agent-identity phase fixes sase-1qi and sase-1qr together; the
+        epic closes both beads
       defer: The phase fixes only sase-1qi; sase-1qr stays ready for a later ranking
     default: include
-    why:
-      Three researchers flagged it, and it is the other half of agent-identity
+    why: Three researchers flagged it, and it is the other half of agent-identity
       correctness.
     answer: include
   sase29_salvage:
-    ask:
-      Should the salvage phase also rebase and land the stranded sase_29 signature-skew
+    ask: Should the salvage phase also rebase and land the stranded sase_29 signature-skew
       diff?
     choices:
-      sase21_only:
-        Salvage only the sase_21 fix sase-zo needs; record sase_29's state for the owner
-      both_workspaces:
-        Salvage the sase_29 diff too, before workspace retention reclaims it
+      sase21_only: Salvage only the sase_21 fix sase-zo needs; record sase_29's state
+        for the owner
+      both_workspaces: Salvage the sase_29 diff too, before workspace retention reclaims
+        it
     default: sase21_only
-    why:
-      sase-1ra.7 owns the sase_29 diff and resuming that epic is the report's own
+    why: sase-1ra.7 owns the sase_29 diff and resuming that epic is the report's own
       recommendation.
     answer: sase21_only
   reopen_guard:
-    ask:
-      Should the salvage phase extend the carried_repo guard to reopen beads whose
+    ask: Should the salvage phase extend the carried_repo guard to reopen beads whose
       successor never adopts?
     choices:
-      include:
-        The salvage phase lands the reopen guard (mirroring sase-1oh.4) alongside the -p
-        fix
-      defer:
-        Leave the guard to epic sase-1ra phase .8, which owns the adjacent
-        staged-monitor surface
+      include: The salvage phase lands the reopen guard (mirroring sase-1oh.4) alongside
+        the -p fix
+      defer: Leave the guard to epic sase-1ra phase .8, which owns the adjacent staged-monitor
+        surface
     default: defer
-    why:
-      sase-zo closes on the -p fix alone; sase-1ra.8 owns the structural reopen repair.
+    why: sase-zo closes on the -p fix alone; sase-1ra.8 owns the structural reopen
+      repair.
     answer: defer
 phases:
-  - id: salvage-display-name
-    title: Salvage and land the verified -p display-name resolution fix (sase-zo)
-    depends_on: []
-    size: medium
-    description:
-      "salvage-display-name: sase repo list/log/open/path -p still resolves the project
-      token as a directory key only, so `sase repo list -p sase` exits 2 on master (+10
-      corroboration). The complete, verified fix — registry-canonicalized -p accepting
-      key, display name, or alias, with regression tests — sits uncommitted in the
-      sase_21 workspace clone on athena (base 99932634cd). Salvage that diff, rebase it
-      onto current master, re-run its tests, and land it before workspace retention
-      reclaims the state."
-  - id: sigterm-import
-    title:
-      Stop runner module imports from replacing the process SIGTERM handler (sase-1s2)
-    depends_on:
-      - salvage-display-name
-    size: small
-    description:
-      "sigterm-import: importing sase.axe.run_agent_runner (line 87) or
-      sase.axe.mentor_runner (line 30) installs a soft SIGTERM handler at import time,
-      replacing the caller's handler in every importer (pytest workers, tool runs). Move
-      the install into the runner-owned entry lifecycle, keeping production shutdown
-      semantics, and add fresh-interpreter import plus real-entry signal tests."
-  - id: monitor-ownership
-    title:
-      Stop done monitors with stale followup_pending from owning beads forever
-      (sase-1re)
-    depends_on:
-      - sigterm-import
-    size: medium
-    description:
-      "monitor-ownership: a monitor member that is done but still reports
-      followup_pending=true (stale next_action, no followup_outcome) reduces to
-      owned/monitor in sase-core stranded_work/classify.rs owner_kind() forever, hiding
-      the bead from STRANDED and the recovery reconciler. Root-cause why the follow-up
-      never settled, then bound ownership using actual delivery/recovery facts,
-      distinguishing a dead abandoned follow-up from a queued successor, a live monitor,
-      and settlement grace. Needs a sase-core change and pin move."
-  - id: continuation-capture
-    title:
-      Stop continuation capture from nesting fork ancestry past the 256 KiB cap
-      (sase-1o1)
-    depends_on:
-      - monitor-ownership
-    size: large
-    description:
-      "continuation-capture: persist_agent_delta records the #fork-expanded step prompt
-      as authored_local_request and replay renders it as the parent user block, so every
-      session member re-nests its whole ancestry; a live athena land session is at
-      708,391 bytes against the 262,144-byte validator cap, and an over-cap turn fails
-      capture and settles the next monitor follow-up not-launchable. Capture only the
-      local pre-fork request, make replay walk the parent chain, keep fork-replay output
-      byte-stable, and add a repair or explicit error for in-flight over-cap sessions.
-      Needs sase-core and sase changes."
-  - id: fingerprint-refusal
-    title: Stop host completion from refusing checks that passed (sase-1qm)
-    depends_on:
-      - continuation-capture
-    size: large
-    description:
-      "fingerprint-refusal: prepared completions backed by a fully green just check are
-      refused with stale_worktree_fingerprint even when every observed fingerprint
-      matches on hand audit (5 refusals in October, 11 so far in November; fresh sase
-      recurrences 11-07 and 11-10). Diff the sealed observation against the host-time
-      observation for the fresh repro runs (suspect: cross-repo scope over main plus
-      sase-core), fix the confirmed mechanism, and make every refusal record name which
-      fingerprint component differed. Needs sase-core and sase changes."
-  - id: agent-identity
-    title:
-      Make sase agent restart find crash-killed agents (sase-1qi, ride-along sase-1qr)
-    depends_on:
-      - fingerprint-refusal
-    size: medium
-    description:
-      "agent-identity: a kill or reboot that never writes done.json leaves the TUI
-      showing FAILED while sase agent restart returns not-found, because
-      find_named_agent skips non-done records with dead PIDs (correct for wait
-      resolution, wrong for restart). Give restart a lookup that includes
-      dead-without-done records without deleting the liveness skip waiters rely on.
-      Ride-along per decision qr_ride_along: project process_identity through the
-      sase-core agent scan so the PID-reuse guard stops degrading to PID-only for
-      scanned records."
-  - id: private-remote-verify
-    title:
-      Verify an existing attachments-private remote is actually private before pushing
-      (sase-1db)
-    depends_on:
-      - agent-identity
-    size: medium
-    description:
-      'private-remote-verify: preflight_sidecars compares visibility only when creating
-      a missing attachments-private remote; an existing remote is trusted on its
-      configured role alone and describe_label hard-codes "(private)", so attachment
-      bytes can be pushed to a public repository under a private label. Probe visibility
-      for existing remotes with resolve_remote_visibility at repo-init preflight and at
-      the shared write boundary before the first upload per process, define honest
-      unknown-visibility handling, and stop hard-coding the label.'
+- id: salvage-display-name
+  title: Salvage and land the verified -p display-name resolution fix (sase-zo)
+  depends_on: []
+  size: medium
+  description: 'salvage-display-name: sase repo list/log/open/path -p still resolves
+    the project token as a directory key only, so `sase repo list -p sase` exits 2
+    on master (+10 corroboration). The complete, verified fix — registry-canonicalized
+    -p accepting key, display name, or alias, with regression tests — sits uncommitted
+    in the sase_21 workspace clone on athena (base 99932634cd). Salvage that diff,
+    rebase it onto current master, re-run its tests, and land it before workspace
+    retention reclaims the state.'
+- id: sigterm-import
+  title: Stop runner module imports from replacing the process SIGTERM handler (sase-1s2)
+  depends_on:
+  - salvage-display-name
+  size: small
+  description: 'sigterm-import: importing sase.axe.run_agent_runner (line 87) or sase.axe.mentor_runner
+    (line 30) installs a soft SIGTERM handler at import time, replacing the caller''s
+    handler in every importer (pytest workers, tool runs). Move the install into the
+    runner-owned entry lifecycle, keeping production shutdown semantics, and add fresh-interpreter
+    import plus real-entry signal tests.'
+- id: monitor-ownership
+  title: Stop done monitors with stale followup_pending from owning beads forever
+    (sase-1re)
+  depends_on:
+  - sigterm-import
+  size: medium
+  description: 'monitor-ownership: a monitor member that is done but still reports
+    followup_pending=true (stale next_action, no followup_outcome) reduces to owned/monitor
+    in sase-core stranded_work/classify.rs owner_kind() forever, hiding the bead from
+    STRANDED and the recovery reconciler. Root-cause why the follow-up never settled,
+    then bound ownership using actual delivery/recovery facts, distinguishing a dead
+    abandoned follow-up from a queued successor, a live monitor, and settlement grace.
+    Needs a sase-core change and pin move.'
+- id: continuation-capture
+  title: Stop continuation capture from nesting fork ancestry past the 256 KiB cap
+    (sase-1o1)
+  depends_on:
+  - monitor-ownership
+  size: large
+  description: 'continuation-capture: persist_agent_delta records the #fork-expanded
+    step prompt as authored_local_request and replay renders it as the parent user
+    block, so every session member re-nests its whole ancestry; a live athena land
+    session is at 708,391 bytes against the 262,144-byte validator cap, and an over-cap
+    turn fails capture and settles the next monitor follow-up not-launchable. Capture
+    only the local pre-fork request, make replay walk the parent chain, keep fork-replay
+    output byte-stable, and add a repair or explicit error for in-flight over-cap
+    sessions. Needs sase-core and sase changes.'
+- id: fingerprint-refusal
+  title: Stop host completion from refusing checks that passed (sase-1qm)
+  depends_on:
+  - continuation-capture
+  size: large
+  description: 'fingerprint-refusal: prepared completions backed by a fully green
+    just check are refused with stale_worktree_fingerprint even when every observed
+    fingerprint matches on hand audit (5 refusals in October, 11 so far in November;
+    fresh sase recurrences 11-07 and 11-10). Diff the sealed observation against the
+    host-time observation for the fresh repro runs (suspect: cross-repo scope over
+    main plus sase-core), fix the confirmed mechanism, and make every refusal record
+    name which fingerprint component differed. Needs sase-core and sase changes.'
+- id: agent-identity
+  title: Make sase agent restart find crash-killed agents (sase-1qi, ride-along sase-1qr)
+  depends_on:
+  - fingerprint-refusal
+  size: medium
+  description: 'agent-identity: a kill or reboot that never writes done.json leaves
+    the TUI showing FAILED while sase agent restart returns not-found, because find_named_agent
+    skips non-done records with dead PIDs (correct for wait resolution, wrong for
+    restart). Give restart a lookup that includes dead-without-done records without
+    deleting the liveness skip waiters rely on. Ride-along per decision qr_ride_along:
+    project process_identity through the sase-core agent scan so the PID-reuse guard
+    stops degrading to PID-only for scanned records.'
+- id: private-remote-verify
+  title: Verify an existing attachments-private remote is actually private before
+    pushing (sase-1db)
+  depends_on:
+  - agent-identity
+  size: medium
+  description: 'private-remote-verify: preflight_sidecars compares visibility only
+    when creating a missing attachments-private remote; an existing remote is trusted
+    on its configured role alone and describe_label hard-codes "(private)", so attachment
+    bytes can be pushed to a public repository under a private label. Probe visibility
+    for existing remotes with resolve_remote_visibility at repo-init preflight and
+    at the shared write boundary before the first upload per process, define honest
+    unknown-visibility handling, and stop hard-coding the label.'
 proposed_by: bbugyi200.athena.1bp
 proposed_with: claude/claude-fable-5
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-12 05:26:12
 status: wip
+bead_id: sase-1sd
 ---
 
-- **PROMPT:**
-  [prompts/202611/next_seven_salvage_and_unstrand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/next_seven_salvage_and_unstrand.md)
+- **PROMPT:** [prompts/202611/next_seven_salvage_and_unstrand.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/next_seven_salvage_and_unstrand.md)
+- **BEAD:** [sase-1sd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sd/README.md)
 
 # Next Seven: Salvage the Display-Name Fix, Then Unstrand the Fleet
 
