@@ -1,87 +1,78 @@
 ---
 tier: epic
 title: Bound the runner-slot capacity scan and make the TUI GC policy cost-adaptive
-goal: "The sase TUI and waiting agent runners stop burning CPU and memory on
-  full-archive capacity scans: a warm capacity scan costs milliseconds instead of 23 s,
-  the TUI holds under 15% of one core and a bounded heap on athena, and full GC
-  collections respect a duty-cycle bound.
+goal: 'The sase TUI and waiting agent runners stop burning CPU and memory on full-archive
+  capacity scans: a warm capacity scan costs milliseconds instead of 23 s, the TUI
+  holds under 15% of one core and a bounded heap on athena, and full GC collections
+  respect a duty-cycle bound.
 
-  "
+  '
 phases:
-  - id: core-capacity-scan
-    title:
-      "sase-core: capacity-only scan cost scales with live records, not archive size"
-    depends_on: []
-    size: large
-    description: "core-capacity-scan: in the linked sase-core repo, add a statx-only
-      live-marker precheck plus meta-light closure classification (and, per the
-      verdict_cache decision, a sticky never-live verdict cache) to the capacity_only
-      scanner path, with parity tests and a scan-cost bench guarding identical retained
-      records.
+- id: core-capacity-scan
+  title: 'sase-core: capacity-only scan cost scales with live records, not archive
+    size'
+  depends_on: []
+  size: large
+  description: 'core-capacity-scan: in the linked sase-core repo, add a statx-only
+    live-marker precheck plus meta-light closure classification (and, per the verdict_cache
+    decision, a sticky never-live verdict cache) to the capacity_only scanner path,
+    with parity tests and a scan-cost bench guarding identical retained records.
 
-      "
-  - id: sase-adopt-pin
-    title: Ratchet the core pin and re-measure the scan on the real archive
-    depends_on:
-      - core-capacity-scan
-    size: small
-    description: "sase-adopt-pin: move sase-core-revision.txt past the core commit,
-      adopt any new scan option in runner_slots/_scan.py, and re-measure cold/warm
-      capacity scans and runner-cache behavior on athena against the 22.9 s baseline.
+    '
+- id: sase-adopt-pin
+  title: Ratchet the core pin and re-measure the scan on the real archive
+  depends_on:
+  - core-capacity-scan
+  size: small
+  description: 'sase-adopt-pin: move sase-core-revision.txt past the core commit,
+    adopt any new scan option in runner_slots/_scan.py, and re-measure cold/warm capacity
+    scans and runner-cache behavior on athena against the 22.9 s baseline.
 
-      "
-  - id: gc-duty-cycle
-    title: "TUI GC policy: full collections respect a duty-cycle bound"
-    depends_on: []
-    size: medium
-    description: "gc-duty-cycle: record each full collection's duration in gc_policy.py
-      and defer the next full collection by last-pause times a duty factor (clamped),
-      applying the floor to idle and backstop triggers alike, with fake-clock unit
-      tests.
+    '
+- id: gc-duty-cycle
+  title: 'TUI GC policy: full collections respect a duty-cycle bound'
+  depends_on: []
+  size: medium
+  description: 'gc-duty-cycle: record each full collection''s duration in gc_policy.py
+    and defer the next full collection by last-pause times a duty factor (clamped),
+    applying the floor to idle and backstop triggers alike, with fake-clock unit tests.
 
-      "
-  - id: athena-soak
-    title: Measured verification on athena and residual-leak attribution
-    depends_on:
-      - sase-adopt-pin
-      - gc-duty-cycle
-    size: medium
-    description: "athena-soak: soak a TUI instance on athena for at least an hour under
-      real agent load, verify CPU, rchar, RSS, GC-pause, and runner-CPU targets against
-      the 2026-11-12 baseline, and attribute any residual RSS growth with the GC census.
+    '
+- id: athena-soak
+  title: Measured verification on athena and residual-leak attribution
+  depends_on:
+  - sase-adopt-pin
+  - gc-duty-cycle
+  size: medium
+  description: 'athena-soak: soak a TUI instance on athena for at least an hour under
+    real agent load, verify CPU, rchar, RSS, GC-pause, and runner-CPU targets against
+    the 2026-11-12 baseline, and attribute any residual RSS growth with the GC census.
 
-      "
+    '
 decisions:
   verdict_cache:
-    ask:
-      Should the capacity scan persist a sticky never-live verdict cache keyed on
-      artifact-dir mtime?
+    ask: Should the capacity scan persist a sticky never-live verdict cache keyed
+      on artifact-dir mtime?
     choices:
-      persist:
-        Warm rescans drop to ~ms for 20k+ dirs; adds one cache file plus invalidation
+      persist: Warm rescans drop to ~ms for 20k+ dirs; adds one cache file plus invalidation
         rules to sase-core.
-      memory_only:
-        No new persisted state, but every process repays a cold full-archive meta pass
-        (seconds).
+      memory_only: No new persisted state, but every process repays a cold full-archive
+        meta pass (seconds).
     default: persist
-    why:
-      Verdicts are sticky, the archive grows ~4.5k dirs/month, and 26+ runner processes
+    why: Verdicts are sticky, the archive grows ~4.5k dirs/month, and 26+ runner processes
       pay cold passes.
     answer: persist
   live_tui_restart:
-    ask:
-      May the soak phase propose a gated restart of Bryan's live tmux TUI session after
-      the soak passes?
+    ask: May the soak phase propose a gated restart of Bryan's live tmux TUI session
+      after the soak passes?
     choices:
-      separate_instance:
-        Soak a dedicated TUI instance only; Bryan restarts his own session when
-        convenient.
-      restart_live:
-        After a passing soak, propose a gated quit-and-relaunch of the live session.
+      separate_instance: Soak a dedicated TUI instance only; Bryan restarts his own
+        session when convenient.
+      restart_live: After a passing soak, propose a gated quit-and-relaunch of the
+        live session.
     default: separate_instance
-    why:
-      Bryan may be using the session, and stale_running_code.py already surfaces the
-      restart row.
+    why: Bryan may be using the session, and stale_running_code.py already surfaces
+      the restart row.
     answer: separate_instance
 proposed_by: bbugyi200.athena.1c0
 proposed_with: claude/claude-fable-5
@@ -89,10 +80,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-12 16:44:56
 status: wip
+bead_id: sase-1sl
 ---
 
-- **PROMPT:**
-  [prompts/202611/capacity_scan_tui_runaway.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/capacity_scan_tui_runaway.md)
+- **PROMPT:** [prompts/202611/capacity_scan_tui_runaway.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/capacity_scan_tui_runaway.md)
+- **BEAD:** [sase-1sl](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sl/README.md)
 
 # Fix the sase TUI CPU/memory runaway: bound the runner-slot capacity scan and make the TUI GC policy cost-adaptive
 
