@@ -1,109 +1,97 @@
 ---
 tier: epic
 title: Auto-restart heals update-skew failures in self-hosted dev installs
-goal: "Agents torn apart by a `sase update` of the editable dev install are relaunched
+goal: 'Agents torn apart by a `sase update` of the editable dev install are relaunched
   automatically again: the classifier no longer mistakes the editable checkout for
   agent-workspace code, incidental log strings no longer veto recovery, the at-most-once
   ledger key is derived correctly for day-sharded artifact layouts, and launcher rows
   that died before naming get a working relaunch path.
 
-  "
+  '
 decisions:
   launcher_relaunch_mode:
-    ask:
-      Should the healer relaunch launcher rows that died before naming by resubmitting
+    ask: Should the healer relaunch launcher rows that died before naming by resubmitting
       their raw prompt?
     choices:
-      resubmit:
-        Resubmit raw_prompt.md as a fresh launch; today's failure class heals end to end
-      escalate_only:
-        Decline these rows loudly with "retry by hand"; smaller change, bootstrap deaths
-        stay manual
+      resubmit: Resubmit raw_prompt.md as a fresh launch; today's failure class heals
+        end to end
+      escalate_only: Decline these rows loudly with "retry by hand"; smaller change,
+        bootstrap deaths stay manual
     default: resubmit
-    why:
-      All six 2026-11-12 failures died pre-naming; classifier fixes alone cannot restart
-      them
+    why: All six 2026-11-12 failures died pre-naming; classifier fixes alone cannot
+      restart them
     answer: resubmit
   marker_scope:
-    ask:
-      Should never-restart markers be scanned over exception text only when exception
+    ask: Should never-restart markers be scanned over exception text only when exception
       evidence exists?
     choices:
-      exception_first:
-        Scan markers over error+traceback when an exception exists; log tail only for
-        log-only rows
-      filter_json_lines:
-        Keep scanning the full log tail but strip JSON log lines first; still
-        prose-vulnerable
+      exception_first: Scan markers over error+traceback when an exception exists;
+        log tail only for log-only rows
+      filter_json_lines: Keep scanning the full log tail but strip JSON log lines
+        first; still prose-vulnerable
     default: exception_first
-    why:
-      The 052959 veto came from an unrelated procfs JSON line; exceptions are better
+    why: The 052959 veto came from an unrelated procfs JSON line; exceptions are better
       signal
     answer: exception_first
   stale_ledger_keys:
-    ask: Should existing mis-keyed ledger records (202610__*, 202611__*) be cleaned up?
+    ask: Should existing mis-keyed ledger records (202610__*, 202611__*) be cleaned
+      up?
     choices:
-      leave:
-        Leave them; terminal declined records are harmless once new claims key correctly
-      cleanup:
-        Add a one-shot migration deleting records whose project component is a YYYYMM
-        date
+      leave: Leave them; terminal declined records are harmless once new claims key
+        correctly
+      cleanup: Add a one-shot migration deleting records whose project component is
+        a YYYYMM date
     default: leave
     why: They are inert history; a migration adds risk for no behavioral gain
     answer: leave
 phases:
-  - id: core-origin-precedence
-    title:
-      "sase-core: managed-root precedence and exception-scoped never-restart markers"
-    depends_on: []
-    size: medium
-    description:
-      "core-origin-precedence: in sase-core, a traceback file under a managed root
-      counts as managed origin even when the agent workspace contains that root
-      (self-hosted editable installs), and never-restart markers are scanned over
-      exception text instead of the raw log tail whenever exception evidence exists."
-  - id: ledger-project-key
-    title: Healer ledger keys derive the project from the canonical artifact path parser
-    depends_on: []
-    size: small
-    description:
-      "ledger-project-key: `_target_for_artifacts_dir` derives the ledger project via
-      `parse_agent_artifact_path` instead of `parents[1].name`, so day-sharded ace-run
-      rows key as `<project>__<lineage>` and the at-most-once guarantee holds across
-      both healer enumeration sources."
-  - id: launcher-relaunch
-    title: Healer relaunches launcher rows that died before naming
-    depends_on:
-      - ledger-project-key
-    size: medium
-    description:
-      "launcher-relaunch: the healer detects failed rows whose runner died before
-      assigning a name (ace-run bootstrap deaths), and relaunches them by resubmitting
-      the row's raw_prompt.md through the existing launch machinery instead of deferring
-      forever on `plan_agent_restart` name lookup."
-  - id: pin-docs-verify
-    title: Ratchet the core pin, align sase tests and docs, replay the incident
-    depends_on:
-      - core-origin-precedence
-      - ledger-project-key
-      - launcher-relaunch
-    size: medium
-    description:
-      "pin-docs-verify: move sase's sase-core-revision.txt past the
-      core-origin-precedence commit, update sase-side tests that assert the old
-      classifier verdicts, refresh docs/reference/agent-auto-restart.md, and verify with
-      a read-only `sase agent auto-restart scan` replay of the 2026-11-12 sase@22e1ef1
-      episode."
+- id: core-origin-precedence
+  title: 'sase-core: managed-root precedence and exception-scoped never-restart markers'
+  depends_on: []
+  size: medium
+  description: 'core-origin-precedence: in sase-core, a traceback file under a managed
+    root counts as managed origin even when the agent workspace contains that root
+    (self-hosted editable installs), and never-restart markers are scanned over exception
+    text instead of the raw log tail whenever exception evidence exists.'
+- id: ledger-project-key
+  title: Healer ledger keys derive the project from the canonical artifact path parser
+  depends_on: []
+  size: small
+  description: 'ledger-project-key: `_target_for_artifacts_dir` derives the ledger
+    project via `parse_agent_artifact_path` instead of `parents[1].name`, so day-sharded
+    ace-run rows key as `<project>__<lineage>` and the at-most-once guarantee holds
+    across both healer enumeration sources.'
+- id: launcher-relaunch
+  title: Healer relaunches launcher rows that died before naming
+  depends_on:
+  - ledger-project-key
+  size: medium
+  description: 'launcher-relaunch: the healer detects failed rows whose runner died
+    before assigning a name (ace-run bootstrap deaths), and relaunches them by resubmitting
+    the row''s raw_prompt.md through the existing launch machinery instead of deferring
+    forever on `plan_agent_restart` name lookup.'
+- id: pin-docs-verify
+  title: Ratchet the core pin, align sase tests and docs, replay the incident
+  depends_on:
+  - core-origin-precedence
+  - ledger-project-key
+  - launcher-relaunch
+  size: medium
+  description: 'pin-docs-verify: move sase''s sase-core-revision.txt past the core-origin-precedence
+    commit, update sase-side tests that assert the old classifier verdicts, refresh
+    docs/reference/agent-auto-restart.md, and verify with a read-only `sase agent
+    auto-restart scan` replay of the 2026-11-12 sase@22e1ef1 episode.'
 proposed_by: bbugyi200.athena.1bq
 proposed_with: claude/claude-fable-5
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-12 06:15:55
 status: wip
+bead_id: sase-1se
 ---
 
-- **PROMPT:**
-  [prompts/202611/auto_restart_update_skew_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/auto_restart_update_skew_fixes.md)
+- **PROMPT:** [prompts/202611/auto_restart_update_skew_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/auto_restart_update_skew_fixes.md)
+- **BEAD:** [sase-1se](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1se/README.md)
 
 # Auto-Restart Heals Update-Skew Failures In Self-Hosted Dev Installs
 
