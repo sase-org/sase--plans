@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "launcher_relaunch_mode",
+      "kind": "choice",
+      "ask": "Should the healer relaunch launcher rows that died before naming by resubmitting their raw prompt?",
+      "why": "All six 2026-11-12 failures died pre-naming; classifier fixes alone cannot restart them",
+      "choices": [
+        {
+          "key": "resubmit",
+          "label": "Resubmit raw_prompt.md as a fresh launch; today's failure class heals end to end"
+        },
+        {
+          "key": "escalate_only",
+          "label": "Decline these rows loudly with \"retry by hand\"; smaller change, bootstrap deaths stay manual"
+        }
+      ],
+      "default": "resubmit",
+      "effective_default": "resubmit",
+      "requested_verified": false
+    },
+    {
+      "id": "marker_scope",
+      "kind": "choice",
+      "ask": "Should never-restart markers be scanned over exception text only when exception evidence exists?",
+      "why": "The 052959 veto came from an unrelated procfs JSON line; exceptions are better signal",
+      "choices": [
+        {
+          "key": "exception_first",
+          "label": "Scan markers over error+traceback when an exception exists; log tail only for log-only rows"
+        },
+        {
+          "key": "filter_json_lines",
+          "label": "Keep scanning the full log tail but strip JSON log lines first; still prose-vulnerable"
+        }
+      ],
+      "default": "exception_first",
+      "effective_default": "exception_first",
+      "requested_verified": false
+    },
+    {
+      "id": "stale_ledger_keys",
+      "kind": "choice",
+      "ask": "Should existing mis-keyed ledger records (202610__*, 202611__*) be cleaned up?",
+      "why": "They are inert history; a migration adds risk for no behavioral gain",
+      "choices": [
+        {
+          "key": "leave",
+          "label": "Leave them; terminal declined records are harmless once new claims key correctly"
+        },
+        {
+          "key": "cleanup",
+          "label": "Add a one-shot migration deleting records whose project component is a YYYYMM date"
+        }
+      ],
+      "default": "leave",
+      "effective_default": "leave",
+      "requested_verified": false
+    }
+  ]
+}
