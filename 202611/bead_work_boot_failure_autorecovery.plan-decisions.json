@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "relaunch_lane",
+      "kind": "choice",
+      "ask": "Should the coder itself relaunch the two stranded epics using its workspace venv's fixed sase?",
+      "why": "it recovers the epics now and is the only live validation of the new auto-recovery path",
+      "choices": [
+        {
+          "key": "workspace",
+          "label": "Coder relaunches both epics now with its venv's fixed sase, live-validating the recovery path"
+        },
+        {
+          "key": "after_land",
+          "label": "Only land the fix; Bryan reruns the relaunch command after the installed CLI has the fix"
+        }
+      ],
+      "default": "workspace",
+      "effective_default": "workspace",
+      "requested_verified": false
+    }
+  ]
+}
