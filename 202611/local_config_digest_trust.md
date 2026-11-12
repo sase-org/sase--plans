@@ -1,107 +1,106 @@
 ---
 tier: epic
 title: Digest-pinned trust for project-local commands
-goal:
-  Require human acknowledgment of a project's current executable config before host-side
-  hooks or config-defined workflows can run, while preserving ordinary local
+goal: Require human acknowledgment of a project's current executable config before
+  host-side hooks or config-defined workflows can run, while preserving ordinary local
   configuration.
 parent_bead: sase-1sb.2
 phases:
-  - id: trust-policy
-    title: Define the Rust local-command trust contract
-    size: medium
-    depends_on: []
-    description: "trust-policy: Implement the pure Rust command-bearing projection,
-      canonical
+- id: trust-policy
+  title: Define the Rust local-command trust contract
+  size: medium
+  depends_on: []
+  description: 'trust-policy: Implement the pure Rust command-bearing projection,
+    canonical
 
-      digest, filtering and trust-decision contracts described in this plan. Add
+    digest, filtering and trust-decision contracts described in this plan. Add
 
-      PyO3 bindings, round-trip tests and a thin Python adapter. Cover normalized
+    PyO3 bindings, round-trip tests and a thin Python adapter. Cover normalized
 
-      legacy macro spellings, partial overrides of executable definitions, file
+    legacy macro spellings, partial overrides of executable definitions, file
 
-      hook template references, nested workflow steps and unchanged non-command
+    hook template references, nested workflow steps and unchanged non-command
 
-      keys. Do not activate enforcement yet. Publish core changes through host
+    keys. Do not activate enforcement yet. Publish core changes through host
 
-      finalization and ensure the sase core revision pin contains the bindings.
+    finalization and ensure the sase core revision pin contains the bindings.
 
-      "
-  - id: trust-approval
-    title: Persist trust and add human acknowledgment commands
-    size: medium
-    depends_on:
-      - trust-policy
-    description: "trust-approval: Implement the Rust-owned machine-local trust store and
-      the
+    '
+- id: trust-approval
+  title: Persist trust and add human acknowledgment commands
+  size: medium
+  depends_on:
+  - trust-policy
+  description: 'trust-approval: Implement the Rust-owned machine-local trust store
+    and the
 
-      thin Python project-identity and filesystem adapters. Add sase config trust
+    thin Python project-identity and filesystem adapters. Add sase config trust
 
-      allow/status/revoke with the human-only acknowledgment contract in this plan.
+    allow/status/revoke with the human-only acknowledgment contract in this plan.
 
-      Trust must bind the reviewed digest to a host-resolved project identity;
+    Trust must bind the reviewed digest to a host-resolved project identity;
 
-      reject stale approvals and all agent/monitor acknowledgment attempts. Add
+    reject stale approvals and all agent/monitor acknowledgment attempts. Add
 
-      atomicity, identity, failure and CLI tests. Document the trust commands and
+    atomicity, identity, failure and CLI tests. Document the trust commands and
 
-      store. This phase does not yet change runtime command loading.
+    store. This phase does not yet change runtime command loading.
 
-      "
-  - id: hook-enforcement
-    title: Enforce trust for merged config and file hooks
-    size: medium
-    depends_on:
-      - trust-approval
-    description: "hook-enforcement: Create the mandatory local_config_command_trust
-      sunset
+    '
+- id: hook-enforcement
+  title: Enforce trust for merged config and file hooks
+  size: medium
+  depends_on:
+  - trust-approval
+  description: 'hook-enforcement: Create the mandatory local_config_command_trust
+    sunset
 
-      flag using sase flag new, then filter local executable contributions before
+    flag using sase flag new, then filter local executable contributions before
 
-      merging and before the independent file-hook loader consumes raw layers.
+    merging and before the independent file-hook loader consumes raw layers.
 
-      Wire fresh trust checks into before/after commit hooks, explicit-project
+    Wire fresh trust checks into before/after commit hooks, explicit-project
 
-      rebase gates and file-hook execution. Keep raw inspection and feature-flag
+    rebase gates and file-hook execution. Keep raw inspection and feature-flag
 
-      bootstrap separate from runtime filtering. Preserve user/overlay commands,
+    bootstrap separate from runtime filtering. Preserve user/overlay commands,
 
-      non-command local values and the explicit flag-Off compatibility branch.
+    non-command local values and the explicit flag-Off compatibility branch.
 
-      Add both-state and stale-cache/end-to-end no-execution regressions.
+    Add both-state and stale-cache/end-to-end no-execution regressions.
 
-      "
-  - id: macro-enforcement
-    title: Enforce trust for local macro workflows and finish integration
-    size: medium
-    depends_on:
-      - hook-enforcement
-    description: "macro-enforcement: Apply the shared policy to config macro sources and
-      the
+    '
+- id: macro-enforcement
+  title: Enforce trust for local macro workflows and finish integration
+  size: medium
+  depends_on:
+  - hook-enforcement
+  description: 'macro-enforcement: Apply the shared policy to config macro sources
+    and the
 
-      direct load_project_local_macros path, preserve provenance through parsing
+    direct load_project_local_macros path, preserve provenance through parsing
 
-      and namespacing, and revalidate executable local definitions before their
+    and namespacing, and revalidate executable local definitions before their
 
-      bash/python steps run. Cover nested steps, references, inherited executable
+    bash/python steps run. Cover nested steps, references, inherited executable
 
-      definitions, revocation and content changes. Finish runtime diagnostics,
+    definitions, revocation and content changes. Finish runtime diagnostics,
 
-      migration docs and the combined acceptance matrix. Run the required checks
+    migration docs and the combined acceptance matrix. Run the required checks
 
-      and leave completion evidence for this child epic's land agent; do not close
+    and leave completion evidence for this child epic''s land agent; do not close
 
-      sase-1sb.2 or any ancestor from a child phase."
+    sase-1sb.2 or any ancestor from a child phase.'
 proposed_by: bbugyi200.athena.sase-1sb.2
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-11 20:34:34
 status: wip
+bead_id: sase-1sb.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/local_config_digest_trust.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/local_config_digest_trust.md)
-- **PARENT:**
-  [202611/security_bug_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/security_bug_audit_fixes.md)
+- **PROMPT:** [prompts/202611/local_config_digest_trust.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/local_config_digest_trust.md)
+- **PARENT:** [202611/security_bug_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/security_bug_audit_fixes.md)
+- **BEAD:** [sase-1sb.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sb/sase-1sb.2.1.md)
 
 # Digest-pinned trust for project-local commands
 
