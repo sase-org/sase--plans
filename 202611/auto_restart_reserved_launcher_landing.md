@@ -2,14 +2,12 @@
 tier: tale
 size: medium
 title: Finish auto-restart reservation and ledger recovery, then land sase-1se
-goal:
-  Unnamed update-skew failures recover owned planned names without split ledger
+goal: Unnamed update-skew failures recover owned planned names without split ledger
   identities, and sase-1se closes with verified integration and a completed plan.
 proposed_by: bbugyi200.athena.sase-1se.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1se
-create_time: 2026-11-12 09:36:56
-status: wip
+status: done
 ---
 
 - **PARENT:**
