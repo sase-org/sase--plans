@@ -2,7 +2,8 @@
 tier: tale
 size: medium
 title: Finish auto-restart reservation and ledger recovery, then land sase-1se
-goal: Unnamed update-skew failures recover owned planned names without split ledger
+goal:
+  Unnamed update-skew failures recover owned planned names without split ledger
   identities, and sase-1se closes with verified integration and a completed plan.
 proposed_by: bbugyi200.athena.sase-1se.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,12 @@ status: done
   [202611/auto_restart_update_skew_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/auto_restart_update_skew_fixes.md)
 - **BEAD:**
   [sase-1se](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1se/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1se.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1se.land.md)
+- **COMMITS:**
+  - [d237c84](https://github.com/sase-org/sase/commit/d237c842040a7bd9449359ee9c0aa8e6d3d566c7)
+    — fix(auto-restart): hand off owned planned names in launcher resubmission; stop
+    parser-error project guesses
 
 # Finish auto-restart reservation and ledger recovery, then land sase-1se
 
