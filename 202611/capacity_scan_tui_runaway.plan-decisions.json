@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "verdict_cache",
+      "kind": "choice",
+      "ask": "Should the capacity scan persist a sticky never-live verdict cache keyed on artifact-dir mtime?",
+      "why": "Verdicts are sticky, the archive grows ~4.5k dirs/month, and 26+ runner processes pay cold passes.",
+      "choices": [
+        {
+          "key": "persist",
+          "label": "Warm rescans drop to ~ms for 20k+ dirs; adds one cache file plus invalidation rules to sase-core."
+        },
+        {
+          "key": "memory_only",
+          "label": "No new persisted state, but every process repays a cold full-archive meta pass (seconds)."
+        }
+      ],
+      "default": "persist",
+      "effective_default": "persist",
+      "requested_verified": false
+    },
+    {
+      "id": "live_tui_restart",
+      "kind": "choice",
+      "ask": "May the soak phase propose a gated restart of Bryan's live tmux TUI session after the soak passes?",
+      "why": "Bryan may be using the session, and stale_running_code.py already surfaces the restart row.",
+      "choices": [
+        {
+          "key": "separate_instance",
+          "label": "Soak a dedicated TUI instance only; Bryan restarts his own session when convenient."
+        },
+        {
+          "key": "restart_live",
+          "label": "After a passing soak, propose a gated quit-and-relaunch of the live session."
+        }
+      ],
+      "default": "separate_instance",
+      "effective_default": "separate_instance",
+      "requested_verified": false
+    }
+  ]
+}
