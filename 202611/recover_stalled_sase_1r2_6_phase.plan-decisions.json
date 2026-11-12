@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "close_path",
+      "kind": "choice",
+      "ask": "Should this worker close bead sase-1r2.6 itself on the recorded green-run evidence?",
+      "why": "Evidence is already on the bead; relaunching an xhigh worker just to re-verify costs far more",
+      "choices": [
+        {
+          "key": "direct",
+          "label": "Worker verifies the cited green runs and closes the bead itself with a stale-owner note"
+        },
+        {
+          "key": "rework",
+          "label": "Rerun `sase bead work sase-1r2` so a relaunched phase worker verifies and closes its own bead"
+        }
+      ],
+      "default": "direct",
+      "effective_default": "direct",
+      "requested_verified": false
+    }
+  ]
+}
