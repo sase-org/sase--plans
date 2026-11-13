@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "builtin_mirrors",
+      "kind": "choice",
+      "ask": "Should the builtin external_issue_mirror and external_pr_mirror jobs also skip the area-note repos?",
+      "why": "They are builtin, not chezmoi-configured, and mirroring an empty tracker is cheap and harmless",
+      "choices": [
+        {
+          "key": "leave",
+          "label": "Leave the builtin mirror jobs alone; they keep polling the area-note repos every 15 minutes"
+        },
+        {
+          "key": "exclude",
+          "label": "Patch both builtin jobs on athena with the same allowlist; new code projects need adding too"
+        }
+      ],
+      "default": "leave",
+      "effective_default": "leave",
+      "requested_verified": false
+    },
+    {
+      "id": "tailnet",
+      "kind": "choice",
+      "ask": "Should bbugyi200/tailnet also be dropped from refresh_docs?",
+      "why": "tailnet has no area note, and its README and host notes are real docs worth refreshing",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Keep tailnet in the allowlist; it has no area note of its own and holds real host docs"
+        },
+        {
+          "key": "drop",
+          "label": "Drop tailnet too, treating it as part of the dev area (dev.md lists it as a project alias)"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
