@@ -1,42 +1,40 @@
 ---
 tier: epic
 title: Google Gemini 4 Argon and Hydrogen support
-goal: "Gemini 4 Hydrogen shows up as a catalogued Antigravity model on every
-  manifest-driven sase model completion surface. Argon's entitlement advisory and the
-  agy tier defaults are correct again. #research_swarm's Gemini researcher defaults to
-  agy/gemini-4-hydrogen-xhigh.
+goal: 'Gemini 4 Hydrogen shows up as a catalogued Antigravity model on every manifest-driven
+  sase model completion surface. Argon''s entitlement advisory and the agy tier defaults
+  are correct again. #research_swarm''s Gemini researcher defaults to agy/gemini-4-hydrogen-xhigh.
 
-  "
+  '
 phases:
-  - id: agy-hydrogen-catalog
-    title: Catalog Gemini 4 Hydrogen on Antigravity (sase)
-    depends_on: []
-    size: medium
-    description:
-      "agy-hydrogen-catalog: in the sase repo, add the four Hydrogen slugs and their
-      hydrogen4* aliases to the agy section of models.yml. Retext the stale Argon
-      advisory to Pro/Ultra and move the broken agy tiers to Gemini 3.8 Flash. Teach
-      short_model_name about hydrogen. Update the pinned tests, regenerate and hand-edit
-      the agy docs, refresh any shifted ACE PNG goldens, and record the five research
-      follow-ups."
-  - id: research-swarm-hydrogen
-    title: Default the swarm's Gemini researcher to Hydrogen (sase-research-artifacts)
-    depends_on:
-      - agy-hydrogen-catalog
-    size: small
-    description:
-      "research-swarm-hydrogen: in the linked sase-research-artifacts plugin, change the
-      #research_swarm gemini_model default and the @image pool's agy member to
-      agy/gemini-4-hydrogen-xhigh. Update the input description, README, docs, and
-      pinned tests, then verify with the plugin's sase tool run check."
+- id: agy-hydrogen-catalog
+  title: Catalog Gemini 4 Hydrogen on Antigravity (sase)
+  depends_on: []
+  size: medium
+  description: 'agy-hydrogen-catalog: in the sase repo, add the four Hydrogen slugs
+    and their hydrogen4* aliases to the agy section of models.yml. Retext the stale
+    Argon advisory to Pro/Ultra and move the broken agy tiers to Gemini 3.8 Flash.
+    Teach short_model_name about hydrogen. Update the pinned tests, regenerate and
+    hand-edit the agy docs, refresh any shifted ACE PNG goldens, and record the five
+    research follow-ups.'
+- id: research-swarm-hydrogen
+  title: Default the swarm's Gemini researcher to Hydrogen (sase-research-artifacts)
+  depends_on:
+  - agy-hydrogen-catalog
+  size: small
+  description: 'research-swarm-hydrogen: in the linked sase-research-artifacts plugin,
+    change the #research_swarm gemini_model default and the @image pool''s agy member
+    to agy/gemini-4-hydrogen-xhigh. Update the input description, README, docs, and
+    pinned tests, then verify with the plugin''s sase tool run check.'
 proposed_by: bbugyi200.athena.1cb
 proposed_with: claude/opus
 create_time: 2026-11-13 18:46:09
 status: wip
+bead_id: sase-1ss
 ---
 
-- **PROMPT:**
-  [prompts/202611/argon_hydrogen_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/argon_hydrogen_support.md)
+- **PROMPT:** [prompts/202611/argon_hydrogen_support.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/argon_hydrogen_support.md)
+- **BEAD:** [sase-1ss](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ss/README.md)
 
 # Google Gemini 4 Argon and Hydrogen support
 
