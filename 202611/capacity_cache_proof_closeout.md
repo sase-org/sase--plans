@@ -1,17 +1,14 @@
 ---
 tier: tale
-title:
-  Prove capacity-cache concurrent writes and root rejection, then finish the landing
-goal:
-  The promised cache safety tests exercise real publication and independent root
-  rejection, and sase-1sl.1.1 plus parent phase sase-1sl.1 close normally after
-  verification.
+title: Prove capacity-cache concurrent writes and root rejection, then finish the
+  landing
+goal: The promised cache safety tests exercise real publication and independent root
+  rejection, and sase-1sl.1.1 plus parent phase sase-1sl.1 close normally after verification.
 size: small
 proposed_by: bbugyi200.athena.sase-1sl.1.1.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1sl.1.1
-create_time: 2026-11-12 23:53:49
-status: wip
+status: done
 ---
 
 - **PARENT:**
