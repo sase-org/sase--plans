@@ -130,7 +130,7 @@ proposed_with: claude/claude-fable-5
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-12 05:26:12
-status: wip
+status: done
 bead_id: sase-1sd
 ---
 
