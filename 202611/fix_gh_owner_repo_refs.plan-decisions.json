@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "stale_rule_text",
+      "kind": "choice",
+      "ask": "Also fix the stale `word`/`agent` rule wording in the sase docs table and sase-core catalog?",
+      "why": "Stale \"no whitespace\" wording is how plugin macros kept slash refs on `word`",
+      "choices": [
+        {
+          "key": "fix_now",
+          "label": "Fix both now; the tale also edits a sase docs table and two sase-core strings"
+        },
+        {
+          "key": "defer",
+          "label": "Change only sase-github; file one task bead for the stale wording"
+        }
+      ],
+      "default": "fix_now",
+      "effective_default": "fix_now",
+      "requested_verified": false
+    }
+  ]
+}
