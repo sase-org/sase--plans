@@ -1,11 +1,9 @@
 ---
 tier: tale
-title:
-  Prove capacity-cache concurrent writes and root rejection, then finish the landing
-goal:
-  The promised cache safety tests exercise real publication and independent root
-  rejection, and sase-1sl.1.1 plus parent phase sase-1sl.1 close normally after
-  verification.
+title: Prove capacity-cache concurrent writes and root rejection, then finish the
+  landing
+goal: The promised cache safety tests exercise real publication and independent root
+  rejection, and sase-1sl.1.1 plus parent phase sase-1sl.1 close normally after verification.
 size: small
 proposed_by: bbugyi200.athena.sase-1sl.1.1.land
 proposed_with: codex/gpt-6-astra
@@ -17,11 +15,6 @@ status: done
   [202611/capacity_scan_core.md](https://github.com/sase-org/sase--plans/blob/main/202611/capacity_scan_core.md)
 - **BEAD:**
   [sase-1sl.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sl/sase-1sl.1.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1sl.1.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1sl.1.1.land.md)
-- **COMMITS:**
-  - [1b3aef9](https://github.com/sase-org/sase-core/commit/1b3aef9464b929dafbce125638367596041ece5b)
-    — test(agent-scan): prove capacity cache write safety
 
 # Finish capacity-cache safety proof and land sase-1sl.1.1
 
