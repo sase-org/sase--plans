@@ -1,24 +1,22 @@
 ---
 tier: epic
 title: Bead previews for K in the prompt input
-goal: "Pressing K in the prompt input's NORMAL mode on a bead ID (bob-cli-kx,
-  sase-1ss.1) or an @bead:<id> ref opens a fast, theme-aware bead card that never blocks
-  typing. The card shows the bead's identity, status, description, phases, lineage,
-  dependencies, and plan, and lets you drill into related beads or open the full detail.
-  Ctrl+] opens the full bead detail too. Bead IDs that resolve get a status-tinted
-  underline, so the K affordance is visible before you press it. Hyphenated words that
-  are not beads keep today's word lookup.
+goal: 'Pressing K in the prompt input''s NORMAL mode on a bead ID (bob-cli-kx, sase-1ss.1)
+  or an @bead:<id> ref opens a fast, theme-aware bead card that never blocks typing.
+  The card shows the bead''s identity, status, description, phases, lineage, dependencies,
+  and plan, and lets you drill into related beads or open the full detail. Ctrl+]
+  opens the full bead detail too. Bead IDs that resolve get a status-tinted underline,
+  so the K affordance is visible before you press it. Hyphenated words that are not
+  beads keep today''s word lookup.
 
-  "
+  '
 decisions:
   mention_tint:
     ask: How should prompt bead IDs be colored once they are underlined?
     choices:
-      status:
-        Each ID takes its bead's status color (in-progress gold, closed green, open
-        blue)
-      uniform:
-        One theme-derived bead color, matching the glossary and repo-name siblings
+      status: Each ID takes its bead's status color (in-progress gold, closed green,
+        open blue)
+      uniform: One theme-derived bead color, matching the glossary and repo-name siblings
     default: status
     why: Status color shows at a glance whether a bead you reference is still live
     answer: status
@@ -26,52 +24,50 @@ decisions:
     ask: What should Ctrl+] open when the cursor is on a bead ID?
     choices:
       detail: The full bead detail document in the pager, with followable bead links
-      plan:
-        The bead's plan file in $EDITOR, falling back to the pager when it has no plan
+      plan: The bead's plan file in $EDITOR, falling back to the pager when it has
+        no plan
     default: detail
-    why: Every bead has a detail document; many beads (tasks, flags) have no plan file
+    why: Every bead has a detail document; many beads (tasks, flags) have no plan
+      file
     answer: detail
 phases:
-  - id: peek
-    title: K on a bead opens a bead card
-    depends_on: []
-    size: medium
-    description:
-      "peek: recognize bare and @bead: IDs at the cursor, route them through a warm
-      app-level bead store directory, splice the bead step into the K chain with a
-      byte-for-byte resume of the word lookup for non-beads, and ship the
-      BeadPreviewModal core (title, chips, description, property grid, copy/plan
-      actions, loading state)."
-  - id: relations
-    title: Related beads, navigation, and full detail
-    depends_on:
-      - peek
-    size: medium
-    description:
-      "relations: add lineage, a numbered phase/children list with a progress meter, and
-      dependencies to the card, in-card drill-down (1-9, p, backspace, r), Enter and
-      Ctrl+] opening the full bead detail in the pager, help/docs updates, and PNG
-      goldens."
-  - id: mentions
-    title: Status-tinted bead mentions in the prompt
-    depends_on:
-      - peek
-      - relations
-    size: medium
-    description:
-      "mentions: underline resolved bead IDs in prompt text using a memory-only overlay
-      fed by an app-level, fingerprint-revalidated mention index whose resolution runs
-      only on discrete events (mount, NORMAL-mode entry, K), never per keystroke."
+- id: peek
+  title: K on a bead opens a bead card
+  depends_on: []
+  size: medium
+  description: 'peek: recognize bare and @bead: IDs at the cursor, route them through
+    a warm app-level bead store directory, splice the bead step into the K chain with
+    a byte-for-byte resume of the word lookup for non-beads, and ship the BeadPreviewModal
+    core (title, chips, description, property grid, copy/plan actions, loading state).'
+- id: relations
+  title: Related beads, navigation, and full detail
+  depends_on:
+  - peek
+  size: medium
+  description: 'relations: add lineage, a numbered phase/children list with a progress
+    meter, and dependencies to the card, in-card drill-down (1-9, p, backspace, r),
+    Enter and Ctrl+] opening the full bead detail in the pager, help/docs updates,
+    and PNG goldens.'
+- id: mentions
+  title: Status-tinted bead mentions in the prompt
+  depends_on:
+  - peek
+  - relations
+  size: medium
+  description: 'mentions: underline resolved bead IDs in prompt text using a memory-only
+    overlay fed by an app-level, fingerprint-revalidated mention index whose resolution
+    runs only on discrete events (mount, NORMAL-mode entry, K), never per keystroke.'
 proposed_by: bbugyi200.apollo.dy
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-14 09:03:55
 status: wip
+bead_id: sase-1sy
 ---
 
-- **PROMPT:**
-  [prompts/202611/bead_k_preview.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bead_k_preview.md)
+- **PROMPT:** [prompts/202611/bead_k_preview.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bead_k_preview.md)
+- **BEAD:** [sase-1sy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1sy/README.md)
 
 # Plan: Bead previews for K in the prompt input
 
