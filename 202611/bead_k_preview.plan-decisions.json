@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "mention_tint",
+      "kind": "choice",
+      "ask": "How should prompt bead IDs be colored once they are underlined?",
+      "why": "Status color shows at a glance whether a bead you reference is still live",
+      "choices": [
+        {
+          "key": "status",
+          "label": "Each ID takes its bead's status color (in-progress gold, closed green, open blue)"
+        },
+        {
+          "key": "uniform",
+          "label": "One theme-derived bead color, matching the glossary and repo-name siblings"
+        }
+      ],
+      "default": "status",
+      "effective_default": "status",
+      "requested_verified": false
+    },
+    {
+      "id": "jump_target",
+      "kind": "choice",
+      "ask": "What should Ctrl+] open when the cursor is on a bead ID?",
+      "why": "Every bead has a detail document; many beads (tasks, flags) have no plan file",
+      "choices": [
+        {
+          "key": "detail",
+          "label": "The full bead detail document in the pager, with followable bead links"
+        },
+        {
+          "key": "plan",
+          "label": "The bead's plan file in $EDITOR, falling back to the pager when it has no plan"
+        }
+      ],
+      "default": "detail",
+      "effective_default": "detail",
+      "requested_verified": false
+    }
+  ]
+}
