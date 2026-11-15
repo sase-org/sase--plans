@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "missing_payload_policy",
+      "kind": "choice",
+      "ask": "Should a dangling index row still get a restorable trash entry when its stored file is gone?",
+      "why": "payload-less entries reuse existing (None, None) restore semantics and keep the audit trail",
+      "choices": [
+        {
+          "key": "trash",
+          "label": "Store a payload-less trash entry; the row metadata stays restorable and auditable"
+        },
+        {
+          "key": "drop",
+          "label": "Remove the row from the live index directly with no trash entry"
+        }
+      ],
+      "default": "trash",
+      "effective_default": "trash",
+      "requested_verified": false
+    },
+    {
+      "id": "grace_minutes",
+      "kind": "choice",
+      "ask": "How long may a deferred prompt archive stay unresolved before it counts as a digest error?",
+      "why": "the worst observed self-resolving case today cleared within about 25 minutes",
+      "choices": [
+        {
+          "key": "ten",
+          "label": "Escalate after 10 minutes; faster alerting, may still emit noise for slow agent turns"
+        },
+        {
+          "key": "thirty",
+          "label": "Escalate after 30 minutes; covers every transient case observed in the digests"
+        },
+        {
+          "key": "sixty",
+          "label": "Escalate after 60 minutes; quietest, slowest to surface a genuinely stuck archive"
+        }
+      ],
+      "default": "thirty",
+      "effective_default": "thirty",
+      "requested_verified": false
+    },
+    {
+      "id": "grace_skips_charge",
+      "kind": "toggle",
+      "ask": "Should the grace window also skip charging publication attempts toward quarantine?",
+      "why": "three 45-second ticks already reach the quarantine threshold while an agent is mid-turn",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
