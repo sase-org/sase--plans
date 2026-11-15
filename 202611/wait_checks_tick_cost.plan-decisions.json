@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "job_timeout",
+      "kind": "choice",
+      "ask": "Should agent_waits' job_timeout also be raised from 2m to 3m as extra headroom?",
+      "why": "the measured cuts fit the observed overload in 2m; a longer timeout hides regressions",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Cost cuts alone restore headroom; a hung tick is still flagged after two minutes"
+        },
+        {
+          "key": "raise",
+          "label": "Ticks on a saturated host finish instead of restarting, but a real hang surfaces later"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
