@@ -1,68 +1,57 @@
 ---
 tier: epic
-title:
-  Stop recurring hourly job failures from dangling artifacts and in-flight prompt
+title: Stop recurring hourly job failures from dangling artifacts and in-flight prompt
   archives
-goal: "The hourly artifact_retention job reclaims dangling index rows instead of failing
+goal: 'The hourly artifact_retention job reclaims dangling index rows instead of failing
   forever on a missing stored file, and agent_publication no longer emits axe digest
   errors for deferred prompt archives that are only seconds-to-minutes old and resolve
   on their own.
 
-  "
+  '
 phases:
-  - id: retention
-    title: Artifact retention tolerates dangling stored files
-    depends_on: []
-    size: medium
-    description:
-      "retention: let the trash store accept a missing payload on opt-in, pass the flag
-      from the retention pass, and keep purge running so one bad row never wedges the
-      hourly job."
-  - id: pubnoise
-    title: Grace window for unresolved deferred prompt archives
-    depends_on: []
-    size: medium
-    description:
-      "pubnoise: treat a young unresolved prompt archive as a deferral (no error, no
-      attempt charge) and only escalate to digest errors past a grace window."
+- id: retention
+  title: Artifact retention tolerates dangling stored files
+  depends_on: []
+  size: medium
+  description: 'retention: let the trash store accept a missing payload on opt-in,
+    pass the flag from the retention pass, and keep purge running so one bad row never
+    wedges the hourly job.'
+- id: pubnoise
+  title: Grace window for unresolved deferred prompt archives
+  depends_on: []
+  size: medium
+  description: 'pubnoise: treat a young unresolved prompt archive as a deferral (no
+    error, no attempt charge) and only escalate to digest errors past a grace window.'
 decisions:
   missing_payload_policy:
-    ask:
-      Should a dangling index row still get a restorable trash entry when its stored
+    ask: Should a dangling index row still get a restorable trash entry when its stored
       file is gone?
     choices:
-      trash:
-        Store a payload-less trash entry; the row metadata stays restorable and
+      trash: Store a payload-less trash entry; the row metadata stays restorable and
         auditable
       drop: Remove the row from the live index directly with no trash entry
     default: trash
-    why:
-      payload-less entries reuse existing (None, None) restore semantics and keep the
-      audit trail
+    why: payload-less entries reuse existing (None, None) restore semantics and keep
+      the audit trail
     answer: trash
   grace_minutes:
-    ask:
-      How long may a deferred prompt archive stay unresolved before it counts as a
-      digest error?
+    ask: How long may a deferred prompt archive stay unresolved before it counts as
+      a digest error?
     choices:
-      ten:
-        Escalate after 10 minutes; faster alerting, may still emit noise for slow agent
-        turns
-      thirty:
-        Escalate after 30 minutes; covers every transient case observed in the digests
-      sixty:
-        Escalate after 60 minutes; quietest, slowest to surface a genuinely stuck
+      ten: Escalate after 10 minutes; faster alerting, may still emit noise for slow
+        agent turns
+      thirty: Escalate after 30 minutes; covers every transient case observed in the
+        digests
+      sixty: Escalate after 60 minutes; quietest, slowest to surface a genuinely stuck
         archive
     default: thirty
     why: the worst observed self-resolving case today cleared within about 25 minutes
     answer: thirty
   grace_skips_charge:
-    ask:
-      Should the grace window also skip charging publication attempts toward quarantine?
+    ask: Should the grace window also skip charging publication attempts toward quarantine?
     default: true
-    why:
-      three 45-second ticks already reach the quarantine threshold while an agent is
-      mid-turn
+    why: three 45-second ticks already reach the quarantine threshold while an agent
+      is mid-turn
     answer: true
 proposed_by: bbugyi200.athena.1cm
 proposed_with: claude/claude-fable-5
@@ -70,10 +59,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-15 12:29:15
 status: wip
+bead_id: sase-1t0
 ---
 
-- **PROMPT:**
-  [prompts/202611/hourly_job_error_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hourly_job_error_hardening.md)
+- **PROMPT:** [prompts/202611/hourly_job_error_hardening.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hourly_job_error_hardening.md)
+- **BEAD:** [sase-1t0](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t0/README.md)
 
 # Plan: Stop recurring hourly job failures from dangling artifacts and in-flight prompt archives
 
