@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "live_repair",
+      "kind": "choice",
+      "ask": "How should the coder repair the live bob-cli plans clone once the fix is in?",
+      "why": "Lossless, but it writes to another project's primary checkout, so you see the command first",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "You approve the exact repair command via /sase_gate before bob-cli's checkout is touched"
+        },
+        {
+          "key": "run",
+          "label": "The coder runs the one-shot repair itself after just check passes and reports it"
+        },
+        {
+          "key": "defer",
+          "label": "The clone stays broken until you reinstall sase; the hourly digest error continues"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    },
+    {
+      "id": "global_fsync",
+      "kind": "toggle",
+      "ask": "Should the coder also crash-harden every repo on your machines via the chezmoi global gitconfig?",
+      "why": "Only an unattended SASE clone was damaged; machine-wide fsync is a personal trade-off",
+      "default": false,
+      "effective_default": false,
+      "requested_verified": false
+    }
+  ]
+}
