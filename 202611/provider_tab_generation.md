@@ -1,44 +1,41 @@
 ---
 tier: epic
 title: Publish provider tabs after first paint as one generation
-goal:
-  Fixed Artifacts panes paint without provider discovery, and every TUI consumer adopts
-  each complete provider-tab generation together.
+goal: Fixed Artifacts panes paint without provider discovery, and every TUI consumer
+  adopts each complete provider-tab generation together.
 parent_bead: sase-1t3.7
 phases:
-  - id: snapshot-consumers
-    title: Pin Artifacts consumers to an explicit descriptor snapshot
-    depends_on: []
-    size: medium
-    description:
-      "snapshot-consumers: introduce the TUI descriptor snapshot and pure lookup
-      boundary; route bindings, Artifacts composition, help, command catalogs, and
-      navigation through the app's committed snapshot. Keep discovery timing unchanged
-      in this preparatory phase. Make command selections target stable pane IDs,
-      preserve standalone synchronous discovery, and test isolation from a newer
-      discovery-cache result."
-  - id: post-paint-publication
-    title: Discover after first paint and publish mounted generations coherently
-    depends_on:
-      - snapshot-consumers
-    size: medium
-    description:
-      "post-paint-publication: bootstrap fixed descriptors without discovery; schedule
-      coalesced provider discovery after first paint; prepare missing panes and publish
-      one complete generation on the UI thread. Preserve navigation, pane state,
-      diagnostics, retry, and teardown behavior. Add delayed-discovery integration
-      coverage and startup measurements, including the cold Agents identity path, and
-      leave closure evidence for the land agent."
+- id: snapshot-consumers
+  title: Pin Artifacts consumers to an explicit descriptor snapshot
+  depends_on: []
+  size: medium
+  description: 'snapshot-consumers: introduce the TUI descriptor snapshot and pure
+    lookup boundary; route bindings, Artifacts composition, help, command catalogs,
+    and navigation through the app''s committed snapshot. Keep discovery timing unchanged
+    in this preparatory phase. Make command selections target stable pane IDs, preserve
+    standalone synchronous discovery, and test isolation from a newer discovery-cache
+    result.'
+- id: post-paint-publication
+  title: Discover after first paint and publish mounted generations coherently
+  depends_on:
+  - snapshot-consumers
+  size: medium
+  description: 'post-paint-publication: bootstrap fixed descriptors without discovery;
+    schedule coalesced provider discovery after first paint; prepare missing panes
+    and publish one complete generation on the UI thread. Preserve navigation, pane
+    state, diagnostics, retry, and teardown behavior. Add delayed-discovery integration
+    coverage and startup measurements, including the cold Agents identity path, and
+    leave closure evidence for the land agent.'
 proposed_by: bbugyi200.athena.sase-1t3.7
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-16 11:11:47
 status: wip
+bead_id: sase-1t3.7.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/provider_tab_generation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/provider_tab_generation.md)
-- **PARENT:**
-  [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/provider_tab_generation.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/provider_tab_generation.md)
+- **PARENT:** [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.7.1.md)
 
 # Publish provider tabs after first paint as one generation
 
