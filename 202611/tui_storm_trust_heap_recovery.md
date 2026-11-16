@@ -1,206 +1,187 @@
 ---
 tier: epic
-title:
-  Recover TUI speed - stop the hijack storm, fix the trust-root defect, shrink the heap
-goal: "`sase tui` reaches a usable Agents list in about 6-7 s instead of about 14 s.
-  Selection changes can no longer start archive scans that fill memory or the default
-  executor. Numbered workspaces inherit their project's trust acknowledgment. Long
+title: Recover TUI speed - stop the hijack storm, fix the trust-root defect, shrink
+  the heap
+goal: '`sase tui` reaches a usable Agents list in about 6-7 s instead of about 14
+  s. Selection changes can no longer start archive scans that fill memory or the default
+  executor. Numbered workspaces inherit their project''s trust acknowledgment. Long
   sessions keep a bounded heap and responsive j/k navigation. Existing telemetry proves
   each stage.
 
-  "
+  '
 decisions:
   hotfix_reinstall:
-    ask:
-      Should the storm-hotfix phase propose a gated global reinstall as soon as it
-      lands?
+    ask: Should the storm-hotfix phase propose a gated global reinstall as soon as
+      it lands?
     default: true
-    why:
-      The live TUI runs a storm-capable build; one approval stops the storm before the
-      epic lands
+    why: The live TUI runs a storm-capable build; one approval stops the storm before
+      the epic lands
     answer: true
   trust_ack_compat:
-    ask:
-      How should the trust-root fix treat acknowledgments recorded under the old
+    ask: How should the trust-root fix treat acknowledgments recorded under the old
       `<repo>/sase` key?
     choices:
-      cutover:
-        Drop the old key; you re-run `sase config trust allow` once in the primary
-        checkout
-      compat:
-        Honor old-key acks behind a sunset flag; adds a flag bead and a legacy-digest
+      cutover: Drop the old key; you re-run `sase config trust allow` once in the
+        primary checkout
+      compat: Honor old-key acks behind a sunset flag; adds a flag bead and a legacy-digest
         trust path
     default: cutover
-    why:
-      One legacy ack exists; fail-closed until one re-ack, after which every workspace
+    why: One legacy ack exists; fail-closed until one re-ack, after which every workspace
       inherits it
     answer: cutover
   tui_perf_memory:
-    ask:
-      Should the epic add a default-executor rule for selection-driven computes to the
-      tui_perf memory note?
+    ask: Should the epic add a default-executor rule for selection-driven computes
+      to the tui_perf memory note?
     memory:
-      - tui_perf.md
+    - tui_perf.md
     default: false
     answer: false
 phases:
-  - id: storm-hotfix
-    title: Stop the hijack-decision storm
-    depends_on: []
-    size: medium
-    description:
-      "storm-hotfix: gate passive footer scheduling with the cheap check. Key the
-      decision cache on stable row identity plus a fingerprint instead of the roster
-      generation. Run single-flight, latest-wins computes on one dedicated worker, and
-      resolve sessions, clans, and running rows from the in-memory roster so the TUI
-      never scans the archive."
-  - id: telemetry-guardrails
-    title: Executor-saturation gauge and telemetry retention
-    depends_on: []
-    size: small
-    description:
-      "telemetry-guardrails: add a default-executor saturation gauge to the existing
-      memory heartbeat, keep at least 24 h of tui_stalls rows, and cap the unbounded
-      tui_trace file with rotation."
-  - id: trust-memo
-    title: Semantics-preserving trust and config memoization
-    depends_on: []
-    size: medium
-    description:
-      "trust-memo: memoize the per-primary registry-membership scan and the lower-layer
-      macro/workflow merge, and check the merged-config cache before reading and
-      evaluating the local layer. An O(N) merge-count test guards construction."
-  - id: trust-root
-    title: One checkout root for trust enforcement and acknowledgment
-    depends_on:
-      - trust-memo
-    size: medium
-    description:
-      "trust-root: make enforcement and `sase config trust` derive the same checkout
-      root and identity for canonical `<repo>/sase/sase.yml` configs, so primaries and
-      numbered workspaces match their project acknowledgment. Handles the legacy key per
-      the trust_ack_compat decision."
-  - id: loader-memos
-    title: Per-load memos for the Agents loader decode stage
-    depends_on: []
-    size: medium
-    description:
-      "loader-memos: build the project alias map once per load, hoist the held-claim TTL
-      config read, enrich each unique agent once with batch-scoped retention and
-      artifacts-dir memos, and compute instruction-bundle file lists lazily for the
-      detail panel."
-  - id: indexed-name-lookups
-    title: Index-backed agent name, session, clan, and dismissed-bundle lookups
-    depends_on: []
-    size: large
-    description:
-      "indexed-name-lookups: replace the archive-walking named-agent, session, and clan
-      lookups and the 65k-file dismissed-bundle rglob with indexed sase-core queries, so
-      `sase agent hijack --explain` and the persist-hijack proc stop paying 17-38 s."
-  - id: provider-discovery-deferral
-    title: Provider-tab discovery after first paint as one generation
-    depends_on:
-      - trust-root
-    size: large
-    description:
-      "provider-discovery-deferral: build fixed-tab bindings synchronously. Publish
-      provider tab descriptors after first paint as one coherent generation for keymaps,
-      Artifacts composition, help, the command catalog, and navigation, avoiding the
-      deferral traps the research lists."
-  - id: startup-critical-path
-    title: Lazy action imports and startup background work off the critical path
-    depends_on:
-      - storm-hotfix
-      - trust-memo
-      - loader-memos
-    size: large
-    description:
-      "startup-critical-path: re-measure, then lazy-import the heavy agents action
-      closure under the import-budget ratchet. Skip or defer startup monitor_reconcile
-      when nothing can settle, defer AXE full snapshots until Services is visited, and
-      make idle axe.collect ticks cheap."
-  - id: heap-census
-    title: Post-storm GC census and heap-owner attribution
-    depends_on:
-      - storm-hotfix
-      - telemetry-guardrails
-      - trust-memo
-      - loader-memos
-    size: medium
-    description:
-      "heap-census: soak a separate TUI instance with the GC census at about 10 min and
-      2 h, then record a ranked list of surviving heap owners with code anchors for the
-      heap-diet phases. Coordinate with sase-1sl.4."
-  - id: slim-list-rows
-    title: Slim list rows end to end and a one-generation snapshot cache
-    depends_on:
-      - heap-census
-    size: large
-    description:
-      "slim-list-rows: return and consume a slim list DTO from sase-core instead of
-      inflating full nested wire records for list paint. Hydrate only the selected
-      identity, drop wire snapshots after Agent construction, and cap the snapshot cache
-      at one live generation."
-  - id: bounded-log-caches
-    title: Replace whole-file log caches with targeted queries
-    depends_on:
-      - heap-census
-    size: large
-    description:
-      "bounded-log-caches: replace the module-level full-file materializations of the
-      artifact index, artifact and memory read logs, bead touches, and stranded-report
-      parses with targeted indexed or streamed queries, in census order."
-  - id: stale-index-rows
-    title: Terminalize stale running rows in index maintenance
-    depends_on: []
-    size: large
-    description:
-      "stale-index-rows: find out why about 12.5k index rows stay running with no done
-      marker, and terminalize them in sase-core background maintenance using real
-      witnesses, without changing the Agents live predicate."
-  - id: interaction-pass
-    title: Interaction latency after the heap shrinks
-    depends_on:
-      - storm-hotfix
-      - slim-list-rows
-      - bounded-log-caches
-    size: large
-    description:
-      "interaction-pass: re-measure j/k and detail selection, then move detail-header
-      lanes off the pump with per-agent caches and keep `,j` on the highlight path. Make
-      clan runtime aggregation, delta-load graph copies, and bead-confirmation warmups
-      proportional to changed or visible rows."
-  - id: soak-verify
-    title: End-to-end soak against the research baselines
-    depends_on:
-      - storm-hotfix
-      - telemetry-guardrails
-      - trust-memo
-      - trust-root
-      - loader-memos
-      - indexed-name-lookups
-      - provider-discovery-deferral
-      - startup-critical-path
-      - heap-census
-      - slim-list-rows
-      - bounded-log-caches
-      - stale-index-rows
-      - interaction-pass
-    size: medium
-    description:
-      "soak-verify: run a separate-instance soak with the whole epic, compare every
-      stage's telemetry against the research baselines and targets, document the new
-      gauge and baselines in the perf runbook, and record residual gaps."
+- id: storm-hotfix
+  title: Stop the hijack-decision storm
+  depends_on: []
+  size: medium
+  description: 'storm-hotfix: gate passive footer scheduling with the cheap check.
+    Key the decision cache on stable row identity plus a fingerprint instead of the
+    roster generation. Run single-flight, latest-wins computes on one dedicated worker,
+    and resolve sessions, clans, and running rows from the in-memory roster so the
+    TUI never scans the archive.'
+- id: telemetry-guardrails
+  title: Executor-saturation gauge and telemetry retention
+  depends_on: []
+  size: small
+  description: 'telemetry-guardrails: add a default-executor saturation gauge to the
+    existing memory heartbeat, keep at least 24 h of tui_stalls rows, and cap the
+    unbounded tui_trace file with rotation.'
+- id: trust-memo
+  title: Semantics-preserving trust and config memoization
+  depends_on: []
+  size: medium
+  description: 'trust-memo: memoize the per-primary registry-membership scan and the
+    lower-layer macro/workflow merge, and check the merged-config cache before reading
+    and evaluating the local layer. An O(N) merge-count test guards construction.'
+- id: trust-root
+  title: One checkout root for trust enforcement and acknowledgment
+  depends_on:
+  - trust-memo
+  size: medium
+  description: 'trust-root: make enforcement and `sase config trust` derive the same
+    checkout root and identity for canonical `<repo>/sase/sase.yml` configs, so primaries
+    and numbered workspaces match their project acknowledgment. Handles the legacy
+    key per the trust_ack_compat decision.'
+- id: loader-memos
+  title: Per-load memos for the Agents loader decode stage
+  depends_on: []
+  size: medium
+  description: 'loader-memos: build the project alias map once per load, hoist the
+    held-claim TTL config read, enrich each unique agent once with batch-scoped retention
+    and artifacts-dir memos, and compute instruction-bundle file lists lazily for
+    the detail panel.'
+- id: indexed-name-lookups
+  title: Index-backed agent name, session, clan, and dismissed-bundle lookups
+  depends_on: []
+  size: large
+  description: 'indexed-name-lookups: replace the archive-walking named-agent, session,
+    and clan lookups and the 65k-file dismissed-bundle rglob with indexed sase-core
+    queries, so `sase agent hijack --explain` and the persist-hijack proc stop paying
+    17-38 s.'
+- id: provider-discovery-deferral
+  title: Provider-tab discovery after first paint as one generation
+  depends_on:
+  - trust-root
+  size: large
+  description: 'provider-discovery-deferral: build fixed-tab bindings synchronously.
+    Publish provider tab descriptors after first paint as one coherent generation
+    for keymaps, Artifacts composition, help, the command catalog, and navigation,
+    avoiding the deferral traps the research lists.'
+- id: startup-critical-path
+  title: Lazy action imports and startup background work off the critical path
+  depends_on:
+  - storm-hotfix
+  - trust-memo
+  - loader-memos
+  size: large
+  description: 'startup-critical-path: re-measure, then lazy-import the heavy agents
+    action closure under the import-budget ratchet. Skip or defer startup monitor_reconcile
+    when nothing can settle, defer AXE full snapshots until Services is visited, and
+    make idle axe.collect ticks cheap.'
+- id: heap-census
+  title: Post-storm GC census and heap-owner attribution
+  depends_on:
+  - storm-hotfix
+  - telemetry-guardrails
+  - trust-memo
+  - loader-memos
+  size: medium
+  description: 'heap-census: soak a separate TUI instance with the GC census at about
+    10 min and 2 h, then record a ranked list of surviving heap owners with code anchors
+    for the heap-diet phases. Coordinate with sase-1sl.4.'
+- id: slim-list-rows
+  title: Slim list rows end to end and a one-generation snapshot cache
+  depends_on:
+  - heap-census
+  size: large
+  description: 'slim-list-rows: return and consume a slim list DTO from sase-core
+    instead of inflating full nested wire records for list paint. Hydrate only the
+    selected identity, drop wire snapshots after Agent construction, and cap the snapshot
+    cache at one live generation.'
+- id: bounded-log-caches
+  title: Replace whole-file log caches with targeted queries
+  depends_on:
+  - heap-census
+  size: large
+  description: 'bounded-log-caches: replace the module-level full-file materializations
+    of the artifact index, artifact and memory read logs, bead touches, and stranded-report
+    parses with targeted indexed or streamed queries, in census order.'
+- id: stale-index-rows
+  title: Terminalize stale running rows in index maintenance
+  depends_on: []
+  size: large
+  description: 'stale-index-rows: find out why about 12.5k index rows stay running
+    with no done marker, and terminalize them in sase-core background maintenance
+    using real witnesses, without changing the Agents live predicate.'
+- id: interaction-pass
+  title: Interaction latency after the heap shrinks
+  depends_on:
+  - storm-hotfix
+  - slim-list-rows
+  - bounded-log-caches
+  size: large
+  description: 'interaction-pass: re-measure j/k and detail selection, then move detail-header
+    lanes off the pump with per-agent caches and keep `,j` on the highlight path.
+    Make clan runtime aggregation, delta-load graph copies, and bead-confirmation
+    warmups proportional to changed or visible rows.'
+- id: soak-verify
+  title: End-to-end soak against the research baselines
+  depends_on:
+  - storm-hotfix
+  - telemetry-guardrails
+  - trust-memo
+  - trust-root
+  - loader-memos
+  - indexed-name-lookups
+  - provider-discovery-deferral
+  - startup-critical-path
+  - heap-census
+  - slim-list-rows
+  - bounded-log-caches
+  - stale-index-rows
+  - interaction-pass
+  size: medium
+  description: 'soak-verify: run a separate-instance soak with the whole epic, compare
+    every stage''s telemetry against the research baselines and targets, document
+    the new gauge and baselines in the perf runbook, and record residual gaps.'
 proposed_by: bbugyi200.athena.research.62.linker.w0
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-16 07:57:48
 status: wip
+bead_id: sase-1t3
 ---
 
-- **PROMPT:**
-  [prompts/202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/README.md)
 
 # Recover TUI speed: stop the hijack storm, fix the trust-root defect, shrink the heap
 
