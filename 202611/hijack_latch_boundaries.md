@@ -1,83 +1,75 @@
 ---
 tier: epic
 title: Durable hijack latches across agent handoffs
-goal:
-  Complete sase-1t2.8 with durable, cancellable hijacks that suppress successors at safe
-  agent-turn boundaries.
+goal: Complete sase-1t2.8 with durable, cancellable hijacks that suppress successors
+  at safe agent-turn boundaries.
 parent_bead: sase-1t2.8
 phases:
-  - id: latch_store
-    title: Latch ledger contract and durable application primitives
-    size: medium
-    depends_on: []
-    description:
-      "latch_store: add additive Rust latch transitions and reconcile policy, bindings,
-      and Python target-indexed request/observe/apply/cancel/moot primitives; keep
-      public eligibility unchanged."
-  - id: spawn_guards
-    title: Prevent successor launches from bypassing a hijack
-    size: medium
-    depends_on:
-      - latch_store
-    description:
-      "spawn_guards: carry predecessor identity through follow-up and detached launch
-      paths, enforce pre/post-spawn checks, preserve HijackLatchedError through every
-      fallback, and prove lock order and child cleanup."
-  - id: runner_boundaries
-    title: Apply latches at adoption, retry, and run completion
-    size: medium
-    depends_on:
-      - spawn_guards
-    description:
-      "runner_boundaries: enforce latches under staged adoption and successor-delivery
-      locks, at in-process and spawned retries, and at no-handoff completion; retain
-      suppressed payloads and prevent replay."
-  - id: owner_recovery
-    title: Reconcile dead owners and support explicit forced stops
-    size: medium
-    depends_on:
-      - runner_boundaries
-    description:
-      "owner_recovery: integrate identity-checked latch reconciliation with stale
-      sweeping, implement explicit force after 120 seconds, and preserve
-      uncertain-effect and suppressed-handoff evidence through recovery."
-  - id: pending_tui
-    title: Present pending hijacks and durable cancel or force actions
-    size: medium
-    depends_on:
-      - owner_recovery
-    description:
-      "pending_tui: add pending overlays on members and containers, durable cancel/force
-      controls, accepted-latch completion handling, moot notifications, help, and
-      deterministic visual coverage before enabling eligibility."
-  - id: activate_cli
-    title: Enable finalizer latching and expose the CLI contract
-    size: medium
-    depends_on:
-      - pending_tui
-    description:
-      "activate_cli: return latched decisions only for supported finalizing or staged
-      agent turns, route the orchestrator to request_latch, add mutually exclusive
-      cancel/explain/now flags and exit 3, and document the delivered behavior."
-  - id: land
-    title: Verify the complete latch flow and prepare phase closure
-    size: medium
-    depends_on:
-      - activate_cli
-    description:
-      "land: extend the real-pipeline canary through finalizing and recovery, verify
-      race and replay invariants, run required checks, resolve epic symbols, and report
-      closure evidence for sase-1t2.8 to its host completion owner."
+- id: latch_store
+  title: Latch ledger contract and durable application primitives
+  size: medium
+  depends_on: []
+  description: 'latch_store: add additive Rust latch transitions and reconcile policy,
+    bindings, and Python target-indexed request/observe/apply/cancel/moot primitives;
+    keep public eligibility unchanged.'
+- id: spawn_guards
+  title: Prevent successor launches from bypassing a hijack
+  size: medium
+  depends_on:
+  - latch_store
+  description: 'spawn_guards: carry predecessor identity through follow-up and detached
+    launch paths, enforce pre/post-spawn checks, preserve HijackLatchedError through
+    every fallback, and prove lock order and child cleanup.'
+- id: runner_boundaries
+  title: Apply latches at adoption, retry, and run completion
+  size: medium
+  depends_on:
+  - spawn_guards
+  description: 'runner_boundaries: enforce latches under staged adoption and successor-delivery
+    locks, at in-process and spawned retries, and at no-handoff completion; retain
+    suppressed payloads and prevent replay.'
+- id: owner_recovery
+  title: Reconcile dead owners and support explicit forced stops
+  size: medium
+  depends_on:
+  - runner_boundaries
+  description: 'owner_recovery: integrate identity-checked latch reconciliation with
+    stale sweeping, implement explicit force after 120 seconds, and preserve uncertain-effect
+    and suppressed-handoff evidence through recovery.'
+- id: pending_tui
+  title: Present pending hijacks and durable cancel or force actions
+  size: medium
+  depends_on:
+  - owner_recovery
+  description: 'pending_tui: add pending overlays on members and containers, durable
+    cancel/force controls, accepted-latch completion handling, moot notifications,
+    help, and deterministic visual coverage before enabling eligibility.'
+- id: activate_cli
+  title: Enable finalizer latching and expose the CLI contract
+  size: medium
+  depends_on:
+  - pending_tui
+  description: 'activate_cli: return latched decisions only for supported finalizing
+    or staged agent turns, route the orchestrator to request_latch, add mutually exclusive
+    cancel/explain/now flags and exit 3, and document the delivered behavior.'
+- id: land
+  title: Verify the complete latch flow and prepare phase closure
+  size: medium
+  depends_on:
+  - activate_cli
+  description: 'land: extend the real-pipeline canary through finalizing and recovery,
+    verify race and replay invariants, run required checks, resolve epic symbols,
+    and report closure evidence for sase-1t2.8 to its host completion owner.'
 proposed_by: bbugyi200.athena.sase-1t2.8
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-16 04:09:02
 status: wip
+bead_id: sase-1t2.8.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/hijack_latch_boundaries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hijack_latch_boundaries.md)
-- **PARENT:**
-  [202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack_dependability.md)
+- **PROMPT:** [prompts/202611/hijack_latch_boundaries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hijack_latch_boundaries.md)
+- **PARENT:** [202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack_dependability.md)
+- **BEAD:** [sase-1t2.8.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t2/sase-1t2.8.1.md)
 
 # Durable hijack latches across agent handoffs
 
