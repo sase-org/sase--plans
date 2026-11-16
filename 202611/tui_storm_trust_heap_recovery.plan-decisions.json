@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "hotfix_reinstall",
+      "kind": "toggle",
+      "ask": "Should the storm-hotfix phase propose a gated global reinstall as soon as it lands?",
+      "why": "The live TUI runs a storm-capable build; one approval stops the storm before the epic lands",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "trust_ack_compat",
+      "kind": "choice",
+      "ask": "How should the trust-root fix treat acknowledgments recorded under the old `<repo>/sase` key?",
+      "why": "One legacy ack exists; fail-closed until one re-ack, after which every workspace inherits it",
+      "choices": [
+        {
+          "key": "cutover",
+          "label": "Drop the old key; you re-run `sase config trust allow` once in the primary checkout"
+        },
+        {
+          "key": "compat",
+          "label": "Honor old-key acks behind a sunset flag; adds a flag bead and a legacy-digest trust path"
+        }
+      ],
+      "default": "cutover",
+      "effective_default": "cutover",
+      "requested_verified": false
+    },
+    {
+      "id": "tui_perf_memory",
+      "kind": "toggle",
+      "ask": "Should the epic add a default-executor rule for selection-driven computes to the tui_perf memory note?",
+      "default": false,
+      "effective_default": false,
+      "memory": {
+        "selectors": [
+          "tui_perf.md"
+        ]
+      },
+      "provenance": "not_asked",
+      "requested_verified": false,
+      "resolved": [
+        {
+          "selector": "tui_perf.md",
+          "kind": "note",
+          "scope": "project",
+          "path": "tui_perf.md",
+          "type": "reference",
+          "exists": true
+        }
+      ]
+    }
+  ]
+}
