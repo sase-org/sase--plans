@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "glossary_strand",
+      "kind": "toggle",
+      "ask": "Update the Agent Hijack glossary strand so it describes session-level, latched, monitor, and waiting-turn hijacks?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "glossary:agent-hijack"
+        ]
+      },
+      "corrects": "An Agent Hijack stops a running agent turn while retaining its workspace claim, agent node, and recovery evidence.",
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "glossary:agent-hijack",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/glossary.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Agent Hijack",
+            "Agent Turn",
+            "Sase Workspace",
+            "Agent Node",
+            "Sase Turn",
+            "Sase Agent",
+            "Sase Node",
+            "Sase Agent Session",
+            "Sase Monitor",
+            "Gate Turn",
+            "Agent Clan",
+            "Named Proc",
+            "Nav Item",
+            "Artifact",
+            "Sase Gate",
+            "Clan Wave",
+            "Agent Hood",
+            "Proc",
+            "Nav Section",
+            "Service Proc",
+            "Oneshot Service Proc",
+            "Routine",
+            "Job",
+            "Stitch",
+            "Patch",
+            "Artifact Reference",
+            "Goal",
+            "Artifact Markdown File",
+            "Agent Tribe",
+            "Sase Service",
+            "Sase Scheduler",
+            "Required Plugin",
+            "Task Type"
+          ]
+        },
+        {
+          "selector": "glossary:agent-hijack",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Goal Ledger"
+          ]
+        }
+      ]
+    }
+  ]
+}
