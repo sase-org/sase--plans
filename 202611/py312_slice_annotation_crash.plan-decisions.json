@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "guard",
+      "kind": "toggle",
+      "ask": "Also add a lint stage (~5s per run) that catches 3.12 eager-annotation crashes from a 3.14 checkout?",
+      "why": "agents verify on 3.14, which hides this bug class; Master Gate only sees it after landing",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
