@@ -1,91 +1,83 @@
 ---
 tier: epic
 title: Complete monitor hijack custody and recovery
-goal:
-  Hijack the occupying monitor, retain its workspace, and recover exactly once through
-  the recorded follow-up or a fresh command run.
+goal: Hijack the occupying monitor, retain its workspace, and recover exactly once
+  through the recorded follow-up or a fresh command run.
 parent_bead: sase-1t2.11
 phases:
-  - id: custody
-    title: Monitor stop adapter and durable hijack settlement
-    depends_on: []
-    size: medium
-    description:
-      "custody: implement monitor-specific stop and settlement effects, durable recovery
-      evidence, exact claim custody, and marker preservation for proc-backed,
-      reconciled, and legacy monitors; keep public monitor eligibility refused until
-      activation."
-  - id: followup
-    title: Recover the recorded monitor follow-up
-    depends_on:
-      - custody
-    size: medium
-    description:
-      "followup: implement monitor-scope Continue and Escalate through exactly-once
-      recovery admission with bounded untrusted partial output; provide truthful Rust
-      recovery rows and preserve the same workspace."
-  - id: rerun
-    title: Re-run the command as a new monitor
-    depends_on:
-      - followup
-    size: medium
-    description:
-      "rerun: implement a durable rerun recovery action using the existing monitor-start
-      machinery in the held workspace, with duplicate and crash reconciliation, CLI
-      support, and Rust-owned action validation."
-  - id: activation
-    title: Enable running and settling monitor hijacks
-    depends_on:
-      - rerun
-    size: medium
-    description:
-      "activation: gather durable monitor occupancy and pending-follow-up facts, enable
-      Rust immediate/monitor and latched/monitor decisions with their mechanisms, and
-      prove request-versus-settlement races preserve custody and launch at most one
-      successor."
-  - id: surfaces
-    title: Present monitor recovery in the TUI
-    depends_on:
-      - rerun
-    size: medium
-    description:
-      "surfaces: render Continue, Escalate, Re-run command, View, Shell, and Dismiss
-      from the shared preview, hide unsupported monitor actions, preserve worker-based
-      decision caching, and verify targeted visual snapshots."
-  - id: canary
-    title: Exercise a real monitor hijack and recovery
-    depends_on:
-      - activation
-      - surfaces
-    size: medium
-    description:
-      "canary: extend the real fakey launch/loader/TUI-operation canary with a running
-      sleep monitor, same-workspace recovery and command rerun; flip the
-      screenshot-shaped fixture and verify CLI/TUI parity."
-  - id: land
-    title: Verify and land the monitor adapter phase
-    depends_on:
-      - custody
-      - followup
-      - rerun
-      - activation
-      - surfaces
-      - canary
-    size: medium
-    description:
-      "land: integrate all phases, finish monitor reference documentation, verify
-      required checks and symbol ownership, and supply completion evidence for
-      sase-1t2.11 without closing sase-1t2 or any higher ancestor."
+- id: custody
+  title: Monitor stop adapter and durable hijack settlement
+  depends_on: []
+  size: medium
+  description: 'custody: implement monitor-specific stop and settlement effects, durable
+    recovery evidence, exact claim custody, and marker preservation for proc-backed,
+    reconciled, and legacy monitors; keep public monitor eligibility refused until
+    activation.'
+- id: followup
+  title: Recover the recorded monitor follow-up
+  depends_on:
+  - custody
+  size: medium
+  description: 'followup: implement monitor-scope Continue and Escalate through exactly-once
+    recovery admission with bounded untrusted partial output; provide truthful Rust
+    recovery rows and preserve the same workspace.'
+- id: rerun
+  title: Re-run the command as a new monitor
+  depends_on:
+  - followup
+  size: medium
+  description: 'rerun: implement a durable rerun recovery action using the existing
+    monitor-start machinery in the held workspace, with duplicate and crash reconciliation,
+    CLI support, and Rust-owned action validation.'
+- id: activation
+  title: Enable running and settling monitor hijacks
+  depends_on:
+  - rerun
+  size: medium
+  description: 'activation: gather durable monitor occupancy and pending-follow-up
+    facts, enable Rust immediate/monitor and latched/monitor decisions with their
+    mechanisms, and prove request-versus-settlement races preserve custody and launch
+    at most one successor.'
+- id: surfaces
+  title: Present monitor recovery in the TUI
+  depends_on:
+  - rerun
+  size: medium
+  description: 'surfaces: render Continue, Escalate, Re-run command, View, Shell,
+    and Dismiss from the shared preview, hide unsupported monitor actions, preserve
+    worker-based decision caching, and verify targeted visual snapshots.'
+- id: canary
+  title: Exercise a real monitor hijack and recovery
+  depends_on:
+  - activation
+  - surfaces
+  size: medium
+  description: 'canary: extend the real fakey launch/loader/TUI-operation canary with
+    a running sleep monitor, same-workspace recovery and command rerun; flip the screenshot-shaped
+    fixture and verify CLI/TUI parity.'
+- id: land
+  title: Verify and land the monitor adapter phase
+  depends_on:
+  - custody
+  - followup
+  - rerun
+  - activation
+  - surfaces
+  - canary
+  size: medium
+  description: 'land: integrate all phases, finish monitor reference documentation,
+    verify required checks and symbol ownership, and supply completion evidence for
+    sase-1t2.11 without closing sase-1t2 or any higher ancestor.'
 proposed_by: bbugyi200.athena.sase-1t2.11
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-16 15:27:09
 status: wip
+bead_id: sase-1t2.11.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/monitor_hijack_adapter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/monitor_hijack_adapter.md)
-- **PARENT:**
-  [202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack_dependability.md)
+- **PROMPT:** [prompts/202611/monitor_hijack_adapter.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/monitor_hijack_adapter.md)
+- **PARENT:** [202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--plans/blob/main/202611/agent_hijack_dependability.md)
+- **BEAD:** [sase-1t2.11.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t2/sase-1t2.11.1.md)
 
 # Monitor hijack adapter
 
