@@ -1,200 +1,183 @@
 ---
 tier: epic
-title: "Agent Hijack dependability: make v1 real, then hijack the agent, not the row"
+title: 'Agent Hijack dependability: make v1 real, then hijack the agent, not the row'
 goal: 'Pressing ,k (or the kill dialog''s h, or `sase agent hijack NAME`) on any local
   agent row, session container, or session name hijacks the session''s occupying turn
   when that is safe now, latches the hijack to the next safe hand-off when it is not,
   and otherwise answers with a precise reason and next action, never the generic "not
   eligible" toast. Ordinary running agent turns, --plan/--tale turns, retries, booting
   and WAITING/QUEUED turns that hold a numbered workspace, running monitor turns,
-  finalizing turns, staged hand-offs, monitor follow-ups, and executing gates are all
-  covered. A real-pipeline canary proves hijack then Continue works end to end, and
-  concurrent or crashed hijacks converge to exactly one operation and at most one
-  successor.
+  finalizing turns, staged hand-offs, monitor follow-ups, and executing gates are
+  all covered. A real-pipeline canary proves hijack then Continue works end to end,
+  and concurrent or crashed hijacks converge to exactly one operation and at most
+  one successor.
 
   '
 decisions:
   glossary_strand:
-    ask:
-      Update the Agent Hijack glossary strand so it describes session-level, latched,
+    ask: Update the Agent Hijack glossary strand so it describes session-level, latched,
       monitor, and waiting-turn hijacks?
     memory:
-      - glossary:agent-hijack
-    corrects:
-      An Agent Hijack stops a running agent turn while retaining its workspace claim,
-      agent node, and recovery evidence.
+    - glossary:agent-hijack
+    corrects: An Agent Hijack stops a running agent turn while retaining its workspace
+      claim, agent node, and recovery evidence.
     default: true
     answer: true
 phases:
-  - id: core_decision_v2
-    title:
-      "sase-core: eligibility decision v2, occupant selection, stop_blocked ledger state"
-    depends_on: []
-    size: medium
-    description:
-      "core_decision_v2: in sase-core, add the v2 eligibility facts/decision wires
-      (separate schema constant 2; mode immediate|latched|redirect|refused, code,
-      message, next_action, redirect_op), the occupant-selection function, and the
-      additive ledger fields plus the stop_blocked state and its events. Expose PyO3
-      bindings, add thin Python wrappers, and move sase's sase-core-revision.txt pin."
-  - id: meta_facts
-    title:
-      Keep the hijack capability stamp and read the model facts runners actually write
-    depends_on: []
-    size: small
-    description:
-      "meta_facts: fix D3 (runner_capabilities erased by directive extraction) with one
-      shared RUNNER_BOOT_META_KEYS tuple, a runner-side re-stamp, and an invariant test.
-      Fix D4 (wrong model-fact keys, float-only booted_at, monitor/gate classified from
-      live rows or never-written keys) using durable records and a fixture captured from
-      a real runner meta."
-  - id: snapshot_inventory
-    title: Snapshot discovery that sees real linked-repo metadata
-    depends_on: []
-    size: small
-    description:
-      "snapshot_inventory: make hijack stop/release snapshot discovery accept
-      dict-shaped LinkedRepoResolution entries and the opened_linked_workspaces.json and
-      opened_siblings.json markers by sharing one repository inventory with the commit
-      finalizer, with fixtures built from real launcher metadata."
-  - id: facts_resolver
-    title: One facts builder, occupant resolution, and `sase agent hijack --explain`
-    depends_on:
-      - core_decision_v2
-      - meta_facts
-    size: medium
-    description:
-      "facts_resolver: build one Python facts builder used by every hijack caller (no
-      hard-coded facts), resolve names, session names, and session containers to the
-      occupying member through the Rust occupant selection, and switch the stop
-      orchestrator to the v2 decision. Add `sase agent hijack -e/--explain NAME` and the
-      additive -j envelope keys, plus a screenshot-shaped fixture test."
-  - id: tui_ingress
-    title:
-      "TUI ingress uses the backend decision: precise toasts, container retargeting,
-      redirects"
-    depends_on:
-      - facts_resolver
-    size: medium
-    description:
-      "tui_ingress: replace agent_can_offer_hijack with an asynchronously cached backend
-      decision for the selected row; gate ,k, its footer chip, and the kill modal's h on
-      it; toast code + message + next action; run non-destructive redirects; mirror
-      hijack_record onto collapsed session rows; log refusal codes; add a TUI/backend
-      parity test."
-  - id: stop_txn
-    title: Transactional stop hardening and target-level dedup
-    depends_on:
-      - facts_resolver
-      - snapshot_inventory
-    size: medium
-    description:
-      "stop_txn: target-level dedup that returns the active operation, verified intent
-      persistence before any signal, pin restore on pre-signal abort, stop_blocked
-      custody plus bounded retry on partial stops, pidfd signalling on Linux,
-      stale-sweep reconciliation of abandoned requested/stopping records, and session
-      promotion so a sessionless stop can still Continue."
-  - id: canary
-    title: Real-pipeline hijack canary
-    depends_on:
-      - tui_ingress
-      - stop_txn
-    size: medium
-    description:
-      "canary: a fakey end-to-end test that launches through the normal pipeline
-      (anonymous workflow, real bootstrap, real directive extraction), asserts the real
-      loader row gets an immediate decision, hijacks through the TUI's own submission
-      path, asserts HIJACKED with the workspace held, runs Continue, and asserts the
-      successor settles in the same workspace."
-  - id: latch_core
-    title: Durable hijack latch at agent-turn hand-offs
-    depends_on:
-      - canary
-    size: large
-    description:
-      "latch_core: latched ledger state and events in sase-core; the decision returns
-      latched for finalizing turns and staged hand-offs; a Python latch store keyed by
-      target; runner checkpoints at staged-handoff adoption, run end (moot), and retry
-      boundaries; a pre- and post-spawn guard that the follow-up fallback chain cannot
-      swallow; dead-owner reconciliation; a bounded wait with an explicit force-now
-      path; CLI -c/--cancel and -n/--now; and the TUI pending overlay."
-  - id: waiter_branch
-    title: Hijack WAITING, QUEUED, and booting turns that hold a numbered workspace
-    depends_on:
-      - canary
-    size: medium
-    description:
-      "waiter_branch: allow WAITING/QUEUED/booting turns with a numbered claim
-      (terminate the parked runner, or take the processless branch when it is dead),
-      cancel the turn's own wait marker while waiters of it stay parked, redirect
-      claimless %wait turns to kill-and-edit with a reason, and make Continue relaunch a
-      turn that never reached its provider."
-  - id: gate_routing
-    title: Latch hijacks behind executing gates
-    depends_on:
-      - latch_core
-    size: small
-    description:
-      "gate_routing: a gate executing its selected option yields latched;
-      settle_gate_turn applies the latch after the commands settle and the decision is
-      recorded, suppresses and records the follow-up, and holds the workspace, never
-      replaying or reinterpreting the decision. Continue launches the recorded
-      follow-up."
-  - id: monitor_adapter
-    title: Monitor hijack adapter (closes the screenshot case)
-    depends_on:
-      - latch_core
-    size: large
-    description:
-      "monitor_adapter: running monitor turns become immediate through stop_monitor with
-      a hijack intent; the settlement funnel suppresses --next, holds the workspace, and
-      writes a hijacked done marker for proc-backed and legacy monitors; a settled
-      monitor with a pending follow-up latches. Recovery offers Continue (recorded
-      follow-up with untrusted partial output), Escalate, Re-run command, View, Shell,
-      and Dismiss."
-  - id: ops_polish
-    title: Doctor check, resolving watchdog, and remote referral tracking
-    depends_on:
-      - stop_txn
-      - tui_ingress
-    size: small
-    description:
-      "ops_polish: a `sase doctor` check for running agents lacking the hijack
-      capability, a watchdog that reconciles resolving records whose successor never
-      dispatches, and local tracking of remote hijack referrals so the mirror row shows
-      the request until the owner host reports an outcome."
-  - id: chaos
-    title: Boundary chaos test, crash convergence, and hand-off inventory guard
-    depends_on:
-      - gate_routing
-      - monitor_adapter
-      - waiter_branch
-    size: medium
-    description:
-      "chaos: a scripted fakey session (agent, sleep monitor, agent) that fires hijack
-      at every checkpoint and requires HIJACKED, latched, or a defined redirect, never a
-      generic refusal; crash-between-steps convergence tests; and a static guard test
-      that fails when a new successor-launch path lacks a latch checkpoint."
-  - id: land
-    title: Docs sweep, glossary strand, and final verification
-    depends_on:
-      - chaos
-      - ops_polish
-    size: small
-    description:
-      "land: reconcile the hijack Reference docs with the final behavior, update the
-      Agent Hijack glossary strand per the glossary_strand decision, run the final
-      check, and record deferred follow-ups."
+- id: core_decision_v2
+  title: 'sase-core: eligibility decision v2, occupant selection, stop_blocked ledger
+    state'
+  depends_on: []
+  size: medium
+  description: 'core_decision_v2: in sase-core, add the v2 eligibility facts/decision
+    wires (separate schema constant 2; mode immediate|latched|redirect|refused, code,
+    message, next_action, redirect_op), the occupant-selection function, and the additive
+    ledger fields plus the stop_blocked state and its events. Expose PyO3 bindings,
+    add thin Python wrappers, and move sase''s sase-core-revision.txt pin.'
+- id: meta_facts
+  title: Keep the hijack capability stamp and read the model facts runners actually
+    write
+  depends_on: []
+  size: small
+  description: 'meta_facts: fix D3 (runner_capabilities erased by directive extraction)
+    with one shared RUNNER_BOOT_META_KEYS tuple, a runner-side re-stamp, and an invariant
+    test. Fix D4 (wrong model-fact keys, float-only booted_at, monitor/gate classified
+    from live rows or never-written keys) using durable records and a fixture captured
+    from a real runner meta.'
+- id: snapshot_inventory
+  title: Snapshot discovery that sees real linked-repo metadata
+  depends_on: []
+  size: small
+  description: 'snapshot_inventory: make hijack stop/release snapshot discovery accept
+    dict-shaped LinkedRepoResolution entries and the opened_linked_workspaces.json
+    and opened_siblings.json markers by sharing one repository inventory with the
+    commit finalizer, with fixtures built from real launcher metadata.'
+- id: facts_resolver
+  title: One facts builder, occupant resolution, and `sase agent hijack --explain`
+  depends_on:
+  - core_decision_v2
+  - meta_facts
+  size: medium
+  description: 'facts_resolver: build one Python facts builder used by every hijack
+    caller (no hard-coded facts), resolve names, session names, and session containers
+    to the occupying member through the Rust occupant selection, and switch the stop
+    orchestrator to the v2 decision. Add `sase agent hijack -e/--explain NAME` and
+    the additive -j envelope keys, plus a screenshot-shaped fixture test.'
+- id: tui_ingress
+  title: 'TUI ingress uses the backend decision: precise toasts, container retargeting,
+    redirects'
+  depends_on:
+  - facts_resolver
+  size: medium
+  description: 'tui_ingress: replace agent_can_offer_hijack with an asynchronously
+    cached backend decision for the selected row; gate ,k, its footer chip, and the
+    kill modal''s h on it; toast code + message + next action; run non-destructive
+    redirects; mirror hijack_record onto collapsed session rows; log refusal codes;
+    add a TUI/backend parity test.'
+- id: stop_txn
+  title: Transactional stop hardening and target-level dedup
+  depends_on:
+  - facts_resolver
+  - snapshot_inventory
+  size: medium
+  description: 'stop_txn: target-level dedup that returns the active operation, verified
+    intent persistence before any signal, pin restore on pre-signal abort, stop_blocked
+    custody plus bounded retry on partial stops, pidfd signalling on Linux, stale-sweep
+    reconciliation of abandoned requested/stopping records, and session promotion
+    so a sessionless stop can still Continue.'
+- id: canary
+  title: Real-pipeline hijack canary
+  depends_on:
+  - tui_ingress
+  - stop_txn
+  size: medium
+  description: 'canary: a fakey end-to-end test that launches through the normal pipeline
+    (anonymous workflow, real bootstrap, real directive extraction), asserts the real
+    loader row gets an immediate decision, hijacks through the TUI''s own submission
+    path, asserts HIJACKED with the workspace held, runs Continue, and asserts the
+    successor settles in the same workspace.'
+- id: latch_core
+  title: Durable hijack latch at agent-turn hand-offs
+  depends_on:
+  - canary
+  size: large
+  description: 'latch_core: latched ledger state and events in sase-core; the decision
+    returns latched for finalizing turns and staged hand-offs; a Python latch store
+    keyed by target; runner checkpoints at staged-handoff adoption, run end (moot),
+    and retry boundaries; a pre- and post-spawn guard that the follow-up fallback
+    chain cannot swallow; dead-owner reconciliation; a bounded wait with an explicit
+    force-now path; CLI -c/--cancel and -n/--now; and the TUI pending overlay.'
+- id: waiter_branch
+  title: Hijack WAITING, QUEUED, and booting turns that hold a numbered workspace
+  depends_on:
+  - canary
+  size: medium
+  description: 'waiter_branch: allow WAITING/QUEUED/booting turns with a numbered
+    claim (terminate the parked runner, or take the processless branch when it is
+    dead), cancel the turn''s own wait marker while waiters of it stay parked, redirect
+    claimless %wait turns to kill-and-edit with a reason, and make Continue relaunch
+    a turn that never reached its provider.'
+- id: gate_routing
+  title: Latch hijacks behind executing gates
+  depends_on:
+  - latch_core
+  size: small
+  description: 'gate_routing: a gate executing its selected option yields latched;
+    settle_gate_turn applies the latch after the commands settle and the decision
+    is recorded, suppresses and records the follow-up, and holds the workspace, never
+    replaying or reinterpreting the decision. Continue launches the recorded follow-up.'
+- id: monitor_adapter
+  title: Monitor hijack adapter (closes the screenshot case)
+  depends_on:
+  - latch_core
+  size: large
+  description: 'monitor_adapter: running monitor turns become immediate through stop_monitor
+    with a hijack intent; the settlement funnel suppresses --next, holds the workspace,
+    and writes a hijacked done marker for proc-backed and legacy monitors; a settled
+    monitor with a pending follow-up latches. Recovery offers Continue (recorded follow-up
+    with untrusted partial output), Escalate, Re-run command, View, Shell, and Dismiss.'
+- id: ops_polish
+  title: Doctor check, resolving watchdog, and remote referral tracking
+  depends_on:
+  - stop_txn
+  - tui_ingress
+  size: small
+  description: 'ops_polish: a `sase doctor` check for running agents lacking the hijack
+    capability, a watchdog that reconciles resolving records whose successor never
+    dispatches, and local tracking of remote hijack referrals so the mirror row shows
+    the request until the owner host reports an outcome.'
+- id: chaos
+  title: Boundary chaos test, crash convergence, and hand-off inventory guard
+  depends_on:
+  - gate_routing
+  - monitor_adapter
+  - waiter_branch
+  size: medium
+  description: 'chaos: a scripted fakey session (agent, sleep monitor, agent) that
+    fires hijack at every checkpoint and requires HIJACKED, latched, or a defined
+    redirect, never a generic refusal; crash-between-steps convergence tests; and
+    a static guard test that fails when a new successor-launch path lacks a latch
+    checkpoint.'
+- id: land
+  title: Docs sweep, glossary strand, and final verification
+  depends_on:
+  - chaos
+  - ops_polish
+  size: small
+  description: 'land: reconcile the hijack Reference docs with the final behavior,
+    update the Agent Hijack glossary strand per the glossary_strand decision, run
+    the final check, and record deferred follow-ups.'
 proposed_by: bbugyi200.athena.1ct
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-15 20:00:00
 status: wip
+bead_id: sase-1t2
 ---
 
-- **PROMPT:**
-  [prompts/202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_hijack_dependability.md)
+- **PROMPT:** [prompts/202611/agent_hijack_dependability.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/agent_hijack_dependability.md)
+- **BEAD:** [sase-1t2](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t2/README.md)
 
 # Plan: Agent Hijack dependability
 
