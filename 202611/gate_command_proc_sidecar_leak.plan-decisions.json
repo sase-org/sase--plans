@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "ops_guard",
+      "kind": "toggle",
+      "ask": "Also make load_request ignore an inherited sidecar for a different operation?",
+      "why": "A mismatched env sidecar already always fails, so this closes the leak class",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
