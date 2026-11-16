@@ -1,48 +1,44 @@
 ---
 tier: epic
 title: Indexed agent name, session, clan, and dismissed-bundle resolution
-goal:
-  Preserve agent lookup results while removing archive-wide work from authoritative
+goal: Preserve agent lookup results while removing archive-wide work from authoritative
   hijack resolution and achieving warm resolution below one second on athena.
 parent_bead: sase-1t3.6
 phases:
-  - id: lookup-core
-    title: Targeted Rust artifact lookup queries and bounded recovery contract
-    size: medium
-    depends_on: []
-    description:
-      "lookup-core: add read-only, target-selective artifact queries, compatible lookup
-      projections, bounded unavailable-index recovery, PyO3 contracts, and focused
-      Rust/binding tests. Keep maintenance off the lookup path."
-  - id: named-bundles
-    title: Indexed named-agent and dismissed-bundle resolution
-    size: medium
-    depends_on:
-      - lookup-core
-    description:
-      "named-bundles: replace find_named_agent's full artifact scan and recursive
-      dismissed-bundle scan with Rust-backed exact name/workflow queries; maintain the
-      archive projection on writes and prove ranking and recovery parity."
-  - id: session-clans
-    title: Indexed session and clan resolution with hijack parity
-    size: medium
-    depends_on:
-      - lookup-core
-      - named-bundles
-    description:
-      "session-clans: replace session and clan archive enumeration with targeted Rust
-      queries and group resolution, preserve generation and archived-completion
-      semantics, and verify authoritative hijack resolution without archive scans."
+- id: lookup-core
+  title: Targeted Rust artifact lookup queries and bounded recovery contract
+  size: medium
+  depends_on: []
+  description: 'lookup-core: add read-only, target-selective artifact queries, compatible
+    lookup projections, bounded unavailable-index recovery, PyO3 contracts, and focused
+    Rust/binding tests. Keep maintenance off the lookup path.'
+- id: named-bundles
+  title: Indexed named-agent and dismissed-bundle resolution
+  size: medium
+  depends_on:
+  - lookup-core
+  description: 'named-bundles: replace find_named_agent''s full artifact scan and
+    recursive dismissed-bundle scan with Rust-backed exact name/workflow queries;
+    maintain the archive projection on writes and prove ranking and recovery parity.'
+- id: session-clans
+  title: Indexed session and clan resolution with hijack parity
+  size: medium
+  depends_on:
+  - lookup-core
+  - named-bundles
+  description: 'session-clans: replace session and clan archive enumeration with targeted
+    Rust queries and group resolution, preserve generation and archived-completion
+    semantics, and verify authoritative hijack resolution without archive scans.'
 proposed_by: bbugyi200.athena.sase-1t3.6
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-16 08:12:14
 status: wip
+bead_id: sase-1t3.6.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/indexed_agent_lookups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/indexed_agent_lookups.md)
-- **PARENT:**
-  [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/indexed_agent_lookups.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/indexed_agent_lookups.md)
+- **PARENT:** [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3.6.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.6.1.md)
 
 # Indexed agent lookups
 
