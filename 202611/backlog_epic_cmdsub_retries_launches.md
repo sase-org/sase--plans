@@ -1,70 +1,62 @@
 ---
 tier: epic
-title:
-  "Backlog epic 1: cmdsub safety, honest retries, durable chop launches, one beads.db
-  owner, triage owners"
-goal: "The five most important unowned task beads are fixed and closed: model output can
-  never run host $(cmd), host finalizer failures never re-run an agent, a scheduler stop
-  never silently drops a chop's launch batch, beads.db has one SQLite library owner per
-  process, and check-run triage attaches the owning task bead. The lander then continues
-  the backlog chain with the next five beads.
+title: 'Backlog epic 1: cmdsub safety, honest retries, durable chop launches, one
+  beads.db owner, triage owners'
+goal: 'The five most important unowned task beads are fixed and closed: model output
+  can never run host $(cmd), host finalizer failures never re-run an agent, a scheduler
+  stop never silently drops a chop''s launch batch, beads.db has one SQLite library
+  owner per process, and check-run triage attaches the owning task bead. The lander
+  then continues the backlog chain with the next five beads.
 
-  "
+  '
 phases:
-  - id: cmdsub
-    title: Model output never reaches host $(cmd) (sase-1sn)
-    depends_on: []
-    size: large
-    description:
-      "cmdsub: close every model-output and agent-writable channel into host command
-      substitution for human-launched workflows, keeping macro expansion and Jinja
-      semantics."
-  - id: retry_scope
-    title: Provider retry never re-runs an agent for a host finalizer failure (sase-1he)
-    depends_on:
-      - cmdsub
-    size: medium
-    description:
-      "retry_scope: type host finalizer and publish failures so provider retry patterns
-      never match them, while real provider 500s still retry."
-  - id: chop_launch
-    title: A scheduler stop never silently drops a chop's launch batch (sase-1c2)
-    depends_on:
-      - retry_scope
-    size: large
-    description:
-      "chop_launch: journal in-flight chop launch batches and resume them idempotently
-      after a scheduler or service-host stop, with visible notices."
-  - id: beads_db_owner
-    title: beads.db has one SQLite library owner per process (sase-1kp)
-    depends_on:
-      - chop_launch
-    size: large
-    description:
-      "beads_db_owner: remove the Rust lock-file and Python WAL-mirror collision on
-      beads.db per the mirror_fix decision, with a same-process repro test."
-  - id: triage_owners
-    title: Failure triage attaches the owning task bead (sase-1ha)
-    depends_on:
-      - beads_db_owner
-    size: large
-    description:
-      "triage_owners: root-cause and fix empty possible_owners in check-run triage so
-      exact node and location matches attach the open task bead."
+- id: cmdsub
+  title: Model output never reaches host $(cmd) (sase-1sn)
+  depends_on: []
+  size: large
+  description: 'cmdsub: close every model-output and agent-writable channel into host
+    command substitution for human-launched workflows, keeping macro expansion and
+    Jinja semantics.'
+- id: retry_scope
+  title: Provider retry never re-runs an agent for a host finalizer failure (sase-1he)
+  depends_on:
+  - cmdsub
+  size: medium
+  description: 'retry_scope: type host finalizer and publish failures so provider
+    retry patterns never match them, while real provider 500s still retry.'
+- id: chop_launch
+  title: A scheduler stop never silently drops a chop's launch batch (sase-1c2)
+  depends_on:
+  - retry_scope
+  size: large
+  description: 'chop_launch: journal in-flight chop launch batches and resume them
+    idempotently after a scheduler or service-host stop, with visible notices.'
+- id: beads_db_owner
+  title: beads.db has one SQLite library owner per process (sase-1kp)
+  depends_on:
+  - chop_launch
+  size: large
+  description: 'beads_db_owner: remove the Rust lock-file and Python WAL-mirror collision
+    on beads.db per the mirror_fix decision, with a same-process repro test.'
+- id: triage_owners
+  title: Failure triage attaches the owning task bead (sase-1ha)
+  depends_on:
+  - beads_db_owner
+  size: large
+  description: 'triage_owners: root-cause and fix empty possible_owners in check-run
+    triage so exact node and location matches attach the open task bead.'
 decisions:
   mirror_fix:
-    ask:
-      Fix sase-1kp by retiring Python's WAL mirror of beads.db, so the file has one
-      library owner?
+    ask: Fix sase-1kp by retiring Python's WAL mirror of beads.db, so the file has
+      one library owner?
     choices:
-      retire_mirror:
-        Python never opens beads.db; its two mirror reads move to the Rust store
-      dedicated_lock:
-        Rust locks a new dedicated file; needs a dual-lock rollout across sase versions
+      retire_mirror: Python never opens beads.db; its two mirror reads move to the
+        Rust store
+      dedicated_lock: Rust locks a new dedicated file; needs a dual-lock rollout across
+        sase versions
     default: retire_mirror
-    why:
-      Only two Python call sites remain, and no cross-version lock protocol has to
-      change
+    why: Only two Python call sites remain, and no cross-version lock protocol has
+      to change
     answer: retire_mirror
 proposed_by: bbugyi200.athena.1dg
 proposed_with: claude/opus
@@ -72,10 +64,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-17 11:19:24
 status: wip
+bead_id: sase-1tc
 ---
 
-- **PROMPT:**
-  [prompts/202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_cmdsub_retries_launches.md)
+- **PROMPT:** [prompts/202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_cmdsub_retries_launches.md)
+- **BEAD:** [sase-1tc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/README.md)
 
 # Backlog Epic 1: Model Output Never Runs Host Commands, Honest Retries, Durable Chop Launches, One beads.db Owner, and Triage Owners
 
