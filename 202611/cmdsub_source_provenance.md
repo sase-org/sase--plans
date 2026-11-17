@@ -1,47 +1,43 @@
 ---
 tier: epic
 title: Keep workflow data out of host command substitution
-goal:
-  Fix sase-1tc.1 and sase-1sn while preserving authored commands, macro expansion, and
-  Jinja value semantics.
+goal: Fix sase-1tc.1 and sase-1sn while preserving authored commands, macro expansion,
+  and Jinja value semantics.
 parent_bead: sase-1tc.1
 phases:
-  - id: source_policy
-    title: Rust-owned command substitution source policy
-    depends_on: []
-    size: medium
-    description:
-      "source_policy: implement typed provenance, command-span planning, Python binding,
-      and core/binding tests. Keep shell execution in Python and publish the containing
-      core revision through host completion."
-  - id: preprocessing
-    title: Evaluate authored commands before interpolating data
-    depends_on:
-      - source_policy
-    size: medium
-    description:
-      "preprocessing: implement source-aware Jinja rendering, explicit preprocessing
-      provenance, and macro argument/recursive expansion integration. Prove generated
-      data never reaches either command execution pass."
-  - id: workflow_routes
-    title: Preserve provenance across every workflow rendering route
-    depends_on:
-      - preprocessing
-    size: medium
-    description:
-      "workflow_routes: migrate all prompt rendering callers, remove context-value
-      placeholders, cover workflow and invocation boundaries, update templating
-      documentation, and produce the complete acceptance matrix."
+- id: source_policy
+  title: Rust-owned command substitution source policy
+  depends_on: []
+  size: medium
+  description: 'source_policy: implement typed provenance, command-span planning,
+    Python binding, and core/binding tests. Keep shell execution in Python and publish
+    the containing core revision through host completion.'
+- id: preprocessing
+  title: Evaluate authored commands before interpolating data
+  depends_on:
+  - source_policy
+  size: medium
+  description: 'preprocessing: implement source-aware Jinja rendering, explicit preprocessing
+    provenance, and macro argument/recursive expansion integration. Prove generated
+    data never reaches either command execution pass.'
+- id: workflow_routes
+  title: Preserve provenance across every workflow rendering route
+  depends_on:
+  - preprocessing
+  size: medium
+  description: 'workflow_routes: migrate all prompt rendering callers, remove context-value
+    placeholders, cover workflow and invocation boundaries, update templating documentation,
+    and produce the complete acceptance matrix.'
 proposed_by: bbugyi200.athena.sase-1tc.1
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-17 11:31:47
 status: wip
+bead_id: sase-1tc.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/cmdsub_source_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/cmdsub_source_provenance.md)
-- **PARENT:**
-  [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **PROMPT:** [prompts/202611/cmdsub_source_provenance.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/cmdsub_source_provenance.md)
+- **PARENT:** [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **BEAD:** [sase-1tc.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.1.1.md)
 
 # Keep workflow data out of host command substitution
 
