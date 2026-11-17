@@ -1,61 +1,56 @@
 ---
 tier: epic
 title: Slim agent list rows and bound retained snapshots
-goal:
-  Complete sase-1t3.10 with compact Rust list projections, selected-only detail
-  hydration, and one retained snapshot generation without changing visible agent
-  behavior.
+goal: Complete sase-1t3.10 with compact Rust list projections, selected-only detail
+  hydration, and one retained snapshot generation without changing visible agent behavior.
 parent_bead: sase-1t3.10
 phases:
-  - id: slim-core-contract
-    title: Add compact list contracts and Rust bindings
-    size: medium
-    depends_on: []
-    description:
-      "slim-core-contract: inventory list-required fields and add additive compact agent
-      list DTOs, index and source-scan projection entry points, and PyO3 bindings in
-      sase-core. Preserve selection, ordering, clan context, and completeness metadata;
-      prove parity and absence of nested full records."
-  - id: scalar-row-adapters
-    title: Decode compact rows and construct ordinary agents
-    size: medium
-    depends_on:
-      - slim-core-contract
-    description:
-      "scalar-row-adapters: advance the sase core source pin, add thin Python
-      compact-wire adapters, and construct done and running agent rows directly from
-      list facts with metadata and status parity. Keep production acquisition unchanged
-      until the workflow cutover phase completes the consumer set."
-  - id: workflow-list-cutover
-    title: Consume slim rows throughout TUI loading
-    size: medium
-    depends_on:
-      - scalar-row-adapters
-    description:
-      "workflow-list-cutover: adapt workflow and prompt-step rows, switch TUI indexed,
-      fallback, full-history, and delta acquisition to compact projections, and extend
-      selected-record hydration for all newly deferred fields. Preserve grouping, live
-      filters, row patching, and authoritative load-state semantics."
-  - id: bounded-retention
-    title: Bound snapshot and detail retention and measure the result
-    size: medium
-    depends_on:
-      - workflow-list-cutover
-    description:
-      "bounded-retention: retain one compact artifact snapshot generation, release
-      obsolete wire and detail payloads, add ownership regression tests, and record
-      comparable load and heap measurements. Prepare evidence for this child epic's land
-      agent to complete sase-1t3.10; do not close an ancestor as a phase worker."
+- id: slim-core-contract
+  title: Add compact list contracts and Rust bindings
+  size: medium
+  depends_on: []
+  description: 'slim-core-contract: inventory list-required fields and add additive
+    compact agent list DTOs, index and source-scan projection entry points, and PyO3
+    bindings in sase-core. Preserve selection, ordering, clan context, and completeness
+    metadata; prove parity and absence of nested full records.'
+- id: scalar-row-adapters
+  title: Decode compact rows and construct ordinary agents
+  size: medium
+  depends_on:
+  - slim-core-contract
+  description: 'scalar-row-adapters: advance the sase core source pin, add thin Python
+    compact-wire adapters, and construct done and running agent rows directly from
+    list facts with metadata and status parity. Keep production acquisition unchanged
+    until the workflow cutover phase completes the consumer set.'
+- id: workflow-list-cutover
+  title: Consume slim rows throughout TUI loading
+  size: medium
+  depends_on:
+  - scalar-row-adapters
+  description: 'workflow-list-cutover: adapt workflow and prompt-step rows, switch
+    TUI indexed, fallback, full-history, and delta acquisition to compact projections,
+    and extend selected-record hydration for all newly deferred fields. Preserve grouping,
+    live filters, row patching, and authoritative load-state semantics.'
+- id: bounded-retention
+  title: Bound snapshot and detail retention and measure the result
+  size: medium
+  depends_on:
+  - workflow-list-cutover
+  description: 'bounded-retention: retain one compact artifact snapshot generation,
+    release obsolete wire and detail payloads, add ownership regression tests, and
+    record comparable load and heap measurements. Prepare evidence for this child
+    epic''s land agent to complete sase-1t3.10; do not close an ancestor as a phase
+    worker.'
 proposed_by: bbugyi200.athena.sase-1t3.10
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-17 12:28:06
 status: wip
+bead_id: sase-1t3.10.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/slim_agent_list_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/slim_agent_list_rows.md)
-- **PARENT:**
-  [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/slim_agent_list_rows.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/slim_agent_list_rows.md)
+- **PARENT:** [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3.10.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.10.1.md)
 
 # Slim agent list rows and bound retained snapshots
 
