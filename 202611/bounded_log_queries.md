@@ -1,72 +1,66 @@
 ---
 tier: epic
 title: Bound retained log objects with targeted backend queries
-goal:
-  Complete sase-1t3.11 by removing project-wide Python log and index snapshots from TUI
-  queries while preserving results, attribution, freshness, and responsiveness.
+goal: Complete sase-1t3.11 by removing project-wide Python log and index snapshots
+  from TUI queries while preserving results, attribution, freshness, and responsiveness.
 parent_bead: sase-1t3.11
 phases:
-  - id: artifact_files
-    title: Stream artifact-file queries before Python conversion
-    size: medium
-    depends_on: []
-    description:
-      "artifact_files: replace the persistent full artifact-file index cache with
-      targeted Rust association queries, preserve full-reader compatibility, and prove
-      retention and result parity."
-  - id: memory_reads
-    title: Query memory-read history for the selected context
-    size: medium
-    depends_on:
-      - artifact_files
-    description:
-      "memory_reads: add the Rust streamed audit-query contract and memory decoder,
-      switch the memory lane to bounded results, and preserve schema and attribution
-      semantics."
-  - id: bead_touches
-    title: Restrict touch queries to exact actors and session aliases
-    size: medium
-    depends_on:
-      - memory_reads
-    description:
-      "bead_touches: identify the surviving touch owner, push actor matching into Rust,
-      remove full touch/view snapshots, and preserve legacy-view and session
-      attribution."
-  - id: artifact_reads
-    title: Reuse targeted audit queries for artifact-read history
-    size: medium
-    depends_on:
-      - bead_touches
-    description:
-      "artifact_reads: extend the audit-query contract to artifact events, remove the
-      full artifact-read snapshot, and prove event, ordering, and context parity."
-  - id: stranded_reports
-    title: Collect stranded facts and titles from one targeted snapshot
-    size: medium
-    depends_on:
-      - artifact_reads
-    description:
-      "stranded_reports: remeasure the indexed bead reader, eliminate repeated candidate
-      collection, and retain only the issue facts required by stranded reports."
-  - id: verify_retention
-    title: Verify combined heap retention and query costs
-    size: medium
-    depends_on:
-      - stranded_reports
-    description:
-      "verify_retention: integrate cache census coverage, compare retained objects and
-      query latency on fixed workloads, and prepare evidence for the child epic land
-      agent."
+- id: artifact_files
+  title: Stream artifact-file queries before Python conversion
+  size: medium
+  depends_on: []
+  description: 'artifact_files: replace the persistent full artifact-file index cache
+    with targeted Rust association queries, preserve full-reader compatibility, and
+    prove retention and result parity.'
+- id: memory_reads
+  title: Query memory-read history for the selected context
+  size: medium
+  depends_on:
+  - artifact_files
+  description: 'memory_reads: add the Rust streamed audit-query contract and memory
+    decoder, switch the memory lane to bounded results, and preserve schema and attribution
+    semantics.'
+- id: bead_touches
+  title: Restrict touch queries to exact actors and session aliases
+  size: medium
+  depends_on:
+  - memory_reads
+  description: 'bead_touches: identify the surviving touch owner, push actor matching
+    into Rust, remove full touch/view snapshots, and preserve legacy-view and session
+    attribution.'
+- id: artifact_reads
+  title: Reuse targeted audit queries for artifact-read history
+  size: medium
+  depends_on:
+  - bead_touches
+  description: 'artifact_reads: extend the audit-query contract to artifact events,
+    remove the full artifact-read snapshot, and prove event, ordering, and context
+    parity.'
+- id: stranded_reports
+  title: Collect stranded facts and titles from one targeted snapshot
+  size: medium
+  depends_on:
+  - artifact_reads
+  description: 'stranded_reports: remeasure the indexed bead reader, eliminate repeated
+    candidate collection, and retain only the issue facts required by stranded reports.'
+- id: verify_retention
+  title: Verify combined heap retention and query costs
+  size: medium
+  depends_on:
+  - stranded_reports
+  description: 'verify_retention: integrate cache census coverage, compare retained
+    objects and query latency on fixed workloads, and prepare evidence for the child
+    epic land agent.'
 proposed_by: bbugyi200.athena.sase-1t3.11
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-17 12:30:46
 status: wip
+bead_id: sase-1t3.11.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/bounded_log_queries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bounded_log_queries.md)
-- **PARENT:**
-  [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/bounded_log_queries.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/bounded_log_queries.md)
+- **PARENT:** [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3.11.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.11.1.md)
 
 # Bound retained log objects with targeted backend queries
 
