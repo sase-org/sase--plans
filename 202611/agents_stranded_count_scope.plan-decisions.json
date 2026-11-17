@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "backlog_hint",
+      "kind": "choice",
+      "ask": "Should the Agents tab still point at stranded beads that have no loaded agent row?",
+      "why": "Keeps the always-visible strip honest while still leading to the backlog on demand",
+      "choices": [
+        {
+          "key": "toast",
+          "label": "Only the ,j triple-miss toast names the project-wide count and where to find it"
+        },
+        {
+          "key": "strip",
+          "label": "The info strip also appends a dim `+N in Beads` suffix when a backlog exists"
+        },
+        {
+          "key": "silent",
+          "label": "The Agents tab never mentions unsurfaced stranded beads; only the Beads pane counts them"
+        }
+      ],
+      "default": "toast",
+      "effective_default": "toast",
+      "requested_verified": false
+    },
+    {
+      "id": "beads_filter",
+      "kind": "toggle",
+      "ask": "Add a `status:stranded` filter to the Beads pane so the stranded backlog can be listed?",
+      "why": "Without it the ~140 legacy stranded beads have no worklist anywhere in the TUI",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
