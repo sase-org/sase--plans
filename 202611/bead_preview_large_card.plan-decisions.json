@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "height_mode",
+      "kind": "choice",
+      "ask": "Should a short bead get a shorter card that grows with its content up to the large frame?",
+      "why": "Matches the K file-preview panel's large baseline frame and stays CSS-only.",
+      "choices": [
+        {
+          "key": "fixed",
+          "label": "Every bead fills the large frame; short beads show empty rows above a pinned footer"
+        },
+        {
+          "key": "fit",
+          "label": "Short beads stay short, long ones grow to the same max; adds a small Python resize hook"
+        }
+      ],
+      "default": "fixed",
+      "effective_default": "fixed",
+      "requested_verified": false
+    }
+  ]
+}
