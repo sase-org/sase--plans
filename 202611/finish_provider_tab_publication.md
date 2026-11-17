@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Finish provider-tab publication and close its epic
-goal:
-  Repair the remaining snapshot and publication defects, verify the approved acceptance
+goal: Repair the remaining snapshot and publication defects, verify the approved acceptance
   criteria, and close sase-1t3.7.1 and its parent phase sase-1t3.7.
 size: medium
 proposed_by: bbugyi200.athena.sase-1t3.7.1.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1t3.7.1
-create_time: 2026-11-16 18:01:23
-status: wip
+status: done
 ---
 
 - **PARENT:**
