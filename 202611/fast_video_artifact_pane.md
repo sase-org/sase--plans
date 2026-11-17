@@ -1,93 +1,86 @@
 ---
 tier: epic
 title: Fast inspect-first video artifacts in the tmux viewer pane
-goal: "Opening a video artifact from the Agents tab inside tmux shows a useful frame in
-  about half a second (always under 1 s) over SSH. It never garbles pane titles or lags
-  tmux or the SASE TUI. The user can scrub frames, play motion where the topology
-  supports it, or hand off to a native player. The fixed per-open launch tax is gone for
-  every artifact kind.
+goal: 'Opening a video artifact from the Agents tab inside tmux shows a useful frame
+  in about half a second (always under 1 s) over SSH. It never garbles pane titles
+  or lags tmux or the SASE TUI. The user can scrub frames, play motion where the topology
+  supports it, or hand off to a native player. The fixed per-open launch tax is gone
+  for every artifact kind.
 
-  "
+  '
 phases:
-  - id: tmux-still-hotfix
-    title: Stop launching mpv in tmux; show a still frame plus metadata
-    depends_on: []
-    size: medium
-    description:
-      "tmux-still-hotfix: inside tmux with a kitty VO, render an ffmpeg still plus
-      ffprobe metadata through kitten icat instead of mpv. Make missing tools non-fatal,
-      add ffmpeg/ffprobe doctor rows, fix the Video Preview docs, and ship the pty+tmux
-      regression probe."
-  - id: viewer-child-startup
-    title: Trim the viewer child's startup tax
-    depends_on: []
-    size: small
-    description:
-      "viewer-child-startup: pass the parent's resolved video config to the pane child
-      through an env snapshot, lazy-import markdown_pdf, replace the clear subprocess
-      with ANSI, add the child-side trace helper, and measure and fix kitten icat
-      detection cost inside tmux."
-  - id: async-pane-launch
-    title: Move tmux split and decoration off the Textual UI thread
-    depends_on:
-      - viewer-child-startup
-    size: medium
-    description:
-      "async-pane-launch: launch the tmux split and pane decoration in a pump-free
-      worker with an explicit launch context and bounded tmux timeouts. Show an opening
-      state, show a VCS-materialization progress toast, and emit parent-side open spans
-      correlated with the child."
-  - id: video-frame-cache
-    title: Persistent frame, scrub-track, and storyboard cache
-    depends_on:
-      - tmux-still-hotfix
-    size: medium
-    description:
-      "video-frame-cache: add the ffmpeg-backed frame service. It does exact-frame
-      extraction, a low-priority background scrub track, a decile storyboard composed
-      with Pillow, and a content-digest-keyed bounded cache with atomic writes and
-      cancellation."
-  - id: inspect-scrubber
-    title: Inspect-first video view with scrubbing keys
-    depends_on:
-      - video-frame-cache
-      - viewer-child-startup
-    size: medium
-    description:
-      "inspect-scrubber: replace the video branch with an inspect view. It shows the
-      frame, a storyboard strip, and a status line. Keys: h/l and arrows to step, ','
-      and '.' for single frames, 0-9 for deciles, s for storyboard, space to play. Add a
-      nonblocking escape-aware key reader, step coalescing, stable kitty image ids,
-      spans, docs, and a probe extension."
-  - id: motion-handoff
-    title: Motion backends, native handoff, and audio semantics
-    depends_on:
-      - inspect-scrubber
-    size: medium
-    description:
-      "motion-handoff: add the backend and open_command config keys. mpv runs in-pane
-      only where it can render, with sw-fast, a probed shm flag, and --audio=no. The o
-      key hands off to a native or configured player. Add degraded banners and a
-      motion_start span, update docs and config reference, and record the deferred
-      follow-ups."
-  - id: non-kitty-fallback
-    title: Cell-preview fallback for terminals without kitty graphics
-    depends_on:
-      - motion-handoff
-    size: small
-    description:
-      "non-kitty-fallback: detect kitty-graphics capability from the terminal name,
-      using tmux's client_termname inside tmux. Otherwise render the current frame with
-      the existing Unicode cell renderer plus metadata, and fall back the same way when
-      kitten icat fails."
+- id: tmux-still-hotfix
+  title: Stop launching mpv in tmux; show a still frame plus metadata
+  depends_on: []
+  size: medium
+  description: 'tmux-still-hotfix: inside tmux with a kitty VO, render an ffmpeg still
+    plus ffprobe metadata through kitten icat instead of mpv. Make missing tools non-fatal,
+    add ffmpeg/ffprobe doctor rows, fix the Video Preview docs, and ship the pty+tmux
+    regression probe.'
+- id: viewer-child-startup
+  title: Trim the viewer child's startup tax
+  depends_on: []
+  size: small
+  description: 'viewer-child-startup: pass the parent''s resolved video config to
+    the pane child through an env snapshot, lazy-import markdown_pdf, replace the
+    clear subprocess with ANSI, add the child-side trace helper, and measure and fix
+    kitten icat detection cost inside tmux.'
+- id: async-pane-launch
+  title: Move tmux split and decoration off the Textual UI thread
+  depends_on:
+  - viewer-child-startup
+  size: medium
+  description: 'async-pane-launch: launch the tmux split and pane decoration in a
+    pump-free worker with an explicit launch context and bounded tmux timeouts. Show
+    an opening state, show a VCS-materialization progress toast, and emit parent-side
+    open spans correlated with the child.'
+- id: video-frame-cache
+  title: Persistent frame, scrub-track, and storyboard cache
+  depends_on:
+  - tmux-still-hotfix
+  size: medium
+  description: 'video-frame-cache: add the ffmpeg-backed frame service. It does exact-frame
+    extraction, a low-priority background scrub track, a decile storyboard composed
+    with Pillow, and a content-digest-keyed bounded cache with atomic writes and cancellation.'
+- id: inspect-scrubber
+  title: Inspect-first video view with scrubbing keys
+  depends_on:
+  - video-frame-cache
+  - viewer-child-startup
+  size: medium
+  description: 'inspect-scrubber: replace the video branch with an inspect view. It
+    shows the frame, a storyboard strip, and a status line. Keys: h/l and arrows to
+    step, '','' and ''.'' for single frames, 0-9 for deciles, s for storyboard, space
+    to play. Add a nonblocking escape-aware key reader, step coalescing, stable kitty
+    image ids, spans, docs, and a probe extension.'
+- id: motion-handoff
+  title: Motion backends, native handoff, and audio semantics
+  depends_on:
+  - inspect-scrubber
+  size: medium
+  description: 'motion-handoff: add the backend and open_command config keys. mpv
+    runs in-pane only where it can render, with sw-fast, a probed shm flag, and --audio=no.
+    The o key hands off to a native or configured player. Add degraded banners and
+    a motion_start span, update docs and config reference, and record the deferred
+    follow-ups.'
+- id: non-kitty-fallback
+  title: Cell-preview fallback for terminals without kitty graphics
+  depends_on:
+  - motion-handoff
+  size: small
+  description: 'non-kitty-fallback: detect kitty-graphics capability from the terminal
+    name, using tmux''s client_termname inside tmux. Otherwise render the current
+    frame with the existing Unicode cell renderer plus metadata, and fall back the
+    same way when kitten icat fails.'
 proposed_by: bbugyi200.athena.1di
 proposed_with: claude/opus
 create_time: 2026-11-17 11:16:30
 status: wip
+bead_id: sase-1tb
 ---
 
-- **PROMPT:**
-  [prompts/202611/fast_video_artifact_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/fast_video_artifact_pane.md)
+- **PROMPT:** [prompts/202611/fast_video_artifact_pane.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/fast_video_artifact_pane.md)
+- **BEAD:** [sase-1tb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tb/README.md)
 
 # Plan: Fast inspect-first video artifacts in the tmux viewer pane
 
