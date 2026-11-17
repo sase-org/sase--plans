@@ -172,7 +172,7 @@ proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-15 20:00:00
-status: wip
+status: done
 bead_id: sase-1t2
 ---
 
