@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "mirror_fix",
+      "kind": "choice",
+      "ask": "Fix sase-1kp by retiring Python's WAL mirror of beads.db, so the file has one library owner?",
+      "why": "Only two Python call sites remain, and no cross-version lock protocol has to change",
+      "choices": [
+        {
+          "key": "retire_mirror",
+          "label": "Python never opens beads.db; its two mirror reads move to the Rust store"
+        },
+        {
+          "key": "dedicated_lock",
+          "label": "Rust locks a new dedicated file; needs a dual-lock rollout across sase versions"
+        }
+      ],
+      "default": "retire_mirror",
+      "effective_default": "retire_mirror",
+      "requested_verified": false
+    }
+  ]
+}
