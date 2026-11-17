@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Finish provider-tab publication and close its epic
-goal: Repair the remaining snapshot and publication defects, verify the approved acceptance
+goal:
+  Repair the remaining snapshot and publication defects, verify the approved acceptance
   criteria, and close sase-1t3.7.1 and its parent phase sase-1t3.7.
 size: medium
 proposed_by: bbugyi200.athena.sase-1t3.7.1.land
@@ -14,6 +15,11 @@ status: done
   [202611/provider_tab_generation.md](https://github.com/sase-org/sase--plans/blob/main/202611/provider_tab_generation.md)
 - **BEAD:**
   [sase-1t3.7.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.7.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1t3.7.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1t3.7.1.land.md)
+- **COMMITS:**
+  - [f7a5604](https://github.com/sase-org/sase--plans/commit/f7a56045db1ca8a5398c6bd609a570fe1df9b327)
+    — docs(plans): mark provider-tab generation and finish tale done
 
 # Finish provider-tab publication and close its epic
 
