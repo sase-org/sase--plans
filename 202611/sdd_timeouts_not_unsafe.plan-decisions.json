@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "escalate_repeated_timeouts",
+      "kind": "choice",
+      "ask": "Should a clone whose integration keeps timing out still reach the axe error digest eventually?",
+      "why": "git-op telemetry already logs every timeout; the digest should stay actionable",
+      "choices": [
+        {
+          "key": "never",
+          "label": "Timeouts only log; the digest stays quiet even if one clone times out every tick"
+        },
+        {
+          "key": "streak",
+          "label": "Report once after 3 wall-clock timeouts in 30+ minutes, worded \"timed out repeatedly\""
+        }
+      ],
+      "default": "never",
+      "effective_default": "never",
+      "requested_verified": false
+    }
+  ]
+}
