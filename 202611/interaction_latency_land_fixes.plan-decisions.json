@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "parent_close",
+      "kind": "choice",
+      "ask": "Should the closeout close parent phase sase-1t3.13 once this tale's fixes land and the epic closes?",
+      "why": "The 2.3-2.9 s deep copy is gone; the leftover shallow copy predates the epic (sase-1tt)",
+      "choices": [
+        {
+          "key": "close",
+          "label": "Close sase-1t3.13 now and leave targeted per-row copies to task sase-1tt"
+        },
+        {
+          "key": "hold",
+          "label": "Keep sase-1t3.13 open, blocked on sase-1tt; soak phase sase-1t3.14 keeps waiting"
+        }
+      ],
+      "default": "close",
+      "effective_default": "close",
+      "requested_verified": false
+    }
+  ]
+}
