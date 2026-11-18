@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "self_heal",
+      "kind": "choice",
+      "ask": "Should j/k also self-heal a focused panel whose painted row order drifted from the nav stops?",
+      "why": "One check per refresh cycle catches in-place writers nobody has found yet",
+      "choices": [
+        {
+          "key": "heal",
+          "label": "Compare painted order to stops on each stop-cache rebuild; force-rebuild on mismatch"
+        },
+        {
+          "key": "gates_only",
+          "label": "Rely only on the painted-snapshot gates and the hydration fix"
+        }
+      ],
+      "default": "heal",
+      "effective_default": "heal",
+      "requested_verified": false
+    }
+  ]
+}
