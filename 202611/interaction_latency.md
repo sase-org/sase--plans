@@ -1,67 +1,61 @@
 ---
 tier: epic
 title: Finish measured Agents interaction latency recovery
-goal:
-  Make selection, detail enrichment, and small roster updates responsive without
+goal: Make selection, detail enrichment, and small roster updates responsive without
   rebuilding or retaining unrelated agent data.
 parent_bead: sase-1t3.13
 phases:
-  - id: baseline
-    title: Measure the current interaction paths
-    size: medium
-    depends_on: []
-    description:
-      "baseline: capture comparable post-heap j/k, detail-selection, unread-jump,
-      runtime-tick, exact-delta-copy, and bead-warmup measurements; record the
-      environment and identify which existing optimizations already meet the scope."
-  - id: selection
-    title: Bound detail enrichment and preserve immediate selection
-    size: medium
-    depends_on:
-      - baseline
-    description:
-      "selection: preserve the existing immediate chrome and streamed lanes, bound
-      selection-driven enrichment, reuse stable per-agent lane content identities, and
-      verify j/k and comma-j remain highlight plus debounced-detail operations."
-  - id: visible-work
-    title: Limit periodic work to surfaced rows and relevant waiters
-    size: medium
-    depends_on:
-      - baseline
-    description:
-      "visible-work: share a viewport-aware row selection between runtime ticks and bead
-      warmup, retain wait-status correctness, and make stranded sweeps lazy; preserve
-      the existing Rust interval-union semantics and cache bounds."
-  - id: delta-copy
-    title: Detach only rows affected by exact artifact deltas
-    size: medium
-    depends_on:
-      - baseline
-    description:
-      "delta-copy: introduce a conservative exact-delta copy-on-write preparation path
-      that owns every mutated row and relationship while sharing untouched presentation
-      rows; preserve full-load and bounded-history semantics."
-  - id: integration
-    title: Verify combined latency and prepare parent-phase completion
-    size: medium
-    depends_on:
-      - selection
-      - visible-work
-      - delta-copy
-    description:
-      "integration: repeat the baseline workload on the combined changes, verify
-      responsiveness and graph isolation under interleaved refreshes, record evidence on
-      sase-1t3.13, and prepare completion for this child epic's land agent."
+- id: baseline
+  title: Measure the current interaction paths
+  size: medium
+  depends_on: []
+  description: 'baseline: capture comparable post-heap j/k, detail-selection, unread-jump,
+    runtime-tick, exact-delta-copy, and bead-warmup measurements; record the environment
+    and identify which existing optimizations already meet the scope.'
+- id: selection
+  title: Bound detail enrichment and preserve immediate selection
+  size: medium
+  depends_on:
+  - baseline
+  description: 'selection: preserve the existing immediate chrome and streamed lanes,
+    bound selection-driven enrichment, reuse stable per-agent lane content identities,
+    and verify j/k and comma-j remain highlight plus debounced-detail operations.'
+- id: visible-work
+  title: Limit periodic work to surfaced rows and relevant waiters
+  size: medium
+  depends_on:
+  - baseline
+  description: 'visible-work: share a viewport-aware row selection between runtime
+    ticks and bead warmup, retain wait-status correctness, and make stranded sweeps
+    lazy; preserve the existing Rust interval-union semantics and cache bounds.'
+- id: delta-copy
+  title: Detach only rows affected by exact artifact deltas
+  size: medium
+  depends_on:
+  - baseline
+  description: 'delta-copy: introduce a conservative exact-delta copy-on-write preparation
+    path that owns every mutated row and relationship while sharing untouched presentation
+    rows; preserve full-load and bounded-history semantics.'
+- id: integration
+  title: Verify combined latency and prepare parent-phase completion
+  size: medium
+  depends_on:
+  - selection
+  - visible-work
+  - delta-copy
+  description: 'integration: repeat the baseline workload on the combined changes,
+    verify responsiveness and graph isolation under interleaved refreshes, record
+    evidence on sase-1t3.13, and prepare completion for this child epic''s land agent.'
 proposed_by: bbugyi200.athena.sase-1t3.13
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-18 15:37:10
 status: wip
+bead_id: sase-1t3.13.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/interaction_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/interaction_latency.md)
-- **PARENT:**
-  [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **PROMPT:** [prompts/202611/interaction_latency.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/interaction_latency.md)
+- **PARENT:** [202611/tui_storm_trust_heap_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/tui_storm_trust_heap_recovery.md)
+- **BEAD:** [sase-1t3.13.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.13.1.md)
 
 # Finish measured Agents interaction latency recovery
 
