@@ -2,15 +2,14 @@
 tier: tale
 size: small
 title: Select touch rows while decoding, then close out sase-1t3.11.1
-goal:
-  The Rust touch member query keeps only claimed rows while it decodes the touch index,
-  so its transient memory no longer grows with all touches in the project. Then epic
-  sase-1t3.11.1 and its parent phase sase-1t3.11 are closed with verified evidence.
+goal: The Rust touch member query keeps only claimed rows while it decodes the touch
+  index, so its transient memory no longer grows with all touches in the project.
+  Then epic sase-1t3.11.1 and its parent phase sase-1t3.11 are closed with verified
+  evidence.
 proposed_by: bbugyi200.athena.sase-1t3.11.1.land
 proposed_with: claude/opus
 bead: sase-1t3.11.1
-create_time: 2026-11-18 02:48:19
-status: wip
+status: done
 ---
 
 - **PARENT:**
