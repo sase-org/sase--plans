@@ -1,66 +1,59 @@
 ---
 tier: epic
 title: Resume interrupted chop launch batches without duplicates
-goal:
-  Scheduler and service-host stops preserve every accepted chop launch, resume its
-  original identities once, and respect explicit clan cancellation.
+goal: Scheduler and service-host stops preserve every accepted chop launch, resume
+  its original identities once, and respect explicit clan cancellation.
 parent_bead: sase-1tc.3
 phases:
-  - id: journal
-    title: Define and persist the crash-safe chop batch contract
-    depends_on: []
-    size: medium
-    description:
-      "journal: implement Rust batch wire types and reconciliation rules, registered
-      PyO3 bindings, and a thin atomic Python store with process-safe ownership. See
-      Phase journal."
-  - id: ordinary_launch
-    title: Journal ordinary launches at each spawn boundary
-    depends_on:
-      - journal
-    size: medium
-    description:
-      "ordinary_launch: persist accepted concrete plans before dispatch and record
-      ordinary clan and standalone launches incrementally; add cooperative pause hooks
-      without changing ordinary launch semantics. See Phase ordinary_launch."
-  - id: typed_launch
-    title: Attach typed admission to the durable chop batch
-    depends_on:
-      - ordinary_launch
-    size: medium
-    description:
-      "typed_launch: link each batch to its existing typed admission bundle before
-      dispatch, reopen that bundle on replay, and distinguish scheduler pause from
-      permanent cancellation. See Phase typed_launch."
-  - id: recovery
-    title: Resume unfinished batches and honor clan kills
-    depends_on:
-      - typed_launch
-    size: medium
-    description:
-      "recovery: reconcile pending batches before routine guards, thread shutdown
-      through workers, preserve lifecycle and once-per state, record explicit clan
-      cancellation, and emit durable notices. See Phase recovery."
-  - id: acceptance
-    title: Prove process-stop recovery and record disposable acceptance
-    depends_on:
-      - recovery
-    size: medium
-    description:
-      "acceptance: exercise process-death windows, repeated restart, cancellation and
-      notification behavior with isolated subprocess tests, perform the disposable
-      stop/resume demonstration, and record evidence for sase-1tc.3. See Phase
-      acceptance."
+- id: journal
+  title: Define and persist the crash-safe chop batch contract
+  depends_on: []
+  size: medium
+  description: 'journal: implement Rust batch wire types and reconciliation rules,
+    registered PyO3 bindings, and a thin atomic Python store with process-safe ownership.
+    See Phase journal.'
+- id: ordinary_launch
+  title: Journal ordinary launches at each spawn boundary
+  depends_on:
+  - journal
+  size: medium
+  description: 'ordinary_launch: persist accepted concrete plans before dispatch and
+    record ordinary clan and standalone launches incrementally; add cooperative pause
+    hooks without changing ordinary launch semantics. See Phase ordinary_launch.'
+- id: typed_launch
+  title: Attach typed admission to the durable chop batch
+  depends_on:
+  - ordinary_launch
+  size: medium
+  description: 'typed_launch: link each batch to its existing typed admission bundle
+    before dispatch, reopen that bundle on replay, and distinguish scheduler pause
+    from permanent cancellation. See Phase typed_launch.'
+- id: recovery
+  title: Resume unfinished batches and honor clan kills
+  depends_on:
+  - typed_launch
+  size: medium
+  description: 'recovery: reconcile pending batches before routine guards, thread
+    shutdown through workers, preserve lifecycle and once-per state, record explicit
+    clan cancellation, and emit durable notices. See Phase recovery.'
+- id: acceptance
+  title: Prove process-stop recovery and record disposable acceptance
+  depends_on:
+  - recovery
+  size: medium
+  description: 'acceptance: exercise process-death windows, repeated restart, cancellation
+    and notification behavior with isolated subprocess tests, perform the disposable
+    stop/resume demonstration, and record evidence for sase-1tc.3. See Phase acceptance.'
 proposed_by: bbugyi200.athena.sase-1tc.3
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-17 19:16:06
 status: wip
+bead_id: sase-1tc.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/chop_launch_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/chop_launch_recovery.md)
-- **PARENT:**
-  [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **PROMPT:** [prompts/202611/chop_launch_recovery.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/chop_launch_recovery.md)
+- **PARENT:** [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **BEAD:** [sase-1tc.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.3.1.md)
 
 # Interrupted chop batches resume their original launches
 
