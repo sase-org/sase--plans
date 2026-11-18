@@ -1,29 +1,25 @@
 ---
 tier: epic
 title: Close the research report commit gap
-goal: "Every research-macro report lands in a checkout the host commits. A run that
+goal: 'Every research-macro report lands in a checkout the host commits. A run that
   writes into a checkout the commit finalizer does not scan is told so before it stops.
-  The ten reports already stranded in apollo's primary research checkouts get committed.
+  The ten reports already stranded in apollo''s primary research checkouts get committed.
 
-  "
+  '
 decisions:
   recovery:
-    ask:
-      How should the stranded apollo reports be handled once their copies are committed?
+    ask: How should the stranded apollo reports be handled once their copies are committed?
     choices:
-      commit_and_park:
-        Move apollo originals to a backup dir so apollo's fast-forward sync keeps
-        working
-      commit_only:
-        Leave apollo originals for you to delete after landing; sync stays blocked until
-        then
+      commit_and_park: Move apollo originals to a backup dir so apollo's fast-forward
+        sync keeps working
+      commit_only: Leave apollo originals for you to delete after landing; sync stays
+        blocked until then
     default: commit_and_park
     why: Parking keeps a backup and unblocks sync without deleting anything
     answer: commit_and_park
   artifact_create_guard:
-    ask:
-      How should sase artifact create -p react to a source in a checkout the host will
-      not commit?
+    ask: How should sase artifact create -p react to a source in a checkout the host
+      will not commit?
     choices:
       warn: Register as today and print one stderr warning naming the fix
       refuse: Exit nonzero and register nothing until the file is moved
@@ -31,43 +27,41 @@ decisions:
     why: The finalize-time check is the real safety net; a warning keeps the snapshot
     answer: warn
 phases:
-  - id: research-macro-paths
-    title: Resolve research paths at agent run time
-    depends_on: []
-    size: small
-    description:
-      "research-macro-paths: make the five research macros resolve the research checkout
-      through an agent-run sase repo open research instead of a launch-time sase repo
-      path substitution; update docs, add a regression test, and note the general
-      launch-time cwd hazard."
-  - id: unscanned-write-guard
-    title: Flag writes the commit finalizer cannot see
-    depends_on: []
-    size: medium
-    description:
-      "unscanned-write-guard: add a shared detector for run writes and registered
-      artifact sources that sit in checkouts the commit finalizer does not scan, and
-      surface it in sase final context, sase artifact create, and the /sase_final and
-      /sase_repo skills."
-  - id: stray-report-recovery
-    title: Recover stranded research reports from apollo
-    depends_on:
-      - research-macro-paths
-    size: small
-    description:
-      "stray-report-recovery: copy the untracked reports from apollo's primary research
-      checkouts into opened clones so the host commits them, then handle the originals
-      per the recovery decision."
+- id: research-macro-paths
+  title: Resolve research paths at agent run time
+  depends_on: []
+  size: small
+  description: 'research-macro-paths: make the five research macros resolve the research
+    checkout through an agent-run sase repo open research instead of a launch-time
+    sase repo path substitution; update docs, add a regression test, and note the
+    general launch-time cwd hazard.'
+- id: unscanned-write-guard
+  title: Flag writes the commit finalizer cannot see
+  depends_on: []
+  size: medium
+  description: 'unscanned-write-guard: add a shared detector for run writes and registered
+    artifact sources that sit in checkouts the commit finalizer does not scan, and
+    surface it in sase final context, sase artifact create, and the /sase_final and
+    /sase_repo skills.'
+- id: stray-report-recovery
+  title: Recover stranded research reports from apollo
+  depends_on:
+  - research-macro-paths
+  size: small
+  description: 'stray-report-recovery: copy the untracked reports from apollo''s primary
+    research checkouts into opened clones so the host commits them, then handle the
+    originals per the recovery decision.'
 proposed_by: bbugyi200.athena.1dz
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-18 11:26:24
 status: wip
+bead_id: sase-1tj
 ---
 
-- **PROMPT:**
-  [prompts/202611/research_commit_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/research_commit_gap.md)
+- **PROMPT:** [prompts/202611/research_commit_gap.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/research_commit_gap.md)
+- **BEAD:** [sase-1tj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tj/README.md)
 
 # Plan: Close the research report commit gap
 
