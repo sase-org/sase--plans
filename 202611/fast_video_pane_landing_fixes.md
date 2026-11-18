@@ -2,9 +2,10 @@
 tier: tale
 size: medium
 title: Finish and land the fast inspect-first video artifact epic (sase-1tb)
-goal: The inspect-first video view handles real key bursts, resize and zoom, large
-  files, idle panes, and kitten-less hosts correctly. The tmux probe and TUI import
-  budget pass on master. Epic sase-1tb is closed with its plan marked done.
+goal:
+  The inspect-first video view handles real key bursts, resize and zoom, large files,
+  idle panes, and kitten-less hosts correctly. The tmux probe and TUI import budget pass
+  on master. Epic sase-1tb is closed with its plan marked done.
 proposed_by: bbugyi200.athena.sase-1tb.land
 proposed_with: claude/opus
 bead: sase-1tb
@@ -15,6 +16,11 @@ status: done
   [202611/fast_video_artifact_pane.md](https://github.com/sase-org/sase--plans/blob/main/202611/fast_video_artifact_pane.md)
 - **BEAD:**
   [sase-1tb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tb/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1tb.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tb.land.md)
+- **COMMITS:**
+  - [61212be](https://github.com/sase-org/sase/commit/61212bee5ebb2cac251b575571dc2dec4df6d65a)
+    — fix(ace): land fast video inspect pane fixes for sase-1tb
 
 # Finish and land the fast inspect-first video artifact epic (sase-1tb)
 
