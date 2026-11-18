@@ -2,10 +2,10 @@
 tier: tale
 size: small
 title: Select touch rows while decoding, then close out sase-1t3.11.1
-goal: The Rust touch member query keeps only claimed rows while it decodes the touch
-  index, so its transient memory no longer grows with all touches in the project.
-  Then epic sase-1t3.11.1 and its parent phase sase-1t3.11 are closed with verified
-  evidence.
+goal:
+  The Rust touch member query keeps only claimed rows while it decodes the touch index,
+  so its transient memory no longer grows with all touches in the project. Then epic
+  sase-1t3.11.1 and its parent phase sase-1t3.11 are closed with verified evidence.
 proposed_by: bbugyi200.athena.sase-1t3.11.1.land
 proposed_with: claude/opus
 bead: sase-1t3.11.1
@@ -16,6 +16,11 @@ status: done
   [202611/bounded_log_queries.md](https://github.com/sase-org/sase--plans/blob/main/202611/bounded_log_queries.md)
 - **BEAD:**
   [sase-1t3.11.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.11.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1t3.11.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1t3.11.1.land.md)
+- **COMMITS:**
+  - [958e382](https://github.com/sase-org/sase--plans/commit/958e382253f6acb3de32531f3568d7ebe5134964)
+    — chore(plan): mark bounded log query epic complete
 
 # Select touch rows while decoding, then close out sase-1t3.11.1
 
