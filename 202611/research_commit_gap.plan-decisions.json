@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "recovery",
+      "kind": "choice",
+      "ask": "How should the stranded apollo reports be handled once their copies are committed?",
+      "why": "Parking keeps a backup and unblocks sync without deleting anything",
+      "choices": [
+        {
+          "key": "commit_and_park",
+          "label": "Move apollo originals to a backup dir so apollo's fast-forward sync keeps working"
+        },
+        {
+          "key": "commit_only",
+          "label": "Leave apollo originals for you to delete after landing; sync stays blocked until then"
+        }
+      ],
+      "default": "commit_and_park",
+      "effective_default": "commit_and_park",
+      "requested_verified": false
+    },
+    {
+      "id": "artifact_create_guard",
+      "kind": "choice",
+      "ask": "How should sase artifact create -p react to a source in a checkout the host will not commit?",
+      "why": "The finalize-time check is the real safety net; a warning keeps the snapshot",
+      "choices": [
+        {
+          "key": "warn",
+          "label": "Register as today and print one stderr warning naming the fix"
+        },
+        {
+          "key": "refuse",
+          "label": "Exit nonzero and register nothing until the file is moved"
+        }
+      ],
+      "default": "warn",
+      "effective_default": "warn",
+      "requested_verified": false
+    }
+  ]
+}
