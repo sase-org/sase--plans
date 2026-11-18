@@ -2,15 +2,13 @@
 tier: tale
 size: medium
 title: Finish command-substitution provenance and land sase-1tc.1.1
-goal:
-  Close the remaining provenance and Jinja regressions, remove this epic's eager startup
-  growth, verify the integrated routes, and close sase-1tc.1.1 and its parent phase
-  sase-1tc.1 normally.
+goal: Close the remaining provenance and Jinja regressions, remove this epic's eager
+  startup growth, verify the integrated routes, and close sase-1tc.1.1 and its parent
+  phase sase-1tc.1 normally.
 proposed_by: bbugyi200.athena.sase-1tc.1.1.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1tc.1.1
-create_time: 2026-11-17 17:08:59
-status: wip
+status: done
 ---
 
 - **PARENT:**
