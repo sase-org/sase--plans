@@ -1,14 +1,13 @@
 ---
 tier: tale
 title: Finish chop recovery safety and nested landing
-goal:
-  Repair four verified recovery gaps and close the verified chop recovery plan chain.
+goal: Repair four verified recovery gaps and close the verified chop recovery plan
+  chain.
 size: medium
 proposed_by: bbugyi200.athena.sase-1tc.3.1.6.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1tc.3.1.6
-create_time: 2026-11-18 16:11:25
-status: wip
+status: done
 ---
 
 - **PARENT:**
