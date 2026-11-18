@@ -1,8 +1,8 @@
 ---
 tier: tale
 title: Finish chop recovery safety and nested landing
-goal: Repair four verified recovery gaps and close the verified chop recovery plan
-  chain.
+goal:
+  Repair four verified recovery gaps and close the verified chop recovery plan chain.
 size: medium
 proposed_by: bbugyi200.athena.sase-1tc.3.1.6.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +14,11 @@ status: done
   [202611/chop_recovery_defects.md](https://github.com/sase-org/sase--plans/blob/main/202611/chop_recovery_defects.md)
 - **BEAD:**
   [sase-1tc.3.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.3.1.6.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1tc.3.1.6.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tc.3.1.6.land.md)
+- **COMMITS:**
+  - [9394c75](https://github.com/sase-org/sase--plans/commit/9394c750024cc6a0ce17635e85962ab3d3522fc4)
+    — docs(plans): mark chop recovery defects plan done
 
 # Finish chop recovery safety and land sase-1tc.3.1.6
 
