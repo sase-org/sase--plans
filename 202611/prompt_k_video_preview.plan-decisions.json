@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "jump_video",
+      "kind": "choice",
+      "ask": "Should `Ctrl+]` on a video path open it straight in the artifact viewer, the way it already does for images?",
+      "why": "Opening an mp4 in an editor is never useful, and the image branch shows the intended pattern",
+      "choices": [
+        {
+          "key": "viewer",
+          "label": "Ctrl+] opens videos directly in the artifact viewer's inspect view, matching images"
+        },
+        {
+          "key": "unchanged",
+          "label": "Ctrl+] keeps offering the tmux/editor action picker, which opens a binary mp4 in $EDITOR"
+        }
+      ],
+      "default": "viewer",
+      "effective_default": "viewer",
+      "requested_verified": false
+    }
+  ]
+}
