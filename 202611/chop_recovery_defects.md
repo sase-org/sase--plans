@@ -1,67 +1,59 @@
 ---
 tier: epic
 title: Make chop batch recovery correct against production evidence
-goal:
-  Interrupted chop batches resume exactly the missing members with real chop linkage, a
-  live owner or explicit clan kill always wins, and every hold, failure and episode is
-  visible.
+goal: Interrupted chop batches resume exactly the missing members with real chop linkage,
+  a live owner or explicit clan kill always wins, and every hold, failure and episode
+  is visible.
 parent_bead: sase-1tc.3.1
 phases:
-  - id: evidence
-    title:
-      Reconcile spawn evidence by run linkage and replay with the original launch
-      context
-    depends_on: []
-    size: medium
-    description:
-      "evidence: match chop-agent records by run and proposal index instead of cl_name,
-      classify foreign owners, replay with chop linkage env, origin, clan generation and
-      rewired waits, merge resumed launches into the original run, and make the test
-      fakes production-shaped. See Phase evidence."
-  - id: ownership
-    title: Single executor ownership, crossing cancellation and consistent claims
-    depends_on:
-      - evidence
-    size: medium
-    description:
-      "ownership: hold batch ownership during first-run ordinary and typed dispatch,
-      settle a launch that crosses a clan kill without failing the run, stop typed
-      dispatch on outer cancellation, keep once-per claims for journaled pending
-      members, and stop lifecycle finalization while any dispatch work remains. See
-      Phase ownership."
-  - id: visibility
-    title:
-      Visible holds, bounded retention, complete clan-kill coverage and per-episode
-      notices
-    depends_on:
-      - ownership
-    size: medium
-    description:
-      "visibility: surface every recovery hold and failure, stop silent per-tick retry
-      loops, retire settled manifests with run history, cancel every clan of a batch
-      from all TUI panel kill paths, and give each interruption/resume episode its own
-      durable notice. See Phase visibility."
-  - id: acceptance
-    title:
-      Re-prove recovery with production-shaped evidence and record corrected acceptance
-    depends_on:
-      - visibility
-    size: medium
-    description:
-      "acceptance: rerun the subprocess harness with real chop linkage records and name
-      registry evidence, add the routine/manual race and crossing-cancel cases, repeat
-      the disposable demonstration, and record corrected TASK RESOLVED evidence on
-      sase-1tc.3. See Phase acceptance."
+- id: evidence
+  title: Reconcile spawn evidence by run linkage and replay with the original launch
+    context
+  depends_on: []
+  size: medium
+  description: 'evidence: match chop-agent records by run and proposal index instead
+    of cl_name, classify foreign owners, replay with chop linkage env, origin, clan
+    generation and rewired waits, merge resumed launches into the original run, and
+    make the test fakes production-shaped. See Phase evidence.'
+- id: ownership
+  title: Single executor ownership, crossing cancellation and consistent claims
+  depends_on:
+  - evidence
+  size: medium
+  description: 'ownership: hold batch ownership during first-run ordinary and typed
+    dispatch, settle a launch that crosses a clan kill without failing the run, stop
+    typed dispatch on outer cancellation, keep once-per claims for journaled pending
+    members, and stop lifecycle finalization while any dispatch work remains. See
+    Phase ownership.'
+- id: visibility
+  title: Visible holds, bounded retention, complete clan-kill coverage and per-episode
+    notices
+  depends_on:
+  - ownership
+  size: medium
+  description: 'visibility: surface every recovery hold and failure, stop silent per-tick
+    retry loops, retire settled manifests with run history, cancel every clan of a
+    batch from all TUI panel kill paths, and give each interruption/resume episode
+    its own durable notice. See Phase visibility.'
+- id: acceptance
+  title: Re-prove recovery with production-shaped evidence and record corrected acceptance
+  depends_on:
+  - visibility
+  size: medium
+  description: 'acceptance: rerun the subprocess harness with real chop linkage records
+    and name registry evidence, add the routine/manual race and crossing-cancel cases,
+    repeat the disposable demonstration, and record corrected TASK RESOLVED evidence
+    on sase-1tc.3. See Phase acceptance.'
 proposed_by: bbugyi200.athena.sase-1tc.3.1.land
 proposed_with: claude/opus
 create_time: 2026-11-18 07:18:59
 status: wip
+bead_id: sase-1tc.3.1.6
 ---
 
-- **PROMPT:**
-  [prompts/202611/chop_recovery_defects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/chop_recovery_defects.md)
-- **PARENT:**
-  [202611/chop_launch_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/chop_launch_recovery.md)
+- **PROMPT:** [prompts/202611/chop_recovery_defects.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/chop_recovery_defects.md)
+- **PARENT:** [202611/chop_launch_recovery.md](https://github.com/sase-org/sase--plans/blob/main/202611/chop_launch_recovery.md)
+- **BEAD:** [sase-1tc.3.1.6](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.3.1.6.md)
 
 # Make chop batch recovery correct against production evidence
 
