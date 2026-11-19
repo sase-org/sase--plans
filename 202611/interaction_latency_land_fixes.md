@@ -1,20 +1,23 @@
 ---
 tier: tale
 title: Land fixes for epic sase-1t3.13.1 Agents interaction latency
-goal: Exact-delta share-back runs off the event loop with a consistent published graph,
-  bead-warmup follow-ups never drop, and epic sase-1t3.13.1 plus its parent phase
-  are closed out.
+goal:
+  Exact-delta share-back runs off the event loop with a consistent published graph,
+  bead-warmup follow-ups never drop, and epic sase-1t3.13.1 plus its parent phase are
+  closed out.
 size: medium
 decisions:
   parent_close:
-    ask: Should the closeout close parent phase sase-1t3.13 once this tale's fixes
-      land and the epic closes?
+    ask:
+      Should the closeout close parent phase sase-1t3.13 once this tale's fixes land and
+      the epic closes?
     choices:
       close: Close sase-1t3.13 now and leave targeted per-row copies to task sase-1tt
-      hold: Keep sase-1t3.13 open, blocked on sase-1tt; soak phase sase-1t3.14 keeps
-        waiting
+      hold:
+        Keep sase-1t3.13 open, blocked on sase-1tt; soak phase sase-1t3.14 keeps waiting
     default: close
-    why: The 2.3-2.9 s deep copy is gone; the leftover shallow copy predates the epic
+    why:
+      The 2.3-2.9 s deep copy is gone; the leftover shallow copy predates the epic
       (sase-1tt)
     answer: close
 proposed_by: bbugyi200.athena.sase-1t3.13.1.land
@@ -28,6 +31,11 @@ status: done
   [202611/interaction_latency.md](https://github.com/sase-org/sase--plans/blob/main/202611/interaction_latency.md)
 - **BEAD:**
   [sase-1t3.13.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1t3/sase-1t3.13.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1t3.13.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1t3.13.1.land.md)
+- **COMMITS:**
+  - [d152f20](https://github.com/sase-org/sase/commit/d152f200b294deabb84cac52b2e5d606a2017837)
+    — fix(ace): move exact-delta share-back off the UI loop
 
 # Land fixes for epic sase-1t3.13.1 (Agents interaction latency)
 
