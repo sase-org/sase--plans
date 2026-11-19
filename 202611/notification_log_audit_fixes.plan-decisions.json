@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "codex_bundle",
+      "kind": "choice",
+      "ask": "How should oversize provider instruction bundles get back under Codex's 32 KiB cap?",
+      "why": "Keeps the documented explicit channel without betting on undocumented Codex limits",
+      "choices": [
+        {
+          "key": "trim",
+          "label": "Shrink always-inlined content until every bundle fits; the cap stays 32 KiB"
+        },
+        {
+          "key": "raise",
+          "label": "Raise the cap only after a delivery test proves Codex accepts larger bundles"
+        }
+      ],
+      "default": "trim",
+      "effective_default": "trim",
+      "requested_verified": false
+    },
+    {
+      "id": "blocked_waiters",
+      "kind": "choice",
+      "ask": "What should happen to waiters whose root blocker has terminally failed?",
+      "why": "Expiring a waiter discards user-launched work, so keep a human in the loop",
+      "choices": [
+        {
+          "key": "offer",
+          "label": "The blocker notice gets a one-key expire action; waiters stay until a human acts"
+        },
+        {
+          "key": "auto",
+          "label": "Waiters expire automatically once their root blocker is terminally failed"
+        }
+      ],
+      "default": "offer",
+      "effective_default": "offer",
+      "requested_verified": false
+    },
+    {
+      "id": "held_heartbeat",
+      "kind": "toggle",
+      "ask": "Keep an hourly \"still held\" +1 on undismissed Workspace-held notices?",
+      "why": "Shows the hold is still live at one write per hour; dismissed rows never tick",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
