@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "stall_history",
+      "kind": "choice",
+      "ask": "Should the rotated tui_stalls.jsonl keep at least 48 hours of rows instead of the sibling logs' 2 MiB cap?",
+      "why": "tui_stalls.jsonl is the acceptance metric, and 2 MiB holds only ~4 h of athena rows",
+      "choices": [
+        {
+          "key": "hours",
+          "label": "Size-rotate at a cap that holds 48 h of athena rows, and slim per-pause rows"
+        },
+        {
+          "key": "sibling",
+          "label": "Rotate at the siblings' 2 MiB cap; soaks over a few hours must copy the log out"
+        }
+      ],
+      "default": "hours",
+      "effective_default": "hours",
+      "requested_verified": false
+    }
+  ]
+}
