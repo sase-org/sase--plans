@@ -1,90 +1,82 @@
 ---
 tier: epic
 title: Honest disk attribution and an end to the held-workspace re-settlement loop
-goal:
-  Disk inventory reports unmeasured owners as unknown rather than 0 B, and measures
-  workspace roots before anything else. Pressure recovery runs whether or not
-  attribution is complete, and a missed target produces a distinct escalation. Held
-  workspaces settle once per evidence fingerprint. Their notices get a +1 only when
-  evidence changes, plus an hourly heartbeat on undismissed rows. The notification store
-  skips the rewrite for coalesced and dismissed-row +1s.
+goal: Disk inventory reports unmeasured owners as unknown rather than 0 B, and measures
+  workspace roots before anything else. Pressure recovery runs whether or not attribution
+  is complete, and a missed target produces a distinct escalation. Held workspaces
+  settle once per evidence fingerprint. Their notices get a +1 only when evidence
+  changes, plus an hourly heartbeat on undismissed rows. The notification store skips
+  the rewrite for coalesced and dismissed-row +1s.
 parent_bead: sase-1tz.1
 phases:
-  - id: store_guard
-    title: Coalesce identical +1s and stop rewriting the store for dismissed rows
-    description:
-      "store_guard: in sase-core, key-based +1s to dismissed rows become no-ops unless
-      the caller opts in, and identical +1s within a window coalesce. Neither path
-      rewrites the store or bumps its generation. Python adopts the new outcomes, and
-      the pin moves."
-    size: medium
-    depends_on: []
-  - id: held_settle
-    title: Settle held workspaces once per evidence fingerprint with change-only +1s
-    description:
-      "held_settle: persist an evidence fingerprint and a cheap stat signature with the
-      retention record. Later stale-running cleanup passes over unchanged evidence then
-      skip git probes, snapshots, decision-sheet publishing, and +1s. Add the hourly
-      still-held heartbeat for undismissed rows."
-    size: medium
-    depends_on:
-      - store_guard
-  - id: starter_scope
-    title: Check that starter-inherited repo lists stay inside the monitor's workspace
-    description:
-      "starter_scope: verify whether closed sase-1rg.3 keeps starter-inherited repo
-      lists from probing another workspace. Fix the gap with a regression test if it
-      does not."
-    size: small
-    depends_on: []
-  - id: unknown_sizes
-    title: Represent unmeasured disk owners as unknown, never 0 B complete
-    description:
-      "unknown_sizes: the tree sizer returns measured, lower-bound, or unmeasured
-      results. The sase-core disk-inventory wire moves to v2 with a per-row size state,
-      unmeasured-owner reporting, and lower-bound totals. sase disk list renders unknown
-      sizes honestly, and the pin moves."
-    size: medium
-    depends_on: []
-  - id: owner_first
-    title: Measure workspace and owner roots first under their own budget
-    description:
-      "owner_first: workspace checkouts and owner roots are sized before managed-tmp
-      buckets and the stray walk, under a budget separate from the shared stray budget.
-      Record the sase-1bf.4 regression finding and the du tolerance measured on apollo
-      and athena."
-    size: medium
-    depends_on:
-      - unknown_sizes
-  - id: pressure_recovery
-    title: Recover first, name unmeasured owners, and escalate missed recovery targets
-    description:
-      "pressure_recovery: the disk_pressure chop reaps before collecting a fail-open
-      inventory. Its notice names unmeasured owners and uses an episode-scoped dedup
-      key. A missed recovery target produces a distinct escalation with the target,
-      reclaimed bytes, and blockers."
-    size: medium
-    depends_on:
-      - unknown_sizes
-      - store_guard
-  - id: standing_skips
-    title: Report repeated managed-tmp reaper skips as one standing state
-    description:
-      "standing_skips: the managed_tmp_reap chop keeps refusing to reap entries it
-      cannot fully inspect. It warns once when a skip appears or its reason changes, and
-      logs again when the skip clears, instead of warning every pass."
-    size: small
-    depends_on: []
+- id: store_guard
+  title: Coalesce identical +1s and stop rewriting the store for dismissed rows
+  description: 'store_guard: in sase-core, key-based +1s to dismissed rows become
+    no-ops unless the caller opts in, and identical +1s within a window coalesce.
+    Neither path rewrites the store or bumps its generation. Python adopts the new
+    outcomes, and the pin moves.'
+  size: medium
+  depends_on: []
+- id: held_settle
+  title: Settle held workspaces once per evidence fingerprint with change-only +1s
+  description: 'held_settle: persist an evidence fingerprint and a cheap stat signature
+    with the retention record. Later stale-running cleanup passes over unchanged evidence
+    then skip git probes, snapshots, decision-sheet publishing, and +1s. Add the hourly
+    still-held heartbeat for undismissed rows.'
+  size: medium
+  depends_on:
+  - store_guard
+- id: starter_scope
+  title: Check that starter-inherited repo lists stay inside the monitor's workspace
+  description: 'starter_scope: verify whether closed sase-1rg.3 keeps starter-inherited
+    repo lists from probing another workspace. Fix the gap with a regression test
+    if it does not.'
+  size: small
+  depends_on: []
+- id: unknown_sizes
+  title: Represent unmeasured disk owners as unknown, never 0 B complete
+  description: 'unknown_sizes: the tree sizer returns measured, lower-bound, or unmeasured
+    results. The sase-core disk-inventory wire moves to v2 with a per-row size state,
+    unmeasured-owner reporting, and lower-bound totals. sase disk list renders unknown
+    sizes honestly, and the pin moves.'
+  size: medium
+  depends_on: []
+- id: owner_first
+  title: Measure workspace and owner roots first under their own budget
+  description: 'owner_first: workspace checkouts and owner roots are sized before
+    managed-tmp buckets and the stray walk, under a budget separate from the shared
+    stray budget. Record the sase-1bf.4 regression finding and the du tolerance measured
+    on apollo and athena.'
+  size: medium
+  depends_on:
+  - unknown_sizes
+- id: pressure_recovery
+  title: Recover first, name unmeasured owners, and escalate missed recovery targets
+  description: 'pressure_recovery: the disk_pressure chop reaps before collecting
+    a fail-open inventory. Its notice names unmeasured owners and uses an episode-scoped
+    dedup key. A missed recovery target produces a distinct escalation with the target,
+    reclaimed bytes, and blockers.'
+  size: medium
+  depends_on:
+  - unknown_sizes
+  - store_guard
+- id: standing_skips
+  title: Report repeated managed-tmp reaper skips as one standing state
+  description: 'standing_skips: the managed_tmp_reap chop keeps refusing to reap entries
+    it cannot fully inspect. It warns once when a skip appears or its reason changes,
+    and logs again when the skip clears, instead of warning every pass.'
+  size: small
+  depends_on: []
 proposed_by: bbugyi200.athena.sase-1tz.1
 proposed_with: claude/opus
 create_time: 2026-11-19 07:28:38
 status: wip
+bead_id: sase-1tz.1.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/outage_disk_attribution_and_held_workspaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/outage_disk_attribution_and_held_workspaces.md)
-- **PARENT:**
-  [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **PROMPT:** [prompts/202611/outage_disk_attribution_and_held_workspaces.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/outage_disk_attribution_and_held_workspaces.md)
+- **PARENT:** [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **BEAD:** [sase-1tz.1.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.1.1.md)
 
 # Plan: Honest disk attribution and the held-workspace re-settlement loop
 
