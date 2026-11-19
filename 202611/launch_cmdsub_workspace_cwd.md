@@ -1,18 +1,15 @@
 ---
 tier: tale
 size: medium
-title:
-  Run launch-time macro commands inside the assigned workspace, then finish landing
+title: Run launch-time macro commands inside the assigned workspace, then finish landing
   sase-1tc
-goal:
-  For a launch whose workspace is already assigned, launch-time macro `$(cmd)` runs
-  inside that workspace again, as it did before efc66a420b. The sase-1tc backlog chain
-  then continues with a proposed next epic, and epic sase-1tc closes.
+goal: For a launch whose workspace is already assigned, launch-time macro `$(cmd)`
+  runs inside that workspace again, as it did before efc66a420b. The sase-1tc backlog
+  chain then continues with a proposed next epic, and epic sase-1tc closes.
 proposed_by: bbugyi200.athena.sase-1tc.land
 proposed_with: claude/opus
 bead: sase-1tc
-create_time: 2026-11-19 15:46:59
-status: wip
+status: done
 ---
 
 - **PARENT:**
