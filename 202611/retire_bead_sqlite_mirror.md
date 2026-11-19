@@ -1,7 +1,8 @@
 ---
 tier: tale
 title: Retire Python's beads.db mirror
-goal: Remove same-process SQLite lock loss by making Rust the sole owner of the beads.db
+goal:
+  Remove same-process SQLite lock loss by making Rust the sole owner of the beads.db
   lock file.
 size: medium
 proposed_by: bbugyi200.athena.sase-1tc.4
@@ -14,6 +15,11 @@ status: done
   [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
 - **BEAD:**
   [sase-1tc.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1tc.4](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tc.4.md)
+- **COMMITS:**
+  - [5b79f0f](https://github.com/sase-org/sase/commit/5b79f0f5e37237e07b48088c4079dc04082453e1)
+    — feat(beads): retire Python beads.db SQLite mirror
 
 # Retire Python's beads.db mirror for sase-1tc.4
 
