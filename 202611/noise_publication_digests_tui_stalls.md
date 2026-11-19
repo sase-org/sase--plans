@@ -1,178 +1,159 @@
 ---
 tier: epic
 title: Publication de-flap, truthful error digests, and TUI stall reduction
-goal:
-  agent_publication reports each (project, signature) cause once as a standing alert
-  with a true attempt count and backoff. Its drain does bounded, reusable work with a
-  cleanup that completes and leaves no scratch behind. Unrestorable prompt archives
-  reach an audited terminal state instead of staying quarantined forever. The scheduler
-  error ring and hourly digest group errors by signature, with durable true counts, a
-  truthful coverage interval, and pruned digest files. Policy-initiated TUI garbage
-  collections and sampled main-thread I/O no longer block the event loop for seconds,
-  and tui_stalls.jsonl stays bounded, untorn, and usable as the acceptance metric.
+goal: agent_publication reports each (project, signature) cause once as a standing
+  alert with a true attempt count and backoff. Its drain does bounded, reusable work
+  with a cleanup that completes and leaves no scratch behind. Unrestorable prompt
+  archives reach an audited terminal state instead of staying quarantined forever.
+  The scheduler error ring and hourly digest group errors by signature, with durable
+  true counts, a truthful coverage interval, and pruned digest files. Policy-initiated
+  TUI garbage collections and sampled main-thread I/O no longer block the event loop
+  for seconds, and tui_stalls.jsonl stays bounded, untorn, and usable as the acceptance
+  metric.
 parent_bead: sase-1tz.2
 decisions:
   stall_history:
-    ask:
-      Should the rotated tui_stalls.jsonl keep at least 48 hours of rows instead of the
-      sibling logs' 2 MiB cap?
+    ask: Should the rotated tui_stalls.jsonl keep at least 48 hours of rows instead
+      of the sibling logs' 2 MiB cap?
     choices:
-      hours:
-        Size-rotate at a cap that holds 48 h of athena rows, and slim per-pause rows
-      sibling:
-        Rotate at the siblings' 2 MiB cap; soaks over a few hours must copy the log out
+      hours: Size-rotate at a cap that holds 48 h of athena rows, and slim per-pause
+        rows
+      sibling: Rotate at the siblings' 2 MiB cap; soaks over a few hours must copy
+        the log out
     default: hours
-    why:
-      tui_stalls.jsonl is the acceptance metric, and 2 MiB holds only ~4 h of athena
+    why: tui_stalls.jsonl is the acceptance metric, and 2 MiB holds only ~4 h of athena
       rows
     answer: hours
 phases:
-  - id: error_groups
-    title: Group the scheduler error ring by signature with durable interval counts
-    description:
-      "error_groups: a sase-core normalizer turns error text into a stable signature.
-      append_error keeps a durable per-interval counter keyed by (routine, job,
-      signature) next to a signature-fair sample ring. Failed or corrupt writes are
-      counted and logged once instead of dropped."
-    size: medium
-    depends_on: []
-  - id: digest_render
-    title: Render one digest line per cause with true totals, coverage, and pruning
-    description:
-      "digest_render: the hourly digest snapshots and resets the interval counter
-      atomically. It renders one line per cause with count, first/last time, and a
-      sample under a true-total and coverage header, with no loss after downtime or a
-      crash. Digest files are pruned on a 30-day horizon."
-    size: medium
-    depends_on:
-      - error_groups
-  - id: pub_standing
-    title: Turn repeated publication failures into standing alerts with backoff
-    description:
-      "pub_standing: a sase-core decider keys publication failures by (project,
-      signature) and reports only opened, changed, escalated, and cleared transitions.
-      It backs off project-scoped failures. A standing store keeps true attempt counts
-      and first/last-seen times, and one notification per alert fires only on
-      transitions."
-    size: medium
-    depends_on:
-      - error_groups
-  - id: pub_cleanup
-    title:
-      Give drain cleanup a budget it can finish and sweep stranded publisher scratch
-    description:
-      "pub_cleanup: the drain reserves a cleanup window inside its timeout and records a
-      verifiable cleanup result. Stale .sase-v2-stage/.sase-v2-backup scratch is swept
-      under the publisher lock. Workspace retention stops treating agents-sync scratch
-      in the machine-wide agents sidecar as a run's stranded work."
-    size: medium
-    depends_on: []
-  - id: pub_inventory
-    title:
-      Bound inventory_build with reuse, an incremental history cache, and scoped queries
-    description:
-      "pub_inventory: build the hood inventory once per project per tick instead of once
-      per batch. Cache parsed primary-history trailers by HEAD and parse only new
-      commits. Scope index and dismissed-record queries to the requested hoods, and give
-      inventory_build its own deadline slice."
-    size: medium
-    depends_on:
-      - pub_standing
-      - pub_cleanup
-  - id: prompt_terminal
-    title: Keep deferred prompt sources alive and add an audited terminal state
-    description:
-      "prompt_terminal: find why deferred prompt sources vanish and close each gap so
-      durable obligations keep their bytes. Add a sase-core terminal outcome for
-      genuinely unreconstructable archives. It stops retries, releases pool protection
-      and any tied workspace hold, and leaves an audit record. It never counts as
-      success."
-    size: medium
-    depends_on:
-      - pub_cleanup
-  - id: pub_doctor
-    title: Make the publication doctor checks report standing and terminal state
-    description:
-      "pub_doctor: doctor's agent_publication_outbox check groups issues by (project,
-      signature) and reports audited terminal rows as settled, so the count stays flat
-      across ticks. Apply sase-1rb remedy (a): stale-only protection blocks are not a
-      WARN."
-    size: small
-    depends_on:
-      - pub_standing
-      - prompt_terminal
-  - id: stall_telemetry
-    title:
-      Rotate tui_stalls.jsonl, tolerate torn lines, and write fault headers only on
-      faults
-    description:
-      "stall_telemetry: tui_stalls.jsonl size-rotates through the shared bounded-append
-      helper and drops its non-atomic in-place prune. Every reader tolerates torn lines,
-      and long stalls get bounded stack re-samples. tui_faults.log gets a header only
-      when a fault actually happens."
-    size: medium
-    depends_on: []
-  - id: gc_policy
-    title: Stop policy-initiated garbage collections from blocking the loop for seconds
-    description:
-      "gc_policy: idle, backstop, and RSS-backstop collections stay bounded. The policy
-      re-freezes survivors, defers full collections while the process is swapping, and
-      cost-gates the backstops, while keeping the memory backstops. Before/after pause
-      stats are recorded by trigger."
-    size: medium
-    depends_on:
-      - stall_telemetry
-  - id: heap_retainers
-    title: Find and fix the top cyclic-garbage producers and heap retainers
-    description:
-      "heap_retainers: census the object types freed by idle full collections (up to 7M
-      objects each) and the types retained across them. Fix up to the top three measured
-      producers or retainers, and record allocated blocks, RSS, and collected counts
-      before and after."
-    size: medium
-    depends_on:
-      - gc_policy
-  - id: ui_io_offload
-    title: Move sampled synchronous filesystem work off the TUI main thread
-    description:
-      "ui_io_offload: move the launchable-MRU tick's stat and config-token peek, the
-      hijack roster's per-row realpath, and project-record listing behind pump-free
-      workers or freshness-token caches. This is the separate fix for apollo's low-GC
-      blocking-I/O stalls."
-    size: medium
-    depends_on: []
-  - id: ui_cpu_caches
-    title: Cache compiled query profiles and cut per-second clan runtime work
-    description:
-      "ui_cpu_caches: memoize compiled built-in pane query profiles and stop
-      re-serializing every clan member on each one-second runtime tick. Confirm the
-      removed agent_share_fingerprint has no live caller."
-    size: small
-    depends_on: []
-  - id: tui_acceptance
-    title: Measure the combined TUI result and settle the TUI task beads
-    description:
-      "tui_acceptance: run the TUI benches and a comparable soak, then record
-      before/after max GC pause, max stall, and peak RSS on sase-1tz.2. Close sase-1nc,
-      sase-1gf, or sase-lx only on demonstrated resolution."
-    size: small
-    depends_on:
-      - stall_telemetry
-      - gc_policy
-      - heap_retainers
-      - ui_io_offload
-      - ui_cpu_caches
+- id: error_groups
+  title: Group the scheduler error ring by signature with durable interval counts
+  description: 'error_groups: a sase-core normalizer turns error text into a stable
+    signature. append_error keeps a durable per-interval counter keyed by (routine,
+    job, signature) next to a signature-fair sample ring. Failed or corrupt writes
+    are counted and logged once instead of dropped.'
+  size: medium
+  depends_on: []
+- id: digest_render
+  title: Render one digest line per cause with true totals, coverage, and pruning
+  description: 'digest_render: the hourly digest snapshots and resets the interval
+    counter atomically. It renders one line per cause with count, first/last time,
+    and a sample under a true-total and coverage header, with no loss after downtime
+    or a crash. Digest files are pruned on a 30-day horizon.'
+  size: medium
+  depends_on:
+  - error_groups
+- id: pub_standing
+  title: Turn repeated publication failures into standing alerts with backoff
+  description: 'pub_standing: a sase-core decider keys publication failures by (project,
+    signature) and reports only opened, changed, escalated, and cleared transitions.
+    It backs off project-scoped failures. A standing store keeps true attempt counts
+    and first/last-seen times, and one notification per alert fires only on transitions.'
+  size: medium
+  depends_on:
+  - error_groups
+- id: pub_cleanup
+  title: Give drain cleanup a budget it can finish and sweep stranded publisher scratch
+  description: 'pub_cleanup: the drain reserves a cleanup window inside its timeout
+    and records a verifiable cleanup result. Stale .sase-v2-stage/.sase-v2-backup
+    scratch is swept under the publisher lock. Workspace retention stops treating
+    agents-sync scratch in the machine-wide agents sidecar as a run''s stranded work.'
+  size: medium
+  depends_on: []
+- id: pub_inventory
+  title: Bound inventory_build with reuse, an incremental history cache, and scoped
+    queries
+  description: 'pub_inventory: build the hood inventory once per project per tick
+    instead of once per batch. Cache parsed primary-history trailers by HEAD and parse
+    only new commits. Scope index and dismissed-record queries to the requested hoods,
+    and give inventory_build its own deadline slice.'
+  size: medium
+  depends_on:
+  - pub_standing
+  - pub_cleanup
+- id: prompt_terminal
+  title: Keep deferred prompt sources alive and add an audited terminal state
+  description: 'prompt_terminal: find why deferred prompt sources vanish and close
+    each gap so durable obligations keep their bytes. Add a sase-core terminal outcome
+    for genuinely unreconstructable archives. It stops retries, releases pool protection
+    and any tied workspace hold, and leaves an audit record. It never counts as success.'
+  size: medium
+  depends_on:
+  - pub_cleanup
+- id: pub_doctor
+  title: Make the publication doctor checks report standing and terminal state
+  description: 'pub_doctor: doctor''s agent_publication_outbox check groups issues
+    by (project, signature) and reports audited terminal rows as settled, so the count
+    stays flat across ticks. Apply sase-1rb remedy (a): stale-only protection blocks
+    are not a WARN.'
+  size: small
+  depends_on:
+  - pub_standing
+  - prompt_terminal
+- id: stall_telemetry
+  title: Rotate tui_stalls.jsonl, tolerate torn lines, and write fault headers only
+    on faults
+  description: 'stall_telemetry: tui_stalls.jsonl size-rotates through the shared
+    bounded-append helper and drops its non-atomic in-place prune. Every reader tolerates
+    torn lines, and long stalls get bounded stack re-samples. tui_faults.log gets
+    a header only when a fault actually happens.'
+  size: medium
+  depends_on: []
+- id: gc_policy
+  title: Stop policy-initiated garbage collections from blocking the loop for seconds
+  description: 'gc_policy: idle, backstop, and RSS-backstop collections stay bounded.
+    The policy re-freezes survivors, defers full collections while the process is
+    swapping, and cost-gates the backstops, while keeping the memory backstops. Before/after
+    pause stats are recorded by trigger.'
+  size: medium
+  depends_on:
+  - stall_telemetry
+- id: heap_retainers
+  title: Find and fix the top cyclic-garbage producers and heap retainers
+  description: 'heap_retainers: census the object types freed by idle full collections
+    (up to 7M objects each) and the types retained across them. Fix up to the top
+    three measured producers or retainers, and record allocated blocks, RSS, and collected
+    counts before and after.'
+  size: medium
+  depends_on:
+  - gc_policy
+- id: ui_io_offload
+  title: Move sampled synchronous filesystem work off the TUI main thread
+  description: 'ui_io_offload: move the launchable-MRU tick''s stat and config-token
+    peek, the hijack roster''s per-row realpath, and project-record listing behind
+    pump-free workers or freshness-token caches. This is the separate fix for apollo''s
+    low-GC blocking-I/O stalls.'
+  size: medium
+  depends_on: []
+- id: ui_cpu_caches
+  title: Cache compiled query profiles and cut per-second clan runtime work
+  description: 'ui_cpu_caches: memoize compiled built-in pane query profiles and stop
+    re-serializing every clan member on each one-second runtime tick. Confirm the
+    removed agent_share_fingerprint has no live caller.'
+  size: small
+  depends_on: []
+- id: tui_acceptance
+  title: Measure the combined TUI result and settle the TUI task beads
+  description: 'tui_acceptance: run the TUI benches and a comparable soak, then record
+    before/after max GC pause, max stall, and peak RSS on sase-1tz.2. Close sase-1nc,
+    sase-1gf, or sase-lx only on demonstrated resolution.'
+  size: small
+  depends_on:
+  - stall_telemetry
+  - gc_policy
+  - heap_retainers
+  - ui_io_offload
+  - ui_cpu_caches
 proposed_by: bbugyi200.athena.sase-1tz.2
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-11-19 11:13:24
 status: wip
+bead_id: sase-1tz.2.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/noise_publication_digests_tui_stalls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/noise_publication_digests_tui_stalls.md)
-- **PARENT:**
-  [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **PROMPT:** [prompts/202611/noise_publication_digests_tui_stalls.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/noise_publication_digests_tui_stalls.md)
+- **PARENT:** [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **BEAD:** [sase-1tz.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.2.1.md)
 
 # Plan: Publication de-flap, truthful error digests, and TUI stall reduction
 
