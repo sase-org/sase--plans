@@ -1,11 +1,13 @@
 ---
 tier: tale
 size: medium
-title: Run launch-time macro commands inside the assigned workspace, then finish landing
+title:
+  Run launch-time macro commands inside the assigned workspace, then finish landing
   sase-1tc
-goal: For a launch whose workspace is already assigned, launch-time macro `$(cmd)`
-  runs inside that workspace again, as it did before efc66a420b. The sase-1tc backlog
-  chain then continues with a proposed next epic, and epic sase-1tc closes.
+goal:
+  For a launch whose workspace is already assigned, launch-time macro `$(cmd)` runs
+  inside that workspace again, as it did before efc66a420b. The sase-1tc backlog chain
+  then continues with a proposed next epic, and epic sase-1tc closes.
 proposed_by: bbugyi200.athena.sase-1tc.land
 proposed_with: claude/opus
 bead: sase-1tc
@@ -16,6 +18,11 @@ status: done
   [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
 - **BEAD:**
   [sase-1tc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1tc.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tc.land.md)
+- **COMMITS:**
+  - [1910892](https://github.com/sase-org/sase/commit/1910892d92a399a780c4d5e19a6efcdff59a8605)
+    — fix(axe): preserve launcher cwd during workspace entry
 
 # Run Launch-Time Macro Commands Inside the Assigned Workspace, Then Finish Landing sase-1tc
 
