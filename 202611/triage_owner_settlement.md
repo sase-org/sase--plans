@@ -1,38 +1,36 @@
 ---
 tier: epic
 title: Attach triage owners after stage classification and bound candidate loading
-goal:
-  Complete sase-1tc.5 by preserving verdicts while attaching task owners to staged
+goal: Complete sase-1tc.5 by preserving verdicts while attaching task owners to staged
   failures, loading candidates efficiently, and proving the persisted CLI output.
 phases:
-  - id: owner_annotations
-    title: Attach owners at settlement without rewriting stage verdicts
-    depends_on: []
-    description:
-      "owner_annotations: fix the reproduced stage-before-settle loss in sase-core,
-      preserving classification and decision evidence while filling empty owner
-      annotations; add store and binding regressions."
-    size: medium
-  - id: candidate_projection
-    title: Project candidate fields in Rust and prove the full CLI path
-    depends_on:
-      - owner_annotations
-    description:
-      "candidate_projection: replace full Python task hydration with a narrow Rust
-      candidate query, retain existing budgets and diagnostics, and prove exact node and
-      file owners through a real isolated check, show, and failures command sequence."
-    size: medium
+- id: owner_annotations
+  title: Attach owners at settlement without rewriting stage verdicts
+  depends_on: []
+  description: 'owner_annotations: fix the reproduced stage-before-settle loss in
+    sase-core, preserving classification and decision evidence while filling empty
+    owner annotations; add store and binding regressions.'
+  size: medium
+- id: candidate_projection
+  title: Project candidate fields in Rust and prove the full CLI path
+  depends_on:
+  - owner_annotations
+  description: 'candidate_projection: replace full Python task hydration with a narrow
+    Rust candidate query, retain existing budgets and diagnostics, and prove exact
+    node and file owners through a real isolated check, show, and failures command
+    sequence.'
+  size: medium
 proposed_by: bbugyi200.athena.sase-1tc.5
 proposed_with: codex/gpt-6-astra
 parent_bead: sase-1tc.5
 create_time: 2026-11-19 09:15:27
 status: wip
+bead_id: sase-1tc.5.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/triage_owner_settlement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/triage_owner_settlement.md)
-- **PARENT:**
-  [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **PROMPT:** [prompts/202611/triage_owner_settlement.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/triage_owner_settlement.md)
+- **PARENT:** [202611/backlog_epic_cmdsub_retries_launches.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_cmdsub_retries_launches.md)
+- **BEAD:** [sase-1tc.5.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tc/sase-1tc.5.1.md)
 
 # Failure triage that retains the owning task bead
 
