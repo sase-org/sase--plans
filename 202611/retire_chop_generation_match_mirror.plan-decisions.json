@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "close_sase_1tm",
+      "kind": "choice",
+      "ask": "Once this cleanup lands and its regressions pass, close task sase-1tm as done?",
+      "why": "Its nodes pass with causal fixes on master; note",
+      "choices": [
+        {
+          "key": "close",
+          "label": "Close sase-1tm with commit and test evidence; its last open ask is this cleanup"
+        },
+        {
+          "key": "leave_open",
+          "label": "Only append an evidence note to sase-1tm and leave it for later triage"
+        }
+      ],
+      "default": "close",
+      "effective_default": "close",
+      "requested_verified": false
+    }
+  ]
+}
