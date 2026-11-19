@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "refusal_recovery",
+      "kind": "choice",
+      "ask": "Should a refused staged join also tell the agent how to keep its verification going?",
+      "why": "sase-1tc.4 retried the identical refused join twice, then ended with keep and stalled its epic",
+      "choices": [
+        {
+          "key": "hint",
+          "label": "Refusals print a re-wait and a fresh-monitor rerun; the monitor skill gets one sentence"
+        },
+        {
+          "key": "skip",
+          "label": "Only the identity bug is fixed; refusal text and skill source stay unchanged"
+        }
+      ],
+      "default": "hint",
+      "effective_default": "hint",
+      "requested_verified": false
+    }
+  ]
+}
