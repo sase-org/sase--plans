@@ -1,33 +1,33 @@
 ---
 tier: epic
 title: Fix the 13 ranked defects from the apollo/athena notification and log audit
-goal: "Disk pressure names the owners it could not measure, and recovery runs even when
-  attribution is incomplete. Held workspaces stop rewriting the notification store.
-  agent_publication and the error digest report each cause once, with true counts.
-  Measured TUI stalls shrink. The six targeted defects (prompt_prose wire, update races,
-  Telegram transport, Codex bundle cap, triage request-id retry, gateway WAL checkpoint)
-  are fixed. Notifications, logs, and state files follow their stated dedup and
-  retention rules on both hosts.
+goal: 'Disk pressure names the owners it could not measure, and recovery runs even
+  when attribution is incomplete. Held workspaces stop rewriting the notification
+  store. agent_publication and the error digest report each cause once, with true
+  counts. Measured TUI stalls shrink. The six targeted defects (prompt_prose wire,
+  update races, Telegram transport, Codex bundle cap, triage request-id retry, gateway
+  WAL checkpoint) are fixed. Notifications, logs, and state files follow their stated
+  dedup and retention rules on both hosts.
 
-  "
+  '
 decisions:
   codex_bundle:
-    ask:
-      How should oversize provider instruction bundles get back under Codex's 32 KiB
-      cap?
+    ask: How should oversize provider instruction bundles get back under Codex's 32
+      KiB cap?
     choices:
-      trim: Shrink always-inlined content until every bundle fits; the cap stays 32 KiB
-      raise:
-        Raise the cap only after a delivery test proves Codex accepts larger bundles
+      trim: Shrink always-inlined content until every bundle fits; the cap stays 32
+        KiB
+      raise: Raise the cap only after a delivery test proves Codex accepts larger
+        bundles
     default: trim
-    why:
-      Keeps the documented explicit channel without betting on undocumented Codex limits
+    why: Keeps the documented explicit channel without betting on undocumented Codex
+      limits
     answer: trim
   blocked_waiters:
     ask: What should happen to waiters whose root blocker has terminally failed?
     choices:
-      offer:
-        The blocker notice gets a one-key expire action; waiters stay until a human acts
+      offer: The blocker notice gets a one-key expire action; waiters stay until a
+        human acts
       auto: Waiters expire automatically once their root blocker is terminally failed
     default: offer
     why: Expiring a waiter discards user-launched work, so keep a human in the loop
@@ -35,63 +35,62 @@ decisions:
   held_heartbeat:
     ask: Keep an hourly "still held" +1 on undismissed Workspace-held notices?
     default: true
-    why: Shows the hold is still live at one write per hour; dismissed rows never tick
+    why: Shows the hold is still live at one write per hour; dismissed rows never
+      tick
     answer: true
 phases:
-  - id: outage
-    title: Honest disk attribution and the held-workspace re-settlement loop (items 1-2)
-    depends_on: []
-    size: xlarge
-    description:
-      "outage: stop reporting unmeasured disk as 0 B/complete, measure workspace roots
-      first, run reaping independently of inventory completeness, and make pressure
-      notices name unmeasured owners and escalate missed recovery targets. Settle held
-      workspaces once per evidence fingerprint, +1 only when evidence changes, and add a
-      sase-core store guard that coalesces +1s and never rewrites the store for
-      dismissed rows."
-  - id: noise
-    title:
-      Publication de-flap, truthful error digests, and TUI stall reduction (items 3-5)
-    depends_on:
-      - outage
-    size: xlarge
-    description:
-      "noise: give agent_publication per-(project, signature) backoff with standing
-      alerts, a bounded incremental drain, and a terminal state for unrestorable prompt
-      archives. Aggregate the error ring and digests by signature with durable true
-      counts and pruning. Cut measured TUI GC pauses and main-thread I/O stalls, with
-      tui_stalls.jsonl as the acceptance metric."
-  - id: defects
-    title: Targeted high-confidence defect fixes (items 6-10)
-    depends_on:
-      - noise
-    size: xlarge
-    description:
-      "defects: add the prompt_prose artifact-link wire variant with a binding contract
-      test, close the remaining runtime-update races, fix Telegram fallback, retry, and
-      scope semantics, keep provider instruction bundles under their caps with a size
-      gate, and advance bead_task_triage's generation on request_id_conflict."
-  - id: hygiene
-    title:
-      Gateway checkpoint fix, notification hygiene, and retention sweep (items 11-13)
-    depends_on:
-      - defects
-    size: xlarge
-    description:
-      "hygiene: handle SQLite's busy -1 checkpoint result and serve snapshots
-      stale-while-revalidate. Fix the remaining notification dedup, amplification,
-      orphan, blob-size, and no-op-write issues. Add age-based reapers that apply the
-      stated log and state retention horizons."
+- id: outage
+  title: Honest disk attribution and the held-workspace re-settlement loop (items
+    1-2)
+  depends_on: []
+  size: xlarge
+  description: 'outage: stop reporting unmeasured disk as 0 B/complete, measure workspace
+    roots first, run reaping independently of inventory completeness, and make pressure
+    notices name unmeasured owners and escalate missed recovery targets. Settle held
+    workspaces once per evidence fingerprint, +1 only when evidence changes, and add
+    a sase-core store guard that coalesces +1s and never rewrites the store for dismissed
+    rows.'
+- id: noise
+  title: Publication de-flap, truthful error digests, and TUI stall reduction (items
+    3-5)
+  depends_on:
+  - outage
+  size: xlarge
+  description: 'noise: give agent_publication per-(project, signature) backoff with
+    standing alerts, a bounded incremental drain, and a terminal state for unrestorable
+    prompt archives. Aggregate the error ring and digests by signature with durable
+    true counts and pruning. Cut measured TUI GC pauses and main-thread I/O stalls,
+    with tui_stalls.jsonl as the acceptance metric.'
+- id: defects
+  title: Targeted high-confidence defect fixes (items 6-10)
+  depends_on:
+  - noise
+  size: xlarge
+  description: 'defects: add the prompt_prose artifact-link wire variant with a binding
+    contract test, close the remaining runtime-update races, fix Telegram fallback,
+    retry, and scope semantics, keep provider instruction bundles under their caps
+    with a size gate, and advance bead_task_triage''s generation on request_id_conflict.'
+- id: hygiene
+  title: Gateway checkpoint fix, notification hygiene, and retention sweep (items
+    11-13)
+  depends_on:
+  - defects
+  size: xlarge
+  description: 'hygiene: handle SQLite''s busy -1 checkpoint result and serve snapshots
+    stale-while-revalidate. Fix the remaining notification dedup, amplification, orphan,
+    blob-size, and no-op-write issues. Add age-based reapers that apply the stated
+    log and state retention horizons.'
 proposed_by: bbugyi200.athena.1eb
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-19 07:09:34
 status: wip
+bead_id: sase-1tz
 ---
 
-- **PROMPT:**
-  [prompts/202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/notification_log_audit_fixes.md)
+- **PROMPT:** [prompts/202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/notification_log_audit_fixes.md)
+- **BEAD:** [sase-1tz](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/README.md)
 
 # Plan: Fix the ranked apollo/athena notification and log audit defects
 
