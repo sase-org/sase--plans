@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "alias_scope",
+      "kind": "choice",
+      "ask": "Should hijack also treat a live EPIC APPROVED or PLAN COMMITTED member as RUNNING?",
+      "why": "All four labels come from the same RUNNING rewrite, so fixing two leaves the bug on other roles",
+      "choices": [
+        {
+          "key": "all",
+          "label": "Also map EPIC APPROVED and PLAN COMMITTED to RUNNING when the member's process is alive"
+        },
+        {
+          "key": "working",
+          "label": "Map only WORKING TALE/PLAN; running epic- and commit-role members stay refused"
+        }
+      ],
+      "default": "all",
+      "effective_default": "all",
+      "requested_verified": false
+    }
+  ]
+}
