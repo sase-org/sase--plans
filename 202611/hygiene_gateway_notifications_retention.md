@@ -1,34 +1,30 @@
 ---
 tier: epic
 title: Gateway checkpoint fix, notification hygiene, and retention sweep (items 11-13)
-goal:
-  A busy SQLite WAL checkpoint reports busy instead of erroring, read paths checkpoint
+goal: A busy SQLite WAL checkpoint reports busy instead of erroring, read paths checkpoint
   passively, and the gateway serves a cached fleet snapshot at once while one rebuild
-  runs in the background. remote-attention keeps one row per request, wait_checks raises
-  one notice per failed root blocker with a one-key expire action, and task-bead triage
-  keeps one notification per bead. Settled triage gate bundles are reaped. Notification
-  payloads over 8 KB move to sidecar files, and broken file references are pruned.
-  file-hooks successes are silent, workspace-rescue dedups, prune nudges have a size
-  floor, agent_state_refresh logs each unchanged verdict once, and no-op claim-ledger
-  rows stop. Tool-run logs, tui.log, proc log locks, registry temp files, and index
-  backups follow stated horizons.
+  runs in the background. remote-attention keeps one row per request, wait_checks
+  raises one notice per failed root blocker with a one-key expire action, and task-bead
+  triage keeps one notification per bead. Settled triage gate bundles are reaped.
+  Notification payloads over 8 KB move to sidecar files, and broken file references
+  are pruned. file-hooks successes are silent, workspace-rescue dedups, prune nudges
+  have a size floor, agent_state_refresh logs each unchanged verdict once, and no-op
+  claim-ledger rows stop. Tool-run logs, tui.log, proc log locks, registry temp files,
+  and index backups follow stated horizons.
 parent_bead: sase-1tz.4
 decisions:
   index_backups:
     ask: Should an age-based reaper delete stale agent-index .bak backups?
     choices:
-      report:
-        Backups get a human-action disk row and a gated one-time delete; nothing deletes
-        them automatically
+      report: Backups get a human-action disk row and a gated one-time delete; nothing
+        deletes them automatically
       reap: An age-based reaper deletes agent-index backups older than 30 days
     default: report
-    why:
-      A sase-zw gate already declined deleting backups, and no SASE code writes these
-      files
+    why: A sase-zw gate already declined deleting backups, and no SASE code writes
+      these files
     answer: report
   quiet_triage_rule:
-    ask:
-      Remove the quiet-task-beads rule from the chezmoi config once the triage-volume
+    ask: Remove the quiet-task-beads rule from the chezmoi config once the triage-volume
       fix lands?
     choices:
       remove: Beads-tab toasts and sounds return once the human runs chezmoi apply
@@ -37,143 +33,130 @@ decisions:
     why: The rule's own text says to remove it once the triage-volume fix is in
     answer: remove
 phases:
-  - id: wal_busy
-    title:
-      Treat SQLite's busy -1 checkpoint result as busy and checkpoint passively on read
-      paths
-    description:
-      "wal_busy: in sase-core, a busy wal_checkpoint that returns -1 counts reports
-      checkpoint_busy instead of failing u64 conversion. The gateway's post-build hook
-      uses PASSIVE and runs after waiters are woken. Maintenance keeps TRUNCATE. Move
-      the pin."
-    size: small
-    depends_on: []
-  - id: gateway_swr
-    title: Serve cached fleet snapshots stale-while-revalidate in the gateway
-    description:
-      "gateway_swr: an expired cached snapshot is served at once, marked stale, while
-      one background rebuild runs. Index-permit waits are bounded. A cold cache keeps
-      today's bounded wait. Record the relationship on sase-1s5 and move the pin."
-    size: medium
-    depends_on:
-      - wal_busy
-  - id: attention_key
-    title: Key remote-attention rows by stable request identity
-    description:
-      "attention_key: remote-attention rows key on (origin, request_id). A new revision
-      updates and resurfaces the one row. An identical re-emission writes nothing. A
-      local dismissal still sticks for its revision. Legacy per-revision rows migrate
-      once."
-    size: medium
-    depends_on: []
-  - id: blob_store
-    title: Add opt-in sidecar storage for oversize notification payloads in sase-core
-    description:
-      "blob_store: sase-core stores action_data values and notes over a caller-supplied
-      byte limit as content-addressed sidecar files, with a read binding. Compaction
-      garbage-collects unreferenced sidecars and prunes broken files references. Default
-      behavior is unchanged. Move the pin."
-    size: medium
-    depends_on:
-      - attention_key
-  - id: blob_adopt
-    title: Resolve sidecar payloads in every reader, then externalize payloads over 8 KB
-    description:
-      "blob_adopt: the TUI, Telegram, and mobile readers that need full action_data or
-      note text resolve sidecar references. Then the Python store wrapper externalizes
-      payloads over 8 KB by default, and live oversize rows migrate once."
-    size: medium
-    depends_on:
-      - blob_store
-  - id: wait_blocker
-    title: Raise one wait_checks notice per failed root blocker and freeze its +1s
-    description:
-      "wait_blocker: terminally blocked waiters group under one notice per root blocker
-      that names every direct and transitive waiter. The notice changes only when its
-      waiter set changes and never +1s otherwise. Legacy per-waiter rows settle once."
-    size: medium
-    depends_on: []
-  - id: waiter_expire
-    title: Offer a one-key action that expires a failed blocker's waiters
-    description:
-      "waiter_expire: under blocked_waiters = offer, the root-blocker notice gets a
-      one-key TUI action. It expires every waiter the notice names through the existing
-      user cancel path for a waiting agent, records the blocker as the reason, and
-      settles the notice. Nothing expires waiters automatically."
-    size: medium
-    depends_on:
-      - wait_blocker
-  - id: triage_volume
-    title: Keep one task-triage notification per bead across presentation changes
-    description:
-      "triage_volume: measure which fingerprint inputs churn triage gates. Stop
-      canceling and recreating a pending gate for presentation drift the gate does not
-      render. Recreated gates reuse one notification row per bead. Remove or keep the
-      quiet-task-beads rule per the decision."
-    size: medium
-    depends_on: []
-  - id: gate_reconcile
-    title: Settle orphaned triage gates and reap settled gate bundles
-    description:
-      "gate_reconcile: a pending automation-owned gate whose notification was dismissed,
-      or whose bead is resolved, is cancelled. A dismissal is not undone by the next
-      pass. Settled task-triage and snooze bundles older than a horizon are reaped.
-      Other gate kinds are only counted."
-    size: medium
-    depends_on:
-      - triage_volume
-  - id: notify_quieting
-    title:
-      Silence success toasts, dedup workspace-rescue, floor prune nudges, and skip no-op
-      claim writes
-    description:
-      "notify_quieting: file-hooks successes become one silent row per hook, and
-      workspace-rescue gets a stable dedup key. Artifact-run prune nudges fire only
-      above a size floor or under disk pressure. hold_workspace_claim writes no ledger
-      row when nothing changed."
-    size: medium
-    depends_on: []
-  - id: state_refresh_memo
-    title: Log each unchanged agent_state_refresh verdict once
-    description:
-      "state_refresh_memo: agent_state_refresh persists each run's unresolved verdict
-      with an evidence fingerprint. A pass that sees the same fingerprint skips the
-      warning and the dismissed-bundle lookup. A changed fingerprint re-evaluates and
-      logs once. Stays clear of sase-1s5.3's lookup changes."
-    size: medium
-    depends_on: []
-  - id: log_horizons
-    title:
-      Apply the tool-run log horizon on a schedule, age-rotate tui.log, and verify
-      digest and run pruning
-    description:
-      "log_horizons: an hourly housekeeping chop applies the existing tool-run retention
-      owner, not only under disk pressure, and removes emptied run dirs. tui.log rotates
-      by age as well as size. Verify error-digest pruning and that artifact_run_prune is
-      unblocked on both hosts."
-    size: medium
-    depends_on: []
-  - id: clutter_reapers
-    title: Fix the proc log-lock and registry temp-file leaks and reap their backlog
-    description:
-      "clutter_reapers: deleting proc logs also removes their lock files. The
-      name-registry writer sweeps its own stale temp files under its lock. Owner steps
-      reap both backlogs from the log_horizons chop. Index backups follow the
-      index_backups decision."
-    size: medium
-    depends_on:
-      - log_horizons
+- id: wal_busy
+  title: Treat SQLite's busy -1 checkpoint result as busy and checkpoint passively
+    on read paths
+  description: 'wal_busy: in sase-core, a busy wal_checkpoint that returns -1 counts
+    reports checkpoint_busy instead of failing u64 conversion. The gateway''s post-build
+    hook uses PASSIVE and runs after waiters are woken. Maintenance keeps TRUNCATE.
+    Move the pin.'
+  size: small
+  depends_on: []
+- id: gateway_swr
+  title: Serve cached fleet snapshots stale-while-revalidate in the gateway
+  description: 'gateway_swr: an expired cached snapshot is served at once, marked
+    stale, while one background rebuild runs. Index-permit waits are bounded. A cold
+    cache keeps today''s bounded wait. Record the relationship on sase-1s5 and move
+    the pin.'
+  size: medium
+  depends_on:
+  - wal_busy
+- id: attention_key
+  title: Key remote-attention rows by stable request identity
+  description: 'attention_key: remote-attention rows key on (origin, request_id).
+    A new revision updates and resurfaces the one row. An identical re-emission writes
+    nothing. A local dismissal still sticks for its revision. Legacy per-revision
+    rows migrate once.'
+  size: medium
+  depends_on: []
+- id: blob_store
+  title: Add opt-in sidecar storage for oversize notification payloads in sase-core
+  description: 'blob_store: sase-core stores action_data values and notes over a caller-supplied
+    byte limit as content-addressed sidecar files, with a read binding. Compaction
+    garbage-collects unreferenced sidecars and prunes broken files references. Default
+    behavior is unchanged. Move the pin.'
+  size: medium
+  depends_on:
+  - attention_key
+- id: blob_adopt
+  title: Resolve sidecar payloads in every reader, then externalize payloads over
+    8 KB
+  description: 'blob_adopt: the TUI, Telegram, and mobile readers that need full action_data
+    or note text resolve sidecar references. Then the Python store wrapper externalizes
+    payloads over 8 KB by default, and live oversize rows migrate once.'
+  size: medium
+  depends_on:
+  - blob_store
+- id: wait_blocker
+  title: Raise one wait_checks notice per failed root blocker and freeze its +1s
+  description: 'wait_blocker: terminally blocked waiters group under one notice per
+    root blocker that names every direct and transitive waiter. The notice changes
+    only when its waiter set changes and never +1s otherwise. Legacy per-waiter rows
+    settle once.'
+  size: medium
+  depends_on: []
+- id: waiter_expire
+  title: Offer a one-key action that expires a failed blocker's waiters
+  description: 'waiter_expire: under blocked_waiters = offer, the root-blocker notice
+    gets a one-key TUI action. It expires every waiter the notice names through the
+    existing user cancel path for a waiting agent, records the blocker as the reason,
+    and settles the notice. Nothing expires waiters automatically.'
+  size: medium
+  depends_on:
+  - wait_blocker
+- id: triage_volume
+  title: Keep one task-triage notification per bead across presentation changes
+  description: 'triage_volume: measure which fingerprint inputs churn triage gates.
+    Stop canceling and recreating a pending gate for presentation drift the gate does
+    not render. Recreated gates reuse one notification row per bead. Remove or keep
+    the quiet-task-beads rule per the decision.'
+  size: medium
+  depends_on: []
+- id: gate_reconcile
+  title: Settle orphaned triage gates and reap settled gate bundles
+  description: 'gate_reconcile: a pending automation-owned gate whose notification
+    was dismissed, or whose bead is resolved, is cancelled. A dismissal is not undone
+    by the next pass. Settled task-triage and snooze bundles older than a horizon
+    are reaped. Other gate kinds are only counted.'
+  size: medium
+  depends_on:
+  - triage_volume
+- id: notify_quieting
+  title: Silence success toasts, dedup workspace-rescue, floor prune nudges, and skip
+    no-op claim writes
+  description: 'notify_quieting: file-hooks successes become one silent row per hook,
+    and workspace-rescue gets a stable dedup key. Artifact-run prune nudges fire only
+    above a size floor or under disk pressure. hold_workspace_claim writes no ledger
+    row when nothing changed.'
+  size: medium
+  depends_on: []
+- id: state_refresh_memo
+  title: Log each unchanged agent_state_refresh verdict once
+  description: 'state_refresh_memo: agent_state_refresh persists each run''s unresolved
+    verdict with an evidence fingerprint. A pass that sees the same fingerprint skips
+    the warning and the dismissed-bundle lookup. A changed fingerprint re-evaluates
+    and logs once. Stays clear of sase-1s5.3''s lookup changes.'
+  size: medium
+  depends_on: []
+- id: log_horizons
+  title: Apply the tool-run log horizon on a schedule, age-rotate tui.log, and verify
+    digest and run pruning
+  description: 'log_horizons: an hourly housekeeping chop applies the existing tool-run
+    retention owner, not only under disk pressure, and removes emptied run dirs. tui.log
+    rotates by age as well as size. Verify error-digest pruning and that artifact_run_prune
+    is unblocked on both hosts.'
+  size: medium
+  depends_on: []
+- id: clutter_reapers
+  title: Fix the proc log-lock and registry temp-file leaks and reap their backlog
+  description: 'clutter_reapers: deleting proc logs also removes their lock files.
+    The name-registry writer sweeps its own stale temp files under its lock. Owner
+    steps reap both backlogs from the log_horizons chop. Index backups follow the
+    index_backups decision.'
+  size: medium
+  depends_on:
+  - log_horizons
 proposed_by: bbugyi200.athena.sase-1tz.4
 proposed_with: claude/opus
 decided_by: auto
 create_time: 2026-11-20 14:00:17
 status: wip
+bead_id: sase-1tz.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/hygiene_gateway_notifications_retention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hygiene_gateway_notifications_retention.md)
-- **PARENT:**
-  [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **PROMPT:** [prompts/202611/hygiene_gateway_notifications_retention.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/hygiene_gateway_notifications_retention.md)
+- **PARENT:** [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **BEAD:** [sase-1tz.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.4.1.md)
 
 # Plan: Gateway checkpoint fix, notification hygiene, and retention sweep (items 11–13)
 
