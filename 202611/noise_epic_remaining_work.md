@@ -2,12 +2,11 @@
 tier: tale
 size: medium
 title: Finish the publication de-flap and error-digest gaps, then land epic sase-1tz.2.1
-goal:
-  The epic's remaining plan-required behaviors work. Quarantined prompt archives reach
-  the audited terminal state. Standing alerts no longer re-report on volatile detail.
-  Doctor shows live standing alerts. Error accounting drops nothing. The GC swap gate no
-  longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent phase
-  sase-1tz.2 are then closed.
+goal: The epic's remaining plan-required behaviors work. Quarantined prompt archives
+  reach the audited terminal state. Standing alerts no longer re-report on volatile
+  detail. Doctor shows live standing alerts. Error accounting drops nothing. The GC
+  swap gate no longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent
+  phase sase-1tz.2 are then closed.
 proposed_by: bbugyi200.athena.sase-1tz.2.1.land
 proposed_with: claude/opus
 bead: sase-1tz.2.1
@@ -18,12 +17,6 @@ status: done
   [202611/noise_publication_digests_tui_stalls.md](https://github.com/sase-org/sase--plans/blob/main/202611/noise_publication_digests_tui_stalls.md)
 - **BEAD:**
   [sase-1tz.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.2.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1tz.2.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tz.2.1.land.md)
-- **COMMITS:**
-  - [d18b499](https://github.com/sase-org/sase/commit/d18b499d4d5582e2390da8e9af1f6fb31208f582)
-    — feat(agents-sync): finish publication de-flap, error accounting, and GC pressure
-    gate
 
 # Plan: finish epic sase-1tz.2.1 and land it
 
