@@ -2,12 +2,11 @@
 tier: tale
 size: medium
 title: Finish the publication de-flap and error-digest gaps, then land epic sase-1tz.2.1
-goal:
-  The epic's remaining plan-required behaviors work. Quarantined prompt archives reach
-  the audited terminal state. Standing alerts no longer re-report on volatile detail.
-  Doctor shows live standing alerts. Error accounting drops nothing. The GC swap gate no
-  longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent phase
-  sase-1tz.2 are then closed.
+goal: The epic's remaining plan-required behaviors work. Quarantined prompt archives
+  reach the audited terminal state. Standing alerts no longer re-report on volatile
+  detail. Doctor shows live standing alerts. Error accounting drops nothing. The GC
+  swap gate no longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent
+  phase sase-1tz.2 are then closed.
 proposed_by: bbugyi200.athena.sase-1tz.2.1.land
 proposed_with: claude/opus
 bead: sase-1tz.2.1
@@ -18,11 +17,6 @@ status: done
   [202611/noise_publication_digests_tui_stalls.md](https://github.com/sase-org/sase--plans/blob/main/202611/noise_publication_digests_tui_stalls.md)
 - **BEAD:**
   [sase-1tz.2.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.2.1.md)
-- **AGENTS:**
-  - [bbugyi200.athena.sase-1tz.2.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1tz.2.1.land.md)
-- **COMMITS:**
-  - [5c8ccd6](https://github.com/sase-org/sase-core/commit/5c8ccd6b879db3edb7444dec1dd71bc99f8c4eca)
-    — fix(agent-publication): ignore volatile detail in standing alert decisions
 
 # Plan: finish epic sase-1tz.2.1 and land it
 
