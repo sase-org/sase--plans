@@ -40,7 +40,7 @@ proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-20 16:42:47
-status: wip
+status: done
 bead_id: sase-1uj
 ---
 
