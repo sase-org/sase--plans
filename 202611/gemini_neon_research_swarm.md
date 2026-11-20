@@ -1,53 +1,51 @@
 ---
 tier: epic
 title: Gemini 4 Neon for the research swarm
-goal: "SASE catalogs Gemini 4 Neon on Antigravity with accurate plan-gating advisories,
-  and the #research_swarm Gemini researcher runs on agy/gemini-4-neon-xhigh instead of
-  Gemini 4 Hydrogen.
+goal: 'SASE catalogs Gemini 4 Neon on Antigravity with accurate plan-gating advisories,
+  and the #research_swarm Gemini researcher runs on agy/gemini-4-neon-xhigh instead
+  of Gemini 4 Hydrogen.
 
-  "
+  '
 decisions:
   image_pool:
-    ask:
-      Should the plugin's @image infographic pool also swap its Antigravity member from
-      Hydrogen to Neon?
+    ask: Should the plugin's @image infographic pool also swap its Antigravity member
+      from Hydrogen to Neon?
     default: true
     why: The image agent is a swarm role, and the Hydrogen change moved both together.
     answer: true
   hydrogen_advisory:
-    ask:
-      Should Hydrogen also get a plan-gating advisory like Argon and Neon, now that Free
-      and Plus lose it?
+    ask: Should Hydrogen also get a plan-gating advisory like Argon and Neon, now
+      that Free and Plus lose it?
     default: true
     why: Antigravity's docs now exclude Free, Plus, and Pro trials from Hydrogen.
     answer: true
 phases:
-  - id: catalog
-    title: Catalog Gemini 4 Neon in sase's agy manifest
-    depends_on: []
-    size: medium
-    description:
-      "catalog: add the four gemini-4-neon slugs, short aliases, and info advisories to
-      models.yml, teach the TUI the neon short name, correct the stale Hydrogen
-      availability prose, and update agy tests, docs, and model-picker PNG goldens."
-  - id: swarm
-    title: Switch the research swarm's Gemini roles to Neon
-    depends_on: []
-    size: small
-    description:
-      "swarm: in the linked sase-research-artifacts repo, change the gemini_model
-      default (and the @image pool's agy member) to agy/gemini-4-neon-xhigh and update
-      its tests and docs."
+- id: catalog
+  title: Catalog Gemini 4 Neon in sase's agy manifest
+  depends_on: []
+  size: medium
+  description: 'catalog: add the four gemini-4-neon slugs, short aliases, and info
+    advisories to models.yml, teach the TUI the neon short name, correct the stale
+    Hydrogen availability prose, and update agy tests, docs, and model-picker PNG
+    goldens.'
+- id: swarm
+  title: Switch the research swarm's Gemini roles to Neon
+  depends_on: []
+  size: small
+  description: 'swarm: in the linked sase-research-artifacts repo, change the gemini_model
+    default (and the @image pool''s agy member) to agy/gemini-4-neon-xhigh and update
+    its tests and docs.'
 proposed_by: bbugyi200.athena.1eo
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-20 16:42:47
 status: wip
+bead_id: sase-1uj
 ---
 
-- **PROMPT:**
-  [prompts/202611/gemini_neon_research_swarm.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/gemini_neon_research_swarm.md)
+- **PROMPT:** [prompts/202611/gemini_neon_research_swarm.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/gemini_neon_research_swarm.md)
+- **BEAD:** [sase-1uj](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1uj/README.md)
 
 # Plan: Gemini 4 Neon for the research swarm
 
