@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "image_pool",
+      "kind": "toggle",
+      "ask": "Should the plugin's @image infographic pool also swap its Antigravity member from Hydrogen to Neon?",
+      "why": "The image agent is a swarm role, and the Hydrogen change moved both together.",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "hydrogen_advisory",
+      "kind": "toggle",
+      "ask": "Should Hydrogen also get a plan-gating advisory like Argon and Neon, now that Free and Plus lose it?",
+      "why": "Antigravity's docs now exclude Free, Plus, and Pro trials from Hydrogen.",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
