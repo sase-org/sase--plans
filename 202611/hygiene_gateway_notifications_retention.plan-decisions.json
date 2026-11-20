@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "index_backups",
+      "kind": "choice",
+      "ask": "Should an age-based reaper delete stale agent-index .bak backups?",
+      "why": "A sase-zw gate already declined deleting backups, and no SASE code writes these files",
+      "choices": [
+        {
+          "key": "report",
+          "label": "Backups get a human-action disk row and a gated one-time delete; nothing deletes them automatically"
+        },
+        {
+          "key": "reap",
+          "label": "An age-based reaper deletes agent-index backups older than 30 days"
+        }
+      ],
+      "default": "report",
+      "effective_default": "report",
+      "requested_verified": false
+    },
+    {
+      "id": "quiet_triage_rule",
+      "kind": "choice",
+      "ask": "Remove the quiet-task-beads rule from the chezmoi config once the triage-volume fix lands?",
+      "why": "The rule's own text says to remove it once the triage-volume fix is in",
+      "choices": [
+        {
+          "key": "remove",
+          "label": "Beads-tab toasts and sounds return once the human runs chezmoi apply"
+        },
+        {
+          "key": "keep",
+          "label": "The rule stays, and the phase records per-bead volume for a later call"
+        }
+      ],
+      "default": "remove",
+      "effective_default": "remove",
+      "requested_verified": false
+    }
+  ]
+}
