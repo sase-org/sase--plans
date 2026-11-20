@@ -1,142 +1,130 @@
 ---
 tier: epic
-title:
-  Targeted defect fixes for the prompt_prose wire, update races, Telegram transport,
+title: Targeted defect fixes for the prompt_prose wire, update races, Telegram transport,
   bundle caps, and triage conflicts
-goal:
-  Host-produced artifact-link origins, including prompt_prose, round-trip through the
-  real sase_core_rs binding, and a contract test fails on any future origin drift. Jobs
-  and launches that overlap a code swap defer and retry instead of failing, an
-  update-overlap reproducer guards that behavior, and a prebuilt-artifact cache miss is
-  a miss rather than a failure. Telegram falls back to plain text only on entity-parse
-  errors, retries per chunk without resending delivered chunks, reports credential and
-  network outages once per state transition, and runs its outbound job only on the
-  sending machine. Every provider root bundle fits its declared max_bytes through
+goal: Host-produced artifact-link origins, including prompt_prose, round-trip through
+  the real sase_core_rs binding, and a contract test fails on any future origin drift.
+  Jobs and launches that overlap a code swap defer and retry instead of failing, an
+  update-overlap reproducer guards that behavior, and a prebuilt-artifact cache miss
+  is a miss rather than a failure. Telegram falls back to plain text only on entity-parse
+  errors, retries per chunk without resending delivered chunks, reports credential
+  and network outages once per state transition, and runs its outbound job only on
+  the sending machine. Every provider root bundle fits its declared max_bytes through
   compile-time compaction, with a doctor check and a just-check test that catch growth.
   bead_task_triage recovers from request_id_conflict by advancing the generation.
 parent_bead: sase-1tz.3
 phases:
-  - id: prose_wire
-    title:
-      Add the prompt_prose artifact-link origin and a host-origin binding contract test
-    description:
-      'prose_wire: add PromptProse to sase-core''s ArtifactLinkOriginWire with the
-      automatic, commit-scoped semantics sase already relies on, and move the pin. Give
-      sase one constant listing every host-produced origin, and round-trip each through
-      sase_core_rs.artifact_link_validate_row in a contract test. Record what the "wire
-      is stale" skew message means.'
-    size: medium
-    depends_on: []
-  - id: swap_repro
-    title: Build an update-overlap reproducer for jobs, launches, and native code
-    description:
-      "swap_repro: a test-only harness simulates an install swap in temp dirs under a
-      real code-swap writer lock. It drives vanishing scripts, a vanishing binding,
-      mixed-version lazy imports, and in-place versus atomic file replacement.
-      Still-failing modes become strict xfails for the guard phases. Record which modes
-      reproduce and how the real installers replace files."
-    size: medium
-    depends_on: []
-  - id: swap_chop_guards
-    title: Defer and retry scheduler jobs that overlap a code swap
-    description:
-      "swap_chop_guards: the code-swap writer records a durable last-swap stamp. The
-      chop runner does not start scripts while a writer is live, and it treats a missing
-      script within a short post-swap grace as inhibited. A run that overlapped a swap
-      and died of SIGBUS or a swap-skew import error is recorded as a skipped retry, not
-      an error. Flip the chop xfails."
-    size: medium
-    depends_on:
-      - swap_repro
-  - id: swap_launch_guards
-    title: Defer and retry launches and finalizers that overlap a code swap
-    description:
-      "swap_launch_guards: agent launches, bead work, and host finalizers that hit a
-      missing binding or swap-skew import error during or just after a swap wait for it
-      to end and retry. Long-lived processes stop mixing pre-swap and post-swap modules.
-      Fix in-place native-code replacement only if the reproducer triggered SIGBUS. Flip
-      the remaining xfails."
-    size: medium
-    depends_on:
-      - swap_chop_guards
-  - id: prebuild_miss
-    title: Treat a prebuilt Rust artifact cache miss as a miss, not a failure
-    description:
-      "prebuild_miss: prebuild consume exits 0 and records hit:false with its reason on
-      a cache miss. Dev-update reconcile records the step as a miss, then builds from
-      source. The prebuild producer's writer probe also recognizes install.dev and
-      install.pypi swaps."
-    size: small
-    depends_on: []
-  - id: tg_transport
-    title: Fall back to plain text only on entity-parse errors and retry per chunk
-    description:
-      "tg_transport: in sase-telegram, plain-text fallback fires only for an
-      entity-parse BadRequest. Timeouts, network errors, rate limits, and credential
-      errors reach the retry wrapper unchanged. Retries wrap each chunk, so delivered
-      chunks are never resent, and the outbound job resumes a partly delivered
-      notification at its first undelivered chunk."
-    size: medium
-    depends_on: []
-  - id: tg_degraded
-    title:
-      Collapse repeated Telegram credential and network failures into degraded states
-    description:
-      "tg_degraded: outbound and receiver track a persisted credential_unavailable or
-      network_degraded state. Each logs one line on entering a state, rate-limited
-      summaries while degraded, and one line on recovery, with no tracebacks for
-      transient errors. One SASE notice fires per transition. Credential lookups are
-      negatively cached for a short window."
-    size: medium
-    depends_on:
-      - tg_transport
-  - id: tg_scope
-    title: Run the Telegram outbound routine only on the sending machine
-    description:
-      "tg_scope: move the axe.routines.telegram routine from the shared chezmoi sase.yml
-      into sase_athena.yml next to the telegram_receiver proc. Confirm the machine
-      overlay loads it on athena and leaves apollo and mac without it."
-    size: small
-    depends_on: []
-  - id: bundle_trim
-    title: Compact oversize provider root bundles at compile time until they fit
-    description:
-      "bundle_trim: when a provider declares max_bytes and the delivered bundle would
-      exceed it, compile applies a deterministic compaction ladder. Step one drops
-      summaries from superseded list-roster entries. Step two compacts whole list
-      rosters, largest first. Bundles that already fit stay byte-identical, and no
-      memory file changes."
-    size: medium
-    depends_on: []
-  - id: bundle_gate
-    title: Gate provider bundle sizes in sase doctor and just check
-    description:
-      "bundle_gate: a sase doctor check renders every enabled project's root bundle for
-      each provider that declares max_bytes. It errors over the cap and warns when
-      compaction was needed. A just-check test keeps sase's own bundles under every cap
-      without compaction. Update the instruction-bundle and Codex provider docs."
-    size: medium
-    depends_on:
-      - bundle_trim
-  - id: triage_conflict
-    title: Advance bead_task_triage's generation on request_id_conflict
-    description:
-      "triage_conflict: when gate creation fails with request_id_conflict,
-      bead_task_triage cancels any pending gate under the stale id and advances and
-      persists the generation. It then recreates the gate in the same pass. Other
-      failures keep the deterministic retry."
-    size: small
-    depends_on: []
+- id: prose_wire
+  title: Add the prompt_prose artifact-link origin and a host-origin binding contract
+    test
+  description: 'prose_wire: add PromptProse to sase-core''s ArtifactLinkOriginWire
+    with the automatic, commit-scoped semantics sase already relies on, and move the
+    pin. Give sase one constant listing every host-produced origin, and round-trip
+    each through sase_core_rs.artifact_link_validate_row in a contract test. Record
+    what the "wire is stale" skew message means.'
+  size: medium
+  depends_on: []
+- id: swap_repro
+  title: Build an update-overlap reproducer for jobs, launches, and native code
+  description: 'swap_repro: a test-only harness simulates an install swap in temp
+    dirs under a real code-swap writer lock. It drives vanishing scripts, a vanishing
+    binding, mixed-version lazy imports, and in-place versus atomic file replacement.
+    Still-failing modes become strict xfails for the guard phases. Record which modes
+    reproduce and how the real installers replace files.'
+  size: medium
+  depends_on: []
+- id: swap_chop_guards
+  title: Defer and retry scheduler jobs that overlap a code swap
+  description: 'swap_chop_guards: the code-swap writer records a durable last-swap
+    stamp. The chop runner does not start scripts while a writer is live, and it treats
+    a missing script within a short post-swap grace as inhibited. A run that overlapped
+    a swap and died of SIGBUS or a swap-skew import error is recorded as a skipped
+    retry, not an error. Flip the chop xfails.'
+  size: medium
+  depends_on:
+  - swap_repro
+- id: swap_launch_guards
+  title: Defer and retry launches and finalizers that overlap a code swap
+  description: 'swap_launch_guards: agent launches, bead work, and host finalizers
+    that hit a missing binding or swap-skew import error during or just after a swap
+    wait for it to end and retry. Long-lived processes stop mixing pre-swap and post-swap
+    modules. Fix in-place native-code replacement only if the reproducer triggered
+    SIGBUS. Flip the remaining xfails.'
+  size: medium
+  depends_on:
+  - swap_chop_guards
+- id: prebuild_miss
+  title: Treat a prebuilt Rust artifact cache miss as a miss, not a failure
+  description: 'prebuild_miss: prebuild consume exits 0 and records hit:false with
+    its reason on a cache miss. Dev-update reconcile records the step as a miss, then
+    builds from source. The prebuild producer''s writer probe also recognizes install.dev
+    and install.pypi swaps.'
+  size: small
+  depends_on: []
+- id: tg_transport
+  title: Fall back to plain text only on entity-parse errors and retry per chunk
+  description: 'tg_transport: in sase-telegram, plain-text fallback fires only for
+    an entity-parse BadRequest. Timeouts, network errors, rate limits, and credential
+    errors reach the retry wrapper unchanged. Retries wrap each chunk, so delivered
+    chunks are never resent, and the outbound job resumes a partly delivered notification
+    at its first undelivered chunk.'
+  size: medium
+  depends_on: []
+- id: tg_degraded
+  title: Collapse repeated Telegram credential and network failures into degraded
+    states
+  description: 'tg_degraded: outbound and receiver track a persisted credential_unavailable
+    or network_degraded state. Each logs one line on entering a state, rate-limited
+    summaries while degraded, and one line on recovery, with no tracebacks for transient
+    errors. One SASE notice fires per transition. Credential lookups are negatively
+    cached for a short window.'
+  size: medium
+  depends_on:
+  - tg_transport
+- id: tg_scope
+  title: Run the Telegram outbound routine only on the sending machine
+  description: 'tg_scope: move the axe.routines.telegram routine from the shared chezmoi
+    sase.yml into sase_athena.yml next to the telegram_receiver proc. Confirm the
+    machine overlay loads it on athena and leaves apollo and mac without it.'
+  size: small
+  depends_on: []
+- id: bundle_trim
+  title: Compact oversize provider root bundles at compile time until they fit
+  description: 'bundle_trim: when a provider declares max_bytes and the delivered
+    bundle would exceed it, compile applies a deterministic compaction ladder. Step
+    one drops summaries from superseded list-roster entries. Step two compacts whole
+    list rosters, largest first. Bundles that already fit stay byte-identical, and
+    no memory file changes.'
+  size: medium
+  depends_on: []
+- id: bundle_gate
+  title: Gate provider bundle sizes in sase doctor and just check
+  description: 'bundle_gate: a sase doctor check renders every enabled project''s
+    root bundle for each provider that declares max_bytes. It errors over the cap
+    and warns when compaction was needed. A just-check test keeps sase''s own bundles
+    under every cap without compaction. Update the instruction-bundle and Codex provider
+    docs.'
+  size: medium
+  depends_on:
+  - bundle_trim
+- id: triage_conflict
+  title: Advance bead_task_triage's generation on request_id_conflict
+  description: 'triage_conflict: when gate creation fails with request_id_conflict,
+    bead_task_triage cancels any pending gate under the stale id and advances and
+    persists the generation. It then recreates the gate in the same pass. Other failures
+    keep the deterministic retry.'
+  size: small
+  depends_on: []
 proposed_by: bbugyi200.athena.sase-1tz.3
 proposed_with: claude/opus
 create_time: 2026-11-20 09:19:02
 status: wip
+bead_id: sase-1tz.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/defects_wire_swap_telegram_bundles_triage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/defects_wire_swap_telegram_bundles_triage.md)
-- **PARENT:**
-  [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **PROMPT:** [prompts/202611/defects_wire_swap_telegram_bundles_triage.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/defects_wire_swap_telegram_bundles_triage.md)
+- **PARENT:** [202611/notification_log_audit_fixes.md](https://github.com/sase-org/sase--plans/blob/main/202611/notification_log_audit_fixes.md)
+- **BEAD:** [sase-1tz.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1tz/sase-1tz.3.1.md)
 
 # Plan: Targeted defect fixes (items 6–10)
 
