@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "recent_window_short_circuit",
+      "kind": "choice",
+      "ask": "Should artifact_run_prune skip per-run scans for keep-recent-window runs, which can never be selected?",
+      "why": "Selection, counts, and quarantine are unchanged; no review surface shows recent-run reasons",
+      "choices": [
+        {
+          "key": "skip",
+          "label": "About 8s faster per tick; JSON output lists only Rust-added reasons for recent runs"
+        },
+        {
+          "key": "keep",
+          "label": "Recent runs keep full reason lists; job stays about 8s slower scanning 11.6k unselectable runs"
+        }
+      ],
+      "default": "skip",
+      "effective_default": "skip",
+      "requested_verified": false
+    }
+  ]
+}
