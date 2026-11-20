@@ -2,17 +2,15 @@
 tier: tale
 size: medium
 title: Finish the publication de-flap and error-digest gaps, then land epic sase-1tz.2.1
-goal:
-  The epic's remaining plan-required behaviors work. Quarantined prompt archives reach
-  the audited terminal state. Standing alerts no longer re-report on volatile detail.
-  Doctor shows live standing alerts. Error accounting drops nothing. The GC swap gate no
-  longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent phase
-  sase-1tz.2 are then closed.
+goal: The epic's remaining plan-required behaviors work. Quarantined prompt archives
+  reach the audited terminal state. Standing alerts no longer re-report on volatile
+  detail. Doctor shows live standing alerts. Error accounting drops nothing. The GC
+  swap gate no longer defers policy sweeps for hours. Epic sase-1tz.2.1 and its parent
+  phase sase-1tz.2 are then closed.
 proposed_by: bbugyi200.athena.sase-1tz.2.1.land
 proposed_with: claude/opus
 bead: sase-1tz.2.1
-create_time: 2026-11-20 08:04:52
-status: wip
+status: done
 ---
 
 - **PARENT:**
