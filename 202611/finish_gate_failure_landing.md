@@ -2,9 +2,10 @@
 tier: tale
 size: medium
 title: Finish gate failure recovery and land sase-1ut
-goal: Failed gate turns have one race-safe shared failure projection, honor the once-after-dismissal
-  notification policy, expose recovery on every promised surface, and epic sase-1ut
-  closes with verified evidence.
+goal:
+  Failed gate turns have one race-safe shared failure projection, honor the
+  once-after-dismissal notification policy, expose recovery on every promised surface,
+  and epic sase-1ut closes with verified evidence.
 proposed_by: bbugyi200.athena.sase-1ut.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1ut
@@ -15,6 +16,11 @@ status: done
   [202611/gate_turn_carry_and_failed_execution.md](https://github.com/sase-org/sase--plans/blob/main/202611/gate_turn_carry_and_failed_execution.md)
 - **BEAD:**
   [sase-1ut](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ut/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1ut.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1ut.land.md)
+- **COMMITS:**
+  - [668f1b3](https://github.com/sase-org/sase--plans/commit/668f1b342a59d33a1a07342ca26620441ec0db8e)
+    — docs(plans): mark gate_turn_carry_and_failed_execution done
 
 # Finish gate failure recovery and land sase-1ut
 
