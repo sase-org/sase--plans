@@ -1,70 +1,61 @@
 ---
 tier: epic
-title:
-  Stop artifact-link aggregate rebuilds from SIGKILLing apollo's publication and
-  backfill chops
-goal:
-  agent_publication and artifact_link_backfill finish inside their budgets because
-  aggregate previews build one cheap snapshot, write retries respect the deadline, and
-  slow drains leave progress breadcrumbs.
+title: Stop artifact-link aggregate rebuilds from SIGKILLing apollo's publication
+  and backfill chops
+goal: agent_publication and artifact_link_backfill finish inside their budgets because
+  aggregate previews build one cheap snapshot, write retries respect the deadline,
+  and slow drains leave progress breadcrumbs.
 decisions:
   publish_deferral:
-    ask:
-      If a link publish runs out of budget before its aggregate rebuild lands, keep its
-      outbox rows queued?
+    ask: If a link publish runs out of budget before its aggregate rebuild lands,
+      keep its outbox rows queued?
     choices:
-      retain:
-        Rows stay queued and republish idempotently next tick, like today's aggregate
-        failures
-      ack:
-        Rows settle now; the local aggregate lags until the next rebuild or hourly
+      retain: Rows stay queued and republish idempotently next tick, like today's
+        aggregate failures
+      ack: Rows settle now; the local aggregate lags until the next rebuild or hourly
         reconcile
     default: retain
-    why:
-      It reuses the existing failure path unchanged, and deferrals should be rare once
-      snapshots are cheap
+    why: It reuses the existing failure path unchanged, and deferrals should be rare
+      once snapshots are cheap
     answer: retain
 phases:
-  - id: snapshot-reuse
-    title: Build the artifact-link event snapshot once and reuse its inputs
-    size: medium
-    depends_on: []
-    description:
-      Make preview_aggregate build one event snapshot instead of two (resolves task bead
-      sase-1rt). Add a scoped, opt-in memo for durable event objects and the parsed
-      pending outbox, so repeated snapshots inside one publish, drain, or reconcile stop
-      re-reading and re-validating unchanged inputs.
-  - id: deadline-aware-aggregate
-    title: Gate aggregate write retries and publish rebuilds on the caller deadline
-    size: medium
-    depends_on:
-      - snapshot-reuse
-    description:
-      Make _write_merged_aggregate stop retrying after a lost CAS race when the next
-      preview cannot finish before the caller's deadline. Thread the deadline through
-      rebuild_aggregate, reconcile_aggregate, and the publish-path
-      apply_events_to_aggregate, with typed deferral handling in both chops. Add
-      per-sub-phase publish timings.
-  - id: publication-drain-progress
-    title: Stream per-stage progress from agent_publication project drains
-    size: small
-    depends_on:
-      - deadline-aware-aggregate
-    description:
-      Give drain_project a progress callback, so a slow or killed agent_publication tick
-      leaves breadcrumbs for the stage it was in. Log the link drain's phase timings,
-      including the new publish sub-phases, the same way artifact_link_backfill already
-      logs its drain phases.
+- id: snapshot-reuse
+  title: Build the artifact-link event snapshot once and reuse its inputs
+  size: medium
+  depends_on: []
+  description: Make preview_aggregate build one event snapshot instead of two (resolves
+    task bead sase-1rt). Add a scoped, opt-in memo for durable event objects and the
+    parsed pending outbox, so repeated snapshots inside one publish, drain, or reconcile
+    stop re-reading and re-validating unchanged inputs.
+- id: deadline-aware-aggregate
+  title: Gate aggregate write retries and publish rebuilds on the caller deadline
+  size: medium
+  depends_on:
+  - snapshot-reuse
+  description: Make _write_merged_aggregate stop retrying after a lost CAS race when
+    the next preview cannot finish before the caller's deadline. Thread the deadline
+    through rebuild_aggregate, reconcile_aggregate, and the publish-path apply_events_to_aggregate,
+    with typed deferral handling in both chops. Add per-sub-phase publish timings.
+- id: publication-drain-progress
+  title: Stream per-stage progress from agent_publication project drains
+  size: small
+  depends_on:
+  - deadline-aware-aggregate
+  description: Give drain_project a progress callback, so a slow or killed agent_publication
+    tick leaves breadcrumbs for the stage it was in. Log the link drain's phase timings,
+    including the new publish sub-phases, the same way artifact_link_backfill already
+    logs its drain phases.
 proposed_by: bbugyi200.athena.1ew
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-21 10:59:28
 status: wip
+bead_id: sase-1uu
 ---
 
-- **PROMPT:**
-  [prompts/202611/artifact_link_aggregate_timeouts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/artifact_link_aggregate_timeouts.md)
+- **PROMPT:** [prompts/202611/artifact_link_aggregate_timeouts.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/artifact_link_aggregate_timeouts.md)
+- **BEAD:** [sase-1uu](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1uu/README.md)
 
 # Stop artifact-link aggregate rebuilds from SIGKILLing apollo's publication and backfill chops
 
