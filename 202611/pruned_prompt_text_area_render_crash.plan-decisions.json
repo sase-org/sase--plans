@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "detach_layout",
+      "kind": "choice",
+      "ask": "Should prompt-bar detach also request an immediate layout refresh?",
+      "why": "The refresh also protects the bar's other widgets, not just the text area.",
+      "choices": [
+        {
+          "key": "both",
+          "label": "Guard plus refresh; the stale bar leaves the compositor map on the next paint"
+        },
+        {
+          "key": "guard_only",
+          "label": "Guard only; the stale bar stays in the map until Textual's async prune ends"
+        }
+      ],
+      "default": "both",
+      "effective_default": "both",
+      "requested_verified": false
+    }
+  ]
+}
