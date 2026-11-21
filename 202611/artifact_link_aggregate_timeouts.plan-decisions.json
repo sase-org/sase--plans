@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "publish_deferral",
+      "kind": "choice",
+      "ask": "If a link publish runs out of budget before its aggregate rebuild lands, keep its outbox rows queued?",
+      "why": "It reuses the existing failure path unchanged, and deferrals should be rare once snapshots are cheap",
+      "choices": [
+        {
+          "key": "retain",
+          "label": "Rows stay queued and republish idempotently next tick, like today's aggregate failures"
+        },
+        {
+          "key": "ack",
+          "label": "Rows settle now; the local aggregate lags until the next rebuild or hourly reconcile"
+        }
+      ],
+      "default": "retain",
+      "effective_default": "retain",
+      "requested_verified": false
+    }
+  ]
+}
