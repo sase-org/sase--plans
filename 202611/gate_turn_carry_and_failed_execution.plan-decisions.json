@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "failed_bucket",
+      "kind": "choice",
+      "ask": "Should an accepted-but-failed gate turn stay in the awaiting-human bucket rather than Failed?",
+      "why": "The gate is recoverable and still owns its workspace, so it must not look terminal",
+      "choices": [
+        {
+          "key": "waiting",
+          "label": "Same bucket as a pending gate plus a red failure glyph; cleanup keeps treating it as live"
+        },
+        {
+          "key": "failed",
+          "label": "Failed bucket; louder, but cleanup flows must be audited to skip claim-holding gates"
+        }
+      ],
+      "default": "waiting",
+      "effective_default": "waiting",
+      "requested_verified": false
+    },
+    {
+      "id": "resurface",
+      "kind": "choice",
+      "ask": "Should reclaim resurface a dismissed gate-failure notification once while the failure is current?",
+      "why": "The inbox is the attention channel, and a failed gate otherwise holds its workspace forever",
+      "choices": [
+        {
+          "key": "once",
+          "label": "Resurface it once, an hour after dismissal, while the gate still holds its workspace"
+        },
+        {
+          "key": "never",
+          "label": "Row-level attention only; a dismissed failure stays dismissed"
+        }
+      ],
+      "default": "once",
+      "effective_default": "once",
+      "requested_verified": false
+    }
+  ]
+}
