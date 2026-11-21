@@ -1,6 +1,6 @@
 ---
 tier: epic
-title: "Gate turns: explicit carry-vs-commit and visible accepted-but-failed executions"
+title: 'Gate turns: explicit carry-vs-commit and visible accepted-but-failed executions'
 goal: 'Agents staging inheriting gate turns know dirty work is carried uncommitted
   unless they declare commit, and a gate whose accepted option command failed is visibly
   failed and recoverable on every surface instead of silently parking in a Running
@@ -8,49 +8,41 @@ goal: 'Agents staging inheriting gate turns know dirty work is carried uncommitt
 
   '
 phases:
-  - id: carry-contract
-    title: Make carry-vs-commit explicit for inheriting handoffs
-    depends_on: []
-    size: medium
-    description:
-      "carry-contract: add a carry-default hint to sase final context and the staged
-      gate descriptor, and fix the sase_gate/sase_final skills and docs."
-  - id: failed-gate-attention
-    title: Accepted-but-failed gate turns project as needing a human
-    depends_on: []
-    size: medium
-    description:
-      "failed-gate-attention: persist execution-failure facts on the gate member,
-      project them with failure status and recovery commands in CLI and ACE, and
-      optionally resurface dismissed failures."
+- id: carry-contract
+  title: Make carry-vs-commit explicit for inheriting handoffs
+  depends_on: []
+  size: medium
+  description: 'carry-contract: add a carry-default hint to sase final context and
+    the staged gate descriptor, and fix the sase_gate/sase_final skills and docs.'
+- id: failed-gate-attention
+  title: Accepted-but-failed gate turns project as needing a human
+  depends_on: []
+  size: medium
+  description: 'failed-gate-attention: persist execution-failure facts on the gate
+    member, project them with failure status and recovery commands in CLI and ACE,
+    and optionally resurface dismissed failures.'
 decisions:
   failed_bucket:
-    ask:
-      Should an accepted-but-failed gate turn stay in the awaiting-human bucket rather
-      than Failed?
+    ask: Should an accepted-but-failed gate turn stay in the awaiting-human bucket
+      rather than Failed?
     choices:
-      waiting:
-        Same bucket as a pending gate plus a red failure glyph; cleanup keeps treating
-        it as live
-      failed:
-        Failed bucket; louder, but cleanup flows must be audited to skip claim-holding
+      waiting: Same bucket as a pending gate plus a red failure glyph; cleanup keeps
+        treating it as live
+      failed: Failed bucket; louder, but cleanup flows must be audited to skip claim-holding
         gates
     default: waiting
-    why:
-      The gate is recoverable and still owns its workspace, so it must not look terminal
+    why: The gate is recoverable and still owns its workspace, so it must not look
+      terminal
     answer: waiting
   resurface:
-    ask:
-      Should reclaim resurface a dismissed gate-failure notification once while the
-      failure is current?
+    ask: Should reclaim resurface a dismissed gate-failure notification once while
+      the failure is current?
     choices:
-      once:
-        Resurface it once, an hour after dismissal, while the gate still holds its
-        workspace
+      once: Resurface it once, an hour after dismissal, while the gate still holds
+        its workspace
       never: Row-level attention only; a dismissed failure stays dismissed
     default: once
-    why:
-      The inbox is the attention channel, and a failed gate otherwise holds its
+    why: The inbox is the attention channel, and a failed gate otherwise holds its
       workspace forever
     answer: once
 proposed_by: bbugyi200.athena.1et
@@ -59,10 +51,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-21 09:19:50
 status: wip
+bead_id: sase-1ut
 ---
 
-- **PROMPT:**
-  [prompts/202611/gate_turn_carry_and_failed_execution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/gate_turn_carry_and_failed_execution.md)
+- **PROMPT:** [prompts/202611/gate_turn_carry_and_failed_execution.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/gate_turn_carry_and_failed_execution.md)
+- **BEAD:** [sase-1ut](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ut/README.md)
 
 # Gate turns: explicit carry-vs-commit, and visible accepted-but-failed executions
 
