@@ -2,16 +2,14 @@
 tier: tale
 size: small
 title: Recompute the failed-clan cause-chip drop on resize, then close epic sase-1ux
-goal:
-  The Failed-clan cause chip drops and returns as soon as the Agents list's visible
+goal: The Failed-clan cause chip drops and returns as soon as the Agents list's visible
   width changes, without waiting for a grouping rebuild. Healthy rows keep their cached
   renders across column-width changes. Epic sase-1ux is closed, its plan file is marked
   done, and Symvision is clean.
 proposed_by: bbugyi200.athena.sase-1ux.land
 proposed_with: claude/opus
 bead: sase-1ux
-create_time: 2026-11-22 15:54:07
-status: wip
+status: done
 ---
 
 - **PARENT:**
