@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "chop_guard",
+      "kind": "choice",
+      "ask": "Should the regression guard fresh-import every sase_chop_* script module?",
+      "why": "Scheduled jobs fail silently into hourly digests; a per-job import smoke test is cheap",
+      "choices": [
+        {
+          "key": "all_chops",
+          "label": "~37 subprocess probes (~12 s serial); any job's import crash fails CI, not a digest"
+        },
+        {
+          "key": "cycle_only",
+          "label": "Probe only this cycle's modules; the next latent job cycle surfaces only in digests"
+        }
+      ],
+      "default": "all_chops",
+      "effective_default": "all_chops",
+      "requested_verified": false
+    }
+  ]
+}
