@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "readopt_action",
+      "kind": "choice",
+      "ask": "Should the NEEDS ATTENTION callout offer a TUI key that runs `sase agent readopt`?",
+      "why": "Readopt only succeeds after an out-of-TUI repair, so a one-key retry invites repeat failures",
+      "choices": [
+        {
+          "key": "cli_hint",
+          "label": "The callout prints the exact readopt command; no new key or proc flow"
+        },
+        {
+          "key": "tui_key",
+          "label": "Adds a confirm-gated key that runs readopt as a durable proc from the panel"
+        }
+      ],
+      "default": "cli_hint",
+      "effective_default": "cli_hint",
+      "requested_verified": false
+    }
+  ]
+}
