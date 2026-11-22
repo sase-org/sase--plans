@@ -1,89 +1,85 @@
 ---
 tier: epic
 title: Make failed agent sessions and clans unmistakable
-goal: "When an agent session or clan stops on a failure, every Agents-tab surface says
-  so: the row, the BY_STATUS section, the count chips, the waves and jump strips, and
-  the detail panels all read FAILED and agree with each other. The cause and the next
-  step are one glance away. A staged handoff the host refused to adopt shows as NOT
-  ADOPTED, never as a phantom RUNNING with a ticking clock.
+goal: 'When an agent session or clan stops on a failure, every Agents-tab surface
+  says so: the row, the BY_STATUS section, the count chips, the waves and jump strips,
+  and the detail panels all read FAILED and agree with each other. The cause and the
+  next step are one glance away. A staged handoff the host refused to adopt shows
+  as NOT ADOPTED, never as a phantom RUNNING with a ticking clock.
 
-  "
+  '
 decisions:
   readopt_action:
-    ask:
-      Should the NEEDS ATTENTION callout offer a TUI key that runs `sase agent readopt`?
+    ask: Should the NEEDS ATTENTION callout offer a TUI key that runs `sase agent
+      readopt`?
     choices:
       cli_hint: The callout prints the exact readopt command; no new key or proc flow
-      tui_key:
-        Adds a confirm-gated key that runs readopt as a durable proc from the panel
+      tui_key: Adds a confirm-gated key that runs readopt as a durable proc from the
+        panel
     default: cli_hint
-    why:
-      Readopt only succeeds after an out-of-TUI repair, so a one-key retry invites
+    why: Readopt only succeeds after an out-of-TUI repair, so a one-key retry invites
       repeat failures
     answer: cli_hint
 phases:
-  - id: core-held
-    title: Project held staged monitors as a first-class state in sase-core
-    depends_on: []
-    size: medium
-    description:
-      "core-held: in sase-core, project a staged monitor member whose
-      `monitor_stage_held` flag is set as monitor turn state `held`. Add `NOT ADOPTED`
-      to the status-bucket table as Failed, teach the staged-membership facts about
-      `held`, expose a binding for Python fallback loaders, and make previously indexed
-      held members re-project."
-  - id: held-state
-    title: Consume the held state in sase and keep the held flag truthful
-    depends_on:
-      - core-held
-    size: medium
-    description:
-      "held-state: bucket `held` as Failed but nonterminal and never in flight. Show the
-      member as `NOT ADOPTED ‖` with no ticking clock, move it to the settled monitor
-      lane, and route the filesystem fallback loaders through the binding. Make every
-      not-adopted path set the durable held flag and every successful readopt clear it."
-  - id: session-rollup
-    title: One failure-aware session rollup that every surface consumes
-    depends_on:
-      - held-state
-    size: medium
-    description:
-      "session-rollup: not-adopted members never count as started work. A failed turn
-      stays the session's state until a real later turn supersedes it, for both plan and
-      plain roots. Clan roster, waves, tribe summary, BY_STATUS, and count chips all
-      read the one session rollup. A `FailureFocus` record carries the cause to
-      presentation, and a cross-surface consistency test pins it all."
-  - id: row-signals
-    title: Failure signals on Agents-tab rows, waves, and jump strips
-    depends_on:
-      - session-rollup
-    size: medium
-    description:
-      "row-signals: render the failure clearly in the list. Add a clan-row cause chip
-      naming the failed member and its cause, show the failure time instead of a running
-      hourglass on Failed rollups, and draw a red ✗ wave pip and ▶→✗ in WAVES. Put the ‖
-      glyph in SESSION TURNS and add a visual golden for the incident shape."
-  - id: attention-callout
-    title: NEEDS ATTENTION callout in session and clan detail panels, plus docs
-    depends_on:
-      - row-signals
-    size: medium
-    description:
-      "attention-callout: a left-barred NEEDS ATTENTION callout at the top of the
-      session and clan detail panels. It says which turn failed, the cause, any
-      not-adopted handoff, the downstream members it blocks, and the exact next step.
-      The tribe NEEDS ATTENTION entry reuses it. Update the status, glyph, and monitor
-      docs, and add panel goldens."
+- id: core-held
+  title: Project held staged monitors as a first-class state in sase-core
+  depends_on: []
+  size: medium
+  description: 'core-held: in sase-core, project a staged monitor member whose `monitor_stage_held`
+    flag is set as monitor turn state `held`. Add `NOT ADOPTED` to the status-bucket
+    table as Failed, teach the staged-membership facts about `held`, expose a binding
+    for Python fallback loaders, and make previously indexed held members re-project.'
+- id: held-state
+  title: Consume the held state in sase and keep the held flag truthful
+  depends_on:
+  - core-held
+  size: medium
+  description: 'held-state: bucket `held` as Failed but nonterminal and never in flight.
+    Show the member as `NOT ADOPTED ‖` with no ticking clock, move it to the settled
+    monitor lane, and route the filesystem fallback loaders through the binding. Make
+    every not-adopted path set the durable held flag and every successful readopt
+    clear it.'
+- id: session-rollup
+  title: One failure-aware session rollup that every surface consumes
+  depends_on:
+  - held-state
+  size: medium
+  description: 'session-rollup: not-adopted members never count as started work. A
+    failed turn stays the session''s state until a real later turn supersedes it,
+    for both plan and plain roots. Clan roster, waves, tribe summary, BY_STATUS, and
+    count chips all read the one session rollup. A `FailureFocus` record carries the
+    cause to presentation, and a cross-surface consistency test pins it all.'
+- id: row-signals
+  title: Failure signals on Agents-tab rows, waves, and jump strips
+  depends_on:
+  - session-rollup
+  size: medium
+  description: 'row-signals: render the failure clearly in the list. Add a clan-row
+    cause chip naming the failed member and its cause, show the failure time instead
+    of a running hourglass on Failed rollups, and draw a red ✗ wave pip and ▶→✗ in
+    WAVES. Put the ‖ glyph in SESSION TURNS and add a visual golden for the incident
+    shape.'
+- id: attention-callout
+  title: NEEDS ATTENTION callout in session and clan detail panels, plus docs
+  depends_on:
+  - row-signals
+  size: medium
+  description: 'attention-callout: a left-barred NEEDS ATTENTION callout at the top
+    of the session and clan detail panels. It says which turn failed, the cause, any
+    not-adopted handoff, the downstream members it blocks, and the exact next step.
+    The tribe NEEDS ATTENTION entry reuses it. Update the status, glyph, and monitor
+    docs, and add panel goldens.'
 proposed_by: bbugyi200.athena.1f4
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-22 08:33:02
 status: wip
+bead_id: sase-1ux
 ---
 
-- **PROMPT:**
-  [prompts/202611/failed_clan_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/failed_clan_visibility.md)
+- **PROMPT:** [prompts/202611/failed_clan_visibility.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/failed_clan_visibility.md)
+- **BEAD:** [sase-1ux](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1ux/README.md)
 
 # Plan: Make failed agent sessions and clans unmistakable
 
