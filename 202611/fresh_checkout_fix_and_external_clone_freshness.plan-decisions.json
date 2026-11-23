@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "docs_bootstrap",
+      "kind": "choice",
+      "ask": "Should sase-backed fix/check recipes run the full `_setup` only when the venv lacks sase?",
+      "why": "The host runs `just fix` on every sase commit; only fresh checkouts should pay setup",
+      "choices": [
+        {
+          "key": "lazy",
+          "label": "Probe first; a provisioned `just fix` stays offline and never rebuilds sase_core_rs"
+        },
+        {
+          "key": "setup",
+          "label": "Depend on `_setup`; every fix and commit hook fetches sase-core and may rebuild"
+        }
+      ],
+      "default": "lazy",
+      "effective_default": "lazy",
+      "requested_verified": false
+    }
+  ]
+}
