@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "lock_probe",
+      "kind": "choice",
+      "ask": "How should the lock-wait tests detect that the child opened vault.lock on macOS?",
+      "why": "The lock-wait replan path is shared code; macOS users hit it too",
+      "choices": [
+        {
+          "key": "portable",
+          "label": "Keep /proc on Linux and poll lsof by inode on macOS; macOS keeps lock-wait coverage"
+        },
+        {
+          "key": "linux_only",
+          "label": "Gate the three lock-wait tests to Linux; simpler, but macOS loses that coverage"
+        }
+      ],
+      "default": "portable",
+      "effective_default": "portable",
+      "requested_verified": false
+    }
+  ]
+}
