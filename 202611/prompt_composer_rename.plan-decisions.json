@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "page_path",
+      "kind": "choice",
+      "ask": "Should the reference page also move from reference/tui/prompt-input.md to reference/tui/prompt-composer.md?",
+      "why": "The retitle carries the rename; moving the page churns inbound links for no reader benefit",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Keep the URL; retitle the page, its H1, and its nav label only"
+        },
+        {
+          "key": "move",
+          "label": "Move the page with tools/docs_move and leave a redirect from the old URL"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    },
+    {
+      "id": "property_panel_name",
+      "kind": "choice",
+      "ask": "Should the new glossary entry call the FrontmatterPanel the \"property panel\"?",
+      "why": "The research's pick; the user, empty state, and property picker modals all say \"property\"",
+      "choices": [
+        {
+          "key": "property",
+          "label": "Entry says \"property panel\" and notes the UI and docs call it the frontmatter panel"
+        },
+        {
+          "key": "frontmatter",
+          "label": "Entry says \"frontmatter panel\", matching the border title and the docs"
+        }
+      ],
+      "default": "property",
+      "effective_default": "property",
+      "requested_verified": false
+    },
+    {
+      "id": "memory_glossary_prompt_composer",
+      "kind": "toggle",
+      "ask": "Add the Prompt Composer glossary strand and republish the generated instructions?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "glossary",
+          "glossary:prompt-composer"
+        ]
+      },
+      "requested": "I would like to rename the prompt input widget to \"prompt composer\" (update any appropriate documentation) and add a new glossary term for \"prompt composer\"?",
+      "provenance": "asked",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "glossary",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/glossary.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Agent Clan",
+            "Agent Data Card",
+            "Agent Data Card Block",
+            "Agent Data Deck",
+            "Agent Hijack",
+            "Agent Hood",
+            "Agent Instruction File",
+            "Agent Neighbor",
+            "Agent Node",
+            "Agent Relation Jump Target",
+            "Agent Tab",
+            "Agent Tribe",
+            "Agent Turn",
+            "Artifact",
+            "Artifact Markdown File",
+            "Artifact Reference",
+            "Clan Wave",
+            "Core Memory",
+            "Current Project",
+            "Deck Panel",
+            "Failure Signature",
+            "Feature Flag",
+            "Flag Bead",
+            "Gate Turn",
+            "Goal",
+            "Instruction Bundle",
+            "Instruction Manifest",
+            "Job",
+            "LLM Calls",
+            "Machine Tab",
+            "Macro",
+            "Macro Invocation",
+            "Macro Memory",
+            "Macro Part",
+            "Macro Swarm",
+            "Macro Workflow",
+            "Memory Strand",
+            "Memory Web",
+            "Named Proc",
+            "Nav Item",
+            "Nav Section",
+            "Node Panel",
+            "Oneshot Service Proc",
+            "Patch",
+            "Proc",
+            "Project Tag",
+            "Prompt Stash",
+            "Raw Prompt",
+            "Receipt",
+            "Reference Memory",
+            "Required Plugin",
+            "Routine",
+            "Sase Agent",
+            "Sase Agent Session",
+            "Sase Gate",
+            "Sase Monitor",
+            "Sase Node",
+            "Sase Project",
+            "Sase Repo",
+            "Sase Scheduler",
+            "Sase Service",
+            "Sase Turn",
+            "Sase Workspace",
+            "Service Proc",
+            "Stash Trash",
+            "Stitch",
+            "Strand Keyword",
+            "Task Type",
+            "Tool Catalog",
+            "Tool Run",
+            "Triage Verdict",
+            "Usage Window"
+          ]
+        },
+        {
+          "selector": "glossary",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Goal Ledger"
+          ]
+        },
+        {
+          "selector": "glossary:prompt-composer",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/glossary/prompt-composer.md",
+          "type": "strand",
+          "exists": false
+        }
+      ]
+    }
+  ]
+}
