@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "sase_decisions_web",
+      "kind": "toggle",
+      "ask": "Should sase's decisions web load on demand, add a rosters-load-on-demand record, and mark the old record superseded?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "decisions",
+          "decisions:rosters-load-on-demand",
+          "decisions:webs-render-in-their-own-section"
+        ]
+      },
+      "requested": "As a part of this change, we should update the decisions memories appropriately for both of these projects (sase and bob-cli).",
+      "provenance": "asked",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "decisions",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "A Gate Never Blocks An Agent",
+            "Adapters Normalize Harnesses",
+            "Agents Are Single-Turn",
+            "Agents-Sync Is Publish-Only, The Import Leg Is Deleted",
+            "Check-Full Is Explicit-Only",
+            "CI Is Two-Speed",
+            "Completion Is Host-Owned",
+            "Expensive Commands Are Recorded Before They Are Admitted",
+            "Explicit Handoff Fails Closed",
+            "Global Install Is Human-Only",
+            "Goal Ledger",
+            "Goals Host Binds",
+            "Guarded Recipes Refuse Raw Agent Runs",
+            "Handoffs End Through Host Completion",
+            "Hold Admission Uses Pull Evaluation With Fail-Open TTL",
+            "Instructions Are Rendered Per Invocation And Delivered By Adapters",
+            "Legacy V1 Agent Transport Is Read-Only History, Not An Import Source",
+            "Machine Artifact-Link Writes Stay Off the Primary",
+            "Memory Links Are Authored",
+            "Memory Webs",
+            "Memory Webs Render In Their Own Section",
+            "Native Helpers Return; Only Roots Declare",
+            "No Retrieval Mechanism Before Its Corpus",
+            "Plugins May Mount Top-Level Commands",
+            "Projects Are Shown By Name, Never By Directory Key",
+            "Receipts Prove Before They Skip",
+            "Size Aliases Descend The Effort Ladder",
+            "The Committed AGENTS.md Stays A Readable Projection",
+            "The Rust Core Is Required",
+            "Triage Annotates; It Never Changes an Exit Code",
+            "Verification Is Two-Speed"
+          ]
+        },
+        {
+          "selector": "decisions:rosters-load-on-demand",
+          "kind": "strand",
+          "scope": "project",
+          "path": "sase/memory/decisions/rosters-load-on-demand.md",
+          "type": "strand",
+          "exists": false
+        },
+        {
+          "selector": "decisions:webs-render-in-their-own-section",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Memory Webs Render In Their Own Section"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bob_cli_decisions",
+      "kind": "toggle",
+      "ask": "Should bob-cli's decisions web load on demand, with a rewritten preamble and a planning-time policy record?",
+      "why": "Requested for both projects; bob-cli's Codex bundle is already 4.5 KB over its cap",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    },
+    {
+      "id": "glossary_memory_web",
+      "kind": "toggle",
+      "ask": "Should the memory-web glossary strand stop saying every descriptor carries its roster into instructions?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "glossary:memory-web"
+        ]
+      },
+      "corrects": "so its body always renders in the generated document's Memory Webs section and carries a roster naming every strand",
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "glossary:memory-web",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/glossary.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Memory Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bob_cli_gotchas",
+      "kind": "toggle",
+      "ask": "Should bob-cli get a tiny core gotchas note so its release-train rule stays visible on every turn?",
+      "why": "New always-loaded guidance the prompt did not ask for; turn it on to keep that rule ambient",
+      "default": false,
+      "effective_default": false,
+      "requested_verified": false
+    }
+  ]
+}
