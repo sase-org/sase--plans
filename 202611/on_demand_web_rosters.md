@@ -1,131 +1,119 @@
 ---
 tier: epic
-title:
-  On-demand memory web rosters — read the decisions roster when planning, not on every
-  turn
-goal:
-  "Any memory web can declare `roster_loading: on_demand`. Agent instruction bundles and
-  the committed AGENTS.md then carry a short generated pointer instead of the full
-  roster. The pointer names the exact audited command and lists who MUST run it:
-  planners and researchers, plus anyone changing governed behavior without a plan. The
-  command is `sase memory read roster:<web>`, it batches with strand reads, and the TUI
-  shows it in the agent MEMORY lane and on the Memory panel's web card. A bare read of
-  an on-demand web can no longer dump every strand body by accident. The decisions webs
-  in sase and bob-cli adopt it, so the decisions section drops from about 8.4 KB to
-  about 0.8 KB in sase and from about 25.6 KB to about 1 KB in bob-cli. bob-cli's Codex
-  bundle goes from over its cap to roughly 19 KB of headroom."
+title: On-demand memory web rosters — read the decisions roster when planning, not
+  on every turn
+goal: 'Any memory web can declare `roster_loading: on_demand`. Agent instruction bundles
+  and the committed AGENTS.md then carry a short generated pointer instead of the
+  full roster. The pointer names the exact audited command and lists who MUST run
+  it: planners and researchers, plus anyone changing governed behavior without a plan.
+  The command is `sase memory read roster:<web>`, it batches with strand reads, and
+  the TUI shows it in the agent MEMORY lane and on the Memory panel''s web card. A
+  bare read of an on-demand web can no longer dump every strand body by accident.
+  The decisions webs in sase and bob-cli adopt it, so the decisions section drops
+  from about 8.4 KB to about 0.8 KB in sase and from about 25.6 KB to about 1 KB in
+  bob-cli. bob-cli''s Codex bundle goes from over its cap to roughly 19 KB of headroom.'
 decisions:
   sase_decisions_web:
-    ask:
-      Should sase's decisions web load on demand, add a rosters-load-on-demand record,
-      and mark the old record superseded?
+    ask: Should sase's decisions web load on demand, add a rosters-load-on-demand
+      record, and mark the old record superseded?
     memory:
-      - decisions
-      - decisions:rosters-load-on-demand
-      - decisions:webs-render-in-their-own-section
+    - decisions
+    - decisions:rosters-load-on-demand
+    - decisions:webs-render-in-their-own-section
     default: true
-    requested:
-      As a part of this change, we should update the decisions memories appropriately
+    requested: As a part of this change, we should update the decisions memories appropriately
       for both of these projects (sase and bob-cli).
     answer: true
   bob_cli_decisions:
-    ask:
-      Should bob-cli's decisions web load on demand, with a rewritten preamble and a
-      planning-time policy record?
+    ask: Should bob-cli's decisions web load on demand, with a rewritten preamble
+      and a planning-time policy record?
     default: true
-    why:
-      Requested for both projects; bob-cli's Codex bundle is already 4.5 KB over its cap
+    why: Requested for both projects; bob-cli's Codex bundle is already 4.5 KB over
+      its cap
     answer: true
   glossary_memory_web:
-    ask:
-      Should the memory-web glossary strand stop saying every descriptor carries its
-      roster into instructions?
+    ask: Should the memory-web glossary strand stop saying every descriptor carries
+      its roster into instructions?
     memory:
-      - glossary:memory-web
+    - glossary:memory-web
     default: true
-    corrects:
-      so its body always renders in the generated document's Memory Webs section and
-      carries a roster naming every strand
+    corrects: so its body always renders in the generated document's Memory Webs section
+      and carries a roster naming every strand
     answer: true
   bob_cli_gotchas:
-    ask:
-      Should bob-cli get a tiny core gotchas note so its release-train rule stays
+    ask: Should bob-cli get a tiny core gotchas note so its release-train rule stays
       visible on every turn?
     default: false
-    why:
-      New always-loaded guidance the prompt did not ask for; turn it on to keep that
-      rule ambient
+    why: New always-loaded guidance the prompt did not ask for; turn it on to keep
+      that rule ambient
     answer: true
 phases:
-  - id: roster-axis
-    title: The roster_loading axis and the generated on-demand pointer
-    depends_on: []
-    size: medium
-    description:
-      "roster-axis: parse and validate `roster_loading: always | on_demand` and
-      `roster_read_when:` on web descriptors, reserve the `roster` web slug, and render
-      on-demand webs into AGENTS.md and instruction bundles with a generated pointer in
-      place of the managed roster. The on-disk descriptor keeps its full roster. Also
-      remove on-demand webs from the compaction ladder, update the Memory Webs intro and
-      SASE Memory template text, add a Roster column to `sase memory web list`, and
-      update the reference docs."
-  - id: roster-read
-    title: The audited roster:<web> read, the bare-web guard, and skill text
-    depends_on:
-      - roster-axis
-    size: medium
-    description:
-      "roster-read: add the `roster:<web>` selector to `sase memory read` and `sase
-      memory show`. It renders in Markdown, rich, and JSON, and each read records one
-      schema-v3 audit event before printing. Add the CLI-only bare-web guard with
-      `-a/--all-strands`. Update the descriptor-read error text and the report's
-      reproduced command. Update the `/sase_memory_read` skill source and add one
-      project-agnostic sentence to `/sase_plan`. Update docs and regenerate CLI help."
-  - id: tui-surfaces
-    title: TUI surfaces for on-demand rosters and roster reads
-    depends_on:
-      - roster-axis
-      - roster-read
-    size: small
-    description:
-      "tui-surfaces: show roster reads correctly in the agent MEMORY lane, including the
-      report hint and the version chip. Give the Memory panel's on-demand webs an ON
-      DEMAND badge, a `Roster` row, a `Read when` row, a `Last roster read` row, and a
-      rail-row suffix. Update targeted visual goldens if they cover these surfaces."
-  - id: adopt-sase
-    title: sase's decisions web adopts the on-demand roster
-    depends_on:
-      - roster-axis
-      - roster-read
-    size: small
-    description:
-      "adopt-sase: flip `sase/memory/decisions.md` to on-demand with its read triggers.
-      Add the `rosters-load-on-demand` record, mark `webs-render-in-their-own-section`
-      superseded in part, and correct the memory-web glossary strand, each as its memory
-      decision allows. Run `sase memory init` and `just fix`, verify the bundle shrank,
-      and deploy the updated skills from the landed tree."
-  - id: adopt-bob-cli
-    title: bob-cli's decisions web adopts the on-demand roster
-    depends_on:
-      - roster-axis
-      - roster-read
-    size: small
-    description:
-      "adopt-bob-cli: in the bob-cli checkout opened with `/sase_repo`, flip
-      `sase/memory/decisions.md` to on-demand. Rewrite its preamble around planning-time
-      reads and the governed domains, and add the policy record and the gotchas note as
-      the memory decisions allow. Regenerate AGENTS.md/CLAUDE.md with a sase build that
-      understands the new key, and verify the Codex bundle fits with no compaction."
+- id: roster-axis
+  title: The roster_loading axis and the generated on-demand pointer
+  depends_on: []
+  size: medium
+  description: 'roster-axis: parse and validate `roster_loading: always | on_demand`
+    and `roster_read_when:` on web descriptors, reserve the `roster` web slug, and
+    render on-demand webs into AGENTS.md and instruction bundles with a generated
+    pointer in place of the managed roster. The on-disk descriptor keeps its full
+    roster. Also remove on-demand webs from the compaction ladder, update the Memory
+    Webs intro and SASE Memory template text, add a Roster column to `sase memory
+    web list`, and update the reference docs.'
+- id: roster-read
+  title: The audited roster:<web> read, the bare-web guard, and skill text
+  depends_on:
+  - roster-axis
+  size: medium
+  description: 'roster-read: add the `roster:<web>` selector to `sase memory read`
+    and `sase memory show`. It renders in Markdown, rich, and JSON, and each read
+    records one schema-v3 audit event before printing. Add the CLI-only bare-web guard
+    with `-a/--all-strands`. Update the descriptor-read error text and the report''s
+    reproduced command. Update the `/sase_memory_read` skill source and add one project-agnostic
+    sentence to `/sase_plan`. Update docs and regenerate CLI help.'
+- id: tui-surfaces
+  title: TUI surfaces for on-demand rosters and roster reads
+  depends_on:
+  - roster-axis
+  - roster-read
+  size: small
+  description: 'tui-surfaces: show roster reads correctly in the agent MEMORY lane,
+    including the report hint and the version chip. Give the Memory panel''s on-demand
+    webs an ON DEMAND badge, a `Roster` row, a `Read when` row, a `Last roster read`
+    row, and a rail-row suffix. Update targeted visual goldens if they cover these
+    surfaces.'
+- id: adopt-sase
+  title: sase's decisions web adopts the on-demand roster
+  depends_on:
+  - roster-axis
+  - roster-read
+  size: small
+  description: 'adopt-sase: flip `sase/memory/decisions.md` to on-demand with its
+    read triggers. Add the `rosters-load-on-demand` record, mark `webs-render-in-their-own-section`
+    superseded in part, and correct the memory-web glossary strand, each as its memory
+    decision allows. Run `sase memory init` and `just fix`, verify the bundle shrank,
+    and deploy the updated skills from the landed tree.'
+- id: adopt-bob-cli
+  title: bob-cli's decisions web adopts the on-demand roster
+  depends_on:
+  - roster-axis
+  - roster-read
+  size: small
+  description: 'adopt-bob-cli: in the bob-cli checkout opened with `/sase_repo`, flip
+    `sase/memory/decisions.md` to on-demand. Rewrite its preamble around planning-time
+    reads and the governed domains, and add the policy record and the gotchas note
+    as the memory decisions allow. Regenerate AGENTS.md/CLAUDE.md with a sase build
+    that understands the new key, and verify the Codex bundle fits with no compaction.'
 proposed_by: bbugyi200.athena.1g7
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-25 15:44:35
 status: wip
+bead_id: sase-1v7
 ---
 
-- **PROMPT:**
-  [prompts/202611/on_demand_web_rosters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/on_demand_web_rosters.md)
+- **PROMPT:** [prompts/202611/on_demand_web_rosters.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/on_demand_web_rosters.md)
+- **BEAD:** [sase-1v7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1v7/README.md)
 
 # On-demand memory web rosters
 
