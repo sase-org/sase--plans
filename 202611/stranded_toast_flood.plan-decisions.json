@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "coalesce",
+      "kind": "choice",
+      "ask": "Should one warmup pass that finds more than three newly stranded beads collapse into a single summary toast?",
+      "why": "a genuine mass stranding (host reboot, killed clan) would otherwise still bury the screen",
+      "choices": [
+        {
+          "key": "coalesce",
+          "label": "Bursts above three beads become one summary toast naming the first three ids plus a \"+N more\" count"
+        },
+        {
+          "key": "per_leaf",
+          "label": "Every newly stranded bead keeps its own toast, even in large genuine bursts"
+        }
+      ],
+      "default": "coalesce",
+      "effective_default": "coalesce",
+      "requested_verified": false
+    }
+  ]
+}
