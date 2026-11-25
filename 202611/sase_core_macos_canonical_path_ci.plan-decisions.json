@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "archive_paths",
+      "kind": "choice",
+      "ask": "Should named dismissed-bundle lookups report the bundle path under the caller's root instead of its canonical form?",
+      "why": "Other store reads return the stored caller-rooted key, and the feature's own tests expect it",
+      "choices": [
+        {
+          "key": "lexical",
+          "label": "Core returns caller-rooted paths from index and fallback hits; existing assertions stay as-is"
+        },
+        {
+          "key": "canonical",
+          "label": "Keep canonical output; rewrite 8 Rust/Py assertions to expect canonicalized paths"
+        }
+      ],
+      "default": "lexical",
+      "effective_default": "lexical",
+      "requested_verified": false
+    },
+    {
+      "id": "ci_no_fail_fast",
+      "kind": "choice",
+      "ask": "Should the CI test step run with --no-fail-fast so one failing test binary cannot hide failures in later binaries?",
+      "why": "cargo stopped at sase_core's lib tests and hid a 9th macOS failure in sase_core_py",
+      "choices": [
+        {
+          "key": "ci",
+          "label": "Add --no-fail-fast to the CI test step only; red runs list every binary's failures"
+        },
+        {
+          "key": "none",
+          "label": "Leave CI as-is; a masked failure surfaces only after the one ahead of it is fixed"
+        }
+      ],
+      "default": "ci",
+      "effective_default": "ci",
+      "requested_verified": false
+    },
+    {
+      "id": "agents_md_repro",
+      "kind": "choice",
+      "ask": "Should sase-core's AGENTS.md macOS bullet gain a Linux repro recipe that uses a symlinked TMPDIR?",
+      "why": "The repro turns a macOS-only CI round trip into a local test run of under a minute",
+      "choices": [
+        {
+          "key": "add",
+          "label": "Extend the existing canonicalization bullet with the TMPDIR-through-a-symlink repro command"
+        },
+        {
+          "key": "skip",
+          "label": "Leave AGENTS.md unchanged"
+        }
+      ],
+      "default": "add",
+      "effective_default": "add",
+      "requested_verified": false
+    }
+  ]
+}
