@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "bucket_isolation",
+      "kind": "choice",
+      "ask": "Should one unreadable agy bucket be dropped with a Partial diagnostic instead of failing the whole observation?",
+      "why": "One drifted bucket blanked the in-use Gemini windows for 40h; the store merges Partial safely",
+      "choices": [
+        {
+          "key": "isolate",
+          "label": "Drops only the bad bucket; the other windows land as a Partial ok observation naming it"
+        },
+        {
+          "key": "strict",
+          "label": "Any unreadable bucket still blanks every agy window, as in this outage"
+        }
+      ],
+      "default": "isolate",
+      "effective_default": "isolate",
+      "requested_verified": false
+    }
+  ]
+}
