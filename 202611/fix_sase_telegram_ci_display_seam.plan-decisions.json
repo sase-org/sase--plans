@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "drift_watch",
+      "kind": "choice",
+      "ask": "Run sase-telegram CI daily (plus manual dispatch) so sase-master drift surfaces within a day?",
+      "why": "this breakage sat unseen for 14 days and scheduled minutes are free on a public repo",
+      "choices": [
+        {
+          "key": "daily",
+          "label": "Add a daily cron and workflow_dispatch to ci.yml; free on a public repo, red runs send email"
+        },
+        {
+          "key": "skip",
+          "label": "Leave ci.yml untouched; drift stays hidden until the next sase-telegram push"
+        }
+      ],
+      "default": "daily",
+      "effective_default": "daily",
+      "requested_verified": false
+    }
+  ]
+}
