@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "prose_highlight",
+      "kind": "toggle",
+      "ask": "Underline declared snippets inside the question text (teal, turning green once copied)?",
+      "why": "Shows what y can copy without adding glyphs, so wrapping and mouse selection stay intact",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
