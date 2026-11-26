@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "patience_budget",
+      "kind": "choice",
+      "ask": "How long should a background agent runner wait out a busy agent index before failing the launch?",
+      "why": "Far beyond any healthy lock hold, yet short next to a dependency wait",
+      "choices": [
+        {
+          "key": "s60",
+          "label": "Covers checkpoint and WAL-recovery stalls on a loaded host; a wedged index fails in a minute"
+        },
+        {
+          "key": "s30",
+          "label": "Fails a wedged index sooner but leaves less headroom on a loaded host"
+        },
+        {
+          "key": "s300",
+          "label": "Tolerates very long stalls but hides a wedged index behind a long silent boot"
+        }
+      ],
+      "default": "s60",
+      "effective_default": "s60",
+      "requested_verified": false
+    }
+  ]
+}
