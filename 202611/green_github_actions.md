@@ -1,93 +1,89 @@
 ---
 tier: epic
 title: Green GitHub Actions for sase
-goal: "Every red sase GitHub Actions workflow is green on the landed master tip or
+goal: 'Every red sase GitHub Actions workflow is green on the landed master tip or
   handed to a named owner with evidence, each traced to a root cause, with no raised
   timeouts, weakened assertions, or blindly regenerated goldens.
 
-  "
+  '
 decisions:
   core_cut:
-    ask:
-      Propose a gate that dispatches a sase-core release-plz cut to clear Publish's
+    ask: Propose a gate that dispatches a sase-core release-plz cut to clear Publish's
       CORE_LAG?
     choices:
-      gate:
-        ci-proof proposes a /sase_gate for the core cut; nothing publishes until you
-        approve
+      gate: ci-proof proposes a /sase_gate for the core cut; nothing publishes until
+        you approve
       leave: No core cut proposed; Publish and release PR
     default: gate
-    why:
-      the steward cannot cut core with merge authority off; the gate still needs your
-      approval
+    why: the steward cannot cut core with merge authority off; the gate still needs
+      your approval
     answer: gate
 phases:
-  - id: steward-wire
-    title: Send Rust the exact release-asset wire shape
-    depends_on: []
-    size: small
-    description: "steward-wire: drop the transport-only asset id from the release wire,
-      read abandoned-observation asset ids from the raw release, fix the fixtures that
-      encode the wrong shape, and add real-binding regression coverage.
+- id: steward-wire
+  title: Send Rust the exact release-asset wire shape
+  depends_on: []
+  size: small
+  description: 'steward-wire: drop the transport-only asset id from the release wire,
+    read abandoned-observation asset ids from the raw release, fix the fixtures that
+    encode the wrong shape, and add real-binding regression coverage.
 
-      "
-  - id: bench-bead-path
-    title: Make bench_bead.py runnable as a script again
-    depends_on: []
-    size: xsmall
-    description: "bench-bead-path: add the repo-root sys.path bootstrap to
-      tests/perf/bench_bead.py and a static guard over every Justfile-invoked perf
-      script.
+    '
+- id: bench-bead-path
+  title: Make bench_bead.py runnable as a script again
+  depends_on: []
+  size: xsmall
+  description: 'bench-bead-path: add the repo-root sys.path bootstrap to tests/perf/bench_bead.py
+    and a static guard over every Justfile-invoked perf script.
 
-      "
-  - id: leak-gate
-    title: Clear the four globals that fail the test-cost leak gate
-    depends_on: []
-    size: medium
-    description: "leak-gate: fix the four leaking module globals at their root so the CI
-      Telemetry global-leak blocking gate reports zero poisoning changes.
+    '
+- id: leak-gate
+  title: Clear the four globals that fail the test-cost leak gate
+  depends_on: []
+  size: medium
+  description: 'leak-gate: fix the four leaking module globals at their root so the
+    CI Telemetry global-leak blocking gate reports zero poisoning changes.
 
-      "
-  - id: master-gate-flakes
-    title: Root-cause the flakes that turned recent master SHAs red
-    depends_on: []
-    size: medium
-    description: "master-gate-flakes: reproduce and fix the four intermittent Master
-      Gate failures at their source, or record evidence-backed follow-ups.
+    '
+- id: master-gate-flakes
+  title: Root-cause the flakes that turned recent master SHAs red
+  depends_on: []
+  size: medium
+  description: 'master-gate-flakes: reproduce and fix the four intermittent Master
+    Gate failures at their source, or record evidence-backed follow-ups.
 
-      "
-  - id: visual-drift
-    title: Rebaseline the November golden drift after proving each change is intended
-    depends_on:
-      - master-gate-flakes
-    size: medium
-    description: "visual-drift: regenerate the 19 drifted PNG goldens only after tracing
-      each group to an intended change, fixing the retry-chain artifact loss if it is a
-      regression, and leaving flickering goldens to their flake owners.
+    '
+- id: visual-drift
+  title: Rebaseline the November golden drift after proving each change is intended
+  depends_on:
+  - master-gate-flakes
+  size: medium
+  description: 'visual-drift: regenerate the 19 drifted PNG goldens only after tracing
+    each group to an intended change, fixing the retry-chain artifact loss if it is
+    a regression, and leaving flickering goldens to their flake owners.
 
-      "
-  - id: ci-proof
-    title: Prove the workflows green on the landed tip
-    depends_on:
-      - steward-wire
-      - bench-bead-path
-      - leak-gate
-      - master-gate-flakes
-      - visual-drift
-    size: small
-    description:
-      "ci-proof: wait for Master Gate, dispatch and monitor Full CI and an observe-only
-      steward tick, triage leftovers, and handle the core_cut decision."
+    '
+- id: ci-proof
+  title: Prove the workflows green on the landed tip
+  depends_on:
+  - steward-wire
+  - bench-bead-path
+  - leak-gate
+  - master-gate-flakes
+  - visual-drift
+  size: small
+  description: 'ci-proof: wait for Master Gate, dispatch and monitor Full CI and an
+    observe-only steward tick, triage leftovers, and handle the core_cut decision.'
 proposed_by: bbugyi200.athena.1ge
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-26 06:30:31
 status: wip
+bead_id: sase-1vb
 ---
 
-- **PROMPT:**
-  [prompts/202611/green_github_actions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/green_github_actions.md)
+- **PROMPT:** [prompts/202611/green_github_actions.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/green_github_actions.md)
+- **BEAD:** [sase-1vb](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vb/README.md)
 
 # Green GitHub Actions for sase
 
