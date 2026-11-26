@@ -1,63 +1,57 @@
 ---
 tier: epic
 title: Fix the commit and monitor failures behind the 1gf agent session
-goal: "Commits from linked repositories outside the host checkout finish publication, a
-  failed finalizer is never re-run or reported as a provider failure, and monitors
-  started in scratch directories hand their follow-up back to the starter's workspace.
+goal: 'Commits from linked repositories outside the host checkout finish publication,
+  a failed finalizer is never re-run or reported as a provider failure, and monitors
+  started in scratch directories hand their follow-up back to the starter''s workspace.
 
-  "
+  '
 decisions:
   scratch_claim:
-    ask:
-      Should a scratch-directory monitor hold the starter's workspace claim until its
-      follow-up launches?
+    ask: Should a scratch-directory monitor hold the starter's workspace claim until
+      its follow-up launches?
     choices:
-      hold:
-        Supervisor holds the starter's claim; the follow-up always returns to the same
-        workspace
-      remember:
-        Only record the starter's workspace; a retaken workspace still degrades to pool
-        or 0
+      hold: Supervisor holds the starter's claim; the follow-up always returns to
+        the same workspace
+      remember: Only record the starter's workspace; a retaken workspace still degrades
+        to pool or 0
     default: hold
-    why:
-      Matches in-workspace monitors and guarantees the follow-up sees the starter's
+    why: Matches in-workspace monitors and guarantees the follow-up sees the starter's
       files
     answer: hold
 phases:
-  - id: release_evidence_project
-    title: Key commit release evidence to the publication project
-    depends_on: []
-    size: medium
-    description:
-      "release_evidence_project: resolve the commit's host project via the repo
-      inventory, record release evidence and enqueue publication under that one key, and
-      skip instead of failing when no project maps."
-  - id: finalizer_failure_not_provider_failure
-    title: Do not re-run finalizers after they fail
-    depends_on: []
-    size: medium
-    description:
-      "finalizer_failure_not_provider_failure: keep success-path finalizer exceptions
-      out of provider-failure finalization, and seed finalizer attempt numbers from
-      attempts already on disk."
-  - id: monitor_scratch_workspace
-    title: Keep the starter's workspace for scratch-directory monitors
-    depends_on: []
-    size: medium
-    description:
-      "monitor_scratch_workspace: resolve a monitor cwd outside every managed checkout
-      to the starter's workspace so the follow-up returns there; update tests and
-      monitor docs."
+- id: release_evidence_project
+  title: Key commit release evidence to the publication project
+  depends_on: []
+  size: medium
+  description: 'release_evidence_project: resolve the commit''s host project via the
+    repo inventory, record release evidence and enqueue publication under that one
+    key, and skip instead of failing when no project maps.'
+- id: finalizer_failure_not_provider_failure
+  title: Do not re-run finalizers after they fail
+  depends_on: []
+  size: medium
+  description: 'finalizer_failure_not_provider_failure: keep success-path finalizer
+    exceptions out of provider-failure finalization, and seed finalizer attempt numbers
+    from attempts already on disk.'
+- id: monitor_scratch_workspace
+  title: Keep the starter's workspace for scratch-directory monitors
+  depends_on: []
+  size: medium
+  description: 'monitor_scratch_workspace: resolve a monitor cwd outside every managed
+    checkout to the starter''s workspace so the follow-up returns there; update tests
+    and monitor docs.'
 proposed_by: bbugyi200.athena.1gj
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-26 07:38:23
 status: wip
+bead_id: sase-1vc
 ---
 
-- **PROMPT:**
-  [prompts/202611/linked_repo_commit_finalization_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/linked_repo_commit_finalization_fixes.md)
+- **PROMPT:** [prompts/202611/linked_repo_commit_finalization_fixes.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/linked_repo_commit_finalization_fixes.md)
+- **BEAD:** [sase-1vc](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vc/README.md)
 
 # Fix the commit and monitor failures behind the `1gf` agent session
 
