@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "decisions_memory",
+      "kind": "toggle",
+      "ask": "Finish the epic's decisions-web memory edits (supersession mark, full record, preamble line)?",
+      "default": true,
+      "effective_default": true,
+      "memory": {
+        "selectors": [
+          "decisions",
+          "decisions:rosters-load-on-demand",
+          "decisions:webs-render-in-their-own-section"
+        ]
+      },
+      "corrects": "web descriptor always renders its full roster in generated instructions is retired.",
+      "provenance": "correction",
+      "requested_verified": true,
+      "resolved": [
+        {
+          "selector": "decisions",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "A Gate Never Blocks An Agent",
+            "Adapters Normalize Harnesses",
+            "Agents Are Single-Turn",
+            "Agents-Sync Is Publish-Only, The Import Leg Is Deleted",
+            "Check-Full Is Explicit-Only",
+            "CI Is Two-Speed",
+            "Completion Is Host-Owned",
+            "Expensive Commands Are Recorded Before They Are Admitted",
+            "Explicit Handoff Fails Closed",
+            "Global Install Is Human-Only",
+            "Goal Ledger",
+            "Goals Host Binds",
+            "Guarded Recipes Refuse Raw Agent Runs",
+            "Handoffs End Through Host Completion",
+            "Hold Admission Uses Pull Evaluation With Fail-Open TTL",
+            "Instructions Are Rendered Per Invocation And Delivered By Adapters",
+            "Legacy V1 Agent Transport Is Read-Only History, Not An Import Source",
+            "Machine Artifact-Link Writes Stay Off the Primary",
+            "Memory Links Are Authored",
+            "Memory Webs",
+            "Memory Webs Render In Their Own Section",
+            "Native Helpers Return; Only Roots Declare",
+            "No Retrieval Mechanism Before Its Corpus",
+            "Plugins May Mount Top-Level Commands",
+            "Projects Are Shown By Name, Never By Directory Key",
+            "Receipts Prove Before They Skip",
+            "Rosters Load On Demand",
+            "Size Aliases Descend The Effort Ladder",
+            "The Committed AGENTS.md Stays A Readable Projection",
+            "The Rust Core Is Required",
+            "Triage Annotates; It Never Changes an Exit Code",
+            "Verification Is Two-Speed"
+          ]
+        },
+        {
+          "selector": "decisions:rosters-load-on-demand",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Rosters Load On Demand"
+          ]
+        },
+        {
+          "selector": "decisions:webs-render-in-their-own-section",
+          "kind": "web",
+          "scope": "project",
+          "path": "sase/memory/decisions.md",
+          "type": "web",
+          "exists": true,
+          "strands": [
+            "Memory Webs Render In Their Own Section"
+          ]
+        }
+      ]
+    }
+  ]
+}
