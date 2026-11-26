@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "autosync",
+      "kind": "choice",
+      "ask": "Should `just fix` regenerate the completion snapshot and `just lint` check it to stop recurring drift?",
+      "why": "`just fix` already regenerates the argparse-derived CLI docs; only this snapshot is skipped",
+      "choices": [
+        {
+          "key": "fix_and_lint",
+          "label": "Also sync it in `just fix` and check it in `just lint`, like the Footprint catalog (~1s per run)"
+        },
+        {
+          "key": "snapshot_only",
+          "label": "Only regenerate `cli_spec.json`; drift stays guarded solely by the sharded test suite"
+        }
+      ],
+      "default": "fix_and_lint",
+      "effective_default": "fix_and_lint",
+      "requested_verified": false
+    }
+  ]
+}
