@@ -2,30 +2,26 @@
 tier: tale
 size: medium
 title: Finish and land the on-demand memory web rosters epic (sase-1v7)
-goal:
-  The on-demand roster epic's leftover defects are fixed, its skill text is live in
-  every provider, `sase tool run check` passes, and epic sase-1v7 is closed with its
-  plan file marked done.
+goal: The on-demand roster epic's leftover defects are fixed, its skill text is live
+  in every provider, `sase tool run check` passes, and epic sase-1v7 is closed with
+  its plan file marked done.
 decisions:
   decisions_memory:
-    ask:
-      Finish the epic's decisions-web memory edits (supersession mark, full record,
+    ask: Finish the epic's decisions-web memory edits (supersession mark, full record,
       preamble line)?
     memory:
-      - decisions
-      - decisions:rosters-load-on-demand
-      - decisions:webs-render-in-their-own-section
+    - decisions
+    - decisions:rosters-load-on-demand
+    - decisions:webs-render-in-their-own-section
     default: true
-    corrects:
-      web descriptor always renders its full roster in generated instructions is
-      retired.
+    corrects: web descriptor always renders its full roster in generated instructions
+      is retired.
     answer: true
 proposed_by: bbugyi200.athena.sase-1v7.land
 proposed_with: claude/opus
 bead: sase-1v7
 decided_by: auto
-create_time: 2026-11-25 19:14:50
-status: wip
+status: done
 ---
 
 - **PARENT:**
