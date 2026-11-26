@@ -1,14 +1,13 @@
 ---
 tier: tale
 title: Fix busy lookup progress logging and finish sase-1vh
-goal:
-  Every busy lookup reports its first retry reliably, and the verified epic is closed.
+goal: Every busy lookup reports its first retry reliably, and the verified epic is
+  closed.
 size: small
 proposed_by: bbugyi200.athena.sase-1vh.land
 proposed_with: codex/gpt-6-astra
 bead: sase-1vh
-create_time: 2026-11-26 16:33:06
-status: wip
+status: done
 ---
 
 - **PARENT:**
