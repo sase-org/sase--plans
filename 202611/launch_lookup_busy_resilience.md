@@ -1,65 +1,61 @@
 ---
 tier: epic
 title: Make agent launches ride out a busy agent artifact index
-goal: "A detached agent runner survives a transiently busy agent artifact index or
+goal: 'A detached agent runner survives a transiently busy agent artifact index or
   dismissed-bundle index instead of failing its launch, while hot callers keep bounded
-  single-attempt lookups, fail-closed semantics hold, runner failure hints are typed and
-  honest, and the next busy failure names its SQLite lock class.
+  single-attempt lookups, fail-closed semantics hold, runner failure hints are typed
+  and honest, and the next busy failure names its SQLite lock class.
 
-  "
+  '
 decisions:
   patience_budget:
-    ask:
-      How long should a background agent runner wait out a busy agent index before
+    ask: How long should a background agent runner wait out a busy agent index before
       failing the launch?
     choices:
-      s60:
-        Covers checkpoint and WAL-recovery stalls on a loaded host; a wedged index fails
-        in a minute
+      s60: Covers checkpoint and WAL-recovery stalls on a loaded host; a wedged index
+        fails in a minute
       s30: Fails a wedged index sooner but leaves less headroom on a loaded host
-      s300:
-        Tolerates very long stalls but hides a wedged index behind a long silent boot
+      s300: Tolerates very long stalls but hides a wedged index behind a long silent
+        boot
     default: s60
     why: Far beyond any healthy lock hold, yet short next to a dependency wait
     answer: s60
 phases:
-  - id: runner-lookup-patience
-    title: Opt-in busy patience at the lookup facades, installed by the agent runner
-    depends_on: []
-    size: medium
-    description:
-      "runner-lookup-patience: add a process-wide LookupPatience policy and
-      retry_while_busy helper, wrap the artifact and dismissed-bundle lookup facades so
-      busy-incomplete results retry with capped backoff under patience, install it in
-      the agent runner entry with concise retry log lines, and test the default
-      single-attempt path stays unchanged."
-  - id: typed-transient-classification
-    title: Typed host lookup failures, provider-retry exclusion, honest runner hint
-    depends_on: []
-    size: small
-    description:
-      "typed-transient-classification: add an IndexLookupUnavailable base with a
-      transient flag for both lookup exceptions, exclude host lookup failures from
-      provider retry via is_host_owned_failure, and make record_runner_error print a
-      typed transient or index-repair hint instead of the coincidental provider match."
-  - id: busy-diagnostics
-    title: SQLite extended codes in sase-core busy lookup diagnostics
-    depends_on: []
-    size: small
-    description:
-      "busy-diagnostics: in sase-core, decorate busy/locked SQLite errors on the
-      artifact-index and dismissed-bundle lookup read paths with the extended code,
-      keeping busy classification, wire shapes, and bindings unchanged."
+- id: runner-lookup-patience
+  title: Opt-in busy patience at the lookup facades, installed by the agent runner
+  depends_on: []
+  size: medium
+  description: 'runner-lookup-patience: add a process-wide LookupPatience policy and
+    retry_while_busy helper, wrap the artifact and dismissed-bundle lookup facades
+    so busy-incomplete results retry with capped backoff under patience, install it
+    in the agent runner entry with concise retry log lines, and test the default single-attempt
+    path stays unchanged.'
+- id: typed-transient-classification
+  title: Typed host lookup failures, provider-retry exclusion, honest runner hint
+  depends_on: []
+  size: small
+  description: 'typed-transient-classification: add an IndexLookupUnavailable base
+    with a transient flag for both lookup exceptions, exclude host lookup failures
+    from provider retry via is_host_owned_failure, and make record_runner_error print
+    a typed transient or index-repair hint instead of the coincidental provider match.'
+- id: busy-diagnostics
+  title: SQLite extended codes in sase-core busy lookup diagnostics
+  depends_on: []
+  size: small
+  description: 'busy-diagnostics: in sase-core, decorate busy/locked SQLite errors
+    on the artifact-index and dismissed-bundle lookup read paths with the extended
+    code, keeping busy classification, wire shapes, and bindings unchanged.'
 proposed_by: bbugyi200.athena.1gu
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-26 14:45:28
 status: wip
+bead_id: sase-1vh
 ---
 
-- **PROMPT:**
-  [prompts/202611/launch_lookup_busy_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/launch_lookup_busy_resilience.md)
+- **PROMPT:** [prompts/202611/launch_lookup_busy_resilience.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/launch_lookup_busy_resilience.md)
+- **BEAD:** [sase-1vh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vh/README.md)
 
 # Make agent launches ride out a busy agent artifact index
 
