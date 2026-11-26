@@ -50,7 +50,7 @@ proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-26 14:45:28
-status: wip
+status: done
 bead_id: sase-1vh
 ---
 
