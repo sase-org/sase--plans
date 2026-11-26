@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "core_cut",
+      "kind": "choice",
+      "ask": "Propose a gate that dispatches a sase-core release-plz cut to clear Publish's CORE_LAG?",
+      "why": "the steward cannot cut core with merge authority off; the gate still needs your approval",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "ci-proof proposes a /sase_gate for the core cut; nothing publishes until you approve"
+        },
+        {
+          "key": "leave",
+          "label": "No core cut proposed; Publish and release PR"
+        }
+      ],
+      "default": "gate",
+      "effective_default": "gate",
+      "requested_verified": false
+    }
+  ]
+}
