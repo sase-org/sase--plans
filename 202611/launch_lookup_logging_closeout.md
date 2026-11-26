@@ -1,8 +1,8 @@
 ---
 tier: tale
 title: Fix busy lookup progress logging and finish sase-1vh
-goal: Every busy lookup reports its first retry reliably, and the verified epic is
-  closed.
+goal:
+  Every busy lookup reports its first retry reliably, and the verified epic is closed.
 size: small
 proposed_by: bbugyi200.athena.sase-1vh.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +14,11 @@ status: done
   [202611/launch_lookup_busy_resilience.md](https://github.com/sase-org/sase--plans/blob/main/202611/launch_lookup_busy_resilience.md)
 - **BEAD:**
   [sase-1vh](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vh/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vh.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vh.land.md)
+- **COMMITS:**
+  - [7e9861a](https://github.com/sase-org/sase/commit/7e9861ac4de136aad52aea34495bd0caf367754b)
+    — fix(agent-runner): log each busy lookup retry
 
 # Fix busy lookup progress logging and finish sase-1vh
 
