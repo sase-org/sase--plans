@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "dispatch_cut",
+      "kind": "choice",
+      "ask": "After the fix lands, should the implementer propose an immediate release cut that ships sase-core-rs 0.45.0?",
+      "why": "a cut happens within a day anyway; a manual cut spends ~75 MB of PyPI quota on your timing",
+      "choices": [
+        {
+          "key": "gate",
+          "label": "Propose the dry_run=false dispatch via /sase_gate; you confirm before anything publishes"
+        },
+        {
+          "key": "defer",
+          "label": "Dispatch nothing; the next daily cut or the steward's dispatch proves the fix within a day"
+        }
+      ],
+      "default": "defer",
+      "effective_default": "defer",
+      "requested_verified": false
+    }
+  ]
+}
