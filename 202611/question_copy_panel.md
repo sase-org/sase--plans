@@ -1,97 +1,90 @@
 ---
 tier: epic
 title: Question copy panel
-goal: "From the questions gate, the user can copy any agent-declared snippet, the
-  question text, the highlighted option, or the whole Q&A with two keypresses (`y` then
-  one key), exactly byte-for-byte, with visible progress through multi-paste workflows.
-  The same structured copy contract reaches Telegram and agent guidance.
+goal: 'From the questions gate, the user can copy any agent-declared snippet, the
+  question text, the highlighted option, or the whole Q&A with two keypresses (`y`
+  then one key), exactly byte-for-byte, with visible progress through multi-paste
+  workflows. The same structured copy contract reaches Telegram and agent guidance.
 
-  "
+  '
 decisions:
   prose_highlight:
-    ask:
-      Underline declared snippets inside the question text (teal, turning green once
-      copied)?
+    ask: Underline declared snippets inside the question text (teal, turning green
+      once copied)?
     default: true
-    why:
-      Shows what y can copy without adding glyphs, so wrapping and mouse selection stay
-      intact
+    why: Shows what y can copy without adding glyphs, so wrapping and mouse selection
+      stay intact
     answer: true
 phases:
-  - id: copy-contract
-    title: Core copy contract and creation-time validation
-    depends_on: []
-    size: medium
-    description:
-      "copy-contract: add the strict and tolerant `copy` normalizers, wire types, and
-      PyO3 bindings to sase-core, then route `sase questions` and question-gate creation
-      through them in sase while read paths stay tolerant."
-  - id: palette-foundation
-    title: Generalize the Copy as palette
-    depends_on: []
-    size: medium
-    description:
-      "palette-foundation: extend CopyAsModal and CopyAsContext with custom sections,
-      title, footer, marker gutter, aligned label column, badges, initial highlight, and
-      an opt-in verbatim preview pane, leaving every existing palette pixel-identical."
-  - id: copy-panel
-    title: Question copy panel behind y
-    depends_on:
-      - copy-contract
-      - palette-foundation
-    size: medium
-    description:
-      "copy-panel: rebind `y` in UserQuestionModal to open a QuestionCopyModal with
-      SNIPPETS and QUESTION sections, stable keys, ordered exact delivery, copied
-      checkmarks, a `yy` copy-all path that adds Copyable items, and tests, goldens, and
-      TUI docs."
-  - id: pane-cues
-    title: Discoverability cues on the question pane
-    depends_on:
-      - copy-panel
-    size: small
-    description:
-      'pane-cues: show copy progress on the question pane border, underline declared
-      snippets in the prose, and list declared items missing from the prose in a muted
-      "also copyable" block so no copiable value is hidden.'
-  - id: found-in-text
-    title: Conservative found-in-text detection
-    depends_on:
-      - pane-cues
-    size: medium
-    description:
-      "found-in-text: add a pure sase-core detector for fenced code, filtered backtick
-      spans, scheme URLs, and SASE artifact refs, and render its results as a dim FOUND
-      IN TEXT section in the copy panel."
-  - id: telegram-copy
-    title: Telegram copy buttons
-    depends_on:
-      - copy-contract
-    size: small
-    description:
-      "telegram-copy: render declared snippets on live Telegram question messages as
-      CopyTextButton rows, and list long or out-of-prose values in the message text so
-      Telegram shows every declared value."
-  - id: agent-guidance
-    title: Agent guidance, contract docs, and skill rollout
-    depends_on:
-      - pane-cues
-      - telegram-copy
-    size: small
-    description:
-      "agent-guidance: teach agents the `copy` field through the sase_questions skill
-      source with a worked example and authoring rules, document the contract, and
-      request the post-landing skill deploy."
+- id: copy-contract
+  title: Core copy contract and creation-time validation
+  depends_on: []
+  size: medium
+  description: 'copy-contract: add the strict and tolerant `copy` normalizers, wire
+    types, and PyO3 bindings to sase-core, then route `sase questions` and question-gate
+    creation through them in sase while read paths stay tolerant.'
+- id: palette-foundation
+  title: Generalize the Copy as palette
+  depends_on: []
+  size: medium
+  description: 'palette-foundation: extend CopyAsModal and CopyAsContext with custom
+    sections, title, footer, marker gutter, aligned label column, badges, initial
+    highlight, and an opt-in verbatim preview pane, leaving every existing palette
+    pixel-identical.'
+- id: copy-panel
+  title: Question copy panel behind y
+  depends_on:
+  - copy-contract
+  - palette-foundation
+  size: medium
+  description: 'copy-panel: rebind `y` in UserQuestionModal to open a QuestionCopyModal
+    with SNIPPETS and QUESTION sections, stable keys, ordered exact delivery, copied
+    checkmarks, a `yy` copy-all path that adds Copyable items, and tests, goldens,
+    and TUI docs.'
+- id: pane-cues
+  title: Discoverability cues on the question pane
+  depends_on:
+  - copy-panel
+  size: small
+  description: 'pane-cues: show copy progress on the question pane border, underline
+    declared snippets in the prose, and list declared items missing from the prose
+    in a muted "also copyable" block so no copiable value is hidden.'
+- id: found-in-text
+  title: Conservative found-in-text detection
+  depends_on:
+  - pane-cues
+  size: medium
+  description: 'found-in-text: add a pure sase-core detector for fenced code, filtered
+    backtick spans, scheme URLs, and SASE artifact refs, and render its results as
+    a dim FOUND IN TEXT section in the copy panel.'
+- id: telegram-copy
+  title: Telegram copy buttons
+  depends_on:
+  - copy-contract
+  size: small
+  description: 'telegram-copy: render declared snippets on live Telegram question
+    messages as CopyTextButton rows, and list long or out-of-prose values in the message
+    text so Telegram shows every declared value.'
+- id: agent-guidance
+  title: Agent guidance, contract docs, and skill rollout
+  depends_on:
+  - pane-cues
+  - telegram-copy
+  size: small
+  description: 'agent-guidance: teach agents the `copy` field through the sase_questions
+    skill source with a worked example and authoring rules, document the contract,
+    and request the post-landing skill deploy.'
 proposed_by: bbugyi200.athena.1gp
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-26 10:49:23
 status: wip
+bead_id: sase-1vd
 ---
 
-- **PROMPT:**
-  [prompts/202611/question_copy_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/question_copy_panel.md)
+- **PROMPT:** [prompts/202611/question_copy_panel.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/question_copy_panel.md)
+- **BEAD:** [sase-1vd](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vd/README.md)
 
 # Plan: Question copy panel
 
