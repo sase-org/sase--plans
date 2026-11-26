@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "scratch_claim",
+      "kind": "choice",
+      "ask": "Should a scratch-directory monitor hold the starter's workspace claim until its follow-up launches?",
+      "why": "Matches in-workspace monitors and guarantees the follow-up sees the starter's files",
+      "choices": [
+        {
+          "key": "hold",
+          "label": "Supervisor holds the starter's claim; the follow-up always returns to the same workspace"
+        },
+        {
+          "key": "remember",
+          "label": "Only record the starter's workspace; a retaken workspace still degrades to pool or 0"
+        }
+      ],
+      "default": "hold",
+      "effective_default": "hold",
+      "requested_verified": false
+    }
+  ]
+}
