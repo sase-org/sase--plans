@@ -2,20 +2,23 @@
 tier: tale
 size: medium
 title: Finish and land the on-demand memory web rosters epic (sase-1v7)
-goal: The on-demand roster epic's leftover defects are fixed, its skill text is live
-  in every provider, `sase tool run check` passes, and epic sase-1v7 is closed with
-  its plan file marked done.
+goal:
+  The on-demand roster epic's leftover defects are fixed, its skill text is live in
+  every provider, `sase tool run check` passes, and epic sase-1v7 is closed with its
+  plan file marked done.
 decisions:
   decisions_memory:
-    ask: Finish the epic's decisions-web memory edits (supersession mark, full record,
+    ask:
+      Finish the epic's decisions-web memory edits (supersession mark, full record,
       preamble line)?
     memory:
-    - decisions
-    - decisions:rosters-load-on-demand
-    - decisions:webs-render-in-their-own-section
+      - decisions
+      - decisions:rosters-load-on-demand
+      - decisions:webs-render-in-their-own-section
     default: true
-    corrects: web descriptor always renders its full roster in generated instructions
-      is retired.
+    corrects:
+      web descriptor always renders its full roster in generated instructions is
+      retired.
     answer: true
 proposed_by: bbugyi200.athena.sase-1v7.land
 proposed_with: claude/opus
@@ -28,6 +31,11 @@ status: done
   [202611/on_demand_web_rosters.md](https://github.com/sase-org/sase--plans/blob/main/202611/on_demand_web_rosters.md)
 - **BEAD:**
   [sase-1v7](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1v7/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1v7.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1v7.land.md)
+- **COMMITS:**
+  - [1fc4b14](https://github.com/sase-org/sase--plans/commit/1fc4b14ce0d865f5755cb7bf777bd6826b4c04f8)
+    — chore(sase-1v7): mark on-demand roster epic and land tale done
 
 # Finish and land on-demand memory web rosters (epic sase-1v7)
 
