@@ -1,77 +1,67 @@
 ---
 tier: epic
-title: "Backlog Epic 1: landing gates, test cost, and epic liveness"
-goal: "The five most important open task beads are fixed and closed. The land agent then
-  starts Backlog Epic 2, and the chain continues five beads at a time until no open task
-  beads remain.
+title: 'Backlog Epic 1: landing gates, test cost, and epic liveness'
+goal: 'The five most important open task beads are fixed and closed. The land agent
+  then starts Backlog Epic 2, and the chain continues five beads at a time until no
+  open task beads remain.
 
-  "
+  '
 phases:
-  - id: landing-safety
-    title: After-rebase import gate and screenshot --window safety
-    depends_on: []
-    size: medium
-    description:
-      "landing-safety: make the after-rebase import gate ignore virtualenv files so it
-      certifies again (sase-1un), and refuse sase screenshot --window targets it did not
-      launch (sase-1d9)."
-  - id: test-cost
-    title: Green, meaningful test-cost budgets
-    depends_on:
-      - landing-safety
-    size: large
-    description:
-      "test-cost: make just test-cost, check-full, and the CI Telemetry test-cost job
-      green and meaningful on master again, per the cost_budgets decision (sase-j0)."
-  - id: failed-turn-handoffs
-    title: Held staged handoffs from failed turns strand visibly
-    depends_on:
-      - test-cost
-    size: large
-    description:
-      "failed-turn-handoffs: stop treating a never-started staged handoff from an ended,
-      failed turn as a live owner in sase-core, so its bead strands visibly (sase-1sh)."
-  - id: zombie-epics
-    title: Host-owned liveness for zombie epics
-    depends_on:
-      - failed-turn-handoffs
-    size: large
-    description:
-      "zombie-epics: detect in_progress plan beads whose children are all closed and
-      whose land agent is gone, report today's zombies, and recover per zombie_recovery
-      (sase-12u)."
+- id: landing-safety
+  title: After-rebase import gate and screenshot --window safety
+  depends_on: []
+  size: medium
+  description: 'landing-safety: make the after-rebase import gate ignore virtualenv
+    files so it certifies again (sase-1un), and refuse sase screenshot --window targets
+    it did not launch (sase-1d9).'
+- id: test-cost
+  title: Green, meaningful test-cost budgets
+  depends_on:
+  - landing-safety
+  size: large
+  description: 'test-cost: make just test-cost, check-full, and the CI Telemetry test-cost
+    job green and meaningful on master again, per the cost_budgets decision (sase-j0).'
+- id: failed-turn-handoffs
+  title: Held staged handoffs from failed turns strand visibly
+  depends_on:
+  - test-cost
+  size: large
+  description: 'failed-turn-handoffs: stop treating a never-started staged handoff
+    from an ended, failed turn as a live owner in sase-core, so its bead strands visibly
+    (sase-1sh).'
+- id: zombie-epics
+  title: Host-owned liveness for zombie epics
+  depends_on:
+  - failed-turn-handoffs
+  size: large
+  description: 'zombie-epics: detect in_progress plan beads whose children are all
+    closed and whose land agent is gone, report today''s zombies, and recover per
+    zombie_recovery (sase-12u).'
 decisions:
   cost_budgets:
-    ask:
-      Re-baseline test-cost budgets whose misses trace to suite growth rather than a
-      named regression?
+    ask: Re-baseline test-cost budgets whose misses trace to suite growth rather than
+      a named regression?
     choices:
-      rebaseline:
-        Re-measure on a quiet host; reset stale budgets with headroom; fix only named
-        regressions
-      cut:
-        Keep every committed budget and cut suite cost until it passes; may need a child
-        epic
-      retire:
-        Drop the summary-level budgets from the gate and keep only the per-cause budgets
+      rebaseline: Re-measure on a quiet host; reset stale budgets with headroom; fix
+        only named regressions
+      cut: Keep every committed budget and cut suite cost until it passes; may need
+        a child epic
+      retire: Drop the summary-level budgets from the gate and keep only the per-cause
+        budgets
     default: rebaseline
-    why:
-      The suite grew from ~28k to ~62k tests since the budgets were set; a forever-red
+    why: The suite grew from ~28k to ~62k tests since the budgets were set; a forever-red
       gate gets ignored
     answer: rebaseline
   zombie_recovery:
-    ask:
-      Should the host relaunch the land agent of an epic whose children all closed while
-      no land agent is live?
+    ask: Should the host relaunch the land agent of an epic whose children all closed
+      while no land agent is live?
     choices:
-      relaunch:
-        Host relaunches the land agent of newly zombied epics; existing zombies are only
-        reported
+      relaunch: Host relaunches the land agent of newly zombied epics; existing zombies
+        are only reported
       notify: Host sends one inbox notification per new zombie epic and launches nothing
       report: No live mechanism; ship only the report command for existing zombies
     default: relaunch
-    why:
-      Nothing surfaces zombie epics today, and the land agent still verifies before
+    why: Nothing surfaces zombie epics today, and the land agent still verifies before
       closing anything
     answer: relaunch
 proposed_by: bbugyi200.athena.1h5
@@ -80,10 +70,11 @@ decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-27 10:21:00
 status: wip
+bead_id: sase-1vn
 ---
 
-- **PROMPT:**
-  [prompts/202611/backlog_epic_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_1.md)
+- **PROMPT:** [prompts/202611/backlog_epic_1.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_1.md)
+- **BEAD:** [sase-1vn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vn/README.md)
 
 # Backlog Epic 1: Landing Gates, Test Cost, and Epic Liveness
 
