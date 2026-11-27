@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "conflict_replay",
+      "kind": "toggle",
+      "ask": "Auto-discard the launch's own unpublished graph and re-mint from the plan when publication cannot merge?",
+      "why": "nothing has spawned and the plan is the source of truth, so re-minting is safe",
+      "default": true,
+      "effective_default": true,
+      "requested_verified": false
+    }
+  ]
+}
