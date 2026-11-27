@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "cost_budgets",
+      "kind": "choice",
+      "ask": "Re-baseline test-cost budgets whose misses trace to suite growth rather than a named regression?",
+      "why": "The suite grew from ~28k to ~62k tests since the budgets were set; a forever-red gate gets ignored",
+      "choices": [
+        {
+          "key": "rebaseline",
+          "label": "Re-measure on a quiet host; reset stale budgets with headroom; fix only named regressions"
+        },
+        {
+          "key": "cut",
+          "label": "Keep every committed budget and cut suite cost until it passes; may need a child epic"
+        },
+        {
+          "key": "retire",
+          "label": "Drop the summary-level budgets from the gate and keep only the per-cause budgets"
+        }
+      ],
+      "default": "rebaseline",
+      "effective_default": "rebaseline",
+      "requested_verified": false
+    },
+    {
+      "id": "zombie_recovery",
+      "kind": "choice",
+      "ask": "Should the host relaunch the land agent of an epic whose children all closed while no land agent is live?",
+      "why": "Nothing surfaces zombie epics today, and the land agent still verifies before closing anything",
+      "choices": [
+        {
+          "key": "relaunch",
+          "label": "Host relaunches the land agent of newly zombied epics; existing zombies are only reported"
+        },
+        {
+          "key": "notify",
+          "label": "Host sends one inbox notification per new zombie epic and launches nothing"
+        },
+        {
+          "key": "report",
+          "label": "No live mechanism; ship only the report command for existing zombies"
+        }
+      ],
+      "default": "relaunch",
+      "effective_default": "relaunch",
+      "requested_verified": false
+    }
+  ]
+}
