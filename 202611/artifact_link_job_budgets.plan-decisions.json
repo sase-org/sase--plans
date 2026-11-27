@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "raise_backfill_timeout",
+      "kind": "choice",
+      "ask": "Should the housekeeping `artifact_link_backfill` job's axe timeout also be raised from 5m to 10m as a backstop?",
+      "why": "After this plan the internal budget is enforced; a 5m timeout stays a useful alarm for the next gap.",
+      "choices": [
+        {
+          "key": "keep",
+          "label": "Timeout stays 5m, so a timeout still flags a budget-enforcement bug"
+        },
+        {
+          "key": "raise",
+          "label": "Timeout becomes 10m; absorbs uninterruptible tails but hides future budget regressions"
+        }
+      ],
+      "default": "keep",
+      "effective_default": "keep",
+      "requested_verified": false
+    }
+  ]
+}
