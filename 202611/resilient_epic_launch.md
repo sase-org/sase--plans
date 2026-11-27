@@ -1,80 +1,76 @@
 ---
 tier: epic
 title: Resilient epic launches under concurrent bead-ID minting
-goal: "Approved epics launch successfully even when another machine or agent mints and
-  publishes beads in the same store at the same time. ID collisions are relocated
+goal: 'Approved epics launch successfully even when another machine or agent mints
+  and publishes beads in the same store at the same time. ID collisions are relocated
   automatically, removed IDs are never minted again, a launch never reuses another
-  plan's epic, and a graph that cannot be merged is re-minted from the plan instead of
-  wedging the workspace store.
+  plan''s epic, and a graph that cannot be merged is re-minted from the plan instead
+  of wedging the workspace store.
 
-  "
+  '
 decisions:
   conflict_replay:
-    ask:
-      Auto-discard the launch's own unpublished graph and re-mint from the plan when
-      publication cannot merge?
+    ask: Auto-discard the launch's own unpublished graph and re-mint from the plan
+      when publication cannot merge?
     default: true
-    why: nothing has spawned and the plan is the source of truth, so re-minting is safe
+    why: nothing has spawned and the plan is the source of truth, so re-minting is
+      safe
     answer: true
 phases:
-  - id: merge
-    title: Published-ID collision rule in the sase-core stream merge
-    depends_on: []
-    size: medium
-    description:
-      "merge: replace the raw issue_created count in the Rust three-way stream merge
-      with a rule that relocates any unpublished creation of a published ID and accepts
-      create/remove/create history, plus a Python resolver regression for the incident's
-      stream shape."
-  - id: counter
-    title: Advance next_counter past every relocation and stream ID
-    depends_on: []
-    size: small
-    description:
-      "counter: make the bead conflict resolver write config.json next_counter past
-      every relocation ID and every stream ID in the store, even when config.json itself
-      merged cleanly, so a rollback-and-retry never re-mints a relocated ID."
-  - id: premint
-    title: Pre-mint store refresh and linked-epic identity check
-    depends_on: []
-    size: medium
-    description:
-      "premint: integrate the remote bead store right before each epic-creation attempt
-      (fail open on transient errors, fail early on conflicts), record the launch base
-      commit, and treat a plan bead_id link whose epic belongs to a different plan as
-      stale."
-  - id: replay
-    title: Conflict replay for unmergeable zero-spawn graph publication
-    depends_on:
-      - premint
-    size: medium
-    description:
-      "replay: carry the integration status out of the managed sync worker, raise a
-      typed publication-conflict error, and in the plan-launch retry loop discard the
-      launch's own unpublished graph commit under a recovery ref and re-mint, with
-      cause-first error text."
-  - id: regress
-    title: Incident regression suite and docs
-    depends_on:
-      - merge
-      - counter
-      - premint
-      - replay
-    size: medium
-    description:
-      "regress: reproduce the full three-clone collision chain end to end with real git
-      clones, assert the launch succeeds under fresh IDs, and update the bead-storage
-      and epic-launch reference docs."
+- id: merge
+  title: Published-ID collision rule in the sase-core stream merge
+  depends_on: []
+  size: medium
+  description: 'merge: replace the raw issue_created count in the Rust three-way stream
+    merge with a rule that relocates any unpublished creation of a published ID and
+    accepts create/remove/create history, plus a Python resolver regression for the
+    incident''s stream shape.'
+- id: counter
+  title: Advance next_counter past every relocation and stream ID
+  depends_on: []
+  size: small
+  description: 'counter: make the bead conflict resolver write config.json next_counter
+    past every relocation ID and every stream ID in the store, even when config.json
+    itself merged cleanly, so a rollback-and-retry never re-mints a relocated ID.'
+- id: premint
+  title: Pre-mint store refresh and linked-epic identity check
+  depends_on: []
+  size: medium
+  description: 'premint: integrate the remote bead store right before each epic-creation
+    attempt (fail open on transient errors, fail early on conflicts), record the launch
+    base commit, and treat a plan bead_id link whose epic belongs to a different plan
+    as stale.'
+- id: replay
+  title: Conflict replay for unmergeable zero-spawn graph publication
+  depends_on:
+  - premint
+  size: medium
+  description: 'replay: carry the integration status out of the managed sync worker,
+    raise a typed publication-conflict error, and in the plan-launch retry loop discard
+    the launch''s own unpublished graph commit under a recovery ref and re-mint, with
+    cause-first error text.'
+- id: regress
+  title: Incident regression suite and docs
+  depends_on:
+  - merge
+  - counter
+  - premint
+  - replay
+  size: medium
+  description: 'regress: reproduce the full three-clone collision chain end to end
+    with real git clones, assert the launch succeeds under fresh IDs, and update the
+    bead-storage and epic-launch reference docs.'
 proposed_by: bbugyi200.athena.1hj
 proposed_with: claude/opus
 decided_by: reviewer
 decided_via: tui
 create_time: 2026-11-27 15:24:20
 status: wip
+bead_id: sase-1vt
 ---
 
-- **PROMPT:**
-  [prompts/202611/resilient_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/resilient_epic_launch.md)
+- **PROMPT:** [prompts/202611/resilient_epic_launch.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/resilient_epic_launch.md)
+- **BEAD:** [sase-1vt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vt/README.md)
 
 # Plan: Resilient epic launches under concurrent bead-ID minting
 
