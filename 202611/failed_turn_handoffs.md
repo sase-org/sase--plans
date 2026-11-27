@@ -1,39 +1,36 @@
 ---
 tier: epic
 title: Make failed-turn staged handoffs stop hiding stranded work
-goal:
-  A never-started staged handoff whose originating turn failed stops counting as live
-  ownership and stops blocking later work, while finalizer authorization, submitted
-  execution, recovery evidence, and workspace retention remain intact.
+goal: A never-started staged handoff whose originating turn failed stops counting
+  as live ownership and stops blocking later work, while finalizer authorization,
+  submitted execution, recovery evidence, and workspace retention remain intact.
 phases:
-  - id: inactive-stage-policy
-    title: Rust policy for inactive staged handoffs
-    depends_on: []
-    size: medium
-    description:
-      "inactive-stage-policy: implement and bind shared inactive-stage decisions,
-      correct stranded ownership, and test terminal origins, active successors,
-      malformed evidence, and pending adoption without changing host side effects."
-  - id: inactive-stage-host
-    title: Settle failed origins and unblock later turns
-    depends_on:
-      - inactive-stage-policy
-    size: medium
-    description:
-      "inactive-stage-host: collect origin and execution facts, apply idempotent stage
-      settlement under existing locks, remove stale pending ownership, and exercise
-      failed-monitor recovery and questions admission end to end."
+- id: inactive-stage-policy
+  title: Rust policy for inactive staged handoffs
+  depends_on: []
+  size: medium
+  description: 'inactive-stage-policy: implement and bind shared inactive-stage decisions,
+    correct stranded ownership, and test terminal origins, active successors, malformed
+    evidence, and pending adoption without changing host side effects.'
+- id: inactive-stage-host
+  title: Settle failed origins and unblock later turns
+  depends_on:
+  - inactive-stage-policy
+  size: medium
+  description: 'inactive-stage-host: collect origin and execution facts, apply idempotent
+    stage settlement under existing locks, remove stale pending ownership, and exercise
+    failed-monitor recovery and questions admission end to end.'
 proposed_by: bbugyi200.athena.sase-1vn.3
 proposed_with: codex/gpt-6-astra
 parent_bead: sase-1vn.3
 create_time: 2026-11-27 16:41:33
 status: wip
+bead_id: sase-1vn.3.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/failed_turn_handoffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/failed_turn_handoffs.md)
-- **PARENT:**
-  [202611/backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_1.md)
+- **PROMPT:** [prompts/202611/failed_turn_handoffs.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/failed_turn_handoffs.md)
+- **PARENT:** [202611/backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_1.md)
+- **BEAD:** [sase-1vn.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vn/sase-1vn.3.1.md)
 
 # Make failed-turn staged handoffs stop hiding stranded work
 
