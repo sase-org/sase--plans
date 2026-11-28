@@ -1,66 +1,60 @@
 ---
 tier: epic
 title: Host-owned recovery for zombie epics
-goal:
-  Report stranded completed-child plans and relaunch eligible epic land agents once per
-  new close event.
+goal: Report stranded completed-child plans and relaunch eligible epic land agents
+  once per new close event.
 parent_bead: sase-1vn.4
 phases:
-  - id: detection
-    title: Shared Rust zombie-plan detection
-    size: medium
-    depends_on: []
-    description:
-      "detection: implement the complete descendant snapshot, shared ownership-aware
-      predicate, close-event identity, and Rust/PyO3 contracts described in Phase
-      detection. Verify the Rust changes and leave automatic launches disabled."
-  - id: reporting
-    title: Read-only zombie report and TUI integration
-    size: medium
-    depends_on:
-      - detection
-    description:
-      "reporting: consume the shared predicate in a read-only bead zombies command and
-      existing stranded-work TUI surfaces, advance the core pin, and capture the current
-      zombie inventory without launching or closing anything."
-  - id: recovery-claims
-    title: Durable activation and recovery claims
-    size: medium
-    depends_on:
-      - reporting
-    description:
-      "recovery-claims: implement core-owned activation and recovery records and the
-      machine publication adapter, including concurrent publisher and restart tests.
-      Expose a verified claim to callers but do not submit any launch."
-  - id: recovery-submission
-    title: Idempotent land-only launch submission
-    size: medium
-    depends_on:
-      - recovery-claims
-    description:
-      "recovery-submission: consume published claims through the existing bead-work
-      launch path with deterministic proc identity, a close-token guard, and crash
-      replay tests proving that recovery never relaunches phase workers. Do not enable
-      the periodic job yet."
-  - id: scheduler
-    title: Bounded AXE recovery job and end-to-end verification
-    size: medium
-    depends_on:
-      - recovery-submission
-    description:
-      "scheduler: wire the shared report and durable submission into a bounded AXE job,
-      arm the rollout cutoff without launching historical zombies, add restart and race
-      regressions, and document the shipped behavior and report evidence."
+- id: detection
+  title: Shared Rust zombie-plan detection
+  size: medium
+  depends_on: []
+  description: 'detection: implement the complete descendant snapshot, shared ownership-aware
+    predicate, close-event identity, and Rust/PyO3 contracts described in Phase detection.
+    Verify the Rust changes and leave automatic launches disabled.'
+- id: reporting
+  title: Read-only zombie report and TUI integration
+  size: medium
+  depends_on:
+  - detection
+  description: 'reporting: consume the shared predicate in a read-only bead zombies
+    command and existing stranded-work TUI surfaces, advance the core pin, and capture
+    the current zombie inventory without launching or closing anything.'
+- id: recovery-claims
+  title: Durable activation and recovery claims
+  size: medium
+  depends_on:
+  - reporting
+  description: 'recovery-claims: implement core-owned activation and recovery records
+    and the machine publication adapter, including concurrent publisher and restart
+    tests. Expose a verified claim to callers but do not submit any launch.'
+- id: recovery-submission
+  title: Idempotent land-only launch submission
+  size: medium
+  depends_on:
+  - recovery-claims
+  description: 'recovery-submission: consume published claims through the existing
+    bead-work launch path with deterministic proc identity, a close-token guard, and
+    crash replay tests proving that recovery never relaunches phase workers. Do not
+    enable the periodic job yet.'
+- id: scheduler
+  title: Bounded AXE recovery job and end-to-end verification
+  size: medium
+  depends_on:
+  - recovery-submission
+  description: 'scheduler: wire the shared report and durable submission into a bounded
+    AXE job, arm the rollout cutoff without launching historical zombies, add restart
+    and race regressions, and document the shipped behavior and report evidence.'
 proposed_by: bbugyi200.athena.sase-1vn.4
 proposed_with: codex/gpt-6-astra
 create_time: 2026-11-27 20:17:38
 status: wip
+bead_id: sase-1vn.4.1
 ---
 
-- **PROMPT:**
-  [prompts/202611/zombie_epic_liveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/zombie_epic_liveness.md)
-- **PARENT:**
-  [202611/backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_1.md)
+- **PROMPT:** [prompts/202611/zombie_epic_liveness.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/zombie_epic_liveness.md)
+- **PARENT:** [202611/backlog_epic_1.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_1.md)
+- **BEAD:** [sase-1vn.4.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vn/sase-1vn.4.1.md)
 
 # Host-owned recovery for zombie epics
 
