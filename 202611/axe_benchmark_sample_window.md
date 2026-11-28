@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Isolate the Services j/k benchmark sample window
-goal: Measure only this app's Services j/k actions while preserving the 16 ms p95
-  gate and completing sase-1vy.3.
+goal:
+  Measure only this app's Services j/k actions while preserving the 16 ms p95 gate and
+  completing sase-1vy.3.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vy.3
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/backlog_epic_2.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_2.md)
 - **BEAD:**
   [sase-1vy.3](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vy/sase-1vy.3.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vy.3](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vy.3.md)
+- **COMMITS:**
+  - [a4bbd29](https://github.com/sase-org/sase/commit/a4bbd29cba49713c5cefab84029c771142c9a4ce)
+    — fix(bench): isolate Services j/k sample window
 
 # Isolate the Services (Axe) j/k benchmark sample window
 
