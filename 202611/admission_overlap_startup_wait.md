@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Wait for holder children before measuring admission overlap
-goal:
-  Fix sase-1vy.5's startup observation race while preserving the two-run admission limit
-  checks.
+goal: Fix sase-1vy.5's startup observation race while preserving the two-run admission
+  limit checks.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vy.5
 proposed_with: codex/gpt-6-astra
 bead: sase-1vy.5
-create_time: 2026-11-28 07:17:28
-status: wip
+status: done
 ---
 
 - **PARENT:**
