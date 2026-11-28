@@ -1,84 +1,79 @@
 ---
 tier: epic
-title:
-  "Backlog Epic 2: leak gate, federation freshness, bench integrity, and load flakes
-  (final round)"
-goal:
-  "The five most important remaining open task beads are fixed and closed. The land
-  agent verifies, closes this final epic, and stops: the user capped the backlog chain
-  at two rounds, so no Backlog Epic 3 is planned."
+title: 'Backlog Epic 2: leak gate, federation freshness, bench integrity, and load
+  flakes (final round)'
+goal: 'The five most important remaining open task beads are fixed and closed. The
+  land agent verifies, closes this final epic, and stops: the user capped the backlog
+  chain at two rounds, so no Backlog Epic 3 is planned.'
 phases:
-  - id: leak-gate
-    title: Fix the leak-detector thread poison on the CI Telemetry gate (sase-1vg)
-    depends_on: []
-    size: large
-    description:
-      "leak-gate: fix the root cause of sase-1vg. Read sase-1vg and all of its notes
-      first. ACE pilot tests intermittently leave a sase-config-token-refresh thread
-      alive past the leak-detector snapshot, poisoning global
-      sase.config.core._live_config_token_refresh_threads on the CI Telemetry test-cost
-      gate (run 46071761552: 63,676 passed in 2:03 inside the 180m cap, failing only
-      this gate). Roughly 1 in 3 recent Telemetry runs. Fix it at its root; do not
-      exempt the name from the detector. Verify with the cost lane and just check
-      through sase tool run check, then close sase-1vg and the phase bead."
-  - id: federation-freshness
-    title: Federation cache-only reads must not report stale snapshots as ok (sase-1aw)
-    depends_on:
-      - leak-gate
-    size: medium
-    description:
-      "federation-freshness: fix sase-1aw. Read sase-1aw and all of its notes first.
-      Cache-only federation reads ignore the last network failure and label the stale
-      cache ok; the bug body carries the reproduction and proposed fix. Make cache-only
-      reads surface the failure instead of a stale ok. Add or update a regression test
-      for the stale-after-failure shape. Run sase tool run check, then close sase-1aw
-      and the phase bead."
-  - id: bench-integrity
-    title: Axe j/k benchmark must not capture Agents-tab samples under load (sase-199)
-    depends_on:
-      - federation-freshness
-    size: large
-    description:
-      "bench-integrity: fix sase-199. Read sase-199 and all of its notes first. The Axe
-      j/k bench collects samples from tabs other than the measured one under load (4
-      corroborations). Scope the sample window to the measured tab so bench results stay
-      meaningful. Cover with a regression test that fails on the old cross-tab capture.
-      Run sase tool run check, then close sase-199 and the phase bead."
-  - id: index-lock-flake
-    title: Stale index-lock recovery flake under loaded scoped check (sase-1kr)
-    depends_on:
-      - bench-integrity
-    size: large
-    description:
-      "index-lock-flake: fix sase-1kr. Read sase-1kr and all of its notes first (7
-      corroborations; pairs with sase-1s4, a test that leaves a stale lock in a real
-      checkout). Make test_run_workspace_git_command_recovers_stale_index_lock robust
-      under the loaded scoped lane, or fix the product recovery path it guards if the
-      flake exposes a real race. Do not close on a single green rerun; show the node
-      green across repeated loaded runs. Run sase tool run check, then close sase-1kr
-      and the phase bead."
-  - id: admission-overlap-flake
-    title: "Tool-admission overlap flake: rule out a real limit violation (sase-1vw)"
-    depends_on:
-      - index-lock-flake
-    size: large
-    description:
-      "admission-overlap-flake: fix sase-1vw. Read sase-1vw and all of its notes first
-      (related sase-1ve tracks a different node in the same module).
-      test_limit_two_with_four_runs_never_overlaps_more_than_two failed once under host
-      load with no admission change in the finding diff, then passed 5/5 isolated plus a
-      green whole-module run. Determine whether the overlap measurement needs a semantic
-      wait or the failure is a real admission-limit violation with more than two
-      concurrent runs at limit two; fix whichever it is. Do not close on a single green
-      rerun. Run sase tool run check, then close sase-1vw and the phase bead."
+- id: leak-gate
+  title: Fix the leak-detector thread poison on the CI Telemetry gate (sase-1vg)
+  depends_on: []
+  size: large
+  description: 'leak-gate: fix the root cause of sase-1vg. Read sase-1vg and all of
+    its notes first. ACE pilot tests intermittently leave a sase-config-token-refresh
+    thread alive past the leak-detector snapshot, poisoning global sase.config.core._live_config_token_refresh_threads
+    on the CI Telemetry test-cost gate (run 46071761552: 63,676 passed in 2:03 inside
+    the 180m cap, failing only this gate). Roughly 1 in 3 recent Telemetry runs. Fix
+    it at its root; do not exempt the name from the detector. Verify with the cost
+    lane and just check through sase tool run check, then close sase-1vg and the phase
+    bead.'
+- id: federation-freshness
+  title: Federation cache-only reads must not report stale snapshots as ok (sase-1aw)
+  depends_on:
+  - leak-gate
+  size: medium
+  description: 'federation-freshness: fix sase-1aw. Read sase-1aw and all of its notes
+    first. Cache-only federation reads ignore the last network failure and label the
+    stale cache ok; the bug body carries the reproduction and proposed fix. Make cache-only
+    reads surface the failure instead of a stale ok. Add or update a regression test
+    for the stale-after-failure shape. Run sase tool run check, then close sase-1aw
+    and the phase bead.'
+- id: bench-integrity
+  title: Axe j/k benchmark must not capture Agents-tab samples under load (sase-199)
+  depends_on:
+  - federation-freshness
+  size: large
+  description: 'bench-integrity: fix sase-199. Read sase-199 and all of its notes
+    first. The Axe j/k bench collects samples from tabs other than the measured one
+    under load (4 corroborations). Scope the sample window to the measured tab so
+    bench results stay meaningful. Cover with a regression test that fails on the
+    old cross-tab capture. Run sase tool run check, then close sase-199 and the phase
+    bead.'
+- id: index-lock-flake
+  title: Stale index-lock recovery flake under loaded scoped check (sase-1kr)
+  depends_on:
+  - bench-integrity
+  size: large
+  description: 'index-lock-flake: fix sase-1kr. Read sase-1kr and all of its notes
+    first (7 corroborations; pairs with sase-1s4, a test that leaves a stale lock
+    in a real checkout). Make test_run_workspace_git_command_recovers_stale_index_lock
+    robust under the loaded scoped lane, or fix the product recovery path it guards
+    if the flake exposes a real race. Do not close on a single green rerun; show the
+    node green across repeated loaded runs. Run sase tool run check, then close sase-1kr
+    and the phase bead.'
+- id: admission-overlap-flake
+  title: 'Tool-admission overlap flake: rule out a real limit violation (sase-1vw)'
+  depends_on:
+  - index-lock-flake
+  size: large
+  description: 'admission-overlap-flake: fix sase-1vw. Read sase-1vw and all of its
+    notes first (related sase-1ve tracks a different node in the same module). test_limit_two_with_four_runs_never_overlaps_more_than_two
+    failed once under host load with no admission change in the finding diff, then
+    passed 5/5 isolated plus a green whole-module run. Determine whether the overlap
+    measurement needs a semantic wait or the failure is a real admission-limit violation
+    with more than two concurrent runs at limit two; fix whichever it is. Do not close
+    on a single green rerun. Run sase tool run check, then close sase-1vw and the
+    phase bead.'
 proposed_by: bbugyi200.athena.sase-1vn.land
 proposed_with: muse/muse-spark-1.3-contributor
 create_time: 2026-11-28 03:14:39
 status: wip
+bead_id: sase-1vy
 ---
 
-- **PROMPT:**
-  [prompts/202611/backlog_epic_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_2.md)
+- **PROMPT:** [prompts/202611/backlog_epic_2.md](https://github.com/sase-org/sase--agents/blob/main/prompts/202611/backlog_epic_2.md)
+- **BEAD:** [sase-1vy](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vy/README.md)
 
 # Backlog Epic 2: Leak Gate, Federation Freshness, Bench Integrity, and Load Flakes (Final Round)
 
