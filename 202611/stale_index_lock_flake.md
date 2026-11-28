@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Stabilize stale index-lock recovery caller tests under load
-goal: Resolve sase-1vy.4 with deterministic owner observations, preserved lock safety,
-  and five passing loaded repeats.
+goal:
+  Resolve sase-1vy.4 with deterministic owner observations, preserved lock safety, and
+  five passing loaded repeats.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vy.4
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/backlog_epic_2.md](https://github.com/sase-org/sase--plans/blob/main/202611/backlog_epic_2.md)
 - **BEAD:**
   [sase-1vy.4](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vy/sase-1vy.4.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vy.4](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vy.4.md)
+- **COMMITS:**
+  - [53acb95](https://github.com/sase-org/sase/commit/53acb952ef758d42bffd592857c76183135d6e5c)
+    — test(git-lock): make stale-lock caller tests deterministic
 
 # Make stale index-lock caller tests independent of host process churn
 
