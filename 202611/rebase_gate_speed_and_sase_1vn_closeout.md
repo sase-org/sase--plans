@@ -1,9 +1,10 @@
 ---
 tier: tale
 title: Make the after-rebase import gate certify inside its timeout, then land sase-1vn
-goal: The after-rebase import gate certifies real publications inside its hook timeout,
-  epic sase-1vn is closed with its plan marked done, and the final backlog epic (Backlog
-  Epic 2) is proposed as a top-level epic that ends the chain.
+goal:
+  The after-rebase import gate certifies real publications inside its hook timeout, epic
+  sase-1vn is closed with its plan marked done, and the final backlog epic (Backlog Epic
+  2) is proposed as a top-level epic that ends the chain.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vn.land
 proposed_with: claude/opus
@@ -13,6 +14,11 @@ status: done
 
 - **BEAD:**
   [sase-1vn](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vn/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vn.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vn.land.md)
+- **COMMITS:**
+  - [7c5fb1c](https://github.com/sase-org/sase--plans/commit/7c5fb1c667fdfb3923e90ac25b8fdb9c583a2924)
+    — docs(plans): mark backlog_epic_1 done after sase-1vn close
 
 # Make the After-Rebase Import Gate Certify Inside Its Timeout, Then Land sase-1vn
 
