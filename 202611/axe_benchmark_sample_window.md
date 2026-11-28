@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Isolate the Services j/k benchmark sample window
-goal:
-  Measure only this app's Services j/k actions while preserving the 16 ms p95 gate and
-  completing sase-1vy.3.
+goal: Measure only this app's Services j/k actions while preserving the 16 ms p95
+  gate and completing sase-1vy.3.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vy.3
 proposed_with: codex/gpt-6-astra
 bead: sase-1vy.3
-create_time: 2026-11-28 05:42:26
-status: wip
+status: done
 ---
 
 - **PARENT:**
