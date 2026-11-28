@@ -2,12 +2,12 @@
 tier: tale
 size: medium
 title: Finish landing sase-1vt (resilient epic launches)
-goal: 'The resilient-epic-launch work is correct end to end. Integration errors name
+goal: "The resilient-epic-launch work is correct end to end. Integration errors name
   their real cause and are not all labeled as bead-ID collisions. The conflict replay
   honors the bead-store write sandbox. The canonical bead-work docs describe the new
   launch behavior. Epic sase-1vt is closed and its plan is marked done.
 
-  '
+  "
 proposed_by: bbugyi200.athena.sase-1vt.land
 proposed_with: claude/opus
 bead: sase-1vt
@@ -18,6 +18,11 @@ status: done
   [202611/resilient_epic_launch.md](https://github.com/sase-org/sase--plans/blob/main/202611/resilient_epic_launch.md)
 - **BEAD:**
   [sase-1vt](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vt/README.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vt.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vt.land.md)
+- **COMMITS:**
+  - [a8c75d4](https://github.com/sase-org/sase--plans/commit/a8c75d45dc5f95630095bbc4106170ca221eb2a8)
+    — chore(plans): mark resilient_epic_launch plan done
 
 # Plan: Finish landing epic sase-1vt
 
