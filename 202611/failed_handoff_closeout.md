@@ -1,8 +1,9 @@
 ---
 tier: tale
 title: Finish failed-turn handoff settlement and land sase-1vn.3.1
-goal: Make failed-stage cleanup retryable, preserve recovery evidence, settle after
-  terminal publication, and close the child epic and parent phase.
+goal:
+  Make failed-stage cleanup retryable, preserve recovery evidence, settle after terminal
+  publication, and close the child epic and parent phase.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vn.3.1.land
 proposed_with: codex/gpt-6-astra
@@ -14,6 +15,11 @@ status: done
   [202611/failed_turn_handoffs.md](https://github.com/sase-org/sase--plans/blob/main/202611/failed_turn_handoffs.md)
 - **BEAD:**
   [sase-1vn.3.1](https://github.com/sase-org/sase--beads/blob/main/pages/sase-1vn/sase-1vn.3.1.md)
+- **AGENTS:**
+  - [bbugyi200.athena.sase-1vn.3.1.land](https://github.com/sase-org/sase--agents/blob/main/sessions/bbugyi200.athena.sase-1vn.3.1.land.md)
+- **COMMITS:**
+  - [b6ed883](https://github.com/sase-org/sase--plans/commit/b6ed883cfb3d81721fa2a43ac8a16290ed7feae3)
+    — docs(plans): mark failed-turn handoff epic and closeout tale done
 
 # Finish failed-turn handoff settlement and land sase-1vn.3.1
 
