@@ -1,15 +1,13 @@
 ---
 tier: tale
 title: Stabilize stale index-lock recovery caller tests under load
-goal:
-  Resolve sase-1vy.4 with deterministic owner observations, preserved lock safety, and
-  five passing loaded repeats.
+goal: Resolve sase-1vy.4 with deterministic owner observations, preserved lock safety,
+  and five passing loaded repeats.
 size: medium
 proposed_by: bbugyi200.athena.sase-1vy.4
 proposed_with: codex/gpt-6-astra
 bead: sase-1vy.4
-create_time: 2026-11-28 06:42:30
-status: wip
+status: done
 ---
 
 - **PARENT:**
